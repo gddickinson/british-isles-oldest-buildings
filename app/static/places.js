@@ -118,8 +118,10 @@ function wirePlaces() {
   });
 }
 
+// read the place to open first: setPlaceView and placeRefresh rewrite the URL without its hash
+const openFirst = location.hash.length > 1 ? decodeURIComponent(location.hash.slice(1)) : null;
 readPlaceState();
 wirePlaces();
 setPlaceView(PS.view);
 placeRefresh();
-if (location.hash.length > 1) openPlace(decodeURIComponent(location.hash.slice(1)));
+if (openFirst) openPlace(openFirst);

@@ -40,6 +40,9 @@
 .map-label.land.forest { color: var(--map-park-line); }
 .map-label.airport { font-size: 11px; color: var(--map-label-soft); }
 .map-label.station { font-size: 11px; color: var(--map-label); font-weight: 600; }
+.map-label.defence { font-size: 10px; color: var(--map-label); white-space: nowrap; }
+.defence-dot { display: inline-block; width: 7px; height: 7px; margin-right: 3px; background: #556b2f; border: 1px solid #fff;
+  vertical-align: middle; }
 .map-layers { background: var(--panel); color: var(--ink); font-size: 13px; }
 .map-layers .ml-toggle { border: 0; background: var(--panel); color: var(--ink); padding: 6px 10px; cursor: pointer; font: inherit; }
 .map-layers .ml-panel { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 3px; max-width: 240px; }

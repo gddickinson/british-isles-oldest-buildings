@@ -1,10 +1,10 @@
 // Places of interest and people: colours, cards, detail views and a shared modal.
 const PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
   "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
-    "Legends & literature", "Maritime heritage", "Victorian era"];
+    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections"];
 const PLACE_ICON = { "Battles & sieges": "⚔", "Archaeological sites": "🪨", "Lost places": "🏚",
   "Parks, gardens & trees": "🌳", "Industrial heritage": "⚙", "Finds & treasures": "💰",
-  "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩" };
+  "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩", "Underground": "🚇", "Military heritage": "🛡", "Museums & collections": "🏛" };
 const EXTRA_LABELS = { part_of: "Part of", now_in: "Now kept at", found_at: "Found at",
   commemorates: "Commemorates", inscription: "Inscription", region: "Region", register_ref: "Register reference",
   works: "Works set here" };
@@ -65,10 +65,30 @@ function nearbyPlacesHTML(places, title) {
       <span class="meta">${esc(p.kind_label)}${p.date_text ? " · " + esc(p.date_text) : ""}${p.dist != null ? ` · ${Prefs.dist(p.dist)}` : ""}</span></li>`).join("")}</ul>`;
 }
 
+// extras with their own rendering: objects a museum keeps, museum links for "now kept at"
+const SPECIAL_EXTRA = ["kept_here", "now_in_ids"];
+// "place:<id>" or "building:<id>" (bidb/museums.py link_finds)
+const museumLink = (name, ref) => {
+  if (!ref) return esc(name);
+  const [kind, id] = [ref.slice(0, ref.indexOf(":")), ref.slice(ref.indexOf(":") + 1)];
+  return kind === "building" ? `<a href="${buildingUrl(id)}" data-open="${esc(id)}">${esc(name)}</a>`
+    : `<a href="#" data-place="${esc(id)}">${esc(name)}</a>`;
+};
+const fieldHTML = (label, html) => (html ? `<dt>${esc(label)}</dt><dd>${html}</dd>` : "");
+function keptHereHTML(objs) {
+  if (!objs || !objs.length) return "";
+  return `<h4>Kept here</h4><ul class="nearby kept-here">${objs.map(([name, title, qid, type]) => `<li>${title
+    ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, "_"))}" target="_blank" rel="noopener">${esc(name)}</a>`
+    : `<a href="https://www.wikidata.org/wiki/${esc(qid)}" target="_blank" rel="noopener">${esc(name)}</a>`}${
+    type ? ` <span class="meta">${esc(type)}</span>` : ""}</li>`).join("")}</ul>`;
+}
+
 function placeDetailHTML(p) {
   const enc = encodeURIComponent;
-  const extra = Object.entries(p.extra || {}).filter(([, v]) => v && (!Array.isArray(v) || v.length))
-    .map(([k, v]) => field(EXTRA_LABELS[k] || k, extraText(v))).join("");
+  const ex = p.extra || {};
+  const extra = Object.entries(ex).filter(([k, v]) => v && !SPECIAL_EXTRA.includes(k) && (!Array.isArray(v) || v.length))
+    .map(([k, v]) => k === "now_in" && ex.now_in_ids ? fieldHTML(EXTRA_LABELS[k], v.map((n) => museumLink(n, ex.now_in_ids[n])).join("; "))
+      : field(EXTRA_LABELS[k] || k, extraText(v))).join("");
   const links = [
     p.url && link(p.source === "History timeline" ? "Source" : `Official record (${p.source})`, p.url),
     p.wikipedia_title && link("Wikipedia", `https://en.wikipedia.org/wiki/${enc(p.wikipedia_title.replace(/ /g, "_"))}`),
@@ -90,6 +110,7 @@ function placeDetailHTML(p) {
         ${field("Source", p.source)}${extra}
         ${field("Coordinates", p.lat != null ? `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}` : "")}</dl>
       ${p.building_id ? `<p>Kept in: <a href="${buildingUrl(p.building_id)}" data-open="${esc(p.building_id)}">${esc(p.locality || "the building")}</a></p>` : ""}
+      ${keptHereHTML(ex.kept_here)}
       ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}` : ""}
       <div class="stories-box" data-stories="${esc(p.id)}"></div>
       ${peopleByRoleHTML(p.people)}

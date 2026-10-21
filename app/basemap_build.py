@@ -212,6 +212,40 @@ def build_stations():
     _write("stations", out)
 
 
+def build_underground():
+    """Underground railways and tunnels; k: s subway (tube), r railway tunnel, d disused railway
+    tunnel, c canal tunnel, h road tunnel."""
+    from bidb.land import near_land
+    feats = []
+    for w in src.osm_underground():
+        t = w.get("tags", {})
+        line = [[g["lon"], g["lat"]] for g in w.get("geometry") or []]
+        if len(line) < 2 or not near_land(line[0][1], line[0][0], 3):
+            continue
+        kind = ("s" if t.get("railway") == "subway" else "c" if t.get("waterway") else "h" if t.get("highway")
+                else "d" if t.get("railway") in ("disused", "abandoned") else "r")
+        geom = simplify({"type": "LineString", "coordinates": line}, 0.0002)
+        if geom:
+            feats.append(feature(geom, k=kind, n=t.get("tunnel:name") or t.get("name"), u=1 if t.get("tunnel") else 0))
+    _write("underground", collection(feats))
+
+
+def build_defences():
+    """[name, lat, lon, kind] for pillboxes, bunkers, gun emplacements and trenches (kind from bunker_type)."""
+    from bidb.land import near_land
+    out = []
+    for e in src.osm_defences():
+        t = e.get("tags", {})
+        lat, lon = (e.get("lat"), e.get("lon")) if "lat" in e else (e.get("center", {}).get("lat"), e.get("center", {}).get("lon"))
+        if lat is None or not near_land(lat, lon, 1):
+            continue
+        bt = (t.get("bunker_type") or "").lower()
+        kind = ("trench" if t.get("military") == "trench" else "pillbox" if "pillbox" in bt or t.get("historic") == "pillbox"
+                else "gun" if bt in ("gun_emplacement", "munitions", "gun_position") else "bunker")
+        out.append([t.get("name") or "", round(lat, 5), round(lon, 5), kind])
+    _write("defences", out)
+
+
 def build_airports():
     out = [[p["name"], round(f["geometry"]["coordinates"][1], 4), round(f["geometry"]["coordinates"][0], 4),
             p.get("iata_code"), p.get("type")]
@@ -231,7 +265,8 @@ Built by `python -m app.basemap_build` from:
   parks, AONBs / National Landscapes and National Scenic Areas; national walking routes; railway and bus
   stations (`stations.json`); minor (secondary and tertiary) roads and named streams (`minor/`, `streams/`, built by
   `python -m app.basemap_tiled`). `rivers.json`, `parks.json`, `trails.json`, `minor/` and `streams/` are derived from OpenStreetMap and are available
-  under the Open Database Licence.
+  under the Open Database Licence. Underground railways and tunnels (`underground.json`) and
+  pillboxes, bunkers and trenches (`defences.json`) also come from OpenStreetMap.
 
 - **Historic County Borders Project** (county-borders.co.uk; free for any use with
   acknowledgement): this project made use of data provided by the Historic County Borders Project
@@ -243,7 +278,8 @@ Geometries are simplified for display; they are not survey-accurate.
 
 def main():
     for fn in (build_land, build_roads, build_rail, build_trails, build_rivers, build_parks,
-               build_towns_and_landscape, build_airports, build_stations, build_historic_counties):
+               build_towns_and_landscape, build_airports, build_stations, build_historic_counties, build_underground,
+               build_defences):
         fn()
     (OUT / "SOURCES.md").write_text(SOURCES)
 

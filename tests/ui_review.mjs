@@ -134,7 +134,7 @@ const LAYER_VIEWS = {   // key: [lat, lon, zoom] where the layer has something t
   counties: [54.0, -1.5, 8], historic_counties: [53.5, -2.0, 8], parks: [54.45, -3.1, 9], rivers: [54.0, -1.5, 8],
   roads: [53.5, -1.5, 8], minor: [53.96, -1.08, 12], streams: [54.45, -3.1, 12], lakes: [54.37, -2.93, 11],
   walking: [53.35, -1.8, 11], cycling: [53.96, -1.08, 10], roman: [52.4, -1.4, 9], buried: [51.517, -0.108, 13],
-  rail: [53.5, -1.5, 9], trails: [54.0, -2.0, 8], towns: [53.5, -1.5, 9], landscape: [54.45, -3.1, 10],
+  rail: [53.5, -1.5, 9], underground: [51.51, -0.12, 12], defences: [51.13, 1.3, 13], trails: [54.0, -2.0, 8], towns: [53.5, -1.5, 9], landscape: [54.45, -3.1, 10],
   airports: [53.5, -1.5, 7], stations: [51.51, -0.12, 13], streets: [53.96, -1.08, 14],
 };
 
@@ -153,7 +153,7 @@ async function layers(page) {
     await record("layer_" + key, page, { before, after, maps, problem: drew > 0 ? null : "layer drew nothing here" });
   }
   // overlays over the online street map (routes, borders, Roman roads… marked online in basemap.js)
-  if (!STATIC) for (const key of ["counties", "historic_counties", "parks", "walking", "cycling", "roman", "buried", "trails", "stations"]) {
+  if (!STATIC) for (const key of ["counties", "historic_counties", "parks", "walking", "cycling", "roman", "buried", "trails", "stations", "underground", "defences"]) {
     const [lat, lon, z] = LAYER_VIEWS[key];
     await setStorage(page, { bi_map_layers: [key], bi_map_base: "online" });
     await page.goto(BASE + P(`/map?lat=${lat}&lon=${lon}&z=${z}`), 6000);

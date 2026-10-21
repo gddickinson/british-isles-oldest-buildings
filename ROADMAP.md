@@ -261,24 +261,50 @@ Places of the imagination
       `british_isles_buildings.sqlite.gz` (a "package" job, so local rebuilds don't dirty git).
 
 ## Underground works (planned 2026-10-21; after I1–I7)
-- [ ] U1 Underground railways and stations: London Underground, Glasgow Subway, Tyne and Wear Metro and
+- [x] U1 (2026-10-21: 292 tube/subway/metro stations, 24 ghost stations, map layer "Underground railways &
+      tunnels" from OSM railway=subway and tunnels; places group "Underground", tours) Underground railways and stations: London Underground, Glasgow Subway, Tyne and Wear Metro and
       Liverpool/Merseyrail tunnels; stations with opening dates (Wikidata), disused and "ghost" stations
       (e.g. Aldwych, British Museum, Down Street), lines as a map layer (OSM railway=subway, tunnels).
-- [ ] U2 Other major underground construction: railway, canal and road tunnels (Thames Tunnel, Box,
+- [x] U2 (2026-10-21: 569 tunnels, 154 shelters/bunkers/ROC posts, 177 caves, 278 mines, 626 ice houses, 111
+      grottoes, catacombs, Bazalgette's sewers; `data/curated/underground_sites.json`. Still to do: deep shelters
+      and reservoirs beyond the curated list, cellars) Other major underground construction: railway, canal and road tunnels (Thames Tunnel, Box,
       Standedge, Severn, Channel Tunnel), sewers and storm drains (Bazalgette's system), water tunnels
       and reservoirs, mines and caverns, Victorian and wartime deep shelters, bunkers and ROC posts,
       cellars, catacombs and ice houses; places group "Underground", tour theme, stories.
 
 ## Historic war construction (planned 2026-10-21; after the underground works)
-- [ ] X1 Defences through the ages: hillforts and Roman forts are in already; add Saxon burhs,
+- [x] X1 (2026-10-21: 32 burhs of the Burghal Hidage, 135 Martello/defensive towers, 251 forts from 1500 incl.
+      Device and Palmerston Forts, 223 batteries, 429 barracks/drill halls) Defences through the ages: hillforts and Roman forts are in already; add Saxon burhs,
       Martello towers, Palmerston forts, coastal batteries, Napoleonic and Victorian barracks and signal
       stations (Wikidata, heritage registers by type).
-- [ ] X2 Twentieth-century military works: First and Second World War pillboxes, anti-tank lines and
+- [x] X2 (2026-10-21: 146 pillboxes/anti-tank works, 72 radar/sound mirrors, 718 airfields, 83 POW camps,
+      7,095 war memorials; 3,710 OSM pillboxes, bunkers, gun emplacements and trenches as a map layer.
+      Defence of Britain data not used yet) Twentieth-century military works: First and Second World War pillboxes, anti-tank lines and
       stop lines, anti-aircraft and searchlight batteries, sound mirrors, radar stations (Chain Home),
       airfields, naval dockyards and boom defences, POW camps, Cold War bunkers and ROC posts
       (Wikidata, OSM historic=bunker/pillbox, Defence of Britain data where the licence allows).
-- [ ] X3 Places group "Military heritage" with periods, a map layer for defensive lines, a tour theme
+- [x] X3 (2026-10-21: group, layer of OSM defences, tours "Coastal defences" and "Military heritage". Stop
+      lines as drawn lines still to do: only the Taunton Stop Line has a point on Wikidata) Places group "Military heritage" with periods, a map layer for defensive lines, a tour theme
       ("Coastal defences", "Stop lines") and stories.
+
+## Museums, galleries and collections (planned 2026-10-21; after the war construction)
+Places that keep interesting historical objects, and what they keep.
+- [x] MU1 (2026-10-21: 4,414 places: museums by type, art galleries, libraries and archives, closed ones
+      marked; 588 museums are catalogue buildings and stay there, without a museum note yet) Museums and galleries as a places group "Museums & collections": museums of every kind
+      (national, local, regimental, open-air, historic-house, transport, science, folk), art galleries,
+      libraries and archives with historic collections (record offices, cathedral and college
+      libraries), treasuries and university collections (Wikidata classes with subclasses; opening and
+      closing years). Museums that are already catalogue buildings (castles, houses) stay there and get
+      a "Museum" note instead.
+- [ ] MU2 Mapping Museums database (Birkbeck, ~4,000 UK museums open 1960–present, incl. closed ones,
+      with type, governance, subject and accreditation; check licence, believed CC BY 4.0): merge with
+      Wikidata by name and location; closed museums shown as such.
+- [x] MU3 (2026-10-21: 916 objects in 253 museums; 67 finds link to their museum) "Kept here": notable objects held by each museum (Wikidata P195 collection / P276 location,
+      e.g. Lewis chessmen, Sutton Hoo helmet, Book of Kells, Mappa Mundi), shown on its page; finds and
+      hoards already in Places link to the museum that holds them ("Now kept at" → the museum record).
+- [ ] MU4 (tour theme "Museums & galleries" done 2026-10-21; opening hours come from the visiting stage
+      where OSM has them) Visiting: opening hours, fee and website from OSM (existing `visiting` stage), Art UK and
+      collection-search links (link only); a "Museums & galleries" tour theme (town walks), stories.
 
 ## More sources (planned 2026-10-21)
 Each item starts with a licence and access check (record the result here); copyrighted sources are

@@ -153,6 +153,24 @@ def historic_counties():
     return out
 
 
+def osm_underground():
+    """Underground railways (railway=subway) and tunnels: railways (incl. disused), canals and main roads."""
+    box = "(49,-11,61.2,2.2)"
+    q = (f"[out:json][timeout:600];(way[railway=subway]{box};"
+         f'way[railway~"^(rail|light_rail|narrow_gauge|funicular|disused|abandoned)$"][tunnel=yes]{box};'
+         f"way[waterway=canal][tunnel]{box};"
+         f'way[highway~"^(motorway|trunk|primary|secondary|tertiary)$"][tunnel=yes]{box};);out tags geom;')
+    return overpass(q, "underground").get("elements", [])
+
+
+def osm_defences():
+    """Pillboxes, bunkers, gun emplacements and trenches (military=bunker, historic=pillbox/bunker, military=trench)."""
+    box = "(49,-11,61.2,2.2)"
+    q = (f"[out:json][timeout:300];(nwr[military=bunker]{box};nwr[historic=pillbox]{box};nwr[historic=bunker]{box};"
+         f"nwr[military=trench]{box};);out center tags;")
+    return overpass(q, "defences").get("elements", [])
+
+
 def osm_stations():
     """Railway stations (incl. heritage lines) and bus stations with a name -> list of elements."""
     q = ('[out:json][timeout:300];(node[railway=station][name](49,-11,61.2,2.2);'

@@ -171,13 +171,15 @@ def run(cutoff):
 
 def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
     """[(stage name, function)] for a full build (also run from the GUI by app/jobs.py)."""
-    from . import (era_places, lore_places, maritime, nation_geo, on_this_day, places_build, pronunciations,
-                   timeline, tours, visiting)
+    from . import (era_places, lore_places, maritime, military, museums, nation_geo, on_this_day, places_build, pronunciations,
+                   timeline, tours, underground, visiting)
     from . import stories as stories_mod
     out = [("Buildings", lambda: run(cutoff))]
     if places:
         out += [("Places and people", places_build.run), ("Legends and literature", lore_places.run),
                 ("Maritime heritage", maritime.run), ("Industrial and Victorian", era_places.run),
+                ("Underground", underground.run), ("Military heritage", military.run),
+                ("Museums and collections", museums.run),
                 ("Nations for places", nation_geo.run)]
         if pron:
             out.append(("Pronunciations", pronunciations.run))

@@ -10,7 +10,9 @@ const TourLib = (() => {
   const THEMES = { highlights: "Highlights", ghosts: "Ghosts & legends", prehistoric: "Prehistoric", castles: "Castles",
                    churches: "Early churches", roman: "Roman", trail: "Long-distance & pilgrim ways",
                    literary: "Literary places", maritime: "Maritime heritage", industrial: "Industrial Revolution",
-                   victorian: "Victorian" };
+                   victorian: "Victorian", underground: "Underground",
+                   coastal: "Coastal defences", military: "Military heritage",
+                   museums: "Museums & galleries" };
   const rad = Math.PI / 180;
   const km = (a, b) => {
     const h = Math.sin((b.lat - a.lat) * rad / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin((b.lon - a.lon) * rad / 2) ** 2;

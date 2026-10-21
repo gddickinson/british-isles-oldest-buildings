@@ -28,6 +28,12 @@ THEMES = {
                    or r.get("category_group") == "Industry & transport"},
     "victorian": {"title": "Victorian", "test": lambda r: r.get("kind_group") == "Victorian era"
                   or r.get("period") == "Victorian"},
+    "coastal": {"title": "Coastal defences", "test": lambda r: r.get("kind_label") in COASTAL},
+    "military": {"title": "Military heritage", "test": lambda r: r.get("kind_group") == "Military heritage"
+                 or (r.get("category_group") == "Fortification" and (r.get("year_start") or 0) >= 1500)},
+    "museums": {"title": "Museums & galleries", "test": lambda r: r.get("kind_group") == "Museums & collections"
+                and r.get("kind_label") != "Library or archive" and "(closed)" not in (r.get("type") or "")},
+    "underground": {"title": "Underground", "test": lambda r: r.get("kind_group") == "Underground"},
     "literary": {"title": "Literary places", "test": lambda r: r.get("kind_label") == "Literary place" or r.get("writer")},
     "prehistoric": {"title": "Prehistoric", "test": lambda r: r.get("period") in ("Neolithic", "Bronze Age", "Iron Age")
                     or r.get("category_group") == "Prehistoric" or r.get("kind_group") == "Archaeological sites"},
@@ -39,13 +45,17 @@ THEMES = {
     "roman": {"title": "Roman", "test": lambda r: r.get("category_group") == "Roman" or (
         r.get("period") == "Roman Britain" and r.get("nation") in ("England", "Wales", "Scotland"))},
 }
+COASTAL = ("Martello or defensive tower", "Fort or fortification", "Gun or anti-aircraft battery",
+           "Pillbox or anti-tank defence", "Radar station, sound mirror or signal station")
 # how many tours per (theme, mode)
 PLAN = {("highlights", "walk"): 45, ("highlights", "cycle"): 25, ("highlights", "drive"): 25,
         ("ghosts", "walk"): 10, ("ghosts", "cycle"): 6, ("ghosts", "drive"): 10,
         ("prehistoric", "cycle"): 6, ("prehistoric", "drive"): 10, ("castles", "cycle"): 5,
         ("castles", "drive"): 10, ("literary", "drive"): 6, ("maritime", "drive"): 8, ("maritime", "walk"): 6,
         ("industrial", "drive"): 8, ("industrial", "cycle"): 5, ("victorian", "walk"): 8, ("victorian", "drive"): 4, ("churches", "cycle"): 6, ("churches", "drive"): 4, ("roman", "drive"): 4,
-        ("roman", "walk"): 3}
+        ("roman", "walk"): 3, ("underground", "walk"): 6, ("underground", "drive"): 4,
+        ("coastal", "cycle"): 5, ("coastal", "drive"): 6, ("military", "drive"): 6, ("military", "walk"): 3,
+        ("museums", "walk"): 10, ("museums", "drive"): 4}
 # keep tours of the same theme and mode this far apart (km)
 APART = {"walk": 6, "cycle": 22, "drive": 60}
 COLUMNS = ["id", "mode", "theme", "title", "area", "nation", "summary", "distance_km", "duration_min",
@@ -61,11 +71,12 @@ def candidates(conn):
     out = []
     for row in conn.execute(f"SELECT {', '.join(cols)} FROM buildings WHERE lat IS NOT NULL"):
         out.append(dict(zip(cols, row)) | {"kind": "building"})
-    pcols = ["id", "name", "lat", "lon", "date_text", "year_start", "period", "kind_label", "kind_group",
+    pcols = ["id", "name", "lat", "lon", "date_text", "year_start", "period", "kind_label", "kind_group", "type",
              "image_thumb", "wikipedia_title", "nation", "locality"]
     for row in conn.execute(f"""SELECT {', '.join(pcols)} FROM places WHERE lat IS NOT NULL
             AND (coalesce(wikipedia_title, '') != ''
-                 OR kind_group IN ('Legends & literature', 'Maritime heritage', 'Victorian era', 'Industrial heritage')) AND building_id IS NULL
+                 OR kind_group IN ('Legends & literature', 'Maritime heritage', 'Victorian era', 'Industrial heritage', 'Underground', 'Museums & collections')
+                 OR (kind_group = 'Military heritage' AND kind != 'memorial')) AND building_id IS NULL
             AND kind_group NOT IN ('Finds & treasures', 'Plaques & people', 'History events')"""):
         r = dict(zip(pcols, row))
         out.append(r | {"kind": "place", "category": r["kind_label"]})
@@ -130,6 +141,10 @@ def title_for(theme, mode, area):
             "maritime": f"Maritime {area} ({noun})",
             "industrial": f"Industrial {area} ({noun})",
             "victorian": f"Victorian {area} ({noun})",
+            "underground": f"Underground {area} ({noun})",
+            "coastal": f"Coastal defences of {area} ({noun})",
+            "military": f"Military {area} ({noun})",
+            "museums": f"Museums & galleries of {area} ({noun})",
             "prehistoric": f"Prehistoric {area} ({noun})",
             "castles": f"Castles of {area} ({noun})",
             "churches": f"Early churches around {area} ({noun})",

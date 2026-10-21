@@ -17,11 +17,13 @@ const Basemap = (() => {
     { key: "roman", label: "Roman roads", on: false, online: true },
     { key: "buried", label: "Buried rivers & streams (culverted; zoom in)", on: false, online: true },
     { key: "rail", label: "Railways", on: false },
+    { key: "underground", label: "Underground railways & tunnels", on: false, online: true },
     { key: "trails", label: "National trails & long-distance paths", on: false, online: true },
     { key: "towns", label: "Cities, towns & villages", on: true },
     { key: "landscape", label: "Hills, forests, islands & coast", on: false },
     { key: "airports", label: "Airports", on: false },
     { key: "stations", label: "Railway & bus stations (zoom in)", on: false, online: true },
+    { key: "defences", label: "Pillboxes, bunkers & trenches (zoom in)", on: false, online: true },
   ].concat(IS_STATIC ? [] : [{ key: "streets", label: "Street detail (areas saved for offline)", on: true }]);
   const STORE = "bi_map_layers", BASE_STORE = "bi_map_base";
   const cache = {};
@@ -145,6 +147,16 @@ const Basemap = (() => {
   const lakesLayer = tiledLayer("lakes", 9, () => ({ color: css("--map-water-line"), weight: 0.6, fillColor: css("--map-water"),
     fillOpacity: 1, opacity: 0.9 }));
 
+  // tube lines (red; lighter where they run above ground) and railway, disused, canal and road tunnels
+  const UG = { s: ["#dc241f", 2.2, null], r: ["#4a4a4a", 2, "4 3"], d: ["#8a5a2b", 2, "1 3"], c: ["#2b7bb9", 2, "4 3"],
+               h: ["#7d7d7d", 2, "6 3"] };
+  const UG_NAME = { s: "Underground railway", r: "Railway tunnel", d: "Disused railway tunnel", c: "Canal tunnel", h: "Road tunnel" };
+  const undergroundLayer = lineLayer("underground", (f) => {
+    const [color, weight, dashArray] = UG[f.properties.k] || UG.r;
+    return { color, weight, dashArray, opacity: f.properties.k === "s" && !f.properties.u ? 0.45 : 0.9 };
+  }, (f) => `${f.properties.n ? esc(f.properties.n) + "<br>" : ""}<small>${UG_NAME[f.properties.k] || ""}${
+    f.properties.k === "s" && !f.properties.u ? " (above ground)" : ""}</small>`);
+
   const railLayer = lineLayer("rail", () => ({ color: css("--map-rail"), weight: 1.2, dashArray: "6 3" }));
   const trailsLayer = lineLayer("trails", () => ({ color: css("--map-trail"), weight: 1.6, dashArray: "2 4", opacity: 0.9 }),
     (f) => `${esc(f.properties.n)}${f.properties.o ? `<br><small>${esc(f.properties.o)}</small>` : ""}`);
@@ -205,6 +217,9 @@ const Basemap = (() => {
   const STATION_ICON = { rail: "🚉", heritage: "🚂", metro: "Ⓜ", bus: "🚌" };
   const stationsLayer = labelLayer("stations", (s, z) => (z >= (s[3] === "bus" ? 12 : 10) ? "station" : null),
     (s) => `${STATION_ICON[s[3]] || "🚉"} ${esc(s[0])}`);
+  const DEFENCE = { pillbox: "Pillbox", bunker: "Bunker", gun: "Gun emplacement", trench: "Trench" };
+  const defencesLayer = labelLayer("defences", (d, z) => (z >= 12 ? "defence" : null),
+    (d) => `<span class="defence-dot"></span>${esc(d[0] || DEFENCE[d[3]] || "Bunker")}`);
   // nearest stations to a point (detail views, tours): [{name, kind, km, lat, lon}], one per kind
   async function nearestStations(lat, lon, maxKm = 15) {
     const rows = await load("stations").catch(() => []);
@@ -232,7 +247,8 @@ const Basemap = (() => {
 
   const MAKERS = { streets: streetsLayer, counties: countiesLayer, historic_counties: historicCountiesLayer, parks: parksLayer, rivers: riversLayer, roads: roadsLayer, minor: minorLayer, streams: streamsLayer, lakes: lakesLayer, walking: walkingLayer,
                    cycling: cyclingLayer, roman: romanLayer, buried: buriedLayer,
-                   rail: railLayer, trails: trailsLayer, towns: townsLayer, landscape: landscapeLayer, airports: airportsLayer, stations: stationsLayer };
+                   rail: railLayer, underground: undergroundLayer, trails: trailsLayer, towns: townsLayer, landscape: landscapeLayer, airports: airportsLayer, stations: stationsLayer,
+                   defences: defencesLayer };
 
   // ---- attach to a map -------------------------------------------------------------------
   function offline(map) {

@@ -8,7 +8,8 @@ English labels (October 2026).
 # Fixed order = fixed colour slot on maps and charts
 PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
                 "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
-                "Legends & literature", "Maritime heritage", "Victorian era"]
+                "Legends & literature", "Maritime heritage", "Victorian era", "Underground",
+                "Military heritage", "Museums & collections"]
 
 # Prehistoric / early monument types. Items with a photo or a Wikipedia article join the main
 # building catalogue; the rest are shown as "Archaeological sites" places.
@@ -90,6 +91,13 @@ KIND_LABEL.update({"mill": "Mill or factory", "mine": "Mine or quarry", "ironwor
 KIND_GROUP.update({k: "Industrial heritage" for k in ("mill", "mine", "ironworks", "canal", "railway", "engine", "kiln",
                                                       "ironbridge", "warehouse")})
 KIND_GROUP.update({k: "Victorian era" for k in ("victorian_public", "victorian_leisure", "victorian_style")})
+# added by bidb.underground
+KIND_LABEL.update({"tube": "Underground or metro station", "ghost": "Disused underground station", "tunnel": "Tunnel",
+                   "shelter": "Shelter or bunker", "cave": "Cave or cavern", "ug_mine": "Mine", "icehouse": "Ice house",
+                   "grotto": "Grotto", "catacomb": "Catacomb, crypt or vault", "sewer": "Sewer, cistern or water tunnel",
+                   "ug_railway": "Underground railway"})
+KIND_GROUP.update({k: "Underground" for k in ("tube", "ghost", "tunnel", "shelter", "cave", "ug_mine", "icehouse",
+                                              "grotto", "catacomb", "sewer", "ug_railway")})
 
 # British Isles bounding box (south, west, north, east): drops overseas territories
 BOX = (49.1, -11.0, 61.1, 2.1)
@@ -102,3 +110,19 @@ FIND_EXCLUDE_ROOTS = ["Q16521", "Q11344", "Q5", "Q40614", "Q2016147", "Q10660257
 def in_box(lat, lon):
     s, w, n, e = BOX
     return lat is not None and s <= lat <= n and w <= lon <= e
+# added by bidb.military
+KIND_LABEL.update({"burh": "Saxon burh", "tower": "Martello or defensive tower", "fort": "Fort or fortification",
+                   "battery": "Gun or anti-aircraft battery", "barracks": "Barracks, drill hall or camp",
+                   "pillbox": "Pillbox or anti-tank defence", "radar": "Radar station, sound mirror or signal station",
+                   "airfield": "Military airfield", "powcamp": "Prisoner-of-war camp", "defenceline": "Defence or stop line",
+                   "memorial": "War memorial"})
+KIND_GROUP.update({k: "Military heritage" for k in ("burh", "tower", "fort", "battery", "barracks", "pillbox", "radar",
+                                                    "airfield", "powcamp", "defenceline", "memorial")})
+# added by bidb.museums
+KIND_LABEL.update({"museum": "Museum", "artmuseum": "Art museum or gallery", "housemuseum": "Historic house museum",
+                   "milmuseum": "Military museum", "transmuseum": "Transport or maritime museum",
+                   "scimuseum": "Science, natural history or industry museum", "library": "Library or archive",
+                   "kept": "Object in a museum"})
+KIND_GROUP.update({k: "Museums & collections" for k in ("museum", "artmuseum", "housemuseum", "milmuseum", "transmuseum",
+                                                        "scimuseum", "library")})
+KIND_GROUP["kept"] = "Finds & treasures"

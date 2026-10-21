@@ -286,3 +286,34 @@
   hilly 41, very hilly 8).
 - Personal drive and machine references removed; git history squashed to a single commit; database
   release recreated on it; repository topics added.
+
+## 2026-10-21 (late night) — museums on the roadmap; underground, military heritage and museums built
+- Roadmap: new section "Museums, galleries and collections" (MU1–MU4), placed after the war construction.
+- U1–U2 `bidb/underground.py` (build stage after era_places) → places group "Underground" (2,237): tube,
+  subway and metro stations (292) and closed "ghost" stations (24; Wikidata closing dates, with
+  `still_open` overrides for Charing Cross and Wapping; note Wikidata Q55654238 means "in use"), tunnels,
+  shelters and bunkers, caves, mines, ice houses, grottoes, catacombs, sewers;
+  `data/curated/underground_sites.json` (38 notable works outside the queried classes). Existing places of
+  these kinds move to the group with the new label (their kind stays, so their own stage can rebuild them).
+  Map layer "Underground railways & tunnels" (OSM railway=subway and railway/canal/road tunnels, 1.4 MB).
+- X1–X3 `bidb/military.py` → "Military heritage" (9,186): 32 Saxon burhs (`data/curated/burhs.json`, from
+  the Burghal Hidage table), Martello towers, forts from 1500 (Device and Palmerston Forts named), batteries,
+  barracks, pillboxes, radar and sound mirrors, 718 airfields, 83 POW camps, 7,095 war memorials. Map layer
+  "Pillboxes, bunkers & trenches" (3,710 OSM points). GHQ Line has no coordinates on Wikidata.
+- MU1/MU3 `bidb/museums.py` → "Museums & collections" (4,414; 588 more are catalogue buildings): museums by
+  type (art, historic house, military, transport/maritime, science/industry), closed ones marked, libraries
+  and archives; "Kept here" objects per museum (916 in 253 museums; 461 new "Object in a museum" places,
+  attached to the building when the museum is in the catalogue); 112 finds link to their museum.
+- Tour themes: Underground, Coastal defences, Military heritage, Museums & galleries. Colours g12–g14,
+  icons, Help text, Places page subtitle.
+- Tests: `tests/test_place_stages.py` (stage kind keys must not collide: each stage deletes its own kinds);
+  ui_check pages for the new groups and museum views.
+- Follow-on stages rerun: nations for 13,919 new places, stories 2,407 (was ~1,900), 344 tours (new: 10
+  underground, 11 coastal defences, 9 military, 14 museums & galleries), visiting information for 2,423
+  records (was 1,067), pronunciations. Places now 104,136.
+- Fixes: tour titles for the new themes (KeyError; test added for every theme); `/places#<id>` links never
+  opened their place (the page rewrote its URL before reading the hash) — older bug, fixed.
+- Checks: 70 unit tests; ui_check 24/24 pages (test server on port 5051); ui_review layers + places 52/52.
+- Not done: hosted copy re-export/republish and the bundled database release (both still the previous
+  version); MU2 (Mapping Museums), MU4 opening hours beyond OSM, stop lines drawn as lines.
+

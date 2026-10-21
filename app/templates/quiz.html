@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Quiz · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page quiz-page">
+  <h1>Guess the period</h1>
+  <p class="prose">A photo of a building from the catalogue: when was it built? Pick the period. Only buildings whose
+    date is backed by a second source are used. Ten questions a round.</p>
+  <div class="quiz-score" id="qz_score" aria-live="polite"></div>
+  <section id="qz_card" class="quiz-card"></section>
+  <div class="filter-row"><button id="qz_new" class="btn">New round</button></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='quiz.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}People · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page people-page">
+  <h1>People</h1>
+  <p class="hint">People connected with the buildings and places in this catalogue: who built, founded, owned or lived
+    in them, who is buried there, who fought there and who is commemorated by a plaque. Links come from Wikidata;
+    short summaries from Wikipedia.</p>
+  <div class="filter-row">
+    <input id="p_q" type="search" placeholder="Search people (name or description)…">
+    <select id="p_role"><option value="">Any connection</option></select>
+    <select id="p_sort"><option value="known">Best known first</option><option value="born">By date of birth</option>
+      <option value="name">Name A–Z</option></select>
+    <span id="p_count" class="hint"></span>
+  </div>
+  <div id="p_list" class="people-list"></div>
+  <div class="pager"><button id="p_more" class="btn">Load more</button></div>
+</main>
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='people.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if not static_mode %}<link rel="manifest" href="{{ url_for('static', filename='manifest.webmanifest') }}">
+<meta name="theme-color" content="#7a4a1e">{% endif %}
+<link rel="icon" href="{{ url_for('static', filename='icons/icon.svg') }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/icon.svg') }}">
+<title>{% block title %}British Isles Oldest Buildings{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/MarkerCluster.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/MarkerCluster.Default.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='pages.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='places.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='map.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='settings.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='pron.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='tours.css') }}">
+<script>
+  // theme and text size before first paint (full preference handling: static/ui_prefs.js)
+  (function () {
+    var p = {}; try { p = JSON.parse(localStorage.getItem("bi_prefs")) || {}; } catch (e) {}
+    var t = new URLSearchParams(location.search).get("_theme") || p.theme, r = document.documentElement;
+    if (t === "light" || t === "dark") r.dataset.theme = t;
+    if (p.textSize && p.textSize !== 100) r.style.fontSize = p.textSize + "%";
+    if (p.density) r.dataset.density = p.density;
+  })();
+</script>
+</head>
+<body data-static="{{ 1 if static_mode else 0 }}" data-edit="{{ 1 if can_edit else 0 }}" data-page="{{ page or '' }}">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="{{ url_for('pages.index') }}">British Isles Oldest Buildings</a>
+  <nav class="nav">
+    {% set links = [('catalogue','pages.index','Catalogue'), ('map','pages.explore_map','Map'), ('places','pages.places','Places'),
+                    ('people','pages.people','People'), ('pron','pages.pronunciation','Pronunciation'),
+                    ('stories','pages.stories','Stories'), ('tours','pages.tours','Tours'), ('quiz','pages.quiz','Quiz'),
+                    ('history','pages.history','History'),
+                    ('oldest','pages.oldest','Oldest by type'), ('stats','pages.stats','Statistics'),
+                    ('compare','pages.compare','Compare'),
+                    ('data','pages.data','Data quality')] %}
+    {% for key, ep, label in links %}
+      <a href="{{ url_for(ep) }}" class="{{ 'active' if page == key else '' }}">{{ label }}{% if key in ('tours','compare') %} <span class="count" data-count="{{ 'trip' if key == 'tours' else key }}"></span>{% endif %}</a>
+    {% endfor %}
+  </nav>
+</header>
+<div id="main" tabindex="-1"></div>
+{% block body %}{% endblock %}
+<footer class="foot">
+  Data: <a href="https://www.wikidata.org">Wikidata</a> (CC0), official heritage registers (see the Places page), <a href="https://en.wikipedia.org">Wikipedia</a> (CC BY-SA),
+  images from <a href="https://commons.wikimedia.org">Wikimedia Commons</a> (individual licences), UK addresses from
+  <a href="https://postcodes.io">postcodes.io</a> (OGL), maps © OpenStreetMap contributors.
+  {% if info.built %}Built {{ info.built }}.{% endif %}
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+{% if not static_mode %}<script src="{{ url_for('static', filename='vendor/protomaps-leaflet.js') }}"></script>{% endif %}
+{% if static_mode %}<script>window.__STATIC__ = true;</script><script src="{{ url_for('static', filename='static_api.js') }}"></script><script src="{{ url_for('static', filename='static_places.js') }}"></script>{% endif %}
+<script src="{{ url_for('static', filename='ui_prefs.js') }}"></script>
+<script src="{{ url_for('static', filename='state.js') }}"></script>
+<script src="{{ url_for('static', filename='render.js') }}"></script>
+<script src="{{ url_for('static', filename='basemap.js') }}"></script>
+<script src="{{ url_for('static', filename='historic.js') }}"></script>
+<script src="{{ url_for('static', filename='outlines.js') }}"></script>
+<script src="{{ url_for('static', filename='render_places.js') }}"></script>
+<script src="{{ url_for('static', filename='ui_menus.js') }}"></script>
+<script src="{{ url_for('static', filename='ui_export.js') }}"></script>
+<script src="{{ url_for('static', filename='pron.js') }}"></script>
+<script src="{{ url_for('static', filename='stories.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

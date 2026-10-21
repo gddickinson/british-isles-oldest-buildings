@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Places of interest · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <input id="q" type="search" aria-label="Search the catalogue" placeholder="Search places, monuments, battles…" autocomplete="off">
+    <div class="years">
+      <label>From <input id="year_min" type="number" aria-label="Built from year" placeholder="-4000"></label>
+      <label>to <input id="year_max" type="number" aria-label="Built up to year" placeholder="2000"></label>
+      <div class="hint">Use negative numbers for BC</div>
+    </div>
+    <label class="check"><input type="checkbox" id="has_image"> Only with images</label>
+    {% for col, label, open in [('kind_group','Layer',True), ('kind_label','Type',False), ('nation','Nation',True),
+                                ('period','Period',False), ('source','Source',False)] %}
+    <details class="facet" {{ 'open' if open else '' }}>
+      <summary>{{ label }}</summary>
+      <div class="facet-list" data-facet="{{ col }}"></div>
+    </details>
+    {% endfor %}
+    <button id="reset" class="btn ghost">Clear all filters</button>
+  </aside>
+
+  <main class="main">
+    <section class="summary">
+      <div><b id="total">…</b> places of interest: battles, archaeology, lost places, gardens and trees,
+        industrial sites, finds, plaques and history events</div>
+      <div class="controls">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-view="list">List</button>
+          <button class="tab" data-view="map">Map</button>
+        </div>
+        <select id="sort" aria-label="Sort">
+          <option value="oldest">Oldest first</option><option value="newest">Newest first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+        <button id="toggle-filters" class="btn ghost mobile-only">Filters</button>
+      </div>
+    </section>
+    <section id="view-list" class="view"><div id="cards" class="cards"></div></section>
+    <section id="view-map" class="view hidden">
+      <div class="map-wrap"><div id="map"></div><div id="legend" class="legend"></div></div>
+      <p class="hint">Large layers are clustered; zoom in to see individual sites.</p>
+    </section>
+    <div class="pager" id="pager"><button id="more" class="btn">Load more</button></div>
+    <details class="sources">
+      <summary>Sources and licences</summary>
+      <ul>
+        <li>Wikidata (CC0): battles, sieges, monuments, holy wells, hill figures, Roman roads, deserted villages,
+          shipwrecks, gardens, notable trees, industrial sites, finds, plaques, objects in buildings, people.</li>
+        <li>Historic England: © Historic England 2026. Contains Ordnance Survey data © Crown copyright and database
+          right 2026. Open Government Licence (scheduled monuments, parks and gardens, battlefields, protected wrecks).</li>
+        <li>Historic Environment Scotland: contains HES and Ordnance Survey data © Historic Environment Scotland
+          © Crown copyright and database right 2026, Open Government Licence (scheduled monuments, gardens and
+          designed landscapes, battlefields).</li>
+        <li>Designated Historic Asset GIS Data, The Welsh Historic Environment Service (Cadw), 2026, licensed under
+          the Open Government Licence v3.0 (scheduled monuments, parks and gardens, wrecks).</li>
+        <li>Department for Communities Historic Environment Division (Northern Ireland), Open Government Licence v3.0
+          (scheduled and state-care monuments, battlesites, historic parks).</li>
+        <li>Archaeological Survey of Ireland, National Monuments Service, and the National Inventory of Architectural
+          Heritage, Department of Housing, Local Government and Heritage (CC BY 4.0). Irish monuments are a selection
+          of classes (churches, castles, tombs, crosses, holy wells and more).</li>
+        <li>Open Plaques (openplaques.org), data released into the public domain: commemorative plaques.</li>
+      </ul>
+    </details>
+  </main>
+</div>
+
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='places.js') }}"></script>
+{% endblock %}

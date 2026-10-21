@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}Settings · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page settings-page">
+  <h1>Settings</h1>
+  <nav class="set-toc" aria-label="Settings sections">
+    <a href="#appearance">Appearance</a><a href="#catalogue">Catalogue</a><a href="#maps">Maps</a>
+    <a href="#privacy">History &amp; shortcuts</a>{% if not static_mode %}<a href="#data">Data location</a>
+    <a href="#screens">Screenshots</a>{% endif %}<a href="#backup">Backup &amp; reset</a>
+  </nav>
+  <p class="prose">Preferences below are saved in this browser and take effect straight away.
+    {% if not static_mode %}Data location and screenshot settings belong to this computer and are saved in
+    <code>settings.json</code> in the project folder.{% endif %}</p>
+
+  <section id="appearance" class="set-card">
+    <h2>Appearance</h2>
+    <div class="set-row"><label for="s_theme">Theme</label>
+      <select id="s_theme" data-pref="theme"><option value="system">Same as my system</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+    <div class="set-row"><label for="s_textSize">Text size</label>
+      <select id="s_textSize" data-pref="textSize" data-num="1"><option value="90">Small</option><option value="100">Normal</option><option value="112">Large</option><option value="125">Extra large</option></select></div>
+    <div class="set-row"><label for="s_density">Layout density</label>
+      <select id="s_density" data-pref="density"><option value="comfortable">Comfortable</option><option value="compact">Compact (more on screen)</option></select></div>
+    <div class="set-row"><label for="s_motion">Animations</label>
+      <select id="s_motion" data-pref="motion"><option value="system">Same as my system</option><option value="reduce">Reduce motion</option></select></div>
+    <div class="set-row"><label for="s_approx">Mark estimated dates with ≈</label>
+      <input id="s_approx" type="checkbox" data-pref="approxMarker"></div>
+    <div class="set-row"><label for="s_pron">Show how names are pronounced (IPA, respelling, recordings)</label>
+      <input id="s_pron" type="checkbox" data-pref="pron"></div>
+    <div class="set-row"><label for="s_pronNative">Also show names in Welsh, Gaelic, Irish, Manx and other languages</label>
+      <input id="s_pronNative" type="checkbox" data-pref="pronNative"></div>
+  </section>
+
+  <section id="catalogue" class="set-card">
+    <h2>Catalogue</h2>
+    <div class="set-row"><label for="s_view">Open the catalogue as</label>
+      <select id="s_view" data-pref="defaultView"><option value="gallery">Gallery</option><option value="table">Table</option><option value="map">Map</option><option value="timeline">Timeline</option></select></div>
+    <div class="set-row"><label for="s_sort">Sort by</label>
+      <select id="s_sort" data-pref="defaultSort"><option value="oldest">Oldest first</option><option value="newest">Newest first</option><option value="name">Name</option><option value="nation">Nation</option></select></div>
+    <div class="set-row"><label for="s_page">Results per page</label>
+      <select id="s_page" data-pref="pageSize" data-num="1"><option value="24">24</option><option value="48">48</option><option value="96">96</option><option value="192">192</option></select></div>
+    <div class="set-row"><label for="s_units">Distances in</label>
+      <select id="s_units" data-pref="units"><option value="km">Kilometres</option><option value="mi">Miles</option></select></div>
+    <p class="hint">A link with filters in it (from "Copy link") always opens exactly as it was shared.</p>
+  </section>
+
+  <section id="maps" class="set-card">
+    <h2>Maps</h2>
+    <div class="set-row"><label for="s_base">Map background</label>
+      <select id="s_base" data-pref="mapBase"><option value="online">Street map (online)</option>{% if not static_mode %}<option value="satellite">Satellite (online)</option>{% endif %}<option value="offline">Offline map (bundled, works without internet)</option></select></div>
+    <div class="set-row"><label for="s_cluster">Group nearby markers into clusters</label>
+      <input id="s_cluster" type="checkbox" data-pref="cluster"></div>
+    <p class="hint">Map layers (roads, rivers, trails, historic maps…) are chosen with the <b>☰ Layers</b> button on any
+      map and remembered. <button type="button" class="linklike" id="s_layers_reset">Reset map layers</button></p>
+    {% if not static_mode %}<h3>Street maps saved for offline use</h3>
+    <p class="hint">Use <b>⬇ Save this area for offline</b> in a map's ☰ Layers panel; street detail (zoom 10–15) is stored
+      in the data folder.</p>
+    <div id="s_streets"></div>{% endif %}
+  </section>
+
+  <section id="privacy" class="set-card">
+    <h2>History &amp; shortcuts</h2>
+    <div class="set-row"><label for="s_recent">Remember recently viewed records</label>
+      <input id="s_recent" type="checkbox" data-pref="recent"></div>
+    <div id="s_recent_list" class="recent-list"></div>
+    <div class="set-row"><label for="s_keys">Single-key keyboard shortcuts</label>
+      <input id="s_keys" type="checkbox" data-pref="shortcuts"></div>
+    <p class="hint">Press <kbd>?</kbd> for the list of shortcuts, <kbd>⌘K</kbd> / <kbd>Ctrl+K</kbd> to jump anywhere.</p>
+  </section>
+
+  {% if not static_mode %}
+  <section id="data" class="set-card">
+    <h2>Data location</h2>
+    <p class="prose">The download cache and the database can live anywhere: on this computer, on an external drive,
+      or another folder. Moving copies everything, checks every file arrived, switches the app over and only then
+      deletes the old copy. If a drive holding the data is unplugged, the app says so instead of starting again
+      from scratch.</p>
+    <div id="dl_items" class="dl-items"><p class="hint">Loading…</p></div>
+    <h3>Drives</h3>
+    <div id="dl_volumes" class="table-wrap"></div>
+    <div id="dl_job" class="dl-job hidden"></div>
+  </section>
+
+  <section id="screens" class="set-card">
+    <h2>Screenshots</h2>
+    <p class="prose">The <b>⤓ Export</b> menu can save a picture of any page. It uses a Chromium-family browser in the
+      background; the same tool works from the command line:<br>
+      <code>.venv/bin/python -m app.screenshot /map map.png --width 1280 --height 800 [--theme dark]</code></p>
+    <div class="set-row"><label for="s_chrome">Browser used</label>
+      <span id="s_chrome_found" class="hint"></span></div>
+    <div class="set-row"><label for="s_chrome">Use a different browser</label>
+      <span class="inline-form"><input id="s_chrome" type="text" placeholder="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome">
+      <button type="button" class="btn small" id="s_chrome_save">Save</button></span></div>
+  </section>
+  {% endif %}
+
+  <section id="backup" class="set-card">
+    <h2>Backup &amp; reset</h2>
+    <p class="prose">Your tours, compare list, map layers and these preferences are stored in this browser.
+      Save them to a file to keep them, or to move them to another browser or computer.</p>
+    <p><button type="button" class="btn small" id="s_export">Save settings &amp; lists to a file</button>
+      <label class="btn small ghost">Load from a file<input type="file" id="s_import" accept=".json,application/json" hidden></label>
+      <button type="button" class="btn small ghost" id="s_reset">Reset preferences</button>
+      <button type="button" class="btn small ghost" id="s_clear">Clear everything stored in this browser</button></p>
+  </section>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='settings.js') }}"></script>
+{% endblock %}

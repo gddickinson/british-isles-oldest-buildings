@@ -1,0 +1,59 @@
+{
+ "_about": "Places of legend with no location of their own, placed where tradition or a scholar puts them; each a claim, with the Wikipedia article it comes from (read 2026-10-21).",
+ "places": [
+  {
+   "id": "legend-avalon",
+   "name": "Avalon (Glastonbury Tor)",
+   "lat": 51.1442,
+   "lon": -2.6986,
+   "claim": "Since the 12th century Glastonbury has been identified with the isle of Avalon, where King Arthur was taken after his last battle.",
+   "source": "https://en.wikipedia.org/wiki/Avalon",
+   "nation": "England"
+  },
+  {
+   "id": "legend-lyonesse",
+   "name": "Lyonesse",
+   "lat": 49.99,
+   "lon": -6.05,
+   "claim": "In Arthurian legend, the country of Tristan, said to have sunk beneath the sea between Land's End and the Isles of Scilly.",
+   "source": "https://en.wikipedia.org/wiki/Lyonesse",
+   "nation": "England"
+  },
+  {
+   "id": "legend-cantref-gwaelod",
+   "name": "Cantre'r Gwaelod",
+   "lat": 52.47,
+   "lon": -4.14,
+   "claim": "A legendary sunken kingdom in Cardigan Bay, drowned when the sluice gates were left open; the drowned forest at Borth is pointed to as its remains.",
+   "source": "https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod",
+   "nation": "Wales"
+  },
+  {
+   "id": "legend-camelot-cadbury",
+   "name": "Camelot? (Cadbury Castle)",
+   "lat": 51.0245,
+   "lon": -2.531,
+   "claim": "John Leland in 1542 named the hillfort of Cadbury Castle as Camelot, King Arthur's court.",
+   "source": "https://en.wikipedia.org/wiki/Camelot",
+   "nation": "England"
+  },
+  {
+   "id": "legend-camelot-caerleon",
+   "name": "Camelot? (Caerleon)",
+   "lat": 51.6094,
+   "lon": -2.9563,
+   "claim": "Geoffrey of Monmouth made the Roman town of Caerleon the seat of Arthur's court; later writers linked it with Camelot.",
+   "source": "https://en.wikipedia.org/wiki/Camelot",
+   "nation": "Wales"
+  },
+  {
+   "id": "legend-camelot-winchester",
+   "name": "Camelot? (Winchester)",
+   "lat": 51.0632,
+   "lon": -1.308,
+   "claim": "Thomas Malory identified Camelot with Winchester, where the 13th-century Round Table hangs in the Great Hall.",
+   "source": "https://en.wikipedia.org/wiki/Camelot",
+   "nation": "England"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}History · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page history-page">
+  <h1 id="h_title">A short history of the British Isles</h1>
+  <section class="otd" aria-label="On this day">
+    <div class="otd-head"><button class="btn small ghost" id="otd_prev" aria-label="Previous day">‹</button>
+      <h2 id="otd_title">On this day</h2><button class="btn small ghost" id="otd_next" aria-label="Next day">›</button>
+      <button class="btn small ghost" id="otd_today">Today</button></div>
+    <ul id="otd_list" class="otd-list"></ul>
+  </section>
+  <div id="h_intro" class="prose"></div>
+  <h2>Periods at a glance</h2>
+  <p class="hint">Each band is one period (bands are equal width, not to scale). Click to jump to it.</p>
+  <div id="h_bands" class="bands"></div>
+  <h2>Surviving buildings in this catalogue, by period</h2>
+  <div id="h_chart" class="chart"></div>
+  <h2>Where it happened</h2>
+  <p class="hint">Events with a known location. Click a marker to jump to the event; earlier events are lighter.</p>
+  <div id="h_map" class="history-map"></div>
+  <h2>Timeline of events</h2>
+  <div class="filter-row">
+    <input id="ev_q" type="search" aria-label="Search events" placeholder="Search events…">
+    <select id="ev_region"><option value="">All regions</option></select>
+    <select id="ev_kind"><option value="">All kinds</option></select>
+    <span id="ev_count" class="hint"></span>
+  </div>
+  <div id="h_periods"></div>
+  <p class="hint">Events and summaries were compiled from Wikipedia and heritage-body sources; each event links to its
+    source. Dates marked "c." are approximate, and some early dates are debated.</p>
+</main>
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
+<script src="{{ url_for('static', filename='on_this_day.js') }}"></script>
+<script src="{{ url_for('static', filename='history.js') }}"></script>
+{% endblock %}

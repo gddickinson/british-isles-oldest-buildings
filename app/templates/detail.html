@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ b.name }} · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="detail-page"><p><a href="{{ url_for('pages.index') }}">← Back to the catalogue</a></p><div id="detail"></div></main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='detail.js') }}"></script>
+<script>
+  showDetail({{ b | tojson }}, document.getElementById("detail"), false);
+</script>
+{% endblock %}

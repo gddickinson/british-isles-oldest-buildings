@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Compare · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page">
+  <h1>Compare buildings</h1>
+  <p class="prose">Pick up to three buildings with ⇄ anywhere in the catalogue to compare them side by side.</p>
+  <div id="c_body"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='compare.js') }}"></script>
+{% endblock %}

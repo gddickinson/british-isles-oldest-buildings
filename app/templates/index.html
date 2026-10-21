@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <input id="q" type="search" aria-label="Search the catalogue" placeholder="Search name, place, person, dedication…" autocomplete="off">
+    <div class="near">
+      <div class="near-row">
+        <input id="near_q" type="search" aria-label="Near a place or postcode" placeholder="Near a place or postcode…" autocomplete="off">
+        <button id="near_go" class="btn small" type="button">Go</button>
+      </div>
+      <div class="near-row">
+        <button id="near_me" class="btn ghost small" type="button">Use my location</button>
+        <select id="radius" aria-label="Radius">
+          <option value="">any distance</option><option value="5">within 5 km</option>
+          <option value="10">within 10 km</option><option value="25" selected>within 25 km</option>
+          <option value="50">within 50 km</option><option value="100">within 100 km</option>
+        </select>
+      </div>
+      <div id="near_status" class="hint"></div>
+    </div>
+    <div class="years">
+      <label>Built from <input id="year_min" type="number" aria-label="Built from year" placeholder="-4000"></label>
+      <label>to <input id="year_max" type="number" aria-label="Built up to year" placeholder="2000"></label>
+      <div class="hint">Use negative numbers for BC</div>
+    </div>
+    <label class="check"><input type="checkbox" id="has_image"> Only with images</label>
+    <label class="check"><input type="checkbox" id="curated"> Only Wikipedia "oldest buildings" lists</label>
+    <label class="check"><input type="checkbox" id="oldest_only"> Only "oldest of their type"</label>
+    <label class="check"><input type="checkbox" id="early_only"> Only begun before 1500</label>
+    <label class="story-filter">Stories <select id="story" aria-label="Stories">
+      <option value="">any or none</option><option value="any">with a story or legend</option>
+      <option value="supernatural">👻 ghosts &amp; the supernatural</option><option value="legend">🐉 legends &amp; myths</option>
+      <option value="folklore">🌿 folklore &amp; customs</option><option value="curiosity">🗝 curious history</option></select></label>
+    <label class="check"><input type="checkbox" id="landmarks_only"> Only landmarks (top grades, World Heritage, famous)</label>
+    <label class="check"><input type="checkbox" id="buildings_only"> Buildings only (exclude other structures)</label>
+    {% if can_edit %}<label class="check"><input type="checkbox" id="edited"> Only records I corrected</label>{% endif %}
+    {% for col, label in facets.items() %}
+    <details class="facet" {% if col in ('category_group','period','nation') %}open{% endif %}>
+      <summary>{{ label }}</summary>
+      <div class="facet-list" data-facet="{{ col }}"></div>
+    </details>
+    {% endfor %}
+    <button id="reset" class="btn ghost">Clear all filters</button>
+  </aside>
+
+  <main class="main">
+    <section class="summary">
+      <div aria-live="polite"><b id="total">…</b> matching of {{ stats.total }} records: buildings begun before 1500, the oldest of
+        each type, and landmark buildings of any date · {{ stats.with_images }} with images
+        {% if stats.oldest %}· oldest: <a href="{{ url_for('pages.building_page', bid=stats.oldest.id) }}">{{ stats.oldest.name }}</a> ({{ stats.oldest.date_text }}){% endif %}
+      </div>
+      <div class="controls">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-view="gallery">Gallery</button>
+          <button class="tab" data-view="table">Table</button>
+          <button class="tab" data-view="map">Map</button>
+          <button class="tab" data-view="timeline">Timeline</button>
+        </div>
+        <select id="sort" aria-label="Sort">
+          <option value="oldest">Oldest first</option><option value="newest">Newest first</option>
+          <option value="name">Name A–Z</option><option value="nation">Nation</option>
+          <option value="distance">Nearest first</option>
+        </select>
+        <button id="copy_link" class="btn ghost" type="button" title="Copy a link to this exact view">Copy link</button>
+        <a id="export" class="btn" href="#">Export CSV</a>
+        <button id="toggle-filters" class="btn ghost mobile-only">Filters</button>
+      </div>
+    </section>
+
+    <section id="view-gallery" class="view"><div id="cards" class="cards"></div></section>
+    <section id="view-table" class="view hidden">
+      <div class="table-wrap"><table class="grid"><thead><tr>
+        <th></th><th>Name</th><th>Date</th><th>Period</th><th>Category</th><th>Nation</th><th>Location</th><th>Heritage</th><th>Status</th>
+      </tr></thead><tbody id="rows"></tbody></table></div>
+    </section>
+    <section id="view-map" class="view hidden">
+      <div class="map-controls">
+        <label>Colour by <select id="color_by"><option value="group">building group</option><option value="period">period</option></select></label>
+        <label class="check"><input type="checkbox" id="map_area"> List only what is in the map view</label>
+      </div>
+      <div class="map-controls overlay-controls" id="overlay"><b>Also show:</b></div>
+      <div class="map-wrap"><div id="map"></div><div id="legend" class="legend"></div></div>
+    </section>
+    <section id="view-timeline" class="view hidden">
+      <div class="map-controls">
+        <label>Bucket <select id="bucket"><option value="100">century</option><option value="500">500 years</option><option value="1000">millennium</option><option value="50">50 years</option></select></label>
+        <button id="tl_table" class="btn ghost small" type="button">Show as table</button>
+        <span class="hint">Click a bar to filter to that period.</span>
+      </div>
+      <div id="timeline" class="chart"></div>
+      <div id="timeline_table" class="hidden"></div>
+    </section>
+    <div class="pager" id="pager"><button id="more" class="btn">Load more</button></div>
+  </main>
+</div>
+
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
+<script src="{{ url_for('static', filename='detail.js') }}"></script>
+<script src="{{ url_for('static', filename='mapview.js') }}"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock %}

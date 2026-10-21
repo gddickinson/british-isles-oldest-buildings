@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Statistics · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page">
+  <h1>Statistics</h1>
+  <div class="filter-row">
+    <select id="s_nation"><option value="">All nations</option></select>
+    <select id="s_group"><option value="">All building groups</option></select>
+    <select id="s_period"><option value="">All periods</option></select>
+    <span class="hint">Filters apply to every chart below. Click a bar to open those buildings in the catalogue.</span>
+  </div>
+  <div class="tiles" id="s_tiles"></div>
+  <div class="dash">
+    <section class="card-panel"><h3>By nation</h3><div id="c_nation" class="chart"></div></section>
+    <section class="card-panel"><h3>By period</h3><div id="c_period" class="chart"></div></section>
+    <section class="card-panel wide"><h3>By category</h3><div id="c_category" class="chart"></div></section>
+    <section class="card-panel"><h3>Heritage designation</h3><div id="c_heritage_grade" class="chart"></div></section>
+    <section class="card-panel"><h3>Status</h3><div id="c_status" class="chart"></div></section>
+    <section class="card-panel"><h3>Top 25 counties</h3><div id="c_county" class="chart"></div></section>
+    <section class="card-panel"><h3>Data completeness</h3><div id="c_completeness" class="chart"></div></section>
+    <section class="card-panel wide"><h3>Oldest building in each county</h3><div id="t_oldest" class="table-wrap"></div></section>
+  </div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
+<script src="{{ url_for('static', filename='stats.js') }}"></script>
+{% endblock %}

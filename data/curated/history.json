@@ -1,0 +1,1334 @@
+{
+  "title": "A short history of the British Isles",
+  "intro": "The British Isles - Great Britain, Ireland, the Isle of Man, the Channel Islands and hundreds of smaller islands - have been continuously inhabited since hunter-gatherers returned at the end of the last Ice Age, c. 9700 BC. Rising seas cut Britain off from the Continent by c. 6200 BC, but the sea was always as much a highway as a barrier: farming, metalworking, Christianity, Norse settlers, Norman lords and new architectural styles all arrived by boat.\n\nFor most of their history the isles were not one country but many. Prehistoric communities built tombs, stone circles and hillforts; Rome ruled much of Britain for nearly four centuries but never Ireland or northern Scotland; and the early medieval kingdoms of the Anglo-Saxons, Britons, Picts, Gaels and Norse slowly coalesced into the kingdoms of England and Scotland, the Welsh principalities and the Irish provincial kingships. From 1066 the Norman and later English crown extended its power over Wales (completed 1283), Ireland (contested for centuries) and, through the Union of the Crowns (1603) and Acts of Union (1707, 1800), created the United Kingdom. The Isle of Man and the Channel Islands remained separate Crown possessions with their own parliaments.\n\nThe last three centuries brought the Industrial Revolution, empire, mass migration, the Great Famine in Ireland, two world wars, Irish independence (1922) and, from 1999, devolution to Scotland, Wales and Northern Ireland. Each era left its mark in buildings - from Neolithic passage tombs and Roman forts to castles, cathedrals, country houses, mills, terraces and tower blocks - which is why the built heritage of these islands is so dense and varied.",
+  "periods": [
+    {
+      "id": "mesolithic",
+      "name": "Mesolithic",
+      "start": -9700,
+      "end": -4000,
+      "catalogue_period": null,
+      "summary": "After the last Ice Age, small mobile bands of hunter-gatherers recolonised Britain from c. 9700 BC, when it was still joined to the Continent by Doggerland. They hunted deer, boar and aurochs, fished and gathered plants, moving seasonally through a landscape of spreading woodland. Rising seas separated the Isle of Man (by c. 6500 BC) and then Britain itself (c. 6200 BC) from the mainland. Ireland, already an island, was settled by c. 8000 BC or earlier, and Mesolithic people also reached the Hebrides, Orkney and the Channel Islands.\n\nThese communities left few permanent marks, but excavations show they built substantial timber huts, managed woodland with fire and buried some of their dead with care. The skeleton known as Cheddar Man (c. 8300 BC) and DNA studies show that Britain's Mesolithic population was largely replaced by incoming farmers after c. 4000 BC.",
+      "architecture": "Mesolithic buildings were made of timber, hide, reeds and turf, so only post-holes, hearths and floor hollows survive. Key sites include Star Carr in North Yorkshire (c. 9300-8500 BC), with one of the earliest known house structures in Britain; Mount Sandel near Coleraine (c. 7000 BC), with Ireland's oldest known dwellings; and Howick in Northumberland, where a large round hut was rebuilt several times. None of these survives above ground."
+    },
+    {
+      "id": "neolithic",
+      "name": "Neolithic",
+      "start": -4000,
+      "end": -2500,
+      "catalogue_period": "Neolithic",
+      "summary": "Farming arrived c. 4000 BC (a little earlier in parts of Ireland), brought largely by migrants from the Continent who introduced cereals, cattle, sheep, pottery and polished stone axes. Woodland was cleared for fields - most spectacularly at the Céide Fields in Co. Mayo - and communities across the isles built monuments on a scale that implies sophisticated social organisation and shared beliefs.\n\nThe period saw long barrows and chambered tombs (c. 3800-3300 BC), then great passage tombs such as Newgrange and Maeshowe, henges and stone circles. Orkney was a major cultural centre, where Grooved Ware pottery originated and spread throughout Britain and Ireland. Stonehenge began as a circular earthwork c. 3000 BC and its sarsen circle was raised c. 2600-2400 BC.",
+      "architecture": "Neolithic people built rectangular timber halls and, where wood was scarce, stone houses with built-in furniture. Monuments were of earth, timber and huge undressed stones: long barrows, portal dolmens, passage tombs, causewayed enclosures, cursuses, henges and stone circles. Outstanding survivals include Skara Brae and Maeshowe in Orkney, Newgrange in the Boyne Valley, Pentre Ifan in Pembrokeshire, West Kennet Long Barrow and Stonehenge in Wiltshire, and La Hougue Bie in Jersey."
+    },
+    {
+      "id": "bronze_age",
+      "name": "Bronze Age",
+      "start": -2500,
+      "end": -800,
+      "catalogue_period": "Bronze Age",
+      "summary": "From c. 2450 BC people associated with Beaker pottery arrived from the Continent; ancient DNA indicates they largely replaced the earlier population of Britain within a few centuries. They brought copper and then bronze metallurgy: copper was mined at Ross Island in Co. Kerry (c. 2400-2200 BC) and on the Great Orme in north Wales, and Irish gold and Cornish tin were traded widely. Rich single burials under round barrows, such as the Amesbury Archer (c. 2300 BC), suggest emerging elites.\n\nIn the later Bronze Age, the landscape was divided into fields and boundaries, settlements of roundhouses multiplied, and deposits of fine metalwork were placed in rivers and bogs. Seafaring is shown by the Dover boat (c. 1550 BC), and exceptional craftsmanship by the gold cape from Mold in north Wales and the gold lunulae and torcs of Ireland.",
+      "architecture": "The roundhouse, with a conical thatched roof over a timber or stone wall, became the standard dwelling across the isles and remained so until the Roman period. Monuments included round barrows, stone rows, small stone circles and burnt mounds. Surviving examples include the stone-built settlement of Grimspound on Dartmoor, the Great Orme copper mines in Llandudno, the Flag Fen timber causeway near Peterborough, and Jarlshof in Shetland; the Must Farm stilt-houses (c. 1000-800 BC) were preserved in river silt after a fire."
+    },
+    {
+      "id": "iron_age",
+      "name": "Iron Age",
+      "start": -800,
+      "end": 43,
+      "catalogue_period": "Iron Age",
+      "summary": "Ironworking spread from c. 800 BC (dates vary by region and are debated). Society was organised in tribes and kin groups led by warrior aristocracies; Celtic languages were spoken across the isles, ancestral to Welsh, Cornish, Breton, Irish, Scottish Gaelic and Manx. La Tène art, coinage (in southern Britain from the 2nd century BC) and cross-Channel trade linked southern Britain closely to Gaul.\n\nIn Ireland, royal ceremonial sites such as Navan Fort, Tara and Dún Ailinne were developed, and great timber trackways crossed the bogs. In Atlantic Scotland, communities built brochs and wheelhouses; in the south, large hillforts and, later, oppida. Julius Caesar's expeditions of 55 and 54 BC brought southern Britain into the Roman orbit, nearly a century before the conquest.",
+      "architecture": "The roundhouse remained the main dwelling, now often grouped in farmsteads and villages. Defended sites dominate: hillforts with multiple ramparts, Scottish brochs (drystone towers), crannogs (artificial lake islands), and Irish ringforts. Notable survivals include Maiden Castle in Dorset, the Broch of Mousa in Shetland, Tre'r Ceiri hillfort in Gwynedd, the Corlea Trackway in Co. Longford, and Castell Henllys in Pembrokeshire, where roundhouses have been reconstructed on their original sites."
+    },
+    {
+      "id": "roman",
+      "name": "Roman Britain",
+      "start": 43,
+      "end": 410,
+      "catalogue_period": "Roman Britain",
+      "summary": "Rome invaded in AD 43 under Claudius and within forty years controlled most of what is now England and Wales, despite fierce resistance, including Boudica's revolt (AD 60 or 61) and long campaigns in Wales. Northern Britain was never securely held: Agricola defeated the Caledonians at Mons Graupius (AD 83 or 84), but the frontier settled on Hadrian's Wall (begun 122), with a brief advance to the Antonine Wall (142-c. 162). Ireland was never conquered, though it traded with Roman Britain; the Isle of Man and the Channel Islands show only limited Roman contact.\n\nRoman Britain was a province of towns, villas, roads and garrisons, with Latin used in government and Christianity spreading in the 3rd and 4th centuries. In the late 4th century raids by Picts, Scots (from Ireland) and Saxons increased, troops were withdrawn to fight on the Continent, and by c. 410 Roman rule had ended. The exact date and nature of the end is debated.",
+      "architecture": "Rome introduced mortared stone and brick, roof tiles, hypocausts, mosaics, planned towns and engineered roads. Forts, walled towns, baths, temples, amphitheatres and country villas were built across lowland Britain. Notable survivals include Hadrian's Wall with forts such as Housesteads, the legionary fortress and amphitheatre at Caerleon, the Roman Baths at Bath, Fishbourne Roman Palace in West Sussex, and the Antonine Wall forts such as Rough Castle near Falkirk."
+    },
+    {
+      "id": "early_medieval",
+      "name": "Early Medieval",
+      "start": 410,
+      "end": 1066,
+      "catalogue_period": "Early Medieval",
+      "summary": "After Rome, Britain fragmented. Angles, Saxons and Jutes settled the east and south from the 5th century and formed kingdoms such as Northumbria, Mercia, East Anglia, Kent and Wessex, while Britons held Wales, Cornwall, Cumbria and Strathclyde. In the north the Picts and the Gaelic kingdom of Dál Riata (linked to Ireland) gradually merged into the kingdom of Alba (Scotland) under Kenneth MacAlpin's dynasty from the mid-9th century. Ireland was divided among many local and provincial kings, with the high kingship increasingly contested.\n\nChristianity, brought to Ireland by Patrick and others in the 5th century, flourished in Irish monasteries and spread via Iona to Scotland and Northumbria, while Augustine's mission (597) brought Roman Christianity to the English. This produced the Book of Kells, the Lindisfarne Gospels and Bede's histories. From 793 Viking raids and then settlement transformed the isles: Norse towns such as Dublin and Waterford were founded, the Danelaw covered eastern England, and Norse kings ruled the Isle of Man and the Western Isles. Wessex under Alfred and his successors resisted and created a unified English kingdom by 927.",
+      "architecture": "Most buildings were of timber, wattle and thatch - halls, sunken-floored huts and early churches - but stone was used for important churches and, in Ireland, for monastic sites. Survivals include early stone churches such as St Laurence's, Bradford-on-Avon, and All Saints, Brixworth; Irish monastic complexes with round towers and high crosses such as Glendalough and Clonmacnoise; Pictish symbol stones; and earthworks such as Offa's Dyke. The Sutton Hoo ship burial shows the wealth of a 7th-century East Anglian king."
+    },
+    {
+      "id": "norman",
+      "name": "Norman",
+      "start": 1066,
+      "end": 1154,
+      "catalogue_period": "Norman",
+      "summary": "William of Normandy's victory at Hastings (1066) replaced the English aristocracy with a Norman elite, enforced by castles and by brutal campaigns such as the Harrying of the North (1069-70). Domesday Book (1086) surveyed the conquered kingdom. Norman lords pushed into south and east Wales, establishing marcher lordships, though Welsh princes in Gwynedd, Powys and Deheubarth remained powerful. The period ended with the civil war known as the Anarchy (1135-53).\n\nScotland was not conquered, but under David I (1124-53) Scottish kings invited Anglo-Norman settlers, founded burghs and reformed monasteries, introducing feudal institutions. In Ireland, church reform brought the first Cistercian abbey (Mellifont, 1142) and new Romanesque churches. The Channel Islands were part of the Duchy of Normandy, and the Isle of Man was ruled by the Norse Kingdom of Mann and the Isles founded by Godred Crovan (1079).",
+      "architecture": "The Normans built hundreds of motte-and-bailey castles in earth and timber, soon followed by stone keeps, and rebuilt nearly every major English church on a large scale in the Romanesque style with round arches and massive piers. Surviving examples include the White Tower of the Tower of London, Chepstow Castle (begun 1067), Durham Cathedral (begun 1093, with pioneering rib vaults) and Cormac's Chapel at Cashel (consecrated 1134), a masterpiece of Irish Romanesque."
+    },
+    {
+      "id": "high_medieval",
+      "name": "High Medieval",
+      "start": 1154,
+      "end": 1307,
+      "catalogue_period": "High Medieval",
+      "summary": "Henry II (1154-89) ruled an empire stretching from Scotland's border to the Pyrenees. Anglo-Norman lords invaded Ireland from 1169 and Henry asserted lordship there in 1171, beginning more than 750 years of English involvement; Gaelic lordships nevertheless survived across much of the island. King John lost Normandy in 1204 but kept the Channel Islands, and in 1215 was forced to accept Magna Carta. Parliament developed in England during the 13th century and in Ireland by 1297.\n\nIn Wales, Llywelyn ap Gruffudd was recognised as Prince of Wales in 1267, but Edward I conquered the principality in 1282-83 and secured it with a ring of castles. Scotland gained the Western Isles and the Isle of Man from Norway by the Treaty of Perth (1266). After the death of Alexander III (1286) and the succession crisis, Edward I invaded Scotland in 1296, beginning the Wars of Scottish Independence and resistance led by William Wallace and Robert the Bruce.",
+      "architecture": "Gothic architecture, with pointed arches, rib vaults and large traceried windows, arrived in England with the rebuilding of Canterbury Cathedral's choir from 1174 and spread across the isles; Salisbury Cathedral (begun 1220) is the classic Early English example. Castle design advanced to concentric and gatehouse plans, culminating in Edward I's Welsh castles. Surviving examples include Salisbury Cathedral, Caernarfon, Conwy, Harlech and Beaumaris castles, Trim Castle in Co. Meath (the largest Anglo-Norman castle in Ireland) and the ruined abbeys of the Scottish Borders such as Melrose and Jedburgh."
+    },
+    {
+      "id": "late_medieval",
+      "name": "Late Medieval",
+      "start": 1307,
+      "end": 1485,
+      "catalogue_period": "Late Medieval",
+      "summary": "Robert the Bruce's victory at Bannockburn (1314), the Declaration of Arbroath (1320) and the Treaty of Edinburgh-Northampton (1328) secured Scottish independence, though warfare with England continued intermittently. Edward Bruce's invasion of Ireland (1315-18) and a Gaelic resurgence shrank English control, which by the late 15th century was confined to the Pale around Dublin; the Statutes of Kilkenny (1366) tried in vain to stop settlers adopting Irish ways.\n\nThe Black Death (1348-50) killed perhaps a third to half of the population, reshaping society and the economy and contributing to the Peasants' Revolt (1381). England fought the Hundred Years' War with France. In Wales, Owain Glyndŵr's revolt (from 1400) briefly restored Welsh rule before collapsing. The Isle of Man passed to the Stanley family in 1405. England's dynastic Wars of the Roses (1455-87) ended with Henry Tudor's victory at Bosworth.",
+      "architecture": "English Gothic entered its Decorated and then Perpendicular phases, with vast windows and fan vaults; tower houses became the typical lordly residence in Ireland, Scotland and the northern English borders; and towns gained guildhalls, timber-framed houses and parish churches rebuilt with wool wealth. Surviving examples include the choir and cloister of Gloucester Cathedral, King's College Chapel in Cambridge (begun 1446), Bunratty Castle in Co. Clare, and Bodiam Castle in East Sussex (licensed 1385)."
+    },
+    {
+      "id": "tudor",
+      "name": "Tudor",
+      "start": 1485,
+      "end": 1603,
+      "catalogue_period": "Tudor",
+      "summary": "The Tudor monarchs strengthened central government. Henry VIII broke with Rome (Act of Supremacy, 1534) and dissolved the monasteries (1536-41), transferring vast lands to the crown and gentry. The Laws in Wales Acts (1536 and 1543) incorporated Wales into the English legal system, while Henry was declared King of Ireland in 1541. Protestantism was consolidated under Elizabeth I, while the Welsh Bible (1588) helped preserve the Welsh language.\n\nScotland, under the Stewarts, suffered a major defeat at Flodden (1513) and underwent its own Protestant Reformation (1560); Mary, Queen of Scots, was deposed in 1567 and executed in England in 1587. In Ireland, Tudor reconquest and plantation provoked rebellions culminating in the Nine Years' War (1594-1603) led by Hugh O'Neill. England defeated the Spanish Armada in 1588 and began overseas exploration and trade.",
+      "architecture": "Monastic buildings were demolished, ruined or converted into houses, while wealthy courtiers built great brick and stone houses with long galleries, symmetrical facades and large glazed windows. Timber-framed town houses flourished, and Henry VIII built artillery forts along the south coast. Surviving examples include Hampton Court Palace, Hardwick Hall in Derbyshire (1590-97), Deal Castle in Kent, Falkland Palace in Fife (Renaissance facades of the 1530s) and the ruins of dissolved abbeys such as Fountains and Tintern."
+    },
+    {
+      "id": "stuart",
+      "name": "Stuart",
+      "start": 1603,
+      "end": 1714,
+      "catalogue_period": "Stuart",
+      "summary": "James VI of Scotland became James I of England and Ireland in 1603, uniting the crowns but not the kingdoms. The Plantation of Ulster (from 1609) settled English and Scottish Protestants on confiscated land, with lasting consequences. Conflicts over religion and royal power led to the Wars of the Three Kingdoms (1639-51): the Scottish Covenanters' revolt, the Irish Rebellion of 1641 and the English Civil War, ending with the execution of Charles I (1649), Cromwell's brutal conquest of Ireland and a republican Commonwealth.\n\nThe monarchy was restored in 1660. The Glorious Revolution (1688) replaced James II with William III and Mary II, confirmed in Ireland by William's victory at the Boyne (1690) and followed by Penal Laws against Catholics. In 1707 England and Scotland united as the Kingdom of Great Britain. The period also saw the Scientific Revolution, the Great Fire of London (1666) and the growth of trade and empire.",
+      "architecture": "Classical architecture, introduced by Inigo Jones, replaced late Gothic and Jacobean styles; after the Great Fire, Christopher Wren rebuilt St Paul's Cathedral and over fifty City churches, and English Baroque reached its peak with Vanbrugh and Hawksmoor. Brick became the standard urban material. Surviving examples include the Queen's House, Greenwich, St Paul's Cathedral, Blenheim Palace, the Royal Hospital Kilmainham in Dublin (1680s), and Heriot's Hospital in Edinburgh."
+    },
+    {
+      "id": "georgian",
+      "name": "Georgian",
+      "start": 1714,
+      "end": 1837,
+      "catalogue_period": "Georgian",
+      "summary": "The Hanoverian succession (1714) was challenged by Jacobite risings, the last crushed at Culloden in 1746, after which the Highlands were forcibly pacified; the Highland Clearances followed over the next century. Britain became a global imperial and naval power, profiting heavily from the Atlantic slave trade until its abolition in 1807 (slavery in most of the Empire was abolished from 1834). The Irish Rebellion of 1798 led to the Act of Union, creating the United Kingdom of Great Britain and Ireland from 1801. Westminster took direct control of the Isle of Man in 1765.\n\nThe Industrial Revolution began in Britain: coke-smelted iron, steam engines, canals, factory spinning and, from 1825, steam railways transformed the economy, centred on northern England, the Scottish central belt, south Wales and Belfast. The Scottish Enlightenment flourished in Edinburgh and Glasgow. Catholic Emancipation (1829) and the Reform Act (1832) began political reform.",
+      "architecture": "Palladian and then Neoclassical styles governed country houses and planned towns built of brick, stone and stucco in squares, terraces and crescents. Industry created new building types: mills, warehouses, canals, bridges and docks. Surviving examples include the Royal Crescent in Bath, Edinburgh's New Town, the Iron Bridge in Shropshire, Cromford Mills in Derbyshire, and Georgian Dublin's squares and the Custom House."
+    },
+    {
+      "id": "victorian",
+      "name": "Victorian",
+      "start": 1837,
+      "end": 1901,
+      "catalogue_period": "Victorian",
+      "summary": "Under Queen Victoria the UK became the world's leading industrial and imperial power, with railways, factories and great cities transforming life across Britain. Rapid urban growth brought public health crises and then reform, as well as Chartism and the extension of the vote (1867, 1884). Wales saw the Newport Rising (1839) and the rise of coal mining and Nonconformity; Scotland's industry boomed around the Clyde.\n\nIn Ireland the Great Famine (1845-52) caused about a million deaths and the emigration of over a million more, followed by land agitation and a movement for Home Rule that split British politics from 1886. The Isle of Man reformed the House of Keys (1866) and in 1881 granted some women the vote in national elections, a world first. Science and engineering flourished, from Darwin's On the Origin of Species (1859) to the Forth Bridge (1890).",
+      "architecture": "The Gothic Revival dominated churches and public buildings, alongside Italianate, Scots Baronial and other historic styles, while iron, glass and later steel enabled railway stations, exhibition halls and bridges. Mass-produced brick terraces housed industrial workers. Surviving examples include the Palace of Westminster, St Pancras station, the Forth Bridge, Cardiff Castle's remodelled interiors and Glasgow School of Art (1897-1909) by Charles Rennie Mackintosh."
+    },
+    {
+      "id": "modern",
+      "name": "Modern",
+      "start": 1901,
+      "end": 2026,
+      "catalogue_period": "Modern",
+      "summary": "The two world wars cost hundreds of thousands of lives across the isles and brought bombing to British cities; the Channel Islands were the only British territory occupied by Germany (1940-45). In Ireland, the Easter Rising (1916) and the War of Independence led to partition (1921) and the Irish Free State (1922), which became the Republic of Ireland in 1949. Northern Ireland remained in the UK, where the Troubles (c. 1968-98) ended with the Good Friday Agreement.\n\nAfter 1945 Britain created the welfare state and National Health Service, decolonised its empire and saw heavy industry decline. The UK and Ireland joined the European Communities in 1973; the UK left the European Union in 2020. Devolution created the Scottish Parliament, Welsh Assembly (now Senedd) and Northern Ireland Assembly in 1998-99, and Scotland voted to stay in the UK in 2014. Elizabeth II reigned for 70 years until 2022.",
+      "architecture": "Arts and Crafts and Edwardian Baroque gave way to Art Deco and Modernism; after the Second World War, reconstruction brought new towns, council estates, tower blocks and Brutalist civic buildings, followed by Postmodern and high-tech architecture. Heritage protection grew through listing (from 1947 in England and Wales) and conservation areas (from 1967). Notable examples include the Hoover Building in London, Coventry Cathedral (1962), the Barbican Estate, the Scottish Parliament building at Holyrood (2004) and the Senedd in Cardiff (2006)."
+    }
+  ],
+  "events": [
+    {
+      "year": -9700,
+      "year_end": null,
+      "date_text": "c. 9700 BC",
+      "title": "Hunter-gatherers return after the Ice Age",
+      "description": "As the climate warmed at the start of the Holocene, hunter-gatherers recolonised Britain, which was still joined to the Continent by Doggerland.",
+      "region": "British Isles",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Mesolithic_Britain"
+    },
+    {
+      "year": -9300,
+      "year_end": -8500,
+      "date_text": "c. 9300-8500 BC",
+      "title": "Star Carr occupied",
+      "description": "A lakeside camp in North Yorkshire with timber platforms, antler headdresses and one of the earliest known house structures in Britain.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Star_Carr"
+    },
+    {
+      "year": -7000,
+      "year_end": null,
+      "date_text": "c. 7000 BC",
+      "title": "Mount Sandel settlement",
+      "description": "Hunter-gatherers built oval timber huts above the River Bann near Coleraine, among the oldest known dwellings in Ireland.",
+      "region": "Ireland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Mount_Sandel_Mesolithic_site"
+    },
+    {
+      "year": -6200,
+      "year_end": null,
+      "date_text": "c. 6500-6200 BC",
+      "title": "Britain becomes an island",
+      "description": "Rising seas drowned Doggerland, separating Britain from mainland Europe; the Isle of Man had already been cut off from Britain and Ireland by c. 6500 BC.",
+      "region": "British Isles",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Doggerland"
+    },
+    {
+      "year": -4000,
+      "year_end": null,
+      "date_text": "c. 4000 BC",
+      "title": "Farming arrives in Britain",
+      "description": "Migrant farmers from the Continent introduced crops, livestock and pottery, largely replacing the hunter-gatherer population.",
+      "region": "British Isles",
+      "kind": "economy",
+      "source": "https://en.wikipedia.org/wiki/Neolithic_British_Isles"
+    },
+    {
+      "year": -3800,
+      "year_end": -2800,
+      "date_text": "c. 3800-2800 BC",
+      "title": "Knap of Howar farmstead",
+      "description": "Two stone houses on Papa Westray, Orkney, possibly the oldest preserved stone houses in northern Europe.",
+      "region": "Scotland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Knap_of_Howar"
+    },
+    {
+      "year": -3750,
+      "year_end": -3500,
+      "date_text": "c. 4000-3500 BC",
+      "title": "La Hougue Bie passage grave",
+      "description": "A large passage grave under a mound in Jersey, one of the finest Neolithic monuments in the Channel Islands.",
+      "region": "Channel Islands",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/La_Hougue_Bie"
+    },
+    {
+      "year": -3500,
+      "year_end": -3000,
+      "date_text": "c. 3500-3000 BC",
+      "title": "Céide Fields farmed",
+      "description": "An extensive system of stone-walled fields in Co. Mayo, later buried under blanket bog, among the oldest known field systems in the world.",
+      "region": "Ireland",
+      "kind": "economy",
+      "source": "https://en.wikipedia.org/wiki/Céide_Fields"
+    },
+    {
+      "year": -3500,
+      "year_end": null,
+      "date_text": "c. 3500 BC",
+      "title": "Pentre Ifan portal dolmen",
+      "description": "A dramatic chambered tomb in Pembrokeshire with a capstone balanced on three uprights; Cadw dates it to c. 3500 BC.",
+      "region": "Wales",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Pentre_Ifan"
+    },
+    {
+      "year": -3180,
+      "year_end": -2500,
+      "date_text": "c. 3180-2500 BC",
+      "title": "Skara Brae village",
+      "description": "A cluster of stone houses with stone beds, dressers and hearths in Orkney, uncovered by a storm in 1850.",
+      "region": "Scotland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Skara_Brae"
+    },
+    {
+      "year": -3100,
+      "year_end": null,
+      "date_text": "c. 3100 BC (debated)",
+      "title": "Newgrange passage tomb built",
+      "description": "The great passage tomb in the Boyne Valley, aligned on the winter solstice sunrise; some sources place it c. 3000-2500 BC.",
+      "region": "Ireland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Newgrange"
+    },
+    {
+      "year": -3000,
+      "year_end": null,
+      "date_text": "c. 3100-3000 BC",
+      "title": "Stonehenge begun",
+      "description": "The first monument at Stonehenge was a circular bank and ditch; bluestones from Wales may have been placed there early on.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Stonehenge"
+    },
+    {
+      "year": -2600,
+      "year_end": -2400,
+      "date_text": "c. 2600-2400 BC",
+      "title": "Stonehenge sarsen circle raised",
+      "description": "The great sarsen circle and trilithons were erected; the bluestones were rearranged into their present positions c. 2400-2200 BC.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Stonehenge"
+    },
+    {
+      "year": -2450,
+      "year_end": null,
+      "date_text": "c. 2450 BC",
+      "title": "Beaker culture arrives",
+      "description": "Newcomers associated with Beaker pottery brought metalworking; ancient DNA shows they replaced about 90% of Britain's gene pool within a few centuries.",
+      "region": "British Isles",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Beaker_culture"
+    },
+    {
+      "year": -2300,
+      "year_end": null,
+      "date_text": "c. 2300 BC",
+      "title": "Amesbury Archer buried",
+      "description": "The richest early Bronze Age burial in Britain, near Stonehenge; isotope analysis suggests he grew up in the Alpine region.",
+      "region": "England",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Amesbury_Archer"
+    },
+    {
+      "year": -2000,
+      "year_end": null,
+      "date_text": "c. 2000 BC",
+      "title": "Great Orme copper mines",
+      "description": "Mining on the Great Orme near Llandudno began about 4,000 years ago and peaked c. 1700-1400 BC, producing much of Britain's copper.",
+      "region": "Wales",
+      "kind": "economy",
+      "source": "https://en.wikipedia.org/wiki/Great_Orme_Mines"
+    },
+    {
+      "year": -950,
+      "year_end": -800,
+      "date_text": "c. 1000-800 BC",
+      "title": "Must Farm stilt houses",
+      "description": "Roundhouses on a platform over a river in Cambridgeshire burned and collapsed into silt, preserving their contents in extraordinary detail.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Must_Farm_Bronze_Age_settlement"
+    },
+    {
+      "year": -800,
+      "year_end": null,
+      "date_text": "c. 800 BC",
+      "title": "Ironworking begins",
+      "description": "Iron tools and weapons began to spread across Britain and Ireland, marking the start of the Iron Age (dates vary by region).",
+      "region": "British Isles",
+      "kind": "economy",
+      "source": "https://en.wikipedia.org/wiki/British_Iron_Age"
+    },
+    {
+      "year": -400,
+      "year_end": 100,
+      "date_text": "c. 400 BC-AD 100",
+      "title": "Age of the brochs",
+      "description": "Drystone towers known as brochs were built across Atlantic Scotland; the Broch of Mousa in Shetland still stands about 13 m high.",
+      "region": "Scotland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Broch"
+    },
+    {
+      "year": -95,
+      "year_end": null,
+      "date_text": "c. 95 BC",
+      "title": "Navan Fort great building",
+      "description": "A huge circular timber structure was raised at Emain Macha (Navan Fort), Co. Armagh; its central post was felled c. 95 BC.",
+      "region": "Ireland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Navan_Fort"
+    },
+    {
+      "year": -55,
+      "year_end": -54,
+      "date_text": "55-54 BC",
+      "title": "Julius Caesar's expeditions",
+      "description": "Caesar crossed to Britain twice, fighting the Britons and taking hostages and tribute, but did not stay.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain"
+    },
+    {
+      "year": 43,
+      "year_end": null,
+      "date_text": "AD 43",
+      "title": "Roman invasion under Claudius",
+      "description": "Four legions under Aulus Plautius landed and defeated the Catuvellauni; Claudius himself entered Camulodunum (Colchester).",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain"
+    },
+    {
+      "year": 60,
+      "year_end": 61,
+      "date_text": "AD 60 or 61",
+      "title": "Boudica's revolt",
+      "description": "The Iceni queen led a rising that destroyed Colchester, London and St Albans before defeat by Suetonius Paulinus; the exact year is debated.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Boudica"
+    },
+    {
+      "year": 75,
+      "year_end": null,
+      "date_text": "c. AD 75",
+      "title": "Legionary fortress at Caerleon",
+      "description": "The Second Augustan Legion built its fortress at Isca (Caerleon), whose amphitheatre and barracks still survive.",
+      "region": "Wales",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Caerleon"
+    },
+    {
+      "year": 82,
+      "year_end": null,
+      "date_text": "c. AD 82",
+      "title": "Agricola eyes Ireland",
+      "description": "Tacitus records that Agricola believed Ireland could be taken with one legion; no invasion took place and Ireland remained outside the Empire.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Hibernia"
+    },
+    {
+      "year": 83,
+      "year_end": 84,
+      "date_text": "AD 83 or 84",
+      "title": "Battle of Mons Graupius",
+      "description": "Agricola defeated the Caledonians somewhere in north-east Scotland, but Rome never held the far north.",
+      "region": "Scotland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Mons_Graupius"
+    },
+    {
+      "year": 122,
+      "year_end": null,
+      "date_text": "AD 122",
+      "title": "Hadrian's Wall begun",
+      "description": "Emperor Hadrian ordered a 73-mile wall from the Tyne to the Solway, the Empire's north-western frontier.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall"
+    },
+    {
+      "year": 142,
+      "year_end": null,
+      "date_text": "c. AD 142",
+      "title": "Antonine Wall built",
+      "description": "A turf wall between the Forth and the Clyde marked a brief advance north; it was abandoned c. 162.",
+      "region": "Scotland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Antonine_Wall"
+    },
+    {
+      "year": 410,
+      "year_end": null,
+      "date_text": "c. AD 410 (debated)",
+      "title": "End of Roman rule",
+      "description": "Roman administration in Britain ended; the so-called Rescript of Honorius told British cities to look to their own defence, though its meaning is debated.",
+      "region": "England",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/End_of_Roman_rule_in_Britain"
+    },
+    {
+      "year": 432,
+      "year_end": null,
+      "date_text": "5th century (trad. 432)",
+      "title": "Mission of St Patrick",
+      "description": "Patrick, a Romano-Briton once enslaved in Ireland, returned as a missionary; the traditional date of 432 is uncertain.",
+      "region": "Ireland",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Saint_Patrick"
+    },
+    {
+      "year": 449,
+      "year_end": null,
+      "date_text": "5th century (trad. 449)",
+      "title": "Anglo-Saxon settlement",
+      "description": "Angles, Saxons and Jutes settled eastern and southern Britain; Bede's date of 449 for their arrival is traditional rather than precise.",
+      "region": "England",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Anglo-Saxon_settlement_of_Britain"
+    },
+    {
+      "year": 563,
+      "year_end": null,
+      "date_text": "563",
+      "title": "Columba founds Iona",
+      "description": "The Irish monk Columba founded a monastery on Iona, which became the centre of Christian missions to the Picts and Northumbria.",
+      "region": "Scotland",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Columba"
+    },
+    {
+      "year": 597,
+      "year_end": null,
+      "date_text": "597",
+      "title": "Augustine's mission to Kent",
+      "description": "Sent by Pope Gregory the Great, Augustine converted King Æthelberht and founded the see of Canterbury.",
+      "region": "England",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Augustine_of_Canterbury"
+    },
+    {
+      "year": 625,
+      "year_end": null,
+      "date_text": "c. 625",
+      "title": "Sutton Hoo ship burial",
+      "description": "A king, probably Rædwald of East Anglia, was buried in a ship with treasure in Suffolk; the date is approximate.",
+      "region": "England",
+      "kind": "culture",
+      "source": "https://en.wikipedia.org/wiki/Sutton_Hoo"
+    },
+    {
+      "year": 785,
+      "year_end": null,
+      "date_text": "late 8th century",
+      "title": "Offa's Dyke",
+      "description": "A great earthwork along the Welsh border, traditionally attributed to King Offa of Mercia (757-796).",
+      "region": "Wales",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Offa%27s_Dyke"
+    },
+    {
+      "year": 793,
+      "year_end": null,
+      "date_text": "793",
+      "title": "Viking raid on Lindisfarne",
+      "description": "Norse raiders sacked the monastery, often taken as the start of the Viking Age in the British Isles.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Lindisfarne"
+    },
+    {
+      "year": 795,
+      "year_end": null,
+      "date_text": "795",
+      "title": "First Viking raids on Ireland",
+      "description": "Raiders attacked Irish island monasteries, beginning decades of Norse raids and settlement.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Viking_Ireland"
+    },
+    {
+      "year": 800,
+      "year_end": null,
+      "date_text": "c. 800",
+      "title": "Book of Kells",
+      "description": "The finest illuminated gospel book of Insular art, probably begun on Iona and completed at Kells.",
+      "region": "Ireland",
+      "kind": "culture",
+      "source": "https://en.wikipedia.org/wiki/Book_of_Kells"
+    },
+    {
+      "year": 841,
+      "year_end": null,
+      "date_text": "841",
+      "title": "Norse found Dublin",
+      "description": "A Norse longphort was established at Dublin, which grew into Ireland's chief town.",
+      "region": "Ireland",
+      "kind": "economy",
+      "source": "https://en.wikipedia.org/wiki/History_of_Dublin"
+    },
+    {
+      "year": 843,
+      "year_end": null,
+      "date_text": "c. 843-850 (debated)",
+      "title": "Kenneth MacAlpin, king of Picts and Scots",
+      "description": "Cináed mac Ailpín became king of the Picts; his dynasty created the kingdom of Alba, though the union was more gradual than tradition suggests.",
+      "region": "Scotland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Kenneth_MacAlpin"
+    },
+    {
+      "year": 878,
+      "year_end": null,
+      "date_text": "878",
+      "title": "Alfred wins at Edington",
+      "description": "Alfred of Wessex defeated the Danes under Guthrum, leading to the division of England with the Danelaw.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Edington"
+    },
+    {
+      "year": 927,
+      "year_end": null,
+      "date_text": "927",
+      "title": "Æthelstan unites England",
+      "description": "Æthelstan took York and became the first king to rule all of England; he won the Battle of Brunanburh in 937.",
+      "region": "England",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/%C3%86thelstan"
+    },
+    {
+      "year": 933,
+      "year_end": null,
+      "date_text": "933",
+      "title": "Channel Islands join Normandy",
+      "description": "The islands were granted to William Longsword and annexed to the Duchy of Normandy.",
+      "region": "Channel Islands",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/History_of_the_Channel_Islands"
+    },
+    {
+      "year": 950,
+      "year_end": 1200,
+      "date_text": "c. 950-1200",
+      "title": "Irish round towers",
+      "description": "Tall stone bell towers, also used as refuges, were built at monasteries such as Glendalough and Clonmacnoise.",
+      "region": "Ireland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Irish_round_tower"
+    },
+    {
+      "year": 979,
+      "year_end": null,
+      "date_text": "979 (traditional)",
+      "title": "Founding of Tynwald",
+      "description": "Tynwald claims descent from a Norse assembly founded in 979, but this date is traditional; evidence for it is from the 13th century.",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Tynwald"
+    },
+    {
+      "year": 1014,
+      "year_end": null,
+      "date_text": "1014",
+      "title": "Battle of Clontarf",
+      "description": "High King Brian Boru defeated a Leinster-Norse alliance near Dublin but was killed in the battle.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Clontarf"
+    },
+    {
+      "year": 1066,
+      "year_end": null,
+      "date_text": "14 October 1066",
+      "title": "Battle of Hastings",
+      "description": "William of Normandy defeated and killed Harold II, and was crowned on Christmas Day 1066.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Hastings"
+    },
+    {
+      "year": 1067,
+      "year_end": null,
+      "date_text": "1067",
+      "title": "Chepstow Castle begun",
+      "description": "William FitzOsbern began one of the earliest stone castles in Britain, on a cliff above the Wye.",
+      "region": "Wales",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Chepstow_Castle"
+    },
+    {
+      "year": 1078,
+      "year_end": null,
+      "date_text": "c. 1075-1079",
+      "title": "White Tower begun",
+      "description": "William the Conqueror began the great stone keep of the Tower of London, probably complete by 1100.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/White_Tower_(Tower_of_London)"
+    },
+    {
+      "year": 1079,
+      "year_end": null,
+      "date_text": "1079",
+      "title": "Kingdom of Mann and the Isles",
+      "description": "Godred Crovan conquered the Isle of Man and founded a Norse kingdom that included the Hebrides.",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_the_Isles"
+    },
+    {
+      "year": 1086,
+      "year_end": null,
+      "date_text": "1086",
+      "title": "Domesday Book",
+      "description": "William's great survey recorded land, resources and tenants across most of England.",
+      "region": "England",
+      "kind": "economy",
+      "source": "https://en.wikipedia.org/wiki/Domesday_Book"
+    },
+    {
+      "year": 1093,
+      "year_end": null,
+      "date_text": "1093",
+      "title": "Durham Cathedral begun",
+      "description": "Its nave has the earliest surviving pointed rib vault, a key step towards Gothic.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Durham_Cathedral"
+    },
+    {
+      "year": 1124,
+      "year_end": 1153,
+      "date_text": "1124-1153",
+      "title": "Reign of David I of Scotland",
+      "description": "David introduced Anglo-Norman settlers, burghs, coinage and reformed monasteries such as Melrose (1136).",
+      "region": "Scotland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/David_I_of_Scotland"
+    },
+    {
+      "year": 1134,
+      "year_end": null,
+      "date_text": "1134",
+      "title": "Cormac's Chapel consecrated",
+      "description": "A Romanesque chapel on the Rock of Cashel, the finest early example of the style in Ireland.",
+      "region": "Ireland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Rock_of_Cashel"
+    },
+    {
+      "year": 1169,
+      "year_end": 1171,
+      "date_text": "1169-1171",
+      "title": "Anglo-Norman invasion of Ireland",
+      "description": "Norman knights landed in Wexford in 1169 to aid Diarmait Mac Murchada; Strongbow followed in 1170 and Henry II came in 1171.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Anglo-Norman_invasion_of_Ireland"
+    },
+    {
+      "year": 1170,
+      "year_end": null,
+      "date_text": "29 December 1170",
+      "title": "Murder of Thomas Becket",
+      "description": "Archbishop Becket was killed in Canterbury Cathedral by knights of Henry II; Canterbury became a major pilgrimage site.",
+      "region": "England",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Thomas_Becket"
+    },
+    {
+      "year": 1174,
+      "year_end": null,
+      "date_text": "1174",
+      "title": "Gothic arrives at Canterbury",
+      "description": "After a fire, William of Sens rebuilt the choir of Canterbury Cathedral with pointed arches, rib vaults and flying buttresses.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Canterbury_Cathedral"
+    },
+    {
+      "year": 1204,
+      "year_end": null,
+      "date_text": "1204",
+      "title": "Channel Islands split from Normandy",
+      "description": "King John lost mainland Normandy to France but kept the Channel Islands, which remained loyal to the English crown.",
+      "region": "Channel Islands",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/History_of_the_Channel_Islands"
+    },
+    {
+      "year": 1215,
+      "year_end": null,
+      "date_text": "15 June 1215",
+      "title": "Magna Carta",
+      "description": "King John sealed the charter at Runnymede, limiting royal power; it was reissued in revised forms.",
+      "region": "England",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Magna_Carta"
+    },
+    {
+      "year": 1220,
+      "year_end": null,
+      "date_text": "1220",
+      "title": "Salisbury Cathedral begun",
+      "description": "Built largely in 38 years, it is the outstanding example of Early English Gothic.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Salisbury_Cathedral"
+    },
+    {
+      "year": 1266,
+      "year_end": null,
+      "date_text": "1266",
+      "title": "Treaty of Perth",
+      "description": "Norway ceded the Isle of Man and the Hebrides to Scotland after the Battle of Largs (1263).",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Treaty_of_Perth"
+    },
+    {
+      "year": 1283,
+      "year_end": null,
+      "date_text": "1283",
+      "title": "Edward I's castles in Gwynedd",
+      "description": "After Llywelyn ap Gruffudd's death in 1282 and the conquest of Gwynedd, Edward I began Caernarfon, Conwy and Harlech in 1283; Beaumaris followed after 1295. They are now a World Heritage Site.",
+      "region": "Wales",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Castles_and_Town_Walls_of_King_Edward_in_Gwynedd"
+    },
+    {
+      "year": 1296,
+      "year_end": null,
+      "date_text": "1296",
+      "title": "Wars of Scottish Independence begin",
+      "description": "Edward I invaded Scotland, deposed John Balliol and removed the Stone of Scone.",
+      "region": "Scotland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Wars_of_Scottish_Independence"
+    },
+    {
+      "year": 1314,
+      "year_end": null,
+      "date_text": "June 1314",
+      "title": "Battle of Bannockburn",
+      "description": "Robert the Bruce defeated Edward II, securing his kingship.",
+      "region": "Scotland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Bannockburn"
+    },
+    {
+      "year": 1315,
+      "year_end": 1318,
+      "date_text": "1315-1318",
+      "title": "Bruce invasion of Ireland",
+      "description": "Edward Bruce, brother of Robert, invaded Ireland and was proclaimed High King before being killed at Faughart.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Bruce_campaign_in_Ireland"
+    },
+    {
+      "year": 1320,
+      "year_end": null,
+      "date_text": "1320",
+      "title": "Declaration of Arbroath",
+      "description": "Scottish nobles wrote to the Pope asserting Scotland's independence.",
+      "region": "Scotland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Declaration_of_Arbroath"
+    },
+    {
+      "year": 1348,
+      "year_end": 1350,
+      "date_text": "1348-1350",
+      "title": "Black Death",
+      "description": "Plague killed perhaps a third to a half of the population across the isles.",
+      "region": "British Isles",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Black_Death_in_England"
+    },
+    {
+      "year": 1366,
+      "year_end": null,
+      "date_text": "1366",
+      "title": "Statutes of Kilkenny",
+      "description": "Laws forbade English settlers in Ireland from adopting Irish language, dress and customs.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Statutes_of_Kilkenny"
+    },
+    {
+      "year": 1400,
+      "year_end": null,
+      "date_text": "16 September 1400",
+      "title": "Owain Glyndŵr's revolt",
+      "description": "Glyndŵr was proclaimed Prince of Wales, beginning a revolt that held much of Wales until c. 1409.",
+      "region": "Wales",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Glynd%C5%B5r_Rising"
+    },
+    {
+      "year": 1405,
+      "year_end": null,
+      "date_text": "1405",
+      "title": "Stanleys become lords of Mann",
+      "description": "Henry IV granted the Isle of Man to Sir John Stanley; his family ruled it until 1736.",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/History_of_the_Isle_of_Man"
+    },
+    {
+      "year": 1429,
+      "year_end": null,
+      "date_text": "1429",
+      "title": "£10 tower house grant",
+      "description": "An Irish statute offered £10 towards building tower houses in the Pale, spurring a boom in tower houses.",
+      "region": "Ireland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Tower_house"
+    },
+    {
+      "year": 1455,
+      "year_end": 1487,
+      "date_text": "1455-1487",
+      "title": "Wars of the Roses",
+      "description": "A dynastic struggle between the houses of Lancaster and York for the English throne.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Wars_of_the_Roses"
+    },
+    {
+      "year": 1485,
+      "year_end": null,
+      "date_text": "22 August 1485",
+      "title": "Battle of Bosworth",
+      "description": "Henry Tudor defeated Richard III and became Henry VII.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field"
+    },
+    {
+      "year": 1513,
+      "year_end": null,
+      "date_text": "9 September 1513",
+      "title": "Battle of Flodden",
+      "description": "James IV of Scotland was killed with much of his nobility in a crushing defeat by the English.",
+      "region": "Scotland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Flodden"
+    },
+    {
+      "year": 1534,
+      "year_end": null,
+      "date_text": "1534",
+      "title": "Act of Supremacy",
+      "description": "Henry VIII was declared Supreme Head of the Church of England, breaking with Rome.",
+      "region": "England",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Acts_of_Supremacy"
+    },
+    {
+      "year": 1536,
+      "year_end": 1541,
+      "date_text": "1536-1541",
+      "title": "Dissolution of the Monasteries",
+      "description": "Henry VIII closed some 800 religious houses, seizing their lands; many abbeys became ruins or country houses.",
+      "region": "British Isles",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Dissolution_of_the_monasteries"
+    },
+    {
+      "year": 1536,
+      "year_end": 1543,
+      "date_text": "1536 and 1543",
+      "title": "Laws in Wales Acts",
+      "description": "Wales was incorporated into the English legal and parliamentary system.",
+      "region": "Wales",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Laws_in_Wales_Acts_1535_and_1542"
+    },
+    {
+      "year": 1560,
+      "year_end": null,
+      "date_text": "1560",
+      "title": "Scottish Reformation",
+      "description": "The Scottish Parliament broke with the Pope and adopted a Protestant confession, influenced by John Knox.",
+      "region": "Scotland",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/Scottish_Reformation"
+    },
+    {
+      "year": 1588,
+      "year_end": null,
+      "date_text": "1588",
+      "title": "William Morgan's Welsh Bible",
+      "description": "The first complete Bible in Welsh, vital to the survival of the language.",
+      "region": "Wales",
+      "kind": "culture",
+      "source": "https://en.wikipedia.org/wiki/William_Morgan_(bishop)"
+    },
+    {
+      "year": 1594,
+      "year_end": 1603,
+      "date_text": "1594-1603",
+      "title": "Nine Years' War",
+      "description": "Hugh O'Neill led Gaelic lords against English rule; defeat at Kinsale (1601) ended the old Gaelic order.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Nine_Years%27_War_(Ireland)"
+    },
+    {
+      "year": 1603,
+      "year_end": null,
+      "date_text": "1603",
+      "title": "Union of the Crowns",
+      "description": "James VI of Scotland succeeded Elizabeth I as James I of England and Ireland.",
+      "region": "British Isles",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Union_of_the_Crowns"
+    },
+    {
+      "year": 1609,
+      "year_end": null,
+      "date_text": "1609 onwards",
+      "title": "Plantation of Ulster",
+      "description": "Confiscated land in Ulster was settled by English and Scottish Protestants, with long-lasting consequences.",
+      "region": "Ireland",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Plantation_of_Ulster"
+    },
+    {
+      "year": 1616,
+      "year_end": null,
+      "date_text": "1616",
+      "title": "Queen's House, Greenwich begun",
+      "description": "Inigo Jones's design was the first fully classical building in England.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Queen%27s_House"
+    },
+    {
+      "year": 1638,
+      "year_end": null,
+      "date_text": "1638",
+      "title": "National Covenant",
+      "description": "Scots signed a covenant opposing Charles I's religious reforms, leading to the Bishops' Wars.",
+      "region": "Scotland",
+      "kind": "religion",
+      "source": "https://en.wikipedia.org/wiki/National_Covenant"
+    },
+    {
+      "year": 1641,
+      "year_end": null,
+      "date_text": "1641",
+      "title": "Irish Rebellion",
+      "description": "Catholic Irish rose against English and Scottish settlers; many settlers were killed.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Irish_Rebellion_of_1641"
+    },
+    {
+      "year": 1642,
+      "year_end": 1651,
+      "date_text": "1642-1651",
+      "title": "English Civil Wars",
+      "description": "Royalists fought Parliamentarians, part of the wider Wars of the Three Kingdoms.",
+      "region": "England",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/English_Civil_War"
+    },
+    {
+      "year": 1649,
+      "year_end": null,
+      "date_text": "30 January 1649",
+      "title": "Execution of Charles I",
+      "description": "The king was beheaded in Whitehall and England became a republic; Cromwell invaded Ireland the same year.",
+      "region": "England",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Execution_of_Charles_I"
+    },
+    {
+      "year": 1666,
+      "year_end": null,
+      "date_text": "September 1666",
+      "title": "Great Fire of London",
+      "description": "The fire destroyed most of the medieval City; Wren rebuilt St Paul's Cathedral (1675-1710).",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Great_Fire_of_London"
+    },
+    {
+      "year": 1688,
+      "year_end": null,
+      "date_text": "1688",
+      "title": "Glorious Revolution",
+      "description": "James II was replaced by William III and Mary II; the Bill of Rights followed in 1689.",
+      "region": "British Isles",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Glorious_Revolution"
+    },
+    {
+      "year": 1690,
+      "year_end": null,
+      "date_text": "1 July 1690 (Old Style)",
+      "title": "Battle of the Boyne",
+      "description": "William III defeated James II in Ireland, securing the Protestant succession.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Boyne"
+    },
+    {
+      "year": 1707,
+      "year_end": null,
+      "date_text": "1 May 1707",
+      "title": "Acts of Union",
+      "description": "England and Scotland united as the Kingdom of Great Britain with one parliament at Westminster.",
+      "region": "British Isles",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Acts_of_Union_1707"
+    },
+    {
+      "year": 1746,
+      "year_end": null,
+      "date_text": "16 April 1746",
+      "title": "Battle of Culloden",
+      "description": "The Jacobite army of Charles Edward Stuart was crushed, followed by harsh repression in the Highlands.",
+      "region": "Scotland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Culloden"
+    },
+    {
+      "year": 1765,
+      "year_end": null,
+      "date_text": "1765",
+      "title": "Revestment Act",
+      "description": "Parliament bought the Isle of Man's lordship rights from the Duke of Atholl, bringing customs under Westminster.",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Isle_of_Man_Purchase_Act_1765"
+    },
+    {
+      "year": 1767,
+      "year_end": null,
+      "date_text": "1767",
+      "title": "Edinburgh New Town planned",
+      "description": "James Craig's plan was chosen for a Georgian new town north of the Old Town.",
+      "region": "Scotland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/New_Town,_Edinburgh"
+    },
+    {
+      "year": 1779,
+      "year_end": null,
+      "date_text": "1779",
+      "title": "The Iron Bridge",
+      "description": "The world's first major bridge of cast iron was erected over the Severn at Coalbrookdale; it opened in 1781.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/The_Iron_Bridge"
+    },
+    {
+      "year": 1781,
+      "year_end": null,
+      "date_text": "6 January 1781",
+      "title": "Battle of Jersey",
+      "description": "A French invasion force was defeated in St Helier, the last attempt by France to seize Jersey.",
+      "region": "Channel Islands",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Jersey"
+    },
+    {
+      "year": 1798,
+      "year_end": null,
+      "date_text": "1798",
+      "title": "Irish Rebellion of 1798",
+      "description": "The United Irishmen rose against British rule, aided by a French landing; the rising was suppressed.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/Irish_Rebellion_of_1798"
+    },
+    {
+      "year": 1801,
+      "year_end": null,
+      "date_text": "1 January 1801",
+      "title": "Union of Great Britain and Ireland",
+      "description": "The Acts of Union 1800 created the United Kingdom of Great Britain and Ireland and abolished the Irish Parliament.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Acts_of_Union_1800"
+    },
+    {
+      "year": 1807,
+      "year_end": null,
+      "date_text": "1807",
+      "title": "Abolition of the slave trade",
+      "description": "Parliament abolished the British transatlantic slave trade; slavery itself was abolished in most colonies from 1834.",
+      "region": "British Isles",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Slave_Trade_Act_1807"
+    },
+    {
+      "year": 1825,
+      "year_end": null,
+      "date_text": "1825",
+      "title": "Stockton and Darlington Railway",
+      "description": "The first public railway to use steam locomotives opened.",
+      "region": "England",
+      "kind": "science",
+      "source": "https://en.wikipedia.org/wiki/Stockton_and_Darlington_Railway"
+    },
+    {
+      "year": 1834,
+      "year_end": null,
+      "date_text": "16 October 1834",
+      "title": "Palace of Westminster burns",
+      "description": "Fire destroyed most of the old palace; Barry and Pugin's Gothic Revival replacement was built from 1840.",
+      "region": "England",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Burning_of_Parliament"
+    },
+    {
+      "year": 1839,
+      "year_end": null,
+      "date_text": "4 November 1839",
+      "title": "Newport Rising",
+      "description": "Chartists marched on Newport; troops fired on them, killing about twenty.",
+      "region": "Wales",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Newport_Rising"
+    },
+    {
+      "year": 1845,
+      "year_end": 1852,
+      "date_text": "1845-1852",
+      "title": "Great Famine",
+      "description": "Potato blight caused about a million deaths in Ireland and the emigration of over a million more.",
+      "region": "Ireland",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)"
+    },
+    {
+      "year": 1854,
+      "year_end": null,
+      "date_text": "1854",
+      "title": "Laxey Wheel",
+      "description": "The Lady Isabella waterwheel was built to drain the Laxey mines; it is the largest surviving working waterwheel in the world.",
+      "region": "Isle of Man",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Laxey_Wheel"
+    },
+    {
+      "year": 1866,
+      "year_end": null,
+      "date_text": "1866",
+      "title": "House of Keys becomes elected",
+      "description": "Reform made the Isle of Man's House of Keys a popularly elected chamber, restoring home rule.",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/House_of_Keys"
+    },
+    {
+      "year": 1881,
+      "year_end": null,
+      "date_text": "1881",
+      "title": "Manx women get the vote",
+      "description": "The Isle of Man gave property-owning women the vote in national elections, a world first.",
+      "region": "Isle of Man",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_the_Isle_of_Man"
+    },
+    {
+      "year": 1886,
+      "year_end": null,
+      "date_text": "1886",
+      "title": "First Irish Home Rule Bill",
+      "description": "Gladstone's bill for Irish self-government was defeated, splitting the Liberal Party.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Government_of_Ireland_Bill_1886"
+    },
+    {
+      "year": 1890,
+      "year_end": null,
+      "date_text": "4 March 1890",
+      "title": "Forth Bridge opens",
+      "description": "The great steel cantilever railway bridge was opened; it is now a World Heritage Site.",
+      "region": "Scotland",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Forth_Bridge"
+    },
+    {
+      "year": 1914,
+      "year_end": 1918,
+      "date_text": "1914-1918",
+      "title": "First World War",
+      "description": "Hundreds of thousands from across the isles were killed; conscription began in Britain in 1916.",
+      "region": "British Isles",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/United_Kingdom_in_World_War_I"
+    },
+    {
+      "year": 1916,
+      "year_end": null,
+      "date_text": "24-29 April 1916",
+      "title": "Easter Rising",
+      "description": "Irish republicans seized Dublin buildings and proclaimed a republic; the leaders' executions boosted support for independence.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Easter_Rising"
+    },
+    {
+      "year": 1922,
+      "year_end": null,
+      "date_text": "6 December 1922",
+      "title": "Irish Free State",
+      "description": "Under the Anglo-Irish Treaty, 26 counties became a self-governing dominion; a civil war followed (1922-23).",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Irish_Free_State"
+    },
+    {
+      "year": 1939,
+      "year_end": 1945,
+      "date_text": "1939-1945",
+      "title": "Second World War",
+      "description": "Britain fought Nazi Germany; the Blitz (1940-41) devastated cities. Ireland remained neutral.",
+      "region": "British Isles",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/United_Kingdom_in_World_War_II"
+    },
+    {
+      "year": 1940,
+      "year_end": 1945,
+      "date_text": "30 June 1940-9 May 1945",
+      "title": "German occupation of the Channel Islands",
+      "description": "German forces occupied the demilitarised islands; Jersey and Guernsey were liberated on 9 May 1945.",
+      "region": "Channel Islands",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+    },
+    {
+      "year": 1947,
+      "year_end": null,
+      "date_text": "1947",
+      "title": "Listed buildings protected",
+      "description": "The Town and Country Planning Act 1947 established the modern system of listing historic buildings in England and Wales.",
+      "region": "British Isles",
+      "kind": "architecture",
+      "source": "https://en.wikipedia.org/wiki/Listed_building"
+    },
+    {
+      "year": 1948,
+      "year_end": null,
+      "date_text": "1948",
+      "title": "National Health Service founded",
+      "description": "The NHS was launched as part of the post-war welfare state.",
+      "region": "British Isles",
+      "kind": "society",
+      "source": "https://en.wikipedia.org/wiki/National_Health_Service"
+    },
+    {
+      "year": 1949,
+      "year_end": null,
+      "date_text": "1949",
+      "title": "Republic of Ireland",
+      "description": "The Republic of Ireland Act took effect and Ireland left the Commonwealth.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Republic_of_Ireland_Act_1948"
+    },
+    {
+      "year": 1968,
+      "year_end": 1998,
+      "date_text": "c. 1968-1998",
+      "title": "The Troubles",
+      "description": "Conflict in Northern Ireland claimed about 3,500 lives.",
+      "region": "Ireland",
+      "kind": "war",
+      "source": "https://en.wikipedia.org/wiki/The_Troubles"
+    },
+    {
+      "year": 1998,
+      "year_end": null,
+      "date_text": "10 April 1998",
+      "title": "Good Friday Agreement",
+      "description": "A peace settlement created power-sharing government in Northern Ireland.",
+      "region": "Ireland",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Good_Friday_Agreement"
+    },
+    {
+      "year": 1999,
+      "year_end": null,
+      "date_text": "1999",
+      "title": "Devolution",
+      "description": "The Scottish Parliament and National Assembly for Wales (now the Senedd) opened.",
+      "region": "British Isles",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Devolution_in_the_United_Kingdom"
+    },
+    {
+      "year": 2020,
+      "year_end": null,
+      "date_text": "31 January 2020",
+      "title": "UK leaves the EU",
+      "description": "Following the 2016 referendum, the UK left the European Union.",
+      "region": "British Isles",
+      "kind": "politics",
+      "source": "https://en.wikipedia.org/wiki/Brexit"
+    }
+  ]
+}

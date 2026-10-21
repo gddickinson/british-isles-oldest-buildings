@@ -1,0 +1,81 @@
+/* Offline map: colours (light / dark), labels and the layer switcher */
+:root {
+  --map-sea: #cfe0ea; --map-land: #f4f1ea; --map-land-other: #e6e2da; --map-border: #9c8f80;
+  --map-water: #a9cbe0; --map-water-line: #5f9cc4; --map-motorway: #d9822b; --map-road-major: #e0a85c;
+  --map-road: #c9b79b; --map-road-minor: #bba57f; --map-historic-county: #8a3b8f; --map-rail: #6f665c; --map-park: #9cc79a; --map-park-line: #4f8a4c;
+  --map-trail: #a0522d;
+  --map-label: #2a2622; --map-label-soft: #6f665c; --map-halo: #fbfaf7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --map-sea: #17232c; --map-land: #2a2724; --map-land-other: #221f1c; --map-border: #6d6358;
+    --map-water: #23415a; --map-water-line: #4a86b0; --map-motorway: #c27426; --map-road-major: #a9804a;
+    --map-road: #6e6250; --map-road-minor: #574d40; --map-historic-county: #c58bd0; --map-rail: #a79d91; --map-park: #2f5a33; --map-park-line: #5e9a5b;
+    --map-trail: #d9895b;
+    --map-label: #ece6de; --map-label-soft: #a79d91; --map-halo: #1c1a18;
+  }
+}
+:root[data-theme="dark"] {
+  --map-sea: #17232c; --map-land: #2a2724; --map-land-other: #221f1c; --map-border: #6d6358;
+  --map-water: #23415a; --map-water-line: #4a86b0; --map-motorway: #c27426; --map-road-major: #a9804a;
+  --map-road: #6e6250; --map-road-minor: #574d40; --map-historic-county: #c58bd0; --map-rail: #a79d91; --map-park: #2f5a33; --map-park-line: #5e9a5b;
+  --map-trail: #d9895b;
+  --map-label: #ece6de; --map-label-soft: #a79d91; --map-halo: #1c1a18;
+}
+.outline-map { background: var(--map-sea) !important; }
+.map-label { white-space: nowrap; color: var(--map-label); font: 12px/1.1 system-ui, sans-serif; pointer-events: none;
+  text-shadow: 0 0 2px var(--map-halo), 0 0 2px var(--map-halo), 0 0 3px var(--map-halo);
+  transform: translate(-4px, -50%); }
+.map-label i { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--map-label);
+  margin-right: 4px; vertical-align: middle; }
+.map-label.city { font-weight: 700; font-size: 14px; }
+.map-label.town { font-weight: 600; font-size: 12.5px; }
+.map-label.village { font-size: 11px; color: var(--map-label-soft); }
+.map-label.village i { width: 3px; height: 3px; background: var(--map-label-soft); }
+.map-label.county { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--map-border);
+  transform: translate(-50%, -50%); }
+.map-label.land { font-style: italic; font-size: 11px; color: var(--map-label-soft); }
+.map-label.land.region, .map-label.land.range { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; }
+.map-label.land.lake, .map-label.land.bay { color: var(--map-water-line); }
+.map-label.land.forest { color: var(--map-park-line); }
+.map-label.airport { font-size: 11px; color: var(--map-label-soft); }
+.map-label.station { font-size: 11px; color: var(--map-label); font-weight: 600; }
+.map-layers { background: var(--panel); color: var(--ink); font-size: 13px; }
+.map-layers .ml-toggle { border: 0; background: var(--panel); color: var(--ink); padding: 6px 10px; cursor: pointer; font: inherit; }
+.map-layers .ml-panel { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 3px; max-width: 240px; }
+.map-layers .ml-panel label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+.map-layers .ml-overlays { display: flex; flex-direction: column; gap: 3px; margin-top: 6px; }
+.map-layers .ml-overlays.online .ml-off-only { opacity: .45; }
+.map-layers small { color: var(--muted); margin-top: 6px; }
+/* Map page */
+.explore { display: grid; grid-template-columns: 270px 1fr; height: calc(100vh - 58px); }
+.explore-panel { overflow-y: auto; padding: 14px 16px; background: var(--panel); border-right: 1px solid var(--line); }
+.explore-panel h3 { font-size: 14px; margin: 16px 0 6px; }
+.explore-panel .check { display: flex; align-items: center; gap: 4px; font-size: 13.5px; margin: 3px 0; }
+.explore-panel .check em { margin-left: auto; color: var(--muted); font-style: normal; font-size: 12px; }
+.ex-find { display: flex; gap: 6px; }
+.ex-find input { flex: 1; min-width: 0; padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--ink); }
+.explore-map { position: relative; }
+#ex_map { position: absolute; inset: 0; }
+.ex-toggle { display: none; position: absolute; left: 10px; bottom: 26px; z-index: 500; }
+.explore + .foot { display: none; }
+@media (max-width: 760px) {
+  .explore { grid-template-columns: 1fr; height: calc(100vh - 100px); }
+  .explore-panel { display: none; position: absolute; z-index: 600; left: 0; right: 0; max-height: 60vh;
+    box-shadow: var(--shadow); }
+  .explore-panel.open { display: block; }
+  .ex-toggle { display: inline-block; }
+}
+.map-layers .ml-historic { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+.map-layers .ml-historic select { max-width: 220px; padding: 3px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+.map-layers .ml-op { display: flex; align-items: center; gap: 6px; }
+.map-layers .ml-op input { flex: 1; }
+.map-layers .ml-panel { max-height: 70vh; overflow-y: auto; }
+
+.map-label.county.historic { color: var(--map-historic-county); font-style: italic; }
+/* "Show on the map" target (map_page.js markFromUrl) */
+.map-mark { animation: map-mark-pulse 1.6s ease-out 3; }
+@keyframes map-mark-pulse { 0% { stroke-opacity: 1; } 100% { stroke-opacity: .35; } }
+.map-mark-label { font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .map-mark { animation: none; } }

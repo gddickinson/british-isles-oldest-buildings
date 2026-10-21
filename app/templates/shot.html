@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Screenshot frame</title>
+<style>html, body { margin: 0; background: #fff; overflow: hidden; } iframe { border: 0; display: block; margin: 0 auto; }</style>
+</head>
+<body>
+<!-- Used by app/screenshot.py: shows one page in a frame of exactly w x h (centred, so a window
+     wider than the frame is cropped evenly from both sides), optionally in a theme
+     and after clicking an element, so headless Chrome can capture phone widths too. -->
+<iframe id="f"></iframe>
+<script>
+const p = new URLSearchParams(location.search);
+const f = document.getElementById("f");
+f.style.width = (+p.get("w") || 1280) + "px";
+f.style.height = (+p.get("h") || 800) + "px";
+const u = new URL(p.get("u") || "/", location.origin);
+if (p.get("theme")) u.searchParams.set("_theme", p.get("theme"));
+u.searchParams.set("_shot", "1");                 // pages hide transient UI (toasts, hints)
+f.src = u.pathname + u.search + u.hash;
+f.onload = () => {
+  const click = p.get("click");
+  if (!click) return;
+  setTimeout(() => {
+    try { f.contentDocument.querySelector(click).click(); } catch (e) { /* no such element */ }
+  }, Math.max(1000, (+p.get("wait") || 5000) - 2500));
+};
+</script>
+</body></html>

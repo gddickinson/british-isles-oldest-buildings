@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Oldest by type · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page">
+  <h1>The oldest of each type</h1>
+  <p class="prose">The earliest surviving examples of each kind of building in the British Isles — from tombs and
+    churches to pubs, theatres, railway stations and factories. Types whose oldest examples are later than 1500
+    (theatres, banks, railway stations…) are included here even though the main catalogue is mostly pre-1500.
+    Many "oldest" titles are claims; where the evidence differs from the claim, both are shown.</p>
+  <div class="filter-row">
+    <select id="o_group"><option value="">All building groups</option></select>
+    <input id="o_q" type="search" placeholder="Filter types…">
+  </div>
+  <nav id="o_index" class="type-index"></nav>
+  <div id="o_list"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='oldest.js') }}"></script>
+{% endblock %}

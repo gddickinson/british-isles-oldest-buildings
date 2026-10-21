@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Pronunciation · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page pron-page">
+  <h1>Pronunciation</h1>
+  <p class="prose">How to say the names in this catalogue (Belvoir is "BEE-vər", Cholmondeley "CHUM-lee"), with the
+    names in Welsh, Scottish Gaelic, Irish, Manx, Scots, Cornish and the Channel Island languages, local and regional
+    forms, and recordings where one exists. Pronunciations come from the opening of each Wikipedia article and from
+    Wikidata (including Lingua Libre recordings); towns are the places each building lies in.</p>
+  <div class="pron-chips" id="pr_chips" aria-label="Variety"></div>
+  <div class="filter-row">
+    <input id="pr_q" type="search" aria-label="Search pronunciations" placeholder="Search names (e.g. Llan, Kil, castle)…">
+    <select id="pr_kind"><option value="">Buildings, places, people and towns</option><option value="building">Buildings</option>
+      <option value="place">Places</option><option value="person">People</option><option value="town">Towns and areas</option></select>
+    <span id="pr_count" class="hint"></span>
+  </div>
+  <table class="pron-table"><thead><tr><th>Name</th><th>Variety</th><th>Pronunciation</th><th></th><th>Record</th></tr></thead>
+    <tbody id="pr_list"></tbody></table>
+  <div class="pager"><button id="pr_more" class="btn">Load more</button></div>
+</main>
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='pron_page.js') }}"></script>
+{% endblock %}

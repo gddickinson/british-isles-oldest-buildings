@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below, and credit the data sources listed in DATA_LICENSE.md."
+title: "British Isles Oldest Buildings"
+abstract: "A searchable catalogue and web app of the oldest buildings and historic places of the British Isles, built from Wikidata, Wikipedia, the official heritage registers and OpenStreetMap, with maps, stories, pronunciations and tours."
+authors:
+  - family-names: Dickinson
+    given-names: George
+type: software
+license: MIT
+repository-code: "https://github.com/gddickinson/british-isles-oldest-buildings"
+date-released: "2026-10-21"
+keywords:
+  - historic buildings
+  - heritage
+  - British Isles
+  - Wikidata
+  - OpenStreetMap
+  - digital humanities

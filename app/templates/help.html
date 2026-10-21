@@ -1,0 +1,303 @@
+{% extends "base.html" %}
+{% block title %}Help · British Isles Oldest Buildings{% endblock %}
+{% set img = 'static/help/' if static_mode else '/help/img/' %}
+{% macro shot(name, caption) %}<figure class="shot"><img src="{{ img }}{{ name }}" alt="{{ caption }}" loading="lazy"><figcaption>{{ caption }}</figcaption></figure>{% endmacro %}
+{% block body %}
+<main class="page help-page">
+  <h1>Help &amp; guide</h1>
+  <nav class="help-toc" aria-label="Help topics">
+    <a href="#start">Getting started</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
+    <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a>
+    <a href="#oldest">Oldest by type</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
+    <a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
+    <a href="#export">Export &amp; screenshots</a><a href="#shortcuts">Shortcuts</a><a href="#glossary">Glossary</a>
+    <a href="#faq">Questions</a><a href="#sources">Sources</a><a href="#about">About</a>
+  </nav>
+
+  <section id="start">
+    <h2>Getting started</h2>
+    <p class="prose">This is a catalogue of the oldest buildings and structures in the British Isles: the United Kingdom,
+      Ireland, the Isle of Man and the Channel Islands. It holds everything begun before 1500, the oldest surviving
+      example of each type of building, and landmark buildings of any date (Grade I, Category A, World Heritage Sites and
+      other widely known structures), plus tens of thousands of places of interest and the people connected with them.</p>
+    {{ shot('catalogue.jpg', 'The catalogue: filters on the left, results as a gallery, table, map or timeline.') }}
+    <ol class="prose">
+      <li>Type in the search box (<kbd>/</kbd>): a name, a town, a saint, a person ("Shakespeare").</li>
+      <li>Narrow down with the filters: building group, period, nation, county, heritage grade, date basis.</li>
+      <li>Click a card to open the building; use ☆ to add it to the trip planner, ⇄ to compare.</li>
+      <li>Press <kbd>⌘K</kbd> (<kbd>Ctrl+K</kbd> on Windows/Linux) anywhere to jump to a page, building, place or person.</li>
+    </ol>
+  </section>
+
+  <section id="catalogue">
+    <h2>Catalogue</h2>
+    <p class="prose"><b>Views:</b> Gallery (photos), Table (sortable columns), Map (colour by building group or period,
+      "only what's on the map" filter) and Timeline (how many buildings were begun per century, 50, 500 or 1000 years).
+      <b>Near a place:</b> type a town or postcode, or use your location, then choose a distance; sort by "Nearest first".
+      <b>Copy link</b> keeps every filter, so a shared link opens the same view. Dates marked ≈ are estimates (see
+      <a href="#glossary">Date basis</a>).</p>
+  </section>
+
+  <section id="detail">
+    <h2>A building's page</h2>
+    {{ shot('detail.jpg', "A building's page: photo, dates with their basis, map with outline, floor plan, historic maps, people and nearby places.") }}
+    <p class="prose">Each record shows when it was built and <b>how we know</b> (recorded, from the register's description,
+      from a Wikipedia article, or estimated from the type), a <b>date check</b> against independent sources, its
+      designations, address, architect and style, and a "Sources &amp; references" box listing every source and the
+      references Wikidata attaches to each fact. Below the map: the building's <b>outline</b> from OpenStreetMap, a
+      <b>floor plan</b> where one exists (which can be laid over the map), <b>historic maps of this place</b> (scanned,
+      georeferenced maps on Allmaps, most detailed first), people connected with it, nearby old buildings and places
+      of interest. <b>🗺 Show on the map</b> opens the Map page zoomed in on the record, ringed and named (for a place
+      of interest its layer is switched on). Locally you can <b>correct a record</b>; corrections survive rebuilds.</p>
+  </section>
+
+  <section id="map">
+    <h2>Map</h2>
+    {{ shot('map_layers.jpg', 'The Map page with the layer switcher open: background, map layers and historic maps.') }}
+    <p class="prose">Buildings by group plus layers of places (battles, archaeology, lost places, gardens and trees,
+      industrial sites, finds, plaques, history events). The <b>☰ Layers</b> button on every map chooses the background
+      (online street map, <b>satellite</b> imagery from Esri with place names (local app), or the bundled offline map), the offline layers (counties, national parks and AONBs, rivers
+      and canals, lakes, major roads, minor roads and streams (off by default; shown when zoomed in), railways and
+      stations, historic counties (before 1974), national trails, regional and local walking routes, the National
+      Cycle Network and regional cycle routes, Roman roads, buried (culverted) rivers, towns, hills and coast, airports;
+      borders, national parks, routes, trails, Roman roads, buried rivers and stations also show over the street map) and a <b>historic map</b> with an
+      opacity slider: Ordnance Survey six-inch and one-inch, Roy's military survey, the Gough Map, William Smith's 1815
+      geological map, historical atlases, town plans and the Ordnance Survey six-inch maps of Ireland (first edition,
+      1829–42, and a later revision). Zoomed in, building outlines appear.</p>
+  </section>
+
+  <section id="places">
+    <h2>Places</h2>
+    {{ shot('places.jpg', 'Places of interest: battles, monuments, gardens, plaques, finds and more, as a list or a map.') }}
+    <p class="prose">Places that are not buildings: battlefields, archaeological sites from the official registers,
+      holy wells, hill figures, Roman roads, deserted villages, shipwrecks, registered gardens, notable trees, industrial
+      sites, finds and hoards, objects kept in buildings, commemorative plaques (Wikidata and Open Plaques) and located
+      history events. Filter by layer, type, nation, period and source.</p>
+  </section>
+
+  <section id="people">
+    <h2>People</h2>
+    <p class="prose">People linked to buildings and places: buried, born, lived, worked or died there; architects,
+      founders, owners, those commemorated by plaques and those who took part in battles. Where Wikidata gives a source
+      for a connection, it is shown next to it.</p>
+  </section>
+
+  <section id="pronunciation">
+    <h2>Pronunciation</h2>
+    {{ shot('pron_detail.jpg', 'How to say a name: variety, IPA, respelling with the stressed syllable in capitals, and a recording.') }}
+    <p class="prose">Under the name of a building, place or person you may see how it is said, and its name in other
+      languages of the isles. Each line gives the <b>variety</b> (English, local, Scottish English, Welsh, Scottish Gaelic,
+      Irish with its Munster / Connacht / Ulster dialects, Manx, Scots, Cornish, Jèrriais…), the
+      <b>IPA</b> transcription between slashes, a <b>respelling</b> in capitals for the stressed syllable ("BEE-vər"),
+      and ▶ to play a recording. "Saying &lt;town&gt;" lines are for the town or area the record lies in. The
+      <a href="{{ '/pronunciation' if not static_mode else 'pronunciation.html' }}">Pronunciation page</a> lists them all,
+      by variety, and exports them as CSV or JSON. Sources: the opening of the English Wikipedia article (CC BY-SA) and
+      Wikidata (CC0), whose recordings are on Wikimedia Commons, many from the Lingua Libre project; each recording's
+      author and licence are on its file page. Turn pronunciations or other-language names off in Settings.</p>
+  </section>
+
+  <section id="history">
+    <h2>History</h2>
+    {{ shot('history.jpg', 'A short history of the British Isles with sourced events placed on a map.') }}
+    <p class="prose">Periods from the Neolithic to the modern era, a timeline of sourced events (each checked against its
+      source; see Data quality) and where they happened.</p>
+  </section>
+
+  <section id="oldest">
+    <h2>Oldest by type</h2>
+    <p class="prose">For about fifty building types (castle, church, pub, bridge, lighthouse, theatre…) the oldest
+      surviving examples, with the claim that is usually made and the evidence behind it.</p>
+  </section>
+
+  <section id="stats">
+    <h2>Statistics</h2>
+    {{ shot('stats.jpg', 'Statistics: buildings by nation, period, category and designation; data completeness.') }}
+  </section>
+
+  <section id="stories">
+    <h2>Stories &amp; legends</h2>
+    <p class="prose">Ghosts and the supernatural, legends and myths, folklore and customs, and curious history
+      (secret passages, priest holes, treasure, smugglers) told about the buildings and places, taken from their
+      Wikipedia articles with a link back. They appear under <b>Stories &amp; legends</b> on a building's or
+      place's page, on the <b>Stories</b> page (by theme and nation, with a map), and as a <b>Stories</b> filter in
+      the catalogue sidebar. Legends are told as legends: they record what people believed or said.</p>
+  </section>
+
+  <section id="tours">
+    <h2>Tours</h2>
+    <p class="prose"><b>Ready-made tours</b>: walks around historic towns, bike rides and day trips by car, for all
+      sights or a theme (ghosts &amp; legends, prehistoric, castles, early churches, Roman). Routes follow real paths
+      and roads (OpenStreetMap, OSRM); the time includes a stop at each place. Each tour opens in Google Maps for
+      turn-by-turn directions, downloads as GPX (sat-navs, cycling and walking apps) or KML (Google Earth), prints,
+      or copies to <b>Your tour</b>.</p>
+    <p class="prose"><b>Your tour</b>: star (☆) buildings and places anywhere, or <b>✨ Suggest a tour</b> from a town,
+      postcode, your location or the map centre, for one to two hours, half a day or a day, on a theme. Choose
+      walking, cycling or driving and whether to return to the start; <b>Best order</b> finds the shortest order;
+      <b>+ Stops along the way</b> shows notable places close to the route to slot in. Save as many tours as you
+      like (kept in this browser; Settings → Backup saves them to a file). <b>Share link</b> puts the stops in a link
+      you can send.</p>
+    <p class="prose"><b>Long-distance and pilgrim ways</b>: national trails, Scotland's Great Trails, Irish waymarked
+      ways and pilgrim routes (St Cuthbert's Way, the Fife Pilgrim Way…) as multi-day walks, with the sights near the
+      path and day stages of about 20 km. Walks and rides show an <b>elevation profile</b> with the climb (from a 25 m
+      terrain model, so short climbs are smoothed out).</p>
+    <p class="prose"><b>On the way</b>: <b>📍 Follow</b> shows where you are, the next stop, its distance and direction,
+      and ticks stops off as you reach them. <b>🔊 Listen to the tour</b> reads out each stop and its story. Building
+      pages show the nearest railway or bus stations ("Getting there") and, where OpenStreetMap knows them, who looks
+      after the place, opening hours and whether entry is free; check before you go.</p>
+  </section>
+
+  <section id="onthisday">
+    <h2>On this day, timelines and the quiz</h2>
+    <p class="prose">The History page opens with <b>On this day</b>: battles, buildings founded or opened, and births and
+      deaths of the people in the catalogue on today's date (‹ › for other days). Dates before 1752 are given in the
+      calendar used at the time. A building's page has a <b>Timeline</b> of dated events from its article: built,
+      rebuilt, besieged, burned, dissolved, restored. The <b>Quiz</b> shows ten photographed buildings: guess the
+      period each was built in.</p>
+    <p class="prose">On the Places page and the map, <b>Legends &amp; literature</b> adds reportedly haunted places,
+      places of legend (Arthurian sites, fairy forts, Avalon, Lyonesse, Cantre'r Gwaelod: shown where tradition puts
+      them, as claims), holy wells, and the real places where notable novels, plays and poems are set. The
+      <b>Literary places</b> and <b>Ghosts &amp; legends</b> tours use them, with the homes and graves of writers.</p>
+    <p class="prose"><b>Maritime heritage</b> adds harbours and ports, docks, shipyards, ropewalks, custom houses,
+      lighthouses, lifeboat stations, museum ships and shipbuilders. <b>Industrial heritage</b> now covers the
+      Industrial Revolution (mills, mines, ironworks, canals, railways, engine houses, kilns, iron bridges, 1700–1914)
+      and <b>Victorian era</b> its public buildings, piers and glasshouses (1837–1901). Each has tours.</p>
+  </section>
+
+  <section id="offline">
+    <h2>Offline use and installing</h2>
+    <p class="prose">The <b>offline map</b> (☰ Layers → Offline map) works without internet: counties and historic
+      counties, roads (minor roads and streams when zoomed in), lakes, rivers, trails, stations and towns. In the
+      local app, <b>⬇ Save this area for offline</b> in the Layers panel keeps the street map of the area in view
+      (zoom 10–15) in the data folder, for a walk or a tour; Settings → Maps lists and deletes saved areas. The local
+      app can be installed from the browser (Install / Add to Home Screen); pages, tours and the places you opened
+      then also work offline.</p>
+  </section>
+
+  <section id="compare">
+    <h2>Compare</h2>
+    <p class="prose">Up to three buildings side by side (mark them with ⇄).</p>
+  </section>
+
+  <section id="data">
+    <h2>Data quality</h2>
+    <p class="prose">Where the data is incomplete or sources disagree: undated records, date conflicts (with the
+      conflicting sentence quoted), missing photos or coordinates, and the research claims checked against their sources.
+      Links go straight to the Wikidata item, so gaps can be fixed at the source.</p>
+    <p class="prose"><b>Rebuild and other jobs</b> (local app): rebuild the database, find photos, outlines and floor
+      plans, offline map layers, the hosted copy, and packaging the database for a new installation. Each shows its
+      stage, a progress bar, downloads vs cache hits and the time left (estimated from the last run). Jobs keep running
+      if you close the page or the app; reopen the Data quality page to follow them, or <b>Stop</b> one. Downloads are
+      cached, so a rebuild reuses them; to pick up newer Wikidata or Wikipedia edits, open the rebuild options and
+      download again what is older than some days, or everything from chosen sources.</p>
+  </section>
+
+  <section id="settings">
+    <h2>Settings</h2>
+    {{ shot('settings.jpg', 'Settings: appearance, catalogue and map defaults, units, history, data location, backup.') }}
+    <p class="prose"><b>Appearance:</b> theme (system, light, dark; or press <kbd>T</kbd>), text size, compact layout,
+      reduced motion. <b>Catalogue:</b> how it opens (view, sort, results per page) and distance units. <b>Maps:</b>
+      default background and marker clustering. <b>History &amp; shortcuts:</b> recently viewed records, single-key
+      shortcuts. <b>Data location</b> (local app): where the download cache and the database are kept, with the
+      free space on each drive. Move or copy them to an external drive, back to the project folder, or any folder; the
+      app checks every file before switching and deleting the old copy, and tells you if a drive is unplugged.
+      <b>Backup:</b> save your trip list, compare list, map layers and preferences to a file and load them elsewhere.</p>
+  </section>
+
+  <section id="export">
+    <h2>Export &amp; screenshots</h2>
+    {{ shot('export_menu.jpg', 'The Export menu: data for the current filters, screenshots, print, copy link.') }}
+    <p class="prose">The <b>⤓ Export</b> menu (<kbd>X</kbd>) saves what you are looking at:</p>
+    <ul class="prose">
+      <li><b>Data for the current filters</b>: buildings, places or people as CSV (spreadsheets), JSON, GeoJSON (QGIS and
+        other GIS) or KML (Google Earth).</li>
+      <li><b>Screenshot</b> of the current view, at your window size or phone size (local app; uses Chrome in the background).
+        From a terminal: <code>.venv/bin/python -m app.screenshot /map map.png --width 1280 --height 800 --theme dark</code>.</li>
+      <li><b>Print or save as PDF</b>: pages print without menus and filters.</li>
+      <li><b>Copy link</b> to this exact view.</li>
+    </ul>
+    <p class="prose">Direct links for scripts: <code>/export/buildings.csv?nation=Wales&amp;period=Medieval</code>,
+      <code>/export/places.geojson?kind_group=Battles+%26+sieges</code>, <code>/export/people.json?role=Architect</code>,
+      <code>/api/screenshot?path=/stats&amp;w=1280&amp;h=800</code>.</p>
+  </section>
+
+  <section id="shortcuts">
+    <h2>Keyboard shortcuts</h2>
+    <table class="data-table" style="max-width:560px">
+      <tr><td><kbd>/</kbd></td><td>Search on this page</td></tr>
+      <tr><td><kbd>⌘K</kbd> / <kbd>Ctrl+K</kbd></td><td>Go to a page, building, place or person</td></tr>
+      <tr><td><kbd>?</kbd></td><td>Show shortcuts</td></tr>
+      <tr><td><kbd>T</kbd></td><td>Light / dark theme</td></tr>
+      <tr><td><kbd>X</kbd></td><td>Export menu</td></tr>
+      <tr><td><kbd>G</kbd> then <kbd>C</kbd> <kbd>M</kbd> <kbd>P</kbd> <kbd>E</kbd> <kbd>H</kbd> <kbd>O</kbd> <kbd>S</kbd> <kbd>T</kbd> <kbd>R</kbd> <kbd>D</kbd> <kbd>,</kbd></td>
+        <td>Catalogue, Map, Places, pEople, History, Oldest, Statistics, Trip, compaRe, Data quality, Settings</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>Close menus and dialogs</td></tr>
+    </table>
+  </section>
+
+  <section id="glossary">
+    <h2>Glossary</h2>
+    <dl class="gloss">
+      <dt>Date built</dt><dd>When construction began (the earliest surviving fabric where sources say so).</dd>
+      <dt>Date basis</dt><dd><b>Recorded</b>: Wikidata or a curated Wikipedia list. <b>From register description</b>: the
+        official listing text (Historic Environment Scotland, Cadw). <b>From Wikipedia article</b>: mined from the article,
+        with the sentence kept as evidence. <b>Estimate (building type)</b>: the accepted date range for that kind of
+        monument. <b>Not recorded</b>: no date found. Anything but "Recorded" shows ≈.</dd>
+      <dt>Date check</dt><dd><b>Corroborated</b>: another source agrees within 100 years (500 for prehistoric dates).
+        <b>Referenced</b>: the date carries a reference on Wikidata. <b>Single source</b>: nothing independent to compare.
+        <b>Conflict</b>: another source is more than 150 years away; worth a look.</dd>
+      <dt>Landmark</dt><dd>Included regardless of date: Grade I (England, Wales), Category A (Scotland), Grade A
+        (Northern Ireland), World Heritage Sites, structures with articles in many languages, Crown Dependency heritage.</dd>
+      <dt>Oldest of its type</dt><dd>Among the earliest surviving examples of a building type, from Wikidata and researched claims.</dd>
+    </dl>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Questions</h2>
+    <details><summary>Why is a building missing?</summary><p class="prose">The catalogue starts from Wikidata and the
+      official registers. A building without a Wikidata item, or without a date before 1500 and not a landmark, will not
+      appear. Adding the date on Wikidata brings it in at the next rebuild.</p></details>
+    <details><summary>A date looks wrong. What can I do?</summary><p class="prose">Open the record, check the date basis
+      and evidence, and use "Correct this record" (local app) or fix it on Wikidata (link on the record).</p></details>
+    <details><summary>Why are some photos "taken nearby"?</summary><p class="prose">Records without a photo get the
+      nearest geotagged Wikimedia Commons photo; the caption says when it may show the surroundings rather than the
+      building itself.</p></details>
+    <details><summary>The map is blank or grey.</summary><p class="prose">The online street map needs internet. Choose
+      "Offline map" under ☰ Layers, or make it the default in Settings.</p></details>
+    <details><summary>The app says the data folder is not available.</summary><p class="prose">The download cache or
+      database is on a drive that is not connected. Plug it in, or choose another location in Settings → Data location
+      (Use a copy that is already there).</p></details>
+    <details><summary>Starting on a new computer.</summary><p class="prose">Without a database the app opens on its
+      setup page: use the bundled database (downloaded from the project's GitHub release), point it at data you already have (a drive with the cache and/or
+      database), or build from scratch (hours, in the background). From the terminal: <code>./run.sh --data
+      /Volumes/MyDrive</code>, <code>--bundled</code> or <code>--build</code>.</p></details>
+    <details><summary>Does anything I do here leave my computer?</summary><p class="prose">Searches and preferences stay
+      in your browser. Looking up a place name or postcode asks postcodes.io / OpenStreetMap; maps and photos load from
+      their servers.</p></details>
+  </section>
+
+  <section id="sources">
+    <h2>Sources &amp; licences</h2>
+    <ul class="prose">
+      <li>Wikidata (CC0); Wikipedia text (CC BY-SA); photos from Wikimedia Commons (each file's own licence).</li>
+      <li>Historic England, Historic Environment Scotland, Cadw, Department for Communities (Northern Ireland): Open
+        Government Licence. National Monuments Service and NIAH (Ireland): CC BY 4.0.</li>
+      <li>Open Plaques: public domain. postcodes.io: OGL. Map data © OpenStreetMap contributors (ODbL); Natural Earth
+        (public domain); GeoNames (CC BY 4.0).</li>
+      <li>Historic maps: National Library of Scotland, David Rumsey Map Collection (via Allmaps), Wikimaps Warper,
+        Bodleian Libraries; see each layer's attribution.</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="prose">An open project: code at
+      <a href="https://github.com/gddickinson/british-isles-oldest-buildings">github.com/gddickinson/british-isles-oldest-buildings</a>.
+      {% if info.built %}This copy of the data was built {{ info.built }} ({{ "{:,}".format(info.records or 0) }} catalogue records).{% endif %}
+      The code is under the MIT License; the data keeps its sources' licences (Wikipedia text CC BY-SA, OpenStreetMap
+      data ODbL, heritage registers OGL / CC BY, Wikidata CC0): see <code>DATA_LICENSE.md</code> in the repository.</p>
+    <p class="hint">Screenshots in this guide show photos from Wikimedia Commons (each under its own licence, credited on
+      its file page), map tiles © OpenStreetMap contributors, Esri World Imagery (© Esri, Maxar, Earthstar Geographics)
+      and National Library of Scotland maps (CC BY).</p>
+  </section>
+</main>
+{% endblock %}

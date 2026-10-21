@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# raw API response cache (~300 MB); rebuild with python -m bidb.build
+data/cache/
+runs/
+dist/
+# the bundled database is a GitHub Release asset (data/bundled.json names it; bidb/bundle.py)
+data/*.sqlite.gz
+data/*.sqlite
+data/*.sqlite-journal
+data/package.tmp.sqlite
+data/*.gz.part
+# machine-specific settings written by the Settings page (data locations, screenshot browser)
+settings.json
+settings.tmp

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Set up · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page setup-page">
+  <h1>Set up</h1>
+  <p class="prose">There is no database yet at <code id="su_db">…</code>. Choose how to start; you can change the
+    data location later in <a href="/settings#data">Settings</a> and rebuild or refresh the data on the
+    <a href="/data#jobs">Data quality</a> page.</p>
+  <div id="su_problems"></div>
+
+  <section class="set-card">
+    <h2>1. Use the bundled database <span class="hint">(quickest)</span></h2>
+    <p class="prose" id="su_bundled">…</p>
+    <button type="button" class="btn" id="su_use_bundled">Use the bundled database</button>
+  </section>
+
+  <section class="set-card">
+    <h2>2. Use data you already have</h2>
+    <p class="prose">A folder holding the database and/or the download cache from another computer or a drive,
+      e.g. <code>/Volumes/MyDrive</code> or <code>/Volumes/MyDrive/UK_BUILDINGS_DATA</code>. A download cache alone
+      makes a build fast (nothing is downloaded twice).</p>
+    <div class="set-row dl-box"><input type="text" id="su_folder" class="dl-path" placeholder="/Volumes/…" style="flex:1">
+      <button type="button" class="btn small ghost" id="su_browse">Browse…</button>
+      <button type="button" class="btn small" id="su_use_folder">Use this folder</button></div>
+    <div class="dl-browser hidden" id="su_browser"></div>
+  </section>
+
+  <section class="set-card">
+    <h2>3. Build from scratch</h2>
+    <p class="prose">Downloads everything from Wikidata, Wikipedia, the heritage registers and OpenStreetMap and builds
+      the database: many hours, and about 3 GB of downloads kept in a cache folder (an external drive is fine).
+      It runs in the background, survives closing the app, and resumes from the cache if interrupted.</p>
+    <div class="set-row"><label for="su_cache">Download cache folder</label>
+      <input type="text" id="su_cache" style="flex:1" placeholder="data/cache in the project folder"></div>
+    <button type="button" class="btn" id="su_build">Start the build</button>
+  </section>
+
+  <section class="set-card hidden" id="su_progress">
+    <h2>Progress</h2>
+    <div id="su_jobs"></div>
+  </section>
+  <p id="su_done" class="hidden"><a class="btn" href="/">Open the catalogue</a></p>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='jobs.js') }}"></script>
+<script src="{{ url_for('static', filename='setup.js') }}"></script>
+{% endblock %}

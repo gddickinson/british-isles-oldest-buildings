@@ -1,0 +1,45 @@
+/* Settings and Help pages */
+.set-toc, .help-toc { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 4px 0 14px; font-size: 14px; }
+.set-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 14px;
+  margin: 14px 0; scroll-margin-top: 12px; }
+.set-card h2 { margin-top: 14px; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0;
+  border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.set-row:last-of-type { border-bottom: 0; }
+.set-row label { font-weight: 500; }
+.set-row select, .set-row input[type=text], .dl-move select, .dl-move input {
+  padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); font: inherit; font-size: 14px; }
+.set-row input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--accent); }
+.inline-form { display: flex; gap: 6px; flex: 1; max-width: 560px; }
+.inline-form input { flex: 1; min-width: 0; }
+.linklike { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+.warn-text { color: #b3261e; }
+:root[data-theme="dark"] .warn-text { color: #f2b8b5; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .warn-text { color: #f2b8b5; } }
+.dl-items { display: grid; gap: 12px; }
+.dl-item { border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; background: var(--bg); }
+.dl-item.missing { border-color: #b3261e; }
+.dl-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.dl-item dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px; margin: 6px 0; font-size: 14px; }
+.dl-item dt { color: var(--muted); }
+.dl-item dd { margin: 0; overflow-wrap: anywhere; }
+.dl-move { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; }
+.dl-move select { max-width: 100%; }
+.dl-browser { margin-top: 8px; border: 1px solid var(--line); border-radius: 8px; padding: 8px; background: var(--panel); }
+.folder-list { list-style: none; padding: 0; margin: 6px 0; max-height: 220px; overflow: auto; columns: 2; font-size: 14px; }
+.dl-job { margin-top: 14px; padding: 10px 14px; border-radius: 10px; background: var(--accent-soft); }
+.progress { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; margin: 8px 0 4px; }
+.progress span { display: block; height: 100%; background: var(--accent); transition: width .4s; }
+.recent-list .nearby { columns: 2; }
+.data-table { border-collapse: collapse; width: 100%; font-size: 14px; }
+.data-table th, .data-table td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--line); }
+
+.help-page .shot { margin: 10px 0 18px; }
+.help-page .shot img { width: 100%; max-width: 900px; border: 1px solid var(--line); border-radius: 10px; display: block; }
+.help-page .shot figcaption { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.help-page section { scroll-margin-top: 12px; }
+.help-page dl.gloss dt { font-weight: 600; margin-top: 8px; }
+.help-page dl.gloss dd { margin: 2px 0 0 0; max-width: 75ch; }
+.faq details { border-bottom: 1px solid var(--line); padding: 8px 0; }
+.faq summary { cursor: pointer; font-weight: 500; }
+@media (max-width: 640px) { .folder-list, .recent-list .nearby { columns: 1; } .set-row { align-items: flex-start; } }

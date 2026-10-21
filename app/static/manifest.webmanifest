@@ -1,0 +1,11 @@
+{
+  "name": "British Isles Oldest Buildings",
+  "short_name": "Old Buildings",
+  "description": "The oldest buildings, places, stories and tours of the British Isles",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f2ea",
+  "theme_color": "#7a4a1e",
+  "icons": [{"src": "/static/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}

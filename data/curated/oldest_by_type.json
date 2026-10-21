@@ -1,0 +1,3064 @@
+{
+ "types": [
+  {
+   "type": "Public house",
+   "category": "Public house / inn",
+   "examples": [
+    {
+     "name": "Ye Olde Fighting Cocks",
+     "wikipedia_title": "Ye Olde Fighting Cocks",
+     "location": "St Albans, England",
+     "nation": "England",
+     "claimed_date": "793",
+     "year": 793,
+     "evidence_date": "present building thought to be 16th-17th century (site possibly an 11th-century structure)",
+     "claim": "once listed by Guinness World Records as oldest pub in England; disputed",
+     "source": "https://en.wikipedia.org/wiki/Ye_Olde_Fighting_Cocks"
+    },
+    {
+     "name": "Sean's Bar",
+     "wikipedia_title": "Sean's Bar",
+     "location": "Athlone, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "c. 900",
+     "year": 900,
+     "evidence_date": "wattle-and-daub walls found in 1970s renovation; current building largely 18th century or later",
+     "claim": "recognised by Guinness World Records as Ireland's (and Europe's) oldest pub; date disputed",
+     "source": "https://en.wikipedia.org/wiki/Sean's_Bar"
+    },
+    {
+     "name": "Bingley Arms",
+     "wikipedia_title": "The Bingley Arms",
+     "location": "Bardsey, West Yorkshire, England",
+     "nation": "England",
+     "claimed_date": "953",
+     "year": 953,
+     "evidence_date": "present building much later (largely 18th century and later)",
+     "claim": "claims a brewhouse on the site from 953; folklore-level evidence",
+     "source": "https://en.wikipedia.org/wiki/The_Bingley_Arms"
+    },
+    {
+     "name": "Skirrid Mountain Inn",
+     "wikipedia_title": "The Skirrid Inn",
+     "location": "Llanfihangel Crucorney, Monmouthshire, Wales",
+     "nation": "Wales",
+     "claimed_date": "1110",
+     "year": 1110,
+     "evidence_date": "present building largely 17th century",
+     "claim": "claims to be the oldest pub in Wales; early date is tradition",
+     "source": "https://en.wikipedia.org/wiki/The_Skirrid_Inn"
+    },
+    {
+     "name": "Ye Olde Trip to Jerusalem",
+     "wikipedia_title": "Ye Olde Trip to Jerusalem",
+     "location": "Nottingham, England",
+     "nation": "England",
+     "claimed_date": "1189",
+     "year": 1189,
+     "evidence_date": "no evidence for 1189; building largely 17th century, cut into older sandstone caves",
+     "claim": "one of several pubs claiming to be England's oldest",
+     "source": "https://en.wikipedia.org/wiki/Ye_Olde_Trip_to_Jerusalem"
+    },
+    {
+     "name": "Ye Olde Salutation Inn",
+     "wikipedia_title": "Ye Olde Salutation Inn",
+     "location": "Nottingham, England",
+     "nation": "England",
+     "claimed_date": "1240",
+     "year": 1240,
+     "evidence_date": "building generally dated to c.15th century",
+     "claim": "rival Nottingham 'oldest pub' claimant",
+     "source": "https://en.wikipedia.org/wiki/Ye_Olde_Salutation_Inn"
+    },
+    {
+     "name": "Adam and Eve",
+     "wikipedia_title": "Adam and Eve, Norwich",
+     "location": "Norwich, England",
+     "nation": "England",
+     "claimed_date": "1249",
+     "year": 1249,
+     "evidence_date": "first recorded as an alehouse 1249; present building largely later (Dutch gable 17th c.)",
+     "claim": "claims to be Norwich's oldest pub",
+     "source": "https://en.wikipedia.org/wiki/Adam_and_Eve,_Norwich"
+    },
+    {
+     "name": "Sheep Heid Inn",
+     "wikipedia_title": "Sheep Heid Inn",
+     "location": "Duddingston, Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1360",
+     "year": 1360,
+     "evidence_date": "present building mostly 18th century and later",
+     "claim": "claims to be one of Scotland's oldest surviving pubs",
+     "source": "https://en.wikipedia.org/wiki/Sheep_Heid_Inn"
+    },
+    {
+     "name": "Grace Neill's",
+     "wikipedia_title": "Grace Neill's",
+     "location": "Donaghadee, County Down, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1611",
+     "year": 1611,
+     "evidence_date": null,
+     "claim": "claims to be one of Ireland's oldest pubs",
+     "source": "https://en.wikipedia.org/wiki/Grace_Neill's"
+    }
+   ]
+  },
+  {
+   "type": "Inn / coaching inn",
+   "category": "Public house / inn",
+   "examples": [
+    {
+     "name": "Mermaid Inn",
+     "wikipedia_title": "The Mermaid Inn, Rye",
+     "location": "Rye, East Sussex, England",
+     "nation": "England",
+     "claimed_date": "1156 (cellars)",
+     "year": 1156,
+     "evidence_date": "cellars 12th century; inn rebuilt 1420",
+     "claim": "claims 12th-century origins",
+     "source": "https://en.wikipedia.org/wiki/The_Mermaid_Inn,_Rye"
+    },
+    {
+     "name": "Angel and Royal",
+     "wikipedia_title": "Angel and Royal",
+     "location": "Grantham, Lincolnshire, England",
+     "nation": "England",
+     "claimed_date": "1203",
+     "year": 1203,
+     "evidence_date": "present stone frontage 15th century",
+     "claim": "claims to be one of the oldest inns in England",
+     "source": "https://en.wikipedia.org/wiki/Angel_and_Royal"
+    },
+    {
+     "name": "The George Inn, Norton St Philip",
+     "wikipedia_title": "The George Inn, Norton St Philip",
+     "location": "Norton St Philip, Somerset, England",
+     "nation": "England",
+     "claimed_date": "1397",
+     "year": 1397,
+     "evidence_date": "stone ground floor late 14th / 15th century, upper floors timber-framed c.1500",
+     "claim": "one of several inns claiming to be England's oldest continuously licensed",
+     "source": "https://en.wikipedia.org/wiki/The_George_Inn,_Norton_St_Philip"
+    },
+    {
+     "name": "New Inn, Gloucester",
+     "wikipedia_title": "The New Inn, Gloucester",
+     "location": "Gloucester, England",
+     "nation": "England",
+     "claimed_date": "c. 1450",
+     "year": 1450,
+     "evidence_date": "timber-framed galleried courtyard inn, mid-15th century",
+     "claim": "among the best-preserved medieval galleried inns",
+     "source": "https://en.wikipedia.org/wiki/The_New_Inn,_Gloucester"
+    },
+    {
+     "name": "The George Inn, Southwark",
+     "wikipedia_title": "The George Inn, Southwark",
+     "location": "Southwark, London, England",
+     "nation": "England",
+     "claimed_date": "medieval (inn on site by 1542)",
+     "year": 1542,
+     "evidence_date": "rebuilt 1677 after fire; London's only surviving galleried coaching inn",
+     "claim": "National Trust-owned; last galleried inn in London",
+     "source": "https://en.wikipedia.org/wiki/The_George_Inn,_Southwark"
+    },
+    {
+     "name": "The Old Inn, Crawfordsburn",
+     "wikipedia_title": null,
+     "location": "Crawfordsburn, County Down, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1614",
+     "year": 1614,
+     "evidence_date": null,
+     "claim": "claims to be the oldest hotel/inn in Ireland; rival Woodenbridge (1608) also claims",
+     "source": "https://coolplaces.co.uk/hotels/uk/northern-ireland/ulster/county-down-ni/bangor-ni/12923-the-old-inn"
+    }
+   ]
+  },
+  {
+   "type": "House (domestic dwelling)",
+   "category": "House / domestic",
+   "examples": [
+    {
+     "name": "Knap of Howar",
+     "wikipedia_title": "Knap of Howar",
+     "location": "Papa Westray, Orkney, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 3700 BC",
+     "year": -3700,
+     "evidence_date": "radiocarbon 3700-2800 BC; Neolithic farmstead",
+     "claim": "often cited as the oldest preserved stone house in northern Europe",
+     "source": "https://en.wikipedia.org/wiki/Knap_of_Howar"
+    },
+    {
+     "name": "Skara Brae",
+     "wikipedia_title": "Skara Brae",
+     "location": "Mainland, Orkney, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 3180 BC",
+     "year": -3180,
+     "evidence_date": "occupied c.3180-2500 BC",
+     "claim": "Europe's most complete Neolithic village; UNESCO WHS",
+     "source": "https://en.wikipedia.org/wiki/Skara_Brae"
+    },
+    {
+     "name": "Saltford Manor House",
+     "wikipedia_title": "Saltford Manor House",
+     "location": "Saltford, Somerset, England",
+     "nation": "England",
+     "claimed_date": "c. 1148",
+     "year": 1148,
+     "evidence_date": "Norman window dated to c.1150; later alterations",
+     "claim": "claimed oldest continuously occupied house in England (Guinness-recognised); disputed",
+     "source": "https://en.wikipedia.org/wiki/Saltford_Manor_House"
+    },
+    {
+     "name": "Jew's House",
+     "wikipedia_title": "Jew's House",
+     "location": "Lincoln, England",
+     "nation": "England",
+     "claimed_date": "c. 1150-1170",
+     "year": 1160,
+     "evidence_date": "Norman stone town house, mid/late 12th century",
+     "claim": "among the oldest occupied domestic buildings in England",
+     "source": "https://en.wikipedia.org/wiki/Jew's_House"
+    },
+    {
+     "name": "Moyse's Hall",
+     "wikipedia_title": "Moyse's Hall",
+     "location": "Bury St Edmunds, England",
+     "nation": "England",
+     "claimed_date": "c. 1180",
+     "year": 1180,
+     "evidence_date": "late-12th-century Norman stone house; now a museum",
+     "claim": "one of England's oldest domestic buildings",
+     "source": "https://en.wikipedia.org/wiki/Moyse's_Hall"
+    },
+    {
+     "name": "Gladstone's Land",
+     "wikipedia_title": "Gladstone's Land",
+     "location": "Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 1550",
+     "year": 1550,
+     "evidence_date": "16th-century core, extended 1617-20",
+     "claim": "early surviving Old Town tenement",
+     "source": "https://en.wikipedia.org/wiki/Gladstone's_Land"
+    }
+   ]
+  },
+  {
+   "type": "Cottage",
+   "category": "House / domestic",
+   "examples": [
+    {
+     "name": "Priest's House, Muchelney",
+     "wikipedia_title": "The Priest's House, Muchelney",
+     "location": "Muchelney, Somerset, England",
+     "nation": "England",
+     "claimed_date": "1308",
+     "year": 1308,
+     "evidence_date": "late-medieval hall house, c.1308",
+     "claim": "thatched medieval priest's cottage (National Trust)",
+     "source": "https://en.wikipedia.org/wiki/The_Priest's_House,_Muchelney"
+    },
+    {
+     "name": "Old Post Office, Tintagel",
+     "wikipedia_title": "Tintagel Old Post Office",
+     "location": "Tintagel, Cornwall, England",
+     "nation": "England",
+     "claimed_date": "14th century",
+     "year": 1380,
+     "evidence_date": "14th-century yeoman's longhouse; letter-receiving office in the 19th century",
+     "claim": "rare surviving medieval small house",
+     "source": "https://en.wikipedia.org/wiki/Tintagel_Old_Post_Office"
+    },
+    {
+     "name": "Tŷ Mawr Wybrnant",
+     "wikipedia_title": "Tŷ Mawr Wybrnant",
+     "location": "Penmachno, Conwy, Wales",
+     "nation": "Wales",
+     "claimed_date": "16th century",
+     "year": 1550,
+     "evidence_date": "present house mostly 16th-17th century",
+     "claim": "birthplace of Bishop William Morgan; traditional Welsh upland farmhouse",
+     "source": "https://en.wikipedia.org/wiki/T%C5%B7_Mawr_Wybrnant"
+    },
+    {
+     "name": "Arnol Blackhouse",
+     "wikipedia_title": "Arnol",
+     "location": "Arnol, Isle of Lewis, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1880s",
+     "year": 1885,
+     "evidence_date": "built 1880s, occupied to 1966",
+     "claim": "best-preserved traditional Hebridean blackhouse",
+     "source": "https://en.wikipedia.org/wiki/Arnol"
+    }
+   ]
+  },
+  {
+   "type": "Manor house",
+   "category": "Palace / manor house",
+   "examples": [
+    {
+     "name": "Hemingford Grey Manor",
+     "wikipedia_title": "Hemingford Grey",
+     "location": "Hemingford Grey, Cambridgeshire, England",
+     "nation": "England",
+     "claimed_date": "c. 1130",
+     "year": 1130,
+     "evidence_date": "Norman hall house c.1130-40",
+     "claim": "claimed one of the oldest continuously inhabited houses in Britain",
+     "source": "https://en.wikipedia.org/wiki/Hemingford_Grey"
+    },
+    {
+     "name": "Saltford Manor House",
+     "wikipedia_title": "Saltford Manor House",
+     "location": "Saltford, Somerset, England",
+     "nation": "England",
+     "claimed_date": "c. 1148",
+     "year": 1148,
+     "evidence_date": "Norman fabric c.1150",
+     "claim": "rival claim to be oldest continuously inhabited house",
+     "source": "https://en.wikipedia.org/wiki/Saltford_Manor_House"
+    },
+    {
+     "name": "Boothby Pagnell Manor House",
+     "wikipedia_title": "Boothby Pagnell",
+     "location": "Boothby Pagnell, Lincolnshire, England",
+     "nation": "England",
+     "claimed_date": "c. 1200",
+     "year": 1200,
+     "evidence_date": "Norman first-floor hall house c.1200",
+     "claim": "one of the best-preserved Norman manor houses",
+     "source": "https://en.wikipedia.org/wiki/Boothby_Pagnell"
+    },
+    {
+     "name": "Stokesay Castle",
+     "wikipedia_title": "Stokesay Castle",
+     "location": "Shropshire, England",
+     "nation": "England",
+     "claimed_date": "1280s-1290s",
+     "year": 1285,
+     "evidence_date": "built c.1285-91 by Laurence of Ludlow",
+     "claim": "finest surviving fortified medieval manor house in England",
+     "source": "https://en.wikipedia.org/wiki/Stokesay_Castle"
+    },
+    {
+     "name": "Markenfield Hall",
+     "wikipedia_title": "Markenfield Hall",
+     "location": "near Ripon, North Yorkshire, England",
+     "nation": "England",
+     "claimed_date": "1310",
+     "year": 1310,
+     "evidence_date": "licence to crenellate 1310",
+     "claim": "moated manor house still lived in",
+     "source": "https://en.wikipedia.org/wiki/Markenfield_Hall"
+    }
+   ]
+  },
+  {
+   "type": "Hotel",
+   "category": "Hotel",
+   "examples": [
+    {
+     "name": "Mermaid Inn",
+     "wikipedia_title": "The Mermaid Inn, Rye",
+     "location": "Rye, East Sussex, England",
+     "nation": "England",
+     "claimed_date": "1156",
+     "year": 1156,
+     "evidence_date": "cellars 12th century, rebuilt 1420",
+     "claim": "hotel-inn with medieval fabric",
+     "source": "https://en.wikipedia.org/wiki/The_Mermaid_Inn,_Rye"
+    },
+    {
+     "name": "The Old Bell Hotel",
+     "wikipedia_title": "The Old Bell, Malmesbury",
+     "location": "Malmesbury, Wiltshire, England",
+     "nation": "England",
+     "claimed_date": "1220",
+     "year": 1220,
+     "evidence_date": "parts of the building early 13th century",
+     "claim": "claims to be England's oldest purpose-built hotel; disputed",
+     "source": "https://en.wikipedia.org/wiki/The_Old_Bell,_Malmesbury"
+    },
+    {
+     "name": "Woodenbridge Hotel",
+     "wikipedia_title": null,
+     "location": "Woodenbridge, County Wicklow, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1608",
+     "year": 1608,
+     "evidence_date": "licensed as coaching inn 1608 (per hotel); fabric not independently dated",
+     "claim": "rival claim to oldest hotel in Ireland",
+     "source": "https://ireland-guide.com/establishment/woodenbridge-hotel.4165.html"
+    },
+    {
+     "name": "The Old Inn, Crawfordsburn",
+     "wikipedia_title": null,
+     "location": "Crawfordsburn, County Down, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1614",
+     "year": 1614,
+     "evidence_date": null,
+     "claim": "claims oldest hotel in Ireland",
+     "source": "https://coolplaces.co.uk/hotels/uk/northern-ireland/ulster/county-down-ni/bangor-ni/12923-the-old-inn"
+    },
+    {
+     "name": "Salutation Hotel",
+     "wikipedia_title": "Salutation Hotel",
+     "location": "Perth, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1699",
+     "year": 1699,
+     "evidence_date": "listing dates present building to c.1810 with later alterations",
+     "claim": "claims to be Scotland's oldest hotel",
+     "source": "https://en.wikipedia.org/wiki/Salutation_Hotel"
+    }
+   ]
+  },
+  {
+   "type": "Shop",
+   "category": "Market / shop",
+   "examples": [
+    {
+     "name": "Lady Row",
+     "wikipedia_title": "Lady Row",
+     "location": "Goodramgate, York, England",
+     "nation": "England",
+     "claimed_date": "1316",
+     "year": 1316,
+     "evidence_date": "timber-framed row of 1316, oldest surviving houses in York; now shops",
+     "claim": "early jettied row (shops/houses)",
+     "source": "https://en.wikipedia.org/wiki/Lady_Row"
+    },
+    {
+     "name": "Lock & Co. Hatters",
+     "wikipedia_title": "James Lock & Co.",
+     "location": "St James's Street, London, England",
+     "nation": "England",
+     "claimed_date": "1676",
+     "year": 1676,
+     "evidence_date": "firm 1676; occupies No. 6 St James's Street (c.1690s building)",
+     "claim": "claims to be world's oldest hat shop",
+     "source": "https://en.wikipedia.org/wiki/James_Lock_&_Co."
+    },
+    {
+     "name": "Berry Bros. & Rudd",
+     "wikipedia_title": "Berry Bros. & Rudd",
+     "location": "St James's Street, London, England",
+     "nation": "England",
+     "claimed_date": "1698",
+     "year": 1698,
+     "evidence_date": "shop at No. 3 St James's Street since 1698 (building 18th century)",
+     "claim": "Britain's oldest wine merchant",
+     "source": "https://en.wikipedia.org/wiki/Berry_Bros._&_Rudd"
+    },
+    {
+     "name": "Fortnum & Mason",
+     "wikipedia_title": "Fortnum & Mason",
+     "location": "Piccadilly, London, England",
+     "nation": "England",
+     "claimed_date": "1707",
+     "year": 1707,
+     "evidence_date": "present store building 1920s",
+     "claim": "old firm; building not old",
+     "source": "https://en.wikipedia.org/wiki/Fortnum_&_Mason"
+    },
+    {
+     "name": "Hatchards",
+     "wikipedia_title": "Hatchards",
+     "location": "Piccadilly, London, England",
+     "nation": "England",
+     "claimed_date": "1797",
+     "year": 1797,
+     "evidence_date": "on present site since 1801",
+     "claim": "London's oldest bookshop",
+     "source": "https://en.wikipedia.org/wiki/Hatchards"
+    }
+   ]
+  },
+  {
+   "type": "Market hall / market cross",
+   "category": "Market / shop",
+   "examples": [
+    {
+     "name": "Malmesbury Market Cross",
+     "wikipedia_title": "Malmesbury Market Cross",
+     "location": "Malmesbury, Wiltshire, England",
+     "nation": "England",
+     "claimed_date": "c. 1490",
+     "year": 1490,
+     "evidence_date": "late-15th-century octagonal market cross",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Malmesbury_Market_Cross"
+    },
+    {
+     "name": "Chichester Cross",
+     "wikipedia_title": "Chichester Cross",
+     "location": "Chichester, England",
+     "nation": "England",
+     "claimed_date": "1501",
+     "year": 1501,
+     "evidence_date": "Perpendicular market cross built 1501",
+     "claim": "elaborate surviving medieval market cross",
+     "source": "https://en.wikipedia.org/wiki/Chichester_Cross"
+    },
+    {
+     "name": "Llanidloes Market Hall",
+     "wikipedia_title": "Old Market Hall, Llanidloes",
+     "location": "Llanidloes, Powys, Wales",
+     "nation": "Wales",
+     "claimed_date": "c. 1600",
+     "year": 1600,
+     "evidence_date": null,
+     "claim": "only surviving timber-framed market hall in Wales",
+     "source": "https://en.wikipedia.org/wiki/Old_Market_Hall,_Llanidloes"
+    },
+    {
+     "name": "Prestonpans Mercat Cross",
+     "wikipedia_title": "Prestonpans",
+     "location": "Prestonpans, East Lothian, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1617",
+     "year": 1617,
+     "evidence_date": null,
+     "claim": "said to be the only Scottish mercat cross in its original form and position",
+     "source": "https://en.wikipedia.org/wiki/Prestonpans"
+    },
+    {
+     "name": "Ledbury Market House",
+     "wikipedia_title": "Ledbury",
+     "location": "Ledbury, Herefordshire, England",
+     "nation": "England",
+     "claimed_date": "c. 1617",
+     "year": 1617,
+     "evidence_date": "timber-framed, 1617-1668",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Ledbury"
+    },
+    {
+     "name": "Chipping Campden Market Hall",
+     "wikipedia_title": "Chipping Campden",
+     "location": "Chipping Campden, Gloucestershire, England",
+     "nation": "England",
+     "claimed_date": "1627",
+     "year": 1627,
+     "evidence_date": null,
+     "claim": "Jacobean market hall (National Trust)",
+     "source": "https://en.wikipedia.org/wiki/Chipping_Campden"
+    }
+   ]
+  },
+  {
+   "type": "Guildhall / town hall",
+   "category": "Civic building",
+   "examples": [
+    {
+     "name": "Exeter Guildhall",
+     "wikipedia_title": "Exeter Guildhall",
+     "location": "Exeter, England",
+     "nation": "England",
+     "claimed_date": "1160",
+     "year": 1160,
+     "evidence_date": "first documented 1160; present building 1330 / rebuilt 1468-70, portico 1590s",
+     "claim": "claims oldest municipal building in England still in use",
+     "source": "https://en.wikipedia.org/wiki/Exeter_Guildhall"
+    },
+    {
+     "name": "Leicester Guildhall",
+     "wikipedia_title": "Leicester Guildhall",
+     "location": "Leicester, England",
+     "nation": "England",
+     "claimed_date": "1390",
+     "year": 1390,
+     "evidence_date": "timber-framed hall c.1390",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Leicester_Guildhall"
+    },
+    {
+     "name": "St George's Guildhall",
+     "wikipedia_title": "Guildhall of St George",
+     "location": "King's Lynn, England",
+     "nation": "England",
+     "claimed_date": "c. 1410-1420",
+     "year": 1410,
+     "evidence_date": null,
+     "claim": "largest surviving medieval guildhall in England; used as a theatre",
+     "source": "https://en.wikipedia.org/wiki/Guildhall_of_St_George"
+    },
+    {
+     "name": "Guildhall, London",
+     "wikipedia_title": "Guildhall, London",
+     "location": "City of London, England",
+     "nation": "England",
+     "claimed_date": "1411-1440",
+     "year": 1411,
+     "evidence_date": "medieval walls and crypt survive; roof rebuilt after 1666 and 1940",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Guildhall,_London"
+    },
+    {
+     "name": "Guildhall, Lavenham",
+     "wikipedia_title": "Lavenham Guildhall",
+     "location": "Lavenham, Suffolk, England",
+     "nation": "England",
+     "claimed_date": "1529",
+     "year": 1529,
+     "evidence_date": null,
+     "claim": "timber-framed Tudor guildhall (National Trust)",
+     "source": "https://en.wikipedia.org/wiki/Lavenham_Guildhall"
+    },
+    {
+     "name": "Musselburgh Tolbooth",
+     "wikipedia_title": "Musselburgh Tolbooth",
+     "location": "Musselburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1590",
+     "year": 1590,
+     "evidence_date": null,
+     "claim": "one of Scotland's oldest surviving tolbooths",
+     "source": "https://en.wikipedia.org/wiki/Musselburgh_Tolbooth"
+    }
+   ]
+  },
+  {
+   "type": "School building",
+   "category": "School / college",
+   "examples": [
+    {
+     "name": "Old Grammar School, Castletown",
+     "wikipedia_title": "Castletown, Isle of Man",
+     "location": "Castletown, Isle of Man",
+     "nation": "Isle of Man",
+     "claimed_date": "c. 1200",
+     "year": 1200,
+     "evidence_date": "built as St Mary's chapel c.1200; school from 1570 to 1930",
+     "claim": "said to be the oldest roofed building on the Isle of Man",
+     "source": "https://en.wikipedia.org/wiki/Castletown,_Isle_of_Man"
+    },
+    {
+     "name": "Winchester College",
+     "wikipedia_title": "Winchester College",
+     "location": "Winchester, England",
+     "nation": "England",
+     "claimed_date": "1382 (founded)",
+     "year": 1387,
+     "evidence_date": "Chamber Court built 1387-94, in continuous school use",
+     "claim": "among the oldest school buildings in continuous use",
+     "source": "https://en.wikipedia.org/wiki/Winchester_College"
+    },
+    {
+     "name": "King Edward VI School, Stratford-upon-Avon",
+     "wikipedia_title": "King Edward VI School, Stratford-upon-Avon",
+     "location": "Stratford-upon-Avon, England",
+     "nation": "England",
+     "claimed_date": "1420s (guild buildings)",
+     "year": 1427,
+     "evidence_date": "schoolroom in the 15th-century Guild buildings",
+     "claim": "Shakespeare's school",
+     "source": "https://en.wikipedia.org/wiki/King_Edward_VI_School,_Stratford-upon-Avon"
+    },
+    {
+     "name": "Ewelme Church of England School",
+     "wikipedia_title": "Ewelme",
+     "location": "Ewelme, Oxfordshire, England",
+     "nation": "England",
+     "claimed_date": "1437",
+     "year": 1437,
+     "evidence_date": "school building founded by Alice de la Pole c.1437",
+     "claim": "claimed oldest state school building in England still in use",
+     "source": "https://en.wikipedia.org/wiki/Ewelme"
+    },
+    {
+     "name": "Eton College",
+     "wikipedia_title": "Eton College",
+     "location": "Eton, Berkshire, England",
+     "nation": "England",
+     "claimed_date": "1440",
+     "year": 1440,
+     "evidence_date": "School Yard buildings 1440s onwards",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Eton_College"
+    }
+   ]
+  },
+  {
+   "type": "University / college building",
+   "category": "School / college",
+   "examples": [
+    {
+     "name": "Mob Quad, Merton College",
+     "wikipedia_title": "Mob Quad",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1288-1378",
+     "year": 1288,
+     "evidence_date": null,
+     "claim": "oldest quadrangle in Oxford",
+     "source": "https://en.wikipedia.org/wiki/Mob_Quad"
+    },
+    {
+     "name": "Peterhouse",
+     "wikipedia_title": "Peterhouse, Cambridge",
+     "location": "Cambridge, England",
+     "nation": "England",
+     "claimed_date": "1284 (founded)",
+     "year": 1290,
+     "evidence_date": "hall c.1290",
+     "claim": "oldest Cambridge college",
+     "source": "https://en.wikipedia.org/wiki/Peterhouse,_Cambridge"
+    },
+    {
+     "name": "Old Court, Corpus Christi College",
+     "wikipedia_title": "Corpus Christi College, Cambridge",
+     "location": "Cambridge, England",
+     "nation": "England",
+     "claimed_date": "1352",
+     "year": 1352,
+     "evidence_date": null,
+     "claim": "oldest enclosed court in Cambridge",
+     "source": "https://en.wikipedia.org/wiki/Corpus_Christi_College,_Cambridge"
+    },
+    {
+     "name": "Divinity School, Oxford",
+     "wikipedia_title": "Divinity School, Oxford",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1427-1488",
+     "year": 1427,
+     "evidence_date": null,
+     "claim": "oldest purpose-built university building in Oxford for teaching",
+     "source": "https://en.wikipedia.org/wiki/Divinity_School,_Oxford"
+    },
+    {
+     "name": "St Salvator's Chapel",
+     "wikipedia_title": "St Salvator's Chapel",
+     "location": "St Andrews, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1450",
+     "year": 1450,
+     "evidence_date": null,
+     "claim": "oldest building of Scotland's oldest university",
+     "source": "https://en.wikipedia.org/wiki/St_Salvator's_Chapel"
+    },
+    {
+     "name": "King's College Chapel, Aberdeen",
+     "wikipedia_title": "King's College Chapel, Aberdeen",
+     "location": "Aberdeen, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1498-1509",
+     "year": 1498,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/King's_College_Chapel,_Aberdeen"
+    },
+    {
+     "name": "The Rubrics, Trinity College Dublin",
+     "wikipedia_title": "The Rubrics",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "c. 1700",
+     "year": 1700,
+     "evidence_date": null,
+     "claim": "oldest surviving building of Trinity College Dublin",
+     "source": "https://en.wikipedia.org/wiki/The_Rubrics"
+    },
+    {
+     "name": "St David's College, Lampeter (Old Building)",
+     "wikipedia_title": "University of Wales, Lampeter",
+     "location": "Lampeter, Wales",
+     "nation": "Wales",
+     "claimed_date": "1822-1827",
+     "year": 1822,
+     "evidence_date": null,
+     "claim": "oldest degree-awarding institution in Wales",
+     "source": "https://en.wikipedia.org/wiki/University_of_Wales,_Lampeter"
+    }
+   ]
+  },
+  {
+   "type": "Library",
+   "category": "Library",
+   "examples": [
+    {
+     "name": "Merton College Library",
+     "wikipedia_title": "Merton College Library",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1373-1378",
+     "year": 1373,
+     "evidence_date": null,
+     "claim": "claims oldest academic library in continuous daily use",
+     "source": "https://en.wikipedia.org/wiki/Merton_College_Library"
+    },
+    {
+     "name": "Duke Humfrey's Library",
+     "wikipedia_title": "Duke Humfrey's Library",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1488",
+     "year": 1488,
+     "evidence_date": null,
+     "claim": "oldest reading room of the Bodleian",
+     "source": "https://en.wikipedia.org/wiki/Duke_Humfrey's_Library"
+    },
+    {
+     "name": "Francis Trigge Chained Library",
+     "wikipedia_title": "Francis Trigge Chained Library",
+     "location": "Grantham, England",
+     "nation": "England",
+     "claimed_date": "1598",
+     "year": 1598,
+     "evidence_date": null,
+     "claim": "claims to be one of England's first public libraries",
+     "source": "https://en.wikipedia.org/wiki/Francis_Trigge_Chained_Library"
+    },
+    {
+     "name": "Hereford Cathedral Library",
+     "wikipedia_title": "Hereford Cathedral",
+     "location": "Hereford, England",
+     "nation": "England",
+     "claimed_date": "chained library 1611",
+     "year": 1611,
+     "evidence_date": null,
+     "claim": "largest surviving chained library",
+     "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+    },
+    {
+     "name": "Chetham's Library",
+     "wikipedia_title": "Chetham's Library",
+     "location": "Manchester, England",
+     "nation": "England",
+     "claimed_date": "1653 (library); building 1421",
+     "year": 1653,
+     "evidence_date": "housed in 15th-century college building",
+     "claim": "oldest free public reference library in the English-speaking world",
+     "source": "https://en.wikipedia.org/wiki/Chetham's_Library"
+    },
+    {
+     "name": "Innerpeffray Library",
+     "wikipedia_title": "Innerpeffray Library",
+     "location": "Crieff, Perthshire, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 1680",
+     "year": 1680,
+     "evidence_date": "present building 1762",
+     "claim": "Scotland's first free public lending library",
+     "source": "https://en.wikipedia.org/wiki/Innerpeffray_Library"
+    },
+    {
+     "name": "Marsh's Library",
+     "wikipedia_title": "Marsh's Library",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1707",
+     "year": 1707,
+     "evidence_date": null,
+     "claim": "Ireland's first public library",
+     "source": "https://en.wikipedia.org/wiki/Marsh's_Library"
+    },
+    {
+     "name": "Linen Hall Library",
+     "wikipedia_title": "Linen Hall Library",
+     "location": "Belfast, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1788",
+     "year": 1788,
+     "evidence_date": "present building (former warehouse) occupied since 1892",
+     "claim": "oldest library in Belfast",
+     "source": "https://en.wikipedia.org/wiki/Linen_Hall_Library"
+    }
+   ]
+  },
+  {
+   "type": "Almshouse",
+   "category": "Almshouse / hospital",
+   "examples": [
+    {
+     "name": "Hospital of St Cross",
+     "wikipedia_title": "Hospital of St Cross",
+     "location": "Winchester, England",
+     "nation": "England",
+     "claimed_date": "1132",
+     "year": 1132,
+     "evidence_date": "church 12th-13th c.; brethren's ranges 15th c.",
+     "claim": "claims oldest charitable institution in the UK in continuous use",
+     "source": "https://en.wikipedia.org/wiki/Hospital_of_St_Cross"
+    },
+    {
+     "name": "Lord Leycester Hospital",
+     "wikipedia_title": "Lord Leycester Hospital",
+     "location": "Warwick, England",
+     "nation": "England",
+     "claimed_date": "1571 (buildings 14th-15th c.)",
+     "year": 1383,
+     "evidence_date": "guild buildings from 1383",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Lord_Leycester_Hospital"
+    },
+    {
+     "name": "God's House, Ewelme",
+     "wikipedia_title": "Ewelme",
+     "location": "Ewelme, Oxfordshire, England",
+     "nation": "England",
+     "claimed_date": "1437",
+     "year": 1437,
+     "evidence_date": null,
+     "claim": "brick almshouse still in use",
+     "source": "https://en.wikipedia.org/wiki/Ewelme"
+    },
+    {
+     "name": "Browne's Hospital",
+     "wikipedia_title": "Browne's Hospital, Stamford",
+     "location": "Stamford, Lincolnshire, England",
+     "nation": "England",
+     "claimed_date": "1475",
+     "year": 1475,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Browne's_Hospital,_Stamford"
+    },
+    {
+     "name": "Royal Hospital Kilmainham",
+     "wikipedia_title": "Royal Hospital Kilmainham",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1680-1684",
+     "year": 1680,
+     "evidence_date": null,
+     "claim": "Ireland's finest 17th-century building; veterans' home",
+     "source": "https://en.wikipedia.org/wiki/Royal_Hospital_Kilmainham"
+    },
+    {
+     "name": "Royal Hospital Chelsea",
+     "wikipedia_title": "Royal Hospital Chelsea",
+     "location": "Chelsea, London, England",
+     "nation": "England",
+     "claimed_date": "1682-1692",
+     "year": 1682,
+     "evidence_date": null,
+     "claim": "Wren-designed veterans' home still in use",
+     "source": "https://en.wikipedia.org/wiki/Royal_Hospital_Chelsea"
+    }
+   ]
+  },
+  {
+   "type": "Hospital",
+   "category": "Almshouse / hospital",
+   "examples": [
+    {
+     "name": "St Bartholomew's Hospital",
+     "wikipedia_title": "St Bartholomew's Hospital",
+     "location": "Smithfield, London, England",
+     "nation": "England",
+     "claimed_date": "1123",
+     "year": 1123,
+     "evidence_date": "on original site since 1123; gatehouse 1702, main square 1730s-60s (Gibbs)",
+     "claim": "oldest hospital in Britain on its original site",
+     "source": "https://en.wikipedia.org/wiki/St_Bartholomew's_Hospital"
+    },
+    {
+     "name": "Leper Chapel, Cambridge",
+     "wikipedia_title": "Leper Chapel, Cambridge",
+     "location": "Cambridge, England",
+     "nation": "England",
+     "claimed_date": "c. 1125",
+     "year": 1125,
+     "evidence_date": null,
+     "claim": "Norman chapel of a leper hospital",
+     "source": "https://en.wikipedia.org/wiki/Leper_Chapel,_Cambridge"
+    },
+    {
+     "name": "Guy's Hospital",
+     "wikipedia_title": "Guy's Hospital",
+     "location": "Southwark, London, England",
+     "nation": "England",
+     "claimed_date": "1721",
+     "year": 1721,
+     "evidence_date": "18th-century front court survives",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Guy's_Hospital"
+    },
+    {
+     "name": "Dr Steevens' Hospital",
+     "wikipedia_title": "Dr Steevens' Hospital",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1720-1733",
+     "year": 1733,
+     "evidence_date": null,
+     "claim": "one of Ireland's oldest hospital buildings",
+     "source": "https://en.wikipedia.org/wiki/Dr_Steevens'_Hospital"
+    },
+    {
+     "name": "Rotunda Hospital",
+     "wikipedia_title": "Rotunda Hospital",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1745 (building 1757)",
+     "year": 1757,
+     "evidence_date": null,
+     "claim": "oldest continuously operating maternity hospital in the world",
+     "source": "https://en.wikipedia.org/wiki/Rotunda_Hospital"
+    }
+   ]
+  },
+  {
+   "type": "Prison / gaol",
+   "category": "Prison",
+   "examples": [
+    {
+     "name": "Lancaster Castle",
+     "wikipedia_title": "Lancaster Castle",
+     "location": "Lancaster, England",
+     "nation": "England",
+     "claimed_date": "medieval; prison to 2011",
+     "year": 1150,
+     "evidence_date": null,
+     "claim": "used as a prison until 2011",
+     "source": "https://en.wikipedia.org/wiki/Lancaster_Castle"
+    },
+    {
+     "name": "Lydford Castle",
+     "wikipedia_title": "Lydford Castle",
+     "location": "Lydford, Devon, England",
+     "nation": "England",
+     "claimed_date": "1195",
+     "year": 1195,
+     "evidence_date": null,
+     "claim": "tower built as a prison for the stannary courts",
+     "source": "https://en.wikipedia.org/wiki/Lydford_Castle"
+    },
+    {
+     "name": "Kilmainham Gaol",
+     "wikipedia_title": "Kilmainham Gaol",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1796",
+     "year": 1796,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Kilmainham_Gaol"
+    },
+    {
+     "name": "Inveraray Jail",
+     "wikipedia_title": "Inveraray Jail",
+     "location": "Inveraray, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1820",
+     "year": 1820,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Inveraray_Jail"
+    },
+    {
+     "name": "Beaumaris Gaol",
+     "wikipedia_title": "Beaumaris Gaol",
+     "location": "Beaumaris, Anglesey, Wales",
+     "nation": "Wales",
+     "claimed_date": "1829",
+     "year": 1829,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Beaumaris_Gaol"
+    },
+    {
+     "name": "Crumlin Road Gaol",
+     "wikipedia_title": "HM Prison Belfast",
+     "location": "Belfast, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1845",
+     "year": 1845,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/HM_Prison_Belfast"
+    }
+   ]
+  },
+  {
+   "type": "Theatre",
+   "category": "Theatre / entertainment",
+   "examples": [
+    {
+     "name": "Smock Alley Theatre",
+     "wikipedia_title": "Smock Alley Theatre",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1662",
+     "year": 1662,
+     "evidence_date": "theatre 1662; surviving building later rebuilt as a church",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Smock_Alley_Theatre"
+    },
+    {
+     "name": "Theatre Royal, Bristol (Bristol Old Vic)",
+     "wikipedia_title": "Bristol Old Vic",
+     "location": "Bristol, England",
+     "nation": "England",
+     "claimed_date": "1766",
+     "year": 1766,
+     "evidence_date": null,
+     "claim": "oldest continuously working theatre in the English-speaking world",
+     "source": "https://en.wikipedia.org/wiki/Bristol_Old_Vic"
+    },
+    {
+     "name": "Theatre Royal, Margate",
+     "wikipedia_title": null,
+     "location": "Margate, England",
+     "nation": "England",
+     "claimed_date": "1787",
+     "year": 1787,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://www.thanet.gov.uk/theatre-royal/"
+    },
+    {
+     "name": "Georgian Theatre Royal",
+     "wikipedia_title": "Georgian Theatre Royal",
+     "location": "Richmond, North Yorkshire, England",
+     "nation": "England",
+     "claimed_date": "1788",
+     "year": 1788,
+     "evidence_date": null,
+     "claim": "most complete Georgian playhouse in Britain",
+     "source": "https://en.wikipedia.org/wiki/Georgian_Theatre_Royal"
+    },
+    {
+     "name": "Theatre Royal, Drury Lane",
+     "wikipedia_title": "Theatre Royal, Drury Lane",
+     "location": "Covent Garden, London, England",
+     "nation": "England",
+     "claimed_date": "1663 (site)",
+     "year": 1812,
+     "evidence_date": "present (fourth) building 1812",
+     "claim": "claims oldest theatre site in continuous use",
+     "source": "https://en.wikipedia.org/wiki/Theatre_Royal,_Drury_Lane"
+    },
+    {
+     "name": "Theatre Royal, Glasgow",
+     "wikipedia_title": "Theatre Royal, Glasgow",
+     "location": "Glasgow, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1867",
+     "year": 1867,
+     "evidence_date": null,
+     "claim": "Scotland's oldest working theatre",
+     "source": "https://en.wikipedia.org/wiki/Theatre_Royal,_Glasgow"
+    },
+    {
+     "name": "Gaiety Theatre, Douglas",
+     "wikipedia_title": "Gaiety Theatre, Isle of Man",
+     "location": "Douglas, Isle of Man",
+     "nation": "Isle of Man",
+     "claimed_date": "1900",
+     "year": 1900,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Gaiety_Theatre,_Isle_of_Man"
+    }
+   ]
+  },
+  {
+   "type": "Cinema",
+   "category": "Theatre / entertainment",
+   "examples": [
+    {
+     "name": "Regent Street Cinema",
+     "wikipedia_title": "Regent Street Cinema",
+     "location": "London, England",
+     "nation": "England",
+     "claimed_date": "1896 (first shows); 1848 hall",
+     "year": 1896,
+     "evidence_date": null,
+     "claim": "birthplace of British cinema; first UK showing of Lumière films",
+     "source": "https://en.wikipedia.org/wiki/Regent_Street_Cinema"
+    },
+    {
+     "name": "Electric Cinema, Birmingham",
+     "wikipedia_title": "The Electric, Birmingham",
+     "location": "Birmingham, England",
+     "nation": "England",
+     "claimed_date": "1909",
+     "year": 1909,
+     "evidence_date": null,
+     "claim": "oldest working cinema in the UK",
+     "source": "https://en.wikipedia.org/wiki/The_Electric,_Birmingham"
+    },
+    {
+     "name": "Duke of York's Picture House",
+     "wikipedia_title": "Duke of York's Picture House, Brighton",
+     "location": "Brighton, England",
+     "nation": "England",
+     "claimed_date": "1910",
+     "year": 1910,
+     "evidence_date": null,
+     "claim": "claims oldest continuously operating purpose-built cinema",
+     "source": "https://en.wikipedia.org/wiki/Duke_of_York's_Picture_House,_Brighton"
+    },
+    {
+     "name": "Electric Cinema, Notting Hill",
+     "wikipedia_title": "Electric Cinema, Notting Hill",
+     "location": "London, England",
+     "nation": "England",
+     "claimed_date": "1910",
+     "year": 1910,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Electric_Cinema,_Notting_Hill"
+    },
+    {
+     "name": "Hippodrome, Bo'ness",
+     "wikipedia_title": "Hippodrome Cinema, Bo'ness",
+     "location": "Bo'ness, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1912",
+     "year": 1912,
+     "evidence_date": null,
+     "claim": "Scotland's oldest purpose-built cinema",
+     "source": "https://en.wikipedia.org/wiki/Hippodrome_Cinema,_Bo'ness"
+    }
+   ]
+  },
+  {
+   "type": "Concert hall",
+   "category": "Theatre / entertainment",
+   "examples": [
+    {
+     "name": "Holywell Music Room",
+     "wikipedia_title": "Holywell Music Room",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1748",
+     "year": 1748,
+     "evidence_date": null,
+     "claim": "oldest purpose-built music room in Europe",
+     "source": "https://en.wikipedia.org/wiki/Holywell_Music_Room"
+    },
+    {
+     "name": "St Cecilia's Hall",
+     "wikipedia_title": "St Cecilia's Hall",
+     "location": "Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1763",
+     "year": 1763,
+     "evidence_date": null,
+     "claim": "Scotland's oldest purpose-built concert hall",
+     "source": "https://en.wikipedia.org/wiki/St_Cecilia's_Hall"
+    },
+    {
+     "name": "Ulster Hall",
+     "wikipedia_title": "Ulster Hall",
+     "location": "Belfast, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1862",
+     "year": 1862,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Ulster_Hall"
+    },
+    {
+     "name": "Royal Albert Hall",
+     "wikipedia_title": "Royal Albert Hall",
+     "location": "London, England",
+     "nation": "England",
+     "claimed_date": "1871",
+     "year": 1871,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Royal_Albert_Hall"
+    }
+   ]
+  },
+  {
+   "type": "Museum building",
+   "category": "Museum",
+   "examples": [
+    {
+     "name": "Old Ashmolean (History of Science Museum)",
+     "wikipedia_title": "History of Science Museum, Oxford",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1683",
+     "year": 1683,
+     "evidence_date": null,
+     "claim": "world's oldest surviving purpose-built museum building",
+     "source": "https://en.wikipedia.org/wiki/History_of_Science_Museum,_Oxford"
+    },
+    {
+     "name": "Hunterian Museum (Glasgow)",
+     "wikipedia_title": "Hunterian Museum and Art Gallery",
+     "location": "Glasgow, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1807",
+     "year": 1807,
+     "evidence_date": "present building 1870s",
+     "claim": "Scotland's oldest public museum",
+     "source": "https://en.wikipedia.org/wiki/Hunterian_Museum_and_Art_Gallery"
+    },
+    {
+     "name": "British Museum",
+     "wikipedia_title": "British Museum",
+     "location": "London, England",
+     "nation": "England",
+     "claimed_date": "1753 (founded)",
+     "year": 1823,
+     "evidence_date": "present building 1823-52",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/British_Museum"
+    },
+    {
+     "name": "Fitzwilliam Museum",
+     "wikipedia_title": "Fitzwilliam Museum",
+     "location": "Cambridge, England",
+     "nation": "England",
+     "claimed_date": "1848",
+     "year": 1848,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Fitzwilliam_Museum"
+    }
+   ]
+  },
+  {
+   "type": "Bank",
+   "category": "Bank / office",
+   "examples": [
+    {
+     "name": "Bank of Ireland, College Green",
+     "wikipedia_title": "Parliament House, Dublin",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1729",
+     "year": 1729,
+     "evidence_date": "built as Irish Parliament House; bank since 1803",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Parliament_House,_Dublin"
+    },
+    {
+     "name": "Bank of England",
+     "wikipedia_title": "Bank of England",
+     "location": "Threadneedle Street, London, England",
+     "nation": "England",
+     "claimed_date": "1694",
+     "year": 1734,
+     "evidence_date": "on site since 1734; rebuilt 1920s-30s within Soane's curtain wall",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Bank_of_England"
+    },
+    {
+     "name": "Dundas House",
+     "wikipedia_title": "Dundas House",
+     "location": "St Andrew Square, Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1774",
+     "year": 1774,
+     "evidence_date": "Royal Bank of Scotland since 1825",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Dundas_House"
+    },
+    {
+     "name": "Bank of Scotland Head Office, The Mound",
+     "wikipedia_title": "The Mound",
+     "location": "Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1806",
+     "year": 1806,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/The_Mound"
+    },
+    {
+     "name": "C. Hoare & Co",
+     "wikipedia_title": "C. Hoare & Co",
+     "location": "Fleet Street, London, England",
+     "nation": "England",
+     "claimed_date": "1672",
+     "year": 1829,
+     "evidence_date": "bank 1672; 37 Fleet Street building 1829",
+     "claim": "oldest privately owned bank in the UK",
+     "source": "https://en.wikipedia.org/wiki/C._Hoare_&_Co"
+    }
+   ]
+  },
+  {
+   "type": "Post office",
+   "category": "Post office",
+   "examples": [
+    {
+     "name": "Sanquhar Post Office",
+     "wikipedia_title": "Sanquhar",
+     "location": "Sanquhar, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1712",
+     "year": 1712,
+     "evidence_date": null,
+     "claim": "oldest working post office in the world (Guinness)",
+     "source": "https://en.wikipedia.org/wiki/Sanquhar"
+    },
+    {
+     "name": "General Post Office, Dublin",
+     "wikipedia_title": "General Post Office, Dublin",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1818",
+     "year": 1818,
+     "evidence_date": null,
+     "claim": "HQ of the 1916 Rising",
+     "source": "https://en.wikipedia.org/wiki/General_Post_Office,_Dublin"
+    }
+   ]
+  },
+  {
+   "type": "Railway station",
+   "category": "Railway",
+   "examples": [
+    {
+     "name": "Heighington railway station",
+     "wikipedia_title": "Heighington railway station",
+     "location": "Heighington, County Durham, England",
+     "nation": "England",
+     "claimed_date": "1825-27",
+     "year": 1827,
+     "evidence_date": "Stockton & Darlington; former station building (Locomotion pub)",
+     "claim": "claimed one of the world's first station buildings",
+     "source": "https://en.wikipedia.org/wiki/Heighington_railway_station"
+    },
+    {
+     "name": "Liverpool Road railway station",
+     "wikipedia_title": "Liverpool Road railway station",
+     "location": "Manchester, England",
+     "nation": "England",
+     "claimed_date": "1830",
+     "year": 1830,
+     "evidence_date": null,
+     "claim": "world's oldest surviving terminal railway station",
+     "source": "https://en.wikipedia.org/wiki/Liverpool_Road_railway_station"
+    },
+    {
+     "name": "Dublin Pearse railway station",
+     "wikipedia_title": "Dublin Pearse railway station",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1834",
+     "year": 1834,
+     "evidence_date": "terminus of Dublin & Kingstown Railway; rebuilt 1880s",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Dublin_Pearse_railway_station"
+    },
+    {
+     "name": "Edge Hill railway station",
+     "wikipedia_title": "Edge Hill railway station",
+     "location": "Liverpool, England",
+     "nation": "England",
+     "claimed_date": "1836",
+     "year": 1836,
+     "evidence_date": null,
+     "claim": "oldest passenger station still in use",
+     "source": "https://en.wikipedia.org/wiki/Edge_Hill_railway_station"
+    }
+   ]
+  },
+  {
+   "type": "Railway viaduct / bridge",
+   "category": "Railway",
+   "examples": [
+    {
+     "name": "Causey Arch",
+     "wikipedia_title": "Causey Arch",
+     "location": "Stanley, County Durham, England",
+     "nation": "England",
+     "claimed_date": "1725-26",
+     "year": 1725,
+     "evidence_date": null,
+     "claim": "oldest surviving single-arch railway bridge in the world",
+     "source": "https://en.wikipedia.org/wiki/Causey_Arch"
+    },
+    {
+     "name": "Pont-y-Cafnau",
+     "wikipedia_title": "Pont-y-Cafnau",
+     "location": "Merthyr Tydfil, Wales",
+     "nation": "Wales",
+     "claimed_date": "1793",
+     "year": 1793,
+     "evidence_date": null,
+     "claim": "earliest surviving iron railway bridge (tramroad + aqueduct)",
+     "source": "https://en.wikipedia.org/wiki/Pont-y-Cafnau"
+    },
+    {
+     "name": "Laigh Milton Viaduct",
+     "wikipedia_title": "Laigh Milton Viaduct",
+     "location": "Ayrshire, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1812",
+     "year": 1812,
+     "evidence_date": null,
+     "claim": "claimed oldest surviving railway viaduct",
+     "source": "https://en.wikipedia.org/wiki/Laigh_Milton_Viaduct"
+    },
+    {
+     "name": "Skerne Bridge",
+     "wikipedia_title": "Skerne Bridge",
+     "location": "Darlington, England",
+     "nation": "England",
+     "claimed_date": "1825",
+     "year": 1825,
+     "evidence_date": null,
+     "claim": "oldest railway bridge in continuous use",
+     "source": "https://en.wikipedia.org/wiki/Skerne_Bridge"
+    },
+    {
+     "name": "Sankey Viaduct",
+     "wikipedia_title": "Sankey Viaduct",
+     "location": "Earlestown, Merseyside, England",
+     "nation": "England",
+     "claimed_date": "1830",
+     "year": 1830,
+     "evidence_date": null,
+     "claim": "oldest major railway viaduct",
+     "source": "https://en.wikipedia.org/wiki/Sankey_Viaduct"
+    }
+   ]
+  },
+  {
+   "type": "Road bridge",
+   "category": "Bridge / infrastructure",
+   "examples": [
+    {
+     "name": "High Bridge, Lincoln",
+     "wikipedia_title": "High Bridge, Lincoln",
+     "location": "Lincoln, England",
+     "nation": "England",
+     "claimed_date": "c. 1160",
+     "year": 1160,
+     "evidence_date": null,
+     "claim": "oldest bridge in the UK still carrying buildings",
+     "source": "https://en.wikipedia.org/wiki/High_Bridge,_Lincoln"
+    },
+    {
+     "name": "Monnow Bridge",
+     "wikipedia_title": "Monnow Bridge",
+     "location": "Monmouth, Wales",
+     "nation": "Wales",
+     "claimed_date": "1272",
+     "year": 1272,
+     "evidence_date": null,
+     "claim": "only fortified river bridge in Britain with gate tower on the bridge",
+     "source": "https://en.wikipedia.org/wiki/Monnow_Bridge"
+    },
+    {
+     "name": "Brig o' Balgownie",
+     "wikipedia_title": "Brig o' Balgownie",
+     "location": "Aberdeen, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 1320",
+     "year": 1320,
+     "evidence_date": null,
+     "claim": "among Scotland's oldest bridges",
+     "source": "https://en.wikipedia.org/wiki/Brig_o'_Balgownie"
+    },
+    {
+     "name": "Devil's Bridge, Kirkby Lonsdale",
+     "wikipedia_title": "Kirkby Lonsdale",
+     "location": "Kirkby Lonsdale, Cumbria, England",
+     "nation": "England",
+     "claimed_date": "c. 1370",
+     "year": 1370,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Kirkby_Lonsdale"
+    },
+    {
+     "name": "Tarr Steps",
+     "wikipedia_title": "Tarr Steps",
+     "location": "Exmoor, Somerset, England",
+     "nation": "England",
+     "claimed_date": "prehistoric (claimed)",
+     "year": 1400,
+     "evidence_date": "probably medieval; repeatedly rebuilt after floods",
+     "claim": "clapper bridge popularly called prehistoric",
+     "source": "https://en.wikipedia.org/wiki/Tarr_Steps"
+    },
+    {
+     "name": "The Iron Bridge",
+     "wikipedia_title": "The Iron Bridge",
+     "location": "Ironbridge, Shropshire, England",
+     "nation": "England",
+     "claimed_date": "1779",
+     "year": 1779,
+     "evidence_date": null,
+     "claim": "world's first major cast-iron bridge",
+     "source": "https://en.wikipedia.org/wiki/The_Iron_Bridge"
+    }
+   ]
+  },
+  {
+   "type": "Canal / aqueduct",
+   "category": "Bridge / infrastructure",
+   "examples": [
+    {
+     "name": "Fossdyke",
+     "wikipedia_title": "Foss Dyke",
+     "location": "Lincolnshire, England",
+     "nation": "England",
+     "claimed_date": "c. AD 120",
+     "year": 120,
+     "evidence_date": "Roman, re-dug 1121",
+     "claim": "oldest canal in England still in use",
+     "source": "https://en.wikipedia.org/wiki/Foss_Dyke"
+    },
+    {
+     "name": "Exeter Ship Canal",
+     "wikipedia_title": "Exeter Ship Canal",
+     "location": "Exeter, England",
+     "nation": "England",
+     "claimed_date": "1566",
+     "year": 1566,
+     "evidence_date": null,
+     "claim": "among the oldest artificial waterways in England with pound locks",
+     "source": "https://en.wikipedia.org/wiki/Exeter_Ship_Canal"
+    },
+    {
+     "name": "Newry Canal",
+     "wikipedia_title": "Newry Canal",
+     "location": "Newry, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1742",
+     "year": 1742,
+     "evidence_date": null,
+     "claim": "first summit-level canal in the British Isles",
+     "source": "https://en.wikipedia.org/wiki/Newry_Canal"
+    },
+    {
+     "name": "Bridgewater Canal",
+     "wikipedia_title": "Bridgewater Canal",
+     "location": "Greater Manchester, England",
+     "nation": "England",
+     "claimed_date": "1761",
+     "year": 1761,
+     "evidence_date": null,
+     "claim": "often called the first major canal of the Industrial Revolution",
+     "source": "https://en.wikipedia.org/wiki/Bridgewater_Canal"
+    },
+    {
+     "name": "Forth and Clyde Canal",
+     "wikipedia_title": "Forth and Clyde Canal",
+     "location": "Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1768-1790",
+     "year": 1768,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Forth_and_Clyde_Canal"
+    },
+    {
+     "name": "Pontcysyllte Aqueduct",
+     "wikipedia_title": "Pontcysyllte Aqueduct",
+     "location": "Wrexham, Wales",
+     "nation": "Wales",
+     "claimed_date": "1795-1805",
+     "year": 1805,
+     "evidence_date": null,
+     "claim": "longest and highest aqueduct in Britain; UNESCO WHS",
+     "source": "https://en.wikipedia.org/wiki/Pontcysyllte_Aqueduct"
+    }
+   ]
+  },
+  {
+   "type": "Lighthouse",
+   "category": "Lighthouse",
+   "examples": [
+    {
+     "name": "Dover Roman lighthouse (Pharos)",
+     "wikipedia_title": "Dover Castle",
+     "location": "Dover Castle, Kent, England",
+     "nation": "England",
+     "claimed_date": "c. AD 50",
+     "year": 50,
+     "evidence_date": null,
+     "claim": "Britain's oldest standing building (Roman pharos)",
+     "source": "https://en.wikipedia.org/wiki/Dover_Castle"
+    },
+    {
+     "name": "Hook Lighthouse",
+     "wikipedia_title": "Hook Lighthouse",
+     "location": "Hook Head, County Wexford, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "12th-13th century",
+     "year": 1210,
+     "evidence_date": null,
+     "claim": "among the oldest operational lighthouses in the world",
+     "source": "https://en.wikipedia.org/wiki/Hook_Lighthouse"
+    },
+    {
+     "name": "St Catherine's Oratory",
+     "wikipedia_title": "St Catherine's Oratory",
+     "location": "Isle of Wight, England",
+     "nation": "England",
+     "claimed_date": "1328",
+     "year": 1328,
+     "evidence_date": null,
+     "claim": "medieval lighthouse tower",
+     "source": "https://en.wikipedia.org/wiki/St_Catherine's_Oratory"
+    },
+    {
+     "name": "Isle of May beacon",
+     "wikipedia_title": "Isle of May",
+     "location": "Firth of Forth, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1636",
+     "year": 1636,
+     "evidence_date": null,
+     "claim": "Scotland's first permanently manned lighthouse",
+     "source": "https://en.wikipedia.org/wiki/Isle_of_May"
+    },
+    {
+     "name": "North Foreland Lighthouse",
+     "wikipedia_title": "North Foreland",
+     "location": "Broadstairs, Kent, England",
+     "nation": "England",
+     "claimed_date": "1691",
+     "year": 1691,
+     "evidence_date": null,
+     "claim": "last manned lighthouse in Britain (automated 1998)",
+     "source": "https://en.wikipedia.org/wiki/North_Foreland"
+    },
+    {
+     "name": "Smeaton's Tower",
+     "wikipedia_title": "Smeaton's Tower",
+     "location": "Plymouth, England",
+     "nation": "England",
+     "claimed_date": "1759",
+     "year": 1759,
+     "evidence_date": null,
+     "claim": "re-erected on Plymouth Hoe 1882",
+     "source": "https://en.wikipedia.org/wiki/Smeaton's_Tower"
+    },
+    {
+     "name": "Kinnaird Head",
+     "wikipedia_title": "Kinnaird Head",
+     "location": "Fraserburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1787",
+     "year": 1787,
+     "evidence_date": null,
+     "claim": "first Northern Lighthouse Board light, built into a castle",
+     "source": "https://en.wikipedia.org/wiki/Kinnaird_Head"
+    }
+   ]
+  },
+  {
+   "type": "Windmill",
+   "category": "Mill",
+   "examples": [
+    {
+     "name": "Pitstone Windmill",
+     "wikipedia_title": "Pitstone Windmill",
+     "location": "Pitstone, Buckinghamshire, England",
+     "nation": "England",
+     "claimed_date": "1627 (carved date)",
+     "year": 1627,
+     "evidence_date": null,
+     "claim": "rival claim to oldest windmill in Britain",
+     "source": "https://en.wikipedia.org/wiki/Pitstone_Windmill"
+    },
+    {
+     "name": "Chesterton Windmill",
+     "wikipedia_title": "Chesterton Windmill",
+     "location": "Chesterton, Warwickshire, England",
+     "nation": "England",
+     "claimed_date": "1632",
+     "year": 1632,
+     "evidence_date": null,
+     "claim": "unusual arched tower mill",
+     "source": "https://en.wikipedia.org/wiki/Chesterton_Windmill"
+    },
+    {
+     "name": "Bourn Windmill",
+     "wikipedia_title": "Bourn Windmill",
+     "location": "Bourn, Cambridgeshire, England",
+     "nation": "England",
+     "claimed_date": "pre-1636",
+     "year": 1636,
+     "evidence_date": null,
+     "claim": "claimed oldest surviving windmill in the UK",
+     "source": "https://en.wikipedia.org/wiki/Bourn_Windmill"
+    },
+    {
+     "name": "Outwood Windmill",
+     "wikipedia_title": "Outwood Windmill",
+     "location": "Outwood, Surrey, England",
+     "nation": "England",
+     "claimed_date": "1665",
+     "year": 1665,
+     "evidence_date": null,
+     "claim": "claimed oldest working windmill in England",
+     "source": "https://en.wikipedia.org/wiki/Outwood_Windmill"
+    },
+    {
+     "name": "Llynnon Mill",
+     "wikipedia_title": "Melin Llynon, Llanddeusant",
+     "location": "Llanddeusant, Anglesey, Wales",
+     "nation": "Wales",
+     "claimed_date": "1775-76",
+     "year": 1775,
+     "evidence_date": null,
+     "claim": "only working windmill in Wales",
+     "source": "https://en.wikipedia.org/wiki/Melin_Llynon,_Llanddeusant"
+    },
+    {
+     "name": "Ballycopeland Windmill",
+     "wikipedia_title": "Ballycopeland Windmill",
+     "location": "Millisle, County Down, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "late 18th century",
+     "year": 1790,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Ballycopeland_Windmill"
+    },
+    {
+     "name": "Tacumshane Windmill",
+     "wikipedia_title": "Tacumshane",
+     "location": "County Wexford, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1846",
+     "year": 1846,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Tacumshane"
+    }
+   ]
+  },
+  {
+   "type": "Watermill",
+   "category": "Mill",
+   "examples": [
+    {
+     "name": "Mapledurham Watermill",
+     "wikipedia_title": "Mapledurham Watermill",
+     "location": "Mapledurham, Oxfordshire, England",
+     "nation": "England",
+     "claimed_date": "15th century",
+     "year": 1450,
+     "evidence_date": null,
+     "claim": "oldest working watermill on the Thames",
+     "source": "https://en.wikipedia.org/wiki/Mapledurham_Watermill"
+    },
+    {
+     "name": "Winchester City Mill",
+     "wikipedia_title": "Winchester City Mill",
+     "location": "Winchester, England",
+     "nation": "England",
+     "claimed_date": "Saxon site; rebuilt 1743",
+     "year": 1743,
+     "evidence_date": null,
+     "claim": "probably the oldest working watermill in the UK (claim)",
+     "source": "https://en.wikipedia.org/wiki/Winchester_City_Mill"
+    },
+    {
+     "name": "Preston Mill",
+     "wikipedia_title": "Preston Mill",
+     "location": "East Linton, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "18th century",
+     "year": 1760,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Preston_Mill"
+    }
+   ]
+  },
+  {
+   "type": "Tide mill",
+   "category": "Mill",
+   "examples": [
+    {
+     "name": "Nendrum tide mill",
+     "wikipedia_title": "Nendrum Monastery",
+     "location": "Strangford Lough, County Down, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "c. 619-621",
+     "year": 619,
+     "evidence_date": "dendro-dated remains (excavated, not standing)",
+     "claim": "earliest known tide mill site in the world",
+     "source": "https://en.wikipedia.org/wiki/Nendrum_Monastery"
+    },
+    {
+     "name": "House Mill, Three Mills",
+     "wikipedia_title": "House Mill",
+     "location": "Bromley-by-Bow, London, England",
+     "nation": "England",
+     "claimed_date": "1776",
+     "year": 1776,
+     "evidence_date": null,
+     "claim": "largest surviving tide mill in Britain",
+     "source": "https://en.wikipedia.org/wiki/House_Mill"
+    },
+    {
+     "name": "Eling Tide Mill",
+     "wikipedia_title": "Eling Tide Mill",
+     "location": "Eling, Hampshire, England",
+     "nation": "England",
+     "claimed_date": "site recorded 1086; building 1785",
+     "year": 1785,
+     "evidence_date": null,
+     "claim": "one of very few working tide mills",
+     "source": "https://en.wikipedia.org/wiki/Eling_Tide_Mill"
+    },
+    {
+     "name": "Woodbridge Tide Mill",
+     "wikipedia_title": "Woodbridge Tide Mill",
+     "location": "Woodbridge, Suffolk, England",
+     "nation": "England",
+     "claimed_date": "site 1170; building 1793",
+     "year": 1793,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Woodbridge_Tide_Mill"
+    },
+    {
+     "name": "Carew Tidal Mill",
+     "wikipedia_title": "Carew Tidal Mill",
+     "location": "Carew, Pembrokeshire, Wales",
+     "nation": "Wales",
+     "claimed_date": "19th century (earlier mill on site)",
+     "year": 1801,
+     "evidence_date": null,
+     "claim": "only restored tidal mill in Wales",
+     "source": "https://en.wikipedia.org/wiki/Carew_Tidal_Mill"
+    }
+   ]
+  },
+  {
+   "type": "Barn / tithe barn",
+   "category": "Agricultural / industrial",
+   "examples": [
+    {
+     "name": "Cressing Temple Barley Barn",
+     "wikipedia_title": "Cressing Temple",
+     "location": "Cressing, Essex, England",
+     "nation": "England",
+     "claimed_date": "c. 1205-1230",
+     "year": 1205,
+     "evidence_date": "dendro: Barley Barn c.1205-30, Wheat Barn c.1257-80",
+     "claim": "oldest timber-framed barns in the world (claim)",
+     "source": "https://en.wikipedia.org/wiki/Cressing_Temple"
+    },
+    {
+     "name": "Great Coxwell Barn",
+     "wikipedia_title": "Great Coxwell Barn",
+     "location": "Great Coxwell, Oxfordshire, England",
+     "nation": "England",
+     "claimed_date": "c. 1292",
+     "year": 1292,
+     "evidence_date": null,
+     "claim": "William Morris called it 'as beautiful as a cathedral'",
+     "source": "https://en.wikipedia.org/wiki/Great_Coxwell_Barn"
+    },
+    {
+     "name": "Bradford-on-Avon Tithe Barn",
+     "wikipedia_title": "Bradford-on-Avon Tithe Barn",
+     "location": "Bradford-on-Avon, Wiltshire, England",
+     "nation": "England",
+     "claimed_date": "14th century",
+     "year": 1340,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Bradford-on-Avon_Tithe_Barn"
+    },
+    {
+     "name": "Harmondsworth Great Barn",
+     "wikipedia_title": "Harmondsworth Great Barn",
+     "location": "Harmondsworth, London, England",
+     "nation": "England",
+     "claimed_date": "1426",
+     "year": 1426,
+     "evidence_date": "dendro-dated 1426-27",
+     "claim": "'Cathedral of Middlesex'; largest intact medieval timber barn",
+     "source": "https://en.wikipedia.org/wiki/Harmondsworth_Great_Barn"
+    }
+   ]
+  },
+  {
+   "type": "Dovecote",
+   "category": "Agricultural / industrial",
+   "examples": [
+    {
+     "name": "Garway Dovecote",
+     "wikipedia_title": "Garway Dovecote",
+     "location": "Garway, Herefordshire, England",
+     "nation": "England",
+     "claimed_date": "1326 (inscription)",
+     "year": 1326,
+     "evidence_date": "Historic England: early 14th century",
+     "claim": "earliest dated free-standing dovecote in England (claim)",
+     "source": "https://en.wikipedia.org/wiki/Garway_Dovecote"
+    },
+    {
+     "name": "Kinwarton Dovecote",
+     "wikipedia_title": "Kinwarton Dovecote",
+     "location": "Kinwarton, Warwickshire, England",
+     "nation": "England",
+     "claimed_date": "14th century",
+     "year": 1350,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Kinwarton_Dovecote"
+    },
+    {
+     "name": "Phantassie Doocot",
+     "wikipedia_title": "Phantassie",
+     "location": "East Linton, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "16th century",
+     "year": 1550,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Phantassie"
+    }
+   ]
+  },
+  {
+   "type": "Brewery / distillery",
+   "category": "Agricultural / industrial",
+   "examples": [
+    {
+     "name": "Old Bushmills Distillery",
+     "wikipedia_title": "Old Bushmills Distillery",
+     "location": "Bushmills, County Antrim, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1608 (licence)",
+     "year": 1608,
+     "evidence_date": "1608 licence was a regional grant; company founded 1784; buildings largely 19th century",
+     "claim": "claims oldest licensed distillery in the world",
+     "source": "https://en.wikipedia.org/wiki/Old_Bushmills_Distillery"
+    },
+    {
+     "name": "Shepherd Neame Brewery",
+     "wikipedia_title": "Shepherd Neame Brewery",
+     "location": "Faversham, Kent, England",
+     "nation": "England",
+     "claimed_date": "1698",
+     "year": 1698,
+     "evidence_date": "brewing on site documented from 1573 claimed; 1698 founding",
+     "claim": "claims Britain's oldest brewer",
+     "source": "https://en.wikipedia.org/wiki/Shepherd_Neame_Brewery"
+    },
+    {
+     "name": "Kilbeggan Distillery",
+     "wikipedia_title": "Kilbeggan Distillery",
+     "location": "Kilbeggan, County Westmeath, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1757",
+     "year": 1757,
+     "evidence_date": null,
+     "claim": "claims oldest licensed distillery in the world",
+     "source": "https://en.wikipedia.org/wiki/Kilbeggan_Distillery"
+    },
+    {
+     "name": "St James's Gate Brewery",
+     "wikipedia_title": "Guinness Brewery",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1759",
+     "year": 1759,
+     "evidence_date": null,
+     "claim": "Guinness lease 1759",
+     "source": "https://en.wikipedia.org/wiki/Guinness_Brewery"
+    },
+    {
+     "name": "Glenturret distillery",
+     "wikipedia_title": "Glenturret distillery",
+     "location": "Crieff, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1763 (claim); 1775",
+     "year": 1775,
+     "evidence_date": null,
+     "claim": "claims Scotland's oldest working distillery",
+     "source": "https://en.wikipedia.org/wiki/Glenturret_distillery"
+    },
+    {
+     "name": "Bowmore distillery",
+     "wikipedia_title": "Bowmore distillery",
+     "location": "Islay, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1779",
+     "year": 1779,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Bowmore_distillery"
+    }
+   ]
+  },
+  {
+   "type": "Factory / mill (industrial)",
+   "category": "Agricultural / industrial",
+   "examples": [
+    {
+     "name": "Lombe's Mill (Derby Silk Mill)",
+     "wikipedia_title": "Lombe's Mill",
+     "location": "Derby, England",
+     "nation": "England",
+     "claimed_date": "1721",
+     "year": 1721,
+     "evidence_date": "rebuilt after 1910 fire on original foundations",
+     "claim": "often called the world's first factory",
+     "source": "https://en.wikipedia.org/wiki/Lombe's_Mill"
+    },
+    {
+     "name": "Cromford Mill",
+     "wikipedia_title": "Cromford Mill",
+     "location": "Cromford, Derbyshire, England",
+     "nation": "England",
+     "claimed_date": "1771",
+     "year": 1771,
+     "evidence_date": null,
+     "claim": "world's first water-powered cotton spinning mill",
+     "source": "https://en.wikipedia.org/wiki/Cromford_Mill"
+    },
+    {
+     "name": "Stanley Mills",
+     "wikipedia_title": "Stanley Mills",
+     "location": "Stanley, Perthshire, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1786",
+     "year": 1786,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Stanley_Mills"
+    },
+    {
+     "name": "New Lanark",
+     "wikipedia_title": "New Lanark",
+     "location": "Lanarkshire, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1786",
+     "year": 1786,
+     "evidence_date": null,
+     "claim": "UNESCO WHS",
+     "source": "https://en.wikipedia.org/wiki/New_Lanark"
+    },
+    {
+     "name": "Ditherington Flax Mill",
+     "wikipedia_title": "Shrewsbury Flaxmill Maltings",
+     "location": "Shrewsbury, England",
+     "nation": "England",
+     "claimed_date": "1797",
+     "year": 1797,
+     "evidence_date": null,
+     "claim": "world's first iron-framed building",
+     "source": "https://en.wikipedia.org/wiki/Shrewsbury_Flaxmill_Maltings"
+    }
+   ]
+  },
+  {
+   "type": "Warehouse",
+   "category": "Agricultural / industrial",
+   "examples": [
+    {
+     "name": "Wool House, Southampton",
+     "wikipedia_title": "Wool House",
+     "location": "Southampton, England",
+     "nation": "England",
+     "claimed_date": "14th century",
+     "year": 1400,
+     "evidence_date": null,
+     "claim": "medieval wool warehouse",
+     "source": "https://en.wikipedia.org/wiki/Wool_House"
+    },
+    {
+     "name": "Hanse House",
+     "wikipedia_title": null,
+     "location": "King's Lynn, England",
+     "nation": "England",
+     "claimed_date": "c. 1475",
+     "year": 1475,
+     "evidence_date": null,
+     "claim": "only surviving Hanseatic warehouse in England (with Marriott's Warehouse)",
+     "source": "https://www.historicengland.org.uk/listing/the-list/list-entry/1195393"
+    },
+    {
+     "name": "Merchants' Warehouse",
+     "wikipedia_title": "Castlefield",
+     "location": "Castlefield, Manchester, England",
+     "nation": "England",
+     "claimed_date": "1825",
+     "year": 1825,
+     "evidence_date": null,
+     "claim": "oldest surviving warehouse in Castlefield",
+     "source": "https://en.wikipedia.org/wiki/Castlefield"
+    },
+    {
+     "name": "Albert Dock",
+     "wikipedia_title": "Royal Albert Dock, Liverpool",
+     "location": "Liverpool, England",
+     "nation": "England",
+     "claimed_date": "1846",
+     "year": 1846,
+     "evidence_date": null,
+     "claim": "first non-combustible dock warehouses",
+     "source": "https://en.wikipedia.org/wiki/Royal_Albert_Dock,_Liverpool"
+    }
+   ]
+  },
+  {
+   "type": "Church still in use",
+   "category": "Church / chapel",
+   "examples": [
+    {
+     "name": "St Martin's Church, Canterbury",
+     "wikipedia_title": "St Martin's Church, Canterbury",
+     "location": "Canterbury, England",
+     "nation": "England",
+     "claimed_date": "6th century (pre-597)",
+     "year": 580,
+     "evidence_date": null,
+     "claim": "oldest church in the English-speaking world still in use",
+     "source": "https://en.wikipedia.org/wiki/St_Martin's_Church,_Canterbury"
+    },
+    {
+     "name": "St Peter-on-the-Wall",
+     "wikipedia_title": "Chapel of St Peter-on-the-Wall",
+     "location": "Bradwell-on-Sea, Essex, England",
+     "nation": "England",
+     "claimed_date": "c. 654",
+     "year": 654,
+     "evidence_date": null,
+     "claim": "among the oldest largely intact churches in England",
+     "source": "https://en.wikipedia.org/wiki/Chapel_of_St_Peter-on-the-Wall"
+    },
+    {
+     "name": "Escomb Church",
+     "wikipedia_title": "Escomb Church",
+     "location": "Escomb, County Durham, England",
+     "nation": "England",
+     "claimed_date": "c. 670-675",
+     "year": 670,
+     "evidence_date": null,
+     "claim": "one of the oldest Anglo-Saxon churches in England",
+     "source": "https://en.wikipedia.org/wiki/Escomb_Church"
+    },
+    {
+     "name": "All Saints' Church, Brixworth",
+     "wikipedia_title": "All Saints' Church, Brixworth",
+     "location": "Brixworth, Northamptonshire, England",
+     "nation": "England",
+     "claimed_date": "c. 7th-8th century",
+     "year": 700,
+     "evidence_date": null,
+     "claim": "largest surviving Anglo-Saxon church",
+     "source": "https://en.wikipedia.org/wiki/All_Saints'_Church,_Brixworth"
+    },
+    {
+     "name": "Greensted Church",
+     "wikipedia_title": "Greensted Church",
+     "location": "Greensted, Essex, England",
+     "nation": "England",
+     "claimed_date": "claimed 9th century",
+     "year": 1060,
+     "evidence_date": "dendrochronology c.1060",
+     "claim": "oldest wooden church in the world (claim)",
+     "source": "https://en.wikipedia.org/wiki/Greensted_Church"
+    },
+    {
+     "name": "St Margaret's Chapel, Edinburgh",
+     "wikipedia_title": "St Margaret's Chapel, Edinburgh",
+     "location": "Edinburgh Castle, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 1130",
+     "year": 1130,
+     "evidence_date": null,
+     "claim": "oldest building in Edinburgh",
+     "source": "https://en.wikipedia.org/wiki/St_Margaret's_Chapel,_Edinburgh"
+    },
+    {
+     "name": "St Doulagh's Church",
+     "wikipedia_title": "St Doulagh's Church",
+     "location": "Balgriffin, County Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "12th century (east end)",
+     "year": 1150,
+     "evidence_date": "main church rebuilt 1864 with medieval parts",
+     "claim": "oldest stone-roofed church still in use in Ireland",
+     "source": "https://en.wikipedia.org/wiki/St_Doulagh's_Church"
+    },
+    {
+     "name": "St Martin's Parish Church, Guernsey",
+     "wikipedia_title": "St Martin's Parish Church, Guernsey",
+     "location": "St Martin, Guernsey",
+     "nation": "Channel Islands",
+     "claimed_date": "1048 (site)",
+     "year": 1225,
+     "evidence_date": "oldest parts of present building c.1225",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/St_Martin's_Parish_Church,_Guernsey"
+    }
+   ]
+  },
+  {
+   "type": "Cathedral",
+   "category": "Cathedral",
+   "examples": [
+    {
+     "name": "Canterbury Cathedral",
+     "wikipedia_title": "Canterbury Cathedral",
+     "location": "Canterbury, England",
+     "nation": "England",
+     "claimed_date": "597 (founded)",
+     "year": 1070,
+     "evidence_date": "present building from 1070",
+     "claim": "mother church of the Anglican Communion",
+     "source": "https://en.wikipedia.org/wiki/Canterbury_Cathedral"
+    },
+    {
+     "name": "Rochester Cathedral",
+     "wikipedia_title": "Rochester Cathedral",
+     "location": "Rochester, Kent, England",
+     "nation": "England",
+     "claimed_date": "604 (founded)",
+     "year": 1080,
+     "evidence_date": "present building from 1080s",
+     "claim": "England's second-oldest cathedral foundation",
+     "source": "https://en.wikipedia.org/wiki/Rochester_Cathedral"
+    },
+    {
+     "name": "Bangor Cathedral",
+     "wikipedia_title": "Bangor Cathedral",
+     "location": "Bangor, Gwynedd, Wales",
+     "nation": "Wales",
+     "claimed_date": "c. 525 (site)",
+     "year": 1120,
+     "evidence_date": "present fabric 12th-16th century, restored 19th",
+     "claim": "claims oldest cathedral site in Britain",
+     "source": "https://en.wikipedia.org/wiki/Bangor_Cathedral"
+    },
+    {
+     "name": "St Magnus Cathedral",
+     "wikipedia_title": "St Magnus Cathedral",
+     "location": "Kirkwall, Orkney, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1137",
+     "year": 1137,
+     "evidence_date": null,
+     "claim": "Britain's most northerly cathedral",
+     "source": "https://en.wikipedia.org/wiki/St_Magnus_Cathedral"
+    },
+    {
+     "name": "Christ Church Cathedral, Dublin",
+     "wikipedia_title": "Christ Church Cathedral, Dublin",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "c. 1030 (founded)",
+     "year": 1180,
+     "evidence_date": "present stone church from 1180s, heavily restored 1870s",
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Christ_Church_Cathedral,_Dublin"
+    },
+    {
+     "name": "Glasgow Cathedral",
+     "wikipedia_title": "Glasgow Cathedral",
+     "location": "Glasgow, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1197 (consecrated)",
+     "year": 1197,
+     "evidence_date": null,
+     "claim": "only mainland Scottish medieval cathedral to survive the Reformation intact",
+     "source": "https://en.wikipedia.org/wiki/Glasgow_Cathedral"
+    }
+   ]
+  },
+  {
+   "type": "Synagogue",
+   "category": "Synagogue / mosque / meeting house",
+   "examples": [
+    {
+     "name": "Jew's Court",
+     "wikipedia_title": "Jews' Court, Lincoln",
+     "location": "Lincoln, England",
+     "nation": "England",
+     "claimed_date": "12th century (claimed medieval synagogue)",
+     "year": 1150,
+     "evidence_date": null,
+     "claim": "identification as a synagogue is disputed",
+     "source": "https://en.wikipedia.org/wiki/Jews'_Court,_Lincoln"
+    },
+    {
+     "name": "Bevis Marks Synagogue",
+     "wikipedia_title": "Bevis Marks Synagogue",
+     "location": "City of London, England",
+     "nation": "England",
+     "claimed_date": "1701",
+     "year": 1701,
+     "evidence_date": null,
+     "claim": "oldest synagogue in the UK in continuous use",
+     "source": "https://en.wikipedia.org/wiki/Bevis_Marks_Synagogue"
+    },
+    {
+     "name": "Plymouth Synagogue",
+     "wikipedia_title": "Plymouth Synagogue",
+     "location": "Plymouth, England",
+     "nation": "England",
+     "claimed_date": "1762",
+     "year": 1762,
+     "evidence_date": null,
+     "claim": "oldest Ashkenazi synagogue in the English-speaking world in use",
+     "source": "https://en.wikipedia.org/wiki/Plymouth_Synagogue"
+    },
+    {
+     "name": "Merthyr Tydfil Synagogue",
+     "wikipedia_title": "Merthyr Synagogue",
+     "location": "Merthyr Tydfil, Wales",
+     "nation": "Wales",
+     "claimed_date": "1877",
+     "year": 1877,
+     "evidence_date": null,
+     "claim": "oldest purpose-built synagogue in Wales (closed)",
+     "source": "https://en.wikipedia.org/wiki/Merthyr_Synagogue"
+    },
+    {
+     "name": "Garnethill Synagogue",
+     "wikipedia_title": "Garnethill Synagogue",
+     "location": "Glasgow, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1879",
+     "year": 1879,
+     "evidence_date": null,
+     "claim": "Scotland's oldest synagogue",
+     "source": "https://en.wikipedia.org/wiki/Garnethill_Synagogue"
+    }
+   ]
+  },
+  {
+   "type": "Mosque",
+   "category": "Synagogue / mosque / meeting house",
+   "examples": [
+    {
+     "name": "Liverpool Muslim Institute (Abdullah Quilliam Mosque)",
+     "wikipedia_title": "Liverpool Muslim Institute",
+     "location": "Liverpool, England",
+     "nation": "England",
+     "claimed_date": "1887-89",
+     "year": 1887,
+     "evidence_date": null,
+     "claim": "first mosque in England (converted terrace)",
+     "source": "https://en.wikipedia.org/wiki/Liverpool_Muslim_Institute"
+    },
+    {
+     "name": "Shah Jahan Mosque",
+     "wikipedia_title": "Shah Jahan Mosque",
+     "location": "Woking, England",
+     "nation": "England",
+     "claimed_date": "1889",
+     "year": 1889,
+     "evidence_date": null,
+     "claim": "first purpose-built mosque in the UK",
+     "source": "https://en.wikipedia.org/wiki/Shah_Jahan_Mosque"
+    },
+    {
+     "name": "Fazl Mosque",
+     "wikipedia_title": "Fazl Mosque",
+     "location": "Southfields, London, England",
+     "nation": "England",
+     "claimed_date": "1926",
+     "year": 1926,
+     "evidence_date": null,
+     "claim": "first purpose-built mosque in London",
+     "source": "https://en.wikipedia.org/wiki/Fazl_Mosque"
+    },
+    {
+     "name": "Ballyhaunis Mosque",
+     "wikipedia_title": "Ballyhaunis",
+     "location": "Ballyhaunis, County Mayo, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1987",
+     "year": 1987,
+     "evidence_date": null,
+     "claim": "first purpose-built mosque in Ireland",
+     "source": "https://en.wikipedia.org/wiki/Ballyhaunis"
+    }
+   ]
+  },
+  {
+   "type": "Quaker / nonconformist meeting house",
+   "category": "Synagogue / mosque / meeting house",
+   "examples": [
+    {
+     "name": "Friends Meeting House, Hertford",
+     "wikipedia_title": null,
+     "location": "Hertford, England",
+     "nation": "England",
+     "claimed_date": "1670",
+     "year": 1670,
+     "evidence_date": null,
+     "claim": "oldest purpose-built Quaker meeting house in continuous use",
+     "source": "https://quaker.org.uk/meetings/hertford"
+    },
+    {
+     "name": "Brigflatts Meeting House",
+     "wikipedia_title": "Brigflatts Meeting House",
+     "location": "near Sedbergh, Cumbria, England",
+     "nation": "England",
+     "claimed_date": "1675",
+     "year": 1675,
+     "evidence_date": null,
+     "claim": "oldest meeting house in the north of England",
+     "source": "https://en.wikipedia.org/wiki/Brigflatts_Meeting_House"
+    },
+    {
+     "name": "Jordans Meeting House",
+     "wikipedia_title": "Jordans, Buckinghamshire",
+     "location": "Jordans, Buckinghamshire, England",
+     "nation": "England",
+     "claimed_date": "1688",
+     "year": 1688,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Jordans,_Buckinghamshire"
+    },
+    {
+     "name": "Maesyronnen Chapel",
+     "wikipedia_title": "Maesyronnen Chapel",
+     "location": "Glasbury, Powys, Wales",
+     "nation": "Wales",
+     "claimed_date": "c. 1696",
+     "year": 1696,
+     "evidence_date": null,
+     "claim": "oldest Nonconformist chapel in Wales still in use",
+     "source": "https://en.wikipedia.org/wiki/Maesyronnen_Chapel"
+    },
+    {
+     "name": "Horningsham Chapel",
+     "wikipedia_title": "Horningsham",
+     "location": "Horningsham, Wiltshire, England",
+     "nation": "England",
+     "claimed_date": "1566 (claimed)",
+     "year": 1700,
+     "evidence_date": "evidence points to c.1700",
+     "claim": "claims oldest Nonconformist chapel in England; disputed",
+     "source": "https://en.wikipedia.org/wiki/Horningsham"
+    }
+   ]
+  },
+  {
+   "type": "Castle still inhabited",
+   "category": "Castle / fortification",
+   "examples": [
+    {
+     "name": "Windsor Castle",
+     "wikipedia_title": "Windsor Castle",
+     "location": "Windsor, Berkshire, England",
+     "nation": "England",
+     "claimed_date": "c. 1070",
+     "year": 1070,
+     "evidence_date": null,
+     "claim": "oldest and largest occupied castle in the world",
+     "source": "https://en.wikipedia.org/wiki/Windsor_Castle"
+    },
+    {
+     "name": "Traquair House",
+     "wikipedia_title": "Traquair House",
+     "location": "Innerleithen, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1107 (claimed)",
+     "year": 1107,
+     "evidence_date": "core probably 15th-16th century",
+     "claim": "claims oldest continuously inhabited house in Scotland",
+     "source": "https://en.wikipedia.org/wiki/Traquair_House"
+    },
+    {
+     "name": "Berkeley Castle",
+     "wikipedia_title": "Berkeley Castle",
+     "location": "Berkeley, Gloucestershire, England",
+     "nation": "England",
+     "claimed_date": "12th century",
+     "year": 1153,
+     "evidence_date": null,
+     "claim": "held by the Berkeley family since the 12th century",
+     "source": "https://en.wikipedia.org/wiki/Berkeley_Castle"
+    },
+    {
+     "name": "Kilkea Castle",
+     "wikipedia_title": "Kilkea Castle",
+     "location": "County Kildare, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1180",
+     "year": 1180,
+     "evidence_date": "much remodelled 19th century",
+     "claim": "claims oldest inhabited castle in Ireland",
+     "source": "https://en.wikipedia.org/wiki/Kilkea_Castle"
+    },
+    {
+     "name": "Dunvegan Castle",
+     "wikipedia_title": "Dunvegan Castle",
+     "location": "Isle of Skye, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "13th century",
+     "year": 1270,
+     "evidence_date": null,
+     "claim": "oldest continuously inhabited castle in Scotland (claim)",
+     "source": "https://en.wikipedia.org/wiki/Dunvegan_Castle"
+    },
+    {
+     "name": "Chirk Castle",
+     "wikipedia_title": "Chirk Castle",
+     "location": "Chirk, Wrexham, Wales",
+     "nation": "Wales",
+     "claimed_date": "1295",
+     "year": 1295,
+     "evidence_date": null,
+     "claim": "Edwardian castle continuously lived in",
+     "source": "https://en.wikipedia.org/wiki/Chirk_Castle"
+    }
+   ]
+  },
+  {
+   "type": "Tower house",
+   "category": "Castle / fortification",
+   "examples": [
+    {
+     "name": "Cubbie Roo's Castle",
+     "wikipedia_title": "Cobbie Row's Castle",
+     "location": "Wyre, Orkney, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 1145",
+     "year": 1145,
+     "evidence_date": null,
+     "claim": "possibly the oldest stone castle in Scotland (ruin)",
+     "source": "https://en.wikipedia.org/wiki/Cobbie_Row's_Castle"
+    },
+    {
+     "name": "Castle of Old Wick",
+     "wikipedia_title": "Castle of Old Wick",
+     "location": "Wick, Caithness, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "12th century",
+     "year": 1160,
+     "evidence_date": null,
+     "claim": "one of the oldest castles in Scotland (ruin)",
+     "source": "https://en.wikipedia.org/wiki/Castle_of_Old_Wick"
+    },
+    {
+     "name": "Drum Castle",
+     "wikipedia_title": "Drum Castle",
+     "location": "Aberdeenshire, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "late 13th century",
+     "year": 1290,
+     "evidence_date": null,
+     "claim": "tower among the oldest intact tower houses in Scotland",
+     "source": "https://en.wikipedia.org/wiki/Drum_Castle"
+    },
+    {
+     "name": "Vicar's Pele",
+     "wikipedia_title": "Corbridge",
+     "location": "Corbridge, Northumberland, England",
+     "nation": "England",
+     "claimed_date": "c. 1300",
+     "year": 1300,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Corbridge"
+    },
+    {
+     "name": "Smailholm Tower",
+     "wikipedia_title": "Smailholm Tower",
+     "location": "Scottish Borders, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "15th century",
+     "year": 1450,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Smailholm_Tower"
+    }
+   ]
+  },
+  {
+   "type": "Fortified house",
+   "category": "Castle / fortification",
+   "examples": [
+    {
+     "name": "Little Wenham Hall",
+     "wikipedia_title": "Little Wenham Hall",
+     "location": "Suffolk, England",
+     "nation": "England",
+     "claimed_date": "c. 1270-1280",
+     "year": 1270,
+     "evidence_date": null,
+     "claim": "one of the earliest brick buildings in England",
+     "source": "https://en.wikipedia.org/wiki/Little_Wenham_Hall"
+    },
+    {
+     "name": "Stokesay Castle",
+     "wikipedia_title": "Stokesay Castle",
+     "location": "Shropshire, England",
+     "nation": "England",
+     "claimed_date": "1280s-1290s",
+     "year": 1285,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Stokesay_Castle"
+    },
+    {
+     "name": "Aydon Castle",
+     "wikipedia_title": "Aydon Castle",
+     "location": "Northumberland, England",
+     "nation": "England",
+     "claimed_date": "c. 1296",
+     "year": 1296,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Aydon_Castle"
+    },
+    {
+     "name": "Rathfarnham Castle",
+     "wikipedia_title": "Rathfarnham Castle",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1583",
+     "year": 1583,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Rathfarnham_Castle"
+    }
+   ]
+  },
+  {
+   "type": "Observatory",
+   "category": "Observatory / science",
+   "examples": [
+    {
+     "name": "Royal Observatory, Greenwich",
+     "wikipedia_title": "Royal Observatory, Greenwich",
+     "location": "Greenwich, London, England",
+     "nation": "England",
+     "claimed_date": "1675-76",
+     "year": 1675,
+     "evidence_date": null,
+     "claim": "Flamsteed House by Wren",
+     "source": "https://en.wikipedia.org/wiki/Royal_Observatory,_Greenwich"
+    },
+    {
+     "name": "King's Observatory",
+     "wikipedia_title": "King's Observatory",
+     "location": "Richmond, London, England",
+     "nation": "England",
+     "claimed_date": "1769",
+     "year": 1769,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/King's_Observatory"
+    },
+    {
+     "name": "Radcliffe Observatory",
+     "wikipedia_title": "Radcliffe Observatory",
+     "location": "Oxford, England",
+     "nation": "England",
+     "claimed_date": "1773-1794",
+     "year": 1773,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Radcliffe_Observatory"
+    },
+    {
+     "name": "Dunsink Observatory",
+     "wikipedia_title": "Dunsink Observatory",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1785",
+     "year": 1785,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Dunsink_Observatory"
+    },
+    {
+     "name": "Armagh Observatory",
+     "wikipedia_title": "Armagh Observatory",
+     "location": "Armagh, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1789",
+     "year": 1789,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Armagh_Observatory"
+    },
+    {
+     "name": "City Observatory, Calton Hill",
+     "wikipedia_title": "City Observatory",
+     "location": "Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1818",
+     "year": 1818,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/City_Observatory"
+    }
+   ]
+  },
+  {
+   "type": "Greenhouse / glasshouse",
+   "category": "Observatory / science",
+   "examples": [
+    {
+     "name": "Camellia House, Wollaton Hall",
+     "wikipedia_title": "Wollaton Hall",
+     "location": "Nottingham, England",
+     "nation": "England",
+     "claimed_date": "1823",
+     "year": 1823,
+     "evidence_date": null,
+     "claim": "early cast-iron glasshouse",
+     "source": "https://en.wikipedia.org/wiki/Wollaton_Hall"
+    },
+    {
+     "name": "Bicton Palm House",
+     "wikipedia_title": "Bicton, Devon",
+     "location": "East Budleigh, Devon, England",
+     "nation": "England",
+     "claimed_date": "c. 1820s",
+     "year": 1825,
+     "evidence_date": null,
+     "claim": "possibly the oldest surviving curvilinear glasshouse",
+     "source": "https://en.wikipedia.org/wiki/Bicton,_Devon"
+    },
+    {
+     "name": "Great Conservatory, Syon Park",
+     "wikipedia_title": "Syon House",
+     "location": "Brentford, London, England",
+     "nation": "England",
+     "claimed_date": "1827-1830",
+     "year": 1827,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Syon_House"
+    },
+    {
+     "name": "Palm House, Belfast Botanic Gardens",
+     "wikipedia_title": "Botanic Gardens (Belfast)",
+     "location": "Belfast, Northern Ireland",
+     "nation": "Northern Ireland",
+     "claimed_date": "1839-1840",
+     "year": 1839,
+     "evidence_date": null,
+     "claim": "among the earliest curvilinear cast-iron glasshouses",
+     "source": "https://en.wikipedia.org/wiki/Botanic_Gardens_(Belfast)"
+    },
+    {
+     "name": "Curvilinear Range, Glasnevin",
+     "wikipedia_title": "National Botanic Gardens (Ireland)",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1843-1869",
+     "year": 1843,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/National_Botanic_Gardens_(Ireland)"
+    },
+    {
+     "name": "Palm House, Kew",
+     "wikipedia_title": "Palm House, Kew Gardens",
+     "location": "Kew, London, England",
+     "nation": "England",
+     "claimed_date": "1844-1848",
+     "year": 1844,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens"
+    }
+   ]
+  },
+  {
+   "type": "Pier",
+   "category": "Other structure",
+   "examples": [
+    {
+     "name": "Ryde Pier",
+     "wikipedia_title": "Ryde Pier",
+     "location": "Ryde, Isle of Wight, England",
+     "nation": "England",
+     "claimed_date": "1814",
+     "year": 1814,
+     "evidence_date": null,
+     "claim": "oldest seaside pleasure pier in England",
+     "source": "https://en.wikipedia.org/wiki/Ryde_Pier"
+    },
+    {
+     "name": "Southend Pier",
+     "wikipedia_title": "Southend Pier",
+     "location": "Southend-on-Sea, England",
+     "nation": "England",
+     "claimed_date": "1830",
+     "year": 1830,
+     "evidence_date": "iron pier 1889",
+     "claim": "longest pleasure pier in the world",
+     "source": "https://en.wikipedia.org/wiki/Southend_Pier"
+    },
+    {
+     "name": "Gravesend Town Pier",
+     "wikipedia_title": "Town Pier, Gravesend",
+     "location": "Gravesend, Kent, England",
+     "nation": "England",
+     "claimed_date": "1834",
+     "year": 1834,
+     "evidence_date": null,
+     "claim": "oldest surviving cast-iron pier in the world",
+     "source": "https://en.wikipedia.org/wiki/Town_Pier,_Gravesend"
+    },
+    {
+     "name": "Beaumaris Pier",
+     "wikipedia_title": "Beaumaris Pier",
+     "location": "Beaumaris, Anglesey, Wales",
+     "nation": "Wales",
+     "claimed_date": "1846",
+     "year": 1846,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/Beaumaris_Pier"
+    }
+   ]
+  },
+  {
+   "type": "Purpose-built office building",
+   "category": "Bank / office",
+   "examples": [
+    {
+     "name": "Old Admiralty Building (Ripley Building)",
+     "wikipedia_title": "Admiralty House, London",
+     "location": "Whitehall, London, England",
+     "nation": "England",
+     "claimed_date": "1726",
+     "year": 1726,
+     "evidence_date": null,
+     "claim": "claimed Britain's first purpose-built office building",
+     "source": "https://en.wikipedia.org/wiki/Admiralty_House,_London"
+    },
+    {
+     "name": "Somerset House",
+     "wikipedia_title": "Somerset House",
+     "location": "Strand, London, England",
+     "nation": "England",
+     "claimed_date": "1776-1796",
+     "year": 1776,
+     "evidence_date": null,
+     "claim": "first large purpose-built government offices",
+     "source": "https://en.wikipedia.org/wiki/Somerset_House"
+    },
+    {
+     "name": "Oriel Chambers",
+     "wikipedia_title": "Oriel Chambers",
+     "location": "Liverpool, England",
+     "nation": "England",
+     "claimed_date": "1864",
+     "year": 1864,
+     "evidence_date": null,
+     "claim": "world's first metal-framed glass curtain-walled office",
+     "source": "https://en.wikipedia.org/wiki/Oriel_Chambers"
+    }
+   ]
+  },
+  {
+   "type": "Apartment block / tenement",
+   "category": "House / domestic",
+   "examples": [
+    {
+     "name": "Gladstone's Land",
+     "wikipedia_title": "Gladstone's Land",
+     "location": "Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "c. 1550 / 1617",
+     "year": 1617,
+     "evidence_date": null,
+     "claim": "17th-century Old Town tenement",
+     "source": "https://en.wikipedia.org/wiki/Gladstone's_Land"
+    },
+    {
+     "name": "Mylne's Court",
+     "wikipedia_title": null,
+     "location": "Edinburgh, Scotland",
+     "nation": "Scotland",
+     "claimed_date": "1690",
+     "year": 1690,
+     "evidence_date": null,
+     "claim": "early planned courtyard tenement",
+     "source": "https://portal.historicenvironment.scot/designation/LB29237"
+    },
+    {
+     "name": "Albany",
+     "wikipedia_title": "Albany (London)",
+     "location": "Piccadilly, London, England",
+     "nation": "England",
+     "claimed_date": "1770s house; flats 1803",
+     "year": 1803,
+     "evidence_date": null,
+     "claim": "early apartment conversion (bachelor sets)",
+     "source": "https://en.wikipedia.org/wiki/Albany_(London)"
+    },
+    {
+     "name": "Parnell House (Streatham Street Model Houses)",
+     "wikipedia_title": "Streatham Street",
+     "location": "Bloomsbury, London, England",
+     "nation": "England",
+     "claimed_date": "1849",
+     "year": 1849,
+     "evidence_date": null,
+     "claim": "earliest surviving purpose-built flats for working families (Historic England)",
+     "source": "https://historicengland.org.uk/services-skills/education/educational-images/parnell-housestreatham-street-camden-town-9433"
+    }
+   ]
+  },
+  {
+   "type": "Terrace housing",
+   "category": "House / domestic",
+   "examples": [
+    {
+     "name": "Lady Row",
+     "wikipedia_title": "Lady Row",
+     "location": "York, England",
+     "nation": "England",
+     "claimed_date": "1316",
+     "year": 1316,
+     "evidence_date": null,
+     "claim": "oldest surviving houses in York",
+     "source": "https://en.wikipedia.org/wiki/Lady_Row"
+    },
+    {
+     "name": "Vicars' Close, Wells",
+     "wikipedia_title": "Vicars' Close, Wells",
+     "location": "Wells, Somerset, England",
+     "nation": "England",
+     "claimed_date": "c. 1363",
+     "year": 1363,
+     "evidence_date": null,
+     "claim": "claimed oldest purely residential street with original buildings in Europe",
+     "source": "https://en.wikipedia.org/wiki/Vicars'_Close,_Wells"
+    },
+    {
+     "name": "Henrietta Street, Dublin",
+     "wikipedia_title": "Henrietta Street, Dublin",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1720s",
+     "year": 1721,
+     "evidence_date": null,
+     "claim": "Dublin's earliest Georgian street",
+     "source": "https://en.wikipedia.org/wiki/Henrietta_Street,_Dublin"
+    },
+    {
+     "name": "The Circus, Bath",
+     "wikipedia_title": "The Circus, Bath",
+     "location": "Bath, England",
+     "nation": "England",
+     "claimed_date": "1754-1768",
+     "year": 1754,
+     "evidence_date": null,
+     "claim": null,
+     "source": "https://en.wikipedia.org/wiki/The_Circus,_Bath"
+    }
+   ]
+  }
+ ]
+}

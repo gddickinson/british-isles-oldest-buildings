@@ -1,0 +1,87 @@
+/* Stories (detail views, Stories page) and Tours (ready-made tours, tour builder) */
+.stories-box h4 { margin-top: 18px; }
+.story { border-left: 3px solid var(--accent); background: var(--panel); padding: 8px 12px; margin: 8px 0; border-radius: 0 8px 8px 0; }
+.story p { margin: 4px 0; }
+.story h3 { margin: 2px 0 4px; font-size: 17px; }
+.story h3 .hint { font-weight: 400; font-size: 12px; margin-left: 6px; }
+.story-kind { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.story-src { font-size: 12px; color: var(--muted); }
+.story-supernatural { border-left-color: #7b5ea7; }
+.story-legend { border-left-color: #b5651d; }
+.story-folklore { border-left-color: #4f8a4c; }
+.story-curiosity { border-left-color: #5f7f9c; }
+.stories-page .filter-row, .tours-page .filter-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 12px; }
+.stories-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 40%); gap: 16px; align-items: start; }
+.stories-map { height: 70vh; position: sticky; top: 10px; border-radius: 10px; border: 1px solid var(--line); }
+.story-marker { font-size: 18px; line-height: 24px; text-align: center; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4)); }
+
+.tour-tabs { margin: 6px 0 10px; }
+.tours-layout { display: grid; grid-template-columns: minmax(260px, 380px) minmax(0, 1fr); gap: 16px; align-items: start; }
+.tour-list { display: grid; gap: 6px; max-height: 75vh; overflow: auto; padding-right: 4px; }
+.tour-card { display: flex; gap: 10px; align-items: flex-start; text-align: left; width: 100%; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink); border-radius: 10px; padding: 8px 10px; font: inherit; cursor: pointer; }
+.tour-card:hover, .tour-card.on { border-color: var(--accent); background: var(--accent-soft); }
+.tour-card .meta { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+.tour-icon { font-size: 20px; line-height: 1.2; }
+.tour-map { height: 460px; border-radius: 10px; border: 1px solid var(--line); }
+.tour-detail h2 { margin: 12px 0 4px; }
+.tour-stops { padding-left: 0; list-style: none; }
+.tour-stops li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.tour-stops .meta, #tb_list .meta { font-size: 12px; color: var(--muted); }
+.stop-story p { margin: 4px 0 0; font-size: 14px; color: var(--ink); opacity: .9; }
+#tb_list { list-style: none; padding-left: 0; }
+.tour-total { font-weight: 600; }
+.builder-row input[type=text] { min-width: 200px; }
+.suggest-box { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; padding: 10px 12px; margin: 0 0 10px;
+  border: 1px dashed var(--accent); border-radius: 10px; background: var(--panel); }
+.tour-cands { margin-top: 10px; }
+.btn.disabled { pointer-events: none; opacity: .5; }
+@media (max-width: 800px) {
+  .stories-layout, .tours-layout { grid-template-columns: 1fr; }
+  .stories-map { height: 320px; position: static; order: -1; }
+  .tour-list { max-height: 40vh; }
+  .tour-map { height: 340px; }
+}
+@media print {
+  .tour-tabs, .tours-page .filter-row, .tours-page .prose, .tour-list, .pron-chips, .suggest-box, .tour-cands,
+  .row-actions, .leaflet-control-container { display: none !important; }
+  .tours-layout { display: block; }
+  .tour-map { height: 420px; page-break-inside: avoid; }
+}
+.story-filter { display: flex; flex-direction: column; gap: 4px; font-size: 14px; margin: 8px 0; }
+/* On this day (History page) */
+.otd { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; padding: 10px 14px; margin: 10px 0 18px; }
+.otd-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.otd-head h2 { margin: 0; font-size: 20px; }
+.otd-list { list-style: none; padding: 0; margin: 8px 0 0; columns: 2 320px; column-gap: 24px; }
+.otd-list li { padding: 3px 0; break-inside: avoid; }
+.otd-year { display: inline-block; min-width: 3.4em; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+/* Building timeline (detail views) */
+.timeline summary { cursor: pointer; list-style: none; }
+.timeline summary h4 { display: inline; }
+.timeline ol { list-style: none; padding: 0 0 0 14px; margin: 8px 0; border-left: 2px solid var(--line); }
+.timeline li { position: relative; padding: 2px 0 8px 12px; }
+.timeline li::before { content: ""; position: absolute; left: -20px; top: 8px; width: 10px; height: 10px; border-radius: 50%;
+  background: var(--accent); border: 2px solid var(--bg, #fff); }
+.tl-year { font-weight: 700; color: var(--accent); margin-right: 8px; font-variant-numeric: tabular-nums; }
+.tl-kind { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.timeline li p { margin: 2px 0 0; font-size: 14px; }
+.story { position: relative; }
+.speak { position: absolute; top: 6px; right: 8px; border: 1px solid var(--line); background: var(--panel); border-radius: 50%;
+  width: 28px; height: 28px; cursor: pointer; font-size: 13px; }
+.speak:hover { border-color: var(--accent); }
+.follow-status:not(:empty) { margin: 6px 0; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); font-size: 15px; }
+.getting-there { font-size: 14px; margin: 8px 0; }
+.elev { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 6px 0; font-size: 14px; }
+.elev svg { max-width: 100%; height: auto; border-bottom: 1px solid var(--line); }
+.elev-fill { fill: var(--accent-soft); }
+.elev-line { fill: none; stroke: var(--accent); stroke-width: 1.5; }
+.stages ol { margin: 6px 0; padding-left: 20px; } .stages li { margin: 3px 0; font-size: 14px; }
+/* Quiz */
+.quiz-card { max-width: 720px; }
+.quiz-card img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 12px; display: block; }
+.quiz-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin: 10px 0; }
+.quiz-choices .btn { display: flex; flex-direction: column; align-items: center; padding: 10px; }
+.quiz-choices .btn.right { border-color: #2f8a3e; background: #e1f3e3; color: #1d5a27; }
+.quiz-choices .btn.wrong { border-color: #b3261e; background: #fbe4e2; color: #8c1d18; }
+.quiz-answer { margin: 8px 0; } .quiz-score { font-weight: 600; margin: 6px 0 10px; }

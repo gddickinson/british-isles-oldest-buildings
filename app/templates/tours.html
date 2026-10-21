@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Tours · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page tours-page">
+  <h1>Tours</h1>
+  <div class="tabs tour-tabs" role="tablist">
+    <button class="tab active" data-tab="ready" role="tab">Ready-made tours</button>
+    <button class="tab" data-tab="build" role="tab">Your tour <span class="count" data-count="trip"></span></button>
+  </div>
+
+  <section id="tab-ready" class="tour-tab">
+    <p class="prose">Walks around historic towns, bike rides and day trips by car, past the oldest and most remarkable
+      buildings, with the legends and ghost stories told about them. Routes follow real paths and roads
+      (OpenStreetMap); times include a stop at each place. Open any tour in Google Maps for directions, download it
+      for a GPS, print it, or copy it to <b>Your tour</b> and change it.</p>
+    <div class="pron-chips" id="tr_modes" aria-label="Travel mode">
+      <button type="button" data-m="" class="on">All</button><button type="button" data-m="walk">🚶 Walks</button>
+      <button type="button" data-m="cycle">🚲 Bike rides</button><button type="button" data-m="drive">🚗 Drives</button>
+    </div>
+    <div class="filter-row">
+      <select id="tr_theme"><option value="">All themes</option></select>
+      <select id="tr_nation"><option value="">All nations</option><option>England</option><option>Scotland</option>
+        <option>Wales</option><option>Northern Ireland</option><option>Republic of Ireland</option></select>
+      <input id="tr_q" type="search" aria-label="Search tours" placeholder="Search tours (town, county, building)…">
+      <span id="tr_count" class="hint" aria-live="polite"></span>
+    </div>
+    <div class="tours-layout">
+      <div id="tr_list" class="tour-list"></div>
+      <div class="tour-view">
+        <div id="tr_map" class="tour-map"></div>
+        <div id="tr_detail" class="tour-detail"><p class="empty">Choose a tour to see its route and stops.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab-build" class="tour-tab hidden">
+    <p class="prose">Star (☆) buildings and places anywhere in the catalogue to add them here, or let the planner
+      <b>suggest a tour</b> from a starting point. Choose how you travel, put the stops in the best order, and the
+      route follows real paths and roads{% if static_mode %} (in this hosted copy, straight lines with an estimated
+      distance; Google Maps gives the full route){% endif %}. Save as many tours as you like in this browser.</p>
+    <div class="filter-row builder-row">
+      <input id="tb_name" type="text" placeholder="Name your tour" aria-label="Tour name">
+      <select id="tb_mode" aria-label="Travel mode"><option value="walk">🚶 Walking</option><option value="cycle">🚲 Cycling</option>
+        <option value="drive">🚗 Driving</option></select>
+      <label class="check"><input type="checkbox" id="tb_loop"> Back to the start</label>
+      <button id="tb_opt" class="btn small">Best order</button>
+      <button id="tb_suggest_open" class="btn small ghost">✨ Suggest a tour…</button>
+      <button id="tb_along" class="btn small ghost">+ Stops along the way</button>
+    </div>
+    <form id="tb_suggest" class="suggest-box hidden">
+      <label>Start <input id="sg_where" type="search" placeholder="Town, postcode or place"></label>
+      <button type="button" id="sg_here" class="btn small ghost">Use my location</button>
+      <button type="button" id="sg_mapc" class="btn small ghost">Use the map centre</button>
+      <label>Time <select id="sg_hours"><option value="1.5">1–2 hours</option><option value="3" selected>half a day</option>
+        <option value="6">a day</option></select></label>
+      <label>Theme <select id="sg_theme"></select></label>
+      <button type="submit" class="btn small">Make the tour</button>
+      <span id="sg_status" class="hint"></span>
+    </form>
+    <div class="filter-row">
+      <span id="tb_total" class="tour-total"></span>
+      <button id="tb_save" class="btn small ghost">Save</button>
+      <select id="tb_saved" aria-label="Saved tours"><option value="">Saved tours…</option></select>
+      <button id="tb_gpx" class="btn small ghost">GPX</button><button id="tb_kml" class="btn small ghost">KML</button>
+      <a id="tb_gmaps" class="btn small ghost" target="_blank" rel="noopener">Google Maps</a>
+      <button id="tb_print" class="btn small ghost">Print</button>
+      <button id="tb_share" class="btn small ghost">Share link</button>
+      <button id="tb_follow" class="btn small ghost">📍 Follow</button>
+      <button id="tb_clear" class="btn small ghost">Clear</button>
+    </div>
+    <div id="tb_elev"></div>
+    <div id="tb_follow_status" class="follow-status" aria-live="polite"></div>
+    <div class="tours-layout">
+      <div>
+        <ol id="tb_list" class="trip-list"></ol>
+        <div id="tb_cands" class="tour-cands"></div>
+      </div>
+      <div class="tour-view"><div id="tb_map" class="tour-map"></div></div>
+    </div>
+  </section>
+</main>
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='tour_lib.js') }}"></script>
+<script src="{{ url_for('static', filename='tours.js') }}"></script>
+<script src="{{ url_for('static', filename='tour_builder.js') }}"></script>
+{% endblock %}

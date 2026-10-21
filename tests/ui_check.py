@@ -1,0 +1,85 @@
+"""Browser checks of every page in headless Chrome (slow, so not part of unittest discover):
+
+    .venv/bin/python -m tests.ui_check            all pages, temporary server
+    .venv/bin/python -m tests.ui_check --base http://127.0.0.1:5050 --only tours stories
+
+Each page must load without JavaScript errors and show what it is for (a pattern in the final
+DOM). Exits 1 if any check fails.
+"""
+import argparse
+import re
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+
+from app.screenshot import find_chrome, temporary_server
+
+# name: (path, pattern that must be in the rendered page)
+PAGES = {
+    "catalogue": ("/", r'class="card'),
+    "catalogue_story_filter": ("/?story=supernatural", r'<b id="total">\d'),
+    "building": ("/building/Q1529151", r'class="story story-'),
+    "building_timeline": ("/building/Q816295", r'class="tl-year"'),
+    "map": ("/map", r'leaflet-container'),
+    "places": ("/places", r'data-place='),
+    "people": ("/people", r'data-person=|class="person'),
+    "pronunciation": ("/pronunciation?q=ll", r'class="ipa"|class="respell"'),
+    "stories": ("/stories", r'class="story story-'),
+    "tours": ("/tours", r'class="tour-card'),
+    "tour_detail": ("/tours?mode=walk", r'class="tour-stops"'),
+    "tour_builder": ("/tours?tab=build", r'id="tb_list"'),
+    "history": ("/history", r'class="otd-year"'),
+    "quiz": ("/quiz", r'class="quiz-choices"'),
+    "oldest": ("/oldest", r'class="ex"'),
+    "stats": ("/stats", r'<svg'),
+    "compare": ("/compare", r'compare'),
+    "data": ("/data", r'Data quality'),
+    "settings": ("/settings", r'Data location'),
+    "help": ("/help", r'id="tours"'),
+}
+JS_ERROR = re.compile(r"Uncaught|CONSOLE\(\d+\)\] \"(?:Error|TypeError|ReferenceError|SyntaxError)", re.I)
+
+
+def check(base, name, path, pattern, chrome):
+    with tempfile.TemporaryDirectory() as profile:
+        proc = subprocess.run([chrome, "--headless=new", "--disable-gpu", f"--user-data-dir={profile}",
+                               "--virtual-time-budget=20000", "--enable-logging=stderr", "--v=0", "--dump-dom",
+                               base + path], capture_output=True, text=True, timeout=120)
+    errors = [l for l in proc.stderr.splitlines() if JS_ERROR.search(l)]
+    found = re.search(pattern, proc.stdout) is not None
+    return found and not errors, errors[:3], found
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--base", help="use a running server")
+    ap.add_argument("--only", nargs="*", help="page names to check")
+    a = ap.parse_args()
+    chrome = find_chrome()
+    if not chrome:
+        sys.exit("No Chrome/Chromium found (Settings → Screenshots sets the path)")
+    names = a.only or list(PAGES)
+
+    def run(base):
+        bad = 0
+        for name in names:
+            path, pattern = PAGES[name]
+            ok, errors, found = check(base, name, path, pattern, chrome)
+            bad += not ok
+            print(f"{'ok  ' if ok else 'FAIL'} {name:24} {path}" + ("" if found else "  (expected content missing)"))
+            for e in errors:
+                print("       ", e[-200:])
+        print(f"{len(names) - bad}/{len(names)} pages passed")
+        return bad
+
+    if a.base:
+        bad = run(a.base)
+    else:
+        with temporary_server() as base:
+            bad = run(base)
+    sys.exit(1 if bad else 0)
+
+
+if __name__ == "__main__":
+    main()

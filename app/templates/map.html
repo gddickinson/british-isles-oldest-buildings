@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Map · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<div class="explore">
+  <aside class="explore-panel" id="ex_panel">
+    <div class="ex-find">
+      <input id="ex_q" type="search" list="ex_towns" placeholder="Find a town or village…" autocomplete="off">
+      <datalist id="ex_towns"></datalist>
+      <button id="ex_go" class="btn small" type="button">Go</button>
+    </div>
+    <div id="ex_status" class="hint"></div>
+    <h3>Buildings <span class="hint" id="ex_bcount"></span></h3>
+    <label class="check"><input type="checkbox" id="ex_landmarks"> Only landmarks</label>
+    <label class="check"><input type="checkbox" id="ex_early"> Only begun before 1500</label>
+    <div id="ex_groups" class="ex-list"></div>
+    <h3>Places of interest</h3>
+    <div id="ex_places" class="ex-list"></div>
+    <p class="hint">Use <b>☰ Layers</b> on the map for counties, roads, rivers, towns, national parks and more.
+      Click any marker for details.</p>
+  </aside>
+  <div class="explore-map"><div id="ex_map"></div>
+    <button id="ex_toggle" class="btn small ex-toggle" type="button">Filters</button></div>
+</div>
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='detail.js') }}"></script>
+<script src="{{ url_for('static', filename='map_page.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Data quality · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page">
+  <h1>Data quality</h1>
+  <p class="prose">Where the data is incomplete. Records with a Wikidata item link straight to it, so gaps can be
+    fixed at the source (and flow into the next rebuild). Corrections you make in a building's detail view are
+    stored locally in <code>data/overrides.json</code>.
+    {% if not static_mode %}<a href="#jobs">Rebuild, refresh and other jobs ↓</a>{% endif %}</p>
+  <div class="tiles" id="g_tiles"></div>
+  <div class="filter-row"><select id="g_kind"></select><span class="hint" id="g_hint"></span></div>
+  <div id="g_rows" class="table-wrap"></div>
+
+  <h2>Research checked against its sources</h2>
+  <p class="prose">Every history event and every researched "oldest of its type" claim was checked automatically:
+    the cited source was fetched and searched for the stated year and name. "Year not found" does not mean the
+    claim is wrong (the source may give it in words or as a century) but those entries deserve a manual look.</p>
+  <div id="v_box"><p class="hint">Not checked yet: run <code>python -m bidb.verify_research</code>.</p></div>
+
+  <h2>Pronunciations</h2>
+  <p class="prose">How many records have a pronunciation of their own or of the town they are in, by variety, and
+    hard-looking names that still have none (worth adding to the Wikipedia article or Wikidata item).
+    Built with <code>python -m bidb.pronunciations</code>.</p>
+  <div id="pr_cov"><p class="hint">Not built yet.</p></div>
+
+  <h2 id="jobs">Rebuild and other jobs</h2>
+  {% if static_mode %}
+    <p class="hint">Rebuilding is only available when running the app locally.</p>
+  {% else %}
+  <p class="prose">Long jobs run in the background and keep going if you close this page or the app; come back here
+    to follow them. Everything downloaded is kept in the cache, so a rebuild with a warm cache takes minutes and an
+    interrupted job resumes quickly. The catalogue keeps working meanwhile.</p>
+  <div id="jobs_panel" class="jobs-panel"></div>
+  {% endif %}
+  <h2>What changed in the last build</h2>
+  <div id="rb_diff"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='jobs.js') }}"></script>
+<script src="{{ url_for('static', filename='data.js') }}"></script>
+{% endblock %}

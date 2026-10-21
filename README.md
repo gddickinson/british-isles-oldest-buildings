@@ -19,11 +19,11 @@ anywhere.
 
 | | |
 |---|---|
-| **22,046** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **88,284** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature |
-| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **43,000** places with a photo |
+| **22,046** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **104,136** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections |
+| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **46,000** places with a photo |
 | **17,417** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
-| **1,757** stories, legends and ghost tales | **298** ready-made walks, rides, drives and long-distance ways |
-| **5,520** pronunciations (1,579 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
+| **2,407** stories, legends and ghost tales | **344** ready-made walks, rides, drives and long-distance ways |
+| **7,405** pronunciations (2,019 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
 
 ## Contents
 - [Features](#features)
@@ -58,11 +58,12 @@ anywhere.
 ### Maps
 - **Three backgrounds:** the online street map, **satellite** imagery (Esri World Imagery with
   place names), or a bundled **offline map** that needs no internet.
-- **19 layers:** counties and **historic counties (before 1974)**, national parks, rivers, lakes,
+- **21 layers:** counties and **historic counties (before 1974)**, national parks, rivers, lakes,
   roads and minor roads, streams, railways and stations, national trails, **walking routes**, the
-  **National Cycle Network**, **Roman roads**, **buried rivers**, towns, hills and coast, airports.
-  Borders, parks, routes, Roman roads, buried rivers and stations also draw over the street map and
-  satellite.
+  **National Cycle Network**, **Roman roads**, **buried rivers**, **underground railways and
+  tunnels** (the tube lines, railway, canal and road tunnels), **pillboxes, bunkers and trenches**,
+  towns, hills and coast, airports. Borders, parks, routes, Roman roads, buried rivers, tunnels,
+  defences and stations also draw over the street map and satellite.
 - **17 historic maps** laid over the top with an opacity slider: Ordnance Survey six-inch and
   one-inch, the OS Old Series, the Roy Military Survey (1747–55), Bartholomew, William Smith's
   geological map (1815), the Gough Map (c. 1360), atlases of Roman and Anglo-Saxon Britain, the
@@ -79,12 +80,20 @@ anywhere.
 </table>
 
 ### Places, people and history
-- **Places of interest** in eleven groups, as a list or a map: battles and sieges; archaeological
+- **Places of interest** in fourteen groups, as a list or a map: battles and sieges; archaeological
   sites (every register's scheduled monuments); lost places; parks, gardens and trees; industrial
   heritage; finds and treasures; plaques (Wikidata and Open Plaques); history events; **legends and
   literature** (haunted places, Arthurian sites, holy wells, the settings of novels and poems);
   **maritime heritage** (harbours, docks, lighthouses, lifeboat stations, shipyards, museum ships);
-  and the **Victorian era**.
+  the **Victorian era**; **underground** works (tube and metro stations, closed "ghost" stations such
+  as Aldwych, tunnels, air-raid shelters and Cold War bunkers, caves and mines, ice houses, grottoes,
+  catacombs, Bazalgette's sewers); **military heritage** (the Saxon burhs of the Burghal Hidage,
+  Henry VIII's Device Forts, Martello towers, Palmerston forts, batteries, barracks, pillboxes, radar
+  stations and sound mirrors, airfields, prisoner-of-war camps, war memorials); and **museums and
+  collections** (museums of every kind, art galleries, libraries and archives).
+- **Kept here:** a museum's page lists its best-known objects (the Rosetta Stone and the Lewis
+  chessmen at the British Museum, *Mallard* at the National Railway Museum), and finds and hoards link
+  to the museum that holds them.
 - **People** with short biographies, every building and place they are linked to, and the source of
   each link.
 - **History:** a short history of the British Isles with sourced events on a map, and **on this
@@ -105,9 +114,10 @@ anywhere.
   witches of the Rollright Stones, priest holes and smugglers' tunnels. They come from each record's
   Wikipedia article, in four themes (ghosts, legends, folklore, curious history), with a map and
   **read aloud**.
-- **298 ready-made tours:** walks around historic towns, bike rides and drives, by theme (ghosts and
-  legends, prehistoric, castles, churches, Roman, literary, maritime, industrial, Victorian), plus
-  **88 long-distance and pilgrim ways** in day stages. Routes follow real paths and roads, with
+- **344 ready-made tours:** walks around historic towns, bike rides and drives, by theme (ghosts and
+  legends, prehistoric, castles, churches, Roman, literary, maritime, industrial, Victorian,
+  underground, coastal defences, military heritage, museums and galleries), plus
+  **89 long-distance and pilgrim ways** in day stages. Routes follow real paths and roads, with
   distance, time, an **elevation profile** and how hilly it is.
 - **Your tour:** star (☆) anything to add it, or let the planner **suggest a tour** from a starting
   point. Choose walking, cycling or driving, find the **best order**, add **stops along the way**,
@@ -241,7 +251,7 @@ local web app on http://127.0.0.1:5050               dist/: static copy, API ans
 
 ## Testing
 ```sh
-.venv/bin/python -m unittest discover tests                         # 61 unit tests
+.venv/bin/python -m unittest discover tests                         # 70 unit tests
 node tests/ui_prefs_test.js                                          # preference logic
 .venv/bin/python -m tests.ui_check --base http://127.0.0.1:5050      # every page loads without errors
 node tests/ui_review.mjs --base http://127.0.0.1:5050                # full GUI review
@@ -280,6 +290,10 @@ identifies itself with this repository's address.
   legend) were compiled with AI assistance from cited sources and checked against them
   (`python -m bidb.verify_research`); disputed claims are flagged.
 - **Stories** are what the sources say is told, not claims that the events happened.
+- **Underground, military and museum places** come from Wikidata classes, plus short curated lists
+  (`data/curated/underground_sites.json`, `burhs.json`). Coverage follows Wikidata: a "closed" museum
+  or station is one Wikidata gives a closing date for, and stop lines such as the GHQ Line have no
+  location there. Museums that are already catalogue buildings stay in the catalogue.
 - **Opening hours, fees and who looks after a place** come from OpenStreetMap; check before you go.
 - **Not included:** Jersey's Historic Environment Record (no open licence), Guernsey's lists (no
   locations) and the Isle of Man register (not machine-readable). Their heritage comes from Wikidata.

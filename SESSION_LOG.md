@@ -314,6 +314,6 @@
 - Fixes: tour titles for the new themes (KeyError; test added for every theme); `/places#<id>` links never
   opened their place (the page rewrote its URL before reading the hash) — older bug, fixed.
 - Checks: 70 unit tests; ui_check 24/24 pages (test server on port 5051); ui_review layers + places 52/52.
-- Not done: hosted copy re-export/republish and the bundled database release (both still the previous
-  version); MU2 (Mapping Museums), MU4 opening hours beyond OSM, stop lines drawn as lines.
-
+- Published: pushed to GitHub; database release `db-2026-10-21-2` (62 MB; `data/bundled.json`); hosted copy
+  re-exported and republished (versions 37–38, 25 changed files, 103 MB in two publishes). README updated.
+- Not done: MU2 (Mapping Museums), MU4 opening hours beyond OSM, stop lines drawn as lines.

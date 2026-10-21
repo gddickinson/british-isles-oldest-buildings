@@ -37,4 +37,18 @@ def export(conn, out_dir):
         from bidb.visiting import COLUMNS as VC
         visits = {r[0]: dict(zip(VC[1:], r[1:])) for r in conn.execute(f"SELECT {', '.join(VC)} FROM visiting")}
         (out_dir / "visiting.json").write_text(json.dumps(visits, ensure_ascii=False, separators=(",", ":")))
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'depictions'").fetchone():
+        arts = {}                                    # {record id: [[title, creator, year, Commons file], …]}
+        for rid, title, creator, year, image in conn.execute(
+                "SELECT entity_id, title, creator, year, image FROM depictions ORDER BY year IS NULL, year"):
+            arts.setdefault(rid, []).append([title, creator, year, image])
+        (out_dir / "depictions.json").write_text(json.dumps(arts, ensure_ascii=False, separators=(",", ":")))
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'domesday'").fetchone():
+        # {settlement qid: [name, Open Domesday id]} and {record id: settlement qid (prefixed "=" when itself)}
+        places, marks = {}, {}
+        for rid, sid, name, od, itself in conn.execute("SELECT entity_id, settlement_id, settlement, od_id, itself FROM domesday"):
+            places[sid] = [name, od]
+            marks[rid] = ("=" if itself else "") + sid
+        (out_dir / "domesday.json").write_text(json.dumps({"s": places, "r": marks}, ensure_ascii=False,
+                                                          separators=(",", ":")))
     return kinds

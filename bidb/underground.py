@@ -27,10 +27,9 @@ import time
 
 from .config import DATA_DIR
 from .db import connect
-from .http import sparql
-from .lore_places import ISLES
+from . import place_stage
 from .maritime import _record
-from .place_records import PLACE_COLUMN_NAMES
+from .place_stage import query as _query
 
 GROUP = "Underground"
 CURATED = DATA_DIR / "curated" / "underground_sites.json"
@@ -51,23 +50,6 @@ LABELS = {k: v[0] for k, v in CLASSES.items() if k != "cave_wp"}
 LABELS.update({"ghost": "Disused underground station", "ug_railway": "Underground railway"})
 KINDS = tuple(LABELS)
 NETWORKS = "wd:Q20075 wd:Q506290"          # London Underground, Glasgow Subway (stations by network)
-DISUSED = "wd:Q11639308 wd:Q63065035 wd:Q56651571"   # state of use: decommissioned, abandoned, out of service
-CANCELLED = "Q30108381"                                 # never built
-
-
-def _query(where, wp_only=False):
-    """Rows (i, iLabel, coord, article, desc, start, end, closed) for items matching `where`."""
-    article = ("?article schema:about ?i ; schema:isPartOf <https://en.wikipedia.org/> ." if wp_only else
-               "OPTIONAL { ?article schema:about ?i ; schema:isPartOf <https://en.wikipedia.org/> }")
-    return sparql(f"""SELECT ?i ?iLabel ?coord ?article ?desc ?start ?end ?closed WHERE {{
-        {where} ?i wdt:P625 ?coord ; wdt:P17 ?c . VALUES ?c {{ {ISLES} }}
-        OPTIONAL {{ ?i wdt:P1619 ?o }} OPTIONAL {{ ?i wdt:P571 ?s }} BIND(YEAR(COALESCE(?o, ?s)) AS ?start)
-        OPTIONAL {{ ?i wdt:P3999 ?x }} OPTIONAL {{ ?i wdt:P576 ?d }} BIND(YEAR(COALESCE(?x, ?d)) AS ?end)
-        OPTIONAL {{ ?i wdt:P5817 ?st VALUES ?st {{ {DISUSED} }} }} BIND(BOUND(?st) AS ?closed)
-        FILTER NOT EXISTS {{ ?i wdt:P5817 wd:{CANCELLED} }}
-        {article}
-        OPTIONAL {{ ?i schema:description ?desc FILTER(lang(?desc) = "en") }}
-        SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,ga,cy,gd". }} }}""")
 
 
 def _add(recs, kind, label, rows):
@@ -124,45 +106,18 @@ def build(log=print):
 
 
 def run(log=print):
-    from . import places_db
-    from .enrich import wikipedia_intros
-    from .lore_places import KINDS as LORE
-    from .maritime import KINDS as MARITIME
     t0 = time.time()
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
     recs = build(log)
-    in_catalogue = {q for (q,) in conn.execute("SELECT wikidata_id FROM buildings WHERE wikidata_id IS NOT NULL")}
-    keep = KINDS + LORE + MARITIME + ("plaque", "find", "object", "event")
-    q = ",".join("?" for _ in keep)
-    existing = {w: (i, k) for i, w, k in conn.execute(
-        f"SELECT id, wikidata_id, kind FROM places WHERE wikidata_id IS NOT NULL AND kind NOT IN ({q})", keep)}
-    moved = [(r["kind_label"], existing[r["id"]][0]) for r in recs if r["id"] in existing and r["id"] not in in_catalogue
-             and not (r["kind"] == "ug_mine" and existing[r["id"]][1] == "mine")]
-    new = [r for r in recs if r["id"] not in in_catalogue and r["id"] not in existing]
-    intros = wikipedia_intros([r["wikipedia_title"] for r in new if r.get("wikipedia_title")])
-    for r in new:
-        got = intros.get(r.get("wikipedia_title") or "") or {}
-        r["wikipedia_extract"] = (got.get("extract") or "")[:900] or None
-        r["image_thumb"] = got.get("image")
-    q = ",".join("?" for _ in KINDS)
-    conn.execute(f"DELETE FROM places_fts WHERE id IN (SELECT id FROM places WHERE kind IN ({q}))", KINDS)
-    conn.execute(f"DELETE FROM places WHERE kind IN ({q})", KINDS)
-    ph = ", ".join("?" for _ in PLACE_COLUMN_NAMES)
-    conn.executemany(f"INSERT OR REPLACE INTO places VALUES ({ph})", [[r.get(c) for c in PLACE_COLUMN_NAMES] for r in new])
-    cols = places_db.PLACE_FTS
-    conn.executemany(f"INSERT INTO places_fts (id, {', '.join(cols)}) VALUES (?, {', '.join('?' for _ in cols)})",
-                     [[r["id"]] + [r.get(c) or "" for c in cols] for r in new])
-    conn.executemany("UPDATE places SET kind_group = ?, kind_label = ? WHERE id = ?", [(GROUP, lab, i) for lab, i in moved])
+    # mines dated 1700–1914 stay in Industrial heritage
+    place_stage.write(conn, recs, KINDS, GROUP, lambda kind, r: not (r["kind"] == "ug_mine" and kind == "mine"),
+                      lambda m: log(f"[{time.time() - t0:5.0f}s] {m}"))
     conn.commit()
-    log(f"[{time.time() - t0:5.0f}s] underground: {len(new)} new places, {len(moved)} existing places regrouped, "
-        f"{sum(1 for r in recs if r['id'] in in_catalogue)} already catalogue buildings")
 
 
 def report(log=print):
-    conn = connect()
-    log(json.dumps(dict(conn.execute("SELECT kind_label, COUNT(*) FROM places WHERE kind_group = ? GROUP BY 1", (GROUP,))
-                        .fetchall()), indent=1))
+    log(json.dumps(place_stage.report(connect(), GROUP), indent=1))
 
 
 def main():

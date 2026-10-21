@@ -19,11 +19,11 @@ anywhere.
 
 | | |
 |---|---|
-| **22,046** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **104,136** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections |
-| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **46,000** places with a photo |
+| **22,046** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **117,566** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges |
+| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **47,000** places with a photo |
 | **17,417** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
-| **2,407** stories, legends and ghost tales | **344** ready-made walks, rides, drives and long-distance ways |
-| **7,405** pronunciations (2,019 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
+| **2,438** stories, legends and ghost tales | **362** ready-made walks, rides, drives and long-distance ways |
+| **7,732** pronunciations (2,145 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
 
 ## Contents
 - [Features](#features)
@@ -80,7 +80,7 @@ anywhere.
 </table>
 
 ### Places, people and history
-- **Places of interest** in fourteen groups, as a list or a map: battles and sieges; archaeological
+- **Places of interest** in fifteen groups, as a list or a map: battles and sieges; archaeological
   sites (every register's scheduled monuments); lost places; parks, gardens and trees; industrial
   heritage; finds and treasures; plaques (Wikidata and Open Plaques); history events; **legends and
   literature** (haunted places, Arthurian sites, holy wells, the settings of novels and poems);
@@ -90,7 +90,13 @@ anywhere.
   catacombs, Bazalgette's sewers); **military heritage** (the Saxon burhs of the Burghal Hidage,
   Henry VIII's Device Forts, Martello towers, Palmerston forts, batteries, barracks, pillboxes, radar
   stations and sound mirrors, airfields, prisoner-of-war camps, war memorials); and **museums and
-  collections** (museums of every kind, art galleries, libraries and archives).
+  collections** (museums of every kind, art galleries, libraries and archives, with the Mapping Museums
+  database's subject, governance, accreditation and opening and closing years, closed museums
+  included); and **bridges** (clapper and packhorse bridges, aqueducts, viaducts, swing and suspension
+  bridges, footbridges and road bridges).
+- **Domesday Book:** buildings and places in a settlement recorded in Domesday Book (1086) say so.
+- **Then:** paintings, prints and drawings of a building or place made before 1950 (Turner's
+  Caerlaverock, Billings' drawings), from Wikidata and Wikimedia Commons.
 - **Kept here:** a museum's page lists its best-known objects (the Rosetta Stone and the Lewis
   chessmen at the British Museum, *Mallard* at the National Railway Museum), and finds and hoards link
   to the museum that holds them.
@@ -114,9 +120,9 @@ anywhere.
   witches of the Rollright Stones, priest holes and smugglers' tunnels. They come from each record's
   Wikipedia article, in four themes (ghosts, legends, folklore, curious history), with a map and
   **read aloud**.
-- **344 ready-made tours:** walks around historic towns, bike rides and drives, by theme (ghosts and
+- **362 ready-made tours:** walks around historic towns, bike rides and drives, by theme (ghosts and
   legends, prehistoric, castles, churches, Roman, literary, maritime, industrial, Victorian,
-  underground, coastal defences, military heritage, museums and galleries), plus
+  underground, coastal defences, military heritage, museums and galleries, bridges), plus
   **89 long-distance and pilgrim ways** in day stages. Routes follow real paths and roads, with
   distance, time, an **elevation profile** and how hilly it is.
 - **Your tour:** star (☆) anything to add it, or let the planner **suggest a tour** from a starting
@@ -251,7 +257,7 @@ local web app on http://127.0.0.1:5050               dist/: static copy, API ans
 
 ## Testing
 ```sh
-.venv/bin/python -m unittest discover tests                         # 70 unit tests
+.venv/bin/python -m unittest discover tests                         # 77 unit tests
 node tests/ui_prefs_test.js                                          # preference logic
 .venv/bin/python -m tests.ui_check --base http://127.0.0.1:5050      # every page loads without errors
 node tests/ui_review.mjs --base http://127.0.0.1:5050                # full GUI review
@@ -268,6 +274,7 @@ the figures in this README.
 - **Data:** each source keeps its own licence; [DATA_LICENSE.md](DATA_LICENSE.md) lists them with
   the credits to keep:
   - Wikidata and Open Plaques: CC0;
+  - Mapping Museums (Birkbeck): CC BY 4.0;
   - Wikipedia text: CC BY-SA 4.0 (share-alike);
   - OpenStreetMap data: ODbL (share-alike);
   - Historic England, Historic Environment Scotland, Cadw and Northern Ireland's Historic

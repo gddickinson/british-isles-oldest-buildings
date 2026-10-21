@@ -317,3 +317,26 @@
 - Published: pushed to GitHub; database release `db-2026-10-21-2` (62 MB; `data/bundled.json`); hosted copy
   re-exported and republished (versions 37–38, 25 changed files, 103 MB in two publishes). README updated.
 - Not done: MU2 (Mapping Museums), MU4 opening hours beyond OSM, stop lines drawn as lines.
+
+## 2026-10-21 (night, continued) — bridges, Mapping Museums, Domesday, paintings
+- `bidb/place_stage.py`: the group stages (underground, military, museums, bridges) share query,
+  subclass_items, rows_for and write (catalogue buildings stay; kinds of the other group stages are
+  `protected` and never move). Refactor checked: same counts as before (1,849/401, 9,184/2, 4,366/48).
+- B1–B2 `bidb/bridges.py` → "Bridges": 13,502 bridges on Wikidata by type; 12,688 new places, 334 regrouped,
+  471 in the catalogue; tour theme (17 tours). Colour g15, icon, help.
+- MU2 `bidb/mapping_museums.py`: Mapping Museums Data, September 2021 (Birkbeck, CC BY 4.0,
+  doi:10.18743/DATA.00171, credit in DATA_LICENSE.md): 4,191 museums; 2,883 matched Wikidata museums
+  (subject, governance, accreditation, size, opened/closed shown on their page), 566 catalogue buildings,
+  742 added (122 closed).
+- S1 `bidb/domesday.py` (in part): 17,742 records in one of 13,232 settlements with an OpenDomesday ID
+  (Wikidata P3118); line in "Getting there"; `data/domesday.json` when hosted. Open Domesday's API returns 404,
+  so no households/mills/landholders.
+- S2 `bidb/depictions.py` + `static/then.js` (Wikidata part): 3,095 paintings, prints and drawings (before
+  1950) of 898 buildings and places, repeated impressions of one print dropped; "Then" gallery in detail views
+  (a list of links when hosted).
+- S4 checked: Canmore has 320,000+ sites and no clear licence on the download; left for a decision.
+- Follow-on stages rerun: stories 2,438, tours 362, pronunciations 7,732, visiting. Places 117,566.
+- Checks: 77 unit tests; ui_check 26/26; ui_review places layers 15/15; static export reviewed (pages,
+  pop-ups, places 42/42 after a rerun: one connection reset from the local test file server).
+- Not published yet: GitHub push, hosted copy and database release wait for the user.
+

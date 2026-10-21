@@ -29,7 +29,8 @@ from .classify import period_for
 from .config import DATA_DIR
 from .db import connect
 from .maritime import _record
-from .underground import _query
+from . import place_stage
+from .place_stage import query as _query
 
 GROUP = "Military heritage"
 BURHS = DATA_DIR / "curated" / "burhs.json"
@@ -111,43 +112,17 @@ def build(log=print):
 
 
 def run(log=print):
-    from . import places_db
-    from .enrich import wikipedia_intros
-    from .place_records import PLACE_COLUMN_NAMES
     t0 = time.time()
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
     recs = build(log)
-    in_catalogue = {q for (q,) in conn.execute("SELECT wikidata_id FROM buildings WHERE wikidata_id IS NOT NULL")}
-    existing = {w: (i, k) for i, w, k in conn.execute(
-        f"SELECT id, wikidata_id, kind FROM places WHERE wikidata_id IS NOT NULL AND kind NOT IN "
-        f"({','.join('?' for _ in KINDS)})", KINDS)}
-    moved = [(r["kind_label"], existing[r["id"]][0]) for r in recs if r["id"] in existing
-             and r["id"] not in in_catalogue and existing[r["id"]][1] in REGROUP_FROM]
-    new = [r for r in recs if r["id"] not in in_catalogue and r["id"] not in existing]
-    intros = wikipedia_intros([r["wikipedia_title"] for r in new if r.get("wikipedia_title")])
-    for r in new:
-        got = intros.get(r.get("wikipedia_title") or "") or {}
-        r["wikipedia_extract"] = (got.get("extract") or "")[:900] or None
-        r["image_thumb"] = got.get("image")
-    q = ",".join("?" for _ in KINDS)
-    conn.execute(f"DELETE FROM places_fts WHERE id IN (SELECT id FROM places WHERE kind IN ({q}))", KINDS)
-    conn.execute(f"DELETE FROM places WHERE kind IN ({q})", KINDS)
-    ph = ", ".join("?" for _ in PLACE_COLUMN_NAMES)
-    conn.executemany(f"INSERT OR REPLACE INTO places VALUES ({ph})", [[r.get(c) for c in PLACE_COLUMN_NAMES] for r in new])
-    cols = places_db.PLACE_FTS
-    conn.executemany(f"INSERT INTO places_fts (id, {', '.join(cols)}) VALUES (?, {', '.join('?' for _ in cols)})",
-                     [[r["id"]] + [r.get(c) or "" for c in cols] for r in new])
-    conn.executemany("UPDATE places SET kind_group = ?, kind_label = ? WHERE id = ?", [(GROUP, lab, i) for lab, i in moved])
+    place_stage.write(conn, recs, KINDS, GROUP, lambda kind, r: kind in REGROUP_FROM,
+                      lambda m: log(f"[{time.time() - t0:5.0f}s] {m}"))
     conn.commit()
-    log(f"[{time.time() - t0:5.0f}s] military heritage: {len(new)} new places, {len(moved)} existing places regrouped, "
-        f"{sum(1 for r in recs if r['id'] in in_catalogue)} already catalogue buildings")
 
 
 def report(log=print):
-    conn = connect()
-    log(json.dumps(dict(conn.execute("SELECT kind_label, COUNT(*) FROM places WHERE kind_group = ? GROUP BY 1", (GROUP,))
-                        .fetchall()), indent=1))
+    log(json.dumps(place_stage.report(connect(), GROUP), indent=1))
 
 
 def main():

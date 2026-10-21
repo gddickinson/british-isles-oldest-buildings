@@ -27,6 +27,18 @@ def visiting(rid):
     return jsonify(visit(conn(), rid))
 
 
+@bp.route("/api/depictions/<path:rid>")
+def depictions(rid):
+    from bidb.depictions import for_record
+    return jsonify(for_record(conn(), rid))
+
+
+@bp.route("/api/domesday/<path:rid>")
+def domesday(rid):
+    from bidb.domesday import for_record
+    return jsonify(for_record(conn(), rid))
+
+
 @bp.route("/api/stories")
 def search():
     a = request.args

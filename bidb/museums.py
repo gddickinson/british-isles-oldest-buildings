@@ -26,7 +26,8 @@ from urllib.parse import unquote
 from .db import connect
 from .http import sparql
 from .maritime import _record
-from .underground import _query
+from . import place_stage
+from .place_stage import query as _query, rows_for, subclass_items
 
 GROUP = "Museums & collections"
 MUSEUM = "Q33506"
@@ -52,16 +53,6 @@ REGROUP_FROM = ("industrial", "victorian_public", "victorian_leisure", "victoria
                 "warehouse", "mill", "mine", "ironworks", "kiln")
 
 
-def _classes():
-    """{qid: set of P31 classes} for every museum in the isles (one query per country)."""
-    out = {}
-    for c in COUNTRIES:
-        for r in sparql(f"""SELECT DISTINCT ?i ?cls WHERE {{ ?i wdt:P31 ?cls ; wdt:P17 {c} ; wdt:P625 [] .
-                ?cls wdt:P279* wd:{MUSEUM} . }}"""):
-            out.setdefault(r["i"]["value"].rsplit("/", 1)[-1], set()).add(r["cls"]["value"].rsplit("/", 1)[-1])
-    return out
-
-
 def _kind(classes):
     for kind, (_, cls) in KIND_CLASSES.items():
         if classes & cls:
@@ -70,24 +61,21 @@ def _kind(classes):
 
 
 def build(log=print):
-    classes = _classes()
+    classes = subclass_items(MUSEUM)
     for cls, wp_only in OTHER_CLASSES.items():
         for r in _query(f"?i wdt:P31 wd:{cls} .", wp_only):
             classes.setdefault(r["i"]["value"].rsplit("/", 1)[-1], set()).add(cls)
     keep = {q: c for q, c in classes.items() if not c <= NOT_MUSEUM}
     recs = {}
-    ids = sorted(keep)
-    for i in range(0, len(ids), 300):
-        for r in _query(f"VALUES ?i {{ {' '.join('wd:' + q for q in ids[i:i + 300])} }}"):
-            qid = r["i"]["value"].rsplit("/", 1)[-1]
-            kind = _kind(keep[qid])
-            x = _record(kind, LABELS[kind], r)
-            if not x or x["id"] in recs:
-                continue
-            if x["date_text"] and x["date_text"].startswith("until") or DEFUNCT in keep[qid] or (
-                    r.get("end") and r["end"]["value"]):
-                x["type"] = f"{LABELS[kind]} (closed)"
-            recs[x["id"]] = x
+    for r in rows_for(keep):
+        qid = r["i"]["value"].rsplit("/", 1)[-1]
+        kind = _kind(keep[qid])
+        x = _record(kind, LABELS[kind], r)
+        if not x or x["id"] in recs:
+            continue
+        if DEFUNCT in keep[qid] or (r.get("end") and r["end"]["value"]):
+            x["type"] = f"{LABELS[kind]} (closed)"
+        recs[x["id"]] = x
     for r in recs.values():
         r["kind_group"] = GROUP
     log(f"  museums and collections: {len(recs)} "
@@ -123,9 +111,6 @@ def kept_here(museum_ids, log=print):
 
 
 def run(log=print):
-    from . import places_db
-    from .enrich import wikipedia_intros
-    from .place_records import PLACE_COLUMN_NAMES
     t0 = time.time()
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
@@ -133,44 +118,21 @@ def run(log=print):
     kept = kept_here([r["id"] for r in recs], log)
     for r in recs:
         if kept.get(r["id"]):
-            r["extra"] = json.dumps({"kept_here": kept[r["id"]]}, ensure_ascii=False)
-    in_catalogue = {q for (q,) in conn.execute("SELECT wikidata_id FROM buildings WHERE wikidata_id IS NOT NULL")}
-    existing = {w: (i, k) for i, w, k in conn.execute(
-        f"SELECT id, wikidata_id, kind FROM places WHERE wikidata_id IS NOT NULL AND kind NOT IN "
-        f"({','.join('?' for _ in KINDS)})", KINDS)}
-    moved = [(r["kind_label"], existing[r["id"]][0]) for r in recs if r["id"] in existing
-             and r["id"] not in in_catalogue and existing[r["id"]][1] in REGROUP_FROM]
-    new = [r for r in recs if r["id"] not in in_catalogue and r["id"] not in existing]
-    intros = wikipedia_intros([r["wikipedia_title"] for r in new if r.get("wikipedia_title")])
-    for r in new:
-        got = intros.get(r.get("wikipedia_title") or "") or {}
-        r["wikipedia_extract"] = (got.get("extract") or "")[:900] or None
-        r["image_thumb"] = got.get("image")
-    q = ",".join("?" for _ in KINDS)
-    conn.execute(f"DELETE FROM places_fts WHERE id IN (SELECT id FROM places WHERE kind IN ({q}))", KINDS)
-    conn.execute(f"DELETE FROM places WHERE kind IN ({q})", KINDS)
-    ph = ", ".join("?" for _ in PLACE_COLUMN_NAMES)
-    conn.executemany(f"INSERT OR REPLACE INTO places VALUES ({ph})", [[r.get(c) for c in PLACE_COLUMN_NAMES] for r in new])
-    cols = places_db.PLACE_FTS
-    conn.executemany(f"INSERT INTO places_fts (id, {', '.join(cols)}) VALUES (?, {', '.join('?' for _ in cols)})",
-                     [[r["id"]] + [r.get(c) or "" for c in cols] for r in new])
-    conn.executemany("UPDATE places SET kind_group = ?, kind_label = ? WHERE id = ?", [(GROUP, lab, i) for lab, i in moved])
-    for qid, objs in kept.items():                         # regrouped places keep their extras and get these
-        if qid in existing and qid not in in_catalogue and existing[qid][0] in {i for _, i in moved}:
-            pid = existing[qid][0]
+            r["extra"] = {"kept_here": kept[r["id"]]}
+    stamp = lambda m: log(f"[{time.time() - t0:5.0f}s] {m}")
+    _, moved, in_catalogue = place_stage.write(conn, recs, KINDS, GROUP, lambda kind, r: kind in REGROUP_FROM, stamp)
+    for pid, qid in conn.execute(f"SELECT id, wikidata_id FROM places WHERE id IN ({','.join('?' for _ in moved)})",
+                                 moved).fetchall():
+        if kept.get(qid):                              # regrouped places keep their extras and get these
             (extra,) = conn.execute("SELECT extra FROM places WHERE id = ?", (pid,)).fetchone()
             e = json.loads(extra) if extra else {}
-            e["kept_here"] = objs
+            e["kept_here"] = kept[qid]
             conn.execute("UPDATE places SET extra = ? WHERE id = ?", (json.dumps(e, ensure_ascii=False), pid))
     objs = object_places(conn, kept, {r["id"]: r for r in recs}, in_catalogue)
-    conn.executemany(f"INSERT OR REPLACE INTO places VALUES ({ph})", [[r.get(c) for c in PLACE_COLUMN_NAMES] for r in objs])
-    conn.executemany(f"INSERT INTO places_fts (id, {', '.join(cols)}) VALUES (?, {', '.join('?' for _ in cols)})",
-                     [[r["id"]] + [r.get(c) or "" for c in cols] for r in objs])
+    place_stage.insert(conn, objs)
     linked = link_finds(conn, recs)
     conn.commit()
-    log(f"[{time.time() - t0:5.0f}s] museums: {len(new)} new places, {len(moved)} existing places regrouped, "
-        f"{sum(1 for r in recs if r['id'] in in_catalogue)} already catalogue buildings, {len(objs)} objects, "
-        f"{linked} finds linked")
+    stamp(f"{len(objs)} objects kept in museums, {linked} finds linked to their museum")
 
 
 def object_places(conn, kept, museums, in_catalogue):
@@ -219,9 +181,7 @@ def link_finds(conn, recs):
 
 
 def report(log=print):
-    conn = connect()
-    log(json.dumps(dict(conn.execute("SELECT kind_label, COUNT(*) FROM places WHERE kind_group = ? GROUP BY 1", (GROUP,))
-                        .fetchall()), indent=1))
+    log(json.dumps(place_stage.report(connect(), GROUP), indent=1))
 
 
 def main():

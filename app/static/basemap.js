@@ -394,9 +394,13 @@ const Basemap = (() => {
   const mountTransport = async (el) => {
     el.dataset.transportDone = "1";
     const [lat, lon] = el.dataset.transport.split(",").map(Number);
-    const [near, visit] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
-      el.dataset.visit ? api("/api/visiting/" + encodeURIComponent(el.dataset.visit)).catch(() => null) : null]);
+    const id = el.dataset.visit && encodeURIComponent(el.dataset.visit);
+    const [near, visit, dom] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
+      id ? api("/api/visiting/" + id).catch(() => null) : null, id ? api("/api/domesday/" + id).catch(() => null) : null]);
     const lines = [];
+    if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
+      esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book
+      <span class="hint">(<a href="https://opendomesday.org/" target="_blank" rel="noopener">Open Domesday</a>)</span>`);
     if (visit) {
       const bits = [visit.operator && `Looked after by ${esc(visit.operator)}`, visit.opening_hours && `Open: <code>${esc(visit.opening_hours)}</code>`,
         FEE[visit.fee] || (visit.fee && `Entry: ${esc(visit.fee)}`), ACCESS[visit.wheelchair],

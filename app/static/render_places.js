@@ -1,10 +1,10 @@
 // Places of interest and people: colours, cards, detail views and a shared modal.
 const PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
   "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
-    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections"];
+    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges"];
 const PLACE_ICON = { "Battles & sieges": "⚔", "Archaeological sites": "🪨", "Lost places": "🏚",
   "Parks, gardens & trees": "🌳", "Industrial heritage": "⚙", "Finds & treasures": "💰",
-  "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩", "Underground": "🚇", "Military heritage": "🛡", "Museums & collections": "🏛" };
+  "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩", "Underground": "🚇", "Military heritage": "🛡", "Museums & collections": "🏛", "Bridges": "🌉" };
 const EXTRA_LABELS = { part_of: "Part of", now_in: "Now kept at", found_at: "Found at",
   commemorates: "Commemorates", inscription: "Inscription", region: "Region", register_ref: "Register reference",
   works: "Works set here" };
@@ -66,7 +66,7 @@ function nearbyPlacesHTML(places, title) {
 }
 
 // extras with their own rendering: objects a museum keeps, museum links for "now kept at"
-const SPECIAL_EXTRA = ["kept_here", "now_in_ids"];
+const SPECIAL_EXTRA = ["kept_here", "now_in_ids", "mapping_museums"];
 // "place:<id>" or "building:<id>" (bidb/museums.py link_finds)
 const museumLink = (name, ref) => {
   if (!ref) return esc(name);
@@ -75,6 +75,14 @@ const museumLink = (name, ref) => {
     : `<a href="#" data-place="${esc(id)}">${esc(name)}</a>`;
 };
 const fieldHTML = (label, html) => (html ? `<dt>${esc(label)}</dt><dd>${html}</dd>` : "");
+// details from the Mapping Museums database (bidb/mapping_museums.py), CC BY 4.0
+function mappingMuseumsHTML(m) {
+  if (!m) return "";
+  const rows = [["Subject", m.subject], ["Run by", m.governance], ["Accreditation", m.accreditation], ["Size", m.size],
+    ["Opened", m.opened], ["Closed", m.closed]].filter(([, v]) => v);
+  return `${rows.map(([k, v]) => field(k, v)).join("")}<dt>Museum data</dt><dd><a href="https://doi.org/10.18743/DATA.00171"
+    target="_blank" rel="noopener">Mapping Museums</a> (Birkbeck, CC BY 4.0)</dd>`;
+}
 function keptHereHTML(objs) {
   if (!objs || !objs.length) return "";
   return `<h4>Kept here</h4><ul class="nearby kept-here">${objs.map(([name, title, qid, type]) => `<li>${title
@@ -107,12 +115,13 @@ function placeDetailHTML(p) {
         <span class="chip">${esc(p.type || p.kind_label)}</span>${p.nation ? `<span class="chip">${esc(p.nation)}</span>` : ""}
         ${p.period && p.period !== "Unknown" ? `<span class="chip">${esc(p.period)}</span>` : ""}</div>
       <dl>${field("Date", p.date_text)}${field("Where", p.locality)}${field("Designation", p.designation)}
-        ${field("Source", p.source)}${extra}
+        ${field("Source", p.source)}${extra}${mappingMuseumsHTML(ex.mapping_museums)}
         ${field("Coordinates", p.lat != null ? `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}` : "")}</dl>
       ${p.building_id ? `<p>Kept in: <a href="${buildingUrl(p.building_id)}" data-open="${esc(p.building_id)}">${esc(p.locality || "the building")}</a></p>` : ""}
       ${keptHereHTML(ex.kept_here)}
       ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}` : ""}
       <div class="stories-box" data-stories="${esc(p.id)}"></div>
+      <div class="then-box" data-then="${esc(p.id)}"></div>
       ${peopleByRoleHTML(p.people)}
       ${p.lat != null ? `<p class="getting-there" data-transport="${p.lat},${p.lon}" data-visit="${esc(p.id)}"></p>` : ""}
       <div class="links">${links}</div>

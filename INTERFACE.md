@@ -2,9 +2,9 @@
 
 British Isles Oldest Buildings: a SQLite catalogue of buildings and structures in the UK, Ireland,
 the Isle of Man and the Channel Islands — everything begun before 1500 (configurable), the oldest
-surviving examples of each building type, and landmark buildings of any date — plus ~104,000
+surviving examples of each building type, and landmark buildings of any date — plus ~117,000
 places of interest (battles, archaeology, lost places, gardens, trees, industrial sites, finds,
-plaques, history events, underground works, military heritage, museums) from Wikidata and the official heritage registers, and the people
+plaques, history events, underground works, military heritage, museums, bridges) from Wikidata and the official heritage registers, and the people
 connected with them. Flask web GUI, a history of the British Isles, and a static export.
 
 ## Data flow
@@ -62,7 +62,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `queries.py` | Timeline, dashboard stats, nearby, gaps, oldest by category | `timeline`, `dashboard`, `nearby`, `gaps`, `oldest_by_category` |
 | `landmarks.py` | Important buildings of any date: Grade I / Category A / NI Grade A / World Heritage, widely known structures, Crown Dependency heritage | `find_landmarks`, `TOP_GRADES` |
 | `niah.py` | NIAH (Ireland) buildings dated before 1500 as catalogue records | `niah_records` |
-| `build.py` | CLI pipeline: `python -m bidb.build [--cutoff YEAR] [--no-places] [--refresh-days N] [--refresh SOURCES]`; stages (buildings, places, legends, maritime, era, underground, military, museums, nations, pronunciations, stories, timelines, tours, on this day, visiting) run through `progress.run_stages` | `run`, `stages`, `early_monuments` |
+| `build.py` | CLI pipeline: `python -m bidb.build [--cutoff YEAR] [--no-places] [--refresh-days N] [--refresh SOURCES]`; stages (buildings, places, legends, maritime, era, underground, military, museums, Mapping Museums, bridges, nations, pronunciations, Domesday, stories, timelines, tours, on this day, visiting) run through `progress.run_stages` | `run`, `stages`, `early_monuments` |
 | `place_kinds.py` | Place kinds (Wikidata classes/designations, geography rule), 8 place groups, archaeology roots | `KINDS`, `PLACE_GROUPS`, `ARCH_ROOTS`, `in_box` |
 | `place_fetch.py` | Small SPARQL queries per kind: base items, details, dates, extras | `base_items`, `details`, `dates`, `extras` |
 | `place_records.py` | Place record schema and assembly | `PLACE_COLUMNS`, `blank`, `from_wikidata` |
@@ -93,14 +93,19 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `lore_places.py` | CLI/build stage after places: places of legend (Wikidata mythical locations, fairy forts, Arthurian category, `data/curated/legendary_places.json`), reportedly haunted places (Wikipedia categories), holy wells, literary places (settings of notable works, P840) → places group "Legends & literature" | `run`, `build`, `category_pages`, `literary` |
 | `maritime.py` | CLI/build stage: harbours, docks, shipyards, ropewalks, custom houses, lighthouses, lifeboat stations, naval bases, museum ships, shipbuilding firms (Wikidata) → places group "Maritime heritage" | `run`, `build`, `CLASSES` |
 | `era_places.py` | CLI/build stage: Industrial Revolution sites 1700–1914 (mills, mines, ironworks, canals, railways by opening date, engine houses, kilns, iron bridges, warehouses) → "Industrial heritage"; Victorian public buildings, piers, glasshouses and Victorian-style buildings 1837–1901 → "Victorian era" | `run`, `build`, `INDUSTRIAL`, `VICTORIAN` |
+| `place_stage.py` | Shared by the group stages below: `query` (items with coordinates, opening/closing years, disused/cancelled states), `subclass_items` (items of a class and its subclasses, per country), `rows_for`, `write` (replace a stage's places, regroup existing ones, catalogue buildings stay; `protected` kinds of the other group stages never move), `insert`, `report` | `query`, `subclass_items`, `write`, `protected` |
 | `underground.py` | CLI/build stage after era_places: tube, subway and metro stations (closed ones as ghost stations; `still_open` overrides), railway/canal/road/foot tunnels, shelters and bunkers, caves and mines, ice houses, grottoes, catacombs, sewers (Wikidata + `data/curated/underground_sites.json`) → places group "Underground"; `_query` (items with opening/closing years) is shared with military and museums | `run`, `build`, `CLASSES`, `KINDS`, `_query` |
 | `military.py` | CLI/build stage after underground: Saxon burhs (`data/curated/burhs.json`), Martello towers, forts from 1500 (Device and Palmerston Forts), batteries, barracks, pillboxes, radar and sound mirrors, airfields, POW camps, defence lines, war memorials → "Military heritage" | `run`, `build`, `CLASSES`, `KINDS` |
 | `museums.py` | CLI/build stage after military: museums of every kind (subclasses of museum, by type; closed ones marked), art galleries, libraries and archives → "Museums & collections"; best-known objects per museum (`extra.kept_here`, P195/P276); finds linked to their museum (`extra.now_in_ids`) | `run`, `build`, `kept_here`, `link_finds`, `KINDS` |
+| `mapping_museums.py` | CLI/build stage after museums: Mapping Museums database (Birkbeck, CC BY 4.0, 4,191 UK museums 1960–2021) matched to Wikidata museums within 500 m by name (`extra.mapping_museums`: subject, governance, accreditation, size, opened, closed); the rest added as `mm_museum` places | `run`, `rows`, `match`, `similar`, `years` |
+| `bridges.py` | CLI/build stage after mapping_museums: every bridge on Wikidata (subclasses of bridge) by type (early crossings, aqueducts, moving, suspension, railway, foot, other) → "Bridges"; culverts and subways left out | `run`, `build`, `KIND_CLASSES`, `KINDS` |
 | `nation_geo.py` | CLI/build stage after the place stages: nation for places without one, from Wikidata's administrative areas (P131) or else location (county/council outlines in land.json, each UK area voted by the buildings inside it; nearest buildings at borders and offshore) | `run`, `NationFinder` |
 | `tour_elevation.py` | Elevation profiles (OpenTopoData EU-DEM 25 m, ~every 500 m), climb (changes of 3 m or more) and hilliness (under 20 m climb is flat); polyline encode/decode | `profile`, `encode`, `decode`, `sample`, `hilliness` |
 | `tour_trails.py` | National trails (map trails layer) and OSM pilgrim ways as multi-day walks: sights within 1.5 km in order along the path, ~20 km day stages | `routes`, `sights`, `stages` |
 | `timeline.py` | CLI/build stage: dated events per building from the cached articles → table `timeline` (`python -m bidb.timeline [id]`) | `run`, `events`, `for_record` |
 | `on_this_day.py` | CLI/build stage: births/deaths (people), battles/events (places), founded/opened (buildings) known to the day on Wikidata → table `on_this_day`; Julian dates converted back | `run`, `for_day`, `gregorian_to_julian` |
+| `depictions.py` | CLI/build stage: paintings, prints and drawings (made before 1950 or undated) that depict a building or place (Wikidata P180 with an image) → table `depictions` (title, artist, year, Commons file, thumb), oldest first, 12 per record | `run`, `find`, `for_record` |
+| `domesday.py` | CLI/build stage after pronunciations: "recorded in Domesday Book" → table `domesday` (record, settlement, Open Domesday id, itself) from Wikidata P3118 on the record or its town (`pron_towns`) | `run`, `settlements`, `for_record` |
 | `visiting.py` | CLI/build stage: opening hours, fee, operator, wheelchair, website from OSM objects tagged wikidata=* → table `visiting` | `run`, `fetch`, `for_record` |
 | `commons_plans.py` | Floor plans from Commons "Plans of <building>" categories matched via P373 | `plans`, `plan_categories`, `best_file` |
 
@@ -118,14 +123,14 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `jobs.py` | Long jobs run detached (own session; survive closing the GUI): `JOBS` build, photos, footprints, maplayers, export, package, bundled (download + unpack); `python -m app.jobs run <name> [options]`; one at a time, stop = SIGTERM to the group | `JOBS`, `steps`, `start`, `stop`, `status`, `running` |
 | `jobs_api.py` | `/api/jobs` (+ `/start`, `/stop`), `/api/setup` (bundled / use folder / build); redirects pages to `/setup` while there is no database | `bp` |
 | `places_api.py` | `/api/places`, `/api/places/facets`, `/api/places/map`, `/api/places/near`, `/api/place/<id>`, `/api/related/<building id>`, `/api/people`, `/api/people/roles`, `/api/person/<id>` |
-| `stories_api.py` | `/api/stories/<id>`, `/api/stories` (q, kind, nation), `/api/stories_counts`, `/api/timeline/<id>`, `/api/visiting/<id>` |
+| `stories_api.py` | `/api/stories/<id>`, `/api/stories` (q, kind, nation), `/api/stories_counts`, `/api/timeline/<id>`, `/api/visiting/<id>`, `/api/domesday/<id>`, `/api/depictions/<id>` |
 | `street_api.py`, `street_tiles.py` | "Save this area for offline": street-level vector tiles (Protomaps daily build, zoom 10–15) for the map view → `<cache>/street_tiles.sqlite`; `/api/street_tiles` (GET/POST/DELETE), `/tiles/<z>/<x>/<y>.mvt`; `/historic_tiles/<layer>/<z>/<x>/<y>.webp` (bundled historic tiles, fallback when a map server is down) |
 | `tours_api.py` | `/api/tours` (mode, theme, nation, q), `/api/tour/<id>`, `/api/route` (builder routes via OSRM), `/api/tour_candidates` (scored stops near a point) |
 | `pron_api.py` | `/api/pron/<id>` (record + town), `/api/pronunciations` (guide), `/api/pronunciations/varieties`, `/api/pronunciations/coverage` |
 | `pages.py` | HTML routes: `/`, `/building/<id>`, `/map`, `/places`, `/people`, `/history`, `/oldest`, `/stats`, `/compare`, `/data`, `/pronunciation`, `/stories`, `/tours` (`/trip` → tours), `/quiz`, `/sw.js`, `/setup` (first run), `/settings`, `/help` (+ `/help/img/<name>` from `docs/img`); `STATIC_MODE` flag |
 | `static_export.py` | `python -m app.static_export` → `dist/` static site (data split into ≤9 MB JSON shards; thumbnails, detail-only fields and outlines in small files loaded on demand: `_split_lazy`, row keys `t`/`d`) |
 | `static_places.py` | Static export of places and people |
-| `static_tours.py` | Static export of stories, tours, on this day, visiting info (`data/stories.json`, `tours.json`, `on_this_day.json`, `visiting.json`); story kinds per catalogue row (`sk`) |
+| `static_tours.py` | Static export of stories, tours, on this day, visiting info (`data/stories.json`, `tours.json`, `on_this_day.json`, `visiting.json`, `domesday.json`, `depictions.json`); story kinds per catalogue row (`sk`) |
 | `static_pron.py` | Static export of pronunciations → `data/pron.json` (rows, record→town links, coverage) |
 | `basemap_sources.py`, `basemap_build.py`, `geo_simplify.py` | Offline map: download Natural Earth / GeoNames / OSM (incl. railway and bus stations, underground railways and tunnels, pillboxes and bunkers) / Historic County Borders Project, simplify, write `static/data/basemap/*.json` (`python -m app.basemap_build`) |
 | `basemap_tiled.py` | Detailed offline-map layers in 1° tiles: minor roads (OSM secondary/tertiary), named streams and lakes (rings, filled; relations fetched with members), and one combined query split into walking routes (rwn/lwn), cycle routes (NCN/regional), Roman roads and buried (culverted) rivers → `static/data/basemap/{minor,streams,lakes,walking,cycling,roman,buried}/<lat>_<lon>.json` (compact integer steps) + `index.json`, loaded per view when zoomed in (`python -m app.basemap_tiled [minor] [streams] [lakes] [routes]`); `slim_cache` shrinks the cached Overpass responses |
@@ -137,6 +142,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `static/ui_export.js` | `ExportMenu`: page-aware data exports (server or in-browser CSV/GeoJSON/KML), screenshots, print, copy link |
 | `static/pron.js` | `Pron`: fills any `[data-pron]` element (detail views) with IPA / respelling / ▶ recording and town lines; guide search, varieties, coverage (hosted: from `data/pron.json`) |
 | `static/stories.js` | `Stories`: fills `[data-stories]` (detail views) with legends/ghosts/folklore and `[data-timeline]` with the building's timeline; read aloud (speech synthesis); search, counts, story cards (hosted: `data/stories.json`) |
+| `static/then.js` | `Then`: fills `[data-then]` (detail views) with paintings and prints of the record (thumbnails locally; a list of links when hosted, `data/depictions.json`) |
 | `static/on_this_day.js` | "On this day" on the History page (‹ › days) |
 | `static/quiz.js` | Quiz page: "Guess the period" from photographed, well-dated buildings |
 | `static/sw.js`, `static/manifest.webmanifest`, `static/icons/` | Installable app: service worker (served at `/sw.js`; pages, static files and opened records kept for offline use), manifest, icon |

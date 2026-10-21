@@ -9,8 +9,9 @@ from bidb.place_kinds import KIND_GROUP, KIND_LABEL, KINDS as BASE_KINDS, PLACE_
 class UndergroundKinds(unittest.TestCase):
     def test_kinds_do_not_collide(self):
         # each stage deletes its own kinds before writing: a shared key would delete another stage's places
-        from bidb import museums
+        from bidb import bridges, museums
         stages = [era_places.KINDS, maritime.KINDS, lore_places.KINDS, underground.KINDS, military.KINDS, museums.KINDS,
+                  bridges.KINDS,
                   [k["key"] for k in BASE_KINDS]]
         seen = set()
         for kinds in stages:
@@ -68,6 +69,39 @@ class MuseumKinds(unittest.TestCase):
         from bidb import museums
         self.assertEqual(museums._kind({"Q33506", "Q207694"}), "artmuseum")
         self.assertEqual(museums._kind({"Q33506"}), "museum")
+
+
+class MappingMuseums(unittest.TestCase):
+    def test_years(self):
+        from bidb.mapping_museums import span_text, years
+        self.assertIsNone(years("9999:9999"))
+        self.assertEqual(years("2007:2017"), (2007, 2017))
+        self.assertEqual(span_text((1971, 1971)), "1971")
+        self.assertEqual(span_text((2007, 2017)), "2007–2017")
+
+    def test_similar_names(self):
+        from bidb.mapping_museums import similar
+        self.assertTrue(similar("The Yorkshire Museum", "Yorkshire Museum"))
+        self.assertTrue(similar("Museum of London Docklands", "London Docklands Museum"))
+        self.assertFalse(similar("Science Museum", "Natural History Museum"))
+
+
+class BridgeKinds(unittest.TestCase):
+    def test_every_kind_has_label_and_group(self):
+        from bidb import bridges
+        self.assertIn(bridges.GROUP, PLACE_GROUPS)
+        for k in bridges.KINDS:
+            self.assertEqual(KIND_GROUP[k], bridges.GROUP, k)
+            self.assertEqual(KIND_LABEL[k], bridges.LABELS[k], k)
+
+    def test_kind_from_classes(self):
+        from bidb import bridges
+        self.assertEqual(bridges._kind({"Q12280", "Q7123018"}), "br_early")
+        self.assertEqual(bridges._kind({"Q537127"}), "bridge")
+
+    def test_group_stages_protect_each_other(self):
+        from bidb import place_stage, underground
+        self.assertTrue(set(underground.KINDS) <= place_stage.protected())
 
 
 if __name__ == "__main__":

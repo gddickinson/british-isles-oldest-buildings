@@ -27,6 +27,8 @@ PAGES = {
     "places_military": ("/places?kind_group=Military+heritage", r'data-place='),
     "museum_place": ("/places#Q2086562", r'Kept here'),
     "museum_building": ("/building/Q6373", r'Notable objects here'),
+    "places_bridges": ("/places?kind_group=Bridges", r'data-place='),
+    "building_then": ("/building/Q1025398", r'Then: paintings'),
     "people": ("/people", r'data-person=|class="person'),
     "pronunciation": ("/pronunciation?q=ll", r'class="ipa"|class="respell"'),
     "stories": ("/stories", r'class="story story-'),

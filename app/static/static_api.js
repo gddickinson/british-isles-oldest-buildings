@@ -41,7 +41,7 @@
     .then((parts) => parts.flatMap((p) => Object.entries(p).map(([id, o]) => ({ id, ...o })))));
 
   // Tours: data/tours.json; suggestions score the catalogue rows as bidb/tour_plan.interest does
-  let TOURS = null, VISITS = null;
+  let TOURS = null, VISITS = null, DOMESDAY = null;
   const tours = () => (TOURS = TOURS || fetch("data/tours.json").then((r) => r.json()).catch(() => []));
   const TOP = ["Grade I", "Category A", "Grade A", "World Heritage", "National Monument"];
   const interest = (r) => 1 + (r.landmark ? 3 : 0) + (r.oldest_of_type ? 2 : 0) + (r.curated ? 1.5 : 0) + (r.t != null ? 1.5 : 0)
@@ -234,6 +234,13 @@
       return rows.map(({ geometry, ...t }) => t);
     },
     async tour(p, f, id) { return (await tours()).find((t) => t.id === id); },
+    async domesday(p, f, id) {
+      DOMESDAY = DOMESDAY || fetch("data/domesday.json").then((r) => r.json()).catch(() => ({ s: {}, r: {} }));
+      const d = await DOMESDAY, m = d.r[id];
+      if (!m) return null;
+      const sid = m.replace(/^=/, ""), [settlement, od] = d.s[sid] || [];
+      return { entity_id: id, settlement_id: sid, settlement, od_id: od, itself: m.startsWith("=") ? 1 : 0 };
+    },
     async visiting(p, f, id) {
       VISITS = VISITS || fetch("data/visiting.json").then((r) => r.json()).catch(() => ({}));
       const v = (await VISITS)[id];
@@ -273,7 +280,7 @@
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);
-    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "quiz"].includes(name);
+    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "domesday", "quiz"].includes(name);
     return fn(u.searchParams, plain ? null : filtersFrom(u.searchParams), id);
   };
 })();

@@ -33,6 +33,9 @@ THEMES = {
                  or (r.get("category_group") == "Fortification" and (r.get("year_start") or 0) >= 1500)},
     "museums": {"title": "Museums & galleries", "test": lambda r: r.get("kind_group") == "Museums & collections"
                 and r.get("kind_label") != "Library or archive" and "(closed)" not in (r.get("type") or "")},
+    "bridges": {"title": "Bridges", "test": lambda r: r.get("kind_group") == "Bridges"
+                or ("Bridge" in (r.get("category") or "")           # the category also holds wells and dams
+                    and any(w in (r.get("name") or "").lower() for w in ("bridge", "viaduct", "aqueduct", "pont", "brig")))},
     "underground": {"title": "Underground", "test": lambda r: r.get("kind_group") == "Underground"},
     "literary": {"title": "Literary places", "test": lambda r: r.get("kind_label") == "Literary place" or r.get("writer")},
     "prehistoric": {"title": "Prehistoric", "test": lambda r: r.get("period") in ("Neolithic", "Bronze Age", "Iron Age")
@@ -55,7 +58,8 @@ PLAN = {("highlights", "walk"): 45, ("highlights", "cycle"): 25, ("highlights", 
         ("industrial", "drive"): 8, ("industrial", "cycle"): 5, ("victorian", "walk"): 8, ("victorian", "drive"): 4, ("churches", "cycle"): 6, ("churches", "drive"): 4, ("roman", "drive"): 4,
         ("roman", "walk"): 3, ("underground", "walk"): 6, ("underground", "drive"): 4,
         ("coastal", "cycle"): 5, ("coastal", "drive"): 6, ("military", "drive"): 6, ("military", "walk"): 3,
-        ("museums", "walk"): 10, ("museums", "drive"): 4}
+        ("museums", "walk"): 10, ("museums", "drive"): 4,
+        ("bridges", "walk"): 6, ("bridges", "cycle"): 5, ("bridges", "drive"): 6}
 # keep tours of the same theme and mode this far apart (km)
 APART = {"walk": 6, "cycle": 22, "drive": 60}
 COLUMNS = ["id", "mode", "theme", "title", "area", "nation", "summary", "distance_km", "duration_min",
@@ -145,6 +149,7 @@ def title_for(theme, mode, area):
             "coastal": f"Coastal defences of {area} ({noun})",
             "military": f"Military {area} ({noun})",
             "museums": f"Museums & galleries of {area} ({noun})",
+            "bridges": f"Bridges of {area} ({noun})",
             "prehistoric": f"Prehistoric {area} ({noun})",
             "castles": f"Castles of {area} ({noun})",
             "churches": f"Early churches around {area} ({noun})",

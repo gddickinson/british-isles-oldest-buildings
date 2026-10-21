@@ -287,6 +287,13 @@ Places of the imagination
       lines as drawn lines still to do: only the Taunton Stop Line has a point on Wikidata) Places group "Military heritage" with periods, a map layer for defensive lines, a tour theme
       ("Coastal defences", "Stop lines") and stories.
 
+## Bridges (planned 2026-10-21; before MU2)
+- [x] B1 (2026-10-21: 13,502 bridges on Wikidata, 12,688 new places + 334 regrouped; 471 in the catalogue) Bridges as a places group "Bridges": every bridge on Wikidata in the isles (road, foot, railway
+      viaducts, aqueducts, packhorse and clapper bridges, swing/bascule/transporter, suspension and
+      cable-stayed), by type, with opening years; the 724 bridges in the catalogue stay there; iron
+      bridges, viaducts and aqueducts from the industrial and Victorian stages move to this group.
+- [x] B2 (2026-10-21) A "Bridges" tour theme (walks, rides, drives).
+
 ## Museums, galleries and collections (planned 2026-10-21; after the war construction)
 Places that keep interesting historical objects, and what they keep.
 - [x] MU1 (2026-10-21: 4,414 places: museums by type, art galleries, libraries and archives, closed ones
@@ -296,7 +303,8 @@ Places that keep interesting historical objects, and what they keep.
       libraries), treasuries and university collections (Wikidata classes with subclasses; opening and
       closing years). Museums that are already catalogue buildings (castles, houses) stay there and get
       a "Museum" note instead.
-- [ ] MU2 Mapping Museums database (Birkbeck, ~4,000 UK museums open 1960–present, incl. closed ones,
+- [x] MU2 (2026-10-21: CC BY 4.0 confirmed, doi:10.18743/DATA.00171; 2,883 matched Wikidata museums, 566 catalogue
+      buildings, 742 added, 122 of them closed; `bidb/mapping_museums.py`) Mapping Museums database (Birkbeck, ~4,000 UK museums open 1960–present, incl. closed ones,
       with type, governance, subject and accreditation; check licence, believed CC BY 4.0): merge with
       Wikidata by name and location; closed museums shown as such.
 - [x] MU3 (2026-10-21: 916 objects in 253 museums; 67 finds link to their museum) "Kept here": notable objects held by each museum (Wikidata P195 collection / P276 location,
@@ -309,14 +317,21 @@ Places that keep interesting historical objects, and what they keep.
 ## More sources (planned 2026-10-21)
 Each item starts with a licence and access check (record the result here); copyrighted sources are
 linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
-- [ ] S1 Open Domesday (opendomesday.org, CC BY-SA, API): places in Domesday Book (1086) with
+- [x] S1 (2026-10-21, in part: "recorded in Domesday Book" on every record whose settlement or town has an
+      OpenDomesday settlement ID on Wikidata, P3118, CC0; `bidb/domesday.py`. Open Domesday's API returns 404
+      and its place pages need a grid reference, so households, mills and landholders are not shown: ask the
+      maintainer for a data dump (user item)) Open Domesday (opendomesday.org, CC BY-SA, API): places in Domesday Book (1086) with
       households, mills, churches, landholders; "mentioned in Domesday" on towns and buildings.
-- [ ] S2 Historic images: paintings and prints of buildings via Wikidata "depicts" (P180; public
+- [x] S2 (2026-10-21, Wikidata part: artworks depicting a building or place, made before 1950, "Then" in detail
+      views, `bidb/depictions.py`; Photochrom prints and Flickr Commons still to do) Historic images: paintings and prints of buildings via Wikidata "depicts" (P180; public
       domain on Commons), Library of Congress Photochrom prints (1890s colour views; public domain),
       Flickr Commons (e.g. National Library of Ireland Lawrence collection; no known restrictions);
       "Then" gallery in detail views.
 - [ ] S3 Geograph API (CC BY-SA): photos for records still without one (more than the Commons copies).
-- [ ] S4 Canmore (Scotland) and Coflein (Wales) site records: undesignated sites and descriptions
+- [ ] S4 (checked 2026-10-21: Canmore's map index holds 320,000+ sites, downloadable from the HES portal or a WFS;
+      the CKAN entries say "No Licence Provided", an older Canmore map service record says OGL; confirm with HES.
+      At that size it needs a choice: all sites, or only those with a period/description not already in Places)
+      Canmore (Scotland) and Coflein (Wales) site records: undesignated sites and descriptions
       (OGL via the official map services; check).
 - [ ] S5 List of Historic Place Names of Wales (OGL): old name forms with dates, for pronunciation and history.
 - [ ] S6 NaPTAN (OGL): bus stops and ferry terminals for "Getting there".

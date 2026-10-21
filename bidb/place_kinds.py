@@ -9,7 +9,7 @@ English labels (October 2026).
 PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
                 "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
                 "Legends & literature", "Maritime heritage", "Victorian era", "Underground",
-                "Military heritage", "Museums & collections"]
+                "Military heritage", "Museums & collections", "Bridges"]
 
 # Prehistoric / early monument types. Items with a photo or a Wikipedia article join the main
 # building catalogue; the rest are shown as "Archaeological sites" places.
@@ -126,3 +126,12 @@ KIND_LABEL.update({"museum": "Museum", "artmuseum": "Art museum or gallery", "ho
 KIND_GROUP.update({k: "Museums & collections" for k in ("museum", "artmuseum", "housemuseum", "milmuseum", "transmuseum",
                                                         "scimuseum", "library")})
 KIND_GROUP["kept"] = "Finds & treasures"
+# added by bidb.bridges
+KIND_LABEL.update({"br_early": "Clapper, packhorse or stepping-stone crossing", "br_aqueduct": "Aqueduct",
+                   "br_moving": "Swing or bascule bridge", "br_suspension": "Suspension or cable-stayed bridge",
+                   "br_rail": "Railway viaduct or bridge", "br_foot": "Footbridge", "bridge": "Bridge"})
+KIND_GROUP.update({k: "Bridges" for k in ("br_early", "br_aqueduct", "br_moving", "br_suspension", "br_rail",
+                                          "br_foot", "bridge")})
+# added by bidb.mapping_museums (label set per museum from its subject)
+KIND_LABEL["mm_museum"] = "Museum"
+KIND_GROUP["mm_museum"] = "Museums & collections"

@@ -2,10 +2,14 @@
 import json
 
 from bidb import places_db, pron_db
+from bidb.place_kinds import KIND_GROUP, KIND_LABEL
 
-TRIM = {"description": 400, "wikipedia_extract": 600}
+TRIM = {"description": 400, "wikipedia_extract": 400}   # the hosted copy may hold at most 256 MiB
 # external images are blocked in the hosted sandbox, so image fields are left out
 DROP = {"image_thumb", "image_page"}
+WIKIDATA = "https://www.wikidata.org/wiki/"
+# {kind: [label, group]}: a place's label and group are left out when they are its kind's (meta.place_kinds)
+KIND_DEFAULTS = {k: [KIND_LABEL.get(k, k), KIND_GROUP.get(k)] for k in set(KIND_LABEL) | set(KIND_GROUP)}
 
 
 def _trim(text, n):
@@ -26,19 +30,34 @@ def export(conn, out_dir, write_shards):
             d["extra"] = json.loads(d["extra"])
         if d["id"] in other:
             d["other_names"] = other[d["id"]]
+        # Wikidata's address and id when they only repeat the record's id (rebuilt in static_places.js)
+        if d.get("kind") in KIND_DEFAULTS:
+            label, group = KIND_DEFAULTS[d["kind"]]
+            if d.get("kind_label") == label:
+                del d["kind_label"]
+            if d.get("kind_group") == group:
+                del d["kind_group"]
+        if d.get("source") == "Wikidata":         # the commonest source: the default in static_places.js
+            del d["source"]
+        if d.get("wikidata_id") == d["id"]:
+            del d["wikidata_id"]
+            if d.get("url") == WIKIDATA + d["id"]:
+                del d["url"]
         rows.append(d)
     names = write_shards(rows, "places")
     # light index for building pages ("related": objects kept there, places nearby) without the 50 MB
     # rows [id, name, lat, lon, label index, group index, date_text, building_id] with trailing nulls dropped
     # (labels and groups once each, coordinates to ~1 m: an artifact file holds at most 16 MB)
-    labels = sorted({r.get("kind_label") or "" for r in rows})
-    groups = sorted({r.get("kind_group") or "" for r in rows})
+    lab = lambda r: r.get("kind_label") or KIND_DEFAULTS.get(r.get("kind"), [None, None])[0] or ""
+    grp = lambda r: r.get("kind_group") or KIND_DEFAULTS.get(r.get("kind"), [None, None])[1] or ""
+    labels = sorted({lab(r) for r in rows})
+    groups = sorted({grp(r) for r in rows})
     li, gi = {v: i for i, v in enumerate(labels)}, {v: i for i, v in enumerate(groups)}
     rnd = lambda v: round(v, 5) if v is not None else None
     geo = []
     for r in rows:
-        row = [r["id"], r["name"], rnd(r.get("lat")), rnd(r.get("lon")), li[r.get("kind_label") or ""],
-               gi[r.get("kind_group") or ""], r.get("date_text"), r.get("building_id")]
+        row = [r["id"], r["name"], rnd(r.get("lat")), rnd(r.get("lon")), li[lab(r)], gi[grp(r)], r.get("date_text"),
+               r.get("building_id")]
         while row[-1] is None:
             row.pop()
         geo.append(row)

@@ -113,7 +113,8 @@ def export(thumb_limit=1200):
             "groups": GROUP_ORDER, "group_of": {c: g for g, cats in CATEGORY_GROUPS for c in cats},
             "build_info": info, "plan_shards": plan_shards, "plan_index": plan_index, **lazy,
             "row_shards": write_json_shards(rows, "buildings_rows"),
-            "place_shards": static_places.export(conn, DIST / "data", write_json_shards)}
+            "place_shards": static_places.export(conn, DIST / "data", write_json_shards),
+            "place_kinds": static_places.KIND_DEFAULTS}
     (DIST / "data" / "buildings.json").write_text(
         json.dumps({"meta": meta, "rows": []}, ensure_ascii=False, separators=(",", ":")))
     static_pron.export(conn, DIST / "data")

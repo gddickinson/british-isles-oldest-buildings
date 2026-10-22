@@ -50,7 +50,11 @@ def _download():
 def entries():
     """Dated entries of the database: dicts with lat/lon (from the grid reference where it agrees)."""
     with zipfile.ZipFile(_download()) as z:
-        text = z.read(MASTER).decode("utf-8", errors="replace")
+        raw = z.read(MASTER)
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError:                     # the VA55 file is Windows-1252 ("1507±9")
+        text = raw.decode("cp1252", errors="replace")
     out = []
     for r in csv.DictReader(io.StringIO(text)):
         if r["Type"] not in KINDS or not r["Felling_date:start"].strip():

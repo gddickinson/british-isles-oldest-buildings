@@ -13,7 +13,15 @@
       Promise.all((meta.place_shards || []).map((n) => fetch("data/" + n).then((r) => r.json()))),
       fetch("data/people.json").then((r) => r.json()).catch(() => ({ persons: [], links: [] }))]);
     PLACES = shards.flat();                 // replaces the light index if that was loaded first
-    PLACES.forEach((p) => { p._text = fold([p.name, p.description, p.type, p.locality, p.designation, p.wikipedia_extract,
+    const kinds = meta.place_kinds || {};
+    PLACES.forEach((p) => {                 // left out when they repeat the kind or the id (static_places.py)
+      const [label, group] = kinds[p.kind] || [];
+      if (!p.kind_label && label) p.kind_label = label;
+      if (!p.kind_group && group) p.kind_group = group;
+      if (!p.source) p.source = "Wikidata";
+      if (!p.wikidata_id && /^Q\d+$/.test(p.id)) p.wikidata_id = p.id;
+      if (!p.url && /^Q\d+$/.test(p.id)) p.url = "https://www.wikidata.org/wiki/" + p.id;
+      p._text = fold([p.name, p.description, p.type, p.locality, p.designation, p.wikipedia_extract,
       JSON.stringify(p.extra || ""), p.other_names].join(" ")); });
     BYID = new Map(PLACES.map((p) => [p.id, p]));
     PERSONS = new Map(ppl.persons.map((p) => [p.id, p]));

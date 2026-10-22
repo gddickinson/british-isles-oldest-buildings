@@ -7,7 +7,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done.
 - Catalogue 22,039 records; 166,325 places of interest in 22 groups (latest: sport and leisure, public
   institutions with schools founded before 1900); 11,927 people; 870 researched claims (1,660 quotes,
   1,658 found). Database release db-2026-10-22-4 (81 MB). Download cache on an external drive.
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 53: 242 MiB of the
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 55: 243 MiB of the
   256 MiB limit (place texts cut to 300 characters, floor plans 480 px WebP; the local app keeps
   everything). Republish changed files only: checksum `dist/` before and after `python -m
   app.static_export`, publish in batches under 64 MB, removed files with null, removals first.

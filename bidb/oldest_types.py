@@ -100,3 +100,20 @@ def type_claim_text(entry):
     if entry.get("source"):
         parts.append(f"Source: {entry['source']}")
     return ". ".join(p.rstrip(".") for p in parts)
+
+
+def refresh_claims(log=print):
+    """Rewrite the catalogue's "oldest of its type" notes from the research file without a rebuild
+    (after corrections from the research track): python -c 'from bidb.oldest_types import refresh_claims; refresh_claims()'.
+    Dates themselves change on the next build."""
+    from .db import connect
+    conn = connect()
+    conn.execute("PRAGMA busy_timeout = 120000")
+    n = 0
+    for e in research_entries():
+        cur = conn.execute("UPDATE buildings SET type_claim = ? WHERE oldest_of_type = ? AND (wikipedia_title = ? OR name = ?)",
+                           (type_claim_text(e), e.get("type"), e.get("wikipedia_title"), e.get("name")))
+        n += cur.rowcount
+    conn.commit()
+    log(f"refreshed {n} oldest-of-type notes")
+    return n

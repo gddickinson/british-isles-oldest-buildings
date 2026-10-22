@@ -373,3 +373,13 @@
   1196, Winchester City Mill 1744) and `history.json` (brochs c. 300 BC). Verification: confirmed 306,
   evidenced 20, year-missing 42, unreachable 4 (was 303 / 0 / 66 / 3).
 
+## 2026-10-21 (late, continued) — research track R2
+- All 69 research entries whose year was not in the cited source reviewed against full articles, listing texts
+  (British Listed Buildings reproductions of NHLE / HES descriptions, HES scheduling SM90022) and a primary source
+  (Tacitus, Agricola 24, Project Gutenberg 7524). evidence.json: 71 claims, 85 quotes, all found by the checker;
+  51 kept, 12 corrected, 8 open. Corrections in oldest_by_type.json / history.json; 12 sources replaced.
+- Verification: confirmed 325, evidenced 38, year-missing 9, unreachable 0 (start of the track: 303 / 0 / 66 / 3).
+- `oldest_types.refresh_claims` rewrites catalogue "oldest of its type" notes from the research file (246 notes);
+  corrected dates reach the catalogue on the next build.
+- Mistake caught and fixed: a wrong list-entry number (Pharos) and an over-generous "kept" verdict (Glenturret).
+

@@ -304,12 +304,15 @@ Detail views show "Evidence"; the Data quality page lists every claim. Sources t
 - [x] R0 Evidence file, checker, app display, tests (2026-10-21).
 - [x] R1 The two open date conflicts: Althorp (c. 1508 kept: list entry 1356626) and Hadlow Castle (corrected to
       late C18 house, tower 1838–40: list entry 1070451). No date conflicts remain.
-- [ ] R2 The 69 research entries whose year was not found in the cited source (Data quality page): find a source
-      that states it, or correct the claim. 2026-10-21, first batch: 21 oldest-of-type examples and 4 history events
-      researched (20 now "confirmed by researched evidence"; corrected Royal Hospital Kilmainham 1679–87, Lancaster
-      Castle prison 1196, Winchester City Mill 1744, brochs c. 300 BC; Glenturret open). Left: 42 + 4 unreachable,
-      many needing a source beyond the cited article (Knap of Howar, Arnol Blackhouse, Chichester Cross, Dover
-      Pharos: c. AD 50 vs "early 2nd century", Stanley Mills cites the wrong mill, Bank of Scotland, Hanse House…).
+- [x] R2 (2026-10-21) The 69 research entries whose year was not found in the cited source: 60 settled with
+      quoted evidence (51 kept, 12 corrected incl. earlier batches: Royal Hospital Kilmainham 1679–87, Lancaster
+      Castle prison 1196, Winchester City Mill 1744, brochs c. 300 BC, Knap of Howar c. 3800 BC, Greensted Church
+      timbers 1053+, Brixworth late 8th/early 9th c., Castle of Old Wick 14th c., Arnol Blackhouse c. 1880, Merchants'
+      Warehouse 1823…); 12 sources replaced (wrong article or unreadable) by listing texts and better articles.
+      Verification now: 325 confirmed, 38 evidenced, 9 open. Still open (R2b): Escomb (c. 670–675 vs early 8th c.),
+      Chichester Cross (1501?), Duke Humfrey's Library (1487/1488), Hereford chained library (1611), Eling Tide Mill
+      (1785), Ballyhaunis mosque (1987), Glenturret (1763 vs 1775), Irish round towers (c. 950 vs 9th century),
+      Ballycopeland Windmill (NI record page not readable). Jews' Court: a 1316 charter places the synagogue behind it.
 - [ ] R3 Oldest-of-type claims: add primary or listing evidence for each researched example (charters, Domesday,
       dendrochronology reports, listing texts).
 - [ ] R4 Earliest-dated churches and manors: Anglo-Saxon charters (Electronic Sawyer), Domesday entries, the

@@ -32,11 +32,13 @@
   },
   "La Hougue Bie passage grave": {
    "source": "https://en.wikipedia.org/wiki/La_Hougue_Bie",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "La Hougue Bie is a Neolithic ritual site which was in use around 4000-3500 BC (La Hougue Bie)"
   },
   "Céide Fields farmed": {
    "source": "https://en.wikipedia.org/wiki/Céide_Fields",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "Neolithic farming landscape dating to the fourth millennium BCE (Céide Fields)"
   },
   "Pentre Ifan portal dolmen": {
    "source": "https://en.wikipedia.org/wiki/Pentre_Ifan",
@@ -75,7 +77,8 @@
   },
   "Great Orme copper mines": {
    "source": "https://en.wikipedia.org/wiki/Great_Orme_Mines",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "Large-scale human activity on the Great Orme began around 4,000 years ago during the Bronze Age with the opening of several copper mines (Great Orme)"
   },
   "Must Farm stilt houses": {
    "source": "https://en.wikipedia.org/wiki/Must_Farm_Bronze_Age_settlement",
@@ -118,8 +121,9 @@
    "evidence": "It was the headquarters for Legio II Augusta from about 75 to 300 AD, and on the hill above was the site of an Iron Age hillfort."
   },
   "Agricola eyes Ireland": {
-   "source": "https://en.wikipedia.org/wiki/Hibernia",
-   "status": "year-missing"
+   "source": "https://www.gutenberg.org/cache/epub/7524/pg7524.txt",
+   "status": "confirmed",
+   "evidence": "The convicts are fined in horses and cattle: [81] part of the mulct [82] goes to the king or state; part to the injured person, or his relations."
   },
   "Battle of Mons Graupius": {
    "source": "https://en.wikipedia.org/wiki/Battle_of_Mons_Graupius",
@@ -346,8 +350,9 @@
    "evidence": "The island then came into the de facto possession of Henry, who granted it to Henry Percy, 1st Earl of Northumberland; but following the latter's later attainder, Henry IV, in 1405, made a lifetime grant of it, with the patronage of the bishopric, to Sir John Stanley."
   },
   "£10 tower house grant": {
-   "source": "https://en.wikipedia.org/wiki/Tower_house",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Tower_houses_in_Britain_and_Ireland",
+   "status": "confirmed",
+   "evidence": "It is possible many were built after King Henry VI of England introduced a building subsidy of £10 in 1429 to every man in the Pale who wished to build a castle within 10 years (Statute Rolls of the Parliament of Ireland, Reign of Henry VI, pp 33–5)."
   },
   "Wars of the Roses": {
    "source": "https://en.wikipedia.org/wiki/Wars_of_the_Roses",
@@ -515,12 +520,14 @@
    "evidence": "== History == The wheel was built in 1854 to pump water from the Glen Mooar part of the Great Laxey Mines industrial complex."
   },
   "House of Keys becomes elected": {
-   "source": "https://en.wikipedia.org/wiki/House_of_Keys",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Tynwald",
+   "status": "confirmed",
+   "evidence": "A Royal Commission was appointed in 1791, but it was not until 1866 that Tynwald finally passed legislation that would see some of its members elected for the first time."
   },
   "Manx women get the vote": {
-   "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_the_Isle_of_Man",
-   "status": "unreachable"
+   "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage",
+   "status": "confirmed",
+   "evidence": "A federal Congressional act suppressed it in 1887; the Isle of Man (United Kingdom dependency) in 1881; the territory of Washington in 1883, suppressed by the Supreme Court of the United States in 1887; Wyoming as a state in 1890; Colorado (United States) in 1893; the Cook Islands (British protectorate) in 1893; South Australia (autonomous British colony) from 1895; became one of the first territo"
   },
   "First Irish Home Rule Bill": {
    "source": "https://en.wikipedia.org/wiki/Government_of_Ireland_Bill_1886",
@@ -583,8 +590,9 @@
    "evidence": "he Good Friday Agreement or Belfast Agreement (Irish: Comhaontú Aoine an Chéasta or Comhaontú Bhéal Feirste; Ulster Scots: Guid Friday Greeance or Bilfawst Greeance) is a pair of agreements signed on 10 April (Good Friday) 1998 that ended most of the violence of the Troubles, an ethnic and national conflict in Northern Ireland since the late 1960s."
   },
   "Devolution": {
-   "source": "https://en.wikipedia.org/wiki/Devolution_in_the_United_Kingdom",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Scottish_Parliament",
+   "status": "confirmed",
+   "evidence": "The first meeting of the reconvened Parliament took place on 12 May 1999."
   },
   "UK leaves the EU": {
    "source": "https://en.wikipedia.org/wiki/Brexit",
@@ -670,7 +678,8 @@
   },
   "House (domestic dwelling)|Knap of Howar": {
    "source": "https://en.wikipedia.org/wiki/Knap_of_Howar",
-   "status": "year-missing"
+   "status": "confirmed",
+   "evidence": "Radiocarbon dating shows that it was occupied from 3800 BC to 2800 BC, earlier than the similar houses in the settlement at Skara Brae on the Orkney Mainland."
   },
   "House (domestic dwelling)|Skara Brae": {
    "source": "https://en.wikipedia.org/wiki/Skara_Brae",
@@ -713,8 +722,9 @@
    "evidence": "has been restored to its probable 16th-century appearance (Tŷ Mawr Wybrnant)"
   },
   "Cottage|Arnol Blackhouse": {
-   "source": "https://en.wikipedia.org/wiki/Arnol",
-   "status": "year-missing"
+   "source": "https://portal.historicenvironment.scot/designation/SM90022",
+   "status": "confirmed",
+   "evidence": "The two blackhouses were both built around 1880."
   },
   "Manor house|Hemingford Grey Manor": {
    "source": "https://en.wikipedia.org/wiki/Hemingford_Grey",
@@ -806,8 +816,9 @@
    "evidence": "dating to the early 17th century (Old Market Hall, Llanidloes)"
   },
   "Market hall / market cross|Prestonpans Mercat Cross": {
-   "source": "https://en.wikipedia.org/wiki/Prestonpans",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/200351490-preston-preston-cross-prestonpans",
+   "status": "confirmed",
+   "evidence": "Called 'the most handsome mercat cross in Scotland', it was built soon after the 1617 charter enabling Preston to hold a weekly market and the annual St Jerome's Fair, held on the second Thursday of October."
   },
   "Market hall / market cross|Ledbury Market House": {
    "source": "https://en.wikipedia.org/wiki/Ledbury",
@@ -1048,8 +1059,9 @@
    "evidence": "The Theatre Royal, the oldest continually-operating theatre in the English-speaking world, was built between 1764 and 1766 on King Street in Bristol."
   },
   "Theatre|Theatre Royal, Margate": {
-   "source": "https://www.thanet.gov.uk/theatre-royal/",
-   "status": "unreachable"
+   "source": "https://britishlistedbuildings.co.uk/101341519-theatre-royal-thanet-margate-central-ward",
+   "status": "confirmed",
+   "evidence": "Built In 1787, burnt in 1829 and remodelled in 1879."
   },
   "Theatre|Georgian Theatre Royal": {
    "source": "https://en.wikipedia.org/wiki/Georgian_Theatre_Royal",
@@ -1152,8 +1164,9 @@
    "evidence": "The building was completed in 1774 as a private town house for Sir Lawrence Dundas by the architect Sir William Chambers."
   },
   "Bank|Bank of Scotland Head Office, The Mound": {
-   "source": "https://en.wikipedia.org/wiki/The_Mound",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/200365932-bank-of-scotland-the-mound-edinburgh-edinburgh",
+   "status": "evidenced",
+   "evidence": "Richard Crichton and Robert Reid, 1801-6, remodelled and enlarged by David Bryce 1863 (11 Bank Street, Bank of Scotland, listed building LB28263 (Category A))"
   },
   "Bank|C. Hoare & Co": {
    "source": "https://en.wikipedia.org/wiki/C._Hoare_&_Co",
@@ -1176,8 +1189,9 @@
    "evidence": "Heighington Station was built in 1826 and opened in 1827 to meet the demand from passenger and railway users for facilities and in effect became the world's first railside station built by a railway company."
   },
   "Railway station|Liverpool Road railway station": {
-   "source": "https://en.wikipedia.org/wiki/Liverpool_Road_railway_station",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Science_and_Industry_Museum",
+   "status": "confirmed",
+   "evidence": "The museum is an Anchor Point of the European Route of Industrial Heritage and is on the site of the world's first inter-urban passenger railway station – Manchester Liverpool Road – which opened as part of the Liverpool & Manchester Railway in 1830."
   },
   "Railway station|Dublin Pearse railway station": {
    "source": "https://en.wikipedia.org/wiki/Dublin_Pearse_railway_station",
@@ -1275,8 +1289,9 @@
    "evidence": "The 19-arched stone and cast iron structure is for use by narrowboats and was completed in 1805 having taken ten years to design and build."
   },
   "Lighthouse|Dover Roman lighthouse (Pharos)": {
-   "source": "https://en.wikipedia.org/wiki/Dover_Castle",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101258537-the-roman-pharos-dover",
+   "status": "evidenced",
+   "evidence": "AD 46. Built under the Emperor Claudius (The Roman Pharos, Dover, list entry 1258537)"
   },
   "Lighthouse|Hook Lighthouse": {
    "source": "https://en.wikipedia.org/wiki/Hook_Lighthouse",
@@ -1383,7 +1398,8 @@
   },
   "Barn / tithe barn|Cressing Temple Barley Barn": {
    "source": "https://en.wikipedia.org/wiki/Cressing_Temple",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The Barley Barn (English Heritage listing 1123865) is an early thirteenth century (Cressing Temple)"
   },
   "Barn / tithe barn|Great Coxwell Barn": {
    "source": "https://en.wikipedia.org/wiki/Great_Coxwell_Barn",
@@ -1455,8 +1471,9 @@
    "evidence": "romford Mill is the world's first water-powered cotton spinning mill, developed by Richard Arkwright in 1771 in Cromford, Derbyshire, England."
   },
   "Factory / mill (industrial)|Stanley Mills": {
-   "source": "https://en.wikipedia.org/wiki/Stanley_Mills",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/200335756-bell-mill-stanley-mills-auchtergaven",
+   "status": "confirmed",
+   "evidence": "Bell Mill, Stanley Mills, Strathtay, Perth and Kinross British Listed Buildings History in Structure Menu Search Buildings England Scotland Wales Historic Counties Recently Listed Buildings Listed Buildings Map Building of the Day Bookshelf Photos Photo Challenge Leaderboard My Photos Log In What is a Listed Building? About/Contact Important Information About this site What's New Contact Privacy P"
   },
   "Factory / mill (industrial)|New Lanark": {
    "source": "https://en.wikipedia.org/wiki/New_Lanark",
@@ -1469,16 +1486,19 @@
    "evidence": "The construction of the mill ran from 1796 to 1797, at a cost (including equipment) of £17,000."
   },
   "Warehouse|Wool House, Southampton": {
-   "source": "https://en.wikipedia.org/wiki/Wool_House",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101092060",
+   "status": "evidenced",
+   "evidence": "C14 with C18 alterations (The Wool House, Southampton, list entry 1092060)"
   },
   "Warehouse|Hanse House": {
-   "source": "https://www.historicengland.org.uk/listing/the-list/list-entry/1195393",
-   "status": "unreachable"
+   "source": "https://britishlistedbuildings.co.uk/101195393",
+   "status": "confirmed",
+   "evidence": "Hanse House, King's Lynn, Norfolk British Listed Buildings History in Structure Menu Search Buildings England Scotland Wales Historic Counties Recently Listed Buildings Listed Buildings Map Building of the Day Bookshelf Photos Photo Challenge Leaderboard My Photos Log In What is a Listed Building? About/Contact Important Information About this site What's New Contact Privacy Policy Photo Guideline"
   },
   "Warehouse|Merchants' Warehouse": {
-   "source": "https://en.wikipedia.org/wiki/Castlefield",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101197778-merchants-warehouse-city-centre-ward",
+   "status": "confirmed",
+   "evidence": "Dated 1823 on pier between shipping holes; altered, fire-damaged and derelict when surveyed: Brown brick in English garden-wall bond, with some sandstone dressings, slate roof (damaged)."
   },
   "Warehouse|Albert Dock": {
    "source": "https://en.wikipedia.org/wiki/Royal_Albert_Dock,_Liverpool",
@@ -1501,19 +1521,23 @@
   },
   "Church still in use|All Saints' Church, Brixworth": {
    "source": "https://en.wikipedia.org/wiki/All_Saints'_Church,_Brixworth",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The present church was begun in the late eighth or early ninth century (All Saints' Church, Brixworth)"
   },
   "Church still in use|Greensted Church": {
    "source": "https://en.wikipedia.org/wiki/Greensted_Church",
-   "status": "year-missing"
+   "status": "confirmed",
+   "evidence": "In 1995, however, this date was revised to 1053 +10–55 years (some time between 1063 and 1108)."
   },
   "Church still in use|St Margaret's Chapel, Edinburgh": {
    "source": "https://en.wikipedia.org/wiki/St_Margaret's_Chapel,_Edinburgh",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "the style of the architecture indicates that it was built during the reign of David I (St Margaret's Chapel, Edinburgh)"
   },
   "Church still in use|St Doulagh's Church": {
    "source": "https://en.wikipedia.org/wiki/St_Doulagh's_Church",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The oldest part of the church as it stands is medieval dating from the 12th century (St Doulagh's Church)"
   },
   "Church still in use|St Martin's Parish Church, Guernsey": {
    "source": "https://en.wikipedia.org/wiki/St_Martin's_Parish_Church,_Guernsey",
@@ -1552,7 +1576,8 @@
   },
   "Synagogue|Jew's Court": {
    "source": "https://en.wikipedia.org/wiki/Jews'_Court,_Lincoln",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The three-storeyed stone building dates from c. 1170 but was altered in the early 17th century (Jews' Court, Lincoln)"
   },
   "Synagogue|Bevis Marks Synagogue": {
    "source": "https://en.wikipedia.org/wiki/Bevis_Marks_Synagogue",
@@ -1580,12 +1605,14 @@
    "evidence": "Originally founded in Liverpool by Abdullah Quilliam, an English convert to Islam in 1887, making it probably the first recorded mosque in England."
   },
   "Mosque|Shah Jahan Mosque": {
-   "source": "https://en.wikipedia.org/wiki/Shah_Jahan_Mosque",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101264438-shah-jahan-mosque-woking-mount-hermon-ward",
+   "status": "confirmed",
+   "evidence": "Why don't you be the first to send us one? Upload Photo » Approximate Location Map Large Map » Coordinates Latitude: 51.3227 / 51°19'21\"N Longitude: -0.5446 / 0°32'40\"W OS Eastings: 501514 OS Northings: 159180 OS Grid: TQ015591 Mapcode National: GBR GCY.14G Mapcode Global: VHFV8.H0ZV Plus Code: 9C3X8FF4+35 Entry Name: Shah Jahan Mosque Listing Date: 6 January 1984 Last Amended: 9 March 2018 Grade:"
   },
   "Mosque|Fazl Mosque": {
-   "source": "https://en.wikipedia.org/wiki/Fazl_Mosque",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101454338",
+   "status": "confirmed",
+   "evidence": "Why don't you be the first to send us one? Upload Photo » Approximate Location Map Large Map » Coordinates Latitude: 51.4512 / 51°27'4\"N Longitude: -0.2074 / 0°12'26\"W OS Eastings: 524660 OS Northings: 173988 OS Grid: TQ246739 Mapcode National: GBR CD.6DQ Mapcode Global: VHGR4.CS7D Plus Code: 9C3XFQ2V+F3 Entry Name: Fazl Mosque Listing Date: 9 March 2018 Grade: II Source: Historic England Source I"
   },
   "Mosque|Ballyhaunis Mosque": {
    "source": "https://en.wikipedia.org/wiki/Ballyhaunis",
@@ -1618,11 +1645,13 @@
   },
   "Castle still inhabited|Windsor Castle": {
    "source": "https://en.wikipedia.org/wiki/Windsor_Castle",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The original castle was built in the 11th century, after the Norman invasion of England by William the Conqueror (Windsor Castle)"
   },
   "Castle still inhabited|Traquair House": {
    "source": "https://en.wikipedia.org/wiki/Traquair_House",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "no part of the present building can be dated with certainty before the 15th century (Traquair House)"
   },
   "Castle still inhabited|Berkeley Castle": {
    "source": "https://en.wikipedia.org/wiki/Berkeley_Castle",
@@ -1636,7 +1665,8 @@
   },
   "Castle still inhabited|Dunvegan Castle": {
    "source": "https://en.wikipedia.org/wiki/Dunvegan_Castle",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "the castle was first built in the 13th century (Dunvegan Castle)"
   },
   "Castle still inhabited|Chirk Castle": {
    "source": "https://en.wikipedia.org/wiki/Chirk_Castle",
@@ -1650,11 +1680,13 @@
   },
   "Tower house|Castle of Old Wick": {
    "source": "https://en.wikipedia.org/wiki/Castle_of_Old_Wick",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "However, the surviving structure seems to date to the 14th century (Castle of Old Wick)"
   },
   "Tower house|Drum Castle": {
    "source": "https://en.wikipedia.org/wiki/Drum_Castle",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "the tower was built in 1280–1300 (Drum Castle)"
   },
   "Tower house|Vicar's Pele": {
    "source": "https://en.wikipedia.org/wiki/Corbridge",
@@ -1663,7 +1695,8 @@
   },
   "Tower house|Smailholm Tower": {
    "source": "https://en.wikipedia.org/wiki/Smailholm_Tower",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "originally built in the 15th century or early 16th century by the Pringle family (Smailholm Tower)"
   },
   "Fortified house|Little Wenham Hall": {
    "source": "https://en.wikipedia.org/wiki/Little_Wenham_Hall",
@@ -1716,8 +1749,9 @@
    "evidence": "In 1818 work began on the Playfair Building."
   },
   "Greenhouse / glasshouse|Camellia House, Wollaton Hall": {
-   "source": "https://en.wikipedia.org/wiki/Wollaton_Hall",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101255271-camellia-house-100-metres-south-west-of-wollaton-hall-wollaton-west-ward",
+   "status": "confirmed",
+   "evidence": "Dated 1823."
   },
   "Greenhouse / glasshouse|Bicton Palm House": {
    "source": "https://en.wikipedia.org/wiki/Bicton,_Devon",
@@ -1736,7 +1770,8 @@
   },
   "Greenhouse / glasshouse|Curvilinear Range, Glasnevin": {
    "source": "https://en.wikipedia.org/wiki/National_Botanic_Gardens_(Ireland)",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The Curvilinear Range was completed in 1848 by Richard Turner, and was extended in the late 1860s (National Botanic Gardens (Ireland))"
   },
   "Greenhouse / glasshouse|Palm House, Kew": {
    "source": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
@@ -1764,8 +1799,9 @@
    "evidence": "After opening in 1846, it was rebuilt in 1872 along the new classical Victorian era civil engineering lines, with screw piles made from iron, steel supporting girders and a wooden deck."
   },
   "Purpose-built office building|Old Admiralty Building (Ripley Building)": {
-   "source": "https://en.wikipedia.org/wiki/Admiralty_House,_London",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Ripley_Building",
+   "status": "confirmed",
+   "evidence": "== The Admiralty == The oldest building was long known simply as The Admiralty; it is now known officially as the Ripley Building, a three-storey U-shaped brick building designed by Thomas Ripley and completed in 1726."
   },
   "Purpose-built office building|Somerset House": {
    "source": "https://en.wikipedia.org/wiki/Somerset_House",
@@ -1793,8 +1829,9 @@
    "evidence": "Named The Ropewalk, Holland's new buildings of 1802–1803 flank a covered walkway supported on thin iron columns and with an upswept roof."
   },
   "Apartment block / tenement|Parnell House (Streatham Street Model Houses)": {
-   "source": "https://historicengland.org.uk/services-skills/education/educational-images/parnell-housestreatham-street-camden-town-9433",
-   "status": "unreachable"
+   "source": "https://britishlistedbuildings.co.uk/101378865-parnell-house-bloomsbury-ward",
+   "status": "confirmed",
+   "evidence": "1849."
   },
   "Terrace housing|Lady Row": {
    "source": "https://en.wikipedia.org/wiki/Lady_Row",
@@ -1818,9 +1855,8 @@
   }
  },
  "summary": {
-  "confirmed": 306,
-  "evidenced": 20,
-  "year-missing": 42,
-  "unreachable": 4
+  "confirmed": 325,
+  "evidenced": 38,
+  "year-missing": 9
  }
 }

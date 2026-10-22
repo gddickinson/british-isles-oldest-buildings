@@ -46,7 +46,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `dates.py` | Wikidata time + precision → year / text | `parse_year`, `format_year`, `parse_text_year` |
 | `wikidata.py` | Candidates (inception < cutoff), undated Irish National Monuments, subclass filter, nations, Irish counties, entity fetch, claim helpers, non-English label fallback (German labels rewritten in English) | `find_candidates`, `find_designated`, `structure_classes`, `nations_for`, `irish_counties_for`, `get_entities`, `labels_any_language`, `english_form` |
 | `wikipedia_list.py` | Parses Wikipedia oldest-buildings list tables (UK, Scotland); title → QID | `fetch_curated_list`, `titles_to_qids` |
-| `oldest_types.py` | Oldest examples of ~48 building types: Wikidata query per type + researched claims file | `TYPES`, `wikidata_oldest`, `research_entries`, `type_claim_text` |
+| `oldest_types.py` | Oldest examples of ~48 building types: Wikidata query per type + researched claims file; `refresh_claims` rewrites the catalogue's notes from the file without a rebuild | `TYPES`, `wikidata_oldest`, `research_entries`, `type_claim_text`, `refresh_claims` |
 | `enrich.py` | Wikipedia intros/images, full articles, postcodes.io reverse geocoding | `wikipedia_intros`, `wikipedia_articles`, `reverse_geocode` |
 | `categories.py` | 31 categories (keyword rules, order matters) and 8 colour groups | `CATEGORY_RULES`, `CATEGORY_ORDER`, `CATEGORY_GROUPS`, `GROUP_ORDER`, `group_for` |
 | `classify.py` | Category matching, periods, heritage grade, status, non-building filter | `categorise`, `period_for`, `heritage_grade`, `status_for`, `is_non_building` |

@@ -632,6 +632,1046 @@
     }
    ],
    "researched": "2026-10-21"
+  },
+  {
+   "id": "event-la-hougue-bie",
+   "record": "research:events:La Hougue Bie passage grave",
+   "name": "La Hougue Bie passage grave",
+   "field": "date",
+   "research": "events:La Hougue Bie passage grave",
+   "claim": "The passage grave was in use around 4000–3500 BC.",
+   "value": "c. 4000–3500 BC",
+   "verdict": "kept",
+   "assessment": "Stated as a range.",
+   "sources": [
+    {
+     "title": "La Hougue Bie",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/La_Hougue_Bie",
+     "locator": "article",
+     "quote": "La Hougue Bie is a Neolithic ritual site which was in use around 4000-3500 BC"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-ceide-fields",
+   "record": "research:events:Céide Fields farmed",
+   "name": "Céide Fields farmed",
+   "field": "date",
+   "research": "events:Céide Fields farmed",
+   "claim": "The Céide Fields are a Neolithic farming landscape of the fourth millennium BC.",
+   "value": "c. 3500–3000 BC",
+   "verdict": "kept",
+   "assessment": "The source gives the millennium (4000–3001 BC); the history's c. 3500–3000 BC lies within it.",
+   "sources": [
+    {
+     "title": "Céide Fields",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Céide_Fields",
+     "locator": "article",
+     "quote": "Neolithic farming landscape dating to the fourth millennium BCE"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-great-orme",
+   "record": "research:events:Great Orme copper mines",
+   "name": "Great Orme copper mines",
+   "field": "date",
+   "research": "events:Great Orme copper mines",
+   "claim": "Copper mining on the Great Orme began about 4,000 years ago, most productively 1700–1400 BC.",
+   "value": "c. 2000 BC",
+   "verdict": "kept",
+   "assessment": "Stated as 'around 4,000 years ago'.",
+   "sources": [
+    {
+     "title": "Great Orme",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Great_Orme_Mines",
+     "locator": "article",
+     "quote": "Large-scale human activity on the Great Orme began around 4,000 years ago during the Bronze Age with the opening of several copper mines"
+    },
+    {
+     "title": "Great Orme",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Great_Orme_Mines",
+     "locator": "article",
+     "quote": "The mine was most productive in the period between 1700BC and 1400BC"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-agricola-ireland",
+   "record": "research:events:Agricola eyes Ireland",
+   "name": "Agricola eyes Ireland",
+   "field": "date",
+   "research": "events:Agricola eyes Ireland",
+   "claim": "In his fifth campaign (AD 81 or 82) Agricola garrisoned the coast facing Ireland and said one legion could conquer it.",
+   "value": "c. AD 82",
+   "verdict": "kept",
+   "assessment": "Tacitus (Agricola 24) is the only ancient source. The fifth campaign falls in AD 81 or 82 depending on when Agricola's governorship began (J. B. Bury, JRS 12, 1922, prefers 81); 'c. AD 82' allows for both.",
+   "sources": [
+    {
+     "title": "The Germany and the Agricola of Tacitus (Oxford translation), Agricola ch. 24",
+     "author": "Tacitus (AD 98), in translation; Project Gutenberg 7524",
+     "kind": "primary",
+     "url": "https://www.gutenberg.org/cache/epub/7524/pg7524.txt",
+     "locator": "ch. 24",
+     "quote": "stationed troops in that part of Britain which is opposite to Ireland"
+    },
+    {
+     "title": "The Germany and the Agricola of Tacitus (Oxford translation), Agricola ch. 24",
+     "author": "Tacitus (AD 98), in translation; Project Gutenberg 7524",
+     "kind": "primary",
+     "url": "https://www.gutenberg.org/cache/epub/7524/pg7524.txt",
+     "locator": "ch. 24",
+     "quote": "a single legion and a few auxiliaries would be sufficient entirely to conquer Ireland"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-irish-round-towers",
+   "record": "research:events:Irish round towers",
+   "name": "Irish round towers",
+   "field": "date",
+   "research": "events:Irish round towers",
+   "claim": "Irish round towers were built c. 950–1200.",
+   "value": "c. 950–1200",
+   "verdict": "open",
+   "assessment": "The cited article says 'probably built between the 9th and 12th centuries'; the history's c. 950 start follows the usual modern view (Stalley 2000, cited by the article, not read here). Needs Stalley or a dated example list.",
+   "sources": [
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "article",
+     "quote": "The towers were probably built between the 9th and 12th centuries"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-ten-pound-grant",
+   "record": "research:events:£10 tower house grant",
+   "name": "£10 tower house grant",
+   "field": "date",
+   "research": "events:£10 tower house grant",
+   "claim": "In 1429 Henry VI offered £10 to anyone in the Pale who built a tower of set size within ten years.",
+   "value": "1429",
+   "verdict": "kept",
+   "assessment": "The secondary article cites the primary record (Statute Rolls of the Parliament of Ireland, Henry VI, pp. 33–5), which was not read here.",
+   "sources": [
+    {
+     "title": "Tower houses in Britain and Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_houses_in_Britain_and_Ireland",
+     "locator": "article",
+     "quote": "introduced a building subsidy of £10 in 1429 to every man in the Pale who wished to build a castle within 10 years"
+    },
+    {
+     "title": "Donore Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Donore_Castle",
+     "locator": "article",
+     "quote": "granted ten pounds to any of his subjects who built a small defensive tower"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-house-of-keys",
+   "record": "research:events:House of Keys becomes elected",
+   "name": "House of Keys becomes elected",
+   "field": "date",
+   "research": "events:House of Keys becomes elected",
+   "claim": "In 1866 Tynwald passed the House of Keys Election Act, making the Keys elected for the first time.",
+   "value": "1866",
+   "verdict": "kept",
+   "assessment": "The first elected House met in 1867 (its sesquicentenary was marked in 2017); 1866 is the Act.",
+   "sources": [
+    {
+     "title": "Tynwald",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald",
+     "locator": "article",
+     "quote": "it was not until 1866 that Tynwald finally passed legislation that would see some of its members elected for the first time"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-manx-women-vote",
+   "record": "research:events:Manx women get the vote",
+   "name": "Manx women get the vote",
+   "field": "date",
+   "research": "events:Manx women get the vote",
+   "claim": "In 1881 the Isle of Man gave the vote to women who owned property.",
+   "value": "1881",
+   "verdict": "corrected",
+   "assessment": "The cited page does not exist; replaced by 'Women's suffrage'. The history called this 'a world first', but the same source lists earlier cases (Corsica 1755, Pitcairn 1838): reworded to 'one of the first'.",
+   "sources": [
+    {
+     "title": "Women's suffrage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage",
+     "locator": "article",
+     "quote": "In 1881, the Isle of Man, an internally self-governing dependent territory of the British Crown, enfranchised women property owners"
+    },
+    {
+     "title": "Isle of Man",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Isle_of_Man",
+     "locator": "article",
+     "quote": "In 1881, the Isle of Man Parliament, Tynwald, became the first national legislative body in the world to give women the right to vote in a general election"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-devolution",
+   "record": "research:events:Devolution",
+   "name": "Devolution",
+   "field": "date",
+   "research": "events:Devolution",
+   "claim": "Devolved parliaments for Scotland and Wales began work in 1999.",
+   "value": "1999",
+   "verdict": "kept",
+   "assessment": "The Northern Ireland Assembly followed the 1998 Agreement.",
+   "sources": [
+    {
+     "title": "Scottish Parliament",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_Parliament",
+     "locator": "article",
+     "quote": "The first meeting of the reconvened Parliament took place on 12 May 1999"
+    },
+    {
+     "title": "Senedd",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Senedd",
+     "locator": "article",
+     "quote": "On 1 July 1999, the powers of the Secretary of State for Wales were transferred to the Assembly"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-knap-of-howar",
+   "record": "Q1776885",
+   "name": "Knap of Howar",
+   "field": "date",
+   "research": "examples:House (domestic dwelling)|Knap of Howar",
+   "claim": "Neolithic farmstead occupied from about 3800 BC to 2800 BC.",
+   "value": "c. 3800 BC",
+   "verdict": "corrected",
+   "assessment": "The research file said c. 3700 BC; the source's radiocarbon range starts at 3800 BC.",
+   "sources": [
+    {
+     "title": "Knap of Howar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Knap_of_Howar",
+     "locator": "article",
+     "quote": "Radiocarbon dating shows that it was occupied from 3800 BC to 2800 BC"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-liverpool-road-railway-station",
+   "record": "Q2638616",
+   "name": "Liverpool Road railway station",
+   "field": "date",
+   "research": "examples:Railway station|Liverpool Road railway station",
+   "claim": "Opened in 1830 as the Manchester terminus of the Liverpool & Manchester Railway, the first inter-urban passenger station.",
+   "value": "1830",
+   "verdict": "kept",
+   "assessment": "The cited article was too short to say; re-sourced to the museum that now occupies the station.",
+   "sources": [
+    {
+     "title": "Science and Industry Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Science_and_Industry_Museum",
+     "locator": "article",
+     "quote": "which opened as part of the Liverpool & Manchester Railway in 1830"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-cressing-temple-barley-barn",
+   "record": "Q2985848",
+   "name": "Cressing Temple Barley Barn",
+   "field": "date",
+   "research": "examples:Barn / tithe barn|Cressing Temple Barley Barn",
+   "claim": "The Barley Barn is early 13th century, the oldest standing timber-framed barn claimed in the world.",
+   "value": "c. 1205–1230",
+   "verdict": "kept",
+   "assessment": "The dendrochronological dates (c. 1205–30) are not in the article; 'early thirteenth century' agrees.",
+   "sources": [
+    {
+     "title": "Cressing Temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cressing_Temple",
+     "locator": "article",
+     "quote": "The Barley Barn (English Heritage listing 1123865) is an early thirteenth century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-greensted-church",
+   "record": "Q2294625",
+   "name": "Greensted Church",
+   "field": "date",
+   "research": "examples:Church still in use|Greensted Church",
+   "claim": "The timber nave is dated by dendrochronology to 1053 (+10 to +55 years); the earlier 845 date has been revised.",
+   "value": "c. 1063–1108",
+   "verdict": "corrected",
+   "assessment": "The research file said 'claimed 9th century'; the revised tree-ring date is mid-11th century.",
+   "sources": [
+    {
+     "title": "Greensted Church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greensted_Church",
+     "locator": "article",
+     "quote": "a later analysis has reset the date of the timbers to 1053 (+10/55 years)"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-all-saints--church--brixworth",
+   "record": "Q15179394",
+   "name": "All Saints' Church, Brixworth",
+   "field": "date",
+   "research": "examples:Church still in use|All Saints' Church, Brixworth",
+   "claim": "The present church was begun in the late 8th or early 9th century; the monastery was founded before 675.",
+   "value": "late 8th or early 9th century",
+   "verdict": "corrected",
+   "assessment": "The research file said c. 7th–8th century; the source dates the standing church later than the monastery's foundation.",
+   "sources": [
+    {
+     "title": "All Saints' Church, Brixworth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/All_Saints'_Church,_Brixworth",
+     "locator": "article",
+     "quote": "The present church was begun in the late eighth or early ninth century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-margaret-s-chapel--edinburgh",
+   "record": "Q2061784",
+   "name": "St Margaret's Chapel, Edinburgh",
+   "field": "date",
+   "research": "examples:Church still in use|St Margaret's Chapel, Edinburgh",
+   "claim": "Built in the reign of David I (1124–1153), probably c. 1130.",
+   "value": "c. 1130",
+   "verdict": "kept",
+   "assessment": "Stated as a reign.",
+   "sources": [
+    {
+     "title": "St Margaret's Chapel, Edinburgh",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Margaret's_Chapel,_Edinburgh",
+     "locator": "article",
+     "quote": "the style of the architecture indicates that it was built during the reign of David I"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-doulagh-s-church",
+   "record": "Q7587770",
+   "name": "St Doulagh's Church",
+   "field": "date",
+   "research": "examples:Church still in use|St Doulagh's Church",
+   "claim": "The oldest part of the church is 12th century.",
+   "value": "12th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "St Doulagh's Church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Doulagh's_Church",
+     "locator": "article",
+     "quote": "The oldest part of the church as it stands is medieval dating from the 12th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-windsor-castle",
+   "record": "Q42646",
+   "name": "Windsor Castle",
+   "field": "date",
+   "research": "examples:Castle still inhabited|Windsor Castle",
+   "claim": "The first castle was built after the Norman Conquest, c. 1070.",
+   "value": "c. 1070",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Windsor Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windsor_Castle",
+     "locator": "article",
+     "quote": "The original castle was built in the 11th century, after the Norman invasion of England by William the Conqueror"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-traquair-house",
+   "record": "Q1307609",
+   "name": "Traquair House",
+   "field": "date",
+   "research": "examples:Castle still inhabited|Traquair House",
+   "claim": "Claimed to date from 1107 and to be Scotland's oldest continually inhabited house; nothing standing can be dated with certainty before the 15th century.",
+   "value": "1107 (claimed)",
+   "verdict": "kept",
+   "assessment": "The research file records 1107 as a claim; the source says so too.",
+   "sources": [
+    {
+     "title": "Traquair House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Traquair_House",
+     "locator": "article",
+     "quote": "no part of the present building can be dated with certainty before the 15th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-dunvegan-castle",
+   "record": "Q1266330",
+   "name": "Dunvegan Castle",
+   "field": "date",
+   "research": "examples:Castle still inhabited|Dunvegan Castle",
+   "claim": "First built in the 13th century.",
+   "value": "13th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Dunvegan Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dunvegan_Castle",
+     "locator": "article",
+     "quote": "the castle was first built in the 13th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-castle-of-old-wick",
+   "record": "Q13456921",
+   "name": "Castle of Old Wick",
+   "field": "date",
+   "research": "examples:Tower house|Castle of Old Wick",
+   "claim": "Traditionally 12th century (Harald Maddadson), but the surviving structure seems to be 14th century.",
+   "value": "14th century (traditionally 12th)",
+   "verdict": "corrected",
+   "assessment": "The research file said 12th century; the source treats that as the older view.",
+   "sources": [
+    {
+     "title": "Castle of Old Wick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castle_of_Old_Wick",
+     "locator": "article",
+     "quote": "However, the surviving structure seems to date to the 14th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-drum-castle",
+   "record": "Q1923521",
+   "name": "Drum Castle",
+   "field": "date",
+   "research": "examples:Tower house|Drum Castle",
+   "claim": "The tower was built in 1280–1300.",
+   "value": "late 13th century",
+   "verdict": "kept",
+   "assessment": "Stated as a range.",
+   "sources": [
+    {
+     "title": "Drum Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Drum_Castle",
+     "locator": "article",
+     "quote": "the tower was built in 1280–1300"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-smailholm-tower",
+   "record": "Q2696684",
+   "name": "Smailholm Tower",
+   "field": "date",
+   "research": "examples:Tower house|Smailholm Tower",
+   "claim": "Built in the 15th or early 16th century by the Pringles.",
+   "value": "15th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Smailholm Tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smailholm_Tower",
+     "locator": "article",
+     "quote": "originally built in the 15th century or early 16th century by the Pringle family"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-curvilinear-range--glasnevin",
+   "record": "Q841037",
+   "name": "Curvilinear Range, Glasnevin",
+   "field": "date",
+   "research": "examples:Greenhouse / glasshouse|Curvilinear Range, Glasnevin",
+   "claim": "Completed in 1848 by Richard Turner and extended in the late 1860s.",
+   "value": "1843–1869",
+   "verdict": "kept",
+   "assessment": "The 1843 start is not in the source; completion 1848 and extension in the 1860s are.",
+   "sources": [
+    {
+     "title": "National Botanic Gardens (Ireland)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/National_Botanic_Gardens_(Ireland)",
+     "locator": "article",
+     "quote": "The Curvilinear Range was completed in 1848 by Richard Turner, and was extended in the late 1860s"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-old-admiralty-building--ripley-building",
+   "record": "research:Purpose-built office building|Old Admiralty Building (Ripley Building)",
+   "name": "Old Admiralty Building (Ripley Building)",
+   "field": "date",
+   "research": "examples:Purpose-built office building|Old Admiralty Building (Ripley Building)",
+   "claim": "Designed by Thomas Ripley and completed in 1726; perhaps the first purpose-built office building in Britain.",
+   "value": "1726",
+   "verdict": "kept",
+   "assessment": "The cited article was about Admiralty House (1788); re-sourced.",
+   "sources": [
+    {
+     "title": "Ripley Building",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ripley_Building",
+     "locator": "article",
+     "quote": "designed by Thomas Ripley and completed in 1726"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-escomb-church",
+   "record": "Q5397373",
+   "name": "Escomb Church",
+   "field": "date",
+   "research": "examples:Church still in use|Escomb Church",
+   "claim": "Escomb is usually dated c. 670–675; the cited article says it was founded in the early 8th century and is consistent with 650–800.",
+   "value": "c. 670–675",
+   "verdict": "open",
+   "assessment": "Needs the list description or a recent survey to choose between c. 670–675 and the early 8th century.",
+   "sources": [
+    {
+     "title": "Escomb Church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Escomb_Church",
+     "locator": "article",
+     "quote": "The church was founded in the early part of the 8th century"
+    },
+    {
+     "title": "Escomb Church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Escomb_Church",
+     "locator": "article",
+     "quote": "consistent with it having been built between AD 650 and 800"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-chichester-cross",
+   "record": "Q5095990",
+   "name": "Chichester Cross",
+   "field": "date",
+   "research": "examples:Market hall / market cross|Chichester Cross",
+   "claim": "Usually dated 1501; its inscription credits Bishop Edward Story (1477–1503) and its style may be of Edward IV's reign.",
+   "value": "1501",
+   "verdict": "open",
+   "assessment": "1501 is within Story's episcopate but is not stated by the source; the listing would settle it.",
+   "sources": [
+    {
+     "title": "Chichester Cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chichester_Cross",
+     "locator": "article",
+     "quote": "this cross was built by Edward Story, Bishop of Chichester from 1477 to 1503"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-duke-humfrey-s-library",
+   "record": "Q5312796",
+   "name": "Duke Humfrey's Library",
+   "field": "date",
+   "research": "examples:Library|Duke Humfrey's Library",
+   "claim": "The library was built over the Divinity School between 1450 and 1480; its medieval section is dated 1487 (opened 1488).",
+   "value": "1488",
+   "verdict": "open",
+   "assessment": "The source gives 1450–1480 and 1487; 1488 (opening) needs a source such as the Bodleian's own history.",
+   "sources": [
+    {
+     "title": "Duke Humfrey's Library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Duke_Humfrey's_Library",
+     "locator": "article",
+     "quote": "The library was constructed as a second storey to the Divinity School between 1450 and 1480"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-hereford-cathedral-library",
+   "record": "Q429379",
+   "name": "Hereford Cathedral Library",
+   "field": "date",
+   "research": "examples:Library|Hereford Cathedral Library",
+   "claim": "The chained library is the largest surviving; its 1611 date is not in the cited source.",
+   "value": "chained library 1611",
+   "verdict": "open",
+   "assessment": "Needs a source for 1611 (the library's fitting-out).",
+   "sources": [
+    {
+     "title": "Hereford Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
+     "locator": "article",
+     "quote": "The cathedral has the largest library of chained books in the world"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-eling-tide-mill",
+   "record": "Q5361127",
+   "name": "Eling Tide Mill",
+   "field": "date",
+   "research": "examples:Tide mill|Eling Tide Mill",
+   "claim": "A mill at Eling is in Domesday Book (1086), but not shown to be this one; the present building is dated 1785 elsewhere.",
+   "value": "site 1086; building 1785",
+   "verdict": "open",
+   "assessment": "The source undercuts the 1086 link and does not give 1785.",
+   "sources": [
+    {
+     "title": "Eling Tide Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eling_Tide_Mill",
+     "locator": "article",
+     "quote": "Whilst a mill is mentioned in the Domesday Book of 1086, there is no evidence that there is any connection to the present mill"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ballyhaunis-mosque",
+   "record": "research:Mosque|Ballyhaunis Mosque",
+   "name": "Ballyhaunis Mosque",
+   "field": "date",
+   "research": "examples:Mosque|Ballyhaunis Mosque",
+   "claim": "Ireland's first purpose-built mosque (1987).",
+   "value": "1987",
+   "verdict": "open",
+   "assessment": "The source supports 'first purpose-built' but not the year.",
+   "sources": [
+    {
+     "title": "Ballyhaunis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballyhaunis",
+     "locator": "article",
+     "quote": "Ballyhaunis is home to Ireland's first purpose-built mosque"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-theatre-royal--margate",
+   "record": "rs-theatre-royal-margate-margate-england",
+   "name": "Theatre Royal, Margate",
+   "field": "date",
+   "research": "examples:Theatre|Theatre Royal, Margate",
+   "claim": "Built in 1787, burnt in 1829 and remodelled in 1879.",
+   "value": "1787",
+   "verdict": "kept",
+   "assessment": "The cited council page could not be read; the list description states 1787.",
+   "sources": [
+    {
+     "title": "Theatre Royal, Margate, list entry 1341519",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101341519-theatre-royal-thanet-margate-central-ward",
+     "locator": "list description",
+     "quote": "Built In 1787, burnt in 1829 and remodelled in 1879"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-wool-house--southampton",
+   "record": "Q7775763",
+   "name": "Wool House, Southampton",
+   "field": "date",
+   "research": "examples:Warehouse|Wool House, Southampton",
+   "claim": "A 14th-century wool store with 18th-century alterations.",
+   "value": "14th century",
+   "verdict": "kept",
+   "assessment": "The cited article was a different 'Wool House'; re-sourced to the list description.",
+   "sources": [
+    {
+     "title": "The Wool House, Southampton, list entry 1092060",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101092060",
+     "locator": "list description",
+     "quote": "C14 with C18 alterations"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-hanse-house",
+   "record": "Q17536439",
+   "name": "Hanse House",
+   "field": "date",
+   "research": "examples:Warehouse|Hanse House",
+   "claim": "Built as the Hanseatic League's steelyard c. 1475, after a licence of 1474; the only Hanseatic warehouse left in England.",
+   "value": "c. 1475",
+   "verdict": "kept",
+   "assessment": "The Historic England page cannot be read by a script; the same list description is reproduced by British Listed Buildings.",
+   "sources": [
+    {
+     "title": "Hanse House, King's Lynn, list entry 1195393",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101195393",
+     "locator": "list description",
+     "quote": "built as the Hanseatic Steelyard c1475 (licence to build granted 1474)"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-dover-roman-lighthouse--pharos",
+   "record": "research:Lighthouse|Dover Roman lighthouse (Pharos)",
+   "name": "Dover Roman lighthouse (Pharos)",
+   "field": "date",
+   "research": "examples:Lighthouse|Dover Roman lighthouse (Pharos)",
+   "claim": "The Roman lighthouse at Dover was built under Claudius, c. AD 46–50, to guide the fleet to Richborough.",
+   "value": "c. AD 50",
+   "verdict": "kept",
+   "assessment": "The list description (an old text) gives AD 46 under Claudius; the Wikipedia article on the castle gives the early 2nd century. The catalogue keeps c. AD 50 with this disagreement shown; a modern excavation or English Heritage source would settle it.",
+   "sources": [
+    {
+     "title": "The Roman Pharos, Dover, list entry 1258537",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101258537-the-roman-pharos-dover",
+     "locator": "list description",
+     "quote": "AD 46. Built under the Emperor Claudius"
+    },
+    {
+     "title": "Dover Castle",
+     "author": "Wikipedia (a later date)",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dover_Castle",
+     "locator": "Roman lighthouse",
+     "quote": "Built in the early 2nd century, the 5-level 8-sided tower"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-shah-jahan-mosque",
+   "record": "rs-shah-jahan-mosque-woking-england",
+   "name": "Shah Jahan Mosque",
+   "field": "date",
+   "research": "examples:Mosque|Shah Jahan Mosque",
+   "claim": "Britain's first purpose-built mosque, built 1888–1889 to designs by William Isaac Chambers.",
+   "value": "1889",
+   "verdict": "kept",
+   "assessment": "The cited source was missing or could not be read; the list description states the date.",
+   "sources": [
+    {
+     "title": "Shah Jahan Mosque, Woking, list entry 1264438",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101264438-shah-jahan-mosque-woking-mount-hermon-ward",
+     "locator": "list description",
+     "quote": "Purpose built mosque of 1888-1889"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-fazl-mosque",
+   "record": "rs-fazl-mosque-southfields-london-england",
+   "name": "Fazl Mosque",
+   "field": "date",
+   "research": "examples:Mosque|Fazl Mosque",
+   "claim": "London's first purpose-built mosque, built 1925–1926 by T. H. Mawson and Sons.",
+   "value": "1926",
+   "verdict": "kept",
+   "assessment": "The cited source was missing or could not be read; the list description states the date.",
+   "sources": [
+    {
+     "title": "Fazl Mosque, Southfields, list entry 1454338",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101454338",
+     "locator": "list description",
+     "quote": "Mosque of 1925-1926 by TH Mawson and Sons"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-camellia-house--wollaton-hall",
+   "record": "research:Greenhouse / glasshouse|Camellia House, Wollaton Hall",
+   "name": "Camellia House, Wollaton Hall",
+   "field": "date",
+   "research": "examples:Greenhouse / glasshouse|Camellia House, Wollaton Hall",
+   "claim": "A cast-iron glasshouse dated 1823, by Sir Jeffry Wyatville.",
+   "value": "1823",
+   "verdict": "kept",
+   "assessment": "The cited source was missing or could not be read; the list description states the date.",
+   "sources": [
+    {
+     "title": "Camellia House, Wollaton Hall, list entry 1255271",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101255271-camellia-house-100-metres-south-west-of-wollaton-hall-wollaton-west-ward",
+     "locator": "list description",
+     "quote": "Camellia house. Dated 1823. By Sir Jeffry Wyatville"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-parnell-house--streatham-street-model-houses",
+   "record": "research:Apartment block / tenement|Parnell House (Streatham Street Model Houses)",
+   "name": "Parnell House (Streatham Street Model Houses)",
+   "field": "date",
+   "research": "examples:Apartment block / tenement|Parnell House (Streatham Street Model Houses)",
+   "claim": "A block of artisans' flats of 1849 by Henry Roberts for the Society for Improving the Condition of the Labouring Classes.",
+   "value": "1849",
+   "verdict": "kept",
+   "assessment": "The cited source was missing or could not be read; the list description states the date.",
+   "sources": [
+    {
+     "title": "Parnell House, Streatham Street, list entry 1378865",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101378865-parnell-house-bloomsbury-ward",
+     "locator": "list description",
+     "quote": "Block of artisans' flats. 1849. By Henry Roberts"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-prestonpans-mercat-cross",
+   "record": "rs-prestonpans-mercat-cross-prestonpans-east-lothian-scotland",
+   "name": "Prestonpans Mercat Cross",
+   "field": "date",
+   "research": "examples:Market hall / market cross|Prestonpans Mercat Cross",
+   "claim": "Preston's mercat cross was built soon after the 1617 market charter and has never been moved.",
+   "value": "1617",
+   "verdict": "kept",
+   "assessment": "The cited town article does not date the cross; the listing does ('soon after' 1617).",
+   "sources": [
+    {
+     "title": "Preston, Preston Cross, listed building LB17533 (Category A)",
+     "author": "Historic Environment Scotland (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/200351490-preston-preston-cross-prestonpans",
+     "locator": "statement of interest",
+     "quote": "it was built soon after the 1617 charter enabling Preston to hold a weekly market"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-arnol-blackhouse",
+   "record": "rs-arnol-blackhouse-arnol-isle-of-lewis-scotland",
+   "name": "Arnol Blackhouse",
+   "field": "date",
+   "research": "examples:Cottage|Arnol Blackhouse",
+   "claim": "Blackhouse No. 42 at Arnol was built around 1880 and lived in until the 1960s.",
+   "value": "c. 1880",
+   "verdict": "corrected",
+   "assessment": "The research file said 1880s (1885); the scheduling description gives around 1880.",
+   "sources": [
+    {
+     "title": "Arnol, blackhouses and croft houses, scheduled monument SM90022",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90022",
+     "locator": "description",
+     "quote": "The two blackhouses were both built around 1880"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-jew-s-court",
+   "record": "Q3178465",
+   "name": "Jew's Court",
+   "field": "date",
+   "research": "examples:Synagogue|Jew's Court",
+   "claim": "Jews' Court dates from c. 1170 (altered in the early 17th century); a charter of 1316 puts the medieval synagogue in the tenement behind it, so the building itself was probably not the synagogue.",
+   "value": "12th century",
+   "verdict": "kept",
+   "assessment": "The date stands. The synagogue identification (Cecil Roth) is weakened by the documents the source cites (1290 division into two houses; 1316 charter placing the scola to the west, behind). The research file already calls it 'claimed'; the type 'oldest synagogue' should not rest on it.",
+   "sources": [
+    {
+     "title": "Jews' Court, Lincoln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jews%27_Court,_Lincoln",
+     "locator": "History",
+     "quote": "The three-storeyed stone building dates from c. 1170 but was altered in the early 17th century"
+    },
+    {
+     "title": "Jews' Court, Lincoln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jews%27_Court,_Lincoln",
+     "locator": "History",
+     "quote": "Historian Cecil Roth believed it to be the site of a medieval synagogue"
+    },
+    {
+     "title": "Jews' Court, Lincoln",
+     "author": "Wikipedia (citing documents of 1290 and 1316)",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jews%27_Court,_Lincoln",
+     "locator": "History",
+     "quote": "a charter of 1316 mentions that a Jewish scola or synagogue had stood to the west in the tenement behind these two houses"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-bank-of-scotland-head-office--the-mound",
+   "record": "research:Bank|Bank of Scotland Head Office, The Mound",
+   "name": "Bank of Scotland Head Office, The Mound",
+   "field": "date",
+   "research": "examples:Bank|Bank of Scotland Head Office, The Mound",
+   "claim": "Built 1801–1806 to designs by Richard Crichton and Robert Reid, remodelled by David Bryce in 1863.",
+   "value": "1806",
+   "verdict": "kept",
+   "assessment": "The cited article was about the Mound itself; the listing gives 1801–6, so the research file's completion year 1806 stands.",
+   "sources": [
+    {
+     "title": "11 Bank Street, Bank of Scotland, listed building LB28263 (Category A)",
+     "author": "Historic Environment Scotland (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/200365932-bank-of-scotland-the-mound-edinburgh-edinburgh",
+     "locator": "description",
+     "quote": "Richard Crichton and Robert Reid, 1801-6, remodelled and enlarged by David Bryce 1863"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-stanley-mills",
+   "record": "Q17526144",
+   "name": "Stanley Mills",
+   "field": "date",
+   "research": "examples:Factory / mill (industrial)|Stanley Mills",
+   "claim": "Bell Mill, the oldest building at Stanley Mills (Perthshire), was built 1786–7 to Richard Arkwright's designs.",
+   "value": "1786",
+   "verdict": "kept",
+   "assessment": "The cited article was the Gloucestershire Stanley Mills (1813); re-sourced to the Perthshire mill's listing, which gives 1786–7.",
+   "sources": [
+    {
+     "title": "Bell Mill, Stanley Mills, listed building LB4486 (Category A)",
+     "author": "Historic Environment Scotland (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/200335756-bell-mill-stanley-mills-auchtergaven",
+     "locator": "description",
+     "quote": "millwright-work by Lowe of Nottingham, 1786-7"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-merchants--warehouse",
+   "record": "rs-merchants-warehouse-castlefield-manchester-england",
+   "name": "Merchants' Warehouse",
+   "field": "date",
+   "research": "examples:Warehouse|Merchants' Warehouse",
+   "claim": "A canal warehouse at the Bridgewater Canal terminus, dated 1823 on the pier between its shipping holes.",
+   "value": "1823",
+   "verdict": "corrected",
+   "assessment": "The research file said 1825; the building carries the date 1823. Its claim 'oldest surviving warehouse in Castlefield' is not checked: the Castlefield article mentions an older canal warehouse of 1779 (the Grocers' Warehouse, partly reconstructed).",
+   "sources": [
+    {
+     "title": "Merchants Warehouse, Castle Street, list entry 1197778",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101197778-merchants-warehouse-city-centre-ward",
+     "locator": "list description",
+     "quote": "Dated 1823 on pier between shipping holes"
+    }
+   ],
+   "researched": "2026-10-21"
   }
  ]
 }

@@ -83,6 +83,9 @@ KIND_LABEL.update({"harbour": "Harbour or port", "dock": "Dock or wharf", "shipy
                    "shipbuilder": "Shipbuilder"})
 KIND_GROUP.update({k: "Maritime heritage" for k in ("harbour", "dock", "shipyard", "ropewalk", "customhouse",
                                                     "lighthouse", "lifeboat", "naval", "museumship", "shipbuilder")})
+# added by bidb.wrecks
+KIND_LABEL["wreck"] = "Shipwreck or loss"
+KIND_GROUP["wreck"] = "Maritime heritage"
 # added by bidb.era_places
 KIND_LABEL.update({"mill": "Mill or factory", "mine": "Mine or quarry", "ironworks": "Ironworks or foundry",
                    "canal": "Canal, lock or aqueduct", "railway": "Railway station, viaduct or tunnel",

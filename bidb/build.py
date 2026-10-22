@@ -178,18 +178,18 @@ def run(cutoff):
 def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
     """[(stage name, function)] for a full build (also run from the GUI by app/jobs.py)."""
     from . import (bridges, burials, dendro, depictions, digs, domesday, domesday_entries, era_places, hoards, institutions,
-                   lore_places, mapping_museums, maritime, military, museums, nation_geo, oldest_lists, on_this_day,
-                   places_build, pronunciations, sports, timeline, tours, trade_works, underground, visiting)
+                   lore_places, mapping_museums, maritime, military, museums, nation_geo, oldest_checks, oldest_lists, on_this_day,
+                   places_build, pronunciations, sports, timeline, tours, trade_works, underground, wrecks, visiting)
     from . import stories as stories_mod
     out = [("Buildings", lambda: run(cutoff))]
     if places:
         out += [("Places and people", places_build.run), ("Legends and literature", lore_places.run),
-                ("Maritime heritage", maritime.run), ("Industrial and Victorian", era_places.run),
+                ("Maritime heritage", maritime.run), ("Shipwrecks", wrecks.run), ("Industrial and Victorian", era_places.run),
                 ("Underground", underground.run), ("Military heritage", military.run),
                 ("Museums and collections", museums.run), ("Mapping Museums", mapping_museums.run),
                 ("Hoards", hoards.run), ("Bridges", bridges.run), ("Excavations", digs.run),
                 ("Graves and burial grounds", burials.run),
-                ("Markets, works and infrastructure", trade_works.run), ("Sport", sports.run), ("Public institutions", institutions.run), ("Oldest in nature and graves", oldest_lists.run),
+                ("Markets, works and infrastructure", trade_works.run), ("Sport", sports.run), ("Public institutions", institutions.run), ("Oldest in nature and graves", oldest_lists.run), ("Earliest dated places checked", oldest_checks.run),
                 ("Nations for places", nation_geo.run)]
         if pron:
             out += [("Pronunciations", pronunciations.run), ("Domesday Book", domesday.run),

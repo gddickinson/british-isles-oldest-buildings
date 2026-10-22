@@ -22,9 +22,10 @@ def protected():
     """Kinds made by the group stages (legends, maritime, underground, military, museums, bridges):
     a place one of them made is never taken by another."""
     from . import (bridges, burials, digs, hoards, lore_places, mapping_museums, maritime, military, museums,
-                   institutions, oldest_lists, sports, trade_works, underground)
+                   institutions, oldest_lists, sports, trade_works, underground, wrecks)
     return set(STAY) | {k for m in (lore_places, maritime, underground, military, museums, mapping_museums, bridges,
-                                    hoards, digs, oldest_lists, burials, trade_works, sports, institutions) for k in m.KINDS}
+                                    hoards, digs, oldest_lists, burials, trade_works, sports, institutions, wrecks)
+                                    for k in m.KINDS}
 
 
 def query(where, wp_only=False, coord="?i wdt:P625 ?coord ."):

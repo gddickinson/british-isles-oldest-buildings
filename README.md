@@ -19,7 +19,7 @@ anywhere.
 
 | | |
 |---|---|
-| **22,039** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **118,184** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards |
+| **22,039** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **152,558** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards, graves and burial grounds, markets and trade, infrastructure, and nature and deep time |
 | **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **47,000** places with a photo |
 | **17,412** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
 | **2,443** stories, legends and ghost tales | **368** ready-made walks, rides, drives and long-distance ways |
@@ -95,7 +95,20 @@ anywhere.
   database's subject, governance, accreditation and opening and closing years, closed museums
   included); and **bridges** (clapper and packhorse bridges, aqueducts, viaducts, swing and suspension
   bridges, footbridges and road bridges); and **excavations** (excavated sites and every *Time Team*
-  dig, with what the team looked for).
+  dig, with what the team looked for); **graves and burial grounds** (cemeteries, churchyards, war
+  cemeteries, chest tombs, mausolea and graves); **markets and trade** (market halls and crosses, corn
+  exchanges, shops, banks, inns, market towns); more **industrial heritage** (mills, factories,
+  manufacturers, breweries, works and quarries of any date); **infrastructure and utilities** (Roman roads,
+  milestones, reservoirs, dams, weirs, sea walls, canals and locks, railway lines, signal boxes, power
+  stations, airports); and **nature and deep time** (ancient trees, the oldest rocks, fossil sites, the
+  earliest human traces, natural wonders).
+- **The oldest of everything else:** researched lists, each entry with its sources and a verdict on the
+  claim, of the oldest trees and natural things, burials, gravestones, churchyards and cemeteries, markets,
+  fairs, shops, firms and works, and roads, waterworks, railways, canals, docks and communications (the
+  Fortingall Yew's contested age, Aveline's Hole, the Latinus stone, Borough Market first recorded in 1276,
+  the Post Track of 3838 BC), on the Oldest page.
+- **Tree-ring dates:** buildings dated by dendrochronology (the Vernacular Architecture Group's database)
+  show when their timbers were felled.
 - **Digs and treasure:** excavated buildings and places say when and by whom (Verulamium: the
   Wheelers, Frere); **Finds & treasures** includes the hoards in Wikipedia's lists, with find-spot,
   year found, contents and the museum that keeps them.
@@ -287,6 +300,9 @@ the figures in this README.
   - Historic England, Historic Environment Scotland, Cadw and Northern Ireland's Historic
     Environment Division: Open Government Licence;
   - Ireland's National Monuments Service and NIAH: CC BY 4.0;
+  - Open Domesday (Anna Powell-Smith): CC BY-SA 4.0;
+  - the Vernacular Architecture Group's Dendrochronology Database (Archaeology Data Service): ADS terms
+    of use, free for research, teaching and personal use;
   - GeoNames: CC BY 4.0; Natural Earth: public domain;
   - historic maps from the National Library of Scotland (CC BY), Allmaps and Wikimaps Warper;
   - satellite imagery: © Esri, Maxar, Earthstar Geographics;
@@ -303,8 +319,8 @@ that the quote is there. Detail views show the evidence, and the Data quality pa
 with its verdict. The research is done with AI assistance; quotes are checked automatically, but the
 judgements are not, so corrections are welcome (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
-So far (see the research track in [ROADMAP.md](ROADMAP.md)): **307 claims with 542 quotes**, 541 found
-again in their sources by script.
+So far (see the research track in [ROADMAP.md](ROADMAP.md)): **714 claims with 1,312 quotes**, each
+checked again in its source by script.
 - **Every "oldest of its type" example** is checked against its official list description (Historic
   England, Historic Environment Scotland, Cadw, Northern Ireland's register, Ireland's NIAH, Manx
   National Heritage) or another citable source. Where the listing dates the surviving building
@@ -315,7 +331,11 @@ again in their sources by script.
   Chronicle, the Annals of Ulster, Anglo-Saxon charters (Electronic Sawyer, with each charter's standing),
   Asser and the Victoria County History, which sharpen "7th century" to Reculver 669, Wearmouth 674 or
   Rochester 604, and flag dates that rest only on later tradition.
-- **114 reviewed date corrections** (`data/curated/date_corrections.json`), each with its evidence.
+- **The 100 oldest records** are checked against radiocarbon and Bayesian dating (Avebury's henge c. 2900 BC,
+  not 4250 BC; Knap of Howar's stone houses c. 3300 BC after the 2025 redating), **manor houses** against the
+  Victoria County History (many "Domesday" dates were the manor's, not the house's), and buildings against
+  their **tree-ring dates** (The Commandery, Worcester, c. 1465, not "1977").
+- **164 reviewed date corrections** (`data/curated/date_corrections.json`), each with its evidence.
 
 ## Caveats
 - **Dates** are the earliest construction date; many buildings were rebuilt later. Dates not taken

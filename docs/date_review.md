@@ -127,3 +127,23 @@ The 69 remaining conflicts were read against the full Wikipedia articles (now ca
   1356626: "c.1508, for John Spencer, remodelled by Henry Holland 1789"; Wikipedia's 1688 is a later rebuilding
   phase); Hadlow Castle corrected from 1852 to "late 18th century (house, dismantled 1951); tower 1838–40"
   (list entry 1070451). No conflicts remain open.
+
+## Record problems found by the sanity check of the 100 oldest records (2026-10-22)
+Not yet fixed in the data (they come from Wikidata or the registers; best corrected at the source):
+- Rathlackan Tomb (Q33110953) and Rathlacken (Q17325830) are the same court tomb (SMR MA007-016006).
+- Doon court tomb (Q123694064) is in Doon townland, Co. Cavan (CV010-013), not Fermanagh.
+- Aghnaskeagh Cairns (Q15053669) are in Co. Louth, not Newry, Mourne and Down.
+- Rosdoagh "Stone Circle" (Q28232534) is a court tomb.
+- Knockergrana (Q111758775) and Rathoonagh (Q127946617) have no county (Donegal, Mayo).
+- Knockbrack (Q1777329) is an unclassified megalithic tomb, so the court-tomb date does not apply (open).
+- Ballintaggart court tomb (Q1137772) came from Co. Armagh; re-erected at the Ulster Folk Museum, Cultra (2023).
+- Cohaw (Q1107054): coordinates fall on CV017-013, 700 m WSW of the court tomb CV018-005.
+- Carrowreagh (Q27107770): coordinates match SL036-002; the National Monument is SL036-003, 300 m south.
+- Corracloona (Q1135205) is in Co. Leitrim; unclassified (court or wedge tomb).
+- Dolmen du Mont Ubé (Jersey) is catalogued as a museum; Dehus, La Varde, Faldouet and Trépied are passage graves.
+- Hembury and the Trundle are Iron Age hillforts over Neolithic causewayed enclosures (dated now by the enclosures),
+  as is Caerau.
+- Hazleton (one record for two barrows), Rollright Stones (three monuments of different dates), Wor Barrow, Randwick,
+  Perry Dale and White Rake include later round barrows; Weetwood Moor and Achnabreck are rock art, not buildings.
+- Garn Coch (Q20597409) is a round cairn, probably Bronze Age (open); Buzza Hill is a Scillonian entrance grave.
+- Manor of Old Fishbourne (Q-record "Manor of Old Fishbourne") is a manorial title, not a building.

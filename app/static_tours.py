@@ -48,6 +48,14 @@ def export(conn, out_dir):
         for rid, what, years, who in conn.execute("SELECT entity_id, what, years, who FROM excavations"):
             digs.setdefault(rid, []).append([what, years, who])
         (out_dir / "excavations.json").write_text(json.dumps(digs, ensure_ascii=False, separators=(",", ":")))
+    from bidb.oldest_lists import lists
+    (out_dir / "oldest_lists.json").write_text(json.dumps(lists(conn), ensure_ascii=False, separators=(",", ":")))
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'dendro'").fetchone():
+        tree = {}                                    # {record id: [[location, date text, method, reference], …]}
+        for rid, loc, text, method, ref in conn.execute(
+                "SELECT record_id, location, date_text, method, reference FROM dendro ORDER BY felled_from"):
+            tree.setdefault(rid, []).append([loc, text, method, ref])
+        (out_dir / "dendro.json").write_text(json.dumps(tree, ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'domesday'").fetchone():
         # {settlement qid: [name, Open Domesday id, (churches, priests, households, Phillimore ref)]}
         # and {record id: settlement qid (prefixed "=" when itself)}

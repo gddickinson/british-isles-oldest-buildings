@@ -41,7 +41,7 @@
     .then((parts) => parts.flatMap((p) => Object.entries(p).map(([id, o]) => ({ id, ...o })))));
 
   // Tours: data/tours.json; suggestions score the catalogue rows as bidb/tour_plan.interest does
-  let TOURS = null, VISITS = null, DOMESDAY = null, DIGS = null;
+  let TOURS = null, VISITS = null, DOMESDAY = null, DIGS = null, TREE = null;
   const tours = () => (TOURS = TOURS || fetch("data/tours.json").then((r) => r.json()).catch(() => []));
   const TOP = ["Grade I", "Category A", "Grade A", "World Heritage", "National Monument"];
   const interest = (r) => 1 + (r.landmark ? 3 : 0) + (r.oldest_of_type ? 2 : 0) + (r.curated ? 1.5 : 0) + (r.t != null ? 1.5 : 0)
@@ -235,6 +235,11 @@
       return rows.map(({ geometry, ...t }) => t);
     },
     async tour(p, f, id) { return (await tours()).find((t) => t.id === id); },
+    async oldest_lists() { return fetch("data/oldest_lists.json").then((r) => r.json()); },
+    async dendro(p, f, id) {
+      TREE = TREE || fetch("data/dendro.json").then((r) => r.json()).catch(() => ({}));
+      return ((await TREE)[id] || []).map(([location, date_text, method, reference]) => ({ record_id: id, location, date_text, method, reference }));
+    },
     async excavations(p, f, id) {
       DIGS = DIGS || fetch("data/excavations.json").then((r) => r.json()).catch(() => ({}));
       return ((await DIGS)[id] || []).map(([what, years, who]) => ({ entity_id: id, what, years, who }));
@@ -286,7 +291,7 @@
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);
-    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "domesday", "excavations", "quiz"].includes(name);
+    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "domesday", "dendro", "excavations", "oldest_lists", "quiz"].includes(name);
     return fn(u.searchParams, plain ? null : filtersFrom(u.searchParams), id);
   };
 })();

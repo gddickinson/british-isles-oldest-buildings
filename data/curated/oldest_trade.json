@@ -1,0 +1,2171 @@
+{
+ "about": "Oldest markets and fairs, market buildings, shops and trading firms, manufacturers and industrial works of the isles (research track, 2026-10-22); each with the age claim, how secure it is, and sources with exact quotes (checked by python -m bidb.evidence --check).",
+ "entries": [
+  {
+   "category": "Oldest market or fair",
+   "name": "Bartholomew Fair",
+   "qid": "Q4865247",
+   "wikipedia_title": "Bartholomew Fair",
+   "lat": 51.51833,
+   "lon": -0.1,
+   "nation": "England",
+   "location": "West Smithfield, City of London",
+   "age_text": "charter 1133; held until the 19th century",
+   "year": 1133,
+   "claim": "one of London's chief medieval charter fairs",
+   "evidence": "Henry I's charter of 1133 to Rahere's Priory of St Bartholomew is the fair's founding grant; the fair was held at Smithfield into the 19th century and no longer exists. The site is the open space of West Smithfield.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bartholomew Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bartholomew_Fair",
+     "locator": "article text",
+     "quote": "A charter for the fair was granted by King Henry I to fund the Priory of St Bartholomew in 1133"
+    },
+    {
+     "title": "Wikipedia: Smithfield, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smithfield,_London",
+     "locator": "article text",
+     "quote": "from the 12th century to the 19th century the area hosted Bartholomew Fair"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Smithfield Market",
+   "qid": "Q32040340",
+   "wikipedia_title": "Smithfield, London",
+   "lat": 51.5186,
+   "lon": -0.102,
+   "nation": "England",
+   "location": "West Smithfield, City of London",
+   "age_text": "horse and livestock market described in 1174; present market buildings 1866-68",
+   "year": 1174,
+   "claim": "one of the oldest markets in London",
+   "evidence": "William FitzStephen's description of London (c.1174) names the Friday horse market at Smithfield; claims of a 10th-century market rest on no cited document. The present Horace Jones market halls date from 1866-68.",
+   "sources": [
+    {
+     "title": "Wikipedia: Smithfield, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smithfield,_London",
+     "locator": "article text",
+     "quote": "In 1174 the site was described by William Fitzstephen as"
+    },
+    {
+     "title": "Wikipedia: Smithfield, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smithfield,_London",
+     "locator": "article text",
+     "quote": "Work on the Central Market, inspired by Italian architecture, began in 1866 and was completed in November 1868"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Glasgow Fair",
+   "qid": "Q3074855",
+   "wikipedia_title": "Glasgow Fair",
+   "lat": 55.85026,
+   "lon": -4.23928,
+   "nation": "Scotland",
+   "location": "Glasgow (held at Glasgow Green in later centuries)",
+   "age_text": "royal permission 1190",
+   "year": 1190,
+   "claim": "oldest of the Scottish town fair holidays",
+   "evidence": "Bishop Jocelin's grant from William the Lion of c.1190 is printed in Glasgow's burgh charters; the fair survives as the city's July holiday rather than as a market.",
+   "sources": [
+    {
+     "title": "Wikipedia: Glasgow Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glasgow_Fair",
+     "locator": "article text",
+     "quote": "The fair's earliest incarnation occurred in 1190, when Bishop Jocelin obtained permission from King William the Lion to hold the festivities"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Stourbridge Fair",
+   "qid": "Q7620590",
+   "wikipedia_title": "Stourbridge fair",
+   "lat": 52.2155,
+   "lon": 0.1555,
+   "nation": "England",
+   "location": "Stourbridge Common, Cambridge",
+   "age_text": "first held 1211 under a grant to the leper hospital; long since ended",
+   "year": 1211,
+   "claim": "at its peak the largest fair in Europe",
+   "evidence": "King John's grant to the leper chapel at Barnwell gives the first fair in 1211; the 'largest in Europe' claim rests on the 1589 charter's own words. The Leper Chapel and common survive; the fair does not.",
+   "sources": [
+    {
+     "title": "Wikipedia: Stourbridge fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stourbridge_fair",
+     "locator": "article text",
+     "quote": "The first such fair was held in 1211 around the Feast of the Holy Cross"
+    },
+    {
+     "title": "Wikipedia: Stourbridge fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stourbridge_fair",
+     "locator": "article text",
+     "quote": "At its peak it was the largest fair in Europe"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Kirkby Lonsdale market",
+   "qid": "Q1573543",
+   "wikipedia_title": "Kirkby Lonsdale",
+   "lat": 54.2018,
+   "lon": -2.5966,
+   "nation": "England",
+   "location": "Market Square, Kirkby Lonsdale, Cumbria",
+   "age_text": "market charter 1227; weekly market still held",
+   "year": 1227,
+   "claim": "one of the oldest chartered markets in the north of England",
+   "evidence": "The 1227 charter of Henry III for a weekly market and annual fair is the documented start; the market is still held each Thursday. QID is the town's.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kirkby Lonsdale",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kirkby_Lonsdale",
+     "locator": "article text",
+     "quote": "In 1227, the town gained a market charter and the right to hold an annual fair every September"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Scarborough Fair",
+   "qid": "Q127363",
+   "wikipedia_title": "Scarborough Fair (fair)",
+   "lat": 54.2825,
+   "lon": -0.4,
+   "nation": "England",
+   "location": "Scarborough, North Yorkshire",
+   "age_text": "royal charter 22 January 1253",
+   "year": 1253,
+   "claim": "medieval trading fair of the song",
+   "evidence": "Henry III's charter of 1253 is quoted in full; the medieval fair lapsed long ago and the modern event is a revival.",
+   "sources": [
+    {
+     "title": "Wikipedia: Scarborough Fair (fair)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scarborough_Fair_(fair)",
+     "locator": "article text",
+     "quote": "Scarborough Fair originated from a royal charter granted by King Henry III of England on 22 January 1253"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Nottingham Goose Fair",
+   "qid": "Q3074831",
+   "wikipedia_title": "Nottingham Goose Fair",
+   "lat": 52.965,
+   "lon": -1.16,
+   "nation": "England",
+   "location": "Forest Recreation Ground, Nottingham (Old Market Square until 1928)",
+   "age_text": "charter 1284 (a fair existed before)",
+   "year": 1284,
+   "claim": "one of the oldest fairs in England still held",
+   "evidence": "Edward I's charter of 1284 is the first document; a fair was probably held earlier. It moved from the Old Market Square to the Forest Recreation Ground in 1928.",
+   "sources": [
+    {
+     "title": "Wikipedia: Nottingham Goose Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nottingham_Goose_Fair",
+     "locator": "article text",
+     "quote": "In 1284, a royal charter was granted by King Edward I that referred to city fairs in Nottingham"
+    },
+    {
+     "title": "Wikipedia: Nottingham Goose Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nottingham_Goose_Fair",
+     "locator": "article text",
+     "quote": "until it was moved to the Forest Recreation Ground in 1928"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Borough Market",
+   "qid": "Q894072",
+   "wikipedia_title": "Borough Market",
+   "lat": 51.50556,
+   "lon": -0.09083,
+   "nation": "England",
+   "location": "Southwark Street, London SE1",
+   "age_text": "first recorded 1276 (by London Bridge); market's own claim 1014",
+   "year": 1276,
+   "claim": "oldest food market in London (market's own claim: since 1014)",
+   "evidence": "The 1014 date is the market's own, drawn from Snorri Sturluson calling Southwark a 'great market town'; the first record of a market is 1276. The site and halls are 19th-century (1851 onwards).",
+   "sources": [
+    {
+     "title": "Wikipedia: Borough Market",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Borough_Market",
+     "locator": "article text",
+     "quote": "The market itself claims to have existed since 1014"
+    },
+    {
+     "title": "Wikipedia: Borough Market",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Borough_Market",
+     "locator": "article text",
+     "quote": "was first mentioned in 1276"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Leadenhall Market",
+   "qid": "Q961148",
+   "wikipedia_title": "Leadenhall Market",
+   "lat": 51.5127,
+   "lon": -0.0835,
+   "nation": "England",
+   "location": "Gracechurch Street, City of London",
+   "age_text": "market from the 14th century; present building 1881",
+   "year": 1300,
+   "claim": "one of the oldest markets in London",
+   "evidence": "The market grew up at the Leaden Hall in the 14th century; the present covered market is Sir Horace Jones's building of 1881.",
+   "sources": [
+    {
+     "title": "Wikipedia: Leadenhall Market",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leadenhall_Market",
+     "locator": "article text",
+     "quote": "It is one of the oldest markets in London, dating from the 14th century"
+    },
+    {
+     "title": "Historic England list entry 1286182: Leadenhall Market",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101286182",
+     "locator": "list entry description",
+     "quote": "1881, by Sir Horace Jones"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Ould Lammas Fair",
+   "qid": "Q7110441",
+   "wikipedia_title": "Ould Lammas Fair",
+   "lat": 55.201,
+   "lon": -6.252,
+   "nation": "Northern Ireland",
+   "location": "The Diamond, Ballycastle, County Antrim",
+   "age_text": "charter 1606",
+   "year": 1606,
+   "claim": "widely considered the oldest fair in Ireland",
+   "evidence": "Randal MacDonnell's charter of 1606 is the first record; the 'oldest in Ireland' claim is traditional (Puck Fair's charter is 1613).",
+   "sources": [
+    {
+     "title": "Wikipedia: Ould Lammas Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ould_Lammas_Fair",
+     "locator": "article text",
+     "quote": "In 1606 Randall MacDonnell obtained a charter entitling him to hold six fairs annually at Dunaneeny Castle"
+    },
+    {
+     "title": "Wikipedia: Ould Lammas Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ould_Lammas_Fair",
+     "locator": "article text",
+     "quote": "It is widely considered to be the oldest fair in Ireland"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Puck Fair",
+   "qid": "Q17144006",
+   "wikipedia_title": "Puck Fair",
+   "lat": 52.1064,
+   "lon": -9.7869,
+   "nation": "Ireland",
+   "location": "Killorglin, County Kerry",
+   "age_text": "charter 1613 (fair said to be older)",
+   "year": 1613,
+   "claim": "one of Ireland's oldest fairs",
+   "evidence": "James I's charter of 1613 gave legal status to an existing fair; older origins are tradition only.",
+   "sources": [
+    {
+     "title": "Wikipedia: Puck Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Puck_Fair",
+     "locator": "article text",
+     "quote": "can only officially be traced back as far as 1613 when King James I issued a charter granting legal status to the existing fair in Killorglin"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Old Spitalfields Market",
+   "qid": "Q43470",
+   "wikipedia_title": "Old Spitalfields Market",
+   "lat": 51.51944,
+   "lon": -0.07528,
+   "nation": "England",
+   "location": "Commercial Street, Spitalfields, London",
+   "age_text": "licence 1638; market buildings 1885-93",
+   "year": 1638,
+   "claim": "market on the site since 1638",
+   "evidence": "Charles I's licence of 1638 is the start; the present buildings were built for Robert Homer 1885-93.",
+   "sources": [
+    {
+     "title": "Wikipedia: Old Spitalfields Market",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Spitalfields_Market",
+     "locator": "article text",
+     "quote": "There has been a market on the site since 1638 when King Charles I gave a licence"
+    },
+    {
+     "title": "Historic England list entry 1065750: Spitalfields Market",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101065750",
+     "locator": "list entry description",
+     "quote": "Designed by George Sherrin and built between 1885 and 1893 for Robert Homer, the last private owner of the market"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Ballinasloe Horse Fair",
+   "qid": "Q4851713",
+   "wikipedia_title": "Ballinasloe Horse Fair",
+   "lat": 53.3275,
+   "lon": -8.2194,
+   "nation": "Ireland",
+   "location": "Fair Green, Ballinasloe, County Galway",
+   "age_text": "18th century",
+   "year": 1700,
+   "claim": "Europe's oldest and largest horse fair (tradition)",
+   "evidence": "The fair is documented from the 18th century only, which does not support 'Europe's oldest'; it is at most Ireland's oldest surviving horse fair. Coordinates are the town.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ballinasloe Horse Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballinasloe_Horse_Fair",
+     "locator": "article text",
+     "quote": "It is Europe's oldest and largest horse fair, dating back to the 18th century"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest market or fair",
+   "name": "Appleby Horse Fair",
+   "qid": "Q4781314",
+   "wikipedia_title": "Appleby Horse Fair",
+   "lat": 54.5893,
+   "lon": -2.495,
+   "nation": "England",
+   "location": "Gallows Hill (Fair Hill), Appleby-in-Westmorland, Cumbria",
+   "age_text": "'New Fair' begun 1775; never chartered",
+   "year": 1775,
+   "claim": "often said to be held under a 1685 charter of James II",
+   "evidence": "The 1685 charter belonged to the borough's older fair; the present horse fair began in 1775 as an unchartered rival 'New Fair' outside the borough boundary.",
+   "sources": [
+    {
+     "title": "Wikipedia: Appleby Horse Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Appleby_Horse_Fair",
+     "locator": "article text",
+     "quote": "The fair was never chartered, but was started in order to compete with the existing chartered Appleby fair"
+    },
+    {
+     "title": "Wikipedia: Appleby Horse Fair",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Appleby_Horse_Fair",
+     "locator": "article text",
+     "quote": "began in 1775 for sheep and cattle drovers and horse dealers to sell their stock"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Malmesbury Market Cross",
+   "qid": "Q6744367",
+   "wikipedia_title": "Malmesbury Market Cross",
+   "lat": 51.5839,
+   "lon": -2.09807,
+   "nation": "England",
+   "location": "Market Cross, Malmesbury, Wiltshire",
+   "age_text": "c. 1490 (late 15th / early 16th century)",
+   "year": 1490,
+   "claim": "one of the finest and earliest surviving market crosses",
+   "evidence": "Dated on style; the list entry gives late 15th or early 16th century, Wikipedia c.1490.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1269291: Market Cross",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101269291",
+     "locator": "list entry description",
+     "quote": "Late C15/early C16, renovated c1800 by the Earl"
+    },
+    {
+     "title": "Wikipedia: Malmesbury Market Cross",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Malmesbury_Market_Cross",
+     "locator": "article text",
+     "quote": "It was built c. 1490"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Chichester Cross",
+   "qid": "Q5095990",
+   "wikipedia_title": "Chichester Cross",
+   "lat": 50.8365,
+   "lon": -0.77919,
+   "nation": "England",
+   "location": "junction of the four main streets, Chichester, West Sussex",
+   "age_text": "c. 1501, given by Bishop Edward Story",
+   "year": 1501,
+   "claim": "ornate medieval market cross",
+   "evidence": "An inscription credits Bishop Edward Story (1477-1503); the usual date 1501 rests on that and on style.",
+   "sources": [
+    {
+     "title": "Wikipedia: Chichester Cross",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chichester_Cross",
+     "locator": "article text",
+     "quote": "this cross was built by Edward Story, Bishop of Chichester from 1477 to 1503"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Lavenham Guildhall",
+   "qid": "Q15241947",
+   "wikipedia_title": "Lavenham Guildhall",
+   "lat": 52.11066,
+   "lon": 0.79517,
+   "nation": "England",
+   "location": "Market Place, Lavenham, Suffolk",
+   "age_text": "guild founded 1529; hall early 16th century",
+   "year": 1529,
+   "claim": "cloth-town guildhall facing the market place",
+   "evidence": "The hall of the Guild of Corpus Christi, one of four Lavenham guilds of the cloth town; not a market hall as such.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1037186: The Guildhall",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101037186",
+     "locator": "list entry description",
+     "quote": "It was the hall of the Guild of Corpus Christi, founded in 1529, and one of the 4 medieval guilds of Lavenham"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Royal Exchange",
+   "qid": "Q1241240",
+   "wikipedia_title": "Royal Exchange, London",
+   "lat": 51.51361,
+   "lon": -0.08722,
+   "nation": "England",
+   "location": "Bank junction, City of London",
+   "age_text": "exchange opened 1571 (founded 1566); present building 1841-44",
+   "year": 1571,
+   "claim": "Britain's first specialist commercial building",
+   "evidence": "Gresham's exchange was opened by Elizabeth I in 1571; it burned in 1666 and 1838, and Tite's building of 1841-44 is the third on the site.",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Exchange, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "article text",
+     "quote": "The Royal Exchange was officially opened on 23 January 1571 by Queen Elizabeth I"
+    },
+    {
+     "title": "Wikipedia: Royal Exchange, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "article text",
+     "quote": "It was Britain's first specialist commercial building"
+    },
+    {
+     "title": "Historic England list entry 1064713: Royal Exchange",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101064713",
+     "locator": "list entry description",
+     "quote": "The design of the building perpetuates the general form of its predecessors of 1566 and 1667-69"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Kinsale Market House",
+   "qid": null,
+   "wikipedia_title": "Kinsale",
+   "lat": 51.7066,
+   "lon": -8.5226,
+   "nation": "Ireland",
+   "location": "Market Square, Kinsale, County Cork (now Kinsale Regional Museum)",
+   "age_text": "c. 1600",
+   "year": 1600,
+   "claim": "among the oldest market houses in Ireland",
+   "evidence": "Dated c.1600 in general accounts; the arcaded front was remodelled in the early 18th century. Coordinates approximate.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kinsale",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kinsale",
+     "locator": "article text",
+     "quote": "and the Market House of c. 1600"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Old Market Hall, Llanidloes",
+   "qid": "Q17743350",
+   "wikipedia_title": "Old Market Hall, Llanidloes",
+   "lat": 52.4486,
+   "lon": -3.54024,
+   "nation": "Wales",
+   "location": "Great Oak Street crossroads, Llanidloes, Powys",
+   "age_text": "c. 1600 (early 17th century)",
+   "year": 1600,
+   "claim": "only surviving timber-framed market hall of its type in Wales",
+   "evidence": "Dated on structure to around 1600; assizes were held in it c.1605.",
+   "sources": [
+    {
+     "title": "Wikipedia: Llanidloes",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Llanidloes",
+     "locator": "article text",
+     "quote": "Built around 1600, the half-timbered structure is the only surviving building of this type in Wales"
+    },
+    {
+     "title": "Wikipedia: Old Market Hall, Llanidloes",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Market_Hall,_Llanidloes",
+     "locator": "article text",
+     "quote": "dating to the early 17th century"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Yarn Market, Dunster",
+   "qid": "Q8049414",
+   "wikipedia_title": "Yarn Market, Dunster",
+   "lat": 51.1846,
+   "lon": -3.44426,
+   "nation": "England",
+   "location": "High Street, Dunster, Somerset",
+   "age_text": "built 1609, repaired 1647",
+   "year": 1609,
+   "claim": "timber-framed octagonal yarn market",
+   "evidence": "Built by George Luttrell in 1609 and repaired in 1647 after Civil War damage; the list entry gives both dates.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1173428: Yarn Market",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101173428",
+     "locator": "list entry description",
+     "quote": "Built in 1609, repaired in 1647 and restored"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Ledbury Market House",
+   "qid": "Q17530345",
+   "wikipedia_title": "Ledbury Market Hall",
+   "lat": 52.037,
+   "lon": -2.42269,
+   "nation": "England",
+   "location": "High Street, Ledbury, Herefordshire",
+   "age_text": "begun c. 1617, completed after 1655",
+   "year": 1617,
+   "claim": "timber-framed market house on posts",
+   "evidence": "The list entry gives a start c.1617 and completion after 1655, attributed to John Abel.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1349392: Market House",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101349392",
+     "locator": "list entry description",
+     "quote": "Begun circa 1617 and completed after 1655, and attributed John Abel"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Wymondham Market Cross",
+   "qid": "Q17537624",
+   "wikipedia_title": null,
+   "lat": 52.5701,
+   "lon": 1.11315,
+   "nation": "England",
+   "location": "Market Place, Wymondham, Norfolk",
+   "age_text": "1617-18, after the fire of 1615",
+   "year": 1617,
+   "claim": "timber-framed octagonal market cross",
+   "evidence": "Rebuilt after the town fire; dated by the list entry and borough records.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1196678: Market Cross",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101196678",
+     "locator": "list entry description",
+     "quote": "Built after fire of 1616 in 1617-18, restored 1863"
+    },
+    {
+     "title": "Wikipedia: Wymondham",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wymondham",
+     "locator": "article text",
+     "quote": "The Market Cross was built in 1617–1618 after the original was destroyed in the fire of 1615"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Prestonpans (Preston) Mercat Cross",
+   "qid": "Q2680369",
+   "wikipedia_title": null,
+   "lat": 55.95556,
+   "lon": -2.97601,
+   "nation": "Scotland",
+   "location": "Preston, Prestonpans, East Lothian",
+   "age_text": "c. 1617, after the burgh's market charter",
+   "year": 1617,
+   "claim": "the only mercat cross of the cross-house type still on its original site",
+   "evidence": "Built soon after the 1617 charter for a weekly market and fair; never moved.",
+   "sources": [
+    {
+     "title": "HES designation LB17533: Preston, Market Cross",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB17533",
+     "locator": "statement / description",
+     "quote": "it was built soon after the 1617 charter enabling Preston to hold a weekly market"
+    },
+    {
+     "title": "Wikipedia: Mercat cross",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mercat_cross",
+     "locator": "article text",
+     "quote": "The Preston Cross, built in the early 17th century, is the only one of the type still existing on its original site"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Market Hall, Chipping Campden",
+   "qid": "Q17540229",
+   "wikipedia_title": null,
+   "lat": 52.0507,
+   "lon": -1.78072,
+   "nation": "England",
+   "location": "High Street, Chipping Campden, Gloucestershire",
+   "age_text": "1627",
+   "year": 1627,
+   "claim": "Cotswold arcaded market hall still in use",
+   "evidence": "Built for Sir Baptist Hicks in 1627; the date is accepted by the list entry.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1078442: Market Hall",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101078442",
+     "locator": "list entry description",
+     "quote": "1627. Built for Sir Baptist Hicks for dairy produce and poultry"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Tetbury Market House",
+   "qid": "Q17525719",
+   "wikipedia_title": "Tetbury Market House",
+   "lat": 51.6368,
+   "lon": -2.15945,
+   "nation": "England",
+   "location": "Market Place, Tetbury, Gloucestershire",
+   "age_text": "1655, altered 1740 and 1817",
+   "year": 1655,
+   "claim": "pillared market house of the wool town",
+   "evidence": "Dated 1655 in the list entry.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1303914: Market House",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101303914",
+     "locator": "list entry description",
+     "quote": "1655, altered in 1740 and 1817"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Covered Market, Oxford",
+   "qid": "Q5179234",
+   "wikipedia_title": "Covered Market, Oxford",
+   "lat": 51.75277,
+   "lon": -1.25674,
+   "nation": "England",
+   "location": "High Street / Market Street, Oxford",
+   "age_text": "opened 1 November 1774 (begun 1772-74)",
+   "year": 1774,
+   "claim": "often called one of the oldest covered markets in Britain",
+   "evidence": "Opened in 1774 to John Gwynn's design; only the High Street front range survives from that work, the market halls being rebuilt 1834-40 and later. The 'oldest covered market' claim is unproven.",
+   "sources": [
+    {
+     "title": "Wikipedia: Covered Market, Oxford",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Covered_Market,_Oxford",
+     "locator": "article text",
+     "quote": "The Covered Market was officially opened on 1 November 1774"
+    },
+    {
+     "title": "Historic England list entry 1380159: The Covered Market",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101380159",
+     "locator": "list entry description",
+     "quote": "The Covered Market was begun in 1772-4 to the designs of John Gwynn"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest market building",
+   "name": "Piece Hall, Halifax",
+   "qid": "Q5642211",
+   "wikipedia_title": "Piece Hall",
+   "lat": 53.72194,
+   "lon": -1.85692,
+   "nation": "England",
+   "location": "Westgate, Halifax, West Yorkshire",
+   "age_text": "1775-79, opened 1 January 1779",
+   "year": 1779,
+   "claim": "the great surviving cloth hall of the West Riding",
+   "evidence": "Built 1775-79 as a cloth market with 315 rooms round a courtyard; the date is in the list entry.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1273056: Piece Hall",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101273056",
+     "locator": "list entry description",
+     "quote": "Cloth market. 1775-1779, attributed to Thomas Bradley"
+    },
+    {
+     "title": "Wikipedia: Piece Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Piece_Hall",
+     "locator": "article text",
+     "quote": "It opened on 1 January 1779, with 315 separate rooms"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Child & Co.",
+   "qid": "Q5097688",
+   "wikipedia_title": "Child & Co.",
+   "lat": 51.5135,
+   "lon": -0.1117,
+   "nation": "England",
+   "location": "1 Fleet Street, City of London",
+   "age_text": "goldsmith-banking business from 1664; at Fleet Street from 1673; branch closed 2022",
+   "year": 1664,
+   "claim": "oldest bank in the UK",
+   "evidence": "The business traces to Francis Child's goldsmith partnership of 1664. It is now only a NatWest brand, and the 1 Fleet Street branch closed in June 2022, so it no longer trades on its site.",
+   "sources": [
+    {
+     "title": "Wikipedia: Child & Co.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Child_&_Co.",
+     "locator": "article text",
+     "quote": "Sir Francis Child established his business as a goldsmith in 1664"
+    },
+    {
+     "title": "Wikipedia: Child & Co.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Child_&_Co.",
+     "locator": "article text",
+     "quote": "In June 2022, the last remaining physical branch closed its doors"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "C. Hoare & Co",
+   "qid": "Q3371149",
+   "wikipedia_title": "C. Hoare & Co",
+   "lat": 51.5139,
+   "lon": -0.10982,
+   "nation": "England",
+   "location": "37 Fleet Street, City of London",
+   "age_text": "founded 1672 (Richard Hoare's freedom of the Goldsmiths' Company)",
+   "year": 1672,
+   "claim": "oldest privately owned bank in the United Kingdom",
+   "evidence": "The founding date is Richard Hoare's freedom of the Goldsmiths' Company on 5 July 1672; the bank is still family-owned and still at 37 Fleet Street. Of the banks still trading independently, this is the oldest.",
+   "sources": [
+    {
+     "title": "Wikipedia: C. Hoare & Co",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/C._Hoare_&_Co",
+     "locator": "article text",
+     "quote": "Sir Richard Hoare was granted the Freedom of the Goldsmiths' Company on 5 July 1672, which marks the foundation of Hoare's Bank"
+    },
+    {
+     "title": "Wikipedia: C. Hoare & Co",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/C._Hoare_&_Co",
+     "locator": "article text",
+     "quote": "It is the oldest privately owned bank in the United Kingdom"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Bank of Scotland",
+   "qid": "Q627381",
+   "wikipedia_title": "Bank of Scotland",
+   "lat": 55.95032,
+   "lon": -3.19303,
+   "nation": "Scotland",
+   "location": "The Mound, Edinburgh (head office 1802-06)",
+   "age_text": "Act of the Scottish Parliament 17 July 1695",
+   "year": 1695,
+   "claim": "oldest operating bank in Scotland",
+   "evidence": "Founded by statute in 1695 and open from February 1696; the head office on the Mound was built 1802-06. Now part of Lloyds Banking Group.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bank of Scotland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_of_Scotland",
+     "locator": "article text",
+     "quote": "being established by an act of the Parliament of Scotland on 17 July 1695"
+    },
+    {
+     "title": "HES designation LB28263: Bank of Scotland, The Mound",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB28263",
+     "locator": "statement / description",
+     "quote": "Crichton and Reid's design was built by William Sibbald Junior (1802-6)"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Berry Bros. & Rudd",
+   "qid": "Q2899153",
+   "wikipedia_title": "Berry Bros. & Rudd",
+   "lat": 51.5056,
+   "lon": -0.13806,
+   "nation": "England",
+   "location": "3 St James's Street, London",
+   "age_text": "Widow Bourne's shop c. 1698-99",
+   "year": 1698,
+   "claim": "oldest wine and spirit merchant in Britain, on the same site",
+   "evidence": "The Survey of London confirms that Widow Bourne occupied No. 3 in or about 1699 and that the present firm descends from her shop; the firm's 1698 is within a year of the rate books.",
+   "sources": [
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: St James's Street, East Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp433-458",
+     "locator": "St James's Street, East Side",
+     "quote": "In or about 1699 Widow Bourne became the occupant of this house, and is said to have opened a grocer's shop or coffee mill there, thus establishing the business which is still carried on at No. 3 St. James's Street"
+    },
+    {
+     "title": "Wikipedia: Berry Bros. & Rudd",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Berry_Bros._&_Rudd",
+     "locator": "article text",
+     "quote": "founded in London, England, in 1698 as a small coffee shop"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "James Lock & Co. (Lock's the hatters)",
+   "qid": "Q6138148",
+   "wikipedia_title": "James Lock & Co.",
+   "lat": 51.5057,
+   "lon": -0.13821,
+   "nation": "England",
+   "location": "6 St James's Street, London",
+   "age_text": "firm's claim 1676; documented from 1726 (Charles Davis); at No. 6 since 1765",
+   "year": 1726,
+   "claim": "world's oldest hat shop (firm's claim, founded 1676)",
+   "evidence": "The firm dates itself to 1676 (Robert Davis), but the Survey of London finds the business established by Charles Davis in 1726, in No. 6 from 1765. The 1676 date is unsupported.",
+   "sources": [
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: St James's Street, East Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp433-458",
+     "locator": "St James's Street, East Side",
+     "quote": "The business was originally established by Charles Davis in 1726"
+    },
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: St James's Street, East Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp433-458",
+     "locator": "St James's Street, East Side",
+     "quote": "This house and shop have been occupied by Lock's, the hatters, since 1765"
+    },
+    {
+     "title": "Wikipedia: James Lock & Co.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/James_Lock_&_Co.",
+     "locator": "article text",
+     "quote": "The company was founded in 1676 by Robert Davis"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Twinings, 216 Strand",
+   "qid": "Q1054692",
+   "wikipedia_title": "Twinings",
+   "lat": 51.51326,
+   "lon": -0.11285,
+   "nation": "England",
+   "location": "216 Strand, London",
+   "age_text": "Thomas Twining's shop 1706",
+   "year": 1706,
+   "claim": "London's longest-standing ratepayer; oldest company logo in continuous use (1787)",
+   "evidence": "Thomas Twining's tea business at 216 Strand dates from 1706 and the firm has been on the site ever since; the shopfront and portico are early 19th century. The claims are the firm's but widely accepted.",
+   "sources": [
+    {
+     "title": "Wikipedia: Twinings",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Twinings",
+     "locator": "article text",
+     "quote": "having occupied the same premises on the Strand since 1706"
+    },
+    {
+     "title": "Historic England list entry 1236754: No 216 (Twining's)",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101236754",
+     "locator": "list entry description",
+     "quote": "Tea merchant's shop front. Early C19"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Floris, 89 Jermyn Street",
+   "qid": "Q27083674",
+   "wikipedia_title": "Floris of London",
+   "lat": 51.50814,
+   "lon": -0.13722,
+   "nation": "England",
+   "location": "89 Jermyn Street, London",
+   "age_text": "firm's claim 1730; in Jermyn Street from 1799, at No. 89 since 1810",
+   "year": 1730,
+   "claim": "oldest English retailer of fragrance (firm's claim)",
+   "evidence": "The 1730 date is the firm's own; the Survey of London records Floris in Jermyn Street (No. 88) from 1799 and at No. 89 from 1810, and has nothing for 1730.",
+   "sources": [
+    {
+     "title": "Wikipedia: Floris of London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Floris_of_London",
+     "locator": "article text",
+     "quote": "Shortly after his arrival in 1730, he secured premises in Jermyn Street"
+    },
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: Jermyn Street",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp271-284",
+     "locator": "Jermyn Street",
+     "quote": "From 1799 until 1851 it was occupied by Floris, the firm of perfumers, which still carries on business at No. 89"
+    },
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: Jermyn Street",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp271-284",
+     "locator": "Jermyn Street",
+     "quote": "Since 1810 the firm of Floris has occupied the house"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Fortnum & Mason",
+   "qid": "Q498563",
+   "wikipedia_title": "Fortnum & Mason",
+   "lat": 51.5083,
+   "lon": -0.1384,
+   "nation": "England",
+   "location": "181 Piccadilly, London",
+   "age_text": "founded c. 1770 by Charles Fortnum (certainly by 1773); firm claims 1707",
+   "year": 1770,
+   "claim": "founded 1707 (firm's claim)",
+   "evidence": "The Survey of London found no evidence for the 1707 tradition: rate books first record Charles Fortnum on the site in 1770, and the directory lists him as a grocer from 1773; the name 'Fortnum and Mason' first appears in 1817. Present building 1926-28.",
+   "sources": [
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: Piccadilly, South Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270",
+     "locator": "Piccadilly, South Side",
+     "quote": "Tradition relates that the business was founded in 1707, when a member of the Fortnum family is said to have been in the service of Queen Anne. No supporting evidence for this has been found"
+    },
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: Piccadilly, South Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270",
+     "locator": "Piccadilly, South Side",
+     "quote": "It is therefore evident that the grocery was probably founded on part of its present site in 1770, and certainly by 1773"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Hodges Figgis",
+   "qid": "Q5876099",
+   "wikipedia_title": "Hodges Figgis",
+   "lat": 53.34224,
+   "lon": -6.25815,
+   "nation": "Ireland",
+   "location": "56-58 Dawson Street, Dublin",
+   "age_text": "founded 1768 (moved several times)",
+   "year": 1768,
+   "claim": "Ireland's oldest bookshop; probably the third-oldest working bookshop in the world",
+   "evidence": "Founded by John Milliken at Skinner's Row in 1768; it has moved more than once, so the business, not the building, is old.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hodges Figgis",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hodges_Figgis",
+     "locator": "article text",
+     "quote": "The bookshop was opened in 1768 at 10 Skinner's Row"
+    },
+    {
+     "title": "Wikipedia: Hodges Figgis",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hodges_Figgis",
+     "locator": "article text",
+     "quote": "it is probably the third-oldest functioning bookshop in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Hatchards",
+   "qid": "Q5681055",
+   "wikipedia_title": "Hatchards",
+   "lat": 51.5084,
+   "lon": -0.138,
+   "nation": "England",
+   "location": "187 Piccadilly, London",
+   "age_text": "founded 30 June 1797; on the present site since 1801",
+   "year": 1797,
+   "claim": "oldest bookshop in the UK (shop's own claim)",
+   "evidence": "John Hatchard's own note, quoted by the Survey of London, gives the start date; the 'oldest bookshop' claim is the shop's (it is the oldest in London, not older than Hodges Figgis or several provincial firms).",
+   "sources": [
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: Piccadilly, South Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270",
+     "locator": "Piccadilly, South Side",
+     "quote": "I quitted the service of Mr. Thomas Payne 30th of June, 1797, and commenced business for myself at No. 173 Piccadilly"
+    },
+    {
+     "title": "Wikipedia: Hatchards",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hatchards",
+     "locator": "article text",
+     "quote": "Hatchards is an English bookshop claiming to be the oldest in the United Kingdom"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Paxton & Whitfield",
+   "qid": "Q2065291",
+   "wikipedia_title": "Paxton & Whitfield",
+   "lat": 51.5083,
+   "lon": -0.13686,
+   "nation": "England",
+   "location": "93 Jermyn Street, London",
+   "age_text": "founded 1797 (roots in a 1742 market stall); at No. 93 since 1894",
+   "year": 1797,
+   "claim": "one of the oldest cheesemongers in England",
+   "evidence": "The firm's own dates; the 1742 stall is family tradition. The present shop dates from 1894.",
+   "sources": [
+    {
+     "title": "Wikipedia: Paxton & Whitfield",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Paxton_&_Whitfield",
+     "locator": "article text",
+     "quote": "Paxton & Whitfield were founded in 1797 but have roots going back to a market store in Aldwych in 1742"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "The Oldest Sweet Shop, Pateley Bridge",
+   "qid": null,
+   "wikipedia_title": "Pateley Bridge",
+   "lat": 54.0858,
+   "lon": -1.759,
+   "nation": "England",
+   "location": "High Street, Pateley Bridge, North Yorkshire",
+   "age_text": "established 1827, in a building of 1661",
+   "year": 1827,
+   "claim": "oldest sweet shop in England / longest continuously trading sweet shop in the world (Guinness)",
+   "evidence": "The shop's date and claim are its own, endorsed by Guinness World Records 2014; no independent record checked. Coordinates approximate.",
+   "sources": [
+    {
+     "title": "Wikipedia: Pateley Bridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pateley_Bridge",
+     "locator": "article text",
+     "quote": "is validated as the longest continuous trading sweet shop in the world"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Austins, Derry",
+   "qid": "Q4823355",
+   "wikipedia_title": "Austins (department store)",
+   "lat": 54.995,
+   "lon": -7.322,
+   "nation": "Northern Ireland",
+   "location": "The Diamond, Derry",
+   "age_text": "established 1830; closed 2016; building 1906",
+   "year": 1830,
+   "claim": "oldest department store in the world (own claim)",
+   "evidence": "The claim was the store's; the 1830 business was a modest shop and the store closed without warning in March 2016.",
+   "sources": [
+    {
+     "title": "Wikipedia: Austins (department store)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Austins_(department_store)",
+     "locator": "article text",
+     "quote": "it claimed to be the oldest department store in the world, although the original store, established in 1830, was modest in size"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest shop or trading business",
+   "name": "Jenners",
+   "qid": "Q6177834",
+   "wikipedia_title": "Jenners",
+   "lat": 55.9531,
+   "lon": -3.19416,
+   "nation": "Scotland",
+   "location": "47-52 Princes Street, Edinburgh",
+   "age_text": "opened 1 May 1838 on the present site; building 1893-95; closed 2020",
+   "year": 1838,
+   "claim": "Scotland's oldest independent department store",
+   "evidence": "The listing records the first shop on the site in 1838; the store closed in December 2020 and is being converted, so it no longer trades.",
+   "sources": [
+    {
+     "title": "HES designation LB29505: Jenners Department Store",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB29505",
+     "locator": "statement / description",
+     "quote": "The first shop was opened on the 1st May 1838 by Charles Jenner and Charles Kennington in converted houses on the present site"
+    },
+    {
+     "title": "Wikipedia: Jenners",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jenners",
+     "locator": "article text",
+     "quote": "It closed in December 2020"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Royal Mint",
+   "qid": "Q951830",
+   "wikipedia_title": "Royal Mint",
+   "lat": 51.555,
+   "lon": -3.387,
+   "nation": "Wales",
+   "location": "Llantrisant, Rhondda Cynon Taf (since 1968)",
+   "age_text": "traditional founding c. 886; at Llantrisant since 1968",
+   "year": 886,
+   "claim": "oldest manufacturer in Britain (by its own symbolic date)",
+   "evidence": "886 is a symbolic date for Alfred's London mint, not a continuous firm; the Mint was in the Tower and on Tower Hill before moving to Llantrisant in 1968, so nothing on the present site is old.",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Mint",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Mint",
+     "locator": "article text",
+     "quote": "named in celebration of its symbolic founding date"
+    },
+    {
+     "title": "Wikipedia: Royal Mint",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Mint",
+     "locator": "article text",
+     "quote": "It is currently located in Llantrisant, Wales, where it moved in 1968"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Whitechapel Bell Foundry",
+   "qid": "Q174855",
+   "wikipedia_title": "Whitechapel Bell Foundry",
+   "lat": 51.51694,
+   "lon": -0.06722,
+   "nation": "England",
+   "location": "32-34 Whitechapel Road, London",
+   "age_text": "bell-founding from the 1570s; on this site from the mid-1740s; closed 2017",
+   "year": 1570,
+   "claim": "oldest manufacturing company in Great Britain (until it closed)",
+   "evidence": "The list entry (2016 revision) accepts continuous founding in Whitechapel from at least the 1570s, but on the present site only from the 1740s; the foundry closed in June 2017.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1357529: Whitechapel Bell Foundry",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101357529",
+     "locator": "list entry description",
+     "quote": "Whitechapel Bell Foundry has operated continuously in Whitechapel since at least the 1570s, but on this site probably since the mid-1740s"
+    },
+    {
+     "title": "Wikipedia: Whitechapel Bell Foundry",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whitechapel_Bell_Foundry",
+     "locator": "article text",
+     "quote": "The foundry closed on 12 June 2017"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Shepherd Neame Brewery",
+   "qid": "Q12002324",
+   "wikipedia_title": "Shepherd Neame Brewery",
+   "lat": 51.3157,
+   "lon": 0.8905,
+   "nation": "England",
+   "location": "17 Court Street, Faversham, Kent",
+   "age_text": "firm's date 1698; brewing on the site recorded from 1573",
+   "year": 1698,
+   "claim": "oldest brewery in Britain (claim shared with the Three Tuns, Bishop's Castle)",
+   "evidence": "1698 is the brewery's own founding date; town records show brewing on the site from 1573. The 'oldest brewer' title is disputed (Three Tuns licensed 1642). Coordinates approximate.",
+   "sources": [
+    {
+     "title": "Wikipedia: Shepherd Neame Brewery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shepherd_Neame_Brewery",
+     "locator": "article text",
+     "quote": "While 1698 is the brewery's official established date, town records show that commercial brewing has occurred on the site since 1573"
+    },
+    {
+     "title": "Wikipedia: Shepherd Neame Brewery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shepherd_Neame_Brewery",
+     "locator": "article text",
+     "quote": "Shepherd Neame claims to be the oldest brewery in Great Britain"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Lombe's Mill (Derby Silk Mill)",
+   "qid": "Q507700",
+   "wikipedia_title": "Lombe's Mill",
+   "lat": 52.92582,
+   "lon": -1.47569,
+   "nation": "England",
+   "location": "Silk Mill Lane, Derby (Museum of Making)",
+   "age_text": "built 1717-21; rebuilt after the 1910 fire",
+   "year": 1717,
+   "claim": "first successful silk-throwing mill in Britain; perhaps the first fully mechanised factory",
+   "evidence": "Built 1717-21 for the Lombes; only foundation arches and some brickwork of the first mill survive in the building rebuilt after the fire of 1910.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1287508: Silk Mill Museum of Making",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101287508",
+     "locator": "list entry description",
+     "quote": "Rebuilt in late C19, but the original site and retaining some of the brickwork of the silk mill established in 1717 by John Lombe, the first silk mill in this country"
+    },
+    {
+     "title": "Wikipedia: Lombe's Mill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
+     "locator": "article text",
+     "quote": "Lombe's Mill was the first successful silk throwing mill in Britain"
+    },
+    {
+     "title": "Wikipedia: Lombe's Mill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
+     "locator": "article text",
+     "quote": "On 5 December 1910 at 5.00 am, fire broke out"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Royal Crown Derby",
+   "qid": "Q1988714",
+   "wikipedia_title": "Royal Crown Derby",
+   "lat": 52.9119,
+   "lon": -1.4697,
+   "nation": "England",
+   "location": "Osmaston Road, Derby (works since 1877)",
+   "age_text": "porcelain made in Derby from c. 1750; Osmaston Road factory 1877",
+   "year": 1750,
+   "claim": "oldest or second-oldest English porcelain maker (disputed with Royal Worcester)",
+   "evidence": "A creamware jug dated 1750 in the V&A shows production by then; the business has had several breaks and the present works dates from 1877. Coordinates approximate.",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Crown Derby",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Crown_Derby",
+     "locator": "article text",
+     "quote": "as evidenced by a creamware jug dated 1750 that is in the possession of the Victoria and Albert Museum"
+    },
+    {
+     "title": "Wikipedia: Royal Crown Derby",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Crown_Derby",
+     "locator": "article text",
+     "quote": "Royal Crown Derby is the oldest or second oldest remaining English porcelain manufacturer"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Royal Worcester",
+   "qid": "Q668894",
+   "wikipedia_title": "Royal Worcester",
+   "lat": 52.1866,
+   "lon": -2.21832,
+   "nation": "England",
+   "location": "Severn Street, Worcester (former works, now museum)",
+   "age_text": "established 1751",
+   "year": 1751,
+   "claim": "oldest or second-oldest English porcelain brand (disputed with Royal Crown Derby)",
+   "evidence": "Founded by Dr John Wall and partners in 1751; manufacture at Worcester has ended and the brand belongs to Portmeirion, so it is a brand and works site rather than a working factory.",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Worcester",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Worcester",
+     "locator": "article text",
+     "quote": "It was established in 1751 and is believed to be the oldest or second oldest remaining English porcelain brand"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Kilbeggan Distillery",
+   "qid": "Q1867525",
+   "wikipedia_title": "Kilbeggan Distillery",
+   "lat": 53.36926,
+   "lon": -7.50235,
+   "nation": "Ireland",
+   "location": "Kilbeggan, County Westmeath",
+   "age_text": "licence 1757",
+   "year": 1757,
+   "claim": "oldest licensed distillery in Ireland",
+   "evidence": "A copy of the 1757 licence is shown in the distillery; Barnard in the 1880s called it the oldest in Ireland. Distilling stopped 1953-2007, so production has not been continuous.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kilbeggan Distillery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilbeggan_Distillery",
+     "locator": "article text",
+     "quote": "a copy of the licence to distil dated from 1757 can be seen in the distillery"
+    },
+    {
+     "title": "Wikipedia: Kilbeggan Distillery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilbeggan_Distillery",
+     "locator": "article text",
+     "quote": "was said to be the oldest in Ireland"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Wedgwood, Etruria Hall",
+   "qid": "Q5404896",
+   "wikipedia_title": "Etruria Hall",
+   "lat": 53.0261,
+   "lon": -2.1953,
+   "nation": "England",
+   "location": "Etruria, Stoke-on-Trent",
+   "age_text": "Wedgwood founded 1 May 1759; Etruria works producing from 1769",
+   "year": 1759,
+   "claim": "Wedgwood's house at the Etruria works",
+   "evidence": "Josiah Wedgwood set up on his own in 1759 and built the Etruria works (demolished) from 1769; Etruria Hall, his house, survives.",
+   "sources": [
+    {
+     "title": "Wikipedia: Wedgwood",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wedgwood",
+     "locator": "article text",
+     "quote": "founded on 1 May 1759 by the potter and entrepreneur Josiah Wedgwood"
+    },
+    {
+     "title": "Wikipedia: Wedgwood",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wedgwood",
+     "locator": "article text",
+     "quote": "the Etruria Works factory was producing from 1769"
+    },
+    {
+     "title": "Historic England list entry 1195817: Etruria Hall",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101195817",
+     "locator": "list entry description",
+     "quote": "The house was originally built for Josiah Wedgwood"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Cromford Mill",
+   "qid": "Q2566525",
+   "wikipedia_title": "Cromford Mill",
+   "lat": 53.109,
+   "lon": -1.556,
+   "nation": "England",
+   "location": "Mill Road, Cromford, Derbyshire",
+   "age_text": "1771",
+   "year": 1771,
+   "claim": "world's first water-powered cotton-spinning mill",
+   "evidence": "Arkwright's first mill of 1771 survives, cut down by two storeys in 1929; the list entry and the World Heritage nomination date it.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1248010: Cromford Mill",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101248010",
+     "locator": "list entry description",
+     "quote": "it was not until Richard Arkwright constructed a water-powered spinning mill at Cromford in 1771"
+    },
+    {
+     "title": "Wikipedia: Cromford Mill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cromford_Mill",
+     "locator": "article text",
+     "quote": "Cromford Mill is the world's first water-powered cotton spinning mill"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Waterford Crystal",
+   "qid": "Q2057963",
+   "wikipedia_title": "Waterford Crystal",
+   "lat": 52.25845,
+   "lon": -7.10878,
+   "nation": "Ireland",
+   "location": "The Mall, Waterford (House of Waterford)",
+   "age_text": "Penrose glassworks 1783-1851; present firm 1947",
+   "year": 1947,
+   "claim": "glassmaking in Waterford since 1783",
+   "evidence": "The brand's 1783 refers to the Penroses' glassworks, which closed in 1851; the present business was founded in 1947, so it is not continuous.",
+   "sources": [
+    {
+     "title": "Wikipedia: Waterford Crystal",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Waterford_Crystal",
+     "locator": "article text",
+     "quote": "The origins of crystal production in Waterford date back to 1783"
+    },
+    {
+     "title": "Wikipedia: Waterford Crystal",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Waterford_Crystal",
+     "locator": "article text",
+     "quote": "That firm closed in June 1851"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Old Bushmills Distillery",
+   "qid": "Q268267",
+   "wikipedia_title": "Old Bushmills Distillery",
+   "lat": 55.20192,
+   "lon": -6.51965,
+   "nation": "Northern Ireland",
+   "location": "Bushmills, County Antrim",
+   "age_text": "distillery company 1784; '1608' on the label is a regional licence",
+   "year": 1784,
+   "claim": "oldest licensed distillery in the world (marketing, from 1608)",
+   "evidence": "The 1608 licence was a general one for the district, granted to Sir Thomas Phillips; the distillery company dates from 1784.",
+   "sources": [
+    {
+     "title": "Wikipedia: Old Bushmills Distillery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Bushmills_Distillery",
+     "locator": "article text",
+     "quote": "The company that originally built the distillery was formed in 1784, although the date 1608 is printed on the label"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Stanley Mills (Bell Mill)",
+   "qid": "Q17569870",
+   "wikipedia_title": "Stanley Mills",
+   "lat": 56.47923,
+   "lon": -3.44097,
+   "nation": "Scotland",
+   "location": "Stanley, Perth and Kinross",
+   "age_text": "Bell Mill 1786-87, designed with Arkwright",
+   "year": 1786,
+   "claim": "perhaps the finest surviving Arkwright cotton mill",
+   "evidence": "The HES listing dates the Bell Mill to 1786-7; the mills worked until 1989.",
+   "sources": [
+    {
+     "title": "HES designation LB4486: Bell Mill, Stanley Mills",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB4486",
+     "locator": "statement / description",
+     "quote": "To designs of Sir Richard Arkwright, perhaps with James Stobie, surveyor to the Duke of Atholl; millwright-work by Lowe of Nottingham, 1786-7"
+    },
+    {
+     "title": "HES designation LB4486: Bell Mill, Stanley Mills",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB4486",
+     "locator": "statement / description",
+     "quote": "perhaps the finest and best- preserve cotton mill with which Sir Richard Arkwright was concerned"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Ditherington Flax Mill",
+   "qid": "Q1839955",
+   "wikipedia_title": "Shrewsbury Flaxmill Maltings",
+   "lat": 52.7195,
+   "lon": -2.7432,
+   "nation": "England",
+   "location": "Spring Gardens, Ditherington, Shrewsbury",
+   "age_text": "spinning mill 1796-97",
+   "year": 1797,
+   "claim": "first iron-framed building in the world",
+   "evidence": "Built 1796-97 by Charles Bage with an iron frame; the list entry dates it and calls the spinning mill the earliest building on the site.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1270576: Spinning Mill, Flaxmill Maltings",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101270576",
+     "locator": "list entry description",
+     "quote": "Spinning Mill, 1796-1800 by Charles Bage"
+    },
+    {
+     "title": "Wikipedia: Shrewsbury Flaxmill Maltings",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Flaxmill_Maltings",
+     "locator": "article text",
+     "quote": "It was the first iron-framed building in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Portsmouth Block Mills",
+   "qid": "Q3399543",
+   "wikipedia_title": "Portsmouth Block Mills",
+   "lat": 50.8035,
+   "lon": -1.10934,
+   "nation": "England",
+   "location": "HM Naval Base, Portsmouth",
+   "age_text": "machinery installed 1803-05",
+   "year": 1803,
+   "claim": "start of mass production with all-metal machine tools",
+   "evidence": "Brunel and Maudslay's block-making machines were installed in 1803-05 in an existing building.",
+   "sources": [
+    {
+     "title": "Wikipedia: Portsmouth Block Mills",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portsmouth_Block_Mills",
+     "locator": "article text",
+     "quote": "The first set, for medium blocks, was installed in January 1803"
+    },
+    {
+     "title": "Wikipedia: Portsmouth Block Mills",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portsmouth_Block_Mills",
+     "locator": "article text",
+     "quote": "They started the age of mass-production using all-metal machine tools"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "John Taylor & Co bell foundry",
+   "qid": "Q6260315",
+   "wikipedia_title": "John Taylor & Co",
+   "lat": 52.77318,
+   "lon": -1.19892,
+   "nation": "England",
+   "location": "Freehold Street, Loughborough",
+   "age_text": "Taylor family from 1784; Loughborough foundry 1839, present site 1859",
+   "year": 1784,
+   "claim": "world's largest working bell foundry; origins claimed in the 14th century",
+   "evidence": "The 14th-century descent is the firm's; the Taylor family's founding is 1784 and the Loughborough works dates from 1859.",
+   "sources": [
+    {
+     "title": "Wikipedia: John Taylor & Co",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Taylor_&_Co",
+     "locator": "article text",
+     "quote": "The Taylor family became involved in 1784 with Robert Taylor"
+    },
+    {
+     "title": "Wikipedia: John Taylor & Co",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Taylor_&_Co",
+     "locator": "article text",
+     "quote": "moving to the current site in 1859"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest manufacturer",
+   "name": "Belleek Pottery",
+   "qid": "Q4883748",
+   "wikipedia_title": "Belleek Pottery",
+   "lat": 54.48211,
+   "lon": -8.08661,
+   "nation": "Northern Ireland",
+   "location": "Belleek, County Fermanagh",
+   "age_text": "factory begun 1858; company from 1884",
+   "year": 1858,
+   "claim": "Ireland's oldest working pottery (often said)",
+   "evidence": "The building was begun in 1858 and Parian ware made from 1863; the present company dates from 1884. Often called Ireland's oldest pottery, a claim not checked.",
+   "sources": [
+    {
+     "title": "Wikipedia: Belleek Pottery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Belleek_Pottery",
+     "locator": "article text",
+     "quote": "Preparation of the site and building began in 1858"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Sele Mill (site of England's first paper mill)",
+   "qid": "Q95919704",
+   "wikipedia_title": "Sele Mill",
+   "lat": 51.7977,
+   "lon": -0.088,
+   "nation": "England",
+   "location": "North Road, Hertford",
+   "age_text": "John Tate's paper mill, 1490s",
+   "year": 1490,
+   "claim": "first paper mill in England",
+   "evidence": "John Tate made paper here in the 1490s; the present mill building is later and is now flats.",
+   "sources": [
+    {
+     "title": "Wikipedia: John Tate (papermaker)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Tate_(papermaker)",
+     "locator": "article text",
+     "quote": "Paper was produced there in the 1490s, and possibly earlier"
+    },
+    {
+     "title": "Wikipedia: Sele Mill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sele_Mill",
+     "locator": "article text",
+     "quote": "As far as is known, Sele was the first paper mill in England"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Portsmouth dry docks",
+   "qid": "Q17649977",
+   "wikipedia_title": "HMNB Portsmouth",
+   "lat": 50.8025,
+   "lon": -1.10989,
+   "nation": "England",
+   "location": "HM Naval Base, Portsmouth",
+   "age_text": "first dry dock 1495 (lost); Great Stone Dock (No. 5) begun 1691, rebuilt 1769",
+   "year": 1691,
+   "claim": "first recorded dry dock in the world (1495); 'oldest surviving' claim",
+   "evidence": "Henry VII's dock of 1495 was filled with rubble a century later, so the 'oldest surviving dry dock' claim for 1495 is wrong; the oldest dock in use is Dummer's Great Stone Dock (No. 5) of 1691 onwards, rebuilt 1769.",
+   "sources": [
+    {
+     "title": "Wikipedia: HMNB Portsmouth",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMNB_Portsmouth",
+     "locator": "article text",
+     "quote": "The first recorded dry dock in the world was built in Portsmouth by Henry VII in 1495"
+    },
+    {
+     "title": "Wikipedia: HMNB Portsmouth",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMNB_Portsmouth",
+     "locator": "article text",
+     "quote": "a hundred years later it is described as being filled with rubble"
+    },
+    {
+     "title": "Wikipedia: HMNB Portsmouth",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMNB_Portsmouth",
+     "locator": "article text",
+     "quote": "Extensively rebuilt in 1769, the Great Stone Dock is now known as No.5 dock"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Old Furnace, Coalbrookdale",
+   "qid": "Q99643180",
+   "wikipedia_title": "Coalbrookdale Museum of Iron",
+   "lat": 52.64063,
+   "lon": -2.49273,
+   "nation": "England",
+   "location": "Coalbrookdale, Ironbridge Gorge, Shropshire",
+   "age_text": "furnace of 1638; coke smelting 1709; rebuilt 1777",
+   "year": 1638,
+   "claim": "where iron was first smelted with coke (1709)",
+   "evidence": "The list entry dates the base to 1638 (cast on the beams) and the coke smelting to 1709; the upper structure is Abraham Darby III's rebuilding of 1777.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1054135: The Old Furnace",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101054135",
+     "locator": "list entry description",
+     "quote": "part of the first furnace of 1638 in which, in 1709 the first iron ever to be made with coke was smelted"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Catcliffe Glass Cone",
+   "qid": "Q5051772",
+   "wikipedia_title": "Catcliffe Glass Cone",
+   "lat": 53.3926,
+   "lon": -1.36171,
+   "nation": "England",
+   "location": "Main Street, Catcliffe, Rotherham",
+   "age_text": "c. 1740",
+   "year": 1740,
+   "claim": "oldest surviving glass cone in Western Europe",
+   "evidence": "Built about 1740 for William Fenney; the date is in the list entry.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1132732: The Glassworks Cone",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101132732",
+     "locator": "list entry description",
+     "quote": "Glass cone. c1740 for William Fenney"
+    },
+    {
+     "title": "Wikipedia: Catcliffe Glass Cone",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Catcliffe_Glass_Cone",
+     "locator": "article text",
+     "quote": "It is the oldest surviving structure of its type in Western Europe"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Bonawe Iron Furnace",
+   "qid": "Q1870352",
+   "wikipedia_title": "Bonawe Iron Furnace",
+   "lat": 56.43772,
+   "lon": -5.23041,
+   "nation": "Scotland",
+   "location": "Taynuilt, Argyll",
+   "age_text": "1753",
+   "year": 1753,
+   "claim": "most complete charcoal-fired ironworks in Britain",
+   "evidence": "Built in 1753 by the Newland Company of Cumbria and in use until 1876; the HES schedule calls it the most complete early iron works in Scotland.",
+   "sources": [
+    {
+     "title": "HES designation SM90037: Bonawe, Iron Furnace",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90037",
+     "locator": "statement / description",
+     "quote": "dating form 1753 when it was established by the Newland Company of Cumbria"
+    },
+    {
+     "title": "HES designation SM90037: Bonawe, Iron Furnace",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90037",
+     "locator": "statement / description",
+     "quote": "the most complete and well-preserved early industrial iron works in Scotland"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Dyfi Furnace",
+   "qid": "Q12056811",
+   "wikipedia_title": "Dyfi Furnace",
+   "lat": 52.53813,
+   "lon": -3.9403,
+   "nation": "Wales",
+   "location": "Furnace, Eglwys Fach, Ceredigion",
+   "age_text": "c. 1755",
+   "year": 1755,
+   "claim": "restored charcoal-fired blast furnace",
+   "evidence": "Built around 1755 and out of use by 1810.",
+   "sources": [
+    {
+     "title": "Wikipedia: Dyfi Furnace",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dyfi_Furnace",
+     "locator": "article text",
+     "quote": "The furnace built around 1755 was only used for about fifty years to smelt iron ore"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "The Ropery, Chatham Dockyard",
+   "qid": "Q17533432",
+   "wikipedia_title": "Chatham Dockyard",
+   "lat": 51.3914,
+   "lon": 0.52521,
+   "nation": "England",
+   "location": "Chatham Historic Dockyard, Kent",
+   "age_text": "1785-91",
+   "year": 1785,
+   "claim": "still making rope commercially; longest brick building in Europe when built",
+   "evidence": "Built 1785-91 (Wikipedia gives 1790 for completion); rope is still made there.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1268250: The Ropery and Spinning Room",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101268250",
+     "locator": "list entry description",
+     "quote": "Ropery. 1785-1791, engine house added c1836"
+    },
+    {
+     "title": "Wikipedia: Ropewalk",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ropewalk",
+     "locator": "article text",
+     "quote": "is still producing rope commercially"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Ballincollig Royal Gunpowder Mills",
+   "qid": "Q4851721",
+   "wikipedia_title": "Ballincollig Royal Gunpowder Mills",
+   "lat": 51.893,
+   "lon": -8.59,
+   "nation": "Ireland",
+   "location": "Ballincollig Regional Park, County Cork",
+   "age_text": "1794-1903",
+   "year": 1794,
+   "claim": "once the largest gunpowder mills in Ireland",
+   "evidence": "Opened in 1794 as a private works and later taken over by the government; closed 1903, now a park with surviving mill buildings.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ballincollig Royal Gunpowder Mills",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballincollig_Royal_Gunpowder_Mills",
+     "locator": "article text",
+     "quote": "the powder mills were originally opened in 1794 as a private enterprise"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Northern Glass Cone, Alloa",
+   "qid": "Q7058372",
+   "wikipedia_title": "Northern Glass Cone, Alloa Glass Works",
+   "lat": 56.1113,
+   "lon": -3.8025,
+   "nation": "Scotland",
+   "location": "Alloa, Clackmannanshire",
+   "age_text": "c. 1825",
+   "year": 1825,
+   "claim": "only glass cone surviving in Scotland",
+   "evidence": "One of the cones built by 1825; one of four surviving in the UK.",
+   "sources": [
+    {
+     "title": "Wikipedia: Northern Glass Cone, Alloa Glass Works",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Northern_Glass_Cone,_Alloa_Glass_Works",
+     "locator": "article text",
+     "quote": "The brick-built cone is the only such structure to survive in Scotland"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Gasholder No. 2, Fulham",
+   "qid": "Q27082858",
+   "wikipedia_title": null,
+   "lat": 51.47714,
+   "lon": -0.18644,
+   "nation": "England",
+   "location": "Fulham Gasworks, Sands End, London",
+   "age_text": "1829-30",
+   "year": 1830,
+   "claim": "oldest surviving gasholder in the world",
+   "evidence": "Built 1829-30 for the Imperial Gas Light Company; Historic England calls it by far the oldest surviving gasholder.",
+   "sources": [
+    {
+     "title": "Historic England list entry 1261959: Gasholder No 2, Fulham Gasworks",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101261959",
+     "locator": "list entry description",
+     "quote": "Built in 1829-1830 to the design of John Kirkham of the Imperial Gas Light Company"
+    },
+    {
+     "title": "Historic England list entry 1261959: Gasholder No 2, Fulham Gasworks",
+     "author": "Historic England (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101261959",
+     "locator": "list entry description",
+     "quote": "By far the oldest surviving gasholder in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Fakenham Gasworks",
+   "qid": "Q17647942",
+   "wikipedia_title": null,
+   "lat": 52.8266,
+   "lon": 0.84763,
+   "nation": "England",
+   "location": "Hempton Road, Fakenham, Norfolk (Museum of Gas and Local History)",
+   "age_text": "1846",
+   "year": 1846,
+   "claim": "only complete non-operational town gasworks in England",
+   "evidence": "Built 1846; the scheduled monument entry could not be read by script, so the date rests on secondary accounts.",
+   "sources": [
+    {
+     "title": "Wikipedia: Gasworks",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gasworks",
+     "locator": "article text",
+     "quote": "Fakenham gasworks dating from 1846 is the only complete, non-operational gasworks remaining in England"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest industrial works",
+   "name": "Lion Salt Works",
+   "qid": "Q15242436",
+   "wikipedia_title": "Lion Salt Works",
+   "lat": 53.2753,
+   "lon": -2.4952,
+   "nation": "England",
+   "location": "Marston, near Northwich, Cheshire",
+   "age_text": "1894-1986",
+   "year": 1894,
+   "claim": "last open-pan salt works in the UK",
+   "evidence": "Built 1894 and worked until 1986; not old, but the last of its kind.",
+   "sources": [
+    {
+     "title": "Wikipedia: Lion Salt Works",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lion_Salt_Works",
+     "locator": "article text",
+     "quote": "The Lion Salt Works is the UK's last remaining open pan salt works"
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

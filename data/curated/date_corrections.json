@@ -1024,5 +1024,455 @@
   "evidence": "It was the first of Scotland's great inland waterways to be constructed (between 1768 and 1790)",
   "source": "https://portal.historicenvironment.scot/designation/SM6769",
   "reviewed": "2026-10-22"
+ },
+ "Q17536826": {
+  "name": "Harlowbury",
+  "year_start": 1220,
+  "date_text": "c. 1220 (aisled hall; timbers felled 1220–25, tree-ring dated)",
+  "was": "1884 (1884)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Harlow, Harlowbury Manor, Hall: 1220-1225 (Vernacular Architecture 28, p. 141)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q5576653": {
+  "name": "Godinton House",
+  "year_start": 1390,
+  "date_text": "c. 1390–1415 (great hall and solar; timbers felled 1383–1416, tree-ring dated); south range 1620s",
+  "was": "1991 (1991)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Great Chart, Godinton House, Great Hall: 1383-1415 (Vernacular Architecture 51, p. 121); Great Chart, Godinton Park, Solar: 1396-1416 (Vernacular Architecture 39, p. 107); Great Chart, Godinton Park, south range: 1623-1642 (Vernacular Architecture 39, p. 107)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q7726974": {
+  "name": "The Commandery",
+  "year_start": 1465,
+  "date_text": "c. 1465–73 (timbers felled 1461–73, tree-ring dated)",
+  "was": "1977 (1977)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Worcester, The Commandery, house on street frontage: 1461-1480 (Vernacular Architecture 39, p. 126); Worcester, The Commandery: 1465-70 (Vernacular Architecture 29, p. 105); Worcester, The Commandery, Solar Range: 1468-1471 (Vernacular Architecture 39, p. 126)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q7487951": {
+  "name": "Shandy Hall",
+  "year_start": 1590,
+  "date_text": "c. 1590 or later (timbers felled after 1588, tree-ring dated)",
+  "was": "1968 (1968)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Coxwold, Shandy Hall: 1588-18+20 (Vernacular Architecture 24, p. 45)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q5571125": {
+  "name": "Gloddaeth Hall",
+  "year_start": 1525,
+  "date_text": "c. 1525 (hall timbers felled 1524–26, tree-ring dated); remodelled 19th century",
+  "was": "mid 19th century (1834)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Llandudno, Gloddaeth Hall: 1524-26 (Vernacular Architecture 46, p. 113)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q17741395": {
+  "name": "Llwyn-celyn",
+  "year_start": 1419,
+  "date_text": "1419–20 (hall and solar timbers felled 1418/19, tree-ring dated); later ranges 1680s–90s",
+  "was": "1690 (1690)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Cwmyoy, Llwyn Celyn, hall and solar: 1418/19 (Vernacular Architecture 50, p. 90); Cwmyoy, Llwyn Celyn, back kitchen: 1678-1708 (Vernacular Architecture 50, p. 90); Cwmyoy, Llwyn Celyn, Beast House: 1688/9 (Vernacular Architecture 50, p. 90)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q1263962": {
+  "name": "Duff House",
+  "year_start": 1735,
+  "date_text": "1735–40 (timbers felled 1736–37, tree-ring dated)",
+  "was": "1995 (1995)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Banff, Duff House: 1736-17 (Vernacular Architecture 46, p. 127)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q7851324": {
+  "name": "Tudor Tavern, Taunton",
+  "year_start": 1324,
+  "date_text": "1320s (timbers felled 1323–24, tree-ring dated); 16th-century front",
+  "was": "16th century (1501)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Taunton, 15 Fore Street, Tudor Tavern: 1323-1324 (Vernacular Architecture 34, p. 117)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q7737525": {
+  "name": "The Grange",
+  "year_start": 1665,
+  "date_text": "c. 1665–80 (timbers felled 1648–81, tree-ring dated); remodelled from 1809",
+  "was": "19th-century (1801)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Northington, The Grange: 1648-1681 (Vernacular Architecture 37, p. 98)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q991572": {
+  "name": "Bruce Castle",
+  "year_start": 1560,
+  "date_text": "c. 1560 (roof timbers felled 1554–76, tree-ring dated); refronted 1684",
+  "was": "1684 (1684)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Tottenham, Bruce Castle, Roof: 1554-1576 (Vernacular Architecture 28, p. 135); Tottenham, Bruce Castle: 1554-1576 (Vernacular Architecture 29, p. 105)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q17527328": {
+  "name": "Great Fulford House",
+  "year_start": 1440,
+  "date_text": "mid 15th century (rear courtyard timbers felled 1426–58, tree-ring dated); 16th-century wings",
+  "was": "16th century (1501)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Dunsford, Great Fulford House, Rear Courtyard: 1426-58 (Vernacular Architecture 49, p. 122); Dunsford, Great Fulford House, North Wing Roof: 1536-66 (Vernacular Architecture 49, p. 122); Dunsford, Great Fulford House, South Wing, Ceiling Beams: 1560-81 (Vernacular Architecture 49, p. 122)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q15713029": {
+  "name": "Upton Cressett Hall",
+  "year_start": 1428,
+  "date_text": "1428–31 (hall range and cross wing timbers felled 1427–31, tree-ring dated)",
+  "was": "16th century (1501)",
+  "evidence": "Tree-ring dates (VAG Dendrochronology Database): Upton Cressett, Upton Cressett Hall, Hall Range: 1427-1431 (Vernacular Architecture 25, p. 33); Upton Cressett, Upton Cressett Hall, Cross Wing: 1428-1430 (Vernacular Architecture 25, p. 33); Upton Cressett, Upton Cressett Hall, Cross Wing extension: 1498 (Vernacular Architecture 25, p. 33)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-22"
+ },
+ "Q2290997": {
+  "name": "Sizergh Castle",
+  "year_start": 1400,
+  "date_text": "hall before the 15th century; south tower probably 15th century; wings mid 16th century (timbers 1557/8)",
+  "was": "1920 (1920)",
+  "evidence": "South Tower, probably C15, (previously thought to be C14 and the earliest building on the site) appears to have been added to earlier hall",
+  "source": "https://britishlistedbuildings.co.uk/101318962",
+  "reviewed": "2026-10-22"
+ },
+ "Q5094023": {
+  "name": "Chestnuts long barrow",
+  "year_start": -4000,
+  "date_text": "c. 4000–3800 BC (Early Neolithic Medway tomb; not dated directly)",
+  "was": "fifth millennium BC (-5000)",
+  "evidence": "The first Neolithic things and practices probably appeared in south-east England in the 41st century cal BC",
+  "source": "https://www.torrossa.com/en/resources/an/5084418",
+  "reviewed": "2026-10-22"
+ },
+ "Q3784763": {
+  "name": "Hembury",
+  "year_start": -3700,
+  "date_text": "c. 3700 BC (Neolithic causewayed enclosure); Iron Age hillfort later",
+  "was": "fifth millennium BC (-5000)",
+  "evidence": "a new Neolithic earthwork to the north of the causewayed enclosure excavated by Miss D. M. Liddell in 1930–35",
+  "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/excavations-at-hembury-devon-198083-a-summary-report/527A180156A212793C892E222887CED6",
+  "reviewed": "2026-10-22"
+ },
+ "Q661855": {
+  "name": "Avebury",
+  "year_start": -2900,
+  "date_text": "c. 2900–2600 BC (henge, radiocarbon); stone settings to c. 2200 BC",
+  "was": "around 4250–4000 BC (-4250)",
+  "evidence": "The ditches and banks of Avebury henge have yielded radiocarbon dates around 2900-2600 cal BC",
+  "source": "https://intarch.ac.uk/journal/issue27/3/appendix1.html",
+  "reviewed": "2026-10-22"
+ },
+ "Q2519821": {
+  "name": "Bryn Celli Ddu",
+  "year_start": -3070,
+  "date_text": "c. 3070–2950 BC (passage tomb, radiocarbon); Mesolithic postholes on the site earlier",
+  "was": "around 4000 BC (-4000)",
+  "evidence": "shows the tomb to have been built between 3074 and 2956 cal bc",
+  "source": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/bryn-celli-ddu-passage-tomb-anglesey-alignment-construction-date-and-ritual/6A95DFB4ED16F57FFCC6501466424DF1",
+  "reviewed": "2026-10-22"
+ },
+ "Q261318": {
+  "name": "Carrowkeel Megalithic Cemetery",
+  "year_start": -3500,
+  "date_text": "c. 3500–2500 BC (passage tombs, radiocarbon)",
+  "was": "4th millennium BC (-4000)",
+  "evidence": "The first detailed investigation of the human remains from the Carrowkeel passage tomb complex",
+  "source": "https://www.cambridge.org/core/product/CE8E9D1CC402CCF625E172501E8E8C65",
+  "reviewed": "2026-10-22"
+ },
+ "Q260398": {
+  "name": "Carrowmore",
+  "year_start": -3750,
+  "date_text": "c. 3750–3000 BC (radiocarbon; Bergh & Hensey 2013)",
+  "was": "4th millennium BC (-4000)",
+  "evidence": "the Carrowmore monuments are shown to have spanned the era circa 3750 BC to circa 3000 BC",
+  "source": "https://en.wikipedia.org/wiki/Carrowmore",
+  "reviewed": "2026-10-22"
+ },
+ "Q7594075": {
+  "name": "St Lythans Chambered Tomb",
+  "year_start": -3800,
+  "date_text": "c. 3800–3600 BC (Cotswold-Severn tomb; not dated directly)",
+  "was": "around 4000 BC (-4000)",
+  "evidence": "The chamber itself has never been excavated",
+  "source": "https://cadw.gov.wales/visit/places-to-visit/st-lythans-chambered-tomb",
+  "reviewed": "2026-10-22"
+ },
+ "Q7619217": {
+  "name": "Stonehenge Cursus",
+  "year_start": -3600,
+  "date_text": "c. 3630–3375 BC (radiocarbon, antler from ditch base)",
+  "was": "4th millennium BC (-4000)",
+  "evidence": "had been dated by a red deer antler found in its ditch in the 1940s to 2890-2460 BC",
+  "source": "https://pure.uhi.ac.uk/en/publications/the-date-of-the-greater-stonehenge-cursus/",
+  "reviewed": "2026-10-22"
+ },
+ "Q1859561": {
+  "name": "Tinkinswood",
+  "year_start": -3700,
+  "date_text": "c. 3700 BC (radiocarbon on finds)",
+  "was": "around 4000 BC (-4000)",
+  "evidence": "This Neolithic (New Stone Age) tomb is topped with one of largest capstones in Britain",
+  "source": "https://cadw.gov.wales/visit/places-to-visit/tinkinswood-burial-chamber",
+  "reviewed": "2026-10-22"
+ },
+ "Q141505427": {
+  "name": "Tiredigan Court Tomb",
+  "year_start": -3700,
+  "date_text": "c. 3700 BC (court tomb; not dated directly)",
+  "was": "4000 BC (-4000)",
+  "evidence": "Cairnbaine, also called Tiredigan Court Tomb, is a court cairn",
+  "source": "https://en.wikipedia.org/wiki/Cairnbaine",
+  "reviewed": "2026-10-22"
+ },
+ "Q7847949": {
+  "name": "Trundle",
+  "year_start": -3600,
+  "date_text": "c. 3600 BC (Neolithic causewayed enclosure); Iron Age hillfort c. 500–100 BC",
+  "was": "4000 BC (-4000)",
+  "evidence": "appeared in the final decades of the 38th century cal BC",
+  "source": "https://www.torrossa.com/en/resources/an/5084418",
+  "reviewed": "2026-10-22"
+ },
+ "Q17649106": {
+  "name": "Hazleton long barrows, north and south",
+  "year_start": -3700,
+  "date_text": "c. 3700–3650 BC (Hazleton North, radiocarbon); Hazleton South undated",
+  "was": "c. 3800 BC–3300 BC (typical for long barrows) (-3800)",
+  "evidence": "This model suggests that the cairn was constructed in the first half of the 37th century cal BC",
+  "source": "https://dspace.stir.ac.uk/handle/1893/28557?mode=full",
+  "reviewed": "2026-10-22"
+ },
+ "Q1776885": {
+  "name": "Knap of Howar",
+  "year_start": -3300,
+  "date_text": "c. 3300–3000 BC (stone houses, radiocarbon); earlier activity on the site from c. 3700 BC or before",
+  "was": "3800 BC (Wikidata: c. 3700 BC) (-3800)",
+  "evidence": "culminating in the construction of the stone buildings in the latter part of the 4th millennium BC",
+  "source": "https://journals.socantscot.org/index.php/psas/article/view/10861",
+  "reviewed": "2026-10-22"
+ },
+ "Q17649595": {
+  "name": "Round cairn with funerary chamber on Buzza Hill, 45m west of the Buzza Tower, St Mary's",
+  "year_start": -2500,
+  "date_text": "c. 2500-1500 BC (Late Neolithic / Early Bronze Age chambered cairn, by type)",
+  "was": "c. 3800 BC–3200 BC (typical for portal tombs / dolmens) (-3800)",
+  "evidence": "It is typical of late Neolithic and early Bronze Age cairns on the Isles of Scilly",
+  "source": "https://www.worldhistory.org/image/18832/buzza-hill-entrance-grave/",
+  "reviewed": "2026-10-22"
+ },
+ "Q7568568": {
+  "name": "South Street barrow",
+  "year_start": -3500,
+  "date_text": "c. 3500 BC (radiocarbon: 2810-2580 bc uncalibrated)",
+  "was": "c. 3800 BC–3300 BC (typical for long barrows) (-3800)",
+  "evidence": "Long barrow oriented ESE, of single phase construction built on old plough soil",
+  "source": "https://intarch.ac.uk/journal/issue11/1/gaz_fr.cfm?id=97",
+  "reviewed": "2026-10-22"
+ },
+ "Q17671858": {
+  "name": "Wor Barrow and two bowl barrows on Handley Down",
+  "year_start": -3670,
+  "date_text": "c. 3685-3650 BC (radiocarbon, Bayesian model)",
+  "was": "c. 3800 BC–3300 BC (typical for long barrows) (-3800)",
+  "evidence": "antler radicoarbon dated to the early to mid 4th millennium BC in the lowest fill",
+  "source": "https://heritage.dorsetcouncil.gov.uk/Monument/MDO6074",
+  "reviewed": "2026-10-22"
+ },
+ "Q2553002": {
+  "name": "Wayland's Smithy",
+  "year_start": -3590,
+  "date_text": "3590–3555 BC (timber mortuary structure, radiocarbon); stone-chambered long barrow c. 3460–3400 BC",
+  "was": "3550 BC (-3550)",
+  "evidence": "the second phase of the monument was probably constructed in the middle to later part of the 35th century cal BC (3460–3400 cal BC)",
+  "source": "https://storre.stir.ac.uk/handle/1893/28556?mode=full",
+  "reviewed": "2026-10-22"
+ },
+ "Q340567": {
+  "name": "Achnabreck Cup And Ring Marks",
+  "year_start": -3000,
+  "date_text": "c. 3000 BC or later (later Neolithic–Bronze Age rock art)",
+  "was": "c. 3500 BC–2000 BC (typical for cup-and-ring rock art) (-3500)",
+  "evidence": "the densest and most elaborate concentration of later Neolithic and Bronze Age carvings in Scotland",
+  "source": "https://portal.historicenvironment.scot/designation/SM90006",
+  "reviewed": "2026-10-22"
+ },
+ "Q3080996": {
+  "name": "Haddon Hall",
+  "year_start": 1101,
+  "date_text": "12th century (fragments); mainly 14th–15th century",
+  "was": "11th-century (1001)",
+  "evidence": "Fragments of C12 work but mainly of two periods",
+  "source": "https://britishlistedbuildings.co.uk/101334982",
+  "reviewed": "2026-10-22"
+ },
+ "Q4806024": {
+  "name": "Ashton Court",
+  "year_start": 1401,
+  "date_text": "15th century (house)",
+  "was": "11th century (1001)",
+  "evidence": "C15; altered and extended c.1635",
+  "source": "https://britishlistedbuildings.co.uk/101129841",
+  "reviewed": "2026-10-22"
+ },
+ "Q7084689": {
+  "name": "Old Palace, Canterbury",
+  "year_start": 1201,
+  "date_text": "early 13th century (traces of the archbishop's palace); rebuilt 1896",
+  "was": "11th century (1001)",
+  "evidence": "Rebuilt in 1896 by W.D Caröe",
+  "source": "https://britishlistedbuildings.co.uk/101085066",
+  "reviewed": "2026-10-22"
+ },
+ "Q7490484": {
+  "name": "Sharsted Court",
+  "year_start": 1301,
+  "date_text": "14th century (house); manor in Doddington, recorded in Domesday",
+  "was": "11th century (1001)",
+  "evidence": "House. C14 to C17, remodelled 1711",
+  "source": "https://britishlistedbuildings.co.uk/101335856",
+  "reviewed": "2026-10-22"
+ },
+ "Q6812225": {
+  "name": "Melford Hall",
+  "year_start": 1559,
+  "date_text": "1559 (house); earlier manor",
+  "was": "1065 (1065)",
+  "evidence": "It was built in 1559 by William Cordell",
+  "source": "https://britishlistedbuildings.co.uk/101033702",
+  "reviewed": "2026-10-22"
+ },
+ "Q5681394": {
+  "name": "Hatfield Manor House",
+  "year_start": 1101,
+  "date_text": "12th century (hall); remodelled 16th–18th century",
+  "was": "1070 (1070)",
+  "evidence": "C12 hall remodelled and extended C16 and C17",
+  "source": "https://britishlistedbuildings.co.uk/101151589",
+  "reviewed": "2026-10-22"
+ },
+ "Q15227840": {
+  "name": "Icomb Place",
+  "year_start": 1420,
+  "date_text": "c. 1420 (house); manor recorded 1086",
+  "was": "1085 (1085)",
+  "evidence": "Rebuilt c1420, probably by Sir John Blaket",
+  "source": "https://britishlistedbuildings.co.uk/101153494",
+  "reviewed": "2026-10-22"
+ },
+ "Q5933291": {
+  "name": "Hughenden Manor",
+  "year_start": 1738,
+  "date_text": "1738 (house); manor recorded 1086",
+  "was": "1086 (1086)",
+  "evidence": "1738 core, extended late C18, remodelled in about 1860",
+  "source": "https://britishlistedbuildings.co.uk/101125785",
+  "reviewed": "2026-10-22"
+ },
+ "Q7877726": {
+  "name": "Ugbrooke",
+  "year_start": 1671,
+  "date_text": "17th century or earlier (chapel consecrated 1671); remodelled by Robert Adam 1763–68; manor recorded 1086",
+  "was": "1086 (1086)",
+  "evidence": "A remodelling between 1763 and 1768 by Robert Adam of an earlier house",
+  "source": "https://britishlistedbuildings.co.uk/101097135",
+  "reviewed": "2026-10-22"
+ },
+ "Q7836749": {
+  "name": "Treasurer's House, York",
+  "year_start": 1601,
+  "date_text": "early 17th century (house, rebuilding a 16th-century one); treasurer's house on the site from 1091",
+  "was": "1091 (1091)",
+  "evidence": "Early C17 rebuild of C16 house",
+  "source": "https://britishlistedbuildings.co.uk/101257251",
+  "reviewed": "2026-10-22"
+ },
+ "Q17534720": {
+  "name": "Wings Place",
+  "year_start": 1570,
+  "date_text": "late 16th century (house); manor of Ditchling recorded 1086",
+  "was": "1095 (1095)",
+  "evidence": "L-shaped late C16 timber-framed building",
+  "source": "https://britishlistedbuildings.co.uk/101043969",
+  "reviewed": "2026-10-22"
+ },
+ "Q15978966": {
+  "name": "Dalemain",
+  "year_start": 1401,
+  "date_text": "15th century (hall range); 16th–18th-century additions",
+  "was": "12th century (1101)",
+  "evidence": "C15 with C16 additions, C17 alterations",
+  "source": "https://britishlistedbuildings.co.uk/101221057",
+  "reviewed": "2026-10-22"
+ },
+ "Q17538273": {
+  "name": "Walburn Hall",
+  "year_start": 1401,
+  "date_text": "15th–16th century",
+  "was": "12th-century (1101)",
+  "evidence": "C15 and C16, restored in the early C19",
+  "source": "https://britishlistedbuildings.co.uk/101179695",
+  "reviewed": "2026-10-22"
+ },
+ "Q2970700": {
+  "name": "Sherborne Castle",
+  "year_start": 1594,
+  "date_text": "1594 (Raleigh's lodge), enlarged 1625",
+  "was": "12th-century (1101)",
+  "evidence": "Late C16 rectangular central block with its angle turrets, for Sir Walter Raleigh",
+  "source": "https://britishlistedbuildings.co.uk/101153912",
+  "reviewed": "2026-10-22"
+ },
+ "Q3667127": {
+  "name": "Chenies Manor House",
+  "year_start": 1401,
+  "date_text": "15th century (west range); south range c. 1530",
+  "was": "12th century (1101)",
+  "evidence": "C15 west range and south range of c1530",
+  "source": "https://britishlistedbuildings.co.uk/101332531",
+  "reviewed": "2026-10-22"
+ },
+ "Q4807153": {
+  "name": "Aske Hall",
+  "year_start": 1401,
+  "date_text": "15th century (pele tower); manor recorded 1086",
+  "was": "12th century (1101)",
+  "evidence": "C15 pele tower with C16 hall, C17 wings",
+  "source": "https://britishlistedbuildings.co.uk/101157422",
+  "reviewed": "2026-10-22"
+ },
+ "Q4878748": {
+  "name": "Beckley Park",
+  "year_start": 1540,
+  "date_text": "c. 1540 (Tudor hunting lodge); medieval lodge recorded 1347",
+  "was": "12th century (1101)",
+  "evidence": "c.1540, probably for Lord Williams of Thame",
+  "source": "https://britishlistedbuildings.co.uk/101180781",
+  "reviewed": "2026-10-22"
+ },
+ "Q5181923": {
+  "name": "Cranborne Manor",
+  "year_start": 1207,
+  "date_text": "c. 1207/8 (King John's hunting lodge); remodelled 1608–36",
+  "was": "12th century (1101)",
+  "evidence": "Hunting Lodge, now country house, c.1207/8",
+  "source": "https://britishlistedbuildings.co.uk/101120172",
+  "reviewed": "2026-10-22"
+ },
+ "Q5189618": {
+  "name": "Croxdale Hall",
+  "year_start": 1601,
+  "date_text": "probably 17th century; re-faced c. 1760 (12th-century chapel in the grounds is separate)",
+  "was": "12th-century (1101)",
+  "evidence": "Probably C17; altered and re-faced c.1760",
+  "source": "https://britishlistedbuildings.co.uk/101159140",
+  "reviewed": "2026-10-22"
  }
 }

@@ -1,0 +1,2323 @@
+{
+ "about": "Oldest graves, gravestones, churchyards, cemeteries and notable graves of the isles (research track, 2026-10-22), each with the age claim, how secure it is, and sources with exact quotes (checked by python -m bidb.evidence --check).",
+ "entries": [
+  {
+   "category": "Oldest burial",
+   "name": "Red Lady of Paviland",
+   "qid": null,
+   "wikipedia_title": "Red Lady of Paviland",
+   "lat": 51.55009,
+   "lon": -4.25519,
+   "nation": "Wales",
+   "location": "Goat's Hole (Paviland Cave), Gower, Swansea",
+   "museum": "Oxford University Museum of Natural History",
+   "age_text": "c. 34,000 years ago (Upper Palaeolithic)",
+   "year": -32000,
+   "claim": "oldest known ceremonial burial of a modern human in Western Europe",
+   "evidence": "Radiocarbon dates on the skeleton (revised 2009 and 2010) put it at about 34,000 years old; the 'Lady' is in fact a young man. The museum that holds the bones states the claim.",
+   "sources": [
+    {
+     "title": "The Red Lady of Paviland",
+     "author": "Oxford University Museum of Natural History",
+     "kind": "secondary",
+     "url": "https://oumnh.ox.ac.uk/the-red-lady-of-paviland",
+     "locator": "museum page",
+     "quote": "the most recent radiocarbon dating indicates that they are around 34,000 years old, making this the oldest known ceremonial burial of an anatomically modern human anywhere in Western Europe"
+    },
+    {
+     "title": "Wikipedia: Red Lady of Paviland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_Lady_of_Paviland",
+     "locator": "article text",
+     "quote": "A later 2010 study revised this to around 34,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Aveline's Hole cemetery",
+   "qid": "Q790368",
+   "wikipedia_title": "Aveline's Hole",
+   "lat": 51.3247,
+   "lon": -2.75333,
+   "nation": "England",
+   "location": "Burrington Combe, Mendip Hills, Somerset",
+   "museum": "University of Bristol Spelaeological Society (surviving remains)",
+   "age_text": "c. 8,400 BC (Early Mesolithic)",
+   "year": -8400,
+   "claim": "earliest scientifically dated cemetery in Britain",
+   "evidence": "Radiocarbon dates on the human remains (Schulting 2005) give about 10,200–10,400 years ago; much of the collection was destroyed in the Blitz. Scheduled monument NHLE 1010297.",
+   "sources": [
+    {
+     "title": "Wikipedia: Aveline's Hole",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aveline's_Hole",
+     "locator": "article text",
+     "quote": "The earliest scientifically dated cemetery in Britain, 10,200 and 10,400 years old, was found at Aveline's Hole"
+    },
+    {
+     "title": "Cheddar Man: Mesolithic Britain's blue-eyed boy",
+     "author": "Natural History Museum",
+     "kind": "secondary",
+     "url": "https://www.nhm.ac.uk/discover/cheddar-man-mesolithic-britain-blue-eyed-boy.html",
+     "locator": "museum article",
+     "quote": "Aveline's Hole which is one of the biggest Mesolithic cemeteries in Britain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Cheddar Man, Gough's Cave",
+   "qid": "Q4508563",
+   "wikipedia_title": "Cheddar Man",
+   "lat": 51.28139,
+   "lon": -2.76417,
+   "nation": "England",
+   "location": "Gough's Cave, Cheddar Gorge, Somerset",
+   "museum": "Natural History Museum, London",
+   "age_text": "c. 8,600–7,900 BC (Mesolithic)",
+   "year": -8300,
+   "claim": "oldest almost complete modern human skeleton found in Britain",
+   "evidence": "Radiocarbon dated to about 10,000 years ago; found alone in 1903 and it is not certain he was deliberately buried, so the record is as oldest near-complete skeleton rather than oldest grave.",
+   "sources": [
+    {
+     "title": "Cheddar Man: Mesolithic Britain's blue-eyed boy",
+     "author": "Natural History Museum",
+     "kind": "secondary",
+     "url": "https://www.nhm.ac.uk/discover/cheddar-man-mesolithic-britain-blue-eyed-boy.html",
+     "locator": "museum article",
+     "quote": "Cheddar Man lived around 10,000 years ago and is the oldest almost complete skeleton of our species"
+    },
+    {
+     "title": "Cheddar Man: Mesolithic Britain's blue-eyed boy",
+     "author": "Natural History Museum",
+     "kind": "secondary",
+     "url": "https://www.nhm.ac.uk/discover/cheddar-man-mesolithic-britain-blue-eyed-boy.html",
+     "locator": "section 'An unusual cave burial'",
+     "quote": "it wasn't clear whether he had been buried"
+    },
+    {
+     "title": "Wikipedia: Gough's Cave",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gough's_Cave",
+     "locator": "article text",
+     "quote": "He is Britain's oldest complete human skeleton"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Hermitage Mesolithic burial",
+   "qid": null,
+   "wikipedia_title": "Irish Mesolithic",
+   "lat": 52.7143,
+   "lon": -8.5016,
+   "nation": "Ireland",
+   "location": "Hermitage, near Castleconnell, Co. Limerick (coordinates of Castleconnell; site on the Shannon nearby)",
+   "museum": null,
+   "age_text": "7530–7320 BC (Mesolithic cremation)",
+   "year": -7400,
+   "claim": "earliest known human burial in Ireland",
+   "evidence": "Radiocarbon-dated cremation burials found on a bend of the Shannon in 2001 (Collins and Coyne); the adze with them is the earliest securely dated polished axe in Europe. Only a reference source was checked here.",
+   "sources": [
+    {
+     "title": "Wikipedia: Irish Mesolithic",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_Mesolithic",
+     "locator": "article text",
+     "quote": "The earliest known human burial in Ireland is dated to 7530-7320 BCE"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "La Hougue Bie passage grave",
+   "qid": "Q1395892",
+   "wikipedia_title": "La Hougue Bie",
+   "lat": 49.2006,
+   "lon": -2.0638,
+   "nation": "Jersey",
+   "location": "Grouville, Jersey",
+   "museum": null,
+   "age_text": "c. 4000–3500 BC (Neolithic)",
+   "year": -4000,
+   "claim": "oldest burial monument of the Channel Islands, one of the largest and best preserved passage graves in Western Europe",
+   "evidence": "Neolithic passage grave with a 20 m passage, excavated by the Société Jersiaise in 1925; dated to about 4000–3500 BC.",
+   "sources": [
+    {
+     "title": "Wikipedia: La Hougue Bie",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/La_Hougue_Bie",
+     "locator": "article text",
+     "quote": "La Hougue Bie is a Neolithic ritual site which was in use around 4000-3500 BC"
+    },
+    {
+     "title": "Wikipedia: La Hougue Bie",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/La_Hougue_Bie",
+     "locator": "article text",
+     "quote": "one of the largest and best preserved passage graves"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Poulnabrone portal tomb",
+   "qid": null,
+   "wikipedia_title": "Poulnabrone dolmen",
+   "lat": 53.04869,
+   "lon": -9.14002,
+   "nation": "Ireland",
+   "location": "The Burren, Co. Clare",
+   "museum": null,
+   "age_text": "c. 3800–3200 BC (Neolithic)",
+   "year": -3800,
+   "claim": "one of the earliest radiocarbon-dated burials in an Irish megalithic tomb",
+   "evidence": "Remains of about 30 people from the 1986–88 excavation (Lynch) were radiocarbon dated to burials over some 600 years from about 3800 BC.",
+   "sources": [
+    {
+     "title": "Wikipedia: Poulnabrone dolmen",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Poulnabrone_dolmen",
+     "locator": "article text",
+     "quote": "The human remains and objects are estimated to have been buried intermittently during the 600-year period between 3800 and 3200 BC"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Carrowmore megalithic cemetery",
+   "qid": "Q260398",
+   "wikipedia_title": "Carrowmore",
+   "lat": 54.25086,
+   "lon": -8.51917,
+   "nation": "Ireland",
+   "location": "Coolera Peninsula, Co. Sligo",
+   "museum": null,
+   "age_text": "4th millennium BC (Neolithic); Listoghil c. 3500 BC",
+   "year": -3700,
+   "claim": "largest and oldest group of Neolithic (megalithic) tombs in Ireland",
+   "evidence": "The OPW describes Carrowmore as Ireland's oldest megalithic tombs, about 6,000 years old; earlier excavator dates in the 5th millennium BC are disputed, so the safer date is the 4th millennium BC.",
+   "sources": [
+    {
+     "title": "Carrowmore Megalithic Cemetery",
+     "author": "Heritage Ireland (OPW)",
+     "kind": "secondary",
+     "url": "https://heritageireland.ie/places-to-visit/carrowmore-megalithic-cemetery/",
+     "locator": "site page",
+     "quote": "It is the largest and oldest collection of Neolithic tombs in Ireland"
+    },
+    {
+     "title": "Wikipedia: Carrowmore",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carrowmore",
+     "locator": "article text",
+     "quote": "They were built in the 4th millennium BC, during the Neolithic"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Amesbury Archer",
+   "qid": "Q890530",
+   "wikipedia_title": "Amesbury Archer",
+   "lat": 51.16326,
+   "lon": -1.7651,
+   "nation": "England",
+   "location": "Boscombe Down, Amesbury, Wiltshire (find-spot SU 16324 4043)",
+   "museum": "Salisbury Museum",
+   "age_text": "c. 2300 BC (Early Bronze Age, Beaker)",
+   "year": -2300,
+   "claim": "richest Early Bronze Age grave in Britain, with the earliest gold found in Britain",
+   "evidence": "Excavated by Wessex Archaeology in May 2002; radiocarbon dated to about 2300 BC; about 100 objects including gold hair ornaments dated as early as 2470 BC.",
+   "sources": [
+    {
+     "title": "The Amesbury Archer",
+     "author": "Wessex Archaeology",
+     "kind": "primary",
+     "url": "https://www.wessexarch.co.uk/our-work/amesbury-archer",
+     "locator": "excavator's project page",
+     "quote": "His grave was the richest ever found dating from the early Bronze Age found in Britain"
+    },
+    {
+     "title": "The Amesbury Archer",
+     "author": "Wessex Archaeology",
+     "kind": "primary",
+     "url": "https://www.wessexarch.co.uk/our-work/amesbury-archer",
+     "locator": "excavator's project page",
+     "quote": "The gold dated to as early as 2,470BC and is the earliest found in Britain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Bush Barrow",
+   "qid": "Q202551",
+   "wikipedia_title": "Bush Barrow",
+   "lat": 51.172,
+   "lon": -1.825,
+   "nation": "England",
+   "location": "Normanton Down, Wilsford cum Lake, Wiltshire",
+   "museum": "Wiltshire Museum, Devizes",
+   "age_text": "c. 1950 BC (Early Bronze Age, Wessex culture)",
+   "year": -1950,
+   "claim": "richest Bronze Age burial of the Stonehenge landscape",
+   "evidence": "Dug by William Cunnington in 1808; dated by its grave goods (gold lozenge, daggers, mace) to about 1950 BC.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bush Barrow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bush_Barrow",
+     "locator": "article text",
+     "quote": "The items date the burial to the early Bronze Age, circa 1950 BC"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Prittlewell princely burial",
+   "qid": "Q7374789",
+   "wikipedia_title": "Prittlewell royal Anglo-Saxon burial",
+   "lat": 51.55391,
+   "lon": 0.70873,
+   "nation": "England",
+   "location": "Priory Crescent, Prittlewell, Southend-on-Sea, Essex",
+   "museum": "Southend Central Museum",
+   "age_text": "c. AD 580 (575–605)",
+   "year": 580,
+   "claim": "earliest dated Anglo-Saxon princely chamber grave, with Christian gold-foil crosses",
+   "evidence": "Found by MOLA in 2003; radiocarbon dating puts the chamber between 575 and 605, earlier than Sutton Hoo Mound 1; possibly Sæxa, brother of King Sæberht.",
+   "sources": [
+    {
+     "title": "Wikipedia: Prittlewell royal Anglo-Saxon burial",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prittlewell_royal_Anglo-Saxon_burial",
+     "locator": "article text",
+     "quote": "Carbon dating had indicated that the tomb was built between 575 and 605"
+    },
+    {
+     "title": "Wikipedia: Prittlewell royal Anglo-Saxon burial",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prittlewell_royal_Anglo-Saxon_burial",
+     "locator": "article text",
+     "quote": "the burial was of an early Anglo-Saxon Christian"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Sutton Hoo ship burial (Mound 1)",
+   "qid": "Q503256",
+   "wikipedia_title": "Sutton Hoo",
+   "lat": 52.08972,
+   "lon": 1.33889,
+   "nation": "England",
+   "location": "Sutton Hoo, near Woodbridge, Suffolk",
+   "museum": "British Museum",
+   "age_text": "c. AD 625",
+   "year": 625,
+   "claim": "richest early Anglo-Saxon burial, probably King Rædwald of East Anglia",
+   "evidence": "Undisturbed ship burial excavated in 1939; coins date it to the 620s; the cemetery was used about 575–625. The identification with Rædwald is likely but not proven.",
+   "sources": [
+    {
+     "title": "Wikipedia: Sutton Hoo",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sutton_Hoo",
+     "locator": "article text",
+     "quote": "It was used in this way from around 575 to 625"
+    },
+    {
+     "title": "Wikipedia: Sutton Hoo",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sutton_Hoo",
+     "locator": "article text",
+     "quote": "Rædwald, the first king of the East Angles who was an actual historical figure, is the most likely person to have been buried in the ship"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Repton Viking burials",
+   "qid": null,
+   "wikipedia_title": "St Wystan's Church, Repton",
+   "lat": 52.84056,
+   "lon": -1.55306,
+   "nation": "England",
+   "location": "St Wystan's churchyard and vicarage garden, Repton, Derbyshire",
+   "museum": null,
+   "age_text": "AD 873–874",
+   "year": 873,
+   "claim": "burials of the Viking Great Army's winter camp, the best dated Viking mass grave in England",
+   "evidence": "The Anglo-Saxon Chronicle puts the army at Repton in 873–874; the Biddles' excavations (1974–88) found Viking graves and a charnel deposit of at least 249 (later 264) people, and new radiocarbon dates support a late 9th-century date.",
+   "sources": [
+    {
+     "title": "Wikipedia: Great Heathen Army",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Great_Heathen_Army",
+     "locator": "article text",
+     "quote": "at the end of 873 the Vikings took up winter quarters at Repton in Derbyshire"
+    },
+    {
+     "title": "Wikipedia: Great Heathen Army",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Great_Heathen_Army",
+     "locator": "article text",
+     "quote": "revealed the disarticulated remains of at least 249 people"
+    },
+    {
+     "title": "Wikipedia: Repton",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Repton",
+     "locator": "article text",
+     "quote": "A mass burial containing at least 264 individuals has been interpreted as linked to the Viking presence"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Scar boat burial",
+   "qid": "Q893171",
+   "wikipedia_title": "Scar boat burial",
+   "lat": 59.2978,
+   "lon": -2.5679,
+   "nation": "Scotland",
+   "location": "Scar, Sanday, Orkney",
+   "museum": "Orkney Museum, Kirkwall",
+   "age_text": "AD 875–950",
+   "year": 875,
+   "claim": "Viking boat grave of a man, an elderly woman and a child",
+   "evidence": "Rescue excavation 1991 of an eroding boat burial; dated 875–950 from grave goods and radiocarbon.",
+   "sources": [
+    {
+     "title": "Wikipedia: Scar boat burial",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scar_boat_burial",
+     "locator": "article text",
+     "quote": "The burial, which dates to between 875 and 950 AD"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest burial",
+   "name": "Port an Eilean Mhòir boat burial",
+   "qid": "Q2235151",
+   "wikipedia_title": "Port an Eilean Mhòir boat burial",
+   "lat": 56.76,
+   "lon": -6.02,
+   "nation": "Scotland",
+   "location": "Swordle Bay, Ardnamurchan, Highland",
+   "museum": "National Museums Scotland",
+   "age_text": "10th century AD",
+   "year": 950,
+   "claim": "first fully intact Viking boat burial found on the British mainland",
+   "evidence": "Excavated 2011 by the Ardnamurchan Transitions Project; dated to the 10th century by its grave goods.",
+   "sources": [
+    {
+     "title": "Wikipedia: Port an Eilean Mhòir boat burial",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Port_an_Eilean_Mhòir_boat_burial",
+     "locator": "article text",
+     "quote": "It is the first time a confirmable Viking boat burial has been found fully intact on the UK mainland"
+    },
+    {
+     "title": "Wikipedia: Port an Eilean Mhòir boat burial",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Port_an_Eilean_Mhòir_boat_burial",
+     "locator": "article text",
+     "quote": "Dated to the 10th century"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Tombstone of Marcus Favonius Facilis",
+   "qid": "Q111098002",
+   "wikipedia_title": null,
+   "lat": 51.888,
+   "lon": 0.884,
+   "nation": "England",
+   "location": "Lexden Road area, Colchester, Essex (find-spot, 1868)",
+   "museum": "Colchester Castle Museum",
+   "age_text": "c. AD 43–60 (Roman centurion's tombstone)",
+   "year": 50,
+   "claim": "one of the earliest Roman tombstones in Britain (centurion of the Twentieth Legion at Camulodunum)",
+   "evidence": "Facilis served with Legio XX, stationed at Colchester only between AD 43 and c. 49; the stone was erected by his freedmen and is dated by that posting and its pre-Boudican context. Find-spot coordinates approximate.",
+   "sources": [
+    {
+     "title": "Camulodunum",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Camulodunum",
+     "locator": "Burials",
+     "quote": "The tomb of the centurion Marcus Favonius Facilis from Rome, depicting him in full military dress, is one of the finest examples"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Tombstone of Longinus Sdapeze",
+   "qid": null,
+   "wikipedia_title": "Funerary stela of Longinus Sdapeze",
+   "lat": 51.8877,
+   "lon": 0.8807,
+   "nation": "England",
+   "location": "Lexden Road, Colchester, Essex (find-spot, 1928)",
+   "museum": "Colchester Castle Museum",
+   "age_text": "c. AD 55 (Roman cavalry tombstone)",
+   "year": 55,
+   "claim": "one of the oldest Roman tombstones found in Britain",
+   "evidence": "Thracian cavalry officer who came with the invasion of AD 43; the tombstone is dated by the unit's presence at Camulodunum before the Boudican revolt (AD 60/61), when it was apparently thrown down. Dating is by context, not an inscribed date.",
+   "sources": [
+    {
+     "title": "Funerary stela of Longinus Sdapeze",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funerary_stela_of_Longinus_Sdapeze",
+     "locator": "lead",
+     "quote": "His tombstone is one of the oldest Roman tombstones ever found in Britain"
+    },
+    {
+     "title": "Funerary stela of Longinus Sdapeze",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funerary_stela_of_Longinus_Sdapeze",
+     "locator": "Discovery and excavation",
+     "quote": "The stela was first discovered by workmen in 1928 during a site levelling project in Colchester on Lexden road"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Rufus Sita Tombstone",
+   "qid": "Q7378098",
+   "wikipedia_title": "Rufus Sita Tombstone",
+   "lat": 51.868,
+   "lon": -2.234,
+   "nation": "England",
+   "location": "London Road, Gloucester (find-spot, 1824)",
+   "museum": "Museum of Gloucester",
+   "age_text": "mid-1st century AD (Roman cavalry tombstone)",
+   "year": 60,
+   "claim": "early Roman military tombstone from Glevum",
+   "evidence": "Thracian cavalryman of the Sixth Cohort; dated stylistically and by the early military phase at Gloucester. Find-spot coordinates approximate.",
+   "sources": [
+    {
+     "title": "Rufus Sita Tombstone",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rufus_Sita_Tombstone",
+     "locator": "lead",
+     "quote": "a Roman soldier from the mid 1st Century AD, found near London Road, Gloucester, in 1824"
+    },
+    {
+     "title": "Rufus Sita Tombstone",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rufus_Sita_Tombstone",
+     "locator": "Reception",
+     "quote": "The tombstone has been in the Gloucester City Museum & Art Gallery since 1873"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Tombstone of Regina",
+   "qid": "Q131736544",
+   "wikipedia_title": "Tombstone of Regina",
+   "lat": 55.0,
+   "lon": -1.43,
+   "nation": "England",
+   "location": "Bath Street, South Shields, Tyne and Wear (find-spot, 1878)",
+   "museum": "Arbeia Roman Fort museum, South Shields",
+   "age_text": "2nd century AD (Roman tombstone, Latin and Palmyrene)",
+   "year": 175,
+   "claim": "best-known Roman tombstone of a woman in Britain; bilingual Latin–Aramaic",
+   "evidence": "Set up by Barates of Palmyra for his freed wife, a Catuvellaunian; dated to the later 2nd century from style and the fort's history. Not a claim to be the oldest, but a landmark grave marker.",
+   "sources": [
+    {
+     "title": "Tombstone of Regina",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tombstone_of_Regina",
+     "locator": "Discovery",
+     "quote": "The tombstone was discovered in Bath Street, South Shields, in 1878"
+    },
+    {
+     "title": "Tombstone of Regina",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tombstone_of_Regina",
+     "locator": "Public display",
+     "quote": "Regina's tombstone was on display in the 'Set in Stone' gallery at Arbeia Roman Fort"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Tombstone of Victor",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 55.0044,
+   "lon": -1.43111,
+   "nation": "England",
+   "location": "South Shields, Tyne and Wear (Roman cemetery; find-spot approximate)",
+   "museum": "Arbeia Roman Fort museum, South Shields",
+   "age_text": "late 2nd century AD (Roman tombstone)",
+   "year": 190,
+   "claim": "Roman tombstone of a freed Moorish slave, one of the two famous grave markers at Arbeia",
+   "evidence": "Erected by Numerianus of the Ala I Asturum for his freedman Victor, aged 20; dated by style and the unit's presence at South Shields.",
+   "sources": [
+    {
+     "title": "Arbeia",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arbeia",
+     "locator": "Museum",
+     "quote": "The stone records that Victor was \"of the Moorish nation\""
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Tombstone of Julia Velva",
+   "qid": "Q138380738",
+   "wikipedia_title": "Tombstone of Julia Velva",
+   "lat": 53.953,
+   "lon": -1.095,
+   "nation": "England",
+   "location": "The Mount, York (find-spot, 1922; coordinates approximate)",
+   "museum": "Yorkshire Museum, York",
+   "age_text": "c. AD 210–240 (Roman tombstone)",
+   "year": 225,
+   "claim": "best-preserved Roman funerary banquet tombstone from Eboracum",
+   "evidence": "Erected by her heir Aurelius Mercurialis; dated by style and formula. A landmark Roman grave marker rather than an 'oldest' claim.",
+   "sources": [
+    {
+     "title": "Tombstone of Julia Velva",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tombstone_of_Julia_Velva",
+     "locator": "Discovery",
+     "quote": "The tombstone of Julia Velva was found at York on 11 July 1922 at a depth of 3.5 feet during the cutting of a road between The Mount and Southbank"
+    },
+    {
+     "title": "Tombstone of Julia Velva",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tombstone_of_Julia_Velva",
+     "locator": "lead",
+     "quote": "The tomb is dated to approximately AD 210–240"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Latinus Stone",
+   "qid": "Q113363957",
+   "wikipedia_title": null,
+   "lat": 54.73368,
+   "lon": -4.41693,
+   "nation": "Scotland",
+   "location": "Whithorn, Dumfries and Galloway",
+   "museum": "Whithorn Priory Museum (Historic Environment Scotland)",
+   "age_text": "c. AD 450 (inscribed Christian memorial)",
+   "year": 450,
+   "claim": "earliest surviving Christian memorial in Scotland",
+   "evidence": "Latin inscription commemorating Latinus and his daughter; dated by letter forms and formula to the mid-5th century. The claim is widely accepted. QID is for the museum where it is kept.",
+   "sources": [
+    {
+     "title": "Whithorn",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whithorn",
+     "locator": "Museum",
+     "quote": "includes the country's earliest surviving Christian memorial, the 5th-century inscribed Latinus Stone"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Knock y Doonee Ogham Stone",
+   "qid": "Q104879089",
+   "wikipedia_title": "Knock y Doonee Ogham Stone",
+   "lat": 54.392,
+   "lon": -4.42,
+   "nation": "Isle of Man",
+   "location": "Knock y Doonee, Andreas (find-spot, 1911; coordinates approximate)",
+   "museum": "Manx Museum, Douglas (Manx National Heritage)",
+   "age_text": "5th or early 6th century AD (Latin and ogham memorial)",
+   "year": 500,
+   "claim": "one of the earliest inscribed grave markers on the Isle of Man",
+   "evidence": "Bilingual Latin–ogham memorial to Ammecatus son of Rocatus, dated by script and formula. QID is the site. Current location is believed to be the Manx Museum (not verified here).",
+   "sources": [
+    {
+     "title": "Knock y Doonee Ogham Stone",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Knock_y_Doonee_Ogham_Stone",
+     "locator": "Inscription",
+     "quote": "The Latin and Ogham inscriptions are dated to the 5th or early 6th century, and both commemorate a person named Ammecatus son of Rocatus"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Saturninus stone, Llansadwrn",
+   "qid": "Q17741708",
+   "wikipedia_title": "St Sadwrn's Church, Llansadwrn",
+   "lat": 53.2601,
+   "lon": -4.16942,
+   "nation": "Wales",
+   "location": "St Sadwrn's Church, Llansadwrn, Anglesey",
+   "museum": null,
+   "age_text": "6th century AD (inscribed memorial)",
+   "year": 530,
+   "claim": "memorial of the church's founder Saturninus and his wife",
+   "evidence": "Latin inscription to 'the blessed Saturninus' and his wife, dated by formula to the 6th century. Local sites call it the oldest memorial in Wales, which is not supportable (5th-century stones exist); kept as an early named founder's grave marker.",
+   "sources": [
+    {
+     "title": "Llansadwrn, Anglesey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Llansadwrn,_Anglesey",
+     "locator": "lead",
+     "quote": "founded in the sixth century by Saint Saturninus, who together with his wife, is commemorated by an early Christian monument"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Voteporix Stone (Castell Dwyran)",
+   "qid": null,
+   "wikipedia_title": "Vortiporius",
+   "lat": 51.83176,
+   "lon": -4.69469,
+   "nation": "Wales",
+   "location": "Castelldwyran church, Carmarthenshire (find-spot, 1895)",
+   "museum": "Carmarthenshire County Museum, Abergwili",
+   "age_text": "5th–6th century AD (Latin and ogham memorial)",
+   "year": 540,
+   "claim": "bilingual memorial possibly of King Vortipor of Dyfed, named by Gildas",
+   "evidence": "Latin MEMORIA VOTEPORIGIS PROTICTORIS with ogham VOTECORIGAS; dated by formula and script. The identification with Gildas's Vortiporius is disputed, so the 'oldest royal tombstone' claim is open.",
+   "sources": [
+    {
+     "title": "Vortiporius",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Vortiporius",
+     "locator": "Memorial stone",
+     "quote": "A memorial stone was discovered in 1895 near the church of Castell Dwyran in Carmarthenshire bearing a Christian cross and with inscriptions in both Latin and in ogham"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Penmachno consular stone (Iustini consulis)",
+   "qid": "Q7163099",
+   "wikipedia_title": "Penmachno",
+   "lat": 53.0397,
+   "lon": -3.7984,
+   "nation": "Wales",
+   "location": "St Tudclyd's Church, Penmachno, Conwy",
+   "museum": null,
+   "age_text": "AD 540 if 'Iustinus' is the consul of 540 (otherwise 328–650)",
+   "year": 540,
+   "claim": "the only early Christian stone in Britain dated by a consulship",
+   "evidence": "Fragmentary inscription read as '...son of Avitorius... in the time of Justinus the Consul'; Justinus was consul in 540 but the reading is uncertain. If correct, it is the earliest absolutely dated grave marker in the British Isles. Coordinates are the church (approximate); QID is the village.",
+   "sources": [
+    {
+     "title": "Penmachno",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penmachno",
+     "locator": "History",
+     "quote": "There was a consul called Justinus in 540, but the inscription is unclear and could refer to Justus (328); the broadest date range for the slab is 328 - 650"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Lugnaedon stone, Inchagoill",
+   "qid": "Q85390377",
+   "wikipedia_title": "Inchagoill",
+   "lat": 53.48556,
+   "lon": -9.31694,
+   "nation": "Ireland",
+   "location": "Inchagoill island, Lough Corrib, County Galway",
+   "museum": null,
+   "age_text": "c. 5th–7th century AD (inscribed pillar)",
+   "year": 550,
+   "claim": "oldest inscription in Ireland in the Latin alphabet",
+   "evidence": "Pillar inscribed LIE LUGUAEDON MACCI MENUEH ('stone of Luguaedon son of Menueh'); the 'oldest Latin-alphabet inscription' claim is traditional and the date is by letter forms only, so it is open.",
+   "sources": [
+    {
+     "title": "Inchagoill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inchagoill",
+     "locator": "Lugnad's stone",
+     "quote": "It is the oldest inscription in Ireland in the Latin alphabet (all earlier inscriptions are in Ogham)"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Catamanus Stone (tombstone of King Cadfan)",
+   "qid": null,
+   "wikipedia_title": "St Cadwaladr's Church",
+   "lat": 53.1959,
+   "lon": -4.42096,
+   "nation": "Wales",
+   "location": "St Cadwaladr's Church, Llangadwaladr, Anglesey",
+   "museum": null,
+   "age_text": "c. AD 625–634 (inscribed royal grave marker)",
+   "year": 625,
+   "claim": "earliest grave marker of a named, historically known king in Britain",
+   "evidence": "Latin inscription CATAMANUS REX SAPIENTISIMUS... to Cadfan ap Iago, king of Gwynedd (d. c. 625); dated by the king's death and letter forms. Still in the church where he was buried (QID is the church).",
+   "sources": [
+    {
+     "title": "St Cadwaladr's Church",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Cadwaladr's_Church",
+     "locator": "History",
+     "quote": "King Cadfan ap Iago had been buried in the church, and his tombstone c. 634 is still on display today"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Hartlepool name stones",
+   "qid": null,
+   "wikipedia_title": "Hartlepool Abbey",
+   "lat": 54.6946,
+   "lon": -1.1817,
+   "nation": "England",
+   "location": "Cross Close, Headland, Hartlepool, County Durham (find-spot, 1833 and later)",
+   "museum": "St Hilda's Church, Hartlepool; others in the British Museum and Durham",
+   "age_text": "7th–8th century AD (Anglo-Saxon grave markers)",
+   "year": 680,
+   "claim": "among the earliest Anglo-Saxon inscribed grave markers (from Hild's monastery, founded 640s)",
+   "evidence": "Small slabs with crosses and personal names in runes and Latin letters, found over burials in the cemetery of the double monastery; dated by the monastery's history and the inscriptions.",
+   "sources": [
+    {
+     "title": "Hartlepool Abbey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hartlepool_Abbey",
+     "locator": "History",
+     "quote": "One of the namestones found during this excavation can be found on display in St Hilda's Church"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Kilnasaggart Pillar Stone",
+   "qid": null,
+   "wikipedia_title": "Jonesborough, County Armagh",
+   "lat": 54.0606,
+   "lon": -6.3653,
+   "nation": "Northern Ireland",
+   "location": "Kilnasaggart, near Jonesborough, County Armagh (in situ; coordinates approximate)",
+   "museum": null,
+   "age_text": "c. AD 700–716 (inscribed pillar over an early cemetery)",
+   "year": 714,
+   "claim": "one of the earliest datable Christian monuments in Ireland",
+   "evidence": "Inscription names Ternoc son of Ciaran the Little, whose death is recorded in the annals in 714 or 716; the identification (and so the date) is probable but not certain. The pillar stands over an early Christian burial ground.",
+   "sources": [
+    {
+     "title": "Jonesborough, County Armagh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jonesborough,_County_Armagh",
+     "locator": "Kilnasaggart Pillar Stone",
+     "quote": "The inscribed date of Ternoc's death makes this stone one of the earliest dateable Christian monuments in Ireland"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Grave slab of Gweirca ferch Owain",
+   "qid": null,
+   "wikipedia_title": "Gweirca ferch Owain",
+   "lat": 52.9887,
+   "lon": -3.18653,
+   "nation": "Wales",
+   "location": "Valle Crucis Abbey, near Llangollen, Denbighshire",
+   "museum": null,
+   "age_text": "AD 1290 (dated inscription)",
+   "year": 1290,
+   "claim": "earliest-dated Welsh memorial of any kind",
+   "evidence": "The slab's inscription ends with the year MCCLXXXX; the 'earliest-dated' claim is Peter Lord's. QID is the abbey.",
+   "sources": [
+    {
+     "title": "Gweirca ferch Owain",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gweirca_ferch_Owain",
+     "locator": "Death and burial",
+     "quote": "Peter Lord states that Gweirca's grave slab is \"the earliest-dated Welsh memorial of any kind\""
+    },
+    {
+     "title": "Gweirca ferch Owain",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gweirca_ferch_Owain",
+     "locator": "Death and burial",
+     "quote": "represents the earliest-dated grave slab in north Wales"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Ann Green headstone, Alstonefield",
+   "qid": null,
+   "wikipedia_title": "St Peter's Church, Alstonefield",
+   "lat": 53.0952,
+   "lon": -1.80314,
+   "nation": "England",
+   "location": "St Peter's churchyard, Alstonefield, Staffordshire",
+   "museum": null,
+   "age_text": "1518 (dated headstone)",
+   "year": 1518,
+   "claim": "oldest legible (dated) gravestone in England",
+   "evidence": "A small circular stone inscribed with April 1518. The claim rests on local sources (parish, Wikipedia, local press) and has not been tested against a national survey; sources disagree on the day (3 or 11 April). Plausible as the earliest dated churchyard headstone, but open.",
+   "sources": [
+    {
+     "title": "St Peter's Church, Alstonefield",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter's_Church,_Alstonefield",
+     "locator": "lead",
+     "quote": "In the churchyard is a memorial stone to Ann Green, who died 11 April 1518. This is believed to be the oldest legible gravestone in England"
+    },
+    {
+     "title": "England's Oldest Legible Gravestone – Anne Green at St Peter's Church, Alstonefield",
+     "author": "Jenna Goodwin (The Red Haired Stokie), 2025",
+     "kind": "secondary",
+     "url": "https://www.theredhairedstokie.co.uk/englands-oldest-legible-gravestone-anne-green-at-st-peters-church-alstonefield-staffordshire/",
+     "locator": null,
+     "quote": "the gravestone of Anne Green, who died in April 1518, has survived over 500 years and remains clearly readable today"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Gibb slab, Holy Rude kirkyard, Stirling",
+   "qid": null,
+   "wikipedia_title": "Church of the Holy Rude",
+   "lat": 56.12079,
+   "lon": -3.94454,
+   "nation": "Scotland",
+   "location": "Holy Rude kirkyard, Stirling",
+   "museum": null,
+   "age_text": "1579 (dated grave slab)",
+   "year": 1579,
+   "claim": "oldest dated stone in Stirling's kirkyard; earlier than the 1623 Dunning stone often called Scotland's oldest",
+   "evidence": "Flat slab dated 1579 for a mason called Gibb (Harrison 1990, Forth Naturalist and Historian 13). It is a recumbent slab rather than an upright headstone; earlier dated medieval slabs exist in Scottish churches, so no national record is claimed.",
+   "sources": [
+    {
+     "title": "Stirling Holy Rude Kirk-yard",
+     "author": "Stirling Local History Society",
+     "kind": "secondary",
+     "url": "https://www.stirling-lhs.org/stirling-holy-rude-kirk-yard.html",
+     "locator": null,
+     "quote": "The oldest stone identified has the date 1579. It is a flat slab and was for a stonemason called Gibb"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Rutherford stone, St Serf's, Dunning",
+   "qid": null,
+   "wikipedia_title": "St Serf's Church, Dunning",
+   "lat": 56.31263,
+   "lon": -3.58725,
+   "nation": "Scotland",
+   "location": "St Serf's churchyard, Dunning, Perth and Kinross",
+   "museum": null,
+   "age_text": "1623 (dated gravestone)",
+   "year": 1623,
+   "claim": "'the oldest dated gravestone in Scotland' (local claim)",
+   "evidence": "The parish society's claim cites only 'one authority'; the 1579 Gibb slab at Stirling's Holy Rude is older, so the claim to be the oldest in Scotland does not hold. Kept as an early dated stone.",
+   "sources": [
+    {
+     "title": "St Serf's Graveyard History",
+     "author": "Dunning Parish Historical Society",
+     "kind": "secondary",
+     "url": "https://dunning.uk.net/gravhist.html",
+     "locator": null,
+     "quote": "The Rutherford stone dated 1623. This according to one authority is the oldest dated gravestone in Scotland"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Mac Considine tomb plaque, Ennis Friary",
+   "qid": "Q1343401",
+   "wikipedia_title": "Ennis Friary",
+   "lat": 52.846,
+   "lon": -8.98158,
+   "nation": "Ireland",
+   "location": "Ennis Friary, Ennis, County Clare",
+   "museum": null,
+   "age_text": "1631 (dated Latin memorial)",
+   "year": 1631,
+   "claim": "oldest fully legible gravestone in Ennis Friary",
+   "evidence": "Latin plaque recording that Dermot Mac Considine had the tomb made in 1631; a site claim only. The popular claim for Ireland's oldest dated headstone (Ann Dyke, Kilbrogan, Bandon, 1623) could not be checked: historicgraves.com refuses scripted access.",
+   "sources": [
+    {
+     "title": "Dermot Mac Considine",
+     "author": "Heritage Ireland (OPW)",
+     "kind": "secondary",
+     "url": "https://heritageireland.ie/articles/dermot-mac-considine/",
+     "locator": null,
+     "quote": "This is the oldest fully legible gravestone in the friary"
+    },
+    {
+     "title": "Dermot Mac Considine",
+     "author": "Heritage Ireland (OPW)",
+     "kind": "secondary",
+     "url": "https://heritageireland.ie/articles/dermot-mac-considine/",
+     "locator": null,
+     "quote": "LVM FIERI FECIT ANNO 1631"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest dated gravestone or grave marker",
+   "name": "Slate headstone dated 1631, Teversal",
+   "qid": null,
+   "wikipedia_title": "St Katherine's Church, Teversal",
+   "lat": 53.1521,
+   "lon": -1.27864,
+   "nation": "England",
+   "location": "St Katherine's churchyard, Teversal, Nottinghamshire",
+   "museum": null,
+   "age_text": "1631 (dated slate headstone)",
+   "year": 1631,
+   "claim": "one of the two earliest slate headstones in Nottinghamshire",
+   "evidence": "Recorded in the Nottinghamshire HER from Pevsner; a county-level claim for the slate headstone tradition of the East Midlands.",
+   "sources": [
+    {
+     "title": "Building record M17299 - Headstone dated 1631, St Katherine's Churchyard",
+     "author": "Nottinghamshire Historic Environment Record",
+     "kind": "listing",
+     "url": "https://her.nottinghamshire.gov.uk/Monument/MNT24995",
+     "locator": null,
+     "quote": "In the churchyard, two of the earliest slate headstones in the county, one dated 1631"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Poundbury late Roman cemetery",
+   "qid": null,
+   "wikipedia_title": "Durnovaria",
+   "lat": 50.71865,
+   "lon": -2.45182,
+   "nation": "England",
+   "location": "Poundbury, Dorchester, Dorset (coordinates of Poundbury Hill)",
+   "museum": "Dorset Museum",
+   "age_text": "4th century AD",
+   "year": 320,
+   "claim": "one of the largest early Christian (late Roman) cemeteries in Britain",
+   "evidence": "Excavated 1966–82 (Farwell and Molleson); over 1,000 east–west graves of the 4th century, many taken as Christian.",
+   "sources": [
+    {
+     "title": "Wikipedia: Durnovaria",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Durnovaria",
+     "locator": "article text",
+     "quote": "A large late-Roman and Christian cemetery has been excavated at Poundbury just to the west of the town"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Cannington cemetery",
+   "qid": null,
+   "wikipedia_title": "Cannington Camp",
+   "lat": 51.15877,
+   "lon": -3.07816,
+   "nation": "England",
+   "location": "below Cannington Camp, Somerset",
+   "museum": "Museum of Somerset",
+   "age_text": "AD 350–800",
+   "year": 350,
+   "claim": "late Roman to Saxon cemetery in continuous use for about 450 years",
+   "evidence": "Quarried away after excavation (Rahtz 1962–63); several hundred east–west graves with finds from 350–800.",
+   "sources": [
+    {
+     "title": "Wikipedia: Cannington Camp",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cannington_Camp",
+     "locator": "article text",
+     "quote": "a late Roman and Saxon cemetery, with several hundred E-W (Christian) graves"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Nendrum monastic graveyard",
+   "qid": null,
+   "wikipedia_title": "Nendrum Monastery",
+   "lat": 54.498,
+   "lon": -5.648,
+   "nation": "Northern Ireland",
+   "location": "Mahee Island, Strangford Lough, Co. Down",
+   "museum": null,
+   "age_text": "traditionally 5th century",
+   "year": 450,
+   "claim": "one of the oldest monastic burial grounds in Northern Ireland",
+   "evidence": "Medieval tradition puts its foundation by St Mochaoi in the 5th century, which is uncertain; the inner cashel holds the graveyard.",
+   "sources": [
+    {
+     "title": "Wikipedia: Nendrum Monastery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nendrum_Monastery",
+     "locator": "article text",
+     "quote": "Medieval records say it was founded in the 5th century, but this is uncertain"
+    },
+    {
+     "title": "Wikipedia: Nendrum Monastery",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nendrum_Monastery",
+     "locator": "article text",
+     "quote": "a ruined church with a sun-dial, and a graveyard"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Clonmacnoise monastic burial ground",
+   "qid": "Q927223",
+   "wikipedia_title": "Clonmacnoise",
+   "lat": 53.32389,
+   "lon": -7.99111,
+   "nation": "Ireland",
+   "location": "Clonmacnoise, Co. Offaly",
+   "museum": "Clonmacnoise visitor centre (original crosses and grave-slabs)",
+   "age_text": "founded AD 544",
+   "year": 544,
+   "claim": "burial place of high kings of Tara and Connacht, with over 700 early Christian grave-slabs",
+   "evidence": "Monastery founded by St Ciarán in 544 (annals); the largest collection of early Christian grave-slabs in Europe survives here.",
+   "sources": [
+    {
+     "title": "Clonmacnoise",
+     "author": "Heritage Ireland (OPW)",
+     "kind": "secondary",
+     "url": "https://heritageireland.ie/places-to-visit/clonmacnoise/",
+     "locator": "site page",
+     "quote": "over 700 Early Christian graveslabs"
+    },
+    {
+     "title": "Wikipedia: Clonmacnoise",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clonmacnoise",
+     "locator": "article text",
+     "quote": "founded in 544 by Saint Ciarán"
+    },
+    {
+     "title": "Wikipedia: Clonmacnoise",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clonmacnoise",
+     "locator": "article text",
+     "quote": "Many of the high kings of Tara (ardrí) and of Connacht were buried here"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Reilig Odhráin, Iona",
+   "qid": null,
+   "wikipedia_title": "St Oran's Chapel",
+   "lat": 56.33442,
+   "lon": -6.39283,
+   "nation": "Scotland",
+   "location": "Iona, Argyll and Bute",
+   "museum": null,
+   "age_text": "from the 6th century (Columba's monastery, 563)",
+   "year": 563,
+   "claim": "burial ground of 48 early kings of Scotland",
+   "evidence": "The graveyard around St Oran's Chapel is the traditional royal burial place, but the figure of 48 kings comes from late medieval tradition and modern scholars doubt it.",
+   "sources": [
+    {
+     "title": "Wikipedia: St Oran's Chapel",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Oran's_Chapel",
+     "locator": "article text",
+     "quote": "The burial ground surrounding the chapel is known as Reilig Òdhrain"
+    },
+    {
+     "title": "Wikipedia: Iona Abbey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Iona_Abbey",
+     "locator": "article text",
+     "quote": "Many early Scottish kings (said to be 48 in total)"
+    },
+    {
+     "title": "Wikipedia: Iona Abbey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Iona_Abbey",
+     "locator": "article text",
+     "quote": "modern scholars are sceptical of such claims"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Bardsey Island (Ynys Enlli) burial ground",
+   "qid": "Q1991483",
+   "wikipedia_title": "Bardsey Island",
+   "lat": 52.75695,
+   "lon": -4.79146,
+   "nation": "Wales",
+   "location": "Bardsey Island, Llŷn, Gwynedd",
+   "museum": null,
+   "age_text": "from the 6th century (St Deiniol buried 584)",
+   "year": 584,
+   "claim": "'Island of 20,000 saints', a holy burial place since the 6th century",
+   "evidence": "Bishop Deiniol's burial in 584 rests on later tradition; the 20,000 saints are legend, though early medieval graves are known from the island.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bardsey Island",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bardsey_Island",
+     "locator": "article text",
+     "quote": "Saint Deiniol, the Bishop of Bangor, was buried on the island in 584"
+    },
+    {
+     "title": "Wikipedia: Bardsey Island",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bardsey_Island",
+     "locator": "article text",
+     "quote": "A Celtic cross amidst the ruins commemorates the 20,000 saints reputed to be buried on the island"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Monks' Graveyard, Skellig Michael",
+   "qid": "Q207193",
+   "wikipedia_title": "Skellig Michael",
+   "lat": 51.77111,
+   "lon": -10.54056,
+   "nation": "Ireland",
+   "location": "Skellig Michael, Co. Kerry",
+   "museum": null,
+   "age_text": "6th–8th century foundation",
+   "year": 600,
+   "claim": "early medieval monastic graveyard with cross-slabs",
+   "evidence": "The monastery was founded between the 6th and 8th centuries; its small graveyard keeps simple cross-slabs.",
+   "sources": [
+    {
+     "title": "Wikipedia: Skellig Michael",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Skellig_Michael",
+     "locator": "article text",
+     "quote": "Monks of the Celtic Christian tradition founded a monastery on Skellig Michael sometime between the 6th and 8th centuries"
+    },
+    {
+     "title": "Wikipedia: Skellig Michael",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Skellig_Michael",
+     "locator": "article text",
+     "quote": "It contains stone crosses with mostly plain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Reefert Church burial ground, Glendalough",
+   "qid": "Q691153",
+   "wikipedia_title": "Glendalough",
+   "lat": 53.01028,
+   "lon": -6.3275,
+   "nation": "Ireland",
+   "location": "Glendalough, Co. Wicklow",
+   "museum": null,
+   "age_text": "monastery 6th century; church c. 1100",
+   "year": 600,
+   "claim": "'Righ Fearta', burial place of the kings (the O'Tooles)",
+   "evidence": "The church dates from about 1100; the royal burial name is tradition. The monastery was founded in the 6th century by St Kevin.",
+   "sources": [
+    {
+     "title": "Wikipedia: Glendalough",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glendalough",
+     "locator": "article text",
+     "quote": "The name derives from Righ Fearta, the burial place of the kings"
+    },
+    {
+     "title": "Wikipedia: Glendalough",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glendalough",
+     "locator": "article text",
+     "quote": "founded in the 6th century by St Kevin"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Kirk Maughold churchyard",
+   "qid": "Q3300159",
+   "wikipedia_title": "Maughold (village)",
+   "lat": 54.29866,
+   "lon": -4.31841,
+   "nation": "Isle of Man",
+   "location": "Maughold, Isle of Man",
+   "museum": "Maughold cross-house (on site)",
+   "age_text": "from the 5th–7th century (keeills and early crosses)",
+   "year": 600,
+   "claim": "possibly the Isle of Man's oldest monastic site; churchyard with three keeills and the island's largest collection of crosses",
+   "evidence": "Tradition puts St Maughold here in the 5th century; the early cross-slabs and keeills in the 4-acre churchyard mark the monastic burial ground.",
+   "sources": [
+    {
+     "title": "Wikipedia: Maughold (village)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maughold_(village)",
+     "locator": "article text",
+     "quote": "Maughold is possibly the Isle of Man's oldest"
+    },
+    {
+     "title": "Wikipedia: Maughold (village)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maughold_(village)",
+     "locator": "article text",
+     "quote": "the ruins of three keills"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest churchyard or burial ground",
+   "name": "Greyfriars Kirkyard",
+   "qid": null,
+   "wikipedia_title": "Greyfriars Kirkyard",
+   "lat": 55.94672,
+   "lon": -3.19222,
+   "nation": "Scotland",
+   "location": "Old Town, Edinburgh",
+   "museum": null,
+   "age_text": "opened 1562",
+   "year": 1562,
+   "claim": "Edinburgh's burial ground since 1562, replacing St Giles' kirkyard",
+   "evidence": "Royal sanction of 1562 granted the Greyfriars garden as the burgh burial ground; burials since the late 16th century.",
+   "sources": [
+    {
+     "title": "Wikipedia: Greyfriars Kirkyard",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greyfriars_Kirkyard",
+     "locator": "article text",
+     "quote": "The kirkyard was founded in August 1562"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Velho Cemetery",
+   "qid": "Q27084280",
+   "wikipedia_title": "Velho Cemetery",
+   "lat": 51.5231,
+   "lon": -0.04498,
+   "nation": "England",
+   "location": "Mile End, Tower Hamlets, Greater London",
+   "museum": null,
+   "age_text": "1657 (opened); burials 1657–1758",
+   "year": 1657,
+   "claim": "oldest Jewish burial ground in England (and the UK), opened a year after the resettlement",
+   "evidence": "The Grade II list description gives the opening as 1657, one year after the Cromwellian resettlement; the lease of 1657 and the first burial are documented in the congregation's records. Earlier medieval Jewish cemeteries (pre-1290) do not survive as burial grounds.",
+   "sources": [
+    {
+     "title": "Velho Cemetery of the Spanish and Portuguese Jewish Congregation of London (list entry 1319658)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101319658",
+     "locator": "list description",
+     "quote": "The oldest Jewish burial ground in England, opened a year after the Anglo-Jewish resettlement under Oliver Cromwell"
+    },
+    {
+     "title": "Sephardi Velho (Old) Cemetery (London Inventory)",
+     "author": "London Gardens Trust",
+     "kind": "secondary",
+     "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=THM050",
+     "locator": "Description",
+     "quote": "The Sephardi Velho (Old) Cemetery opened in 1657, the first Jewish cemetery to be established with Oliver Cromwell's approval"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Lynastown Quaker Burial Ground",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 54.43771,
+   "lon": -6.37413,
+   "nation": "Northern Ireland",
+   "location": "Moyraverty, Craigavon, County Armagh",
+   "museum": null,
+   "age_text": "1658 (first burial, William Lynas, 20 June 1658)",
+   "year": 1658,
+   "claim": "one of the oldest, if not the oldest, Quaker burial ground in Ireland",
+   "evidence": "The burial register transcribed by the Craigavon Historical Society begins with William Lynas, d. 1658, buried on family land because Quakers refused parish burial. The claim is hedged by its own source; Rosenallis (Co. Laois) also claims to be the oldest in Ireland.",
+   "sources": [
+    {
+     "title": "Lynastown Quaker burial ground (Review vol. 6 no. 3, 1993)",
+     "author": "Craigavon Historical Society",
+     "kind": "secondary",
+     "url": "https://craigavonhistoricalsociety.org.uk/rev/wilsonpblynastown.php",
+     "locator": "opening paragraph",
+     "quote": "one of the oldest, if not the oldest Quaker graveyard in Ireland"
+    },
+    {
+     "title": "Lynastown Quaker burial ground (Review vol. 6 no. 3, 1993)",
+     "author": "Craigavon Historical Society",
+     "kind": "secondary",
+     "url": "https://craigavonhistoricalsociety.org.uk/rev/wilsonpblynastown.php",
+     "locator": "history",
+     "quote": "when he died on 20 June 1658, Quaker principles precluded his burial by a priest in the parish graveyard"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Quaker Gardens (Bunhill Fields Quaker burial ground)",
+   "qid": "Q20712808",
+   "wikipedia_title": "Quaker Gardens, Islington",
+   "lat": 51.52367,
+   "lon": -0.09105,
+   "nation": "England",
+   "location": "Islington, Greater London",
+   "museum": null,
+   "age_text": "1661 (Quaker burials begin)",
+   "year": 1661,
+   "claim": "one of the earliest Quaker burial grounds in England, older than the main Bunhill Fields ground",
+   "evidence": "Burials of Quakers here began in 1661 (Holmes, The London Burial Grounds, 1896, as summarised by a local historian). Earlier Quaker burials are recorded elsewhere (Lynastown 1658, Hull 1659), so it is not the oldest overall.",
+   "sources": [
+    {
+     "title": "The lost burying ground of London's Quakers",
+     "author": "Flickering Lamps (London history blog)",
+     "kind": "secondary",
+     "url": "https://flickeringlamps.com/2020/04/17/the-lost-burying-ground-of-londons-quakers/",
+     "locator": "paragraph on the Bunhill ground",
+     "quote": "burials of Quakers began here in 1661"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Bunhill Fields",
+   "qid": "Q782140",
+   "wikipedia_title": "Bunhill Fields",
+   "lat": 51.52361,
+   "lon": -0.08889,
+   "nation": "England",
+   "location": "Islington, Greater London",
+   "museum": null,
+   "age_text": "1665 (enclosed as a burial ground); burials 1665–1854",
+   "year": 1665,
+   "claim": "the oldest and pre-eminent Nonconformist (non-churchyard) burial ground in London; oldest surviving memorial Theophilus Gale d. 1678",
+   "evidence": "The 1665 enclosure is recorded in the gate inscriptions (Victorian copies of the 1665/1666 wording) quoted in the Historic England register entry (Grade I). Burials before 1678 left no surviving marker.",
+   "sources": [
+    {
+     "title": "Bunhill Fields Burial Ground (Register of Parks and Gardens, NHLE 1001713, via Parks & Gardens UK)",
+     "author": "Historic England",
+     "kind": "listing",
+     "url": "https://www.parksandgardens.org/places/bunhill-fields-burial-ground",
+     "locator": "Register text: history",
+     "quote": "This area was enclosed by brick walls in October 1665, with gates erected in 1666"
+    },
+    {
+     "title": "Bunhill Fields Burial Ground (Register of Parks and Gardens, via Parks & Gardens UK)",
+     "author": "Historic England",
+     "kind": "listing",
+     "url": "https://www.parksandgardens.org/places/bunhill-fields-burial-ground",
+     "locator": "Features: tomb",
+     "quote": "The oldest marked grave is that of Theophilus Gale, who died in 1678"
+    },
+    {
+     "title": "Bunhill Fields Burial Ground (London Inventory)",
+     "author": "London Gardens Trust",
+     "kind": "secondary",
+     "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=ISL012",
+     "locator": "Description",
+     "quote": "Bunhill Fields was established in 1665 and became the country's pre-eminent Nonconformist cemetery"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Old Burial Ground, Royal Hospital Chelsea",
+   "qid": "Q85790464",
+   "wikipedia_title": "Old Burial Ground, Royal Hospital Chelsea",
+   "lat": 51.48873,
+   "lon": -0.15671,
+   "nation": "England",
+   "location": "Chelsea, Greater London",
+   "museum": null,
+   "age_text": "1691 (consecrated); burials to 1854",
+   "year": 1691,
+   "claim": "an important early military cemetery (pensioners of the Royal Hospital); a candidate for the oldest military burial ground in Britain",
+   "evidence": "Consecrated August 1691 for the Chelsea Pensioners; c. 10,000 burials to 1854. No source found that calls it the oldest military cemetery, so that claim is left open.",
+   "sources": [
+    {
+     "title": "Royal Hospital Old Burial Ground (London Inventory)",
+     "author": "London Gardens Trust",
+     "kind": "secondary",
+     "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=KAC126",
+     "locator": "Description",
+     "quote": "The Old Burial Ground was consecrated in August 1691"
+    },
+    {
+     "title": "Royal Hospital Old Burial Ground (London Inventory)",
+     "author": "London Gardens Trust",
+     "kind": "secondary",
+     "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=KAC126",
+     "locator": "Description",
+     "quote": "it is an important military cemetery"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Alderney Road Cemetery",
+   "qid": "Q26410583",
+   "wikipedia_title": "Alderney Road Cemetery",
+   "lat": 51.52273,
+   "lon": -0.04546,
+   "nation": "England",
+   "location": "Mile End, Tower Hamlets, Greater London",
+   "museum": null,
+   "age_text": "1697 (opened)",
+   "year": 1697,
+   "claim": "oldest Ashkenazi Jewish cemetery in the UK",
+   "evidence": "Opened 1697 for the Great Synagogue's Ashkenazi community, next to the Sephardi Velho ground; extended 1749.",
+   "sources": [
+    {
+     "title": "Sephardi Velho (Old) Cemetery (London Inventory; nearby sites)",
+     "author": "London Gardens Trust",
+     "kind": "secondary",
+     "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=THM050",
+     "locator": "Nearby parks and gardens: Alderney Road Cemetery",
+     "quote": "Alderney Road Cemetery is the oldest Ashkenazi Jewish cemetery in the UK, which opened in 1697"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Ballybough Cemetery",
+   "qid": "Q4852004",
+   "wikipedia_title": "Ballybough Cemetery",
+   "lat": 53.3625,
+   "lon": -6.24139,
+   "nation": "Ireland",
+   "location": "Ballybough, Dublin",
+   "museum": null,
+   "age_text": "1718 (lease of the ground)",
+   "year": 1718,
+   "claim": "Ireland's oldest Jewish cemetery",
+   "evidence": "The lease of 28 October 1718 to members of the Dublin Jewish community is documented; no rival older Jewish burial ground survives in Ireland. Reference source only.",
+   "sources": [
+    {
+     "title": "Ballybough Cemetery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballybough_Cemetery",
+     "locator": "lead",
+     "quote": "Founded in 1718, it is Ireland's oldest Jewish cemetery"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Old Calton Burial Ground",
+   "qid": "Q7083575",
+   "wikipedia_title": "Old Calton Burial Ground",
+   "lat": 55.9535,
+   "lon": -3.18599,
+   "nation": "Scotland",
+   "location": "Calton Hill, Edinburgh",
+   "museum": null,
+   "age_text": "1718 (opened)",
+   "year": 1718,
+   "claim": "early non-church burial ground bought by a trades incorporation (Incorporated Trades of Calton); burial place of David Hume",
+   "evidence": "The Society of the Incorporated Trades of Calton bought the ground in 1718 because burial at South Leith was inconvenient. Reference source only; no 'oldest' claim attaches to it.",
+   "sources": [
+    {
+     "title": "Old Calton Burial Ground",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Calton_Burial_Ground",
+     "locator": "lead",
+     "quote": "The burial ground was opened in 1718"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Plymouth Hoe Old Jews' Burial Ground",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 50.3668,
+   "lon": -4.1365,
+   "nation": "England",
+   "location": "Lambhay Hill, Plymouth, Devon",
+   "museum": null,
+   "age_text": "1744 (earliest recorded burials)",
+   "year": 1744,
+   "claim": "earliest Jewish burial ground outside London",
+   "evidence": "Listed Grade II in 2017 (NHLE 1448469); the list entry gives as reason for designation that it is the earliest surviving Jewish burial ground outside London. Early inscriptions are now largely eroded.",
+   "sources": [
+    {
+     "title": "Old Jews' Burial Ground, Lambhay Hill (list entry 1448469)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101448469",
+     "locator": "Reasons for designation: historic interest",
+     "quote": "As one of the earliest Jewish burial grounds surviving in England and the earliest outside London"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Clifton Street Cemetery (New Burying Ground)",
+   "qid": "Q5133319",
+   "wikipedia_title": "Clifton Street Cemetery",
+   "lat": 54.6079,
+   "lon": -5.9353,
+   "nation": "Northern Ireland",
+   "location": "Clifton Street, Belfast",
+   "museum": null,
+   "age_text": "1797 (opened by the Belfast Charitable Society)",
+   "year": 1797,
+   "claim": "Belfast's oldest surviving town cemetery (the 'New Burying Ground', replacing the Corporation churchyard)",
+   "evidence": "Opened March 1797 by the Belfast Charitable Society (Clifton House archives); the older Corporation churchyard closed c. 1798–1800. 'Oldest in Belfast' is not stated by the source and is left open.",
+   "sources": [
+    {
+     "title": "From the Archives: The New Burying Ground (today Clifton Street Cemetery) opened in March 1797",
+     "author": "Clifton House (Belfast Charitable Society)",
+     "kind": "secondary",
+     "url": "https://cliftonbelfast.com/from-the-archives-the-new-burying-ground-today-clifton-street-cemetery-open-in-march-1797/",
+     "locator": "title",
+     "quote": "The New Burying Ground (today Clifton Street Cemetery) opened in March 1797"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Rusholme Road Cemetery (Gartside Gardens)",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 53.47006,
+   "lon": -2.23025,
+   "nation": "England",
+   "location": "Chorlton-on-Medlock, Manchester",
+   "museum": null,
+   "age_text": "1821 (opened 16 May 1821); closed 1933, now a park",
+   "year": 1821,
+   "claim": "the first cemetery in England run by a joint-stock (proprietary) company, for Dissenters",
+   "evidence": "The opening in 1821 is well attested (burial registers from 1821 in Manchester Archives). It is often called the first proprietary cemetery company in Britain (company formed 1820), but one study puts the first company in 1819 and the Victoria County History gives 1823, so 'first' is left open.",
+   "sources": [
+    {
+     "title": "Gartside Gardens",
+     "author": "Manchester History (manchesterhistory.net)",
+     "kind": "secondary",
+     "url": "https://manchesterhistory.net/manchester/outside/gartsidegardens.html",
+     "locator": "page text",
+     "quote": "The cemetery opened in 1821 and was known as the Dissenters Burial Ground since it was used by various non-conformist groups"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Liverpool Necropolis (Low Hill General Cemetery; Grant Gardens)",
+   "qid": "Q26256321",
+   "wikipedia_title": "Grant Gardens",
+   "lat": 53.4155,
+   "lon": -2.9623,
+   "nation": "England",
+   "location": "Everton, Liverpool",
+   "museum": null,
+   "age_text": "1825 (opened); closed 1898, park since 1914",
+   "year": 1825,
+   "claim": "Liverpool's first general (non-denominational) cemetery and one of the earliest commercial cemeteries in England",
+   "evidence": "Opened February 1825 with buildings by John Foster Jr and closed 1898; it preceded St James's Cemetery (1829). The cemetery is lost; headstones went to Everton Cemetery.",
+   "sources": [
+    {
+     "title": "Liverpool's vanished necropolis",
+     "author": "Mike Higginbottom",
+     "kind": "secondary",
+     "url": "https://www.mikehigginbottominterestingtimes.co.uk/2023/02/27/liverpools-vanished-necropolis/",
+     "locator": "opening paragraphs",
+     "quote": "The Low Hill General Cemetery was opened in 1825"
+    },
+    {
+     "title": "Grant Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grant_Gardens",
+     "locator": "lead",
+     "quote": "The Necropolis opened in 1825, with buildings by John Foster Jr"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Glasgow Necropolis",
+   "qid": "Q1529512",
+   "wikipedia_title": "Glasgow Necropolis",
+   "lat": 55.86252,
+   "lon": -4.23111,
+   "nation": "Scotland",
+   "location": "Glasgow",
+   "museum": null,
+   "age_text": "first interment 1832 (Jewish section); opened 1833; planned from 1828",
+   "year": 1832,
+   "claim": "one of Scotland's first planned garden cemeteries; the first planned cemetery in Glasgow",
+   "evidence": "The HES Inventory of Gardens and Designed Landscapes (GDL00366) records it as begun in 1828 with the first interment in 1832. HES says 'one of' Scotland's first, not the first.",
+   "sources": [
+    {
+     "title": "The Necropolis (Inventory of Gardens and Designed Landscapes GDL00366)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/GDL00366",
+     "locator": "Statement of significance",
+     "quote": "the Necropolis is one of Scotland's first planned garden cemeteries created in Victorian times"
+    },
+    {
+     "title": "The Necropolis (Inventory of Gardens and Designed Landscapes GDL00366)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/GDL00366",
+     "locator": "Description",
+     "quote": "The Necropolis was the first planned cemetery in Glasgow and was begun in 1828"
+    },
+    {
+     "title": "The Necropolis (Inventory of Gardens and Designed Landscapes GDL00366)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/GDL00366",
+     "locator": "Description",
+     "quote": "The first interment was made in 1832"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Glasnevin Cemetery",
+   "qid": "Q1263215",
+   "wikipedia_title": "Glasnevin Cemetery",
+   "lat": 53.37222,
+   "lon": -6.27778,
+   "nation": "Ireland",
+   "location": "Glasnevin, Dublin",
+   "museum": null,
+   "age_text": "1832 (opened 21 February 1832)",
+   "year": 1832,
+   "claim": "Ireland's first large non-denominational garden cemetery, founded by Daniel O'Connell",
+   "evidence": "Opened 21 February 1832 (first burial the next day); the earlier Goldenbridge cemetery (1829) was also founded by O'Connell's committee, so Glasnevin is the first garden cemetery rather than the first Catholic-run one. Reference source only.",
+   "sources": [
+    {
+     "title": "Glasnevin Cemetery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glasnevin_Cemetery",
+     "locator": "lead",
+     "quote": "Established as a non-denominational garden cemetery by Daniel O'Connell in 1832"
+    },
+    {
+     "title": "Glasnevin Cemetery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glasnevin_Cemetery",
+     "locator": "History",
+     "quote": "opened to the public for the first time on 21 February 1832"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Kensal Green Cemetery",
+   "qid": "Q1574424",
+   "wikipedia_title": "Kensal Green Cemetery",
+   "lat": 51.5286,
+   "lon": -0.2241,
+   "nation": "England",
+   "location": "Kensal Green, Greater London",
+   "museum": null,
+   "age_text": "1833 (consecrated January 1833; Act of 1832)",
+   "year": 1833,
+   "claim": "first of London's commercial public cemeteries (the first of the 'Magnificent Seven')",
+   "evidence": "The Historic England register entry (Grade I, NHLE 1000817) states it was the first of London's 19th-century commercial cemeteries; the General Cemetery Company still owns it.",
+   "sources": [
+    {
+     "title": "Kensal Green (All Souls) Cemetery (Register of Parks and Gardens, NHLE 1000817, via Parks & Gardens UK)",
+     "author": "Historic England",
+     "kind": "listing",
+     "url": "https://www.parksandgardens.org/places/kensal-green-cemetery",
+     "locator": "Register summary",
+     "quote": "Opened in 1833, Kensal Green was the first of London's C19 commercial public cemeteries to be established"
+    },
+    {
+     "title": "Kensal Green Cemetery (London Inventory)",
+     "author": "London Gardens Trust",
+     "kind": "secondary",
+     "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=HAF030",
+     "locator": "Description",
+     "quote": "Kensal Green Cemetery opened in 1833, the first commercial public cemetery to be established in London"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Key Hill Cemetery",
+   "qid": "Q6398044",
+   "wikipedia_title": "Key Hill Cemetery",
+   "lat": 52.491,
+   "lon": -1.915,
+   "nation": "England",
+   "location": "Hockley (Jewellery Quarter), Birmingham",
+   "museum": null,
+   "age_text": "1836 (opened as the Birmingham General Cemetery)",
+   "year": 1836,
+   "claim": "Birmingham's first (earliest) public cemetery",
+   "evidence": "The Historic England register entry (Grade II*) dates the opening to 1836 by the Birmingham General Cemetery Company.",
+   "sources": [
+    {
+     "title": "Key Hill Cemetery (Register of Parks and Gardens, via Parks & Gardens UK)",
+     "author": "Historic England",
+     "kind": "listing",
+     "url": "https://www.parksandgardens.org/places/key-hill-cemetery",
+     "locator": "Register summary",
+     "quote": "Birmingham City's first cemetery, laid out by Charles Edge for the Birmingham General Cemetery Company, and opened in 1836"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cemetery",
+   "name": "Brookwood Cemetery Muslim burial ground (Plot M1)",
+   "qid": "Q990618",
+   "wikipedia_title": "Brookwood Cemetery",
+   "lat": 51.29667,
+   "lon": -0.63333,
+   "nation": "England",
+   "location": "Brookwood, Woking, Surrey",
+   "museum": null,
+   "age_text": "1884 (Muslim plot established)",
+   "year": 1884,
+   "claim": "Britain's first dedicated Muslim burial ground",
+   "evidence": "The cemetery says the Muslim plot was set up in 1884 by G. W. Leitner (founder of the Shah Jahan Mosque); the Historic England register text gives 'the 1890s'. Both agree it was the first in Britain; the exact year is uncertain (1884 vs 1890s).",
+   "sources": [
+    {
+     "title": "Muslim burials",
+     "author": "Brookwood Cemetery",
+     "kind": "secondary",
+     "url": "https://brookwoodcemetery.com/?p=5514",
+     "locator": "page text",
+     "quote": "Brookwood Cemetery is home to Britain’s first dedicated Muslim cemetery, established in 1884 by Dr. Gottlieb Wilhelm Leitner"
+    },
+    {
+     "title": "Brookwood Cemetery (Register of Parks and Gardens, via Parks & Gardens UK)",
+     "author": "Historic England",
+     "kind": "listing",
+     "url": "https://www.parksandgardens.org/places/brookwood-cemetery",
+     "locator": "Register description",
+     "quote": "The neighbouring Muslim grounds were opened in the 1890s and were the first in Britain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Grave of St Patrick",
+   "qid": null,
+   "wikipedia_title": "Down Cathedral",
+   "lat": 54.3271,
+   "lon": -5.72255,
+   "nation": "Northern Ireland",
+   "location": "Down Cathedral, Downpatrick, Co. Down",
+   "museum": null,
+   "age_text": "Patrick died c. 461; grave stone placed 1900",
+   "year": 461,
+   "claim": "burial place of St Patrick",
+   "evidence": "The burial is a tradition; the granite slab marking the 'grave' was laid only in 1900, so the marker is modern.",
+   "sources": [
+    {
+     "title": "Wikipedia: Down Cathedral",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Down_Cathedral",
+     "locator": "article text",
+     "quote": "the inscribed stone of Mourne granite allegedly marking the grave was actually put in place in 1900"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Notable grave",
+   "name": "St Cuthbert's coffin",
+   "qid": "Q7592920",
+   "wikipedia_title": "St Cuthbert's coffin",
+   "lat": 54.77348,
+   "lon": -1.57621,
+   "nation": "England",
+   "location": "Durham Cathedral (grave behind the high altar; coffin in the cathedral treasury)",
+   "museum": "Durham Cathedral",
+   "age_text": "AD 698",
+   "year": 698,
+   "claim": "oldest surviving decorated wooden coffin in England",
+   "evidence": "The carved oak coffin was made for Cuthbert's translation at Lindisfarne in 698 and held his remains until 1827; it was taken out of the grave in 1899.",
+   "sources": [
+    {
+     "title": "Wikipedia: St Cuthbert's coffin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Cuthbert's_coffin",
+     "locator": "article text",
+     "quote": "which between AD 698 and 1827 contained the remains of Saint Cuthbert"
+    },
+    {
+     "title": "Wikipedia: St Cuthbert's coffin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Cuthbert's_coffin",
+     "locator": "article text",
+     "quote": "probably to date to 698"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Grave of Bede",
+   "qid": null,
+   "wikipedia_title": "Bede",
+   "lat": 54.77348,
+   "lon": -1.57621,
+   "nation": "England",
+   "location": "Galilee Chapel, Durham Cathedral",
+   "museum": null,
+   "age_text": "died AD 735; at Durham from c. 1020, shrine 1370",
+   "year": 735,
+   "claim": "the oldest marked grave of a named English writer",
+   "evidence": "Bede was buried at Jarrow in 735; his bones were taken to Durham about 1020, given a shrine in the Galilee Chapel in 1370, and reburied there after the shrine was destroyed at the Reformation.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bede",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bede",
+     "locator": "article text",
+     "quote": "Bede died at Jarrow on the Feast of the Ascension, 26 May 735, and was buried there"
+    },
+    {
+     "title": "Wikipedia: Bede",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bede",
+     "locator": "article text",
+     "quote": "Bede's remains were moved to a shrine in the Galilee Chapel at Durham Cathedral in 1370"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Lost grave of King Alfred",
+   "qid": null,
+   "wikipedia_title": "Hyde Abbey",
+   "lat": 51.0686,
+   "lon": -1.3143,
+   "nation": "England",
+   "location": "Hyde Abbey site, Winchester, Hampshire",
+   "museum": "Winchester City Museum (bones from the site)",
+   "age_text": "died AD 899; moved to Hyde 1110",
+   "year": 899,
+   "claim": "burial place of Alfred the Great, lost after the Dissolution",
+   "evidence": "Alfred, Edward the Elder and Ealhswith were reburied at Hyde Abbey; the graves were destroyed in 1788 and the remains lost. A pelvis from the site was dated to 895–1017 in 2014 but is not proven to be Alfred's.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hyde Abbey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hyde_Abbey",
+     "locator": "article text",
+     "quote": "The Abbey was once known to have housed the remains of King Alfred the Great"
+    },
+    {
+     "title": "Wikipedia: Hyde Abbey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hyde_Abbey",
+     "locator": "article text",
+     "quote": "Following its dissolution these remains were lost"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Grave of Brian Boru",
+   "qid": null,
+   "wikipedia_title": "Brian Boru",
+   "lat": 54.3479,
+   "lon": -6.65615,
+   "nation": "Northern Ireland",
+   "location": "St Patrick's Cathedral (Church of Ireland), Armagh",
+   "museum": null,
+   "age_text": "died 1014",
+   "year": 1014,
+   "claim": "burial place of the High King killed at Clontarf",
+   "evidence": "The annals record his burial at Armagh; the exact place in the north wall is tradition, marked by a modern plaque.",
+   "sources": [
+    {
+     "title": "Wikipedia: Brian Boru",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brian_Boru",
+     "locator": "article text",
+     "quote": "His tomb is said to be in the north wall of St Patrick's Cathedral in the city of Armagh"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Effigy of Abbot Gilbert Crispin",
+   "qid": null,
+   "wikipedia_title": "Gilbert Crispin",
+   "lat": 51.4994,
+   "lon": -0.12737,
+   "nation": "England",
+   "location": "South cloister, Westminster Abbey, London",
+   "museum": null,
+   "age_text": "c. 1117 (abbot died 1117)",
+   "year": 1117,
+   "claim": "oldest effigy in Westminster Abbey and among the earliest tomb effigies in England",
+   "evidence": "Black marble effigy of the abbot who died in 1117; the Abbey calls it its oldest effigy. 'Earliest in England' is not established (Exeter and Salisbury have rivals).",
+   "sources": [
+    {
+     "title": "Gilbert Crispin",
+     "author": "Westminster Abbey",
+     "kind": "secondary",
+     "url": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/gilbert-crispin",
+     "locator": "commemorations page",
+     "quote": "This is the oldest effigy at the Abbey"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Tomb of King John",
+   "qid": null,
+   "wikipedia_title": "John, King of England",
+   "lat": 52.1887,
+   "lon": -2.2208,
+   "nation": "England",
+   "location": "Choir, Worcester Cathedral",
+   "museum": null,
+   "age_text": "effigy 1232 (king died 1216)",
+   "year": 1232,
+   "claim": "oldest royal effigy in England",
+   "evidence": "John was buried at Worcester in 1216; the Purbeck marble effigy was made in 1232 and the tomb chest about 1529–40.",
+   "sources": [
+    {
+     "title": "King John",
+     "author": "Worcester Cathedral",
+     "kind": "secondary",
+     "url": "https://www.worcestercathedral.org.uk/heritage/people-of-interest/king-john",
+     "locator": "heritage page",
+     "quote": "has the oldest royal effigy in England"
+    },
+    {
+     "title": "Wikipedia: John, King of England",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John,_King_of_England",
+     "locator": "article text",
+     "quote": "A new sarcophagus with an effigy was made for him in 1232"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Effigy of Robert Curthose",
+   "qid": null,
+   "wikipedia_title": "Robert Curthose",
+   "lat": 51.8673,
+   "lon": -2.24654,
+   "nation": "England",
+   "location": "Gloucester Cathedral",
+   "museum": null,
+   "age_text": "c. 1230s (duke died 1134)",
+   "year": 1235,
+   "claim": "rare 13th-century wooden (bog oak) tomb effigy",
+   "evidence": "The carved oak effigy is about a century later than the duke's death; the mortuary chest is much later.",
+   "sources": [
+    {
+     "title": "Wikipedia: Robert Curthose",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Curthose",
+     "locator": "article text",
+     "quote": "His effigy carved in bog oak"
+    },
+    {
+     "title": "Wikipedia: Robert Curthose",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Curthose",
+     "locator": "article text",
+     "quote": "The effigy dates from about 100 years after his death"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Stone coffin of Llywelyn the Great",
+   "qid": null,
+   "wikipedia_title": "Llywelyn the Great",
+   "lat": 53.1381,
+   "lon": -3.79915,
+   "nation": "Wales",
+   "location": "Gwydir Chapel, St Grwst's Church, Llanrwst, Conwy",
+   "museum": null,
+   "age_text": "died 1240",
+   "year": 1240,
+   "claim": "coffin of the Prince of Gwynedd, moved from Aberconwy Abbey",
+   "evidence": "Llywelyn was buried at Aberconwy in 1240; the stone coffin was moved to Maenan and then Llanrwst after the Dissolution. The body is lost.",
+   "sources": [
+    {
+     "title": "Wikipedia: Llywelyn the Great",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Llywelyn_the_Great",
+     "locator": "article text",
+     "quote": "Llywelyn's stone coffin can now be seen in St Grwst's Church, Llanrwst"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Temple Church effigies",
+   "qid": null,
+   "wikipedia_title": "Temple Church",
+   "lat": 51.5132,
+   "lon": -0.1104,
+   "nation": "England",
+   "location": "Temple Church, City of London",
+   "museum": null,
+   "age_text": "13th–14th century",
+   "year": 1250,
+   "claim": "among the earliest knightly effigies in England (incl. William Marshal)",
+   "evidence": "Nine stone effigies of the 13th and 14th centuries, badly damaged in 1941 and restored; 'earliest' is a common but loosely sourced claim.",
+   "sources": [
+    {
+     "title": "Wikipedia: Temple Church",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Temple_Church",
+     "locator": "article text",
+     "quote": "its 13th- and 14th-century stone effigies"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Shrine of Edward the Confessor",
+   "qid": null,
+   "wikipedia_title": "Edward the Confessor",
+   "lat": 51.4994,
+   "lon": -0.12737,
+   "nation": "England",
+   "location": "Westminster Abbey, London",
+   "museum": null,
+   "age_text": "died 1066; shrine 1269",
+   "year": 1269,
+   "claim": "oldest royal burial still in its shrine in Britain",
+   "evidence": "Henry III's translation of 13 October 1269 put the body in the shrine where it still lies.",
+   "sources": [
+    {
+     "title": "Wikipedia: Edward the Confessor",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Edward_the_Confessor",
+     "locator": "article text",
+     "quote": "remains where it was after the final translation of his body to a chapel east of the sanctuary on 13 October 1269"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Tomb of Robert the Bruce",
+   "qid": null,
+   "wikipedia_title": "Robert the Bruce",
+   "lat": 56.0697,
+   "lon": -3.46354,
+   "nation": "Scotland",
+   "location": "Dunfermline Abbey, Fife",
+   "museum": null,
+   "age_text": "died 1329; vault found 1818",
+   "year": 1329,
+   "claim": "grave of Robert I, rediscovered in 1818",
+   "evidence": "The king's vault was found in 1818 during building of the new parish church and the skeleton examined; his heart is at Melrose.",
+   "sources": [
+    {
+     "title": "Wikipedia: Robert the Bruce",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_the_Bruce",
+     "locator": "article text",
+     "quote": "Robert's body is buried in Dunfermline Abbey"
+    },
+    {
+     "title": "Wikipedia: Robert the Bruce",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_the_Bruce",
+     "locator": "article text",
+     "quote": "On 17 February 1818, workmen breaking ground on the new parish church"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Notable grave",
+   "name": "Grave of Richard III",
+   "qid": null,
+   "wikipedia_title": "Exhumation and reburial of Richard III of England",
+   "lat": 52.63472,
+   "lon": -1.13694,
+   "nation": "England",
+   "location": "Leicester Cathedral (first grave: Greyfriars friary site, Leicester)",
+   "museum": null,
+   "age_text": "buried 1485; reburied 2015",
+   "year": 1485,
+   "claim": "the lost grave of the last Plantagenet king, found in 2012",
+   "evidence": "The skeleton found at Greyfriars in 2012 was identified by DNA, radiocarbon and osteology and reburied in the cathedral on 26 March 2015.",
+   "sources": [
+    {
+     "title": "Wikipedia: Exhumation and reburial of Richard III of England",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exhumation_and_reburial_of_Richard_III_of_England",
+     "locator": "article text",
+     "quote": "His body was taken to Greyfriars, where it was buried in a crude grave in the friary church"
+    },
+    {
+     "title": "Wikipedia: Exhumation and reburial of Richard III of England",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exhumation_and_reburial_of_Richard_III_of_England",
+     "locator": "article text",
+     "quote": "the remains were reinterred at Leicester Cathedral on 26 March 2015"
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

@@ -26,7 +26,9 @@ SLOW_HOSTS = {"apps.communities-ni.gov.uk": 4.0}      # answers with an empty pa
 
 
 def load():
-    return json.loads(FILE.read_text())["claims"]
+    """The researched claims, and those of the researched "oldest" lists (bidb.oldest_lists)."""
+    from .oldest_lists import claims
+    return json.loads(FILE.read_text())["claims"] + claims()
 
 
 def checks():

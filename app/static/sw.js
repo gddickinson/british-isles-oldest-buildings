@@ -6,7 +6,7 @@ const SHELL = ["/", "/map", "/tours", "/stories", "/static/style.css", "/static/
                "/static/tour_lib.js", "/static/tours.js", "/static/tour_builder.js"];
 
 // API answers worth keeping offline: records and tours you opened (searches are not kept)
-const KEEP_API = /^\/api\/(building|buildings|place|person|tour|tours|stories|timeline|visiting|domesday|excavations|depictions|pron|related|nearby)\b/;
+const KEEP_API = /^\/api\/(building|buildings|place|person|tour|tours|stories|timeline|visiting|domesday|dendro|excavations|depictions|pron|related|nearby)\b/;
 
 self.addEventListener("install", (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener("activate", (e) => e.waitUntil(caches.keys()

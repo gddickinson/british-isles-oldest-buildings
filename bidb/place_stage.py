@@ -1,8 +1,9 @@
 """Shared helpers for the place stages that add a places group from Wikidata classes
-(underground, military, museums, bridges).
+(underground, military, museums, bridges, burials, trade and works).
 
     query(where)            items matching a SPARQL pattern, with coordinates, opening and closing years
     subclass_items(root)    {qid: set of classes} for every item of a class or its subclasses
+    direct_items(classes)   the same for items of the given classes only
     write(conn, recs, …)    replace the stage's places, regroup existing ones, keep catalogue buildings
 """
 import json
@@ -20,9 +21,10 @@ STAY = ("plaque", "find", "object", "event", "kept")
 def protected():
     """Kinds made by the group stages (legends, maritime, underground, military, museums, bridges):
     a place one of them made is never taken by another."""
-    from . import bridges, digs, hoards, lore_places, mapping_museums, maritime, military, museums, underground
+    from . import (bridges, burials, digs, hoards, lore_places, mapping_museums, maritime, military, museums,
+                   oldest_lists, trade_works, underground)
     return set(STAY) | {k for m in (lore_places, maritime, underground, military, museums, mapping_museums, bridges,
-                                    hoards, digs) for k in m.KINDS}
+                                    hoards, digs, oldest_lists, burials, trade_works) for k in m.KINDS}
 
 
 def query(where, wp_only=False):
@@ -47,6 +49,18 @@ def subclass_items(root):
     for c in COUNTRIES:
         for r in sparql(f"""SELECT DISTINCT ?i ?cls WHERE {{ ?i wdt:P31 ?cls ; wdt:P17 {c} ; wdt:P625 [] .
                 ?cls wdt:P279* wd:{root} . }}"""):
+            out.setdefault(r["i"]["value"].rsplit("/", 1)[-1], set()).add(r["cls"]["value"].rsplit("/", 1)[-1])
+    return out
+
+
+def direct_items(classes):
+    """{qid: set of P31 classes} for every item with coordinates in the isles whose class is one of `classes`
+    (no subclasses)."""
+    out = {}
+    vals = " ".join(f"wd:{c}" for c in classes)
+    for c in COUNTRIES:
+        for r in sparql(f"SELECT DISTINCT ?i ?cls WHERE {{ VALUES ?cls {{ {vals} }} ?i wdt:P31 ?cls ; wdt:P17 {c} ; "
+                        f"wdt:P625 [] . }}"):
             out.setdefault(r["i"]["value"].rsplit("/", 1)[-1], set()).add(r["cls"]["value"].rsplit("/", 1)[-1])
     return out
 

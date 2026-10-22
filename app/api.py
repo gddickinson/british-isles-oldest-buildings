@@ -73,6 +73,12 @@ def gaps():
     return jsonify(queries.gaps(conn()))
 
 
+@bp.route("/api/oldest_lists")
+def oldest_lists():
+    from bidb.oldest_lists import lists
+    return jsonify(lists(conn()))
+
+
 @bp.route("/api/oldest")
 def oldest():
     return jsonify(queries.oldest_by_category(conn(), per=arg_num("per") or 6))

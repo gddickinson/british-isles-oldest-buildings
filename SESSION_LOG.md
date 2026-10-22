@@ -424,3 +424,23 @@
 - Evidence: 307 claims, 542 quotes, 541 found (Ballycopeland's Geograph source refuses scripts). Verification:
   confirmed 295, evidenced 76, unreachable 1. Tests: 86 pass; UI checks building_domesday (new), building_evidence,
   data_evidence pass.
+
+## 2026-10-22 (afternoon) — R4b, tree-ring dates, sanity check, nature, graves, markets, works, infrastructure
+- README updated and pushed (research results). Research agents (11 in all, every quote re-checked before merging).
+- R7 sanity check of the 100 oldest records: 72 kept, 18 corrected (Avebury c. 2900 BC, Hembury, Chestnuts, Bryn
+  Celli Ddu, Carrowkeel, Carrowmore, Knap of Howar c. 3300 BC…), 10 open; record problems in docs/date_review.md.
+  Caerau kept at its Neolithic enclosure (consistent with Hembury and the Trundle).
+- R4b manor houses: 19 of 30 corrected (Domesday manor dates given as house dates). Lives of Wilfrid and Guthlac.
+- R6 `bidb/dendro.py` + `bidb/osgrid.py`: VAG Dendrochronology Database (ADS) matched to 592 buildings; 13 dates
+  corrected from the timbers; "Tree-ring dated:" line in detail views (local and hosted, `/api/dendro/<id>`).
+  Matching: the record's own distinctive words in the entry, or "town + kind" names; street names stripped; tests.
+- R8 `bidb/oldest_lists.py`: researched lists nature (60), graves (75), trade (70), infra (72) → places, evidence
+  claims (generated, read by `evidence.load`), the Oldest page (`/api/oldest_lists`, hosted `oldest_lists.json`),
+  plus the earliest dated places per kind of the new groups (unchecked).
+- New place stages `bidb/burials.py` (7,939 in "Graves & burial grounds") and `bidb/trade_works.py` ("Markets &
+  trade" 7,511, "Infrastructure & utilities" 15,170, Industrial heritage now 12,334); `place_stage.direct_items`.
+  Two new place-group colours (--g17…--g20). First burials run moved 217 archaeology places into graves; reverted
+  and archaeology places now never move there.
+- Date corrections: 164 in all. Places: 152,558 (was 118,184). Evidence: 714 claims, 1,312 quotes.
+- GUI restarted for review on port 5050. Asked the user before opening it to the home network (it binds 127.0.0.1;
+  jobs, settings and corrections would be open to every machine).

@@ -10,7 +10,8 @@ PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Park
                 "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
                 "Legends & literature", "Maritime heritage", "Victorian era", "Underground",
                 "Military heritage", "Museums & collections", "Bridges",
-                "Excavations"]
+                "Excavations", "Nature & deep time", "Graves & burial grounds", "Markets & trade",
+                "Infrastructure & utilities"]
 
 # Prehistoric / early monument types. Items with a photo or a Wikipedia article join the main
 # building catalogue; the rest are shown as "Archaeological sites" places.
@@ -139,3 +140,12 @@ KIND_GROUP["mm_museum"] = "Museums & collections"
 # added by bidb.hoards and bidb.digs
 KIND_LABEL.update({"hoard": "Hoard", "excavated": "Excavated site", "timeteam": "Time Team dig"})
 KIND_GROUP.update({"hoard": "Finds & treasures", "excavated": "Excavations", "timeteam": "Excavations"})
+# added by bidb.oldest_lists and bidb.burials
+from .oldest_lists import KIND_LABEL as _OLDEST  # noqa: E402  (oldest_lists imports place_records only when used)
+KIND_LABEL.update(_OLDEST)
+KIND_LABEL.update({"bu_cemetery": "Cemetery", "bu_churchyard": "Churchyard or burial ground", "bu_war": "War cemetery",
+                   "bu_tomb": "Tomb or chest tomb", "bu_mausoleum": "Mausoleum", "bu_grave": "Grave"})
+KIND_GROUP.update({k: "Graves & burial grounds" for k in ("bu_cemetery", "bu_churchyard", "bu_war", "bu_tomb",
+                                                         "bu_mausoleum", "bu_grave")})
+from .oldest_lists import KIND_GROUP as _OLDEST_GROUP  # noqa: E402
+KIND_GROUP.update(_OLDEST_GROUP)

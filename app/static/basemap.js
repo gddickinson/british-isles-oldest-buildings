@@ -403,13 +403,16 @@ const Basemap = (() => {
     el.dataset.transportDone = "1";
     const [lat, lon] = el.dataset.transport.split(",").map(Number);
     const id = el.dataset.visit && encodeURIComponent(el.dataset.visit);
-    const [near, visit, dom, digs] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
+    const [near, visit, dom, digs, rings] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
       id ? api("/api/visiting/" + id).catch(() => null) : null, id ? api("/api/domesday/" + id).catch(() => null) : null,
-      id ? api("/api/excavations/" + id).catch(() => []) : []]);
+      id ? api("/api/excavations/" + id).catch(() => []) : [], id ? api("/api/dendro/" + id).catch(() => []) : []]);
     const lines = [];
     const dug = (digs || []).map((d) => d.what === "time team" ? `Time Team${d.years ? " " + esc(d.years) : ""}`
       : d.years && d.who ? `${esc(d.years)} (${esc(d.who.replace(/; /g, ", "))})` : esc(d.years || d.who || "")).filter(Boolean);
     if (dug.length) lines.push(`<b>${dug.every((t) => t.startsWith("found by")) ? "Found:" : "Excavated:"}</b> ${dug.join(" · ")}`);
+    if ((rings || []).length) lines.push(`<b>Tree-ring dated:</b> ${rings.slice(0, 4).map((d) => `${esc(d.date_text)} <span class="hint">(${
+      esc(d.location)}${d.method === "tree-ring" ? "" : ", " + esc(d.method)}; ${esc(d.reference)})</span>`).join(" · ")}${rings.length > 4 ? ` · and ${rings.length - 4} more` : ""}
+      <span class="hint">(<a href="https://doi.org/10.5284/1132568" target="_blank" rel="noopener">VAG Dendrochronology Database</a>, matched by name and place)</span>`);
     if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
       esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book${domesdayEntry(dom.entry)}
       <span class="hint">(<a href="https://opendomesday.org/${dom.od_id ? "place/" + esc(dom.od_id) + "/" : ""}" target="_blank" rel="noopener">Open Domesday</a>)</span>`);

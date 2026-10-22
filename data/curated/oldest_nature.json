@@ -1,0 +1,1737 @@
+{
+ "about": "Oldest and most remarkable natural things of the isles (research track, 2026-10-22): ancient trees, ancient woods, oldest rocks, fossil sites, early human traces and natural wonders. Each entry: the age claim, how well it is established, and sources with exact quotes (checked by python -m bidb.evidence --check).",
+ "entries": [
+  {
+   "category": "Ancient tree",
+   "name": "Fortingall Yew",
+   "qid": "Q1003148",
+   "wikipedia_title": "Fortingall Yew",
+   "lat": 56.59798,
+   "lon": -4.05068,
+   "nation": "Scotland",
+   "location": "Fortingall churchyard, Perthshire",
+   "age_text": "estimated 2,000–3,000 years by many; Forestry and Land Scotland say c. 5,000; suggestions range from 1,500 to 9,000",
+   "year": -3000,
+   "claim": "possibly the oldest living tree in Britain and one of the oldest in Europe",
+   "evidence": "No ring count is possible (the heartwood has gone); ages come from the girth of 56 ft recorded in 1769–71 and growth-rate assumptions, so estimates span 1,500 to 9,000 years.",
+   "sources": [
+    {
+     "title": "Fortingall Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortingall_Yew",
+     "locator": "Age",
+     "quote": "Some estimates put the tree's age at between 2,000 and 3,000 years"
+    },
+    {
+     "title": "Fortingall Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortingall_Yew",
+     "locator": "Age",
+     "quote": "Others have suggested an age as great as 5,000 to 9,000 years"
+    },
+    {
+     "title": "Fortingall Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortingall_Yew",
+     "locator": "Age",
+     "quote": "Forestry and Land Scotland consider it to be 5,000 years old"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Llangernyw Yew",
+   "qid": "Q4463960",
+   "wikipedia_title": "Llangernyw Yew",
+   "lat": 53.19234,
+   "lon": -3.68504,
+   "nation": "Wales",
+   "location": "St Digain's churchyard, Llangernyw, Conwy",
+   "age_text": "often given as 4,000–5,000 years; alternative view c. 1,500 years",
+   "year": -2000,
+   "claim": "one of the oldest trees in Wales",
+   "evidence": "The 4,000–5,000-year figure comes from a 2002 Yew Tree Campaign certificate (David Bellamy); the trunk is fragmented and there is no scientific dating of the tree itself; others tie it to the Christian site (c. 1,500 years).",
+   "sources": [
+    {
+     "title": "Llangernyw Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Llangernyw_Yew",
+     "locator": "article",
+     "quote": "its age is unclear but probably over 4,000 years old"
+    },
+    {
+     "title": "Llangernyw Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Llangernyw_Yew",
+     "locator": "History",
+     "quote": "which would make it around 1,500 years old"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Defynnog Yew",
+   "qid": "Q123685020",
+   "wikipedia_title": "Defynnog Yew",
+   "lat": 51.93972,
+   "lon": -3.56472,
+   "nation": "Wales",
+   "location": "St Cynog's churchyard, Defynnog, Powys",
+   "age_text": "claimed c. 5,000 years; investigation suggests 2,000–3,000; Ancient Yew Group minimum 1,300 years",
+   "year": -1000,
+   "claim": "claimed to be the oldest tree in Britain",
+   "evidence": "The 5,000-year claim (Yew Tree Campaign certificate) is not supported by later investigation; the Ancient Yew Group's Toby Hindson gives a projected minimum of 1,300 years.",
+   "sources": [
+    {
+     "title": "Defynnog Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Defynnog_Yew",
+     "locator": "article",
+     "quote": "It is considered more likely that the two yew trees are in the order of two to three thousand years old"
+    },
+    {
+     "title": "Defynnog Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Defynnog_Yew",
+     "locator": "article",
+     "quote": "gives a projected age on the hard evidence currently held by the AYG of a minimum 1,300 years"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Crowhurst Yew",
+   "qid": "Q121908887",
+   "wikipedia_title": "Crowhurst Yew",
+   "lat": 51.20939,
+   "lon": -0.0105,
+   "nation": "England",
+   "location": "St George's churchyard, Crowhurst, Surrey",
+   "age_text": "thought to be about 4,000 years (girth estimate; unverified)",
+   "year": -2000,
+   "claim": "one of the oldest yews in England",
+   "evidence": "The 4,000-year figure is a girth-based estimate; the tree is documented by its 1630 girth measurement and by John Evelyn in 1664, which proves only a large tree by the 17th century.",
+   "sources": [
+    {
+     "title": "Crowhurst Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crowhurst_Yew",
+     "locator": "article",
+     "quote": "It is thought to be about 4,000 years old"
+    },
+    {
+     "title": "Crowhurst Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crowhurst_Yew",
+     "locator": "article",
+     "quote": "Its girth was measured in 1630 as 30 feet"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Ankerwycke Yew",
+   "qid": "Q4766037",
+   "wikipedia_title": "Ankerwycke Yew",
+   "lat": 51.4448,
+   "lon": -0.55651,
+   "nation": "England",
+   "location": "Ankerwycke, near Wraysbury, Berkshire",
+   "age_text": "at least 1,400 years, possibly 2,500",
+   "year": 100,
+   "claim": "witness to the sealing of Magna Carta (1215)",
+   "evidence": "A girth-based range (8 m girth); the Magna Carta association is tradition, but a tree of this size would have been standing in 1215.",
+   "sources": [
+    {
+     "title": "Ankerwycke Yew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ankerwycke_Yew",
+     "locator": "article",
+     "quote": "The tree is at least 1,400 years old, and could be as old as 2,500 years"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Kingley Vale yew forest",
+   "qid": "Q6412784",
+   "wikipedia_title": "Kingley Vale National Nature Reserve",
+   "lat": 50.8864,
+   "lon": -0.83421,
+   "nation": "England",
+   "location": "Kingley Vale, near Chichester, West Sussex",
+   "age_text": "yews up to c. 2,000 years",
+   "year": 0,
+   "claim": "one of Europe's finest yew forests, with some of the oldest living things in Britain",
+   "evidence": "Ages are girth-based estimates for the largest yews in the grove.",
+   "sources": [
+    {
+     "title": "Kingley Vale National Nature Reserve (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kingley_Vale_National_Nature_Reserve",
+     "locator": "article",
+     "quote": "The forest contains yews as much as 2,000 years old"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Marton Oak",
+   "qid": "Q115473179",
+   "wikipedia_title": "Marton Oak",
+   "lat": 53.2107,
+   "lon": -2.2299,
+   "nation": "England",
+   "location": "Marton, near Congleton, Cheshire",
+   "age_text": "believed to be about 1,200 years",
+   "year": 826,
+   "claim": "the widest oak in Britain and probably the oldest",
+   "evidence": "Age is estimated from girth (the trunk has split into sections; heartwood rotted), so it cannot be ring-counted. Coordinates approximate (village of Marton).",
+   "sources": [
+    {
+     "title": "Marton Oak (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marton_Oak",
+     "locator": "article",
+     "quote": "The tree is believed to be 1,200 years old"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Bowthorpe Oak",
+   "qid": "Q4951448",
+   "wikipedia_title": "Bowthorpe Oak",
+   "lat": 52.7252,
+   "lon": -0.421247,
+   "nation": "England",
+   "location": "Bowthorpe Park Farm, near Bourne, Lincolnshire",
+   "age_text": "about 1,000 years (estimate); younger than the Marton Oak",
+   "year": 1000,
+   "claim": "commonly called the UK's oldest oak",
+   "evidence": "The 'oldest oak' label rests on its girth (c. 13 m); the cited source says it is surpassed in age by the Marton Oak (c. 1,200 years) and King Offa's Oak at Windsor.",
+   "sources": [
+    {
+     "title": "Bowthorpe Oak (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bowthorpe_Oak",
+     "locator": "article",
+     "quote": "It is commonly thought to be the UK's oldest oak tree on account of its size, although it is surpassed in age by the 1,200-year old Marton Oak"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Major Oak",
+   "qid": "Q388443",
+   "wikipedia_title": "Major Oak",
+   "lat": 53.20461,
+   "lon": -1.0725,
+   "nation": "England",
+   "location": "Sherwood Forest, near Edwinstowe, Nottinghamshire",
+   "age_text": "800–1,200 years; declared dead in June 2026",
+   "year": 1000,
+   "claim": "Robin Hood's tree; Britain's best-known oak",
+   "evidence": "Girth-based estimate (10 m girth); possibly several fused saplings. The RSPB announced in June 2026 that the tree had died after failing to come into leaf.",
+   "sources": [
+    {
+     "title": "Major Oak (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Major_Oak",
+     "locator": "article",
+     "quote": "Thought to be between 800 and 1,200 years old"
+    },
+    {
+     "title": "Major Oak (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Major_Oak",
+     "locator": "article",
+     "quote": "In June 2026, the Royal Society for the Protection of Birds (RSPB), which manages the forest, announced that the tree had died"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient tree",
+   "name": "Tortworth Chestnut",
+   "qid": "Q107547946",
+   "wikipedia_title": "Tortworth Chestnut",
+   "lat": 51.6373,
+   "lon": -2.4284,
+   "nation": "England",
+   "location": "St Leonard's churchyard, Tortworth, Gloucestershire",
+   "age_text": "over 800 years on documentary evidence; legend of a nut planted in 800 AD",
+   "year": 1100,
+   "claim": "one of the oldest sweet chestnuts in Britain",
+   "evidence": "Documentary references (1664 and 1712 accounts reporting it in the 12th–13th centuries) support 800+ years; the 1150 name and AD 800 planting legend are weaker.",
+   "sources": [
+    {
+     "title": "Tortworth Chestnut (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tortworth_Chestnut",
+     "locator": "article",
+     "quote": "dating it at over 800 years old"
+    },
+    {
+     "title": "Tortworth Chestnut (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tortworth_Chestnut",
+     "locator": "article",
+     "quote": "a legend recounts that the tree sprang from a nut planted in 800 AD"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Wistman's Wood",
+   "qid": "Q3569474",
+   "wikipedia_title": "Wistman's Wood",
+   "lat": 50.5778,
+   "lon": -3.96139,
+   "nation": "England",
+   "location": "West Dart valley, Dartmoor, Devon",
+   "age_text": "oldest oaks 400–500 years; possibly a relic of woodland that covered Dartmoor c. 7000 BC",
+   "year": 1500,
+   "claim": "a remnant of Dartmoor's primeval forest",
+   "evidence": "Tree-ring work shows the living oaks are a few centuries old; the link to prehistoric wildwood is a plausible inference, not demonstrated continuity.",
+   "sources": [
+    {
+     "title": "Wistman's Wood (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wistman's_Wood",
+     "locator": "article",
+     "quote": "The oldest oaks appear to be 400–500 years old"
+    },
+    {
+     "title": "Wistman's Wood (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wistman's_Wood",
+     "locator": "article",
+     "quote": "It is likely to be a leftover from the ancient forest that covered much of Dartmoor c. 7000 BCE"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Black Wood of Rannoch",
+   "qid": "Q122986172",
+   "wikipedia_title": "Loch Rannoch",
+   "lat": 56.6711,
+   "lon": -4.3458,
+   "nation": "Scotland",
+   "location": "south shore of Loch Rannoch, Perth and Kinross",
+   "age_text": "pinewood descended from the first pines after the last Ice Age (c. 9,000 years)",
+   "year": -7000,
+   "claim": "one of the largest remnants of the ancient Caledonian pine forest",
+   "evidence": "Native-pinewood remnants are defined as descended from the post-glacial colonising pines; the individual trees are only a few centuries old.",
+   "sources": [
+    {
+     "title": "Loch Rannoch (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Loch_Rannoch",
+     "locator": "Black Wood of Rannoch",
+     "quote": "The Black Wood of Rannoch, a fragment of the former Caledonian Forest"
+    },
+    {
+     "title": "Caledonian Forest (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caledonian_Forest",
+     "locator": "article",
+     "quote": "directly descended from the first pines to arrive in Scotland following the ice age"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Fossil Grove",
+   "qid": "Q14995567",
+   "wikipedia_title": "Fossil Grove",
+   "lat": 55.8767,
+   "lon": -4.3382,
+   "nation": "Scotland",
+   "location": "Victoria Park, Glasgow",
+   "age_text": "c. 325 million years (Carboniferous)",
+   "year": -325000000,
+   "claim": "fossil stumps of a Carboniferous forest of lycopsid trees, preserved in place",
+   "evidence": "Age from the stratigraphic position of the shale (Limestone Coal Formation); well established.",
+   "sources": [
+    {
+     "title": "Fossil Grove (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fossil_Grove",
+     "locator": "article",
+     "quote": "The strata were deposited approximately 325 million years ago when the tree-like plants were still alive"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Lulworth Fossil Forest",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 50.6175,
+   "lon": -2.2405,
+   "nation": "England",
+   "location": "east of Lulworth Cove, Dorset (Lulworth ranges)",
+   "age_text": "c. 145 million years (latest Jurassic, Purbeck)",
+   "year": -145000000,
+   "claim": "the stumps of a Jurassic conifer forest, preserved as 'algal burrs'",
+   "evidence": "Age from the Purbeck strata at the Jurassic–Cretaceous boundary; the trees themselves survive only as moulds within microbial limestone. Coordinates approximate.",
+   "sources": [
+    {
+     "title": "Fossil Forest re-opens to the public",
+     "author": "Dorset National Landscape",
+     "kind": "secondary",
+     "url": "https://dorset-nl.org.uk/fossil-forest-re-opens-to-the-public/",
+     "locator": "news item, March 2020",
+     "quote": "The 145 million-year-old ‘forest’ is a key part of the Jurassic Coast’s ‘walk through time’ story"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Borth submerged forest",
+   "qid": null,
+   "wikipedia_title": "Borth",
+   "lat": 52.4853,
+   "lon": -4.051,
+   "nation": "Wales",
+   "location": "Borth beach, Ceredigion",
+   "age_text": "c. 1500 BC on radiocarbon dates (other studies give older dates for parts of the bed)",
+   "year": -1500,
+   "claim": "a drowned prehistoric forest, linked with the legend of Cantre'r Gwaelod",
+   "evidence": "Stumps of oak, pine, birch, willow and hazel radiocarbon dated; exposed by storms (e.g. Storm Hannah, 2019).",
+   "sources": [
+    {
+     "title": "Borth (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Borth",
+     "locator": "History",
+     "quote": "Radiocarbon dating suggests the trees date from about 1500 BCE"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Mount's Bay submerged forest",
+   "qid": "Q4618125",
+   "wikipedia_title": "Mount's Bay",
+   "lat": 50.058,
+   "lon": -5.4204,
+   "nation": "England",
+   "location": "Mount's Bay, near Penzance, Cornwall",
+   "age_text": "forest growing c. 6,000 to 4,000 years ago",
+   "year": -4000,
+   "claim": "drowned forest, origin of the Cornish name of St Michael's Mount ('the grey rock in the wood')",
+   "evidence": "Peat and wood around Penzance are radiocarbon dated.",
+   "sources": [
+    {
+     "title": "Mount's Bay (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mount's_Bay",
+     "locator": "article",
+     "quote": "indicate that the forest was growing from at least 6,000 to around 4,000 years ago when rising sea levels finally killed the trees"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Ancient woodland or wood remains",
+   "name": "Hatfield Forest",
+   "qid": "Q5681377",
+   "wikipedia_title": "Hatfield Forest",
+   "lat": 51.8577,
+   "lon": 0.2291,
+   "nation": "England",
+   "location": "near Bishop's Stortford, Essex",
+   "age_text": "medieval royal forest with pollards over 1,200 years old (estimate)",
+   "year": 1100,
+   "claim": "the best-preserved medieval royal forest in England (Oliver Rackham)",
+   "evidence": "Rackham's historical ecology shows the medieval forest structure survives; tree ages are estimates.",
+   "sources": [
+    {
+     "title": "Hatfield Forest (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hatfield_Forest",
+     "locator": "article",
+     "quote": "There are over 800 ancient trees in the wood pasture areas, some of which are over 1,200 years old"
+    },
+    {
+     "title": "Hatfield Forest (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hatfield_Forest",
+     "locator": "article",
+     "quote": "Hatfield is the only place where one can step back into the Middle Ages"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rock",
+   "name": "Lewisian gneiss",
+   "qid": "Q6537363",
+   "wikipedia_title": "Lewisian complex",
+   "lat": 58.3519,
+   "lon": -5.1512,
+   "nation": "Scotland",
+   "location": "Scourie, Sutherland (also Outer Hebrides)",
+   "age_text": "just over 3,000 million years (protolith ages 3,125–2,800 Ma)",
+   "year": -3000000000,
+   "claim": "the oldest rocks in the British Isles",
+   "evidence": "Radiometric (U-Pb zircon) dating summarised by the BGS Geological Conservation Review volume. Point placed at Scourie, a type area.",
+   "sources": [
+    {
+     "title": "Lewisian, Torridonian and Moine rocks of Scotland, chapter 1",
+     "author": "British Geological Survey / JNCC (Geological Conservation Review vol. 34)",
+     "kind": "secondary",
+     "url": "https://webapps.bgs.ac.uk/Memoirs/docs/GCR34_Chapter1Lewisian.html",
+     "locator": "Introduction",
+     "quote": "including the oldest rocks in the British Isles, dated to just over 3000 Ma"
+    },
+    {
+     "title": "Lewisian, Torridonian and Moine rocks of Scotland, chapter 1",
+     "author": "British Geological Survey / JNCC (Geological Conservation Review vol. 34)",
+     "kind": "secondary",
+     "url": "https://webapps.bgs.ac.uk/Memoirs/docs/GCR34_Chapter1Lewisian.html",
+     "locator": "Introduction",
+     "quote": "with protolith ages between 3125 Ma and 2800 Ma"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rock",
+   "name": "Inishtrahull Gneiss",
+   "qid": "Q935871",
+   "wikipedia_title": "Inishtrahull",
+   "lat": 55.4318,
+   "lon": -7.2377,
+   "nation": "Republic of Ireland",
+   "location": "Inishtrahull island, County Donegal",
+   "age_text": "c. 1,700–1,780 million years",
+   "year": -1780000000,
+   "claim": "the oldest rock in Ireland",
+   "evidence": "Radiometric dating of the Rhinns complex gneiss (also on Islay and Colonsay).",
+   "sources": [
+    {
+     "title": "Inishtrahull (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inishtrahull",
+     "locator": "Geology",
+     "quote": "It is dated at 1.7 billion years old, making it Paleoproterozoic in age, and is the oldest known rock on the Irish Islands"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rock",
+   "name": "Malvern Hills Precambrian rocks",
+   "qid": "Q1577855",
+   "wikipedia_title": "Malvern Hills",
+   "lat": 52.0833,
+   "lon": -2.3333,
+   "nation": "England",
+   "location": "Malvern Hills, Worcestershire/Herefordshire",
+   "age_text": "c. 670–680 million years (late Precambrian)",
+   "year": -680000000,
+   "claim": "among the oldest rocks in England",
+   "evidence": "Radiometric dates on the Malverns Complex; the cited source gives both 670 and 680 million years.",
+   "sources": [
+    {
+     "title": "Malvern Hills (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Malvern_Hills",
+     "locator": "article",
+     "quote": "the oldest of which are about 670 million years old"
+    },
+    {
+     "title": "Malvern Hills (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Malvern_Hills",
+     "locator": "article",
+     "quote": "which are around 680 million years old"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rock",
+   "name": "Anglesey Precambrian rocks (GeoMôn)",
+   "qid": null,
+   "wikipedia_title": "GeoMôn",
+   "lat": 53.28,
+   "lon": -4.42,
+   "nation": "Wales",
+   "location": "Anglesey (GeoMôn UNESCO Global Geopark)",
+   "age_text": "Precambrian, c. 600–700 million years (the oldest rocks in Wales)",
+   "year": -650000000,
+   "claim": "the oldest rocks in Wales",
+   "evidence": "Anglesey's Mona Complex is Neoproterozoic; ages and order of its groups are still debated (South Stack, once thought oldest, now Cambrian). Point is the island centre.",
+   "sources": [
+    {
+     "title": "GeoM%C3%B4n (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/GeoM%C3%B4n",
+     "locator": "article",
+     "quote": "solid rocks from the Precambrian to the Neogene"
+    },
+    {
+     "title": "GeoM%C3%B4n (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/GeoM%C3%B4n",
+     "locator": "article",
+     "quote": "having been first identified as the oldest Precambrian rock then the youngest"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest rock",
+   "name": "Siccar Point (Hutton's Unconformity)",
+   "qid": "Q740491",
+   "wikipedia_title": "Siccar Point",
+   "lat": 55.93139,
+   "lon": -2.30139,
+   "nation": "Scotland",
+   "location": "Siccar Point, Berwickshire",
+   "age_text": "Silurian greywackes c. 440 million years under Devonian sandstone c. 375 million years; recognised 1788",
+   "year": -440000000,
+   "claim": "the unconformity that convinced James Hutton of 'deep time'",
+   "evidence": "Stratigraphic ages well established; the site's fame is historical (Hutton, Playfair and Hall, 1788).",
+   "sources": [
+    {
+     "title": "Siccar Point (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Siccar_Point",
+     "locator": "article",
+     "quote": "Hutton's Unconformity found in 1788"
+    },
+    {
+     "title": "Siccar Point (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Siccar_Point",
+     "locator": "article",
+     "quote": "are overlain unconformably by gently dipping terrestrial sandstones of late Devonian age"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rock",
+   "name": "Knockan Crag (Moine Thrust)",
+   "qid": "Q1573889",
+   "wikipedia_title": "Knockan Crag",
+   "lat": 58.0389,
+   "lon": -5.06212,
+   "nation": "Scotland",
+   "location": "Knockan, near Elphin, Sutherland",
+   "age_text": "older Moine rocks pushed over Cambrian–Ordovician rocks during the Caledonian (Scandian) orogeny, c. 430 million years ago",
+   "year": -430000000,
+   "claim": "where older rocks lie on top of younger ones, explained by thrusting (Peach and Horne, 1907)",
+   "evidence": "The Highlands Controversy was settled by the BGS survey memoir of 1907; the thrust's Scandian age is well established.",
+   "sources": [
+    {
+     "title": "Knockan Crag (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Knockan_Crag",
+     "locator": "article",
+     "quote": "the Moine schists at the top of the crag appeared to be older than the Cambrian and Ordovician rocks"
+    },
+    {
+     "title": "Moine Thrust Belt (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moine_Thrust_Belt",
+     "locator": "article",
+     "quote": "The Moine Thrust Belt was formed during the Scandian orogenic phase"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Charnwood Forest (Charnia)",
+   "qid": "Q5086584",
+   "wikipedia_title": "Charnia",
+   "lat": 52.7,
+   "lon": -1.25,
+   "nation": "England",
+   "location": "Charnwood Forest, Leicestershire",
+   "age_text": "c. 560 million years (Ediacaran)",
+   "year": -560000000,
+   "claim": "Charnia, the first Precambrian fossil recognised as such (found 1956–57)",
+   "evidence": "U-Pb zircon dating of volcanic ash beds in Charnwood; sources give 570–550 Ma for the organism and c. 560 Ma for the rocks.",
+   "sources": [
+    {
+     "title": "Discovering Charnia",
+     "author": "Charnwood Forest Geopark",
+     "kind": "secondary",
+     "url": "https://www.charnwoodforest.org/discovering-charnia/",
+     "locator": "page",
+     "quote": "Charnia is key to our understanding of how animals first evolved, more than 560 million years ago"
+    },
+    {
+     "title": "Charnia (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Charnia",
+     "locator": "article",
+     "quote": "Charnia is significant because it was the first Precambrian fossil to be recognized as such"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Rhynie chert",
+   "qid": "Q1633601",
+   "wikipedia_title": "Rhynie chert",
+   "lat": 57.3367,
+   "lon": -2.84139,
+   "nation": "Scotland",
+   "location": "Rhynie, Aberdeenshire",
+   "age_text": "c. 407–410 million years (Early Devonian, Pragian)",
+   "year": -407000000,
+   "claim": "the oldest land plants and ecosystem preserved with cellular detail",
+   "evidence": "Older works gave c. 390 Ma; radiometric dating now puts it at about 407–410 Ma. The Geological Conservation Review calls it one of the most important palaeobotanical sites in the world.",
+   "sources": [
+    {
+     "title": "Rhynie chert (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rhynie_chert",
+     "locator": "article",
+     "quote": "formed about 410 million years ago"
+    },
+    {
+     "title": "Rhynie (GCR site report)",
+     "author": "Cleal & Thomas, Palaeozoic Palaeobotany of Great Britain, GCR vol. 9 (JNCC), via Scottish Geology Trust",
+     "kind": "secondary",
+     "url": "https://geoguide.scottishgeologytrust.org/p/gcr09/gcr09_rhynie",
+     "locator": "Highlights",
+     "quote": "Rhynie is probably the most important palaeobotanical site in Britain, yielding the oldest known vascular plant fossils with well-preserved anatomical details"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Valentia Island tetrapod trackway",
+   "qid": null,
+   "wikipedia_title": "Valentia Island",
+   "lat": 51.9308,
+   "lon": -10.3439,
+   "nation": "Republic of Ireland",
+   "location": "Dohilla, Valentia Island, County Kerry",
+   "age_text": "c. 385 million years (Devonian)",
+   "year": -385000000,
+   "claim": "one of the oldest records of four-legged vertebrates walking",
+   "evidence": "Age from the Devonian sandstones (dated by stratigraphy, not directly); found by Iwan Stössel in 1992. Some doubt whether all marks are true tracks.",
+   "sources": [
+    {
+     "title": "Valentia Island & Over the Water Geosites",
+     "author": "Discover Iveragh",
+     "kind": "secondary",
+     "url": "https://www.discoveriveragh.ie/valentia-island-over-the-water-geosites",
+     "locator": "2. Tetrapod Trackway",
+     "quote": "These footprints were left in the sediment around 385 million years ago"
+    },
+    {
+     "title": "Valentia Island (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Valentia_Island",
+     "locator": "article",
+     "quote": "discovered fossilised tetrapod trackways, footprints preserved in Devonian rocks"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Wren's Nest",
+   "qid": "Q8037727",
+   "wikipedia_title": "Wren's Nest",
+   "lat": 52.526,
+   "lon": -2.0936,
+   "nation": "England",
+   "location": "Dudley, West Midlands",
+   "age_text": "c. 420–425 million years (Silurian, Wenlock)",
+   "year": -425000000,
+   "claim": "Silurian reef fossils including the 'Dudley Bug' trilobite",
+   "evidence": "Stratigraphic age of the Wenlock limestone, well established; over 700 fossil types recorded.",
+   "sources": [
+    {
+     "title": "Wren's Nest (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wren's_Nest",
+     "locator": "article",
+     "quote": "which was formed some 420 to 425 million years ago"
+    },
+    {
+     "title": "Wren's Nest (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wren's_Nest",
+     "locator": "article",
+     "quote": "more than 700 types of fossil have been found at the site"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "East Kirkton Quarry",
+   "qid": "Q5328735",
+   "wikipedia_title": "East Kirkton Quarry",
+   "lat": 55.90398,
+   "lon": -3.61654,
+   "nation": "Scotland",
+   "location": "Bathgate, West Lothian",
+   "age_text": "c. 341 million years (Early Carboniferous)",
+   "year": -341000000,
+   "claim": "early land animals including Westlothiana and the oldest known temnospondyl",
+   "evidence": "Dated by stratigraphy of the Viséan lake deposits.",
+   "sources": [
+    {
+     "title": "East Kirkton Quarry (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_Kirkton_Quarry",
+     "locator": "article",
+     "quote": "the most fossil-rich layer is dated to around 341 ± 3 million years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Elgin Reptiles",
+   "qid": "Q48797228",
+   "wikipedia_title": "Elgin Reptiles",
+   "lat": 57.649,
+   "lon": -3.318,
+   "nation": "Scotland",
+   "location": "Elgin, Moray",
+   "age_text": "Permian and Triassic (c. 255–230 million years)",
+   "year": -250000000,
+   "claim": "classic early reptile fossils from building-stone quarries",
+   "evidence": "Age from the Permian and Triassic sandstones; the fossils survive as natural moulds. Point is Elgin town.",
+   "sources": [
+    {
+     "title": "Elgin Reptiles (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Elgin_Reptiles",
+     "locator": "article",
+     "quote": "Elgin Reptiles is the name given to the Permian and Triassic fossils found in the sandstone deposits in and around the town of Elgin"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Lyme Regis (Mary Anning's coast)",
+   "qid": null,
+   "wikipedia_title": "Mary Anning",
+   "lat": 50.725,
+   "lon": -2.93528,
+   "nation": "England",
+   "location": "Lyme Regis, Dorset",
+   "age_text": "Early Jurassic (c. 200–190 million years); first famous finds 1811–12",
+   "year": -200000000,
+   "claim": "the first correctly identified ichthyosaur skeleton and first near-complete plesiosaurs",
+   "evidence": "The finds are historical facts; the rocks' Jurassic age is well established.",
+   "sources": [
+    {
+     "title": "Mary Anning (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mary_Anning",
+     "locator": "article",
+     "quote": "Their first well-known find was in 1811 when Mary Anning was 12"
+    },
+    {
+     "title": "Lyme Regis (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lyme_Regis",
+     "locator": "article",
+     "quote": "It has noted fossils in cliffs and beaches on the Jurassic Coast"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Fossil site",
+   "name": "Isle of Wight dinosaur coast",
+   "qid": null,
+   "wikipedia_title": "Isle of Wight",
+   "lat": 50.63,
+   "lon": -1.42,
+   "nation": "England",
+   "location": "Back of the Wight (Brighstone–Compton Bay), Isle of Wight",
+   "age_text": "Early Cretaceous (c. 130–125 million years)",
+   "year": -125000000,
+   "claim": "one of the most important dinosaur fossil areas in Europe",
+   "evidence": "Fossil bones and footprints in the Wealden Group, exposed by cliff erosion. Point approximate (south-west coast).",
+   "sources": [
+    {
+     "title": "Isle of Wight (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Isle_of_Wight",
+     "locator": "article",
+     "quote": "The island is one of the most important areas in Europe for dinosaur fossils"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Happisburgh footprints",
+   "qid": "Q15720503",
+   "wikipedia_title": "Happisburgh footprints",
+   "lat": 52.82528,
+   "lon": 1.535,
+   "nation": "England",
+   "location": "Happisburgh beach, Norfolk",
+   "age_text": "c. 1 million–780,000 years (often given as 850,000–950,000)",
+   "year": -900000,
+   "claim": "the oldest known human footprints outside Africa",
+   "evidence": "Dated by palaeomagnetism, biostratigraphy and pollen of the Cromer Forest Bed; the prints were recorded by photogrammetry and washed away within weeks (Ashton et al. 2014).",
+   "sources": [
+    {
+     "title": "Hominin Footprints from Early Pleistocene Deposits at Happisburgh, UK",
+     "author": "Ashton N. et al., PLOS ONE 9(2): e88329, 2014",
+     "kind": "primary",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088329",
+     "locator": "Abstract",
+     "quote": "the oldest known hominin footprint surface outside Africa at between ca. 1 million and 0.78 million years ago"
+    },
+    {
+     "title": "Happisburgh footprints (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Happisburgh_footprints",
+     "locator": "article",
+     "quote": "around 850–950,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Pakefield",
+   "qid": "Q3032523",
+   "wikipedia_title": "Pakefield",
+   "lat": 52.451,
+   "lon": 1.728,
+   "nation": "England",
+   "location": "Pakefield cliffs, Lowestoft, Suffolk",
+   "age_text": "c. 700,000 years",
+   "year": -700000,
+   "claim": "the earliest evidence of humans in northern Europe (until Happisburgh)",
+   "evidence": "32 worked flints dated by mammal biostratigraphy and palaeomagnetism (Parfitt et al., Nature 2005).",
+   "sources": [
+    {
+     "title": "First northern Europeans arrived early",
+     "author": "Nature news (via BioEd Online)",
+     "kind": "secondary",
+     "url": "https://www.bioedonline.org/news/nature-news-archive/first-northern-europeans-arrived-early/",
+     "locator": "news, Dec 2005",
+     "quote": "A set of stone tools found in southern England has been dated to 700,000 years ago"
+    },
+    {
+     "title": "Pakefield (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pakefield",
+     "locator": "article",
+     "quote": "This suggests that hominins can be dated in England to 700,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Boxgrove (Boxgrove Man)",
+   "qid": "Q2600371",
+   "wikipedia_title": "Eartham Pit",
+   "lat": 50.8703,
+   "lon": -0.687409,
+   "nation": "England",
+   "location": "Eartham Pit, Boxgrove, West Sussex",
+   "age_text": "c. 480,000–500,000 years",
+   "year": -480000,
+   "claim": "the oldest human remains in Britain",
+   "evidence": "Shin bone and teeth found 1993–95 in dated Cromerian interglacial deposits.",
+   "sources": [
+    {
+     "title": "Eartham Pit (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eartham_Pit",
+     "locator": "article",
+     "quote": "The oldest human remains in Britain, designated \"Boxgrove Man\""
+    },
+    {
+     "title": "Boxgrove Man (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Boxgrove_Man",
+     "locator": "article",
+     "quote": "the earliest site in Britain with fossils of the genus Homo"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Swanscombe Palaeolithic site",
+   "qid": "Q7653649",
+   "wikipedia_title": "Swanscombe Palaeolithic site",
+   "lat": 51.4456,
+   "lon": 0.29911,
+   "nation": "England",
+   "location": "Swanscombe, Kent",
+   "age_text": "c. 425,000–375,000 years (Hoxnian)",
+   "year": -400000,
+   "claim": "the Swanscombe skull, among the oldest human fossils in Britain",
+   "evidence": "Dated to the Hoxnian interglacial (MIS 11) by stratigraphy and fauna.",
+   "sources": [
+    {
+     "title": "Swanscombe Palaeolithic site (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swanscombe_Palaeolithic_site",
+     "locator": "article",
+     "quote": "It dates to the Hoxnian interglacial (Marine Isotope Stage 11), around 425-375,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Pontnewydd Cave",
+   "qid": "Q4942628",
+   "wikipedia_title": "Bontnewydd Palaeolithic site",
+   "lat": 53.22712,
+   "lon": -3.47629,
+   "nation": "Wales",
+   "location": "Elwy valley, near St Asaph, Denbighshire",
+   "age_text": "c. 230,000 years",
+   "year": -230000,
+   "claim": "the oldest human remains in Wales (early Neanderthal teeth)",
+   "evidence": "Teeth dated by uranium-series and thermoluminescence of associated deposits.",
+   "sources": [
+    {
+     "title": "Bontnewydd Palaeolithic site (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bontnewydd_Palaeolithic_site",
+     "locator": "article",
+     "quote": "Teeth and part of a jawbone from a Neanderthal boy approximately eleven years old were dated to 230,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Kents Cavern",
+   "qid": "Q835378",
+   "wikipedia_title": "Kents Cavern",
+   "lat": 50.4682,
+   "lon": -3.503,
+   "nation": "England",
+   "location": "Torquay, Devon",
+   "age_text": "maxilla c. 44,200–41,500 years BP (2011); first dated 36,400–34,700 BP",
+   "year": -40000,
+   "claim": "the oldest modern human (Homo sapiens) fossil in north-west Europe",
+   "evidence": "Disputed: the 2011 date comes from bones in neighbouring layers rather than the jaw itself.",
+   "sources": [
+    {
+     "title": "Kents Cavern (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kents_Cavern",
+     "locator": "article",
+     "quote": "a 2011 study that dated fossils from neighbouring strata produced an estimate of 44,200–41,500 years BP"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Goat's Hole, Paviland (Red Lady)",
+   "qid": "Q1378083",
+   "wikipedia_title": "Red Lady of Paviland",
+   "lat": 51.55009,
+   "lon": -4.25519,
+   "nation": "Wales",
+   "location": "Paviland, Gower, Swansea",
+   "age_text": "c. 34,000 years BP (c. 32,000 BC)",
+   "year": -32000,
+   "claim": "the oldest known ceremonial burial in Western Europe",
+   "evidence": "Radiocarbon dated (revised several times); the skeleton is a young man, not a lady (Buckland, 1823).",
+   "sources": [
+    {
+     "title": "Red Lady of Paviland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_Lady_of_Paviland",
+     "locator": "article",
+     "quote": "buried in Wales approximately 34,000 years Before Present"
+    },
+    {
+     "title": "Red Lady of Paviland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_Lady_of_Paviland",
+     "locator": "article",
+     "quote": "The site is the oldest known ceremonial burial in Western Europe"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Gough's Cave, Cheddar",
+   "qid": "Q4274798",
+   "wikipedia_title": "Gough's Cave",
+   "lat": 51.2819,
+   "lon": -2.7654,
+   "nation": "England",
+   "location": "Cheddar Gorge, Somerset",
+   "age_text": "Magdalenian occupation c. 14,700 years ago; Cheddar Man c. 10,300 years ago",
+   "year": -12700,
+   "claim": "Britain's oldest complete skeleton (Cheddar Man) and skull cups",
+   "evidence": "Radiocarbon dated human bone.",
+   "sources": [
+    {
+     "title": "Gough's Cave (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gough's_Cave",
+     "locator": "article",
+     "quote": "a late Upper Paleolithic Magdalenian occupation around 14,700 years ago"
+    },
+    {
+     "title": "Gough's Cave (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gough's_Cave",
+     "locator": "article",
+     "quote": "Cheddar Man, dating to around 10,300 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Creswell Crags",
+   "qid": "Q2580424",
+   "wikipedia_title": "Creswell Crags",
+   "lat": 53.2612,
+   "lon": -1.19793,
+   "nation": "England",
+   "location": "Creswell, Derbyshire/Nottinghamshire border",
+   "age_text": "occupied c. 60,000–10,000 years ago; cave art late Upper Palaeolithic (c. 13,000 years)",
+   "year": -11000,
+   "claim": "Britain's only known Ice Age cave art, the northernmost in Europe",
+   "evidence": "Engravings in Church Hole dated by uranium-series on overlying flowstone (published 2007).",
+   "sources": [
+    {
+     "title": "Creswell Crags (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Creswell_Crags",
+     "locator": "article",
+     "quote": "The caves contain Upper Palaeolithic cave art, the northernmost cave art in Europe"
+    },
+    {
+     "title": "Creswell Crags (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Creswell_Crags",
+     "locator": "article",
+     "quote": "Church Hole, with more than 80 engravings on its walls"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Alice and Gwendoline Cave",
+   "qid": "Q96371760",
+   "wikipedia_title": "Alice and Gwendoline Cave",
+   "lat": 52.81765,
+   "lon": -9.00936,
+   "nation": "Republic of Ireland",
+   "location": "near Ennis, County Clare",
+   "age_text": "butchered bear bone 10,860–10,641 cal BC",
+   "year": -10750,
+   "claim": "the oldest evidence of humans in Ireland",
+   "evidence": "Two radiocarbon dates on a cut-marked bear patella (2016); interpretation of the cut marks has been questioned.",
+   "sources": [
+    {
+     "title": "Alice and Gwendoline Cave (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alice_and_Gwendoline_Cave",
+     "locator": "article",
+     "quote": "The bear patella was radiocarbon-dated to 10,860–10,641 cal. BC"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Star Carr",
+   "qid": "Q2299200",
+   "wikipedia_title": "Star Carr",
+   "lat": 54.2143,
+   "lon": -0.42366,
+   "nation": "England",
+   "location": "Vale of Pickering, North Yorkshire",
+   "age_text": "occupied c. 9300–8500 BC",
+   "year": -9300,
+   "claim": "Britain's best-known Mesolithic site, with the oldest known house structure",
+   "evidence": "Many radiocarbon dates.",
+   "sources": [
+    {
+     "title": "Star Carr (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Star_Carr",
+     "locator": "article",
+     "quote": "occupation first commenced between 9335 and 9275 BC"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Cramond Mesolithic site",
+   "qid": "Q1249896",
+   "wikipedia_title": "Cramond",
+   "lat": 55.9667,
+   "lon": -3.3,
+   "nation": "Scotland",
+   "location": "Cramond, Edinburgh",
+   "age_text": "c. 8500 BC",
+   "year": -8500,
+   "claim": "for a time the earliest known human settlement in Scotland",
+   "evidence": "Radiocarbon dated hazelnut shells (2001 excavation).",
+   "sources": [
+    {
+     "title": "Cramond (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cramond",
+     "locator": "article",
+     "quote": "evidence of habitation dating to around 8500 BC"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Howick Mesolithic house",
+   "qid": "Q2041582",
+   "wikipedia_title": "Howick house",
+   "lat": 55.454,
+   "lon": -1.593,
+   "nation": "England",
+   "location": "Howick, Northumberland",
+   "age_text": "c. 7600 BC",
+   "year": -7600,
+   "claim": "once called 'Britain's oldest house' (title since passed to Star Carr)",
+   "evidence": "Radiocarbon dated charred hazelnut shells.",
+   "sources": [
+    {
+     "title": "Howick house (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Howick_house",
+     "locator": "article",
+     "quote": "the building was constructed about 7600 BC"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Early human traces",
+   "name": "Mount Sandel",
+   "qid": "Q1950705",
+   "wikipedia_title": "Mount Sandel Mesolithic site",
+   "lat": 55.11609,
+   "lon": -6.66419,
+   "nation": "Northern Ireland",
+   "location": "Coleraine, County Londonderry",
+   "age_text": "c. 7000 BC",
+   "year": -7000,
+   "claim": "one of the oldest settlement sites in Ireland",
+   "evidence": "Radiocarbon dated hut sites by the River Bann.",
+   "sources": [
+    {
+     "title": "Mount Sandel Mesolithic site (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mount_Sandel_Mesolithic_site",
+     "locator": "article",
+     "quote": "carbon dating indicating an age of 9,000 years old (7,000BC)"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Giant's Causeway",
+   "qid": "Q106187",
+   "wikipedia_title": "Giant's Causeway",
+   "lat": 55.24083,
+   "lon": -6.51167,
+   "nation": "Northern Ireland",
+   "location": "Causeway Coast, County Antrim",
+   "age_text": "c. 50–60 million years (Paleocene basalt)",
+   "year": -60000000,
+   "claim": "about 40,000 interlocking basalt columns; World Heritage Site",
+   "evidence": "Radiometric dating of the Antrim Lava Group; recent work suggests the lavas erupted over a shorter span than thought.",
+   "sources": [
+    {
+     "title": "Giant's Causeway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Giant's_Causeway",
+     "locator": "article",
+     "quote": "Around 50 to 60 million years ago, during the Paleocene Epoch, Antrim was subject to intense volcanic activity"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Fingal's Cave",
+   "qid": "Q403134",
+   "wikipedia_title": "Fingal's Cave",
+   "lat": 56.43139,
+   "lon": -6.34142,
+   "nation": "Scotland",
+   "location": "Staffa, Inner Hebrides, Argyll",
+   "age_text": "Paleocene basalt (c. 55–60 million years); made famous by Joseph Banks in 1772",
+   "year": -58000000,
+   "claim": "a sea cave in columnar basalt",
+   "evidence": "Same lava province as the Giant's Causeway; age by correlation.",
+   "sources": [
+    {
+     "title": "Fingal's Cave (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fingal's_Cave",
+     "locator": "article",
+     "quote": "Fingal's Cave is formed entirely from hexagonally jointed columnar basalt within a Paleocene lava flow"
+    },
+    {
+     "title": "Fingal's Cave (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fingal's_Cave",
+     "locator": "article",
+     "quote": "brought to the attention of the English-speaking world by 18th-century naturalist Sir Joseph Banks in 1772"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Old Man of Hoy",
+   "qid": "Q2738637",
+   "wikipedia_title": "Old Man of Hoy",
+   "lat": 58.88615,
+   "lon": -3.43214,
+   "nation": "Scotland",
+   "location": "Rackwick, Hoy, Orkney",
+   "age_text": "the stack is only a few hundred years old (formed after 1750) though cut from Devonian sandstone",
+   "year": 1750,
+   "claim": "Britain's best-known sea stack",
+   "evidence": "Old maps show a headland here in 1750; the stack is young and may soon collapse.",
+   "sources": [
+    {
+     "title": "Old Man of Hoy (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Man_of_Hoy",
+     "locator": "article",
+     "quote": "Created by the erosion of a cliff through hydraulic action some time after 1750, the stack is not more than a few hundred years old"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Jurassic Coast",
+   "qid": "Q575976",
+   "wikipedia_title": "Jurassic Coast",
+   "lat": 50.70556,
+   "lon": -2.98989,
+   "nation": "England",
+   "location": "Exmouth to Studland, Devon and Dorset",
+   "age_text": "rocks spanning 185 million years (Triassic–Cretaceous)",
+   "year": -250000000,
+   "claim": "an almost continuous sequence of Mesozoic rocks; World Heritage Site (2001)",
+   "evidence": "Stratigraphy well established.",
+   "sources": [
+    {
+     "title": "Jurassic Coast (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jurassic_Coast",
+     "locator": "article",
+     "quote": "The site spans 185 million years of geological history"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Durdle Door",
+   "qid": "Q1267296",
+   "wikipedia_title": "Durdle Door",
+   "lat": 50.62111,
+   "lon": -2.27667,
+   "nation": "England",
+   "location": "Lulworth Estate, Dorset",
+   "age_text": "arch cut in Portland limestone (latest Jurassic, c. 145–150 million years)",
+   "year": -147000000,
+   "claim": "the best-known natural arch in Britain",
+   "evidence": "The rock's age is Jurassic; the arch itself is a product of recent marine erosion (age not known).",
+   "sources": [
+    {
+     "title": "Durdle Door (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Durdle_Door",
+     "locator": "article",
+     "quote": "Originally a band of resistant Portland limestone ran along the shore"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Cheddar Gorge",
+   "qid": "Q1068812",
+   "wikipedia_title": "Cheddar Gorge",
+   "lat": 51.28241,
+   "lon": -2.76546,
+   "nation": "England",
+   "location": "Cheddar, Somerset",
+   "age_text": "an exhumed Permo-Triassic wadi (c. 260 million years) re-cut by Ice Age meltwater",
+   "year": -260000000,
+   "claim": "England's largest gorge",
+   "evidence": "The 260-million-year origin is one interpretation; the present gorge was cut by meltwater in the glacial periods.",
+   "sources": [
+    {
+     "title": "Cheddar Gorge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cheddar_Gorge",
+     "locator": "article",
+     "quote": "The gorge was originally formed during the Permo-Triassic period about 260 million years ago"
+    },
+    {
+     "title": "Cheddar Gorge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cheddar_Gorge",
+     "locator": "article",
+     "quote": "eroded and 'exhumed' by glacial meltwaters at the end of the last Ice Age"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Malham Cove",
+   "qid": "Q1789790",
+   "wikipedia_title": "Malham Cove",
+   "lat": 54.07083,
+   "lon": -2.15861,
+   "nation": "England",
+   "location": "Malham, North Yorkshire",
+   "age_text": "formed by glacial meltwater more than 12,000 years ago (Carboniferous limestone)",
+   "year": -10000,
+   "claim": "a 70 m limestone cliff and pavement",
+   "evidence": "Glacial origin is well accepted; the date is broad.",
+   "sources": [
+    {
+     "title": "Malham Cove (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Malham_Cove",
+     "locator": "article",
+     "quote": "It was formed by a waterfall carrying meltwater from glaciers at the end of the last Ice Age more than 12,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Norber erratics",
+   "qid": "Q20991770",
+   "wikipedia_title": "Norber erratics",
+   "lat": 54.1234,
+   "lon": -2.3601,
+   "nation": "England",
+   "location": "Austwick, North Yorkshire",
+   "age_text": "dropped by ice c. 12,000 years ago; boulders of Silurian greywacke",
+   "year": -10000,
+   "claim": "perched glacial boulders on limestone pedestals",
+   "evidence": "Pedestal height gives an estimate of limestone dissolution since deglaciation.",
+   "sources": [
+    {
+     "title": "Norber erratics (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Norber_erratics",
+     "locator": "article",
+     "quote": "The boulders were probably deposited by melting ice sheets at the end of the last ice age, around 12,000 years ago"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "The Burren",
+   "qid": "Q917858",
+   "wikipedia_title": "The Burren",
+   "lat": 53.0977,
+   "lon": -9.28401,
+   "nation": "Republic of Ireland",
+   "location": "County Clare",
+   "age_text": "Carboniferous (Viséan) limestone, c. 330–340 million years; karst shaped since the Ice Age",
+   "year": -335000000,
+   "claim": "Europe's best-known limestone karst landscape",
+   "evidence": "Stratigraphic age well established.",
+   "sources": [
+    {
+     "title": "The Burren (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Burren",
+     "locator": "article",
+     "quote": "The limestones, which date from the Visean stage of the early Carboniferous"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Slieve League cliffs",
+   "qid": "Q1120038",
+   "wikipedia_title": "Slieve League",
+   "lat": 54.63806,
+   "lon": -8.68139,
+   "nation": "Republic of Ireland",
+   "location": "Teelin, County Donegal",
+   "age_text": "601 m sea cliffs",
+   "year": null,
+   "claim": "among the highest sea cliffs in Europe",
+   "evidence": "Height is a measurement; 'highest in Ireland' is wrong: Croaghaun (Achill) is higher.",
+   "sources": [
+    {
+     "title": "Slieve League (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slieve_League",
+     "locator": "article",
+     "quote": "it has the second-highest sea cliffs in Ireland, after Croaghaun"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Gulf of Corryvreckan",
+   "qid": "Q1896641",
+   "wikipedia_title": "Gulf of Corryvreckan",
+   "lat": 56.1536,
+   "lon": -5.70706,
+   "nation": "Scotland",
+   "location": "between Jura and Scarba, Argyll",
+   "age_text": "tidal whirlpool (natural phenomenon)",
+   "year": null,
+   "claim": "the third largest whirlpool in the world",
+   "evidence": "The ranking is popular and not based on a published comparison.",
+   "sources": [
+    {
+     "title": "Gulf of Corryvreckan (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gulf_of_Corryvreckan",
+     "locator": "article",
+     "quote": "which include the third largest whirlpool in the world"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Severn bore",
+   "qid": "Q7457961",
+   "wikipedia_title": "Severn bore",
+   "lat": 51.85,
+   "lon": -2.332,
+   "nation": "England",
+   "location": "River Severn, Gloucestershire",
+   "age_text": "tidal bore (natural phenomenon)",
+   "year": null,
+   "claim": "one of the largest tidal bores; tidal range among the largest in the world",
+   "evidence": "Tidal range measured at about 13 m, exceeded only by two Canadian bays.",
+   "sources": [
+    {
+     "title": "Severn bore (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Severn_bore",
+     "locator": "article",
+     "quote": "has one of the largest tidal ranges in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Hot springs of Bath",
+   "qid": null,
+   "wikipedia_title": "Roman Baths (Bath)",
+   "lat": 51.3809,
+   "lon": -2.3595,
+   "nation": "England",
+   "location": "Bath, Somerset",
+   "age_text": "rainwater from the Mendips heated at depth; used at least since Roman times",
+   "year": null,
+   "claim": "Britain's only true hot springs (46 °C)",
+   "evidence": "Temperature and flow measured.",
+   "sources": [
+    {
+     "title": "Roman Baths (Bath) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+     "locator": "article",
+     "quote": "Hot water at a temperature of 46 °C (114.8 °F) rises here"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Arthur's Seat",
+   "qid": null,
+   "wikipedia_title": "Arthur's Seat",
+   "lat": 55.94417,
+   "lon": -3.16194,
+   "nation": "Scotland",
+   "location": "Holyrood Park, Edinburgh",
+   "age_text": "Carboniferous volcano, lavas dated 341–335 million years",
+   "year": -340000000,
+   "claim": "an extinct volcano in the heart of a capital city; Hutton's Section on Salisbury Crags",
+   "evidence": "Radiometric dating of lava samples.",
+   "sources": [
+    {
+     "title": "Arthur's Seat (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arthur's_Seat",
+     "locator": "article",
+     "quote": "lava samples have been dated at 341 to 335 million years old"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Natural wonder",
+   "name": "Wold Cottage meteorite fall",
+   "qid": "Q4053207",
+   "wikipedia_title": "Wold Cottage meteorite",
+   "lat": 54.13667,
+   "lon": -0.41333,
+   "nation": "England",
+   "location": "Wold Newton, East Riding of Yorkshire",
+   "age_text": "fell 13 December 1795",
+   "year": 1795,
+   "claim": "the largest meteorite seen to fall in Britain; key to proving meteorites come from space",
+   "evidence": "Eye-witnessed fall; 25 kg stone now at the Natural History Museum.",
+   "sources": [
+    {
+     "title": "Wold Cottage meteorite (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wold_Cottage_meteorite",
+     "locator": "article",
+     "quote": "The stone fell at around 3 o'clock, on 13 December 1795"
+    },
+    {
+     "title": "Wold Cottage meteorite (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wold_Cottage_meteorite",
+     "locator": "article",
+     "quote": "The stone initially weighed 56 pounds"
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

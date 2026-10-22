@@ -679,8 +679,8 @@
   },
   "House (domestic dwelling)|Knap of Howar": {
    "source": "https://en.wikipedia.org/wiki/Knap_of_Howar",
-   "status": "confirmed",
-   "evidence": "Radiocarbon dating shows that it was occupied from 3800 BC to 2800 BC, earlier than the similar houses in the settlement at Skara Brae on the Orkney Mainland."
+   "status": "evidenced",
+   "evidence": "Radiocarbon dating shows that it was occupied from 3800 BC to 2800 BC (Knap of Howar)"
   },
   "House (domestic dwelling)|Skara Brae": {
    "source": "https://en.wikipedia.org/wiki/Skara_Brae",
@@ -1049,8 +1049,8 @@
   },
   "Prison / gaol|Crumlin Road Gaol": {
    "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=4124",
-   "status": "evidenced",
-   "evidence": "Designed in 1841 by Charles Lanyon; built 1843-5 (Crumlin Road Gaol (HB26/43/012))"
+   "status": "confirmed",
+   "evidence": "Architects Lanyon, Charles NI Min of Finance Dept of Works and Public Bdgs Smith, Roland Ingleby Historical Information (i) CONCISE BUILDING HISTORY Designed in 1841 by Charles Lanyon; built 1843-5; contractor, Williams & Sons, of Dublin; original buildings completed and ready for the reception of prisoners by summer 1845; additions made in 1849-50; front boundary railings and gates built, and und"
   },
   "Theatre|Smock Alley Theatre": {
    "source": "https://excavations.ie/report/2009/Dublin/0020648/",
@@ -1124,8 +1124,8 @@
   },
   "Concert hall|Ulster Hall": {
    "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=1793",
-   "status": "evidenced",
-   "evidence": "In May 1860 building work commenced (Ulster Hall, 1-7 Bedford Street (HB26/30/057))"
+   "status": "confirmed",
+   "evidence": "Barre and dated 1862, prominently located on Bedford Street in Belfast city centre."
   },
   "Concert hall|Royal Albert Hall": {
    "source": "https://en.wikipedia.org/wiki/Royal_Albert_Hall",
@@ -1274,8 +1274,8 @@
   },
   "Canal / aqueduct|Newry Canal": {
    "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=10259",
-   "status": "evidenced",
-   "evidence": "The inland section of the Newry Canal was constructed between 1730 and 1742 (Newry Canal, Drumgullion (HB16/25/033))"
+   "status": "confirmed",
+   "evidence": "Architects Cassels, Richard Steers, Thomas Brownrigg, John Historical Information The inland section of the Newry Canal was constructed between 1730 and 1742 to facilitate the carriage of coal from Coalisland to Dublin."
   },
   "Canal / aqueduct|Bridgewater Canal": {
    "source": "https://en.wikipedia.org/wiki/Bridgewater_Canal",
@@ -1863,8 +1863,8 @@
   }
  },
  "summary": {
-  "confirmed": 295,
-  "evidenced": 76,
+  "confirmed": 297,
+  "evidenced": 74,
   "unreachable": 1
  }
 }

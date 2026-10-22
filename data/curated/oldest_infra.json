@@ -1,0 +1,2269 @@
+{
+ "about": "Oldest infrastructure of the isles (research track, 2026-10-22): roads and trackways, water supply and drainage, railways and waggonways, canals, harbours and docks, power, gas and communications; each with the age claim, how secure it is, and sources with exact quotes (checked by python -m bidb.evidence --check).",
+ "entries": [
+  {
+   "category": "Oldest road or trackway",
+   "name": "Post Track",
+   "qid": "Q7233725",
+   "wikipedia_title": "Post Track",
+   "lat": 51.163,
+   "lon": -2.828,
+   "nation": "England",
+   "location": "Somerset Levels (Brue valley), near Westhay, Somerset",
+   "age_text": "c. 3838 BC",
+   "year": -3838,
+   "claim": "the oldest known timber trackway in the Somerset Levels; about 30 years older than the Sweet Track, which follows its line",
+   "evidence": "Dated by dendrochronology of its timbers alongside the Sweet Track, so the date is secure to within a few years; a trackway found near Belmarsh, Plumstead in 2009 has been radiocarbon dated to nearly 6,000 years old, so the Post Track may not be the oldest in the British Isles.",
+   "sources": [
+    {
+     "title": "Post Track (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Post_Track",
+     "locator": "lead",
+     "quote": "It is dated back to around 3838 BCE, making it some 30 years older than the Sweet Track"
+    },
+    {
+     "title": "Sweet Track (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sweet_Track",
+     "locator": "History",
+     "quote": "the Post Track, which was constructed thirty years earlier in 3838 BC"
+    },
+    {
+     "title": "Plumstead (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plumstead",
+     "locator": "History",
+     "quote": "an ancient timber trackway, radiocarbon dated to be nearly 6,000 years old, was discovered by archaeologists"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Sweet Track",
+   "qid": "Q2736549",
+   "wikipedia_title": "Sweet Track",
+   "lat": 51.1642,
+   "lon": -2.82639,
+   "nation": "England",
+   "location": "Shapwick Heath to Westhay, Somerset Levels",
+   "age_text": "built 3807 BC (tree-ring date)",
+   "year": -3807,
+   "claim": "long called the oldest road in the world; in fact the second-oldest timber trackway known in the British Isles",
+   "evidence": "Felling of its timbers is dated by dendrochronology to 3807 BC, one of the most precise prehistoric dates in Britain; the 'oldest road' claim is superseded by the Post Track beneath it (3838 BC) and the Plumstead trackway.",
+   "sources": [
+    {
+     "title": "Sweet Track (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sweet_Track",
+     "locator": "History",
+     "quote": "Dendrochronology (tree-ring dating) of the timbers has enabled precise dating of the track, showing it was built in 3807 BC"
+    },
+    {
+     "title": "Sweet Track (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sweet_Track",
+     "locator": "lead",
+     "quote": "is the second-oldest timber trackway discovered in the British Isles"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Corlea Trackway",
+   "qid": "Q340086",
+   "wikipedia_title": "Corlea Trackway",
+   "lat": 53.62675,
+   "lon": -7.85344,
+   "nation": "Ireland",
+   "location": "Corlea bog, Kenagh, County Longford",
+   "age_text": "148–147 BC (tree-ring date)",
+   "year": -148,
+   "claim": "the largest Iron Age road of its kind known in Europe, a plank road of oak built in 148–147 BC",
+   "evidence": "The oak timbers were dendro-dated to felling in late 148 or early 147 BC, so the date is secure; older timber trackways exist in Ireland (some at Corlea itself are Bronze Age), so it is notable for size, not for being the oldest.",
+   "sources": [
+    {
+     "title": "Corlea Trackway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corlea_Trackway",
+     "locator": "lead",
+     "quote": "It was constructed from oak planks in 148–147 BC"
+    },
+    {
+     "title": "Corlea Trackway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corlea_Trackway",
+     "locator": "Construction",
+     "quote": "the timber used in construction was felled in late 148 BC or early in 147 BC"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "The Ridgeway",
+   "qid": "Q590196",
+   "wikipedia_title": "Ridgeway National Trail",
+   "lat": 51.56333,
+   "lon": -1.35,
+   "nation": "England",
+   "location": "Overton Hill, Wiltshire to Ivinghoe Beacon, Buckinghamshire",
+   "age_text": "in use for at least 5,000 years (traditional estimate)",
+   "year": -3000,
+   "claim": "described as Britain's oldest road",
+   "evidence": "The claim rests on the prehistoric monuments along the route (Avebury, Uffington, Wayland's Smithy), not on dating of the track itself, which cannot be dated; treat 'oldest road' as tradition.",
+   "sources": [
+    {
+     "title": "Ridgeway National Trail (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ridgeway_National_Trail",
+     "locator": "lead",
+     "quote": "The Ridgeway is a ridgeway or ancient trackway described as Britain's oldest road"
+    },
+    {
+     "title": "Ridgeway National Trail (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ridgeway_National_Trail",
+     "locator": "History",
+     "quote": "For at least 5,000 years travellers have used the Ridgeway"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Watling Street",
+   "qid": "Q1434239",
+   "wikipedia_title": "Watling Street",
+   "lat": 51.27583,
+   "lon": 1.08083,
+   "nation": "England",
+   "location": "Canterbury (Durovernum) to London and Wroxeter",
+   "age_text": "Roman paved road, built AD 47–48 near London",
+   "year": 47,
+   "claim": "one of the first and principal Roman roads in Britain, paved soon after the invasion of AD 43",
+   "evidence": "Excavation in London dates the Roman construction to the winter of AD 47–48; the line was used earlier by the Britons. Its Bedfordshire–Buckinghamshire stretch also had England's first turnpike trust (1706).",
+   "sources": [
+    {
+     "title": "Watling Street (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watling_Street",
+     "locator": "Roman",
+     "quote": "Modern excavations date its construction to the winter from AD 47 to 48"
+    },
+    {
+     "title": "Watling Street (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watling_Street",
+     "locator": "Roman",
+     "quote": "The Romans began constructing paved roads shortly after their invasion in AD 43"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Fosse Way",
+   "qid": "Q1233334",
+   "wikipedia_title": "Fosse Way",
+   "lat": 52.5072,
+   "lon": -1.2933,
+   "nation": "England",
+   "location": "Exeter to Lincoln (High Cross, Leicestershire, where it crosses Watling Street)",
+   "age_text": "1st–2nd century AD; early frontier road after AD 43",
+   "year": 50,
+   "claim": "the early western frontier road of Roman Britain",
+   "evidence": "Dated by its role as the frontier for the first decades after the invasion of AD 43; built over the first and second centuries.",
+   "sources": [
+    {
+     "title": "Fosse Way (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fosse_Way",
+     "locator": "lead",
+     "quote": "The Fosse Way was a Roman road built in Britain during the first and second centuries AD"
+    },
+    {
+     "title": "Fosse Way (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fosse_Way",
+     "locator": "Toponymy",
+     "quote": "For the first few decades after the Roman invasion of Britain in 43 AD, the Fosse Way marked the western frontier of Roman rule"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Ermine Street",
+   "qid": "Q1355961",
+   "wikipedia_title": "Ermine Street",
+   "lat": 53.15151,
+   "lon": -0.53454,
+   "nation": "England",
+   "location": "London to Lincoln and York",
+   "age_text": "Roman road, 1st century AD",
+   "year": 50,
+   "claim": "the main Roman road north from London to Lincoln and York",
+   "evidence": "Roman in origin (1st century AD, after the conquest); long stretches still carry the A1, A10 and B6403, showing two millennia of use.",
+   "sources": [
+    {
+     "title": "Ermine Street (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ermine_Street",
+     "locator": "lead",
+     "quote": "Ermine Street is a major Roman road in England that ran from London (Londinium) to Lincoln (Lindum Colonia) and York (Eboracum)"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Dere Street",
+   "qid": "Q933249",
+   "wikipedia_title": "Dere Street",
+   "lat": 55.0566,
+   "lon": -2.06543,
+   "nation": "England",
+   "location": "York to Corbridge and over Hadrian's Wall at Portgate into Scotland",
+   "age_text": "Roman road, late 1st century AD",
+   "year": 80,
+   "claim": "the Roman road north from York across Hadrian's Wall into Scotland",
+   "evidence": "Roman, tied to the northern campaigns of the late 1st century AD; forts along it and its crossing of Hadrian's Wall (built from AD 122) at the Portgate fix its Roman date.",
+   "sources": [
+    {
+     "title": "Dere Street (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dere_Street",
+     "locator": "Route",
+     "quote": "It crossed Hadrian's Wall through a large fortified gateway later called the \"Portgate\""
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Wade's Causeway",
+   "qid": "Q7959012",
+   "wikipedia_title": "Wade's Causeway",
+   "lat": 54.3706,
+   "lon": -0.75913,
+   "nation": "England",
+   "location": "Wheeldale Moor, North York Moors",
+   "age_text": "Roman or possibly Neolithic; date unsettled",
+   "year": 80,
+   "claim": "long shown as the best-preserved Roman road in Britain; its date is now disputed",
+   "evidence": "Excavated in the mid-20th century and dated to the Roman period, but recent work suggests it may be a Neolithic or later structure; the age is not reliably established.",
+   "sources": [
+    {
+     "title": "Wade's Causeway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wade's_Causeway",
+     "locator": "lead",
+     "quote": "It was excavated in mid-20th century and dated to the Roman period, but 21st century re-interpretations have suggested a possible Neolithic origin"
+    },
+    {
+     "title": "Wade's Causeway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wade's_Causeway",
+     "locator": "lead",
+     "quote": "Its origins, age, purpose and extent are subject to research and debate and have not been reliably established"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Wadesmill turnpike (Great North Road)",
+   "qid": "Q7959171",
+   "wikipedia_title": "Wadesmill",
+   "lat": 51.839,
+   "lon": -0.03,
+   "nation": "England",
+   "location": "Wadesmill, Hertfordshire, on the Old North Road (A10)",
+   "age_text": "toll gate authorised 1663",
+   "year": 1663,
+   "claim": "the first turnpike in England",
+   "evidence": "The Road Repair Act 1663 let the justices of Hertfordshire, Cambridgeshire and Huntingdonshire put toll gates on the road at Wadesmill; it was a justice-run turnpike, and the first turnpike trust with independent trustees came only in 1706 (Fornhill–Stony Stratford on Watling Street).",
+   "sources": [
+    {
+     "title": "Wadesmill (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wadesmill",
+     "locator": "History",
+     "quote": "The first effective turnpike in England was created at Wadesmill by Act of Parliament (\"The Turnpike Act\") in 1663"
+    },
+    {
+     "title": "Turnpike trusts (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "The first turnpike trusts",
+     "quote": "The first scheme that had trustees who were not justices was established through the Bedfordshire and Buckinghamshire Roads Act 1706"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "General Wade's military roads",
+   "qid": "Q16934421",
+   "wikipedia_title": "Military roads of Scotland",
+   "lat": 57.145,
+   "lon": -4.68,
+   "nation": "Scotland",
+   "location": "Scottish Highlands (first road Fort William–Fort Augustus–Inverness)",
+   "age_text": "begun 1725–26",
+   "year": 1725,
+   "claim": "the first planned road network in the Scottish Highlands",
+   "evidence": "Wade was appointed in 1725 and the first of his four roads was under construction the following year; documented in his reports.",
+   "sources": [
+    {
+     "title": "Military roads of Scotland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Military_roads_of_Scotland",
+     "locator": "History",
+     "quote": "George I appointed Wade as Commander-in-chief, North Britain in 1725. The first of four roads whose building Wade would oversee, was under construction by the following year"
+    },
+    {
+     "title": "Military roads of Scotland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Military_roads_of_Scotland",
+     "locator": "Dunkeld to Inverness",
+     "quote": "A report from Wade in July 1728 refers to some 300 men working on the route"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "Telford's Holyhead Road (A5)",
+   "qid": "Q3295978",
+   "wikipedia_title": "A5 road (Great Britain)",
+   "lat": 52.6845,
+   "lon": -2.0743,
+   "nation": "England / Wales",
+   "location": "London to Holyhead via Shrewsbury, Betws-y-Coed and the Menai Bridge",
+   "age_text": "Act of 1815; completed 1826",
+   "year": 1815,
+   "claim": "the first major state-funded road building project in Britain since Roman times",
+   "evidence": "Authorised by the Holyhead Roads Act 1815 and completed with the Menai Suspension Bridge in 1826; much of Telford's engineering survives along the A5.",
+   "sources": [
+    {
+     "title": "A5 road (Great Britain) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/A5_road_(Great_Britain)",
+     "locator": "Telford's Holyhead Road",
+     "quote": "the Holyhead Roads Act 1815"
+    },
+    {
+     "title": "A5 road (Great Britain) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/A5_road_(Great_Britain)",
+     "locator": "Telford's Holyhead Road",
+     "quote": "Telford's road was complete with the opening of the Menai Suspension Bridge in 1826"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest road or trackway",
+   "name": "The Shambles, York",
+   "qid": "Q7763628",
+   "wikipedia_title": "The Shambles",
+   "lat": 53.9594,
+   "lon": -1.08011,
+   "nation": "England",
+   "location": "The Shambles, York",
+   "age_text": "butchers' stalls recorded 1086 (Domesday); houses mostly 14th–15th century",
+   "year": 1086,
+   "claim": "often called one of the oldest (and best-preserved medieval) streets in Europe",
+   "evidence": "The street is not named in Domesday Book but is identified with two butchers' stalls by St Crux recorded there in 1086; 'oldest street' is a popular claim many towns make and cannot be tested.",
+   "sources": [
+    {
+     "title": "The Shambles (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Shambles",
+     "locator": "History",
+     "quote": "Although not named in the Domesday Book of 1086, it has been identified through an entry which lists two butchers' stalls near the church of St Crux"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Dorchester Roman aqueduct",
+   "qid": null,
+   "wikipedia_title": "Durnovaria",
+   "lat": 50.7189,
+   "lon": -2.4553,
+   "nation": "England",
+   "location": "Poundbury and Whitfield Farm, west of Dorchester, Dorset",
+   "age_text": "Roman, probably late 1st or 2nd century AD",
+   "year": 100,
+   "claim": "the best-known Roman aqueduct in Britain, an open channel cut in the chalk to supply Durnovaria",
+   "evidence": "Known from surviving earthworks and a channel rediscovered in 1900; its exact construction date is not fixed (estimates range from the late 1st to the 2nd century), so the year is approximate.",
+   "sources": [
+    {
+     "title": "Dorchester, Dorset (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dorchester,_Dorset",
+     "locator": "Roman",
+     "quote": "The Romans built an aqueduct to supply the town with water. It was rediscovered in 1900"
+    },
+    {
+     "title": "Durnovaria (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Durnovaria",
+     "locator": "Remains",
+     "quote": "traces remain at nearby Whitfield Farm and approaching Poundbury tunnel"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Canterbury Cathedral priory waterworks",
+   "qid": null,
+   "wikipedia_title": "Canterbury Cathedral",
+   "lat": 51.27981,
+   "lon": 1.083,
+   "nation": "England",
+   "location": "Christ Church Priory, Canterbury, Kent",
+   "age_text": "c. 1160 (drawn in the 'waterworks plan' of c. 1165)",
+   "year": 1160,
+   "claim": "the earliest piped water system in Britain recorded in a plan, laid out under Prior Wibert",
+   "evidence": "The system is documented by the 'waterworks plan' in the Eadwine Psalter (c. 1165), the oldest known plan of a water supply in England; parts of the conduit house and lavers survive in the precinct.",
+   "sources": [
+    {
+     "title": "Canterbury Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+     "locator": "Monastic buildings",
+     "quote": "made in about 1165 and known as the \"waterworks plan\" is preserved in the Eadwine Psalter in the library of Trinity College, Cambridge"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Great Conduit, Cheapside",
+   "qid": "Q5598992",
+   "wikipedia_title": "Great Conduit",
+   "lat": 51.5137,
+   "lon": -0.0916,
+   "nation": "England",
+   "location": "Cheapside, City of London (fed from the Tyburn springs)",
+   "age_text": "begun 1245",
+   "year": 1245,
+   "claim": "London's first public piped water supply",
+   "evidence": "Begun in 1245 to bring spring water by lead pipe from the Tyburn to a cistern in Cheapside; the conduit house is gone (removed after the Great Fire), so this is a lost work.",
+   "sources": [
+    {
+     "title": "Great Conduit (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Great_Conduit",
+     "locator": "History",
+     "quote": "Work on the conduit began in 1245"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Exeter underground passages",
+   "qid": "Q17647538",
+   "wikipedia_title": "Exeter underground passages",
+   "lat": 50.7252,
+   "lon": -3.52771,
+   "nation": "England",
+   "location": "Exeter, Devon (High Street / Princesshay)",
+   "age_text": "14th century (medieval)",
+   "year": 1346,
+   "claim": "medieval vaulted passages built to carry Exeter's water pipes; a rare survival of a medieval town water supply",
+   "evidence": "Built in the 14th and 15th centuries to carry lead water pipes from springs outside the city; the exact start date (often given as 1340s) rests on city and cathedral records. Scheduled monument.",
+   "sources": [
+    {
+     "title": "Exeter underground passages (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_underground_passages",
+     "locator": "lead",
+     "quote": "The Exeter underground passages were part of the English city of Exeter's medieval water supply system, and are a scheduled monument"
+    },
+    {
+     "title": "Exeter (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter",
+     "locator": "Medieval",
+     "quote": "brought drinking water into the city from springs in the neighbouring parish of St Sidwell's, partially via a network of tunnels, or underground passages"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "New River",
+   "qid": "Q4579962",
+   "wikipedia_title": "New River (London)",
+   "lat": 51.7451,
+   "lon": -0.0138,
+   "nation": "England",
+   "location": "Chadwell and Amwell springs near Ware, Hertfordshire, to New River Head, Islington",
+   "age_text": "opened 29 September 1613",
+   "year": 1613,
+   "claim": "the artificial waterway built to bring fresh water to London; still part of London's supply",
+   "evidence": "Its opening on 29 September 1613 is documented; it was built 1609–13 by Hugh Myddelton after a proposal by Edmund Colthurst, and still carries water today.",
+   "sources": [
+    {
+     "title": "New River (London) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/New_River_(London)",
+     "locator": "lead",
+     "quote": "opened in 1613 to supply London with fresh drinking water taken from Chadwell and Amwell Springs near Ware in Hertfordshire"
+    },
+    {
+     "title": "New River (London) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/New_River_(London)",
+     "locator": "Construction",
+     "quote": "it fell to Myddelton to complete the work between 1609 and its official opening on 29 September 1613"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Old Bedford River",
+   "qid": "Q7083451",
+   "wikipedia_title": "Old Bedford River",
+   "lat": 52.3528,
+   "lon": 0.04426,
+   "nation": "England",
+   "location": "Earith to Salters Lode, Cambridgeshire and Norfolk Fens",
+   "age_text": "cut 1630–37",
+   "year": 1630,
+   "claim": "the first great cut of the drainage of the Great Level of the Fens",
+   "evidence": "Commissioned in 1630 from Cornelius Vermuyden by the 4th Earl of Bedford and declared complete in 1637; the New Bedford River was added in the 1650s. Documented by the Commissioners of Sewers' records.",
+   "sources": [
+    {
+     "title": "Old Bedford River (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Bedford_River",
+     "locator": "History",
+     "quote": "At a meeting of the Commissioners of Sewers held at King's Lynn on 1 September 1630, they asked the Dutch drainage engineer Cornelius Vermuyden to implement a drainage scheme"
+    },
+    {
+     "title": "Old Bedford River (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Bedford_River",
+     "locator": "History",
+     "quote": "The project was deemed to have succeeded in draining the fens in 1637, but that decision was reversed in 1638"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Stretham Old Engine",
+   "qid": "Q7623510",
+   "wikipedia_title": "Stretham Old Engine",
+   "lat": 52.3342,
+   "lon": 0.22449,
+   "nation": "England",
+   "location": "Stretham, Cambridgeshire (Old West River)",
+   "age_text": "1831",
+   "year": 1831,
+   "claim": "one of only three surviving steam drainage engines of the Fens; its 1831 beam engine and scoop wheel remain in place",
+   "evidence": "The list entry dates the Butterley beam engine to 1831 (modified 1909), with the scoop wheel in situ; it replaced four windmills.",
+   "sources": [
+    {
+     "title": "Stretham Old Engine, Stretham",
+     "author": "Historic England list entry (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101127031",
+     "locator": "Description",
+     "quote": "The low pressure beam engine is by Butterley and Co, installed 1831 modified 1909"
+    },
+    {
+     "title": "Stretham Old Engine (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stretham_Old_Engine",
+     "locator": "lead",
+     "quote": "It is one of only three surviving drainage engines in East Anglia"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Metropolitan Free Drinking Fountain, St Sepulchre",
+   "qid": null,
+   "wikipedia_title": "St Sepulchre-without-Newgate",
+   "lat": 51.51669,
+   "lon": -0.10235,
+   "nation": "England",
+   "location": "Railings of St Sepulchre-without-Newgate, Holborn Viaduct, City of London",
+   "age_text": "opened 21 April 1859",
+   "year": 1859,
+   "claim": "London's first public drinking fountain of the Metropolitan Free Drinking Fountain Association",
+   "evidence": "Opened on 21 April 1859, paid for by Samuel Gurney; moved in 1867 for Holborn Viaduct and restored in 1913, it is back on the churchyard railings. It was the first of the Association's fountains, not the first free fountain anywhere (Liverpool had earlier ones).",
+   "sources": [
+    {
+     "title": "Metropolitan Drinking Fountain and Cattle Trough Association (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Metropolitan_Drinking_Fountain_and_Cattle_Trough_Association",
+     "locator": "Early history",
+     "quote": "The first fountain was built on Holborn Hill on the railings of the church of St Sepulchre-without-Newgate on Snow Hill, paid for by Samuel Gurney, and opened on 21 April 1859"
+    },
+    {
+     "title": "St Sepulchre-without-Newgate (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Sepulchre-without-Newgate",
+     "locator": "Notable burials",
+     "quote": "erected the first drinking fountain for the Metropolitan Drinking Fountain & Cattle Trough Association on the railings of St Sepulchre Church, restored in 1913, where it remains"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Bazalgette's London sewers",
+   "qid": "Q1573031",
+   "wikipedia_title": "London sewer system",
+   "lat": 51.5076,
+   "lon": -0.1223,
+   "nation": "England",
+   "location": "London (intercepting sewers; Victoria Embankment)",
+   "age_text": "intercepting sewers 1859–65; Embankment opened 1870",
+   "year": 1859,
+   "claim": "the first modern main-drainage system of a great city, built after the Great Stink of 1858",
+   "evidence": "The intercepting sewers were built 1859–65 under Joseph Bazalgette for the Metropolitan Board of Works and are still in use; dates come from the Board's records.",
+   "sources": [
+    {
+     "title": "London sewer system (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_sewer_system",
+     "locator": "History",
+     "quote": "The intercepting sewers, constructed between 1859 and 1865, were fed by 450 miles (720 km) of main sewers"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Crossness Pumping Station",
+   "qid": "Q5188737",
+   "wikipedia_title": "Crossness Pumping Station",
+   "lat": 51.5091,
+   "lon": 0.13833,
+   "nation": "England",
+   "location": "Crossness, Belvedere, London Borough of Bexley",
+   "age_text": "opened 4 April 1865",
+   "year": 1865,
+   "claim": "the Southern Outfall pumping station of Bazalgette's sewers; its four engines are thought to be the largest remaining rotative beam engines in the world",
+   "evidence": "The opening by the Prince of Wales on 4 April 1865 is recorded in the list entry and contemporary press; the 'largest' claim is the trust's and is plausible.",
+   "sources": [
+    {
+     "title": "Crossness Pumping Station, Bexley",
+     "author": "Historic England list entry (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101064241",
+     "locator": "Description",
+     "quote": "Opened 4 April 1865"
+    },
+    {
+     "title": "Crossness Pumping Station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crossness_Pumping_Station",
+     "locator": "Restoration",
+     "quote": "The four pumping engines are thought to be the largest remaining rotative beam engines in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Abbey Mills Pumping Station",
+   "qid": "Q4664040",
+   "wikipedia_title": "Abbey Mills Pumping Station",
+   "lat": 51.5307,
+   "lon": -0.00084,
+   "nation": "England",
+   "location": "Abbey Mills, West Ham, London Borough of Newham",
+   "age_text": "1865–68",
+   "year": 1868,
+   "claim": "the 'cathedral of sewage', pumping station of Bazalgette's Northern Outfall Sewer",
+   "evidence": "Built 1865–68 to Charles Driver and Bazalgette's design with eight beam engines (since removed); Grade II* listed.",
+   "sources": [
+    {
+     "title": "Abbey Mills Pumping Station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Abbey_Mills_Pumping_Station",
+     "locator": "History",
+     "quote": "was built between 1865 and 1868, housing eight beam engines by Rothwell & Co. of Bolton"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest water supply or drainage",
+   "name": "Longdendale Chain",
+   "qid": "Q6673679",
+   "wikipedia_title": "Longdendale Chain",
+   "lat": 53.48333,
+   "lon": -1.9,
+   "nation": "England",
+   "location": "Longdendale valley (River Etherow), Derbyshire",
+   "age_text": "1848–1884",
+   "year": 1848,
+   "claim": "one of the earliest large chains of reservoirs built to supply a British city (Manchester)",
+   "evidence": "Built 1848–84 by John Frederick Bateman; Woodhead, the first begun (1848), was the last finished (1877). Older small reservoirs exist (canal feeders), so this is notable as an early large municipal scheme.",
+   "sources": [
+    {
+     "title": "Longdendale Chain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longdendale_Chain",
+     "locator": "lead",
+     "quote": "They were constructed between 1848 and 1884 to a design by John Frederick Bateman to supply the growing population of Manchester and Salford with fresh water"
+    },
+    {
+     "title": "Woodhead Reservoir (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Woodhead_Reservoir",
+     "locator": "lead",
+     "quote": "It is at the top of the chain of reservoirs and was the first to be started"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Wollaton Wagonway",
+   "qid": "Q8030330",
+   "wikipedia_title": "Wollaton Wagonway",
+   "lat": 52.958,
+   "lon": -1.236,
+   "nation": "England",
+   "location": "Strelley to Wollaton Lane, Nottinghamshire",
+   "age_text": "built October 1603 – 1604",
+   "year": 1604,
+   "claim": "the first railway (wooden waggonway) in Britain",
+   "evidence": "Documented by Sir Percival Willoughby's agreement with Huntingdon Beaumont of 1 October 1604; nothing survives above ground. Its primacy was doubted for some time but is now generally accepted.",
+   "sources": [
+    {
+     "title": "Wollaton Wagonway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wollaton_Wagonway",
+     "locator": "lead",
+     "quote": "built between October 1603 and 1604 in the East Midlands of England by Huntingdon Beaumont in partnership with Sir Percival Willoughby, was the first railway in Britain"
+    },
+    {
+     "title": "Wollaton Wagonway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wollaton_Wagonway",
+     "locator": "History",
+     "quote": "from Sir Percival Willoughby's agreement with Huntingdon Beaumont dated 1 October 1604"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Tanfield Railway",
+   "qid": "Q7682581",
+   "wikipedia_title": "Tanfield Railway",
+   "lat": 54.908,
+   "lon": -1.675,
+   "nation": "England",
+   "location": "Sunniside to East Tanfield, County Durham",
+   "age_text": "route in use from 1725 (parts since 1647)",
+   "year": 1725,
+   "claim": "claims to be 'the world's oldest railway' still running",
+   "evidence": "The Sunniside–Causey section follows the 1725 Tanfield waggonway, in continuous use until 1964 and reopened as a heritage line; the claim depends on counting route, not track or continuous operation (the Middleton Railway claims continuous working).",
+   "sources": [
+    {
+     "title": "Tanfield Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tanfield_Railway",
+     "locator": "lead",
+     "quote": "The railway claims it is \"the world's oldest railway\" because it runs on a section dating from 1725, other parts being in use since 1647"
+    },
+    {
+     "title": "Tanfield Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tanfield_Railway",
+     "locator": "History",
+     "quote": "The Tanfield route was in continuous use from 1725 until final closure in 1964"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Causey Arch",
+   "qid": "Q2860025",
+   "wikipedia_title": "Causey Arch",
+   "lat": 54.89739,
+   "lon": -1.68781,
+   "nation": "England",
+   "location": "Causey Burn, near Stanley, County Durham",
+   "age_text": "1727 (dated stone); often given as 1725–26",
+   "year": 1727,
+   "claim": "the oldest surviving railway bridge in the world",
+   "evidence": "The Grade I list entry dates the bridge to 1727 from a dated stone at the foot of the west abutment, a year later than the 1725–26 usually quoted; the 'first railway bridge' claim is the list's own (it is the oldest surviving single-arch one).",
+   "sources": [
+    {
+     "title": "Causey Arch, Stanley (Grade I)",
+     "author": "Historic England list entry (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101240816",
+     "locator": "Description",
+     "quote": "Wagonway bridge. 1727 by Ralph Wood for Mr. Wortley and Col. Liddell; dated on stone at foot of west abutment"
+    },
+    {
+     "title": "Causey Arch, Stanley (Grade I)",
+     "author": "Historic England list entry (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101240816",
+     "locator": "Description",
+     "quote": "Considered to be the first railway bridge in the world"
+    },
+    {
+     "title": "Causey Arch (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Causey_Arch",
+     "locator": "History",
+     "quote": "it was built in 1725–26 by stonemason Ralph Wood"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Middleton Railway",
+   "qid": "Q1931930",
+   "wikipedia_title": "Middleton Railway",
+   "lat": 53.7751,
+   "lon": -1.5386,
+   "nation": "England",
+   "location": "Middleton to Hunslet, Leeds, West Yorkshire",
+   "age_text": "Act of 1758 (dated 1757 regnal year); steam from 1812",
+   "year": 1758,
+   "claim": "the world's oldest continuously working railway; the first railway authorised by Act of Parliament and the first commercial railway to use steam locomotives successfully (1812)",
+   "evidence": "The Act of Parliament (Middleton Railway Act, 31 Geo. 2) fixes the start; Blenkinsop's rack locomotives of 1812 are well documented.",
+   "sources": [
+    {
+     "title": "Middleton Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Middleton_Railway",
+     "locator": "lead",
+     "quote": "The Middleton Railway is the world's oldest continuously working railway"
+    },
+    {
+     "title": "Middleton Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Middleton_Railway",
+     "locator": "History",
+     "quote": "the first authorising the building of a railway"
+    },
+    {
+     "title": "Middleton Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Middleton_Railway",
+     "locator": "Introduction of steam",
+     "quote": "In 1812, the Middleton Railway became the first commercial railway to use steam locomotives successfully"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Fritchley Tunnel",
+   "qid": "Q19873386",
+   "wikipedia_title": "Fritchley Tunnel",
+   "lat": 53.0732,
+   "lon": -1.46629,
+   "nation": "England",
+   "location": "Fritchley, Derbyshire (Butterley Gangroad)",
+   "age_text": "1793",
+   "year": 1793,
+   "claim": "believed to be the oldest surviving railway tunnel in the world",
+   "evidence": "Built in 1793 by Benjamin Outram for the Butterley Gangroad, a horse-drawn plateway; altered in the 1840s, disused since 1933; scheduled monument after excavation in 2013.",
+   "sources": [
+    {
+     "title": "Fritchley Tunnel (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fritchley_Tunnel",
+     "locator": "lead",
+     "quote": "which is believed to be the oldest surviving example in the world. The tunnel was constructed in 1793 by Benjamin Outram as part of the Butterley Gangroad"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Lake Lock Rail Road",
+   "qid": "Q6476658",
+   "wikipedia_title": "Lake Lock Rail Road",
+   "lat": 53.6935,
+   "lon": -1.4537,
+   "nation": "England",
+   "location": "Lake Lock (Aire and Calder Navigation) to Outwood, near Wakefield, West Yorkshire",
+   "age_text": "company 1796; opened 1798",
+   "year": 1798,
+   "claim": "recognised as the world's first public railway",
+   "evidence": "A toll railway open to all users from 1798, five years before the Surrey Iron Railway that is often given the title; other schemes of the 1790s also claim it.",
+   "sources": [
+    {
+     "title": "Lake Lock Rail Road (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lake_Lock_Rail_Road",
+     "locator": "The company",
+     "quote": "The initial route opened to traffic in 1798, pre-dating the Surrey Iron Railway by five years"
+    },
+    {
+     "title": "Lake Lock Rail Road (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lake_Lock_Rail_Road",
+     "locator": "lead",
+     "quote": "The railway is recognised as the world's first public railway, though other railway schemes around the same time also claim that distinction"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Surrey Iron Railway",
+   "qid": "Q694233",
+   "wikipedia_title": "Surrey Iron Railway",
+   "lat": 51.45849,
+   "lon": -0.19211,
+   "nation": "England",
+   "location": "Wandsworth to Croydon, south London",
+   "age_text": "Act 1801; opened 26 July 1803",
+   "year": 1803,
+   "claim": "often called the world's first public railway — not correct",
+   "evidence": "Opened 26 July 1803 under an Act of 1801; it was neither the first railway authorised by Parliament (Middleton 1758) nor the first public railway (Lake Lock 1798).",
+   "sources": [
+    {
+     "title": "Surrey Iron Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Surrey_Iron_Railway",
+     "locator": "lead",
+     "quote": "The first 8+1⁄4 miles (13.3 km) to Croydon opened on 26 July 1803"
+    },
+    {
+     "title": "Surrey Iron Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Surrey_Iron_Railway",
+     "locator": "lead",
+     "quote": "Nor was it the first public railway or the first railway company: both of those honours go to the Lake Lock Rail Road near Wakefield"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Swansea and Mumbles Railway",
+   "qid": "Q2383838",
+   "wikipedia_title": "Swansea and Mumbles Railway",
+   "lat": 51.6145,
+   "lon": -3.959,
+   "nation": "Wales",
+   "location": "Swansea to Oystermouth / Mumbles",
+   "age_text": "fare-paying passengers from 25 March 1807",
+   "year": 1807,
+   "claim": "the world's first passenger railway",
+   "evidence": "Built under the Oystermouth Railway or Tramroad Act 1804; the passenger agreement effective 25 March 1807 is documented. Closed 1960, so nothing runs today.",
+   "sources": [
+    {
+     "title": "Swansea and Mumbles Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swansea_and_Mumbles_Railway",
+     "locator": "lead",
+     "quote": "it carried the world's first fare-paying railway passengers under an agreement effective from 25 March 1807"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Stockton and Darlington Railway",
+   "qid": "Q375044",
+   "wikipedia_title": "Stockton and Darlington Railway",
+   "lat": 54.6297,
+   "lon": -1.6513,
+   "nation": "England",
+   "location": "Shildon collieries to Darlington and Stockton-on-Tees, County Durham",
+   "age_text": "opened 27 September 1825",
+   "year": 1825,
+   "claim": "the world's first public railway to use steam locomotives",
+   "evidence": "Opened on 27 September 1825 with Locomotion No. 1; well documented (bicentenary 2025). Horses also worked much of its traffic at first.",
+   "sources": [
+    {
+     "title": "Stockton and Darlington Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stockton_and_Darlington_Railway",
+     "locator": "lead",
+     "quote": "The world's first public railway to use steam locomotives, its first line connected collieries near Shildon with Darlington and Stockton in County Durham, and was officially opened on 27 September 1825"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Liverpool and Manchester Railway",
+   "qid": "Q1398696",
+   "wikipedia_title": "Liverpool and Manchester Railway",
+   "lat": 53.4065,
+   "lon": -2.8935,
+   "nation": "England",
+   "location": "Liverpool to Manchester",
+   "age_text": "opened 15 September 1830",
+   "year": 1830,
+   "claim": "the first inter-city railway in the world, worked entirely by steam locomotives",
+   "evidence": "Opened 15 September 1830; Broad Green station on the line is the oldest station still in use.",
+   "sources": [
+    {
+     "title": "Liverpool and Manchester Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Liverpool_and_Manchester_Railway",
+     "locator": "lead",
+     "quote": "was the first inter-city railway in the world. It opened on 15 September 1830"
+    },
+    {
+     "title": "Liverpool and Manchester Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Liverpool_and_Manchester_Railway",
+     "locator": "lead",
+     "quote": "It was also the first railway to rely exclusively on locomotives driven by steam power"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Liverpool Road station, Manchester",
+   "qid": "Q801156",
+   "wikipedia_title": "Manchester Liverpool Road railway station",
+   "lat": 53.4772,
+   "lon": -2.2583,
+   "nation": "England",
+   "location": "Liverpool Road, Castlefield, Manchester (Science and Industry Museum)",
+   "age_text": "opened 15 September 1830",
+   "year": 1830,
+   "claim": "the world's oldest surviving terminal railway station",
+   "evidence": "Opened with the Liverpool and Manchester Railway on 15 September 1830 and now part of the Science and Industry Museum; the oldest station still in use is Broad Green, Liverpool (same date).",
+   "sources": [
+    {
+     "title": "Manchester Liverpool Road railway station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manchester_Liverpool_Road_railway_station",
+     "locator": "lead",
+     "quote": "It is the world's oldest surviving terminal railway station"
+    },
+    {
+     "title": "Manchester Liverpool Road railway station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manchester_Liverpool_Road_railway_station",
+     "locator": "History",
+     "quote": "the oldest railway station in use is Broad Green railway station in Liverpool which opened on 15 September 1830"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Ffestiniog Railway",
+   "qid": "Q1410337",
+   "wikipedia_title": "Ffestiniog Railway",
+   "lat": 52.92405,
+   "lon": -4.12664,
+   "nation": "Wales",
+   "location": "Porthmadog to Blaenau Ffestiniog, Gwynedd",
+   "age_text": "company 1832; line opened 1836",
+   "year": 1832,
+   "claim": "the oldest surviving railway company in the world",
+   "evidence": "Incorporated by the Festiniog Railway Act of 23 May 1832 and opened in 1836; still operated by the same company.",
+   "sources": [
+    {
+     "title": "Ffestiniog Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ffestiniog_Railway",
+     "locator": "lead",
+     "quote": "It is the oldest surviving railway company in the world (although not the oldest working railway"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Scarborough Spa Cliff Railway",
+   "qid": "Q7430325",
+   "wikipedia_title": "Scarborough funiculars",
+   "lat": 54.2742,
+   "lon": -0.3973,
+   "nation": "England",
+   "location": "South Cliff to the Spa, Scarborough, North Yorkshire",
+   "age_text": "opened 6 July 1875",
+   "year": 1875,
+   "claim": "the first funicular railway in the United Kingdom",
+   "evidence": "Opened 6 July 1875, built by Crossley Brothers to William Lucas's design; still running (converted from water balance to electric drive).",
+   "sources": [
+    {
+     "title": "Scarborough funiculars (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scarborough_funiculars",
+     "locator": "lead",
+     "quote": "The town is home to the first funicular railway in the United Kingdom"
+    },
+    {
+     "title": "Scarborough funiculars (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scarborough_funiculars",
+     "locator": "Central Tramway / Spa",
+     "quote": "this water-driven lift was opened on 6 July 1875"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Douglas Bay Horse Tramway",
+   "qid": "Q1252047",
+   "wikipedia_title": "Douglas Bay Horse Tramway",
+   "lat": 54.1555,
+   "lon": -4.474,
+   "nation": "Isle of Man",
+   "location": "Douglas promenade, Isle of Man",
+   "age_text": "1876",
+   "year": 1876,
+   "claim": "the world's last remaining original 19th-century horse-drawn passenger tramway",
+   "evidence": "Opened by Thomas Lightfoot in 1876 and still running seasonally.",
+   "sources": [
+    {
+     "title": "Douglas Bay Horse Tramway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Douglas_Bay_Horse_Tramway",
+     "locator": "History",
+     "quote": "His service was introduced in 1876"
+    },
+    {
+     "title": "Douglas Bay Horse Tramway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Douglas_Bay_Horse_Tramway",
+     "locator": "Closure",
+     "quote": "the world's last remaining 19th century original horse-drawn passenger tramway"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Volk's Electric Railway",
+   "qid": "Q378512",
+   "wikipedia_title": "Volk's Electric Railway",
+   "lat": 50.8182,
+   "lon": -0.1291,
+   "nation": "England",
+   "location": "Brighton seafront, East Sussex",
+   "age_text": "opened 3 August 1883",
+   "year": 1883,
+   "claim": "the oldest operational electric railway in the world (though not the first electric railway built)",
+   "evidence": "Opened by Magnus Volk in August 1883; it was preceded by other electric lines (e.g. Siemens, Berlin 1879–81) that no longer run.",
+   "sources": [
+    {
+     "title": "Volk's Electric Railway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Volk's_Electric_Railway",
+     "locator": "lead",
+     "quote": "is the oldest operational electric railway in the world, though it was not the first electric railway to be built"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest railway, tramway or waggonway",
+   "name": "Blackpool Tramway",
+   "qid": "Q1881383",
+   "wikipedia_title": "Blackpool Tramway",
+   "lat": 53.8175,
+   "lon": -3.0557,
+   "nation": "England",
+   "location": "Blackpool to Fleetwood, Lancashire",
+   "age_text": "opened 29 September 1885",
+   "year": 1885,
+   "claim": "one of the oldest electric tramways in the world; the UK's only first-generation town tramway still running besides Volk's",
+   "evidence": "Its first section opened 29 September 1885 as a conduit line; it is the second-oldest electric tramway in the UK after Volk's.",
+   "sources": [
+    {
+     "title": "Blackpool Tramway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackpool_Tramway",
+     "locator": "History",
+     "quote": "The first section opened on 29 September 1885"
+    },
+    {
+     "title": "Blackpool Tramway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackpool_Tramway",
+     "locator": "lead",
+     "quote": "It is the second-oldest electric tramway in the United Kingdom, the first being Volk's Electric Railway in Brighton"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Car Dyke",
+   "qid": "Q120052",
+   "wikipedia_title": "Car Dyke",
+   "lat": 53.0125,
+   "lon": -0.2678,
+   "nation": "England",
+   "location": "Western edge of the Fens, Cambridgeshire and Lincolnshire",
+   "age_text": "Roman, probably 2nd century AD",
+   "year": 120,
+   "claim": "the longest artificial waterway built by the Romans in Britain; whether it was a canal or a catchwater drain is debated",
+   "evidence": "Accepted as Roman from its course and finds, but there are no contemporary records and excavations have questioned whether it was navigable.",
+   "sources": [
+    {
+     "title": "Car Dyke (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Car_Dyke",
+     "locator": "History",
+     "quote": "is by far the longest artificial waterway constructed by the Romans in Britain"
+    },
+    {
+     "title": "Car Dyke (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Car_Dyke",
+     "locator": "History",
+     "quote": "There are no known contemporary records relating to its construction or use"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Foss Dyke",
+   "qid": "Q1412149",
+   "wikipedia_title": "Foss Dyke",
+   "lat": 53.3,
+   "lon": -0.75,
+   "nation": "England",
+   "location": "Torksey (River Trent) to Brayford Pool, Lincoln",
+   "age_text": "probably Roman (c. AD 120); first recorded 1121",
+   "year": 120,
+   "claim": "may be the oldest canal in England still in use",
+   "evidence": "A Roman date is usual but unproven; the first written record is Symeon of Durham's note that Henry I cut or scoured it in 1121. Still navigable.",
+   "sources": [
+    {
+     "title": "Foss Dyke (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foss_Dyke",
+     "locator": "lead",
+     "quote": "may be the oldest canal in England that is still in use. It is usually thought to have been built around AD 120 by the Romans, but there is no consensus among authors"
+    },
+    {
+     "title": "Foss Dyke (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foss_Dyke",
+     "locator": "History",
+     "quote": "In the same year, king Henry cut a large canal from Torksey to Lincoln"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Exeter Ship Canal",
+   "qid": "Q5420131",
+   "wikipedia_title": "Exeter Ship Canal",
+   "lat": 50.6653,
+   "lon": -3.4678,
+   "nation": "England",
+   "location": "Topsham / Turf to Exeter Quay, Devon",
+   "age_text": "built February 1564 – 1566/67",
+   "year": 1566,
+   "claim": "one of the oldest artificial waterways in the UK, with the first pound locks built in Britain",
+   "evidence": "Begun 1564 and finished 1566 or early 1567 by John Trew; its three vertical-gated locks are the first pound locks recorded in Britain (before the Lea lock at Waltham Abbey of 1577). The original locks do not survive; the canal was enlarged in 1677 and 1820s.",
+   "sources": [
+    {
+     "title": "Exeter Ship Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Ship_Canal",
+     "locator": "History",
+     "quote": "Work began in February 1564, and was completed in Autumn 1566 or early 1567. The canal had three locks with vertical gates – the first pound locks to be built in Britain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Newry Canal",
+   "qid": "Q7019131",
+   "wikipedia_title": "Newry Canal",
+   "lat": 54.176,
+   "lon": -6.338,
+   "nation": "Northern Ireland",
+   "location": "Lough Neagh (Upper Bann) to Newry, Counties Armagh and Down",
+   "age_text": "opened 1742",
+   "year": 1742,
+   "claim": "the first summit-level canal built in Ireland or Great Britain",
+   "evidence": "Opened in 1742 under the Commissioners of Inland Navigation for Ireland, nearly thirty years before the Bridgewater Canal; now abandoned for navigation (towpath remains).",
+   "sources": [
+    {
+     "title": "Newry Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newry_Canal",
+     "locator": "History",
+     "quote": "The Newry Canal was the first summit level canal to be built in Ireland or Great Britain, and pre-dated the more famous Bridgewater Canal by nearly thirty years"
+    },
+    {
+     "title": "Newry Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newry_Canal",
+     "locator": "lead",
+     "quote": "Opened in 1742, it was built to link the Tyrone coalfields to the Irish Sea"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Sankey Canal",
+   "qid": "Q2936030",
+   "wikipedia_title": "Sankey Canal",
+   "lat": 53.3584,
+   "lon": -2.7336,
+   "nation": "England",
+   "location": "St Helens to the River Mersey at Spike Island, Widnes",
+   "age_text": "opened 1757",
+   "year": 1757,
+   "claim": "England's first canal of the Industrial Revolution",
+   "evidence": "Open and carrying coal by 1757, four years before the Bridgewater Canal, which is often wrongly called the first; closed 1963 and partly restored.",
+   "sources": [
+    {
+     "title": "Sankey Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sankey_Canal",
+     "locator": "lead",
+     "quote": "when opened in 1757 was England's first of the Industrial revolution, and the first modern canal"
+    },
+    {
+     "title": "Bridgewater Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal",
+     "locator": "History",
+     "quote": "The Bridgewater Canal is described as the first great achievement of the canal age, although the Sankey Canal opened earlier"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Bridgewater Canal",
+   "qid": "Q913932",
+   "wikipedia_title": "Bridgewater Canal",
+   "lat": 53.37537,
+   "lon": -2.41687,
+   "nation": "England",
+   "location": "Worsley to Manchester (later to Runcorn and Leigh)",
+   "age_text": "opened 1761",
+   "year": 1761,
+   "claim": "often called Britain's first canal — it was the first great achievement of the canal age, but the Sankey Canal and Newry Canal are older",
+   "evidence": "Opened from Worsley to Manchester in 1761, with Brindley's Barton Aqueduct (first boat 17 July 1761; replaced by the Barton Swing Aqueduct in 1894). Still navigable.",
+   "sources": [
+    {
+     "title": "Bridgewater Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal",
+     "locator": "lead",
+     "quote": "It was opened in 1761 from Worsley to Manchester"
+    },
+    {
+     "title": "Bridgewater Canal (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal",
+     "locator": "History",
+     "quote": "work commenced in September 1760 and the first boat crossed on 17 July 1761"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Pontcysyllte Aqueduct",
+   "qid": "Q158822",
+   "wikipedia_title": "Pontcysyllte Aqueduct",
+   "lat": 52.9702,
+   "lon": -3.08782,
+   "nation": "Wales",
+   "location": "Llangollen Canal over the River Dee, Trevor, Wrexham",
+   "age_text": "completed 1805",
+   "year": 1805,
+   "claim": "the longest aqueduct in Great Britain and the highest canal aqueduct in the world",
+   "evidence": "Completed in 1805 to Thomas Telford and William Jessop's design after ten years' work; Grade I and a World Heritage Site. Notable as a landmark rather than for age.",
+   "sources": [
+    {
+     "title": "Pontcysyllte Aqueduct (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pontcysyllte_Aqueduct",
+     "locator": "lead",
+     "quote": "was completed in 1805 having taken ten years to design and build"
+    },
+    {
+     "title": "Pontcysyllte Aqueduct (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pontcysyllte_Aqueduct",
+     "locator": "lead",
+     "quote": "is the longest aqueduct in Great Britain as well as the highest canal aqueduct in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest canal or navigation",
+   "name": "Crofton Pumping Station",
+   "qid": "Q5187496",
+   "wikipedia_title": "Crofton Pumping Station",
+   "lat": 51.3589,
+   "lon": -1.62588,
+   "nation": "England",
+   "location": "Kennet and Avon Canal summit, Crofton, Wiltshire",
+   "age_text": "engine of 1812",
+   "year": 1812,
+   "claim": "its Boulton & Watt engine of 1812 is the oldest working beam engine in the world in its original engine house still able to do its original job",
+   "evidence": "The list entry dates No. 1 engine to 1812 by Boulton and Watt (rebuilt as a Cornish engine in the 1840s); the 'oldest working' claim is qualified by 'in its original house doing its original job' (the 1779 Smethwick Engine is older but in a museum).",
+   "sources": [
+    {
+     "title": "Crofton Pumping Station, Great Bedwyn",
+     "author": "Historic England list entry (via British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101034049",
+     "locator": "Interior",
+     "quote": "Engine house has 2 pumping engines, No 1, of 1812 by Boulton and Watt"
+    },
+    {
+     "title": "Crofton Pumping Station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crofton_Pumping_Station",
+     "locator": "lead",
+     "quote": "making it the oldest working beam engine in the world in its original engine house and capable of doing the job for which it was installed"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Roman lighthouse (Pharos), Dover",
+   "qid": null,
+   "wikipedia_title": "Dubris",
+   "lat": 51.1287,
+   "lon": 1.3235,
+   "nation": "England",
+   "location": "Dover Castle, Kent (beside St Mary in Castro)",
+   "age_text": "Roman, between c. AD 50 and the early 2nd century",
+   "year": 50,
+   "claim": "the oldest standing harbour structure in Britain: one of two Roman lighthouses guiding ships into the harbour of Dubris",
+   "evidence": "The eastern pharos stands to about half its original height inside Dover Castle (Grade I); proposed dates range from AD 50 to the time of the Classis Britannica fort, so the year is approximate.",
+   "sources": [
+    {
+     "title": "Dubris (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dubris",
+     "locator": "Lighthouses",
+     "quote": "Two lighthouses, each called the \"Pharos\", were built at Dover soon after the Roman conquest. Proposals of their date range from 50 (seven years after the invasion of 43)"
+    },
+    {
+     "title": "Dubris (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dubris",
+     "locator": "Lighthouses",
+     "quote": "This Roman Pharos has been a Grade I-listed building since 1974"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Dymchurch Wall",
+   "qid": null,
+   "wikipedia_title": "Dymchurch",
+   "lat": 51.027,
+   "lon": 1.0,
+   "nation": "England",
+   "location": "Dymchurch, Romney Marsh, Kent",
+   "age_text": "said to be Roman in origin; rebuilt many times",
+   "year": 200,
+   "claim": "a sea wall at Dymchurch since Roman times",
+   "evidence": "Local tradition and the Wikipedia article put the first wall in the Roman period, but the present wall is largely 19th–20th century and no Roman fabric is proven; medieval maintenance by the Lords of the Level is documented.",
+   "sources": [
+    {
+     "title": "Dymchurch (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dymchurch",
+     "locator": "Sea defences",
+     "quote": "Dymchurch has had a sea wall since Roman times, with the original development being constructed to protect the harbour at Port Lympne"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Rhee Wall",
+   "qid": "Q18394242",
+   "wikipedia_title": "Rhee Wall",
+   "lat": 51.0031,
+   "lon": 0.86589,
+   "nation": "England",
+   "location": "Appledore to New Romney, Romney Marsh, Kent",
+   "age_text": "13th century; extended to New Romney in 1258",
+   "year": 1258,
+   "claim": "a medieval embanked watercourse built to scour New Romney harbour",
+   "evidence": "Two parallel banks with a channel between, built in the 13th century from Appledore to Old Romney and extended to New Romney in 1258 (documented); it failed to save the harbour after the storms of 1287.",
+   "sources": [
+    {
+     "title": "Rhee Wall (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rhee_Wall",
+     "locator": "lead",
+     "quote": "It was built in the 13th century: a watercourse was constructed from Appledore to Old Romney, which was extended in 1258 to New Romney"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Hook Lighthouse",
+   "qid": "Q5897891",
+   "wikipedia_title": "Hook Lighthouse",
+   "lat": 52.12381,
+   "lon": -6.92931,
+   "nation": "Ireland",
+   "location": "Hook Head, County Wexford",
+   "age_text": "built between 1201 and 1240",
+   "year": 1210,
+   "claim": "the second-oldest operating lighthouse in the world (after the Tower of Hercules)",
+   "evidence": "The lead says 12th century, but the history section narrows construction to between William Marshal's arrival in 1201 and the first map showing it (1240), so the tower is early 13th century; still operated by the Commissioners of Irish Lights.",
+   "sources": [
+    {
+     "title": "Hook Lighthouse (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hook_Lighthouse",
+     "locator": "lead",
+     "quote": "the second oldest operating lighthouse in the world, after the Tower of Hercules in Spain"
+    },
+    {
+     "title": "Hook Lighthouse (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hook_Lighthouse",
+     "locator": "History",
+     "quote": "Pembroke first came to the region in 1201 and the first map that shows the lighthouse serving its function is dated 1240"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "The Cobb, Lyme Regis",
+   "qid": null,
+   "wikipedia_title": "Lyme Regis",
+   "lat": 50.7206,
+   "lon": -2.9375,
+   "nation": "England",
+   "location": "Lyme Regis harbour, Dorset",
+   "age_text": "first recorded 1328",
+   "year": 1328,
+   "claim": "one of the oldest harbour walls in England, first recorded in 1328",
+   "evidence": "A 1328 document records storm damage to it, so it existed by then (often said to be 13th century); the present stone structure is mostly of the 18th–19th centuries (rebuilt 1820s).",
+   "sources": [
+    {
+     "title": "Lyme Regis (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lyme_Regis",
+     "locator": "The Cobb",
+     "quote": "The first record of the Cobb, the town's harbour wall, is in a 1328 document describing it as having been damaged by storms"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Portsmouth dry dock of 1495",
+   "qid": null,
+   "wikipedia_title": "HMNB Portsmouth",
+   "lat": 50.80417,
+   "lon": -1.1025,
+   "nation": "England",
+   "location": "HM Naval Base Portsmouth, Hampshire",
+   "age_text": "1495 (the dock itself no longer survives)",
+   "year": 1495,
+   "claim": "the first recorded dry dock in the world",
+   "evidence": "Built for Henry VII in 1495 and documented in the royal accounts; it was filled with rubble within about a century and does not survive. The base still has some of the oldest surviving dry docks in the world (18th century).",
+   "sources": [
+    {
+     "title": "HMNB Portsmouth (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMNB_Portsmouth",
+     "locator": "Tudors",
+     "quote": "The first recorded dry dock in the world was built in Portsmouth by Henry VII in 1495"
+    },
+    {
+     "title": "HMNB Portsmouth (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMNB_Portsmouth",
+     "locator": "Tudors",
+     "quote": "a hundred years later it is described as being filled with rubble"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Greenland Dock (Howland Great Wet Dock)",
+   "qid": "Q1544727",
+   "wikipedia_title": "Greenland Dock",
+   "lat": 51.49439,
+   "lon": -0.04024,
+   "nation": "England",
+   "location": "Rotherhithe, London Borough of Southwark",
+   "age_text": "1696–99",
+   "year": 1696,
+   "claim": "the oldest of London's riverside wet docks",
+   "evidence": "Authorised by the Howland Great Wet Dock Act 1695 (passed 1696) and laid out 1696–99; it sheltered and refitted ships rather than handling cargo, so the Old Dock in Liverpool (1715) is counted as the first commercial wet dock.",
+   "sources": [
+    {
+     "title": "Greenland Dock (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greenland_Dock",
+     "locator": "lead",
+     "quote": "Greenland Dock is the oldest of London's riverside wet docks"
+    },
+    {
+     "title": "Greenland Dock (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greenland_Dock",
+     "locator": "Howland Great Wet Dock",
+     "quote": "The dock was originally laid out between 1696 and 1699"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Old Dock, Liverpool",
+   "qid": "Q15263768",
+   "wikipedia_title": "Old Dock",
+   "lat": 53.4025,
+   "lon": -2.9886,
+   "nation": "England",
+   "location": "Liverpool ONE (Canning Place), Liverpool",
+   "age_text": "opened 31 August 1715",
+   "year": 1715,
+   "claim": "the world's first commercial wet dock",
+   "evidence": "Engineered by Thomas Steers, opened 31 August 1715 and finished 1716; filled in 1826, its remains were excavated in 2001 and can be visited under Liverpool ONE. Howland Great Wet Dock (1696–99) is older but was not a cargo dock.",
+   "sources": [
+    {
+     "title": "Old Dock (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Dock",
+     "locator": "lead",
+     "quote": "was the world's first commercial wet dock"
+    },
+    {
+     "title": "Old Dock (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Dock",
+     "locator": "History",
+     "quote": "The Old Dock was built at a cost of £12,000 and opened on 31 August 1715"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest harbour, dock or sea defence",
+   "name": "Ryde Pier",
+   "qid": "Q7384881",
+   "wikipedia_title": "Ryde Pier",
+   "lat": 50.73699,
+   "lon": -1.16092,
+   "nation": "England",
+   "location": "Ryde, Isle of Wight",
+   "age_text": "opened 26 July 1814",
+   "year": 1814,
+   "claim": "the world's oldest seaside pleasure pier",
+   "evidence": "Authorised by an Act of 1812 and opened 26 July 1814; it has been lengthened and rebuilt (iron) but keeps a timber-planked promenade.",
+   "sources": [
+    {
+     "title": "Ryde Pier (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ryde_Pier",
+     "locator": "lead",
+     "quote": "It is the world's oldest seaside pleasure pier"
+    },
+    {
+     "title": "Ryde Pier (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ryde_Pier",
+     "locator": "History",
+     "quote": "The pier opened on 26 July 1814"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Fulham gasholder No. 2",
+   "qid": null,
+   "wikipedia_title": "Gas Light and Coke Company",
+   "lat": 51.4735,
+   "lon": -0.1855,
+   "nation": "England",
+   "location": "Imperial Gas Works, Sands End, Fulham, London",
+   "age_text": "completed 1830",
+   "year": 1830,
+   "claim": "reputed to be the oldest gasholder in the world",
+   "evidence": "Part of the Imperial Gas Company's works begun at Sands End in 1824; the 1830 date and 'oldest' claim are reported but not checked here against the list entry, so treat 'world's oldest' as a reputation.",
+   "sources": [
+    {
+     "title": "Gas Light and Coke Company (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gas_Light_and_Coke_Company",
+     "locator": "Fulham",
+     "quote": "Its ornately decorated number 2 gasholder is Georgian, completed in 1830 and reputed to be the oldest gasholder in the World"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Biggar Gasworks",
+   "qid": "Q17572066",
+   "wikipedia_title": null,
+   "lat": 55.6232,
+   "lon": -3.52795,
+   "nation": "Scotland",
+   "location": "Gasworks Road, Biggar, South Lanarkshire",
+   "age_text": "1839 onwards (most plant 1914)",
+   "year": 1839,
+   "claim": "the oldest surviving town gasworks in the British Isles, older than Fakenham",
+   "evidence": "The HES list description dates the works to 1839 onwards, with most surviving plant of 1912–14; Fakenham (1846) is the only complete one in England and Carrickfergus survives in Northern Ireland.",
+   "sources": [
+    {
+     "title": "Biggar Gasworks (LB22172)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB22172",
+     "locator": "Description",
+     "quote": "Erected by joint stock company 1839 onwards"
+    },
+    {
+     "title": "Gasworks (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gasworks",
+     "locator": "Preservation",
+     "quote": "Other examples exist at Biggar in Scotland and Carrickfergus"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Fakenham Gas Works",
+   "qid": "Q113370024",
+   "wikipedia_title": null,
+   "lat": 52.82665,
+   "lon": 0.84765,
+   "nation": "England",
+   "location": "Hempton Road, Fakenham, Norfolk (Museum of Gas and Local History; scheduled monument 1003908)",
+   "age_text": "1846",
+   "year": 1846,
+   "claim": "the only complete non-operational town gasworks remaining in England",
+   "evidence": "Dated 1846; closed 1965 and preserved as a museum and scheduled monument. Not the oldest in the British Isles (Biggar 1839).",
+   "sources": [
+    {
+     "title": "Gasworks (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gasworks",
+     "locator": "Preservation",
+     "quote": "Fakenham gasworks dating from 1846 is the only complete, non-operational gasworks remaining in England"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Union Street pillar box, St Peter Port",
+   "qid": null,
+   "wikipedia_title": "Pillar box",
+   "lat": 49.4553,
+   "lon": -2.5366,
+   "nation": "Guernsey",
+   "location": "Union Street, St Peter Port, Guernsey",
+   "age_text": "1853 (Guernsey's first boxes 8 February 1853)",
+   "year": 1853,
+   "claim": "the oldest pillar box in the British Isles still standing where it was placed; Jersey's four of 23 November 1852 were the first",
+   "evidence": "Anthony Trollope's trial put four Vaudin boxes in St Helier in November 1852 and three in Guernsey in February 1853; only the Union Street box survives in place.",
+   "sources": [
+    {
+     "title": "Pillar box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "History",
+     "quote": "brought into public use on 23 November 1852. Guernsey received its first three pillar boxes on 8 February 1853"
+    },
+    {
+     "title": "Pillar box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "History",
+     "quote": "One Vaudin box still stands in Union Street, Saint Peter Port, Guernsey"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Barnes Cross pillar box",
+   "qid": null,
+   "wikipedia_title": "Holwell, Dorset",
+   "lat": 50.896,
+   "lon": -2.423,
+   "nation": "England",
+   "location": "Barnes Cross, Holwell, Dorset",
+   "age_text": "1853–56 (Butt type)",
+   "year": 1853,
+   "claim": "often called the oldest pillar box still in everyday use in Britain",
+   "evidence": "One of four surviving early Butt boxes made in Gloucester (1853–59), but it is one of the later batch; the oldest still in Royal Mail use are the Handyside pair of 1856 at Framlingham (and the Guernsey box is older still).",
+   "sources": [
+    {
+     "title": "Holwell, Dorset (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holwell,_Dorset",
+     "locator": "Landmarks",
+     "quote": "is a pillar box which is the oldest still in everyday use in Britain"
+    },
+    {
+     "title": "Pillar box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "First mainland boxes",
+     "quote": "All date from 1853 to 1859, with Barnes Cross being one of the later batch"
+    },
+    {
+     "title": "Pillar box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "First mainland boxes",
+     "quote": "The oldest pillar boxes still in use by the Royal Mail are at Framlingham in Suffolk; this pair were founded by Andrew Handyside and Company of Derby in 1856"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Valentia transatlantic telegraph station",
+   "qid": "Q2395922",
+   "wikipedia_title": "Transatlantic telegraph cable",
+   "lat": 51.9271,
+   "lon": -10.3366,
+   "nation": "Ireland",
+   "location": "Telegraph Field, Foilhommerum, Valentia Island, County Kerry",
+   "age_text": "first cable 1858; permanent link 1866",
+   "year": 1858,
+   "claim": "the European end of the first transatlantic telegraph cable",
+   "evidence": "The 1858 cable from Valentia to Newfoundland carried the first messages on 16 August 1858 but soon failed; the 1866 cable from Foilhommerum gave the first lasting link.",
+   "sources": [
+    {
+     "title": "Transatlantic telegraph cable (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable",
+     "locator": "First transatlantic cable",
+     "quote": "the first cable laid from Valentia Island off the west coast of Ireland to Bay of Bulls, Trinity Bay, Newfoundland"
+    },
+    {
+     "title": "Transatlantic telegraph cable (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable",
+     "locator": "1866 cable",
+     "quote": "In July 1866 a third cable was laid from The Anglo-American Cable house on the Telegraph Field, Foilhommerum"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Porthcurno cable station",
+   "qid": "Q7231754",
+   "wikipedia_title": "Porthcurno",
+   "lat": 50.043,
+   "lon": -5.654,
+   "nation": "England",
+   "location": "Porthcurno, Cornwall (PK Porthcurno museum)",
+   "age_text": "first cable landed 1870",
+   "year": 1870,
+   "claim": "the British landing of early international submarine telegraph cables, starting with the 1870 link to India",
+   "evidence": "The first cable came ashore in 1870; the Eastern Telegraph Company built its cable office in 1872. Now a museum of global communications.",
+   "sources": [
+    {
+     "title": "Porthcurno (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Porthcurno",
+     "locator": "The Cable Station",
+     "quote": "the first of which was landed in 1870, part of an early international link stretching from the UK to India"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Chatley Heath Semaphore Tower",
+   "qid": null,
+   "wikipedia_title": "Chatley Heath",
+   "lat": 51.3152,
+   "lon": -0.43827,
+   "nation": "England",
+   "location": "Chatley Heath, Ockham, Surrey",
+   "age_text": "1822 (line worked 1822–47)",
+   "year": 1822,
+   "claim": "the best preserved tower of the Admiralty optical telegraph lines (London–Portsmouth semaphore)",
+   "evidence": "The Admiralty had adopted Murray's shutter telegraph in 1795 (London–Deal chain); none of those stations survive intact, so Chatley Heath (semaphore line 1822–47) stands for the earliest national telegraph network.",
+   "sources": [
+    {
+     "title": "Chatley Heath (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chatley_Heath",
+     "locator": "lead",
+     "quote": "The octagonal tower was built as part of the Admiralty semaphore chain which operated between 1822 and 1847. It is the best preserved remaining tower"
+    },
+    {
+     "title": "Optical telegraph (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Optical_telegraph",
+     "locator": "Britain",
+     "quote": "The British Admiralty accepted Murray's system in September 1795, and the first system was the 15 site chain from London to Deal"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Cragside hydro-electric lighting",
+   "qid": "Q5180627",
+   "wikipedia_title": "Cragside",
+   "lat": 55.31361,
+   "lon": -1.88556,
+   "nation": "England",
+   "location": "Cragside, Rothbury, Northumberland",
+   "age_text": "1878",
+   "year": 1878,
+   "claim": "the first house in the world lit by hydroelectric power",
+   "evidence": "Armstrong's hydro-electric generator lit an arc lamp in the picture gallery in 1878, replaced by Swan's incandescent lamps in 1880; documented by Armstrong and Swan.",
+   "sources": [
+    {
+     "title": "Cragside (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cragside",
+     "locator": "lead",
+     "quote": "making Cragside the first house in the world to be lit using hydroelectric power"
+    },
+    {
+     "title": "Cragside (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cragside",
+     "locator": "Electricity",
+     "quote": "The electricity generated was used to power an arc lamp installed in the picture gallery in 1878"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Godalming public electricity supply",
+   "qid": null,
+   "wikipedia_title": "Godalming",
+   "lat": 51.185,
+   "lon": -0.61,
+   "nation": "England",
+   "location": "Westbrook Mill, Godalming, Surrey",
+   "age_text": "1881",
+   "year": 1881,
+   "claim": "the world's first public electricity supply",
+   "evidence": "In 1881 a generator driven by waterwheels at Westbrook Mill lit the streets and some private premises; it ran only a few years (gas returned in 1884). The claim is widely accepted but phrased as 'a claim' by local sources.",
+   "sources": [
+    {
+     "title": "Godalming (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Godalming",
+     "locator": "Utilities",
+     "quote": "In 1881, the London firm of Calder and Barrett installed a generator driven by two Poncelet waterwheels at Westbrook Mill"
+    },
+    {
+     "title": "Godalming (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Godalming",
+     "locator": "lead",
+     "quote": "The town has a claim to be the first place in the world to have a combined public and private electricity supply"
+    },
+    {
+     "title": "Holborn Viaduct power station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holborn_Viaduct_power_station",
+     "locator": "lead",
+     "quote": "an electricity supply from a water wheel in Godalming, Surrey – the world's first public electricity supply"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Holborn Viaduct power station",
+   "qid": "Q30512313",
+   "wikipedia_title": "Holborn Viaduct power station",
+   "lat": 51.5172,
+   "lon": -0.10507,
+   "nation": "England",
+   "location": "57 Holborn Viaduct, City of London",
+   "age_text": "began running 12 January 1882",
+   "year": 1882,
+   "claim": "the world's first coal-fired power station generating electricity for public use",
+   "evidence": "Edison's Edison Electric Light Station started on 12 January 1882, two months after Godalming's water-powered supply; it closed in 1886 and nothing survives.",
+   "sources": [
+    {
+     "title": "Holborn Viaduct power station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holborn_Viaduct_power_station",
+     "locator": "lead",
+     "quote": "was the world's first coal-fired power station generating electricity for public use"
+    },
+    {
+     "title": "Holborn Viaduct power station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holborn_Viaduct_power_station",
+     "locator": "lead",
+     "quote": "The plant began running on 12 January 1882"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Deptford Power Station",
+   "qid": "Q5260953",
+   "wikipedia_title": "Deptford Power Station",
+   "lat": 51.4824,
+   "lon": -0.0203,
+   "nation": "England",
+   "location": "Deptford, south bank of the Thames, London",
+   "age_text": "1889",
+   "year": 1889,
+   "claim": "the first central high-voltage power station in the world",
+   "evidence": "Sebastian de Ferranti's station opened in 1889, sending 10,000 V current to central London; demolished.",
+   "sources": [
+    {
+     "title": "Deptford Power Station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Deptford_Power_Station",
+     "locator": "lead",
+     "quote": "the first of which is regarded as the first central high-voltage power station in the world"
+    },
+    {
+     "title": "Deptford Power Station (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Deptford_Power_Station",
+     "locator": "History",
+     "quote": "the world's first central power station opened at Deptford in 1889"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "Poldhu Wireless Station",
+   "qid": "Q1129610",
+   "wikipedia_title": "Poldhu",
+   "lat": 50.02972,
+   "lon": -5.26528,
+   "nation": "England",
+   "location": "Poldhu Point, Mullion, Cornwall",
+   "age_text": "first transatlantic radio signal 12 December 1901",
+   "year": 1901,
+   "claim": "transmitter of the first transatlantic radio message",
+   "evidence": "Marconi's station sent the letter 'S' received at Signal Hill, Newfoundland, on 12 December 1901 (some have doubted the reception); the station has gone, a monument marks the site.",
+   "sources": [
+    {
+     "title": "Poldhu (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Poldhu",
+     "locator": "Poldhu Wireless Station",
+     "quote": "Guglielmo Marconi's transmitter for the first transatlantic radio message on 12 December 1901"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest power, gas or communications",
+   "name": "K2 telephone kiosk prototype, Royal Academy",
+   "qid": null,
+   "wikipedia_title": "Red telephone box",
+   "lat": 51.5093,
+   "lon": -0.1395,
+   "nation": "England",
+   "location": "Left entrance arch, Burlington House (Royal Academy), Piccadilly, London",
+   "age_text": "1924",
+   "year": 1924,
+   "claim": "the only surviving wooden prototype of Giles Gilbert Scott's red telephone box, still where it was placed",
+   "evidence": "The first standard kiosk (K1, 1921) was concrete; Scott's 1924 wooden prototype for the K2 competition is the only one known to survive and was listed Grade II* in 2019.",
+   "sources": [
+    {
+     "title": "Red telephone box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_telephone_box",
+     "locator": "lead",
+     "quote": "the prototype K2, located at Burlington House in London since 1924, was listed to Grade II*"
+    },
+    {
+     "title": "Red telephone box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_telephone_box",
+     "locator": "K2",
+     "quote": "is the only one known to survive and is still where it was originally placed, in the left entrance arch to the Royal Academy at Burlington House"
+    },
+    {
+     "title": "Red telephone box (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_telephone_box",
+     "locator": "K1",
+     "quote": "The first standard public telephone kiosk introduced by the United Kingdom Post Office was produced in concrete in 1921"
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

@@ -888,7 +888,7 @@
    "claim": "Neolithic farmstead occupied from about 3800 BC to 2800 BC.",
    "value": "c. 3800 BC",
    "verdict": "corrected",
-   "assessment": "The research file said c. 3700 BC; the source's radiocarbon range starts at 3800 BC.",
+   "assessment": "The research file said c. 3700 BC; the source's radiocarbon range starts at 3800 BC. Superseded (2026-10-22) by the 2025 radiocarbon reassessment: see the claim 'check-knap-of-howar' (stone houses c. 3300–3000 BC).",
    "sources": [
     {
      "title": "Knap of Howar",
@@ -6339,6 +6339,46 @@
      "url": "https://britishlistedbuildings.co.uk/101150164",
      "locator": "list description",
      "quote": "Crypt Anglo-Saxon"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. VIII",
+     "quote": "he granted him the monastery at Ripon together with thirty hides of land"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. VIII, heading",
+     "quote": "How Alhfrith gave him the monastery at Ripon. [660?]"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. XVII",
+     "quote": "For in Ripon he built and completed from the founda- tions in the earth up to the roof, a church of dressed stone"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. XVII",
+     "quote": "dedicated it to the Lord in honour of St Peter the chief of the Apostles"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. XVII, heading",
+     "quote": "Concerning the building of the church at Ripon and its dedication. [671-678]"
     }
    ],
    "researched": "2026-10-22"
@@ -6384,6 +6424,30 @@
      "url": "https://britishlistedbuildings.co.uk/101042576",
      "locator": "list description",
      "quote": "Originally founded by St Wilfrid circa 673 - the crypt dates this period"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. XXII, heading",
+     "quote": "Concerning the building of the house of God at Hexham. [672-678]"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. XXII",
+     "quote": "having obtained an estate from the queen, St Aethilthryth, the dedicated to God, he founded and built a house to the Lord"
+    },
+    {
+     "title": "Eddius Stephanus, The Life of Bishop Wilfrid, ed. and trans. B. Colgrave (Cambridge, 1927; Internet Archive full text)",
+     "author": "Eddius Stephanus (Stephen of Ripon), trans. Bertram Colgrave",
+     "kind": "primary",
+     "url": "https://archive.org/download/bwb_S0-BJR-366/bwb_S0-BJR-366_djvu.txt",
+     "locator": "ch. XXII",
+     "quote": "its crypts of wonderfully dressed stone"
     }
    ],
    "researched": "2026-10-22"
@@ -6957,10 +7021,10 @@
    "record": "Q7314363",
    "name": "Repton Abbey",
    "field": "date",
-   "claim": "The Chronicle (annal 755, for 757) says King Ethelbald of Mercia was buried at Repton. The 7th-century foundation (Guthlac entered the double monastery c. 697) rests on Felix's Life of Guthlac, which I could not find as a script-readable text; Bede's editor only suggests Repton may have been Diuma's see.",
+   "claim": "The Chronicle (annal 755, for 757) says King Ethelbald of Mercia was buried at Repton. The 7th-century foundation (Guthlac entered the double monastery c. 697) rests on Felix's Life of Guthlac, which I could not find as a script-readable text; Bede's editor only suggests Repton may have been Diuma's see. Felix's Life (Old English version) says that at twenty-four Guthlac went to the monastery called Hrypadun (Repton) and received the tonsure of St Peter under Abbess Ælfthryth.",
    "value": "in existence by 757 (Anglo-Saxon Chronicle)",
-   "verdict": "open",
-   "assessment": "Proves a church at Repton by 757 only; the 7th-century date is plausible but not verified from a primary source here.",
+   "verdict": "kept",
+   "assessment": "The Life shows the monastery at Repton existing in the late 7th century, supporting the catalogue's 7th-century date.",
    "sources": [
     {
      "title": "Anglo-Saxon Chronicle, annal 755",
@@ -6985,6 +7049,22 @@
      "url": "https://www.british-history.ac.uk/vch/lincs/vol2/pp105-118",
      "locator": "opening paragraph (Guthlac at Repton before 699)",
      "quote": "in 699 took refuge with two followers at Crowland"
+    },
+    {
+     "title": "The Anglo-Saxon Version of the Life of St. Guthlac (Old English translation of Felix's Vita), ed. and trans. C. W. Goodwin (London, 1848; Internet Archive full text)",
+     "author": "Felix (Old English version), trans. Charles Wycliffe Goodwin",
+     "kind": "primary",
+     "url": "https://archive.org/download/anglosaxonversi00goodgoog/anglosaxonversi00goodgoog_djvu.txt",
+     "locator": "ch. II",
+     "quote": "he went to a monastery, which is called Hrypadun, and there received the mystical tonsure of St. Peter the apostle"
+    },
+    {
+     "title": "The Anglo-Saxon Version of the Life of St. Guthlac (Old English translation of Felix's Vita), ed. and trans. C. W. Goodwin (London, 1848; Internet Archive full text)",
+     "author": "Felix (Old English version), trans. Charles Wycliffe Goodwin",
+     "kind": "secondary",
+     "url": "https://archive.org/download/anglosaxonversi00goodgoog/anglosaxonversi00goodgoog_djvu.txt",
+     "locator": "Notes, p. 16",
+     "quote": "Hrypadun. Repton, in Derbyshire, once famous for its monastery"
     }
    ],
    "researched": "2026-10-22"
@@ -7170,6 +7250,30 @@
      "url": "https://www.british-history.ac.uk/vch/lincs/vol2/pp105-118",
      "locator": "opening paragraphs",
      "quote": "after the death of Guthlac in 714, Ethelbald, king of the Mercians, founded a monastery on the island of Crowland"
+    },
+    {
+     "title": "The Anglo-Saxon Version of the Life of St. Guthlac (Old English translation of Felix's Vita), ed. and trans. C. W. Goodwin (London, 1848; Internet Archive full text)",
+     "author": "Felix (Old English version), trans. Charles Wycliffe Goodwin",
+     "kind": "primary",
+     "url": "https://archive.org/download/anglosaxonversi00goodgoog/anglosaxonversi00goodgoog_djvu.txt",
+     "locator": "ch. III",
+     "quote": "they went both through the wild fens till they came to the spot which is called Crowland"
+    },
+    {
+     "title": "The Anglo-Saxon Version of the Life of St. Guthlac (Old English translation of Felix's Vita), ed. and trans. C. W. Goodwin (London, 1848; Internet Archive full text)",
+     "author": "Felix (Old English version), trans. Charles Wycliffe Goodwin",
+     "kind": "primary",
+     "url": "https://archive.org/download/anglosaxonversi00goodgoog/anglosaxonversi00goodgoog_djvu.txt",
+     "locator": "ch. III",
+     "quote": "He was six and twenty years of age when, endowed with heavenly grace"
+    },
+    {
+     "title": "The Anglo-Saxon Version of the Life of St. Guthlac (Old English translation of Felix's Vita), ed. and trans. C. W. Goodwin (London, 1848; Internet Archive full text)",
+     "author": "Felix (Old English version), trans. Charles Wycliffe Goodwin",
+     "kind": "secondary",
+     "url": "https://archive.org/download/anglosaxonversi00goodgoog/anglosaxonversi00goodgoog_djvu.txt",
+     "locator": "Introduction",
+     "quote": "he cannot have written later than A. D. 749"
     }
    ],
    "researched": "2026-10-22"
@@ -8592,6 +8696,4056 @@
     }
    ],
    "researched": "2026-10-21"
+  },
+  {
+   "id": "check-chestnuts-long-barrow",
+   "record": "Q5094023",
+   "name": "Chestnuts long barrow",
+   "field": "date",
+   "claim": "A chambered long barrow of the Medway group; none of these tombs is precisely dated except Coldrum, whose first burials are modelled to 3980–3800 cal BC, and English Heritage puts the neighbouring Kit's Coty House at nearly 6,000 years ago. The Neolithic itself began in south-east England only in the 41st century cal BC.",
+   "value": "early 4th millennium BC (c. 4000–3800 BC)",
+   "verdict": "corrected",
+   "assessment": "The catalogue's 'fifth millennium BC' (5000 BC) comes from a Wikipedia sentence and is earlier than the Neolithic began in Britain, so it cannot be right.",
+   "sources": [
+    {
+     "title": "Chestnuts Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chestnuts_Long_Barrow",
+     "locator": "article",
+     "quote": "is a chambered long barrow near the village of Addington"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "The first Neolithic things and practices probably appeared in south-east England in the 41st century cal BC"
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "article",
+     "quote": "between either 3980–3800 calibrated BCE (95% probability)"
+    },
+    {
+     "title": "History of Kit's Coty House and Little Kit's Coty House",
+     "author": "Alastair Oswald, English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/kits-coty-house-and-little-kits-coty-house/history/",
+     "locator": "History",
+     "quote": "These two megalithic (huge stone) structures, 450 metres apart, were built nearly 6,000 years ago."
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-hembury",
+   "record": "Q3784763",
+   "name": "Hembury",
+   "field": "date",
+   "claim": "Hembury is an Iron Age hillfort built over a Neolithic causewayed enclosure excavated by Liddell in 1930–35; radiocarbon dates for the Neolithic material are c. 3690 BC, and Gathering Time puts the first southern British causewayed enclosures in the final decades of the 38th century cal BC.",
+   "value": "c. 3700 BC (causewayed enclosure); hillfort Iron Age",
+   "verdict": "corrected",
+   "assessment": "The catalogue date comes from a Wikipedia sentence about Hembury ware pottery, not about the enclosure; the enclosure belongs to c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Hembury",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hembury",
+     "locator": "article",
+     "quote": "Hembury is a Neolithic causewayed enclosure and Iron Age hillfort"
+    },
+    {
+     "title": "Excavations at Hembury (Devon), 1980–83: A Summary Report",
+     "author": "Malcolm Todd, Antiquaries Journal 64 (1984)",
+     "kind": "primary",
+     "url": "https://www.cambridge.org/core/journals/antiquaries-journal/article/excavations-at-hembury-devon-198083-a-summary-report/527A180156A212793C892E222887CED6",
+     "locator": "summary",
+     "quote": "a new Neolithic earthwork to the north of the causewayed enclosure excavated by Miss D. M. Liddell in 1930–35"
+    },
+    {
+     "title": "Hembury Castle",
+     "author": "UK Hillfort LiDAR (secondary)",
+     "kind": "secondary",
+     "url": "https://ukhillfortlidar.myportfolio.com/hembury-castle",
+     "locator": "text",
+     "quote": "C14 Dates for neolithic material, circa 3690BC"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-avebury",
+   "record": "Q661855",
+   "name": "Avebury",
+   "field": "date",
+   "claim": "Radiocarbon dates from Avebury's ditches and banks fall around 2900–2600 cal BC (other estimates 3040–2780 and 2840–2460 cal BC), so the henge was built by the middle of the third millennium BC; the stone settings date roughly 2870–2200 BC.",
+   "value": "c. 2900–2600 BC (henge bank and ditch)",
+   "verdict": "corrected",
+   "assessment": "4250 BC is a Wikipedia sentence about environmental change in lowland Britain, not about the monument.",
+   "sources": [
+    {
+     "title": "The Sanctuary, Appendix 1: The monuments (Internet Archaeology 27)",
+     "author": "Davies",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue27/3/appendix1.html",
+     "locator": "Appendix 1, Avebury",
+     "quote": "The ditches and banks of Avebury henge have yielded radiocarbon dates around 2900-2600 cal BC"
+    },
+    {
+     "title": "The Sanctuary, Appendix 1: The monuments (Internet Archaeology 27)",
+     "author": "Davies",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue27/3/appendix1.html",
+     "locator": "Appendix 1, Avebury",
+     "quote": "were built by the middle of the third millennium BC"
+    },
+    {
+     "title": "Avebury",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Avebury",
+     "locator": "article",
+     "quote": "Radiocarbon dating suggests that the henge was made by the middle of the third millennium BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-addington-long-barrow",
+   "record": "Q4681194",
+   "name": "Addington Long Barrow",
+   "field": "date",
+   "claim": "A chambered long barrow of the Medway group, built in the Early Neolithic; not dated directly, but Neolithic practices reached south-east England in the 41st century cal BC and nearby Coldrum's burials are modelled to 3980–3800 cal BC.",
+   "value": "early 4th millennium BC (c. 4000–3800 BC)",
+   "verdict": "kept",
+   "assessment": "c. 4000 BC is within the range for an Early Neolithic Medway tomb.",
+   "sources": [
+    {
+     "title": "Addington Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Addington_Long_Barrow",
+     "locator": "article",
+     "quote": "Probably constructed in the fourth millennium BCE, during Britain's Early Neolithic period"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "The first Neolithic things and practices probably appeared in south-east England in the 41st century cal BC"
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "article",
+     "quote": "between either 3980–3800 calibrated BCE (95% probability)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-badshot-lea-long-barrow",
+   "record": "Q65075214",
+   "name": "Badshot Lea Long Barrow",
+   "field": "date",
+   "claim": "An unchambered long barrow (mostly destroyed) near Farnham. Pottery from the ditch was called 'Neolithic A', but 1980s radiocarbon dates on bone and material from the primary ditch fill came out at 2650–2470 BCE.",
+   "value": "Early Neolithic by type; radiocarbon dates from the ditch c. 2650–2470 BC",
+   "verdict": "open",
+   "assessment": "The type suggests the 4th millennium BC but the only radiocarbon dates reported are mid-3rd millennium; the conflict cannot be settled from accessible sources.",
+   "sources": [
+    {
+     "title": "Badshot Lea Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Badshot_Lea_Long_Barrow",
+     "locator": "article",
+     "quote": "was an unchambered long barrow"
+    },
+    {
+     "title": "Badshot Lea Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Badshot_Lea_Long_Barrow",
+     "locator": "article",
+     "quote": "Radiocarbon dating of material recovered from this primary fill produced dates of 2530 BCE and 2650 BCE"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-ballymacgibbon-cairn",
+   "record": "Q28232546",
+   "name": "Ballymacgibbon Cairn",
+   "field": "date",
+   "claim": "A large unexcavated cairn believed to be Neolithic and probably covering a passage grave; Irish passage tombs date from c. 3750 to c. 2500 BC.",
+   "value": "Neolithic (unexcavated; probably a passage tomb)",
+   "verdict": "open",
+   "assessment": "Nothing dates this cairn itself; 4000 BC is only the lower bound of a Wikipedia infobox range, earlier than the passage tomb tradition.",
+   "sources": [
+    {
+     "title": "Ballymacgibbon Cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballymacgibbon_Cairn",
+     "locator": "article",
+     "quote": "has never been excavated, but is believed to have been constructed in the Neolithic"
+    },
+    {
+     "title": "Ballymacgibbon Cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballymacgibbon_Cairn",
+     "locator": "article",
+     "quote": "indicating that it almost certainly contains a passage grave"
+    },
+    {
+     "title": "Passage tombs in Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passage_tombs_in_Ireland",
+     "locator": "article",
+     "quote": "3750 B.C. to about 2500 B.C."
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-bryn-celli-ddu",
+   "record": "Q2519821",
+   "name": "Bryn Celli Ddu",
+   "field": "date",
+   "claim": "Burrow's radiocarbon programme gives a two-phase model in which the passage tomb was built between 3074 and 2956 cal BC; an earlier henge/stone circle phase is debated. The postholes on the site are Mesolithic, not part of the monument.",
+   "value": "c. 3070–2950 BC (passage tomb)",
+   "verdict": "corrected",
+   "assessment": "The catalogue's 4000 BC is the date of Mesolithic pits on the site, not the monument.",
+   "sources": [
+    {
+     "title": "Bryn Celli Ddu passage tomb, Anglesey: alignment, construction, date and ritual",
+     "author": "Steve Burrow, Proceedings of the Prehistoric Society 76 (2010)",
+     "kind": "primary",
+     "url": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/bryn-celli-ddu-passage-tomb-anglesey-alignment-construction-date-and-ritual/6A95DFB4ED16F57FFCC6501466424DF1",
+     "locator": "abstract",
+     "quote": "shows the tomb to have been built between 3074 and 2956 cal bc"
+    },
+    {
+     "title": "Bryn Celli Ddu passage tomb revisited",
+     "author": "S. Griffiths et al., Antiquity project gallery",
+     "kind": "secondary",
+     "url": "https://antiquity.ac.uk/projgall/griffiths349",
+     "locator": "introduction",
+     "quote": "five sixth-millennium cal BC Mesolithic postholes"
+    },
+    {
+     "title": "Bryn Celli Ddu Chambered Tomb",
+     "author": "Cadw",
+     "kind": "secondary",
+     "url": "https://cadw.gov.wales/visit/places-to-visit/bryn-celli-ddu-burial-chamber",
+     "locator": "visitor information",
+     "quote": "to be replaced later by a chambered tomb beneath a mound"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-carrowkeel-megalithic-cemetery",
+   "record": "Q261318",
+   "name": "Carrowkeel Megalithic Cemetery",
+   "field": "date",
+   "claim": "New radiocarbon dating of the human remains from the 1911 excavations (Kador et al. 2018) shows the passage tombs were in use between c. 3500 and 2500 cal BC.",
+   "value": "c. 3500–2500 BC (passage tombs in use)",
+   "verdict": "corrected",
+   "assessment": "The Wikidata 'fourth millennium' (4000 BC) is earlier than the dated use of the tombs.",
+   "sources": [
+    {
+     "title": "Carrowkeel Megalithic Cemetery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carrowkeel_Megalithic_Cemetery",
+     "locator": "article",
+     "quote": "the sites were in use between c. 3,500 and 2,500 Cal. BC"
+    },
+    {
+     "title": "Rites of Passage: Mortuary Practice, Population Dynamics, and Chronology at the Carrowkeel Passage Tomb Complex",
+     "author": "T. Kador et al., Proceedings of the Prehistoric Society 84 (2018)",
+     "kind": "primary",
+     "url": "https://www.cambridge.org/core/product/CE8E9D1CC402CCF625E172501E8E8C65",
+     "locator": "abstract",
+     "quote": "The first detailed investigation of the human remains from the Carrowkeel passage tomb complex"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-carrowmore",
+   "record": "Q260398",
+   "name": "Carrowmore",
+   "field": "date",
+   "claim": "Burenhult's very early dates (e.g. 5400 BC) were critically revised; a source-critical review with 25 new radiocarbon dates (Bergh & Hensey 2013) shows the Carrowmore monuments span c. 3750 to c. 3000 BC; the central Listoghil was built c. 3500 BC.",
+   "value": "c. 3750–3000 BC",
+   "verdict": "corrected",
+   "assessment": "4000 BC is earlier than the revised radiocarbon chronology of the cemetery.",
+   "sources": [
+    {
+     "title": "Carrowmore",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carrowmore",
+     "locator": "article",
+     "quote": "the Carrowmore monuments are shown to have spanned the era circa 3750 BC to circa 3000 BC"
+    },
+    {
+     "title": "Carrowmore",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carrowmore",
+     "locator": "article",
+     "quote": "was claimed to indicate a date of 5400 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-clach-biorach",
+   "record": "Q5124855",
+   "name": "Clach Biorach",
+   "field": "date",
+   "claim": "Historic Environment Scotland says the standing stone was erected probably in the Neolithic or Bronze Age, between about 4000 and 1500 BC, and carved with Pictish symbols in AD 500–700.",
+   "value": "between c. 4000 and 1500 BC (Neolithic or Bronze Age); Pictish symbols AD 500–700",
+   "verdict": "open",
+   "assessment": "The catalogue uses the earliest bound of a 2,500-year bracket; no source fixes the erection date.",
+   "sources": [
+    {
+     "title": "Clach Biorach, Pictish symbol stone, Edderton (SM1673)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM1673",
+     "locator": "Description",
+     "quote": "erected probably in the Neolithic or Bronze Age period, between about 4000 BC and 1500 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-coldrum-long-barrow",
+   "record": "Q5142542",
+   "name": "Coldrum Long Barrow",
+   "field": "date",
+   "claim": "Bayesian modelling of radiocarbon dates on the human remains (Wysocki et al. 2013) shows Coldrum is an early British Neolithic burial monument, the first burials dating 3980–3800 cal BC (95%).",
+   "value": "c. 3980–3800 BC (radiocarbon, first burials)",
+   "verdict": "kept",
+   "assessment": "Radiocarbon dating supports c. 4000 BC within a century.",
+   "sources": [
+    {
+     "title": "Dates, Diet, and Dismemberment: Evidence from the Coldrum Megalithic Monument, Kent",
+     "author": "M. Wysocki et al., Proceedings of the Prehistoric Society 79 (2013)",
+     "kind": "primary",
+     "url": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/abs/dates-diet-and-dismemberment-evidence-from-the-coldrum-megalithic-monument-kent/3DBED84BD60B21C422CF86A542C2AF58",
+     "locator": "abstract",
+     "quote": "Bayesian statistical modelling of the radiocarbon dates demonstrates that Coldrum is an early example of a British Neolithic burial monument"
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "article",
+     "quote": "between either 3980–3800 calibrated BCE (95% probability)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-countless-stones",
+   "record": "Q5177165",
+   "name": "Countless Stones",
+   "field": "date",
+   "claim": "Little Kit's Coty House (the Countless Stones) was pulled down c. 1690; English Heritage puts the Medway tombs at nearly 6,000 years old but notes that the belief that Little Kit's Coty House is Neolithic remains unproven (a nearby 'megalith', the Coffin Stone, proved to be set up 1450–1600).",
+   "value": "early 4th millennium BC (traditional; unproven)",
+   "verdict": "kept",
+   "assessment": "c. 4000 BC is the accepted date for a Medway tomb, but its Neolithic date is not proven.",
+   "sources": [
+    {
+     "title": "History of Kit's Coty House and Little Kit's Coty House",
+     "author": "Alastair Oswald, English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/kits-coty-house-and-little-kits-coty-house/history/",
+     "locator": "History",
+     "quote": "These two megalithic (huge stone) structures, 450 metres apart, were built nearly 6,000 years ago."
+    },
+    {
+     "title": "History of Kit's Coty House and Little Kit's Coty House",
+     "author": "Alastair Oswald, English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/kits-coty-house-and-little-kits-coty-house/history/",
+     "locator": "History",
+     "quote": "the traditional belief that Little Kit’s Coty House is Neolithic remains unproven"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-eochy-s-cairn",
+   "record": "Q28232551",
+   "name": "Eochy's Cairn",
+   "field": "date",
+   "claim": "A very large unexcavated cairn near The Neale, believed to be Neolithic; nothing dates it.",
+   "value": "Neolithic? (unexcavated, undated)",
+   "verdict": "open",
+   "assessment": "No dating evidence; 4000 BC is only the lower bound of a Wikipedia infobox range.",
+   "sources": [
+    {
+     "title": "Eochy's Cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eochy%27s_Cairn",
+     "locator": "article",
+     "quote": "has never been excavated, but is believed to have been constructed in the Neolithic"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-jacket-s-field-long-barrow",
+   "record": "Q60785682",
+   "name": "Jacket's Field Long Barrow",
+   "field": "date",
+   "claim": "An unchambered earthen long barrow in Kent, not excavated or dated; Early Neolithic by type, with the Neolithic reaching south-east England in the 41st century cal BC and long barrows preceding the causewayed enclosures (late 38th century cal BC).",
+   "value": "early 4th millennium BC (by type)",
+   "verdict": "kept",
+   "assessment": "4000 BC is at the early edge of the type range but acceptable for Kent.",
+   "sources": [
+    {
+     "title": "Jacket's Field Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jacket%27s_Field_Long_Barrow",
+     "locator": "article",
+     "quote": "It was probably constructed in the fourth millennium BCE, during Britain's Early Neolithic period"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "The first Neolithic things and practices probably appeared in south-east England in the 41st century cal BC"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-julliberrie-s-grave",
+   "record": "Q1713172",
+   "name": "Julliberrie's Grave",
+   "field": "date",
+   "claim": "An unchambered earthen long barrow near Chilham, excavated in the 1930s (Romano-British burials in it), Neolithic by type; not radiocarbon dated.",
+   "value": "early 4th millennium BC (by type)",
+   "verdict": "kept",
+   "assessment": "4000 BC is at the early edge of the type range but acceptable for Kent.",
+   "sources": [
+    {
+     "title": "Julliberrie's Grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Julliberrie%27s_Grave",
+     "locator": "article",
+     "quote": "is an unchambered long barrow located near to the village of Chilham"
+    },
+    {
+     "title": "History of Kit's Coty House and Little Kit's Coty House",
+     "author": "Alastair Oswald, English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/kits-coty-house-and-little-kits-coty-house/history/",
+     "locator": "History",
+     "quote": "Jullieberrie’s Grave, another Neolithic long barrow in Kent"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "The first Neolithic things and practices probably appeared in south-east England in the 41st century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-kit-s-coty-house",
+   "record": "Q4222497",
+   "name": "Kit's Coty House",
+   "field": "date",
+   "claim": "English Heritage says Kit's Coty House and Little Kit's Coty House were built nearly 6,000 years ago as burial monuments of Britain's earliest farmers; 2009–11 fieldwork found no dating evidence.",
+   "value": "c. 4000 BC (nearly 6,000 years ago)",
+   "verdict": "kept",
+   "assessment": "The heritage body's date matches the catalogue.",
+   "sources": [
+    {
+     "title": "History of Kit's Coty House and Little Kit's Coty House",
+     "author": "Alastair Oswald, English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/kits-coty-house-and-little-kits-coty-house/history/",
+     "locator": "History",
+     "quote": "These two megalithic (huge stone) structures, 450 metres apart, were built nearly 6,000 years ago."
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "The first Neolithic things and practices probably appeared in south-east England in the 41st century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-st-lythans-chambered-tomb",
+   "record": "Q7594075",
+   "name": "St Lythans Chambered Tomb",
+   "field": "date",
+   "claim": "A Cotswold-Severn chambered tomb whose chamber has never been excavated; long barrows and cairns in Britain precede the causewayed enclosures of the late 38th century cal BC, and neighbouring Tinkinswood has finds dated around 3700 BC.",
+   "value": "c. 3800–3600 BC (Cotswold-Severn tomb, by type)",
+   "verdict": "corrected",
+   "assessment": "Undated; 4000 BC is earlier than the dated tombs of the type in south Wales, so the typical range is a better estimate.",
+   "sources": [
+    {
+     "title": "St Lythans Chambered Tomb",
+     "author": "Cadw",
+     "kind": "secondary",
+     "url": "https://cadw.gov.wales/visit/places-to-visit/st-lythans-chambered-tomb",
+     "locator": "visitor information",
+     "quote": "The chamber itself has never been excavated"
+    },
+    {
+     "title": "St Lythans burial chamber",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Lythans_burial_chamber",
+     "locator": "article",
+     "quote": "built around 4000 BC as part of a chambered long barrow"
+    },
+    {
+     "title": "Tinkinswood (prehistoric sites of Wales)",
+     "author": "aenigmatis.com (secondary)",
+     "kind": "secondary",
+     "url": "https://aenigmatis.com/prehistoric-sites/wales/wales-2.htm",
+     "locator": "Tinkinswood",
+     "quote": "Finds from the tomb excavation were recently radiocarbon-dated to around 3700 BC"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-stonehenge-cursus",
+   "record": "Q7619217",
+   "name": "Stonehenge Cursus",
+   "field": "date",
+   "claim": "Excavation in 2007 recovered a red deer antler from the base of the western terminal ditch dated 3630–3375 cal BC, a millennium earlier than the 1940s antler date (2890–2460 BC) (Thomas et al. 2009).",
+   "value": "c. 3630–3375 BC (radiocarbon)",
+   "verdict": "corrected",
+   "assessment": "Radiocarbon places construction in the 36th–34th centuries BC, not 4000 BC.",
+   "sources": [
+    {
+     "title": "The date of the Greater Stonehenge Cursus",
+     "author": "J. Thomas et al., Antiquity 83 (2009) 40–53",
+     "kind": "primary",
+     "url": "https://pure.uhi.ac.uk/en/publications/the-date-of-the-greater-stonehenge-cursus/",
+     "locator": "abstract",
+     "quote": "had been dated by a red deer antler found in its ditch in the 1940s to 2890-2460 BC"
+    },
+    {
+     "title": "The date of the Greater Stonehenge Cursus",
+     "author": "J. Thomas et al., Antiquity 83 (2009) 40–53",
+     "kind": "primary",
+     "url": "https://pure.uhi.ac.uk/en/publications/the-date-of-the-greater-stonehenge-cursus/",
+     "locator": "abstract",
+     "quote": "and dating a millennium earlier"
+    },
+    {
+     "title": "Stonehenge Cursus",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge_Cursus",
+     "locator": "article",
+     "quote": "first constructed between 3630 and 3375 BCE"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "from the 36th century cal BC onwards: the linear and more arcane cursus monuments"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-tinkinswood",
+   "record": "Q1859561",
+   "name": "Tinkinswood",
+   "field": "date",
+   "claim": "A Cotswold-Severn chambered tomb (Cadw) excavated in 1914 and 2011; finds from the excavation have been radiocarbon dated to around 3700 BC.",
+   "value": "c. 3700 BC (radiocarbon on finds)",
+   "verdict": "corrected",
+   "assessment": "The only dating evidence found points to c. 3700 BC, later than Wikipedia's undocumented 4000 BC.",
+   "sources": [
+    {
+     "title": "Tinkinswood Chambered Tomb",
+     "author": "Cadw",
+     "kind": "secondary",
+     "url": "https://cadw.gov.wales/visit/places-to-visit/tinkinswood-burial-chamber",
+     "locator": "visitor information",
+     "quote": "This Neolithic (New Stone Age) tomb is topped with one of largest capstones in Britain"
+    },
+    {
+     "title": "Tinkinswood (prehistoric sites of Wales)",
+     "author": "aenigmatis.com (secondary)",
+     "kind": "secondary",
+     "url": "https://aenigmatis.com/prehistoric-sites/wales/wales-2.htm",
+     "locator": "Tinkinswood",
+     "quote": "Finds from the tomb excavation were recently radiocarbon-dated to around 3700 BC"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-tiredigan-court-tomb",
+   "record": "Q141505427",
+   "name": "Tiredigan Court Tomb",
+   "field": "date",
+   "claim": "Cairnbaine (Tiredigan) is a dual court tomb, not dated directly; radiocarbon dating puts the earliest court cairns around 3750 BC, most built 3900–3500 BC.",
+   "value": "c. 3750–3500 BC (court tomb, by type)",
+   "verdict": "corrected",
+   "assessment": "The 4000 BC year comes from a generic sentence; the type's dated start is c. 3750 BC.",
+   "sources": [
+    {
+     "title": "Cairnbaine",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cairnbaine",
+     "locator": "article",
+     "quote": "Cairnbaine, also called Tiredigan Court Tomb, is a court cairn"
+    },
+    {
+     "title": "Court tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_tomb",
+     "locator": "article",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    },
+    {
+     "title": "Court tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_tomb",
+     "locator": "article",
+     "quote": "During the period, 3900–3500 BC, more than 390 court cairns were built in Ireland"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-trundle",
+   "record": "Q7847949",
+   "name": "Trundle",
+   "field": "date",
+   "claim": "Gathering Time's analysis of the few dates from the Trundle suggests the inner ditch is later than 3900–3370 BC and implies a mid-4th-millennium construction for the Neolithic enclosure; the hillfort ramparts date to c. 500–100 BC.",
+   "value": "mid-4th millennium BC (c. 3600 BC; causewayed enclosure); hillfort Iron Age",
+   "verdict": "corrected",
+   "assessment": "The catalogue's 4000 BC came from a sentence about causewayed enclosures in northern France.",
+   "sources": [
+    {
+     "title": "The Trundle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Trundle",
+     "locator": "article",
+     "quote": "the results suggest that the inner ditch dates to after 3900–3370 BC"
+    },
+    {
+     "title": "The Trundle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Trundle",
+     "locator": "article",
+     "quote": "Overall, these results imply a mid-fourth millennium BC construction date for the Neolithic earthworks"
+    },
+    {
+     "title": "The Trundle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Trundle",
+     "locator": "article",
+     "quote": "These early digs established a construction date of about 500 BC to 100 BC for the hillfort"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-audleystown-court-cairn",
+   "record": "Q758951",
+   "name": "Audleystown Court Cairn",
+   "field": "date",
+   "claim": "A dual court tomb excavated by A.E.P. Collins in 1952; it and court tombs generally date to 3900–3500 BC, the earliest court cairns being radiocarbon dated around 3750 BC.",
+   "value": "c. 3900–3500 BC",
+   "verdict": "kept",
+   "assessment": "3900 BC is within the type's range.",
+   "sources": [
+    {
+     "title": "Audleystown Court Tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Audleystown_Court_Tomb",
+     "locator": "article",
+     "quote": "The tomb was built around 3900–3500 BCE"
+    },
+    {
+     "title": "Court tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_tomb",
+     "locator": "article",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-sweet-track",
+   "record": "Q2736549",
+   "name": "Sweet Track",
+   "field": "date",
+   "claim": "Tree-ring dating shows the Sweet Track timbers were felled in winter 3807/6 BC and the track was built immediately afterwards (Hillam et al. 1990).",
+   "value": "3807/3806 BC (dendrochronology)",
+   "verdict": "kept",
+   "assessment": "Dendrochronology gives the catalogue's year exactly.",
+   "sources": [
+    {
+     "title": "Sweet Track",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sweet_Track",
+     "locator": "article",
+     "quote": "It was built in 3807 BC (determined using dendrochronology"
+    },
+    {
+     "title": "The Sweet Track",
+     "author": "World History Encyclopedia",
+     "kind": "secondary",
+     "url": "https://www.worldhistory.org/The_Sweet_Track/",
+     "locator": "article",
+     "quote": "the track has been dated 3807/3806 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-adam-s-grave",
+   "record": "Q4678577",
+   "name": "Adam's Grave",
+   "field": "date",
+   "claim": "A chambered long barrow of the Cotswold-Severn type, partly dug by Thurnam in 1860 and not scientifically dated; long barrows and cairns preceded the first causewayed enclosures of the late 38th century cal BC.",
+   "value": "c. 3800–3300 BC (by type)",
+   "verdict": "kept",
+   "assessment": "The type estimate is reasonable; nothing dates the monument more closely.",
+   "sources": [
+    {
+     "title": "Adam's Grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Adam%27s_Grave",
+     "locator": "article",
+     "quote": "The barrow is considered to be of the Severn-Cotswold tomb type"
+    },
+    {
+     "title": "Adam's Grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Adam%27s_Grave",
+     "locator": "article",
+     "quote": "It was partially excavated by John Thurnam in 1860"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-capo-long-barrow",
+   "record": "Q1034738",
+   "name": "Capo Long Barrow",
+   "field": "date",
+   "claim": "Historic Environment Scotland describes Capo as a well-preserved and massive Neolithic long burial barrow; it is unexcavated, so the date is by type.",
+   "value": "c. 3800–3300 BC (by type)",
+   "verdict": "kept",
+   "assessment": "The register confirms a Neolithic long barrow; the type estimate stands.",
+   "sources": [
+    {
+     "title": "Capo Long Barrow (SM4444)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM4444",
+     "locator": "Description",
+     "quote": "a well preserved and massive Neolithic long burial barrow"
+    },
+    {
+     "title": "Gathering Time: Dating the Early Neolithic Enclosures of Southern Britain and Ireland (synopsis)",
+     "author": "A. Whittle, F. Healy & A. Bayliss (2011)",
+     "kind": "secondary",
+     "url": "https://www.torrossa.com/en/resources/an/5084418",
+     "locator": "book synopsis",
+     "quote": "appeared in the final decades of the 38th century cal BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-dehus-dolmen",
+   "record": "Q1809839",
+   "name": "Dehus Dolmen",
+   "field": "date",
+   "claim": "Guernsey Museums describe Le Déhus as a prehistoric passage grave with finds of 3500–2000 BC; the Vale parish says it was built around 6,000 years ago.",
+   "value": "c. 4000–3800 BC (Neolithic passage grave)",
+   "verdict": "kept",
+   "assessment": "Sources put construction around 4000 BC, consistent with the catalogue's c. 3800 BC within type precision.",
+   "sources": [
+    {
+     "title": "Archaeological sites",
+     "author": "Guernsey Museums & Galleries",
+     "kind": "secondary",
+     "url": "https://museums.gov.gg/archsites",
+     "locator": "Déhus Dolmen",
+     "quote": "Prehistoric passage grave approximately 10 metres in length"
+    },
+    {
+     "title": "Archaeological sites",
+     "author": "Guernsey Museums & Galleries",
+     "kind": "secondary",
+     "url": "https://museums.gov.gg/archsites",
+     "locator": "Déhus Dolmen",
+     "quote": "Large quantities of finds dating from 3500-2000BC have been found at the site"
+    },
+    {
+     "title": "New research suggests Déhus Dolmen could be an 'Easter clock'",
+     "author": "Vale Parish (Guernsey)",
+     "kind": "secondary",
+     "url": "https://valeparish.gg/news/dehus-dolmen-attracting-fresh-interest-thanks-to-mathematicians-interest/",
+     "locator": "news, 12 Aug 2026",
+     "quote": "Le Déhus was constructed around 6,000 years ago"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-devil-s-quoit",
+   "record": "Q116872482",
+   "name": "Devil's Quoit",
+   "field": "date",
+   "claim": "A Neolithic megalithic chambered tomb (dolmen) at Quoit near St Columb Major; it collapsed in 1840–50 and was destroyed c. 1870; a stone believed to be its capstone marks the site.",
+   "value": "Neolithic, c. 3800 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "Sources confirm a Neolithic chambered tomb but give no closer date, so the type estimate stands.",
+   "sources": [
+    {
+     "title": "Devil's Quoit (commemorative plaque)",
+     "author": "Cornwall Heritage Trust",
+     "kind": "secondary",
+     "url": "https://www.cornwallheritagetrust.org/commemorative_plaque/devils-quoit/",
+     "locator": "plaque text",
+     "quote": "It marks the site of a Megalithic Chambered Tomb of the Neolithic Period"
+    },
+    {
+     "title": "Devil's Quoit (commemorative plaque)",
+     "author": "Cornwall Heritage Trust",
+     "kind": "secondary",
+     "url": "https://www.cornwallheritagetrust.org/commemorative_plaque/devils-quoit/",
+     "locator": "plaque text",
+     "quote": "an impressive landmark until its destruction c1870 AD"
+    },
+    {
+     "title": "Quoit, Cornwall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quoit,_Cornwall",
+     "locator": "Devil's Quoit",
+     "quote": "It partially collapsed between 1840 and 1850"
+    },
+    {
+     "title": "Portal tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portal_tomb",
+     "locator": "lead",
+     "quote": "Most date from the Late Neolithic period (4000–3000 BCE)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-dolmen-du-mont-ub",
+   "record": "Q970667",
+   "name": "Dolmen du Mont Ubé",
+   "field": "date",
+   "claim": "A Neolithic passage grave in St Clement, uncovered by quarrymen in 1848; the Jersey Evening Post (citing the Société Jersiaise) says it was built around 6,000 years ago.",
+   "value": "c. 4000–3800 BC (Neolithic passage grave)",
+   "verdict": "kept",
+   "assessment": "The verifiable source puts construction around 4000 BC, consistent with c. 3800 BC within type precision.",
+   "sources": [
+    {
+     "title": "Vandals target Neolithic dolmen",
+     "author": "Jersey Evening Post (5 Dec 2015)",
+     "kind": "secondary",
+     "url": "https://jerseyeveningpost.com/news/2015/12/05/vandals-target-neolithic-dolmen/",
+     "locator": "article",
+     "quote": "The Neolithic passage grave was built around 6,000 years ago"
+    },
+    {
+     "title": "Discover dolmens",
+     "author": "Visit Jersey",
+     "kind": "secondary",
+     "url": "https://www.jersey.com/inspire-me/inspiration/discover-dolmens/",
+     "locator": "Le Dolmen de Mont Ubé",
+     "quote": "Uncovered by stone quarriers in 1848, this passage grave contained stone axes"
+    },
+    {
+     "title": "Jersey dolmens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jersey_dolmens",
+     "locator": "Mont Ubé",
+     "quote": "This is a Neolithic passage grave in Parish of St Clement"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-dolwilym",
+   "record": "Q20591274",
+   "name": "Dolwilym",
+   "field": "date",
+   "claim": "Coflein describes a capstone supported by four orthostats with traces of a kerbed mound, i.e. a megalithic burial chamber (portal dolmen type).",
+   "value": "Neolithic, c. 3800 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "A Neolithic burial chamber with no site-specific dating; the portal-tomb estimate is appropriate.",
+   "sources": [
+    {
+     "title": "Dolwilym burial chamber (NPRN 304270)",
+     "author": "RCAHMW Coflein",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/304270/",
+     "locator": "Description",
+     "quote": "A capstone supported by four orthostats"
+    },
+    {
+     "title": "Portal tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portal_tomb",
+     "locator": "lead",
+     "quote": "Most date from the Late Neolithic period (4000–3000 BCE)"
+    },
+    {
+     "title": "Poulnabrone dolmen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Poulnabrone_dolmen",
+     "locator": "Description",
+     "quote": "Radiocarbon dating indicates that the tomb was probably used as a burial site between 3800 and 3200 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-fairy-toot",
+   "record": "Q5431003",
+   "name": "Fairy Toot",
+   "field": "date",
+   "claim": "Fairy Toot was a chambered long barrow, opened and largely destroyed 1787–1835, with two rows of stone cells; probably Neolithic. Cotswold-Severn barrows appeared about 3700 BC.",
+   "value": "Neolithic, c. 3700 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; type estimate acceptable.",
+   "sources": [
+    {
+     "title": "Fairy Toot",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fairy_Toot",
+     "locator": "lead",
+     "quote": "two rows of cells, running from south to north"
+    },
+    {
+     "title": "Fairy Toot",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fairy_Toot",
+     "locator": "lead",
+     "quote": "its origins are far older and probably date from the Neolithic period"
+    },
+    {
+     "title": "Cotswold-Severn Group",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswold-Severn_Group",
+     "locator": "Dating",
+     "quote": "Darvill argued that long barrows appeared in the Cotswolds-Severn region fairly abruptly around 3700 BCE"
+    },
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-garn-coch",
+   "record": "Q20597409",
+   "name": "Garn Coch",
+   "field": "date",
+   "claim": "Coflein describes Garn Goch as a ruined cairn 19 m in diameter and 1.7 m high, where a cist opened in 1854 held a single inhumation; a 2022 survey report calls it 'Garn Goch Chambered Tomb'.",
+   "value": "undated (prehistoric cairn)",
+   "verdict": "open",
+   "assessment": "A round cairn with a cist could be Bronze Age rather than a Neolithic long barrow; nothing verifiable dates it, so the long-barrow typology is unsupported.",
+   "sources": [
+    {
+     "title": "Garn Goch (NPRN 306245)",
+     "author": "RCAHMW Coflein",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/306245/",
+     "locator": "Description",
+     "quote": "Garn Goch is a ruined cairn, 19m in diameter and 1.7m high"
+    },
+    {
+     "title": "Garn Goch (NPRN 306245)",
+     "author": "RCAHMW Coflein",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/306245/",
+     "locator": "Description",
+     "quote": "A protruding stone slab may relate to a cist opened in 1854, revealing a single inhumanation"
+    },
+    {
+     "title": "Garn Goch (NPRN 306245)",
+     "author": "RCAHMW Coflein",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/306245/",
+     "locator": "Resources",
+     "quote": "Garn Goch Chambered Tomb"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-hazleton-long-barrows-north-and-south",
+   "record": "Q17649106",
+   "name": "Hazleton long barrows, north and south",
+   "field": "date",
+   "claim": "Bayesian modelling of 44 radiocarbon dates puts the building of Hazleton North in the first half of the 37th century cal BC; Hazleton South has not been excavated.",
+   "value": "c. 3700 BC (Hazleton North, radiocarbon)",
+   "verdict": "corrected",
+   "assessment": "A site-specific radiocarbon date exists and is about a century later than the type estimate.",
+   "sources": [
+    {
+     "title": "A short passage of time: the dating of the Hazleton long cairn revisited",
+     "author": "Meadows, Barclay, Bayliss (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28557?mode=full",
+     "locator": "abstract",
+     "quote": "This model suggests that the cairn was constructed in the first half of the 37th century cal BC"
+    },
+    {
+     "title": "Hazleton long barrows",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hazleton_long_barrows",
+     "locator": "lead",
+     "quote": "date back to approximately 3700-3600 BCE"
+    },
+    {
+     "title": "Hazleton long barrows",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hazleton_long_barrows",
+     "locator": "Hazleton South",
+     "quote": "South Cairn remains an intact earthwork that has not been archaeologically investigated"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-knap-of-howar",
+   "record": "Q1776885",
+   "name": "Knap of Howar",
+   "field": "date",
+   "claim": "The 2025 reassessment for Historic Environment Scotland (new radiocarbon dates) puts the building of the stone houses in the latter part of the 4th millennium BC, after earlier timber-phase activity, with abandonment before 2900 BC; the older 3800/3700 BC start came from Ritchie's 1970s dates.",
+   "value": "c. 3300 BC (stone houses, radiocarbon; latter part of the 4th millennium BC)",
+   "verdict": "corrected",
+   "assessment": "The newest radiocarbon work dates the surviving stone buildings well after 3800 BC; earlier dates belong to earlier activity on the site.",
+   "sources": [
+    {
+     "title": "Revisiting Knap of Howar, Papa Westray, Orkney",
+     "author": "Moore, Wilson, Griffiths (Proc. Soc. Antiq. Scot. 154, 2025)",
+     "kind": "primary",
+     "url": "https://journals.socantscot.org/index.php/psas/article/view/10861",
+     "locator": "abstract",
+     "quote": "culminating in the construction of the stone buildings in the latter part of the 4th millennium BC"
+    },
+    {
+     "title": "Revisiting Knap of Howar, Papa Westray, Orkney",
+     "author": "Moore, Wilson, Griffiths (Proc. Soc. Antiq. Scot. 154, 2025)",
+     "kind": "primary",
+     "url": "https://journals.socantscot.org/index.php/psas/article/view/10861",
+     "locator": "abstract",
+     "quote": "sometime before 2900 BC"
+    },
+    {
+     "title": "Knap of Howar, houses (SM90195)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90195",
+     "locator": "Statement of National Importance",
+     "quote": "the earliest upstanding domestic structures so far identified in northern Europe"
+    },
+    {
+     "title": "Knap of Howar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Knap_of_Howar",
+     "locator": "lead",
+     "quote": "Radiocarbon dating shows that it was occupied from 3800 BC to 2800 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-knockeen-portal-tomb",
+   "record": "Q17984614",
+   "name": "Knockeen Portal Tomb",
+   "field": "date",
+   "claim": "The Irish SMR classes WA017-034 at Knockeen as a megalithic portal tomb; Irish portal tombs such as Poulnabrone were in use c. 3800–3200 BC.",
+   "value": "Neolithic, c. 3800 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "Confirmed portal tomb, no site-specific dating; the type estimate is appropriate.",
+   "sources": [
+    {
+     "title": "Sites and Monuments Record, WA017-034 (open data)",
+     "author": "National Monuments Service, Ireland",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27WA017-034----%27&outFields=SMRS,MONUMENT_CLASS,TOWNLAND,COUNTY&f=json",
+     "locator": "MONUMENT_CLASS",
+     "quote": "Megalithic tomb - portal tomb"
+    },
+    {
+     "title": "Knockeen Portal Tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Knockeen_Portal_Tomb",
+     "locator": "lead",
+     "quote": "It is the largest dolmen (portal tomb) in County Waterford"
+    },
+    {
+     "title": "Poulnabrone dolmen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Poulnabrone_dolmen",
+     "locator": "Description",
+     "quote": "Radiocarbon dating indicates that the tomb was probably used as a burial site between 3800 and 3200 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-la-varde",
+   "record": "Q1617518",
+   "name": "La Varde",
+   "field": "date",
+   "claim": "Guernsey Museums: La Varde is a prehistoric passage grave, the island's largest megalithic structure, built in the Neolithic (c. 4000–2500 BC) and used until the late Bronze Age.",
+   "value": "c. 4000 BC (Neolithic passage grave)",
+   "verdict": "kept",
+   "assessment": "Neolithic construction from c. 4000 BC is consistent with c. 3800 BC within type precision.",
+   "sources": [
+    {
+     "title": "Archaeological sites",
+     "author": "Guernsey Museums & Galleries",
+     "kind": "secondary",
+     "url": "https://museums.gov.gg/archsites",
+     "locator": "La Varde",
+     "quote": "This prehistoric passage grave is the largest and most impressive surviving megalithic structure on the island"
+    },
+    {
+     "title": "Archaeological sites",
+     "author": "Guernsey Museums & Galleries",
+     "kind": "secondary",
+     "url": "https://museums.gov.gg/archsites",
+     "locator": "La Varde",
+     "quote": "It was built during the Neolithic period (c.4000-2500BC)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-lanhill-barrow",
+   "record": "Q1805486",
+   "name": "Lanhill Barrow",
+   "field": "date",
+   "claim": "Lanhill is a chambered long barrow of the Cotswold-Severn group; dated monuments of this type in southern Britain begin no earlier than the 38th century cal BC, Cotswold-Severn barrows from about 3700 BC.",
+   "value": "Neolithic, c. 3800–3600 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating found; the type estimate is acceptable.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "Cotswold-Severn Group",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswold-Severn_Group",
+     "locator": "Dating",
+     "quote": "Darvill argued that long barrows appeared in the Cotswolds-Severn region fairly abruptly around 3700 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-llety-r-filiast",
+   "record": "Q18816403",
+   "name": "Llety'r Filiast",
+   "field": "date",
+   "claim": "A ruined Neolithic chambered tomb on the Great Orme (Cadw scheduled monument CN005), generally related to portal dolmens; no dating evidence found.",
+   "value": "Neolithic, c. 3800 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "Nothing site-specific; the portal-tomb estimate is reasonable but rests on type only.",
+   "sources": [
+    {
+     "title": "Llety'r Filiast (NPRN 95269)",
+     "author": "RCAHMW Coflein",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/95269/",
+     "locator": "Description",
+     "quote": "Cadw SAM No.=CN005"
+    },
+    {
+     "title": "Portal tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portal_tomb",
+     "locator": "lead",
+     "quote": "Most date from the Late Neolithic period (4000–3000 BCE)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-low",
+   "record": "Q6672953",
+   "name": "Long Low",
+   "field": "date",
+   "claim": "Long Low is probably a bank barrow with a later Neolithic chambered cairn on its north end and a Bronze Age round barrow added at its south end.",
+   "value": "Neolithic, c. 3800–3500 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "The bank barrow is the primary Neolithic monument; no site-specific dating, so the estimate stands.",
+   "sources": [
+    {
+     "title": "Long Low, Wetton",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_Low,_Wetton",
+     "locator": "lead",
+     "quote": "It is possible that the bank is a bank barrow which had a later Neolithic chambered cairn (the north cairn) built on one end and then a Bronze Age round barrow finally added at the southern end"
+    },
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-300m-north-east-of-albany-place",
+   "record": "Q17674890",
+   "name": "Long barrow 300m north-east of Albany Place",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-335m-north-west-of-starveall-farm",
+   "record": "Q17648437",
+   "name": "Long barrow 335m north west of Starveall Farm",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-400m-south-of-sanctuary-farm",
+   "record": "Q17676509",
+   "name": "Long barrow 400m south of Sanctuary Farm",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-500m-north-of-lugbury-farm",
+   "record": "Q17646413",
+   "name": "Long barrow 500m north of Lugbury Farm",
+   "field": "date",
+   "claim": "Lugbury is a long barrow with a false entrance; long barrows of this region date from the early to middle Neolithic.",
+   "value": "Early-middle Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; type estimate acceptable.",
+   "sources": [
+    {
+     "title": "Lugbury Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lugbury_Long_Barrow",
+     "locator": "Description",
+     "quote": "Dating from the early to middle Neolithic periods, they are the burial places of early farming communities"
+    },
+    {
+     "title": "Lugbury Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lugbury_Long_Barrow",
+     "locator": "Description",
+     "quote": "which formed the false entrance portal to the mound"
+    },
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-700m-south-of-tidcombe",
+   "record": "Q17662784",
+   "name": "Long barrow 700m south of Tidcombe",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-at-combe-gibbet-gallows-down",
+   "record": "Q17672027",
+   "name": "Long barrow at Combe Gibbet, Gallows Down.",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-north-east-of-winterbourne-stoke-crossroads",
+   "record": "Q17674467",
+   "name": "Long barrow north east of Winterbourne Stoke crossroads",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-on-beacon-hill-160m-north-west-of-the-windmill",
+   "record": "Q17677642",
+   "name": "Long barrow on Beacon Hill, 160m north west of the windmill",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-on-fairmile-down",
+   "record": "Q17662491",
+   "name": "Long barrow on Fairmile Down",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-on-horton-down",
+   "record": "Q17668810",
+   "name": "Long barrow on Horton Down",
+   "field": "date",
+   "claim": "Horton Down is an Early Neolithic unchambered long barrow; earthen long barrows began no earlier than the 38th century cal BC.",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; type estimate acceptable.",
+   "sources": [
+    {
+     "title": "Horton Down Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horton_Down_Long_Barrow",
+     "locator": "lead",
+     "quote": "is an Early Neolithic unchambered long barrow"
+    },
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-on-king-s-play-hill-430m-north-west-of-hill-cottage",
+   "record": "Q17675129",
+   "name": "Long barrow on King's Play Hill, 430m north west of Hill Cottage",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrow-three-bell-barrows-fancy-barrow-and-a-linear-earthwork-800m-north-of-maiden-castle",
+   "record": "Q17673976",
+   "name": "Long barrow, three bell barrows, fancy barrow and a linear earthwork 800m north of Maiden Castle",
+   "field": "date",
+   "claim": "Radiocarbon programmes show that long barrows in southern Britain began no earlier than the 38th century cal BC and were mostly built in the 38th–34th centuries BC (e.g. West Kennet c. 3650 BC).",
+   "value": "Early Neolithic, c. 3800–3400 BC (type estimate)",
+   "verdict": "kept",
+   "assessment": "No site-specific dating; c. 3800 BC is the start of the type's range and acceptable at type precision.",
+   "sources": [
+    {
+     "title": "Building for the dead: events, processes and changing worldviews from the thirty-eighth to the thirty-fourth centuries cal. BC in southern Britain",
+     "author": "Whittle, Barclay, Bayliss, McFadyen, Schulting, Wysocki (Cambridge Archaeological Journal 17(S1), 2007)",
+     "kind": "primary",
+     "url": "https://dspace.stir.ac.uk/handle/1893/28560?mode=full",
+     "locator": "abstract",
+     "quote": "long barrows, long cairns and associated structures do not appear to have begun before the 38th century cal BC in southern Britain"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-long-barrows-se-of-thickthorn-farm",
+   "record": "Q17650825",
+   "name": "Long barrows SE of Thickthorn Farm",
+   "field": "date",
+   "claim": "The Dorset HER records two Neolithic long barrows on Thickthorn Down; under the excavated barrow an antler pick on the old land surface gave a radiocarbon date of 3210 ± 45 bc uncalibrated (BM-2355), 'surprisingly early', and the primary ditch fills held Early Neolithic pottery.",
+   "value": "c. 3800 BC (Early Neolithic long barrows)",
+   "verdict": "kept",
+   "assessment": "An early-4th-millennium BC radiocarbon date beneath the mound and Early Neolithic pottery in the ditch fit the catalogue's c. 3800 BC.",
+   "sources": [
+    {
+     "title": "Dorset HER MDO5613: Long barrow on Thickthorn Down",
+     "author": "Dorset Council HER",
+     "kind": "listing",
+     "url": "https://heritage.dorsetcouncil.gov.uk/Monument/MDO5613",
+     "locator": "Full description",
+     "quote": "was obtained from an antler pick found on the old land surface beneath the mound, which is surprisingly early"
+    },
+    {
+     "title": "Dorset HER MDO5613: Long barrow on Thickthorn Down",
+     "author": "Dorset Council HER",
+     "kind": "listing",
+     "url": "https://heritage.dorsetcouncil.gov.uk/Monument/MDO5613",
+     "locator": "Full description",
+     "quote": "The primary ditch fills included sherds of Early Neolithic pottery"
+    },
+    {
+     "title": "Dorset HER MDO5612: Neolithic Long barrow on Thickthorn Down",
+     "author": "Dorset Council HER",
+     "kind": "listing",
+     "url": "https://heritage.dorsetcouncil.gov.uk/Monument/MDO5612",
+     "locator": "Summary",
+     "quote": "A Neolithic long barrow on Thickthorn Down"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-minninglow",
+   "record": "Q1515026",
+   "name": "Minninglow",
+   "field": "date",
+   "claim": "The Derbyshire HER says Marsden's 1973-74 excavation showed a multi-period site beginning with the construction of Chamber I and its passage in the Early Neolithic, later enlarged to a long mound and used into the Early Bronze Age.",
+   "value": "Early Neolithic (first chamber); c. 3800 BC by type",
+   "verdict": "kept",
+   "assessment": "The first phase is Early Neolithic, which matches c. 3800 BC within the precision of a type estimate; there are no radiocarbon dates.",
+   "sources": [
+    {
+     "title": "Derbyshire HER MDR2794: Chambered Cairn, Minninglow",
+     "author": "Derbyshire County Council HER",
+     "kind": "listing",
+     "url": "https://her.derbyshire.gov.uk/Monument/MDR2794",
+     "locator": "Full description",
+     "quote": "beginning with the construction of Chamber I and its drystone walled approach passage in the Early Neolithic period"
+    },
+    {
+     "title": "Wikipedia: Minninglow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minninglow",
+     "locator": "lead",
+     "quote": "the oldest chamber dating from the Early Neolithic period"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-mound-at-tq1891972117",
+   "record": "Q97400095",
+   "name": "Mound at TQ1891972117",
+   "field": "date",
+   "claim": "Historic England scheduled the mound in Richmond Park in 2020 as an unnamed mound that could be a long barrow; Wikidata describes it as a long barrow only 'possibly'. No excavation or dating is reported.",
+   "value": "undated; possibly a Neolithic long barrow",
+   "verdict": "open",
+   "assessment": "Its identification as a long barrow is uncertain and nothing dates it, so the c. 3800 BC type estimate cannot be confirmed.",
+   "sources": [
+    {
+     "title": "Wikipedia: Richmond Park",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Richmond_Park",
+     "locator": "History",
+     "quote": "an unnamed mound which could be a long barrow"
+    },
+    {
+     "title": "Wikimedia Commons: Category:Long Mound at Richmond Park",
+     "author": "Wikimedia Commons (Wikidata infobox)",
+     "kind": "reference",
+     "url": "https://commons.wikimedia.org/wiki/Category:Long_Mound_at_Richmond_Park",
+     "locator": "infobox",
+     "quote": "long barrow (possibly)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-notgrove-long-barrow",
+   "record": "Q7062649",
+   "name": "Notgrove Long Barrow",
+   "field": "date",
+   "claim": "Notgrove is a Cotswold-Severn chambered long barrow with a central passage and side chambers; Darvill dates the appearance of Cotswold-Severn long barrows to about 3700 BC, the type continuing for about 600 years.",
+   "value": "c. 3800-3700 BC (Cotswold-Severn chambered long barrow)",
+   "verdict": "kept",
+   "assessment": "No site-specific dates; the type dating (c. 3700 BC onwards) supports the catalogue's c. 3800 BC within the precision of the type.",
+   "sources": [
+    {
+     "title": "Wikipedia: Notgrove Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Notgrove_Long_Barrow",
+     "locator": "lead",
+     "quote": "It consists of a large mound with a passage running through the centre and several small chambers opening off it"
+    },
+    {
+     "title": "Wikipedia: Cotswold-Severn Group",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswold-Severn_Group",
+     "locator": "Chronology (Darvill)",
+     "quote": "Darvill argued that long barrows appeared in the Cotswolds-Severn region fairly abruptly around 3700 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-perry-dale-bowl-barrow-and-long-barrow",
+   "record": "Q17649423",
+   "name": "Perry Dale bowl barrow and long barrow",
+   "field": "date",
+   "claim": "The Derbyshire HER describes a Neolithic long barrow with a Bronze Age bowl barrow built on its end; the long barrow is the older and was built in the Neolithic.",
+   "value": "Neolithic long barrow, c. 3800 BC by type; Bronze Age bowl barrow on top",
+   "verdict": "kept",
+   "assessment": "The long barrow is Neolithic and undated beyond that, so the type estimate stands.",
+   "sources": [
+    {
+     "title": "Derbyshire HER MDR2230: Perry Dale bowl barrow and long barrow",
+     "author": "Derbyshire County Council HER",
+     "kind": "listing",
+     "url": "https://her.derbyshire.gov.uk/Monument/MDR2230",
+     "locator": "Full description",
+     "quote": "the long barrow is somewhat older and was constructed during the Neolithic period"
+    },
+    {
+     "title": "Wikipedia: Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "Distribution and chronology",
+     "quote": "Excavation suggests that these earthen long barrows were likely constructed between 3800 and 3000 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-pouquelaye-de-faldouet",
+   "record": "Q2260622",
+   "name": "Pouquelaye de Faldouet",
+   "field": "date",
+   "claim": "Visit Jersey and a Jersey guide describe La Pouquelaye de Faldouet as a Neolithic passage grave built about 6,000 years ago (c. 4000-3250 BC).",
+   "value": "c. 4000-3250 BC (Neolithic passage grave)",
+   "verdict": "kept",
+   "assessment": "c. 3800 BC falls within the stated range.",
+   "sources": [
+    {
+     "title": "La Pouquelaye de Faldouet",
+     "author": "Visit Jersey",
+     "kind": "secondary",
+     "url": "https://jersey.com/things-to-do/attractions/listings/la-pouquelaye-de-faldouet",
+     "locator": "description",
+     "quote": "Built around 6,000 years ago, La Pouquelaye de Faldouet is a Neolithic passage grave"
+    },
+    {
+     "title": "Faldouet Dolmen",
+     "author": "History Alive (Jersey)",
+     "kind": "secondary",
+     "url": "https://www.historyalive.je/tours/private-guided-tours/megalithic-jersey/faldouet-dolmen-neolithic/",
+     "locator": "description",
+     "quote": "4000-3250BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-randwick-hill-long-barrow-round-barrows-and-dyke",
+   "record": "Q17645852",
+   "name": "Randwick Hill long barrow, round barrows and dyke",
+   "field": "date",
+   "claim": "Randwick long barrow is a Cotswold-Severn long barrow with a horned forecourt and a single chamber excavated in 1883; the Internet Archaeology gazetteer gives 3500-2500 bc; Darvill places the start of the type around 3700 BC.",
+   "value": "c. 3800-3700 BC (Cotswold-Severn long barrow)",
+   "verdict": "kept",
+   "assessment": "Undated beyond the type; c. 3800 BC is consistent with the type's Early Neolithic start.",
+   "sources": [
+    {
+     "title": "Attitudes to the Disposal of the Dead, gazetteer: Randwick I",
+     "author": "Internet Archaeology 11",
+     "kind": "secondary",
+     "url": "https://www.intarch.ac.uk/journal/issue11/1/gaz_fr.cfm?id=37",
+     "locator": "site 37",
+     "quote": "A long barrow oriented NE with a horned entrance leading into a single burial chamber"
+    },
+    {
+     "title": "Randwick Long Barrow, Gloucestershire",
+     "author": "Tim Darvill (Digital Digging)",
+     "kind": "secondary",
+     "url": "https://www.digitaldigging.net/randwick-long-barrow-gloucestershire/",
+     "locator": "description",
+     "quote": "Excavations in 1883 found a forecourt opening to the north-east"
+    },
+    {
+     "title": "Wikipedia: Cotswold-Severn Group",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswold-Severn_Group",
+     "locator": "Chronology (Darvill)",
+     "quote": "Darvill argued that long barrows appeared in the Cotswolds-Severn region fairly abruptly around 3700 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-rollright-stones",
+   "record": "Q7361310",
+   "name": "Rollright Stones",
+   "field": "date",
+   "claim": "The Rollright Trust dates the oldest monument, the Whispering Knights portal dolmen, to the Early Neolithic, c. 3800-3500 BC; the King's Men circle to c. 2500 BC and the King Stone to c. 1500 BC.",
+   "value": "c. 3800-3500 BC (Whispering Knights); King's Men c. 2500 BC; King Stone c. 1500 BC",
+   "verdict": "kept",
+   "assessment": "The complex's earliest monument supports c. 3800 BC.",
+   "sources": [
+    {
+     "title": "The Rollright Stones: overview and history",
+     "author": "The Rollright Trust",
+     "kind": "secondary",
+     "url": "https://www.rollrightstones.co.uk/stones/overview",
+     "locator": "overview",
+     "quote": "The oldest, the Whispering Knights dolmen, is early Neolithic, circa 3,800-3,500 BC"
+    },
+    {
+     "title": "The Whispering Knights",
+     "author": "The Rollright Trust",
+     "kind": "secondary",
+     "url": "https://www.rollrightstones.co.uk/stones/whispering-knights",
+     "locator": "description",
+     "quote": "perhaps built around 3,800 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-round-cairn-with-funerary-chamber-on-buzza-hill-45m-west-of-the-buzza-tower-st-mary-s",
+   "record": "Q17649595",
+   "name": "Round cairn with funerary chamber on Buzza Hill, 45m west of the Buzza Tower, St Mary's",
+   "field": "date",
+   "claim": "The Buzza Hill chambered cairn is typical of the Late Neolithic and Early Bronze Age cairns of Scilly; Scillonian entrance graves and burials date from the later Neolithic to the Middle Bronze Age (c. 2500-1000 BC).",
+   "value": "c. 2500 BC or later (Late Neolithic / Early Bronze Age)",
+   "verdict": "corrected",
+   "assessment": "The 3800 BC portal-tomb estimate is about a millennium too early for a Scillonian chambered cairn.",
+   "sources": [
+    {
+     "title": "Buzza Hill Entrance Grave",
+     "author": "World History Encyclopedia (J. van der Crabben)",
+     "kind": "secondary",
+     "url": "https://www.worldhistory.org/image/18832/buzza-hill-entrance-grave/",
+     "locator": "caption",
+     "quote": "It is typical of late Neolithic and early Bronze Age cairns on the Isles of Scilly"
+    },
+    {
+     "title": "Wikipedia: Entrance grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Entrance_grave",
+     "locator": "Isles of Scilly",
+     "quote": "Burials on the islands range in date from the later Neolithic period to the Middle Bronze Age"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-south-street-barrow",
+   "record": "Q7568568",
+   "name": "South Street barrow",
+   "field": "date",
+   "claim": "South Street long barrow (Avebury 68) was of single-phase construction on an old plough soil; radiocarbon dates of 2810 ± 130 bc (charcoal beneath), 2750 ± 135 and 2670 ± 140 bc (primary ditch bone and antler) and 2580 ± 110 bc (antler in the mound), all uncalibrated.",
+   "value": "c. 3500 BC (radiocarbon)",
+   "verdict": "corrected",
+   "assessment": "Calibrated, the construction dates fall around 3600-3300 cal BC, centred about 3500 BC, later than the 3800 BC type estimate.",
+   "sources": [
+    {
+     "title": "Attitudes to the Disposal of the Dead, gazetteer: Avebury 68, South Street",
+     "author": "Internet Archaeology 11",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue11/1/gaz_fr.cfm?id=97",
+     "locator": "site 97",
+     "quote": "Long barrow oriented ESE, of single phase construction built on old plough soil"
+    },
+    {
+     "title": "Attitudes to the Disposal of the Dead, gazetteer: Avebury 68, South Street",
+     "author": "Internet Archaeology 11",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue11/1/gaz_fr.cfm?id=97",
+     "locator": "site 97 (radiocarbon)",
+     "quote": "primary animal bone and antler from flanking ditches BM-357 2750 +/- 135"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-the-devil-s-den",
+   "record": "Q7729909",
+   "name": "The Devil's Den",
+   "field": "date",
+   "claim": "The Devil's Den is the reconstructed (1921) stone chamber of a Neolithic chambered long mound on Fyfield Down; no dates are published.",
+   "value": "Early Neolithic, c. 3800 BC by type",
+   "verdict": "kept",
+   "assessment": "Neolithic chambered tomb with no site dates; the type estimate is reasonable.",
+   "sources": [
+    {
+     "title": "Wikipedia: The Devil's Den",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Devil's_Den",
+     "locator": "lead",
+     "quote": "The chamber is part of a Neolithic passage grave on Fyfield Down"
+    },
+    {
+     "title": "Wikipedia: Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "Distribution and chronology",
+     "quote": "Excavation suggests that these earthen long barrows were likely constructed between 3800 and 3000 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-the-longstone",
+   "record": "Q7748354",
+   "name": "The Longstone",
+   "field": "date",
+   "claim": "Pottery excavated in 1956 shows the long mound at the Longstone, and probably the stones, are Neolithic.",
+   "value": "Neolithic, c. 3800 BC by type",
+   "verdict": "kept",
+   "assessment": "Neolithic long mound with no closer date; the type estimate stands.",
+   "sources": [
+    {
+     "title": "Wikipedia: The Longstone, Mottistone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Longstone,_Mottistone",
+     "locator": "Dating",
+     "quote": "pottery excavated in 1956 indicates that the mound (and therefore probably the stones also) are Neolithic"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-weetwood-moor",
+   "record": "Q20712630",
+   "name": "Weetwood Moor",
+   "field": "date",
+   "claim": "Weetwood Moor has some 30 panels of cup-and-ring carvings on outcrop, dated only broadly to the Neolithic or Early Bronze Age, between about 3800 and 1500 BC.",
+   "value": "Neolithic or Early Bronze Age (c. 3800-1500 BC)",
+   "verdict": "open",
+   "assessment": "3800 BC is merely the earliest bound of a broad range for rock art, not a date for the carvings.",
+   "sources": [
+    {
+     "title": "Wikipedia: Weetwood Moor",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weetwood_Moor",
+     "locator": "lead",
+     "quote": "it has been dated to between 1500 and 3800 BCE"
+    },
+    {
+     "title": "Weetwood Moor",
+     "author": "Rock Art on Mobile Phones project, Newcastle University",
+     "kind": "secondary",
+     "url": "https://rockartmob.ncl.ac.uk/main/w",
+     "locator": "Weetwood Moor",
+     "quote": "There are some 30 panels of carved outcrop on Weetwood Moor"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-white-barrow",
+   "record": "Q7994453",
+   "name": "White Barrow",
+   "field": "date",
+   "claim": "White Barrow on Salisbury Plain is unexcavated, but dating of material found in and around it suggests 4000-3500 BC, like the other long barrows of the Plain.",
+   "value": "c. 4000-3500 BC",
+   "verdict": "kept",
+   "assessment": "c. 3800 BC lies within the stated range.",
+   "sources": [
+    {
+     "title": "Wikipedia: White Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/White_Barrow",
+     "locator": "lead",
+     "quote": "dating of materials found in and around it suggests that it dates from 3500 to 4000 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-white-rake-long-barrow-and-bowl-barrow",
+   "record": "Q17649341",
+   "name": "White Rake long barrow and bowl barrow",
+   "field": "date",
+   "claim": "The Derbyshire HER records a Neolithic long barrow with a Bronze Age bowl barrow superimposed on its east end; unexcavated, identified by its form.",
+   "value": "Neolithic long barrow, c. 3800 BC by type; Bronze Age bowl barrow on top",
+   "verdict": "kept",
+   "assessment": "Neolithic long barrow without site dates; type estimate stands.",
+   "sources": [
+    {
+     "title": "Derbyshire HER MDR2054: Long Barrow and Round Barrow, Longstone Moor",
+     "author": "Derbyshire County Council HER",
+     "kind": "listing",
+     "url": "https://her.derbyshire.gov.uk/Monument/MDR2054",
+     "locator": "Full description",
+     "quote": "The monument includes both a Neolithic long barrow and a Bronze Age bowl barrow"
+    },
+    {
+     "title": "Wikipedia: Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "Distribution and chronology",
+     "quote": "Excavation suggests that these earthen long barrows were likely constructed between 3800 and 3000 BCE"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-wor-barrow-and-two-bowl-barrows-on-handley-down",
+   "record": "Q17671858",
+   "name": "Wor Barrow and two bowl barrows on Handley Down",
+   "field": "date",
+   "claim": "A radiocarbon and Bayesian modelling programme (Allen, Smith et al., Historic England 2016) shows the Wor Barrow chamber was built between 3685 and 3650 BC, covered by its mound around 3655-3595 BC and the ditch completed by 3635-3485 BC.",
+   "value": "chamber built c. 3685-3650 BC (radiocarbon, modelled)",
+   "verdict": "corrected",
+   "assessment": "Modelled radiocarbon dates place construction about 3670 BC, a little later than the 3800 BC type estimate.",
+   "sources": [
+    {
+     "title": "Wor Barrow",
+     "author": "The Salisbury Museum",
+     "kind": "secondary",
+     "url": "https://salisburymuseum.org.uk/collections/wor-barrow/",
+     "locator": "collection page",
+     "quote": "The chamber was built between 3685 and 3650BC"
+    },
+    {
+     "title": "Dorset HER MDO6074: Wor Barrow, Sixpenny Handley",
+     "author": "Dorset Council HER",
+     "kind": "listing",
+     "url": "https://heritage.dorsetcouncil.gov.uk/Monument/MDO6074",
+     "locator": "Full description (NRHE summary)",
+     "quote": "antler radicoarbon dated to the early to mid 4th millennium BC in the lowest fill"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-dolmen-du-tr-pied",
+   "record": "Q1810261",
+   "name": "dolmen du Trépied",
+   "field": "date",
+   "claim": "Guernsey Museums date Le Trépied to the Neolithic (c. 4000-2500 BC), used until c. 1000 BC. A 2017 dig found charcoal under the remnants of the mound dated to 4400-4300 BC, which the States Archaeologist took as dating the tomb; a second sample from the entrance gave 3000-2900 BC.",
+   "value": "Neolithic passage grave; built after c. 4400-4300 BC (charcoal under the mound), museum range c. 4000-2500 BC",
+   "verdict": "open",
+   "assessment": "Charcoal beneath the mound only gives a date before which the mound cannot have been built, so the build date lies between c. 4400 BC and the museum's range; 3800 BC is plausible but not established.",
+   "sources": [
+    {
+     "title": "Archaeological sites: Le Trépied",
+     "author": "Guernsey Museums",
+     "kind": "listing",
+     "url": "https://museums.gov.gg/archsites",
+     "locator": "Le Trépied",
+     "quote": "This prehistoric passage grave was built during the Neolithic period (c.4000 - 2500BC)"
+    },
+    {
+     "title": "Charcoal fragment dates dolmen site to 4400BC",
+     "author": "Guernsey Press (J. Pouteaux, 19 Apr 2018)",
+     "kind": "secondary",
+     "url": "https://guernseypress.com/news/2018/04/19/charcoal-fragment-dates-dolmen-site-to-4400bc",
+     "locator": "article",
+     "quote": "The speck of charcoal was found under the remnants of the mound that would have once covered the tomb and was dated to between 4400BC and 4300BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-aghaderrard-court-tomb",
+   "record": "Q27058634",
+   "name": "Aghaderrard Court Tomb",
+   "field": "date",
+   "claim": "The SMR records Aghaderrard West (LE002-019) as a court tomb and National Monument No. 477; radiocarbon dating puts the earliest court tombs around 3750 BC.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Undated court tomb; the type range supports c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR LE002-019----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LE002-019----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "LE002-019, Aghaderrard West",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Archaeological Survey of Ireland, SMR LE002-019----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LE002-019----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "LE002-019",
+     "quote": "This is a National Monument in state ownership: No. 477"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-ballintaggart-court-tomb",
+   "record": "Q1137772",
+   "name": "Ballintaggart court tomb",
+   "field": "date",
+   "claim": "National Museums NI say the Neolithic court tomb from Ballintaggart, Co. Armagh, was excavated in 1966 ahead of quarrying, rebuilt at the Ulster Museum in Belfast, stored from 2006 and re-erected at the Ulster Folk Museum (Cultra) in 2023.",
+   "value": "Neolithic court tomb, c. 3700 BC by type (about 6,000 years old)",
+   "verdict": "kept",
+   "assessment": "Neolithic court tomb; c. 3700 BC fits the type and the museum's '6000-year-old' description.",
+   "sources": [
+    {
+     "title": "6000-year-old burial tomb relocated to Ulster Folk Museum",
+     "author": "National Museums NI (Ulster Folk Museum)",
+     "kind": "secondary",
+     "url": "https://www.ulsterfolkmuseum.org/news/6000-year-old-burial-tomb-relocated-ulster-folk-museum",
+     "locator": "news, 25.09.2023",
+     "quote": "A court tomb originating from Ballintaggart, Co"
+    },
+    {
+     "title": "Ballintaggart Court Tomb",
+     "author": "Ulster Folk Museum",
+     "kind": "secondary",
+     "url": "https://ulsterfolkmuseum.org/ballintaggart-court-tomb",
+     "locator": "Saved from destruction",
+     "quote": "a Neolithic court tomb at Ballintaggart, County Armagh, was at risk of destruction from expansion of a neighbouring quarry"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-carricknagat-megalithic-tombs",
+   "record": "Q33093089",
+   "name": "Carricknagat Megalithic Tombs",
+   "field": "date",
+   "claim": "Two tombs in Carricknagat (Tirerrill), National Monument No. 277: a court tomb (SL021-104) and, 50 m away, an unclassified megalithic tomb that may be an abandoned attempt to build one (SL021-062).",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Undated court tomb; type range supports c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR SL021-104----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL021-104----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "SL021-104, Carricknagat (Tirerrill By.)",
+     "quote": "This court tomb is a National Monument in State ownership (no. 277)"
+    },
+    {
+     "title": "Archaeological Survey of Ireland, SMR SL021-062----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL021-062----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "SL021-062",
+     "quote": "or perhaps an abandoned attempt to build one"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-carrigeengeare-court-tomb",
+   "record": "Q126374794",
+   "name": "Carrigeengeare court tomb",
+   "field": "date",
+   "claim": "The SMR records a ruined court tomb (LE012-010) in an oval cairn at Carrigeengeare, Co. Leitrim; undated.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Undated court tomb; type range supports c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR LE012-010----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LE012-010----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "LE012-010",
+     "quote": "which are the scant remains of a gallery oriented NNW-SSE"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-carrownakib-court-tomb",
+   "record": "Q140391679",
+   "name": "Carrownakib court tomb",
+   "field": "date",
+   "claim": "The SMR records a very ruined court tomb (GA055-034) near Lough Corrib, with a gallery of at least two chambers and a courtstone; undated.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Undated court tomb; type range supports c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR GA055-034----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27GA055-034----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "GA055-034",
+     "quote": "A single courtstone flanks N jamb"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-carrowreagh-court-tomb",
+   "record": "Q27107770",
+   "name": "Carrowreagh Court Tomb",
+   "field": "date",
+   "claim": "Carrowreagh (Leyny) has two court tombs 300 m apart on a bog-covered plateau of the Ox Mountains: SL036-002 and SL036-003, the latter National Monument No. 479; neither is dated.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Undated court tomb; type range supports c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR SL036-003----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL036-003----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "SL036-003",
+     "quote": "A National Monument (No. 479) in state guardianship"
+    },
+    {
+     "title": "Archaeological Survey of Ireland, SMR SL036-002----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL036-002----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "SL036-002",
+     "quote": "consists of a gallery (L 6m; Wth 1.5-3.3m) preceded at the E by the N side of a court"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-cohaw-tomb",
+   "record": "Q1107054",
+   "name": "Cohaw Tomb",
+   "field": "date",
+   "claim": "Cohaw (CV018-005) is a dual court tomb, both galleries in one cairn, excavated by Kilbride-Jones in 1949, with a carinated Neolithic bowl among the finds; no radiocarbon date.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Neolithic court tomb; type range supports c. 3700 BC.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR CV018-005----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27CV018-005----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "CV018-005",
+     "quote": "This dual court tomb was excavated by H. E. Kilbride-Jones in 1949"
+    },
+    {
+     "title": "Wikipedia: Cohaw",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cohaw",
+     "locator": "lead",
+     "quote": "A carinated, round-bottomed Neolithic bowl was also uncovered"
+    },
+    {
+     "title": "Wikipedia: Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "History",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-corracloona",
+   "record": "Q1135205",
+   "name": "Corracloona",
+   "field": "date",
+   "claim": "The SMR classes Corracloona (LE008-013) as an unclassified megalithic tomb that could morphologically be a court tomb or a wedge tomb; finds from the 1953 excavation (scrapers, a leaf-shaped arrowhead, coarse pottery) are undiagnostic. Wikipedia gives c. 2000-1500 BC.",
+   "value": "Neolithic or Early Bronze Age; type uncertain (court tomb or wedge tomb)",
+   "verdict": "open",
+   "assessment": "With the type in doubt (wedge tombs date to c. 2500-2000 BC) and no dates, the court-tomb estimate of 3700 BC cannot be confirmed.",
+   "sources": [
+    {
+     "title": "Archaeological Survey of Ireland, SMR LE008-013----",
+     "author": "National Monuments Service (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LE008-013----%27&outFields=SMRS,TOWNLAND,MONUMENT_CLASS,WEB_NOTES&f=html",
+     "locator": "LE008-013",
+     "quote": "Morphologically, it could be a court tomb or wedge tomb"
+    },
+    {
+     "title": "Wikipedia: Corracloona Court Tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corracloona_Court_Tomb",
+     "locator": "Description",
+     "quote": "although some see it as a dolmen (portal tomb) or Wedge-shaped gallery grave (wedge tomb)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-court-tomb-of-behy",
+   "record": "Q21037074",
+   "name": "Court Tomb of Behy",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as MA006-013----, a court tomb. Excavation in 1963–64 produced early Neolithic pottery and flints. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places MA006-013----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27MA006-013----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS MA006-013----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Behy court tomb",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Behy_court_tomb",
+     "locator": "Excavations",
+     "quote": "A range of early Neolithic pottery and lithic artefacts were found during the excavation"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-cummeen-court-cairn",
+   "record": "Q28232458",
+   "name": "Cummeen Court Cairn",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as SL014-045----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places SL014-045----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL014-045----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS SL014-045----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-doon-court-tomb",
+   "record": "Q123694064",
+   "name": "Doon court tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as CV010-013----, a court tomb. It is a dual court tomb in a long cairn just north of Ballyconnell, Co. Cavan. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places CV010-013----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27CV010-013----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS CV010-013----",
+     "quote": "Situated in rolling countryside just N of Ballyconnell. This is a dual court tomb set in a long cairn."
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-fortland-court-tomb",
+   "record": "Q132073314",
+   "name": "Fortland court tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as SL011-034----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places SL011-034----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL011-034----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS SL011-034----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-gartnanoul-court-tomb",
+   "record": "Q5524425",
+   "name": "Gartnanoul Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as CV019-035----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places CV019-035----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27CV019-035----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS CV019-035----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-gortnaleck-court-tomb",
+   "record": "Q27118887",
+   "name": "Gortnaleck Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as SL005-090----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places SL005-090----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL005-090----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS SL005-090----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-killydrutan-court-tomb",
+   "record": "Q131468154",
+   "name": "Killydrutan court tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as MO013-007----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places MO013-007----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27MO013-007----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS MO013-007----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-knockbrack-tomb",
+   "record": "Q1777329",
+   "name": "Knockbrack Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the monument at Knockbrack (Sellerna Bay, Co. Galway) as GA022-048, an unclassified megalithic tomb: a small chamber whose remains are insufficient to allow classification.",
+   "value": "Neolithic? (unclassified megalithic tomb)",
+   "verdict": "open",
+   "assessment": "The court-tomb typology date rests on a type the register does not assign; without a classification or excavation there is no verifiable construction date.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places GA022-048----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27GA022-048----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS GA022-048----",
+     "quote": "The remains are insufficient to allow classification."
+    },
+    {
+     "title": "Record of Monuments and Places GA022-048----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27GA022-048----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS GA022-048----",
+     "quote": "Megalithic tomb - unclassified"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-knockergrana-court-tomb",
+   "record": "Q111758775",
+   "name": "Knockergrana court tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as DG012-006----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places DG012-006----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27DG012-006----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS DG012-006----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-laraghirril-court-tomb",
+   "record": "Q2402971",
+   "name": "Laraghirril Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as DG012-003----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places DG012-003----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27DG012-003----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS DG012-003----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-magheraghanrush-court-tomb",
+   "record": "Q1884051",
+   "name": "Magheraghanrush Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as SL015-050----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; Wikipedia's 'c. 3000 BC' for this tomb is unsourced and no site date exists.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places SL015-050----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL015-050----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS SL015-050----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-moytirra-east-court-tomb",
+   "record": "Q28232444",
+   "name": "Moytirra East Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as SL035-079----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places SL035-079----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27SL035-079----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS SL035-079----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-rathlackan-tomb",
+   "record": "Q33110953",
+   "name": "Rathlackan Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as MA007-016006-, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places MA007-016006-",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27MA007-016006-%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS MA007-016006-",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-rathlacken",
+   "record": "Q17325830",
+   "name": "Rathlacken",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as MA007-016006-, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places MA007-016006-",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27MA007-016006-%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS MA007-016006-",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-rathoonagh-court-tomb",
+   "record": "Q127946617",
+   "name": "Rathoonagh Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as MA014-004----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places MA014-004----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27MA014-004----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS MA014-004----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-rockmarshall-court-tomb",
+   "record": "Q20758261",
+   "name": "Rockmarshall Court Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as LH008-033----, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places LH008-033----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LH008-033----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS LH008-033----",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-rosdoagh-stone-circle",
+   "record": "Q28232534",
+   "name": "Rosdoagh Stone Circle",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as MA004-016001-, a court tomb. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places MA004-016001-",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27MA004-016001-%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS MA004-016001-",
+     "quote": "Megalithic tomb - court tomb"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-shalwy-tomb",
+   "record": "Q19277635",
+   "name": "Shalwy Tomb",
+   "field": "date",
+   "claim": "The Archaeological Survey of Ireland records the site as DG097-018----, a court tomb. Excavated 1966–69 (Flanagan), it produced Neolithic flints and pottery on the primary floor, with later Iron Age reuse. Radiocarbon dating puts the first Irish court tombs at c. 3750–3700 BC, with building continuing for a few centuries.",
+   "value": "c. 3700 BC (court tomb, by type)",
+   "verdict": "kept",
+   "assessment": "Register confirms the court-tomb type and the type's radiocarbon dating supports c. 3700 BC; no site-specific date is available.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places DG097-018----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27DG097-018----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS DG097-018----",
+     "quote": "The floor level of the front chamber produced a series of Neolithic flint implements"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead / dating",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-trethevy-quoit",
+   "record": "Q1403777",
+   "name": "Trethevy Quoit",
+   "field": "date",
+   "claim": "English Heritage describes Trethevy Quoit as a well-preserved portal dolmen of the early or middle Neolithic; portal dolmens in Wales and Ireland are dated to c. 3800–3500 BC. The site itself has no scientific date.",
+   "value": "c. 3700–3500 BC (portal dolmen)",
+   "verdict": "kept",
+   "assessment": "The type dating supports c. 3700 BC; English Heritage's broader 3500–2500 BC range is a period label rather than a measured date.",
+   "sources": [
+    {
+     "title": "History of Trethevy Quoit",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/trethevy-quoit/history/",
+     "locator": "History",
+     "quote": "Trethevy Quoit is a particularly well-preserved example of a portal dolmen"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "Origins",
+     "quote": "A few dolmens can be dated in both Wales and Ireland from 3800 to 3500 BC"
+    },
+    {
+     "title": "Trethevy Quoit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trethevy_Quoit",
+     "locator": "Studies",
+     "quote": "this type of megalith was erected in the Neolithic period between 3700 and 3500 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-west-kennet-long-barrow",
+   "record": "Q541312",
+   "name": "West Kennet Long Barrow",
+   "field": "date",
+   "claim": "Bayliss, Whittle & Wysocki (2007) model 31 radiocarbon dates and place the construction of the barrow, dated from the primary mortuary deposits, in 3670–3635 cal BC; English Heritage gives c. 3650 BC.",
+   "value": "3670–3635 cal BC (radiocarbon, Bayesian model)",
+   "verdict": "kept",
+   "assessment": "The catalogue's 3650 BC lies within the modelled construction range.",
+   "sources": [
+    {
+     "title": "Talking About My Generation: the Date of the West Kennet Long Barrow",
+     "author": "Bayliss, A., Whittle, A. & Wysocki, M. (2007), Cambridge Archaeological Journal 17(S1), 85-101",
+     "kind": "primary",
+     "url": "https://storre.stir.ac.uk/handle/1893/28555",
+     "locator": "abstract",
+     "quote": "the construction of the monument at West Kennet, as dated from the primary mortuary deposits, occurred in 3670–3635 cal BC"
+    },
+    {
+     "title": "History of West Kennet Long Barrow",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/west-kennet-long-barrow/history/",
+     "locator": "History",
+     "quote": "West Kennet Long Barrow was built around 3650 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-caerau-hillfort",
+   "record": "Q5016882",
+   "name": "Caerau Hillfort",
+   "field": "date",
+   "claim": "Caerau is a multivallate Iron Age hillfort whose occupation began about 600 BC; excavations in 2013–14 found an Early Neolithic causewayed enclosure beneath it, with flint tools of c. 3600 BC.",
+   "value": "c. 3600 BC (Neolithic causewayed enclosure); Iron Age hillfort from c. 600 BC",
+   "verdict": "kept",
+   "assessment": "The site was begun as an Early Neolithic causewayed enclosure (c. 3600 BC), the catalogue's date; the hillfort that gives it its name is Iron Age.",
+   "sources": [
+    {
+     "title": "Early Neolithic enclosures in Wales: a review of the evidence in light of recent discoveries at Caerau, Cardiff",
+     "author": "Davis, O. & Sharples, N. (2017), Antiquaries Journal 97",
+     "kind": "primary",
+     "url": "https://www.cambridge.org/core/product/3B31FA1AC027580F4EF3882E57D9ED0A",
+     "locator": "abstract",
+     "quote": "Recent work by the authors at the Iron Age hillfort of Caerau, Cardiff, have confirmed the presence of another, large, Early Neolithic causewayed enclosure"
+    },
+    {
+     "title": "Caerau Hillfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caerau_Hillfort",
+     "locator": "The hillfort",
+     "quote": "showed the hillfort's occupation began about 600 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-wayland-s-smithy",
+   "record": "Q2553002",
+   "name": "Wayland's Smithy",
+   "field": "date",
+   "claim": "English Heritage, after the radiocarbon modelling of Whittle, Bayliss & Wysocki (2007), says the first monument was built between 3590 and 3555 BC and the stone-chambered long barrow about 3460–3400 BC.",
+   "value": "3590–3555 BC (timber mortuary structure); stone long barrow c. 3460–3400 BC",
+   "verdict": "corrected",
+   "assessment": "The catalogue's 3550 BC is just after the modelled range for the first structure; the start is better given as 3590 BC.",
+   "sources": [
+    {
+     "title": "History of Wayland's Smithy",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/waylands-smithy/history/",
+     "locator": "History",
+     "quote": "The first monument here, built between 3590 and 3555 BC, was a mortuary structure of stone and wood"
+    },
+    {
+     "title": "History of Wayland's Smithy",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/waylands-smithy/history/",
+     "locator": "History",
+     "quote": "Built between about 3460 and 3400 BC, this absorbed the older mound altogether"
+    },
+    {
+     "title": "Once in a Lifetime: the Date of the Wayland's Smithy Long Barrow",
+     "author": "Whittle, A., Bayliss, A. & Wysocki, M. (2007), Cambridge Archaeological Journal 17(S1), 103-121",
+     "kind": "primary",
+     "url": "https://storre.stir.ac.uk/handle/1893/28556?mode=full",
+     "locator": "abstract",
+     "quote": "the second phase of the monument was probably constructed in the middle to later part of the 35th century cal BC (3460–3400 cal BC)"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-achaidh-cairn",
+   "record": "Q22131961",
+   "name": "Achaidh Cairn",
+   "field": "date",
+   "claim": "HES schedules Achaidh as an Orkney-Cromarty chambered cairn, excavated by Curle in 1909; HES gives c. 3600–2500 BC for the building and use of such cairns.",
+   "value": "c. 3500 BC (Orkney-Cromarty chambered cairn, by type)",
+   "verdict": "kept",
+   "assessment": "No site date, but c. 3500 BC sits within the type's dated range.",
+   "sources": [
+    {
+     "title": "Achaidh, chambered cairn (SM1813)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM1813",
+     "locator": "Description",
+     "quote": "The chambered cairn is of Orkney-Cromarty type and was excavated by Curle in 1909"
+    },
+    {
+     "title": "Scheduled monument SM1440 (Orkney-Cromarty chambered cairn)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM1440",
+     "locator": "Statement of national importance",
+     "quote": "constructed and in use between around 3600 BC and 2500 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-achnabreck-cup-and-ring-marks",
+   "record": "Q340567",
+   "name": "Achnabreck Cup And Ring Marks",
+   "field": "date",
+   "claim": "HES places the Achnabreck carvings among the later Neolithic and Bronze Age rock art of Kilmartin; Scotland's Rock Art Project says Scottish carvings were probably made at least 5000 years ago, in the Neolithic.",
+   "value": "c. 3000 BC (later Neolithic) or later",
+   "verdict": "corrected",
+   "assessment": "The site's own register puts it in the later Neolithic and Bronze Age (from c. 3000 BC), so the 3500 BC type estimate is too early.",
+   "sources": [
+    {
+     "title": "Achnabreck, cup and ring marked rocks (SM90006)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90006",
+     "locator": "Statement of national importance",
+     "quote": "the densest and most elaborate concentration of later Neolithic and Bronze Age carvings in Scotland"
+    },
+    {
+     "title": "Dating rock art",
+     "author": "Scotland's Rock Art Project",
+     "kind": "secondary",
+     "url": "https://rockart.scot/about-rock-art/about-rock-art-dating-rock-art/",
+     "locator": "Dating rock art",
+     "quote": "recent research shows that they were probably made at least 5000 years ago in the Neolithic period"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "check-aghnaskeagh-cairns",
+   "record": "Q15053669",
+   "name": "Aghnaskeagh Cairns",
+   "field": "date",
+   "claim": "Aghnaskeagh, Co. Louth, has two excavated cairns: Cairn A (LH004-032), a portal tomb with six Bronze Age cists added, and Cairn B (LH004-033), a court-tomb cairn whose chambers held Neolithic pottery and flints. Dolmens and court tombs date to c. 3800–3500 BC.",
+   "value": "c. 3500 BC (Neolithic portal tomb and court-tomb cairn; Bronze Age cists added)",
+   "verdict": "kept",
+   "assessment": "Both cairns are Early Neolithic tomb types and c. 3500 BC fits the type dating, though no site radiocarbon date exists.",
+   "sources": [
+    {
+     "title": "Record of Monuments and Places LH004-032----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LH004-032----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS LH004-032----",
+     "quote": "incorporating a portal-tomb to the E and six Bronze Age cists to the W"
+    },
+    {
+     "title": "Record of Monuments and Places LH004-033----",
+     "author": "National Monuments Service, Archaeological Survey of Ireland (SMR open data)",
+     "kind": "listing",
+     "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%3D%27LH004-033----%27&outFields=SMRS%2CTOWNLAND%2CMONUMENT_CLASS%2CWEB_NOTES&returnGeometry=false&f=json",
+     "locator": "SMRS LH004-033----",
+     "quote": "Finds from the chambers included cremated bone, Neolithic pot sherds and flints"
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "Origins",
+     "quote": "A few dolmens can be dated in both Wales and Ireland from 3800 to 3500 BC"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-haddon-hall",
+   "record": "Q3080996",
+   "name": "Haddon Hall",
+   "field": "date",
+   "claim": "The catalogue dates Haddon Hall to the 11th century. The list entry finds only fragments of 12th-century work, the house being mainly of the 14th and 15th centuries.",
+   "value": "12th century (fragments); mainly 14th–15th century",
+   "verdict": "corrected",
+   "assessment": "No 11th-century fabric is recorded; the oldest surviving fabric is 12th century.",
+   "sources": [
+    {
+     "title": "Haddon Hall, list entry 1334982",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101334982",
+     "locator": "list description",
+     "quote": "Fragments of C12 work but mainly of two periods"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-ashton-court",
+   "record": "Q4806024",
+   "name": "Ashton Court",
+   "field": "date",
+   "claim": "The catalogue dates Ashton Court to the 11th century. The list entry dates the house to the 15th century, altered c.1635 and later.",
+   "value": "15th century (medieval core); altered c.1635, 18th–19th century",
+   "verdict": "corrected",
+   "assessment": "The 11th-century date belongs to the estate, not the standing house, whose oldest fabric is 15th century.",
+   "sources": [
+    {
+     "title": "Ashton Court Mansion and Stables, list entry 1129841",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101129841",
+     "locator": "list description",
+     "quote": "C15; altered and extended c.1635"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-old-palace-canterbury",
+   "record": "Q7084689",
+   "name": "Old Palace, Canterbury",
+   "field": "date",
+   "claim": "The catalogue dates the Old Palace to the 11th century. The list entry says it was rebuilt in 1896 by W. D. Caröe with considerable traces of the early 13th-century Archbishop's Palace.",
+   "value": "early 13th century (traces); rebuilt 1896",
+   "verdict": "corrected",
+   "assessment": "The oldest surviving palace fabric is early 13th century; the building is largely of 1896.",
+   "sources": [
+    {
+     "title": "The Archbishop's Palace or the Old Palace, list entry 1085066",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101085066",
+     "locator": "list description",
+     "quote": "Rebuilt in 1896 by W.D Caröe"
+    },
+    {
+     "title": "The Archbishop's Palace or the Old Palace, list entry 1085066",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101085066",
+     "locator": "list description",
+     "quote": "considerable traces of the early C13 Archbishop's Palace"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-sharsted-court",
+   "record": "Q7490484",
+   "name": "Sharsted Court",
+   "field": "date",
+   "claim": "The catalogue dates Sharsted Court to the 11th century. The list entry dates it C14 to C17, remodelled 1711, encasing a C14 hall house; Hasted traces the manor and the de Sharsted family from Edward I's reign, Doddington being in Domesday.",
+   "value": "14th century (hall house); remodelled 1711",
+   "verdict": "corrected",
+   "assessment": "The oldest surviving fabric is the 14th-century hall house; the 11th-century date is the manor's Domesday record.",
+   "sources": [
+    {
+     "title": "Sharsted Court, list entry 1335856",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101335856",
+     "locator": "list description",
+     "quote": "House. C14 to C17, remodelled 1711"
+    },
+    {
+     "title": "Sharsted Court, list entry 1335856",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101335856",
+     "locator": "list description",
+     "quote": "maintained the plan of a C14 hall house"
+    },
+    {
+     "title": "Parishes: Doddington",
+     "author": "Edward Hasted, History and Topographical Survey of the County of Kent vol. 6 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/node/54142",
+     "locator": "Manor of Sharsted",
+     "quote": "Sir Simon de Sharsted died possessed of it in the 25th year of king Edward I"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-melford-hall",
+   "record": "Q6812225",
+   "name": "Melford Hall",
+   "field": "date",
+   "claim": "The catalogue dates Melford Hall to 1065. The list entry says it was built in 1559 by William Cordell.",
+   "value": "1559",
+   "verdict": "corrected",
+   "assessment": "1065 refers to the earlier manor; the standing house is of 1559.",
+   "sources": [
+    {
+     "title": "Melford Hall, list entry 1033702",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101033702",
+     "locator": "list description",
+     "quote": "It was built in 1559 by William Cordell"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-hatfield-manor-house",
+   "record": "Q5681394",
+   "name": "Hatfield Manor House",
+   "field": "date",
+   "claim": "The catalogue dates the house to 1070. The list entry identifies a C12 hall remodelled and extended in the C16–C18.",
+   "value": "12th century (hall)",
+   "verdict": "corrected",
+   "assessment": "The oldest fabric is a 12th-century hall; 1070 is not supported for the standing building.",
+   "sources": [
+    {
+     "title": "Hatfield Manor House, list entry 1151589",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101151589",
+     "locator": "list description",
+     "quote": "C12 hall remodelled and extended C16 and C17"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-icomb-place",
+   "record": "Q15227840",
+   "name": "Icomb Place",
+   "field": "date",
+   "claim": "The catalogue dates Icomb Place to 1085. The list entry says it was rebuilt c.1420 on the site of an earlier moated manor house; the VCH records three manors of Iccomb at Domesday.",
+   "value": "c. 1420",
+   "verdict": "corrected",
+   "assessment": "1085 is the Domesday manor; the standing house is of c.1420.",
+   "sources": [
+    {
+     "title": "Icomb Place, list entry 1153494",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101153494",
+     "locator": "list description",
+     "quote": "Rebuilt c1420, probably by Sir John Blaket"
+    },
+    {
+     "title": "Parishes: Iccomb",
+     "author": "Victoria County History, Worcestershire vol. 3 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/worcs/vol3/pp412-418",
+     "locator": "Manors",
+     "quote": "At the time of the Domesday Survey there were three manors of ICCOMB"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-manor-of-old-fishbourne",
+   "record": "Q138412244",
+   "name": "Manor of Old Fishbourne",
+   "field": "date",
+   "claim": "The record is a manorial lordship (a title), not a building; the manor derives from two hides at Bosham held by Engeler in 1086.",
+   "value": "manorial lordship first recorded 1086",
+   "verdict": "open",
+   "assessment": "The 1086 date is right for the manor's first record, but there is no standing building to date; the record probably does not belong in a buildings catalogue.",
+   "sources": [
+    {
+     "title": "Old Fishbourne (manor profile)",
+     "author": "Sheldon Manors",
+     "kind": "reference",
+     "url": "https://www.sheldonmanors.org.uk/manors/old-fishbourne",
+     "locator": "Summary",
+     "quote": "The manor first appears in the Domesday Book of 1086."
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-hughenden-manor",
+   "record": "Q5933291",
+   "name": "Hughenden Manor",
+   "field": "date",
+   "claim": "The catalogue dates Hughenden Manor to 1086 (Wikidata inception). The list entry gives a 1738 core remodelled about 1860 by E. B. Lamb for Disraeli; the VCH records Hughenden manor in 1086.",
+   "value": "1738 core; remodelled c.1860",
+   "verdict": "corrected",
+   "assessment": "1086 is the Domesday record of the manor; the house is of 1738 and later.",
+   "sources": [
+    {
+     "title": "Hughenden Manor, list entry 1125785",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101125785",
+     "locator": "list description",
+     "quote": "1738 core, extended late C18, remodelled in about 1860"
+    },
+    {
+     "title": "Parishes: Hughenden",
+     "author": "Victoria County History, Buckinghamshire vol. 3 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/bucks/vol3/pp57-62",
+     "locator": "Manors",
+     "quote": "was held by William son of Oger of the Bishop of Bayeux"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-ugbrooke",
+   "record": "Q7877726",
+   "name": "Ugbrooke",
+   "field": "date",
+   "claim": "The catalogue dates Ugbrooke to 1086, from the Domesday record. The list entry describes a remodelling between 1763 and 1768 by Robert Adam of an earlier house whose chapel was consecrated in 1671; the Cliffords have held it since the late 16th century.",
+   "value": "earlier house (chapel consecrated 1671) remodelled by Robert Adam 1763–68",
+   "verdict": "corrected",
+   "assessment": "1086 is the manor's Domesday record; the oldest dated fabric of the house is 17th century.",
+   "sources": [
+    {
+     "title": "Ugbrooke Park, list entry 1097135",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101097135",
+     "locator": "list description",
+     "quote": "A remodelling between 1763 and 1768 by Robert Adam of an earlier house"
+    },
+    {
+     "title": "Ugbrooke Park, list entry 1097135",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101097135",
+     "locator": "list description",
+     "quote": "contained the chapel, consecrated in 1671"
+    },
+    {
+     "title": "Ugbrooke",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ugbrooke",
+     "locator": "History",
+     "quote": "having featured in the Domesday Book of 1086"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-treasurer-s-house-york",
+   "record": "Q7836749",
+   "name": "Treasurer's House, York",
+   "field": "date",
+   "claim": "The catalogue dates the house to 1091 (the first treasurer of York Minster). The list entry describes an early C17 rebuild of a C16 house, restored 1898–1900, with fragments of medieval masonry only in the garden wall.",
+   "value": "early 17th century (rebuild of a 16th-century house)",
+   "verdict": "corrected",
+   "assessment": "1091 is the office and site, not the standing house, which is early 17th century.",
+   "sources": [
+    {
+     "title": "No.2 Treasurer's House, list entry 1257251",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101257251",
+     "locator": "list description",
+     "quote": "Early C17 rebuild of C16 house"
+    },
+    {
+     "title": "No.2 Treasurer's House, list entry 1257251",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101257251",
+     "locator": "list description",
+     "quote": "incorporating fragments of medieval masonry"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-wings-place",
+   "record": "Q17534720",
+   "name": "Wings Place",
+   "field": "date",
+   "claim": "The catalogue dates Wings Place (Anne of Cleves House, Ditchling) to 1095. The list entry describes an L-shaped late C16 timber-framed building.",
+   "value": "late 16th century",
+   "verdict": "corrected",
+   "assessment": "1095 refers to the manor of Ditchling; the standing house is late 16th century.",
+   "sources": [
+    {
+     "title": "Wings Place (Anne of Cleves House), list entry 1043969",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101043969",
+     "locator": "list description",
+     "quote": "L-shaped late C16 timber-framed building"
+    },
+    {
+     "title": "Ditchling",
+     "author": "Victoria County History, Sussex vol. 7 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/sussex/vol7/pp102-109",
+     "locator": "Manors",
+     "quote": "by 1086 the manor was assessed for 33 hides only"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-westminster-hall",
+   "record": "Q114004148",
+   "name": "Westminster Hall",
+   "field": "date",
+   "claim": "Westminster Hall was built in 1097–99 and remodelled in 1394–1401.",
+   "value": "1097–99",
+   "verdict": "kept",
+   "assessment": "The surviving hall walls are of 1097–99, so the catalogue year is right.",
+   "sources": [
+    {
+     "title": "Houses of Parliament and The Palace of Westminster, list entry 1226284",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101226284",
+     "locator": "list description",
+     "quote": "starting with Westminster Hall 1097-99"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-palace-of-westminster",
+   "record": "Q62408",
+   "name": "Palace of Westminster",
+   "field": "date",
+   "claim": "The oldest surviving part of the Palace of Westminster is Westminster Hall, 1097–99.",
+   "value": "1097–99 (Westminster Hall)",
+   "verdict": "kept",
+   "assessment": "The catalogue year is that of the oldest surviving fabric.",
+   "sources": [
+    {
+     "title": "Houses of Parliament and The Palace of Westminster, list entry 1226284",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101226284",
+     "locator": "list description",
+     "quote": "starting with Westminster Hall 1097-99"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-king-john-s-palace",
+   "record": "Q15072664",
+   "name": "King John's Palace",
+   "field": "date",
+   "claim": "King John's Palace in Southampton is a ruined Norman merchant's house built around 1170 or in the 1180s.",
+   "value": "c. 1170–1180s",
+   "verdict": "kept",
+   "assessment": "The 12th-century date is right for the surviving fabric.",
+   "sources": [
+    {
+     "title": "King John's Palace, Southampton",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King_John%27s_Palace,_Southampton",
+     "locator": "History",
+     "quote": "The original house was built either in the 1180s or around 1170"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-dalemain",
+   "record": "Q15978966",
+   "name": "Dalemain",
+   "field": "date",
+   "claim": "The catalogue dates Dalemain to the 12th century. The list entry dates the earliest part to the C15: a C15 hall with what has been interpreted as a tower but appears to be integral with the C15 hall range.",
+   "value": "15th century",
+   "verdict": "corrected",
+   "assessment": "The list entry explicitly rejects an earlier tower; the oldest fabric is 15th century.",
+   "sources": [
+    {
+     "title": "Dalemain, list entry 1221057",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101221057",
+     "locator": "list description",
+     "quote": "C15 with C16 additions, C17 alterations"
+    },
+    {
+     "title": "Dalemain, list entry 1221057",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101221057",
+     "locator": "list description",
+     "quote": "appears to be an integral part of the hall range exhibiting similar C15 features"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-woburn-abbey",
+   "record": "Q1629626",
+   "name": "Woburn Abbey",
+   "field": "date",
+   "claim": "Woburn Abbey stands on the site of and incorporates a little fabric of the Cistercian abbey founded in 1145 by Hugh de Bolebec; the house was rebuilt c.1630 and remodelled 1747–61.",
+   "value": "Cistercian abbey founded 1145 (a little fabric survives); house rebuilt c.1630 and 1747–61",
+   "verdict": "kept",
+   "assessment": "The 12th-century date is the abbey's foundation, of which some fabric survives; acceptable for a site record, though the house itself is 17th–18th century.",
+   "sources": [
+    {
+     "title": "Woburn Abbey, list entry 1114006",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101114006",
+     "locator": "list description",
+     "quote": "incorporates a little fabric of the Cistercian Abbey (founded 1145 by Hugh de Bolebec)"
+    },
+    {
+     "title": "Parishes: Woburn",
+     "author": "Victoria County History, Bedfordshire vol. 3 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/beds/vol3/pp457-462",
+     "locator": "Woburn Abbey",
+     "quote": "on the site of the Cistercian house founded by Hugh de Bolebec in 1145"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-cowling-hall-and-wing",
+   "record": "Q17538158",
+   "name": "Cowling Hall And Wing",
+   "field": "date",
+   "claim": "The list entry dates Cowling Hall to the C12, C17 and early C18; the VCH records Cowling in 1086 in the hands of Count Alan's man Robert.",
+   "value": "12th century",
+   "verdict": "kept",
+   "assessment": "The list entry supports 12th-century fabric.",
+   "sources": [
+    {
+     "title": "Cowling Hall and Wing, list entry 1294034",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101294034",
+     "locator": "list description",
+     "quote": "C12, C17 and early C18"
+    },
+    {
+     "title": "Parishes: Bedale",
+     "author": "Victoria County History, North Riding vol. 1 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/yorks/north/vol1/pp291-301",
+     "locator": "Manors",
+     "quote": "was in 1086 in the hands of Count Alan's man Robert"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-walburn-hall",
+   "record": "Q17538273",
+   "name": "Walburn Hall",
+   "field": "date",
+   "claim": "The catalogue dates Walburn Hall to the 12th century. The list entry dates the fortified manor house to the C15 and C16; the VCH calls it an Elizabethan building.",
+   "value": "15th–16th century",
+   "verdict": "corrected",
+   "assessment": "No 12th-century fabric is recorded; the oldest fabric is 15th century.",
+   "sources": [
+    {
+     "title": "Walburn Hall, list entry 1179695",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101179695",
+     "locator": "list description",
+     "quote": "C15 and C16, restored in the early C19"
+    },
+    {
+     "title": "Parishes: Downholme",
+     "author": "Victoria County History, North Riding vol. 1 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/yorks/north/vol1/pp225-232",
+     "locator": "Walburn",
+     "quote": "The present Walburn Hall is an Elizabethan building"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-south-ash-manor",
+   "record": "Q17545901",
+   "name": "South Ash Manor",
+   "field": "date",
+   "claim": "The list entry describes a tall C16 timber-framed house built on stone foundations of the C12; Hasted records the manor of South Ash, Ash being a Domesday holding of Bishop Odo.",
+   "value": "12th-century stone foundations; 16th-century house",
+   "verdict": "kept",
+   "assessment": "The oldest surviving fabric (the foundations) is 12th century, matching the catalogue.",
+   "sources": [
+    {
+     "title": "South Ash Manor, list entry 1275615",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101275615",
+     "locator": "list description",
+     "quote": "built on stone foundations of the C12"
+    },
+    {
+     "title": "Parishes: Ash",
+     "author": "Edward Hasted, History and Topographical Survey of the County of Kent vol. 2 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-kent/vol2/pp463-474",
+     "locator": "South Ash",
+     "quote": "The MANOR OF SOUTH ASH, the hamlet of which is situated about a mile southward from Ash church"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-manor-house",
+   "record": "Q17550055",
+   "name": "Manor House",
+   "field": "date",
+   "claim": "The list entry gives the Manor House, Sutton Courtenay, C12 origins, the present house being C16 with C17 alterations; the VCH records the Conqueror holding Sutton in demesne in 1086.",
+   "value": "12th-century origins; 16th century with 17th-century alterations",
+   "verdict": "kept",
+   "assessment": "The list entry supports a 12th-century origin for the fabric.",
+   "sources": [
+    {
+     "title": "The Manor House, Sutton Courtenay, list entry 1052732",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101052732",
+     "locator": "list description",
+     "quote": "C12 origins. C16, with C17 alterations"
+    },
+    {
+     "title": "Parishes: Sutton Courtenay",
+     "author": "Victoria County History, Berkshire vol. 4 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/berks/vol4/pp369-379",
+     "locator": "Manors",
+     "quote": "In 1086 the Conqueror held Sutton in demesne"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-sherborne-castle",
+   "record": "Q2970700",
+   "name": "Sherborne Castle",
+   "field": "date",
+   "claim": "The catalogue dates Sherborne Castle to the 12th century (the date of the Old Castle nearby). The list entry describes a late C16 central block for Sir Walter Raleigh, enlarged in 1625; Raleigh completed Sherborne Lodge in 1594.",
+   "value": "1594 (Sir Walter Raleigh's lodge)",
+   "verdict": "corrected",
+   "assessment": "The 12th-century date belongs to the Old Castle, a separate ruin; the house is of 1594.",
+   "sources": [
+    {
+     "title": "Sherborne Castle, list entry 1153912",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101153912",
+     "locator": "list description",
+     "quote": "Late C16 rectangular central block with its angle turrets, for Sir Walter Raleigh"
+    },
+    {
+     "title": "Sherborne Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sherborne_Castle",
+     "locator": "History",
+     "quote": "He completed Sherborne Lodge, a four-storey rectangular building, in 1594"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-chenies-manor-house",
+   "record": "Q3667127",
+   "name": "Chenies Manor House",
+   "field": "date",
+   "claim": "The catalogue dates Chenies Manor House to the 12th century. The list entry dates the west range to the C15 and the south range to c.1530; the VCH says the manor is not mentioned in 1086.",
+   "value": "15th century (west range); south range c.1530",
+   "verdict": "corrected",
+   "assessment": "No 12th-century fabric is recorded; the oldest is the 15th-century west range.",
+   "sources": [
+    {
+     "title": "The Manor House, Chenies, list entry 1332531",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101332531",
+     "locator": "list description",
+     "quote": "C15 west range and south range of c1530"
+    },
+    {
+     "title": "Parishes: Chenies",
+     "author": "Victoria County History, Buckinghamshire vol. 3 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/bucks/vol3/pp199-203",
+     "locator": "Manor",
+     "quote": "is not mentioned in the Survey of 1086"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-aske-hall",
+   "record": "Q4807153",
+   "name": "Aske Hall",
+   "field": "date",
+   "claim": "The catalogue dates Aske Hall to the 12th century. The list entry dates the oldest part, the pele tower, to the C15; the VCH records Aske as a manor of Count Alan in 1086.",
+   "value": "15th century (pele tower)",
+   "verdict": "corrected",
+   "assessment": "The oldest fabric is the 15th-century pele tower; earlier dates belong to the manor.",
+   "sources": [
+    {
+     "title": "Aske Hall, list entry 1157422",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101157422",
+     "locator": "list description",
+     "quote": "C15 pele tower with C16 hall, C17 wings"
+    },
+    {
+     "title": "Parishes: Easby",
+     "author": "Victoria County History, North Riding vol. 1 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/yorks/north/vol1/pp51-64",
+     "locator": "Manors",
+     "quote": "was a 'manor' belonging to Tor before the Conquest"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-beckley-park",
+   "record": "Q4878748",
+   "name": "Beckley Park",
+   "field": "date",
+   "claim": "The catalogue dates Beckley Park to the 12th century. The list entry dates the hunting lodge to c.1540; the VCH says the medieval lodge, first mentioned in 1347, was probably ruinous when Sir John Williams obtained the park.",
+   "value": "c. 1540",
+   "verdict": "corrected",
+   "assessment": "The standing house is the Tudor lodge of c.1540; the earlier royal lodge does not survive.",
+   "sources": [
+    {
+     "title": "Beckley Park, list entry 1180781",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101180781",
+     "locator": "list description",
+     "quote": "c.1540, probably for Lord Williams of Thame"
+    },
+    {
+     "title": "Parishes: Beckley",
+     "author": "Victoria County History, Oxfordshire vol. 5 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/oxon/vol5/pp56-76",
+     "locator": "Beckley Park",
+     "quote": "The first mention of a 'lodge' in the park occurs in 1347"
+    },
+    {
+     "title": "Parishes: Beckley",
+     "author": "Victoria County History, Oxfordshire vol. 5 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/oxon/vol5/pp56-76",
+     "locator": "Beckley Park",
+     "quote": "the medieval lodge was probably ruinous when Sir John Williams obtained the park"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-beeleigh-abbey",
+   "record": "Q4879842",
+   "name": "Beeleigh Abbey",
+   "field": "date",
+   "claim": "Beeleigh Abbey, a Premonstratensian abbey converted to a house, was founded c.1180; its surviving fabric is C13–C16.",
+   "value": "founded c.1180; surviving fabric 13th–16th century",
+   "verdict": "kept",
+   "assessment": "The 12th-century date is the foundation of the abbey whose buildings survive; acceptable as a foundation date, though the oldest standing fabric is 13th century.",
+   "sources": [
+    {
+     "title": "Beeleigh Abbey, list entry 1257150",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101257150",
+     "locator": "list description",
+     "quote": "Founded c1180 by Robert Mantell. C13-C16 with later alterations"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-burton-constable-hall",
+   "record": "Q5000832",
+   "name": "Burton Constable Hall",
+   "field": "date",
+   "claim": "The catalogue dates the hall to the 12th century (Wikipedia: lower north tower 12th century). The list entry dates the house late C16; the VCH says the early structural history is obscure, an ashlar room later heightened as a tower with a possibly 15th-century corbel table, and the chief house mentioned from 1294.",
+   "value": "medieval core of uncertain date; house mainly c.1560–78",
+   "verdict": "open",
+   "assessment": "A medieval core survives but no source read here dates it to the 12th century; the date is unsettled.",
+   "sources": [
+    {
+     "title": "Burton Constable Hall, list entry 1083444",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101083444",
+     "locator": "list description",
+     "quote": "Late C16 for John Constable or Sir Henry Constable"
+    },
+    {
+     "title": "Burton Constable",
+     "author": "Victoria County History, East Riding vol. 7 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/yorks/east/vol7/pp129-137",
+     "locator": "Manor and other estates",
+     "quote": "The early structural history of the house is obscure"
+    },
+    {
+     "title": "Burton Constable",
+     "author": "Victoria County History, East Riding vol. 7 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/vch/yorks/east/vol7/pp129-137",
+     "locator": "Manor and other estates",
+     "quote": "The chief house at Burton Constable, mentioned from 1294"
+    },
+    {
+     "title": "Burton Constable Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burton_Constable_Hall",
+     "locator": "History",
+     "quote": "is the oldest part of the house to survive and dates to the 12th century"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-chicksands-priory",
+   "record": "Q5096376",
+   "name": "Chicksands Priory",
+   "field": "date",
+   "claim": "Chicksands Priory, a Gilbertine double house founded c.1150, survives as a country house incorporating C13 and C15 remains.",
+   "value": "priory founded c.1150; surviving remains 13th and 15th century",
+   "verdict": "kept",
+   "assessment": "The 12th-century date is the priory's foundation; acceptable as a foundation date, though the oldest standing fabric is 13th century.",
+   "sources": [
+    {
+     "title": "Chicksands Priory, list entry 1137590",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101137590",
+     "locator": "list description",
+     "quote": "founded c.1150 by Rose and Payn de Beauchamp"
+    },
+    {
+     "title": "Chicksands Priory, list entry 1137590",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101137590",
+     "locator": "list description",
+     "quote": "Surviving remains are C13 and C15"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-cranborne-manor",
+   "record": "Q5181923",
+   "name": "Cranborne Manor",
+   "field": "date",
+   "claim": "The catalogue dates Cranborne Manor to the 12th century. The list entry dates the hunting lodge to c.1207/8, built for King John, remodelled 1608–1636.",
+   "value": "c. 1207/8",
+   "verdict": "corrected",
+   "assessment": "The oldest fabric is of c.1207/8, early 13th century.",
+   "sources": [
+    {
+     "title": "Cranborne Manor House, list entry 1120172",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101120172",
+     "locator": "list description",
+     "quote": "Hunting Lodge, now country house, c.1207/8"
+    }
+   ],
+   "researched": "2026-10-22"
+  },
+  {
+   "id": "manor-croxdale-hall",
+   "record": "Q5189618",
+   "name": "Croxdale Hall",
+   "field": "date",
+   "claim": "The catalogue dates Croxdale Hall to the 12th century. The list entry dates the house as probably C17, re-faced c.1760; the 12th-century date belongs to the separate chapel in the grounds.",
+   "value": "probably 17th century; re-faced c.1760",
+   "verdict": "corrected",
+   "assessment": "The 12th-century chapel is a separate building; the hall itself is 17th century or later.",
+   "sources": [
+    {
+     "title": "Croxdale Hall, list entry 1159140",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101159140",
+     "locator": "list description",
+     "quote": "Probably C17; altered and re-faced c.1760"
+    },
+    {
+     "title": "Croxdale Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Croxdale_Hall",
+     "locator": "Other buildings",
+     "quote": "A disused 12th-century chapel which stands in the grounds"
+    }
+   ],
+   "researched": "2026-10-22"
   }
  ]
 }

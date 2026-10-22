@@ -5,7 +5,8 @@
   const FACETS = ["kind_group", "kind_label", "nation", "period", "source"];
   const GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
     "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
-    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges", "Excavations"];
+    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges", "Excavations",
+    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities"];
 
   const load = (meta) => (LOADING = LOADING || (async () => {
     const [shards, ppl] = await Promise.all([

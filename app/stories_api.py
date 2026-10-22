@@ -33,6 +33,12 @@ def depictions(rid):
     return jsonify(for_record(conn(), rid))
 
 
+@bp.route("/api/dendro/<path:rid>")
+def dendro(rid):
+    from bidb.dendro import for_record
+    return jsonify(for_record(conn(), rid))
+
+
 @bp.route("/api/excavations/<path:rid>")
 def excavations(rid):
     from bidb.digs import for_record

@@ -350,6 +350,29 @@ Detail views show "Evidence"; the Data quality page lists every claim. Sources t
       Domesday already records a church (possible earlier origin).
       Still possible: Eddius's Life of Wilfrid and Felix's Life of Guthlac (no script-readable text found), VCH
       parish histories for manors, dendrochronology reports.
+- [x] R4b (2026-10-22) Manor houses (Victoria County History + list entries): 30 English manor houses dated
+      1000–1300 checked; the suspicion held: 19 dates were the Domesday manor or an earlier building, not the house
+      (Melford Hall 1559 not 1065, Hughenden 1738 not 1086, Ugbrooke, Icomb Place, Treasurer's House York, Sherborne
+      Castle…). Lives of saints: Eddius's Life of Wilfrid (Colgrave 1927, Internet Archive text) for Ripon and
+      Hexham; the Old English Life of Guthlac (Goodwin 1848) for Repton (now kept) and Crowland.
+- [x] R6 (2026-10-22) Tree-ring dates (`bidb/dendro.py`): the Vernacular Architecture Group's Dendrochronology
+      Database (ADS; 4,879 dated entries) matched by grid reference (`bidb/osgrid.py`) and name to 592 catalogue
+      buildings (1,129 dates), shown as "Tree-ring dated:" in detail views. `--report` lists catalogue dates later
+      than a building's own timbers: 13 corrected (Harlowbury c. 1220 not "1884", Godinton c. 1390 not "1991", The
+      Commandery 1465 not "1977", Duff House 1735 not "1995", Tudor Tavern Taunton 1320s, Llwyn-celyn 1419,
+      Sizergh Castle pre-C15 hall not "1920", …); the rest are separate buildings of an estate or earlier fabric.
+- [x] R7 (2026-10-22) Sanity check of the 100 oldest records: 72 kept, 18 corrected, 10 open, many with
+      radiocarbon/Bayesian dates (Gathering Time; Bayliss et al.). Dates mined from Wikipedia sentences about other
+      things are gone: Avebury c. 2900 BC (not 4250), Hembury and Chestnuts no longer "fifth millennium BC", Bryn
+      Celli Ddu c. 3070 BC, Knap of Howar's stone houses c. 3300 BC (PSAS 2025), Wayland's Smithy 3590 BC, Wor Barrow
+      3670 BC. Record problems (duplicates, wrong county, wrong type) listed in docs/date_review.md.
+- [x] R8 (2026-10-22) Researched "oldest" lists of things that are not buildings (`bidb/oldest_lists.py`, 277
+      entries, each with sources and quotes): nature (60: Fortingall Yew, Lewisian gneiss, Rhynie chert, Happisburgh
+      footprints, Giant's Causeway…), graves (75: Aveline's Hole, Roman tombstones, the Latinus and Catamanus stones,
+      the oldest dated headstones, Bunhill Fields, Kensal Green…), trade (70: markets and fairs by charter, market
+      buildings, the oldest shops and firms — Lock & Co 1726 not 1676, Borough Market first recorded 1276 —,
+      manufacturers, industrial works) and infrastructure (72: the Post and Sweet Tracks, Roman roads, the New River,
+      waggonways, the first canals, docks, gasworks, pillar boxes). Shown on the Oldest page and as places.
 - [~] R5 Historic England list texts behind the bot check: cite by list entry number (reproductions such as British
       Listed Buildings can be checked by script). `bidb/listings.py` reads them (both page layouts); used for R3.
 
@@ -428,3 +451,18 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
 - [x] Nation for 31,287 places that had none (`bidb/nation_geo.py`: Wikidata P131, else location).
 - [x] Hilliness: climb counts changes of 3 m or more; under 20 m in all is flat (short town walks
       were rated hilly from terrain-model noise).
+
+## Nature, graves, markets, works and infrastructure (added 2026-10-22)
+- [x] N1 "Nature & deep time" places group: the researched oldest natural things (trees, woods, rocks, fossils,
+      early human traces, natural wonders); notable trees among them move here.
+- [x] N2 "Graves & burial grounds" (`bidb/burials.py`): 7,900 cemeteries, churchyards, war cemeteries, tombs and chest
+      tombs, mausolea and graves from Wikidata, plus the researched oldest graves; prehistoric burial monuments stay
+      with archaeology.
+- [x] N3 "Markets & trade" and "Infrastructure & utilities" (`bidb/trade_works.py`), and more "Industrial heritage":
+      market halls, crosses, corn exchanges, shops, banks, inns, market towns (7,500); mills, factories, manufacturers,
+      breweries, works, quarries, shipyards at any date (+4,100); roads, milestones, reservoirs, dams, weirs, sea walls,
+      canals and locks, railway lines, signal boxes, power stations, airports (15,200).
+- [x] N4 The Oldest page lists the researched oldest of each (with verdicts) and the earliest dated places of each
+      kind in these groups (Wikidata dates, marked as unchecked).
+- [ ] N5 Check the earliest dated places of the new groups (Wikidata dates are often of a later event).
+- [ ] N6 Woodland Trust Ancient Tree Inventory (licence to be asked), Canmore for Scottish burial grounds.

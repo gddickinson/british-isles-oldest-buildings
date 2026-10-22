@@ -17,8 +17,8 @@ from bidb.config import ROOT
 
 # name: (label, what it does, rough time with a warm cache)
 JOBS = {
-    "build": ("Rebuild the database", "Buildings, places and people, legends, maritime, industrial and Victorian "
-              "places, pronunciations, stories, timelines, tours, on this day and visiting information.",
+    "build": ("Rebuild the database", "Buildings, places and people (every place group, the researched oldest lists), "
+              "pronunciations, Domesday, tree-ring dates, stories, timelines, tours, on this day and visiting information.",
               "minutes with a warm cache; many hours from scratch"),
     "photos": ("Find photos", "Wikimedia Commons photos near records that have none (buildings, then places).",
                "about 1 s per record without a photo"),

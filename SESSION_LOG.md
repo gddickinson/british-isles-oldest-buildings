@@ -454,3 +454,14 @@
   read-only guard for non-loopback clients (tests/test_lan.py, 6 tests; ui_check settings_share); restart by
   exec after closing inherited fds (werkzeug's socket is inheritable: "Address already in use" otherwise).
   Sharing is off; nothing was opened to the network during testing (test client and a loopback-only restart).
+
+## 2026-10-22 — README and figures refreshed
+- All figures in `docs/img` retaken (`node docs/make_figures.mjs`); new: `evidence.jpg` (Canterbury Cathedral:
+  evidence, tree-ring dates, Domesday), `oldest_lists.jpg`, `places_graves.jpg`, `sharing.jpg`. Map layers now
+  around York (Roman roads mapped there), tours on the Cambridge walk, jobs cropped (`clip` option). `setup.jpg`
+  kept (needs a second copy with no database).
+- Fixes seen in the figures: researched-list cards on the Oldest page squeezed into the photo column
+  (`.ex.text`); Places summary named the new groups; rebuild job description; nation "Ireland" in the
+  oldest lists → "Republic of Ireland" (10 places).
+- README: new figures and captions, 20 place groups, research and tree-ring counts, 103 tests, sharing bullet.
+  Help: oldest lists, evidence and sharing figures. Tests 103 OK; ui_check 35/35.

@@ -33,7 +33,7 @@ function listsHTML(lists) {
         <span class="hint"><a href="${IS_STATIC ? "places.html" : "/places"}?kind_group=${encodeURIComponent(l.group)}">${esc(l.group)} on the map and list</a></span></h2>
       ${l.unchecked ? `<p class="hint">Dates as recorded on Wikidata, not yet checked against sources.</p>` : ""}
       ${l.categories.map((c) => `<h3>${esc(c.category)}</h3><div class="examples">${c.entries.map((e) => `
-        <a class="ex" ${e.building ? `href="${buildingUrl(e.id)}"` : `href="#" data-place="${esc(e.id)}"`}><div><b>${esc(e.name)}</b>
+        <a class="ex text" ${e.building ? `href="${buildingUrl(e.id)}"` : `href="#" data-place="${esc(e.id)}"`}><div><b>${esc(e.name)}</b>
           <div class="date">${esc(e.age || "")}${VERDICT[e.verdict] ? ` <span class="hint">(${VERDICT[e.verdict]})</span>` : ""}</div>
           <div class="meta">${esc([e.location, e.museum && "now at " + e.museum].filter(Boolean).join(" · "))}</div>
           ${e.claim ? `<div class="claim">${esc(e.claim)}</div>` : ""}</div></a>`).join("")}</div>`).join("")}

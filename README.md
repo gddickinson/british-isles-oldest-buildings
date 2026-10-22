@@ -20,8 +20,9 @@ anywhere.
 | | |
 |---|---|
 | **22,039** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **152,558** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards, graves and burial grounds, markets and trade, infrastructure, and nature and deep time |
-| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **47,000** places with a photo |
+| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **50,000** places with a photo |
 | **17,412** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
+| **714** researched claims with **1,312** quotes checked in their sources | **1,129** tree-ring dates on **592** buildings |
 | **2,443** stories, legends and ghost tales | **368** ready-made walks, rides, drives and long-distance ways |
 | **7,734** pronunciations (2,145 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
 
@@ -54,6 +55,7 @@ anywhere.
 <table>
 <tr><td width="50%"><img src="docs/img/detail.jpg" alt="A building's page"><br><sub>A building's page: date with its basis and check, pronunciation, description</sub></td>
 <td width="50%"><img src="docs/img/oldest.jpg" alt="Oldest by type"><br><sub>The oldest surviving example of each building type, claim against evidence</sub></td></tr>
+<tr><td colspan="2"><img src="docs/img/evidence.jpg" alt="Evidence on a building's page"><br><sub>Evidence on Canterbury Cathedral: Bede and the list entry with their quotes checked, the tree-ring dates of its roofs, and its Domesday Book entry</sub></td></tr>
 </table>
 
 ### Maps
@@ -77,11 +79,11 @@ anywhere.
 <table>
 <tr><td width="50%"><img src="docs/img/map_satellite.jpg" alt="Satellite view"><br><sub>Satellite view: the Tower of London with building outlines and catalogue markers</sub></td>
 <td width="50%"><img src="docs/img/historic_map.jpg" alt="Historic map"><br><sub>Ordnance Survey six-inch map (c. 1900) of Edinburgh's Old Town, with building outlines</sub></td></tr>
-<tr><td colspan="2"><img src="docs/img/map_layers.jpg" alt="Map layers"><br><sub>The Map page with the layer switcher: Roman roads, walking routes and historic counties over the street map</sub></td></tr>
+<tr><td colspan="2"><img src="docs/img/map_layers.jpg" alt="Map layers"><br><sub>The Map page with the layer switcher: Roman roads, walking routes and historic counties over the street map in Yorkshire</sub></td></tr>
 </table>
 
 ### Places, people and history
-- **Places of interest** in sixteen groups, as a list or a map: battles and sieges; archaeological
+- **Places of interest** in twenty groups, as a list or a map: battles and sieges; archaeological
   sites (every register's scheduled monuments); lost places; parks, gardens and trees; industrial
   heritage; finds and treasures; plaques (Wikidata and Open Plaques); history events; **legends and
   literature** (haunted places, Arthurian sites, holy wells, the settings of novels and poems);
@@ -130,6 +132,8 @@ anywhere.
 
 <table>
 <tr><td width="50%"><img src="docs/img/places.jpg" alt="Places"><br><sub>Places of interest: maritime heritage on the map</sub></td>
+<td width="50%"><img src="docs/img/places_graves.jpg" alt="Graves and burial grounds"><br><sub>Graves and burial grounds, oldest first: the Red Lady of Paviland, Cheddar Man, Poulnabrone</sub></td></tr>
+<tr><td width="50%"><img src="docs/img/oldest_lists.jpg" alt="Researched oldest lists"><br><sub>The oldest of everything else: researched lists with dates, places and claims</sub></td>
 <td width="50%"><img src="docs/img/people.jpg" alt="People"><br><sub>People connected with the buildings: architects</sub></td></tr>
 <tr><td width="50%"><img src="docs/img/history.jpg" alt="History"><br><sub>History of the British Isles and on this day</sub></td>
 <td width="50%"><img src="docs/img/stats.jpg" alt="Statistics"><br><sub>Statistics</sub></td></tr>
@@ -174,6 +178,8 @@ line covers the town the record is in.
   restore of everything you saved, and where the data lives.
 - **Works on a phone**, can be **installed** from the browser, and keeps pages you've opened for
   offline use.
+- **Share at home:** other computers, tablets and phones on your network can browse the app (read-only),
+  from an address or QR code in Settings.
 - **Help:** a full guide with screenshots, a glossary and answers to common questions.
 
 <table>
@@ -233,6 +239,8 @@ from other computers, tablets and phones on the same network, at the address Set
 code). Other devices are read-only: builds and jobs, corrections, saved street maps, the data location and
 the settings stay with the computer running the app (enforced by the server, `app/lan.py`).
 
+<img src="docs/img/sharing.jpg" alt="Share on my home network" width="75%">
+
 **Where the data lives** is set in Settings → Data location (saved in `settings.json`, not in git).
 The cache and the database can each be moved to another drive. A move copies, verifies, switches
 over and only then deletes the old copy. If a configured drive is unplugged, the app and the build
@@ -283,7 +291,7 @@ local web app on http://127.0.0.1:5050               dist/: static copy, API ans
 
 ## Testing
 ```sh
-.venv/bin/python -m unittest discover tests                         # 82 unit tests
+.venv/bin/python -m unittest discover tests                         # 103 unit tests
 node tests/ui_prefs_test.js                                          # preference logic
 .venv/bin/python -m tests.ui_check --base http://127.0.0.1:5050      # every page loads without errors
 node tests/ui_review.mjs --base http://127.0.0.1:5050                # full GUI review
@@ -293,7 +301,7 @@ The **GUI review** drives Chrome through every page and map. It checks every map
 map and places layer, the satellite and offline backgrounds, pop-ups, search ranking, the tour
 builder and other interactions, and phone widths. It records JavaScript errors and failed requests,
 and saves a screenshot of each check in `runs/ui_review/`. `node docs/make_figures.mjs` regenerates
-the figures in this README.
+the figures in this README and the Help page (app running; `node docs/make_figures.mjs tours oldest` for some).
 
 ## Data sources and licences
 - **Code:** MIT ([LICENSE](LICENSE)).

@@ -15,6 +15,8 @@ age claim, how well it is established, sources with exact quotes and a verdict):
             -> "Infrastructure & utilities" (with bidb.trade_works)
   sport   - oldest football, rugby, cricket and golf clubs and grounds, racecourses, stadiums, other venues and
             clubs -> "Sport & leisure" (with bidb.sports)
+  civic   - oldest schools, universities, hospitals, post offices, courts, police and fire stations, town halls
+            and other public institutions -> "Public institutions" (with bidb.institutions)
 An entry whose Wikidata item is already a catalogue building stays there; one already a place moves to the
 list's group and takes the researched age. The sources become evidence claims (bidb.evidence.load), and
 `lists()` feeds the "Oldest in nature" and "Oldest graves" sections of the Oldest page.
@@ -50,6 +52,12 @@ LISTS = {
                         "Oldest cricket club or ground": "spo_cricket", "Oldest golf course or club": "spo_golf",
                         "Oldest racecourse": "spo_racing", "Oldest stadium or sports ground": "spo_ground",
                         "Oldest venue for other sports": "spo_venue", "Oldest sports club": "spo_club"}},
+    "civic": {"group": "Public institutions", "prefix": "pio", "title": "Oldest schools, hospitals and public services",
+              "kinds": {"Oldest school": "pio_school", "Oldest university or college": "pio_university",
+                        "Oldest hospital": "pio_hospital", "Oldest post office": "pio_post",
+                        "Oldest court or courthouse": "pio_court", "Oldest police or fire station": "pio_police",
+                        "Oldest town hall or seat of government": "pio_civic",
+                        "Oldest other public institution": "pio_other"}},
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}
@@ -109,7 +117,7 @@ def lists(conn=None):
 
 
 PLACE_GROUPS = ("Markets & trade", "Industrial heritage", "Infrastructure & utilities", "Graves & burial grounds",
-                "Sport & leisure")
+                "Sport & leisure", "Public institutions")
 
 
 def oldest_places(conn, per=6):

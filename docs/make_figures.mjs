@@ -38,6 +38,7 @@ const FIGURES = {
   evidence: { path: "/building/Q29265", w: 1280, h: 1000, store: { bi_map_base: "online" },
               js: "setTimeout(() => document.querySelector('[data-evidence]').scrollIntoView(), 4000)", wait: 9 },
   places_sport: { path: "/places?kind_group=Sport+%26+leisure&has_image=1", w: 1280, h: 800, wait: 8 },
+  places_institutions: { path: "/places?kind_group=Public+institutions&has_image=1", w: 1280, h: 800, wait: 8 },
   quiz_menu: { path: "/quiz", w: 1280, h: 820 },
   quiz_story: { path: "/quiz?q=story", w: 1280, h: 760, wait: 5 },
   quiz_order: { path: "/quiz?q=order", w: 1280, h: 700, wait: 6 },

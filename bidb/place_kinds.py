@@ -11,7 +11,7 @@ PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Park
                 "Legends & literature", "Maritime heritage", "Victorian era", "Underground",
                 "Military heritage", "Museums & collections", "Bridges",
                 "Excavations", "Nature & deep time", "Graves & burial grounds", "Markets & trade",
-                "Infrastructure & utilities", "Sport & leisure"]
+                "Infrastructure & utilities", "Sport & leisure", "Public institutions"]
 
 # Prehistoric / early monument types. Items with a photo or a Wikipedia article join the main
 # building catalogue; the rest are shown as "Archaeological sites" places.
@@ -153,3 +153,7 @@ KIND_GROUP.update(_OLDEST_GROUP)
 from .sports import LABELS as _SPORT  # noqa: E402
 KIND_LABEL.update(_SPORT)
 KIND_GROUP.update({k: "Sport & leisure" for k in _SPORT})
+# added by bidb.institutions
+from .institutions import LABELS as _INST  # noqa: E402
+KIND_LABEL.update(_INST)
+KIND_GROUP.update({k: "Public institutions" for k in _INST})

@@ -1,0 +1,3021 @@
+{
+ "about": "Oldest schools, universities and colleges, hospitals, post offices, courts, police and fire stations, town halls and other public institutions of the isles (research track, 2026-10-22); each with the age claim, whether it concerns the institution or the surviving building, how secure it is, and sources with exact quotes (checked by python -m bidb.evidence --check).",
+ "entries": [
+  {
+   "category": "Oldest school",
+   "name": "The King's School, Canterbury",
+   "qid": "Q3360332",
+   "wikipedia_title": "The King's School, Canterbury",
+   "lat": 51.2817,
+   "lon": 1.0827,
+   "nation": "England",
+   "location": "Canterbury, Kent",
+   "age_text": "traditionally founded with St Augustine's mission in 597; teaching at Canterbury attested from the 7th century, refounded by Henry VIII in 1541",
+   "year": 597,
+   "claim": "the oldest continuously operating school in the world",
+   "evidence": "The 597 date rests on tradition linking the school to St Augustine; its own Wikipedia article says the founding date is difficult to verify, and Bede only implies a Kentish school by c.630. Continuity through the Middle Ages is assumed rather than documented, and the present school dates from the 1541 refoundation; the claim is about the institution, not any surviving building.",
+   "sources": [
+    {
+     "title": "The King's School, Canterbury",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_King's_School,_Canterbury",
+     "locator": "lead",
+     "quote": "is considered to be the oldest continuously operating school in the world, as education on the abbey and cathedral grounds has been uninterrupted since AD 597"
+    },
+    {
+     "title": "The King's School, Canterbury",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_King's_School,_Canterbury",
+     "locator": "History: Establishment",
+     "quote": "The historical claim of a founding date in AD 597 is difficult to verify directly"
+    },
+    {
+     "title": "Our history – Beyond Compare",
+     "author": "The King's School, Canterbury",
+     "kind": "primary",
+     "url": "https://www.kings-school.co.uk/about/history/",
+     "locator": "About › History, opening paragraph",
+     "quote": "The King's School, our Senior School, is widely regarded as the oldest school in England."
+    },
+    {
+     "title": "Our history – Beyond Compare",
+     "author": "The King's School, Canterbury",
+     "kind": "primary",
+     "url": "https://www.kings-school.co.uk/about/history/",
+     "locator": "About › History, opening paragraph",
+     "quote": "St Augustine arrived in 597 on a mission from Rome to convert the Anglo-Saxons."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "King's School, Rochester",
+   "qid": "Q6411092",
+   "wikipedia_title": "King's School, Rochester",
+   "lat": 51.3874,
+   "lon": 0.5016,
+   "nation": "England",
+   "location": "Rochester, Kent",
+   "age_text": "cathedral school traditionally founded 604 with Rochester Cathedral; refounded by Henry VIII in 1541",
+   "year": 604,
+   "claim": "the second-oldest continuously operating school in the world",
+   "evidence": "The 604 date is that of the cathedral's foundation; the school claims continuity from it, but there is no record of an unbroken school before the 1541 refoundation. The claim concerns the institution; its buildings are later (Satis House is 16th–18th century).",
+   "sources": [
+    {
+     "title": "King's School, Rochester",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King's_School,_Rochester",
+     "locator": "lead",
+     "quote": "The school claims to be the second oldest continuously operating school in the world, having been founded in 604 AD"
+    },
+    {
+     "title": "The King's School, Rochester, founded 604 AD (Friends of Rochester Cathedral Annual Report 1972, D. R. Vicary)",
+     "author": "Rochester Cathedral / D. R. Vicary",
+     "kind": "secondary",
+     "url": "https://rochestercathedral.org/forc/kingsschool",
+     "locator": "Extract from the Friends' Annual Report, early period",
+     "quote": "there is little doubt that the Cathedral had some sort of school from its beginning in A.D. 604"
+    },
+    {
+     "title": "About",
+     "author": "King's School Rochester",
+     "kind": "primary",
+     "url": "https://kings-rochester.co.uk/about/",
+     "locator": "About, introduction",
+     "quote": "Founded in 604 AD, we embrace our long history and ancient traditions"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "St Peter's School, York",
+   "qid": "Q2504619",
+   "wikipedia_title": "St Peter's School, York",
+   "lat": 53.9664,
+   "lon": -1.0929,
+   "nation": "England",
+   "location": "Clifton, York",
+   "age_text": "reputedly founded by St Paulinus in 627; Alcuin taught at the York minster school in the 8th century; re-endowed 1540s",
+   "year": 627,
+   "claim": "the third-oldest school in the world (rival to King's Canterbury as the oldest)",
+   "evidence": "The 627 foundation by Paulinus is tradition; the York cathedral school is well attested under Alcuin (8th century). Historians dispute continuity: David Palliser argues the 1540s Holgate school was a new foundation. The school has occupied its Clifton site only since 1844.",
+   "sources": [
+    {
+     "title": "St Peter's School, York",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter's_School,_York",
+     "locator": "lead",
+     "quote": "The school is considered to be the third-oldest school in the world, founded in 627 by St Paulinus of York alongside York Minster"
+    },
+    {
+     "title": "St Peter's School, York",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter's_School,_York",
+     "locator": "History: Founding",
+     "quote": "According to David Palliser however, St Peter's was instead founded as a new school"
+    },
+    {
+     "title": "1400 Years of Education",
+     "author": "St Peter's School, York",
+     "kind": "primary",
+     "url": "https://www.stpetersyork.org.uk/history",
+     "locator": "About Us › 1400 Years of Education, 'A brief history'",
+     "quote": "In AD627 St Paulinus came to York and founded what has become today St Peter's and York Minster."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Warwick School",
+   "qid": "Q7971186",
+   "wikipedia_title": "Warwick School",
+   "lat": 52.2792,
+   "lon": -1.5739,
+   "nation": "England",
+   "location": "Myton Road, Warwick",
+   "age_text": "believed founded by Æthelflæd of Mercia in 914; documented from the 11th century; refounded by Henry VIII in 1545",
+   "year": 914,
+   "claim": "the oldest boys' school in England (fifth-oldest surviving school in England)",
+   "evidence": "The 914 date is a tradition tied to Æthelflæd's fortification of Warwick; the first documentary evidence is later (a charter of Henry I), and the school was refounded in 1545. Its buildings on Myton Road date from 1879.",
+   "sources": [
+    {
+     "title": "Warwick School",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warwick_School",
+     "locator": "lead",
+     "quote": "it is believed to have been founded by Æthelflæd of Mercia in 914 AD, making it the fifth-oldest surviving school in England"
+    },
+    {
+     "title": "History",
+     "author": "Warwick School",
+     "kind": "primary",
+     "url": "https://www.warwickschool.org/about-us/history/",
+     "locator": "About us › History, opening paragraph",
+     "quote": "Warwick School is widely recognised as the oldest boys' school in England. Its story begins in 914"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "High School of Glasgow",
+   "qid": "Q386695",
+   "wikipedia_title": "High School of Glasgow",
+   "lat": 55.8869,
+   "lon": -4.3272,
+   "nation": "Scotland",
+   "location": "Anniesland, Glasgow",
+   "age_text": "founded as the choir school of Glasgow Cathedral c.1124; independent school since 1976",
+   "year": 1124,
+   "claim": "the oldest school in Scotland",
+   "evidence": "The c.1124 date is the traditional cathedral-school origin; the school became a council grammar school and was closed by the corporation in 1976 before continuing as an independent school, so continuity is institutional. The present Anniesland buildings are modern.",
+   "sources": [
+    {
+     "title": "High School of Glasgow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/High_School_of_Glasgow",
+     "locator": "lead",
+     "quote": "The original High School of Glasgow was founded as the choir school of Glasgow Cathedral in around 1124, and is the oldest school in Scotland"
+    },
+    {
+     "title": "900 years of HSOG",
+     "author": "The High School of Glasgow",
+     "kind": "primary",
+     "url": "https://www.highschoolofglasgow.co.uk/hsog-glasgows-leading-private-school/900-years-of-hsog",
+     "locator": "Important dates, 1124",
+     "quote": "1124, the year that the school traditionally takes as its foundation date making it the oldest, continuous school in Scotland"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Royal High School, Edinburgh",
+   "qid": "Q2171033",
+   "wikipedia_title": "Royal High School, Edinburgh",
+   "lat": 55.9636,
+   "lon": -3.2853,
+   "nation": "Scotland",
+   "location": "Barnton, Edinburgh",
+   "age_text": "first recorded as the seminary of Holyrood Abbey, founded by David I in 1128",
+   "year": 1128,
+   "claim": "one of the oldest schools in Scotland (and the world)",
+   "evidence": "The school enters the record with Holyrood Abbey's foundation in 1128; rivals the High School of Glasgow (c.1124) for the title of Scotland's oldest. The link to Holyrood is inferred ('possibly'); the school is first named as the grammar school of the church of Edinburgh in the 14th century. It has moved several times (the 1829 Calton Hill building is its best-known home).",
+   "sources": [
+    {
+     "title": "Royal High School, Edinburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_High_School,_Edinburgh",
+     "locator": "History",
+     "quote": "It first enters the historical record as the seminary of Holyrood Abbey, founded for Alwin and the Augustinian canons by David I in 1128"
+    },
+    {
+     "title": "Royal High School collection: biographical/historical note",
+     "author": "University of Edinburgh Archives",
+     "kind": "reference",
+     "url": "https://archives.collections.ed.ac.uk/repositories/2/resources/85676",
+     "locator": "Biographical / Historical",
+     "quote": "It was founded in 1128 as the seminary of Holyrood Abbey and is one of the oldest schools in Scotland."
+    },
+    {
+     "title": "119065: Royal High School, Edinburgh",
+     "author": "Hebridean Connections",
+     "kind": "secondary",
+     "url": "https://hebrideanconnections.com/buildings-and-public-amenities/119065",
+     "locator": "Record description",
+     "quote": "possibly founded in 1128 when King David I founded the Abbey of Holyrood with which the school was first associated"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Old Grammar School, Castletown",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 54.0743,
+   "lon": -4.6527,
+   "nation": "Isle of Man",
+   "location": "Castletown, Isle of Man",
+   "age_text": "built as a chapel (St Mary's) c.1200; used as the town's grammar school from the 16th/18th century to 1930",
+   "year": 1200,
+   "claim": "the oldest roofed building on the Isle of Man, and its oldest schoolroom",
+   "evidence": "The building's age (a chapel of c.1200) is the claim; its use as a school is much later. It is now a Manx National Heritage exhibit of a Victorian schoolroom.",
+   "sources": [
+    {
+     "title": "Castletown, Isle of Man",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castletown,_Isle_of_Man",
+     "locator": "Overview",
+     "quote": "the Old Grammar School (originally a church from 1200 AD) and the Old House of Keys"
+    },
+    {
+     "title": "Old Grammar School",
+     "author": "Visit Isle of Man",
+     "kind": "secondary",
+     "url": "https://www.visitiom.co.uk/things-to-see-and-do/heritage-attractions/old-grammar-school/",
+     "locator": "Attraction description",
+     "quote": "Built around 1200AD the Old Grammar School is a free admission site"
+    },
+    {
+     "title": "Old Grammar School",
+     "author": "Visit Isle of Man",
+     "kind": "secondary",
+     "url": "https://www.visitiom.co.uk/things-to-see-and-do/heritage-attractions/old-grammar-school/",
+     "locator": "Attraction description",
+     "quote": "is the oldest roofed structure still standing on the Isle of Man"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Ruthin School",
+   "qid": "Q7383390",
+   "wikipedia_title": "Ruthin School",
+   "lat": 53.1146,
+   "lon": -3.2997,
+   "nation": "Wales",
+   "location": "Ruthin, Denbighshire",
+   "age_text": "claimed origins 1284; refounded by Gabriel Goodman 1574; closed July 2026",
+   "year": 1284,
+   "claim": "the oldest school in Wales",
+   "evidence": "Ruthin claimed a 1284 foundation (the list of oldest schools gives 1284), but the school closed in July 2026, so it can no longer claim to be the oldest extant Welsh school; Christ College, Brecon (1541) now holds that title.",
+   "sources": [
+    {
+     "title": "Ruthin School",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruthin_School",
+     "locator": "lead",
+     "quote": "It was over seven hundred years old, making it one of the oldest schools in the United Kingdom"
+    },
+    {
+     "title": "Ruthin School",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruthin_School",
+     "locator": "lead",
+     "quote": "On 1st July 2026 the owners announced that the school would close at the end of the week"
+    },
+    {
+     "title": "Ruthin School review",
+     "author": "Britannia StudyLink (with comment citing K. Kenyon-Thompson, 'Ruthin School: The First Seven Centuries')",
+     "kind": "secondary",
+     "url": "https://britannia-study.co.uk/boarding-schools/ruthin-school-review/",
+     "locator": "Review comment by Steve Galloway",
+     "quote": "There is no conclusive evidence supporting the school's assumed formation in 1284"
+    },
+    {
+     "title": "Ruthin School review",
+     "author": "Britannia StudyLink",
+     "kind": "secondary",
+     "url": "https://britannia-study.co.uk/boarding-schools/ruthin-school-review/",
+     "locator": "Review comment by Steve Galloway",
+     "quote": "cites the Taxation of 1291 which lists a collegiate church and school in Ruthin"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Winchester College",
+   "qid": "Q1059517",
+   "wikipedia_title": "Winchester College",
+   "lat": 51.0581,
+   "lon": -1.3128,
+   "nation": "England",
+   "location": "College Street, Winchester, Hampshire",
+   "age_text": "founded by William of Wykeham 1382; buildings of 1387–1394 still in use",
+   "year": 1382,
+   "claim": "the oldest school in continuous operation on its original site and in its original buildings",
+   "evidence": "Unlike the older cathedral-school claims, Winchester's foundation charter (1382) and its late-14th-century buildings (Chamber Court, College Hall, chapel) survive and have been in use ever since, so this is the best-documented case of continuous use of a school building in the isles.",
+   "sources": [
+    {
+     "title": "Winchester College",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Winchester_College",
+     "locator": "lead",
+     "quote": "It was founded by William of Wykeham in 1382 as a feeder school for New College, Oxford, and has operated continuously on its present site ever since"
+    },
+    {
+     "title": "Our History Since 1382",
+     "author": "Winchester College",
+     "kind": "primary",
+     "url": "https://www.winchestercollege.org/welcome/history/",
+     "locator": "Welcome › History, opening",
+     "quote": "Founded in 1382 by William of Wykeham, Winchester College has the longest continuous history of any school in England."
+    },
+    {
+     "title": "Chamber Court with Middle Gate, St Mary's College (Grade I, NHLE 1296879)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101296879",
+     "locator": "Listing description",
+     "quote": "Part of the original buildings, foundation stone 1387, opened 1394. Built by William of Wykeham; Master Mason, William de Wynford."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Kilkenny College",
+   "qid": "Q6407035",
+   "wikipedia_title": "Kilkenny College",
+   "lat": 52.6674,
+   "lon": -7.2501,
+   "nation": "Republic of Ireland",
+   "location": "Castlecomer Road, Kilkenny",
+   "age_text": "founded 1538 by Piers Butler, Earl of Ormond, replacing the School of the Vicars Choral (1234); moved to its present site 1985",
+   "year": 1538,
+   "claim": "one of the oldest schools in Ireland",
+   "evidence": "The 1538 grammar school replaced a 1234 cathedral school; it closed for a period in the 1650s, so continuity is not unbroken. The claim is about the institution; the present campus dates from 1985 (the 1782 college building in John Street survives).",
+   "sources": [
+    {
+     "title": "Kilkenny College",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_College",
+     "locator": "lead",
+     "quote": "It was founded in 1538 to replace the School of the Vicars Choral, which had been founded in 1234"
+    },
+    {
+     "title": "History",
+     "author": "Kilkenny College",
+     "kind": "primary",
+     "url": "https://www.kilkennycollege.ie/history/",
+     "locator": "History, opening paragraph",
+     "quote": "in 1538 Piers Butler, Earl of Ormonde and his wife, Margaret, founded a school to the west of the Cathedral"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Christ College, Brecon",
+   "qid": "Q5108840",
+   "wikipedia_title": "Christ College, Brecon",
+   "lat": 51.9462,
+   "lon": -3.3954,
+   "nation": "Wales",
+   "location": "Brecon, Powys",
+   "age_text": "founded by royal charter of Henry VIII, 19 January 1541, on the site of the Dominican friary of St Nicholas",
+   "year": 1541,
+   "claim": "the oldest extant school in Wales",
+   "evidence": "Founded by charter in 1541 in the former friary, whose 13th-century chapel still serves the school. The 1541 foundation was a prebendal college with a grammar school; sources note it was revived as a school only in the 1850s, so continuity is doubtful. With Ruthin School's closure in 2026 it is the oldest surviving school in Wales by foundation date.",
+   "sources": [
+    {
+     "title": "Christ College, Brecon",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christ_College,_Brecon",
+     "locator": "lead",
+     "quote": "The closure of Ruthin School in July 2026 officially makes Christ College Brecon the oldest extant school in Wales"
+    },
+    {
+     "title": "Christ College, Brecon",
+     "author": "People's Collection Wales",
+     "kind": "secondary",
+     "url": "https://www.peoplescollection.wales/items/1603116",
+     "locator": "Item description",
+     "quote": "resulted in the foundation of 'the College of Christ of Brecknock' in 1541 to provide education in this area"
+    },
+    {
+     "title": "Christ College Chapel, Brecon (site 251)",
+     "author": "Stained Glass in Wales (National Library of Wales / University of Wales)",
+     "kind": "reference",
+     "url": "https://stainedglass.llgc.org.uk/site/251",
+     "locator": "Site description",
+     "quote": "Dissolved in 1538 and refounded in 1541 by Henry VIII as a Prebendal College. Revived as a school in the 1850s."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest school",
+   "name": "Elizabeth College, Guernsey",
+   "qid": "Q5362612",
+   "wikipedia_title": "Elizabeth College, Guernsey",
+   "lat": 49.4566,
+   "lon": -2.5403,
+   "nation": "Guernsey",
+   "location": "St Peter Port, Guernsey",
+   "age_text": "founded by royal charter of Elizabeth I, 25 May 1563; re-chartered 1824; present building 1829",
+   "year": 1563,
+   "claim": "the oldest school in the Channel Islands",
+   "evidence": "The 1563 charter is documented; the school had a troubled history and was re-chartered in 1824. The present Upland Road building is of 1826–29.",
+   "sources": [
+    {
+     "title": "Elizabeth College, Guernsey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Elizabeth_College,_Guernsey",
+     "locator": "lead",
+     "quote": "by royal charter from Elizabeth I, it is one of the oldest schools in the British Isles and the oldest public school in the Channel Islands"
+    },
+    {
+     "title": "History of Elizabeth College",
+     "author": "Elizabeth College",
+     "kind": "primary",
+     "url": "https://elizabethcollege.gg/history-of-elizabeth-college/",
+     "locator": "The history of our school",
+     "quote": "Elizabeth College was established in 1563 by royal command"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest school",
+   "name": "The Royal School, Armagh",
+   "qid": "Q7761723",
+   "wikipedia_title": "The Royal School, Armagh",
+   "lat": 54.352,
+   "lon": -6.648,
+   "nation": "Northern Ireland",
+   "location": "College Hill, Armagh",
+   "age_text": "one of the free schools created by James I in 1608 (Plantation of Ulster); present building 1774",
+   "year": 1608,
+   "claim": "one of the oldest schools in Northern Ireland",
+   "evidence": "Created by royal decree in 1608 (charter 1627) as one of the Ulster royal schools; it shares the date with its sister schools (Dungannon, Enniskillen, Cavan, Raphoe). Its College Hill building dates from 1774.",
+   "sources": [
+    {
+     "title": "The Royal School, Armagh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Royal_School,_Armagh",
+     "locator": "History",
+     "quote": "One of a number of free schools created in 1608 by King James I of England & Ireland"
+    },
+    {
+     "title": "Royal School History",
+     "author": "The Royal School Armagh",
+     "kind": "primary",
+     "url": "https://royalschool.com/about/royal-school-history/",
+     "locator": "Chapter 01, From Mountnorris to Armagh",
+     "quote": "The school owes its existence to a 1608 decree of King James I"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "University of Oxford",
+   "qid": "Q34433",
+   "wikipedia_title": "University of Oxford",
+   "lat": 51.755,
+   "lon": -1.255,
+   "nation": "England",
+   "location": "Oxford",
+   "age_text": "evidence of teaching from 1096; grew rapidly from 1167; chancellor recorded 1201, royal charter 1248",
+   "year": 1096,
+   "claim": "the oldest university in the English-speaking world",
+   "evidence": "There is no foundation date: 1096 is the earliest evidence of teaching, and the university as a corporate body is documented from c.1200 (first chancellor 1201, charter 1248). The claim is about the institution; its oldest purpose-built university building is the Divinity School (1427–83), though college buildings are older.",
+   "sources": [
+    {
+     "title": "University of Oxford",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+     "locator": "lead",
+     "quote": "There is evidence of teaching as early as 1096, making it the oldest university in the English-speaking world and the world's second-oldest university in continuous operation"
+    },
+    {
+     "title": "When was Oxford University founded?",
+     "author": "Immerse Education",
+     "kind": "secondary",
+     "url": "https://www.immerse.education/study-abroad/when-was-oxford-university-founded",
+     "locator": "Introduction",
+     "quote": "Oxford has no official founding date, yet evidence of teaching in the city stretches back to 1096."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "University of Cambridge",
+   "qid": "Q35794",
+   "wikipedia_title": "University of Cambridge",
+   "lat": 52.2053,
+   "lon": 0.1172,
+   "nation": "England",
+   "location": "Cambridge",
+   "age_text": "founded 1209 by scholars leaving Oxford; royal recognition 1231",
+   "year": 1209,
+   "claim": "the second-oldest university in the English-speaking world",
+   "evidence": "The 1209 date comes from the migration of scholars from Oxford recorded by chroniclers; Henry III's writ of 1231 is the first royal recognition. The claim is about the institution.",
+   "sources": [
+    {
+     "title": "University of Cambridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Cambridge",
+     "locator": "lead",
+     "quote": "Founded in 1209, the University of Cambridge is the second-oldest university in the English-speaking world"
+    },
+    {
+     "title": "History",
+     "author": "University of Cambridge",
+     "kind": "primary",
+     "url": "https://www.cam.ac.uk/about-the-university/history",
+     "locator": "Timeline, 1200s",
+     "quote": "1209 Groups of scholars congregate at the ancient Roman trading post of Cambridge for the purpose of study, the earliest record of the University."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "University College, Oxford",
+   "qid": "Q81087",
+   "wikipedia_title": "University College, Oxford",
+   "lat": 51.7525,
+   "lon": -1.252,
+   "nation": "England",
+   "location": "High Street, Oxford",
+   "age_text": "endowed by the bequest of William of Durham, 1249; University Hall bought 1253; present buildings 17th century",
+   "year": 1249,
+   "claim": "the oldest college of Oxford",
+   "evidence": "Univ's claim rests on William of Durham's 1249 bequest; Balliol (1263) and Merton (1264) contest it, Merton because it was the first self-governing college with statutes. The claim is about the endowment, not the buildings, which were rebuilt in the 17th century.",
+   "sources": [
+    {
+     "title": "University College, Oxford",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_College,_Oxford",
+     "locator": "History",
+     "quote": "This later date still allows the claim that Univ is the oldest of the Oxford colleges, although this is contested by Balliol College and Merton College"
+    },
+    {
+     "title": "History of Univ",
+     "author": "University College, Oxford",
+     "kind": "primary",
+     "url": "https://www.univ.ox.ac.uk/learn-about-univ/history/",
+     "locator": "The history of Univ, introduction",
+     "quote": "University College owes its origins to William of Durham, who died in 1249"
+    },
+    {
+     "title": "History of Univ",
+     "author": "University College, Oxford",
+     "kind": "primary",
+     "url": "https://www.univ.ox.ac.uk/learn-about-univ/history/",
+     "locator": "The history of Univ, introduction",
+     "quote": "that still gives us a claim to be the oldest college in Oxford or Cambridge"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "Merton College, Oxford (Mob Quad)",
+   "qid": "Q82513",
+   "wikipedia_title": "Merton College, Oxford",
+   "lat": 51.7508,
+   "lon": -1.2519,
+   "nation": "England",
+   "location": "Merton Street, Oxford",
+   "age_text": "statutes of Walter de Merton 1264 (revised 1274); Mob Quad built 1288–1378, library 1373",
+   "year": 1264,
+   "claim": "the first self-governing college; Mob Quad the oldest quadrangle in Oxford",
+   "evidence": "Merton's 1264 statutes made it the first fully self-governing endowed college, the model for later colleges. Its 13th-century hall and chapel and Mob Quad (1288–1378) are among the oldest university buildings in continuous use; the library (1373) is claimed as the oldest continuously functioning academic library.",
+   "sources": [
+    {
+     "title": "Merton College, Oxford",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Merton_College,_Oxford",
+     "locator": "lead",
+     "quote": "Mob Quad, one of Merton's quadrangles, was constructed between 1288 and 1378, and is claimed to be the oldest quadrangle in Oxford"
+    },
+    {
+     "title": "The History of Merton College",
+     "author": "Merton College",
+     "kind": "primary",
+     "url": "https://www.merton.ox.ac.uk/about/history-merton",
+     "locator": "History of Merton, opening",
+     "quote": "was founded in 1264 by Walter de Merton, sometime Chancellor of England and later Bishop of Rochester"
+    },
+    {
+     "title": "The History of Merton College",
+     "author": "Merton College",
+     "kind": "primary",
+     "url": "https://www.merton.ox.ac.uk/about/history-merton",
+     "locator": "History of Merton, Mob Quad",
+     "quote": "Mob Quadrangle, the oldest quadrangle in the University, was built in three phases"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "Peterhouse, Cambridge",
+   "qid": "Q650068",
+   "wikipedia_title": "Peterhouse, Cambridge",
+   "lat": 52.2009,
+   "lon": 0.1184,
+   "nation": "England",
+   "location": "Trumpington Street, Cambridge",
+   "age_text": "founded 1284 by Hugh de Balsham, Bishop of Ely; hall built c.1290",
+   "year": 1284,
+   "claim": "the oldest college of Cambridge",
+   "evidence": "Peterhouse's 1284 foundation is documented and uncontested within Cambridge; its hall (c.1290) is the oldest college building in Cambridge still in use, though much restored.",
+   "sources": [
+    {
+     "title": "Peterhouse, Cambridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peterhouse,_Cambridge",
+     "locator": "lead",
+     "quote": "Peterhouse is a constituent college of the University of Cambridge in England, founded in 1284 by Hugh de Balsham, Bishop of Ely"
+    },
+    {
+     "title": "History",
+     "author": "University of Cambridge",
+     "kind": "secondary",
+     "url": "https://www.cam.ac.uk/about-the-university/history",
+     "locator": "Timeline, 1200s",
+     "quote": "1284 Peterhouse, the first College at Cambridge, is founded"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "University of St Andrews",
+   "qid": "Q216273",
+   "wikipedia_title": "University of St Andrews",
+   "lat": 56.3413,
+   "lon": -2.793,
+   "nation": "Scotland",
+   "location": "St Andrews, Fife",
+   "age_text": "teaching from 1410; papal bull of Antipope Benedict XIII, 1413",
+   "year": 1413,
+   "claim": "the oldest university in Scotland and third-oldest in the English-speaking world",
+   "evidence": "A school of higher studies began in 1410 and was raised to a university by papal bull in 1413. St Salvator's Chapel (1450) is its oldest surviving building.",
+   "sources": [
+    {
+     "title": "University of St Andrews",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_St_Andrews",
+     "locator": "lead",
+     "quote": "St Andrews was founded in 1413 when the Antipope Benedict XIII issued a papal bull to a small founding group of Augustinian clergy"
+    },
+    {
+     "title": "History and heritage",
+     "author": "University of St Andrews",
+     "kind": "primary",
+     "url": "https://www.st-andrews.ac.uk/about/history/",
+     "locator": "History and heritage, introduction",
+     "quote": "Teaching began in the community of St Andrews in 1410, and the University was formally constituted by the issue of a papal bull in 1413."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "University of Glasgow",
+   "qid": "Q192775",
+   "wikipedia_title": "University of Glasgow",
+   "lat": 55.8719,
+   "lon": -4.2875,
+   "nation": "Scotland",
+   "location": "Gilmorehill, Glasgow",
+   "age_text": "papal bull of Nicholas V, 7 January 1451; moved from the High Street to Gilmorehill 1870",
+   "year": 1451,
+   "claim": "the fourth-oldest university in the English-speaking world",
+   "evidence": "The 1451 bull is documented; the university left its medieval and 17th-century High Street buildings in 1870 (the Lion and Unicorn Staircase was moved to Gilmorehill), so its present buildings are Victorian.",
+   "sources": [
+    {
+     "title": "University of Glasgow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Glasgow",
+     "locator": "lead",
+     "quote": "it is the fourth-oldest university in the English-speaking world and one of Scotland's four ancient universities"
+    },
+    {
+     "title": "Our history",
+     "author": "University of Glasgow",
+     "kind": "primary",
+     "url": "https://www.gla.ac.uk/explore/history/",
+     "locator": "Our history timeline",
+     "quote": "1451 : The University of Glasgow is established, making it the fourth oldest university in the UK."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "King's College, Aberdeen",
+   "qid": "Q6410877",
+   "wikipedia_title": "King's College, Aberdeen",
+   "lat": 57.1639,
+   "lon": -2.1012,
+   "nation": "Scotland",
+   "location": "Old Aberdeen",
+   "age_text": "papal bull of Alexander VI, 1495; chapel built c.1498–1509",
+   "year": 1495,
+   "claim": "founding college of the University of Aberdeen, Scotland's third-oldest university",
+   "evidence": "Founded by Bishop William Elphinstone under a 1495 papal bull; King's College Chapel (completed c.1509) is the university's oldest building and still in use. King's merged with Marischal College (1593) in 1860.",
+   "sources": [
+    {
+     "title": "King's College, Aberdeen",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King's_College,_Aberdeen",
+     "locator": "lead",
+     "quote": "The focal point of the college, as well as its oldest building, is the late 15th century King's College Chapel"
+    },
+    {
+     "title": "Our History",
+     "author": "University of Aberdeen",
+     "kind": "primary",
+     "url": "https://www.abdn.ac.uk/about/history/",
+     "locator": "Our changing campus, 1495",
+     "quote": "King's College becomes the UK's fifth university, welcoming its first students in 1505."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "University of Edinburgh",
+   "qid": "Q160302",
+   "wikipedia_title": "University of Edinburgh",
+   "lat": 55.95,
+   "lon": -3.1833,
+   "nation": "Scotland",
+   "location": "Edinburgh",
+   "age_text": "royal charter 1582; opened 1583 as the 'Tounis College'",
+   "year": 1583,
+   "claim": "the sixth-oldest university in continuous operation in the English-speaking world",
+   "evidence": "Founded by the town council under a 1582 charter of James VI and opened in 1583; its Old College building dates from 1789–1827.",
+   "sources": [
+    {
+     "title": "University of Edinburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Edinburgh",
+     "locator": "lead",
+     "quote": "Founded by the town council under the authority of a royal charter from King James VI in 1582 and officially opened in 1583"
+    },
+    {
+     "title": "University of Edinburgh",
+     "author": "University of Edinburgh, Our History",
+     "kind": "reference",
+     "url": "https://ourhistory.is.ed.ac.uk/index.php/University_of_Edinburgh",
+     "locator": "Beginnings",
+     "quote": "The University of Edinburgh was established following a Royal Charter in 1582."
+    },
+    {
+     "title": "University of Edinburgh",
+     "author": "University of Edinburgh, Our History",
+     "kind": "reference",
+     "url": "https://ourhistory.is.ed.ac.uk/index.php/University_of_Edinburgh",
+     "locator": "Campus",
+     "quote": "The University opened in 1583 and first classes of the university were held in Hamilton House"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "Trinity College Dublin",
+   "qid": "Q258464",
+   "wikipedia_title": "Trinity College Dublin",
+   "lat": 53.3444,
+   "lon": -6.2577,
+   "nation": "Republic of Ireland",
+   "location": "College Green, Dublin",
+   "age_text": "royal charter of Elizabeth I, 3 March 1592; oldest surviving building the Rubrics (c.1700)",
+   "year": 1592,
+   "claim": "Ireland's oldest university",
+   "evidence": "Chartered in 1592 on the site of the dissolved All Hallows priory. An earlier medieval University of Dublin (papal bull 1312) existed only intermittently, so TCD is the oldest surviving university in Ireland. None of the 16th-century buildings survive; the Rubrics are c.1700.",
+   "sources": [
+    {
+     "title": "Trinity College Dublin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_College_Dublin",
+     "locator": "lead",
+     "quote": "Founded in 1592 by Queen Elizabeth I through a royal charter, it is one of the seven ancient universities of Great Britain and Ireland"
+    },
+    {
+     "title": "History",
+     "author": "Trinity College Dublin",
+     "kind": "primary",
+     "url": "https://www.tcd.ie/about/history/",
+     "locator": "About › History",
+     "quote": "Trinity College Dublin was created by royal charter in 1592"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "St David's College, Lampeter",
+   "qid": "Q1816905",
+   "wikipedia_title": "University of Wales, Lampeter",
+   "lat": 52.1139,
+   "lon": -4.0759,
+   "nation": "Wales",
+   "location": "Lampeter, Ceredigion",
+   "age_text": "founded 1822 (foundation stone), opened 1827, charter 1828; now University of Wales Trinity Saint David",
+   "year": 1822,
+   "claim": "the oldest degree-awarding institution in Wales",
+   "evidence": "St David's College had limited degree-awarding powers from 1852, decades before the University of Wales (1893). Its C. R. Cockerell building (1827) is still in use. Since 2010 it has been part of University of Wales Trinity Saint David.",
+   "sources": [
+    {
+     "title": "University of Wales, Lampeter",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Wales,_Lampeter",
+     "locator": "lead",
+     "quote": "it was the oldest degree awarding institution in Wales, with limited degree awarding powers since 1852"
+    },
+    {
+     "title": "History",
+     "author": "University of Wales Trinity Saint David",
+     "kind": "primary",
+     "url": "https://www.uwtsd.ac.uk/about/history",
+     "locator": "Lampeter Campus",
+     "quote": "The campus was founded in 1822 as St David's College to provide a liberal education to members of the clergy."
+    },
+    {
+     "title": "History",
+     "author": "University of Wales Trinity Saint David",
+     "kind": "primary",
+     "url": "https://www.uwtsd.ac.uk/about/history",
+     "locator": "History, introduction",
+     "quote": "The University's Royal Charter is the oldest in Wales and England after the universities of Oxford and Cambridge."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "Durham University",
+   "qid": "Q458393",
+   "wikipedia_title": "Durham University",
+   "lat": 54.775,
+   "lon": -1.575,
+   "nation": "England",
+   "location": "Durham",
+   "age_text": "founded by Act of Parliament 1832; royal charter 1837",
+   "year": 1832,
+   "claim": "the third-oldest university in England",
+   "evidence": "Durham was the first recognised university founded in England after Oxford and Cambridge, though the University of London (UCL 1826, chartered 1836) contests the 'third oldest' title. A medieval Durham College at Oxford and Cromwell's short-lived Durham college (1657) preceded it.",
+   "sources": [
+    {
+     "title": "Durham University",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Durham_University",
+     "locator": "lead",
+     "quote": "the first recognised university to open in England for more than 600 years, after Oxford and Cambridge, and is thus identified by historians as the third-oldest university in England"
+    },
+    {
+     "title": "Durham University, founded 1832",
+     "author": "Durham World Heritage Site",
+     "kind": "secondary",
+     "url": "https://durhamworldheritagesite.com/history/university/foundation",
+     "locator": "The Beginning: Michaelmas Term 1833",
+     "quote": "Durham University was officially recognised through an act of parliament which received the royal assent on July 4"
+    },
+    {
+     "title": "Durham University, founded 1832",
+     "author": "Durham World Heritage Site",
+     "kind": "secondary",
+     "url": "https://durhamworldheritagesite.com/history/university/foundation",
+     "locator": "Caption",
+     "quote": "William Van Mildert, the Bishop of Durham who founded Durham University in 1832."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest university or college",
+   "name": "Queen's University Belfast",
+   "qid": "Q877925",
+   "wikipedia_title": "Queen's University Belfast",
+   "lat": 54.5842,
+   "lon": -5.9347,
+   "nation": "Northern Ireland",
+   "location": "University Road, Belfast",
+   "age_text": "chartered 1845 as Queen's College, Belfast; opened 1849; university charter 1908",
+   "year": 1845,
+   "claim": "the oldest university in Northern Ireland",
+   "evidence": "Queen's College opened in 1849 in Charles Lanyon's Lanyon Building; it became an independent university in 1908. The Belfast Academical Institution (1810) taught collegiate courses earlier but never became a university.",
+   "sources": [
+    {
+     "title": "Queen's University Belfast",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queen's_University_Belfast",
+     "locator": "lead",
+     "quote": "The university received its charter in 1845 as part of the Queen's University of Ireland and opened four years later"
+    },
+    {
+     "title": "Queen's, Belfast 1845-2025",
+     "author": "Special Collections, Queen's University Belfast (Ursula Mitchel)",
+     "kind": "primary",
+     "url": "https://blogs.qub.ac.uk/specialcollections/queens-belfast-1845-2025",
+     "locator": "Opening paragraph",
+     "quote": "Queen's College Belfast was founded alongside its sister Colleges in Cork and Galway by the passing of the Colleges (Ireland) Act in 1845."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "St Nicholas Hospital, Harbledown",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 51.2848,
+   "lon": 1.0563,
+   "nation": "England",
+   "location": "Harbledown, Canterbury, Kent",
+   "age_text": "leper hospital founded by Archbishop Lanfranc c.1084; still an almshouse",
+   "year": 1084,
+   "claim": "the oldest hospital (and almshouse) in England",
+   "evidence": "Founded c.1084 by Lanfranc as a leper hospital, it survives as an almshouse with its 12th-century church; it is an institution still occupying its site but no longer a hospital in the medical sense.",
+   "sources": [
+    {
+     "title": "Listed Building record TR 15 NW 1400 - The Old Leper Church of St Nicholas",
+     "author": "Kent Historic Environment Record (Kent County Council)",
+     "kind": "listing",
+     "url": "https://heritage.kent.gov.uk/Monument/MKE24222",
+     "locator": "Summary",
+     "quote": "The Hospital of St Nicholas, Harbledown, was founded c1084 for lepers and c1400 the places were filled by the poor aged and sick"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "St Bartholomew's Hospital",
+   "qid": "Q164946",
+   "wikipedia_title": "St Bartholomew's Hospital",
+   "lat": 51.5174,
+   "lon": -0.1,
+   "nation": "England",
+   "location": "West Smithfield, City of London",
+   "age_text": "founded by Rahere in 1123; refounded by Henry VIII 1546; oldest surviving building the 1702 Henry VIII Gate, main square by James Gibbs 1730s",
+   "year": 1123,
+   "claim": "the oldest hospital in England still operating on its original site",
+   "evidence": "The 1123 foundation is well documented in the hospital's own records; St Thomas' may be as old (possibly 1106 in Southwark) but has moved. The claim concerns the institution and site; the buildings are 18th-century and later (the church of St Bartholomew-the-Less retains a 15th-century tower).",
+   "sources": [
+    {
+     "title": "St Bartholomew's Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Bartholomew's_Hospital",
+     "locator": "lead",
+     "quote": "It was founded in 1123 by Rahere, and is currently run by Barts Health NHS Trust"
+    },
+    {
+     "title": "St Bartholomew's Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Bartholomew's_Hospital",
+     "locator": "Buildings",
+     "quote": "Barts is the oldest hospital in Britain still providing medical services which occupies the site it was originally built on"
+    },
+    {
+     "title": "St Bartholomew's Hospital: Our history",
+     "author": "Barts Health NHS Trust",
+     "kind": "primary",
+     "url": "https://bartshealth.nhs.uk/st-bartholomews-our-history",
+     "locator": "Founded in 1123",
+     "quote": "St Bartholomew’s Hospital has provided continuous patient care on the same site for longer than any other hospital in England"
+    },
+    {
+     "title": "The 900-year history of St Bartholomew’s Hospital",
+     "author": "London Museum",
+     "kind": "secondary",
+     "url": "https://www.londonmuseum.org.uk/collections/london-stories/900-year-history-st-bartholomews-hospital/",
+     "locator": "introduction",
+     "quote": "St Bartholomew’s is the oldest hospital in England still operating on its original site. Founded in 1123"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "St Leonard's Hospital, York",
+   "qid": "Q17530582",
+   "wikipedia_title": null,
+   "lat": 53.9611,
+   "lon": -1.0868,
+   "nation": "England",
+   "location": "Museum Gardens, York",
+   "age_text": "by tradition St Peter's hospital founded by Athelstan c.937; refounded as St Leonard's after the fire of 1137; surviving undercroft and chapel c.1240; dissolved 1539",
+   "year": 1137,
+   "claim": "the largest medieval hospital in the north of England",
+   "evidence": "The hospital is an institution of the 12th century (with a tradition reaching to the 10th) that ended at the Dissolution in 1539; what survives is the c.1240 ruin of its infirmary and chapel, so the claim is to the oldest surviving hospital building fabric rather than a working hospital.",
+   "sources": [
+    {
+     "title": "St Leonard’s Hospital",
+     "author": "York Museum Gardens (York Museums Trust)",
+     "kind": "primary",
+     "url": "https://www.yorkmuseumgardens.org.uk/about/st-leonards-hospital",
+     "locator": "page text",
+     "quote": "Founded soon after the Norman Conquest, it was believed to be the largest medieval hospital in the north of England"
+    },
+    {
+     "title": "St Leonard's Hospital Remains, Guildhall Ward (Historic England list entry 1257087)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101257087",
+     "locator": "listing text",
+     "quote": "Remains of chapel, infirmary and entrance passage of St Leonard's Hospital. c1240"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "St Thomas' Hospital",
+   "qid": "Q1143779",
+   "wikipedia_title": "St Thomas' Hospital",
+   "lat": 51.4988,
+   "lon": -0.1186,
+   "nation": "England",
+   "location": "Lambeth, London",
+   "age_text": "described as ancient in 1215; probably named after 1173 (Becket's canonisation), possibly an infirmary of St Mary Overie from 1106; moved to Lambeth 1871",
+   "year": 1173,
+   "claim": "one of the oldest hospitals in England (rival to Barts)",
+   "evidence": "The earliest firm reference is 1215, when it was already 'ancient'; the 1106/1173 dates are inferences. It moved from Southwark to Lambeth in 1871, and the Old Operating Theatre (1822) in its former Southwark church is the main surviving relic of the old site.",
+   "sources": [
+    {
+     "title": "St Thomas' Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Thomas'_Hospital",
+     "locator": "History",
+     "quote": "The hospital was described as ancient in 1215 and was named after St Thomas Becket – which suggests it may have been founded after 1173 when Becket was canonised"
+    },
+    {
+     "title": "St Thomas' Hospital",
+     "author": "Guy's and St Thomas' NHS Foundation Trust (history story)",
+     "kind": "primary",
+     "url": "https://guysandstthomas.shorthandstories.com/st-thomas-hospital/",
+     "locator": "opening paragraph",
+     "quote": "In 1173 the already well established infirmary of St Mary Overie in Southwark was renamed"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "Bethlem Royal Hospital",
+   "qid": "Q831377",
+   "wikipedia_title": "Bethlem Royal Hospital",
+   "lat": 51.3826,
+   "lon": -0.0275,
+   "nation": "England",
+   "location": "Monks Orchard, Beckenham, Bromley",
+   "age_text": "founded 1247 as the priory of St Mary of Bethlehem; caring for the insane by the early 15th century; at Beckenham since 1930",
+   "year": 1247,
+   "claim": "the oldest psychiatric hospital in Europe (and the world)",
+   "evidence": "Founded as a priory in 1247 outside Bishopsgate, it is recorded housing mentally ill patients from c.1403. It has moved three times (Moorfields 1676, Southwark 1815 — now the Imperial War Museum — and Beckenham 1930), so the claim is institutional.",
+   "sources": [
+    {
+     "title": "Bethlem Royal Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bethlem_Royal_Hospital",
+     "locator": "lead",
+     "quote": "Founded in 1247, the hospital was originally located just outside the city walls"
+    },
+    {
+     "title": "About",
+     "author": "Bethlem Museum of the Mind",
+     "kind": "primary",
+     "url": "https://museumofthemind.org.uk/about",
+     "locator": "About",
+     "quote": "Bethlem Royal Hospital was founded in 1247 and was the first institution in the UK to specialise in the care of the mentally ill"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "Charitable Infirmary, Dublin (Jervis Street Hospital)",
+   "qid": "Q6185278",
+   "wikipedia_title": "Jervis Street Hospital",
+   "lat": 53.3482,
+   "lon": -6.2665,
+   "nation": "Republic of Ireland",
+   "location": "Jervis Street, Dublin",
+   "age_text": "founded by six surgeons in Cook Street 1718; at Jervis Street 1786–1987; closed 1987",
+   "year": 1718,
+   "claim": "the first voluntary hospital in Ireland (and the British Isles)",
+   "evidence": "Founded in 1718, a year before London's Westminster Hospital (1719), by six surgeons at their own expense, so it has a good claim to be the first voluntary hospital in the isles, though no source found states this outright and Dr Steevens' was planned earlier (1710 will) but opened later (1733). It closed in 1987 (its work moved to Beaumont Hospital) and the site became the Jervis Shopping Centre, which keeps the 1880s façade.",
+   "sources": [
+    {
+     "title": "Jervis Street Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jervis_Street_Hospital",
+     "locator": "History",
+     "quote": "at their own expense, as the Charitable Infirmary in Cook Street, Dublin, in 1718"
+    },
+    {
+     "title": "Dr Steevens' Hospital: a history - Foundation",
+     "author": "Edward Worth Library",
+     "kind": "secondary",
+     "url": "https://dr-steevens-hospital-a-history.edwardworthlibrary.ie/Foundation",
+     "locator": "Foundation",
+     "quote": "In 1718 six Dublin surgeons (probably influenced by the Steevens’ plan), came together to open a hospital on Cook Street"
+    },
+    {
+     "title": "Jervis Centre, Jervis Street, Dublin 1 (Reg. 50010457)",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://www.buildingsofireland.ie/buildings-search/building/50010457/jervis-centre-jervis-street-dublin-1-dublin",
+     "locator": "Description",
+     "quote": "lettering 'Founded AD 1718' and northern with lettering 'Rebuilt AD 1885'"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "Royal Infirmary of Edinburgh",
+   "qid": "Q3822734",
+   "wikipedia_title": "Royal Infirmary of Edinburgh",
+   "lat": 55.9216,
+   "lon": -3.1347,
+   "nation": "Scotland",
+   "location": "Little France, Edinburgh",
+   "age_text": "opened 1729 in Robertson's Close; royal charter 1736; moved to Lauriston Place 1879 and Little France 2003",
+   "year": 1729,
+   "claim": "the oldest voluntary hospital in Scotland",
+   "evidence": "Opened in a small house in 1729 with six beds; the institution is continuous, but it has occupied three sites, its present one since 2003.",
+   "sources": [
+    {
+     "title": "Royal Infirmary of Edinburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Infirmary_of_Edinburgh",
+     "locator": "lead",
+     "quote": "The Royal Infirmary of Edinburgh (RIE) is the oldest voluntary hospital in Scotland. It was established in 1729"
+    },
+    {
+     "title": "Royal Infirmary of Edinburgh (LHB1) - administrative history",
+     "author": "Lothian Health Services Archive, University of Edinburgh",
+     "kind": "reference",
+     "url": "https://archives.collections.ed.ac.uk/repositories/4/resources/87221",
+     "locator": "Biographical / Historical",
+     "quote": "A town house was rented from the Town Council and patients were admitted to the four beds then available from 6 August 1729"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "Dr Steevens' Hospital",
+   "qid": "Q5304555",
+   "wikipedia_title": "Dr Steevens' Hospital",
+   "lat": 53.3456,
+   "lon": -6.2925,
+   "nation": "Republic of Ireland",
+   "location": "Steevens' Lane, Kilmainham, Dublin",
+   "age_text": "endowed by the will of Richard Steevens (d.1710); building 1720–33, opened 1733; closed 1987",
+   "year": 1733,
+   "claim": "one of the oldest public hospital buildings in Ireland",
+   "evidence": "The building of 1720–33 by Thomas Burgh survives (now HSE offices); the hospital closed in 1987. Its claim is to the building rather than a working institution.",
+   "sources": [
+    {
+     "title": "Dr Steevens' Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dr_Steevens'_Hospital",
+     "locator": "lead",
+     "quote": "The hospital closed in 1987 and subsequently became the administrative headquarters of the Health Service Executive (HSE)"
+    },
+    {
+     "title": "Dr Steevens' Hospital: a history - Foundation",
+     "author": "Edward Worth Library",
+     "kind": "secondary",
+     "url": "https://dr-steevens-hospital-a-history.edwardworthlibrary.ie/Foundation",
+     "locator": "Foundation",
+     "quote": "Despite many vicissitudes the hospital opened its doors in July 1733"
+    },
+    {
+     "title": "Health Service Executive, Steevens's Lane (Reg. 50080083)",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://www.buildingsofireland.ie/buildings-search/building/50080083/health-service-executive-steevenss-lane-saint-johns-road-west-dublin-8-dublin",
+     "locator": "Description",
+     "quote": "former hospital with dormer attic, dated 1720, opened 1733"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "Rotunda Hospital",
+   "qid": "Q3443052",
+   "wikipedia_title": "Rotunda Hospital",
+   "lat": 53.353,
+   "lon": -6.264,
+   "nation": "Republic of Ireland",
+   "location": "Parnell Square, Dublin",
+   "age_text": "founded by Bartholomew Mosse in George's Lane, March 1745; Parnell Square building opened 1757",
+   "year": 1745,
+   "claim": "the oldest continuously operating maternity hospital in the world",
+   "evidence": "Founded in 1745 and in its Richard Cassels building on Parnell Square since 1757, it has delivered babies without a break since then; the 'world's oldest continuously operating maternity hospital' claim is the hospital's own and is generally accepted.",
+   "sources": [
+    {
+     "title": "Rotunda Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rotunda_Hospital",
+     "locator": "History: George's Lane",
+     "quote": "The hospital was founded by Bartholomew Mosse, a surgeon and midwife who was appalled at the conditions that pregnant women had to endure, in George's Lane in March 1745"
+    },
+    {
+     "title": "The History of Rotunda Hospital Dublin",
+     "author": "Rotunda Hospital",
+     "kind": "primary",
+     "url": "https://rotunda.ie/history-of-rotunda-hospital/",
+     "locator": "Way back when",
+     "quote": "it has continued to provide an unbroken record of service to women and babies since its foundation in 1745 and has occupied its present premises since 1757"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest hospital",
+   "name": "Royal Victoria Hospital, Belfast",
+   "qid": "Q7374970",
+   "wikipedia_title": "Royal Victoria Hospital, Belfast",
+   "lat": 54.5944,
+   "lon": -5.9545,
+   "nation": "Northern Ireland",
+   "location": "Grosvenor Road, Belfast",
+   "age_text": "origins in the Belfast Fever Hospital and General Dispensary, 1797 (dispensary 1792); on Grosvenor Road since 1903",
+   "year": 1797,
+   "claim": "the oldest hospital in Northern Ireland (by descent)",
+   "evidence": "The RVH traces its descent through successive institutions from 1797; the present site dates from 1903. The claim is institutional.",
+   "sources": [
+    {
+     "title": "Royal Victoria Hospital, Belfast",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Victoria_Hospital,_Belfast",
+     "locator": "History: Early history",
+     "quote": "beginning in 1797 with The Belfast Fever Hospital and General Dispensary, located in Factory Row"
+    },
+    {
+     "title": "Royal Victoria Hospital - founded 1797 (after R. Clarke, The Royal Victoria Hospital, Belfast: A History 1797-1997)",
+     "author": "Ulster Medical Society",
+     "kind": "secondary",
+     "url": "https://ums.ac.uk/rvh",
+     "locator": "History",
+     "quote": "in 1797 a separate Belfast Fever Hospital was opened in Factory Row, now Berry Street, off Royal Avenue"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "Tintagel Old Post Office",
+   "qid": "Q1321349",
+   "wikipedia_title": "Tintagel Old Post Office",
+   "lat": 50.6634,
+   "lon": -4.7517,
+   "nation": "England",
+   "location": "Fore Street, Tintagel, Cornwall",
+   "age_text": "late 14th/15th-century house; letter-receiving office in the 19th century; National Trust since 1903",
+   "year": 1380,
+   "claim": "a 14th-century house that was the village post office",
+   "evidence": "The building is medieval (National Trust says 14th century, the listing 'probably C15'), but it served as a letter-receiving office only in the Victorian period; it is an old building used as a post office, not an early post office.",
+   "sources": [
+    {
+     "title": "Tintagel Old Post Office",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tintagel_Old_Post_Office",
+     "locator": "lead",
+     "quote": "The name dates from the Victorian period when it briefly held a licence to be the letter receiving station for the district"
+    },
+    {
+     "title": "The Old Post Office, Tintagel (Historic England list entry 1143438)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101143438",
+     "locator": "listing text",
+     "quote": "later post office and now the property of the National Trust and open to public. Probably C15, repaired in 1896 by Detmar Blow"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "Sanquhar Post Office",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 55.3657,
+   "lon": -3.9226,
+   "nation": "Scotland",
+   "location": "High Street, Sanquhar, Dumfries and Galloway",
+   "age_text": "post office in Sanquhar from 1712; in its present building since the 18th/19th century",
+   "year": 1712,
+   "claim": "the oldest working post office in the world",
+   "evidence": "Guinness World Records accepts continuous operation since 1712 (runners-up Stockholm 1720, Santiago 1772). The claim is about the office's continuous service in the town, not the building, which it occupied later.",
+   "sources": [
+    {
+     "title": "Sanquhar",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sanquhar",
+     "locator": "lead",
+     "quote": "It is notable for its tiny post office, established in 1712 and considered the oldest working post office in the world"
+    },
+    {
+     "title": "Oldest working post office",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/oldest-working-post-office",
+     "locator": "record text",
+     "quote": "The oldest working post office is located in Sanquhar, Dumfriesshire, UK. It has been operating continuously since 1712."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "General Post Office, Dublin",
+   "qid": "Q1339254",
+   "wikipedia_title": "General Post Office, Dublin",
+   "lat": 53.3494,
+   "lon": -6.2606,
+   "nation": "Republic of Ireland",
+   "location": "O'Connell Street, Dublin",
+   "age_text": "built 1814–18 to designs of Francis Johnston, opened 6 January 1818; gutted 1916, interior rebuilt 1925–29",
+   "year": 1818,
+   "claim": "one of the oldest operating postal headquarters in the world",
+   "evidence": "The GPO has been Dublin's principal post office since 1818, but the 1916 Rising destroyed all but the façade and portico, so the working interior is 1920s. The Irish Post Office itself dates from the 17th century.",
+   "sources": [
+    {
+     "title": "General Post Office, Dublin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/General_Post_Office,_Dublin",
+     "locator": "Architecture",
+     "quote": "The foundation stone of the building, which was designed by Francis Johnston, was laid by the Lord Lieutenant of Ireland"
+    },
+    {
+     "title": "General Post Office (GPO), O'Connell Street (Reg. 50010528)",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://buildingsofireland.ie/buildings-search/building/50010528/general-post-office-gpo-dublin-city",
+     "locator": "Description",
+     "quote": "central post office over concealed basement, built 1814-18, to designs of Francis Johnston, with hexastyle Ionic portico"
+    },
+    {
+     "title": "The GPO",
+     "author": "History Ireland",
+     "kind": "secondary",
+     "url": "https://historyireland.com/gpo/",
+     "locator": "opening",
+     "quote": "the building opened for business on 6 January 1818. Today the GPO survives as one of the oldest operating postal headquarters in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "First pillar boxes, St Helier, Jersey",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 49.1893,
+   "lon": -2.1046,
+   "nation": "Jersey",
+   "location": "David Place, St Helier, Jersey",
+   "age_text": "four Vaudin boxes brought into use 23 November 1852 on Anthony Trollope's recommendation; none survive",
+   "year": 1852,
+   "claim": "the first roadside pillar boxes in the British Isles",
+   "evidence": "The 23 November 1852 date for the first four Jersey boxes (David Place, New Street, Cheapside, St Clement's Road) is well attested; sources disagree on the exact streets and none of the original boxes survives. The modern replica in David Place marks the site.",
+   "sources": [
+    {
+     "title": "Pillar box",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "History: Channel Islands",
+     "quote": "the first four were erected in David Place, New Street, Cheapside and St Clement's Road in Saint Helier and brought into public use on 23 November 1852"
+    },
+    {
+     "title": "A short introduction to the history of the British Pillar Box",
+     "author": "CVPHM (cvphm.org.uk)",
+     "kind": "secondary",
+     "url": "https://cvphm.org.uk/history.html",
+     "locator": "Channel Islands section",
+     "quote": "they were first introduced in the Channel Islands in 1852, with Botchergate in Carlisle becoming the first mainland location the following year"
+    },
+    {
+     "title": "The humble post box",
+     "author": "Castings SSA (from Anglotopia Magazine)",
+     "kind": "secondary",
+     "url": "https://castingssa.com/?p=4279",
+     "locator": "Trollope paragraph",
+     "quote": "The first four boxes were installed in the town of Saint Helier on the island of Jersey in November 1852"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "Union Street pillar box, St Peter Port",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 49.4565,
+   "lon": -2.539,
+   "nation": "Guernsey",
+   "location": "Union Street, St Peter Port, Guernsey",
+   "age_text": "one of Guernsey's first three Vaudin boxes, in use from 8 February 1853",
+   "year": 1853,
+   "claim": "the oldest working post box in the British Isles",
+   "evidence": "Guernsey Post and the postal-history literature agree that Pillar Box no. 1 in Union Street is a surviving 1852–53 Vaudin box still in service; the exact date of its installation at this spot is not separately documented.",
+   "sources": [
+    {
+     "title": "Pillar box",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "History: Channel Islands",
+     "quote": "One Vaudin box still stands in Union Street, Saint Peter Port, Guernsey whilst another is in the British Postal Museum & Archive collection in London"
+    },
+    {
+     "title": "Fifty years",
+     "author": "Guernsey Post",
+     "kind": "primary",
+     "url": "https://guernseypost.com/fifty-years",
+     "locator": "1980s section",
+     "quote": "The exception is Pillar Box number 1 in Union Street, which has retained its original burgundy colour and is the oldest working post box in the British Isles"
+    },
+    {
+     "title": "A short introduction to the history of the British Pillar Box",
+     "author": "CVPHM (cvphm.org.uk)",
+     "kind": "secondary",
+     "url": "https://cvphm.org.uk/history.html",
+     "locator": "Channel Islands section",
+     "quote": "One Vaudin box still stands in Union Street, St.Peter Port, whilst another is in the National Postal Museum collection"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "Barnes Cross pillar box, Holwell",
+   "qid": "Q17543409",
+   "wikipedia_title": null,
+   "lat": 50.9046,
+   "lon": -2.4378,
+   "nation": "England",
+   "location": "Barnes Cross, Holwell, near Sherborne, Dorset",
+   "age_text": "Butt & Co. (Gloucester) box; listing dates it 1853, but its maker's plate points to the later batch of c.1856–59",
+   "year": 1853,
+   "claim": "the oldest pillar box in Britain still in everyday use",
+   "evidence": "Royal Mail and the Grade II* listing give 1853, but the Letter Box Study Group / CVPHM note it belongs to a later Butt batch (1859), and Wikipedia's pillar-box article gives the title to the Framlingham boxes of 1856. Its claim is therefore doubtful.",
+   "sources": [
+    {
+     "title": "Holwell, Dorset",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holwell,_Dorset",
+     "locator": "Landmarks",
+     "quote": "At Barnes Cross—between The Borough and Cornford Bridge—is a pillar box which is the oldest still in everyday use in Britain"
+    },
+    {
+     "title": "Pillar box",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "History: First mainland boxes",
+     "quote": "All date from 1853 to 1859, with Barnes Cross being one of the later batch"
+    },
+    {
+     "title": "Pillar Box at Barnes Cross at ST 693 118 (Historic England list entry 1237251)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101237251",
+     "locator": "listing text",
+     "quote": "Pillar box. 1853. Manufactured by John Butt and Co. at Sweetbriars Street Foundry, Gloucester"
+    },
+    {
+     "title": "A short introduction to the history of the British Pillar Box",
+     "author": "CVPHM (cvphm.org.uk)",
+     "kind": "secondary",
+     "url": "https://cvphm.org.uk/history.html",
+     "locator": "mainland boxes",
+     "quote": "Royal Mail, claim the Barnes Cross box to be the oldest still working in Britain, but this is incorrect"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest post office",
+   "name": "Framlingham pillar boxes",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 52.2214,
+   "lon": 1.3455,
+   "nation": "England",
+   "location": "Double Street and College Road, Framlingham, Suffolk",
+   "age_text": "two octagonal boxes cast by Andrew Handyside & Co. of Derby, 1856",
+   "year": 1856,
+   "claim": "the oldest pillar boxes still in use on the British mainland",
+   "evidence": "The postal-history sources argue that, since the only Butt box still in use (Barnes Cross) is of c.1859, the two 1856 Handyside boxes at Framlingham are the oldest working boxes on the mainland; the Channel Islands' Union Street box is older.",
+   "sources": [
+    {
+     "title": "Pillar box",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pillar_box",
+     "locator": "History: First mainland boxes",
+     "quote": "The oldest pillar boxes still in use by the Royal Mail are at Framlingham in Suffolk"
+    },
+    {
+     "title": "History of Letter Boxes",
+     "author": "Carlisle Victorian Pillar box History (CVPHM)",
+     "kind": "secondary",
+     "url": "https://cvphm.org.uk/history.html",
+     "locator": "history page",
+     "quote": "the Framlingham boxes are from 1856, they can rightly claim to be the oldest working boxes on the street"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Westminster Hall",
+   "qid": "Q114004148",
+   "wikipedia_title": "Westminster Hall",
+   "lat": 51.4995,
+   "lon": -0.1253,
+   "nation": "England",
+   "location": "Palace of Westminster, London",
+   "age_text": "hall built 1097–99; the central royal courts sat in or beside it from the 13th century until 1882",
+   "year": 1097,
+   "claim": "the seat of England's principal law courts for some six centuries",
+   "evidence": "The courts of King's Bench, Common Pleas and Chancery sat in the hall (later in buildings along its west side) until the Royal Courts of Justice opened in 1882; the 1097–99 walls and the 1393–1401 hammerbeam roof survive. It is the oldest surviving building in the isles to have housed the central courts.",
+   "sources": [
+    {
+     "title": "Westminster Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Westminster_Hall",
+     "locator": "lead",
+     "quote": "From the twelfth to the nineteenth centuries it was home to the courts of King's Bench, Chancery, and Common Pleas"
+    },
+    {
+     "title": "Houses of Parliament and The Palace of Westminster (list entry 1226284)",
+     "author": "British Listed Buildings (reproducing the Historic England list entry)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101226284",
+     "locator": "Description",
+     "quote": "starting with Westminster Hall 1097-99, which was remodelled 1394-1401 by Henry Yevele with Hugh Herland (carpenter)"
+    },
+    {
+     "title": "Westminster Hall, in London and its Environs (Muirhead's Blue Guide, 1927), reproduced by Gardenvisit",
+     "author": "Findlay Muirhead (ed.)",
+     "kind": "secondary",
+     "url": "https://www.gardenvisit.com/book/london_and_its_environs_1927/4_the_houses_of_parliament/westminster_hall",
+     "locator": "Westminster Hall",
+     "quote": "From the 13th century until 1882 the chief English law courts sat at Westminster Hall, at first in the hall itself"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Royal Court of Guernsey",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 49.4557,
+   "lon": -2.5395,
+   "nation": "Guernsey",
+   "location": "Royal Court House, St Peter Port, Guernsey",
+   "age_text": "named as curia regis in a charter of 1179; Bailiff and Jurats from the 13th century; Royal Court House early 19th century",
+   "year": 1179,
+   "claim": "one of the oldest courts in continuous existence in the isles",
+   "evidence": "A charter of 1179 already calls the Guernsey court the king's court, before the 1204 separation from Normandy; the institution is continuous, but the Royal Court House dates only from the early 1800s.",
+   "sources": [
+    {
+     "title": "Courts of Guernsey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Courts_of_Guernsey",
+     "locator": "lead",
+     "quote": "The principal court is the Royal Court and exercises both civil and criminal jurisdiction"
+    },
+    {
+     "title": "Guernsey's Oldest Charter discovered at Exeter",
+     "author": "Priaulx Library",
+     "kind": "primary",
+     "url": "https://www.priaulxlibrary.co.uk/node/976",
+     "locator": "Article (translation of the 1179 charter)",
+     "quote": "this document is the earliest known which makes mention the Guernsey Court as Royal Court (Curia Regis)."
+    },
+    {
+     "title": "The Royal Court House",
+     "author": "Liberation Route Europe / Europe Remembers",
+     "kind": "secondary",
+     "url": "https://www.europeremembers.com/pois/437/the-royal-court-house",
+     "locator": "Description",
+     "quote": "The Royal Court House has existed at this location since the early 1800s."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Lydford Castle",
+   "qid": "Q6707560",
+   "wikipedia_title": "Lydford Castle",
+   "lat": 50.6447,
+   "lon": -4.1087,
+   "nation": "England",
+   "location": "Lydford, Devon",
+   "age_text": "tower authorised 1194–95 as a prison and court for forest and stannary law; rebuilt c.1260s",
+   "year": 1195,
+   "claim": "the stannary court and prison of Devon's tin miners",
+   "evidence": "English Heritage gives 1194 for the order to build the tower (Wikipedia 1195); it served as the stannary and forest prison and court for centuries, though the tower was largely rebuilt in the 13th century. Notorious as 'Lydford law' (hang first, try after).",
+   "sources": [
+    {
+     "title": "Lydford Castle",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lydford_Castle",
+     "locator": "lead",
+     "quote": "rapidly became used as a prison and court to administer the laws in the Forest of Dartmoor and the Devon stannaries"
+    },
+    {
+     "title": "History of Lydford Castle and Saxon Town",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/lydford-castle-and-saxon-town/history/",
+     "locator": "History",
+     "quote": "In 1194 King John authorised the building of a new tower east of the church, to house offenders against both the forest and stannary laws."
+    },
+    {
+     "title": "History of Lydford Castle and Saxon Town",
+     "author": "English Heritage",
+     "kind": "secondary",
+     "url": "https://www.english-heritage.org.uk/visit/places/lydford-castle-and-saxon-town/history/",
+     "locator": "History",
+     "quote": "the stannaries, or tin districts of Devon, were administered from Lydford"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Royal Court of Jersey",
+   "qid": "Q111950877",
+   "wikipedia_title": "Royal Court (Jersey)",
+   "lat": 49.1838,
+   "lon": -2.1067,
+   "nation": "Jersey",
+   "location": "Royal Square, St Helier, Jersey",
+   "age_text": "origins after 1204 when King John kept Jersey under Norman custom; present Royal Court building 1866/77 on a 1768 predecessor",
+   "year": 1204,
+   "claim": "Jersey's oldest court",
+   "evidence": "The court's 13th-century origin under King John is traditional (the 'constitutions of King John' are partly legend, the main evidence being a 1248/1348 inquest); the building in Royal Square is 19th-century.",
+   "sources": [
+    {
+     "title": "Royal Court (Jersey)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Court_(Jersey)",
+     "locator": "lead",
+     "quote": "The Royal Court is the principal and oldest court in Jersey, and exercises both criminal and civil jurisdiction"
+    },
+    {
+     "title": "How did Jersey become self-governing?",
+     "author": "Government of Jersey (gov.je)",
+     "kind": "secondary",
+     "url": "https://gov.je/Leisure/Jersey/Pages/History.aspx",
+     "locator": "Jersey's history",
+     "quote": "he instructed them to select their 12 best men as Jurats who, sitting with the Bailiff, became the Island's Royal Court."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Old Bailey (Central Criminal Court)",
+   "qid": "Q1194829",
+   "wikipedia_title": "Old Bailey",
+   "lat": 51.5155,
+   "lon": -0.1019,
+   "nation": "England",
+   "location": "Old Bailey, City of London",
+   "age_text": "sessions house beside Newgate from the 16th century (1539/1585); rebuilt 1674 and 1774; present building 1902–07",
+   "year": 1585,
+   "claim": "the most famous criminal court in England, on its site since the 16th century",
+   "evidence": "Courts have sat on the Old Bailey site since at least the 16th century, but the building was rebuilt after the Great Fire (1674), in 1774 and in 1902–07; the claim is about continuity of the court on the site, not the building.",
+   "sources": [
+    {
+     "title": "Old Bailey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Bailey",
+     "locator": "lead",
+     "quote": "The court has been housed in a succession of buildings on the street since at least the sixteenth century"
+    },
+    {
+     "title": "The Central Criminal Court",
+     "author": "Katherine Hardcastle, 6KBW College Hill (blog)",
+     "kind": "secondary",
+     "url": "https://blog.6kbw.com/posts/the-central-criminal-court",
+     "locator": "Article",
+     "quote": "The Great Fire destroyed the buildings in 1666, following which they were reconstructed in 1674."
+    },
+    {
+     "title": "The Central Criminal Court",
+     "author": "Katherine Hardcastle, 6KBW College Hill (blog)",
+     "kind": "secondary",
+     "url": "https://blog.6kbw.com/posts/the-central-criminal-court",
+     "locator": "Article",
+     "quote": "the 1907 building, which continues to house part of the Old Bailey"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Canongate Tolbooth",
+   "qid": "Q5033345",
+   "wikipedia_title": "Canongate Tolbooth",
+   "lat": 55.9516,
+   "lon": -3.1795,
+   "nation": "Scotland",
+   "location": "Canongate, Royal Mile, Edinburgh",
+   "age_text": "built 1591 as courthouse, burgh jail and council house of the burgh of Canongate",
+   "year": 1591,
+   "claim": "one of the oldest surviving tolbooths (burgh court and jail) in Scotland",
+   "evidence": "HES calls it an outstanding and rare survival of 16th-century burgh architecture; Musselburgh (1590) and Dysart (1576) are earlier tolbooths, so it is one of the oldest rather than the oldest. It now houses a museum.",
+   "sources": [
+    {
+     "title": "163 Canongate, Canongate Tolbooth (LB27582)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB27582",
+     "locator": "Statement of Special Interest",
+     "quote": "The Canongate Tolbooth is among the oldest extant structures on the Canongate and is an outstanding and rare survival of 16th century burgh architecture."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Beaumaris Courthouse",
+   "qid": "Q17741428",
+   "wikipedia_title": null,
+   "lat": 53.264,
+   "lon": -4.0909,
+   "nation": "Wales",
+   "location": "Castle Street, Beaumaris, Anglesey",
+   "age_text": "built 1614; remodelled in the early 19th century; assizes until 1971, magistrates until 1996; now a museum",
+   "year": 1614,
+   "claim": "the oldest courthouse in Britain (in use until 1996)",
+   "evidence": "The courthouse dates from 1614 (tablet in the gable) but was much altered in the 19th century; until 1971 it was the oldest building in the UK in which assizes were held. It no longer sits as a court, and Westminster Hall and other buildings housed courts earlier.",
+   "sources": [
+    {
+     "title": "Beaumaris",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beaumaris",
+     "locator": "Architecture",
+     "quote": "Notable buildings in the town include the castle, a courthouse built in 1614"
+    },
+    {
+     "title": "Beaumaris Courthouse (Cadw listed building 5581)",
+     "author": "British Listed Buildings (reproducing the Cadw listing)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/300005581",
+     "locator": "History",
+     "quote": "A courthouse built in 1614, when the building comprised the main range with a porch set at a splayed angle."
+    },
+    {
+     "title": "Beaumaris Courthouse",
+     "author": "People's Collection Wales (Gathering the Jewels)",
+     "kind": "secondary",
+     "url": "https://www.peoplescollection.wales/items/10302",
+     "locator": "Description",
+     "quote": "Until 1971, it was the oldest building in the United Kingdom where Assize Courts were held"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Parliament House, Edinburgh",
+   "qid": "Q7138911",
+   "wikipedia_title": "Parliament House, Edinburgh",
+   "lat": 55.9493,
+   "lon": -3.1907,
+   "nation": "Scotland",
+   "location": "Parliament Square, Edinburgh",
+   "age_text": "Parliament Hall built 1632–39; Court of Session housed there from the start and since 1707 the sole occupant",
+   "year": 1639,
+   "claim": "the world's first purpose-built parliament building, home of Scotland's supreme courts",
+   "evidence": "Built 1632–39 for the Scottish Parliament and the Court of Session (founded 1532); since the Union of 1707 it has housed the supreme courts. HES calls it the oldest surviving parliamentary building in the UK; the courts' claim is to continuous use since 1639.",
+   "sources": [
+    {
+     "title": "Parliament House, Edinburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Parliament_House,_Edinburgh",
+     "locator": "lead",
+     "quote": "was home to the Parliament of Scotland from 1639 to 1707, and was the world's first purpose-built parliament building"
+    },
+    {
+     "title": "Parliament Hall, Parliament Square (LB27704)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB27704",
+     "locator": "Statement of Special Interest",
+     "quote": "it is the oldest surviving Parliamentary building in the United Kingdom"
+    },
+    {
+     "title": "Parliament Hall, Parliament Square (LB27704)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB27704",
+     "locator": "Statement of Special Interest",
+     "quote": "accommodation for the Lords of Session (later the Court of Session, this legal entity having been established 100 years earlier by James V)"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest court or courthouse",
+   "name": "Old Courthouse, Antrim",
+   "qid": "Q17778004",
+   "wikipedia_title": null,
+   "lat": 54.7153,
+   "lon": -6.2183,
+   "nation": "Northern Ireland",
+   "location": "Market Square, Antrim",
+   "age_text": "built 1726 by the Grand Jury as court house and market house; petty sessions until the 1990s; now an arts venue",
+   "year": 1726,
+   "claim": "the oldest remaining courthouse in Northern Ireland",
+   "evidence": "The 1726 date is on the building and in the NI listing; it served as a court until the 1990s. The 'oldest' claim is made by the architects of its restoration and in local sources rather than an official register.",
+   "sources": [
+    {
+     "title": "Court House, Market Square, Antrim (HB20/08/008)",
+     "author": "Department for Communities (Northern Ireland), Historic Buildings database",
+     "kind": "listing",
+     "url": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=2997",
+     "locator": "Historical Information",
+     "quote": "Built in 1726 by the Grand Jury as a court house and market house; lantern on roof added in 1815 at the expense of Lord Ferrard"
+    },
+    {
+     "title": "Hamilton Legacy Project: Old Antrim Courthouse",
+     "author": "Hamilton Architects",
+     "kind": "secondary",
+     "url": "https://www.hamiltonarchitects.co.uk/?p=2362",
+     "locator": "News article, August 2022",
+     "quote": "The oldest remaining courthouse in Northern Ireland and one of the town's most treasured historic artefacts"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Honorary Police of Jersey",
+   "qid": "Q3394155",
+   "wikipedia_title": "Honorary Police",
+   "lat": 49.1869,
+   "lon": -2.1102,
+   "nation": "Jersey",
+   "location": "Town Hall, St Helier, Jersey",
+   "age_text": "parish police elected for centuries; attested at least from the 15th century (centeniers documented from the 16th)",
+   "year": 1400,
+   "claim": "the oldest policing institution still serving in the British Isles",
+   "evidence": "An unpaid, elected parish police whose roots are medieval (MacRae: since at least the 15th century); it is a policing institution rather than a professional force, and no exact founding date exists — the year given is a placeholder for '15th century'. Coordinates are St Helier Town Hall, the parish hall of the largest parish.",
+   "sources": [
+    {
+     "title": "Honorary Police",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Honorary_Police",
+     "locator": "lead",
+     "quote": "Honorary Police officers have, for centuries, been elected by parishioners to assist the connétable of the parish to maintain law and order"
+    },
+    {
+     "title": "The Role of Attorney General as Titular Head of Jersey's Honorary Police (Jersey & Guernsey Law Review 2002)",
+     "author": "Robert MacRae, Jersey & Guernsey Law Review (jerseylaw.je)",
+     "kind": "secondary",
+     "url": "https://www.jerseylaw.je/publications/jglr/Pages/JGLR2002_MacRae(AttGen).aspx",
+     "locator": "Paragraph 6",
+     "quote": "The Honorary Police have existed since, at the very least, the 15th century."
+    },
+    {
+     "title": "Honorary police",
+     "author": "Government of Jersey (gov.je)",
+     "kind": "secondary",
+     "url": "https://www.gov.je/CrimeJustice/ParishPolicing/pages/honorarypolice.aspx",
+     "locator": "Introduction",
+     "quote": "Honorary policing is a voluntary service that has been part of Jersey life for hundreds of years."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Bow Street Runners and Bow Street police station",
+   "qid": "Q2341687",
+   "wikipedia_title": "Bow Street Runners",
+   "lat": 51.5137,
+   "lon": -0.1222,
+   "nation": "England",
+   "location": "Bow Street, Covent Garden, London",
+   "age_text": "Runners founded by Henry Fielding 1749 at the Bow Street magistrates' office (from 1740); absorbed into the Met 1839; surviving court and police station building 1879–81",
+   "year": 1749,
+   "claim": "London's first professional police force",
+   "evidence": "The Runners were a magistrate's band of paid officers rather than a statutory force; the claim is about the institution. The listed Bow Street court and police station (1879–81, closed 2006) is now a hotel and the Bow Street Museum.",
+   "sources": [
+    {
+     "title": "Bow Street Runners",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bow_Street_Runners",
+     "locator": "lead",
+     "quote": "They have been called London's first professional police force"
+    },
+    {
+     "title": "The Bow Street Runners",
+     "author": "Jessica Brain, Historic UK",
+     "kind": "secondary",
+     "url": "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Bow-Street-Runners/",
+     "locator": "Article",
+     "quote": "The Bow Street Runners were the first professional police force, organised in London by magistrate and author Henry Fielding in 1749."
+    },
+    {
+     "title": "Former Bow Street Magistrates Court and Police Station (list entry 1066393)",
+     "author": "British Listed Buildings (reproducing the Historic England list entry)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101066393",
+     "locator": "Description",
+     "quote": "Former Court and police station. 1879-80 by Sir John Taylor of the Office of Works"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Dublin Police",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 53.3429,
+   "lon": -6.2674,
+   "nation": "Republic of Ireland",
+   "location": "Dublin Castle, Dublin",
+   "age_text": "Dublin Police Act 1786 (abolished 1795); Dublin Metropolitan Police 1836–1925",
+   "year": 1786,
+   "claim": "the first centralised, government-controlled police force in the British Isles",
+   "evidence": "The 1786 Dublin Police was a uniformed, salaried force under government control, predating London's Marine Police and the Glasgow force; it was abolished in 1795, so it is not continuous. Coordinates are Dublin Castle, the seat of the Irish administration, not a police building.",
+   "sources": [
+    {
+     "title": "Dublin Metropolitan Police",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dublin_Metropolitan_Police",
+     "locator": "History",
+     "quote": "The Dublin city police had been subject to major reforms by the Dublin Police Act 1786 and the Dublin Police Magistrates Act 1808"
+    },
+    {
+     "title": "Our History",
+     "author": "An Garda Síochána",
+     "kind": "secondary",
+     "url": "https://www.garda.ie/en/about-us/our-history/",
+     "locator": "Our History",
+     "quote": "In 1836 the Irish Constabulary (later to be known as the Royal Irish Constabulary (RIC)) and the Dublin Metropolitan Police (DMP) were established"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Fire engine house, 99 Chapel Market, Pentonville",
+   "qid": "Q26641788",
+   "wikipedia_title": null,
+   "lat": 51.5333,
+   "lon": -0.1113,
+   "nation": "England",
+   "location": "Chapel Market, Islington, London",
+   "age_text": "parish fire engine house built 1792 by St James, Clerkenwell",
+   "year": 1792,
+   "claim": "a very rare surviving Georgian fire engine house",
+   "evidence": "A parish engine house rather than a brigade fire station; the earliest surviving purpose-built station of London's Metropolitan Fire Brigade is Peckham Road (1867). No national register names an 'oldest fire station', so this is a candidate, not a settled claim.",
+   "sources": [
+    {
+     "title": "99, Chapel Market (list entry 1359561)",
+     "author": "British Listed Buildings (reproducing the Historic England list entry)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101359561",
+     "locator": "History",
+     "quote": "this structure was erected in 1792 as a fire engine house, built by the parish of St James, Clerkenwell"
+    },
+    {
+     "title": "99, Chapel Market (list entry 1359561)",
+     "author": "British Listed Buildings (reproducing the Historic England list entry)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101359561",
+     "locator": "History",
+     "quote": "Listed as an extremely rare surviving example of a Georgian fire engine house."
+    },
+    {
+     "title": "Fire Station",
+     "author": "South London Gallery",
+     "kind": "secondary",
+     "url": "https://www.southlondongallery.org/archive-room/fire-station/",
+     "locator": "Fire Station",
+     "quote": "the Grade II listed building is the earliest surviving purpose-built fire station constructed after the formation of London's Metropolitan Fire Brigade (MFB) in 1866"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Marine Police Force (Wapping Police Station)",
+   "qid": "Q6764193",
+   "wikipedia_title": "Thames River Police",
+   "lat": 51.5063,
+   "lon": -0.0617,
+   "nation": "England",
+   "location": "Wapping High Street, London",
+   "age_text": "founded 2 July 1798 by Patrick Colquhoun and John Harriott; public force from 1800; part of the Met since 1839; present station 1907–08",
+   "year": 1798,
+   "claim": "the oldest police force in the world still in existence (now the Met's Marine Policing Unit)",
+   "evidence": "The Marine Police has operated from Wapping since 1798 and survives as the Marine Policing Unit, making it the oldest continuously serving police unit; it was privately funded until 1800. The station building is of 1907–08 (Thames Police Museum in the old carpenters' workshop).",
+   "sources": [
+    {
+     "title": "Thames River Police",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thames_River_Police",
+     "locator": "lead",
+     "quote": "It is claimed that the Thames River Police was England's first modern municipal police force"
+    },
+    {
+     "title": "Protecting London: The work of the Metropolitan Police Marine Support Unit",
+     "author": "Gresham College (lecture transcript)",
+     "kind": "secondary",
+     "url": "https://www.gresham.ac.uk/node/11917",
+     "locator": "Transcript",
+     "quote": "On 2nd July 1798 the two together founded the West India Merchants & Planters Marine Police Institute"
+    },
+    {
+     "title": "Protecting London: The work of the Metropolitan Police Marine Support Unit",
+     "author": "Gresham College (lecture transcript)",
+     "kind": "secondary",
+     "url": "https://www.gresham.ac.uk/node/11917",
+     "locator": "Transcript",
+     "quote": "To set up this new police force, the first of its kind in the World cost £5,000"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "City of Glasgow Police",
+   "qid": "Q5123696",
+   "wikipedia_title": "City of Glasgow Police",
+   "lat": 55.8576,
+   "lon": -4.2416,
+   "nation": "Scotland",
+   "location": "Glasgow",
+   "age_text": "Glasgow Police Act 1800; first muster 15 November 1800; merged into Strathclyde Police 1975",
+   "year": 1800,
+   "claim": "Britain's first police force established by statute",
+   "evidence": "Glasgow's was the first force created by Act of Parliament and paid from local rates, but it is contested by the Marine Police (1798) and Dublin (1786), and it ceased to exist in 1975. Coordinates are the Glasgow Police Museum, Bell Street.",
+   "sources": [
+    {
+     "title": "City of Glasgow Police",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/City_of_Glasgow_Police",
+     "locator": "lead",
+     "quote": "It is sometimes described as the first modern-style municipal police force"
+    },
+    {
+     "title": "First 100 Years",
+     "author": "Glasgow Police Museum",
+     "kind": "secondary",
+     "url": "https://www.policemuseum.org.uk/glasgow-police-history/first-100-years/",
+     "locator": "1800",
+     "quote": "On 15 November 1800 the Glasgow Police, newly formed under the Glasgow Police Act of that year, mustered in the Session House of the Laigh Kirk"
+    },
+    {
+     "title": "Glasgow Police Museum (home page)",
+     "author": "Glasgow Police Museum",
+     "kind": "secondary",
+     "url": "https://www.policemuseum.org.uk/",
+     "locator": "Page title",
+     "quote": "The museum of Britain's first police force 1800 – 1975"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Edinburgh Fire Engine Establishment",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 55.9445,
+   "lon": -3.1985,
+   "nation": "Scotland",
+   "location": "Edinburgh",
+   "age_text": "formed October 1824 under James Braidwood, weeks before the Great Fire of Edinburgh (15 November 1824)",
+   "year": 1824,
+   "claim": "the world's first municipal fire brigade",
+   "evidence": "Edinburgh's brigade (1824) was the first organised by a town authority; insurance-company brigades in London (from the 1680s) were older but private. Its successor is the Scottish Fire and Rescue Service; coordinates are the Museum of Scottish Fire Heritage, Lauriston Place (a later fire station, 1900).",
+   "sources": [
+    {
+     "title": "James Braidwood",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/James_Braidwood",
+     "locator": "lead",
+     "quote": "was the first Master of Engines in the world's first municipal fire service in Edinburgh in 1824"
+    },
+    {
+     "title": "The Great Fire of Edinburgh",
+     "author": "Museum of Scottish Fire Heritage",
+     "kind": "secondary",
+     "url": "https://museumofscottishfireheritage.org/the-great-fire-of-edinburgh/",
+     "locator": "Edinburgh Fire Engine Establishment",
+     "quote": "the Edinburgh Fire Engine Establishment, the world's first Municipal Fire Brigade"
+    },
+    {
+     "title": "The Edinburgh Fire Brigade, 1837-70",
+     "author": "George Robinson, The Victorian Web",
+     "kind": "secondary",
+     "url": "https://www.victorianweb.org/victorian/technology/firefighting/edinburgh.html",
+     "locator": "Opening paragraph",
+     "quote": "in 1824 under the supervision of James Braidwood, the Edinburgh Fire Establishment"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Metropolitan Police",
+   "qid": "Q1139213",
+   "wikipedia_title": "Metropolitan Police",
+   "lat": 51.5061,
+   "lon": -0.1262,
+   "nation": "England",
+   "location": "Great Scotland Yard, Whitehall, London",
+   "age_text": "Metropolitan Police Act 1829; first patrols 29 September 1829 from 4 Whitehall Place (Great Scotland Yard)",
+   "year": 1829,
+   "claim": "the model for modern policing (Peel's 'New Police')",
+   "evidence": "Not the first force (Dublin 1786, Marine Police 1798, Glasgow 1800), but the oldest large territorial force still in existence and the model for later forces. Coordinates are its first headquarters at Great Scotland Yard.",
+   "sources": [
+    {
+     "title": "Metropolitan Police",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Metropolitan_Police",
+     "locator": "History",
+     "quote": "The Metropolitan Police Service was founded in 1829 by Home Secretary Sir Robert Peel under the Metropolitan Police Act 1829"
+    },
+    {
+     "title": "The Watch House (plaque)",
+     "author": "The Heath & Hampstead Society",
+     "kind": "secondary",
+     "url": "https://www.heathandhampstead.org.uk/?p=986",
+     "locator": "The Watch House",
+     "quote": "Metropolitan Police patrols first took to the streets on 29 September 1829."
+    },
+    {
+     "title": "The Watch House (plaque)",
+     "author": "The Heath & Hampstead Society",
+     "kind": "secondary",
+     "url": "https://www.heathandhampstead.org.uk/?p=986",
+     "locator": "The Watch House",
+     "quote": "It became the third official non paramilitary police force in the world alongside the City of Glasgow Police and the Paris Police."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "London Fire Engine Establishment",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 51.5128,
+   "lon": -0.0942,
+   "nation": "England",
+   "location": "Watling Street, City of London",
+   "age_text": "formed 1 January 1833 from ten insurance brigades; Metropolitan Fire Brigade 1866; London Fire Brigade",
+   "year": 1833,
+   "claim": "the forerunner of the London Fire Brigade",
+   "evidence": "The LFEE was insurance-funded, not municipal; London's municipal brigade began only in 1866. Coordinates are approximately its Watling Street headquarters, not a surviving station.",
+   "sources": [
+    {
+     "title": "London Fire Brigade",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Fire_Brigade",
+     "locator": "History",
+     "quote": "on 1 January 1833, the London Fire Engine Establishment was formed under the leadership of James Braidwood"
+    },
+    {
+     "title": "James Braidwood: the father of the modern fire service",
+     "author": "Museum of Scottish Fire Heritage",
+     "kind": "secondary",
+     "url": "https://museumofscottishfireheritage.org/?p=11871",
+     "locator": "article",
+     "quote": "a coalition of ten insurance companies pooling resources in an effort to improve fire response in the capital"
+    },
+    {
+     "title": "James Braidwood",
+     "author": "London Remembers",
+     "kind": "secondary",
+     "url": "https://www.londonremembers.com/subject/9744",
+     "locator": "biography",
+     "quote": "residing at 66-69 Watling Street, Fire Engine Establishment, with his wife, their six children"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest police or fire station",
+   "name": "Old Police Station, Belper",
+   "qid": "Q26619896",
+   "wikipedia_title": null,
+   "lat": 53.0283,
+   "lon": -1.4849,
+   "nation": "England",
+   "location": "Matlock Road, Belper, Derbyshire",
+   "age_text": "built 1848 by the Strutts",
+   "year": 1848,
+   "claim": "one of the earliest police station buildings in the country",
+   "evidence": "The listing says only 'one of the earliest'; Farnborough police station (Bromley, opened 1839) and Hampstead's watch house (police station from 1830) are older, and lock-ups and watch houses older still. No credible source names the oldest surviving police station.",
+   "sources": [
+    {
+     "title": "Old Police Station, Matlock Road, Belper (list entry 1335293)",
+     "author": "British Listed Buildings (reproducing the Historic England list entry)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101335293",
+     "locator": "Description",
+     "quote": "Built by Strutts. One of the earliest police stations in the country."
+    },
+    {
+     "title": "MDR16366 - Old Police Station, Matlock Road, Belper",
+     "author": "Derbyshire Historic Environment Record",
+     "kind": "listing",
+     "url": "https://her.derbyshire.gov.uk/Monument/MDR16366",
+     "locator": "Full Description",
+     "quote": "Old Police Station, Matlock Road, Belper, built in 1848."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Tynwald Hill (Tynwald)",
+   "qid": "Q827704",
+   "wikipedia_title": "Tynwald",
+   "lat": 54.2014,
+   "lon": -4.6383,
+   "nation": "Isle of Man",
+   "location": "St John's, Isle of Man",
+   "age_text": "traditional foundation 979; documented from the 13th century; Tynwald Day ceremony on the hill every July",
+   "year": 979,
+   "claim": "the oldest continuous parliament in the world",
+   "evidence": "979 is a traditional date (the millennium was celebrated in 1979); documentary evidence begins in the 13th century, and Tynwald's own site dates the hill itself to Norse settlers of the 13th century. Iceland's Althing (930) is older but was suspended 1800–1845, hence Tynwald's claim to be the oldest continuous one; Tynwald itself words it as a claim.",
+   "sources": [
+    {
+     "title": "Tynwald",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald",
+     "locator": "lead",
+     "quote": "Established in 979 according to tradition or in the 13th century according to available historical evidence, it is the oldest continuous legislature in the world"
+    },
+    {
+     "title": "About Tynwald",
+     "author": "Tynwald",
+     "kind": "primary",
+     "url": "https://www.tynwald.org.im/about",
+     "locator": "About Tynwald",
+     "quote": "Tynwald claims to be the oldest continuous parliamentary assembly in the world, with a tradition of over 1,000 years of meetings being held."
+    },
+    {
+     "title": "Tynwald Sites",
+     "author": "Tynwald",
+     "kind": "primary",
+     "url": "https://tynwald.org.im/visit/tynwald-sites",
+     "locator": "Tynwald Hill at St. John's",
+     "quote": "The site is thought to have been established by Norse Viking settlers in the 13th century"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Palace of Westminster",
+   "qid": "Q62408",
+   "wikipedia_title": "Palace of Westminster",
+   "lat": 51.4995,
+   "lon": -0.1247,
+   "nation": "England",
+   "location": "Westminster, London",
+   "age_text": "Westminster Hall 1097–99; Parliament met in the palace from the 13th century; present palace 1840–70",
+   "year": 1097,
+   "claim": "the home of the 'mother of parliaments'; Westminster Hall its oldest part",
+   "evidence": "Parliament has met in the palace since the 13th century, but the present building is Barry and Pugin's of 1840–70; only Westminster Hall (1097–99, roof 1393–1401), the crypt chapel and the Jewel Tower survive from the medieval palace. Tynwald is older as an assembly.",
+   "sources": [
+    {
+     "title": "Palace of Westminster",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palace_of_Westminster",
+     "locator": "lead",
+     "quote": "the remainder of the palace continued to serve as the home of the Parliament of England, which had met there since the 13th century"
+    },
+    {
+     "title": "Houses of Parliament and The Palace of Westminster (List entry 1226284)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101226284",
+     "locator": "Description",
+     "quote": "starting with Westminster Hall 1097-99, which was remodelled 1394-1401 by Henry Yevele with Hugh Herland (carpenter)"
+    },
+    {
+     "title": "Westminster Hall",
+     "author": "Historic UK (Jessica Brain)",
+     "kind": "secondary",
+     "url": "https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Westminster-Hall/",
+     "locator": "Article body",
+     "quote": "Completed in just two years, it was the largest hall in England, as well as the being the biggest in Europe at the time."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Exeter Guildhall",
+   "qid": "Q5420117",
+   "wikipedia_title": "Exeter Guildhall",
+   "lat": 50.7234,
+   "lon": -3.5318,
+   "nation": "England",
+   "location": "High Street, Exeter, Devon",
+   "age_text": "hall on the site probably from the later 12th century (deed of c.1160); present hall 1468–70, portico 1592–94",
+   "year": 1160,
+   "claim": "the oldest municipal building in England still in use",
+   "evidence": "The site has been Exeter's civic centre since at least the 14th century and probably the 12th, but the present hall was built in 1468–70, so the claim is to the oldest civic site in continuous use rather than the oldest building; London's Guildhall (1411) has an older surviving hall.",
+   "sources": [
+    {
+     "title": "Exeter Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Guildhall",
+     "locator": "History",
+     "quote": "On this basis it has been claimed to be the oldest municipal building in England still in use. The current building was constructed between 1468 and 1470"
+    },
+    {
+     "title": "The Guildhall, Exeter (List entry 1103905)",
+     "author": "Historic England via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101103905-the-guildhall-exeter-st-davids-ward",
+     "locator": "Description",
+     "quote": "1468-70, restored in C19 with the porch and mayor's parlour above of 1592-94"
+    },
+    {
+     "title": "Exeter Guildhall",
+     "author": "Exeter Memories",
+     "kind": "secondary",
+     "url": "https://exetermemories.co.uk/em/guildhall.php",
+     "locator": "Article body",
+     "quote": "Parts of the Guildhall can be traced back to 1160"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Castle Rushen",
+   "qid": "Q2967821",
+   "wikipedia_title": "Castle Rushen",
+   "lat": 54.0738,
+   "lon": -4.6533,
+   "nation": "Isle of Man",
+   "location": "Castletown, Isle of Man",
+   "age_text": "keep of the late 12th/early 13th century; seat of the Kings and Lords of Mann and of government until the 19th century",
+   "year": 1200,
+   "claim": "the seat of government of the Isle of Man for some seven centuries",
+   "evidence": "The castle was the administrative and judicial centre of Mann until the capital moved to Douglas (1869–74); its oldest fabric is late 12th or early 13th century (a beam dated 947 is unproven). The Old House of Keys stands opposite.",
+   "sources": [
+    {
+     "title": "Castle Rushen",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castle_Rushen",
+     "locator": "Construction",
+     "quote": "The last such King of Man, Magnús Óláfsson, is recorded in the Chronicle of Mann to have died at the castle in 1265"
+    },
+    {
+     "title": "Castle Rushen",
+     "author": "Gatehouse Gazetteer (Philip Davis)",
+     "kind": "reference",
+     "url": "https://gatehouse-gazetteer.info/Island%20sites/CastleRushen.html",
+     "locator": "Description",
+     "quote": "The castle was the seat of government from the 12th until the 19th centuries."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Guildhall, London",
+   "qid": "Q81279",
+   "wikipedia_title": "Guildhall, London",
+   "lat": 51.5157,
+   "lon": -0.0919,
+   "nation": "England",
+   "location": "Gresham Street, City of London",
+   "age_text": "present Great Hall 1411–c.1440; a guildhall on the site recorded from 1128; crypts earlier",
+   "year": 1411,
+   "claim": "the City's only surviving secular medieval building, its town hall for nearly 900 years",
+   "evidence": "The present hall dates from 1411–40 (restored after 1666 and 1940); documentary references to a London guildhall go back to 1128, and the Roman amphitheatre lies beneath. It is still the City of London Corporation's ceremonial and administrative centre.",
+   "sources": [
+    {
+     "title": "Guildhall, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall,_London",
+     "locator": "lead",
+     "quote": "documentary evidence suggests that a guildhall had existed at the site since at least the early 12th century"
+    },
+    {
+     "title": "Guildhall Great Hall",
+     "author": "City of London Corporation",
+     "kind": "primary",
+     "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-great-hall",
+     "locator": "About / history",
+     "quote": "This City's only surviving secular medieval building dates from 1411."
+    },
+    {
+     "title": "Guildhall Great Hall",
+     "author": "City of London Corporation",
+     "kind": "primary",
+     "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-great-hall",
+     "locator": "History",
+     "quote": "References to a London guildhall are made in a document dating back to 1128"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Owain Glyndŵr's Parliament House, Machynlleth",
+   "qid": "Q17743387",
+   "wikipedia_title": "Owain Glyndŵr's Parliament House",
+   "lat": 52.5909,
+   "lon": -3.8494,
+   "nation": "Wales",
+   "location": "Heol Maengwyn, Machynlleth, Powys",
+   "age_text": "by tradition the site of Glyndŵr's parliament of 1404; tree-ring dating puts the present hall c.1470; rebuilt 1906–12",
+   "year": 1470,
+   "claim": "the building where Owain Glyndŵr held the first Welsh parliament in 1404",
+   "evidence": "The 1404 parliament at Machynlleth is historical, but tree-ring dating shows the present building is two generations later, and it was heavily rebuilt in 1906–12; the link to 1404 is tradition only.",
+   "sources": [
+    {
+     "title": "Owain Glyndŵr's Parliament House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Owain_Glyndŵr's_Parliament_House",
+     "locator": "lead",
+     "quote": "was traditionally the building where Owain Glyndŵr held a parliament in 1404. However, the origin of the building is probably later"
+    },
+    {
+     "title": "Owain Glyndwr's Parliament House (Cadw 8429)",
+     "author": "Cadw via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/300008429-owain-glyndwrs-parliament-house-machynlleth",
+     "locator": "History",
+     "quote": "Traditionally this is the building where Owain Glyndwr held a parliament in 1404 after being crowned Prince of Wales however origins of this structure are probably later"
+    },
+    {
+     "title": "Parliament House, Maengwyn Street (NPRN 32042)",
+     "author": "RCAHMW Coflein",
+     "kind": "reference",
+     "url": "https://coflein.gov.uk/en/site/32042",
+     "locator": "Description",
+     "quote": "Tree-ring dating however now shows that the present structure is two generations later than Glynd'r's parliaments."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Musselburgh Tolbooth",
+   "qid": "Q19721098",
+   "wikipedia_title": "Musselburgh Tolbooth",
+   "lat": 55.9446,
+   "lon": -3.0459,
+   "nation": "Scotland",
+   "location": "High Street, Musselburgh, East Lothian",
+   "age_text": "built 1590 on the site of a 15th-century tolbooth burnt in 1544; clock of 1496",
+   "year": 1590,
+   "claim": "one of the oldest surviving tolbooths in Scotland",
+   "evidence": "Completed in 1590 (HES listing; the steeple bears the date 1496 and may incorporate earlier fabric). It is often called the oldest tolbooth, but Dysart (1576) and Canongate (1591) are close rivals, so 'one of the oldest' is safer.",
+   "sources": [
+    {
+     "title": "Musselburgh Tolbooth",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Musselburgh_Tolbooth",
+     "locator": "History",
+     "quote": "The current structure, which was designed in the Scottish medieval style and built with ashlar stone, was completed in 1590"
+    },
+    {
+     "title": "High Street, Tolbooth (LB38309)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB38309",
+     "locator": "Description",
+     "quote": "1590, Steeple bears date 1496, and parts may survive from earlier Tolbooth."
+    },
+    {
+     "title": "Musselburgh Tolbooth and Old Town Hall",
+     "author": "Gazetteer for Scotland",
+     "kind": "reference",
+     "url": "https://www.scottish-places.info/scotgaz/features/featurefirst89608.html",
+     "locator": "Entry text",
+     "quote": "The A-listed building dates from 1590, replacing an earlier building destroyed by the Earl of Hertford in the 1540s."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "The Tholsel, Kilkenny",
+   "qid": "Q3990555",
+   "wikipedia_title": "The Tholsel, Kilkenny",
+   "lat": 52.6508,
+   "lon": -7.2527,
+   "nation": "Republic of Ireland",
+   "location": "High Street, Kilkenny",
+   "age_text": "a tholsel on the site possibly from the 14th century; building of 1695–98 rebuilt 1759–61; restored after a 1985 fire",
+   "year": 1695,
+   "claim": "Kilkenny's medieval-origin town hall, still the city hall",
+   "evidence": "Usually dated 1761, but the NIAH record shows a tholsel built 1695–98 that was rebuilt in 1759–61; the medieval predecessor (scene of Petronilla de Meath's execution in 1324) is tradition. No source claims it as the oldest town hall in Ireland.",
+   "sources": [
+    {
+     "title": "The Tholsel, Kilkenny",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Tholsel,_Kilkenny",
+     "locator": "History",
+     "quote": "The first tholsel, or guildhall, in the High Street may have dated back to the 14th century"
+    },
+    {
+     "title": "The Tholsel, High Street, Kilkenny (Reg. 12000061)",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://buildingsofireland.ie/buildings-search/building/12000061/the-tholsel-high-street-gardens-st-johns-par-kilkenny-kilkenny",
+     "locator": "Description",
+     "quote": "tholsel with attic, built 1695-8, on a T-shaped plan"
+    },
+    {
+     "title": "The Tholsel, High Street, Kilkenny (Reg. 12000061)",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://buildingsofireland.ie/buildings-search/building/12000061/the-tholsel-high-street-gardens-st-johns-par-kilkenny-kilkenny",
+     "locator": "Description",
+     "quote": "Rebuilt, 1759-61. Extended, 1829, producing present composition. Renovated, 1951. Burnt, 1985. Restored, 1986-7."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest town hall or seat of government",
+   "name": "Parliament House, Dublin",
+   "qid": "Q2662776",
+   "wikipedia_title": "Parliament House, Dublin",
+   "lat": 53.3446,
+   "lon": -6.2595,
+   "nation": "Republic of Ireland",
+   "location": "College Green, Dublin",
+   "age_text": "designed by Edward Lovett Pearce, begun 1729, first sitting 1731, completed 1739; Bank of Ireland since 1803",
+   "year": 1729,
+   "claim": "the world's first purpose-built two-chamber parliament house",
+   "evidence": "Pearce's building (1729–39) was purpose-built for the Irish Lords and Commons; Edinburgh's Parliament Hall (1639) was purpose-built earlier but for a single-chamber parliament, hence the 'bicameral' qualifier. It has not housed a parliament since 1800.",
+   "sources": [
+    {
+     "title": "Parliament House, Dublin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Parliament_House,_Dublin",
+     "locator": "lead",
+     "quote": "It was architecturally influential as the world's first purpose-built bicameral parliament house"
+    },
+    {
+     "title": "1803 - Bank of Ireland, College Green, Dublin",
+     "author": "Archiseek",
+     "kind": "secondary",
+     "url": "https://www.archiseek.com/1803-former-houses-of-parliament-bank-of-ireland-college-green-dublin/",
+     "locator": "Article body",
+     "quote": "This was the first purpose built Parliament House in the world and was constructed at a great time of public confidence in Dublin."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Hospital of St Cross",
+   "qid": "Q5908748",
+   "wikipedia_title": "Hospital of St Cross",
+   "lat": 51.0458,
+   "lon": -1.3236,
+   "nation": "England",
+   "location": "St Cross, Winchester, Hampshire",
+   "age_text": "founded by Henry of Blois c.1132 (Wikipedia: 1136); church 1160s–1290s; Order of Noble Poverty 1445",
+   "year": 1132,
+   "claim": "England's oldest charitable almshouse in continuous use",
+   "evidence": "The foundation is dated c.1132–36 and the Brothers have lived there ever since. St Oswald's Hospital, Worcester (traditionally c.990) and St Nicholas, Harbledown (c.1084) are older foundations, so 'oldest in continuous use as an almshouse in its medieval buildings' is the defensible form.",
+   "sources": [
+    {
+     "title": "Hospital of St Cross",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hospital_of_St_Cross",
+     "locator": "lead",
+     "quote": "It has been described as \"England's oldest and most perfect almshouse\""
+    },
+    {
+     "title": "The Hospital of St Cross (home page)",
+     "author": "Hospital of St Cross and Almshouse of Noble Poverty",
+     "kind": "primary",
+     "url": "https://www.hospitalofstcross.co.uk/",
+     "locator": "Welcome text",
+     "quote": "the Hospital is one of England's oldest continuing Almshouses"
+    },
+    {
+     "title": "The Hospital of St Cross (home page)",
+     "author": "Hospital of St Cross and Almshouse of Noble Poverty",
+     "kind": "primary",
+     "url": "https://www.hospitalofstcross.co.uk/",
+     "locator": "Events: guided tour",
+     "quote": "Join one of the Brothers for a fascinating guided walk through England's oldest charitable almshouse."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Francis Trigge Chained Library",
+   "qid": "Q5482622",
+   "wikipedia_title": "Francis Trigge Chained Library",
+   "lat": 52.9137,
+   "lon": -0.6413,
+   "nation": "England",
+   "location": "St Wulfram's Church, Grantham, Lincolnshire",
+   "age_text": "founded 1598 by Francis Trigge in the room over the south porch of St Wulfram's",
+   "year": 1598,
+   "claim": "the first public library in England",
+   "evidence": "Founded in 1598 for the clergy and inhabitants of Grantham and still in its parvise room; it was a reference library open to townspeople, so 'first public reference library' is fairer than 'first public library'. Chetham's (1653) is the oldest public library with continuous independent existence.",
+   "sources": [
+    {
+     "title": "Francis Trigge Chained Library",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Francis_Trigge_Chained_Library",
+     "locator": "lead",
+     "quote": "it has been claimed to be the first English public library"
+    },
+    {
+     "title": "Animal encyclopedia inspires free colouring book for all",
+     "author": "South Kesteven District Council",
+     "kind": "secondary",
+     "url": "https://southkesteven.gov.uk/news/2023/animal-encyclopedia-inspires-free-colouring-book-all",
+     "locator": "News release, 2023",
+     "quote": "the Trigge Library, the first public reference library in England and one of Grantham's hidden gems"
+    },
+    {
+     "title": "Animal encyclopedia inspires free colouring book for all",
+     "author": "South Kesteven District Council",
+     "kind": "secondary",
+     "url": "https://southkesteven.gov.uk/news/2023/animal-encyclopedia-inspires-free-colouring-book-all",
+     "locator": "News release, 2023",
+     "quote": "The Trigge Library is a rare example of a chained library, dating from 1598"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Chetham's Library",
+   "qid": "Q2901355",
+   "wikipedia_title": "Chetham's Library",
+   "lat": 53.4859,
+   "lon": -2.2434,
+   "nation": "England",
+   "location": "Long Millgate, Manchester",
+   "age_text": "founded 1653 under Humphrey Chetham's will, in the college buildings of 1421",
+   "year": 1653,
+   "claim": "the oldest free public reference library in the English-speaking world",
+   "evidence": "In continuous use since 1653; the building is the 15th-century college of Manchester's collegiate church. The Trigge library (1598) is older but was a parish library; Chetham's own wording is 'oldest surviving public library in Britain'.",
+   "sources": [
+    {
+     "title": "Chetham's Library",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chetham's_Library",
+     "locator": "lead",
+     "quote": "is the oldest free public reference library in the English-speaking world"
+    },
+    {
+     "title": "A Brief History of Chetham's",
+     "author": "Chetham's Library",
+     "kind": "primary",
+     "url": "https://chethams.org.uk/library/history/",
+     "locator": "History",
+     "quote": "Chetham's Library, which was founded in 1653, is the oldest surviving public library in Britain."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Innerpeffray Library",
+   "qid": "Q11838970",
+   "wikipedia_title": "Innerpeffray Library",
+   "lat": 56.3509,
+   "lon": -3.7466,
+   "nation": "Scotland",
+   "location": "Innerpeffray, near Crieff, Perth and Kinross",
+   "age_text": "founded c.1680 by David Drummond, 3rd Lord Madertie, in St Mary's Chapel; present building 1758–62; lending stopped 1968",
+   "year": 1680,
+   "claim": "Scotland's first free public lending library",
+   "evidence": "Founded about 1680 in the chapel attic and moved to a purpose-built Georgian library in 1762; it lent books until 1968 and is now a museum library.",
+   "sources": [
+    {
+     "title": "Innerpeffray Library",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Innerpeffray_Library",
+     "locator": "lead",
+     "quote": "Innerpeffray Library was the first lending library in Scotland"
+    },
+    {
+     "title": "Innerpeffray Library home page",
+     "author": "Innerpeffray Library",
+     "kind": "primary",
+     "url": "https://innerpeffraylibrary.co.uk/",
+     "locator": "Home page",
+     "quote": "Scotland's first free public lending library founded in 1680"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Marsh's Library",
+   "qid": "Q1238147",
+   "wikipedia_title": "Marsh's Library",
+   "lat": 53.3392,
+   "lon": -6.2718,
+   "nation": "Republic of Ireland",
+   "location": "St Patrick's Close, Dublin",
+   "age_text": "built 1701–07 by Archbishop Narcissus Marsh; incorporated by Act of Parliament 1707",
+   "year": 1707,
+   "claim": "the first public library in Ireland",
+   "evidence": "Incorporated in 1707 and still in its original building with its original oak bookcases; earlier Irish libraries (Trinity College) were not public.",
+   "sources": [
+    {
+     "title": "Marsh's Library",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marsh's_Library",
+     "locator": "lead",
+     "quote": "When it opened to the public in 1707 it was the first public library in Ireland"
+    },
+    {
+     "title": "Discover Our History",
+     "author": "Marsh's Library",
+     "kind": "primary",
+     "url": "https://www.marshlibrary.ie/history/",
+     "locator": "Discover Our History",
+     "quote": "Marsh's Library was founded in the early eighteenth century by Archbishop Narcissus Marsh (1638-1713) as the first public library in Ireland."
+    },
+    {
+     "title": "About",
+     "author": "Marsh's Library",
+     "kind": "primary",
+     "url": "https://www.marshlibrary.ie/about/",
+     "locator": "About",
+     "quote": "The Library was incorporated in 1707 by an Act of Parliament"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Foundling Hospital",
+   "qid": "Q1439887",
+   "wikipedia_title": "Foundling Hospital",
+   "lat": 51.5246,
+   "lon": -0.122,
+   "nation": "England",
+   "location": "Brunswick Square, Bloomsbury, London",
+   "age_text": "royal charter 1739 (Thomas Coram); buildings 1742–52 demolished 1926; Foundling Museum at 40 Brunswick Square",
+   "year": 1739,
+   "claim": "the UK's first children's charity",
+   "evidence": "Chartered in 1739, it was the first incorporated charity for children in Britain; the institution continues as the charity Coram, but the hospital buildings were demolished in 1926 (Coram's Fields occupies the site, and some interiors are preserved in the Foundling Museum).",
+   "sources": [
+    {
+     "title": "Foundling Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foundling_Hospital",
+     "locator": "lead",
+     "quote": "It was founded in 1739 by the philanthropic sea captain Thomas Coram"
+    },
+    {
+     "title": "Our story",
+     "author": "Foundling Museum",
+     "kind": "primary",
+     "url": "https://foundlingmuseum.org.uk/about/",
+     "locator": "Our story",
+     "quote": "the creation of the Foundling Hospital - the UK's first children's charity"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "St Patrick's Hospital, Dublin",
+   "qid": "Q65067671",
+   "wikipedia_title": "St Patrick's University Hospital",
+   "lat": 53.3428,
+   "lon": -6.2927,
+   "nation": "Republic of Ireland",
+   "location": "James's Street, Kilmainham, Dublin",
+   "age_text": "founded under Jonathan Swift's will (d.1745), chartered 1746, opened 1757",
+   "year": 1746,
+   "claim": "the oldest psychiatric hospital in Ireland",
+   "evidence": "Chartered in 1746 and still a psychiatric hospital on its original site, in buildings begun c.1749; Bethlem in London (1247) is far older within the isles.",
+   "sources": [
+    {
+     "title": "St Patrick's University Hospital",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Patrick's_University_Hospital",
+     "locator": "History",
+     "quote": "The hospital was founded with money bequeathed by the author Jonathan Swift following his death"
+    },
+    {
+     "title": "Saint Patrick's Hospital, Steevens's Lane, Bow Lane, Dublin 8",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://www.buildingsofireland.ie/buildings-search/building/50080086/saint-patricks-hospital-steevenss-lane-bow-lane-dublin-8-dublin",
+     "locator": "Appraisal",
+     "quote": "The hospital was endowed by Dr Jonathan Swift, Dean of Saint Patrick's Cathedral, who declared his desire for there to be an asylum built in 1745"
+    },
+    {
+     "title": "1753 – St. Patrick's Hospital, Kilmainham, Dublin",
+     "author": "Archiseek",
+     "kind": "secondary",
+     "url": "https://www.archiseek.com/1753-st-patricks-hospital-kilmainham-dublin/",
+     "locator": "article",
+     "quote": "On Monday 26 September 1757, the hospital finally admitted its first patients, consisting of six men and four women"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "Armagh Robinson Library",
+   "qid": "Q17779528",
+   "wikipedia_title": "Armagh Robinson Library",
+   "lat": 54.3497,
+   "lon": -6.6543,
+   "nation": "Northern Ireland",
+   "location": "Abbey Street, Armagh",
+   "age_text": "founded by Archbishop Richard Robinson 1771; building by Thomas Cooley",
+   "year": 1771,
+   "claim": "the oldest public library in Northern Ireland",
+   "evidence": "Founded and opened to the public in 1771 in its purpose-built library; the 'oldest in Northern Ireland' wording is common but not stated on the library's own page.",
+   "sources": [
+    {
+     "title": "Armagh Robinson Library",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Armagh_Robinson_Library",
+     "locator": "lead",
+     "quote": "The library was founded by the Archbishop of Armagh, Richard Robinson, in 1771 when he chose to share his own collection with the local public"
+    },
+    {
+     "title": "Armagh Robinson Library",
+     "author": "Armagh Robinson Library & No 5",
+     "kind": "primary",
+     "url": "https://armaghrobinsonlibrary.co.uk/armagh-robinson-library/",
+     "locator": "About the Library",
+     "quote": "Archbishop Richard Robinson founded this Library in the heart of the City of Armagh in 1771."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest other public institution",
+   "name": "The Workhouse, Southwell",
+   "qid": "Q7775833",
+   "wikipedia_title": "The Workhouse, Southwell",
+   "lat": 53.0816,
+   "lon": -0.9653,
+   "nation": "England",
+   "location": "Upton Road, Southwell, Nottinghamshire",
+   "age_text": "built 1824 for the Thurgarton Incorporation; in use until the 1990s; National Trust since 1997",
+   "year": 1824,
+   "claim": "the best-preserved workhouse in England, prototype of the New Poor Law workhouses",
+   "evidence": "Not the oldest workhouse (parish workhouses go back to the 17th century) but the most complete survivor and the model cited by the 1834 Royal Commission.",
+   "sources": [
+    {
+     "title": "The Workhouse, Southwell",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Workhouse,_Southwell",
+     "locator": "lead",
+     "quote": "It is described by the National Trust as the best-preserved workhouse in England"
+    },
+    {
+     "title": "Ebeneezer Scrooge and Southwell's Ghosts of Hardship",
+     "author": "Nottinghamshire Historic Environment Record",
+     "kind": "secondary",
+     "url": "https://her.nottinghamshire.gov.uk/whats-new/ebeneezer-scrooge-and-southwell%E2%80%99s-ghosts-of-hardship",
+     "locator": "Article body",
+     "quote": "Built in 1824, the Workhouse at Southwell stands as an exceptionally well-preserved window into Victorian attitudes towards the poor."
+    }
+   ],
+   "verdict": "corrected"
+  }
+ ]
+}

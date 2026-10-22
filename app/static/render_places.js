@@ -2,11 +2,11 @@
 const PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
   "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
     "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges", "Excavations",
-    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities", "Sport & leisure"];
+    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities", "Sport & leisure", "Public institutions"];
 const PLACE_ICON = { "Battles & sieges": "⚔", "Archaeological sites": "🪨", "Lost places": "🏚",
   "Parks, gardens & trees": "🌳", "Industrial heritage": "⚙", "Finds & treasures": "💰",
   "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩", "Underground": "🚇", "Military heritage": "🛡", "Museums & collections": "🏛", "Bridges": "🌉", "Excavations": "⛏",
-  "Nature & deep time": "🌿", "Graves & burial grounds": "🪦", "Markets & trade": "🛒", "Infrastructure & utilities": "🚰", "Sport & leisure": "🏟" };
+  "Nature & deep time": "🌿", "Graves & burial grounds": "🪦", "Markets & trade": "🛒", "Infrastructure & utilities": "🚰", "Sport & leisure": "🏟", "Public institutions": "🏫" };
 const EXTRA_LABELS = { part_of: "Part of", now_in: "Now kept at", found_at: "Found at",
   commemorates: "Commemorates", inscription: "Inscription", region: "Region", register_ref: "Register reference",
   works: "Works set here", found: "Year found" };

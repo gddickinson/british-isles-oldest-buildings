@@ -35,6 +35,22 @@ class Sports(unittest.TestCase):
         self.assertEqual(sports.refine("spc_football", "Cowdenbeath F.C."), "spc_football")
 
 
+class Institutions(unittest.TestCase):
+    def test_kinds_registered(self):
+        from bidb import institutions
+        self.assertTrue(set(institutions.KINDS).isdisjoint(sports.KINDS + oldest_lists.KINDS + trade_works.KINDS))
+        self.assertIn("Public institutions", place_kinds.PLACE_GROUPS)
+        self.assertTrue(set(institutions.KINDS) <= place_stage.protected())
+        self.assertEqual(list(institutions.KINDS)[-1], "pi_school")       # schools only when nothing else fits
+
+    def test_keep_school(self):
+        from bidb.institutions import keep_school
+        self.assertFalse(keep_school({"wikipedia_title": "Eton College", "year_start": None}))   # undated
+        self.assertTrue(keep_school({"wikipedia_title": None, "year_start": 1850}))
+        self.assertFalse(keep_school({"wikipedia_title": None, "year_start": 1965}))
+        self.assertFalse(keep_school({"wikipedia_title": None, "year_start": None}))
+
+
 class QuizNames(unittest.TestCase):
     def test_surprising(self):
         self.assertTrue(surprising("Woodnesborough", "WINZ-brə"))

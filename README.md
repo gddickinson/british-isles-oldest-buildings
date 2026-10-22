@@ -19,10 +19,10 @@ anywhere.
 
 | | |
 |---|---|
-| **22,039** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **158,048** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards, graves and burial grounds, markets and trade, infrastructure, nature and deep time, and sport |
-| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **52,000** places with a photo |
+| **22,039** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **166,325** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards, graves and burial grounds, markets and trade, infrastructure, nature and deep time, sport, and schools, hospitals and public services |
+| **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **55,000** places with a photo |
 | **17,412** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
-| **790** researched claims with **1,453** quotes checked in their sources | **1,129** tree-ring dates on **592** buildings |
+| **870** researched claims with **1,660** quotes checked in their sources | **1,129** tree-ring dates on **592** buildings |
 | **2,443** stories, legends and ghost tales | **368** ready-made walks, rides, drives and long-distance ways |
 | **7,734** pronunciations (2,145 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
 
@@ -83,7 +83,7 @@ anywhere.
 </table>
 
 ### Places, people and history
-- **Places of interest** in twenty-one groups, as a list or a map: battles and sieges; archaeological
+- **Places of interest** in twenty-two groups, as a list or a map: battles and sieges; archaeological
   sites (every register's scheduled monuments); lost places; parks, gardens and trees; industrial
   heritage; finds and treasures; plaques (Wikidata and Open Plaques); history events; **legends and
   literature** (haunted places, Arthurian sites, holy wells, the settings of novels and poems);
@@ -105,13 +105,16 @@ anywhere.
   stations, airports); and **nature and deep time** (ancient trees, the oldest rocks, fossil sites, the
   earliest human traces, natural wonders); and **sport and leisure** (5,500 football, rugby, cricket, golf and
   Gaelic games grounds and clubs, racecourses and circuits, stadiums, swimming baths and lidos, rowing and yacht
-  clubs).
+  clubs); and **public institutions** (8,300 universities and colleges, schools, hospitals, prisons, courts,
+  police, fire and ambulance stations, post offices, town halls, village halls, almshouses and workhouses; of the
+  30,000 schools on Wikidata, those founded before 1900).
 - **The oldest of everything else:** researched lists, each entry with its sources and a verdict on the
   claim, of the oldest trees and natural things, burials, gravestones, churchyards and cemeteries, markets,
   fairs, shops, firms and works, roads, waterworks, railways, canals, docks and communications, and sporting
   clubs and grounds (the Fortingall Yew's contested age, Aveline's Hole, the Latinus stone, Borough Market first
   recorded in 1276, the Post Track of 3838 BC, Sheffield FC, Chester's Roodee, the real tennis court at Falkland
-  Palace), on the Oldest page.
+  Palace), and schools, universities, hospitals, post offices, courts, police and fire stations and town halls
+  (St Peter's School, York; St Bartholomew's; the Guernsey pillar box of 1853; Tynwald), on the Oldest page.
 - **Tree-ring dates:** buildings dated by dendrochronology (the Vernacular Architecture Group's database)
   show when their timbers were felled.
 - **Digs and treasure:** excavated buildings and places say when and by whom (Verulamium: the
@@ -141,8 +144,9 @@ anywhere.
 <td width="50%"><img src="docs/img/places_graves.jpg" alt="Graves and burial grounds"><br><sub>Graves and burial grounds, oldest first: the Red Lady of Paviland, Cheddar Man, Poulnabrone</sub></td></tr>
 <tr><td width="50%"><img src="docs/img/oldest_lists.jpg" alt="Researched oldest lists"><br><sub>The oldest of everything else: researched lists with dates, places and claims</sub></td>
 <td width="50%"><img src="docs/img/places_sport.jpg" alt="Sport and leisure"><br><sub>Sport and leisure, oldest first: Southampton's bowling green, the Old Course at St Andrews, the Royal Cork Yacht Club</sub></td></tr>
-<tr><td width="50%"><img src="docs/img/people.jpg" alt="People"><br><sub>People connected with the buildings: architects</sub></td>
-<td width="50%"><img src="docs/img/quiz_menu.jpg" alt="Quizzes"><br><sub>Ten quizzes, easy or hard</sub></td></tr>
+<tr><td width="50%"><img src="docs/img/places_institutions.jpg" alt="Public institutions"><br><sub>Public institutions, oldest first: schools, universities and hospitals founded in the Middle Ages</sub></td>
+<td width="50%"><img src="docs/img/people.jpg" alt="People"><br><sub>People connected with the buildings: architects</sub></td></tr>
+<tr><td colspan="2"><img src="docs/img/quiz_menu.jpg" alt="Quizzes"><br><sub>Ten quizzes, easy or hard</sub></td></tr>
 <tr><td width="50%"><img src="docs/img/quiz_story.jpg" alt="Whose story?"><br><sub>Whose story? A legend with the place's name hidden</sub></td>
 <td width="50%"><img src="docs/img/quiz_order.jpg" alt="Put them in order"><br><sub>Put them in order: tap four buildings from oldest to newest</sub></td></tr>
 <tr><td width="50%"><img src="docs/img/history.jpg" alt="History"><br><sub>History of the British Isles and on this day</sub></td>
@@ -301,7 +305,7 @@ local web app on http://127.0.0.1:5050               dist/: static copy, API ans
 
 ## Testing
 ```sh
-.venv/bin/python -m unittest discover tests                         # 108 unit tests
+.venv/bin/python -m unittest discover tests                         # 110 unit tests
 node tests/ui_prefs_test.js                                          # preference logic
 .venv/bin/python -m tests.ui_check --base http://127.0.0.1:5050      # every page loads without errors
 node tests/ui_review.mjs --base http://127.0.0.1:5050                # full GUI review
@@ -343,7 +347,7 @@ that the quote is there. Detail views show the evidence, and the Data quality pa
 with its verdict. The research is done with AI assistance; quotes are checked automatically, but the
 judgements are not, so corrections are welcome (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
-So far (see the research track in [ROADMAP.md](ROADMAP.md)): **790 claims with 1,453 quotes**, each
+So far (see the research track in [ROADMAP.md](ROADMAP.md)): **870 claims with 1,660 quotes**, each
 checked again in its source by script.
 - **Every "oldest of its type" example** is checked against its official list description (Historic
   England, Historic Environment Scotland, Cadw, Northern Ireland's register, Ireland's NIAH, Manx

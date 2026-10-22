@@ -1,5 +1,5 @@
 """Shared helpers for the place stages that add a places group from Wikidata classes
-(underground, military, museums, bridges, burials, trade and works, sport).
+(underground, military, museums, bridges, burials, trade and works, sport, public institutions).
 
     query(where)            items matching a SPARQL pattern, with coordinates, opening and closing years
     subclass_items(root)    {qid: set of classes} for every item of a class or its subclasses
@@ -22,9 +22,9 @@ def protected():
     """Kinds made by the group stages (legends, maritime, underground, military, museums, bridges):
     a place one of them made is never taken by another."""
     from . import (bridges, burials, digs, hoards, lore_places, mapping_museums, maritime, military, museums,
-                   oldest_lists, sports, trade_works, underground)
+                   institutions, oldest_lists, sports, trade_works, underground)
     return set(STAY) | {k for m in (lore_places, maritime, underground, military, museums, mapping_museums, bridges,
-                                    hoards, digs, oldest_lists, burials, trade_works, sports) for k in m.KINDS}
+                                    hoards, digs, oldest_lists, burials, trade_works, sports, institutions) for k in m.KINDS}
 
 
 def query(where, wp_only=False, coord="?i wdt:P625 ?coord ."):

@@ -37,6 +37,8 @@ PAGES = {
     "places_graves": ("/places?kind_group=Graves+%26+burial+grounds", r"data-place="),
     "places_sport": ("/places?kind_group=Sport+%26+leisure", r"data-place="),
     "oldest_sport": ("/oldest", r"(?s)Oldest sporting grounds and clubs.*Sheffield"),
+    "oldest_civic": ("/oldest", r"(?s)Oldest schools, hospitals and public services.*St Peter"),
+    "places_institutions": ("/places?kind_group=Public+institutions", r"data-place="),
     "quiz_menu": ("/quiz", r"Say the name"),
     "quiz_story": ("/quiz?q=story", r"▇▇▇"),
     "quiz_order": ("/quiz?q=order", r"quiz-rank"),

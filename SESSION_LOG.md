@@ -481,3 +481,15 @@
   when did it happen, how old is it, mixed; easy/hard), `static/quiz.js` (menu, best per quiz and level, review).
   Story text is masked before escaping. Played every quiz at both levels in Chrome: no errors.
 - Tests 108 OK (tests/test_sports.py); ui_check 40/40. README, Help, INTERFACE, figures updated.
+
+## 2026-10-22 — Public institutions
+- `bidb/institutions.py` (build stage after sports): subclasses of university/college, hospital/asylum/clinic,
+  prison, courthouse, police station, fire/ambulance station, post office, town hall/government building,
+  village hall/almshouse/workhouse/orphanage, school → group "Public institutions" (8,311 places). Schools: of
+  ~29,800 on Wikidata only those founded before 1900 (George's choice; 1,113 kept). Registered as the 22nd group.
+- Researched list `data/curated/oldest_civic.json` (80 entries; 46 kept, 26 open, 8 corrected: Ruthin School
+  closed 2026, Barnes Cross pillar box 1859, Machynlleth Parliament House c. 1470, Southwell Workhouse…);
+  207/207 quotes found at install; five true catalogue ids restored after the install script's name test.
+  Evidence: 870 claims, 1,658 of 1,660 quotes found (Ballycopeland; Antrim courthouse's NI register page now
+  returns the site menu, the other source holds).
+- README, Help, INTERFACE, figure places_institutions; tests 110 OK, ui_check 42/42.

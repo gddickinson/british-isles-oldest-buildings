@@ -19,9 +19,9 @@ anywhere.
 
 | | |
 |---|---|
-| **22,046** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **118,184** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards |
+| **22,039** buildings and structures begun before 1500, the oldest of each type, and landmarks of any date | **118,184** places of interest: archaeology, battles, lost places, gardens and trees, finds, plaques, maritime, industrial and Victorian sites, legends and literature, underground works, military heritage, museums and their collections, bridges, excavations and hoards |
 | **11,927** people connected with them, by **14,766** links | **96 %** of buildings and **47,000** places with a photo |
-| **17,417** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
+| **17,412** dated buildings, each date with its source and evidence | **10,506** building outlines and **265** floor plans |
 | **2,443** stories, legends and ghost tales | **368** ready-made walks, rides, drives and long-distance ways |
 | **7,734** pronunciations (2,145 recordings) in English and the languages of the isles | **45,875** timeline events, **17,649** "on this day" entries |
 
@@ -99,7 +99,9 @@ anywhere.
 - **Digs and treasure:** excavated buildings and places say when and by whom (Verulamium: the
   Wheelers, Frere); **Finds & treasures** includes the hoards in Wikipedia's lists, with find-spot,
   year found, contents and the museum that keeps them.
-- **Domesday Book:** buildings and places in a settlement recorded in Domesday Book (1086) say so.
+- **Domesday Book:** buildings and places in a settlement recorded in Domesday Book (1086) say so, and for
+  churches, abbeys and cathedrals what the entry records there ("with 2 churches and a priest", from Open
+  Domesday, with the Phillimore reference).
 - **Then:** paintings, prints and drawings of a building or place made before 1950 (Turner's
   Caerlaverock, Billings' drawings), from Wikidata and Wikimedia Commons.
 - **Kept here:** a museum's page lists its best-known objects (the Rosetta Stone and the Lewis
@@ -300,6 +302,20 @@ exact short quote. `.venv/bin/python -m bidb.evidence --check` fetches every sou
 that the quote is there. Detail views show the evidence, and the Data quality page lists every claim
 with its verdict. The research is done with AI assistance; quotes are checked automatically, but the
 judgements are not, so corrections are welcome (see [CONTRIBUTING.md](CONTRIBUTING.md)).
+
+So far (see the research track in [ROADMAP.md](ROADMAP.md)): **307 claims with 542 quotes**, 541 found
+again in their sources by script.
+- **Every "oldest of its type" example** is checked against its official list description (Historic
+  England, Historic Environment Scotland, Cadw, Northern Ireland's register, Ireland's NIAH, Manx
+  National Heritage) or another citable source. Where the listing dates the surviving building
+  differently from a famous claim, the catalogue gives the listing's date and keeps the claim as a claim:
+  Ye Olde Fighting Cocks is a 16th-century building (claimed 793), Sean's Bar c. 1725 (claimed c. 900),
+  the Bingley Arms carries a plaque of 1738 (claimed 953).
+- **The earliest churches and monasteries** are checked against primary sources: Bede, the Anglo-Saxon
+  Chronicle, the Annals of Ulster, Anglo-Saxon charters (Electronic Sawyer, with each charter's standing),
+  Asser and the Victoria County History, which sharpen "7th century" to Reculver 669, Wearmouth 674 or
+  Rochester 604, and flag dates that rest only on later tradition.
+- **114 reviewed date corrections** (`data/curated/date_corrections.json`), each with its evidence.
 
 ## Caveats
 - **Dates** are the earliest construction date; many buildings were rebuilt later. Dates not taken

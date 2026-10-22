@@ -13,6 +13,8 @@ age claim, how well it is established, sources with exact quotes and a verdict):
             manufacturers and industrial works -> "Industrial heritage" (with bidb.trade_works)
   infra   - oldest roads, water supply, railways, canals, harbours, power and communications
             -> "Infrastructure & utilities" (with bidb.trade_works)
+  sport   - oldest football, rugby, cricket and golf clubs and grounds, racecourses, stadiums, other venues and
+            clubs -> "Sport & leisure" (with bidb.sports)
 An entry whose Wikidata item is already a catalogue building stays there; one already a place moves to the
 list's group and takes the researched age. The sources become evidence claims (bidb.evidence.load), and
 `lists()` feeds the "Oldest in nature" and "Oldest graves" sections of the Oldest page.
@@ -43,6 +45,11 @@ LISTS = {
                         "Oldest railway, tramway or waggonway": "ino_rail", "Oldest canal or navigation": "ino_canal",
                         "Oldest harbour, dock or sea defence": "ino_harbour",
                         "Oldest power, gas or communications": "ino_power"}},
+    "sport": {"group": "Sport & leisure", "prefix": "spo", "title": "Oldest sporting grounds and clubs",
+              "kinds": {"Oldest football club": "spo_football", "Oldest rugby club": "spo_rugby",
+                        "Oldest cricket club or ground": "spo_cricket", "Oldest golf course or club": "spo_golf",
+                        "Oldest racecourse": "spo_racing", "Oldest stadium or sports ground": "spo_ground",
+                        "Oldest venue for other sports": "spo_venue", "Oldest sports club": "spo_club"}},
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}
@@ -101,7 +108,8 @@ def lists(conn=None):
     return out
 
 
-PLACE_GROUPS = ("Markets & trade", "Industrial heritage", "Infrastructure & utilities", "Graves & burial grounds")
+PLACE_GROUPS = ("Markets & trade", "Industrial heritage", "Infrastructure & utilities", "Graves & burial grounds",
+                "Sport & leisure")
 
 
 def oldest_places(conn, per=6):
@@ -155,9 +163,13 @@ def run(log=print):
             _new, moved, _cat = place_stage.write(conn, part, kinds, group, lambda kind, r: True,
                                                   lambda m: log(f"[{time.time() - t0:5.0f}s] {m}"))
             by = {r["id"]: r for r in part}
-            conn.executemany("UPDATE places SET year_start = ?, date_text = ?, period = ?, type = ? WHERE id = ?",
+            # the researched age also goes to places another stage keeps (e.g. a club already a sports place)
+            q = ",".join("?" for _ in kinds)
+            kept = [i for (i,) in conn.execute(f"SELECT id FROM places WHERE kind NOT IN ({q})", kinds) if i in by]
+            conn.executemany("UPDATE places SET year_start = ?, date_text = ?, period = ? WHERE id = ?",
                              [(by[i]["year_start"], by[i]["date_text"], period_for(by[i]["year_start"])
-                               if by[i]["year_start"] is not None else "Unknown", by[i]["type"], i) for i in moved])
+                               if by[i]["year_start"] is not None else "Unknown", i) for i in kept])
+            conn.executemany("UPDATE places SET type = ? WHERE id = ?", [(by[i]["type"], i) for i in moved])
     conn.commit()
 
 

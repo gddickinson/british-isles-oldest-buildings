@@ -222,9 +222,9 @@
       const pool = DATA.filter((r) => r.t != null && r.year_start != null && r.period !== "Unknown"
         && ["Corroborated", "Referenced", "Reviewed"].includes(r.date_check));
       const out = [];
-      for (let i = 0; i < Math.min(num(p.get("n")) || 10, 30) && pool.length; i++)
+      for (let i = 0; i < Math.min(num(p.get("n")) || 10, 120) && pool.length; i++)
         out.push(pick(pool.splice(Math.floor(Math.random() * pool.length), 1)[0],
-          ["id", "name", "year_start", "date_text", "period", "category", "locality", "nation"]));
+          ["id", "name", "year_start", "date_text", "period", "category", "category_group", "locality", "county", "nation"]));
       return withThumbs(out);
     },
     async tours(p) {
@@ -236,6 +236,7 @@
     },
     async tour(p, f, id) { return (await tours()).find((t) => t.id === id); },
     async oldest_lists() { return fetch("data/oldest_lists.json").then((r) => r.json()); },
+    async quiz_pool() { return fetch("data/quiz.json").then((r) => r.json()); },
     async dendro(p, f, id) {
       TREE = TREE || fetch("data/dendro.json").then((r) => r.json()).catch(() => ({}));
       return ((await TREE)[id] || []).map(([location, date_text, method, reference]) => ({ record_id: id, location, date_text, method, reference }));
@@ -291,7 +292,7 @@
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);
-    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "domesday", "dendro", "excavations", "oldest_lists", "quiz"].includes(name);
+    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool"].includes(name);
     return fn(u.searchParams, plain ? null : filtersFrom(u.searchParams), id);
   };
 })();

@@ -6,7 +6,7 @@
   const GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
     "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
     "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges", "Excavations",
-    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities"];
+    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities", "Sport & leisure"];
 
   const load = (meta) => (LOADING = LOADING || (async () => {
     const [shards, ppl] = await Promise.all([

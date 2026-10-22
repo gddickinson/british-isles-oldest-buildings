@@ -22,12 +22,13 @@ from .settings_api import bp as settings_bp
 from .stories_api import bp as stories_bp
 from .street_api import bp as street_bp
 from .tools import bp as tools_bp
+from .quiz_api import bp as quiz_bp
 from .tours_api import bp as tours_bp
 
 app = Flask(__name__)
 app.teardown_appcontext(close_conn)
 app.before_request(guard)
-for bp in (lan_bp, jobs_bp, api_bp, export_bp, places_bp, pron_bp, stories_bp, street_bp, tours_bp, tools_bp, settings_bp, pages_bp):
+for bp in (lan_bp, jobs_bp, api_bp, export_bp, places_bp, pron_bp, quiz_bp, stories_bp, street_bp, tours_bp, tools_bp, settings_bp, pages_bp):
     app.register_blueprint(bp)
 
 

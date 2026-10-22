@@ -1,5 +1,5 @@
 """Shared helpers for the place stages that add a places group from Wikidata classes
-(underground, military, museums, bridges, burials, trade and works).
+(underground, military, museums, bridges, burials, trade and works, sport).
 
     query(where)            items matching a SPARQL pattern, with coordinates, opening and closing years
     subclass_items(root)    {qid: set of classes} for every item of a class or its subclasses
@@ -22,17 +22,18 @@ def protected():
     """Kinds made by the group stages (legends, maritime, underground, military, museums, bridges):
     a place one of them made is never taken by another."""
     from . import (bridges, burials, digs, hoards, lore_places, mapping_museums, maritime, military, museums,
-                   oldest_lists, trade_works, underground)
+                   oldest_lists, sports, trade_works, underground)
     return set(STAY) | {k for m in (lore_places, maritime, underground, military, museums, mapping_museums, bridges,
-                                    hoards, digs, oldest_lists, burials, trade_works) for k in m.KINDS}
+                                    hoards, digs, oldest_lists, burials, trade_works, sports) for k in m.KINDS}
 
 
-def query(where, wp_only=False):
-    """Rows (i, iLabel, coord, article, desc, start, end, closed) for items matching `where`."""
+def query(where, wp_only=False, coord="?i wdt:P625 ?coord ."):
+    """Rows (i, iLabel, coord, article, desc, start, end, closed) for items matching `where`; `coord` is the
+    pattern that binds ?coord (default the item's own coordinates)."""
     article = ("?article schema:about ?i ; schema:isPartOf <https://en.wikipedia.org/> ." if wp_only else
                "OPTIONAL { ?article schema:about ?i ; schema:isPartOf <https://en.wikipedia.org/> }")
     return sparql(f"""SELECT ?i ?iLabel ?coord ?article ?desc ?start ?end ?closed WHERE {{
-        {where} ?i wdt:P625 ?coord ; wdt:P17 ?c . VALUES ?c {{ {ISLES} }}
+        {where} {coord} ?i wdt:P17 ?c . VALUES ?c {{ {ISLES} }}
         OPTIONAL {{ ?i wdt:P1619 ?o }} OPTIONAL {{ ?i wdt:P571 ?s }} BIND(YEAR(COALESCE(?o, ?s)) AS ?start)
         OPTIONAL {{ ?i wdt:P3999 ?x }} OPTIONAL {{ ?i wdt:P576 ?d }} BIND(YEAR(COALESCE(?x, ?d)) AS ?end)
         OPTIONAL {{ ?i wdt:P5817 ?st VALUES ?st {{ {DISUSED} }} }} BIND(BOUND(?st) AS ?closed)
@@ -65,11 +66,11 @@ def direct_items(classes):
     return out
 
 
-def rows_for(qids, size=300):
+def rows_for(qids, size=300, coord="?i wdt:P625 ?coord ."):
     """query() rows for a list of items, in batches."""
     ids = sorted(qids)
     for i in range(0, len(ids), size):
-        yield from query(f"VALUES ?i {{ {' '.join('wd:' + q for q in ids[i:i + size])} }}")
+        yield from query(f"VALUES ?i {{ {' '.join('wd:' + q for q in ids[i:i + size])} }}", coord=coord)
 
 
 def write(conn, recs, kinds, group, may_move, log=print):

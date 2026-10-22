@@ -465,3 +465,19 @@
   oldest lists → "Republic of Ireland" (10 places).
 - README: new figures and captions, 20 place groups, research and tree-ring counts, 103 tests, sharing bullet.
   Help: oldest lists, evidence and sharing figures. Tests 103 OK; ui_check 35/35.
+
+## 2026-10-22 — Sport and leisure; ten quizzes
+- `bidb/sports.py` (build stage after trade_works): sports venues (subclasses of sports venue + lidos, baths,
+  bowling greens, tennis courts) and clubs/teams (at their home ground, P115, when they have no coordinates;
+  national teams left out), names refining loose classes (`refine`) → group "Sport & leisure" (5,495 places:
+  2,126 football clubs, 333 rugby, 311 golf, 250 rowing/sailing, 204 racecourses and circuits, 139 GAA clubs…).
+  `place_stage.query/rows_for` take a `coord` pattern. Group registered (place_kinds, render_places, static_places, --g21).
+- Researched list `data/curated/oldest_sport.json` (76 entries, 8 categories; 51 kept, 15 open, 10 corrected),
+  quotes checked: 141/141 after dropping 5 newspaper/club sources that refuse scripts and fixing one quote.
+  `oldest_lists.run` now gives the researched age to places other stages keep (previously only regrouped ones).
+  `python -m bidb.evidence --check --new` checks only claims the last check has not seen: 1,452 of 1,453 found.
+- Quizzes: `app/quiz_api.py` (`/api/quiz`, `/api/quiz_pool`; `data/quiz.json` in the hosted copy),
+  `static/quiz_kinds.js` (period, which is older, oldest of four, put in order, county, say the name, whose story,
+  when did it happen, how old is it, mixed; easy/hard), `static/quiz.js` (menu, best per quiz and level, review).
+  Story text is masked before escaping. Played every quiz at both levels in Chrome: no errors.
+- Tests 108 OK (tests/test_sports.py); ui_check 40/40. README, Help, INTERFACE, figures updated.

@@ -91,16 +91,6 @@ def on_this_day():
     return jsonify(for_day(conn(), int(request.args.get("month", 1)), int(request.args.get("day", 1))))
 
 
-@bp.route("/api/quiz")
-def quiz():
-    """Random buildings with a photo and a well-supported date, for "Guess the period"."""
-    n = min(int(request.args.get("n", 10)), 30)
-    rows = conn().execute("""SELECT id, name, image_thumb, year_start, date_text, period, category, locality, nation
-        FROM buildings WHERE image_thumb IS NOT NULL AND year_start IS NOT NULL AND period != 'Unknown'
-        AND date_check IN ('Corroborated', 'Referenced', 'Reviewed') ORDER BY random() LIMIT ?""", (n,)).fetchall()
-    return jsonify([dict(r) for r in rows])
-
-
 @bp.route("/api/history")
 def history():
     return jsonify(history_with_places())

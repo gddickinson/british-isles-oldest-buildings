@@ -49,6 +49,8 @@ def export(conn, out_dir):
             digs.setdefault(rid, []).append([what, years, who])
         (out_dir / "excavations.json").write_text(json.dumps(digs, ensure_ascii=False, separators=(",", ":")))
     from bidb.oldest_lists import lists
+    from .quiz_api import pool
+    (out_dir / "quiz.json").write_text(json.dumps(pool(conn), ensure_ascii=False, separators=(",", ":")))
     (out_dir / "oldest_lists.json").write_text(json.dumps(lists(conn), ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'dendro'").fetchone():
         tree = {}                                    # {record id: [[location, date text, method, reference], …]}

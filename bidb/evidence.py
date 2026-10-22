@@ -2,6 +2,7 @@
 
     python -m bidb.evidence            list the claims and their last check
     python -m bidb.evidence --check    fetch every source again and look for its quote
+    python -m bidb.evidence --check --new   only the claims the last check has not seen
     python -m bidb.evidence <id>       the claims about one record
 
 A claim is about one record (a building or place) and one field (a date, a builder, a fact). Each
@@ -69,11 +70,14 @@ def validate(claims):
     return problems
 
 
-def check(log=print):
-    """Fetch every source again and record whether its quote is there."""
+def check(log=print, only_new=False):
+    """Fetch every source again and record whether its quote is there (only_new: just the claims the last
+    check has not seen, kept with its results)."""
     from .verify_research import source_text
-    claims, out, texts = load(), {}, {}
+    claims, out, texts = load(), (checks() if only_new else {}), {}
     for c in claims:
+        if c["id"] in out:
+            continue
         res = []
         for s in c["sources"]:
             url = s.get("url")
@@ -116,7 +120,7 @@ def main():
     for p in problems:
         print("problem:", p)
     if args and args[0] == "--check":
-        check()
+        check(only_new="--new" in args)
     elif args:
         print(json.dumps(for_record(args[0]), indent=1, ensure_ascii=False))
     else:

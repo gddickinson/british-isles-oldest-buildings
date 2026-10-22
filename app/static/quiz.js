@@ -1,48 +1,98 @@
-// "Guess the period": ten photographed buildings with well-supported dates; four period choices
-// each (the right one and its neighbours, so it is not too easy). Best score kept in this browser.
+// Quiz page: a menu of quizzes (quiz_kinds.js), easy or hard, rounds of about ten questions, the best score of
+// each quiz kept in this browser, and a review of the round at the end. ?q=<quiz> opens one directly.
 (() => {
-  const PERIODS = ["Neolithic", "Bronze Age", "Iron Age", "Roman Britain", "Early Medieval", "Norman", "High Medieval",
-                   "Late Medieval", "Tudor", "Stuart", "Georgian", "Victorian", "Modern"];
-  const SPAN = { Neolithic: "c. 4000–2500 BC", "Bronze Age": "2500–800 BC", "Iron Age": "800 BC–AD 43",
-    "Roman Britain": "43–410", "Early Medieval": "410–1066", Norman: "1066–1154", "High Medieval": "1154–1307",
-    "Late Medieval": "1307–1485", Tudor: "1485–1603", Stuart: "1603–1714", Georgian: "1714–1837",
-    Victorian: "1837–1901", Modern: "1901–" };
-  const BEST = "bi_quiz_best";
   const $ = (s) => document.querySelector(s);
-  let qs = [], i = 0, score = 0;
+  const KINDS = QuizKinds.KINDS;
+  const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } },
+                  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* blocked */ } } };
+  let data = { buildings: [], pool: null }, kind = null, qs = [], i = 0, score = 0, log = [], picked = [];
+  const hard = () => store.get("bi_quiz_hard", false);
+  const bests = () => store.get("bi_quiz_bests", {});
+  const bestKey = () => `${kind}${hard() ? ":hard" : ""}`;
 
-  function choices(period) {          // four neighbouring periods, the answer at a random place among them
-    const k = Math.max(0, PERIODS.indexOf(period));
-    const lo = Math.max(0, Math.min(PERIODS.length - 4, k - Math.floor(Math.random() * 4)));
-    return PERIODS.slice(lo, lo + 4);
+  async function load(k) {
+    if (data.buildings.length < 60) data.buildings = await api("/api/quiz?n=120").catch(() => []);
+    if (QuizKinds.needsPool(k) && !data.pool) data.pool = await api("/api/quiz_pool").catch(() => ({ pron: [], stories: [], history: [], lists: [] }));
   }
 
-  function best() { try { return +localStorage.getItem(BEST) || 0; } catch (e) { return 0; } }
+  function menu() {
+    kind = null;
+    history.replaceState(null, "", location.pathname);
+    $("#qz_play").hidden = true;
+    $("#qz_menu").hidden = false;
+    const b = bests();
+    $("#qz_menu").innerHTML = Object.entries(KINDS).map(([k, q]) => {
+      const e = b[k], h = b[k + ":hard"];
+      return `<button class="quiz-pick" data-k="${k}"><span class="quiz-icon">${q.icon}</span><b>${esc(q.title)}</b>
+        <span class="hint">${esc(q.blurb)}</span>
+        <span class="quiz-best">${e || h ? `Best: ${e ? `${e[0]}/${e[1]}` : "–"} easy · ${h ? `${h[0]}/${h[1]}` : "–"} hard` : "Not played yet"}</span></button>`;
+    }).join("");
+  }
+
+  async function start(k) {
+    kind = k;
+    history.replaceState(null, "", `?q=${k}`);
+    $("#qz_menu").hidden = true;
+    $("#qz_play").hidden = false;
+    $("#qz_title").textContent = `${KINDS[k].icon} ${KINDS[k].title}`;
+    $("#qz_card").innerHTML = "<p class='hint'>Loading…</p>";
+    await load(k);
+    qs = KINDS[k].make(data, hard());
+    i = 0; score = 0; log = [];
+    if (!qs.length) { $("#qz_card").innerHTML = "<p class='empty'>No questions available.</p>"; return; }
+    ask();
+  }
+
   function scoreLine() {
-    $("#qz_score").textContent = `Question ${Math.min(i + 1, qs.length)} of ${qs.length} · score ${score}` + (best() ? ` · best ${best()}/10` : "");
+    const b = bests()[bestKey()];
+    $("#qz_score").textContent = `${hard() ? "Hard" : "Easy"} · question ${Math.min(i + 1, qs.length)} of ${qs.length} · score ${score}` +
+      (b ? ` · best ${b[0]}/${b[1]}` : "");
+  }
+
+  function choiceHTML(c, k) {
+    return `<button class="btn ghost ${c.image ? "pic" : ""}" data-v="${esc(c.value)}" data-k="${k}">
+      ${c.image ? `<img src="${esc(c.image)}" alt="${esc(c.label)}" loading="lazy">` : ""}
+      <span>${esc(c.label)}</span>${c.sub ? `<span class="hint">${esc(c.sub)}</span>` : ""}
+      ${KINDS[kind].order ? `<span class="quiz-rank"></span>` : ""}</button>`;
   }
 
   function ask() {
     scoreLine();
     if (i >= qs.length) return finish();
     const q = qs[i];
-    $("#qz_card").innerHTML = `<img src="${esc(q.image_thumb)}" alt="Photo of the building in question ${i + 1}">
-      <p class="hint">${esc(q.category)} · ${esc(q.locality || q.nation || "")}</p>
-      <div class="quiz-choices">${choices(q.period).map((p) => `<button class="btn ghost" data-p="${esc(p)}">${esc(p)}
-        <span class="hint">${esc(SPAN[p] || "")}</span></button>`).join("")}</div>`;
+    picked = [];
+    $("#qz_card").innerHTML = `${q.image ? `<img class="quiz-photo" src="${esc(q.image)}" alt="Photo for question ${i + 1}">` : ""}
+      ${q.prompt}<div class="quiz-choices ${q.choices.some((c) => c.image) ? "pics" : ""}">${q.choices.map(choiceHTML).join("")}</div>`;
   }
 
-  function answer(p) {
-    const q = qs[i], right = p === q.period;
+  function pick(btn) {
+    const q = qs[i];
+    if (!KINDS[kind].order) return answer(btn.dataset.v);
+    if (picked.includes(btn.dataset.v)) return;
+    picked.push(btn.dataset.v);
+    btn.querySelector(".quiz-rank").textContent = picked.length;
+    btn.classList.add("chosen");
+    if (picked.length === q.answer.length) answer(picked);
+  }
+
+  function answer(v) {
+    const q = qs[i], order = Array.isArray(q.answer);
+    const right = order ? q.answer.every((a, k) => a === v[k]) : v === q.answer;
     score += right;
+    log.push({ q, right });
     document.querySelectorAll(".quiz-choices button").forEach((b) => {
       b.disabled = true;
-      b.classList.toggle("right", b.dataset.p === q.period);
-      b.classList.toggle("wrong", b.dataset.p === p && !right);
+      if (order) {
+        const k = q.answer.indexOf(b.dataset.v);
+        b.classList.add(v[k] === b.dataset.v ? "right" : "wrong");
+        b.querySelector(".quiz-rank").textContent = k + 1;
+      } else {
+        b.classList.toggle("right", b.dataset.v === q.answer);
+        b.classList.toggle("wrong", b.dataset.v === v && !right);
+      }
     });
     $("#qz_card").insertAdjacentHTML("beforeend", `<div class="quiz-answer"><b>${right ? "Right!" : "Not quite."}</b>
-      It is <a href="${buildingUrl(q.id)}" target="_blank" rel="noopener">${esc(q.name)}</a>, ${esc(q.date_text || "")} (${esc(q.period)}).
-      <div class="stories-box" data-stories="${esc(q.id)}"></div>
+      <div>${q.explain}</div>${q.story ? `<div class="stories-box" data-stories="${esc(q.story)}"></div>` : ""}
       <button class="btn small" id="qz_next">${i + 1 < qs.length ? "Next" : "See your score"}</button></div>`);
     $("#qz_next").focus();
     i++;
@@ -50,23 +100,35 @@
   }
 
   function finish() {
-    if (score > best()) { try { localStorage.setItem(BEST, score); } catch (e) { /* blocked */ } }
-    $("#qz_card").innerHTML = `<h2>${score} out of ${qs.length}</h2><p>${score >= 8 ? "Excellent: you know your buildings."
-      : score >= 5 ? "Good going." : "The periods blur together; the History page sets them out."}</p>`;
+    const b = bests(), k = bestKey();
+    const better = !b[k] || score / qs.length > b[k][0] / b[k][1];
+    if (better) { b[k] = [score, qs.length]; store.set("bi_quiz_bests", b); }
+    const pct = score / qs.length;
+    $("#qz_card").innerHTML = `<h2>${score} out of ${qs.length}${better && score ? " · a new best!" : ""}</h2>
+      <p>${pct >= 0.8 ? "Excellent: you know your isles." : pct >= 0.5 ? "Good going." : "These are hard; the History and Oldest pages help."}</p>
+      <div class="filter-row"><button class="btn" id="qz_again">Play again</button>
+        ${hard() ? "" : `<button class="btn ghost" id="qz_harder">Try it hard</button>`}
+        <button class="btn ghost" id="qz_back2">Other quizzes</button></div>
+      <h3>Your answers</h3><ol class="quiz-review">${log.map((l) => `<li class="${l.right ? "ok" : "no"}">${l.right ? "✓" : "✗"} ${l.q.explain}</li>`).join("")}</ol>`;
     scoreLine();
   }
 
-  async function round() {
-    qs = await api("/api/quiz?n=10").catch(() => []);
-    i = 0; score = 0;
-    if (!qs.length) { $("#qz_card").innerHTML = "<p class='empty'>No questions available.</p>"; return; }
-    ask();
-  }
-
   document.addEventListener("click", (e) => {
-    const b = e.target.closest(".quiz-choices button[data-p]");
-    if (b && !b.disabled) answer(b.dataset.p);
-    if (e.target.id === "qz_next") ask();
+    const card = e.target.closest(".quiz-pick");
+    if (card) return start(card.dataset.k);
+    const b = e.target.closest(".quiz-choices button[data-v]");
+    if (b && !b.disabled) return pick(b);
+    const id = e.target.id;
+    if (id === "qz_next") ask();
+    else if (id === "qz_again") start(kind);
+    else if (id === "qz_harder") { store.set("bi_quiz_hard", true); $("#qz_hard").checked = true; start(kind); }
+    else if (id === "qz_back" || id === "qz_back2") menu();
   });
-  document.addEventListener("DOMContentLoaded", () => { $("#qz_new").onclick = round; round(); });
+  document.addEventListener("DOMContentLoaded", () => {
+    $("#qz_hard").checked = hard();
+    $("#qz_hard").onchange = (e) => { store.set("bi_quiz_hard", e.target.checked); kind ? start(kind) : menu(); };
+    $("#qz_new").onclick = () => start(kind);
+    const k = new URLSearchParams(location.search).get("q");
+    KINDS[k] ? start(k) : menu();
+  });
 })();

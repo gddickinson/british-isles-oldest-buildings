@@ -85,3 +85,23 @@
 .quiz-choices .btn.right { border-color: #2f8a3e; background: #e1f3e3; color: #1d5a27; }
 .quiz-choices .btn.wrong { border-color: #b3261e; background: #fbe4e2; color: #8c1d18; }
 .quiz-answer { margin: 8px 0; } .quiz-score { font-weight: 600; margin: 6px 0 10px; }
+/* quiz menu and questions (quiz.js) */
+.quiz-menu { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 12px 0; }
+.quiz-pick { display: flex; flex-direction: column; gap: 4px; text-align: left; padding: 14px; border: 1px solid var(--line);
+  border-radius: 12px; background: var(--panel); color: var(--ink); cursor: pointer; font: inherit; }
+.quiz-pick:hover, .quiz-pick:focus-visible { border-color: var(--accent); box-shadow: 0 2px 10px rgba(0, 0, 0, .08); }
+.quiz-icon { font-size: 26px; } .quiz-best { font-size: 12px; color: var(--accent); margin-top: auto; }
+.quiz-level { margin: 6px 0; } .quiz-title { margin: 0 0 0 8px; font-size: 1.3rem; }
+.quiz-big { font-size: 1.5rem; font-weight: 600; margin: 6px 0; }
+.quiz-quote { margin: 8px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--panel); border-radius: 6px; }
+.quiz-photo { margin-bottom: 8px; }
+.quiz-choices.pics { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.quiz-choices .btn.pic { position: relative; padding: 6px; gap: 4px; }
+.quiz-choices .btn.pic img { width: 100%; height: 130px; object-fit: cover; border-radius: 8px; }
+.quiz-choices .btn.chosen { border-color: var(--accent); background: var(--accent-soft); }
+.quiz-rank { position: absolute; top: 10px; left: 10px; min-width: 24px; border-radius: 12px; background: var(--accent);
+  color: #fff; font-weight: 700; } .quiz-rank:empty { display: none; }
+.quiz-review { padding-left: 20px; } .quiz-review li { margin: 6px 0; } .quiz-review li.no { color: var(--muted); }
+:root[data-theme="dark"] .quiz-choices .btn.right { background: #1f3b24; color: #bfe6c5; }
+:root[data-theme="dark"] .quiz-choices .btn.wrong { background: #46201e; color: #f3c0bc; }
+.quiz-choices .btn:disabled { opacity: 1; cursor: default; }

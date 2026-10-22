@@ -2,14 +2,22 @@
 {% block title %}Quiz · British Isles Oldest Buildings{% endblock %}
 {% block body %}
 <main class="page quiz-page">
-  <h1>Guess the period</h1>
-  <p class="prose">A photo of a building from the catalogue: when was it built? Pick the period. Only buildings whose
-    date is backed by a second source are used. Ten questions a round.</p>
-  <div class="quiz-score" id="qz_score" aria-live="polite"></div>
-  <section id="qz_card" class="quiz-card"></section>
-  <div class="filter-row"><button id="qz_new" class="btn">New round</button></div>
+  <h1>Quizzes</h1>
+  <p class="prose">Test yourself on the buildings, names, stories and history of the isles. Each round has about ten
+    questions drawn at random, so no two are the same; only buildings whose date is backed by a second source are used.
+    <b>Hard</b> makes the wrong answers closer to the right one.</p>
+  <label class="check quiz-level"><input type="checkbox" id="qz_hard"> Hard</label>
+  <section id="qz_menu" class="quiz-menu"></section>
+  <section id="qz_play" hidden>
+    <div class="filter-row"><button id="qz_back" class="btn ghost small">← All quizzes</button>
+      <h2 id="qz_title" class="quiz-title"></h2></div>
+    <div class="quiz-score" id="qz_score" aria-live="polite"></div>
+    <section id="qz_card" class="quiz-card"></section>
+    <div class="filter-row"><button id="qz_new" class="btn ghost">New round</button></div>
+  </section>
 </main>
 {% endblock %}
 {% block scripts %}
+<script src="{{ url_for('static', filename='quiz_kinds.js') }}"></script>
 <script src="{{ url_for('static', filename='quiz.js') }}"></script>
 {% endblock %}

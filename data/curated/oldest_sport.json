@@ -1,0 +1,2425 @@
+{
+ "about": "Oldest sporting grounds and clubs of the isles: football, rugby, cricket and golf clubs and grounds, racecourses, stadiums, venues for other sports and other clubs (research track, 2026-10-22); each with the age claim, how secure it is, and sources with exact quotes (checked by python -m bidb.evidence --check).",
+ "entries": [
+  {
+   "category": "Oldest football club",
+   "name": "Sheffield FC",
+   "qid": "Q18491",
+   "wikipedia_title": "Sheffield F.C.",
+   "lat": 53.3096,
+   "lon": -1.4776,
+   "nation": "England",
+   "location": "Home of Football Ground, Dronfield, Derbyshire",
+   "age_text": "founded 24 October 1857",
+   "year": 1857,
+   "claim": "the oldest football club in the world playing association football",
+   "evidence": "Founded at Parkfield House, Sheffield, on 24 October 1857 and recognised by FIFA and the FA as the oldest existing independent (open) club. Caveats: it played its own Sheffield Rules and did not formally adopt association rules until 1877; institutional clubs such as Dublin University (rugby, c.1854) and Cambridge University AFC (laws dated 1856) are older; the club now plays at Dronfield, not its original Sheffield ground.",
+   "sources": [
+    {
+     "title": "Sheffield F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sheffield_F.C.",
+     "locator": "lead",
+     "quote": "the club is considered by FIFA as the oldest existing independent club still playing football in the world"
+    },
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Britain and Ireland: Continuous clubs",
+     "quote": "Sheffield F.C. did not officially adopt association football until 1877"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Hallam FC",
+   "qid": "Q1257402",
+   "wikipedia_title": "Hallam F.C.",
+   "lat": 53.3764,
+   "lon": -1.5312,
+   "nation": "England",
+   "location": "Sandygate Road, Crosspool, Sheffield",
+   "age_text": "founded 1860",
+   "year": 1860,
+   "claim": "the second-oldest football club in the world, playing at the oldest football ground",
+   "evidence": "Founded in 1860 and playing at Sandygate since then; its Boxing Day 1860 match against Sheffield FC is the oldest inter-club fixture still contested. The club's infobox records a re-formation in 1887, so continuity is not unbroken; Cray Wanderers also claims 1860.",
+   "sources": [
+    {
+     "title": "Hallam F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hallam_F.C.",
+     "locator": "lead",
+     "quote": "Hallam have played at their Sandygate home in the Sheffield suburb of Crosspool since 1860"
+    },
+    {
+     "title": "Oldest football ground",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://guinnessworldrecords.com/world-records/75073-oldest-football-ground",
+     "locator": "page text",
+     "quote": "The first competitive game played at the ground was against Sheffield Football Club on 26 Dec 1860."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Cray Wanderers FC",
+   "qid": "Q3696729",
+   "wikipedia_title": "Cray Wanderers F.C.",
+   "lat": 51.419,
+   "lon": 0.11,
+   "nation": "England",
+   "location": "Flamingo Park, Sidcup bypass, Chislehurst (formerly St Mary Cray)",
+   "age_text": "traditionally founded 1860",
+   "year": 1860,
+   "claim": "the oldest football club in London and one of the oldest in the world",
+   "evidence": "The 1860 date rests on later reports rather than contemporary records, and the code the club played in its first years is unknown, so its claim to have played association football since 1860 cannot be confirmed.",
+   "sources": [
+    {
+     "title": "Cray Wanderers F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cray_Wanderers_F.C.",
+     "locator": "History",
+     "quote": "Based on later reports, the club has a claim to have been established some time in 1860"
+    },
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Britain and Ireland: Continuous clubs",
+     "quote": "The code played by Cray Wanderers in its earliest years is unknown."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Notts County FC",
+   "qid": "Q19598",
+   "wikipedia_title": "Notts County F.C.",
+   "lat": 52.9425,
+   "lon": -1.1372,
+   "nation": "England",
+   "location": "Meadow Lane, Nottingham",
+   "age_text": "founded 1862 (traditional date); first recorded match 8 December 1864",
+   "year": 1862,
+   "claim": "the oldest professional football club in the world",
+   "evidence": "1862 is the club's traditional foundation date; its first recorded match was in December 1864 and it played Sheffield/Nottingham rules at first. It is generally accepted as the oldest club now in the professional Football League pyramid.",
+   "sources": [
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Britain and Ireland: Continuous clubs",
+     "quote": "Notts County F.C. are officially the oldest professional football club in the world"
+    },
+    {
+     "title": "Notts County F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Notts_County_F.C.",
+     "locator": "History",
+     "quote": "Notts County's traditional foundation date is 1862, making them the oldest professional football club in the world."
+    },
+    {
+     "title": "Notts County",
+     "author": "FootballHistory.org",
+     "kind": "secondary",
+     "url": "https://footballhistory.org/club/notts-county.html",
+     "locator": "page text",
+     "quote": "Notts County FC is the oldest professional football club in the world."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Wrexham AFC",
+   "qid": "Q18529",
+   "wikipedia_title": "Wrexham A.F.C.",
+   "lat": 53.0519,
+   "lon": -3.0036,
+   "nation": "Wales",
+   "location": "Racecourse Ground, Wrexham",
+   "age_text": "founded 4 October 1864 at the Turf Hotel",
+   "year": 1864,
+   "claim": "the oldest football club in Wales and third-oldest professional club in the world",
+   "evidence": "Formed by members of Wrexham Cricket Club in October 1864 and playing at the Racecourse ever since (apart from 1881-83). The crest date was changed from 1873 to 1864 after earlier documents were found.",
+   "sources": [
+    {
+     "title": "Wrexham A.F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrexham_A.F.C.",
+     "locator": "lead",
+     "quote": "it is the oldest club in Wales and the third-oldest professional football team in the world"
+    },
+    {
+     "title": "Wrexham AFC",
+     "author": "FootballHistory.org",
+     "kind": "secondary",
+     "url": "https://www.footballhistory.org/club/wrexham.html",
+     "locator": "page text",
+     "quote": "Football Club is the oldest football club in Wales and the third oldest professional football club in the World."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Nottingham Forest FC",
+   "qid": "Q19490",
+   "wikipedia_title": "Nottingham Forest F.C.",
+   "lat": 52.9399,
+   "lon": -1.1329,
+   "nation": "England",
+   "location": "City Ground, West Bridgford, Nottingham",
+   "age_text": "founded 1865",
+   "year": 1865,
+   "claim": "the second-oldest professional football club; oldest in the Football League 2019-2023",
+   "evidence": "Formed in 1865 by shinty players at the Clinton Arms, Nottingham. While Notts County were out of the League (2019-2023) the EFL named Forest the oldest League club, rejecting Stoke City's 1863 claim.",
+   "sources": [
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Britain and Ireland: Continuous clubs",
+     "quote": "are recognised as the second oldest professional football club in the world, having been formed in 1865"
+    },
+    {
+     "title": "Nottingham Forest F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
+     "locator": "History",
+     "quote": "The EFL also stated that Nottingham Forest was the oldest."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Queen's Park FC",
+   "qid": "Q852753",
+   "wikipedia_title": "Queen's Park F.C.",
+   "lat": 55.826,
+   "lon": -4.2519,
+   "nation": "Scotland",
+   "location": "Hampden Park, Glasgow (home 1903-2021; now Lesser Hampden)",
+   "age_text": "founded 9 July 1867",
+   "year": 1867,
+   "claim": "the oldest association football club in Scotland",
+   "evidence": "Founded on 9 July 1867; the oldest Scottish association club. The Foot-Ball Club of Edinburgh (1824-41) was older but defunct, and Edinburgh Academicals (rugby, 1857) is the oldest football club of any code in Scotland.",
+   "sources": [
+    {
+     "title": "Queen's Park F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queen's_Park_F.C.",
+     "locator": "lead",
+     "quote": "It is the oldest association football club in Scotland, having been founded in 1867"
+    },
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Defunct clubs",
+     "quote": "The Foot-Ball Club (active 1824–41) of Edinburgh, Scotland, is the first documented club dedicated to football"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Stoke City FC",
+   "qid": "Q18736",
+   "wikipedia_title": "Stoke City F.C.",
+   "lat": 52.9883,
+   "lon": -2.1756,
+   "nation": "England",
+   "location": "bet365 Stadium, Stoke-on-Trent",
+   "age_text": "claims 1863; documented 1868 as Stoke Ramblers",
+   "year": 1868,
+   "claim": "founded in 1863, the oldest club in the Football League after Notts County",
+   "evidence": "The 1863 date on the badge rests on a 1905 book; contemporary newspapers record Stoke Ramblers being formed by Henry Almond in 1868, and historians and the EFL treat 1868 as the founding year.",
+   "sources": [
+    {
+     "title": "Stoke City F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stoke_City_F.C.",
+     "locator": "History",
+     "quote": "the Stoke Ramblers club was formed in 1868 by Henry Almond"
+    },
+    {
+     "title": "Nottingham Forest F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
+     "locator": "History",
+     "quote": "football historian Mark Metcalf stated that Stoke was formed in 1868, rather than the 1863 date on the club's badge"
+    },
+    {
+     "title": "Birth certificate: Stoke City and Nottingham Forest locked in oldest club debate",
+     "author": "When Saturday Comes",
+     "kind": "secondary",
+     "url": "https://www.wsc.co.uk/stories/birth-certificate-stoke-city-and-nottingham-forest-locked-in-oldest-club-debate/",
+     "locator": "page text",
+     "quote": "A bold claim is made by Stoke City, who prominently feature the foundation year of 1863 on the red and white shield of their badge."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Cliftonville FC",
+   "qid": "Q779835",
+   "wikipedia_title": "Cliftonville F.C.",
+   "lat": 54.6195,
+   "lon": -5.9473,
+   "nation": "Northern Ireland",
+   "location": "Solitude, Cliftonville, north Belfast",
+   "age_text": "founded 20 September 1879",
+   "year": 1879,
+   "claim": "the oldest football club in Ireland",
+   "evidence": "Founded by John McAlery in 1879, the first association football club in Ireland that survives; rugby clubs such as Dublin University and NIFC are older football clubs of another code.",
+   "sources": [
+    {
+     "title": "Cliftonville F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cliftonville_F.C.",
+     "locator": "lead",
+     "quote": "It is the oldest football club in Ireland and celebrated its 140th anniversary in 2019."
+    },
+    {
+     "title": "Cliftonville F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cliftonville_F.C.",
+     "locator": "lead",
+     "quote": "The club was founded on 20 September 1879 by John McAlery in the suburb of Cliftonville in north Belfast"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Tullaroan GAA",
+   "qid": "Q7852158",
+   "wikipedia_title": "Tullaroan GAA",
+   "lat": 52.6614,
+   "lon": -7.4436,
+   "nation": "Republic of Ireland",
+   "location": "Tullaroan GAA grounds, County Kilkenny",
+   "age_text": "founded 1884",
+   "year": 1884,
+   "claim": "the oldest hurling club in Kilkenny, founded in the year of the GAA",
+   "evidence": "Founded in 1884, the year the Gaelic Athletic Association was formed; the oldest surviving club in Kilkenny. Several GAA clubs across Ireland date from 1884-85, so it is not the single oldest GAA club.",
+   "sources": [
+    {
+     "title": "Tullaroan GAA",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tullaroan_GAA",
+     "locator": "lead",
+     "quote": "Tullaroan GAA Club was founded in 1884, making it the oldest club in Kilkenny still in existence."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest football club",
+   "name": "Athlone Town AFC",
+   "qid": "Q755656",
+   "wikipedia_title": "Athlone Town A.F.C.",
+   "lat": 53.4276,
+   "lon": -7.9193,
+   "nation": "Republic of Ireland",
+   "location": "Athlone Town Stadium, Lissywollen, Athlone",
+   "age_text": "founded 1887",
+   "year": 1887,
+   "claim": "the oldest club in the League of Ireland",
+   "evidence": "Founded in 1887, the oldest club in the League of Ireland; Wikipedia gives only a single supporting reference, and Bohemians (1890) is the oldest Dublin club.",
+   "sources": [
+    {
+     "title": "Athlone Town A.F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Athlone_Town_A.F.C.",
+     "locator": "lead",
+     "quote": "The club is the oldest in the League as it was founded in 1887."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Guy's Hospital Football Club (Guy's, King's and St Thomas' RFC)",
+   "qid": "Q3121447",
+   "wikipedia_title": "Guy's, King's and St Thomas' RFC",
+   "lat": 51.4508,
+   "lon": -0.037,
+   "nation": "England",
+   "location": "Honor Oak Park sports ground, London",
+   "age_text": "traditionally founded 1843",
+   "year": 1843,
+   "claim": "the oldest rugby club in the world",
+   "evidence": "The 1843 date rests on an 1883 fixture card referring to Guy's 40th season and is accepted by the RFU and Guinness, but there are no contemporary records, the club lapsed at times, and today's club is a merger of three hospital clubs. Dublin University (c.1854) has the oldest documented continuous history.",
+   "sources": [
+    {
+     "title": "Guy's, King's and St Thomas' RFC",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy's,_King's_and_St_Thomas'_RFC",
+     "locator": "lead",
+     "quote": "is accepted by the Rugby Football Union and the Guinness Book of Records as being the oldest rugby club in the world"
+    },
+    {
+     "title": "Guy's, King's and St Thomas' RFC",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy's,_King's_and_St_Thomas'_RFC",
+     "locator": "lead",
+     "quote": "Despite the acceptance by these two bodies of Guy's foundation date, the claim to be the oldest club is contested."
+    },
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "lead",
+     "quote": "There exists some record of Guy's Hospital Football Club being founded in London in 1843, through an 1883 fixture card referring to Guy's 40th season."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Dublin University Football Club",
+   "qid": "Q3040530",
+   "wikipedia_title": "Dublin University Football Club",
+   "lat": 53.3435,
+   "lon": -6.256,
+   "nation": "Republic of Ireland",
+   "location": "College Park, Trinity College Dublin",
+   "age_text": "founded by about 1854 (first record 1 December 1855)",
+   "year": 1854,
+   "claim": "the oldest rugby club in continuous existence",
+   "evidence": "A newspaper notice of 1 December 1855 shows the club already existed; it has a documented continuous history since about 1854, the strongest claim to be the oldest extant football club of any code.",
+   "sources": [
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Dublin University Team",
+     "quote": "it has a well-documented, continuous history since then, which gives it a strong claim to be considered the world's oldest extant football club of any code"
+    },
+    {
+     "title": "History",
+     "author": "Dublin University Football Club",
+     "kind": "primary",
+     "url": "https://www.dufc.ie/history",
+     "locator": "page text",
+     "quote": "The 1854 foundation date gives Trinity a substantial claim to be the oldest rugby club in continuous existence."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Liverpool St Helens FC",
+   "qid": "Q3257128",
+   "wikipedia_title": "Liverpool St Helens F.C.",
+   "lat": 53.4708,
+   "lon": -2.7789,
+   "nation": "England",
+   "location": "Moss Lane, Windle, St Helens",
+   "age_text": "Liverpool Football Club founded 1857",
+   "year": 1857,
+   "claim": "the oldest open rugby club in the world",
+   "evidence": "The original Liverpool Football Club (1857) never played association rules and adopted rugby union rules in 1872; it merged with St Helens RUFC in 1986. Blackheath (1858) makes a rival 'oldest open club' claim.",
+   "sources": [
+    {
+     "title": "Liverpool St Helens F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Liverpool_St_Helens_F.C.",
+     "locator": "lead",
+     "quote": "They are the oldest existing open rugby union club in the world."
+    },
+    {
+     "title": "Oldest football clubs",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oldest_football_clubs",
+     "locator": "Britain and Ireland: Continuous clubs",
+     "quote": "were formed in 1857, which claims to be the oldest open rugby club in the world"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Edinburgh Academical Football Club",
+   "qid": "Q1284702",
+   "wikipedia_title": "Edinburgh Academical Football Club",
+   "lat": 55.9606,
+   "lon": -3.2161,
+   "nation": "Scotland",
+   "location": "Raeburn Place, Stockbridge, Edinburgh",
+   "age_text": "founded 1857",
+   "year": 1857,
+   "claim": "the oldest football club of any code in Scotland",
+   "evidence": "Formed in 1857 for former pupils of the Edinburgh Academy; second-oldest rugby club in continuous existence after Dublin University, and ten years older than Queen's Park.",
+   "sources": [
+    {
+     "title": "Edinburgh Academical Football Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Edinburgh_Academical_Football_Club",
+     "locator": "lead",
+     "quote": "The club was formed in 1857 and is the oldest surviving football club of any code in Scotland"
+    },
+    {
+     "title": "History",
+     "author": "Edinburgh Academical Football Club",
+     "kind": "primary",
+     "url": "https://www.edinburghaccies.com/history",
+     "locator": "page text",
+     "quote": "The Club was formed in 1857 and, at the time, was only open to former pupils of the Edinburgh Academy"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Blackheath FC",
+   "qid": "Q2481690",
+   "wikipedia_title": "Blackheath F.C.",
+   "lat": 51.478,
+   "lon": 0.0283,
+   "nation": "England",
+   "location": "Rectory Field, Blackheath (home 1883-2016; now Well Hall, Eltham)",
+   "age_text": "founded 1858",
+   "year": 1858,
+   "claim": "the oldest open rugby club in the world",
+   "evidence": "Founded in 1858 by old boys of Blackheath Proprietary School. It is the fourth-oldest rugby club in continuous existence (after Dublin University, Liverpool St Helens and Edinburgh Academicals); its claim rests on being the oldest independent club, a distinction Liverpool St Helens disputes.",
+   "sources": [
+    {
+     "title": "Blackheath F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackheath_F.C.",
+     "locator": "lead",
+     "quote": "The club was founded in Blackheath in 1858 and is the oldest open rugby club in continuous existence in the world."
+    },
+    {
+     "title": "Blackheath F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackheath_F.C.",
+     "locator": "History",
+     "quote": "Blackheath is the fourth-oldest rugby club in continuous existence in the world"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Richmond FC",
+   "qid": "Q3431476",
+   "wikipedia_title": "Richmond F.C.",
+   "lat": 51.4669,
+   "lon": -0.3033,
+   "nation": "England",
+   "location": "Richmond Athletic Ground, Richmond",
+   "age_text": "founded 1861",
+   "year": 1861,
+   "claim": "one of the oldest football clubs of any code; founder member of the RFU",
+   "evidence": "Formed in 1861; played the first match under FA rules in December 1863 against Barnes before taking up rugby; a founding member of the Rugby Football Union.",
+   "sources": [
+    {
+     "title": "Richmond F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Richmond_F.C.",
+     "locator": "lead",
+     "quote": "Formed in 1861, it is one of the oldest football clubs in the world and holds a significant place in the history of association football"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "North of Ireland FC",
+   "qid": "Q7057523",
+   "wikipedia_title": "North of Ireland F.C.",
+   "lat": 54.583,
+   "lon": -5.9205,
+   "nation": "Northern Ireland",
+   "location": "Ormeau Road, Belfast (former ground)",
+   "age_text": "founded 1868",
+   "year": 1868,
+   "claim": "the oldest rugby club in Northern Ireland",
+   "evidence": "Founded in 1868 by members of North of Ireland Cricket Club; only Dublin University and Wanderers were earlier in Ireland. It no longer exists separately, having merged with Collegians in 1999 to form Belfast Harlequins.",
+   "sources": [
+    {
+     "title": "North of Ireland F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/North_of_Ireland_F.C.",
+     "locator": "lead",
+     "quote": "It was the first rugby club formed in what is now Northern Ireland and only two other clubs - Dublin University and Wanderers - were formed earlier"
+    },
+    {
+     "title": "North of Ireland F.C.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/North_of_Ireland_F.C.",
+     "locator": "History",
+     "quote": "They also played several seasons in the AIB League before merging with Collegians in 1999 to form Belfast Harlequins"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest rugby club",
+   "name": "Neath RFC",
+   "qid": "Q1521270",
+   "wikipedia_title": "Neath RFC",
+   "lat": 51.6637,
+   "lon": -3.7977,
+   "nation": "Wales",
+   "location": "The Gnoll, Neath",
+   "age_text": "founded 1871 (or 1871/72)",
+   "year": 1871,
+   "claim": "the oldest rugby club in Wales",
+   "evidence": "Neath has long been taken to date from 1871/72, when it played Swansea in the first recorded rugby match in Wales; the club's own history now treats the date cautiously, and it joined the Welsh Football Union only in 1882-83.",
+   "sources": [
+    {
+     "title": "Neath RFC",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Neath_RFC",
+     "locator": "History",
+     "quote": "Neath Rugby Football club was established in 1871 by a consortium of ten enthusiasts"
+    },
+    {
+     "title": "Our History",
+     "author": "Neath RFC",
+     "kind": "primary",
+     "url": "https://neathrfc.com/our-history/",
+     "locator": "page text",
+     "quote": "It has long been thought that Neath Rugby Football Club was founded in 1871/72 when the first recorded rugby match in Wales took place"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "Mitcham Cricket Green",
+   "qid": "Q6881040",
+   "wikipedia_title": "Mitcham Cricket Green",
+   "lat": 51.4011,
+   "lon": -0.1672,
+   "nation": "England",
+   "location": "Lower Green, Mitcham, south London",
+   "age_text": "cricket reputedly since 1685; first recorded match 1707",
+   "year": 1685,
+   "claim": "the oldest cricket ground in the world still in use (Mitcham Cricket Club, 1685)",
+   "evidence": "The 1685 date rests on a reputed print showing 'Crickette on Ye Olde Meecham Green'; the first recorded Mitcham match is 1707 (against All-London, played elsewhere). Cricket has certainly been played on the green for 300 years, but the 1685 start is unproven.",
+   "sources": [
+    {
+     "title": "Mitcham Cricket Green",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mitcham_Cricket_Green",
+     "locator": "lead",
+     "quote": "is reportedly the oldest cricket ground still in use, having been used for cricket since 1685"
+    },
+    {
+     "title": "Mitcham Cricket Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mitcham_Cricket_Club",
+     "locator": "History",
+     "quote": "The earliest known cricket match played by Mitcham against another team is recorded to be played in 1707 against All-London."
+    },
+    {
+     "title": "Cricket on Mitcham Green",
+     "author": "Merton Historical Society",
+     "kind": "secondary",
+     "url": "https://mertonhistoricalsociety.org.uk/topics/cricket-on-mitcham-green/",
+     "locator": "page text",
+     "quote": "is reputed to have been shown in a print dated 1685"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "Artillery Ground",
+   "qid": "Q4801146",
+   "wikipedia_title": "Artillery Ground",
+   "lat": 51.5219,
+   "lon": -0.0887,
+   "nation": "England",
+   "location": "Finsbury, London (Honourable Artillery Company)",
+   "age_text": "cricket first mentioned 1725; site held by the HAC since 1638",
+   "year": 1725,
+   "claim": "one of the oldest cricket grounds still used for cricket",
+   "evidence": "First mentioned as a cricket venue in 1725 and the scene of over 200 important matches from 1730 to 1778; the Honourable Artillery Company still plays cricket there in summer.",
+   "sources": [
+    {
+     "title": "Artillery Ground",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Artillery_Ground",
+     "locator": "Earliest mention of cricket",
+     "quote": "It was first mentioned in a cricketing context in the 1725 season."
+    },
+    {
+     "title": "Artillery Ground",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Artillery_Ground",
+     "locator": "Modern use",
+     "quote": "it is also used by HAC teams for cricket in the summer, and for football and rugby matches in the winter"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "The Vine, Sevenoaks",
+   "qid": "Q7932372",
+   "wikipedia_title": "Vine Cricket Ground",
+   "lat": 51.276,
+   "lon": 0.194,
+   "nation": "England",
+   "location": "The Vine, Sevenoaks, Kent",
+   "age_text": "first recorded match 6 September 1734",
+   "year": 1734,
+   "claim": "one of the oldest cricket grounds in the world",
+   "evidence": "First recorded as a cricket venue for Kent v Sussex on 6 September 1734 and given to the town by the 3rd Duke of Dorset in 1773; cricket is still played there.",
+   "sources": [
+    {
+     "title": "Vine Cricket Ground",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Vine_Cricket_Ground",
+     "locator": "lead",
+     "quote": "The Vine's earliest known use was in September 1734 for an historically important match between Kent and Sussex"
+    },
+    {
+     "title": "Vine Cricket Ground",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Vine_Cricket_Ground",
+     "locator": "History",
+     "quote": "First recorded as a cricket venue in 1734, Sevenoaks Vine is one of the oldest in the world."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "Broadhalfpenny Down (Hambledon Club)",
+   "qid": "Q4972193",
+   "wikipedia_title": "Broadhalfpenny Down",
+   "lat": 50.946,
+   "lon": -1.038,
+   "nation": "England",
+   "location": "Hambledon, Hampshire, beside the Bat & Ball Inn",
+   "age_text": "first known use August 1753; Hambledon Club founded by 1768",
+   "year": 1753,
+   "claim": "the cradle (birthplace) of cricket",
+   "evidence": "The ground and the Hambledon Club were the leading centre of the game c.1756-1781, but cricket and major clubs (e.g. Dartford, the Artillery Ground) are older; 'cradle of cricket' is a reputation for the Hambledon era, not the origin of the game. The club itself was a parish side before 1750 and was certainly founded by 1768.",
+   "sources": [
+    {
+     "title": "Broadhalfpenny Down",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broadhalfpenny_Down",
+     "locator": "History",
+     "quote": "the earliest known use of Broadhalfpenny Down was in August 1753 for a match between Hambledon and Surrey"
+    },
+    {
+     "title": "Hambledon Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hambledon_Club",
+     "locator": "lead",
+     "quote": "The origin of the club, based near Hambledon in rural Hampshire, is unclear but it had certainly been founded by 1768."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "Lord's Cricket Ground",
+   "qid": "Q331613",
+   "wikipedia_title": "Lord's",
+   "lat": 51.5294,
+   "lon": -0.1727,
+   "nation": "England",
+   "location": "St John's Wood, London",
+   "age_text": "present ground opened 1814 (first Lord's ground 1787)",
+   "year": 1814,
+   "claim": "the Home of Cricket",
+   "evidence": "The present ground is the third of Thomas Lord's grounds (1787, 1811, 1814) and opened in 1814; it is not the oldest cricket ground, and it houses the world's oldest sporting museum.",
+   "sources": [
+    {
+     "title": "Lord's",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lord's",
+     "locator": "History",
+     "quote": "it is the third of three grounds which Thomas Lord established between 1787 and 1814"
+    },
+    {
+     "title": "Lord's",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lord's",
+     "locator": "History",
+     "quote": "The new ground opened in the 1814 season, with MCC playing Hertfordshire in what is believed to have been the first match there on 22 June 1814"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "Phoenix Cricket Club",
+   "qid": "Q7186829",
+   "wikipedia_title": "Phoenix Cricket Club",
+   "lat": 53.3525,
+   "lon": -6.3116,
+   "nation": "Republic of Ireland",
+   "location": "Phoenix Park, Dublin",
+   "age_text": "founded 1830",
+   "year": 1830,
+   "claim": "the oldest cricket club in Ireland",
+   "evidence": "Founded in 1830 by John Parnell, about five years before Dublin University Cricket Club, and based in the Phoenix Park for almost all its history (except 1835-38).",
+   "sources": [
+    {
+     "title": "Phoenix Cricket Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Phoenix_Cricket_Club",
+     "locator": "lead",
+     "quote": "Phoenix CC is the oldest cricket club in Ireland, founded in 1830, by John Parnell"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "Trent Bridge",
+   "qid": "Q2096399",
+   "wikipedia_title": "Trent Bridge",
+   "lat": 52.9369,
+   "lon": -1.1322,
+   "nation": "England",
+   "location": "West Bridgford, Nottingham",
+   "age_text": "first recorded match 1838; Test ground since 1899",
+   "year": 1838,
+   "claim": "the world's third-oldest Test cricket ground",
+   "evidence": "Cricket was first recorded behind the Trent Bridge Inn in 1838; it is described as the third-oldest Test ground after Melbourne and The Oval.",
+   "sources": [
+    {
+     "title": "Trent Bridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trent_Bridge",
+     "locator": "History",
+     "quote": "The first recorded cricket match was held on an area of ground behind the Trent Bridge Inn in 1838."
+    },
+    {
+     "title": "Trent Bridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trent_Bridge",
+     "locator": "References",
+     "quote": "The ground was first opened in 1841 by William Clarke, husband of the proprietress of the Trent Bridge Inn"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest cricket club or ground",
+   "name": "The Oval",
+   "qid": "Q1155836",
+   "wikipedia_title": "The Oval",
+   "lat": 51.4836,
+   "lon": -0.115,
+   "nation": "England",
+   "location": "Kennington, London",
+   "age_text": "Surrey CCC from 1845; first Test in England 1880",
+   "year": 1845,
+   "claim": "the first ground in England to host Test cricket",
+   "evidence": "Home of Surrey County Cricket Club since 1845 and venue of the first Test match in England (England v Australia, September 1880).",
+   "sources": [
+    {
+     "title": "The Oval",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Oval",
+     "locator": "lead",
+     "quote": "It was the first ground in England to host international Test cricket in September 1880."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Old Course, St Andrews",
+   "qid": "Q167245",
+   "wikipedia_title": "Old Course at St Andrews",
+   "lat": 56.343,
+   "lon": -2.803,
+   "nation": "Scotland",
+   "location": "St Andrews Links, Fife",
+   "age_text": "golf on the links documented 1552 (charter); probably played from the early 15th century",
+   "year": 1552,
+   "claim": "the oldest golf course in the world",
+   "evidence": "Guinness recognises the Old Course as the oldest golf course, on the evidence of Archbishop Hamilton's charter of 1552, which allowed townspeople to continue playing golf on the links; play is believed to be older still.",
+   "sources": [
+    {
+     "title": "Oldest golf course",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/oldest-golf-course",
+     "locator": "page text",
+     "quote": "Archbishop Hamilton's Charter in 1552 is the earliest documentary evidence that allowed the people of St Andrews to play golf on the Links."
+    },
+    {
+     "title": "Old Course at St Andrews",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Course_at_St_Andrews",
+     "locator": "lead",
+     "quote": "the sport was first played on the links at St Andrews in the early 15th century"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Musselburgh Links (Old Course)",
+   "qid": "Q2678264",
+   "wikipedia_title": "Musselburgh Links",
+   "lat": 55.947,
+   "lon": -3.0385,
+   "nation": "Scotland",
+   "location": "Musselburgh Racecourse, East Lothian",
+   "age_text": "golf documented 2 March 1672",
+   "year": 1672,
+   "claim": "the oldest playing golf course in the world",
+   "evidence": "Golf is documented on the links in 1672 (Mary, Queen of Scots in 1567 is legend and refers to nearby Seton). Guinness once certified it as the oldest course but now gives the title to St Andrews (1552).",
+   "sources": [
+    {
+     "title": "Musselburgh Links",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Musselburgh_Links",
+     "locator": "lead",
+     "quote": "Musselburgh was once certified as being the oldest golf course in the world by Guinness World Records; recently this 'record' was reassigned to St Andrews."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Bruntsfield Links",
+   "qid": "Q4979595",
+   "wikipedia_title": "Bruntsfield Links",
+   "lat": 55.9395,
+   "lon": -3.2023,
+   "nation": "Scotland",
+   "location": "Bruntsfield, Edinburgh",
+   "age_text": "golf recorded 1695 (Act of Council)",
+   "year": 1695,
+   "claim": "one of the earliest places golf was played; the Golf Tavern claims 1456",
+   "evidence": "A 1695 Act of Council refers to the place 'where the neighbours play at Goulf'; golf is still played there on a short-hole course. The Golf Tavern's claim of 1456 has no supporting evidence.",
+   "sources": [
+    {
+     "title": "Bruntsfield Links",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bruntsfield_Links",
+     "locator": "Golf on the Links",
+     "quote": "the said aiker always being at ane distance from the place where the neighbours play at Goulf"
+    },
+    {
+     "title": "Bruntsfield Links",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bruntsfield_Links",
+     "locator": "Golf on the Links",
+     "quote": "The Golf Tavern which stands on the west side of the Links claims to have been established in 1456, although there is no evidence for this"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Royal Burgess Golfing Society of Edinburgh",
+   "qid": "Q2323373",
+   "wikipedia_title": "The Royal Burgess Golfing Society of Edinburgh",
+   "lat": 55.9622,
+   "lon": -3.3058,
+   "nation": "Scotland",
+   "location": "Barnton, Edinburgh (originally Bruntsfield Links)",
+   "age_text": "claims institution in 1735",
+   "year": 1735,
+   "claim": "the oldest golfing society in the world",
+   "evidence": "The 1735 date is first stated in references from 1834, a century later, and is not supported by contemporary documents; the Honourable Company's 1744 records are the earliest firm evidence of an organised golf club.",
+   "sources": [
+    {
+     "title": "The Royal Burgess Golfing Society of Edinburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Royal_Burgess_Golfing_Society_of_Edinburgh",
+     "locator": "lead",
+     "quote": "holds claim to be the oldest golfing society in the world, with references to it being instituted in 1735 dating from 1834"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Leith Links (Honourable Company of Edinburgh Golfers)",
+   "qid": "Q6520393",
+   "wikipedia_title": "Leith Links",
+   "lat": 55.9707,
+   "lon": -3.1565,
+   "nation": "Scotland",
+   "location": "Leith, Edinburgh",
+   "age_text": "golf played by 1619; first rules and competition 1744",
+   "year": 1744,
+   "claim": "where the first rules of golf were written and the first golf club competed (1744)",
+   "evidence": "The Gentlemen Golfers of Leith (later the Honourable Company of Edinburgh Golfers) wrote the first known rules for the Silver Club competition of April 1744. Golf on the links is recorded from 1619; the club left for Musselburgh and then Muirfield, and the links are now a park.",
+   "sources": [
+    {
+     "title": "Leith Links",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leith_Links",
+     "locator": "History",
+     "quote": "Bishop Couper was playing golf on Leith Links in 1619 when he had a vision."
+    },
+    {
+     "title": "The Club",
+     "author": "The Honourable Company of Edinburgh Golfers",
+     "kind": "primary",
+     "url": "https://www.muirfield.org.uk/history",
+     "locator": "page text",
+     "quote": "The Gentlemen Golfers of Leith, later renamed The Honourable Company of Edinburgh Golfers, codified and wrote the original Rules of golf"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Royal Blackheath Golf Club",
+   "qid": "Q14289218",
+   "wikipedia_title": "Royal Blackheath Golf Club",
+   "lat": 51.4456,
+   "lon": 0.0556,
+   "nation": "England",
+   "location": "Eltham, London (originally Blackheath)",
+   "age_text": "claims 1608; first definite evidence 1766",
+   "year": 1766,
+   "claim": "founded 1608, the oldest golf club in the world",
+   "evidence": "The 1608 date has no documentary support; the first definite evidence of the club is a silver club presented for competition in 1766 (items suggest perhaps 1745). That still makes it the oldest golf club in England and outside Scotland, but not older than the Edinburgh clubs.",
+   "sources": [
+    {
+     "title": "Royal Blackheath Golf Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Blackheath_Golf_Club",
+     "locator": "lead",
+     "quote": "It was founded in 1608, making it the oldest golf club in England and the world."
+    },
+    {
+     "title": "1766 Royal Blackheath Golf Club",
+     "author": "Scottish Golf History",
+     "kind": "secondary",
+     "url": "https://www.scottishgolfhistory.org/oldest-golf-clubs-societies/1766-royal-blackheath-golf-club/",
+     "locator": "page text",
+     "quote": "The first definite evidence of club activity is a silver club presented by Henry Foot for a competition in 1766"
+    },
+    {
+     "title": "1766 Royal Blackheath Golf Club",
+     "author": "Scottish Golf History",
+     "kind": "secondary",
+     "url": "https://www.scottishgolfhistory.org/oldest-golf-clubs-societies/1766-royal-blackheath-golf-club/",
+     "locator": "page text",
+     "quote": "This date still makes Royal Blackheath the oldest English golf club and the oldest golf club outside Scotland."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Royal Curragh Golf Club",
+   "qid": "Q97959445",
+   "wikipedia_title": "Royal Curragh Golf Club",
+   "lat": 53.147,
+   "lon": -6.8132,
+   "nation": "Republic of Ireland",
+   "location": "The Curragh, County Kildare",
+   "age_text": "dates from 1858 (club's claim)",
+   "year": 1858,
+   "claim": "the oldest golf club in Ireland",
+   "evidence": "The Curragh claims 1858, but formal club records are later; Royal Belfast (1881) also claims to be Ireland's oldest club, the difference resting on what counts as a formally constituted club.",
+   "sources": [
+    {
+     "title": "Royal Curragh Golf Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Curragh_Golf_Club",
+     "locator": "lead",
+     "quote": "Dating from 1858, it is the oldest golf club in Ireland."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Royal North Devon Golf Club",
+   "qid": "Q7374596",
+   "wikipedia_title": "Royal North Devon Golf Club",
+   "lat": 51.046,
+   "lon": -4.226,
+   "nation": "England",
+   "location": "Northam Burrows, Westward Ho!, Devon",
+   "age_text": "founded 1864",
+   "year": 1864,
+   "claim": "the oldest golf course in England",
+   "evidence": "Founded in 1864 as the North Devon and West of England Golf Club with a course laid out by Old Tom Morris; the oldest golf course in England still played over its original land (Royal Blackheath is an older club, but its original heath course is no longer used).",
+   "sources": [
+    {
+     "title": "Royal North Devon Golf Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_North_Devon_Golf_Club",
+     "locator": "lead",
+     "quote": "Founded in 1864 as the North Devon and West of England Golf Club, RND operates the oldest golf course in England."
+    },
+    {
+     "title": "History",
+     "author": "Royal North Devon Golf Club",
+     "kind": "primary",
+     "url": "https://www.royalnorthdevongolfclub.co.uk/history",
+     "locator": "page text",
+     "quote": "Founded in 1864, it is the oldest golf course in the country and is regarded as the St Andrews of the South."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Royal Jersey Golf Club",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 49.1892,
+   "lon": -2.036,
+   "nation": "Jersey",
+   "location": "Grouville Common, Jersey",
+   "age_text": "formed 1878; royal warrant 1879",
+   "year": 1878,
+   "claim": "the oldest golf club in the Channel Islands",
+   "evidence": "Formed in 1878 on Grouville Common and granted its royal title in 1879; the first 18-hole layout is known from 1883. Royal Guernsey followed in 1890. Harry Vardon learned the game here.",
+   "sources": [
+    {
+     "title": "Our Heritage",
+     "author": "Royal Jersey Golf Club",
+     "kind": "primary",
+     "url": "https://www.royaljersey.com/the-club/our-heritage/",
+     "locator": "page text",
+     "quote": "The Club was formed in 1878 when a small number of residents decided to lay out a small course on the land that is known as Grouville Common."
+    },
+    {
+     "title": "Grouville",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grouville",
+     "locator": "Sport",
+     "quote": "The Royal Jersey Golf Club is located on Grouville Common."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Royal Belfast Golf Club",
+   "qid": "Q55313532",
+   "wikipedia_title": "Royal Belfast Golf Club",
+   "lat": 54.6616,
+   "lon": -5.7841,
+   "nation": "Northern Ireland",
+   "location": "Craigavad, County Down (founded at Kinnegar, Holywood)",
+   "age_text": "founded 1881",
+   "year": 1881,
+   "claim": "the oldest golf club in Ireland",
+   "evidence": "Founded at Kinnegar, Holywood in 1881 and claims to be Ireland's oldest club; the Curragh claims golf from 1858. Royal Belfast is in any case the oldest in Northern Ireland, though it moved to Craigavad later.",
+   "sources": [
+    {
+     "title": "Royal Belfast Golf Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Belfast_Golf_Club",
+     "locator": "lead",
+     "quote": "Founded in 1881 the club claims to be the oldest such club in Ireland."
+    },
+    {
+     "title": "Royal Belfast Golf Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Belfast_Golf_Club",
+     "locator": "lead",
+     "quote": "The course was founded at lands at Kinnegar, Holywood in 1881 and granted a Royal Charter by the Prince of Wales"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest golf course or club",
+   "name": "Tenby Golf Club",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 51.6622,
+   "lon": -4.7146,
+   "nation": "Wales",
+   "location": "The Burrows, Tenby, Pembrokeshire",
+   "age_text": "formed 1888; golf played from at least 1875",
+   "year": 1888,
+   "claim": "the oldest golf club in Wales",
+   "evidence": "Several Welsh clubs claim to be the oldest, but Tenby (formed 1888, with play from at least 1875) is generally accepted as the first; a short course at Pontnewydd (1875) was earlier.",
+   "sources": [
+    {
+     "title": "Golf in Wales",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golf_in_Wales",
+     "locator": "History",
+     "quote": "it is generally accepted that Tenby, formed in 1888, was the first, with evidence that the game was played there from at least 1875"
+    },
+    {
+     "title": "Golf in Wales",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golf_in_Wales",
+     "locator": "History",
+     "quote": "The earliest course was constructed in Pontnewydd in Monmouthshire in 1875, but this was a short course."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Kiplingcotes Derby course",
+   "qid": "Q6414648",
+   "wikipedia_title": "Kiplingcotes Derby",
+   "lat": 53.919,
+   "lon": -0.64,
+   "nation": "England",
+   "location": "Etton to Londesborough Wold, East Riding of Yorkshire",
+   "age_text": "reputedly first run 1519; rules of 1618; same course since 1664",
+   "year": 1519,
+   "claim": "the oldest horse race in England (or the world)",
+   "evidence": "The 1519 start is tradition, not record: the rules date from 1618 and the course is documented from 1664. It is a point-to-point over farm tracks rather than a racecourse, but it has the oldest claimed continuous use of a racing course in England.",
+   "sources": [
+    {
+     "title": "Kiplingcotes Derby",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiplingcotes_Derby",
+     "locator": "lead",
+     "quote": "It reputedly began in 1519 and takes place on the third Thursday in March"
+    },
+    {
+     "title": "Kiplingcotes Derby",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiplingcotes_Derby",
+     "locator": "History",
+     "quote": "The race is deemed to be the oldest horse-race held in England, having started in 1519 and using the same course since 1664."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Chester Racecourse (the Roodee)",
+   "qid": "Q5093694",
+   "wikipedia_title": "Chester Racecourse",
+   "lat": 53.1864,
+   "lon": -2.8997,
+   "nation": "England",
+   "location": "The Roodee, Chester",
+   "age_text": "first recorded race 1539 (some sources 1511/1512)",
+   "year": 1539,
+   "claim": "the oldest racecourse still in operation",
+   "evidence": "Guinness verified Chester as the oldest horse racecourse in operation (first recorded race 1539, replacing the banned Shrovetide football). Earlier dates of 1511/1512 are sometimes given; the Kiplingcotes race claims 1519 but is not a racecourse.",
+   "sources": [
+    {
+     "title": "Oldest horse racecourse in operation",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/567844-oldest-horse-racecourse-in-operation",
+     "locator": "page text",
+     "quote": "The oldest horse racecourse in operation is Chester Racecourse (UK), at 480 years old, located in Chester, UK, as verified on 17 April 2019."
+    },
+    {
+     "title": "Chester Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chester_Racecourse",
+     "locator": "History",
+     "quote": "with 1539 cited as the year racing began, although some sources give a date of 1512 for the first races in Chester"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Doncaster Racecourse (Town Moor)",
+   "qid": "Q5295515",
+   "wikipedia_title": "Doncaster Racecourse",
+   "lat": 53.5203,
+   "lon": -1.0967,
+   "nation": "England",
+   "location": "Town Moor, Doncaster",
+   "age_text": "racing recorded in the 16th century; course on a 1595 map; laid out 1614",
+   "year": 1595,
+   "claim": "one of the oldest racing centres in Britain; home of the St Leger (1776), the oldest classic",
+   "evidence": "Racing at Doncaster is recorded in the 16th century and a 1595 map shows a racecourse on Town Moor; the corporation formally marked out a course in 1614.",
+   "sources": [
+    {
+     "title": "Doncaster Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Doncaster_Racecourse",
+     "locator": "History",
+     "quote": "A map of 1595 already shows a racecourse at Town Moor."
+    },
+    {
+     "title": "Doncaster Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Doncaster_Racecourse",
+     "locator": "History",
+     "quote": "Doncaster is one of the oldest (and the largest in physical capacity) established centres for horse racing in Britain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Lanark Racecourse",
+   "qid": "Q15241444",
+   "wikipedia_title": "Lanark Racecourse",
+   "lat": 55.6648,
+   "lon": -3.7465,
+   "nation": "Scotland",
+   "location": "Lanark, South Lanarkshire (closed 1977)",
+   "age_text": "reputedly founded by William the Lion (12th century); Silver Bell c.1617",
+   "year": 1617,
+   "claim": "Britain's oldest horse race (the Lanark Silver Bell), founded by King William the Lion",
+   "evidence": "The 12th-century foundation is tradition only; the surviving Silver Bell dates from about 1617. The course closed in October 1977 and the race is now run at Hamilton Park.",
+   "sources": [
+    {
+     "title": "Lanark Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lanark_Racecourse",
+     "locator": "lead",
+     "quote": "It was reputedly founded by King William the Lion of Scotland (1165-1214)."
+    },
+    {
+     "title": "Lanark Silver Bell",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lanark_Silver_Bell",
+     "locator": "History",
+     "quote": "The Compendium of Scottish Silver states the date of the cup to be circa 1617"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Newmarket Racecourse",
+   "qid": "Q16998889",
+   "wikipedia_title": "Newmarket Racecourse",
+   "lat": 52.2375,
+   "lon": 0.3739,
+   "nation": "England",
+   "location": "Rowley Mile and July Course, Newmarket, Suffolk",
+   "age_text": "first recorded race 1622; racecourse founded 1636",
+   "year": 1622,
+   "claim": "the headquarters of British horse racing",
+   "evidence": "The first recorded race at Newmarket was a match in 1622 and the racecourse was founded in 1636; Charles II made it the centre of racing from the 1660s.",
+   "sources": [
+    {
+     "title": "Newmarket Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newmarket_Racecourse",
+     "locator": "History",
+     "quote": "The first recorded race was a match for £100 between horses owned by Lord Salisbury and the Marquess of Buckingham in 1622."
+    },
+    {
+     "title": "Newmarket Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newmarket_Racecourse",
+     "locator": "History",
+     "quote": "Around 1665, Charles II inaugurated the Newmarket Town Plate and in 1671 became the first and only reigning monarch to ride a winner"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Manx Derby course, Langness",
+   "qid": "Q6753272",
+   "wikipedia_title": "Manx Derby",
+   "lat": 54.0694,
+   "lon": -4.6164,
+   "nation": "Isle of Man",
+   "location": "Langness peninsula, Derbyhaven (now Castletown Golf Links)",
+   "age_text": "instituted by the 7th Earl of Derby c.1627",
+   "year": 1627,
+   "claim": "the original Derby, run before the Epsom Derby",
+   "evidence": "The 7th Earl of Derby, Lord of Mann from 1627, instituted races on Langness with a cup as prize; records survive from 1669 and 1687-88. The connection with the Epsom Derby (1780, named after the 12th Earl) is only nominal, and the course is now a golf links.",
+   "sources": [
+    {
+     "title": "Manx Derby",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manx_Derby",
+     "locator": "lead",
+     "quote": "succeeded to the royalty of Mann in 1627 and instituted races in which a cup was to be won"
+    },
+    {
+     "title": "Manx Society vol. 21, p.183",
+     "author": "Manx Notebook (Frances Coakley)",
+     "kind": "secondary",
+     "url": "http://www.isle-of-man.com/manxnotebook/manxsoc/msvol21/p183.htm",
+     "locator": "page text",
+     "quote": "instituted races on the island on a piece of land extending rather more than a mile across the peninsula of Langness"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Down Royal Racecourse",
+   "qid": "Q5302849",
+   "wikipedia_title": "Down Royal Racecourse",
+   "lat": 54.491,
+   "lon": -6.12,
+   "nation": "Northern Ireland",
+   "location": "The Maze, near Lisburn, County Down",
+   "age_text": "Royal Charter 1685; present course early 18th century",
+   "year": 1685,
+   "claim": "the oldest racing body in Ireland, chartered by James II in 1685",
+   "evidence": "The Down Royal Corporation of Horse Breeders was chartered in 1685, but racing on the present Maze course dates only from the early 18th century; the 1685 meeting may have been at Downpatrick.",
+   "sources": [
+    {
+     "title": "Down Royal Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Down_Royal_Racecourse",
+     "locator": "lead",
+     "quote": "the history of Down Royal goes further back to 1685 when King James II issued a Royal Charter and formed the Down Royal Corporation of Horse Breeders"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "Ascot Racecourse",
+   "qid": "Q723336",
+   "wikipedia_title": "Ascot Racecourse",
+   "lat": 51.4161,
+   "lon": -0.6769,
+   "nation": "England",
+   "location": "Ascot, Berkshire",
+   "age_text": "first meeting 11 August 1711",
+   "year": 1711,
+   "claim": "founded by Queen Anne in 1711",
+   "evidence": "Queen Anne founded the course in 1711; the first meeting was held on 11 August 1711.",
+   "sources": [
+    {
+     "title": "Ascot Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ascot_Racecourse",
+     "locator": "History",
+     "quote": "That first meeting was held on 11 August 1711 (22 August New Style)"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "The Curragh Racecourse",
+   "qid": "Q15212201",
+   "wikipedia_title": "Curragh Racecourse",
+   "lat": 53.1653,
+   "lon": -6.8453,
+   "nation": "Republic of Ireland",
+   "location": "The Curragh, County Kildare",
+   "age_text": "first recorded race 1727",
+   "year": 1727,
+   "claim": "the oldest racecourse in Ireland",
+   "evidence": "The first recorded race on the plain was in 1727, but it was used for racing before then.",
+   "sources": [
+    {
+     "title": "Curragh Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Curragh_Racecourse",
+     "locator": "History",
+     "quote": "The first recorded race on the plain took place in 1727, but it was used for races before then."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest racecourse",
+   "name": "York Racecourse (Knavesmire)",
+   "qid": "Q8055519",
+   "wikipedia_title": "York Racecourse",
+   "lat": 53.9386,
+   "lon": -1.0975,
+   "nation": "England",
+   "location": "Knavesmire, York",
+   "age_text": "racing on the present site from 1731",
+   "year": 1731,
+   "claim": "racing at York since Roman times",
+   "evidence": "Racing on the Knavesmire began about 1731; claims that York racing goes back to the Roman era refer to the city, not this course.",
+   "sources": [
+    {
+     "title": "York Racecourse",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Racecourse",
+     "locator": "lead",
+     "quote": "Racing is believed to have begun at the current site in 1731, although the history of racing in York goes back to the Roman era."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Bramall Lane",
+   "qid": "Q897533",
+   "wikipedia_title": "Bramall Lane",
+   "lat": 53.3703,
+   "lon": -1.4707,
+   "nation": "England",
+   "location": "Sheffield",
+   "age_text": "opened 30 April 1855 (cricket); football from 1862",
+   "year": 1855,
+   "claim": "the oldest major stadium in the world still hosting professional football",
+   "evidence": "Opened as a cricket ground in 1855 and used for football since 1862; Sheffield United since 1889. Sandygate is an older football ground, so the claim holds only for major/professional stadiums.",
+   "sources": [
+    {
+     "title": "Bramall Lane",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramall_Lane",
+     "locator": "lead",
+     "quote": "It is the oldest major stadium in the world still hosting professional association football matches."
+    },
+    {
+     "title": "Bramall Lane",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramall_Lane",
+     "locator": "History",
+     "quote": "Bramall Lane opened on 30 April 1855 as a cricket ground"
+    },
+    {
+     "title": "Oldest Grounds",
+     "author": "To The 92",
+     "kind": "secondary",
+     "url": "https://tothe92.co.uk/links/oldestgrounds.html",
+     "locator": "page text",
+     "quote": "Football was first played here in 1862 and has been in constant use ever since, hosting the very first floodlit game along the way in 1878."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Sandygate",
+   "qid": "Q3948352",
+   "wikipedia_title": "Sandygate (stadium)",
+   "lat": 53.3764,
+   "lon": -1.5312,
+   "nation": "England",
+   "location": "Sandygate Road, Crosspool, Sheffield",
+   "age_text": "cricket ground from 1804; football since 1860",
+   "year": 1860,
+   "claim": "the oldest football ground in the world",
+   "evidence": "Recognised by Guinness as the oldest football ground; Hallam FC have played there since 1860 and the first inter-club match (Hallam v Sheffield) was played there on 26 December 1860.",
+   "sources": [
+    {
+     "title": "Oldest football ground",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://guinnessworldrecords.com/world-records/75073-oldest-football-ground",
+     "locator": "page text",
+     "quote": "The oldest football ground is Sandygate, owned by Hallam FC in Sheffield."
+    },
+    {
+     "title": "Hallam FC football ground",
+     "author": "South Yorkshire Local Heritage List",
+     "kind": "listing",
+     "url": "https://local-heritage-list.org.uk/south-yorkshire/asset/5544",
+     "locator": "page text",
+     "quote": "Recognised officially by the Guinness Book of records as the oldest football ground in the world"
+    },
+    {
+     "title": "Sandygate (stadium)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sandygate_(stadium)",
+     "locator": "lead",
+     "quote": "First opened in 1804, Hallam F.C. have played at the ground since 1860."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Hamilton Crescent",
+   "qid": "Q1573475",
+   "wikipedia_title": "Hamilton Crescent",
+   "lat": 55.8725,
+   "lon": -4.3089,
+   "nation": "Scotland",
+   "location": "Partick, Glasgow",
+   "age_text": "cricket since at least 1862; first international football match 30 November 1872",
+   "year": 1862,
+   "claim": "venue of the first international football match",
+   "evidence": "West of Scotland Cricket Club's ground, used for cricket since at least 1862; it hosted Scotland v England, the first official international football match, on 30 November 1872, and is still a cricket ground.",
+   "sources": [
+    {
+     "title": "Hamilton Crescent",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamilton_Crescent",
+     "locator": "History",
+     "quote": "Hamilton Crescent hosted the first international football match, between Scotland and England, played on 30 November 1872"
+    },
+    {
+     "title": "Hamilton Crescent",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamilton_Crescent",
+     "locator": "History",
+     "quote": "Cricket has been played at Hamilton Crescent since at least 1862, when it hosted a Gentlemen v Players fixture."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Raeburn Place",
+   "qid": "Q3417185",
+   "wikipedia_title": "Raeburn Place",
+   "lat": 55.9606,
+   "lon": -3.2161,
+   "nation": "Scotland",
+   "location": "Stockbridge, Edinburgh",
+   "age_text": "first rugby international 27 March 1871",
+   "year": 1871,
+   "claim": "venue of the first international rugby match",
+   "evidence": "Home of Edinburgh Academicals; the first international rugby match, Scotland v England, was played here on 27 March 1871.",
+   "sources": [
+    {
+     "title": "Raeburn Place",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Raeburn_Place",
+     "locator": "History",
+     "quote": "game was played on the playing fields at Raeburn Place on 27 March 1871 between England and Scotland"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Lansdowne Road (Aviva Stadium)",
+   "qid": "Q601162",
+   "wikipedia_title": "Lansdowne Road",
+   "lat": 53.335,
+   "lon": -6.2292,
+   "nation": "Republic of Ireland",
+   "location": "Ballsbridge, Dublin",
+   "age_text": "opened 1872; first rugby international 11 March 1878; rebuilt 2007-2010",
+   "year": 1872,
+   "claim": "the world's oldest rugby union Test venue",
+   "evidence": "Founded by Henry Dunlop in 1872 and host of Ireland v England in 1878, making the site the oldest rugby Test venue; but the old stadium was demolished in 2007 and replaced by the Aviva Stadium (2010), so no historic stadium survives.",
+   "sources": [
+    {
+     "title": "Lansdowne Road",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lansdowne_Road",
+     "locator": "History",
+     "quote": "Lansdowne Road hosted its first international rugby fixture, against England, making it the world's oldest rugby union Test venue"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Deepdale",
+   "qid": "Q1141958",
+   "wikipedia_title": "Deepdale",
+   "lat": 53.7722,
+   "lon": -2.6881,
+   "nation": "England",
+   "location": "Preston, Lancashire",
+   "age_text": "leased 21 January 1875; football from 5 October 1878",
+   "year": 1875,
+   "claim": "the oldest football stadium in continuous use by a league club",
+   "evidence": "In use since 1875 and for football since 1878, it is one of the oldest continuously used football stadiums, but the club's claim that it is the oldest is contested (Bramall Lane, Sandygate and the Racecourse Ground are older football venues).",
+   "sources": [
+    {
+     "title": "Deepdale",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Deepdale",
+     "locator": "lead",
+     "quote": "Deepdale is recognised as being one of the oldest continuously used football stadiums in the world, although the club's claim that it is the oldest is contested"
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Racecourse Ground, Wrexham",
+   "qid": "Q1202579",
+   "wikipedia_title": "Racecourse Ground",
+   "lat": 53.0519,
+   "lon": -3.0036,
+   "nation": "Wales",
+   "location": "Mold Road, Wrexham",
+   "age_text": "opened 1807 (racing); football from 1864; first international 5 March 1877",
+   "year": 1877,
+   "claim": "the oldest international football stadium still hosting internationals",
+   "evidence": "Guinness recognises the Racecourse as the oldest international football ground still in use; Wales first played Scotland there on 5 March 1877, and Wrexham AFC have played there since 1864.",
+   "sources": [
+    {
+     "title": "Oldest international football ground",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/oldest-international-football-ground",
+     "locator": "page text",
+     "quote": "The oldest international football ground still in use is the Racecourse Ground in Wrexham, Wales, UK."
+    },
+    {
+     "title": "Racecourse Ground",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Racecourse_Ground",
+     "locator": "History",
+     "quote": "Wrexham Football Club have played at the Racecourse Ground since being formed in the local Turf Hotel public house in October 1864."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest stadium or sports ground",
+   "name": "Solitude",
+   "qid": "Q1246579",
+   "wikipedia_title": "Solitude (football ground)",
+   "lat": 54.6195,
+   "lon": -5.9473,
+   "nation": "Northern Ireland",
+   "location": "Cliftonville, north Belfast",
+   "age_text": "opened 20 August 1890",
+   "year": 1890,
+   "claim": "the oldest football stadium in Ireland",
+   "evidence": "Built in 1890 for Cliftonville, Ireland's oldest football club, and in use ever since.",
+   "sources": [
+    {
+     "title": "Solitude (football ground)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Solitude_(football_ground)",
+     "locator": "lead",
+     "quote": "Home ground of Ireland's oldest football club, Cliftonville, it is the oldest football stadium in Ireland."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Southampton Old Bowling Green",
+   "qid": "Q7569145",
+   "wikipedia_title": "Southampton Old Bowling Green",
+   "lat": 50.8969,
+   "lon": -1.402,
+   "nation": "England",
+   "location": "Lower Canal Walk, Southampton (beside God's House Tower)",
+   "age_text": "first used for bowls 1299 (tradition)",
+   "year": 1299,
+   "claim": "the oldest surviving bowling green in the world",
+   "evidence": "The green beside God's House Hospital is said to have been first used for bowls in 1299; the date comes from the club's own tradition, and the present club is believed to date only from the 17th century (its Knighthood competition).",
+   "sources": [
+    {
+     "title": "Southampton Old Bowling Green",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Southampton_Old_Bowling_Green",
+     "locator": "lead",
+     "quote": "claims to be the world's oldest surviving bowling green"
+    },
+    {
+     "title": "Southampton Old Bowling Green",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Southampton_Old_Bowling_Green",
+     "locator": "History",
+     "quote": "The club that plays there now is believed to have been established in the 17th century"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Royal Tennis Court, Falkland Palace",
+   "qid": "Q5431973",
+   "wikipedia_title": "Falkland Palace Royal Tennis Club",
+   "lat": 56.2555,
+   "lon": -3.2057,
+   "nation": "Scotland",
+   "location": "Falkland Palace, Fife",
+   "age_text": "built April 1539 - late 1541 for James V",
+   "year": 1539,
+   "claim": "the oldest real tennis court in the world",
+   "evidence": "Guinness and Historic Environment Scotland treat it as the earliest surviving real tennis court; it is roofless, of the early jeu quarré type, and was not used continuously (restored 1895). An HES blog nonetheless calls it the second-oldest of 48 active courts.",
+   "sources": [
+    {
+     "title": "Oldest real tennis court",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/113969-oldest-real-tennis-court",
+     "locator": "page text",
+     "quote": "Originally constructed for James V of Scotland between April 1539 and late 1541"
+    },
+    {
+     "title": "Falkland Palace, Royal Tennis Court (LB8800)",
+     "author": "Historic Environment Scotland",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB8800",
+     "locator": "page text",
+     "quote": "The Royal Tennis Court at Falkland Palace is understood to be the earliest surviving real tennis court in the world"
+    },
+    {
+     "title": "Playing with history",
+     "author": "Historic Environment Scotland",
+     "kind": "secondary",
+     "url": "https://blog.historicenvironment.scot/2019/09/real-tennis",
+     "locator": "page text",
+     "quote": "the second oldest, and the oldest in the UK."
+    },
+    {
+     "title": "Falkland Palace Royal Tennis Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Falkland_Palace_Royal_Tennis_Club",
+     "locator": "lead",
+     "quote": "It is the oldest tennis court in use today, though not continuously used since 1541."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Royal Tennis Court, Hampton Court Palace",
+   "qid": "Q7374904",
+   "wikipedia_title": "Royal Tennis Court, Hampton Court",
+   "lat": 51.4044,
+   "lon": -0.3362,
+   "nation": "England",
+   "location": "Hampton Court Palace, East Molesey",
+   "age_text": "first court 1526-29 (Wolsey); present court built 1625 for Charles I",
+   "year": 1625,
+   "claim": "the oldest real tennis court in the world still in use, played on by Henry VIII",
+   "evidence": "Wolsey's court of 1526-29 has been rebuilt: the present court dates from 1625 (refitted after 1660), so Falkland Palace (1539-41) is the older surviving court building. Hampton Court is the oldest court in England still in play.",
+   "sources": [
+    {
+     "title": "Royal Tennis Court, Hampton Court",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Tennis_Court,_Hampton_Court",
+     "locator": "lead",
+     "quote": "It was built for Cardinal Wolsey between 1526 and 1529."
+    },
+    {
+     "title": "The Royal Tennis Court",
+     "author": "Royal Tennis Court Club",
+     "kind": "primary",
+     "url": "https://royaltenniscourt.com/",
+     "locator": "page text",
+     "quote": "There has been a tennis court on this site since 1625, when this one was built for Charles I."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Antient Scorton Silver Arrow",
+   "qid": "Q7435437",
+   "wikipedia_title": "Scorton Arrow",
+   "lat": 54.3961,
+   "lon": -1.6155,
+   "nation": "England",
+   "location": "Scorton, North Yorkshire (venue moves within Yorkshire)",
+   "age_text": "first recorded shoot 14 May 1673",
+   "year": 1673,
+   "claim": "the oldest sporting event / sports trophy still competed for",
+   "evidence": "Guinness lists the Silver Arrow as the oldest sports trophy still competed for, first shot for at Scorton on 14 May 1673; the venue changes year to year, so it is an event rather than a fixed ground.",
+   "sources": [
+    {
+     "title": "Oldest sports trophy",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/411356-oldest-sports-trophy",
+     "locator": "page text",
+     "quote": "The first recorded tournament was on 14 May 1673 and was won by Henry Calavery M.P. in a field of 22 archers."
+    },
+    {
+     "title": "Scorton Arrow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scorton_Arrow",
+     "locator": "lead",
+     "quote": "is an archery tournament that was incepted on Sunday 14 May 1673 in the village of Scorton in Yorkshire, England"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Doggett's Coat and Badge course",
+   "qid": "Q5288350",
+   "wikipedia_title": "Doggett's Coat and Badge",
+   "lat": 51.5079,
+   "lon": -0.0877,
+   "nation": "England",
+   "location": "River Thames, London Bridge to Chelsea",
+   "age_text": "first raced 1 August 1715",
+   "year": 1715,
+   "claim": "the oldest continuous rowing race in the world",
+   "evidence": "Founded by the actor Thomas Doggett for Thames apprentice watermen in 1715 and run every year since, organised by the Fishmongers' Company from 1722; the winner of the first race is not recorded.",
+   "sources": [
+    {
+     "title": "Doggett's Coat and Badge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Doggett's_Coat_and_Badge",
+     "locator": "lead",
+     "quote": "Doggett's Coat and Badge is the prize and name for the oldest continuous rowing race in the world."
+    },
+    {
+     "title": "Doggett's Coat and Badge Race",
+     "author": "Where Thames Smooth Waters Glide (thames.me.uk)",
+     "kind": "secondary",
+     "url": "https://thames.me.uk/s00049L.htm",
+     "locator": "page text",
+     "quote": "from the Old Swan at London Bridge to the White Swan at Chelsea"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Cleveland Pools",
+   "qid": "Q5132207",
+   "wikipedia_title": "Cleveland Pools",
+   "lat": 51.3908,
+   "lon": -2.3473,
+   "nation": "England",
+   "location": "Hampton Row, Bath",
+   "age_text": "built c.1815",
+   "year": 1815,
+   "claim": "the oldest public outdoor swimming pool (lido) in the UK",
+   "evidence": "A Georgian semi-circular river-fed lido designed by John Pinch the Elder in about 1815; believed to be the oldest public open-air pool in the UK. It closed to swimmers in 1984 and reopened after restoration in 2023, so it has not been in continuous use.",
+   "sources": [
+    {
+     "title": "Cleveland Pools",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cleveland_Pools",
+     "locator": "lead",
+     "quote": "It is believed to be the oldest public outdoor swimming pool in the UK."
+    },
+    {
+     "title": "Cleveland Pools",
+     "author": "Bath Festivals",
+     "kind": "secondary",
+     "url": "https://bathfestivals.org.uk/the-bath-festival/venues/cleveland-pools/",
+     "locator": "page text",
+     "quote": "Built in 1815, the site first opened as a river fed pool"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Henley Royal Regatta",
+   "qid": "Q1543109",
+   "wikipedia_title": "Henley Royal Regatta",
+   "lat": 51.5373,
+   "lon": -0.8997,
+   "nation": "England",
+   "location": "Henley Reach, River Thames, Henley-on-Thames",
+   "age_text": "established 26 March 1839",
+   "year": 1839,
+   "claim": "the oldest and most famous rowing regatta",
+   "evidence": "First held in 1839 and annually since, except during the two World Wars and the 2020 pandemic; the Grand Challenge Cup has been awarded from the start.",
+   "sources": [
+    {
+     "title": "History",
+     "author": "Henley Royal Regatta",
+     "kind": "primary",
+     "url": "https://www.hrr.co.uk/history",
+     "locator": "page text",
+     "quote": "Henley Regatta was first held in 1839 and has been held annually ever since"
+    },
+    {
+     "title": "Henley Royal Regatta",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Henley_Royal_Regatta",
+     "locator": "lead",
+     "quote": "The most prestigious event at the regatta is the Grand Challenge Cup for men's Eights, which has been awarded since the regatta was first staged."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Pells Pool",
+   "qid": "Q7161598",
+   "wikipedia_title": "Pells Pool",
+   "lat": 50.8775,
+   "lon": 0.0097,
+   "nation": "England",
+   "location": "Lewes, East Sussex",
+   "age_text": "established 1860, opened 1861",
+   "year": 1860,
+   "claim": "the oldest freshwater outdoor public pool in the UK still in use",
+   "evidence": "Established by public subscription in 1860 and opened in 1861; the oldest documented spring-fed public pool still running (Cleveland Pools is older but was closed for decades).",
+   "sources": [
+    {
+     "title": "Pells Pool",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pells_Pool",
+     "locator": "History",
+     "quote": "The Pells outdoor swimming baths in Lewes is the oldest documented fresh or spring water public pool in the United Kingdom that is still running."
+    },
+    {
+     "title": "About Pells Pool",
+     "author": "Pells Pool Community Association",
+     "kind": "primary",
+     "url": "https://pellspool.org.uk/about",
+     "locator": "page text",
+     "quote": "Pells Pool is the oldest freshwater outdoor public swimming pool in the UK."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest venue for other sports",
+   "name": "Herne Hill Velodrome",
+   "qid": "Q2126703",
+   "wikipedia_title": "Herne Hill Velodrome",
+   "lat": 51.4511,
+   "lon": -0.0914,
+   "nation": "England",
+   "location": "Burbage Road, Herne Hill, London",
+   "age_text": "built 1890-91; first race 16 April 1891",
+   "year": 1891,
+   "claim": "one of the oldest cycling tracks in the world",
+   "evidence": "Built on Dulwich Estate land in 1890-91 and opened in April 1891; it hosted the 1948 Olympic track cycling and is the last surviving venue of the 1948 Games still used for its original sport.",
+   "sources": [
+    {
+     "title": "Herne Hill Velodrome",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Herne_Hill_Velodrome",
+     "locator": "lead",
+     "quote": "It is one of the oldest cycling tracks in the world, having been built in 1891."
+    },
+    {
+     "title": "The history of HHV",
+     "author": "Friends of Herne Hill Velodrome",
+     "kind": "primary",
+     "url": "https://www.hernehillvelodrome.com/history",
+     "locator": "page text",
+     "quote": "The first race is held, contested by members of the London County Cycling and Athletics Club."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Ancient Society of Kilwinning Archers",
+   "qid": null,
+   "wikipedia_title": null,
+   "lat": 55.6535,
+   "lon": -4.6981,
+   "nation": "Scotland",
+   "location": "Kilwinning Abbey, North Ayrshire",
+   "age_text": "traditionally 1483; records from 1688",
+   "year": 1483,
+   "claim": "the oldest archery society in the world",
+   "evidence": "Guinness names it the oldest archery body, with a first recorded papingo shoot in 1483, but the society's own records survive only from 1688 and the earlier date rests on a reference in its early minutes. The papingo is still shot from the abbey tower.",
+   "sources": [
+    {
+     "title": "Oldest Archery Organisation",
+     "author": "Guinness World Records",
+     "kind": "reference",
+     "url": "https://www.guinnessworldrecords.com/world-records/64831-oldest-archery-organisation",
+     "locator": "page text",
+     "quote": "The oldest archery body in the world is the Ancient Society of Kilwinning Archers, in Scotland."
+    },
+    {
+     "title": "Kilwinning",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilwinning",
+     "locator": "Archery",
+     "quote": "The Ancient Society of Kilwinning Archers is believed to date back to 1483 and while records are only available from 1688"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Royal Company of Archers",
+   "qid": "Q2171010",
+   "wikipedia_title": "Royal Company of Archers",
+   "lat": 55.9422,
+   "lon": -3.1846,
+   "nation": "Scotland",
+   "location": "Archers' Hall, Meadow Lane, Edinburgh",
+   "age_text": "society formed 1676; royal charter 1713",
+   "year": 1676,
+   "claim": "the Sovereign's bodyguard in Scotland and one of the oldest archery clubs",
+   "evidence": "Formed as a private archery society in 1676 and incorporated by Queen Anne's charter in 1713; it still shoots for prizes such as the Musselburgh Arrow.",
+   "sources": [
+    {
+     "title": "Royal Company of Archers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Company_of_Archers",
+     "locator": "History",
+     "quote": "A society for encouraging and exercising archery had already been formed in 1676, as a private archery club."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Kilsyth Curling Club",
+   "qid": "Q16852362",
+   "wikipedia_title": "Kilsyth Curling Club",
+   "lat": 55.9765,
+   "lon": -4.056,
+   "nation": "Scotland",
+   "location": "Kilsyth, North Lanarkshire",
+   "age_text": "founded 1716",
+   "year": 1716,
+   "claim": "the oldest curling club in the world",
+   "evidence": "Kilsyth claims 1716, but other sources give the title to Kinross Curling Club (1668) or a Muthill club (1739); curling itself was played in Kilsyth from at least the 16th century.",
+   "sources": [
+    {
+     "title": "Kilsyth Curling Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilsyth_Curling_Club",
+     "locator": "lead",
+     "quote": "claims to be the oldest curling club in the world, being established in 1716"
+    },
+    {
+     "title": "Kilsyth Curling Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilsyth_Curling_Club",
+     "locator": "History",
+     "quote": "This claim is disputed in other sources, which give either the Kinross Curling Club, established in 1668"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Royal Cork Yacht Club",
+   "qid": "Q7374064",
+   "wikipedia_title": "Royal Cork Yacht Club",
+   "lat": 51.8044,
+   "lon": -8.3038,
+   "nation": "Republic of Ireland",
+   "location": "Crosshaven, County Cork",
+   "age_text": "Water Club of the Harbour of Cork founded 1720",
+   "year": 1720,
+   "claim": "the oldest yacht club in the world",
+   "evidence": "Founded as the Water Club of the Harbour of Cork in 1720 by William O'Brien, 4th Earl of Inchiquin, and five friends. It lapsed after 1765 and was re-formed in 1802, and the Neva Yacht Club (St Petersburg, 1718) is a rival claimant, so the title depends on continuity.",
+   "sources": [
+    {
+     "title": "Royal Cork Yacht Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Cork_Yacht_Club",
+     "locator": "lead",
+     "quote": "it is a claimant to the title of the world's oldest yacht club, although this is challenged by the Neva Yacht Club in Russia"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "The Jockey Club",
+   "qid": "Q93856",
+   "wikipedia_title": "Jockey Club",
+   "lat": 52.2431,
+   "lon": 0.4049,
+   "nation": "England",
+   "location": "Jockey Club Rooms, High Street, Newmarket",
+   "age_text": "first mentioned 1729 (traditional foundation date 1750)",
+   "year": 1729,
+   "claim": "founded in 1750, the oldest governing body of horse racing",
+   "evidence": "The club has long used 1750 as its foundation date, but a notice of 1729 already mentions 'The Jockey Club', so it is at least two decades older; its exact origin is uncertain.",
+   "sources": [
+    {
+     "title": "Jockey Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jockey_Club",
+     "locator": "History",
+     "quote": "The Jockey Club has long been thought to have been founded in 1750"
+    },
+    {
+     "title": "Jockey Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jockey_Club",
+     "locator": "History",
+     "quote": "while others suggest it may have existed in the first decade of the century."
+    }
+   ],
+   "verdict": "corrected"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Lough Ree Yacht Club",
+   "qid": "Q6686137",
+   "wikipedia_title": "Lough Ree Yacht Club",
+   "lat": 53.4505,
+   "lon": -7.9614,
+   "nation": "Republic of Ireland",
+   "location": "Ballyglass, Lough Ree, near Athlone",
+   "age_text": "founded 1770 as Athlone Yacht Club",
+   "year": 1770,
+   "claim": "the second-oldest yacht club in the world and oldest on an inland lake",
+   "evidence": "Founded in 1770 as the Athlone Yacht Club (renamed 1895); probably the oldest club based on an inland lake, though continuity before the 19th century is not well documented.",
+   "sources": [
+    {
+     "title": "Lough Ree Yacht Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lough_Ree_Yacht_Club",
+     "locator": "lead",
+     "quote": "Founded in 1770, albeit under the name Athlone Yacht Club, it claims to be one of the oldest yacht clubs in the world"
+    },
+    {
+     "title": "Lough Ree Yacht Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lough_Ree_Yacht_Club",
+     "locator": "lead",
+     "quote": "In any event it is probably the oldest club based on an inland lake."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Royal Toxophilite Society",
+   "qid": "Q138002126",
+   "wikipedia_title": "Royal Toxophilite Society",
+   "lat": 51.5445,
+   "lon": -0.659,
+   "nation": "England",
+   "location": "Dropmore Road, Burnham, Buckinghamshire (current ground)",
+   "age_text": "founded 3 April 1781",
+   "year": 1781,
+   "claim": "the oldest archery club in England",
+   "evidence": "Founded by Sir Ashton Lever in 1781 (royal from 1847). The Scorton Silver Arrow (1673) is an older English archery competition, but it is a contest rather than a standing club.",
+   "sources": [
+    {
+     "title": "Royal Toxophilite Society",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Toxophilite_Society",
+     "locator": "lead",
+     "quote": "The Royal Toxophilite Society is the oldest archery club in England."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Marylebone Cricket Club (MCC)",
+   "qid": "Q585149",
+   "wikipedia_title": "Marylebone Cricket Club",
+   "lat": 51.5296,
+   "lon": -0.173,
+   "nation": "England",
+   "location": "Lord's Cricket Ground, London",
+   "age_text": "founded 1787",
+   "year": 1787,
+   "claim": "the oldest and most influential cricket club; guardian of the Laws",
+   "evidence": "Founded in 1787 when Thomas Lord opened his first ground; it grew out of older gentlemen's clubs such as the London Cricket Club of the mid-1700s, and governed cricket from 1788 to 1909.",
+   "sources": [
+    {
+     "title": "Marylebone Cricket Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marylebone_Cricket_Club",
+     "locator": "lead",
+     "quote": "The Marylebone Cricket Club (MCC) is an English cricket club founded in 1787"
+    },
+    {
+     "title": "Marylebone Cricket Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marylebone_Cricket_Club",
+     "locator": "lead",
+     "quote": "which served as cricket's governing body from 1788 to 1909 and retains considerable global influence"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Leander Club",
+   "qid": "Q2351629",
+   "wikipedia_title": "Leander Club",
+   "lat": 51.5381,
+   "lon": -0.8992,
+   "nation": "England",
+   "location": "Remenham, Henley-on-Thames",
+   "age_text": "founded 1818 (or 1819)",
+   "year": 1818,
+   "claim": "one of the oldest rowing clubs in the world",
+   "evidence": "Founded on the Tideway in 1818 or 1819; only three older rowing clubs survive (Westminster School BC 1813, Brasenose and Jesus College Oxford by 1815), so it is the oldest non-school, non-college rowing club.",
+   "sources": [
+    {
+     "title": "Leander Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leander_Club",
+     "locator": "lead",
+     "quote": "Only three clubs older than Leander survive: Westminster School Boat Club, founded in 1813, and Brasenose College Boat Club and Jesus College Boat Club"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "Thames Hare and Hounds",
+   "qid": "Q7709892",
+   "wikipedia_title": "Thames Hare and Hounds",
+   "lat": 51.4383,
+   "lon": -0.233,
+   "nation": "England",
+   "location": "Wimbledon Common, London",
+   "age_text": "founded 1868",
+   "year": 1868,
+   "claim": "the oldest adult cross-country running club in the world",
+   "evidence": "Founded in 1868 by members of Thames Rowing Club; school 'hunts' (e.g. Shrewsbury, records from 1831) are older.",
+   "sources": [
+    {
+     "title": "Thames Hare and Hounds",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thames_Hare_and_Hounds",
+     "locator": "lead",
+     "quote": "Thames Hare and Hounds is the oldest adult cross-country running club in the world"
+    },
+    {
+     "title": "Thames Hare and Hounds",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thames_Hare_and_Hounds",
+     "locator": "History",
+     "quote": "the Royal Shrewsbury School Hunt has written records going back to 1831"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest sports club",
+   "name": "All England Lawn Tennis and Croquet Club",
+   "qid": "Q815369",
+   "wikipedia_title": "All England Lawn Tennis and Croquet Club",
+   "lat": 51.4342,
+   "lon": -0.2144,
+   "nation": "England",
+   "location": "Church Road, Wimbledon (originally Worple Road)",
+   "age_text": "founded 23 July 1868; first Championships 1877",
+   "year": 1868,
+   "claim": "home of the oldest tennis tournament in the world (Wimbledon, 1877)",
+   "evidence": "Founded in 1868 as the All England Croquet Club; lawn tennis was added in 1875 and the first Championships held in 1877. The Leamington Tennis Club (1874) is the first lawn tennis club.",
+   "sources": [
+    {
+     "title": "All England Lawn Tennis and Croquet Club",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/All_England_Lawn_Tennis_and_Croquet_Club",
+     "locator": "History",
+     "quote": "The first tennis gentlemen's championship in singles was held in July 1877"
+    },
+    {
+     "title": "History of tennis",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_tennis",
+     "locator": "Lawn tennis",
+     "quote": "founded the world's first tennis club, the Leamington Tennis Club"
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

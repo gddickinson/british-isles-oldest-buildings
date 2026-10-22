@@ -383,3 +383,20 @@
   corrected dates reach the catalogue on the next build.
 - Mistake caught and fixed: a wrong list-entry number (Pharos) and an over-generous "kept" verdict (Glenturret).
 
+
+## 2026-10-21 (night) — catalogue dates, R2b, R3 first pass
+- Catalogue dates follow the research file without a rebuild: `refresh_claims` also rewrites research-sourced dates
+  (71) with regional periods; reviewed date corrections for Brixworth (late 8th/early 9th c.), Castle of Old Wick
+  (14th c.), Royal Hospital Kilmainham (1679–87), and from list descriptions Chichester Cross (c. 1500), Eling Tide
+  Mill (mid C18), Ye Olde Fighting Cocks (C16), Bingley Arms (1738), Ye Olde Salutation Inn (C16), Merthyr Synagogue
+  (1872–5) — 75 corrections in all.
+- Build bug fixed: research examples whose Wikidata item is outside the structure classes but in the catalogue anyway
+  (curated list) became a second "research-only" record (Knap of Howar, Skara Brae, Hanse House, Merton College
+  Library, Chetham's, North Foreland, New Lanark, Jordans). `build.py` now annotates the existing record; the 8
+  duplicates were merged in the current database.
+- R2b: the 9 open claims settled (6 kept incl. Annals of Ulster U950.7 for the round towers, 3 corrected).
+  `verify_research.source_text`: replies under 200 characters ("no scraping") count as unreachable.
+- R3/R5: `bidb/listings.py` reads list descriptions (British Listed Buildings for England, both layouts; HES/Cadw);
+  102 claims quoting them, plus Bede I.26 for St Martin's. 9 corrections where the listing contradicts a legend.
+  evidence.json: 174 claims, 212 quotes (211 found; Ballycopeland's Geograph source refuses scripts).
+  Verification: confirmed 322, evidenced 49, unreachable 1, year-missing 0. Tests: 84 pass.

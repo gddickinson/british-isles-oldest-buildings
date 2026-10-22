@@ -94,7 +94,7 @@ def run(cutoff):
         e = entities.get(q)
         if e is None or not set(wd.item_ids(e, "P31")) & struct_cls:
             entry = research_by_qid.pop(q)
-            research_unlinked.append({**entry, "wikipedia_title": None,
+            research_unlinked.append({**entry, "wikipedia_title": None, "qid": q,
                                       "context_article": entry.get("wikipedia_title")})
             if q not in candidates and q not in curated_by_qid and q not in wd_types:
                 entities.pop(q, None)
@@ -149,7 +149,11 @@ def run(cutoff):
     fill_missing_dates(records, log)
     postprocess.annotate_oldest(records, wd_types, research_by_qid)
     have = {r["id"] for r in records}
+    # an item outside the structure classes may still be in the catalogue (e.g. from a curated list)
+    postprocess.annotate_oldest(records, {}, {e["qid"]: e for e in research_unlinked if e.get("qid") in have})
     for e in research_unlinked:
+        if e.get("qid") in have:
+            continue
         rec = postprocess.research_only_record(e, intros.get(e.get("wikipedia_title") or ""))
         if rec["id"] not in have:
             have.add(rec["id"])

@@ -103,17 +103,39 @@ def type_claim_text(entry):
 
 
 def refresh_claims(log=print):
-    """Rewrite the catalogue's "oldest of its type" notes from the research file without a rebuild
-    (after corrections from the research track): python -c 'from bidb.oldest_types import refresh_claims; refresh_claims()'.
-    Dates themselves change on the next build."""
+    """Rewrite the catalogue's "oldest of its type" notes, and the dates that came from the research
+    file, without a rebuild (after corrections from the research track):
+    python -c 'from bidb.oldest_types import refresh_claims; refresh_claims()'."""
+    from .classify import regional_period
     from .db import connect
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
-    n = 0
+    n = dated = 0
     for e in research_entries():
-        cur = conn.execute("UPDATE buildings SET type_claim = ? WHERE oldest_of_type = ? AND (wikipedia_title = ? OR name = ?)",
-                           (type_claim_text(e), e.get("type"), e.get("wikipedia_title"), e.get("name")))
-        n += cur.rowcount
+        match = ("oldest_of_type = ? AND (wikipedia_title = ? OR name = ?)", (e.get("type"), e.get("wikipedia_title"), e.get("name")))
+        n += conn.execute(f"UPDATE buildings SET type_claim = ? WHERE {match[0]}", (type_claim_text(e), *match[1])).rowcount
+        for rid, text, nation in conn.execute(f"SELECT id, date_text, nation FROM buildings WHERE date_source = "
+                                              f"'Research (claimed date)' AND {match[0]}", match[1]).fetchall():
+            f = _research_date(e, text)
+            f["period"] = regional_period(f["period"], nation)
+            conn.execute(f"UPDATE buildings SET {', '.join(k + ' = ?' for k in f)} WHERE id = ?", [*f.values(), rid])
+            dated += 1
     conn.commit()
-    log(f"refreshed {n} oldest-of-type notes")
+    log(f"refreshed {n} oldest-of-type notes, {dated} research dates")
     return n
+
+
+def _research_date(entry, date_text):
+    """Date fields as the build would set them now, for a record whose date came from the research file
+    (its Wikidata date, if any, kept in date_text as "(Wikidata: …)")."""
+    import re
+    from .classify import period_for
+    from .dates import parse_text_year
+    from .postprocess import _apply_research
+    wd = re.search(r"\(Wikidata: (.*)\)$", date_text or "")
+    r = {"year_start": parse_text_year(wd.group(1)) if wd else None, "date_text": wd.group(1) if wd else None}
+    _apply_research(r, entry)
+    if r.get("date_source") is None:              # the research date no longer overrides Wikidata's
+        r.update(date_source="Wikidata inception", date_confidence="Recorded", date_evidence=None,
+                 period=period_for(r["year_start"]))
+    return {k: r.get(k) for k in ("year_start", "period", "date_text", "date_source", "date_confidence", "date_evidence")}

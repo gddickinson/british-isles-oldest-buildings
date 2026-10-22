@@ -592,5 +592,86 @@
   "evidence": "Gothick house of late C18 origins … Tower begun 1838 (lantern added in 1840) for Walter Barton May (list entry 1070451). See data/curated/evidence.json (hadlow-date).",
   "source": "https://britishlistedbuildings.co.uk/101070451-hadlow-tower-hadlow-castle-hadlow",
   "reviewed": "2026-10-21"
+ },
+ "Q15179394": {
+  "name": "All Saints' Church, Brixworth",
+  "year_start": 775,
+  "date_text": "late 8th or early 9th century (monastery founded before 675)",
+  "was": "7th century (601)",
+  "evidence": "The present church was begun in the late eighth or early ninth century",
+  "source": "https://en.wikipedia.org/wiki/All_Saints%27_Church%2C_Brixworth",
+  "reviewed": "2026-10-21"
+ },
+ "Q13456921": {
+  "name": "Castle of Old Wick",
+  "year_start": 1300,
+  "date_text": "14th century (traditionally 12th)",
+  "was": "12th century (1101)",
+  "evidence": "However, the surviving structure seems to date to the 14th century",
+  "source": "https://en.wikipedia.org/wiki/Castle_of_Old_Wick",
+  "reviewed": "2026-10-21"
+ },
+ "Q12859559": {
+  "name": "Royal Hospital Kilmainham",
+  "year_start": 1679,
+  "date_text": "1679–1687",
+  "was": "1684 (1684)",
+  "evidence": "between 1679 and 1687",
+  "source": "https://en.wikipedia.org/wiki/Royal_Hospital_Kilmainham",
+  "reviewed": "2026-10-21"
+ },
+ "Q5095990": {
+  "name": "Chichester Cross",
+  "year_start": 1500,
+  "date_text": "c. 1500 (Bishop Edward Story, 1477–1503)",
+  "was": "1477 to 1503 (1477)",
+  "evidence": "1500. Octagonal on central shaft with open arcade and vaulting on ground floor",
+  "source": "https://britishlistedbuildings.co.uk/101026826-the-market-cross-chichester",
+  "reviewed": "2026-10-21"
+ },
+ "Q5361127": {
+  "name": "Eling Tide Mill",
+  "year_start": 1750,
+  "date_text": "mid 18th century (mill on the site c. 1420)",
+  "was": "1785 (1785)",
+  "evidence": "Mid C18 on site of mill dating from c1420, altered C19 and C20, worked until 1948, restored 1978-83",
+  "source": "https://britishlistedbuildings.co.uk/101179062-tide-mill-totton-and-eling",
+  "reviewed": "2026-10-21"
+ },
+ "Q8050759": {
+  "name": "Ye Olde Fighting Cocks",
+  "year_start": 1550,
+  "date_text": "16th century (pub's claim: 793)",
+  "was": "around 793 (793)",
+  "evidence": "Octagonal, 2-storey timber framed building of C16 appearance",
+  "source": "https://britishlistedbuildings.co.uk/101347100",
+  "reviewed": "2026-10-21"
+ },
+ "Q7718023": {
+  "name": "The Bingley Arms",
+  "year_start": 1738,
+  "date_text": "1738 date plaque (pub's claim: 953)",
+  "was": "905 (905)",
+  "evidence": "with mid C19 extension when S:M 1738 roof was raised",
+  "source": "https://britishlistedbuildings.co.uk/101313185",
+  "reviewed": "2026-10-21"
+ },
+ "Q8050762": {
+  "name": "Ye Olde Salutation Inn",
+  "year_start": 1550,
+  "date_text": "16th century (inn's claim: 1240)",
+  "was": "13th-century (1201)",
+  "evidence": "C16 and mid C18, heavily restored and altered late C19 and mid C20",
+  "source": "https://britishlistedbuildings.co.uk/101255137",
+  "reviewed": "2026-10-21"
+ },
+ "Q6820682": {
+  "name": "Merthyr Synagogue",
+  "year_start": 1872,
+  "date_text": "1872–75",
+  "was": "1876 (1876)",
+  "evidence": "Built as a Synagogue, 1872-5",
+  "source": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=11426",
+  "reviewed": "2026-10-21"
  }
 }

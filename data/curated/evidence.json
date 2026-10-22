@@ -457,16 +457,16 @@
    "research": "examples:Brewery / distillery|Glenturret distillery",
    "claim": "Officially established in 1763 (illicit distilling there from 1717).",
    "value": "1763",
-   "verdict": "open",
-   "assessment": "The source says the distillery was officially established in 1763 (illicit distilling from 1717); the research file ranks it by 1775, a date the source does not give. Needs a source for 1775 or a change to 1763.",
+   "verdict": "corrected",
+   "assessment": "No source read gives 1775; the research file now uses the official 1763.",
    "sources": [
     {
      "title": "Glenturret distillery",
      "author": "Wikipedia",
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Glenturret_distillery",
-     "locator": "article",
-     "quote": "The distillery was officially established in 1763"
+     "locator": "History",
+     "quote": "The distillery was officially established in 1763, but had previously been under the control of illicit distillers"
     }
    ],
    "researched": "2026-10-21"
@@ -743,11 +743,19 @@
    "name": "Irish round towers",
    "field": "date",
    "research": "events:Irish round towers",
-   "claim": "Irish round towers were built c. 950–1200.",
+   "claim": "The earliest record of a round tower is the burning of the bell-house of Slane by the Dublin Norse, entered in the Annals of Ulster under 950; towers were built until about 1200.",
    "value": "c. 950–1200",
-   "verdict": "open",
-   "assessment": "The cited article says 'probably built between the 9th and 12th centuries'; the history's c. 950 start follows the usual modern view (Stalley 2000, cited by the article, not read here). Needs Stalley or a dated example list.",
+   "verdict": "kept",
+   "assessment": "A primary source supports c. 950 as the first record (Annals of Ulster U950.7); building may have begun earlier (9th century, as Wikipedia allows).",
    "sources": [
+    {
+     "title": "Annals of Ulster (CELT translation, ed. Mac Airt and Mac Niocaill)",
+     "author": "Annals of Ulster",
+     "kind": "primary",
+     "url": "https://celt.ucc.ie/published/T100001A.html",
+     "locator": "U950.7",
+     "quote": "The bell-house of Sláine was burned by the foreigners of Áth Cliath"
+    },
     {
      "title": "Irish round tower",
      "author": "Wikipedia",
@@ -1207,18 +1215,26 @@
    "name": "Escomb Church",
    "field": "date",
    "research": "examples:Church still in use|Escomb Church",
-   "claim": "Escomb is usually dated c. 670–675; the cited article says it was founded in the early 8th century and is consistent with 650–800.",
-   "value": "c. 670–675",
-   "verdict": "open",
-   "assessment": "Needs the list description or a recent survey to choose between c. 670–675 and the early 8th century.",
+   "claim": "The listing dates the church to the 7th century; archaeologists place it between 670 and 690. Wikipedia prefers the early 8th century (consistent with 650–800).",
+   "value": "c. 670–690 (7th century)",
+   "verdict": "kept",
+   "assessment": "The official list description (C7) and the British Pilgrimage Trust (670–690) support a 7th-century date; the research file's c. 670–675 stands, with the 8th-century view noted.",
    "sources": [
     {
-     "title": "Escomb Church",
-     "author": "Wikipedia",
-     "kind": "reference",
-     "url": "https://en.wikipedia.org/wiki/Escomb_Church",
-     "locator": "article",
-     "quote": "The church was founded in the early part of the 8th century"
+     "title": "The Saxon Church, Escomb, list entry 1292122 (Grade I)",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101292122-the-saxon-church-west-auckland-ward",
+     "locator": "list description",
+     "quote": "C7 with C14 porch and some C13 and C19 windows"
+    },
+    {
+     "title": "St John's Church, Escomb",
+     "author": "British Pilgrimage Trust",
+     "kind": "secondary",
+     "url": "https://www.britishpilgrimage.org/places/st-johns-church-escomb",
+     "locator": "page",
+     "quote": "Archaeologists believe the church was built sometime between 670 and 690"
     },
     {
      "title": "Escomb Church",
@@ -1237,11 +1253,19 @@
    "name": "Chichester Cross",
    "field": "date",
    "research": "examples:Market hall / market cross|Chichester Cross",
-   "claim": "Usually dated 1501; its inscription credits Bishop Edward Story (1477–1503) and its style may be of Edward IV's reign.",
-   "value": "1501",
-   "verdict": "open",
-   "assessment": "1501 is within Story's episcopate but is not stated by the source; the listing would settle it.",
+   "claim": "The listing dates the cross to 1500; its inscription credits Bishop Edward Story (1477–1503). The often-quoted 1501 is tradition.",
+   "value": "c. 1500",
+   "verdict": "corrected",
+   "assessment": "The official list description gives 1500; the research file's 1501 is not in any source read. Changed to c. 1500.",
    "sources": [
+    {
+     "title": "The Market Cross, Chichester, list entry 1026826 (Grade I, listed 5 July 1950)",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101026826-the-market-cross-chichester",
+     "locator": "list description",
+     "quote": "1500. Octagonal on central shaft with open arcade and vaulting on ground floor"
+    },
     {
      "title": "Chichester Cross",
      "author": "Wikipedia",
@@ -1259,11 +1283,19 @@
    "name": "Duke Humfrey's Library",
    "field": "date",
    "research": "examples:Library|Duke Humfrey's Library",
-   "claim": "The library was built over the Divinity School between 1450 and 1480; its medieval section is dated 1487 (opened 1488).",
+   "claim": "The room above the Divinity School, known as Duke Humfrey's Library, was completed in 1488.",
    "value": "1488",
-   "verdict": "open",
-   "assessment": "The source gives 1450–1480 and 1487; 1488 (opening) needs a source such as the Bodleian's own history.",
+   "verdict": "kept",
+   "assessment": "The Bodleian Library article gives the completion year; the library article gives 1450–1480 for the building work.",
    "sources": [
+    {
+     "title": "Bodleian Library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bodleian_Library",
+     "locator": "History",
+     "quote": "A suitable room was finally built above the Divinity School, and completed in 1488"
+    },
     {
      "title": "Duke Humfrey's Library",
      "author": "Wikipedia",
@@ -1281,18 +1313,26 @@
    "name": "Hereford Cathedral Library",
    "field": "date",
    "research": "examples:Library|Hereford Cathedral Library",
-   "claim": "The chained library is the largest surviving; its 1611 date is not in the cited source.",
+   "claim": "The chained library was established in 1611 by Thomas Thornton; it is the only one to survive with all its chains, rods and locks.",
    "value": "chained library 1611",
-   "verdict": "open",
-   "assessment": "Needs a source for 1611 (the library's fitting-out).",
+   "verdict": "kept",
+   "assessment": "Hereford Cathedral Library gives 1611 and Thornton.",
    "sources": [
     {
-     "title": "Hereford Cathedral",
+     "title": "Hereford Cathedral Library",
      "author": "Wikipedia",
      "kind": "reference",
-     "url": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
+     "url": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+     "locator": "History",
+     "quote": "in 1611 the Chained Library (with books in manuscript chained to their places) was established by Thomas Thornton"
+    },
+    {
+     "title": "Hereford Cathedral Library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
      "locator": "article",
-     "quote": "The cathedral has the largest library of chained books in the world"
+     "quote": "the only library of this type to survive with all of the chains, rods and locks still intact"
     }
    ],
    "researched": "2026-10-21"
@@ -1303,11 +1343,19 @@
    "name": "Eling Tide Mill",
    "field": "date",
    "research": "examples:Tide mill|Eling Tide Mill",
-   "claim": "A mill at Eling is in Domesday Book (1086), but not shown to be this one; the present building is dated 1785 elsewhere.",
-   "value": "site 1086; building 1785",
-   "verdict": "open",
-   "assessment": "The source undercuts the 1086 link and does not give 1785.",
+   "claim": "The present mill is mid-18th century, on the site of a mill of about 1420; a mill at Eling is in Domesday Book but not shown to be this one.",
+   "value": "mid 18th century (site c. 1420)",
+   "verdict": "corrected",
+   "assessment": "The listing dates the building to the mid 18th century (not 1785); Wikipedia's 'rebuilt after storm damage in the 1770s' is unsourced there. Changed to mid 18th century.",
    "sources": [
+    {
+     "title": "Tide Mill, Eling, list entry 1179062 (Grade II*)",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101179062-tide-mill-totton-and-eling",
+     "locator": "list description",
+     "quote": "Mid C18 on site of mill dating from c1420, altered C19 and C20, worked until 1948, restored 1978-83"
+    },
     {
      "title": "Eling Tide Mill",
      "author": "Wikipedia",
@@ -1325,18 +1373,18 @@
    "name": "Ballyhaunis Mosque",
    "field": "date",
    "research": "examples:Mosque|Ballyhaunis Mosque",
-   "claim": "Ireland's first purpose-built mosque (1987).",
+   "claim": "Ballyhaunis Mosque was built in 1987, the first purpose-built mosque in Ireland.",
    "value": "1987",
-   "verdict": "open",
-   "assessment": "The source supports 'first purpose-built' but not the year.",
+   "verdict": "kept",
+   "assessment": "Islam in Ireland gives the year.",
    "sources": [
     {
-     "title": "Ballyhaunis",
+     "title": "Islam in Ireland",
      "author": "Wikipedia",
      "kind": "reference",
-     "url": "https://en.wikipedia.org/wiki/Ballyhaunis",
-     "locator": "article",
-     "quote": "Ballyhaunis is home to Ireland's first purpose-built mosque"
+     "url": "https://en.wikipedia.org/wiki/Islam_in_Ireland",
+     "locator": "Mosques",
+     "quote": "Ballyhaunis Mosque, Ballyhaunis, County Mayo, was built in 1987, making it the first purpose-built mosque in Ireland"
     }
    ],
    "researched": "2026-10-21"
@@ -1669,6 +1717,2416 @@
      "url": "https://britishlistedbuildings.co.uk/101197778-merchants-warehouse-city-centre-ward",
      "locator": "list description",
      "quote": "Dated 1823 on pier between shipping holes"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ballycopeland-windmill",
+   "record": "Q3367653",
+   "name": "Ballycopeland Windmill",
+   "field": "date",
+   "research": "examples:Windmill|Ballycopeland Windmill",
+   "claim": "A tower mill built about 1790, in use until 1915 (after W. A. McCutcheon); the Northern Ireland buildings record gives 1780–1799.",
+   "value": "c. 1790",
+   "verdict": "kept",
+   "assessment": "The Department for Communities record could not be read (empty template); the Geograph note following McCutcheon gives c. 1790.",
+   "sources": [
+    {
+     "title": "Ballycopeland Windmill (photo 995399)",
+     "author": "Geograph (after W. A. McCutcheon)",
+     "kind": "secondary",
+     "url": "https://www.geograph.org.uk/photo/995399",
+     "locator": "photo description",
+     "quote": "was built c1790, remaining in use until 1915"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ye-olde-fighting-cocks",
+   "record": "Q8050759",
+   "name": "Ye Olde Fighting Cocks",
+   "field": "date",
+   "research": "examples:Public house|Ye Olde Fighting Cocks",
+   "claim": "The listed building is a timber-framed octagon of 16th-century appearance; the 793 date is the pub's tradition, not the building's.",
+   "value": "16th century (claimed 793)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Ye Olde Fighting Cocks, list entry 1347100",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101347100",
+     "locator": "list description",
+     "quote": "Octagonal, 2-storey timber framed building of C16 appearance"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-bingley-arms",
+   "record": "Q7718023",
+   "name": "Bingley Arms",
+   "field": "date",
+   "research": "examples:Public house|Bingley Arms",
+   "claim": "The listed house carries a date plaque of 1738; the 953 founding date is the pub's tradition.",
+   "value": "1738 (date plaque; claimed 953)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Bingley Arms, list entry 1313185",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101313185",
+     "locator": "list description",
+     "quote": "with mid C19 extension when S:M 1738 roof was raised"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ye-olde-trip-to-jerusalem",
+   "record": "Q5323585",
+   "name": "Ye Olde Trip to Jerusalem",
+   "field": "date",
+   "research": "examples:Public house|Ye Olde Trip to Jerusalem",
+   "claim": "The pub is principally late-17th and 18th century, with rock-cut caves that may be medieval; its history as a pub is documented from 1760. The 1189 date is legend.",
+   "value": "late 17th century, caves possibly medieval (claimed 1189)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Ye Olde Trip to Jerusalem, list entry 1271192",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101271192",
+     "locator": "list description",
+     "quote": "A public house, principally dating to the late-C17 and C18, extended in the C19"
+    },
+    {
+     "title": "Ye Olde Trip to Jerusalem, list entry 1271192",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101271192",
+     "locator": "list description",
+     "quote": "Despite its legendary claim to be the oldest inn in England, its history as a public house appears to date to 1760"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ye-olde-salutation-inn",
+   "record": "Q8050762",
+   "name": "Ye Olde Salutation Inn",
+   "field": "date",
+   "research": "examples:Public house|Ye Olde Salutation Inn",
+   "claim": "The listing dates the building to the 16th and mid-18th centuries (rock-cut cellars below); 1240 is the inn's tradition.",
+   "value": "16th century (claimed 1240)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Ye Olde Salutation Inn, list entry 1255137",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101255137",
+     "locator": "list description",
+     "quote": "C16 and mid C18, heavily restored and altered late C19 and mid C20"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-adam-and-eve",
+   "record": "Q15734109",
+   "name": "Adam and Eve",
+   "field": "date",
+   "research": "examples:Public house|Adam and Eve",
+   "claim": "The listed building is 17th century; 1249 is the pub's claimed founding.",
+   "value": "17th century (claimed 1249)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Adam and Eve, list entry 1372737",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101372737",
+     "locator": "list description",
+     "quote": "Former use unknown, now public house, C17 with C20 alterations"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-sheep-heid-inn",
+   "record": "Q7492406",
+   "name": "Sheep Heid Inn",
+   "field": "date",
+   "research": "examples:Public house|Sheep Heid Inn",
+   "claim": "The listed building is mid-19th century with earlier fabric; 1360 is the inn's claimed founding.",
+   "value": "mid 19th century with earlier fabric (claimed 1360)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Sheep Heid Inn, HES LB30077",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB30077",
+     "locator": "list description",
+     "quote": "Mid 19th century with earlier fabric, 1880 skittle alley"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-mermaid-inn",
+   "record": "Q7751082",
+   "name": "Mermaid Inn",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|Mermaid Inn",
+   "claim": "The listed building is late 15th-century timber framing; the listing says nothing about the claimed 1156 cellars.",
+   "value": "late 15th century building; cellars claimed 1156",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Mermaid Inn, list entry 1251961",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101251961",
+     "locator": "list description",
+     "quote": "A late C15 timber-framed building containing an inner courtyard"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-angel-and-royal",
+   "record": "Q17531277",
+   "name": "Angel and Royal",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|Angel and Royal",
+   "claim": "The listing dates the stone front to the late 14th century; 1203 is the inn's traditional founding as a hostel.",
+   "value": "late 14th century (claimed 1203)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Angel and Royal, list entry 1062486",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101062486",
+     "locator": "list description",
+     "quote": "Late C14, 2-storey, stone, stone slate roof, good medieval front to street"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-the-george-inn--norton-st-philip",
+   "record": "Q7736175",
+   "name": "The George Inn, Norton St Philip",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|The George Inn, Norton St Philip",
+   "claim": "The listing dates the inn to the 14th or 15th century.",
+   "value": "14th–15th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "The George Inn, Norton St Philip, list entry 1174953",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101174953",
+     "locator": "list description",
+     "quote": "C14/C15."
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-new-inn--gloucester",
+   "record": "Q7753629",
+   "name": "New Inn, Gloucester",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|New Inn, Gloucester",
+   "claim": "The listing dates the galleried inn to the mid 15th century.",
+   "value": "mid 15th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "New Inn, Gloucester, list entry 1245714",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101245714",
+     "locator": "list description",
+     "quote": "Mid C15 with many later alterations and minor additions"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-skara-brae",
+   "record": "Q816437",
+   "name": "Skara Brae",
+   "field": "date",
+   "research": "examples:House (domestic dwelling)|Skara Brae",
+   "claim": "The scheduled area covers the Neolithic village.",
+   "value": "Neolithic",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Skara Brae, HES SM90276",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90276",
+     "locator": "list description",
+     "quote": "Its area covers the Neolithic village at Skara Brae"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-saltford-manor-house",
+   "record": "Q7406110",
+   "name": "Saltford Manor House",
+   "field": "date",
+   "research": "examples:House (domestic dwelling)|Saltford Manor House",
+   "claim": "The listing calls it the original Norman manor house built by Earl William of Gloucester (earl 1147–1183).",
+   "value": "Norman (c. 1148)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Saltford Manor House, list entry 1384672",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101384672",
+     "locator": "list description",
+     "quote": "Original Norman manor house built by Earl William of Gloucester"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-moyse-s-hall",
+   "record": "Q17526591",
+   "name": "Moyse's Hall",
+   "field": "date",
+   "research": "examples:House (domestic dwelling)|Moyse's Hall",
+   "claim": "The listing dates it to the late 12th century.",
+   "value": "late 12th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Moyse's Hall, list entry 1076931",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101076931",
+     "locator": "list description",
+     "quote": "Late C12, considerably restored and altered in 1858"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-gladstone-s-land",
+   "record": "Q5566312",
+   "name": "Gladstone's Land",
+   "field": "date",
+   "research": "examples:House (domestic dwelling)|Gladstone's Land",
+   "claim": "The rear wing is 16th century; the frontage is dated 1621.",
+   "value": "16th-century rear wing; frontage 1621",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Gladstone's Land, HES LB29233",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB29233",
+     "locator": "list description",
+     "quote": "Frontage 1621, 16th century rear wing and 18th century addition to NW"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-priest-s-house--muchelney",
+   "record": "Q7758196",
+   "name": "Priest's House, Muchelney",
+   "field": "date",
+   "research": "examples:Cottage|Priest's House, Muchelney",
+   "claim": "The listing says the house is first mentioned in 1308.",
+   "value": "first recorded 1308",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Priest's House, Muchelney, list entry 1056574",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101056574",
+     "locator": "list description",
+     "quote": "the house first mentioned 1308"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-stokesay-castle",
+   "record": "Q7618555",
+   "name": "Stokesay Castle",
+   "field": "date",
+   "research": "examples:Manor house|Stokesay Castle",
+   "claim": "Built for Laurence of Ludlow in the late 1280s and early 1290s (licence to crenellate 1291). The list entry's 'c1391-1400' disagrees and looks like a slip for 1291.",
+   "value": "1280s–1290s",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Stokesay Castle, list entry 1269939",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101269939",
+     "locator": "list description",
+     "quote": "Manor house. c1391-1400; gatehouse added C17"
+    },
+    {
+     "title": "Stokesay Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stokesay_Castle",
+     "locator": "History",
+     "quote": "the hall, solar and north tower were all constructed under the direction of the same carpenter in the late 1280s and early 1290s"
+    },
+    {
+     "title": "Stokesay Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stokesay_Castle",
+     "locator": "History",
+     "quote": "In 1291 Laurence received permission from the King to fortify his castle"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-markenfield-hall",
+   "record": "Q6770626",
+   "name": "Markenfield Hall",
+   "field": "date",
+   "research": "examples:Manor house|Markenfield Hall",
+   "claim": "Built 1310–1323 for John de Markenfield.",
+   "value": "1310–1323",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Markenfield Hall, list entry 1293954",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101293954",
+     "locator": "list description",
+     "quote": "1310-1323 for John de Markenfield"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-the-old-bell-hotel",
+   "record": "Q7754804",
+   "name": "The Old Bell Hotel",
+   "field": "date",
+   "research": "examples:Hotel|The Old Bell Hotel",
+   "claim": "Built as an abbey guest house in the early 13th century.",
+   "value": "early 13th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "The Old Bell Hotel, list entry 1269521",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101269521",
+     "locator": "list description",
+     "quote": "Early C13 abbey guest house"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-salutation-hotel",
+   "record": "Q17852518",
+   "name": "Salutation Hotel",
+   "field": "date",
+   "research": "examples:Hotel|Salutation Hotel",
+   "claim": "The listed building is c. 1810 incorporating earlier fabric, with a fireplace dated 1699.",
+   "value": "hotel from 1699; building c. 1810 with earlier fabric",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Salutation Hotel, HES LB39646",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB39646",
+     "locator": "list description",
+     "quote": "Circa 1810 incorporating earlier fabric and later alterations"
+    },
+    {
+     "title": "Salutation Hotel, HES LB39646",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB39646",
+     "locator": "list description",
+     "quote": "Stone fireplace dated 1699 to 'Stewart Room'"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-lady-row",
+   "record": "Q17530622",
+   "name": "Lady Row",
+   "field": "date",
+   "research": "examples:Shop|Lady Row",
+   "claim": "The listing dates the row to 1317.",
+   "value": "1316–17",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Lady Row, list entry 1257710",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101257710",
+     "locator": "list description",
+     "quote": "1317 with later alterations"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-lock---co--hatters",
+   "record": "Q6138148",
+   "name": "Lock & Co. Hatters",
+   "field": "date",
+   "research": "examples:Shop|Lock & Co. Hatters",
+   "claim": "The building is late 17th century, refronted in the 18th.",
+   "value": "late 17th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Lock & Co. Hatters, list entry 1264869",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101264869",
+     "locator": "list description",
+     "quote": "Late C17, refronted mid C18 and with late C18 shop front"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-malmesbury-market-cross",
+   "record": "Q6744367",
+   "name": "Malmesbury Market Cross",
+   "field": "date",
+   "research": "examples:Market hall / market cross|Malmesbury Market Cross",
+   "claim": "The listing dates the cross to the late 15th or early 16th century.",
+   "value": "late 15th / early 16th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Malmesbury Market Cross, list entry 1269291",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101269291",
+     "locator": "list description",
+     "quote": "Late C15/early C16, renovated c1800 by the Earl of Suffolk"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-leicester-guildhall",
+   "record": "Q6519185",
+   "name": "Leicester Guildhall",
+   "field": "date",
+   "research": "examples:Guildhall / town hall|Leicester Guildhall",
+   "claim": "Built for the Corpus Christi Guild around 1390.",
+   "value": "c. 1390",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Leicester Guildhall, list entry 1361405",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101361405",
+     "locator": "list description",
+     "quote": "built for the Corpus Christi Guild around 1390"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-george-s-guildhall",
+   "record": "Q17536541",
+   "name": "St George's Guildhall",
+   "field": "date",
+   "research": "examples:Guildhall / town hall|St George's Guildhall",
+   "claim": "Built 1410–1420 for the guild founded in 1376.",
+   "value": "1410–1420",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St George's Guildhall, list entry 1290960",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101290960",
+     "locator": "list description",
+     "quote": "Founded 1376, granted charter 1406, constructed 1410-1420"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-guildhall--london",
+   "record": "Q81279",
+   "name": "Guildhall, London",
+   "field": "date",
+   "research": "examples:Guildhall / town hall|Guildhall, London",
+   "claim": "The listing dates the Guildhall to the early 15th century.",
+   "value": "early 15th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Guildhall, London, list entry 1064675",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101064675",
+     "locator": "list description",
+     "quote": "Early C15, much restored"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-musselburgh-tolbooth",
+   "record": "Q19721098",
+   "name": "Musselburgh Tolbooth",
+   "field": "date",
+   "research": "examples:Guildhall / town hall|Musselburgh Tolbooth",
+   "claim": "The tolbooth is of 1590; its steeple bears the date 1496.",
+   "value": "1590 (steeple dated 1496)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Musselburgh Tolbooth, HES LB38309",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB38309",
+     "locator": "list description",
+     "quote": "1590, Steeple bears date 1496"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-eton-college",
+   "record": "Q192088",
+   "name": "Eton College",
+   "field": "date",
+   "research": "examples:School building|Eton College",
+   "claim": "Most of School Yard and Green Court were built 1441–6.",
+   "value": "founded 1440; built from 1441",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Eton College, list entry 1290278",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101290278",
+     "locator": "list description",
+     "quote": "1441-6: most of School Yard and Green Court"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-old-court--corpus-christi-college",
+   "record": "Q536282",
+   "name": "Old Court, Corpus Christi College",
+   "field": "date",
+   "research": "examples:University / college building|Old Court, Corpus Christi College",
+   "claim": "The Old Court was built 1352–76.",
+   "value": "1352–76",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Old Court, Corpus Christi College, list entry 1125553",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101125553",
+     "locator": "list description",
+     "quote": "The Old Court 1352-76"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-salvator-s-chapel",
+   "record": "Q5572745",
+   "name": "St Salvator's Chapel",
+   "field": "date",
+   "research": "examples:University / college building|St Salvator's Chapel",
+   "claim": "Founded 1450.",
+   "value": "1450",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St Salvator's Chapel, HES LB40771",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB40771",
+     "locator": "list description",
+     "quote": "Founded 1450."
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-chetham-s-library",
+   "record": "Q2901355",
+   "name": "Chetham's Library",
+   "field": "date",
+   "research": "examples:Library|Chetham's Library",
+   "claim": "The building was established in 1422; Humphrey Chetham's executors bought it in 1654 for the school and library founded under his will (1653).",
+   "value": "building 1422; library from 1653",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Chetham's Library, list entry 1283015",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101283015",
+     "locator": "list description",
+     "quote": "Established 1422 by Thomas de la Warre"
+    },
+    {
+     "title": "Chetham's Library, list entry 1283015",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101283015",
+     "locator": "list description",
+     "quote": "purchased in 1654 by Humphrey Chetham's executors"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-innerpeffray-library",
+   "record": "Q11838970",
+   "name": "Innerpeffray Library",
+   "field": "date",
+   "research": "examples:Library|Innerpeffray Library",
+   "claim": "The listing says the library was founded by Lord Madderty in 1691 and the present building put up 1758–62; the research file's c. 1680 needs a source.",
+   "value": "founded c. 1680 (listing: 1691); building 1758–62",
+   "verdict": "open",
+   "assessment": "The sources disagree; see the claim.",
+   "sources": [
+    {
+     "title": "Innerpeffray Library, HES LB5792",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB5792",
+     "locator": "list description",
+     "quote": "Founded by David, Lord Madderty 1691"
+    },
+    {
+     "title": "Innerpeffray Library, HES LB5792",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB5792",
+     "locator": "list description",
+     "quote": "building erected by Archbishop Hay Drummond, 1758-62"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-hospital-of-st-cross",
+   "record": "Q5908748",
+   "name": "Hospital of St Cross",
+   "field": "date",
+   "research": "examples:Almshouse|Hospital of St Cross",
+   "claim": "The listing gives the foundation as 1136 by Henry de Blois (1132 is the usual date); the church is 12th–13th century.",
+   "value": "founded 1132–36",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Hospital of St Cross, list entry 1095374",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101095374",
+     "locator": "list description",
+     "quote": "Founded 1136 by Henry de Blois, Bishop of Winchester"
+    },
+    {
+     "title": "Hospital of St Cross, list entry 1095374",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101095374",
+     "locator": "list description",
+     "quote": "Church Transitional Norman C12 and C13"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-lord-leycester-hospital",
+   "record": "Q6679506",
+   "name": "Lord Leycester Hospital",
+   "field": "date",
+   "research": "examples:Almshouse|Lord Leycester Hospital",
+   "claim": "The guild buildings became a hospital in 1571.",
+   "value": "hospital from 1571; buildings 14th–15th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Lord Leycester Hospital, list entry 1035441",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101035441",
+     "locator": "list description",
+     "quote": "taken by Lord Leicester in 1571 for the purpose of forming a pensioners' hospital"
+    },
+    {
+     "title": "Lord Leycester Hospital, list entry 1035441",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101035441",
+     "locator": "list description",
+     "quote": "East range before 1400"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-browne-s-hospital",
+   "record": "Q4976462",
+   "name": "Browne's Hospital",
+   "field": "date",
+   "research": "examples:Almshouse|Browne's Hospital",
+   "claim": "The almshouses are of about 1480.",
+   "value": "c. 1480",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Browne's Hospital, list entry 1062247",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101062247",
+     "locator": "list description",
+     "quote": "Almshouses of circa 1480, partly rebuilt 1870 by J Fowler"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-bartholomew-s-hospital",
+   "record": "Q164946",
+   "name": "St Bartholomew's Hospital",
+   "field": "date",
+   "research": "examples:Hospital|St Bartholomew's Hospital",
+   "claim": "Founded by Rahere in 1123; the listed blocks are by James Gibbs, 1750–59.",
+   "value": "founded 1123; buildings 1750–59",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St Bartholomew's Hospital, list entry 1079116",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101079116",
+     "locator": "list description",
+     "quote": "1750 to 59 by James Gibbs"
+    },
+    {
+     "title": "St Bartholomew's Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Bartholomew's_Hospital",
+     "locator": "lead",
+     "quote": "It was founded in 1123 by Rahere"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-leper-chapel--cambridge",
+   "record": "Q6527355",
+   "name": "Leper Chapel, Cambridge",
+   "field": "date",
+   "research": "examples:Hospital|Leper Chapel, Cambridge",
+   "claim": "A little-altered chapel of the mid 12th century.",
+   "value": "mid 12th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Leper Chapel, Cambridge, list entry 1126144",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101126144",
+     "locator": "list description",
+     "quote": "Complete and little altered chapel of mid C12 date"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-guy-s-hospital",
+   "record": "Q777039",
+   "name": "Guy's Hospital",
+   "field": "date",
+   "research": "examples:Hospital|Guy's Hospital",
+   "claim": "Built 1721–5, entrance block 1728.",
+   "value": "1721–25",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Guy's Hospital, list entry 1385877",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101385877",
+     "locator": "list description",
+     "quote": "1721-5 & 1728 with other C18 additions"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-inveraray-jail",
+   "record": "Q1513549",
+   "name": "Inveraray Jail",
+   "field": "date",
+   "research": "examples:Prison / gaol|Inveraray Jail",
+   "claim": "Built 1816–1820 to Gillespie Graham's design.",
+   "value": "1816–1820",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Inveraray Jail, HES LB35030",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB35030",
+     "locator": "list description",
+     "quote": "It was built from 1816-1820"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-beaumaris-gaol",
+   "record": "Q4877529",
+   "name": "Beaumaris Gaol",
+   "field": "date",
+   "research": "examples:Prison / gaol|Beaumaris Gaol",
+   "claim": "Built in 1829 by Hansom and Welch.",
+   "value": "1829",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Beaumaris Gaol, Cadw 5579",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=5579",
+     "locator": "list description",
+     "quote": "A Gaol and House of Correction built in 1829 by Joseph Hansom & Edward Welch"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-theatre-royal--bristol--bristol-old-vic-",
+   "record": "Q917960",
+   "name": "Theatre Royal, Bristol (Bristol Old Vic)",
+   "field": "date",
+   "research": "examples:Theatre|Theatre Royal, Bristol (Bristol Old Vic)",
+   "claim": "Built 1764–66.",
+   "value": "1764–66",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Theatre Royal, Bristol (Bristol Old Vic), list entry 1209703",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101209703",
+     "locator": "list description",
+     "quote": "1764-66."
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-georgian-theatre-royal",
+   "record": "Q5548053",
+   "name": "Georgian Theatre Royal",
+   "field": "date",
+   "research": "examples:Theatre|Georgian Theatre Royal",
+   "claim": "Opened in September 1788.",
+   "value": "1788",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Georgian Theatre Royal, list entry 1334316",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101334316",
+     "locator": "list description",
+     "quote": "Opened in September, 1788"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-theatre-royal--drury-lane",
+   "record": "Q1756626",
+   "name": "Theatre Royal, Drury Lane",
+   "field": "date",
+   "research": "examples:Theatre|Theatre Royal, Drury Lane",
+   "claim": "The present building is Wyatt's rebuild of 1811–12.",
+   "value": "building 1811–12 (theatre on the site from 1663)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Theatre Royal, Drury Lane, list entry 1357276",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101357276",
+     "locator": "list description",
+     "quote": "Rebuild of 1811-12 by Benjamin Dean Wyatt"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-theatre-royal--glasgow",
+   "record": "Q7777430",
+   "name": "Theatre Royal, Glasgow",
+   "field": "date",
+   "research": "examples:Theatre|Theatre Royal, Glasgow",
+   "claim": "Built by George Bell, 1867; rebuilt after fires in 1880 and 1895.",
+   "value": "1867",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Theatre Royal, Glasgow, HES LB33061",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB33061",
+     "locator": "list description",
+     "quote": "George Bell, 1867; burnt down 1879"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-duke-of-york-s-picture-house",
+   "record": "Q5313140",
+   "name": "Duke of York's Picture House",
+   "field": "date",
+   "research": "examples:Cinema|Duke of York's Picture House",
+   "claim": "Opened on 22 September 1910.",
+   "value": "1910",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Duke of York's Picture House, list entry 1380741",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101380741",
+     "locator": "list description",
+     "quote": "Opened on 22 September 1910"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-electric-cinema--notting-hill",
+   "record": "Q5357329",
+   "name": "Electric Cinema, Notting Hill",
+   "field": "date",
+   "research": "examples:Cinema|Electric Cinema, Notting Hill",
+   "claim": "Built 1910–12 by G S Valentin.",
+   "value": "1910–12",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Electric Cinema, Notting Hill, list entry 1266083",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101266083",
+     "locator": "list description",
+     "quote": "1910-12 by G S Valentin"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-hippodrome--bo-ness",
+   "record": "Q5768456",
+   "name": "Hippodrome, Bo'ness",
+   "field": "date",
+   "research": "examples:Cinema|Hippodrome, Bo'ness",
+   "claim": "Built by Matthew Steele, 1911 (opened 1912).",
+   "value": "1911–12",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Hippodrome, Bo'ness, HES LB22380",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB22380",
+     "locator": "list description",
+     "quote": "Matthew Steele, 1911; roof rebuilt 1926"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-holywell-music-room",
+   "record": "Q5887192",
+   "name": "Holywell Music Room",
+   "field": "date",
+   "research": "examples:Concert hall|Holywell Music Room",
+   "claim": "Begun in 1742 and opened in 1748.",
+   "value": "1742–48",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Holywell Music Room, list entry 1047232",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101047232",
+     "locator": "list description",
+     "quote": "Begun in 1742 to the design of Rev Dr Thomas Camplin"
+    },
+    {
+     "title": "Holywell Music Room, list entry 1047232",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101047232",
+     "locator": "list description",
+     "quote": "opened in 1748"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-cecilia-s-hall",
+   "record": "Q7592777",
+   "name": "St Cecilia's Hall",
+   "field": "date",
+   "research": "examples:Concert hall|St Cecilia's Hall",
+   "claim": "Built by Robert Mylne, 1763.",
+   "value": "1763",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St Cecilia's Hall, HES LB27760",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB27760",
+     "locator": "list description",
+     "quote": "Robert Mylne, 1763, with later extensions"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-royal-albert-hall",
+   "record": "Q193639",
+   "name": "Royal Albert Hall",
+   "field": "date",
+   "research": "examples:Concert hall|Royal Albert Hall",
+   "claim": "Public hall of 1867–1871.",
+   "value": "1867–1871",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Royal Albert Hall, list entry 1217742",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101217742",
+     "locator": "list description",
+     "quote": "Public hall of 1867-1871 designed by Captain Fowke"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-british-museum",
+   "record": "Q6373",
+   "name": "British Museum",
+   "field": "date",
+   "research": "examples:Museum building|British Museum",
+   "claim": "The present building is of 1823–47.",
+   "value": "founded 1753; building 1823–47",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "British Museum, list entry 1130404",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101130404",
+     "locator": "list description",
+     "quote": "East Wing 1823-26: built to house George IV's library"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-dundas-house",
+   "record": "Q5314767",
+   "name": "Dundas House",
+   "field": "date",
+   "research": "examples:Bank|Dundas House",
+   "claim": "Built by William Chambers, 1771.",
+   "value": "1771 (bank from 1825)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Dundas House, HES LB29705",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB29705",
+     "locator": "list description",
+     "quote": "William Chambers, 1771; later alterations"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-causey-arch",
+   "record": "Q2860025",
+   "name": "Causey Arch",
+   "field": "date",
+   "research": "examples:Railway viaduct / bridge|Causey Arch",
+   "claim": "The listing gives 1727 (Ralph Wood); other sources give 1725–26.",
+   "value": "1725–27",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Causey Arch, list entry 1240816",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101240816",
+     "locator": "list description",
+     "quote": "1727 by Ralph Wood"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-pont-y-cafnau",
+   "record": "Q7227992",
+   "name": "Pont-y-Cafnau",
+   "field": "date",
+   "research": "examples:Railway viaduct / bridge|Pont-y-Cafnau",
+   "claim": "Believed to date from about 1794; probably the earliest known iron railway bridge.",
+   "value": "c. 1793–94",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Pont-y-Cafnau, Cadw 11408",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=11408",
+     "locator": "list description",
+     "quote": "Believed to date from ca 1794 (probably the earliest known iron railway bridge)"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-laigh-milton-viaduct",
+   "record": "Q6473808",
+   "name": "Laigh Milton Viaduct",
+   "field": "date",
+   "research": "examples:Railway viaduct / bridge|Laigh Milton Viaduct",
+   "claim": "William Jessop, engineer, 1809–11.",
+   "value": "1809–12",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Laigh Milton Viaduct, HES LB990",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB990",
+     "locator": "list description",
+     "quote": "William Jessop, engineer, 1809-11"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-skerne-bridge",
+   "record": "Q17647383",
+   "name": "Skerne Bridge",
+   "field": "date",
+   "research": "examples:Railway viaduct / bridge|Skerne Bridge",
+   "claim": "Built 1825 by Ignatius Bonomi for the Stockton and Darlington Railway.",
+   "value": "1825",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Skerne Bridge, list entry 1475481",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101475481",
+     "locator": "list description",
+     "quote": "Railway bridge spanning the River Skerne, 1825 by Ignatius Bonomi"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-sankey-viaduct",
+   "record": "Q7418706",
+   "name": "Sankey Viaduct",
+   "field": "date",
+   "research": "examples:Railway viaduct / bridge|Sankey Viaduct",
+   "claim": "Railway viaduct of 1830 by George Stephenson.",
+   "value": "1830",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Sankey Viaduct, list entry 1075927",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101075927",
+     "locator": "list description",
+     "quote": "Railway viaduct, 1830, by George Stephenson"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-high-bridge--lincoln",
+   "record": "Q3135362",
+   "name": "High Bridge, Lincoln",
+   "field": "date",
+   "research": "examples:Road bridge|High Bridge, Lincoln",
+   "claim": "The bridge is 12th century with later additions.",
+   "value": "12th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "High Bridge, Lincoln, list entry 1388574",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101388574",
+     "locator": "list description",
+     "quote": "C12, with C13 and C16 additions"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-monnow-bridge",
+   "record": "Q250115",
+   "name": "Monnow Bridge",
+   "field": "date",
+   "research": "examples:Road bridge|Monnow Bridge",
+   "claim": "Built in the late 13th century, traditionally 1272.",
+   "value": "late 13th century (traditionally 1272)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Monnow Bridge, Cadw 2218",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=2218",
+     "locator": "list description",
+     "quote": "built in the late C13 (traditionally 1272)"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-brig-o--balgownie",
+   "record": "Q2925208",
+   "name": "Brig o' Balgownie",
+   "field": "date",
+   "research": "examples:Road bridge|Brig o' Balgownie",
+   "claim": "Built by Richard Cementarius, 1314–18.",
+   "value": "1314–18",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Brig o' Balgownie, HES LB20067",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB20067",
+     "locator": "list description",
+     "quote": "Richard Cementarius 1314-18"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-the-iron-bridge",
+   "record": "Q99200",
+   "name": "The Iron Bridge",
+   "field": "date",
+   "research": "examples:Road bridge|The Iron Bridge",
+   "claim": "The listing dates the bridge 1778; the first cast-iron bridge.",
+   "value": "1777–79",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "The Iron Bridge, list entry 1038659",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101038659",
+     "locator": "list description",
+     "quote": "The first bridge of cold-blast iron; cast at Coalbrookdale to the designs of Abraham Darby III"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-catherine-s-oratory",
+   "record": "Q7587435",
+   "name": "St Catherine's Oratory",
+   "field": "date",
+   "research": "examples:Lighthouse|St Catherine's Oratory",
+   "claim": "Early 14th century, built as a penance by Walter de Godeton.",
+   "value": "early 14th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St Catherine's Oratory, list entry 1218168",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101218168",
+     "locator": "list description",
+     "quote": "Built as a penance by the local landowner Walter de Godeton"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-smeaton-s-tower",
+   "record": "Q3995634",
+   "name": "Smeaton's Tower",
+   "field": "date",
+   "research": "examples:Lighthouse|Smeaton's Tower",
+   "claim": "Built 1759 by John Smeaton; moved to Plymouth Hoe in 1882.",
+   "value": "1759",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Smeaton's Tower, list entry 1386470",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101386470",
+     "locator": "list description",
+     "quote": "1759 by John Smeaton, erected here on new base in 1882"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-pitstone-windmill",
+   "record": "Q7199059",
+   "name": "Pitstone Windmill",
+   "field": "date",
+   "research": "examples:Windmill|Pitstone Windmill",
+   "claim": "The mill is dated 1627 and 1749.",
+   "value": "1627",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Pitstone Windmill, list entry 1310208",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101310208",
+     "locator": "list description",
+     "quote": "Dated 1627 and 1749, altered and much restored 1963"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-chesterton-windmill",
+   "record": "Q665560",
+   "name": "Chesterton Windmill",
+   "field": "date",
+   "research": "examples:Windmill|Chesterton Windmill",
+   "claim": "The listing dates the mill 1632.",
+   "value": "1632",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Chesterton Windmill, list entry 1300056",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101300056",
+     "locator": "list description",
+     "quote": "Windmill. 1632. Probably designed by Sir Edward Peyto for himself"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-outwood-windmill",
+   "record": "Q7113099",
+   "name": "Outwood Windmill",
+   "field": "date",
+   "research": "examples:Windmill|Outwood Windmill",
+   "claim": "The listing dates the mill 1665.",
+   "value": "1665",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Outwood Windmill, list entry 1029961",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101029961",
+     "locator": "list description",
+     "quote": "1665 restored in C19 & C20"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-llynnon-mill",
+   "record": "Q6812427",
+   "name": "Llynnon Mill",
+   "field": "date",
+   "research": "examples:Windmill|Llynnon Mill",
+   "claim": "Built between August 1775 and March 1776.",
+   "value": "1775–76",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Llynnon Mill, Cadw 5265",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=5265",
+     "locator": "list description",
+     "quote": "built between August 1775 to March 1776"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-house-mill--three-mills",
+   "record": "Q5913694",
+   "name": "House Mill, Three Mills",
+   "field": "date",
+   "research": "examples:Tide mill|House Mill, Three Mills",
+   "claim": "A tablet on the mill is dated 1776.",
+   "value": "1776",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "House Mill, Three Mills, list entry 1080970",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101080970",
+     "locator": "list description",
+     "quote": "cartouche with date 1776 and initials DSB"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-carew-tidal-mill",
+   "record": "Q17741638",
+   "name": "Carew Tidal Mill",
+   "field": "date",
+   "research": "examples:Tide mill|Carew Tidal Mill",
+   "claim": "Mills here are first mentioned in 1541; a wheel is dated 1801 and the main building may date from 1872–4.",
+   "value": "19th century (wheel dated 1801; mills here from 1541)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Carew Tidal Mill, Cadw 6038",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=6038",
+     "locator": "list description",
+     "quote": "The first mention of mills here is in 1541"
+    },
+    {
+     "title": "Carew Tidal Mill, Cadw 6038",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=6038",
+     "locator": "list description",
+     "quote": "the wheel carries the date 1801"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-great-coxwell-barn",
+   "record": "Q5599014",
+   "name": "Great Coxwell Barn",
+   "field": "date",
+   "research": "examples:Barn / tithe barn|Great Coxwell Barn",
+   "claim": "Roof timbers were felled in the winter of 1291–92 (dendrochronology); the older list entry gives early 13th century on style.",
+   "value": "c. 1292",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Great Coxwell Barn, list entry 1183045",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101183045",
+     "locator": "list description",
+     "quote": "Circa early C13 for the Cistercian monks of Beaulieu Abbey"
+    },
+    {
+     "title": "Great Coxwell Barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Great_Coxwell_Barn",
+     "locator": "History",
+     "quote": "Dendrochronology has established that some of the timbers in the roof of the barn were felled in the winter of 1291–92"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-harmondsworth-great-barn",
+   "record": "Q5659195",
+   "name": "Harmondsworth Great Barn",
+   "field": "date",
+   "research": "examples:Barn / tithe barn|Harmondsworth Great Barn",
+   "claim": "Built in 1426–7 and substantially of that date.",
+   "value": "1426–27",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Harmondsworth Great Barn, list entry 1194332",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101194332",
+     "locator": "list description",
+     "quote": "Built in 1426-7 and substantially of that date"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-garway-dovecote",
+   "record": "Q17530305",
+   "name": "Garway Dovecote",
+   "field": "date",
+   "research": "examples:Dovecote|Garway Dovecote",
+   "claim": "The listing dates it to the 14th century and calls the inscription over the door illegible.",
+   "value": "14th century (inscription read as 1326)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Garway Dovecote, list entry 1348781",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101348781",
+     "locator": "list description",
+     "quote": "above which is an illegible inscription (noted in RCHM)"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-lombe-s-mill--derby-silk-mill-",
+   "record": "Q507700",
+   "name": "Lombe's Mill (Derby Silk Mill)",
+   "field": "date",
+   "research": "examples:Factory / mill (industrial)|Lombe's Mill (Derby Silk Mill)",
+   "claim": "The silk mill was established in 1717 by John Lombe; the building was rebuilt in the late 19th century on the original arches.",
+   "value": "established 1717–21; rebuilt late 19th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Lombe's Mill (Derby Silk Mill), list entry 1287508",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101287508",
+     "locator": "list description",
+     "quote": "Rebuilt in late C19, but the original site and retaining some of the brickwork of the silk mill established in 1717 by John Lombe"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-cromford-mill",
+   "record": "Q2566525",
+   "name": "Cromford Mill",
+   "field": "date",
+   "research": "examples:Factory / mill (industrial)|Cromford Mill",
+   "claim": "Late-18th-century cotton mill by Arkwright.",
+   "value": "1771",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Cromford Mill, list entry 1248010",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101248010",
+     "locator": "list description",
+     "quote": "Late-C18 cotton-spinning mill by Sir Richard Arkwright"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ditherington-flax-mill",
+   "record": "Q1839955",
+   "name": "Ditherington Flax Mill",
+   "field": "date",
+   "research": "examples:Factory / mill (industrial)|Ditherington Flax Mill",
+   "claim": "Spinning mill of 1796–1800 by Charles Bage.",
+   "value": "1796–97",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Ditherington Flax Mill, list entry 1270576",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101270576",
+     "locator": "list description",
+     "quote": "Spinning Mill, 1796-1800 by Charles Bage"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-martin-s-church--canterbury",
+   "record": "Q840462",
+   "name": "St Martin's Church, Canterbury",
+   "field": "date",
+   "research": "examples:Church still in use|St Martin's Church, Canterbury",
+   "claim": "Bede (731) describes it as built while the Romans were still in Britain and used by Queen Bertha before Augustine's mission of 597; the listing records the same tradition and a 7th-century chancel.",
+   "value": "6th century (in use before 597); chancel 7th century",
+   "verdict": "kept",
+   "assessment": "A primary source (Bede) and the official list description support use before 597; the Roman origin is Bede's statement, not proven in the fabric.",
+   "sources": [
+    {
+     "title": "Bede, Ecclesiastical History of the English People (731), tr. L. C. Jane (1903)",
+     "author": "Bede (Internet Medieval Sourcebook, Fordham University)",
+     "kind": "primary",
+     "url": "https://sourcebooks.fordham.edu/basis/bede-book1.asp",
+     "locator": "Book I, chapter 26",
+     "quote": "There was on the east side of the city a church dedicated to the honour of St. Martin, built whilst the Romans were still in the island, wherein the queen"
+    },
+    {
+     "title": "St Martin's Church, Canterbury, list entry 1242166",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101242166",
+     "locator": "list description",
+     "quote": "This is supposed to be the church outside the city walls where, before the Conversion, Queen Bertha worshipped"
+    },
+    {
+     "title": "St Martin's Church, Canterbury, list entry 1242166",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101242166",
+     "locator": "list description",
+     "quote": "The interior contains a C7 chancel"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-peter-on-the-wall",
+   "record": "Q5073092",
+   "name": "St Peter-on-the-Wall",
+   "field": "date",
+   "research": "examples:Church still in use|St Peter-on-the-Wall",
+   "claim": "Said to have been built by Bishop Cedd, about 654.",
+   "value": "c. 654",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St Peter-on-the-Wall, list entry 1110942",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101110942",
+     "locator": "list description",
+     "quote": "Said to have been built by the Saxon Bishop Cedd, circa 654"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-canterbury-cathedral",
+   "record": "Q29265",
+   "name": "Canterbury Cathedral",
+   "field": "date",
+   "research": "examples:Cathedral|Canterbury Cathedral",
+   "claim": "St Augustine reconsecrated the church in 602.",
+   "value": "founded 597; reconsecrated 602; fabric from 1070",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Canterbury Cathedral, list entry 1336823",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101336823",
+     "locator": "list description",
+     "quote": "St Augustine reconsecrated the church in 602 AD"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-rochester-cathedral",
+   "record": "Q2635720",
+   "name": "Rochester Cathedral",
+   "field": "date",
+   "research": "examples:Cathedral|Rochester Cathedral",
+   "claim": "The listing records 7th-century origins and a mid-12th-century rebuilding.",
+   "value": "founded 604; fabric 12th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Rochester Cathedral, list entry 1086423",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101086423",
+     "locator": "list description",
+     "quote": "C7 origins"
+    },
+    {
+     "title": "Rochester Cathedral, list entry 1086423",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101086423",
+     "locator": "list description",
+     "quote": "Mid-C12 rebuilding"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-bangor-cathedral",
+   "record": "Q1991360",
+   "name": "Bangor Cathedral",
+   "field": "date",
+   "research": "examples:Cathedral|Bangor Cathedral",
+   "claim": "The present structure dates back to the early 12th century.",
+   "value": "site c. 525; structure early 12th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Bangor Cathedral, Cadw 4027",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=4027",
+     "locator": "list description",
+     "quote": "The present structure can be dated back to early C12"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-st-magnus-cathedral",
+   "record": "Q732112",
+   "name": "St Magnus Cathedral",
+   "field": "date",
+   "research": "examples:Cathedral|St Magnus Cathedral",
+   "claim": "Begun 1137.",
+   "value": "1137",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "St Magnus Cathedral, HES LB36668",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB36668",
+     "locator": "list description",
+     "quote": "begun, 1137"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-glasgow-cathedral",
+   "record": "Q1473348",
+   "name": "Glasgow Cathedral",
+   "field": "date",
+   "research": "examples:Cathedral|Glasgow Cathedral",
+   "claim": "Begun c. 1118, consecrated 1136; building in the 1180s before the second consecration in 1197.",
+   "value": "consecrated 1136 and 1197",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Glasgow Cathedral, HES LB32654",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB32654",
+     "locator": "list description",
+     "quote": "A new cathedral to serve the diocese of Glasgow was begun circa 1118 and consecrated in 1136"
+    },
+    {
+     "title": "Glasgow Cathedral, HES LB32654",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB32654",
+     "locator": "list description",
+     "quote": "prior to its second consecration in 1197"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-bevis-marks-synagogue",
+   "record": "Q851924",
+   "name": "Bevis Marks Synagogue",
+   "field": "date",
+   "research": "examples:Synagogue|Bevis Marks Synagogue",
+   "claim": "Built 1701; the second synagogue built in England after the resettlement.",
+   "value": "1701",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Bevis Marks Synagogue, list entry 1064745",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101064745",
+     "locator": "list description",
+     "quote": "This was the 2nd synagogue erected in England after the resettlement of 1656"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-plymouth-synagogue",
+   "record": "Q7205862",
+   "name": "Plymouth Synagogue",
+   "field": "date",
+   "research": "examples:Synagogue|Plymouth Synagogue",
+   "claim": "Founded 1762; the oldest English Ashkenazi synagogue.",
+   "value": "1762",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Plymouth Synagogue, list entry 1130015",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101130015",
+     "locator": "list description",
+     "quote": "Founded 1762, remodelled interior 1862"
+    },
+    {
+     "title": "Plymouth Synagogue, list entry 1130015",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101130015",
+     "locator": "list description",
+     "quote": "This is the oldest English Ashkenazi synagogue"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-merthyr-tydfil-synagogue",
+   "record": "Q6820682",
+   "name": "Merthyr Tydfil Synagogue",
+   "field": "date",
+   "research": "examples:Synagogue|Merthyr Tydfil Synagogue",
+   "claim": "Built as a synagogue 1872–5 (not 1877).",
+   "value": "1872–75",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Merthyr Tydfil Synagogue, Cadw 11426",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=11426",
+     "locator": "list description",
+     "quote": "Built as a Synagogue, 1872-5"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-garnethill-synagogue",
+   "record": "Q5523667",
+   "name": "Garnethill Synagogue",
+   "field": "date",
+   "research": "examples:Synagogue|Garnethill Synagogue",
+   "claim": "Built 1877–79 (John McLeod and N. Joseph).",
+   "value": "1877–79",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Garnethill Synagogue, HES LB33040",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB33040",
+     "locator": "list description",
+     "quote": "Joseph, 1877-79"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-brigflatts-meeting-house",
+   "record": "Q4967239",
+   "name": "Brigflatts Meeting House",
+   "field": "date",
+   "research": "examples:Quaker / nonconformist meeting house|Brigflatts Meeting House",
+   "claim": "Dated 1675 on the porch.",
+   "value": "1675",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Brigflatts Meeting House, list entry 1384080",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101384080",
+     "locator": "list description",
+     "quote": "Dated 1675 on porch"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-jordans-meeting-house",
+   "record": "Q17527062",
+   "name": "Jordans Meeting House",
+   "field": "date",
+   "research": "examples:Quaker / nonconformist meeting house|Jordans Meeting House",
+   "claim": "Dated 1688 (formerly incised on the cornice).",
+   "value": "1688",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Jordans Meeting House, list entry 1332449",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101332449",
+     "locator": "list description",
+     "quote": "1688 (formerly incised on cornice)"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-maesyronnen-chapel",
+   "record": "Q6729371",
+   "name": "Maesyronnen Chapel",
+   "field": "date",
+   "research": "examples:Quaker / nonconformist meeting house|Maesyronnen Chapel",
+   "claim": "Adapted for worship and registered in 1696.",
+   "value": "c. 1696",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Maesyronnen Chapel, Cadw 8756",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=8756",
+     "locator": "list description",
+     "quote": "The chapel was adapted for worship by dissenters and registered at Presteigne in 1696"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-berkeley-castle",
+   "record": "Q4891993",
+   "name": "Berkeley Castle",
+   "field": "date",
+   "research": "examples:Castle still inhabited|Berkeley Castle",
+   "claim": "Late 11th century, the shell keep enlarged in 1153.",
+   "value": "late 11th–12th century (shell keep 1153)",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Berkeley Castle, list entry 1340692",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101340692",
+     "locator": "list description",
+     "quote": "Late C11 altered mid C12 and mid C14"
+    },
+    {
+     "title": "Berkeley Castle, list entry 1340692",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101340692",
+     "locator": "list description",
+     "quote": "Shell keep enlarged 1153"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-chirk-castle",
+   "record": "Q3306356",
+   "name": "Chirk Castle",
+   "field": "date",
+   "research": "examples:Castle still inhabited|Chirk Castle",
+   "claim": "Probably begun soon after 1295 for Roger Mortimer.",
+   "value": "begun after 1295",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Chirk Castle, Cadw 598",
+     "author": "Cadw",
+     "kind": "listing",
+     "url": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=598",
+     "locator": "list description",
+     "quote": "The original castle was probably begun soon after 1295"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-cubbie-roo-s-castle",
+   "record": "Q2459452",
+   "name": "Cubbie Roo's Castle",
+   "field": "date",
+   "research": "examples:Tower house|Cubbie Roo's Castle",
+   "claim": "A castle of the mid 12th century, built by Kolbein Hruga (Orkneyinga saga).",
+   "value": "mid 12th century",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Cubbie Roo's Castle, HES SM90079",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/SM90079",
+     "locator": "list description",
+     "quote": "It comprises a castle, dating to the mid 12th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-king-s-observatory",
+   "record": "Q3348489",
+   "name": "King's Observatory",
+   "field": "date",
+   "research": "examples:Observatory|King's Observatory",
+   "claim": "Built 1768–9 for George III.",
+   "value": "1768–69",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "King's Observatory, list entry 1357729",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101357729",
+     "locator": "list description",
+     "quote": "Built 1768-9 when Dr Stephen Demainbray"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-radcliffe-observatory",
+   "record": "Q2066160",
+   "name": "Radcliffe Observatory",
+   "field": "date",
+   "research": "examples:Observatory|Radcliffe Observatory",
+   "claim": "First stone laid 27 June 1772; completed 1795.",
+   "value": "1772–95",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Radcliffe Observatory, list entry 1047070",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101047070",
+     "locator": "list description",
+     "quote": "The first stone was laid June 27, 1772"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-city-observatory--calton-hill",
+   "record": "Q1632035",
+   "name": "City Observatory, Calton Hill",
+   "field": "date",
+   "research": "examples:Observatory|City Observatory, Calton Hill",
+   "claim": "Designed by Playfair, 1818.",
+   "value": "1818",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "City Observatory, Calton Hill, HES LB27603",
+     "author": "HES",
+     "kind": "listing",
+     "url": "https://portal.historicenvironment.scot/designation/LB27603",
+     "locator": "list description",
+     "quote": "Playfair, 1818."
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-palm-house--kew",
+   "record": "Q17528039",
+   "name": "Palm House, Kew",
+   "field": "date",
+   "research": "examples:Greenhouse / glasshouse|Palm House, Kew",
+   "claim": "Built 1844–1848 by Richard Turner with Decimus Burton.",
+   "value": "1844–1848",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Palm House, Kew, list entry 1262670",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101262670",
+     "locator": "list description",
+     "quote": "1844-1848. Designed by Richard Turner engineer of Dublin"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-ryde-pier",
+   "record": "Q7384881",
+   "name": "Ryde Pier",
+   "field": "date",
+   "research": "examples:Pier|Ryde Pier",
+   "claim": "Begun in 1813.",
+   "value": "1813–14",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Ryde Pier, list entry 1239551",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101239551",
+     "locator": "list description",
+     "quote": "Begun in 1813, extended and altered through the C19"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-southend-pier",
+   "record": "Q6273174",
+   "name": "Southend Pier",
+   "field": "date",
+   "research": "examples:Pier|Southend Pier",
+   "claim": "The present pier is of 1889 by James Brunlees; the first (timber) pier of 1830 does not survive.",
+   "value": "1889 (first pier on the site 1830)",
+   "verdict": "corrected",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "sources": [
+    {
+     "title": "Southend Pier, list entry 1112705",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101112705",
+     "locator": "list description",
+     "quote": "A pier of 1889, designed by James Brunlees"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-gravesend-town-pier",
+   "record": "Q5597925",
+   "name": "Gravesend Town Pier",
+   "field": "date",
+   "research": "examples:Pier|Gravesend Town Pier",
+   "claim": "Built 1831–4 by W. T. Clark.",
+   "value": "1831–34",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Gravesend Town Pier, list entry 1089004",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101089004",
+     "locator": "list description",
+     "quote": "1831-4 by WT Clark"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-somerset-house",
+   "record": "Q1344889",
+   "name": "Somerset House",
+   "field": "date",
+   "research": "examples:Purpose-built office building|Somerset House",
+   "claim": "The New Public Offices of 1776–96 by Sir William Chambers.",
+   "value": "1776–96",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Somerset House, list entry 1237041",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101237041",
+     "locator": "list description",
+     "quote": "The New Public Offices 1776-96 by Sir William Chambers"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-oriel-chambers",
+   "record": "Q7102250",
+   "name": "Oriel Chambers",
+   "field": "date",
+   "research": "examples:Purpose-built office building|Oriel Chambers",
+   "claim": "Office building, 1864.",
+   "value": "1864",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Oriel Chambers, list entry 1291943",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101291943",
+     "locator": "list description",
+     "quote": "Office building, 1864."
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-albany",
+   "record": "Q2637274",
+   "name": "Albany",
+   "field": "date",
+   "research": "examples:Apartment block / tenement|Albany",
+   "claim": "Converted and extended as apartments by Henry Holland in 1802–03.",
+   "value": "house 1770s; flats 1802–03",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "Albany, list entry 1209755",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101209755",
+     "locator": "list description",
+     "quote": "converted and extended as apartments by Henry Holland in 1802-03"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-the-circus--bath",
+   "record": "Q893229",
+   "name": "The Circus, Bath",
+   "field": "date",
+   "research": "examples:Terrace housing|The Circus, Bath",
+   "claim": "Built 1754–69 by the two John Woods.",
+   "value": "1754–69",
+   "verdict": "kept",
+   "assessment": "The official list description supports the research date.",
+   "sources": [
+    {
+     "title": "The Circus, Bath, list entry 1394142",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101394142",
+     "locator": "list description",
+     "quote": "1754-69 by John Wood the Elder"
     }
    ],
    "researched": "2026-10-21"

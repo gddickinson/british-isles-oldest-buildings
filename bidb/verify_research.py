@@ -33,6 +33,9 @@ def _wiki_title(url):
     return unquote(m.group(1)).replace("_", " ") if m else None
 
 
+MIN_TEXT = 200
+
+
 def source_text(url):
     """Plain text of a source page, or None."""
     title = _wiki_title(url)
@@ -47,7 +50,8 @@ def source_text(url):
         if r.status_code != 200:
             return None
         text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", r.text, flags=re.S | re.I)
-        return html.unescape(re.sub(r"<[^>]+>", " ", text))
+        text = html.unescape(re.sub(r"<[^>]+>", " ", text))
+        return text if len(text.strip()) >= MIN_TEXT else None      # a refusal ("no scraping"), not a page
     except (requests.RequestException, ValueError, RuntimeError):
         return None
 

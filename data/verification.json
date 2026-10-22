@@ -217,7 +217,8 @@
   },
   "Irish round towers": {
    "source": "https://en.wikipedia.org/wiki/Irish_round_tower",
-   "status": "year-missing"
+   "status": "evidenced",
+   "evidence": "The bell-house of Sláine was burned by the foreigners of Áth Cliath (Annals of Ulster (CELT translation, ed. Mac Airt and Mac Niocaill))"
   },
   "Founding of Tynwald": {
    "source": "https://en.wikipedia.org/wiki/Tynwald",
@@ -603,8 +604,8 @@
  "examples": {
   "Public house|Ye Olde Fighting Cocks": {
    "source": "https://en.wikipedia.org/wiki/Ye_Olde_Fighting_Cocks",
-   "status": "confirmed",
-   "evidence": "It is one of several pubs that lay claim to being the oldest in England, claiming to have been in business since 793 AD."
+   "status": "evidenced",
+   "evidence": "Octagonal, 2-storey timber framed building of C16 appearance (Ye Olde Fighting Cocks, list entry 1347100)"
   },
   "Public house|Sean's Bar": {
    "source": "https://en.wikipedia.org/wiki/Sean's_Bar",
@@ -613,8 +614,8 @@
   },
   "Public house|Bingley Arms": {
    "source": "https://en.wikipedia.org/wiki/The_Bingley_Arms",
-   "status": "confirmed",
-   "evidence": "The Bingley Arms calls itself the oldest pub in Britain, with a history dating back to between 905 and 953, and says that it served as a safe house for persecuted Catholic priests, and also as a courthouse from around 1000 from which offenders were taken to the pillory across the road."
+   "status": "evidenced",
+   "evidence": "with mid C19 extension when S:M 1738 roof was raised (Bingley Arms, list entry 1313185)"
   },
   "Public house|Skirrid Mountain Inn": {
    "source": "https://en.wikipedia.org/wiki/The_Skirrid_Inn",
@@ -623,23 +624,23 @@
   },
   "Public house|Ye Olde Trip to Jerusalem": {
    "source": "https://en.wikipedia.org/wiki/Ye_Olde_Trip_to_Jerusalem",
-   "status": "confirmed",
-   "evidence": "The pub claims to have been established in 1189, the year Richard the Lionheart became king and Pope Gregory VIII called for the Third Crusade; however, no documentary evidence supports this date."
+   "status": "evidenced",
+   "evidence": "A public house, principally dating to the late-C17 and C18, extended in the C19 (Ye Olde Trip to Jerusalem, list entry 1271192)"
   },
   "Public house|Ye Olde Salutation Inn": {
    "source": "https://en.wikipedia.org/wiki/Ye_Olde_Salutation_Inn",
-   "status": "confirmed",
-   "evidence": "e Olde Salutation Inn (nicknamed The Sal) is a Grade II listed public house in Nottingham, with parts dating from around 1240."
+   "status": "evidenced",
+   "evidence": "C16 and mid C18, heavily restored and altered late C19 and mid C20 (Ye Olde Salutation Inn, list entry 1255137)"
   },
   "Public house|Adam and Eve": {
    "source": "https://en.wikipedia.org/wiki/Adam_and_Eve,_Norwich",
-   "status": "confirmed",
-   "evidence": "It is widely claimed to be the oldest pub in the city, with the earliest known reference made in 1249."
+   "status": "evidenced",
+   "evidence": "Former use unknown, now public house, C17 with C20 alterations (Adam and Eve, list entry 1372737)"
   },
   "Public house|Sheep Heid Inn": {
    "source": "https://en.wikipedia.org/wiki/Sheep_Heid_Inn",
-   "status": "confirmed",
-   "evidence": "There has reputedly been an inn on this site since 1360, although the core of the current building appears to date from the 18th century with later additions and alterations."
+   "status": "evidenced",
+   "evidence": "Mid 19th century with earlier fabric, 1880 skittle alley (Sheep Heid Inn, HES LB30077)"
   },
   "Public house|Grace Neill's": {
    "source": "https://en.wikipedia.org/wiki/Grace_Neill's",
@@ -653,8 +654,8 @@
   },
   "Inn / coaching inn|Angel and Royal": {
    "source": "https://en.wikipedia.org/wiki/Angel_and_Royal",
-   "status": "confirmed",
-   "evidence": "he Angel and Royal is a hotel in Grantham, Lincolnshire, which has had a hotel on site since 1203, making it one of the oldest hotels in the world."
+   "status": "evidenced",
+   "evidence": "Late C14, 2-storey, stone, stone slate roof, good medieval front to street (Angel and Royal, list entry 1062486)"
   },
   "Inn / coaching inn|The George Inn, Norton St Philip": {
    "source": "https://en.wikipedia.org/wiki/The_George_Inn,_Norton_St_Philip",
@@ -807,8 +808,9 @@
    "evidence": "1490, possibly using limestone salvaged from the recently ruined part of Malmesbury Abbey, which then began just across the market square from the cross."
   },
   "Market hall / market cross|Chichester Cross": {
-   "source": "https://en.wikipedia.org/wiki/Chichester_Cross",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101026826-the-market-cross-chichester",
+   "status": "confirmed",
+   "evidence": "1500."
   },
   "Market hall / market cross|Llanidloes Market Hall": {
    "source": "https://en.wikipedia.org/wiki/Old_Market_Hall,_Llanidloes",
@@ -931,8 +933,9 @@
    "evidence": "The oldest part, known as the Upper Library, is on the first floor of two orthogonal ranges of buildings that were built around 1373 by William Humberville as part of the completion of Mob Quad, one of the first collegiate quadrangles.The Upper Library was improved in the 16th century under Warden Sir Henry Savile."
   },
   "Library|Duke Humfrey's Library": {
-   "source": "https://en.wikipedia.org/wiki/Duke_Humfrey's_Library",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Bodleian_Library",
+   "status": "confirmed",
+   "evidence": "A suitable room was finally built above the Divinity School, and completed in 1488."
   },
   "Library|Francis Trigge Chained Library": {
    "source": "https://en.wikipedia.org/wiki/Francis_Trigge_Chained_Library",
@@ -940,8 +943,9 @@
    "evidence": "he Francis Trigge Chained Library is a chained library in Grantham, Lincolnshire, England which was founded in 1598."
   },
   "Library|Hereford Cathedral Library": {
-   "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+   "status": "confirmed",
+   "evidence": "In 1590 the whole library was moved to the Lady Chapel, and in 1611 the Chained Library (with books in manuscript chained to their places) was established by Thomas Thornton."
   },
   "Library|Chetham's Library": {
    "source": "https://en.wikipedia.org/wiki/Chetham's_Library",
@@ -1349,8 +1353,8 @@
    "evidence": "== Founding == The mill was built on land owned by the surgeon Herbert Jones for £529, 11s in 1775–1776 (equivalent to £100,000 in 2025)."
   },
   "Windmill|Ballycopeland Windmill": {
-   "source": "https://en.wikipedia.org/wiki/Ballycopeland_Windmill",
-   "status": "year-missing"
+   "source": "https://www.geograph.org.uk/photo/995399",
+   "status": "unreachable"
   },
   "Windmill|Tacumshane Windmill": {
    "source": "https://en.wikipedia.org/wiki/Tacumshane",
@@ -1383,8 +1387,9 @@
    "evidence": "The present structure of the House Mill was built in 1776 by Daniel Bisson."
   },
   "Tide mill|Eling Tide Mill": {
-   "source": "https://en.wikipedia.org/wiki/Eling_Tide_Mill",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101179062-tide-mill-totton-and-eling",
+   "status": "evidenced",
+   "evidence": "Mid C18 on site of mill dating from c1420, altered C19 and C20, worked until 1948, restored 1978-83 (Tide Mill, Eling, list entry 1179062 (Grade II*))"
   },
   "Tide mill|Woodbridge Tide Mill": {
    "source": "https://en.wikipedia.org/wiki/Woodbridge_Tide_Mill",
@@ -1453,7 +1458,8 @@
   },
   "Brewery / distillery|Glenturret distillery": {
    "source": "https://en.wikipedia.org/wiki/Glenturret_distillery",
-   "status": "year-missing"
+   "status": "confirmed",
+   "evidence": "== History == The distillery was officially established in 1763, but had previously been under the control of illicit distillers, who sought to avoid paying taxes, since 1717."
   },
   "Brewery / distillery|Bowmore distillery": {
    "source": "https://en.wikipedia.org/wiki/Bowmore_distillery",
@@ -1516,8 +1522,9 @@
    "evidence": "The Chapel of St Peter-on-the-Wall was almost certainly originally built by Bishop Cedd in 654."
   },
   "Church still in use|Escomb Church": {
-   "source": "https://en.wikipedia.org/wiki/Escomb_Church",
-   "status": "year-missing"
+   "source": "https://britishlistedbuildings.co.uk/101292122-the-saxon-church-west-auckland-ward",
+   "status": "evidenced",
+   "evidence": "C7 with C14 porch and some C13 and C19 windows (The Saxon Church, Escomb, list entry 1292122 (Grade I))"
   },
   "Church still in use|All Saints' Church, Brixworth": {
    "source": "https://en.wikipedia.org/wiki/All_Saints'_Church,_Brixworth",
@@ -1591,8 +1598,8 @@
   },
   "Synagogue|Merthyr Tydfil Synagogue": {
    "source": "https://en.wikipedia.org/wiki/Merthyr_Synagogue",
-   "status": "confirmed",
-   "evidence": "The 1855 building was replaced by the prosperous congregation with the surviving synagogue building in 1877."
+   "status": "evidenced",
+   "evidence": "Built as a Synagogue, 1872-5 (Merthyr Tydfil Synagogue, Cadw 11426)"
   },
   "Synagogue|Garnethill Synagogue": {
    "source": "https://en.wikipedia.org/wiki/Garnethill_Synagogue",
@@ -1615,8 +1622,9 @@
    "evidence": "Why don't you be the first to send us one? Upload Photo » Approximate Location Map Large Map » Coordinates Latitude: 51.4512 / 51°27'4\"N Longitude: -0.2074 / 0°12'26\"W OS Eastings: 524660 OS Northings: 173988 OS Grid: TQ246739 Mapcode National: GBR CD.6DQ Mapcode Global: VHGR4.CS7D Plus Code: 9C3XFQ2V+F3 Entry Name: Fazl Mosque Listing Date: 9 March 2018 Grade: II Source: Historic England Source I"
   },
   "Mosque|Ballyhaunis Mosque": {
-   "source": "https://en.wikipedia.org/wiki/Ballyhaunis",
-   "status": "year-missing"
+   "source": "https://en.wikipedia.org/wiki/Islam_in_Ireland",
+   "status": "confirmed",
+   "evidence": "Imam: Abdulrahman Alhaddad Ballyhaunis Mosque, Ballyhaunis, County Mayo, was built in 1987, making it the first purpose-built mosque in Ireland."
   },
   "Quaker / nonconformist meeting house|Friends Meeting House, Hertford": {
    "source": "https://quaker.org.uk/meetings/hertford",
@@ -1786,7 +1794,7 @@
   "Pier|Southend Pier": {
    "source": "https://en.wikipedia.org/wiki/Southend_Pier",
    "status": "confirmed",
-   "evidence": "By June 1830, a 180-metre (590 ft) wooden pier was opened, using around 90 oak trees in its construction."
+   "evidence": "The timber pier was replaced by an iron pier that opened to the public in August 1889."
   },
   "Pier|Gravesend Town Pier": {
    "source": "https://en.wikipedia.org/wiki/Town_Pier,_Gravesend",
@@ -1855,8 +1863,8 @@
   }
  },
  "summary": {
-  "confirmed": 325,
-  "evidenced": 38,
-  "year-missing": 9
+  "confirmed": 322,
+  "evidenced": 49,
+  "unreachable": 1
  }
 }

@@ -194,6 +194,7 @@
  },
  "event-irish-round-towers": {
   "sources": [
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-21"
@@ -318,30 +319,35 @@
  "oldest-escomb-church": {
   "sources": [
    "quote-found",
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-21"
  },
  "oldest-chichester-cross": {
   "sources": [
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-21"
  },
  "oldest-duke-humfrey-s-library": {
   "sources": [
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-21"
  },
  "oldest-hereford-cathedral-library": {
   "sources": [
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-21"
  },
  "oldest-eling-tide-mill": {
   "sources": [
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-21"
@@ -434,6 +440,642 @@
   "checked": "2026-10-21"
  },
  "oldest-merchants--warehouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-ballycopeland-windmill": {
+  "sources": [
+   "unreachable"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-ye-olde-fighting-cocks": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-bingley-arms": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-ye-olde-trip-to-jerusalem": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-ye-olde-salutation-inn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-adam-and-eve": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-sheep-heid-inn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-mermaid-inn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-angel-and-royal": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-the-george-inn--norton-st-philip": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-new-inn--gloucester": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-skara-brae": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-saltford-manor-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-moyse-s-hall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-gladstone-s-land": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-priest-s-house--muchelney": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-stokesay-castle": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-markenfield-hall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-the-old-bell-hotel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-salutation-hotel": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-lady-row": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-lock---co--hatters": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-malmesbury-market-cross": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-leicester-guildhall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-george-s-guildhall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-guildhall--london": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-musselburgh-tolbooth": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-eton-college": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-old-court--corpus-christi-college": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-salvator-s-chapel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-chetham-s-library": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-innerpeffray-library": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-hospital-of-st-cross": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-lord-leycester-hospital": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-browne-s-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-bartholomew-s-hospital": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-leper-chapel--cambridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-guy-s-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-inveraray-jail": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-beaumaris-gaol": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-theatre-royal--bristol--bristol-old-vic-": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-georgian-theatre-royal": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-theatre-royal--drury-lane": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-theatre-royal--glasgow": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-duke-of-york-s-picture-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-electric-cinema--notting-hill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-hippodrome--bo-ness": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-holywell-music-room": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-cecilia-s-hall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-royal-albert-hall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-british-museum": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-dundas-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-causey-arch": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-pont-y-cafnau": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-laigh-milton-viaduct": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-skerne-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-sankey-viaduct": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-high-bridge--lincoln": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-monnow-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-brig-o--balgownie": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-the-iron-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-catherine-s-oratory": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-smeaton-s-tower": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-pitstone-windmill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-chesterton-windmill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-outwood-windmill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-llynnon-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-house-mill--three-mills": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-carew-tidal-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-great-coxwell-barn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-harmondsworth-great-barn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-garway-dovecote": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-lombe-s-mill--derby-silk-mill-": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-cromford-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-ditherington-flax-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-martin-s-church--canterbury": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-peter-on-the-wall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-canterbury-cathedral": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-rochester-cathedral": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-bangor-cathedral": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-st-magnus-cathedral": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-glasgow-cathedral": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-bevis-marks-synagogue": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-plymouth-synagogue": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-merthyr-tydfil-synagogue": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-garnethill-synagogue": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-brigflatts-meeting-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-jordans-meeting-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-maesyronnen-chapel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-berkeley-castle": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-chirk-castle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-cubbie-roo-s-castle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-king-s-observatory": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-radcliffe-observatory": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-city-observatory--calton-hill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-palm-house--kew": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-ryde-pier": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-southend-pier": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-gravesend-town-pier": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-somerset-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-oriel-chambers": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-albany": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-21"
+ },
+ "oldest-the-circus--bath": {
   "sources": [
    "quote-found"
   ],

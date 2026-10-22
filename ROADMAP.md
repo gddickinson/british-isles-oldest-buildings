@@ -309,16 +309,27 @@ Detail views show "Evidence"; the Data quality page lists every claim. Sources t
       Castle prison 1196, Winchester City Mill 1744, brochs c. 300 BC, Knap of Howar c. 3800 BC, Greensted Church
       timbers 1053+, Brixworth late 8th/early 9th c., Castle of Old Wick 14th c., Arnol Blackhouse c. 1880, Merchants'
       Warehouse 1823…); 12 sources replaced (wrong article or unreadable) by listing texts and better articles.
-      Verification now: 325 confirmed, 38 evidenced, 9 open. Still open (R2b): Escomb (c. 670–675 vs early 8th c.),
-      Chichester Cross (1501?), Duke Humfrey's Library (1487/1488), Hereford chained library (1611), Eling Tide Mill
-      (1785), Ballyhaunis mosque (1987), Glenturret (1763 vs 1775), Irish round towers (c. 950 vs 9th century),
-      Ballycopeland Windmill (NI record page not readable). Jews' Court: a 1316 charter places the synagogue behind it.
-- [ ] R3 Oldest-of-type claims: add primary or listing evidence for each researched example (charters, Domesday,
-      dendrochronology reports, listing texts).
+      Verification then: 325 confirmed, 38 evidenced, 9 open.
+- [x] R2b (2026-10-21) The 9 left open: Duke Humfrey's 1488 (Bodleian Library), Hereford chained library 1611
+      (Thornton), Ballyhaunis 1987, Escomb 7th c. (list entry 1292122: "C7"; 670–690), Irish round towers c. 950
+      (Annals of Ulster U950.7, the bell-house of Slane: primary), Ballycopeland c. 1790 (Geograph after McCutcheon;
+      the site refuses scripts, so "unreachable"); corrected: Chichester Cross c. 1500 (listing), Eling Tide Mill mid
+      C18 (listing), Glenturret 1763. Catalogue dates now follow the research file without a rebuild
+      (`refresh_claims`); 8 researched examples that were in the catalogue twice are merged (build fixed).
+- [~] R3 (2026-10-21, first pass) Oldest-of-type examples with an official list entry (146): 102 new claims quoting
+      the list description (`bidb/listings.py`), plus Bede (Book I ch. 26) for St Martin's, Canterbury. Most confirm
+      the research date; the listing contradicts the claimed date for 9, now corrected with the claim kept as a claim
+      (Ye Olde Fighting Cocks C16 not 793, Bingley Arms 1738 not 953, Ye Olde Trip late C17 not 1189 — the listing
+      says its history as a pub "appears to date to 1760" —, Salutation Inn C16, Adam and Eve C17, Sheep Heid mid C19,
+      Angel and Royal late C14, Merthyr Synagogue 1872–5, Southend Pier 1889). Open: Innerpeffray (founded 1680 or
+      1691?); Stokesay's list entry says "c1391-1400" (a slip for 1291?). Still to do: examples without an English,
+      Scottish or Welsh list entry (Ireland, Northern Ireland, research-only), 6 entries whose page has another layout
+      (Royal Hospital Chelsea, Tarr Steps, Pontcysyllte, Bourn Windmill, Aydon Castle, Royal Observatory), and
+      primary sources (charters, dendrochronology reports).
 - [ ] R4 Earliest-dated churches and manors: Anglo-Saxon charters (Electronic Sawyer), Domesday entries, the
       Anglo-Saxon Chronicle and Bede (in published translations), Victoria County History (British History Online).
-- [ ] R5 Historic England list texts behind the bot check: cite by list entry number (reproductions such as British
-      Listed Buildings can be checked by script).
+- [~] R5 Historic England list texts behind the bot check: cite by list entry number (reproductions such as British
+      Listed Buildings can be checked by script). `bidb/listings.py` reads them (both page layouts); used for R3.
 
 ## Archaeology: digs and treasure (added 2026-10-21)
 - [x] D1 Excavations (`bidb/digs.py`): 604 excavated sites on Wikidata (dated excavations, directors of fieldwork,

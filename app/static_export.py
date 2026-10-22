@@ -190,9 +190,17 @@ def _pack_map_tiles():
         (layer / "pack_index.json").write_text(json.dumps(where, separators=(",", ":")))
 
 
-def write_json_shards(items, stem):
-    """Write a list as JSON files of at most SHARD_BYTES each -> list of file names."""
+def write_json_shards(items, stem, key=None):
+    """Write a list as JSON files of at most SHARD_BYTES each -> list of file names; with `key`, one file per
+    key value instead (items sorted by it)."""
     names, chunk, size = [], [], 0
+    if key is not None:
+        from itertools import groupby
+        for k, part in groupby(items, key):
+            name = f"{stem}_{k}.json"
+            (DIST / "data" / name).write_text(json.dumps(list(part), ensure_ascii=False, separators=(",", ":")))
+            names.append(name)
+        return names
     def flush():
         name = f"{stem}_{len(names)}.json"
         (DIST / "data" / name).write_text(json.dumps(chunk, ensure_ascii=False, separators=(",", ":")))

@@ -16,6 +16,59 @@ def _trim(text, n):
     return text if len(text) <= n else text[:n].rsplit(" ", 1)[0] + " …"
 
 
+PLACE_SHARDS = 16        # a place's full row is in places_<shard_of(id)>.json (one file to open a place)
+CELL_LAT, CELL_LON = 1, 2   # light rows by location: pcells/<lat>_<lon>.json (1° by 2° cells)
+
+
+def shard_of(pid):
+    """Stable hash of an id over UTF-16 code units, mirrored by shardOf in static_places.js."""
+    h = 0
+    units = pid.encode("utf-16-le")
+    for i in range(0, len(units), 2):
+        h = (h * 31 + int.from_bytes(units[i:i + 2], "little")) & 0xFFFFFFFF
+    return h % PLACE_SHARDS
+
+
+def cell_of(lat, lon):
+    return f"{int(lat // CELL_LAT * CELL_LAT)}_{int(lon // CELL_LON * CELL_LON)}"
+
+
+def write_index(rows, out_dir):
+    """Light rows for building pages, place pages, the people pages and plain map layers, without the full
+    places: [id, name, lat, lon, label index, group index, date_text, building_id] (trailing nulls dropped,
+    coordinates to ~1 m) in location cells, plus places_index.json (labels, groups, cell sizes, objects kept
+    in each building)."""
+    import shutil
+    lab = lambda r: r.get("kind_label") or KIND_DEFAULTS.get(r.get("kind"), [None, None])[0] or ""
+    grp = lambda r: r.get("kind_group") or KIND_DEFAULTS.get(r.get("kind"), [None, None])[1] or ""
+    labels = sorted({lab(r) for r in rows})
+    groups = sorted({grp(r) for r in rows})
+    li, gi = {v: i for i, v in enumerate(labels)}, {v: i for i, v in enumerate(groups)}
+    rnd = lambda v: round(v, 5) if v is not None else None
+    cells, objects, nowhere = {}, {}, []
+    for r in rows:
+        row = [r["id"], r["name"], rnd(r.get("lat")), rnd(r.get("lon")), li[lab(r)], gi[grp(r)], r.get("date_text"),
+               r.get("building_id")]
+        while row[-1] is None:
+            row.pop()
+        if r.get("building_id"):
+            objects.setdefault(r["building_id"], []).append(row)
+        if r.get("lat") is None or r.get("lon") is None:
+            nowhere.append(row)
+        else:
+            cells.setdefault(cell_of(r["lat"], r["lon"]), []).append(row)
+    folder = out_dir / "pcells"
+    shutil.rmtree(folder, ignore_errors=True)
+    folder.mkdir()
+    for key, part in cells.items():
+        (folder / f"{key}.json").write_text(json.dumps(part, ensure_ascii=False, separators=(",", ":")))
+    (out_dir / "places_geo.json").unlink(missing_ok=True)          # replaced by the cells (2026-10-22)
+    (out_dir / "places_index.json").write_text(json.dumps(
+        {"labels": labels, "groups": groups, "cell": [CELL_LAT, CELL_LON], "shards": PLACE_SHARDS,
+         "cells": {k: len(v) for k, v in sorted(cells.items())}, "objects": objects, "nowhere": nowhere},
+        ensure_ascii=False, separators=(",", ":")))
+
+
 def export(conn, out_dir, write_shards):
     """Write place shards (via write_shards) and people.json; returns the place shard names."""
     if not places_db.has_tables(conn):
@@ -44,25 +97,8 @@ def export(conn, out_dir, write_shards):
             if d.get("url") == WIKIDATA + d["id"]:
                 del d["url"]
         rows.append(d)
-    names = write_shards(rows, "places")
-    # light index for building pages ("related": objects kept there, places nearby) without the 50 MB
-    # rows [id, name, lat, lon, label index, group index, date_text, building_id] with trailing nulls dropped
-    # (labels and groups once each, coordinates to ~1 m: an artifact file holds at most 16 MB)
-    lab = lambda r: r.get("kind_label") or KIND_DEFAULTS.get(r.get("kind"), [None, None])[0] or ""
-    grp = lambda r: r.get("kind_group") or KIND_DEFAULTS.get(r.get("kind"), [None, None])[1] or ""
-    labels = sorted({lab(r) for r in rows})
-    groups = sorted({grp(r) for r in rows})
-    li, gi = {v: i for i, v in enumerate(labels)}, {v: i for i, v in enumerate(groups)}
-    rnd = lambda v: round(v, 5) if v is not None else None
-    geo = []
-    for r in rows:
-        row = [r["id"], r["name"], rnd(r.get("lat")), rnd(r.get("lon")), li[lab(r)], gi[grp(r)], r.get("date_text"),
-               r.get("building_id")]
-        while row[-1] is None:
-            row.pop()
-        geo.append(row)
-    (out_dir / "places_geo.json").write_text(json.dumps({"labels": labels, "groups": groups, "rows": geo},
-                                                        ensure_ascii=False, separators=(",", ":")))
+    names = write_shards(sorted(rows, key=lambda r: shard_of(r["id"])), "places", key=lambda r: shard_of(r["id"]))
+    write_index(rows, out_dir)
     persons = [{k: v for k, v in dict(r).items() if v not in (None, "") and k != "image_thumb"}
                for r in conn.execute("SELECT * FROM persons")]
     for p in persons:

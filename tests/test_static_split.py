@@ -45,3 +45,30 @@ class MinorRoads(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PlaceIndex(unittest.TestCase):
+    def test_shard_hash_matches_browser(self):
+        import subprocess
+        from app.static_places import shard_of
+        ids = ["Q42", "Q126713899", "pio-ruthin-school", "hed-12345", "mm-é-museum", "x"]
+        src = Path("app/static/static_places.js").read_text()
+        body = src[src.index("const shardOf"):src.index("const SHARDS")]
+        js = f"const INDEX = {{shards: 16}}; {body}; console.log(JSON.stringify({json.dumps(ids)}.map(shardOf)))"
+        got = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, check=True).stdout)
+        self.assertEqual(got, [shard_of(i) for i in ids])
+
+    def test_cells_and_objects(self):
+        from app.static_places import write_index
+        rows = [{"id": "a", "name": "A", "lat": 51.5, "lon": -0.1, "kind": "x", "kind_label": "Mill", "kind_group": "G"},
+                {"id": "b", "name": "B", "lat": 51.6, "lon": -1.2, "kind_label": "Mill", "kind_group": "G",
+                 "building_id": "Q1"},
+                {"id": "c", "name": "C", "kind_label": "Hoard", "kind_group": "H"}]
+        with tempfile.TemporaryDirectory() as tmp:
+            write_index(rows, Path(tmp))
+            ix = json.loads((Path(tmp) / "places_index.json").read_text())
+            cell = json.loads((Path(tmp) / "pcells" / "51_-2.json").read_text())
+        self.assertEqual(ix["cells"], {"51_-2": 2})
+        self.assertEqual([r[0] for r in cell], ["a", "b"])
+        self.assertEqual(ix["objects"]["Q1"][0][0], "b")
+        self.assertEqual(ix["nowhere"][0][:2], ["c", "C"])

@@ -27,7 +27,9 @@ const Evidence = (() => {
     const rows = Object.values(await all()).flat();
     if (!rows.length) return;
     box.innerHTML = `<table class="grid small"><thead><tr><th>Record</th><th>Claim</th><th>Verdict</th><th>Sources</th></tr></thead>
-      <tbody>${rows.map((c) => `<tr><td><a href="${buildingUrl(c.record)}">${esc(c.name)}</a></td><td>${esc(c.claim)}</td>
+      <tbody>${rows.map((c) => `<tr><td>${c.record.startsWith("research:") ? `${esc(c.name)} <span class="meta">(${
+        c.research && c.research.startsWith("events:") ? "history event" : "oldest of its type"})</span>`
+        : `<a href="${buildingUrl(c.record)}">${esc(c.name)}</a>`}</td><td>${esc(c.claim)}</td>
       <td>${esc(VERDICT[c.verdict] || c.verdict)}</td><td>${c.sources.map((s) => `${esc(KIND[s.kind] || s.kind)}: ${
         (CHECK[s.check] || ["not checked"])[0]}`).join("<br>")}</td></tr>`).join("")}</tbody></table>`;
   }

@@ -367,4 +367,9 @@
 - R1 Althorp: c. 1508 kept (Historic England list entry 1356626 via British Listed Buildings; Wikipedia's "1688"
   rests on Jones 1829). Hadlow Castle: corrected from Wikidata's 1852 to late C18 house / tower 1838–40 (list entry
   1070451). 6 of 6 quotes found by the checker. Date checks: no conflicts left (Reviewed 125).
+- R2 first batch: research entries whose year was not found in the cited source. `verify_research` now counts a
+  researched claim (evidence.json `research` key, all quotes found) as "evidenced". 25 claims added (32 quotes,
+  all found); corrections in `oldest_by_type.json` (Royal Hospital Kilmainham 1679–1687, Lancaster Castle prison
+  1196, Winchester City Mill 1744) and `history.json` (brochs c. 300 BC). Verification: confirmed 306,
+  evidenced 20, year-missing 42, unreachable 4 (was 303 / 0 / 66 / 3).
 

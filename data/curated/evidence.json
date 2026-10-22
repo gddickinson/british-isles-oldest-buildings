@@ -74,6 +74,564 @@
     }
    ],
    "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-skirrid-mountain-inn",
+   "record": "Q7764647",
+   "name": "Skirrid Mountain Inn",
+   "field": "date",
+   "research": "examples:Public house|Skirrid Mountain Inn",
+   "claim": "Claimed to date from 1110 by tradition; the present building is mainly mid-to-late 17th century.",
+   "value": "1110 (tradition); building 17th century",
+   "verdict": "kept",
+   "assessment": "The early date is a claim; the research file already records it as tradition.",
+   "sources": [
+    {
+     "title": "The Skirrid Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Skirrid_Inn",
+     "locator": "article",
+     "quote": "the present building is of mainly mid-late 17th century construction"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-the-george-inn--southwark",
+   "record": "Q12058464",
+   "name": "The George Inn, Southwark",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|The George Inn, Southwark",
+   "claim": "An inn on the site from the Middle Ages; the present galleried building was rebuilt in 1677 after the Southwark fire.",
+   "value": "rebuilt 1677",
+   "verdict": "kept",
+   "assessment": "The surviving building dates from 1677.",
+   "sources": [
+    {
+     "title": "The George Inn, Southwark",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_George_Inn,_Southwark",
+     "locator": "article",
+     "quote": "In 1677, it was rebuilt after a serious fire destroyed most of Southwark"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-jew-s-house",
+   "record": "Q3178464",
+   "name": "Jew's House",
+   "field": "date",
+   "research": "examples:House (domestic dwelling)|Jew's House",
+   "claim": "Norman stone town house of the mid-to-late 12th century.",
+   "value": "c. 1150–1170",
+   "verdict": "kept",
+   "assessment": "The source gives c. 1170 and 'mid-twelfth century'.",
+   "sources": [
+    {
+     "title": "Jew's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jew's_House",
+     "locator": "article",
+     "quote": "estimated to have been built around 1170"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-old-post-office--tintagel",
+   "record": "Q1321349",
+   "name": "Old Post Office, Tintagel",
+   "field": "date",
+   "research": "examples:Cottage|Old Post Office, Tintagel",
+   "claim": "A 14th-century stone house.",
+   "value": "14th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Tintagel Old Post Office",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tintagel_Old_Post_Office",
+     "locator": "article",
+     "quote": "Tintagel Old Post Office is a 14th-century stone house"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-tŷ-mawr-wybrnant",
+   "record": "Q14478006",
+   "name": "Tŷ Mawr Wybrnant",
+   "field": "date",
+   "research": "examples:Cottage|Tŷ Mawr Wybrnant",
+   "claim": "The present house is 16th-century (restored to that appearance).",
+   "value": "16th century",
+   "verdict": "kept",
+   "assessment": "The source says 'probable'.",
+   "sources": [
+    {
+     "title": "Tŷ Mawr Wybrnant",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/T%C5%B7_Mawr_Wybrnant",
+     "locator": "article",
+     "quote": "has been restored to its probable 16th-century appearance"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-llanidloes-market-hall",
+   "record": "Q17743350",
+   "name": "Llanidloes Market Hall",
+   "field": "date",
+   "research": "examples:Market hall / market cross|Llanidloes Market Hall",
+   "claim": "Timber-framed market hall of the early 17th century.",
+   "value": "early 17th century",
+   "verdict": "kept",
+   "assessment": "c. 1600 in the research file; the source says early 17th century.",
+   "sources": [
+    {
+     "title": "Old Market Hall, Llanidloes",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Market_Hall,_Llanidloes",
+     "locator": "article",
+     "quote": "dating to the early 17th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-exeter-guildhall",
+   "record": "Q5420117",
+   "name": "Exeter Guildhall",
+   "field": "date",
+   "research": "examples:Guildhall / town hall|Exeter Guildhall",
+   "claim": "A hall on the site probably from the second half of the 12th century; the present building 1468–70.",
+   "value": "1160 (site); building 1468–70",
+   "verdict": "kept",
+   "assessment": "The 1160 date is for the institution on the site, not the present fabric.",
+   "sources": [
+    {
+     "title": "Exeter Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Guildhall",
+     "locator": "article",
+     "quote": "most probably since the second half of the 12th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-winchester-college",
+   "record": "Q1059517",
+   "name": "Winchester College",
+   "field": "date",
+   "research": "examples:School building|Winchester College",
+   "claim": "Founded in 1382 by William of Wykeham and in continuous use on its site.",
+   "value": "founded 1382",
+   "verdict": "kept",
+   "assessment": "Chamber Court's 1387–94 dates still need a listing or history source.",
+   "sources": [
+    {
+     "title": "Winchester College",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Winchester_College",
+     "locator": "article",
+     "quote": "founded by William of Wykeham in 1382"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-peterhouse",
+   "record": "Q650068",
+   "name": "Peterhouse",
+   "field": "date",
+   "research": "examples:University / college building|Peterhouse",
+   "claim": "Founded 1284; the Hall was built on land bought with Balsham's bequest of 1286.",
+   "value": "founded 1284; hall c. 1290",
+   "verdict": "kept",
+   "assessment": "Hall c. 1290 follows from the bequest of 1286.",
+   "sources": [
+    {
+     "title": "Peterhouse, Cambridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peterhouse,_Cambridge",
+     "locator": "article",
+     "quote": "bequeathing 300 marks that were used to buy further land to the south of St Peter's Church, on which the college's Hall was built"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-hook-lighthouse",
+   "record": "Q5897891",
+   "name": "Hook Lighthouse",
+   "field": "date",
+   "research": "examples:Lighthouse|Hook Lighthouse",
+   "claim": "The tower was built between 1201 and 1240.",
+   "value": "1201–1240",
+   "verdict": "kept",
+   "assessment": "The research file's 12th–13th century agrees.",
+   "sources": [
+    {
+     "title": "Hook Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hook_Lighthouse",
+     "locator": "article",
+     "quote": "construction must have taken place between these dates"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-north-foreland-lighthouse",
+   "record": "research:Lighthouse|North Foreland Lighthouse",
+   "name": "North Foreland Lighthouse",
+   "field": "date",
+   "research": "examples:Lighthouse|North Foreland Lighthouse",
+   "claim": "An octagonal flint tower was built near the end of the 17th century (1691).",
+   "value": "late 17th century",
+   "verdict": "kept",
+   "assessment": "The source gives the century, not the year.",
+   "sources": [
+    {
+     "title": "North Foreland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/North_Foreland",
+     "locator": "article",
+     "quote": "near the end of the same century a strong octagonal structure of flint was erected"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-mapledurham-watermill",
+   "record": "Q6754033",
+   "name": "Mapledurham Watermill",
+   "field": "date",
+   "research": "examples:Watermill|Mapledurham Watermill",
+   "claim": "The mill was built in the 15th century.",
+   "value": "15th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Mapledurham Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mapledurham_Watermill",
+     "locator": "article",
+     "quote": "The mill was built in the 15th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-preston-mill",
+   "record": "Q7241939",
+   "name": "Preston Mill",
+   "field": "date",
+   "research": "examples:Watermill|Preston Mill",
+   "claim": "The present mill dates from the 18th century (a mill on the site since the 16th).",
+   "value": "18th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Preston Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Preston_Mill",
+     "locator": "article",
+     "quote": "The present mill dates from the 18th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-woodbridge-tide-mill",
+   "record": "Q8032425",
+   "name": "Woodbridge Tide Mill",
+   "field": "date",
+   "research": "examples:Tide mill|Woodbridge Tide Mill",
+   "claim": "A tide mill was first recorded on the site in 1170.",
+   "value": "site 1170",
+   "verdict": "kept",
+   "assessment": "The 1793 date of the present building still needs a source.",
+   "sources": [
+    {
+     "title": "Woodbridge Tide Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Woodbridge_Tide_Mill",
+     "locator": "article",
+     "quote": "The first recording of a tide mill on this site was a medieval mill in 1170"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-bradford-on-avon-tithe-barn",
+   "record": "Q15275600",
+   "name": "Bradford-on-Avon Tithe Barn",
+   "field": "date",
+   "research": "examples:Barn / tithe barn|Bradford-on-Avon Tithe Barn",
+   "claim": "Built in the early 14th century.",
+   "value": "early 14th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Bradford-on-Avon Tithe Barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bradford-on-Avon_Tithe_Barn",
+     "locator": "article",
+     "quote": "was built in the early 14th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-kinwarton-dovecote",
+   "record": "Q6414446",
+   "name": "Kinwarton Dovecote",
+   "field": "date",
+   "research": "examples:Dovecote|Kinwarton Dovecote",
+   "claim": "A circular 14th-century dovecote.",
+   "value": "14th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Kinwarton Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kinwarton_Dovecote",
+     "locator": "article",
+     "quote": "circular 14th-century dovecote"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-phantassie-doocot",
+   "record": "research:Dovecote|Phantassie Doocot",
+   "name": "Phantassie Doocot",
+   "field": "date",
+   "research": "examples:Dovecote|Phantassie Doocot",
+   "claim": "Built in the 16th century.",
+   "value": "16th century",
+   "verdict": "kept",
+   "assessment": "Stated as a century.",
+   "sources": [
+    {
+     "title": "Phantassie",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Phantassie",
+     "locator": "article",
+     "quote": "It was built in the 16th century"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-glenturret-distillery",
+   "record": "Q982994",
+   "name": "Glenturret distillery",
+   "field": "date",
+   "research": "examples:Brewery / distillery|Glenturret distillery",
+   "claim": "Officially established in 1763 (illicit distilling there from 1717).",
+   "value": "1763",
+   "verdict": "open",
+   "assessment": "The source says the distillery was officially established in 1763 (illicit distilling from 1717); the research file ranks it by 1775, a date the source does not give. Needs a source for 1775 or a change to 1763.",
+   "sources": [
+    {
+     "title": "Glenturret distillery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glenturret_distillery",
+     "locator": "article",
+     "quote": "The distillery was officially established in 1763"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-royal-hospital-kilmainham",
+   "record": "Q12859559",
+   "name": "Royal Hospital Kilmainham",
+   "field": "date",
+   "research": "examples:Almshouse|Royal Hospital Kilmainham",
+   "claim": "Built between 1679 and 1687 by Sir William Robinson.",
+   "value": "1679–1687",
+   "verdict": "corrected",
+   "assessment": "The research file said 1680–1684; corrected to the source.",
+   "sources": [
+    {
+     "title": "Royal Hospital Kilmainham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Hospital_Kilmainham",
+     "locator": "article",
+     "quote": "between 1679 and 1687"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-lancaster-castle",
+   "record": "Q2969640",
+   "name": "Lancaster Castle",
+   "field": "date",
+   "research": "examples:Prison / gaol|Lancaster Castle",
+   "claim": "First used as a prison in 1196; a prison until 2011.",
+   "value": "prison from 1196",
+   "verdict": "corrected",
+   "assessment": "The research file said 'medieval' (1150); corrected to 1196.",
+   "sources": [
+    {
+     "title": "Lancaster Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lancaster_Castle",
+     "locator": "article",
+     "quote": "The castle was first used as a prison in 1196"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "oldest-winchester-city-mill",
+   "record": "Q8023787",
+   "name": "Winchester City Mill",
+   "field": "date",
+   "research": "examples:Watermill|Winchester City Mill",
+   "claim": "Last rebuilt in 1744 (a mill on the site since Saxon times).",
+   "value": "rebuilt 1744",
+   "verdict": "corrected",
+   "assessment": "The research file said 1743; corrected to the source.",
+   "sources": [
+    {
+     "title": "Winchester City Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Winchester_City_Mill",
+     "locator": "article",
+     "quote": "The mill was last rebuilt in 1744"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-star-carr",
+   "record": "research:events:Star Carr occupied",
+   "name": "Star Carr occupied",
+   "field": "date",
+   "research": "events:Star Carr occupied",
+   "claim": "Star Carr was occupied from c. 9300 BC for about 800 years.",
+   "value": "c. 9300–8500 BC",
+   "verdict": "kept",
+   "assessment": "Radiocarbon dates in the source agree with the history's dates.",
+   "sources": [
+    {
+     "title": "Star Carr",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Star_Carr",
+     "locator": "article",
+     "quote": "occupation first commenced between 9335 and 9275 BC"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-anglo-saxon-settlement",
+   "record": "research:events:Anglo-Saxon settlement",
+   "name": "Anglo-Saxon settlement",
+   "field": "date",
+   "research": "events:Anglo-Saxon settlement",
+   "claim": "Germanic settlers arrived in larger numbers in the early 5th century (traditionally 449).",
+   "value": "5th century",
+   "verdict": "kept",
+   "assessment": "The source gives the early 5th century; 449 is the traditional date from Bede and the Anglo-Saxon Chronicle, and the history says so.",
+   "sources": [
+    {
+     "title": "Anglo-Saxon settlement of Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Saxon_settlement_of_Britain",
+     "locator": "article",
+     "quote": "In the early 5th century, during the end of Roman rule in Britain and the breakdown of the Roman economy, larger numbers arrived"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-offas-dyke",
+   "record": "research:events:Offa's Dyke",
+   "name": "Offa's Dyke",
+   "field": "date",
+   "research": "events:Offa's Dyke",
+   "claim": "Offa's Dyke is traditionally attributed to Offa, king of Mercia 757–796; radiocarbon dates show parts are older.",
+   "value": "late 8th century (traditional)",
+   "verdict": "kept",
+   "assessment": "The late-8th-century date is the conventional one; a 2014 study dated one part to the late 6th century, which the history should mention.",
+   "sources": [
+    {
+     "title": "Offa's Dyke",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Offa%27s_Dyke",
+     "locator": "article",
+     "quote": "attributes most of its construction to Offa, king of Mercia from 757 to 796 CE"
+    },
+    {
+     "title": "Offa's Dyke",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Offa%27s_Dyke",
+     "locator": "article",
+     "quote": "Radiocarbon dates are 430–652 CE with 95% confidence"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "event-age-of-the-brochs",
+   "record": "research:events:Age of the brochs",
+   "name": "Age of the brochs",
+   "field": "date",
+   "research": "events:Age of the brochs",
+   "claim": "The first brochs may have been built around 300 BC; brochs were built until about AD 100.",
+   "value": "c. 300 BC–AD 100",
+   "verdict": "corrected",
+   "assessment": "The history said c. 400 BC; the source gives circa 300 BC for the first brochs. Corrected.",
+   "sources": [
+    {
+     "title": "Broch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broch",
+     "locator": "article",
+     "quote": "The first brochs may have been built circa 300 BC"
+    }
+   ],
+   "researched": "2026-10-21"
   }
  ]
 }

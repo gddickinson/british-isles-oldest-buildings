@@ -9,6 +9,9 @@ Statuses:
   confirmed      the year (and, for examples, the name) appear in the cited source
   year-missing   the source was read but does not mention the stated year
   unreachable    the source could not be fetched
+  evidenced      the year is not written as a number in the source, but a researched claim in
+                 data/curated/evidence.json ("research": "<section>:<key>") quotes the source and
+                 every quote was found again (python -m bidb.evidence --check)
 """
 import html
 import json
@@ -75,6 +78,17 @@ def check(text, year, name=None):
     return {"status": "year-missing"}
 
 
+def _evidenced():
+    """{research key: first quote} for researched claims whose quotes were all found in their sources."""
+    from . import evidence
+    ck, out = evidence.checks(), {}
+    for c in evidence.load():
+        res = ck.get(c["id"], {}).get("sources", [])
+        if c.get("research") and c["verdict"] in ("kept", "corrected") and res and all(r == "quote-found" for r in res):
+            out[c["research"]] = f"{c['sources'][0]['quote']} ({c['sources'][0]['title']})"
+    return out
+
+
 def run():
     hist = json.loads((DATA_DIR / "curated" / "history.json").read_text())
     types = json.loads((DATA_DIR / "curated" / "oldest_by_type.json").read_text())["types"]
@@ -89,6 +103,12 @@ def run():
             key = f"{t['type']}|{ex['name']}"
             out["examples"][key] = {"source": ex.get("source"),
                                     **check(text(ex.get("source")), ex["year"], ex["name"])}
+    researched = _evidenced()
+    for section, group in out.items():
+        for key, v in group.items():
+            ev = researched.get(f"{section}:{key}")
+            if ev and v["status"] != "confirmed":
+                v.update(status="evidenced", evidence=ev)
     summary = {}
     for group in out.values():
         for v in group.values():

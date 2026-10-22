@@ -30,7 +30,7 @@ async function renderVerification() {
   const v = await api("/api/verification").catch(() => null);
   const box = document.getElementById("v_box");
   if (!box || !v || !v.summary) return;
-  const LABEL = { confirmed: "Confirmed in source", "year-missing": "Year not found in source",
+  const LABEL = { confirmed: "Confirmed in source", evidenced: "Confirmed by researched evidence", "year-missing": "Year not found in source",
                   "name-missing": "Name not found in source", unreachable: "Source unreachable" };
   const rows = [...Object.entries(v.events || {}).map(([k, x]) => ["History event", k, x]),
                 ...Object.entries(v.examples || {}).map(([k, x]) => ["Oldest of type", k.replace("|", ": "), x])];
@@ -39,7 +39,7 @@ async function renderVerification() {
     <details><summary>All ${rows.length} checks</summary><div class="table-wrap"><table class="grid small"><thead><tr>
       <th>Kind</th><th>Item</th><th>Result</th><th>Evidence from the source</th></tr></thead><tbody>${rows.map(([kind, k, x]) => `<tr>
       <td>${esc(kind)}</td><td>${x.source ? `<a href="${esc(x.source)}" target="_blank" rel="noopener">${esc(k)}</a>` : esc(k)}</td>
-      <td class="${x.status === "confirmed" ? "verify-ok" : "verify-bad"}">${esc(LABEL[x.status] || x.status)}</td>
+      <td class="${["confirmed", "evidenced"].includes(x.status) ? "verify-ok" : "verify-bad"}">${esc(LABEL[x.status] || x.status)}</td>
       <td>${esc(x.evidence || "")}</td></tr>`).join("")}</tbody></table></div></details>`;
 }
 

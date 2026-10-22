@@ -62,8 +62,8 @@ function renderPeriods() {
 function verifyMark(title) {
   const v = VER[title];
   if (!v) return "";
-  return v.status === "confirmed"
-    ? `<span class="verify-ok" title="${esc(v.evidence || "")}">✓ year confirmed in source</span>`
+  return ["confirmed", "evidenced"].includes(v.status)
+    ? `<span class="verify-ok" title="${esc(v.evidence || "")}">✓ ${v.status === "evidenced" ? "confirmed by researched evidence" : "year confirmed in source"}</span>`
     : `<span class="verify-bad">${v.status === "unreachable" ? "source unreachable" : "year not found in source, check"}</span>`;
 }
 

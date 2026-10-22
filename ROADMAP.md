@@ -304,8 +304,12 @@ Detail views show "Evidence"; the Data quality page lists every claim. Sources t
 - [x] R0 Evidence file, checker, app display, tests (2026-10-21).
 - [x] R1 The two open date conflicts: Althorp (c. 1508 kept: list entry 1356626) and Hadlow Castle (corrected to
       late C18 house, tower 1838–40: list entry 1070451). No date conflicts remain.
-- [ ] R2 The 69 research entries whose year was not found in the cited source (Data quality page; 66 history
-      events and oldest-of-type examples, 3 unreachable): find a source that states it, or correct the claim.
+- [ ] R2 The 69 research entries whose year was not found in the cited source (Data quality page): find a source
+      that states it, or correct the claim. 2026-10-21, first batch: 21 oldest-of-type examples and 4 history events
+      researched (20 now "confirmed by researched evidence"; corrected Royal Hospital Kilmainham 1679–87, Lancaster
+      Castle prison 1196, Winchester City Mill 1744, brochs c. 300 BC; Glenturret open). Left: 42 + 4 unreachable,
+      many needing a source beyond the cited article (Knap of Howar, Arnol Blackhouse, Chichester Cross, Dover
+      Pharos: c. AD 50 vs "early 2nd century", Stanley Mills cites the wrong mill, Bank of Scotland, Hanse House…).
 - [ ] R3 Oldest-of-type claims: add primary or listing evidence for each researched example (charters, Domesday,
       dendrochronology reports, listing texts).
 - [ ] R4 Earliest-dated churches and manors: Anglo-Saxon charters (Electronic Sawyer), Domesday entries, the

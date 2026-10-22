@@ -353,4 +353,8 @@
 - Follow-on stages rerun: places 118,184, stories 2,443, tours 368, paintings 3,111, Domesday 17,935 records.
 - Fixes: excavation spans without an end year; hoard find-spot line breaks; "Year found" label;
   Wikipedia/Mapping Museums sources linked as "Source".
+- `places_geo.json` (hosted light index) reached 17 MB, over the artifact's 16 MB per-file limit: labels and groups
+  now stored once and indexed, coordinates to 5 decimals → 10.8 MB (`app/static_places.py`, `static_places.js`).
+- Published: GitHub (main), database release `db-2026-10-21-3` (69 MB), hosted copy version 39 (39 changed files,
+  61 MB, one publish). Static review 27/27.
 

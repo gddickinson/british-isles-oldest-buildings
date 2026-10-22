@@ -29,9 +29,21 @@ def export(conn, out_dir, write_shards):
         rows.append(d)
     names = write_shards(rows, "places")
     # light index for building pages ("related": objects kept there, places nearby) without the 50 MB
-    geo = [[r["id"], r["name"], r.get("lat"), r.get("lon"), r.get("kind_label"), r.get("kind_group"),
-            r.get("date_text"), r.get("building_id")] for r in rows]
-    (out_dir / "places_geo.json").write_text(json.dumps(geo, ensure_ascii=False, separators=(",", ":")))
+    # rows [id, name, lat, lon, label index, group index, date_text, building_id] with trailing nulls dropped
+    # (labels and groups once each, coordinates to ~1 m: an artifact file holds at most 16 MB)
+    labels = sorted({r.get("kind_label") or "" for r in rows})
+    groups = sorted({r.get("kind_group") or "" for r in rows})
+    li, gi = {v: i for i, v in enumerate(labels)}, {v: i for i, v in enumerate(groups)}
+    rnd = lambda v: round(v, 5) if v is not None else None
+    geo = []
+    for r in rows:
+        row = [r["id"], r["name"], rnd(r.get("lat")), rnd(r.get("lon")), li[r.get("kind_label") or ""],
+               gi[r.get("kind_group") or ""], r.get("date_text"), r.get("building_id")]
+        while row[-1] is None:
+            row.pop()
+        geo.append(row)
+    (out_dir / "places_geo.json").write_text(json.dumps({"labels": labels, "groups": groups, "rows": geo},
+                                                        ensure_ascii=False, separators=(",", ":")))
     persons = [{k: v for k, v in dict(r).items() if v not in (None, "") and k != "image_thumb"}
                for r in conn.execute("SELECT * FROM persons")]
     for p in persons:

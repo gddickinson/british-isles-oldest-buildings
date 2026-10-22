@@ -25,8 +25,8 @@
     const [geo, ppl] = await Promise.all([fetch("data/places_geo.json").then((r) => r.json()),
       fetch("data/people.json").then((r) => r.json()).catch(() => ({ persons: [], links: [] }))]);
     if (!PLACES) {
-      PLACES = geo.map(([id, name, lat, lon, kind_label, kind_group, date_text, building_id]) =>
-        ({ id, name, lat, lon, kind_label, kind_group, date_text, building_id }));
+      PLACES = geo.rows.map(([id, name, lat, lon, l, g, date_text, building_id]) =>
+        ({ id, name, lat, lon, kind_label: geo.labels[l], kind_group: geo.groups[g], date_text, building_id }));
       BYID = new Map(PLACES.map((p) => [p.id, p]));
     }
     if (!PERSONS) {

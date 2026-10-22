@@ -62,7 +62,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `queries.py` | Timeline, dashboard stats, nearby, gaps, oldest by category | `timeline`, `dashboard`, `nearby`, `gaps`, `oldest_by_category` |
 | `landmarks.py` | Important buildings of any date: Grade I / Category A / NI Grade A / World Heritage, widely known structures, Crown Dependency heritage | `find_landmarks`, `TOP_GRADES` |
 | `niah.py` | NIAH (Ireland) buildings dated before 1500 as catalogue records | `niah_records` |
-| `build.py` | CLI pipeline: `python -m bidb.build [--cutoff YEAR] [--no-places] [--refresh-days N] [--refresh SOURCES]`; stages (buildings, places, legends, maritime, era, underground, military, museums, Mapping Museums, hoards, bridges, excavations, nations, pronunciations, Domesday, stories, timelines, tours, on this day, visiting) run through `progress.run_stages` | `run`, `stages`, `early_monuments` |
+| `build.py` | CLI pipeline: `python -m bidb.build [--cutoff YEAR] [--no-places] [--refresh-days N] [--refresh SOURCES]`; stages (buildings, places, legends, maritime, era, underground, military, museums, Mapping Museums, hoards, bridges, excavations, nations, pronunciations, Domesday, Domesday entries, stories, timelines, tours, on this day, visiting) run through `progress.run_stages` | `run`, `stages`, `early_monuments` |
 | `place_kinds.py` | Place kinds (Wikidata classes/designations, geography rule), 8 place groups, archaeology roots | `KINDS`, `PLACE_GROUPS`, `ARCH_ROOTS`, `in_box` |
 | `place_fetch.py` | Small SPARQL queries per kind: base items, details, dates, extras | `base_items`, `details`, `dates`, `extras` |
 | `place_records.py` | Place record schema and assembly | `PLACE_COLUMNS`, `blank`, `from_wikidata` |
@@ -110,6 +110,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `on_this_day.py` | CLI/build stage: births/deaths (people), battles/events (places), founded/opened (buildings) known to the day on Wikidata → table `on_this_day`; Julian dates converted back | `run`, `for_day`, `gregorian_to_julian` |
 | `depictions.py` | CLI/build stage: paintings, prints and drawings (made before 1950 or undated) that depict a building or place (Wikidata P180 with an image) → table `depictions` (title, artist, year, Commons file, thumb), oldest first, 12 per record | `run`, `find`, `for_record` |
 | `domesday.py` | CLI/build stage after pronunciations: "recorded in Domesday Book" → table `domesday` (record, settlement, Open Domesday id, itself) from Wikidata P3118 on the record or its town (`pron_towns`) | `run`, `settlements`, `for_record` |
+| `domesday_entries.py` | Research track R4 / CLI/build stage after domesday: Open Domesday place pages of the settlements of churches, abbeys and cathedrals → table `domesday_entries` (churches, priests, households, Phillimore reference); `--report` (early churches with a church or priest in 1086; later-dated ones where Domesday already records a church) | `run`, `parse`, `entry`, `report` |
 | `visiting.py` | CLI/build stage: opening hours, fee, operator, wheelchair, website from OSM objects tagged wikidata=* → table `visiting` | `run`, `fetch`, `for_record` |
 | `commons_plans.py` | Floor plans from Commons "Plans of <building>" categories matched via P373 | `plans`, `plan_categories`, `best_file` |
 

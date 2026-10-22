@@ -6,9 +6,9 @@
 Settlements recorded in Domesday Book are the Wikidata items with an OpenDomesday settlement ID
 (P3118, CC0; 13,000+). A building or place is marked when it is such a settlement itself, or when
 its town or parish (Wikidata P131, the `pron_towns` links made by bidb.pronunciations) is one.
-Open Domesday's own statistics (households, ploughs, mills, landholders; CC BY-SA) are not used:
-its API no longer answers (checked 2026-10-21) and its place pages need a grid reference Wikidata
-does not hold.
+Open Domesday's API no longer answers (checked 2026-10-21), but its place pages do (the Open
+Domesday ID holds the grid reference): bidb.domesday_entries reads the churches, priests and
+households of the settlements of churches, abbeys and cathedrals; `for_record` adds them.
 """
 import json
 import sys
@@ -52,8 +52,9 @@ def run(log=print):
 def for_record(conn, rid):
     if not conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'domesday'").fetchone():
         return None
+    from .domesday_entries import entry
     r = conn.execute(f"SELECT {', '.join(COLUMNS)} FROM domesday WHERE entity_id = ?", (rid,)).fetchone()
-    return dict(zip(COLUMNS, r)) if r else None
+    return {**dict(zip(COLUMNS, r)), "entry": entry(conn, r[3])} if r else None
 
 
 if __name__ == "__main__":

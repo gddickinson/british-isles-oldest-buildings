@@ -32,6 +32,7 @@ PAGES = {
     "places_excavations": ("/places?kind_group=Excavations", r'data-place='),
     "building_evidence": ("/building/Q441079", r'Catalogue value confirmed'),
     "data_evidence": ("/data", r'Catalogue corrected'),
+    "building_domesday": ("/building/Q17529018", r"recorded in Domesday Book with 2 churches and a priest"),
     "people": ("/people", r'data-person=|class="person'),
     "pronunciation": ("/pronunciation?q=ll", r'class="ipa"|class="respell"'),
     "stories": ("/stories", r'class="story story-'),

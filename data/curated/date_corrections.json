@@ -673,5 +673,356 @@
   "evidence": "Built as a Synagogue, 1872-5",
   "source": "https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=11426",
   "reviewed": "2026-10-21"
+ },
+ "Q16932718": {
+  "name": "St Mary's Church, Reculver",
+  "year_start": 669,
+  "date_text": "founded 669 (Anglo-Saxon Chronicle)",
+  "was": "7th century (601)",
+  "evidence": "A.D. 669. This year King Egbert gave to Bass, a mass-priest, Reculver--to build a minster upon.",
+  "source": "https://www.gutenberg.org/cache/epub/657/pg657.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q2101170": {
+  "name": "Monkwearmouth-Jarrow Abbey",
+  "year_start": 674,
+  "date_text": "founded 674 (Bede, Lives of the Abbots)",
+  "was": "7th century (Wikipedia list: 680) (601)",
+  "evidence": "This was done, as I said before, at the mouth of the river Were, on the left bank, in the 674th year of our Lord's incarnation",
+  "source": "https://sourcebooks.fordham.edu/basis/bede-jarrow.asp",
+  "reviewed": "2026-10-22"
+ },
+ "Q638466": {
+  "name": "Ripon Cathedral",
+  "year_start": 660,
+  "date_text": "monastery c. 660 (Bede III.25); Anglo-Saxon crypt of Wilfrid's church",
+  "was": "7th century (Wikipedia list: 672) (601)",
+  "evidence": "Scots. For this reason he had also given him a monastery of forty families, at a place called Inhrypum",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q550064": {
+  "name": "Malmesbury Abbey",
+  "year_start": 675,
+  "date_text": "monastery by 675 (charter to Aldhelm; Bede V.18)",
+  "was": "7th century (Wikipedia list: c. 1180) (601)",
+  "evidence": "only a priest and abbot of the monastery which is called the city of Maildufus",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q544113": {
+  "name": "Glastonbury Abbey",
+  "year_start": 680,
+  "date_text": "abbey by c. 680 (charters to Abbot Hæmgils); refounded by Ine after 688",
+  "was": "AD 712 (712)",
+  "evidence": "Hædde, bishop (of Winchester), to Hæmgils, abbot (of Glastonbury)",
+  "source": "https://esawyer.lib.cam.ac.uk/charter/1249.html",
+  "reviewed": "2026-10-22"
+ },
+ "Q15223125": {
+  "name": "Hartlepool Abbey",
+  "year_start": 640,
+  "date_text": "founded by Heiu before c. 649 (Bede IV.23)",
+  "was": "7th century (601)",
+  "evidence": "monastery had been founded, not long before, by the pious handmaid of Christ, Heiu",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q2820597": {
+  "name": "Gilling Abbey",
+  "year_start": 651,
+  "date_text": "founded after 651 (Bede III.14)",
+  "was": "7th century (601)",
+  "evidence": "ninth year of his reign, at a place called Ingetlingum, where afterwards",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q7448805": {
+  "name": "Selsey Abbey",
+  "year_start": 681,
+  "date_text": "founded c. 681 by Wilfrid (Bede, HE IV.13)",
+  "was": "7th century (601)",
+  "evidence": "How Bishop Wilfrid converted the province of the South Saxons to Christ. [681 A.D.]",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q1630367": {
+  "name": "Worcester Cathedral",
+  "year_start": 680,
+  "date_text": "see founded 680 (bishops of the Hwicce in Bede, HE IV.23); present building from 1084",
+  "was": "7th century (601)",
+  "evidence": "At that time, Bosel, the bishop of that province",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q2564352": {
+  "name": "Evesham Abbey",
+  "year_start": 701,
+  "date_text": "founded c. 701 by Bishop Ecgwine (St Mary's at Evesham in charter S 54 of 706)",
+  "was": "8th century (701)",
+  "evidence": "to Ecgwine, bishop, for St Mary's Church, Cronuchomme (Evesham)",
+  "source": "https://esawyer.lib.cam.ac.uk/charter/54.html",
+  "reviewed": "2026-10-22"
+ },
+ "Q8023745": {
+  "name": "Winchcombe Abbey",
+  "year_start": 798,
+  "date_text": "begun 798 by King Coenwulf, dedicated 811 (charter S 167)",
+  "was": "8th century (701)",
+  "evidence": "Coenwulf, king of Mercia, founds Winchcombe Abbey",
+  "source": "https://esawyer.lib.cam.ac.uk/charter/167.html",
+  "reviewed": "2026-10-22"
+ },
+ "Q7594625": {
+  "name": "St Mary sub Castro, Dover",
+  "year_start": 1000,
+  "date_text": "late Saxon, c. 1000 (built by c. 1020, list entry); tradition of a 7th-century minster in the castle",
+  "was": "7th century (601)",
+  "evidence": "The latest possible date for the foundation of the church is C.1020AD",
+  "source": "https://britishlistedbuildings.co.uk/101070328",
+  "reviewed": "2026-10-22"
+ },
+ "Q2635720": {
+  "name": "Rochester Cathedral",
+  "year_start": 604,
+  "date_text": "founded 604 (Bede, HE II.3; Anglo-Saxon Chronicle); present building from 1080 (Gundulf)",
+  "was": "7th century (Wikipedia list: 1080) (650)",
+  "evidence": "How St. Augustine made Mellitus and Justus bishops; and of his death. [604 A.D.]",
+  "source": "https://www.gutenberg.org/cache/epub/38326/pg38326.txt",
+  "reviewed": "2026-10-22"
+ },
+ "Q2193676": {
+  "name": "Old Minster",
+  "year_start": 643,
+  "date_text": "begun 643 by King Cenwalh (Anglo-Saxon Chronicle)",
+  "was": "7th century (601)",
+  "evidence": "This Kenwal ordered the old",
+  "source": "https://avalon.law.yale.edu/medieval/ang07.asp",
+  "reviewed": "2026-10-22"
+ },
+ "Q7594519": {
+  "name": "St Mary's Priory Church, Deerhurst",
+  "year_start": 701,
+  "date_text": "8th century (earliest fabric, list entry); monastery documented 804 (charter S 1187)",
+  "was": "7th century (Wikidata: 9th century) (601)",
+  "evidence": "Former Monastery, now Parish church. C8, 9, 10, 12, 13, 14",
+  "source": "https://britishlistedbuildings.co.uk/101151998",
+  "reviewed": "2026-10-22"
+ },
+ "Q2323982": {
+  "name": "St Laurence's Church, Bradford-on-Avon",
+  "year_start": 901,
+  "date_text": "10th century (list entry; some authorities 8th); Aldhelm's church at Bradford c. 705",
+  "was": "7th century (Wikidata: 8th century) (601)",
+  "evidence": "Saxon, C10. (Some authorities give C8 but present appearance suggests the later date.)",
+  "source": "https://britishlistedbuildings.co.uk/101036034",
+  "reviewed": "2026-10-22"
+ },
+ "Q2831123": {
+  "name": "Albert Dock",
+  "year_start": 1841,
+  "date_text": "1841-45 (dock opened 1846)",
+  "was": "1846 (1846)",
+  "evidence": "Former warehouse to south end of east side of dock. 1841-5. J Hartley.",
+  "source": "https://britishlistedbuildings.co.uk/101205175",
+  "reviewed": "2026-10-22"
+ },
+ "Q7440791": {
+  "name": "Sean's Bar",
+  "year_start": 1725,
+  "date_text": "c. 1725, possibly with 17th-century fabric (claimed c. 900)",
+  "was": "AD 900 (900)",
+  "evidence": "Terraced three-bay two-storey former coaching inn, built c.1725, possibly containing the fabric of earlier buildings",
+  "source": "https://www.buildingsofireland.ie/buildings-search/building/15000331/seans-bar-shines-hairdressers-athlone-and-bigmeadow-county-westmeath",
+  "reviewed": "2026-10-22"
+ },
+ "Q2658249": {
+  "name": "Dublin Pearse railway station",
+  "year_start": 1884,
+  "date_text": "1884, refaced 1891 (station site 1834)",
+  "was": "460 (460)",
+  "evidence": "railway station, built 1884, altered and refaced 1891",
+  "source": "https://www.buildingsofireland.ie/buildings-search/building/50930337/pearse-station-westland-row-dublin-2-co-dublin",
+  "reviewed": "2026-10-22"
+ },
+ "Q2319266": {
+  "name": "St James's Gate Brewery",
+  "year_start": 1800,
+  "date_text": "c. 1800 (brewery leased 1759)",
+  "was": "1759 (1759)",
+  "evidence": "gable-fronted vat house, built c.1800",
+  "source": "https://www.buildingsofireland.ie/buildings-search/building/50080144/guinness-brewery-saint-jamess-gate-dublin-8-co-dublin",
+  "reviewed": "2026-10-22"
+ },
+ "Q586354": {
+  "name": "Dunsink Observatory",
+  "year_start": 1783,
+  "date_text": "1783 (observatory established 1785)",
+  "was": "1785 (1785)",
+  "evidence": "Detached seven-bay two-storey house, built 1783, with three central projecting bays having domed observatory above",
+  "source": "https://www.buildingsofireland.ie/buildings-search/building/11354008/dunsink-observatory-dunsink-lane-dunsink-co-dublin",
+  "reviewed": "2026-10-22"
+ },
+ "Q498563": {
+  "name": "Fortnum & Mason",
+  "year_start": 1770,
+  "date_text": "1926-28 building; firm founded c. 1770 (traditional 1707 unsupported)",
+  "was": "1707 (1707)",
+  "evidence": "Tradition relates that the business was founded in 1707",
+  "source": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270",
+  "reviewed": "2026-10-22"
+ },
+ "Q1421440": {
+  "name": "Fitzwilliam Museum",
+  "year_start": 1837,
+  "date_text": "1837-43 (claimed 1848, the opening)",
+  "was": "1816 (1816)",
+  "evidence": "Museum, now known as the Founder’s Building, built in 1837-1843 to the designs of George Basevi",
+  "source": "https://britishlistedbuildings.co.uk/101126276",
+  "reviewed": "2026-10-22"
+ },
+ "Q17576400": {
+  "name": "King's College Chapel, Aberdeen",
+  "year_start": 1500,
+  "date_text": "begun 1500; leaded (roofed) 1506",
+  "was": "1530 (1530)",
+  "evidence": "Begun 1500 (inscription) dated 1504; leaded 1506",
+  "source": "https://portal.historicenvironment.scot/designation/LB19943",
+  "reviewed": "2026-10-22"
+ },
+ "Q7587770": {
+  "name": "St Doulagh's Church",
+  "year_start": 1150,
+  "date_text": "12th century",
+  "was": "ninth century (801)",
+  "evidence": "The oldest part of the church as it stands is medieval dating from the 12th century",
+  "source": "https://en.wikipedia.org/wiki/St_Doulagh's_Church",
+  "reviewed": "2026-10-22"
+ },
+ "Q7775763": {
+  "name": "Wool House, Southampton",
+  "year_start": 1400,
+  "date_text": "14th century",
+  "was": "1966 (1966)",
+  "evidence": "C14 with C18 alterations",
+  "source": "https://britishlistedbuildings.co.uk/101092060",
+  "reviewed": "2026-10-22"
+ },
+ "Q7736175": {
+  "name": "The George Inn, Norton St Philip",
+  "year_start": 1397,
+  "date_text": "14th–15th century",
+  "was": "late 13th century (1251)",
+  "evidence": "C14/C15.",
+  "source": "https://britishlistedbuildings.co.uk/101174953",
+  "reviewed": "2026-10-22"
+ },
+ "Q7754804": {
+  "name": "The Old Bell Hotel",
+  "year_start": 1220,
+  "date_text": "early 13th century",
+  "was": "12th-century (1101)",
+  "evidence": "Early C13 abbey guest house",
+  "source": "https://britishlistedbuildings.co.uk/101269521",
+  "reviewed": "2026-10-22"
+ },
+ "Q6679506": {
+  "name": "Lord Leycester Hospital",
+  "year_start": 1383,
+  "date_text": "hospital from 1571; buildings 14th–15th century",
+  "was": "1126 (1126)",
+  "evidence": "taken by Lord Leicester in 1571 for the purpose of forming a pensioners' hospital",
+  "source": "https://britishlistedbuildings.co.uk/101035441",
+  "reviewed": "2026-10-22"
+ },
+ "Q5599014": {
+  "name": "Great Coxwell Barn",
+  "year_start": 1292,
+  "date_text": "c. 1292",
+  "was": "1205 (1205)",
+  "evidence": "Circa early C13 for the Cistercian monks of Beaulieu Abbey",
+  "source": "https://britishlistedbuildings.co.uk/101183045",
+  "reviewed": "2026-10-22"
+ },
+ "Q1344889": {
+  "name": "Somerset House",
+  "year_start": 1776,
+  "date_text": "1776–96",
+  "was": "1630 (1630)",
+  "evidence": "The New Public Offices 1776-96 by Sir William Chambers",
+  "source": "https://britishlistedbuildings.co.uk/101237041",
+  "reviewed": "2026-10-22"
+ },
+ "Q5420131": {
+  "name": "Exeter Ship Canal",
+  "year_start": 1566,
+  "date_text": "1563-66",
+  "was": "1270 (1270)",
+  "evidence": "Work began in 1563 and ended in 1566 with the finished canal 2 miles long",
+  "source": "https://exhibit.topshammuseum.org.uk/canal-start/canal-3/",
+  "reviewed": "2026-10-22"
+ },
+ "Q2121329": {
+  "name": "Great Conservatory, Syon Park",
+  "year_start": 1827,
+  "date_text": "c. 1827-30",
+  "was": "1547–52 (1547)",
+  "evidence": "Circa 1830 and before 1838. Designed by Charles Fowler, architect, and Richard Forrest",
+  "source": "https://britishlistedbuildings.co.uk/101358328",
+  "reviewed": "2026-10-22"
+ },
+ "Q5304555": {
+  "name": "Dr Steevens' Hospital",
+  "year_start": 1720,
+  "date_text": "1720–1733",
+  "was": "seventeenth-century (1601)",
+  "evidence": "former hospital with dormer attic, dated 1720, opened 1733",
+  "source": "https://www.buildingsofireland.ie/buildings-search/building/50080083/health-service-executive-steevenss-lane-saint-johns-road-west-dublin-8-dublin",
+  "reviewed": "2026-10-22"
+ },
+ "Q6411533": {
+  "name": "King Edward VI School, Stratford-upon-Avon",
+  "year_start": 1417,
+  "date_text": "c. 1417 (Guildhall); Pedagogue's House 1427",
+  "was": "13th century (1201)",
+  "evidence": "Guildhall, now school, incorporating slightly earlier house to rear. c1417",
+  "source": "https://britishlistedbuildings.co.uk/101187780",
+  "reviewed": "2026-10-22"
+ },
+ "Q6820719": {
+  "name": "Merton College Library",
+  "year_start": 1371,
+  "date_text": "1371-8 (claimed 1373-1378)",
+  "was": "1276 (1276)",
+  "evidence": "Contains library and built 1371-8 in Elsfield and Bladon stone",
+  "source": "https://britishlistedbuildings.co.uk/101369662",
+  "reviewed": "2026-10-22"
+ },
+ "Q6707560": {
+  "name": "Lydford Castle",
+  "year_start": 1194,
+  "date_text": "1194-5 (tower rebuilt late 13th century)",
+  "was": "1066 (1066)",
+  "evidence": "In 1194 King John authorised the building of a new tower east of the church, to house offenders against both the forest and stannary laws",
+  "source": "https://www.english-heritage.org.uk/visit/places/lydford-castle-and-saxon-town/history/",
+  "reviewed": "2026-10-22"
+ },
+ "Q7019131": {
+  "name": "Newry Canal",
+  "year_start": 1731,
+  "date_text": "1730-1742",
+  "was": "1640 (1640)",
+  "evidence": "The inland section of the Newry Canal was constructed between 1730 and 1742",
+  "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=10259",
+  "reviewed": "2026-10-22"
+ },
+ "Q1652863": {
+  "name": "Forth and Clyde Canal",
+  "year_start": 1768,
+  "date_text": "1768-1790",
+  "was": "800 (800)",
+  "evidence": "It was the first of Scotland's great inland waterways to be constructed (between 1768 and 1790)",
+  "source": "https://portal.historicenvironment.scot/designation/SM6769",
+  "reviewed": "2026-10-22"
  }
 }

@@ -20,11 +20,11 @@
      "wikipedia_title": "Sean's Bar",
      "location": "Athlone, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "c. 900",
-     "year": 900,
-     "evidence_date": "wattle-and-daub walls found in 1970s renovation; current building largely 18th century or later",
+     "claimed_date": "c. 1725 (possibly earlier fabric; tradition c. 900)",
+     "year": 1725,
+     "evidence_date": "former coaching inn built c.1725, possibly with 17th-century wattle-and-mud partitions (NIAH 15000331)",
      "claim": "recognised by Guinness World Records as Ireland's (and Europe's) oldest pub; date disputed",
-     "source": "https://en.wikipedia.org/wiki/Sean's_Bar"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/15000331/seans-bar-shines-hairdressers-athlone-and-bigmeadow-county-westmeath"
     },
     {
      "name": "Bingley Arms",
@@ -99,9 +99,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1611",
      "year": 1611,
-     "evidence_date": null,
+     "evidence_date": "reputedly in business since 1611; present building possibly rebuilt or remodelled early 1700s (HB24/07/059)",
      "claim": "claims to be one of Ireland's oldest pubs",
-     "source": "https://en.wikipedia.org/wiki/Grace_Neill's"
+     "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=12785"
     }
    ]
   },
@@ -169,11 +169,11 @@
      "wikipedia_title": null,
      "location": "Crawfordsburn, County Down, Northern Ireland",
      "nation": "Northern Ireland",
-     "claimed_date": "1614",
-     "year": 1614,
-     "evidence_date": null,
+     "claimed_date": "mid-19th century (claimed 1614)",
+     "year": 1850,
+     "evidence_date": "mid-19th-century terraced group, not listed (HB23/15/021); 1614 is the hotel's claim",
      "claim": "claims to be the oldest hotel/inn in Ireland; rival Woodenbridge (1608) also claims",
-     "source": "https://coolplaces.co.uk/hotels/uk/northern-ireland/ulster/county-down-ni/bangor-ni/12923-the-old-inn"
+     "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=15443"
     }
    ]
   },
@@ -308,11 +308,11 @@
      "wikipedia_title": "Hemingford Grey",
      "location": "Hemingford Grey, Cambridgeshire, England",
      "nation": "England",
-     "claimed_date": "c. 1130",
-     "year": 1130,
-     "evidence_date": "Norman hall house c.1130-40",
+     "claimed_date": "c. 1150",
+     "year": 1150,
+     "evidence_date": "Norman first-floor hall c. 1150 (list entry; VCH mid-12th century)",
      "claim": "claimed one of the oldest continuously inhabited houses in Britain",
-     "source": "https://en.wikipedia.org/wiki/Hemingford_Grey"
+     "source": "https://britishlistedbuildings.co.uk/101163135"
     },
     {
      "name": "Saltford Manor House",
@@ -332,9 +332,9 @@
      "nation": "England",
      "claimed_date": "c. 1200",
      "year": 1200,
-     "evidence_date": "Norman first-floor hall house c.1200",
+     "evidence_date": "camera block (first-floor hall) late 12th century (list entry)",
      "claim": "one of the best-preserved Norman manor houses",
-     "source": "https://en.wikipedia.org/wiki/Boothby_Pagnell"
+     "source": "https://britishlistedbuildings.co.uk/101360056"
     },
     {
      "name": "Stokesay Castle",
@@ -402,11 +402,11 @@
      "wikipedia_title": null,
      "location": "Crawfordsburn, County Down, Northern Ireland",
      "nation": "Northern Ireland",
-     "claimed_date": "1614",
-     "year": 1614,
-     "evidence_date": null,
+     "claimed_date": "mid-19th century (claimed 1614)",
+     "year": 1850,
+     "evidence_date": "mid-19th-century terraced group, not listed (HB23/15/021); 1614 is the hotel's claim",
      "claim": "claims oldest hotel in Ireland",
-     "source": "https://coolplaces.co.uk/hotels/uk/northern-ireland/ulster/county-down-ni/bangor-ni/12923-the-old-inn"
+     "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=15443"
     },
     {
      "name": "Salutation Hotel",
@@ -454,20 +454,20 @@
      "nation": "England",
      "claimed_date": "1698",
      "year": 1698,
-     "evidence_date": "shop at No. 3 St James's Street since 1698 (building 18th century)",
+     "evidence_date": "business at No. 3 St James's Street since 1698/c. 1699; house rebuilt under a building agreement of 1731",
      "claim": "Britain's oldest wine merchant",
-     "source": "https://en.wikipedia.org/wiki/Berry_Bros._&_Rudd"
+     "source": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp433-458"
     },
     {
      "name": "Fortnum & Mason",
      "wikipedia_title": "Fortnum & Mason",
      "location": "Piccadilly, London, England",
      "nation": "England",
-     "claimed_date": "1707",
-     "year": 1707,
-     "evidence_date": "present store building 1920s",
+     "claimed_date": "c. 1770 (firm; traditionally 1707); building 1926-28",
+     "year": 1770,
+     "evidence_date": "firm on the site from 1770 (certainly 1773); present building 1926-8; 1707 is an unsupported tradition",
      "claim": "old firm; building not old",
-     "source": "https://en.wikipedia.org/wiki/Fortnum_&_Mason"
+     "source": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270"
     },
     {
      "name": "Hatchards",
@@ -476,9 +476,9 @@
      "nation": "England",
      "claimed_date": "1797",
      "year": 1797,
-     "evidence_date": "on present site since 1801",
+     "evidence_date": "firm founded 1797; on the present site since 1801; present building 1909",
      "claim": "London's oldest bookshop",
-     "source": "https://en.wikipedia.org/wiki/Hatchards"
+     "source": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270"
     }
    ]
   },
@@ -537,9 +537,9 @@
      "nation": "England",
      "claimed_date": "c. 1617",
      "year": 1617,
-     "evidence_date": "timber-framed, 1617-1668",
+     "evidence_date": "begun c. 1617, completed after 1655 (list entry)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Ledbury"
+     "source": "https://britishlistedbuildings.co.uk/101349392"
     },
     {
      "name": "Chipping Campden Market Hall",
@@ -548,9 +548,9 @@
      "nation": "England",
      "claimed_date": "1627",
      "year": 1627,
-     "evidence_date": null,
+     "evidence_date": "1627, built for Sir Baptist Hicks (list entry)",
      "claim": "Jacobean market hall (National Trust)",
-     "source": "https://en.wikipedia.org/wiki/Chipping_Campden"
+     "source": "https://britishlistedbuildings.co.uk/101078442"
     }
    ]
   },
@@ -607,11 +607,11 @@
      "wikipedia_title": "Lavenham Guildhall",
      "location": "Lavenham, Suffolk, England",
      "nation": "England",
-     "claimed_date": "1529",
+     "claimed_date": "c. 1529",
      "year": 1529,
-     "evidence_date": null,
+     "evidence_date": "early 16th century, c. 1529 (list entry)",
      "claim": "timber-framed Tudor guildhall (National Trust)",
-     "source": "https://en.wikipedia.org/wiki/Lavenham_Guildhall"
+     "source": "https://britishlistedbuildings.co.uk/101037186"
     },
     {
      "name": "Musselburgh Tolbooth",
@@ -637,9 +637,9 @@
      "nation": "Isle of Man",
      "claimed_date": "c. 1200",
      "year": 1200,
-     "evidence_date": "built as St Mary's chapel c.1200; school from 1570 to 1930",
+     "evidence_date": "built as St Mary's chapel around the 1200s; converted to a grammar school c.1710 by Bishop Wilson; school until 1930",
      "claim": "said to be the oldest roofed building on the Isle of Man",
-     "source": "https://en.wikipedia.org/wiki/Castletown,_Isle_of_Man"
+     "source": "https://manxnationalheritage.im/?p=333"
     },
     {
      "name": "Winchester College",
@@ -659,20 +659,20 @@
      "nation": "England",
      "claimed_date": "1420s (guild buildings)",
      "year": 1427,
-     "evidence_date": "schoolroom in the 15th-century Guild buildings",
+     "evidence_date": "Guildhall c. 1417 (list entry); Pedagogue's House 1427",
      "claim": "Shakespeare's school",
-     "source": "https://en.wikipedia.org/wiki/King_Edward_VI_School,_Stratford-upon-Avon"
+     "source": "https://britishlistedbuildings.co.uk/101187780"
     },
     {
      "name": "Ewelme Church of England School",
      "wikipedia_title": "Ewelme",
      "location": "Ewelme, Oxfordshire, England",
      "nation": "England",
-     "claimed_date": "1437",
-     "year": 1437,
-     "evidence_date": "school building founded by Alice de la Pole c.1437",
+     "claimed_date": "c. 1450",
+     "year": 1450,
+     "evidence_date": "school building c. 1450 (list entry); foundation licensed 1437",
      "claim": "claimed oldest state school building in England still in use",
-     "source": "https://en.wikipedia.org/wiki/Ewelme"
+     "source": "https://britishlistedbuildings.co.uk/101369062"
     },
     {
      "name": "Eton College",
@@ -698,9 +698,9 @@
      "nation": "England",
      "claimed_date": "1288-1378",
      "year": 1288,
-     "evidence_date": null,
+     "evidence_date": "Treasury in accounts 1288/1291; ranges 1308-9, c. 1336, 1371-8 (list entries)",
      "claim": "oldest quadrangle in Oxford",
-     "source": "https://en.wikipedia.org/wiki/Mob_Quad"
+     "source": "https://britishlistedbuildings.co.uk/101200028"
     },
     {
      "name": "Peterhouse",
@@ -731,9 +731,9 @@
      "nation": "England",
      "claimed_date": "1427-1488",
      "year": 1427,
-     "evidence_date": null,
+     "evidence_date": "built 1424-1490 (list entry)",
      "claim": "oldest purpose-built university building in Oxford for teaching",
-     "source": "https://en.wikipedia.org/wiki/Divinity_School,_Oxford"
+     "source": "https://britishlistedbuildings.co.uk/101047185"
     },
     {
      "name": "St Salvator's Chapel",
@@ -751,11 +751,11 @@
      "wikipedia_title": "King's College Chapel, Aberdeen",
      "location": "Aberdeen, Scotland",
      "nation": "Scotland",
-     "claimed_date": "1498-1509",
-     "year": 1498,
-     "evidence_date": null,
+     "claimed_date": "1500-1506",
+     "year": 1500,
+     "evidence_date": "begun 1500 (foundation inscription), dated 1504, leaded 1506 (HES LB19943)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/King's_College_Chapel,_Aberdeen"
+     "source": "https://portal.historicenvironment.scot/designation/LB19943"
     },
     {
      "name": "The Rubrics, Trinity College Dublin",
@@ -764,9 +764,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "c. 1700",
      "year": 1700,
-     "evidence_date": null,
+     "evidence_date": "built c.1700, upper floor and gables added 1894 (NIAH 50020387)",
      "claim": "oldest surviving building of Trinity College Dublin",
-     "source": "https://en.wikipedia.org/wiki/The_Rubrics"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50020387/the-rubrics-trinity-college-dublin-2-co-dublin"
     },
     {
      "name": "St David's College, Lampeter (Old Building)",
@@ -775,9 +775,9 @@
      "nation": "Wales",
      "claimed_date": "1822-1827",
      "year": 1822,
-     "evidence_date": null,
+     "evidence_date": "designed and built 1822-7 by C. R. Cockerell (Coflein NPRN 23298)",
      "claim": "oldest degree-awarding institution in Wales",
-     "source": "https://en.wikipedia.org/wiki/University_of_Wales,_Lampeter"
+     "source": "https://coflein.gov.uk/en/site/23298"
     }
    ]
   },
@@ -792,9 +792,9 @@
      "nation": "England",
      "claimed_date": "1373-1378",
      "year": 1373,
-     "evidence_date": null,
+     "evidence_date": "library range built 1371-8 (list entry)",
      "claim": "claims oldest academic library in continuous daily use",
-     "source": "https://en.wikipedia.org/wiki/Merton_College_Library"
+     "source": "https://britishlistedbuildings.co.uk/101369662"
     },
     {
      "name": "Duke Humfrey's Library",
@@ -814,9 +814,9 @@
      "nation": "England",
      "claimed_date": "1598",
      "year": 1598,
-     "evidence_date": null,
+     "evidence_date": "library founded 1598 (St Wulfram's)",
      "claim": "claims to be one of England's first public libraries",
-     "source": "https://en.wikipedia.org/wiki/Francis_Trigge_Chained_Library"
+     "source": "https://stwulframs.org.uk/francis-trigge-chained-library"
     },
     {
      "name": "Hereford Cathedral Library",
@@ -856,11 +856,11 @@
      "wikipedia_title": "Marsh's Library",
      "location": "Dublin, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "1707",
-     "year": 1707,
-     "evidence_date": null,
+     "claimed_date": "1701–1703",
+     "year": 1701,
+     "evidence_date": "built 1701-3, extended 1710 (NIAH 50110023); incorporated by Act of 1707",
      "claim": "Ireland's first public library",
-     "source": "https://en.wikipedia.org/wiki/Marsh's_Library"
+     "source": "https://buildingsofireland.ie/buildings-search/building/50110023/marshs-library-st-patricks-close-dublin-8-dublin"
     },
     {
      "name": "Linen Hall Library",
@@ -869,9 +869,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1788",
      "year": 1788,
-     "evidence_date": "present building (former warehouse) occupied since 1892",
+     "evidence_date": "Belfast Reading Society founded 13 May 1788; present building completed 1864 as a linen warehouse, library there since 1892",
      "claim": "oldest library in Belfast",
-     "source": "https://en.wikipedia.org/wiki/Linen_Hall_Library"
+     "source": "https://linenhall.com/about-the-linen-hall/"
     }
    ]
   },
@@ -908,9 +908,9 @@
      "nation": "England",
      "claimed_date": "1437",
      "year": 1437,
-     "evidence_date": null,
+     "evidence_date": "c. 1437; licence 1437, probably complete by 1442 (list entry)",
      "claim": "brick almshouse still in use",
-     "source": "https://en.wikipedia.org/wiki/Ewelme"
+     "source": "https://britishlistedbuildings.co.uk/101369023"
     },
     {
      "name": "Browne's Hospital",
@@ -941,9 +941,9 @@
      "nation": "England",
      "claimed_date": "1682-1692",
      "year": 1682,
-     "evidence_date": null,
+     "evidence_date": "built 1682-1702 to Wren's designs (list entry 1226301)",
      "claim": "Wren-designed veterans' home still in use",
-     "source": "https://en.wikipedia.org/wiki/Royal_Hospital_Chelsea"
+     "source": "https://britishlistedbuildings.co.uk/101226301"
     }
    ]
   },
@@ -991,9 +991,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1720-1733",
      "year": 1733,
-     "evidence_date": null,
+     "evidence_date": "dated 1720, opened 1733, completed mid-1730s (NIAH 50080083)",
      "claim": "one of Ireland's oldest hospital buildings",
-     "source": "https://en.wikipedia.org/wiki/Dr_Steevens'_Hospital"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50080083/health-service-executive-steevenss-lane-saint-johns-road-west-dublin-8-dublin"
     },
     {
      "name": "Rotunda Hospital",
@@ -1002,9 +1002,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1745 (building 1757)",
      "year": 1757,
-     "evidence_date": null,
+     "evidence_date": "built 1751-7 (NIAH 50010619); hospital founded 1745 in George's Lane",
      "claim": "oldest continuously operating maternity hospital in the world",
-     "source": "https://en.wikipedia.org/wiki/Rotunda_Hospital"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50010619/rotunda-hospital-parnell-street-dublin-1-co-dublin"
     }
    ]
   },
@@ -1030,9 +1030,9 @@
      "nation": "England",
      "claimed_date": "1195",
      "year": 1195,
-     "evidence_date": null,
+     "evidence_date": "prison tower authorised 1194, built 1195; rebuilt late 13th century",
      "claim": "tower built as a prison for the stannary courts",
-     "source": "https://en.wikipedia.org/wiki/Lydford_Castle"
+     "source": "https://www.english-heritage.org.uk/visit/places/lydford-castle-and-saxon-town/history/"
     },
     {
      "name": "Kilmainham Gaol",
@@ -1041,9 +1041,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1796",
      "year": 1796,
-     "evidence_date": null,
+     "evidence_date": "opened as county gaol 1796, built c.1795-1801 (NIAH 50080057)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Kilmainham_Gaol"
+     "source": "https://buildingsofireland.ie/buildings-search/building/50080057/kilmainham-gaol-inchicore-road-dublin-8-dublin-city"
     },
     {
      "name": "Inveraray Jail",
@@ -1074,9 +1074,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1845",
      "year": 1845,
-     "evidence_date": null,
+     "evidence_date": "designed 1841 by Charles Lanyon; built 1843-5 (HB26/43/012)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/HM_Prison_Belfast"
+     "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=4124"
     }
    ]
   },
@@ -1089,11 +1089,11 @@
      "wikipedia_title": "Smock Alley Theatre",
      "location": "Dublin, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "1662",
-     "year": 1662,
-     "evidence_date": "theatre 1662; surviving building later rebuilt as a church",
+     "claimed_date": "1735 (theatre founded 1662)",
+     "year": 1735,
+     "evidence_date": "1662 theatre demolished 1735 to foundations; 1735 theatre retained within church of 1813 (Excavations 2009:313; NIAH 50020504)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Smock_Alley_Theatre"
+     "source": "https://excavations.ie/report/2009/Dublin/0020648/"
     },
     {
      "name": "Theatre Royal, Bristol (Bristol Old Vic)",
@@ -1157,9 +1157,9 @@
      "nation": "Isle of Man",
      "claimed_date": "1900",
      "year": 1900,
-     "evidence_date": null,
+     "evidence_date": "opened 16 July 1900 after Frank Matcham remodelled the 1893 Marina/Pavilion (Registered Building No. 200)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Gaiety_Theatre,_Isle_of_Man"
+     "source": "https://www.villagaiety.com/about-us/history/"
     }
    ]
   },
@@ -1174,9 +1174,9 @@
      "nation": "England",
      "claimed_date": "1896 (first shows); 1848 hall",
      "year": 1896,
-     "evidence_date": null,
+     "evidence_date": "theatre added 1848; first UK public film show (Lumière) 1896",
      "claim": "birthplace of British cinema; first UK showing of Lumière films",
-     "source": "https://en.wikipedia.org/wiki/Regent_Street_Cinema"
+     "source": "https://www.westminster.ac.uk/about-us/our-university/our-heritage/timeline"
     },
     {
      "name": "Electric Cinema, Birmingham",
@@ -1185,8 +1185,8 @@
      "nation": "England",
      "claimed_date": "1909",
      "year": 1909,
-     "evidence_date": null,
-     "claim": "oldest working cinema in the UK",
+     "evidence_date": "opened 1909; closed 29 February 2024; not listed (DCMS 2025: largely early-2000s refurbishment)",
+     "claim": "claimed as the oldest working cinema in the UK until it closed in February 2024",
      "source": "https://en.wikipedia.org/wiki/The_Electric,_Birmingham"
     },
     {
@@ -1257,9 +1257,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1862",
      "year": 1862,
-     "evidence_date": null,
+     "evidence_date": "built from May 1860, opened 12 May 1862 (HB26/30/057)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Ulster_Hall"
+     "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=1793"
     },
     {
      "name": "Royal Albert Hall",
@@ -1285,9 +1285,9 @@
      "nation": "England",
      "claimed_date": "1683",
      "year": 1683,
-     "evidence_date": null,
+     "evidence_date": "built 1679-83 (list entry)",
      "claim": "world's oldest surviving purpose-built museum building",
-     "source": "https://en.wikipedia.org/wiki/History_of_Science_Museum,_Oxford"
+     "source": "https://britishlistedbuildings.co.uk/101369352"
     },
     {
      "name": "Hunterian Museum (Glasgow)",
@@ -1296,9 +1296,9 @@
      "nation": "Scotland",
      "claimed_date": "1807",
      "year": 1807,
-     "evidence_date": "present building 1870s",
+     "evidence_date": "museum opened 1807 (first building demolished); present Gilbert Scott building 1866-70 (HES LB32913)",
      "claim": "Scotland's oldest public museum",
-     "source": "https://en.wikipedia.org/wiki/Hunterian_Museum_and_Art_Gallery"
+     "source": "https://www.gla.ac.uk/hunterian/visit/our-venues/museum"
     },
     {
      "name": "British Museum",
@@ -1316,11 +1316,11 @@
      "wikipedia_title": "Fitzwilliam Museum",
      "location": "Cambridge, England",
      "nation": "England",
-     "claimed_date": "1848",
-     "year": 1848,
-     "evidence_date": null,
+     "claimed_date": "1837-1843",
+     "year": 1837,
+     "evidence_date": "Founder's Building 1837-43 (list entry); opened 1848",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Fitzwilliam_Museum"
+     "source": "https://britishlistedbuildings.co.uk/101126276"
     }
    ]
   },
@@ -1335,9 +1335,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1729",
      "year": 1729,
-     "evidence_date": "built as Irish Parliament House; bank since 1803",
+     "evidence_date": "built 1728-1733 as Parliament House; remodelled as bank 1803 (NIAH 50020250)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Parliament_House,_Dublin"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50020250/bank-of-ireland-college-green-dublin-2-dublin"
     },
     {
      "name": "Bank of England",
@@ -1346,9 +1346,9 @@
      "nation": "England",
      "claimed_date": "1694",
      "year": 1734,
-     "evidence_date": "on site since 1734; rebuilt 1920s-30s within Soane's curtain wall",
+     "evidence_date": "founded 1694 (Grocers' Hall); on Threadneedle Street since 1734; rebuilt by Baker 1921-37 within Soane's late-18th/early-19th-century screen wall (list entry)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Bank_of_England"
+     "source": "https://britishlistedbuildings.co.uk/101079134"
     },
     {
      "name": "Dundas House",
@@ -1379,9 +1379,9 @@
      "nation": "England",
      "claimed_date": "1672",
      "year": 1829,
-     "evidence_date": "bank 1672; 37 Fleet Street building 1829",
+     "evidence_date": "bank 1672 (Cheapside; Fleet Street from 1690); 37 Fleet Street banking house 1829-30",
      "claim": "oldest privately owned bank in the UK",
-     "source": "https://en.wikipedia.org/wiki/C._Hoare_&_Co"
+     "source": "https://www.hoaresbank.co.uk/350years"
     }
    ]
   },
@@ -1396,9 +1396,9 @@
      "nation": "Scotland",
      "claimed_date": "1712",
      "year": 1712,
-     "evidence_date": null,
+     "evidence_date": "post office founded 1712; building a mid-18th-century house (HES LB40547)",
      "claim": "oldest working post office in the world (Guinness)",
-     "source": "https://en.wikipedia.org/wiki/Sanquhar"
+     "source": "https://portal.historicenvironment.scot/designation/LB40547"
     },
     {
      "name": "General Post Office, Dublin",
@@ -1407,9 +1407,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1818",
      "year": 1818,
-     "evidence_date": null,
+     "evidence_date": "built 1814-18; rebuilt behind the facade 1925-32 after 1916 (NIAH 50010528)",
      "claim": "HQ of the 1916 Rising",
-     "source": "https://en.wikipedia.org/wiki/General_Post_Office,_Dublin"
+     "source": "https://buildingsofireland.ie/buildings-search/building/50010528/general-post-office-gpo-dublin-city"
     }
    ]
   },
@@ -1422,11 +1422,11 @@
      "wikipedia_title": "Heighington railway station",
      "location": "Heighington, County Durham, England",
      "nation": "England",
-     "claimed_date": "1825-27",
+     "claimed_date": "1826-27",
      "year": 1827,
-     "evidence_date": "Stockton & Darlington; former station building (Locomotion pub)",
+     "evidence_date": "built 1826-27 as inn/proto-station for the S&DR (opened 1825); listing 1322808",
      "claim": "claimed one of the world's first station buildings",
-     "source": "https://en.wikipedia.org/wiki/Heighington_railway_station"
+     "source": "https://britishlistedbuildings.co.uk/101322808"
     },
     {
      "name": "Liverpool Road railway station",
@@ -1444,11 +1444,11 @@
      "wikipedia_title": "Dublin Pearse railway station",
      "location": "Dublin, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "1834",
-     "year": 1834,
-     "evidence_date": "terminus of Dublin & Kingstown Railway; rebuilt 1880s",
+     "claimed_date": "1884 (station opened on the site 1834)",
+     "year": 1884,
+     "evidence_date": "present station built 1884, refaced 1891; first station on site 1834 (NIAH 50930337)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Dublin_Pearse_railway_station"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50930337/pearse-station-westland-row-dublin-2-co-dublin"
     },
     {
      "name": "Edge Hill railway station",
@@ -1457,9 +1457,9 @@
      "nation": "England",
      "claimed_date": "1836",
      "year": 1836,
-     "evidence_date": null,
+     "evidence_date": "station buildings 1836 (listings 1218196, 1063311)",
      "claim": "oldest passenger station still in use",
-     "source": "https://en.wikipedia.org/wiki/Edge_Hill_railway_station"
+     "source": "https://britishlistedbuildings.co.uk/101218196"
     }
    ]
   },
@@ -1566,11 +1566,11 @@
      "wikipedia_title": "Kirkby Lonsdale",
      "location": "Kirkby Lonsdale, Cumbria, England",
      "nation": "England",
-     "claimed_date": "c. 1370",
-     "year": 1370,
-     "evidence_date": null,
+     "claimed_date": "15th or early 16th century (c. 1370 often quoted)",
+     "year": 1400,
+     "evidence_date": "listing 1086899: C15 or early C16; pontage 1275 and 1365 for an earlier bridge",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Kirkby_Lonsdale"
+     "source": "https://britishlistedbuildings.co.uk/101086899"
     },
     {
      "name": "Tarr Steps",
@@ -1579,9 +1579,9 @@
      "nation": "England",
      "claimed_date": "prehistoric (claimed)",
      "year": 1400,
-     "evidence_date": "probably medieval; repeatedly rebuilt after floods",
+     "evidence_date": "medieval: after 1279 and probably not before c. 1400 (scheduling 1021325); rebuilt after floods 1942, 1952",
      "claim": "clapper bridge popularly called prehistoric",
-     "source": "https://en.wikipedia.org/wiki/Tarr_Steps"
+     "source": "https://hbsmrweb-exmoor.esdm.co.uk/Designation/DEM5398"
     },
     {
      "name": "The Iron Bridge",
@@ -1607,7 +1607,7 @@
      "nation": "England",
      "claimed_date": "c. AD 120",
      "year": 120,
-     "evidence_date": "Roman, re-dug 1121",
+     "evidence_date": "Roman origin (c. AD 120) disputed; first recorded 1121 (Symeon of Durham)",
      "claim": "oldest canal in England still in use",
      "source": "https://en.wikipedia.org/wiki/Foss_Dyke"
     },
@@ -1618,9 +1618,9 @@
      "nation": "England",
      "claimed_date": "1566",
      "year": 1566,
-     "evidence_date": null,
+     "evidence_date": "built 1563-66 by John Trew",
      "claim": "among the oldest artificial waterways in England with pound locks",
-     "source": "https://en.wikipedia.org/wiki/Exeter_Ship_Canal"
+     "source": "https://exhibit.topshammuseum.org.uk/canal-start/canal-3/"
     },
     {
      "name": "Newry Canal",
@@ -1629,9 +1629,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1742",
      "year": 1742,
-     "evidence_date": null,
+     "evidence_date": "inland section built 1730-1742 (NI HED record HB16/25/033)",
      "claim": "first summit-level canal in the British Isles",
-     "source": "https://en.wikipedia.org/wiki/Newry_Canal"
+     "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=10259"
     },
     {
      "name": "Bridgewater Canal",
@@ -1651,9 +1651,9 @@
      "nation": "Scotland",
      "claimed_date": "1768-1790",
      "year": 1768,
-     "evidence_date": null,
+     "evidence_date": "built 1768-1790 (HES SM6769)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Forth_and_Clyde_Canal"
+     "source": "https://portal.historicenvironment.scot/designation/SM6769"
     },
     {
      "name": "Pontcysyllte Aqueduct",
@@ -1662,9 +1662,9 @@
      "nation": "Wales",
      "claimed_date": "1795-1805",
      "year": 1805,
-     "evidence_date": null,
+     "evidence_date": "built 1795-1805, first stone laid 25 July 1795 (Cadw 1601)",
      "claim": "longest and highest aqueduct in Britain; UNESCO WHS",
-     "source": "https://en.wikipedia.org/wiki/Pontcysyllte_Aqueduct"
+     "source": "https://britishlistedbuildings.co.uk/300001601-pontcysyllte-aqueduct-llangollen-rural"
     }
    ]
   },
@@ -1712,9 +1712,9 @@
      "nation": "Scotland",
      "claimed_date": "1636",
      "year": 1636,
-     "evidence_date": null,
+     "evidence_date": "stump of the 1636 beacon with dated panel (HES LB2686)",
      "claim": "Scotland's first permanently manned lighthouse",
-     "source": "https://en.wikipedia.org/wiki/Isle_of_May"
+     "source": "https://portal.historicenvironment.scot/designation/LB2686"
     },
     {
      "name": "North Foreland Lighthouse",
@@ -1745,9 +1745,9 @@
      "nation": "Scotland",
      "claimed_date": "1787",
      "year": 1787,
-     "evidence_date": null,
+     "evidence_date": "lighthouse built 1787 by Thomas Smith in the c.1570 castle tower (HES LB31888)",
      "claim": "first Northern Lighthouse Board light, built into a castle",
-     "source": "https://en.wikipedia.org/wiki/Kinnaird_Head"
+     "source": "https://portal.historicenvironment.scot/designation/LB31888"
     }
    ]
   },
@@ -1784,9 +1784,9 @@
      "nation": "England",
      "claimed_date": "pre-1636",
      "year": 1636,
-     "evidence_date": null,
+     "evidence_date": "early C17, mentioned as standing in a 1636 deed (listing 1162375)",
      "claim": "claimed oldest surviving windmill in the UK",
-     "source": "https://en.wikipedia.org/wiki/Bourn_Windmill"
+     "source": "https://britishlistedbuildings.co.uk/101162375"
     },
     {
      "name": "Outwood Windmill",
@@ -1828,9 +1828,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1846",
      "year": 1846,
-     "evidence_date": null,
+     "evidence_date": "built 1846 by James Moran (OPW, Heritage Ireland)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Tacumshane"
+     "source": "https://heritageireland.ie/unguided-sites/tacumshane-windmill/"
     }
    ]
   },
@@ -1884,9 +1884,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "c. 619-621",
      "year": 619,
-     "evidence_date": "dendro-dated remains (excavated, not standing)",
+     "evidence_date": "first mill dendro-dated to AD 619 (Excavations 1999:0004037); excavated remains, not standing",
      "claim": "earliest known tide mill site in the world",
-     "source": "https://en.wikipedia.org/wiki/Nendrum_Monastery"
+     "source": "https://excavations.ie/report/1999/Down/0004037/"
     },
     {
      "name": "House Mill, Three Mills",
@@ -2032,9 +2032,9 @@
      "wikipedia_title": "Old Bushmills Distillery",
      "location": "Bushmills, County Antrim, Northern Ireland",
      "nation": "Northern Ireland",
-     "claimed_date": "1608 (licence)",
-     "year": 1608,
-     "evidence_date": "1608 licence was a regional grant; company founded 1784; buildings largely 19th century",
+     "claimed_date": "1784 (1608 licence)",
+     "year": 1784,
+     "evidence_date": "1608 regional licence to Sir Thomas Phillips; distillery company established 1784; buildings rebuilt after 1885 fire",
      "claim": "claims oldest licensed distillery in the world",
      "source": "https://en.wikipedia.org/wiki/Old_Bushmills_Distillery"
     },
@@ -2045,9 +2045,9 @@
      "nation": "England",
      "claimed_date": "1698",
      "year": 1698,
-     "evidence_date": "brewing on site documented from 1573 claimed; 1698 founding",
+     "evidence_date": "leased by Richard Marsh 1678, bought 1698 (official start); brewing on site claimed from 1570s",
      "claim": "claims Britain's oldest brewer",
-     "source": "https://en.wikipedia.org/wiki/Shepherd_Neame_Brewery"
+     "source": "https://www.shepherdneame.co.uk/brewery/history/marsh"
     },
     {
      "name": "Kilbeggan Distillery",
@@ -2056,20 +2056,20 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1757",
      "year": 1757,
-     "evidence_date": null,
+     "evidence_date": "complex built c.1757, extended to c.1930 (NIAH 15321006)",
      "claim": "claims oldest licensed distillery in the world",
-     "source": "https://en.wikipedia.org/wiki/Kilbeggan_Distillery"
+     "source": "https://buildingsofireland.ie/buildings-search/building/15321006/lockes-distillery-main-street-kilbeggan-kilbeggan-westmeath"
     },
     {
      "name": "St James's Gate Brewery",
      "wikipedia_title": "Guinness Brewery",
      "location": "Dublin, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "1759",
-     "year": 1759,
-     "evidence_date": null,
+     "claimed_date": "c. 1800 (brewery from 1759)",
+     "year": 1800,
+     "evidence_date": "earliest surviving buildings are vat houses of c.1800 (NIAH 50080144, 50080148); lease 1759",
      "claim": "Guinness lease 1759",
-     "source": "https://en.wikipedia.org/wiki/Guinness_Brewery"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50080144/guinness-brewery-saint-jamess-gate-dublin-8-co-dublin"
     },
     {
      "name": "Glenturret distillery",
@@ -2089,9 +2089,9 @@
      "nation": "Scotland",
      "claimed_date": "1779",
      "year": 1779,
-     "evidence_date": null,
+     "evidence_date": "founded 1779 by David Simson (Gazetteer for Scotland)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Bowmore_distillery"
+     "source": "https://www.scottish-places.info/features/featurefirst11872.html"
     }
    ]
   },
@@ -2139,9 +2139,9 @@
      "nation": "Scotland",
      "claimed_date": "1786",
      "year": 1786,
-     "evidence_date": null,
+     "evidence_date": "Mill No 1 built 1785, spinning from 1786; rebuilt 1789 after fire (HES LB37051)",
      "claim": "UNESCO WHS",
-     "source": "https://en.wikipedia.org/wiki/New_Lanark"
+     "source": "https://portal.historicenvironment.scot/designation/LB37051"
     },
     {
      "name": "Ditherington Flax Mill",
@@ -2198,11 +2198,11 @@
      "wikipedia_title": "Royal Albert Dock, Liverpool",
      "location": "Liverpool, England",
      "nation": "England",
-     "claimed_date": "1846",
-     "year": 1846,
-     "evidence_date": null,
+     "claimed_date": "1841-45 (dock opened 1846)",
+     "year": 1841,
+     "evidence_date": "warehouses 1841-5 by J. Hartley (listings 1205175 etc.)",
      "claim": "first non-combustible dock warehouses",
-     "source": "https://en.wikipedia.org/wiki/Royal_Albert_Dock,_Liverpool"
+     "source": "https://britishlistedbuildings.co.uk/101205175"
     }
    ]
   },
@@ -2294,7 +2294,7 @@
      "nation": "Channel Islands",
      "claimed_date": "1048 (site)",
      "year": 1225,
-     "evidence_date": "oldest parts of present building c.1225",
+     "evidence_date": "church on site 1048; nave, tower and chancel 1225-1250",
      "claim": null,
      "source": "https://en.wikipedia.org/wiki/St_Martin's_Parish_Church,_Guernsey"
     }
@@ -2355,9 +2355,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "c. 1030 (founded)",
      "year": 1180,
-     "evidence_date": "present stone church from 1180s, heavily restored 1870s",
+     "evidence_date": "present building begun 1172 (built c.1170), rebuilt c.1875; first church founded 1030 (NIAH 50080532)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Christ_Church_Cathedral,_Dublin"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50080532/christ-church-cathedral-christchurch-place-saint-michaels-hill-dublin-8-co-dublin"
     },
     {
      "name": "Glasgow Cathedral",
@@ -2444,9 +2444,9 @@
      "nation": "England",
      "claimed_date": "1887-89",
      "year": 1887,
-     "evidence_date": null,
+     "evidence_date": "house c. 1830; Liverpool Muslim Institute and mosque extension 1889 (listing 1062583); Institute founded 1887",
      "claim": "first mosque in England (converted terrace)",
-     "source": "https://en.wikipedia.org/wiki/Liverpool_Muslim_Institute"
+     "source": "https://britishlistedbuildings.co.uk/101062583"
     },
     {
      "name": "Shah Jahan Mosque",
@@ -2494,9 +2494,9 @@
      "nation": "England",
      "claimed_date": "1670",
      "year": 1670,
-     "evidence_date": null,
+     "evidence_date": "1670 (listing 1268759, Grade I)",
      "claim": "oldest purpose-built Quaker meeting house in continuous use",
-     "source": "https://quaker.org.uk/meetings/hertford"
+     "source": "https://britishlistedbuildings.co.uk/101268759"
     },
     {
      "name": "Brigflatts Meeting House",
@@ -2538,9 +2538,9 @@
      "nation": "England",
      "claimed_date": "1566 (claimed)",
      "year": 1700,
-     "evidence_date": "evidence points to c.1700",
+     "evidence_date": "probably c1700 (listing 1036378); plaque dated 1566",
      "claim": "claims oldest Nonconformist chapel in England; disputed",
-     "source": "https://en.wikipedia.org/wiki/Horningsham"
+     "source": "https://britishlistedbuildings.co.uk/101036378"
     }
    ]
   },
@@ -2586,11 +2586,11 @@
      "wikipedia_title": "Kilkea Castle",
      "location": "County Kildare, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "1180",
-     "year": 1180,
-     "evidence_date": "much remodelled 19th century",
+     "claimed_date": "15th century (rebuilt 1426; first castle 1180/81)",
+     "year": 1426,
+     "evidence_date": "much-restored 15th-century castle, nearly rebuilt 1426; 1181 castle probably the nearby motte; remodelled 19th century",
      "claim": "claims oldest inhabited castle in Ireland",
-     "source": "https://en.wikipedia.org/wiki/Kilkea_Castle"
+     "source": "https://excavations.ie/?p=12819"
     },
     {
      "name": "Dunvegan Castle",
@@ -2658,11 +2658,11 @@
      "wikipedia_title": "Corbridge",
      "location": "Corbridge, Northumberland, England",
      "nation": "England",
-     "claimed_date": "c. 1300",
-     "year": 1300,
-     "evidence_date": null,
+     "claimed_date": "c. 1400",
+     "year": 1400,
+     "evidence_date": "c.1400 (listing 1044750)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Corbridge"
+     "source": "https://britishlistedbuildings.co.uk/101044750"
     },
     {
      "name": "Smailholm Tower",
@@ -2688,9 +2688,9 @@
      "nation": "England",
      "claimed_date": "c. 1270-1280",
      "year": 1270,
-     "evidence_date": null,
+     "evidence_date": "c.1260-1290 (listing 1033405)",
      "claim": "one of the earliest brick buildings in England",
-     "source": "https://en.wikipedia.org/wiki/Little_Wenham_Hall"
+     "source": "https://britishlistedbuildings.co.uk/101033405"
     },
     {
      "name": "Stokesay Castle",
@@ -2710,9 +2710,9 @@
      "nation": "England",
      "claimed_date": "c. 1296",
      "year": 1296,
-     "evidence_date": null,
+     "evidence_date": "built at the close of the 13th century; licence to crenellate 1305 (Northumberland HER N9957)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Aydon_Castle"
+     "source": "https://keystothepast.info/Site-Details?PRN=N9957"
     },
     {
      "name": "Rathfarnham Castle",
@@ -2721,9 +2721,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1583",
      "year": 1583,
-     "evidence_date": null,
+     "evidence_date": "built c.1583 by Adam Loftus; remodelled 1726-67 (NIAH 11216007)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Rathfarnham_Castle"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/11216007/rathfarnham-castle-south-dublin-county"
     }
    ]
   },
@@ -2738,9 +2738,9 @@
      "nation": "England",
      "claimed_date": "1675-76",
      "year": 1675,
-     "evidence_date": null,
+     "evidence_date": "Flamsteed House 1675-6 (listing 1358976)",
      "claim": "Flamsteed House by Wren",
-     "source": "https://en.wikipedia.org/wiki/Royal_Observatory,_Greenwich"
+     "source": "https://britishlistedbuildings.co.uk/101358976"
     },
     {
      "name": "King's Observatory",
@@ -2769,11 +2769,11 @@
      "wikipedia_title": "Dunsink Observatory",
      "location": "Dublin, Ireland",
      "nation": "Republic of Ireland",
-     "claimed_date": "1785",
-     "year": 1785,
-     "evidence_date": null,
+     "claimed_date": "1783 (established 1785)",
+     "year": 1783,
+     "evidence_date": "observatory house built 1783 (NIAH 11354008); South Dome 1868 (NIAH 11354009)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Dunsink_Observatory"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/11354008/dunsink-observatory-dunsink-lane-dunsink-co-dublin"
     },
     {
      "name": "Armagh Observatory",
@@ -2782,9 +2782,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1789",
      "year": 1789,
-     "evidence_date": null,
+     "evidence_date": "main building by Francis Johnston 1788-89 (DIA)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Armagh_Observatory"
+     "source": "https://dia.ie/works/view/1398/building/CO.+ARMAGH%2C+ARMAGH%2C+OBSERVATORY"
     },
     {
      "name": "City Observatory, Calton Hill",
@@ -2819,11 +2819,11 @@
      "wikipedia_title": "Bicton, Devon",
      "location": "East Budleigh, Devon, England",
      "nation": "England",
-     "claimed_date": "c. 1820s",
+     "claimed_date": "c. 1820-25",
      "year": 1825,
-     "evidence_date": null,
+     "evidence_date": "circa 1820-5 (listing 1097548)",
      "claim": "possibly the oldest surviving curvilinear glasshouse",
-     "source": "https://en.wikipedia.org/wiki/Bicton,_Devon"
+     "source": "https://britishlistedbuildings.co.uk/101097548"
     },
     {
      "name": "Great Conservatory, Syon Park",
@@ -2832,9 +2832,9 @@
      "nation": "England",
      "claimed_date": "1827-1830",
      "year": 1827,
-     "evidence_date": null,
+     "evidence_date": "c 1827 (Register) / circa 1830 and before 1838 (listing 1358328)",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Syon_House"
+     "source": "https://britishlistedbuildings.co.uk/101358328"
     },
     {
      "name": "Palm House, Belfast Botanic Gardens",
@@ -2843,9 +2843,9 @@
      "nation": "Northern Ireland",
      "claimed_date": "1839-1840",
      "year": 1839,
-     "evidence_date": null,
+     "evidence_date": "wings built 1839-40 by Turner & Walker to Lanyon's design, foundation stone 22 June 1839 (DIA)",
      "claim": "among the earliest curvilinear cast-iron glasshouses",
-     "source": "https://en.wikipedia.org/wiki/Botanic_Gardens_(Belfast)"
+     "source": "https://dia.ie/works/view/47067/building/CO.+ANTRIM%2C+BELFAST%2C+STRANMILLIS+ROAD%2C+BOTANIC+GARDEN"
     },
     {
      "name": "Curvilinear Range, Glasnevin",
@@ -2915,9 +2915,9 @@
      "nation": "Wales",
      "claimed_date": "1846",
      "year": 1846,
-     "evidence_date": null,
+     "evidence_date": "opened 1846; rebuilt 1872 after storm damage, extended 1895",
      "claim": null,
-     "source": "https://en.wikipedia.org/wiki/Beaumaris_Pier"
+     "source": "https://www.parksandgardens.org/places/beaumaris-pier"
     }
    ]
   },
@@ -2982,7 +2982,7 @@
      "nation": "Scotland",
      "claimed_date": "1690",
      "year": 1690,
-     "evidence_date": null,
+     "evidence_date": "south block built 1690 by Robert Mylne; pend dated 1690 (HES LB29237)",
      "claim": "early planned courtyard tenement",
      "source": "https://portal.historicenvironment.scot/designation/LB29237"
     },
@@ -3032,9 +3032,9 @@
      "nation": "England",
      "claimed_date": "c. 1363",
      "year": 1363,
-     "evidence_date": null,
+     "evidence_date": "from c1360 for Bishop Ralph of Shrewsbury (listings 1383197, 1383199)",
      "claim": "claimed oldest purely residential street with original buildings in Europe",
-     "source": "https://en.wikipedia.org/wiki/Vicars'_Close,_Wells"
+     "source": "https://britishlistedbuildings.co.uk/101383197"
     },
     {
      "name": "Henrietta Street, Dublin",
@@ -3043,9 +3043,9 @@
      "nation": "Republic of Ireland",
      "claimed_date": "1720s",
      "year": 1721,
-     "evidence_date": null,
+     "evidence_date": "street laid out 1720s; Nos. 11-12 built c.1730 (NIAH 50010677)",
      "claim": "Dublin's earliest Georgian street",
-     "source": "https://en.wikipedia.org/wiki/Henrietta_Street,_Dublin"
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/50010677/12-henrietta-street-dublin-dublin"
     },
     {
      "name": "The Circus, Bath",

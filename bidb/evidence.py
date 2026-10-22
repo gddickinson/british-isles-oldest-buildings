@@ -22,6 +22,7 @@ FILE = DATA_DIR / "curated" / "evidence.json"
 CHECK = DATA_DIR / "evidence_check.json"
 KINDS = ("primary", "listing", "secondary", "reference")
 VERDICTS = ("kept", "corrected", "open")
+SLOW_HOSTS = {"apps.communities-ni.gov.uk": 4.0}      # answers with an empty page when asked quickly
 
 
 def load():
@@ -76,7 +77,7 @@ def check(log=print):
             url = s.get("url")
             if url and url not in texts:
                 texts[url] = source_text(url)
-                time.sleep(0.5)
+                time.sleep(SLOW_HOSTS.get(url.split("/")[2], 0.5))
             text = texts.get(url)
             res.append("unreachable" if text is None else "quote-found" if quote_found(s["quote"], text) else "quote-missing")
         out[c["id"]] = {"sources": res, "checked": time.strftime("%Y-%m-%d")}

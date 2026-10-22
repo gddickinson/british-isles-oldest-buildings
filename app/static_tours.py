@@ -49,10 +49,14 @@ def export(conn, out_dir):
             digs.setdefault(rid, []).append([what, years, who])
         (out_dir / "excavations.json").write_text(json.dumps(digs, ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'domesday'").fetchone():
-        # {settlement qid: [name, Open Domesday id]} and {record id: settlement qid (prefixed "=" when itself)}
+        # {settlement qid: [name, Open Domesday id, (churches, priests, households, Phillimore ref)]}
+        # and {record id: settlement qid (prefixed "=" when itself)}
+        from bidb.domesday_entries import entry
         places, marks = {}, {}
         for rid, sid, name, od, itself in conn.execute("SELECT entity_id, settlement_id, settlement, od_id, itself FROM domesday"):
-            places[sid] = [name, od]
+            if sid not in places:
+                e = entry(conn, od)
+                places[sid] = [name, od] + ([e["churches"], e["priests"], e["households"], e["phillimore"]] if e else [])
             marks[rid] = ("=" if itself else "") + sid
         (out_dir / "domesday.json").write_text(json.dumps({"s": places, "r": marks}, ensure_ascii=False,
                                                           separators=(",", ":")))

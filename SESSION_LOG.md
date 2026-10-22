@@ -400,3 +400,27 @@
   102 claims quoting them, plus Bede I.26 for St Martin's. 9 corrections where the listing contradicts a legend.
   evidence.json: 174 claims, 212 quotes (211 found; Ballycopeland's Geograph source refuses scripts).
   Verification: confirmed 322, evidenced 49, unreachable 1, year-missing 0. Tests: 84 pass.
+
+## 2026-10-22 — research track R3 completed, R4
+- R3 second pass: the 88 oldest-of-type examples without evidence researched (four parallel research agents; every
+  quote re-checked by `bidb.evidence` before merging): NIAH (Ireland), the NI HED register, HES, Cadw/Coflein, Manx
+  National Heritage, British Listed Buildings, Survey of London / VCH (BHO), institutions' own pages. 67 kept,
+  18 corrected, 3 open (details in ROADMAP R3). Innerpeffray settled, Stokesay explained. Five researched examples
+  listed under two types share their claim (cloned with the second research key).
+- Catalogue dates: 16 R4 dates and 23 R3 dates added to `date_corrections.json` (114 in all) where the record's own
+  date came from Wikidata or article mining and described something else (a weir, a founding firm, Syon House…).
+- Build fix: research entries sharing one Wikipedia article (both Ewelme entries) — the second was dropped; it now
+  becomes a research-only record. God's House, Ewelme added to the current database (22,039 records).
+- R4: 40 early churches/monasteries against Bede, the Anglo-Saxon Chronicle, Lives of the Abbots, Annals of Ulster,
+  Electronic Sawyer charters, Asser, VCH: 26 kept, 5 corrected, 9 open; 16 dates sharpened or corrected.
+- `bidb/domesday_entries.py` (new; build stage after Domesday): Open Domesday place pages (they answer again; the
+  Open Domesday id holds the grid reference) for the 2,717 settlements of churches, abbeys and cathedrals →
+  table `domesday_entries`; the Domesday line in detail views now says "with a church and a priest (Sussex 1,1)" and
+  links the place page (local and hosted). "church lands" are not churches (regex fixed, test).
+- `bidb.evidence.check` paces the NI register (empty pages when asked quickly).
+- Domesday entries: 2,717 settlements, 906 with a church or priest; of 296 religious records dated before 1086 in a
+  Domesday settlement, 124 have a church or priest recorded there; 290 dated 1086–1199 sit where Domesday already
+  records one. Shares kept ("0.5 church"); "church lands" and the notes' "1/4 church" not counted (tests).
+- Evidence: 307 claims, 542 quotes, 541 found (Ballycopeland's Geograph source refuses scripts). Verification:
+  confirmed 295, evidenced 76, unreachable 1. Tests: 86 pass; UI checks building_domesday (new), building_evidence,
+  data_evidence pass.

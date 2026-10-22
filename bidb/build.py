@@ -54,7 +54,9 @@ def run(cutoff):
     research_by_qid, research_unlinked = {}, []
     for e in research:
         q = r_qids.get(e.get("wikipedia_title") or "")
-        if q:
+        if q and q in research_by_qid and research_by_qid[q]["name"] != e["name"]:
+            research_unlinked.append(e)               # another building described in the same article (Ewelme)
+        elif q:
             research_by_qid.setdefault(q, e)
         else:
             research_unlinked.append(e)
@@ -175,8 +177,8 @@ def run(cutoff):
 
 def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
     """[(stage name, function)] for a full build (also run from the GUI by app/jobs.py)."""
-    from . import (bridges, depictions, digs, domesday, era_places, hoards, lore_places, mapping_museums, maritime, military, museums,
-                   nation_geo, on_this_day, places_build, pronunciations, timeline, tours, underground, visiting)
+    from . import (bridges, depictions, digs, domesday, domesday_entries, era_places, hoards, lore_places, mapping_museums,
+                   maritime, military, museums, nation_geo, on_this_day, places_build, pronunciations, timeline, tours, underground, visiting)
     from . import stories as stories_mod
     out = [("Buildings", lambda: run(cutoff))]
     if places:
@@ -187,7 +189,8 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
                 ("Hoards", hoards.run), ("Bridges", bridges.run), ("Excavations", digs.run),
                 ("Nations for places", nation_geo.run)]
         if pron:
-            out += [("Pronunciations", pronunciations.run), ("Domesday Book", domesday.run)]
+            out += [("Pronunciations", pronunciations.run), ("Domesday Book", domesday.run),
+                    ("Domesday entries", domesday_entries.run)]
         out.append(("Paintings and prints", depictions.run))
         if stories:
             out += [("Stories", stories_mod.run), ("Timelines", timeline.run), ("Tours", tours.run),

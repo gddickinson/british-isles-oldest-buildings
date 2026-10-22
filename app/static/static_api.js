@@ -243,8 +243,9 @@
       DOMESDAY = DOMESDAY || fetch("data/domesday.json").then((r) => r.json()).catch(() => ({ s: {}, r: {} }));
       const d = await DOMESDAY, m = d.r[id];
       if (!m) return null;
-      const sid = m.replace(/^=/, ""), [settlement, od] = d.s[sid] || [];
-      return { entity_id: id, settlement_id: sid, settlement, od_id: od, itself: m.startsWith("=") ? 1 : 0 };
+      const sid = m.replace(/^=/, ""), [settlement, od, churches, priests, households, phillimore] = d.s[sid] || [];
+      const entry = churches === undefined ? null : { od_id: od, churches, priests, households, phillimore };
+      return { entity_id: id, settlement_id: sid, settlement, od_id: od, itself: m.startsWith("=") ? 1 : 0, entry };
     },
     async visiting(p, f, id) {
       VISITS = VISITS || fetch("data/visiting.json").then((r) => r.json()).catch(() => ({}));

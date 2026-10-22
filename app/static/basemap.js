@@ -391,6 +391,14 @@ const Basemap = (() => {
   // and, with data-visit="<record id>", who looks after it, opening hours and entry (OpenStreetMap)
   const FEE = { yes: "Entry fee", no: "Free entry", donation: "Donations welcome" };
   const ACCESS = { yes: "Wheelchair accessible", limited: "Limited wheelchair access", no: "Not wheelchair accessible" };
+  // "with 1 church and a priest" from the settlement's entry (bidb.domesday_entries)
+  const count = (n, one) => n === 1 ? `a ${one}` : n === 0.5 ? `half a ${one}` : n < 1 ? `a share in a ${one}`
+    : `${Math.round(n * 10) / 10} ${one}${one === "church" ? "es" : "s"}`;
+  const domesdayEntry = (e) => {
+    if (!e || !(e.churches || e.priests)) return "";
+    const bits = [e.churches && count(e.churches, "church"), e.priests && count(e.priests, "priest")].filter(Boolean);
+    return ` with ${bits.join(" and ")}${e.phillimore ? ` <span class="hint">(${esc(e.phillimore)})</span>` : ""}`;
+  };
   const mountTransport = async (el) => {
     el.dataset.transportDone = "1";
     const [lat, lon] = el.dataset.transport.split(",").map(Number);
@@ -403,8 +411,8 @@ const Basemap = (() => {
       : d.years && d.who ? `${esc(d.years)} (${esc(d.who.replace(/; /g, ", "))})` : esc(d.years || d.who || "")).filter(Boolean);
     if (dug.length) lines.push(`<b>${dug.every((t) => t.startsWith("found by")) ? "Found:" : "Excavated:"}</b> ${dug.join(" · ")}`);
     if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
-      esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book
-      <span class="hint">(<a href="https://opendomesday.org/" target="_blank" rel="noopener">Open Domesday</a>)</span>`);
+      esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book${domesdayEntry(dom.entry)}
+      <span class="hint">(<a href="https://opendomesday.org/${dom.od_id ? "place/" + esc(dom.od_id) + "/" : ""}" target="_blank" rel="noopener">Open Domesday</a>)</span>`);
     if (visit) {
       const bits = [visit.operator && `Looked after by ${esc(visit.operator)}`, visit.opening_hours && `Open: <code>${esc(visit.opening_hours)}</code>`,
         FEE[visit.fee] || (visit.fee && `Entry: ${esc(visit.fee)}`), ACCESS[visit.wheelchair],

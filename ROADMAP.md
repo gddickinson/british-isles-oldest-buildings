@@ -316,18 +316,40 @@ Detail views show "Evidence"; the Data quality page lists every claim. Sources t
       the site refuses scripts, so "unreachable"); corrected: Chichester Cross c. 1500 (listing), Eling Tide Mill mid
       C18 (listing), Glenturret 1763. Catalogue dates now follow the research file without a rebuild
       (`refresh_claims`); 8 researched examples that were in the catalogue twice are merged (build fixed).
-- [~] R3 (2026-10-21, first pass) Oldest-of-type examples with an official list entry (146): 102 new claims quoting
-      the list description (`bidb/listings.py`), plus Bede (Book I ch. 26) for St Martin's, Canterbury. Most confirm
-      the research date; the listing contradicts the claimed date for 9, now corrected with the claim kept as a claim
-      (Ye Olde Fighting Cocks C16 not 793, Bingley Arms 1738 not 953, Ye Olde Trip late C17 not 1189 — the listing
-      says its history as a pub "appears to date to 1760" —, Salutation Inn C16, Adam and Eve C17, Sheep Heid mid C19,
-      Angel and Royal late C14, Merthyr Synagogue 1872–5, Southend Pier 1889). Open: Innerpeffray (founded 1680 or
-      1691?); Stokesay's list entry says "c1391-1400" (a slip for 1291?). Still to do: examples without an English,
-      Scottish or Welsh list entry (Ireland, Northern Ireland, research-only), 6 entries whose page has another layout
-      (Royal Hospital Chelsea, Tarr Steps, Pontcysyllte, Bourn Windmill, Aydon Castle, Royal Observatory), and
-      primary sources (charters, dendrochronology reports).
-- [ ] R4 Earliest-dated churches and manors: Anglo-Saxon charters (Electronic Sawyer), Domesday entries, the
-      Anglo-Saxon Chronicle and Bede (in published translations), Victoria County History (British History Online).
+- [x] R3 (2026-10-21/22) Every researched oldest-of-type example now has quoted evidence. First pass: 102 claims
+      quoting list descriptions (`bidb/listings.py`) and 9 legends corrected (Ye Olde Fighting Cocks C16 not 793,
+      Bingley Arms 1738 not 953, Ye Olde Trip late C17 not 1189, …). Second pass (2026-10-22): the 88 remaining
+      examples (Ireland: NIAH; Northern Ireland: HED register; Scotland: HES; Wales: Cadw/Coflein; Isle of Man; England
+      without a list id in the data, and the 6 pages with another layout), each quote checked by script. 67 kept,
+      18 corrected, 3 open. Corrections include Sean's Bar c. 1725 (claimed c. 900; NIAH 15000331), Smock Alley
+      Theatre 1735 rebuild, Marsh's Library 1701–3 (1707 is the Act), Dublin Pearse 1884, St James's Gate c. 1800
+      vat houses, Kilkea Castle 15th c., The Old Inn Crawfordsburn mid C19 (claimed 1614; not listed), Old Bushmills
+      1784 (1608 is a district licence), King's College Chapel Aberdeen 1500, Fortnum & Mason c. 1770 (1707 has "no
+      supporting evidence", Survey of London), Fitzwilliam 1837–43, Ewelme School c. 1450, Hemingford Grey c. 1150,
+      Devil's Bridge C15/early C16, Vicar's Pele c. 1400, Albert Dock 1841–5. Innerpeffray settled (books from 1680,
+      formal foundation 1691); Stokesay kept (listing's "c1391" a slip). Open: Woodenbridge Hotel 1608, Grace Neill's
+      1611 (both only tradition), Fossdyke's Roman date. 23 further catalogue dates fixed where the record's own date
+      (Wikidata / article mining) was for something else (Forth and Clyde Canal "800", Wool House "1966", Syon
+      conservatory "1547" = Syon House, Somerset House "1630", Exeter Ship Canal "1270" = the weir, …).
+      Notes: some records' list ids point at a scheduling or a park entry rather than the building (Bourn Windmill,
+      Royal Observatory, Syon conservatory, Royal Hospital Chelsea, Tarr Steps, Aydon); the evidence cites the right
+      entries. Build fix: two research entries sharing one Wikipedia article (Ewelme) both get records.
+- [x] R4 (2026-10-22) Earliest churches and monasteries from primary sources: 40 early foundations checked against
+      Bede (Gutenberg, Sellar), the Anglo-Saxon Chronicle (Avalon / Gutenberg, Ingram), Bede's Lives of the Abbots,
+      the Annals of Ulster (CELT), charters (Electronic Sawyer, with the scholarly view of each charter's
+      authenticity), Asser, list descriptions and the VCH (British History Online). 26 kept, 5 corrected, 9 open;
+      16 dates sharpened or corrected: Reculver 669 (ASC), Wearmouth 674 (Bede), Ripon c. 660, Malmesbury 675,
+      Hartlepool before c. 649, Gilling after 651, Selsey 681, Worcester see 680, Evesham c. 701, Winchcombe 798,
+      Old Minster 643 (ASC), Rochester 604 (Bede II.3), Glastonbury by c. 680 (charters to Abbot Hæmgils, not 712),
+      St Mary in Castro c. 1000 (not 7th c.), Deerhurst 8th c., Bradford-on-Avon 10th c. Open where only later
+      tradition gives the date (Abingdon, Pershore, Tewkesbury, Wareham, Folkestone, Leominster, Repton, Candida
+      Casa) and Brixworth (listing C7 vs reviewed late C8/early C9).
+      Domesday entries (`bidb/domesday_entries.py`): Open Domesday place pages for the settlements of every church,
+      abbey and cathedral (churches, priests, households, Phillimore reference) → shown in the Domesday line of
+      detail views; `--report` lists early churches with a church or priest in 1086 and later-dated ones where
+      Domesday already records a church (possible earlier origin).
+      Still possible: Eddius's Life of Wilfrid and Felix's Life of Guthlac (no script-readable text found), VCH
+      parish histories for manors, dendrochronology reports.
 - [~] R5 Historic England list texts behind the bot check: cite by list entry number (reproductions such as British
       Listed Buildings can be checked by script). `bidb/listings.py` reads them (both page layouts); used for R3.
 

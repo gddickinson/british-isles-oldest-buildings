@@ -1,6 +1,8 @@
 // Shared front-end state: API access, URL <-> filter state, favourites and compare lists.
 const IS_STATIC = window.__STATIC__ === true || document.body.dataset.static === "1";
 const CAN_EDIT = !IS_STATIC && document.body.dataset.edit === "1";
+// the computer running the app (not another one on the home network, which is read-only: app/lan.py)
+const THIS_MACHINE = !IS_STATIC && document.body.dataset.here === "1";
 
 async function api(url) {
   if (window.STATIC_API) return window.STATIC_API(url);   // hosted static version

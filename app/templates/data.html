@@ -6,7 +6,7 @@
   <p class="prose">Where the data is incomplete. Records with a Wikidata item link straight to it, so gaps can be
     fixed at the source (and flow into the next rebuild). Corrections you make in a building's detail view are
     stored locally in <code>data/overrides.json</code>.
-    {% if not static_mode %}<a href="#jobs">Rebuild, refresh and other jobs ↓</a>{% endif %}</p>
+    {% if this_machine %}<a href="#jobs">Rebuild, refresh and other jobs ↓</a>{% endif %}</p>
   <div class="tiles" id="g_tiles"></div>
   <div class="filter-row"><select id="g_kind"></select><span class="hint" id="g_hint"></span></div>
   <div id="g_rows" class="table-wrap"></div>
@@ -30,8 +30,8 @@
   <div id="pr_cov"><p class="hint">Not built yet.</p></div>
 
   <h2 id="jobs">Rebuild and other jobs</h2>
-  {% if static_mode %}
-    <p class="hint">Rebuilding is only available when running the app locally.</p>
+  {% if not this_machine %}
+    <p class="hint">Rebuilding is only available on the computer running the app.</p>
   {% else %}
   <p class="prose">Long jobs run in the background and keep going if you close this page or the app; come back here
     to follow them. Everything downloaded is kept in the cache, so a rebuild with a warm cache takes minutes and an

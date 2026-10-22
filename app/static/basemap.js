@@ -24,7 +24,7 @@ const Basemap = (() => {
     { key: "airports", label: "Airports", on: false },
     { key: "stations", label: "Railway & bus stations (zoom in)", on: false, online: true },
     { key: "defences", label: "Pillboxes, bunkers & trenches (zoom in)", on: false, online: true },
-  ].concat(IS_STATIC ? [] : [{ key: "streets", label: "Street detail (areas saved for offline)", on: true }]);
+  ].concat(THIS_MACHINE ? [{ key: "streets", label: "Street detail (areas saved for offline)", on: true }] : []);
   const STORE = "bi_map_layers", BASE_STORE = "bi_map_base";
   const cache = {};
   const load = (name) => (cache[name] = cache[name] || fetch(ROOT + name + ".json").then((r) => r.json()));
@@ -282,7 +282,7 @@ const Basemap = (() => {
             <label><input type="radio" name="ml-base" value="offline"> Offline map</label>` : "<b>Offline map</b>"}
           <div class="ml-overlays">${LAYERS.map((l) => `<label class="${l.online ? "ml-any" : "ml-off-only"}"><input type="checkbox" value="${l.key}" ${on.has(l.key) ? "checked" : ""}> ${l.label}</label>`).join("")}</div>
           ${online ? '<small class="ml-hint">Greyed layers show on the offline map only.</small>' : ""}
-          ${IS_STATIC ? "" : '<button type="button" class="btn small ghost ml-save">⬇ Save this area for offline</button><span class="ml-save-status hint"></span>'}
+          ${!THIS_MACHINE ? "" : '<button type="button" class="btn small ghost ml-save">⬇ Save this area for offline</button><span class="ml-save-status hint"></span>'}
           <small>Data: Natural Earth, GeoNames, © OpenStreetMap contributors</small></div>`;
       L.DomEvent.disableClickPropagation(box);
       L.DomEvent.disableScrollPropagation(box);

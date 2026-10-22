@@ -9,7 +9,7 @@
     <a href="#start">Getting started</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
     <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a>
     <a href="#oldest">Oldest by type</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
-    <a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
+    {% if not static_mode %}<a href="#sharing">Sharing at home</a>{% endif %}<a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
     <a href="#export">Export &amp; screenshots</a><a href="#shortcuts">Shortcuts</a><a href="#glossary">Glossary</a>
     <a href="#faq">Questions</a><a href="#sources">Sources</a><a href="#about">About</a>
   </nav>
@@ -198,6 +198,17 @@
       app can be installed from the browser (Install / Add to Home Screen); pages, tours and the places you opened
       then also work offline.</p>
   </section>
+
+  {% if not static_mode %}
+  <section id="sharing">
+    <h2>Sharing on your home network</h2>
+    <p class="prose">Settings → <b>Share on my home network</b> (or <code>./run.sh --lan</code>) lets other computers,
+      tablets and phones on the same network open the app at the address Settings shows (with a QR code). They can
+      browse everything but change nothing: builds and other jobs, corrections, saved street maps, the data location
+      and the settings themselves stay with the computer running the app. Turn it off on networks you do not trust.
+      To share further afield, use the hosted copy instead.</p>
+  </section>
+  {% endif %}
 
   <section id="compare">
     <h2>Compare</h2>

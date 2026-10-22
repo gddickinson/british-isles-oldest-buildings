@@ -60,5 +60,6 @@ credited on its file page), OpenStreetMap tiles (© OpenStreetMap contributors),
 |---|---|---|
 | [Leaflet](https://leafletjs.com) 1.9.4 (CSS here; script from cdnjs) | `app/static/vendor/leaflet.min.css` | BSD 2-Clause |
 | [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) 1.5.3 | `app/static/vendor/MarkerCluster*.css` | MIT |
+| [qrcodejs](https://github.com/davidshimjs/qrcodejs) 1.0.0 (script from cdnjs, Settings › Sharing only) | not included | MIT |
 | [protomaps-leaflet](https://github.com/protomaps/protomaps-leaflet) | `app/static/vendor/protomaps-leaflet.js` | BSD 3-Clause |
 | Python packages: Flask, requests, pmtiles | `requirements.txt` | BSD 3-Clause, Apache 2.0, BSD 3-Clause |

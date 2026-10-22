@@ -5,12 +5,13 @@
   <h1>Settings</h1>
   <nav class="set-toc" aria-label="Settings sections">
     <a href="#appearance">Appearance</a><a href="#catalogue">Catalogue</a><a href="#maps">Maps</a>
-    <a href="#privacy">History &amp; shortcuts</a>{% if not static_mode %}<a href="#data">Data location</a>
+    <a href="#privacy">History &amp; shortcuts</a>{% if this_machine %}<a href="#sharing">Sharing</a><a href="#data">Data location</a>
     <a href="#screens">Screenshots</a>{% endif %}<a href="#backup">Backup &amp; reset</a>
   </nav>
   <p class="prose">Preferences below are saved in this browser and take effect straight away.
-    {% if not static_mode %}Data location and screenshot settings belong to this computer and are saved in
-    <code>settings.json</code> in the project folder.{% endif %}</p>
+    {% if this_machine %}Sharing, data location and screenshot settings belong to this computer and are saved in
+    <code>settings.json</code> in the project folder.{% elif not static_mode %}You are viewing the app shared from
+    another computer: you can browse everything, but its own settings and data can only be changed there.{% endif %}</p>
 
   <section id="appearance" class="set-card">
     <h2>Appearance</h2>
@@ -51,7 +52,7 @@
       <input id="s_cluster" type="checkbox" data-pref="cluster"></div>
     <p class="hint">Map layers (roads, rivers, trails, historic maps…) are chosen with the <b>☰ Layers</b> button on any
       map and remembered. <button type="button" class="linklike" id="s_layers_reset">Reset map layers</button></p>
-    {% if not static_mode %}<h3>Street maps saved for offline use</h3>
+    {% if this_machine %}<h3>Street maps saved for offline use</h3>
     <p class="hint">Use <b>⬇ Save this area for offline</b> in a map's ☰ Layers panel; street detail (zoom 10–15) is stored
       in the data folder.</p>
     <div id="s_streets"></div>{% endif %}
@@ -67,7 +68,21 @@
     <p class="hint">Press <kbd>?</kbd> for the list of shortcuts, <kbd>⌘K</kbd> / <kbd>Ctrl+K</kbd> to jump anywhere.</p>
   </section>
 
-  {% if not static_mode %}
+  {% if this_machine %}
+  <section id="sharing" class="set-card">
+    <h2>Share on my home network</h2>
+    <p class="prose">Let other computers, tablets and phones on the same network open the app. They can browse
+      everything, but they cannot start builds or other jobs, change corrections, move the data or see these
+      settings: only this computer can.</p>
+    <div class="set-row"><label for="sh_on">Share on my home network</label>
+      <input id="sh_on" type="checkbox"></div>
+    <div id="sh_status" class="hint">Loading…</div>
+    <div id="sh_qr" class="share-qr"></div>
+    <p class="hint">The app restarts on its new address when you change this (a moment). The first time, macOS may ask
+      whether Python may accept incoming connections: allow it. Your network's own security still applies; turn this
+      off on networks you do not trust. From the terminal: <code>./run.sh --lan</code>.</p>
+  </section>
+
   <section id="data" class="set-card">
     <h2>Data location</h2>
     <p class="prose">The download cache and the database can live anywhere: on this computer, on an external drive,
@@ -106,4 +121,5 @@
 {% endblock %}
 {% block scripts %}
 <script src="{{ url_for('static', filename='settings.js') }}"></script>
+{% if this_machine %}<script src="{{ url_for('static', filename='share.js') }}"></script>{% endif %}
 {% endblock %}

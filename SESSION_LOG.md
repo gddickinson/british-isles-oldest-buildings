@@ -444,3 +444,13 @@
 - Date corrections: 164 in all. Places: 152,558 (was 118,184). Evidence: 714 claims, 1,312 quotes.
 - GUI restarted for review on port 5050. Asked the user before opening it to the home network (it binds 127.0.0.1;
   jobs, settings and corrections would be open to every machine).
+
+## 2026-10-22 (evening) — publish, sharing on the home network
+- Hosted copy over the 256 MiB per-version limit (281 MB): place rows now leave out the label/group of their kind,
+  the Wikidata id/address when they repeat the id and the source "Wikidata" (rebuilt in static_places.js), and
+  extracts are trimmed to 400 characters → 250.7 MiB. VA55 CSV is Windows-1252 ("1672 ± 9", no U+FFFD).
+  Published as versions 46–50 (old shards places_9/10 removed). DB release db-2026-10-22-2.
+- Sharing (`app/lan.py`, `static/share.js`, Settings section, Help, README, `run.sh --lan`, `app.server --lan`):
+  read-only guard for non-loopback clients (tests/test_lan.py, 6 tests; ui_check settings_share); restart by
+  exec after closing inherited fds (werkzeug's socket is inheritable: "Address already in use" otherwise).
+  Sharing is off; nothing was opened to the network during testing (test client and a loopback-only restart).

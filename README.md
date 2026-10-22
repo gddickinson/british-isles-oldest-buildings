@@ -219,6 +219,7 @@ The same choices from the terminal:
 | `./run.sh --data /Volumes/MyDrive` | use the data on that drive (or start a download cache there) |
 | `./run.sh --build` | build the database in the terminal, then start |
 | `./run.sh --port 5060` | use another port |
+| `./run.sh --lan` | share on the home network for this run (other devices can browse, not change anything) |
 
 Without `run.sh`:
 ```sh
@@ -226,6 +227,11 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python -m bidb.setup unpack          # download and unpack the bundled database
 .venv/bin/python -m app.server --port 5050
 ```
+
+**Sharing at home:** Settings → *Share on my home network* (or `./run.sh --lan`) makes the app reachable
+from other computers, tablets and phones on the same network, at the address Settings shows (with a QR
+code). Other devices are read-only: builds and jobs, corrections, saved street maps, the data location and
+the settings stay with the computer running the app (enforced by the server, `app/lan.py`).
 
 **Where the data lives** is set in Settings → Data location (saved in `settings.json`, not in git).
 The cache and the database can each be moved to another drive. A move copies, verifies, switches

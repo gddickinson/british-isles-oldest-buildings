@@ -36,6 +36,7 @@ PAGES = {
     "oldest_nature": ("/oldest", r"(?s)Oldest in nature.*Fortingall Yew"),
     "places_graves": ("/places?kind_group=Graves+%26+burial+grounds", r"data-place="),
     "places_nature": ("/places?kind_group=Nature+%26+deep+time", r"data-place="),
+    "settings_share": ("/settings", r"Only this computer can open the app"),
     "building_domesday": ("/building/Q17529018", r"recorded in Domesday Book with 2 churches and a priest"),
     "people": ("/people", r'data-person=|class="person'),
     "pronunciation": ("/pronunciation?q=ll", r'class="ipa"|class="respell"'),

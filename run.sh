@@ -4,16 +4,18 @@
 #                cache folder is made there if it has none (saved in settings.json for next time)
 #   --bundled    download (GitHub release) and unpack the bundled database if there is none yet
 #   --build      build the database in this terminal first (otherwise the setup page offers it)
+#   --lan        share on the home network for this run (other computers can look but not change anything)
 # Without a database the app opens on its setup page: bundled database, existing data, or a fresh build.
 cd "$(dirname "$0")" || exit 1
-PORT=${PORT:-5050}; DATA=; BUNDLED=; BUILD=
+PORT=${PORT:-5050}; DATA=; BUNDLED=; BUILD=; LAN=
 while [ $# -gt 0 ]; do
   case "$1" in
     --data) DATA=$2; shift 2 ;;
     --port) PORT=$2; shift 2 ;;
     --bundled) BUNDLED=1; shift ;;
     --build) BUILD=1; shift ;;
-    -h|--help) sed -n 2,7p "$0"; exit 0 ;;
+    --lan) LAN=--lan; shift ;;
+    -h|--help) sed -n 2,8p "$0"; exit 0 ;;
     *) echo "Unknown option: $1 (see ./run.sh --help)"; exit 2 ;;
   esac
 done
@@ -25,4 +27,4 @@ $PY -m bidb.setup check || exit 1
 if [ -n "$BUNDLED" ]; then $PY -m bidb.setup unpack || exit 1; fi
 if [ -n "$BUILD" ]; then $PY -m bidb.build || exit 1; fi
 echo "Open http://127.0.0.1:$PORT"
-exec $PY -m app.server --port "$PORT"
+exec $PY -m app.server --port "$PORT" $LAN

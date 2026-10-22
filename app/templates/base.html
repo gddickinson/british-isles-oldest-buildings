@@ -30,7 +30,7 @@
   })();
 </script>
 </head>
-<body data-static="{{ 1 if static_mode else 0 }}" data-edit="{{ 1 if can_edit else 0 }}" data-page="{{ page or '' }}">
+<body data-static="{{ 1 if static_mode else 0 }}" data-edit="{{ 1 if can_edit else 0 }}" data-here="{{ 1 if this_machine else 0 }}" data-page="{{ page or '' }}">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
   <a class="brand" href="{{ url_for('pages.index') }}">British Isles Oldest Buildings</a>

@@ -466,3 +466,11 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
       kind in these groups (Wikidata dates, marked as unchecked).
 - [ ] N5 Check the earliest dated places of the new groups (Wikidata dates are often of a later event).
 - [ ] N6 Woodland Trust Ancient Tree Inventory (licence to be asked), Canmore for Scottish burial grounds.
+
+## Sharing (added 2026-10-22)
+- [x] S1 Share on the home network (`app/lan.py`, Settings › Share on my home network, `./run.sh --lan`): the server
+      listens on every interface; other computers are read-only (any change, settings, screenshots, setup and saved
+      street maps refused by the server; their pages hide those controls); addresses and a QR code in Settings; the
+      app restarts itself on its new address.
+- [ ] S2 Optional share code for other devices; a second code for trusted devices with full access.
+- [ ] S3 Serve the static export (`dist/`) from another always-on machine (Mac mini, NAS).

@@ -122,7 +122,8 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 ## Package `app/` (GUI)
 | File | Purpose |
 |---|---|
-| `server.py` | Creates the Flask app and registers blueprints; `python -m app.server --port 5050` |
+| `server.py` | Creates the Flask app, registers blueprints and the read-only guard for other computers; `python -m app.server --port 5050 [--host ADDR] [--lan]` (default host from Settings › Sharing) |
+| `lan.py` | Sharing on the home network: `/api/share` (GET status/addresses, POST on/off → saved in settings.json, the server restarts on 0.0.0.0 or 127.0.0.1), `guard` (403 for other computers: any change, settings, screenshots, setup, saved street maps), `is_local`, `blocked`, `addresses` | `bp`, `guard`, `is_local`, `blocked`, `host_for`, `restart` |
 | `common.py` | Per-request DB connection, filter parsing from query args, build info |
 | `api.py` | `/api/search`, `/api/facets`, `/api/map`, `/api/building/<id>`, `/api/buildings?ids=`, `/api/nearby/<id>`, `/api/timeline`, `/api/stats`, `/api/gaps`, `/api/oldest`, `/api/history`, `/api/build_info`, `/api/footprints?bbox=`, `/api/verification`, `/api/evidence`, `/api/oldest_lists` |
 | `export_api.py` | `/export/<buildings\|places\|people>.<csv\|json\|geojson\|kml>` with the page's filters; `/export.csv` | `to_csv`, `to_geojson`, `to_kml` |
@@ -166,6 +167,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `static/jobs.js` | `Jobs.mount`: jobs panel (Data page, setup page): start with options (refresh days/sources, cut-off), progress bar and estimate, stages, log, stop; re-attaches to a running job |
 | `static/setup.js` | Setup page: bundled database, existing data folder (browser), build from scratch |
 | `static/settings.js` | Settings page: preference controls, data location mover UI, screenshot browser path, backup/reset |
+| `static/share.js` | Settings › Share on my home network: switch, addresses, QR code (qrcodejs from cdnjs), waits for the restart |
 | `static/state.js` | `api()` (or `STATIC_API`), URL ⇄ filter state, favourites/compare stores, toggle handling, `mapUrl`/`mapButton` ("Show on the map") |
 | `static/render.js` | Cards, rows, detail HTML, colour groups (`groupColor`, `periodColor`) |
 | `static/detail.js` | `showDetail`: map, nearby, Commons gallery, correction form |
@@ -210,7 +212,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 - `data/curated/oldest_nature.json`, `oldest_graves.json`, `oldest_trade.json`, `oldest_infra.json` — researched "oldest" lists (bidb.oldest_lists)
 - `data/curated/legendary_places.json` — places of legend placed where tradition puts them (claims, sources)
 - `LICENSE` (MIT, code), `DATA_LICENSE.md` (per-source data licences and credits, third-party code), `CONTRIBUTING.md`, `CITATION.cff`
-- `settings.json` — per-computer data locations and browser path (git-ignored; written by Settings, setup page, `run.sh --data`)
+- `settings.json` — per-computer data locations, browser path and `share_on_network` (git-ignored; written by Settings, setup page, `run.sh --data`)
 - `data/bundled.json` — the bundled database release (tag, asset, bytes, SHA-256, counts); the `.gz` itself is not in git
 - `run.sh` — start script: `--data DIR`, `--bundled`, `--build`, `--port`; checks data folders first
 - `runs/` (git-ignored) — logs, `job_status.json`, `stage_times.json`, `job_<name>.log`

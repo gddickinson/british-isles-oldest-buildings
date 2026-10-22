@@ -43,3 +43,7 @@
 .faq details { border-bottom: 1px solid var(--line); padding: 8px 0; }
 .faq summary { cursor: pointer; font-weight: 500; }
 @media (max-width: 640px) { .folder-list, .recent-list .nearby { columns: 1; } .set-row { align-items: flex-start; } }
+
+/* Settings › Share on my home network: QR code of the address */
+.share-qr { margin: .5rem 0; }
+.share-qr img, .share-qr canvas { background: #fff; padding: 6px; border-radius: 6px; }

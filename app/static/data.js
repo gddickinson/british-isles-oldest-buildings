@@ -53,6 +53,7 @@ async function init() {
   renderGapRows();
   renderDiff();
   renderVerification();
+  Evidence.table(document.getElementById("e_box"));
   const panel = document.getElementById("jobs_panel");
   if (panel) Jobs.mount(panel, { onFinish: (st) => { if (st.job === "build" && st.state === "finished") renderDiff(); } });
 }

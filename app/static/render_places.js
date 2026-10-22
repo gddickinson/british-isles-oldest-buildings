@@ -123,6 +123,7 @@ function placeDetailHTML(p) {
       ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}` : ""}
       <div class="stories-box" data-stories="${esc(p.id)}"></div>
       <div class="then-box" data-then="${esc(p.id)}"></div>
+      <div class="evidence-box" data-evidence="${esc(p.id)}"></div>
       ${peopleByRoleHTML(p.people)}
       ${p.lat != null ? `<p class="getting-there" data-transport="${p.lat},${p.lon}" data-visit="${esc(p.id)}"></p>` : ""}
       <div class="links">${links}</div>

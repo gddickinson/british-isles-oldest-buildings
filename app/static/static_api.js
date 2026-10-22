@@ -206,6 +206,7 @@
     },
     history: () => HISTORY,
     verification: async () => fetch("data/verification.json").then((r) => r.json()).catch(() => ({})),
+    evidence: async () => fetch("data/evidence.json").then((r) => r.json()).catch(() => ({})),
     build_info: () => ({ build_info: META.build_info }),
     geocode(p) {                 // hosted: match places named in the catalogue itself
       const q = (p.get("q") || "").trim().toLowerCase();

@@ -1,0 +1,79 @@
+{
+ "_about": "Researched claims with their evidence (research track R, ROADMAP.md). Each source gives what it is (kind: primary = a document of the time or a record made from the fabric; listing = an official heritage register description; secondary = a history or report; reference = an encyclopaedia or aggregator), where in it (locator) and an exact short quote that `python -m bidb.evidence --check` looks for in the source again. verdict: kept (the catalogue's value stands), corrected (see date_corrections.json), open. Compiled with AI assistance; quotes are checked automatically, judgements are not.",
+ "claims": [
+  {
+   "id": "althorp-date",
+   "record": "Q441079",
+   "name": "Althorp",
+   "field": "date",
+   "claim": "The house was begun c. 1508 for John Spencer and remodelled in the 1660s and by Henry Holland in 1786–91; Wikipedia's 'dates to 1688' is not the date of the house.",
+   "value": "c. 1508",
+   "verdict": "kept",
+   "assessment": "The statutory list description dates the house to c. 1508 for John Spencer, who bought the estate that year. Wikipedia's lead sentence ('dates to 1688') is uncited there and rests in the body on one early-19th-century account (Jones 1829, p. 245); the same article dates the staircase to the 1660s, so the house existed before 1688. 1688 is best read as a phase of the late-17th-century rebuilding, not the origin of the house.",
+   "sources": [
+    {
+     "title": "Althorp House, list entry 1356626 (Grade I, listed 2 November 1954)",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101356626-althorp-house-althorp",
+     "locator": "list description",
+     "quote": "c.1508, for John Spencer, remodelled by Henry Holland 1789"
+    },
+    {
+     "title": "Althorp",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Althorp",
+     "locator": "lead; History",
+     "quote": "John Spencer bought Althorp in 1508"
+    },
+    {
+     "title": "Althorp",
+     "author": "Wikipedia (the claim reviewed; citing Jones 1829, p. 245 in the body)",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Althorp",
+     "locator": "lead",
+     "quote": "The house dates to 1688"
+    }
+   ],
+   "researched": "2026-10-21"
+  },
+  {
+   "id": "hadlow-date",
+   "record": "Q5638005",
+   "name": "Hadlow Castle",
+   "field": "date",
+   "claim": "A Gothick house of late-18th-century origins, enlarged for Walter Barton May; the surviving tower was begun in 1838 (lantern 1840) to designs by George Ledwell Taylor; the main house was dismantled in 1951.",
+   "value": "late 18th century (house); tower 1838–40",
+   "verdict": "corrected",
+   "assessment": "Wikidata's inception (1852) is not supported by the list description, which gives late-18th-century origins for the house and 1838–40 for the tower. The catalogue now dates the site from the late 18th century and names the tower's dates.",
+   "sources": [
+    {
+     "title": "Hadlow Tower, Hadlow Castle, list entry 1070451 (Grade I, listed 17 April 1951)",
+     "author": "Historic England, National Heritage List for England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101070451-hadlow-tower-hadlow-castle-hadlow",
+     "locator": "list description",
+     "quote": "Tower begun 1838 (lantern added in 1840) for Walter Barton May"
+    },
+    {
+     "title": "Hadlow Tower, Hadlow Castle, list entry 1070451",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101070451-hadlow-tower-hadlow-castle-hadlow",
+     "locator": "list description",
+     "quote": "The main house was dismantled in 1951"
+    },
+    {
+     "title": "Hadlow Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hadlow_Castle",
+     "locator": "lead",
+     "quote": "Hadlow Castle was an 18th-century country house"
+    }
+   ],
+   "researched": "2026-10-21"
+  }
+ ]
+}

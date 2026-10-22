@@ -128,6 +128,13 @@ def footprints():
     return jsonify([dict(r) for r in rows])
 
 
+@bp.route("/api/evidence")
+def evidence():
+    """Researched claims with their sources and check results, by record (data/curated/evidence.json)."""
+    from bidb import evidence as ev
+    return jsonify(ev.export())
+
+
 @bp.route("/api/verification")
 def verification():
     """Checks of the researched files against their cited sources (bidb.verify_research)."""

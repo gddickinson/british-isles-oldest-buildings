@@ -181,6 +181,7 @@ function renderDetail(b, inModal) {
       <div class="stories-box" data-stories="${esc(b.id)}"></div>
       <div class="timeline-box" data-timeline="${esc(b.id)}"></div>
       <div class="then-box" data-then="${esc(b.id)}"></div>
+      <div class="evidence-box" data-evidence="${esc(b.id)}"></div>
       ${b.lat != null ? `<p class="getting-there" data-transport="${b.lat},${b.lon}" data-visit="${esc(b.id)}"></p>` : ""}
       <div class="links">${detailLinks(b)}${inModal ? `<a class="ext" href="${buildingUrl(b.id)}">Permalink</a>` : ""}</div>
       ${b.lat != null ? '<div id="detail-map" class="detail-map"></div>' : ""}

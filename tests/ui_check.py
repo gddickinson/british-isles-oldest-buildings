@@ -30,6 +30,8 @@ PAGES = {
     "places_bridges": ("/places?kind_group=Bridges", r'data-place='),
     "building_then": ("/building/Q1025398", r'Then: paintings'),
     "places_excavations": ("/places?kind_group=Excavations", r'data-place='),
+    "building_evidence": ("/building/Q441079", r'Catalogue value confirmed'),
+    "data_evidence": ("/data", r'Catalogue corrected'),
     "people": ("/people", r'data-person=|class="person'),
     "pronunciation": ("/pronunciation?q=ll", r'class="ipa"|class="respell"'),
     "stories": ("/stories", r'class="story story-'),

@@ -76,6 +76,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `places_build.py` | CLI: `python -m bidb.places_build` (after bidb.build) | `run` |
 | `land.py` | Point-on-British-Isles-land test (bundled Natural Earth outline) | `near_land` |
 | `references.py` | Wikidata statement references, per-record source list, date check (corroborated / conflict / earlier origin / reviewed / single source; strict sentence rules); `python -m bidb.references` rechecks an existing DB | `annotate`, `wikidata_references`, `sources`, `date_check`, `recheck` |
+| `evidence.py` | Research track: researched claims with sources, locators and exact quotes (`data/curated/evidence.json`); `--check` fetches each source and looks for the quote (→ `data/evidence_check.json`); `export` for `/api/evidence` and the hosted copy | `load`, `validate`, `check`, `quote_found`, `for_record`, `export` |
 | `verify_research.py` | CLI: checks history events and oldest-of-type claims against their cited sources → `data/verification.json` | `run`, `check` |
 | `images_extra.py` | CLI: Commons geosearch photos for records without one (`image_note` says how matched); `places` arg = Wikidata + Open Plaques places | `run`, `find_photo` |
 | `footprints.py` | CLI: OSM building outlines (by wikidata tag) and floor plans (Wikidata P3311, else commons_plans) | `run`, `outlines`, `plans` |
@@ -116,7 +117,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 |---|---|
 | `server.py` | Creates the Flask app and registers blueprints; `python -m app.server --port 5050` |
 | `common.py` | Per-request DB connection, filter parsing from query args, build info |
-| `api.py` | `/api/search`, `/api/facets`, `/api/map`, `/api/building/<id>`, `/api/buildings?ids=`, `/api/nearby/<id>`, `/api/timeline`, `/api/stats`, `/api/gaps`, `/api/oldest`, `/api/history`, `/api/build_info`, `/api/footprints?bbox=`, `/api/verification` |
+| `api.py` | `/api/search`, `/api/facets`, `/api/map`, `/api/building/<id>`, `/api/buildings?ids=`, `/api/nearby/<id>`, `/api/timeline`, `/api/stats`, `/api/gaps`, `/api/oldest`, `/api/history`, `/api/build_info`, `/api/footprints?bbox=`, `/api/verification`, `/api/evidence` |
 | `export_api.py` | `/export/<buildings\|places\|people>.<csv\|json\|geojson\|kml>` with the page's filters; `/export.csv` | `to_csv`, `to_geojson`, `to_kml` |
 | `settings_api.py` | `/api/settings`, `/api/settings/location` (+`/check`), `/api/settings/browse`, `/api/screenshot`, `/_shot` frame |
 | `data_location.py` | Moving/copying the cache or database to another folder or drive (copy → verify → switch → delete), drive list with free space | `status`, `volumes`, `validate`, `start`, `suggest` |
@@ -145,6 +146,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `static/pron.js` | `Pron`: fills any `[data-pron]` element (detail views) with IPA / respelling / ▶ recording and town lines; guide search, varieties, coverage (hosted: from `data/pron.json`) |
 | `static/stories.js` | `Stories`: fills `[data-stories]` (detail views) with legends/ghosts/folklore and `[data-timeline]` with the building's timeline; read aloud (speech synthesis); search, counts, story cards (hosted: `data/stories.json`) |
 | `static/then.js` | `Then`: fills `[data-then]` (detail views) with paintings and prints of the record (thumbnails locally; a list of links when hosted, `data/depictions.json`) |
+| `static/evidence.js` | `Evidence`: fills `[data-evidence]` (detail views) with researched claims, sources, quotes and check results; `Evidence.table` on the Data quality page |
 | `static/on_this_day.js` | "On this day" on the History page (‹ › days) |
 | `static/quiz.js` | Quiz page: "Guess the period" from photographed, well-dated buildings |
 | `static/sw.js`, `static/manifest.webmanifest`, `static/icons/` | Installable app: service worker (served at `/sw.js`; pages, static files and opened records kept for offline use), manifest, icon |
@@ -192,6 +194,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 - `docs/make_figures.mjs` — regenerates `docs/img/*.jpg` (README and Help figures) in Chrome via `tests/cdp.mjs` (`node docs/make_figures.mjs [names]`, app running)
 - `tests/` — `python -m unittest discover tests` (settings/data location, place stage kinds, place stage kinds (`test_place_stages`), date mining, date checks, pronunciation parsing, hosted-export split, tile encoding, stories, tours, periods, calendars, timelines, trails, street tiles, jobs, progress, refresh, setup); `node tests/ui_prefs_test.js`; browser checks of every page: `python -m tests.ui_check [--base URL] [--only names]`; full GUI review (every page, map, layer, historic map, places layer, pop-ups, interactions; local and hosted): `node tests/ui_review.mjs --base URL [--static] [--only groups]` (driver `tests/cdp.mjs`, report and screenshots in `runs/ui_review*/`)
 - `data/curated/story_rejects.json` — reviewed false story matches (dropped on rebuild)
+- `data/curated/evidence.json` — researched claims with sources and quotes (research track); `data/evidence_check.json` — last quote check
 - `data/curated/date_confirmations.json` — catalogue dates kept after reviewing a conflict (reason each)
 - `data/curated/underground_sites.json` — notable underground works outside the queried classes, stations open despite a closing date
 - `data/curated/burhs.json` — the burhs of the Burghal Hidage (hides, Wikipedia titles)

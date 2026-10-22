@@ -123,5 +123,7 @@ The 69 remaining conflicts were read against the full Wikipedia articles (now ca
 - **58 kept** (`data/curated/date_confirmations.json`, a reason for each): the other source dates a
   later house, rebuilding, restoration, licence, or founding of the site, or comes from fiction
   (Macbeth at Cawdor). These now show as "Reviewed".
-- **2 still open**: Althorp (Wikipedia: "The house dates to 1688"; Wikidata and most accounts: 1508)
-  and Hadlow Castle (18th-century house, demolished; the surviving tower is 19th century).
+- **2 resolved 2026-10-21** (research track, `data/curated/evidence.json`): Althorp keeps c. 1508 (list entry
+  1356626: "c.1508, for John Spencer, remodelled by Henry Holland 1789"; Wikipedia's 1688 is a later rebuilding
+  phase); Hadlow Castle corrected from 1852 to "late 18th century (house, dismantled 1951); tower 1838–40"
+  (list entry 1070451). No conflicts remain open.

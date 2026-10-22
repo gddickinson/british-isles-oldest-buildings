@@ -32,6 +32,7 @@ anywhere.
 - [How it works](#how-it-works)
 - [Testing](#testing)
 - [Data sources and licences](#data-sources-and-licences)
+- [Research and evidence](#research-and-evidence)
 - [Caveats](#caveats)
 - [Contributing, citing and licence](#contributing-citing-and-licence)
 
@@ -261,7 +262,7 @@ local web app on http://127.0.0.1:5050               dist/: static copy, API ans
 
 ## Testing
 ```sh
-.venv/bin/python -m unittest discover tests                         # 79 unit tests
+.venv/bin/python -m unittest discover tests                         # 82 unit tests
 node tests/ui_prefs_test.js                                          # preference logic
 .venv/bin/python -m tests.ui_check --base http://127.0.0.1:5050      # every page loads without errors
 node tests/ui_review.mjs --base http://127.0.0.1:5050                # full GUI review
@@ -291,6 +292,14 @@ the figures in this README.
 
 The builder uses public services politely: it rate-limits every request, caches every response, and
 identifies itself with this repository's address.
+
+## Research and evidence
+Claims can be substantiated from original and published sources in `data/curated/evidence.json`: each
+claim lists its sources (primary, heritage listing, secondary or reference work), where in each and an
+exact short quote. `.venv/bin/python -m bidb.evidence --check` fetches every source again and confirms
+that the quote is there. Detail views show the evidence, and the Data quality page lists every claim
+with its verdict. The research is done with AI assistance; quotes are checked automatically, but the
+judgements are not, so corrections are welcome (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## Caveats
 - **Dates** are the earliest construction date; many buildings were rebuilt later. Dates not taken

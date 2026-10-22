@@ -117,6 +117,8 @@ def export(thumb_limit=1200):
     (DIST / "data" / "buildings.json").write_text(
         json.dumps({"meta": meta, "rows": []}, ensure_ascii=False, separators=(",", ":")))
     static_pron.export(conn, DIST / "data")
+    from bidb import evidence
+    (DIST / "data" / "evidence.json").write_text(json.dumps(evidence.export(), ensure_ascii=False, separators=(",", ":")))
     ver = DATA_DIR / "verification.json"
     if ver.exists():
         shutil.copy(ver, DIST / "data" / "verification.json")

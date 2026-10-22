@@ -358,3 +358,13 @@
 - Published: GitHub (main), database release `db-2026-10-21-3` (69 MB), hosted copy version 39 (39 changed files,
   61 MB, one publish). Static review 27/27.
 
+
+
+## 2026-10-21 (late) — research track started
+- R0 `data/curated/evidence.json` + `bidb/evidence.py` (validate, `--check` re-fetches each source and looks for the
+  exact quote, `data/evidence_check.json`), `/api/evidence`, `static/evidence.js` (Evidence in detail views, list on
+  the Data quality page), hosted export `data/evidence.json`; `tests/test_evidence.py`.
+- R1 Althorp: c. 1508 kept (Historic England list entry 1356626 via British Listed Buildings; Wikipedia's "1688"
+  rests on Jones 1829). Hadlow Castle: corrected from Wikidata's 1852 to late C18 house / tower 1838–40 (list entry
+  1070451). 6 of 6 quotes found by the checker. Date checks: no conflicts left (Reviewed 125).
+

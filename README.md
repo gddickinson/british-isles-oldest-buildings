@@ -222,7 +222,7 @@ choices:
 
 1. **Use the bundled database** (recommended): downloads the latest
    [database release](https://github.com/gddickinson/british-isles-oldest-buildings/releases)
-   (57 MB), checks it against `data/bundled.json` and unpacks it. Ready in a minute or two.
+   (81 MB), checks it against `data/bundled.json` and unpacks it. Ready in a minute or two.
 2. **Use data you already have:** point it at a folder or drive holding the database and/or the
    download cache from another computer.
 3. **Build from scratch:** downloads everything from the sources (several hours; about 3 GB of

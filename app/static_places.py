@@ -4,7 +4,7 @@ import json
 from bidb import places_db, pron_db
 from bidb.place_kinds import KIND_GROUP, KIND_LABEL
 
-TRIM = {"description": 400, "wikipedia_extract": 400}   # the hosted copy may hold at most 256 MiB
+TRIM = {"description": 300, "wikipedia_extract": 300}   # the hosted copy may hold at most 256 MiB
 # external images are blocked in the hosted sandbox, so image fields are left out
 DROP = {"image_thumb", "image_page"}
 WIKIDATA = "https://www.wikidata.org/wiki/"

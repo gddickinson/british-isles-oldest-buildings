@@ -3,18 +3,16 @@
 Future work for British Isles Oldest Buildings, kept between sessions. Newest decisions first in
 each section; tick items off (and move them to SESSION_LOG.md) when done.
 
-## Status (2026-10-20)
-- Catalogue 22,046 records (pre-1500 buildings, oldest of each type, landmarks of any date);
-  77,729 places of interest (incl. 19,362 Open Plaques); 11,927 people. Download cache on an
-  external drive (Settings → Data location); database on the internal drive.
-  Hosted copy republished 2026-10-21 (version 26: legends, maritime, industrial, Victorian, new map
-  layers; tiles packed per layer, floor plans as WebP; 248 files, 243 MB). Before that version 20 (stories, tours, minor roads and streams, lazy
-  loading; 393 files, 233 MB, five publishes; files no longer exported are removed with null); republish changed files only (compare checksums of `dist/` before and after the export). Local GUI on port 5050; hosted copy at
-  https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private; republish with
-  `python -m app.static_export` then the Artifact tool, in batches under 64 MB).
-- Offline map (`app/basemap_build.py`): counties, roads, rail, rivers, parks, towns, landscape names,
-  airports; Map page; building outlines and floor plans; references and date checks per record;
-  research files checked against their sources (`python -m bidb.verify_research`).
+## Status (2026-10-22)
+- Catalogue 22,039 records; 166,325 places of interest in 22 groups (latest: sport and leisure, public
+  institutions with schools founded before 1900); 11,927 people; 870 researched claims (1,660 quotes,
+  1,658 found). Database release db-2026-10-22-4 (81 MB). Download cache on an external drive.
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 53: 242 MiB of the
+  256 MiB limit (place texts cut to 300 characters, floor plans 480 px WebP; the local app keeps
+  everything). Republish changed files only: checksum `dist/` before and after `python -m
+  app.static_export`, publish in batches under 64 MB, removed files with null, removals first.
+- Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
+  (`git archive HEAD | tar -x -C <dir>`, run on port 5071).
 
 ## Data quality and references
 - [x] Reviewed the 451 date-check conflicts (2026-10-20, `docs/date_review.md`): checker noise

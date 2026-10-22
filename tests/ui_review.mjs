@@ -76,7 +76,7 @@ const PAGES = [
   ["tours", "/tours", "maps"],
   ["tour_builder", "/tours?tab=build", "maps"],
   ["history", "/history", "maps"],
-  ["quiz", "/quiz", "document.querySelectorAll('.quiz-choices button').length"],
+  ["quiz", "/quiz?q=period", "document.querySelectorAll('.quiz-choices button').length"],
   ["oldest", "/oldest", "document.querySelectorAll('.ex').length"],
   ["stats", "/stats", "document.querySelectorAll('svg').length"],
   ["compare", "/compare", "document.querySelectorAll('table, .compare-grid').length"],
@@ -312,7 +312,7 @@ async function interact(page) {
     return a !== b ? { a, b } : `background unchanged ${a}`;
   });
   await t("quiz_answer", async () => {
-    await page.goto(BASE + P("/quiz"), 4000);
+    await page.goto(BASE + P("/quiz?q=period"), 4000);
     await ev("document.querySelector('.quiz-choices button').click()"); await sleep(800);
     const r = await ev("({ next: !!document.querySelector('#qz_next'), marked: document.querySelectorAll('.quiz-choices .right, .quiz-choices .wrong, .quiz-choices [class*=correct]').length })");
     return r.next ? r : "no feedback after answering";

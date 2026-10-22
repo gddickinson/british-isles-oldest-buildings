@@ -26,9 +26,11 @@ const Pron = (() => {
   const said = (r) => r.ipa || r.respell || r.audio;
   async function search(p) {      // p: {q, variety, kind, limit, offset}
     if (!IS_STATIC) return api("/api/pronunciations?" + new URLSearchParams(p));
-    const d = await loadStatic(), q = (p.q || "").toLowerCase();
+    const d = await loadStatic(), q = (p.q || "").toLowerCase(), seen = new Set();
     const hits = d.rows.filter((r) => said(r) && (!q || r.name.toLowerCase().includes(q))
       && (!p.variety || r.variety === p.variety) && (!p.kind || r.entity_kind === p.kind))
+      .filter((r) => { const k = [r.name, r.variety, r.ipa, r.respell, r.audio].join("|");   // as bidb.pron_db.search
+                       return !seen.has(k) && seen.add(k); })
       .sort((a, b) => a.name.localeCompare(b.name));
     const off = +p.offset || 0;
     return { total: hits.length, rows: hits.slice(off, off + (+p.limit || 60)) };
@@ -36,8 +38,10 @@ const Pron = (() => {
 
   async function varieties() {
     if (!IS_STATIC) return api("/api/pronunciations/varieties");
-    const d = await loadStatic(), n = {};
-    d.rows.filter(said).forEach((r) => { n[r.variety] = (n[r.variety] || 0) + 1; });
+    const d = await loadStatic(), n = {}, seen = new Set();
+    d.rows.filter(said).forEach((r) => {
+      const k = [r.name, r.variety, r.ipa, r.respell, r.audio].join("|");
+      if (!seen.has(k)) { seen.add(k); n[r.variety] = (n[r.variety] || 0) + 1; } });
     return Object.entries(n).sort((a, b) => b[1] - a[1]).map(([variety, count]) => ({ variety, count }));
   }
 

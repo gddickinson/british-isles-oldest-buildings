@@ -1,6 +1,16 @@
 """Enrichment from Wikipedia (intro text, lead image) and postcodes.io (addresses)."""
+import re
+
 from .config import POSTCODES_API, WIKIPEDIA_API
 from .http import request_json
+
+
+def tidy_extract(text):
+    """Wikipedia's plain-text extracts drop the IPA and leave "(; born …", "(, also UK: ; …" or "()" behind."""
+    if not text:
+        return text
+    text = re.sub(r"\((?:\s*(?:[;,]|also UK:|UK:|US:))+\s*", "(", text)
+    return re.sub(r"\s*\(\s*\)", "", text)
 
 
 def wikipedia_intros(titles):
@@ -20,7 +30,7 @@ def wikipedia_intros(titles):
             for m in q.get(kind, []):
                 back[m["to"]] = back.get(m["from"], m["from"])
         for page in q.get("pages", []):
-            info = {"extract": (page.get("extract") or "").strip(),
+            info = {"extract": tidy_extract((page.get("extract") or "").strip()),
                     "image": page.get("thumbnail", {}).get("source")}
             t = page.get("title")
             out[t] = info

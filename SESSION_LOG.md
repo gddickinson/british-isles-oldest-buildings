@@ -493,3 +493,19 @@
   Evidence: 870 claims, 1,658 of 1,660 quotes found (Ballycopeland; Antrim courthouse's NI register page now
   returns the site menu, the other source holds).
 - README, Help, INTERFACE, figure places_institutions; tests 110 OK, ui_check 42/42.
+
+## 2026-10-22 — Release, hosted copy, README
+- Database release db-2026-10-22-4 (81 MB). Hosted copy trimmed to 242 MiB (place descriptions and extracts
+  300 characters, floor plans 480 px q55 WebP: 22 → 7 MB) and published as versions 52–53; static review
+  22/22 and every quiz played on the static copy. The trimming is in the export only.
+- Fixes found while redoing the figures: Wikipedia extracts with the IPA dropped ("(; born…", "()") tidied
+  (`enrich.tidy_extract`, 495 texts fixed in the DB; tests/test_tidy_extract.py); the pronunciation guide
+  showed duplicate rows (same name, variety and pronunciation from two records) and counted them in the
+  variety chips (server and hosted); jargon in researched claims ("QID is the …") reworded.
+- Figures: new catalogue_landmarks (hero), then (paintings), data_quality, pron_welsh; people (buried here),
+  palette (with a search), detail (1000 px), setup (current, typical path), jobs (crop follows the scroll);
+  `pronunciation.jpg` dropped. Chrome refuses ports 5060/5061: the setup copy runs on 5071.
+- README rewritten: features with figures, getting started, a page-by-page guide, how it was made (pipeline,
+  dates, research, Claude Code), how it is maintained (jobs, commands, releases, hosted copy, tests),
+  sources, caveats. Checked rendered with GitHub's Markdown API: 29 figures, none broken; the database
+  badge removed (the private repository's releases are invisible to shields.io).

@@ -41,13 +41,17 @@ def fetch_plans(rows, width=600, log=print):
     return _fetch(items, log, "floor plans", webp=True)
 
 
-def _as_webp(path):
-    """A WebP copy (quality 70, made with cwebp; cached next to the original), or None."""
+PLAN_WEBP = (55, 480)          # quality, width: floor plans (line drawings) stay legible; the hosted copy is 256 MiB at most
+
+
+def _as_webp(path, quality=PLAN_WEBP[0], width=PLAN_WEBP[1]):
+    """A WebP copy (made with cwebp at `quality`, no wider than `width`; cached next to the original), or None."""
     import shutil
     import subprocess
-    out = path.with_suffix(".webp")
+    out = path.with_name(f"{path.stem}_q{quality}w{width}.webp")
     if not out.exists() and shutil.which("cwebp"):
-        subprocess.run(["cwebp", "-quiet", "-q", "70", str(path), "-o", str(out)], check=False, capture_output=True)
+        subprocess.run(["cwebp", "-quiet", "-q", str(quality), "-resize", str(width), "0", str(path), "-o", str(out)],
+                       check=False, capture_output=True)
     return out if out.exists() else None
 
 

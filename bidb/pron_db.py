@@ -118,9 +118,12 @@ def search(conn, q="", variety="", kind="", limit=100, offset=0):
         where.append("entity_kind = ?")
         args.append(kind)
     w = " AND ".join(where)
-    total = conn.execute(f"SELECT COUNT(*) FROM pronunciations WHERE {w}", args).fetchone()[0]
-    rows = conn.execute(f"SELECT {','.join(COLUMNS)} FROM pronunciations WHERE {w} "
-                        "ORDER BY name COLLATE NOCASE LIMIT ? OFFSET ?", args + [limit, offset])
+    # one row per name, variety and pronunciation (two records of one town give the same Wiktionary entry)
+    one = f"""SELECT * FROM pronunciations WHERE rowid IN (SELECT MIN(rowid) FROM pronunciations WHERE {w}
+              GROUP BY name, variety, ipa, respell, audio)"""
+    total = conn.execute(f"SELECT COUNT(*) FROM ({one})", args).fetchone()[0]
+    rows = conn.execute(f"SELECT {','.join(COLUMNS)} FROM ({one}) ORDER BY name COLLATE NOCASE LIMIT ? OFFSET ?",
+                        args + [limit, offset])
     return {"total": total, "rows": [_row(r) for r in rows]}
 
 
@@ -128,8 +131,8 @@ def varieties(conn):
     """[(variety, rows with IPA/respelling/audio)] for the guide's filter."""
     if not has_tables(conn):
         return []
-    return conn.execute("""SELECT variety, COUNT(*) FROM pronunciations
-        WHERE ipa != '' OR respell != '' OR audio != '' GROUP BY 1 ORDER BY 2 DESC""").fetchall()
+    return conn.execute("""SELECT variety, COUNT(*) FROM (SELECT DISTINCT name, variety, ipa, respell, audio
+        FROM pronunciations WHERE ipa != '' OR respell != '' OR audio != '') GROUP BY 1 ORDER BY 2 DESC""").fetchall()
 
 
 def all_rows(conn):

@@ -5,7 +5,8 @@ Layers (each its own file, loaded only when switched on):
   roads      major roads (Natural Earth; motorway/expressway, primary, secondary, ferries)
   rail       railways (Natural Earth)
   rivers     named rivers (OpenStreetMap, merged by name and area) and lakes (Natural Earth)
-  parks      national parks, AONBs / National Landscapes, National Scenic Areas (OpenStreetMap)
+  parks      national parks, AONBs / National Landscapes (OpenStreetMap), National Scenic Areas (Scottish
+             Government, OGL)
   towns      cities, towns and villages as [name, lat, lon, tier, population] (GeoNames)
   landscape  hills, ranges, forests, moors, glens, islands, lochs, bays, headlands (GeoNames, NE)
   airports   (Natural Earth)
@@ -133,8 +134,13 @@ def build_parks():
         closed = join_rings(rings)
         geom = (simplify({"type": "MultiPolygon", "coordinates": [[r] for r in closed]}, 0.002)
                 if closed else simplify({"type": "MultiLineString", "coordinates": rings}, 0.002))
-        if geom:
+        if geom and kind != "National Scenic Area":           # Scotland's own outlines below
             feats.append(feature(geom, n=name, k=kind, l=bbox_centre(geom)))
+    for f in src.scotland_nsas():
+        geom = simplify(f["geometry"], 0.002) if f.get("geometry") else None
+        name = (f.get("properties") or {}).get("nsaname")
+        if geom and name:
+            feats.append(feature(geom, n=f"{name} National Scenic Area", k="National Scenic Area", l=bbox_centre(geom)))
     _write("parks", collection(feats))
 
 

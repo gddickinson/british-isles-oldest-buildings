@@ -190,3 +190,15 @@ def osm_parks():
          'relation[designation~"^(national_park|area_of_outstanding_natural_beauty|national_scenic_area)$"]'
          '(49,-11,61.2,2.2););out geom;')
     return overpass(q, "parks_designation").get("elements", [])
+
+
+NSA_LAYER = "https://maps.gov.scot/server/rest/services/ScotGov/ProtectedSites/MapServer/3/query"
+
+
+def scotland_nsas():
+    """Scotland's 40 National Scenic Areas (Scottish Government, OGL): GeoJSON features, generalised to
+    ~50 m on the server (OSM maps only a few of them)."""
+    params = {"where": "1=1", "outFields": "nsaname", "returnGeometry": "true", "outSR": "4326",
+              "maxAllowableOffset": "0.0005", "f": "geojson"}
+    url = NSA_LAYER + "?" + "&".join(f"{k}={v}" for k, v in params.items())
+    return json.loads(_get(url, "scotland_nsas.geojson").read_text()).get("features", [])

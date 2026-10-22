@@ -340,3 +340,17 @@
   pop-ups, places 42/42 after a rerun: one connection reset from the local test file server).
 - Not published yet: GitHub push, hosted copy and database release wait for the user.
 
+## 2026-10-21 (night, continued) — excavations and hoards; publish
+- `bidb/digs.py`: 604 excavated sites on Wikidata (P793 archaeological excavation with dates, P4345 directors,
+  P61 discoverers) and 205 Time Team digs (Wikipedia series pages; location, coordinates, year, summary) →
+  group "Excavations" (540 new places) and table `excavations` ("Excavated:" line on 864 buildings and
+  places; a Time Team dig within 300 m of a catalogue building counts for it). Tour theme "Archaeology & digs".
+- `bidb/hoards.py`: Wikipedia's lists of hoards in Great Britain and Ireland, 102 hoards with find-spots (78 new,
+  24 already Wikidata finds), period, year found, contents, museum; `museums.save_names` keeps a
+  `museum_names` table so later stages can link finds to museums (163 linked).
+- Portable Antiquities Scheme checked: finds.org.uk is behind a Cloudflare check; public find-spots are
+  generalised (1 km / parish) by design. Left as a data request (ROADMAP D3).
+- Follow-on stages rerun: places 118,184, stories 2,443, tours 368, paintings 3,111, Domesday 17,935 records.
+- Fixes: excavation spans without an end year; hoard find-spot line breaks; "Year found" label;
+  Wikipedia/Mapping Museums sources linked as "Source".
+

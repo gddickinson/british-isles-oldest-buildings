@@ -33,6 +33,12 @@ def depictions(rid):
     return jsonify(for_record(conn(), rid))
 
 
+@bp.route("/api/excavations/<path:rid>")
+def excavations(rid):
+    from bidb.digs import for_record
+    return jsonify(for_record(conn(), rid))
+
+
 @bp.route("/api/domesday/<path:rid>")
 def domesday(rid):
     from bidb.domesday import for_record

@@ -43,6 +43,11 @@ def export(conn, out_dir):
                 "SELECT entity_id, title, creator, year, image FROM depictions ORDER BY year IS NULL, year"):
             arts.setdefault(rid, []).append([title, creator, year, image])
         (out_dir / "depictions.json").write_text(json.dumps(arts, ensure_ascii=False, separators=(",", ":")))
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'excavations'").fetchone():
+        digs = {}                                    # {record id: [[what, years, who], …]}
+        for rid, what, years, who in conn.execute("SELECT entity_id, what, years, who FROM excavations"):
+            digs.setdefault(rid, []).append([what, years, who])
+        (out_dir / "excavations.json").write_text(json.dumps(digs, ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'domesday'").fetchone():
         # {settlement qid: [name, Open Domesday id]} and {record id: settlement qid (prefixed "=" when itself)}
         places, marks = {}, {}

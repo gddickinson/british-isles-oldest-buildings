@@ -36,6 +36,8 @@ THEMES = {
     "bridges": {"title": "Bridges", "test": lambda r: r.get("kind_group") == "Bridges"
                 or ("Bridge" in (r.get("category") or "")           # the category also holds wells and dams
                     and any(w in (r.get("name") or "").lower() for w in ("bridge", "viaduct", "aqueduct", "pont", "brig")))},
+    "digs": {"title": "Archaeology & digs", "test": lambda r: r.get("kind_group") == "Excavations"
+             or r.get("kind_label") == "Hoard"},
     "underground": {"title": "Underground", "test": lambda r: r.get("kind_group") == "Underground"},
     "literary": {"title": "Literary places", "test": lambda r: r.get("kind_label") == "Literary place" or r.get("writer")},
     "prehistoric": {"title": "Prehistoric", "test": lambda r: r.get("period") in ("Neolithic", "Bronze Age", "Iron Age")
@@ -59,7 +61,8 @@ PLAN = {("highlights", "walk"): 45, ("highlights", "cycle"): 25, ("highlights", 
         ("roman", "walk"): 3, ("underground", "walk"): 6, ("underground", "drive"): 4,
         ("coastal", "cycle"): 5, ("coastal", "drive"): 6, ("military", "drive"): 6, ("military", "walk"): 3,
         ("museums", "walk"): 10, ("museums", "drive"): 4,
-        ("bridges", "walk"): 6, ("bridges", "cycle"): 5, ("bridges", "drive"): 6}
+        ("bridges", "walk"): 6, ("bridges", "cycle"): 5, ("bridges", "drive"): 6,
+        ("digs", "drive"): 6}
 # keep tours of the same theme and mode this far apart (km)
 APART = {"walk": 6, "cycle": 22, "drive": 60}
 COLUMNS = ["id", "mode", "theme", "title", "area", "nation", "summary", "distance_km", "duration_min",
@@ -79,7 +82,7 @@ def candidates(conn):
              "image_thumb", "wikipedia_title", "nation", "locality"]
     for row in conn.execute(f"""SELECT {', '.join(pcols)} FROM places WHERE lat IS NOT NULL
             AND (coalesce(wikipedia_title, '') != ''
-                 OR kind_group IN ('Legends & literature', 'Maritime heritage', 'Victorian era', 'Industrial heritage', 'Underground', 'Museums & collections')
+                 OR kind_group IN ('Legends & literature', 'Maritime heritage', 'Victorian era', 'Industrial heritage', 'Underground', 'Museums & collections', 'Excavations')
                  OR (kind_group = 'Military heritage' AND kind != 'memorial')) AND building_id IS NULL
             AND kind_group NOT IN ('Finds & treasures', 'Plaques & people', 'History events')"""):
         r = dict(zip(pcols, row))
@@ -150,6 +153,7 @@ def title_for(theme, mode, area):
             "military": f"Military {area} ({noun})",
             "museums": f"Museums & galleries of {area} ({noun})",
             "bridges": f"Bridges of {area} ({noun})",
+            "digs": f"Archaeology & digs around {area} ({noun})",
             "prehistoric": f"Prehistoric {area} ({noun})",
             "castles": f"Castles of {area} ({noun})",
             "churches": f"Early churches around {area} ({noun})",

@@ -1,13 +1,13 @@
 // Places of interest and people: colours, cards, detail views and a shared modal.
 const PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
   "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
-    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges"];
+    "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges", "Excavations"];
 const PLACE_ICON = { "Battles & sieges": "⚔", "Archaeological sites": "🪨", "Lost places": "🏚",
   "Parks, gardens & trees": "🌳", "Industrial heritage": "⚙", "Finds & treasures": "💰",
-  "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩", "Underground": "🚇", "Military heritage": "🛡", "Museums & collections": "🏛", "Bridges": "🌉" };
+  "Plaques & people": "🔵", "History events": "📜", "Legends & literature": "📖", "Maritime heritage": "⚓", "Victorian era": "🎩", "Underground": "🚇", "Military heritage": "🛡", "Museums & collections": "🏛", "Bridges": "🌉", "Excavations": "⛏" };
 const EXTRA_LABELS = { part_of: "Part of", now_in: "Now kept at", found_at: "Found at",
   commemorates: "Commemorates", inscription: "Inscription", region: "Region", register_ref: "Register reference",
-  works: "Works set here" };
+  works: "Works set here", found: "Year found" };
 // a list value: plain strings, or [title, author, year] for literary works
 const extraText = (v) => (Array.isArray(v) ? v.map((x) => (Array.isArray(x)
   ? `${x[0]}${x[1] ? ` (${x[1]}${x[2] ? ", " + x[2] : ""})` : ""}` : x)).join("; ") : v);
@@ -66,6 +66,7 @@ function nearbyPlacesHTML(places, title) {
 }
 
 // extras with their own rendering: objects a museum keeps, museum links for "now kept at"
+const SOURCE_MM = "Mapping Museums (Birkbeck)";
 const SPECIAL_EXTRA = ["kept_here", "now_in_ids", "mapping_museums"];
 // "place:<id>" or "building:<id>" (bidb/museums.py link_finds)
 const museumLink = (name, ref) => {
@@ -98,7 +99,7 @@ function placeDetailHTML(p) {
     .map(([k, v]) => k === "now_in" && ex.now_in_ids ? fieldHTML(EXTRA_LABELS[k], v.map((n) => museumLink(n, ex.now_in_ids[n])).join("; "))
       : field(EXTRA_LABELS[k] || k, extraText(v))).join("");
   const links = [
-    p.url && link(p.source === "History timeline" ? "Source" : `Official record (${p.source})`, p.url),
+    p.url && link(["History timeline", "Wikipedia", SOURCE_MM].includes(p.source) ? "Source" : `Official record (${p.source})`, p.url),
     p.wikipedia_title && link("Wikipedia", `https://en.wikipedia.org/wiki/${enc(p.wikipedia_title.replace(/ /g, "_"))}`),
     p.wikidata_id && link("Wikidata", `https://www.wikidata.org/wiki/${p.wikidata_id}`),
     p.lat != null && link("OpenStreetMap", `https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=15/${p.lat}/${p.lon}`),

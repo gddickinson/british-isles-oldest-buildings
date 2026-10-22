@@ -395,9 +395,13 @@ const Basemap = (() => {
     el.dataset.transportDone = "1";
     const [lat, lon] = el.dataset.transport.split(",").map(Number);
     const id = el.dataset.visit && encodeURIComponent(el.dataset.visit);
-    const [near, visit, dom] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
-      id ? api("/api/visiting/" + id).catch(() => null) : null, id ? api("/api/domesday/" + id).catch(() => null) : null]);
+    const [near, visit, dom, digs] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
+      id ? api("/api/visiting/" + id).catch(() => null) : null, id ? api("/api/domesday/" + id).catch(() => null) : null,
+      id ? api("/api/excavations/" + id).catch(() => []) : []]);
     const lines = [];
+    const dug = (digs || []).map((d) => d.what === "time team" ? `Time Team${d.years ? " " + esc(d.years) : ""}`
+      : d.years && d.who ? `${esc(d.years)} (${esc(d.who.replace(/; /g, ", "))})` : esc(d.years || d.who || "")).filter(Boolean);
+    if (dug.length) lines.push(`<b>${dug.every((t) => t.startsWith("found by")) ? "Found:" : "Excavated:"}</b> ${dug.join(" · ")}`);
     if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
       esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book
       <span class="hint">(<a href="https://opendomesday.org/" target="_blank" rel="noopener">Open Domesday</a>)</span>`);

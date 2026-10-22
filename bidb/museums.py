@@ -130,7 +130,8 @@ def run(log=print):
             conn.execute("UPDATE places SET extra = ? WHERE id = ?", (json.dumps(e, ensure_ascii=False), pid))
     objs = object_places(conn, kept, {r["id"]: r for r in recs}, in_catalogue)
     place_stage.insert(conn, objs)
-    linked = link_finds(conn, recs)
+    save_names(conn, recs)
+    linked = link_finds(conn)
     conn.commit()
     stamp(f"{len(objs)} objects kept in museums, {linked} finds linked to their museum")
 
@@ -158,16 +159,24 @@ def object_places(conn, kept, museums, in_catalogue):
     return list(out.values())
 
 
-def link_finds(conn, recs):
-    """Finds and objects whose "now kept at" names a museum: extra.now_in_ids = {name: "place:<id>" or
-    "building:<id>"} (museums that are catalogue buildings open as buildings)."""
+def save_names(conn, recs):
+    """Table museum_names (name, ref): ref "place:<id>" or "building:<id>" (museums that are catalogue
+    buildings open as buildings), for link_finds here and in later stages (bidb.hoards)."""
     places = {i for (i,) in conn.execute("SELECT id FROM places WHERE kind_group = ?", (GROUP,))}
     buildings = {w: i for i, w in conn.execute("SELECT id, wikidata_id FROM buildings WHERE wikidata_id IS NOT NULL")}
-    by_name = {}
+    names = {}
     for r in recs:
         ref = f"place:{r['id']}" if r["id"] in places else f"building:{buildings[r['id']]}" if r["id"] in buildings else None
         if ref:
-            by_name.setdefault(r["name"], ref)
+            names.setdefault(r["name"], ref)
+    conn.execute("DROP TABLE IF EXISTS museum_names")
+    conn.execute("CREATE TABLE museum_names (name TEXT PRIMARY KEY, ref TEXT)")
+    conn.executemany("INSERT INTO museum_names VALUES (?, ?)", names.items())
+
+
+def link_finds(conn):
+    """Finds and objects whose "now kept at" names a museum: extra.now_in_ids = {name: ref} (museum_names)."""
+    by_name = dict(conn.execute("SELECT name, ref FROM museum_names"))
     n = 0
     for pid, extra in conn.execute("SELECT id, extra FROM places WHERE extra LIKE '%now_in%'").fetchall():
         e = json.loads(extra)

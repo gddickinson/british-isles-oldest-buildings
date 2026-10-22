@@ -29,6 +29,7 @@ PAGES = {
     "museum_building": ("/building/Q6373", r'Notable objects here'),
     "places_bridges": ("/places?kind_group=Bridges", r'data-place='),
     "building_then": ("/building/Q1025398", r'Then: paintings'),
+    "places_excavations": ("/places?kind_group=Excavations", r'data-place='),
     "people": ("/people", r'data-person=|class="person'),
     "pronunciation": ("/pronunciation?q=ll", r'class="ipa"|class="respell"'),
     "stories": ("/stories", r'class="story story-'),

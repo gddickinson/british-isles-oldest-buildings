@@ -294,6 +294,16 @@ Places of the imagination
       bridges, viaducts and aqueducts from the industrial and Victorian stages move to this group.
 - [x] B2 (2026-10-21) A "Bridges" tour theme (walks, rides, drives).
 
+## Archaeology: digs and treasure (added 2026-10-21)
+- [x] D1 Excavations (`bidb/digs.py`): 604 excavated sites on Wikidata (dated excavations, directors of fieldwork,
+      discoverers) and 205 Time Team digs (Wikipedia series pages) → group "Excavations" (540 new places) and an
+      "Excavated:" line on 864 buildings and places; tour theme "Archaeology & digs".
+- [x] D2 Hoards (`bidb/hoards.py`): Wikipedia's lists of hoards in Great Britain and Ireland (102 with find-spots;
+      78 new, 24 already Wikidata finds), linked to their museum.
+- [ ] D3 Portable Antiquities Scheme / Treasure reports: public records give find-spots to 1 km or parish only, and
+      finds.org.uk blocks scripts (Cloudflare check, 2026-10-21): needs a data request (user item, as N1).
+- [ ] D4 Archaeology Data Service excavation index (England) and Canmore/Coflein events (licence check first).
+
 ## Museums, galleries and collections (planned 2026-10-21; after the war construction)
 Places that keep interesting historical objects, and what they keep.
 - [x] MU1 (2026-10-21: 4,414 places: museums by type, art galleries, libraries and archives, closed ones

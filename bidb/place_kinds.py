@@ -9,7 +9,8 @@ English labels (October 2026).
 PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
                 "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
                 "Legends & literature", "Maritime heritage", "Victorian era", "Underground",
-                "Military heritage", "Museums & collections", "Bridges"]
+                "Military heritage", "Museums & collections", "Bridges",
+                "Excavations"]
 
 # Prehistoric / early monument types. Items with a photo or a Wikipedia article join the main
 # building catalogue; the rest are shown as "Archaeological sites" places.
@@ -135,3 +136,6 @@ KIND_GROUP.update({k: "Bridges" for k in ("br_early", "br_aqueduct", "br_moving"
 # added by bidb.mapping_museums (label set per museum from its subject)
 KIND_LABEL["mm_museum"] = "Museum"
 KIND_GROUP["mm_museum"] = "Museums & collections"
+# added by bidb.hoards and bidb.digs
+KIND_LABEL.update({"hoard": "Hoard", "excavated": "Excavated site", "timeteam": "Time Team dig"})
+KIND_GROUP.update({"hoard": "Finds & treasures", "excavated": "Excavations", "timeteam": "Excavations"})

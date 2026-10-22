@@ -20,9 +20,9 @@ STAY = ("plaque", "find", "object", "event", "kept")
 def protected():
     """Kinds made by the group stages (legends, maritime, underground, military, museums, bridges):
     a place one of them made is never taken by another."""
-    from . import bridges, lore_places, mapping_museums, maritime, military, museums, underground
-    return set(STAY) | {k for m in (lore_places, maritime, underground, military, museums, mapping_museums, bridges)
-                        for k in m.KINDS}
+    from . import bridges, digs, hoards, lore_places, mapping_museums, maritime, military, museums, underground
+    return set(STAY) | {k for m in (lore_places, maritime, underground, military, museums, mapping_museums, bridges,
+                                    hoards, digs) for k in m.KINDS}
 
 
 def query(where, wp_only=False):

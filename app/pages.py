@@ -13,8 +13,9 @@ STATIC_MODE = False      # True when rendering the hosted static export
 @bp.app_context_processor
 def _globals():
     from flask import has_request_context
-    from .lan import is_local
-    here = not STATIC_MODE and (not has_request_context() or is_local())    # this computer, not another one
+    from .lan import full_access
+    # this computer (or a device with the trusted share code), not another one
+    here = not STATIC_MODE and (not has_request_context() or full_access())
     return {"info": build_info(), "static_mode": STATIC_MODE, "this_machine": here,
             "can_edit": here and (ROOT / "data").exists()}
 

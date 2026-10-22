@@ -51,3 +51,37 @@ class Requests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ShareCodes(unittest.TestCase):
+    def test_access_levels(self):
+        from app.lan import access
+        none, code, both = {}, {"share_code": "ABC234"}, {"share_code": "ABC234", "share_trusted_code": "XYZ789"}
+        self.assertEqual(access(False, None, none), "read")
+        self.assertEqual(access(True, None, both), "full")
+        self.assertIsNone(access(False, None, code))
+        self.assertIsNone(access(False, "WRONG1", code))
+        self.assertEqual(access(False, "abc234 ", code), "read")         # typed in lower case, with a space
+        self.assertEqual(access(False, "XYZ789", both), "full")
+        self.assertEqual(access(False, "XYZ789", {"share_trusted_code": "XYZ789"}), "full")
+        self.assertEqual(access(False, None, {"share_trusted_code": "XYZ789"}), "read")   # no viewer code: open
+
+    def test_requests_with_codes(self):
+        from unittest import mock
+        from app import lan
+        from app.server import app
+        client, far = app.test_client(), {"REMOTE_ADDR": "192.168.1.50"}
+        settings = {"share_code": "ABC234", "share_trusted_code": "XYZ789"}
+        with mock.patch.object(lan.config, "load_settings", return_value=settings), mock.patch.object(lan.time, "sleep"):
+            self.assertEqual(client.get("/api/stats", environ_base=far).status_code, 401)
+            r = client.get("/help", environ_base=far)
+            self.assertEqual(r.status_code, 401)
+            self.assertIn(b"share code", r.data)
+            self.assertEqual(client.get("/help?code=NOPE22", environ_base=far).status_code, 401)
+            r = client.get("/help?code=abc234", environ_base=far)
+            self.assertEqual(r.status_code, 200)
+            self.assertIn("bidb_share=ABC234", r.headers.get("Set-Cookie", ""))
+            self.assertNotEqual(client.get("/api/stats", environ_base=far).status_code, 401)   # the cookie now
+            self.assertEqual(client.get("/api/settings/browse?path=/", environ_base=far).status_code, 403)
+            client.get("/help?code=XYZ789", environ_base=far)
+            self.assertEqual(client.get("/api/share", environ_base=far).status_code, 200)    # trusted: full access

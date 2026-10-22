@@ -14,7 +14,7 @@ from .api import bp as api_bp
 from .common import close_conn
 from .export_api import bp as export_bp
 from .jobs_api import bp as jobs_bp
-from .lan import bp as lan_bp, guard, host_for
+from .lan import bp as lan_bp, guard, host_for, remember
 from .pages import bp as pages_bp
 from .places_api import bp as places_bp
 from .pron_api import bp as pron_bp
@@ -28,6 +28,7 @@ from .tours_api import bp as tours_bp
 app = Flask(__name__)
 app.teardown_appcontext(close_conn)
 app.before_request(guard)
+app.after_request(remember)
 for bp in (lan_bp, jobs_bp, api_bp, export_bp, places_bp, pron_bp, quiz_bp, stories_bp, street_bp, tours_bp, tools_bp, settings_bp, pages_bp):
     app.register_blueprint(bp)
 

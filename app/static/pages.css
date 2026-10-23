@@ -133,3 +133,12 @@
 .job-opts { margin-top: 6px; }
 .ok-text { color: var(--accent); }
 .setup-page .set-card { margin-bottom: 14px; }
+
+/* Through time page (change_page.js) */
+.change-page .ch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 4px 24px; }
+.change-page .ch-fig { margin: 0; }
+.change-page .ch-fig .cc-svg { height: 96px; }
+.change-page .ch-table { font-size: 12px; border-collapse: collapse; max-height: 240px; }
+.change-page .ch-table td, .change-page .ch-table th { padding: 1px 8px; text-align: right; }
+.change-page .ch-events { font-size: 13.5px; line-height: 1.45; }
+.change-page .ch-source { font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }

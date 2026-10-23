@@ -1,0 +1,710 @@
+[
+ {
+  "id": "pop_hyde_uk",
+  "theme": "People and settlements",
+  "title": "Population, long run (modelled)",
+  "region": "United Kingdom (present borders)",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "note": "Modelled by the HYDE 3.2 history database from historical and archaeological population estimates, spread over the land by models; before about 1800 these are estimates with wide uncertainty (not shown by the source), and early millennia rest on very few figures.",
+  "file": "pop_hyde_uk.csv",
+  "modelled": true,
+  "default": true
+ },
+ {
+  "id": "pop_hyde_ie",
+  "theme": "People and settlements",
+  "title": "Population, long run (modelled)",
+  "region": "Ireland (Republic, present borders)",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "note": "Modelled by the HYDE 3.2 history database from historical and archaeological population estimates, spread over the land by models; before about 1800 these are estimates with wide uncertainty (not shown by the source), and early millennia rest on very few figures.",
+  "file": "pop_hyde_ie.csv",
+  "modelled": true
+ },
+ {
+  "id": "pop_ew",
+  "theme": "People and settlements",
+  "title": "Population at each census",
+  "region": "England and Wales",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "pop_census_england_wales"
+  ],
+  "note": "Census counts, 1801–2021 (none in 1941).",
+  "file": "pop_ew.csv",
+  "default": true
+ },
+ {
+  "id": "pop_scot",
+  "theme": "People and settlements",
+  "title": "Population (mid-year estimates)",
+  "region": "Scotland",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "pop_scotland_nrs"
+  ],
+  "note": "",
+  "file": "pop_scot.csv"
+ },
+ {
+  "id": "pop_ni",
+  "theme": "People and settlements",
+  "title": "Population",
+  "region": "Northern Ireland",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "pop_northern_ireland_nisra"
+  ],
+  "note": "Census years to 1961 (the area of the six counties before 1921), annual estimates from 1971.",
+  "file": "pop_ni.csv"
+ },
+ {
+  "id": "pop_ie",
+  "theme": "People and settlements",
+  "title": "Population at each census",
+  "region": "Ireland (26 counties)",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "pop_ireland_state_cso"
+  ],
+  "note": "The Great Famine of 1845–52 and emigration: 6.53 million in 1841, 5.11 million in 1851, falling until 1961.",
+  "file": "pop_ie.csv",
+  "default": true
+ },
+ {
+  "id": "towns10k_uk",
+  "theme": "People and settlements",
+  "title": "Towns and cities of 10,000 people or more",
+  "region": "United Kingdom (present borders)",
+  "unit": "towns",
+  "unit_long": "towns",
+  "sources": [
+   "towns_buringh_counts"
+  ],
+  "note": "Counted from Buringh's city database at each date (one value per century to 1500, then every 50 years). Only places that later became sizeable cities are in the database, so early counts are a lower bound; many early populations are the author's estimates.",
+  "file": "towns10k_uk.csv",
+  "default": true
+ },
+ {
+  "id": "towns10k_ie",
+  "theme": "People and settlements",
+  "title": "Towns and cities of 10,000 people or more",
+  "region": "Ireland (Republic)",
+  "unit": "towns",
+  "unit_long": "towns",
+  "sources": [
+   "towns_buringh_counts"
+  ],
+  "note": "Counted from Buringh's city database at each date (one value per century to 1500, then every 50 years). Only places that later became sizeable cities are in the database, so early counts are a lower bound; many early populations are the author's estimates.",
+  "file": "towns10k_ie.csv"
+ },
+ {
+  "id": "urban_uk",
+  "theme": "People and settlements",
+  "title": "Share of people living in towns",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of population",
+  "sources": [
+   "urban_share_un_wup"
+  ],
+  "note": "UN estimates by each country's own definition of urban; no comparable open series before 1950.",
+  "file": "urban_uk.csv",
+  "zero": false
+ },
+ {
+  "id": "urban_ie",
+  "theme": "People and settlements",
+  "title": "Share of people living in towns",
+  "region": "Ireland",
+  "unit": "%",
+  "unit_long": "% of population",
+  "sources": [
+   "urban_share_un_wup"
+  ],
+  "note": "UN estimates by each country's own definition of urban.",
+  "file": "urban_ie.csv",
+  "zero": false
+ },
+ {
+  "id": "dwellings_eng",
+  "theme": "People and settlements",
+  "title": "Homes (dwelling stock)",
+  "region": "England",
+  "unit": "homes",
+  "unit_long": "homes",
+  "sources": [
+   "dwellings_england_dluhc"
+  ],
+  "note": "Census counts of dwellings to 1961, then annual estimates; definitions changed between censuses.",
+  "file": "dwellings_eng.csv"
+ },
+ {
+  "id": "life_uk",
+  "theme": "People and settlements",
+  "title": "Life expectancy at birth",
+  "region": "United Kingdom (England before 1841)",
+  "unit": "years",
+  "unit_long": "years",
+  "sources": [
+   "life_expectancy_owid"
+  ],
+  "note": "Period life expectancy, pulled down by deaths in infancy. Before 1841 the values are reconstructions for England (Zijdeman et al. / Clio Infra) at irregular dates. Dips: 1918 influenza, 2020 COVID-19.",
+  "file": "life_uk.csv",
+  "default": true
+ },
+ {
+  "id": "life_ie",
+  "theme": "People and settlements",
+  "title": "Life expectancy at birth",
+  "region": "Ireland",
+  "unit": "years",
+  "unit_long": "years",
+  "sources": [
+   "life_expectancy_owid"
+  ],
+  "note": "",
+  "file": "life_ie.csv"
+ },
+ {
+  "id": "gdppc_uk",
+  "theme": "Prosperity and work",
+  "title": "Income per head (GDP per person)",
+  "region": "England to 1700, Great Britain to 1870, then UK",
+  "unit": "$",
+  "unit_long": "2011 int. $ per person",
+  "sources": [
+   "gdppc_maddison2023"
+  ],
+  "note": "In 2011 international dollars (adjusted for prices). The Maddison Project uses Broadberry et al. (2015) for England before 1870; a single point for AD 1000.",
+  "file": "gdppc_uk.csv",
+  "default": true
+ },
+ {
+  "id": "gdppc_ie",
+  "theme": "Prosperity and work",
+  "title": "Income per head (GDP per person)",
+  "region": "Ireland",
+  "unit": "$",
+  "unit_long": "2011 int. $ per person",
+  "sources": [
+   "gdppc_maddison2023"
+  ],
+  "note": "1820, 1870, 1913, then yearly from 1921. Recent values are inflated by multinational companies' accounts.",
+  "file": "gdppc_ie.csv"
+ },
+ {
+  "id": "wood_eng",
+  "theme": "Land and farming",
+  "title": "Woodland cover",
+  "region": "England",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "fr_woodland_cover"
+  ],
+  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories.",
+  "file": "wood_eng.csv",
+  "default": true
+ },
+ {
+  "id": "wood_scot",
+  "theme": "Land and farming",
+  "title": "Woodland cover",
+  "region": "Scotland",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "fr_woodland_cover"
+  ],
+  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories.",
+  "file": "wood_scot.csv",
+  "default": false
+ },
+ {
+  "id": "wood_wal",
+  "theme": "Land and farming",
+  "title": "Woodland cover",
+  "region": "Wales",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "fr_woodland_cover"
+  ],
+  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories.",
+  "file": "wood_wal.csv",
+  "default": false
+ },
+ {
+  "id": "wood_ni",
+  "theme": "Land and farming",
+  "title": "Woodland cover",
+  "region": "Northern Ireland",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "fr_woodland_cover"
+  ],
+  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories.",
+  "file": "wood_ni.csv",
+  "default": false
+ },
+ {
+  "id": "wood_uk",
+  "theme": "Land and farming",
+  "title": "Woodland cover",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "fr_woodland_cover"
+  ],
+  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories.",
+  "file": "wood_uk.csv",
+  "default": false
+ },
+ {
+  "id": "trees_gb",
+  "theme": "Land and farming",
+  "title": "Tree cover from pollen",
+  "region": "Great Britain",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "reveals_landclim2"
+  ],
+  "note": "Tree cover reconstructed from pollen in lake and bog cores (the REVEALS model), averaged over 1° cells with an estimate; one value per time window (500 years before 1000 BC, shorter later). The band is ±1 standard error; which cells have data changes between windows.",
+  "file": "trees_gb.csv",
+  "default": true
+ },
+ {
+  "id": "trees_ie",
+  "theme": "Land and farming",
+  "title": "Tree cover from pollen",
+  "region": "Ireland",
+  "unit": "%",
+  "unit_long": "% of land",
+  "sources": [
+   "reveals_landclim2"
+  ],
+  "note": "Tree cover reconstructed from pollen in lake and bog cores (the REVEALS model), averaged over 1° cells with an estimate; one value per time window (500 years before 1000 BC, shorter later). The band is ±1 standard error; which cells have data changes between windows.",
+  "file": "trees_ie.csv"
+ },
+ {
+  "id": "crop_hyde_uk",
+  "theme": "Land and farming",
+  "title": "Cropland (modelled)",
+  "region": "United Kingdom",
+  "unit": "thousand km²",
+  "unit_long": "thousand km²",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "note": "Modelled by the HYDE 3.2 history database from historical and archaeological land-use estimates, spread over the land by models; before about 1800 these are estimates with wide uncertainty (not shown by the source), and early millennia rest on very few figures.",
+  "file": "crop_hyde_uk.csv",
+  "modelled": true
+ },
+ {
+  "id": "graze_hyde_uk",
+  "theme": "Land and farming",
+  "title": "Pasture and grazing land (modelled)",
+  "region": "United Kingdom",
+  "unit": "thousand km²",
+  "unit_long": "thousand km²",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "note": "Modelled by the HYDE 3.2 history database from historical and archaeological land-use estimates, spread over the land by models; before about 1800 these are estimates with wide uncertainty (not shown by the source), and early millennia rest on very few figures.",
+  "file": "graze_hyde_uk.csv",
+  "modelled": true
+ },
+ {
+  "id": "sheep_gb",
+  "theme": "Land and farming",
+  "title": "Sheep",
+  "region": "Great Britain",
+  "unit": "head",
+  "unit_long": "head",
+  "sources": [
+   "defra_key_results_1866"
+  ],
+  "note": "June agricultural survey; Great Britain, so the series runs unbroken from 1866.",
+  "file": "sheep_gb.csv"
+ },
+ {
+  "id": "cattle_gb",
+  "theme": "Land and farming",
+  "title": "Cattle",
+  "region": "Great Britain",
+  "unit": "head",
+  "unit_long": "head",
+  "sources": [
+   "defra_key_results_1866"
+  ],
+  "note": "June agricultural survey; Great Britain, so the series runs unbroken from 1866.",
+  "file": "cattle_gb.csv"
+ },
+ {
+  "id": "wheat_gb",
+  "theme": "Land and farming",
+  "title": "Wheat grown",
+  "region": "Great Britain",
+  "unit": "ha",
+  "unit_long": "hectares",
+  "sources": [
+   "defra_key_results_1866"
+  ],
+  "note": "June agricultural survey; Great Britain, so the series runs unbroken from 1866.",
+  "file": "wheat_gb.csv"
+ },
+ {
+  "id": "coal_uk",
+  "theme": "Industry and energy",
+  "title": "Coal mined",
+  "region": "United Kingdom",
+  "unit": "Mt",
+  "unit_long": "million tonnes",
+  "sources": [
+   "desnz_coal_1853"
+  ],
+  "note": "Before 1913 the source gives 10-year averages (plotted at each decade's middle year); yearly from 1913.",
+  "file": "coal_uk.csv",
+  "default": true
+ },
+ {
+  "id": "coal_jobs_uk",
+  "theme": "Industry and energy",
+  "title": "Coal miners",
+  "region": "United Kingdom",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "desnz_coal_1853"
+  ],
+  "note": "Before 1913 the source gives 10-year averages (plotted at each decade's middle year); yearly from 1913.",
+  "file": "coal_jobs_uk.csv"
+ },
+ {
+  "id": "co2_fossil_uk",
+  "theme": "Industry and energy",
+  "title": "CO₂ from coal, oil and gas",
+  "region": "United Kingdom",
+  "unit": "Mt CO₂",
+  "unit_long": "million tonnes CO₂",
+  "sources": [
+   "uk_fossil_co2_gcb"
+  ],
+  "note": "Fossil fuels and cement, from the Global Carbon Budget.",
+  "file": "co2_fossil_uk.csv",
+  "default": true
+ },
+ {
+  "id": "co2_fossil_ie",
+  "theme": "Industry and energy",
+  "title": "CO₂ from coal, oil and gas",
+  "region": "Ireland",
+  "unit": "Mt CO₂",
+  "unit_long": "million tonnes CO₂",
+  "sources": [
+   "uk_fossil_co2_gcb"
+  ],
+  "note": "",
+  "file": "co2_fossil_ie.csv"
+ },
+ {
+  "id": "so2_uk",
+  "theme": "Industry and energy",
+  "title": "Sulphur dioxide emitted",
+  "region": "United Kingdom",
+  "unit": "kt SO₂",
+  "unit_long": "thousand tonnes",
+  "sources": [
+   "uk_so2_ceds"
+  ],
+  "note": "Mostly from burning coal: the smoke and acid rain of the industrial age, cut by the Clean Air Acts (1956, 1968) and the move from coal.",
+  "file": "so2_uk.csv"
+ },
+ {
+  "id": "cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Central England",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "hadcet_annual"
+  ],
+  "note": "The longest instrumental temperature record in the world. 1659–1722 values are rounded and rest on few sources.",
+  "file": "cet.csv",
+  "zero": false,
+  "default": true
+ },
+ {
+  "id": "uk_temp",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "United Kingdom",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "haduk_uk_tmean_annual"
+  ],
+  "note": "",
+  "file": "uk_temp.csv",
+  "zero": false
+ },
+ {
+  "id": "ewp",
+  "theme": "Climate and atmosphere",
+  "title": "Rainfall, yearly total",
+  "region": "England and Wales",
+  "unit": "mm",
+  "unit_long": "mm",
+  "sources": [
+   "hadewp_annual"
+  ],
+  "note": "",
+  "file": "ewp.csv",
+  "zero": false
+ },
+ {
+  "id": "ioi_rain",
+  "theme": "Climate and atmosphere",
+  "title": "Rainfall, yearly total",
+  "region": "Island of Ireland",
+  "unit": "mm",
+  "unit_long": "mm",
+  "sources": [
+   "ioi_precip_annual"
+  ],
+  "note": "Rescued and homogenised long series; early decades rest on few stations.",
+  "file": "ioi_rain.csv",
+  "zero": false
+ },
+ {
+  "id": "scot_summer",
+  "theme": "Climate and atmosphere",
+  "title": "Summer temperature from tree rings",
+  "region": "Scotland (Cairngorms)",
+  "unit": "°C",
+  "unit_long": "°C vs 1961–90",
+  "sources": [
+   "rydval2017_scotland_ja_temp"
+  ],
+  "note": "July–August temperature from Scots pine ring density, as a difference from the 1961–90 average; band ±2 standard errors.",
+  "file": "scot_summer.csv",
+  "zero": false
+ },
+ {
+  "id": "eu_summer",
+  "theme": "Climate and atmosphere",
+  "title": "Summer temperature, reconstructed",
+  "region": "Europe",
+  "unit": "°C",
+  "unit_long": "°C vs 1961–90",
+  "sources": [
+   "luterbacher2016_europe_jja"
+  ],
+  "note": "June–August temperature from tree rings and documents, as a difference from the 1961–90 average; band ±2σ.",
+  "file": "eu_summer.csv",
+  "zero": false
+ },
+ {
+  "id": "temp12k",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature since the Ice Age",
+  "region": "Latitudes 30–60° N",
+  "unit": "°C",
+  "unit_long": "°C vs 1800–1900",
+  "sources": [
+   "temp12k_30n60n"
+  ],
+  "note": "From pollen, marine and lake records worldwide (median of five methods), as a difference from 1800–1900, in 100-year steps; band 5–95%. A latitude band, not the isles themselves.",
+  "file": "temp12k.csv",
+  "zero": false,
+  "modelled": true
+ },
+ {
+  "id": "co2",
+  "theme": "Climate and atmosphere",
+  "title": "Carbon dioxide in the air",
+  "region": "Worldwide",
+  "unit": "ppm",
+  "unit_long": "parts per million",
+  "sources": [
+   "co2_icecore_bereiter2015",
+   "co2_lawdome_spline",
+   "co2_noaa_mlo_annual"
+  ],
+  "note": "Ice-core air bubbles from Antarctica (well mixed worldwide), then measured in the open air. Joined from the sources named, each over its own years.",
+  "file": "co2.csv",
+  "zero": false,
+  "default": true
+ },
+ {
+  "id": "ch4",
+  "theme": "Climate and atmosphere",
+  "title": "Methane in the air",
+  "region": "Worldwide",
+  "unit": "ppb",
+  "unit_long": "parts per billion",
+  "sources": [
+   "ch4_icecore_edc_loulergue2008",
+   "co2_lawdome_spline",
+   "ch4_noaa_global_annual"
+  ],
+  "note": "Ice-core air bubbles from Antarctica (well mixed worldwide), then measured in the open air. Joined from the sources named, each over its own years.",
+  "file": "ch4.csv",
+  "zero": false
+ },
+ {
+  "id": "n2o",
+  "theme": "Climate and atmosphere",
+  "title": "Nitrous oxide in the air",
+  "region": "Worldwide",
+  "unit": "ppb",
+  "unit_long": "parts per billion",
+  "sources": [
+   "co2_lawdome_spline",
+   "n2o_noaa_global_annual"
+  ],
+  "note": "Ice-core air bubbles from Antarctica (well mixed worldwide), then measured in the open air. Joined from the sources named, each over its own years.",
+  "file": "n2o.csv",
+  "zero": false
+ },
+ {
+  "id": "volcanic",
+  "theme": "Climate and atmosphere",
+  "title": "Volcanic eruptions (sulphur into the stratosphere)",
+  "region": "Worldwide",
+  "unit": "Tg S",
+  "unit_long": "teragrams of sulphur",
+  "sources": [
+   "holvol_v11_vssi"
+  ],
+  "note": "Each point is one eruption found in Greenland and Antarctic ice; big ones cooled the isles' summers for a year or two (536, 540, 1257, 1783 Laki, 1815 Tambora).",
+  "file": "volcanic.csv",
+  "gap": 1
+ },
+ {
+  "id": "solar",
+  "theme": "Climate and atmosphere",
+  "title": "The sun's output",
+  "region": "Sun",
+  "unit": "W/m²",
+  "unit_long": "W/m² vs 1986",
+  "sources": [
+   "steinhilber2012_tsi"
+  ],
+  "note": "From beryllium-10 and carbon-14 in ice and tree rings, 22-year averages, as a difference from the 1986 solar minimum. Low phases include the Spörer (c. 1450) and Maunder (c. 1680) minima.",
+  "file": "solar.csv",
+  "zero": false
+ },
+ {
+  "id": "sea_newlyn",
+  "theme": "Sea and coast",
+  "title": "Sea level",
+  "region": "Newlyn, Cornwall",
+  "unit": "mm",
+  "unit_long": "mm vs 1961–80",
+  "sources": [
+   "psmsl_newlyn_annual"
+  ],
+  "note": "Yearly mean sea level at the tide gauge, as a difference from its 1961–80 average. Relative to the land, which is still rising in Scotland and sinking in the south after the Ice Age.",
+  "file": "sea_newlyn.csv",
+  "zero": false,
+  "default": true,
+  "gap": 3
+ },
+ {
+  "id": "sea_sheerness",
+  "theme": "Sea and coast",
+  "title": "Sea level",
+  "region": "Sheerness, Kent",
+  "unit": "mm",
+  "unit_long": "mm vs 1961–80",
+  "sources": [
+   "psmsl_newlyn_annual"
+  ],
+  "note": "Yearly mean sea level at the tide gauge, as a difference from its 1961–80 average. Relative to the land, which is still rising in Scotland and sinking in the south after the Ice Age.",
+  "file": "sea_sheerness.csv",
+  "zero": false,
+  "default": false,
+  "gap": 3
+ },
+ {
+  "id": "sea_nshields",
+  "theme": "Sea and coast",
+  "title": "Sea level",
+  "region": "North Shields, Tyne",
+  "unit": "mm",
+  "unit_long": "mm vs 1961–80",
+  "sources": [
+   "psmsl_newlyn_annual"
+  ],
+  "note": "Yearly mean sea level at the tide gauge, as a difference from its 1961–80 average. Relative to the land, which is still rising in Scotland and sinking in the south after the Ice Age.",
+  "file": "sea_nshields.csv",
+  "zero": false,
+  "default": false,
+  "gap": 3
+ },
+ {
+  "id": "sea_aberdeen",
+  "theme": "Sea and coast",
+  "title": "Sea level",
+  "region": "Aberdeen",
+  "unit": "mm",
+  "unit_long": "mm vs 1961–80",
+  "sources": [
+   "psmsl_newlyn_annual"
+  ],
+  "note": "Yearly mean sea level at the tide gauge, as a difference from its 1961–80 average. Relative to the land, which is still rising in Scotland and sinking in the south after the Ice Age.",
+  "file": "sea_aberdeen.csv",
+  "zero": false,
+  "default": false,
+  "gap": 3
+ },
+ {
+  "id": "sea_liverpool",
+  "theme": "Sea and coast",
+  "title": "Sea level",
+  "region": "Liverpool",
+  "unit": "mm",
+  "unit_long": "mm vs 1961–80",
+  "sources": [
+   "psmsl_newlyn_annual"
+  ],
+  "note": "Yearly mean sea level at the tide gauge, as a difference from its 1961–80 average. Relative to the land, which is still rising in Scotland and sinking in the south after the Ice Age.",
+  "file": "sea_liverpool.csv",
+  "zero": false,
+  "default": false,
+  "gap": 3
+ },
+ {
+  "id": "sea_dublin",
+  "theme": "Sea and coast",
+  "title": "Sea level",
+  "region": "Dublin",
+  "unit": "mm",
+  "unit_long": "mm vs 1961–80",
+  "sources": [
+   "psmsl_newlyn_annual"
+  ],
+  "note": "Yearly mean sea level at the tide gauge, as a difference from its 1961–80 average. Relative to the land, which is still rising in Scotland and sinking in the south after the Ice Age.",
+  "file": "sea_dublin.csv",
+  "zero": false,
+  "default": false,
+  "gap": 3
+ }
+]

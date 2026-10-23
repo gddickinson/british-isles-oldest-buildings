@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Change over time · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page change-page">
+  <h1>People and the land through time</h1>
+  <p class="prose">How the population, towns, farming, woodland, industry and climate of the British Isles changed
+    over the centuries, and how each shaped the others. Every graph names its source and licence; open
+    <b>notes</b> for how the figures were made and how sure they are. Early figures are estimates: dashed lines are
+    modelled, and shaded bands show the range the source gives. The same graphs open beside the map from
+    <b>📈 Change over time</b> on the <a href="{{ url_for('pages.explore_map') }}">Map</a>, where they follow the year slider.</p>
+  <div class="filter-row">
+    <select id="ch_range" aria-label="Period shown"></select>
+    <select id="ch_theme" aria-label="Theme"><option value="">All themes</option></select>
+  </div>
+  <div id="ch_body"></div>
+  <h2>Sources</h2>
+  <div id="ch_sources" class="ch-sources"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
+<script src="{{ url_for('static', filename='time_slider.js') }}"></script>
+<script src="{{ url_for('static', filename='change_charts.js') }}"></script>
+<script src="{{ url_for('static', filename='change_panel.js') }}"></script>
+<script src="{{ url_for('static', filename='change_page.js') }}"></script>
+{% endblock %}

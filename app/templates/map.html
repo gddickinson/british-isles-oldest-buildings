@@ -20,6 +20,8 @@
   </aside>
   <div class="explore-map"><div id="ex_map"></div>
     <div id="ex_time" class="time-slider"></div>
+    <div id="ex_change" class="change-panel" hidden></div>
+    <button id="ex_graphs" class="btn small ex-graphs" type="button" title="Graphs of people, land and climate through time">📈 Change over time</button>
     <button id="ex_toggle" class="btn small ex-toggle" type="button">Filters</button></div>
 </div>
 <div id="modal" class="modal hidden" aria-hidden="true">
@@ -31,6 +33,9 @@
 {% endblock %}
 {% block scripts %}
 <script src="{{ url_for('static', filename='detail.js') }}"></script>
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
 <script src="{{ url_for('static', filename='time_slider.js') }}"></script>
+<script src="{{ url_for('static', filename='change_charts.js') }}"></script>
+<script src="{{ url_for('static', filename='change_panel.js') }}"></script>
 <script src="{{ url_for('static', filename='map_page.js') }}"></script>
 {% endblock %}

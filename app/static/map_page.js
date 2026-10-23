@@ -3,7 +3,7 @@
 const E$ = (s) => document.querySelector(s);
 const exMap = L.map("ex_map", { preferCanvas: true, maxZoom: 18 });
 const exState = { groups: new Set(GROUPS.concat(["Other"])), places: new Set(), landmarks: false, early: false, year: null };
-let exBuildings = [], exPlaces = [], exTowns = null, exTime = null;
+let exBuildings = [], exPlaces = [], exTowns = null, exTime = null, exChange = null;
 const inTime = (r) => exState.year === null || TimeSlider.standing(r, exState.year);
 const bCluster = L.markerClusterGroup(Prefs.cluster({ chunkedLoading: true, maxClusterRadius: 40, disableClusteringAtZoom: 13 }));
 const pCluster = L.markerClusterGroup(Prefs.cluster({ chunkedLoading: true, maxClusterRadius: 50, disableClusteringAtZoom: 14,
@@ -40,6 +40,7 @@ async function loadBuildings() {
     <span class="dot" style="background:${groupColor(g)}"></span>${esc(g)} <em>${counts[g].toLocaleString()}</em></label>`).join("");
   drawBuildings();
   if (exTime) exTime.refresh();
+  exChange?.refresh();
 }
 
 async function drawPlaces() {
@@ -51,6 +52,7 @@ async function drawPlaces() {
   }
   renderPlaces();
   if (exTime) exTime.refresh();
+  exChange?.refresh();
 }
 
 function renderPlaces() {
@@ -139,6 +141,37 @@ function markFromUrl(search = location.search) {
   }
 }
 
+// "Change over time" graphs (change_panel.js), opened from the map's button; the catalogue's own series is
+// the dated buildings and places on the map, counted by the century they were begun in
+function catalogueSeries() {
+  const n = {};
+  exBuildings.concat(exPlaces).forEach((r) => {
+    if (r.year_start == null || r.year_start < -4000) return;
+    const c = Math.floor(r.year_start / 100) * 100;
+    n[c] = (n[c] || 0) + 1;
+  });
+  const now = new Date().getFullYear();
+  const points = [];
+  for (let c = -4000; c <= now; c += 100) points.push([Math.min(c + 50, now), n[c] || 0]);
+  return [{ id: "catalogue_begun", theme: "This catalogue", title: "Buildings and places on the map, begun per century",
+            unit: "per century", default: true, sources: [],
+            note: "Counted from the dated records shown on the map (their start year). Only what survives or was " +
+                  "recorded: far more was built than this, above all before 1500, so early centuries look emptier than they were." }];
+}
+function wireChange() {
+  const panel = E$("#ex_change"), btn = E$("#ex_graphs");
+  const show = (v) => {
+    panel.hidden = !v;
+    btn.hidden = v;
+    try { localStorage.setItem("bidb_change_panel", v ? "shown" : "hidden"); } catch (e) { /* private mode */ }
+    if (v && !exChange) exChange = ChangePanel.mount(panel, { local: catalogueSeries, year: exState.year, onClose: () => show(false) });
+  };
+  btn.addEventListener("click", () => show(true));
+  let saved = null;
+  try { saved = localStorage.getItem("bidb_change_panel"); } catch (e) { /* private mode */ }
+  if (saved === "shown") show(true);
+}
+
 startView();
 addBaseLayer(exMap, { control: true });
 exMap.addLayer(bCluster);
@@ -146,10 +179,11 @@ exMap.addLayer(pCluster);
 attachOutlines(exMap);
 wireExplore();
 exTime = TimeSlider.mount(E$("#ex_time"), {
-  onChange: (y) => { exState.year = y; drawBuildings(); renderPlaces(); },
+  onChange: (y) => { exState.year = y; drawBuildings(); renderPlaces(); exChange?.setYear(y); },
   counts: () => exBuildings.filter((b) => exState.groups.has(b.category_group || "Other")).map((b) => b.year_start)
     .concat(exPlaces.map((p) => p.year_start)),
 });
+wireChange();
 loadBuildings();
 markFromUrl();
 

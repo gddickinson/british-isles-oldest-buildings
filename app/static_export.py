@@ -18,7 +18,7 @@ from .server import app
 
 DIST = ROOT / "dist"
 PAGES = {"/": "index.html", "/map": "map.html", "/places": "places.html", "/people": "people.html", "/pronunciation": "pronunciation.html",
-         "/history": "history.html", "/oldest": "oldest.html",
+         "/history": "history.html", "/change": "change.html", "/oldest": "oldest.html",
          "/stats": "stats.html", "/tours": "tours.html", "/stories": "stories.html", "/quiz": "quiz.html", "/compare": "compare.html", "/data": "data.html",
          "/settings": "settings.html", "/help": "help.html"}
 EXTRACT_CHARS = 900          # keep the data file small enough to host

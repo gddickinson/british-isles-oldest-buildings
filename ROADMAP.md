@@ -518,20 +518,26 @@ way round (geology, soils, coast, climate shocks, plague and famine shaping wher
 Each graph and layer can be switched on and off, follows the Map page's year slider (T1), and cites its data
 source (and any analysis it repeats) with the licence. Only openly licensed data, or published figures quoted
 with their citation; estimates for early periods are marked as modelled, with their uncertainty where given.
-- [ ] E1 Research the sources (agents, 2026-10-22): per series and layer the publisher, citation, licence,
-      years covered, resolution, download URL and format → `data/curated/change_sources.json`; check each URL.
-- [ ] E2 Time series (national, England / Scotland / Wales / Ireland where possible): population (Domesday,
+- [x] E1 Research the sources (2026-10-22, three research agents; ~90 candidate sources): per series and layer the
+      publisher, citation, licence (+ quote), years, resolution, download URL (all HTTP 200 on 2026-10-22) →
+      `data/curated/change/sources.json`. Left out for licence: Bank of England millennium dataset (Broadberry et al.
+      population, GDP, wages), Wrigley–Schofield, de Vries, Armagh temperatures, SILSO sunspots, Shennan sea-level
+      database, Broadberry land use, Warde energy, enclosure acts. Gaps: open urban share before 1950, real wages,
+      enclosure, canal/railway length, iron, coal before 1853, Irish farming before 1926 (PDF only).
+- [x] E2 (2026-10-22: 50 series, 32 cited events, `bidb/change_series.py`) Time series (national, England / Scotland / Wales / Ireland where possible): population (Domesday,
       1377 poll tax, Wrigley–Schofield 1541–1871, censuses 1801/1821–), share living in towns, numbers of towns
       and cities by size, GDP per head (Bank of England "A millennium of macroeconomic data"), life expectancy,
       buildings and places begun per decade (from this catalogue), coal output, CO₂ emissions; Central England
       temperature (1659–), England and Wales rainfall (1766–), CO₂ and methane (ice cores + Mauna Loa), sea
       level (Newlyn, etc.), volcanic and solar forcing, woodland cover, farmland and livestock, notable floods,
       droughts, famines, plagues and storms (dated events with sources).
-- [ ] E3 Map layers by year (driven by the slider): HYDE gridded population, cropland, pasture and built-up
+- [ ] E3 (research done: HYDE 3.2 crops tested, 1,275 grids ≈ 25 MB gzipped, 4 key variables ≈ 6 MB; HYDE 3.3
+      needs a browser download; GHSL 1975/2020, CORINE 2000–2018, KK10, pollen cells, BGS/GSI bedrock, coalfields,
+      ALC prepared in the research scratchpad) Map layers by year (driven by the slider): HYDE gridded population, cropland, pasture and built-up
       area (10000 BC–today), GHSL built-up area (1975–), plus fixed layers that explain the pattern: bedrock and
       superficial geology (BGS), soils / agricultural land, coalfields, ancient woodland, land below sea level and
       lost coast; legend and source line on each.
-- [ ] E4 "Change over time" panel: stacked small graphs with a shared year axis and a marker at the slider's
+- [x] E4 (2026-10-22: panel on the Map page + page `/change`) "Change over time" panel: stacked small graphs with a shared year axis and a marker at the slider's
       year; each toggled, with units, uncertainty bands, and a source link; also a page of its own with notes.
 - [ ] E5 Analysis notes (cited): what the series show together (e.g. building booms against population and
       prosperity, the Little Ice Age and harvest failures, the Black Death, enclosure, the coal age and CO₂),

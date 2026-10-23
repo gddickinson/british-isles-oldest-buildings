@@ -543,3 +543,17 @@
 - Photos and floor plans (`bidb/photo_search.py`): a first name-only search matched namesakes (Villa Park, Denver) and
   street maps; reverted (39 plans, 26 photos) and redone: plans only inside the building's own Commons category tree,
   photos found by name only when geotagged within 3 km.
+
+## 2026-10-22 — Change over time (roadmap E1–E5)
+- Year slider can be hidden (× / 🕰 Through time, remembered per browser).
+- New roadmap section "People and environment through time" (E1–E5). Three research agents catalogued ~90 sources
+  (people and settlements, climate and atmosphere, land, farming, industry and geology), checked every download URL
+  and licence, and made tidy extracts (scratchpad, not in git). Curated into `data/curated/change/`: 50 openly
+  licensed series from 32 sources and 32 dated events, each with its citation. Unverified figures in the event
+  lists were checked (1665 bills of mortality 68,596; 1953 flood 307 dead in England) or reworded (1607 flood
+  500–2,000, Storegga "about 8,150 years ago"; the 1740–41 famine percentage dropped).
+- `bidb/change_series.py` → `app/static/data/change/series.json` (264 KB); `static/change_charts.js` (graphs),
+  `change_panel.js` (Map page panel), `change_page.js` + `/change` page; DATA_LICENSE lists every source.
+- Left out for licence: Bank of England millennium data (Broadberry et al.), Armagh, SILSO, Shennan sea-level points.
+- The laptop disk was nearly full (1.6 GB free; not this project's files); removed old scratch copies (~0.6 GB).
+- Next: E3 map layers (HYDE grids per period with the slider, GHSL, CORINE, geology, coalfields), E5 notes.

@@ -125,6 +125,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `osgrid.py` | Ordnance Survey and Irish grid references → WGS84 lat/lon (Helmert) | `to_latlon`, `parse` |
 | `visiting.py` | CLI/build stage: opening hours, fee, operator, wheelchair, website from OSM objects tagged wikidata=* → table `visiting` | `run`, `fetch`, `for_record` |
 | `naptan.py` | CLI/build stage: NaPTAN (DfT, OGL) active bus stops and ferry terminals → table `stops`; `near` gives a point's nearest bus stops and ferry terminal for "Getting there" (Great Britain only) | `run`, `near`, `rows` |
+| `change_series.py` | Roadmap E1–E5, people and the environment through time: checks the curated series, sources and events in `data/curated/change/` (every series and event cited; every source with a licence) and writes `app/static/data/change/series.json` for the graphs (`python -m bidb.change_series`) | `build`, `check`, `read_points`, `THEMES` |
 | `commons_plans.py` | Floor plans from Commons "Plans of <building>" categories matched via P373 | `plans`, `plan_categories`, `best_file` |
 
 ## Package `app/` (GUI)
@@ -147,7 +148,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `tours_api.py` | `/api/tours` (mode, theme, nation, q), `/api/tour/<id>`, `/api/route` (builder routes via OSRM), `/api/tour_candidates` (scored stops near a point) |
 | `quiz_api.py` | `/api/quiz` (photographed buildings with a well-supported date), `/api/quiz_pool` (names said unlike their spelling, stories naming their place, history events, researched oldest-list entries; `pool` also written to `data/quiz.json` for the hosted copy) |
 | `pron_api.py` | `/api/pron/<id>` (record + town), `/api/pronunciations` (guide), `/api/pronunciations/varieties`, `/api/pronunciations/coverage` |
-| `pages.py` | HTML routes: `/`, `/building/<id>`, `/map`, `/places`, `/people`, `/history`, `/oldest`, `/stats`, `/compare`, `/data`, `/pronunciation`, `/stories`, `/tours` (`/trip` → tours), `/quiz`, `/sw.js`, `/setup` (first run), `/settings`, `/help` (+ `/help/img/<name>` from `docs/img`); `STATIC_MODE` flag |
+| `pages.py` | HTML routes: `/`, `/building/<id>`, `/map`, `/places`, `/people`, `/history`, `/change`, `/oldest`, `/stats`, `/compare`, `/data`, `/pronunciation`, `/stories`, `/tours` (`/trip` → tours), `/quiz`, `/sw.js`, `/setup` (first run), `/settings`, `/help` (+ `/help/img/<name>` from `docs/img`); `STATIC_MODE` flag |
 | `static_export.py` | `python -m app.static_export` → `dist/` static site (data split into ≤9 MB JSON shards; thumbnails, detail-only fields and outlines in small files loaded on demand: `_split_lazy`, row keys `t`/`d`) |
 | `../serve_dist.sh` | Serve `dist/` on the home network from this or another always-on machine (`--to HOST` copies it there over ssh, checks free space) |
 | `static_places.py` | Static export of places and people: full rows in 16 shards by a hash of the id (`shard_of`, mirrored in static_places.js), light rows in 1° × 2° location cells `data/pcells/` + `places_index.json` (`write_index`) |
@@ -194,6 +195,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `static/historic.js` | Historic map chooser with opacity on the pane (`Historic.bind`); falls back to the bundled tiles when a map's server has not answered in 8 s |
 | `static/outlines.js` | Building outlines on zoomed-in maps (`attachOutlines`) |
 | `static/map_page.js` | Map page: buildings by group, places layers, town finder, year slider; `?lat&lon&z&mark&places` from "Show on the map" (`markFromUrl`) |
+| `static/change_charts.js`, `change_panel.js`, `change_page.js` | "Change over time": small graphs (one series each, slider's year scale extended before 4000 BC, uncertainty bands, dashed when modelled, marker at the slider's year, hover values; `ChangeCharts`), the toggle-able panel beside the map (`ChangePanel`: choose graphs, period, remembered per browser; plus the catalogue's own records begun per century) and the page `/change` with notes, tables of values, events and full citations |
 | `static/time_slider.js` | `TimeSlider`: "Through time" on the Map page: year slider (non-linear scale), histogram of start years, Play, "Map of the time" (historic map of the era via the layer switcher), `standing` (begun by the year, not yet closed) |
 | `static/style.css`, `pages.css`, `places.css`, `map.css`, `ui.css`, `settings.css`, `pron.css`, `tours.css` | Tokens (light/dark, palette), layout, page styles; toolbar/menus/overlays/print; settings and help pages |
 
@@ -222,6 +224,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 - `data/curated/underground_sites.json` — notable underground works outside the queried classes; stations open despite a closing date
 - `data/curated/burhs.json` — the burhs of the Burghal Hidage (hides, Wikipedia titles)
 - `data/curated/oldest_nature.json`, `oldest_graves.json`, `oldest_trade.json`, `oldest_infra.json` — researched "oldest" lists (bidb.oldest_lists)
+- `data/curated/change/` — change over time: `sources.json` (citation, licence + quote, URLs, date checked), `series.json` (series metadata), `data/<id>.csv` (year,value[,low,high]), `events.json` (dated events with citations)
 - `data/curated/legendary_places.json` — places of legend placed where tradition puts them (claims, sources)
 - `LICENSE` (MIT, code), `DATA_LICENSE.md` (per-source data licences and credits, third-party code), `CONTRIBUTING.md`, `CITATION.cff`
 - `settings.json` — per-computer data locations, browser path and `share_on_network` (git-ignored; written by Settings, setup page, `run.sh --data`)

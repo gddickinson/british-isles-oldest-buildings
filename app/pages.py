@@ -46,6 +46,11 @@ def history():
     return render_template("history.html", page="history")
 
 
+@bp.route("/change")
+def change():
+    return render_template("change.html", page="change")
+
+
 @bp.route("/oldest")
 def oldest():
     return render_template("oldest.html", page="oldest")

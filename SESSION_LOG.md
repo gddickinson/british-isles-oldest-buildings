@@ -485,3 +485,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Caught on the way: two details I had written from memory (Garraway's "rebuilt; closed 1866", the docks' 1967
   closing) were checked against the articles; the first had no source and was removed, the second is now quoted.
 - Next: C2b (tea imports and duty graph from the Statistical Abstract scans), then C3.
+
+## 2026-10-23 — C2b: tea drunk per person, 1864–1938
+- OCR text of every Statistical Abstract volume to 1975 (115 items, ~180 MB) cached in `<cache>/stat_abstract/`
+  (with each item's hOCR search text and page index, so a regex finds the page; page images by leaf).
+- The per-head table ("retained for home consumption per head of the total population") read from 13 page images
+  in six editions; every figure compared with the OCR digits and, where editions overlap (1864–70, 1876–83,
+  1891–98, 1910–14, 1924–37), with another edition. Editions revise earlier years by up to 0.03 lb after a census
+  (1878: 4.66 → 4.64; 1897: 5.81 → 5.79); the latest edition read is used.
+- New graph "Tea drunk per person" (Prosperity and work; source `stat_abstract_uk`): 3.00 lb in 1864, 5.02 in
+  1887, 6.07 in 1900, 6.89 in 1914, 8.68 in 1919, 10.53 in 1932, 10.18 in 1938. None for 1915–18 ("cannot be
+  stated"); Great Britain and Northern Ireland from 1923; 1929–32 duty-free (retained imports).
+- The 1846–1865 edition has no per-head table (totals only), so the official per-head series starts in 1864;
+  earlier years, the 18th century, duty, prices and the modern end are left as C2d.
+- Next: C2d or C3 (guilds, exchanges and trading houses).

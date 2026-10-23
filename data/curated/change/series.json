@@ -1209,6 +1209,20 @@
   "note": "Fairs recorded by each date."
  },
  {
+  "id": "tea_per_head_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea drunk per person",
+  "region": "United Kingdom",
+  "unit": "lb",
+  "unit_long": "pounds of tea retained for home consumption per person a year",
+  "label": "Tea per head (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_per_head_uk.csv",
+  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used."
+ },
+ {
   "id": "homes_eng_est",
   "theme": "People and settlements",
   "title": "Homes in England, estimated before 1801",

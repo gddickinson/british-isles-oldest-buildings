@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 94
+- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 95
   series, 47 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -35,9 +35,16 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       bidb.oldest_lists (places in "Markets & trade", 18 evidence claims, section on the Oldest page); 15 dated tea
       events 1657–1998 in `change/events.json` (theme Prosperity and work, `topic: tea`, citation with quote). All 47
       quotes found by `bidb.evidence --check`. tea_explorer's 1873 Ceylon date corrected to 1875 by the source.
-- [ ] C2b Tea imports and duty as a graph: Statistical Abstract scans c.1840–1938 (figures transcribed by hand,
-      page per value), HMRC HS 0902 for the modern end, Schumpeter/Mitchell figures for the 18th century as quoted
-      estimates; smuggling estimates before 1784 (4–7.5 million lb a year) as published estimates.
+- [x] C2b (2026-10-23) Graph "Tea drunk per person", UK 1864–1938 (lb a year), read from the page images of six
+      Statistical Abstract editions (edition, leaf, page per figure in `change/data/tea_per_head_uk.csv`; each
+      checked against the OCR and the overlapping years of another edition; the latest edition read is used, as
+      editions revised earlier years by up to 0.03 lb after each census). 3.0 lb in 1864, 6.9 in 1914, 10.2 in 1938;
+      none for 1915–18; Ireland out from 1923.
+- [ ] C2d More tea figures: before 1864 (the 1846–1865 edition has totals only: divide by census population, or
+      quote Mitchell/Schumpeter per figure), the 18th-century imports (1.2 million lb 1721 → 24 million 1801, as
+      quoted estimates) and smuggling (4–7.5 million lb before 1784), the duty per lb and average import price
+      (Abstract "Average prices" table: 9.36d a lb 1897 → 7.24d 1904), and the modern end (HMRC HS 0902, OGL;
+      after 1938 the Abstracts to 1975 are also out of copyright).
 - [x] C2c (2026-10-23) Tea places, kind `tea_trade` "Coffee house, auction, dock or ship of the tea trade": Garraway's
       (1657), Tom's Coffee House where Twining began (1706), East India House (1648–1861, auctions from 1679), the
       London Commercial Sale Rooms in Mincing Lane (1834–1998), East India Docks (stays in Maritime heritage), Cutty

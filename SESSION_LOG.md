@@ -614,3 +614,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   1908–22, duty before 1874 and after 1938.
 - Tests 142 OK; ui_check `change_tea` also requires both new graphs. Hosted copy not updated.
 - Next: C2d4, C2d3b, or C3 (guilds, exchanges and trading houses).
+
+## 2026-10-23 (night) — C2d4: tea after 1974, tea rationing
+- Defra Family Food datasets, "UK - household purchases" (UKHHcons_17Sep26.ods, OGL), sheet Household_quantity, code
+  304 Tea: 51 years of g a person a week, 1974–2024/25 (calendar years to 2000 and 2006–2015, financial years shown at
+  the year they begin; 2015-16 left out as it overlaps 2015). Converted to lb a year (× 365.25/7 / 453.59) →
+  `change/data/tea_household_uk.csv` (published grams kept) → series `tea_household_uk`, a third line on "Tea drunk per
+  person". 67.6 g in 1974 = 7.78 lb, matching MAFF's supplies figure (7.8) for the same year; 36.2 g (4.2 lb) in 2000;
+  20.7 g (2.4 lb) in 2024-25. Household purchases only (no eating out); Defra notes diary surveys under-report.
+- Event "Tea rationed" (1940–1952), source `hansard_tea_rationing` (Open Parliament Licence): HC Deb 18 July 1940
+  vol 363 c471 (two ounces a week), HC Deb 22 October 1952 vol 505 c1013 ("since tea has been de-rationed"). Exact
+  start and end days are not in the passages found (secondary sources: 8 July 1940; 3 or 5 October 1952), so the text
+  says July 1940 and autumn 1952.
+- 101 series, 48 events, 77 sources. Tests 142 OK; ui_check `change_tea` also requires "Family Food" and "Tea rationed".
+  Graph checked in a screenshot. Hosted copy not updated.
+- Next: C3 (guilds, exchanges and trading houses), or C2d3b; C2d2b2 still needs the books.

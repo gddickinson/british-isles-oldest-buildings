@@ -705,5 +705,28 @@
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
   "used": "Tea supplies per head, 1941-1974, read from the page images (edition, leaf and page per figure in data/tea_supplies_uk.csv); where editions differ, the latest edition read is used",
   "checked": "2026-10-23, each tea row read from the scan and again from an enlarged crop of the row, and compared with the overlapping years of another edition"
+ },
+ "defra_family_food": {
+  "short": "Defra, Family Food: UK household purchases 1974–",
+  "publisher": "Defra (Family Food statistics)",
+  "citation": "Department for Environment, Food & Rural Affairs (2026). UK - household purchases (UKHHcons_17Sep26.ods), sheet Household_quantity, code 304 'Tea', average grams per person per week, 1974 to 2024-25 (adjusted National Food Survey figures 1974-2000; Expenditure and Food Survey / Living Costs and Food Survey from 2001-02), in 'Family food datasets'. Published 17 September 2026.",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "GOV.UK: 'All content is available under the Open Government Licence v3.0, except where otherwise stated'",
+  "url": "https://www.gov.uk/government/statistical-data-sets/family-food-datasets",
+  "download_url": "https://assets.publishing.service.gov.uk/media/6aa270e362ec7fe7bedf52c5/UKHHcons_17Sep26.ods",
+  "used": "Tea bought for the home per person, 1974-2024/25, converted from grams a week to lb a year (x 365.25/7 / 453.59237); data/tea_household_uk.csv keeps the published grams",
+  "checked": "2026-10-23, downloaded and read (HTTP 200); the cover sheet warns that diary surveys under-report purchases"
+ },
+ "hansard_tea_rationing": {
+  "short": "Hansard, tea rationing 1940 and 1952",
+  "publisher": "UK Parliament",
+  "citation": "House of Commons Debates: HC Deb 18 July 1940 vol 363 c471 (Ministry of Food, Mr Horabin); HC Deb 22 October 1952 vol 505 c1013 (Ministry of Food, Tea, Major Lloyd George).",
+  "licence": "Open Parliament Licence v3.0",
+  "licence_url": "https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/",
+  "licence_quote": "Hansard pages carry '© UK Parliament'; Parliamentary copyright material is licensed under the Open Parliament Licence",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1952/oct/22/tea",
+  "used": "The tea rationing event (1940-1952), quoted",
+  "checked": "2026-10-23, both passages read in Hansard (historic-hansard and the Hansard search API)"
  }
 }

@@ -1234,9 +1234,10 @@
    "stat_abstract_uk"
   ],
   "file": "tea_per_head_uk.csv",
-  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade; the first per-head table (No. 14, covering 1852-1866) starts in 1852. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used. The 1938 figure (10.18 lb) is shown as printed but does not agree with the same edition's total retained (431.8 million lb), which gives about 9.1 lb with the population implied by the 1933-37 figures; no later edition reprints the table. From 1941 the Ministry of Food's (later MAFF's) estimated supplies per head are shown as a second line: a different measure (supplies moving into consumption; per head of the civilian population to 1947), which gives 9.3 lb for 1934-38 against 9.5 here. The Abstracts read give no figures for 1939-40.",
+  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade; the first per-head table (No. 14, covering 1852-1866) starts in 1852. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used. The 1938 figure (10.18 lb) is shown as printed but does not agree with the same edition's total retained (431.8 million lb), which gives about 9.1 lb with the population implied by the 1933-37 figures; no later edition reprints the table. From 1941 the Ministry of Food's (later MAFF's) estimated supplies per head are shown as a second line: a different measure (supplies moving into consumption; per head of the civilian population to 1947), which gives 9.3 lb for 1934-38 against 9.5 here. The Abstracts read give no figures for 1939-40. From 1974 a third line gives the tea bought for the home per person from Defra's Family Food surveys (the National Food Survey to 2000): a third measure, leaving out tea drunk outside the home, but it starts at 7.8 lb in 1974, the same as the supplies estimate, and falls to 4.2 lb in 2000 and 2.4 lb in 2024-25. Tea was rationed from July 1940 (two ounces a week, about 6.5 lb a year) to the autumn of 1952.",
   "models": [
-   "tea_supplies_uk"
+   "tea_supplies_uk",
+   "tea_household_uk"
   ]
  },
  {
@@ -1253,6 +1254,21 @@
   "file": "tea_supplies_uk.csv",
   "hidden": true,
   "note": "Estimated supplies of tea moving into consumption per head of population, from the Ministry of Food (the Ministry of Agriculture, Fisheries and Food in the 1960 and later editions), as printed in the Annual Abstract of Statistics. Per head of the civilian population 1941-47; 1964-74 revised to the 1971 census. Editions revised single years by 0.1-0.2 lb; the latest edition read is used."
+ },
+ {
+  "id": "tea_household_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea bought for the home per person",
+  "region": "United Kingdom",
+  "unit": "lb",
+  "unit_long": "pounds of tea bought for the home per person a year",
+  "label": "Tea bought for the home (Defra Family Food)",
+  "sources": [
+   "defra_family_food"
+  ],
+  "file": "tea_household_uk.csv",
+  "hidden": true,
+  "note": "Tea brought into the home per person, from Defra's Family Food datasets: the National Food Survey (adjusted figures) for 1974-2000, then the Expenditure and Food Survey and the Living Costs and Food Survey, published in grams a person a week and shown here in lb a year (grams x 365.25/7 / 453.59). Tea bought and drunk outside the home is not included, and Defra warns that diary surveys under-report purchases. Financial years from 2001-02 are shown at the year they begin; 2006-2015 are calendar years (the financial year 2015-16 is left out, as it overlaps 2015). 67.6 g a week in 1974 (7.8 lb a year, the same as MAFF's supplies for 1974), 36.2 g in 2000 (4.2 lb), 20.7 g in 2024-25 (2.4 lb)."
  },
  {
   "id": "tea_price_uk",

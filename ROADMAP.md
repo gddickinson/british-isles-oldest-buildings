@@ -5,8 +5,8 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 100
-  series, 47 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
+- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 101
+  series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
   `dist/` before and after `python -m app.static_export`, batches under 64 MB, removals (null) first.
@@ -69,15 +69,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       1930s editions; a different measure), prices by origin (India and Ceylon, China) 1908–1922 (Nos. 67–68), the duty
       before 1874 (the Abstract lists the 1865 cut without rates; needs the tariff Acts or another quoted source) and
       after 1938 (wartime editions).
-- [ ] C2d4 Tea after 1974: the Abstracts to 1975 are read; later years from MAFF/Defra's National Food Survey or
-      HMRC HS 0902 (OGL), each with its definition; a citable source for tea rationing (1940–52).
+- [x] C2d4 (2026-10-23) Tea after 1974: Defra's Family Food "UK - household purchases" (OGL; code 304 Tea, g a person a
+      week, National Food Survey 1974–2000, then EFS/LCFS to 2024-25) → series `tea_household_uk` (lb a year), a third
+      line on "Tea drunk per person": 7.8 lb in 1974 (MAFF supplies: 7.8), 4.2 in 2000, 2.4 in 2024-25; tea drunk away
+      from home not included. Event "Tea rationed" 1940–1952 cited to Hansard (18 July 1940 c471: two ounces a week;
+      22 Oct 1952 c1013: "since tea has been de-rationed"). Neither passage gives the first or last day (secondary
+      sources say 8 July 1940 and 3 or 5 October 1952), so the event says "July 1940" and "autumn 1952". Not used:
+      HMRC HS 0902 imports (a fourth measure), Defra's eating-out tea (in cups, not weight).
 - [x] C2c (2026-10-23) Tea places, kind `tea_trade` "Coffee house, auction, dock or ship of the tea trade": Garraway's
       (1657), Tom's Coffee House where Twining began (1706), East India House (1648–1861, auctions from 1679), the
       London Commercial Sale Rooms in Mincing Lane (1834–1998), East India Docks (stays in Maritime heritage), Cutty
       Sark (stays a museum ship); tea rooms: Miss Cranston's Crown Luncheon Room (1878), the Willow Tearooms (1903,
       a catalogue building). Left for later: the Sultaness Head (no article), Domus Dei (Catherine's tea, 1662; no
       article found), the Horniman Museum (an era_places place; not taken into the list); tea rationing 1940–52
-      still needs a citable source.
+      now cited (C2d4).
 - [ ] C3 Guilds, exchanges and trading houses as places (kinds in "Markets & trade"): guildhalls and livery halls,
       merchant adventurers' and merchants' halls, cloth and wool halls, exchanges and stock exchanges, coffee
       houses, counting houses, trading-company headquarters and warehouses, banks with founding dates; the

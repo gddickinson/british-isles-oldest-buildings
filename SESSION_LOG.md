@@ -472,3 +472,16 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests: oldest-list ids unique apart from `listed_in` entries, which must resolve (140 tests OK); ui_check pages
   `oldest_tea`, `places_tea`, `change_tea`. Restarted the GUI server on port 5050 to load the new list.
 - Next: C2b (tea imports and duty graph) or C2c (tea places).
+
+## 2026-10-23 — C2c: tea places
+- Tea list gained a third kind, `tea_trade` (coffee houses, auctions, docks and ships of the tea trade): Garraway's
+  Coffee House (1657; burnt 1748), Tom's Coffee House in Devereux Court (Twining's start, 1706), East India House
+  (1648–1861; tea auctions in Leadenhall Street from 1679), the London Commercial Sale Rooms in Mincing Lane
+  (1834–1998), East India Docks (1806–1967) and Cutty Sark (1869); tea rooms Miss Cranston's Crown Luncheon Room
+  (Argyle Street, 1878) and the Willow Tearooms (1903). 28 entries in `tea.json`, 24 claims; all quotes found.
+- East India Docks and Cutty Sark stay in Maritime heritage (protected kinds) and the Willow Tearooms stays a
+  catalogue building; all three show in the tea list. The Horniman Museum is an era_places place (not protected), so it
+  was not added: it would have moved into Markets & trade.
+- Caught on the way: two details I had written from memory (Garraway's "rebuilt; closed 1866", the docks' 1967
+  closing) were checked against the articles; the first had no source and was removed, the second is now quoted.
+- Next: C2b (tea imports and duty graph from the Statistical Abstract scans), then C3.

@@ -38,7 +38,7 @@ PAGES = {
     "places_sport": ("/places?kind_group=Sport+%26+leisure", r"data-place="),
     "oldest_sport": ("/oldest", r"(?s)Oldest sporting grounds and clubs.*Sheffield"),
     "oldest_civic": ("/oldest", r"(?s)Oldest schools, hospitals and public services.*St Peter"),
-    "oldest_tea": ("/oldest", r"(?s)The tea trade: oldest merchants.*Horniman"),
+    "oldest_tea": ("/oldest", r"(?s)The tea trade: merchants, firms.*Horniman.*Garraway"),
     "places_tea": ("/places?kind_label=Tea+merchant+or+firm", r"(?s)data-place=.*Horniman"),
     "change_tea": ("/change", r"Commutation Act cuts the tea duty"),
     "places_institutions": ("/places?kind_group=Public+institutions", r"data-place="),

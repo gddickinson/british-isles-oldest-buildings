@@ -1,5 +1,5 @@
 {
- "about": "The tea trade of the isles (roadmap C2, 2026-10-23): tea merchants, firms and tea rooms placed at their first shop or works where the source names it, each with sources and exact quotes (checked by python -m bidb.evidence --check). Leads came from George's tea_explorer project; every fact here is from the cited source. Entries with listed_in are kept in that list and only shown here.",
+ "about": "The tea trade of the isles (roadmap C2, 2026-10-23): tea merchants, firms and tea rooms placed at their first shop, and the coffee houses, auctions, docks and ships of the trade, or works where the source names it, each with sources and exact quotes (checked by python -m bidb.evidence --check). Leads came from George's tea_explorer project; every fact here is from the cited source. Entries with listed_in are kept in that list and only shown here.",
  "entries": [
   {
    "category": "Tea merchant or firm",
@@ -591,6 +591,39 @@
   },
   {
    "category": "Tea shop or tea room",
+   "name": "Miss Cranston's Crown Luncheon Room",
+   "qid": null,
+   "wikipedia_title": "Catherine Cranston",
+   "lat": 55.85818,
+   "lon": -4.2538,
+   "nation": "Scotland",
+   "location": "Argyle Street, Glasgow (No. 114; placed at today's No. 114)",
+   "age_text": "1878; whole building by 1898",
+   "year": 1878,
+   "claim": "Kate Cranston's first tea room, the start of Glasgow's art tea rooms",
+   "evidence": "Kate Cranston opened her first tea room, the Crown Luncheon Room, in Argyle Street in 1878 and took over the whole building at 114 Argyle Street by 1898; her chain of four ended with the Willow Tearooms (1903).",
+   "sources": [
+    {
+     "title": "Wikipedia: Catherine Cranston",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Catherine_Cranston",
+     "locator": "article text",
+     "quote": "In 1878 Miss Kate Cranston opened her first tearoom, the Crown Luncheon Room, on Argyle Street, Glasgow."
+    },
+    {
+     "title": "Wikipedia: Catherine Cranston",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Catherine_Cranston",
+     "locator": "article text",
+     "quote": "Kate Cranston expanded her first tearoom to take over the whole building at 114 Argyle Street"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea shop or tea room",
    "name": "Lyons teashops",
    "qid": "Q6106384",
    "wikipedia_title": "J. Lyons and Co.",
@@ -624,6 +657,39 @@
   },
   {
    "category": "Tea shop or tea room",
+   "name": "Willow Tearooms",
+   "qid": "Q1537781",
+   "wikipedia_title": "Willow Tearooms",
+   "lat": 55.86503,
+   "lon": -4.26116,
+   "nation": "Scotland",
+   "location": "217 Sauchiehall Street, Glasgow",
+   "age_text": "opened October 1903",
+   "year": 1903,
+   "claim": "Charles Rennie Mackintosh's tea rooms for Miss Cranston, the only ones surviving",
+   "evidence": "Designed by Charles Rennie Mackintosh for Kate Cranston and opened in October 1903; the only surviving tea rooms he designed for her.",
+   "sources": [
+    {
+     "title": "Wikipedia: Willow Tearooms",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Willow_Tearooms",
+     "locator": "article text",
+     "quote": "which opened for business in October 1903"
+    },
+    {
+     "title": "Wikipedia: Willow Tearooms",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Willow_Tearooms",
+     "locator": "article text",
+     "quote": "are the only surviving tearooms designed by Mackintosh for local entrepreneur and patron Miss Catherine Cranston"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea shop or tea room",
    "name": "Bettys Café Tea Rooms",
    "qid": null,
    "wikipedia_title": "Bettys and Taylors of Harrogate",
@@ -643,6 +709,252 @@
      "url": "https://en.wikipedia.org/wiki/Bettys_and_Taylors_of_Harrogate",
      "locator": "article text",
      "quote": "was opened in Harrogate by the Swiss confectioner Frederick Belmont in 1919"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Coffee house, auction, dock or ship of the tea trade",
+   "name": "East India House",
+   "qid": "Q866804",
+   "wikipedia_title": "East India House",
+   "lat": 51.513,
+   "lon": -0.082,
+   "nation": "England",
+   "location": "Leadenhall Street, City of London (site of the Lloyd's building)",
+   "age_text": "Company there from 1648; rebuilt 1726-29 and 1796-1800; demolished 1861",
+   "year": 1648,
+   "claim": "the East India Company's headquarters, where the London tea auctions began",
+   "evidence": "The East India Company occupied Craven House in Leadenhall Street from 1648 and rebuilt it in 1726-29 and 1796-1800; its tea auctions, from 1679, were held in Leadenhall Street. Vacated in 1860 and demolished in 1861; the Lloyd's building stands on the site.",
+   "sources": [
+    {
+     "title": "Wikipedia: East India House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_India_House",
+     "locator": "article text",
+     "quote": "the adjoining property, Craven House"
+    },
+    {
+     "title": "Wikipedia: East India House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_India_House",
+     "locator": "article text",
+     "quote": "It was demolished in 1861."
+    },
+    {
+     "title": "Wikipedia: London Tea Auction",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Tea_Auction",
+     "locator": "article text",
+     "quote": "The East India Company held the first auction in Leadenhall Street."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Coffee house, auction, dock or ship of the tea trade",
+   "name": "Garraway's Coffee House",
+   "qid": "Q104841960",
+   "wikipedia_title": "Garraway's Coffee House",
+   "lat": 51.5129,
+   "lon": -0.087,
+   "nation": "England",
+   "location": "Exchange Alley, City of London",
+   "age_text": "tea sold here from 1657; burnt in the Exchange Alley fire of 1748",
+   "year": 1657,
+   "claim": "the first place in England to sell tea",
+   "evidence": "Thomas Garway sold tea here from 1657, the first place in England to do so; tea merchants used the house, as did traders in shares and commodities. The site is in Exchange (Change) Alley off Cornhill.",
+   "sources": [
+    {
+     "title": "Wikipedia: Garraway's Coffee House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Garraway's_Coffee_House",
+     "locator": "article text",
+     "quote": "when he began to sell it here in 1657 it became the first place in England to do so"
+    },
+    {
+     "title": "Wikipedia: Garraway's Coffee House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Garraway's_Coffee_House",
+     "locator": "article text",
+     "quote": "with tea merchants patronising Garraway's"
+    },
+    {
+     "title": "Wikipedia: Exchange Alley",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exchange_Alley",
+     "locator": "article text",
+     "quote": "In 1748, a fire started at a peruke-maker's in Exchange Alley"
+    },
+    {
+     "title": "Wikipedia: Exchange Alley",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exchange_Alley",
+     "locator": "article text",
+     "quote": "especially Jonathan's and Garraway's, became an early venue for the lively trading of shares and commodities"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Coffee house, auction, dock or ship of the tea trade",
+   "name": "Tom's Coffee House, Devereux Court",
+   "qid": null,
+   "wikipedia_title": "Twinings Museum",
+   "lat": 51.51295,
+   "lon": -0.11255,
+   "nation": "England",
+   "location": "Devereux Court, off the Strand, London",
+   "age_text": "bought by Thomas Twining 1706; Twining at 216 Strand by 1717",
+   "year": 1706,
+   "claim": "where Thomas Twining began selling tea",
+   "evidence": "Thomas Twining bought Tom's Coffee House in Devereux Court in 1706 and sold tea there, dry and by the cup, before expanding into the Strand premises (by 1717 at 216 Strand). Placed in Devereux Court.",
+   "sources": [
+    {
+     "title": "Wikipedia: Twinings Museum",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Twinings_Museum",
+     "locator": "article text",
+     "quote": "Twining purchased Tom's Coffee Shop, in Devereux Court, off the Strand, in 1706."
+    },
+    {
+     "title": "Wikipedia: Twinings Museum",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Twinings_Museum",
+     "locator": "article text",
+     "quote": "By 1717, Twining was trading at 216 Strand, at the sign of the Golden Lyon, where the business remains."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Coffee house, auction, dock or ship of the tea trade",
+   "name": "East India Docks",
+   "qid": "Q1277908",
+   "wikipedia_title": "East India Docks",
+   "lat": 51.50811,
+   "lon": 0.00097,
+   "nation": "England",
+   "location": "Blackwall, London",
+   "age_text": "opened 1806; closed 1967",
+   "year": 1806,
+   "claim": "the East India Company's docks, rich on tea",
+   "evidence": "Built under the East India Docks Act 1803 and opened in 1806; the docks prospered on tea, spices, indigo, silk and carpets, the tea trade alone worth £30 million a year.",
+   "sources": [
+    {
+     "title": "Wikipedia: East India Docks",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_India_Docks",
+     "locator": "article text",
+     "quote": "the sluices of its floating gate opened on 26 July 1806"
+    },
+    {
+     "title": "Wikipedia: East India Docks",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_India_Docks",
+     "locator": "article text",
+     "quote": "The tea trade alone was worth £30 million a year."
+    },
+    {
+     "title": "Wikipedia: East India Docks",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_India_Docks",
+     "locator": "article text",
+     "quote": "In 1967 the East India Docks were the first of the London docks to close."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Coffee house, auction, dock or ship of the tea trade",
+   "name": "London Commercial Sale Rooms, Mincing Lane",
+   "qid": "Q6863364",
+   "wikipedia_title": "Mincing Lane",
+   "lat": 51.51083,
+   "lon": -0.08167,
+   "nation": "England",
+   "location": "Mincing Lane, City of London",
+   "age_text": "tea auctions here from 1834 to 1998 (last sale 29 June 1998)",
+   "year": 1834,
+   "claim": "the world centre of the tea trade in the late 19th century",
+   "evidence": "When the East India Company's trade ended in 1834, the tea auctions moved to the London Commercial Salerooms in Mincing Lane, then the world's leading centre for tea and spice trading; the London Tea Auction ended on 29 June 1998.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mincing Lane",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mincing_Lane",
+     "locator": "article text",
+     "quote": "tea auctions were held in the London Commercial Salerooms on Mincing Lane"
+    },
+    {
+     "title": "Wikipedia: Mincing Lane",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mincing_Lane",
+     "locator": "article text",
+     "quote": "In the late 19th century it was the world's leading centre for tea and spice trading."
+    },
+    {
+     "title": "Wikipedia: London Tea Auction",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Tea_Auction",
+     "locator": "article text",
+     "quote": "from 1679 until 29 June 1998"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Coffee house, auction, dock or ship of the tea trade",
+   "name": "Cutty Sark",
+   "qid": "Q171255",
+   "wikipedia_title": "Cutty Sark",
+   "lat": 51.48278,
+   "lon": -0.00972,
+   "nation": "England",
+   "location": "Greenwich, London (dry dock since 1954)",
+   "age_text": "launched 1869 at Dumbarton; eight tea seasons from 1870",
+   "year": 1869,
+   "claim": "one of the last tea clippers, the only one surviving",
+   "evidence": "Built at Dumbarton in 1869 for the China tea trade and launched on 22 November 1869; she sailed eight tea seasons before steamers through the Suez Canal took the trade, and has been in dry dock at Greenwich since 1954.",
+   "sources": [
+    {
+     "title": "Wikipedia: Cutty Sark",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cutty_Sark",
+     "locator": "article text",
+     "quote": "one of the last tea clippers to be built and one of the fastest"
+    },
+    {
+     "title": "Wikipedia: Cutty Sark",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cutty_Sark",
+     "locator": "article text",
+     "quote": "Cutty Sark sailed in eight \"tea seasons\", from London to China and back."
+    },
+    {
+     "title": "Wikipedia: Cutty Sark",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cutty_Sark",
+     "locator": "article text",
+     "quote": "in 1954 she was moved to a custom-built dry dock at Greenwich"
     }
    ],
    "verdict": "kept"

@@ -15,7 +15,8 @@ age claim, how well it is established, sources with exact quotes and a verdict):
             -> "Infrastructure & utilities" (with bidb.trade_works)
   sport   - oldest football, rugby, cricket and golf clubs and grounds, racecourses, stadiums, other venues and
             clubs -> "Sport & leisure" (with bidb.sports)
-  tea     - the tea trade (roadmap C2): tea merchants and firms, tea shops and tea rooms, oldest first
+  tea     - the tea trade (roadmap C2): tea merchants and firms, tea shops and tea rooms, coffee houses, auctions,
+            docks and ships, oldest first
             (`data/curated/trade/tea.json`) -> "Markets & trade"; an entry with `listed_in` (Twinings, Fortnum &
             Mason) stays a place of that list and is only shown here
   civic   - oldest schools, universities, hospitals, post offices, courts, police and fire stations, town halls
@@ -61,9 +62,10 @@ LISTS = {
                         "Oldest court or courthouse": "pio_court", "Oldest police or fire station": "pio_police",
                         "Oldest town hall or seat of government": "pio_civic",
                         "Oldest other public institution": "pio_other"}},
-    "tea": {"group": "Markets & trade", "prefix": "tea", "title": "The tea trade: oldest merchants, firms and tea rooms",
+    "tea": {"group": "Markets & trade", "prefix": "tea", "title": "The tea trade: merchants, firms, tea rooms and places",
             "file": "trade/tea.json",
-            "kinds": {"Tea merchant or firm": "tea_firm", "Tea shop or tea room": "tea_room"}},
+            "kinds": {"Tea merchant or firm": "tea_firm", "Tea shop or tea room": "tea_room",
+                      "Coffee house, auction, dock or ship of the tea trade": "tea_trade"}},
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}

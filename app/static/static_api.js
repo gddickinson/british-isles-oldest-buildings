@@ -41,7 +41,7 @@
     .then((parts) => parts.flatMap((p) => Object.entries(p).map(([id, o]) => ({ id, ...o })))));
 
   // Tours: data/tours.json; suggestions score the catalogue rows as bidb/tour_plan.interest does
-  let TOURS = null, VISITS = null, STOPS = null, DOMESDAY = null, DIGS = null, TREE = null;
+  let TOURS = null, VISITS = null, STOPS = null, OLDNAMES = null, DOMESDAY = null, DIGS = null, TREE = null;
   const tours = () => (TOURS = TOURS || fetch("data/tours.json").then((r) => r.json()).catch(() => []));
   const TOP = ["Grade I", "Category A", "Grade A", "World Heritage", "National Monument"];
   const interest = (r) => 1 + (r.landmark ? 3 : 0) + (r.oldest_of_type ? 2 : 0) + (r.curated ? 1.5 : 0) + (r.t != null ? 1.5 : 0)
@@ -253,6 +253,13 @@
       const entry = churches === undefined ? null : { od_id: od, churches, priests, households, phillimore };
       return { entity_id: id, settlement_id: sid, settlement, od_id: od, itself: m.startsWith("=") ? 1 : 0, entry };
     },
+    async old_names(p, f, id) {                // data/old_names.json (bidb.welsh_names)
+      OLDNAMES = OLDNAMES || fetch("data/old_names.json").then((r) => r.json()).catch(() => ({ h: {}, r: {} }));
+      const d = await OLDNAMES, head = d.r[id], rows = head && d.h[head];
+      if (!rows) return null;
+      return { headname: head, total: rows[rows.length - 1],
+               forms: rows.slice(0, -1).map(([form, year, date_text, source]) => ({ form, year, date_text, source })) };
+    },
     async stops(p) {                           // nearest stops of catalogue buildings (data/stops.json)
       STOPS = STOPS || fetch("data/stops.json").then((r) => r.json()).catch(() => ({}));
       const v = (await STOPS)[p.get("id")] || [], ferry = v.length ? v[v.length - 1] : null;
@@ -298,7 +305,7 @@
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);
-    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "stops", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool"].includes(name);
+    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "stops", "old_names", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool"].includes(name);
     return fn(u.searchParams, plain ? null : filtersFrom(u.searchParams), id);
   };
 })();

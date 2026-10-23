@@ -37,6 +37,15 @@ def export(conn, out_dir):
         from bidb.visiting import COLUMNS as VC
         visits = {r[0]: dict(zip(VC[1:], r[1:])) for r in conn.execute(f"SELECT {', '.join(VC)} FROM visiting")}
         (out_dir / "visiting.json").write_text(json.dumps(visits, ensure_ascii=False, separators=(",", ":")))
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'old_name_links'").fetchone():
+        from bidb.welsh_names import for_record as names
+        links = dict(conn.execute("SELECT record_id, headname FROM old_name_links"))
+        heads = {}                                   # {headname: [[form, year, date text, source], …] (shown ones), total}
+        for rid, head in links.items():
+            if head not in heads:
+                n = names(conn, rid)
+                heads[head] = [[f["form"], f["year"], f["date_text"], f["source"]] for f in n["forms"]] + [n["total"]]
+        (out_dir / "old_names.json").write_text(json.dumps({"h": heads, "r": links}, ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'stops'").fetchone():
         from bidb.naptan import near                 # catalogue buildings only: every bus stop is too much to host
         stops = {}                                   # {record id: [[bus stop, locality, km], …, ferry or null]}

@@ -27,6 +27,12 @@ def visiting(rid):
     return jsonify(visit(conn(), rid))
 
 
+@bp.route("/api/old_names/<path:rid>")
+def old_names(rid):
+    from bidb.welsh_names import for_record as names
+    return jsonify(names(conn(), rid))
+
+
 @bp.route("/api/stops")
 def stops():
     """Nearest bus stops and ferry terminal (NaPTAN, Great Britain) to ?lat=&lon=."""

@@ -179,7 +179,7 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
     """[(stage name, function)] for a full build (also run from the GUI by app/jobs.py)."""
     from . import (bridges, burials, dendro, depictions, digs, domesday, domesday_entries, era_places, hoards, institutions,
                    lore_places, mapping_museums, maritime, military, museums, nation_geo, oldest_checks, oldest_lists, on_this_day,
-                   naptan, places_build, pronunciations, sports, timeline, tours, trade_works, underground, wrecks, visiting)
+                   naptan, places_build, pronunciations, sports, timeline, tours, trade_works, underground, visiting, welsh_names, wrecks)
     from . import stories as stories_mod
     out = [("Buildings", lambda: run(cutoff))]
     if places:
@@ -193,7 +193,7 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
                 ("Nations for places", nation_geo.run)]
         if pron:
             out += [("Pronunciations", pronunciations.run), ("Domesday Book", domesday.run),
-                    ("Domesday entries", domesday_entries.run)]
+                    ("Domesday entries", domesday_entries.run), ("Old Welsh place-name forms", welsh_names.run)]
         out.append(("Tree-ring dates", dendro.run))
         out.append(("Paintings and prints", depictions.run))
         if stories:

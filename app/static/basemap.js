@@ -404,6 +404,7 @@ const Basemap = (() => {
     const [lat, lon] = el.dataset.transport.split(",").map(Number);
     const id = el.dataset.visit && encodeURIComponent(el.dataset.visit);
     const stops = api(`/api/stops?lat=${lat}&lon=${lon}${id ? "&id=" + id : ""}`).catch(() => null);   // NaPTAN, Great Britain
+    const named = id ? api("/api/old_names/" + id).catch(() => null) : null;    // Wales: recorded forms of the name
     const [near, visit, dom, digs, rings] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
       id ? api("/api/visiting/" + id).catch(() => null) : null, id ? api("/api/domesday/" + id).catch(() => null) : null,
       id ? api("/api/excavations/" + id).catch(() => []) : [], id ? api("/api/dendro/" + id).catch(() => []) : []]);
@@ -417,6 +418,11 @@ const Basemap = (() => {
     if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
       esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book${domesdayEntry(dom.entry)}
       <span class="hint">(<a href="https://opendomesday.org/${dom.od_id ? "place/" + esc(dom.od_id) + "/" : ""}" target="_blank" rel="noopener">Open Domesday</a>)</span>`);
+    const old = await named;
+    if (old && old.forms.length) lines.push(`<b>Old forms of the name</b> <span class="hint">(${esc(old.headname)})</span>: ${
+      old.forms.map((f) => `<i>${esc(f.form)}</i> <span class="hint">${esc(f.date_text || f.year || "")}</span>`).join(" · ")}${
+      old.total > old.forms.length ? ` · and ${old.total - old.forms.length} more` : ""} <span class="hint">(<a
+      href="https://historicplacenames.rcahmw.gov.uk/" target="_blank" rel="noopener">List of Historic Place Names of Wales</a>)</span>`);
     if (visit) {
       const bits = [visit.operator && `Looked after by ${esc(visit.operator)}`, visit.opening_hours && `Open: <code>${esc(visit.opening_hours)}</code>`,
         FEE[visit.fee] || (visit.fee && `Entry: ${esc(visit.fee)}`), ACCESS[visit.wheelchair],

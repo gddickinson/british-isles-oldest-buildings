@@ -510,3 +510,29 @@ built-up area and ordinary roads have no years in OSM) to be stated on the page.
       journals (open access), county archaeological society transactions (often on Internet Archive / BHL),
       theses (EThOS/CORE), OpenAlex/CORE APIs for open papers; extract dated statements per place with quotes
       (as the evidence track does) and keep licences per text.
+
+## People and environment through time (added 2026-10-22, George's idea)
+Graphs and map layers of how people and the land changed together: population and settlements, the built
+environment, farming, woodland and land cover, industry and energy, climate and the atmosphere, and the other
+way round (geology, soils, coast, climate shocks, plague and famine shaping where and how people lived).
+Each graph and layer can be switched on and off, follows the Map page's year slider (T1), and cites its data
+source (and any analysis it repeats) with the licence. Only openly licensed data, or published figures quoted
+with their citation; estimates for early periods are marked as modelled, with their uncertainty where given.
+- [ ] E1 Research the sources (agents, 2026-10-22): per series and layer the publisher, citation, licence,
+      years covered, resolution, download URL and format → `data/curated/change_sources.json`; check each URL.
+- [ ] E2 Time series (national, England / Scotland / Wales / Ireland where possible): population (Domesday,
+      1377 poll tax, Wrigley–Schofield 1541–1871, censuses 1801/1821–), share living in towns, numbers of towns
+      and cities by size, GDP per head (Bank of England "A millennium of macroeconomic data"), life expectancy,
+      buildings and places begun per decade (from this catalogue), coal output, CO₂ emissions; Central England
+      temperature (1659–), England and Wales rainfall (1766–), CO₂ and methane (ice cores + Mauna Loa), sea
+      level (Newlyn, etc.), volcanic and solar forcing, woodland cover, farmland and livestock, notable floods,
+      droughts, famines, plagues and storms (dated events with sources).
+- [ ] E3 Map layers by year (driven by the slider): HYDE gridded population, cropland, pasture and built-up
+      area (10000 BC–today), GHSL built-up area (1975–), plus fixed layers that explain the pattern: bedrock and
+      superficial geology (BGS), soils / agricultural land, coalfields, ancient woodland, land below sea level and
+      lost coast; legend and source line on each.
+- [ ] E4 "Change over time" panel: stacked small graphs with a shared year axis and a marker at the slider's
+      year; each toggled, with units, uncertainty bands, and a source link; also a page of its own with notes.
+- [ ] E5 Analysis notes (cited): what the series show together (e.g. building booms against population and
+      prosperity, the Little Ice Age and harvest failures, the Black Death, enclosure, the coal age and CO₂),
+      quoting published research rather than our own inference where it makes a causal claim.

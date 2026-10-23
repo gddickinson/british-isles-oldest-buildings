@@ -71,8 +71,8 @@ CRU = "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.10/cruts.2604091129.v4.10
 
 
 def cru():
-    """CRU TS 4.10 decade means over the isles at 0.5°: mean temperature (°C) and yearly rainfall (mm), with the
-    number of stations behind each cell (0 = no station: the value is the climatology, so left out)."""
+    """CRU TS 4.10 yearly grids over the isles at 0.5°, 1901–2025: mean temperature (°C) and rainfall (mm); months
+    with no station within reach (the value is then the climatology) are left out."""
     from scipy.io import netcdf_file
     out = {"per_deg": 2, "lon0": LON0, "lat1": LAT1, "tmp": {}, "pre": {}}
     for a in range(1901, 2022, 10):
@@ -90,12 +90,112 @@ def cru():
             x[stn <= 0] = np.nan                                  # no station within reach: climatology, not data
             years = x.shape[0] // 12
             yearly = x[:years * 12].reshape(years, 12, *x.shape[1:])
-            yearly = yearly.mean(axis=1) if v == "tmp" else yearly.sum(axis=1)
-            with np.errstate(all="ignore"):
-                dec = np.nanmean(yearly, axis=0)[::-1]           # rows north → south
-            out[v][a] = [[None if np.isnan(q) else round(float(q), 2) for q in row] for row in dec]
+            yearly = yearly.mean(axis=1) if v == "tmp" else yearly.sum(axis=1)   # a year with a month missing → nan
+            for k in range(years):                                # each year's grid, rows north → south
+                out[v][a + k] = [[None if np.isnan(q) else round(float(q), 2) for q in row] for row in yearly[k][::-1]]
             print(v, a, flush=True)
-    with gzip.open(os.path.join(OUT, "cru_decades.json.gz"), "wt") as fh:
+    with gzip.open(os.path.join(OUT, "cru_years.json.gz"), "wt") as fh:
+        json.dump(out, fh, separators=(",", ":"))
+
+
+S3 = "https://download.pangaea.de/dataset/945729/files/Data_S3_BRITICE_CHRONO_empirical_reconstruction_GIS_data_zip.zip"
+S5 = ("/vsizip//vsicurl/https://download.pangaea.de/dataset/945729/files/Data_S5_BRITICE_CHRONO_palaeotopographies_and_"
+      "coastlines_GIS_data.zip/Data S5 BRITICE CHRONO palaeotopographies and coastlines GIS data/{}_PT_500m.tif")
+ETOPO = "/vsicurl/https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/data/30s/30s_surface_elev_gtif/ETOPO_2022_v1_30s_N90W180_surface.tif"
+
+
+def ice_coast():
+    """Each 1,000 years from 31 to 1 ka: 1 = land then, under the sea now; 2 = sea then, land now; 3 = ice sheet (the
+    reconstruction's optimum); 4 = ice in its largest version only. 1/30° grid; ice from BRITICE-CHRONO S3 polygons,
+    land and sea from the S5 palaeotopographies (elevation above that time's sea level) against ETOPO 2022 today."""
+    e0, e1, n0, n1 = -12.0, 9.0, 48.0, 62.0             # wider than the isles' window: Doggerland lies east of 2°E
+    pd, w, h = 30, int((e1 - e0) * 30), int((n1 - n0) * 30)
+    warp = lambda src, dst, extra=(): run(G + "gdalwarp", "-q", "-overwrite", "-t_srs", "EPSG:4326", "-te", e0, n0,
+                                          e1, n1, "-ts", w, h, "-r", "average", "-ot", "Float32", "-novshiftgrid",
+                                          *extra, src, dst)   # heights stay above sea level (no geoid shift)
+    crop, now = os.path.join(TMP, "etopo.tif"), os.path.join(TMP, "now.tif")
+    run(G + "gdal_translate", "-q", "-projwin", e0, n1, e1, n0, ETOPO, crop)
+    warp(crop, now)
+    land_now = read(now) > 0
+    zipf = os.path.join(TMP, "s3.zip")
+    run("curl", "-s", "-f", "-o", zipf, S3)
+    names = subprocess.run(["unzip", "-Z1", zipf], capture_output=True, text=True).stdout.splitlines()
+    shp = lambda ka, kind: next((n for n in names if n.endswith(".shp") and f"/{kind}/" in n.replace("Optimum", "optimum").replace("Max", "max")
+                                 and n.rsplit("/", 1)[1].replace("_ka", "ka").startswith(f"{ka}ka")), None)
+    out = {"per_deg": pd, "lon0": e0, "lat1": n1, "dates": {}}
+    for ka in range(31, 0, -1):
+        pt = os.path.join(TMP, f"pt{ka}.tif"); warp(S5.format(ka), pt, ("-srcnodata", "-32768"))
+        then = read(pt)
+        cls = np.zeros((h, w), int)
+        cls[(then > 0) & ~land_now] = 1
+        cls[(then <= 0) & land_now] = 2
+        for kind, code in (("max", 4), ("optimum", 3)):
+            n = shp(ka, kind)
+            if not n:
+                continue
+            r, gp = os.path.join(TMP, f"ice{ka}{kind}.tif"), os.path.join(TMP, f"ice{ka}{kind}.gpkg")
+            run(G + "ogr2ogr", "-q", "-overwrite", "-f", "GPKG", "-t_srs", "EPSG:4326", "-nln", "ice", gp, f"/vsizip/{zipf}/{n}")
+            run(G + "gdal_rasterize", "-q", "-te", e0, n0, e1, n1, "-ts", w, h, "-ot", "Byte", "-burn", 1,
+                "-init", 0, "-at", "-l", "ice", gp, r)
+            cls[read(r) > 0] = code
+        out["dates"][ka] = cls.tolist()
+        print("ice/coast", ka, "ka", int((cls == 1).sum()), int((cls == 3).sum()), flush=True)
+    with gzip.open(os.path.join(OUT, "ice_coast.json.gz"), "wt") as fh:
+        json.dump(out, fh, separators=(",", ":"))
+
+
+NTL = "https://api.figshare.com/v2/articles/9828827"
+
+
+def night_lights():
+    """Harmonised night-time lights (Li et al. 2020, figshare v10; DMSP 1992–2013, VIIRS converted 2014–2024), digital
+    number 0–63 averaged to 1/60° (the isles' window read from each global file)."""
+    files = json.loads(subprocess.run(["curl", "-s", NTL], capture_output=True, text=True).stdout)["files"]
+    for f in files:
+        name = f["name"]
+        if not name.startswith("Harmonized_DN_NTL_"):
+            continue
+        y = int(name.split("_")[3])
+        crop, dst = os.path.join(TMP, f"n{y}c.tif"), os.path.join(TMP, f"n{y}.tif")
+        run(G + "gdal_translate", "-q", "-projwin", LON0, LAT1, LON1, LAT0, "/vsicurl/https://ndownloader.figshare.com/files/"
+            + str(f["id"]), crop)
+        run(G + "gdalwarp", "-q", "-overwrite", "-te", LON0, LAT0, LON1, LAT1, "-ts", W, H, "-r", "average", "-ot", "Float32", crop, dst)
+        save(f"ntl_{y}", np.round(read(dst)).astype(int))
+        os.remove(crop)
+
+
+GFC = "/vsicurl/https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/Hansen_GFC-2024-v1.12_lossyear_{}.tif"
+
+
+def forest_loss():
+    """Hansen Global Forest Change v1.12: for each 1/40° cell (100 × 100 pixels of 0.00025°) the share of the cell
+    where tree cover was lost in each year 2001–2024 → gfc_loss.json.gz {per_deg, lon0, lat1, years: {y: rows of ‰}}."""
+    pd = 40
+    w, h = int((LON1 - LON0) * pd), int((LAT1 - LAT0) * pd)
+    counts = np.zeros((24, h, w), np.int32)
+    for tile, (top, left) in {"70N_020W": (70, -20), "70N_010W": (70, -10), "70N_000E": (70, 0), "60N_020W": (60, -20),
+                              "60N_010W": (60, -10), "60N_000E": (60, 0), "50N_010W": (50, -10), "50N_000E": (50, 0)}.items():
+        x0, x1 = max(LON0, left), min(LON1, left + 10)
+        y1, y0 = min(LAT1, top), max(LAT0, top - 10)
+        if x0 >= x1 or y0 >= y1:
+            continue
+        crop = os.path.join(TMP, "gfc")
+        run(G + "gdal_translate", "-q", "-of", "ENVI", "-projwin", x0, y1, x1, y0, GFC.format(tile), crop)
+        with open(crop + ".hdr") as f:
+            hdr = f.read()
+        cw = int(hdr.split("samples = ")[1].split()[0]); ch = int(hdr.split("lines   = ")[1].split()[0])
+        a = np.memmap(crop, dtype=np.uint8, mode="r", shape=(ch, cw))
+        r0, c0 = round((LAT1 - y1) * pd), round((x0 - LON0) * pd)
+        for i in range(ch // 100):                       # one row of cells at a time
+            band = np.asarray(a[i * 100:(i + 1) * 100, :(cw // 100) * 100]).reshape(100, cw // 100, 100)
+            for yr in range(1, 25):
+                counts[yr - 1, r0 + i, c0:c0 + cw // 100] += (band == yr).sum(axis=(0, 2))
+        del a
+        os.remove(crop)
+        print("gfc", tile, flush=True)
+    per_mille = np.round(counts * 1000 / 10000).astype(int)          # ‰ of the cell's pixels, each year
+    out = {"per_deg": pd, "lon0": LON0, "lat1": LAT1, "years": {2000 + k + 1: per_mille[k].tolist() for k in range(24)}}
+    with gzip.open(os.path.join(OUT, "gfc_loss.json.gz"), "wt") as fh:
         json.dump(out, fh, separators=(",", ":"))
 
 
@@ -200,5 +300,5 @@ def corine():
 
 
 if __name__ == "__main__":
-    for step in sys.argv[1:] or ["ghsl", "ghs_pop", "corine", "alc", "superficial", "awi", "cru"]:
+    for step in sys.argv[1:] or ["ghsl", "ghs_pop", "corine", "alc", "superficial", "awi", "cru", "ice_coast", "night_lights", "forest_loss"]:
         globals()[step]()

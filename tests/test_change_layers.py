@@ -48,7 +48,11 @@ class Geology(unittest.TestCase):
         meta = json.loads((cl.OUT / "layers.json").read_text())["layers"]
         self.assertTrue({"hyde_popd", "hyde_cropland", "hyde_grazing", "hyde_uopp", "geology", "coalfields", "ghsl_built",
                          "ghs_pop", "corine", "pollen_trees", "ancient_woodland", "alc", "superficial",
-                         "cities"} <= {l["id"] for l in meta})
+                         "cities", "stations", "rail_lines", "ireland_census", "ice_coast", "night_lights",
+                         "forest_loss"} <= {l["id"] for l in meta})
+        ice = next(l for l in meta if l["id"] == "ice_coast")
+        self.assertEqual(min(ice["years"]), 1950 - 31000)                       # 31,000 years ago, as a year BC
+        self.assertGreater(ice["bounds"][1][1], 2)                               # wider than the isles: Doggerland
         for l in meta:
             for s in l.get("sources") or [l["source"]]:
                 self.assertTrue(s["citation"] and s["licence"] and s["url"], l["id"])

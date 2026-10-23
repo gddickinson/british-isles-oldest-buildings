@@ -71,24 +71,50 @@ const ChangeLayers = (() => {
             fillColor: est ? l.legend[1].color : l.legend[0].color, fillOpacity: 0.8 })
             .bindTooltip(`${esc(name)}: about ${ChangeCharts.fmt(k * 1000)} people in ${yt(y)}${est ? " (estimated)" : ""}`);
         })).addTo(map);
-      } else if (l.kind === "spans") {                 // [name, lat, lon, opened, closed]: built once, restyled per year
+      } else if (l.kind === "spans" || l.kind === "lines") {   // dated dots or lines: built once, restyled per year
         geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());
         const y = yearFor(l) ?? l.years[l.years.length - 1], data = await geo[l.id];
         if (current !== l) return;
-        if (!shown) {
+        if (!shown && l.kind === "lines") {
+          shown = L.layerGroup(data.map(([kind, o, c, path]) => Object.assign(L.polyline(path.map(([x, yy]) => [yy, x]), {
+            pane: "changePane", renderer: spanCanvas, weight: 1.6, interactive: true })
+            .bindTooltip(`${kind === "canal" ? "Canal" : "Railway"}: opened ${o}${c ? `, closed ${c}` : ""}`, { sticky: true }),
+            { span: [o, c], line: kind }))).addTo(map);
+        } else if (!shown) {
           shown = L.layerGroup(data.map(([name, lat, lon, o, c]) => Object.assign(L.circleMarker([lat, lon], {
             pane: "changePane", renderer: spanCanvas, radius: 2.2, weight: 0, fillOpacity: 0.9 })
             .bindTooltip(`${esc(name)}: opened ${o}${c ? `, closed ${c}` : ""}`), { span: [o, c] }))).addTo(map);
         }
         let open = 0;
         shown.eachLayer((m) => {
+          if (m.line) {                                    // [kind, opened, closed, path]: railway or canal line
+            const [o, c] = m.span, now = o <= y && !(c && c <= y), gone = c && c <= y;
+            open += now ? 1 : 0;
+            m.setStyle({ color: now ? l.legend[m.line === "canal" ? 1 : 0].color : l.legend[2].color,
+                         opacity: now ? 0.9 : gone ? 0.35 : 0, weight: now ? 1.6 : 1 });
+            return;
+          }
           const [o, c] = m.span, now = o <= y && !(c && c <= y), gone = c && c <= y;
           open += now ? 1 : 0;
           m.setStyle({ fillColor: now ? l.legend[0].color : l.legend[1].color, fillOpacity: now ? 0.9 : gone ? 0.5 : 0,
                        radius: now ? 2.2 : 1.6 });
         });
-        when.textContent = `${open.toLocaleString()} open in ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;
+        when.textContent = `${open.toLocaleString()} ${l.kind === "lines" ? "sections open" : "open"} in ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;
         spanCanvas._redraw?.();                         // the canvas does not always repaint until the map moves
+      } else if (l.kind === "choro") {                 // areas with {year: people}: coloured by the share of the base year
+        geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());
+        const y = yearFor(l) ?? l.years[l.years.length - 1], data = await geo[l.id];
+        if (current !== l) return;
+        const share = (f) => 100 * f.properties.pop[y] / f.properties.pop[l.base];
+        const colour = (v) => l.legend[Math.max(0, l.bins.filter((b) => v >= b).length - 1)].color;
+        const style = (f) => ({ fillColor: colour(share(f)), fillOpacity: 0.7, weight: 0.6, color: "#555", opacity: 0.6 });
+        if (!shown) {
+          shown = L.geoJSON(data, { pane: "changePane", renderer: dots, style }).addTo(map);
+          shown.eachLayer((m) => m.bindTooltip(() => `${esc(m.feature.properties.name)}: ${m.feature.properties.pop[shown.year]
+            ?.toLocaleString()} people in ${shown.year} (${Math.round(share(m.feature))}% of ${l.base})`, { sticky: true }));
+        } else shown.setStyle(style);
+        shown.year = y;
+        when.textContent = `census of ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;
       } else if (!shown) {
         when.textContent = "";
         geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());

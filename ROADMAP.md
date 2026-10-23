@@ -543,6 +543,15 @@ with their citation; estimates for early periods are marked as modelled, with th
       lost coast; legend and source line on each.
 - [x] E4 (2026-10-22: panel on the Map page + page `/change`) "Change over time" panel: stacked small graphs with a shared year axis and a marker at the slider's
       year; each toggled, with units, uncertainty bands, and a source link; also a page of its own with notes.
+- [~] E6 (2026-10-23, George: "all the rest", with estimates for missing dates and models compared) More layers and
+      estimates. Done: HYDE pasture/grazing and built-up area; people per km² 1975–2020 (GHS-POP); railway stations by
+      opening year (Wikidata; closures recorded for only a tenth); graphs that put other models on the same axis, published
+      estimates as dots with error bars (England 1086–1801, Scotland, Ireland before 1821, coal before 1853, the urban
+      share, Irish woodland, markets and fairs; `estimates.json`), dotted gaps read as estimates; yearly temperature for
+      each country and the globe (measured, a 1500–1900 reconstruction, and an estimate from CET). To do: decade climate
+      maps (CRU TS; HadUK-Grid files now need a CEDA login), ice-sheet retreat and past coastlines (deep-time dates),
+      night lights, forest change since 2000, Domesday 1086, census populations by county, railway lines with dates,
+      1930s land use. Blocked for now: KK10 (PANGAEA bot check), HYDE 3.3 (browser download).
 - [x] E5 (2026-10-23: 19 notes from the Neolithic boom and bust to the 1952 smog and rising seas, 50 quotes from published research, each with link and locator, both sides where scholars disagree; on the Change over time page and, for the slider's year, in the Map panel; `data/curated/change/notes.json`) Analysis notes (cited): what the series show together (e.g. building booms against population and
       prosperity, the Little Ice Age and harvest failures, the Black Death, enclosure, the coal age and CO₂),
       quoting published research rather than our own inference where it makes a causal claim.

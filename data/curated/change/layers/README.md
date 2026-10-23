@@ -11,6 +11,8 @@ credits: `DATA_LICENSE.md` (Change over time).
 | `gsi500k_bedrock_age.geojson` | All-Ireland bedrock by age bracket, simplified 300 m | GSI/GSNI 1:500k (CC BY 4.0 / OGL) |
 | `coal_authority_coalfield_areas.geojson` | Coalfield consultation areas, simplified 200 m | Coal Authority (OGL) |
 | `ghsl_built_{1975,2020}.json.gz` | % of each 1/60° cell under buildings | GHS-BUILT-S R2023A 30″ grids, cropped remotely, summed to 1/60° |
+| `ghs_pop_{1975…2020}.json.gz` | People per km² per 1/60° cell, every 5 years | GHS-POP R2023A 30″ grids (zips read remotely), summed to 1/60° |
+| `cru_years.json.gz` | Yearly mean temperature (°C) and rainfall (mm) per 0.5° cell, 1901–2025 (months without a station left out) | CRU TS 4.10 (ODbL), one decade file at a time |
 | `corine_{2000,2006,2012,2018}.json.gz` | Land cover in 9 groups of the 44 CORINE classes (0 = sea / none) | EEA CORINE map service images (lon −11..2, lat 49..61, Web Mercator), colour → class → group |
 | `ancient_woodland.json.gz` | % of each 1/60° cell that is ancient woodland | AWI England (all), Wales 2021 (all but deleted), Scotland (classes 1a and 2a, "Ancient (of semi-natural origin)"), burned at 1/1200° and averaged |
 | `alc_grades.json.gz` | Majority provisional ALC grade per 1/60° cell (1–5, 6 non-agricultural, 7 urban) | Natural England provisional ALC (OGL) |

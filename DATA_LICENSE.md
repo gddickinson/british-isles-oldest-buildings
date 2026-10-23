@@ -94,6 +94,27 @@ as the share of each ~1 × 2 km cell. Farmland grades: Natural England, Provisio
 Superficial deposits: Contains British Geological Survey materials © UKRI 2025 (BGS Geology 625k, OGL v3.0). Towns and
 cities by size: Buringh 2020 (CC0, below).
 
+More layers (2026-10-23): people per km² 1975–2020, GHS-POP R2023A (Schiavina et al. 2023, European Commission JRC,
+doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE), © European Union, reuse with acknowledgement; decade temperature and
+rainfall, CRU TS 4.10 (Harris et al. 2020, Scientific Data 7:109), Open Database License, University of East Anglia
+Climatic Research Unit; night-time lights, Li, Zhou, Zhao & Zhao 2020 (Scientific Data 7:168; figshare
+doi:10.6084/m9.figshare.9828827.v10), CC BY 4.0; tree cover lost since 2000, Hansen et al. 2013 (Science 342:850-853),
+Global Forest Change 2000-2024 v1.12, University of Maryland, CC BY 4.0; the ice sheet and coast 31,000-1,000 years ago,
+Clark, Ely, Fabel & Bradley 2022, BRITICE-CHRONO GIS data, PANGAEA doi:10.1594/PANGAEA.945729, CC BY 4.0, with today's
+coast from NOAA ETOPO 2022 (public domain); railway stations, Wikidata (CC0); railway and canal lines,
+OpenHistoricalMap contributors (CC0); Ireland's counties at each census, Central Statistics Office Ireland, table FY001
+(CC BY 4.0), on Natural Earth outlines (public domain).
+Temperature graphs: Met Office HadUK-Grid country series (OGL v3.0); CRU CY 4.10 country averages (ODbL); HadCRUT5
+(Morice et al. 2021; OGL v3.0); PAGES 2k Consortium 2019 (Nature Geoscience 12:643-649) and Luterbacher et al. 2004 /
+Xoplaki et al. 2005 European seasonal reconstructions, both from the NOAA World Data Service for Paleoclimatology (free
+to use with citation). Each country's estimate from the Central England Temperature is made for this site
+(`data/curated/change/prepare_temperatures.py`) and labelled as such.
+Published estimates before the statistics (`data/curated/change/estimates.json`): figures cited as facts from the
+papers listed there, each with its quote and page; HYDE 3.5 (non-commercial licence) is not used.
+Left out for their licence or access: Open Domesday's data (CC BY-NC-SA), the 1930s Land Utilisation Survey vectors
+(non-commercial), A Vision of Britain through Time (bulk reuse needs permission), HadUK-Grid files (CEDA login), KK10
+(PANGAEA bot check at the time), NOAA's DMSP stable lights (login).
+
 Analysis notes ("What the graphs show together", `data/curated/change/notes.json`) quote short passages of published
 research with a link to each source and its locator; the quotes remain the authors' and publishers' work, used for
 citation and comment.

@@ -567,6 +567,121 @@
   "file": "so2_uk.csv"
  },
  {
+  "id": "temp_eng",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "England",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_eng.csv",
+  "zero": false,
+  "models": [
+   "cet",
+   "temp_eng_lut"
+  ],
+  "label": "Met Office HadUK-Grid",
+  "note": "Measured yearly mean from 1884 (Met Office areal series from the station network). Earlier years: the Central England record from 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_wal",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Wales",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_wal.csv",
+  "zero": false,
+  "models": [
+   "temp_wal_cet",
+   "temp_wal_lut"
+  ],
+  "label": "Met Office HadUK-Grid",
+  "note": "Measured yearly mean from 1884 (Met Office areal series from the station network). Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_scot",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Scotland",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_scot.csv",
+  "zero": false,
+  "models": [
+   "temp_scot_cet",
+   "temp_scot_lut"
+  ],
+  "label": "Met Office HadUK-Grid",
+  "note": "Measured yearly mean from 1884 (Met Office areal series from the station network). Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_ni",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Northern Ireland",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_ni.csv",
+  "zero": false,
+  "models": [
+   "temp_ni_cet",
+   "temp_ni_lut"
+  ],
+  "label": "Met Office HadUK-Grid",
+  "note": "Measured yearly mean from 1884 (Met Office areal series from the station network). Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_ie",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Republic of Ireland",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "crucy_410"
+  ],
+  "file": "temp_ie.csv",
+  "zero": false,
+  "models": [
+   "temp_ie_cet",
+   "temp_ie_lut"
+  ],
+  "label": "CRU (country average)",
+  "note": "Measured yearly mean from 1901 (Climatic Research Unit grids from station records). Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_global",
+  "theme": "Climate and atmosphere",
+  "title": "World temperature compared with 1850–1900",
+  "region": "World",
+  "unit": "°C",
+  "unit_long": "°C vs 1850–1900",
+  "sources": [
+   "hadcrut5"
+  ],
+  "file": "temp_global.csv",
+  "zero": false,
+  "models": [
+   "temp_global_pages2k",
+   "temp_global_12k"
+  ],
+  "label": "HadCRUT5 (measured, band: 95%)",
+  "default": true,
+  "note": "Yearly global mean surface temperature measured over land and sea since 1850 (HadCRUT5, moved from its 1961–1990 baseline to 1850–1900), with two reconstructions from natural records for earlier centuries. Choose 'Each graph's own years' to see all 12,000 years."
+ },
+ {
   "id": "cet",
   "theme": "Climate and atmosphere",
   "title": "Temperature, yearly average",
@@ -579,7 +694,8 @@
   "note": "The longest instrumental temperature record in the world. 1659–1722 values are rounded and rest on few sources.",
   "file": "cet.csv",
   "zero": false,
-  "default": true
+  "default": true,
+  "label": "Central England (HadCET, from 1659)"
  },
  {
   "id": "uk_temp",
@@ -1029,5 +1145,185 @@
   "file": "fairs_eng.csv",
   "hidden": true,
   "note": "Fairs recorded by each date."
+ },
+ {
+  "id": "temp_eng_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "England",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_eng_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over England's half-degree land cells; over the years both cover it runs 0.25 °C warmer than the measured series."
+ },
+ {
+  "id": "temp_wal_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Wales",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_wal_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Wales's yearly mean fitted to the Central England Temperature over 1884–2025 (correlation 0.988; Wales ≈ -0.287 + 0.943 × CET), then applied to CET before 1884. The band is ±1.96 × the fit's typical error (0.101 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_wal_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Wales",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_wal_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Wales's half-degree land cells; over the years both cover it runs 0.43 °C warmer than the measured series."
+ },
+ {
+  "id": "temp_scot_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Scotland",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_scot_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Scotland's yearly mean fitted to the Central England Temperature over 1884–2025 (correlation 0.942; Scotland ≈ -0.509 + 0.797 × CET), then applied to CET before 1884. The band is ±1.96 × the fit's typical error (0.194 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_scot_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Scotland",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_scot_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Scotland's half-degree land cells; over the years both cover it runs 0.36 °C warmer than the measured series."
+ },
+ {
+  "id": "temp_ni_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Northern Ireland",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "haduk_uk_tmean_annual"
+  ],
+  "file": "temp_ni_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Northern Ireland's yearly mean fitted to the Central England Temperature over 1884–2025 (correlation 0.92; Northern Ireland ≈ 1.376 + 0.754 × CET), then applied to CET before 1884. The band is ±1.96 × the fit's typical error (0.219 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_ni_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Northern Ireland",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_ni_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Northern Ireland's half-degree land cells; over the years both cover it runs 0.23 °C cooler than the measured series."
+ },
+ {
+  "id": "temp_ie_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Republic of Ireland",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "crucy_410"
+  ],
+  "file": "temp_ie_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Republic of Ireland's yearly mean fitted to the Central England Temperature over 1901–2025 (correlation 0.958; Republic of Ireland ≈ 1.986 + 0.777 × CET), then applied to CET before 1901. The band is ±1.96 × the fit's typical error (0.153 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_ie_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Republic of Ireland",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_ie_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Republic of Ireland's half-degree land cells."
+ },
+ {
+  "id": "temp_global_pages2k",
+  "theme": "Climate and atmosphere",
+  "title": "World temperature, reconstructed",
+  "region": "World",
+  "unit": "°C",
+  "sources": [
+   "pages2k_2019"
+  ],
+  "file": "temp_global_pages2k.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "PAGES 2k 2019 (AD 1–2000, band: 95%)",
+  "note": "Median and 95% range of seven reconstruction methods from about 700 tree-ring, coral, ice, lake and other records; moved to the 1850–1900 baseline."
+ },
+ {
+  "id": "temp_global_12k",
+  "theme": "Climate and atmosphere",
+  "title": "World temperature since the Ice Age",
+  "region": "World",
+  "unit": "°C",
+  "sources": [
+   "temp12k_30n60n"
+  ],
+  "file": "temp_global_12k.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Temperature 12k (100-year steps, band: 5–95%)",
+  "note": "Global mean from pollen, marine and lake records (median of five methods), as a difference from 1800–1900."
  }
 ]

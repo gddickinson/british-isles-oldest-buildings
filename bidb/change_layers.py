@@ -110,15 +110,15 @@ def _merc(lat):
     return math.log(math.tan(math.pi / 4 + math.radians(lat) / 2))
 
 
-def png(rows, edges, colors, scale=2, per_deg=PER_DEG):
+def png(rows, edges, colors, scale=2, per_deg=PER_DEG, lat0=LAT0, lat1=LAT1):
     """Palette PNG (index 0 transparent) with rows resampled to Web Mercator, `scale` output rows per source row.
-    Rows run north → south from LAT1 at `per_deg` cells per degree; a value v gets the colour of the last edge ≤ v."""
+    Rows run north → south from `lat1` (default the isles' window) at `per_deg` cells per degree; a value v gets the colour of the last edge ≤ v."""
     h, w = len(rows) * scale, len(rows[0])
-    y0, y1 = _merc(LAT1), _merc(LAT0)
+    y0, y1 = _merc(lat1), _merc(lat0)
     raw = bytearray()
     for j in range(h):
         lat = math.degrees(2 * math.atan(math.exp(y0 + (y1 - y0) * (j + 0.5) / h)) - math.pi / 2)
-        src = rows[min(len(rows) - 1, int((LAT1 - lat) * per_deg))]
+        src = rows[min(len(rows) - 1, int((lat1 - lat) * per_deg))]
         raw.append(0)                                   # filter: none
         for v in src:
             k = 0

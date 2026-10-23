@@ -140,7 +140,8 @@
   "licence_quote": "CEDA catalogue for HadUK-Grid: 'provided under Open Government Licence' (via NERC data catalogue search, not quoted from the Met Office series page).",
   "url": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-and-regional-series",
   "download_url": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/Tmean/date/UK.txt",
-  "checked": "2026-10-22, HTTP 200 via curl"
+  "checked": "2026-10-22, HTTP 200 via curl",
+  "used": "UK, England, Wales, Scotland and Northern Ireland yearly mean temperature"
  },
  "holvol_v11_vssi": {
   "short": "Sigl & Toohey 2024, HolVol v1.1 (PANGAEA)",
@@ -638,5 +639,45 @@
   "licence": "All rights reserved (Centre for Metropolitan History); counts cited as facts",
   "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
   "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "crucy_410": {
+  "short": "CRU CY 4.10 country averages",
+  "publisher": "University of East Anglia, Climatic Research Unit",
+  "citation": "Harris, I., Osborn, T.J., Jones, P., Lister, D. (2020) Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset. Scientific Data 7:109, doi:10.1038/s41597-020-0453-3. Country averages: CRU CY v4.10 (and CRU TS v4.10 grid cells for the Isle of Man and the Channel Islands)",
+  "licence": "Open Database License (ODbL) v1.0",
+  "licence_url": "http://opendatacommons.org/licenses/odbl/1.0/",
+  "licence_quote": "CRU TS 4.10 release page: 'Open Database License … Any rights in individual contents of the datasets are licensed under the Database Contents License'",
+  "url": "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.10/",
+  "checked": "2026-10-23, HTTP 200 via curl"
+ },
+ "luterbacher_seasonal": {
+  "short": "Luterbacher et al. 2004 / Xoplaki et al. 2005",
+  "publisher": "NOAA World Data Service for Paleoclimatology",
+  "citation": "Luterbacher, J., Dietrich, D., Xoplaki, E., Grosjean, M., Wanner, H. (2004) European seasonal and annual temperature variability, trends and extremes since 1500. Science 303:1499-1503, doi:10.1126/science.1093877; Xoplaki, E. et al. (2005) European spring and autumn temperature variability and change of extremes over the last half millennium. GRL 32:L15713, doi:10.1029/2005GL023424. Data: Luterbacher, J. et al. (2006) European Seasonal Temperature Reconstructions, IGBP PAGES/WDC Paleoclimatology Data Contribution Series 2006-060",
+  "licence": "Free to use with citation (NOAA NCEI / WDS Paleoclimatology)",
+  "licence_url": "https://www.ncei.noaa.gov/pub/data/paleo/pages2k/readme-ncei-wds-paleoclimatology.txt",
+  "licence_quote": "File header: 'PLEASE CITE CONTRIBUTORS WHEN USING THIS DATA'",
+  "url": "https://www.ncei.noaa.gov/access/paleo-search/study/6288",
+  "checked": "2026-10-23, HTTP 200 via curl"
+ },
+ "hadcrut5": {
+  "short": "HadCRUT5 (Morice et al. 2021)",
+  "publisher": "Met Office Hadley Centre and University of East Anglia CRU",
+  "citation": "Morice, C.P. et al. (2021) An updated assessment of near-surface temperature change from 1850: the HadCRUT5 data set. JGR Atmospheres 126:e2019JD032361, doi:10.1029/2019JD032361. Data: HadCRUT.5.1.0.0 analysis, global annual summary series",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "Met Office Hadley Centre observations datasets are released under the Open Government Licence",
+  "url": "https://www.metoffice.gov.uk/hadobs/hadcrut5/",
+  "checked": "2026-10-23, HTTP 200 via curl"
+ },
+ "pages2k_2019": {
+  "short": "PAGES 2k Consortium 2019",
+  "publisher": "NOAA World Data Service for Paleoclimatology",
+  "citation": "PAGES 2k Consortium (Neukom, R. et al.) (2019) Consistent multidecadal variability in global temperature reconstructions and simulations over the Common Era. Nature Geoscience 12:643-649, doi:10.1038/s41561-019-0400-0. Data: full ensemble median and 95% range, NOAA study 26872",
+  "licence": "Free to use with citation (NOAA NCEI / WDS Paleoclimatology)",
+  "licence_url": "https://www.ncei.noaa.gov/pub/data/paleo/pages2k/readme-ncei-wds-paleoclimatology.txt",
+  "licence_quote": "NCEI/WDS Paleoclimatology readme: users may access and download these data free of charge",
+  "url": "https://www.ncei.noaa.gov/access/paleo-search/study/26872",
+  "checked": "2026-10-23, HTTP 200 via curl"
  }
 }

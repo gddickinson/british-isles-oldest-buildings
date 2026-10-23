@@ -64,6 +64,48 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       the guild, firm or trade of a building), map filters by trade, Oldest page entries, quiz questions
       ("which came first?"), exports; INTERFACE, Help and figures updated.
 
+## Building types: a family tree of building (planned 2026-10-23, George's idea)
+A reference page that classifies every type of building and construction in the isles the way a biologist classifies
+species, with their "evolutionary" links: which type grew out of which (hall house → Wealden → lobby-entry → double
+pile; motte-and-bailey → shell keep → tower keep → tower house; basilica → minster → cathedral; longhouse → farmhouse
+and byre; coaching inn → railway hotel). Diagrams and charts show how buildings developed over time and how the
+families relate; generated examples show the features of each type; materials, construction techniques and
+technologies are explained along the way. Builds on the catalogue's 31 categories, the ~48 oldest-of-type examples
+(`bidb/oldest_types.py`), periods, floor plans and outlines, and the tree-ring dates. Rules as the research track:
+each type, date range and link cites published sources (Pevsner, Brunskill's *Vernacular Architecture*, Historic
+England's listing selection guides and Introductions to Heritage Assets (OGL), HES/Cadw guidance, the Irish NIAH,
+RCAHMS/RCAHMW typologies, Getty AAT and Historic England's thesaurus of monument types (FISH, OGL) for terms); where
+the descent of a type is disputed, both views are given and the link is drawn as uncertain.
+- [ ] BT1 Research the classification: a hierarchy (domain → family → type → variant, e.g. Domestic → Hall houses →
+      Wealden house → "recessed-hall" Wealden), built on the FISH thesaurus of monument types (OGL) and Getty AAT,
+      with periods of use (first known, flourishing, last built), regions, materials, structural system, plan form,
+      the earliest surviving example in the catalogue, and the sourced "descended from / influenced by / replaced by"
+      links (lineage, borrowing from abroad, convergence: similar forms with separate origins). Licence check first.
+- [ ] BT2 Data: `data/curated/building_types.json` (types, links with kind and confidence, citations and quotes as
+      the evidence file), checked by script; every catalogue record and place kind mapped to a type (the categories
+      and Wikidata classes as a start), so each type shows counts, a map and the dated examples.
+- [ ] BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,
+      jetty, close studding, wattle and daub), brick (bonds, from the 13th c. revival to the Victorian kilns), roofs
+      (thatch, stone slate, slate, tile, pantile; roof trusses from crown post to king post), glass, iron and steel,
+      concrete; each with dates, regions (the geology layer of the Change page says where stone came from), the
+      technology that made it possible (brick tax, railways, Portland cement) and catalogue examples.
+- [ ] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
+      its years; solid lines for documented descent, dashed for disputed), a type page per type (definition, how to
+      recognise it, features, materials, plan, period chart, map of examples, the oldest surviving, family links,
+      sources), and a search; reachable from detail views ("This is a Wealden house: see its family").
+- [ ] BT5 Charts: types in use through time (a stream/swimlane chart of each family's span, linked to the Map
+      page's slider), materials by century (from catalogue records with a recorded material), the spread of a type
+      across the isles over time (first dates by county), and "what came next" chains.
+- [ ] BT6 Generated examples (George's building-gen, `~/Documents/GitHub/building-gen`, MIT, own project: procedural
+      glTF buildings from period-correct construction rules; 4 of its 29 researched types implemented: Georgian
+      townhouse, Victorian terrace, cottage, medieval tavern). First check its accuracy against the sources and the
+      catalogue's floor plans; use it only for types it renders faithfully, labelled as an illustration, not a
+      record. Shown as a 3D viewer (three.js, cut-away and exploded views, plan and section) or pre-rendered images
+      for the hosted copy; more types added in building-gen itself (its repo), not copied here. Where a generated
+      example would be guesswork, use labelled diagrams (plan, section, elevation drawn as SVG) and Commons
+      photographs and floor plans of real examples instead.
+- [ ] BT7 Hosted copy, Help page, INTERFACE, figures; quiz questions ("which type came first?", "name the type").
+
 ## Data quality and references
 - [x] Reviewed the 451 date-check conflicts (2026-10-20, `docs/date_review.md`): checker noise
       removed, new status "Earlier origin" (67), 56 reviewed corrections with evidence
@@ -271,78 +313,8 @@ Substantiate claims from original and published sources, never silently. Every r
 quote is there; verdicts (kept / corrected / open) feed `date_corrections.json` / `date_confirmations.json`.
 Detail views show "Evidence"; the Data quality page lists every claim. Sources that cannot be fetched by a script
 (paywalled books, Historic England list pages, archives in person) are cited with a locator and marked unreachable.
-- [x] R0 Evidence file, checker, app display, tests (2026-10-21).
-- [x] R1 The two open date conflicts: Althorp (c. 1508 kept: list entry 1356626) and Hadlow Castle (corrected to
-      late C18 house, tower 1838–40: list entry 1070451). No date conflicts remain.
-- [x] R2 (2026-10-21) The 69 research entries whose year was not found in the cited source: 60 settled with
-      quoted evidence (51 kept, 12 corrected incl. earlier batches: Royal Hospital Kilmainham 1679–87, Lancaster
-      Castle prison 1196, Winchester City Mill 1744, brochs c. 300 BC, Knap of Howar c. 3800 BC, Greensted Church
-      timbers 1053+, Brixworth late 8th/early 9th c., Castle of Old Wick 14th c., Arnol Blackhouse c. 1880, Merchants'
-      Warehouse 1823…); 12 sources replaced (wrong article or unreadable) by listing texts and better articles.
-      Verification then: 325 confirmed, 38 evidenced, 9 open.
-- [x] R2b (2026-10-21) The 9 left open: Duke Humfrey's 1488 (Bodleian Library), Hereford chained library 1611
-      (Thornton), Ballyhaunis 1987, Escomb 7th c. (list entry 1292122: "C7"; 670–690), Irish round towers c. 950
-      (Annals of Ulster U950.7, the bell-house of Slane: primary), Ballycopeland c. 1790 (Geograph after McCutcheon;
-      the site refuses scripts, so "unreachable"); corrected: Chichester Cross c. 1500 (listing), Eling Tide Mill mid
-      C18 (listing), Glenturret 1763. Catalogue dates now follow the research file without a rebuild
-      (`refresh_claims`); 8 researched examples that were in the catalogue twice are merged (build fixed).
-- [x] R3 (2026-10-21/22) Every researched oldest-of-type example now has quoted evidence. First pass: 102 claims
-      quoting list descriptions (`bidb/listings.py`) and 9 legends corrected (Ye Olde Fighting Cocks C16 not 793,
-      Bingley Arms 1738 not 953, Ye Olde Trip late C17 not 1189, …). Second pass (2026-10-22): the 88 remaining
-      examples (Ireland: NIAH; Northern Ireland: HED register; Scotland: HES; Wales: Cadw/Coflein; Isle of Man; England
-      without a list id in the data, and the 6 pages with another layout), each quote checked by script. 67 kept,
-      18 corrected, 3 open. Corrections include Sean's Bar c. 1725 (claimed c. 900; NIAH 15000331), Smock Alley
-      Theatre 1735 rebuild, Marsh's Library 1701–3 (1707 is the Act), Dublin Pearse 1884, St James's Gate c. 1800
-      vat houses, Kilkea Castle 15th c., The Old Inn Crawfordsburn mid C19 (claimed 1614; not listed), Old Bushmills
-      1784 (1608 is a district licence), King's College Chapel Aberdeen 1500, Fortnum & Mason c. 1770 (1707 has "no
-      supporting evidence", Survey of London), Fitzwilliam 1837–43, Ewelme School c. 1450, Hemingford Grey c. 1150,
-      Devil's Bridge C15/early C16, Vicar's Pele c. 1400, Albert Dock 1841–5. Innerpeffray settled (books from 1680,
-      formal foundation 1691); Stokesay kept (listing's "c1391" a slip). Open: Woodenbridge Hotel 1608, Grace Neill's
-      1611 (both only tradition), Fossdyke's Roman date. 23 further catalogue dates fixed where the record's own date
-      (Wikidata / article mining) was for something else (Forth and Clyde Canal "800", Wool House "1966", Syon
-      conservatory "1547" = Syon House, Somerset House "1630", Exeter Ship Canal "1270" = the weir, …).
-      Notes: some records' list ids point at a scheduling or a park entry rather than the building (Bourn Windmill,
-      Royal Observatory, Syon conservatory, Royal Hospital Chelsea, Tarr Steps, Aydon); the evidence cites the right
-      entries. Build fix: two research entries sharing one Wikipedia article (Ewelme) both get records.
-- [x] R4 (2026-10-22) Earliest churches and monasteries from primary sources: 40 early foundations checked against
-      Bede (Gutenberg, Sellar), the Anglo-Saxon Chronicle (Avalon / Gutenberg, Ingram), Bede's Lives of the Abbots,
-      the Annals of Ulster (CELT), charters (Electronic Sawyer, with the scholarly view of each charter's
-      authenticity), Asser, list descriptions and the VCH (British History Online). 26 kept, 5 corrected, 9 open;
-      16 dates sharpened or corrected: Reculver 669 (ASC), Wearmouth 674 (Bede), Ripon c. 660, Malmesbury 675,
-      Hartlepool before c. 649, Gilling after 651, Selsey 681, Worcester see 680, Evesham c. 701, Winchcombe 798,
-      Old Minster 643 (ASC), Rochester 604 (Bede II.3), Glastonbury by c. 680 (charters to Abbot Hæmgils, not 712),
-      St Mary in Castro c. 1000 (not 7th c.), Deerhurst 8th c., Bradford-on-Avon 10th c. Open where only later
-      tradition gives the date (Abingdon, Pershore, Tewkesbury, Wareham, Folkestone, Leominster, Repton, Candida
-      Casa) and Brixworth (listing C7 vs reviewed late C8/early C9).
-      Domesday entries (`bidb/domesday_entries.py`): Open Domesday place pages for the settlements of every church,
-      abbey and cathedral (churches, priests, households, Phillimore reference) → shown in the Domesday line of
-      detail views; `--report` lists early churches with a church or priest in 1086 and later-dated ones where
-      Domesday already records a church (possible earlier origin).
-      Still possible: Eddius's Life of Wilfrid and Felix's Life of Guthlac (no script-readable text found), VCH
-      parish histories for manors, dendrochronology reports.
-- [x] R4b (2026-10-22) Manor houses (Victoria County History + list entries): 30 English manor houses dated
-      1000–1300 checked; the suspicion held: 19 dates were the Domesday manor or an earlier building, not the house
-      (Melford Hall 1559 not 1065, Hughenden 1738 not 1086, Ugbrooke, Icomb Place, Treasurer's House York, Sherborne
-      Castle…). Lives of saints: Eddius's Life of Wilfrid (Colgrave 1927, Internet Archive text) for Ripon and
-      Hexham; the Old English Life of Guthlac (Goodwin 1848) for Repton (now kept) and Crowland.
-- [x] R6 (2026-10-22) Tree-ring dates (`bidb/dendro.py`): the Vernacular Architecture Group's Dendrochronology
-      Database (ADS; 4,879 dated entries) matched by grid reference (`bidb/osgrid.py`) and name to 592 catalogue
-      buildings (1,129 dates), shown as "Tree-ring dated:" in detail views. `--report` lists catalogue dates later
-      than a building's own timbers: 13 corrected (Harlowbury c. 1220 not "1884", Godinton c. 1390 not "1991", The
-      Commandery 1465 not "1977", Duff House 1735 not "1995", Tudor Tavern Taunton 1320s, Llwyn-celyn 1419,
-      Sizergh Castle pre-C15 hall not "1920", …); the rest are separate buildings of an estate or earlier fabric.
-- [x] R7 (2026-10-22) Sanity check of the 100 oldest records: 72 kept, 18 corrected, 10 open, many with
-      radiocarbon/Bayesian dates (Gathering Time; Bayliss et al.). Dates mined from Wikipedia sentences about other
-      things are gone: Avebury c. 2900 BC (not 4250), Hembury and Chestnuts no longer "fifth millennium BC", Bryn
-      Celli Ddu c. 3070 BC, Knap of Howar's stone houses c. 3300 BC (PSAS 2025), Wayland's Smithy 3590 BC, Wor Barrow
-      3670 BC. Record problems (duplicates, wrong county, wrong type) listed in docs/date_review.md.
-- [x] R8 (2026-10-22) Researched "oldest" lists of things that are not buildings (`bidb/oldest_lists.py`, 277
-      entries, each with sources and quotes): nature (60: Fortingall Yew, Lewisian gneiss, Rhynie chert, Happisburgh
-      footprints, Giant's Causeway…), graves (75: Aveline's Hole, Roman tombstones, the Latinus and Catamanus stones,
-      the oldest dated headstones, Bunhill Fields, Kensal Green…), trade (70: markets and fairs by charter, market
-      buildings, the oldest shops and firms — Lock & Co 1726 not 1676, Borough Market first recorded 1276 —,
-      manufacturers, industrial works) and infrastructure (72: the Post and Sweet Tracks, Roman roads, the New River,
-      waggonways, the first canals, docks, gasworks, pillar boxes). Shown on the Oldest page and as places.
+- [x] R0–R8 done 2026-10-21/22 (evidence file and checker, date conflicts, research entries, oldest-of-type
+      evidence, earliest churches, manor houses, tree-ring dates, the 100 oldest, oldest lists): see ROADMAP_DONE.md.
 - [~] R5 Historic England list texts behind the bot check: cite by list entry number (reproductions such as British
       Listed Buildings can be checked by script). `bidb/listings.py` reads them (both page layouts); used for R3.
 

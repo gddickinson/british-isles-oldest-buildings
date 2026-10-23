@@ -443,3 +443,11 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - One agent downloaded ~105 MB against the 50 MB limit (Bank of England workbook, a 66 MB CSO table by mistake);
   deleted. No personal data was sent to any service.
 - Next: C1b (user: permission requests), then C2 (tea as the first worked trade).
+
+## 2026-10-23 — plan: building types as a family tree
+- George asked for a reference page classifying every type of building and construction like species, with their
+  evolutionary links, charts of development over time, materials and techniques, and generated examples (possibly
+  from his building-gen). Planned as roadmap section "Building types: a family tree of building" (BT1–BT7);
+  building-gen (MIT, 4 of 29 types implemented, glTF) to be used only where checked as accurate, labelled as an
+  illustration.
+- ROADMAP.md was at 500 lines: the finished research-track items R0–R8 moved to ROADMAP_DONE.md.

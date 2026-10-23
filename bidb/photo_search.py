@@ -31,7 +31,8 @@ WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
 PLAN_WORDS = re.compile(r"\b(plan|plans|floor ?plan|ground ?plan|grundriss|groundplan)\b", re.I)
 MAP_LIKE = re.compile(r"\b(gros plan|seating plan|to the plan|plan with|engraving|future plans|marketing plans|plans and policy|plan du|plan von|"
                       r"map|maps|town plan|village plan|street|streets|environs|sheet|insurance|master ?plan|"
-                      r"city|county|parish|survey|estate|district|ordnance|road|roads)\b", re.I)
+                      r"city|county|parish|survey|estate|district|ordnance|road|roads|premier plan|plan de|prospect plan|barony|"
+                      r"renovation plan|planting plan|t-plan|original plan|churchyard plan|with a plan|plans for an)\b", re.I)
 NEAR = re.compile(r"\b(near|towards|beyond|behind|past|outside|road to|lane to|track to|drive to|entrance to|access to|"
                   r"view (from|to)|wood|woods|farm|field|fields)\b", re.I)
 MUSEUM = re.compile(r"\b(museum|gallery|galleries|collection)\b", re.I)

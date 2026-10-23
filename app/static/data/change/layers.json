@@ -1125,6 +1125,174 @@
    ]
   },
   {
+   "id": "cru_temp",
+   "title": "Warmer or cooler than 1901–1930",
+   "kind": "grid",
+   "years": [
+    1901,
+    1911,
+    1921,
+    1931,
+    1941,
+    1951,
+    1961,
+    1971,
+    1981,
+    1991,
+    2001,
+    2011,
+    2021
+   ],
+   "file": "layers/cru_temp.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "°C",
+   "legend": [
+    {
+     "color": "#3b6fb6",
+     "label": "below -0.45"
+    },
+    {
+     "color": "#8fb3dc",
+     "label": "-0.45–-0.15"
+    },
+    {
+     "color": "#d9d4cc",
+     "label": "-0.15–0.15"
+    },
+    {
+     "color": "#f2c4a0",
+     "label": "0.15–0.45"
+    },
+    {
+     "color": "#e6905f",
+     "label": "0.45–0.75"
+    },
+    {
+     "color": "#cc5a37",
+     "label": "0.75–1.05"
+    },
+    {
+     "color": "#9e2a1f",
+     "label": "1.05+"
+    }
+   ],
+   "note": "Average temperature of each decade compared with 1901–1930, in squares of half a degree (about 55 km), from weather-station records interpolated by the Climatic Research Unit. Grey is within 0.15 °C of the early-20th-century average.",
+   "sources": [
+    {
+     "short": "CRU TS 4.10 (Harris et al. 2020)",
+     "licence": "Open Database License (ODbL)",
+     "url": "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.10/",
+     "citation": "Harris, I., Osborn, T.J., Jones, P., Lister, D. (2020) Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset. Scientific Data 7:109, doi:10.1038/s41597-020-0453-3; data CRU TS v4.10, University of East Anglia Climatic Research Unit"
+    }
+   ],
+   "labels": {
+    "1901": "1901–1910",
+    "1911": "1911–1920",
+    "1921": "1921–1930",
+    "1931": "1931–1940",
+    "1941": "1941–1950",
+    "1951": "1951–1960",
+    "1961": "1961–1970",
+    "1971": "1971–1980",
+    "1981": "1981–1990",
+    "1991": "1991–2000",
+    "2001": "2001–2010",
+    "2011": "2011–2020",
+    "2021": "2021–2025"
+   }
+  },
+  {
+   "id": "cru_rain",
+   "title": "Wetter or drier than 1901–1930",
+   "kind": "grid",
+   "years": [
+    1901,
+    1911,
+    1921,
+    1931,
+    1941,
+    1951,
+    1961,
+    1971,
+    1981,
+    1991,
+    2001,
+    2011,
+    2021
+   ],
+   "file": "layers/cru_rain.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of 1901–1930",
+   "legend": [
+    {
+     "color": "#8c5a2b",
+     "label": "below 90"
+    },
+    {
+     "color": "#c9a26b",
+     "label": "90–96"
+    },
+    {
+     "color": "#d9d4cc",
+     "label": "96–104"
+    },
+    {
+     "color": "#9cc9c1",
+     "label": "104–110"
+    },
+    {
+     "color": "#4f9c95",
+     "label": "110–116"
+    },
+    {
+     "color": "#1f6d6a",
+     "label": "116+"
+    }
+   ],
+   "note": "Average yearly rainfall of each decade as a share of 1901–1930, in squares of half a degree, from rain-gauge records interpolated by the Climatic Research Unit. Grey is within 4% of the early-20th-century average.",
+   "sources": [
+    {
+     "short": "CRU TS 4.10 (Harris et al. 2020)",
+     "licence": "Open Database License (ODbL)",
+     "url": "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.10/",
+     "citation": "Harris, I., Osborn, T.J., Jones, P., Lister, D. (2020) Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset. Scientific Data 7:109, doi:10.1038/s41597-020-0453-3; data CRU TS v4.10, University of East Anglia Climatic Research Unit"
+    }
+   ],
+   "labels": {
+    "1901": "1901–1910",
+    "1911": "1911–1920",
+    "1921": "1921–1930",
+    "1931": "1931–1940",
+    "1941": "1941–1950",
+    "1951": "1951–1960",
+    "1961": "1961–1970",
+    "1971": "1971–1980",
+    "1981": "1981–1990",
+    "1991": "1991–2000",
+    "2001": "2001–2010",
+    "2011": "2011–2020",
+    "2021": "2021–2025"
+   }
+  },
+  {
    "id": "corine",
    "title": "Land cover (CORINE)",
    "kind": "grid",

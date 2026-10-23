@@ -615,3 +615,6 @@
   one sorted sweep), and "Homes in England, counted and estimated": dwellings counted from 1801 with an estimate
   before (England's population ÷ the average household, 4.44 before 1750 and 4.81 after, Boulton after Laslett;
   band between the two). New graphs that are on by default now join a browser's saved choice once.
+- CRU TS yearly grids finished (1901–2025, 0.5°): decade temperature and rainfall maps against 1901–1930, and yearly
+  temperature for the Isle of Man, Jersey and Guernsey from their nearest CRU land cell, with the same reconstruction
+  and estimate from Central England (r 0.93–0.96) as the other countries.

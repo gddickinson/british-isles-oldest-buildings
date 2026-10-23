@@ -667,6 +667,63 @@
   "note": "Measured yearly mean from 1901 (Climatic Research Unit grids from station records). Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
  },
  {
+  "id": "temp_iom",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Isle of Man",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "crucy_410"
+  ],
+  "file": "temp_iom.csv",
+  "zero": false,
+  "models": [
+   "temp_iom_cet",
+   "temp_iom_lut"
+  ],
+  "label": "CRU (nearest grid cell)",
+  "note": "Measured yearly mean from 1901 (Climatic Research Unit grids from station records), for the half-degree cell nearest the island. Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_jer",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Jersey",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "crucy_410"
+  ],
+  "file": "temp_jer.csv",
+  "zero": false,
+  "models": [
+   "temp_jer_cet",
+   "temp_jer_lut"
+  ],
+  "label": "CRU (nearest grid cell)",
+  "note": "Measured yearly mean from 1901 (Climatic Research Unit grids from station records), for the half-degree cell nearest the island. Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
+  "id": "temp_gsy",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, yearly average",
+  "region": "Guernsey",
+  "unit": "°C",
+  "unit_long": "°C",
+  "sources": [
+   "crucy_410"
+  ],
+  "file": "temp_gsy.csv",
+  "zero": false,
+  "models": [
+   "temp_gsy_cet",
+   "temp_gsy_lut"
+  ],
+  "label": "CRU (nearest grid cell)",
+  "note": "Measured yearly mean from 1901 (Climatic Research Unit grids from station records), for the half-degree cell nearest the island. Earlier years: an estimate from the Central England record back to 1659, and a published reconstruction from 1500. Before 1500 see the global and 30–60° N graphs."
+ },
+ {
   "id": "temp_global",
   "theme": "Climate and atmosphere",
   "title": "World temperature compared with 1850–1900",
@@ -1152,6 +1209,24 @@
   "note": "Fairs recorded by each date."
  },
  {
+  "id": "homes_eng_est",
+  "theme": "People and settlements",
+  "title": "Homes in England, estimated before 1801",
+  "region": "England",
+  "unit": "homes",
+  "label": "Estimated: people ÷ average household (band: 4.44–4.81 per household)",
+  "sources": [
+   "est_pop_eng_broadberry2011",
+   "est_pop_eng_wrigley1997",
+   "household_size_boulton"
+  ],
+  "file": "homes_eng_est.csv",
+  "hidden": true,
+  "modelled": true,
+  "gap": 200,
+  "note": "Estimated for this site, not a published series: England's population divided by the average household of 4.44 people before 1750 and 4.81 after (Boulton, after Laslett); the band spans those two sizes. It counts households, which roughly equal homes: some homes were shared and some stood empty."
+ },
+ {
   "id": "temp_eng_lut",
   "theme": "Climate and atmosphere",
   "title": "Temperature, reconstructed",
@@ -1300,6 +1375,105 @@
   "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Republic of Ireland's half-degree land cells."
  },
  {
+  "id": "temp_iom_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Isle of Man",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "crucy_410"
+  ],
+  "file": "temp_iom_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Isle of Man's yearly mean fitted to the Central England Temperature over 1901–2025 (correlation 0.959; Isle of Man ≈ 1.558 + 0.783 × CET), then applied to CET before 1901. The band is ±1.96 × the fit's typical error (0.151 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_iom_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Isle of Man",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_iom_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Isle of Man's half-degree land cells (one cell: the island is smaller than the grid)."
+ },
+ {
+  "id": "temp_jer_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Jersey",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "crucy_410"
+  ],
+  "file": "temp_jer_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Jersey's yearly mean fitted to the Central England Temperature over 1901–2025 (correlation 0.93; Jersey ≈ 1.042 + 1.085 × CET), then applied to CET before 1901. The band is ±1.96 × the fit's typical error (0.28 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_jer_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Jersey",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_jer_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Jersey's half-degree land cells (one cell: the island is smaller than the grid)."
+ },
+ {
+  "id": "temp_gsy_cet",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, estimated from Central England",
+  "region": "Guernsey",
+  "unit": "°C",
+  "sources": [
+   "hadcet_annual",
+   "crucy_410"
+  ],
+  "file": "temp_gsy_cet.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Estimated here from Central England (band: 95%)",
+  "note": "Estimated for this site, not a published series: Guernsey's yearly mean fitted to the Central England Temperature over 1901–2025 (correlation 0.981; Guernsey ≈ 2.873 + 0.88 × CET), then applied to CET before 1901. The band is ±1.96 × the fit's typical error (0.112 °C); it assumes the two places varied together then as they do now."
+ },
+ {
+  "id": "temp_gsy_lut",
+  "theme": "Climate and atmosphere",
+  "title": "Temperature, reconstructed",
+  "region": "Guernsey",
+  "unit": "°C",
+  "sources": [
+   "luterbacher_seasonal"
+  ],
+  "file": "temp_gsy_lut.csv",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "label": "Reconstruction 1500–1900 (Luterbacher, Xoplaki)",
+  "note": "Luterbacher and Xoplaki's reconstruction of European seasonal temperatures from early instrumental records, documents and natural proxies, averaged over Guernsey's half-degree land cells (one cell: the island is smaller than the grid)."
+ },
+ {
   "id": "temp_global_pages2k",
   "theme": "Climate and atmosphere",
   "title": "World temperature, reconstructed",
@@ -1330,23 +1504,5 @@
   "zero": false,
   "label": "Temperature 12k (100-year steps, band: 5–95%)",
   "note": "Global mean from pollen, marine and lake records (median of five methods), as a difference from 1800–1900."
- },
- {
-  "id": "homes_eng_est",
-  "theme": "People and settlements",
-  "title": "Homes in England, estimated before 1801",
-  "region": "England",
-  "unit": "homes",
-  "label": "Estimated: people ÷ average household (band: 4.44–4.81 per household)",
-  "sources": [
-   "est_pop_eng_broadberry2011",
-   "est_pop_eng_wrigley1997",
-   "household_size_boulton"
-  ],
-  "file": "homes_eng_est.csv",
-  "hidden": true,
-  "modelled": true,
-  "gap": 200,
-  "note": "Estimated for this site, not a published series: England's population divided by the average household of 4.44 people before 1750 and 4.81 after (Boulton, after Laslett); the band spans those two sizes. It counts households, which roughly equal homes: some homes were shared and some stood empty."
  }
 ]

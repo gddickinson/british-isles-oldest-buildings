@@ -403,6 +403,7 @@ const Basemap = (() => {
     el.dataset.transportDone = "1";
     const [lat, lon] = el.dataset.transport.split(",").map(Number);
     const id = el.dataset.visit && encodeURIComponent(el.dataset.visit);
+    const stops = api(`/api/stops?lat=${lat}&lon=${lon}${id ? "&id=" + id : ""}`).catch(() => null);   // NaPTAN, Great Britain
     const [near, visit, dom, digs, rings] = await Promise.all([nearestStations(lat, lon).then((s) => s.slice(0, 3)),
       id ? api("/api/visiting/" + id).catch(() => null) : null, id ? api("/api/domesday/" + id).catch(() => null) : null,
       id ? api("/api/excavations/" + id).catch(() => []) : [], id ? api("/api/dendro/" + id).catch(() => []) : []]);
@@ -422,7 +423,10 @@ const Basemap = (() => {
         visit.website && `<a href="${esc(visit.website)}" target="_blank" rel="noopener">Visitor website</a>`].filter(Boolean);
       if (bits.length) lines.push(`<b>Visiting:</b> ${bits.join(" · ")} <span class="hint">(OpenStreetMap; check before you go)</span>`);
     }
-    if (near.length) lines.push(`<b>Getting there:</b> ${near.map((s) => `${s.icon} ${esc(s.name)} <span class="hint">${Prefs.dist(s.km, 1)}</span>`).join(" · ")}`);
+    const st = await stops, there = near.map((s) => `${s.icon} ${esc(s.name)} <span class="hint">${Prefs.dist(s.km, 1)}</span>`);
+    ((st && st.bus) || []).forEach((s) => there.push(`🚏 ${esc(s.name)}${s.locality ? `, ${esc(s.locality)}` : ""} <span class="hint">${Prefs.dist(s.km, 1)}</span>`));
+    ((st && st.ferry) || []).forEach((s) => there.push(`⛴️ ${esc(s.name)} <span class="hint">${Prefs.dist(s.km, 1)}</span>`));
+    if (there.length) lines.push(`<b>Getting there:</b> ${there.join(" · ")}`);
     el.innerHTML = lines.join("<br>");
   };
   const scan = (root) => root.querySelectorAll && root.querySelectorAll("[data-transport]:not([data-transport-done])").forEach(mountTransport);

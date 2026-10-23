@@ -179,7 +179,7 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
     """[(stage name, function)] for a full build (also run from the GUI by app/jobs.py)."""
     from . import (bridges, burials, dendro, depictions, digs, domesday, domesday_entries, era_places, hoards, institutions,
                    lore_places, mapping_museums, maritime, military, museums, nation_geo, oldest_checks, oldest_lists, on_this_day,
-                   places_build, pronunciations, sports, timeline, tours, trade_works, underground, wrecks, visiting)
+                   naptan, places_build, pronunciations, sports, timeline, tours, trade_works, underground, wrecks, visiting)
     from . import stories as stories_mod
     out = [("Buildings", lambda: run(cutoff))]
     if places:
@@ -198,7 +198,7 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
         out.append(("Paintings and prints", depictions.run))
         if stories:
             out += [("Stories", stories_mod.run), ("Timelines", timeline.run), ("Tours", tours.run),
-                    ("On this day", on_this_day.run), ("Visiting information", visiting.run)]
+                    ("On this day", on_this_day.run), ("Visiting information", visiting.run), ("Bus stops and ferries", naptan.run)]
     return out
 
 

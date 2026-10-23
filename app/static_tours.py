@@ -37,6 +37,15 @@ def export(conn, out_dir):
         from bidb.visiting import COLUMNS as VC
         visits = {r[0]: dict(zip(VC[1:], r[1:])) for r in conn.execute(f"SELECT {', '.join(VC)} FROM visiting")}
         (out_dir / "visiting.json").write_text(json.dumps(visits, ensure_ascii=False, separators=(",", ":")))
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'stops'").fetchone():
+        from bidb.naptan import near                 # catalogue buildings only: every bus stop is too much to host
+        stops = {}                                   # {record id: [[bus stop, locality, km], …, ferry or null]}
+        for rid, lat, lon in conn.execute("SELECT id, lat, lon FROM buildings WHERE lat IS NOT NULL"):
+            n = near(conn, lat, lon)
+            if n["bus"] or n["ferry"]:
+                stops[rid] = [[s["name"], s["locality"], s["km"]] for s in n["bus"]] + \
+                    [[n["ferry"][0]["name"], n["ferry"][0]["locality"], n["ferry"][0]["km"]] if n["ferry"] else None]
+        (out_dir / "stops.json").write_text(json.dumps(stops, ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'depictions'").fetchone():
         arts = {}                                    # {record id: [[title, creator, year, Commons file], …]}
         for rid, title, creator, year, image in conn.execute(

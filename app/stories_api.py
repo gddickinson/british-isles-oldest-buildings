@@ -27,6 +27,17 @@ def visiting(rid):
     return jsonify(visit(conn(), rid))
 
 
+@bp.route("/api/stops")
+def stops():
+    """Nearest bus stops and ferry terminal (NaPTAN, Great Britain) to ?lat=&lon=."""
+    from bidb.naptan import near
+    try:
+        lat, lon = float(request.args["lat"]), float(request.args["lon"])
+    except (KeyError, ValueError):
+        return jsonify({"bus": [], "ferry": []})
+    return jsonify(near(conn(), lat, lon))
+
+
 @bp.route("/api/depictions/<path:rid>")
 def depictions(rid):
     from bidb.depictions import for_record

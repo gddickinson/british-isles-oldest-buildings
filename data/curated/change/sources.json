@@ -690,11 +690,11 @@
  },
  "stat_abstract_uk": {
   "short": "Statistical Abstract for the UK",
-  "citation": "Board of Trade, Statistical Abstract for the United Kingdom (annual, HMSO), tables of articles retained for home consumption per head of the total population: editions 1861-1878 (pp. 48-49), 1878-1894 (pp. 74, 78-79), 1883-1898 (p. 85), 1897-1911 (pp. 164-165), 1910-1924 (pp. 104-105) and 1934-1938 (pp. 408-409); Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "citation": "Board of Trade, Statistical Abstract for the United Kingdom (annual, HMSO), tables of articles retained for home consumption, quantities (No. 8, 1846-1860, p. 21; No. 13, 1851-1865, pp. 38-39) and per head of the total population: No. 14 (1852-1866, pp. 42-43), editions 1861-1878 (pp. 48-49), 1878-1894 (pp. 74, 78-79), 1883-1898 (p. 85), 1897-1911 (pp. 164-165), 1910-1924 (pp. 104-105) and 1934-1938 (pp. 408-409); Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
   "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published before 1940",
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
-  "used": "Tea retained for home consumption per head, 1864-1938, read from the page images (edition, leaf and page per figure in data/tea_per_head_uk.csv); where editions differ, the latest edition read is used",
+  "used": "Tea retained for home consumption, 1846-1865 (million lb), and per head, 1852-1938, read from the page images (edition, leaf and page per figure in data/tea_retained_uk.csv and data/tea_per_head_uk.csv); where editions differ, the latest edition read is used",
   "checked": "2026-10-23, each figure read from the scan and compared with the OCR text and with the overlapping years of another edition"
  },
  "maff_food_supplies": {

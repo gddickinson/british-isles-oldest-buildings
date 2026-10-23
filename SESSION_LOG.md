@@ -514,3 +514,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Rationing dates (1940–52) were written from memory into the note and taken out again: still no citable source.
 - Tests 140 OK; ui_check `change_tea` now also requires the Ministry of Food line. Hosted copy not updated.
 - Next: C2d2/C2d3, or C3 (guilds, exchanges and trading houses).
+
+## 2026-10-23 — C1b dropped; C2d2a: tea before 1864
+- C1b (permission emails) dropped at George's request: the roadmap now names open stand-ins or quoted published
+  figures wherever an "ask" source was the best one (C3 livery companies, C4 closed firms, C5 occupations, trade,
+  prices, steam power and patents, C7 slavery); the README's "To ask" list is kept for later.
+- C2d2 split: C2d2a done, C2d2b (before 1846: quoted 18th-century estimates; totals after 1865) left open.
+- The 1852–1870 volume (Nos. 14–18) has the first table "Retained for Home Consumption, per Head of the Total
+  Population" (No. 14, pp. 42–43, leaves 46–47): tea 2.00 lb in 1852, 2.14, 2.24, 2.28, 2.26, 2.45, 2.58, 2.67,
+  2.67, 2.69, 2.70, 2.90 in 1863; 1864–66 (3.00, 3.29, 3.42) equal the figures already used. Read from the page
+  images (tea row cropped at full size); the OCR of Nos. 15–18 gives the same figures for the years they cover.
+- New graph "Tea retained for home consumption", UK 1846–1865 (million lb), from the 1846–1865 volume: No. 8
+  p. 21 (leaf 25) for 1846–50 and No. 13 pp. 38–39 (leaves 472–473) for 1851–65; the overlapping years in No. 9
+  and No. 13 agree to the pound. 46.7 million lb in 1846, 97.8 million in 1865. Page images are `page/n<leaf-1>`.
+- Nothing before 1852 per head: the Abstract prints no UK population before 1852 ("details for each division ...
+  cannot be readily ascertained for the years previous to 1854"), so no per-head figure was made up.
+- A duty history (rates 1853–65) went into the new graph's note from memory and was taken out again before commit.
+- Tests 140 OK; ui_check `change_tea` now also requires the new graph. Hosted copy not updated.
+- Next: C2d2b, C2d3 (duty and prices), or C3.

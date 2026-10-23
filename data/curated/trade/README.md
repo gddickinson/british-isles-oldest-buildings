@@ -38,6 +38,9 @@ Verdicts: **use** 32 (open licence), **quote figures** 17 (single published figu
   CC BY-SA 4.0; the rest non-commercial or no licence).
 
 ## To ask (user items)
+Not being asked for now (2026-10-23): the roadmap (C4, C5, C7, C8) uses open stand-ins and quoted published
+figures instead. Kept here in case permission is sought later.
+
 Bank of England millennium dataset (best compilation: wool and cloth exports from 1280, tea, cotton, shipping, wages
 and prices; personal or internal non-commercial use only), Cambridge Group occupational tables and steam-engine GIS,
 Kanefsky's Early Engines Database (spreadsheet by email; footer reserves all rights), Clark's prices and wages, Allen's

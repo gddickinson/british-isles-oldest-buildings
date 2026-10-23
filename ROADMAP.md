@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 96
+- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 97
   series, 47 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -26,8 +26,9 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       register (CC BY, incl. dissolved), Companies House Table A8 1939–, Federico–Tena trade 1800–1938 (CC BY), the
       Statistical Abstract 1840–1938 scans (out of copyright; tea, shipping, banks), IPO patents 1852–1915 (OGL),
       legislation.gov.uk Acts. Not open: the Bank of England millennium dataset, CAMPOP tables, Kanefsky's engines.
-- [ ] C1b (user) Ask permission (contacts in the README): Bank of England millennium dataset, CAMPOP occupations and
-      engines GIS, Kanefsky's engines, Clark, Allen, GPIH, MeasuringWorth, Legacies of British Slavery, Livery Committee.
+- [-] C1b Dropped (2026-10-23, George: no permission emails for now). The 12 "ask" sources stay listed in the
+      README for later; the plan below uses only open data and published figures quoted with page and quote. Where
+      an asked source was the best one, the open stand-in is named in the item (C4, C5, C7, C8).
 - [x] C2a (2026-10-23) Tea firms and events: 16 merchants and firms and 4 tea-room chains (Jacksons 1700 [firm's
       tradition, open], Twinings and Fortnum & Mason kept in the trade list, Horniman's 1826, Tetley 1837, Bewley's,
       Brooke Bond, Lipton, Whittard, Taylors, Mazawattee, Thompson's, Barry's, Typhoo, Clipper, Ahmad; Kardomah, A.B.C.,
@@ -46,9 +47,14 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       against the overlapping years of another edition → series `tea_supplies_uk` (source `maff_food_supplies`), a
       second line on "Tea drunk per person" (a different measure: 9.3 lb for 1934–38 against 9.5 in the Board of
       Trade series). 8.1 lb in 1941, 7.0 in 1943, 10.1 in 1956 (the peak), 7.5 in 1973. None for 1939–40.
-- [ ] C2d2 Tea before 1864: the 1846–1865 edition has totals only (divide by census population, or quote
-      Mitchell/Schumpeter per figure), the 18th-century imports (1.2 million lb 1721 → 24 million 1801, as quoted
-      estimates) and smuggling (4–7.5 million lb before 1784).
+- [x] C2d2a (2026-10-23) Tea before 1864 from the earliest Abstracts: per head 1852–1863 from the first per-head
+      table (No. 14, 1852–1866, pp. 42–43; 1864–66 match the later editions already used, and Nos. 15–18 agree in
+      their OCR), added to "Tea drunk per person" (2.00 lb in 1852, 2.90 in 1863); new graph "Tea retained for home
+      consumption", UK 1846–1865 in million lb (No. 8 p. 21 and No. 13 pp. 38–39; 1851–60 agree), 46.7 → 97.8.
+      The Abstract prints no per-head figure before 1852 and no yearly UK population before 1852, so none was made.
+- [ ] C2d2b Tea before 1846: 18th-century imports (1.2 million lb 1721 → 24 million 1801) and smuggling (4–7.5
+      million lb before 1784) as published estimates quoted with page (Schumpeter 1960, Mitchell 1988, Mui & Mui);
+      the totals graph continued after 1865 from the later editions' quantity tables.
 - [ ] C2d3 Tea duty per lb and average import price (Abstract "Average prices" table: 9.36d a lb 1897 → 7.24d 1904).
 - [ ] C2d4 Tea after 1974: the Abstracts to 1975 are read; later years from MAFF/Defra's National Food Survey or
       HMRC HS 0902 (OGL), each with its definition; a citable source for tea rationing (1940–52).
@@ -63,15 +69,24 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       merchant adventurers' and merchants' halls, cloth and wool halls, exchanges and stock exchanges, coffee
       houses, counting houses, trading-company headquarters and warehouses, banks with founding dates; the
       researched oldest of each (oldest lists + evidence), people linked as founders, masters and merchants.
+      Livery companies from Wikidata and Wikipedia's table with each fact sourced (not the Livery Committee
+      database).
 - [ ] C4 Firms through time: businesses founded in the isles with founding and closing years (Wikidata; Companies
       House for living firms, OGL) → a map layer of firms open at the slider's year (kind `spans`, by industry) and
       graphs of firms founded per decade by industry; survivorship bias stated (the record keeps the firms that
-      lasted or became famous).
+      lasted or became famous). Closed firms from Wikidata closing years and Ireland's CRO register (CC BY,
+      dissolved companies included); Companies House's dissolved companies (API key) not used.
 - [ ] C5 Trade and work graphs (with estimates and models compared): occupations by sector (farming / making /
       services) 1379–today, overseas trade (imports, exports, re-exports) and the main goods (wool, cloth, tea,
       sugar, tobacco, cotton, linen, coal, iron), shipping tonnage, patents per year, steam power, banks and
       companies registered, prices and real wages; each with its source and the published estimates before
-      the statistics.
+      the statistics. Open or quoted stand-ins for the sources not asked for: occupations from OWID's farming
+      share and the ONS 1861– series, with Shaw-Taylor & Wrigley 2014 and Keibek 2017 quoted per figure (not the
+      CAMPOP tables); trade and goods from Federico–Tena and the Statistical Abstract scans, with Davis 1962,
+      Schumpeter and Mitchell quoted before 1800 (not the Bank of England dataset); prices from ONS RPI 1800– and
+      Phelps Brown–Hopkins quoted per figure (not Clark, Allen, GPIH or MeasuringWorth series); steam power as
+      quoted totals (Kanefsky's published counts, Nuvolari) plus the engine houses and mills already on the map
+      (not the engines database or its GIS); patents from the IPO 1852–1915 (OGL) and Bottomley 2014 quoted.
 - [ ] C6 Innovations: inventions and firsts made in the isles (Wikidata inventor and place, researched list with
       sources), on the map and the slider, linked to the buildings and places where they were made or used
       (mills, works, mines, engine houses, exchanges).
@@ -79,7 +94,8 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       Staple, Navigation Acts, the Bubble Act, enclosure, Corn Laws and their repeal, Combination Acts, joint-stock
       and limited-liability Acts (1844, 1855–56), Factory Acts, co-operatives (Rochdale 1844), trade unions
       (Tolpuddle 1834, TUC 1868), Big Bang 1986; the Atlantic slave trade and abolition (1807, 1833) treated plainly,
-      with the firms, ports and fortunes involved.
+      with the firms, ports and fortunes involved (from published histories and Acts, quoted; the Legacies of
+      British Slavery database only linked, not used as data).
 - [ ] C8 Trade stories: one page per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and
       steel, fishing, brewing and distilling, banking and finance), each with a timeline, its places on the map,
       graphs, the people, and cited analysis notes (E5 style, both sides where historians disagree: e.g. wool and

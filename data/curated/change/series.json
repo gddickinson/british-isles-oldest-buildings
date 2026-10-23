@@ -1209,6 +1209,20 @@
   "note": "Fairs recorded by each date."
  },
  {
+  "id": "tea_retained_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea retained for home consumption",
+  "region": "United Kingdom",
+  "unit": "million lb",
+  "unit_long": "million pounds of tea retained for home consumption a year",
+  "label": "Tea retained for home consumption (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_retained_uk.csv",
+  "note": "The whole quantity of tea retained for home consumption: in the Abstract's words, found \"by deducting the Quantities Over-Entered, and those Exported subsequently to the payment of the Duties, from the Quantities Entered for Home Consumption in the first instance\", from the Board of Trade's earliest Statistical Abstracts, 1846-1865. Ireland included. Editions Nos. 8 and 13 read from the page images; the overlapping years (1851-1860) agree. The quantity doubled in those twenty years (46.7 million lb in 1846, 97.8 million in 1865)."
+ },
+ {
   "id": "tea_per_head_uk",
   "theme": "Prosperity and work",
   "title": "Tea drunk per person",
@@ -1220,7 +1234,7 @@
    "stat_abstract_uk"
   ],
   "file": "tea_per_head_uk.csv",
-  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used. From 1941 the Ministry of Food's (later MAFF's) estimated supplies per head are shown as a second line: a different measure (supplies moving into consumption; per head of the civilian population to 1947), which gives 9.3 lb for 1934-38 against 9.5 here. The Abstracts read give no figures for 1939-40.",
+  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade; the first per-head table (No. 14, covering 1852-1866) starts in 1852. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used. From 1941 the Ministry of Food's (later MAFF's) estimated supplies per head are shown as a second line: a different measure (supplies moving into consumption; per head of the civilian population to 1947), which gives 9.3 lb for 1934-38 against 9.5 here. The Abstracts read give no figures for 1939-40.",
   "models": [
    "tea_supplies_uk"
   ]

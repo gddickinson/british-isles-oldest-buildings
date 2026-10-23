@@ -30,7 +30,8 @@ def _num(v):
 
 
 def read_points(path):
-    """[[year, value, low?, high?]] sorted by year; rows without a value are left out."""
+    """[[year, value, low?, high?, label?]] sorted by year; rows without a value are left out. A `label` column (whose
+    estimate a point is) gives [year, value, low or None, high or None, label]."""
     with open(path, newline="") as f:
         rows = list(csv.DictReader(f))
     pts = []
@@ -41,6 +42,8 @@ def read_points(path):
         lo, hi = _num(r.get("low")), _num(r.get("high"))
         if lo is not None and hi is not None:
             p += [lo, hi]
+        if r.get("label"):
+            p += [None, None][len(p) - 2:] + [r["label"]]
         pts.append(p)
     return sorted(pts, key=lambda p: p[0])
 

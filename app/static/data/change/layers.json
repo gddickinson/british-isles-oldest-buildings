@@ -181,6 +181,186 @@
    "modelled": true
   },
   {
+   "id": "hyde_grazing",
+   "title": "Pasture and grazing (modelled)",
+   "kind": "grid",
+   "years": [
+    -4000,
+    -3000,
+    -2000,
+    -1000,
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1750,
+    1800,
+    1850,
+    1900,
+    1950,
+    2000,
+    2017
+   ],
+   "file": "layers/hyde_grazing.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of land",
+   "legend": [
+    {
+     "color": "#f3ecd2",
+     "label": "1–5"
+    },
+    {
+     "color": "#e6d9a8",
+     "label": "5–10"
+    },
+    {
+     "color": "#d6c27c",
+     "label": "10–20"
+    },
+    {
+     "color": "#c2a956",
+     "label": "20–30"
+    },
+    {
+     "color": "#a98f3b",
+     "label": "30–40"
+    },
+    {
+     "color": "#8b742a",
+     "label": "40–55"
+    },
+    {
+     "color": "#6b591f",
+     "label": "55–70"
+    },
+    {
+     "color": "#4a3d15",
+     "label": "70+"
+    }
+   ],
+   "note": "Land grazed by livestock as a share of each cell: managed pasture and rough grazing (rangeland) together, from HYDE's country estimates spread by climate and population.",
+   "source": {
+    "short": "HYDE 3.2.1 (Klein Goldewijk et al. 2017)",
+    "citation": "Klein Goldewijk, K., Beusen, A., Doelman, J., Stehfest, E. (2017) Anthropogenic land use estimates for the Holocene – HYDE 3.2. Earth System Science Data 9:927–953, doi:10.5194/essd-9-927-2017. Data: HYDE 3.2.1 baseline, DANS, doi:10.17026/dans-25g-gez3",
+    "licence": "CC BY 3.0",
+    "url": "https://doi.org/10.17026/dans-25g-gez3"
+   },
+   "modelled": true
+  },
+  {
+   "id": "hyde_uopp",
+   "title": "Built-up area (modelled)",
+   "kind": "grid",
+   "years": [
+    -4000,
+    -3000,
+    -2000,
+    -1000,
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1750,
+    1800,
+    1850,
+    1900,
+    1950,
+    2000,
+    2017
+   ],
+   "file": "layers/hyde_uopp.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of land",
+   "legend": [
+    {
+     "color": "#ece3ee",
+     "label": "0.2–0.5"
+    },
+    {
+     "color": "#dccbe0",
+     "label": "0.5–1"
+    },
+    {
+     "color": "#c9afd0",
+     "label": "1–2"
+    },
+    {
+     "color": "#b391bd",
+     "label": "2–5"
+    },
+    {
+     "color": "#9b72a8",
+     "label": "5–10"
+    },
+    {
+     "color": "#82548f",
+     "label": "10–20"
+    },
+    {
+     "color": "#673a73",
+     "label": "20–40"
+    },
+    {
+     "color": "#4b2554",
+     "label": "40+"
+    }
+   ],
+   "note": "Towns and other built-up land as a share of each cell, modelled by HYDE from its urban population estimates and typical town densities; compare the satellite built-up layer for 1975 and 2020.",
+   "source": {
+    "short": "HYDE 3.2.1 (Klein Goldewijk et al. 2017)",
+    "citation": "Klein Goldewijk, K., Beusen, A., Doelman, J., Stehfest, E. (2017) Anthropogenic land use estimates for the Holocene – HYDE 3.2. Earth System Science Data 9:927–953, doi:10.5194/essd-9-927-2017. Data: HYDE 3.2.1 baseline, DANS, doi:10.17026/dans-25g-gez3",
+    "licence": "CC BY 3.0",
+    "url": "https://doi.org/10.17026/dans-25g-gez3"
+   },
+   "modelled": true
+  },
+  {
    "id": "geology",
    "title": "Bedrock geology (by period)",
    "kind": "geojson",
@@ -277,6 +457,76 @@
    ]
   },
   {
+   "id": "stations",
+   "title": "Railway stations open",
+   "kind": "spans",
+   "file": "layers/stations.json",
+   "years": [
+    1825,
+    1830,
+    1835,
+    1840,
+    1845,
+    1850,
+    1855,
+    1860,
+    1865,
+    1870,
+    1875,
+    1880,
+    1885,
+    1890,
+    1895,
+    1900,
+    1905,
+    1910,
+    1915,
+    1920,
+    1925,
+    1930,
+    1935,
+    1940,
+    1945,
+    1950,
+    1955,
+    1960,
+    1965,
+    1970,
+    1975,
+    1980,
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020,
+    2025
+   ],
+   "labels": {},
+   "unit": "",
+   "legend": [
+    {
+     "color": "#2a5d8f",
+     "label": "Open"
+    },
+    {
+     "color": "#b9b2a8",
+     "label": "Closed by then (where known)"
+    }
+   ],
+   "note": "9,282 railway stations with an opening year on Wikidata, from the first passenger lines of the 1820s. Closing dates are recorded for only 1,016 of them, so many stations closed in the 1950s–60s still show as open: the growth of the network is clearer than its contraction. Tram and metro stops are left out.",
+   "sources": [
+    {
+     "short": "Wikidata (railway stations)",
+     "licence": "CC0",
+     "url": "https://www.wikidata.org/wiki/Q55488",
+     "citation": "Wikidata contributors, railway stations (Q55488 and subclasses) with opening (P1619) and closing (P3999, P576) dates, queried 2026"
+    }
+   ]
+  },
+  {
    "id": "ghsl_built",
    "title": "Built-up land from satellites",
    "kind": "grid",
@@ -333,6 +583,78 @@
      "licence": "© European Union; reuse with acknowledgement",
      "url": "https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php",
      "citation": "Pesaresi, M. (2023) GHS-BUILT-S R2023A – GHS built-up surface grid, derived from Sentinel-2 composite and Landsat, multitemporal (1975–2030). European Commission, Joint Research Centre, doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA. © European Union, 1995–2025"
+    }
+   ]
+  },
+  {
+   "id": "ghs_pop",
+   "title": "People per km² from satellites and censuses",
+   "kind": "grid",
+   "years": [
+    1975,
+    1980,
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020
+   ],
+   "file": "layers/ghs_pop.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "people per km²",
+   "legend": [
+    {
+     "color": "#f6e3c8",
+     "label": "1–10"
+    },
+    {
+     "color": "#efc795",
+     "label": "10–50"
+    },
+    {
+     "color": "#e6a866",
+     "label": "50–150"
+    },
+    {
+     "color": "#d68a43",
+     "label": "150–500"
+    },
+    {
+     "color": "#bf6d2c",
+     "label": "500–1000"
+    },
+    {
+     "color": "#9f5420",
+     "label": "1000–2500"
+    },
+    {
+     "color": "#7a3e17",
+     "label": "2500–5000"
+    },
+    {
+     "color": "#55290f",
+     "label": "5000+"
+    }
+   ],
+   "note": "Census counts spread over the built-up areas seen by satellites (EU Global Human Settlement Layer), every five years from 1975 to 2020, in cells of about 1 by 2 km. Before 1975 nothing is drawn; for earlier centuries see the modelled people per km² (HYDE).",
+   "sources": [
+    {
+     "short": "GHSL population grid R2023A",
+     "licence": "© European Union; reuse with acknowledgement",
+     "url": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
+     "citation": "Schiavina, M., Freire, S., Carioli, A., MacManus, K. (2023) GHS-POP R2023A – GHS population grid multitemporal (1975–2030). European Commission, Joint Research Centre, doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE. © European Union, 1995–2025"
     }
    ]
   },

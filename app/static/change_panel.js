@@ -43,28 +43,30 @@ const ChangePanel = (() => {
     }
     range.value = String(store.get(RANGE_KEY, "fit"));
 
+    const modelsOf = (s) => (s.models || []).map((id) => all.find((x) => x.id === id)).filter(Boolean);
     const chosen = () => new Set(store.get(KEY, null) ?? all.filter((s) => s.default).map((s) => s.id));
     function drawList() {
-      const on = chosen(), themes = [...new Set(all.map((s) => s.theme))];
-      list.innerHTML = themes.map((t) => `<div class="cp-theme"><b>${esc(t)}</b>${all.filter((s) => s.theme === t).map((s) =>
+      const on = chosen(), listed = all.filter((s) => !s.hidden), themes = [...new Set(listed.map((s) => s.theme))];
+      list.innerHTML = themes.map((t) => `<div class="cp-theme"><b>${esc(t)}</b>${listed.filter((s) => s.theme === t).map((s) =>
         `<label class="check"><input type="checkbox" value="${esc(s.id)}" ${on.has(s.id) ? "checked" : ""}> ${esc(s.title)}</label>`)
         .join("")}</div>`).join("");
     }
     function drawCharts() {
       const on = chosen();
-      const shown = all.filter((s) => on.has(s.id));
+      const shown = all.filter((s) => on.has(s.id) && !s.hidden);
       charts.innerHTML = shown.length ? "" : `<p class="hint">No graphs chosen — open “Choose graphs”.</p>`;
       shown.forEach((s) => {
-        const v = year != null ? ChangeCharts.valueAt(s, year) : null;
+        const v = year != null ? ChangeCharts.valueAt(s, year) : null, models = modelsOf(s);
+        const approx = v != null && ChangeCharts.bridged(s, year) ? "≈ " : "";
         const item = document.createElement("div");
         item.className = "cc-item";
         item.innerHTML = `<div class="cc-title">${esc(s.title)}${s.region ? ` <span class="cc-region">${esc(s.region)}</span>` : ""}
-            <span class="cc-now">${v != null ? `${ChangeCharts.fmt(v, s.unit)} in ${ChangeCharts.yearText(year)}` : esc(s.unit_long || s.unit || "")}</span></div>
+            <span class="cc-now">${v != null ? `${approx}${ChangeCharts.fmt(v, s.unit)} in ${ChangeCharts.yearText(year)}` : esc(s.unit_long || s.unit || "")}</span></div>
           <div class="cc-plot"></div>
-          <div class="cc-src">${sourceLine(s, sources)}${s.note ? ` <button type="button" class="cc-more" aria-expanded="false">notes</button>` : ""}</div>
+          <div class="cc-src">${[s, ...models].map((m) => sourceLine(m, sources)).filter((x, i, a) => x && a.indexOf(x) === i).join("; ")}${s.note ? ` <button type="button" class="cc-more" aria-expanded="false">notes</button>` : ""}</div>
           ${s.note ? `<p class="cc-note" hidden>${esc(s.note)}</p>` : ""}`;
         charts.appendChild(item);
-        ChangeCharts.draw(item.querySelector(".cc-plot"), s, { ...ChangeCharts.span(s, range.value), year });
+        ChangeCharts.draw(item.querySelector(".cc-plot"), s, { ...ChangeCharts.span(s, range.value, models), year, models });
       });
     }
     list.addEventListener("change", () => {
@@ -106,5 +108,5 @@ const ChangePanel = (() => {
     };
   }
 
-  return { mount, load };
+  return { mount, load, sourceLine };
 })();

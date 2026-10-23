@@ -1,5 +1,6 @@
 """More map layers for "Change over time" (roadmap E3), drawn from grids prepared once from the published data
-(data/curated/change/layers/, see its README.md): built-up land from satellites (GHSL, 1975 and 2020), land cover
+(data/curated/change/layers/, see its README.md): built-up land from satellites (GHSL, 1975 and 2020), people
+per km² (GHS-POP, 1975–2020), land cover
 (CORINE 2000–2018), tree cover from pollen through the Holocene (LandClimII REVEALS, 1° cells), ancient woodland,
 agricultural land grades (England), superficial geology (Great Britain), and towns and cities by size (Buringh,
 700–2000) as dots that follow the year slider.
@@ -23,6 +24,16 @@ SOURCES = {
              "citation": "Pesaresi, M. (2023) GHS-BUILT-S R2023A – GHS built-up surface grid, derived from Sentinel-2 "
                          "composite and Landsat, multitemporal (1975–2030). European Commission, Joint Research Centre, "
                          "doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA. © European Union, 1995–2025"},
+    "ghs_pop": {"short": "GHSL population grid R2023A", "licence": "© European Union; reuse with acknowledgement",
+                "url": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
+                "citation": "Schiavina, M., Freire, S., Carioli, A., MacManus, K. (2023) GHS-POP R2023A – GHS population "
+                            "grid multitemporal (1975–2030). European Commission, Joint Research Centre, "
+                            "doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE. © European Union, 1995–2025"},
+    "cru": {"short": "CRU TS 4.10 (Harris et al. 2020)", "licence": "Open Database License (ODbL)",
+            "url": "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.10/",
+            "citation": "Harris, I., Osborn, T.J., Jones, P., Lister, D. (2020) Version 4 of the CRU TS monthly "
+                        "high-resolution gridded multivariate climate dataset. Scientific Data 7:109, "
+                        "doi:10.1038/s41597-020-0453-3; data CRU TS v4.10, University of East Anglia Climatic Research Unit"},
     "corine": {"short": "CORINE Land Cover", "licence": "Copernicus free and open data (attribution)",
                "url": "https://land.copernicus.eu/en/products/corine-land-cover",
                "citation": "Generated using European Union's Copernicus Land Monitoring Service information: CORINE Land "
@@ -98,6 +109,57 @@ def built():
                   "Share of the ground covered by buildings, mapped by the EU's Global Human Settlement Layer from "
                   "Landsat and Sentinel-2 images, in cells of about 1 by 2 km. Shown for 1975 and 2020; before 1975 "
                   "nothing is drawn.", [SOURCES["ghsl"]], "% of the ground under buildings")
+
+
+def people():
+    from .change_layers import LAYERS
+    edges, colors = [1, 10, 50, 150, 500, 1000, 2500, 5000], LAYERS["popd"]["colors"]
+    pack = {y: _uri(_grid(f"ghs_pop_{y}")["rows"], edges, colors, 60) for y in range(1975, 2021, 5)}
+    return _layer("ghs_pop", "People per km² from satellites and censuses", pack, _legend(edges, colors),
+                  "Census counts spread over the built-up areas seen by satellites (EU Global Human Settlement Layer), "
+                  "every five years from 1975 to 2020, in cells of about 1 by 2 km. Before 1975 nothing is drawn; "
+                  "for earlier centuries see the modelled people per km² (HYDE).", [SOURCES["ghs_pop"]], "people per km²")
+
+
+WARM = ["#3b6fb6", "#8fb3dc", "#d9d4cc", "#f2c4a0", "#e6905f", "#cc5a37", "#9e2a1f"]   # diverging, grey at "no change"
+WET = ["#8c5a2b", "#c9a26b", "#d9d4cc", "#9cc9c1", "#4f9c95", "#1f6d6a"]
+
+
+def climate():
+    """Decade averages from CRU TS against 1901–1930: temperature difference (°C) and rainfall (% of 1901–1930)."""
+    if not (SRC / "cru_decades.json.gz").exists():     # prepared by prepare_rasters.py cru
+        return []
+    with gzip.open(SRC / "cru_decades.json.gz", "rt") as f:
+        d = json.load(f)
+    out = []
+    for var, lid, title, edges, colors, unit, note in (
+            ("tmp", "cru_temp", "Warmer or cooler than 1901–1930", [-99, -0.45, -0.15, 0.15, 0.45, 0.75, 1.05], WARM, "°C",
+             "Average temperature of each decade compared with 1901–1930, in squares of half a degree (about 55 km), "
+             "from weather-station records interpolated by the Climatic Research Unit. Grey is within 0.15 °C of the "
+             "early-20th-century average."),
+            ("pre", "cru_rain", "Wetter or drier than 1901–1930", [-99, 90, 96, 104, 110, 116], WET, "% of 1901–1930",
+             "Average yearly rainfall of each decade as a share of 1901–1930, in squares of half a degree, from "
+             "rain-gauge records interpolated by the Climatic Research Unit. Grey is within 4% of the "
+             "early-20th-century average.")):
+        dec = {int(k): v for k, v in d[var].items()}
+        base = [[_mean([dec[y][r][c] for y in (1901, 1911, 1921)]) for c in range(len(dec[1901][0]))]
+                for r in range(len(dec[1901]))]
+        pack = {}
+        for y, rows in dec.items():
+            pack[y] = _uri([[None if v is None or b is None else (v - b if var == "tmp" else 100 * v / b if b else None)
+                             for v, b in zip(row, brow)] for row, brow in zip(rows, base)], edges, colors, d["per_deg"])
+        labels = {y: f"{y}–{min(y + 9, 2025)}" for y in dec}
+        legend = _legend(edges, colors)
+        legend[0]["label"] = f"below {edges[1]:g}"
+        meta = _layer(lid, title, pack, legend, note, [SOURCES["cru"]], unit)
+        meta["labels"] = labels
+        out.append(meta)
+    return out
+
+
+def _mean(vals):
+    vals = [v for v in vals if v is not None]
+    return sum(vals) / len(vals) if vals else None
 
 
 CORINE = [("Towns, industry and mines", "#c0392b"), ("Arable land", "#f2d35e"), ("Pasture", "#b9dc7a"),
@@ -202,7 +264,7 @@ def cities():
 
 
 def run(log=print):
-    layers = [built(), land_cover(), pollen_trees(), ancient_woodland(), land_grades(), superficial(), cities()]
+    layers = [built(), people(), *climate(), land_cover(), pollen_trees(), ancient_woodland(), land_grades(), superficial(), cities()]
     ids = {l["id"] for l in layers}
     path = OUT / "layers.json"
     old = json.loads(path.read_text())["layers"] if path.exists() else []

@@ -39,6 +39,17 @@ LAYERS = {
                  "colors": ["#e8f2d9", "#cfe5b0", "#b1d487", "#8fc061", "#6ca842", "#4c8d2e", "#357023", "#22531a"],
                  "note": "Arable land as a share of each cell, from HYDE's country estimates spread by soil suitability "
                          "and population; pasture and grazing are not included."},
+    "grazing": {"title": "Pasture and grazing (modelled)", "file": "grazing{y}.asc", "dir": "lu", "unit": "% of land",
+                "share": True, "edges": [1, 5, 10, 20, 30, 40, 55, 70],
+                "colors": ["#f3ecd2", "#e6d9a8", "#d6c27c", "#c2a956", "#a98f3b", "#8b742a", "#6b591f", "#4a3d15"],
+                "note": "Land grazed by livestock as a share of each cell: managed pasture and rough grazing "
+                        "(rangeland) together, from HYDE's country estimates spread by climate and population."},
+    "uopp": {"title": "Built-up area (modelled)", "file": "uopp_{y}.asc", "dir": "pop", "unit": "% of land",
+             "share": True, "edges": [0.2, 0.5, 1, 2, 5, 10, 20, 40],
+             "colors": ["#ece3ee", "#dccbe0", "#c9afd0", "#b391bd", "#9b72a8", "#82548f", "#673a73", "#4b2554"],
+             "note": "Towns and other built-up land as a share of each cell, modelled by HYDE from its urban "
+                     "population estimates and typical town densities; compare the satellite built-up layer for 1975 "
+                     "and 2020."},
 }
 
 

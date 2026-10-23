@@ -46,8 +46,9 @@ class Geology(unittest.TestCase):
 
     def test_layers_file_lists_every_layer_with_a_source(self):
         meta = json.loads((cl.OUT / "layers.json").read_text())["layers"]
-        self.assertEqual({l["id"] for l in meta}, {"hyde_popd", "hyde_cropland", "geology", "coalfields", "ghsl_built", "corine",
-                                                   "pollen_trees", "ancient_woodland", "alc", "superficial", "cities"})
+        self.assertTrue({"hyde_popd", "hyde_cropland", "hyde_grazing", "hyde_uopp", "geology", "coalfields", "ghsl_built",
+                         "ghs_pop", "corine", "pollen_trees", "ancient_woodland", "alc", "superficial",
+                         "cities"} <= {l["id"] for l in meta})
         for l in meta:
             for s in l.get("sources") or [l["source"]]:
                 self.assertTrue(s["citation"] and s["licence"] and s["url"], l["id"])

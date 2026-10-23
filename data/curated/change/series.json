@@ -29,6 +29,59 @@
   "modelled": true
  },
  {
+  "id": "pop_isles",
+  "theme": "People and settlements",
+  "title": "Population of Britain and Ireland, two long-run estimates",
+  "region": "all the isles",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "label": "HYDE 3.2 (UK + Ireland)",
+  "modelled": true,
+  "models": [
+   "pop_isles_maddison"
+  ],
+  "file": "pop_isles_hyde.csv",
+  "default": false,
+  "note": "HYDE's United Kingdom and Ireland added together, so the whole of the isles. Modelled by the HYDE 3.2 history database from historical and archaeological population estimates, spread over the land by models; before about 1800 these are estimates with wide uncertainty (not shown by the source), and early millennia rest on very few figures."
+ },
+ {
+  "id": "pop_isles_maddison",
+  "theme": "People and settlements",
+  "title": "Population of Britain and Ireland (Maddison)",
+  "region": "all the isles",
+  "unit": "people",
+  "unit_long": "people",
+  "sources": [
+   "gdppc_maddison2023"
+  ],
+  "label": "Maddison Project 2023",
+  "hidden": true,
+  "file": "pop_isles_maddison.csv",
+  "note": "The Maddison Project's 'United Kingdom' includes the whole of Ireland until 1920 (its 1913 figure is Great Britain plus the whole island); from 1921 its Ireland row (the Free State) is added. Years before 1500 are left out because the territory they cover is not stated."
+ },
+ {
+  "id": "pop_eng_long",
+  "theme": "People and settlements",
+  "title": "Population of England before the census, competing estimates",
+  "region": "England",
+  "unit": "people",
+  "unit_long": "people",
+  "label": "Broadberry, Campbell & van Leeuwen 2011",
+  "sources": [
+   "est_pop_eng_broadberry2011"
+  ],
+  "file": "pop_eng_broadberry.csv",
+  "models": [
+   "pop_eng_wrigley",
+   "pop_eng_others"
+  ],
+  "gap": 200,
+  "note": "Historians disagree most about the peak before the Black Death: from about 3.7 million (Russell) to about 6 million (Postan, Clark). Broadberry, Campbell and van Leeuwen's series (1086–1541) is built from manorial and tax records; Wrigley and colleagues' (1541–1801, England without Monmouthshire) from parish registers. Dots are other published estimates, with their ranges; hover for whose each is. The censuses begin in 1801."
+ },
+ {
   "id": "pop_ew",
   "theme": "People and settlements",
   "title": "Population at each census",
@@ -53,7 +106,11 @@
    "pop_scotland_nrs"
   ],
   "note": "",
-  "file": "pop_scot.csv"
+  "file": "pop_scot.csv",
+  "models": [
+   "pop_scot_early"
+  ],
+  "label": "National Records of Scotland"
  },
  {
   "id": "pop_ni",
@@ -67,6 +124,24 @@
   ],
   "note": "Census years to 1961 (the area of the six counties before 1921), annual estimates from 1971.",
   "file": "pop_ni.csv"
+ },
+ {
+  "id": "pop_ireland_long",
+  "theme": "People and settlements",
+  "title": "Population of Ireland before the census, competing estimates",
+  "region": "Ireland (whole island)",
+  "unit": "people",
+  "unit_long": "people",
+  "label": "Connell 1950",
+  "sources": [
+   "est_pop_irl_connell1950"
+  ],
+  "file": "pop_irl_connell.csv",
+  "models": [
+   "pop_ireland_ddog",
+   "pop_ireland_others"
+  ],
+  "note": "Before the first full census of 1821 Ireland's population is estimated from hearth-tax returns, which scholars correct in different ways: Connell's figures are higher than Daultrey, Dickson and Ó Gráda's (shown with their ranges). Dots are other estimates, from medieval guesses to contemporary counts such as Petty's of 1672. All are for the whole island; the census graph for Ireland covers the 26 counties of the State."
  },
  {
   "id": "pop_ie",
@@ -119,9 +194,14 @@
   "sources": [
    "urban_share_un_wup"
   ],
-  "note": "UN estimates by each country's own definition of urban; no comparable open series before 1950.",
+  "note": "UN estimates by each country's own definition of urban; before 1950 HYDE's modelled share is shown for comparison (a different definition of urban).",
   "file": "urban_uk.csv",
-  "zero": false
+  "zero": false,
+  "models": [
+   "urban_hyde_uk",
+   "urban_hist_gb"
+  ],
+  "label": "UN World Urbanization Prospects"
  },
  {
   "id": "urban_ie",
@@ -133,9 +213,14 @@
   "sources": [
    "urban_share_un_wup"
   ],
-  "note": "UN estimates by each country's own definition of urban.",
+  "note": "UN estimates by each country's own definition of urban. Before 1950 HYDE's modelled share is shown for comparison (a different definition of urban).",
   "file": "urban_ie.csv",
-  "zero": false
+  "zero": false,
+  "models": [
+   "urban_hyde_ie",
+   "urban_hist_ie"
+  ],
+  "label": "UN World Urbanization Prospects"
  },
  {
   "id": "dwellings_eng",
@@ -176,6 +261,23 @@
   ],
   "note": "",
   "file": "life_ie.csv"
+ },
+ {
+  "id": "markets_eng",
+  "theme": "Prosperity and work",
+  "title": "Markets recorded in England (running total)",
+  "region": "England",
+  "unit": "markets",
+  "unit_long": "markets recorded so far",
+  "label": "Markets (Letters 2003)",
+  "sources": [
+   "est_markets_eng_letters2003"
+  ],
+  "file": "markets_eng.csv",
+  "models": [
+   "fairs_eng"
+  ],
+  "note": "How many places had a market recorded by each date (most by royal grant), from Letters' Gazetteer of Markets and Fairs in England and Wales to 1516. A grant does not mean a market thrived: many lapsed."
  },
  {
   "id": "gdppc_uk",
@@ -247,6 +349,26 @@
   "default": false
  },
  {
+  "id": "wood_ireland_hist",
+  "theme": "Land and farming",
+  "title": "Woodland cover of Ireland, historical estimates",
+  "region": "Ireland",
+  "unit": "%",
+  "unit_long": "% of land",
+  "label": "Historical estimates",
+  "style": "estimates",
+  "sources": [
+   "est_wood_irl_mccracken1971",
+   "est_wood_irl_rackham1995",
+   "est_wood_irl_later"
+  ],
+  "file": "wood_ireland_hist.csv",
+  "models": [
+   "trees_ie"
+  ],
+  "note": "How much of Ireland was wooded in 1600 is disputed: McCracken's 'at least one eighth' against far lower figures from the Civil Survey of the 1650s (Rackham). By 1700 under 2%; about 1% in 1920 (26 counties). Compared with tree cover reconstructed from pollen."
+ },
+ {
   "id": "wood_ni",
   "theme": "Land and farming",
   "title": "Woodland cover",
@@ -270,9 +392,13 @@
   "sources": [
    "fr_woodland_cover"
   ],
-  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories.",
+  "note": "Values before 1905 are approximate estimates (Domesday Book, Smout's Scottish Woodland History, the Roy Military Survey) given in the statistics' notes; the woodland definition changed between later inventories. Compared with tree cover from pollen for Great Britain, a different measure (all trees, from pollen models) of a slightly different area.",
   "file": "wood_uk.csv",
-  "default": false
+  "default": false,
+  "models": [
+   "trees_gb"
+  ],
+  "label": "Forestry statistics (UK)"
  },
  {
   "id": "trees_gb",
@@ -286,7 +412,8 @@
   ],
   "note": "Tree cover reconstructed from pollen in lake and bog cores (the REVEALS model), averaged over 1° cells with an estimate; one value per time window (500 years before 1000 BC, shorter later). The band is ±1 standard error; which cells have data changes between windows.",
   "file": "trees_gb.csv",
-  "default": true
+  "default": true,
+  "label": "Tree cover from pollen, Great Britain (REVEALS)"
  },
  {
   "id": "trees_ie",
@@ -380,7 +507,11 @@
   ],
   "note": "Before 1913 the source gives 10-year averages (plotted at each decade's middle year); yearly from 1913.",
   "file": "coal_uk.csv",
-  "default": true
+  "default": true,
+  "models": [
+   "coal_early"
+  ],
+  "label": "Official statistics (DESNZ)"
  },
  {
   "id": "coal_jobs_uk",
@@ -392,7 +523,7 @@
   "sources": [
    "desnz_coal_1853"
   ],
-  "note": "Before 1913 the source gives 10-year averages (plotted at each decade's middle year); yearly from 1913.",
+  "note": "Before 1913 the source gives 10-year averages (plotted at each decade's middle year); yearly from 1913. No employment figure is given for the strike years 1921 and 1926.",
   "file": "coal_jobs_uk.csv"
  },
  {
@@ -550,7 +681,8 @@
   "note": "Ice-core air bubbles from Antarctica (well mixed worldwide), then measured in the open air. Joined from the sources named, each over its own years.",
   "file": "co2.csv",
   "zero": false,
-  "default": true
+  "default": true,
+  "gap": 2000
  },
  {
   "id": "ch4",
@@ -566,7 +698,8 @@
   ],
   "note": "Ice-core air bubbles from Antarctica (well mixed worldwide), then measured in the open air. Joined from the sources named, each over its own years.",
   "file": "ch4.csv",
-  "zero": false
+  "zero": false,
+  "gap": 2000
  },
  {
   "id": "n2o",
@@ -581,7 +714,8 @@
   ],
   "note": "Ice-core air bubbles from Antarctica (well mixed worldwide), then measured in the open air. Joined from the sources named, each over its own years.",
   "file": "n2o.csv",
-  "zero": false
+  "zero": false,
+  "gap": 2000
  },
  {
   "id": "volcanic",
@@ -706,5 +840,194 @@
   "zero": false,
   "default": false,
   "gap": 3
+ },
+ {
+  "id": "urban_hyde_uk",
+  "theme": "People and settlements",
+  "title": "Share of people living in towns (modelled)",
+  "region": "United Kingdom (present borders)",
+  "unit": "%",
+  "unit_long": "% of population",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "label": "HYDE 3.2 (modelled)",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "file": "urban_hyde_uk.csv",
+  "note": "HYDE's urban population divided by its total population, from AD 0; a model built on historical urbanisation estimates, with its own definition of urban."
+ },
+ {
+  "id": "urban_hyde_ie",
+  "theme": "People and settlements",
+  "title": "Share of people living in towns (modelled)",
+  "region": "Ireland",
+  "unit": "%",
+  "unit_long": "% of population",
+  "sources": [
+   "hyde32_country_series"
+  ],
+  "label": "HYDE 3.2 (modelled)",
+  "hidden": true,
+  "modelled": true,
+  "zero": false,
+  "file": "urban_hyde_ie.csv",
+  "note": "HYDE's urban population divided by its total population, from AD 0; a model built on historical urbanisation estimates, with its own definition of urban."
+ },
+ {
+  "id": "pop_eng_wrigley",
+  "theme": "People and settlements",
+  "title": "Population of England (Wrigley et al.)",
+  "region": "England",
+  "unit": "people",
+  "label": "Wrigley et al. 1997 (parish registers)",
+  "sources": [
+   "est_pop_eng_wrigley1997"
+  ],
+  "file": "pop_eng_wrigley.csv",
+  "hidden": true,
+  "note": "Every five years from 1541 to 1801, reconstructed from parish registers; England without Monmouthshire, so it does not join exactly with the 1801 census for England and Wales."
+ },
+ {
+  "id": "pop_eng_others",
+  "theme": "People and settlements",
+  "title": "Population of England, other published estimates",
+  "region": "England",
+  "unit": "people",
+  "label": "Other published estimates",
+  "style": "estimates",
+  "sources": [
+   "est_pop_eng_russell1948",
+   "est_pop_eng_postan1966",
+   "est_pop_eng_darby1977",
+   "est_pop_eng_campbell2006",
+   "est_pop_eng_orthodox_high",
+   "est_pop_eng_clark2007",
+   "est_pop_eng_other_views"
+  ],
+  "file": "pop_eng_others.csv",
+  "hidden": true,
+  "note": "Single estimates and ranges from Russell, Postan, Darby, Campbell, Clark and others, as published; some years were assigned to a peak or a period by the research step (e.g. Russell's peak to 1348)."
+ },
+ {
+  "id": "pop_scot_early",
+  "theme": "People and settlements",
+  "title": "Population of Scotland, estimates before 1801",
+  "region": "Scotland",
+  "unit": "people",
+  "label": "Estimates before 1801 (Campbell; Webster's count of 1755)",
+  "style": "estimates",
+  "sources": [
+   "est_pop_scot_campbell2006",
+   "est_pop_scot_webster1755"
+  ],
+  "file": "pop_scot_early.csv",
+  "hidden": true,
+  "note": "Medieval estimates with their ranges and Alexander Webster's count of 1755 (1,265,380)."
+ },
+ {
+  "id": "pop_ireland_ddog",
+  "theme": "People and settlements",
+  "title": "Population of Ireland (Daultrey, Dickson & Ó Gráda)",
+  "region": "Ireland (whole island)",
+  "unit": "people",
+  "label": "Daultrey, Dickson & Ó Gráda 1982",
+  "sources": [
+   "est_pop_irl_dod1982"
+  ],
+  "file": "pop_irl_ddog.csv",
+  "hidden": true,
+  "note": "Hearth-tax returns corrected for under-recording, with the ranges the authors give."
+ },
+ {
+  "id": "pop_ireland_others",
+  "theme": "People and settlements",
+  "title": "Population of Ireland, other estimates",
+  "region": "Ireland (whole island)",
+  "unit": "people",
+  "label": "Other estimates",
+  "style": "estimates",
+  "sources": [
+   "est_pop_irl_clarkson",
+   "est_pop_irl_lee1821",
+   "est_pop_irl_parker2017",
+   "est_pop_irl_contemporary",
+   "est_pop_irl_medieval"
+  ],
+  "file": "pop_irl_others.csv",
+  "hidden": true,
+  "note": "Clarkson, Parker, Lee's revision of the 1821 census, contemporary estimates (Petty, the 1731 clergy return, Price, Young, Howlett, Bushe) and medieval estimates."
+ },
+ {
+  "id": "coal_early",
+  "theme": "Industry and energy",
+  "title": "Coal mined, estimates before 1853",
+  "region": "Great Britain",
+  "unit": "Mt",
+  "label": "Estimates before 1853 (Flinn, Nef, Hatcher)",
+  "style": "estimates",
+  "sources": [
+   "est_coal_gb_flinn_nic",
+   "est_coal_gb_nef1932",
+   "est_coal_eng_hatcher_wrigley_munro"
+  ],
+  "file": "coal_early.csv",
+  "hidden": true,
+  "note": "Historians' estimates of British coal output before official statistics: Flinn's and Church's benchmarks of coal supply (1700–1830, nearly all home-mined; via the National Infrastructure Commission's historical energy data), Nef's for the 1550s and 1690, and a figure for England from Hatcher and Wrigley. Converted from long tons to tonnes."
+ },
+ {
+  "id": "urban_hist_gb",
+  "theme": "People and settlements",
+  "title": "Share of people living in towns, historians' estimates",
+  "region": "Great Britain",
+  "unit": "%",
+  "label": "Historians' estimates (definitions differ)",
+  "style": "estimates",
+  "sources": [
+   "est_urban_eng_campbell1290",
+   "est_urban_wal_campbell1290",
+   "est_urban_scot_campbell1290",
+   "est_urban_eng_malanima2009",
+   "est_urban_eng_clark_dyer",
+   "est_urban_eng_cuhb_ch6",
+   "est_urban_gb_glennie_whyte",
+   "est_urban_gb_langton",
+   "est_urban_gb_cuhb_1801"
+  ],
+  "file": "urban_hist_gb.csv",
+  "hidden": true,
+  "zero": false,
+  "note": "Estimates for England, Wales, Scotland or Britain as a whole; they depend far more on what counts as a town (all towns, 2,000+, 5,000+ or 10,000+ people) than on who made them, so hover for each one's area and threshold."
+ },
+ {
+  "id": "urban_hist_ie",
+  "theme": "People and settlements",
+  "title": "Share of people living in towns, historians' estimates",
+  "region": "Ireland",
+  "unit": "%",
+  "label": "Campbell 2008 (c.1290)",
+  "style": "estimates",
+  "sources": [
+   "est_urban_irl_campbell1290"
+  ],
+  "file": "urban_hist_ie.csv",
+  "hidden": true,
+  "zero": false,
+  "note": "Campbell's estimates for c.1290, counting all towns and towns of 2,000 or more."
+ },
+ {
+  "id": "fairs_eng",
+  "theme": "Prosperity and work",
+  "title": "Fairs recorded in England (running total)",
+  "region": "England",
+  "unit": "fairs",
+  "label": "Fairs (Letters 2003)",
+  "sources": [
+   "est_fairs_eng_letters2003"
+  ],
+  "file": "fairs_eng.csv",
+  "hidden": true,
+  "note": "Fairs recorded by each date."
  }
 ]

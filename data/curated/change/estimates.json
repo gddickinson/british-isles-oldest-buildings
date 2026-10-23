@@ -1,0 +1,2614 @@
+{
+ "models": [
+  {
+   "id": "pop_eng_broadberry2011",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population, Broadberry, Campbell & van Leeuwen (2011; BEG 2010)",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference). Two points (1300, 1490) from Broadberry, S., Campbell, B., Klein, A., Overton, M. and van Leeuwen, B. (2010) British economic growth, 1270-1870. Draft of 14 July 2010 (CAGE Working Paper 35, University of Warwick).",
+   "short": "Broadberry et al. 2011",
+   "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+   "points": [
+    {
+     "year": 1086,
+     "value": 1710000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1086 1.71",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1190,
+     "value": 3100000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1190 3.10",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1220,
+     "value": 3970000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1220 3.97",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1250,
+     "value": 4230000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1250 4.23",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1279,
+     "value": 4430000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1279 4.43",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1290,
+     "value": 4750000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1290 4.75",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1300,
+     "value": 4730000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 18: English population, 1250-1700 A. Levels of population (millions) ... 1300 4.73",
+     "locator": "BEG 2010 Table 18A, printed p.54",
+     "source_url": "https://gcoe.ier.hit-u.ac.jp/english/events/PDF/BritishGDPLongRun.pdf"
+    },
+    {
+     "year": 1315,
+     "value": 4690000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1315 4.69",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1325,
+     "value": 4120000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1325 4.12",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1348,
+     "value": 4810000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1348 4.81",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1351,
+     "value": 2600000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1351 2.60",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1377,
+     "value": 2500000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1377 2.50",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1400,
+     "value": 2080000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1400 2.08",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1430,
+     "value": 2020000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1430 2.02",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1450,
+     "value": 1900000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1450 1.90",
+     "locator": "Table 6, printed p.22"
+    },
+    {
+     "year": 1490,
+     "value": 2140000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 18: English population, 1250-1700 A. Levels of population (millions) ... 1490 2.14",
+     "locator": "BEG 2010 Table 18A, printed p.54",
+     "source_url": "https://gcoe.ier.hit-u.ac.jp/english/events/PDF/BritishGDPLongRun.pdf"
+    },
+    {
+     "year": 1522,
+     "value": 2350000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1522 2.35",
+     "locator": "Table 6, printed p.22",
+     "note": "Cornwall (1970) benchmark, included in BCV Table 6"
+    },
+    {
+     "year": 1541,
+     "value": 2830000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 6: English population, 1086-1541 (millions) ... 1541 2.83",
+     "locator": "Table 6, printed p.22",
+     "note": "Wrigley et al. (1997) benchmark, included in BCV Table 6"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_russell1948",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population, Russell (1948), as tabulated by Broadberry et al. 2011",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Russell, J.C. (1948) British Medieval Population. Albuquerque. Figures as re-tabulated in Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference).",
+   "short": "Russell 1948",
+   "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+   "points": [
+    {
+     "year": 1086,
+     "value": 1105100,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Total population 1,105.1 1,450.2 1,598.0 1,866.5 [columns: Russell, Darby (I), Darby (II), Harvey; thousands]",
+     "locator": "BCV Table 1, printed p.16"
+    },
+    {
+     "year": 1348,
+     "value": 3700000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "arrived at the conclusion that the peak level of medieval population before the Black Death was around 3.7 million.",
+     "locator": "BCV Introduction, pp.1-2",
+     "note": "Year of peak assumed 1348 (eve of the Black Death); Russell's own dating not checked"
+    },
+    {
+     "year": 1377,
+     "value": 2232373,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Total population 2,232,373 3,221,319 2,494,589 [columns: Russell, Postan, “Best estimate”]",
+     "locator": "BCV Table 2, printed p.16"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_postan1966",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population, Postan (1966), as tabulated by Broadberry et al. 2011",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Postan, M.M. (1966) Medieval agrarian society in its prime: England. Cambridge Economic History of Europe I, 2nd edn. Figures as given in Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference).",
+   "short": "Postan 1966",
+   "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+   "points": [
+    {
+     "year": 1300,
+     "value": 6000000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "a peak level before the Black Death of around 6 million.",
+     "locator": "BCV Introduction, pp.1-2",
+     "note": "Peak placed c.1300 following Smith (1988) 'an English population in 1300 of over 6 million' (same page)"
+    },
+    {
+     "year": 1377,
+     "value": 3221319,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Total population 2,232,373 3,221,319 2,494,589 [columns: Russell, Postan, “Best estimate”]",
+     "locator": "BCV Table 2, printed p.16"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_darby1977",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population 1086, Darby (1977) variants and Harvey (1988)-style, via Broadberry et al. 2011",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Darby, H.C. (1977) Domesday England; Harvey, S. (1988) Domesday England. Figures re-tabulated in Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference).",
+   "short": "Darby 1977 / Harvey 1988",
+   "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+   "points": [
+    {
+     "year": 1086,
+     "value": 1524100.0,
+     "low": 1450200,
+     "high": 1598000,
+     "midpoint": true,
+     "quote": "Using Russell’s assumption results in a total population of 1.11 million, while Darby’s approach yields a population of between 1.45 and 1.60 million.",
+     "locator": "BCV p.4; Table 1 (Darby I 1,450.2; Darby II 1,598.0 thousand)"
+    },
+    {
+     "year": 1086,
+     "value": 1866500,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Total population 1,105.1 1,450.2 1,598.0 1,866.5 [columns: Russell, Darby (I), Darby (II), Harvey; thousands]",
+     "locator": "BCV Table 1, printed p.16",
+     "variant": "Harvey (25% omissions)"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_campbell2006",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population c.1290-1315, Campbell (2006/2008)",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf.",
+   "short": "Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 4000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "hence the figure of 4.0 million favoured here",
+     "locator": "Section VI, printed p.32"
+    },
+    {
+     "year": 1315,
+     "value": 4375000.0,
+     "low": 4250000.0,
+     "high": 4500000.0,
+     "midpoint": true,
+     "quote": "resulting in a maximum population of 4.25-4.5 million in 1315.",
+     "locator": "Section VI, printed p.33"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_orthodox_high",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population c.1290-1315, the 'high' view of most historians, as summarised by Campbell",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf.",
+   "short": "'High' view (Postan, Smith et al.) via Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 5000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "most historians plumping for a figure in excess of 5.0 million by 1290 rising to at least 5.5 million by 1315.",
+     "locator": "Section VI, printed p.32",
+     "note": "lower bound ('in excess of')"
+    },
+    {
+     "year": 1315,
+     "value": 5500000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "most historians plumping for a figure in excess of 5.0 million by 1290 rising to at least 5.5 million by 1315.",
+     "locator": "Section VI, printed p.32",
+     "note": "lower bound ('at least')"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_clark2007",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England",
+   "title": "Population by decade 1250-1539, Clark (2007)",
+   "unit": "people",
+   "kind": "model",
+   "citation": "Clark, G. (2005) The long march of history: farm wages, population and economic growth, England 1209-1869. UC Davis Working Paper 05-40 (published Economic History Review 60 (2007) 97-135).",
+   "short": "Clark 2007",
+   "url": "https://repec.dss.ucdavis.edu/files/L71LS9GZM8M3dbFqAwNMpP9h/05-40.pdf",
+   "points": [
+    {
+     "year": 1255,
+     "value": 4210000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1250-9 71.1 2 987 4.20 4.23 4.21",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1250-1259, plotted at mid-decade"
+    },
+    {
+     "year": 1265,
+     "value": 4920000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1260-9 92.0 3 1,667 5.43 4.42 4.92",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1260-1269, plotted at mid-decade"
+    },
+    {
+     "year": 1275,
+     "value": 5380000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1270-9 84.1 5 2,128 4.96 5.80 5.38",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1270-1279, plotted at mid-decade"
+    },
+    {
+     "year": 1285,
+     "value": 5180000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1280-9 89.4 7 3,013 5.28 5.09 5.18",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1280-1289, plotted at mid-decade"
+    },
+    {
+     "year": 1295,
+     "value": 5620000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1290-9 94.0 8 3,151 5.54 5.69 5.62",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1290-1299, plotted at mid-decade"
+    },
+    {
+     "year": 1305,
+     "value": 5530000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1300-9 96.7 10 3,516 5.71 5.36 5.53",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1300-1309, plotted at mid-decade"
+    },
+    {
+     "year": 1315,
+     "value": 5980000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1310-9 100.0 12 4,020 5.90 6.06 5.98",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1310-1319, plotted at mid-decade"
+    },
+    {
+     "year": 1325,
+     "value": 5340000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1320-9 91.9 12 3,464 5.43 5.26 5.34",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1320-1329, plotted at mid-decade"
+    },
+    {
+     "year": 1335,
+     "value": 5060000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1330-9 90.3 14 3,382 5.33 4.79 5.06",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1330-1339, plotted at mid-decade"
+    },
+    {
+     "year": 1345,
+     "value": 4860000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1340-9 83.4 11 2,414 4.92 4.81 4.86",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1340-1349, plotted at mid-decade"
+    },
+    {
+     "year": 1355,
+     "value": 3370000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1350-9 52.9 8 841 3.12 3.62 3.37",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1350-1359, plotted at mid-decade"
+    },
+    {
+     "year": 1365,
+     "value": 3500000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1360-9 56.4 8 986 3.33 3.67 3.50",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1360-1369, plotted at mid-decade"
+    },
+    {
+     "year": 1375,
+     "value": 3370000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1370-9 58.2 8 1,011 3.43 3.31 3.37",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1370-1379, plotted at mid-decade"
+    },
+    {
+     "year": 1385,
+     "value": 2990000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1380-9 53.4 9 1,400 3.15 2.82 2.99",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1380-1389, plotted at mid-decade"
+    },
+    {
+     "year": 1395,
+     "value": 2960000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1390-9 50.1 8 1,117 2.95 2.97 2.96",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1390-1399, plotted at mid-decade"
+    },
+    {
+     "year": 1405,
+     "value": 2830000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1400-9 49.5 7 992 2.92 2.73 2.83",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1400-1409, plotted at mid-decade"
+    },
+    {
+     "year": 1415,
+     "value": 2680000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1410-9 43.6 9 981 2.57 2.78 2.68",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1410-1419, plotted at mid-decade"
+    },
+    {
+     "year": 1425,
+     "value": 2640000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1420-9 46.2 11 762 2.72 2.55 2.64",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1420-1429, plotted at mid-decade"
+    },
+    {
+     "year": 1435,
+     "value": 2710000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1430-9 46.4 9 660 2.74 2.68 2.71",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1430-1439, plotted at mid-decade"
+    },
+    {
+     "year": 1445,
+     "value": 2420000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1440-9 41.4 8 731 2.44 2.40 2.42",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1440-1449, plotted at mid-decade"
+    },
+    {
+     "year": 1455,
+     "value": 2400000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1450-9 42.3 6 670 2.49 2.30 2.40",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1450-1459, plotted at mid-decade"
+    },
+    {
+     "year": 1465,
+     "value": 2460000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1460-9 42.2 6 634 2.49 2.43 2.46",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1460-1469, plotted at mid-decade"
+    },
+    {
+     "year": 1475,
+     "value": 2510000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1470-9 43.2 4 498 2.55 2.47 2.51",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1470-1479, plotted at mid-decade"
+    },
+    {
+     "year": 1485,
+     "value": 2490000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1480-9 40.6 4 468 2.40 2.59 2.49",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1480-1489, plotted at mid-decade"
+    },
+    {
+     "year": 1495,
+     "value": 2410000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1490-9 40.5 4 413 2.39 2.43 2.41",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1490-1499, plotted at mid-decade"
+    },
+    {
+     "year": 1505,
+     "value": 2420000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1500-9 36.6 3 175 2.16 2.68 2.42",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1500-1509, plotted at mid-decade"
+    },
+    {
+     "year": 1515,
+     "value": 2480000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1510-9 37.7 3 280 2.23 2.74 2.48",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1510-1519, plotted at mid-decade"
+    },
+    {
+     "year": 1525,
+     "value": 2710000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1520-9 39.1 4 308 2.31 3.11 2.71",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1520-1529, plotted at mid-decade"
+    },
+    {
+     "year": 1535,
+     "value": 2850000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1530-9 36.5 2 75 - 3.16 2.85",
+     "locator": "Table 9, column 'Best Population Estimate from MPL and sample communities', printed p.54",
+     "note": "decade average 1530-1539, plotted at mid-decade"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_eng_wrigley1997",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England (excluding Monmouthshire)",
+   "title": "Population 1541-1801, Wrigley, Davies, Oeppen & Schofield (1997)",
+   "unit": "people",
+   "kind": "model",
+   "citation": "Wrigley, E.A., Davies, R.S., Oeppen, J.E. and Schofield, R.S. (1997) English Population History from Family Reconstitution 1580-1837. Cambridge UP, Appendix 9, pp. 613-6; values as reproduced in Munro, J. (2008) teaching tables 'The population of England (and Wales)', University of Toronto.",
+   "short": "Wrigley et al. 1997",
+   "url": "https://www.economics.utoronto.ca/munro5/14POPERMTables.doc",
+   "open_access": true,
+   "licence": null,
+   "points": [
+    {
+     "year": 1541,
+     "value": 2830000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1541 2.830 3.031 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1546,
+     "value": 2908000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1546 2.908 3.115 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1551,
+     "value": 3065000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1551 3.065 3.282 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1556,
+     "value": 3213000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1556 3.213 3.440 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1561,
+     "value": 3036000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1561 3.036 3.251 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1566,
+     "value": 3174000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1566 3.174 3.398 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1571,
+     "value": 3310000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1571 3.310 3.545 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1576,
+     "value": 3448000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1576 3.448 3.692 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1581,
+     "value": 3631000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1581 3.631 3.889 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1586,
+     "value": 3841000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1586 3.841 4.113 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1591,
+     "value": 3938000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1591 3.938 4.217 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1596,
+     "value": 4057000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1596 4.057 4.344 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1601,
+     "value": 4162000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1601 4.162 4.457 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1606,
+     "value": 4310000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1606 4.310 4.616 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1611,
+     "value": 4476000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1611 4.476 4.793 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1616,
+     "value": 4568000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1616 4.568 4.892 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1621,
+     "value": 4745000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1621 4.745 5.081 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1626,
+     "value": 4762000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1626 4.762 5.099 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1631,
+     "value": 4926000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1631 4.926 5.275 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1636,
+     "value": 5090000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1636 5.090 5.450 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1641,
+     "value": 5130000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1641 5.130 5.494 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1646,
+     "value": 5231000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1646 5.231 5.602 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1651,
+     "value": 5308000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1651 5.308 5.684 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1656,
+     "value": 5391000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1656 5.391 5.773 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1661,
+     "value": 5280000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1661 5.280 5.654 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1666,
+     "value": 5229000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1666 5.229 5.600 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1671,
+     "value": 5159000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1671 5.159 5.524 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1676,
+     "value": 5185000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1676 5.185 5.552 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1681,
+     "value": 5109000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1681 5.109 5.471 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1686,
+     "value": 5036000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1686 5.036 5.393 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1691,
+     "value": 5094000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1691 5.094 5.455 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1696,
+     "value": 5118000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1696 5.118 5.481 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1701,
+     "value": 5211000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1701 5.211 5.580 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1706,
+     "value": 5334000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1706 5.334 5.712 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1711,
+     "value": 5382000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1711 5.382 5.764 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1716,
+     "value": 5428000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1716 5.428 5.813 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1721,
+     "value": 5503000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1721 5.503 5.893 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1726,
+     "value": 5602000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1726 5.602 5.999 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1731,
+     "value": 5414000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1731 5.414 5.798 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1736,
+     "value": 5599000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1736 5.599 5.996 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1741,
+     "value": 5723000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1741 5.723 6.129 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1746,
+     "value": 5782000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1746 5.782 6.191 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1751,
+     "value": 5922000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1751 5.922 6.342 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1756,
+     "value": 6149000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1756 6.149 6.584 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1761,
+     "value": 6310000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1761 6.310 6.757 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1766,
+     "value": 6449000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1766 6.449 6.906 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1771,
+     "value": 6623000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1771 6.623 7.093 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1776,
+     "value": 6913000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1776 6.913 7.403 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1781,
+     "value": 7206000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1781 7.206 7.717 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1786,
+     "value": 7434000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1786 7.434 7.960 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1791,
+     "value": 7846000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1791 7.846 8.402 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1796,
+     "value": 8256000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1796 8.256 8.841 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    },
+    {
+     "year": 1801,
+     "value": 8671000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1801 8.671 9.286 [Year | England population in millions | England with Wales population in millions]",
+     "locator": "Munro tables, Table 1 'The population of England (and Wales)', quinquennial data from generalised inverse projection"
+    }
+   ],
+   "note": "England only. Munro's 'England with Wales' column is his own scaling (England / 0.93383, ratio from Wrigley & Schofield p.557), not used here."
+  },
+  {
+   "id": "pop_eng_other_views",
+   "series_like": "pop_ew (new: pop_eng_long)",
+   "region": "England (one point England and Wales)",
+   "title": "Population c.1300, other published views (as reported by Campbell, Clark and Broadberry et al.)",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Various; each point's 'source' field names the scholar and the paper that reports the figure.",
+   "short": "Other views c.1300",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1300,
+     "value": 5750000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "E. A. Wrigley has recently endorsed a figure of 5.75 million for England and Wales in c.1300",
+     "locator": "Campbell 2006, footnote 91, printed p.32",
+     "source": "Wrigley (2006) via Campbell",
+     "region": "England and Wales"
+    },
+    {
+     "year": 1300,
+     "value": 4375000.0,
+     "low": 4000000.0,
+     "high": 4750000.0,
+     "midpoint": true,
+     "quote": "J. H. Munro, however, has recently argued for a figure of 4.0-4.75m. c.1300",
+     "locator": "Campbell 2006, footnote 91, printed p.32",
+     "source": "Munro (2006) via Campbell"
+    },
+    {
+     "year": 1348,
+     "value": 4250000.0,
+     "low": 4000000.0,
+     "high": 4500000.0,
+     "midpoint": true,
+     "quote": "a little higher than the range of 4.0 to 4.5 million suggested by Overton and Campbell (1996)",
+     "locator": "BEG 2010 p.27",
+     "source": "Overton & Campbell (1996) via BEG 2010",
+     "source_url": "https://gcoe.ier.hit-u.ac.jp/english/events/PDF/BritishGDPLongRun.pdf",
+     "note": "peak medieval population; year placed at 1348"
+    },
+    {
+     "year": 1325,
+     "value": 4125000.0,
+     "low": 4000000.0,
+     "high": 4250000.0,
+     "midpoint": true,
+     "quote": "Bruce Campbell recently pronounced in favor of a maximum medieval population of 4-4.25 million in 1300-49",
+     "locator": "Clark 2005 WP p.20",
+     "source": "Campbell (2000) via Clark",
+     "source_url": "https://repec.dss.ucdavis.edu/files/L71LS9GZM8M3dbFqAwNMpP9h/05-40.pdf",
+     "note": "period 1300-49, plotted 1325"
+    },
+    {
+     "year": 1325,
+     "value": 6250000.0,
+     "low": 6000000.0,
+     "high": 6500000.0,
+     "midpoint": true,
+     "quote": "others such as Richard Smith ... have estimated a much bigger maximum population of 6 to 6.5 million people.",
+     "locator": "Clark 2005 WP pp.20-21",
+     "source": "Smith (1988/1991) via Clark",
+     "source_url": "https://repec.dss.ucdavis.edu/files/L71LS9GZM8M3dbFqAwNMpP9h/05-40.pdf",
+     "note": "maximum medieval population (c.1300-1315); plotted 1325"
+    },
+    {
+     "year": 1300,
+     "value": 6000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Smith (1988: 191) concluding that “there is every reason to accept an English population in 1300 of over 6 million”.",
+     "locator": "BCV Introduction, pp.1-2",
+     "source": "Smith (1988) via BCV",
+     "source_url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+     "note": "lower bound ('over')"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_scot_webster1755",
+   "series_like": "pop_scot",
+   "region": "Scotland",
+   "title": "Population 1755, Webster's account",
+   "unit": "people",
+   "kind": "count",
+   "citation": "National Records of Scotland, research guide 'Webster's account of the population of Scotland in 1755'.",
+   "short": "Webster 1755 (NRS)",
+   "url": "https://nrscotland.gov.uk/learning-and-events/research-guides/webster-s-account-of-the-population-of-scotland-in-1755",
+   "licence": "Crown copyright, NRS website (OGL v3.0 assumed, not verified)",
+   "points": [
+    {
+     "year": 1755,
+     "value": 1265380,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "gives a total of 1,265,380 which is regarded as the most credible estimate of the Scottish population prior to 1801.",
+     "locator": "NRS research guide page"
+    }
+   ],
+   "open_access": true
+  },
+  {
+   "id": "pop_scot_campbell2006",
+   "series_like": "pop_scot",
+   "region": "Scotland",
+   "title": "Population of Scotland c.1290-1755, Campbell (2006/2008) and historians cited there",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf.",
+   "short": "Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 790000.0,
+     "low": 640000.0,
+     "high": 940000.0,
+     "midpoint": true,
+     "quote": "An estimate of total Scottish population of around 0.75 million c.1290 should not, therefore, be too wide of the mark.",
+     "locator": "Section VI, printed pp.35-36",
+     "note": "Campbell's preferred value 0.75m; range = his alternative calculations 0.64m (parish-based) and 0.94m (density-based), p.36. midpoint 0.79m"
+    },
+    {
+     "year": 1290,
+     "value": 1000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Recently, historians of medieval Scotland have come to favour a figure of around 1.0 million",
+     "locator": "Section VI, printed p.35",
+     "variant": "Grant (1984); Gemmill & Mayhew (1995)"
+    },
+    {
+     "year": 1290,
+     "value": 750000.0,
+     "low": 500000.0,
+     "high": 1000000.0,
+     "midpoint": true,
+     "quote": "Historical estimates of population c.1290a 3.5-5.5m. 0.2-0.3m. 0.5-1.0m. 0.8-1.0m. 5.0-7.8m.",
+     "locator": "Table 15, printed p.71",
+     "variant": "range of historical estimates (Russell, Duncan, Grant, Gemmill & Mayhew)"
+    },
+    {
+     "year": 1707,
+     "value": 1100000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the country’s population is unlikely to have been much smaller than the 1.1 million it is estimated to have been in 1707.",
+     "locator": "Section VI, printed p.35"
+    },
+    {
+     "year": 1753,
+     "value": 1300000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Estimated population in 1751/5e 6.0m. 0.6m. 1.3m. 2.4m. 10.3m. [England, Wales, Scotland, Ireland, Britain & Ireland]",
+     "locator": "Table 15, printed p.71",
+     "note": "dated 1751/5, plotted 1753"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_irl_connell1950",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "Population 1687-1791, Connell (1950)",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Connell, K.H. (1950) The Population of Ireland 1750-1845, p.25; as tabulated in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+   "short": "Connell 1950",
+   "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+   "licence": "UCD Research Repository: 'Some rights reserved' (licence not stated in the PDF)",
+   "points": [
+    {
+     "year": 1687,
+     "value": 2200000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1687 2.2",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1712,
+     "value": 2800000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1712 2.8",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1725,
+     "value": 3000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1725 3.0",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1732,
+     "value": 3000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1732 3.0",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1753,
+     "value": 3200000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1753 3.2",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1791,
+     "value": 4800000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1791 4.8",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1788,
+     "value": 4390000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "His total for 1788 came out higher: 4.39 million in 777,000 houses, at only 5.65 to each",
+     "locator": "Parker 2017, History Ireland 25(3)",
+     "source_url": "https://historyireland.com/taxing-enquiry-many-people-pre-census-ireland/"
+    }
+   ],
+   "open_access": true
+  },
+  {
+   "id": "pop_irl_dod1982",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "Population 1687-1791, Daultrey, Dickson & Ó Gráda (1981/1982)",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Daultrey, S., Dickson, D. and Ó Gráda, C. (1981) Eighteenth-century Irish population: new perspectives from old sources. Journal of Economic History 41: 601-628, p.624 (and Dickson, Ó Gráda & Daultrey 1982, PRIA 82C: 125-81); as tabulated in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+   "short": "Daultrey, Dickson & Ó Gráda",
+   "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+   "licence": "UCD Research Repository: 'Some rights reserved' (licence not stated in the PDF)",
+   "points": [
+    {
+     "year": 1687,
+     "value": 2000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1687 2.0",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1712,
+     "value": 2150000.0,
+     "low": 2000000.0,
+     "high": 2300000.0,
+     "midpoint": true,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1712 2.0 - 2.3",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1725,
+     "value": 2400000.0,
+     "low": 2200000.0,
+     "high": 2600000.0,
+     "midpoint": true,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1725 2.2 - 2.6",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1732,
+     "value": 2350000.0,
+     "low": 2200000.0,
+     "high": 2500000.0,
+     "midpoint": true,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1732 2.2 - 2.5",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1744,
+     "value": 2050000.0,
+     "low": 1900000.0,
+     "high": 2200000.0,
+     "midpoint": true,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1744 1.9 - 2.2",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1753,
+     "value": 2400000.0,
+     "low": 2200000.0,
+     "high": 2600000.0,
+     "midpoint": true,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1753 2.2 - 2.6",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1791,
+     "value": 4400000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1791 4.4",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1791,
+     "value": 4420000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the authors arrived at a population of 2–2.3 million in 1712, rising to 4.42 million in 1791",
+     "locator": "Parker 2017, History Ireland 25(3)",
+     "source_url": "https://historyireland.com/taxing-enquiry-many-people-pre-census-ireland/",
+     "note": "more precise form of the 1791 value"
+    }
+   ],
+   "open_access": true
+  },
+  {
+   "id": "pop_irl_clarkson",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "Population 1687-1791, Clarkson ('Irish population revisited')",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Clarkson, L.A. (1981) Irish population revisited, 1687-1821, in Goldstrom & Clarkson (eds) Irish Population, Economy and Society, p.26; as tabulated in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+   "short": "Clarkson 1981",
+   "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+   "licence": "UCD Research Repository: 'Some rights reserved' (licence not stated in the PDF)",
+   "points": [
+    {
+     "year": 1687,
+     "value": 1700000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1687 1.7",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1725,
+     "value": 2200000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1725 2.2",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1753,
+     "value": 2300000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1753 2.3",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    },
+    {
+     "year": 1791,
+     "value": 4400000.0,
+     "low": 4200000.0,
+     "high": 4600000.0,
+     "midpoint": true,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1791 4.2 - 4.6",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)"
+    }
+   ],
+   "open_access": true
+  },
+  {
+   "id": "pop_irl_lee1821",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "1821 census and Lee's revision of it",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Lee, J.J. (1981) On the accuracy of the pre-famine Irish censuses, in Goldstrom & Clarkson (eds), p.54; census as given in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+   "short": "1821 census / Lee 1981",
+   "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+   "licence": "UCD Research Repository: 'Some rights reserved'",
+   "points": [
+    {
+     "year": 1821,
+     "value": 6800000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1821 6.8 7.2 [Census, Lee]",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)",
+     "variant": "census"
+    },
+    {
+     "year": 1821,
+     "value": 7200000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 1: Irish Population Estimates (in millions) [columns: Connell, Daultrey et al., Clarkson, Census, Lee] 1821 6.8 7.2 [Census, Lee]",
+     "locator": "Table 1, PDF p.5 (scanned typescript; read from page image)",
+     "variant": "Lee revision"
+    }
+   ],
+   "open_access": true
+  },
+  {
+   "id": "pop_irl_parker2017",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "Population 1700-1821, Parker (2017), from Bushe's 1788 household count",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Parker, D. (2017) A taxing enquiry: how many people were there in pre-census Ireland? History Ireland 25(3), May/June 2017.",
+   "short": "Parker 2017",
+   "url": "https://historyireland.com/taxing-enquiry-many-people-pre-census-ireland/",
+   "open_access": true,
+   "points": [
+    {
+     "year": 1700,
+     "value": 2400000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "yielding 2.9 million in 1725, 2.6 million in 1712 and 2.4 million at the start of the century.",
+     "locator": "History Ireland article, section on earlier numbers"
+    },
+    {
+     "year": 1712,
+     "value": 2600000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "yielding 2.9 million in 1725, 2.6 million in 1712 and 2.4 million at the start of the century.",
+     "locator": "History Ireland article"
+    },
+    {
+     "year": 1725,
+     "value": 2900000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "yielding 2.9 million in 1725, 2.6 million in 1712 and 2.4 million at the start of the century.",
+     "locator": "History Ireland article"
+    },
+    {
+     "year": 1750,
+     "value": 3000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Plausible numbers for later decades suggest a mid-century population of around three million",
+     "locator": "History Ireland article",
+     "note": "'mid-century', approximate"
+    },
+    {
+     "year": 1791,
+     "value": 4620000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Coupling Dickson et al.’s well-reasoned estimate of 757,380 occupied houses in 1791 with the adjusted multiplier yields a population of 4.62 million",
+     "locator": "History Ireland article"
+    },
+    {
+     "year": 1800,
+     "value": 5200000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "numbers rising (after allowance for emigration) to 5.2 million in 1800, 6.2 million in 1813",
+     "locator": "History Ireland article"
+    },
+    {
+     "year": 1813,
+     "value": 6200000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "numbers rising (after allowance for emigration) to 5.2 million in 1800, 6.2 million in 1813",
+     "locator": "History Ireland article"
+    },
+    {
+     "year": 1821,
+     "value": 6900000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "and 6.9 million in 1821, this time 100,000 more than the census count.",
+     "locator": "History Ireland article"
+    }
+   ],
+   "licence": null
+  },
+  {
+   "id": "pop_irl_contemporary",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "Contemporary counts and estimates 1672-1788 (Petty, clergy return, Price, Young, Howlett, Bushe)",
+   "unit": "people",
+   "kind": "count",
+   "citation": "As reported in Parker (2017) History Ireland 25(3) and (Petty) Campbell (2006/2008).",
+   "short": "Contemporary estimates",
+   "url": "https://historyireland.com/taxing-enquiry-many-people-pre-census-ireland/",
+   "points": [
+    {
+     "year": 1672,
+     "value": 1100000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "William Petty’s contemporary ‘under’ estimate of 1.1 million in 1672",
+     "locator": "Campbell 2006, Section VI, printed p.37",
+     "source_url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+     "source": "Petty"
+    },
+    {
+     "year": 1731,
+     "value": 2010000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "a 1731 compilation through the Church of Ireland’s parish clergy, showing a dispiriting 2,010,000 inhabitants",
+     "locator": "History Ireland article",
+     "source": "clergy return"
+    },
+    {
+     "year": 1767,
+     "value": 1900000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Price found a mere 1.9 million in 1767 and Howlett around 2.6 million in 1781",
+     "locator": "History Ireland article",
+     "source": "Price"
+    },
+    {
+     "year": 1778,
+     "value": 3000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "The irrepressible Arthur Young had meanwhile ventured three million in 1778.",
+     "locator": "History Ireland article",
+     "source": "Young"
+    },
+    {
+     "year": 1781,
+     "value": 2600000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Price found a mere 1.9 million in 1767 and Howlett around 2.6 million in 1781",
+     "locator": "History Ireland article",
+     "source": "Howlett"
+    },
+    {
+     "year": 1788,
+     "value": 4040000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "indicating that at 4,040,000 or more the people of Ireland were twice as numerous as was still widely assumed.",
+     "locator": "History Ireland article",
+     "source": "Bushe",
+     "note": "lower bound ('or more')"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "pop_irl_medieval",
+   "series_like": "new: pop_ireland_island (pop_ie is 26 counties)",
+   "region": "Ireland (whole island)",
+   "title": "Population of Ireland c.1290-1753, Campbell (2006/2008) and historians cited there; Cullen 1600",
+   "unit": "people",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf. Cullen's 1600 figure from Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+   "short": "Campbell 2008 et al.",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 1375000.0,
+     "low": 1250000.0,
+     "high": 1500000.0,
+     "midpoint": true,
+     "quote": "At least 40 people per square mile implies a total Irish population of 1.25-1.5 million (Table 15)",
+     "locator": "Section VI, printed p.37",
+     "source": "Campbell",
+     "note": "Table 16 gives 1.3m"
+    },
+    {
+     "year": 1300,
+     "value": 1050000.0,
+     "low": 700000.0,
+     "high": 1400000.0,
+     "midpoint": true,
+     "quote": "Gillespie and Connolly have recently proposed a figure in the range 0.7 to 1.4 million for c.1300.",
+     "locator": "Section VI, printed p.37",
+     "source": "Gillespie & Connolly (2002)"
+    },
+    {
+     "year": 1300,
+     "value": 840000.0,
+     "low": 720000.0,
+     "high": 960000.0,
+     "midpoint": true,
+     "quote": "the estimates of 0.72-0.96 million and c.1.0 million for c.1300 advanced by Clarke and Glasscock also look unduly cautious.",
+     "locator": "Section VI, printed p.37",
+     "source": "Clarke (2005)"
+    },
+    {
+     "year": 1300,
+     "value": 1000000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the estimates of 0.72-0.96 million and c.1.0 million for c.1300 advanced by Clarke and Glasscock also look unduly cautious.",
+     "locator": "Section VI, printed p.37",
+     "source": "Glasscock (1987)"
+    },
+    {
+     "year": 1500,
+     "value": 625000.0,
+     "low": 500000.0,
+     "high": 750000.0,
+     "midpoint": true,
+     "quote": "the guesstimate of 0.5-0.75 million suggested by Gillespie for 1500",
+     "locator": "Section VI, printed p.37",
+     "source": "Gillespie (1991)"
+    },
+    {
+     "year": 1600,
+     "value": 1400000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Cullen's starting point of 2.8 million in 1712 led him to postulate a figure of 1.4 million for 1600.",
+     "locator": "Mokyr & Ó Gráda 1983, footnote 11, PDF p.27",
+     "source": "Cullen (1975)",
+     "source_url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+     "note": "Mokyr & Ó Gráda (and Canny) consider this implausibly high"
+    },
+    {
+     "year": 1641,
+     "value": 2100000.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the estimated peak of 2.1 million attained in 1641",
+     "locator": "Section VI, printed p.36",
+     "source": "cited by Campbell from Kennedy & Clarkson (1993)"
+    },
+    {
+     "year": 1753,
+     "value": 2450000.0,
+     "low": 2300000.0,
+     "high": 2600000.0,
+     "midpoint": true,
+     "quote": "the 2.3-2.6 million reached in 1753",
+     "locator": "Section VI, printed p.36",
+     "source": "cited by Campbell from Kennedy & Clarkson (1993)"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "coal_gb_flinn_nic",
+   "series_like": "coal_uk",
+   "region": "Great Britain",
+   "title": "Coal output 1700-1830, Flinn (1984) benchmarks as compiled by Fouquet for the National Infrastructure Commission",
+   "unit": "Mt",
+   "kind": "estimate",
+   "citation": "National Infrastructure Commission (2020) Historic Energy Dataset (compiled by R. Fouquet, LSE), table 1.3.4 'Coal and Coke Consumption, 1700-1913', sources Flinn (1984) The History of the British Coal Industry vol.2 and Church (1986) vol.3.",
+   "short": "Flinn 1984 via NIC/Fouquet",
+   "url": "https://web.archive.org/web/20250323165206/https://nic.org.uk/data/all-data/historic-energy/",
+   "open_access": true,
+   "licence": "OGL v3.0 (as recorded by Our World in Data's metadata for 'National Infrastructure Commission, UK historical energy data'; NIC page itself archived)",
+   "download_url": "https://web.archive.org/web/20230112214959/https://nic.org.uk/app/uploads/Historic-Energy-Data-Final-Dataset.xlsx",
+   "points": [
+    {
+     "year": 1700,
+     "value": 3.033,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1.3.4 Coal and Coke Consumption, 1700-1913 | Source: Flinn (1986) & Church (1993) | Year 1700 | Supply 3.033",
+     "locator": "Sheet '1.3.4 Coal3', column 'Supply' (1); values between benchmarks are linear interpolations",
+     "note": "Flinn (1984) benchmark"
+    },
+    {
+     "year": 1750,
+     "value": 5.314,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1.3.4 Coal and Coke Consumption, 1700-1913 | Source: Flinn (1986) & Church (1993) | Year 1750 | Supply 5.314",
+     "locator": "Sheet '1.3.4 Coal3', column 'Supply' (1); values between benchmarks are linear interpolations",
+     "note": "Flinn (1984) benchmark"
+    },
+    {
+     "year": 1775,
+     "value": 8.992,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1.3.4 Coal and Coke Consumption, 1700-1913 | Source: Flinn (1986) & Church (1993) | Year 1775 | Supply 8.992",
+     "locator": "Sheet '1.3.4 Coal3', column 'Supply' (1); values between benchmarks are linear interpolations",
+     "note": "Flinn (1984) benchmark"
+    },
+    {
+     "year": 1800,
+     "value": 15.286,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1.3.4 Coal and Coke Consumption, 1700-1913 | Source: Flinn (1986) & Church (1993) | Year 1800 | Supply 15.286",
+     "locator": "Sheet '1.3.4 Coal3', column 'Supply' (1); values between benchmarks are linear interpolations",
+     "note": "Flinn (1984) benchmark"
+    },
+    {
+     "year": 1830,
+     "value": 30.988,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "1.3.4 Coal and Coke Consumption, 1700-1913 | Source: Flinn (1986) & Church (1993) | Year 1830 | Supply 30.988",
+     "locator": "Sheet '1.3.4 Coal3', column 'Supply' (1); values between benchmarks are linear interpolations",
+     "note": "Church (1986) annual series begins 1830"
+    }
+   ],
+   "note": "Values appear to be Flinn's long-ton output figures converted to million tonnes (1700: 3.033 Mt = 2.985m long tons). Benchmarks found where the interpolation slope changes: 1700, 1750, 1775, 1800, then annual from 1830."
+  },
+  {
+   "id": "coal_gb_nef1932",
+   "series_like": "coal_uk",
+   "region": "Great Britain",
+   "title": "Coal output 1550 and 1690, Nef (1932)",
+   "unit": "Mt",
+   "kind": "estimate",
+   "citation": "Nef, J.U. (1932) The Rise of the British Coal Industry. London; figures as reported in the review 'King Coal', The Spectator, 6 January 1933, p.23.",
+   "short": "Nef 1932",
+   "url": "http://web.archive.org/web/20250212182959/https://archive.spectator.co.uk/article/6th-january-1933/23/king-coal",
+   "open_access": true,
+   "points": [
+    {
+     "year": 1550,
+     "value": 0.213,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Mr. Nef estimates that within the period 1550-1690 the output of British coal increased fourteen-fold, from 210,000 tons to 2,982,000 tons, whereas in the next century it was only trebled.",
+     "locator": "Spectator 6 Jan 1933 p.23",
+     "original": "210,000 tons (long tons)",
+     "note": "Nef's figures are usually given as decade averages (1551-60, 1681-90); the review says 1550-1690"
+    },
+    {
+     "year": 1690,
+     "value": 3.03,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Mr. Nef estimates that within the period 1550-1690 the output of British coal increased fourteen-fold, from 210,000 tons to 2,982,000 tons, whereas in the next century it was only trebled.",
+     "locator": "Spectator 6 Jan 1933 p.23",
+     "original": "2,982,000 tons (long tons)"
+    }
+   ],
+   "note": "Nef's 17th-century figures are widely considered too high (Hatcher 1993 revised them); converted from long tons at 1.016.",
+   "licence": null
+  },
+  {
+   "id": "coal_eng_hatcher_wrigley_munro",
+   "series_like": "coal_uk",
+   "region": "England (as labelled)",
+   "title": "Coal output 1560, 1700, 1800 (Hatcher / Wrigley, as given in Munro's lecture slides)",
+   "unit": "Mt",
+   "kind": "estimate",
+   "citation": "Munro, J. (lecture slides, University of Toronto) 'England: coal and iron', slide 'English Coal Production in tonnes', attributed to Wrigley and Hatcher (Hatcher 1993, History of the British Coal Industry vol.1).",
+   "short": "Hatcher/Wrigley via Munro",
+   "url": "https://www.economics.utoronto.ca/munro5/L23EnglandCoalandIron.pdf",
+   "open_access": true,
+   "points": [
+    {
+     "year": 1560,
+     "value": 0.227,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "English Coal Production in tonnes Year Output in metric tonnes 1560 227,000 1700 2,640,000 1800 15,000,000 ... (Wrigley and Hatcher)",
+     "locator": "slide 'English Coal Production in tonnes' (PDF ~p.14)"
+    },
+    {
+     "year": 1700,
+     "value": 2.64,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "English Coal Production in tonnes Year Output in metric tonnes 1560 227,000 1700 2,640,000 1800 15,000,000 ... (Wrigley and Hatcher)",
+     "locator": "slide 'English Coal Production in tonnes' (PDF ~p.14)"
+    },
+    {
+     "year": 1800,
+     "value": 15.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "English Coal Production in tonnes Year Output in metric tonnes 1560 227,000 1700 2,640,000 1800 15,000,000 ... (Wrigley and Hatcher)",
+     "locator": "slide 'English Coal Production in tonnes' (PDF ~p.14)"
+    }
+   ],
+   "note": "Secondary teaching source; attribution on the slide is loose ('Wrigley and Hatcher'). 1700 figure is lower than Flinn's GB 3.03 Mt, probably because it is England only. Use with caution or only to show disagreement.",
+   "licence": null
+  },
+  {
+   "id": "urban_eng_campbell1290",
+   "series_like": "urban_uk / urban_ie",
+   "region": "England",
+   "title": "Share living in towns c.1290, England, Campbell (2006/2008)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+   "short": "Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 15,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% urbanised 15% 9% 7% 7% c.14% 12% [England, Wales, Scotland, Ireland, Lordship of Ireland, Britain & Ireland]",
+     "locator": "Table 16, printed p.72",
+     "variant": "all towns"
+    },
+    {
+     "year": 1290,
+     "value": 9,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% living in towns of 2,000+ 9% >1% 3% 3% c.5% 7% [same columns]",
+     "locator": "Table 16, printed p.72",
+     "variant": "towns of 2,000+"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_wal_campbell1290",
+   "series_like": "urban_uk / urban_ie",
+   "region": "Wales",
+   "title": "Share living in towns c.1290, Wales, Campbell (2006/2008)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+   "short": "Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 9,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% urbanised 15% 9% 7% 7% c.14% 12% [England, Wales, Scotland, Ireland, Lordship of Ireland, Britain & Ireland]",
+     "locator": "Table 16, printed p.72",
+     "variant": "all towns"
+    },
+    {
+     "year": 1290,
+     "value": 1,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% living in towns of 2,000+ 9% >1% 3% 3% c.5% 7% [same columns]",
+     "locator": "Table 16, printed p.72",
+     "variant": "towns of 2,000+",
+     "note": "'>1%' stored as 1"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_scot_campbell1290",
+   "series_like": "urban_uk / urban_ie",
+   "region": "Scotland",
+   "title": "Share living in towns c.1290, Scotland, Campbell (2006/2008)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+   "short": "Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% urbanised 15% 9% 7% 7% c.14% 12% [England, Wales, Scotland, Ireland, Lordship of Ireland, Britain & Ireland]",
+     "locator": "Table 16, printed p.72",
+     "variant": "all towns"
+    },
+    {
+     "year": 1290,
+     "value": 3,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% living in towns of 2,000+ 9% >1% 3% 3% c.5% 7% [same columns]",
+     "locator": "Table 16, printed p.72",
+     "variant": "towns of 2,000+"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_irl_campbell1290",
+   "series_like": "urban_uk / urban_ie",
+   "region": "Ireland",
+   "title": "Share living in towns c.1290, Ireland, Campbell (2006/2008)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+   "short": "Campbell 2008",
+   "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+   "points": [
+    {
+     "year": 1290,
+     "value": 7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% urbanised 15% 9% 7% 7% c.14% 12% [England, Wales, Scotland, Ireland, Lordship of Ireland, Britain & Ireland]",
+     "locator": "Table 16, printed p.72",
+     "variant": "all towns"
+    },
+    {
+     "year": 1290,
+     "value": 3,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "% living in towns of 2,000+ 9% >1% 3% 3% c.5% 7% [same columns]",
+     "locator": "Table 16, printed p.72",
+     "variant": "towns of 2,000+"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_eng_malanima2009",
+   "series_like": "urban_uk",
+   "region": "England",
+   "title": "Share living in towns of 10,000+, Malanima (2009), as cited by Broadberry et al. 2010",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Malanima, P. (2009) Pre-modern European Economy; as cited in Broadberry et al. (2010) British economic growth 1270-1870, pp.30-31.",
+   "short": "Malanima 2009 (towns 10,000+)",
+   "url": "https://gcoe.ier.hit-u.ac.jp/english/events/PDF/BritishGDPLongRun.pdf",
+   "points": [
+    {
+     "year": 1300,
+     "value": 4.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Malanima (2009a) suggests an urbanisation ratio for England rising from 4.0 per cent in 1300 to 13.2 per cent by 1700 and 43.0 per cent by 1870, using settlements of at least 10,000 as the cut-off.",
+     "locator": "BEG 2010 pp.30-31"
+    },
+    {
+     "year": 1700,
+     "value": 13.2,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Malanima (2009a) suggests an urbanisation ratio for England rising from 4.0 per cent in 1300 to 13.2 per cent by 1700 and 43.0 per cent by 1870, using settlements of at least 10,000 as the cut-off.",
+     "locator": "BEG 2010 pp.30-31"
+    },
+    {
+     "year": 1870,
+     "value": 43.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Malanima (2009a) suggests an urbanisation ratio for England rising from 4.0 per cent in 1300 to 13.2 per cent by 1700 and 43.0 per cent by 1870, using settlements of at least 10,000 as the cut-off.",
+     "locator": "BEG 2010 pp.30-31"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_eng_clark_dyer",
+   "series_like": "urban_uk",
+   "region": "England",
+   "title": "Share living in towns 1300 and 1800: Clark (towns 10,000+) vs Dyer (all towns)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Clark, G. (2005) The long march of history, UC Davis WP 05-40, pp.15-16 (Dyer's view as reported there).",
+   "short": "Clark 2007 / Dyer",
+   "url": "https://repec.dss.ucdavis.edu/files/L71LS9GZM8M3dbFqAwNMpP9h/05-40.pdf",
+   "points": [
+    {
+     "year": 1300,
+     "value": 3,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "significant gains in urbanization in England between 1300 and 1800, from 3 percent to 20 percent",
+     "locator": "Clark WP pp.15-16",
+     "variant": "towns of 10,000+"
+    },
+    {
+     "year": 1800,
+     "value": 20,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "significant gains in urbanization in England between 1300 and 1800, from 3 percent to 20 percent",
+     "locator": "Clark WP pp.15-16",
+     "variant": "towns of 10,000+"
+    },
+    {
+     "year": 1300,
+     "value": 17.5,
+     "low": 15,
+     "high": 20,
+     "midpoint": true,
+     "quote": "Christopher Dyer has argued that if all towns are included then 15-20 percent of England was urbanized in 1300.",
+     "locator": "Clark WP p.16",
+     "variant": "all towns (Dyer)"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_eng_cuhb_ch6",
+   "series_like": "urban_uk",
+   "region": "England",
+   "title": "Share living in towns of 5,000+, 1540 and 1600 (CUHB vol. II ch.6)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+   "short": "CUHB II ch.6 (5,000+)",
+   "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+   "points": [
+    {
+     "year": 1540,
+     "value": 5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Chapter 6 uses relatively high urban thresholds of over 5,000 to suggest that England had perhaps 5 per cent of its inhabitants living in towns by 1540, and 8 per cent in 1600.",
+     "locator": "Introduction p.3"
+    },
+    {
+     "year": 1600,
+     "value": 8,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Chapter 6 uses relatively high urban thresholds of over 5,000 to suggest that England had perhaps 5 per cent of its inhabitants living in towns by 1540, and 8 per cent in 1600.",
+     "locator": "Introduction p.3"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_gb_glennie_whyte",
+   "series_like": "urban_uk",
+   "region": "England, Scotland, Wales",
+   "title": "Share living in towns c.1700, wide definition, Glennie & Whyte (CUHB vol. II ch.5)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+   "short": "Glennie & Whyte (CUHB II)",
+   "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+   "points": [
+    {
+     "year": 1700,
+     "value": 31.5,
+     "low": 30,
+     "high": 33,
+     "midpoint": true,
+     "quote": "the urban population of England was of the order of 30‒3 per cent, with 22‒5 per cent in Scotland and 13‒15 per cent in Wales.",
+     "locator": "Introduction p.3",
+     "region": "England",
+     "note": "'by the end of the seventeenth century'; '30‒3' read as 30-33"
+    },
+    {
+     "year": 1700,
+     "value": 23.5,
+     "low": 22,
+     "high": 25,
+     "midpoint": true,
+     "quote": "the urban population of England was of the order of 30‒3 per cent, with 22‒5 per cent in Scotland and 13‒15 per cent in Wales.",
+     "locator": "Introduction p.3",
+     "region": "Scotland"
+    },
+    {
+     "year": 1700,
+     "value": 14.0,
+     "low": 13,
+     "high": 15,
+     "midpoint": true,
+     "quote": "the urban population of England was of the order of 30‒3 per cent, with 22‒5 per cent in Scotland and 13‒15 per cent in Wales.",
+     "locator": "Introduction p.3",
+     "region": "Wales"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_gb_langton",
+   "series_like": "urban_uk",
+   "region": "England, Scotland, Wales",
+   "title": "Share living in towns, late Stuart period, Langton (CUHB vol. II ch.14)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+   "short": "Langton (CUHB II)",
+   "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+   "points": [
+    {
+     "year": 1700,
+     "value": 40,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the English population had already achieved an urban rate of 40 per cent, with Wales at 33 per cent and Scotland at 25 per cent.",
+     "locator": "Introduction p.3",
+     "region": "England",
+     "note": "'late Stuart period', plotted 1700"
+    },
+    {
+     "year": 1700,
+     "value": 33,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the English population had already achieved an urban rate of 40 per cent, with Wales at 33 per cent and Scotland at 25 per cent.",
+     "locator": "Introduction p.3",
+     "region": "Wales"
+    },
+    {
+     "year": 1700,
+     "value": 25,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the English population had already achieved an urban rate of 40 per cent, with Wales at 33 per cent and Scotland at 25 per cent.",
+     "locator": "Introduction p.3",
+     "region": "Scotland"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "urban_gb_cuhb_1801",
+   "series_like": "urban_uk",
+   "region": "Great Britain",
+   "title": "Share of the British population urban, 1801 and 1841 (CUHB vol. II)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+   "short": "CUHB II introduction",
+   "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+   "points": [
+    {
+     "year": 1801,
+     "value": 42,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "it is likely that the British population overall was 42 per cent urban, rising to 51 per cent in 1841.",
+     "locator": "Introduction pp.3-4"
+    },
+    {
+     "year": 1841,
+     "value": 51,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "it is likely that the British population overall was 42 per cent urban, rising to 51 per cent in 1841.",
+     "locator": "Introduction p.4"
+    },
+    {
+     "year": 1540,
+     "value": 15,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "only a minority of English people, maybe 15 per cent or so (and a much lower proportion in Scotland and Wales) resided in cities and towns",
+     "locator": "Introduction p.1",
+     "region": "England",
+     "note": "'at the start of our period' (1540), all towns"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "wood_irl_mccracken1971",
+   "series_like": "new: wood_ireland (wood_ni covers NI only)",
+   "region": "Ireland (whole island)",
+   "title": "Woodland cover 1600, McCracken (1971)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "McCracken, E. (1971) The Irish Woods since Tudor Times; as cited in O'Connell, K. (2021) A historical view of woodlands in Ireland. Teagasc Daily, 31 December 2021.",
+   "short": "McCracken 1971",
+   "url": "https://www.teagasc.ie/news--events/daily/forestry/a-historical-view-of-woodlands-in-ireland.php",
+   "points": [
+    {
+     "year": 1600,
+     "value": 12.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "McCracken (1971) estimates that at least one eighth of the country was wooded in 1600 AD",
+     "locator": "Teagasc article, 'Sixteenth century' section",
+     "note": "lower bound ('at least one eighth'); Teagasc notes pollen evidence (Hall 1995) does not support widespread oakwood"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "wood_irl_rackham1995",
+   "series_like": "new: wood_ireland",
+   "region": "Ireland (whole island)",
+   "title": "Woodland cover 1654-6 from the Civil Survey, Rackham (1995)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Rackham, O. (1995); as cited in O'Connell, K. (2021) A historical view of woodlands in Ireland. Teagasc Daily, 31 December 2021.",
+   "short": "Rackham 1995",
+   "url": "https://www.teagasc.ie/news--events/daily/forestry/a-historical-view-of-woodlands-in-ireland.php",
+   "points": [
+    {
+     "year": 1655,
+     "value": 2.1,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Rackham (1995) calculated from the Civil Survey in Ireland 1654-6, that 2.1 % of the country was wooded.",
+     "locator": "Teagasc article",
+     "note": "1654-6, plotted 1655"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "wood_irl_later",
+   "series_like": "new: wood_ireland",
+   "region": "Ireland",
+   "title": "Woodland cover 1700-1951 (Nelson & Walsh; Neeson; Republic 1951)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "As cited in O'Connell, K. (2021) A historical view of woodlands in Ireland. Teagasc Daily, 31 December 2021.",
+   "short": "Teagasc summary",
+   "url": "https://www.teagasc.ie/news--events/daily/forestry/a-historical-view-of-woodlands-in-ireland.php",
+   "points": [
+    {
+     "year": 1700,
+     "value": 2.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "It is estimated that by 1700, the woodland area of the country had been reduced to less than 2% (Nelson & Walsh, 1993).",
+     "locator": "Teagasc article",
+     "note": "upper bound ('less than 2%')",
+     "source": "Nelson & Walsh 1993"
+    },
+    {
+     "year": 1920,
+     "value": 1.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "the area of woodland declined from 152,000 ha in 1880 to 120,000 ha in 1906 and eventually to about 52,000 ha (1% of the national land area) in 1920",
+     "locator": "Teagasc article",
+     "source": "Neeson 1991",
+     "note": "'national' presumably the 26 counties; 1880 and 1906 given only in hectares (152,000; 120,000)"
+    },
+    {
+     "year": 1951,
+     "value": 1.8,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "By 1951, forest cover in the Republic of Ireland amounted to 1.8% of the land area",
+     "locator": "Teagasc article",
+     "region": "Republic of Ireland"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "markets_eng_letters2003",
+   "series_like": "new: markets_eng (beside towns10k_uk)",
+   "region": "England",
+   "title": "Markets recorded (granted or prescriptive) by date, Letters' Gazetteer",
+   "unit": "markets",
+   "kind": "count",
+   "citation": "Letters, S., with Fernandes, M., Keene, D. and Myhill, O. (2003) Gazetteer of Markets and Fairs in England and Wales to 1516. List and Index Society special series 32-33; online edition, Centre for Metropolitan History, Table 1.",
+   "short": "Letters 2003 (markets)",
+   "url": "https://archives.history.ac.uk/gazetteer/gaztab1.pdf",
+   "open_access": true,
+   "licence": "All rights reserved (Centre for Metropolitan History); counts cited as facts",
+   "points": [
+    {
+     "year": 1100,
+     "value": 169,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Markets: England 169 770 356 211 366 1746 490 75 2348 134 55 2443 104 53",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Markets"
+    },
+    {
+     "year": 1200,
+     "value": 356,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Markets: England 169 770 356 211 366 1746 490 75 2348 134 55 2443 104 53",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Markets"
+    },
+    {
+     "year": 1300,
+     "value": 1746,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Markets: England 169 770 356 211 366 1746 490 75 2348 134 55 2443 104 53",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Markets"
+    },
+    {
+     "year": 1400,
+     "value": 2348,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Markets: England 169 770 356 211 366 1746 490 75 2348 134 55 2443 104 53",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Markets"
+    },
+    {
+     "year": 1516,
+     "value": 2443,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Markets: England 169 770 356 211 366 1746 490 75 2348 134 55 2443 104 53",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Markets"
+    }
+   ],
+   "note": "Cumulative numbers recorded by each date, not markets operating then; the introduction says many failed after 1300. Per-decade grants 1200-1516 exist only as a chart (Fig. 5, gazfig5.pdf), not as numbers."
+  },
+  {
+   "id": "fairs_eng_letters2003",
+   "series_like": "new: markets_eng",
+   "region": "England",
+   "title": "Fairs recorded (granted or prescriptive) by date, Letters' Gazetteer",
+   "unit": "fairs",
+   "kind": "count",
+   "citation": "Letters et al. (2003) Gazetteer of Markets and Fairs in England and Wales to 1516, Table 1.",
+   "short": "Letters 2003 (fairs)",
+   "url": "https://archives.history.ac.uk/gazetteer/gaztab1.pdf",
+   "licence": "All rights reserved (Centre for Metropolitan History); counts cited as facts",
+   "points": [
+    {
+     "year": 1100,
+     "value": 8,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Fairs: England 8 16268 146 1825 891 1628 1115 80 2487 153 52 2761 111 47",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Fairs"
+    },
+    {
+     "year": 1200,
+     "value": 146,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Fairs: England 8 16268 146 1825 891 1628 1115 80 2487 153 52 2761 111 47",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Fairs"
+    },
+    {
+     "year": 1300,
+     "value": 1628,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Fairs: England 8 16268 146 1825 891 1628 1115 80 2487 153 52 2761 111 47",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Fairs"
+    },
+    {
+     "year": 1400,
+     "value": 2487,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Fairs: England 8 16268 146 1825 891 1628 1115 80 2487 153 52 2761 111 47",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Fairs"
+    },
+    {
+     "year": 1516,
+     "value": 2761,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "TABLE 1 Markets and fairs: numbers, rate of increase and density by regions of England, 1100–1516 [N at 1100, 1200, 1300, 1400, 1516] Fairs: England 8 16268 146 1825 891 1628 1115 80 2487 153 52 2761 111 47",
+     "locator": "Table 1 (gaztab1.pdf), row 'England' under Fairs"
+    }
+   ],
+   "open_access": true
+  }
+ ],
+ "notes": "POPULATION, ENGLAND. Medieval estimates split into two camps. 'Low': Russell (1948) peak c.3.7m; Campbell 4.0m in 1290 and 4.25-4.5m in 1315; Overton & Campbell 4.0-4.5m; Broadberry et al. 4.75m (1290) and 4.81m (1348), which sits between the camps. 'High': Postan c.6m; Smith 'over 6 million' in 1300 (6-6.5m per Clark); Clark's wage-based model peaks at 5.98m in the 1310s; Wrigley 5.75m for England AND Wales c.1300. The 1377 poll-tax benchmark depends on the assumed share of children and the evasion rate: 2.23m (Russell), 2.49m (Broadberry 'best'), 3.22m (Postan). For 1086 the multiplier and omission rate matter: 1.11m (Russell) to 1.45-1.60m (Darby) to 1.87m (Harvey-style); Broadberry's back-projection gives 1.71m. For 1541-1801 Wrigley et al. (1997) is the standard reconstruction (England without Monmouthshire; it is about 7% below England and Wales). Wrigley's 1801 value for England is 8.66m; the 1801 census for England and Wales is 8.89m, so the series join is not exact. The 1541 value 2.83m is shared by Broadberry Table 6 and Wrigley. Clark's 1540s+ decadal figures (marked a) are Wrigley's and were left out of the Clark model.\nPOPULATION, IRELAND. All Irish figures are for the whole island. The existing pop_ie series covers the 26 counties, so these belong in a new island series or should be plotted with a note. Connell (1950) is high (2.8m in 1712, 4.8m in 1791). Daultrey, Dickson & O Grada (1981/82) are lower (2.0-2.3m in 1712, 4.4m in 1791) and became standard. Clarkson is lower still for 1687 (1.7m). Parker (2017, History Ireland, a magazine article by an independent researcher) argues for higher household sizes (4.62m in 1791, 2.4-2.9m in 1700-25). The 1821 census (6.8m) was revised to 7.2m by Lee. Medieval: Campbell 1.25-1.5m c.1290, against 0.7-1.4m (Gillespie & Connolly) and 0.72-1.0m (Clarke, Glasscock). Cullen's 1.4m for 1600 is thought implausibly high by Canny and by Mokyr & O Grada. The 1641 peak of 2.1m is cited by Campbell from Kennedy & Clarkson. Petty's 1672 figure of 1.1m is considered an underestimate.\nPOPULATION, SCOTLAND AND WALES. No open source with a 1690s Scottish estimate (hearth or poll tax) was found. The only numbers are: c.1290 0.75m (Campbell; 0.5-1.0m range of historians; around 1.0m favoured by Scottish historians), about 1.1m in 1707, 1.3m in 1751/5 and 1,265,380 in 1755 (Webster, NRS). Wales: 0.25m (Campbell) or 0.30m (Williams-Jones) c.1290, 0.6m in 1751/5.\nCOAL. Flinn's British output benchmarks, 1700 to 1830: 3.03, 5.31, 8.99 (1775), 15.29 and 30.99 Mt (the last is Church's 1830 figure). These come from the NIC/Fouquet dataset (OGL), whose values look like Flinn's long tons converted to tonnes. Before 1700, Nef (1932) gives 0.21m tons in the 1550s and 2.98m in the 1680s/1690. Hatcher (1993) revised Nef. The only open copy of Hatcher's numbers found was Munro's teaching slide (0.227 Mt in 1560, 2.64 Mt in 1700, labelled 'English'), so treat that one as weak. No open source was found for Pollard's (1980) higher 1750-1850 estimates or for Hatcher's own tables. Note that Nef's 1690 figure (2.98m tons) is almost the same as Flinn's 1700 figure.\nTOWNS. Definitions differ hugely, and the definition matters more than the scholar: 1300 ranges from 3-4% (towns of 10,000+: Clark, Malanima) to 9% (towns of 2,000+) and 15-20% (all towns: Campbell, Dyer). c.1700 ranges from 13% (10,000+, Malanima) to 30-33% (Glennie & Whyte) and 40% (Langton, wide definition). Plot the threshold with each model. HYDE 3.5 (CC BY-NC) is a coarse model: flat at 2% for the UK before 1700, and 0% for Ireland before 1700. It is far below every scholarly estimate and its NC licence may not suit the project. No open numbers were found for Wrigley's 1520-1801 series (5,000+ threshold) or for Law's 1801-1911 census-based series (E&W 33.8% in 1801, 78.9% in 1911 per a search snippet, unverified). Scotland and Ireland after c.1700 are not covered, apart from HYDE.\nWOODLAND. England's 1086 figure of about 15% (Rackham) agrees with the existing Forest Research value, so it adds no competing figure. Ireland: McCracken's 'at least one eighth' (12.5%) in 1600 is contested, and Teagasc notes that pollen evidence does not support it. Rackham's Civil Survey figure of 2.1% (1654-6) and the 'less than 2% by 1700' (Nelson & Walsh) imply that either the decline was very fast or McCracken was too high. Ireland 1920 1% and 1951 1.8% refer to the 26 counties. No open national figures were found for Scotland or Wales before 1900 beyond what Forest Research already has.\nMARKETS. Letters' Gazetteer gives cumulative counts of markets and fairs recorded in England by 1100, 1200, 1300, 1400 and 1516. These are not markets operating at those dates. Per-decade grants 1200-1516 are published only as a chart (Fig. 5), and Britnell's (1981) per-decade table is not open.\nLICENCES. Most points are individual published figures cited as facts with a citation (working papers, the CUHB excerpt, the History Ireland article, Munro's teaching material). The open-licence datasets are NIC/Fouquet (OGL v3.0, as recorded by OWID; the NIC page is now only on the Wayback Machine) and HYDE 3.5 (CC BY-NC 4.0). The UCD repository copy of Mokyr & O Grada says 'Some rights reserved' without naming a licence; its Table 1 was read from a scanned page image.\n"
+}

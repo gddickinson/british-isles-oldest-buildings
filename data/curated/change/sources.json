@@ -350,5 +350,293 @@
   "url": "https://ourworldindata.org/grapher/share-of-population-urban",
   "download_url": "https://ourworldindata.org/grapher/share-of-population-urban.csv?v=1&csvType=full&useColumnShortNames=false",
   "checked": "2026-10-22, HTTP 200 via curl"
+ },
+ "est_pop_eng_broadberry2011": {
+  "short": "Broadberry et al. 2011",
+  "citation": "Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference). Two points (1300, 1490) from Broadberry, S., Campbell, B., Klein, A., Overton, M. and van Leeuwen, B. (2010) British economic growth, 1270-1870. Draft of 14 July 2010 (CAGE Working Paper 35, University of Warwick).",
+  "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_wrigley1997": {
+  "short": "Wrigley et al. 1997",
+  "citation": "Wrigley, E.A., Davies, R.S., Oeppen, J.E. and Schofield, R.S. (1997) English Population History from Family Reconstitution 1580-1837. Cambridge UP, Appendix 9, pp. 613-6; values as reproduced in Munro, J. (2008) teaching tables 'The population of England (and Wales)', University of Toronto.",
+  "url": "https://www.economics.utoronto.ca/munro5/14POPERMTables.doc",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_russell1948": {
+  "short": "Russell 1948",
+  "citation": "Russell, J.C. (1948) British Medieval Population. Albuquerque. Figures as re-tabulated in Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference).",
+  "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_postan1966": {
+  "short": "Postan 1966",
+  "citation": "Postan, M.M. (1966) Medieval agrarian society in its prime: England. Cambridge Economic History of Europe I, 2nd edn. Figures as given in Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference).",
+  "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_darby1977": {
+  "short": "Darby 1977 / Harvey 1988",
+  "citation": "Darby, H.C. (1977) Domesday England; Harvey, S. (1988) Domesday England. Figures re-tabulated in Broadberry, S., Campbell, B.M.S. and van Leeuwen, B. (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick (Venice III conference).",
+  "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_campbell2006": {
+  "short": "Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf.",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_orthodox_high": {
+  "short": "'High' view (Postan, Smith et al.) via Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf.",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_clark2007": {
+  "short": "Clark 2007",
+  "citation": "Clark, G. (2005) The long march of history: farm wages, population and economic growth, England 1209-1869. UC Davis Working Paper 05-40 (published Economic History Review 60 (2007) 97-135).",
+  "url": "https://repec.dss.ucdavis.edu/files/L71LS9GZM8M3dbFqAwNMpP9h/05-40.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_eng_other_views": {
+  "short": "Other views c.1300",
+  "citation": "Various; each point's 'source' field names the scholar and the paper that reports the figure.",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_scot_campbell2006": {
+  "short": "Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf.",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_scot_webster1755": {
+  "short": "Webster 1755 (NRS)",
+  "citation": "National Records of Scotland, research guide 'Webster's account of the population of Scotland in 1755'.",
+  "url": "https://nrscotland.gov.uk/learning-and-events/research-guides/webster-s-account-of-the-population-of-scotland-in-1755",
+  "licence": "Crown copyright, NRS website (OGL v3.0 assumed, not verified)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_connell1950": {
+  "short": "Connell 1950",
+  "citation": "Connell, K.H. (1950) The Population of Ireland 1750-1845, p.25; as tabulated in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+  "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+  "licence": "UCD Research Repository: 'Some rights reserved' (licence not stated in the PDF)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_dod1982": {
+  "short": "Daultrey, Dickson & Ó Gráda",
+  "citation": "Daultrey, S., Dickson, D. and Ó Gráda, C. (1981) Eighteenth-century Irish population: new perspectives from old sources. Journal of Economic History 41: 601-628, p.624 (and Dickson, Ó Gráda & Daultrey 1982, PRIA 82C: 125-81); as tabulated in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+  "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+  "licence": "UCD Research Repository: 'Some rights reserved' (licence not stated in the PDF)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_clarkson": {
+  "short": "Clarkson 1981",
+  "citation": "Clarkson, L.A. (1981) Irish population revisited, 1687-1821, in Goldstrom & Clarkson (eds) Irish Population, Economy and Society, p.26; as tabulated in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+  "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+  "licence": "UCD Research Repository: 'Some rights reserved' (licence not stated in the PDF)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_lee1821": {
+  "short": "1821 census / Lee 1981",
+  "citation": "Lee, J.J. (1981) On the accuracy of the pre-famine Irish censuses, in Goldstrom & Clarkson (eds), p.54; census as given in Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+  "url": "https://researchrepository.ucd.ie/server/api/core/bitstreams/7c4acca6-84a2-4e64-9db0-76f3458b5679/content",
+  "licence": "UCD Research Repository: 'Some rights reserved'",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_parker2017": {
+  "short": "Parker 2017",
+  "citation": "Parker, D. (2017) A taxing enquiry: how many people were there in pre-census Ireland? History Ireland 25(3), May/June 2017.",
+  "url": "https://historyireland.com/taxing-enquiry-many-people-pre-census-ireland/",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_contemporary": {
+  "short": "Contemporary estimates",
+  "citation": "As reported in Parker (2017) History Ireland 25(3) and (Petty) Campbell (2006/2008).",
+  "url": "https://historyireland.com/taxing-enquiry-many-people-pre-census-ireland/",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_pop_irl_medieval": {
+  "short": "Campbell 2008 et al.",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. Paper for the XIV International Economic History Congress, Helsinki 2006 (published in Economic History Review 61 (2008) 896-945). Archived copy of helsinki.fi/iehc2006/papers3/Campbell122.pdf. Cullen's 1600 figure from Mokyr, J. and Ó Gráda, C. (1983) New developments in Irish population history 1700-1850. UCD Centre for Economic Research Working Paper 17 (published Economic History Review 37 (1984) 473-488). Table 1.",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_coal_gb_flinn_nic": {
+  "short": "Flinn 1984 via NIC/Fouquet",
+  "citation": "National Infrastructure Commission (2020) Historic Energy Dataset (compiled by R. Fouquet, LSE), table 1.3.4 'Coal and Coke Consumption, 1700-1913', sources Flinn (1984) The History of the British Coal Industry vol.2 and Church (1986) vol.3.",
+  "url": "https://web.archive.org/web/20250323165206/https://nic.org.uk/data/all-data/historic-energy/",
+  "licence": "OGL v3.0 (as recorded by Our World in Data's metadata for 'National Infrastructure Commission, UK historical energy data'; NIC page itself archived)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_coal_gb_nef1932": {
+  "short": "Nef 1932",
+  "citation": "Nef, J.U. (1932) The Rise of the British Coal Industry. London; figures as reported in the review 'King Coal', The Spectator, 6 January 1933, p.23.",
+  "url": "http://web.archive.org/web/20250212182959/https://archive.spectator.co.uk/article/6th-january-1933/23/king-coal",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_coal_eng_hatcher_wrigley_munro": {
+  "short": "Hatcher/Wrigley via Munro",
+  "citation": "Munro, J. (lecture slides, University of Toronto) 'England: coal and iron', slide 'English Coal Production in tonnes', attributed to Wrigley and Hatcher (Hatcher 1993, History of the British Coal Industry vol.1).",
+  "url": "https://www.economics.utoronto.ca/munro5/L23EnglandCoalandIron.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_eng_campbell1290": {
+  "short": "Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_wal_campbell1290": {
+  "short": "Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_scot_campbell1290": {
+  "short": "Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_eng_malanima2009": {
+  "short": "Malanima 2009 (towns 10,000+)",
+  "citation": "Malanima, P. (2009) Pre-modern European Economy; as cited in Broadberry et al. (2010) British economic growth 1270-1870, pp.30-31.",
+  "url": "https://gcoe.ier.hit-u.ac.jp/english/events/PDF/BritishGDPLongRun.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_eng_clark_dyer": {
+  "short": "Clark 2007 / Dyer",
+  "citation": "Clark, G. (2005) The long march of history, UC Davis WP 05-40, pp.15-16 (Dyer's view as reported there).",
+  "url": "https://repec.dss.ucdavis.edu/files/L71LS9GZM8M3dbFqAwNMpP9h/05-40.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_eng_cuhb_ch6": {
+  "short": "CUHB II ch.6 (5,000+)",
+  "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+  "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_gb_glennie_whyte": {
+  "short": "Glennie & Whyte (CUHB II)",
+  "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+  "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_gb_langton": {
+  "short": "Langton (CUHB II)",
+  "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+  "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_gb_cuhb_1801": {
+  "short": "CUHB II introduction",
+  "citation": "Clark, P. (2000) Introduction, in P. Clark (ed.) The Cambridge Urban History of Britain, vol. II: 1540-1840, Cambridge UP, pp.3-4 (publisher's free excerpt).",
+  "url": "https://assets.cambridge.org/97805214/31415/excerpt/9780521431415_excerpt.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_urban_irl_campbell1290": {
+  "short": "Campbell 2008",
+  "citation": "Campbell, B.M.S. (2006) Benchmarking medieval economic development: England, Wales, Scotland and Ireland c.1290. IEHC Helsinki 2006 paper (published EcHR 61, 2008).",
+  "url": "http://web.archive.org/web/20190728102822/http://www.helsinki.fi:80/iehc2006/papers3/Campbell122.pdf",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_wood_irl_mccracken1971": {
+  "short": "McCracken 1971",
+  "citation": "McCracken, E. (1971) The Irish Woods since Tudor Times; as cited in O'Connell, K. (2021) A historical view of woodlands in Ireland. Teagasc Daily, 31 December 2021.",
+  "url": "https://www.teagasc.ie/news--events/daily/forestry/a-historical-view-of-woodlands-in-ireland.php",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_wood_irl_rackham1995": {
+  "short": "Rackham 1995",
+  "citation": "Rackham, O. (1995); as cited in O'Connell, K. (2021) A historical view of woodlands in Ireland. Teagasc Daily, 31 December 2021.",
+  "url": "https://www.teagasc.ie/news--events/daily/forestry/a-historical-view-of-woodlands-in-ireland.php",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_wood_irl_later": {
+  "short": "Teagasc summary",
+  "citation": "As cited in O'Connell, K. (2021) A historical view of woodlands in Ireland. Teagasc Daily, 31 December 2021.",
+  "url": "https://www.teagasc.ie/news--events/daily/forestry/a-historical-view-of-woodlands-in-ireland.php",
+  "licence": "Published figures cited as facts (no open licence)",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_markets_eng_letters2003": {
+  "short": "Letters 2003 (markets)",
+  "citation": "Letters, S., with Fernandes, M., Keene, D. and Myhill, O. (2003) Gazetteer of Markets and Fairs in England and Wales to 1516. List and Index Society special series 32-33; online edition, Centre for Metropolitan History, Table 1.",
+  "url": "https://archives.history.ac.uk/gazetteer/gaztab1.pdf",
+  "licence": "All rights reserved (Centre for Metropolitan History); counts cited as facts",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
+ },
+ "est_fairs_eng_letters2003": {
+  "short": "Letters 2003 (fairs)",
+  "citation": "Letters et al. (2003) Gazetteer of Markets and Fairs in England and Wales to 1516, Table 1.",
+  "url": "https://archives.history.ac.uk/gazetteer/gaztab1.pdf",
+  "licence": "All rights reserved (Centre for Metropolitan History); counts cited as facts",
+  "used": "Published estimates for the years before official statistics (see data/curated/change/estimates.json for the quote and page of each figure)",
+  "checked": "2026-10-23, fetched by a research agent; quotes stored per figure"
  }
 }

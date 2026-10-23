@@ -52,6 +52,53 @@ def ghsl():
         save(f"ghsl_built_{y}", np.clip(np.round(a), 0, 100).astype(int))
 
 
+GHS_POP = ("https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E{y}_GLOBE_R2023A_4326_30ss/"
+           "V1-0/GHS_POP_E{y}_GLOBE_R2023A_4326_30ss_V1_0.zip/GHS_POP_E{y}_GLOBE_R2023A_4326_30ss_V1_0.tif")
+
+
+def ghs_pop():
+    """People per km² at 1/60°, for the observed epochs 1975–2020 (only the isles' window is read from each zip)."""
+    for y in range(1975, 2021, 5):
+        crop, dst = os.path.join(TMP, f"p{y}c.tif"), os.path.join(TMP, f"p{y}.tif")
+        run(G + "gdal_translate", "-q", "-projwin", LON0, LAT1, LON1, LAT0, "/vsizip//vsicurl/" + GHS_POP.format(y=y), crop)
+        run(G + "gdalwarp", "-q", "-overwrite", "-te", LON0, LAT0, LON1, LAT1, "-ts", W, H, "-r", "sum", crop, dst)
+        a = np.clip(read(dst).astype(float), 0, None) / cell_km2()
+        save(f"ghs_pop_{y}", np.round(a).astype(int))
+        os.remove(crop)
+
+
+CRU = "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.10/cruts.2604091129.v4.10/{v}/cru_ts4.10.{a}.{b}.{v}.dat.nc.gz"
+
+
+def cru():
+    """CRU TS 4.10 decade means over the isles at 0.5°: mean temperature (°C) and yearly rainfall (mm), with the
+    number of stations behind each cell (0 = no station: the value is the climatology, so left out)."""
+    from scipy.io import netcdf_file
+    out = {"per_deg": 2, "lon0": LON0, "lat1": LAT1, "tmp": {}, "pre": {}}
+    for a in range(1901, 2022, 10):
+        for v in ("tmp", "pre"):
+            gz, nc = os.path.join(TMP, "c.nc.gz"), os.path.join(TMP, "c.nc")
+            run("curl", "-s", "-f", "-o", gz, CRU.format(v=v, a=a, b=min(a + 9, 2025)))
+            run("gunzip", "-f", gz)
+            f = netcdf_file(nc, "r", mmap=True)
+            lat, lon = f.variables["lat"][:], f.variables["lon"][:]
+            r = np.where((lat > LAT0) & (lat < LAT1))[0]; c = np.where((lon > LON0) & (lon < LON1))[0]
+            x = np.array(f.variables[v][:, r[0]:r[-1] + 1, c[0]:c[-1] + 1], dtype=float)
+            stn = np.array(f.variables["stn"][:, r[0]:r[-1] + 1, c[0]:c[-1] + 1], dtype=float)
+            f.close(); os.remove(nc)
+            x[x > 1e30] = np.nan
+            x[stn <= 0] = np.nan                                  # no station within reach: climatology, not data
+            years = x.shape[0] // 12
+            yearly = x[:years * 12].reshape(years, 12, *x.shape[1:])
+            yearly = yearly.mean(axis=1) if v == "tmp" else yearly.sum(axis=1)
+            with np.errstate(all="ignore"):
+                dec = np.nanmean(yearly, axis=0)[::-1]           # rows north → south
+            out[v][a] = [[None if np.isnan(q) else round(float(q), 2) for q in row] for row in dec]
+            print(v, a, flush=True)
+    with gzip.open(os.path.join(OUT, "cru_decades.json.gz"), "wt") as fh:
+        json.dump(out, fh, separators=(",", ":"))
+
+
 def burn(src, dst, per_deg, where=None, attr=None, layer=None, extra=()):
     w, h = int((LON1 - LON0) * per_deg), int((LAT1 - LAT0) * per_deg)
     args = [G + "gdal_rasterize", "-q", "-te", LON0, LAT0, LON1, LAT1, "-ts", w, h, "-ot", "Byte", "-init", 0]
@@ -153,5 +200,5 @@ def corine():
 
 
 if __name__ == "__main__":
-    for step in sys.argv[1:] or ["ghsl", "corine", "alc", "superficial", "awi"]:
+    for step in sys.argv[1:] or ["ghsl", "ghs_pop", "corine", "alc", "superficial", "awi", "cru"]:
         globals()[step]()

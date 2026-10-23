@@ -11,21 +11,24 @@ const ChangeLayers = (() => {
 
   function mount(box, map) {
     box.innerHTML = `<div class="cl-head"><label>Map layer <select class="cl-pick"><option value="">None</option></select></label>
-      <span class="cl-when"></span></div><div class="cl-info"></div>`;
+      <select class="cl-date" aria-label="Date of the map" hidden></select><span class="cl-when"></span></div><div class="cl-info"></div>`;
     const pick = box.querySelector(".cl-pick"), info = box.querySelector(".cl-info"), when = box.querySelector(".cl-when");
+    const dateSel = box.querySelector(".cl-date");
     if (!map.getPane("changePane")) { map.createPane("changePane"); map.getPane("changePane").style.zIndex = 350; }
     let layers = [], current = null, shown = null, year = null, geo = {}, paused = false;
 
     // the latest date of the layer at or before the slider's year (null: the layer starts later); fixed layers have one
     const yearFor = (l) => {
       if (l.years.length === 1) return l.years[0];
+      if (dateSel.value) return +dateSel.value;        // a date chosen for this layer wins over the slider
       const y = year ?? l.years[l.years.length - 1];
       return l.years.filter((v) => v <= y).pop() ?? null;
     };
     const whenText = (l, y) => (l.years.length === 1 ? (l.date || "") : y == null ? `starts ${yt(l.years[0])}; move the year slider`
-      : `map for ${yt(y)}${year == null ? " (latest; use the year slider)" : ""}`);
+      : dateSel.value ? "" : `map for ${l.labels?.[y] ?? yt(y)}${year == null ? " (latest; use the year slider)" : ""}`);
     const radius = (k) => 2 + Math.sqrt(k) * 0.45;    // dot area follows population (thousands)
     const dots = L.svg({ pane: "changePane" });      // the map's canvas only repaints new dots once it moves
+    const spanCanvas = L.canvas({ pane: "changePane" });  // thousands of stations: canvas, restyled not rebuilt
     function drawInfo(l) {
       if (!l) { info.innerHTML = ""; when.textContent = ""; return; }
       const srcs = l.sources || [l.source];
@@ -38,6 +41,12 @@ const ChangeLayers = (() => {
     async function show() {
       const l = paused ? null : layers.find((x) => x.id === pick.value) || null;
       if (l !== current && shown) { map.removeLayer(shown); shown = null; }
+      if (l !== current) {                              // dates of a time layer: follow the slider, or pick one
+        const many = l && l.years && l.years.length > 1;
+        dateSel.hidden = !many;
+        dateSel.innerHTML = many ? `<option value="">Follow the year slider</option>` +
+          l.years.map((y) => `<option value="${y}">${l.labels?.[y] ?? yt(y)}</option>`).join("") : "";
+      }
       current = l;
       drawInfo(l);
       if (!l) return;
@@ -62,6 +71,24 @@ const ChangeLayers = (() => {
             fillColor: est ? l.legend[1].color : l.legend[0].color, fillOpacity: 0.8 })
             .bindTooltip(`${esc(name)}: about ${ChangeCharts.fmt(k * 1000)} people in ${yt(y)}${est ? " (estimated)" : ""}`);
         })).addTo(map);
+      } else if (l.kind === "spans") {                 // [name, lat, lon, opened, closed]: built once, restyled per year
+        geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());
+        const y = yearFor(l) ?? l.years[l.years.length - 1], data = await geo[l.id];
+        if (current !== l) return;
+        if (!shown) {
+          shown = L.layerGroup(data.map(([name, lat, lon, o, c]) => Object.assign(L.circleMarker([lat, lon], {
+            pane: "changePane", renderer: spanCanvas, radius: 2.2, weight: 0, fillOpacity: 0.9 })
+            .bindTooltip(`${esc(name)}: opened ${o}${c ? `, closed ${c}` : ""}`), { span: [o, c] }))).addTo(map);
+        }
+        let open = 0;
+        shown.eachLayer((m) => {
+          const [o, c] = m.span, now = o <= y && !(c && c <= y), gone = c && c <= y;
+          open += now ? 1 : 0;
+          m.setStyle({ fillColor: now ? l.legend[0].color : l.legend[1].color, fillOpacity: now ? 0.9 : gone ? 0.5 : 0,
+                       radius: now ? 2.2 : 1.6 });
+        });
+        when.textContent = `${open.toLocaleString()} open in ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;
+        spanCanvas._redraw?.();                         // the canvas does not always repaint until the map moves
       } else if (!shown) {
         when.textContent = "";
         geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());
@@ -85,6 +112,7 @@ const ChangeLayers = (() => {
       try { pick.value = localStorage.getItem(KEY) || ""; } catch (e) { /* private mode */ }
       if (pick.value) show();
     });
+    dateSel.addEventListener("change", show);
     pick.addEventListener("change", () => {
       try { localStorage.setItem(KEY, pick.value); } catch (e) { /* private mode */ }
       show();

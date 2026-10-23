@@ -527,8 +527,8 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - New graph "Tea retained for home consumption", UK 1846–1865 (million lb), from the 1846–1865 volume: No. 8
   p. 21 (leaf 25) for 1846–50 and No. 13 pp. 38–39 (leaves 472–473) for 1851–65; the overlapping years in No. 9
   and No. 13 agree to the pound. 46.7 million lb in 1846, 97.8 million in 1865. Page images are `page/n<leaf-1>`.
-- Nothing before 1852 per head: the Abstract prints no UK population before 1852 ("details for each division ...
-  cannot be readily ascertained for the years previous to 1854"), so no per-head figure was made up.
+- Nothing before 1852 per head: the Abstract's yearly UK population table (No. 49 in the 1852–1870 volume) also
+  starts in 1852, and the 1846–1865 volume has none for the whole UK, so no per-head figure was made up.
 - A duty history (rates 1853–65) went into the new graph's note from memory and was taken out again before commit.
 - Tests 140 OK; ui_check `change_tea` now also requires the new graph. Hosted copy not updated.
 - Next: C2d2b, C2d3 (duty and prices), or C3.

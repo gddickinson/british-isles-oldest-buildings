@@ -35,7 +35,7 @@ def cell_of(lat, lon):
 
 def write_index(rows, out_dir):
     """Light rows for building pages, place pages, the people pages and plain map layers, without the full
-    places: [id, name, lat, lon, label index, group index, date_text, building_id] (trailing nulls dropped,
+    places: [id, name, lat, lon, label index, group index, date_text, building_id, year_start] (trailing nulls dropped,
     coordinates to ~1 m) in location cells, plus places_index.json (labels, groups, cell sizes, objects kept
     in each building)."""
     import shutil
@@ -48,7 +48,7 @@ def write_index(rows, out_dir):
     cells, objects, nowhere = {}, {}, []
     for r in rows:
         row = [r["id"], r["name"], rnd(r.get("lat")), rnd(r.get("lon")), li[lab(r)], gi[grp(r)], r.get("date_text"),
-               r.get("building_id")]
+               r.get("building_id"), r.get("year_start")]
         while row[-1] is None:
             row.pop()
         if r.get("building_id"):

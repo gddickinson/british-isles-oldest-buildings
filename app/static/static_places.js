@@ -43,8 +43,8 @@
   // the people pages and plain map layers need names and positions only, not the 50 MB of places
   let INDEX = null;
   const CELLS = new Map(), LITE = new Map();
-  const liteRow = ([id, name, lat, lon, l, g, date_text, building_id]) =>
-    ({ id, name, lat, lon, kind_label: INDEX.labels[l], kind_group: INDEX.groups[g], date_text, building_id });
+  const liteRow = ([id, name, lat, lon, l, g, date_text, building_id, year_start]) =>
+    ({ id, name, lat, lon, kind_label: INDEX.labels[l], kind_group: INDEX.groups[g], date_text, building_id, year_start });
   let INDEX_LOADING = null;
   const loadIndex = () => (INDEX_LOADING = INDEX_LOADING || fetch("data/places_index.json").then((r) => r.json()).then((ix) => {
     INDEX = ix;
@@ -155,7 +155,7 @@
       // a layer chosen by group or kind only: the light rows hold all a map marker needs
       const rows = plain && !LOADING ? (await loadAllLite()).map((r) => ({ ...r, _text: "" })) : (await load(ctx.meta), PLACES);
       return rows.filter((r) => r.lat != null && matches(r, f)).map((r) => ({ id: r.id, name: r.name, lat: r.lat, lon: r.lon,
-        kind_label: r.kind_label, kind_group: r.kind_group, date_text: r.date_text }));
+        kind_label: r.kind_label, kind_group: r.kind_group, date_text: r.date_text, year_start: r.year_start }));
     },
     "places/near": (p) => near(+p.get("lat"), +p.get("lon"), num(p.get("km")) || 5, num(p.get("limit")) || 12, p.get("exclude")),
     "place": async (p, id, ctx) => {

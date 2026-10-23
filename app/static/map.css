@@ -82,3 +82,22 @@
 @keyframes map-mark-pulse { 0% { stroke-opacity: 1; } 100% { stroke-opacity: .35; } }
 .map-mark-label { font-weight: 600; }
 @media (prefers-reduced-motion: reduce) { .map-mark { animation: none; } }
+
+/* "Through time" year slider (time_slider.js) */
+.time-slider { position: absolute; z-index: 500; left: 50%; transform: translateX(-50%); bottom: 22px;
+  width: min(520px, calc(100% - 120px)); padding: 8px 12px; background: var(--panel); color: var(--ink);
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); font-size: 13px; }
+.time-slider .ts-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.time-slider .ts-head .check { display: flex; align-items: center; gap: 4px; margin: 0; }
+.time-slider .ts-year { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 5.5em; color: var(--accent); }
+.time-slider .ts-maps { margin-left: auto !important; font-size: 12.5px; }
+.time-slider .ts-body, .time-slider .ts-note { display: none; }
+.time-slider.on .ts-body, .time-slider.on .ts-note { display: block; }
+.time-slider .ts-hist { display: block; width: 100%; height: 34px; margin-top: 6px; }
+.time-slider .ts-hist rect { fill: var(--accent); opacity: .55; }
+.time-slider .ts-range { width: 100%; margin: 2px 0 0; accent-color: var(--accent); }
+.time-slider .ts-note { margin-top: 4px; line-height: 1.3; font-size: 11.5px; }
+@media (max-width: 760px) {
+  .time-slider { width: calc(100% - 32px); bottom: 64px; padding: 6px 10px; }
+  .time-slider .ts-note { display: none !important; }
+}

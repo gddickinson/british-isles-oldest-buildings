@@ -7,7 +7,7 @@
 The Oldest page lists the earliest dated places of each kind in the groups of `PLACE_GROUPS` (dates from
 Wikidata). Two checks stand between Wikidata and that list:
   precision - a date given to the century or decade ("19th century", stored as 1819 or 1801) is shown as such
-              ("1800–1839", "19th century", "1830s") and is not a candidate for "earliest dated";
+              ("between 1800 and 1839", "19th century", "1830s") and is not a candidate for "earliest dated";
   review    - `data/curated/oldest_places_review.json`: each candidate checked against its sources, with a
               verdict: kept (the date holds), corrected (year and age text from the sources), dropped (wrong
               kind of place, a date of something else, or no support; `reason` says which), open (not settled:
@@ -55,7 +55,7 @@ def century(year):
 def date_text(year, precision, earliest=None, latest=None):
     """How a Wikidata date of less than year precision reads."""
     if earliest and latest and earliest != latest:
-        return f"{earliest}–{latest}"
+        return f"between {earliest} and {latest}"     # not "1800–1839", which reads as opened and closed
     if precision == 8:
         return f"{year // 10 * 10}s"
     if precision == 7:

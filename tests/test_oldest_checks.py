@@ -19,7 +19,7 @@ class Precision(unittest.TestCase):
         self.assertEqual(century(1900), "19th century")
         self.assertEqual(century(1201), "13th century")
         self.assertEqual(century(2001), "21st century")
-        self.assertEqual(date_text(1819, 7, 1800, 1839), "1800–1839")
+        self.assertEqual(date_text(1819, 7, 1800, 1839), "between 1800 and 1839")
         self.assertEqual(date_text(1601, 7), "17th century")
         self.assertEqual(date_text(1834, 8), "1830s")
 

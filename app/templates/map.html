@@ -19,6 +19,7 @@
       Click any marker for details.</p>
   </aside>
   <div class="explore-map"><div id="ex_map"></div>
+    <div id="ex_time" class="time-slider"></div>
     <button id="ex_toggle" class="btn small ex-toggle" type="button">Filters</button></div>
 </div>
 <div id="modal" class="modal hidden" aria-hidden="true">
@@ -30,5 +31,6 @@
 {% endblock %}
 {% block scripts %}
 <script src="{{ url_for('static', filename='detail.js') }}"></script>
+<script src="{{ url_for('static', filename='time_slider.js') }}"></script>
 <script src="{{ url_for('static', filename='map_page.js') }}"></script>
 {% endblock %}

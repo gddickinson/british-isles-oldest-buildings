@@ -1,9 +1,10 @@
 // Map page: full-screen map with building groups, places-of-interest layers, the detailed
-// background (layer switcher) and an offline town/village finder.
+// background (layer switcher), an offline town/village finder and a year slider (time_slider.js).
 const E$ = (s) => document.querySelector(s);
 const exMap = L.map("ex_map", { preferCanvas: true, maxZoom: 18 });
-const exState = { groups: new Set(GROUPS.concat(["Other"])), places: new Set(), landmarks: false, early: false };
-let exBuildings = [], exTowns = null;
+const exState = { groups: new Set(GROUPS.concat(["Other"])), places: new Set(), landmarks: false, early: false, year: null };
+let exBuildings = [], exPlaces = [], exTowns = null, exTime = null;
+const inTime = (r) => exState.year === null || TimeSlider.standing(r, exState.year);
 const bCluster = L.markerClusterGroup(Prefs.cluster({ chunkedLoading: true, maxClusterRadius: 40, disableClusteringAtZoom: 13 }));
 const pCluster = L.markerClusterGroup(Prefs.cluster({ chunkedLoading: true, maxClusterRadius: 50, disableClusteringAtZoom: 14,
   iconCreateFunction: (c) => L.divIcon({ html: `<span>${c.getChildCount()}</span>`, className: "overlay-cluster", iconSize: [30, 30] }) }));
@@ -17,7 +18,7 @@ function startView() {
 function drawBuildings() {
   bCluster.clearLayers();
   const ring = cssVar("--surface");
-  const pts = exBuildings.filter((b) => exState.groups.has(b.category_group || "Other"));
+  const pts = exBuildings.filter((b) => exState.groups.has(b.category_group || "Other") && inTime(b));
   bCluster.addLayers(pts.map((b) => {
     const m = L.circleMarker([b.lat, b.lon], { radius: 7, weight: 2, color: ring, fillOpacity: 0.95, fillColor: groupColor(b.category_group) });
     m.bindTooltip(`${esc(b.name)} · ${esc(b.date_text || "")}`);
@@ -38,16 +39,24 @@ async function loadBuildings() {
     <input type="checkbox" value="${esc(g)}" ${exState.groups.has(g) ? "checked" : ""}>
     <span class="dot" style="background:${groupColor(g)}"></span>${esc(g)} <em>${counts[g].toLocaleString()}</em></label>`).join("");
   drawBuildings();
+  if (exTime) exTime.refresh();
 }
 
 async function drawPlaces() {
+  exPlaces = [];
+  if (exState.places.size) {
+    const p = new URLSearchParams();
+    exState.places.forEach((g) => p.append("kind_group", g));
+    exPlaces = await api("/api/places/map?" + p).catch(() => []);
+  }
+  renderPlaces();
+  if (exTime) exTime.refresh();
+}
+
+function renderPlaces() {
   pCluster.clearLayers();
-  if (!exState.places.size) return;
-  const p = new URLSearchParams();
-  exState.places.forEach((g) => p.append("kind_group", g));
-  const pts = await api("/api/places/map?" + p).catch(() => []);
   const ink = cssVar("--ink");
-  pCluster.addLayers(pts.map((pt) => {
+  pCluster.addLayers(exPlaces.filter(inTime).map((pt) => {
     const m = L.circleMarker([pt.lat, pt.lon], { radius: 5, weight: 1.5, color: ink, fillOpacity: 0.9, fillColor: placeColor(pt.kind_group) });
     m.bindTooltip(`${esc(pt.name)} · ${esc(pt.kind_label)}`);
     m.on("click", () => openPlace(pt.id));
@@ -136,6 +145,11 @@ exMap.addLayer(bCluster);
 exMap.addLayer(pCluster);
 attachOutlines(exMap);
 wireExplore();
+exTime = TimeSlider.mount(E$("#ex_time"), {
+  onChange: (y) => { exState.year = y; drawBuildings(); renderPlaces(); },
+  counts: () => exBuildings.filter((b) => exState.groups.has(b.category_group || "Other")).map((b) => b.year_start)
+    .concat(exPlaces.map((p) => p.year_start)),
+});
 loadBuildings();
 markFromUrl();
 

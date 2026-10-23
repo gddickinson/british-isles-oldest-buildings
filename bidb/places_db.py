@@ -119,7 +119,7 @@ def facets(conn, filters):
 def map_points(conn, filters):
     w, args = where(filters)
     return [dict(r) for r in conn.execute(
-        f"SELECT id, name, lat, lon, kind_label, kind_group, date_text FROM places{w}"
+        f"SELECT id, name, lat, lon, kind_label, kind_group, date_text, year_start FROM places{w}"
         f"{' AND' if w else ' WHERE'} lat IS NOT NULL", args)]
 
 

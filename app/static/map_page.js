@@ -154,7 +154,7 @@ function catalogueSeries() {
   const points = [];
   for (let c = -4000; c <= now; c += 100) points.push([Math.min(c + 50, now), n[c] || 0]);
   return [{ id: "catalogue_begun", theme: "This catalogue", title: "Buildings and places on the map, begun per century",
-            unit: "per century", default: true, sources: [],
+            unit: "per century", default: true, sources: [], points,
             note: "Counted from the dated records shown on the map (their start year). Only what survives or was " +
                   "recorded: far more was built than this, above all before 1500, so early centuries look emptier than they were." }];
 }

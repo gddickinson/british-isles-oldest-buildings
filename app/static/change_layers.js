@@ -36,7 +36,9 @@ const ChangeLayers = (() => {
       drawInfo(l);
       if (!l) return;
       if (l.kind === "grid") {
-        const y = yearFor(l), url = ROOT + l.file.replace("{year}", y);
+        geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());   // {year: PNG data URI}
+        const y = yearFor(l), url = (await geo[l.id])[y];
+        if (current !== l) return;
         when.textContent = `map for ${yt(y)}${year == null ? " (latest; use the year slider)" : ""}`;
         if (shown) shown.setUrl(url);
         else shown = L.imageOverlay(url, l.bounds, { opacity: 0.72, pane: "changePane", className: "cl-grid", interactive: false }).addTo(map);

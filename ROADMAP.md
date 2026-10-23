@@ -4,12 +4,12 @@ Future work for British Isles Oldest Buildings, kept between sessions. Newest de
 each section; tick items off (and move them to SESSION_LOG.md) when done.
 
 ## Status (2026-10-22)
-- Catalogue 22,039 records; 166,325 places of interest in 22 groups (latest: sport and leisure, public
-  institutions with schools founded before 1900); 11,927 people; 870 researched claims (1,660 quotes,
+- Catalogue 22,039 records; 173,657 places of interest in 22 groups (latest: shipwrecks); 11,927 people;
+  517 floor plans; "Change over time": 50 cited series, 32 events, 4 map layers; 870 researched claims (1,660 quotes,
   1,658 found). Database release db-2026-10-22-4 (81 MB). Download cache on an external drive.
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 55: 243 MiB of the
-  256 MiB limit (place texts cut to 300 characters, floor plans 480 px WebP; the local app keeps
-  everything). Republish changed files only: checksum `dist/` before and after `python -m
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 MiB of the
+  256 MiB limit, 479 of 511 files (place texts cut to 300 characters, floor plans 420 px WebP q45,
+  1,100 thumbnails; the local app keeps everything). Republish changed files only: checksum `dist/` before and after `python -m
   app.static_export`, publish in batches under 64 MB, removed files with null, removals first.
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
   (`git archive HEAD | tar -x -C <dir>`, run on port 5071).

@@ -53,7 +53,7 @@ def _rewrite(html):
     return html.replace('"/static/', '"static/')
 
 
-def export(thumb_limit=1200):
+def export(thumb_limit=1100):
     if DIST.exists():
         shutil.rmtree(DIST)
     (DIST / "data").mkdir(parents=True)

@@ -5,8 +5,10 @@ HYDE's global 5-arc-minute grids are read one file at a time from the 5.3 GB arc
 cropped to the isles (lon −11..2, lat 49..61), kept as compact JSON in <cache>/hyde/, and drawn as palette PNGs
 already reprojected to Web Mercator rows, so Leaflet's image overlay lines up with the map.
 
-    python -m bidb.change_layers        → app/static/data/change/layers/*.png + layers.json
+    python -m bidb.change_layers        → app/static/data/change/layers/hyde_<var>.json ({year: PNG data URI}; one
+                                          file per variable, as the hosted copy allows 511 files) + layers.json
 """
+import base64
 import json
 import math
 import struct
@@ -134,20 +136,22 @@ def run(log=print):
     (OUT / "layers").mkdir(parents=True, exist_ok=True)
     meta = []
     for var, spec in LAYERS.items():
+        pack = {}
         for y in YEARS:
             if not (cache_dir() / "hyde" / f"{var}_{y}.json").exists() and index is None:
                 index = members(ARCHIVE)
             rows = grid(var, y, index)
-            (OUT / "layers" / f"hyde_{var}_{y}.png").write_bytes(png(rows, spec["edges"], spec["colors"]))
+            pack[y] = "data:image/png;base64," + base64.b64encode(png(rows, spec["edges"], spec["colors"])).decode()
             log(f"  {var} {y}")
+        (OUT / "layers" / f"hyde_{var}.json").write_text(json.dumps(pack, separators=(",", ":")))
         meta.append({"id": f"hyde_{var}", "title": spec["title"], "kind": "grid", "years": YEARS,
-                     "file": f"layers/hyde_{var}_{{year}}.png", "bounds": [[LAT0, LON0], [LAT1, LON1]],
+                     "file": f"layers/hyde_{var}.json", "bounds": [[LAT0, LON0], [LAT1, LON1]],
                      "unit": spec["unit"], "legend": legend(spec), "note": spec["note"], "source": HYDE, "modelled": True})
     path = OUT / "layers.json"                      # keep the fixed layers of bidb.change_geology
     old = json.loads(path.read_text())["layers"] if path.exists() else []
     keep = [l for l in old if not l["id"].startswith("hyde_")]
     path.write_text(json.dumps({"layers": meta + keep}, ensure_ascii=False, indent=1))
-    size = sum(p.stat().st_size for p in (OUT / "layers").glob("hyde_*.png"))
+    size = sum(p.stat().st_size for p in (OUT / "layers").glob("hyde_*.json"))
     log(f"{len(meta)} layers × {len(YEARS)} years, {size // 1024} KB")
 
 

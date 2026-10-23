@@ -35,7 +35,7 @@
     2000,
     2017
    ],
-   "file": "layers/hyde_popd_{year}.png",
+   "file": "layers/hyde_popd.json",
    "bounds": [
     [
      49.0,
@@ -125,7 +125,7 @@
     2000,
     2017
    ],
-   "file": "layers/hyde_cropland_{year}.png",
+   "file": "layers/hyde_cropland.json",
    "bounds": [
     [
      49.0,

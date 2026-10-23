@@ -50,8 +50,9 @@ class Geology(unittest.TestCase):
         for l in meta:
             for s in l.get("sources") or [l["source"]]:
                 self.assertTrue(s["citation"] and s["licence"] and s["url"], l["id"])
-        for y in cl.YEARS:
-            self.assertTrue((cl.OUT / "layers" / f"hyde_popd_{y}.png").exists())
+        pack = json.loads((cl.OUT / "layers" / "hyde_popd.json").read_text())
+        self.assertEqual(sorted(int(y) for y in pack), cl.YEARS)
+        self.assertTrue(all(v.startswith("data:image/png;base64,") for v in pack.values()))
 
 
 if __name__ == "__main__":

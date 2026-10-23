@@ -562,3 +562,8 @@
   (58 maps, 132 KB); `bidb/change_geology.py` merges BGS (GB) and GSI/GSNI (Ireland) bedrock by period (2.1 MB)
   and the coalfields; `static/change_layers.js` adds the "Map layer" chooser to the panel. Checked in Chrome
   (people per km² at 1300 follows the slider; geology legend and sources).
+- Plan search finished: 290 found, 38 reverted (museum objects, town prospects, French "premier plan", garden sign
+  photos, plans of other buildings), 252 kept; `MAP_LIKE` extended. Bike surfaces for 55 of 56 rides.
+- Hosted copy republished as version 59 (four batches; 333 files changed, 6 removed): 253 MiB, 479 files. To stay
+  under the limits the HYDE maps are packed per variable (2 files, not 58), plans 420 px WebP q45, 1,100
+  thumbnails. Static GUI review 103/103.

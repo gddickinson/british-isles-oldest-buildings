@@ -41,7 +41,7 @@ def fetch_plans(rows, width=600, log=print):
     return _fetch(items, log, "floor plans", webp=True)
 
 
-PLAN_WEBP = (55, 480)          # quality, width: floor plans (line drawings) stay legible; the hosted copy is 256 MiB at most
+PLAN_WEBP = (45, 420)          # quality, width: floor plans (line drawings) stay legible; the hosted copy is 256 MiB at most
 
 
 def _as_webp(path, quality=PLAN_WEBP[0], width=PLAN_WEBP[1]):

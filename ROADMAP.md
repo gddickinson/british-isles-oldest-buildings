@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 95
+- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 96
   series, 47 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -40,11 +40,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       checked against the OCR and the overlapping years of another edition; the latest edition read is used, as
       editions revised earlier years by up to 0.03 lb after each census). 3.0 lb in 1864, 6.9 in 1914, 10.2 in 1938;
       none for 1915–18; Ireland out from 1923.
-- [ ] C2d More tea figures: before 1864 (the 1846–1865 edition has totals only: divide by census population, or
-      quote Mitchell/Schumpeter per figure), the 18th-century imports (1.2 million lb 1721 → 24 million 1801, as
-      quoted estimates) and smuggling (4–7.5 million lb before 1784), the duty per lb and average import price
-      (Abstract "Average prices" table: 9.36d a lb 1897 → 7.24d 1904), and the modern end (HMRC HS 0902, OGL;
-      after 1938 the Abstracts to 1975 are also out of copyright).
+- [x] C2d1 (2026-10-23) The modern end to 1974: the Ministry of Food's (later MAFF's) "Estimated food supplies per
+      head of population", tea row, read from the page images of five Annual Abstracts (Nos. 88, 92, 97, 107, 112;
+      edition, leaf, page per figure in `change/data/tea_supplies_uk.csv`), each row checked on an enlarged crop and
+      against the overlapping years of another edition → series `tea_supplies_uk` (source `maff_food_supplies`), a
+      second line on "Tea drunk per person" (a different measure: 9.3 lb for 1934–38 against 9.5 in the Board of
+      Trade series). 8.1 lb in 1941, 7.0 in 1943, 10.1 in 1956 (the peak), 7.5 in 1973. None for 1939–40.
+- [ ] C2d2 Tea before 1864: the 1846–1865 edition has totals only (divide by census population, or quote
+      Mitchell/Schumpeter per figure), the 18th-century imports (1.2 million lb 1721 → 24 million 1801, as quoted
+      estimates) and smuggling (4–7.5 million lb before 1784).
+- [ ] C2d3 Tea duty per lb and average import price (Abstract "Average prices" table: 9.36d a lb 1897 → 7.24d 1904).
+- [ ] C2d4 Tea after 1974: the Abstracts to 1975 are read; later years from MAFF/Defra's National Food Survey or
+      HMRC HS 0902 (OGL), each with its definition; a citable source for tea rationing (1940–52).
 - [x] C2c (2026-10-23) Tea places, kind `tea_trade` "Coffee house, auction, dock or ship of the tea trade": Garraway's
       (1657), Tom's Coffee House where Twining began (1706), East India House (1648–1861, auctions from 1679), the
       London Commercial Sale Rooms in Mincing Lane (1834–1998), East India Docks (stays in Maritime heritage), Cutty

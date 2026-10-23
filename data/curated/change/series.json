@@ -1220,7 +1220,25 @@
    "stat_abstract_uk"
   ],
   "file": "tea_per_head_uk.csv",
-  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used."
+  "note": "Tea retained for home consumption (imports less re-exports) divided by the whole population, as printed by the Board of Trade. Ireland is included to 1922; from 1923 the figures are for Great Britain and Northern Ireland. None given for 1915-18. While the tea duty was repealed (1929-32) the figures are retained imports and not strictly comparable. Editions revised earlier years slightly (by up to 0.03 lb) after each census; the latest edition read is used. From 1941 the Ministry of Food's (later MAFF's) estimated supplies per head are shown as a second line: a different measure (supplies moving into consumption; per head of the civilian population to 1947), which gives 9.3 lb for 1934-38 against 9.5 here. The Abstracts read give no figures for 1939-40.",
+  "models": [
+   "tea_supplies_uk"
+  ]
+ },
+ {
+  "id": "tea_supplies_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea supplies per person",
+  "region": "United Kingdom",
+  "unit": "lb",
+  "unit_long": "pounds of tea per person a year (estimated supplies)",
+  "label": "Tea supplies per head (Ministry of Food / MAFF)",
+  "sources": [
+   "maff_food_supplies"
+  ],
+  "file": "tea_supplies_uk.csv",
+  "hidden": true,
+  "note": "Estimated supplies of tea moving into consumption per head of population, from the Ministry of Food (the Ministry of Agriculture, Fisheries and Food in the 1960 and later editions), as printed in the Annual Abstract of Statistics. Per head of the civilian population 1941-47; 1964-74 revised to the 1971 census. Editions revised single years by 0.1-0.2 lb; the latest edition read is used."
  },
  {
   "id": "homes_eng_est",

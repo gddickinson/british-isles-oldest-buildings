@@ -696,5 +696,14 @@
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
   "used": "Tea retained for home consumption per head, 1864-1938, read from the page images (edition, leaf and page per figure in data/tea_per_head_uk.csv); where editions differ, the latest edition read is used",
   "checked": "2026-10-23, each figure read from the scan and compared with the OCR text and with the overlapping years of another edition"
+ },
+ "maff_food_supplies": {
+  "short": "Annual Abstract of Statistics, food supplies per head",
+  "citation": "Central Statistical Office, Annual Abstract of Statistics (HMSO), table 'Estimated food supplies per head of population' (Ministry of Food, later Ministry of Agriculture, Fisheries and Food), row Tea, lb per head per annum: No. 88 (1938-1950), table 202, p. 195; No. 92 (1955), table 211, p. 179; No. 97 (1960), table 220, p. 176; No. 107 (1970), table 223, p. 209; No. 112 (1975), table 246, p. 238; Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published in 1975 or earlier",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "used": "Tea supplies per head, 1941-1974, read from the page images (edition, leaf and page per figure in data/tea_supplies_uk.csv); where editions differ, the latest edition read is used",
+  "checked": "2026-10-23, each tea row read from the scan and again from an enlarged crop of the row, and compared with the overlapping years of another edition"
  }
 }

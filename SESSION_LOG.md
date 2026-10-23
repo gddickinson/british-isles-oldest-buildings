@@ -499,3 +499,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - The 1846–1865 edition has no per-head table (totals only), so the official per-head series starts in 1864;
   earlier years, the 18th century, duty, prices and the modern end are left as C2d.
 - Next: C2d or C3 (guilds, exchanges and trading houses).
+
+## 2026-10-23 — C2d1: tea supplies per head, 1941–1974
+- C2d split into C2d1 (modern end to 1974, done), C2d2 (before 1864), C2d3 (duty and prices), C2d4 (after 1974).
+- The OCR of the post-war tables garbles the tea row, so it was read from the page images (archive.org
+  `page/n<leaf>_w2000.jpg`, leaf from each item's `_page_numbers.json`) of the Annual Abstract's "Estimated food
+  supplies per head of population" (Ministry of Food, then MAFF): No. 88 p. 195 (1941–50), No. 92 p. 179
+  (1945–54), No. 97 p. 176 (1949–59), No. 107 p. 209 (1959–69), No. 112 p. 238 (1964–74). Each row read again from
+  an enlarged crop.
+- Overlaps agree apart from footnoted revisions: civilian → total population from 1948 (1949: 8.1 → 8.3, 1950:
+  8.4 → 8.5), 1954 9.6 → 9.7, 1959 9.6 → 9.7, and the 1971-census revision (1965: 8.9 → 9.0). Latest edition used.
+- New series `tea_supplies_uk` shown as a second line on "Tea drunk per person" (not joined to it: a different
+  measure, 9.3 lb for 1934–38 against the Board of Trade's 9.5). 8.1 lb in 1941, 7.0 in 1943, 10.1 in 1956, 7.5 in 1973.
+- Rationing dates (1940–52) were written from memory into the note and taken out again: still no citable source.
+- Tests 140 OK; ui_check `change_tea` now also requires the Ministry of Food line. Hosted copy not updated.
+- Next: C2d2/C2d3, or C3 (guilds, exchanges and trading houses).

@@ -556,3 +556,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 140 OK. Database backup before the changes in the session scratchpad. Hosted copy and bundled
   database not updated.
 
+## 2026-10-23 (later) — Tree-ring-dated buildings, Irish pub claimants
+- `bidb/dendro_add.py`: 1,510 VAG entries felled before 1500 matched no catalogue record (Wikidata gives most listed
+  buildings no date, so the build never saw them). Matched to Wikidata items within 400 m: the first pass (catalogue
+  rules only) was about a third wrong in a sample (house numbers, barn vs farmhouse, East vs West Hele, Red Cross vs
+  Red Lion, a church chest), so `plausible` filters candidates first; 489 matches, 466 structures, 5 streets taken
+  out → 461 added (230 houses, 37 manor houses, 31 churches, 23 inns and pubs...). Dated by the earliest felling, the
+  middle of ranges wider than ten years ("1315-15+20" → 1317). `data/dendro_items.json` keeps them through rebuilds.
+  Tree-ring matches: 594 → 1,048 catalogue buildings.
+- Pubs among them: Royal George, Cottingham (1262), Saracen's Head, Thame, White Hart, Newark (1312/3), Old Bell,
+  Henley (1325), Queen's Head, Crowmarsh, White Hart Bocking, George Colchester, Lad in the Lane, Swan Sutton
+  Valence, Swan Sible Hedingham, Bell Inn Nottingham, Bear Henley, Black Lion Southfleet, Luttrell Arms, Chequers
+  Chipping Norton, Swan Kingsclere, Black Boy Bewdley, Spotted Dog, White Hart Spalding, Lamb Farnham. Not found on
+  Wikidata: Buck's Head, Church Stretton (1287–1312), Cross Keys, Leicester, Crown, Chiddingfold.
+- Brazen Head, Dublin: 1198 (Wikidata, the pub's claim) → 1754 (present building; inn first named 1668). Kyteler's
+  Inn, Kilkenny: 1201 → c. 1275 (NIAH: built as a house, an inn after 1449, rebuilt c. 1625). Both research
+  examples with evidence claims (quotes found). `research_add.mark_existing` also replaces a Wikidata-query type.
+- Hosted copy: 850 embedded thumbnails (was 1,100); the change layers had taken the export to 258 MiB.
+- Tests 142 OK (2 new for dendro_add). Database backups in the session scratchpad.
+

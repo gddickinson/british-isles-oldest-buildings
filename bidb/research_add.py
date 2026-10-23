@@ -33,37 +33,40 @@ def missing(conn):
 
 
 def mark_existing(conn, log=print):
-    """Oldest-of-type notes for catalogue records named by a research entry's "wikidata" key that have none yet
-    (refresh_claims only rewrites notes already there)."""
+    """Oldest-of-type notes for catalogue records named by a research entry's "wikidata" key that have none yet or
+    another type's (from the Wikidata queries); refresh_claims only rewrites notes of the same type."""
     n = 0
     for e in research_entries():
         if e.get("wikidata"):
             n += conn.execute("UPDATE buildings SET oldest_of_type = ?, type_claim = ?, category = ? "
-                              "WHERE id = ? AND oldest_of_type IS NULL",
-                              (e["type"], type_claim_text(e), e["category"], e["wikidata"])).rowcount
+                              "WHERE id = ? AND (oldest_of_type IS NULL OR oldest_of_type != ?)",
+                              (e["type"], type_claim_text(e), e["category"], e["wikidata"], e["type"])).rowcount
     conn.commit()
     log(f"oldest-of-type notes added to {n} existing records")
 
 
-def records_for(research, log=print):
-    """Catalogue records for {qid: research entry}, as the build makes them."""
+def records_for(research, log=print, adjust=None):
+    """Catalogue records for {qid: research entry (or None)}, as the build makes them; adjust(records) runs before
+    the reviewed corrections (bidb.dendro_add dates its records there)."""
     entities = {q: e for q, e in wd.get_entities(set(research)).items() if "missing" not in e and "claims" in e}
     classes = {c for e in entities.values() for c in wd.item_ids(e, "P31")}
     struct_cls, building_cls = wd.structure_classes(classes)
     for q in [q for q, e in entities.items() if not set(wd.item_ids(e, "P31")) & struct_cls]:
         label = wd.label(entities.pop(q))
-        if research[q].get("wikidata"):               # others link a town article on purpose (text-only records)
+        if (research[q] or {}).get("wikidata"):       # others link a town article on purpose (text-only records)
             log(f"  {q} {label}: not a structure on Wikidata, left out")
     ref = {r for e in entities.values() for p in LABEL_PROPS for r in wd.item_ids(e, p)}
     label_map = {q: wd.label(e) for q, e in wd.get_entities(ref, label_only=True).items()}
     nation_map = wd.nations_for(entities)
     postcodes = {q: enrich.address_from_postcode(pc) for q, pc in
                  enrich.reverse_geocode({q: wd.coords(e) for q, e in entities.items()}).items()}
-    titles = {q: wd.enwiki_title(e) or research[q].get("wikipedia_title") for q, e in entities.items()}
+    titles = {q: wd.enwiki_title(e) or (research[q] or {}).get("wikipedia_title") for q, e in entities.items()}
     intros = enrich.wikipedia_intros([t for t in titles.values() if t])
     records = [build_record(q, e, label_map, building_cls, nation_map, postcodes.get(q),
                             intros.get(titles[q]), None) for q, e in entities.items()]
-    annotate_oldest(records, {}, {r["id"]: research[r["id"]] for r in records})
+    annotate_oldest(records, {}, {r["id"]: research[r["id"]] for r in records if research[r["id"]]})
+    if adjust:
+        adjust(records)
     for r in records:                                  # as postprocess.finalise
         r["category_group"] = group_for(r.get("category"))
         if r.get("image_file") and not r.get("image_thumb"):

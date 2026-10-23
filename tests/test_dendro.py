@@ -51,3 +51,28 @@ class Match(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DendroAdd(unittest.TestCase):
+    """bidb.dendro_add: which Wikidata items may take a VAG entry's date (cases from the first review)."""
+
+    def test_plausible(self):
+        from bidb.dendro_add import plausible
+        cases = [("23 And 25, Kirkgate", "Newark-on-Trent, 37 Kirkgate", False),
+                 ("9, Market End", "Coggeshall, 9 Market End", True),
+                 ("East Hele Farmhouse", "King's Nympton, West Hele", False),
+                 ("3rd White Cloth Hall", "Leeds, 100 Kirkgate, First White Cloth Hall", False),
+                 ("The Red Cross Public House", "Henley-on-Thames, Hart Street, The Red Lion Hotel, West wing", False),
+                 ("Old Barn At Home Farm", "Newdigate, Home Farm House", False),
+                 ("Church of St Bartholomew", "Munsley, Church of St Bartholomew, Dug-out church chest", False),
+                 ("Pennellick Farmhouse", "Pelynt, Pennellick", True),
+                 ("1 and 2, Ufton Fields", "Ufton, 1-2 Ufton Fields, Cruck House", True),
+                 ("The King's Head Public House", "Shrewsbury, Mardol, The King's Head", True),
+                 ("Kilve Chantry", "Kilve, Sea Lane, Kilve Chantry, North wing", True)]
+        for label, location, want in cases:
+            self.assertEqual(plausible(label, {"location": location}), want, label)
+
+    def test_year_of_range(self):
+        from bidb.dendro_add import year_of
+        self.assertEqual(year_of({"felled_from": 1300, "felled_to": 1335}), 1317)   # "1315-15+20"
+        self.assertEqual(year_of({"felled_from": 1430, "felled_to": 1432}), 1430)

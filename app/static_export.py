@@ -53,7 +53,7 @@ def _rewrite(html):
     return html.replace('"/static/', '"static/')
 
 
-def export(thumb_limit=1100):
+def export(thumb_limit=850):           # 1,100 until the change layers pushed the copy past 256 MiB
     if DIST.exists():
         shutil.rmtree(DIST)
     (DIST / "data").mkdir(parents=True)

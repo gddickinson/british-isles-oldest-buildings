@@ -13177,6 +13177,74 @@
     }
    ],
    "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-the-brazen-head",
+   "record": "Q17006015",
+   "name": "The Brazen Head",
+   "field": "date",
+   "research": "examples:Public house|The Brazen Head",
+   "claim": "The present Brazen Head was built in 1754; the pub's 1198 date is a claim. It was licensed in 1661 and first called an inn in 1668.",
+   "value": "1754 (claimed 1198)",
+   "verdict": "corrected",
+   "assessment": "Wikidata's inception (1198) repeats the pub's claim. The article's history, citing Hopkins (2002) and Dawson (1969), traces the site to a merchant's house recorded in 1613 and the present building to 1754; excavation next door found 13th-century land reclamation, not the inn. Like the English claimants James Wright (2026) examined, the early date is not supported.",
+   "sources": [
+    {
+     "title": "The Brazen Head",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Brazen_Head",
+     "locator": "lead; History, 18th century",
+     "quote": "replaced by the current buildings in 1754"
+    },
+    {
+     "title": "The Brazen Head",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Brazen_Head",
+     "locator": "lead",
+     "quote": "the first mention of it as an inn was in 1668"
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-kyteler-s-inn",
+   "record": "Q65066178",
+   "name": "Kyteler's Inn",
+   "field": "date",
+   "research": "examples:Public house|Kyteler's Inn",
+   "claim": "Kyteler's Inn was built c. 1275 as a stone house (Kyteler's Hall), used as an inn after 1449 and extensively reconstructed c. 1625.",
+   "value": "c. 1275 (house)",
+   "verdict": "corrected",
+   "assessment": "The National Inventory dates the house to c. 1275 (survey date 1250–1300) and gives its original use as a house; its appraisal speaks of origins in the mid fourteenth century, and Wikipedia of the 13th or 14th century with an inn from 1639. The fabric is medieval, but by James Wright's test (built as an inn and in continuous service) it would not count among the oldest pubs.",
+   "sources": [
+    {
+     "title": "Kyteler's Inn, Reg. No. 12000116",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://www.buildingsofireland.ie/buildings-search/building/12000116/kytelers-inn-st-kierans-street-kilkenny-kilkenny",
+     "locator": "description",
+     "quote": "rubble stone house with dormer attic, c.1275"
+    },
+    {
+     "title": "Kyteler's Inn, Reg. No. 12000116",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://www.buildingsofireland.ie/buildings-search/building/12000116/kytelers-inn-st-kierans-street-kilkenny-kilkenny",
+     "locator": "description",
+     "quote": "Subsequently in use as inn, post-1449."
+    },
+    {
+     "title": "Kyteler's Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kyteler%27s_Inn",
+     "locator": "lead",
+     "quote": "The building has housed an inn since 1639."
+    }
+   ],
+   "researched": "2026-10-23"
   }
  ]
 }

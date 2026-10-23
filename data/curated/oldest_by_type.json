@@ -102,6 +102,30 @@
      "evidence_date": "reputedly in business since 1611; present building possibly rebuilt or remodelled early 1700s (HB24/07/059)",
      "claim": "claims to be one of Ireland's oldest pubs",
      "source": "https://apps.communities-ni.gov.uk/Buildings/buildview.aspx?id=12785"
+    },
+    {
+     "name": "The Brazen Head",
+     "wikipedia_title": "The Brazen Head",
+     "location": "Dublin, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "1754 (claimed 1198)",
+     "year": 1754,
+     "evidence_date": "present building 1754, replacing a timber house; licensed 1661, first named as an inn 1668",
+     "claim": "claims to be Ireland's oldest pub (1198); the date has no documentary support",
+     "source": "https://en.wikipedia.org/wiki/The_Brazen_Head",
+     "wikidata": "Q17006015"
+    },
+    {
+     "name": "Kyteler's Inn",
+     "wikipedia_title": "Kyteler's Inn",
+     "location": "Kilkenny, Ireland",
+     "nation": "Republic of Ireland",
+     "claimed_date": "c. 1275 (as a house)",
+     "year": 1275,
+     "evidence_date": "house c.1275, an inn after 1449, extensively reconstructed c.1625 (NIAH 12000116)",
+     "claim": "medieval hall of the Kyteler family, traditionally linked with Dame Alice Kyteler; built as a house, not an inn",
+     "source": "https://www.buildingsofireland.ie/buildings-search/building/12000116/kytelers-inn-st-kierans-street-kilkenny-kilkenny",
+     "wikidata": "Q65066178"
     }
    ]
   },

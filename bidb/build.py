@@ -10,7 +10,7 @@ import argparse
 import json
 import time
 
-from . import enrich, landmarks, references, oldest_types, place_fetch, postprocess, wikidata as wd
+from . import dendro_add, enrich, landmarks, references, oldest_types, place_fetch, postprocess, wikidata as wd
 from .place_kinds import KINDS
 from .config import CURATED_LIST_PAGES, CUTOFF_YEAR, DATA_DIR, db_path, require_locations
 from .db import write_all
@@ -61,6 +61,7 @@ def run(cutoff):
         else:
             research_unlinked.append(e)
     wd_types = oldest_types.wikidata_oldest(log=log)
+    tree_items = dendro_add.load()                    # buildings dated only by tree-ring (bidb.dendro_add)
     log(f"oldest-of-type: {len(wd_types)} from Wikidata, {len(research)} researched "
         f"({len(research_by_qid)} linked)")
 
@@ -77,14 +78,14 @@ def run(cutoff):
     # designated national monuments are kept whatever their class (ringforts, crosses, tombs)
     keep = ({q for q, cls in candidates.items() if cls & struct_cls}
             | set(curated_by_qid) | set(designated) | set(wd_types) | set(research_by_qid)
-            | set(arch))
+            | set(arch) | set(tree_items))
     log(f"candidates: {len(candidates)} items, {len(keep)} are structures or curated")
 
     entities = wd.get_entities(keep)
     # Drop curated items that turned out to be outside the British Isles (none expected) and redirects
     entities = {q: e for q, e in entities.items() if "missing" not in e and "claims" in e}
     # curated items not in the inception query still need building-class membership
-    extra_cls = {c for q in set(curated_by_qid) | set(wd_types) | set(research_by_qid) | set(arch)
+    extra_cls = {c for q in set(curated_by_qid) | set(wd_types) | set(research_by_qid) | set(arch) | set(tree_items)
                  if q in entities for c in wd.item_ids(entities[q], "P31")}
     extra_cls -= all_classes
     if extra_cls:
@@ -148,6 +149,7 @@ def run(cutoff):
         unnamed[q]["name"] = name
     records += niah_records(records, log)
     # full articles for every undated record (~1,400 requests); landmarks used to get the intro only
+    log(f"tree-ring dates for {dendro_add.apply(records, tree_items)} records")
     fill_missing_dates(records, log)
     postprocess.annotate_oldest(records, wd_types, research_by_qid)
     have = {r["id"] for r in records}

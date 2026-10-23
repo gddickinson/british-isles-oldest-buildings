@@ -76,6 +76,13 @@ citation. Only openly licensed series are shown. Left out for their licence: Ban
 macroeconomic data" (Broadberry et al. population and wages; terms limited to personal and internal use), Armagh
 Observatory temperatures (copyright retained), SILSO sunspot numbers and the Shennan et al. sea-level database (non-commercial).
 
+Map layers on the Map page's "Change over time" panel: HYDE 3.2.1 population and cropland grids (Klein Goldewijk
+et al. 2017, ESSD 9:927–953; DANS doi:10.17026/dans-25g-gez3; CC BY 3.0 per its readme, CC0 per the DANS record);
+bedrock geology: Contains British Geological Survey materials © UKRI 2025 (BGS Geology 625k, OGL v3.0); Contains Irish
+Public Sector Data (Geological Survey Ireland) licensed under CC BY 4.0 and UK public sector information (Geological
+Survey of Northern Ireland) licensed under the OGL v3.0 (Bedrock Geology 1:500,000); coalfields: Mining Remediation
+Authority (Coal Authority) Coalfield Consultation Areas, OGL v3.0.
+
 | Source | Citation | Licence |
 |---|---|---|
 | [Bereiter et al. 2015, ice-core CO₂ (NOAA)](https://www.ncei.noaa.gov/access/paleo-search/study/17975) | Bereiter, B. et al. (2015) Revision of the EPICA Dome C CO2 record from 800 to 600 kyr before present. Geophysical Research Letters 42:542-549, doi:10.1002/2014GL061957 (composite: Law Dome, Rubino et al. 2013 and MacFarling Meure et al. 2006, for 0-2 kyr BP; Dome C, Monnin et al. 2001/2004, for 2-11 kyr BP) | US Gov., free with citation |

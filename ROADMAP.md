@@ -531,7 +531,11 @@ with their citation; estimates for early periods are marked as modelled, with th
       temperature (1659–), England and Wales rainfall (1766–), CO₂ and methane (ice cores + Mauna Loa), sea
       level (Newlyn, etc.), volcanic and solar forcing, woodland cover, farmland and livestock, notable floods,
       droughts, famines, plagues and storms (dated events with sources).
-- [ ] E3 (research done: HYDE 3.2 crops tested, 1,275 grids ≈ 25 MB gzipped, 4 key variables ≈ 6 MB; HYDE 3.3
+- [~] E3 (2026-10-22: HYDE population density and cropland at 29 dates following the slider (132 KB of PNGs),
+      bedrock geology by period for all the isles, coalfields; `bidb/change_layers.py`, `change_geology.py`.
+      To do: GHSL built-up 1975/2020, CORINE 2000–2018, pollen tree-cover cells, ancient woodland, land grades,
+      superficial geology, HYDE 3.3 to 2023 (browser download), Buringh/Reba city sizes as dots by date.
+      Research done: HYDE 3.2 crops tested, 1,275 grids ≈ 25 MB gzipped, 4 key variables ≈ 6 MB; HYDE 3.3
       needs a browser download; GHSL 1975/2020, CORINE 2000–2018, KK10, pollen cells, BGS/GSI bedrock, coalfields,
       ALC prepared in the research scratchpad) Map layers by year (driven by the slider): HYDE gridded population, cropland, pasture and built-up
       area (10000 BC–today), GHSL built-up area (1975–), plus fixed layers that explain the pattern: bedrock and

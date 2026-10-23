@@ -557,3 +557,8 @@
 - Left out for licence: Bank of England millennium data (Broadberry et al.), Armagh, SILSO, Shennan sea-level points.
 - The laptop disk was nearly full (1.6 GB free; not this project's files); removed old scratch copies (~0.6 GB).
 - Next: E3 map layers (HYDE grids per period with the slider, GHSL, CORINE, geology, coalfields), E5 notes.
+- E3 map layers: `bidb/remote_zip.py` reads single grids out of HYDE 3.2.1's 5.3 GB archive by range requests;
+  `bidb/change_layers.py` crops popd and cropland for 29 dates (4000 BC–2017) and draws Mercator-row palette PNGs
+  (58 maps, 132 KB); `bidb/change_geology.py` merges BGS (GB) and GSI/GSNI (Ireland) bedrock by period (2.1 MB)
+  and the coalfields; `static/change_layers.js` adds the "Map layer" chooser to the panel. Checked in Chrome
+  (people per km² at 1300 follows the slider; geology legend and sources).

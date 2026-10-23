@@ -126,6 +126,9 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `visiting.py` | CLI/build stage: opening hours, fee, operator, wheelchair, website from OSM objects tagged wikidata=* → table `visiting` | `run`, `fetch`, `for_record` |
 | `naptan.py` | CLI/build stage: NaPTAN (DfT, OGL) active bus stops and ferry terminals → table `stops`; `near` gives a point's nearest bus stops and ferry terminal for "Getting there" (Great Britain only) | `run`, `near`, `rows` |
 | `change_series.py` | Roadmap E1–E5, people and the environment through time: checks the curated series, sources and events in `data/curated/change/` (every series and event cited; every source with a licence) and writes `app/static/data/change/series.json` for the graphs (`python -m bidb.change_series`) | `build`, `check`, `read_points`, `THEMES` |
+| `change_layers.py` | Roadmap E3: HYDE 3.2.1 population density and cropland grids for 29 dates (4000 BC–2017) read one file at a time from the 5.3 GB DANS archive (`remote_zip`), cropped to the isles (cached in `<cache>/hyde/`), drawn as palette PNGs reprojected to Web Mercator rows → `static/data/change/layers/` + `layers.json` | `run`, `grid`, `crop`, `png`, `LAYERS`, `YEARS` |
+| `change_geology.py` | Roadmap E3 fixed layers: BGS 625k (GB) and GSI/GSNI 1:500k (Ireland) bedrock merged into one map by period (ICS colours; Irish brackets → older period) and the Coal Authority's coalfields → `static/data/change/geology.json`, `coalfields.json` | `build`, `gsi_period`, `bgs_period`, `PERIODS` |
+| `remote_zip.py` | Single members of a large remote zip by HTTP range requests (zip64; Deflate64 via `unzip`) | `members`, `extract` |
 | `commons_plans.py` | Floor plans from Commons "Plans of <building>" categories matched via P373 | `plans`, `plan_categories`, `best_file` |
 
 ## Package `app/` (GUI)
@@ -195,6 +198,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 | `static/historic.js` | Historic map chooser with opacity on the pane (`Historic.bind`); falls back to the bundled tiles when a map's server has not answered in 8 s |
 | `static/outlines.js` | Building outlines on zoomed-in maps (`attachOutlines`) |
 | `static/map_page.js` | Map page: buildings by group, places layers, town finder, year slider; `?lat&lon&z&mark&places` from "Show on the map" (`markFromUrl`) |
+| `static/change_layers.js` | `ChangeLayers`: the panel's "Map layer" chooser (HYDE grids at the slider's year, geology, coalfields; legend, note, source), in its own map pane |
 | `static/change_charts.js`, `change_panel.js`, `change_page.js` | "Change over time": small graphs (one series each, slider's year scale extended before 4000 BC, uncertainty bands, dashed when modelled, marker at the slider's year, hover values; `ChangeCharts`), the toggle-able panel beside the map (`ChangePanel`: choose graphs, period, remembered per browser; plus the catalogue's own records begun per century) and the page `/change` with notes, tables of values, events and full citations |
 | `static/time_slider.js` | `TimeSlider`: "Through time" on the Map page: year slider (non-linear scale), histogram of start years, Play, "Map of the time" (historic map of the era via the layer switcher), `standing` (begun by the year, not yet closed) |
 | `static/style.css`, `pages.css`, `places.css`, `map.css`, `ui.css`, `settings.css`, `pron.css`, `tours.css` | Tokens (light/dark, palette), layout, page styles; toolbar/menus/overlays/print; settings and help pages |
@@ -224,6 +228,7 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 - `data/curated/underground_sites.json` — notable underground works outside the queried classes; stations open despite a closing date
 - `data/curated/burhs.json` — the burhs of the Burghal Hidage (hides, Wikipedia titles)
 - `data/curated/oldest_nature.json`, `oldest_graves.json`, `oldest_trade.json`, `oldest_infra.json` — researched "oldest" lists (bidb.oldest_lists)
+- `data/curated/change/layers/` — simplified BGS/GSI bedrock and coalfield GeoJSON (inputs of bidb.change_geology)
 - `data/curated/change/` — change over time: `sources.json` (citation, licence + quote, URLs, date checked), `series.json` (series metadata), `data/<id>.csv` (year,value[,low,high]), `events.json` (dated events with citations)
 - `data/curated/legendary_places.json` — places of legend placed where tradition puts them (claims, sources)
 - `LICENSE` (MIT, code), `DATA_LICENSE.md` (per-source data licences and credits, third-party code), `CONTRIBUTING.md`, `CITATION.cff`

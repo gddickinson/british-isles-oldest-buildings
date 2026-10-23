@@ -1,0 +1,280 @@
+{
+ "layers": [
+  {
+   "id": "hyde_popd",
+   "title": "People per km² (modelled)",
+   "kind": "grid",
+   "years": [
+    -4000,
+    -3000,
+    -2000,
+    -1000,
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1750,
+    1800,
+    1850,
+    1900,
+    1950,
+    2000,
+    2017
+   ],
+   "file": "layers/hyde_popd_{year}.png",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "people per km²",
+   "legend": [
+    {
+     "color": "#f6e3c8",
+     "label": "0.5–2"
+    },
+    {
+     "color": "#efc795",
+     "label": "2–5"
+    },
+    {
+     "color": "#e6a866",
+     "label": "5–10"
+    },
+    {
+     "color": "#d68a43",
+     "label": "10–25"
+    },
+    {
+     "color": "#bf6d2c",
+     "label": "25–50"
+    },
+    {
+     "color": "#9f5420",
+     "label": "50–100"
+    },
+    {
+     "color": "#7a3e17",
+     "label": "100–500"
+    },
+    {
+     "color": "#55290f",
+     "label": "500+"
+    }
+   ],
+   "note": "HYDE spreads each country's estimated population over the land by models of where people lived (soils, climate, distance to water and towns); a picture of the estimates, not a census map. Before about 1800 it rests on few figures.",
+   "source": {
+    "short": "HYDE 3.2.1 (Klein Goldewijk et al. 2017)",
+    "citation": "Klein Goldewijk, K., Beusen, A., Doelman, J., Stehfest, E. (2017) Anthropogenic land use estimates for the Holocene – HYDE 3.2. Earth System Science Data 9:927–953, doi:10.5194/essd-9-927-2017. Data: HYDE 3.2.1 baseline, DANS, doi:10.17026/dans-25g-gez3",
+    "licence": "CC BY 3.0",
+    "url": "https://doi.org/10.17026/dans-25g-gez3"
+   },
+   "modelled": true
+  },
+  {
+   "id": "hyde_cropland",
+   "title": "Cropland (modelled)",
+   "kind": "grid",
+   "years": [
+    -4000,
+    -3000,
+    -2000,
+    -1000,
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1750,
+    1800,
+    1850,
+    1900,
+    1950,
+    2000,
+    2017
+   ],
+   "file": "layers/hyde_cropland_{year}.png",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of land",
+   "legend": [
+    {
+     "color": "#e8f2d9",
+     "label": "1–5"
+    },
+    {
+     "color": "#cfe5b0",
+     "label": "5–10"
+    },
+    {
+     "color": "#b1d487",
+     "label": "10–20"
+    },
+    {
+     "color": "#8fc061",
+     "label": "20–30"
+    },
+    {
+     "color": "#6ca842",
+     "label": "30–40"
+    },
+    {
+     "color": "#4c8d2e",
+     "label": "40–55"
+    },
+    {
+     "color": "#357023",
+     "label": "55–70"
+    },
+    {
+     "color": "#22531a",
+     "label": "70+"
+    }
+   ],
+   "note": "Arable land as a share of each cell, from HYDE's country estimates spread by soil suitability and population; pasture and grazing are not included.",
+   "source": {
+    "short": "HYDE 3.2.1 (Klein Goldewijk et al. 2017)",
+    "citation": "Klein Goldewijk, K., Beusen, A., Doelman, J., Stehfest, E. (2017) Anthropogenic land use estimates for the Holocene – HYDE 3.2. Earth System Science Data 9:927–953, doi:10.5194/essd-9-927-2017. Data: HYDE 3.2.1 baseline, DANS, doi:10.17026/dans-25g-gez3",
+    "licence": "CC BY 3.0",
+    "url": "https://doi.org/10.17026/dans-25g-gez3"
+   },
+   "modelled": true
+  },
+  {
+   "id": "geology",
+   "title": "Bedrock geology (by period)",
+   "kind": "geojson",
+   "file": "geology.json",
+   "legend": [
+    {
+     "color": "#F73563",
+     "label": "Precambrian"
+    },
+    {
+     "color": "#7FA056",
+     "label": "Cambrian"
+    },
+    {
+     "color": "#009270",
+     "label": "Ordovician"
+    },
+    {
+     "color": "#B3E1B6",
+     "label": "Silurian"
+    },
+    {
+     "color": "#CB8C37",
+     "label": "Devonian"
+    },
+    {
+     "color": "#67A599",
+     "label": "Carboniferous"
+    },
+    {
+     "color": "#F04028",
+     "label": "Permian"
+    },
+    {
+     "color": "#812B92",
+     "label": "Triassic"
+    },
+    {
+     "color": "#34B2C9",
+     "label": "Jurassic"
+    },
+    {
+     "color": "#7FC64E",
+     "label": "Cretaceous"
+    },
+    {
+     "color": "#FD9A52",
+     "label": "Palaeogene"
+    },
+    {
+     "color": "#FFE619",
+     "label": "Neogene"
+    },
+    {
+     "color": "#9A9A9A",
+     "label": "Intrusions and undivided"
+    }
+   ],
+   "note": "The age of the solid rock under the soil, oldest in the north-west, youngest in the south-east. Carboniferous rocks hold the coal and much of the iron that fed the Industrial Revolution; Jurassic limestones gave Cotswold and Portland stone; Cretaceous chalk the downs. Irish age ranges spanning two periods are shown as the older one.",
+   "sources": [
+    {
+     "short": "BGS Geology 625k",
+     "licence": "OGL v3.0",
+     "url": "https://www.bgs.ac.uk/datasets/bgs-geology-625k-digmapgb/",
+     "citation": "British Geological Survey (2025) BGS Geology 625k (DiGMapGB-625) bedrock, V5. Contains British Geological Survey materials © UKRI 2025"
+    },
+    {
+     "short": "GSI/GSNI Bedrock Geology 1:500,000",
+     "licence": "CC BY 4.0 (GSI) / OGL v3.0 (GSNI)",
+     "url": "https://data.gov.ie/dataset/bedrock-geology-1500000-ireland-roini-itm",
+     "citation": "Geological Survey Ireland / Geological Survey of Northern Ireland (2024) Bedrock Geology 1:500,000 Ireland (ROI/NI). Contains Irish Public Sector Data (Geological Survey Ireland) licensed under CC BY 4.0; contains UK public sector information (GSNI) licensed under the Open Government Licence v3.0"
+    }
+   ]
+  },
+  {
+   "id": "coalfields",
+   "title": "Coalfields",
+   "kind": "geojson",
+   "file": "coalfields.json",
+   "legend": [
+    {
+     "color": "#3b3b3b",
+     "label": "Coalfield (surface coal resource area)"
+    }
+   ],
+   "note": "Areas over coal resources where planning consults the Coal Authority, a good outline of the British coalfields; mining towns grew on them from the 18th century.",
+   "sources": [
+    {
+     "short": "Coal Authority coalfield areas",
+     "licence": "OGL v3.0",
+     "url": "https://datamine-cauk.hub.arcgis.com/",
+     "citation": "Mining Remediation Authority (Coal Authority), Coalfield Consultation Areas. Contains public sector information licensed under the Open Government Licence v3.0"
+    }
+   ]
+  }
+ ]
+}

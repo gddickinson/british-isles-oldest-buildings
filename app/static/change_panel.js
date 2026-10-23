@@ -27,6 +27,7 @@ const ChangePanel = (() => {
     el.innerHTML = `<div class="cp-head"><b>📈 Change over time</b>
         <select class="cp-range" aria-label="Period shown">${RANGES.map(([t, y]) => `<option value="${y}">${t}</option>`).join("")}</select>
         <button class="cp-close" type="button" aria-label="Hide the graphs" title="Hide the graphs">×</button></div>
+      ${opts.map ? '<div class="cp-layers"></div>' : ""}
       <details class="cp-pick"><summary>Choose graphs</summary><div class="cp-list"></div></details>
       <div class="cp-charts"></div>
       <p class="hint cp-foot">Hover a graph for values; the line marks the year on the slider. Dashed lines are
@@ -72,6 +73,8 @@ const ChangePanel = (() => {
       b.setAttribute("aria-expanded", String(!note.hidden));
     });
     el.querySelector(".cp-close").addEventListener("click", () => opts.onClose?.());
+    const mapLayers = opts.map ? ChangeLayers.mount(el.querySelector(".cp-layers"), opts.map) : null;
+    mapLayers?.setYear(year);
 
     const refresh = async () => {
       const d = await load();
@@ -84,8 +87,10 @@ const ChangePanel = (() => {
     let pending = null;
     return {
       refresh,
+      pause: (on) => mapLayers?.pause(on),
       setYear(y) {                                  // redraw at most every 150 ms while the slider moves
         year = y;
+        mapLayers?.setYear(y);
         if (pending) return;
         pending = setTimeout(() => { pending = null; drawCharts(); }, 150);
       },

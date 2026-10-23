@@ -164,7 +164,8 @@ function wireChange() {
     panel.hidden = !v;
     btn.hidden = v;
     try { localStorage.setItem("bidb_change_panel", v ? "shown" : "hidden"); } catch (e) { /* private mode */ }
-    if (v && !exChange) exChange = ChangePanel.mount(panel, { local: catalogueSeries, year: exState.year, onClose: () => show(false) });
+    if (v && !exChange) exChange = ChangePanel.mount(panel, { local: catalogueSeries, year: exState.year, map: exMap, onClose: () => show(false) });
+    else exChange?.pause(!v);
   };
   btn.addEventListener("click", () => show(true));
   let saved = null;

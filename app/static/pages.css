@@ -142,3 +142,16 @@
 .change-page .ch-table td, .change-page .ch-table th { padding: 1px 8px; text-align: right; }
 .change-page .ch-events { font-size: 13.5px; line-height: 1.45; }
 .change-page .ch-source { font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+.change-page .ch-notes-box > summary { cursor: pointer; list-style: none; }
+.change-page .ch-notes-box > summary h2 { display: inline; }
+.change-page .ch-notes-box > summary::before { content: "▸ "; color: var(--muted); }
+.change-page .ch-notes-box[open] > summary::before { content: "▾ "; }
+.change-page .ch-notes { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px 24px; margin-bottom: 18px; }
+.change-page .ch-note { border-top: 1px solid var(--line); padding-top: 6px; font-size: 14px; line-height: 1.5; }
+.change-page .ch-note h3 { margin: 4px 0; font-size: 15.5px; }
+.change-page .ch-note p { margin: 4px 0 6px; }
+.change-page .ch-chips { font-size: 12.5px; color: var(--muted); margin-bottom: 6px; }
+.change-page .ch-chip { display: inline-block; padding: 0 7px; margin: 1px 2px; border-radius: 10px; background: var(--accent-soft); color: var(--ink); text-decoration: none; }
+.change-page .ch-quote { margin: 6px 0 6px 2px; padding-left: 10px; border-left: 3px solid var(--line); font-size: 13px; color: var(--ink); }
+.change-page .ch-quote cite { display: block; font-style: normal; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+@media (max-width: 480px) { .change-page .ch-notes { grid-template-columns: 1fr; } }

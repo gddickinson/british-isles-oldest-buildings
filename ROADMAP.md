@@ -531,7 +531,7 @@ with their citation; estimates for early periods are marked as modelled, with th
       temperature (1659–), England and Wales rainfall (1766–), CO₂ and methane (ice cores + Mauna Loa), sea
       level (Newlyn, etc.), volcanic and solar forcing, woodland cover, farmland and livestock, notable floods,
       droughts, famines, plagues and storms (dated events with sources).
-- [~] E3 (2026-10-22: HYDE population density and cropland at 29 dates following the slider (132 KB of PNGs),
+- [x] E3 (2026-10-23: built-up land 1975/2020 (GHSL), land cover 2000–2018 (CORINE), pollen tree cover 9500 BC–1935 in 1° squares, ancient woodland, farmland grades (England), superficial deposits (GB), towns and cities by size 700–2000 as dots (Buringh), `bidb/change_rasters.py`; HYDE 3.3 to 2023 still needs a browser download. 2026-10-22: HYDE population density and cropland at 29 dates following the slider (132 KB of PNGs),
       bedrock geology by period for all the isles, coalfields; `bidb/change_layers.py`, `change_geology.py`.
       To do: GHSL built-up 1975/2020, CORINE 2000–2018, pollen tree-cover cells, ancient woodland, land grades,
       superficial geology, HYDE 3.3 to 2023 (browser download), Buringh/Reba city sizes as dots by date.
@@ -543,6 +543,6 @@ with their citation; estimates for early periods are marked as modelled, with th
       lost coast; legend and source line on each.
 - [x] E4 (2026-10-22: panel on the Map page + page `/change`) "Change over time" panel: stacked small graphs with a shared year axis and a marker at the slider's
       year; each toggled, with units, uncertainty bands, and a source link; also a page of its own with notes.
-- [ ] E5 Analysis notes (cited): what the series show together (e.g. building booms against population and
+- [x] E5 (2026-10-23: 19 notes from the Neolithic boom and bust to the 1952 smog and rising seas, 50 quotes from published research, each with link and locator, both sides where scholars disagree; on the Change over time page and, for the slider's year, in the Map panel; `data/curated/change/notes.json`) Analysis notes (cited): what the series show together (e.g. building booms against population and
       prosperity, the Little Ice Age and harvest failures, the Black Death, enclosure, the coal age and CO₂),
       quoting published research rather than our own inference where it makes a causal claim.

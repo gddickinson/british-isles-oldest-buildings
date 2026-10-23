@@ -65,11 +65,28 @@ def check(sources, series, events):
     return bad
 
 
+def check_notes(notes, series):
+    """Problems with the analysis notes (E5): each needs text, known series and quoted, linked sources."""
+    bad, ids = [], {s["id"] for s in series} | {"catalogue"}
+    for n in notes:
+        if not n.get("text") or not n.get("sources"):
+            bad.append(f"note {n.get('id')}: no text or sources")
+        bad += [f"note {n['id']}: unknown series {x}" for x in n.get("series", []) if x not in ids]
+        for src in n.get("sources", []):
+            for k in ("short", "citation", "url", "quote"):
+                if not src.get(k):
+                    bad.append(f"note {n['id']}: a source has no {k}")
+            if len(src.get("quote", "").split()) > 60:
+                bad.append(f"note {n['id']}: quote over 60 words")
+    return bad
+
+
 def build():
     sources = json.loads((SRC / "sources.json").read_text())
     series = json.loads((SRC / "series.json").read_text())
     events = json.loads((SRC / "events.json").read_text()) if (SRC / "events.json").exists() else []
-    bad = check(sources, series, events)
+    notes = json.loads((SRC / "notes.json").read_text()) if (SRC / "notes.json").exists() else []
+    bad = check(sources, series, events) + check_notes(notes, series)
     if bad:
         raise SystemExit("change series not written:\n  " + "\n  ".join(bad))
     order = {t: i for i, t in enumerate(THEMES)}
@@ -80,7 +97,7 @@ def build():
         out_series.append(row)
     used = {x for s in series + events for x in s.get("sources", [])}
     out = {"themes": THEMES, "sources": {k: v for k, v in sources.items() if k in used},
-           "series": out_series, "events": events}
+           "series": out_series, "events": events, "notes": notes}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     return out
@@ -88,5 +105,5 @@ def build():
 
 if __name__ == "__main__":
     o = build()
-    print(f"{len(o['series'])} series, {len(o['events'])} events, {len(o['sources'])} sources → {OUT.relative_to(ROOT)}"
+    print(f"{len(o['series'])} series, {len(o['events'])} events, {len(o['notes'])} notes, {len(o['sources'])} sources → {OUT.relative_to(ROOT)}"
           f" ({OUT.stat().st_size // 1024} KB)", file=sys.stderr)

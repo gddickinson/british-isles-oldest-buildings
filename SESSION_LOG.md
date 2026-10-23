@@ -567,3 +567,23 @@
 - Hosted copy republished as version 59 (four batches; 333 files changed, 6 removed): 253 MiB, 479 files. To stay
   under the limits the HYDE maps are packed per variable (2 files, not 58), plans 420 px WebP q45, 1,100
   thumbnails. Static GUI review 103/103.
+
+## 2026-10-23 — Change over time: the remaining layers (E3) and analysis notes (E5)
+- E3: `bidb/change_rasters.py` draws seven more layers from grids prepared once with GDAL (script and README in
+  `data/curated/change/layers/`; raw downloads in the scratchpad, not in git): built-up land 1975/2020 (GHSL),
+  land cover 2000–2018 (CORINE, nine groups; the 1990 map has no Great Britain and is left out), tree cover from
+  pollen in 1° squares (REVEALS, 25 windows), ancient woodland (England, Wales, Scotland's "ancient" classes; share
+  of each cell), farmland grades (England), superficial deposits (GB), towns and cities by size 700–2000 (Buringh,
+  dots). ~500 KB in all. The chooser groups layers "through time" and "the land"; time layers are hidden before
+  they start; dots use an SVG renderer (the map's canvas did not paint new dots until it moved).
+- Fixed: the Map page's "buildings begun per century" graph had no points, so the panel threw an error whenever it
+  opened with that graph chosen.
+- E5: two research agents wrote 19 notes with 50 quotes (Neolithic boom and bust, woodland clearance, Late Bronze
+  Age, AD 536, medieval warmth and the Little Ice Age, building and plague, the Great Famine, the Black Death, the
+  1690s in Scotland, 1740 in Ireland, Laki, the Irish Great Famine, coal and CO₂, Britain as first emitter,
+  greenhouse gases since 1750, towns and smoke, the woodland low point, the 1952 smog, warming and sea level), both
+  sides where scholars disagree. Each quote was checked against the fetched text; I re-fetched 17 and found 16 (the
+  Ludlow 2013 page is now behind a bot check). `data/curated/change/notes.json`, checked by `bidb.change_series`;
+  shown on `/change` ("What the graphs show together") and, for the slider's year, in the Map panel.
+- One research agent sent George's email address to the Unpaywall API as its contact parameter while looking up an
+  article; it was not repeated.

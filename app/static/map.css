@@ -122,6 +122,8 @@
 .change-panel .cp-theme { margin: 6px 0; }
 .change-panel .cp-theme .check { display: flex; gap: 6px; margin: 2px 0; font-size: 12.5px; }
 .change-panel .cp-foot { margin: 6px 0 0; font-size: 11.5px; }
+.change-panel .cp-notes { margin: 4px 0; font-size: 12px; line-height: 1.4; }
+.change-panel .cp-notes:empty { display: none; }
 .cc-item { padding: 6px 0; border-top: 1px solid var(--line); }
 .cc-title { font-weight: 600; font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 4px; align-items: baseline; }
 .cc-region { font-weight: 400; color: var(--muted); }

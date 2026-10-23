@@ -1,0 +1,772 @@
+[
+ {
+  "id": "first-farmers-boom-and-bust",
+  "title": "First farmers: boom, then bust",
+  "years": [
+   -4500,
+   -2500
+  ],
+  "series": [
+   "catalogue",
+   "trees_gb",
+   "trees_ie",
+   "pop_hyde_uk",
+   "pop_hyde_ie",
+   "temp12k"
+  ],
+  "text": "Radiocarbon dates from excavated sites rise sharply when farming arrives in Britain and Ireland, around 4000–3850 BC and then fall back, a boom and bust seen across north-west Europe. Scholars disagree on why: Shennan and colleagues found no link with climate, while Bevan and colleagues find that the downturns in Britain and Ireland coincide with more abrupt changes in North Atlantic climate and moves to hardier crops and more herding. The smooth HYDE population curve is a model and will not show this boom and bust; look instead for monuments begun in the 4th millennium BC in the catalogue count and for the first falls in pollen tree cover.",
+  "sources": [
+   {
+    "citation": "Bevan A, Colledge S, Fuller D, Fyfe R, Shennan S, Stevens C (2017) Holocene fluctuations in human population demonstrate repeated links to food production and climate. PNAS 114(49):E10524-E10531, doi:10.1073/pnas.1709190114",
+    "short": "Bevan et al. 2017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5724262/",
+    "open_access": true,
+    "licence": "PNAS open access licence (not Creative Commons)",
+    "quote": "The overall summed distribution (Fig. 1C) shows a dramatic upswing in radiocarbon dates ca. 4000–3850 BCE that coincides closely with the first arrival of Early Neolithic cereal agriculture in Britain and Ireland.",
+    "locator": "Results and Discussion"
+   },
+   {
+    "citation": "Shennan S, Downey SS, Timpson A, Edinborough K, Colledge S, Kerig T, Manning K, Thomas MG (2013) Regional population collapse followed initial agriculture booms in mid-Holocene Europe. Nature Communications 4:2486, doi:10.1038/ncomms3486",
+    "short": "Shennan et al. 2013",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3806351/",
+    "open_access": true,
+    "licence": "CC BY-NC-SA 3.0",
+    "quote": "We report these results for Central and Northwest Europe between 8,000 and 4,000 cal. BP and investigate the relationship between these patterns and climate. However, we find no evidence to support a relationship.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Bevan A, Colledge S, Fuller D, Fyfe R, Shennan S, Stevens C (2017) Holocene fluctuations in human population demonstrate repeated links to food production and climate. PNAS 114(49):E10524-E10531, doi:10.1073/pnas.1709190114",
+    "short": "Bevan et al. 2017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5724262/",
+    "open_access": true,
+    "licence": "PNAS open access licence (not Creative Commons)",
+    "quote": "Major cross-regional population downturns in population coincide with episodes of more abrupt change in North Atlantic climate and witness societal responses in food procurement as visible in directly dated plants and animals, often with moves toward hardier cereals, increased pastoralism, and/or gathered resources.",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "prehistoric-woodland-clearance",
+  "title": "Prehistoric farmers and the woodland",
+  "years": [
+   -4500,
+   0
+  ],
+  "series": [
+   "trees_gb",
+   "trees_ie",
+   "crop_hyde_uk",
+   "graze_hyde_uk",
+   "catalogue"
+  ],
+  "text": "Pollen in lake and bog cores records how much of the land was wooded. Across Europe the first clear losses of broadleaf woodland follow the arrival of farming, and from about 2000 BC total forest cover moves outside its earlier range; in Britain, pollen signs of people's impact on woodland support the radiocarbon evidence for population. In the app's pollen series, tree cover in Britain falls from about half the land around 4500 BC to under a fifth by the Roman period, and in Ireland drops most after 3000 BC. The European findings are not specific to the isles; compare the tree-cover lines with the modelled cropland and pasture.",
+  "sources": [
+   {
+    "citation": "Fyfe RM, Woodbridge J, Roberts N (2015) From forest to farmland: pollen-inferred land cover change across Europe using the pseudobiomization approach. Global Change Biology 21(3):1197-1212, doi:10.1111/gcb.12776",
+    "short": "Fyfe et al. 2015",
+    "url": "https://doi.org/10.1111/gcb.12776",
+    "open_access": false,
+    "licence": null,
+    "quote": "At the European scale, the impact of Neolithic food producing economies appear to be detectable from 6000 BP through reduction in broad-leaf forests resulting from human land use activities such as forest clearance.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Fyfe RM, Woodbridge J, Roberts N (2015) From forest to farmland: pollen-inferred land cover change across Europe using the pseudobiomization approach. Global Change Biology 21(3):1197-1212, doi:10.1111/gcb.12776",
+    "short": "Fyfe et al. 2015",
+    "url": "https://doi.org/10.1111/gcb.12776",
+    "open_access": false,
+    "licence": null,
+    "quote": "Total forest cover at a pan-European scale moved outside the range of previous background variability from 4000 BP onwards.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Shennan S, Downey SS, Timpson A, Edinborough K, Colledge S, Kerig T, Manning K, Thomas MG (2013) Regional population collapse followed initial agriculture booms in mid-Holocene Europe. Nature Communications 4:2486, doi:10.1038/ncomms3486",
+    "short": "Shennan et al. 2013",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3806351/",
+    "open_access": true,
+    "licence": "CC BY-NC-SA 3.0",
+    "quote": "It is important to note that strong support for these demographic patterns in Britain is found in independent evidence such as indicators of anthropogenic impact on forest cover from pollen diagrams 21 and the fluctuations in the number of directly dated cereal grains and hazel nut shells",
+    "locator": "Results"
+   }
+  ]
+ },
+ {
+  "id": "late-bronze-age-downturn",
+  "title": "End of the Bronze Age: a downturn and a debate",
+  "years": [
+   -1200,
+   -400
+  ],
+  "series": [
+   "catalogue",
+   "temp12k",
+   "volcanic",
+   "trees_gb",
+   "trees_ie",
+   "pop_hyde_ie"
+  ],
+  "text": "Radiocarbon dates from Britain and Ireland fall steeply after about 1000 BC and recover only around 400 BC. Bevan and colleagues link this to a turn towards a colder, wetter climate, but Armit and colleagues, working on Ireland, date a rapid climate shift to about 750 BC and conclude that it did not start the population collapse. The temperature series here are global or continental, so they cannot settle the question for the isles.",
+  "sources": [
+   {
+    "citation": "Bevan A, Colledge S, Fuller D, Fyfe R, Shennan S, Stevens C (2017) Holocene fluctuations in human population demonstrate repeated links to food production and climate. PNAS 114(49):E10524-E10531, doi:10.1073/pnas.1709190114",
+    "short": "Bevan et al. 2017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5724262/",
+    "open_access": true,
+    "licence": "PNAS open access licence (not Creative Commons)",
+    "quote": "After ∼1000 BCE (the last part of the Bronze Age), there is another striking decline, and, while a higher uncertainty in the calibration curve at this point inhibits precise characterization of timing and duration, substantial recovery is visible again only by ∼400 BCE.",
+    "locator": "Results and Discussion"
+   },
+   {
+    "citation": "Armit I, Swindles GT, Becker K, Plunkett G, Blaauw M (2014) Rapid climate change did not cause population collapse at the end of the European Bronze Age. PNAS 111(48):17045-17049, doi:10.1073/pnas.1408028111",
+    "short": "Armit et al. 2014",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4260598/",
+    "open_access": true,
+    "licence": null,
+    "quote": "We analyze archeological 14C dates to demonstrate dramatic population collapse and present high-precision proxy climate data, analyzed through Bayesian methods, to provide evidence for a rapid climatic transition at ca. 750 calibrated years B.C. Our results demonstrate that this climatic downturn did not initiate population collapse",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "ad-536-volcanic-winter",
+  "title": "536 and after: volcanic cold",
+  "years": [
+   530,
+   660
+  ],
+  "series": [
+   "volcanic",
+   "eu_summer",
+   "temp12k",
+   "solar"
+  ],
+  "text": "Two large eruptions, in 536 and 540, show as tall bars in the volcanic series and are followed by a run of cold years, 536 to about 551, in the reconstructed European summer temperature (536 itself is among the four coldest summers in that series). Tree-ring scientists call the cold decades from 536 to about 660 the Late Antique Little Ice Age and link it, cautiously, to famine and plague. Irish annals record the cold of c. 536–550, and over twelve centuries Irish chronicle cold events often match eruptions in Greenland ice.",
+  "sources": [
+   {
+    "citation": "Sigl M, Winstrup M, McConnell JR, et al. (2015) Timing and climate forcing of volcanic eruptions for the past 2,500 years. Nature 523:543-549, doi:10.1038/nature14565",
+    "short": "Sigl et al. 2015",
+    "url": "https://doi.org/10.1038/nature14565",
+    "open_access": false,
+    "licence": null,
+    "quote": "Our revised timescale more firmly implicates volcanic eruptions as catalysts in the major sixth-century pandemics, famines, and socioeconomic disruptions in Eurasia and Mesoamerica",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Büntgen U, Myglan VS, Ljungqvist FC, et al. (2016) Cooling and societal change during the Late Antique Little Ice Age from 536 to around 660 AD. Nature Geoscience 9:231-236, doi:10.1038/ngeo2652 (quoted from the authors' manuscript; the published wording may differ slightly)",
+    "short": "Büntgen et al. 2016",
+    "url": "https://elib.sfu-kras.ru/bitstream/2311/27894/2/2016_naturegs.pdf",
+    "open_access": true,
+    "licence": null,
+    "quote": "This newly defined Late Antique Little Ice Age (LALIA, 536 to ~660 CE) exceeded the LIA in severity.",
+    "locator": "Abstract (authors' manuscript)"
+   },
+   {
+    "citation": "Ludlow F, Stine AR, Leahy P, Murphy E, Mayewski PA, Taylor D, Killen J, Baillie MGL, Hennessy M, Kiely G (2013) Medieval Irish chronicles reveal persistent volcanic forcing of severe winter cold events, 431-1649 CE. Environmental Research Letters 8:024035, doi:10.1088/1748-9326/8/2/024035",
+    "short": "Ludlow et al. 2013",
+    "url": "https://iopscience.iop.org/article/10.1088/1748-9326/8/2/024035",
+    "open_access": true,
+    "licence": "CC BY 3.0",
+    "quote": "These include the spatially extensive sixth century plague of Justinian and the severe climatic downturn expressed in Northern Hemisphere tree-rings, c.536–550 CE, both credibly reported in the Annals (Baillie 1994, McCarthy 2008 ).",
+    "locator": "Section 2 (the Irish annals as a source)"
+   }
+  ]
+ },
+ {
+  "id": "medieval-warmth-to-little-ice-age",
+  "title": "Medieval warmth to the Little Ice Age",
+  "years": [
+   900,
+   1700
+  ],
+  "series": [
+   "eu_summer",
+   "scot_summer",
+   "solar",
+   "volcanic",
+   "temp12k"
+  ],
+  "text": "Worldwide, the medieval centuries were warm in some regions but cooler than today overall, and the Little Ice Age was coldest from about 1400 to 1700. In Scotland, pine tree rings show warm decades in the 1300s and a long cold spell from the 16th century to the early 1800s, though the record before about 1550 is less certain. Compare the European and Scottish summer lines with the dips in solar output and the eruptions.",
+  "sources": [
+   {
+    "citation": "Mann ME, Zhang Z, Rutherford S, Bradley RS, Hughes MK, Shindell D, Ammann C, Faluvegi G, Ni F (2009) Global signatures and dynamical origins of the Little Ice Age and Medieval Climate Anomaly. Science 326:1256-1260, doi:10.1126/science.1177303",
+    "short": "Mann et al. 2009",
+    "url": "https://doi.org/10.1126/science.1177303",
+    "open_access": false,
+    "licence": null,
+    "quote": "The Medieval period is found to display warmth that matches or exceeds that of the past decade in some regions, but which falls well below recent levels globally.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Mann ME, Zhang Z, Rutherford S, Bradley RS, Hughes MK, Shindell D, Ammann C, Faluvegi G, Ni F (2009) Global signatures and dynamical origins of the Little Ice Age and Medieval Climate Anomaly. Science 326:1256-1260, doi:10.1126/science.1177303",
+    "short": "Mann et al. 2009",
+    "url": "https://doi.org/10.1126/science.1177303",
+    "open_access": false,
+    "licence": null,
+    "quote": "The coldest temperatures of the Little Ice Age are observed over the interval 1400 to 1700 C.E., with greatest cooling over the extratropical Northern Hemisphere continents.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Rydval M, Loader NJ, Gunnarson BE, Druckenbrod DL, Linderholm HW, Moreton SG, Wood CV, Wilson R (2017) Reconstructing 800 years of summer temperatures in Scotland from tree rings. Climate Dynamics 49:2951-2974, doi:10.1007/s00382-016-3478-8",
+    "short": "Rydval et al. 2017",
+    "url": "https://hdl.handle.net/10023/10093",
+    "open_access": true,
+    "licence": "CC BY 4.0",
+    "quote": "NCAIRN suggests that the recent summer-time warming in Scotland is likely not unique when compared to multi-decadal warm periods observed in the 1300s, 1500s, and 1730s, although trends before the mid-16th century should be interpreted with some caution due to greater uncertainty.",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "building-and-plague",
+  "title": "Building slows when plague strikes",
+  "years": [
+   1250,
+   1500
+  ],
+  "series": [
+   "catalogue",
+   "pop_hyde_uk"
+  ],
+  "text": "Tree-ring felling dates from nearly 50,000 timber buildings in western and central Europe show building falling after each large plague outbreak, and a decline already around 1300, before the Great Famine and the Black Death. The study does not cover the British Isles, so treat it as a comparison: look for whether the catalogue's count of buildings begun per century dips in the 14th century here too. The count is by century and records surviving buildings only, so it cannot show the year-by-year pattern.",
+  "sources": [
+   {
+    "citation": "Ljungqvist FC, Tegel W, Krusic PJ, et al. (2018) Linking European building activity with plague history. Journal of Archaeological Science 98:81-92, doi:10.1016/j.jas.2018.08.006",
+    "short": "Ljungqvist et al. 2018",
+    "url": "https://www.repository.cam.ac.uk/handle/1810/303271",
+    "open_access": true,
+    "licence": null,
+    "quote": "Comparison with annual records of 9772 plague outbreaks shows that construction activity was significantly negatively correlated to the number of plague outbreaks, with the greatest decrease in construction following the larger outbreaks by three to four years after the start of the epidemics.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Ljungqvist FC, Tegel W, Krusic PJ, et al. (2018) Linking European building activity with plague history. Journal of Archaeological Science 98:81-92, doi:10.1016/j.jas.2018.08.006",
+    "short": "Ljungqvist et al. 2018",
+    "url": "https://www.repository.cam.ac.uk/handle/1810/303271",
+    "open_access": true,
+    "licence": null,
+    "quote": "Preceding the Black Death (1346–1353 CE) by five decades and the Great Famine (1315–1322 CE) by two decades, a significant decline in construction activity at c. 1300 CE is indicative of a societal crisis, associated with population stagnation or decline.",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "great-famine-1315",
+  "title": "The Great Famine, 1315–22",
+  "years": [
+   1290,
+   1330
+  ],
+  "series": [
+   "pop_hyde_uk",
+   "eu_summer",
+   "scot_summer",
+   "catalogue"
+  ],
+  "text": "Two years of almost constant rain from 1314 brought three failed harvests in a row and, with a cattle plague, the Great Famine. Broadberry, Campbell and van Leeuwen estimate that England's population fell by about an eighth by 1325, then recovered before the Black Death. The modelled HYDE population has one value per century and cannot show a shock this short; the tree-ring summer temperatures show the years themselves.",
+  "sources": [
+   {
+    "citation": "Slavin P (2018) The 1310s Event. In: White S, Pfister C, Mauelshagen F (eds) The Palgrave Handbook of Climate History. Palgrave Macmillan, pp. 495-515, doi:10.1057/978-1-137-43020-5_33",
+    "short": "Slavin 2018",
+    "url": "https://stir.ac.uk/research/hub/publication/1474653",
+    "open_access": false,
+    "licence": null,
+    "quote": "First, between approximately July 1314 and July 1316, there were twenty-four months of extreme weather, characterised by almost incessant torrential rain in summer, autumn and spring, and then frost during winter. The disastrous weather resulted in three back-to-back harvest failures and omnipresent food dearth.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Broadberry S, Campbell BMS, van Leeuwen B (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick, 3 March 2011 (the estimates were later published in Broadberry et al. (2015) British Economic Growth, 1270-1870, Cambridge University Press)",
+    "short": "Broadberry et al. 2011",
+    "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+    "open_access": true,
+    "licence": null,
+    "quote": "The Great Famine shows up as a notable negative shock with the population falling by 12 per cent to 4.12 million by 1325.",
+    "locator": "Section 6, PDF page 11"
+   }
+  ]
+ },
+ {
+  "id": "black-death-people-and-land",
+  "title": "The Black Death: fewer people, more trees",
+  "years": [
+   1340,
+   1450
+  ],
+  "series": [
+   "pop_hyde_uk",
+   "pop_hyde_ie",
+   "crop_hyde_uk",
+   "trees_gb",
+   "trees_ie",
+   "towns10k_uk",
+   "catalogue"
+  ],
+  "text": "The plague of 1348–9 cut England's population by close to half within three years, and later outbreaks kept it falling into the 15th century. Pollen records show abandoned land turning to birch and hazel scrub, with woodland greatest around 1400; in Britain, though, cereal growing had begun to fall before the plague. The modelled HYDE population and cropland for the UK both fall by more than half between 1300 and 1400. The pollen tree-cover series has values only for about 1000 and 1425, too coarse to show a short regrowth (Ireland's line rises between them, Britain's falls).",
+  "sources": [
+   {
+    "citation": "Broadberry S, Campbell BMS, van Leeuwen B (2011) English medieval population: reconciling time series and cross sectional evidence. Working paper, University of Warwick, 3 March 2011 (the estimates were later published in Broadberry et al. (2015) British Economic Growth, 1270-1870, Cambridge University Press)",
+    "short": "Broadberry et al. 2011",
+    "url": "https://warwick.ac.uk/fac/soc/economics/seminars/seminars/conferences/venice3/programme/english_medieval_population.pdf",
+    "open_access": true,
+    "licence": null,
+    "quote": "The Black Death, which first struck in 1348-9 and was accompanied and reinforced by inclement weather and serious harvest failure, had a catastrophic effect, reducing the population by around 46 per cent within the space of just 3 years.",
+    "locator": "Section 4, PDF page 9"
+   },
+   {
+    "citation": "Yeloff D, van Geel B (2007) Abandonment of farmland and vegetation succession following the Eurasian plague pandemic of AD 1347-52. Journal of Biogeography 34(4):575-582, doi:10.1111/j.1365-2699.2006.01674.x",
+    "short": "Yeloff & van Geel 2007",
+    "url": "https://doi.org/10.1111/j.1365-2699.2006.01674.x",
+    "open_access": false,
+    "licence": null,
+    "quote": "Vegetation succession on the abandoned grazing land resulted in increased cover of woody tree species, particularly Betula and Corylus, by the late 14th century. The cover of woodland was greatest at c. AD 1400, before forest clearance and agriculture increased in intensity.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Yeloff D, van Geel B (2007) Abandonment of farmland and vegetation succession following the Eurasian plague pandemic of AD 1347-52. Journal of Biogeography 34(4):575-582, doi:10.1111/j.1365-2699.2006.01674.x",
+    "short": "Yeloff & van Geel 2007",
+    "url": "https://doi.org/10.1111/j.1365-2699.2006.01674.x",
+    "open_access": false,
+    "licence": null,
+    "quote": "In contrast, the decline in cereal production began at sites in Britain and France before the Black Death pandemic of AD 1347-52, and was probably due to the crisis in the agricultural economy, exacerbated by political instability and climate deterioration.",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "warming-and-sea-level",
+  "title": "Warming in central England and rising seas",
+  "years": [
+   1659,
+   2024
+  ],
+  "series": [
+   "cet",
+   "uk_temp",
+   "sea_newlyn",
+   "sea_sheerness"
+  ],
+  "text": "The Central England Temperature series shows the 21st century so far warmer than any period of the same length in the three centuries before, about 1.3°C above the 18th and 19th centuries. Sea level around the UK has risen about 19.5 cm since 1901, in line with the global rise. Compare the tide-gauge lines for Newlyn and Sheerness.",
+  "sources": [
+   {
+    "citation": "Kendon, M., Doherty, A., Hollis, D. et al. (2025) State of the UK Climate in 2024. International Journal of Climatology 45(S1):e70010, doi:10.1002/joc.70010",
+    "short": "Kendon et al. 2025",
+    "url": "https://nora.nerc.ac.uk/id/eprint/540108/1/Intl%20Journal%20of%20Climatology%20-%202025%20-%20Kendon%20-%20State%20of%20the%20UK%20Climate%20in%202024.pdf",
+    "open_access": true,
+    "licence": "CC BY-NC 4.0",
+    "quote": "The CET series provides evidence that the 21st Century so far has overall been warmer than any period of equivalent length within the previous three centuries; 2001 to 2024 has been 1.0°C warmer than 1901–2000 and 1.3°C warmer than 1801–1900 and 1701–1800 (Table 3).",
+    "locator": "Section 1.2 Central England Temperature"
+   },
+   {
+    "citation": "Kendon, M., Doherty, A., Hollis, D. et al. (2025) State of the UK Climate in 2024. International Journal of Climatology 45(S1):e70010, doi:10.1002/joc.70010",
+    "short": "Kendon et al. 2025",
+    "url": "https://nora.nerc.ac.uk/id/eprint/540108/1/Intl%20Journal%20of%20Climatology%20-%202025%20-%20Kendon%20-%20State%20of%20the%20UK%20Climate%20in%202024.pdf",
+    "open_access": true,
+    "licence": "CC BY-NC 4.0",
+    "quote": "Since 1901, the sea level around the UK has risen by about 19.5 cm, with two-thirds of this rise happening in just over the last three decades.",
+    "locator": "Summary: Sea-level rise"
+   },
+   {
+    "citation": "Kendon, M., Doherty, A., Hollis, D. et al. (2025) State of the UK Climate in 2024. International Journal of Climatology 45(S1):e70010, doi:10.1002/joc.70010",
+    "short": "Kendon et al. 2025",
+    "url": "https://nora.nerc.ac.uk/id/eprint/540108/1/Intl%20Journal%20of%20Climatology%20-%202025%20-%20Kendon%20-%20State%20of%20the%20UK%20Climate%20in%202024.pdf",
+    "open_access": true,
+    "licence": "CC BY-NC 4.0",
+    "quote": "Long-term UK sea level rise is in good agreement with the global sea level rise estimate of 20 cm (likely range 15–25 cm) for the period 1901–2018",
+    "locator": "Section 8.1 Mean Sea Level"
+   }
+  ]
+ },
+ {
+  "id": "scotland-ill-years-1690s",
+  "title": "Scotland's ill years of the 1690s",
+  "years": [
+   1690,
+   1700
+  ],
+  "series": [
+   "scot_summer",
+   "volcanic",
+   "cet",
+   "pop_scot"
+  ],
+  "text": "Tree rings from the Cairngorms make the 1690s the coldest decade of summers in Scotland's 800-year record, and the decade of the worst famine documented there. Look for the dip in the Scottish summer series and the volcanic spikes of the mid-1690s. The authors stress that cold alone does not explain the famine: how vulnerable people were and how the country responded mattered as well.",
+  "sources": [
+   {
+    "citation": "Rydval, M., Loader, N.J., Gunnarson, B.E., Druckenbrod, D.L., Linderholm, H.W., Moreton, S.G., Wood, C.V. and Wilson, R. (2017) Reconstructing 800 years of summer temperatures in Scotland from tree rings. Climate Dynamics 49:2951-2974, doi:10.1007/s00382-016-3478-8",
+    "short": "Rydval et al. 2017",
+    "url": "https://st-andrews.ac.uk/~rjsw/all%20pdfs/Rydvaletal2017.pdf",
+    "open_access": true,
+    "licence": "CC BY 4.0",
+    "quote": "Three of the five coldest reconstructed decades (1631–1640, 1661–1670 and 1691–1700) occurred in the seventeenth century with the 1690s representing the coldest decade in the record (Table 2). The period (~1693–1700) was marked by exceptionally cold and wet summers with widespread famine in Scotland",
+    "locator": "Section 3.1 North Cairngorms reconstruction"
+   },
+   {
+    "citation": "D'Arrigo, R., Klinger, P., Newfield, T., Rydval, M. and Wilson, R. (2020) Complexity in crisis: the volcanic cold pulse of the 1690s and the consequences of Scotland's failure to cope. Journal of Volcanology and Geothermal Research 389:106746, doi:10.1016/j.jvolgeores.2019.106746",
+    "short": "D'Arrigo et al. 2020",
+    "url": "https://research-repository.st-andrews.ac.uk/handle/10023/21075",
+    "open_access": true,
+    "licence": null,
+    "quote": "Archival sources meanwhile reveal the 1690s as likely the worst era of crop failure, food shortage, and mortality ever documented in Scottish history. The connection appears simple - volcanic cooling triggered famine - but the drivers towards famine are far more complex.",
+    "locator": "Abstract (St Andrews repository; author accepted manuscript, Elsevier copyright)"
+   }
+  ]
+ },
+ {
+  "id": "irish-frost-famine-1740",
+  "title": "The Great Frost and Irish famine of 1740–41",
+  "years": [
+   1739,
+   1742
+  ],
+  "series": [
+   "cet",
+   "pop_hyde_ie",
+   "volcanic"
+  ],
+  "text": "1740 is the coldest year in the Central England Temperature series, which begins in 1659. In Ireland the cold was followed by harvest failure, famine and migration; one estimate puts the death rate as high as in the Great Famine of the 1840s. The authors argue Ireland was already highly vulnerable to famine before the frost struck.",
+  "sources": [
+   {
+    "citation": "Engler, S., Mauelshagen, F., Werner, J. and Luterbacher, J. (2013) The Irish famine of 1740-1741: famine vulnerability and 'climate migration'. Climate of the Past 9:1161-1179, doi:10.5194/cp-9-1161-2013",
+    "short": "Engler et al. 2013",
+    "url": "https://cp.copernicus.org/articles/9/1161/2013/",
+    "open_access": true,
+    "licence": "CC BY 3.0",
+    "quote": "The \"Great Frost\" of 1740 was one of the coldest winters of the eighteenth century and impacted many countries all over Europe. The years 1740–1741 have long been known as a period of general crisis caused by harvest failures, high prices for staple foods, and excess mortality.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Engler, S., Mauelshagen, F., Werner, J. and Luterbacher, J. (2013) The Irish famine of 1740-1741: famine vulnerability and 'climate migration'. Climate of the Past 9:1161-1179, doi:10.5194/cp-9-1161-2013",
+    "short": "Engler et al. 2013",
+    "url": "https://cp.copernicus.org/articles/9/1161/2013/cp-9-1161-2013.pdf",
+    "open_access": true,
+    "licence": "CC BY 3.0",
+    "quote": "Ó Gráda (2009) has estimated the mortality rate during the Great Frost of 1740–1741 at 13 %, compared with 12 % during the “Great Irish Famine” in the nineteenth century.",
+    "locator": "Section 4.3 (last paragraph before 4.4 'Adaptation and migration')"
+   },
+   {
+    "citation": "Engler, S., Mauelshagen, F., Werner, J. and Luterbacher, J. (2013) The Irish famine of 1740-1741: famine vulnerability and 'climate migration'. Climate of the Past 9:1161-1179, doi:10.5194/cp-9-1161-2013",
+    "short": "Engler et al. 2013",
+    "url": "https://cp.copernicus.org/articles/9/1161/2013/",
+    "open_access": true,
+    "licence": "CC BY 3.0",
+    "quote": "Our analysis shows that Ireland was already particularly vulnerable to famine in the first half of the eighteenth century.",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "britain-early-emitter",
+  "title": "Britain, the first big emitter",
+  "years": [
+   1750,
+   2021
+  ],
+  "series": [
+   "co2_fossil_uk",
+   "coal_uk",
+   "co2"
+  ],
+  "text": "Britain's coal-fuelled industrialisation made it the dominant source of fossil CO₂ before 1850, when the global CO₂ curve was only beginning to rise. Over 1850–2021 the UK's share of all cumulative CO₂ (including land use) is about 3%, just behind India, which is seventh.",
+  "sources": [
+   {
+    "citation": "Evans, S. (2021) Analysis: Which countries are historically responsible for climate change? Carbon Brief, 5 October 2021",
+    "short": "Carbon Brief 2021",
+    "url": "https://www.carbonbrief.org/analysis-which-countries-are-historically-responsible-for-climate-change/",
+    "open_access": true,
+    "licence": null,
+    "quote": "Of the pre-1850 total, nearly three-quarters (2.8GtCO2) was from the UK.",
+    "locator": "Methodology section"
+   },
+   {
+    "citation": "Evans, S. (2021) Analysis: Which countries are historically responsible for climate change? Carbon Brief, 5 October 2021",
+    "short": "Carbon Brief 2021",
+    "url": "https://www.carbonbrief.org/analysis-which-countries-are-historically-responsible-for-climate-change/",
+    "open_access": true,
+    "licence": null,
+    "quote": "a few European countries (which had largely cleared their land for farming before 1850) start to rise up the rankings because they were in the throes of coal-fuelled industrialisation, including France, Germany and – above all – the UK.",
+    "locator": "Section on the cumulative-emissions animation"
+   },
+   {
+    "citation": "Evans, S. (2021) Analysis: Which countries are historically responsible for climate change? Carbon Brief, 5 October 2021",
+    "short": "Carbon Brief 2021",
+    "url": "https://www.carbonbrief.org/analysis-which-countries-are-historically-responsible-for-climate-change/",
+    "open_access": true,
+    "licence": null,
+    "quote": "India is in seventh place in the rankings, with 3.4% of the cumulative total – just above the UK, on 3.0% – as a result of a higher contribution from land-use change and forestry.",
+    "locator": "Section on the top 20 cumulative emitters"
+   }
+  ]
+ },
+ {
+  "id": "greenhouse-gases-since-1750",
+  "title": "Greenhouse gases since 1750",
+  "years": [
+   1750,
+   2019
+  ],
+  "series": [
+   "co2",
+   "ch4",
+   "n2o",
+   "co2_fossil_uk"
+  ],
+  "text": "The CO₂, methane and nitrous oxide curves are nearly flat for millennia and then turn sharply upward after about 1750, alongside the growth of fossil-fuel emissions. The IPCC finds this rise unequivocally caused by human activities.",
+  "sources": [
+   {
+    "citation": "IPCC (2021) Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press, doi:10.1017/9781009157896.001",
+    "short": "IPCC 2021",
+    "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+    "open_access": true,
+    "licence": null,
+    "quote": "Observed increases in well-mixed greenhouse gas (GHG) concentrations since around 1750 are unequivocally caused by human activities.",
+    "locator": "SPM A.1.1"
+   },
+   {
+    "citation": "IPCC (2021) Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press, doi:10.1017/9781009157896.001",
+    "short": "IPCC 2021",
+    "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+    "open_access": true,
+    "licence": null,
+    "quote": "Since 1750, increases in CO2 (47%) and CH4 (156%) concentrations far exceed – and increases in N2 O (23%) are similar to – the natural multi-millennial changes",
+    "locator": "SPM A.2.1"
+   }
+  ]
+ },
+ {
+  "id": "laki-haze-1783",
+  "title": "The Laki haze summer of 1783",
+  "years": [
+   1783,
+   1784
+  ],
+  "series": [
+   "volcanic",
+   "cet"
+  ],
+  "text": "The Laki fissure eruption in Iceland (June 1783 to February 1784) shows as a spike in the volcanic series. Parish records suggest deaths in England in summer 1783 ran 10–20% above normal, at the same time as the sulphurous dry fog. Researchers caution that historical records alone cannot separate the effect of the pollution from those of weather and hunger.",
+  "sources": [
+   {
+    "citation": "Schmidt, A., Ostro, B., Carslaw, K.S., Wilson, M., Thordarson, T., Mann, G.W. and Simmons, A.J. (2011) Excess mortality in Europe following a future Laki-style Icelandic eruption. PNAS 108(38):15710-15715, doi:10.1073/pnas.1108569108",
+    "short": "Schmidt et al. 2011",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3179041/",
+    "open_access": true,
+    "licence": null,
+    "quote": "parish records suggest that mortality in England in the summer of 1783 was 10–20% above the 51-y moving mean",
+    "locator": "Introduction"
+   },
+   {
+    "citation": "Schmidt, A., Ostro, B., Carslaw, K.S., Wilson, M., Thordarson, T., Mann, G.W. and Simmons, A.J. (2011) Excess mortality in Europe following a future Laki-style Icelandic eruption. PNAS 108(38):15710-15715, doi:10.1073/pnas.1108569108",
+    "short": "Schmidt et al. 2011",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3179041/",
+    "open_access": true,
+    "licence": null,
+    "quote": "the contribution of the volcanic air pollution to the excess mortality rates cannot be determined from historical records alone because other factors such as starvation and weather also played a role",
+    "locator": "Introduction"
+   },
+   {
+    "citation": "Grattan, J., Durand, M. and Taylor, S. (2003) Illness and elevated human mortality in Europe coincident with the Laki Fissure eruption. In: Oppenheimer, C., Pyle, D.M. and Barclay, J. (eds) Volcanic Degassing. Geological Society, London, Special Publications 213:401-414, doi:10.1144/GSL.SP.2003.213.01.24",
+    "short": "Grattan et al. 2003",
+    "url": "https://research.aber.ac.uk/en/publications/illness-and-elevated-human-mortality-in-europe-coincident-with-th/",
+    "open_access": false,
+    "licence": null,
+    "quote": "presents data that point to a significant increase in the national death rate in England coincident with the early phases of the eruption.",
+    "locator": "Abstract (Aberystwyth University research portal)"
+   }
+  ]
+ },
+ {
+  "id": "coal-peak-and-co2",
+  "title": "Coal's rise and fall, and UK CO₂",
+  "years": [
+   1800,
+   2020
+  ],
+  "series": [
+   "coal_uk",
+   "coal_jobs_uk",
+   "co2_fossil_uk"
+  ],
+  "text": "UK coal output peaked in 1913 and employment in the mines in 1920; both then fell, steeply from the 1960s. Compare the coal lines with UK fossil CO₂: emissions have fallen back to late 19th-century levels, and the decline of coal was the largest driver of that fall.",
+  "sources": [
+   {
+    "citation": "Ritchie, H. (2019, updated 2025) The death of UK coal in five charts. Our World in Data",
+    "short": "Ritchie 2019",
+    "url": "https://ourworldindata.org/death-uk-coal",
+    "open_access": true,
+    "licence": "CC BY 4.0",
+    "quote": "Output grew rapidly throughout the 19th century, and peaked at 292 million tonnes in 1913.",
+    "locator": "Section 1, 'Coal production peaked at 292 million tonnes in 1913'"
+   },
+   {
+    "citation": "Ritchie, H. (2019, updated 2025) The death of UK coal in five charts. Our World in Data",
+    "short": "Ritchie 2019",
+    "url": "https://ourworldindata.org/death-uk-coal",
+    "open_access": true,
+    "licence": "CC BY 4.0",
+    "quote": "Employment in coal peaked in 1920 at 1.19 million workers: more than 1-in-20 of the total UK workforce.",
+    "locator": "Section 3, 'At its 1920 peak, UK coal employed 1.2 million'"
+   },
+   {
+    "citation": "Ritchie, H. (2019, updated 2025) The death of UK coal in five charts. Our World in Data",
+    "short": "Ritchie 2019",
+    "url": "https://ourworldindata.org/death-uk-coal",
+    "open_access": true,
+    "licence": "CC BY 4.0",
+    "quote": "In the last few years, UK CO2 emissions have fallen to levels last seen in the late 19th century: the decline in coal was the largest driver of this reduction.",
+    "locator": "Introduction"
+   }
+  ]
+ },
+ {
+  "id": "irish-great-famine-population",
+  "title": "The Great Famine and Ireland's falling population",
+  "years": [
+   1841,
+   1961
+  ],
+  "series": [
+   "pop_ie",
+   "pop_ni",
+   "pop_hyde_ie"
+  ],
+  "text": "Ireland's population fell sharply between the censuses of 1841 and 1851, the decade of the Great Famine of 1845–52, and in the State it kept falling until 1961. Look for the break in the Irish population line at 1851 and the long decline that follows; the State passed five million again only in 2022. The CSO figures are for the State (26 counties), not the whole island.",
+  "sources": [
+   {
+    "citation": "Central Statistics Office (2023) Census of Population 2022 - Summary Results: Population Changes. CSO, Cork",
+    "short": "CSO 2023",
+    "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpsr/censusofpopulation2022-summaryresults/populationchanges/",
+    "open_access": true,
+    "licence": null,
+    "quote": "Census 2022 marked the first time in 171 years that the population of Ireland surpassed 5 million people. After a constant decline since 1851, Ireland's population recorded its lowest level in 1961 when it stood at 2,818,341.",
+    "locator": "Population Change"
+   },
+   {
+    "citation": "Engler, S., Mauelshagen, F., Werner, J. and Luterbacher, J. (2013) The Irish famine of 1740-1741: famine vulnerability and 'climate migration'. Climate of the Past 9:1161-1179, doi:10.5194/cp-9-1161-2013",
+    "short": "Engler et al. 2013",
+    "url": "https://cp.copernicus.org/articles/9/1161/2013/",
+    "open_access": true,
+    "licence": "CC BY 3.0",
+    "quote": "famine has played a more outstanding role in Irish national history than in any other European country, due to the \"Great Famine\" of 1845–1852 and its long-term demographic effects.",
+    "locator": "Abstract"
+   }
+  ]
+ },
+ {
+  "id": "towns-smoke-and-life",
+  "title": "Industrial towns, smoke and life expectancy",
+  "years": [
+   1851,
+   1939
+  ],
+  "series": [
+   "urban_uk",
+   "life_uk",
+   "coal_uk"
+  ],
+  "text": "Compare the rising urban share with life expectancy and coal output. Towns had long had higher death rates than the countryside, an 'urban penalty' that disappeared only in the 1930s. One study estimates that growing industrial coal use cut life expectancy by at least half a year between 1851 and 1900 (a working paper, not peer reviewed).",
+  "sources": [
+   {
+    "citation": "Hanlon, W.W. (2015) Pollution and mortality in the 19th century. NBER Working Paper 21647 (not peer reviewed)",
+    "short": "Hanlon 2015",
+    "url": "https://www.nber.org/system/files/working_papers/w21647/w21647.pdf",
+    "open_access": true,
+    "licence": null,
+    "quote": "Industrial pollution explains 30-40% of the relationship between mortality and population density in 1851-60, and nearly 60% of this relationship in 1900. Growing industrial coal use from 1851-1900 reduced life expectancy by at least 0.57 years.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Cambridge Group for the History of Population and Social Structure (n.d.) Migration, mortality and medicalisation: investigating the long-run epidemiological consequences of urbanisation 1600-1945 (project page)",
+    "short": "Cambridge Group (Campop)",
+    "url": "https://www.campop.geog.cam.ac.uk/research/projects/migrationmortalitymedicalisation/",
+    "open_access": true,
+    "licence": null,
+    "quote": "The breakthrough to urban natural increase that occurred in the late eighteenth century and the eradication of the urban penalty in the 1930s mark the endpoints of major epidemiological transitions.",
+    "locator": "Project description"
+   }
+  ]
+ },
+ {
+  "id": "woodland-low-point",
+  "title": "Woodland's low point and the Forestry Commission",
+  "years": [
+   1870,
+   2000
+  ],
+  "series": [
+   "wood_uk",
+   "wood_eng",
+   "wood_scot"
+  ],
+  "text": "Britain's woodland cover reached its low point, below 5%, around the end of the 19th century; the first Forestry Commission census of 1924 was made after very extensive wartime fellings. Woodland has expanded since, to 11.6% of Britain by 2000; the war had shown how quickly the country could run out of timber. Look for the turn in the woodland lines in the early 20th century.",
+  "sources": [
+   {
+    "citation": "Smith, S., Gilbert, J., Bull, G., Gillam, S. and Whitton, E. (2010) National inventory of woodland and trees (1995-99): methodology. Forestry Commission Research Report, Forestry Commission, Edinburgh",
+    "short": "Smith et al. 2010",
+    "url": "https://cdn.forestresearch.gov.uk/2010/12/fcrp014.pdf",
+    "open_access": true,
+    "licence": "Open Government Licence",
+    "quote": "by the end of the 19th century, woodland cover had dropped below 5%. Since then Britain’s forest and woodland area has been expanding, until by the end of the 20th century there were almost 2.7 million hectares, equivalent to 11.6% woodland cover.",
+    "locator": "1. Introduction, Background"
+   },
+   {
+    "citation": "Smith, S., Gilbert, J., Bull, G., Gillam, S. and Whitton, E. (2010) National inventory of woodland and trees (1995-99): methodology. Forestry Commission Research Report, Forestry Commission, Edinburgh",
+    "short": "Smith et al. 2010",
+    "url": "https://cdn.forestresearch.gov.uk/2010/12/fcrp014.pdf",
+    "open_access": true,
+    "licence": "Open Government Licence",
+    "quote": "The purpose of the Census was to assess the woodland resource after the very extensive fellings of the First World War.",
+    "locator": "1. Introduction, '1924 Census'"
+   },
+   {
+    "citation": "Studholme, H. (2019) Our first 100 years sets us up for the challenges that lie ahead. Forestry England blog, 1 September 2019",
+    "short": "Forestry England 2019",
+    "url": "https://www.forestryengland.uk/our-first-100-years",
+    "open_access": true,
+    "licence": null,
+    "quote": "The war had exposed that, after millennia of deforestation, the country could rapidly run out of essential timber supplies, in the event of a massive trade disruption, like a war.",
+    "locator": "Blog post by the Chair, paragraph 2"
+   }
+  ]
+ },
+ {
+  "id": "london-smog-so2",
+  "title": "The 1952 smog and the fall of sulphur dioxide",
+  "years": [
+   1952,
+   2024
+  ],
+  "series": [
+   "so2_uk",
+   "coal_uk"
+  ],
+  "text": "Sulphur dioxide from burning coal contributed to the deaths in London's smog of December 1952, now estimated at about 12,000 including the months that followed. On the graphs, UK SO₂ emissions fall steeply alongside coal: official statistics put the fall since 1990 at 98%, driven by less coal burned in the energy industries.",
+  "sources": [
+   {
+    "citation": "Bell, M.L. and Davis, D.L. (2001) Reassessment of the lethal London fog of 1952: novel indicators of acute and chronic consequences of acute exposure to air pollution. Environmental Health Perspectives 109(Suppl 3):389-394, doi:10.1289/ehp.01109s3389",
+    "short": "Bell & Davis 2001",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1240556/",
+    "open_access": true,
+    "licence": null,
+    "quote": "We estimate about 12,000 excess deaths occurred from December 1952 through February 1953 because of acute and persisting effects of the 1952 London smog.",
+    "locator": "Abstract"
+   },
+   {
+    "citation": "Department for Environment, Food & Rural Affairs (2026) Emissions of air pollutants in the UK - Sulphur dioxide (SO2). Accredited official statistics, updated 12 February 2026",
+    "short": "Defra 2026",
+    "url": "https://www.gov.uk/government/statistics/emissions-of-air-pollutants/emissions-of-air-pollutants-in-the-uk-sulphur-dioxide-so2",
+    "open_access": true,
+    "licence": "Open Government Licence v3.0",
+    "quote": "SO2 emitted from coal burning played a key contributory role to thousands of respiratory-related deaths during the London smog in 1952.",
+    "locator": "Section 1, 'What is sulphur dioxide and why are emissions of it estimated?'"
+   },
+   {
+    "citation": "Department for Environment, Food & Rural Affairs (2026) Emissions of air pollutants in the UK - Sulphur dioxide (SO2). Accredited official statistics, updated 12 February 2026",
+    "short": "Defra 2026",
+    "url": "https://www.gov.uk/government/statistics/emissions-of-air-pollutants/emissions-of-air-pollutants-in-the-uk-sulphur-dioxide-so2",
+    "open_access": true,
+    "licence": "Open Government Licence v3.0",
+    "quote": "Emissions of sulphur dioxide have decreased by 98 per cent since 1990, to 84 thousand tonnes in 2024. This was driven by a decline in coal use in energy industries.",
+    "locator": "Section 2, trends"
+   }
+  ]
+ }
+]

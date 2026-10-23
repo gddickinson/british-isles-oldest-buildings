@@ -29,11 +29,18 @@ const ChangePanel = (() => {
         <button class="cp-close" type="button" aria-label="Hide the graphs" title="Hide the graphs">×</button></div>
       ${opts.map ? '<div class="cp-layers"></div>' : ""}
       <details class="cp-pick"><summary>Choose graphs</summary><div class="cp-list"></div></details>
+      <div class="cp-notes hint"></div>
       <div class="cp-charts"></div>
       <p class="hint cp-foot">Hover a graph for values; the line marks the year on the slider. Dashed lines are
         modelled estimates. <a href="${typeof IS_STATIC !== "undefined" && IS_STATIC ? "change.html" : "/change"}">Sources and notes</a></p>`;
     const list = el.querySelector(".cp-list"), charts = el.querySelector(".cp-charts"), range = el.querySelector(".cp-range");
-    let year = opts.year ?? null, all = [], sources = {};
+    let year = opts.year ?? null, all = [], sources = {}, notes = [];
+    const PAGE = typeof IS_STATIC !== "undefined" && IS_STATIC ? "change.html" : "/change";
+    function drawNotes() {                          // the cited notes (E5) whose years include the slider's year
+      const box = el.querySelector(".cp-notes"), hit = year == null ? [] : notes.filter((n) => year >= n.years[0] - 25 && year <= n.years[1] + 25);
+      box.innerHTML = hit.length ? `Notes for ${ChangeCharts.yearText(year)}: ${hit.map((n) =>
+        `<a href="${PAGE}#note-${esc(n.id)}">${esc(n.title)}</a>`).join(" · ")}` : "";
+    }
     range.value = String(store.get(RANGE_KEY, "fit"));
 
     const chosen = () => new Set(store.get(KEY, null) ?? all.filter((s) => s.default).map((s) => s.id));
@@ -79,9 +86,11 @@ const ChangePanel = (() => {
     const refresh = async () => {
       const d = await load();
       sources = d.sources || {};
+      notes = d.notes || [];
       all = (d.series || []).concat(opts.local ? opts.local() : []);
       drawList();
       drawCharts();
+      drawNotes();
     };
     refresh();
     let pending = null;
@@ -92,7 +101,7 @@ const ChangePanel = (() => {
         year = y;
         mapLayers?.setYear(y);
         if (pending) return;
-        pending = setTimeout(() => { pending = null; drawCharts(); }, 150);
+        pending = setTimeout(() => { pending = null; drawCharts(); drawNotes(); }, 150);
       },
     };
   }

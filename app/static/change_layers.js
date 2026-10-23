@@ -1,6 +1,6 @@
 // Map layers of "Change over time" (static/data/change/layers.json, written by bidb.change_layers and
 // bidb.change_geology): HYDE population and cropland grids that follow the year slider, and fixed layers
-// (bedrock geology, coalfields). One layer at a time, with its legend, note and source.
+// (bedrock geology, coalfields, ancient woodland, land grades...), and towns as dots sized by population. One layer at a time, with its legend, note and source.
 // ChangeLayers.mount(box, map) -> { setYear(y), pause(on) }
 const ChangeLayers = (() => {
   const ROOT = (typeof IS_STATIC !== "undefined" && IS_STATIC ? "static" : "/static") + "/data/change/";
@@ -16,10 +16,16 @@ const ChangeLayers = (() => {
     if (!map.getPane("changePane")) { map.createPane("changePane"); map.getPane("changePane").style.zIndex = 350; }
     let layers = [], current = null, shown = null, year = null, geo = {}, paused = false;
 
-    const yearFor = (l) => {                          // the latest date of the grid at or before the slider's year
+    // the latest date of the layer at or before the slider's year (null: the layer starts later); fixed layers have one
+    const yearFor = (l) => {
+      if (l.years.length === 1) return l.years[0];
       const y = year ?? l.years[l.years.length - 1];
-      return l.years.filter((v) => v <= y).pop() ?? l.years[0];
+      return l.years.filter((v) => v <= y).pop() ?? null;
     };
+    const whenText = (l, y) => (l.years.length === 1 ? (l.date || "") : y == null ? `starts ${yt(l.years[0])}; move the year slider`
+      : `map for ${yt(y)}${year == null ? " (latest; use the year slider)" : ""}`);
+    const radius = (k) => 2 + Math.sqrt(k) * 0.45;    // dot area follows population (thousands)
+    const dots = L.svg({ pane: "changePane" });      // the map's canvas only repaints new dots once it moves
     function drawInfo(l) {
       if (!l) { info.innerHTML = ""; when.textContent = ""; return; }
       const srcs = l.sources || [l.source];
@@ -37,11 +43,25 @@ const ChangeLayers = (() => {
       if (!l) return;
       if (l.kind === "grid") {
         geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());   // {year: PNG data URI}
-        const y = yearFor(l), url = (await geo[l.id])[y];
+        const y = yearFor(l), url = y == null ? null : (await geo[l.id])[y];
         if (current !== l) return;
-        when.textContent = `map for ${yt(y)}${year == null ? " (latest; use the year slider)" : ""}`;
-        if (shown) shown.setUrl(url);
+        when.textContent = whenText(l, y);
+        if (!url) { if (shown) { map.removeLayer(shown); shown = null; } }
+        else if (shown) shown.setUrl(url);
         else shown = L.imageOverlay(url, l.bounds, { opacity: 0.72, pane: "changePane", className: "cl-grid", interactive: false }).addTo(map);
+      } else if (l.kind === "points") {
+        geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());   // [[name, lat, lon, {year: [thousands, estimated]}]]
+        const y = yearFor(l), data = await geo[l.id];
+        if (current !== l) return;
+        when.textContent = whenText(l, y);
+        if (shown) { map.removeLayer(shown); shown = null; }
+        if (y == null) return;
+        shown = L.layerGroup(data.filter((p) => p[3][y]).sort((a, b) => b[3][y][0] - a[3][y][0]).map(([name, lat, lon, v]) => {
+          const [k, est] = v[y];
+          return L.circleMarker([lat, lon], { pane: "changePane", renderer: dots, radius: radius(k), weight: 1, color: "#7a3418",
+            fillColor: est ? l.legend[1].color : l.legend[0].color, fillOpacity: 0.8 })
+            .bindTooltip(`${esc(name)}: about ${ChangeCharts.fmt(k * 1000)} people in ${yt(y)}${est ? " (estimated)" : ""}`);
+        })).addTo(map);
       } else if (!shown) {
         when.textContent = "";
         geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());
@@ -58,7 +78,10 @@ const ChangeLayers = (() => {
     }
     load().then((m) => {
       layers = m.layers || [];
-      pick.innerHTML += layers.map((l) => `<option value="${esc(l.id)}">${esc(l.title)}</option>`).join("");
+      const groups = { "Through time": layers.filter((l) => l.years && l.years.length > 1),
+                       "The land": layers.filter((l) => !l.years || l.years.length < 2) };
+      pick.innerHTML += Object.entries(groups).map(([g, ls]) => `<optgroup label="${g}">${ls.map((l) =>
+        `<option value="${esc(l.id)}">${esc(l.title)}</option>`).join("")}</optgroup>`).join("");
       try { pick.value = localStorage.getItem(KEY) || ""; } catch (e) { /* private mode */ }
       if (pick.value) show();
     });
@@ -67,7 +90,7 @@ const ChangeLayers = (() => {
       show();
     });
     return {
-      setYear(y) { year = y; if (current && current.kind === "grid") show(); },
+      setYear(y) { year = y; if (current && current.kind !== "geojson") show(); },
       pause(on) { paused = on; show(); },          // the panel was hidden / shown again
     };
   }

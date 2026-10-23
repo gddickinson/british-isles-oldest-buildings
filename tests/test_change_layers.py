@@ -46,13 +46,27 @@ class Geology(unittest.TestCase):
 
     def test_layers_file_lists_every_layer_with_a_source(self):
         meta = json.loads((cl.OUT / "layers.json").read_text())["layers"]
-        self.assertEqual({l["id"] for l in meta}, {"hyde_popd", "hyde_cropland", "geology", "coalfields"})
+        self.assertEqual({l["id"] for l in meta}, {"hyde_popd", "hyde_cropland", "geology", "coalfields", "ghsl_built", "corine",
+                                                   "pollen_trees", "ancient_woodland", "alc", "superficial", "cities"})
         for l in meta:
             for s in l.get("sources") or [l["source"]]:
                 self.assertTrue(s["citation"] and s["licence"] and s["url"], l["id"])
         pack = json.loads((cl.OUT / "layers" / "hyde_popd.json").read_text())
         self.assertEqual(sorted(int(y) for y in pack), cl.YEARS)
         self.assertTrue(all(v.startswith("data:image/png;base64,") for v in pack.values()))
+
+    def test_raster_grids_and_legends(self):
+        from bidb import change_rasters as cr
+        g = cr._grid("ghsl_built_2020")
+        self.assertEqual((len(g["rows"]), len(g["rows"][0])), (720, 780))       # 1/60° over lat 49–61, lon −11–2
+        self.assertEqual(cr._legend([1, 5], ["#a", "#b"]), [{"color": "#a", "label": "1–5"}, {"color": "#b", "label": "5+"}])
+        meta = {l["id"]: l for l in json.loads((cl.OUT / "layers.json").read_text())["layers"]}
+        self.assertEqual(meta["corine"]["years"], [2000, 2006, 2012, 2018])
+        self.assertEqual(len(meta["corine"]["legend"]), len(cr.CORINE))
+        self.assertTrue(meta["alc"]["date"])
+        cities = json.loads((cl.OUT / "layers" / "cities.json").read_text())
+        london = next(c for c in cities if c[0] == "London")
+        self.assertGreater(london[3]["1900"][0], london[3]["1500"][0])
 
 
 if __name__ == "__main__":

@@ -26,6 +26,15 @@ class ChangeSeries(unittest.TestCase):
         self.assertIn("e: no source", bad)
         self.assertIn("s: missing data/none.csv", bad)
 
+    def test_notes_quote_their_sources(self):
+        series = json.loads((cs.SRC / "series.json").read_text())
+        notes = json.loads((cs.SRC / "notes.json").read_text())
+        self.assertEqual(cs.check_notes(notes, series), [])
+        self.assertEqual(len({n["id"] for n in notes}), len(notes))
+        bad = cs.check_notes([{"id": "n", "text": "t", "series": ["nope"], "sources": [{"short": "x", "url": "u"}]}], series)
+        self.assertIn("note n: unknown series nope", bad)
+        self.assertIn("note n: a source has no quote", bad)
+
 
 if __name__ == "__main__":
     unittest.main()

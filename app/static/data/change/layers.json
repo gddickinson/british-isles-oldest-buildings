@@ -275,6 +275,459 @@
      "citation": "Mining Remediation Authority (Coal Authority), Coalfield Consultation Areas. Contains public sector information licensed under the Open Government Licence v3.0"
     }
    ]
+  },
+  {
+   "id": "ghsl_built",
+   "title": "Built-up land from satellites",
+   "kind": "grid",
+   "years": [
+    1975,
+    2020
+   ],
+   "file": "layers/ghsl_built.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of the ground under buildings",
+   "legend": [
+    {
+     "color": "#e9dfe6",
+     "label": "1–2"
+    },
+    {
+     "color": "#d3bfcf",
+     "label": "2–5"
+    },
+    {
+     "color": "#bb9fb8",
+     "label": "5–10"
+    },
+    {
+     "color": "#a27fa0",
+     "label": "10–15"
+    },
+    {
+     "color": "#876089",
+     "label": "15–20"
+    },
+    {
+     "color": "#6b4370",
+     "label": "20–30"
+    },
+    {
+     "color": "#4e2a55",
+     "label": "30+"
+    }
+   ],
+   "note": "Share of the ground covered by buildings, mapped by the EU's Global Human Settlement Layer from Landsat and Sentinel-2 images, in cells of about 1 by 2 km. Shown for 1975 and 2020; before 1975 nothing is drawn.",
+   "sources": [
+    {
+     "short": "GHSL built-up surface R2023A",
+     "licence": "© European Union; reuse with acknowledgement",
+     "url": "https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php",
+     "citation": "Pesaresi, M. (2023) GHS-BUILT-S R2023A – GHS built-up surface grid, derived from Sentinel-2 composite and Landsat, multitemporal (1975–2030). European Commission, Joint Research Centre, doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA. © European Union, 1995–2025"
+    }
+   ]
+  },
+  {
+   "id": "corine",
+   "title": "Land cover (CORINE)",
+   "kind": "grid",
+   "years": [
+    2000,
+    2006,
+    2012,
+    2018
+   ],
+   "file": "layers/corine.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "",
+   "legend": [
+    {
+     "color": "#c0392b",
+     "label": "Towns, industry and mines"
+    },
+    {
+     "color": "#f2d35e",
+     "label": "Arable land"
+    },
+    {
+     "color": "#b9dc7a",
+     "label": "Pasture"
+    },
+    {
+     "color": "#e3a857",
+     "label": "Mixed farming and orchards"
+    },
+    {
+     "color": "#2e7d32",
+     "label": "Woods and forest"
+    },
+    {
+     "color": "#a98bc4",
+     "label": "Moor, heath and rough grassland"
+    },
+    {
+     "color": "#bdbdbd",
+     "label": "Bare rock, beaches and dunes"
+    },
+    {
+     "color": "#5d8aa8",
+     "label": "Bogs, marshes and saltmarsh"
+    },
+    {
+     "color": "#3f6fd8",
+     "label": "Lakes and rivers"
+    }
+   ],
+   "note": "What covers the land, from satellite images (patches of 25 hectares or more), with the 44 CORINE classes gathered into nine. Read from the EEA's generalised map at about 1.5 km; for exact areas use the full product. Before 2000 nothing is drawn.",
+   "sources": [
+    {
+     "short": "CORINE Land Cover",
+     "licence": "Copernicus free and open data (attribution)",
+     "url": "https://land.copernicus.eu/en/products/corine-land-cover",
+     "citation": "Generated using European Union's Copernicus Land Monitoring Service information: CORINE Land Cover 2000, 2006, 2012 and 2018, doi:10.2909/960998c1-1870-4e82-8051-6485205ebbac (2018); read from the European Environment Agency's map service"
+    }
+   ]
+  },
+  {
+   "id": "pollen_trees",
+   "title": "Tree cover from pollen",
+   "kind": "grid",
+   "years": [
+    -9500,
+    -9000,
+    -8500,
+    -8000,
+    -7500,
+    -7000,
+    -6500,
+    -6000,
+    -5500,
+    -5000,
+    -4500,
+    -4000,
+    -3500,
+    -3000,
+    -2500,
+    -2000,
+    -1500,
+    -1000,
+    -500,
+    0,
+    500,
+    1000,
+    1425,
+    1725,
+    1935
+   ],
+   "file": "layers/pollen_trees.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of the land under trees",
+   "legend": [
+    {
+     "color": "#e8f2d9",
+     "label": "5–10"
+    },
+    {
+     "color": "#cfe5b0",
+     "label": "10–20"
+    },
+    {
+     "color": "#b1d487",
+     "label": "20–30"
+    },
+    {
+     "color": "#8fc061",
+     "label": "30–40"
+    },
+    {
+     "color": "#6ca842",
+     "label": "40–50"
+    },
+    {
+     "color": "#4c8d2e",
+     "label": "50–60"
+    },
+    {
+     "color": "#357023",
+     "label": "60–70"
+    },
+    {
+     "color": "#22531a",
+     "label": "70+"
+    }
+   ],
+   "note": "Tree cover estimated from pollen in lake and bog cores with the REVEALS model, in squares of one degree, for time windows of a few centuries (the date shown is the middle of the window). Squares without enough pollen sites stay empty. Woodland spread after the Ice Age and was cleared by farmers from the Neolithic on.",
+   "sources": [
+    {
+     "short": "Githumbi et al. 2022 (LandClimII REVEALS)",
+     "licence": "CC BY 4.0",
+     "url": "https://doi.org/10.1594/PANGAEA.937075",
+     "citation": "Fyfe, R.M., Githumbi, E., Trondman, A.-K. et al. (2021) A full Holocene record of transient gridded vegetation cover in Europe. PANGAEA, doi:10.1594/PANGAEA.937075; described in Githumbi, E. et al. (2022) ESSD 14:1581–1619, doi:10.5194/essd-14-1581-2022"
+    }
+   ],
+   "modelled": true
+  },
+  {
+   "id": "ancient_woodland",
+   "title": "Ancient woodland",
+   "kind": "grid",
+   "years": [
+    2023
+   ],
+   "file": "layers/ancient_woodland.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "% of the land",
+   "legend": [
+    {
+     "color": "#b1d487",
+     "label": "1–5"
+    },
+    {
+     "color": "#8fc061",
+     "label": "5–10"
+    },
+    {
+     "color": "#6ca842",
+     "label": "10–20"
+    },
+    {
+     "color": "#4c8d2e",
+     "label": "20–35"
+    },
+    {
+     "color": "#357023",
+     "label": "35–50"
+    },
+    {
+     "color": "#22531a",
+     "label": "50+"
+    }
+   ],
+   "note": "Share of each cell (about 1 by 2 km) that is ancient woodland: land wooded since at least 1600 in England and Wales and since about 1750 (Roy's Military Survey) in Scotland, from old maps; both surviving native woods and plantations on ancient woodland sites. Northern Ireland and Ireland are not included.",
+   "sources": [
+    {
+     "short": "Ancient Woodland (England), Natural England",
+     "licence": "OGL v3.0",
+     "url": "https://environment.data.gov.uk/api/file/download?fileDataSetId=008cdfcf-893b-48f6-937a-3891a2a698c9&fileName=Ancient_Woodland_England.geojson.zip",
+     "citation": "Natural England, Ancient Woodland (England). © Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right 2026"
+    },
+    {
+     "short": "Ancient Woodland Inventory 2021 (Wales), NRW",
+     "licence": "OGL v3.0",
+     "url": "https://datamap.gov.wales/layers/inspire-nrw:NRW_ANCIENT_WOODLAND_INVENTORY_2021",
+     "citation": "© CNC/NRW, Ancient Woodland Inventory 2021; re-used under the Open Government Licence. Contains Ordnance Survey data"
+    },
+    {
+     "short": "Ancient Woodland Inventory (Scotland), NatureScot",
+     "licence": "OS Open Data licence / OGL",
+     "url": "https://gis-downloads.nature.scot/",
+     "citation": "Copyright NatureScot. Contains Ordnance Survey data © Crown copyright and database right 2023"
+    }
+   ],
+   "date": "inventories of 2021–2026"
+  },
+  {
+   "id": "alc",
+   "title": "Farmland quality (England)",
+   "kind": "grid",
+   "years": [
+    1988
+   ],
+   "file": "layers/alc.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "",
+   "legend": [
+    {
+     "color": "#1a6b2f",
+     "label": "Grade 1 (excellent)"
+    },
+    {
+     "color": "#4f9a3a",
+     "label": "Grade 2 (very good)"
+    },
+    {
+     "color": "#a9cf6b",
+     "label": "Grade 3 (good to moderate)"
+    },
+    {
+     "color": "#e4cf7a",
+     "label": "Grade 4 (poor)"
+    },
+    {
+     "color": "#c08a4a",
+     "label": "Grade 5 (very poor)"
+    },
+    {
+     "color": "#c9c9c9",
+     "label": "Not farmland"
+    },
+    {
+     "color": "#8e5a8a",
+     "label": "Towns"
+    }
+   ],
+   "note": "How good the land is for farming, graded from soil, climate, slope and wetness on the 1:250,000 provisional maps of the 1970s; not for single fields. England only.",
+   "sources": [
+    {
+     "short": "Provisional Agricultural Land Classification, Natural England",
+     "licence": "OGL v3.0",
+     "url": "https://environment.data.gov.uk/api/file/download?fileDataSetId=f33896b6-9847-4f03-b5d9-3c55497a003c&fileName=Provisional_Agricultural_Land_Classification_ALC.geojson.zip",
+     "citation": "Natural England, Provisional Agricultural Land Classification (ALC) (England). © Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right"
+    }
+   ],
+   "date": "maps of the 1970s"
+  },
+  {
+   "id": "superficial",
+   "title": "Superficial deposits (Great Britain)",
+   "kind": "grid",
+   "years": [
+    2025
+   ],
+   "file": "layers/superficial.json",
+   "bounds": [
+    [
+     49.0,
+     -11.0
+    ],
+    [
+     61.0,
+     2.0
+    ]
+   ],
+   "unit": "",
+   "legend": [
+    {
+     "color": "#9fb3c8",
+     "label": "Till (boulder clay)"
+    },
+    {
+     "color": "#e8c36a",
+     "label": "Glacial sand and gravel"
+    },
+    {
+     "color": "#7cc0b0",
+     "label": "River alluvium, terraces and lake beds"
+    },
+    {
+     "color": "#6b4f3a",
+     "label": "Peat"
+    },
+    {
+     "color": "#f3e6a2",
+     "label": "Raised beaches and blown sand"
+    },
+    {
+     "color": "#d39a6a",
+     "label": "Clay-with-flints, brickearth, crag"
+    },
+    {
+     "color": "#b05050",
+     "label": "Landslip"
+    }
+   ],
+   "note": "Loose deposits left on top of the bedrock, mostly by the ice ages: boulder clay, sands and gravels, river silts, peat and old beaches. Where none is shown the bedrock is at or near the surface. Great Britain only.",
+   "sources": [
+    {
+     "short": "BGS Geology 625k superficial deposits",
+     "licence": "OGL v3.0",
+     "url": "https://www.bgs.ac.uk/datasets/bgs-geology-625k-digmapgb/",
+     "citation": "British Geological Survey (2025) BGS Geology 625k (DiGMapGB-625) superficial deposits, V5. Contains British Geological Survey materials © UKRI 2025"
+    }
+   ],
+   "date": "mapped at 1:625,000"
+  },
+  {
+   "id": "cities",
+   "title": "Towns and cities by size",
+   "kind": "points",
+   "years": [
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1550,
+    1600,
+    1650,
+    1700,
+    1750,
+    1800,
+    1850,
+    1900,
+    1950,
+    2000
+   ],
+   "file": "layers/cities.json",
+   "unit": "thousand people",
+   "legend": [
+    {
+     "color": "#b5502b",
+     "label": "From a source"
+    },
+    {
+     "color": "#f1c9b8",
+     "label": "Estimated by Buringh"
+    }
+   ],
+   "note": "Estimated population of the 192 places in Buringh's database of European cities that became sizeable towns (by century to 1500, every 50 years after); small towns that never grew are not in it. Dot area follows population; pale dots are Buringh's estimates where no figure survives. Positions are as given in the database.",
+   "sources": [
+    {
+     "short": "Buringh 2020, European urban population 700–2000",
+     "licence": "CC0",
+     "url": "https://doi.org/10.17026/DANS-XZY-U62Q",
+     "citation": "Buringh, E. (2020) European urban population, 700–2000. DANS, doi:10.17026/DANS-XZY-U62Q; described in Buringh, E. (2021) Research Data Journal for the Humanities and Social Sciences 6(1):1–16, doi:10.1163/24523666-06010003"
+    }
+   ]
   }
  ]
 }

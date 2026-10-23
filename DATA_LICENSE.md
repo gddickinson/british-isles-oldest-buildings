@@ -82,6 +82,21 @@ bedrock geology: Contains British Geological Survey materials © UKRI 2025 (BGS 
 Public Sector Data (Geological Survey Ireland) licensed under CC BY 4.0 and UK public sector information (Geological
 Survey of Northern Ireland) licensed under the OGL v3.0 (Bedrock Geology 1:500,000); coalfields: Mining Remediation
 Authority (Coal Authority) Coalfield Consultation Areas, OGL v3.0.
+Built-up land: GHS-BUILT-S R2023A (Pesaresi 2023, European Commission JRC, doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA),
+© European Union, 1995–2025, reuse authorised with acknowledgement of the source. Land cover: generated using European
+Union's Copernicus Land Monitoring Service information (CORINE Land Cover 2000–2018, doi:10.2909/960998c1-1870-4e82-8051-6485205ebbac).
+Tree cover from pollen: Fyfe et al. 2021, PANGAEA doi:10.1594/PANGAEA.937075 (Githumbi et al. 2022), CC BY 4.0.
+Ancient woodland: © Natural England copyright, contains Ordnance Survey data © Crown copyright and database right
+(Ancient Woodland (England), OGL v3.0); © CNC/NRW, Ancient Woodland Inventory 2021, re-used under the OGL; Copyright
+NatureScot, contains Ordnance Survey data © Crown copyright and database right 2023 (OS Open Data licence) — shown only
+as the share of each ~1 × 2 km cell. Farmland grades: Natural England, Provisional Agricultural Land Classification
+(England), © Natural England copyright, contains Ordnance Survey data © Crown copyright and database right, OGL v3.0.
+Superficial deposits: Contains British Geological Survey materials © UKRI 2025 (BGS Geology 625k, OGL v3.0). Towns and
+cities by size: Buringh 2020 (CC0, below).
+
+Analysis notes ("What the graphs show together", `data/curated/change/notes.json`) quote short passages of published
+research with a link to each source and its locator; the quotes remain the authors' and publishers' work, used for
+citation and comment.
 
 | Source | Citation | Licence |
 |---|---|---|

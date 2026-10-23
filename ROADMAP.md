@@ -52,9 +52,14 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       their OCR), added to "Tea drunk per person" (2.00 lb in 1852, 2.90 in 1863); new graph "Tea retained for home
       consumption", UK 1846–1865 in million lb (No. 8 p. 21 and No. 13 pp. 38–39; 1851–60 agree), 46.7 → 97.8.
       The Abstract prints no per-head figure before 1852 and no yearly UK population before 1852, so none was made.
-- [ ] C2d2b Tea before 1846: 18th-century imports (1.2 million lb 1721 → 24 million 1801) and smuggling (4–7.5
-      million lb before 1784) as published estimates quoted with page (Schumpeter 1960, Mitchell 1988, Mui & Mui);
-      the totals graph continued after 1865 from the later editions' quantity tables.
+- [x] C2d2b1 (2026-10-23) "Tea retained for home consumption" continued to 1938 from the quantity tables of Nos. 26,
+      41, 42, 46, 48, 59, 69 and 83 (page images; edition, leaf, page per figure). Overlaps agree except 1865 (274 lb).
+      102.3 million lb in 1866, 202.4 in 1891, 305.5 in 1913, 277.4 in 1917, 388.0 in 1919, 487.7 in 1932, 431.8 in 1938.
+      Found on the way: the printed 1938 per-head figure (10.18 lb) does not fit the same edition's total (≈ 9.1 lb);
+      kept as printed, with a note.
+- [ ] C2d2b2 Tea before 1846: 18th-century imports (1.2 million lb 1721 → 24 million 1801) and smuggling (4–7.5
+      million lb before 1784) as published estimates quoted with page (Schumpeter 1960, Mitchell 1988, Mui & Mui).
+      Needs page access to those books (not open; check the Internet Archive lending copies first).
 - [ ] C2d3 Tea duty per lb and average import price (Abstract "Average prices" table: 9.36d a lb 1897 → 7.24d 1904).
 - [ ] C2d4 Tea after 1974: the Abstracts to 1975 are read; later years from MAFF/Defra's National Food Survey or
       HMRC HS 0902 (OGL), each with its definition; a citable source for tea rationing (1940–52).

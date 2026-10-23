@@ -576,3 +576,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   versions 60–64 (five batches, all 486 files, 11 old thumbnail shards removed): 251.8 MiB, 22,508 records. Static
   GUI review (pages, pop-ups, search): every check passed (two failures were the local test server starting late).
 - Tests 142 OK (2 new for dendro_add). Database backups in the session scratchpad.
+
+## 2026-10-23 (evening) — C2d2b1: tea retained for home consumption, 1846–1938
+- C2d2b split: C2d2b1 (totals after 1865, done) and C2d2b2 (18th-century published estimates; needs the books).
+- Read from the page images of the quantity tables "Articles retained for home consumption": No. 26 table 17
+  pp. 46–47 (1865–78), No. 41 table 28 p. 72 (1879), No. 42 table 29 p. 76 (1880–83), No. 46 table 30 p. 83
+  (1884–92), No. 48 table 30 p. 81 (1893–96), No. 59 table 42 pp. 162–163 (1897–1909), No. 69 table 36 pp. 102–103
+  (1910–24), No. 83 table 286 pp. 406–407 (1925–38, thousand lb). Blurred digits (1891 in No. 42; 1896–97 in No. 46)
+  settled from the next edition. Overlaps agree (1864, 1879–83, 1887, 1891, 1893–1900, 1910–11, 1924) except 1865:
+  No. 13 97,834,874 lb, No. 26 97,834,600 (latest used).
+- `tea_retained_uk`: 93 years, 46.7 million lb (1846) → 305.5 (1913) → 277.4 (1917) → 388.0 (1919) → 487.7 (1932,
+  duty-free) → 431.8 (1938). Notes: Irish Free State out from 1 April 1923; 1929–32 imports less re-exports.
+- Check: total ÷ per head gives a smooth population except 1919 (44.7 million against 46–47 either side; not
+  explained, both figures clearly printed) and 1938: the printed 10.18 lb per head would need 42.4 million people;
+  the total gives ≈ 9.1 lb. Kept as printed with a note on "Tea drunk per person" (with ≈ 9.1, the 1934–38 mean is
+  9.25 lb, close to the Ministry of Food's 9.3 — suggestive, not proof). Wartime editions (Nos. 84–88) carry no
+  such table.
+- Tests 142 OK; ui_check `change_tea` now also requires "432 million in 1938". Hosted copy not updated.
+- Next: C2d2b2 (needs the books), C2d3 (duty and prices, from the same scans), or C3.

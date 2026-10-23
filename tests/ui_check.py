@@ -40,7 +40,7 @@ PAGES = {
     "oldest_civic": ("/oldest", r"(?s)Oldest schools, hospitals and public services.*St Peter"),
     "oldest_tea": ("/oldest", r"(?s)The tea trade: merchants, firms.*Horniman.*Garraway"),
     "places_tea": ("/places?kind_label=Tea+merchant+or+firm", r"(?s)data-place=.*Horniman"),
-    "change_tea": ("/change", r"(?s)Tea retained for home consumption.*Tea drunk per person.*Ministry of Food.*Commutation Act cuts the tea duty"),
+    "change_tea": ("/change", r"(?s)Tea retained for home consumption.*432 million in 1938.*Tea drunk per person.*Ministry of Food.*Commutation Act cuts the tea duty"),
     "places_institutions": ("/places?kind_group=Public+institutions", r"data-place="),
     "quiz_menu": ("/quiz", r"Say the name"),
     "quiz_story": ("/quiz?q=story", r"▇▇▇"),

@@ -487,7 +487,7 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Next: C2b (tea imports and duty graph from the Statistical Abstract scans), then C3.
 
 ## 2026-10-23 — C2b: tea drunk per person, 1864–1938
-- OCR text of every Statistical Abstract volume to 1975 (115 items, ~180 MB) cached in `<cache>/stat_abstract/`
+- OCR text of every Statistical Abstract volume to 1975 (0 items, 106 MB) cached in `<cache>/stat_abstract/`
   (with each item's hOCR search text and page index, so a regex finds the page; page images by leaf).
 - The per-head table ("retained for home consumption per head of the total population") read from 13 page images
   in six editions; every figure compared with the OCR digits and, where editions overlap (1864–70, 1876–83,

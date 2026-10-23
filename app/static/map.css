@@ -97,7 +97,13 @@
 .time-slider .ts-hist rect { fill: var(--accent); opacity: .55; }
 .time-slider .ts-range { width: 100%; margin: 2px 0 0; accent-color: var(--accent); }
 .time-slider .ts-note { margin-top: 4px; line-height: 1.3; font-size: 11.5px; }
+.time-slider[hidden], .ts-show[hidden] { display: none; }
+.time-slider .ts-close { margin-left: 2px; padding: 0 4px; border: 0; background: none; color: var(--muted, inherit);
+  font-size: 18px; line-height: 1; cursor: pointer; }
+.time-slider .ts-close:hover { color: var(--ink); }
+.ts-show { position: absolute; z-index: 500; left: 50%; transform: translateX(-50%); bottom: 22px; box-shadow: var(--shadow); }
 @media (max-width: 760px) {
   .time-slider { width: calc(100% - 32px); bottom: 64px; padding: 6px 10px; }
   .time-slider .ts-note { display: none !important; }
+  .ts-show { bottom: 64px; }
 }

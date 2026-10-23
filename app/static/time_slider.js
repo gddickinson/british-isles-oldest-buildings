@@ -42,7 +42,8 @@ const TimeSlider = (() => {
   function mount(el, opts) {
     el.innerHTML = `<div class="ts-head"><label class="check"><input type="checkbox" class="ts-on"> <b>Through time</b></label>
         <span class="ts-year">—</span><button class="btn small ts-play" type="button" disabled>▶ Play</button>
-        <label class="check ts-maps"><input type="checkbox" class="ts-hist-map"> Map of the time</label></div>
+        <label class="check ts-maps"><input type="checkbox" class="ts-hist-map"> Map of the time</label>
+        <button class="ts-close" type="button" title="Hide the year slider" aria-label="Hide the year slider">×</button></div>
       <div class="ts-body"><div class="ts-histbox"></div>
         <input type="range" class="ts-range" min="0" max="1000" value="${toPos(1500)}" disabled aria-label="Year"></div>
       <small class="hint ts-note">What survives or is recorded, from the year each was begun or founded (until it closed,
@@ -77,6 +78,24 @@ const TimeSlider = (() => {
       redrawHist();
       update();
     });
+    // hide / show the whole control; hiding also switches it off so every record shows again
+    const show = document.createElement("button");
+    show.type = "button";
+    show.className = "btn small ts-show";
+    show.textContent = "🕰 Through time";
+    show.title = "Show the year slider";
+    el.after(show);
+    const visible = (v, keep = true) => {
+      el.hidden = !v;
+      show.hidden = v;
+      if (!v && on.checked) { on.checked = false; on.dispatchEvent(new Event("change")); }
+      if (keep) try { localStorage.setItem("bidb_time_slider", v ? "shown" : "hidden"); } catch (e) { /* private mode */ }
+    };
+    el.querySelector(".ts-close").addEventListener("click", () => visible(false));
+    show.addEventListener("click", () => visible(true));
+    let saved = null;
+    try { saved = localStorage.getItem("bidb_time_slider"); } catch (e) { /* private mode */ }
+    visible(saved !== "hidden", false);
     mapBox.addEventListener("change", () => { lastEra = null; if (on.checked) historic(current()); });
     range.addEventListener("input", update);
     play.addEventListener("click", () => {

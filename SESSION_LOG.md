@@ -427,3 +427,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - ROADMAP.md was over 500 lines: sections with every item done moved to ROADMAP_DONE.md; E3/E6 entries condensed
   (E6 now done, its leftovers blocked by licence or access); status refreshed.
 - SESSION_LOG.md split the same way: entries before 2026-10-21 → SESSION_LOG_2026-10-19.md.
+
+## 2026-10-23 — C1: sources for trade, enterprise and innovation
+- Three research agents (firms and institutions; economic series; innovations and laws) checked 72 sources: licence
+  with a verbatim quote, URLs (HTTP status on the day), years, regions, size, items served and a verdict →
+  `data/curated/trade/sources.json` + README (best source per item, what to ask, gaps); `bidb/trade_sources.py`
+  checks the file (tests in `tests/test_trade_sources.py`). Use 32, quote figures 17, link only 8, ask 12, left out 3.
+- I re-fetched the licence text of legislation.gov.uk, the CRO register and the Federico–Tena dataset (all as quoted)
+  and CDPA 1988 s.163 (Crown copyright in a published work: 50 years from publication), now quoted for the
+  Statistical Abstract scans.
+- Findings: Wikidata's "business" class includes pubs, schools and parish councils (C4 needs a class allow-list);
+  several QIDs assumed in the brief were wrong (correct ones in the README); the Bank of England millennium dataset
+  is for personal or internal non-commercial use only and has no bank counts; IPO's historical patent pages are gone
+  from gov.uk (read via the Wayback Machine); UCL's Legacies of British Slavery refuses scripts.
+- One agent downloaded ~105 MB against the 50 MB limit (Bank of England workbook, a 66 MB CSO table by mistake);
+  deleted. No personal data was sent to any service.
+- Next: C1b (user: permission requests), then C2 (tea as the first worked trade).

@@ -20,14 +20,14 @@ technologies shaped where people lived and worked, their towns, communities and 
 graphs, and on George's tea_explorer (`~/Documents/GitHub/tea_explorer`: tea history, 44 tea firms with founding
 years and towns), used read-only. Its texts carry no citations, so they are leads: each fact used gets a source,
 locator and quote. Rules as E1–E6: open licences or quoted published figures; estimates marked, models compared.
-- [ ] C1 Research the sources (agents, as E1; publisher, licence + quote, years, download): Wikidata businesses
-      (inception, dissolved, HQ, industry, founders); guilds and livery companies (charters, halls; Scottish
-      incorporated trades, Dublin's guilds); chartered trading companies (Merchant Adventurers, Staplers, Muscovy,
-      Levant, East India, Hudson's Bay, Royal African, South Sea); exchanges (Royal Exchange 1571, coffee-house
-      trading, London Stock Exchange 1801, Dublin 1799, provincial exchanges, Lloyd's, the Baltic, corn exchanges);
-      banks; patents (Woodcroft's indexes 1617–1852; UKIPO); Kanefsky's steam engines; occupational structure
-      1379–1911 (Cambridge Group); census occupations (I-CeM, likely aggregates only); Legacies of British Slavery
-      (UCL); Lloyd's Register; ONS/HMRC trade (OGL); Federico–Tena; price and wage series (Clark, Allen, GPIH).
+- [x] C1 (2026-10-23, three research agents: 72 sources in `data/curated/trade/sources.json`, summary and gaps in its
+      README, checked by `python -m bidb.trade_sources`; use 32, quote figures 17, link only 8, ask 12, left out 3)
+      Best finds: Wikidata 28,419 firms (48% with founding year and place; needs a class allow-list), Ireland's CRO
+      register (CC BY, incl. dissolved), Companies House Table A8 1939–, Federico–Tena trade 1800–1938 (CC BY), the
+      Statistical Abstract 1840–1938 scans (out of copyright; tea, shipping, banks), IPO patents 1852–1915 (OGL),
+      legislation.gov.uk Acts. Not open: the Bank of England millennium dataset, CAMPOP tables, Kanefsky's engines.
+- [ ] C1b (user) Ask permission (contacts in the README): Bank of England millennium dataset, CAMPOP occupations and
+      engines GIS, Kanefsky's engines, Clark, Allen, GPIH, MeasuringWorth, Legacies of British Slavery, Livery Committee.
 - [ ] C2 Tea as the first worked trade (from tea_explorer): the British and Irish tea firms (deduplicated; Twinings
       1706, Fortnum & Mason 1707, Tetley, Whittard, Taylors, Barry's, Typhoo, PG Tips, Yorkshire Tea, Clipper…)
       matched to Wikidata and placed at their first shop or works; dated events (Garway's coffee house sale 1657/58,

@@ -20,8 +20,17 @@ class OldestLists(unittest.TestCase):
                 self.assertIn(e["category"], spec["kinds"], f"{name}: {e['name']}")
 
     def test_record_ids_unique_within_lists(self):
-        ids = [oldest_lists.record_id(n, e) for n in oldest_lists.LISTS for e in oldest_lists.entries(n)]
+        ids = [oldest_lists.record_id(n, e) for n in oldest_lists.LISTS for e in oldest_lists.entries(n)
+               if not e.get("listed_in")]
         self.assertEqual(len(ids), len(set(ids)))
+
+    def test_listed_in_entries_resolve(self):
+        # an entry kept in another list (Twinings in the tea list) takes that list's entry, id and sources
+        for n in oldest_lists.LISTS:
+            for e in oldest_lists.entries(n):
+                if e.get("listed_in"):
+                    self.assertTrue(e.get("sources") and e.get("lat"), f"{n}: {e['name']}")
+        self.assertFalse([r for r in oldest_lists.records("tea") if r["id"] in ("Q1054692", "Q498563")])
 
 
 class Stages(unittest.TestCase):

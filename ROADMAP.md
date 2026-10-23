@@ -5,8 +5,8 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,657 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 94
-  series, 32 events, 22 map layers, 19 notes; 870 researched claims. Release db-2026-10-22-4 (81 MB).
+- Catalogue 22,039 records; 173,675 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 94
+  series, 47 events, 22 map layers, 19 notes; 888 researched claims (with the 18 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
   `dist/` before and after `python -m app.static_export`, batches under 64 MB, removals (null) first.
@@ -28,13 +28,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       legislation.gov.uk Acts. Not open: the Bank of England millennium dataset, CAMPOP tables, Kanefsky's engines.
 - [ ] C1b (user) Ask permission (contacts in the README): Bank of England millennium dataset, CAMPOP occupations and
       engines GIS, Kanefsky's engines, Clark, Allen, GPIH, MeasuringWorth, Legacies of British Slavery, Livery Committee.
-- [ ] C2 Tea as the first worked trade (from tea_explorer): the British and Irish tea firms (deduplicated; Twinings
-      1706, Fortnum & Mason 1707, Tetley, Whittard, Taylors, Barry's, Typhoo, PG Tips, Yorkshire Tea, Clipper…)
-      matched to Wikidata and placed at their first shop or works; dated events (Garway's coffee house sale 1657/58,
-      Catherine of Braganza 1662, the East India Company's Canton trade, the Commutation Act 1784, the Tea Act 1773,
-      the end of the Company's China monopoly 1833, Assam and Ceylon tea, the Mincing Lane auctions to 1998);
-      tea imports and duty as a graph with published estimates; tea places (coffee houses, tea warehouses, docks,
-      tea rooms). Every fact checked against a cited source before it goes in.
+- [x] C2a (2026-10-23) Tea firms and events: 16 merchants and firms and 4 tea-room chains (Jacksons 1700 [firm's
+      tradition, open], Twinings and Fortnum & Mason kept in the trade list, Horniman's 1826, Tetley 1837, Bewley's,
+      Brooke Bond, Lipton, Whittard, Taylors, Mazawattee, Thompson's, Barry's, Typhoo, Clipper, Ahmad; Kardomah, A.B.C.,
+      Lyons, Bettys) at their first shop where the source names it → `data/curated/trade/tea.json`, list `tea` of
+      bidb.oldest_lists (places in "Markets & trade", 18 evidence claims, section on the Oldest page); 15 dated tea
+      events 1657–1998 in `change/events.json` (theme Prosperity and work, `topic: tea`, citation with quote). All 47
+      quotes found by `bidb.evidence --check`. tea_explorer's 1873 Ceylon date corrected to 1875 by the source.
+- [ ] C2b Tea imports and duty as a graph: Statistical Abstract scans c.1840–1938 (figures transcribed by hand,
+      page per value), HMRC HS 0902 for the modern end, Schumpeter/Mitchell figures for the 18th century as quoted
+      estimates; smuggling estimates before 1784 (4–7.5 million lb a year) as published estimates.
+- [ ] C2c Tea places: coffee houses (Garraway's, the Sultaness Head), East India House and the Leadenhall Street
+      auctions, Mincing Lane's London Commercial Salerooms, tea warehouses and the docks (East India, London Docks),
+      Cutty Sark, Miss Cranston's tea rooms (Glasgow 1878); tea rationing 1940–52 needs a citable source (Wikipedia's
+      rationing article has no quotable dates).
 - [ ] C3 Guilds, exchanges and trading houses as places (kinds in "Markets & trade"): guildhalls and livery halls,
       merchant adventurers' and merchants' halls, cloth and wool halls, exchanges and stock exchanges, coffee
       houses, counting houses, trading-company headquarters and warehouses, banks with founding dates; the

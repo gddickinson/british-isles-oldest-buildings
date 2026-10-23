@@ -1,0 +1,651 @@
+{
+ "about": "The tea trade of the isles (roadmap C2, 2026-10-23): tea merchants, firms and tea rooms placed at their first shop or works where the source names it, each with sources and exact quotes (checked by python -m bidb.evidence --check). Leads came from George's tea_explorer project; every fact here is from the cited source. Entries with listed_in are kept in that list and only shown here.",
+ "entries": [
+  {
+   "category": "Tea merchant or firm",
+   "name": "Jacksons of Piccadilly",
+   "qid": "Q6117882",
+   "wikipedia_title": "Jacksons of Piccadilly",
+   "lat": 51.5086,
+   "lon": -0.1373,
+   "nation": "England",
+   "location": "171-172 Piccadilly, London (from 1905)",
+   "age_text": "firm's tradition 1700; at 171-172 Piccadilly by 1905",
+   "year": 1700,
+   "claim": "tea house and grocer, said to be founded by Robert Jackson in 1700",
+   "evidence": "The 1700 date is the firm's tradition and no contemporary record of it was found; the Survey of London records the shop front at No. 171 made for Jackson's in 1935. The brand now belongs to Twinings.",
+   "sources": [
+    {
+     "title": "Wikipedia: Jacksons of Piccadilly",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jacksons_of_Piccadilly",
+     "locator": "article text",
+     "quote": "founded by Robert Jackson in Piccadilly in 1700"
+    },
+    {
+     "title": "Wikipedia: Jacksons of Piccadilly",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jacksons_of_Piccadilly",
+     "locator": "article text",
+     "quote": "By 1905, Jacksons had moved to 171–172 Piccadilly."
+    },
+    {
+     "title": "Survey of London vols 29-30, St James Westminster pt 1: Piccadilly, South Side",
+     "author": "F. H. W. Sheppard (ed.), London County Council 1960 (British History Online)",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/survey-london/vols29-30/pt1/pp251-270",
+     "locator": "Piccadilly, South Side",
+     "quote": "171 was inserted in 1935 for Jackson's the grocers and tea suppliers"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Twinings, 216 Strand",
+   "year": 1706,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Fortnum & Mason",
+   "year": 1770,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Horniman's Tea",
+   "qid": "Q5904394",
+   "wikipedia_title": "Hornimans",
+   "lat": 50.70037,
+   "lon": -1.2952,
+   "nation": "England",
+   "location": "Newport, Isle of Wight",
+   "age_text": "1826, Newport (Isle of Wight); London from 1852",
+   "year": 1826,
+   "claim": "John Horniman's tea business, the first to sell tea in sealed packets of known weight and brand",
+   "evidence": "Founded by John Horniman at Newport in 1826 and moved to London in 1852 to be near the bonded warehouses of the London Docks; by 1891 the largest tea business in the world. Sold to J. Lyons in 1918. Frederick Horniman's fortune built the Horniman Museum.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hornimans",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hornimans",
+     "locator": "article text",
+     "quote": "was founded in 1826 in Newport, Isle of Wight, by trader John Horniman"
+    },
+    {
+     "title": "Wikipedia: Hornimans",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hornimans",
+     "locator": "article text",
+     "quote": "In 1852, he moved the company to London to be closer to the bonded warehouses of London Docks"
+    },
+    {
+     "title": "Wikipedia: Mazawattee Tea Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mazawattee_Tea_Company",
+     "locator": "article text",
+     "quote": "had been introduced in 1826 by John Horniman, who hit on the idea of packaging tea"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Tetley",
+   "qid": "Q2425276",
+   "wikipedia_title": "Tetley",
+   "lat": 53.64666,
+   "lon": -1.78225,
+   "nation": "England",
+   "location": "Huddersfield (the brothers' salt trade, 1822); London from 1856",
+   "age_text": "tea merchants 1837; London 1856",
+   "year": 1837,
+   "claim": "Yorkshire tea merchants; the first to sell tea bags in the United Kingdom (1953)",
+   "evidence": "Joseph and Edward Tetley sold salt from a pack horse in Huddersfield from 1822 and set up as tea merchants in 1837 (the town of the 1837 firm is not stated in the source; placed at Huddersfield); the firm moved to London in 1856. Owned by Tata since 2000.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tetley",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tetley",
+     "locator": "article text",
+     "quote": "In 1822, brothers Joseph and Edward Tetley sold salt from a pack horse in Huddersfield"
+    },
+    {
+     "title": "Wikipedia: Tetley",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tetley",
+     "locator": "article text",
+     "quote": "they set up as \"Joseph Tetley & Co.\" tea merchants in 1837"
+    },
+    {
+     "title": "Wikipedia: Tetley",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tetley",
+     "locator": "article text",
+     "quote": "Tetley was the first company to sell tea in tea-bags in the United Kingdom in 1953."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Bewley's",
+   "qid": "Q2900422",
+   "wikipedia_title": "Bewley's",
+   "lat": 53.34171,
+   "lon": -6.26036,
+   "nation": "Ireland",
+   "location": "Dublin (placed at the Grafton Street café, 1927)",
+   "age_text": "tea trade from 1835; company 1840; cafés from 1894",
+   "year": 1840,
+   "claim": "Dublin Quaker tea and coffee merchants",
+   "evidence": "Samuel Bewley and his son Charles landed a cargo of tea direct from Canton in 1835; the company dates itself from 1840. Cafés followed in South Great George's Street (1894), Westmoreland Street (1896) and Grafton Street (1927).",
+   "sources": [
+    {
+     "title": "Wikipedia: Bewley's",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bewley's",
+     "locator": "article text",
+     "quote": "located in Dublin and founded in 1840"
+    },
+    {
+     "title": "Wikipedia: Bewley's",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bewley's",
+     "locator": "article text",
+     "quote": "in 1835, Samuel Bewley and his son Charles landed 2,099 chests of tea shipped from Canton in China"
+    },
+    {
+     "title": "Wikipedia: Bewley's",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bewley's",
+     "locator": "article text",
+     "quote": "The flagship Grafton Street café was opened by Ernest Bewley in 1927."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Brooke Bond",
+   "qid": "Q1989093",
+   "wikipedia_title": "Brooke Bond",
+   "lat": 53.48248,
+   "lon": -2.24119,
+   "nation": "England",
+   "location": "23 Market Street, Manchester",
+   "age_text": "first shop 1869; PG Tips 1930",
+   "year": 1869,
+   "claim": "Arthur Brooke's tea business; maker of PG Tips",
+   "evidence": "Arthur Brooke opened his first teahouse at 23 Market Street, Manchester, in 1869; the firm launched Pre-Gest-Tea (PG Tips) in 1930, which led the British market by 1958.",
+   "sources": [
+    {
+     "title": "Wikipedia: Brooke Bond",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brooke_Bond",
+     "locator": "article text",
+     "quote": "In 1869, he opened his first teahouse at 23 Market Street, Manchester."
+    },
+    {
+     "title": "Wikipedia: Brooke Bond",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brooke_Bond",
+     "locator": "article text",
+     "quote": "Brooke Bond's most famous brand is PG Tips, launched under the name Pre-Gest-Tea in 1930."
+    },
+    {
+     "title": "Wikipedia: PG Tips",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/PG_Tips",
+     "locator": "article text",
+     "quote": "By 1958, PG Tips had risen from fourth to first place in the British tea market."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Lipton",
+   "qid": "Q874407",
+   "wikipedia_title": "Lipton",
+   "lat": 55.8608,
+   "lon": -4.2822,
+   "nation": "Scotland",
+   "location": "101 Stobcross Street, Anderston, Glasgow",
+   "age_text": "first shop 1871; tea from 1888-90",
+   "year": 1871,
+   "claim": "Thomas Lipton's grocery chain and tea brand",
+   "evidence": "Thomas Lipton opened his first provision shop at 101 Stobcross Street, Glasgow, in 1871; with some 300 shops he entered the tea trade in 1888 and bought tea gardens in Ceylon in 1890. The brand is now Dutch-based.",
+   "sources": [
+    {
+     "title": "Wikipedia: Thomas Lipton",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thomas_Lipton",
+     "locator": "article text",
+     "quote": "The following year he opened his first provision shop—Lipton's Market—at 101 Stobcross Street in the Anderston area of Glasgow."
+    },
+    {
+     "title": "Wikipedia: Thomas Lipton",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thomas_Lipton",
+     "locator": "article text",
+     "quote": "In 1888, when his empire had grown to 300 stores, he entered the tea trade and opened his tea-tasting office."
+    },
+    {
+     "title": "Wikipedia: Lipton",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lipton",
+     "locator": "article text",
+     "quote": "In 1890 Lipton purchased tea gardens in Ceylon"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Whittard of Chelsea",
+   "qid": "Q7996831",
+   "wikipedia_title": "Whittard of Chelsea",
+   "lat": 51.51421,
+   "lon": -0.10824,
+   "nation": "England",
+   "location": "Fleet Street, London",
+   "age_text": "tea shop 1886",
+   "year": 1886,
+   "claim": "Walter Whittard's tea shop",
+   "evidence": "Walter Whittard opened a tea shop in Fleet Street in 1886; the firm stayed in his family until 1973.",
+   "sources": [
+    {
+     "title": "Wikipedia: Whittard of Chelsea",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whittard_of_Chelsea",
+     "locator": "article text",
+     "quote": "The company was started by Walter Whittard, who opened a tea shop in Fleet Street in 1886"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Taylors of Harrogate",
+   "qid": "Q2397938",
+   "wikipedia_title": "Bettys and Taylors of Harrogate",
+   "lat": 53.99286,
+   "lon": -1.54266,
+   "nation": "England",
+   "location": "Harrogate (based in the first Bettys tea room)",
+   "age_text": "1886; Yorkshire Tea 1977",
+   "year": 1886,
+   "claim": "tea and coffee blenders; makers of Yorkshire Tea",
+   "evidence": "Charles Edward Taylor and his brother founded CE Taylor & Co. in 1886; Bettys bought the firm in 1962 and launched Yorkshire Tea in 1977, the best-selling tea brand in Britain from 2019. The source does not say where the firm began; placed at its Harrogate home.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bettys and Taylors of Harrogate",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bettys_and_Taylors_of_Harrogate",
+     "locator": "article text",
+     "quote": "Taylors of Harrogate was founded in 1886 by Charles Edward Taylor and his brother"
+    },
+    {
+     "title": "Wikipedia: Yorkshire Tea",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yorkshire_Tea",
+     "locator": "article text",
+     "quote": "Taylors of Harrogate is based in Harrogate, Yorkshire, in the first Betty's tea room."
+    },
+    {
+     "title": "Wikipedia: Yorkshire Tea",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yorkshire_Tea",
+     "locator": "article text",
+     "quote": "It became the best-selling tea brand in Britain in 2019."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Mazawattee Tea Company",
+   "qid": "Q6798302",
+   "wikipedia_title": "Mazawattee Tea Company",
+   "lat": 51.50985,
+   "lon": -0.0767,
+   "nation": "England",
+   "location": "Tower Hill, London (from 1894)",
+   "age_text": "Densham firm from 1860s; Mazawattee 1887; Tower Hill building by 1894, bombed 1940",
+   "year": 1887,
+   "claim": "one of the most advertised Victorian tea firms; an early seller of packet Ceylon tea",
+   "evidence": "The Densham family's wholesale tea firm registered the Mazawattee name in January 1887 and built offices, warehouses and vaults at Tower Hill by 1894; the building was wrecked by bombing in 1940 and its cellars survive as Tower Vaults.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mazawattee Tea Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mazawattee_Tea_Company",
+     "locator": "article text",
+     "quote": "The Mazawattee Tea Company, founded in 1887 by the Densham family"
+    },
+    {
+     "title": "Wikipedia: Mazawattee Tea Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mazawattee_Tea_Company",
+     "locator": "article text",
+     "quote": "by 1894 Mazawattee had its own offices together with warehouses and vaults in a large building erected at the top of Tower Hill"
+    },
+    {
+     "title": "Wikipedia: Mazawattee Tea Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mazawattee_Tea_Company",
+     "locator": "article text",
+     "quote": "in late 1940 the Tower Hill building was bombed and wrecked"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Thompson's Tea (Punjana)",
+   "qid": "Q7260362",
+   "wikipedia_title": "Punjana",
+   "lat": 54.59639,
+   "lon": -5.93018,
+   "nation": "Northern Ireland",
+   "location": "Belfast",
+   "age_text": "1896; Punjana brand early 1950s",
+   "year": 1896,
+   "claim": "Belfast tea blenders",
+   "evidence": "Thompson's Tea was founded in Belfast in 1896; its Punjana brand (early 1950s) became Northern Ireland's best-selling tea. Placed in Belfast (street not given).",
+   "sources": [
+    {
+     "title": "Wikipedia: Punjana",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Punjana",
+     "locator": "article text",
+     "quote": "Thompson's Tea was founded in 1896"
+    },
+    {
+     "title": "Wikipedia: Punjana",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Punjana",
+     "locator": "article text",
+     "quote": "Punjana is a brand of tea produced by the Belfast-based tea company Thompson's Tea."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Barry's Tea",
+   "qid": "Q4863942",
+   "wikipedia_title": "Barry's Tea",
+   "lat": 51.89692,
+   "lon": -8.47302,
+   "nation": "Ireland",
+   "location": "Prince's Street, Cork",
+   "age_text": "1901",
+   "year": 1901,
+   "claim": "Cork tea merchants",
+   "evidence": "Founded by James J. Barry in Cork in 1901 and sold from a shop in Prince's Street until the 1960s, when the firm turned to wholesaling.",
+   "sources": [
+    {
+     "title": "Wikipedia: Barry's Tea",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barry's_Tea",
+     "locator": "article text",
+     "quote": "Until the 1960s, tea was sold from a shop in Prince's Street"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Typhoo",
+   "qid": "Q7861091",
+   "wikipedia_title": "Typhoo",
+   "lat": 52.48194,
+   "lon": -1.89621,
+   "nation": "England",
+   "location": "Birmingham (the Sumners' shop; street not given)",
+   "age_text": "Sumner business 1870; Typhoo 1903",
+   "year": 1903,
+   "claim": "tea launched by John Sumner Jr. in his family's Birmingham shop",
+   "evidence": "William Sumner and his son John founded a pharmacy and grocery business in Birmingham in 1870; John Sumner Jr. launched Typhoo there in 1903. Production moved to Moreton, Wirral, in 1978. Placed in central Birmingham.",
+   "sources": [
+    {
+     "title": "Wikipedia: Typhoo",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Typhoo",
+     "locator": "article text",
+     "quote": "In 1870, William and his son John Sumner founded a pharmacy/grocery business in Birmingham."
+    },
+    {
+     "title": "Wikipedia: Typhoo",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Typhoo",
+     "locator": "article text",
+     "quote": "It was launched in 1903 by John Sumner Jr. of Birmingham, England."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Clipper Teas",
+   "qid": "Q16627820",
+   "wikipedia_title": "Clipper Teas",
+   "lat": 50.80903,
+   "lon": -2.73916,
+   "nation": "England",
+   "location": "Beaminster, Dorset",
+   "age_text": "1984",
+   "year": 1984,
+   "claim": "among the first three UK firms with the Fairtrade Mark (1994)",
+   "evidence": "Started by Lorraine and Mike Brehme in 1984; one of the first three companies in the UK to receive the Fairtrade Mark (1994).",
+   "sources": [
+    {
+     "title": "Wikipedia: Clipper Teas",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clipper_Teas",
+     "locator": "article text",
+     "quote": "Clipper Tea was started in 1984 by Lorraine and Mike Brehme."
+    },
+    {
+     "title": "Wikipedia: Clipper Teas",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clipper_Teas",
+     "locator": "article text",
+     "quote": "In 1994, Clipper was one of the first three companies in the UK to receive the Fairtrade mark"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea merchant or firm",
+   "name": "Ahmad Tea",
+   "qid": "Q4033598",
+   "wikipedia_title": "Ahmad Tea",
+   "lat": 50.98284,
+   "lon": -1.38331,
+   "nation": "England",
+   "location": "Chandler's Ford, Hampshire (London until 2010)",
+   "age_text": "1986",
+   "year": 1986,
+   "claim": "British Iranian family tea firm",
+   "evidence": "Founded in 1986 by Rahim Afshar and his brothers; moved from London to Chandler's Ford in 2010.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ahmad Tea",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ahmad_Tea",
+     "locator": "article text",
+     "quote": "Ahmad Tea Limited was founded in 1986 by British Iranian businessman Rahim Afshar and his brothers"
+    },
+    {
+     "title": "Wikipedia: Ahmad Tea",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ahmad_Tea",
+     "locator": "article text",
+     "quote": "The company moved from London to a new headquarters in Chandler's Ford in 2010."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea shop or tea room",
+   "name": "Kardomah (Vey Brothers)",
+   "qid": "Q6369156",
+   "wikipedia_title": "Kardomah Cafés",
+   "lat": 53.40872,
+   "lon": -2.97779,
+   "nation": "England",
+   "location": "Pudsey Street, Liverpool",
+   "age_text": "tea dealers 1844; Kardomah brand 1887",
+   "year": 1844,
+   "claim": "Liverpool tea dealers whose Kardomah cafés spread across Britain",
+   "evidence": "The Vey Brothers began as tea dealers and grocers in Pudsey Street, Liverpool, in 1844; the Kardomah brand was first served at the Liverpool exhibition of 1887 and later named a chain of cafés.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kardomah Cafés",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kardomah_Cafés",
+     "locator": "article text",
+     "quote": "began in Pudsey Street, Liverpool in 1844 as the Vey Brothers teadealers and grocers"
+    },
+    {
+     "title": "Wikipedia: Kardomah Cafés",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kardomah_Cafés",
+     "locator": "article text",
+     "quote": "The Kardomah brand of tea was first served at the Liverpool colonial exhibition of 1887"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea shop or tea room",
+   "name": "Aerated Bread Company tea shop",
+   "qid": "Q4687954",
+   "wikipedia_title": "Aerated Bread Company",
+   "lat": 51.51171,
+   "lon": -0.07913,
+   "nation": "England",
+   "location": "courtyard of Fenchurch Street station, London",
+   "age_text": "tea shop 1864; tea rooms from the 1870s",
+   "year": 1864,
+   "claim": "the A.B.C. chain, whose tea rooms were among the first in London",
+   "evidence": "The Aerated Bread Company (1862) opened a shop selling tea in the courtyard of Fenchurch Street station in 1864, followed by tea rooms in the 1870s.",
+   "sources": [
+    {
+     "title": "Wikipedia: Aerated Bread Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aerated_Bread_Company",
+     "locator": "article text",
+     "quote": "opening a shop selling tea in the courtyard of London's Fenchurch Street Railway Station in 1864"
+    },
+    {
+     "title": "Wikipedia: Aerated Bread Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aerated_Bread_Company",
+     "locator": "article text",
+     "quote": "In 1864 it opened a shop selling tea and other groceries, followed in the 1870s by tea rooms."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea shop or tea room",
+   "name": "Lyons teashops",
+   "qid": "Q6106384",
+   "wikipedia_title": "J. Lyons and Co.",
+   "lat": 51.5098,
+   "lon": -0.135,
+   "nation": "England",
+   "location": "Piccadilly, London (first teashop; number not given)",
+   "age_text": "first teashop 1894; chain from 1909",
+   "year": 1894,
+   "claim": "J. Lyons & Co.'s chain of about 200 teashops",
+   "evidence": "J. Lyons & Co. (1884) opened its first teashop in Piccadilly in 1894 and from 1909 built a chain of about 200; it bought Horniman's in 1918 and Tetley in 1973.",
+   "sources": [
+    {
+     "title": "Wikipedia: J. Lyons and Co.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/J._Lyons_and_Co.",
+     "locator": "article text",
+     "quote": "In 1894 the company started a teashop in Piccadilly, London, and from 1909 developed this into a chain of teashops which would ultimately number around 200 locations."
+    },
+    {
+     "title": "Wikipedia: J. Lyons and Co.",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/J._Lyons_and_Co.",
+     "locator": "article text",
+     "quote": "In 1918, to increase sales in northern England, Lyons bought the old established tea company Horniman & Sons."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Tea shop or tea room",
+   "name": "Bettys Café Tea Rooms",
+   "qid": null,
+   "wikipedia_title": "Bettys and Taylors of Harrogate",
+   "lat": 53.99286,
+   "lon": -1.54266,
+   "nation": "England",
+   "location": "1 Parliament Street, Harrogate",
+   "age_text": "1919",
+   "year": 1919,
+   "claim": "Frederick Belmont's tea room, the first of the Bettys chain",
+   "evidence": "Frederick Belmont, a Swiss confectioner, opened the first Bettys tea room in Harrogate in 1919.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bettys and Taylors of Harrogate",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bettys_and_Taylors_of_Harrogate",
+     "locator": "article text",
+     "quote": "was opened in Harrogate by the Swiss confectioner Frederick Belmont in 1919"
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

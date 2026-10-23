@@ -15,6 +15,9 @@ age claim, how well it is established, sources with exact quotes and a verdict):
             -> "Infrastructure & utilities" (with bidb.trade_works)
   sport   - oldest football, rugby, cricket and golf clubs and grounds, racecourses, stadiums, other venues and
             clubs -> "Sport & leisure" (with bidb.sports)
+  tea     - the tea trade (roadmap C2): tea merchants and firms, tea shops and tea rooms, oldest first
+            (`data/curated/trade/tea.json`) -> "Markets & trade"; an entry with `listed_in` (Twinings, Fortnum &
+            Mason) stays a place of that list and is only shown here
   civic   - oldest schools, universities, hospitals, post offices, courts, police and fire stations, town halls
             and other public institutions -> "Public institutions" (with bidb.institutions)
 An entry whose Wikidata item is already a catalogue building stays there; one already a place moves to the
@@ -58,6 +61,9 @@ LISTS = {
                         "Oldest court or courthouse": "pio_court", "Oldest police or fire station": "pio_police",
                         "Oldest town hall or seat of government": "pio_civic",
                         "Oldest other public institution": "pio_other"}},
+    "tea": {"group": "Markets & trade", "prefix": "tea", "title": "The tea trade: oldest merchants, firms and tea rooms",
+            "file": "trade/tea.json",
+            "kinds": {"Tea merchant or firm": "tea_firm", "Tea shop or tea room": "tea_room"}},
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}
@@ -65,22 +71,35 @@ KINDS = tuple(KIND_LABEL)
 
 
 def path(name):
-    return DATA_DIR / "curated" / f"oldest_{name}.json"
+    return DATA_DIR / "curated" / LISTS[name].get("file", f"oldest_{name}.json")
 
 
 def slug(text):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", text.lower())).strip("-")[:60]
 
 
-def entries(name):
+def _read(name):
     try:
         return json.loads(path(name).read_text())["entries"]
     except (FileNotFoundError, ValueError, KeyError):
         return []
 
 
+def entries(name):
+    """The list's entries; one with `listed_in` takes that list's entry of the same name (marked `listed_in`)."""
+    out = []
+    for e in _read(name):
+        if e.get("listed_in"):
+            other = next((x for x in _read(e["listed_in"]) if x["name"] == e["name"]), None)
+            if other is None:
+                continue
+            e = {**other, "category": e["category"], "listed_in": e["listed_in"]}
+        out.append(e)
+    return out
+
+
 def record_id(name, e):
-    return e.get("qid") or f"{LISTS[name]['prefix']}-{slug(e['name'])}"
+    return e.get("qid") or f"{LISTS[e.get('listed_in') or name]['prefix']}-{slug(e['name'])}"
 
 
 def claims():
@@ -88,7 +107,7 @@ def claims():
     out = []
     for name in LISTS:
         for e in entries(name):
-            if e.get("sources"):
+            if e.get("sources") and not e.get("listed_in"):
                 out.append({"id": f"{name}-{slug(e['name'])}", "record": record_id(name, e), "name": e["name"],
                             "field": "age", "claim": f"{e.get('claim') or ''}. {e.get('evidence') or ''}".strip(". "),
                             "value": e.get("age_text"), "verdict": e.get("verdict") or "open",
@@ -123,7 +142,7 @@ def records(name):
     spec = LISTS[name]
     out = []
     for e in entries(name):
-        if e.get("lat") is None:
+        if e.get("lat") is None or e.get("listed_in"):
             continue
         kind = spec["kinds"].get(e["category"])
         rid = record_id(name, e)

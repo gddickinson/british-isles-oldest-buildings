@@ -451,3 +451,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   building-gen (MIT, 4 of 29 types implemented, glTF) to be used only where checked as accurate, labelled as an
   illustration.
 - ROADMAP.md was at 500 lines: the finished research-track items R0–R8 moved to ROADMAP_DONE.md.
+
+## 2026-10-23 — C2a: tea firms and tea events
+- C2 split into C2a (firms and events, done), C2b (imports and duty graph, hand transcription) and C2c (tea places).
+- tea_explorer's 44 firms and history text used as leads only. 16 British and Irish tea merchants and firms and 4
+  tea-room chains, each placed at its first shop where the source names it (otherwise the town, said so in
+  `location`), with 1–3 sources and exact quotes → `data/curated/trade/tea.json`, read as list `tea` by
+  bidb.oldest_lists (kinds `tea_firm`, `tea_room` in "Markets & trade"; 18 places, 18 evidence claims; section "The
+  tea trade" on the Oldest page). Twinings and Fortnum & Mason stay in the trade list (`listed_in`), so the tea list
+  shows them without a second place.
+- Verdicts: Jacksons of Piccadilly 1700 is the firm's tradition (open; the Survey of London only has its 1935 shop
+  front at No. 171); Fortnum & Mason stays at c.1770 (corrected earlier). tea_explorer's "first Ceylon tea export
+  1873" is 1875 in the source. Tetley's and Taylors' founding towns are not in the sources; placed at Huddersfield
+  and Harrogate with that said.
+- 15 tea events 1657–1998 in `change/events.json` (Garway's 1657, first advertisement 1658, Catherine of Braganza
+  1662, first Company import 1669, London tea auctions 1679–1998, Tea Act 1773, Commutation Act 1784, packet tea
+  1826, end of the monopoly 1834, Assam tea 1839, A.B.C. 1864, Great Tea Race 1866, Ceylon tea 1875, tea bags 1953).
+- Every quote was checked against the fetched article text while writing and again by `bidb.evidence --check --new`
+  (all 47 found). Grace's Guide refuses scripts; firm websites gave nothing quotable.
+- Tests: oldest-list ids unique apart from `listed_in` entries, which must resolve (140 tests OK); ui_check pages
+  `oldest_tea`, `places_tea`, `change_tea`. Restarted the GUI server on port 5050 to load the new list.
+- Next: C2b (tea imports and duty graph) or C2c (tea places).

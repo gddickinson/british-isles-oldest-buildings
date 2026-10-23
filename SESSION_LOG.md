@@ -594,3 +594,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   such table.
 - Tests 142 OK; ui_check `change_tea` now also requires "432 million in 1938". Hosted copy not updated.
 - Next: C2d2b2 (needs the books), C2d3 (duty and prices, from the same scans), or C3.
+
+## 2026-10-23 (late) — C2d3: tea prices and tea duty
+- "Price of imported tea" (`tea_price_uk`, d. a lb, 1865–1919): the Abstract's "Average prices of the undermentioned
+  articles imported", read from the page images of No. 27 p. 104 (1865–67), No. 30 pp. 108–109 (1868–82), No. 45
+  p. 154 (1883), No. 46 pp. 156–157 (1884–96), No. 59 pp. 272–273 (1897–1904), No. 66 pp. 266–267 (1905–19). Overlaps
+  (1868–72, 1884–90, 1897–98, 1905–11) agree to the hundredth of a penny. 1865–70 "from computed values", 1871 on "from
+  declared values". 19.88d in 1865 → 12.58 (1882) → 7.20 (1902) → 9.18 (1914) → 16.05 (1919). Before 1865 only prices
+  by country (No. 13 p. 37: China, India, Japan); from No. 67 only India and Ceylon / China — neither joined.
+- "Duty on tea" (`tea_duty_uk`, full rate) with the Empire rate (`tea_duty_empire_uk`) as a second line, drawn as steps
+  (two rows in the year of a change): 6d (tariff 31 May 1874, No. 21 p. 15; also May 1875 and Aug. 1889 by OCR) → 4d
+  1 May 1890 (No. 50 p. 20) → 6d 6 Mar. 1900 → 8d 20 Apr. 1904 → 6d 1 July 1905 → 5d 14 May 1906 (No. 59 pp. 15–18) →
+  8d 18 Nov. 1914 → 1s 22 Sept. 1915 (No. 70 pp. 127, 129) → Empire preference from 2 June 1919 (p. 132; five-sixths in
+  the 1 July 1921 tariff, No. 67 p. 34) → "reduced by one-third" 15 May 1922 → "by one-half" 5 May 1924 (No. 70 pp. 136,
+  138) → repealed 22 Apr. 1929 (No. 82 p. 411 note b) → 4d / 2d 20 Apr. 1932 → 6d / 4d 22 Apr. 1936 → 8d / 6d 27 Apr.
+  1938 (No. 83 pp. 203, 207, 209). The Empire rate for 1922–29 is not printed in the editions read (left as a dotted gap);
+  No. 68 omits its tariff. Before 1874: the 1865 cut is listed without rates, so not shown.
+- Leads left as C2d3b: the 1930s "Tea—Indian average, London Auctions" wholesale price (No. 83), prices by origin
+  1908–22, duty before 1874 and after 1938.
+- Tests 142 OK; ui_check `change_tea` also requires both new graphs. Hosted copy not updated.
+- Next: C2d4, C2d3b, or C3 (guilds, exchanges and trading houses).

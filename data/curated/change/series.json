@@ -1255,6 +1255,53 @@
   "note": "Estimated supplies of tea moving into consumption per head of population, from the Ministry of Food (the Ministry of Agriculture, Fisheries and Food in the 1960 and later editions), as printed in the Annual Abstract of Statistics. Per head of the civilian population 1941-47; 1964-74 revised to the 1971 census. Editions revised single years by 0.1-0.2 lb; the latest edition read is used."
  },
  {
+  "id": "tea_price_uk",
+  "theme": "Prosperity and work",
+  "title": "Price of imported tea",
+  "region": "United Kingdom",
+  "unit": "d. a lb",
+  "unit_long": "pence per pound: average value of the tea imported, before duty",
+  "label": "Average price of tea imported (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_price_uk.csv",
+  "note": "The average price of all tea imported into the United Kingdom, in pence (old pence, 240 to the pound sterling) per lb, as the Board of Trade's Statistical Abstract printed it in its table of the average prices of articles imported: the value of the year's imports divided by their quantity, before duty. 1865-1870 are \"from computed values\" and 1871 onwards \"from declared values\" (the importers' own declarations), so the two parts are not strictly comparable. Read from the page images of Nos. 27, 30, 45, 46, 59 and 66; where editions overlap (1868-72, 1884-90, 1897-98, 1905-11) they agree to the hundredth of a penny. Before 1865 the Abstract gives tea prices only by country of origin (China, India, Japan), and after 1919 only for tea from India and Ceylon and from China, so neither is joined to this line. The price fell from 19.9d. a lb in 1865 to 12.6d. in 1882, 9.4d. in 1897 and 7.2d. in 1902, then rose with the war to 16.1d. in 1919."
+ },
+ {
+  "id": "tea_duty_uk",
+  "theme": "Prosperity and work",
+  "title": "Duty on tea",
+  "region": "United Kingdom",
+  "unit": "d. a lb",
+  "unit_long": "pence of customs duty per pound of tea (the full rate)",
+  "label": "Tea duty, full rate (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_duty_uk.csv",
+  "models": [
+   "tea_duty_empire_uk"
+  ],
+  "note": "The customs duty on a pound of tea, in old pence, from the Statistical Abstract's customs tariffs (the rate in force on a stated day: 31 May 1874 and 1 July 1921) and its tables of taxes reduced or increased (the date and the old and new rate of each change). Each change is drawn as a step in the year it was made. 6d. a lb on 31 May 1874; the tariffs of May 1875 and August 1889 also give 6d., and no change to the tea duty is listed between them. Cut to 4d. on 1 May 1890; 6d. from 6 March 1900; 8d. from 20 April 1904; 6d. from 1 July 1905; 5d. from 14 May 1906; 8d. from 18 November 1914; 1s. (12d.) from 22 September 1915. From 2 June 1919 tea from the British Empire paid less (\"Imperial Preference\"; five-sixths of the full rate in the 1921 tariff), shown as a second line. \"Reduced by one-third\" on 15 May 1922 (to 8d.) and \"by one-half\" on 5 May 1924 (to 4d.); repealed from 22 April 1929; from 20 April 1932 4d. on foreign and 2d. on Empire tea; from 22 April 1936 6d. and 4d.; from 27 April 1938 8d. and 6d. The Empire rate between 1922 and 1929 is not printed in the editions read and is left out (dotted). The duty before 1874 (it was cut in 1865, but the Abstract's table of changes gives no rates) is not shown."
+ },
+ {
+  "id": "tea_duty_empire_uk",
+  "theme": "Prosperity and work",
+  "title": "Duty on Empire tea",
+  "region": "United Kingdom",
+  "unit": "d. a lb",
+  "unit_long": "pence of customs duty per pound of tea from the British Empire (preferential rate)",
+  "label": "Tea duty on Empire tea (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_duty_empire_uk.csv",
+  "hidden": true,
+  "gap": 5,
+  "note": "The preferential rate of customs duty on tea consigned from and produced in the British Empire, from 2 June 1919 (five-sixths of the full rate, 10d. a lb, in the tariff of 1 July 1921), and from 1932 as printed in the Abstract's table of changes (2d., 4d. from 22 April 1936, 6d. from 27 April 1938). No Empire rate is printed for 1922-29 in the editions read; the duty was repealed on all tea from 22 April 1929 to 20 April 1932."
+ },
+ {
   "id": "homes_eng_est",
   "theme": "People and settlements",
   "title": "Homes in England, estimated before 1801",

@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 97
+- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 100
   series, 47 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -60,7 +60,15 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
 - [ ] C2d2b2 Tea before 1846: 18th-century imports (1.2 million lb 1721 → 24 million 1801) and smuggling (4–7.5
       million lb before 1784) as published estimates quoted with page (Schumpeter 1960, Mitchell 1988, Mui & Mui).
       Needs page access to those books (not open; check the Internet Archive lending copies first).
-- [ ] C2d3 Tea duty per lb and average import price (Abstract "Average prices" table: 9.36d a lb 1897 → 7.24d 1904).
+- [x] C2d3 (2026-10-23) Graphs "Price of imported tea" (average value per lb before duty, 1865–1919, from the Abstract's
+      average-price tables in Nos. 27, 30, 45, 46, 59, 66; computed values to 1870, declared values from 1871; 19.9d → 7.2d
+      in 1902 → 16.1d in 1919) and "Duty on tea" (steps at each dated change, 1874–1938, from the tariffs of 1874 and 1921
+      and the tables of taxes reduced or increased; Empire rate from 1919 as a second line, none printed for 1922–29).
+      Edition, leaf and page per row in `change/data/tea_price_uk.csv`, `tea_duty_uk.csv`, `tea_duty_empire_uk.csv`.
+- [ ] C2d3b Later and earlier tea prices and duty: "Tea—Indian average, London Auctions" (wholesale, No. 83 and the
+      1930s editions; a different measure), prices by origin (India and Ceylon, China) 1908–1922 (Nos. 67–68), the duty
+      before 1874 (the Abstract lists the 1865 cut without rates; needs the tariff Acts or another quoted source) and
+      after 1938 (wartime editions).
 - [ ] C2d4 Tea after 1974: the Abstracts to 1975 are read; later years from MAFF/Defra's National Food Survey or
       HMRC HS 0902 (OGL), each with its definition; a citable source for tea rationing (1940–52).
 - [x] C2c (2026-10-23) Tea places, kind `tea_trade` "Coffee house, auction, dock or ship of the tea trade": Garraway's

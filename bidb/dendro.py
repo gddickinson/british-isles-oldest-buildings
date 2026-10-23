@@ -33,7 +33,7 @@ COLUMNS = ["record_id", "location", "felled_from", "felled_to", "date_text", "me
 GENERIC = set("""the of and at in on a an st saint saints church chapel parish house hall farm farmhouse manor court
     barn cottage cottages old new priory abbey cathedral castle tower street road lane high green no main range wing
     roof north south east west rear front cross great little lower upper building buildings former site our lady
-    holy blessed virgin all mary's""".split())
+    holy blessed virgin all mary's hotel public pub tavern""".split())
 
 
 def _download():

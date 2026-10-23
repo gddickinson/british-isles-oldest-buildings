@@ -53,7 +53,7 @@ def run(cutoff):
     r_qids = titles_to_qids({e["wikipedia_title"] for e in research if e.get("wikipedia_title")})
     research_by_qid, research_unlinked = {}, []
     for e in research:
-        q = r_qids.get(e.get("wikipedia_title") or "")
+        q = e.get("wikidata") or r_qids.get(e.get("wikipedia_title") or "")
         if q and q in research_by_qid and research_by_qid[q]["name"] != e["name"]:
             research_unlinked.append(e)               # another building described in the same article (Ewelme)
         elif q:

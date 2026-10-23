@@ -416,7 +416,8 @@ const Basemap = (() => {
       esc(d.location)}${d.method === "tree-ring" ? "" : ", " + esc(d.method)}; ${esc(d.reference)})</span>`).join(" · ")}${rings.length > 4 ? ` · and ${rings.length - 4} more` : ""}
       <span class="hint">(<a href="https://doi.org/10.5284/1132568" target="_blank" rel="noopener">VAG Dendrochronology Database</a>, matched by name and place)</span>`);
     if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
-      esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book${domesdayEntry(dom.entry)}
+      esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book${domesdayEntry(dom.entry)}${!dom.itself && el.dataset.pub
+        ? ` <span class="hint">(the place, not the inn: no pubs are recorded in Domesday Book)</span>` : ""}
       <span class="hint">(<a href="https://opendomesday.org/${dom.od_id ? "place/" + esc(dom.od_id) + "/" : ""}" target="_blank" rel="noopener">Open Domesday</a>)</span>`);
     const old = await named;
     if (old && old.forms.length) lines.push(`<b>Old forms of the name</b> <span class="hint">(${esc(old.headname)})</span>: ${

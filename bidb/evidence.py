@@ -70,6 +70,21 @@ def validate(claims):
     return problems
 
 
+def _dataset_text(url):
+    """Text of a downloaded dataset cited by its DOI (its landing page does not hold the quoted notes), or None."""
+    if url not in DATASETS:
+        return None
+    return DATASETS[url]()
+
+
+def _vag_text():
+    from . import dendro
+    return "\n".join(f"{e['location']} {e['date_text']} {e['notes']}" for e in dendro.entries())
+
+
+DATASETS = {"https://doi.org/10.5284/1132568": _vag_text}     # VAG Dendrochronology Database (bidb.dendro)
+
+
 def check(log=print, only_new=False):
     """Fetch every source again and record whether its quote is there (only_new: just the claims the last
     check has not seen, kept with its results)."""
@@ -81,9 +96,12 @@ def check(log=print, only_new=False):
         res = []
         for s in c["sources"]:
             url = s.get("url")
-            if url and url not in texts:
-                texts[url] = source_text(url)
-                time.sleep(SLOW_HOSTS.get(url.split("/")[2], 0.5))
+            if not url:                               # a print or paywalled source: nothing to fetch
+                res.append("no-link")
+                continue
+            if url not in texts:
+                texts[url] = _dataset_text(url) or source_text(url)
+                time.sleep(0 if url in DATASETS else SLOW_HOSTS.get(url.split("/")[2], 0.5))
             text = texts.get(url)
             res.append("unreachable" if text is None else "quote-found" if quote_found(s["quote"], text) else "quote-missing")
         out[c["id"]] = {"sources": res, "checked": time.strftime("%Y-%m-%d")}

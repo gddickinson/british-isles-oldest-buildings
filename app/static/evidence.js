@@ -5,7 +5,7 @@ const Evidence = (() => {
   const all = () => (ALL = ALL || api("/api/evidence").catch(() => ({})));
   const KIND = { primary: "Primary source", listing: "Heritage listing", secondary: "History or report", reference: "Reference work" };
   const CHECK = { "quote-found": ["✓ quote found in the source", "verify-ok"], "quote-missing": ["✗ quote not found", "verify-bad"],
-                  unreachable: ["source unreachable", "verify-bad"] };
+                  unreachable: ["source unreachable", "verify-bad"], "no-link": ["no link: quote not checked automatically", ""] };
   const VERDICT = { kept: "Catalogue value confirmed", corrected: "Catalogue corrected", open: "Still open" };
   const source = (s) => {
     const [check, cls] = CHECK[s.check] || ["not checked yet", ""];

@@ -182,7 +182,7 @@ function renderDetail(b, inModal) {
       <div class="timeline-box" data-timeline="${esc(b.id)}"></div>
       <div class="then-box" data-then="${esc(b.id)}"></div>
       <div class="evidence-box" data-evidence="${esc(b.id)}"></div>
-      ${b.lat != null ? `<p class="getting-there" data-transport="${b.lat},${b.lon}" data-visit="${esc(b.id)}"></p>` : ""}
+      ${b.lat != null ? `<p class="getting-there" data-transport="${b.lat},${b.lon}" data-visit="${esc(b.id)}"${b.category === "Public house / inn" ? ' data-pub="1"' : ""}></p>` : ""}
       <div class="links">${detailLinks(b)}${inModal ? `<a class="ext" href="${buildingUrl(b.id)}">Permalink</a>` : ""}</div>
       ${b.lat != null ? '<div id="detail-map" class="detail-map"></div>' : ""}
       <div id="detail-plan"></div>

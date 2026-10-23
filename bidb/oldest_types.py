@@ -112,7 +112,8 @@ def refresh_claims(log=print):
     conn.execute("PRAGMA busy_timeout = 120000")
     n = dated = 0
     for e in research_entries():
-        match = ("oldest_of_type = ? AND (wikipedia_title = ? OR name = ?)", (e.get("type"), e.get("wikipedia_title"), e.get("name")))
+        match = ("oldest_of_type = ? AND (wikipedia_title = ? OR name = ? OR id = ?)",
+                 (e.get("type"), e.get("wikipedia_title"), e.get("name"), e.get("wikidata")))
         n += conn.execute(f"UPDATE buildings SET type_claim = ? WHERE {match[0]}", (type_claim_text(e), *match[1])).rowcount
         for rid, text, nation in conn.execute(f"SELECT id, date_text, nation FROM buildings WHERE date_source = "
                                               f"'Research (claimed date)' AND {match[0]}", match[1]).fetchall():

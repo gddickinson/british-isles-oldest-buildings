@@ -532,3 +532,27 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - A duty history (rates 1853–65) went into the new graph's note from memory and was taken out again before commit.
 - Tests 140 OK; ui_check `change_tea` now also requires the new graph. Hosted copy not updated.
 - Next: C2d2b, C2d3 (duty and prices), or C3.
+
+## 2026-10-23 — Oldest pubs: James Wright's list (Guardian, 23 Oct 2026)
+- Wright (buildings archaeologist, for Historic England) names the George Inn, Norton St Philip as England's
+  oldest pub and lists 12 medieval inns; none of the two dozen "oldest pub" claimants is close.
+- Research file (`oldest_by_type.json`, Inn / coaching inn): all 12 as examples, with sources; claimants'
+  notes (Fighting Cocks, Bingley Arms, Trip to Jerusalem, Skirrid) give Wright's verdict. 19 evidence claims
+  (Guardian quotes, VAG tree-ring notes, list entries, Morning Advertiser 2024), 16 date corrections.
+- Dates: George Inn 1375 (late C14; front and roof 1430–32); New Inn 1432 (tree-ring, was 1450); Angel and
+  Royal 1375 (list entry, was Wikidata's 1301; Wright c. 1450); Mermaid Inn 1475 (was the claimed 1156);
+  Skirrid 1650 (was the claimed 1110); Old George, Salisbury 1366 and Red Lion, Colchester 1470 (both had no year).
+- 8 pubs added without a rebuild (`bidb/research_add.py`): Bull Ludlow, King's Head Shrewsbury (1403–04 by
+  tree-ring; the Guardian's 1426/1430–31 are the database's dates for Wyle Cop buildings), White Hart Hook,
+  George Dorchester-on-Thames, Angel Andover, King's Head Aylesbury, Saracen's Head Southwell, George Odiham;
+  George & Pilgrims, Glastonbury was in the catalogue and got its date and note. Research entries may carry a
+  `wikidata` key (build and `refresh_claims` use it).
+- `bidb.dendro`: "hotel", "public", "pub", "tavern" no longer distinguish a name (4 new matches: Saracen's
+  Head, King's Head). Not matched: White Hart Hook (the VAG grid reference is ~105 km out) and George Odiham
+  (322 m, over the 300 m limit for saints' names); their dates name the tree-ring dates anyway.
+- Detail views: pubs with a Domesday line say it is the place, not the inn (no pubs are in Domesday Book).
+- Evidence check: sources without a URL are "no link" (not "unreachable"); quotes cited to the VAG DOI are
+  checked in the downloaded database (29 of 29 checkable quotes found).
+- Tests 140 OK. Database backup before the changes in the session scratchpad. Hosted copy and bundled
+  database not updated.
+

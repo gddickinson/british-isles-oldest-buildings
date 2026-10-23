@@ -910,12 +910,12 @@
  },
  "Q7736175": {
   "name": "The George Inn, Norton St Philip",
-  "year_start": 1397,
-  "date_text": "14th–15th century",
-  "was": "late 13th century (1251)",
-  "evidence": "C14/C15.",
-  "source": "https://britishlistedbuildings.co.uk/101174953",
-  "reviewed": "2026-10-22"
+  "year_start": 1375,
+  "date_text": "late 14th century; front and roof 1430–32 (tree-ring)",
+  "was": "14th–15th century (1397)",
+  "evidence": "It has fabrics dating from the late 14th century.",
+  "source": "The Guardian, 23 October 2026 (Helena Horton, \"Which is really England's oldest pub? Tree-ring dating helps settle debate\")",
+  "reviewed": "2026-10-23"
  },
  "Q7754804": {
   "name": "The Old Bell Hotel",
@@ -1474,5 +1474,140 @@
   "evidence": "Probably C17; altered and re-faced c.1760",
   "source": "https://britishlistedbuildings.co.uk/101159140",
   "reviewed": "2026-10-22"
+ },
+ "Q13529244": {
+  "name": "Bull Hotel, Ludlow",
+  "year_start": 1400,
+  "date_text": "14th–15th century",
+  "was": "not in the catalogue",
+  "evidence": "Bull Hotel, Ludlow, Shropshire: 14th and 15th centuries.",
+  "source": "The Guardian, 23 October 2026 (Helena Horton, \"Which is really England's oldest pub? Tree-ring dating helps settle debate\")",
+  "reviewed": "2026-10-23"
+ },
+ "Q17550599": {
+  "name": "King's Head, Shrewsbury",
+  "year_start": 1403,
+  "date_text": "1403–04 (tree-ring)",
+  "was": "not in the catalogue",
+  "evidence": "Shrewsbury, Mardol, The King's Head: tree-ring date 1403-04 (VAG database)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-23"
+ },
+ "Q7753629": {
+  "name": "New Inn, Gloucester",
+  "year_start": 1432,
+  "date_text": "1432 (tree-ring)",
+  "was": "1450 (1450)",
+  "evidence": "Gloucester, New Inn, Northgate Street: tree-ring date 1432 (VAG database)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-23"
+ },
+ "Q26563000": {
+  "name": "White Hart Hotel, Hook",
+  "year_start": 1419,
+  "date_text": "1419–51 (tree-ring, north-east range)",
+  "was": "not in the catalogue",
+  "evidence": "Hook, London Road, The White Hart Hotel, North-East range: tree-ring date 1419-51 (VAG database)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-23"
+ },
+ "Q17549614": {
+  "name": "George Hotel, Dorchester-on-Thames",
+  "year_start": 1450,
+  "date_text": "mid 15th century",
+  "was": "not in the catalogue",
+  "evidence": "George Hotel, Dorchester-on-Thames, Oxfordshire: mid 15th century.",
+  "source": "The Guardian, 23 October 2026 (Helena Horton, \"Which is really England's oldest pub? Tree-ring dating helps settle debate\")",
+  "reviewed": "2026-10-23"
+ },
+ "Q17535444": {
+  "name": "Angel Inn, Andover",
+  "year_start": 1445,
+  "date_text": "1445–55",
+  "was": "not in the catalogue",
+  "evidence": "Inn, built by Winchester College in 1445-55.",
+  "source": "https://britishlistedbuildings.co.uk/101093460",
+  "reviewed": "2026-10-23"
+ },
+ "Q6410961": {
+  "name": "King's Head, Aylesbury",
+  "year_start": 1445,
+  "date_text": "1445–55",
+  "was": "not in the catalogue",
+  "evidence": "Kings Head, Aylesbury, Buckinghamshire: 1445-55.",
+  "source": "The Guardian, 23 October 2026 (Helena Horton, \"Which is really England's oldest pub? Tree-ring dating helps settle debate\")",
+  "reviewed": "2026-10-23"
+ },
+ "Q17531277": {
+  "name": "Angel and Royal",
+  "year_start": 1375,
+  "date_text": "late 14th century (claimed 1203; Wright: c. 1450)",
+  "was": "14th century (1301)",
+  "evidence": "Late C14, 2-storey, stone, stone slate roof, good medieval front to street",
+  "source": "https://britishlistedbuildings.co.uk/101062486",
+  "reviewed": "2026-10-23"
+ },
+ "Q1507597": {
+  "name": "George and Pilgrims, Glastonbury",
+  "year_start": 1461,
+  "date_text": "1461–83",
+  "was": "late 15th century (1451)",
+  "evidence": "George and Pilgrims Inn, Glastonbury, Somerset: 1461-83.",
+  "source": "The Guardian, 23 October 2026 (Helena Horton, \"Which is really England's oldest pub? Tree-ring dating helps settle debate\")",
+  "reviewed": "2026-10-23"
+ },
+ "Q17547762": {
+  "name": "Saracen's Head, Southwell",
+  "year_start": 1462,
+  "date_text": "1460s (tree-ring: south range 1462)",
+  "was": "not in the catalogue",
+  "evidence": "Dated by dendrochronology c1460, with early and late C19 and C20 alterations and additions.",
+  "source": "https://britishlistedbuildings.co.uk/101369925",
+  "reviewed": "2026-10-23"
+ },
+ "Q17534046": {
+  "name": "George Hotel, Odiham",
+  "year_start": 1474,
+  "date_text": "1474 (cross wing); main range 1486–87 (tree-ring)",
+  "was": "not in the catalogue",
+  "evidence": "Odiham, The George Inn: tree-ring dates 1474 (cross wing) and 1486/7 (main range) (VAG database)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-23"
+ },
+ "Q7751082": {
+  "name": "Mermaid Inn",
+  "year_start": 1475,
+  "date_text": "late 15th century (inn's claim: 1156)",
+  "was": "1156 (1156)",
+  "evidence": "A late C15 timber-framed building containing an inner courtyard",
+  "source": "https://britishlistedbuildings.co.uk/101251961",
+  "reviewed": "2026-10-23"
+ },
+ "Q7764647": {
+  "name": "Skirrid Mountain Inn",
+  "year_start": 1650,
+  "date_text": "17th century (inn's claim: 1110)",
+  "was": "1110 (1110)",
+  "evidence": "the present building is of mainly mid-late 17th century construction",
+  "source": "https://en.wikipedia.org/wiki/The_Skirrid_Inn",
+  "reviewed": "2026-10-23"
+ },
+ "Q17529708": {
+  "name": "The Old George Inn",
+  "year_start": 1366,
+  "date_text": "1366–71 (tree-ring, front parlour range)",
+  "was": "Not recorded (None)",
+  "evidence": "Salisbury, 13 High Street, The Old George Inn, front parlour range: tree-ring date 1366-71 (VAG database)",
+  "source": "https://doi.org/10.5284/1132568",
+  "reviewed": "2026-10-23"
+ },
+ "Q17536531": {
+  "name": "Red Lion Hotel",
+  "year_start": 1470,
+  "date_text": "c. 1470 (house; an inn from c. 1500)",
+  "was": "Not recorded (None)",
+  "evidence": "The original house was built circa 1470 and the remains of the hall and screens can be seen in the ground floor dining room.",
+  "source": "https://britishlistedbuildings.co.uk/101123599",
+  "reviewed": "2026-10-23"
  }
 }

@@ -81,10 +81,10 @@
    "name": "Skirrid Mountain Inn",
    "field": "date",
    "research": "examples:Public house|Skirrid Mountain Inn",
-   "claim": "Claimed to date from 1110 by tradition; the present building is mainly mid-to-late 17th century.",
-   "value": "1110 (tradition); building 17th century",
-   "verdict": "kept",
-   "assessment": "The early date is a claim; the research file already records it as tradition.",
+   "claim": "Claimed to date from 1110 by tradition; the present building is mainly mid-to-late 17th century. James Wright (Guardian, 23 October 2026) rejects the early claims.",
+   "value": "17th century (inn's claim: 1110)",
+   "verdict": "corrected",
+   "assessment": "The catalogue date now follows the evidence, not the claim. Wright's study of the pub claimants finds none of them close to being the oldest.",
    "sources": [
     {
      "title": "The Skirrid Inn",
@@ -93,9 +93,16 @@
      "url": "https://en.wikipedia.org/wiki/The_Skirrid_Inn",
      "locator": "article",
      "quote": "the present building is of mainly mid-late 17th century construction"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright on the claimants",
+     "quote": "Not one of the claimants to be the oldest pub (and there are over two dozen of them) are even vaguely close to being so in reality."
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-the-george-inn--southwark",
@@ -1749,10 +1756,10 @@
    "name": "Ye Olde Fighting Cocks",
    "field": "date",
    "research": "examples:Public house|Ye Olde Fighting Cocks",
-   "claim": "The listed building is a timber-framed octagon of 16th-century appearance; the 793 date is the pub's tradition, not the building's.",
+   "claim": "The listed building is a timber-framed octagon of 16th-century appearance; the 793 date is the pub's tradition, not the building's. James Wright (Guardian, 23 October 2026) rejects the early claims.",
    "value": "16th century (claimed 793)",
    "verdict": "corrected",
-   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim. Wright's study of the pub claimants finds none of them close to being the oldest.",
    "sources": [
     {
      "title": "Ye Olde Fighting Cocks, list entry 1347100",
@@ -1761,9 +1768,31 @@
      "url": "https://britishlistedbuildings.co.uk/101347100",
      "locator": "list description",
      "quote": "Octagonal, 2-storey timber framed building of C16 appearance"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright on the Fighting Cocks",
+     "quote": "Instead, the building started as a monastic dovecote, built around 1400."
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright on the Fighting Cocks",
+     "quote": "This date was probably not arrived at until 1926 when it appeared on a postcard."
+    },
+    {
+     "title": "Myth buster aims to reveal the truth about England's oldest pubs",
+     "author": "Ed Bedington, Morning Advertiser",
+     "kind": "secondary",
+     "url": "https://morningadvertiser.co.uk/Article/2024/12/10/which-pub-is-englands-oldest",
+     "locator": "10 December 2024, on James Wright's Historic Building Mythbusting",
+     "quote": "was originally a dovecote in a different location"
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-bingley-arms",
@@ -1771,21 +1800,28 @@
    "name": "Bingley Arms",
    "field": "date",
    "research": "examples:Public house|Bingley Arms",
-   "claim": "The listed house carries a date plaque of 1738; the 953 founding date is the pub's tradition.",
+   "claim": "The listed house carries a date plaque of 1738; the 953 founding date is the pub's tradition. James Wright (Guardian, 23 October 2026) rejects the early claims.",
    "value": "1738 (date plaque; claimed 953)",
    "verdict": "corrected",
-   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim. Wright's study of the pub claimants finds none of them close to being the oldest.",
    "sources": [
     {
-     "title": "Bingley Arms, list entry 1313185",
+     "title": "The Bingley Arms, list entry 1313185",
      "author": "Historic England (reproduced by British Listed Buildings)",
      "kind": "listing",
      "url": "https://britishlistedbuildings.co.uk/101313185",
      "locator": "list description",
      "quote": "with mid C19 extension when S:M 1738 roof was raised"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright on Domesday claims",
+     "quote": "There are no pubs mentioned – at all – in the Domesday Book, so any pub claiming to be in it is having you on."
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-ye-olde-trip-to-jerusalem",
@@ -1793,29 +1829,21 @@
    "name": "Ye Olde Trip to Jerusalem",
    "field": "date",
    "research": "examples:Public house|Ye Olde Trip to Jerusalem",
-   "claim": "The pub is principally late-17th and 18th century, with rock-cut caves that may be medieval; its history as a pub is documented from 1760. The 1189 date is legend.",
+   "claim": "The pub is principally late-17th and 18th century, with rock-cut caves that may be medieval; its history as a pub is documented from 1760. The 1189 date is legend. James Wright (Guardian, 23 October 2026) rejects the early claims.",
    "value": "late 17th century, caves possibly medieval (claimed 1189)",
    "verdict": "corrected",
-   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim. Wright's study of the pub claimants finds none of them close to being the oldest.",
    "sources": [
     {
-     "title": "Ye Olde Trip to Jerusalem, list entry 1271192",
-     "author": "Historic England (reproduced by British Listed Buildings)",
-     "kind": "listing",
-     "url": "https://britishlistedbuildings.co.uk/101271192",
-     "locator": "list description",
-     "quote": "A public house, principally dating to the late-C17 and C18, extended in the C19"
-    },
-    {
-     "title": "Ye Olde Trip to Jerusalem, list entry 1271192",
-     "author": "Historic England (reproduced by British Listed Buildings)",
-     "kind": "listing",
-     "url": "https://britishlistedbuildings.co.uk/101271192",
-     "locator": "list description",
-     "quote": "Despite its legendary claim to be the oldest inn in England, its history as a public house appears to date to 1760"
+     "title": "Myth buster aims to reveal the truth about England's oldest pubs",
+     "author": "Ed Bedington, Morning Advertiser",
+     "kind": "secondary",
+     "url": "https://morningadvertiser.co.uk/Article/2024/12/10/which-pub-is-englands-oldest",
+     "locator": "10 December 2024, on James Wright's Historic Building Mythbusting",
+     "quote": "it isn't even the oldest pub in Nottingham, let alone the UK"
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-ye-olde-salutation-inn",
@@ -1889,10 +1917,10 @@
    "name": "Mermaid Inn",
    "field": "date",
    "research": "examples:Inn / coaching inn|Mermaid Inn",
-   "claim": "The listed building is late 15th-century timber framing; the listing says nothing about the claimed 1156 cellars.",
-   "value": "late 15th century building; cellars claimed 1156",
-   "verdict": "kept",
-   "assessment": "The official list description supports the research date.",
+   "claim": "The listed building is late 15th-century timber framing; the listing says nothing about the claimed 1156 cellars. James Wright (Guardian, 23 October 2026) rejects the early claims.",
+   "value": "late 15th century (inn's claim: 1156)",
+   "verdict": "corrected",
+   "assessment": "The catalogue date now follows the evidence, not the claim. Wright's study of the pub claimants finds none of them close to being the oldest.",
    "sources": [
     {
      "title": "Mermaid Inn, list entry 1251961",
@@ -1903,7 +1931,7 @@
      "quote": "A late C15 timber-framed building containing an inner courtyard"
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-angel-and-royal",
@@ -1911,10 +1939,10 @@
    "name": "Angel and Royal",
    "field": "date",
    "research": "examples:Inn / coaching inn|Angel and Royal",
-   "claim": "The listing dates the stone front to the late 14th century; 1203 is the inn's traditional founding as a hostel.",
-   "value": "late 14th century (claimed 1203)",
+   "claim": "Angel and Royal: late 14th century (claimed 1203; Wright: c. 1450). Claims to be one of the oldest inns in England; James Wright (2026) dates it c. 1450.",
+   "value": "late 14th century (claimed 1203; Wright: c. 1450)",
    "verdict": "corrected",
-   "assessment": "The official list description dates the surviving building differently; the research file now gives the listing date and keeps the claim as a claim.",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
    "sources": [
     {
      "title": "Angel and Royal, list entry 1062486",
@@ -1923,9 +1951,16 @@
      "url": "https://britishlistedbuildings.co.uk/101062486",
      "locator": "list description",
      "quote": "Late C14, 2-storey, stone, stone slate roof, good medieval front to street"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "Angel, Grantham, Lincolnshire: circa 1450."
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-the-george-inn--norton-st-philip",
@@ -1933,21 +1968,51 @@
    "name": "The George Inn, Norton St Philip",
    "field": "date",
    "research": "examples:Inn / coaching inn|The George Inn, Norton St Philip",
-   "claim": "The listing dates the inn to the 14th or 15th century.",
-   "value": "14th–15th century",
-   "verdict": "kept",
-   "assessment": "The official list description supports the research date.",
+   "claim": "The George Inn, Norton St Philip: late 14th century; front and roof 1430–32 (tree-ring). Named England's oldest pub by buildings archaeologist James Wright (Historic England, 2026): set up by the monks of Hinton Priory, in continuous service for over 600 years.",
+   "value": "late 14th century; front and roof 1430–32 (tree-ring)",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
    "sources": [
     {
-     "title": "The George Inn, Norton St Philip, list entry 1174953",
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "George Inn, Norton St Philip, Somerset: late 14th century and 1430-32."
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright on the George",
+     "quote": "this building has been in continuous service for over 600 years"
+    },
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Norton St Philip, The George Inn; dated 1430-32 (Vernacular Architecture 29, p. 124)",
+     "quote": "It is believed to have been built in the fourteenth century as an Inn or Guesthouse"
+    },
+    {
+     "title": "The George Inn, list entry 1174953",
      "author": "Historic England (reproduced by British Listed Buildings)",
      "kind": "listing",
      "url": "https://britishlistedbuildings.co.uk/101174953",
      "locator": "list description",
      "quote": "C14/C15."
+    },
+    {
+     "title": "Myth buster aims to reveal the truth about England's oldest pubs",
+     "author": "Ed Bedington, Morning Advertiser",
+     "kind": "secondary",
+     "url": "https://morningadvertiser.co.uk/Article/2024/12/10/which-pub-is-englands-oldest",
+     "locator": "10 December 2024, on James Wright's Historic Building Mythbusting",
+     "quote": "the pub with the claim to probably being the country's oldest"
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-new-inn--gloucester",
@@ -1955,13 +2020,28 @@
    "name": "New Inn, Gloucester",
    "field": "date",
    "research": "examples:Inn / coaching inn|New Inn, Gloucester",
-   "claim": "The listing dates the galleried inn to the mid 15th century.",
-   "value": "mid 15th century",
-   "verdict": "kept",
-   "assessment": "The official list description supports the research date.",
+   "claim": "New Inn, Gloucester: 1432 (tree-ring). Among the best-preserved medieval galleried inns; on James Wright's 2026 list of England's oldest pubs.",
+   "value": "1432 (tree-ring)",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
    "sources": [
     {
-     "title": "New Inn, Gloucester, list entry 1245714",
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Gloucester, New Inn, Northgate Street; dated 1432 (Vernacular Architecture 33, p. 79)",
+     "quote": "the dates are strongly indicative of a primary construction date for the New Inn"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "New Inn, Gloucester, Gloucestershire: 1432."
+    },
+    {
+     "title": "New Inn, list entry 1245714",
      "author": "Historic England (reproduced by British Listed Buildings)",
      "kind": "listing",
      "url": "https://britishlistedbuildings.co.uk/101245714",
@@ -1969,7 +2049,7 @@
      "quote": "Mid C15 with many later alterations and minor additions"
     }
    ],
-   "researched": "2026-10-21"
+   "researched": "2026-10-23"
   },
   {
    "id": "oldest-skara-brae",
@@ -12746,6 +12826,357 @@
     }
    ],
    "researched": "2026-10-22"
+  },
+  {
+   "id": "oldest-bull-hotel--ludlow",
+   "record": "Q13529244",
+   "name": "Bull Hotel, Ludlow",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|Bull Hotel, Ludlow",
+   "claim": "Bull Hotel, Ludlow: 14th–15th century. On James Wright's 2026 list of England's oldest pubs; he thinks further research could show it older than the George, Norton St Philip.",
+   "value": "14th–15th century",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "Bull Hotel, Ludlow, Shropshire: 14th and 15th centuries."
+    },
+    {
+     "title": "Bull Hotel, list entry 1219761",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101219761",
+     "locator": "list description",
+     "quote": "Parallel gable continues as 2-storey rear range C15 of 5 bays"
+    },
+    {
+     "title": "Myth buster aims to reveal the truth about England's oldest pubs",
+     "author": "Ed Bedington, Morning Advertiser",
+     "kind": "secondary",
+     "url": "https://morningadvertiser.co.uk/Article/2024/12/10/which-pub-is-englands-oldest",
+     "locator": "10 December 2024, on James Wright's Historic Building Mythbusting",
+     "quote": "with further research could pre-date the George"
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-king-s-head--shrewsbury",
+   "record": "Q17550599",
+   "name": "King's Head, Shrewsbury",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|King's Head, Shrewsbury",
+   "claim": "King's Head, Shrewsbury: 1403–04 (tree-ring). On James Wright's 2026 list of England's oldest pubs (dated there 1426, 1430–31, which the tree-ring database gives for other Wyle Cop buildings).",
+   "value": "1403–04 (tree-ring)",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Shrewsbury, Mardol, The King's Head; dated 1403-04 (Vernacular Architecture 26, p. 69)",
+     "quote": "Situated close to the Welsh bridge and the quayside, The King's Head is a three-storied structure"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "King's Head, Shrewsbury, Shropshire: 1426, 1430-31."
+    },
+    {
+     "title": "The King's Head Public House, list entry 1270680",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101270680",
+     "locator": "list description",
+     "quote": "Late C15."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-white-hart-hotel--hook",
+   "record": "Q26563000",
+   "name": "White Hart Hotel, Hook",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|White Hart Hotel, Hook",
+   "claim": "White Hart Hotel, Hook: 1419–51 (tree-ring, north-east range). On James Wright's 2026 list of England's oldest pubs; the list entry misses the medieval range.",
+   "value": "1419–51 (tree-ring, north-east range)",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Hook, London Road, The White Hart Hotel, North-East range; dated 1419-51 (Vernacular Architecture 50, p. 96)",
+     "quote": "This grade II coaching inn is listed as eighteenth century, but internal examination indicates that the north-east range has much earlier origins"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "White Hart Inn, Hook, Hampshire: 1419-51."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-george-hotel--dorchester-on-thames",
+   "record": "Q17549614",
+   "name": "George Hotel, Dorchester-on-Thames",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|George Hotel, Dorchester-on-Thames",
+   "claim": "George Hotel, Dorchester-on-Thames: mid 15th century. On James Wright's 2026 list of England's oldest pubs.",
+   "value": "mid 15th century",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "George Hotel, Dorchester-on-Thames, Oxfordshire: mid 15th century."
+    },
+    {
+     "title": "The George Hotel, list entry 1369118",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101369118",
+     "locator": "list description",
+     "quote": "Late C15/early C16."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-angel-inn--andover",
+   "record": "Q17535444",
+   "name": "Angel Inn, Andover",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|Angel Inn, Andover",
+   "claim": "Angel Inn, Andover: 1445–55. Purpose-built inn; on James Wright's 2026 list of England's oldest pubs.",
+   "value": "1445–55",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "The Angel Inn, list entry 1093460",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101093460",
+     "locator": "list description",
+     "quote": "Inn, built by Winchester College in 1445-55."
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "Angel Inn, Andover, Hampshire: 1445-55."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-king-s-head--aylesbury",
+   "record": "Q6410961",
+   "name": "King's Head, Aylesbury",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|King's Head, Aylesbury",
+   "claim": "King's Head, Aylesbury: 1445–55. National Trust-owned; on James Wright's 2026 list of England's oldest pubs.",
+   "value": "1445–55",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "Kings Head, Aylesbury, Buckinghamshire: 1445-55."
+    },
+    {
+     "title": "King's Head Inn, list entry 1160205",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101160205",
+     "locator": "list description",
+     "quote": "C15-16 and 17 and later."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-george-and-pilgrims--glastonbury",
+   "record": "Q1507597",
+   "name": "George and Pilgrims, Glastonbury",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|George and Pilgrims, Glastonbury",
+   "claim": "George and Pilgrims, Glastonbury: 1461–83. Built by Glastonbury Abbey for pilgrims; on James Wright's 2026 list of England's oldest pubs.",
+   "value": "1461–83",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "George and Pilgrims Inn, Glastonbury, Somerset: 1461-83."
+    },
+    {
+     "title": "George Hotel and Pilgrims' Inn, list entry 1345455",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101345455",
+     "locator": "list description",
+     "quote": "Late C15."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-saracen-s-head--southwell",
+   "record": "Q17547762",
+   "name": "Saracen's Head, Southwell",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|Saracen's Head, Southwell",
+   "claim": "Saracen's Head, Southwell: 1460s (tree-ring: south range 1462). On James Wright's 2026 list of England's oldest pubs.",
+   "value": "1460s (tree-ring: south range 1462)",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Saracen's Head Hotel, list entry 1369925",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101369925",
+     "locator": "list description",
+     "quote": "Dated by dendrochronology c1460"
+    },
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Southwell, Saracen's Head Inn, South Range; dated 1462 (Vernacular Architecture 20, p. 40)",
+     "quote": "South Range."
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "Saracen's Head, Southwell, Nottinghamshire: 1460s."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "oldest-george-hotel--odiham",
+   "record": "Q17534046",
+   "name": "George Hotel, Odiham",
+   "field": "date",
+   "research": "examples:Inn / coaching inn|George Hotel, Odiham",
+   "claim": "George Hotel, Odiham: 1474 (cross wing); main range 1486–87 (tree-ring). On James Wright's 2026 list of England's oldest pubs.",
+   "value": "1474 (cross wing); main range 1486–87 (tree-ring)",
+   "verdict": "corrected",
+   "assessment": "James Wright's list (Guardian, 23 October 2026) of pubs purpose-built as inns, in continuous service and with dated original fabric; tree-ring dates from the VAG database are preferred where they exist, then the list entry.",
+   "sources": [
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Odiham, The George Inn, Cross Wing; dated 1474, Main Range 1486/7 (Vernacular Architecture 26, p. 63)",
+     "quote": "It was called the George Inn in the mid-sixteenth century"
+    },
+    {
+     "title": "Which is really England's oldest pub? Tree-ring dating helps settle debate",
+     "author": "Helena Horton, The Guardian (quoting Dr James Wright, buildings archaeologist, for Historic England)",
+     "kind": "secondary",
+     "locator": "23 October 2026 (amended edition); Wright's list of oldest pubs",
+     "quote": "George Hotel, Odiham, Hampshire: 1486-87."
+    },
+    {
+     "title": "The George Hotel, list entry 1092149",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101092149",
+     "locator": "list description",
+     "quote": "C15, C16, C18 (licensed 1547)"
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "date-Q17529708",
+   "record": "Q17529708",
+   "name": "The Old George Inn",
+   "field": "date",
+   "claim": "The Old George Inn: 1366–71 (tree-ring, front parlour range).",
+   "value": "1366–71 (tree-ring, front parlour range)",
+   "verdict": "corrected",
+   "assessment": "The catalogue had no year; tree-ring dates and the list entry give the medieval date.",
+   "sources": [
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Salisbury, 13 High Street, The Old George Inn, Front Palour range; dated 1366-71",
+     "quote": "a roof with crown-post trusses with up-braces"
+    },
+    {
+     "title": "The Old George Inn, list entry 1242383",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101242383",
+     "locator": "list description",
+     "quote": "C14 and later."
+    }
+   ],
+   "researched": "2026-10-23"
+  },
+  {
+   "id": "date-Q17536531",
+   "record": "Q17536531",
+   "name": "Red Lion Hotel",
+   "field": "date",
+   "claim": "Red Lion Hotel: c. 1470 (house; an inn from c. 1500).",
+   "value": "c. 1470 (house; an inn from c. 1500)",
+   "verdict": "corrected",
+   "assessment": "The catalogue had no year; tree-ring dates and the list entry give the medieval date.",
+   "sources": [
+    {
+     "title": "Red Lion Hotel, list entry 1123599",
+     "author": "Historic England (reproduced by British Listed Buildings)",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101123599",
+     "locator": "list description",
+     "quote": "The original house was built circa 1470"
+    },
+    {
+     "title": "Dendrochronology Database (VA55)",
+     "author": "Vernacular Architecture Group, via the Archaeology Data Service",
+     "kind": "primary",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "Colchester, High Street, Red Lion Hotel, Southern Hall; dated 1475-77",
+     "quote": "The first surviving phase is the 'Southern Hall'"
+    }
+   ],
+   "researched": "2026-10-23"
   }
  ]
 }

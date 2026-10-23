@@ -12,7 +12,7 @@
      "claimed_date": "16th century (claimed 793)",
      "year": 1550,
      "evidence_date": "present building thought to be 16th-17th century (site possibly an 11th-century structure)",
-     "claim": "once listed by Guinness World Records as oldest pub in England; disputed",
+     "claim": "once listed by Guinness World Records as England's oldest pub; James Wright (2026): built c. 1400 as a monastic dovecote, a pub only from the early 19th century; 793 first appears on a 1926 postcard",
      "source": "https://en.wikipedia.org/wiki/Ye_Olde_Fighting_Cocks"
     },
     {
@@ -34,7 +34,7 @@
      "claimed_date": "1738 (claimed 953)",
      "year": 1738,
      "evidence_date": "present building much later (largely 18th century and later)",
-     "claim": "claims a brewhouse on the site from 953; folklore-level evidence",
+     "claim": "claims to be England's oldest pub (953); James Wright (2026) counts such claims as modern marketing, and no pubs are recorded in Domesday Book",
      "source": "https://en.wikipedia.org/wiki/The_Bingley_Arms"
     },
     {
@@ -42,10 +42,10 @@
      "wikipedia_title": "The Skirrid Inn",
      "location": "Llanfihangel Crucorney, Monmouthshire, Wales",
      "nation": "Wales",
-     "claimed_date": "1110",
-     "year": 1110,
+     "claimed_date": "17th century (claimed 1110)",
+     "year": 1650,
      "evidence_date": "present building largely 17th century",
-     "claim": "claims to be the oldest pub in Wales; early date is tradition",
+     "claim": "claims to be the oldest pub in Wales; the 1110 date is tradition, the present building mostly mid-late 17th century",
      "source": "https://en.wikipedia.org/wiki/The_Skirrid_Inn"
     },
     {
@@ -56,7 +56,7 @@
      "claimed_date": "late 17th century (claimed 1189)",
      "year": 1680,
      "evidence_date": "no evidence for 1189; building largely 17th century, cut into older sandstone caves",
-     "claim": "one of several pubs claiming to be England's oldest",
+     "claim": "one of several pubs claiming to be England's oldest; James Wright: stylistically 17th century, not even the oldest pub in Nottingham",
      "source": "https://en.wikipedia.org/wiki/Ye_Olde_Trip_to_Jerusalem"
     },
     {
@@ -110,25 +110,14 @@
    "category": "Public house / inn",
    "examples": [
     {
-     "name": "Mermaid Inn",
-     "wikipedia_title": "The Mermaid Inn, Rye",
-     "location": "Rye, East Sussex, England",
-     "nation": "England",
-     "claimed_date": "1156 (cellars)",
-     "year": 1156,
-     "evidence_date": "late C15 timber-framed building (list entry)",
-     "claim": "claims 12th-century origins",
-     "source": "https://en.wikipedia.org/wiki/The_Mermaid_Inn,_Rye"
-    },
-    {
      "name": "Angel and Royal",
      "wikipedia_title": "Angel and Royal",
      "location": "Grantham, Lincolnshire, England",
      "nation": "England",
      "claimed_date": "late 14th century (claimed 1203)",
      "year": 1375,
-     "evidence_date": "present stone frontage 15th century",
-     "claim": "claims to be one of the oldest inns in England",
+     "evidence_date": "present stone frontage late C14 (list entry); c. 1450 (Wright)",
+     "claim": "claims to be one of the oldest inns in England; James Wright (2026) dates it c. 1450",
      "source": "https://en.wikipedia.org/wiki/Angel_and_Royal"
     },
     {
@@ -136,22 +125,141 @@
      "wikipedia_title": "The George Inn, Norton St Philip",
      "location": "Norton St Philip, Somerset, England",
      "nation": "England",
-     "claimed_date": "1397",
-     "year": 1397,
-     "evidence_date": "C14/C15 (list entry)",
-     "claim": "one of several inns claiming to be England's oldest continuously licensed",
+     "claimed_date": "late 14th century; front and roof 1430–32 (tree-ring)",
+     "year": 1375,
+     "evidence_date": "C14/C15 (list entry); front and roof felled 1430–32 (tree-ring)",
+     "claim": "named England's oldest pub by buildings archaeologist James Wright (Historic England, 2026): set up by the monks of Hinton Priory, in continuous service for over 600 years",
      "source": "https://en.wikipedia.org/wiki/The_George_Inn,_Norton_St_Philip"
+    },
+    {
+     "name": "Bull Hotel, Ludlow",
+     "wikipedia_title": "The Bull Hotel, Ludlow",
+     "wikidata": "Q13529244",
+     "location": "Ludlow, Shropshire, England",
+     "nation": "England",
+     "claimed_date": "14th and 15th centuries",
+     "year": 1400,
+     "evidence_date": "rear range C15, front block probably C16 core (list entry)",
+     "claim": "on James Wright's 2026 list of England's oldest pubs; he thinks further research could show it older than the George, Norton St Philip",
+     "source": "https://britishlistedbuildings.co.uk/101219761"
+    },
+    {
+     "name": "King's Head, Shrewsbury",
+     "wikipedia_title": "King's Head, Shrewsbury",
+     "wikidata": "Q17550599",
+     "location": "Mardol, Shrewsbury, Shropshire, England",
+     "nation": "England",
+     "claimed_date": "1403–04 (tree-ring)",
+     "year": 1403,
+     "evidence_date": "timbers felled 1403–04 (VAG); late C15 (list entry)",
+     "claim": "on James Wright's 2026 list of England's oldest pubs (dated there 1426, 1430–31, which the tree-ring database gives for other Wyle Cop buildings)",
+     "source": "https://britishlistedbuildings.co.uk/101270680"
+    },
+    {
+     "name": "White Hart Hotel, Hook",
+     "wikipedia_title": null,
+     "wikidata": "Q26563000",
+     "location": "Hook, Hampshire, England",
+     "nation": "England",
+     "claimed_date": "1419–51 (tree-ring)",
+     "year": 1419,
+     "evidence_date": "north-east range felled 1419–51 (VAG); list entry C18, early C19",
+     "claim": "on James Wright's 2026 list of England's oldest pubs; the list entry misses the medieval range",
+     "source": "https://doi.org/10.5284/1132568"
     },
     {
      "name": "New Inn, Gloucester",
      "wikipedia_title": "The New Inn, Gloucester",
      "location": "Gloucester, England",
      "nation": "England",
-     "claimed_date": "c. 1450",
-     "year": 1450,
-     "evidence_date": "mid C15 (list entry)",
-     "claim": "among the best-preserved medieval galleried inns",
+     "claimed_date": "1432 (tree-ring)",
+     "year": 1432,
+     "evidence_date": "mid C15 (list entry); timbers felled 1432 (tree-ring)",
+     "claim": "among the best-preserved medieval galleried inns; on James Wright's 2026 list of England's oldest pubs",
      "source": "https://en.wikipedia.org/wiki/The_New_Inn,_Gloucester"
+    },
+    {
+     "name": "Angel Inn, Andover",
+     "wikipedia_title": "The Angel Inn",
+     "wikidata": "Q17535444",
+     "location": "Andover, Hampshire, England",
+     "nation": "England",
+     "claimed_date": "1445–55",
+     "year": 1445,
+     "evidence_date": "built by Winchester College 1445–55 (list entry, from the building contract)",
+     "claim": "purpose-built inn; on James Wright's 2026 list of England's oldest pubs",
+     "source": "https://britishlistedbuildings.co.uk/101093460"
+    },
+    {
+     "name": "King's Head, Aylesbury",
+     "wikipedia_title": "King's Head Inn, Aylesbury",
+     "wikidata": "Q6410961",
+     "location": "Aylesbury, Buckinghamshire, England",
+     "nation": "England",
+     "claimed_date": "1445–55",
+     "year": 1445,
+     "evidence_date": "C15-16 and C17 and later (list entry)",
+     "claim": "National Trust-owned; on James Wright's 2026 list of England's oldest pubs",
+     "source": "https://britishlistedbuildings.co.uk/101160205"
+    },
+    {
+     "name": "George Hotel, Dorchester-on-Thames",
+     "wikipedia_title": null,
+     "wikidata": "Q17549614",
+     "location": "Dorchester-on-Thames, Oxfordshire, England",
+     "nation": "England",
+     "claimed_date": "mid 15th century",
+     "year": 1450,
+     "evidence_date": "late C15/early C16, open hall (list entry)",
+     "claim": "on James Wright's 2026 list of England's oldest pubs",
+     "source": "https://britishlistedbuildings.co.uk/101369118"
+    },
+    {
+     "name": "George and Pilgrims, Glastonbury",
+     "wikipedia_title": "George Hotel and Pilgrims' Inn, Glastonbury",
+     "wikidata": "Q1507597",
+     "location": "Glastonbury, Somerset, England",
+     "nation": "England",
+     "claimed_date": "1461–83",
+     "year": 1461,
+     "evidence_date": "late C15 (list entry)",
+     "claim": "built by Glastonbury Abbey for pilgrims; on James Wright's 2026 list of England's oldest pubs",
+     "source": "https://britishlistedbuildings.co.uk/101345455"
+    },
+    {
+     "name": "Saracen's Head, Southwell",
+     "wikipedia_title": null,
+     "wikidata": "Q17547762",
+     "location": "Southwell, Nottinghamshire, England",
+     "nation": "England",
+     "claimed_date": "1460s (tree-ring)",
+     "year": 1462,
+     "evidence_date": "ranges felled 1462 and c. 1464–68 (VAG); dated by dendrochronology c1460 (list entry)",
+     "claim": "on James Wright's 2026 list of England's oldest pubs",
+     "source": "https://britishlistedbuildings.co.uk/101369925"
+    },
+    {
+     "name": "George Hotel, Odiham",
+     "wikipedia_title": null,
+     "wikidata": "Q17534046",
+     "location": "Odiham, Hampshire, England",
+     "nation": "England",
+     "claimed_date": "1474 and 1486–87 (tree-ring)",
+     "year": 1474,
+     "evidence_date": "cross wing felled 1474, main range 1486/7 (VAG); C15, C16, C18, licensed 1547 (list entry)",
+     "claim": "on James Wright's 2026 list of England's oldest pubs",
+     "source": "https://britishlistedbuildings.co.uk/101092149"
+    },
+    {
+     "name": "Mermaid Inn",
+     "wikipedia_title": "The Mermaid Inn, Rye",
+     "location": "Rye, East Sussex, England",
+     "nation": "England",
+     "claimed_date": "late 15th century (cellars claimed 1156)",
+     "year": 1475,
+     "evidence_date": "late C15 timber-framed building (list entry)",
+     "claim": "claims 12th-century origins; the listed building is late 15th century",
+     "source": "https://en.wikipedia.org/wiki/The_Mermaid_Inn,_Rye"
     },
     {
      "name": "The George Inn, Southwark",

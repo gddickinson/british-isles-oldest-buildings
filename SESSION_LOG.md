@@ -572,6 +572,7 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Brazen Head, Dublin: 1198 (Wikidata, the pub's claim) → 1754 (present building; inn first named 1668). Kyteler's
   Inn, Kilkenny: 1201 → c. 1275 (NIAH: built as a house, an inn after 1449, rebuilt c. 1625). Both research
   examples with evidence claims (quotes found). `research_add.mark_existing` also replaces a Wikidata-query type.
-- Hosted copy: 850 embedded thumbnails (was 1,100); the change layers had taken the export to 258 MiB.
+- Hosted copy: 850 embedded thumbnails (was 1,100); the change layers had taken the export to 258 MiB. Republished as
+  versions 60–64 (five batches, all 486 files, 11 old thumbnail shards removed): 251.8 MiB, 22,508 records. Static
+  GUI review (pages, pop-ups, search): every check passed (two failures were the local test server starting late).
 - Tests 142 OK (2 new for dendro_add). Database backups in the session scratchpad.
-

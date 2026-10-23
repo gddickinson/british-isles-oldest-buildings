@@ -1,18 +1,68 @@
 # ROADMAP
 
 Future work for British Isles Oldest Buildings, kept between sessions. Newest decisions first in
-each section; tick items off (and move them to SESSION_LOG.md) when done.
+each section; tick items off (and move them to SESSION_LOG.md) when done. Sections with every item done
+are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
-## Status (2026-10-22)
-- Catalogue 22,039 records; 173,657 places of interest in 22 groups (latest: shipwrecks); 11,927 people;
-  517 floor plans; "Change over time": 50 cited series, 32 events, 4 map layers; 870 researched claims (1,660 quotes,
-  1,658 found). Database release db-2026-10-22-4 (81 MB). Download cache on an external drive.
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 MiB of the
-  256 MiB limit, 479 of 511 files (place texts cut to 300 characters, floor plans 420 px WebP q45,
-  1,100 thumbnails; the local app keeps everything). Republish changed files only: checksum `dist/` before and after `python -m
-  app.static_export`, publish in batches under 64 MB, removed files with null, removals first.
+## Status (2026-10-23)
+- Catalogue 22,039 records; 173,657 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 94
+  series, 32 events, 22 map layers, 19 notes; 870 researched claims. Release db-2026-10-22-4 (81 MB).
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
+  files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
+  `dist/` before and after `python -m app.static_export`, batches under 64 MB, removals (null) first.
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
   (`git archive HEAD | tar -x -C <dir>`, run on port 5071).
+
+## Trade, enterprise and innovation (planned 2026-10-23, George's idea)
+How trades, guilds, trading companies, markets and exchanges (the stock market among them), firms and their
+technologies shaped where people lived and worked, their towns, communities and government. Builds on the Markets
+& trade and Industrial heritage places, the oldest shops, banks and markets, and the markets, fairs, coal and income
+graphs, and on George's tea_explorer (`~/Documents/GitHub/tea_explorer`: tea history, 44 tea firms with founding
+years and towns), used read-only. Its texts carry no citations, so they are leads: each fact used gets a source,
+locator and quote. Rules as E1–E6: open licences or quoted published figures; estimates marked, models compared.
+- [ ] C1 Research the sources (agents, as E1; publisher, licence + quote, years, download): Wikidata businesses
+      (inception, dissolved, HQ, industry, founders); guilds and livery companies (charters, halls; Scottish
+      incorporated trades, Dublin's guilds); chartered trading companies (Merchant Adventurers, Staplers, Muscovy,
+      Levant, East India, Hudson's Bay, Royal African, South Sea); exchanges (Royal Exchange 1571, coffee-house
+      trading, London Stock Exchange 1801, Dublin 1799, provincial exchanges, Lloyd's, the Baltic, corn exchanges);
+      banks; patents (Woodcroft's indexes 1617–1852; UKIPO); Kanefsky's steam engines; occupational structure
+      1379–1911 (Cambridge Group); census occupations (I-CeM, likely aggregates only); Legacies of British Slavery
+      (UCL); Lloyd's Register; ONS/HMRC trade (OGL); Federico–Tena; price and wage series (Clark, Allen, GPIH).
+- [ ] C2 Tea as the first worked trade (from tea_explorer): the British and Irish tea firms (deduplicated; Twinings
+      1706, Fortnum & Mason 1707, Tetley, Whittard, Taylors, Barry's, Typhoo, PG Tips, Yorkshire Tea, Clipper…)
+      matched to Wikidata and placed at their first shop or works; dated events (Garway's coffee house sale 1657/58,
+      Catherine of Braganza 1662, the East India Company's Canton trade, the Commutation Act 1784, the Tea Act 1773,
+      the end of the Company's China monopoly 1833, Assam and Ceylon tea, the Mincing Lane auctions to 1998);
+      tea imports and duty as a graph with published estimates; tea places (coffee houses, tea warehouses, docks,
+      tea rooms). Every fact checked against a cited source before it goes in.
+- [ ] C3 Guilds, exchanges and trading houses as places (kinds in "Markets & trade"): guildhalls and livery halls,
+      merchant adventurers' and merchants' halls, cloth and wool halls, exchanges and stock exchanges, coffee
+      houses, counting houses, trading-company headquarters and warehouses, banks with founding dates; the
+      researched oldest of each (oldest lists + evidence), people linked as founders, masters and merchants.
+- [ ] C4 Firms through time: businesses founded in the isles with founding and closing years (Wikidata; Companies
+      House for living firms, OGL) → a map layer of firms open at the slider's year (kind `spans`, by industry) and
+      graphs of firms founded per decade by industry; survivorship bias stated (the record keeps the firms that
+      lasted or became famous).
+- [ ] C5 Trade and work graphs (with estimates and models compared): occupations by sector (farming / making /
+      services) 1379–today, overseas trade (imports, exports, re-exports) and the main goods (wool, cloth, tea,
+      sugar, tobacco, cotton, linen, coal, iron), shipping tonnage, patents per year, steam power, banks and
+      companies registered, prices and real wages; each with its source and the published estimates before
+      the statistics.
+- [ ] C6 Innovations: inventions and firsts made in the isles (Wikidata inventor and place, researched list with
+      sources), on the map and the slider, linked to the buildings and places where they were made or used
+      (mills, works, mines, engine houses, exchanges).
+- [ ] C7 Laws and institutions as dated events with citations: borough and guild charters, the Statute of the
+      Staple, Navigation Acts, the Bubble Act, enclosure, Corn Laws and their repeal, Combination Acts, joint-stock
+      and limited-liability Acts (1844, 1855–56), Factory Acts, co-operatives (Rochdale 1844), trade unions
+      (Tolpuddle 1834, TUC 1868), Big Bang 1986; the Atlantic slave trade and abolition (1807, 1833) treated plainly,
+      with the firms, ports and fortunes involved.
+- [ ] C8 Trade stories: one page per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and
+      steel, fishing, brewing and distilling, banking and finance), each with a timeline, its places on the map,
+      graphs, the people, and cited analysis notes (E5 style, both sides where historians disagree: e.g. wool and
+      the wool churches, the "industrious revolution", slavery's part in industrialisation, railway mania).
+- [ ] C9 GUI: the trade stories reachable from the Change over time page, detail views ("Trade and industry here":
+      the guild, firm or trade of a building), map filters by trade, Oldest page entries, quiz questions
+      ("which came first?"), exports; INTERFACE, Help and figures updated.
 
 ## Data quality and references
 - [x] Reviewed the 451 date-check conflicts (2026-10-20, `docs/date_review.md`): checker noise
@@ -154,7 +204,6 @@ export, coverage on the Data quality page, hosted copy via `data/pron.json`.
 - [ ] Period labels: Irish records of AD 43–410 are labelled "Roman Britain" (period is set from the
       date alone); Ireland's Iron Age continues to c. AD 400.
 
-
 ## Further additions (planned 2026-10-20; worked through 2026-10-20)
 Stories and history
 - [x] F1 More story sources: tales in the HES / Cadw register descriptions already cached (6 stories,
@@ -201,33 +250,6 @@ New content
       na h-Alba (no open API found).
 - [x] N4 Quiz: "Guess the period".
 
-## More layers and places (planned 2026-10-21)
-Paths and trails
-- [x] P1 (2026-10-21: regional and local walking route relations, 4,437 lines; individual footpaths not yet) Walking paths and trails: OSM footpaths and bridleways (highway=footway/path/bridleway with
-      a name or designation=public_footpath/bridleway), regional and local walking routes
-      (route=hiking network=rwn/lwn); tiled like minor roads, from zoom 12.
-- [x] P2 (2026-10-21: NCN and regional cycle routes, 6,945 lines; tour routing on them not yet) Cycle tracks and trails: OSM cycleways (highway=cycleway, cycleway=track), National Cycle
-      Network and regional routes (route=bicycle network=ncn/rcn); a layer, and route choice for
-      bike tours (prefer cycle routes).
-- [x] P3 (2026-10-21: OSM Roman roads, 1,036 lines; drove roads, salt ways, corpse roads to add) Ancient and lost trails: Roman roads (OSM historic=roman_road; Wikidata; Margary numbers),
-      drove roads, salt ways, corpse roads, ancient trackways (Ridgeway, Icknield Way, Sweet Track),
-      pilgrim routes no longer walked; layer + stories.
-Water
-- [x] W1 (2026-10-21: named culverted rivers and streams, 28,747 lines; notes on London's lost rivers to add) Lost and buried rivers and streams: culverted rivers (OSM tunnel=culvert / waterway with
-      historic or covered tags), London's lost rivers (Fleet, Tyburn, Westbourne, Effra…), other
-      cities' buried rivers (Wikipedia "subterranean rivers" categories); a dashed layer with notes.
-Places of the imagination
-- [x] L1 (2026-10-21: 81 places of legend; more Irish/Welsh myth sites to add) Mythical places from legends and ancient history: Camelot candidates, Avalon, Lyonesse,
-      Cantre'r Gwaelod, Tír na nÓg sites, Arthurian and Fenian sites, holy wells and fairy forts,
-      places in the Mabinogion and Irish sagas (Wikidata: "legendary place" / "mythical location"
-      with a location in the isles; Wikipedia lists); claims shown as claims.
-- [x] L2 (2026-10-21: 98 haunted places + stories; tour theme) Haunted houses and places: Wikipedia "Reportedly haunted locations" categories and lists,
-      Wikidata items; merged with existing stories (ghost theme), a map layer and tour theme.
-- [x] L3 (2026-10-21: 116 literary settings, writers' homes/graves in 6 literary tours) Places of importance from literature: settings and real places in novels, poems and plays
-      (Wikidata "narrative location" P840 for works, "located in fictional universe"), writers'
-      houses and graves (existing people links), literary trails; a "Literary places" theme for
-      tours and stories.
-
 ## Maritime, industrial and Victorian (added 2026-10-21)
 - [x] Maritime heritage (`bidb/maritime.py`): harbours and ports, docks and wharves, shipyards and
       slipways, ropewalks, custom houses, lighthouses, lifeboat stations, naval bases, museum ships,
@@ -241,58 +263,6 @@ Places of the imagination
       for the UKHO / Historic England wreck data).
 - [ ] Victorian listed buildings beyond Wikidata: checked 2026-10-22: the register map layers (NHLE, HES, Cadw) carry no
       construction date (Cadw only the listing date); would need every list text (D2).
-
-## Installation, data location and maintenance jobs (planned 2026-10-21)
-- [x] I1 (2026-10-21) `run.sh` checks the configured data folders first (no `mkdir` on an unplugged drive) and
-      takes `--data DIR` (use or create `DIR/UK_BUILDINGS_DATA/{cache,database}`), `--build`
-      (build in the terminal) and `--port`.
-- [x] I2 (2026-10-21) First-run setup page in the GUI when there is no database: use the bundled database, use an
-      existing data folder, or build from scratch (choosing where the ~3 GB download cache goes).
-- [x] I3 (2026-10-21: stage bar weighted by last run, items, downloads/cache hits, time left) Build progress: stage k of n with a bar weighted by the previous run's stage times, items
-      within long stages, downloads vs cache hits, elapsed and estimated time left.
-- [x] I4 (2026-10-21: tested closing and reopening the GUI, stop, killed job) Jobs run detached (own session): closing the GUI or its terminal does not stop them; the
-      GUI re-attaches on reopening (status file + process id), can stop a job, and reports a job
-      that died.
-- [x] I5 (2026-10-21: --refresh-days / --refresh; per-title Wikipedia stores restart too) Refresh: rebuild with downloads older than N days, or from chosen sources (Wikidata,
-      Wikipedia, Commons, registers, OSM, postcodes), fetched again; the rest from the cache.
-- [x] I6 (2026-10-21) GUI buttons for the other jobs: photos, footprints and floor plans, offline map layers,
-      hosted export, package the database for sharing.
-- [x] I7 (2026-10-21: journal untracked; bundled database now a GitHub Release asset, data/bundled.json) Stop tracking `data/british_isles_buildings.sqlite-journal`; refresh the shipped
-      `british_isles_buildings.sqlite.gz` (a "package" job, so local rebuilds don't dirty git).
-
-## Underground works (planned 2026-10-21; after I1–I7)
-- [x] U1 (2026-10-21: 292 tube/subway/metro stations, 24 ghost stations, map layer "Underground railways &
-      tunnels" from OSM railway=subway and tunnels; places group "Underground", tours) Underground railways and stations: London Underground, Glasgow Subway, Tyne and Wear Metro and
-      Liverpool/Merseyrail tunnels; stations with opening dates (Wikidata), disused and "ghost" stations
-      (e.g. Aldwych, British Museum, Down Street), lines as a map layer (OSM railway=subway, tunnels).
-- [x] U2 (2026-10-21: 569 tunnels, 154 shelters/bunkers/ROC posts, 177 caves, 278 mines, 626 ice houses, 111
-      grottoes, catacombs, Bazalgette's sewers; `data/curated/underground_sites.json`. Still to do: deep shelters
-      and reservoirs beyond the curated list, cellars) Other major underground construction: railway, canal and road tunnels (Thames Tunnel, Box,
-      Standedge, Severn, Channel Tunnel), sewers and storm drains (Bazalgette's system), water tunnels
-      and reservoirs, mines and caverns, Victorian and wartime deep shelters, bunkers and ROC posts,
-      cellars, catacombs and ice houses; places group "Underground", tour theme, stories.
-
-## Historic war construction (planned 2026-10-21; after the underground works)
-- [x] X1 (2026-10-21: 32 burhs of the Burghal Hidage, 135 Martello/defensive towers, 251 forts from 1500 incl.
-      Device and Palmerston Forts, 223 batteries, 429 barracks/drill halls) Defences through the ages: hillforts and Roman forts are in already; add Saxon burhs,
-      Martello towers, Palmerston forts, coastal batteries, Napoleonic and Victorian barracks and signal
-      stations (Wikidata, heritage registers by type).
-- [x] X2 (2026-10-21: 146 pillboxes/anti-tank works, 72 radar/sound mirrors, 718 airfields, 83 POW camps,
-      7,095 war memorials; 3,710 OSM pillboxes, bunkers, gun emplacements and trenches as a map layer.
-      Defence of Britain data not used yet) Twentieth-century military works: First and Second World War pillboxes, anti-tank lines and
-      stop lines, anti-aircraft and searchlight batteries, sound mirrors, radar stations (Chain Home),
-      airfields, naval dockyards and boom defences, POW camps, Cold War bunkers and ROC posts
-      (Wikidata, OSM historic=bunker/pillbox, Defence of Britain data where the licence allows).
-- [x] X3 (2026-10-21: group, layer of OSM defences, tours "Coastal defences" and "Military heritage". Stop
-      lines as drawn lines still to do: only the Taunton Stop Line has a point on Wikidata) Places group "Military heritage" with periods, a map layer for defensive lines, a tour theme
-      ("Coastal defences", "Stop lines") and stories.
-
-## Bridges (planned 2026-10-21; before MU2)
-- [x] B1 (2026-10-21: 13,502 bridges on Wikidata, 12,688 new places + 334 regrouped; 471 in the catalogue) Bridges as a places group "Bridges": every bridge on Wikidata in the isles (road, foot, railway
-      viaducts, aqueducts, packhorse and clapper bridges, swing/bascule/transporter, suspension and
-      cable-stayed), by type, with opening years; the 724 bridges in the catalogue stay there; iron
-      bridges, viaducts and aqueducts from the industrial and Victorian stages move to this group.
-- [x] B2 (2026-10-21) A "Bridges" tour theme (walks, rides, drives).
 
 ## Research track: original sources and evidence (started 2026-10-21)
 Substantiate claims from original and published sources, never silently. Every researched claim goes in
@@ -446,16 +416,6 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
 - [ ] S14 Ask (user item): local Historic Environment Records (Heritage Gateway), Church of England
       Church Heritage Record, National Trust / English Heritage / Cadw opening times.
 
-## Going public (2026-10-21)
-- [x] MIT licence for the code; `DATA_LICENSE.md` with every source's licence and credit, third-party
-      code; `CONTRIBUTING.md`; `CITATION.cff`; screenshot credits in Help.
-- [x] README rewritten for the current version with new figures (`docs/make_figures.mjs`, real browser:
-      satellite, historic map, tours, setup, jobs).
-- [x] Personal references trimmed; history squashed to one commit; topics added.
-- [x] Nation for 31,287 places that had none (`bidb/nation_geo.py`: Wikidata P131, else location).
-- [x] Hilliness: climb counts changes of 3 m or more; under 20 m in all is flat (short town walks
-      were rated hilly from terrain-model noise).
-
 ## Nature, graves, markets, works and infrastructure (added 2026-10-22)
 - [x] N1 "Nature & deep time" places group: the researched oldest natural things (trees, woods, rocks, fossils,
       early human traces, natural wonders); notable trees among them move here.
@@ -473,15 +433,6 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
       (283 kept, 92 corrected, 32 dropped, 15 open); finding: Wikidata's classes miss the oldest hospitals, universities,
       almshouses (St Bartholomew's, Oxford, St Cross) — the researched lists cover them.
 - [ ] N6 Woodland Trust Ancient Tree Inventory (licence to be asked), Canmore for Scottish burial grounds.
-
-## Sharing (added 2026-10-22)
-- [x] S1 Share on the home network (`app/lan.py`, Settings › Share on my home network, `./run.sh --lan`): the server
-      listens on every interface; other computers are read-only (any change, settings, screenshots, setup and saved
-      street maps refused by the server; their pages hide those controls); addresses and a QR code in Settings; the
-      app restarts itself on its new address.
-- [x] S2 (2026-10-22) Share codes: a code for other devices (form or ?code=, cookie), a trusted code for full access.
-- [x] S3 (2026-10-22) `./serve_dist.sh [--to HOST]` serves `dist/` here or copies it to another machine and serves it
-      there (not started on the Mac mini: George's call).
 
 ## Time slider and change over time (added 2026-10-22, George's idea)
 A slider over years on the Map page: what was built (and what had gone) by a chosen year, with networks and
@@ -531,27 +482,19 @@ with their citation; estimates for early periods are marked as modelled, with th
       temperature (1659–), England and Wales rainfall (1766–), CO₂ and methane (ice cores + Mauna Loa), sea
       level (Newlyn, etc.), volcanic and solar forcing, woodland cover, farmland and livestock, notable floods,
       droughts, famines, plagues and storms (dated events with sources).
-- [x] E3 (2026-10-23: built-up land 1975/2020 (GHSL), land cover 2000–2018 (CORINE), pollen tree cover 9500 BC–1935 in 1° squares, ancient woodland, farmland grades (England), superficial deposits (GB), towns and cities by size 700–2000 as dots (Buringh), `bidb/change_rasters.py`; HYDE 3.3 to 2023 still needs a browser download. 2026-10-22: HYDE population density and cropland at 29 dates following the slider (132 KB of PNGs),
-      bedrock geology by period for all the isles, coalfields; `bidb/change_layers.py`, `change_geology.py`.
-      To do: GHSL built-up 1975/2020, CORINE 2000–2018, pollen tree-cover cells, ancient woodland, land grades,
-      superficial geology, HYDE 3.3 to 2023 (browser download), Buringh/Reba city sizes as dots by date.
-      Research done: HYDE 3.2 crops tested, 1,275 grids ≈ 25 MB gzipped, 4 key variables ≈ 6 MB; HYDE 3.3
-      needs a browser download; GHSL 1975/2020, CORINE 2000–2018, KK10, pollen cells, BGS/GSI bedrock, coalfields,
-      ALC prepared in the research scratchpad) Map layers by year (driven by the slider): HYDE gridded population, cropland, pasture and built-up
-      area (10000 BC–today), GHSL built-up area (1975–), plus fixed layers that explain the pattern: bedrock and
-      superficial geology (BGS), soils / agricultural land, coalfields, ancient woodland, land below sea level and
-      lost coast; legend and source line on each.
+- [x] E3 (2026-10-22/23; `bidb/change_layers.py`, `change_geology.py`, `change_rasters.py`) Map layers that follow
+      the slider: HYDE population, cropland, pasture and built-up area at 29 dates; built-up land (GHSL 1975/2020),
+      land cover (CORINE 2000–2018), pollen tree cover 9500 BC–1935, towns and cities by size (Buringh); fixed
+      layers: bedrock geology by period, coalfields, superficial deposits, ancient woodland, farmland grades.
 - [x] E4 (2026-10-22: panel on the Map page + page `/change`) "Change over time" panel: stacked small graphs with a shared year axis and a marker at the slider's
       year; each toggled, with units, uncertainty bands, and a source link; also a page of its own with notes.
-- [~] E6 (2026-10-23, George: "all the rest", with estimates for missing dates and models compared) More layers and
-      estimates. Done: HYDE pasture/grazing and built-up area; people per km² 1975–2020 (GHS-POP); railway stations by
-      opening year (Wikidata; closures recorded for only a tenth); graphs that put other models on the same axis, published
-      estimates as dots with error bars (England 1086–1801, Scotland, Ireland before 1821, coal before 1853, the urban
-      share, Irish woodland, markets and fairs; `estimates.json`), dotted gaps read as estimates; yearly temperature for
-      each country and the globe (measured, a 1500–1900 reconstruction, and an estimate from CET). To do: decade climate
-      maps (CRU TS; HadUK-Grid files now need a CEDA login), ice-sheet retreat and past coastlines (deep-time dates),
-      night lights, forest change since 2000, Domesday 1086, census populations by county, railway lines with dates,
-      1930s land use. Blocked for now: KK10 (PANGAEA bot check), HYDE 3.3 (browser download).
+- [x] E6 (2026-10-23, George: "all the rest", with estimates for missing dates and models compared) Other models
+      on the same axis, published estimates as dots with error bars (`estimates.json`), dotted gaps read as
+      estimates; yearly temperature for every country of the isles and the globe; homes in England; layers: pasture
+      and built-up (HYDE), people per km² 1975–2020, decade temperature and rainfall since 1901 (CRU TS), ice sheet
+      and coast from 31,000 years ago, night lights, tree cover lost since 2001, railway stations and dated railway
+      and canal lines, Ireland's census by county. Left: Domesday and 1930s land use (non-commercial licences),
+      HadUK-Grid maps (CEDA login), KK10 (PANGAEA bot check), HYDE 3.3 (browser download).
 - [x] E5 (2026-10-23: 19 notes from the Neolithic boom and bust to the 1952 smog and rising seas, 50 quotes from published research, each with link and locator, both sides where scholars disagree; on the Change over time page and, for the slider's year, in the Map panel; `data/curated/change/notes.json`) Analysis notes (cited): what the series show together (e.g. building booms against population and
       prosperity, the Little Ice Age and harvest failures, the Black Death, enclosure, the coal age and CO₂),
       quoting published research rather than our own inference where it makes a causal claim.

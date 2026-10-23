@@ -221,6 +221,8 @@ OSM objects with wikidata=* (opening hours, fee, operator) ─> bidb/visiting.py
 - `data/cache/` — raw API responses (not in git; movable in Settings → Data location); `runs/` — build logs (not in git)
 
 ## Docs and tests
+- `ROADMAP.md` (planned and open work; finished sections in `ROADMAP_DONE.md`), `SESSION_LOG.md` (entries before
+  2026-10-21 in `SESSION_LOG_2026-10-19.md`)
 - `docs/make_figures.mjs` — regenerates `docs/img/*.jpg` (README and Help figures) in Chrome via `tests/cdp.mjs` (`node docs/make_figures.mjs [names]`, app running)
 - `tests/` — `python -m unittest discover tests` (settings/data location, place stage kinds, place stage kinds (`test_place_stages`), date mining, date checks, pronunciation parsing, hosted-export split, tile encoding, stories, tours, periods, calendars, timelines, trails, street tiles, jobs, progress, refresh, setup); `node tests/ui_prefs_test.js`; browser checks of every page: `python -m tests.ui_check [--base URL] [--only names]`; full GUI review (every page, map, layer, historic map, places layer, pop-ups, interactions; local and hosted): `node tests/ui_review.mjs --base URL [--static] [--only groups]` (driver `tests/cdp.mjs`, report and screenshots in `runs/ui_review*/`)
 - `data/curated/story_rejects.json` — reviewed false story matches (dropped on rebuild)

@@ -169,7 +169,9 @@ ${t.stops.map((s, i) => `<Placemark><name>${i + 1}. ${x(s.name)}</name><descript
     const pts = e.profile.map((v, i) => `${(i / (e.profile.length - 1) * w).toFixed(1)},${(h - (v - lo) / span * (h - 6) - 3).toFixed(1)}`);
     return `<div class="elev"><svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Elevation profile">
       <polygon points="0,${h} ${pts.join(" ")} ${w},${h}" class="elev-fill"/><polyline points="${pts.join(" ")}" class="elev-line"/></svg>
-      <span title="From a 25 m terrain model (EU-DEM via OpenTopoData): short climbs are smoothed out">↗ about ${e.climb_m} m climb · ${e.min_m}–${e.max_m} m · <b>${esc(e.hilly)}</b></span></div>`;
+      <span title="From a 25 m terrain model (EU-DEM via OpenTopoData): short climbs are smoothed out">↗ about ${e.climb_m} m climb · ${e.min_m}–${e.max_m} m · <b>${esc(e.hilly)}</b></span>${e.surface ? `
+      <span title="From OpenStreetMap: the nearest path or road every 200 m along the route">${e.surface.paved}% paved${
+      e.surface.unpaved ? ` · ${e.surface.unpaved}% unpaved` : ""} · ${e.surface.traffic_free}% traffic-free</span>` : ""}</div>`;
   }
 
   return { MODES, THEMES, km, follow, profileHTML, order, decode, route, hours, gpx, kml, googleMaps, save, fileName, pick, stopsFor, draw };

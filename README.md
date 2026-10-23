@@ -1,7 +1,7 @@
 # British Isles Oldest Buildings
 
 **An atlas of the oldest buildings and historic places of England, Scotland, Wales, Ireland, the Isle
-of Man and the Channel Islands**: 22,000 buildings and 166,000 places on maps old and new, with the
+of Man and the Channel Islands**: 22,000 buildings and 173,000 places on maps old and new, with the
 evidence for their dates, the people and stories connected with them, how to say their names, tours
 that link them, and quizzes.
 
@@ -74,6 +74,8 @@ Canterbury's 597 stays open).
   (1747–55), William Smith's geological map (1815), the Gough Map (c. 1360), Roman and Anglo-Saxon Britain,
   the Ordnance Survey of Ireland, and 153 town plans; each building lists the 4,436 georeferenced Allmaps
   maps that cover it.
+- **Through time:** a year slider on the Map page shows what had been built or founded by then, with Play
+  and the historic map of each era.
 - **Save an area for offline use** and follow a tour with your location.
 
 <table>
@@ -82,10 +84,10 @@ Canterbury's 597 stays open).
 <tr><td colspan="2"><img src="docs/img/map_layers.jpg" alt="Map layers"><br><sub>The Map page and its layer switcher: Roman roads, walking routes and historic counties in Yorkshire</sub></td></tr>
 </table>
 
-### 166,000 places of interest
+### 173,000 places of interest
 Twenty-two groups, each as a list or a map: battles and sieges; archaeological sites (every register's
 scheduled monuments); lost places; parks, gardens and ancient trees; industrial heritage; finds, treasures
-and hoards; plaques; history events; legends and literature; maritime heritage; the Victorian era;
+and hoards; plaques; history events; legends and literature; maritime heritage (with 7,300 shipwrecks from the Scottish and Irish wreck records); the Victorian era;
 underground works (ghost stations, shelters, bunkers, catacombs); military heritage (Saxon burhs to Cold
 War radar); museums and their best-known objects; bridges; excavations and every *Time Team* dig; graves and
 burial grounds; markets and trade; infrastructure; nature and deep time; **sport and leisure** (5,500
@@ -224,6 +226,8 @@ explains every page, with a glossary and common questions.
 tablets and phones on the same network open the app at the address Settings shows, with a QR code. They
 can browse everything but change nothing: builds and jobs, corrections, saved street maps, the data
 location and the settings stay with the computer running the app (enforced by the server, `app/lan.py`).
+Optional share codes keep other devices out until they give the code; a second, trusted code gives full access.
+`./serve_dist.sh [--to HOST]` serves the static copy from this or another always-on machine.
 
 <img src="docs/img/sharing.jpg" alt="Share on my home network" width="75%">
 

@@ -51,15 +51,13 @@ each section; tick items off (and move them to SESSION_LOG.md) when done.
 - [x] Canals (OSM `waterway=canal`, dashed) added to the rivers layer; French rivers removed.
 - [x] Minor roads (OSM secondary/tertiary, B roads) as an optional layer (off by default), loaded
       in 1° tiles from zoom 9, 2026-10-20.
-- [ ] Major streams at high zoom.
+- [x] Major streams at high zoom (named streams in 1° tiles, `streams/`).
 - [x] National Trails (OSM `route=hiking network=nwn`) as an optional layer, 2026-10-20.
-- [ ] Historic county boundaries (pre-1974) as an alternative to modern council areas
-      (e.g. Historic County Borders Project, check licence).
+- [x] Historic county boundaries (pre-1974): Historic County Borders Project layer (`historic_counties.json`).
 - [ ] Offline map detail stops around zoom 13; consider vector tiles (PMTiles, protomaps) for
       street-level offline detail if the hosted size budget allows.
 - [x] Parks queried by `designation=*` too: Eryri, the Broads, Llŷn, Anglesey, NI AONBs added.
-- [ ] Most Scottish National Scenic Areas are not mapped in OSM; use the NatureScot NSA
-      dataset (OGL) if wanted.
+- [x] All 40 Scottish National Scenic Areas from the Scottish Government's ProtectedSites layer (OGL), 2026-10-22.
 
 ## Floor plans and outlines
 - [x] Building outlines from OSM ways/relations tagged with the catalogue's Wikidata ID.
@@ -72,18 +70,18 @@ each section; tick items off (and move them to SESSION_LOG.md) when done.
 Done: NLS layers (six-inch, one-inch, Bartholomew, Old Series overview, Roy, Ireland one-inch,
 Isle of Man, Channel Islands, 153 town plans), Gough Map (Warper 252), Rumsey atlas maps via
 Allmaps; hosted copy bundles low-zoom WebP tiles of 9 layers (one JSON pack per layer: an artifact version holds at most 511 files).
-- [ ] OS Old Series at full detail via Allmaps (`allmaps.xyz/{z}/{x}/{y}.png?url=` NLS
-      old-series.json annotation; ~5 s per tile, opt-in).
-- [ ] Ireland six-inch by county (NLS `os/<county>`, `_2nd`; 32 layers grouped, bounds from
-      metadata.json). Edition dates to confirm in the NLS viewer.
+- [ ] OS Old Series at full detail: checked 2026-10-22, the NLS tile store has it only to zoom 9 (zoom 12+ 404) and
+      the detailed NLS viewer uses MapTiler (key); no published Allmaps annotation found. Needs NLS's annotation.
+- [x] Ireland six-inch by county (NLS, first edition and later revision, 32 counties incl. Northern Ireland; M3).
 - [ ] Pre-warp Saxton (1579, CC0) and Speed (1611) national maps with GDAL (gdal_translate GCPs →
-      gdalwarp -t_srs EPSG:3857 -tps) for the hosted copy; starter GCPs in the research notes.
+      gdalwarp -t_srs EPSG:3857 -tps) for the hosted copy; starter GCPs in the research notes. Checked 2026-10-22:
+      no ready-made tiles anywhere (Allmaps' index has no titles; the BL Georeferencer needs a login), so GCPs by hand.
 - [x] "Historic maps of this place" on detail views (`app/historic_allmaps.py`, 4,436 maps).
       The bulk file has no titles; NLS maps link to the library record. Titles would need one
       IIIF manifest request per map.
 - [x] William Smith geological map 1815 (Warper 150), bundled z5–8.
-- [ ] Northern Ireland historic six-inch (OSNI OpenData, OGL): ~400 MB zips per county; crop and
-      tile if wanted.
+- [x] Northern Ireland historic six-inch: covered by the NLS Ireland six-inch layers (M3). OSNI's own sheets
+      (OpenDataNI, OGL, 1829–62, georeferenced JPG + world file in 37–750 MB zips) only if a second scan is wanted.
 - Not usable: Tailte Éireann historic maps (referer-locked, licensed to public bodies);
   David Rumsey Georeferencer tiles (need sign-in); NLS MapTiler layers (need a key).
 
@@ -102,8 +100,8 @@ Allmaps; hosted copy bundles low-zoom WebP tiles of 9 layers (one JSON pack per 
 - [x] Floor plans load on demand in the hosted copy (one 3 MB shard per detail view; −54 MB).
 - [x] Hosted copy first load 72 MB → 22 MB: thumbnails (600 KB files, oldest first), detail-only
       fields and building outlines are fetched on demand, 2026-10-20.
-- [ ] Hosted copy: opening a detail view loads all places (50 MB) for the "related" panel; a small
-      places location index would avoid that.
+- [x] Hosted copy places index (2026-10-22): location cells (`data/pcells/`) and 16 id shards; a detail view fetches
+      ~1–2 MB instead of 18 MB, opening a place ~6 MB instead of 77.
 - [x] Settings page (appearance, catalogue/map defaults, recently viewed, shortcuts, data
       location mover, screenshot browser, backup/reset), Help guide with figures, top-bar Export
       menu (CSV/JSON/GeoJSON/KML, screenshots, print), ⌘K quick search, keyboard shortcuts,
@@ -149,7 +147,8 @@ export, coverage on the Data quality page, hosted copy via `data/pron.json`.
       Commission Schools' Collection at duchas.ie (check licence), Wikidata "reportedly haunted").
 - [ ] Stories rules: legends inside "History" sections are sometimes ordinary history with the
       word "legendary"; a reviewed list of false hits (like `date_corrections.json`) if needed.
-- [ ] Tours: elevation and surface for bike rides (as in cycle_routes), opening times / ticketed
+- [x] Tours: surface for bike rides (2026-10-22, `bidb/tour_surface.py`: % paved, unpaved, traffic-free from OSM ways;
+      OSRM itself returns no surface). Opening times / ticketed
       sites, public transport to walk starts, multi-day touring routes with overnight stops.
 - [ ] Hosted copy: builder routes are straight-line estimates (external services are blocked there).
 - [ ] Period labels: Irish records of AD 43–410 are labelled "Roman Britain" (period is set from the
@@ -236,9 +235,12 @@ Places of the imagination
 - [x] Industrial Revolution and Victorian era (`bidb/era_places.py`): mills, mines, ironworks, canals,
       railways (opening dates), engine houses, kilns, iron bridges, warehouses (1700–1914) and Victorian
       public buildings, piers, glasshouses and Victorian-style buildings (1837–1901); tours, 2026-10-21.
-- [ ] Ship launches and shipwrecks (Wikidata ships built at isles yards; wreck sites, licence check
+- [x] Shipwrecks (2026-10-22, `bidb/wrecks.py`): 3,768 Canmore wreck records and 3,564 from the Wreck Inventory of
+      Ireland. Still open: ship launches (Wikidata ships built at isles yards); England's full wreck record is not open
+      data (only the 57 protected wrecks and 1,842 WWI losses). Original note: (Wikidata ships built at isles yards; wreck sites, licence check
       for the UKHO / Historic England wreck data).
-- [ ] Victorian listed buildings beyond Wikidata (Historic England / HES / Cadw registers by date).
+- [ ] Victorian listed buildings beyond Wikidata: checked 2026-10-22: the register map layers (NHLE, HES, Cadw) carry no
+      construction date (Cadw only the listing date); would need every list text (D2).
 
 ## Installation, data location and maintenance jobs (planned 2026-10-21)
 - [x] I1 (2026-10-21) `run.sh` checks the configured data folders first (no `mkdir` on an unplugged drive) and
@@ -418,19 +420,23 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
       Flickr Commons (e.g. National Library of Ireland Lawrence collection; no known restrictions);
       "Then" gallery in detail views.
 - [ ] S3 Geograph API (CC BY-SA): photos for records still without one (more than the Commons copies).
-- [ ] S4 (checked 2026-10-21: Canmore's map index holds 320,000+ sites, downloadable from the HES portal or a WFS;
+- [ ] S4 (2026-10-22: each Canmore record carries LICENCE "Open Government Licence"; 314,401 terrestrial + 25,913
+      maritime points at inspire.hes.scot CANMORE/Canmore_Points MapServer, FID paging; too large for the hosted copy
+      as places, so local-only or as links) (checked 2026-10-21: Canmore's map index holds 320,000+ sites, downloadable from the HES portal or a WFS;
       the CKAN entries say "No Licence Provided", an older Canmore map service record says OGL; confirm with HES.
       At that size it needs a choice: all sites, or only those with a period/description not already in Places)
       Canmore (Scotland) and Coflein (Wales) site records: undesignated sites and descriptions
       (OGL via the official map services; check).
-- [ ] S5 List of Historic Place Names of Wales (OGL): old name forms with dates, for pronunciation and history.
-- [ ] S6 NaPTAN (OGL): bus stops and ferry terminals for "Getting there".
-- [ ] S7 OS Open data (Open Names, Open Rivers, Open Roads, Open Greenspace; OGL): offline map layers.
-- [ ] S8 Canal & River Trust open data: locks, bridges, aqueducts, tunnels with dates (industrial, U2).
+- [x] S5 (2026-10-22, `bidb/welsh_names.py`) Old forms of Welsh place names with dates on 4,824 records.
+- [x] S6 (2026-10-22, `bidb/naptan.py`) NaPTAN bus stops and ferry terminals in "Getting there" (Great Britain).
+- [ ] S7 OS Open data (Open Names, Open Rivers, Open Roads, Open Greenspace; OGL): checked 2026-10-22 (downloads API,
+      no key; 40 MB–1 GB). The OSM layers already cover the same ground; only worth it for Greenspace if wanted.
+- [ ] S8 Canal & River Trust open data: checked 2026-10-22: asset layers (1,722 locks, 6,915 bridges, 329 aqueducts,
+      58 tunnels; OGL) have no construction dates; "Canals over time" (44 canals: opened, closed, restored) is for T3.
 - [ ] S9 For war construction (X1–X3): IWM War Memorials Register, Defence of Britain (Archaeology
       Data Service), Commonwealth War Graves cemeteries.
 - [ ] S10 For underground works (U1): TfL open data (stations, lines; free key) with Wikidata dates.
-- [ ] S11 For shipwrecks: Historic England / Canmore wreck records, Irish Wreck Inventory (not the
+- [x] S11 (Canmore and the Irish inventory done 2026-10-22) For shipwrecks: Historic England / Canmore wreck records, Irish Wreck Inventory (not the
       licensed UKHO data).
 - [ ] S12 People: links to the Dictionary of Irish Biography and Dictionary of Welsh Biography via
       Wikidata IDs (no copied text).
@@ -462,7 +468,10 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
       canals and locks, railway lines, signal boxes, power stations, airports (15,200).
 - [x] N4 The Oldest page lists the researched oldest of each (with verdicts) and the earliest dated places of each
       kind in these groups (Wikidata dates, marked as unchecked).
-- [ ] N5 Check the earliest dated places of the new groups (Wikidata dates are often of a later event).
+- [x] N5 (2026-10-22, `bidb/oldest_checks.py`) Earliest dated places of the new groups: 8,937 of 23,120 Wikidata dates
+      are only to the decade/century (now shown so, not candidates); 422 candidates reviewed with sources and quotes
+      (283 kept, 92 corrected, 32 dropped, 15 open); finding: Wikidata's classes miss the oldest hospitals, universities,
+      almshouses (St Bartholomew's, Oxford, St Cross) — the researched lists cover them.
 - [ ] N6 Woodland Trust Ancient Tree Inventory (licence to be asked), Canmore for Scottish burial grounds.
 
 ## Sharing (added 2026-10-22)
@@ -470,5 +479,34 @@ linked, never copied. Suggested order: S1, S2, S3, S4, then the rest.
       listens on every interface; other computers are read-only (any change, settings, screenshots, setup and saved
       street maps refused by the server; their pages hide those controls); addresses and a QR code in Settings; the
       app restarts itself on its new address.
-- [ ] S2 Optional share code for other devices; a second code for trusted devices with full access.
-- [ ] S3 Serve the static export (`dist/`) from another always-on machine (Mac mini, NAS).
+- [x] S2 (2026-10-22) Share codes: a code for other devices (form or ?code=, cookie), a trusted code for full access.
+- [x] S3 (2026-10-22) `./serve_dist.sh [--to HOST]` serves `dist/` here or copies it to another machine and serves it
+      there (not started on the Mac mini: George's call).
+
+## Time slider and change over time (added 2026-10-22, George's idea)
+A slider over years on the Map page: what was built (and what had gone) by a chosen year, with networks and
+historic maps of the period. Feasible now for dated things (catalogue, places with opening/closing years, railways,
+canals, bridges, stations); the limits (only what survives or is recorded; founding date, not later growth;
+built-up area and ordinary roads have no years in OSM) to be stated on the page.
+- [x] T1 (2026-10-22, `static/time_slider.js`) Slider on the Map page: buildings and places with start year ≤ Y (and closing year > Y), counts histogram,
+      play button; historic map layer switching with the era (Saxton/Speed → Roy → OS first edition → revisions).
+- [ ] T2 Investigate more historic maps: county maps (Saxton, Speed, Morden, Greenwood, Bryant), Ogilby's road
+      strips (1675), estate, enclosure and tithe maps (Tithe Survey c.1840: The Genealogist / county projects),
+      Goad fire-insurance plans, OS 25-inch and later editions, Bartholomew half-inch editions, Irish Down Survey
+      (1650s, TCD), Taylor and Skinner's roads of Ireland (1778), Roy Military Survey of Scotland (have), Blaeu atlas
+      of Scotland (1654, NLS), British Library and Bodleian georeferenced collections; licence and tile access each.
+- [ ] T3 Investigate dated network and change data for the slider:
+      CAMPOP "Transport, urbanization and economic development in England and Wales c.1670–1911" (railways, canals,
+      navigable rivers, turnpike roads with opening years; Cambridge Group, check licence); Martí-Henneberg / Cobb
+      railway atlas data; Canal & River Trust "canals over time" (opened, closed, restored); Wikidata railway lines
+      and stations with opening/closing dates; Disused Stations; turnpike trust acts; GB Historical GIS / A Vision
+      of Britain through Time (parish and town populations 1801–2011, boundaries; licence); Irish census 1821–;
+      Domesday (1086, have) and the 1377 poll tax / 1524 lay subsidy for medieval town sizes; Historic Towns Atlas
+      and Atlas of Historic Towns (Ireland); GHSL / HYDE built-up area (1975–, and modelled earlier).
+- [ ] T4 Investigate texts as sources of dates and change: Project Gutenberg and Internet Archive (county
+      histories, Defoe's Tour 1724–27, Leland's Itinerary, Camden's Britannia, Cobbett's Rural Rides, Bradshaw's
+      guides, Lewis's Topographical Dictionaries 1831–49, Groome's Ordnance Gazetteer of Scotland, Wilson's Imperial
+      Gazetteer 1870–72), British History Online (VCH, Survey of London), Archaeology Data Service reports and
+      journals (open access), county archaeological society transactions (often on Internet Archive / BHL),
+      theses (EThOS/CORE), OpenAlex/CORE APIs for open papers; extract dated statements per place with quotes
+      (as the evidence track does) and keep licences per text.

@@ -587,3 +587,31 @@
   shown on `/change` ("What the graphs show together") and, for the slider's year, in the Map panel.
 - One research agent sent George's email address to the Unpaywall API as its contact parameter while looking up an
   article; it was not repeated.
+
+## 2026-10-23 (later) — E6: more layers, competing estimates, temperatures
+- George asked for the first batch of layers and "all the rest", with estimates for missing dates and models compared.
+- Graphs: `models` (other estimates of the same measure on one axis, the reference palette's first three slots),
+  `style: estimates` (published figures as dots with error bars, labelled per point), and dotted stretches where a
+  measured series has no figures (read as ≈). A research agent collected 287 published figures (41 models) for the
+  years before statistics: England 1086–1801, Scotland, Ireland (whole island), coal before 1853, urban share, Irish
+  woodland, markets and fairs → `data/curated/change/estimates.json` (quote and page for each); spot-checked 3 quotes.
+- Found and fixed: coal output and jobs had lost 1942–2010 (footnote digits in the spreadsheet's year column); the
+  Map panel's "begun per century" graph had no points.
+- Temperatures: yearly mean for England, Wales, Scotland, Northern Ireland (Met Office, 1884–), Republic of Ireland
+  (CRU CY, 1901–), with Luterbacher/Xoplaki's European reconstruction averaged per country (1500–1900) and an estimate
+  from Central England back to 1659 (r 0.92–0.99, ±1.96 sd band; `prepare_temperatures.py`); the world vs 1850–1900
+  from HadCRUT5, PAGES 2k and Temp12k.
+- Layers: HYDE pasture/grazing and built-up area; GHS-POP 1975–2020; CRU TS decade temperature and rainfall vs
+  1901–1930 (HadUK-Grid files need a CEDA login); night lights 1992–2024; Hansen tree cover lost 2001–2024; railway
+  stations (Wikidata) and OpenHistoricalMap railway/canal lines by date; Ireland's counties at each census (CSO
+  FY001); the BRITICE-CHRONO ice sheet and coast every 1,000 years from 31 ka (own window east to 9°E for Doggerland).
+  Bug on the way: warping ETOPO to EPSG:4326 applied the geoid→ellipsoid shift (+56 m), turning the Irish Sea into
+  land; `-novshiftgrid` fixed it. Time layers have their own date list (deep time before the slider's 4000 BC).
+- Left out: Open Domesday data and the 1930s Land Utilisation Survey (non-commercial licences), Vision of Britain
+  (bulk reuse needs permission), KK10 (PANGAEA bot check), HYDE 3.5 (non-commercial). E&W census by registration
+  district has no open boundaries yet.
+- George turned on Settings › Share on my home network (so the ui_check `settings_share` page now fails as expected).
+- Graphs beside the map: "Buildings and places on the map, standing at each date" (begun by then and not yet closed,
+  one sorted sweep), and "Homes in England, counted and estimated": dwellings counted from 1801 with an estimate
+  before (England's population ÷ the average household, 4.44 before 1750 and 4.81 after, Boulton after Laslett;
+  band between the two). New graphs that are on by default now join a browser's saved choice once.

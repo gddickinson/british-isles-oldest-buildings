@@ -153,10 +153,28 @@ function catalogueSeries() {
   const now = new Date().getFullYear();
   const points = [];
   for (let c = -4000; c <= now; c += 100) points.push([Math.min(c + 50, now), n[c] || 0]);
+  // how many were standing at each date: begun by then and not yet closed (the year slider's rule)
+  const dated = exBuildings.concat(exPlaces).filter((r) => r.year_start != null);
+  const steps = [];
+  for (let y = -4000; y < 1500; y += 100) steps.push(y);
+  for (let y = 1500; y <= now; y += 25) steps.push(y);
+  const starts = dated.map((r) => r.year_start).sort((a, b) => a - b);
+  const ends = dated.map((r) => TimeSlider.endOf(r)).filter((e) => e != null).sort((a, b) => a - b);
+  let i = 0, j = 0;
+  const total = steps.map((y) => {                      // begun by y, minus closed by y (one sweep over sorted years)
+    while (i < starts.length && starts[i] <= y) i++;
+    while (j < ends.length && ends[j] <= y) j++;
+    return [y, i - j];
+  });
   return [{ id: "catalogue_begun", theme: "This catalogue", title: "Buildings and places on the map, begun per century",
             unit: "per century", default: true, sources: [], points,
             note: "Counted from the dated records shown on the map (their start year). Only what survives or was " +
-                  "recorded: far more was built than this, above all before 1500, so early centuries look emptier than they were." }];
+                  "recorded: far more was built than this, above all before 1500, so early centuries look emptier than they were." },
+          { id: "catalogue_standing", theme: "This catalogue", title: "Buildings and places on the map, standing at each date",
+            unit: "standing", default: true, sources: [], points: total,
+            note: "Running total of the dated records shown on the map that had been begun by each date and not yet closed " +
+                  "(where a closing year is known). A sample of what survives or was recorded, not the whole: compare " +
+                  "the estimated number of homes in England." }];
 }
 function wireChange() {
   const panel = E$("#ex_change"), btn = E$("#ex_graphs");

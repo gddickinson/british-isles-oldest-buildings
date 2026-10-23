@@ -679,5 +679,13 @@
   "licence_quote": "NCEI/WDS Paleoclimatology readme: users may access and download these data free of charge",
   "url": "https://www.ncei.noaa.gov/access/paleo-search/study/26872",
   "checked": "2026-10-23, HTTP 200 via curl"
+ },
+ "household_size_boulton": {
+  "short": "Boulton, 'households' (Oxford Companion to British History)",
+  "publisher": "Oxford University Press (via Encyclopedia.com)",
+  "citation": "Boulton, J. 'Households', in Cannon, J. (ed.) The Oxford Companion to British History (Oxford University Press): 'The average size of household in England before 1750 was just 4.44 persons, rising to 4.81 in the following 70 years.' (after Laslett 1972, Mean household size in England since the sixteenth century)",
+  "licence": "Published figure cited as fact (no open licence)",
+  "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/households",
+  "checked": "2026-10-23, fetched"
  }
 }

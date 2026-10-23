@@ -225,15 +225,20 @@
  {
   "id": "dwellings_eng",
   "theme": "People and settlements",
-  "title": "Homes (dwelling stock)",
+  "title": "Homes in England, counted and estimated",
   "region": "England",
   "unit": "homes",
   "unit_long": "homes",
   "sources": [
    "dwellings_england_dluhc"
   ],
-  "note": "Census counts of dwellings to 1961, then annual estimates; definitions changed between censuses.",
-  "file": "dwellings_eng.csv"
+  "note": "Census counts of dwellings to 1961, then annual estimates; definitions changed between censuses. Before the first count in 1801 the number of homes is estimated from England's population (Broadberry, Campbell and van Leeuwen to 1541, then Wrigley and colleagues) divided by the average household. Homes are most of the buildings people lived and worked in; churches, barns, workshops and the like are not counted.",
+  "file": "dwellings_eng.csv",
+  "label": "Counted (censuses, then MHCLG)",
+  "models": [
+   "homes_eng_est"
+  ],
+  "default": true
  },
  {
   "id": "life_uk",
@@ -1325,5 +1330,23 @@
   "zero": false,
   "label": "Temperature 12k (100-year steps, band: 5–95%)",
   "note": "Global mean from pollen, marine and lake records (median of five methods), as a difference from 1800–1900."
+ },
+ {
+  "id": "homes_eng_est",
+  "theme": "People and settlements",
+  "title": "Homes in England, estimated before 1801",
+  "region": "England",
+  "unit": "homes",
+  "label": "Estimated: people ÷ average household (band: 4.44–4.81 per household)",
+  "sources": [
+   "est_pop_eng_broadberry2011",
+   "est_pop_eng_wrigley1997",
+   "household_size_boulton"
+  ],
+  "file": "homes_eng_est.csv",
+  "hidden": true,
+  "modelled": true,
+  "gap": 200,
+  "note": "Estimated for this site, not a published series: England's population divided by the average household of 4.44 people before 1750 and 4.81 after (Boulton, after Laslett); the band spans those two sizes. It counts households, which roughly equal homes: some homes were shared and some stood empty."
  }
 ]

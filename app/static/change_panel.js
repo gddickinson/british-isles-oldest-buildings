@@ -4,7 +4,8 @@
 // returns { setYear(y), refresh() }. `local` adds series made from this catalogue (e.g. records begun).
 const ChangePanel = (() => {
   const URL_ = (typeof IS_STATIC !== "undefined" && IS_STATIC ? "static" : "/static") + "/data/change/series.json";
-  const KEY = "bidb_change_graphs", RANGE_KEY = "bidb_change_range";
+  const KEY = "bidb_change_graphs", RANGE_KEY = "bidb_change_range", SEEN_KEY = "bidb_change_seen";
+  const ADDED = ["catalogue_standing", "dwellings_eng", "temp_global"];   // defaults added after choices were first saved
   const RANGES = [["Each graph's own years", "fit"], ["All time", -4000], ["Since AD 1000", 1000], ["Since 1500", 1500], ["Since 1700", 1700],
                   ["Since 1900", 1900]];
   let data = null;
@@ -44,7 +45,19 @@ const ChangePanel = (() => {
     range.value = String(store.get(RANGE_KEY, "fit"));
 
     const modelsOf = (s) => (s.models || []).map((id) => all.find((x) => x.id === id)).filter(Boolean);
-    const chosen = () => new Set(store.get(KEY, null) ?? all.filter((s) => s.default).map((s) => s.id));
+    // the graphs chosen in this browser; graphs added later that are shown by default join once (remembered as seen)
+    const chosen = () => {
+      const saved = store.get(KEY, null);
+      const seen = new Set(store.get(SEEN_KEY, null) ?? all.map((s) => s.id).filter((id) => !ADDED.includes(id)));
+      const pick = new Set(saved ?? all.filter((s) => s.default).map((s) => s.id));
+      const fresh = saved ? all.filter((s) => s.default && !seen.has(s.id)) : [];
+      fresh.forEach((s) => pick.add(s.id));
+      if (fresh.length || !store.get(SEEN_KEY, null)) {
+        store.set(SEEN_KEY, all.map((s) => s.id));
+        if (saved) store.set(KEY, [...pick]);
+      }
+      return pick;
+    };
     function drawList() {
       const on = chosen(), listed = all.filter((s) => !s.hidden), themes = [...new Set(listed.map((s) => s.theme))];
       list.innerHTML = themes.map((t) => `<div class="cp-theme"><b>${esc(t)}</b>${listed.filter((s) => s.theme === t).map((s) =>

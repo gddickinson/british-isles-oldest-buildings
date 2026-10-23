@@ -93,7 +93,8 @@ def claims():
                             "field": "age", "claim": f"{e.get('claim') or ''}. {e.get('evidence') or ''}".strip(". "),
                             "value": e.get("age_text"), "verdict": e.get("verdict") or "open",
                             "assessment": e.get("evidence") or "", "sources": e["sources"], "researched": "2026-10-22"})
-    return out
+    from .oldest_checks import claims as checked
+    return out + checked()
 
 
 def lists(conn=None):
@@ -112,29 +113,9 @@ def lists(conn=None):
         out[name] = {"title": spec["title"], "group": spec["group"],
                      "categories": [{"category": c, "entries": cats[c]} for c in spec["kinds"] if c in cats]}
     if conn is not None:
-        out.update(oldest_places(conn))
+        from .oldest_checks import earliest
+        out.update(earliest(conn))
     return out
-
-
-PLACE_GROUPS = ("Markets & trade", "Industrial heritage", "Infrastructure & utilities", "Graves & burial grounds",
-                "Sport & leisure", "Public institutions")
-
-
-def oldest_places(conn, per=6):
-    """The earliest dated places of each kind in the groups above (Wikidata dates, not checked)."""
-    q = ",".join("?" for _ in PLACE_GROUPS)
-    rows = conn.execute(f"""SELECT id, name, kind_group, kind_label, year_start, date_text, locality, nation FROM (
-        SELECT *, ROW_NUMBER() OVER (PARTITION BY kind_group, kind_label ORDER BY year_start, name) AS n FROM places
-        WHERE kind_group IN ({q}) AND year_start IS NOT NULL AND kind NOT IN ({",".join("?" for _ in KINDS)})
-              AND kind_label NOT IN ({",".join("?" for _ in KIND_LABEL)}))
-        WHERE n <= ? ORDER BY kind_group, kind_label, year_start""", (*PLACE_GROUPS, *KINDS, *KIND_LABEL.values(), per)).fetchall()
-    out = {}
-    for rid, name, group, label, year, text, loc, nation in rows:
-        g = out.setdefault(group, {"title": f"Earliest dated: {group}", "group": group, "unchecked": True, "categories": {}})
-        g["categories"].setdefault(label, []).append({"id": rid, "name": name, "age": text or str(year), "year": year,
-                                                      "location": ", ".join(x for x in (loc, nation) if x)})
-    return {f"places:{g}": {**v, "categories": [{"category": c, "entries": e} for c, e in v["categories"].items()]}
-            for g, v in out.items()}
 
 
 def records(name):

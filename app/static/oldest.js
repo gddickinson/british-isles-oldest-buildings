@@ -31,10 +31,12 @@ function listsHTML(lists) {
     <section class="type-block" id="l-${encodeURIComponent(l.title)}">
       <h2><span class="dot" style="background:${placeColor(l.group)}"></span>${esc(l.title)}
         <span class="hint"><a href="${IS_STATIC ? "places.html" : "/places"}?kind_group=${encodeURIComponent(l.group)}">${esc(l.group)} on the map and list</a></span></h2>
-      ${l.unchecked ? `<p class="hint">Dates as recorded on Wikidata, not yet checked against sources.</p>` : ""}
+      ${l.unchecked === undefined ? "" : `<p class="hint">Dates from Wikidata${l.unchecked
+        ? `; ${l.unchecked} not yet checked against sources (marked)` : `, each checked against its sources`}. Dates given only
+        to the decade or century are left out.</p>`}
       ${l.categories.map((c) => `<h3>${esc(c.category)}</h3><div class="examples">${c.entries.map((e) => `
         <a class="ex text" ${e.building ? `href="${buildingUrl(e.id)}"` : `href="#" data-place="${esc(e.id)}"`}><div><b>${esc(e.name)}</b>
-          <div class="date">${esc(e.age || "")}${VERDICT[e.verdict] ? ` <span class="hint">(${VERDICT[e.verdict]})</span>` : ""}</div>
+          <div class="date">${esc(e.age || "")}${VERDICT[e.verdict] ? ` <span class="hint">(${VERDICT[e.verdict]})</span>` : ""}${l.unchecked && !e.verdict ? ` <span class="hint">(unchecked)</span>` : ""}</div>
           <div class="meta">${esc([e.location, e.museum && "now at " + e.museum].filter(Boolean).join(" · "))}</div>
           ${e.claim ? `<div class="claim">${esc(e.claim)}</div>` : ""}</div></a>`).join("")}</div>`).join("")}
     </section>`).join("");

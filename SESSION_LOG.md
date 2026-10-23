@@ -509,3 +509,37 @@
   dates, research, Claude Code), how it is maintained (jobs, commands, releases, hosted copy, tests),
   sources, caveats. Checked rendered with GitHub's Markdown API: 29 figures, none broken; the database
   badge removed (the private repository's releases are invisible to shields.io).
+
+## 2026-10-22 — N5 checks, hosted places index, wrecks, bus stops, old Welsh names, time slider
+- N5 (`bidb/oldest_checks.py`, build stage after oldest_lists): 8,937 of 23,120 Wikidata dates in the six newer groups
+  are only to the decade or century (precision via wbgetentities: the query service was rate-limited to 1 request/min
+  during an outage); they now read "between 1800 and 1839" / "19th century" / "1830s" and are not candidates. Four
+  research agents (and one extra round) reviewed the 422 candidates against Wikipedia, list entries (British Listed
+  Buildings), NIAH and club histories: 283 kept, 92 corrected, 32 dropped, 15 open
+  (`data/curated/oldest_places_review.json`); 375 claims with quotes, all found by `bidb.evidence --check --new`.
+  Findings: market towns dated by settlement not charter; shops that are houses with later shopfronts; GAA grounds
+  dated by rebuilds; Wikidata's classes miss the oldest hospitals/universities/almshouses (the researched lists have them).
+- Hosted copy places index: location cells (`data/pcells/`, 1°×2°) + `places_index.json` + 16 id-hash shards;
+  `places_geo.json` gone. Detail view ~1–2 MB instead of 18 MB; a place ~6 MB instead of 77. Static review 103/103
+  after limiting cell requests to six at a time (Python's test server reset connections at 100).
+- Share codes (S2, `app/lan.py`): code form / `?code=` + cookie; trusted code = full access (pages show controls).
+  The auto-mode classifier refused a scripted edit of the access-control code; done with reviewed edits instead.
+- National Scenic Areas: all 40 from the Scottish Government ProtectedSites layer (OSM had 2).
+- Shipwrecks (`bidb/wrecks.py`): Canmore FORM='WRK' (3,768 after dropping obstructions) + Wreck Inventory of Ireland
+  CSV (3,564 with positions); offshore ones take the nearest building's nation, far-Atlantic Irish ones Ireland.
+- NaPTAN (`bidb/naptan.py`): 340,902 bus stops, 524 ferry terminals → table `stops`; `/api/stops`; hosted
+  `stops.json` for catalogue buildings; "Getting there" shows 🚏 and ⛴️.
+- Old Welsh place-name forms (`bidb/welsh_names.py`, RCAHMW WFS, 11,504 forms with a headname): 4,824 records linked
+  (town, locality part or name within 10 km); detail line "Old forms of the name" (Chepstow: castellum Gwent 1069).
+- Bike ride surfaces (`bidb/tour_surface.py`): Overpass `around` on the route in pieces of 40 points (long lines came
+  back empty), nearest way every 200 m → % paved / unpaved / traffic-free.
+- Through time (`static/time_slider.js`): year slider on the Map page with histogram, Play and era historic maps;
+  places map rows now carry year_start (hosted cells too).
+- `serve_dist.sh` (S3): serve dist/ here or `--to HOST` (free-space check); not started on the Mac mini.
+- Checked and not done: OS Old Series full detail (NLS tiles stop at z9; MapTiler key), Saxton/Speed (no tiles),
+  OSNI six-inch (NLS Ireland six-inch already covers NI), OS Open data (OSM covers it), CRT assets (no dates),
+  Victorian listed buildings by date (register layers have none). Roadmap section "Time slider and change over time"
+  added (T2 more historic maps, T3 dated network/change data, T4 texts: Gutenberg, Internet Archive, BHO, ADS).
+- Photos and floor plans (`bidb/photo_search.py`): a first name-only search matched namesakes (Villa Park, Denver) and
+  street maps; reverted (39 plans, 26 photos) and redone: plans only inside the building's own Commons category tree,
+  photos found by name only when geotagged within 3 km.

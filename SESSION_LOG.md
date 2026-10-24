@@ -996,3 +996,33 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_trade_imports`, `change_trade_values`, `change_trade_goods`, `map` pass. Tests 201 OK
   (tests/test_change_trade_quantities.py 6). Hosted copy and release not updated.
 - Next: C5b2b3c2 (quantities 1854-67), C5b2b3c3 (1912-38), C5b2b3d (UK produce exports 1840-53), or C5c.
+
+## 2026-10-24 — C5b2b3c2: the main imports by quantity, 1854-67
+- Read from the page images (leaf = OCR page index, image `page/n<leaf-1>`, cached in `<cache>/stat_abstract_img/`):
+  No. 16 table 10 leaves 272, 276 (pp. 20, 24; 1854-55), No. 18 table 15 leaves 534-541 (pp. 24-31; 1856-67), and
+  No. 19 table 15 leaves 28-29, 32-33 of the 1857-74 volume (pp. 24-25, 28-29; 1857-67). 384 figures appended to
+  `data/curated/change/data/trade_quantities_abstract_uk.csv` (rows `qe_*` for Nos. 16/18; No. 19 under the `q_*`
+  names of No. 30, whose rows it matches).
+- Units: the corn rows are in cwt as in No. 30, but Nos. 16 and 18 give only wheat, barley, oats, maize and wheat
+  flour: no other kinds of corn, no other meal, no total. No. 19 is the first edition with the full table and a
+  total of corn (every year's total agrees with its parts), so grain starts in 1857. Nothing else in Nos. 16/18 gives
+  all corn (the countries table is wheat and flour).
+- Timber: No. 18 gives 6.3-8.5% less than No. 19 every year 1857-67 (1857 sawn 1,316,275 vs 1,478,114 loads; hewn
+  with teak 1,210,926 vs 1,228,907; staves the same); No. 18's 1868 is also below No. 30, while No. 19's 1868 equals
+  No. 30's in every row. Timber quantities therefore start in 1857 too; the cause is not stated in the Abstract.
+- Sugar, tea and wool are printed the same in Nos. 18 and 19 for 1857-67; raw cotton is revised in No. 19 by up to
+  0.09%. So 1854-56 for those four come from Nos. 16 and 18 (`early_overlap` enforces this).
+- Prices (value ÷ quantity) to 1867 use the quantities of the values' editions (Nos. 16/18; grain from No. 19),
+  since the computed values of No. 18 go with its own quantities. No. 16 has no teak quantity though its values
+  include teak (noted).
+- Checks: every printed total of Nos. 16, 18, 19 agrees with its parts except No. 16's 1854 hewn timber, printed
+  1,216,920 (also in other editions of the 1846-65 and 1852-70 volumes) where the parts make 1,216,209, as one
+  edition of the 1846-65 volume prints (`SLIPS`). 371 of 384 figures found printed the same on another page of the
+  OCR (new page-level check excluding the source page); 1858 barley, hewn and sawn timber confirmed on No. 20's own
+  pages (leaves 150, 154); the 1857 figures No. 19 alone prints and No. 18's teak read again from enlarged crops.
+- `bidb/change_trade_quantities.py`: `early_goods`, `price_goods`, `early_overlap`, `SLIPS`, `_fields` (per-good
+  first years in the notes); graphs now "... 1854-1911", "Timber imported, 1857-1911". Source citation and
+  DATA_LICENSE.md row extended; tests 203 OK (2 new); ui_check `change_trade_quantities` (patterns updated),
+  `change_trade_imports`, `change_trade_values`, `change_trade_goods`, `map` pass; screenshot checked. Hosted copy
+  and release not updated.
+- Next: C5b2b3c3 (quantities 1912-38 from Nos. 70 and 83), C5b2b3d (UK produce exports 1840-53), or C5c.

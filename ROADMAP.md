@@ -243,7 +243,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       "Food import prices" (grain 189 in 1868, 86 in 1894, 117 in 1911; sugar 195, 79 in 1902; tea 226, 84 in 1902)
       and "Raw material import prices" (cotton 178, 69 in 1898, 138; wool 151, 80 in 1901; timber 107, 79 in 1887).
       No. 44 gives 1882's wool 1.1 million lb above No. 30 (other kinds and flocks counted from 1883).
-- [ ] C5b2b3c2 Quantities 1854-67 from Nos. 16 and 18 (check the units of the corn rows before joining).
+- [x] C5b2b3c2 (2026-10-24) Quantities 1854-67 from No. 16 (table 10, pp. 20, 24; 1854-55), No. 18 (table 15,
+      pp. 24-31; 1856-67) and No. 19 (table 15, pp. 24-25, 28-29; 1857-67): 384 printed figures. The corn rows are in
+      cwt as later, but Nos. 16 and 18 print only wheat, barley, oats, maize and wheat flour (no other kinds or meal,
+      6.8% of the total in 1857, and no total), so grain comes from No. 19, the first edition with the full table, and
+      begins in 1857. No. 18 gives 6.3-8.5% less timber than No. 19 for every year 1857-67 (mostly sawn; staves the
+      same; unexplained), and No. 19's 1868 equals No. 30's in every row, so timber also begins in 1857; sugar, tea
+      and wool are the same in Nos. 18 and 19, raw cotton up to 0.09% lower, so those four go back to 1854. Prices to
+      1867 use the values' own editions' quantities (Nos. 16 and 18; grain No. 19). Every printed total agrees except
+      No. 16's 1854 hewn timber (1,216,920, also in other editions; the parts make 1,216,209); 371 figures printed the
+      same in another edition's OCR, 1858's barley and timber on No. 20's page, the rest (1857 in No. 19, No. 18's
+      teak) read again from enlarged crops. Graphs now 1854-1911 (timber 1857-1911): raw cotton 396 thousand tons in
+      1854, 234 in 1862; cotton price index 98 in 1854, 376 in 1864; grain price 177 in 1857, 202 in 1867.
 - [ ] C5b2b3c3 Quantities 1912-38 from Nos. 70 and 83 (the classification of 1920; cotton in centals).
 - [ ] C5b2b3d UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.

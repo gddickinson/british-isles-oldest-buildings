@@ -1,5 +1,5 @@
-"""Main imports by quantity from the Statistical Abstract (roadmap C5b2b3c1): the readings file, its totals, the join
-of the old and new tables, units and the price index."""
+"""Main imports by quantity from the Statistical Abstract (roadmap C5b2b3c1, C5b2b3c2): the readings file, its totals,
+the joins of the editions, units and the price index."""
 import tempfile
 import unittest
 from pathlib import Path
@@ -13,7 +13,32 @@ class TradeQuantities(unittest.TestCase):
     def test_readings_add_up(self):
         rows = tq.load()
         self.assertEqual(tq.check(rows), [])
-        self.assertEqual(sorted(tq.goods(rows)), list(range(1868, 1912)))
+        self.assertEqual(sorted(tq.goods(rows)), list(range(1854, 1912)))
+
+    def test_early_editions(self):
+        rows = tq.load()
+        g, p = tq.goods(rows), tq.price_goods(rows)
+        self.assertNotIn("grain", g[1856])  # Nos. 16 and 18 give no other kinds of corn
+        self.assertNotIn("timber", g[1856])
+        self.assertEqual(g[1857]["grain"], rows["q_corn_total"][1857])  # No. 19
+        self.assertEqual(g[1855]["sugar"], rows["qe_sugar_refined"][1855] + rows["qe_sugar_rawtotal"][1855])
+        # prices to 1867 with the values' editions: No. 18's timber (with teak), No. 19's grain
+        self.assertEqual(p[1860]["timber"], sum(rows["qe_" + k][1860] for k in tq.EARLY_WOOD))
+        self.assertEqual(p[1860]["grain"], g[1860]["grain"])
+        self.assertEqual(p[1870], g[1870])
+        bad, timber = tq.early_overlap(rows)
+        self.assertEqual(bad, {})
+        self.assertEqual(sorted(timber), list(range(1857, 1868)))
+        self.assertTrue(all(d > 0 for d in timber.values()))  # No. 19 always above No. 18
+        rows["qe_tea"][1860] += 1
+        self.assertIn(1860, tq.early_overlap(rows)[0])
+
+    def test_known_slip(self):
+        rows = tq.load()
+        self.assertEqual(rows["qe_wood_hewntotal"][1854], 1216920)  # as printed
+        self.assertEqual(tq.check(rows), [])
+        rows["qe_wood_hewntotal"][1855] += 7
+        self.assertEqual(tq.check(rows), ["qe_wood_hewntotal 1855: parts - total = -7"])
 
     def test_old_and_new_tables_join(self):
         rows = tq.load()

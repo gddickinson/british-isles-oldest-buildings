@@ -2691,7 +2691,7 @@
  {
   "id": "sa_qty_grain_uk",
   "theme": "Prosperity and work",
-  "title": "Food imports by weight, 1868-1911",
+  "title": "Food imports by weight, 1854-1911",
   "region": "United Kingdom",
   "unit": "kt",
   "unit_long": "thousand tons a year",
@@ -2705,7 +2705,7 @@
    "sa_qty_sugar_uk",
    "sa_qty_tea_uk"
   ],
-  "note": "The weight of the grain and flour, sugar and tea brought into the United Kingdom each year, in thousand tons (the Abstract gives hundredweights and pounds), from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The totals of corn were checked against their parts, and every figure was found printed the same in another edition. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values. Grain and flour is the same as in \"Food imports\": wheat, barley, oats, maize, peas, beans, rye (and lentils from 1902), wheat flour and other meal, without rice; No. 59 counts lentils with seeds until April 1902 (0.17 million cwt in 1897). Sugar is refined and raw sugar, without molasses and glucose. Grain and flour was 3,350 thousand tons in 1868, 9,862 in 1911 (most: 10,460 in 1903); sugar 626 and 1,898; tea 69 and 154. Quantities, not values: see \"Food import prices\" for what each cost.",
+  "note": "The weight of the grain and flour, sugar and tea brought into the United Kingdom each year, in thousand tons (the Abstract gives hundredweights and pounds), from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 19, 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The printed totals were checked against their parts, and every figure was found printed the same in another edition or read again on an enlarged crop. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values. Nos. 16 and 18 (1854-56 here) print only wheat, barley, oats, maize and wheat flour, not the other kinds of corn and meal (6.8% of the total in 1857), so grain and flour begins in 1857 with No. 19's full table; No. 19's 1868 equals No. 30's in every row. Grain and flour is the same as in \"Food imports\": wheat, barley, oats, maize, peas, beans, rye (and lentils from 1902), wheat flour and other meal, without rice; No. 59 counts lentils with seeds until April 1902 (0.17 million cwt in 1897). Sugar is refined and raw sugar, without molasses and glucose; Nos. 16 and 18 give the same sugar and tea as No. 19 for 1857-67. Grain and flour was 1,758 thousand tons in 1857, 9,862 in 1911 (most: 10,460 in 1903); sugar 476 in 1854 and 1,898; tea 38 and 154. Quantities, not values: see \"Food import prices\" for what each cost.",
   "zero": true
  },
  {
@@ -2743,7 +2743,7 @@
  {
   "id": "sa_qty_cotton_uk",
   "theme": "Prosperity and work",
-  "title": "Raw cotton and wool imported by weight, 1868-1911",
+  "title": "Raw cotton and wool imported by weight, 1854-1911",
   "region": "United Kingdom",
   "unit": "kt",
   "unit_long": "thousand tons a year",
@@ -2756,7 +2756,7 @@
   "models": [
    "sa_qty_wool_uk"
   ],
-  "note": "The weight of the raw cotton and wool brought into the United Kingdom each year, in thousand tons (the Abstract gives hundredweights of cotton, 1911 in centals of 100 lb, and pounds of wool), from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The totals of corn were checked against their parts, and every figure was found printed the same in another edition. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values. Wool is sheep's and lambs' wool with alpaca, vicuna and llama, and from 1883 \"other kinds and flocks\" (No. 44 gives 1882 so as 490.1 million lb, No. 30, used here, 489.0 million), not goats' hair or mohair; No. 59 (and No. 48) give 1898's sheep's wool 5.26 million lb above No. 46. Raw cotton was 593 thousand tons in 1868, 985 in 1911 (most: 1,066 in 1907); wool 113 and 359 (most: 363 in 1909).",
+  "note": "The weight of the raw cotton and wool brought into the United Kingdom each year, in thousand tons (the Abstract gives hundredweights of cotton, 1911 in centals of 100 lb, and pounds of wool), from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 19, 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The printed totals were checked against their parts, and every figure was found printed the same in another edition or read again on an enlarged crop. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values. Wool is sheep's and lambs' wool with alpaca, vicuna and llama, and from 1883 \"other kinds and flocks\" (No. 44 gives 1882 so as 490.1 million lb, No. 30, used here, 489.0 million), not goats' hair or mohair; No. 59 (and No. 48) give 1898's sheep's wool 5.26 million lb above No. 46. 1854-56 are from Nos. 16 and 18, which give the same wool as No. 19 for 1857-67 and raw cotton up to 0.09% below it. Raw cotton was 396 thousand tons in 1854, 985 in 1911 (most: 1,066 in 1907); wool 47 and 359 (most: 363 in 1909).",
   "zero": true
  },
  {
@@ -2778,7 +2778,7 @@
  {
   "id": "sa_qty_timber_uk",
   "theme": "Prosperity and work",
-  "title": "Timber imported, 1868-1911",
+  "title": "Timber imported, 1857-1911",
   "region": "United Kingdom",
   "unit": "m loads",
   "unit_long": "million loads a year",
@@ -2788,13 +2788,13 @@
   ],
   "file": "sa_qty_timber_uk.csv",
   "default": false,
-  "note": "The timber brought into the United Kingdom each year, in million loads (the Abstract's measure), from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The totals of corn were checked against their parts, and every figure was found printed the same in another edition. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values. Timber is hewn (with pit props), sawn or split, and staves, as in \"Timber imports\"; mahogany and the other furniture woods, counted in tons, are left out. It was 4.13 million loads in 1868, 9.46 in 1911 (most: 10.11 in 1903).",
+  "note": "The timber brought into the United Kingdom each year, in million loads (the Abstract's measure), from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 19, 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The printed totals were checked against their parts, and every figure was found printed the same in another edition or read again on an enlarged crop. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values. Timber is hewn (with pit props), sawn or split, and staves, as in \"Timber imports\"; mahogany and the other furniture woods, counted in tons, are left out. It begins in 1857 with No. 19: No. 18 (with No. 16, the only tables for 1854-56) gives 6.3-8.5% less timber than No. 19 for each year 1857-67 (mostly sawn or split; staves are the same); the Abstract does not say why. Timber was 2.82 million loads in 1857, 9.46 in 1911 (most: 10.11 in 1903).",
   "zero": true
  },
  {
   "id": "sa_qty_grain_price_uk",
   "theme": "Prosperity and work",
-  "title": "Food import prices, 1868-1911",
+  "title": "Food import prices, 1854-1911",
   "region": "United Kingdom",
   "unit": "index",
   "unit_long": "index, 1900 = 100",
@@ -2809,7 +2809,7 @@
    "sa_qty_sugar_price_uk",
    "sa_qty_tea_price_uk"
   ],
-  "note": "The average value of a unit of each import (the value in \"Food imports\" divided by the quantity in the same rows of the Abstract's tables), as an index with 1900 = 100. To 1870 the values are computed from average prices, from 1871 declared by the importers; an average over many kinds and qualities moves when the mix changes, so it is a rough guide to prices. Grain and flour stood at 189 in 1868, 86 in 1894 (the lowest) and 117 in 1911; sugar at 195, 79 (in 1902) and 118; tea at 226, 84 (in 1902) and 105. The quantities are from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The totals of corn were checked against their parts, and every figure was found printed the same in another edition. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values.",
+  "note": "The average value of a unit of each import (the value in \"Food imports\" divided by the quantity in the same rows of the Abstract's tables), as an index with 1900 = 100. To 1870 the values are computed from average prices, from 1871 declared by the importers; an average over many kinds and qualities moves when the mix changes, so it is a rough guide to prices. To 1867 the quantities are those of the values' own editions, Nos. 16 and 18 (grain from No. 19, from 1857: they give no other kinds of corn); No. 16 gives no quantity of teak, which its timber values for 1854-55 include. Grain and flour stood at 177 in 1857, 86 in 1894 (the lowest) and 117 in 1911; sugar at 181 in 1854, 79 (in 1902) and 118; tea at 181, 84 (in 1902) and 105. The quantities are from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 19, 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The printed totals were checked against their parts, and every figure was found printed the same in another edition or read again on an enlarged crop. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values.",
   "zero": true
  },
  {
@@ -2849,7 +2849,7 @@
  {
   "id": "sa_qty_cotton_price_uk",
   "theme": "Prosperity and work",
-  "title": "Raw material import prices, 1868-1911",
+  "title": "Raw material import prices, 1854-1911",
   "region": "United Kingdom",
   "unit": "index",
   "unit_long": "index, 1900 = 100",
@@ -2864,7 +2864,7 @@
    "sa_qty_wool_price_uk",
    "sa_qty_timber_price_uk"
   ],
-  "note": "The average value of a unit of each import (the value in \"Raw material imports\" divided by the quantity in the same rows of the Abstract's tables), as an index with 1900 = 100. To 1870 the values are computed from average prices, from 1871 declared by the importers; an average over many kinds and qualities moves when the mix changes, so it is a rough guide to prices. Raw cotton stood at 178 in 1868, 69 in 1898 (the lowest) and 138 in 1911; wool at 151, 80 (in 1901) and 105; timber at 107, 79 (in 1887) and 96. The quantities are from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The totals of corn were checked against their parts, and every figure was found printed the same in another edition. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values.",
+  "note": "The average value of a unit of each import (the value in \"Raw material imports\" divided by the quantity in the same rows of the Abstract's tables), as an index with 1900 = 100. To 1870 the values are computed from average prices, from 1871 declared by the importers; an average over many kinds and qualities moves when the mix changes, so it is a rough guide to prices. To 1867 the quantities are those of the values' own editions, Nos. 16 and 18 (grain from No. 19, from 1857: they give no other kinds of corn); No. 16 gives no quantity of teak, which its timber values for 1854-55 include. Raw cotton stood at 98 in 1854, 69 in 1898 (the lowest) and 138 in 1911; wool at 154, 80 (in 1901) and 105; timber at 164, 79 (in 1887) and 96. The quantities are from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 19, 30, 45, 46 and 59 (and No. 62 for 1904's grain; edition, page and table per figure in the data file). The printed totals were checked against their parts, and every figure was found printed the same in another edition or read again on an enlarged crop. Where No. 59 (the Board's new classification) and No. 46 both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them, as for the values.",
   "zero": true
  },
  {

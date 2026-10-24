@@ -2530,5 +2530,162 @@
   "default": false,
   "hidden": true,
   "zero": true
+ },
+ {
+  "id": "sa_imports_grain_uk",
+  "theme": "Prosperity and work",
+  "title": "Food imports, 1854-1911",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Grain and flour",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_grain_uk.csv",
+  "default": false,
+  "models": [
+   "sa_imports_sugar_uk",
+   "sa_imports_tea_uk"
+  ],
+  "note": "The value of the grain and flour, sugar and tea brought into the United Kingdom each year, at the prices of the time, from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 30, 45, 46 and 59 (edition, page and table per figure in the data file). Imports are valued as they arrived (cost, insurance and freight); to 1870 the Abstract gives a value computed from average prices, from 1871 the value declared by the importers. Every total the tables print was checked against its printed parts, and the other figures were found printed the same in another edition. Where the Board's new classification of 1897 (No. 59) and the old tables (No. 46) both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them. Grain and flour is the Abstract's \"Total of Corn\": wheat, barley, oats, maize, other kinds (peas, beans, rye, lentils), wheat flour and other meal, without rice; No. 59 counts lentils with seeds until 15 April 1902, so 1897-1901 lack them (0.05 million in 1897), and from 1902 its other meal includes sharps, middlings and some offals. Sugar is refined and raw (unrefined, cane and beet) sugar, without molasses and glucose. Grain and flour was 21.8 million in 1854, 41.4 million in 1867, 79.1 million in 1909 and 71.8 million in 1911; sugar 10.2, 27.2 (in 1877) and 26.6 million; tea 5.5, 13.8 (in 1875) and 13.0 million. Values at the prices of the time, not quantities.",
+  "zero": true
+ },
+ {
+  "id": "sa_imports_sugar_uk",
+  "theme": "Prosperity and work",
+  "title": "Sugar imports",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Sugar",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_sugar_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_imports_tea_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea imports",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Tea",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_tea_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_imports_cotton_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw material imports, 1854-1911",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Raw cotton",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_cotton_uk.csv",
+  "default": false,
+  "models": [
+   "sa_imports_wool_uk",
+   "sa_imports_timber_uk"
+  ],
+  "note": "The value of the raw cotton, wool and timber brought into the United Kingdom each year, at the prices of the time, from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 30, 45, 46 and 59 (edition, page and table per figure in the data file). Imports are valued as they arrived (cost, insurance and freight); to 1870 the Abstract gives a value computed from average prices, from 1871 the value declared by the importers. Every total the tables print was checked against its printed parts, and the other figures were found printed the same in another edition. Where the Board's new classification of 1897 (No. 59) and the old tables (No. 46) both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them. Wool is sheep's and lambs' wool with alpaca, vicuna and llama, and flocks (and waste) from 1883 (about 0.06 million a year), not goats' hair or mohair; No. 59 revises 1898's sheep's wool by 0.15 million (23.59 against No. 46's 23.44 million). Timber is hewn (with teak and pit props), sawn or split, and staves, not mahogany or other furniture woods; for 1866-67 later editions (Nos. 19-22) give 0.03 million more hewn and about 0.33 million more sawn timber than No. 18, which is used, and No. 30's 1868 is 0.49 million above No. 18's. Raw cotton was 20.2 million in 1854, 38.6 million in 1861, 78.2 million in 1864 (the American Civil War was fought in 1861-65), 36.5 million in 1885 and 71.2 million in 1911 (highest 78.2 million, in 1864); wool 6.5, 34.2 (in 1910) and 33.4 million; timber 11.1, 25.9 (in 1900) and 23.8 million.",
+  "zero": true
+ },
+ {
+  "id": "sa_imports_wool_uk",
+  "theme": "Prosperity and work",
+  "title": "Wool imports",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Wool",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_wool_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_imports_timber_uk",
+  "theme": "Prosperity and work",
+  "title": "Timber imports",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Timber",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_timber_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_imports_food_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Main imports, share of all imports, 1854-1911",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of all imports",
+  "label": "Grain and flour, sugar and tea",
+  "sources": [
+   "stat_abstract_imports_uk",
+   "stat_abstract_trade_uk"
+  ],
+  "file": "sa_imports_food_share_uk.csv",
+  "default": false,
+  "models": [
+   "sa_imports_grain_share_uk",
+   "sa_imports_materials_share_uk"
+  ],
+  "note": "The main imports as a share of all imports (the Abstract's summary table, as in \"Overseas trade at the prices of the time\"). Grain and flour, sugar and tea together were 24.6% of all imports in 1854, 26.2% in 1877 and 16.4% in 1911; grain and flour alone 14.3%, 16.9% (in 1879) and 10.6%; raw cotton, wool and timber together 24.8%, 38.4% (in 1864) and 18.9%. Values at the prices of the time: a falling share can mean lower prices as well as smaller quantities.",
+  "zero": true
+ },
+ {
+  "id": "sa_imports_grain_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Grain and flour, share of imports",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of all imports",
+  "label": "Grain and flour",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_grain_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_imports_materials_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw cotton, wool and timber, share of imports",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of all imports",
+  "label": "Raw cotton, wool and timber",
+  "sources": [
+   "stat_abstract_imports_uk"
+  ],
+  "file": "sa_imports_materials_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
  }
 ]

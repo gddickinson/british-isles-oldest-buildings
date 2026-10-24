@@ -911,3 +911,33 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_trade_values`, `change_trade`, `map` pass. Tests 189 OK (2 new in tests/test_change_trade_goods.py).
   Hosted copy and release not updated.
 - Next: C5b2b3 (main imports 1854-1938, UK produce 1840-53), or C5c (occupations by sector).
+
+## 2026-10-24 — C5b2b3a: the main imports by value 1854-1911
+- C5b2b3 split: C5b2b3a values 1854-1911 (done), C5b2b3b 1912-38 (Nos. 70, 83), C5b2b3c quantities, C5b2b3d UK
+  produce exports 1840-53.
+- Read from the page images (leaf = OCR page index, image `page/n<leaf-1>`): No. 16 table 11 pp. 26, 30 (1854-55),
+  No. 18 table 16 pp. 32-39 (1856-67), No. 30 table 22 pp. 46-53 (1868-82), No. 45 table 28 pp. 68-78 (1883),
+  No. 46 table 28 pp. 70-81 (1884-98), No. 59 table 41 pp. 140-145 (1897-1911), and No. 62 table 39 p. 142 for 1904
+  grain (No. 59's column is lost in the binding). 1,496 figures in new
+  `data/curated/change/data/trade_imports_abstract_uk.csv`. OCR page index downloaded for No. 62's item.
+- Checks: every printed total agrees with its parts (corn in Nos. 16-46, raw sugar and timber in Nos. 16/18, No. 59's
+  grain and flour, wood and timber, wool); every figure without a total found printed in another edition's OCR (whole
+  numbers only now: the old substring search let 348,338 match 2,348,338). Settled: No. 30 prints 1868 other corn
+  1,981,558 (Nos. 14-26: 1,981,553, which makes its total agree); 1875 raw sugar and 1863 raw sugar cut at the page
+  edge (other editions and the total); No. 46's 1885 teak 348,338 (Nos. 45, 48: 648,338) and 1884 hewn 303,936 (Nos.
+  43-45: 303,966); 1886 sawn fir 7,813,046 is right (No. 48's page; the OCR reads 8).
+- Definitions at the joins: No. 59's grain minus rice, rice meal and farinaceous = the old "Total of Corn" less lentils
+  (with seeds to April 1902): 1897 -46,919, 1898 -57,855; wool = sheep's + alpaca etc. + flocks (No. 46's "other kinds
+  and flocks" = No. 59's alpaca + flocks exactly), 1898 sheep's wool revised +149,713 in No. 59; sugar = refined +
+  raw (molasses, glucose out); timber = hewn (with teak, pit props) + sawn + staves (mahogany, furniture woods out).
+  Nos. 40-42 print 1883 hewn and sawn equal to No. 45's parts. Later editions (Nos. 19-22) give 1866-67 timber
+  ~0.36 million above No. 18 (no footnote found); No. 18 kept, gap in the note.
+- New `bidb/change_trade_imports.py`, nine series `sa_imports_*` in three graphs (default off, Prosperity and work):
+  "Food imports, 1854-1911", "Raw material imports, 1854-1911", "Main imports, share of all imports, 1854-1911".
+  Source `stat_abstract_imports_uk`; DATA_LICENSE.md row extended. Change over time: 164 series.
+- Two phrases written from memory (wheat price halving, cotton prices fourfold) were removed from the notes before
+  commit; the notes give only the Abstract's figures.
+- Checked in headless Chrome (screenshot of the three graphs); ui_check `change_trade_imports` added,
+  `change_trade_goods`, `change_trade_values`, `map` pass. Tests 194 OK (tests/test_change_trade_imports.py 5).
+  Hosted copy and release not updated.
+- Next: C5b2b3b (imports 1912-38 from Nos. 70 and 83), or C5c (occupations by sector).

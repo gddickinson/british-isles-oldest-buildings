@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 155
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 164
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -202,8 +202,24 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       vs No. 83) iron -0.41m and machinery +1.98m (boilers gathered under machinery; axles, tyres and wheels added
       back to iron). Graphs now 1854-1938 (cotton 126.5 £m in 1913, 401.4 in 1920, 49.4 in 1938; coal 120.3 in 1920,
       20.5 in 1926; textiles 17.0% of UK produce exported in 1938).
-- [ ] C5b2b3 The main imports (raw cotton, wool, grain and flour, sugar, tea, timber; values and quantities) from the
-      same scans 1854-1938; UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
+- C5b2b3 The main imports (raw cotton, wool, grain and flour, sugar, tea, timber; values and quantities) from the
+      same scans 1854-1938; UK produce exports 1840-53 (declared values) from Nos. 8 and 13. Split 2026-10-24:
+- [x] C5b2b3a (2026-10-24) The main imports by value 1854-1911 (new `bidb/change_trade_imports.py`), read from the
+      page images of Nos. 16 (1854-55), 18 (1856-67), 30 (1868-82), 45 (1883), 46 (1884-98) and 59 (1897-1911; 1904
+      grain from No. 62, the column lost in the binding) → `change/data/trade_imports_abstract_uk.csv` (1,496 printed
+      figures). Every printed total agrees with its parts (corn, raw sugar and timber in Nos. 16/18, No. 59's grain,
+      wood and wool); every other figure printed the same in another edition. Settled from other editions: No. 30's
+      1868 other corn (1,981,558; 1,981,553 makes its total agree), 1875 raw sugar (cut at the page edge), No. 46's
+      1884 hewn timber and 1885 teak. No. 59 brought back to the old definitions: 1897-98 agree except lentils (with
+      seeds in No. 59 until April 1902: 0.05-0.06 million) and 1898's sheep's wool (revised +0.15 million). Graphs
+      "Food imports, 1854-1911" (grain and flour 21.8 £m in 1854, 79.1 in 1909, 71.8 in 1911; sugar; tea), "Raw
+      material imports, 1854-1911" (raw cotton 20.2 → 78.2 in 1864 → 71.2; wool 6.5 → 33.4; timber 11.1 → 23.8) and
+      "Main imports, share of all imports" (food 24.6% → 16.4%; raw cotton, wool and timber 24.8%, 38.4% in 1864,
+      18.9%). Timber in later editions (Nos. 19-22) runs ~0.36 million above No. 18 for 1866-67, unexplained; No. 18
+      kept (the summary table's edition), the gap stated in the note.
+- [ ] C5b2b3b The same imports 1912-38 from Nos. 70 and 83 (the 1920 classification; overlaps 1911, 1924-25).
+- [ ] C5b2b3c Quantities of the same imports (cwt, lb, loads) 1854-1938, beside the values.
+- [ ] C5b2b3d UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).

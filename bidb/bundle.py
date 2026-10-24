@@ -2,7 +2,9 @@
 
     python -m bidb.bundle fetch      download data/<db>.sqlite.gz from the release in data/bundled.json
     python -m bidb.bundle release    package the current database and publish it as a new release
-                                     (needs the GitHub CLI `gh`, signed in); updates data/bundled.json
+                                     (needs the GitHub CLI `gh`, signed in); updates data/bundled.json.
+                                     Draft first, upload with retries, checked against GitHub's SHA-256,
+                                     then published; an interrupted run carries on with its draft
 
 data/bundled.json (committed) names the release tag, asset, size, date and SHA-256; downloads are
 checked against it. The repository is private, so downloading needs GitHub access: the GitHub CLI
@@ -95,20 +97,89 @@ def fetch(log=print):
     part.replace(BUNDLED)
 
 
+API = "https://api.github.com"
+UPLOADS = "https://uploads.github.com"
+ATTEMPTS = 5
+
+
+class _Reader:
+    """The file as an upload body with a length (GitHub needs Content-Length) that reports progress."""
+    def __init__(self, path):
+        self.f, self.size, self.done = open(path, "rb"), path.stat().st_size, 0
+
+    def __len__(self):
+        return self.size
+
+    def read(self, n=-1):
+        block = self.f.read(1 << 16 if n is None or n < 0 else min(n, 1 << 16))
+        self.done += len(block)
+        progress.items(self.done, self.size)
+        return block
+
+    def close(self):
+        self.f.close()
+
+
+def _github(method, url, token, **kw):
+    r = requests.request(method, url, headers={"Authorization": f"Bearer {token}", "User-Agent": USER_AGENT,
+                                               "Accept": "application/vnd.github+json", **kw.pop("headers", {})},
+                         timeout=kw.pop("timeout", 60), **kw)
+    r.raise_for_status()
+    return r.json() if r.content else None
+
+
+def _draft(repo, token, day, notes, log):
+    """The draft release for today left by an interrupted run, else a new one (tag db-<day>[-n])."""
+    releases = _github("GET", f"{API}/repos/{repo}/releases?per_page=100", token)
+    for rel in releases:
+        if rel["draft"] and rel["tag_name"].startswith(f"db-{day}"):
+            log(f"Carrying on with draft release {rel['tag_name']}")
+            return rel
+    tags, tag, n = {r["tag_name"] for r in releases}, f"db-{day}", 2
+    while tag in tags:
+        tag, n = f"db-{day}-{n}", n + 1
+    return _github("POST", f"{API}/repos/{repo}/releases", token,
+                   json={"tag_name": tag, "name": f"Database {day}", "body": notes, "draft": True})
+
+
+def _upload(repo, rel, token, path, digest, log):
+    """Upload the asset, retrying after a dropped upload (slow connections: GitHub gives up on a stalled
+    body with HTTP 408); a half-uploaded or mismatching asset is removed first. Returns the asset."""
+    url = f"{API}/repos/{repo}/releases/{rel['id']}/assets"
+    for attempt in range(1, ATTEMPTS + 1):
+        for a in _github("GET", url, token):
+            if a["name"] == path.name:
+                if a["state"] == "uploaded" and a["size"] == path.stat().st_size and a.get("digest") == digest:
+                    return a
+                _github("DELETE", a["url"], token)
+        body, t0 = _Reader(path), time.time()
+        log(f"Uploading {path.name} ({body.size / 1e6:.0f} MB), attempt {attempt} of {ATTEMPTS}")
+        try:
+            a = _github("POST", f"{UPLOADS}/repos/{repo}/releases/{rel['id']}/assets", token, data=body,
+                        params={"name": path.name}, headers={"Content-Type": "application/gzip"}, timeout=(60, 900))
+            log(f"Uploaded in {time.time() - t0:.0f} s ({body.size / 1e3 / max(time.time() - t0, 1):.0f} KB/s)")
+            return a
+        except requests.RequestException as e:
+            log(f"Upload failed after {time.time() - t0:.0f} s: {e}")
+            if attempt < ATTEMPTS:
+                time.sleep(min(30 * attempt, 120))
+        finally:
+            body.close()
+    raise RuntimeError(f"The upload failed {ATTEMPTS} times; draft release {rel['tag_name']} is kept and the next "
+                       "`python -m bidb.bundle release` carries on with it.")
+
+
 def release(log=print):
-    """Package the current database and publish it as a new GitHub release; update the manifest."""
+    """Package the current database and publish it as a new GitHub release; update the manifest.
+    Draft release -> upload with retries -> size and SHA-256 checked against GitHub's -> published."""
     from .setup import package
-    if not shutil.which("gh"):
-        raise RuntimeError("The GitHub CLI `gh` is needed to publish a release.")
+    token = _token()
+    if not shutil.which("gh") or not token:
+        raise RuntimeError("Publishing a release needs the GitHub CLI `gh`, signed in (or a token in GH_TOKEN).")
     package(log)
     repo = subprocess.run(["gh", "repo", "view", "--json", "nameWithOwner", "-q", ".nameWithOwner"],
                           capture_output=True, text=True, check=True).stdout.strip()
-    existing = subprocess.run(["gh", "release", "list", "--limit", "200", "--json", "tagName", "-q", ".[].tagName"],
-                              capture_output=True, text=True, check=True).stdout.split()
     day = time.strftime("%Y-%m-%d")
-    tag, n = f"db-{day}", 2
-    while tag in existing:
-        tag, n = f"db-{day}-{n}", n + 1
     from .config import db_path
     import sqlite3
     conn = sqlite3.connect(db_path())
@@ -117,11 +188,20 @@ def release(log=print):
     notes = (f"Bundled database for a new installation ({day}): {counts['buildings']:,} buildings, "
              f"{counts['places']:,} places, {counts['persons']:,} people. `./run.sh` or the setup page downloads it; "
              "it is not needed when you build the database yourself.")
-    subprocess.run(["gh", "release", "create", tag, str(BUNDLED), "--title", f"Database {day}", "--notes", notes],
-                   check=True)
-    MANIFEST.write_text(json.dumps({"repo": repo, "tag": tag, "asset": BUNDLED.name, "bytes": BUNDLED.stat().st_size,
-                                    "sha256": sha256(BUNDLED), "date": day, **counts}, indent=1) + "\n")
-    log(f"Released {tag}; commit data/bundled.json so new installations download it.")
+    digest = "sha256:" + sha256(BUNDLED)
+    rel = _draft(repo, token, day, notes, log)
+    asset = _upload(repo, rel, token, BUNDLED, digest, log)
+    asset = _github("GET", asset["url"], token)
+    if asset["size"] != BUNDLED.stat().st_size or asset.get("digest", digest) != digest:
+        _github("DELETE", asset["url"], token)
+        raise ValueError(f"GitHub's copy does not match ({asset['size']} bytes, {asset.get('digest')}); it was "
+                         f"removed and draft release {rel['tag_name']} kept.")
+    log("GitHub's copy matches: " + ("SHA-256 " + digest[7:19] + "…" if asset.get("digest") else "size (no digest given)"))
+    _github("PATCH", f"{API}/repos/{repo}/releases/{rel['id']}", token, json={"draft": False, "make_latest": "true"})
+    MANIFEST.write_text(json.dumps({"repo": repo, "tag": rel["tag_name"], "asset": BUNDLED.name,
+                                    "bytes": BUNDLED.stat().st_size, "sha256": digest[7:], "date": day, **counts},
+                                   indent=1) + "\n")
+    log(f"Released {rel['tag_name']}; commit data/bundled.json so new installations download it.")
 
 
 if __name__ == "__main__":

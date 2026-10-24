@@ -27,7 +27,30 @@ from .wikipedia_list import _LINK, _cells, _strip_wikitext
 PAGES = ["List of hoards in Great Britain", "List of hoards in Ireland"]
 KINDS = ("hoard",)
 GROUP = "Finds & treasures"
-_COORD = re.compile(r"\{\{\s*coord\s*\|\s*(-?[\d.]+)\s*\|\s*(-?[\d.]+)", re.I)
+_COORD = re.compile(r"\{\{\s*coord\s*\|([^}]*)\}\}", re.I)
+
+
+def coord(text):
+    """(lat, lon) from the first {{coord}} in text: decimal ({{coord|51.5|-0.1}}) or degrees, minutes and
+    seconds with hemispheres ({{coord|51|30|N|0|7|W}}, {{coord|51|30|15|N|0|7|5|W}}); None when there is none."""
+    m = _COORD.search(text or "")
+    if not m:
+        return None
+    parts = [p.strip() for p in m.group(1).split("|")]
+    hemi = [i for i, p in enumerate(parts) if p.upper() in ("N", "S", "E", "W")]
+
+    def num(p):
+        return float(p) if re.fullmatch(r"-?\d+(\.\d+)?", p) else None
+    try:
+        if len(hemi) >= 2:
+            i, j = hemi[:2]
+            lat = sum(num(p) / 60 ** k for k, p in enumerate(parts[:i]))
+            lon = sum(num(p) / 60 ** k for k, p in enumerate(parts[i + 1:j]))
+            return (-lat if parts[i].upper() == "S" else lat, -lon if parts[j].upper() == "W" else lon)
+        lat, lon = num(parts[0]), num(parts[1])
+    except (TypeError, IndexError):
+        return None
+    return (lat, lon) if lat is not None and lon is not None else None
 
 
 def wikitext(title):
@@ -52,16 +75,15 @@ def parse(text, page):
                 if len(cells) < 7 or cells[0].startswith("!"):
                     continue
                 name_cell, _, date, place, found, where, contents = cells[:7]
-                coord = _COORD.search(place)
-                if not coord:
+                where_ll = coord(place)
+                if not where_ll:
                     continue
                 link = _LINK.search(name_cell)
                 name = _strip_wikitext(name_cell)
                 now = [m.group(2) or m.group(1) for m in _LINK.finditer(where)][:1] or (
                     [_strip_wikitext(where).split(",")[0]] if _strip_wikitext(where) else [])
                 out.append({"name": name, "title": link.group(1).strip() if link else None, "period": period,
-                            "date": _strip_wikitext(date) or None, "lat": float(coord.group(1)),
-                            "lon": float(coord.group(2)),
+                            "date": _strip_wikitext(date) or None, "lat": where_ll[0], "lon": where_ll[1],
                             "place": re.sub(r"(,\s*)+", ", ", _strip_wikitext(re.sub(r"<br\s*/?>", ", ", re.sub(
                                 r"<small>.*?</small>", "", place, flags=re.S))).replace("\n", ", ")).strip(", ") or None,
                             "found": _strip_wikitext(found) or None, "now_in": now,

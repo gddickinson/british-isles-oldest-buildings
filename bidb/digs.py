@@ -20,9 +20,10 @@ from urllib.parse import quote
 
 from . import place_stage
 from .db import connect, dist_km
-from .hoards import wikitext
+from .hoards import coord, wikitext
 from .http import sparql
 from .maritime import _record
+from .place_kinds import in_box
 from .place_records import blank
 from .wikipedia_list import _strip_wikitext
 
@@ -32,7 +33,6 @@ LABELS = {"excavated": "Excavated site", "timeteam": "Time Team dig"}
 COLUMNS = ["entity_id", "what", "years", "who"]
 NEAR_KM = 0.3
 TT_LIST = "List of Time Team episodes"
-_COORD = re.compile(r"\{\{\s*coord\s*\|\s*(-?[\d.]+)\s*\|\s*(-?[\d.]+)", re.I)
 
 
 def _qid(v):
@@ -78,13 +78,13 @@ def time_team():
         text = wikitext(page)
         for block in re.split(r"\{\{Episode list/sublist", text)[1:]:
             fields = dict(re.findall(r"\n\|\s*(\w+)\s*=\s*(.*?)(?=\n\|\s*\w+\s*=|\n\}\})", block, flags=re.S))
-            coord = _COORD.search(fields.get("Aux3", ""))
-            if not coord:
+            ll = coord(fields.get("Aux3", ""))
+            if not ll:
                 continue
             year = re.search(r"\{\{Start date\|(\d{4})", fields.get("OriginalAirDate", ""))
             out.append({"title": _strip_wikitext(fields.get("Title", "")) or "Time Team dig",
                         "location": _strip_wikitext(fields.get("Aux1", "").replace("<br />", "; ").replace("<br/>", "; ")),
-                        "lat": float(coord.group(1)), "lon": float(coord.group(2)),
+                        "lat": ll[0], "lon": ll[1],
                         "year": int(year.group(1)) if year else None,
                         "summary": re.sub(r"\s+", " ", _strip_wikitext(fields.get("ShortSummary", "")))[:700] or None,
                         "page": page})
@@ -98,7 +98,8 @@ def run(log=print):
     digs, tt = wikidata_digs(), time_team()
     ids = {}
     for rid, q in list(conn.execute("SELECT id, wikidata_id FROM buildings WHERE wikidata_id IS NOT NULL")) + list(
-            conn.execute("SELECT id, wikidata_id FROM places WHERE wikidata_id IS NOT NULL")):
+            conn.execute(f"SELECT id, wikidata_id FROM places WHERE wikidata_id IS NOT NULL "    # this stage's own
+                         f"AND kind NOT IN ({','.join('?' * len(KINDS))})", KINDS)):              # are rewritten
         ids.setdefault(q, rid)
     rows, new = [], []
     for q, d in digs.items():
@@ -115,6 +116,8 @@ def run(log=print):
     buildings = list(conn.execute("SELECT id, lat, lon FROM buildings WHERE lat IS NOT NULL"))
     for i, e in enumerate(tt):
         pid = f"tt-{i + 1}-{re.sub(r'[^a-z0-9]+', '-', e['title'].lower()).strip('-')}"
+        if not in_box(e["lat"], e["lon"]):           # the specials abroad (Maryland, Mallorca, Denia, Utrecht)
+            continue
         new.append(blank(pid, "timeteam", e["title"], kind_group=GROUP, lat=e["lat"], lon=e["lon"],
                          locality=e["location"] or None, description=e["summary"],
                          date_text=f"Time Team, {e['year']}" if e["year"] else "Time Team", source="Wikipedia",

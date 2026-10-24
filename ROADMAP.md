@@ -191,14 +191,18 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT7 Hosted copy, Help page, INTERFACE, figures; quiz questions ("which type came first?", "name the type").
 
 ## Data quality and references
-- [ ] `bidb.bundle release` fails on this connection (found 2026-10-23): `gh release create` with the 102 MB asset
-      ended twice in HTTP 408 "Upload body timed out due to inactivity" (the uplink is ~100 KB/s and stalls). What
-      worked: a draft release, then curl to uploads.github.com (20 min), check GitHub's asset digest against the local
-      SHA-256, then undraft. Make `release` do that (draft → upload with retries → digest check → publish).
-- [ ] Time Team digs placed at whole degrees far outside the isles (found 2026-10-23 publishing C3c): 46 `timeteam`
-      places such as Priory Engagement at 51.0, 48.0 and Brancaster at 52.0, 57.0; the longitude looks like the
-      latitude's minutes, so bidb.digs.time_team misreads the coordinate template. Fix the parser; until then they
-      sit on the map in Russia and Kazakhstan (and give the hosted copy stray location cells).
+- [x] `bidb.bundle release` failed on this connection (found 2026-10-23: `gh release create` ended twice in HTTP 408,
+      the ~100 KB/s uplink stalls). Fixed 2026-10-24: draft release (an interrupted run carries on with today's
+      draft) → upload through the GitHub API with up to 5 attempts (a half-uploaded asset is removed first) → size
+      and SHA-256 checked against GitHub's asset digest → published as Latest → manifest. Not yet run for real (the
+      next release will be its first); the API fields it reads were checked against db-2026-10-23.
+- [x] Time Team digs at whole degrees outside the isles (found 2026-10-23). Fixed 2026-10-24: the `{{coord}}` reader
+      took the first two numbers, so `{{coord|51|48|28|N|1|38|13|W}}` became 51°N 48°E. `hoards.coord` now reads
+      decimal and degrees/minutes/seconds with hemispheres (digs and hoards use it); 45 digs moved (Priory Engagement
+      51.81, −1.64), the 4 specials abroad (Maryland, Mallorca, Denia, Utrecht) left out: 201 digs, all with a
+      nation; catalogue buildings with a Time Team dig within 300 m 865 → 916 excavation rows. Rerunning digs also
+      showed it deleted its own 335 excavated places (they counted as already in the database): fixed.
+      In the local database only; the hosted copy and the release still have the old positions.
 - [ ] People of the places added after places_build (found in C3c, 2026-10-23): Maritime 9,184, Military 9,186,
       Museums 5,146, Sport 5,495, Victorian 684, Excavations 540 and others have no linked people (the people stage
       runs before them). bidb.trade_people's `run` could take a group list: museums (directors, founders), sport

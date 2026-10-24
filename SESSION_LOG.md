@@ -711,3 +711,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   GitHub's asset digest matched the local SHA-256, then published. Data quality item added to make `release` do this.
 - Found while checking the hosted copy: 46 Time Team digs at whole-degree positions in Russia and Kazakhstan (the
   coordinate parser takes the latitude's minutes as longitude). Data quality item added; not fixed.
+
+## 2026-10-24 — Time Team coordinates and the release command fixed
+- Time Team: `{{coord}}` was read as its first two numbers, so the 45 digs given in degrees/minutes/seconds
+  (`{{coord|51|48|28|N|1|38|13|W}}`) sat in Russia and Kazakhstan. New `hoards.coord` (decimal or DMS with N/S/E/W;
+  digs and hoards both use it; hoards had no DMS positions, none moved). The 4 specials abroad are left out (ids of
+  the others unchanged). Reran bidb.digs then bidb.nation_geo: 201 digs, all with a nation; excavation rows 865 → 916
+  (correctly placed digs now fall within 300 m of catalogue buildings). Places 173,789 → 173,785.
+- Bug found on the way: rerunning bidb.digs deleted its own 335 excavated places (they were in `places`, so counted
+  as already in the database and not rewritten, then the stage's write removed its kinds). It now ignores its own
+  kinds when looking for existing items; rerun restored all 335.
+- `bidb.bundle release` rewritten: draft release via the API (today's draft reused after an interrupted run), upload
+  to uploads.github.com with Content-Length and progress, up to 5 attempts with backoff (a stalled/half asset is
+  deleted first), size and SHA-256 compared with GitHub's asset digest, then published as Latest and the manifest
+  written. Checked read-only against the live API (draft flags, asset state, digest = manifest). Not yet run for real.
+- Noticed, not fixed: places_fts has two duplicate rows (Q11753150 Point of Ayr Lighthouse, Q729006 Chatham).
+- Tests 163 OK (tests/test_digs.py 3, tests/test_bundle.py 5). Hosted copy and release not updated.

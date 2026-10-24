@@ -5,11 +5,12 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 101
-  series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
-  files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
-  `dist/` before and after `python -m app.static_export`, batches under 64 MB, removals (null) first.
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 101
+  series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-23 (102 MB).
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 66 (2026-10-23, after C3c):
+  252.1 of 256 MiB, 486 of 511 files. Republish changed files only: checksum `dist/` before and after
+  `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
+  to replace files this session has not read or listed).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
   (`git archive HEAD | tar -x -C <dir>`, run on port 5071).
 
@@ -190,6 +191,14 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT7 Hosted copy, Help page, INTERFACE, figures; quiz questions ("which type came first?", "name the type").
 
 ## Data quality and references
+- [ ] `bidb.bundle release` fails on this connection (found 2026-10-23): `gh release create` with the 102 MB asset
+      ended twice in HTTP 408 "Upload body timed out due to inactivity" (the uplink is ~100 KB/s and stalls). What
+      worked: a draft release, then curl to uploads.github.com (20 min), check GitHub's asset digest against the local
+      SHA-256, then undraft. Make `release` do that (draft → upload with retries → digest check → publish).
+- [ ] Time Team digs placed at whole degrees far outside the isles (found 2026-10-23 publishing C3c): 46 `timeteam`
+      places such as Priory Engagement at 51.0, 48.0 and Brancaster at 52.0, 57.0; the longitude looks like the
+      latitude's minutes, so bidb.digs.time_team misreads the coordinate template. Fix the parser; until then they
+      sit on the map in Russia and Kazakhstan (and give the hosted copy stray location cells).
 - [ ] People of the places added after places_build (found in C3c, 2026-10-23): Maritime 9,184, Military 9,186,
       Museums 5,146, Sport 5,495, Victorian 684, Excavations 540 and others have no linked people (the people stage
       runs before them). bidb.trade_people's `run` could take a group list: museums (directors, founders), sport

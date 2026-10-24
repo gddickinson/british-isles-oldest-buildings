@@ -697,3 +697,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   references, merchant's house yields). ui_check `places_livery_people` and `people_officers` added. Hosted copy not
   updated; the release database (db-2026-10-22-4) predates C3a–C3c.
 - Next: C4 (firms through time), or the Data quality item on people of the later place groups.
+
+## 2026-10-23 (night, last) — Published: hosted copy version 66, database release db-2026-10-23
+- Hosted copy: `python -m app.static_export` (22,508 records, 173,789 places, 12,193 people; 252.1 MiB, 486 files);
+  209 files changed (103 MB: place shards and location cells, people, evidence, oldest lists, quiz, change series,
+  oldest.js, render_places.js), none added or removed. Published as versions 65 and 66 (two batches of ~51 MB) after
+  listing the published files (the service refuses to replace files this session has not read or listed). Sizes of
+  the published files checked against `dist/`. Static GUI review (pages, pop-ups, search, places) 52/52 after
+  rerunning one check that the local Python server had dropped.
+- Database release db-2026-10-23 (102 MB, SHA-256 31c5f66c…; 22,508 buildings, 173,789 places, 12,193 people),
+  marked Latest; `data/bundled.json` updated. `bidb.bundle release` packaged it but `gh release create` failed twice
+  with HTTP 408 (upload stalled on a ~100 KB/s uplink); uploaded instead with curl to a draft release (1,193 s),
+  GitHub's asset digest matched the local SHA-256, then published. Data quality item added to make `release` do this.
+- Found while checking the hosted copy: 46 Time Team digs at whole-degree positions in Russia and Kazakhstan (the
+  coordinate parser takes the latitude's minutes as longitude). Data quality item added; not fixed.

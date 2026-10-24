@@ -834,3 +834,30 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Checked in headless Chrome (screenshot of both graphs); ui_check `change_trade_values` added; change_trade,
   change_tea and map still pass. Tests 182 OK (tests/test_change_trade_values.py 3). Hosted copy and release not updated.
 - Next: C5b2b (main goods from the same scans), or C5c (occupations by sector).
+
+## 2026-10-24 — C5b2b1: the main exports by value, 1868-1911
+- C5b2b split: C5b2b1 exports 1868-1911 (done), C5b2b2 the same goods 1854-67 and 1912-38, C5b2b3 the main imports and
+  UK produce 1840-53 (pending).
+- The "declared value of principal articles of British and Irish produce exported" tables read from the page images:
+  No. 30 table 31 pp. 74-81 (1868-82), No. 45 table 37 (its 1883 column, pp. 106-114), No. 46 table 37 pp. 108-117
+  (1884-98), No. 59 table 49 pp. 198-209 (1897-1911, the new classification). 1,947 printed figures in
+  `data/curated/change/data/trade_goods_abstract_uk.csv` (row, year, value, edition, leaf, page, table, note).
+- Checks: every printed total against its parts (cotton, linen, wool, iron and steel, coal, machinery, other textiles);
+  the misreadings they caught were re-read on enlarged crops. Figures with no printed total (coal before 1897, yarns,
+  machinery to 1898, No. 59's totals) were each found printed the same in at least two other editions' OCR text.
+  Printing slips: No. 30 tinned plates 1878 (732,378: the "2," missing), No. 45 woollen stuffs 1883 (7,867,834;
+  Nos. 33-44 print 7,687,834); 1883 wool parts stay £10 below the total (No. 33 prints hosiery + other 10 higher).
+  Blurred figures in No. 46 taken from No. 45's print of the same row (noted per figure).
+- No. 59's classes brought back to the old totals: coal = Total of Coal &c.; cotton manufactures = piece goods + other
+  manufactures (waste from worked cotton separate from 1908, left out); wool manufactures = total less flocks, waste,
+  tops, yarn and alpaca yarn; iron and steel without old iron; machinery without sewing machines. For 1897-98, given
+  in both No. 46 and No. 59, every good agrees to the pound. The tables' own grand totals 1868-84 equal C5b2a's.
+- New `bidb/change_trade_goods.py`, nine series `sa_goods_*` in three graphs (default off, Prosperity and work):
+  "Textile exports, 1868-1911", "Coal, iron and machinery exports, 1868-1911", "Main exports, share of all UK
+  exports, 1868-1911". Source `stat_abstract_goods_uk`; DATA_LICENSE.md row extended. Change over time: 155 series.
+- An electrical-machinery clause in the note was wrong (it was counted with other machinery before 1903, not left
+  out) and was corrected before commit.
+- Checked in headless Chrome (screenshots of the graphs, no page errors); ui_check `change_trade_goods` added;
+  change_trade_values, change_trade, change_tea and map still pass. Tests 187 OK (tests/test_change_trade_goods.py 5).
+  Hosted copy and release not updated.
+- Next: C5b2b2 (1854-67 and 1912-38 for the same goods), or C5c (occupations by sector).

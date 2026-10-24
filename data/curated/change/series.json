@@ -2373,5 +2373,162 @@
   "default": false,
   "note": "Re-exports (imported goods sent on again: \"foreign and colonial produce\") as a share of all exports, from the same Statistical Abstract tables as \"Overseas trade at the prices of the time\". The share was 16% in 1854, highest in 1863 (25.6%), 17.3% in 1913, lowest in 1918 (5.8%) and 11.6% in 1938. Manufactured tobacco counts as United Kingdom produce from 1892 (before, as re-exports).",
   "zero": true
+ },
+ {
+  "id": "sa_goods_cotton_uk",
+  "theme": "Prosperity and work",
+  "title": "Textile exports, 1868-1911",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Cotton yarn and manufactures",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_cotton_uk.csv",
+  "default": false,
+  "models": [
+   "sa_goods_wool_uk",
+   "sa_goods_linen_uk"
+  ],
+  "note": "The value of the cotton, woollen and worsted, and linen goods made in the United Kingdom and sent abroad each year, at the prices of the time (\"declared value\", as loaded on board), yarn and manufactures together, from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (edition, page and table per figure in the data file). Every total the tables print was checked against its printed parts; the figures without a printed total were found printed the same in at least two other editions. The sub-headings changed over the years but the totals are the Abstract's own; from 1897 the Board's new classification was brought back to the old totals (they agree exactly for 1897 and 1898, given in both tables): waste from worked cotton is counted with cotton manufactures to 1907 and left out from 1908, and tops, noils, waste, flocks and alpaca and mohair yarn are left out of wool. Cotton was 67.7 million in 1868, 63.8 million in 1893 (its lowest) and 118.6 million in 1911; woollen and worsted goods 25.8, 38.5 (in 1872) and 31.8 million; linen 9.4 and 9.1 million. Jute, silk and apparel are not included.",
+  "zero": true
+ },
+ {
+  "id": "sa_goods_wool_uk",
+  "theme": "Prosperity and work",
+  "title": "Woollen exports",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Woollen and worsted yarn and manufactures",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_wool_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_goods_linen_uk",
+  "theme": "Prosperity and work",
+  "title": "Linen exports",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Linen yarn and manufactures",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_linen_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_goods_coal_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and machinery exports, 1868-1911",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Coal, coke and manufactured fuel",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_coal_uk.csv",
+  "default": false,
+  "models": [
+   "sa_goods_iron_uk",
+   "sa_goods_machinery_uk"
+  ],
+  "note": "The value of the coal, iron and steel, and machinery made in the United Kingdom and sent abroad each year, at the prices of the time, from the same Statistical Abstract tables as \"Textile exports\". Coal is coal, cinders (coke) and manufactured fuel, not bunker coal for ships and not the products of coal; iron and steel leaves out old iron for re-manufacture, though old rails are counted from 1907; machinery leaves out sewing machines, which the old tables did not count as machinery (electrical machinery, shown on its own from 1903, was counted with other machinery before). Coal was 5.4 million in 1868, 42.1 million in 1907 and 38.5 million in 1911; iron and steel 17.3, 46.6 (in 1907) and 43.7 million; machinery 4.7 and 29.2 million. New ships were not recorded as exports before 1899 and are not included.",
+  "zero": true
+ },
+ {
+  "id": "sa_goods_iron_uk",
+  "theme": "Prosperity and work",
+  "title": "Iron and steel exports",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Iron and steel",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_iron_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_goods_machinery_uk",
+  "theme": "Prosperity and work",
+  "title": "Machinery exports",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Machinery",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_machinery_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_goods_textiles_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Main exports, share of all UK exports, 1868-1911",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "%",
+  "unit_long": "% of exports of UK produce",
+  "label": "Cotton, wool and linen",
+  "sources": [
+   "stat_abstract_goods_uk",
+   "stat_abstract_trade_uk"
+  ],
+  "file": "sa_goods_textiles_share_uk.csv",
+  "default": false,
+  "models": [
+   "sa_goods_cotton_share_uk",
+   "sa_goods_metal_share_uk"
+  ],
+  "note": "The main goods as a share of all exports of United Kingdom produce (\"UK exports of UK produce\", the Abstract's summary table, which counts the parcel post from 1885: 2.1 of 233.4 million in 1898). Cotton, wool and linen together were 57.3% in 1868 and 35.1% in 1911; cotton alone 37.7% and 26.1%; coal, iron and steel and machinery together 15.3% and 24.5%. Values at the prices of the time: a falling share can mean lower prices as well as smaller quantities.",
+  "zero": true
+ },
+ {
+  "id": "sa_goods_cotton_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Cotton, share of exports",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "%",
+  "unit_long": "% of exports of UK produce",
+  "label": "Cotton",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_cotton_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_goods_metal_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and machinery, share of exports",
+  "region": "United Kingdom (with all Ireland)",
+  "unit": "%",
+  "unit_long": "% of exports of UK produce",
+  "label": "Coal, iron and machinery",
+  "sources": [
+   "stat_abstract_goods_uk"
+  ],
+  "file": "sa_goods_metal_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
  }
 ]

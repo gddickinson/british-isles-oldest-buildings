@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 146
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 155
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -170,9 +170,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       £920 million in 1938) and "Re-exports, share of all exports" (16% in 1854, 25.6% in 1863, 17.3% in 1913, 5.8% in
       1918, 11.6% in 1938). No. 18 misprints 1868's imports (294,460,214; its own total gives 294,693,608, as No. 30).
       The Abstracts' real (computed) values of imports begin in 1854, so nothing earlier is drawn.
-- [ ] C5b2b The main goods (wool, cloth, tea, sugar, tobacco, cotton, linen, coal, iron) from the Statistical Abstract
-      scans 1840-1938 (quantities and values; page images, edition, leaf, page per figure as in C2b); UK produce exports
-      1840-53 (declared values) from Nos. 8 and 13.
+- [x] C5b2b1 (2026-10-24) The main exports of UK produce by value, 1868-1911 (new `bidb/change_trade_goods.py`): coal,
+      cotton, woollen and worsted, linen (yarn and manufactures), iron and steel, machinery, read from the page images of
+      Nos. 30 (1868-82), 45 (1883), 46 (1884-98) and 59 (1897-1911) → `change/data/trade_goods_abstract_uk.csv` (1,947
+      printed figures, edition, leaf, page, table each). Every printed total checked against its parts (one known £10
+      gap: 1883 wool, where No. 33's hosiery + other makes it agree); figures without a total found printed the same in
+      two or more other editions; No. 59's new classification brought back to the old totals (1897-98 agree to the
+      pound). Graphs "Textile exports, 1868-1911" (cotton 67.7 → 118.6 £m, lowest 63.8 in 1893; wool 25.8, 38.5 in
+      1872, 31.8; linen 9.4 → 9.1), "Coal, iron and machinery exports, 1868-1911" (coal 5.4 → 42.1 in 1907 → 38.5;
+      iron and steel 17.3 → 46.6 in 1907; machinery 4.7 → 29.2) and "Main exports, share of all UK exports" (textiles
+      57.3% → 35.1%, cotton 37.7% → 26.1%, coal, iron and machinery 15.3% → 24.5%). Printing slips found: No. 30's 1878
+      tinned plates (732,378 for 2,732,378), No. 45's 1883 woollen stuffs (7,867,834 for 7,687,834).
+- [ ] C5b2b2 The same goods 1854-67 (Nos. 16/18; the earlier tables' headings) and 1912-38 (Nos. 70-83; check the
+      1920s classification against No. 59's), so the graphs run 1854-1938 as C5b2a.
+- [ ] C5b2b3 The main imports (raw cotton, wool, grain and flour, sugar, tea, timber; values and quantities) from the
+      same scans 1854-1938; UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).

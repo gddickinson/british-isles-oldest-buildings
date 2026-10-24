@@ -39,6 +39,7 @@ PAGES = {
     "oldest_sport": ("/oldest", r"(?s)Oldest sporting grounds and clubs.*Sheffield"),
     "oldest_civic": ("/oldest", r"(?s)Oldest schools, hospitals and public services.*St Peter"),
     "oldest_tea": ("/oldest", r"(?s)The tea trade: merchants, firms.*Horniman.*Garraway"),
+    "oldest_guilds": ("/oldest", r"(?s)Guilds, companies, exchanges and banks.*Worshipful Company of Weavers.*Merchants of the Staple.*Jamaica Wine House"),
     "places_tea": ("/places?kind_label=Tea+merchant+or+firm", r"(?s)data-place=.*Horniman"),
     "places_livery": ("/places?kind_label=Livery+company+or+guild", r"(?s)data-place=.*Worshipful Company"),
     "places_guildhalls": ("/places?kind_label=Guildhall%2C+livery+or+merchants%27+hall", r"(?s)data-place=.*Hall"),

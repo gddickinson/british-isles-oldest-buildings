@@ -32,6 +32,22 @@ class OldestLists(unittest.TestCase):
                     self.assertTrue(e.get("sources") and e.get("lat"), f"{n}: {e['name']}")
         self.assertFalse([r for r in oldest_lists.records("tea") if r["id"] in ("Q1054692", "Q498563")])
 
+    def test_guilds_unplaced_companies_are_not_links(self):
+        # a company with no single standing place (the Weavers) has no coordinates and no place: listed only
+        import sqlite3
+        conn = sqlite3.connect(":memory:")
+        conn.execute("CREATE TABLE buildings (id TEXT)")
+        conn.execute("CREATE TABLE places (id TEXT)")
+        conn.executemany("INSERT INTO places VALUES (?)", [("Q805708",), ("Q8037025",)])
+        from unittest import mock
+        with mock.patch("bidb.oldest_checks.earliest", return_value={}):
+            lists = oldest_lists.lists(conn)
+        out = {e["name"]: e for c in lists["guilds"]["categories"] for e in c["entries"]}
+        self.assertFalse(out["Worshipful Company of Weavers"]["placed"])
+        self.assertTrue(out["Baltic Exchange"]["placed"])
+        self.assertTrue(out["Worshipful Company of Drapers"]["placed"])     # a livery-company place of trade_works
+        self.assertEqual(out["Worshipful Company of Weavers"]["year"], 1130)
+
 
 class Stages(unittest.TestCase):
     def test_prehistoric_burials_left_out(self):

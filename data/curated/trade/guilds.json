@@ -1,0 +1,1782 @@
+{
+ "about": "Guilds, livery companies, merchant guilds, trading companies, exchanges, coffee houses, banks and merchants' houses of the isles (roadmap C3b, 2026-10-23): the oldest of each with the age claim, how secure it is, and sources with exact quotes (checked by python -m bidb.evidence --check). Entries without coordinates are companies with no single standing place; entries with listed_in are kept in that list and only shown here.",
+ "entries": [
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "St Mary's Guildhall, Coventry",
+   "qid": "Q7594492",
+   "wikipedia_title": "St Mary's Guildhall",
+   "lat": 52.40767,
+   "lon": -1.50786,
+   "nation": "England",
+   "location": "Bayley Lane, Coventry",
+   "age_text": "built 1340-42; altered and extended 1460",
+   "year": 1340,
+   "claim": "hall of Coventry's merchant guild of St Mary, built 1340-42",
+   "evidence": "The earliest of the surviving town guildhalls in this list by its building date; the merchant guild merged with three others in 1392.",
+   "sources": [
+    {
+     "title": "Wikipedia: St Mary's Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Mary's_Guildhall",
+     "locator": "article text",
+     "quote": "The building was built in the medieval style between 1340 and 1342 and much altered and extended in 1460."
+    },
+    {
+     "title": "Wikipedia: St Mary's Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Mary's_Guildhall",
+     "locator": "article text",
+     "quote": "The guildhall originally served as the headquarters of the merchant guild of St Mary"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Merchant Adventurers' Hall, York",
+   "qid": "Q6818359",
+   "wikipedia_title": "Merchant Adventurers' Hall",
+   "lat": 53.9579,
+   "lon": -1.07878,
+   "nation": "England",
+   "location": "Fossgate, York",
+   "age_text": "built 1357-61",
+   "year": 1357,
+   "claim": "the largest timber-framed building in the UK still used for its original purpose",
+   "evidence": "Built by a religious fraternity that became the Mistery of Mercers by charter of 1430; the company still meets there.",
+   "sources": [
+    {
+     "title": "Wikipedia: Merchant Adventurers' Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Merchant_Adventurers'_Hall",
+     "locator": "article text",
+     "quote": "The majority of the hall was built between 1357 and 1361"
+    },
+    {
+     "title": "Wikipedia: Merchant Adventurers' Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Merchant_Adventurers'_Hall",
+     "locator": "article text",
+     "quote": "It is the largest timber-framed building in the UK still standing and used for its original purpose."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Leicester Guildhall",
+   "qid": "Q6519185",
+   "wikipedia_title": "Leicester Guildhall",
+   "lat": 52.6347,
+   "lon": -1.13769,
+   "nation": "England",
+   "location": "Guildhall Lane, Leicester",
+   "age_text": "Great Hall c. 1390",
+   "year": 1390,
+   "claim": "built for the Guild of Corpus Christi, later the town's hall",
+   "evidence": "The earliest part is dated about 1390; the guild itself was founded in 1350.",
+   "sources": [
+    {
+     "title": "Wikipedia: Leicester Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leicester_Guildhall",
+     "locator": "article text",
+     "quote": "The Great Hall was built around 1390 as the meeting place of the Guild of Corpus Christi."
+    },
+    {
+     "title": "Wikipedia: Leicester Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leicester_Guildhall",
+     "locator": "article text",
+     "quote": "The Guild was an association of merchants and gentry established in 1350"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Thaxted Guildhall",
+   "qid": "Q17539143",
+   "wikipedia_title": "Thaxted Guildhall",
+   "lat": 51.9537,
+   "lon": 0.343496,
+   "nation": "England",
+   "location": "Town Street, Thaxted, Essex",
+   "age_text": "completed 1390-1410",
+   "year": 1390,
+   "claim": "jettied market hall said to be paid for in part by the Guild of Cutlers",
+   "evidence": "The date range comes from the 1967 list description; the cutlers' part is 'thought'.",
+   "sources": [
+    {
+     "title": "Wikipedia: Thaxted Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thaxted_Guildhall",
+     "locator": "article text",
+     "quote": "It is thought that the Guild of Cutlers contributed to the cost of the building, which the listed building details prepared in 1967 suggests, was completed between 1390 and 1410."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Norwich Guildhall",
+   "qid": "Q7061502",
+   "wikipedia_title": "Norwich Guildhall",
+   "lat": 52.629,
+   "lon": 1.2924,
+   "nation": "England",
+   "location": "Market Place, Norwich",
+   "age_text": "built 1407-13",
+   "year": 1407,
+   "claim": "the city's civic meeting place from 1413",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Norwich Guildhall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Norwich_Guildhall",
+     "locator": "article text",
+     "quote": "was built between 1407 and 1413"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Guildhall of St George, King's Lynn",
+   "qid": "Q17536541",
+   "wikipedia_title": "Guildhall of St George",
+   "lat": 52.7555,
+   "lon": 0.393409,
+   "nation": "England",
+   "location": "King Street, King's Lynn",
+   "age_text": "built 1410-20; guild founded 1376",
+   "year": 1410,
+   "claim": "the largest surviving guildhall in England, a theatre since 1445",
+   "evidence": "Wikipedia also calls it the oldest working theatre in the United Kingdom.",
+   "sources": [
+    {
+     "title": "Wikipedia: Guildhall of St George",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall_of_St_George",
+     "locator": "article text",
+     "quote": "The Guild of St George was founded in 1376 and constructed the Guildhall between 1410 and 1420."
+    },
+    {
+     "title": "Wikipedia: Guildhall of St George",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall_of_St_George",
+     "locator": "article text",
+     "quote": "It is the largest extant guildhall in England."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Guildhall, London",
+   "year": 1411,
+   "listed_in": "civic"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Trinity Guildhall, King's Lynn",
+   "qid": "Q17536470",
+   "wikipedia_title": "Trinity Guildhall, King's Lynn",
+   "lat": 52.752,
+   "lon": 0.3947,
+   "nation": "England",
+   "location": "Saturday Market Place, King's Lynn",
+   "age_text": "Stone Hall 1422-28",
+   "year": 1422,
+   "claim": "hall of the Guild of the Holy Trinity, rebuilt after a fire of 1421",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Trinity Guildhall, King's Lynn",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_Guildhall,_King's_Lynn",
+     "locator": "article text",
+     "quote": "was built between 1422 and 1428"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Merchant Taylors' Hall, London",
+   "qid": "Q6818403",
+   "wikipedia_title": "Merchant Taylors' Hall, London",
+   "lat": 51.5139,
+   "lon": -0.085081,
+   "nation": "England",
+   "location": "Threadneedle Street, City of London",
+   "age_text": "on the site since 1347; kitchen over 600 years in use",
+   "year": 1347,
+   "claim": "the oldest surviving fabric of a City livery hall",
+   "evidence": "The crypt and kitchen survived the Great Fire and the Blitz; the rest was rebuilt after both.",
+   "sources": [
+    {
+     "title": "Wikipedia: Merchant Taylors' Hall, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Merchant_Taylors'_Hall,_London",
+     "locator": "article text",
+     "quote": "The Company has occupied its present site between Threadneedle Street and Cornhill since 1347."
+    },
+    {
+     "title": "Wikipedia: Livery company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Livery_company",
+     "locator": "article text",
+     "quote": "the kitchen and the crypt of Merchant Taylors' Hall survived both the Great Fire of London and the Blitz, the kitchen now having been in uninterrupted use for over 600 years"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "York Guildhall",
+   "qid": "Q1553813",
+   "wikipedia_title": "Guildhall, York",
+   "lat": 53.9596,
+   "lon": -1.0856,
+   "nation": "England",
+   "location": "St Helen's Square, York",
+   "age_text": "built 1449-59",
+   "year": 1449,
+   "claim": "built as a meeting place for the city's guilds",
+   "evidence": "Gutted in 1942 and restored.",
+   "sources": [
+    {
+     "title": "Wikipedia: Guildhall, York",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall,_York",
+     "locator": "article text",
+     "quote": "The building was constructed as a meeting place for the City's guilds between 1449 and 1459."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Exeter Guildhall",
+   "year": 1468,
+   "listed_in": "civic"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Lavenham Guildhall",
+   "year": 1529,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Apothecaries' Hall, London",
+   "qid": "Q16707714",
+   "wikipedia_title": "Apothecaries' Hall, London",
+   "lat": 51.5129,
+   "lon": -0.103055,
+   "nation": "England",
+   "location": "Black Friars Lane, City of London",
+   "age_text": "rebuilt 1668-72 on a 13th-century priory",
+   "year": 1668,
+   "claim": "the oldest extant livery hall in the City of London",
+   "evidence": "Its interiors are the oldest of a livery hall; Merchant Taylors' Hall keeps older parts (kitchen and crypt).",
+   "sources": [
+    {
+     "title": "Wikipedia: Apothecaries' Hall, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Apothecaries'_Hall,_London",
+     "locator": "article text",
+     "quote": "Apothecaries' Hall is the oldest extant livery hall in the City of London, with significant 13th-century elements"
+    },
+    {
+     "title": "Wikipedia: Livery company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Livery_company",
+     "locator": "article text",
+     "quote": "the oldest extant interiors of a livery hall proper are those of the Apothecaries' Society, most rooms of which date from 1668 to 1671"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Tailors' Hall, Dublin",
+   "qid": "Q105564015",
+   "wikipedia_title": "Tailors' Hall",
+   "lat": 53.34291667,
+   "lon": -6.27336111,
+   "nation": "Ireland",
+   "location": "Back Lane, Dublin",
+   "age_text": "begun 1703; earlier halls recorded 1539 and 1583-84",
+   "year": 1703,
+   "claim": "the oldest of Dublin's two surviving guildhalls",
+   "evidence": "The tailors' guild claimed a charter of 1207; its oldest charter traced is of 1418.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tailors' Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tailors'_Hall",
+     "locator": "article text",
+     "quote": "Tailors' Hall is the oldest of two surviving guildhalls in Dublin, Ireland."
+    },
+    {
+     "title": "Wikipedia: Tailors' Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tailors'_Hall",
+     "locator": "article text",
+     "quote": "The foundation of the current building, across Back Lane from the previous hall, was laid in 1703."
+    },
+    {
+     "title": "Wikipedia: Tailors' Hall",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tailors'_Hall",
+     "locator": "article text",
+     "quote": "although the oldest charter physically traced dates to 1418"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest guildhall or livery hall",
+   "name": "Glasgow Trades Hall",
+   "qid": "Q56293725",
+   "wikipedia_title": "Trades Hall, Glasgow",
+   "lat": 55.85934,
+   "lon": -4.249,
+   "nation": "Scotland",
+   "location": "Glassford Street, Glasgow",
+   "age_text": "built 1791-94; Trades House 1605",
+   "year": 1791,
+   "claim": "hall of the Trades House and the 14 Incorporated Crafts of Glasgow",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Trades Hall, Glasgow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trades_Hall,_Glasgow",
+     "locator": "article text",
+     "quote": "was built in 1791–1794 to serve as a public hall and meeting place for the city's Trades House and 14 Incorporated Crafts."
+    },
+    {
+     "title": "Wikipedia: Trades Hall, Glasgow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trades_Hall,_Glasgow",
+     "locator": "article text",
+     "quote": "The Trades House of Glasgow was created at the time of reform of Glasgow's local government in 1605."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Weavers",
+   "qid": "Q16934689",
+   "wikipedia_title": "Worshipful Company of Weavers",
+   "nation": "England",
+   "location": "City of London (no hall)",
+   "age_text": "recorded 1130; royal charter 1155",
+   "year": 1130,
+   "claim": "the oldest recorded livery company of the City of London",
+   "evidence": "The Pipe Roll of 1130 records a payment on the weavers' behalf, the first for any guild; the company's charter is of 1155. It ranks 42nd in precedence and has no hall of its own.",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Weavers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Weavers",
+     "locator": "article text",
+     "quote": "The Worshipful Company of Weavers is the most ancient of the Livery Companies in the City of London."
+    },
+    {
+     "title": "Wikipedia: Worshipful Company of Weavers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Weavers",
+     "locator": "article text",
+     "quote": "The company received a Royal Charter in 1155."
+    },
+    {
+     "title": "1100 – The Company Emerges",
+     "author": "The Weavers' Company",
+     "kind": "secondary",
+     "url": "https://www.weavers.org.uk/about/history/1100-2/",
+     "locator": "history page",
+     "quote": "It is the recording of such a payment, the first for any guild, which establishes the Weavers as London's oldest Company."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Saddlers",
+   "qid": "Q8037076",
+   "wikipedia_title": "Worshipful Company of Saddlers",
+   "nation": "England",
+   "location": "Saddlers' Hall, Gutter Lane",
+   "age_text": "guild in the 11th century (thought Anglo-Saxon); charter 1363",
+   "year": 1363,
+   "claim": "a craft guild thought to go back to Anglo-Saxon times",
+   "evidence": "The Anglo-Saxon origin is 'thought'; the incorporation is 1363.",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Saddlers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Saddlers",
+     "locator": "article text",
+     "quote": "is thought to have been an Anglo-Saxon Craft Guild – it certainly existed at some point in the eleventh century."
+    },
+    {
+     "title": "Wikipedia: Worshipful Company of Saddlers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Saddlers",
+     "locator": "article text",
+     "quote": "The Guild became a Company when a Royal Charter of Incorporation was granted by King Edward III in 1363."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Fishmongers",
+   "qid": "Q8037032",
+   "wikipedia_title": "Worshipful Company of Fishmongers",
+   "nation": "England",
+   "location": "Fishmongers' Hall, London Bridge",
+   "age_text": "fishmongers fined 1154; first charter 1272",
+   "year": 1272,
+   "claim": "among the oldest livery companies, with a charter of 1272",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Fishmongers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Fishmongers",
+     "locator": "article text",
+     "quote": "The earliest evidence of such a group dates back to 1154, when a number of London fishmongers were fined for trading without Royal Warrant with the Company receiving its first Royal Charter from Edward I in 1272"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Loriners",
+   "qid": "Q8037061",
+   "wikipedia_title": "Worshipful Company of Loriners",
+   "nation": "England",
+   "location": "City of London",
+   "age_text": "ordinances 1261",
+   "year": 1261,
+   "claim": "the earliest ordinances of any existing livery company",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Loriners",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Loriners",
+     "locator": "article text",
+     "quote": "The company's first ordinances originate from 1261, which predate those of any other existing livery company"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Goldsmiths",
+   "qid": "Q8037058",
+   "wikipedia_title": "Worshipful Company of Goldsmiths",
+   "nation": "England",
+   "location": "Goldsmiths' Hall, Foster Lane",
+   "age_text": "12th-century origins; royal charter 1327",
+   "year": 1327,
+   "claim": "assayers of gold and silver (hallmarking) since the Middle Ages",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Goldsmiths",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Goldsmiths",
+     "locator": "article text",
+     "quote": "The company, which originates from twelfth-century London, received a Royal Charter in 1327"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Merchant Taylors",
+   "qid": "Q8037066",
+   "wikipedia_title": "Worshipful Company of Merchant Taylors",
+   "nation": "England",
+   "location": "Merchant Taylors' Hall",
+   "age_text": "before 1300; royal charter 1327",
+   "year": 1327,
+   "claim": "the tailors' fraternity of St John the Baptist",
+   "evidence": "It and the Skinners both received charters in 1327, and alternate sixth and seventh in precedence.",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Merchant Taylors",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Merchant_Taylors",
+     "locator": "article text",
+     "quote": "was founded prior to 1300, first incorporated under a royal charter in 1327"
+    },
+    {
+     "title": "Wikipedia: Livery company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Livery_company",
+     "locator": "article text",
+     "quote": "as it comes from the companies both receiving their Charters in 1327 with no proof surviving as to which was granted first"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Grocers",
+   "qid": "Q730484",
+   "wikipedia_title": "Worshipful Company of Grocers",
+   "nation": "England",
+   "location": "Grocers' Hall, Princes Street",
+   "age_text": "Pepperers 1180; founded 1345; royal charter 1428",
+   "year": 1345,
+   "claim": "the Pepperers' guild of 1180 merged with the Spicers in 1345",
+   "evidence": "Both dates in the Wikipedia tables are right for different events: the company was founded in 1345 and chartered in 1428 (the precedence table gives the charter).",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Grocers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Grocers",
+     "locator": "article text",
+     "quote": "Founded in 1345 by a merger of the Guild of Pepperers, dating from 1180, with the Spicers."
+    },
+    {
+     "title": "Wikipedia: Worshipful Company of Grocers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Grocers",
+     "locator": "article text",
+     "quote": "In 1428, two years after building its first hall in Old Jewry, the Company was granted a Royal Charter by King Henry VI of England."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Drapers",
+   "qid": "Q8037025",
+   "wikipedia_title": "Worshipful Company of Drapers",
+   "nation": "England",
+   "location": "Drapers' Hall, Throgmorton Street",
+   "age_text": "guild 1361; royal charter 1364",
+   "year": 1361,
+   "claim": "the first corporate body granted a coat of arms (1438)",
+   "evidence": "Founded 1361 and chartered three years later, so both table dates hold.",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Drapers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Drapers",
+     "locator": "article text",
+     "quote": "The guild was formally founded in 1361; it received a Royal Charter three years later."
+    },
+    {
+     "title": "Wikipedia: Worshipful Company of Drapers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Drapers",
+     "locator": "article text",
+     "quote": "It was incorporated as a company under a Royal Charter in 1438 and was the first corporate body to be granted a coat of arms."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest livery company or craft guild",
+   "name": "Worshipful Company of Mercers",
+   "qid": "Q2594055",
+   "wikipedia_title": "Worshipful Company of Mercers",
+   "nation": "England",
+   "location": "Mercers' Hall, Ironmonger Lane",
+   "age_text": "earliest extant charter 1394",
+   "year": 1394,
+   "claim": "first in the order of precedence of the livery companies",
+   "evidence": "First in precedence, not the oldest: its earliest surviving charter is of 1394.",
+   "sources": [
+    {
+     "title": "Wikipedia: Worshipful Company of Mercers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Mercers",
+     "locator": "article text",
+     "quote": "ranks first in the order of precedence of the Companies"
+    },
+    {
+     "title": "Wikipedia: Worshipful Company of Mercers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Worshipful_Company_of_Mercers",
+     "locator": "article text",
+     "quote": "Although of even older origin, the Company was incorporated under a Royal Charter in 1394, its earliest extant Charter."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Preston Guild Merchant",
+   "wikipedia_title": "Preston, Lancashire",
+   "lat": 53.759,
+   "lon": -2.699,
+   "nation": "England",
+   "location": "Preston, Lancashire",
+   "age_text": "guild merchant charter 1179",
+   "year": 1179,
+   "claim": "a guild merchant charter of 1179, still celebrated every 20 years as the Preston Guild",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Preston, Lancashire",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Preston,_Lancashire",
+     "locator": "article text",
+     "quote": "was granted a Guild Merchant charter in 1179"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Dublin Guild Merchant (Holy Trinity)",
+   "qid": "Q136933181",
+   "wikipedia_title": "Dublin Guild Merchant",
+   "lat": 53.34597,
+   "lon": -6.26281,
+   "nation": "Ireland",
+   "location": "Merchants' Hall, Wellington Quay, Dublin (its last hall)",
+   "age_text": "Dublin's guilds allowed by charter of 1192",
+   "year": 1192,
+   "claim": "Prince John's charter of 1192 let Dublin have guilds 'as the burgesses of Bristol has'",
+   "evidence": "The 1192 date is for Dublin's guilds in general; the guild merchant's last hall was Merchants' Hall on Wellington Quay.",
+   "sources": [
+    {
+     "title": "Wikipedia: Guilds of the City of Dublin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guilds_of_the_City_of_Dublin",
+     "locator": "article text",
+     "quote": "The guild system in Ireland was first established under a royal charter from Prince John in 1192"
+    },
+    {
+     "title": "Wikipedia: Dublin Guild Merchant",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dublin_Guild_Merchant",
+     "locator": "article text",
+     "quote": "later moved again to a dedicated premises, Merchants' Hall, on Wellington Quay"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Society of Merchant Venturers, Bristol",
+   "qid": "Q3487452",
+   "wikipedia_title": "Society of Merchant Venturers",
+   "nation": "England",
+   "location": "Bristol",
+   "age_text": "guild by the 13th century; royal charter 1552",
+   "year": 1552,
+   "claim": "Bristol's merchants' guild; funded Cabot's voyage of 1497",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Society of Merchant Venturers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Society_of_Merchant_Venturers",
+     "locator": "article text",
+     "quote": "A Guild of Merchants was founded in Bristol by the 13th century"
+    },
+    {
+     "title": "Wikipedia: Society of Merchant Venturers",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Society_of_Merchant_Venturers",
+     "locator": "article text",
+     "quote": "In 1552 the society received a Royal Charter from Edward VI granting a monopoly on Bristol's sea trade."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Merchant Company of Edinburgh",
+   "qid": "Q6818365",
+   "wikipedia_title": "Company of Merchants of the City of Edinburgh",
+   "nation": "Scotland",
+   "location": "Edinburgh",
+   "age_text": "at least 1260; charter 1681",
+   "year": 1681,
+   "claim": "Edinburgh's merchants' guild, chartered 1681",
+   "evidence": "The 1260 origin is stated without a cited record.",
+   "sources": [
+    {
+     "title": "Wikipedia: Company of Merchants of the City of Edinburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Company_of_Merchants_of_the_City_of_Edinburgh",
+     "locator": "article text",
+     "quote": "officially recognised in 1681, but dating back to at least 1260"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Shrewsbury Drapers Company",
+   "qid": "Q24993693",
+   "wikipedia_title": "Shrewsbury Drapers Company",
+   "lat": 52.710946,
+   "lon": -2.759567,
+   "nation": "England",
+   "location": "Drapers Hall, St Mary's Place, Shrewsbury",
+   "age_text": "royal charter 1462; hall 1576",
+   "year": 1462,
+   "claim": "the drapers' guild of Shrewsbury, centre of the Welsh cloth trade",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Shrewsbury Drapers Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Drapers_Company",
+     "locator": "article text",
+     "quote": "was incorporated in 1462 by a royal charter"
+    },
+    {
+     "title": "Wikipedia: Shrewsbury Drapers Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Drapers_Company",
+     "locator": "article text",
+     "quote": "In 1576 the Company built a new Drapers Hall in St Mary's Place on the site of an earlier hall."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Hostmen of Newcastle upon Tyne",
+   "qid": "Q5909468",
+   "wikipedia_title": "Hostmen of Newcastle upon Tyne",
+   "nation": "England",
+   "location": "Newcastle upon Tyne",
+   "age_text": "royal charter 1600",
+   "year": 1600,
+   "claim": "the coal-shipping monopoly of the Tyne",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Hostmen of Newcastle upon Tyne",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hostmen_of_Newcastle_upon_Tyne",
+     "locator": "article text",
+     "quote": "In 1600 the Company of Hostmen was incorporated through a charter granted by Elizabeth I."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant guild or company outside London",
+   "name": "Company of Cutlers in Hallamshire",
+   "qid": "Q617252",
+   "wikipedia_title": "Company of Cutlers in Hallamshire",
+   "nation": "England",
+   "location": "Cutlers' Hall, Sheffield",
+   "age_text": "Act of Parliament 1624; hall site since 1638",
+   "year": 1624,
+   "claim": "Sheffield's cutlers' guild, incorporated by Act of Parliament",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Company of Cutlers in Hallamshire",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Company_of_Cutlers_in_Hallamshire",
+     "locator": "article text",
+     "quote": "It was incorporated in 1624 by an act of Parliament."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Merchants of the Staple",
+   "qid": "Q3023348",
+   "wikipedia_title": "Merchants of the Staple",
+   "nation": "England",
+   "location": "London and Calais",
+   "age_text": "royal charter 1319",
+   "year": 1319,
+   "claim": "the oldest mercantile corporation in England (wool, skins, lead and tin)",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Merchants of the Staple",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Merchants_of_the_Staple",
+     "locator": "article text",
+     "quote": "is an English company incorporated by Royal Charter in 1319 (and so the oldest mercantile corporation in England)"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Company of Merchant Adventurers of London",
+   "qid": "Q261512",
+   "wikipedia_title": "Company of Merchant Adventurers of London",
+   "nation": "England",
+   "location": "City of London",
+   "age_text": "early 15th century; charter 1505",
+   "year": 1407,
+   "claim": "cloth exporters to the Low Countries",
+   "evidence": "The year 1407 is the usual date of its first charter; the article gives 'early 15th century' and the charter of 1505.",
+   "sources": [
+    {
+     "title": "Wikipedia: Company of Merchant Adventurers of London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Company_of_Merchant_Adventurers_of_London",
+     "locator": "article text",
+     "quote": "was a trading company founded in the City of London in the early 15th century"
+    },
+    {
+     "title": "Wikipedia: Company of Merchant Adventurers of London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Company_of_Merchant_Adventurers_of_London",
+     "locator": "article text",
+     "quote": "Under Henry VII's charter of 1505, the company had a governor and 24 assistants."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Muscovy Company",
+   "qid": "Q1765656",
+   "wikipedia_title": "Muscovy Company",
+   "nation": "England",
+   "location": "London",
+   "age_text": "chartered 1555",
+   "year": 1555,
+   "claim": "the first major chartered joint-stock company",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Muscovy Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Muscovy_Company",
+     "locator": "article text",
+     "quote": "was an English trading company chartered in 1555."
+    },
+    {
+     "title": "Wikipedia: Muscovy Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Muscovy_Company",
+     "locator": "article text",
+     "quote": "It was the first major chartered joint-stock company"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Eastland Company",
+   "qid": "Q4532868",
+   "wikipedia_title": "Eastland Company",
+   "nation": "England",
+   "location": "London",
+   "age_text": "founded 1579",
+   "year": 1579,
+   "claim": "trade with Scandinavia and the Baltic",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Eastland Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eastland_Company",
+     "locator": "article text",
+     "quote": "was an English Crown-chartered company, founded in 1579"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Levant Company",
+   "qid": "Q3557480",
+   "wikipedia_title": "Levant Company",
+   "nation": "England",
+   "location": "London",
+   "age_text": "charter 1592 (Turkey Company 1581, Venice Company 1583)",
+   "year": 1581,
+   "claim": "trade with the Ottoman Empire",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Levant Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Levant_Company",
+     "locator": "article text",
+     "quote": "Elizabeth I of England approved its initial charter on 11 September 1592 when the Venice Company (1583) and the Turkey Company (1581) merged"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "East India Company",
+   "qid": "Q83164",
+   "wikipedia_title": "East India Company",
+   "nation": "England",
+   "location": "East India House, Leadenhall Street",
+   "age_text": "founded 1600; dissolved 1874",
+   "year": 1600,
+   "claim": "joint-stock company that came to rule much of India",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: East India Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_India_Company",
+     "locator": "article text",
+     "quote": "joint-stock company that was founded in 1600 and dissolved in 1874"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Royal African Company",
+   "qid": "Q769519",
+   "wikipedia_title": "Royal African Company",
+   "nation": "England",
+   "location": "London",
+   "age_text": "established 1660; recharted 1672",
+   "year": 1660,
+   "claim": "held the English monopoly of trade with West Africa, including the slave trade",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal African Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_African_Company",
+     "locator": "article text",
+     "quote": "was an English trading company established in 1660 by the House of Stuart and City of London merchants to trade along the West African coast."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest trading company",
+   "name": "Hudson's Bay Company",
+   "qid": "Q76039",
+   "wikipedia_title": "Hudson's Bay Company",
+   "nation": "England",
+   "location": "London (later Canada)",
+   "age_text": "royal charter 2 May 1670",
+   "year": 1670,
+   "claim": "the fur-trade company, later in Canada",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Hudson's Bay Company",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hudson's_Bay_Company",
+     "locator": "article text",
+     "quote": "incorporated \"The Governor and Company of Adventurers of England, trading into Hudson's Bay\" on 2 May 1670"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Royal Exchange",
+   "year": 1571,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Royal Exchange, Manchester",
+   "qid": "Q3445926",
+   "wikipedia_title": "Royal Exchange, Manchester",
+   "lat": 53.4825,
+   "lon": -2.2444,
+   "nation": "England",
+   "location": "St Ann's Square, Manchester",
+   "age_text": "first exchange 1729; this one opened 1809",
+   "year": 1729,
+   "claim": "the cotton exchange of Manchester",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Exchange, Manchester",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_Manchester",
+     "locator": "article text",
+     "quote": "Manchester's first exchange opened in 1729 but closed by the end of the century."
+    },
+    {
+     "title": "Wikipedia: Royal Exchange, Manchester",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_Manchester",
+     "locator": "article text",
+     "quote": "The exchange opened to celebrate the birthday of George III in 1809."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Baltic Exchange",
+   "qid": "Q805708",
+   "wikipedia_title": "Baltic Exchange",
+   "lat": 51.5151,
+   "lon": -0.0802,
+   "nation": "England",
+   "location": "St Mary Axe, City of London",
+   "age_text": "from 1744 (Virginia and Baltick Coffee House)",
+   "year": 1744,
+   "claim": "the shipping exchange, begun in a coffee house",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Baltic Exchange",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Baltic_Exchange",
+     "locator": "article text",
+     "quote": "The Baltic Exchange traces its roots back to 1744 at the Virginia and Baltick Coffee House on Threadneedle Street, near the Royal Exchange."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Corn Exchange, Mark Lane",
+   "qid": "Q118603570",
+   "wikipedia_title": "Corn Exchange, London",
+   "lat": 51.5103,
+   "lon": -0.0801,
+   "nation": "England",
+   "location": "Mark Lane, City of London",
+   "age_text": "1747 (rebuilt 1828, 1953; closed 1987)",
+   "year": 1747,
+   "claim": "London's grain market",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Corn Exchange, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_Exchange,_London",
+     "locator": "article text",
+     "quote": "The original structure dated from 1747, but the exchange later amalgamated with a rival exchange and was rebuilt several times before finally closing in 1987."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Royal Exchange, Dublin (City Hall)",
+   "qid": "Q1101808",
+   "wikipedia_title": "Royal Exchange, Dublin",
+   "lat": 53.344012,
+   "lon": -6.26725,
+   "nation": "Ireland",
+   "location": "Dame Street, Dublin",
+   "age_text": "built 1769-79",
+   "year": 1769,
+   "claim": "Dublin's merchants' exchange, City Hall since 1852",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Exchange, Dublin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_Dublin",
+     "locator": "article text",
+     "quote": "It was built between 1769 and 1779"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "London Stock Exchange",
+   "qid": "Q171240",
+   "wikipedia_title": "London Stock Exchange",
+   "lat": 51.5153,
+   "lon": -0.0992,
+   "nation": "England",
+   "location": "Paternoster Square, City of London",
+   "age_text": "founded 1801; brokers at Jonathan's from c. 1680",
+   "year": 1801,
+   "claim": "one of the world's oldest continuously operating stock exchanges",
+   "evidence": "Its brokers traded at Jonathan's Coffee-House from about 1680 and in New Jonathan's from 1773 (see the coffee houses).",
+   "sources": [
+    {
+     "title": "Wikipedia: London Stock Exchange",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Stock_Exchange",
+     "locator": "article text",
+     "quote": "Founded in 1801, it is one of the world's oldest continuously operating stock exchanges."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Glasgow Stock Exchange",
+   "qid": "Q5566927",
+   "wikipedia_title": "Glasgow Stock Exchange",
+   "lat": 55.86177,
+   "lon": -4.25391,
+   "nation": "Scotland",
+   "location": "Buchanan Street, Glasgow",
+   "age_text": "founded 1844; building 1875-77",
+   "year": 1844,
+   "claim": "Scotland's stock exchange",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Glasgow Stock Exchange",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glasgow_Stock_Exchange",
+     "locator": "article text",
+     "quote": "The exchange was founded in 1844 and the current building was erected between 1875 and 1877."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest exchange",
+   "name": "Coal Exchange, Cardiff",
+   "qid": "Q2981060",
+   "wikipedia_title": "Cardiff Coal Exchange",
+   "lat": 51.46544,
+   "lon": -3.1682,
+   "nation": "Wales",
+   "location": "Mount Stuart Square, Cardiff",
+   "age_text": "built 1884-88",
+   "year": 1884,
+   "claim": "where the first £1,000,000 deal was agreed (1904)",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Cardiff Coal Exchange",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cardiff_Coal_Exchange",
+     "locator": "article text",
+     "quote": "the building was constructed between 1884 and 1888 by Edwin Seward"
+    },
+    {
+     "title": "Wikipedia: Cardiff Coal Exchange",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cardiff_Coal_Exchange",
+     "locator": "article text",
+     "quote": "It was at the Coal Exchange that the first ever £1,000,000 deal was agreed in 1904."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest coffee house",
+   "name": "Jacob's coffee house at the Angel, Oxford",
+   "wikipedia_title": "English coffeehouses in the 17th and 18th centuries",
+   "nation": "England",
+   "location": "the Angel inn, High Street, Oxford",
+   "age_text": "1650",
+   "year": 1650,
+   "claim": "the first English coffeehouse",
+   "evidence": "The inn is gone; no record of the building survives in the catalogue.",
+   "sources": [
+    {
+     "title": "Wikipedia: English coffeehouses in the 17th and 18th centuries",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
+     "locator": "article text",
+     "quote": "Thus the first English coffeehouse was established in 1650 at the Angel coaching inn in Oxford by a Jewish entrepreneur named Jacob."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest coffee house",
+   "name": "Pasqua Rosée's coffee house (Jamaica Wine House)",
+   "qid": "Q6127350",
+   "wikipedia_title": "Jamaica Wine House",
+   "lat": 51.513,
+   "lon": -0.0856,
+   "nation": "England",
+   "location": "St Michael's Alley, Cornhill, City of London",
+   "age_text": "1652",
+   "year": 1652,
+   "claim": "the first coffee house in London",
+   "evidence": "The Jamaica Wine House stands on the site; a plaque marks the first London coffee house.",
+   "sources": [
+    {
+     "title": "Wikipedia: Jamaica Wine House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jamaica_Wine_House",
+     "locator": "article text",
+     "quote": "It was the first coffee house in London"
+    },
+    {
+     "title": "Wikipedia: Jamaica Wine House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jamaica_Wine_House",
+     "locator": "article text",
+     "quote": "The coffee house, which opened in 1652, is known in some accounts as The Turk's Head."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest coffee house",
+   "name": "Queen's Lane Coffee House, Oxford",
+   "qid": "Q5954426",
+   "wikipedia_title": "Queen's Lane Coffee House",
+   "lat": 51.75272222,
+   "lon": -1.25044444,
+   "nation": "England",
+   "location": "High Street, Oxford",
+   "age_text": "1654; on this site since 1970",
+   "year": 1654,
+   "claim": "claims to be the oldest continually serving coffee house in Europe",
+   "evidence": "Only on its present site since 1970, so the age is of the business, not the room.",
+   "sources": [
+    {
+     "title": "Wikipedia: Queen's Lane Coffee House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queen's_Lane_Coffee_House",
+     "locator": "article text",
+     "quote": "Dating back to 1654, it is the oldest continually serving coffee house in Europe, but it has only been on the present site (Oxford, England) since 1970."
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest coffee house",
+   "name": "Garraway's Coffee House",
+   "year": 1657,
+   "listed_in": "tea"
+  },
+  {
+   "category": "Oldest coffee house",
+   "name": "Jonathan's Coffee-House",
+   "qid": "Q3183299",
+   "wikipedia_title": "Jonathan's Coffee-House",
+   "lat": 51.5129,
+   "lon": -0.087,
+   "nation": "England",
+   "location": "Change Alley, City of London",
+   "age_text": "c. 1680",
+   "year": 1680,
+   "claim": "where London's stockbrokers traded before the Stock Exchange",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Jonathan's Coffee-House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jonathan's_Coffee-House",
+     "locator": "article text",
+     "quote": "The coffee house was opened around 1680 by Jonathan Miles in Change (or Exchange) Alley, in the City of London."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest coffee house",
+   "name": "Lloyd's Coffee House",
+   "qid": "Q3257512",
+   "wikipedia_title": "Lloyd's Coffee House",
+   "lat": 51.5127483,
+   "lon": -0.087497,
+   "nation": "England",
+   "location": "Tower Street, later Lombard Street, City of London",
+   "age_text": "1686",
+   "year": 1686,
+   "claim": "the coffee house from which Lloyd's of London grew",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Lloyd's Coffee House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lloyd's_Coffee_House",
+     "locator": "article text",
+     "quote": "In 1686, the coffee house was opened by Edward Lloyd"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Martins Bank (the Grasshopper, Lombard Street)",
+   "qid": "Q6777191",
+   "wikipedia_title": "Martins Bank",
+   "nation": "England",
+   "location": "68 Lombard Street, City of London",
+   "age_text": "tradition 1563 (Thomas Gresham)",
+   "year": 1563,
+   "claim": "said to go back to Gresham's goldsmith's shop",
+   "evidence": "The tradition is doubted in the article itself: Gresham seems to have had no connection with the Martins.",
+   "sources": [
+    {
+     "title": "Wikipedia: Martins Bank",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martins_Bank",
+     "locator": "article text",
+     "quote": "Tradition has it that Thomas Gresham, whose family crest included a grasshopper, founded the bank in 1563."
+    },
+    {
+     "title": "Wikipedia: Martins Bank",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martins_Bank",
+     "locator": "article text",
+     "quote": "he does not appear to have had any connection with the Martins"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Child & Co.",
+   "year": 1664,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "C. Hoare & Co",
+   "year": 1672,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Barclays",
+   "qid": "Q245343",
+   "wikipedia_title": "Barclays",
+   "nation": "England",
+   "location": "Lombard Street, City of London",
+   "age_text": "1690 (goldsmith banking business)",
+   "year": 1690,
+   "claim": "a Quaker goldsmith-banking business of 1690",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Barclays",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barclays",
+     "locator": "article text",
+     "quote": "Barclays traces its origins to the goldsmith banking business established in the City of London in 1690 by Quakers John Freame and Thomas Gould."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Coutts",
+   "qid": "Q3696285",
+   "wikipedia_title": "Coutts",
+   "nation": "England",
+   "location": "440 Strand, London",
+   "age_text": "1692",
+   "year": 1692,
+   "claim": "the seventh oldest bank in continuous operation",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Coutts",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coutts",
+     "locator": "article text",
+     "quote": "Founded in 1692, it is the seventh oldest bank in continuous operation."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Bank of England",
+   "qid": "Q183231",
+   "wikipedia_title": "Bank of England",
+   "lat": 51.51388889,
+   "lon": -0.08833333,
+   "nation": "England",
+   "location": "Threadneedle Street, City of London",
+   "age_text": "1694",
+   "year": 1694,
+   "claim": "the world's second oldest central bank",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Bank of England",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_of_England",
+     "locator": "article text",
+     "quote": "Established in 1694 to act as the English Government's banker and debt manager"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Bank of Scotland",
+   "year": 1695,
+   "listed_in": "trade"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Drummonds Bank",
+   "qid": "Q5309249",
+   "wikipedia_title": "Drummonds Bank",
+   "lat": 51.5069,
+   "lon": -0.1278,
+   "nation": "England",
+   "location": "Charing Cross, London",
+   "age_text": "1717",
+   "year": 1717,
+   "claim": "founded by the goldsmith Andrew Drummond",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Drummonds Bank",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Drummonds_Bank",
+     "locator": "article text",
+     "quote": "Andrew Drummond (1688–1769), a goldsmith, founded the bank in 1717."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Royal Bank of Scotland",
+   "qid": "Q160126",
+   "wikipedia_title": "Royal Bank of Scotland",
+   "nation": "Scotland",
+   "location": "Edinburgh",
+   "age_text": "chartered 31 May 1727",
+   "year": 1727,
+   "claim": "the 'New Bank' of the Hanoverians and Whigs",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Royal Bank of Scotland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Bank_of_Scotland",
+     "locator": "article text",
+     "quote": "the \"New Bank\" was chartered on 31 May 1727 as the Royal Bank of Scotland"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Lloyds Bank",
+   "qid": "Q1152847",
+   "wikipedia_title": "Lloyds Bank",
+   "nation": "England",
+   "location": "Birmingham",
+   "age_text": "1765",
+   "year": 1765,
+   "claim": "founded in Birmingham",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Lloyds Bank",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lloyds_Bank",
+     "locator": "article text",
+     "quote": "Established in Birmingham in 1765"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Gurney's Bank",
+   "qid": "Q16840575",
+   "wikipedia_title": "Gurney's Bank",
+   "nation": "England",
+   "location": "Bank Plain, Norwich",
+   "age_text": "1770",
+   "year": 1770,
+   "claim": "a Quaker family bank of Norwich, later part of Barclays",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Gurney's Bank",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gurney's_Bank",
+     "locator": "article text",
+     "quote": "The bank was founded in 1770 by John and Henry Gurney"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest bank",
+   "name": "Bank of Ireland",
+   "qid": "Q806689",
+   "wikipedia_title": "Bank of Ireland",
+   "nation": "Ireland",
+   "location": "St Mary's Abbey, Dublin (first premises)",
+   "age_text": "opened 25 June 1783",
+   "year": 1783,
+   "claim": "the oldest bank in continuous operation in Ireland",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Bank of Ireland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_of_Ireland",
+     "locator": "article text",
+     "quote": "Bank of Ireland is the oldest bank in continuous operation"
+    },
+    {
+     "title": "Wikipedia: Bank of Ireland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_of_Ireland",
+     "locator": "article text",
+     "quote": "On 25 June 1783, Bank of Ireland opened for business at St Mary's Abbey"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant's house, warehouse or trading post",
+   "name": "Steelyard (Hanseatic kontor)",
+   "qid": "Q445923",
+   "wikipedia_title": "Steelyard",
+   "lat": 51.51138889,
+   "lon": -0.09055556,
+   "nation": "England",
+   "location": "under Cannon Street station, City of London",
+   "age_text": "German Hansa in London recorded 1282",
+   "year": 1282,
+   "claim": "once the largest medieval trading complex in Britain",
+   "evidence": "Nothing stands; remains found in 1988.",
+   "sources": [
+    {
+     "title": "Wikipedia: Steelyard",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steelyard",
+     "locator": "article text",
+     "quote": "The first mention of a Hansa Almaniae (a \"German Hansa\") in English records is in 1282"
+    },
+    {
+     "title": "Wikipedia: Steelyard",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steelyard",
+     "locator": "article text",
+     "quote": "once the largest medieval trading complex in Britain"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant's house, warehouse or trading post",
+   "name": "Medieval Merchant's House, Southampton",
+   "qid": "Q6806828",
+   "wikipedia_title": "Medieval Merchant's House",
+   "lat": 50.8985,
+   "lon": -1.4052,
+   "nation": "England",
+   "location": "French Street, Southampton",
+   "age_text": "c. 1290",
+   "year": 1290,
+   "claim": "the only building of its type to survive substantially as first built",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Medieval Merchant's House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "article text",
+     "quote": "Built in about 1290 by John Fortin, a prosperous merchant"
+    },
+    {
+     "title": "Wikipedia: Medieval Merchant's House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "article text",
+     "quote": "the only building of its type to survive substantially as first built"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant's house, warehouse or trading post",
+   "name": "Hanse House, King's Lynn",
+   "qid": "Q17536439",
+   "lat": 52.7513,
+   "lon": 0.394797,
+   "nation": "England",
+   "location": "St Margaret's Lane, King's Lynn",
+   "age_text": "1475",
+   "year": 1475,
+   "claim": "with Marriott's Warehouse, the only remaining buildings of the Hanseatic League in England",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: King's Lynn",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King's_Lynn",
+     "locator": "article text",
+     "quote": "It retains two former Hanseatic League warehouses: Hanse House of 1475 and Marriott's Warehouse"
+    },
+    {
+     "title": "Wikipedia: King's Lynn",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King's_Lynn",
+     "locator": "article text",
+     "quote": "These are the only remaining buildings of the Hanseatic League in England."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant's house, warehouse or trading post",
+   "name": "Tudor Merchant's House, Tenby",
+   "qid": "Q15979586",
+   "wikipedia_title": "Tudor Merchant's House",
+   "lat": 51.6717,
+   "lon": -4.69809,
+   "nation": "Wales",
+   "location": "Quay Hill, Tenby",
+   "age_text": "late 15th century",
+   "year": 1480,
+   "claim": "the oldest house still standing in Tenby, with the merchant's shop on the ground floor",
+   "evidence": "Dated only to the late 15th century (shown as 1480).",
+   "sources": [
+    {
+     "title": "Wikipedia: Tudor Merchant's House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tudor_Merchant's_House",
+     "locator": "article text",
+     "quote": "The house was built in the late 15th century from stone."
+    },
+    {
+     "title": "Wikipedia: Tudor Merchant's House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tudor_Merchant's_House",
+     "locator": "article text",
+     "quote": "The building is the oldest house still standing in Tenby"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Oldest merchant's house, warehouse or trading post",
+   "name": "Tobacco Merchant's House, Glasgow",
+   "qid": "Q60743235",
+   "wikipedia_title": "Tobacco Merchant's House",
+   "lat": 55.85872,
+   "lon": -4.25092,
+   "nation": "Scotland",
+   "location": "Miller Street, Glasgow",
+   "age_text": "1775",
+   "year": 1775,
+   "claim": "a tobacco lord's town house of the Merchant City",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Tobacco Merchant's House",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tobacco_Merchant's_House",
+     "locator": "article text",
+     "quote": "It was built by John Craig in 1775."
+    }
+   ],
+   "verdict": "kept"
+  }
+ ]
+}

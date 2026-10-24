@@ -35,10 +35,11 @@ function listsHTML(lists) {
         ? `; ${l.unchecked} not yet checked against sources (marked)` : `, each checked against its sources`}. Dates given only
         to the decade or century are left out.</p>`}
       ${l.categories.map((c) => `<h3>${esc(c.category)}</h3><div class="examples">${c.entries.map((e) => `
-        <a class="ex text" ${e.building ? `href="${buildingUrl(e.id)}"` : `href="#" data-place="${esc(e.id)}"`}><div><b>${esc(e.name)}</b>
+        <${e.building || e.placed !== false ? "a" : "div"} class="ex text" ${e.building ? `href="${buildingUrl(e.id)}"`
+          : e.placed !== false ? `href="#" data-place="${esc(e.id)}"` : `title="No single standing place"`}><div><b>${esc(e.name)}</b>
           <div class="date">${esc(e.age || "")}${VERDICT[e.verdict] ? ` <span class="hint">(${VERDICT[e.verdict]})</span>` : ""}${l.unchecked && !e.verdict ? ` <span class="hint">(unchecked)</span>` : ""}</div>
           <div class="meta">${esc([e.location, e.museum && "now at " + e.museum].filter(Boolean).join(" · "))}</div>
-          ${e.claim ? `<div class="claim">${esc(e.claim)}</div>` : ""}</div></a>`).join("")}</div>`).join("")}
+          ${e.claim ? `<div class="claim">${esc(e.claim)}</div>` : ""}</div></${e.building || e.placed !== false ? "a" : "div"}>`).join("")}</div>`).join("")}
     </section>`).join("");
 }
 

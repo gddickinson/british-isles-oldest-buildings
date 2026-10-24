@@ -19,6 +19,10 @@ age claim, how well it is established, sources with exact quotes and a verdict):
             docks and ships, oldest first
             (`data/curated/trade/tea.json`) -> "Markets & trade"; an entry with `listed_in` (Twinings, Fortnum &
             Mason) stays a place of that list and is only shown here
+  guilds  - guilds, companies and money (roadmap C3b): guildhalls and livery halls, livery companies, merchant
+            guilds outside London, trading companies, exchanges, coffee houses, banks, merchants' houses and
+            trading posts (`data/curated/trade/guilds.json`) -> "Markets & trade"; a company with no single standing
+            place has no coordinates and is listed only
   civic   - oldest schools, universities, hospitals, post offices, courts, police and fire stations, town halls
             and other public institutions -> "Public institutions" (with bidb.institutions)
 An entry whose Wikidata item is already a catalogue building stays there; one already a place moves to the
@@ -66,6 +70,13 @@ LISTS = {
             "file": "trade/tea.json",
             "kinds": {"Tea merchant or firm": "tea_firm", "Tea shop or tea room": "tea_room",
                       "Coffee house, auction, dock or ship of the tea trade": "tea_trade"}},
+    "guilds": {"group": "Markets & trade", "prefix": "gu", "title": "Guilds, companies, exchanges and banks",
+               "file": "trade/guilds.json",
+               "kinds": {"Oldest guildhall or livery hall": "gu_hall", "Oldest livery company or craft guild": "gu_company",
+                         "Oldest merchant guild or company outside London": "gu_merchant",
+                         "Oldest trading company": "gu_trading", "Oldest exchange": "gu_exchange",
+                         "Oldest coffee house": "gu_coffee", "Oldest bank": "gu_bank",
+                         "Oldest merchant's house, warehouse or trading post": "gu_house"}},
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}
@@ -121,8 +132,10 @@ def claims():
 def lists(conn=None):
     """{list: {title, group, categories: [{category, entries: [...]}]}} for the Oldest page."""
     ids = [record_id(n, e) for n in LISTS for e in entries(n)]
-    buildings = {r[0] for r in conn.execute(f"SELECT id FROM buildings WHERE id IN ({','.join('?' * len(ids))})", ids)} \
+    q = ",".join("?" * len(ids))
+    buildings = {r[0] for r in conn.execute(f"SELECT id FROM buildings WHERE id IN ({q})", ids)} \
         if conn is not None and ids else set()
+    placed = {r[0] for r in conn.execute(f"SELECT id FROM places WHERE id IN ({q})", ids)} if conn is not None and ids else None
     out = {}
     for name, spec in LISTS.items():
         cats = {}
@@ -130,7 +143,8 @@ def lists(conn=None):
             cats.setdefault(e["category"], []).append({
                 "id": record_id(name, e), "name": e["name"], "age": e.get("age_text"), "year": e.get("year"),
                 "claim": e.get("claim"), "verdict": e.get("verdict"), "location": e.get("location"),
-                "nation": e.get("nation"), "museum": e.get("museum"), "building": record_id(name, e) in buildings})
+                "nation": e.get("nation"), "museum": e.get("museum"), "building": record_id(name, e) in buildings,
+                "placed": True if placed is None else record_id(name, e) in placed})
         out[name] = {"title": spec["title"], "group": spec["group"],
                      "categories": [{"category": c, "entries": cats[c]} for c in spec["kinds"] if c in cats]}
     if conn is not None:

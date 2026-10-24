@@ -649,3 +649,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Place detail: Order of precedence, Trade, Charter granted (linked to its source), Hall (linked), Motto. Tests 147 OK
   (5 new, tests/test_livery.py); ui_check places_livery and places_guildhalls pass. Hosted copy not updated.
 - Next: C3b.
+
+## 2026-10-23 (night, last) — C3b: the oldest guilds, companies, exchanges and banks
+- New list `guilds` in bidb.oldest_lists (`data/curated/trade/guilds.json`, kinds `gu_*`, group "Markets & trade"): 70
+  entries in 8 categories (guildhall or livery hall 15, livery company 9, merchant guild outside London 7, trading company
+  8, exchange 8, coffee house 6, bank 12, merchant's house or trading post 5). 62 carry their own sources (Wikipedia
+  articles and the Weavers' Company history page); all 136 quotes found by `bidb.evidence --check --new`, read with the
+  checker's own `source_text` while researching. Eight are shown from other lists (`listed_in`): Lavenham Guildhall, Royal
+  Exchange, Child & Co., C. Hoare & Co, Bank of Scotland (trade), Garraway's (tea), Exeter Guildhall and Guildhall, London
+  (civic, already there).
+- Settled from C3a: Grocers founded 1345 (Pepperers 1180), charter 1428; Drapers founded 1361, charter 1364 — both
+  Wikipedia tables right, for different events. Weavers recorded 1130 (Pipe Roll), charter 1155. Open (5): Saddlers'
+  Anglo-Saxon origin, Merchant Company of Edinburgh "at least 1260", Merchant Adventurers 1407, Queen's Lane Coffee House
+  (only on its site since 1970), Martins Bank's 1563 tradition.
+- 29 entries (companies, most banks) have no single standing place and no coordinates: `lists()` now marks entries
+  `placed: false` when neither a building nor a place has their id, and the Oldest page shows them unlinked. Places
+  173,773 → 173,786 (13 new); 15 are catalogue buildings.
+- Tests 148 OK (new: unplaced companies are not links); ui_check `oldest_guilds` added and passing; section checked in a
+  screenshot. Hosted copy not updated.
+- Next: C3c (people of the halls and companies), or C4.

@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,773 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 101
+- Catalogue 22,039 records; 173,786 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 101
   series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -89,11 +89,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       117 livery companies placed (13 at their hall, linked from the company's page) with order of precedence, trade,
       charter year (Wikipedia's precedence table and the source it cites), hall and motto. 76 companies have no place
       (no hall, or a hall without coordinates on Wikidata). 267 other trade items are catalogue buildings.
-- [ ] C3b The researched oldest of each (oldest lists + evidence): guildhall, livery company and charter (the two
-      Wikipedia tables differ: Grocers 1428 charter against 1345 founded, Drapers 1364 against 1361), merchant guild
-      outside London (York Merchant Adventurers, Bristol Merchant Venturers, Edinburgh, Dublin), exchange (Royal
-      Exchange 1571, Glasgow Stock Exchange missing from the stage), coffee house, trading company (Muscovy, Levant,
-      East India; headquarters as places), counting house, bank with founding date.
+- [x] C3b (2026-10-23) The researched oldest of each: list `guilds` of bidb.oldest_lists (`data/curated/trade/guilds.json`,
+      70 entries, 62 with their own sources, all 136 quotes found by `bidb.evidence --check`; 8 shown from the trade,
+      tea and civic lists): guildhalls and livery halls (St Mary's Coventry 1340-42, Merchant Adventurers' York 1357-61,
+      Merchant Taylors' site 1347, Apothecaries' the oldest extant City hall), livery companies (Weavers 1130/1155,
+      Loriners' ordinances 1261, Fishmongers 1272; Grocers founded 1345 and chartered 1428, Drapers 1361 and 1364: both
+      table dates right for different events), merchant guilds outside London (Preston 1179, Dublin 1192, Bristol,
+      Edinburgh, Shrewsbury, Hostmen, Cutlers), trading companies (Staple 1319 to Hudson's Bay 1670), exchanges, coffee
+      houses (Oxford 1650, Pasqua Rosée 1652), banks (Martins' 1563 tradition, open; Child 1664 to Bank of Ireland 1783),
+      merchants' houses and trading posts (Steelyard 1282, Southampton c.1290, Hanse House 1475). 5 left open (Saddlers'
+      Anglo-Saxon origin, Edinburgh 1260, Merchant Adventurers 1407, Queen's Lane, Martins). 29 companies have no
+      standing place: listed on the Oldest page without a link. Glasgow Stock Exchange is a catalogue building (not missing).
+      Counting houses: none with a source found; left to C3c/C8.
 - [ ] C3c People: founders, masters and wardens, merchants linked to the halls and companies (Wikidata P112, P488,
       member of); the halls of the 76 unplaced companies where an open source gives a position.
 - [ ] C4 Firms through time: businesses founded in the isles with founding and closing years (Wikidata; Companies

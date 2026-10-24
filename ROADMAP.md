@@ -4,9 +4,9 @@ Future work for British Isles Oldest Buildings, kept between sessions. Newest de
 each section; tick items off (and move them to SESSION_LOG.md) when done. Sections with every item done
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
-## Status (2026-10-23)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 101
-  series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-23 (102 MB).
+## Status (2026-10-24)
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 111
+  series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-23 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 66 (2026-10-23, after C3c):
   252.1 of 256 MiB, 486 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
@@ -115,11 +115,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       43 of 117 companies placed. The rest (Clothworkers', Furniture Makers', Launderers', Farmers & Fletchers, Air
       Pilots House, the Gunmakers' Proof House) are not on OSM by that name and street; Insurers' Hall is closed. The
       29 guild-list entries with no standing place (East India Company…) cannot show people.
-- [ ] C4 Firms through time: businesses founded in the isles with founding and closing years (Wikidata; Companies
-      House for living firms, OGL) → a map layer of firms open at the slider's year (kind `spans`, by industry) and
-      graphs of firms founded per decade by industry; survivorship bias stated (the record keeps the firms that
-      lasted or became famous). Closed firms from Wikidata closing years and Ireland's CRO register (CC BY,
-      dissolved companies included); Companies House's dissolved companies (API key) not used.
+- [x] C4a (2026-10-24) Firms through time from Wikidata (new `bidb/change_firms.py`, through QLever: WDQS times out on
+      the subclass tree): companies and items directly of class business or enterprise in the isles or with their head
+      office there, 28,421 items; 3,090 parish councils, other councils, NHS trusts, colonial and learned societies,
+      railway lines, brands, websites… left out by class name. Map layer "Firms open" (kind `spans`, coloured by nine
+      industries from the classes, stated industry P452 or the name: making 1,697, publishing and media 2,019, transport
+      and utilities 1,140, finance 900, shops 502, mining 494, food and drink 398, services 1,418, not stated 3,327):
+      11,895 dated firms with a position, 10,928 of them at their head office (spread up to ~1 km), 2,371 with a closing
+      year; 813 open in 1850, 9,147 in 2020. Four graphs (default off): firms founded per decade 1600–2020 (14,541
+      dated firms; with "of these, closed" as a second line) and three by industry. Survivorship bias, the few closing
+      years and national branches carrying the parent's founding year ("Merck (United Kingdom)" 1668) stated in the notes.
+- [ ] C4b Firms from the registers: Ireland's CRO register (CC BY, dissolved companies included; companies registered
+      and dissolved per year by NACE sector, through its SQL API) and Companies House basic data (live companies only,
+      OGL; founded per decade by SIC with a "still trading" caveat, stream the 471 MB file, keep aggregates only) as
+      more lines on the C4a graphs. Companies House's dissolved companies (API key) not used.
 - [ ] C5 Trade and work graphs (with estimates and models compared): occupations by sector (farming / making /
       services) 1379–today, overseas trade (imports, exports, re-exports) and the main goods (wool, cloth, tea,
       sugar, tobacco, cotton, linen, coal, iron), shipping tonnage, patents per year, steam power, banks and

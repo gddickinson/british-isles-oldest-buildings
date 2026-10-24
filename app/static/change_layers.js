@@ -81,9 +81,10 @@ const ChangeLayers = (() => {
             .bindTooltip(`${kind === "canal" ? "Canal" : "Railway"}: opened ${o}${c ? `, closed ${c}` : ""}`, { sticky: true }),
             { span: [o, c], line: kind }))).addTo(map);
         } else if (!shown) {
-          shown = L.layerGroup(data.map(([name, lat, lon, o, c]) => Object.assign(L.circleMarker([lat, lon], {
+          shown = L.layerGroup(data.map(([name, lat, lon, o, c, k]) => Object.assign(L.circleMarker([lat, lon], {   // k: legend entry (firms' industry)
             pane: "changePane", renderer: spanCanvas, radius: 2.2, weight: 0, fillOpacity: 0.9 })
-            .bindTooltip(`${esc(name)}: opened ${o}${c ? `, closed ${c}` : ""}`), { span: [o, c] }))).addTo(map);
+            .bindTooltip(`${esc(name)}${k != null ? ` (${esc(l.legend[k].label)})` : ""}: ${l.id === "firms" ? "founded" : "opened"} ${o}${c ? `, closed ${c}` : ""}`),
+            { span: [o, c], key: k ?? 0 }))).addTo(map);
         }
         let open = 0;
         shown.eachLayer((m) => {
@@ -96,7 +97,7 @@ const ChangeLayers = (() => {
           }
           const [o, c] = m.span, now = o <= y && !(c && c <= y), gone = c && c <= y;
           open += now ? 1 : 0;
-          m.setStyle({ fillColor: now ? l.legend[0].color : l.legend[1].color, fillOpacity: now ? 0.9 : gone ? 0.5 : 0,
+          m.setStyle({ fillColor: now ? l.legend[m.key].color : l.legend[l.legend.length - 1].color, fillOpacity: now ? 0.9 : gone ? 0.5 : 0,
                        radius: now ? 2.2 : 1.6 });
         });
         when.textContent = `${open.toLocaleString()} ${l.kind === "lines" ? "sections open" : "open"} in ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;

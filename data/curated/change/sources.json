@@ -728,5 +728,17 @@
   "url": "https://api.parliament.uk/historic-hansard/commons/1952/oct/22/tea",
   "used": "The tea rationing event (1940-1952), quoted",
   "checked": "2026-10-23, both passages read in Hansard (historic-hansard and the Hansard search API)"
+ },
+ "wikidata_firms": {
+  "short": "Wikidata (firms)",
+  "publisher": "Wikimedia Foundation / Wikidata community",
+  "citation": "Wikidata contributors, companies (Q783794 and subclasses) and items directly of class business (Q4830453) or enterprise (Q6881511) in the isles (P17, incl. the historical kingdoms and the Irish Free State) or with their head office (P159) there; founding (P571), dissolution (P576), industry (P452). Queried 2026-10-24 through QLever (the same Wikidata data).",
+  "licence": "CC0 1.0",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licence_quote": "All structured data (i.e. the main, Property, Lexeme, and EntitySchema namespaces) is released into the public domain under Creative Commons Zero .",
+  "url": "https://www.wikidata.org/wiki/Q783794",
+  "download_url": "https://qlever.dev/api/wikidata",
+  "checked": "2026-10-24, HTTP 200",
+  "used": "Firms founded per decade (roadmap C4a), by industry"
  }
 }

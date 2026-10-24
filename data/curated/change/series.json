@@ -1613,5 +1613,169 @@
   "zero": false,
   "label": "Temperature 12k (100-year steps, band: 5–95%)",
   "note": "Global mean from pollen, marine and lake records (median of five methods), as a difference from 1800–1900."
+ },
+ {
+  "id": "firms_founded",
+  "theme": "Prosperity and work",
+  "title": "Firms founded per decade",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Firms founded (Wikidata)",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded.csv",
+  "default": false,
+  "models": [
+   "firms_founded_closed"
+  ],
+  "note": "Firms on Wikidata with a founding year, by the decade they were founded; the 2020s are a part decade. This is a record of the firms that lasted, grew famous or were written about, not a count of all businesses: most firms of every century left no trace, the oldest that remain are survivors, and modern firms are over-represented by Wikipedia's interest in them. Few closing years are recorded, so the closed line is a floor. National branches of foreign firms (\"Merck (United Kingdom)\") sometimes carry the parent company's founding year. Industries are sorted from each firm's Wikidata classes, stated industry or name; 3,854 of 14,541 dated firms say neither and count only in the total."
+ },
+ {
+  "id": "firms_founded_closed",
+  "theme": "Prosperity and work",
+  "title": "Firms founded: Of these, closed (closing year recorded)",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Of these, closed (closing year recorded)",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_closed.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "firms_founded_making",
+  "theme": "Prosperity and work",
+  "title": "Firms founded per decade: making, food and drink, mining",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Making things",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_making.csv",
+  "default": false,
+  "models": [
+   "firms_founded_food",
+   "firms_founded_mining"
+  ],
+  "note": "Firms on Wikidata with a founding year, by the decade they were founded; the 2020s are a part decade. This is a record of the firms that lasted, grew famous or were written about, not a count of all businesses: most firms of every century left no trace, the oldest that remain are survivors, and modern firms are over-represented by Wikipedia's interest in them. Few closing years are recorded, so the closed line is a floor. National branches of foreign firms (\"Merck (United Kingdom)\") sometimes carry the parent company's founding year. Industries are sorted from each firm's Wikidata classes, stated industry or name; 3,854 of 14,541 dated firms say neither and count only in the total."
+ },
+ {
+  "id": "firms_founded_food",
+  "theme": "Prosperity and work",
+  "title": "Firms founded: Food, drink and tobacco",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Food, drink and tobacco",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_food.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "firms_founded_mining",
+  "theme": "Prosperity and work",
+  "title": "Firms founded: Farming, mining and quarrying",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Farming, mining and quarrying",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_mining.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "firms_founded_money",
+  "theme": "Prosperity and work",
+  "title": "Firms founded per decade: finance, transport, shops",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Banks, finance and insurance",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_money.csv",
+  "default": false,
+  "models": [
+   "firms_founded_transport",
+   "firms_founded_shops"
+  ],
+  "note": "Firms on Wikidata with a founding year, by the decade they were founded; the 2020s are a part decade. This is a record of the firms that lasted, grew famous or were written about, not a count of all businesses: most firms of every century left no trace, the oldest that remain are survivors, and modern firms are over-represented by Wikipedia's interest in them. Few closing years are recorded, so the closed line is a floor. National branches of foreign firms (\"Merck (United Kingdom)\") sometimes carry the parent company's founding year. Industries are sorted from each firm's Wikidata classes, stated industry or name; 3,854 of 14,541 dated firms say neither and count only in the total."
+ },
+ {
+  "id": "firms_founded_transport",
+  "theme": "Prosperity and work",
+  "title": "Firms founded: Transport and utilities",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Transport and utilities",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_transport.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "firms_founded_shops",
+  "theme": "Prosperity and work",
+  "title": "Firms founded: Shops and trade",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Shops and trade",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_shops.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "firms_founded_media",
+  "theme": "Prosperity and work",
+  "title": "Firms founded per decade: publishing and services",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Publishing, print and media",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_media.csv",
+  "default": false,
+  "models": [
+   "firms_founded_services"
+  ],
+  "note": "Firms on Wikidata with a founding year, by the decade they were founded; the 2020s are a part decade. This is a record of the firms that lasted, grew famous or were written about, not a count of all businesses: most firms of every century left no trace, the oldest that remain are survivors, and modern firms are over-represented by Wikipedia's interest in them. Few closing years are recorded, so the closed line is a floor. National branches of foreign firms (\"Merck (United Kingdom)\") sometimes carry the parent company's founding year. Industries are sorted from each firm's Wikidata classes, stated industry or name; 3,854 of 14,541 dated firms say neither and count only in the total."
+ },
+ {
+  "id": "firms_founded_services",
+  "theme": "Prosperity and work",
+  "title": "Firms founded: Services and other",
+  "region": "all the isles",
+  "unit": "firms",
+  "unit_long": "firms founded in the decade",
+  "label": "Services and other",
+  "sources": [
+   "wikidata_firms"
+  ],
+  "file": "firms_founded_services.csv",
+  "default": false,
+  "hidden": true
  }
 ]

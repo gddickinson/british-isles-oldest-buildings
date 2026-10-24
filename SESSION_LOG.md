@@ -727,3 +727,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   written. Checked read-only against the live API (draft flags, asset state, digest = manifest). Not yet run for real.
 - Noticed, not fixed: places_fts has two duplicate rows (Q11753150 Point of Ayr Lighthouse, Q729006 Chatham).
 - Tests 163 OK (tests/test_digs.py 3, tests/test_bundle.py 5). Hosted copy and release not updated.
+
+## 2026-10-24 — C4a: firms through time (Wikidata)
+- C4 split: C4a (Wikidata firms: map layer and graphs, done), C4b (CRO and Companies House registers, pending).
+- New `bidb/change_firms.py` (`python -m bidb.change_firms`, then `bidb.change_series`): 28,421 Wikidata items (companies
+  and subclasses, items directly of class business or enterprise; in the isles by P17, incl. historical states, or by
+  head office), queried through QLever. Not firms, left out by class name: parish councils (3,090) and other councils,
+  NHS trusts, colonial, learned and text-publication societies, railway lines, brands, websites, software…
+- Map layer "Firms open" (Change over time panel on the Map page, `layers/firms.json`, 590 KB): 11,895 dated firms with
+  a position, coloured by nine industries (keyword rules on the classes, else stated industry P452, else the name;
+  3,327 say nothing); 10,928 placed at their head office, spread by up to ~1 km; 2,371 with a closing year. 813 open
+  in 1850, 9,147 in 2020. `change_layers.js`: a `spans` dot can carry a legend entry (6th value); the closed colour is
+  the legend's last entry (stations unchanged).
+- Graphs (default off, theme Prosperity and work): "Firms founded per decade" 1600–2020 (14,541 dated firms; second
+  line: of these, closed), and three by industry (making / food and drink / mining; finance / transport / shops;
+  publishing and media / services). Founded per decade: 13 in the 1690s, 101 in the 1800s, 453 in the 1900s, 2,370 in
+  the 2000s. Notes state the survivorship bias, the few closing years, and national branches carrying the parent's
+  founding year. Source `wikidata_firms` added to `change/sources.json`.
+- Checked in headless Chrome (layer, legend, note, counts at 1850 and 2020; no page errors); ui_check `change_firms`
+  added. Tests 167 OK (tests/test_change_firms.py 4). Hosted copy and release not updated.
+- Next: C4b (CRO and Companies House as more lines on the graphs), or C5.

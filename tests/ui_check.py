@@ -45,6 +45,7 @@ PAGES = {
     "places_livery_people": ("/places?kind_label=Livery+company+or+guild#Q8037025", r"(?s)Master, governor or officer.*Member"),
     "people_officers": ("/people?role=Master%2C+governor+or+officer", r"(?s)Master, governor or officer: Bank of England"),
     "places_guildhalls": ("/places?kind_label=Guildhall%2C+livery+or+merchants%27+hall", r"(?s)data-place=.*Hall"),
+    "change_firms": ("/change", r"(?s)Firms founded per decade.*Of these, closed.*Making things.*Banks, finance and insurance.*Publishing, print and media.*Wikidata \(firms\)"),
     "change_tea": ("/change", r"(?s)Tea retained for home consumption.*432 million in 1938.*Tea drunk per person.*Ministry of Food.*Family Food.*Price of imported tea.*16.1d. in 1919.*Duty on tea.*Imperial Preference.*Commutation Act cuts the tea duty.*Tea rationed"),
     "places_institutions": ("/places?kind_group=Public+institutions", r"data-place="),
     "quiz_menu": ("/quiz", r"Say the name"),

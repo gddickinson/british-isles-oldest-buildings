@@ -183,23 +183,9 @@ def estimate_dates(places):
 
 def people_stage(target_ids):
     links = people.find_links(target_ids, log)
-    persons = people.person_details({p for p, _, _ in links})
-    # saints and biblical figures are "named after" by countless churches and wells: noise here
-    links = [l for l in links if l[2] != people.NAMED_AFTER
-             or (persons.get(l[0], {}).get("birth") or 0) >= people.NAMED_AFTER_FROM]
-    links = people.trim_links(links, persons)
-    used = {p for p, _, _ in links}
-    persons = {q: p for q, p in persons.items() if q in used and p["name"] and not p["name"].startswith("Q")}
-    known = sorted(persons.values(), key=lambda p: -p["sitelinks"])
-    intros = enrich.wikipedia_intros([p["wikipedia_title"] for p in known[:4000] if p["wikipedia_title"]])
-    for p in persons.values():
-        intro = intros.get(p["wikipedia_title"] or "")
-        if intro and intro.get("extract"):
-            p["summary"] = " ".join(re.split(r"(?<=[.!?])\s+", intro["extract"])[:2])[:500]
-        img = p.pop("image", None)
-        p["image_thumb"] = commons_thumb(img.rsplit("/", 1)[-1], 200) if img else None
+    persons, links = people.prepare(links, log)
     log(f"people: {len(persons)} people, {len(links)} links")
-    return list(persons.values()), links
+    return persons, links
 
 
 def run():

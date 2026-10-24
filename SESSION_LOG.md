@@ -668,3 +668,32 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 148 OK (new: unplaced companies are not links); ui_check `oldest_guilds` added and passing; section checked in a
   screenshot. Hosted copy not updated.
 - Next: C3c (people of the halls and companies), or C4.
+
+## 2026-10-23 (night, after C3b) — C3c: people of the guilds, companies and banks
+- Found: none of the 7,642 Markets & trade places had linked people; the people stage of bidb.places_build runs before
+  bidb.trade_works and bidb.oldest_lists add them (also true of Maritime, Military, Museums, Sport…: Data quality item).
+- New stage `bidb/trade_people.py` (build stage after oldest_checks; `--report`): bidb.people's place roles plus Member
+  (P463), Worked for (P108) and "Master, governor or officer" (P39 positions whose P2389 / P642 / P361 is the
+  organisation, and P488, P169, P1037, P3320). Market towns and places on a settlement's item left out (Kirkby
+  Lonsdale market had 19 people born in the town). 329 links, 294 people (people 11,927 → 12,193), 117 places; 123
+  links referenced. Bank of England 81 (governors, Chief Cashiers, directors; staff incl. Theresa May and Rachel
+  Reeves, both of whom worked there), London Stock Exchange 16, Cutlers in Hallamshire 15 (Master Cutlers), Stationers
+  11, Drapers 10.
+- `people.prepare` (moved from places_build.people_stage, shared): people with no English name now dropped before the
+  per-role trim (the old order left 91 links to missing people; they go at the next places build). `link_references`:
+  a source with no English label is shown as "Wikidata source Q…" linked to its item (29 rewritten in the database).
+- Halls of the unplaced companies, `livery.osm_halls`: OSM objects in London named as the mottos table names the hall,
+  whose addr:street is one the table gives; plaques and memorials dropped; one match only. Checked on 9 companies
+  already placed by Wikidata: all within ~25 m. Placed Mercers' Hall (Ironmonger Lane) and Plaisterers' Hall (1 London
+  Wall): companies placed 41 → 43 of 117. Only 10 of the 76 had a hall named; the others are not on OSM so.
+- Bug from C3a fixed: trade_works wrote its three groups in turn, and a place whose kind moved between groups was
+  regrouped by one write and deleted by the next (Plymouth Gin Distillery was missing from the database). The stage
+  now clears all its own kinds first, and a merchant's house with another use takes that kind (the distillery, 1793).
+- Rerunning trade_works showed that the committed database had already lost, for its places, the date precision and 52
+  reviewed corrections of oldest_checks, the researched dates oldest_lists writes onto existing places, and their
+  nations (only 59 of 7,642 trade places had one). Reran oldest_lists → oldest_checks → nation_geo → trade_people:
+  8,530 precisions and 52 corrections back; places with a nation 147,207 → 173,732. Data quality item added.
+- Tests 155 OK (7 new, tests/test_trade_people.py: OSM street check, targets, write keeps other links and people,
+  references, merchant's house yields). ui_check `places_livery_people` and `people_officers` added. Hosted copy not
+  updated; the release database (db-2026-10-22-4) predates C3a–C3c.
+- Next: C4 (firms through time), or the Data quality item on people of the later place groups.

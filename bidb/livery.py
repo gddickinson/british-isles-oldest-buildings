@@ -12,6 +12,7 @@ place. Halls with an article and coordinates become guild-hall places too.
     build()       place records: kind tr_livery (companies) and tr_guild (their halls)
     link_halls()  each company's hall as `extra.hall_ref` ("place:<id>" or "building:<id>"), after the write
 """
+import hashlib
 import json
 import re
 from urllib.parse import quote
@@ -148,7 +149,43 @@ def _places(info_by_qid, qid_of):
             out[q] = (*hall[1], "hall", hall[0])
         elif q in wd and ok(wd[q][:2]):
             out[q] = wd[q]
+    for q, (lat, lon, ref) in osm_halls({q: i for q, i in info_by_qid.items() if q not in out}).items():
+        out[q] = (lat, lon, "osm", None, ref)
     return out
+
+
+def osm_halls(info_by_qid):
+    """{company qid: (lat, lon, osm ref)} for halls with no Wikidata item: an OpenStreetMap object in London named
+    as the mottos table names the hall, whose street (addr:street) is one the table gives ("Mercers' Hall, Ironmonger
+    Lane"); plaques and memorials left out, closed halls not looked up. One match only."""
+    from app.basemap_sources import overpass
+    want = {}
+    for q, info in info_by_qid.items():
+        name, parts = hall_name(info), [p.strip() for p in (info.get("hall") or "").split(",")[1:]]
+        if name and parts and "closed" not in info["hall"].lower():
+            want[q] = (name, {p.lower() for p in parts})
+    if not want:
+        return {}
+    names = "|".join(sorted({re.sub(r"['’]", "['’]?", re.escape(n).replace("\\'", "'")) for n, _ in want.values()}))
+    res = overpass(f"""[out:json][timeout:90];nwr["name"~"^({names})$",i](51.28,-0.52,51.70,0.34);out center tags;""",
+                   "livery_halls_" + hashlib.sha1(names.encode()).hexdigest()[:10])
+    found = {}
+    for el in res.get("elements", []):
+        tags, c = el.get("tags", {}), el.get("center") or el
+        if tags.get("historic") in ("memorial", "plaque") or tags.get("memorial") or "lat" not in c:
+            continue
+        found.setdefault(_plain(tags.get("name", "")), []).append(
+            (tags.get("addr:street", "").lower(), c["lat"], c["lon"], f"{el['type']}/{el['id']}"))
+    out = {}
+    for q, (name, streets) in want.items():
+        hits = [h for h in found.get(_plain(name), []) if h[0] in streets]
+        if len(hits) == 1:
+            out[q] = hits[0][1:]
+    return out
+
+
+def _plain(name):
+    return re.sub(r"['’]", "", name).lower().strip()
 
 
 def build(log=print):
@@ -173,7 +210,7 @@ def build(log=print):
         if q not in where or not r:
             no_place.append(info.get("name") or (r and r["iLabel"]["value"]) or q)
             continue
-        lat, lon, how, hall = where[q]
+        lat, lon, how, hall = where[q][:4]
         x = _record("tr_livery", "Livery company or guild", {**r, "coord": {"value": f"Point({lon} {lat})"}})
         if not x:
             continue
@@ -181,6 +218,9 @@ def build(log=print):
                  if info.get(k)}
         if how == "hall":
             extra["placed_at"], extra["hall_id"] = "its hall", hall
+        elif how == "osm":
+            extra["placed_at"] = "its hall (OpenStreetMap)"
+            extra["hall_osm"] = "https://www.openstreetmap.org/" + where[q][4]
         if info.get("charter"):
             x["year_start"], x["date_text"] = info["charter"], f"charter {info['charter']}"
             extra["charter_source"] = "https://en.wikipedia.org/wiki/" + quote(PRECEDENCE_PAGE.replace(" ", "_"))

@@ -7,6 +7,7 @@ Links in both directions:
                     participant (P710, battles)
 """
 import json
+import re
 
 from .http import sparql
 
@@ -55,14 +56,18 @@ def find_links(target_ids, log=print):
     return sorted(links)
 
 
-def link_references(links, log=print):
+def link_references(links, log=print, person_props=None):
     """{(person, target, role): '{"s": stated in, "u": url}'} for links whose Wikidata statement
-    carries a reference (stated in / reference URL)."""
-    prop_of = {**{v: k for k, v in PERSON_TO_PLACE.items()}, **{v: k for k, v in PLACE_TO_PERSON.items()}}
+    carries a reference (stated in / reference URL). `person_props` adds person -> target properties
+    ({prop: role}); links whose role maps to no single property are skipped."""
+    p2t = {**PERSON_TO_PLACE, **(person_props or {})}
+    prop_of = {**{v: k for k, v in PLACE_TO_PERSON.items()}, **{v: k for k, v in p2t.items()}}
     rows = []
     for p, t, role in links:
-        prop = prop_of[role]
-        subj, obj = (p, t) if prop in PERSON_TO_PLACE else (t, p)
+        prop = prop_of.get(role)
+        if not prop:
+            continue
+        subj, obj = (p, t) if prop in p2t else (t, p)
         rows.append((subj, prop, obj, (p, t, role)))
     out = {}
     for n, chunk in enumerate(_chunks(rows, 200)):
@@ -74,11 +79,14 @@ def link_references(links, log=print):
                 OPTIONAL {{ ?ref pr:P248 ?stated }} OPTIONAL {{ ?ref pr:P854 ?url }}
                 SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }} }}"""):
             val = lambda k: (r.get(k) or {}).get("value")
-            if not (val("statedLabel") or val("url")):
+            stated, url = val("statedLabel"), val("url")
+            if stated and re.fullmatch(r"Q\d+", stated):      # no English label: link the source's item
+                stated, url = "Wikidata source " + stated, url or "https://www.wikidata.org/wiki/" + stated
+            if not (stated or url):
                 continue
             k = key.get((_qid(val("s")), _qid(val("p")), _qid(val("o"))))
             if k and k not in out:
-                out[k] = json.dumps({"s": val("statedLabel"), "u": val("url")}, ensure_ascii=False)
+                out[k] = json.dumps({"s": stated, "u": url}, ensure_ascii=False)
         if n % 20 == 0:
             log(f"  link references: {n * 200}/{len(rows)} links, {len(out)} referenced")
     return out
@@ -129,3 +137,28 @@ def trim_links(links, persons):
         ps.sort(key=lambda p: -persons[p]["sitelinks"])
         kept.extend((p, t, role) for p in ps[:MAX_PER_ROLE])
     return kept
+
+
+def prepare(links, log=print, intros_for=4000):
+    """Links -> (person dicts ready for the persons table, kept links): life details, saints and biblical
+    figures dropped from "named after", the best known per role kept, two-sentence Wikipedia summaries for the
+    `intros_for` best known, thumbnails."""
+    from . import enrich
+    from .records import commons_thumb
+    persons = person_details({p for p, _, _ in links})
+    # saints and biblical figures are "named after" by countless churches and wells: noise here
+    links = [l for l in links if l[2] != NAMED_AFTER
+             or (persons.get(l[0], {}).get("birth") or 0) >= NAMED_AFTER_FROM]
+    persons = {q: p for q, p in persons.items() if p["name"] and not p["name"].startswith("Q")}
+    links = trim_links(links, persons)
+    used = {p for p, _, _ in links}
+    persons = {q: p for q, p in persons.items() if q in used}
+    known = sorted(persons.values(), key=lambda p: -p["sitelinks"])
+    intros = enrich.wikipedia_intros([p["wikipedia_title"] for p in known[:intros_for] if p["wikipedia_title"]])
+    for p in persons.values():
+        intro = intros.get(p["wikipedia_title"] or "")
+        if intro and intro.get("extract"):
+            p["summary"] = " ".join(re.split(r"(?<=[.!?])\s+", intro["extract"])[:2])[:500]
+        img = p.pop("image", None)
+        p["image_thumb"] = commons_thumb(img.rsplit("/", 1)[-1], 200) if img else None
+    return list(persons.values()), links

@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,786 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 101
+- Catalogue 22,039 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 101
   series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -101,8 +101,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       Anglo-Saxon origin, Edinburgh 1260, Merchant Adventurers 1407, Queen's Lane, Martins). 29 companies have no
       standing place: listed on the Oldest page without a link. Glasgow Stock Exchange is a catalogue building (not missing).
       Counting houses: none with a source found; left to C3c/C8.
-- [ ] C3c People: founders, masters and wardens, merchants linked to the halls and companies (Wikidata P112, P488,
-      member of); the halls of the 76 unplaced companies where an open source gives a position.
+- [x] C3c (2026-10-23) People of the Markets & trade places, new stage bidb.trade_people (after oldest_checks; the
+      people stage of places_build runs before these places exist, so none had any): the place roles plus Member
+      (P463), Worked for (P108) and Master, governor or officer (positions of the organisation: Governor of the Bank
+      of England, Masters of the Drapers, Brewers, Cordwainers, Ironmongers and Apothecaries, Prime Warden of the
+      Goldsmiths, Master Cutler; chairperson, CEO, director, board member). 329 links, 294 people, at 117 places
+      (Bank of England 81, London Stock Exchange 16, Cutlers in Hallamshire 15, Stationers 11, Drapers 10; 99 links at
+      21 livery companies); 123 carry a Wikidata reference. Market towns and places on a settlement's item (Kirkby
+      Lonsdale market) left out. Halls of the unplaced companies: only 10 of the 76 have a hall named in the mottos
+      table; Mercers' Hall and Plaisterers' Hall placed from OpenStreetMap (name and street must agree; the plaque
+      for the earlier Plaisterers' halls left out; checked against 9 halls placed by Wikidata, all within ~25 m), so
+      43 of 117 companies placed. The rest (Clothworkers', Furniture Makers', Launderers', Farmers & Fletchers, Air
+      Pilots House, the Gunmakers' Proof House) are not on OSM by that name and street; Insurers' Hall is closed. The
+      29 guild-list entries with no standing place (East India Company…) cannot show people.
 - [ ] C4 Firms through time: businesses founded in the isles with founding and closing years (Wikidata; Companies
       House for living firms, OGL) → a map layer of firms open at the slider's year (kind `spans`, by industry) and
       graphs of firms founded per decade by industry; survivorship bias stated (the record keeps the firms that
@@ -179,6 +190,15 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT7 Hosted copy, Help page, INTERFACE, figures; quiz questions ("which type came first?", "name the type").
 
 ## Data quality and references
+- [ ] People of the places added after places_build (found in C3c, 2026-10-23): Maritime 9,184, Military 9,186,
+      Museums 5,146, Sport 5,495, Victorian 684, Excavations 540 and others have no linked people (the people stage
+      runs before them). bidb.trade_people's `run` could take a group list: museums (directors, founders), sport
+      (founders), military (commanders) would gain most.
+- [ ] Rerunning one place stage by hand undoes what later stages did to its places (found in C3c, 2026-10-23): C3a
+      reran trade_works and lost, for its 27,000 places, the researched dates of bidb.oldest_lists, the date
+      precision and reviewed corrections of bidb.oldest_checks (8,530 + 52) and every nation (nation_geo). Fixed by
+      rerunning oldest_lists → oldest_checks → nation_geo → trade_people. Either a `--after` option that reruns the
+      dependent stages, or document the order in each stage's docstring.
 - [ ] Catalogue categories of guildhalls (found in C3a, 2026-10-23): Merchant Adventurers' Hall (York), Norwich
       Guildhall and St Mary's Guildhall (Coventry) are "House / domestic"; guildhalls, livery and cloth halls
       probably want "Civic building" or a guild category (bidb.categories keyword rules; check the knock-on counts).

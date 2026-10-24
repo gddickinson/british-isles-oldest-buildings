@@ -66,11 +66,13 @@ FIRMS = {"Q783794", "Q4830453", "Q43229"}     # company, business, organisation:
 LABELS = {k: v[1] for k, v in CLASSES.items()}
 GROUPS = {k: v[0] for k, v in CLASSES.items()}
 KINDS = tuple(CLASSES)
+YIELDING = ("tr_merchant",)
 
 
 def build(log=print):
     kinds = {}
-    for kind, (_g, _l, classes) in CLASSES.items():
+    # a merchant's house later put to another use (Plymouth Gin's distillery) takes that use's kind
+    for kind, (_g, _l, classes) in sorted(CLASSES.items(), key=lambda kv: kv[0] in YIELDING):
         for q, cls in (direct_items(classes) if classes else {}).items():
             if not (kind == "tr_bourse" and cls & FIRMS):
                 kinds.setdefault(q, kind)
@@ -100,6 +102,11 @@ def run(log=print):
     old = f"SELECT id FROM places WHERE kind = 'pi_civic' AND id IN ({','.join('?' * len(guilds))})"
     conn.execute(f"DELETE FROM places_fts WHERE id IN ({old})", guilds)
     conn.execute(f"DELETE FROM places WHERE id IN ({old})", guilds)
+    # this stage's own places go first: written group by group, a place whose kind moved to another group
+    # would otherwise be regrouped by one write and deleted by the next
+    own = f"SELECT id FROM places WHERE kind IN ({','.join('?' * len(KINDS))})"
+    conn.execute(f"DELETE FROM places_fts WHERE id IN ({own})", KINDS)
+    conn.execute(f"DELETE FROM places WHERE id IN ({own})", KINDS)
     keep = set(era_places.KINDS)                   # the industrial and Victorian stage's places keep their group
     for group in dict.fromkeys(GROUPS.values()):
         kinds = tuple(k for k in KINDS if GROUPS[k] == group)

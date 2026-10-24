@@ -967,3 +967,32 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Checked in headless Chrome (screenshot of the graphs); ui_check `change_trade_imports` (pattern 1854-1938),
   `change_trade_goods`, `change_trade_values`, `map` pass. Tests 195 OK (1 new). Hosted copy and release not updated.
 - Next: C5b2b3c (quantities of the same imports), C5b2b3d (UK produce exports 1840-53), or C5c (occupations).
+
+## 2026-10-24 — C5b2b3c1: the main imports by quantity, 1868-1911
+- C5b2b3c split: C5b2b3c1 1868-1911 (done), C5b2b3c2 1854-67 (Nos. 16, 18), C5b2b3c3 1912-38 (Nos. 70, 83).
+- Read from the page images (leaf = image `page/n<leaf-1>`; for No. 30 the OCR page index runs one leaf off,
+  so pages were found by their printed page numbers): No. 30 table 21 leaves 516-521 (pp. 40-45), No. 45 table 27
+  leaves 62, 68, 70 (pp. 58, 64, 66; 1883 column), No. 46 table 27 leaves 332-341 (pp. 60-69), No. 59 table 40 leaves
+  136-141 (pp. 124-129), No. 62 table 38 leaf 134 (p. 126, 1904 grain, lost in No. 59's binding). 1,019 figures in
+  new `data/curated/change/data/trade_quantities_abstract_uk.csv` (rows `q_*` old tables, `q59_*` No. 59).
+- Checks: every total of corn agrees with its parts (1890's printed total has a worn digit, 155,6?0,973: the parts
+  and the OCR of five other volumes give 155,620,973). Every figure found printed the same in another edition's OCR
+  text (whole numbers, editions covering the year; the hocr page indexes of Nos. 43-44 and 47-48 downloaded); the
+  rest read on other pages: 1883 teak and other wool on No. 44 p. 66, 1896 other corn on No. 48 p. 59; 1898 sheep's
+  wool is printed 694,701,454 in No. 48 and No. 59 against No. 46's 689,446,139 (a revision, as found for its value).
+  Value ÷ quantity, year by year per row, as a check on the readings: smooth everywhere; the jumps are real ones that
+  move several rows together (sugar -30% in 1884 in all four rows; 1905's sugar dearer).
+- Units: No. 59 prints 1911's raw cotton in centals of 100 lb ("Stated in Centals of 100 lbs. in 1911, and in Cwts.
+  in prior years"); converted in `tons`. Pit props are inside hewn fir to 1900, a row of their own from 1901.
+- Joins: No. 59 against No. 46 (1897-98) equal in cotton, sugar, tea and timber; grain differs by lentils (-170,264
+  and -189,780 cwt, matching the value differences), wool by 1898's revision. No. 44's 1882 column (sheep's 484.9 +
+  other kinds and flocks 5.2 million lb) is 1.1 million lb above No. 30's one wool row: stated in the note.
+- New `bidb/change_trade_quantities.py`; 12 series `sa_qty_*` in five graphs (default off, Prosperity and work): "Food
+  imports by weight", "Raw cotton and wool imported by weight", "Timber imported", "Food import prices" and "Raw
+  material import prices" (value per unit as an index, 1900 = 100; the charts draw at most three lines, so prices are
+  two graphs). Source `stat_abstract_qty_uk`; DATA_LICENSE.md row extended. Change over time: 176 series.
+- A timber-load definition written from memory was taken out of the note before commit.
+- Checked in headless Chrome (screenshots of the five graphs); ui_check `change_trade_quantities` added,
+  `change_trade_imports`, `change_trade_values`, `change_trade_goods`, `map` pass. Tests 201 OK
+  (tests/test_change_trade_quantities.py 6). Hosted copy and release not updated.
+- Next: C5b2b3c2 (quantities 1854-67), C5b2b3c3 (1912-38), C5b2b3d (UK produce exports 1840-53), or C5c.

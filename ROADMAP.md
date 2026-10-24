@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 164
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 176
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -227,7 +227,24 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       every good (No. 83's five timber rows = No. 70's three). Cotton is raw with linters and waste to 1919, raw
       without linters + waste from 1920. Graphs now 1854-1938: grain and flour 77.7 £m in 1913, 215.5 in 1920, 67.7
       in 1938; raw cotton 70.6, 256.5 (1920), 29.1; food 14.9% of imports in 1913, 12.8% in 1938.
-- [ ] C5b2b3c Quantities of the same imports (cwt, lb, loads) 1854-1938, beside the values.
+- C5b2b3c Quantities of the same imports (cwt, lb, loads) 1854-1938, beside the values. Split 2026-10-24:
+- [x] C5b2b3c1 (2026-10-24) Quantities 1868-1911 (new `bidb/change_trade_quantities.py`), read from the page images
+      of No. 30 (table 21, pp. 40-45), No. 45 (table 27, its 1883 column), No. 46 (table 27, pp. 60-69) and No. 59
+      (table 40, pp. 124-129; 1904 grain from No. 62's table 38, p. 126) → `change/data/trade_quantities_abstract_uk.csv`
+      (1,019 printed figures). Every total of corn agrees with its parts (1890's worn digit from its parts and five
+      other volumes); every figure printed the same in another edition's OCR, or read on No. 44's page (1883 teak and
+      other wool) or No. 48's (1896 other corn). No. 59 against No. 46 for 1897-98: equal except lentils (-170,264 and
+      -189,780 cwt, as in the values) and 1898's sheep's wool, revised +5,255,315 lb (No. 48 prints the revision).
+      No. 59 gives 1911's raw cotton in centals of 100 lb (footnote). Value ÷ quantity runs smoothly year to year in
+      every row (the check for misreadings); sugar fell about 30% in 1884 in all four rows together. Graphs (default
+      off): "Food imports by weight" (grain and flour 3,350 thousand tons in 1868, 10,460 in 1903, 9,862 in 1911;
+      sugar 626 → 1,898; tea 69 → 154), "Raw cotton and wool imported by weight" (cotton 593 → 1,066 in 1907 → 985;
+      wool 113 → 359), "Timber imported" (4.13 → 9.46 million loads), and the value per unit as an index (1900 = 100):
+      "Food import prices" (grain 189 in 1868, 86 in 1894, 117 in 1911; sugar 195, 79 in 1902; tea 226, 84 in 1902)
+      and "Raw material import prices" (cotton 178, 69 in 1898, 138; wool 151, 80 in 1901; timber 107, 79 in 1887).
+      No. 44 gives 1882's wool 1.1 million lb above No. 30 (other kinds and flocks counted from 1883).
+- [ ] C5b2b3c2 Quantities 1854-67 from Nos. 16 and 18 (check the units of the corn rows before joining).
+- [ ] C5b2b3c3 Quantities 1912-38 from Nos. 70 and 83 (the classification of 1920; cotton in centals).
 - [ ] C5b2b3d UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the

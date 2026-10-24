@@ -911,5 +911,14 @@
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
   "used": "Imports of grain and flour, raw cotton, wool, sugar, tea and timber, 1854-1938 (£), read from the page images (edition, leaf, page and table per figure in data/trade_imports_abstract_uk.csv); printed totals checked against their parts, the other figures against other editions",
   "checked": "2026-10-24, each figure read from the scan; every printed total agrees with its parts; misprints settled by other editions noted per figure (No. 30's 1868 other corn, No. 46's 1884 hewn timber and 1885 teak); Nos. 70 and 83 print no totals: every figure found printed the same in another edition (OCR of Nos. 71-82, or No. 82's page), 1938 read again from an enlarged crop; 1911 against No. 59 and 1924-25 between Nos. 70 and 83 agree in every row they share"
+ },
+ "stat_abstract_qty_uk": {
+  "short": "Statistical Abstract for the UK, principal imports by quantity",
+  "citation": "Board of Trade, Statistical Abstract for the United Kingdom (annual, HMSO), table of the quantities of the principal articles (entered by quantity) imported into the United Kingdom: No. 30 (1868-1882), table 21, pp. 40-41, 44-45; No. 45 (1883-1897), table 27, pp. 58, 64, 66 (1883 only); No. 46 (1884-1898), table 27, pp. 60-61, 66-69; No. 59 (1897-1911), table 40, pp. 124-129; No. 62 (1900-1914), table 38, p. 126 (grain, 1904 only); No. 44 (1882-1896), table 27, p. 66, and No. 48 (1886-1900), pp. 59, 67 (to confirm figures); Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published before 1940",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "used": "Imports of grain and flour, raw cotton, wool, sugar, tea and timber by quantity, 1868-1911 (cwt, centals, lb, loads), read from the page images (edition, leaf, page and table per figure in data/trade_quantities_abstract_uk.csv); with the values of stat_abstract_imports_uk, the average value per unit",
+  "checked": "2026-10-24, each figure read from the scan; every printed total of corn agrees with its parts (1890's, worn, from its parts and other editions); every figure found printed the same in another edition's OCR, or on No. 44's or No. 48's page (1883 teak and other wool, 1896 other corn); No. 59 against No. 46 for 1897-98 agrees except lentils and 1898's revised sheep's wool (No. 48 prints the revision too)"
  }
 }

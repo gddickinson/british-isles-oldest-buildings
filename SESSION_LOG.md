@@ -883,3 +883,31 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Checked in headless Chrome (screenshot of the three graphs); ui_check `change_trade_goods` (pattern now 1854-1911),
   `change_trade_values`, `change_trade`, `map` pass. Tests 187 OK. Hosted copy and release not updated.
 - Next: C5b2b2b (1912-38 from Nos. 70-83), or C5c (occupations by sector).
+
+## 2026-10-24 — C5b2b2b: the main exports by value 1912-38
+- Read from the page images (leaf = OCR page index, image `page/n<leaf-1>`): No. 70 table 212 pp. 334-345
+  (1911-25) and No. 83 table 288 pp. 410-421 (1924-38), the editions C5b2a used. 1,614 figures appended to
+  `data/curated/change/data/trade_goods_abstract_uk.csv` as rows `n70_*` / `n83_*`, plus No. 70's grand totals
+  (`n70_all`, equal to C5b2a's UK produce 1911-25; No. 83's £'000 totals agree too).
+- These tables print no totals. Every figure was searched for in the OCR text of Nos. 60-92 (digits only, OCR
+  punctuation ignored): all but the 1911 column (No. 59 ends there, checked below) and mostly 1937-38 were found in
+  another edition; the rest were read again from enlarged crops. Two settled from other editions: No. 70's blurred
+  1922 wool hosiery (3,890,469 in Nos. 71-74) and No. 83's 1932 worsted mixed tissues, printed "1,661," (1,661,907 in
+  Nos. 79-82); noted per figure.
+- The classification of 1920 brought back to the old totals (`c20_goods`), and the overlaps explained to the pound:
+  1911 against No. 59 (No. 59 kept for 1911): cotton +841,010 (hosiery and gloves 619,486 moved to apparel; waste from
+  worked cotton 1,460,496 in other cotton manufactures, shown in Class II only from 1920), wool +8,570 (flocks in other
+  woollen manufactures; wool hosiery added back from apparel), iron -2,196 (old rails), machinery -469,774 (road
+  locomotives not shown; rail locomotives added from vehicles), coal, yarns and linen equal. 1924-25, No. 70 against
+  No. 83 (No. 83 used): iron -411,689 / -381,646 and machinery +1,981,217 / +1,841,590 (boilers and boiler-house plant
+  gathered under machinery; railway axles, tyres and wheels, a vehicles row in No. 83, added back to iron);
+  `C20_KNOWN` holds these, `overlap` fails on anything else.
+- `bidb/change_trade_goods.py`: `c20_goods`, `C20_*` row lists, the No. 70 total check, notes for 1912-38 (definitions
+  at both joins, war years and the Irish Free State from April 1923, values for 1913 and the peaks, no causes), region
+  "all Ireland to March 1923". Source `stat_abstract_goods_uk` citation and DATA_LICENSE.md row extended. Graphs now
+  1854-1938: cotton 126.5 £m in 1913, 401.4 in 1920, 49.4 in 1938; coal 120.3 in 1920, 20.5 in 1926, 40.7 in 1938;
+  textiles 17.0% of exports of UK produce in 1938.
+- Checked in headless Chrome (screenshot of the graphs); ui_check `change_trade_goods` (pattern 1854-1938),
+  `change_trade_values`, `change_trade`, `map` pass. Tests 189 OK (2 new in tests/test_change_trade_goods.py).
+  Hosted copy and release not updated.
+- Next: C5b2b3 (main imports 1854-1938, UK produce 1840-53), or C5c (occupations by sector).

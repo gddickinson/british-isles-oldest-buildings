@@ -191,8 +191,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       5.35 against No. 30's 5.44 million for 1868). Cotton and linen agree in both editions for 1868; wool manufactures
       differ by 0.2%, wool yarn by 2.6%. Graphs now 1854-1911 (cotton 31.7 £m in 1854, 46.9 in 1861, 36.8 in 1862;
       textiles 48.9% of UK produce exported in 1854).
-- [ ] C5b2b2b The same goods 1912-38 (Nos. 70-83; check the 1920s classification against No. 59's; the Irish Free
-      State is foreign from April 1923), so the graphs run 1854-1938 as C5b2a.
+- [x] C5b2b2b (2026-10-24) The same goods 1912-38 from No. 70 (table 212, 1911-25) and No. 83 (table 288, 1924-38),
+      the editions C5b2a used: 1,614 figures (rows `n70_*`, `n83_*`) plus No. 70's grand totals, which equal C5b2a's.
+      Neither table prints totals, so every figure was found in another edition's OCR (Nos. 71-82) or, where none
+      prints it (mostly 1937-38), read again from an enlarged crop; No. 83 prints 1932 worsted tissues incomplete
+      ("1,661,"; Nos. 79-82: 1,661,907). The 1920 classification brought back to the old totals and every overlap
+      explained to the pound: 1911 (No. 59 vs No. 70) cotton +0.84m (hosiery and gloves to apparel, waste from
+      worked cotton in other manufactures to 1919), wool +8,570 (flocks; wool hosiery added back), iron -2,196 (old
+      rails), machinery -0.47m (road locomotives not shown; rail locomotives counted from vehicles); 1924-25 (No. 70
+      vs No. 83) iron -0.41m and machinery +1.98m (boilers gathered under machinery; axles, tyres and wheels added
+      back to iron). Graphs now 1854-1938 (cotton 126.5 £m in 1913, 401.4 in 1920, 49.4 in 1938; coal 120.3 in 1920,
+      20.5 in 1926; textiles 17.0% of UK produce exported in 1938).
 - [ ] C5b2b3 The main imports (raw cotton, wool, grain and flour, sugar, tea, timber; values and quantities) from the
       same scans 1854-1938; UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.

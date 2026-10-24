@@ -816,3 +816,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   got its own); ui_check `change_trade` added; change_patents, change_registers, change_tea and map still pass. Tests
   179 OK (tests/test_change_trade.py 4). Hosted copy and release not updated.
 - Next: C5b2 (main goods from the Statistical Abstract), or C5c (occupations by sector).
+
+## 2026-10-24 — C5b2a: overseas trade at the prices of the time, 1854-1938
+- C5b2 split: C5b2a values (done), C5b2b the main goods (and UK produce exports 1840-53), C5b2c HMRC's API (pending).
+- The Statistical Abstract's summary table (imports, United Kingdom produce, foreign and colonial produce = re-exports,
+  total exports; net imports or total trade) read from the page images of Nos. 16 (p. 13), 18 (p. 17), 30 (p. 33),
+  33 (p. 41), 46 (p. 53), 59 (p. 69), 70 (p. 281) and 83 (p. 368) → `data/curated/change/data/trade_abstract_uk.csv`
+  (edition, leaf, page, table per year; latest edition read used). Every row checked by its own two sums: all 85 pass.
+  Overlaps agree except revisions (1870, 1885, 1898) and No. 18's misprinted 1868 imports (294,460,214; the row's own
+  total and No. 30 give 294,693,608). Image leaf = OCR page index; image file `page/n<leaf-1>` as before.
+- New `bidb/change_trade_values.py` (load, check, series, write) → series `sa_trade_imports_uk`, `_exports_uk`,
+  `_reexports_uk` (graph "Overseas trade at the prices of the time, 1854-1938", £ million) and
+  `sa_trade_reexport_share_uk` ("Re-exports, share of all exports": 16% in 1854, 25.6% in 1863, 17.3% in 1913, 5.8% in
+  1918, 11.6% in 1938). Prefix `sa_trade_` so bidb.change_trade's rewrite of `trade_*` leaves them alone. Source
+  `stat_abstract_trade_uk`; DATA_LICENSE.md row. Change over time: 146 series.
+- Two causes written from memory into the notes (American cotton in 1863, wartime controls) were taken out before commit.
+- Checked in headless Chrome (screenshot of both graphs); ui_check `change_trade_values` added; change_trade,
+  change_tea and map still pass. Tests 182 OK (tests/test_change_trade_values.py 3). Hosted copy and release not updated.
+- Next: C5b2b (main goods from the same scans), or C5c (occupations by sector).

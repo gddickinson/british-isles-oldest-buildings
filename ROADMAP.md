@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 142
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 146
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -163,9 +163,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       1930-2025; exports above imports every year since 1985). Eras not joined: different measures, and over 1930-38
       Federico-Tena's dollars against the CSO's pounds give 3.14-4.96 $ to the pound, so they differ in more than the
       exchange rate. Re-exports not separate in any of these (C5b2).
-- [ ] C5b2 The main goods (wool, cloth, tea, sugar, tobacco, cotton, linen, coal, iron) and re-exports from the
-      Statistical Abstract scans 1840-1938 (page images, edition, leaf, page per figure as in C2b), and HMRC's trade API
-      for the modern end (paced requests).
+- [x] C5b2a (2026-10-24) Trade at the prices of the time, 1854-1938 (new `bidb/change_trade_values.py`): imports, exports of
+      UK produce and re-exports from the Statistical Abstract's summary table, read from the page images of Nos. 16, 18, 30,
+      33, 46, 59, 70 and 83 (`change/data/trade_abstract_uk.csv`); all 85 rows pass their own sums. Graphs "Overseas trade
+      at the prices of the time, 1854-1938" (imports £152 million in 1854, £769 million in 1913, £1,933 million in 1920,
+      £920 million in 1938) and "Re-exports, share of all exports" (16% in 1854, 25.6% in 1863, 17.3% in 1913, 5.8% in
+      1918, 11.6% in 1938). No. 18 misprints 1868's imports (294,460,214; its own total gives 294,693,608, as No. 30).
+      The Abstracts' real (computed) values of imports begin in 1854, so nothing earlier is drawn.
+- [ ] C5b2b The main goods (wool, cloth, tea, sugar, tobacco, cotton, linen, coal, iron) from the Statistical Abstract
+      scans 1840-1938 (quantities and values; page images, edition, leaf, page per figure as in C2b); UK produce exports
+      1840-53 (declared values) from Nos. 8 and 13.
+- [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).
 - [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term

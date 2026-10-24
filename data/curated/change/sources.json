@@ -884,5 +884,14 @@
   "download_url": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/ikbk/ukea",
   "checked": "2026-10-24, downloaded (HTTP 200)",
   "used": "Exports and imports in chained volume measures 1948-2025; goods exports as a share of GDP; services' share of exports (roadmap C5b1)"
+ },
+ "stat_abstract_trade_uk": {
+  "short": "Statistical Abstract for the UK, trade values",
+  "citation": "Board of Trade, Statistical Abstract for the United Kingdom (annual, HMSO), table of the (real) value of the total imports and exports of merchandise into and from the United Kingdom, with the proportion thereof per head of the total population: No. 16 (1854-1868), table 8, p. 13; No. 18 (1856-1870), table 13, p. 17; No. 30 (1868-1882), table 19, p. 33; No. 33 (1871-1885), table 22, p. 41; No. 46 (1884-1898), table 25, p. 53; No. 59 (1897-1911), table 32, p. 69; No. 70 (1911-1925), table 199, p. 281; No. 83 (1924-1938), table 277, p. 368; Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published before 1940",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "used": "Imports, exports of United Kingdom produce and re-exports, 1854-1938 (£), read from the page images (edition, leaf, page and table per year in data/trade_abstract_uk.csv); each row checked by its own sums; where editions overlap, the latest edition read is used",
+  "checked": "2026-10-24, each figure read from the scan; every row's sums agree"
  }
 }

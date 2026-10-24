@@ -2305,5 +2305,73 @@
   "default": false,
   "hidden": true,
   "zero": true
+ },
+ {
+  "id": "sa_trade_imports_uk",
+  "theme": "Prosperity and work",
+  "title": "Overseas trade at the prices of the time, 1854-1938",
+  "region": "United Kingdom (all Ireland to March 1923)",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Imports",
+  "sources": [
+   "stat_abstract_trade_uk"
+  ],
+  "file": "sa_trade_imports_uk.csv",
+  "default": false,
+  "models": [
+   "sa_trade_exports_uk",
+   "sa_trade_reexports_uk"
+  ],
+  "note": "The value of goods imported into and exported from the United Kingdom each year at the prices of the time, in million pounds, from the Board of Trade's Statistical Abstracts, read from the page images of eight editions (Nos. 16, 18, 30, 33, 46, 59, 70 and 83; edition, page and table per year in the data file). Imports are valued as they arrived (cost, insurance and freight), exports as loaded on board (\"free on board\"); bullion and coin and goods transhipped under bond are left out. Re-exports are goods imported and sent on again (\"foreign and colonial produce\"), so imports less re-exports is what the country kept. Each row was checked by its own sums (United Kingdom produce + re-exports = all exports; imports less re-exports = net imports, or imports + exports = the total trade). Where editions overlap the latest edition read is used; they agree except 1870, 1885 and 1898, revised later, and 1868, where No. 18 misprints the imports (294,460,214 for 294,693,608). The values of new ships exported were not recorded in 1897-98; manufactured tobacco moved from re-exports to United Kingdom produce in 1892; from August 1914 to June 1917 goods owned by the British or Allied governments were left out; and from 1 April 1923 trade with the Irish Free State is overseas trade and the Free State's own trade is left out. Imports rose from 152 million in 1854 to 769 million in 1913 and 1,933 million in 1920, and were 920 million in 1938; exports of United Kingdom produce were 97, 525 and 471 million. Imports were above exports in every year. These are values, not volumes: for the quantities traded see \"Overseas trade, 1800-1938 (at 1913 prices)\".",
+  "zero": true
+ },
+ {
+  "id": "sa_trade_exports_uk",
+  "theme": "Prosperity and work",
+  "title": "UK exports of UK produce",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Exports of United Kingdom produce",
+  "sources": [
+   "stat_abstract_trade_uk"
+  ],
+  "file": "sa_trade_exports_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_trade_reexports_uk",
+  "theme": "Prosperity and work",
+  "title": "UK re-exports",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Re-exports (foreign and colonial produce)",
+  "sources": [
+   "stat_abstract_trade_uk"
+  ],
+  "file": "sa_trade_reexports_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "sa_trade_reexport_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Re-exports, share of all exports",
+  "region": "United Kingdom (all Ireland to March 1923)",
+  "unit": "%",
+  "unit_long": "% of all exports",
+  "label": "Re-exports",
+  "sources": [
+   "stat_abstract_trade_uk"
+  ],
+  "file": "sa_trade_reexport_share_uk.csv",
+  "default": false,
+  "note": "Re-exports (imported goods sent on again: \"foreign and colonial produce\") as a share of all exports, from the same Statistical Abstract tables as \"Overseas trade at the prices of the time\". The share was 16% in 1854, highest in 1863 (25.6%), 17.3% in 1913, lowest in 1918 (5.8%) and 11.6% in 1938. Manufactured tobacco counts as United Kingdom produce from 1892 (before, as re-exports).",
+  "zero": true
  }
 ]

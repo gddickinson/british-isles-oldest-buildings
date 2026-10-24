@@ -1,4 +1,5 @@
-"""Main imports by value from the Statistical Abstract (roadmap C5b2b3a): the readings file, its totals and the join."""
+"""Main imports by value from the Statistical Abstract (roadmap C5b2b3a, C5b2b3b): the readings file, its totals and
+the joins."""
 import tempfile
 import unittest
 from pathlib import Path
@@ -12,7 +13,7 @@ class TradeImports(unittest.TestCase):
     def test_readings_add_up(self):
         rows = ti.load()
         self.assertEqual(ti.check(rows), [])
-        self.assertEqual(sorted(ti.goods(rows)), list(range(1854, 1912)))
+        self.assertEqual(sorted(ti.goods(rows)), list(range(1854, 1939)))
 
     def test_old_and_new_tables_join(self):
         rows = ti.load()
@@ -34,6 +35,21 @@ class TradeImports(unittest.TestCase):
         self.assertEqual(g[1875]["wool"], rows["wool_all"][1875])
         self.assertEqual(g[1890]["wool"], rows["wool_sheep"][1890] + rows["wool_other"][1890])
         self.assertEqual(g[1898], ti.new_goods(rows, 1898))
+
+    def test_1920_classification_joins(self):
+        rows = ti.load()
+        # 1911: No. 70 against No. 59 differs only by the definitions; 1924-25: Nos. 70 and 83 agree to the pound
+        self.assertEqual(ti._diff(ti.new_goods(rows, 1911), ti.c20_goods(rows, 70, 1911)), ti.C20_KNOWN[1911])
+        for y in (1924, 1925):
+            self.assertEqual(ti.c20_goods(rows, 70, y), ti.c20_goods(rows, 83, y))
+        g = ti.goods(rows)
+        self.assertEqual(g[1911], ti.new_goods(rows, 1911))
+        self.assertEqual(g[1919]["cotton"], rows["n70_cotton"][1919])  # raw with waste in one figure
+        self.assertEqual(g[1920]["cotton"], rows["n70_cotton"][1920] + rows["n70_cotton_waste"][1920])
+        self.assertEqual(g[1925], ti.c20_goods(rows, 83, 1925))
+        self.assertEqual(g[1938]["timber"], sum(rows["n83_" + k][1938] for k in ti.C20_WOOD))
+        rows["n83_tea"][1925] += 1
+        self.assertIn(1925, ti.overlap(rows))
 
     def test_check_finds_a_misread_figure(self):
         with tempfile.TemporaryDirectory() as d:

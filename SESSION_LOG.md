@@ -941,3 +941,29 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_trade_goods`, `change_trade_values`, `map` pass. Tests 194 OK (tests/test_change_trade_imports.py 5).
   Hosted copy and release not updated.
 - Next: C5b2b3b (imports 1912-38 from Nos. 70 and 83), or C5c (occupations by sector).
+
+## 2026-10-24 — C5b2b3b: the main imports by value 1912-38
+- Read from the page images (leaf = OCR page index, image `page/n<leaf-1>`; images cached in
+  `<cache>/stat_abstract_img/`): No. 70 table 206 pp. 304-309 (leaves 318-323, 1911-25) and No. 83 table 285
+  pp. 392-397 (leaves 414-419, 1924-38). 441 figures appended to
+  `data/curated/change/data/trade_imports_abstract_uk.csv` (rows `n70_*`, `n83_*`): wheat, barley, oats, maize,
+  wheat meal and flour; refined and unrefined sugar; tea; raw cotton (and unmanufactured waste from 1920); sheep's
+  and lambs' wool; wood and timber (No. 70: sawn soft, pit props, other; No. 83: sawn hard, sawn soft, planed or
+  dressed, pit props, other).
+- No totals printed. 399 figures found printed the same in another edition's OCR (whole numbers). Of the other 42 (25 of 1929-37, 16 of 1938, and 1911 unrefined sugar = No. 59's beet + cane),
+  the 1929-37 ones were checked on No. 82's page images (pp. 397, 399, 401, same table 285): all agree; the
+  near-misses in other editions' OCR were OCR slips (oats 1933 1,206,558, read 1,206,568/658; refined sugar 1936
+  248,651, read 238,651/218,651). 1938 (printed in No. 83 only) read again from enlarged crops; noted per figure.
+- Joins: 1911 in No. 70 equals No. 59 in every shared row (wheat, barley, oats, maize, flour, refined sugar,
+  unrefined = beet + cane, tea, raw cotton, sheep's wool, sawn fir, pit props, wood total). The 1920 classification
+  drops peas, beans, rye, lentils and other meals (-3,229,254 in 1911), alpaca and flocks (-395,477) and counts
+  mahogany and furniture woods with timber (+2,047,148): `C20_KNOWN`, stated in the notes; 1911 kept from No. 59.
+  1924-25: Nos. 70 and 83 agree to the pound in every good. Cotton: raw with linters and waste to 1919 (1919 one
+  figure), raw without linters + waste from 1920. Wool includes noils to 1919 (footnote).
+- `bidb/change_trade_imports.py`: `c20_goods`, `C20_GRAIN`, `C20_WOOD`, `C20_KNOWN`, `overlap` over all three
+  joins; notes give 1913 and the peaks, the breaks, and the Irish Free State from April 1923; region "all Ireland to
+  March 1923". Source citation (Nos. 70, 82, 83) and DATA_LICENSE.md row extended. Graphs now 1854-1938: grain and
+  flour 215.5 £m in 1920, 67.7 in 1938; raw cotton 256.5 in 1920, 29.1 in 1938; food 12.8% of imports in 1938.
+- Checked in headless Chrome (screenshot of the graphs); ui_check `change_trade_imports` (pattern 1854-1938),
+  `change_trade_goods`, `change_trade_values`, `map` pass. Tests 195 OK (1 new). Hosted copy and release not updated.
+- Next: C5b2b3c (quantities of the same imports), C5b2b3d (UK produce exports 1840-53), or C5c (occupations).

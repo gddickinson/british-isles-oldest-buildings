@@ -1,15 +1,19 @@
-"""The main imports by value, 1854-1911, for "Change over time" (roadmap C5b2b3a).
+"""The main imports by value, 1854-1938, for "Change over time" (roadmap C5b2b3a, C5b2b3b).
 
 The Board of Trade's Statistical Abstract prints the value of each principal article imported. The rows for corn
 (grain and flour), raw cotton, wool, sugar, tea and timber were read from the page images of six editions
 (`data/curated/change/data/trade_imports_abstract_uk.csv`: one printed figure per line, with edition, leaf, page and
 table), the editions used for the summary table (`change_trade_values`), so the shares use the same totals: No. 16
 (1854-1855), No. 18 (1856-1867), No. 30 (1868-1882), No. 45 (its 1883 column), No. 46 (1884-1898) and No. 59
-(1897-1911, the Board's new classification; rows `n59_*`, its 1904 grain column, lost in the binding, from No. 62).
+(1897-1911, the Board's new classification; rows `n59_*`, its 1904 grain column, lost in the binding, from No. 62),
+No. 70 (1911-25, table 206, the classification of 1920; rows `n70_*`) and No. 83 (1924-38, table 285; rows `n83_*`).
 Every printed total is checked against its parts (`check`: the total of corn, Nos. 16 and 18's raw sugar and timber,
 No. 59's grain and flour, wood and timber, and wool); the figures with no printed total were found printed the same
 in another edition's OCR text, or read again from an enlarged crop. `new_goods` brings No. 59's rows back to the old
-tables' definitions; 1897-98, given in both, differ only as `KNOWN` says (`overlap`).
+tables' definitions; 1897-98, given in both, differ only as `KNOWN` says (`overlap`). Nos. 70 and 83 print no
+totals: each of their figures was found printed the same in another edition (the OCR of Nos. 71-82, or No. 82's page
+where the OCR was garbled); 1938, printed in No. 83 alone, was read again from an enlarged crop. `c20_goods` gives
+their goods; 1911 (No. 59 against No. 70) differs only by the definitions in `C20_KNOWN`, 1924-25 not at all.
 
     python -m bidb.change_trade_imports   → data/curated/change/data/sa_imports_*.csv + series.json entries
                                             (then python -m bidb.change_series)
@@ -44,6 +48,13 @@ TOTALS = {
 # kinds" of corn before; sheep's wool of 1898, revised.
 KNOWN = {1897: {"grain": -46919}, 1898: {"grain": -57855, "wool": 149713}}
 GOODS = ("grain", "cotton", "wool", "sugar", "tea", "timber")
+# Nos. 70 and 83 (the classification of 1920): grain without peas, beans, rye, lentils and the meals other than
+# wheat meal; wood and timber with mahogany and the other furniture woods; wool is sheep's and lambs' only.
+C20_GRAIN = ["wheat", "barley", "oats", "maize", "flour"]
+C20_WOOD = ["wood_sawnhard", "wood_sawnsoft", "wood_planed", "wood_pitprops", "wood_other"]
+# 1911 in No. 70 less No. 59 on the old definitions (pounds): the grains no longer shown, alpaca and flocks, and the
+# furniture woods; every row they share agrees to the pound. 1924-25 (No. 70 against No. 83) agree in every good.
+C20_KNOWN = {1911: {"grain": -3229254, "wool": -395477, "timber": 2047148}}
 
 
 def load(path=READINGS):
@@ -101,22 +112,38 @@ def new_goods(rows, y):
             "timber": n("wood_total") - n("wood_mahogany") - n("wood_furnother")}
 
 
+def c20_goods(rows, ed, y):
+    """The goods of one year from No. 70 or No. 83 (`ed`). Raw cotton includes linters and unmanufactured waste to
+    1919; from 1920 waste is a row of its own (added here) and linters are not shown."""
+    s = lambda keys: _sum(rows, [f"n{ed}_{k}" for k in keys], y)
+    return {"grain": s(C20_GRAIN), "cotton": s(["cotton", "cotton_waste"]), "wool": s(["wool"]),
+            "sugar": s(["sugar_refined", "sugar_raw"]), "tea": s(["tea"]), "timber": s(C20_WOOD)}
+
+
 def goods(rows):
-    """{year: {good: pounds}}; No. 59 is used for 1897-98, given in both."""
+    """{year: {good: pounds}}; where two editions give a year, the later one is used (No. 59 for 1897-98, No. 83 for
+    1924-25), except 1911, kept from No. 59 so that the break in definitions falls between 1911 and 1912."""
     out = {y: old_goods(rows, y) for y in rows["corn_total"]}
     out.update({y: new_goods(rows, y) for y in rows["n59_cotton_raw"]})
+    out.update({y: c20_goods(rows, 70, y) for y in rows.get("n70_tea", {}) if y > 1911})
+    out.update({y: c20_goods(rows, 83, y) for y in rows.get("n83_tea", {})})
     return dict(sorted(out.items()))
 
 
+def _diff(a, b):
+    return {k: b[k] - v for k, v in a.items() if b[k] != v}
+
+
 def overlap(rows):
-    """Years given by both the old and the new tables whose differences (new - old) are not the known ones."""
-    out = {}
-    for y in sorted(set(rows["corn_total"]) & set(rows["n59_cotton_raw"])):
-        a, b = old_goods(rows, y), new_goods(rows, y)
-        d = {k: b[k] - v for k, v in a.items() if b[k] != v}
-        if d != KNOWN.get(y, {}):
-            out[y] = d
-    return out
+    """Years given by two editions whose differences (later - earlier) are not the known ones: the old tables and
+    No. 59 (1897-98), No. 59 and No. 70 (1911), No. 70 and No. 83 (1924-25)."""
+    pairs = {y: (old_goods(rows, y), new_goods(rows, y), KNOWN)
+             for y in set(rows["corn_total"]) & set(rows["n59_cotton_raw"])}
+    if "n70_tea" in rows:
+        pairs[1911] = (new_goods(rows, 1911), c20_goods(rows, 70, 1911), C20_KNOWN)
+    pairs.update({y: (c20_goods(rows, 70, y), c20_goods(rows, 83, y), {})
+                  for y in set(rows.get("n70_tea", {})) & set(rows.get("n83_tea", {}))})
+    return {y: d for y, (a, b, known) in sorted(pairs.items()) if (d := _diff(a, b)) != known.get(y, {})}
 
 
 def series(by_year, all_imports):
@@ -131,37 +158,50 @@ def series(by_year, all_imports):
 
 
 COMMON = (
-    "from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 30, 45, 46 and 59 "
+    "from the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 30, 45, 46, 59, 70 "
+    "and 83 "
     "(edition, page and table per figure in the data file). Imports are valued as they arrived (cost, insurance and "
     "freight); to 1870 the Abstract gives a value computed from average prices, from 1871 the value declared by the "
     "importers. Every total the tables print was checked against its printed parts, and the other figures were "
     "found printed the same in another edition. Where the Board's new classification of 1897 (No. 59) and the old "
-    "tables (No. 46) both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them.")
+    "tables (No. 46) both give a year, 1897 and 1898, they agree except as stated; No. 59 is used for them. From 1912 "
+    "the goods are those of the classification of 1920 (Nos. 70 and 83, which agree to the pound for 1924-25); "
+    "1911, given by Nos. 59 and 70, shows the breaks stated below, and is taken from No. 59. From April 1923 the "
+    "imports are those of Great Britain and Northern Ireland, with their trade with the Irish Free State.")
 FOOD_NOTE = (
     "The value of the grain and flour, sugar and tea brought into the United Kingdom each year, at the prices of the "
     "time, " + COMMON + " Grain and flour is the Abstract's \"Total of Corn\": wheat, barley, oats, maize, other "
     "kinds (peas, beans, rye, lentils), wheat flour and other meal, without rice; No. 59 counts lentils with seeds "
     "until 15 April 1902, so 1897-1901 lack them (0.05 million in 1897), and from 1902 its other meal includes sharps, "
     "middlings and some offals. Sugar is refined and raw (unrefined, cane and beet) sugar, without molasses and "
-    "glucose. Grain and flour was {g0:,.1f} million in {y0}, {g67:,.1f} million in 1867, {gmax:,.1f} million in "
-    "{ygmax} and {g1:,.1f} million in {y1}; sugar {s0:,.1f}, {smax:,.1f} (in {ysmax}) and {s1:,.1f} million; tea "
-    "{t0:,.1f}, {tmax:,.1f} (in {ytmax}) and {t1:,.1f} million. Values at the prices of the time, not quantities.")
+    "glucose. From 1912 grain and flour is wheat, barley, oats, maize, and wheat meal and flour: peas, beans, rye, "
+    "lentils and the other meals are no longer shown (3.23 million in 1911). Grain and "
+    "flour was {g0:,.1f} million in {y0}, {g67:,.1f} million in 1867, {g11:,.1f} million in 1911, {g13:,.1f} million "
+    "in 1913, {gmax:,.1f} million in {ygmax} and {g1:,.1f} million in {y1}; sugar {s0:,.1f}, {s13:,.1f} (1913), "
+    "{smax:,.1f} (in {ysmax}) and {s1:,.1f} million; tea {t0:,.1f}, {t13:,.1f} (1913), {tmax:,.1f} (in {ytmax}) and "
+    "{t1:,.1f} million. Values at the prices of the time, not quantities.")
 MATERIALS_NOTE = (
     "The value of the raw cotton, wool and timber brought into the United Kingdom each year, at the prices of the "
     "time, " + COMMON + " Wool is sheep's and lambs' wool with alpaca, vicuna and llama, and flocks (and waste) from "
     "1883 (about 0.06 million a year), not goats' hair or mohair; No. 59 revises 1898's sheep's wool by 0.15 million "
-    "(23.59 against No. 46's 23.44 million). Timber is hewn (with teak and pit props), sawn or split, and staves, "
+    "(23.59 against No. 46's 23.44 million); from 1912 wool is sheep's and lambs' wool alone (alpaca, vicuna, "
+    "llama and flocks: 0.40 million in 1911), with noils until 1919. Raw cotton includes linters and unmanufactured "
+    "waste; from 1920 linters are not shown. Timber is hewn (with teak and pit props), sawn or split, and staves, "
     "not mahogany or other furniture woods; for 1866-67 later editions (Nos. 19-22) give 0.03 million more hewn and "
     "about 0.33 million more sawn timber than No. 18, which is used, and No. 30's 1868 is 0.49 million above No. "
-    "18's. Raw cotton was {c0:,.1f} million in {y0}, {c61:,.1f} million in 1861, {c64:,.1f} million in 1864 "
-    "(the American Civil War was fought in 1861-65), {c85:,.1f} million in 1885 and {c1:,.1f} "
-    "million in {y1} (highest {cmax:,.1f} million, in {ycmax}); wool {w0:,.1f}, {wmax:,.1f} (in {ywmax}) and {w1:,.1f} million; timber {k0:,.1f}, "
+    "18's; from 1912 timber is all wood and timber, with mahogany and the other furniture woods (2.05 million in "
+    "1911). Raw cotton was {c0:,.1f} million in {y0}, {c61:,.1f} million in 1861, {c64:,.1f} million in 1864 "
+    "(the American Civil War was fought in 1861-65), {c85:,.1f} million in 1885, {c13:,.1f} "
+    "million in 1913, {cmax:,.1f} million in {ycmax} (the highest) and {c1:,.1f} million in {y1}; wool {w0:,.1f}, "
+    "{w13:,.1f} (1913), {wmax:,.1f} (in {ywmax}) and {w1:,.1f} million; timber {k0:,.1f}, {k13:,.1f} (1913), "
     "{kmax:,.1f} (in {ykmax}) and {k1:,.1f} million.")
 SHARE_NOTE = (
     "The main imports as a share of all imports (the Abstract's summary table, as in \"Overseas trade at the prices "
     "of the time\"). Grain and flour, sugar and tea together were {f0:.1f}% of all imports in {y0}, {fmax:.1f}% in "
-    "{yfmax} and {f1:.1f}% in {y1}; grain and flour alone {g0:.1f}%, {gmax:.1f}% (in {ygmax}) and {g1:.1f}%; raw "
-    "cotton, wool and timber together {m0:.1f}%, {mmax:.1f}% (in {ymmax}) and {m1:.1f}%. Values at the prices of the "
+    "{yfmax}, {f13:.1f}% in 1913 and {f1:.1f}% in {y1}; grain and flour alone {g0:.1f}%, {gmax:.1f}% (in {ygmax}) "
+    "and {g1:.1f}%; raw "
+    "cotton, wool and timber together {m0:.1f}%, {mmax:.1f}% (in {ymmax}), {m13:.1f}% (1913) and {m1:.1f}%. The goods "
+    "lose and gain rows in 1912 (see the other graphs' notes). Values at the prices of the "
     "time: a falling share can mean lower prices as well as smaller quantities.")
 
 
@@ -187,27 +227,28 @@ def write(rows, log=print):
     ygmax, ysmax, ytmax, ycmax, ywmax, ykmax = (arg(d, max) for d in (g, s, t, c, w, k))
     yfmax, ygsmax, ymmax = arg(f, max), arg(gs, max), arg(ms, max)
     gbp = "million pounds (prices of the time)"
-    region = "United Kingdom"
+    region = "United Kingdom (all Ireland to March 1923)"
     title = f"{y0}-{y1}"
     out = [
         _row(PREFIX + "grain_uk", f"Food imports, {title}", "Grain and flour", gbp, SOURCES, region,
-             FOOD_NOTE.format(g0=g[y0], y0=y0, g67=g[1867], gmax=g[ygmax], ygmax=ygmax, g1=g[y1], y1=y1, s0=s[y0],
-                              smax=s[ysmax], ysmax=ysmax, s1=s[y1], t0=t[y0], tmax=t[ytmax], ytmax=ytmax, t1=t[y1]),
+             FOOD_NOTE.format(g0=g[y0], y0=y0, g67=g[1867], g11=g[1911], g13=g[1913], gmax=g[ygmax], ygmax=ygmax,
+                              g1=g[y1], y1=y1, s0=s[y0], s13=s[1913], smax=s[ysmax], ysmax=ysmax, s1=s[y1], t0=t[y0],
+                              t13=t[1913], tmax=t[ytmax], ytmax=ytmax, t1=t[y1]),
              [PREFIX + "sugar_uk", PREFIX + "tea_uk"], unit="£m"),
         _row(PREFIX + "sugar_uk", "Sugar imports", "Sugar", gbp, SOURCES, region, unit="£m"),
         _row(PREFIX + "tea_uk", "Tea imports", "Tea", gbp, SOURCES, region, unit="£m"),
         _row(PREFIX + "cotton_uk", f"Raw material imports, {title}", "Raw cotton", gbp, SOURCES, region,
-             MATERIALS_NOTE.format(c0=c[y0], y0=y0, c61=c[1861], c64=c[1864], c85=c[1885], cmax=c[ycmax],
-                                   ycmax=ycmax, c1=c[y1], y1=y1, w0=w[y0], wmax=w[ywmax], ywmax=ywmax, w1=w[y1],
-                                   k0=k[y0], kmax=k[ykmax], ykmax=ykmax, k1=k[y1]),
+             MATERIALS_NOTE.format(c0=c[y0], y0=y0, c61=c[1861], c64=c[1864], c85=c[1885], c13=c[1913],
+                                   cmax=c[ycmax], ycmax=ycmax, c1=c[y1], y1=y1, w0=w[y0], w13=w[1913], wmax=w[ywmax], ywmax=ywmax, w1=w[y1],
+                                   k0=k[y0], k13=k[1913], kmax=k[ykmax], ykmax=ykmax, k1=k[y1]),
              [PREFIX + "wool_uk", PREFIX + "timber_uk"], unit="£m"),
         _row(PREFIX + "wool_uk", "Wool imports", "Wool", gbp, SOURCES, region, unit="£m"),
         _row(PREFIX + "timber_uk", "Timber imports", "Timber", gbp, SOURCES, region, unit="£m"),
         _row(PREFIX + "food_share_uk", f"Main imports, share of all imports, {title}", "Grain and flour, sugar and tea",
              "% of all imports", SOURCES + ["stat_abstract_trade_uk"], region,
-             SHARE_NOTE.format(f0=f[y0], y0=y0, fmax=f[yfmax], yfmax=yfmax, f1=f[y1], y1=y1, g0=gs[y0],
+             SHARE_NOTE.format(f0=f[y0], y0=y0, fmax=f[yfmax], yfmax=yfmax, f13=f[1913], f1=f[y1], y1=y1, g0=gs[y0],
                                gmax=gs[ygsmax], ygmax=ygsmax, g1=gs[y1], m0=ms[y0], mmax=ms[ymmax], ymmax=ymmax,
-                               m1=ms[y1]),
+                               m13=ms[1913], m1=ms[y1]),
              [PREFIX + "grain_share_uk", PREFIX + "materials_share_uk"], unit="%"),
         _row(PREFIX + "grain_share_uk", "Grain and flour, share of imports", "Grain and flour", "% of all imports",
              SOURCES, region, unit="%"),

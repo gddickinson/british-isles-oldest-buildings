@@ -217,7 +217,16 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       "Main imports, share of all imports" (food 24.6% → 16.4%; raw cotton, wool and timber 24.8%, 38.4% in 1864,
       18.9%). Timber in later editions (Nos. 19-22) runs ~0.36 million above No. 18 for 1866-67, unexplained; No. 18
       kept (the summary table's edition), the gap stated in the note.
-- [ ] C5b2b3b The same imports 1912-38 from Nos. 70 and 83 (the 1920 classification; overlaps 1911, 1924-25).
+- [x] C5b2b3b (2026-10-24) The same imports 1912-38 from No. 70 (table 206, pp. 304-309, 1911-25) and No. 83
+      (table 285, pp. 392-397, 1924-38): 441 printed figures (rows `n70_*`, `n83_*`). No totals printed: 399 figures
+      found printed the same in another edition's OCR (Nos. 71-82); 25 of 1929-37 confirmed on No. 82's own pages
+      (pp. 397-401), where the OCR was garbled (e.g. oats 1933: OCR 1,206,568, page 1,206,558); 1911 unrefined sugar = No. 59's beet + cane; 1938 (No. 83 only)
+      read again from enlarged crops. Joins: 1911 No. 70 equals No. 59 in every shared row; the 1920 classification
+      drops peas, beans, rye, lentils and other meals (grain -3.23 £m in 1911), alpaca and flocks (wool -0.40) and
+      adds the furniture woods (timber +2.05), stated in the notes; 1924-25 Nos. 70 and 83 agree to the pound in
+      every good (No. 83's five timber rows = No. 70's three). Cotton is raw with linters and waste to 1919, raw
+      without linters + waste from 1920. Graphs now 1854-1938: grain and flour 77.7 £m in 1913, 215.5 in 1920, 67.7
+      in 1938; raw cotton 70.6, 256.5 (1920), 29.1; food 14.9% of imports in 1913, 12.8% in 1938.
 - [ ] C5b2b3c Quantities of the same imports (cwt, lb, loads) 1854-1938, beside the values.
 - [ ] C5b2b3d UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.

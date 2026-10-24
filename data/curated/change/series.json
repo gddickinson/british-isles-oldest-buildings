@@ -1777,5 +1777,270 @@
   "file": "firms_founded_services.csv",
   "default": false,
   "hidden": true
+ },
+ {
+  "id": "companies_incorporated_gb",
+  "theme": "Prosperity and work",
+  "title": "Companies incorporated per year",
+  "region": "Great Britain, United Kingdom from 2009-10",
+  "unit": "companies",
+  "unit_long": "companies incorporated in the year",
+  "label": "Incorporated (Table A8)",
+  "sources": [
+   "companies_house_a8",
+   "companies_house_basic"
+  ],
+  "file": "companies_incorporated_gb.csv",
+  "default": false,
+  "models": [
+   "companies_dissolved_gb",
+   "companies_live_by_year_uk"
+  ],
+  "note": "Companies incorporated and dissolved each year from Companies House's Table A8: Great Britain to 2008-09, the United Kingdom from 2009-10 (when Northern Ireland's register joined); calendar years to 1986, then years ending in March (shown at the year they end in); figures before 2009-10 rounded to the nearest 100. The third line counts the companies on the register in October 2026 by the year they were incorporated (Companies House basic data; Companies Act companies only, as in Table A8): of the 69,400 incorporated in 1980, 5,063 are still on the register. The Wikidata firms of the other graphs are a few thousand per decade, about a hundredth of these."
+ },
+ {
+  "id": "companies_dissolved_gb",
+  "theme": "Prosperity and work",
+  "title": "Companies dissolved per year",
+  "region": "Great Britain, United Kingdom from 2009-10",
+  "unit": "companies",
+  "unit_long": "companies dissolved in the year",
+  "label": "Dissolved (Table A8)",
+  "sources": [
+   "companies_house_a8",
+   "companies_house_basic"
+  ],
+  "file": "companies_dissolved_gb.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_by_year_uk",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today by year incorporated",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies incorporated in the year and on the register in October 2026",
+  "label": "Of each year's, still on the register in 2026",
+  "sources": [
+   "companies_house_a8",
+   "companies_house_basic"
+  ],
+  "file": "companies_live_by_year_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_register_gb",
+  "theme": "Prosperity and work",
+  "title": "Companies on the register",
+  "region": "Great Britain, United Kingdom from 2009-10",
+  "unit": "companies",
+  "unit_long": "companies on the register",
+  "label": "Total register (Table A8)",
+  "sources": [
+   "companies_house_a8"
+  ],
+  "file": "companies_register_gb.csv",
+  "default": false,
+  "models": [
+   "companies_register_effective_gb"
+  ],
+  "note": "Companies on the register of Great Britain (from 2009-10 the United Kingdom) at the end of each year, from Companies House's Table A8; the effective register leaves out companies being dissolved or liquidated. 173,300 in 1939, 5,479,045 in 2025-26."
+ },
+ {
+  "id": "companies_register_effective_gb",
+  "theme": "Prosperity and work",
+  "title": "Companies on the effective register",
+  "region": "Great Britain, United Kingdom from 2009-10",
+  "unit": "companies",
+  "unit_long": "companies on the effective register",
+  "label": "Effective register",
+  "sources": [
+   "companies_house_a8"
+  ],
+  "file": "companies_register_effective_gb.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_registered_ie",
+  "theme": "Prosperity and work",
+  "title": "Companies registered per year: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "companies",
+  "unit_long": "companies registered in the year",
+  "label": "Registered (CRO)",
+  "sources": [
+   "cro_companies"
+  ],
+  "file": "companies_registered_ie.csv",
+  "default": false,
+  "models": [
+   "companies_dissolved_ie",
+   "companies_live_by_year_ie"
+  ],
+  "note": "Companies registered and dissolved each year in Ireland (the state; Northern Ireland's companies are on the UK register), from the Companies Registration Office's records of every company, with the dissolved ones: 827,850 companies. Companies dissolved before the 1960s are mostly missing, so the earlier years count chiefly the companies that lasted (dissolutions are recorded from 1960; a handful earlier are not shown), and 16,192 records have no registration date. The third line counts the companies of each year's registrations still on the register in October 2026. Contains Irish Public Sector Data licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence."
+ },
+ {
+  "id": "companies_dissolved_ie",
+  "theme": "Prosperity and work",
+  "title": "Companies dissolved per year: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "companies",
+  "unit_long": "companies dissolved in the year",
+  "label": "Dissolved (CRO)",
+  "sources": [
+   "cro_companies"
+  ],
+  "file": "companies_dissolved_ie.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_by_year_ie",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today by year registered: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "companies",
+  "unit_long": "companies registered in the year and on the register in October 2026",
+  "label": "Of each year's, still on the register in 2026",
+  "sources": [
+   "cro_companies"
+  ],
+  "file": "companies_live_by_year_ie.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_making_things",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today by decade founded: making, food and drink, mining",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Making things",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_making_things.csv",
+  "default": false,
+  "models": [
+   "companies_live_food",
+   "companies_live_farming"
+  ],
+  "note": "Companies on the UK register in October 2026 by the decade they were incorporated and their industry (the first SIC code given, sorted into the industries of the Wikidata firms graphs; construction counts with making things, restaurants with food and drink). Only companies still alive are in the file, so the early decades show the survivors, not the companies founded then: set these against the incorporations per year. 276,382 of 4,901,090 companies are dormant, not trading or give no code and count in no industry. The 2020s are a part decade."
+ },
+ {
+  "id": "companies_live_food",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today: Food, drink and tobacco",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Food, drink and tobacco",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_food.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_farming",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today: Farming, mining and quarrying",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Farming, mining and quarrying",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_farming.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_banks",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today by decade founded: finance, transport, shops",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Banks, finance and insurance",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_banks.csv",
+  "default": false,
+  "models": [
+   "companies_live_transport",
+   "companies_live_shops"
+  ],
+  "note": "Companies on the UK register in October 2026 by the decade they were incorporated and their industry (the first SIC code given, sorted into the industries of the Wikidata firms graphs; construction counts with making things, restaurants with food and drink). Only companies still alive are in the file, so the early decades show the survivors, not the companies founded then: set these against the incorporations per year. 276,382 of 4,901,090 companies are dormant, not trading or give no code and count in no industry. The 2020s are a part decade."
+ },
+ {
+  "id": "companies_live_transport",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today: Transport and utilities",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Transport and utilities",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_transport.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_shops",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today: Shops and trade",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Shops and trade",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_shops.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "companies_live_publishing",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today by decade founded: publishing and services",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Publishing, print and media",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_publishing.csv",
+  "default": false,
+  "models": [
+   "companies_live_services"
+  ],
+  "note": "Companies on the UK register in October 2026 by the decade they were incorporated and their industry (the first SIC code given, sorted into the industries of the Wikidata firms graphs; construction counts with making things, restaurants with food and drink). Only companies still alive are in the file, so the early decades show the survivors, not the companies founded then: set these against the incorporations per year. 276,382 of 4,901,090 companies are dormant, not trading or give no code and count in no industry. The 2020s are a part decade."
+ },
+ {
+  "id": "companies_live_services",
+  "theme": "Prosperity and work",
+  "title": "Companies alive today: Services and other",
+  "region": "United Kingdom",
+  "unit": "companies",
+  "unit_long": "companies alive in 2026 founded in the decade",
+  "label": "Services and other",
+  "sources": [
+   "companies_house_basic"
+  ],
+  "file": "companies_live_services.csv",
+  "default": false,
+  "hidden": true
  }
 ]

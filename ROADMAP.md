@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 111
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 127
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-23 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 66 (2026-10-23, after C3c):
   252.1 of 256 MiB, 486 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -125,10 +125,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       year; 813 open in 1850, 9,147 in 2020. Four graphs (default off): firms founded per decade 1600–2020 (14,541
       dated firms; with "of these, closed" as a second line) and three by industry. Survivorship bias, the few closing
       years and national branches carrying the parent's founding year ("Merck (United Kingdom)" 1668) stated in the notes.
-- [ ] C4b Firms from the registers: Ireland's CRO register (CC BY, dissolved companies included; companies registered
-      and dissolved per year by NACE sector, through its SQL API) and Companies House basic data (live companies only,
-      OGL; founded per decade by SIC with a "still trading" caveat, stream the 471 MB file, keep aggregates only) as
-      more lines on the C4a graphs. Companies House's dissolved companies (API key) not used.
+- [x] C4b (2026-10-24) Companies from the registers (new `bidb/change_registers.py`), six graphs of their own (default
+      off, Prosperity and work), not more lines on the C4a graphs: the registers count about a hundred times the
+      Wikidata firms (5.7 million incorporations in the ten years to 2019-20 against 2,370 Wikidata firms founded in the 2000s), which would
+      flatten them. "Companies incorporated per year" (Table A8, GB 1939–2008-09, UK from 2009-10; 11,100 in 1939,
+      69,400 in 1980, 815,277 in 2025-26), with dissolved and "of each year's, still on the register in 2026" (Companies
+      House basic data, Companies Act companies only as in A8: 5,063 of 1980's 69,400 survive); "Companies on the
+      register" (173,300 in 1939, 5,479,045 in 2025-26; effective register as a second line); "Companies registered per
+      year: Ireland" (CRO, 827,850 records: registered, dissolved from 1960, still registered; dissolved companies
+      before the 1960s mostly missing, CC BY attribution in the note); and three "Companies alive today by decade
+      founded" by industry (SIC divisions mapped onto the C4a industries; 4,901,090 live companies, 276,382 dormant
+      or with no code). Not done: Ireland by industry (NACE on only 32% of CRO records), the CRO SQL API (functions
+      such as `extract` not allowed; the 47 MB zip is read instead). Companies House's dissolved companies (API key)
+      not used.
 - [ ] C5 Trade and work graphs (with estimates and models compared): occupations by sector (farming / making /
       services) 1379–today, overseas trade (imports, exports, re-exports) and the main goods (wool, cloth, tea,
       sugar, tobacco, cotton, linen, coal, iron), shipping tonnage, patents per year, steam power, banks and

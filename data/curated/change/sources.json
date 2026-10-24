@@ -740,5 +740,41 @@
   "download_url": "https://qlever.dev/api/wikidata",
   "checked": "2026-10-24, HTTP 200",
   "used": "Firms founded per decade (roadmap C4a), by industry"
+ },
+ "companies_house_a8": {
+  "short": "Companies register activities, Table A8 (1939-2026)",
+  "publisher": "Companies House (Official Statistics)",
+  "citation": "Companies House (2026) Companies register activities: statistical release April 2025 to March 2026, Table A8: Historical data, 1939 to 2025-26 (Great Britain), published 25 June 2026",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated.",
+  "url": "https://www.gov.uk/government/statistics/companies-register-activities-statistical-release-april-2025-to-march-2026",
+  "download_url": "https://assets.publishing.service.gov.uk/media/6a3d1a97eaee00074150f4df/Companies_register_activities_April_2025_to_March_2026.xlsx",
+  "used": "Companies incorporated and dissolved per year and the register 1939-2026 (roadmap C4b)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "companies_house_basic": {
+  "short": "Companies House Free Company Data Product",
+  "publisher": "Companies House",
+  "citation": "Companies House, Free Company Data Product (BasicCompanyData), monthly snapshot 2026-10-01",
+  "licence": "No re-use conditions (public register under the Companies Act 2006); gov.uk guidance page OGL v3.0",
+  "licence_url": "https://www.gov.uk/guidance/companies-house-data-products",
+  "licence_quote": "We impose no rules or requirements on how the information on the public register is used, and we’re not responsible for your use of the company data. You are responsible for complying with any applicable data protection, copyright and other legislation and regulations.",
+  "url": "http://download.companieshouse.gov.uk/en_output.html",
+  "download_url": "https://download.companieshouse.gov.uk/BasicCompanyDataAsOneFile-2026-10-01.zip",
+  "used": "Companies alive today by year and decade incorporated, by industry (SIC) (roadmap C4b)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "cro_companies": {
+  "short": "CRO Company Records (Ireland)",
+  "publisher": "Companies Registration Office (CRO), Ireland",
+  "citation": "Companies Registration Office (2026) Company Records, CRO Open Data Portal, daily snapshot of 2026-10-24. Contains Irish Public Sector Data licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence.",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "licence_quote": "Under the CC-BY Licence, users must acknowledge the source of the Information in their product or application. Where the Information Provider does not provide a specific attribution statement users should include, or link to, this attribution statement: “Contains Irish Public Sector Data licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence",
+  "url": "https://opendata.cro.ie/dataset/companies",
+  "download_url": "https://opendata.cro.ie/dataset/bf6f837d-0946-4c14-9a99-82cd6980c121/resource/3fef41bc-b8f4-4b10-8434-ce51c29b1bba/download/companies.csv.zip (302 to Linode object store); API https://opendata.cro.ie/api/3/action/datastore_search?resource_id=3fef41bc-b8f4-4b10-8434-ce51c29b1bba (SQL via datastore_search_sql)",
+  "used": "Companies registered and dissolved per year in Ireland (roadmap C4b)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
  }
 }

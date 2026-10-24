@@ -747,3 +747,20 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Checked in headless Chrome (layer, legend, note, counts at 1850 and 2020; no page errors); ui_check `change_firms`
   added. Tests 167 OK (tests/test_change_firms.py 4). Hosted copy and release not updated.
 - Next: C4b (CRO and Companies House as more lines on the graphs), or C5.
+
+## 2026-10-24 — C4b: companies from the registers
+- New `bidb/change_registers.py` (`python -m bidb.change_registers`, then `bidb.change_series`): Companies House Table A8
+  (xlsx read with the stdlib), Companies House basic data (2.8 GB CSV streamed from the 494 MB zip; Companies Act
+  companies only, as A8 counts: no LLPs, partnerships, CIOs, Royal Charter bodies, whose dates go back to 1327) and
+  Ireland's CRO records (47 MB zip; the SQL API refuses functions such as `extract`). Downloads kept in
+  `<cache>/registers/` on FANTOM (~540 MB); only yearly counts are committed (16 CSVs).
+- Six graphs (default off, Prosperity and work), separate from the C4a graphs because the registers count ~100× the
+  Wikidata firms: companies incorporated per year (GB/UK 1939–2026, with dissolved and with each year's companies still
+  on the register: 5,063 of 1980's 69,400), companies on the register (173,300 in 1939 → 5,479,045 in 2025-26), Ireland
+  registered / dissolved (from 1960; earlier dissolved companies mostly absent) / still registered, and three graphs of
+  live UK companies by decade founded and industry (SIC divisions → the C4a industries). Sources `companies_house_a8`,
+  `companies_house_basic`, `cro_companies` in change/sources.json; DATA_LICENSE.md rows (CRO's CC BY statement).
+- Change over time: 127 series. Checked in headless Chrome (screenshots of the three new rows of graphs); ui_check
+  `change_registers` added; map, change_firms, change_tea still pass. Tests 171 OK (tests/test_change_registers.py 4).
+- Hosted copy and release not updated.
+- Next: C5 (trade and work graphs), or C2d2b2 / C2d3b (tea before 1846, more tea prices).

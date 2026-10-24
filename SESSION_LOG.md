@@ -785,3 +785,13 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Checked in headless Chrome (both graphs drawn, no page errors); ui_check `change_patents` added; change_registers,
   change_tea and map still pass. Tests 175 OK (tests/test_change_patents.py 4). Hosted copy and release not updated.
 - Next: C5b (overseas trade: Federico–Tena, ONS, CSO).
+
+## 2026-10-24 — Published: hosted copy version 68, database release db-2026-10-24
+- Database release db-2026-10-24 (102 MB; 22,508 buildings, 173,785 places, 12,193 people) with the rewritten
+  `bidb.bundle release`: draft, one upload in 7 s, GitHub's SHA-256 matched, published as Latest; `data/bundled.json`
+  committed. First real run of the new release command: worked first time.
+- Hosted copy: `python -m app.static_export` (252.8 MiB, 449 files). Against version 66: 38 location cells removed (the
+  Time Team digs that had sat in Russia and Kazakhstan), 1 added (the C4a firms layer), 39 changed (place shards,
+  location cells, buildings index, excavations, quiz, change series and layers, change_layers.js; 87 MB). Published
+  as versions 67 and 68 (two batches of ~43 MB, removals in the first) after listing the published files; sizes of
+  the updated files checked against `dist/`.

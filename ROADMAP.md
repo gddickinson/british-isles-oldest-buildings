@@ -6,9 +6,9 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 131
-  series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-23 (102 MB).
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 66 (2026-10-23, after C3c):
-  252.1 of 256 MiB, 486 of 511 files. Republish changed files only: checksum `dist/` before and after
+  series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
+  252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
   to replace files this session has not read or listed).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data

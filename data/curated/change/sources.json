@@ -776,5 +776,53 @@
   "download_url": "https://opendata.cro.ie/dataset/bf6f837d-0946-4c14-9a99-82cd6980c121/resource/3fef41bc-b8f4-4b10-8434-ce51c29b1bba/download/companies.csv.zip (302 to Linode object store); API https://opendata.cro.ie/api/3/action/datastore_search?resource_id=3fef41bc-b8f4-4b10-8434-ce51c29b1bba (SQL via datastore_search_sql)",
   "used": "Companies registered and dissolved per year in Ireland (roadmap C4b)",
   "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "ipo_patent_numbers": {
+  "short": "IPO, British patent numbers 1617-1852, 1916-1981 and 1979-",
+  "publisher": "Intellectual Property Office (archived pages)",
+  "citation": "Intellectual Property Office (2011-12) 'British patent numbers 1617 - 1852 (old series)', 'British patent numbers 1916 - 1981' and 'British patent numbers (under the Patents Act 1977) 1979 to present day'. ipo.gov.uk, archived by the Internet Archive on 15 January 2013",
+  "licence": "OGL (Crown copyright)",
+  "licence_url": "https://web.archive.org/web/20130115203859/http://www.ipo.gov.uk/copyright.htm",
+  "licence_quote": "You may use and re-use the information featured in this website (not including logos) free of charge in any format or medium, under the terms of the Open Government License .",
+  "url": "https://web.archive.org/web/20130115203307/http://www.ipo.gov.uk/types/patent/p-about/p-whatis/p-oldnumbers/p-oldnumbers-1617.htm",
+  "download_url": "https://web.archive.org/web/20130115203307/http://www.ipo.gov.uk/types/patent/p-about/p-whatis/p-oldnumbers/p-oldnumbers-1617.htm https://web.archive.org/web/20130115203307/http://www.ipo.gov.uk/types/patent/p-about/p-whatis/p-oldnumbers/p-oldnumbers-1916.htm https://web.archive.org/web/20130115203307/http://www.ipo.gov.uk/types/patent/p-about/p-whatis/p-oldnumbers/p-oldnumbers-1979.htm",
+  "used": "Patents granted per period 1617-1852 (England and Wales), specifications published per year 1917-1978 and applications published per year 1979-2010, from the first number of each year (roadmap C5a)",
+  "checked": "2026-10-24, downloaded via the Internet Archive (HTTP 200)"
+ },
+ "ipo_patents_1852_1915": {
+  "short": "IPO, patent applications filed and patents granted each year 1852-1915",
+  "publisher": "Intellectual Property Office (archived page)",
+  "citation": "Intellectual Property Office (reviewed 24 January 2011) 'Patent applications filed and patents granted each year 1852 to 1915'. ipo.gov.uk, archived by the Internet Archive on 15 January 2013",
+  "licence": "OGL (Crown copyright)",
+  "licence_url": "https://web.archive.org/web/20130115203859/http://www.ipo.gov.uk/copyright.htm",
+  "licence_quote": "You may use and re-use the information featured in this website (not including logos) free of charge in any format or medium, under the terms of the Open Government License .",
+  "url": "https://web.archive.org/web/20130115203307/http://www.ipo.gov.uk/types/patent/p-about/p-whatis/p-oldnumbers/p-oldnumbers-1852.htm",
+  "download_url": "https://web.archive.org/web/20130115203307/http://www.ipo.gov.uk/types/patent/p-about/p-whatis/p-oldnumbers/p-oldnumbers-1852.htm",
+  "used": "Patent applications and patents granted per year 1853-1915 (roadmap C5a)",
+  "checked": "2026-10-24, downloaded via the Internet Archive (HTTP 200)"
+ },
+ "ipo_monthly_stats": {
+  "short": "IPO, patents, trade marks and designs: monthly statistics 1995-2025",
+  "publisher": "Intellectual Property Office (Official Statistics)",
+  "citation": "Intellectual Property Office (2025) Patents, trade marks, and designs: monthly statistics 1995 - 2025, Tables 1 and 2, released 25 September 2025",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated (GOV.UK footer)",
+  "url": "https://www.gov.uk/government/statistics/patents-trade-marks-and-designs-monthly-statistics-1995-2025",
+  "download_url": "https://assets.publishing.service.gov.uk/media/68d115b2e65dc716bfb1dbb6/Monthly-Stats-1995-to-2025.xlsx",
+  "used": "Patent applications, patents granted by the IPO and European patents granted for the UK by the EPO, summed by calendar year 1995-2024 (roadmap C5a)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "ipo_facts_figures": {
+  "short": "IPO, Facts and figures 2019 and 2025 (data downloads)",
+  "publisher": "Intellectual Property Office (Official Statistics)",
+  "citation": "Intellectual Property Office (2020) Facts and figures: patent, trade mark, design and hearing data: 2019, data research download, Table 1; and (2026) Facts and figures: patents, trade marks, designs and hearings: 2025, data research download, Table 1",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated (GOV.UK footer)",
+  "url": "https://www.gov.uk/government/publications/facts-and-figures-patents-trade-marks-designs-and-hearings-2025",
+  "download_url": "https://assets.publishing.service.gov.uk/media/5ed4ad3bd3bf7f4607b90adc/data-download-2019.xlsx https://assets.publishing.service.gov.uk/media/6a54db32a4890e65cce64dc5/ipo-facts-and-figures-data-download-2025.xlsx",
+  "used": "Patent applications published 2011-2025; applications and grants of 2025 (roadmap C5a)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
  }
 }

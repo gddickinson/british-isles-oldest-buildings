@@ -764,3 +764,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_registers` added; map, change_firms, change_tea still pass. Tests 171 OK (tests/test_change_registers.py 4).
 - Hosted copy and release not updated.
 - Next: C5 (trade and work graphs), or C2d2b2 / C2d3b (tea before 1846, more tea prices).
+
+## 2026-10-24 — C5a: patents per year
+- C5 split: C5a patents (done), C5b overseas trade, C5c occupations, C5d prices and wages, C5e shipping, steam, banks
+  and what C5a left (pending).
+- New `bidb/change_patents.py` (`python -m bidb.change_patents`, then `bidb.change_series`), IPO sources only (OGL):
+  the archived ipo.gov.uk number tables (1617–1852 first number per decade, 1852–1915 applications and grants, first
+  number per year 1916–1981 and 1979–2012), the monthly statistics 1995–2025 and Facts and figures 2019 and 2025.
+  Downloads in `<cache>/registers/` (~600 KB). `change_registers.xlsx_rows` takes a `cols` argument (Table 1 runs to K).
+- Graphs (default off, Prosperity and work): "Patents granted per year" 1617–2025 (England and Wales to 1852; period
+  averages at mid-period, 1853–1915 yearly, specifications published 1917–1978, IPO grants from 1995) with
+  applications filed and European patents granted for the UK by the EPO; "Patent applications published per year"
+  1979–2025. 1916 left out (earlier applications still published under old numbers: only 2,811); no grant counts
+  1979–94. Checks: published 2011 from the numbers 10,124 against 10,043 in Facts and figures; the 2019 and 2025
+  editions agree for 2016–19 (≤5 apart); monthly sums against Facts and figures within 0.1% (grants identical).
+- Bottomley (2014) England/Scotland/Ireland 1700–1851 not drawn (OWID gives no licence; C1 verdict "quote figures");
+  his England 1800–04 total (440) equals the IPO numbers' (440). Cited in the note.
+- Sources `ipo_patent_numbers`, `ipo_patents_1852_1915`, `ipo_monthly_stats`, `ipo_facts_figures` in
+  change/sources.json; DATA_LICENSE.md rows. Change over time: 131 series.
+- Checked in headless Chrome (both graphs drawn, no page errors); ui_check `change_patents` added; change_registers,
+  change_tea and map still pass. Tests 175 OK (tests/test_change_patents.py 4). Hosted copy and release not updated.
+- Next: C5b (overseas trade: Federico–Tena, ONS, CSO).

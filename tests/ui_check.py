@@ -47,6 +47,7 @@ PAGES = {
     "places_guildhalls": ("/places?kind_label=Guildhall%2C+livery+or+merchants%27+hall", r"(?s)data-place=.*Hall"),
     "change_firms": ("/change", r"(?s)Firms founded per decade.*Of these, closed.*Making things.*Banks, finance and insurance.*Publishing, print and media.*Wikidata \(firms\)"),
     "change_registers": ("/change", r"(?s)Companies incorporated per year.*still on the register.*Companies on the register.*Effective register.*Companies registered per year: Ireland.*Contains Irish Public Sector Data.*Companies alive today by decade founded: making.*Companies alive today by decade founded: publishing"),
+    "change_patents": ("/change", r"(?s)Patents granted per year.*Woodcroft.*European patents for the UK.*Patent applications published per year.*Patents Act 1977"),
     "change_tea": ("/change", r"(?s)Tea retained for home consumption.*432 million in 1938.*Tea drunk per person.*Ministry of Food.*Family Food.*Price of imported tea.*16.1d. in 1919.*Duty on tea.*Imperial Preference.*Commutation Act cuts the tea duty.*Tea rationed"),
     "places_institutions": ("/places?kind_group=Public+institutions", r"data-place="),
     "quiz_menu": ("/quiz", r"Say the name"),

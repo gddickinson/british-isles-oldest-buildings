@@ -76,8 +76,8 @@ def _download(url, name, log):
     return path
 
 
-def xlsx_rows(path, sheet_name):
-    """Rows of one sheet of an .xlsx as lists of strings (stdlib only)."""
+def xlsx_rows(path, sheet_name, cols="ABCDEFG"):
+    """Rows of one sheet of an .xlsx as lists of strings, one per column of `cols` (stdlib only)."""
     m = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
     rel = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"
     z = zipfile.ZipFile(path)
@@ -93,7 +93,7 @@ def xlsx_rows(path, sheet_name):
             text = (shared[int(v.text)] if c.get("t") == "s" else v.text) if v is not None else \
                 ''.join(t.text or '' for t in c.iter(m + "t"))
             cells[re.match(r"[A-Z]+", c.get("r")).group()] = text or ""
-        rows.append([cells.get(col, "") for col in "ABCDEFG"])
+        rows.append([cells.get(col, "") for col in cols])
     return rows
 
 

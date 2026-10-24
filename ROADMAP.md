@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 127
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 131
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-23 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 66 (2026-10-23, after C3c):
   252.1 of 256 MiB, 486 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -138,17 +138,33 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       or with no code). Not done: Ireland by industry (NACE on only 32% of CRO records), the CRO SQL API (functions
       such as `extract` not allowed; the 47 MB zip is read instead). Companies House's dissolved companies (API key)
       not used.
-- [ ] C5 Trade and work graphs (with estimates and models compared): occupations by sector (farming / making /
-      services) 1379–today, overseas trade (imports, exports, re-exports) and the main goods (wool, cloth, tea,
-      sugar, tobacco, cotton, linen, coal, iron), shipping tonnage, patents per year, steam power, banks and
-      companies registered, prices and real wages; each with its source and the published estimates before
-      the statistics. Open or quoted stand-ins for the sources not asked for: occupations from OWID's farming
-      share and the ONS 1861– series, with Shaw-Taylor & Wrigley 2014 and Keibek 2017 quoted per figure (not the
-      CAMPOP tables); trade and goods from Federico–Tena and the Statistical Abstract scans, with Davis 1962,
-      Schumpeter and Mitchell quoted before 1800 (not the Bank of England dataset); prices from ONS RPI 1800– and
-      Phelps Brown–Hopkins quoted per figure (not Clark, Allen, GPIH or MeasuringWorth series); steam power as
-      quoted totals (Kanefsky's published counts, Nuvolari) plus the engine houses and mills already on the map
-      (not the engines database or its GIS); patents from the IPO 1852–1915 (OGL) and Bottomley 2014 quoted.
+- [ ] C5 Trade and work graphs (with estimates and models compared), split 2026-10-24 into C5a–C5e below. Rules for all
+      parts: open data or published figures quoted with page; estimates before the statistics marked; open or quoted
+      stand-ins for the sources not asked for (not the CAMPOP tables, the Bank of England dataset, Clark, Allen, GPIH,
+      MeasuringWorth, or Kanefsky's engines database or its GIS).
+- [x] C5a (2026-10-24) Patents per year from the IPO alone (new `bidb/change_patents.py`, OGL): graph "Patents granted
+      per year", England and Wales to 1852 then the UK: the old law's patents per decade (five years from 1800) from the
+      first number of each period (3.6 a year in 1617–29, 0.2 in 1640–59 when the Commonwealth's were never numbered,
+      88 in 1800–04, 524 in 1850–52), the 1852–1915 table (2,384 granted in 1852/3, 3,962 in 1883, 9,984 in 1884),
+      specifications published 1917–1978 from the first number of each year (9,319 in 1917, 39,550 in 1978), and grants
+      by the IPO 1995–2025 (monthly statistics; 2025 from Facts and figures); applications filed (1853–1915, 1995–2025)
+      and European patents granted for the UK by the EPO (37,294 in 1995, 109,124 in 2024; more than the IPO's every
+      year) as lines beside it. Graph "Patent applications published per year" 1979–2025 (numbers to 2010, Facts and
+      figures 2019 and 2025 after; overlaps agree within 1%). No grant counts 1979–94 (the old series' publications
+      end and the 1977 Act's grants are not in the number tables). Bottomley (2014) for England, Scotland and Ireland
+      1700–1851: OWID gives no licence, so cited in the note, not drawn (his England 1800–04 = 440, the IPO numbers' 440).
+- [ ] C5b Overseas trade: imports, exports and re-exports (Federico–Tena UK 1800–1938 and Ireland 1922–38, CC BY; ONS
+      IKBH/IKBI 1948–; CSO TSA01 1930–; CEPII exports share of GDP via OWID), with Davis 1962, Schumpeter 1960 and
+      Mitchell 1988 quoted before 1800; the main goods (wool, cloth, tea, sugar, tobacco, cotton, linen, coal, iron)
+      from the Statistical Abstract scans 1840–1938 and HMRC's trade API for the modern end.
+- [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term
+      employment 1861–2018 and JOBS02 1978–, CSO CNNL1 (Ireland 1926–96), with Broadberry et al. 2015, Shaw-Taylor &
+      Wrigley 2014 and Keibek 2017 quoted per figure as estimate dots.
+- [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
+- [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
+      as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already
+      on the map, banks (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual
+      reports 2002–, quote figures) and 1916–94 grants (Patent Office annual reports, if found) left from C5a.
 - [ ] C6 Innovations: inventions and firsts made in the isles (Wikidata inventor and place, researched list with
       sources), on the map and the slider, linked to the buildings and places where they were made or used
       (mills, works, mines, engine houses, exchanges).

@@ -2042,5 +2042,76 @@
   "file": "companies_live_services.csv",
   "default": false,
   "hidden": true
+ },
+ {
+  "id": "patents_granted_uk",
+  "theme": "Prosperity and work",
+  "title": "Patents granted per year",
+  "region": "England and Wales to 1852, then the United Kingdom",
+  "unit": "patents",
+  "unit_long": "patents granted in the year",
+  "label": "Granted (IPO)",
+  "sources": [
+   "ipo_patent_numbers",
+   "ipo_patents_1852_1915",
+   "ipo_monthly_stats",
+   "ipo_facts_figures"
+  ],
+  "file": "patents_granted_uk.csv",
+  "default": false,
+  "models": [
+   "patents_applications_uk",
+   "patents_ep_uk"
+  ],
+  "note": "Patents granted each year. To 1852 (England and Wales): the patents granted under the old law in each decade (five years from 1800), from the first number of each period in Woodcroft's numbering, as a yearly average drawn at the middle of the period; the Commonwealth's patents (1649-60) were never numbered, so the 1640s and 1650s show almost none, and none were granted in 1710. From the 1852 Act (United Kingdom): the applications of each year that were granted (1852/3 is the fifteen months from 1 October 1852, drawn at 1853). 1917-1978: patent specifications published in the year, from the first number of each year (after 1916 \"generally only granted patents were published\"; until the Second World War some foreign applications were laid open and numbered too; 1916 is left out, as earlier applications were still published under their old numbers). From 1995: patents granted by the IPO (2025, when a new patents system began, from Facts and figures), with the European patents granted for the UK by the European Patent Office, more than the IPO's in every year, as a third line. No counts are drawn for 1979-94 (see the graph of applications published). The applications line shows the jump of 1884, when the Patents, Designs and Trade Marks Act 1883 came into force: 5,993 applications in 1883, 17,110 in 1884. Bottomley (2014) counts the English, Scottish and Irish patents separately for 1700-1851 (Scotland and Ireland had their own patents until 1852); his yearly figures are not open, so they are not drawn. The IPO says its statistics \"should not be used alone to describe the level of innovation in the UK\"."
+ },
+ {
+  "id": "patents_applications_uk",
+  "theme": "Prosperity and work",
+  "title": "Patent applications per year",
+  "region": "England and Wales to 1852, then the United Kingdom",
+  "unit": "patents",
+  "unit_long": "patent applications filed in the year",
+  "label": "Applications filed",
+  "sources": [
+   "ipo_patent_numbers",
+   "ipo_patents_1852_1915",
+   "ipo_monthly_stats",
+   "ipo_facts_figures"
+  ],
+  "file": "patents_applications_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "patents_ep_uk",
+  "theme": "Prosperity and work",
+  "title": "European patents granted for the UK",
+  "region": "England and Wales to 1852, then the United Kingdom",
+  "unit": "patents",
+  "unit_long": "European patents granted for the UK by the EPO in the year",
+  "label": "European patents for the UK (EPO)",
+  "sources": [
+   "ipo_monthly_stats"
+  ],
+  "file": "patents_ep_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "patents_published_uk",
+  "theme": "Prosperity and work",
+  "title": "Patent applications published per year",
+  "region": "United Kingdom",
+  "unit": "patents",
+  "unit_long": "patent applications published in the year",
+  "label": "Applications published (IPO)",
+  "sources": [
+   "ipo_patent_numbers",
+   "ipo_facts_figures"
+  ],
+  "file": "patents_published_uk.csv",
+  "default": false,
+  "note": "Patent applications published each year under the Patents Act 1977, eighteen months after their priority date: 1979-2010 from the first number published in each year (GB2000001 on 4 January 1979), 2011-15 from the IPO's Facts and figures 2019 and 2016-25 from Facts and figures 2025. Where the sources overlap they differ by under 1%. About half of the applications filed are published; the rest are withdrawn first."
  }
 ]

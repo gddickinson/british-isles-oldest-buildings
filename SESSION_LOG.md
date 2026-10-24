@@ -629,3 +629,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - 101 series, 48 events, 77 sources. Tests 142 OK; ui_check `change_tea` also requires "Family Food" and "Tea rationed".
   Graph checked in a screenshot. Hosted copy not updated.
 - Next: C3 (guilds, exchanges and trading houses), or C2d3b; C2d2b2 still needs the books.
+
+## 2026-10-23 (night, later) — C3a: guild houses, halls, exchanges and livery companies as places
+- C3 split: C3a (places, done), C3b (researched oldest of each, with evidence), C3c (people; halls of the unplaced
+  companies).
+- New `bidb/livery.py`, read by bidb.trade_works: Wikipedia's "Livery company" precedence table (114 companies:
+  order, trade, year charter granted with the source the table cites) and "List of mottos and halls of the livery
+  companies" (hall, motto), plus Wikidata's 116 livery-company items. A company sits at its hall (the hall's article
+  or, for unlinked halls, an item with exactly that English label; in London for a City company, so the Sheffield
+  Cutlers' Hall is not taken for the London one; never the company's own item), else at its own coordinates or P159 /
+  P466. 41 of 117 placed (13 at their hall, `extra.hall_ref` links the hall's place or catalogue building); 76 without
+  a hall or one with no coordinates have no place.
+- trade_works kinds: `tr_guild` (guild house Q1961493, livery hall Q98034180, cloth hall Q977382: 50 places), `tr_bourse`
+  (stock exchange, firms left out: 1, the London Stock Exchange), `tr_merchant` (merchant's house: 6), `tr_livery` (41).
+  bidb.institutions no longer makes guild houses town halls (1 moved). Places 173,680 → 173,773.
+- The two Wikipedia tables differ (Grocers 1428 charter vs 1345 "establishment"; Drapers 1364 vs 1361): the charter
+  table is used and labelled so; left for C3b. Found: medieval guildhalls in the catalogue are "House / domestic"
+  (Data quality item added).
+- Place detail: Order of precedence, Trade, Charter granted (linked to its source), Hall (linked), Motto. Tests 147 OK
+  (5 new, tests/test_livery.py); ui_check places_livery and places_guildhalls pass. Hosted copy not updated.
+- Next: C3b.

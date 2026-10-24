@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-23)
-- Catalogue 22,039 records; 173,680 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 101
+- Catalogue 22,039 records; 173,773 places in 22 groups; 11,927 people; 517 floor plans; "Change over time": 101
   series, 48 events, 22 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-22-4 (81 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 59: 253 of 256 MiB, 479 of 511
   files; not yet updated with the 2026-10-23 layers (needs trimming). Republish changed files only: checksum
@@ -83,12 +83,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       a catalogue building). Left for later: the Sultaness Head (no article), Domus Dei (Catherine's tea, 1662; no
       article found), the Horniman Museum (an era_places place; not taken into the list); tea rationing 1940–52
       now cited (C2d4).
-- [ ] C3 Guilds, exchanges and trading houses as places (kinds in "Markets & trade"): guildhalls and livery halls,
-      merchant adventurers' and merchants' halls, cloth and wool halls, exchanges and stock exchanges, coffee
-      houses, counting houses, trading-company headquarters and warehouses, banks with founding dates; the
-      researched oldest of each (oldest lists + evidence), people linked as founders, masters and merchants.
-      Livery companies from Wikidata and Wikipedia's table with each fact sourced (not the Livery Committee
-      database).
+- [x] C3a (2026-10-23) Guild houses, livery and cloth halls, stock exchanges, merchants' houses and livery companies as
+      places in "Markets & trade" (bidb.trade_works + new bidb.livery): 50 halls (Wikidata guild house, livery hall,
+      cloth hall; no longer town halls in bidb.institutions), the London Stock Exchange, 6 merchants' houses, and 41 of
+      117 livery companies placed (13 at their hall, linked from the company's page) with order of precedence, trade,
+      charter year (Wikipedia's precedence table and the source it cites), hall and motto. 76 companies have no place
+      (no hall, or a hall without coordinates on Wikidata). 267 other trade items are catalogue buildings.
+- [ ] C3b The researched oldest of each (oldest lists + evidence): guildhall, livery company and charter (the two
+      Wikipedia tables differ: Grocers 1428 charter against 1345 founded, Drapers 1364 against 1361), merchant guild
+      outside London (York Merchant Adventurers, Bristol Merchant Venturers, Edinburgh, Dublin), exchange (Royal
+      Exchange 1571, Glasgow Stock Exchange missing from the stage), coffee house, trading company (Muscovy, Levant,
+      East India; headquarters as places), counting house, bank with founding date.
+- [ ] C3c People: founders, masters and wardens, merchants linked to the halls and companies (Wikidata P112, P488,
+      member of); the halls of the 76 unplaced companies where an open source gives a position.
 - [ ] C4 Firms through time: businesses founded in the isles with founding and closing years (Wikidata; Companies
       House for living firms, OGL) → a map layer of firms open at the slider's year (kind `spans`, by industry) and
       graphs of firms founded per decade by industry; survivorship bias stated (the record keeps the firms that
@@ -165,6 +172,9 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT7 Hosted copy, Help page, INTERFACE, figures; quiz questions ("which type came first?", "name the type").
 
 ## Data quality and references
+- [ ] Catalogue categories of guildhalls (found in C3a, 2026-10-23): Merchant Adventurers' Hall (York), Norwich
+      Guildhall and St Mary's Guildhall (Coventry) are "House / domestic"; guildhalls, livery and cloth halls
+      probably want "Civic building" or a guild category (bidb.categories keyword rules; check the knock-on counts).
 - [x] Reviewed the 451 date-check conflicts (2026-10-20, `docs/date_review.md`): checker noise
       removed, new status "Earlier origin" (67), 56 reviewed corrections with evidence
       (`data/curated/date_corrections.json`, `python -m bidb.date_corrections`), 69 genuine

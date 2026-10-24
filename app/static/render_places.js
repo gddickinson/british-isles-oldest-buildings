@@ -9,7 +9,8 @@ const PLACE_ICON = { "Battles & sieges": "⚔", "Archaeological sites": "🪨", 
   "Nature & deep time": "🌿", "Graves & burial grounds": "🪦", "Markets & trade": "🛒", "Infrastructure & utilities": "🚰", "Sport & leisure": "🏟", "Public institutions": "🏫" };
 const EXTRA_LABELS = { part_of: "Part of", now_in: "Now kept at", found_at: "Found at",
   commemorates: "Commemorates", inscription: "Inscription", region: "Region", register_ref: "Register reference",
-  works: "Works set here", found: "Year found" };
+  works: "Works set here", found: "Year found", order: "Order of precedence", trade: "Trade", charter: "Charter granted",
+  hall: "Hall", motto: "Motto", translation: "Motto in English" };
 // a list value: plain strings, or [title, author, year] for literary works
 const extraText = (v) => (Array.isArray(v) ? v.map((x) => (Array.isArray(x)
   ? `${x[0]}${x[1] ? ` (${x[1]}${x[2] ? ", " + x[2] : ""})` : ""}` : x)).join("; ") : v);
@@ -69,7 +70,7 @@ function nearbyPlacesHTML(places, title) {
 
 // extras with their own rendering: objects a museum keeps, museum links for "now kept at"
 const SOURCE_MM = "Mapping Museums (Birkbeck)";
-const SPECIAL_EXTRA = ["kept_here", "now_in_ids", "mapping_museums"];
+const SPECIAL_EXTRA = ["kept_here", "now_in_ids", "mapping_museums", "hall_ref", "charter_url", "charter_source", "placed_at"];
 // "place:<id>" or "building:<id>" (bidb/museums.py link_finds)
 const museumLink = (name, ref) => {
   if (!ref) return esc(name);
@@ -99,6 +100,9 @@ function placeDetailHTML(p) {
   const ex = p.extra || {};
   const extra = Object.entries(ex).filter(([k, v]) => v && !SPECIAL_EXTRA.includes(k) && (!Array.isArray(v) || v.length))
     .map(([k, v]) => k === "now_in" && ex.now_in_ids ? fieldHTML(EXTRA_LABELS[k], v.map((n) => museumLink(n, ex.now_in_ids[n])).join("; "))
+      : k === "hall" && ex.hall_ref ? fieldHTML(EXTRA_LABELS[k], museumLink(v, ex.hall_ref))
+      : k === "charter" && ex.charter_source ? fieldHTML(EXTRA_LABELS[k], `${esc(v)} (<a href="${esc(ex.charter_url || ex.charter_source)}"
+          target="_blank" rel="noopener">${ex.charter_url ? "source" : "Wikipedia"}</a>)`)
       : field(EXTRA_LABELS[k] || k, extraText(v))).join("");
   const links = [
     p.url && link(["History timeline", "Wikipedia", SOURCE_MM].includes(p.source) ? "Source" : `Official record (${p.source})`, p.url),

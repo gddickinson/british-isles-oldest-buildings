@@ -43,12 +43,14 @@ def keep_school(r):
 
 def build(log=print):
     from .maritime import _record
+    from . import trade_works
     from .place_stage import rows_for, subclass_items
     kinds = {}
     for kind, (_label, roots) in KINDS_SPEC.items():
         for root in roots:
-            for q in subclass_items(root):
-                kinds.setdefault(q, kind)
+            for q, cls in subclass_items(root).items():
+                if not cls & trade_works.GUILD_CLASSES:       # guild houses are Markets & trade places
+                    kinds.setdefault(q, kind)
     recs = {}
     for r in rows_for(kinds):
         qid = r["i"]["value"].rsplit("/", 1)[-1]

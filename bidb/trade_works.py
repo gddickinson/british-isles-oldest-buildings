@@ -6,7 +6,9 @@
 Every Wikidata item in the isles with coordinates of the classes below, at any date (the industrial
 stage, bidb.era_places, keeps its 1700–1914 selection):
   "Markets & trade"            market halls and places, market crosses, corn exchanges, shops, arcades and
-                               department stores, banks, inns, coffee houses, market towns
+                               department stores, banks, inns, coffee houses, market towns; guild houses, livery
+                               and cloth halls, stock exchanges, merchants' houses, and the livery companies at
+                               their halls (bidb.livery); guild houses are never town halls (bidb.institutions)
   "Industrial heritage"        factories, mills of every kind, breweries, maltings, distilleries, brick, glass,
                                gas and water works, foundries, forges, furnaces, quarries, lime kilns, shipyards,
                                workshops and manufacturers
@@ -21,7 +23,7 @@ import argparse
 import json
 import time
 
-from . import era_places, place_stage
+from . import era_places, livery, place_stage
 from .db import connect
 from .maritime import _record
 from .place_stage import direct_items, rows_for
@@ -35,6 +37,10 @@ CLASSES = {
     "tr_bank": ("Markets & trade", "Bank", {"Q18761864"}),
     "tr_inn": ("Markets & trade", "Inn or coffee house", {"Q256020", "Q4236467"}),
     "tr_town": ("Markets & trade", "Market town", {"Q18511725"}),
+    "tr_guild": ("Markets & trade", livery.GUILD_LABEL, {"Q1961493", "Q98034180", "Q977382"}),
+    "tr_bourse": ("Markets & trade", "Stock exchange", {"Q11691"}),
+    "tr_merchant": ("Markets & trade", "Merchant's house", {"Q1868065"}),
+    "tr_livery": ("Markets & trade", "Livery company or guild", set()),          # from bidb.livery
     "iw_mill": ("Industrial heritage", "Mill (water, wind, tide, textile, paper)",
                 {"Q44494", "Q185187", "Q38720", "Q493694", "Q946725", "Q8563702", "Q3973051", "Q918088"}),
     "iw_factory": ("Industrial heritage", "Factory, workshop or manufacturer", {"Q83405", "Q656720", "Q13235160"}),
@@ -55,6 +61,8 @@ CLASSES = {
                  {"Q159719", "Q174814", "Q256132"}),
     "in_transport": ("Infrastructure & utilities", "Airport, bus station or tram depot", {"Q1248784", "Q494829", "Q27028153"}),
 }
+GUILD_CLASSES = CLASSES["tr_guild"][2]
+FIRMS = {"Q783794", "Q4830453", "Q43229"}     # company, business, organisation: not a stock exchange's building
 LABELS = {k: v[1] for k, v in CLASSES.items()}
 GROUPS = {k: v[0] for k, v in CLASSES.items()}
 KINDS = tuple(CLASSES)
@@ -63,8 +71,9 @@ KINDS = tuple(CLASSES)
 def build(log=print):
     kinds = {}
     for kind, (_g, _l, classes) in CLASSES.items():
-        for q in direct_items(classes):
-            kinds.setdefault(q, kind)
+        for q, cls in (direct_items(classes) if classes else {}).items():
+            if not (kind == "tr_bourse" and cls & FIRMS):
+                kinds.setdefault(q, kind)
     recs = {}
     for r in rows_for(kinds):
         qid = r["i"]["value"].rsplit("/", 1)[-1]
@@ -73,6 +82,10 @@ def build(log=print):
             x["kind_group"], x["kind_label"] = GROUPS[x["kind"]], LABELS[x["kind"]]
             if r.get("end") and r["end"]["value"]:
                 x["type"] = f"{LABELS[x['kind']]} (gone or closed)"
+            recs[x["id"]] = x
+    for x in livery.build(log):
+        if x["kind"] == "tr_livery" or x["id"] not in recs:
+            x["kind_group"], x["kind_label"] = GROUPS[x["kind"]], LABELS[x["kind"]]
             recs[x["id"]] = x
     log(f"  trade and works: {len(recs)} " + json.dumps({k: sum(r['kind'] == k for r in recs.values()) for k in KINDS}))
     return list(recs.values())
@@ -83,11 +96,16 @@ def run(log=print):
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
     recs = build(log)
+    guilds = [r["id"] for r in recs if r["kind"] == "tr_guild"]   # guild houses that an older build made town halls
+    old = f"SELECT id FROM places WHERE kind = 'pi_civic' AND id IN ({','.join('?' * len(guilds))})"
+    conn.execute(f"DELETE FROM places_fts WHERE id IN ({old})", guilds)
+    conn.execute(f"DELETE FROM places WHERE id IN ({old})", guilds)
     keep = set(era_places.KINDS)                   # the industrial and Victorian stage's places keep their group
     for group in dict.fromkeys(GROUPS.values()):
         kinds = tuple(k for k in KINDS if GROUPS[k] == group)
         place_stage.write(conn, [r for r in recs if r["kind"] in kinds], kinds, group,
                           lambda kind, r: kind not in keep, lambda m: log(f"[{time.time() - t0:5.0f}s] {m}"))
+    log(f"  livery companies linked to their hall: {livery.link_halls(conn)}")
     conn.commit()
 
 

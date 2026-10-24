@@ -861,3 +861,25 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   change_trade_values, change_trade, change_tea and map still pass. Tests 187 OK (tests/test_change_trade_goods.py 5).
   Hosted copy and release not updated.
 - Next: C5b2b2 (1854-67 and 1912-38 for the same goods), or C5c (occupations by sector).
+
+## 2026-10-24 — C5b2b2a: the main exports by value back to 1854
+- C5b2b2 split: C5b2b2a 1854-67 (done), C5b2b2b 1912-38 (pending).
+- Read from the page images (leaf = OCR page index, image `page/n<leaf-1>`): No. 16 table 21 pp. 60-66 (1854-55) and
+  No. 18 table 26 pp. 68-75 (1856-67), both in item `annual-abstract-of-statistics-gb_1852-1870_14-18`; the editions
+  C5b2a used for the same years. 458 figures appended to `data/curated/change/data/trade_goods_abstract_uk.csv`.
+- Checks: every printed total (cotton, linen, wool, iron and steel) agrees with its parts; the tables' grand totals
+  equal C5b2a's summary figures 1854-69; every figure without a total (coal, yarns, machinery, tin plates) is printed
+  the same in at least one other edition's OCR. The one total that failed (iron 1867, short by 500,000) was a worn
+  "8" in railroad iron: 4,861,129 (total and Nos. 19-30), noted in the readings file.
+- Definitions at the 1868 join, checked on the scans: No. 18 lists tin plates under tin, so they are added to iron and
+  steel (No. 30's "tinned plates" for 1868 = No. 18's tin plates, 2,092,868); No. 22 says manufactures of steel were
+  "Included with Hardwares and Cutlery previous to 1862", and No. 18 never shows them, so they count from 1868
+  (£0.36-0.47m in 1862-67, Nos. 22 and 24; not added); coal before 1868 is coals, cinders and culm, the fuel row
+  starting in No. 19 (1857 on), kept to No. 16/18 for one definition before 1868 (1868: 5,352,525 vs 5,437,922).
+- `bidb/change_trade_goods.py`: new row names (iron_wrought, iron_barrail, iron_hoopswrought, tin_plates), tin plates
+  in `old_goods`, graph titles from the years ("Textile exports, 1854-1911" ...), notes on the join; the cotton note's
+  lowest point now counts from 1868 (1854 was both first and lowest) and gives 1861 → 1862 (46.9 → 36.8 £m), without
+  a cause. Source `stat_abstract_goods_uk` citation and DATA_LICENSE.md row extended.
+- Checked in headless Chrome (screenshot of the three graphs); ui_check `change_trade_goods` (pattern now 1854-1911),
+  `change_trade_values`, `change_trade`, `map` pass. Tests 187 OK. Hosted copy and release not updated.
+- Next: C5b2b2b (1912-38 from Nos. 70-83), or C5c (occupations by sector).

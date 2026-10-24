@@ -1,10 +1,11 @@
-"""The main exports of United Kingdom produce by value, 1868-1911, for "Change over time" (roadmap C5b2b1).
+"""The main exports of United Kingdom produce by value, 1854-1911, for "Change over time" (roadmap C5b2b1, C5b2b2a).
 
 The Board of Trade's Statistical Abstract prints the declared value of each principal article of British (and Irish)
 produce exported. The rows for coal, cotton, wool, linen, iron and steel and machinery were read from the page images
-of four editions (`data/curated/change/data/trade_goods_abstract_uk.csv`: one printed figure per line, with edition,
-leaf, page and table): No. 30 (1868-1882), No. 45 (its 1883 column only), No. 46 (1884-1898) and No. 59 (1897-1911,
-the Board's new classification). Where the table prints a total, the parts read are checked against it (`check`);
+of six editions (`data/curated/change/data/trade_goods_abstract_uk.csv`: one printed figure per line, with edition,
+leaf, page and table): No. 16 (1854-1855), No. 18 (1856-1867), No. 30 (1868-1882), No. 45 (its 1883 column only),
+No. 46 (1884-1898) and No. 59 (1897-1911, the Board's new classification). Nos. 16 and 18 count tin plates under tin,
+not iron, so they are added to iron and steel (`old_goods`). Where the table prints a total, the parts read are checked against it (`check`);
 the figures without one were found printed the same in at least two other editions' OCR text when they were read.
 
     python -m bidb.change_trade_goods   → data/curated/change/data/sa_goods_*.csv + series.json entries
@@ -31,7 +32,8 @@ TOTALS = {
     "linen_total": ["linen_white", "linen_printed", "linen_sail", "linen_thread", "linen_other"],
     "wool_total": ["wool_cloths", "wool_flannels", "wool_blankets", "wool_stuffs", "wool_stuffs2", "wool_carpets",
                    "wool_hosiery", "wool_other"] + [f"wool_c{i}" for i in range(1, 13)],
-    "iron_total": ["iron_old", "iron_pig", "iron_bar", "iron_rail", "iron_rails", "iron_railother", "iron_wire",
+    "iron_total": ["iron_old", "iron_pig", "iron_bar", "iron_rail", "iron_barrail", "iron_wrought",
+                   "iron_hoopswrought", "iron_rails", "iron_railother", "iron_wire",
                    "iron_hoops", "iron_tinned", "iron_cast", "iron_steelunw", "iron_steelman", "iron_galv",
                    "iron_sheets", "iron_black", "iron_tubes", "iron_castother", "iron_steelingots",
                    "iron_steelsheets"],
@@ -81,13 +83,15 @@ def _sum(rows, keys, y):
 
 
 def old_goods(rows, y):
-    """The goods of one year from the tables of Nos. 30, 45 and 46 (1868-1898)."""
+    """The goods of one year from the tables of Nos. 16, 18, 30, 45 and 46 (1854-1898); tin plates, counted under tin
+    before 1868, are added to iron and steel."""
     g = rows.get
     yarn = g("cotton_yarn", {}).get(y) or g("cyarn_all", {}).get(y) or _sum(rows, ["cyarn_grey", "cyarn_bl"], y)
     return {"coal": rows["coal"][y], "cotton_yarn": yarn, "cotton_manuf": rows["cotton_total"][y],
             "wool_yarn": rows["wool_yarn"][y], "wool_manuf": rows["wool_total"][y],
             "linen_yarn": rows["linen_yarn"][y], "linen_manuf": rows["linen_total"][y],
-            "iron": rows["iron_total"][y] - rows["iron_old"][y], "machinery": _sum(rows, MACH_OLD, y)}
+            "iron": rows["iron_total"][y] - rows["iron_old"][y] + rows.get("tin_plates", {}).get(y, 0),
+            "machinery": _sum(rows, MACH_OLD, y)}
 
 
 def new_goods(rows, y):
@@ -133,14 +137,17 @@ def series(by_year, all_exports):
 TEXTILES_NOTE = (
     "The value of the cotton, woollen and worsted, and linen goods made in the United Kingdom and sent abroad each "
     "year, at the prices of the time (\"declared value\", as loaded on board), yarn and manufactures together, from "
-    "the Board of Trade's Statistical Abstracts, read from the page images of Nos. 30, 45, 46 and 59 (edition, page "
-    "and table per figure in the data file). Every total the tables print was checked against its printed parts; "
-    "the figures without a printed total were found printed the same in at least two other editions. The "
+    "the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 30, 45, 46 and 59 (edition, "
+    "page and table per figure in the data file). Every total the tables print was checked against its printed "
+    "parts; the figures without a printed total were found printed the same in other editions (at least two from "
+    "1868, at least one before). For 1868, given in both, No. 18 and No. 30 agree for cotton and linen; wool "
+    "manufactures differ by 0.2% and wool yarn by 2.6% (No. 30's revised figures are used from 1868). The "
     "sub-headings changed over the years but the totals are the Abstract's own; from 1897 the Board's new "
     "classification was brought back to the old totals (they agree exactly for 1897 and 1898, given in both "
     "tables): waste from worked cotton is counted with cotton manufactures to 1907 and left out from 1908, and "
     "tops, noils, waste, flocks and alpaca and mohair yarn are left out of wool. Cotton was {c0:,.1f} million in "
-    "{y0}, {cmin:,.1f} million in {ymin} (its lowest) and {c1:,.1f} million in {y1}; woollen and worsted goods "
+    "{y0}, fell from {c61:,.1f} million in 1861 to {c62:,.1f} million in 1862, was {cmin:,.1f} million in {ymin} "
+    "(its lowest from 1868) and {c1:,.1f} million in {y1}; woollen and worsted goods "
     "{w0:,.1f}, {wmax:,.1f} (in {ywmax}) and {w1:,.1f} million; linen {l0:,.1f} and {l1:,.1f} million. Jute, silk "
     "and apparel are not included.")
 METALS_NOTE = (
@@ -149,7 +156,11 @@ METALS_NOTE = (
     "(coke) and manufactured fuel, not bunker coal for ships and not the products of coal; iron and steel leaves out "
     "old iron for re-manufacture, though old rails are counted from 1907; machinery leaves out sewing machines, "
     "which the old tables did not count as machinery (electrical machinery, shown on its own from 1903, was "
-    "counted with other machinery before). "
+    "counted with other machinery before). Before 1868 (Nos. 16 and 18) coal is coals, cinders and culm, without "
+    "the patent fuel counted from then (for 1868 No. 18 gives 5.35 million, No. 30 5.44 million); tin plates, "
+    "entered under tin, are added to iron and steel; manufactures of steel, entered with hardwares and cutlery "
+    "before 1862 (No. 22) and not shown in No. 18, are counted only from 1868 (0.36 to 0.47 million a year in "
+    "1862-67, Nos. 22 and 24). "
     "Coal was {k0:,.1f} million in {y0}, {kmax:,.1f} million in {ykmax} and {k1:,.1f} million in {y1}; iron and steel "
     "{i0:,.1f}, {imax:,.1f} (in {yimax}) and {i1:,.1f} million; machinery {m0:,.1f} and {m1:,.1f} million. New "
     "ships were not recorded as exports before 1899 and are not included.")
@@ -179,26 +190,27 @@ def write(rows, log=print):
     c, w, l, k, i, m = (v[x] for x in ("cotton", "wool", "linen", "coal", "iron", "machinery"))
     y0, y1 = min(c), max(c)
     arg = lambda d, f: f(d, key=d.get)
-    ymin, ywmax, ykmax, yimax = arg(c, min), arg(w, max), arg(k, max), arg(i, max)
+    ymin = arg({y: v for y, v in c.items() if y >= 1868}, min)
+    ywmax, ykmax, yimax = arg(w, max), arg(k, max), arg(i, max)
     gbp = "million pounds (prices of the time)"
     region = "United Kingdom (with all Ireland)"
     t, cs, ms = v["textiles_share"], v["cotton_share"], v["metal_share"]
     out = [
-        _row(PREFIX + "cotton_uk", "Textile exports, 1868-1911", "Cotton yarn and manufactures", gbp, SOURCES, region,
-             TEXTILES_NOTE.format(c0=c[y0], y0=y0, cmin=c[ymin], ymin=ymin, c1=c[y1], y1=y1, w0=w[y0],
+        _row(PREFIX + "cotton_uk", f"Textile exports, {y0}-{y1}", "Cotton yarn and manufactures", gbp, SOURCES, region,
+             TEXTILES_NOTE.format(c0=c[y0], y0=y0, c61=c[1861], c62=c[1862], cmin=c[ymin], ymin=ymin, c1=c[y1], y1=y1, w0=w[y0],
                                   wmax=w[ywmax], ywmax=ywmax, w1=w[y1], l0=l[y0], l1=l[y1]),
              [PREFIX + "wool_uk", PREFIX + "linen_uk"], unit="£m"),
         _row(PREFIX + "wool_uk", "Woollen exports", "Woollen and worsted yarn and manufactures", gbp, SOURCES, region,
              unit="£m"),
         _row(PREFIX + "linen_uk", "Linen exports", "Linen yarn and manufactures", gbp, SOURCES, region, unit="£m"),
-        _row(PREFIX + "coal_uk", "Coal, iron and machinery exports, 1868-1911", "Coal, coke and manufactured fuel",
+        _row(PREFIX + "coal_uk", f"Coal, iron and machinery exports, {y0}-{y1}", "Coal, coke and manufactured fuel",
              gbp, SOURCES, region,
              METALS_NOTE.format(k0=k[y0], y0=y0, kmax=k[ykmax], ykmax=ykmax, k1=k[y1], y1=y1, i0=i[y0],
                                 imax=i[yimax], yimax=yimax, i1=i[y1], m0=m[y0], m1=m[y1]),
              [PREFIX + "iron_uk", PREFIX + "machinery_uk"], unit="£m"),
         _row(PREFIX + "iron_uk", "Iron and steel exports", "Iron and steel", gbp, SOURCES, region, unit="£m"),
         _row(PREFIX + "machinery_uk", "Machinery exports", "Machinery", gbp, SOURCES, region, unit="£m"),
-        _row(PREFIX + "textiles_share_uk", "Main exports, share of all UK exports, 1868-1911",
+        _row(PREFIX + "textiles_share_uk", f"Main exports, share of all UK exports, {y0}-{y1}",
              "Cotton, wool and linen", "% of exports of UK produce", SOURCES + ["stat_abstract_trade_uk"], region,
              SHARE_NOTE.format(t0=t[y0], y0=y0, t1=t[y1], y1=y1, c0=cs[y0], c1=cs[y1], k0=ms[y0], k1=ms[y1]),
              [PREFIX + "cotton_share_uk", PREFIX + "metal_share_uk"], unit="%"),

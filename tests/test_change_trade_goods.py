@@ -13,7 +13,7 @@ class TradeGoods(unittest.TestCase):
     def test_readings_add_up(self):
         rows = tg.load()
         self.assertEqual(tg.check(rows), [])
-        self.assertEqual(sorted(tg.goods(rows)), list(range(1868, 1912)))
+        self.assertEqual(sorted(tg.goods(rows)), list(range(1854, 1912)))
 
     def test_old_and_new_tables_agree(self):
         self.assertEqual(tg.overlap(tg.load()), {1897: {}, 1898: {}})

@@ -896,11 +896,11 @@
  },
  "stat_abstract_goods_uk": {
   "short": "Statistical Abstract for the UK, principal exports",
-  "citation": "Board of Trade, Statistical Abstract for the United Kingdom (annual, HMSO), table of the declared value of the principal articles of British and Irish produce exported (from No. 59: of principal and other articles, the produce and manufacture of the United Kingdom): No. 30 (1868-1882), table 31, pp. 74-81; No. 45 (1883-1897), table 37, pp. 106-114 (1883 only); No. 46 (1884-1898), table 37, pp. 108-117; No. 59 (1897-1911), table 49, pp. 198-209; Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "citation": "Board of Trade, Statistical Abstract for the United Kingdom (annual, HMSO), table of the declared (real) value of the principal articles of British and Irish produce exported (from No. 59: of principal and other articles, the produce and manufacture of the United Kingdom): No. 16 (1854-1868), table 21, pp. 60-66 (1854-1855 only); No. 18 (1856-1870), table 26, pp. 68-75 (1856-1867); No. 30 (1868-1882), table 31, pp. 74-81; No. 45 (1883-1897), table 37, pp. 106-114 (1883 only); No. 46 (1884-1898), table 37, pp. 108-117; No. 59 (1897-1911), table 49, pp. 198-209; Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
   "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published before 1940",
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
-  "used": "Exports of coal, cotton, woollen and worsted, and linen yarn and manufactures, iron and steel and machinery, 1868-1911 (£), read from the page images (edition, leaf, page and table per figure in data/trade_goods_abstract_uk.csv); printed totals checked against their parts, the other figures against two other editions",
-  "checked": "2026-10-24, each figure read from the scan; every printed total agrees with its parts but one (1883 wool, £10, explained)"
+  "used": "Exports of coal, cotton, woollen and worsted, and linen yarn and manufactures, iron and steel and machinery, 1854-1911 (£), read from the page images (edition, leaf, page and table per figure in data/trade_goods_abstract_uk.csv); printed totals checked against their parts, the other figures against two other editions",
+  "checked": "2026-10-24, each figure read from the scan; every printed total agrees with its parts but one (1883 wool, £10, explained); 1856-1867 added the same day (one worn figure, 1867 railroad iron, settled by the printed total and Nos. 19-30)"
  }
 }

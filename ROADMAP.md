@@ -181,8 +181,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       iron and steel 17.3 → 46.6 in 1907; machinery 4.7 → 29.2) and "Main exports, share of all UK exports" (textiles
       57.3% → 35.1%, cotton 37.7% → 26.1%, coal, iron and machinery 15.3% → 24.5%). Printing slips found: No. 30's 1878
       tinned plates (732,378 for 2,732,378), No. 45's 1883 woollen stuffs (7,867,834 for 7,687,834).
-- [ ] C5b2b2 The same goods 1854-67 (Nos. 16/18; the earlier tables' headings) and 1912-38 (Nos. 70-83; check the
-      1920s classification against No. 59's), so the graphs run 1854-1938 as C5b2a.
+- [x] C5b2b2a (2026-10-24) The same goods 1854-67 from No. 16 (table 21, 1854-55) and No. 18 (table 26, 1856-67), the
+      editions C5b2a used, so the shares use the same totals: 458 printed figures; every printed total agrees with its
+      parts, the tables' grand totals equal C5b2a's, and every figure without a total is printed the same in another
+      edition. One worn figure: No. 18's 1867 railroad iron (4,361,129 on the page; the total and Nos. 19-30 give
+      4,861,129). Definitions at the 1868 join: tin plates (under tin before 1868) added to iron and steel;
+      manufactures of steel were "included with Hardwares and Cutlery previous to 1862" (No. 22) and are not in No. 18,
+      so they count from 1868 (£0.36-0.47m a year 1862-67); coal is coals, cinders and culm before 1868 (no patent fuel:
+      5.35 against No. 30's 5.44 million for 1868). Cotton and linen agree in both editions for 1868; wool manufactures
+      differ by 0.2%, wool yarn by 2.6%. Graphs now 1854-1911 (cotton 31.7 £m in 1854, 46.9 in 1861, 36.8 in 1862;
+      textiles 48.9% of UK produce exported in 1854).
+- [ ] C5b2b2b The same goods 1912-38 (Nos. 70-83; check the 1920s classification against No. 59's; the Irish Free
+      State is foreign from April 1923), so the graphs run 1854-1938 as C5b2a.
 - [ ] C5b2b3 The main imports (raw cotton, wool, grain and flour, sugar, tea, timber; values and quantities) from the
       same scans 1854-1938; UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.

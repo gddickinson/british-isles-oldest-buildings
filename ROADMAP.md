@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 131
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 142
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -153,10 +153,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       figures 2019 and 2025 after; overlaps agree within 1%). No grant counts 1979–94 (the old series' publications
       end and the 1977 Act's grants are not in the number tables). Bottomley (2014) for England, Scotland and Ireland
       1700–1851: OWID gives no licence, so cited in the note, not drawn (his England 1800–04 = 440, the IPO numbers' 440).
-- [ ] C5b Overseas trade: imports, exports and re-exports (Federico–Tena UK 1800–1938 and Ireland 1922–38, CC BY; ONS
-      IKBH/IKBI 1948–; CSO TSA01 1930–; CEPII exports share of GDP via OWID), with Davis 1962, Schumpeter 1960 and
-      Mitchell 1988 quoted before 1800; the main goods (wool, cloth, tea, sugar, tobacco, cotton, linen, coal, iron)
-      from the Statistical Abstract scans 1840–1938 and HMRC's trade API for the modern end.
+- [x] C5b1 (2026-10-24) Overseas trade totals from open data (new `bidb/change_trade.py`), five graphs (default off,
+      Prosperity and work): "Overseas trade, 1800-1938 (at 1913 prices)" (Federico-Tena, CC BY: UK imports 95 million $
+      in 1800, 3,206 in 1913, 4,048 in 1938; exports peak 2,566 in 1913, 1,557 in 1938), the Irish Free State 1922-38
+      on its own graph (1922-23 far below 1924; the database does not say why), "Overseas trade since 1948" (ONS
+      IKBK/IKBL chained volumes at 2024 prices: exports £52 bn in 1948, £893 bn in 2025), "Goods exported, share of the
+      economy" (CEPII via OWID, UK 1827-2014 and Ireland 1926-2014, with the ONS's BOKG/YBHA 1948-2025: 1.0 points
+      from CEPII on average; services 57% of UK exports in 2025) and "Overseas trade: Ireland" (CSO TSA01, € million,
+      1930-2025; exports above imports every year since 1985). Eras not joined: different measures, and over 1930-38
+      Federico-Tena's dollars against the CSO's pounds give 3.14-4.96 $ to the pound, so they differ in more than the
+      exchange rate. Re-exports not separate in any of these (C5b2).
+- [ ] C5b2 The main goods (wool, cloth, tea, sugar, tobacco, cotton, linen, coal, iron) and re-exports from the
+      Statistical Abstract scans 1840-1938 (page images, edition, leaf, page per figure as in C2b), and HMRC's trade API
+      for the modern end (paced requests).
+- [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
+      books' pages; `estimates.json`).
 - [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term
       employment 1861–2018 and JOBS02 1978–, CSO CNNL1 (Ireland 1926–96), with Broadberry et al. 2015, Shaw-Taylor &
       Wrigley 2014 and Keibek 2017 quoted per figure as estimate dots.

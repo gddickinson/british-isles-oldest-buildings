@@ -795,3 +795,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   location cells, buildings index, excavations, quiz, change series and layers, change_layers.js; 87 MB). Published
   as versions 67 and 68 (two batches of ~43 MB, removals in the first) after listing the published files; sizes of
   the updated files checked against `dist/`.
+
+## 2026-10-24 — C5b1: overseas trade totals
+- C5b split: C5b1 totals (done), C5b2 main goods and re-exports (Statistical Abstract scans, HMRC API), C5b3 before 1800
+  (Davis, Schumpeter, Mitchell quoted) pending.
+- New `bidb/change_trade.py` (`python -m bidb.change_trade`, then `bidb.change_series`). Downloads in
+  `<cache>/registers/trade_*` (~0.8 MB): Federico-Tena UK and Ireland workbooks (+ the Ireland notes PDF), ONS IKBK,
+  IKBL, IKBH, BOKG, YBHA (the ONS answers 429 to quick requests: retried after 20 s), CSO TSA01, OWID's CEPII export
+  shares.
+- Five graphs (default off, Prosperity and work): UK trade 1800-1938 at 1913 prices; Irish Free State 1922-38 at 1913
+  prices; UK exports and imports since 1948 (chained volumes; reference year 2024 found as the year IKBK = IKBH);
+  goods exports as a share of GDP (CEPII UK and Ireland, ONS UK; the ONS line is 1.0 points from CEPII's on
+  average); Ireland's trade 1930-2025 in euro. Not joined across eras. Check: Federico-Tena's 1930-38 Irish exports
+  in dollars over the CSO's in pounds give 3.14-4.96 $ to the pound, so the two series differ in more than the
+  exchange rate; said in the note. Federico-Tena's 1922-23 Irish figures are far below 1924's; their notes do not
+  explain, said in the note.
+- Sources `federico_tena_uk`, `federico_tena_ireland`, `ons_trade_volumes`, `cso_tsa01`, `cepii_exports_gdp` in
+  change/sources.json; DATA_LICENSE.md rows. Change over time: 142 series.
+- Checked in headless Chrome (screenshot of the five graphs; a graph draws three lines at most, so the Irish Free State
+  got its own); ui_check `change_trade` added; change_patents, change_registers, change_tea and map still pass. Tests
+  179 OK (tests/test_change_trade.py 4). Hosted copy and release not updated.
+- Next: C5b2 (main goods from the Statistical Abstract), or C5c (occupations by sector).

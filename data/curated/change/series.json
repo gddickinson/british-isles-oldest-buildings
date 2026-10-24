@@ -2113,5 +2113,197 @@
   "file": "patents_published_uk.csv",
   "default": false,
   "note": "Patent applications published each year under the Patents Act 1977, eighteen months after their priority date: 1979-2010 from the first number published in each year (GB2000001 on 4 January 1979), 2011-15 from the IPO's Facts and figures 2019 and 2016-25 from Facts and figures 2025. Where the sources overlap they differ by under 1%. About half of the applications filed are published; the rest are withdrawn first."
+ },
+ {
+  "id": "trade_ft_imports_uk",
+  "theme": "Prosperity and work",
+  "title": "Overseas trade, 1800-1938 (at 1913 prices)",
+  "region": "United Kingdom (all Ireland to 1922)",
+  "unit": "$m",
+  "unit_long": "million $ at 1913 prices",
+  "label": "Imports",
+  "sources": [
+   "federico_tena_uk"
+  ],
+  "file": "trade_ft_imports_uk.csv",
+  "default": false,
+  "models": [
+   "trade_ft_exports_uk"
+  ],
+  "note": "Imports and exports of goods in million US dollars at 1913 prices, so the line shows how much was traded, not what it was worth at the time, from Federico and Tena-Junguito's World Trade Historical Database (official trade statistics converted and deflated by the authors). The United Kingdom includes all of Ireland to 1922; from 1923 trade with the Irish Free State is foreign trade. At 1913 prices the UK imported 95 million dollars of goods in 1800, 3,206 million in 1913 and 4,048 million in 1938; exports were 2,566 million in 1913 and 1,557 million in 1938, 39% below their peak.",
+  "zero": true
+ },
+ {
+  "id": "trade_ft_exports_uk",
+  "theme": "Prosperity and work",
+  "title": "UK exports",
+  "region": "United Kingdom",
+  "unit": "$m",
+  "unit_long": "million $ at 1913 prices",
+  "label": "Exports",
+  "sources": [
+   "federico_tena_uk"
+  ],
+  "file": "trade_ft_exports_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "trade_ft_imports_ie",
+  "theme": "Prosperity and work",
+  "title": "Overseas trade, 1922-1938 (at 1913 prices)",
+  "region": "Irish Free State",
+  "unit": "$m",
+  "unit_long": "million $ at 1913 prices",
+  "label": "Imports",
+  "sources": [
+   "federico_tena_ireland"
+  ],
+  "file": "trade_ft_imports_ie.csv",
+  "default": false,
+  "models": [
+   "trade_ft_exports_ie"
+  ],
+  "note": "Imports and exports of goods of the Irish Free State (from 1937 Éire) in million US dollars at 1913 prices, from Federico and Tena-Junguito's World Trade Historical Database, on the same scale as the UK's 1800-1938 graph. Imports were 109 million in 1922 and 250 million in 1938; exports 68 million and 98 million. The first two years are far below the third (imports 325 million in 1924): the Free State was founded on 6 December 1922 and set up its customs frontier on 1 April 1923, and the database's notes do not say how these years were filled. The CSO's own figures (graph \"Overseas trade: Ireland\") begin in 1930.",
+  "zero": true
+ },
+ {
+  "id": "trade_ft_exports_ie",
+  "theme": "Prosperity and work",
+  "title": "Irish Free State exports",
+  "region": "Irish Free State",
+  "unit": "$m",
+  "unit_long": "million $ at 1913 prices",
+  "label": "Exports",
+  "sources": [
+   "federico_tena_ireland"
+  ],
+  "file": "trade_ft_exports_ie.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "trade_exports_uk",
+  "theme": "Prosperity and work",
+  "title": "Overseas trade since 1948",
+  "region": "United Kingdom",
+  "unit": "£bn",
+  "unit_long": "£ billion at 2024 prices",
+  "label": "Exports (goods and services)",
+  "sources": [
+   "ons_trade_volumes"
+  ],
+  "file": "trade_exports_uk.csv",
+  "default": false,
+  "models": [
+   "trade_imports_uk"
+  ],
+  "note": "Exports and imports of goods and services by the United Kingdom, from the ONS national accounts, as chained volume measures in pounds at 2024 prices (series IKBK and IKBL): what was traded each year, priced as in 2024. Exports were £52 billion in 1948 and £893 billion in 2025 at these prices. Not joined to the 1800-1938 graph: that is in dollars at 1913 prices, and no figures are drawn for 1939-47.",
+  "zero": true
+ },
+ {
+  "id": "trade_imports_uk",
+  "theme": "Prosperity and work",
+  "title": "UK imports",
+  "region": "United Kingdom",
+  "unit": "£bn",
+  "unit_long": "£ billion at 2024 prices",
+  "label": "Imports (goods and services)",
+  "sources": [
+   "ons_trade_volumes"
+  ],
+  "file": "trade_imports_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "trade_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Goods exported, share of the economy",
+  "region": "United Kingdom; Ireland",
+  "unit": "%",
+  "unit_long": "% of GDP",
+  "label": "UK (CEPII)",
+  "sources": [
+   "cepii_exports_gdp"
+  ],
+  "file": "trade_share_uk.csv",
+  "default": false,
+  "models": [
+   "trade_share_ons_uk",
+   "trade_share_ie"
+  ],
+  "note": "Goods exported as a share of the economy (GDP at current prices). United Kingdom 1827-2014 and Ireland 1926-2014 from CEPII's TRADHIST database (Fouquin and Hugot 2016) as published by Our World in Data; the second UK line is the ONS's exports of goods (BOKG) as a share of GDP (YBHA), 1948-2025, 1.0 percentage points from CEPII's on average where both run. Services, 57% of the UK's exports in 2025 (ONS IKBH less BOKG), are not counted.",
+  "zero": true
+ },
+ {
+  "id": "trade_share_ons_uk",
+  "theme": "Prosperity and work",
+  "title": "UK goods exports, share of GDP (ONS)",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of GDP",
+  "label": "UK (ONS)",
+  "sources": [
+   "ons_trade_volumes"
+  ],
+  "file": "trade_share_ons_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "trade_share_ie",
+  "theme": "Prosperity and work",
+  "title": "Ireland goods exports, share of GDP",
+  "region": "Ireland",
+  "unit": "%",
+  "unit_long": "% of GDP",
+  "label": "Ireland (CEPII)",
+  "sources": [
+   "cepii_exports_gdp"
+  ],
+  "file": "trade_share_ie.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "trade_exports_ie",
+  "theme": "Prosperity and work",
+  "title": "Overseas trade: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "€m",
+  "unit_long": "€ million (current prices)",
+  "label": "Exports",
+  "sources": [
+   "cso_tsa01"
+  ],
+  "file": "trade_exports_ie.csv",
+  "default": false,
+  "models": [
+   "trade_imports_ie"
+  ],
+  "note": "Ireland's (the state's) merchandise imports and exports, from the CSO's table TSA01, in million euro at the prices of each year (before 1999, Irish pounds converted at 0.787564 to the euro). Not joined to the Federico-Tena figures for 1922-38 (their own graph): over 1930-38, the years both cover, their dollar exports divided by the CSO's give between 3.14 and 4.96 dollars to the Irish pound, so the two differ in more than the exchange rate. Exports have been above imports every year since 1985.",
+  "zero": true
+ },
+ {
+  "id": "trade_imports_ie",
+  "theme": "Prosperity and work",
+  "title": "Ireland imports",
+  "region": "Ireland (the state)",
+  "unit": "€m",
+  "unit_long": "€ million (current prices)",
+  "label": "Imports",
+  "sources": [
+   "cso_tsa01"
+  ],
+  "file": "trade_imports_ie.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
  }
 ]

@@ -824,5 +824,65 @@
   "download_url": "https://assets.publishing.service.gov.uk/media/5ed4ad3bd3bf7f4607b90adc/data-download-2019.xlsx https://assets.publishing.service.gov.uk/media/6a54db32a4890e65cce64dc5/ipo-facts-and-figures-data-download-2025.xlsx",
   "used": "Patent applications published 2011-2025; applications and grants of 2025 (roadmap C5a)",
   "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "federico_tena_uk": {
+  "short": "Federico-Tena World Trade Historical Database: United Kingdom 1800-1938",
+  "publisher": "e-cienciaDatos (Consorcio Madrono), Universidad Carlos III de Madrid",
+  "citation": "Federico, G. and Tena-Junguito, A. (2017) Federico-Tena World Trade Historical Database: United Kingdom. e-cienciaDatos, doi:10.21950/G5SMT1. Cite also Federico & Tena-Junguito (2019) World trade, 1800-1938: a new synthesis, Revista de Historia Economica 37(1), doi:10.1017/S0212610918000216",
+  "licence": "CC BY 4.0",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0",
+  "licence_quote": "Dataverse licence field: {'name': 'CC-BY-4.0', 'uri': 'http://creativecommons.org/licenses/by/4.0'}. UC3M page: 'Please feel free download and use the data but quote as: Federico, G. and Tena-Junguito A. (2019)'",
+  "url": "https://doi.org/10.21950/G5SMT1",
+  "download_url": "https://edatos.consorciomadrono.es/api/access/datafile/1778",
+  "used": "UK imports and exports 1800-1938, current boundaries, million dollars at 1913 prices (sheet 'Constant prices'; roadmap C5b1)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "federico_tena_ireland": {
+  "short": "Federico-Tena World Trade Historical Database: Ireland 1922-1938",
+  "publisher": "e-cienciaDatos (Consorcio Madrono), Universidad Carlos III de Madrid",
+  "citation": "Federico, G. and Tena-Junguito, A. (2017) Federico-Tena World Trade Historical Database: Ireland. e-cienciaDatos, doi:10.21950/GYYC5K",
+  "licence": "CC BY 4.0",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0",
+  "licence_quote": "Dataverse licence field: {'name': 'CC-BY-4.0', 'uri': 'http://creativecommons.org/licenses/by/4.0'}",
+  "url": "https://doi.org/10.21950/GYYC5K",
+  "download_url": "https://edatos.consorciomadrono.es/api/access/datafile/1730",
+  "used": "Irish Free State imports and exports 1922-1938 at 1913 prices; current prices for the check against the CSO (roadmap C5b1)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "cso_tsa01": {
+  "short": "CSO TSA01 value of merchandise trade, Ireland 1930-2025",
+  "publisher": "Central Statistics Office, Ireland",
+  "citation": "Central Statistics Office (Ireland), table TSA01: Value of Merchandise Trade, 1930-2025 (also TSA07 imports by use and TSA08 exports 1938-2025, TSA04 cattle and beef exports 1930-).",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "licence_quote": "Statistical information on this website is accessible free of charge and licensed under Creative Commons Attribution (CC BY 4.0).",
+  "url": "https://data.cso.ie/table/TSA01",
+  "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/TSA01/CSV/1.0/en",
+  "used": "Ireland's total imports and exports 1930-2025, euro thousand (roadmap C5b1)",
+  "checked": "2026-10-24, downloaded (HTTP 200)"
+ },
+ "cepii_exports_gdp": {
+  "short": "CEPII TRADHIST merchandise exports as a share of GDP (Our World in Data)",
+  "publisher": "Our World in Data",
+  "citation": "Fouquin, M. and Hugot, J. (2016) Two Centuries of Bilateral Trade and Gravity Data: 1827-2014. CEPII Working Paper 2016-14; 'Merchandise exports as a share of GDP', processed by Our World in Data.",
+  "licence": "Etalab Open Licence 2.0 (CEPII); CC BY 4.0 (Our World in Data)",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "licence_quote": "CEPII: 'Licence: Etalab 2.0'. Our World in Data: 'All visualizations, data, and articles ... are licensed under CC BY'",
+  "url": "https://ourworldindata.org/grapher/merchandise-exports-gdp-cepii",
+  "download_url": "https://ourworldindata.org/grapher/merchandise-exports-gdp-cepii.csv",
+  "checked": "2026-10-24, downloaded (HTTP 200)",
+  "used": "UK 1827-2014 and Ireland 1926-2014 (roadmap C5b1)"
+ },
+ "ons_trade_volumes": {
+  "short": "ONS UK Economic Accounts: exports and imports (IKBK, IKBL, IKBH, BOKG) and GDP (YBHA)",
+  "publisher": "Office for National Statistics",
+  "citation": "Office for National Statistics, UK Economic Accounts time series IKBK (exports, chained volume measure), IKBL (imports, CVM), IKBH (exports, current prices), BOKG (exports of goods, current prices), YBHA (GDP at market prices, current prices), £ million, released 30 September 2026.",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+  "url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbk/ukea",
+  "download_url": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/ikbk/ukea",
+  "checked": "2026-10-24, downloaded (HTTP 200)",
+  "used": "Exports and imports in chained volume measures 1948-2025; goods exports as a share of GDP; services' share of exports (roadmap C5b1)"
  }
 }

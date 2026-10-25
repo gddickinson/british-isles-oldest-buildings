@@ -11,7 +11,7 @@ farming, as the ONS and Keibek count it).
   and present only), the industry not stated left out; the two agree within `compare_ie` points in 2011 and 2016.
 - Keibek 2017 (quoted per figure in estimates.json): England and Wales 1601-1851, men and women (Table 20), and the
   male estimates for 1381 and c.1525 (Tables 22-23), drawn as estimate dots; with them the censuses of England and
-  Wales 1881-1911 (bidb.change_work_ew, from the 1911 Summary Tables).
+  Wales, 1861 and 1871 as regrouped by Booth (1886) and 1881-1911 from the 1911 Summary Tables (bidb.change_work_ew).
 
     python -m bidb.change_work   → data/curated/change/data/work_*.csv + series.json entries
                                    (then python -m bidb.change_series)
@@ -148,8 +148,10 @@ def estimates():
 
 
 def with_census(est, census):
-    """Keibek's dots with the censuses of England and Wales 1881-1911 after them."""
-    return {sec: sorted(est[sec] + census[i], key=lambda r: r[0]) for i, sec in enumerate(SECTORS)}
+    """Keibek's dots with the censuses of England and Wales after them ({sector index: points}, one or more)."""
+    census = census if isinstance(census, list) else [census]
+    return {sec: sorted(est[sec] + [p for c in census for p in c[i]], key=lambda r: r[0])
+            for i, sec in enumerate(SECTORS)}
 
 
 def _est_csv(sid, rows):
@@ -169,7 +171,9 @@ NOTE = ("Share of people in work in {what}. United Kingdom: the ONS's yearly sha
         "from the table of those usually resident and present, within {ie_diff} points of the full count in 2011 and "
         "2016). Dots: Keibek's estimates for England and Wales, men and women "
         "1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and "
-        "coroners' reports); then the censuses of 1881-1911 (all occupied aged 10 and over, by occupation rather than "
+        "coroners' reports); then the censuses: 1861 and 1871 as Charles Booth regrouped them in 1886 (dealers apart; "
+        "general labour and the independent left out; his 1881 is within {booth_diff} points of the figures below), "
+        "and 1881-1911 from the 1911 census tables (all occupied aged 10 and over, by occupation rather than "
         "industry: dealers the census shows apart moved to services, general labourers and undefined workers left "
         "out). Mining counts with farming throughout. Northern Ireland is in the UK line. {facts}")
 
@@ -179,7 +183,7 @@ def _facts(sec, uk, ie, est):
     e = {r[0]: r[1] for r in est}
     if sec == "primary":
         return (f"In 1601 about {e[1601]:.0f}% of the adult labour force of England and Wales worked on the land or in "
-                f"mines, {e[1851]:.1f}% in 1851; the censuses give {e[1881]:.1f}% in 1881 and {e[1911]:.1f}% in 1911; "
+                f"mines, {e[1851]:.1f}% in 1851; the censuses give {e[1871]:.1f}% in 1871 (Booth), {e[1881]:.1f}% in 1881 and {e[1911]:.1f}% in 1911; "
                 f"{uk[1920][i]:.1f}% of the UK's in 1920 and {uk[max(uk)][i]:.1f}% in "
                 f"{max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, "
                 f"{ie[max(ie)][i]:.1f}% in {max(ie)}.")
@@ -195,7 +199,7 @@ def _facts(sec, uk, ie, est):
             f"{ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, {ie[max(ie)][i]:.1f}% in {max(ie)}.")
 
 
-def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print):
+def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print, booth_diff=0.0):
     rows = []
     for i, sec in enumerate(SECTORS):
         _csv(f"work_{sec}_uk", [(y, v[i]) for y, v in sorted(uk.items())])
@@ -204,17 +208,17 @@ def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print):
         title, what = TITLES[sec]
         main = _row(f"work_{sec}_uk", title, "United Kingdom", "% of people in work",
                     ["ons_longterm_employment", "ons_workforce_jobs", "cso_cnnl1", "cso_census_industry",
-                     "est_work_keibek2017", "census_ew_1911"],
+                     "est_work_keibek2017", "booth_1886", "census_ew_1911"],
                     "United Kingdom; Ireland; England and Wales (estimates)",
                     NOTE.format(what=what, first=FIRST_LMS, diff=f"{diff:.2f}", c0=c0, c1=c1, ie_last=max(ie),
-                                ie_diff=f"{ie_diff:.2f}",
+                                ie_diff=f"{ie_diff:.2f}", booth_diff=f"{booth_diff:.1f}",
                                 facts=_facts(sec, uk, ie, est[sec])),
                     [f"work_{sec}_ie", f"work_{sec}_est"], unit="%")
         main["gap"] = 5                                       # 1939-47 dotted
         ire = _row(f"work_{sec}_ie", f"{title}: Ireland", "Ireland (census)", "% of people at work", ["cso_cnnl1", "cso_census_industry"],
                    "Ireland (the state)", unit="%")
-        dots = _row(f"work_{sec}_est", f"{title}: estimates", "England and Wales (Keibek; census)", "% of the labour force",
-                    ["est_work_keibek2017", "census_ew_1911"], "England and Wales", unit="%")
+        dots = _row(f"work_{sec}_est", f"{title}: estimates", "England and Wales (Keibek; censuses)", "% of the labour force",
+                    ["est_work_keibek2017", "booth_1886", "census_ew_1911"], "England and Wales", unit="%")
         dots["style"] = "estimates"
         for r in (main, ire, dots):
             r["zero"] = True
@@ -251,8 +255,12 @@ def run(log=print):
     bad = change_work_ew.check(census)
     if bad:
         raise ValueError("census of England and Wales: " + "; ".join(bad))
-    est = with_census(estimates(), change_work_ew.points(census))
-    write(joined(fig, now), ie, est, diff, c0, c1, ie_diff, log)
+    booth = change_work_ew.load_booth()
+    bad = change_work_ew.check_booth(booth)
+    if bad:
+        raise ValueError("; ".join(bad))
+    est = with_census(estimates(), [change_work_ew.booth_points(booth), change_work_ew.points(census)])
+    write(joined(fig, now), ie, est, diff, c0, c1, ie_diff, log, change_work_ew.compare_booth(booth, census))
     log(f"Ireland: CNA26 and F7040 differ by at most {ie_diff:.2f} points in {both}")
 
 

@@ -1,5 +1,6 @@
-"""Occupations by sector in England and Wales at the censuses of 1881-1911 (roadmap C5c2b1), read from the page images of
-the 1911 Census Summary Tables (Cd. 7929, 1915; Internet Archive `censusofenglandw1911grea`, public domain):
+"""Occupations by sector in England and Wales at the censuses of 1861-1911 (roadmap C5c2b), read from page images.
+
+1881-1911 (C5c2b1), from the 1911 Census Summary Tables (Cd. 7929, 1915; Internet Archive `censusofenglandw1911grea`, public domain):
 
 - Table 65 (leaves 283, 285, 287; printed pp. 274-278): persons aged 10 and over engaged in occupations by order, on the
   1911 classification carried back to 1881, with the lines that show dealers on their own.
@@ -18,6 +19,15 @@ The three sectors (`shares`), on the census's own makers and dealers:
 - left out, as no industry is stated: order XXII's general labourers and its "others" (5.0% to 1.8% and 1.1% to 1.0% of
   those occupied, 1881 to 1911). Dealers the condensed list does not show apart (coal, timber, clothes...) stay with
   their trade.
+
+1861 and 1871 (C5c2b2), from Charles Booth, "Occupations of the people of the United Kingdom, 1801-81", Journal of the
+Statistical Society 49 (1886), Appendix B (1), pp. 414-415 (Internet Archive `s4833id1397560`, public domain): England
+and Wales's self-supporting population 1841-1881 in thousands, the censuses regrouped on one classification by Booth,
+dealers apart (`data/curated/change/data/work_booth_ew.csv`; `check_booth` tests every subtotal and total). Grouped the
+same way (`booth_shares`): agriculture, fishing and mining; building and manufacture; transport, dealing, commercial
+service, public and professional service and domestic service; general labour, property owning and independent, and
+indefinite left out. Booth's 1881 is within `compare_booth` points of the 1911 tables' 1881, so only his 1861 and 1871
+are drawn (`booth_points`).
 """
 import csv
 from collections import defaultdict
@@ -25,6 +35,7 @@ from collections import defaultdict
 from .change_firms import DATA
 
 READINGS = DATA / "work_census_ew.csv"
+BOOTH = DATA / "work_booth_ew.csv"
 YEARS = (1881, 1891, 1901, 1911)
 PRIMARY = ["o07", "o08", "o09"]
 MAKING = [f"o{n:02d}" for n in range(10, 22)]
@@ -129,7 +140,65 @@ def points(rows=None):
     return {i: [(y, v[i], None, None, LABEL.format(year=y)) for y, v in sorted(s.items())] for i in range(3)}
 
 
+BOOTH_PARTS = {"manufacture": "m_", "transport": "t_", "public_professional": "p_"}
+BOOTH_SECTORS = (["agriculture", "fishing", "mining"], ["building", "manufacture"],
+                 ["transport", "dealing", "commercial", "public_professional", "domestic"])
+BOOTH_DRAWN = (1861, 1871)
+BOOTH_LABEL = ("Booth 1886, Appendix B (1): the census of {year} regrouped, self-supporting population of England and "
+               "Wales, dealers apart, general labour and the independent left out")
+
+
+def load_booth(path=BOOTH):
+    """{row: {year: thousands}} as printed."""
+    out = defaultdict(dict)
+    with open(path, newline="") as f:
+        for r in csv.DictReader(f):
+            out[r["row"]][int(r["year"])] = int(r["value"])
+    return out
+
+
+def check_booth(b):
+    """Problems: a section, the industry total or the self-supporting total not equal to the sum of its parts."""
+    bad = []
+    sums = {total: [k for k in b if k.startswith(pre)] for total, pre in BOOTH_PARTS.items()}
+    sums["industrial_service"] = ["commercial", "general_labour"]
+    sums["industry"] = ["agriculture", "fishing", "mining", "building", "manufacture", "transport", "dealing",
+                        "industrial_service"]
+    sums["self_supporting"] = ["industry", "public_professional", "domestic", "property", "indefinite"]
+    for total, parts in sums.items():
+        for y, v in b[total].items():
+            if sum(b[p][y] for p in parts) != v:
+                bad.append(f"Booth {y}: the parts of {total} add to {sum(b[p][y] for p in parts)}, printed {v}")
+    return bad
+
+
+def booth_shares(b=None):
+    """{year: (primary, secondary, tertiary) %} from Booth's sections, 1841-1881."""
+    b = b or load_booth()
+    out = {}
+    for y in sorted(b["self_supporting"]):
+        n = [sum(b[k][y] for k in sec) for sec in BOOTH_SECTORS]
+        out[y] = tuple(round(v / sum(n) * 100, 2) for v in n)
+    return out
+
+
+def compare_booth(b=None, rows=None):
+    """The largest difference (points) between Booth's 1881 and the 1911 tables' 1881."""
+    bs, cs = booth_shares(b)[1881], shares(rows)[1881]
+    return max(abs(x - y) for x, y in zip(bs, cs))
+
+
+def booth_points(b=None):
+    """{sector index: [(year, value, None, None, label)]} for 1861 and 1871."""
+    s = booth_shares(b)
+    return {i: [(y, s[y][i], None, None, BOOTH_LABEL.format(year=y)) for y in BOOTH_DRAWN] for i in range(3)}
+
+
 if __name__ == "__main__":
+    print(check_booth(load_booth()) or "Booth: all sums agree")
+    for y, v in booth_shares().items():
+        print("Booth", y, v)
+    print(f"Booth's 1881 within {compare_booth():.2f} points of the 1911 tables'")
     r = load()
     print(check(r) or "all sums agree")
     for y in YEARS:

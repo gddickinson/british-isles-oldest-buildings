@@ -1282,3 +1282,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 248 OK (8 new); ui_check `change_work` (now looks for the censuses), `change_trade_joined`, `map` pass;
   screenshot checked. Hosted copy and release not updated.
 - Next: C5c2b2 (1861 and 1871 from their own reports) or C5d (prices and real wages).
+
+## 2026-10-25 — C5c2b2: England and Wales 1861 and 1871 from Booth (1886)
+- The 1861 and 1871 reports' occupation tables are not on the Internet Archive (searched: only the 1861 population
+  tables, 1871 Vols I-II and the 1881 Vols I and III). Used instead Charles Booth, "Occupations of the people of the
+  United Kingdom, 1801-81" (J. Statistical Society 49, 1886; public domain; `s4833id1397560`, Wellcome copy),
+  Appendix B (1) pp. 414-415 (page images n427-428): England and Wales's self-supporting population 1841-1881 in
+  thousands by Booth's sections, the censuses regrouped on one classification with dealers apart.
+- `work_booth_ew.csv` (210 figures); `change_work_ew.check_booth`: every manufacture, transport and public service
+  subtotal, industrial service, industry and self-supporting total adds up exactly in all five years.
+- Grouping as for the census: primary = agriculture, fishing, mining; secondary = building, manufacture; services =
+  transport, dealing, commercial, public and professional, domestic; left out = general labour, property owning and
+  independent, indefinite. Booth's 1881 (18.19/41.35/40.46) is within 1.28 points of the 1911 tables' 1881
+  (18.23/42.59/39.18; Booth moves more dealers out of making); his 1851 (27.1/41.3/31.6) meets Keibek's 1851
+  (27.5/42.6/29.9). Only 1861 and 1871 drawn: 24.1/41.3/34.6 and 20.5/41.2/38.3. The dots now run 1851, 1861, 1871,
+  1881...1911 with no gap.
+- Source `booth_1886`, DATA_LICENSE.md row, INTERFACE.md; tests 252 OK (4 new); ui_check `change_work` (now looks for
+  Booth), `change_trade_joined` pass; screenshot checked. Hosted copy and release not updated.
+- Lead noted in the roadmap: Booth's Appendix B (2) and (3) give Scotland and Ireland 1841-1881 the same way (C5c2c).
+- Next: C5c2c (Scotland and Ireland 1841-1911: Booth to 1881, then the census reports) or C5d (prices and real wages).

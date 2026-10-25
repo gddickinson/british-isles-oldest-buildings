@@ -392,10 +392,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       out (6.1% of the occupied in 1881, 2.8% in 1911); dealers the condensed list joins to their trade stay there.
       Drawn as dots after Keibek's (the graphs already draw three lines). Farming, fishing and mining 18.2% in 1881,
       15.0% in 1911; making and building 42.6%, 43.3% (1901), 41.7%; services 39.2%, 43.3%.
-- [ ] C5c2b2 England and Wales 1861 and 1871 from their own census reports (the orders of 1861-71 differ from 1881's;
-      regroup to the same three sectors and say how); 1851 if the 1851 report's tables can be grouped the same way, to
-      meet Keibek's last figure.
-- [ ] C5c2c Scotland and Ireland 1861-1911 the same way (Irish census returns 1911 by province on the Internet
+- [x] C5c2b2 (2026-10-25) England and Wales 1861 and 1871 from Charles Booth's "Occupations of the people of the
+      United Kingdom, 1801-81" (Journal of the Statistical Society 49, 1886; public domain, Internet Archive
+      `s4833id1397560`), Appendix B (1) pp. 414-415: the censuses of 1841-1881 regrouped by Booth on one
+      classification, dealers apart, in thousands (`work_booth_ew.csv`; every subtotal and total adds up). The 1861 and
+      1871 reports' own tables are not on the Internet Archive (only their population volumes and the 1881 volumes).
+      Grouped as the census figures: agriculture, fishing, mining / building, manufacture / transport, dealing,
+      commercial, public and professional, domestic; general labour, the independent and indefinite left out. Booth's
+      1881 within 1.3 points of the 1911 tables' (18.2/41.4/40.5 against 18.2/42.6/39.2), his 1851 within 0.4 points of
+      Keibek's farming and mining and 1.7 of services; only 1861 and 1871 drawn: farming, fishing and mining 24.1%,
+      20.5%; making and building 41.3%, 41.2%; services 34.6%, 38.3%.
+- [ ] C5c2c Scotland and Ireland 1861-1911 the same way (Booth 1886 has Scotland and Ireland 1841-1881 on the same
+      classification: Appendix B (2) p. 418, B (3) p. 422, same item; Irish census returns 1911 by province on the Internet
       Archive, `op1256115-1001` etc.); Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become
       available.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.

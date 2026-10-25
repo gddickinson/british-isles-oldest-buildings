@@ -4180,6 +4180,7 @@
    "cso_cnnl1",
    "cso_census_industry",
    "est_work_keibek2017",
+   "booth_1886",
    "census_ew_1911"
   ],
   "file": "work_primary_uk.csv",
@@ -4188,7 +4189,7 @@
    "work_primary_ie",
    "work_primary_est"
   ],
-  "note": "Share of people in work in farming, fishing, forestry and mining. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-2022 (from 2002 those whose industry was not stated left out; 2022 from the table of those usually resident and present, within 0.40 points of the full count in 2011 and 2016). Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports); then the censuses of 1881-1911 (all occupied aged 10 and over, by occupation rather than industry: dealers the census shows apart moved to services, general labourers and undefined workers left out). Mining counts with farming throughout. Northern Ireland is in the UK line. In 1601 about 58% of the adult labour force of England and Wales worked on the land or in mines, 27.5% in 1851; the censuses give 18.2% in 1881 and 14.9% in 1911; 14.3% of the UK's in 1920 and 1.2% in 2026. Ireland: 53.6% in 1926, 10.7% in 1996, 4.0% in 2022.",
+  "note": "Share of people in work in farming, fishing, forestry and mining. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-2022 (from 2002 those whose industry was not stated left out; 2022 from the table of those usually resident and present, within 0.40 points of the full count in 2011 and 2016). Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports); then the censuses: 1861 and 1871 as Charles Booth regrouped them in 1886 (dealers apart; general labour and the independent left out; his 1881 is within 1.3 points of the figures below), and 1881-1911 from the 1911 census tables (all occupied aged 10 and over, by occupation rather than industry: dealers the census shows apart moved to services, general labourers and undefined workers left out). Mining counts with farming throughout. Northern Ireland is in the UK line. In 1601 about 58% of the adult labour force of England and Wales worked on the land or in mines, 27.5% in 1851; the censuses give 20.5% in 1871 (Booth), 18.2% in 1881 and 14.9% in 1911; 14.3% of the UK's in 1920 and 1.2% in 2026. Ireland: 53.6% in 1926, 10.7% in 1996, 4.0% in 2022.",
   "gap": 5,
   "zero": true
  },
@@ -4216,9 +4217,10 @@
   "region": "England and Wales",
   "unit": "%",
   "unit_long": "% of the labour force",
-  "label": "England and Wales (Keibek; census)",
+  "label": "England and Wales (Keibek; censuses)",
   "sources": [
    "est_work_keibek2017",
+   "booth_1886",
    "census_ew_1911"
   ],
   "file": "work_primary_est.csv",
@@ -4241,6 +4243,7 @@
    "cso_cnnl1",
    "cso_census_industry",
    "est_work_keibek2017",
+   "booth_1886",
    "census_ew_1911"
   ],
   "file": "work_secondary_uk.csv",
@@ -4249,7 +4252,7 @@
    "work_secondary_ie",
    "work_secondary_est"
   ],
-  "note": "Share of people in work in manufacturing, construction and the utilities. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-2022 (from 2002 those whose industry was not stated left out; 2022 from the table of those usually resident and present, within 0.40 points of the full count in 2011 and 2016). Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports); then the censuses of 1881-1911 (all occupied aged 10 and over, by occupation rather than industry: dealers the census shows apart moved to services, general labourers and undefined workers left out). Mining counts with farming throughout. Northern Ireland is in the UK line. Keibek puts making and building at 33.5% in 1601 and 47.7% in 1701, above farming and mining from the 1670s, before the factories; the censuses of England and Wales give 42.6% in 1881 and 41.7% in 1911. The UK's share peaked at 40.1% in 1966 and was 14.0% in 2026. Ireland: 12.8% in 1926, 26.6% in 1996, 18.6% in 2022.",
+  "note": "Share of people in work in manufacturing, construction and the utilities. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-2022 (from 2002 those whose industry was not stated left out; 2022 from the table of those usually resident and present, within 0.40 points of the full count in 2011 and 2016). Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports); then the censuses: 1861 and 1871 as Charles Booth regrouped them in 1886 (dealers apart; general labour and the independent left out; his 1881 is within 1.3 points of the figures below), and 1881-1911 from the 1911 census tables (all occupied aged 10 and over, by occupation rather than industry: dealers the census shows apart moved to services, general labourers and undefined workers left out). Mining counts with farming throughout. Northern Ireland is in the UK line. Keibek puts making and building at 33.5% in 1601 and 47.7% in 1701, above farming and mining from the 1670s, before the factories; the censuses of England and Wales give 42.6% in 1881 and 41.7% in 1911. The UK's share peaked at 40.1% in 1966 and was 14.0% in 2026. Ireland: 12.8% in 1926, 26.6% in 1996, 18.6% in 2022.",
   "gap": 5,
   "zero": true
  },
@@ -4277,9 +4280,10 @@
   "region": "England and Wales",
   "unit": "%",
   "unit_long": "% of the labour force",
-  "label": "England and Wales (Keibek; census)",
+  "label": "England and Wales (Keibek; censuses)",
   "sources": [
    "est_work_keibek2017",
+   "booth_1886",
    "census_ew_1911"
   ],
   "file": "work_secondary_est.csv",
@@ -4302,6 +4306,7 @@
    "cso_cnnl1",
    "cso_census_industry",
    "est_work_keibek2017",
+   "booth_1886",
    "census_ew_1911"
   ],
   "file": "work_tertiary_uk.csv",
@@ -4310,7 +4315,7 @@
    "work_tertiary_ie",
    "work_tertiary_est"
   ],
-  "note": "Share of people in work in services (trade, transport, finance, public services and the rest). United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-2022 (from 2002 those whose industry was not stated left out; 2022 from the table of those usually resident and present, within 0.40 points of the full count in 2011 and 2016). Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports); then the censuses of 1881-1911 (all occupied aged 10 and over, by occupation rather than industry: dealers the census shows apart moved to services, general labourers and undefined workers left out). Mining counts with farming throughout. Northern Ireland is in the UK line. Services grew almost without a break: 8.7% in 1601 and 29.9% in 1851 (England and Wales), 39.2% in 1881 and 43.3% in 1911 at the censuses, 51.5% of UK workers in 1920 and 84.8% in 2026. Ireland: 33.5% in 1926, 62.7% in 1996, 77.4% in 2022.",
+  "note": "Share of people in work in services (trade, transport, finance, public services and the rest). United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-2022 (from 2002 those whose industry was not stated left out; 2022 from the table of those usually resident and present, within 0.40 points of the full count in 2011 and 2016). Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports); then the censuses: 1861 and 1871 as Charles Booth regrouped them in 1886 (dealers apart; general labour and the independent left out; his 1881 is within 1.3 points of the figures below), and 1881-1911 from the 1911 census tables (all occupied aged 10 and over, by occupation rather than industry: dealers the census shows apart moved to services, general labourers and undefined workers left out). Mining counts with farming throughout. Northern Ireland is in the UK line. Services grew almost without a break: 8.7% in 1601 and 29.9% in 1851 (England and Wales), 39.2% in 1881 and 43.3% in 1911 at the censuses, 51.5% of UK workers in 1920 and 84.8% in 2026. Ireland: 33.5% in 1926, 62.7% in 1996, 77.4% in 2022.",
   "gap": 5,
   "zero": true
  },
@@ -4338,9 +4343,10 @@
   "region": "England and Wales",
   "unit": "%",
   "unit_long": "% of the labour force",
-  "label": "England and Wales (Keibek; census)",
+  "label": "England and Wales (Keibek; censuses)",
   "sources": [
    "est_work_keibek2017",
+   "booth_1886",
    "census_ew_1911"
   ],
   "file": "work_tertiary_est.csv",

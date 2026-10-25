@@ -1041,5 +1041,16 @@
   "url": "https://archive.org/details/censusofenglandw1911grea",
   "used": "England and Wales at the censuses of 1881-1911: shares of those occupied in farming, fishing and mining, making and building, and services, read from the page images (data/curated/change/data/work_census_ew.csv, every order checked against the total occupied and every split line against its total); dealers of metals, drapery, food, tobacco and drink moved to services; general labourers and undefined workers left out (roadmap C5c2b1)",
   "checked": "2026-10-25, page images read (leaves 281, 283, 285, 287)"
+ },
+ "booth_1886": {
+  "short": "Booth (1886), Occupations of the people of the United Kingdom, 1801-81",
+  "publisher": "Journal of the Statistical Society of London",
+  "citation": "Booth, C. (1886) Occupations of the people of the United Kingdom, 1801-81. Journal of the Statistical Society of London 49(2), 314-444. Appendix B (1), England and Wales: numbers and percentages of the employed or self-supporting population, 1841-1881, pp. 414-415. Page images: Internet Archive, s4833id1397560 (Wellcome Library copy).",
+  "licence": "Public domain (published 1886; the author died in 1916)",
+  "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "licence_quote": "This work is available under the Creative Commons, Public Domain Mark",
+  "url": "https://archive.org/details/s4833id1397560",
+  "used": "England and Wales 1861 and 1871: shares of the self-supporting population in agriculture, fishing and mining; building and manufacture; and transport, dealing, commercial, public and professional and domestic service (general labour, property owning and indefinite left out), read from the page images (data/curated/change/data/work_booth_ew.csv, every subtotal checked); his 1841, 1851 and 1881 compared with Keibek and the 1911 census tables, not drawn (roadmap C5c2b2)",
+  "checked": "2026-10-25, page images read (leaves 427-428)"
  }
 }

@@ -1336,7 +1336,7 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 ## 2026-10-25 — C5c2c2b: Scotland at the census of 1891
 - Census of Scotland 1891, Vol. II, Part II (C. 7134, 1893; `tenthdecennialce0002vari`): the summary of occupations
   for all Scotland (classes and orders p. 2, sub-orders p. 3, occupations pp. 4-9; leaves 41-48) read from the page
-  images into `work_census_sc_1891.csv` (329 rows: 82 printed sub-order totals, the dealer-free sub-orders whole, 186
+  images into `work_census_sc_1891.csv` (330 rows: 80 printed sub-order totals, 49 dealer-free sub-orders whole, 201
   lines of class V with a kind). Every sub-order adds to its printed total, the sub-orders to the five class totals.
 - New `bidb/change_work_sc_1891.py` (115 lines). Grouped as 1901-1911 line for line; six lines joining makers and
   dealers shared out as in 1901 (furniture 7% dealers, clothes 93%, provisions 46%, bakers and confectioners 34%,

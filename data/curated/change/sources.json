@@ -1018,5 +1018,17 @@
   "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CNNL1/CSV/1.0/en",
   "used": "Ireland (the state): shares of the population at work in agriculture and mining, other industry, and services at each census 1926-1996 (roadmap C5c)",
   "checked": "2026-10-25, CSV downloaded (HTTP 200, 2.2 MB)"
+ },
+ "cso_census_industry": {
+  "short": "CSO census tables CNA26 and F7040, population at work by industry, Ireland 2002-2022",
+  "publisher": "Central Statistics Office, Ireland",
+  "citation": "Central Statistics Office (Ireland), table CNA26: Population aged 15 years and over at work by industrial group, censuses 2002-2016; table F7040: Population aged 15 years and over at work usually resident and present in the State by detailed industrial group, censuses 2011-2022, data.cso.ie.",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "licence_quote": "Statistical information on this website is accessible free of charge and licensed under Creative Commons Attribution (CC BY 4.0).",
+  "url": "https://data.cso.ie/table/CNA26",
+  "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CNA26/CSV/1.0/en",
+  "used": "Ireland (the state): shares of the population at work in farming and mining, making and building, and services at the censuses of 2002-2016 (CNA26) and 2022 (F7040, detailed NACE groups); industry not stated left out; the two tables agree within 0.40 points in 2011 and 2016 (roadmap C5c2a)",
+  "checked": "2026-10-25, CSVs downloaded (HTTP 200)"
  }
 }

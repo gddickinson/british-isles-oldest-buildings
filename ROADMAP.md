@@ -374,10 +374,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       1710-1911: "not to be cited without the written permission of the authors"); Shaw-Taylor & Wrigley 2014 and
       Broadberry et al. 2015 (not open; Keibek's tables 22-23 print Broadberry's 1381 and 1522 figures beside the
       ones used).
-- [ ] C5c2 Fill 1852-1919 and carry Ireland on: the censuses of 1861-1911 for England and Wales, Scotland and
-      Ireland grouped into the same three sectors from the census reports (public domain, page images; or another open
-      table), Ireland after 1996 from the CSO's censuses or Labour Force Survey (CC BY 4.0), Northern Ireland from
-      NISRA; Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become available.
+- [x] C5c2a (2026-10-25) Ireland carried on to 2022 (`bidb/change_work.py`): CSO CNA26 (censuses 2002-2016 by
+      industrial group) and F7040 (2011-2022 by detailed NACE group, usually resident and present), industry not
+      stated left out (5-8%), mining moved to primary as before; the two tables agree within 0.40 points in 2011 and
+      2016. Ireland: farming, fishing and mining 10.7% in 1996, 6.8% in 2002, 4.0% in 2022; making and building 26.1%
+      in 2006, 17.4% in 2011 (construction 215,184 people in 2006, 90,357 in 2011; the LFS shows the same fall),
+      18.6% in 2022; services 77.4% in 2022. The LFS (QLF03, yearly from 1998) not drawn: mining is not separate in it.
+      Northern Ireland not drawn on its own: it is in the UK line, and the charts draw at most three lines.
+- [ ] C5c2b England and Wales 1861-1911 grouped into the three sectors from the census reports (public domain, page
+      images on the Internet Archive): the 1911 Summary Tables' Table 64 (occupations of males and females at the four
+      censuses 1881-1911, item `censusofenglandw1911grea`), then 1861 and 1871 from their own reports; dealers in the
+      making orders (IX-XXI) moved to services, as the 1911 report's own Group B does; as dots or a dotted line, with
+      the grouping stated.
+- [ ] C5c2c Scotland and Ireland 1861-1911 the same way (Irish census returns 1911 by province on the Internet
+      Archive, `op1256115-1001` etc.); Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become
+      available.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
       as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already

@@ -41,6 +41,24 @@ class Readers(unittest.TestCase):
                  + '"Agriculture","Cork","All Persons","1926","9"\n')
         self.assertEqual(cw.cso(p), {1926: (52.0, 18.0, 30.0)})
 
+    def test_cna26_leaves_out_not_stated(self):
+        head = '"Age Group","Industrial Group","Sex","Year","VALUE"\n'
+        rows = [("All industries", 110), (cw.NOT_STATED, 10), ("Agriculture, forestry and fishing", 8),
+                ("Mining, quarrying and turf production", 2), ("Manufacturing industries", 15), ("Construction", 5),
+                ("Electricity, gas and water supply", 0), ("Wholesale and retail trade", 70)]
+        p = _tmp(head + "".join(f'"15 years and over","{g}","Both sexes","2002","{v}"\n' for g, v in rows)
+                 + '"15 - 19 years","Construction","Both sexes","2002","3"\n')
+        self.assertEqual(cw.cso_cna26(p), {2002: (10.0, 20.0, 70.0)})
+
+    def test_f7040_splits_by_nace_order(self):
+        head = '"Census Year","Means of Travel","Detailed Industrial Group","VALUE"\n'
+        rows = [("Farming (0141)", 5), ("Mining support service activities (09)", 5), ("Dairy products (105)", 10),
+                ("Other specialised construction activities (439)", 10), ("Motor trades (45)", 70),
+                (cw.NOT_STATED, 7), ("Total at work", 107)]
+        p = _tmp(head + "".join(f'"2022","All means of travel","{g}","{v}"\n' for g, v in rows)
+                 + '"2022","Bicycle","Motor trades (45)","4"\n')
+        self.assertEqual(cw.cso_f7040(p), {2022: (10.0, 20.0, 70.0)})
+
     def test_join_and_compare(self):
         fig = {1977: (3.3, 33.8, 62.9), 1978: (3.29, 33.37, 63.34)}
         now = {1978: (3.35, 33.43, 63.22), 1979: (3.22, 33.01, 63.77)}
@@ -84,8 +102,13 @@ class Written(unittest.TestCase):
             self.assertAlmostEqual(sum(uk[s][y] for s in cw.SECTORS), 100, delta=0.05)
         self.assertLess(uk["primary"][2016], 2)
         ie = _series("work_primary_ie")
-        self.assertEqual((min(ie), max(ie)), (1926, 1996))
+        self.assertEqual((min(ie), max(ie)), (1926, 2022))
+        self.assertTrue({1996, 2002, 2006, 2011, 2016} <= set(ie))
         self.assertGreater(ie[1926], 50)
+        self.assertLess(ie[2022], ie[1996])
+        ie = {s: _series(f"work_{s}_ie") for s in cw.SECTORS}
+        for y in ie["primary"]:
+            self.assertAlmostEqual(sum(ie[s][y] for s in cw.SECTORS), 100, delta=0.05)
 
 
 if __name__ == "__main__":

@@ -1239,3 +1239,20 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   INTERFACE.md; tests 238 OK (7 new); ui_check `change_work` (new), `change_trade_joined`, `change_trade` pass;
   screenshot checked (dots 1381-1851, UK line from 1920, Ireland from 1926). Hosted copy and release not updated.
 - Next: C5c2 (1861-1911 censuses by sector; Ireland after 1996) or C5d (prices and real wages: ONS RPI 1800-).
+
+## 2026-10-25 — C5c2 split; C5c2a: Ireland's occupations by sector carried on to 2022
+- C5c2 split: the 1861-1911 censuses mean reading page images and regrouping the census orders (dealers into
+  services) for three nations, so they are C5c2b (England and Wales, from the 1911 Summary Tables' Table 64 for
+  1881-1911) and C5c2c (Scotland, Ireland); the ONS article has no sector shares before 1920 (checked its figures).
+- `bidb/change_work.py` (243 lines): `cso_cna26` (censuses 2002-2016) and `cso_f7040` (2011-2022, detailed NACE groups
+  split at 09 and 43, checked to add up to the total at work), industry not stated left out; `compare_ie`: the two
+  agree within 0.40 points in 2011 and 2016; 2022 from F7040. Notes and the facts give 2022.
+- Results (Ireland): primary 10.7% in 1996, 6.8% in 2002, 5.4% in 2006, 4.0% in 2022; making and building 26.6% in
+  1996, 26.1% in 2006, 17.4% in 2011 (construction 215,184 → 90,357; manufacturing 243,182 → 193,080; the LFS QLF03
+  shows the same fall), 18.6% in 2022; services 62.7% in 1996, 77.4% in 2022.
+- Not used: the LFS (yearly from 1998, but mining is inside B-E); Northern Ireland on its own (in the UK line; the
+  charts draw at most three lines).
+- Source `cso_census_industry`, DATA_LICENSE.md row, INTERFACE.md; tests 240 OK (2 new, the written-series test now
+  expects 1926-2022); ui_check `change_work` (now looks for 1926-2022), `change_trade_joined`, `map` pass; screenshot
+  checked. Hosted copy and release not updated.
+- Next: C5c2b (England and Wales 1861-1911 from the census reports) or C5d (prices and real wages).

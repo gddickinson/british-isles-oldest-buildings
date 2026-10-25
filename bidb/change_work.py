@@ -7,6 +7,8 @@ farming, as the ONS and Keibek count it).
 - ONS workforce jobs by SIC 2007 section (OGL; LMS series, also JOBS02), June each year 1978-2026: A-B, C-F, G-T.
   Over 1978-2016 they differ from Figure 2a by at most `compare` points (a later vintage of the same figures).
 - CSO CNNL1 (CC BY 4.0): Ireland (the state) at each census 1926-1996; mining moved from industry to the primary sector.
+  Then CNA26 (censuses 2002-2016, by industrial group) and F7040 (2011-2022, by detailed NACE group; usually resident
+  and present only), the industry not stated left out; the two agree within `compare_ie` points in 2011 and 2016.
 - Keibek 2017 (quoted per figure in estimates.json): England and Wales 1601-1851, men and women (Table 20), and the
   male estimates for 1381 and c.1525 (Tables 22-23), drawn as estimate dots.
 
@@ -25,7 +27,10 @@ ONS_FIG = ("https://www.ons.gov.uk/generator?uri=/economy/nationalaccounts/uksec
            "april2019/longtermtrendsinukemployment1861to2018/a6452817&format=csv")
 LMS_URL = ("https://www.ons.gov.uk/generator?format=csv&uri=/employmentandlabourmarket/peopleinwork/"
            "employmentandemployeetypes/timeseries/{cdid}/lms")
-CSO_URL = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CNNL1/CSV/1.0/en"
+CSO_URL = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/{table}/CSV/1.0/en"
+CNA26_PRIMARY = {"Agriculture, forestry and fishing", "Mining, quarrying and turf production"}
+CNA26_SECONDARY = {"Manufacturing industries", "Electricity, gas and water supply", "Construction"}
+NOT_STATED = "Industry not stated"
 SECTORS = ["primary", "secondary", "tertiary"]
 LMS = {"primary": ["jwr5", "jwr6"], "secondary": ["jwr7", "jwr8", "jwr9", "jws2"], "tertiary": ["jwt8"]}
 LMS_TOTAL = "dydc"
@@ -73,6 +78,52 @@ def cso(path):
     return out
 
 
+def _shares(prim, sec, ter):
+    total = prim + sec + ter
+    return tuple(round(v / total * 100, 2) for v in (prim, sec, ter))
+
+
+def cso_cna26(path):
+    """{year: shares} from CNA26 (censuses 2002-2016, all aged 15 and over at work), industry not stated left out."""
+    n = {}
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            if r["Age Group"] == "15 years and over" and r["Sex"] == "Both sexes":
+                n.setdefault(int(r["Year"]), {})[r["Industrial Group"]] = int(r["VALUE"])
+    out = {}
+    for y, g in sorted(n.items()):
+        stated = g["All industries"] - g[NOT_STATED]
+        prim = sum(g[k] for k in CNA26_PRIMARY)
+        sec = sum(g[k] for k in CNA26_SECONDARY)
+        out[y] = _shares(prim, sec, stated - prim - sec)
+    return out
+
+
+def cso_f7040(path):
+    """{year: shares} from F7040's detailed groups, in NACE order: primary to 09, making and building to 43."""
+    rows = {}
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            if r["Means of Travel"] == "All means of travel":
+                rows.setdefault(int(r["Census Year"]), []).append((r["Detailed Industrial Group"], int(r["VALUE"])))
+    out = {}
+    for y, g in sorted(rows.items()):
+        names = [n for n, _ in g]
+        i1 = names.index("Mining support service activities (09)") + 1
+        i2 = names.index("Other specialised construction activities (439)") + 1
+        i3 = names.index(NOT_STATED)
+        parts = [sum(v for _, v in g[a:b]) for a, b in ((0, i1), (i1, i2), (i2, i3))]
+        assert sum(parts) + g[i3][1] == g[-1][1], y               # the groups add up to the total at work
+        out[y] = _shares(*parts)
+    return out
+
+
+def compare_ie(cna, det):
+    """The largest difference (points) between CNA26 and F7040 in the census years both give."""
+    both = sorted(set(cna) & set(det))
+    return max(abs(cna[y][i] - det[y][i]) for y in both for i in range(3)), both
+
+
 def compare(fig, now):
     """The largest difference (points) between Figure 2a and the workforce jobs shares in the years both give."""
     both = [y for y in fig if y in now]
@@ -107,9 +158,11 @@ TITLES = {"primary": ("Working in farming, fishing and mining", "farming, fishin
 NOTE = ("Share of people in work in {what}. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of "
         "England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from {first} "
         "(June each year), which differ from the earlier figures by at most {diff} points over {c0}-{c1}. Ireland (the "
-        "state): the CSO's census counts 1926-1996. Dots: Keibek's estimates for England and Wales, men and women "
+        "state): the CSO's census counts 1926-{ie_last} (from 2002 those whose industry was not stated left out; 2022 "
+        "from the table of those usually resident and present, within {ie_diff} points of the full count in 2011 and "
+        "2016). Dots: Keibek's estimates for England and Wales, men and women "
         "1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and "
-        "coroners' reports). Mining counts with farming throughout. {facts}")
+        "coroners' reports). Mining counts with farming throughout. Northern Ireland is in the UK line. {facts}")
 
 
 def _facts(sec, uk, ie, est):
@@ -118,18 +171,20 @@ def _facts(sec, uk, ie, est):
     if sec == "primary":
         return (f"In 1601 about {e[1601]:.0f}% of the adult labour force of England and Wales worked on the land or in "
                 f"mines, {e[1851]:.1f}% in 1851; {uk[1920][i]:.1f}% of the UK's in 1920 and {uk[max(uk)][i]:.1f}% in "
-                f"{max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996.")
+                f"{max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, "
+                f"{ie[max(ie)][i]:.1f}% in {max(ie)}.")
     if sec == "secondary":
         peak = max((y for y in uk), key=lambda y: uk[y][i])
         return (f"Keibek puts making and building at {e[1601]:.1f}% in 1601 and {e[1701]:.1f}% in 1701, above "
                 f"farming and mining from the 1670s, before the factories. The UK's share peaked at {uk[peak][i]:.1f}% in {peak} and was "
-                f"{uk[max(uk)][i]:.1f}% in {max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996.")
+                f"{uk[max(uk)][i]:.1f}% in {max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in "
+                f"1996, {ie[max(ie)][i]:.1f}% in {max(ie)}.")
     return (f"Services grew almost without a break: {e[1601]:.1f}% in 1601 and {e[1851]:.1f}% in 1851 (England and "
             f"Wales), {uk[1920][i]:.1f}% of UK workers in 1920 and {uk[max(uk)][i]:.1f}% in {max(uk)}. Ireland: "
-            f"{ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996.")
+            f"{ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, {ie[max(ie)][i]:.1f}% in {max(ie)}.")
 
 
-def write(uk, ie, est, diff, c0, c1, log=print):
+def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print):
     rows = []
     for i, sec in enumerate(SECTORS):
         _csv(f"work_{sec}_uk", [(y, v[i]) for y, v in sorted(uk.items())])
@@ -137,13 +192,15 @@ def write(uk, ie, est, diff, c0, c1, log=print):
         _est_csv(f"work_{sec}_est", est[sec])
         title, what = TITLES[sec]
         main = _row(f"work_{sec}_uk", title, "United Kingdom", "% of people in work",
-                    ["ons_longterm_employment", "ons_workforce_jobs", "cso_cnnl1", "est_work_keibek2017"],
+                    ["ons_longterm_employment", "ons_workforce_jobs", "cso_cnnl1", "cso_census_industry",
+                     "est_work_keibek2017"],
                     "United Kingdom; Ireland; England and Wales (estimates)",
-                    NOTE.format(what=what, first=FIRST_LMS, diff=f"{diff:.2f}", c0=c0, c1=c1,
+                    NOTE.format(what=what, first=FIRST_LMS, diff=f"{diff:.2f}", c0=c0, c1=c1, ie_last=max(ie),
+                                ie_diff=f"{ie_diff:.2f}",
                                 facts=_facts(sec, uk, ie, est[sec])),
                     [f"work_{sec}_ie", f"work_{sec}_est"], unit="%")
         main["gap"] = 5                                       # 1939-47 dotted
-        ire = _row(f"work_{sec}_ie", f"{title}: Ireland", "Ireland (census)", "% of people at work", ["cso_cnnl1"],
+        ire = _row(f"work_{sec}_ie", f"{title}: Ireland", "Ireland (census)", "% of people at work", ["cso_cnnl1", "cso_census_industry"],
                    "Ireland (the state)", unit="%")
         dots = _row(f"work_{sec}_est", f"{title}: estimates", "England and Wales (Keibek)", "% of the labour force",
                     ["est_work_keibek2017"], "England and Wales", unit="%")
@@ -172,9 +229,15 @@ def run(log=print):
     fig = ons_figure(_ons(ONS_FIG, "ons_fig2a.csv", log))
     cdids = [c for cs in LMS.values() for c in cs] + [LMS_TOTAL]
     now = lms_shares({c: lms(_ons(LMS_URL.format(cdid=c), f"lms_{c}.csv", log)) for c in cdids})
-    ie = cso(_download(CSO_URL, "cso_cnnl1.csv", log, "work"))
+    ie = cso(_download(CSO_URL.format(table="CNNL1"), "cso_cnnl1.csv", log, "work"))
+    cna = cso_cna26(_download(CSO_URL.format(table="CNA26"), "cso_cna26.csv", log, "work"))
+    det = cso_f7040(_download(CSO_URL.format(table="F7040"), "cso_f7040.csv", log, "work"))
+    ie_diff, both = compare_ie(cna, det)
+    ie.update(cna)
+    ie.update({y: v for y, v in det.items() if y > max(cna)})
     diff, c0, c1 = compare(fig, now)
-    write(joined(fig, now), ie, estimates(), diff, c0, c1, log)
+    write(joined(fig, now), ie, estimates(), diff, c0, c1, ie_diff, log)
+    log(f"Ireland: CNA26 and F7040 differ by at most {ie_diff:.2f} points in {both}")
 
 
 if __name__ == "__main__":

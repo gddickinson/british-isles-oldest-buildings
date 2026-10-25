@@ -1256,3 +1256,29 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   expects 1926-2022); ui_check `change_work` (now looks for 1926-2022), `change_trade_joined`, `map` pass; screenshot
   checked. Hosted copy and release not updated.
 - Next: C5c2b (England and Wales 1861-1911 from the census reports) or C5d (prices and real wages).
+
+## 2026-10-25 — C5c2b split; C5c2b1: England and Wales at the censuses of 1881-1911
+- C5c2b split: 1881-1911 from the 1911 Summary Tables (done, C5c2b1); 1861 and 1871 from their own reports (C5c2b2).
+- Source: Census of England and Wales 1911, Summary Tables (Cd. 7929, 1915; public domain), Internet Archive
+  `censusofenglandw1911grea`. The OCR of the occupation tables is unusable, so read from the page images
+  (`page/n<leaf>_w2000.jpg`; leaves found from the hOCR search text): Table 65 on leaves 283, 285, 287 (pp. 274-278),
+  Table 64 on leaf 281 (p. 272, printed sideways, by sex).
+- `data/curated/change/data/work_census_ew.csv` (316 figures, edition/leaf/page/table, notes on three cells). New
+  `bidb/change_work_ew.py` (156 lines): `check` tests the 22 orders against the total occupied, the lines of orders
+  XX and XXII against their order, and Table 64's food, tobacco and drink lines (males + females) against Table 65's
+  lines. It found three misreadings, all corrected: order I 1911 (289,261, read 239,261), defence 1901 (168,238;
+  the persons figure is smudged, the order has no women) and greengrocers 1901 women (11,927); chocolate and grocers
+  1901 women are misprinted and were rebuilt from the under-15 and over-15 columns. All sums now agree.
+- Grouping: farming, fishing and mining = orders VII-IX; making and building = X-XXI less dealers + engine drivers;
+  services = I-VI + dealers (metals and machines, drapers; food, tobacco and drink dealers and inns from Table 64,
+  the census's own maker/dealer headings: butchers and bakers (dealers) to services, millers, curers, bread makers,
+  brewers, maltsters, distillers to making) + general shopkeepers, pawnbrokers, costermongers. Left out: general
+  labourers and order XXII's "others" (6.1% in 1881, 2.8% in 1911). 1881-91 brackets (millers with corn dealers,
+  cocoa makers with grocers, tobacco makers with tobacconists...) shared out as in 1901.
+- Results (England and Wales): farming, fishing and mining 18.2% (1881), 16.4%, 14.7%, 15.0% (1911); making and
+  building 42.6, 41.9, 43.3, 41.7%; services 39.2, 41.7, 42.0, 43.3%.
+- `change_work`: the census points join Keibek's dots (`with_census`; the graphs already draw three lines), label
+  "England and Wales (Keibek; census)", source `census_ew_1911`, notes and facts give 1881 and 1911.
+- Tests 248 OK (8 new); ui_check `change_work` (now looks for the censuses), `change_trade_joined`, `map` pass;
+  screenshot checked. Hosted copy and release not updated.
+- Next: C5c2b2 (1861 and 1871 from their own reports) or C5d (prices and real wages).

@@ -10,7 +10,8 @@ farming, as the ONS and Keibek count it).
   Then CNA26 (censuses 2002-2016, by industrial group) and F7040 (2011-2022, by detailed NACE group; usually resident
   and present only), the industry not stated left out; the two agree within `compare_ie` points in 2011 and 2016.
 - Keibek 2017 (quoted per figure in estimates.json): England and Wales 1601-1851, men and women (Table 20), and the
-  male estimates for 1381 and c.1525 (Tables 22-23), drawn as estimate dots.
+  male estimates for 1381 and c.1525 (Tables 22-23), drawn as estimate dots; with them the censuses of England and
+  Wales 1881-1911 (bidb.change_work_ew, from the 1911 Summary Tables).
 
     python -m bidb.change_work   → data/curated/change/data/work_*.csv + series.json entries
                                    (then python -m bidb.change_series)
@@ -20,6 +21,7 @@ import json
 import re
 import time
 
+from . import change_work_ew
 from .change_firms import DATA
 from .change_registers import _csv, _download, _row
 
@@ -145,6 +147,11 @@ def estimates():
     return out
 
 
+def with_census(est, census):
+    """Keibek's dots with the censuses of England and Wales 1881-1911 after them."""
+    return {sec: sorted(est[sec] + census[i], key=lambda r: r[0]) for i, sec in enumerate(SECTORS)}
+
+
 def _est_csv(sid, rows):
     with open(DATA / f"{sid}.csv", "w", newline="") as f:
         w = csv.writer(f)
@@ -162,7 +169,9 @@ NOTE = ("Share of people in work in {what}. United Kingdom: the ONS's yearly sha
         "from the table of those usually resident and present, within {ie_diff} points of the full count in 2011 and "
         "2016). Dots: Keibek's estimates for England and Wales, men and women "
         "1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and "
-        "coroners' reports). Mining counts with farming throughout. Northern Ireland is in the UK line. {facts}")
+        "coroners' reports); then the censuses of 1881-1911 (all occupied aged 10 and over, by occupation rather than "
+        "industry: dealers the census shows apart moved to services, general labourers and undefined workers left "
+        "out). Mining counts with farming throughout. Northern Ireland is in the UK line. {facts}")
 
 
 def _facts(sec, uk, ie, est):
@@ -170,17 +179,19 @@ def _facts(sec, uk, ie, est):
     e = {r[0]: r[1] for r in est}
     if sec == "primary":
         return (f"In 1601 about {e[1601]:.0f}% of the adult labour force of England and Wales worked on the land or in "
-                f"mines, {e[1851]:.1f}% in 1851; {uk[1920][i]:.1f}% of the UK's in 1920 and {uk[max(uk)][i]:.1f}% in "
+                f"mines, {e[1851]:.1f}% in 1851; the censuses give {e[1881]:.1f}% in 1881 and {e[1911]:.1f}% in 1911; "
+                f"{uk[1920][i]:.1f}% of the UK's in 1920 and {uk[max(uk)][i]:.1f}% in "
                 f"{max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, "
                 f"{ie[max(ie)][i]:.1f}% in {max(ie)}.")
     if sec == "secondary":
         peak = max((y for y in uk), key=lambda y: uk[y][i])
         return (f"Keibek puts making and building at {e[1601]:.1f}% in 1601 and {e[1701]:.1f}% in 1701, above "
-                f"farming and mining from the 1670s, before the factories. The UK's share peaked at {uk[peak][i]:.1f}% in {peak} and was "
+                f"farming and mining from the 1670s, before the factories; the censuses of England and Wales give "
+                f"{e[1881]:.1f}% in 1881 and {e[1911]:.1f}% in 1911. The UK's share peaked at {uk[peak][i]:.1f}% in {peak} and was "
                 f"{uk[max(uk)][i]:.1f}% in {max(uk)}. Ireland: {ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in "
                 f"1996, {ie[max(ie)][i]:.1f}% in {max(ie)}.")
     return (f"Services grew almost without a break: {e[1601]:.1f}% in 1601 and {e[1851]:.1f}% in 1851 (England and "
-            f"Wales), {uk[1920][i]:.1f}% of UK workers in 1920 and {uk[max(uk)][i]:.1f}% in {max(uk)}. Ireland: "
+            f"Wales), {e[1881]:.1f}% in 1881 and {e[1911]:.1f}% in 1911 at the censuses, {uk[1920][i]:.1f}% of UK workers in 1920 and {uk[max(uk)][i]:.1f}% in {max(uk)}. Ireland: "
             f"{ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, {ie[max(ie)][i]:.1f}% in {max(ie)}.")
 
 
@@ -193,7 +204,7 @@ def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print):
         title, what = TITLES[sec]
         main = _row(f"work_{sec}_uk", title, "United Kingdom", "% of people in work",
                     ["ons_longterm_employment", "ons_workforce_jobs", "cso_cnnl1", "cso_census_industry",
-                     "est_work_keibek2017"],
+                     "est_work_keibek2017", "census_ew_1911"],
                     "United Kingdom; Ireland; England and Wales (estimates)",
                     NOTE.format(what=what, first=FIRST_LMS, diff=f"{diff:.2f}", c0=c0, c1=c1, ie_last=max(ie),
                                 ie_diff=f"{ie_diff:.2f}",
@@ -202,8 +213,8 @@ def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print):
         main["gap"] = 5                                       # 1939-47 dotted
         ire = _row(f"work_{sec}_ie", f"{title}: Ireland", "Ireland (census)", "% of people at work", ["cso_cnnl1", "cso_census_industry"],
                    "Ireland (the state)", unit="%")
-        dots = _row(f"work_{sec}_est", f"{title}: estimates", "England and Wales (Keibek)", "% of the labour force",
-                    ["est_work_keibek2017"], "England and Wales", unit="%")
+        dots = _row(f"work_{sec}_est", f"{title}: estimates", "England and Wales (Keibek; census)", "% of the labour force",
+                    ["est_work_keibek2017", "census_ew_1911"], "England and Wales", unit="%")
         dots["style"] = "estimates"
         for r in (main, ire, dots):
             r["zero"] = True
@@ -236,7 +247,12 @@ def run(log=print):
     ie.update(cna)
     ie.update({y: v for y, v in det.items() if y > max(cna)})
     diff, c0, c1 = compare(fig, now)
-    write(joined(fig, now), ie, estimates(), diff, c0, c1, ie_diff, log)
+    census = change_work_ew.load()
+    bad = change_work_ew.check(census)
+    if bad:
+        raise ValueError("census of England and Wales: " + "; ".join(bad))
+    est = with_census(estimates(), change_work_ew.points(census))
+    write(joined(fig, now), ie, est, diff, c0, c1, ie_diff, log)
     log(f"Ireland: CNA26 and F7040 differ by at most {ie_diff:.2f} points in {both}")
 
 

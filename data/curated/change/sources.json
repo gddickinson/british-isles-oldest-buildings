@@ -1030,5 +1030,16 @@
   "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CNA26/CSV/1.0/en",
   "used": "Ireland (the state): shares of the population at work in farming and mining, making and building, and services at the censuses of 2002-2016 (CNA26) and 2022 (F7040, detailed NACE groups); industry not stated left out; the two tables agree within 0.40 points in 2011 and 2016 (roadmap C5c2a)",
   "checked": "2026-10-25, CSVs downloaded (HTTP 200)"
+ },
+ "census_ew_1911": {
+  "short": "Census of England and Wales 1911, Summary Tables (1915), Tables 64-65: occupations 1881-1911",
+  "publisher": "General Register Office (HMSO)",
+  "citation": "Census of England and Wales, 1911 (10 Edward 7 and 1 George 5, ch. 27). Summary Tables. Cd. 7929. London: HMSO, 1915. Table 64, Occupations of males and females at each of the four censuses, 1881, 1891, 1901 and 1911 (p. 272); Table 65, Occupations (condensed list) of persons, males and females aged 10 years and upwards, 1881-1911 (pp. 274-278). Page images: Internet Archive, censusofenglandw1911grea.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/censusofenglandw1911grea",
+  "used": "England and Wales at the censuses of 1881-1911: shares of those occupied in farming, fishing and mining, making and building, and services, read from the page images (data/curated/change/data/work_census_ew.csv, every order checked against the total occupied and every split line against its total); dealers of metals, drapery, food, tobacco and drink moved to services; general labourers and undefined workers left out (roadmap C5c2b1)",
+  "checked": "2026-10-25, page images read (leaves 281, 283, 285, 287)"
  }
 }

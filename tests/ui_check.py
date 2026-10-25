@@ -53,7 +53,7 @@ PAGES = {
     "change_trade_goods": ("/change", r"(?s)Textile exports, 1846-1938.*Coal, iron and machinery exports, 1846-1938.*Main exports, share of all UK exports"),
     "change_trade_imports": ("/change", r"(?s)Food imports, 1854-1938.*Raw material imports, 1854-1938.*Main imports, share of all imports"),
     "change_trade_atlas": ("/change", r"(?s)Main exports by SITC division, share of all UK exports, 1962-2024.*Bustos-Yildirim.*Main imports by SITC division, share of all UK imports, 1962-2024"),
-    "change_work": ("/change", r"(?s)Working in farming, fishing and mining.*Keibek.*1926-2022.*Working in making and building.*Working in services"),
+    "change_work": ("/change", r"(?s)Working in farming, fishing and mining.*1926-2022.*Keibek.*censuses of 1881-1911.*Working in making and building.*Working in services"),
     "change_trade_joined": ("/change", r"(?s)Main exports, share of all UK exports, 1846-2024.*Breaks in definition.*1975: From 1975 the Growth Lab.*Main imports, share of all UK imports, 1854-2024"),
     "change_trade_sitc": ("/change", r"(?s)Textile exports by division, 1953-1974.*Standard International Trade Classification.*Coal, iron and machinery exports by division, 1953-1974.*Main imports by division, share of all imports, 1953-1974.*Overseas trade at the prices of the time, 1953-1974"),
     "change_trade_groups": ("/change", r"(?s)Textile exports by group, 1938-1952.*Annual Abstract of Statistics.*Coal, iron and machinery exports by group, 1938-1952.*Main imports by group, share of all imports, 1938-1952.*Overseas trade at the prices of the time, 1938-1952"),

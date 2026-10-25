@@ -381,11 +381,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       in 2006, 17.4% in 2011 (construction 215,184 people in 2006, 90,357 in 2011; the LFS shows the same fall),
       18.6% in 2022; services 77.4% in 2022. The LFS (QLF03, yearly from 1998) not drawn: mining is not separate in it.
       Northern Ireland not drawn on its own: it is in the UK line, and the charts draw at most three lines.
-- [ ] C5c2b England and Wales 1861-1911 grouped into the three sectors from the census reports (public domain, page
-      images on the Internet Archive): the 1911 Summary Tables' Table 64 (occupations of males and females at the four
-      censuses 1881-1911, item `censusofenglandw1911grea`), then 1861 and 1871 from their own reports; dealers in the
-      making orders (IX-XXI) moved to services, as the 1911 report's own Group B does; as dots or a dotted line, with
-      the grouping stated.
+- [x] C5c2b1 (2026-10-25; C5c2b split) England and Wales at the censuses of 1881-1911 (new `bidb/change_work_ew.py`),
+      read from the page images of the 1911 Summary Tables (Cd. 7929, public domain; Internet Archive
+      `censusofenglandw1911grea`): Table 65 (leaves 283, 285, 287; the 22 orders, 1911 classification carried back) and
+      Table 64 (leaf 281: the food, tobacco and drink lines by sex, makers vs dealers; 1881-91 brackets shared out as in
+      1901). Every order adds to the total occupied and every split line to its printed total (three misreadings found
+      that way and corrected: order I 1911 289,261; defence 1901 168,238; greengrocers 1901 11,927, with two misprinted
+      totals rebuilt from their under-15 and over-15 parts). Dealers the tables show apart (metals and machines,
+      drapers, food, tobacco, drink, inns) moved to services; general labourers and order XXII's undefined others left
+      out (6.1% of the occupied in 1881, 2.8% in 1911); dealers the condensed list joins to their trade stay there.
+      Drawn as dots after Keibek's (the graphs already draw three lines). Farming, fishing and mining 18.2% in 1881,
+      15.0% in 1911; making and building 42.6%, 43.3% (1901), 41.7%; services 39.2%, 43.3%.
+- [ ] C5c2b2 England and Wales 1861 and 1871 from their own census reports (the orders of 1861-71 differ from 1881's;
+      regroup to the same three sectors and say how); 1851 if the 1851 report's tables can be grouped the same way, to
+      meet Keibek's last figure.
 - [ ] C5c2c Scotland and Ireland 1861-1911 the same way (Irish census returns 1911 by province on the Internet
       Archive, `op1256115-1001` etc.); Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become
       available.

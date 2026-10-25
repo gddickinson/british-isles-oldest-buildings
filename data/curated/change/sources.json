@@ -941,5 +941,14 @@
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
   "used": "Exports of coal (with coke), iron and steel, machinery, cotton and woollen yarns and manufactures; imports of grain and flour, raw cotton, wool and timber; all imports and exports of UK produce, 1938-1952 (£ million), read from the page images (edition, leaf, page and table per figure in data/trade_groups_abstract_uk.csv); each year from the latest edition that prints it",
   "checked": "2026-10-25 (C5b2d1): 858 figures read from the scans; every edition's five class totals agree with its printed totals of imports and exports (within rounding); the goods used are printed the same in another edition (1939-1940 in Nos. 85 and 86) or were read again from enlarged crops (No. 90, 1946-1952); differences between editions are revisions (class totals move with them)"
+ },
+ "annual_abstract_sitc_uk": {
+  "short": "Annual Abstract of Statistics, trade by SITC (R) sections and divisions",
+  "citation": "Central Statistical Office, Annual Abstract of Statistics (HMSO; figures of the Board of Trade, later the Department of Trade and Industry and the Department of Trade), tables of the value of imports and of exports analysed by sections and divisions of the Standard International Trade Classification, Revised: No. 104 (1967), tables 270 and 271, pp. 222-224; No. 108 (1971), tables 272 and 273, pp. 244-246; No. 112 (1975), tables 303 and 304, pp. 285-287; Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published 1967-1975",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "used": "Exports of textile yarn and fabrics, coal, iron and steel and machinery; imports of cereals, sugar, coffee, tea and cocoa, wood and textile fibres; all imports and exports, 1958-1974 (£ million), read from the page images (edition, leaf, page and table per figure in data/trade_sitc_abstract_uk.csv); each year from the latest edition that prints it",
+  "checked": "2026-10-25 (C5b2d2a): 3,294 figures read from the scans; every division checked against its section's total and every section against the grand total (one printed inconsistency: imports of fuels 1969, 906.5 against parts of 906.2, in Nos. 108 and 112); imports 1962-1965 in Nos. 104 and 108 and both sides 1966-1969 in Nos. 108 and 112 agree figure for figure, only each edition's last year (a first estimate) being revised; exports include re-exports from 1962 (Nos. 108 and 112), of UK produce only in No. 104"
  }
 }

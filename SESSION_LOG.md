@@ -1126,3 +1126,26 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_trade_imports`, `change_trade_values`, `map` pass; screenshot of the graphs checked. Hosted copy and release
   not updated.
 - Next: C5b2d2 (1953-~1977, SITC tables from No. 91).
+
+## 2026-10-25 — C5b2d2a: the main goods 1958-1974 by SITC (R) division
+- Edition ranges found from the OCR (Nos. 91-114 cached in `<cache>/stat_abstract/`): No. 91 begins SITC (1954),
+  No. 101 SITC (R); each edition prints nine years (No. 104: 1958-66, No. 108: 1962-70, No. 112: 1966-74).
+  C5b2d2 split: No. 102 and earlier leave out precious stones (1958 imports 3,747.5 against No. 104's 3,833.5 £m),
+  so 1953-57 is C5b2d2b.
+- Read from the page images (`<cache>/stat_abstract_img/n<edition>_<leaf>.jpg`): No. 104 tables 270-271 (leaves
+  236-238, pp. 222-224), No. 108 tables 272-273 (leaves 260-262, pp. 244-246), No. 112 tables 303-304 (leaves 303-305,
+  pp. 285-287). Every division of every section: 3,294 figures in `data/curated/change/data/trade_sitc_abstract_uk.csv`.
+- Checks: divisions against section totals (rounding allowed per part), sections against the total and the 5-8
+  subtotal: all pass but 1969 fuel imports (printed 906.5, parts 906.2, in Nos. 108 and 112; crop checked; `KNOWN`).
+  Overlaps: imports 1962-65 in Nos. 104 and 108 and both sides 1966-69 in Nos. 108 and 112 equal in every figure
+  (No. 108 puts furniture imports in "other"); only each edition's last year is revised.
+- Exports: re-exports counted with exports from 1970 and restated back to 1962 in Nos. 108 and 112; No. 104 is UK
+  produce only, used for 1958-61. 1962: 4,062.3 with re-exports, 3,904.6 without.
+- New `bidb/change_trade_sitc.py` (240 lines): 15 series, 6 graphs (textiles, coal/iron/machinery, export shares,
+  main imports, import shares, totals). Textiles 7.7% of exports in 1958, 4.5% in 1974; coal 31.4 £m → 14.0 in 1967;
+  machinery 773.8 → 4,213.0 £m; cereals, sugar, coffee/tea/cocoa 13.6% of imports in 1958, 5.6% in 1974.
+- Source `annual_abstract_sitc_uk`, DATA_LICENSE.md row (public domain: published 1967-75), INTERFACE.md; tests 218
+  OK (5 new); ui_check `change_trade_sitc` (new), `change_trade_groups`, `change_trade_hmrc`, `change_trade_goods`,
+  `map` pass; screenshot of the graphs checked. Hosted copy and release not updated.
+- Nos. 113 (1976) onwards are still Crown copyright under the 50-year rule: 1975+ needs the OGL question (C5b2d3).
+- Next: C5b2d2b (1953-57: No. 102 and the original SITC of Nos. 91-100).

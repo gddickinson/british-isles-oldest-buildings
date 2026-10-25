@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 213
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 228
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -302,9 +302,23 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       group. 15 series, 6 graphs: cotton goods 34.2 £m in 1943, 209.4 in 1951; machinery 27.9 → 421.7 £m 1943-52; coal
       exports 42.3 £m in 1939, 2.7 in 1947; cotton and wool 16.2% of exports in 1938, 10.7% in 1952; all exports 471.4 →
       2,549.6 £m. 1942-45 leave out munitions traded by government departments.
-- [ ] C5b2d2 1953-~1977 from the SITC tables (Nos. 91 onwards): divisions nearest the goods (65 textile yarn and
-      fabrics, 67 iron and steel, 71-72 machinery, 32 coal; 04 cereals, 06 sugar, 07 coffee, tea and cocoa (tea if shown
-      apart), 24 wood, 26 textile fibres), with the overlap year of each change of classification on both bases.
+- C5b2d2 1953-~1977 from the SITC tables (Nos. 91 onwards). Split 2026-10-25: No. 101 (1964) moves to SITC (R);
+      Nos. 104 onwards include precious stones in every year (in the accounts from 1965, estimated before) while
+      No. 102 and earlier leave them out (1958 imports 3,747.5 against 3,833.5 £m, nearly all in division 66); Nos.
+      108 onwards count re-exports with exports (from 1970, restated back to 1962).
+- [x] C5b2d2a (2026-10-25) 1958-1974 by SITC (R) division (new `bidb/change_trade_sitc.py`), read from Nos. 104
+      (1958-66), 108 (1962-70) and 112 (1966-74): every division of every section, 3,294 figures; every division checked
+      against its section's total and every section against the grand total (one misprint, 1969 fuel imports, 906.5
+      against parts of 906.2 in both editions); imports 1962-65 (Nos. 104/108) and both sides 1966-69 (Nos. 108/112)
+      equal figure for figure, so each year from the latest of the three; exports of UK produce to 1961, with
+      re-exports from 1962 (1962: 3,904.6 against 4,062.3 £m; coal unchanged, machinery 1,086.6 against 1,110.5). 15
+      series, 6 graphs: textile yarn and fabrics 250.6 £m in 1958, 745.8 in 1974 (7.7% → 4.5% of exports); coal 31.4
+      → 14.0 in 1967; machinery (71-72) 773.8 → 4,213.0; cereals 225.4 → 593.0; sugar 101.4, 173.0 in 1963, 368.9 in
+      1974; oil imports 1,678.3 → 4,533.3 £m 1973-74. Nos. 113 (1976) onwards are still in Crown copyright under the
+      50-year rule (No. 113 out of it from 2027): 1975 and later need the OGL question settled (C5b2d3).
+- [ ] C5b2d2b 1953-1957: No. 102 (1956-64, SITC (R) without precious stones; 1958 on both bases against No. 104) and
+      the original SITC of Nos. 91-100 (1953-55; No. 100 gives 1954-62, No. 98 1952-60), with the overlap years on both
+      classifications. Page leaves: No. 102 imports 230-231, exports 231-232; No. 100 220-221; No. 98 225-226.
 - [ ] C5b2d3 1978-1999 (SITC revisions 2 and 3; the missing editions from the other scans or the later edition's
       ten-year runs).
 - [ ] C5b2d4 Join the eras: graphs across 1846-2025 with the breaks of definition marked (1912, 1938, 1953, 2000);

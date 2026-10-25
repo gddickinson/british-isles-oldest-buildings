@@ -1404,3 +1404,12 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `stat_abstract_shipping_uk`. The older multi-volume scans' page views did not match their OCR leaf numbers, so
   shipping before 1884 is left to C5e2 with steam power, banks and Irish patents.
 - Tests 292 OK (3 new).
+
+## 2026-10-25 — C6: innovations and firsts
+- `data/curated/trade/innovations.json`: 36 inventions, discoveries and firsts (1701 Tull's seed drill to 1996 Dolly),
+  placed where made, tried or first used, each with Wikipedia quotes fetched and checked (45 of 45 found by
+  `bidb.evidence --check --new`); 5 marked open. New list `innovations` in bidb.oldest_lists, new place group
+  "Innovations & firsts" (place_kinds, render_places.js, static_places.js, `--g23` in style.css); `made_at` titles
+  resolved to Wikidata ids and linked to the building or place (`link_made_at`, 15 of 36), shown in place details
+  as "Made or first used at". Places written to the DB by `python -m bidb.oldest_lists` (36 new).
+- Tests 294 OK (2 new); ui_check `innovations` (new), `oldest_civic` pass. Hosted copy and release not updated.

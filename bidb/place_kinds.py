@@ -11,7 +11,7 @@ PLACE_GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Park
                 "Legends & literature", "Maritime heritage", "Victorian era", "Underground",
                 "Military heritage", "Museums & collections", "Bridges",
                 "Excavations", "Nature & deep time", "Graves & burial grounds", "Markets & trade",
-                "Infrastructure & utilities", "Sport & leisure", "Public institutions"]
+                "Infrastructure & utilities", "Sport & leisure", "Public institutions", "Innovations & firsts"]
 
 # Prehistoric / early monument types. Items with a photo or a Wikipedia article join the main
 # building catalogue; the rest are shown as "Archaeological sites" places.

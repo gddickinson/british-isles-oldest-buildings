@@ -469,9 +469,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       FLE0101 1997-); steam power as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks
       (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual reports 2002-, quote
       figures) and 1916-94 grants.
-- [ ] C6 Innovations: inventions and firsts made in the isles (Wikidata inventor and place, researched list with
-      sources), on the map and the slider, linked to the buildings and places where they were made or used
-      (mills, works, mines, engine houses, exchanges).
+- [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
+      (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and
+      engines, iron and materials, textiles, transport, communication and computing, science and medicine, farming,
+      money and everyday life), each placed where it was made, tried or first used and cited with exact quotes (all 45
+      found by `bidb.evidence --check`; 5 left "open" where the date or place needs a better source, rivals named in
+      the notes); new place group "Innovations & firsts" (💡, colour 23) on the map, the Places page and the slider;
+      `made_at` linked to the building or place (Cromford Mill, Hall i' th' Wood, the Iron Bridge, Cragside, St Mary's
+      Hospital, Bletchley Park, Penydarren Ironworks, Birr Castle, Maynooth...; 15 of 36) shown as "Made or first used
+      at"; section on the Oldest page.
+- [ ] C6b Wikidata inventions in the isles (inventor P61 with a place of discovery P189 or of creation): the first
+      query (2026-10-25) did not finish within the endpoint's time; narrow it (by class of invention or by year).
 - [ ] C7 Laws and institutions as dated events with citations: borough and guild charters, the Statute of the
       Staple, Navigation Acts, the Bubble Act, enclosure, Corn Laws and their repeal, Combination Acts, joint-stock
       and limited-liability Acts (1844, 1855–56), Factory Acts, co-operatives (Rochdale 1844), trade unions

@@ -7,7 +7,7 @@
   const GROUPS = ["Battles & sieges", "Archaeological sites", "Lost places", "Parks, gardens & trees",
     "Industrial heritage", "Finds & treasures", "Plaques & people", "History events",
     "Legends & literature", "Maritime heritage", "Victorian era", "Underground", "Military heritage", "Museums & collections", "Bridges", "Excavations",
-    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities", "Sport & leisure", "Public institutions"];
+    "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities", "Sport & leisure", "Public institutions", "Innovations & firsts"];
 
   // a place's full row as the export leaves it: label, group, source and Wikidata link are put back
   const expand = (p, kinds) => {            // left out when they repeat the kind or the id (static_places.py)

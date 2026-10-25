@@ -1,0 +1,940 @@
+{
+ "about": "Innovations and firsts made in the isles (roadmap C6, 2026-10-25): inventions, discoveries and firsts placed where they were made, tried or first used, each with sources and exact quotes (checked by python -m bidb.evidence --check). `made_at` names the Wikipedia article of the building or place where it happened, linked to its catalogue record or place when the build has it (bidb.innovations). Claims of a world first are those of the source; the evidence notes say where an earlier rival exists. Verdict 'open' where a date or place needs a better source.",
+ "entries": [
+  {
+   "category": "Farming, money and everyday life",
+   "name": "Jethro Tull's seed drill",
+   "wikipedia_title": "Seed drill",
+   "lat": 51.389,
+   "lon": -1.508,
+   "nation": "England",
+   "location": "Prosperous Farm, near Hungerford, Berkshire",
+   "age_text": "1701",
+   "year": 1701,
+   "claim": "Jethro Tull refined the seed drill in 1701",
+   "evidence": "Seed drills were older (Sumer, China); Tull's horse-drawn drill is the one credited in England. The farm is placed by its locality.",
+   "sources": [
+    {
+     "title": "Wikipedia: Seed drill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Seed_drill",
+     "locator": "article text",
+     "quote": "the seed drill was further refined by Jethro Tull in 1701 in the Agricultural Revolution"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Iron, steel and materials",
+   "name": "Coke-fired blast furnace",
+   "wikipedia_title": "Abraham Darby I",
+   "lat": 52.639,
+   "lon": -2.492,
+   "nation": "England",
+   "location": "Old Furnace, Coalbrookdale, Shropshire",
+   "age_text": "1709",
+   "year": 1709,
+   "claim": "Abraham Darby smelted iron with coke at Coalbrookdale in 1709",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Abraham Darby I",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Abraham_Darby_I",
+     "locator": "article text",
+     "quote": "Darby's development of the coke-fuelled blast furnace in 1709"
+    },
+    {
+     "title": "Wikipedia: Coalbrookdale",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coalbrookdale",
+     "locator": "article text",
+     "quote": "went over to coke as a fuel in 1709"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Coalbrookdale"
+  },
+  {
+   "category": "Power and engines",
+   "name": "Newcomen atmospheric engine",
+   "wikipedia_title": "Newcomen atmospheric engine",
+   "lat": 52.53,
+   "lon": -2.06,
+   "nation": "England",
+   "location": "Conygree Coalworks, Tipton, Black Country",
+   "age_text": "1712",
+   "year": 1712,
+   "claim": "the first reliably recorded steam engine at work, erected in 1712 to pump water from a coal mine",
+   "evidence": "Savery's pump (1698) came first but saw little use; the site is placed by its town.",
+   "sources": [
+    {
+     "title": "Wikipedia: Newcomen atmospheric engine",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine",
+     "locator": "article text",
+     "quote": "The atmospheric engine was invented by Thomas Newcomen in 1712"
+    },
+    {
+     "title": "Wikipedia: Newcomen atmospheric engine",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine",
+     "locator": "article text",
+     "quote": "erected in 1712 at the Conygree Coalworks"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Textiles",
+   "name": "Flying shuttle",
+   "wikipedia_title": "Flying shuttle",
+   "lat": 53.593,
+   "lon": -2.298,
+   "nation": "England",
+   "location": "Bury, Lancashire (John Kay's home town)",
+   "age_text": "1733",
+   "year": 1733,
+   "claim": "John Kay patented the flying shuttle in 1733",
+   "evidence": "Placed at Kay's home town; the patent gives no workshop.",
+   "sources": [
+    {
+     "title": "Wikipedia: Flying shuttle",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flying_shuttle",
+     "locator": "article text",
+     "quote": "The flying shuttle is typically attributed to John Kay, who patented the device in 1733"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Textiles",
+   "name": "Spinning jenny",
+   "wikipedia_title": "Spinning jenny",
+   "lat": 53.744,
+   "lon": -2.392,
+   "nation": "England",
+   "location": "Stanhill, Oswaldtwistle, Lancashire",
+   "age_text": "1764–1765",
+   "year": 1764,
+   "claim": "James Hargreaves invented the spinning jenny at Stanhill in 1764-1765",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Spinning jenny",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Spinning_jenny",
+     "locator": "article text",
+     "quote": "It was invented in 1764–1765 by James Hargreaves in Stanhill, Oswaldtwistle, Lancashire in England."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Power and engines",
+   "name": "Watt's separate condenser",
+   "wikipedia_title": "Watt steam engine",
+   "lat": 55.849,
+   "lon": -4.235,
+   "nation": "Scotland",
+   "location": "Glasgow Green, Glasgow",
+   "age_text": "1765",
+   "year": 1765,
+   "claim": "James Watt conceived the separate condenser in 1765, walking on Glasgow Green",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Watt steam engine",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+     "locator": "article text",
+     "quote": "In 1765, Watt conceived the idea of equipping the engine with a separate condensation chamber"
+    },
+    {
+     "title": "Wikipedia: Glasgow Green",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glasgow_Green",
+     "locator": "article text",
+     "quote": "In 1765, the Green was the site where inventor James Watt was strolling, when he hit upon the idea of the separate condenser for the steam engine."
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Glasgow Green"
+  },
+  {
+   "category": "Textiles",
+   "name": "Cromford Mill, the first water-powered cotton spinning mill",
+   "wikipedia_title": "Cromford Mill",
+   "lat": 53.109,
+   "lon": -1.556,
+   "nation": "England",
+   "location": "Cromford, Derbyshire",
+   "age_text": "1771",
+   "year": 1771,
+   "claim": "Richard Arkwright's mill, the world's first water-powered cotton spinning mill",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Cromford Mill",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cromford_Mill",
+     "locator": "article text",
+     "quote": "Cromford Mill is the world's first water-powered cotton spinning mill, developed by Richard Arkwright in 1771"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Cromford Mill"
+  },
+  {
+   "category": "Textiles",
+   "name": "Spinning mule",
+   "wikipedia_title": "Spinning mule",
+   "lat": 53.6,
+   "lon": -2.419,
+   "nation": "England",
+   "location": "Hall i' th' Wood, Bolton",
+   "age_text": "1779",
+   "year": 1779,
+   "claim": "Samuel Crompton invented the spinning mule in 1779 at Hall i' th' Wood",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Spinning mule",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Spinning_mule",
+     "locator": "article text",
+     "quote": "Samuel Crompton invented the spinning mule in 1779"
+    },
+    {
+     "title": "Wikipedia: Hall i' th' Wood",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_i'_th'_Wood",
+     "locator": "article text",
+     "quote": "About 1779, Crompton succeeded in producing a mule-jenny"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Hall i' th' Wood"
+  },
+  {
+   "category": "Iron, steel and materials",
+   "name": "The Iron Bridge, the first cast-iron arch bridge of its size",
+   "wikipedia_title": "The Iron Bridge",
+   "lat": 52.6274,
+   "lon": -2.4854,
+   "nation": "England",
+   "location": "Ironbridge Gorge, Shropshire",
+   "age_text": "1779",
+   "year": 1779,
+   "claim": "the bridge first spanned the Severn in 1779, cast at Coalbrookdale",
+   "evidence": "Smaller cast-iron bridges may be older; this is the first major one.",
+   "sources": [
+    {
+     "title": "Wikipedia: The Iron Bridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "article text",
+     "quote": "The bridge first spanned the river on 2 July 1779"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "The Iron Bridge"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "First locomotive-hauled railway journey",
+   "wikipedia_title": "Penydarren (locomotive)",
+   "lat": 51.753,
+   "lon": -3.3695,
+   "nation": "Wales",
+   "location": "Penydarren Ironworks, Merthyr Tydfil",
+   "age_text": "1804",
+   "year": 1804,
+   "claim": "Richard Trevithick's locomotive hauled a train on the Penydarren tramway on 21 February 1804",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Penydarren (locomotive)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penydarren_(locomotive)",
+     "locator": "article text",
+     "quote": "The world's first locomotive-hauled railway journey took place on 21 February 1804"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Penydarren Ironworks"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "First fare-paying railway passengers",
+   "wikipedia_title": "Swansea and Mumbles Railway",
+   "lat": 51.57,
+   "lon": -3.98,
+   "nation": "Wales",
+   "location": "Swansea and Mumbles Railway, Swansea",
+   "age_text": "1807",
+   "year": 1807,
+   "claim": "the Oystermouth Railway carried the world's first fare-paying railway passengers from 1807",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Swansea and Mumbles Railway",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swansea_and_Mumbles_Railway",
+     "locator": "article text",
+     "quote": "it carried the world's first fare-paying railway passengers"
+    },
+    {
+     "title": "Wikipedia: Swansea and Mumbles Railway",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swansea_and_Mumbles_Railway",
+     "locator": "article text",
+     "quote": "In February 1807, approval was given to carry passengers along the line"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Iron, steel and materials",
+   "name": "Waterproof fabric (the Mackintosh)",
+   "wikipedia_title": "Charles Macintosh",
+   "lat": 55.864,
+   "lon": -4.251,
+   "nation": "Scotland",
+   "location": "Glasgow",
+   "age_text": "1823",
+   "year": 1823,
+   "claim": "Charles Macintosh of Glasgow patented rubberised waterproof cloth in 1823",
+   "evidence": "The quoted source confirms only his fellowship in 1823; the patent date needs a better source.",
+   "sources": [
+    {
+     "title": "Wikipedia: Charles Macintosh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Charles_Macintosh",
+     "locator": "article text",
+     "quote": "In 1823, he was elected a fellow of the Royal Society"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Iron, steel and materials",
+   "name": "Portland cement",
+   "wikipedia_title": "Portland cement",
+   "lat": 53.8,
+   "lon": -1.549,
+   "nation": "England",
+   "location": "Leeds (Joseph Aspdin)",
+   "age_text": "1824",
+   "year": 1824,
+   "claim": "Joseph Aspdin of Leeds patented Portland cement in 1824",
+   "evidence": "Aspdin's cement was not modern Portland cement, which came later (his son William, and Isaac Johnson).",
+   "sources": [
+    {
+     "title": "Wikipedia: Portland cement",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "article text",
+     "quote": "In his 1824 cement patent, Joseph Aspdin called his invention \"Portland cement\""
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "Stockton and Darlington Railway, the first public railway with steam locomotives",
+   "wikipedia_title": "Stockton and Darlington Railway",
+   "lat": 54.525,
+   "lon": -1.553,
+   "nation": "England",
+   "location": "Darlington, County Durham",
+   "age_text": "1825",
+   "year": 1825,
+   "claim": "opened on 27 September 1825",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Stockton and Darlington Railway",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stockton_and_Darlington_Railway",
+     "locator": "article text",
+     "quote": "The world's first public railway to use steam locomotives"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "Stephenson's Rocket",
+   "wikipedia_title": "Stephenson's Rocket",
+   "lat": 53.417,
+   "lon": -2.766,
+   "nation": "England",
+   "location": "Rainhill, Merseyside (built in Newcastle upon Tyne)",
+   "age_text": "1829",
+   "year": 1829,
+   "claim": "Robert Stephenson's Rocket won the Rainhill Trials in October 1829",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Stephenson's Rocket",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stephenson's_Rocket",
+     "locator": "article text",
+     "quote": "It was built for and won the Rainhill Trials of the Liverpool and Manchester Railway"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Science and medicine",
+   "name": "Electromagnetic induction and the first generator",
+   "wikipedia_title": "Michael Faraday",
+   "lat": 51.5098,
+   "lon": -0.1424,
+   "nation": "England",
+   "location": "Royal Institution, Albemarle Street, London",
+   "age_text": "1831",
+   "year": 1831,
+   "claim": "Michael Faraday discovered electromagnetic induction in 1831",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Michael Faraday",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Michael_Faraday",
+     "locator": "article text",
+     "quote": "Faraday invented the generator in 1831"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Royal Institution"
+  },
+  {
+   "category": "Science and medicine",
+   "name": "Induction coil",
+   "wikipedia_title": "Nicholas Callan",
+   "lat": 53.381,
+   "lon": -6.592,
+   "nation": "Ireland",
+   "location": "Maynooth College, County Kildare",
+   "age_text": "1836",
+   "year": 1836,
+   "claim": "Nicholas Callan of Maynooth invented the induction coil in 1836",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Nicholas Callan",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nicholas_Callan",
+     "locator": "article text",
+     "quote": "He invented the first induction coil in 1836."
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "St Patrick's College, Maynooth"
+  },
+  {
+   "category": "Communication and computing",
+   "name": "Cooke and Wheatstone electric telegraph",
+   "wikipedia_title": "Cooke and Wheatstone telegraph",
+   "lat": 51.5282,
+   "lon": -0.1337,
+   "nation": "England",
+   "location": "Euston, London",
+   "age_text": "1830s (trial 1837)",
+   "year": 1837,
+   "claim": "the first commercial electric telegraph, tried between Euston and Camden Town",
+   "evidence": "The quoted source dates it to the 1830s; the Euston trial year needs its own quote.",
+   "sources": [
+    {
+     "title": "Wikipedia: Cooke and Wheatstone telegraph",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cooke_and_Wheatstone_telegraph",
+     "locator": "article text",
+     "quote": "an early electrical telegraph system dating from the 1830s invented by English inventor William Fothergill Cooke and English scientist Charles Wheatstone"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Farming, money and everyday life",
+   "name": "Penny Black, the first adhesive postage stamp",
+   "wikipedia_title": "Penny Black",
+   "lat": 51.5155,
+   "lon": -0.0975,
+   "nation": "England",
+   "location": "General Post Office, London",
+   "age_text": "1840",
+   "year": 1840,
+   "claim": "first issued on 1 May 1840",
+   "evidence": "Placed at the General Post Office of the time (St Martin's le Grand).",
+   "sources": [
+    {
+     "title": "Wikipedia: Penny Black",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penny_Black",
+     "locator": "article text",
+     "quote": "It was first issued in the United Kingdom on 1 May 1840"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Science and medicine",
+   "name": "Leviathan of Parsonstown",
+   "wikipedia_title": "Leviathan of Parsonstown",
+   "lat": 53.0968,
+   "lon": -7.9176,
+   "nation": "Ireland",
+   "location": "Birr Castle, County Offaly",
+   "age_text": "1845",
+   "year": 1845,
+   "claim": "the largest telescope in the world from 1845",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Leviathan of Parsonstown",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leviathan_of_Parsonstown",
+     "locator": "article text",
+     "quote": "which was the largest telescope in the world from 1845"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Birr Castle"
+  },
+  {
+   "category": "Iron, steel and materials",
+   "name": "Bessemer process",
+   "wikipedia_title": "Bessemer process",
+   "lat": 51.9,
+   "lon": -2.07,
+   "nation": "England",
+   "location": "Cheltenham (announced); Sheffield (works)",
+   "age_text": "1856",
+   "year": 1856,
+   "claim": "Henry Bessemer patented his steel-making process in 1856",
+   "evidence": "Placed at Cheltenham, where he announced it; William Kelly in the US had a similar process.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bessemer process",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bessemer_process",
+     "locator": "article text",
+     "quote": "who took out a patent on the process in 1856"
+    }
+   ],
+   "verdict": "open"
+  },
+  {
+   "category": "Power and engines",
+   "name": "Cragside, the first house lit by hydroelectricity",
+   "wikipedia_title": "Cragside",
+   "lat": 55.3136,
+   "lon": -1.8853,
+   "nation": "England",
+   "location": "Cragside, Rothbury, Northumberland",
+   "age_text": "1878",
+   "year": 1878,
+   "claim": "an arc lamp powered by hydroelectricity lit the picture gallery in 1878",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Cragside",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cragside",
+     "locator": "article text",
+     "quote": "The electricity generated was used to power an arc lamp installed in the picture gallery in 1878."
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Cragside"
+  },
+  {
+   "category": "Power and engines",
+   "name": "Public electricity supply",
+   "wikipedia_title": "Godalming",
+   "lat": 51.1855,
+   "lon": -0.6155,
+   "nation": "England",
+   "location": "Westbrook Mill, Godalming, Surrey",
+   "age_text": "1881",
+   "year": 1881,
+   "claim": "Godalming had the first public electricity supply, from a generator at Westbrook Mill in 1881",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Godalming",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Godalming",
+     "locator": "article text",
+     "quote": "In 1881, the London firm of Calder and Barrett installed a generator driven by two Poncelet waterwheels at Westbrook Mill."
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Godalming"
+  },
+  {
+   "category": "Power and engines",
+   "name": "Steam turbine",
+   "wikipedia_title": "Charles Algernon Parsons",
+   "lat": 54.965,
+   "lon": -1.587,
+   "nation": "England",
+   "location": "Clarke, Chapman and Co., Gateshead",
+   "age_text": "1884",
+   "year": 1884,
+   "claim": "Charles Parsons designed the modern steam turbine in 1884",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Charles Algernon Parsons",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Charles_Algernon_Parsons",
+     "locator": "article text",
+     "quote": "designed the modern steam turbine in 1884"
+    },
+    {
+     "title": "Wikipedia: Charles Algernon Parsons",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Charles_Algernon_Parsons",
+     "locator": "article text",
+     "quote": "In 1884 Parsons moved to Clarke, Chapman and Co."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "Pneumatic tyre",
+   "wikipedia_title": "John Boyd Dunlop",
+   "lat": 54.58,
+   "lon": -5.93,
+   "nation": "Northern Ireland",
+   "location": "Cherryvale, south Belfast",
+   "age_text": "1888",
+   "year": 1888,
+   "claim": "John Boyd Dunlop tested his pneumatic tyre at Cherryvale and was granted a patent in 1888",
+   "evidence": "Robert William Thomson patented a pneumatic tyre in 1847; Dunlop's was the first practical one.",
+   "sources": [
+    {
+     "title": "Wikipedia: John Boyd Dunlop",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop",
+     "locator": "article text",
+     "quote": "He tested that in Cherryvale sports ground, South Belfast, and a patent was granted on 7 December 1888."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Communication and computing",
+   "name": "Television",
+   "wikipedia_title": "John Logie Baird",
+   "lat": 51.5138,
+   "lon": -0.1318,
+   "nation": "England",
+   "location": "22 Frith Street, Soho, London",
+   "age_text": "1926",
+   "year": 1926,
+   "claim": "John Logie Baird gave the first public demonstration of television on 26 January 1926",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: John Logie Baird",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Logie_Baird",
+     "locator": "article text",
+     "quote": "Baird gave the first public demonstration of true television images"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Science and medicine",
+   "name": "Penicillin",
+   "wikipedia_title": "Alexander Fleming",
+   "lat": 51.5172,
+   "lon": -0.1731,
+   "nation": "England",
+   "location": "St Mary's Hospital, Paddington, London",
+   "age_text": "1928",
+   "year": 1928,
+   "claim": "Alexander Fleming discovered penicillin at St Mary's Hospital in 1928",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: St Mary's Hospital, London",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Mary's_Hospital,_London",
+     "locator": "article text",
+     "quote": "It was at the hospital that Alexander Fleming discovered penicillin in 1928."
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "St Mary's Hospital, London"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "Cat's eye road stud",
+   "wikipedia_title": "Cat's eye (road)",
+   "lat": 53.7248,
+   "lon": -1.8658,
+   "nation": "England",
+   "location": "Halifax, West Yorkshire",
+   "age_text": "1934",
+   "year": 1934,
+   "claim": "Percy Shaw of Halifax patented the cat's eye in 1934",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Cat's eye (road)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cat's_eye_(road)",
+     "locator": "article text",
+     "quote": "The cat's eye design originated in the UK in 1934"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Communication and computing",
+   "name": "Radar: the Daventry experiment",
+   "wikipedia_title": "Daventry experiment",
+   "lat": 52.236,
+   "lon": -1.104,
+   "nation": "England",
+   "location": "near the BBC transmitter, Daventry, Northamptonshire",
+   "age_text": "1935",
+   "year": 1935,
+   "claim": "radio waves were shown to detect an aircraft in February 1935",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Daventry experiment",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Daventry_experiment",
+     "locator": "article text",
+     "quote": "In February 1935, a successful demonstration was arranged by placing a receiver near a BBC short wave transmitter"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Power and engines",
+   "name": "Jet engine",
+   "wikipedia_title": "Frank Whittle",
+   "lat": 52.37,
+   "lon": -1.27,
+   "nation": "England",
+   "location": "British Thomson-Houston works, Rugby",
+   "age_text": "1937",
+   "year": 1937,
+   "claim": "Frank Whittle's first jet engine ran on 12 April 1937",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Frank Whittle",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Frank_Whittle",
+     "locator": "article text",
+     "quote": "the Power Jets WU (Whittle Unit, or W.U.) engine began test runs on 12 April 1937"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Communication and computing",
+   "name": "Colossus, the first programmable electronic digital computer",
+   "wikipedia_title": "Colossus computer",
+   "lat": 51.998,
+   "lon": -0.7411,
+   "nation": "England",
+   "location": "Bletchley Park, Buckinghamshire",
+   "age_text": "1944",
+   "year": 1944,
+   "claim": "Colossus was at work at Bletchley Park by early 1944",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Colossus computer",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Colossus_computer",
+     "locator": "article text",
+     "quote": "was in use at Bletchley Park by early 1944"
+    },
+    {
+     "title": "Wikipedia: Bletchley Park",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bletchley_Park",
+     "locator": "article text",
+     "quote": "was delivered to Bletchley Park in January and first worked operationally on 5 February 1944"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Bletchley Park"
+  },
+  {
+   "category": "Communication and computing",
+   "name": "Manchester Baby, the first stored-program computer",
+   "wikipedia_title": "Manchester Baby",
+   "lat": 53.467,
+   "lon": -2.234,
+   "nation": "England",
+   "location": "University of Manchester",
+   "age_text": "1948",
+   "year": 1948,
+   "claim": "the Baby ran its first program on 21 June 1948",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Manchester Baby",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manchester_Baby",
+     "locator": "article text",
+     "quote": "ran its first program on 21 June 1948"
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Science and medicine",
+   "name": "The structure of DNA",
+   "wikipedia_title": "The Eagle, Cambridge",
+   "lat": 52.204,
+   "lon": 0.1182,
+   "nation": "England",
+   "location": "The Eagle, Cambridge (announced); Cavendish Laboratory",
+   "age_text": "1953",
+   "year": 1953,
+   "claim": "Francis Crick announced in The Eagle on 28 February 1953 that he and James Watson had found the structure of DNA",
+   "evidence": "The work drew on Rosalind Franklin's and Maurice Wilkins's X-ray results from King's College London.",
+   "sources": [
+    {
+     "title": "Wikipedia: The Eagle, Cambridge",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Eagle,_Cambridge",
+     "locator": "article text",
+     "quote": "Francis Crick interrupted patrons' lunchtime on 28 February 1953"
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "The Eagle, Cambridge"
+  },
+  {
+   "category": "Railways, roads and transport",
+   "name": "SR.N1, the first practical hovercraft",
+   "wikipedia_title": "SR.N1",
+   "lat": 50.762,
+   "lon": -1.299,
+   "nation": "England",
+   "location": "Saunders-Roe, East Cowes, Isle of Wight",
+   "age_text": "1959",
+   "year": 1959,
+   "claim": "the SR.N1 first flew in public on 11 June 1959",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: SR.N1",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/SR.N1",
+     "locator": "article text",
+     "quote": "On 11 June 1959, it performed its first flight in front of the public."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Farming, money and everyday life",
+   "name": "Cash machine (ATM)",
+   "wikipedia_title": "Automated teller machine",
+   "lat": 51.6522,
+   "lon": -0.0807,
+   "nation": "England",
+   "location": "Barclays Bank, Enfield, north London",
+   "age_text": "1967",
+   "year": 1967,
+   "claim": "the first cash machine was installed at Barclays Bank, Enfield, on 27 June 1967",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Automated teller machine",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Automated_teller_machine",
+     "locator": "article text",
+     "quote": "A cash machine was installed at Barclays Bank, Enfield, North London in the United Kingdom, on 27 June 1967."
+    }
+   ],
+   "verdict": "kept"
+  },
+  {
+   "category": "Science and medicine",
+   "name": "Dolly the sheep",
+   "wikipedia_title": "Dolly (sheep)",
+   "lat": 55.8656,
+   "lon": -3.1983,
+   "nation": "Scotland",
+   "location": "Roslin Institute, Midlothian",
+   "age_text": "1996",
+   "year": 1996,
+   "claim": "the first mammal cloned from an adult cell, born on 5 July 1996",
+   "evidence": "",
+   "sources": [
+    {
+     "title": "Wikipedia: Roslin Institute",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roslin_Institute",
+     "locator": "article text",
+     "quote": "It is best known for creating Dolly the sheep in 1996, the first mammal to be successfully cloned from an adult cell."
+    }
+   ],
+   "verdict": "kept",
+   "made_at": "Roslin Institute"
+  }
+ ]
+}

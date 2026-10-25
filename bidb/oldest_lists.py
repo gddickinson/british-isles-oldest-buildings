@@ -23,6 +23,10 @@ age claim, how well it is established, sources with exact quotes and a verdict):
             guilds outside London, trading companies, exchanges, coffee houses, banks, merchants' houses and
             trading posts (`data/curated/trade/guilds.json`) -> "Markets & trade"; a company with no single standing
             place has no coordinates and is listed only
+  innovations - inventions, discoveries and firsts made in the isles (roadmap C6, `data/curated/trade/innovations.json`),
+            placed where they were made, tried or first used -> "Innovations & firsts"; `made_at` (the Wikipedia title
+            of the building or place) is resolved to its Wikidata id (`made_at_ids`, `extra.made_at_qid`) and linked to
+            its catalogue record or place (`link_made_at`, `extra.made_at_ref` = "building:<id>" or "place:<id>")
   civic   - oldest schools, universities, hospitals, post offices, courts, police and fire stations, town halls
             and other public institutions -> "Public institutions" (with bidb.institutions)
 An entry whose Wikidata item is already a catalogue building stays there; one already a place moves to the
@@ -77,6 +81,13 @@ LISTS = {
                          "Oldest trading company": "gu_trading", "Oldest exchange": "gu_exchange",
                          "Oldest coffee house": "gu_coffee", "Oldest bank": "gu_bank",
                          "Oldest merchant's house, warehouse or trading post": "gu_house"}},
+    "innovations": {"group": "Innovations & firsts", "prefix": "inv", "title": "Innovations and firsts made in the isles",
+                    "file": "trade/innovations.json",
+                    "kinds": {"Power and engines": "inv_power", "Iron, steel and materials": "inv_materials",
+                              "Textiles": "inv_textiles", "Railways, roads and transport": "inv_transport",
+                              "Communication and computing": "inv_communication",
+                              "Science and medicine": "inv_science",
+                              "Farming, money and everyday life": "inv_everyday"}},
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}
@@ -143,7 +154,8 @@ def lists(conn=None):
             cats.setdefault(e["category"], []).append({
                 "id": record_id(name, e), "name": e["name"], "age": e.get("age_text"), "year": e.get("year"),
                 "claim": e.get("claim"), "verdict": e.get("verdict"), "location": e.get("location"),
-                "nation": e.get("nation"), "museum": e.get("museum"), "building": record_id(name, e) in buildings,
+                "nation": e.get("nation"), "museum": e.get("museum"), "made_at": e.get("made_at"),
+                "building": record_id(name, e) in buildings,
                 "placed": True if placed is None else record_id(name, e) in placed})
         out[name] = {"title": spec["title"], "group": spec["group"],
                      "categories": [{"category": c, "entries": cats[c]} for c in spec["kinds"] if c in cats]}
@@ -153,10 +165,18 @@ def lists(conn=None):
     return out
 
 
+def made_at_ids(es):
+    """{Wikipedia title: Wikidata id} of the entries' `made_at` (cached requests)."""
+    from .wikipedia_list import titles_to_qids
+    titles = sorted({e["made_at"] for e in es if e.get("made_at")})
+    return titles_to_qids(titles) if titles else {}
+
+
 def records(name):
     from .place_records import blank          # place_kinds reads KIND_LABEL from here: import when used
     spec = LISTS[name]
     out = []
+    made = made_at_ids(entries(name))
     for e in entries(name):
         if e.get("lat") is None or e.get("listed_in"):
             continue
@@ -168,7 +188,9 @@ def records(name):
                          locality=e.get("location"), wikipedia_title=e.get("wikipedia_title"),
                          wikidata_id=e.get("qid"), source="Research (sources in Evidence)",
                          url=(e.get("sources") or [{}])[0].get("url"),
-                         extra={"museum": e["museum"]} if e.get("museum") else None))
+                         extra=({"museum": e["museum"]} if e.get("museum") else {}) |
+                         ({"made_at": e["made_at"], "made_at_qid": made[e["made_at"]]} if made.get(e.get("made_at")) else {})
+                         or None))
     return out
 
 
@@ -194,7 +216,21 @@ def run(log=print):
                              [(by[i]["year_start"], by[i]["date_text"], period_for(by[i]["year_start"])
                                if by[i]["year_start"] is not None else "Unknown", i) for i in kept])
             conn.executemany("UPDATE places SET type = ? WHERE id = ?", [(by[i]["type"], i) for i in moved])
+    link_made_at(conn)
     conn.commit()
+
+
+def link_made_at(conn):
+    """extra.made_at_ref of the places whose `made_at_qid` is a catalogue building or another place."""
+    rows = [(r[0], json.loads(r[1])) for r in conn.execute("SELECT id, extra FROM places WHERE extra LIKE '%made_at_qid%'")]
+    for pid, ex in rows:
+        q = ex.get("made_at_qid")
+        if conn.execute("SELECT 1 FROM buildings WHERE id = ?", (q,)).fetchone():
+            ex["made_at_ref"] = f"building:{q}"
+        elif conn.execute("SELECT 1 FROM places WHERE id = ?", (q,)).fetchone():
+            ex["made_at_ref"] = f"place:{q}"
+        conn.execute("UPDATE places SET extra = ? WHERE id = ?", (json.dumps(ex, ensure_ascii=False), pid))
+    return len(rows)
 
 
 def report():

@@ -64,3 +64,22 @@ class Stages(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Innovations(unittest.TestCase):
+    """Roadmap C6: innovations and firsts, a researched list with a group of its own."""
+
+    def test_group_and_kinds(self):
+        from bidb import oldest_lists, place_kinds
+        self.assertIn("Innovations & firsts", place_kinds.PLACE_GROUPS)
+        es = oldest_lists.entries("innovations")
+        self.assertGreaterEqual(len(es), 30)
+        kinds = oldest_lists.LISTS["innovations"]["kinds"]
+        self.assertTrue(all(e["category"] in kinds for e in es))
+        self.assertTrue(all(e.get("sources") and e.get("year") and e.get("lat") is not None for e in es))
+        self.assertEqual([e["year"] for e in es], sorted(e["year"] for e in es))
+
+    def test_claims_for_evidence(self):
+        from bidb import oldest_lists
+        ids = [c["id"] for c in oldest_lists.claims() if c["id"].startswith("innovations-")]
+        self.assertEqual(len(ids), len(oldest_lists.entries("innovations")))

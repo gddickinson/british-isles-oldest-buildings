@@ -3,7 +3,8 @@
 Curated inputs in `data/curated/change/`:
     sources.json   {id: {short, publisher, citation, licence, licence_url, url, download_url, checked, used}}
     series.json    [{id, title, theme, region, unit, unit_long, sources: [ids], note, modelled, default,
-                     gap, zero, file}]     file = data/<file>.csv with columns year,value[,low,high]
+                     gap, zero, breaks, file}]     file = data/<file>.csv with columns year,value[,low,high]
+                                   breaks = [[first year on a new definition, text]]: marked on the graph
     events.json    [{year, end, title, text, theme, citation}]   (or sources: [ids])
 
     python -m bidb.change_series     check them (every series and event cites a source with a licence) and
@@ -69,6 +70,21 @@ def check(sources, series, events):
             bad.append(f"{s['id']}: missing data/{s['file']}")
         if len(s.get("models", [])) > MAX_MODELS:      # change_charts.draw has three line colours
             bad.append(f"{s['id']}: {len(s['models'])} other lines, at most {MAX_MODELS} are drawn")
+        bad += check_breaks(s)
+    return bad
+
+
+def check_breaks(s):
+    """A series' `breaks` ([[first year on the new definition, text]]) must be in order, with text, inside its years."""
+    br = s.get("breaks", [])
+    if not br:
+        return []
+    years = [p[0] for p in read_points(SRC / "data" / s["file"])] if (SRC / "data" / s["file"]).exists() else []
+    bad = [f"{s['id']}: break {b} has no text" for b in br if len(b) != 2 or not b[1]]
+    if [b[0] for b in br] != sorted({b[0] for b in br}):
+        bad.append(f"{s['id']}: breaks out of order")
+    if years:
+        bad += [f"{s['id']}: break {b[0]} outside {years[0]}-{years[-1]}" for b in br if not years[0] < b[0] <= years[-1]]
     return bad
 
 

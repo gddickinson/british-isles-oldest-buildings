@@ -3965,5 +3965,205 @@
   "file": "gl_fibres_uk.csv",
   "default": false,
   "hidden": true
+ },
+ {
+  "id": "tj_textiles_x_uk",
+  "theme": "Prosperity and work",
+  "title": "Main exports, share of all UK exports, 1846-2024",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of exports",
+  "label": "Textiles",
+  "sources": [
+   "stat_abstract_goods_uk",
+   "annual_abstract_groups_uk",
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk",
+   "growth_lab_sitc2"
+  ],
+  "file": "tj_textiles_x_uk.csv",
+  "default": false,
+  "breaks": [
+   [
+    1912,
+    "From 1912 the Board of Trade's classification of 1920 (Statistical Abstract Nos. 70 and 83)"
+   ],
+   [
+    1923,
+    "From April 1923 trade with the Irish Free State counts as overseas trade and the Free State's own trade is left out"
+   ],
+   [
+    1939,
+    "From 1939 the groups of the Annual Abstract of Statistics, wider than the Statistical Abstract's articles; 1938 on both: 17.0% and 16.2%"
+   ],
+   [
+    1953,
+    "From 1953 the divisions of the Standard International Trade Classification (Annual Abstract), wider again"
+   ],
+   [
+    1958,
+    "From 1958 the revised classification, SITC (R), with precious stones"
+   ],
+   [
+    1962,
+    "From 1962 exports include re-exports"
+   ],
+   [
+    1975,
+    "From 1975 the Growth Lab's shares (UN Comtrade reconciled with partners' reports, SITC Rev. 2, gold left out); 1974 on both: 4.5% (Annual Abstract) and 4.9%"
+   ]
+  ],
+  "zero": true,
+  "note": "Textiles as a share of all exports, 1846-2024, joined from the era graphs: the Statistical Abstract to 1938, the Annual Abstract of Statistics 1939-1974 and the Growth Lab's SITC Rev. 2 shares from 1975 (gold left out). The goods are cotton, woollen and linen goods to 1938 (yarn and manufactures), the cotton and woollen groups 1939-1952, textile yarn, fabrics and made-up articles (division 65) from 1953; each definition differs a little from the one before (mostly it is wider), so the line may step at the marked breaks without anything changing there. Values at the prices of the time (a falling share can mean lower prices as well as smaller quantities); exports of United Kingdom produce to 1961, with re-exports from 1962. Textiles: 63.2% in 1846, 31.9% in 1913, 17.0% in 1938, 4.5% in 1974, 1.9% in 1999, 0.8% in 2024. HMRC's graphs since 2000 take the nearest headings of the old articles and are much narrower, so they are not joined.",
+  "models": [
+   "tj_metal_x_uk"
+  ]
+ },
+ {
+  "id": "tj_metal_x_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and steel, and machinery, share of UK exports (1846-2024)",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of exports",
+  "label": "Coal, iron and steel, and machinery",
+  "sources": [
+   "stat_abstract_goods_uk",
+   "annual_abstract_groups_uk",
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk",
+   "growth_lab_sitc2"
+  ],
+  "file": "tj_metal_x_uk.csv",
+  "default": false,
+  "breaks": [
+   [
+    1912,
+    "From 1912 the Board of Trade's classification of 1920 (Statistical Abstract Nos. 70 and 83)"
+   ],
+   [
+    1923,
+    "From April 1923 trade with the Irish Free State counts as overseas trade and the Free State's own trade is left out"
+   ],
+   [
+    1939,
+    "From 1939 the groups of the Annual Abstract of Statistics, wider than the Statistical Abstract's articles; 1938 on both: 30.2% and 29.6%"
+   ],
+   [
+    1953,
+    "From 1953 the divisions of the Standard International Trade Classification (Annual Abstract), wider again"
+   ],
+   [
+    1958,
+    "From 1958 the revised classification, SITC (R), with precious stones"
+   ],
+   [
+    1962,
+    "From 1962 exports include re-exports"
+   ],
+   [
+    1975,
+    "From 1975 the Growth Lab's shares (UN Comtrade reconciled with partners' reports, SITC Rev. 2, gold left out); 1974 on both: 29.3% (Annual Abstract) and 30.0%"
+   ]
+  ],
+  "zero": true,
+  "note": "The goods are coal, iron and steel and machinery; from 1953 coal (division 32), iron and steel (67) and machinery (71-72 of SITC (R), 71-77 of Rev. 2: electrical and other machinery, not road vehicles, ships or aircraft), joined and with the breaks as in the note above. Coal, iron and steel, and machinery: 12.0% in 1846, 27.0% in 1913, 30.2% in 1938, 29.3% in 1974, 38.1% in 1999, 29.7% in 2024.",
+  "hidden": true
+ },
+ {
+  "id": "tj_grain_i_uk",
+  "theme": "Prosperity and work",
+  "title": "Main imports, share of all UK imports, 1854-2024",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of imports",
+  "label": "Grain and flour (cereals)",
+  "sources": [
+   "stat_abstract_imports_uk",
+   "annual_abstract_groups_uk",
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk",
+   "growth_lab_sitc2"
+  ],
+  "file": "tj_grain_i_uk.csv",
+  "default": false,
+  "breaks": [
+   [
+    1912,
+    "From 1912 the Board of Trade's classification of 1920 (Statistical Abstract Nos. 70 and 83)"
+   ],
+   [
+    1923,
+    "From April 1923 trade with the Irish Free State counts as overseas trade and the Free State's own trade is left out"
+   ],
+   [
+    1939,
+    "From 1939 the groups of the Annual Abstract of Statistics, wider than the Statistical Abstract's articles; 1938 on both: 7.4% and 8.1%"
+   ],
+   [
+    1953,
+    "From 1953 the divisions of the Standard International Trade Classification (Annual Abstract), wider again"
+   ],
+   [
+    1958,
+    "From 1958 the revised classification, SITC (R), with precious stones"
+   ],
+   [
+    1975,
+    "From 1975 the Growth Lab's shares (UN Comtrade reconciled with partners' reports, SITC Rev. 2, gold left out); 1974 on both: 2.6% (Annual Abstract) and 2.4%"
+   ]
+  ],
+  "zero": true,
+  "note": "Grain and flour (cereals) as a share of all imports, 1854-2024, joined from the era graphs: the Statistical Abstract to 1938, the Annual Abstract of Statistics 1939-1974 and the Growth Lab's SITC Rev. 2 shares from 1975 (gold left out). The goods are grain and flour to 1952, cereals and cereal preparations (division 04) from 1953; each definition differs a little from the one before (mostly it is wider), so the line may step at the marked breaks without anything changing there. Values at the prices of the time (a falling share can mean lower prices as well as smaller quantities); imports valued at the port of arrival (c.i.f.). Grain and flour (cereals): 14.3% in 1854, 10.1% in 1913, 7.4% in 1938, 2.6% in 1974, 0.6% in 1999, 1.2% in 2024. HMRC's graphs since 2000 take the nearest headings of the old articles and are much narrower, so they are not joined.",
+  "models": [
+   "tj_materials_i_uk"
+  ]
+ },
+ {
+  "id": "tj_materials_i_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw cotton, wool and wood, share of UK imports (1854-2024)",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of imports",
+  "label": "Raw cotton, wool and wood",
+  "sources": [
+   "stat_abstract_imports_uk",
+   "annual_abstract_groups_uk",
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk",
+   "growth_lab_sitc2"
+  ],
+  "file": "tj_materials_i_uk.csv",
+  "default": false,
+  "breaks": [
+   [
+    1912,
+    "From 1912 the Board of Trade's classification of 1920 (Statistical Abstract Nos. 70 and 83)"
+   ],
+   [
+    1923,
+    "From April 1923 trade with the Irish Free State counts as overseas trade and the Free State's own trade is left out"
+   ],
+   [
+    1939,
+    "From 1939 the groups of the Annual Abstract of Statistics, wider than the Statistical Abstract's articles; 1938 on both: 12.3% and 12.5%"
+   ],
+   [
+    1953,
+    "From 1953 the divisions of the Standard International Trade Classification (Annual Abstract), wider again"
+   ],
+   [
+    1958,
+    "From 1958 the revised classification, SITC (R), with precious stones"
+   ],
+   [
+    1975,
+    "From 1975 the Growth Lab's shares (UN Comtrade reconciled with partners' reports, SITC Rev. 2, gold left out); 1974 on both: 3.9% (Annual Abstract) and 3.6%"
+   ]
+  ],
+  "zero": true,
+  "note": "The goods are raw cotton, wool and timber to 1952, cork and wood (division 24) and all textile fibres (26) from 1953, joined and with the breaks as in the note above. Raw cotton, wool and wood: 24.8% in 1854, 18.0% in 1913, 12.3% in 1938, 3.9% in 1974, 0.7% in 1999, 0.8% in 2024.",
+  "hidden": true
  }
 ]

@@ -1193,3 +1193,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (new), `change_trade_sitc`, `change_trade_groups`, `change_trade_hmrc`, `map` pass; screenshots checked (every line
   drawn). Hosted copy and release not updated.
 - Next: C5b2d4 (join the eras 1846-2025, breaks marked; hosted copy and release).
+
+## 2026-10-25 — C5b2d4: the main goods 1846-2024 as one line across the eras, breaks marked
+- New `bidb/change_trade_joined.py` (165 lines): four joined share series `tj_*_uk` (an `era` column says which era
+  each year comes from): textiles and coal/iron/machinery of exports 1846-2024, grain and raw cotton/wool/wood of
+  imports 1854-2024; Statistical Abstract to 1938, Annual Abstract groups 1939-52, divisions 1953-74, Growth Lab
+  1975-2024. Two graphs (exports, imports), each with the second line as its comparison.
+- Decision: HMRC (2000-) not joined; its headings are far narrower than the SITC divisions (textiles 0.29% against
+  1.6% in 2000) and the Growth Lab keeps the divisions to 2024. Shares only: values are at the prices of the time and
+  the Growth Lab's in dollars.
+- Breaks: new series field `breaks` ([[first year on the new definition, text]]), checked by
+  `change_series.check_breaks`; `change_charts` starts the line again there with a dotted mark and names the break
+  on hover; the /change page lists them under the graph. 1912, 1923, 1939, 1953, 1958, 1962 (exports), 1975; the
+  year before on both definitions where two eras give it (1938 textiles 17.0/16.2%; 1974 4.5/4.9%).
+- Results: textiles 63.2% of exports in 1846, 31.9% in 1913, 17.0% in 1938, 4.5% in 1974, 1.9% in 1999, 0.8% in
+  2024; coal, iron and machinery 12.0, 27.0, 30.2, 29.3, 38.1, 29.7%; grain 14.3% of imports in 1854, 1.2% in 2024.
+- Tests 231 OK (6 new); ui_check `change_trade_joined` (new) and the other trade checks pass; screenshot checked.
+- Hosted copy version 69: six changed files (series.json, change_charts.js, change_page.js, map.css, buildings.json,
+  quiz.json), 252.9 of 256 MiB; hosted files checked by SHA-256 against dist/; static page checks 22/22. No new
+  release: the database is unchanged since db-2026-10-24.
+- Next: C5b3 (before 1800: Davis, Schumpeter, Mitchell quoted as estimate dots; needs the books' pages).

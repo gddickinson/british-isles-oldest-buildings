@@ -3,7 +3,8 @@
 // the source gives one, a marker at the slider's year, a hover crosshair and the values at that year.
 // Other estimates of the same measure (`models`: other series, same unit) are drawn on the same axes in their own
 // colours with a legend (at most two, so three lines in the validated categorical slots); series of separate published estimates (`style: "estimates"`) are drawn as dots with
-// error bars; stretches longer than a series' `gap` have no data and are bridged by a faint dotted line.
+// error bars; stretches longer than a series' `gap` have no data and are bridged by a faint dotted line; a series'
+// `breaks` (changes of definition) are marked by thin lines, where the line starts again, and named on hover.
 // ChangeCharts.draw(el, series, { from, to, year, models }) · span(series, "fit" | year) · valueAt(series, year) · fmt(v, unit)
 const ChangeCharts = (() => {
   const NS = "http://www.w3.org/2000/svg";
@@ -67,9 +68,11 @@ const ChangeCharts = (() => {
       el("path", { d, class: `cc-band ${cls}` }, svg);
     }
     let d = "", gaps = "";
-    const g = gapOf(s);
+    const g = gapOf(s), br = (s.breaks || []).map((b) => b[0]);
     pts.forEach((q, i) => {
       const jump = i > 0 && g && q[0] - pts[i - 1][0] > g;
+      const cut = i > 0 && br.some((b) => pts[i - 1][0] < b && b <= q[0]);   // a new definition: the line starts again
+      if (cut && !jump) { d += `M${x(q[0]).toFixed(1)},${y(q[1]).toFixed(1)}`; return; }
       if (jump) gaps += `M${x(pts[i - 1][0]).toFixed(1)},${y(pts[i - 1][1]).toFixed(1)}L${x(q[0]).toFixed(1)},${y(q[1]).toFixed(1)}`;
       d += `${i === 0 || jump ? "M" : "L"}${x(q[0]).toFixed(1)},${y(q[1]).toFixed(1)}`;
     });
@@ -108,6 +111,9 @@ const ChangeCharts = (() => {
       el("text", { x: x(t), y: H - 2, class: "cc-tick", "text-anchor": "middle" }, svg).textContent = t < 0 ? `${-t} BC` : t;
     });
 
+    // breaks of definition: a thin mark between the last year on the old definition and the first on the new
+    const breaks = (s.breaks || []).filter((b) => b[0] > from && b[0] <= to);
+    breaks.forEach((b) => el("line", { x1: x(b[0] - 0.5), x2: x(b[0] - 0.5), y1: PAD_T, y2: H - PAD_B, class: "cc-break" }, svg));
     lines.slice(1).reverse().forEach((l) => drawOne(svg, l.s, l.pts, x, y, l.cls, false));   // comparisons under the main line
     drawOne(svg, s, pts, x, y, lines[0].cls, true);
 
@@ -143,6 +149,7 @@ const ChangeCharts = (() => {
         const est = !q || bridged(l.s, best) ? "≈ " : "";
         rows.push([`${est}${fmt(v, l.s.unit)}${range}`, lines.length > 1 ? label(l.s) : l.s.modelled ? "modelled" : ""]);
       });
+      breaks.filter((b) => best === b[0] || best === b[0] - 1).forEach((b) => rows.push([`Break, ${b[0] - 1}/${b[0]}`, b[1]]));
       showTip(e, rows);
     });
     hit.addEventListener("mouseleave", () => { cross.setAttribute("visibility", "hidden"); hideTip(); });

@@ -30,6 +30,7 @@
         <div class="cc-src">Source: ${cite(s.sources)}${s.modelled ? " · modelled" : ""}${modelsOf(s).map((m) =>
           `<br>Compared with ${esc(m.label || m.title)}: ${cite(m.sources)}`).join("")}</div>
         ${s.note ? `<p class="cc-note">${esc(s.note)}</p>` : ""}
+        ${s.breaks ? `<p class="cc-note"><b>Breaks in definition</b> (dotted marks): ${s.breaks.map((b) => `${b[0]}: ${esc(b[1])}`).join("; ")}.</p>` : ""}
         ${modelsOf(s).map((m) => m.note ? `<p class="cc-note"><b>${esc(m.label || m.title)}:</b> ${esc(m.note)}</p>` : "").join("")}
         <details><summary>Table of values</summary>${[s, ...modelsOf(s)].map(table).join("")}</details></figure>`).join("")}</div>
       ${eventList(events.filter((e) => e.theme === t))}</section>`).join("");

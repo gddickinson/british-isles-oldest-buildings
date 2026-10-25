@@ -4,11 +4,11 @@ Future work for British Isles Oldest Buildings, kept between sessions. Newest de
 each section; tick items off (and move them to SESSION_LOG.md) when done. Sections with every item done
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
-## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 228
+## Status (2026-10-25)
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 241
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
-  252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 69 (2026-10-25, after C5b2d4):
+  252.9 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
   to replace files this session has not read or listed).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
@@ -342,9 +342,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       (91-96) reach 12.1% of exports in 2011. Hardening: the charts draw at most three lines, so timber (1938-52) and
       wood and textile fibres (1953-74) were never drawn; those graphs now split, and bidb.change_series refuses a
       graph with more than two other lines (`MAX_MODELS`).
-- [ ] C5b2d4 Join the eras: graphs across 1846-2025 with the breaks of definition marked (1912, 1938, 1953, 2000;
-      1975-1999 from the Growth Lab shares of C5b2d3, which also overlap the Annual Abstract 1962-74 and HMRC 2000-24);
-      hosted copy and release updated with the C5b2 graphs.
+- [x] C5b2d4 (2026-10-25) Join the eras (new `bidb/change_trade_joined.py`): four lines 1846-2024 as shares (values
+      cannot be joined: prices of the time, and the Growth Lab's are dollars), textiles and coal/iron/machinery of
+      exports (from 1846), grain and raw cotton/wool/wood of imports (from 1854); each year from one era: Statistical
+      Abstract to 1938, Annual Abstract groups 1939-52 and divisions 1953-74, Growth Lab 1975-2024 (`era` column).
+      HMRC 2000- not joined (decision: its nearest headings of the old articles are far narrower than the divisions,
+      textiles 0.29% of exports in 2000 against the Growth Lab's 1.6%; the Growth Lab keeps the same divisions to
+      2024). Breaks marked (`breaks`, drawn as dotted marks where the line starts again, named on hover and listed
+      under the graph; checked by `change_series.check_breaks`): 1912, 1923 (Irish Free State), 1939, 1953, 1958,
+      1962 (exports, re-exports), 1975, with the year before on both definitions where two eras give it (1938 textiles
+      17.0/16.2%, grain 7.4/8.1%; 1974 textiles 4.5/4.9%, coal-iron-machinery 29.3/30.0%). Results: textiles 63.2% of
+      exports in 1846, 31.9% in 1913, 17.0% in 1938, 4.5% in 1974, 1.9% in 1999, 0.8% in 2024; coal, iron and
+      machinery 12.0, 27.0, 30.2, 29.3, 38.1, 29.7%; grain 14.3% of imports in 1854, 10.1% in 1913, 1.2% in 2024; raw
+      cotton, wool and wood 24.8%, 18.0%, 0.8%. Hosted copy version 69 (six changed files, 252.9 of 256 MiB). No new
+      release: the database is unchanged since db-2026-10-24 (the graphs ship with the code).
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).
 - [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term

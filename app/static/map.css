@@ -154,6 +154,7 @@
 .cc-year { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 2 2; opacity: .7; }
 .cc-year-dot { fill: var(--panel); stroke: var(--ink); stroke-width: 2; }
 .cc-cross { stroke: var(--muted); stroke-width: 1; }
+.cc-break { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 1 2; opacity: .8; }
 .cc-src { font-size: 11px; color: var(--muted); }
 .cc-lic { white-space: nowrap; }
 .cc-more { border: 0; background: none; padding: 0 2px; color: var(--accent); cursor: pointer; font-size: 11px; text-decoration: underline; }

@@ -434,28 +434,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       between two breaks (1891: census lines after Booth; 1901: the 1911 classification). Booth's 1881 cannot be
       checked against it: the 1891 report compares 1881 only by class. Scotland's 1901 report occupation volumes (II,
       III: `op1254658-1001`, `op1254783-1001`) are empty stubs on the Internet Archive.
-- [ ] C5c2c2c Ireland 1891-1911, to be read in parts (found 2026-10-25). Ireland kept the six-class classification
-      of 1881 to 1911, with "working and dealing" sub-orders, so dealers need the line tables, as Scotland's 1891:
-      - [x] C5c2c2c1 (2026-10-25) 1891 and 1901 sub-orders (new `bidb/change_work_ir.py`): 1901 General Report
-        (Cd. 1190, `op1254515-1001`) Table 91, pp. 398 and 400 (images n443, n445; the age split on pp. 399, 401),
-        all ages, persons, males and females, 1891 and 1901: 6 classes, 24 orders, 80 sub-orders
-        (`work_census_ir_t91.csv`). Every row has persons = males + females, every order adds from its sub-orders,
-        every class from its orders, classes I-V to the 2,145,729 and 1,963,817 "of specified occupations and
-        conditions", and with class VI to all persons (4,704,750; 4,458,775), in all six columns. One misprint
-        (`KNOWN`): women in board and lodging 1901 printed 5,570, 5,572 by the age columns (240 + 5,332), persons and
-        the order. Not drawn: class V mixes makers and dealers. Class IV 936,759 (1891), 876,062 (1901); class V
-        656,410, 639,413; general labourers (22.2) 133,082, 139,272; students (3.5) 93,280, 8,378.
-      - C5c2c2c2 1901 lines: the same report's Table 20 (males, from p. 117, image n162) and the females' table after
-        it, all occupations by age, religion and education (only the Total column needed); dealer lines picked out
-        per sub-order and checked against Table 91.
-      - C5c2c2c3 1891 lines: the 1891 General Report (`op1252985-1001`), its table of occupations for Ireland.
-      - C5c2c2c4 1911: no General Report on the Internet Archive; the four province volumes (`op1256115`-`op1256118`,
-        Leinster, Munster, Ulster, Connaught) each end with the province's occupation table, to be summed and checked
-        against the published total for Ireland.
-      Watch: in 1891 class I holds the students (93,280 "literary and scientific persons", 8,378 in 1901), class IV
-      counts farmers' relatives, order 22 holds the general labourers (left out, as Booth); the 1891-1901 changes of
-      practice need a break or a note. Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become
-      available.
+- [x] C5c2c2c (2026-10-25) Ireland 1891-1911 (new `bidb/change_work_ir.py`, `bidb/change_work_ir_1911.py`). Ireland kept
+      the six-class classification of 1881 to 1911, with "working and dealing" sub-orders, so dealers needed the lines:
+      - [x] C5c2c2c1 1891 and 1901 sub-orders: 1901 General Report (Cd. 1190, `op1254515-1001`) Table 91 (6 classes, 24
+        orders, 80 sub-orders, `work_census_ir_t91.csv`), every row and total checked; one misprint (`KNOWN`).
+      - [x] C5c2c2c2 1901 lines: Table 20 of the same report (males pp. 119-124, females pp. 125-130; the item's page
+        views crop the left-hand pages at the gutter, the uncropped scans are in its `_images.zip`).
+      - [x] C5c2c2c3 1891 lines: the 1891 General Report (C. 6780, `op1252985-1001`), Table 19 (pp. 114-128).
+      - [x] C5c2c2c4 1911: the four province volumes' Summary Tables XIX (classes, sub-orders) and XX (lines),
+        `work_census_ir_1911.csv`; the provinces add to 4,390,219 persons.
+      Only the sub-orders that mix sectors were read line by line (orders 8-23, the students): 1,762 lines in
+      `work_census_ir_lines.csv`, every sub-order equal to its printed total for each sex, year and province. Grouped as
+      Scotland's lines; tobacconists, provision dealers, bakers and confectioners shared out as Scotland's 1901 lines;
+      students and general labourers left out (5.8% of the occupied in 1891, 6.0% in 1901, 8.2% in 1911). Farming,
+      fishing and mining 48.2%, 47.4%, 46.4%; making and building 21.8%, 21.8%, 21.3%; services 30.1%, 30.8%, 32.3%.
+      Drawn on "Work by sector: Ireland" between breaks at 1891 and 1926.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
       as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already

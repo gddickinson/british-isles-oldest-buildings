@@ -1365,3 +1365,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   persons" (mostly students) 93,280 and 8,378.
 - Not drawn yet: class V's orders join makers and dealers. DATA_LICENSE.md row, INTERFACE.md. Tests 276 OK (5 new).
 - Next: C5c2c2c2 (1901 occupation lines, Table 20 of the same report, males from p. 117, image n162).
+
+## 2026-10-25 — C5c2c2c2-c4: Ireland's occupation lines 1891, 1901, 1911; Ireland drawn 1891-1911
+- 1901: Table 20 of the General Report (Cd. 1190). The page views (`page/n<N>`) crop the left-hand pages at the gutter
+  and cut off the occupation names; the uncropped scans are file N+1 of `op1254515-1001_images.zip`, fetched with
+  `bidb.remote_zip`. 1891: Table 19 of the General Report (C. 6780, `op1252985-1001`). 1911: no General Report online,
+  so the four province volumes (`op1256115`-`op1256118`), Summary Tables XIX (classes, sub-orders) and XX (lines).
+- Read by eye from the page images (tesseract tried on the 1911 pages: names and figures too unreliable). Only the
+  sub-orders that mix sectors were read line by line (orders 8-23 and the students of 3.5): 1,762 lines in
+  `work_census_ir_lines.csv`; every sub-order equals its printed total for each sex, year and province, and the 1911
+  provinces add to Ireland's 4,390,219 persons. The lines needed no correction.
+- New `bidb/change_work_ir_1911.py` (75 lines); `change_work_ir` gains the lines, `check_lines`, `sectors`, `shares`,
+  `left_out`. Ireland: farming, fishing and mining 48.2% (1891), 47.4% (1901), 46.4% (1911); making and building 21.8,
+  21.8, 21.3%; services 30.1, 30.8, 32.3%; general labourers left out 5.8, 6.0, 8.2%. Drawn on "Work by sector:
+  Ireland, 1841-2022" between breaks at 1891 and 1926. Sources `census_ir_1891`, `census_ir_1901_lines`,
+  `census_ir_1911`; DATA_LICENSE.md rows; INTERFACE.md.
+- Tests 283 OK (7 new); ui_check `change_work_nations`, `change_work` pass; screenshot of the Ireland graph checked.
+  Hosted copy and release not updated.
+- Next: C5d (prices and real wages).

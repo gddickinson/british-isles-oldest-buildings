@@ -33,7 +33,8 @@ class Written(unittest.TestCase):
         s = wn.series(wn.load("irl"), {1926: (53.6, 13.0, 33.4)})
         self.assertEqual([y for y, _ in s["primary"]], [1841, 1851, 1861, 1871, 1881, 1926])
         rows = {r["id"]: r for r in json.loads((DATA.parent / "series.json").read_text())}
-        self.assertEqual(rows["work_irl_primary"]["breaks"][0][0], 1926)
+        self.assertEqual([b[0] for b in rows["work_irl_primary"]["breaks"]], [1891, 1926])
+        self.assertIn("census_ir_1911", rows["work_irl_primary"]["sources"])
         self.assertEqual(rows["work_irl_primary"]["models"], ["work_irl_secondary", "work_irl_tertiary"])
         self.assertEqual([b[0] for b in rows["work_sc_primary"]["breaks"]], [1891, 1901])
         self.assertIn("census_sc_1891", rows["work_sc_primary"]["sources"])

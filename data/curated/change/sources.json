@@ -1074,5 +1074,38 @@
   "url": "https://archive.org/details/tenthdecennialce0002vari",
   "used": "Scotland at the census of 1891: shares of those occupied in farming, fishing and mining, making and building, and services, read from the page images (data/curated/change/data/work_census_sc_1891.csv: classes I-IV and dealer-free sub-orders whole, the rest of class V line by line, every sub-order and class checked against its printed total); grouped as 1901-1911, lines joining makers and dealers shared out as in 1901, general labourers left out (roadmap C5c2c2b)",
   "checked": "2026-10-25, page images read (leaves 41-48)"
+ },
+ "census_ir_1891": {
+  "short": "Census of Ireland 1891, Part II, General Report (C. 6780): occupations",
+  "publisher": "Registrar General for Ireland (HMSO)",
+  "citation": "Census of Ireland, 1891. Part II. General Report, with illustrative maps and diagrams, tables, and appendix. C. 6780. Dublin: HMSO, 1892. Table 19, Occupations of males and females in Ireland by ages, religious professions and education, pp. 114-128 (the Total column). Page images: Internet Archive, op1252985-1001.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/op1252985-1001",
+  "used": "Ireland at the census of 1891: the occupation lines of every sub-order that mixes sectors (orders 8-23) and the students, read from the page images (data/curated/change/data/work_census_ir_lines.csv), each sub-order checked against Table 91 of the 1901 report; grouped as Scotland's census lines: every dealer in services, lines joining makers and dealers shared out as Scotland's in 1901, students and general labourers left out (roadmap C5c2c2c3)",
+  "checked": "2026-10-25, page images read (leaves 161-175)"
+ },
+ "census_ir_1901_lines": {
+  "short": "Census of Ireland 1901, Part II, General Report (Cd. 1190): occupation lines",
+  "publisher": "Registrar General for Ireland (HMSO)",
+  "citation": "Census of Ireland, 1901. Part II. General Report, with illustrative maps and diagrams, tables, and appendix. Cd. 1190. London: HMSO, 1902. Table 20, Occupations of males and females in Ireland by ages, religious professions and education, pp. 117-130 (the Total column); Table 91, occupations in 1891 and 1901 by class, order and sub-order, pp. 398-401. Page images: Internet Archive, op1254515-1001.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/op1254515-1001",
+  "used": "Ireland at the censuses of 1891 and 1901: Table 91 (classes, orders, sub-orders, data/curated/change/data/work_census_ir_t91.csv) and the 1901 occupation lines of every sub-order that mixes sectors (work_census_ir_lines.csv), each checked against Table 91; grouped as Scotland's census lines: every dealer in services, lines joining makers and dealers shared out as Scotland's in 1901, students and general labourers left out (roadmap C5c2c2c1, C5c2c2c2)",
+  "checked": "2026-10-25, page images read (Table 91 n443-n446; Table 20 from the item's images zip, files 163-177)"
+ },
+ "census_ir_1911": {
+  "short": "Census of Ireland 1911, the four province volumes: occupations",
+  "publisher": "Registrar General for Ireland (HMSO)",
+  "citation": "Census of Ireland, 1911. Area, houses, and population: also the ages, civil or conjugal condition, occupations, birthplaces, religion, and education of the people. Province of Leinster (Cd. 6049), Munster, Ulster and Connaught. London: HMSO, 1912-13. Summary Tables of each province: Table XIX, occupations by class, order and sub-order; Table XX, occupations of males and of females by ages, religious professions and education (the Total column). Page images: Internet Archive, op1256115-1001 to op1256118-1001.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/op1256115-1001",
+  "used": "Ireland at the census of 1911, the four provinces summed: Table XIX (data/curated/change/data/work_census_ir_1911.csv; every class and sub-order checked, the provinces adding to 4,390,219 persons) and the occupation lines of every sub-order that mixes sectors (work_census_ir_lines.csv), each checked against its province's Table XIX; grouped as Scotland's census lines: every dealer in services, lines joining makers and dealers shared out as Scotland's in 1901, students and general labourers left out (roadmap C5c2c2c4)",
+  "checked": "2026-10-25, page images read (Leinster n1421-n1436, Munster n1303-n1318, Ulster n1388-n1405, Connaught n777-n788)"
  }
 }

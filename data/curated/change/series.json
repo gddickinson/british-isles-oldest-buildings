@@ -4450,12 +4450,15 @@
   "id": "work_irl_primary",
   "theme": "Prosperity and work",
   "title": "Work by sector: Ireland, 1841-2022",
-  "region": "Ireland (the whole island to 1881; the state from 1926)",
+  "region": "Ireland (the whole island to 1911; the state from 1926)",
   "unit": "%",
   "unit_long": "% of those in work",
   "label": "Farming, fishing and mining",
   "sources": [
    "booth_1886",
+   "census_ir_1891",
+   "census_ir_1901_lines",
+   "census_ir_1911",
    "cso_cnnl1",
    "cso_census_industry"
   ],
@@ -4465,13 +4468,17 @@
    "work_irl_secondary",
    "work_irl_tertiary"
   ],
-  "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Ireland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (4.9-10.2% of the self-supporting, 1841-1881). General labourers, left out, were many in Ireland and most worked on the land, so farming is understated there. From 1926 the line is the state's census shares by industry (as on the sector graphs), after a break: the whole island to 1881, the 26 counties from 1926. The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 54.1% in 1841, 46.4% in 1881; services 15.1% and 33.5%. The state: farming, fishing and mining 53.6% in 1926, 4.0% in 2022.",
+  "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Ireland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (4.9-10.2% of the self-supporting, 1841-1881). General labourers, left out, were many in Ireland and most worked on the land, so farming is understated there. From 1891 the censuses' own tables, line by line (1891 and 1901 from the 1901 General Report, 1911 the four province volumes summed): every dealer in services, lines joining makers and dealers shared out as Scotland's in 1901, students and general labourers left out (8.2%-6.0%-5.8% of those occupied). From 1926 the line is the state's census shares by industry (as on the sector graphs), after a break: the whole island to 1911, the 26 counties from 1926. The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 54.1% in 1841, 46.4% in 1881; services 15.1% and 33.5%. Census: farming, fishing and mining 48.2% in 1891, 47.4% in 1901, 46.4% in 1911; services 30.1%, 30.8%, 32.3%. The state: farming, fishing and mining 53.6% in 1926, 4.0% in 2022.",
   "gap": 10,
   "zero": true,
   "breaks": [
    [
+    1891,
+    "From 1891 the censuses' own lines grouped by the same rule, every dealer in services, students and general labourers alone left out; to 1881 Booth's regrouping"
+   ],
+   [
     1926,
-    "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1881 the whole island, Booth's regrouping of the censuses by occupation"
+    "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1911 the whole island, by occupation"
    ]
   ]
  },
@@ -4479,12 +4486,15 @@
   "id": "work_irl_secondary",
   "theme": "Prosperity and work",
   "title": "Work by sector: Ireland: making and building",
-  "region": "Ireland (the whole island to 1881; the state from 1926)",
+  "region": "Ireland (the whole island to 1911; the state from 1926)",
   "unit": "%",
   "unit_long": "% of those in work",
   "label": "Making and building",
   "sources": [
    "booth_1886",
+   "census_ir_1891",
+   "census_ir_1901_lines",
+   "census_ir_1911",
    "cso_cnnl1",
    "cso_census_industry"
   ],
@@ -4495,8 +4505,12 @@
   "gap": 10,
   "breaks": [
    [
+    1891,
+    "From 1891 the censuses' own lines grouped by the same rule, every dealer in services, students and general labourers alone left out; to 1881 Booth's regrouping"
+   ],
+   [
     1926,
-    "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1881 the whole island, Booth's regrouping of the censuses by occupation"
+    "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1911 the whole island, by occupation"
    ]
   ]
  },
@@ -4504,12 +4518,15 @@
   "id": "work_irl_tertiary",
   "theme": "Prosperity and work",
   "title": "Work by sector: Ireland: services",
-  "region": "Ireland (the whole island to 1881; the state from 1926)",
+  "region": "Ireland (the whole island to 1911; the state from 1926)",
   "unit": "%",
   "unit_long": "% of those in work",
   "label": "Services",
   "sources": [
    "booth_1886",
+   "census_ir_1891",
+   "census_ir_1901_lines",
+   "census_ir_1911",
    "cso_cnnl1",
    "cso_census_industry"
   ],
@@ -4520,8 +4537,12 @@
   "gap": 10,
   "breaks": [
    [
+    1891,
+    "From 1891 the censuses' own lines grouped by the same rule, every dealer in services, students and general labourers alone left out; to 1881 Booth's regrouping"
+   ],
+   [
     1926,
-    "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1881 the whole island, Booth's regrouping of the censuses by occupation"
+    "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1911 the whole island, by occupation"
    ]
   ]
  }

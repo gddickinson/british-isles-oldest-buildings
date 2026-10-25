@@ -1,0 +1,1763 @@
+year,province,sex,sub_order,line,value,kind,edition,image,page
+1891,Ireland,m,3.5,Student (including persons aged 15 years and upwards returned as Scholar),43222,n,op1252985-1001,n161,114
+1891,Ireland,m,8.1,"Horse-Proprietor, Breeder, Dealer",593,d,op1252985-1001,n163,116
+1891,Ireland,m,8.1,"Groom, Horse Keeper, Horse Breaker",1722,s,op1252985-1001,n163,116
+1891,Ireland,m,8.1,"Veterinary Surgeon, Farrier",744,s,op1252985-1001,n163,116
+1891,Ireland,m,8.1,"Cattle, Sheep, Pig-Dealer, Salesman",4681,d,op1252985-1001,n163,116
+1891,Ireland,m,8.1,Drover,603,d,op1252985-1001,n163,116
+1891,Ireland,m,8.1,Gamekeeper,1198,s,op1252985-1001,n163,116
+1891,Ireland,m,8.1,"Dog, Bird, Animal-Keeper, Dealer",87,d,op1252985-1001,n163,116
+1891,Ireland,m,8.1,Fisherman,11201,p,op1252985-1001,n163,116
+1891,Ireland,m,8.1,"Knacker, Cat's Meat Dealer, &c., &c.",4,m,op1252985-1001,n163,116
+1891,Ireland,m,9.1,"Publisher, Bookseller, Librarian",385,d,op1252985-1001,n163,116
+1891,Ireland,m,9.1,"Music-Publisher, Seller, Printer",18,m,op1252985-1001,n163,116
+1891,Ireland,m,9.1,Bookbinder,639,m,op1252985-1001,n163,116
+1891,Ireland,m,9.1,Printer (including employés),4241,m,op1252985-1001,n163,116
+1891,Ireland,m,9.1,"Newspaper Agent, News Room Keeper",273,d,op1252985-1001,n163,116
+1891,Ireland,m,9.1,Others,5,m,op1252985-1001,n163,116
+1891,Ireland,m,9.2,"Lithographer, Lithographic Printer",576,m,op1252985-1001,n163,116
+1891,Ireland,m,9.2,Copper Plate and Steel Plate Printer,2,m,op1252985-1001,n163,116
+1891,Ireland,m,9.2,"Map and Print-Colourer, Seller",7,m,op1252985-1001,n163,116
+1891,Ireland,m,11.2,"Cabinet Maker, Upholsterer",2035,m,op1252985-1001,n164,117
+1891,Ireland,m,11.2,French Polisher,260,m,op1252985-1001,n164,117
+1891,Ireland,m,11.2,"Furniture-Broker, Dealer",209,d,op1252985-1001,n164,117
+1891,Ireland,m,11.2,"Locksmith, Bellhanger",157,m,op1252985-1001,n164,117
+1891,Ireland,m,11.2,Gas Fitter,290,m,op1252985-1001,n164,117
+1891,Ireland,m,11.2,"House and Shop Fittings-Maker, Dealer",74,m,op1252985-1001,n164,117
+1891,Ireland,m,11.2,"Funeral Furniture Maker, Undertaker",70,s,op1252985-1001,n164,117
+1891,Ireland,m,11.2,Others,3,m,op1252985-1001,n164,117
+1891,Ireland,m,11.3,Wood Carver,139,m,op1252985-1001,n164,117
+1891,Ireland,m,11.3,"Carver, Gilder",195,m,op1252985-1001,n164,117
+1891,Ireland,m,11.3,Dealer in Works of Art,30,d,op1252985-1001,n164,117
+1891,Ireland,m,11.3,"Figure, Image-Maker, Dealer",33,m,op1252985-1001,n164,117
+1891,Ireland,m,11.3,"Animal, Bird, &c.-Preserver; Naturalist",27,m,op1252985-1001,n164,117
+1891,Ireland,m,11.3,Artificial Flower Maker,3,m,op1252985-1001,n164,117
+1891,Ireland,m,11.3,Others,1,m,op1252985-1001,n164,117
+1891,Ireland,m,14.3,"Chemist, Druggist",1419,d,op1252985-1001,n165,118
+1891,Ireland,m,14.3,Manufacturing Chemist,123,m,op1252985-1001,n165,118
+1891,Ireland,m,14.3,Alkali Manufacture,10,m,op1252985-1001,n165,118
+1891,Ireland,m,14.3,Drysalter,3,d,op1252985-1001,n165,118
+1891,Ireland,m,14.3,Others,4,m,op1252985-1001,n165,118
+1891,Ireland,m,15.1,"Tobacco Manufacturer, Tobacconist",779,x:354/353+354,op1252985-1001,n165,118
+1891,Ireland,m,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",121,m,op1252985-1001,n165,118
+1891,Ireland,m,16.2,"Maltster, Distiller",1031,m,op1252985-1001,n165,118
+1891,Ireland,m,16.2,Brewer,1367,m,op1252985-1001,n165,118
+1891,Ireland,m,16.2,"Beerseller; Ale, Porter, Cider-Dealer",23,d,op1252985-1001,n165,118
+1891,Ireland,m,16.2,Cellarman,473,d,op1252985-1001,n165,118
+1891,Ireland,m,16.2,"Wine and Spirit-Merchant, Agent",1892,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Milkseller, Dairyman",1479,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Cheesemonger, Butterman",366,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Butcher, Meat Salesman",6446,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Provision-Curer, Dealer",2596,x:336/335+336,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Poulterer, Game Dealer",1223,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,Fishmonger,943,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Corn, Flour, Seed-Merchant, Dealer",1391,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,Corn Miller,2768,m,op1252985-1001,n165,118
+1891,Ireland,m,16.3,Baker,8721,x:344/343+344,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Confectioner, Pastry Cook",494,x:344/343+344,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Greengrocer, Fruiterer",831,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Mustard, Vinegar, Spice, Pickle-Maker, Dealer",4,m,op1252985-1001,n165,118
+1891,Ireland,m,16.3,Sugar Refiner,55,m,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",13026,d,op1252985-1001,n165,118
+1891,Ireland,m,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",413,m,op1252985-1001,n165,118
+1891,Ireland,m,16.3,Others dealing in Food,6,d,op1252985-1001,n165,118
+1891,Ireland,m,17.1,Woolstapler,93,d,op1252985-1001,n166,119
+1891,Ireland,m,17.1,Woollen Cloth Manufacture,2850,m,op1252985-1001,n166,119
+1891,Ireland,m,17.1,"Wool, Woollen Goods-Dyer, Printer",62,m,op1252985-1001,n166,119
+1891,Ireland,m,17.1,"Worsted, Stuff-Manufacture",25,m,op1252985-1001,n166,119
+1891,Ireland,m,17.1,Flannel Manufacture,12,m,op1252985-1001,n166,119
+1891,Ireland,m,17.1,Fuller,2,m,op1252985-1001,n166,119
+1891,Ireland,m,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",36,d,op1252985-1001,n166,119
+1891,Ireland,m,17.2,"Silk, Silk Goods-Manufacture",177,m,op1252985-1001,n166,119
+1891,Ireland,m,17.2,"Silk-Dyer, Printer",2,m,op1252985-1001,n166,119
+1891,Ireland,m,17.2,"Silk-Merchant, Dealer",23,d,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Cotton, Cotton Goods-Manufacture",655,m,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",157,m,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Cotton, Calico-Warehouseman, Dealer",12,d,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Flax, Linen-Manufacturer, Dealer",30212,m,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Lace-Manufacturer, Dealer",17,m,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Tape-Manufacturer, Dealer",29,m,op1252985-1001,n166,119
+1891,Ireland,m,17.3,"Thread-Manufacturer, Dealer",396,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,Weaver (undefined),831,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",616,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,Factory Hand (Textile) undefined,674,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,Felt Manufacture,68,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,Carpet and Rug Manufacture,58,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,"Draper, Linen Draper, Mercer",8287,d,op1252985-1001,n166,119
+1891,Ireland,m,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",30,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,"Trimming-Maker, Dealer",38,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,Embroiderer,36,m,op1252985-1001,n166,119
+1891,Ireland,m,17.5,Others,12,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Hatter, Hat Manufacture (not Straw)",214,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Straw Hat, Bonnet, Plait-Manufacture",4,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,Tailor,14927,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Milliner, Dressmaker",31,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,Shirtmaker,486,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,Hosiery Manufacture,145,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Hosier, Haberdasher",103,d,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Glover, Glove Maker",9,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Button-Maker, Dealer",5,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Shoe, Boot-Maker, Dealer",20218,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Patten, Clog-Maker",98,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Wig Maker, Hair Dresser",1278,s,op1252985-1001,n166,119
+1891,Ireland,m,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",104,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,Accoutrement Maker,4,m,op1252985-1001,n166,119
+1891,Ireland,m,18.1,Others,69,m,op1252985-1001,n166,119
+1891,Ireland,m,20.1,"Oil Miller; Oil Cake-Maker, Dealer",42,m,op1252985-1001,n167,120
+1891,Ireland,m,20.1,Oil and Colourman,40,d,op1252985-1001,n167,120
+1891,Ireland,m,20.1,"Floor Cloth, Oil Cloth-Manufacturer",2,m,op1252985-1001,n167,120
+1891,Ireland,m,20.1,Japanner,16,m,op1252985-1001,n167,120
+1891,Ireland,m,20.1,"India Rubber, Gutta Percha-Worker, Dealer",15,m,op1252985-1001,n167,120
+1891,Ireland,m,20.1,"Waterproof Goods-Maker, Dealer",7,m,op1252985-1001,n167,120
+1891,Ireland,m,20.1,Others,3,m,op1252985-1001,n167,120
+1891,Ireland,m,20.3,"Timber, Wood-Merchant, Dealer",479,d,op1252985-1001,n167,120
+1891,Ireland,m,20.3,Sawyer,1351,m,op1252985-1001,n167,120
+1891,Ireland,m,20.3,"Lath, Wooden Fence, Hurdle-Maker",76,m,op1252985-1001,n167,120
+1891,Ireland,m,20.3,"Wood Turner, Box Maker",606,m,op1252985-1001,n167,120
+1891,Ireland,m,20.3,"Cooper; Hoop-Maker, Bender",4253,m,op1252985-1001,n167,120
+1891,Ireland,m,20.3,"Cork, Bark-Cutter, Worker, Dealer",353,m,op1252985-1001,n167,120
+1891,Ireland,m,20.3,Others,4,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,Paper Manufacture,313,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,Envelope Maker,5,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,"Stationer, Law Stationer",499,d,op1252985-1001,n167,120
+1891,Ireland,m,20.4,"Card, Pattern-card-Maker",12,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,Paper Stainer,15,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,"Paper Box, Paper Bag-Maker",51,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,"Ticket, Label-Writer",18,m,op1252985-1001,n167,120
+1891,Ireland,m,20.4,Others,184,m,op1252985-1001,n167,120
+1891,Ireland,m,21.2,"Coal-Merchant, Dealer",594,d,op1252985-1001,n167,120
+1891,Ireland,m,21.2,Coalheaver,1494,s,op1252985-1001,n167,120
+1891,Ireland,m,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",38,p,op1252985-1001,n167,120
+1891,Ireland,m,21.2,Gas Works Service,1307,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Stone Quarrier,725,p,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Stone-Cutter, Dresser, Dealer",2556,p,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Slate Quarrier,92,p,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Slate-Worker, Dealer",62,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Limeburner,198,p,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",65,p,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Well-Sinker, Borer",63,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Plaster, Cement-Manufacture",44,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Brick, Tile-Maker, Burner, Dealer",561,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Paviour,208,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Road-Contractor, Surveyor, Inspector",619,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Road Labourer,897,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Railway Contractor,65,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Platelayer,914,s,op1252985-1001,n167,120
+1891,Ireland,m,21.3,"Railway Labourer, Navvy",3003,m,op1252985-1001,n167,120
+1891,Ireland,m,21.3,Others,7,m,op1252985-1001,n167,120
+1891,Ireland,m,21.4,"Earthenware, China, Porcelain-Manufacture",133,m,op1252985-1001,n168,121
+1891,Ireland,m,21.4,Glass Manufacture,358,m,op1252985-1001,n168,121
+1891,Ireland,m,21.4,"Earthenware, China, Glass-Dealer",232,d,op1252985-1001,n168,121
+1891,Ireland,m,21.8,"Iron, Iron Goods-Manufacture",4067,m,op1252985-1001,n168,121
+1891,Ireland,m,21.8,"Steel, Steel Goods-Manufacture",12,m,op1252985-1001,n168,121
+1891,Ireland,m,21.8,Blacksmith,13569,m,op1252985-1001,n168,121
+1891,Ireland,m,21.8,Whitesmith,221,m,op1252985-1001,n168,121
+1891,Ireland,m,21.8,Nail Manufacture,1059,m,op1252985-1001,n168,121
+1891,Ireland,m,21.8,"Anchor, Chain-Manufacture",15,m,op1252985-1001,n168,121
+1891,Ireland,m,21.8,"Ironmonger; Hardware-Dealer, Merchant",1639,d,op1252985-1001,n168,121
+1891,Ireland,m,21.8,Others,7,m,op1252985-1001,n168,121
+1891,Ireland,m,22.1,"General Shopkeeper, Dealer",12356,d,op1252985-1001,n168,121
+1891,Ireland,m,22.1,Pawnbroker,864,d,op1252985-1001,n168,121
+1891,Ireland,m,22.1,"Costermonger, Huckster, Street Seller",1410,d,op1252985-1001,n168,121
+1891,Ireland,m,22.1,"Manufacturer, Manager, Superintendent (undefined)",737,m,op1252985-1001,n168,121
+1891,Ireland,m,22.1,Contractor (undefined),132,m,op1252985-1001,n168,121
+1891,Ireland,m,22.2,General Labourer,113981,o,op1252985-1001,n168,121
+1891,Ireland,m,22.2,"Artizan, Mechanic (undefined)",1790,m,op1252985-1001,n168,121
+1891,Ireland,m,22.2,"Engine Driver, Stoker, Fireman (not Railway, Marine, nor Agricultural)",2656,m,op1252985-1001,n168,121
+1891,Ireland,m,22.2,"Apprentice, Assistant (undefined)",503,m,op1252985-1001,n168,121
+1891,Ireland,m,22.2,Factory Labourer (undefined),2703,m,op1252985-1001,n168,121
+1891,Ireland,m,22.2,"Machinist, Machine Worker (undefined)",704,m,op1252985-1001,n168,121
+1891,Ireland,m,23.1,Town Drainage Service,2,s,op1252985-1001,n168,121
+1891,Ireland,m,23.1,"Chimney Sweep, Soot Merchant",492,s,op1252985-1001,n168,121
+1891,Ireland,m,23.1,"Scavenger, Crossing Sweeper",101,s,op1252985-1001,n168,121
+1891,Ireland,m,23.1,"Rag-Gatherer, Dealer",355,d,op1252985-1001,n168,121
+1891,Ireland,f,3.5,Student (including persons aged 15 years and upwards returned as Scholar),49270,n,op1252985-1001,n169,122
+1891,Ireland,f,8.1,"Horse-Proprietor, Breeder, Dealer",1,d,op1252985-1001,n170,123
+1891,Ireland,f,8.1,"Cattle, Sheep, Pig-Dealer",12,d,op1252985-1001,n170,123
+1891,Ireland,f,8.1,"Dog, Bird, Animal-Keeper, Dealer",38,d,op1252985-1001,n170,123
+1891,Ireland,f,8.1,Fisherwoman,77,p,op1252985-1001,n170,123
+1891,Ireland,f,9.1,"Publisher, Bookseller, Librarian",83,d,op1252985-1001,n170,123
+1891,Ireland,f,9.1,"Music-Publisher, Seller, Printer",11,m,op1252985-1001,n170,123
+1891,Ireland,f,9.1,Bookbinder,1213,m,op1252985-1001,n170,123
+1891,Ireland,f,9.1,Printer (including employées),105,m,op1252985-1001,n170,123
+1891,Ireland,f,9.1,"Newspaper Agent, News Room Keeper",139,d,op1252985-1001,n170,123
+1891,Ireland,f,9.1,Others,1,m,op1252985-1001,n170,123
+1891,Ireland,f,11.2,"Cabinet Maker, Upholsterer",287,m,op1252985-1001,n171,124
+1891,Ireland,f,11.2,French Polisher,428,m,op1252985-1001,n171,124
+1891,Ireland,f,11.2,"Furniture-Broker, Dealer",97,d,op1252985-1001,n171,124
+1891,Ireland,f,11.2,"House and Shop Fittings-Maker, Dealer",3,m,op1252985-1001,n171,124
+1891,Ireland,f,11.2,"Funeral Furniture Maker, Undertaker",10,s,op1252985-1001,n171,124
+1891,Ireland,f,11.3,Wood Carver,17,m,op1252985-1001,n171,124
+1891,Ireland,f,11.3,"Carver, Gilder",11,m,op1252985-1001,n171,124
+1891,Ireland,f,11.3,Dealer in Works of Art,10,d,op1252985-1001,n171,124
+1891,Ireland,f,11.3,"Animal, Bird, &c.-Preserver; Naturalist",2,m,op1252985-1001,n171,124
+1891,Ireland,f,11.3,Artificial Flower Maker,21,m,op1252985-1001,n171,124
+1891,Ireland,f,11.3,Others,1,m,op1252985-1001,n171,124
+1891,Ireland,f,14.3,"Chemist, Druggist",40,d,op1252985-1001,n172,125
+1891,Ireland,f,14.3,Others,31,m,op1252985-1001,n172,125
+1891,Ireland,f,15.1,"Tobacco Manufacturer, Tobacconist",536,x:354/353+354,op1252985-1001,n172,125
+1891,Ireland,f,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",70,m,op1252985-1001,n172,125
+1891,Ireland,f,16.2,"Maltster, Distiller",1,m,op1252985-1001,n172,125
+1891,Ireland,f,16.2,Brewer,5,m,op1252985-1001,n172,125
+1891,Ireland,f,16.2,"Beerseller; Ale, Porter, Cider-Dealer",20,d,op1252985-1001,n172,125
+1891,Ireland,f,16.2,"Wine and Spirit-Merchant, Agent",360,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Milkseller, Dairykeeper",740,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Cheesemonger, Butter Dealer",74,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,Butcher,326,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Provision-Curer, Dealer",1451,x:336/335+336,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Poulterer, Game Dealer",361,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,Fishmonger,1417,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Corn, Flour, Seed-Merchant, Dealer",107,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,Corn Miller,34,m,op1252985-1001,n172,125
+1891,Ireland,f,16.3,Baker,299,x:344/343+344,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Confectioner, Pastry Cook",1358,x:344/343+344,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Greengrocer, Fruiterer",1780,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,Sugar Refiner,9,m,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",4080,d,op1252985-1001,n172,125
+1891,Ireland,f,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",12,m,op1252985-1001,n172,125
+1891,Ireland,f,17.1,Woolstapler,14,d,op1252985-1001,n172,125
+1891,Ireland,f,17.1,Woollen Cloth Manufacture,3488,m,op1252985-1001,n172,125
+1891,Ireland,f,17.1,"Wool, Woollen Goods-Dyer, Printer",7,m,op1252985-1001,n172,125
+1891,Ireland,f,17.1,"Worsted, Stuff-Manufacture",17,m,op1252985-1001,n172,125
+1891,Ireland,f,17.1,Flannel Manufacture,7,m,op1252985-1001,n172,125
+1891,Ireland,f,17.1,Blanket Manufacture,1,m,op1252985-1001,n172,125
+1891,Ireland,f,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",16,d,op1252985-1001,n172,125
+1891,Ireland,f,17.2,"Silk, Silk Goods-Manufacture",122,m,op1252985-1001,n172,125
+1891,Ireland,f,17.2,"Silk-Merchant, Dealer",5,d,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Cotton, Cotton Goods-Manufacture",1676,m,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",19,m,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Cotton, Calico-Warehousewoman, Dealer",3,d,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Flax, Linen-Manufacturer, Dealer",58391,m,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Lace-Manufacturer, Dealer",557,m,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Tape-Manufacturer, Dealer",59,m,op1252985-1001,n172,125
+1891,Ireland,f,17.3,"Thread-Manufacturer, Dealer",699,m,op1252985-1001,n172,125
+1891,Ireland,f,17.5,Weaver (undefined),1092,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",161,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,"Factory Hand (Textile), undefined",1972,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,Felt Manufacture,13,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,Carpet and Rug Manufacture,36,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,"Draper, Linen Draper, Mercer",3547,d,op1252985-1001,n173,126
+1891,Ireland,f,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",3750,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,"Trimming-Maker, Dealer",45,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,Embroiderer,4182,m,op1252985-1001,n173,126
+1891,Ireland,f,17.5,Others (including Spinners),2769,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Hatter, Hat Manufacture (not Straw)",114,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Straw Hat, Bonnet, Plait-Manufacture",78,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,Tailoress,3023,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Milliner, Dressmaker, Staymaker",46756,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Shirtmaker, Seamstress",63728,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,Hosiery Manufacture,431,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Hosier, Haberdasher",80,d,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Glover, Glove Maker",69,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Button-Maker, Dealer",1,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Shoe, Boot-Maker, Dealer",1190,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Wig Maker, Hair Dresser",29,s,op1252985-1001,n173,126
+1891,Ireland,f,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",42,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,Accoutrement Maker,2,m,op1252985-1001,n173,126
+1891,Ireland,f,18.1,Others,191,m,op1252985-1001,n173,126
+1891,Ireland,f,20.1,"Oil Miller; Oil Cake-Maker, Dealer",7,m,op1252985-1001,n173,126
+1891,Ireland,f,20.1,Oil and Colour Merchant,8,d,op1252985-1001,n173,126
+1891,Ireland,f,20.1,Japanner,3,m,op1252985-1001,n173,126
+1891,Ireland,f,20.1,"India Rubber, Gutta Percha-Worker, Dealer",3,m,op1252985-1001,n173,126
+1891,Ireland,f,20.1,"Waterproof Goods-Maker, Dealer",20,m,op1252985-1001,n173,126
+1891,Ireland,f,20.3,"Timber, Wood-Merchant, Dealer",23,d,op1252985-1001,n174,127
+1891,Ireland,f,20.3,"Sawyer, Saw Mills Service",11,m,op1252985-1001,n174,127
+1891,Ireland,f,20.3,"Wood Turner, Box Maker",127,m,op1252985-1001,n174,127
+1891,Ireland,f,20.3,"Cooper; Hoop-Maker, Bender",10,m,op1252985-1001,n174,127
+1891,Ireland,f,20.3,"Cork, Bark-Cutter, Worker, Dealer",21,m,op1252985-1001,n174,127
+1891,Ireland,f,20.3,Others,1,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,Paper Manufacture,138,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,Envelope Maker,145,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,"Stationer, Law Stationer",626,d,op1252985-1001,n174,127
+1891,Ireland,f,20.4,"Card, Pattern-card-Maker",15,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,Paper Stainer,23,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,"Paper Box, Paper Bag-Maker",1023,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,"Ticket, Label-Writer",11,m,op1252985-1001,n174,127
+1891,Ireland,f,20.4,Others,15,m,op1252985-1001,n174,127
+1891,Ireland,f,21.2,"Coal-Merchant, Dealer",45,d,op1252985-1001,n174,127
+1891,Ireland,f,21.2,Coal Labourer,2,s,op1252985-1001,n174,127
+1891,Ireland,f,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",31,p,op1252985-1001,n174,127
+1891,Ireland,f,21.2,Gas Works Service,1,m,op1252985-1001,n174,127
+1891,Ireland,f,21.3,Stone Dealer,11,d,op1252985-1001,n174,127
+1891,Ireland,f,21.3,"Slate-Worker, Dealer",1,m,op1252985-1001,n174,127
+1891,Ireland,f,21.3,Limeburner,3,p,op1252985-1001,n174,127
+1891,Ireland,f,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",5,p,op1252985-1001,n174,127
+1891,Ireland,f,21.3,"Brick, Tile-Maker, Burner, Dealer",15,m,op1252985-1001,n174,127
+1891,Ireland,f,21.3,Road Contractor,5,m,op1252985-1001,n174,127
+1891,Ireland,f,21.3,Road Labourer,1,m,op1252985-1001,n174,127
+1891,Ireland,f,21.4,"Earthenware, China, Porcelain-Manufacture",82,m,op1252985-1001,n174,127
+1891,Ireland,f,21.4,Glass Manufacture,2,m,op1252985-1001,n174,127
+1891,Ireland,f,21.4,"Earthenware, China, Glass-Dealer",202,d,op1252985-1001,n174,127
+1891,Ireland,f,21.8,"Iron, Iron Goods-Manufacture",1,m,op1252985-1001,n174,127
+1891,Ireland,f,21.8,"Blacksmith, Forge Keeper",8,m,op1252985-1001,n174,127
+1891,Ireland,f,21.8,Nail Manufacture,6,m,op1252985-1001,n174,127
+1891,Ireland,f,21.8,"Ironmonger; Hardware-Dealer, Merchant",193,d,op1252985-1001,n174,127
+1891,Ireland,f,22.1,"General Shopkeeper, Dealer",15605,d,op1252985-1001,n175,128
+1891,Ireland,f,22.1,Pawnbroker,149,d,op1252985-1001,n175,128
+1891,Ireland,f,22.1,"Costermonger, Huckster, Street Seller",922,d,op1252985-1001,n175,128
+1891,Ireland,f,22.1,"Manufacturer, Manager, Superintendent (undefined)",73,m,op1252985-1001,n175,128
+1891,Ireland,f,22.1,Contractor (undefined),2,m,op1252985-1001,n175,128
+1891,Ireland,f,22.2,General Labourer,4999,o,op1252985-1001,n175,128
+1891,Ireland,f,22.2,"Artizan, Mechanic (undefined)",12,m,op1252985-1001,n175,128
+1891,Ireland,f,22.2,"Apprentice, Assistant (undefined)",295,m,op1252985-1001,n175,128
+1891,Ireland,f,22.2,Factory Labourer (undefined),3335,m,op1252985-1001,n175,128
+1891,Ireland,f,22.2,"Machinist, Machine Worker (undefined)",2104,m,op1252985-1001,n175,128
+1891,Ireland,f,23.1,"Rag-Gatherer, Dealer",150,d,op1252985-1001,n175,128
+1901,Ireland,m,3.5,Student (undefined),4170,n,op1254515-1001,n162,117
+1901,Ireland,m,8.1,"Horse-Proprietor, Breeder, Dealer",509,d,op1254515-1001,n164,119
+1901,Ireland,m,8.1,"Groom, Horse Keeper, Horse Breaker",2584,s,op1254515-1001,n164,119
+1901,Ireland,m,8.1,"Veterinary Surgeon, Farrier",806,s,op1254515-1001,n164,119
+1901,Ireland,m,8.1,"Cattle, Sheep, Pig-Dealer, Salesman",4433,d,op1254515-1001,n164,119
+1901,Ireland,m,8.1,Drover,503,d,op1254515-1001,n164,119
+1901,Ireland,m,8.1,Gamekeeper,1353,s,op1254515-1001,n164,119
+1901,Ireland,m,8.1,"Dog, Bird, Animal-Keeper, Dealer",128,d,op1254515-1001,n164,119
+1901,Ireland,m,8.1,Fisherman,10361,p,op1254515-1001,n164,119
+1901,Ireland,m,8.1,"Knacker, Cat's Meat Dealer, &c., &c.",8,m,op1254515-1001,n164,119
+1901,Ireland,m,9.1,"Publisher, Bookseller, Librarian",353,d,op1254515-1001,n164,119
+1901,Ireland,m,9.1,"Music-Publisher, Seller, Printer",22,m,op1254515-1001,n164,119
+1901,Ireland,m,9.1,Bookbinder,559,m,op1254515-1001,n164,119
+1901,Ireland,m,9.1,Printer (including employés),4662,m,op1254515-1001,n164,119
+1901,Ireland,m,9.1,"Newspaper Agent, News Room Keeper",296,d,op1254515-1001,n164,119
+1901,Ireland,m,9.1,Others,10,m,op1254515-1001,n164,119
+1901,Ireland,m,9.2,"Lithographer, Lithographic Printer",436,m,op1254515-1001,n164,119
+1901,Ireland,m,9.2,"Map and Print-Colourer, Seller",8,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Engine and Machine Maker,1904,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Millwright,365,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Fitter and Turner (Engine and Machine),3501,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Boiler Maker,1601,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Spinning and Weaving Machine Maker,512,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Agricultural Machine and Implement Maker,137,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,"Domestic Machinery-Maker, Dealer",10,m,op1254515-1001,n164,119
+1901,Ireland,m,10.1,Others,5,m,op1254515-1001,n164,119
+1901,Ireland,m,10.2,"Tool-Maker, Dealer",41,m,op1254515-1001,n164,119
+1901,Ireland,m,10.2,"Cutler, Scissors Maker",86,m,op1254515-1001,n164,119
+1901,Ireland,m,10.2,File Maker,18,m,op1254515-1001,n164,119
+1901,Ireland,m,10.2,Saw Maker,34,m,op1254515-1001,n164,119
+1901,Ireland,m,10.2,Steel Pen Maker,1,m,op1254515-1001,n164,119
+1901,Ireland,m,10.2,Domestic Implement Maker,22,m,op1254515-1001,n164,119
+1901,Ireland,m,10.3,"Watch Maker, Clock Maker",1190,m,op1254515-1001,n165,120
+1901,Ireland,m,10.3,"Philosophical Instrument Maker, Optician",57,m,op1254515-1001,n165,120
+1901,Ireland,m,10.3,Electrical Apparatus Maker,899,m,op1254515-1001,n165,120
+1901,Ireland,m,10.3,Weighing and Measuring Apparatus Maker,32,m,op1254515-1001,n165,120
+1901,Ireland,m,10.4,Surgical Instrument Maker,29,m,op1254515-1001,n165,120
+1901,Ireland,m,10.5,"Gunsmith, Gun Manufacturer",73,m,op1254515-1001,n165,120
+1901,Ireland,m,10.5,Others,1,m,op1254515-1001,n165,120
+1901,Ireland,m,10.6,"Musical Instrument-Maker, Dealer",200,m,op1254515-1001,n165,120
+1901,Ireland,m,10.7,"Type-Cutter, Founder",12,m,op1254515-1001,n165,120
+1901,Ireland,m,10.7,"Die, Seal, Coin Medal-Maker",13,m,op1254515-1001,n165,120
+1901,Ireland,m,10.8,"Toy-Maker, Dealer",2,m,op1254515-1001,n165,120
+1901,Ireland,m,10.8,"Fishing Rod, Tackle-Maker, Dealer",27,m,op1254515-1001,n165,120
+1901,Ireland,m,10.8,"Apparatus for other Games-Maker, Dealer",13,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,Builder,2883,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,"Carpenter, Joiner",26164,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,Bricklayer,4133,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,Mason,6553,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,"Slater, Tiler",1066,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,"Plasterer, Whitewasher",2536,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,Paperhanger,22,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,Plumber,3132,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,"Painter, Glazier",7381,m,op1254515-1001,n165,120
+1901,Ireland,m,11.1,Others,37,m,op1254515-1001,n165,120
+1901,Ireland,m,11.2,"Cabinet Maker, Upholsterer",2353,m,op1254515-1001,n165,120
+1901,Ireland,m,11.2,French Polisher,359,m,op1254515-1001,n165,120
+1901,Ireland,m,11.2,"Furniture-Broker, Dealer",300,d,op1254515-1001,n165,120
+1901,Ireland,m,11.2,"Locksmith, Bellhanger",78,m,op1254515-1001,n165,120
+1901,Ireland,m,11.2,Gas Fitter,308,m,op1254515-1001,n165,120
+1901,Ireland,m,11.2,"House and Shop Fittings-Maker, Dealer",59,m,op1254515-1001,n165,120
+1901,Ireland,m,11.2,"Funeral Furniture Maker, Undertaker",96,s,op1254515-1001,n165,120
+1901,Ireland,m,11.2,Others,14,m,op1254515-1001,n165,120
+1901,Ireland,m,11.3,Wood Carver,153,m,op1254515-1001,n165,120
+1901,Ireland,m,11.3,"Carver, Gilder",196,m,op1254515-1001,n165,120
+1901,Ireland,m,11.3,Dealer in Works of Art,22,d,op1254515-1001,n165,120
+1901,Ireland,m,11.3,"Figure, Image-Maker, Dealer",23,m,op1254515-1001,n165,120
+1901,Ireland,m,11.3,"Animal, Bird, &c.-Preserver; Naturalist",23,m,op1254515-1001,n165,120
+1901,Ireland,m,11.3,Artificial Flower Maker,1,m,op1254515-1001,n165,120
+1901,Ireland,m,11.3,Others,4,m,op1254515-1001,n165,120
+1901,Ireland,m,12.1,Coachmaker,2841,m,op1254515-1001,n165,120
+1901,Ireland,m,12.1,"Railway Carriage, Railway Wagon-Maker",73,m,op1254515-1001,n165,120
+1901,Ireland,m,12.1,Wheelwright,180,m,op1254515-1001,n165,120
+1901,Ireland,m,12.1,"Bicycle, Tricycle-Maker, Dealer",730,m,op1254515-1001,n165,120
+1901,Ireland,m,12.1,Others,45,m,op1254515-1001,n165,120
+1901,Ireland,m,12.2,"Saddler; Harness, Whip-Maker",2818,m,op1254515-1001,n165,120
+1901,Ireland,m,13.1,"Ship, Boat, Barge-Builder",4375,m,op1254515-1001,n165,120
+1901,Ireland,m,13.1,"Shipwright, Ship Carpenter (ashore)",1585,m,op1254515-1001,n165,120
+1901,Ireland,m,13.2,"Mast, Yard, Oar, Block-Maker",8,m,op1254515-1001,n165,120
+1901,Ireland,m,13.2,"Ship-Rigger, Chandler, Fitter",95,m,op1254515-1001,n165,120
+1901,Ireland,m,13.2,Sail Maker,169,m,op1254515-1001,n165,120
+1901,Ireland,m,14.1,"Dye, Paint-Manufacture",8,m,op1254515-1001,n166,121
+1901,Ireland,m,14.1,"Ink, Blacking, Colouring Substance-Manufacture",9,m,op1254515-1001,n166,121
+1901,Ireland,m,14.2,"Gunpowder, Guncotton, Explosive Substance-Manufacture",118,m,op1254515-1001,n166,121
+1901,Ireland,m,14.2,"Fusee, Fireworks, Explosive Articles-Manufacture",10,m,op1254515-1001,n166,121
+1901,Ireland,m,14.3,"Chemist, Druggist",1856,d,op1254515-1001,n166,121
+1901,Ireland,m,14.3,Manufacturing Chemist,123,m,op1254515-1001,n166,121
+1901,Ireland,m,14.3,Alkali Manufacture,7,m,op1254515-1001,n166,121
+1901,Ireland,m,14.3,Drysalter,3,d,op1254515-1001,n166,121
+1901,Ireland,m,14.3,Others,2,m,op1254515-1001,n166,121
+1901,Ireland,m,15.1,"Tobacco Manufacturer, Tobacconist",747,x:354/353+354,op1254515-1001,n166,121
+1901,Ireland,m,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",113,m,op1254515-1001,n166,121
+1901,Ireland,m,16.1,"Inn Keeper, Hotel Keeper, Publican",6463,s,op1254515-1001,n166,121
+1901,Ireland,m,16.1,"Lodging House, Boarding House-Keeper",205,s,op1254515-1001,n166,121
+1901,Ireland,m,16.1,"Coffee House, Eating House-Keeper",125,s,op1254515-1001,n166,121
+1901,Ireland,m,16.2,"Hop-Merchant, Dealer",2,d,op1254515-1001,n166,121
+1901,Ireland,m,16.2,"Maltster, Distiller",993,m,op1254515-1001,n166,121
+1901,Ireland,m,16.2,Brewer,1710,m,op1254515-1001,n166,121
+1901,Ireland,m,16.2,"Beerseller; Ale, Porter, Cider-Dealer",13,d,op1254515-1001,n166,121
+1901,Ireland,m,16.2,Cellarman,449,d,op1254515-1001,n166,121
+1901,Ireland,m,16.2,"Wine and Spirit-Merchant, Agent",1850,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,Creamery Worker,1021,m,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Milkseller, Dairyman",1706,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Butcher, Meat Salesman",6456,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Provision-Curer, Dealer",2504,x:336/335+336,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Poulterer, Game Dealer",1384,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,Fishmonger,732,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Corn, Flour, Seed-Merchant, Dealer",1027,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,Corn Miller,1934,m,op1254515-1001,n166,121
+1901,Ireland,m,16.3,Baker,7815,x:344/343+344,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Confectioner, Pastry Cook",594,x:344/343+344,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Greengrocer, Fruiterer",669,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Mustard, Vinegar, Spice, Pickle-Maker, Dealer",2,m,op1254515-1001,n166,121
+1901,Ireland,m,16.3,Sugar Refiner,49,m,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",13614,d,op1254515-1001,n166,121
+1901,Ireland,m,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",428,m,op1254515-1001,n166,121
+1901,Ireland,m,16.3,Others dealing in Food,6,d,op1254515-1001,n166,121
+1901,Ireland,m,17.1,Woolstapler,42,d,op1254515-1001,n166,121
+1901,Ireland,m,17.1,Woollen Cloth Manufacture,2330,m,op1254515-1001,n166,121
+1901,Ireland,m,17.1,"Wool, Woollen Goods-Dyer, Printer",52,m,op1254515-1001,n166,121
+1901,Ireland,m,17.1,"Worsted, Stuff-Manufacture",19,m,op1254515-1001,n166,121
+1901,Ireland,m,17.1,Flannel Manufacture,4,m,op1254515-1001,n166,121
+1901,Ireland,m,17.1,Blanket Manufacture,1,m,op1254515-1001,n166,121
+1901,Ireland,m,17.1,Fuller,3,m,op1254515-1001,n166,121
+1901,Ireland,m,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",40,d,op1254515-1001,n166,121
+1901,Ireland,m,17.1,Others,2,m,op1254515-1001,n166,121
+1901,Ireland,m,17.2,"Silk, Silk Goods-Manufacture",95,m,op1254515-1001,n166,121
+1901,Ireland,m,17.2,"Silk-Dyer, Printer",2,m,op1254515-1001,n166,121
+1901,Ireland,m,17.2,Ribbon Manufacture,1,m,op1254515-1001,n166,121
+1901,Ireland,m,17.2,"Silk-Merchant, Dealer",17,d,op1254515-1001,n166,121
+1901,Ireland,m,17.3,"Cotton, Cotton Goods-Manufacture",478,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",73,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Cotton, Calico-Warehouseman, Dealer",16,d,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Flax, Linen-Manufacture-(Spinning processes)",6219,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Flax, Linen-Manufacture-(Weaving processes)",10906,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",5453,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Flax, Linen-Merchant, Dealer",621,d,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Lace-Manufacturer, Dealer",19,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Tape-Manufacturer, Dealer",23,m,op1254515-1001,n167,122
+1901,Ireland,m,17.3,"Thread-Manufacturer, Dealer",338,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,"Hemp, Jute, Cocoa Fibre-Manufacture",163,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,"Rope, Twine, Cord-Maker, Dealer",678,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,"Mat-Maker, Seller",18,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,Net Maker,25,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,"Canvas, Sailcloth-Manufacture",6,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,"Sacking, Sack, Bag-Maker, Dealer",32,m,op1254515-1001,n167,122
+1901,Ireland,m,17.4,Others,23,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,Weaver (undefined),385,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",205,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,Factory Hand (Textile) undefined,60,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,Felt Manufacture,104,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,Carpet and Rug Manufacture,38,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,"Draper, Linen Draper, Mercer",8886,d,op1254515-1001,n167,122
+1901,Ireland,m,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",32,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,"Trimming-Maker, Dealer",1,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,Embroiderer,59,m,op1254515-1001,n167,122
+1901,Ireland,m,17.5,Others,36,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Hatter, Hat Manufacture (not Straw)",131,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,Tailor,13589,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Milliner, Dressmaker",26,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,Shirtmaker,745,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,Hosiery Manufacture,143,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Hosier, Haberdasher",67,d,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Glover, Glove Maker",6,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Button-Maker, Dealer",3,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Shoe, Boot-Maker, Dealer",15378,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Patten, Clog-Maker",78,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Wig Maker, Hair Dresser",1703,s,op1254515-1001,n167,122
+1901,Ireland,m,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",60,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,Accoutrement Maker,2,m,op1254515-1001,n167,122
+1901,Ireland,m,18.1,Others,29,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,"Tallow Chandler; Candle, Grease-Manufacture",141,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,"Soap-Boiler, Maker",123,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,"Glue, Size, Gelatine, Isinglass-Maker, Dealer",12,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,Manure Manufacture,93,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,"Bone, Horn, Ivory, Tortoiseshell-Worker, Dealer",4,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,Comb Maker,11,m,op1254515-1001,n167,122
+1901,Ireland,m,19.1,Others,5,m,op1254515-1001,n167,122
+1901,Ireland,m,19.2,"Furrier, Skinner",56,m,op1254515-1001,n167,122
+1901,Ireland,m,19.2,"Tanner, Fellmonger",163,m,op1254515-1001,n167,122
+1901,Ireland,m,19.2,Currier,268,m,op1254515-1001,n167,122
+1901,Ireland,m,19.2,"Leather Goods, Portmanteau, Bag, Strap-Maker, Dealer",158,m,op1254515-1001,n167,122
+1901,Ireland,m,19.2,"Parchment, Vellum-Maker, Dealer",2,m,op1254515-1001,n167,122
+1901,Ireland,m,19.3,"Hair, Bristle-Worker, Dealer",15,m,op1254515-1001,n167,122
+1901,Ireland,m,19.3,"Brush, Broom-Maker",334,m,op1254515-1001,n167,122
+1901,Ireland,m,19.3,"Quill, Feather-Dresser, Dealer",89,m,op1254515-1001,n167,122
+1901,Ireland,m,20.1,"Oil Miller; Oil Cake-Maker, Dealer",53,m,op1254515-1001,n167,122
+1901,Ireland,m,20.1,Oil and Colourman,47,d,op1254515-1001,n167,122
+1901,Ireland,m,20.1,"Floor Cloth, Oil Cloth-Manufacturer",1,m,op1254515-1001,n167,122
+1901,Ireland,m,20.1,Japanner,7,m,op1254515-1001,n167,122
+1901,Ireland,m,20.1,"India Rubber, Gutta Percha-Worker, Dealer",12,m,op1254515-1001,n167,122
+1901,Ireland,m,20.1,"Waterproof Goods-Maker, Dealer",3,m,op1254515-1001,n167,122
+1901,Ireland,m,20.1,Others,1,m,op1254515-1001,n167,122
+1901,Ireland,m,20.2,"Willow, Cane, Rush-Worker, Dealer; Basket Maker",507,m,op1254515-1001,n168,123
+1901,Ireland,m,20.2,"Hay, Straw (not Plait), Chaff-Cutter, Dealer",37,m,op1254515-1001,n168,123
+1901,Ireland,m,20.2,Thatcher,159,m,op1254515-1001,n168,123
+1901,Ireland,m,20.3,"Timber, Wood-Merchant, Dealer",502,d,op1254515-1001,n168,123
+1901,Ireland,m,20.3,Sawyer,1288,m,op1254515-1001,n168,123
+1901,Ireland,m,20.3,"Lath, Wooden Fence, Hurdle-Maker",27,m,op1254515-1001,n168,123
+1901,Ireland,m,20.3,"Wood Turner, Box Maker",708,m,op1254515-1001,n168,123
+1901,Ireland,m,20.3,"Cooper; Hoop-Maker, Bender",3087,m,op1254515-1001,n168,123
+1901,Ireland,m,20.3,"Cork, Bark-Cutter, Worker, Dealer",264,m,op1254515-1001,n168,123
+1901,Ireland,m,20.3,Others,4,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,Paper Manufacture,315,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,Envelope Maker,7,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,"Stationer, Law Stationer",434,d,op1254515-1001,n168,123
+1901,Ireland,m,20.4,"Card, Pattern-card-Maker",13,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,Paper Stainer,3,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,"Paper Box, Paper Bag-Maker",64,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,"Ticket, Label-Writer",18,m,op1254515-1001,n168,123
+1901,Ireland,m,20.4,Billposter and Others,265,m,op1254515-1001,n168,123
+1901,Ireland,m,21.1,Coal Miner,863,p,op1254515-1001,n168,123
+1901,Ireland,m,21.1,Ironstone Miner,132,p,op1254515-1001,n168,123
+1901,Ireland,m,21.1,Copper Miner,40,p,op1254515-1001,n168,123
+1901,Ireland,m,21.1,Tin Miner,1,p,op1254515-1001,n168,123
+1901,Ireland,m,21.1,Lead Miner,6,p,op1254515-1001,n168,123
+1901,Ireland,m,21.1,"Miner in other, or undefined Minerals",203,p,op1254515-1001,n168,123
+1901,Ireland,m,21.1,Mine Service,18,p,op1254515-1001,n168,123
+1901,Ireland,m,21.2,"Coal-Merchant, Dealer",610,d,op1254515-1001,n168,123
+1901,Ireland,m,21.2,Coalheaver,1636,s,op1254515-1001,n168,123
+1901,Ireland,m,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",93,p,op1254515-1001,n168,123
+1901,Ireland,m,21.2,Gas Works Service,1489,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Stone Quarrier,1509,p,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Stone-Cutter, Dresser, Dealer",2647,p,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Slate Quarrier,71,p,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Slate-Worker, Dealer",52,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Limeburner,147,p,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",63,p,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Well-Sinker, Borer",52,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Plaster, Cement-Manufacture",51,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Brick, Tile-Maker Burner, Dealer",408,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Paviour,184,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Road-Contractor, Surveyor, Inspector",790,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Road Labourer,1501,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Railway Contractor,23,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Platelayer,1043,s,op1254515-1001,n168,123
+1901,Ireland,m,21.3,"Railway Labourer, Navvy",3073,m,op1254515-1001,n168,123
+1901,Ireland,m,21.3,Others,10,m,op1254515-1001,n168,123
+1901,Ireland,m,21.4,"Earthenware, China, Porcelain-Manufacture",131,m,op1254515-1001,n168,123
+1901,Ireland,m,21.4,Glass Manufacture,406,m,op1254515-1001,n168,123
+1901,Ireland,m,21.4,"Earthenware, China, Glass-Dealer",163,d,op1254515-1001,n168,123
+1901,Ireland,m,21.5,"Salt-Maker, Dealer",60,m,op1254515-1001,n168,123
+1901,Ireland,m,21.6,Waterworks Service,144,m,op1254515-1001,n168,123
+1901,Ireland,m,21.6,Others,6,m,op1254515-1001,n168,123
+1901,Ireland,m,21.7,"Goldsmith, Silversmith, Jeweller",612,m,op1254515-1001,n168,123
+1901,Ireland,m,21.7,"Gold, Silver-Beater",4,m,op1254515-1001,n168,123
+1901,Ireland,m,21.7,Lapidary,1,m,op1254515-1001,n168,123
+1901,Ireland,m,21.7,Others,3,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,"Iron, Iron Goods-Manufacture",4617,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,"Steel, Steel Goods-Manufacture",15,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,Blacksmith,12433,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,Whitesmith,205,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,Nail Manufacture,473,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,"Anchor, Chain-Manufacture",10,m,op1254515-1001,n168,123
+1901,Ireland,m,21.8,"Ironmonger; Hardware-Dealer, Merchant",1782,d,op1254515-1001,n168,123
+1901,Ireland,m,21.8,Others,28,m,op1254515-1001,n168,123
+1901,Ireland,m,21.9,"Copper, Copper Goods-Manufacture, Worker, Dealer",233,m,op1254515-1001,n169,124
+1901,Ireland,m,21.10,"Tin, Tin Plate-Manufacturer, Worker, Dealer",1438,m,op1254515-1001,n169,124
+1901,Ireland,m,21.10,"Zinc, Zinc Goods-Manufacturer, Worker, Dealer",1,m,op1254515-1001,n169,124
+1901,Ireland,m,21.11,"Lead, Leaden Goods-Manufacturer, Worker, Dealer",24,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"Metal-Refiner, Worker, Turner, Dealer",140,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"Brass, Bronze-Manufacture; Brazier",828,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"Metal Burnisher, Lacquerer",8,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"White Metal, Plated Ware-Manufacture; Pewterer",53,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"Wire-Maker, Worker, Weaver, Drawer",117,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"Bolt, Nut, Rivet, Screw, Staple-Maker",15,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,"Lamp, Lantern, Candlestick-Maker",2,m,op1254515-1001,n169,124
+1901,Ireland,m,21.12,Others,3,m,op1254515-1001,n169,124
+1901,Ireland,m,22.1,"General Shopkeeper, Dealer",12691,d,op1254515-1001,n169,124
+1901,Ireland,m,22.1,Pawnbroker,790,d,op1254515-1001,n169,124
+1901,Ireland,m,22.1,"Costermonger, Huckster, Street Seller",1545,d,op1254515-1001,n169,124
+1901,Ireland,m,22.1,"Manufacturer, Manager, Superintendent (undefined)",920,m,op1254515-1001,n169,124
+1901,Ireland,m,22.1,Contractor (undefined),231,m,op1254515-1001,n169,124
+1901,Ireland,m,22.2,General Labourer,115540,o,op1254515-1001,n169,124
+1901,Ireland,m,22.2,"Artizan, Mechanic (undefined)",2721,m,op1254515-1001,n169,124
+1901,Ireland,m,22.2,"Engine Driver, Stoker, Fireman (not Railway, Marine, nor Agricultural)",3114,m,op1254515-1001,n169,124
+1901,Ireland,m,22.2,"Apprentice, Assistant (undefined)",735,m,op1254515-1001,n169,124
+1901,Ireland,m,22.2,Factory Labourer (undefined),3902,m,op1254515-1001,n169,124
+1901,Ireland,m,22.2,"Machinist, Machine Worker (undefined)",1254,m,op1254515-1001,n169,124
+1901,Ireland,m,23.1,Town Drainage Service,5,s,op1254515-1001,n169,124
+1901,Ireland,m,23.1,"Chimney Sweep, Soot Merchant",379,s,op1254515-1001,n169,124
+1901,Ireland,m,23.1,"Scavenger, Crossing Sweeper",77,s,op1254515-1001,n169,124
+1901,Ireland,m,23.1,"Rag-Gatherer, Dealer",125,d,op1254515-1001,n169,124
+1901,Ireland,f,3.5,Student (undefined),3239,n,op1254515-1001,n170,125
+1901,Ireland,f,8.1,"Horse-Proprietor, Breeder, Dealer",1,d,op1254515-1001,n171,126
+1901,Ireland,f,8.1,"Cattle, Sheep, Pig-Dealer",12,d,op1254515-1001,n171,126
+1901,Ireland,f,8.1,"Dog, Bird, Animal-Keeper, Dealer",39,d,op1254515-1001,n171,126
+1901,Ireland,f,8.1,Fisherwoman,73,p,op1254515-1001,n171,126
+1901,Ireland,f,9.1,"Publisher, Bookseller, Librarian",110,d,op1254515-1001,n171,126
+1901,Ireland,f,9.1,"Music-Publisher, Seller, Printer",5,m,op1254515-1001,n171,126
+1901,Ireland,f,9.1,Bookbinder,1241,m,op1254515-1001,n171,126
+1901,Ireland,f,9.1,Printer (including employées),196,m,op1254515-1001,n171,126
+1901,Ireland,f,9.1,"Newspaper Agent, News Room Keeper",181,d,op1254515-1001,n171,126
+1901,Ireland,f,9.1,Others,1,m,op1254515-1001,n171,126
+1901,Ireland,f,9.2,"Lithographer, Lithographic Printer",42,m,op1254515-1001,n171,126
+1901,Ireland,f,10.1,Spinning and Weaving Machine Maker,12,m,op1254515-1001,n172,127
+1901,Ireland,f,10.1,Agricultural Machine and Implement Maker,2,m,op1254515-1001,n172,127
+1901,Ireland,f,10.2,"Cutler, Scissors Maker",1,m,op1254515-1001,n172,127
+1901,Ireland,f,10.2,Pin Maker,1,m,op1254515-1001,n172,127
+1901,Ireland,f,10.3,"Watch Maker, Clock Maker",6,m,op1254515-1001,n172,127
+1901,Ireland,f,10.3,"Philosophical Instrument Maker, Optician",2,m,op1254515-1001,n172,127
+1901,Ireland,f,10.6,"Musical Instrument-Maker, Dealer",4,m,op1254515-1001,n172,127
+1901,Ireland,f,10.8,"Toy-Maker, Dealer",11,m,op1254515-1001,n172,127
+1901,Ireland,f,10.8,"Fishing Rod, Tackle-Maker, Dealer",5,m,op1254515-1001,n172,127
+1901,Ireland,f,10.8,"Apparatus for other Games-Maker, Dealer",1,m,op1254515-1001,n172,127
+1901,Ireland,f,11.1,Builder,1,m,op1254515-1001,n172,127
+1901,Ireland,f,11.1,"Carpenter, Joiner",2,m,op1254515-1001,n172,127
+1901,Ireland,f,11.1,Paperhanger,1,m,op1254515-1001,n172,127
+1901,Ireland,f,11.1,Plumber,2,m,op1254515-1001,n172,127
+1901,Ireland,f,11.1,"Painter, Glazier",7,m,op1254515-1001,n172,127
+1901,Ireland,f,11.2,"Cabinet Maker, Upholsterer",299,m,op1254515-1001,n172,127
+1901,Ireland,f,11.2,French Polisher,465,m,op1254515-1001,n172,127
+1901,Ireland,f,11.2,"Furniture-Broker, Dealer",98,d,op1254515-1001,n172,127
+1901,Ireland,f,11.2,"House and Shop Fittings-Maker, Dealer",2,m,op1254515-1001,n172,127
+1901,Ireland,f,11.2,"Funeral Furniture Maker, Undertaker",12,s,op1254515-1001,n172,127
+1901,Ireland,f,11.2,Others,6,m,op1254515-1001,n172,127
+1901,Ireland,f,11.3,Wood Carver,7,m,op1254515-1001,n172,127
+1901,Ireland,f,11.3,"Carver, Gilder",27,m,op1254515-1001,n172,127
+1901,Ireland,f,11.3,Dealer in Works of Art,5,d,op1254515-1001,n172,127
+1901,Ireland,f,11.3,"Figure, Image-Maker, Dealer",3,m,op1254515-1001,n172,127
+1901,Ireland,f,11.3,"Animal, Bird, &c.-Preserver; Naturalist",1,m,op1254515-1001,n172,127
+1901,Ireland,f,11.3,Artificial Flower Maker,9,m,op1254515-1001,n172,127
+1901,Ireland,f,11.3,Others,1,m,op1254515-1001,n172,127
+1901,Ireland,f,12.1,Coachmaker,8,m,op1254515-1001,n172,127
+1901,Ireland,f,12.1,"Bicycle, Tricycle-Maker, Dealer",9,m,op1254515-1001,n172,127
+1901,Ireland,f,12.1,Others,1,m,op1254515-1001,n172,127
+1901,Ireland,f,12.2,"Saddler; Harness, Whip-Maker",28,m,op1254515-1001,n172,127
+1901,Ireland,f,13.2,Ship Chandler,2,m,op1254515-1001,n172,127
+1901,Ireland,f,13.2,Sail Maker,2,m,op1254515-1001,n172,127
+1901,Ireland,f,14.1,"Dye, Paint-Manufacture",4,m,op1254515-1001,n172,127
+1901,Ireland,f,14.1,"Ink, Blacking, Colouring Substance-Manufacture",8,m,op1254515-1001,n172,127
+1901,Ireland,f,14.2,"Gunpowder, Guncotton, Explosive Substance-Manufacture",5,m,op1254515-1001,n172,127
+1901,Ireland,f,14.2,"Fusee, Fireworks, Explosive Articles-Manufacture",12,m,op1254515-1001,n172,127
+1901,Ireland,f,14.3,"Chemist, Druggist",64,d,op1254515-1001,n172,127
+1901,Ireland,f,14.3,Manufacturing Chemist,20,m,op1254515-1001,n172,127
+1901,Ireland,f,15.1,"Tobacco Manufacturer, Tobacconist",1020,x:354/353+354,op1254515-1001,n173,128
+1901,Ireland,f,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",42,m,op1254515-1001,n173,128
+1901,Ireland,f,16.1,"Inn Keeper, Hotel Keeper, Publican",3551,s,op1254515-1001,n173,128
+1901,Ireland,f,16.1,"Lodging House, Boarding House-Keeper",1782,s,op1254515-1001,n173,128
+1901,Ireland,f,16.1,"Coffee House, Eating House-Keeper",239,s,op1254515-1001,n173,128
+1901,Ireland,f,16.2,"Maltster, Distiller",2,m,op1254515-1001,n173,128
+1901,Ireland,f,16.2,"Beerseller; Ale, Porter, Cider-Dealer",10,d,op1254515-1001,n173,128
+1901,Ireland,f,16.2,Cellarwoman,18,d,op1254515-1001,n173,128
+1901,Ireland,f,16.2,"Wine and Spirit-Merchant, Agent",353,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Creamery Worker,434,m,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Milkseller, Dairykeeper",611,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Butcher,261,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Provision-Curer, Dealer",935,x:336/335+336,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Poulterer, Game Dealer",342,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Fishmonger,880,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Corn, Flour, Seed-Merchant, Dealer",58,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Corn Miller,19,m,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Baker,478,x:344/343+344,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Confectioner, Pastry Cook",1853,x:344/343+344,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Greengrocer, Fruiterer",1370,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Mustard, Vinegar, Spice, Pickle-Maker, Dealer",5,m,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Sugar Refiner,7,m,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",3526,d,op1254515-1001,n173,128
+1901,Ireland,f,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",10,m,op1254515-1001,n173,128
+1901,Ireland,f,16.3,Others dealing in Food,1,d,op1254515-1001,n173,128
+1901,Ireland,f,17.1,Woolstapler,2,d,op1254515-1001,n173,128
+1901,Ireland,f,17.1,Woollen Cloth Manufacture,2810,m,op1254515-1001,n173,128
+1901,Ireland,f,17.1,"Wool, Woollen Goods-Dyer, Printer",6,m,op1254515-1001,n173,128
+1901,Ireland,f,17.1,"Worsted, Stuff-Manufacture",22,m,op1254515-1001,n173,128
+1901,Ireland,f,17.1,Flannel Manufacture,2,m,op1254515-1001,n173,128
+1901,Ireland,f,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",9,d,op1254515-1001,n173,128
+1901,Ireland,f,17.1,Others,4,m,op1254515-1001,n173,128
+1901,Ireland,f,17.2,"Silk, Silk Goods-Manufacture",92,m,op1254515-1001,n173,128
+1901,Ireland,f,17.2,"Silk-Merchant, Dealer",2,d,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Cotton, Cotton Goods-Manufacture",1545,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",16,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Cotton, Calico-Warehousewoman, Dealer",1,d,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Flax, Linen-Manufacture-(Spinning processes)",17359,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Flax, Linen-Manufacture-(Weaving processes)",25166,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",6361,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Flax, Linen-Merchant, Dealer",14,d,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Lace-Manufacturer, Dealer",2099,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Tape-Manufacturer, Dealer",37,m,op1254515-1001,n173,128
+1901,Ireland,f,17.3,"Thread-Manufacturer, Dealer",721,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,"Hemp, Jute, Cocoa Fibre-Manufacture",468,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,"Rope, Twine, Cord-Maker, Dealer",715,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,"Mat-Maker, Seller",17,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,Net Maker,188,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,"Canvas, Sailcloth-Manufacture",7,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,"Sacking, Sack, Bag-Maker, Dealer",145,m,op1254515-1001,n173,128
+1901,Ireland,f,17.4,Others,27,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,Weaver (undefined),652,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",50,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,"Factory Hand (Textile), undefined",430,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,Felt Manufacture,43,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,Carpet and Rug Manufacture,111,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,"Draper, Linen Draper, Mercer",4588,d,op1254515-1001,n173,128
+1901,Ireland,f,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",2956,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,"Trimming-Maker, Dealer",26,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,Embroiderer,3896,m,op1254515-1001,n173,128
+1901,Ireland,f,17.5,Others (including Spinners-undefined),1496,m,op1254515-1001,n173,128
+1901,Ireland,f,18.1,"Hatter, Hat Manufacture (not Straw)",50,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Straw Hat, Bonnet, Plait-Manufacture",15,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,Tailoress,3387,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Milliner, Dressmaker, Staymaker",44513,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,Shawl Manufacture,1,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Shirtmaker, Seamstress",56196,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,Hosiery Manufacture,476,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Hosier, Haberdasher",114,d,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Glover, Glove Maker",12,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Button-Maker, Dealer",7,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Shoe, Boot-Maker, Dealer",942,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Wig Maker, Hairdresser",29,s,op1254515-1001,n174,129
+1901,Ireland,f,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",35,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,Accoutrement Maker,2,m,op1254515-1001,n174,129
+1901,Ireland,f,18.1,Others,65,m,op1254515-1001,n174,129
+1901,Ireland,f,19.1,"Tallow Chandler; Candle, Grease-Manufacture",44,m,op1254515-1001,n174,129
+1901,Ireland,f,19.1,"Soap-Boiler, Maker",12,m,op1254515-1001,n174,129
+1901,Ireland,f,19.1,"Glue, Size, Gelatine, Isinglass-Maker, Dealer",20,m,op1254515-1001,n174,129
+1901,Ireland,f,19.2,"Furrier, Skinner",26,m,op1254515-1001,n174,129
+1901,Ireland,f,19.2,"Tanner, Fellmonger",4,m,op1254515-1001,n174,129
+1901,Ireland,f,19.2,Currier,3,m,op1254515-1001,n174,129
+1901,Ireland,f,19.2,"Leather Goods, Portmanteau, Bag, Strap-Maker, Dealer",30,m,op1254515-1001,n174,129
+1901,Ireland,f,19.2,"Parchment, Vellum-Maker, Dealer",1,m,op1254515-1001,n174,129
+1901,Ireland,f,19.3,"Hair, Bristle-Worker, Dealer",7,m,op1254515-1001,n174,129
+1901,Ireland,f,19.3,"Brush, Broom-Maker",196,m,op1254515-1001,n174,129
+1901,Ireland,f,19.3,"Quill, Feather-Dresser, Dealer",69,m,op1254515-1001,n174,129
+1901,Ireland,f,20.1,"Oil Miller; Oil Cake-Maker, Dealer",1,m,op1254515-1001,n174,129
+1901,Ireland,f,20.1,Oil and Colour Merchant,4,d,op1254515-1001,n174,129
+1901,Ireland,f,20.1,Japanner,2,m,op1254515-1001,n174,129
+1901,Ireland,f,20.1,"India Rubber, Gutta Percha-Worker, Dealer",2,m,op1254515-1001,n174,129
+1901,Ireland,f,20.1,"Waterproof Goods-Maker, Dealer",4,m,op1254515-1001,n174,129
+1901,Ireland,f,20.2,"Willow, Cane, Rush-Worker, Dealer; Basket Maker",68,m,op1254515-1001,n174,129
+1901,Ireland,f,20.2,"Hay, Straw (not Plait), Chaff-Cutter, Dealer",4,m,op1254515-1001,n174,129
+1901,Ireland,f,20.3,"Timber, Wood-Merchant, Dealer",9,d,op1254515-1001,n174,129
+1901,Ireland,f,20.3,"Lath, Wooden Fence, Hurdle-Maker",1,m,op1254515-1001,n174,129
+1901,Ireland,f,20.3,"Wood Turner, Box Maker",97,m,op1254515-1001,n174,129
+1901,Ireland,f,20.3,"Cooper; Hoop-Maker, Bender",2,m,op1254515-1001,n174,129
+1901,Ireland,f,20.3,"Cork, Bark-Cutter, Worker, Dealer",23,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,Paper Manufacture,177,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,Envelope Maker,131,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,"Stationer, Law Stationer",787,d,op1254515-1001,n174,129
+1901,Ireland,f,20.4,"Card, Pattern-card-Maker",26,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,Paper Stainer,10,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,"Paper Box, Paper Bag-Maker",1180,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,"Ticket, Label-Writer",18,m,op1254515-1001,n174,129
+1901,Ireland,f,20.4,Others,4,m,op1254515-1001,n174,129
+1901,Ireland,f,21.2,"Coal-Merchant, Dealer",24,d,op1254515-1001,n174,129
+1901,Ireland,f,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",13,p,op1254515-1001,n174,129
+1901,Ireland,f,21.3,"Slate-Worker, Dealer",1,m,op1254515-1001,n174,129
+1901,Ireland,f,21.3,Limeburner,5,p,op1254515-1001,n174,129
+1901,Ireland,f,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",4,p,op1254515-1001,n174,129
+1901,Ireland,f,21.3,"Brick, Tile-Maker, Burner, Dealer",15,m,op1254515-1001,n174,129
+1901,Ireland,f,21.3,Road Contractor,4,m,op1254515-1001,n174,129
+1901,Ireland,f,21.3,Road Labourer,1,m,op1254515-1001,n174,129
+1901,Ireland,f,21.4,"Earthenware, China, Porcelain-Manufacture",27,m,op1254515-1001,n175,130
+1901,Ireland,f,21.4,Glass Manufacture,4,m,op1254515-1001,n175,130
+1901,Ireland,f,21.4,"Earthenware, China, Glass-Dealer",176,d,op1254515-1001,n175,130
+1901,Ireland,f,21.5,"Salt-Maker, Dealer",10,m,op1254515-1001,n175,130
+1901,Ireland,f,21.6,Water Carrier and Others,1,s,op1254515-1001,n175,130
+1901,Ireland,f,21.7,"Goldsmith, Silversmith, Jeweller",39,m,op1254515-1001,n175,130
+1901,Ireland,f,21.7,Lapidary,8,m,op1254515-1001,n175,130
+1901,Ireland,f,21.7,Others,3,m,op1254515-1001,n175,130
+1901,Ireland,f,21.8,"Blacksmith, Forge Keeper",2,m,op1254515-1001,n175,130
+1901,Ireland,f,21.8,Nail Manufacture,2,m,op1254515-1001,n175,130
+1901,Ireland,f,21.8,"Ironmonger; Hardware-Dealer, Merchant",196,d,op1254515-1001,n175,130
+1901,Ireland,f,21.10,"Tin, Tin Plate-Manufacturer, Worker, Dealer",50,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,"Metal-Refiner, Worker, Turner, Dealer",3,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,"Brass, Bronze-Manufacture; Brazier",2,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,"Metal Burnisher, Lacquerer",7,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,"White Metal, Plated Ware-Manufacture; Pewterer",1,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,"Wire-Maker, Worker, Weaver, Drawer",17,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,Fancy Chain Maker,1,m,op1254515-1001,n175,130
+1901,Ireland,f,21.12,Others,1,m,op1254515-1001,n175,130
+1901,Ireland,f,22.1,"General Shopkeeper, Dealer",17881,d,op1254515-1001,n175,130
+1901,Ireland,f,22.1,Pawnbroker,90,d,op1254515-1001,n175,130
+1901,Ireland,f,22.1,"Costermonger, Huckster, Street Seller",825,d,op1254515-1001,n175,130
+1901,Ireland,f,22.1,"Manufacturer, Manager, Superintendent (undefined)",128,m,op1254515-1001,n175,130
+1901,Ireland,f,22.1,Contractor (undefined),4,m,op1254515-1001,n175,130
+1901,Ireland,f,22.2,General Labourer,2323,o,op1254515-1001,n175,130
+1901,Ireland,f,22.2,"Artizan, Mechanic (undefined)",105,m,op1254515-1001,n175,130
+1901,Ireland,f,22.2,"Apprentice, Assistant (undefined)",412,m,op1254515-1001,n175,130
+1901,Ireland,f,22.2,Factory Labourer (undefined),4772,m,op1254515-1001,n175,130
+1901,Ireland,f,22.2,"Machinist, Machine Worker (undefined)",4394,m,op1254515-1001,n175,130
+1901,Ireland,f,23.1,"Chimney Sweep, Soot Merchant",1,s,op1254515-1001,n175,130
+1901,Ireland,f,23.1,"Rag-Gatherer, Dealer",76,d,op1254515-1001,n175,130
+1911,Leinster,m,3.5,Student (undefined),2139,n,op1256115-1001,n1423,
+1911,Leinster,m,8.1,"Horse-Proprietor, Breeder, Dealer",149,d,op1256115-1001,n1425,
+1911,Leinster,m,8.1,"Groom, Horse Keeper, Horse Breaker",1584,s,op1256115-1001,n1425,
+1911,Leinster,m,8.1,"Veterinary-Surgeon, Student, Assistant",149,s,op1256115-1001,n1425,
+1911,Leinster,m,8.1,"Cattle, Sheep, Pig-Dealer, Salesman",1022,d,op1256115-1001,n1425,
+1911,Leinster,m,8.1,Farrier,358,m,op1256115-1001,n1425,
+1911,Leinster,m,8.1,Drover,217,d,op1256115-1001,n1425,
+1911,Leinster,m,8.1,Gamekeeper,414,s,op1256115-1001,n1425,
+1911,Leinster,m,8.1,"Dog, Bird, Animal-Keeper, Dealer",72,d,op1256115-1001,n1425,
+1911,Leinster,m,8.1,Vermin Destroyer,3,m,op1256115-1001,n1425,
+1911,Leinster,m,8.1,Fisherman,1629,p,op1256115-1001,n1425,
+1911,Leinster,m,8.1,"Knacker, Cats' Meat Dealer, etc., etc.",3,m,op1256115-1001,n1425,
+1911,Leinster,m,9.1,"Publisher, Bookseller, Librarian",213,d,op1256115-1001,n1425,
+1911,Leinster,m,9.1,"Music-Publisher, Seller, Printer",10,m,op1256115-1001,n1425,
+1911,Leinster,m,9.1,Bookbinder,327,m,op1256115-1001,n1425,
+1911,Leinster,m,9.1,Printer (including employés),2125,m,op1256115-1001,n1425,
+1911,Leinster,m,9.1,"Newspaper Agent, News Room Keeper",139,d,op1256115-1001,n1425,
+1911,Leinster,m,9.1,Others,42,m,op1256115-1001,n1425,
+1911,Leinster,m,11.2,"Cabinet Maker, Upholsterer",952,m,op1256115-1001,n1426,
+1911,Leinster,m,11.2,French Polisher,97,m,op1256115-1001,n1426,
+1911,Leinster,m,11.2,"Furniture-Broker, Dealer",151,d,op1256115-1001,n1426,
+1911,Leinster,m,11.2,"Locksmith, Bellhanger",51,m,op1256115-1001,n1426,
+1911,Leinster,m,11.2,Gas Fitter,171,m,op1256115-1001,n1426,
+1911,Leinster,m,11.2,"House and Shop Fittings-Maker, Dealer",54,m,op1256115-1001,n1426,
+1911,Leinster,m,11.2,"Funeral Furniture Maker, Undertaker",39,s,op1256115-1001,n1426,
+1911,Leinster,m,11.2,Others,8,m,op1256115-1001,n1426,
+1911,Leinster,m,11.3,Wood Carver,66,m,op1256115-1001,n1426,
+1911,Leinster,m,11.3,"Carver, Gilder",72,m,op1256115-1001,n1426,
+1911,Leinster,m,11.3,Dealer in Works of Art,19,d,op1256115-1001,n1426,
+1911,Leinster,m,11.3,"Figure, Image-Maker, Dealer",16,m,op1256115-1001,n1426,
+1911,Leinster,m,11.3,"Animal, Bird, &c.-Preserver; Naturalist",6,m,op1256115-1001,n1426,
+1911,Leinster,m,11.3,Others,7,m,op1256115-1001,n1426,
+1911,Leinster,m,14.3,"Chemist, Druggist, Assistant",793,d,op1256115-1001,n1427,
+1911,Leinster,m,14.3,Manufacturing Chemist,116,m,op1256115-1001,n1427,
+1911,Leinster,m,14.3,Alkali Manufacture,2,m,op1256115-1001,n1427,
+1911,Leinster,m,14.3,Drysalter,1,d,op1256115-1001,n1427,
+1911,Leinster,m,14.3,Others,10,m,op1256115-1001,n1427,
+1911,Leinster,m,15.1,"Tobacco Manufacturer, Tobacconist",339,x:354/353+354,op1256115-1001,n1427,
+1911,Leinster,m,15.1,"Tobacco Pipe, Snuff-box, etc.-Maker",47,m,op1256115-1001,n1427,
+1911,Leinster,m,16.2,"Hop-Merchant, Dealer",3,d,op1256115-1001,n1427,
+1911,Leinster,m,16.2,"Maltster, Distiller",439,m,op1256115-1001,n1427,
+1911,Leinster,m,16.2,Brewer,1006,m,op1256115-1001,n1427,
+1911,Leinster,m,16.2,"Beerseller; Ale, Porter, Cider-Dealer",3,d,op1256115-1001,n1427,
+1911,Leinster,m,16.2,Cellarman,82,d,op1256115-1001,n1427,
+1911,Leinster,m,16.2,"Wine and Spirit-Merchant, Agent",421,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,Creamery Worker (Butter and Cheese Making),84,m,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Milkseller, Dairyman",815,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Butcher, Meat Salesman",2033,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Provision-Curer, Dealer",782,x:336/335+336,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Poulterer, Game Dealer",386,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,Fishmonger,286,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Corn, Flour, Seed-Merchant, Dealer",309,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,Corn Miller,583,m,op1256115-1001,n1427,
+1911,Leinster,m,16.3,Baker,2418,x:344/343+344,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Confectioner, Pastry Cook",216,x:344/343+344,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Greengrocer, Fruiterer",330,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Mustard, Vinegar, Spice, Pickle-Maker, Dealer",2,m,op1256115-1001,n1427,
+1911,Leinster,m,16.3,Sugar Refiner,25,m,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",4523,d,op1256115-1001,n1427,
+1911,Leinster,m,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",115,m,op1256115-1001,n1427,
+1911,Leinster,m,16.3,Others dealing in Food,3,d,op1256115-1001,n1427,
+1911,Leinster,m,17.1,Woolstapler,21,d,op1256115-1001,n1427,
+1911,Leinster,m,17.1,Woollen Cloth Manufacture,483,m,op1256115-1001,n1427,
+1911,Leinster,m,17.1,"Wool, Woollen Goods-Dyer, Printer",8,m,op1256115-1001,n1427,
+1911,Leinster,m,17.1,"Worsted, Stuff-Manufacture",11,m,op1256115-1001,n1427,
+1911,Leinster,m,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",12,d,op1256115-1001,n1427,
+1911,Leinster,m,17.1,Others,4,m,op1256115-1001,n1427,
+1911,Leinster,m,17.2,"Silk, Silk Goods-Manufacture",179,m,op1256115-1001,n1427,
+1911,Leinster,m,17.2,"Silk-Dyer, Printer",2,m,op1256115-1001,n1427,
+1911,Leinster,m,17.2,"Silk-Merchant, Dealer",2,d,op1256115-1001,n1427,
+1911,Leinster,m,17.3,"Cotton, Cotton Goods-Manufacture",23,m,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",5,m,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Cotton, Calico-Warehouseman, Dealer",2,d,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Flax, Linen-Manufacture-(Spinning processes)",57,m,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Flax, Linen-Manufacture-(Weaving processes)",99,m,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",38,m,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Flax, Linen-Merchant, Dealer",13,d,op1256115-1001,n1428,
+1911,Leinster,m,17.3,"Lace-Manufacturer, Dealer",8,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,Weaver (undefined),24,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",71,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,"Factory Hand (Textile), undefined",33,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,Felt Manufacture,2,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,Carpet and Rug Manufacture,37,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,Manchester Warehouseman,1,d,op1256115-1001,n1428,
+1911,Leinster,m,17.5,"Draper, Linen Draper, Mercer",2462,d,op1256115-1001,n1428,
+1911,Leinster,m,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",11,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,"Trimming-Maker, Dealer",3,m,op1256115-1001,n1428,
+1911,Leinster,m,17.5,Others,20,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Hatter, Hat Manufacture (not Straw)",56,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Straw Hat, Bonnet, Plait-Manufacture",3,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,Tailor,3711,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Milliner, Dressmaker",39,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,Shirtmaker,34,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,Hosiery Manufacture,136,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Hosier, Haberdasher",13,d,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Glover, Glove Maker",3,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Button-Maker, Dealer",1,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Shoe, Boot-Maker, Dealer",3512,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Patten, Clog-Maker",23,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Wig Maker, Hair Dresser",812,s,op1256115-1001,n1428,
+1911,Leinster,m,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",17,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,Accoutrement Maker,1,m,op1256115-1001,n1428,
+1911,Leinster,m,18.1,Others,5,m,op1256115-1001,n1428,
+1911,Leinster,m,20.1,"Oil Miller; Oil Cake-Maker, Dealer",24,m,op1256115-1001,n1429,
+1911,Leinster,m,20.1,Oil and Colourman,9,d,op1256115-1001,n1429,
+1911,Leinster,m,20.1,"Floor Cloth, Oil Cloth-Manufacturer",1,m,op1256115-1001,n1429,
+1911,Leinster,m,20.1,Japanner,6,m,op1256115-1001,n1429,
+1911,Leinster,m,20.1,"India Rubber, Gutta Percha-Worker, Dealer",12,m,op1256115-1001,n1429,
+1911,Leinster,m,20.1,"Waterproof Goods-Maker, Dealer",5,m,op1256115-1001,n1429,
+1911,Leinster,m,20.1,Others,2,m,op1256115-1001,n1429,
+1911,Leinster,m,20.3,"Timber, Wood-Merchant, Dealer",190,d,op1256115-1001,n1429,
+1911,Leinster,m,20.3,Sawyer,558,m,op1256115-1001,n1429,
+1911,Leinster,m,20.3,"Lath, Wooden Fence, Hurdle-Maker",14,m,op1256115-1001,n1429,
+1911,Leinster,m,20.3,"Wood Turner, Box Maker",185,m,op1256115-1001,n1429,
+1911,Leinster,m,20.3,"Cooper; Hoop-Maker, Bender",813,m,op1256115-1001,n1429,
+1911,Leinster,m,20.3,"Cork, Bark-Cutter, Worker, Dealer",71,m,op1256115-1001,n1429,
+1911,Leinster,m,20.3,Others,18,m,op1256115-1001,n1429,
+1911,Leinster,m,20.4,Paper Manufacture,120,m,op1256115-1001,n1429,
+1911,Leinster,m,20.4,Envelope Maker,9,m,op1256115-1001,n1429,
+1911,Leinster,m,20.4,"Stationer, Law Stationer",179,d,op1256115-1001,n1429,
+1911,Leinster,m,20.4,Paper Stainer,1,m,op1256115-1001,n1429,
+1911,Leinster,m,20.4,"Paper Box, Paper Bag-Maker",31,m,op1256115-1001,n1429,
+1911,Leinster,m,20.4,"Ticket, Label-Writer",9,m,op1256115-1001,n1429,
+1911,Leinster,m,20.4,Others,81,m,op1256115-1001,n1429,
+1911,Leinster,m,21.2,"Coal-Merchant, Dealer",195,d,op1256115-1001,n1429,
+1911,Leinster,m,21.2,Coalheaver,1268,s,op1256115-1001,n1429,
+1911,Leinster,m,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",9,p,op1256115-1001,n1429,
+1911,Leinster,m,21.2,Gas Works Service,577,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Stone Quarrier,147,p,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Stone-Cutter, Dresser, Dealer",843,p,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Slate Quarrier,21,p,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Slate-Worker, Dealer",8,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Limeburner,19,p,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",29,p,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Well-Sinker, Borer",25,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Plaster, Cement-Manufacture",8,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Brick, Tile-Maker, Burner, Dealer",57,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Paviour,54,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Road-Contractor, Surveyor, Inspector",180,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Road Labourer,488,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Railway Contractor,24,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Platelayer,362,s,op1256115-1001,n1429,
+1911,Leinster,m,21.3,"Railway Labourer, Navvy",1055,m,op1256115-1001,n1429,
+1911,Leinster,m,21.3,Others,3,m,op1256115-1001,n1429,
+1911,Leinster,m,21.4,"Earthenware, China, Porcelain-Manufacture",29,m,op1256115-1001,n1429,
+1911,Leinster,m,21.4,Glass Manufacture,423,m,op1256115-1001,n1429,
+1911,Leinster,m,21.4,"Earthenware, China, Glass-Dealer",38,d,op1256115-1001,n1429,
+1911,Leinster,m,21.8,"Iron, Iron Goods-Manufacture",741,m,op1256115-1001,n1430,
+1911,Leinster,m,21.8,"Steel, Steel Goods-Manufacture",8,m,op1256115-1001,n1430,
+1911,Leinster,m,21.8,Blacksmith,3390,m,op1256115-1001,n1430,
+1911,Leinster,m,21.8,Whitesmith,99,m,op1256115-1001,n1430,
+1911,Leinster,m,21.8,Nail Manufacture,51,m,op1256115-1001,n1430,
+1911,Leinster,m,21.8,"Anchor, Chain-Manufacture",5,m,op1256115-1001,n1430,
+1911,Leinster,m,21.8,"Ironmonger; Hardware-Dealer, Merchant",547,d,op1256115-1001,n1430,
+1911,Leinster,m,21.8,Others,5,m,op1256115-1001,n1430,
+1911,Leinster,m,22.1,"General Shopkeeper, Dealer",3221,d,op1256115-1001,n1430,
+1911,Leinster,m,22.1,Pawnbroker,280,d,op1256115-1001,n1430,
+1911,Leinster,m,22.1,"Costermonger, Huckster, Street Seller",389,d,op1256115-1001,n1430,
+1911,Leinster,m,22.1,"Manufacturer, Manager, Superintendent (undefined)",339,m,op1256115-1001,n1430,
+1911,Leinster,m,22.1,Contractor (undefined),125,m,op1256115-1001,n1430,
+1911,Leinster,m,22.2,General Labourer,51553,o,op1256115-1001,n1430,
+1911,Leinster,m,22.2,"Artizan, Mechanic (undefined)",522,m,op1256115-1001,n1430,
+1911,Leinster,m,22.2,"Engine Driver, Stoker, Fireman (not Railway, Marine, nor Agricultural)",965,m,op1256115-1001,n1430,
+1911,Leinster,m,22.2,"Apprentice, Assistant (undefined)",213,m,op1256115-1001,n1430,
+1911,Leinster,m,22.2,Factory Labourer (undefined),1003,m,op1256115-1001,n1430,
+1911,Leinster,m,22.2,"Machinist, Machine Worker (undefined)",220,m,op1256115-1001,n1430,
+1911,Leinster,m,23.1,Town Drainage Service,8,s,op1256115-1001,n1430,
+1911,Leinster,m,23.1,"Chimney Sweep, Soot Merchant",170,s,op1256115-1001,n1430,
+1911,Leinster,m,23.1,"Scavenger, Crossing Sweeper",34,s,op1256115-1001,n1430,
+1911,Leinster,m,23.1,"Rag-Gatherer, Dealer",20,d,op1256115-1001,n1430,
+1911,Leinster,f,3.5,Student (undefined),1249,n,op1256115-1001,n1431,
+1911,Leinster,f,8.1,"Horse-Proprietor, Breeder, Dealer",2,d,op1256115-1001,n1432,
+1911,Leinster,f,8.1,"Cattle, Sheep, Pig-Dealer",10,d,op1256115-1001,n1432,
+1911,Leinster,f,8.1,"Dog, Bird, Animal-Keeper, Dealer",9,d,op1256115-1001,n1432,
+1911,Leinster,f,8.1,Fisherwoman,8,p,op1256115-1001,n1432,
+1911,Leinster,f,8.1,"Cats' Meat Dealer, &c., &c.",1,d,op1256115-1001,n1432,
+1911,Leinster,f,9.1,"Publisher, Bookseller, Librarian",24,d,op1256115-1001,n1433,
+1911,Leinster,f,9.1,"Music-Publisher, Seller, Printer",3,m,op1256115-1001,n1433,
+1911,Leinster,f,9.1,Bookbinder,664,m,op1256115-1001,n1433,
+1911,Leinster,f,9.1,Printer (including employés),139,m,op1256115-1001,n1433,
+1911,Leinster,f,9.1,"Newspaper Agent, News Room Keeper",106,d,op1256115-1001,n1433,
+1911,Leinster,f,9.1,Others,10,m,op1256115-1001,n1433,
+1911,Leinster,f,11.2,"Cabinet Maker, Upholsterer",156,m,op1256115-1001,n1433,
+1911,Leinster,f,11.2,French Polisher,340,m,op1256115-1001,n1433,
+1911,Leinster,f,11.2,"Furniture-Broker, Dealer",37,d,op1256115-1001,n1433,
+1911,Leinster,f,11.2,"Funeral Furniture Maker, Undertaker",3,s,op1256115-1001,n1433,
+1911,Leinster,f,11.3,Wood Carver,6,m,op1256115-1001,n1433,
+1911,Leinster,f,11.3,"Carver, Gilder",3,m,op1256115-1001,n1433,
+1911,Leinster,f,11.3,Dealer in Works of Art,6,d,op1256115-1001,n1433,
+1911,Leinster,f,11.3,"Figure, Image-Maker, Dealer",2,m,op1256115-1001,n1433,
+1911,Leinster,f,11.3,"Animal, Bird, &c.-Preserver; Naturalist",1,m,op1256115-1001,n1433,
+1911,Leinster,f,11.3,Artificial Flower Maker,3,m,op1256115-1001,n1433,
+1911,Leinster,f,14.3,"Chemist, Druggist",53,d,op1256115-1001,n1434,
+1911,Leinster,f,14.3,Manufacturing Chemist,2,m,op1256115-1001,n1434,
+1911,Leinster,f,14.3,Others,1,m,op1256115-1001,n1434,
+1911,Leinster,f,15.1,"Tobacco Manufacturer, Tobacconist",339,x:354/353+354,op1256115-1001,n1434,
+1911,Leinster,f,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",25,m,op1256115-1001,n1434,
+1911,Leinster,f,16.2,"Maltster, Distiller",2,m,op1256115-1001,n1434,
+1911,Leinster,f,16.2,Brewer,2,m,op1256115-1001,n1434,
+1911,Leinster,f,16.2,"Beerseller; Ale, Porter, Cider-Dealer",4,d,op1256115-1001,n1434,
+1911,Leinster,f,16.2,Cellarwoman,8,d,op1256115-1001,n1434,
+1911,Leinster,f,16.2,"Wine and Spirit-Merchant, Agent",55,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Creamery Worker (Butter and Cheese Making),15,m,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Milkseller, Dairykeeper",165,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Butcher,54,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Provision-Curer, Dealer",192,x:336/335+336,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Poulterer, Game Dealer",56,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Fishmonger,582,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Corn, Flour, Seed-Merchant, Dealer",17,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Corn Miller,16,m,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Baker,486,x:344/343+344,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Confectioner, Pastry Cook",747,x:344/343+344,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Greengrocer, Fruiterer",468,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Mustard, Vinegar, Spice, Pickle-Maker, Dealer",2,m,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Sugar Refiner,3,m,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",549,d,op1256115-1001,n1434,
+1911,Leinster,f,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",7,m,op1256115-1001,n1434,
+1911,Leinster,f,16.3,Others dealing in Food,8,d,op1256115-1001,n1434,
+1911,Leinster,f,17.1,Woolstapler,1,d,op1256115-1001,n1434,
+1911,Leinster,f,17.1,Woollen Cloth Manufacture,487,m,op1256115-1001,n1434,
+1911,Leinster,f,17.1,"Worsted, Stuff-Manufacture",14,m,op1256115-1001,n1434,
+1911,Leinster,f,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",2,d,op1256115-1001,n1434,
+1911,Leinster,f,17.1,Others,1,m,op1256115-1001,n1434,
+1911,Leinster,f,17.2,"Silk, Silk Goods-Manufacture",103,m,op1256115-1001,n1434,
+1911,Leinster,f,17.2,"Silk-Dyer, Printer",1,m,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Cotton, Cotton Goods-Manufacture",209,m,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",6,m,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Cotton, Calico-Warehousewoman, Dealer",2,d,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Flax, Linen-Manufacture-(Spinning processes)",154,m,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Flax, Linen-Manufacture-(Weaving processes)",726,m,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",86,m,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Flax, Linen-Merchant, Dealer",1,d,op1256115-1001,n1434,
+1911,Leinster,f,17.3,"Lace-Manufacturer, Dealer",307,m,op1256115-1001,n1434,
+1911,Leinster,f,17.5,Weaver (undefined),75,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",44,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,"Factory Hand (Textile), undefined",158,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,Carpet and Rug Manufacture,38,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,"Draper, Linen Draper, Mercer",2043,d,op1256115-1001,n1435,
+1911,Leinster,f,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",280,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,"Trimming-Maker, Dealer",9,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,Embroiderer,193,m,op1256115-1001,n1435,
+1911,Leinster,f,17.5,Others,69,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Hatter, Hat Manufacture (not Straw)",64,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Straw Hat, Bonnet, Plait-Manufacture",9,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,Tailoress,1693,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Milliner, Dressmaker, Staymaker",10118,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Shirtmaker, Seamstress",2441,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,Hosiery Manufacture,210,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Hosier, Haberdasher",60,d,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Glover, Glove Maker",5,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Shoe, Boot-Maker, Dealer",299,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Patten, Clog-Maker",4,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Wig Maker, Hair Dresser",40,s,op1256115-1001,n1435,
+1911,Leinster,f,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",21,m,op1256115-1001,n1435,
+1911,Leinster,f,18.1,Others,55,m,op1256115-1001,n1435,
+1911,Leinster,f,20.1,"Oil Miller; Oil Cake-Maker, Dealer",1,m,op1256115-1001,n1435,
+1911,Leinster,f,20.1,Japanner,1,m,op1256115-1001,n1435,
+1911,Leinster,f,20.1,"India Rubber, Gutta Percha-Worker, Dealer",2,m,op1256115-1001,n1435,
+1911,Leinster,f,20.1,"Waterproof Goods-Maker, Dealer",13,m,op1256115-1001,n1435,
+1911,Leinster,f,20.1,Others,2,m,op1256115-1001,n1435,
+1911,Leinster,f,20.4,Paper Manufacture,128,m,op1256115-1001,n1435,
+1911,Leinster,f,20.4,Envelope Maker,59,m,op1256115-1001,n1435,
+1911,Leinster,f,20.4,"Stationer, Law Stationer",400,d,op1256115-1001,n1435,
+1911,Leinster,f,20.4,"Card, Pattern-card-Maker",2,m,op1256115-1001,n1435,
+1911,Leinster,f,20.4,"Paper Box, Paper Bag-Maker",344,m,op1256115-1001,n1435,
+1911,Leinster,f,20.4,"Ticket, Label-Writer",6,m,op1256115-1001,n1435,
+1911,Leinster,f,20.4,Others,9,m,op1256115-1001,n1435,
+1911,Leinster,f,21.2,"Coal-Merchant, Dealer",7,d,op1256115-1001,n1435,
+1911,Leinster,f,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",1,p,op1256115-1001,n1435,
+1911,Leinster,f,21.4,"Earthenware, China, Porcelain-Manufacture",12,m,op1256115-1001,n1436,
+1911,Leinster,f,21.4,Glass Manufacture,20,m,op1256115-1001,n1436,
+1911,Leinster,f,21.4,"Earthenware, China, Glass-Dealer",25,d,op1256115-1001,n1436,
+1911,Leinster,f,21.8,"Iron, Iron Goods-Manufacture",1,m,op1256115-1001,n1436,
+1911,Leinster,f,21.8,"Blacksmith, Forgekeeper",2,m,op1256115-1001,n1436,
+1911,Leinster,f,21.8,Nail Manufacture,1,m,op1256115-1001,n1436,
+1911,Leinster,f,21.8,"Ironmonger; Hardware-Dealer, Merchant",79,d,op1256115-1001,n1436,
+1911,Leinster,f,22.1,"General Shopkeeper, Dealer",4506,d,op1256115-1001,n1436,
+1911,Leinster,f,22.1,Pawnbroker,12,d,op1256115-1001,n1436,
+1911,Leinster,f,22.1,"Costermonger, Huckster, Street Seller",185,d,op1256115-1001,n1436,
+1911,Leinster,f,22.1,"Manufacturer, Manageress, Superintendent (undefined)",71,m,op1256115-1001,n1436,
+1911,Leinster,f,22.1,Contractor (undefined),2,m,op1256115-1001,n1436,
+1911,Leinster,f,22.2,General Labourer,650,o,op1256115-1001,n1436,
+1911,Leinster,f,22.2,"Artizan, Mechanic (undefined)",29,m,op1256115-1001,n1436,
+1911,Leinster,f,22.2,"Apprentice, Assistant (undefined)",99,m,op1256115-1001,n1436,
+1911,Leinster,f,22.2,Factory Labourer (undefined),1526,m,op1256115-1001,n1436,
+1911,Leinster,f,22.2,"Machinist, Machine Worker (undefined)",349,m,op1256115-1001,n1436,
+1911,Leinster,f,23.1,"Chimney Sweep, Soot Merchant",1,s,op1256115-1001,n1436,
+1911,Leinster,f,23.1,"Rag-Gatherer, Dealer",37,d,op1256115-1001,n1436,
+1911,Munster,m,3.5,Student (undefined),974,n,op1256116-1001,n1306,
+1911,Munster,m,8.1,"Horse-Proprietor, Breeder, Dealer",177,d,op1256116-1001,n1307,
+1911,Munster,m,8.1,"Groom, Horse Keeper, Horse Breaker",753,s,op1256116-1001,n1307,
+1911,Munster,m,8.1,"Veterinary Surgeon, Assistant",81,s,op1256116-1001,n1307,
+1911,Munster,m,8.1,"Cattle, Sheep, Pig-Dealer, Salesman",1585,d,op1256116-1001,n1307,
+1911,Munster,m,8.1,Farrier,124,m,op1256116-1001,n1307,
+1911,Munster,m,8.1,Drover,159,d,op1256116-1001,n1307,
+1911,Munster,m,8.1,Gamekeeper,298,s,op1256116-1001,n1307,
+1911,Munster,m,8.1,"Dog, Bird, Animal-Keeper, Dealer",25,d,op1256116-1001,n1307,
+1911,Munster,m,8.1,Vermin Destroyer,2,m,op1256116-1001,n1307,
+1911,Munster,m,8.1,Fisherman,3694,p,op1256116-1001,n1307,
+1911,Munster,m,8.1,"Knacker, Cat's Meat Dealer, &c., &c.",2,m,op1256116-1001,n1307,
+1911,Munster,m,9.1,"Publisher, Bookseller, Librarian",45,d,op1256116-1001,n1308,
+1911,Munster,m,9.1,"Music-Publisher, Seller, Printer",8,m,op1256116-1001,n1308,
+1911,Munster,m,9.1,Bookbinder,73,m,op1256116-1001,n1308,
+1911,Munster,m,9.1,Printer (including employés),654,m,op1256116-1001,n1308,
+1911,Munster,m,9.1,"Newspaper Agent, News Room Keeper",47,d,op1256116-1001,n1308,
+1911,Munster,m,9.1,Others,8,m,op1256116-1001,n1308,
+1911,Munster,m,11.2,"Cabinet Maker, Upholsterer",305,m,op1256116-1001,n1308,
+1911,Munster,m,11.2,French Polisher,50,m,op1256116-1001,n1308,
+1911,Munster,m,11.2,"Furniture-Broker, Dealer",32,d,op1256116-1001,n1308,
+1911,Munster,m,11.2,"Locksmith, Bellhanger",16,m,op1256116-1001,n1308,
+1911,Munster,m,11.2,Gas Fitter,75,m,op1256116-1001,n1308,
+1911,Munster,m,11.2,"House and Shop Fittings-Maker, Dealer",10,m,op1256116-1001,n1308,
+1911,Munster,m,11.2,"Funeral Furniture Maker, Undertaker",56,s,op1256116-1001,n1308,
+1911,Munster,m,11.3,Wood Carver,13,m,op1256116-1001,n1309,
+1911,Munster,m,11.3,"Carver, Gilder",29,m,op1256116-1001,n1309,
+1911,Munster,m,11.3,Dealer in Works of Art,1,d,op1256116-1001,n1309,
+1911,Munster,m,11.3,"Figure, Image-Maker, Dealer",5,m,op1256116-1001,n1309,
+1911,Munster,m,11.3,"Animal, Bird, &c.-Preserver; Naturalist",2,m,op1256116-1001,n1309,
+1911,Munster,m,11.3,Others,5,m,op1256116-1001,n1309,
+1911,Munster,m,14.3,"Chemist, Druggist, Assistant",436,d,op1256116-1001,n1309,
+1911,Munster,m,14.3,Manufacturing Chemist,19,m,op1256116-1001,n1309,
+1911,Munster,m,15.1,"Tobacco Manufacturer, Tobacconist",128,x:354/353+354,op1256116-1001,n1309,
+1911,Munster,m,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",9,m,op1256116-1001,n1309,
+1911,Munster,m,16.2,"Maltster, Distiller",99,m,op1256116-1001,n1309,
+1911,Munster,m,16.2,Brewer,237,m,op1256116-1001,n1309,
+1911,Munster,m,16.2,"Beerseller; Ale, Porter, Cider-Dealer",2,d,op1256116-1001,n1309,
+1911,Munster,m,16.2,Cellarman,76,d,op1256116-1001,n1309,
+1911,Munster,m,16.2,"Wine and Spirit-Merchant, Agent",220,d,op1256116-1001,n1309,
+1911,Munster,m,16.3,Creamery Worker (Butter and Cheese Making),701,m,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Milkseller, Dairyman",320,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Butcher, Meat Salesman",1812,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Provision-Curer, Dealer",540,x:336/335+336,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Poulterer, Game Dealer",110,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,Fishmonger,166,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Corn, Flour, Seed-Merchant, Dealer",246,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,Corn Miller,429,m,op1256116-1001,n1310,
+1911,Munster,m,16.3,Baker,1896,x:344/343+344,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Confectioner, Pastry Cook",125,x:344/343+344,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Greengrocer, Fruiterer",58,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,Sugar Refiner,2,m,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",1768,d,op1256116-1001,n1310,
+1911,Munster,m,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",87,m,op1256116-1001,n1310,
+1911,Munster,m,16.3,Others dealing in Food,2,d,op1256116-1001,n1310,
+1911,Munster,m,17.1,Woolstapler,55,d,op1256116-1001,n1310,
+1911,Munster,m,17.1,Woollen Cloth Manufacture,624,m,op1256116-1001,n1310,
+1911,Munster,m,17.1,"Wool, Woollen Goods-Dyer, Printer",9,m,op1256116-1001,n1310,
+1911,Munster,m,17.1,"Worsted, Stuff-Manufacture",10,m,op1256116-1001,n1310,
+1911,Munster,m,17.1,Flannel Manufacture,1,m,op1256116-1001,n1310,
+1911,Munster,m,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",3,d,op1256116-1001,n1310,
+1911,Munster,m,17.1,Others,3,m,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Cotton, Cotton Goods-Manufacture",16,m,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",1,m,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Flax, Linen-Manufacture-(Spinning processes)",64,m,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Flax, Linen-Manufacture-(Weaving processes)",26,m,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",29,m,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Flax, Linen-Merchant, Dealer",2,d,op1256116-1001,n1310,
+1911,Munster,m,17.3,"Lace-Manufacturer, Dealer",2,m,op1256116-1001,n1310,
+1911,Munster,m,17.5,Weaver (undefined),31,m,op1256116-1001,n1310,
+1911,Munster,m,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",12,m,op1256116-1001,n1310,
+1911,Munster,m,17.5,"Factory Hand (Textile), undefined",1,m,op1256116-1001,n1310,
+1911,Munster,m,17.5,Carpet and Rug Manufacture,4,m,op1256116-1001,n1310,
+1911,Munster,m,17.5,"Draper, Linen Draper, Mercer",2167,d,op1256116-1001,n1310,
+1911,Munster,m,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",3,m,op1256116-1001,n1310,
+1911,Munster,m,17.5,Others,2,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Hatter, Hat Manufacture (not Straw)",8,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,Tailor,3525,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Milliner, Dressmaker",9,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,Shirtmaker,14,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,Hosiery Manufacture,11,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Hosier, Haberdasher",7,d,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Glover, Glove Maker",6,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Shoe, Boot-Maker, Dealer",3472,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Patten, Clog-Maker",7,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Wig Maker, Hair Dresser",400,s,op1256116-1001,n1310,
+1911,Munster,m,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",11,m,op1256116-1001,n1310,
+1911,Munster,m,18.1,Others,3,m,op1256116-1001,n1310,
+1911,Munster,m,20.1,"Oil Miller; Oil Cake-Maker, Dealer",7,m,op1256116-1001,n1311,
+1911,Munster,m,20.1,Oil and Colourman,15,d,op1256116-1001,n1311,
+1911,Munster,m,20.1,"India Rubber, Gutta Percha-Worker, Dealer",2,m,op1256116-1001,n1311,
+1911,Munster,m,20.1,"Waterproof Goods-Maker, Dealer",1,m,op1256116-1001,n1311,
+1911,Munster,m,20.1,Others,3,m,op1256116-1001,n1311,
+1911,Munster,m,20.3,"Timber, Wood-Merchant, Dealer",71,d,op1256116-1001,n1311,
+1911,Munster,m,20.3,Sawyer,225,m,op1256116-1001,n1311,
+1911,Munster,m,20.3,"Lath, Wooden Fence, Hurdle-Maker",2,m,op1256116-1001,n1311,
+1911,Munster,m,20.3,"Wood Turner, Box Maker",71,m,op1256116-1001,n1311,
+1911,Munster,m,20.3,"Cooper; Hoop-Maker, Bender",837,m,op1256116-1001,n1311,
+1911,Munster,m,20.3,"Cork, Bark-Cutter, Worker, Dealer",45,m,op1256116-1001,n1311,
+1911,Munster,m,20.3,Others,4,m,op1256116-1001,n1311,
+1911,Munster,m,20.4,Paper Manufacture,6,m,op1256116-1001,n1311,
+1911,Munster,m,20.4,"Stationer, Law Stationer",49,d,op1256116-1001,n1311,
+1911,Munster,m,20.4,"Paper Box, Paper Bag-Maker",7,m,op1256116-1001,n1311,
+1911,Munster,m,20.4,Others,43,m,op1256116-1001,n1311,
+1911,Munster,m,21.2,"Coal-Merchant, Dealer",84,d,op1256116-1001,n1311,
+1911,Munster,m,21.2,Coalheaver,168,s,op1256116-1001,n1311,
+1911,Munster,m,21.2,Gas Works Service,250,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,Stone Quarrier,285,p,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Stone-Cutter, Dresser, Dealer",318,p,op1256116-1001,n1311,
+1911,Munster,m,21.3,Slate Quarrier,51,p,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Slate-Worker, Dealer",30,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,Limeburner,11,p,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",18,p,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Well-Sinker, Borer",27,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Plaster, Cement-Manufacture",2,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Brick, Tile-Maker, Burner, Dealer",50,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,Paviour,12,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Road-Contractor, Surveyor, Inspector",193,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,Road Labourer,366,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,Railway Contractor,30,m,op1256116-1001,n1311,
+1911,Munster,m,21.3,Platelayer,187,s,op1256116-1001,n1311,
+1911,Munster,m,21.3,"Railway Labourer, Navvy",715,m,op1256116-1001,n1311,
+1911,Munster,m,21.4,"Earthenware, China, Porcelain-Manufacture",16,m,op1256116-1001,n1312,
+1911,Munster,m,21.4,Glass Manufacture,6,m,op1256116-1001,n1312,
+1911,Munster,m,21.4,"Earthenware, China, Glass-Dealer",12,d,op1256116-1001,n1312,
+1911,Munster,m,21.8,"Iron, Iron Goods-Manufacture",183,m,op1256116-1001,n1312,
+1911,Munster,m,21.8,"Steel, Steel Goods-Manufacture",6,m,op1256116-1001,n1312,
+1911,Munster,m,21.8,Blacksmith,2985,m,op1256116-1001,n1312,
+1911,Munster,m,21.8,Whitesmith,81,m,op1256116-1001,n1312,
+1911,Munster,m,21.8,Nail Manufacture,51,m,op1256116-1001,n1312,
+1911,Munster,m,21.8,"Anchor, Chain-Manufacture",1,m,op1256116-1001,n1312,
+1911,Munster,m,21.8,"Ironmonger; Hardware-Dealer, Merchant",432,d,op1256116-1001,n1312,
+1911,Munster,m,22.1,"General Shopkeeper, Dealer",3239,d,op1256116-1001,n1312,
+1911,Munster,m,22.1,Pawnbroker,128,d,op1256116-1001,n1312,
+1911,Munster,m,22.1,"Costermonger, Huckster, Street Seller",191,d,op1256116-1001,n1312,
+1911,Munster,m,22.1,"Manufacturer, Manager, Superintendent (undefined)",164,m,op1256116-1001,n1312,
+1911,Munster,m,22.1,Contractor (undefined),55,m,op1256116-1001,n1312,
+1911,Munster,m,22.2,General Labourer,37996,o,op1256116-1001,n1312,
+1911,Munster,m,22.2,"Artizan, Mechanic (undefined)",161,m,op1256116-1001,n1312,
+1911,Munster,m,22.2,"Engine Driver, Stoker, Fireman (not Railway, Marine, nor Agricultural)",640,m,op1256116-1001,n1312,
+1911,Munster,m,22.2,"Apprentice, Assistant (undefined)",73,m,op1256116-1001,n1312,
+1911,Munster,m,22.2,Factory Labourer (undefined),575,m,op1256116-1001,n1312,
+1911,Munster,m,22.2,"Machinist, Machine Worker (undefined)",74,m,op1256116-1001,n1312,
+1911,Munster,m,23.1,"Chimney Sweep, Soot Merchant",80,s,op1256116-1001,n1312,
+1911,Munster,m,23.1,"Scavenger, Crossing Sweeper",14,s,op1256116-1001,n1312,
+1911,Munster,m,23.1,"Rag-Gatherer, Dealer",8,d,op1256116-1001,n1312,
+1911,Munster,f,3.5,Student (undefined),459,n,op1256116-1001,n1313,
+1911,Munster,f,8.1,"Cattle, Sheep, Pig-Dealer",1,d,op1256116-1001,n1315,
+1911,Munster,f,8.1,"Dog, Bird, Animal-Keeper, Dealer",5,d,op1256116-1001,n1315,
+1911,Munster,f,8.1,Fisherwoman,18,p,op1256116-1001,n1315,
+1911,Munster,f,9.1,"Publisher, Bookseller, Librarian",29,d,op1256116-1001,n1315,
+1911,Munster,f,9.1,"Music-Publisher, Seller, Printer",2,m,op1256116-1001,n1315,
+1911,Munster,f,9.1,Bookbinder,90,m,op1256116-1001,n1315,
+1911,Munster,f,9.1,Printer,15,m,op1256116-1001,n1315,
+1911,Munster,f,9.1,"Newspaper Agent, News Room Keeper",24,d,op1256116-1001,n1315,
+1911,Munster,f,9.1,Others,1,m,op1256116-1001,n1315,
+1911,Munster,f,11.2,"Cabinet Maker, Upholsterer",36,m,op1256116-1001,n1315,
+1911,Munster,f,11.2,French Polisher,14,m,op1256116-1001,n1315,
+1911,Munster,f,11.2,"Furniture-Broker, Dealer",3,d,op1256116-1001,n1315,
+1911,Munster,f,11.2,"Funeral Furniture Maker, Undertaker",1,s,op1256116-1001,n1315,
+1911,Munster,f,11.3,Dealer in Works of Art,2,d,op1256116-1001,n1315,
+1911,Munster,f,11.3,"Figure, Image-Maker, Dealer",5,m,op1256116-1001,n1315,
+1911,Munster,f,14.3,"Chemist, Druggist",11,d,op1256116-1001,n1316,
+1911,Munster,f,14.3,Manufacturing Chemist,5,m,op1256116-1001,n1316,
+1911,Munster,f,15.1,"Tobacco Manufacturer, Tobacconist",87,x:354/353+354,op1256116-1001,n1316,
+1911,Munster,f,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",13,m,op1256116-1001,n1316,
+1911,Munster,f,16.2,"Hop-Merchant, Dealer",1,d,op1256116-1001,n1316,
+1911,Munster,f,16.2,Brewer,1,m,op1256116-1001,n1316,
+1911,Munster,f,16.2,"Wine and Spirit-Merchant, Agent",73,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,Creamery Worker (Butter and Cheese Making),120,m,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Milkseller, Dairykeeper",83,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,Butcher,48,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Provision-Curer, Dealer",300,x:336/335+336,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Poulterer, Game Dealer",83,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,Fishmonger,98,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Corn, Flour, Seed-Merchant, Dealer",13,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,Corn Miller,4,m,op1256116-1001,n1316,
+1911,Munster,f,16.3,Baker,21,x:344/343+344,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Confectioner, Pastry Cook",320,x:344/343+344,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Greengrocer, Fruiterer",180,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,Sugar Refiner,2,m,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",655,d,op1256116-1001,n1316,
+1911,Munster,f,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",1,m,op1256116-1001,n1316,
+1911,Munster,f,16.3,Others dealing in Food,1,d,op1256116-1001,n1316,
+1911,Munster,f,17.1,Woollen Cloth Manufacture,711,m,op1256116-1001,n1316,
+1911,Munster,f,17.1,"Wool, Woollen Goods-Dyer, Printer",1,m,op1256116-1001,n1316,
+1911,Munster,f,17.1,"Worsted, Stuff-Manufacture",12,m,op1256116-1001,n1316,
+1911,Munster,f,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",1,d,op1256116-1001,n1316,
+1911,Munster,f,17.1,Others,3,m,op1256116-1001,n1316,
+1911,Munster,f,17.3,"Cotton, Cotton Goods-Manufacture",86,m,op1256116-1001,n1317,
+1911,Munster,f,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",4,m,op1256116-1001,n1317,
+1911,Munster,f,17.3,"Flax, Linen-Manufacture-(Spinning processes)",370,m,op1256116-1001,n1317,
+1911,Munster,f,17.3,"Flax, Linen-Manufacture-(Weaving processes)",86,m,op1256116-1001,n1317,
+1911,Munster,f,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",19,m,op1256116-1001,n1317,
+1911,Munster,f,17.3,"Lace-Manufacturer, Dealer",678,m,op1256116-1001,n1317,
+1911,Munster,f,17.5,Weaver (undefined),27,m,op1256116-1001,n1317,
+1911,Munster,f,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",3,m,op1256116-1001,n1317,
+1911,Munster,f,17.5,"Factory Hand (Textile), undefined",9,m,op1256116-1001,n1317,
+1911,Munster,f,17.5,Manchester Warehousewoman,1,d,op1256116-1001,n1317,
+1911,Munster,f,17.5,"Draper, Linen Draper, Mercer",890,d,op1256116-1001,n1317,
+1911,Munster,f,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",130,m,op1256116-1001,n1317,
+1911,Munster,f,17.5,Embroiderer,4,m,op1256116-1001,n1317,
+1911,Munster,f,17.5,Others,16,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Hatter, Hat Manufacture (not Straw)",13,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,Tailoress,372,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Milliner, Dressmaker, Staymaker",6219,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Shirtmaker, Seamstress",1789,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,Hosiery Manufacture,50,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Hosier, Haberdasher",3,d,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Glover, Glove Maker",44,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Shoe, Boot-Maker, Dealer",133,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Wig Maker, Hair Dresser",1,s,op1256116-1001,n1317,
+1911,Munster,f,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",4,m,op1256116-1001,n1317,
+1911,Munster,f,18.1,Others,15,m,op1256116-1001,n1317,
+1911,Munster,f,20.3,"Timber, Wood-Merchant, Dealer",2,d,op1256116-1001,n1317,
+1911,Munster,f,20.3,"Wood Turner, Box Maker",2,m,op1256116-1001,n1317,
+1911,Munster,f,20.3,"Cork, Bark-Cutter, Worker, Dealer",2,m,op1256116-1001,n1317,
+1911,Munster,f,20.4,Paper Manufacture,6,m,op1256116-1001,n1318,
+1911,Munster,f,20.4,"Stationer, Law Stationer",64,d,op1256116-1001,n1318,
+1911,Munster,f,20.4,"Card, Pattern-card-Maker",2,m,op1256116-1001,n1318,
+1911,Munster,f,20.4,"Paper Box, Paper Bag-Maker",48,m,op1256116-1001,n1318,
+1911,Munster,f,20.4,"Ticket, Label-Writer",1,m,op1256116-1001,n1318,
+1911,Munster,f,20.4,Others,9,m,op1256116-1001,n1318,
+1911,Munster,f,21.2,"Coal-Merchant, Dealer",4,d,op1256116-1001,n1318,
+1911,Munster,f,21.4,"Earthenware, China, Porcelain-Manufacture",5,m,op1256116-1001,n1318,
+1911,Munster,f,21.4,Glass Manufacture,1,m,op1256116-1001,n1318,
+1911,Munster,f,21.4,"Earthenware, China, Glass-Dealer",10,d,op1256116-1001,n1318,
+1911,Munster,f,21.8,"Iron, Iron Goods-Manufacture",1,m,op1256116-1001,n1318,
+1911,Munster,f,21.8,Nail Manufacture,1,m,op1256116-1001,n1318,
+1911,Munster,f,21.8,"Ironmonger; Hardware-Dealer, Merchant",50,d,op1256116-1001,n1318,
+1911,Munster,f,22.1,"General Shopkeeper, Dealer",4498,d,op1256116-1001,n1318,
+1911,Munster,f,22.1,Pawnbroker,14,d,op1256116-1001,n1318,
+1911,Munster,f,22.1,"Costermonger, Huckster, Street Seller",119,d,op1256116-1001,n1318,
+1911,Munster,f,22.1,"Manufacturer, Manageress, Superintendent (undefined)",33,m,op1256116-1001,n1318,
+1911,Munster,f,22.1,Contractor (undefined),1,m,op1256116-1001,n1318,
+1911,Munster,f,22.2,General Labourer,300,o,op1256116-1001,n1318,
+1911,Munster,f,22.2,"Artizan, Mechanic (undefined)",2,m,op1256116-1001,n1318,
+1911,Munster,f,22.2,"Apprentice, Assistant (undefined)",58,m,op1256116-1001,n1318,
+1911,Munster,f,22.2,Factory Labourer (undefined),778,m,op1256116-1001,n1318,
+1911,Munster,f,22.2,"Machinist, Machine Worker (undefined)",188,m,op1256116-1001,n1318,
+1911,Munster,f,23.1,"Rag-Gatherer, Dealer",5,d,op1256116-1001,n1318,
+1911,Ulster,m,3.5,Student (undefined),628,n,op1256117-1001,n1391,
+1911,Ulster,m,8.1,"Horse-Proprietor, Breeder, Dealer",223,d,op1256117-1001,n1393,
+1911,Ulster,m,8.1,"Groom, Horse Keeper, Horse Breaker",443,s,op1256117-1001,n1393,
+1911,Ulster,m,8.1,"Veterinary Surgeon, Assistant",132,s,op1256117-1001,n1393,
+1911,Ulster,m,8.1,"Cattle, Sheep, Pig-Dealer, Salesman",1175,d,op1256117-1001,n1393,
+1911,Ulster,m,8.1,Farrier,128,m,op1256117-1001,n1393,
+1911,Ulster,m,8.1,Drover,90,d,op1256117-1001,n1393,
+1911,Ulster,m,8.1,Gamekeeper,326,s,op1256117-1001,n1393,
+1911,Ulster,m,8.1,"Dog, Bird, Animal-Keeper, Dealer",59,d,op1256117-1001,n1393,
+1911,Ulster,m,8.1,Fisherman,2174,p,op1256117-1001,n1393,
+1911,Ulster,m,8.1,"Knacker, Cat's Meat Dealer, &c., &c.",6,m,op1256117-1001,n1393,
+1911,Ulster,m,9.1,"Publisher, Bookseller, Librarian",93,d,op1256117-1001,n1393,
+1911,Ulster,m,9.1,"Music-Publisher, Seller, Printer",6,m,op1256117-1001,n1393,
+1911,Ulster,m,9.1,Bookbinder,166,m,op1256117-1001,n1393,
+1911,Ulster,m,9.1,Printer (including Employés),1768,m,op1256117-1001,n1393,
+1911,Ulster,m,9.1,"Newspaper Agent, News Room Keeper",116,d,op1256117-1001,n1393,
+1911,Ulster,m,9.1,Others,19,m,op1256117-1001,n1393,
+1911,Ulster,m,11.2,"Cabinet Maker, Upholsterer",1389,m,op1256117-1001,n1394,
+1911,Ulster,m,11.2,French Polisher,372,m,op1256117-1001,n1394,
+1911,Ulster,m,11.2,"Furniture-Broker, Dealer",176,d,op1256117-1001,n1394,
+1911,Ulster,m,11.2,"Locksmith, Bellhanger",10,m,op1256117-1001,n1394,
+1911,Ulster,m,11.2,Gas Fitter,72,m,op1256117-1001,n1394,
+1911,Ulster,m,11.2,"House and Shop Fittings-Maker, Dealer",91,m,op1256117-1001,n1394,
+1911,Ulster,m,11.2,"Funeral Furniture Maker, Undertaker",42,s,op1256117-1001,n1394,
+1911,Ulster,m,11.2,Others,1,m,op1256117-1001,n1394,
+1911,Ulster,m,11.3,Wood Carver,99,m,op1256117-1001,n1394,
+1911,Ulster,m,11.3,"Carver, Gilder",84,m,op1256117-1001,n1394,
+1911,Ulster,m,11.3,Dealer in Works of Art,17,d,op1256117-1001,n1394,
+1911,Ulster,m,11.3,"Figure, Image-Maker, Dealer",4,m,op1256117-1001,n1394,
+1911,Ulster,m,11.3,"Animal, Bird, &c.-Preserver; Naturalist",4,m,op1256117-1001,n1394,
+1911,Ulster,m,11.3,Others,11,m,op1256117-1001,n1394,
+1911,Ulster,m,14.3,"Chemist, Druggist, Assistant",918,d,op1256117-1001,n1394,
+1911,Ulster,m,14.3,Manufacturing Chemist,62,m,op1256117-1001,n1394,
+1911,Ulster,m,14.3,Alkali Manufacture,3,m,op1256117-1001,n1394,
+1911,Ulster,m,14.3,Drysalter,2,d,op1256117-1001,n1394,
+1911,Ulster,m,14.3,Others,2,m,op1256117-1001,n1394,
+1911,Ulster,m,15.1,"Tobacco Manufacturer, Tobacconist",344,x:354/353+354,op1256117-1001,n1395,
+1911,Ulster,m,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",22,m,op1256117-1001,n1395,
+1911,Ulster,m,16.2,"Hop-Merchant, Dealer",1,d,op1256117-1001,n1395,
+1911,Ulster,m,16.2,"Maltster, Distiller",187,m,op1256117-1001,n1395,
+1911,Ulster,m,16.2,Brewer,59,m,op1256117-1001,n1395,
+1911,Ulster,m,16.2,"Beerseller; Ale, Porter, Cider-Dealer",4,d,op1256117-1001,n1395,
+1911,Ulster,m,16.2,Cellarman,210,d,op1256117-1001,n1395,
+1911,Ulster,m,16.2,"Wine and Spirit-Merchant, Agent",852,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,Creamery Worker (Butter and Cheese Making),240,m,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Milkseller, Dairyman",507,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Butcher, Meat Salesman",2282,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Provision-Curer, Dealer",817,x:336/335+336,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Poulterer, Game Dealer",767,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,Fishmonger,357,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Corn, Flour, Seed-Merchant, Dealer",280,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,Corn Miller,605,m,op1256117-1001,n1395,
+1911,Ulster,m,16.3,Baker,2242,x:344/343+344,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Confectioner, Pastry Cook",341,x:344/343+344,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Greengrocer, Fruiterer",375,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,Sugar Refiner,32,m,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",5694,d,op1256117-1001,n1395,
+1911,Ulster,m,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",195,m,op1256117-1001,n1395,
+1911,Ulster,m,16.3,Others dealing in Food,17,d,op1256117-1001,n1395,
+1911,Ulster,m,17.1,Woolstapler,13,d,op1256117-1001,n1395,
+1911,Ulster,m,17.1,Woollen Cloth Manufacture,918,m,op1256117-1001,n1395,
+1911,Ulster,m,17.1,"Wool, Woollen Goods-Dyer, Printer",6,m,op1256117-1001,n1395,
+1911,Ulster,m,17.1,"Worsted, Stuff-Manufacture",20,m,op1256117-1001,n1395,
+1911,Ulster,m,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",12,d,op1256117-1001,n1395,
+1911,Ulster,m,17.1,Others,2,m,op1256117-1001,n1395,
+1911,Ulster,m,17.2,"Silk, Silk Goods-Manufacture",11,m,op1256117-1001,n1395,
+1911,Ulster,m,17.2,"Silk-Dyer, Printer",2,m,op1256117-1001,n1395,
+1911,Ulster,m,17.2,"Silk-Merchant, Dealer",1,d,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Cotton, Cotton Goods-Manufacture",329,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",78,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Cotton, Calico-Warehouseman, Dealer",8,d,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Flax, Linen-Manufacture-(Spinning processes)",6780,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Flax, Linen-Manufacture-(Weaving processes)",9320,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",5594,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Flax, Linen-Merchant, Dealer",778,d,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Lace-Manufacturer, Dealer",8,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Tape-Manufacturer, Dealer",10,m,op1256117-1001,n1395,
+1911,Ulster,m,17.3,"Thread-Manufacturer, Dealer",83,m,op1256117-1001,n1395,
+1911,Ulster,m,17.5,Weaver (undefined),103,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",213,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,"Factory Hand (Textile), undefined",144,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,Felt Manufacture,66,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,Carpet and Rug Manufacture,17,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,Manchester Warehouseman,3,d,op1256117-1001,n1396,
+1911,Ulster,m,17.5,"Draper, Linen Draper, Mercer",3242,d,op1256117-1001,n1396,
+1911,Ulster,m,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",74,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,Embroiderer,104,m,op1256117-1001,n1396,
+1911,Ulster,m,17.5,Others,38,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Hatter, Hat Manufacture (not Straw)",43,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Straw Hat, Bonnet, Plait-Manufacture",5,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,Tailor,4951,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Milliner, Dressmaker",29,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,Shirtmaker,703,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,Hosiery Manufacture,34,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Hosier, Haberdasher",31,d,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Shoe, Boot-Maker, Dealer",4981,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Patten, Clog-Maker",66,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Wig Maker, Hair Dresser",1005,s,op1256117-1001,n1396,
+1911,Ulster,m,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",21,m,op1256117-1001,n1396,
+1911,Ulster,m,18.1,Others,11,m,op1256117-1001,n1396,
+1911,Ulster,m,20.1,"Oil Miller; Oil Cake-Maker, Dealer",24,m,op1256117-1001,n1396,
+1911,Ulster,m,20.1,Oil and Colourman,18,d,op1256117-1001,n1396,
+1911,Ulster,m,20.1,Japanner,1,m,op1256117-1001,n1396,
+1911,Ulster,m,20.1,"India Rubber, Gutta Percha-Worker, Dealer",4,m,op1256117-1001,n1396,
+1911,Ulster,m,20.1,"Waterproof Goods-Maker, Dealer",2,m,op1256117-1001,n1396,
+1911,Ulster,m,20.3,"Timber, Wood-Merchant, Dealer",187,d,op1256117-1001,n1397,
+1911,Ulster,m,20.3,Sawyer,489,m,op1256117-1001,n1397,
+1911,Ulster,m,20.3,"Lath, Wooden Fence, Hurdle-Maker",7,m,op1256117-1001,n1397,
+1911,Ulster,m,20.3,"Wood Turner, Box Maker",508,m,op1256117-1001,n1397,
+1911,Ulster,m,20.3,"Cooper; Hoop-Maker, Bender",490,m,op1256117-1001,n1397,
+1911,Ulster,m,20.3,"Cork, Bark-Cutter, Worker, Dealer",69,m,op1256117-1001,n1397,
+1911,Ulster,m,20.3,Others,14,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,Paper Manufacture,201,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,Envelope Maker,1,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,"Stationer, Law Stationer",181,d,op1256117-1001,n1397,
+1911,Ulster,m,20.4,"Card, Pattern-card-Maker",23,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,Paper Stainer,1,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,"Paper Box, Paper Bag-Maker",87,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,"Ticket, Label-Writer",34,m,op1256117-1001,n1397,
+1911,Ulster,m,20.4,Others,117,m,op1256117-1001,n1397,
+1911,Ulster,m,21.2,"Coal-Merchant, Dealer",287,d,op1256117-1001,n1397,
+1911,Ulster,m,21.2,Coalheaver,308,s,op1256117-1001,n1397,
+1911,Ulster,m,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",8,p,op1256117-1001,n1397,
+1911,Ulster,m,21.2,Gas Works Service,652,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Stone Quarrier,562,p,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Stone-Cutter, Dresser, Dealer",851,p,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Slate-Worker, Dealer",2,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Limeburner,48,p,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",20,p,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Well-Sinker, Borer",23,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Plaster, Cement-Manufacture",5,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Brick, Tile-Maker, Burner, Dealer",233,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Paviour,103,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Road-Contractor, Surveyor, Inspector",172,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Road Labourer,667,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Railway Contractor,25,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Platelayer,526,s,op1256117-1001,n1397,
+1911,Ulster,m,21.3,"Railway Labourer, Navvy",1062,m,op1256117-1001,n1397,
+1911,Ulster,m,21.3,Others,2,m,op1256117-1001,n1397,
+1911,Ulster,m,21.4,"Earthenware, China, Porcelain-Manufacture",122,m,op1256117-1001,n1397,
+1911,Ulster,m,21.4,Glass Manufacture,84,m,op1256117-1001,n1397,
+1911,Ulster,m,21.4,"Earthenware, China, Glass-Dealer",46,d,op1256117-1001,n1397,
+1911,Ulster,m,21.8,"Iron, Iron Goods-Manufacture",4083,m,op1256117-1001,n1397,
+1911,Ulster,m,21.8,"Steel, Steel Goods-Manufacture",29,m,op1256117-1001,n1397,
+1911,Ulster,m,21.8,Blacksmith,4226,m,op1256117-1001,n1397,
+1911,Ulster,m,21.8,Whitesmith,99,m,op1256117-1001,n1397,
+1911,Ulster,m,21.8,Nail Manufacture,76,m,op1256117-1001,n1397,
+1911,Ulster,m,21.8,"Anchor, Chain-Manufacture",4,m,op1256117-1001,n1397,
+1911,Ulster,m,21.8,"Ironmonger; Hardware-Dealer, Merchant",813,d,op1256117-1001,n1397,
+1911,Ulster,m,21.8,Others,3,m,op1256117-1001,n1397,
+1911,Ulster,m,22.1,"General Shopkeeper, Dealer",3515,d,op1256117-1001,n1398,
+1911,Ulster,m,22.1,Pawnbroker,369,d,op1256117-1001,n1398,
+1911,Ulster,m,22.1,"Costermonger, Huckster, Street Seller",687,d,op1256117-1001,n1398,
+1911,Ulster,m,22.1,"Manufacturer, Manager, Superintendent (undefined)",589,m,op1256117-1001,n1398,
+1911,Ulster,m,22.1,Contractor (undefined),100,m,op1256117-1001,n1398,
+1911,Ulster,m,22.2,General Labourer,47671,o,op1256117-1001,n1398,
+1911,Ulster,m,22.2,"Artizan, Mechanic (undefined)",1395,m,op1256117-1001,n1398,
+1911,Ulster,m,22.2,"Engine Driver, Stoker, Fireman (not Railway, Marine, nor Agricultural)",1642,m,op1256117-1001,n1398,
+1911,Ulster,m,22.2,"Apprentice, Assistant (undefined)",233,m,op1256117-1001,n1398,
+1911,Ulster,m,22.2,Factory Labourer (undefined),2394,m,op1256117-1001,n1398,
+1911,Ulster,m,22.2,"Machinist, Machine Worker (undefined)",994,m,op1256117-1001,n1398,
+1911,Ulster,m,23.1,Town Drainage Service,2,s,op1256117-1001,n1398,
+1911,Ulster,m,23.1,"Chimney Sweep, Soot Merchant",97,s,op1256117-1001,n1398,
+1911,Ulster,m,23.1,"Scavenger, Crossing Sweeper",45,s,op1256117-1001,n1398,
+1911,Ulster,m,23.1,"Rag-Gatherer, Dealer",46,d,op1256117-1001,n1398,
+1911,Ulster,f,3.5,Student (undefined),289,n,op1256117-1001,n1399,
+1911,Ulster,f,8.1,"Cattle, Sheep, Pig-Dealer",3,d,op1256117-1001,n1401,
+1911,Ulster,f,8.1,"Dog, Bird, Animal-Keeper, Dealer",4,d,op1256117-1001,n1401,
+1911,Ulster,f,8.1,Fisherwoman,3,p,op1256117-1001,n1401,
+1911,Ulster,f,9.1,"Publisher, Bookseller, Librarian",40,d,op1256117-1001,n1401,
+1911,Ulster,f,9.1,"Music-Publisher, Seller, Printer",2,m,op1256117-1001,n1401,
+1911,Ulster,f,9.1,Bookbinder,271,m,op1256117-1001,n1401,
+1911,Ulster,f,9.1,Printer,153,m,op1256117-1001,n1401,
+1911,Ulster,f,9.1,"Newspaper Agent, News Room Keeper",53,d,op1256117-1001,n1401,
+1911,Ulster,f,11.2,"Cabinet Maker, Upholsterer",88,m,op1256117-1001,n1402,
+1911,Ulster,f,11.2,French Polisher,18,m,op1256117-1001,n1402,
+1911,Ulster,f,11.2,"Furniture-Broker, Dealer",7,d,op1256117-1001,n1402,
+1911,Ulster,f,11.2,"House and Shop Fittings-Maker, Dealer",1,m,op1256117-1001,n1402,
+1911,Ulster,f,11.2,"Funeral Furniture Maker, Undertaker",2,s,op1256117-1001,n1402,
+1911,Ulster,f,11.3,"Carver, Gilder",13,m,op1256117-1001,n1402,
+1911,Ulster,f,11.3,Artificial Flower Maker,1,m,op1256117-1001,n1402,
+1911,Ulster,f,14.3,"Chemist, Druggist",20,d,op1256117-1001,n1402,
+1911,Ulster,f,15.1,"Tobacco Manufacturer, Tobacconist",890,x:354/353+354,op1256117-1001,n1402,
+1911,Ulster,f,15.1,"Tobacco Pipe, Snuff-box, &c.-Maker",6,m,op1256117-1001,n1402,
+1911,Ulster,f,16.2,Cellarwoman,2,d,op1256117-1001,n1402,
+1911,Ulster,f,16.2,"Wine and Spirit-Merchant, Agent",137,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Creamery Worker (Butter and Cheese Making),16,m,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Milkseller, Dairykeeper",68,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Butcher,49,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Provision-Curer, Dealer",31,x:336/335+336,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Poulterer, Game Dealer",30,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Fishmonger,49,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Corn, Flour, Seed-Merchant, Dealer",6,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Corn Miller,4,m,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Baker,155,x:344/343+344,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Confectioner, Pastry Cook",494,x:344/343+344,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Greengrocer, Fruiterer",162,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Sugar Refiner,2,m,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",1251,d,op1256117-1001,n1402,
+1911,Ulster,f,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",1,m,op1256117-1001,n1402,
+1911,Ulster,f,16.3,Others dealing in Food,24,d,op1256117-1001,n1402,
+1911,Ulster,f,17.1,Woolstapler,1,d,op1256117-1001,n1403,
+1911,Ulster,f,17.1,Woollen Cloth Manufacture,835,m,op1256117-1001,n1403,
+1911,Ulster,f,17.1,"Wool, Woollen Goods-Dyer, Printer",2,m,op1256117-1001,n1403,
+1911,Ulster,f,17.1,"Worsted, Stuff-Manufacture",22,m,op1256117-1001,n1403,
+1911,Ulster,f,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",1,d,op1256117-1001,n1403,
+1911,Ulster,f,17.1,Others,5,m,op1256117-1001,n1403,
+1911,Ulster,f,17.2,"Silk, Silk Goods-Manufacture",13,m,op1256117-1001,n1403,
+1911,Ulster,f,17.2,"Silk-Dyer, Printer",1,m,op1256117-1001,n1403,
+1911,Ulster,f,17.2,"Crape, Gauze-Manufacture",1,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Cotton, Cotton Goods-Manufacture",975,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Cotton, Calico-Printer, Dyer, Bleacher",30,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Cotton, Calico-Warehousewoman, Dealer",3,d,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Flax, Linen-Manufacture-(Spinning processes)",18437,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Flax, Linen-Manufacture-(Weaving processes)",20614,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Flax, Linen-Manufacture-(Other processes or undefined)",6301,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Flax, Linen-Merchant, Dealer",35,d,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Lace-Manufacturer, Dealer",1134,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Fustian-Manufacturer, Dealer",1,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Tape-Manufacturer, Dealer",26,m,op1256117-1001,n1403,
+1911,Ulster,f,17.3,"Thread-Manufacturer, Dealer",273,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,Weaver (undefined),213,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,"Dyer, Printer, Scourer, Bleacher, Calenderer (undefined)",35,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,"Factory Hand (Textile), undefined",300,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,Felt Manufacture,21,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,Carpet and Rug Manufacture,182,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,"Draper, Linen Draper, Mercer",1774,d,op1256117-1001,n1403,
+1911,Ulster,f,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",1281,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,"Trimming-Maker, Dealer",50,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,Embroiderer,4584,m,op1256117-1001,n1403,
+1911,Ulster,f,17.5,Others,142,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Hatter, Hat Manufacture (not Straw)",4,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Straw Hat, Bonnet, Plait-Manufacture",4,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,Tailoress,1102,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Milliner, Dressmaker, Staymaker",11884,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Shirtmaker, Seamstress",25559,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,Hosiery Manufacture,167,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Hosier, Haberdasher",27,d,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Glover, Glove Maker",4,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Button-Maker, Dealer",1,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Shoe, Boot-Maker, Dealer",223,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Patten, Clog-Maker",1,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Wig Maker, Hair Dresser",16,s,op1256117-1001,n1403,
+1911,Ulster,f,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",8,m,op1256117-1001,n1403,
+1911,Ulster,f,18.1,Others,14,m,op1256117-1001,n1403,
+1911,Ulster,f,20.4,Paper Manufacture,100,m,op1256117-1001,n1404,
+1911,Ulster,f,20.4,Envelope Maker,6,m,op1256117-1001,n1404,
+1911,Ulster,f,20.4,"Stationer, Law Stationer",208,d,op1256117-1001,n1404,
+1911,Ulster,f,20.4,"Card, Pattern-card-Maker",16,m,op1256117-1001,n1404,
+1911,Ulster,f,20.4,"Paper Box, Paper Bag-Maker",991,m,op1256117-1001,n1404,
+1911,Ulster,f,20.4,"Ticket, Label-Writer",41,m,op1256117-1001,n1404,
+1911,Ulster,f,20.4,Others,2,m,op1256117-1001,n1404,
+1911,Ulster,f,21.2,"Coal-Merchant, Dealer",4,d,op1256117-1001,n1404,
+1911,Ulster,f,21.2,"Coke, Charcoal, Peat-Cutter, Burner, Dealer",1,p,op1256117-1001,n1404,
+1911,Ulster,f,21.4,"Earthenware, China, Porcelain-Manufacture",26,m,op1256117-1001,n1404,
+1911,Ulster,f,21.4,Glass Manufacture,2,m,op1256117-1001,n1404,
+1911,Ulster,f,21.4,"Earthenware, China, Glass-Dealer",46,d,op1256117-1001,n1404,
+1911,Ulster,f,21.8,"Iron, Iron Goods-Manufacture",2,m,op1256117-1001,n1405,
+1911,Ulster,f,21.8,"Blacksmith, Forge Keeper",1,m,op1256117-1001,n1405,
+1911,Ulster,f,21.8,Nail Manufacture,2,m,op1256117-1001,n1405,
+1911,Ulster,f,21.8,"Anchor, Chain-Manufacture",1,m,op1256117-1001,n1405,
+1911,Ulster,f,21.8,"Ironmonger; Hardware-Dealer, Merchant",66,d,op1256117-1001,n1405,
+1911,Ulster,f,22.1,"General Shopkeeper, Dealer",2695,d,op1256117-1001,n1405,
+1911,Ulster,f,22.1,Pawnbroker,13,d,op1256117-1001,n1405,
+1911,Ulster,f,22.1,"Costermonger, Huckster, Street Seller",164,d,op1256117-1001,n1405,
+1911,Ulster,f,22.1,"Manufacturer, Manageress, Superintendent (undefined)",125,m,op1256117-1001,n1405,
+1911,Ulster,f,22.1,Contractor (undefined),1,m,op1256117-1001,n1405,
+1911,Ulster,f,22.2,General Labourer,253,o,op1256117-1001,n1405,
+1911,Ulster,f,22.2,"Artizan, Mechanic (undefined)",76,m,op1256117-1001,n1405,
+1911,Ulster,f,22.2,"Apprentice, Assistant (undefined)",99,m,op1256117-1001,n1405,
+1911,Ulster,f,22.2,Factory Labourer (undefined),3246,m,op1256117-1001,n1405,
+1911,Ulster,f,22.2,"Machinist, Machine Worker (undefined)",2377,m,op1256117-1001,n1405,
+1911,Ulster,f,23.1,"Chimney Sweep, Soot Merchant",1,s,op1256117-1001,n1405,
+1911,Ulster,f,23.1,"Rag-Gatherer, Dealer",31,d,op1256117-1001,n1405,
+1911,Connaught,m,3.5,Student (undefined),371,n,op1256118-1001,n779,
+1911,Connaught,m,8.1,"Horse-Proprietor, Breeder, Dealer",23,d,op1256118-1001,n781,
+1911,Connaught,m,8.1,"Groom, Horse Keeper, Horse Breaker",154,s,op1256118-1001,n781,
+1911,Connaught,m,8.1,"Veterinary Surgeon, Assistant",23,s,op1256118-1001,n781,
+1911,Connaught,m,8.1,"Cattle, Sheep, Pig-Dealer, Salesman",272,d,op1256118-1001,n781,
+1911,Connaught,m,8.1,Farrier,18,m,op1256118-1001,n781,
+1911,Connaught,m,8.1,Drover,7,d,op1256118-1001,n781,
+1911,Connaught,m,8.1,Gamekeeper,200,s,op1256118-1001,n781,
+1911,Connaught,m,8.1,"Dog, Bird, Animal-Keeper, Dealer",10,d,op1256118-1001,n781,
+1911,Connaught,m,8.1,Fisherman,1041,p,op1256118-1001,n781,
+1911,Connaught,m,9.1,"Publisher, Bookseller, Librarian",16,d,op1256118-1001,n781,
+1911,Connaught,m,9.1,Bookbinder,4,m,op1256118-1001,n781,
+1911,Connaught,m,9.1,Printer,168,m,op1256118-1001,n781,
+1911,Connaught,m,9.1,"Newspaper Agent, News Room Keeper",8,d,op1256118-1001,n781,
+1911,Connaught,m,9.1,Others,2,m,op1256118-1001,n781,
+1911,Connaught,m,11.2,"Cabinet Maker, Upholsterer",62,m,op1256118-1001,n782,
+1911,Connaught,m,11.2,French Polisher,6,m,op1256118-1001,n782,
+1911,Connaught,m,11.2,"Furniture-Broker, Dealer",7,d,op1256118-1001,n782,
+1911,Connaught,m,11.2,"Locksmith, Bellhanger",3,m,op1256118-1001,n782,
+1911,Connaught,m,11.2,Gas Fitter,7,m,op1256118-1001,n782,
+1911,Connaught,m,11.2,"House and Shop Fittings-Maker, Dealer",2,m,op1256118-1001,n782,
+1911,Connaught,m,11.2,"Funeral Furniture Maker, Undertaker",3,s,op1256118-1001,n782,
+1911,Connaught,m,11.3,Dealer in Works of Art,3,d,op1256118-1001,n782,
+1911,Connaught,m,14.3,"Chemist, Druggist",83,d,op1256118-1001,n782,
+1911,Connaught,m,14.3,Manufacturing Chemist,13,m,op1256118-1001,n782,
+1911,Connaught,m,15.1,"Tobacco Manufacturer, Tobacconist",4,x:354/353+354,op1256118-1001,n782,
+1911,Connaught,m,15.1,"Tobacco Pipe, Snuff-box, etc.-Maker",17,m,op1256118-1001,n782,
+1911,Connaught,m,16.2,"Hop-Merchant, Dealer",1,d,op1256118-1001,n782,
+1911,Connaught,m,16.2,"Maltster, Distiller",1,m,op1256118-1001,n782,
+1911,Connaught,m,16.2,Brewer,4,m,op1256118-1001,n782,
+1911,Connaught,m,16.2,"Beerseller; Ale, Porter, Cider-Dealer",2,d,op1256118-1001,n782,
+1911,Connaught,m,16.2,Cellarman,4,d,op1256118-1001,n782,
+1911,Connaught,m,16.2,"Wine and Spirit-Merchant, Agent",77,d,op1256118-1001,n782,
+1911,Connaught,m,16.3,Creamery Worker (Butter and Cheese Making),66,m,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Milkseller, Dairyman",6,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Butcher, Meat Salesman",422,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Provision-Curer, Dealer",127,x:336/335+336,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Poulterer, Game Dealer",15,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,Fishmonger,67,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Corn, Flour, Seed-Merchant, Dealer",21,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,Corn Miller,115,m,op1256118-1001,n783,
+1911,Connaught,m,16.3,Baker,503,x:344/343+344,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Confectioner, Pastry Cook",10,x:344/343+344,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Greengrocer, Fruiterer",13,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Mustard, Vinegar, Spice, Pickle-Maker, Dealer",2,m,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",769,d,op1256118-1001,n783,
+1911,Connaught,m,16.3,"Ginger Beer, Soda Water, Mineral Water-Maker, Dealer",12,m,op1256118-1001,n783,
+1911,Connaught,m,16.3,Others dealing in Food,5,d,op1256118-1001,n783,
+1911,Connaught,m,17.1,Woolstapler,11,d,op1256118-1001,n783,
+1911,Connaught,m,17.1,Woollen Cloth Manufacture,233,m,op1256118-1001,n783,
+1911,Connaught,m,17.1,"Wool, Woollen Goods-Dyer, Printer",2,m,op1256118-1001,n783,
+1911,Connaught,m,17.1,"Worsted, Stuff-Manufacture",11,m,op1256118-1001,n783,
+1911,Connaught,m,17.1,Flannel Manufacture,1,m,op1256118-1001,n783,
+1911,Connaught,m,17.1,"Cloth, Worsted, Stuff, Flannel, Blanket-Dealer",2,d,op1256118-1001,n783,
+1911,Connaught,m,17.3,"Cotton, Cotton Goods-Manufacture",1,m,op1256118-1001,n783,
+1911,Connaught,m,17.3,"Flax, Linen-Manufacture-(Spinning processes)",2,m,op1256118-1001,n783,
+1911,Connaught,m,17.3,"Flax, Linen-Manufacture-(Weaving processes)",2,m,op1256118-1001,n783,
+1911,Connaught,m,17.5,Weaver (undefined),18,m,op1256118-1001,n783,
+1911,Connaught,m,17.5,"Draper, Linen Draper, Mercer",727,d,op1256118-1001,n783,
+1911,Connaught,m,18.1,Tailor,1309,m,op1256118-1001,n783,
+1911,Connaught,m,18.1,"Milliner, Dressmaker",13,m,op1256118-1001,n783,
+1911,Connaught,m,18.1,Shirtmaker,4,m,op1256118-1001,n783,
+1911,Connaught,m,18.1,"Shoe, Boot-Maker, Dealer",1006,m,op1256118-1001,n783,
+1911,Connaught,m,18.1,"Patten, Clog-Maker",8,m,op1256118-1001,n783,
+1911,Connaught,m,18.1,"Wig Maker, Hair Dresser",49,s,op1256118-1001,n783,
+1911,Connaught,m,18.1,"Umbrella, Parasol, Stick-Maker, Dealer",3,m,op1256118-1001,n783,
+1911,Connaught,m,18.1,Others,2,m,op1256118-1001,n783,
+1911,Connaught,m,20.3,"Timber, Wood-Merchant, Dealer",18,d,op1256118-1001,n783,
+1911,Connaught,m,20.3,Sawyer,66,m,op1256118-1001,n783,
+1911,Connaught,m,20.3,"Wood Turner, Box Maker",8,m,op1256118-1001,n783,
+1911,Connaught,m,20.3,"Cooper; Hoop-Maker, Bender",76,m,op1256118-1001,n783,
+1911,Connaught,m,20.4,Paper Manufacture,4,m,op1256118-1001,n783,
+1911,Connaught,m,20.4,"Stationer, Law Stationer",4,d,op1256118-1001,n783,
+1911,Connaught,m,20.4,"Card, Pattern-card-Maker",1,m,op1256118-1001,n783,
+1911,Connaught,m,20.4,Others,14,m,op1256118-1001,n783,
+1911,Connaught,m,21.2,"Coal-Merchant, Dealer",7,d,op1256118-1001,n784,
+1911,Connaught,m,21.2,Coalheaver,2,s,op1256118-1001,n784,
+1911,Connaught,m,21.2,Gas Works Service,23,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,Stone Quarrier,6,p,op1256118-1001,n784,
+1911,Connaught,m,21.3,"Stone-Cutter, Dresser, Dealer",114,p,op1256118-1001,n784,
+1911,Connaught,m,21.3,Slate Quarrier,1,p,op1256118-1001,n784,
+1911,Connaught,m,21.3,Limeburner,2,p,op1256118-1001,n784,
+1911,Connaught,m,21.3,"Clay, Sand, Gravel, Chalk-Labourer, Dealer",1,p,op1256118-1001,n784,
+1911,Connaught,m,21.3,"Well-Sinker, Borer",2,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,"Plaster, Cement-Manufacture",1,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,Paviour,1,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,"Road-Contractor, Surveyor, Inspector",39,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,Road Labourer,28,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,Railway Contractor,5,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,Platelayer,91,s,op1256118-1001,n784,
+1911,Connaught,m,21.3,"Railway Labourer, Navvy",263,m,op1256118-1001,n784,
+1911,Connaught,m,21.3,Others,2,m,op1256118-1001,n784,
+1911,Connaught,m,21.4,"Earthenware, China, Porcelain-Manufacture",3,m,op1256118-1001,n784,
+1911,Connaught,m,21.4,"Earthenware, China, Glass-Dealer",4,d,op1256118-1001,n784,
+1911,Connaught,m,21.8,"Iron, Iron Goods-Manufacture",5,m,op1256118-1001,n784,
+1911,Connaught,m,21.8,Blacksmith,1111,m,op1256118-1001,n784,
+1911,Connaught,m,21.8,Whitesmith,54,m,op1256118-1001,n784,
+1911,Connaught,m,21.8,Nail Manufacture,36,m,op1256118-1001,n784,
+1911,Connaught,m,21.8,"Ironmonger; Hardware-Dealer, Merchant",118,d,op1256118-1001,n784,
+1911,Connaught,m,22.1,"General Shopkeeper, Dealer",1842,d,op1256118-1001,n784,
+1911,Connaught,m,22.1,Pawnbroker,10,d,op1256118-1001,n784,
+1911,Connaught,m,22.1,"Costermonger, Huckster, Street Seller",45,d,op1256118-1001,n784,
+1911,Connaught,m,22.1,"Manufacturer, Manager, Superintendent (undefined)",53,m,op1256118-1001,n784,
+1911,Connaught,m,22.1,Contractor (undefined),14,m,op1256118-1001,n784,
+1911,Connaught,m,22.2,General Labourer,10299,o,op1256118-1001,n784,
+1911,Connaught,m,22.2,"Artizan, Mechanic (undefined)",39,m,op1256118-1001,n784,
+1911,Connaught,m,22.2,"Engine Driver, Stoker, Fireman (not Railway, Marine, nor Agricultural)",63,m,op1256118-1001,n784,
+1911,Connaught,m,22.2,"Apprentice, Assistant (undefined)",121,m,op1256118-1001,n784,
+1911,Connaught,m,22.2,Factory Labourer (undefined),20,m,op1256118-1001,n784,
+1911,Connaught,m,22.2,"Machinist, Machine Worker (undefined)",6,m,op1256118-1001,n784,
+1911,Connaught,m,23.1,"Chimney Sweep, Soot Merchant",22,s,op1256118-1001,n784,
+1911,Connaught,m,23.1,"Scavenger, Crossing Sweeper",7,s,op1256118-1001,n784,
+1911,Connaught,m,23.1,"Rag-Gatherer, Dealer",16,d,op1256118-1001,n784,
+1911,Connaught,f,3.5,Student (undefined),140,n,op1256118-1001,n785,
+1911,Connaught,f,8.1,"Dog, Bird, Animal-Keeper, Dealer",3,d,op1256118-1001,n786,
+1911,Connaught,f,8.1,Fisherwoman,5,p,op1256118-1001,n786,
+1911,Connaught,f,9.1,"Publisher, Bookseller, Librarian",3,d,op1256118-1001,n786,
+1911,Connaught,f,9.1,Bookbinder,15,m,op1256118-1001,n786,
+1911,Connaught,f,9.1,Printer,4,m,op1256118-1001,n786,
+1911,Connaught,f,9.1,"Newspaper Agent, News Room Keeper",1,d,op1256118-1001,n786,
+1911,Connaught,f,11.2,"Cabinet Maker, Upholsterer",4,m,op1256118-1001,n786,
+1911,Connaught,f,11.2,French Polisher,1,m,op1256118-1001,n786,
+1911,Connaught,f,11.2,"Furniture-Broker, Dealer",1,d,op1256118-1001,n786,
+1911,Connaught,f,15.1,"Tobacco Pipe, Snuff-box, etc.-Maker",6,m,op1256118-1001,n787,
+1911,Connaught,f,16.2,"Wine and Spirit-Merchant, Agent",18,d,op1256118-1001,n787,
+1911,Connaught,f,16.3,Creamery Worker (Butter and Cheese Making),4,m,op1256118-1001,n787,
+1911,Connaught,f,16.3,"Milkseller, Dairykeeper",4,d,op1256118-1001,n787,
+1911,Connaught,f,16.3,Butcher,10,d,op1256118-1001,n787,
+1911,Connaught,f,16.3,"Provision-Curer, Dealer",32,x:336/335+336,op1256118-1001,n787,
+1911,Connaught,f,16.3,"Poulterer, Game Dealer",3,d,op1256118-1001,n787,
+1911,Connaught,f,16.3,Fishmonger,40,d,op1256118-1001,n787,
+1911,Connaught,f,16.3,Corn Miller,2,m,op1256118-1001,n787,
+1911,Connaught,f,16.3,Baker,2,x:344/343+344,op1256118-1001,n787,
+1911,Connaught,f,16.3,"Confectioner, Pastry Cook",49,x:344/343+344,op1256118-1001,n787,
+1911,Connaught,f,16.3,"Greengrocer, Fruiterer",28,d,op1256118-1001,n787,
+1911,Connaught,f,16.3,"Grocer; Tea, Coffee, Chocolate-Maker, Dealer",198,d,op1256118-1001,n787,
+1911,Connaught,f,17.1,Woolstapler,1,d,op1256118-1001,n787,
+1911,Connaught,f,17.1,Woollen Cloth Manufacture,188,m,op1256118-1001,n787,
+1911,Connaught,f,17.1,"Worsted, Stuff-Manufacture",3,m,op1256118-1001,n787,
+1911,Connaught,f,17.1,Others,1,m,op1256118-1001,n787,
+1911,Connaught,f,17.3,"Cotton, Cotton Goods-Manufacture",3,m,op1256118-1001,n787,
+1911,Connaught,f,17.3,"Flax, Linen-Manufacture-(Spinning processes)",5,m,op1256118-1001,n787,
+1911,Connaught,f,17.3,"Flax, Linen-Manufacture-(Weaving processes)",1,m,op1256118-1001,n787,
+1911,Connaught,f,17.3,"Flax, Linen-Merchant, Dealer",2,d,op1256118-1001,n787,
+1911,Connaught,f,17.3,"Lace-Manufacturer, Dealer",885,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,Weaver (undefined),7,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,"Factory Hand (Textile), undefined",1,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,Carpet and Rug Manufacture,2,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,"Draper, Linen Draper, Mercer",282,d,op1256118-1001,n787,
+1911,Connaught,f,17.5,"Fancy Goods (Textile)-Manufacturer, Worker, Dealer",64,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,"Trimming-Maker, Dealer",25,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,Embroiderer,12,m,op1256118-1001,n787,
+1911,Connaught,f,17.5,Others,13,m,op1256118-1001,n787,
+1911,Connaught,f,18.1,Tailoress,30,m,op1256118-1001,n787,
+1911,Connaught,f,18.1,"Milliner, Dressmaker, Staymaker",2367,m,op1256118-1001,n787,
+1911,Connaught,f,18.1,Shawl Manufacture,1,m,op1256118-1001,n787,
+1911,Connaught,f,18.1,"Shirtmaker, Seamstress",844,m,op1256118-1001,n787,
+1911,Connaught,f,18.1,Hosiery Manufacture,19,m,op1256118-1001,n787,
+1911,Connaught,f,18.1,"Shoe, Boot-Maker, Dealer",4,m,op1256118-1001,n787,
+1911,Connaught,f,20.4,"Stationer, Law Stationer",18,d,op1256118-1001,n787,
+1911,Connaught,f,20.4,"Paper Box, Paper Bag-Maker",1,m,op1256118-1001,n787,
+1911,Connaught,f,21.2,"Coal-Merchant, Dealer",2,d,op1256118-1001,n788,
+1911,Connaught,f,21.4,"Earthenware, China, Porcelain-Manufacture",1,m,op1256118-1001,n788,
+1911,Connaught,f,21.4,"Earthenware, China, Glass-Dealer",1,d,op1256118-1001,n788,
+1911,Connaught,f,21.8,"Ironmonger; Hardware-Dealer, Merchant",3,d,op1256118-1001,n788,
+1911,Connaught,f,22.1,"General Shopkeeper, Dealer",1101,d,op1256118-1001,n788,
+1911,Connaught,f,22.1,Pawnbroker,2,d,op1256118-1001,n788,
+1911,Connaught,f,22.1,"Costermonger, Huckster, Street Seller",21,d,op1256118-1001,n788,
+1911,Connaught,f,22.1,"Manufacturer, Manageress, Superintendent (undefined)",3,m,op1256118-1001,n788,
+1911,Connaught,f,22.2,General Labourer,48,o,op1256118-1001,n788,
+1911,Connaught,f,22.2,"Apprentice, Assistant (undefined)",59,m,op1256118-1001,n788,
+1911,Connaught,f,22.2,Factory Labourer (undefined),6,m,op1256118-1001,n788,
+1911,Connaught,f,22.2,"Machinist, Machine Worker (undefined)",7,m,op1256118-1001,n788,
+1911,Connaught,f,23.1,"Rag-Gatherer, Dealer",4,d,op1256118-1001,n788,

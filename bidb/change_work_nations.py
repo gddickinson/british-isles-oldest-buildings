@@ -5,12 +5,14 @@ as its lines.
   population 1841-1881 in thousands on Booth's classification (`data/curated/change/data/work_booth_sc.csv`,
   `work_booth_ir.csv`, read from the page images; every subtotal checked by change_work_ew.check_booth), grouped as for
   England and Wales (general labour, the independent and indefinite left out: `left_out`).
+- Scotland goes on with the censuses of 1901 and 1911 (change_work_sc: the 1911 report's Table D1, every line, every
+  dealer moved to services), after a break at 1901 (the census's own lines, general labourers alone left out).
 - Ireland goes on with the state's census shares 1926-2022 (the CSO tables read by change_work), after a break: the
   whole island to 1881, the 26 counties from 1926.
 
 Written by change_work.run (`rows`), as series `work_sc_*` and `work_irl_*`.
 """
-from . import change_work_ew as ew
+from . import change_work_ew as ew, change_work_sc as sc
 from .change_firms import DATA
 from .change_registers import _csv, _row
 
@@ -19,8 +21,11 @@ SECTORS = ["primary", "secondary", "tertiary"]
 LABELS = {"primary": "Farming, fishing and mining", "secondary": "Making and building", "tertiary": "Services"}
 NAMES = {"sc": "Scotland", "irl": "Ireland"}
 LEFT_OUT = ["general_labour", "property", "indefinite"]
-BREAK = ("From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left "
-         "out; to 1881 the whole island, Booth's regrouping of the censuses by occupation")
+BREAKS = {"sc": ("From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in "
+                 "services, general labourers alone left out; to 1881 Booth's regrouping"),
+          "irl": ("From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not "
+                  "stated left out; to 1881 the whole island, Booth's regrouping of the censuses by occupation")}
+FIRST = {"sc": 1901, "irl": 1926}
 
 
 def load(nation):
@@ -37,12 +42,12 @@ def left_out(b):
     return {y: round(sum(b[k][y] for k in LEFT_OUT) / v * 100, 1) for y, v in sorted(b["self_supporting"].items())}
 
 
-def series(b, ie=None):
-    """{sector: [(year, %)]}: Booth's years, then the state's (Ireland) after them."""
+def series(b, after=None):
+    """{sector: [(year, %)]}: Booth's years, then the later censuses (Scotland's, the state's) after them."""
     s = ew.booth_shares(b)
     out = {sec: [(y, v[i]) for y, v in sorted(s.items())] for i, sec in enumerate(SECTORS)}
     for i, sec in enumerate(SECTORS):
-        out[sec] += [(y, v[i]) for y, v in sorted((ie or {}).items())]
+        out[sec] += [(y, v[i]) for y, v in sorted((after or {}).items())]
     return out
 
 
@@ -51,7 +56,9 @@ NOTE = ("Share of the self-supporting population in farming, fishing and mining;
         "regrouping of the censuses of {place} 1841-1881 on one classification (1886), with dealers apart. General "
         "labour, people living on property and those of no stated occupation are left out ({lo} of the self-supporting, "
         "{years}). {extra}The same grouping as the England and Wales dots on the sector graphs. {facts}")
-EXTRA = {"sc": "",
+EXTRA = {"sc": ("From 1901 the census of 1911's Table D1 (1901 regrouped by the census office), every one of its 397 "
+                "lines grouped the same way, every dealer in services; only general labourers are left out there "
+                "({lo_census} of those occupied), so the line starts again after a break. "),
          "irl": ("General labourers, left out, were many in Ireland and most worked on the land, so farming is "
                  "understated there. From 1926 the line is the state's census shares by industry (as on the sector "
                  "graphs), after a break: the whole island to 1881, the 26 counties from 1926. ")}
@@ -62,6 +69,9 @@ def _facts(nation, s):
     p, t = v["primary"], v["tertiary"]
     text = (f"Farming, fishing and mining {p[1841]:.1f}% in 1841, {p[1881]:.1f}% in 1881; services {t[1841]:.1f}% and "
             f"{t[1881]:.1f}%.")
+    if nation == "sc":
+        text += (f" Census: farming, fishing and mining {p[1901]:.1f}% in 1901, {p[1911]:.1f}% in 1911; services "
+                 f"{t[1911]:.1f}% in 1911.")
     if nation == "irl":
         last = max(p)
         text += f" The state: farming, fishing and mining {p[1926]:.1f}% in 1926, {p[last]:.1f}% in {last}."
@@ -73,28 +83,27 @@ def rows(ie, log=print):
     out = []
     for nation in ("sc", "irl"):
         b = load(nation)
-        s = series(b, ie if nation == "irl" else None)
+        s = series(b, ie if nation == "irl" else sc.shares())
         lo = left_out(b)
+        lo_census = "-".join(f"{v}%" for v in sorted(sc.left_out().values(), reverse=True))
         for sec in SECTORS:
             _csv(f"work_{nation}_{sec}", s[sec])
         last = max(y for y, _ in s["primary"])
         main = _row(f"work_{nation}_primary", f"Work by sector: {NAMES[nation]}, 1841-{last}", LABELS["primary"],
-                    "% of the self-supporting" if nation == "sc" else "% of those in work",
-                    ["booth_1886"] + (["cso_cnnl1", "cso_census_industry"] if nation == "irl" else []),
+                    "% of those in work",
+                    ["booth_1886"] + (["cso_cnnl1", "cso_census_industry"] if nation == "irl" else ["census_sc_1911"]),
                     NAMES[nation] + (" (the whole island to 1881; the state from 1926)" if nation == "irl" else ""),
                     NOTE.format(place=NAMES[nation], lo=f"{min(lo.values())}-{max(lo.values())}%",
-                                years="1841-1881", extra=EXTRA[nation], facts=_facts(nation, s)),
+                                years="1841-1881", extra=EXTRA[nation].format(lo_census=lo_census),
+                                facts=_facts(nation, s)),
                     [f"work_{nation}_secondary", f"work_{nation}_tertiary"], unit="%")
-        main["gap"] = 10                                       # censuses ten years apart; 1881-1926 dotted
-        if nation == "irl":
-            main["breaks"] = [[1926, BREAK]]
+        main["gap"] = 10                                       # censuses ten years apart; longer gaps dotted
         lines = [_row(f"work_{nation}_{sec}", f"Work by sector: {NAMES[nation]}: {LABELS[sec].lower()}", LABELS[sec],
                       main["unit_long"], main["sources"], main["region"], unit="%") for sec in SECTORS[1:]]
         for r in [main] + lines:
             r["zero"] = True
             r["gap"] = 10
-            if nation == "irl":
-                r["breaks"] = [[1926, BREAK]]
+            r["breaks"] = [[FIRST[nation], BREAKS[nation]]]
         out += [main] + lines
         log(f"{NAMES[nation]}: {s['primary'][0][0]}-{last}, left out {lo}")
     return out

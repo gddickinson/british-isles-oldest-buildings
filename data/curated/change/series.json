@@ -4358,13 +4358,14 @@
  {
   "id": "work_sc_primary",
   "theme": "Prosperity and work",
-  "title": "Work by sector: Scotland, 1841-1881",
+  "title": "Work by sector: Scotland, 1841-1911",
   "region": "Scotland",
   "unit": "%",
-  "unit_long": "% of the self-supporting",
+  "unit_long": "% of those in work",
   "label": "Farming, fishing and mining",
   "sources": [
-   "booth_1886"
+   "booth_1886",
+   "census_sc_1911"
   ],
   "file": "work_sc_primary.csv",
   "default": false,
@@ -4372,9 +4373,15 @@
    "work_sc_secondary",
    "work_sc_tertiary"
   ],
-  "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Scotland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (5.5-13.4% of the self-supporting, 1841-1881). The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 31.1% in 1841, 23.1% in 1881; services 26.1% and 32.7%.",
+  "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Scotland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (5.5-13.4% of the self-supporting, 1841-1881). From 1901 the census of 1911's Table D1 (1901 regrouped by the census office), every one of its 397 lines grouped the same way, every dealer in services; only general labourers are left out there (2.8%-1.7% of those occupied), so the line starts again after a break. The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 31.1% in 1841, 23.1% in 1881; services 26.1% and 32.7%. Census: farming, fishing and mining 19.0% in 1901, 19.1% in 1911; services 39.2% in 1911.",
   "gap": 10,
-  "zero": true
+  "zero": true,
+  "breaks": [
+   [
+    1901,
+    "From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+   ]
+  ]
  },
  {
   "id": "work_sc_secondary",
@@ -4382,16 +4389,23 @@
   "title": "Work by sector: Scotland: making and building",
   "region": "Scotland",
   "unit": "%",
-  "unit_long": "% of the self-supporting",
+  "unit_long": "% of those in work",
   "label": "Making and building",
   "sources": [
-   "booth_1886"
+   "booth_1886",
+   "census_sc_1911"
   ],
   "file": "work_sc_secondary.csv",
   "default": false,
   "hidden": true,
   "zero": true,
-  "gap": 10
+  "gap": 10,
+  "breaks": [
+   [
+    1901,
+    "From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+   ]
+  ]
  },
  {
   "id": "work_sc_tertiary",
@@ -4399,16 +4413,23 @@
   "title": "Work by sector: Scotland: services",
   "region": "Scotland",
   "unit": "%",
-  "unit_long": "% of the self-supporting",
+  "unit_long": "% of those in work",
   "label": "Services",
   "sources": [
-   "booth_1886"
+   "booth_1886",
+   "census_sc_1911"
   ],
   "file": "work_sc_tertiary.csv",
   "default": false,
   "hidden": true,
   "zero": true,
-  "gap": 10
+  "gap": 10,
+  "breaks": [
+   [
+    1901,
+    "From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+   ]
+  ]
  },
  {
   "id": "work_irl_primary",
@@ -4431,13 +4452,13 @@
   ],
   "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Ireland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (4.9-10.2% of the self-supporting, 1841-1881). General labourers, left out, were many in Ireland and most worked on the land, so farming is understated there. From 1926 the line is the state's census shares by industry (as on the sector graphs), after a break: the whole island to 1881, the 26 counties from 1926. The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 54.1% in 1841, 46.4% in 1881; services 15.1% and 33.5%. The state: farming, fishing and mining 53.6% in 1926, 4.0% in 2022.",
   "gap": 10,
+  "zero": true,
   "breaks": [
    [
     1926,
     "From 1926 the state (26 counties) at the CSO's censuses, by industry, those whose industry was not stated left out; to 1881 the whole island, Booth's regrouping of the censuses by occupation"
    ]
-  ],
-  "zero": true
+  ]
  },
  {
   "id": "work_irl_secondary",

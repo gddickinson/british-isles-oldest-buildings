@@ -1315,3 +1315,20 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   of both graphs checked. The app on port 5050 had stopped during the session (screenshots taken with a temporary
   server). Hosted copy and release not updated.
 - Next: C5c2c2 (Scotland and Ireland 1891-1911 from the census reports) or C5d (prices and real wages).
+
+## 2026-10-25 — C5c2c2 split; C5c2c2a: Scotland at the censuses of 1901 and 1911
+- Searched the Internet Archive: Scotland's 1911 report Vol. II (`b32177264_0004`, Cd. 6896) has Table D1, every
+  occupation line for 1911 and 1901 by sex with the intercensal change; the 1901 report's occupation volumes are empty
+  stubs; the 1891 report is there (`tenthdecennialce0002vari`). Ireland has no 1911 General Report online (the four
+  province volumes are), but the 1891 and 1901 General Reports are.
+- Table D1 (leaves 86-97, pp. lxxv-lxxxvi) read from the page images into `work_census_sc.csv`: 397 lines, 1901
+  braces on the first line of their `bracket`, italic repeats (lines 96, 159, 201, 301, 369-372 printed beside the
+  lines they were joined with in 1901) counted once. Every line agrees with its printed change; males add exactly to
+  the printed totals, females of 1911 too; females of 1901 add to 97 fewer than the printed 591,624 (`KNOWN`).
+- New `bidb/change_work_sc.py` (125 lines): every dealer to services (as Booth), order XXII line by line, only general
+  labourers left out (2.8%, 1.7%). Scotland: farming, fishing and mining 19.0% (1901), 19.1% (1911); making and
+  building 43.6%, 41.7%; services 37.4%, 39.2%. `change_work_nations` draws them after Booth's 1841-1881 with a break
+  at 1901; graph now "Work by sector: Scotland, 1841-1911". Source `census_sc_1911`, DATA_LICENSE.md row, INTERFACE.md.
+- Tests 266 OK (8 new); ui_check `change_work_nations` (now looks for the 1901 break), `change_work`,
+  `change_trade_joined` pass; screenshot of the graph checked. Hosted copy and release not updated.
+- Next: C5c2c2b (Scotland 1891), C5c2c2c (Ireland 1891-1911).

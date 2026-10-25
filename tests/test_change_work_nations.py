@@ -35,12 +35,14 @@ class Written(unittest.TestCase):
         rows = {r["id"]: r for r in json.loads((DATA.parent / "series.json").read_text())}
         self.assertEqual(rows["work_irl_primary"]["breaks"][0][0], 1926)
         self.assertEqual(rows["work_irl_primary"]["models"], ["work_irl_secondary", "work_irl_tertiary"])
-        self.assertNotIn("breaks", rows["work_sc_primary"])
+        self.assertEqual(rows["work_sc_primary"]["breaks"][0][0], 1901)
+        self.assertIn("census_sc_1911", rows["work_sc_primary"]["sources"])
 
     def test_written_csv(self):
         with open(DATA / "work_sc_tertiary.csv", newline="") as f:
             pts = {int(r["year"]): float(r["value"]) for r in csv.DictReader(f)}
-        self.assertEqual(pts, {1841: 26.15, 1851: 25.39, 1861: 28.81, 1871: 29.85, 1881: 32.74})
+        self.assertEqual(pts, {1841: 26.15, 1851: 25.39, 1861: 28.81, 1871: 29.85, 1881: 32.74, 1901: 37.4,
+                               1911: 39.24})
 
 
 if __name__ == "__main__":

@@ -1052,5 +1052,16 @@
   "url": "https://archive.org/details/s4833id1397560",
   "used": "England and Wales 1861 and 1871: shares of the self-supporting population in agriculture, fishing and mining; building and manufacture; and transport, dealing, commercial, public and professional and domestic service (general labour, property owning and indefinite left out), read from the page images (data/curated/change/data/work_booth_ew.csv, every subtotal checked); his 1841, 1851 and 1881 compared with Keibek and the 1911 census tables, not drawn (roadmap C5c2b2)",
   "checked": "2026-10-25, page images read (leaves 427-428)"
+ },
+ "census_sc_1911": {
+  "short": "Census of Scotland 1911, Vol. II (1913), Table D1: occupations 1901 and 1911",
+  "publisher": "Registrar General for Scotland (HMSO)",
+  "citation": "Census of Scotland, 1911. Report on the Twelfth Decennial Census of Scotland. Volume II. Cd. 6896. London: HMSO, 1913. Table D1, Scotland: intercensal change in the numbers returned under the various occupations (males and females, 1911 and 1901), pp. lxxv-lxxxvi. Page images: Internet Archive, b32177264_0004 (Wellcome Library copy).",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/b32177264_0004",
+  "used": "Scotland at the censuses of 1901 and 1911: shares of those occupied in farming, fishing and mining, making and building, and services, every one of the 397 lines read from the page images (data/curated/change/data/work_census_sc.csv, each checked against its printed change and the lines against the printed totals); every dealer moved to services, general labourers left out (roadmap C5c2c2a)",
+  "checked": "2026-10-25, page images read (leaves 86-97)"
  }
 }

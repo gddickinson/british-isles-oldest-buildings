@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-25)
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
-  series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+  series, 48 events, 23 map layers, 19 notes, 107 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 69 (2026-10-25, after C5b2d4):
   252.9 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
@@ -410,8 +410,24 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       1881; services 26.1%, 32.7%. Ireland: 54.1% and 46.4%; services 15.1% and 33.5% (army and navy counted in
       Ireland only from 1861). Left out: general labour etc., 5-13% in Scotland, 5-10% in Ireland, where most general
       labourers worked on the land (stated in the note).
-- [ ] C5c2c2 Scotland and Ireland 1891-1911 from their census reports (Scotland's 1911 report and Ireland's General
-      Reports on the Internet Archive, e.g. `op1256115-1001`), regrouped to the same sectors; Broadberry et al. and
+- [x] C5c2c2a (2026-10-25; C5c2c2 split) Scotland at the censuses of 1901 and 1911 (new `bidb/change_work_sc.py`):
+      Census of Scotland 1911, Vol. II (Cd. 6896, 1913; public domain; Internet Archive `b32177264_0004`), Table D1
+      (leaves 86-97, pp. lxxv-lxxxvi), every one of the 397 occupation lines, males and females, 1911 and 1901 (the
+      1901 figures regrouped by the census office), read from the page images (`work_census_sc.csv`; OCR unusable).
+      Every line (or 1901 brace) agrees with its printed increase or decrease; the males add exactly to the printed
+      totals occupied (1,473,757; 1,391,188), the women of 1911 too (593,210), the women of 1901 to 97 fewer than the
+      printed 591,624 (kept as `KNOWN`). Grouped as Booth, whose line this carries on: every dealer line to services
+      (coal, metals, drapers, butchers, grocers, tobacconists...), order XXII line by line (shopkeepers, costermongers,
+      cattle dealers to services; sundry makers, engine drivers, factory hands to making); only general labourers left
+      out (2.8% in 1901, 1.7% in 1911). Drawn on "Work by sector: Scotland, 1841-1911" after a break at 1901: farming,
+      fishing and mining 19.0% in 1901, 19.1% in 1911 (Booth's 1881: 23.1%); making and building 43.6%, 41.7%;
+      services 37.4%, 39.2%.
+- [ ] C5c2c2b Scotland 1891: the 1891 report (`tenthdecennialce0002vari`, `1891censusscotla0024grea`) on the old
+      classification, regrouped line by line; its 1881 comparison against Booth's 1881 as the check.
+      Scotland's 1901 report occupation volumes (II, III: `op1254658-1001`, `op1254783-1001`) are empty stubs.
+- [ ] C5c2c2c Ireland 1891-1911: the General Reports of 1891 (`op1252985-1001`) and 1901 (`op1254515-1001`); for 1911
+      (no General Report on the Internet Archive) the four province volumes' summary tables (`op1256115`-`op1256118`),
+      summed; the Irish classes regrouped to the same sectors, checked against Booth's 1881. Broadberry et al. and
       Shaw-Taylor & Wrigley figures if their pages become available.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power

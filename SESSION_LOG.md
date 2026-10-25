@@ -1149,3 +1149,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `map` pass; screenshot of the graphs checked. Hosted copy and release not updated.
 - Nos. 113 (1976) onwards are still Crown copyright under the 50-year rule: 1975+ needs the OGL question (C5b2d3).
 - Next: C5b2d2b (1953-57: No. 102 and the original SITC of Nos. 91-100).
+
+## 2026-10-25 — C5b2d2b: the main goods 1953-1957 by the classes of the original SITC
+- Nos. 99 (1962: 1953-61) and 100 (1963: 1954-62) print imports and exports by the Board of Trade's classes (A-E) and
+  divisions of the original SITC; read from the page images (`<cache>/stat_abstract_img/n99_220-221`,
+  `n100_220-221`): every division, 1,890 figures in `data/curated/change/data/trade_classes_abstract_uk.csv`.
+- Checks: every division against its class total and the classes (with class E's two lines) against the total, all
+  pass; 1954-60 identical in Nos. 99 and 100 on both sides (only No. 99's 1961 first estimate revised).
+- No. 102 (SITC (R) without precious stones) not used: the series take 1953-57 on the classes basis and change basis
+  once, at 1958; the notes give 1958 both ways (No. 100 against No. 104): coal, wood, coffee-tea-cocoa equal, the
+  other goods within 2%; imports 3,747.5 against 3,833.5 and exports 3,176.2 against 3,249.8 £m, mostly precious stones.
+  Exports 1956-57 include Lend-Lease silver repayments (22.4, 7.1 £m; footnote to No. 100's table 258).
+- New `bidb/change_trade_classes.py` (74 lines), read by `change_trade_sitc.run`; the 15 `aas_` series now run
+  1953-1974 with both sources; notes rewritten for the join. Textiles 12.7% of exports in 1953; coal 69.8 £m in 1953.
+- Hardening: the sum checks (`change_trade_sitc.near`, shared) allowed half a unit per part, 1.2 for class D's 23
+  parts, so a misread of 1.0 passed; now capped at ~4 standard deviations of the rounding (0.59 for 23 parts; the
+  largest real residual is 0.3). All SITC (R) readings still pass.
+- Source `annual_abstract_classes_uk`, DATA_LICENSE.md row (public domain: published 1962-63), INTERFACE.md; tests 223
+  OK (4 new); ui_check `change_trade_sitc` (spans now 1953-1974) and `change_trade_groups` pass; screenshot checked.
+  Hosted copy and release not updated.
+- Next: C5b2d3 (1975/1978-1999; the OGL question for Nos. 113 onwards first).

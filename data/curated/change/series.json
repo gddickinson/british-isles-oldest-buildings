@@ -3549,29 +3549,31 @@
  {
   "id": "aas_textiles_uk",
   "theme": "Prosperity and work",
-  "title": "Textile exports by division, 1958-1974",
+  "title": "Textile exports by division, 1953-1974",
   "region": "United Kingdom",
   "unit": "£m",
   "unit_long": "million pounds (prices of the time)",
   "label": "Textile yarn, fabrics and made-up articles",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_textiles_uk.csv",
   "default": false,
-  "note": "Textile yarn, fabrics and made-up articles (division 65) exported each year, million pounds at the prices of the time; clothing is a division of its own (84) and is left out. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), which prints imports and exports by the sections and divisions of the Standard International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is taken from the latest of these that prints it, and every division was checked against its section's total and every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. With re-exports in 1962 it was 250.3 million, without them 245.0. Textiles were 250.6 million in 1958 and 745.8 in 1974; the cotton and woollen groups of the earlier classification, which leave out the other fibres, came to 272.0 million in 1952.",
+  "note": "Textile yarn, fabrics and made-up articles (division 65; before 1958 the four divisions of yarns and fabrics) exported each year, million pounds at the prices of the time; clothing is a division of its own (84) and is left out. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard International Trade Classification, Revised (Nos. 104, 108 and 112), and 1953-1957 by the Board of Trade's classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the revised ones. Each year is taken from the latest of these editions that prints it, and every division was checked against its section's or class's total and every section and class against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments of Lend-Lease silver to the United States, 22.4 and 7.1 million); from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 imports were 3,747.5 million on the earlier basis and 3,833.5 on the revised, exports 3,176.2 and 3,249.8, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. With re-exports in 1962 it was 250.3 million, without them 245.0; in 1958 254.2 million on the earlier basis, 250.6 on the revised one. Textiles were 324.8 million in 1953, 250.6 in 1958 and 745.8 in 1974; the cotton and woollen groups of the earlier classification, which leave out the other fibres, came to 272.0 million in 1952.",
   "zero": true
  },
  {
   "id": "aas_coal_uk",
   "theme": "Prosperity and work",
-  "title": "Coal, iron and machinery exports by division, 1958-1974",
+  "title": "Coal, iron and machinery exports by division, 1953-1974",
   "region": "United Kingdom",
   "unit": "£m",
   "unit_long": "million pounds (prices of the time)",
   "label": "Coal, coke and briquettes",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_coal_uk.csv",
   "default": false,
@@ -3579,7 +3581,7 @@
    "aas_iron_uk",
    "aas_machinery_uk"
   ],
-  "note": "Coal, coke and briquettes (division 32), iron and steel (67) and machinery, electrical and other (71 and 72; transport equipment, 73, left out) exported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), which prints imports and exports by the sections and divisions of the Standard International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is taken from the latest of these that prints it, and every division was checked against its section's total and every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Re-exports hardly touch coal and iron (1962: coal 31.2 million either way, iron and steel 200.4 against 200.1) but are more in machinery (1,110.5 against 1,086.6). Coal fell from 31.4 million in 1958 to 14.0 in 1967; machinery rose from 773.8 million to 4,213.0 in 1974.",
+  "note": "Coal, coke and briquettes (division 32), iron and steel (67) and machinery, electrical and other (71 and 72; transport equipment, 73, left out) exported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard International Trade Classification, Revised (Nos. 104, 108 and 112), and 1953-1957 by the Board of Trade's classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the revised ones. Each year is taken from the latest of these editions that prints it, and every division was checked against its section's or class's total and every section and class against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments of Lend-Lease silver to the United States, 22.4 and 7.1 million); from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 imports were 3,747.5 million on the earlier basis and 3,833.5 on the revised, exports 3,176.2 and 3,249.8, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Re-exports hardly touch coal and iron (1962: coal 31.2 million either way, iron and steel 200.4 against 200.1) but are more in machinery (1,110.5 against 1,086.6); in 1958 coal was 31.4 million on both bases, iron and steel 187.5 on the earlier and 186.8 on the revised, machinery 787.5 and 773.8. Coal fell from 69.8 million in 1953 to 14.0 in 1967; machinery rose from 569.9 million to 4,213.0 in 1974.",
   "zero": true
  },
  {
@@ -3591,7 +3593,8 @@
   "unit_long": "million pounds (prices of the time)",
   "label": "Iron and steel",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_iron_uk.csv",
   "default": false,
@@ -3607,7 +3610,8 @@
   "unit_long": "million pounds (prices of the time)",
   "label": "Machinery, electrical and other",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_machinery_uk.csv",
   "default": false,
@@ -3617,20 +3621,21 @@
  {
   "id": "aas_textiles_share_uk",
   "theme": "Prosperity and work",
-  "title": "Main exports by division, share of all UK exports, 1958-1974",
+  "title": "Main exports by division, share of all UK exports, 1953-1974",
   "region": "United Kingdom",
   "unit": "%",
   "unit_long": "% of exports",
   "label": "Textile yarn and fabrics",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_textiles_share_uk.csv",
   "default": false,
   "models": [
    "aas_metal_share_uk"
   ],
-  "note": "Textile yarn and fabrics, and coal, iron and steel and machinery, as a share of all exports. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), which prints imports and exports by the sections and divisions of the Standard International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is taken from the latest of these that prints it, and every division was checked against its section's total and every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Textiles were 7.7% of exports in 1958 and 4.5% in 1974; coal, iron and steel and machinery 30.5% and 29.3%.",
+  "note": "Textile yarn and fabrics, and coal, iron and steel and machinery, as a share of all exports. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard International Trade Classification, Revised (Nos. 104, 108 and 112), and 1953-1957 by the Board of Trade's classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the revised ones. Each year is taken from the latest of these editions that prints it, and every division was checked against its section's or class's total and every section and class against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments of Lend-Lease silver to the United States, 22.4 and 7.1 million); from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 imports were 3,747.5 million on the earlier basis and 3,833.5 on the revised, exports 3,176.2 and 3,249.8, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Textiles were 12.7% of exports in 1953, 7.7% in 1958 and 4.5% in 1974; coal, iron and steel and machinery 30.2%, 30.5% and 29.3%.",
   "zero": true
  },
  {
@@ -3642,7 +3647,8 @@
   "unit_long": "% of exports",
   "label": "Coal, iron and machinery",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_metal_share_uk.csv",
   "default": false,
@@ -3652,13 +3658,14 @@
  {
   "id": "aas_cereals_uk",
   "theme": "Prosperity and work",
-  "title": "Main imports by division, 1958-1974",
+  "title": "Main imports by division, 1953-1974",
   "region": "United Kingdom",
   "unit": "£m",
   "unit_long": "million pounds (prices of the time)",
   "label": "Cereals and cereal preparations",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_cereals_uk.csv",
   "default": false,
@@ -3668,7 +3675,7 @@
    "aas_wood_uk",
    "aas_fibres_uk"
   ],
-  "note": "Cereals and cereal preparations (division 04), sugar, sugar preparations and honey (06), coffee, tea, cocoa, spices and their manufactures (07; tea is not shown apart), wood, lumber and cork (24) and textile fibres and their waste (26: raw cotton, wool and the other fibres together) imported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), which prints imports and exports by the sections and divisions of the Standard International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is taken from the latest of these that prints it, and every division was checked against its section's total and every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Cereals cost 225.4 million in 1958 and 593.0 in 1974; sugar 101.4 million in 1958, 173.0 in 1963 and 368.9 in 1974; textile fibres 246.8 million in 1958 and 310.5 in 1974. In 1952 the grain and flour group of the earlier classification cost 262.3 million.",
+  "note": "Cereals and cereal preparations (division 04), sugar, sugar preparations and honey (06), coffee, tea, cocoa, spices and their manufactures (07; tea is not shown apart), wood, lumber and cork (24) and textile fibres and their waste (26: raw cotton, wool and the other fibres together) imported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard International Trade Classification, Revised (Nos. 104, 108 and 112), and 1953-1957 by the Board of Trade's classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the revised ones. Each year is taken from the latest of these editions that prints it, and every division was checked against its section's or class's total and every section and class against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments of Lend-Lease silver to the United States, 22.4 and 7.1 million); from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 imports were 3,747.5 million on the earlier basis and 3,833.5 on the revised, exports 3,176.2 and 3,249.8, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. In 1958 the earlier basis gives cereals 226.6 million against 225.4, sugar 100.7 against 101.4, wood 140.5 against 140.5 and textile fibres 246.9 against 246.8. Cereals cost 237.6 million in 1953, 225.4 in 1958 and 593.0 in 1974; sugar 101.4 million in 1958, 173.0 in 1963 and 368.9 in 1974; textile fibres 390.8 million in 1953, 246.8 in 1958 and 310.5 in 1974. In 1952 the grain and flour group of the earlier classification cost 262.3 million.",
   "zero": true
  },
  {
@@ -3680,7 +3687,8 @@
   "unit_long": "million pounds (prices of the time)",
   "label": "Sugar, sugar preparations and honey",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_sugar_uk.csv",
   "default": false,
@@ -3696,7 +3704,8 @@
   "unit_long": "million pounds (prices of the time)",
   "label": "Coffee, tea, cocoa and spices",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_beverages_uk.csv",
   "default": false,
@@ -3712,7 +3721,8 @@
   "unit_long": "million pounds (prices of the time)",
   "label": "Wood, lumber and cork",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_wood_uk.csv",
   "default": false,
@@ -3728,7 +3738,8 @@
   "unit_long": "million pounds (prices of the time)",
   "label": "Textile fibres and waste",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_fibres_uk.csv",
   "default": false,
@@ -3738,20 +3749,21 @@
  {
   "id": "aas_food_share_uk",
   "theme": "Prosperity and work",
-  "title": "Main imports by division, share of all imports, 1958-1974",
+  "title": "Main imports by division, share of all imports, 1953-1974",
   "region": "United Kingdom",
   "unit": "%",
   "unit_long": "% of all imports",
   "label": "Cereals, sugar, coffee and tea",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_food_share_uk.csv",
   "default": false,
   "models": [
    "aas_materials_share_uk"
   ],
-  "note": "Cereals, sugar and coffee, tea and cocoa, and wood and textile fibres, as a share of all imports. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), which prints imports and exports by the sections and divisions of the Standard International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is taken from the latest of these that prints it, and every division was checked against its section's total and every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. The foods were 13.6% of imports in 1958 and 5.6% in 1974; wood and textile fibres 10.1% and 3.9%.",
+  "note": "Cereals, sugar and coffee, tea and cocoa, and wood and textile fibres, as a share of all imports. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard International Trade Classification, Revised (Nos. 104, 108 and 112), and 1953-1957 by the Board of Trade's classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the revised ones. Each year is taken from the latest of these editions that prints it, and every division was checked against its section's or class's total and every section and class against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments of Lend-Lease silver to the United States, 22.4 and 7.1 million); from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 imports were 3,747.5 million on the earlier basis and 3,833.5 on the revised, exports 3,176.2 and 3,249.8, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. The foods were 15.7% of imports in 1953, 13.6% in 1958 and 5.6% in 1974; wood and textile fibres 16.5%, 10.1% and 3.9%.",
   "zero": true
  },
  {
@@ -3763,7 +3775,8 @@
   "unit_long": "% of all imports",
   "label": "Wood and textile fibres",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_materials_share_uk.csv",
   "default": false,
@@ -3773,32 +3786,34 @@
  {
   "id": "aas_imports_uk",
   "theme": "Prosperity and work",
-  "title": "Overseas trade at the prices of the time, 1958-1974",
+  "title": "Overseas trade at the prices of the time, 1953-1974",
   "region": "United Kingdom",
   "unit": "£m",
   "unit_long": "million pounds (prices of the time)",
   "label": "Imports",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_imports_uk.csv",
   "default": false,
   "models": [
    "aas_exports_uk"
   ],
-  "note": "All imports and all exports, million pounds at the prices of the time, as printed in the tables by division. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), which prints imports and exports by the sections and divisions of the Standard International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is taken from the latest of these that prints it, and every division was checked against its section's total and every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Re-exports added 157.7 million to the exports of 1962 (3,904.6 of United Kingdom produce, 4,062.3 with re-exports). Imports were 3,833.5 million in 1958 and 23,116.7 in 1974, exports 3,249.8 and 16,494.3; oil imports (division 33) rose from 1,678.3 million in 1973 to 4,533.3 in 1974.",
+  "note": "All imports and all exports, million pounds at the prices of the time, as printed in the tables by division. From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard International Trade Classification, Revised (Nos. 104, 108 and 112), and 1953-1957 by the Board of Trade's classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the revised ones. Each year is taken from the latest of these editions that prints it, and every division was checked against its section's or class's total and every section and class against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments of Lend-Lease silver to the United States, 22.4 and 7.1 million); from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 imports were 3,747.5 million on the earlier basis and 3,833.5 on the revised, exports 3,176.2 and 3,249.8, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly short. The divisions are wider than the groups of 1938-1952 and the articles before. Re-exports added 157.7 million to the exports of 1962 (3,904.6 of United Kingdom produce, 4,062.3 with re-exports). Imports were 3,328.1 million in 1953 and 23,116.7 in 1974, exports 2,558.0 and 16,494.3; oil imports (division 33) rose from 1,678.3 million in 1973 to 4,533.3 in 1974.",
   "zero": true
  },
  {
   "id": "aas_exports_uk",
   "theme": "Prosperity and work",
-  "title": "UK exports, 1958-1974",
+  "title": "UK exports, 1953-1974",
   "region": "United Kingdom",
   "unit": "£m",
   "unit_long": "million pounds (prices of the time)",
   "label": "Exports",
   "sources": [
-   "annual_abstract_sitc_uk"
+   "annual_abstract_sitc_uk",
+   "annual_abstract_classes_uk"
   ],
   "file": "aas_exports_uk.csv",
   "default": false,

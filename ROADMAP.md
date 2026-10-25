@@ -316,9 +316,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       → 14.0 in 1967; machinery (71-72) 773.8 → 4,213.0; cereals 225.4 → 593.0; sugar 101.4, 173.0 in 1963, 368.9 in
       1974; oil imports 1,678.3 → 4,533.3 £m 1973-74. Nos. 113 (1976) onwards are still in Crown copyright under the
       50-year rule (No. 113 out of it from 2027): 1975 and later need the OGL question settled (C5b2d3).
-- [ ] C5b2d2b 1953-1957: No. 102 (1956-64, SITC (R) without precious stones; 1958 on both bases against No. 104) and
-      the original SITC of Nos. 91-100 (1953-55; No. 100 gives 1954-62, No. 98 1952-60), with the overlap years on both
-      classifications. Page leaves: No. 102 imports 230-231, exports 231-232; No. 100 220-221; No. 98 225-226.
+- [x] C5b2d2b (2026-10-25) 1953-1957 by the Board of Trade's classes and divisions of the original SITC (new
+      `bidb/change_trade_classes.py`, joined to the `aas_` series by `change_trade_sitc`), read from Nos. 99 (1953-61,
+      tables 262-263, leaves 220-221) and 100 (1954-62, tables 261-262, leaves 220-221): every division, 1,890 figures,
+      each checked against its class total and the classes against the total, all agreeing; 1954-60 equal figure for
+      figure in the two editions (only No. 99's 1961 revised), so 1953 from No. 99, 1954-57 from No. 100. No. 102 was
+      not needed: one change of basis at 1958, given in the notes from No. 100 against No. 104: coal (31.4), wood
+      (140.5) and coffee-tea-cocoa (194.4) equal, cereals 226.6/225.4, textiles 254.2/250.6, machinery 787.5/773.8 £m;
+      imports 3,747.5/3,833.5 and exports 3,176.2/3,249.8, mostly precious stones (division 66). Exports 1956-57
+      include Lend-Lease silver repaid to the United States (22.4, 7.1 £m). Results: textiles 324.8 £m in 1953 (12.7%
+      of exports); coal 69.8 → 14.0 £m 1953-67; machinery 569.9 → 4,213.0 £m 1953-74; textile fibres 390.8 £m in 1953,
+      246.8 in 1958. The sum checks now allow at most ~4 standard deviations of the rounding (`near`), so a misread
+      unit in a class of 23 divisions is caught.
 - [ ] C5b2d3 1978-1999 (SITC revisions 2 and 3; the missing editions from the other scans or the later edition's
       ten-year runs).
 - [ ] C5b2d4 Join the eras: graphs across 1846-2025 with the breaks of definition marked (1912, 1938, 1953, 2000);

@@ -1,5 +1,6 @@
-"""The main goods traded 1958-1974, by the divisions of the Standard International Trade Classification, Revised,
-for "Change over time" (roadmap C5b2d2a).
+"""The main goods traded 1953-1974, by the divisions of the Standard International Trade Classification, Revised,
+for "Change over time" (roadmap C5b2d2a; 1953-1957 by the classes of the original SITC from
+bidb.change_trade_classes, C5b2d2b).
 
 From No. 91 (1954) the Annual Abstract of Statistics prints imports and exports by the sections and divisions of the
 Standard International Trade Classification, and from No. 101 by its revised form, SITC (R). Every division of every
@@ -11,7 +12,8 @@ the latest of these editions (`LATEST`). The overlap years agree figure for figu
 Nos. 104 and 108, both sides 1966-1969 in Nos. 108 and 112 (No. 108 counts furniture imports with the other
 miscellaneous articles); only an edition's last year, a first estimate, is revised by the next. From 1965 precious stones are in the trade
 accounts, and Nos. 104 onwards add estimates for every earlier year; No. 102 and earlier editions leave them out, so
-1953-1957 is a separate task (C5b2d2b). From 1970 re-exports are counted with exports, and Nos. 108 and 112 restate
+1953-1957 come from the classes and divisions of Nos. 99 and 100 (bidb.change_trade_classes), and the notes give 1958
+on both bases. From 1970 re-exports are counted with exports, and Nos. 108 and 112 restate
 1962-1969 so; No. 104 gives exports of United Kingdom produce alone, used for 1958-1961.
 
     python -m bidb.change_trade_sitc   → data/curated/change/data/aas_*.csv + series.json entries
@@ -27,7 +29,7 @@ from .change_firms import DATA
 from .change_registers import _csv, _row
 
 READINGS = DATA / "trade_sitc_abstract_uk.csv"
-SOURCES = ["annual_abstract_sitc_uk"]
+SOURCES = ["annual_abstract_sitc_uk", "annual_abstract_classes_uk"]
 PREFIX = "aas_"
 LATEST = (112, 108, 104)                    # editions, latest first
 EXPORT_GOODS = {"textiles": ("65",), "coal": ("32",), "iron": ("67",), "machinery": ("71", "72")}
@@ -53,11 +55,16 @@ def _parts(ed, side, s, y):
     return [v[y] for r, v in ed.items() if pat.fullmatch(r) and y in v]
 
 
+def near(a, b, k):
+    """a, the sum of k printed parts, and b, their printed total, agree within the rounding: half a unit of the last
+    digit for each part and the total at most, and no more than about four standard deviations of the sum of k + 1
+    rounding errors (so that a misread unit in a long class is not taken for rounding)."""
+    return abs(a - b) <= min(0.05 * (k + 1), 0.12 * (k + 1) ** 0.5) + 0.01
+
+
 def check(rows):
-    """Problems: a section whose divisions, or a total whose sections, do not add up within the rounding (half a unit
-    of the last digit for each part and the total)."""
+    """Problems: a section whose divisions, or a total whose sections, do not add up within the rounding (`near`)."""
     bad = []
-    near = lambda a, b, k: abs(a - b) <= 0.05 * (k + 1) + 0.01
     for n, ed in sorted(rows.items()):
         for side in "xi":
             for y, total in sorted(ed[f"{side}_total"].items()):
@@ -119,50 +126,62 @@ def reexports(rows, codes, y):
 
 COMMON = (
     "From the Annual Abstract of Statistics (Central Statistical Office; figures of the Board of Trade, later the "
-    "Department of Trade), which prints imports and exports by the sections and divisions of the Standard "
-    "International Trade Classification, Revised, read from the page images of Nos. 104, 108 and 112; each year is "
-    "taken from the latest of these that prints it, and every division was checked against its section's total and "
-    "every section against the grand total. Imports are valued c.i.f., exports f.o.b. Up to 1961 exports are of United "
-    "Kingdom produce; from 1962 they include re-exports (not distinguished in the statistics from 1970, and restated so "
-    "for the earlier years). Precious stones are included throughout (in the trade accounts from 1965, estimated for "
-    "the years before). From 1970 consignments of low value are counted only in the total, so the divisions are slightly "
+    "Department of Trade), read from the page images: from 1958 by the sections and divisions of the Standard "
+    "International Trade Classification, Revised (Nos. 104, 108 and 112), and {y0}-1957 by the Board of Trade's "
+    "classes and divisions of the original classification (Nos. 99 and 100), whose divisions were matched to the "
+    "revised ones. Each year is taken from the latest of these editions that prints it, and every division was "
+    "checked against its section's or class's total and every section and class against the grand total. Imports are "
+    "valued c.i.f., exports f.o.b. Up to 1961 exports are of United Kingdom produce (in 1956 and 1957 with repayments "
+    "of Lend-Lease silver to the United States, {ls56:,.1f} and {ls57:,.1f} million); from 1962 they include re-exports "
+    "(not distinguished in the statistics from 1970, and restated so for the earlier years). Precious stones are "
+    "included from 1958 (in the trade accounts from 1965, estimated for the years before) and left out before: in 1958 "
+    "imports were {io58:,.1f} million on the earlier basis and {i58:,.1f} on the revised, exports {xo58:,.1f} and "
+    "{x58:,.1f}, the difference being mostly precious stones (division 66). From 1970 consignments of low value are counted only in the total, so the divisions are slightly "
     "short. The divisions are wider than the groups of 1938-1952 and the articles before. ")
 TEXTILES_NOTE = (
-    "Textile yarn, fabrics and made-up articles (division 65) exported each year, million pounds at the prices of the "
-    "time; clothing is a division of its own (84) and is left out. " + COMMON +
-    "With re-exports in 1962 it was {t62:,.1f} million, without them {t62u:,.1f}. Textiles were {t58:,.1f} million in "
-    "1958 and {t1:,.1f} in {y1}; the cotton and woollen groups of the earlier classification, which leave out the other fibres, "
+    "Textile yarn, fabrics and made-up articles (division 65; before 1958 the four divisions of yarns and fabrics) "
+    "exported each year, million pounds at the prices of the time; clothing is a division of its own (84) and is left "
+    "out. " + COMMON +
+    "With re-exports in 1962 it was {t62:,.1f} million, without them {t62u:,.1f}; in 1958 {to58:,.1f} million on the "
+    "earlier basis, {t58:,.1f} on the revised one. Textiles were {t0:,.1f} million in {y0}, {t58:,.1f} in 1958 and "
+    "{t1:,.1f} in {y1}; the cotton and woollen groups of the earlier classification, which leave out the other fibres, "
     "came to {c52:,.1f} million in 1952.")
 METALS_NOTE = (
     "Coal, coke and briquettes (division 32), iron and steel (67) and machinery, electrical and other (71 and 72; "
     "transport equipment, 73, left out) exported each year, million pounds at the prices of the time. " + COMMON +
     "Re-exports hardly touch coal and iron (1962: coal {k62:,.1f} million either way, iron and steel {i62:,.1f} against "
-    "{i62u:,.1f}) but are more in machinery ({m62:,.1f} against {m62u:,.1f}). Coal fell from {k58:,.1f} million in 1958 "
-    "to {kmin:,.1f} in {ykmin}; machinery rose from {m58:,.1f} million to {m1:,.1f} in {y1}.")
+    "{i62u:,.1f}) but are more in machinery ({m62:,.1f} against {m62u:,.1f}); in 1958 coal was {k58:,.1f} million on "
+    "both bases, iron and steel {iro58:,.1f} on the earlier and {ir58:,.1f} on the revised, machinery {mo58:,.1f} and "
+    "{m58:,.1f}. Coal fell from {k0:,.1f} million in {y0} to {kmin:,.1f} in {ykmin}; machinery rose from {m0:,.1f} "
+    "million to {m1:,.1f} in {y1}.")
 EXPORT_SHARE_NOTE = (
     "Textile yarn and fabrics, and coal, iron and steel and machinery, as a share of all exports. " + COMMON +
-    "Textiles were {t58:,.1f}% of exports in 1958 and {t1:,.1f}% in {y1}; coal, iron and steel and machinery "
-    "{m58:,.1f}% and {m1:,.1f}%.")
+    "Textiles were {t0:,.1f}% of exports in {y0}, {t58:,.1f}% in 1958 and {t1:,.1f}% in {y1}; coal, iron and steel "
+    "and machinery {m0:,.1f}%, {m58:,.1f}% and {m1:,.1f}%.")
 IMPORTS_NOTE = (
     "Cereals and cereal preparations (division 04), sugar, sugar preparations and honey (06), coffee, tea, cocoa, "
     "spices and their manufactures (07; tea is not shown apart), wood, lumber and cork (24) and textile fibres and "
     "their waste (26: raw cotton, wool and the other fibres together) imported each year, million pounds at the prices "
     "of the time. " + COMMON +
-    "Cereals cost {g58:,.1f} million in 1958 and {g1:,.1f} in {y1}; sugar {s58:,.1f} million in 1958, {s63:,.1f} in "
-    "1963 and {s1:,.1f} in {y1}; textile fibres {f58:,.1f} million in 1958 and {f1:,.1f} in {y1}. In 1952 the grain and "
-    "flour group of the earlier classification cost {g52:,.1f} million.")
+    "In 1958 the earlier basis gives cereals {go58:,.1f} million against {g58:,.1f}, sugar {so58:,.1f} against "
+    "{s58:,.1f}, wood {wo58:,.1f} against {w58:,.1f} and textile fibres {fo58:,.1f} against {f58:,.1f}. Cereals cost "
+    "{g0:,.1f} million in {y0}, {g58:,.1f} in 1958 and {g1:,.1f} in {y1}; sugar {s58:,.1f} million in 1958, "
+    "{s63:,.1f} in 1963 and {s1:,.1f} in {y1}; textile fibres {f0:,.1f} million in {y0}, {f58:,.1f} in 1958 and "
+    "{f1:,.1f} in {y1}. In 1952 the grain and flour group of the earlier classification cost {g52:,.1f} million.")
 IMPORT_SHARE_NOTE = (
     "Cereals, sugar and coffee, tea and cocoa, and wood and textile fibres, as a share of all imports. " + COMMON +
-    "The foods were {f58:,.1f}% of imports in 1958 and {f1:,.1f}% in {y1}; wood and textile fibres {m58:,.1f}% and "
-    "{m1:,.1f}%.")
+    "The foods were {f0:,.1f}% of imports in {y0}, {f58:,.1f}% in 1958 and {f1:,.1f}% in {y1}; wood and textile "
+    "fibres {m0:,.1f}%, {m58:,.1f}% and {m1:,.1f}%.")
 TOTALS_NOTE = (
     "All imports and all exports, million pounds at the prices of the time, as printed in the tables by division. "
     + COMMON + "Re-exports added {r62:,.1f} million to the exports of 1962 ({x62u:,.1f} of United Kingdom produce, "
-    "{x62:,.1f} with re-exports). Imports were {i58:,.1f} million in 1958 and {i1:,.1f} in {y1}, exports {x58:,.1f} and "
+    "{x62:,.1f} with re-exports). Imports were {i0:,.1f} million in {y0} and {i1:,.1f} in {y1}, exports {x0:,.1f} and "
     "{x1:,.1f}; oil imports (division 33) rose from {o73:,.1f} million in 1973 to {o74:,.1f} in 1974.")
+LEND_LEASE_SILVER = {1956: 22.4, 1957: 7.1}    # in exports, footnote to No. 100's table 258
 
 
-def write(by_year, rows, log=print):
+def write(by_year, rows, old58, log=print):
+    """old58: 1958 on the earlier basis (bidb.change_trade_classes.in_1958), for the notes."""
     years = list(by_year)
     if years != list(range(years[0], years[-1] + 1)):
         raise ValueError("years missing")
@@ -170,7 +189,11 @@ def write(by_year, rows, log=print):
     for sid, p in pts.items():
         _csv(sid, p)
     v = {k[len(PREFIX):-3]: dict(p) for k, p in pts.items()}
-    y1 = years[-1]
+    y0, y1 = years[0], years[-1]
+    at = lambda g: dict(zip(("0", "58", "1"), (v[g][y0], v[g][1958], v[g][y1])))
+    base = dict(y0=y0, y1=y1, ls56=LEND_LEASE_SILVER[1956], ls57=LEND_LEASE_SILVER[1957], io58=old58["imports"],
+                i58=v["imports"][1958], xo58=old58["exports"], x58=v["exports"][1958])
+    abbr = lambda p, g: {p + k: x for k, x in at(g).items()}
     low = lambda g: min(v[g], key=v[g].get)
     gbp, pct = "million pounds (prices of the time)", "%"
     row = lambda sid, title, label, unit_long, unit, note=None, models=None: _row(
@@ -184,38 +207,38 @@ def write(by_year, rows, log=print):
     x62, x62u = reexports(rows, ("total",), 1962)
     out = [
         row("textiles", f"Textile exports by division, {span}", "Textile yarn, fabrics and made-up articles", gbp,
-            "£m", TEXTILES_NOTE.format(t62=t62, t62u=t62u, t58=v["textiles"][years[0]], t1=v["textiles"][y1], y1=y1,
+            "£m", TEXTILES_NOTE.format(**base, **abbr("t", "textiles"), t62=t62, t62u=t62u, to58=old58["textiles"],
                                        c52=_then("aa_cotton_uk", 1952) + _then("aa_wool_uk", 1952))),
         row("coal", f"Coal, iron and machinery exports by division, {span}", "Coal, coke and briquettes", gbp, "£m",
-            METALS_NOTE.format(k62=k62, i62=i62, i62u=i62u, m62=m62, m62u=m62u, k58=v["coal"][years[0]],
-                               kmin=v["coal"][low("coal")], ykmin=low("coal"), m58=v["machinery"][years[0]],
-                               m1=v["machinery"][y1], y1=y1), ["iron", "machinery"]),
+            METALS_NOTE.format(**base, **abbr("k", "coal"), **abbr("m", "machinery"), k62=k62, i62=i62, i62u=i62u,
+                               m62=m62, m62u=m62u, kmin=v["coal"][low("coal")], ykmin=low("coal"),
+                               iro58=old58["iron"], ir58=v["iron"][1958], mo58=old58["machinery"]),
+            ["iron", "machinery"]),
         row("iron", "Iron and steel exports by division", "Iron and steel", gbp, "£m"),
         row("machinery", "Machinery exports by division", "Machinery, electrical and other", gbp, "£m"),
         row("textiles_share", f"Main exports by division, share of all UK exports, {span}", "Textile yarn and fabrics",
-            "% of exports", pct, EXPORT_SHARE_NOTE.format(
-                t58=v["textiles_share"][years[0]], t1=v["textiles_share"][y1], y1=y1,
-                m58=v["metal_share"][years[0]], m1=v["metal_share"][y1]), ["metal_share"]),
+            "% of exports", pct, EXPORT_SHARE_NOTE.format(**base, **abbr("t", "textiles_share"),
+                                                          **abbr("m", "metal_share")), ["metal_share"]),
         row("metal_share", "Coal, iron and machinery by division, share of exports", "Coal, iron and machinery",
             "% of exports", pct),
         row("cereals", f"Main imports by division, {span}", "Cereals and cereal preparations", gbp, "£m",
-            IMPORTS_NOTE.format(g58=v["cereals"][years[0]], g1=v["cereals"][y1], s58=v["sugar"][years[0]],
-                                s63=v["sugar"][1963], s1=v["sugar"][y1], f58=v["fibres"][years[0]],
-                                f1=v["fibres"][y1], y1=y1, g52=_then("aa_grain_uk", 1952)),
+            IMPORTS_NOTE.format(**base, **abbr("g", "cereals"), **abbr("s", "sugar"), **abbr("f", "fibres"),
+                                s63=v["sugar"][1963], w58=v["wood"][1958], go58=old58["cereals"],
+                                so58=old58["sugar"], wo58=old58["wood"], fo58=old58["fibres"],
+                                g52=_then("aa_grain_uk", 1952)),
             ["sugar", "beverages", "wood", "fibres"]),
         row("sugar", "Sugar imports by division", "Sugar, sugar preparations and honey", gbp, "£m"),
         row("beverages", "Coffee, tea and cocoa imports by division", "Coffee, tea, cocoa and spices", gbp, "£m"),
         row("wood", "Wood imports by division", "Wood, lumber and cork", gbp, "£m"),
         row("fibres", "Textile fibre imports by division", "Textile fibres and waste", gbp, "£m"),
         row("food_share", f"Main imports by division, share of all imports, {span}", "Cereals, sugar, coffee and tea",
-            "% of all imports", pct, IMPORT_SHARE_NOTE.format(
-                f58=v["food_share"][years[0]], f1=v["food_share"][y1], y1=y1,
-                m58=v["materials_share"][years[0]], m1=v["materials_share"][y1]), ["materials_share"]),
+            "% of all imports", pct, IMPORT_SHARE_NOTE.format(**base, **abbr("f", "food_share"),
+                                                              **abbr("m", "materials_share")), ["materials_share"]),
         row("materials_share", "Wood and textile fibres by division, share of imports", "Wood and textile fibres",
             "% of all imports", pct),
         row("imports", f"Overseas trade at the prices of the time, {span}", "Imports", gbp, "£m", TOTALS_NOTE.format(
-            r62=round(x62 - x62u, 1), x62u=x62u, x62=x62, i58=v["imports"][years[0]], i1=v["imports"][y1],
-            x58=v["exports"][years[0]], x1=v["exports"][y1], y1=y1, o73=rows[112]["i_33"][1973],
+            **base, r62=round(x62 - x62u, 1), x62u=x62u, x62=x62, i0=v["imports"][y0], i1=v["imports"][y1],
+            x0=v["exports"][y0], x1=v["exports"][y1], o73=rows[112]["i_33"][1973],
             o74=rows[112]["i_33"][1974]), ["exports"]),
         row("exports", f"UK exports, {span}", "Exports", gbp, "£m"),
     ]
@@ -224,16 +247,17 @@ def write(by_year, rows, log=print):
     path = DATA.parent / "series.json"
     keep = [s for s in json.loads(path.read_text()) if not s["id"].startswith(PREFIX)]
     path.write_text(json.dumps(keep + out, ensure_ascii=False, indent=1))
-    log(f"{len(years)} years {span}; machinery {v['machinery'][years[0]]:.1f} -> {v['machinery'][y1]:.1f} million; "
-        f"textiles {v['textiles_share'][years[0]]:.1f}% -> {v['textiles_share'][y1]:.1f}% of exports")
+    log(f"{len(years)} years {span}; machinery {v['machinery'][y0]:.1f} -> {v['machinery'][y1]:.1f} million; "
+        f"textiles {v['textiles_share'][y0]:.1f}% -> {v['textiles_share'][y1]:.1f}% of exports")
 
 
 def run(log=print):
-    rows = load()
-    bad = check(rows)
+    from . import change_trade_classes as classes      # imports this module
+    rows, old = load(), classes.load()
+    bad = check(rows) + classes.check(old)
     if bad:
         raise ValueError("; ".join(bad))
-    write(goods(rows), rows, log)
+    write({**classes.goods(old), **goods(rows)}, rows, classes.in_1958(old), log)
 
 
 if __name__ == "__main__":

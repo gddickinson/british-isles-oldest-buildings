@@ -714,7 +714,7 @@
   "url": "https://www.uktradeinfo.com/",
   "download_url": "https://api.uktradeinfo.com/OTS?$filter=CommodityId eq 9024000 and MonthId eq 200001",
   "checked": "2026-10-23, HTTP 200 via curl; API returned tea rows for Jan 2000; strict rate limit (requests rejected when sent quickly)",
-  "years": "monthly, at least 2000-2026 (start year not confirmed)",
+  "years": "monthly, January 2000 onwards (the API returns nothing for 1996-1999; checked 2026-10-25)",
   "regions": "UK (+ regional trade statistics)",
   "resolution": "national by commodity (CN8/HS6/SITC) and partner country",
   "format": "OData JSON API",

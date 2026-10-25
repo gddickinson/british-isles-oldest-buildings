@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 176
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 198
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -278,7 +278,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       in 1848; stated). Graphs now 1846-1938: cotton 25.6 £m in 1846, 22.7 in 1848, 32.7 in 1853; iron and steel 4.8
       → 12.0; coal 1.0 → 1.6; textiles 63.2% of UK produce exported in 1846, 50.8% in 1853. The rest of the export
       side before 1846 (Nos. 1-7) is not in the Internet Archive collection.
-- [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
+- [x] C5b2c (2026-10-25) The modern end from HMRC's Overseas Trade Statistics (uktradeinfo API, OGL; bidb.change_trade_hmrc):
+      the API's data begin in January 2000 (nothing for 1996-99), so 2000-2025, every year checked for all 12 months
+      of the four flows (2026 stops at August). One paced `$apply` request per year sums value and net mass by HS
+      heading; the goods of the Abstract graphs on the nearest modern headings (stated per note: yarns and woven
+      fabrics only, made-up goods being classed by article; iron and steel chapters 72-73 without scrap; machinery
+      chapter 84 without sewing machines, with motors, generators, transformers and rail locomotives; grain without
+      rice; raw cotton without waste). Shares of all goods less non-monetary gold (61.8 bn exported, 116.9 bn imported
+      in 2025). 21 series, 8 graphs beside the 1846-1938 ones; notes compare 1913 and 1938. Re-exports cannot be
+      separated; the 2021 change from Intrastat to customs declarations for GB-EU trade is stated. Textiles 0.29% of
+      goods exported in 2000, 0.10% in 2025 (31.9% in 1913); raw cotton 18.7 thousand tonnes imported in 2000, 0.73
+      in 2025 (971 thousand tons in 1913); grain and flour 2,672 → 6,026 thousand tonnes.
+- [ ] C5b2d The years between: 1939-1999 main goods (Annual Abstract of Statistics, Overseas Trade Statistics of
+      the UK) to join the two eras; the hosted copy and release updated with the C5b2 graphs.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).
 - [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term

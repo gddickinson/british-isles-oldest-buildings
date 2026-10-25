@@ -2919,5 +2919,370 @@
   "default": false,
   "hidden": true,
   "zero": true
+ },
+ {
+  "id": "hmrc_cotton_uk",
+  "theme": "Prosperity and work",
+  "title": "Textile exports, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Cotton yarn and fabrics",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_cotton_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_wool_uk",
+   "hmrc_linen_uk"
+  ],
+  "note": "The cotton, woollen and linen yarns and woven fabrics sent abroad each year. Summed from HM Revenue & Customs' Overseas Trade Statistics (uktradeinfo API), all partners, EU and non-EU, by Harmonized System heading, at the prices of the time. HMRC counts re-exports with exports (it does not separate goods made in the United Kingdom, as the Statistical Abstract did for 1846-1938), and from January 2021 Great Britain's trade with the EU is taken from customs declarations instead of the Intrastat survey, so the years from 2021 are not strictly comparable with those before. Cotton is headings 5204-5212 (sewing thread, yarn, woven fabrics), wool 5106, 5107, 5109, 5111 and 5112 (yarn and woven fabrics of wool, not tops, waste or the yarn of other animal hair), linen 5306 and 5309 (flax yarn and woven fabrics). Unlike the Abstract's totals these leave out made-up goods (clothing, household linen, lace, carpets), which HMRC classifies by article rather than by fibre. Cotton was 241.9 million pounds in 2000 and 122.0 million in 2025; wool 237.4 and 197.5 million; linen 79.3 and 52.8 million. In 1913 the Abstract gives 126.5 million for cotton and 31.4 million for wool, at the prices of that time: the share graph compares them better.",
+  "zero": true
+ },
+ {
+  "id": "hmrc_wool_uk",
+  "theme": "Prosperity and work",
+  "title": "Woollen exports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Wool yarn and fabrics",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_wool_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_linen_uk",
+  "theme": "Prosperity and work",
+  "title": "Linen exports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Flax yarn and fabrics",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_linen_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_coal_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and machinery exports, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Coal and coke",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_coal_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_iron_uk",
+   "hmrc_machinery_uk"
+  ],
+  "note": "The coal, iron and steel, and machinery sent abroad each year. Summed from HM Revenue & Customs' Overseas Trade Statistics (uktradeinfo API), all partners, EU and non-EU, by Harmonized System heading, at the prices of the time. HMRC counts re-exports with exports (it does not separate goods made in the United Kingdom, as the Statistical Abstract did for 1846-1938), and from January 2021 Great Britain's trade with the EU is taken from customs declarations instead of the Intrastat survey, so the years from 2021 are not strictly comparable with those before. Coal is headings 2701, 2702 and 2704 (coal and briquettes, lignite, coke); iron and steel chapters 72 and 73 (iron, steel and articles of them) without ferrous waste and scrap (7204), as the Abstract left out old iron; machinery chapter 84 without sewing machines (8452), with electric motors, generators and transformers (8501-8504) and rail locomotives (8601-8602), which the Abstract counted as machinery. Chapter 84 now holds computers, aircraft engines and turbines, far from the steam engines and textile machinery of 1913. Coal was 68.4 million pounds in 2000 and 119.8 million in 2025; iron and steel 4,103 and 8,126 million; machinery 36,644 and 84,328 million (1913: coal 53.7, iron and steel 54.3, machinery 34.0 million).",
+  "zero": true
+ },
+ {
+  "id": "hmrc_iron_uk",
+  "theme": "Prosperity and work",
+  "title": "Iron and steel exports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Iron and steel",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_iron_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_machinery_uk",
+  "theme": "Prosperity and work",
+  "title": "Machinery exports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Machinery",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_machinery_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_textiles_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Main exports, share of all UK exports, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of goods exported",
+  "label": "Cotton, wool and linen",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_textiles_share_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_metal_share_uk"
+  ],
+  "note": "The main goods of the Statistical Abstract graphs as a share of all goods exported. Summed from HM Revenue & Customs' Overseas Trade Statistics (uktradeinfo API), all partners, EU and non-EU, by Harmonized System heading, at the prices of the time. HMRC counts re-exports with exports (it does not separate goods made in the United Kingdom, as the Statistical Abstract did for 1846-1938), and from January 2021 Great Britain's trade with the EU is taken from customs declarations instead of the Intrastat survey, so the years from 2021 are not strictly comparable with those before. All goods leave out non-monetary gold (heading 7108), whose flows through London's bullion market are large and erratic (61.8 billion pounds exported in 2025). Cotton, wool and linen yarns and fabrics were 0.29% of exports in 2000 and 0.10% in 2025 (in 1913 cotton, wool and linen goods were 31.9% of exports of UK produce, in 1938 17.0%); coal, iron and steel and machinery 20.9% and 25.4% (1913: 27.0%, 1938: 30.2%), almost all of it machinery.",
+  "zero": true
+ },
+ {
+  "id": "hmrc_metal_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and machinery, share of exports since 2000",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of goods exported",
+  "label": "Coal, iron and machinery",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_metal_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_grain_uk",
+  "theme": "Prosperity and work",
+  "title": "Food imports, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Grain and flour",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_grain_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_sugar_uk",
+   "hmrc_tea_uk"
+  ],
+  "note": "Grain and flour, sugar and tea brought into the United Kingdom each year. Summed from HM Revenue & Customs' Overseas Trade Statistics (uktradeinfo API), all partners, EU and non-EU, by Harmonized System heading, at the prices of the time. HMRC counts re-exports with exports (it does not separate goods made in the United Kingdom, as the Statistical Abstract did for 1846-1938), and from January 2021 Great Britain's trade with the EU is taken from customs declarations instead of the Intrastat survey, so the years from 2021 are not strictly comparable with those before. Grain is chapter 10 without rice (1006) and the flours of 1101 and 1102; sugar is heading 1701 (cane or beet sugar, raw or refined; not syrups or sugar confectionery); tea heading 0902 (not mate or tea extracts). Grain and flour cost 304 million pounds in 2000 and 1,409 million in 2025; sugar 450 and 373 million; tea 207 and 299 million.",
+  "zero": true
+ },
+ {
+  "id": "hmrc_sugar_uk",
+  "theme": "Prosperity and work",
+  "title": "Sugar imports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Sugar",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_sugar_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_tea_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea imports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Tea",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_tea_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_raw_cotton_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw material imports, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Raw cotton",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_raw_cotton_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_raw_wool_uk",
+   "hmrc_timber_uk"
+  ],
+  "note": "Raw cotton, raw wool and timber brought into the United Kingdom each year. Summed from HM Revenue & Customs' Overseas Trade Statistics (uktradeinfo API), all partners, EU and non-EU, by Harmonized System heading, at the prices of the time. HMRC counts re-exports with exports (it does not separate goods made in the United Kingdom, as the Statistical Abstract did for 1846-1938), and from January 2021 Great Britain's trade with the EU is taken from customs declarations instead of the Intrastat survey, so the years from 2021 are not strictly comparable with those before. Raw cotton is headings 5201 and 5203 (not waste, 5202); wool heading 5101 (wool not carded or combed); timber headings 4403, 4406 and 4407 (wood in the rough, sleepers and sawn wood; not planed wood, panels or pulp). Raw cotton cost 22.9 million pounds in 2000 and 2.2 million in 2025; wool 76.8 and 28.4 million; timber 1,123 and 2,131 million. In 1913 raw cotton cost 70.6 million pounds, more than any of the Abstract's main imports but grain and flour.",
+  "zero": true
+ },
+ {
+  "id": "hmrc_raw_wool_uk",
+  "theme": "Prosperity and work",
+  "title": "Wool imports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Wool",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_raw_wool_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_timber_uk",
+  "theme": "Prosperity and work",
+  "title": "Timber imports since 2000",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Timber",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_timber_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_food_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Main imports, share of all imports, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of goods imported",
+  "label": "Grain and flour, sugar and tea",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_food_share_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_materials_share_uk"
+  ],
+  "note": "The main goods of the Statistical Abstract graphs as a share of all goods imported (less non-monetary gold, heading 7108: 116.9 billion pounds imported in 2025). Summed from HM Revenue & Customs' Overseas Trade Statistics (uktradeinfo API), all partners, EU and non-EU, by Harmonized System heading, at the prices of the time. HMRC counts re-exports with exports (it does not separate goods made in the United Kingdom, as the Statistical Abstract did for 1846-1938), and from January 2021 Great Britain's trade with the EU is taken from customs declarations instead of the Intrastat survey, so the years from 2021 are not strictly comparable with those before. Grain and flour, sugar and tea were 0.41% of imports in 2000 and 0.34% in 2025 (1913: 14.9%); raw cotton, wool and timber 0.52% and 0.36% (1913: 18.0%).",
+  "zero": true
+ },
+ {
+  "id": "hmrc_materials_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw cotton, wool and timber, share of imports since 2000",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of goods imported",
+  "label": "Raw cotton, wool and timber",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_materials_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_grain_kt_uk",
+  "theme": "Prosperity and work",
+  "title": "Food imports by weight, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "kt",
+  "unit_long": "thousand tonnes",
+  "label": "Grain and flour",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_grain_kt_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_sugar_kt_uk",
+   "hmrc_tea_kt_uk"
+  ],
+  "note": "Net mass of the same goods as \"Food imports\" and \"Raw material imports, 2000-2025\" (HMRC Overseas Trade Statistics), in thousand tonnes; a tonne is 0.984 of the long ton used for 1854-1938. Grain and flour weighed 2,672 thousand tonnes in 2000 and 6,026 in 2025 (1913: 10,381 thousand tons); sugar 1,337 and 816; tea 156 and 110 (1938: 235).",
+  "zero": true
+ },
+ {
+  "id": "hmrc_sugar_kt_uk",
+  "theme": "Prosperity and work",
+  "title": "Sugar imported since 2000",
+  "region": "United Kingdom",
+  "unit": "kt",
+  "unit_long": "thousand tonnes",
+  "label": "Sugar",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_sugar_kt_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_tea_kt_uk",
+  "theme": "Prosperity and work",
+  "title": "Tea imported since 2000",
+  "region": "United Kingdom",
+  "unit": "kt",
+  "unit_long": "thousand tonnes",
+  "label": "Tea",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_tea_kt_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "hmrc_raw_cotton_kt_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw cotton and wool imported by weight, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "kt",
+  "unit_long": "thousand tonnes",
+  "label": "Raw cotton",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_raw_cotton_kt_uk.csv",
+  "default": false,
+  "models": [
+   "hmrc_raw_wool_kt_uk"
+  ],
+  "note": "Net mass of raw cotton (headings 5201, 5203) and raw wool (5101) imported, thousand tonnes (HMRC Overseas Trade Statistics). Raw cotton weighed 18.7 thousand tonnes in 2000 and 0.73 in 2025, against 971 thousand tons in 1913; wool 70.0 and 20.4 (1913: 357 thousand tons).",
+  "zero": true
+ },
+ {
+  "id": "hmrc_raw_wool_kt_uk",
+  "theme": "Prosperity and work",
+  "title": "Wool imported since 2000",
+  "region": "United Kingdom",
+  "unit": "kt",
+  "unit_long": "thousand tonnes",
+  "label": "Wool",
+  "sources": [
+   "hmrc_ots"
+  ],
+  "file": "hmrc_raw_wool_kt_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
  }
 ]

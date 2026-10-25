@@ -1083,3 +1083,25 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `map` pass; screenshot of the graphs checked. Hosted copy and release not updated.
 - Next: C5b2c (HMRC since 1996), C5b3 (before 1800, needs the books) or C5c (occupations).
 
+
+## 2026-10-25 — C5b2c: the main goods since 2000 (HMRC)
+- New `bidb/change_trade_hmrc.py` (262 lines): HMRC's uktradeinfo OTS API (OGL) with OData `$apply`: per year one
+  request sums value and net mass by HS heading over the headings needed (`GOODS`, `RANGES`), one more sums all goods
+  by month and flow (`complete` requires all 12 months of EU and non-EU imports and exports). Requests 6 s apart via
+  `bidb.http` (cached on FANTOM). The API's data begin in January 2000: 1996-99 return nothing, so the roadmap's 1996
+  became 2000; 2026 has 8 months and is left out.
+- Totals: exports 195.0 bn in 2000, 364.4 bn in 2025; imports 234.2 → 606.1 bn (2022: 635.2 bn, ONS goods imports
+  about 634 bn). Shares are of all goods less non-monetary gold (7108: 61.8 bn exported, 116.9 bn imported in 2025).
+  Suppression checked for 2024: within these headings only ferro-alloys (7202) are flagged, and their values are
+  still in the sums.
+- 21 series, 8 graphs beside the Statistical Abstract ones: textile exports (cotton 241.9 → 122.0 £m), coal, iron and
+  machinery exports (machinery 36,644 → 84,328 £m), main exports' share (textiles 0.29% → 0.10%; coal, iron and
+  machinery 20.9% → 25.4%), food imports (grain 304 → 1,409 £m), raw material imports (raw cotton 22.9 → 2.2 £m),
+  main imports' share, food imports by weight (grain 2,672 → 6,026 kt; tea 156 → 110), raw cotton and wool by weight
+  (raw cotton 18.7 → 0.73 kt, 971 thousand tons in 1913). Notes give the headings used, what differs from the
+  Abstract (re-exports included, made-up textiles left out), the 2021 Intrastat → customs break, and 1913/1938 values.
+  A first note wrongly called raw cotton 1913's largest import (grain and flour 77.7 £m > cotton 70.6); corrected.
+- Source `hmrc_ots` in change/sources.json; trade/sources.json years corrected; DATA_LICENSE.md, INTERFACE.md
+  updated; tests 209 OK (3 new); ui_check `change_trade_hmrc` (new), `change_trade_goods`, `change_trade_imports`,
+  `change_trade_quantities`, `map` pass; screenshot of the graphs checked. Hosted copy and release not updated.
+- Next: C5b2d (1939-99 to join the eras; hosted copy), C5b3 (before 1800, needs the books) or C5c (occupations).

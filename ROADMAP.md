@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-25)
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
-  series, 48 events, 23 map layers, 19 notes, 107 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+  series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 69 (2026-10-25, after C5b2d4):
   252.9 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
@@ -422,9 +422,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       out (2.8% in 1901, 1.7% in 1911). Drawn on "Work by sector: Scotland, 1841-1911" after a break at 1901: farming,
       fishing and mining 19.0% in 1901, 19.1% in 1911 (Booth's 1881: 23.1%); making and building 43.6%, 41.7%;
       services 37.4%, 39.2%.
-- [ ] C5c2c2b Scotland 1891: the 1891 report (`tenthdecennialce0002vari`, `1891censusscotla0024grea`) on the old
-      classification, regrouped line by line; its 1881 comparison against Booth's 1881 as the check.
-      Scotland's 1901 report occupation volumes (II, III: `op1254658-1001`, `op1254783-1001`) are empty stubs.
+- [x] C5c2c2b (2026-10-25) Scotland 1891 (new `bidb/change_work_sc_1891.py`): Census of Scotland 1891, Vol. II,
+      Part II (C. 7134, 1893; public domain; `tenthdecennialce0002vari`), the summary of occupations for all Scotland
+      (pp. 2-9, leaves 41-48), read from the page images (`work_census_sc_1891.csv`): classes I-IV and the sub-orders
+      of class V with no dealers whole from p. 3, the rest of class V line by line; every sub-order adds to its printed
+      total and the sub-orders to the five class totals (1,776,952 occupied). Grouped as 1901-1911 line for line
+      (cattle dealers, drovers, gamekeepers, coalheavers to services; mineral oil and gas works to making; coke burners,
+      limeburners, quarriers to mining); six lines that join makers and dealers (tobacco, bakers and confectioners,
+      furniture, provisions, clothes, platelayers and navvies) shared out as their lines were in 1901. Farming,
+      fishing and mining 19.8%, making and building 42.7%, services 37.5%; general labourers left out 3.7%. Drawn
+      between two breaks (1891: census lines after Booth; 1901: the 1911 classification). Booth's 1881 cannot be
+      checked against it: the 1891 report compares 1881 only by class. Scotland's 1901 report occupation volumes (II,
+      III: `op1254658-1001`, `op1254783-1001`) are empty stubs on the Internet Archive.
 - [ ] C5c2c2c Ireland 1891-1911: the General Reports of 1891 (`op1252985-1001`) and 1901 (`op1254515-1001`); for 1911
       (no General Report on the Internet Archive) the four province volumes' summary tables (`op1256115`-`op1256118`),
       summed; the Irish classes regrouped to the same sectors, checked against Booth's 1881. Broadberry et al. and

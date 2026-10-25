@@ -1063,5 +1063,16 @@
   "url": "https://archive.org/details/b32177264_0004",
   "used": "Scotland at the censuses of 1901 and 1911: shares of those occupied in farming, fishing and mining, making and building, and services, every one of the 397 lines read from the page images (data/curated/change/data/work_census_sc.csv, each checked against its printed change and the lines against the printed totals); every dealer moved to services, general labourers left out (roadmap C5c2c2a)",
   "checked": "2026-10-25, page images read (leaves 86-97)"
+ },
+ "census_sc_1891": {
+  "short": "Census of Scotland 1891, Vol. II, Part II (C. 7134): occupations",
+  "publisher": "Registrar General for Scotland (HMSO)",
+  "citation": "Tenth Decennial Census of the Population of Scotland, taken 5th April 1891, with Report. Vol. II, Part II. C. 7134. Edinburgh: HMSO, 1893. Section XV, Occupations of the people of Scotland: Summary of the occupations of the inhabitants of Scotland, distinguishing the sexes, under and above 20 years of age (classes, orders, sub-orders and occupations), pp. 2-9. Page images: Internet Archive, tenthdecennialce0002vari.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/tenthdecennialce0002vari",
+  "used": "Scotland at the census of 1891: shares of those occupied in farming, fishing and mining, making and building, and services, read from the page images (data/curated/change/data/work_census_sc_1891.csv: classes I-IV and dealer-free sub-orders whole, the rest of class V line by line, every sub-order and class checked against its printed total); grouped as 1901-1911, lines joining makers and dealers shared out as in 1901, general labourers left out (roadmap C5c2c2b)",
+  "checked": "2026-10-25, page images read (leaves 41-48)"
  }
 }

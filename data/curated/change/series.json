@@ -4365,6 +4365,7 @@
   "label": "Farming, fishing and mining",
   "sources": [
    "booth_1886",
+   "census_sc_1891",
    "census_sc_1911"
   ],
   "file": "work_sc_primary.csv",
@@ -4373,13 +4374,17 @@
    "work_sc_secondary",
    "work_sc_tertiary"
   ],
-  "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Scotland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (5.5-13.4% of the self-supporting, 1841-1881). From 1901 the census of 1911's Table D1 (1901 regrouped by the census office), every one of its 397 lines grouped the same way, every dealer in services; only general labourers are left out there (2.8%-1.7% of those occupied), so the line starts again after a break. The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 31.1% in 1841, 23.1% in 1881; services 26.1% and 32.7%. Census: farming, fishing and mining 19.0% in 1901, 19.1% in 1911; services 39.2% in 1911.",
+  "note": "Share of the self-supporting population in farming, fishing and mining; making and building; and services (transport, dealing, commercial, public and professional, and domestic service), from Charles Booth's regrouping of the censuses of Scotland 1841-1881 on one classification (1886), with dealers apart. General labour, people living on property and those of no stated occupation are left out (5.5-13.4% of the self-supporting, 1841-1881). From 1891 the censuses' own tables, line by line: 1891 on its classification (lines that join makers and dealers shared out as in 1901), 1901 and 1911 from the 1911 report's Table D1; every dealer in services, only general labourers left out (3.7%-2.8%-1.7% of those occupied), so the line starts again after a break, and again at 1901, where the classification changes. The same grouping as the England and Wales dots on the sector graphs. Farming, fishing and mining 31.1% in 1841, 23.1% in 1881; services 26.1% and 32.7%. Census: farming, fishing and mining 19.8% in 1891, 19.0% in 1901, 19.1% in 1911; services 37.5%, 37.4%, 39.2%.",
   "gap": 10,
   "zero": true,
   "breaks": [
    [
+    1891,
+    "From 1891 the censuses' own lines grouped by the same rule, every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+   ],
+   [
     1901,
-    "From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+    "From 1901 the classification of 1911 (1901 regrouped by the census office); 1891 on its own classification, gardeners all in farming"
    ]
   ]
  },
@@ -4393,6 +4398,7 @@
   "label": "Making and building",
   "sources": [
    "booth_1886",
+   "census_sc_1891",
    "census_sc_1911"
   ],
   "file": "work_sc_secondary.csv",
@@ -4402,8 +4408,12 @@
   "gap": 10,
   "breaks": [
    [
+    1891,
+    "From 1891 the censuses' own lines grouped by the same rule, every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+   ],
+   [
     1901,
-    "From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+    "From 1901 the classification of 1911 (1901 regrouped by the census office); 1891 on its own classification, gardeners all in farming"
    ]
   ]
  },
@@ -4417,6 +4427,7 @@
   "label": "Services",
   "sources": [
    "booth_1886",
+   "census_sc_1891",
    "census_sc_1911"
   ],
   "file": "work_sc_tertiary.csv",
@@ -4426,8 +4437,12 @@
   "gap": 10,
   "breaks": [
    [
+    1891,
+    "From 1891 the censuses' own lines grouped by the same rule, every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+   ],
+   [
     1901,
-    "From 1901 the census of 1911's own lines (1901 regrouped by the census office), every dealer in services, general labourers alone left out; to 1881 Booth's regrouping"
+    "From 1901 the classification of 1911 (1901 regrouped by the census office); 1891 on its own classification, gardeners all in farming"
    ]
   ]
  },

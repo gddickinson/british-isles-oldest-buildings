@@ -1332,3 +1332,16 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 266 OK (8 new); ui_check `change_work_nations` (now looks for the 1901 break), `change_work`,
   `change_trade_joined` pass; screenshot of the graph checked. Hosted copy and release not updated.
 - Next: C5c2c2b (Scotland 1891), C5c2c2c (Ireland 1891-1911).
+
+## 2026-10-25 — C5c2c2b: Scotland at the census of 1891
+- Census of Scotland 1891, Vol. II, Part II (C. 7134, 1893; `tenthdecennialce0002vari`): the summary of occupations
+  for all Scotland (classes and orders p. 2, sub-orders p. 3, occupations pp. 4-9; leaves 41-48) read from the page
+  images into `work_census_sc_1891.csv` (329 rows: 82 printed sub-order totals, the dealer-free sub-orders whole, 186
+  lines of class V with a kind). Every sub-order adds to its printed total, the sub-orders to the five class totals.
+- New `bidb/change_work_sc_1891.py` (115 lines). Grouped as 1901-1911 line for line; six lines joining makers and
+  dealers shared out as in 1901 (furniture 7% dealers, clothes 93%, provisions 46%, bakers and confectioners 34%,
+  tobacco 37%, platelayers vs navvies 52%). Scotland 1891: farming, fishing and mining 19.8%, making and building
+  42.7%, services 37.5%; general labourers left out 3.7%. Drawn between breaks at 1891 and 1901.
+- Source `census_sc_1891`, DATA_LICENSE.md row, INTERFACE.md. Tests 271 OK (5 new); ui_check `change_work_nations`,
+  `change_work` pass; screenshot checked. Hosted copy and release not updated.
+- Next: C5c2c2c (Ireland 1891-1911).

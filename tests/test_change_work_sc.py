@@ -3,6 +3,7 @@ line, checked against its printed changes and totals, and grouped into three sec
 import unittest
 
 from bidb import change_work_sc as sc
+from bidb import change_work_sc_1891 as sc91
 
 
 class Readings(unittest.TestCase):
@@ -43,6 +44,28 @@ class Sectors(unittest.TestCase):
 
     def test_left_out(self):
         self.assertEqual(sc.left_out(), {1901: 2.8, 1911: 1.7})
+
+
+
+class Census1891(unittest.TestCase):
+    def test_every_sub_order_and_class_agrees(self):
+        self.assertEqual(sc91.check(), [])
+
+    def test_a_misreading_is_caught(self):
+        rows = sc91.load()
+        next(r for r in rows if r["line"] == "Baker")["value"] += 100
+        self.assertEqual(len(sc91.check(rows)), 1)
+
+    def test_shared_lines(self):
+        self.assertAlmostEqual(sc91.split("x:354/353+354"), (715 + 1232) / (811 + 2476 + 715 + 1232))
+
+    def test_shares(self):
+        self.assertEqual(sc91.shares(), {1891: (19.75, 42.73, 37.52)})
+        self.assertEqual(sc91.left_out(), {1891: 3.7})
+
+    def test_every_kind_known(self):
+        for r in sc91.load():
+            self.assertIn(r["kind"].split(":")[0], sc91.KINDS)
 
 
 if __name__ == "__main__":

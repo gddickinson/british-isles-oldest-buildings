@@ -1,4 +1,4 @@
-"""Main imports by quantity from the Statistical Abstract (roadmap C5b2b3c1, C5b2b3c2): the readings file, its totals,
+"""Main imports by quantity from the Statistical Abstract (roadmap C5b2b3c1-C5b2b3c3): the readings file, its totals,
 the joins of the editions, units and the price index."""
 import tempfile
 import unittest
@@ -13,7 +13,7 @@ class TradeQuantities(unittest.TestCase):
     def test_readings_add_up(self):
         rows = tq.load()
         self.assertEqual(tq.check(rows), [])
-        self.assertEqual(sorted(tq.goods(rows)), list(range(1854, 1912)))
+        self.assertEqual(sorted(tq.goods(rows)), list(range(1854, 1939)))
 
     def test_early_editions(self):
         rows = tq.load()
@@ -65,8 +65,30 @@ class TradeQuantities(unittest.TestCase):
     def test_units(self):
         self.assertAlmostEqual(tq.tons("grain", 1900, 20_000), 1.0)  # thousand tons: 20 cwt to the ton
         self.assertAlmostEqual(tq.tons("tea", 1900, 2_240_000), 1.0)
-        self.assertAlmostEqual(tq.tons("cotton", 1911, 2240), 0.1)  # 1911 in centals of 100 lb
+        self.assertAlmostEqual(tq.tons("cotton", 1911, 2240), 0.1)  # from 1911 in centals of 100 lb
+        self.assertAlmostEqual(tq.tons("cotton", 1930, 2240), 0.1)
+        self.assertAlmostEqual(tq.tons("softwood", 1930, 2_500_000), 2.5)
         self.assertAlmostEqual(tq.tons("timber", 1900, 2_500_000), 2.5)
+
+    def test_classification_of_1920(self):
+        rows = tq.load()
+        self.assertEqual(tq.c20_overlap(rows), {})
+        g = tq.goods(rows)
+        self.assertEqual(g[1911], tq.new_goods(rows, 1911) | {"softwood": 5382643 + 2896009})  # No. 59, No. 70's softwood
+        self.assertEqual(g[1919]["cotton"], rows["q70_cotton"][1919])  # waste inside raw cotton to 1919
+        self.assertAlmostEqual(g[1920]["cotton"], rows["q70_cotton"][1920] + rows["q70_cotton_waste"][1920] * 1.12)
+        self.assertEqual(g[1923]["wool"], rows["q70_wool"][1923] * 100)  # No. 70: centals
+        self.assertEqual(g[1924]["tea"], rows["q83_tea"][1924] * 1000)  # No. 83: thousand lb
+        self.assertEqual(g[1934]["softwood"], rows["q83_wood_sawnsoft"][1934] + rows["q83_wood_pitprops"][1934])
+        self.assertNotIn("softwood", g[1935])
+        self.assertNotIn("timber", g[1912])
+        rows["q83_wood_pitprops"][1925] += 1
+        self.assertEqual(tq.c20_overlap(rows), {1925: {"softwood": 1}})
+        rows["q83_wood_pitprops"][1925] -= 1
+        rows["q83_tea"][1924] += 1  # beyond the rounding of thousand lb
+        self.assertIn(1924, tq.c20_overlap(rows))
+        rows["q70_barley"][1911] += 5
+        self.assertEqual(tq.c20_overlap(rows)[1911], {"grain": tq.C20_KNOWN["grain"] + 5})
 
     def test_check_finds_a_misread_figure(self):
         with tempfile.TemporaryDirectory() as d:
@@ -86,6 +108,15 @@ class TradeQuantities(unittest.TestCase):
         self.assertEqual(s["sa_qty_grain_uk"], [[1900, 1.0], [1901, 1.0]])
         self.assertEqual(s["sa_qty_timber_uk"][0], [1900, 1.0])
         self.assertEqual(s["sa_qty_tea_price_uk"], [[1900, 100.0], [1901, 150.0]])
+
+    def test_timber_price_linked(self):
+        q = {g: 20_000 for g in ("grain", "cotton", "sugar")} | {"wool": 2_240_000, "tea": 2_240_000}
+        v = {g: 100.0 for g in tq.GOODS}
+        by_year = {1900: q | {"timber": 1e6}, 1901: q | {"timber": 1e6, "softwood": 1e6}, 1902: q | {"softwood": 1e6}}
+        by_value = {1900: v, 1901: {**v, "timber": 120.0, "softwood": 60.0}, 1902: {**v, "softwood": 90.0}}
+        s = tq.series(by_year, by_value)
+        self.assertEqual(s["sa_qty_timber_price_uk"], [[1900, 100.0], [1901, 120.0], [1902, 180.0]])
+        self.assertEqual(s["sa_qty_softwood_uk"], [[1901, 1.0], [1902, 1.0]])
 
 
 if __name__ == "__main__":

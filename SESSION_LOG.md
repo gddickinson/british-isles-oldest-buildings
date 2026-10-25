@@ -1026,3 +1026,35 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_trade_imports`, `change_trade_values`, `change_trade_goods`, `map` pass; screenshot checked. Hosted copy
   and release not updated.
 - Next: C5b2b3c3 (quantities 1912-38 from Nos. 70 and 83), C5b2b3d (UK produce exports 1840-53), or C5c.
+
+## 2026-10-25 — C5b2b3c3: the main imports by quantity, 1912-38
+- Read from the page images already cached for the values (the quantity line sits above each £ line): No. 70
+  table 206 leaves 318-323 (pp. 304-309, 1911-25) and No. 83 table 285 leaves 414-419 (pp. 392-397, 1924-38). 410
+  figures appended to `data/curated/change/data/trade_quantities_abstract_uk.csv` (rows `q70_*`, `q83_*`; 1936-38
+  timber kept as printed in standards and fathoms, rows `*_std`, `*_fathom`).
+- No totals printed. Each figure was searched in the OCR of the editions covering its year (Nos. 71-83, own page
+  excluded): all but 23 found. Four No. 70 figures were found on No. 71's pages (leaves 336-337, page index and images
+  downloaded), which showed my first readings wrong (bold italic 2/3 read as 8: 1919 sawn softwood 4,296,639, 1921
+  pit props 1,296,925, 1924 pit props 3,004,269, 1920 raw cotton 18,972,224); five were found on No. 82's cached pages
+  (pp. 397, 401); the 14 of 1938 (No. 83 only) were read again from enlarged crops, and No. 83's own OCR agrees for 13.
+- Units: raw cotton and wool in centals of 100 lb (No. 70), tea and wool in thousand lb (No. 83). The unmanufactured
+  cotton waste row (from 1920) is headed "centals" in No. 70 but "cwts." in Nos. 73-83 for the same figures; cwt used
+  and stated.
+- Joins (`c20_overlap`): 1911 in No. 70 equals No. 59 in every shared row; the 1920 classification leaves out the other
+  grains and meals (-7,692,616 cwt, 3.9%), alpaca and flocks (-8,835,533 lb, 1.1%); 1924-25 Nos. 70 and 83 agree within
+  the rounding of thousand lb and centals. Grain's value per cwt in 1911 differs by -0.6% on the new definition.
+- Timber: from 1912 the Abstract gives quantities only of sawn softwood and pit props (hewn, other sawn, staves and
+  furniture woods by value alone): 8.28 of 9.46 million loads in 1911, and their value per load 89% of all timber's.
+  So they are a second line in "Timber imported, 1857-1934" (new series `sa_qty_softwood_uk`, 1911-34) and the timber
+  price index goes on with theirs, linked at 1911. Breaks stated: planed softwood and sleepers inside sawn softwood to
+  1914 (footnote), other pitwood inside pit props to 1934, standards of 165 cu ft and fathoms of 216 cu ft from 1936
+  (the Abstract gives no size for a load, so the line ends in 1934).
+- `bidb/change_trade_quantities.py` (415 lines): `c20_goods`, `c20_overlap`, `softwood_values`, `C20_KNOWN`,
+  `ROUNDING`; raw cotton in centals from 1911; region "all Ireland to March 1923" as for the values. Graphs now
+  1854-1938: raw cotton 1,253 thousand tons in 1912, 568 in 1938; grain and flour 10,381 in 1913, 9,417 in 1938; tea
+  235 in 1938; grain price index 78 in 1931 (the lowest), 116 in 1938. Source citation (Nos. 70, 71, 82, 83) and
+  DATA_LICENSE.md row extended; Change over time: 177 series.
+- Tests 205 OK (2 new); ui_check `change_trade_quantities` (patterns updated), `change_trade_imports`,
+  `change_trade_values`, `change_trade_goods`, `map` pass; screenshot of the graphs checked. Hosted copy and release
+  not updated.
+- Next: C5b2b3d (UK produce exports 1840-53 from Nos. 8 and 13), C5b2c (HMRC since 1996) or C5c (occupations).

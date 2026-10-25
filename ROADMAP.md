@@ -255,7 +255,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       same in another edition's OCR, 1858's barley and timber on No. 20's page, the rest (1857 in No. 19, No. 18's
       teak) read again from enlarged crops. Graphs now 1854-1911 (timber 1857-1911): raw cotton 396 thousand tons in
       1854, 234 in 1862; cotton price index 98 in 1854, 376 in 1864; grain price 177 in 1857, 202 in 1867.
-- [ ] C5b2b3c3 Quantities 1912-38 from Nos. 70 and 83 (the classification of 1920; cotton in centals).
+- [x] C5b2b3c3 (2026-10-25) Quantities 1912-38 from No. 70 (table 206, pp. 304-309, 1911-25) and No. 83 (table 285,
+      pp. 392-397, 1924-38): 410 printed figures (rows `q70_*`, `q83_*`), on the same pages as the values (a quantity
+      line above each £ line). No totals printed: every figure found printed the same in another edition's OCR, or read
+      on No. 71's pages (four first readings corrected there: bold italic 2s and 3s read as 8s) or No. 82's, or (1938)
+      read again from enlarged crops. Units: raw cotton and wool in centals of 100 lb, No. 83's tea and wool in thousand
+      lb, cotton waste (from 1920) in cwt (No. 70 heads the row in centals; Nos. 73-83 cwt for the same figures). Joins:
+      1911 in No. 70 equals No. 59 in every shared row; the 1920 classification leaves out the other grains and meals
+      (3.9% of 1911's grain by weight), alpaca and flocks (1.1% of wool); 1924-25 Nos. 70 and 83 agree within the
+      rounding. Timber: from 1912 only sawn softwood and pit props have quantities (8.28 of 9.46 million loads in 1911),
+      drawn as a second line 1911-34 (planed softwood and sleepers inside sawn softwood to 1914; from 1936 standards and
+      fathoms, with no loads given); the timber price index goes on with theirs, linked at 1911 (their value per load
+      89% of all timber's). Graphs now 1854-1938: raw cotton 1,253 thousand tons in 1912, 568 in 1938; grain and flour
+      10,381 in 1913, 9,417 in 1938; softwood 9.90 million loads in 1913, 2.08 in 1918, 8.53 in 1934.
 - [ ] C5b2b3d UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the

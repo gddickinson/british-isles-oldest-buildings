@@ -932,5 +932,14 @@
   "download_url": "https://api.uktradeinfo.com/OTS",
   "checked": "2026-10-25, API queried ($apply groupby by year; data from January 2000)",
   "used": "Exports of cotton, wool and linen yarns and fabrics, coal, iron and steel and machinery; imports of grain and flour, sugar, tea, raw cotton, wool and timber by value and weight, 2000 onwards; their shares of all goods traded (roadmap C5b2c)"
+ },
+ "annual_abstract_groups_uk": {
+  "short": "Annual Abstract of Statistics, trade by classes and groups",
+  "citation": "Central Statistical Office, Annual Abstract of Statistics (HMSO; figures of the Board of Trade), tables of the value of imports and of exports of the produce and manufactures of the United Kingdom, analysis by classes and groups, and of the value and volume of the external trade of the United Kingdom: No. 84 (1935-1946), tables 215, 217 and 219, pp. 178, 180, 182; No. 88 (1938-1950), tables 217, 219 and 221, pp. 207, 209, 211; No. 89 (1938-1951), tables 208, 209 and 211, pp. 196, 197, 199; No. 90 (1935-1952), tables 207, 208 and 210, pp. 196, 197, 199; No. 85 (1937-1947) and No. 86 (1938-1948) to confirm 1939-1940; Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published 1947-1953",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "used": "Exports of coal (with coke), iron and steel, machinery, cotton and woollen yarns and manufactures; imports of grain and flour, raw cotton, wool and timber; all imports and exports of UK produce, 1938-1952 (£ million), read from the page images (edition, leaf, page and table per figure in data/trade_groups_abstract_uk.csv); each year from the latest edition that prints it",
+  "checked": "2026-10-25 (C5b2d1): 858 figures read from the scans; every edition's five class totals agree with its printed totals of imports and exports (within rounding); the goods used are printed the same in another edition (1939-1940 in Nos. 85 and 86) or were read again from enlarged crops (No. 90, 1946-1952); differences between editions are revisions (class totals move with them)"
  }
 }

@@ -3284,5 +3284,266 @@
   "default": false,
   "hidden": true,
   "zero": true
+ },
+ {
+  "id": "aa_cotton_uk",
+  "theme": "Prosperity and work",
+  "title": "Textile exports by group, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Cotton yarns and manufactures",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_cotton_uk.csv",
+  "default": false,
+  "models": [
+   "aa_wool_uk"
+  ],
+  "note": "Cotton yarns and manufactures (group III.I) and woollen and worsted yarns and manufactures (III.J) exported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office, figures of the Board of Trade), which prints the value of imports and of exports of United Kingdom produce by the groups of the Board of Trade's 1920 classification until 1952, read from the page images of Nos. 84, 88, 89 and 90; each year is taken from the latest of these editions that prints it (they revise the years before), and the class totals of every edition were checked against its printed totals. Imports are valued at the port of arrival (cost, insurance and freight), exports free on board. Figures for 1942-1945 leave out the munitions imported and exported by government departments. The groups are wider than the articles of the 1846-1938 graphs, so 1938 is given on both definitions. 1938: cotton 49.7 million here against 49.4 in the Statistical Abstract's articles, wool 26.8 against 24.4. Linen has no group of its own (it is inside the manufactures of other textile materials). Cotton was 49.3 million in 1940, 34.2 in 1943, 209.4 in 1951 and 148.1 in 1952; wool 18.5 in 1943 and 123.9 in 1952. Later editions moved a little between the groups: No. 90 gives 1946-1951 wool 0.5 to 1.8 million higher than No. 89.",
+  "zero": true
+ },
+ {
+  "id": "aa_wool_uk",
+  "theme": "Prosperity and work",
+  "title": "Woollen exports by group",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Woollen and worsted yarns and manufactures",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_wool_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_coal_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and machinery exports by group, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Coal, coke and manufactured fuel",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_coal_uk.csv",
+  "default": false,
+  "models": [
+   "aa_iron_uk",
+   "aa_machinery_uk"
+  ],
+  "note": "Coal (group II.A, with coke and manufactured fuel, III.A, as the 1846-1938 graphs counted them), iron and steel and manufactures thereof (III.C) and machinery (III.G) exported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office, figures of the Board of Trade), which prints the value of imports and of exports of United Kingdom produce by the groups of the Board of Trade's 1920 classification until 1952, read from the page images of Nos. 84, 88, 89 and 90; each year is taken from the latest of these editions that prints it (they revise the years before), and the class totals of every edition were checked against its printed totals. Imports are valued at the port of arrival (cost, insurance and freight), exports free on board. Figures for 1942-1945 leave out the munitions imported and exported by government departments. The groups are wider than the articles of the 1846-1938 graphs, so 1938 is given on both definitions. 1938: coal 40.7 million here and 40.7 in the Statistical Abstract; iron and steel 41.7 against 42.0; machinery 57.2 against 59.4 (the group leaves out locomotives, which are with vehicles). No. 88 moved part of machinery to other groups (57.9 million in 1938 in No. 84, 57.2 in No. 88), and No. 90 moved a little more (1951: 365.2 in No. 89, 363.2 in No. 90); 1939 and 1940 are only in No. 84, on the earlier basis. Coal exports fell from 42.3 million in 1939 to 2.7 in 1947; machinery rose from 27.9 million in 1943 to 421.7 in 1952.",
+  "zero": true
+ },
+ {
+  "id": "aa_iron_uk",
+  "theme": "Prosperity and work",
+  "title": "Iron and steel exports by group",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Iron and steel and manufactures",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_iron_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_machinery_uk",
+  "theme": "Prosperity and work",
+  "title": "Machinery exports by group",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Machinery",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_machinery_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_textiles_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Main exports by group, share of all UK exports, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of exports of UK produce",
+  "label": "Cotton and wool",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_textiles_share_uk.csv",
+  "default": false,
+  "models": [
+   "aa_metal_share_uk"
+  ],
+  "note": "Cotton and woollen goods, and coal, iron and steel and machinery, as a share of all exports of United Kingdom produce. From the Annual Abstract of Statistics (Central Statistical Office, figures of the Board of Trade), which prints the value of imports and of exports of United Kingdom produce by the groups of the Board of Trade's 1920 classification until 1952, read from the page images of Nos. 84, 88, 89 and 90; each year is taken from the latest of these editions that prints it (they revise the years before), and the class totals of every edition were checked against its printed totals. Imports are valued at the port of arrival (cost, insurance and freight), exports free on board. Figures for 1942-1945 leave out the munitions imported and exported by government departments. The groups are wider than the articles of the 1846-1938 graphs, so 1938 is given on both definitions. Cotton and wool were 16.2% of exports in 1938 (17.0% with linen in the Statistical Abstract), 24.0% in 1942 and 10.7% in 1952; coal, iron and machinery 29.6% in 1938 and 26.6% in 1952.",
+  "zero": true
+ },
+ {
+  "id": "aa_metal_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Coal, iron and machinery by group, share of exports",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of exports of UK produce",
+  "label": "Coal, iron and machinery",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_metal_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_grain_uk",
+  "theme": "Prosperity and work",
+  "title": "Main imports by group, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Grain and flour",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_grain_uk.csv",
+  "default": false,
+  "models": [
+   "aa_raw_cotton_uk",
+   "aa_raw_wool_uk",
+   "aa_timber_uk"
+  ],
+  "note": "Grain and flour (group I.A), raw cotton and cotton waste (II.F), wool, raw and waste, and woollen rags (II.G) and wood and timber (II.E) imported each year, million pounds at the prices of the time. From the Annual Abstract of Statistics (Central Statistical Office, figures of the Board of Trade), which prints the value of imports and of exports of United Kingdom produce by the groups of the Board of Trade's 1920 classification until 1952, read from the page images of Nos. 84, 88, 89 and 90; each year is taken from the latest of these editions that prints it (they revise the years before), and the class totals of every edition were checked against its printed totals. Imports are valued at the port of arrival (cost, insurance and freight), exports free on board. Figures for 1942-1945 leave out the munitions imported and exported by government departments. The groups are wider than the articles of the 1846-1938 graphs, so 1938 is given on both definitions. 1938: grain and flour 74.4 million here against 67.7 for the wheat, barley, oats, maize and flour of the Statistical Abstract graphs; raw cotton 29.6 against 29.1; wool 42.6 against 41.0; timber 42.9 against 42.9. Sugar and tea have no group of their own (they are inside other food and beverages). Raw cotton cost 258.8 million in 1951 and 128.3 in 1952; wool 245.9 million in 1951.",
+  "zero": true
+ },
+ {
+  "id": "aa_raw_cotton_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw cotton imports by group",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Raw cotton and cotton waste",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_raw_cotton_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_raw_wool_uk",
+  "theme": "Prosperity and work",
+  "title": "Wool imports by group",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Wool, raw and waste",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_raw_wool_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_timber_uk",
+  "theme": "Prosperity and work",
+  "title": "Timber imports by group",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Wood and timber",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_timber_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_grain_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Main imports by group, share of all imports, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of all imports",
+  "label": "Grain and flour",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_grain_share_uk.csv",
+  "default": false,
+  "models": [
+   "aa_materials_share_uk"
+  ],
+  "note": "Grain and flour, and raw cotton, wool and timber, as a share of all imports. From the Annual Abstract of Statistics (Central Statistical Office, figures of the Board of Trade), which prints the value of imports and of exports of United Kingdom produce by the groups of the Board of Trade's 1920 classification until 1952, read from the page images of Nos. 84, 88, 89 and 90; each year is taken from the latest of these editions that prints it (they revise the years before), and the class totals of every edition were checked against its printed totals. Imports are valued at the port of arrival (cost, insurance and freight), exports free on board. Figures for 1942-1945 leave out the munitions imported and exported by government departments. The groups are wider than the articles of the 1846-1938 graphs, so 1938 is given on both definitions. Grain and flour were 8.1% of imports in 1938 (7.4% for the Statistical Abstract's grains), 9.7% in 1948 and 7.5% in 1952; raw cotton, wool and timber 12.5% in 1938 (12.3%) and 13.5% in 1952.",
+  "zero": true
+ },
+ {
+  "id": "aa_materials_share_uk",
+  "theme": "Prosperity and work",
+  "title": "Raw cotton, wool and timber by group, share of imports",
+  "region": "United Kingdom",
+  "unit": "%",
+  "unit_long": "% of all imports",
+  "label": "Raw cotton, wool and timber",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_materials_share_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "aa_imports_uk",
+  "theme": "Prosperity and work",
+  "title": "Overseas trade at the prices of the time, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Imports",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_imports_uk.csv",
+  "default": false,
+  "models": [
+   "aa_exports_uk"
+  ],
+  "note": "All imports and all exports of United Kingdom produce, million pounds at the prices of the time (the sum of the five classes, as printed in each edition's summary table; No. 84 prints it to the nearest million, so 1939 and 1940 are the sum of its classes). From the Annual Abstract of Statistics (Central Statistical Office, figures of the Board of Trade), which prints the value of imports and of exports of United Kingdom produce by the groups of the Board of Trade's 1920 classification until 1952, read from the page images of Nos. 84, 88, 89 and 90; each year is taken from the latest of these editions that prints it (they revise the years before), and the class totals of every edition were checked against its printed totals. Imports are valued at the port of arrival (cost, insurance and freight), exports free on board. Figures for 1942-1945 leave out the munitions imported and exported by government departments. The groups are wider than the articles of the 1846-1938 graphs, so 1938 is given on both definitions. 1938: imports 919.5 million and exports 471.4 (the Statistical Abstract: 919.5 and 470.8). Exports fell to 233.5 million in 1943 and were 2549.6 in 1952; imports 3481.5 million in 1952.",
+  "zero": true
+ },
+ {
+  "id": "aa_exports_uk",
+  "theme": "Prosperity and work",
+  "title": "UK exports of UK produce, 1938-1952",
+  "region": "United Kingdom",
+  "unit": "£m",
+  "unit_long": "million pounds (prices of the time)",
+  "label": "Exports of United Kingdom produce",
+  "sources": [
+   "annual_abstract_groups_uk"
+  ],
+  "file": "aa_exports_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
  }
 ]

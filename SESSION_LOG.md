@@ -1105,3 +1105,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   updated; tests 209 OK (3 new); ui_check `change_trade_hmrc` (new), `change_trade_goods`, `change_trade_imports`,
   `change_trade_quantities`, `map` pass; screenshot of the graphs checked. Hosted copy and release not updated.
 - Next: C5b2d (1939-99 to join the eras; hosted copy), C5b3 (before 1800, needs the books) or C5c (occupations).
+
+## 2026-10-25 — C5b2d1: the main goods 1938-1952 by group
+- C5b2d split into four parts (roadmap): the Internet Archive collection holds the Annual Abstract to No. 135 (1999),
+  but trade tables change classification (1920 groups to No. 90; SITC from No. 91), so 1938-52 first.
+- Read from the page images (`<cache>/stat_abstract_img/n<edition>_<leaf>.jpg`; the archive's `page/nX` is leaf X+1):
+  No. 84 tables 215/217/219 (pp. 178-182), No. 88 tables 217/219/221 (pp. 207-211), No. 89 tables 208/209/211 and
+  No. 90 tables 207/208/210 (pp. 196-199). 858 figures in `data/curated/change/data/trade_groups_abstract_uk.csv`.
+- Checks: every edition's five class totals equal its printed totals of imports and exports (within rounding; No. 84
+  prints whole millions). Editions revise earlier years (e.g. machinery 1938: 57.9 in No. 84, 57.2 from No. 88; No. 90
+  moves 0.5-1.8 £m into wool for 1946-51), so each year comes from the latest edition printing it. The goods used are
+  printed the same in another edition (1939-40 confirmed in Nos. 85 and 86's OCR) or were read again from 2x crops
+  (No. 90, 1946-52).
+- New `bidb/change_trade_groups.py` (235 lines): 15 series, 6 graphs (textiles, coal/iron/machinery, export shares,
+  main imports, import shares, all imports and exports), 1938 compared with the Statistical Abstract in each note.
+  Cotton goods 34.2 £m in 1943, 209.4 in 1951; machinery 27.9 → 421.7 £m 1943-52; coal 42.3 £m in 1939, 2.7 in 1947.
+  A first draft of a note gave the Korean War as the cause of the 1951 peak without a source; removed.
+- Source `annual_abstract_groups_uk`, DATA_LICENSE.md row (public domain: published 1947-53), INTERFACE.md; tests
+  213 OK (4 new); ui_check `change_trade_groups` (new), `change_trade_hmrc`, `change_trade_goods`,
+  `change_trade_imports`, `change_trade_values`, `map` pass; screenshot of the graphs checked. Hosted copy and release
+  not updated.
+- Next: C5b2d2 (1953-~1977, SITC tables from No. 91).

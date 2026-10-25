@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-24)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 198
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 213
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 68 (2026-10-24, after C5a):
   252.8 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -289,8 +289,26 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       separated; the 2021 change from Intrastat to customs declarations for GB-EU trade is stated. Textiles 0.29% of
       goods exported in 2000, 0.10% in 2025 (31.9% in 1913); raw cotton 18.7 thousand tonnes imported in 2000, 0.73
       in 2025 (971 thousand tons in 1913); grain and flour 2,672 → 6,026 thousand tonnes.
-- [ ] C5b2d The years between: 1939-1999 main goods (Annual Abstract of Statistics, Overseas Trade Statistics of
-      the UK) to join the two eras; the hosted copy and release updated with the C5b2 graphs.
+- C5b2d The years between: 1939-1999 main goods (Annual Abstract of Statistics) to join the two eras; the hosted copy
+      and release updated with the C5b2 graphs. Split 2026-10-25 (the collection has every edition to No. 135, 1999, but
+      for Nos. 117, 121-123 and 127-129; `annualabstractof1981grea`, `annualabstractof1995unse` and
+      `annualabstractof1999grea` are other scans):
+- [x] C5b2d1 (2026-10-25) 1938-1952 by the Board of Trade's 1920 groups (new `bidb/change_trade_groups.py`), read from
+      Nos. 84 (1935-46; 1939-40 only here), 88, 89 and 90 (the last on this classification; No. 91 uses SITC): 858
+      figures, every edition's class totals checked against its printed totals; editions revise earlier years, so each
+      year comes from the latest edition that prints it; the goods used are printed the same in another edition (1939-40
+      in Nos. 85 and 86) or were read again from enlarged crops (No. 90). Groups are wider than the Abstract's articles
+      (1938 on both: grain and flour 74.4 against 67.7 £m, cotton goods 49.7 against 49.4); linen, sugar and tea have no
+      group. 15 series, 6 graphs: cotton goods 34.2 £m in 1943, 209.4 in 1951; machinery 27.9 → 421.7 £m 1943-52; coal
+      exports 42.3 £m in 1939, 2.7 in 1947; cotton and wool 16.2% of exports in 1938, 10.7% in 1952; all exports 471.4 →
+      2,549.6 £m. 1942-45 leave out munitions traded by government departments.
+- [ ] C5b2d2 1953-~1977 from the SITC tables (Nos. 91 onwards): divisions nearest the goods (65 textile yarn and
+      fabrics, 67 iron and steel, 71-72 machinery, 32 coal; 04 cereals, 06 sugar, 07 coffee, tea and cocoa (tea if shown
+      apart), 24 wood, 26 textile fibres), with the overlap year of each change of classification on both bases.
+- [ ] C5b2d3 1978-1999 (SITC revisions 2 and 3; the missing editions from the other scans or the later edition's
+      ten-year runs).
+- [ ] C5b2d4 Join the eras: graphs across 1846-2025 with the breaks of definition marked (1912, 1938, 1953, 2000);
+      hosted copy and release updated with the C5b2 graphs.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).
 - [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term

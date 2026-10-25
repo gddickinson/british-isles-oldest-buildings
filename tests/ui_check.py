@@ -52,6 +52,7 @@ PAGES = {
     "change_trade_values": ("/change", r"(?s)Overseas trade at the prices of the time, 1854-1938.*Statistical Abstracts.*Re-exports, share of all exports"),
     "change_trade_goods": ("/change", r"(?s)Textile exports, 1846-1938.*Coal, iron and machinery exports, 1846-1938.*Main exports, share of all UK exports"),
     "change_trade_imports": ("/change", r"(?s)Food imports, 1854-1938.*Raw material imports, 1854-1938.*Main imports, share of all imports"),
+    "change_trade_groups": ("/change", r"(?s)Textile exports by group, 1938-1952.*Annual Abstract of Statistics.*Coal, iron and machinery exports by group, 1938-1952.*Main imports by group, share of all imports, 1938-1952.*Overseas trade at the prices of the time, 1938-1952"),
     "change_trade_hmrc": ("/change", r"(?s)Textile exports, 2000-20\d\d.*Overseas Trade Statistics.*Coal, iron and machinery exports, 2000-20.*Main imports, share of all imports, 2000-20.*Raw cotton and wool imported by weight, 2000-20"),
     "change_trade_quantities": ("/change", r"(?s)Food imports by weight, 1854-1938.*Raw cotton and wool imported by weight, 1854-1938.*Timber imported, 1857-1934.*Sawn softwood and pit props.*Food import prices, 1854-1938.*Raw material import prices, 1854-1938"),
     "change_tea": ("/change", r"(?s)Tea retained for home consumption.*432 million in 1938.*Tea drunk per person.*Ministry of Food.*Family Food.*Price of imported tea.*16.1d. in 1919.*Duty on tea.*Imperial Preference.*Commutation Act cuts the tea duty.*Tea rationed"),

@@ -2608,6 +2608,531 @@
     }
    ],
    "open_access": true
+  },
+  {
+   "id": "work_primary_keibek2017",
+   "series_like": "work_primary_est",
+   "region": "England and Wales",
+   "title": "Primary sector share of the labour force, England and Wales 1381-1851, Keibek (2017)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Keibek, S.A.J. (2017) The male occupational structure of England and Wales, 1600-1850. PhD thesis, University of Cambridge. doi:10.17863/CAM.8960",
+   "short": "Keibek 2017",
+   "url": "https://www.repository.cam.ac.uk/handle/1810/263608",
+   "points": [
+    {
+     "year": 1381,
+     "value": 77.5,
+     "low": 76,
+     "high": 79,
+     "midpoint": true,
+     "quote": "Table 22. Male occupational estimates for 1381 ... Smith (%) Broadberry et al (%) Clark (%) ... Agriculture 76-79 67 61 to 62",
+     "locator": "Table 22, printed p.164 (Smith's estimate, which Keibek uses)",
+     "note": "men only, from the 1377-81 poll tax (R. Smith); midpoint of the range"
+    },
+    {
+     "year": 1525,
+     "value": 69.5,
+     "low": 68,
+     "high": 71,
+     "midpoint": true,
+     "quote": "Table 23. Comparison between estimates for the male structure of England and Wales, c.1525 ... Broadberry et al (%) Keibek (%) Corroners' reports (%) ... Agriculture 65 71 68 ... An average of the figures from the reworked muster list and coroners' reports was used as a best estimate for c.1525.",
+     "locator": "Table 23 and text, printed p.166",
+     "note": "men only, c.1525: average of the 1522 muster lists as reworked by Keibek and coroners' reports"
+    },
+    {
+     "year": 1601,
+     "value": 57.8,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1601",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1621,
+     "value": 53.9,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1621",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1641,
+     "value": 49.2,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1641",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1661,
+     "value": 46.3,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1661",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1681,
+     "value": 43.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1681",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1701,
+     "value": 39.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1701",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1721,
+     "value": 40.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1721",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1741,
+     "value": 36.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1741",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1761,
+     "value": 37.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1761",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1781,
+     "value": 38.7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1781",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1801,
+     "value": 37.7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1801",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1817,
+     "value": 36.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1817",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1841,
+     "value": 28.8,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1841",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1851,
+     "value": 27.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Primary sector 57.8 53.9 49.2 46.3 43.0 39.6 40.0 36.5 37.5 38.7 37.7 36.6 28.8 27.5",
+     "locator": "Table 20, printed p.159, column 1851",
+     "note": "men and women aged 20 and over"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "work_secondary_keibek2017",
+   "series_like": "work_secondary_est",
+   "region": "England and Wales",
+   "title": "Secondary sector share of the labour force, England and Wales 1381-1851, Keibek (2017)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Keibek, S.A.J. (2017) The male occupational structure of England and Wales, 1600-1850. PhD thesis, University of Cambridge. doi:10.17863/CAM.8960",
+   "short": "Keibek 2017",
+   "url": "https://www.repository.cam.ac.uk/handle/1810/263608",
+   "points": [
+    {
+     "year": 1381,
+     "value": 16.0,
+     "low": 15,
+     "high": 17,
+     "midpoint": true,
+     "quote": "Table 22. Male occupational estimates for 1381 ... Smith (%) Broadberry et al (%) Clark (%) ... Industry 15-17 15",
+     "locator": "Table 22, printed p.164 (Smith's estimate, which Keibek uses)",
+     "note": "men only, from the 1377-81 poll tax (R. Smith); midpoint of the range"
+    },
+    {
+     "year": 1525,
+     "value": 20.5,
+     "low": 19,
+     "high": 22,
+     "midpoint": true,
+     "quote": "Table 23. Comparison between estimates for the male structure of England and Wales, c.1525 ... Broadberry et al (%) Keibek (%) Corroners' reports (%) ... Industry 21 19 22 ... An average of the figures from the reworked muster list and coroners' reports was used as a best estimate for c.1525.",
+     "locator": "Table 23 and text, printed p.166",
+     "note": "men only, c.1525: average of the 1522 muster lists as reworked by Keibek and coroners' reports"
+    },
+    {
+     "year": 1601,
+     "value": 33.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1601",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1621,
+     "value": 36.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1621",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1641,
+     "value": 40.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1641",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1661,
+     "value": 43.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1661",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1681,
+     "value": 45.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1681",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1701,
+     "value": 47.7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1701",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1721,
+     "value": 46.1,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1721",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1741,
+     "value": 46.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1741",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1761,
+     "value": 44.4,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1761",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1781,
+     "value": 42.4,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1781",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1801,
+     "value": 41.7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1801",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1817,
+     "value": 41.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1817",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1841,
+     "value": 41.2,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1841",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1851,
+     "value": 42.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Secondary sector 33.5 36.5 40.6 43.6 45.6 47.7 46.1 46.0 44.4 42.4 41.7 41.6 41.2 42.5",
+     "locator": "Table 20, printed p.159, column 1851",
+     "note": "men and women aged 20 and over"
+    }
+   ],
+   "licence": null,
+   "open_access": true
+  },
+  {
+   "id": "work_tertiary_keibek2017",
+   "series_like": "work_tertiary_est",
+   "region": "England and Wales",
+   "title": "Tertiary sector share of the labour force, England and Wales 1381-1851, Keibek (2017)",
+   "unit": "%",
+   "kind": "estimate",
+   "citation": "Keibek, S.A.J. (2017) The male occupational structure of England and Wales, 1600-1850. PhD thesis, University of Cambridge. doi:10.17863/CAM.8960",
+   "short": "Keibek 2017",
+   "url": "https://www.repository.cam.ac.uk/handle/1810/263608",
+   "points": [
+    {
+     "year": 1381,
+     "value": 6.5,
+     "low": 4,
+     "high": 9,
+     "midpoint": true,
+     "quote": "Table 22. Male occupational estimates for 1381 ... Smith (%) Broadberry et al (%) Clark (%) ... Services 4-9 18",
+     "locator": "Table 22, printed p.164 (Smith's estimate, which Keibek uses)",
+     "note": "men only, from the 1377-81 poll tax (R. Smith); midpoint of the range"
+    },
+    {
+     "year": 1525,
+     "value": 10.0,
+     "low": 10,
+     "high": 10,
+     "midpoint": true,
+     "quote": "Table 23. Comparison between estimates for the male structure of England and Wales, c.1525 ... Broadberry et al (%) Keibek (%) Corroners' reports (%) ... Services 14 10 10 ... An average of the figures from the reworked muster list and coroners' reports was used as a best estimate for c.1525.",
+     "locator": "Table 23 and text, printed p.166",
+     "note": "men only, c.1525: average of the 1522 muster lists as reworked by Keibek and coroners' reports"
+    },
+    {
+     "year": 1601,
+     "value": 8.7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1601",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1621,
+     "value": 9.6,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1621",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1641,
+     "value": 10.1,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1641",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1661,
+     "value": 10.1,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1661",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1681,
+     "value": 11.4,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1681",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1701,
+     "value": 12.7,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1701",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1721,
+     "value": 13.9,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1721",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1741,
+     "value": 17.4,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1741",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1761,
+     "value": 18.2,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1761",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1781,
+     "value": 18.9,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1781",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1801,
+     "value": 20.5,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1801",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1817,
+     "value": 21.8,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1817",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1841,
+     "value": 30.0,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1841",
+     "note": "men and women aged 20 and over"
+    },
+    {
+     "year": 1851,
+     "value": 29.9,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "quote": "Table 20. Combined (female and male) labour force shares by sub-sector (England and Wales, 1601-1851) ... Tertiary sector 8.7 9.6 10.1 10.1 11.4 12.7 13.9 17.4 18.2 18.9 20.5 21.8 30.0 29.9",
+     "locator": "Table 20, printed p.159, column 1851",
+     "note": "men and women aged 20 and over"
+    }
+   ],
+   "licence": null,
+   "open_access": true
   }
  ],
  "notes": "POPULATION, ENGLAND. Medieval estimates split into two camps. 'Low': Russell (1948) peak c.3.7m; Campbell 4.0m in 1290 and 4.25-4.5m in 1315; Overton & Campbell 4.0-4.5m; Broadberry et al. 4.75m (1290) and 4.81m (1348), which sits between the camps. 'High': Postan c.6m; Smith 'over 6 million' in 1300 (6-6.5m per Clark); Clark's wage-based model peaks at 5.98m in the 1310s; Wrigley 5.75m for England AND Wales c.1300. The 1377 poll-tax benchmark depends on the assumed share of children and the evasion rate: 2.23m (Russell), 2.49m (Broadberry 'best'), 3.22m (Postan). For 1086 the multiplier and omission rate matter: 1.11m (Russell) to 1.45-1.60m (Darby) to 1.87m (Harvey-style); Broadberry's back-projection gives 1.71m. For 1541-1801 Wrigley et al. (1997) is the standard reconstruction (England without Monmouthshire; it is about 7% below England and Wales). Wrigley's 1801 value for England is 8.66m; the 1801 census for England and Wales is 8.89m, so the series join is not exact. The 1541 value 2.83m is shared by Broadberry Table 6 and Wrigley. Clark's 1540s+ decadal figures (marked a) are Wrigley's and were left out of the Clark model.\nPOPULATION, IRELAND. All Irish figures are for the whole island. The existing pop_ie series covers the 26 counties, so these belong in a new island series or should be plotted with a note. Connell (1950) is high (2.8m in 1712, 4.8m in 1791). Daultrey, Dickson & O Grada (1981/82) are lower (2.0-2.3m in 1712, 4.4m in 1791) and became standard. Clarkson is lower still for 1687 (1.7m). Parker (2017, History Ireland, a magazine article by an independent researcher) argues for higher household sizes (4.62m in 1791, 2.4-2.9m in 1700-25). The 1821 census (6.8m) was revised to 7.2m by Lee. Medieval: Campbell 1.25-1.5m c.1290, against 0.7-1.4m (Gillespie & Connolly) and 0.72-1.0m (Clarke, Glasscock). Cullen's 1.4m for 1600 is thought implausibly high by Canny and by Mokyr & O Grada. The 1641 peak of 2.1m is cited by Campbell from Kennedy & Clarkson. Petty's 1672 figure of 1.1m is considered an underestimate.\nPOPULATION, SCOTLAND AND WALES. No open source with a 1690s Scottish estimate (hearth or poll tax) was found. The only numbers are: c.1290 0.75m (Campbell; 0.5-1.0m range of historians; around 1.0m favoured by Scottish historians), about 1.1m in 1707, 1.3m in 1751/5 and 1,265,380 in 1755 (Webster, NRS). Wales: 0.25m (Campbell) or 0.30m (Williams-Jones) c.1290, 0.6m in 1751/5.\nCOAL. Flinn's British output benchmarks, 1700 to 1830: 3.03, 5.31, 8.99 (1775), 15.29 and 30.99 Mt (the last is Church's 1830 figure). These come from the NIC/Fouquet dataset (OGL), whose values look like Flinn's long tons converted to tonnes. Before 1700, Nef (1932) gives 0.21m tons in the 1550s and 2.98m in the 1680s/1690. Hatcher (1993) revised Nef. The only open copy of Hatcher's numbers found was Munro's teaching slide (0.227 Mt in 1560, 2.64 Mt in 1700, labelled 'English'), so treat that one as weak. No open source was found for Pollard's (1980) higher 1750-1850 estimates or for Hatcher's own tables. Note that Nef's 1690 figure (2.98m tons) is almost the same as Flinn's 1700 figure.\nTOWNS. Definitions differ hugely, and the definition matters more than the scholar: 1300 ranges from 3-4% (towns of 10,000+: Clark, Malanima) to 9% (towns of 2,000+) and 15-20% (all towns: Campbell, Dyer). c.1700 ranges from 13% (10,000+, Malanima) to 30-33% (Glennie & Whyte) and 40% (Langton, wide definition). Plot the threshold with each model. HYDE 3.5 (CC BY-NC) is a coarse model: flat at 2% for the UK before 1700, and 0% for Ireland before 1700. It is far below every scholarly estimate and its NC licence may not suit the project. No open numbers were found for Wrigley's 1520-1801 series (5,000+ threshold) or for Law's 1801-1911 census-based series (E&W 33.8% in 1801, 78.9% in 1911 per a search snippet, unverified). Scotland and Ireland after c.1700 are not covered, apart from HYDE.\nWOODLAND. England's 1086 figure of about 15% (Rackham) agrees with the existing Forest Research value, so it adds no competing figure. Ireland: McCracken's 'at least one eighth' (12.5%) in 1600 is contested, and Teagasc notes that pollen evidence does not support it. Rackham's Civil Survey figure of 2.1% (1654-6) and the 'less than 2% by 1700' (Nelson & Walsh) imply that either the decline was very fast or McCracken was too high. Ireland 1920 1% and 1951 1.8% refer to the 26 counties. No open national figures were found for Scotland or Wales before 1900 beyond what Forest Research already has.\nMARKETS. Letters' Gazetteer gives cumulative counts of markets and fairs recorded in England by 1100, 1200, 1300, 1400 and 1516. These are not markets operating at those dates. Per-decade grants 1200-1516 are published only as a chart (Fig. 5), and Britnell's (1981) per-decade table is not open.\nLICENCES. Most points are individual published figures cited as facts with a citation (working papers, the CUHB excerpt, the History Ireland article, Munro's teaching material). The open-licence datasets are NIC/Fouquet (OGL v3.0, as recorded by OWID; the NIC page is now only on the Wayback Machine) and HYDE 3.5 (CC BY-NC 4.0). The UCD repository copy of Mokyr & O Grada says 'Some rights reserved' without naming a licence; its Table 1 was read from a scanned page image.\n"

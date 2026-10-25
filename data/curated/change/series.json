@@ -4165,5 +4165,176 @@
   "zero": true,
   "note": "The goods are raw cotton, wool and timber to 1952, cork and wood (division 24) and all textile fibres (26) from 1953, joined and with the breaks as in the note above. Raw cotton, wool and wood: 24.8% in 1854, 18.0% in 1913, 12.3% in 1938, 3.9% in 1974, 0.7% in 1999, 0.8% in 2024.",
   "hidden": true
+ },
+ {
+  "id": "work_primary_uk",
+  "theme": "Prosperity and work",
+  "title": "Working in farming, fishing and mining",
+  "region": "United Kingdom; Ireland; England and Wales (estimates)",
+  "unit": "%",
+  "unit_long": "% of people in work",
+  "label": "United Kingdom",
+  "sources": [
+   "ons_longterm_employment",
+   "ons_workforce_jobs",
+   "cso_cnnl1",
+   "est_work_keibek2017"
+  ],
+  "file": "work_primary_uk.csv",
+  "default": false,
+  "models": [
+   "work_primary_ie",
+   "work_primary_est"
+  ],
+  "note": "Share of people in work in farming, fishing, forestry and mining. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-1996. Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports). Mining counts with farming throughout. In 1601 about 58% of the adult labour force of England and Wales worked on the land or in mines, 27.5% in 1851; 14.3% of the UK's in 1920 and 1.2% in 2026. Ireland: 53.6% in 1926, 10.7% in 1996.",
+  "gap": 5,
+  "zero": true
+ },
+ {
+  "id": "work_primary_ie",
+  "theme": "Prosperity and work",
+  "title": "Working in farming, fishing and mining: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "%",
+  "unit_long": "% of people at work",
+  "label": "Ireland (census)",
+  "sources": [
+   "cso_cnnl1"
+  ],
+  "file": "work_primary_ie.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "work_primary_est",
+  "theme": "Prosperity and work",
+  "title": "Working in farming, fishing and mining: estimates",
+  "region": "England and Wales",
+  "unit": "%",
+  "unit_long": "% of the labour force",
+  "label": "England and Wales (Keibek)",
+  "sources": [
+   "est_work_keibek2017"
+  ],
+  "file": "work_primary_est.csv",
+  "default": false,
+  "hidden": true,
+  "style": "estimates",
+  "zero": true
+ },
+ {
+  "id": "work_secondary_uk",
+  "theme": "Prosperity and work",
+  "title": "Working in making and building",
+  "region": "United Kingdom; Ireland; England and Wales (estimates)",
+  "unit": "%",
+  "unit_long": "% of people in work",
+  "label": "United Kingdom",
+  "sources": [
+   "ons_longterm_employment",
+   "ons_workforce_jobs",
+   "cso_cnnl1",
+   "est_work_keibek2017"
+  ],
+  "file": "work_secondary_uk.csv",
+  "default": false,
+  "models": [
+   "work_secondary_ie",
+   "work_secondary_est"
+  ],
+  "note": "Share of people in work in manufacturing, construction and the utilities. United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-1996. Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports). Mining counts with farming throughout. Keibek puts making and building at 33.5% in 1601 and 47.7% in 1701, above farming and mining from the 1670s, before the factories. The UK's share peaked at 40.1% in 1966 and was 14.0% in 2026. Ireland: 12.8% in 1926, 26.6% in 1996.",
+  "gap": 5,
+  "zero": true
+ },
+ {
+  "id": "work_secondary_ie",
+  "theme": "Prosperity and work",
+  "title": "Working in making and building: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "%",
+  "unit_long": "% of people at work",
+  "label": "Ireland (census)",
+  "sources": [
+   "cso_cnnl1"
+  ],
+  "file": "work_secondary_ie.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "work_secondary_est",
+  "theme": "Prosperity and work",
+  "title": "Working in making and building: estimates",
+  "region": "England and Wales",
+  "unit": "%",
+  "unit_long": "% of the labour force",
+  "label": "England and Wales (Keibek)",
+  "sources": [
+   "est_work_keibek2017"
+  ],
+  "file": "work_secondary_est.csv",
+  "default": false,
+  "hidden": true,
+  "style": "estimates",
+  "zero": true
+ },
+ {
+  "id": "work_tertiary_uk",
+  "theme": "Prosperity and work",
+  "title": "Working in services",
+  "region": "United Kingdom; Ireland; England and Wales (estimates)",
+  "unit": "%",
+  "unit_long": "% of people in work",
+  "label": "United Kingdom",
+  "sources": [
+   "ons_longterm_employment",
+   "ons_workforce_jobs",
+   "cso_cnnl1",
+   "est_work_keibek2017"
+  ],
+  "file": "work_tertiary_uk.csv",
+  "default": false,
+  "models": [
+   "work_tertiary_ie",
+   "work_tertiary_est"
+  ],
+  "note": "Share of people in work in services (trade, transport, finance, public services and the rest). United Kingdom: the ONS's yearly shares 1920-1977 (from the Bank of England's Millennium of Macroeconomic Data; none for 1939-47), then workforce jobs by industry from 1978 (June each year), which differ from the earlier figures by at most 0.25 points over 1978-2016. Ireland (the state): the CSO's census counts 1926-1996. Dots: Keibek's estimates for England and Wales, men and women 1601-1851, and men only for 1381 (Smith's range from the poll tax) and c.1525 (between the muster lists and coroners' reports). Mining counts with farming throughout. Services grew almost without a break: 8.7% in 1601 and 29.9% in 1851 (England and Wales), 51.5% of UK workers in 1920 and 84.8% in 2026. Ireland: 33.5% in 1926, 62.7% in 1996.",
+  "gap": 5,
+  "zero": true
+ },
+ {
+  "id": "work_tertiary_ie",
+  "theme": "Prosperity and work",
+  "title": "Working in services: Ireland",
+  "region": "Ireland (the state)",
+  "unit": "%",
+  "unit_long": "% of people at work",
+  "label": "Ireland (census)",
+  "sources": [
+   "cso_cnnl1"
+  ],
+  "file": "work_tertiary_ie.csv",
+  "default": false,
+  "hidden": true,
+  "zero": true
+ },
+ {
+  "id": "work_tertiary_est",
+  "theme": "Prosperity and work",
+  "title": "Working in services: estimates",
+  "region": "England and Wales",
+  "unit": "%",
+  "unit_long": "% of the labour force",
+  "label": "England and Wales (Keibek)",
+  "sources": [
+   "est_work_keibek2017"
+  ],
+  "file": "work_tertiary_est.csv",
+  "default": false,
+  "hidden": true,
+  "style": "estimates",
+  "zero": true
  }
 ]

@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-25)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 241
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 250
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 69 (2026-10-25, after C5b2d4):
   252.9 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -357,10 +357,27 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       cotton, wool and wood 24.8%, 18.0%, 0.8%. Hosted copy version 69 (six changed files, 252.9 of 256 MiB). No new
       release: the database is unchanged since db-2026-10-24 (the graphs ship with the code).
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
-      books' pages; `estimates.json`).
-- [ ] C5c Occupations by sector (farming / making / services) 1379–today: OWID's farming share, ONS long-term
-      employment 1861–2018 and JOBS02 1978–, CSO CNNL1 (Ireland 1926–96), with Broadberry et al. 2015, Shaw-Taylor &
-      Wrigley 2014 and Keibek 2017 quoted per figure as estimate dots.
+      books' pages; `estimates.json`). Blocked (checked 2026-10-25): none of the three is on the Internet Archive,
+      not even as a lending copy, and Davis 1962 (Economic History Review) is behind JSTOR. Needs a library copy of
+      the pages, or another open source for 18th-century trade (as with C2d2b2).
+- [x] C5c1 (2026-10-25) Occupations by sector 1381-2026 (new `bidb/change_work.py`): three graphs, "Working in
+      farming, fishing and mining", "... making and building", "... services", mining with farming throughout (as
+      the ONS and Keibek count it). UK: ONS long-term trends Figure 2a (OGL, from the Bank of England's Millennium
+      dataset) 1920-1938 and 1948-1977, workforce jobs by SIC section (LMS series, June) 1978-2026; the two differ by
+      at most 0.25 points over 1978-2016. Ireland: CSO CNNL1 at each census 1926-1996 (mining moved from industry).
+      Dots: Keibek 2017 (open thesis, all rights reserved, quoted per figure in `estimates.json`): men and women
+      1601-1851 (Table 20), men only for 1381 (Smith's range) and c.1525 (muster lists and coroners' reports).
+      Results: primary 57.8% in 1601, 27.5% in 1851, 14.3% of UK workers in 1920, 1.2% in 2026; making and building
+      33.5% in 1601, 47.7% in 1701, UK peak 40.1% in 1966, 14.0% in 2026; services 8.7% in 1601, 51.5% in 1920, 84.8%
+      in 2026; Ireland primary 53.6% in 1926, 10.7% in 1996. Not used: OWID's farming share (its UK points before 1980
+      are Broadberry & Gardner's at rounded years, agriculture only); Shaw-Taylor, Sugden & You 2019 (both sexes
+      1710-1911: "not to be cited without the written permission of the authors"); Shaw-Taylor & Wrigley 2014 and
+      Broadberry et al. 2015 (not open; Keibek's tables 22-23 print Broadberry's 1381 and 1522 figures beside the
+      ones used).
+- [ ] C5c2 Fill 1852-1919 and carry Ireland on: the censuses of 1861-1911 for England and Wales, Scotland and
+      Ireland grouped into the same three sectors from the census reports (public domain, page images; or another open
+      table), Ireland after 1996 from the CSO's censuses or Labour Force Survey (CC BY 4.0), Northern Ireland from
+      NISRA; Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become available.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
       as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already

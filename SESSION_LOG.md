@@ -1213,3 +1213,29 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   quiz.json), 252.9 of 256 MiB; hosted files checked by SHA-256 against dist/; static page checks 22/22. No new
   release: the database is unchanged since db-2026-10-24.
 - Next: C5b3 (before 1800: Davis, Schumpeter, Mitchell quoted as estimate dots; needs the books' pages).
+
+## 2026-10-25 — C5b3 blocked; C5c1: occupations by sector 1381-2026
+- C5b3 (trade before 1800 from Davis 1962, Schumpeter 1960, Mitchell 1988): none of the books is on the Internet
+  Archive (searched by title and author, lending copies included) and Davis's article is behind JSTOR, so it stays
+  open as blocked, like C2d2b2.
+- New `bidb/change_work.py` (181 lines): three graphs in "Prosperity and work", the share of people in work in
+  farming, fishing and mining / making and building / services, mining with farming throughout.
+  - UK: ONS "Long-term trends in UK employment: 1861 to 2018" Figure 2a (OGL; from the BoE Millennium dataset)
+    1920-38 and 1948-77, then workforce jobs by SIC 2007 section from the LMS time series (JWR5-JWR9, JWS2, JWT8,
+    DYDC; the yearly figure is June) 1978-2026. Over 1978-2016 the two differ by at most 0.25 points (tested), so
+    they are joined without a break mark; 1939-47 dotted (`gap` 5).
+  - Ireland: CSO CNNL1 census counts 1926-1996, mining moved from "Industry" to the primary sector (0.1-1%).
+  - Dots: Keibek 2017 (Cambridge PhD, open PDF, all rights reserved; DOI 10.17863/CAM.8960, checked: a DOI first
+    written from memory was wrong and was corrected) quoted per figure in `estimates.json`: Table 20 (men and women
+    20+, England and Wales 1601-1851, printed p.159), Table 22 (1381, Smith's range, men) and Table 23 (c.1525, the
+    mean of Keibek's reworked muster lists and the coroners' reports, men). Test: every figure appears in its quote.
+- Not used: Shaw-Taylor, Sugden & You 2019 (both sexes 1710-1911; marked "not to be cited without the written
+  permission of the authors"); OWID's farming share before 1980 (Broadberry & Gardner benchmarks at rounded years,
+  agriculture only); Shaw-Taylor & Wrigley 2014 and Broadberry et al. 2015 (not open).
+- Results: farming, fishing and mining 57.8% in 1601, 27.5% in 1851, 14.3% of UK workers in 1920, 1.2% in 2026;
+  making and building 33.5% in 1601, 47.7% in 1701, UK peak 40.1% in 1966, 14.0% in 2026; services 8.7% in 1601,
+  29.9% in 1851, 51.5% in 1920, 84.8% in 2026. Ireland: primary 53.6% in 1926, 10.7% in 1996.
+- Sources `ons_longterm_employment`, `ons_workforce_jobs`, `cso_cnnl1`, `est_work_keibek2017`; DATA_LICENSE.md rows,
+  INTERFACE.md; tests 238 OK (7 new); ui_check `change_work` (new), `change_trade_joined`, `change_trade` pass;
+  screenshot checked (dots 1381-1851, UK line from 1920, Ireland from 1926). Hosted copy and release not updated.
+- Next: C5c2 (1861-1911 censuses by sector; Ireland after 1996) or C5d (prices and real wages: ONS RPI 1800-).

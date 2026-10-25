@@ -971,5 +971,52 @@
   "download_url": "https://dataverse.harvard.edu/api/access/datafile/13685146",
   "used": "UK exports of textile yarn and fabrics (65), coal (32), iron and steel (67) and machinery (71-77), and imports of cereals (04), sugar (06), coffee, tea and cocoa (07), wood (24) and textile fibres (26), as shares of all goods but non-monetary gold (97), 1962-2024; shares only, the values being in US dollars",
   "checked": "2026-10-25 (C5b2d3): licence read from the Dataverse API and the Atlas downloads page; the divisions of each year sum to the country's totals in sitc_country_year.csv; shares compared with the Annual Abstract's on 1962-1974 (machinery on divisions 71-77 within 0.6 points)"
+ },
+ "est_work_keibek2017": {
+  "short": "Keibek 2017",
+  "citation": "Keibek, S.A.J. (2017) The male occupational structure of England and Wales, 1600-1850. PhD thesis, University of Cambridge. doi:10.17863/CAM.8960",
+  "url": "https://www.repository.cam.ac.uk/handle/1810/263608",
+  "licence": "Published figures cited as facts (no open licence)",
+  "licence_url": "",
+  "licence_quote": "Except where otherwised noted, this item's license is described as All Rights Reserved",
+  "download_url": "https://www.repository.cam.ac.uk/bitstreams/a66fdd33-29e4-45b5-8678-be41b3475307/download",
+  "used": "Shares of the labour force by sector, England and Wales: 1381 and c.1525 (men), 1601-1851 (men and women) as estimate dots (see data/curated/change/estimates.json for the quote and page of each figure; roadmap C5c)",
+  "checked": "2026-10-25, thesis PDF downloaded (HTTP 200, 248 pages); tables 20, 22 and 23 read"
+ },
+ "ons_longterm_employment": {
+  "short": "ONS Long-term trends in UK employment, 1861 to 2018",
+  "publisher": "Office for National Statistics",
+  "citation": "Chiripanhura, B. and Wolf, N. (2019) Long-term trends in UK employment: 1861 to 2018. Office for National Statistics, Economic Review, April 2019 (Figure 2a; source: Bank of England, A Millennium of Macroeconomic Data).",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+  "url": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/compendium/economicreview/april2019/longtermtrendsinukemployment1861to2018",
+  "download_url": "https://www.ons.gov.uk/generator?uri=/economy/nationalaccounts/uksectoraccounts/compendium/economicreview/april2019/longtermtrendsinukemployment1861to2018/a6452817&format=csv",
+  "used": "UK shares of employment in the primary, secondary and tertiary sectors 1920-1938 and 1948-1977 (Figure 2a; roadmap C5c)",
+  "checked": "2026-10-25, figure CSV downloaded (HTTP 200)"
+ },
+ "ons_workforce_jobs": {
+  "short": "ONS workforce jobs by industry (JOBS02), UK 1978-2026",
+  "publisher": "Office for National Statistics",
+  "citation": "Office for National Statistics, Labour market statistics (LMS): UK workforce jobs, seasonally adjusted, by SIC 2007 section: JWR5 (A), JWR6 (B), JWR7 (C), JWR8 (D), JWR9 (E), JWS2 (F), JWT8 (G-T), DYDC (total); also published as JOBS02.",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+  "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/workforcejobsbyindustryjobs02",
+  "download_url": "https://www.ons.gov.uk/generator?format=csv&uri=/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/jwr5/lms (one per series)",
+  "used": "UK shares of workforce jobs in farming, fishing and mining (A-B), making and building (C-F) and services (G-T) 1978-2026, yearly figures (June) (roadmap C5c)",
+  "checked": "2026-10-25, eight time series CSVs downloaded (HTTP 200), release of 20 October 2026"
+ },
+ "cso_cnnl1": {
+  "short": "CSO CNNL1 population at work by industrial group, Ireland 1926-1996",
+  "publisher": "Central Statistics Office, Ireland",
+  "citation": "Central Statistics Office (Ireland), table CNNL1: Population at Work, census years 1926-1996, data.cso.ie.",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "licence_quote": "Statistical information on this website is accessible free of charge and licensed under Creative Commons Attribution (CC BY 4.0).",
+  "url": "https://data.cso.ie/table/CNNL1",
+  "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CNNL1/CSV/1.0/en",
+  "used": "Ireland (the state): shares of the population at work in agriculture and mining, other industry, and services at each census 1926-1996 (roadmap C5c)",
+  "checked": "2026-10-25, CSV downloaded (HTTP 200, 2.2 MB)"
  }
 }

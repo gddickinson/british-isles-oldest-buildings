@@ -449,7 +449,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       students and general labourers left out (5.8% of the occupied in 1891, 6.0% in 1901, 8.2% in 1911). Farming,
       fishing and mining 48.2%, 47.4%, 46.4%; making and building 21.8%, 21.8%, 21.3%; services 30.1%, 30.8%, 32.3%.
       Drawn on "Work by sector: Ireland" between breaks at 1891 and 1926.
-- [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
+- [x] C5d (2026-10-25) Prices and real wages (new `bidb/change_prices.py`, `bidb/change_wages.py`): graph "Prices since
+      1800" (ONS long-run RPI CDKO, on a log axis, new `log` option of the graphs: 13.5 in 1800, 8.4 in 1850, 9.2 in 1900,
+      25.3 in 1920, 15.8 in 1933, 1,589 in 2025); "Real wage rates, 1879-1912 and 1924-1938" (Board of Trade index of
+      the general course of wages, Sixteenth Abstract of Labour Statistics p. 82, both printed means recomputed, one
+      slip; Ministry of Labour weekly rates, Statistical Abstract No. 83 table 138; each divided by the RPI; +19% 1879-
+      1900, 95.7 in 1912 (1900 = 100); 117.2 in 1938 (1924 = 100)); "Average weekly earnings at 2025 prices" (ONS KAB9,
+      £740 in 2000, peak £819 in 2007, £728 in 2025).
+- [ ] C5d2 Wages before 1879 and 1913-1923, 1939-1999: Phelps Brown–Hopkins 1956 (Economica; JSTOR, not open) quoted
+      per figure as estimate dots, and Bowley's or the Ministry of Labour's later indexes if their pages are found
+      (the Seventeenth Abstract, 1916, `op1256333-1001`, may carry the 1879 index to 1914; British Labour Statistics:
+      Historical Abstract 1886-1968 is a restricted lending copy).
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
       as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already
       on the map, banks (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual

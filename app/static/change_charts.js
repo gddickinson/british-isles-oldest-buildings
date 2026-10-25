@@ -97,15 +97,18 @@ const ChangeCharts = (() => {
     }
     const vals = lines.flatMap((l) => l.pts.flatMap((q) => [q[1], q[2], q[3]])).filter((v) => v != null);
     let lo = Math.min(...vals), hi = Math.max(...vals);
-    if (s.zero !== false && lo > 0) lo = 0;                  // counts and amounts start from zero
+    const logY = s.log && lo > 0;                            // prices over centuries: equal steps are equal ratios
+    if (s.zero !== false && lo > 0 && !logY) lo = 0;         // counts and amounts start from zero
     if (hi === lo) hi = lo + 1;
-    const pad = (hi - lo) * 0.06;
-    const y = (v) => PAD_T + (1 - (v - lo) / (hi - lo + pad)) * (H - PAD_T - PAD_B);
+    const f = logY ? Math.log10 : (v) => v;
+    const pad = (f(hi) - f(lo)) * 0.06;
+    const y = (v) => PAD_T + (1 - (f(v) - f(lo)) / (f(hi) - f(lo) + pad)) * (H - PAD_T - PAD_B);
 
     // recessive frame: baseline and the top value
     el("line", { x1: PAD_L, x2: W - PAD_R, y1: H - PAD_B, y2: H - PAD_B, class: "cc-axis" }, svg);
     el("text", { x: PAD_L + 2, y: PAD_T + 8, class: "cc-tick" }, svg).textContent = fmt(hi, "");
     if (lo !== 0) el("text", { x: PAD_L + 2, y: H - PAD_B - 3, class: "cc-tick" }, svg).textContent = fmt(lo, "");
+    if (logY) el("text", { x: W - PAD_R - 2, y: PAD_T + 8, class: "cc-tick", "text-anchor": "end" }, svg).textContent = "log scale";
     ticks(from, to).forEach((t) => {
       el("line", { x1: x(t), x2: x(t), y1: H - PAD_B, y2: H - PAD_B + 3, class: "cc-axis" }, svg);
       el("text", { x: x(t), y: H - 2, class: "cc-tick", "text-anchor": "middle" }, svg).textContent = t < 0 ? `${-t} BC` : t;

@@ -3,8 +3,9 @@
 Curated inputs in `data/curated/change/`:
     sources.json   {id: {short, publisher, citation, licence, licence_url, url, download_url, checked, used}}
     series.json    [{id, title, theme, region, unit, unit_long, sources: [ids], note, modelled, default,
-                     gap, zero, breaks, file}]     file = data/<file>.csv with columns year,value[,low,high]
+                     gap, zero, log, breaks, file}]  file = data/<file>.csv with columns year,value[,low,high]
                                    breaks = [[first year on a new definition, text]]: marked on the graph
+                                   log = true: a logarithmic value axis (prices over centuries)
     events.json    [{year, end, title, text, theme, citation}]   (or sources: [ids])
 
     python -m bidb.change_series     check them (every series and event cites a source with a licence) and

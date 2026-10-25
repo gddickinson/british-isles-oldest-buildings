@@ -1383,3 +1383,15 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 283 OK (7 new); ui_check `change_work_nations`, `change_work` pass; screenshot of the Ireland graph checked.
   Hosted copy and release not updated.
 - Next: C5d (prices and real wages).
+
+## 2026-10-25 — C5d: prices since 1800 and real wages
+- New `bidb/change_prices.py`: ONS CDKO (long-run RPI 1800-2025, OGL) → "Prices since 1800", drawn on a new log axis
+  (`log: true` in series.json; `change_charts.js` draws log10 and labels "log scale").
+- New `bidb/change_wages.py`: real wage rates from two indexes read from page images, the Board of Trade's 1879-1912
+  (Sixteenth Abstract of Labour Statistics, Cd. 7131, p. 82; both printed means recomputed; 1911's mean without
+  agriculture printed 99.83 for 99.80, `KNOWN`) and the Ministry of Labour's weekly rates 1924-1938 (Statistical
+  Abstract No. 83, table 138, quarterly, averaged), each over the RPI; and ONS AWE KAB9 2000-2025 at 2025 prices.
+  British Labour Statistics: Historical Abstract (1971) is only a restricted lending copy; Phelps Brown–Hopkins is on
+  JSTOR: left as C5d2.
+- Sources `ons_cdko`, `bot_labour_abstract_16`, `stat_abstract_wages_uk`, `ons_kab9`; DATA_LICENSE.md, INTERFACE.md.
+  Tests 289 OK (6 new); screenshots of both graphs checked. Hosted copy and release not updated.

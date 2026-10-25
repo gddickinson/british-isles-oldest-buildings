@@ -1107,5 +1107,51 @@
   "url": "https://archive.org/details/op1256115-1001",
   "used": "Ireland at the census of 1911, the four provinces summed: Table XIX (data/curated/change/data/work_census_ir_1911.csv; every class and sub-order checked, the provinces adding to 4,390,219 persons) and the occupation lines of every sub-order that mixes sectors (work_census_ir_lines.csv), each checked against its province's Table XIX; grouped as Scotland's census lines: every dealer in services, lines joining makers and dealers shared out as Scotland's in 1901, students and general labourers left out (roadmap C5c2c2c4)",
   "checked": "2026-10-25, page images read (Leinster n1421-n1436, Munster n1303-n1318, Ulster n1388-n1405, Connaught n777-n788)"
+ },
+ "ons_cdko": {
+  "short": "ONS, Retail Prices Index: long run series 1800-2025 (CDKO)",
+  "publisher": "Office for National Statistics",
+  "citation": "Office for National Statistics, CDKO: Retail Prices Index: Long run series: 1800 to 2024: Jan 1974=100, dataset MM23 (Consumer price inflation), release of 21 October 2026.",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+  "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/cdko/mm23",
+  "download_url": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/inflationandpriceindices/timeseries/cdko/mm23",
+  "used": "Prices since 1800 (yearly values, January 1974 = 100), and the deflator of the real wage graphs (roadmap C5d)",
+  "checked": "2026-10-25, CSV downloaded (1800-2025 yearly, monthly to September 2026)"
+ },
+ "bot_labour_abstract_16": {
+  "short": "Board of Trade, Sixteenth Abstract of Labour Statistics (Cd. 7131): index of wages 1879-1912",
+  "publisher": "Board of Trade, Labour Department (HMSO)",
+  "citation": "Board of Trade (Labour Department), Sixteenth Abstract of Labour Statistics of the United Kingdom. Cd. 7131. London: HMSO, 1914. Index numbers showing general course of wages in the United Kingdom, 1879-1912 (wages in 1900 = 100), p. 82. Page images: Internet Archive, op1256492-1001 (leaf 107).",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/op1256492-1001",
+  "used": "Real wage rates 1879-1912: the unweighted mean of the five groups divided by the ONS long-run RPI, read from the page image (data/curated/change/data/wages_bot_1879_1912.csv; both printed means recomputed, one slip of 0.03 kept as printed) (roadmap C5d2)",
+  "checked": "2026-10-25, page image read (leaf 107)"
+ },
+ "stat_abstract_wages_uk": {
+  "short": "Statistical Abstract No. 83: index of weekly rates of wages 1924-1938",
+  "publisher": "Board of Trade (HMSO); figures of the Ministry of Labour",
+  "citation": "Statistical Abstract for the United Kingdom, No. 83 (1924-1938). London: HMSO, 1940. Table 138, Index numbers showing the general course of weekly rates of wages (average for 1924 = 100), by quarter, p. 155. Page images: Internet Archive, annual-abstract-of-statistics-gb_1934-1938_83 (leaf 176).",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/annual-abstract-of-statistics-gb_1934-1938_83",
+  "used": "Real wage rates 1924-1938: the mean of each year's four quarters divided by the ONS long-run RPI (data/curated/change/data/wages_mol_1924_1938.csv) (roadmap C5d2)",
+  "checked": "2026-10-25, page image read (leaf 176)"
+ },
+ "ons_kab9": {
+  "short": "ONS, Average Weekly Earnings, whole economy, total pay (KAB9)",
+  "publisher": "Office for National Statistics",
+  "citation": "Office for National Statistics, KAB9: AWE: Whole Economy Level (£): Seasonally Adjusted Total Pay Excluding Arrears, dataset LMS (Labour market statistics).",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+  "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kab9/lms",
+  "download_url": "https://www.ons.gov.uk/generator?format=csv&uri=/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kab9/lms",
+  "used": "Average weekly earnings 2000-2025 at 2025 prices (deflated by CDKO) (roadmap C5d2)",
+  "checked": "2026-10-25, CSV downloaded"
  }
 }

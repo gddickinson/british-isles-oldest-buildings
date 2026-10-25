@@ -4617,5 +4617,69 @@
   "default": false,
   "note": "Average weekly earnings, whole economy, total pay (ONS series KAB9), yearly, at 2025 prices (divided by the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), so the fall since 2007 is larger here than on those measures. £313 a week in 2000 was £740 at 2025 prices; earnings peaked at £819 in 2007, fell to £711 in 2023 and were £728 in 2025.",
   "zero": false
+ },
+ {
+  "id": "shipping_reg_total_uk",
+  "theme": "Industry and energy",
+  "title": "Merchant fleet registered in the UK, 1884-1938",
+  "region": "United Kingdom",
+  "unit": "m t",
+  "unit_long": "million net tons",
+  "label": "All ships",
+  "sources": [
+   "stat_abstract_shipping_uk"
+  ],
+  "file": "shipping_reg_total_uk.csv",
+  "default": false,
+  "models": [
+   "shipping_reg_steam_uk",
+   "shipping_reg_sail_uk"
+  ],
+  "note": "Merchant ships registered in the United Kingdom (with the Channel Islands and the Isle of Man) at the end of each year, net tons, from the Statistical Abstract (Nos. 46, 59, 70, 83): steam, motor (shown apart from 1924, with steam before) and sailing. Steam overtook sail in 1884. The fleet grew from 7.4 million tons in 1884 to 12.4 million in 1914, lost 2.3 million in the First World War (to 1918), regained its size by 1922 and was 10.7 million in 1938; sail fell from 3.5 to 0.4 million. From 1923 ships registered in the Irish Free State are left out; steamers' net tonnage rose slightly in 1914 when the Merchant Shipping Act 1907 came fully into force."
+ },
+ {
+  "id": "shipping_reg_steam_uk",
+  "theme": "Industry and energy",
+  "title": "Merchant fleet: steam and motor",
+  "region": "United Kingdom",
+  "unit": "m t",
+  "unit_long": "million net tons",
+  "label": "Steam and motor",
+  "sources": [
+   "stat_abstract_shipping_uk"
+  ],
+  "file": "shipping_reg_steam_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "shipping_reg_sail_uk",
+  "theme": "Industry and energy",
+  "title": "Merchant fleet: sail",
+  "region": "United Kingdom",
+  "unit": "m t",
+  "unit_long": "million net tons",
+  "label": "Sail",
+  "sources": [
+   "stat_abstract_shipping_uk"
+  ],
+  "file": "shipping_reg_sail_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "shipping_built_uk",
+  "theme": "Industry and energy",
+  "title": "Merchant ships built in the UK, 1897-1938",
+  "region": "United Kingdom",
+  "unit": "k t",
+  "unit_long": "thousand net tons",
+  "label": "Ships built",
+  "sources": [
+   "stat_abstract_shipping_uk"
+  ],
+  "file": "shipping_built_uk.csv",
+  "default": false,
+  "note": "Merchant ships built in the United Kingdom each year, thousand net tons, ships for foreign owners included, from the Statistical Abstract (Nos. 59, 70, 83). 1200 thousand tons in 1913; 410 in 1915; 1278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before)."
  }
 ]

@@ -1395,3 +1395,12 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   JSTOR: left as C5d2.
 - Sources `ons_cdko`, `bot_labour_abstract_16`, `stat_abstract_wages_uk`, `ons_kab9`; DATA_LICENSE.md, INTERFACE.md.
   Tests 289 OK (6 new); screenshots of both graphs checked. Hosted copy and release not updated.
+
+## 2026-10-25 — C5e1: shipping registered and built, 1884-1938
+- New `bidb/change_shipping.py`: merchant fleet registered (Statistical Abstract No. 46 table 60, No. 59 table 70,
+  No. 70 table 191, No. 83 table 269) and ships built (No. 59 table 71, No. 70 table 192, No. 83 table 270), read
+  from page images; every row's parts add to its printed total, and the overlapping years of consecutive editions
+  agree. Ships built before 1897 left out (the earlier table excludes ships for foreigners). Source
+  `stat_abstract_shipping_uk`. The older multi-volume scans' page views did not match their OCR leaf numbers, so
+  shipping before 1884 is left to C5e2 with steam power, banks and Irish patents.
+- Tests 292 OK (3 new).

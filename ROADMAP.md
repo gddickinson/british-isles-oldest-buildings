@@ -460,10 +460,15 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       per figure as estimate dots, and Bowley's or the Ministry of Labour's later indexes if their pages are found
       (the Seventeenth Abstract, 1916, `op1256333-1001`, may carry the 1879 index to 1914; British Labour Statistics:
       Historical Abstract 1886-1968 is a restricted lending copy).
-- [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
-      as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already
-      on the map, banks (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual
-      reports 2002–, quote figures) and 1916–94 grants (Patent Office annual reports, if found) left from C5a.
+- [x] C5e1 (2026-10-25; C5e split) Shipping (new `bidb/change_shipping.py`): "Merchant fleet registered in the UK,
+      1884-1938" (all, steam and motor, sail; Statistical Abstract Nos. 46, 59, 70, 83, every row's parts checked, the
+      editions' overlaps equal): 7.4 million net tons in 1884, 12.4 in 1914, 10.1 in 1918, 10.7 in 1938; sail 3.5 → 0.4;
+      "Merchant ships built in the UK, 1897-1938" (1,200 thousand tons in 1913, 84 in 1933).
+- [ ] C5e2 The rest of C5e: shipping before 1884 (the multi-volume scans Nos. 8-13, 23-26, 31-33: their page views
+      did not match the OCR leaf numbers; the registered tons of the old measurement need a break) and since 1938 (DfT
+      FLE0101 1997-); steam power as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks
+      (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual reports 2002-, quote
+      figures) and 1916-94 grants.
 - [ ] C6 Innovations: inventions and firsts made in the isles (Wikidata inventor and place, researched list with
       sources), on the map and the slider, linked to the buildings and places where they were made or used
       (mills, works, mines, engine houses, exchanges).

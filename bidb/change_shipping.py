@@ -3,10 +3,10 @@ Channel Islands and the Isle of Man) at the end of each year, 1884-1938, and mer
 Kingdom, 1897-1938, net tons, read from the page images of the Statistical Abstract for the United Kingdom (public
 domain; Internet Archive, collection pub_annual-abstract-of-statistics-gb):
 
-- registered (`data/curated/change/data/shipping_registered_uk.csv`): No. 46 (1884-1896, table 60, p. 177), No. 59
+- registered (`data/curated/change/data/shipping_registered_abstract_uk.csv`): No. 46 (1884-1896, table 60, p. 177), No. 59
   (1897-1910, table 70, p. 312), No. 70 (1911-1923, table 191, p. 274), No. 83 (1924-1938, table 269, p. 360, in
   thousand tons); sailing, steam and (from 1924) motor;
-- built (`shipping_built_uk.csv`): No. 59 (table 71, p. 312), No. 70 (table 192, p. 275), No. 83 (table 270, p. 361):
+- built (`shipping_built_abstract_uk.csv`): No. 59 (table 71, p. 312), No. 70 (table 192, p. 275), No. 83 (table 270, p. 361):
   all merchant vessels built, those for foreign owners included (earlier editions leave those out, so the line starts
   in 1897).
 
@@ -23,7 +23,7 @@ import sys
 from .change_firms import DATA
 from .change_registers import _csv, _row
 
-FILES = {"registered": DATA / "shipping_registered_uk.csv", "built": DATA / "shipping_built_uk.csv"}
+FILES = {"registered": DATA / "shipping_registered_abstract_uk.csv", "built": DATA / "shipping_built_abstract_uk.csv"}
 KINDS = ("steam", "motor", "sailing")
 SOURCE = "stat_abstract_shipping_uk"
 

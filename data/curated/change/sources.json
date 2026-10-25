@@ -1162,7 +1162,7 @@
   "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
   "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
-  "used": "Merchant fleet registered 1884-1938 and ships built 1897-1938, net tons, read from the page images (data/curated/change/data/shipping_registered_uk.csv, shipping_built_uk.csv; every row's parts checked against its total, the editions' overlapping years equal) (roadmap C5e1)",
+  "used": "Merchant fleet registered 1884-1938 and ships built 1897-1938, net tons, read from the page images (data/curated/change/data/shipping_registered_abstract_uk.csv, shipping_built_abstract_uk.csv; every row's parts checked against its total, the editions' overlapping years equal) (roadmap C5e1)",
   "checked": "2026-10-25, page images read"
  }
 }

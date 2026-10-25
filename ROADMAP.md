@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-25)
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 250
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 69 (2026-10-25, after C5b2d4):
   252.9 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
@@ -402,10 +402,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       1881 within 1.3 points of the 1911 tables' (18.2/41.4/40.5 against 18.2/42.6/39.2), his 1851 within 0.4 points of
       Keibek's farming and mining and 1.7 of services; only 1861 and 1871 drawn: farming, fishing and mining 24.1%,
       20.5%; making and building 41.3%, 41.2%; services 34.6%, 38.3%.
-- [ ] C5c2c Scotland and Ireland 1861-1911 the same way (Booth 1886 has Scotland and Ireland 1841-1881 on the same
-      classification: Appendix B (2) p. 418, B (3) p. 422, same item; Irish census returns 1911 by province on the Internet
-      Archive, `op1256115-1001` etc.); Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become
-      available.
+- [x] C5c2c1 (2026-10-25; C5c2c split) Scotland and Ireland 1841-1881 from Booth 1886, Appendices B (2) pp. 418-419
+      and B (3) pp. 422-423 (same item, public domain; `work_booth_sc.csv`, `work_booth_ir.csv`, every subtotal adds
+      up), grouped as England and Wales; new `bidb/change_work_nations.py`: two graphs, "Work by sector: Scotland,
+      1841-1881" and "Work by sector: Ireland, 1841-2022" (three lines each; Ireland the whole island to 1881, then the
+      state's census shares 1926-2022 after a break). Scotland: farming, fishing and mining 31.1% in 1841, 23.1% in
+      1881; services 26.1%, 32.7%. Ireland: 54.1% and 46.4%; services 15.1% and 33.5% (army and navy counted in
+      Ireland only from 1861). Left out: general labour etc., 5-13% in Scotland, 5-10% in Ireland, where most general
+      labourers worked on the land (stated in the note).
+- [ ] C5c2c2 Scotland and Ireland 1891-1911 from their census reports (Scotland's 1911 report and Ireland's General
+      Reports on the Internet Archive, e.g. `op1256115-1001`), regrouped to the same sectors; Broadberry et al. and
+      Shaw-Taylor & Wrigley figures if their pages become available.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
       as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already

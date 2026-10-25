@@ -12,6 +12,7 @@ farming, as the ONS and Keibek count it).
 - Keibek 2017 (quoted per figure in estimates.json): England and Wales 1601-1851, men and women (Table 20), and the
   male estimates for 1381 and c.1525 (Tables 22-23), drawn as estimate dots; with them the censuses of England and
   Wales, 1861 and 1871 as regrouped by Booth (1886) and 1881-1911 from the 1911 Summary Tables (bidb.change_work_ew).
+- Scotland and Ireland 1841-1881 from Booth, Ireland joined to the state's census shares: bidb.change_work_nations.
 
     python -m bidb.change_work   → data/curated/change/data/work_*.csv + series.json entries
                                    (then python -m bidb.change_series)
@@ -21,7 +22,7 @@ import json
 import re
 import time
 
-from . import change_work_ew
+from . import change_work_ew, change_work_nations
 from .change_firms import DATA
 from .change_registers import _csv, _download, _row
 
@@ -199,7 +200,7 @@ def _facts(sec, uk, ie, est):
             f"{ie[1926][i]:.1f}% in 1926, {ie[1996][i]:.1f}% in 1996, {ie[max(ie)][i]:.1f}% in {max(ie)}.")
 
 
-def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print, booth_diff=0.0):
+def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print, booth_diff=0.0, extra=()):
     rows = []
     for i, sec in enumerate(SECTORS):
         _csv(f"work_{sec}_uk", [(y, v[i]) for y, v in sorted(uk.items())])
@@ -225,7 +226,7 @@ def write(uk, ie, est, diff, c0, c1, ie_diff=0.0, log=print, booth_diff=0.0):
         rows += [main, ire, dots]
     path = DATA.parent / "series.json"
     keep = [s for s in json.loads(path.read_text()) if not s["id"].startswith("work_")]
-    path.write_text(json.dumps(keep + rows, ensure_ascii=False, indent=1))
+    path.write_text(json.dumps(keep + rows + list(extra), ensure_ascii=False, indent=1))
     log(f"graphs: 3 ({len(rows)} series); UK {min(uk)}-{max(uk)}, Ireland {min(ie)}-{max(ie)}; Figure 2a and "
         f"workforce jobs differ by at most {diff:.2f} points over {c0}-{c1}")
 
@@ -260,7 +261,8 @@ def run(log=print):
     if bad:
         raise ValueError("; ".join(bad))
     est = with_census(estimates(), [change_work_ew.booth_points(booth), change_work_ew.points(census)])
-    write(joined(fig, now), ie, est, diff, c0, c1, ie_diff, log, change_work_ew.compare_booth(booth, census))
+    write(joined(fig, now), ie, est, diff, c0, c1, ie_diff, log, change_work_ew.compare_booth(booth, census),
+          change_work_nations.rows(ie, log))
     log(f"Ireland: CNA26 and F7040 differ by at most {ie_diff:.2f} points in {both}")
 
 

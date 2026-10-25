@@ -1301,3 +1301,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Booth), `change_trade_joined` pass; screenshot checked. Hosted copy and release not updated.
 - Lead noted in the roadmap: Booth's Appendix B (2) and (3) give Scotland and Ireland 1841-1881 the same way (C5c2c).
 - Next: C5c2c (Scotland and Ireland 1841-1911: Booth to 1881, then the census reports) or C5d (prices and real wages).
+
+## 2026-10-25 — C5c2c split; C5c2c1: Scotland and Ireland 1841-1881 from Booth
+- Booth (1886) Appendix B (2) Scotland (pp. 418-419, page images n431-432) and B (3) Ireland (pp. 422-423, n435-436),
+  read into `work_booth_sc.csv` and `work_booth_ir.csv` (210 figures each); `check_booth` passes for every year.
+- New `bidb/change_work_nations.py` (100 lines), called from change_work.run (`write(..., extra=)`): graphs "Work by
+  sector: Scotland, 1841-1881" and "Work by sector: Ireland, 1841-2022", the three sectors as lines (`gap` 10; Ireland
+  breaks at 1926: the whole island to 1881, the 26 counties from 1926, from the CSO tables already read).
+- Results: Scotland farming, fishing and mining 31.1% (1841), 30.1, 27.8, 26.0, 23.1% (1881); making and building
+  42.7-44.5%; services 26.1% to 32.7%. Ireland 54.1, 54.1, 48.3, 46.2, 46.4%; making and building 30.8% to 20.1%;
+  services 15.1% to 33.5%. Left out (general labour, independent, indefinite): Scotland 5.5-13.4%, Ireland 4.9-10.2%.
+- Tests 258 OK (6 new); ui_check `change_work`, `change_work_nations` (new), `change_trade_joined` pass; screenshots
+  of both graphs checked. The app on port 5050 had stopped during the session (screenshots taken with a temporary
+  server). Hosted copy and release not updated.
+- Next: C5c2c2 (Scotland and Ireland 1891-1911 from the census reports) or C5d (prices and real wages).

@@ -434,10 +434,22 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       between two breaks (1891: census lines after Booth; 1901: the 1911 classification). Booth's 1881 cannot be
       checked against it: the 1891 report compares 1881 only by class. Scotland's 1901 report occupation volumes (II,
       III: `op1254658-1001`, `op1254783-1001`) are empty stubs on the Internet Archive.
-- [ ] C5c2c2c Ireland 1891-1911: the General Reports of 1891 (`op1252985-1001`) and 1901 (`op1254515-1001`); for 1911
-      (no General Report on the Internet Archive) the four province volumes' summary tables (`op1256115`-`op1256118`),
-      summed; the Irish classes regrouped to the same sectors, checked against Booth's 1881. Broadberry et al. and
-      Shaw-Taylor & Wrigley figures if their pages become available.
+- [ ] C5c2c2c Ireland 1891-1911, to be read in parts (found 2026-10-25). Ireland kept the six-class classification
+      of 1881 to 1911, with "working and dealing" sub-orders, so dealers need the line tables, as Scotland's 1891:
+      - C5c2c2c1 1891 and 1901 sub-orders: 1901 General Report (`op1254515-1001`) Table 91, pp. 398-401 (images
+        n443-n446, 1,200 px wide but legible): classes, orders and sub-orders, persons, males and females, 1891 and
+        1901 side by side (occupied 2,145,729 and 1,963,817 "of specified occupations and conditions").
+      - C5c2c2c2 1901 lines: the same report's Table 20 (males, from p. 117, image n162) and the females' table after
+        it, all occupations by age, religion and education (only the Total column needed); dealer lines picked out
+        per sub-order and checked against Table 91.
+      - C5c2c2c3 1891 lines: the 1891 General Report (`op1252985-1001`), its table of occupations for Ireland.
+      - C5c2c2c4 1911: no General Report on the Internet Archive; the four province volumes (`op1256115`-`op1256118`,
+        Leinster, Munster, Ulster, Connaught) each end with the province's occupation table, to be summed and checked
+        against the published total for Ireland.
+      Watch: in 1891 class I holds the students (93,280 "literary and scientific persons", 8,378 in 1901), class IV
+      counts farmers' relatives, order 22 holds the general labourers (left out, as Booth); the 1891-1901 changes of
+      practice need a break or a note. Broadberry et al. and Shaw-Taylor & Wrigley figures if their pages become
+      available.
 - [ ] C5d Prices and real wages: ONS RPI CDKO 1800– (OGL), Phelps Brown–Hopkins 1956 quoted per figure before it.
 - [ ] C5e Shipping tonnage (Statistical Abstract 1840–1938, DfT FLE0101 1997–, Mitchell quoted from 1788), steam power
       as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011) beside the engine houses and mills already

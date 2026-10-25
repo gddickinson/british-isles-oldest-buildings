@@ -1345,3 +1345,9 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Source `census_sc_1891`, DATA_LICENSE.md row, INTERFACE.md. Tests 271 OK (5 new); ui_check `change_work_nations`,
   `change_work` pass; screenshot checked. Hosted copy and release not updated.
 - Next: C5c2c2c (Ireland 1891-1911).
+
+## 2026-10-25 — C5c2c2c scoped (Ireland 1891-1911), not started
+- Ireland kept the 1881 classification to 1911, so dealers need the line tables. Found: the 1901 General Report's
+  Table 91 (1891 and 1901 by sub-order, pp. 398-401) and Table 20 (all lines, males from p. 117, then females); the
+  1891 General Report; for 1911 only the four province volumes. Split in the roadmap into C5c2c2c1-c4 with page
+  locations and the definitional traps (students in class I in 1891, farmers' relatives, general labourers).

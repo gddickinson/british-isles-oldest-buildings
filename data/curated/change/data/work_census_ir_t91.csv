@@ -1,0 +1,113 @@
+level,code,name,p1891,p1901,m1891,m1901,f1891,f1901,image,page
+total,all,All persons,4704750,4458775,2318953,2200040,2385797,2258735,n443,398
+total,specified,Persons of specified occupations and conditions,2145729,1963817,1504319,1413943,641410,549874,n443,398
+class,I,Professional class,214243,131035,138971,98361,75272,32674,n443,398
+class,II,Domestic class,255144,219418,34490,26087,220654,193331,n443,398
+class,III,Commercial class,83173,97889,81012,92863,2161,5026,n443,398
+class,IV,Agricultural class,936759,876062,845691,790475,91068,85587,n443,398
+class,V,Industrial class,656410,639413,404155,406157,252255,233256,n443,398
+class,VI,Indefinite and non-productive class,2559021,2494958,814634,786097,1744387,1708861,n443,398
+order,1,General or local government,29684,34325,27145,30312,2539,4013,n443,398
+order,2,Defence of the country,37674,32468,37674,32468,0,0,n443,398
+order,3,Professional occupations,146885,64242,74152,35581,72733,28661,n443,398
+order,4,Domestic offices or services,255144,219418,34490,26087,220654,193331,n443,398
+order,5,Commercial occupations,29189,39323,27580,34794,1609,4529,n443,398
+order,6,"Conveyance of men, goods and messages",53984,58566,53432,58069,552,497,n443,398
+order,7,Agriculture,915798,855252,824858,769790,90940,85462,n443,398
+order,8,About animals,20961,20810,20833,20685,128,125,n443,398
+order,9,"Books, prints and maps",7722,8122,6146,6346,1576,1776,n443,398
+order,10,Machines and implements,8259,10830,8142,10785,117,45,n443,398
+order,11,"Houses, furniture and decorations",51762,58844,50865,57896,897,948,n443,398
+order,12,Carriages and harness,5780,6733,5743,6687,37,46,n443,398
+order,13,Ships and boats,4284,6236,4282,6232,2,4,n443,398
+order,14,Chemicals and compounds,1787,2249,1659,2136,128,113,n443,398
+order,15,Tobacco and pipes,1506,1922,900,860,606,1062,n443,398
+order,16,Food and lodgings,70502,68496,52218,51751,18284,16745,n443,398
+order,17,Textile fabrics,129884,109588,46369,37505,83515,72083,n443,398
+order,18,Dress,153429,137804,37695,31960,115734,105844,n443,398
+order,19,Various animal substances,2728,1886,2083,1474,645,412,n443,398
+order,20,Various vegetable substances,11659,10376,9340,7826,2319,2550,n443,398
+order,21,Various mineral substances,40676,41287,39927,40670,749,617,n443,398
+order,22,General or unspecified commodities,165332,174377,137836,143443,27496,30934,n443,398
+order,23,Refuse matters,1100,663,950,586,150,77,n443,398
+order,24,Persons not producing,2559021,2494958,814634,786097,1744387,1708861,n443,398
+sub_order,1.1,National government,10516,16502,8689,13762,1827,2740,n443,398
+sub_order,1.2,Local government,19152,17809,18440,16536,712,1273,n443,398
+sub_order,1.3,East India and colonial service,16,14,16,14,0,0,n443,398
+sub_order,2.1,Army (at home),34760,29118,34760,29118,0,0,n443,398
+sub_order,2.2,Navy (ashore or in port),2914,3350,2914,3350,0,0,n443,398
+sub_order,3.1,Clerical profession,16165,18407,9162,9982,7003,8425,n443,398
+sub_order,3.2,Legal profession,4642,4823,4621,4785,21,38,n443,398
+sub_order,3.3,Medical profession,5891,5933,4170,3840,1721,2093,n443,398
+sub_order,3.4,Teachers,21190,20585,8086,7700,13104,12885,n443,398
+sub_order,3.5,Literary and scientific persons,93280,8378,43942,4984,49338,3394,n443,398
+sub_order,3.6,Engineers and surveyors,1318,1387,1318,1387,0,0,n443,398
+sub_order,3.7,Artists,4008,4261,2492,2456,1516,1805,n443,398
+sub_order,3.8,"Exhibitions, shows, games",391,468,361,447,30,21,n443,398
+sub_order,4.1,Domestic service,231711,193620,31950,23851,199761,169769,n443,398
+sub_order,4.2,Other service,23433,25798,2540,2236,20893,23562,n443,398
+sub_order,5.1,Merchants and agents,25897,35063,24305,30549,1592,4514,n445,400
+sub_order,5.2,Dealers in money,2386,2697,2381,2695,5,2,n445,400
+sub_order,5.3,Insurance,906,1563,894,1550,12,13,n445,400
+sub_order,6.1,On railways,9610,11727,9525,11631,85,96,n445,400
+sub_order,6.2,On roads,15009,18985,14885,18900,124,85,n445,400
+sub_order,6.3,"On canals, rivers and seas",16975,15252,16928,15200,47,52,n445,400
+sub_order,6.4,In storage,373,492,358,468,15,24,n445,400
+sub_order,6.5,"Conveying messages, porterage",12017,12110,11736,11870,281,240,n445,400
+sub_order,7.1,In fields and pastures,913771,849856,822958,764531,90813,85325,n445,400
+sub_order,7.2,In woods,243,220,243,220,0,0,n445,400
+sub_order,7.3,In gardens,1784,5176,1657,5039,127,137,n445,400
+sub_order,8.1,About animals,20961,20810,20833,20685,128,125,n445,400
+sub_order,9.1,Books,7113,7636,5561,5902,1552,1734,n445,400
+sub_order,9.2,Prints and maps,609,486,585,444,24,42,n445,400
+sub_order,10.1,Machines,6144,8049,6106,8035,38,14,n445,400
+sub_order,10.2,Tools and implements,238,204,229,202,9,2,n445,400
+sub_order,10.3,Watches and philosophical instruments,1389,2186,1373,2178,16,8,n445,400
+sub_order,10.4,Surgical instruments,15,29,14,29,1,0,n445,400
+sub_order,10.5,Arms and ordnance,110,74,110,74,0,0,n445,400
+sub_order,10.6,Musical instruments,195,204,185,200,10,4,n445,400
+sub_order,10.7,"Type, dies, medals, coins",54,25,54,25,0,0,n445,400
+sub_order,10.8,Tackle for sports and games,114,59,71,42,43,17,n445,400
+sub_order,11.1,Houses,47349,53920,47339,53907,10,13,n445,400
+sub_order,11.2,Furniture and fittings,3923,4449,3098,3567,825,882,n445,400
+sub_order,11.3,House decorations,490,475,428,422,62,53,n445,400
+sub_order,12.1,Carriages,2897,3887,2887,3869,10,18,n445,400
+sub_order,12.2,Harness,2883,2846,2856,2818,27,28,n445,400
+sub_order,13.1,Hull,4017,5960,4016,5960,1,0,n445,400
+sub_order,13.2,"Masts, rigging",267,276,266,272,1,4,n445,400
+sub_order,14.1,Colouring matters,42,29,32,17,10,12,n445,400
+sub_order,14.2,Explosives,115,145,68,128,47,17,n445,400
+sub_order,14.3,Drugs and other chemicals and compounds,1630,2075,1559,1991,71,84,n445,400
+sub_order,15.1,Tobacco and pipes,1506,1922,900,860,606,1062,n445,400
+sub_order,16.1,Board and lodging,12520,12365,6670,6793,5850,5570,n445,400
+sub_order,16.2,Spirituous drinks,5172,5400,4786,5017,386,383,n445,400
+sub_order,16.3,Food,52810,50731,40762,39941,12048,10790,n445,400
+sub_order,17.1,Wool and worsted,6630,5348,3080,2493,3550,2855,n445,400
+sub_order,17.2,Silk,329,209,202,115,127,94,n445,400
+sub_order,17.3,Cotton and flax,92882,77465,31478,24146,61404,53319,n445,400
+sub_order,17.4,Hemp and other fibrous materials,1826,2512,959,945,867,1567,n445,400
+sub_order,17.5,Mixed or unspecified materials,28217,24054,10650,9806,17567,14248,n445,400
+sub_order,18.1,Dress,153429,137804,37695,31960,115734,105844,n445,400
+sub_order,19.1,"Grease, gut, bone, horn, ivory and whalebone",584,465,481,389,103,76,n445,400
+sub_order,19.2,In skins,1181,711,1063,647,118,64,n445,400
+sub_order,19.3,In hair and feathers,963,710,539,438,424,272,n445,400
+sub_order,20.1,"Oils, gums and resins",166,137,125,124,41,13,n445,400
+sub_order,20.2,"Cane, rush and straw",1085,775,996,703,89,72,n445,400
+sub_order,20.3,Wood and bark,7315,6012,7122,5880,193,132,n445,400
+sub_order,20.4,Paper,3093,3452,1097,1119,1996,2333,n445,400
+sub_order,21.1,Miners,1382,1263,1382,1263,0,0,n445,400
+sub_order,21.2,"Coal, coal gas",3512,3865,3433,3828,79,37,n445,400
+sub_order,21.3,"Stone, clay and roadmaking",10120,11654,10079,11624,41,30,n445,400
+sub_order,21.4,Earthenware and glass,1009,907,723,700,286,207,n445,400
+sub_order,21.5,Salt,53,70,45,60,8,10,n445,400
+sub_order,21.6,Water,134,151,134,150,0,1,n445,400
+sub_order,21.7,Precious metals and jewellery,516,670,489,620,27,50,n445,400
+sub_order,21.8,Iron and steel,20797,19763,20589,19563,208,200,n445,400
+sub_order,21.9,Copper,159,233,159,233,0,0,n445,400
+sub_order,21.10,Tin and zinc,1983,1489,1904,1439,79,50,n445,400
+sub_order,21.11,Lead,20,24,20,24,0,0,n445,400
+sub_order,21.12,"Other, mixed or unspecified metals",991,1198,970,1166,21,32,n445,400
+sub_order,22.1,Makers and dealers (general or undefined),32250,35105,15499,16177,16751,18928,n445,400
+sub_order,22.2,Mechanics and labourers (general or undefined),133082,139272,122337,127266,10745,12006,n445,400
+sub_order,23.1,Refuse matters,1100,663,950,586,150,77,n445,400
+sub_order,24.1,Persons not returned as following any specified occupation,2559021,2494958,814634,786097,1744387,1708861,n445,400

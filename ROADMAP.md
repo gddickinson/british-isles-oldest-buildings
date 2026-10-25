@@ -436,9 +436,15 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       III: `op1254658-1001`, `op1254783-1001`) are empty stubs on the Internet Archive.
 - [ ] C5c2c2c Ireland 1891-1911, to be read in parts (found 2026-10-25). Ireland kept the six-class classification
       of 1881 to 1911, with "working and dealing" sub-orders, so dealers need the line tables, as Scotland's 1891:
-      - C5c2c2c1 1891 and 1901 sub-orders: 1901 General Report (`op1254515-1001`) Table 91, pp. 398-401 (images
-        n443-n446, 1,200 px wide but legible): classes, orders and sub-orders, persons, males and females, 1891 and
-        1901 side by side (occupied 2,145,729 and 1,963,817 "of specified occupations and conditions").
+      - [x] C5c2c2c1 (2026-10-25) 1891 and 1901 sub-orders (new `bidb/change_work_ir.py`): 1901 General Report
+        (Cd. 1190, `op1254515-1001`) Table 91, pp. 398 and 400 (images n443, n445; the age split on pp. 399, 401),
+        all ages, persons, males and females, 1891 and 1901: 6 classes, 24 orders, 80 sub-orders
+        (`work_census_ir_t91.csv`). Every row has persons = males + females, every order adds from its sub-orders,
+        every class from its orders, classes I-V to the 2,145,729 and 1,963,817 "of specified occupations and
+        conditions", and with class VI to all persons (4,704,750; 4,458,775), in all six columns. One misprint
+        (`KNOWN`): women in board and lodging 1901 printed 5,570, 5,572 by the age columns (240 + 5,332), persons and
+        the order. Not drawn: class V mixes makers and dealers. Class IV 936,759 (1891), 876,062 (1901); class V
+        656,410, 639,413; general labourers (22.2) 133,082, 139,272; students (3.5) 93,280, 8,378.
       - C5c2c2c2 1901 lines: the same report's Table 20 (males, from p. 117, image n162) and the females' table after
         it, all occupations by age, religion and education (only the Total column needed); dealer lines picked out
         per sub-order and checked against Table 91.

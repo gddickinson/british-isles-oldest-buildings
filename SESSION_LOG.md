@@ -1351,3 +1351,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Table 91 (1891 and 1901 by sub-order, pp. 398-401) and Table 20 (all lines, males from p. 117, then females); the
   1891 General Report; for 1911 only the four province volumes. Split in the roadmap into C5c2c2c1-c4 with page
   locations and the definitional traps (students in class I in 1891, farmers' relatives, general labourers).
+
+## 2026-10-25 — C5c2c2c1: Ireland 1891 and 1901 by sub-order (Table 91)
+- Census of Ireland 1901, General Report (Cd. 1190, `op1254515-1001`), Table 91 pp. 398 and 400 (page images n443,
+  n445, `page/n<N>_w2400.jpg`, served at 1,200 px but legible when cropped and enlarged): all ages, persons, males and
+  females, 1891 and 1901, for the 6 classes, 24 orders and 80 sub-orders → `work_census_ir_t91.csv` (114 rows).
+- New `bidb/change_work_ir.py` (95 lines): `check` tests persons = males + females on every row and every order,
+  class and total in all six columns. All agree but one printed figure: board and lodging, women 1901, printed 5,570,
+  is 5,572 by the facing page's age columns (240 + 5,332), by persons and by the order total (`KNOWN`, kept as printed
+  in the CSV).
+- Figures: occupied (classes I-V) 2,145,729 (1891), 1,963,817 (1901); agricultural class 936,759 and 876,062;
+  industrial class 656,410 and 639,413; general labourers (22.2) 133,082 and 139,272; "literary and scientific
+  persons" (mostly students) 93,280 and 8,378.
+- Not drawn yet: class V's orders join makers and dealers. DATA_LICENSE.md row, INTERFACE.md. Tests 276 OK (5 new).
+- Next: C5c2c2c2 (1901 occupation lines, Table 20 of the same report, males from p. 117, image n162).

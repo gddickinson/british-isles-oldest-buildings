@@ -39,6 +39,7 @@ PAGES = {
     "oldest_sport": ("/oldest", r"(?s)Oldest sporting grounds and clubs.*Sheffield"),
     "oldest_civic": ("/oldest", r"(?s)Oldest schools, hospitals and public services.*St Peter"),
     "innovations": ("/oldest", r"(?s)Innovations and firsts made in the isles.*Coke-fired blast furnace.*Dolly the sheep"),
+    "law_events": ("/change", r"(?s)Statute of Labourers.*Bubble Act.*Slavery abolished; slave owners compensated.*Big Bang"),
     "oldest_tea": ("/oldest", r"(?s)The tea trade: merchants, firms.*Horniman.*Garraway"),
     "oldest_guilds": ("/oldest", r"(?s)Guilds, companies, exchanges and banks.*Worshipful Company of Weavers.*Merchants of the Staple.*Jamaica Wine House"),
     "places_tea": ("/places?kind_label=Tea+merchant+or+firm", r"(?s)data-place=.*Horniman"),

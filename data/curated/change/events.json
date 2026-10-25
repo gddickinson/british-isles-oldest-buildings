@@ -401,5 +401,255 @@
   "theme": "Prosperity and work",
   "citation": "Wikipedia contributors, 'London Tea Auction', https://en.wikipedia.org/wiki/London_Tea_Auction (checked 2026-10-23): \"for over 300 years, from 1679 until 29 June 1998\"",
   "topic": "tea"
+ },
+ {
+  "year": 1155,
+  "end": 1155,
+  "title": "Weavers' charter",
+  "text": "The Weavers of London received a royal charter, the oldest of the livery companies' charters.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Worshipful Company of Weavers', https://en.wikipedia.org/wiki/Worshipful_Company_of_Weavers (checked 2026-10-25): \"The company received a Royal Charter in 1155.\"",
+  "topic": "law",
+  "trade": "wool"
+ },
+ {
+  "year": 1303,
+  "end": 1303,
+  "title": "Carta Mercatoria",
+  "text": "Edward I's charter to foreign merchants in England: trading rights in return for a new tax on imports.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Carta Mercatoria', https://en.wikipedia.org/wiki/Carta_Mercatoria (checked 2026-10-25): \"a 1303 charter granted by Edward I to foreign merchants in England, in exchange for the foreign merchants paying a new tax on imports\"",
+  "topic": "law",
+  "trade": "trade"
+ },
+ {
+  "year": 1351,
+  "end": 1351,
+  "title": "Statute of Labourers",
+  "text": "After the Black Death, Parliament forbade wages above those paid before the plague and limited workers' movement.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Statute of Labourers 1351', https://en.wikipedia.org/wiki/Statute_of_Labourers_1351 (checked 2026-10-25): \"prohibiting requesting or offering a wage higher than pre-Plague standards\"",
+  "topic": "law",
+  "trade": "work"
+ },
+ {
+  "year": 1353,
+  "end": 1353,
+  "title": "Ordinance of the Staple",
+  "text": "Home staple towns were set up through which wool, woolfells, leather and lead had to be exported.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Ordinance of the Staple', https://en.wikipedia.org/wiki/Ordinance_of_the_Staple (checked 2026-10-25): \"an ordinance issued in the Great Council in October 1353\"",
+  "topic": "law",
+  "trade": "wool"
+ },
+ {
+  "year": 1563,
+  "end": 1563,
+  "title": "Statute of Artificers",
+  "text": "The Elizabethan statute fixed wages, required seven years' apprenticeship for the skilled trades and restricted workers' movement.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Statute of Artificers 1563', https://en.wikipedia.org/wiki/Statute_of_Artificers_1563 (checked 2026-10-25): \"sought to fix prices, impose maximum wages, restrict workers' freedom of movement and regulate training\"",
+  "topic": "law",
+  "trade": "work"
+ },
+ {
+  "year": 1600,
+  "end": 1874,
+  "title": "East India Company",
+  "text": "Chartered on 31 December 1600; the joint-stock company traded in tea, textiles and spices and came to rule much of India until it was dissolved in 1874.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'East India Company', https://en.wikipedia.org/wiki/East_India_Company (checked 2026-10-25): \"joint-stock company that was founded in 1600 and dissolved in 1874\"",
+  "topic": "law",
+  "trade": "tea"
+ },
+ {
+  "year": 1651,
+  "end": 1849,
+  "title": "Navigation Acts",
+  "text": "Goods to and from England and its colonies were to be carried in English ships; the acts were repealed in 1849.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Navigation Acts', https://en.wikipedia.org/wiki/Navigation_Acts (checked 2026-10-25): \"a more carefully conceived Navigation Act 1651\"",
+  "topic": "law",
+  "trade": "trade"
+ },
+ {
+  "year": 1694,
+  "end": 1694,
+  "title": "Bank of England",
+  "text": "Founded as the government's banker and debt manager; privately owned until nationalised in 1946.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Bank of England', https://en.wikipedia.org/wiki/Bank_of_England (checked 2026-10-25): \"Established in 1694 to act as the English Government's banker and debt manager\"",
+  "topic": "law",
+  "trade": "banking"
+ },
+ {
+  "year": 1699,
+  "end": 1699,
+  "title": "Liverpool's first slave ship",
+  "text": "The Liverpool Merchant sailed for Africa; by the later 18th century Liverpool was Europe's leading slave-trading port, its profits from the trade and tobacco feeding the town's growth.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Liverpool', https://en.wikipedia.org/wiki/Liverpool (checked 2026-10-25): \"the same year as its first recorded slave ship, Liverpool Merchant, set sail for Africa\"",
+  "topic": "law",
+  "trade": "slavery"
+ },
+ {
+  "year": 1700,
+  "end": 1807,
+  "title": "Bristol and the slave trade",
+  "text": "From 1700 to 1807 Bristol's slave ships carried an estimated 500,000 Africans into slavery in the Americas; in 1755 it had more slave traders than London.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Bristol', https://en.wikipedia.org/wiki/Bristol (checked 2026-10-25): \"more than 2,000 slave ships carried an estimated 500,000 people from Africa to slavery in the Americas\"",
+  "topic": "law",
+  "trade": "slavery"
+ },
+ {
+  "year": 1707,
+  "end": 1707,
+  "title": "Union of England and Scotland: one market",
+  "text": "The Acts of Union joined the two kingdoms; free trade with England and its colonies was a main aim on the Scottish side.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Acts of Union 1707', https://en.wikipedia.org/wiki/Acts_of_Union_1707 (checked 2026-10-25): \"the proposed union received parliamentary support, boosted by the desire to ensure free trade\"",
+  "topic": "law",
+  "trade": "trade"
+ },
+ {
+  "year": 1720,
+  "end": 1825,
+  "title": "Bubble Act",
+  "text": "Passed before the South Sea Bubble burst: raising money by shares without a charter was declared illegal; repealed in 1825.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Bubble Act', https://en.wikipedia.org/wiki/Bubble_Act (checked 2026-10-25): \"all business that raised money or offered shares in the manner of a chartered company without a charter from the royal government\"",
+  "topic": "law",
+  "trade": "banking"
+ },
+ {
+  "year": 1773,
+  "end": 1773,
+  "title": "Inclosure Act",
+  "text": "A general act for the management of common fields and wastes, one of the parliamentary enclosure acts that ended open-field farming.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Inclosure Acts', https://en.wikipedia.org/wiki/Inclosure_Acts (checked 2026-10-25): \"The powers granted in the Inclosure Act 1773\"",
+  "topic": "law",
+  "trade": "farming"
+ },
+ {
+  "year": 1799,
+  "end": 1824,
+  "title": "Combination Acts",
+  "text": "Trade unions and combinations of workers were made illegal (1799, 1800); repealed in 1824.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Combination Act 1799', https://en.wikipedia.org/wiki/Combination_Act_1799 (checked 2026-10-25): \"The act received royal assent on 12 July 1799.\"",
+  "topic": "law",
+  "trade": "work"
+ },
+ {
+  "year": 1807,
+  "end": 1807,
+  "title": "Slave Trade Act",
+  "text": "The British slave trade was abolished from 1 May 1807 (slavery itself continued in the colonies).",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Slave Trade Act 1807', https://en.wikipedia.org/wiki/Slave_Trade_Act_1807 (checked 2026-10-25): \"prohibiting the Atlantic slave trade in the British Empire\"",
+  "topic": "law",
+  "trade": "slavery"
+ },
+ {
+  "year": 1815,
+  "end": 1846,
+  "title": "Corn Laws",
+  "text": "Tariffs kept out foreign corn until the price at home was high; repealed in 1846 under Robert Peel.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Corn Laws', https://en.wikipedia.org/wiki/Corn_Laws (checked 2026-10-25): \"tariffs and other trade restrictions on imported food and corn enforced in the United Kingdom between 1815 and 1846\"",
+  "topic": "law",
+  "trade": "farming"
+ },
+ {
+  "year": 1824,
+  "end": 1824,
+  "title": "Trade unions legal",
+  "text": "The Combination Acts were repealed; a wave of strikes followed and the 1825 act limited unions again.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Combinations of Workmen Act 1825', https://en.wikipedia.org/wiki/Combinations_of_Workmen_Act_1825 (checked 2026-10-25): \"The 1824 act repealed the acts of 1799 and 1800, but this led to a wave of strikes.\"",
+  "topic": "law",
+  "trade": "work"
+ },
+ {
+  "year": 1833,
+  "end": 1833,
+  "title": "Slavery abolished; slave owners compensated",
+  "text": "The Slavery Abolition Act freed the enslaved in most British colonies (after an 'apprenticeship'); the government raised £20 million, about 40% of its yearly income, to compensate the owners, not the enslaved. (Who received it: the Legacies of British Slavery database, ucl.ac.uk/lbs.)",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Slavery Abolition Act 1833', https://en.wikipedia.org/wiki/Slavery_Abolition_Act_1833 (checked 2026-10-25): \"the British government raised £20 million to pay out for the loss of the slaves as business assets to the registered owners of the freed slaves\"",
+  "topic": "law",
+  "trade": "slavery"
+ },
+ {
+  "year": 1833,
+  "end": 1833,
+  "title": "Factory Act",
+  "text": "No child under nine to work in textile mills, and inspectors to enforce the act.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Factory Acts', https://en.wikipedia.org/wiki/Factory_Acts (checked 2026-10-25): \"no child under nine was to be employed\"",
+  "topic": "law",
+  "trade": "cotton"
+ },
+ {
+  "year": 1834,
+  "end": 1834,
+  "title": "Tolpuddle Martyrs",
+  "text": "Six Dorset farm labourers were transported for swearing an oath to their friendly society (a union); pardoned in 1836 after mass protest.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Tolpuddle Martyrs', https://en.wikipedia.org/wiki/Tolpuddle_Martyrs (checked 2026-10-25): \"who were arrested and tried in 1834 for swearing a secret oath as members of a friendly society\"",
+  "topic": "law",
+  "trade": "work"
+ },
+ {
+  "year": 1844,
+  "end": 1844,
+  "title": "Rochdale Pioneers",
+  "text": "The Rochdale Society of Equitable Pioneers opened its shop in Toad Lane, the start of the modern co-operative movement.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Rochdale Society of Equitable Pioneers', https://en.wikipedia.org/wiki/Rochdale_Society_of_Equitable_Pioneers (checked 2026-10-25): \"On 21 December 1844, they opened their store\"",
+  "topic": "law",
+  "trade": "trade"
+ },
+ {
+  "year": 1844,
+  "end": 1844,
+  "title": "Joint Stock Companies Act",
+  "text": "Companies could be incorporated by registration instead of by royal charter or private act of Parliament.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Joint Stock Companies Act 1844', https://en.wikipedia.org/wiki/Joint_Stock_Companies_Act_1844 (checked 2026-10-25): \"expanded access to the incorporation of joint-stock companies\"",
+  "topic": "law",
+  "trade": "banking"
+ },
+ {
+  "year": 1855,
+  "end": 1855,
+  "title": "Limited Liability Act",
+  "text": "Shareholders' liability for a company's debts was limited (England, Wales and Ireland; Scotland already allowed it); the 1856 act followed.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Limited Liability Act 1855', https://en.wikipedia.org/wiki/Limited_Liability_Act_1855 (checked 2026-10-25): \"first expressly allowed limited liability for corporations that could be established by the general public\"",
+  "topic": "law",
+  "trade": "banking"
+ },
+ {
+  "year": 1868,
+  "end": 1868,
+  "title": "Trades Union Congress",
+  "text": "The first TUC met in Manchester, called by the Manchester and Salford Trades Council.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Trades Union Congress', https://en.wikipedia.org/wiki/Trades_Union_Congress (checked 2026-10-25): \"The first TUC meeting was held in 1868\"",
+  "topic": "law",
+  "trade": "work"
+ },
+ {
+  "year": 1986,
+  "end": 1986,
+  "title": "Big Bang",
+  "text": "The London Stock Exchange's rules changed on 27 October 1986: fixed commissions ended and electronic trading began.",
+  "theme": "Prosperity and work",
+  "citation": "Wikipedia contributors, 'Big Bang (financial markets)', https://en.wikipedia.org/wiki/Big_Bang_(financial_markets) (checked 2026-10-25): \"The day the London Stock Exchange's rules changed on 27 October 1986\"",
+  "topic": "law",
+  "trade": "banking"
  }
 ]

@@ -480,12 +480,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       at"; section on the Oldest page.
 - [ ] C6b Wikidata inventions in the isles (inventor P61 with a place of discovery P189 or of creation): the first
       query (2026-10-25) did not finish within the endpoint's time; narrow it (by class of invention or by year).
-- [ ] C7 Laws and institutions as dated events with citations: borough and guild charters, the Statute of the
-      Staple, Navigation Acts, the Bubble Act, enclosure, Corn Laws and their repeal, Combination Acts, joint-stock
-      and limited-liability Acts (1844, 1855–56), Factory Acts, co-operatives (Rochdale 1844), trade unions
-      (Tolpuddle 1834, TUC 1868), Big Bang 1986; the Atlantic slave trade and abolition (1807, 1833) treated plainly,
-      with the firms, ports and fortunes involved (from published histories and Acts, quoted; the Legacies of
-      British Slavery database only linked, not used as data).
+- [x] C7 (2026-10-25) Laws and institutions: 25 dated events in `change/events.json` (`topic: law`, a `trade` tag
+      read by the trade stories: wool, trade, work, tea, banking, slavery, farming, cotton), each cited with an exact
+      quote from its Wikipedia article (all 25 checked present when written): the Weavers' charter 1155, Carta
+      Mercatoria 1303, Statute of Labourers 1351, Ordinance of the Staple 1353, Statute of Artificers 1563, East India
+      Company 1600-1874, Navigation Acts 1651-1849, Bank of England 1694, Liverpool's first slave ship 1699, Bristol's
+      slave trade 1700-1807, the Union of 1707, Bubble Act 1720-1825, Inclosure Act 1773, Combination Acts 1799-1824
+      and their repeal, Slave Trade Act 1807, Corn Laws 1815-1846, Slavery Abolition Act 1833 and the £20 million paid
+      to slave owners (Legacies of British Slavery named, not used as data), Factory Act 1833, Tolpuddle 1834,
+      Rochdale Pioneers and the Joint Stock Companies Act 1844, Limited Liability Act 1855, TUC 1868, Big Bang 1986.
+      Shown with the other events on "Change over time" (theme Prosperity and work).
+- [ ] C7b Borough charters and guild charters beyond London as events or places (Wikidata "town charter" dates are
+      sparse; the guilds list of C3b holds the oldest guilds already).
 - [ ] C8 Trade stories: one page per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and
       steel, fishing, brewing and distilling, banking and finance), each with a timeline, its places on the map,
       graphs, the people, and cited analysis notes (E5 style, both sides where historians disagree: e.g. wool and

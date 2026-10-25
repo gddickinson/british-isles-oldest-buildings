@@ -1413,3 +1413,10 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   resolved to Wikidata ids and linked to the building or place (`link_made_at`, 15 of 36), shown in place details
   as "Made or first used at". Places written to the DB by `python -m bidb.oldest_lists` (36 new).
 - Tests 294 OK (2 new); ui_check `innovations` (new), `oldest_civic` pass. Hosted copy and release not updated.
+
+## 2026-10-25 — C7: laws and institutions as cited events
+- 25 events appended to `data/curated/change/events.json` (`topic: law`, `trade` tag for C8), each with an exact
+  quote from its Wikipedia article, every quote checked against the article text when written. The slave trade and
+  abolition treated plainly: Liverpool's first slave ship (1699), Bristol's trade 1700-1807 (an estimated 500,000
+  people carried), the 1807 and 1833 Acts and the £20 million paid to owners.
+- Tests 296 OK (2 new); ui_check `law_events` (new) passes.

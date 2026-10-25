@@ -1,4 +1,4 @@
-"""Main exports by value from the Statistical Abstract (roadmap C5b2b1, C5b2b2): the readings file, its totals and the joins."""
+"""Main exports by value from the Statistical Abstract (roadmap C5b2b1, C5b2b2, C5b2b3d): the readings file, its totals and the joins."""
 import tempfile
 import unittest
 from pathlib import Path
@@ -13,7 +13,7 @@ class TradeGoods(unittest.TestCase):
     def test_readings_add_up(self):
         rows = tg.load()
         self.assertEqual(tg.check(rows), [])
-        self.assertEqual(sorted(tg.goods(rows)), list(range(1854, 1939)))
+        self.assertEqual(sorted(tg.goods(rows)), list(range(1846, 1939)))
 
     def test_old_and_new_tables_agree(self):
         self.assertEqual(tg.overlap(tg.load()), {1897: {}, 1898: {}})
@@ -39,10 +39,24 @@ class TradeGoods(unittest.TestCase):
     def test_totals_match_the_summary_table(self):
         rows, summary = tg.load(), tv.load()
         for y, v in rows["all"].items():
-            if y < 1885:  # the summary table adds the parcel post from 1885
+            if 1854 <= y < 1885:  # the summary table begins in 1854 and adds the parcel post from 1885
                 self.assertEqual(v, summary[y]["uk_produce"], y)
         for y, v in rows["n70_all"].items():
             self.assertEqual(v, summary[y]["uk_produce"], y)
+
+    def test_no_8_years(self):
+        rows = tg.load()
+        g = tg.goods(rows)
+        # 1846-47: No. 8's wider lines (old iron inside wrought iron; tin plates with tin and pewter ware)
+        self.assertEqual(g[1846]["iron"], rows["iron_total"][1846] + rows["tin_pewter"][1846])
+        # 1848: tin plates from No. 10, old iron still in; from 1849 old iron left out (Nos. 11 and 13)
+        self.assertEqual(g[1848]["iron"], rows["iron_total"][1848] + rows["tin_plates"][1848])
+        self.assertEqual(g[1853]["iron"], 10845422 - 72741 + 1181069)
+        # No. 8's 1854 column (not loaded: No. 16 gives 1854) agrees with No. 16; all exports 1846-53 from table 15
+        self.assertEqual(rows["all"][1853], 98933781)
+        del rows["iron_oldin"][1850]
+        with self.assertRaises(KeyError):
+            tg.old_goods(rows, 1850)
 
     def test_check_finds_a_misread_figure(self):
         with tempfile.TemporaryDirectory() as d:

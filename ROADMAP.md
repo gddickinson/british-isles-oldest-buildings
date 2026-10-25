@@ -268,7 +268,16 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       fathoms, with no loads given); the timber price index goes on with theirs, linked at 1911 (their value per load
       89% of all timber's). Graphs now 1854-1938: raw cotton 1,253 thousand tons in 1912, 568 in 1938; grain and flour
       10,381 in 1913, 9,417 in 1938; softwood 9.90 million loads in 1913, 2.08 in 1918, 8.53 in 1934.
-- [ ] C5b2b3d UK produce exports 1840-53 (declared values) from Nos. 8 and 13.
+- [x] C5b2b3d (2026-10-25) The main exports 1846-53 from No. 8 (table 18, p. 36; the earliest edition scanned, so
+      not 1840): 248 printed figures, all 32 printed totals agree with their parts, every 1847-53 figure printed the
+      same on No. 9's p. 36, 1846 (No. 8 alone) read again from an enlarged crop; No. 8's 1854 column equals No. 16's
+      in every good. All exports of UK produce 1846-53 from No. 8's table 15 (the summary table of values begins in
+      1854), printed the same in Nos. 10 and 13 (1848-53), for the shares. No. 8 prints tin plates only with tin and
+      pewter ware and old iron only inside wrought iron: tin plates from No. 10 (1848) and Nos. 11 and 13, old iron
+      from Nos. 11 and 13 (1849-53); before then iron and steel keeps the wider lines (about 1% high in 1846-47, 0.7%
+      in 1848; stated). Graphs now 1846-1938: cotton 25.6 £m in 1846, 22.7 in 1848, 32.7 in 1853; iron and steel 4.8
+      → 12.0; coal 1.0 → 1.6; textiles 63.2% of UK produce exported in 1846, 50.8% in 1853. The rest of the export
+      side before 1846 (Nos. 1-7) is not in the Internet Archive collection.
 - [ ] C5b2c The modern end: HMRC's trade API (paced requests) for the main goods since 1996.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).

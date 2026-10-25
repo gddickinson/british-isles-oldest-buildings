@@ -1058,3 +1058,28 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `change_trade_values`, `change_trade_goods`, `map` pass; screenshot of the graphs checked. Hosted copy and release
   not updated.
 - Next: C5b2b3d (UK produce exports 1840-53 from Nos. 8 and 13), C5b2c (HMRC since 1996) or C5c (occupations).
+
+## 2026-10-25 — C5b2b3d: the main exports 1846-53
+- The roadmap asked for 1840-53 from Nos. 8 and 13, but the earliest scanned volume holds Nos. 8-13 (1846-65); No. 8
+  begins at 1846 (Nos. 1-7 are not in the collection), so the series now starts in 1846.
+- Read from the page images (file `n<edition>_<leaf>.jpg` in `<cache>/stat_abstract_img/`, image `page/n<leaf-1>`;
+  in this volume the OCR page index runs one leaf ahead of the image): No. 8 table 18 p. 36 (leaf 40, 1846-53) and
+  table 15 p. 30 (leaf 34, total declared value of British and Irish produce exported). 248 figures + 8 totals
+  appended to `data/curated/change/data/trade_goods_abstract_uk.csv`; new row names `cotton_cambric`,
+  `iron_wroughtall` (old iron inside), `tin_pewter` (tin plates and tin and pewter ware), `iron_oldin`.
+- Checks: all 32 printed totals (cotton, iron and steel, linen, wool) agree with their parts; every 1847-53 figure
+  printed the same on No. 9's p. 36 (leaf 112); 1846 read again from 2× crops; No. 8's 1854 column (p. 37) equals
+  No. 16's in every good; total exports 1848-53 equal the totals printed in No. 10's table 19 and No. 13's table 17.
+- Iron and steel: No. 8 has no separate old iron or tin plates. Tin plates from No. 10 p. 52 (1848; leaf 200) and
+  No. 11 p. 52 (1849-50; leaf 290) and No. 13 p. 60 (1851-53; leaf 494); old iron from Nos. 11 and 13 (1849-53),
+  whose wrought iron + old iron = No. 8's wrought iron of all kinds. 1846-47 keep old iron and take the tin and
+  pewter line (about 1% high), 1848 keeps old iron (0.7%); `EARLY = 1849` and `old_goods` raise if old iron is
+  missing from 1849 on. Stated in the metals note.
+- Shares 1846-53 use No. 8's total (the summary table in change_trade_values begins in 1854 because imports had no
+  real values before then). Graphs: "Textile exports, 1846-1938" (cotton 25.6 £m in 1846, 22.7 in 1848, 32.7 in
+  1853), "Coal, iron and machinery exports, 1846-1938", textiles 63.2% of exports in 1846, 50.8% in 1853.
+- Source citation (Nos. 8-13), DATA_LICENSE.md, INTERFACE.md updated; tests 206 OK (1 new); ui_check
+  `change_trade_goods` (pattern updated), `change_trade_values`, `change_trade_imports`, `change_trade_quantities`,
+  `map` pass; screenshot of the graphs checked. Hosted copy and release not updated.
+- Next: C5b2c (HMRC since 1996), C5b3 (before 1800, needs the books) or C5c (occupations).
+

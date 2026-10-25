@@ -1,11 +1,15 @@
-"""The main exports of United Kingdom produce by value, 1854-1911, for "Change over time" (roadmap C5b2b1, C5b2b2a).
+"""The main exports of United Kingdom produce by value, 1846-1938, for "Change over time" (roadmap C5b2b1, C5b2b2,
+C5b2b3d).
 
 The Board of Trade's Statistical Abstract prints the declared value of each principal article of British (and Irish)
 produce exported. The rows for coal, cotton, wool, linen, iron and steel and machinery were read from the page images
-of six editions (`data/curated/change/data/trade_goods_abstract_uk.csv`: one printed figure per line, with edition,
-leaf, page and table): No. 16 (1854-1855), No. 18 (1856-1867), No. 30 (1868-1882), No. 45 (its 1883 column only),
+of the editions (`data/curated/change/data/trade_goods_abstract_uk.csv`: one printed figure per line, with edition,
+leaf, page and table): No. 8 (1846-1853, table 18, every figure but 1846's printed the same in No. 9; the total of
+all exports from table 15), No. 16 (1854-1855), No. 18 (1856-1867), No. 30 (1868-1882), No. 45 (its 1883 column only),
 No. 46 (1884-1898) and No. 59 (1897-1911, the Board's new classification). Nos. 16 and 18 count tin plates under tin,
-not iron, so they are added to iron and steel (`old_goods`). Where the table prints a total, the parts read are checked against it (`check`);
+not iron, so they are added to iron and steel (`old_goods`); No. 8 prints them in one line with tin and pewter
+ware, and old iron inside wrought iron, so tin plates come from Nos. 10, 11 and 13 (from 1848) and old iron from
+Nos. 11 and 13 (from 1849); before then No. 8's wider lines are used (`EARLY`). Where the table prints a total, the parts read are checked against it (`check`);
 the figures without one were found printed the same in at least two other editions' OCR text when they were read.
 Nos. 70 (1911-1925, table 212) and 83 (1924-1938, table 288) follow the classification of 1920 and print no totals
 (rows `n70_*`, `n83_*`); every figure was found in another edition's OCR or, where none prints it (mostly 1937-38),
@@ -30,13 +34,13 @@ PREFIX = "sa_goods_"
 
 # Printed totals and the rows that make them up, per edition's row names.
 TOTALS = {
-    "cotton_total": ["cotton_white", "cotton_printed", "cotton_mixed", "cotton_other", "cotton_pieces",
+    "cotton_total": ["cotton_white", "cotton_printed", "cotton_cambric", "cotton_mixed", "cotton_other", "cotton_pieces",
                      "cotton_unbl", "cotton_bl", "cotton_prdy", "cotton_dyed", "cotton_stockings", "cotton_thread",
                      "cotton_lace", "cotton_unenum"],
     "linen_total": ["linen_white", "linen_printed", "linen_sail", "linen_thread", "linen_other"],
     "wool_total": ["wool_cloths", "wool_flannels", "wool_blankets", "wool_stuffs", "wool_stuffs2", "wool_carpets",
                    "wool_hosiery", "wool_other"] + [f"wool_c{i}" for i in range(1, 13)],
-    "iron_total": ["iron_old", "iron_pig", "iron_bar", "iron_rail", "iron_barrail", "iron_wrought",
+    "iron_total": ["iron_old", "iron_wroughtall", "iron_pig", "iron_bar", "iron_rail", "iron_barrail", "iron_wrought",
                    "iron_hoopswrought", "iron_rails", "iron_railother", "iron_wire",
                    "iron_hoops", "iron_tinned", "iron_cast", "iron_steelunw", "iron_steelman", "iron_galv",
                    "iron_sheets", "iron_black", "iron_tubes", "iron_castother", "iron_steelingots",
@@ -50,6 +54,10 @@ TOTALS = {
 }
 # Known differences between a printed total and its printed parts (parts - total), explained in the readings file.
 KNOWN = {("wool_total", 1883): -10}
+# No. 8 (1846-1853) gives old iron only inside wrought iron of all kinds, and tin plates in one line with tin and
+# pewter ware; Nos. 10, 11 and 13 separate tin plates from 1848 (`tin_plates`) and Nos. 11 and 13 old iron from 1849
+# (`iron_oldin`). Before then iron and steel keeps old iron and takes the wider tin line.
+EARLY = 1849
 MACH_OLD = ["mach_steam", "mach_other", "mach_loco", "mach_steamagri", "mach_steamother", "mach_agri",
             "mach_textother", "mach_textile", "mach_mother"]
 WOOL_NOT_MANUF = ["woolt_flocks", "woolt_waste", "woolt_tops", "woolt_yarn", "woolt_alpaca"]
@@ -104,14 +112,18 @@ def _sum(rows, keys, y):
 
 
 def old_goods(rows, y):
-    """The goods of one year from the tables of Nos. 16, 18, 30, 45 and 46 (1854-1898); tin plates, counted under tin
-    before 1868, are added to iron and steel."""
+    """The goods of one year from the tables of Nos. 8, 16, 18, 30, 45 and 46 (1846-1898); tin plates, counted under
+    tin before 1868, are added to iron and steel."""
     g = rows.get
+    old = g("iron_old", {}).get(y, g("iron_oldin", {}).get(y))
+    if old is None and y >= EARLY:
+        raise KeyError(f"old iron {y}")
+    tin = g("tin_plates", {}).get(y, g("tin_pewter", {}).get(y, 0))
     yarn = g("cotton_yarn", {}).get(y) or g("cyarn_all", {}).get(y) or _sum(rows, ["cyarn_grey", "cyarn_bl"], y)
     return {"coal": rows["coal"][y], "cotton_yarn": yarn, "cotton_manuf": rows["cotton_total"][y],
             "wool_yarn": rows["wool_yarn"][y], "wool_manuf": rows["wool_total"][y],
             "linen_yarn": rows["linen_yarn"][y], "linen_manuf": rows["linen_total"][y],
-            "iron": rows["iron_total"][y] - rows["iron_old"][y] + rows.get("tin_plates", {}).get(y, 0),
+            "iron": rows["iron_total"][y] - (old or 0) + tin,
             "machinery": _sum(rows, MACH_OLD, y)}
 
 
@@ -179,11 +191,12 @@ def series(by_year, all_exports):
 TEXTILES_NOTE = (
     "The value of the cotton, woollen and worsted, and linen goods made in the United Kingdom and sent abroad each "
     "year, at the prices of the time (\"declared value\", as loaded on board), yarn and manufactures together, from "
-    "the Board of Trade's Statistical Abstracts, read from the page images of Nos. 16, 18, 30, 45, 46, 59, 70 and 83 "
+    "the Board of Trade's Statistical Abstracts, read from the page images of Nos. 8, 16, 18, 30, 45, 46, 59, 70 and 83 "
     "(edition, page and table per figure in the data file). Every total the tables print was checked against its "
     "printed parts; the figures without a printed total were found printed the same in other editions (at least two "
     "from 1868, at least one before), and those found in no other edition's OCR text (mostly 1937-38) were read "
-    "again from enlarged crops. For "
+    "again from enlarged crops; 1846, given in No. 8 alone, was checked by its printed totals and an enlarged crop, and "
+    "No. 8's 1854 column equals No. 16's in every good. For "
     "1868, given in both, No. 18 and No. 30 agree for cotton and linen; wool manufactures differ by 0.2% and wool "
     "yarn by 2.6% (No. 30's revised figures are used from 1868). The sub-headings changed over the years but the "
     "totals are the Abstract's own; from 1897 the Board's new classification was brought back to the old totals "
@@ -204,11 +217,15 @@ METALS_NOTE = (
     "(coke) and manufactured fuel, not bunker coal for ships and not the products of coal; iron and steel leaves out "
     "old iron for re-manufacture, though old rails are counted from 1907 to 1911, and hollow-ware from 1904; "
     "machinery leaves out sewing machines, which the old tables did not count as machinery (electrical machinery, "
-    "shown on its own from 1903, was counted with other machinery before). Before 1868 (Nos. 16 and 18) coal is "
+    "shown on its own from 1903, was counted with other machinery before). Before 1868 (Nos. 8, 16 and 18) coal is "
     "coals, cinders and culm, without the patent fuel counted from then (for 1868 No. 18 gives 5.35 million, No. 30 "
     "5.44 million); tin plates, entered under tin, are added to iron and steel; manufactures of steel, entered with "
     "hardwares and cutlery before 1862 (No. 22) and not shown in No. 18, are counted only from 1868 (0.36 to 0.47 "
-    "million a year in 1862-67, Nos. 22 and 24). From 1912 (Nos. 70 and 83) the goods are the sum of their rows, "
+    "million a year in 1862-67, Nos. 22 and 24). No. 8 (1846-53) prints tin plates in one line with tin and pewter "
+    "ware and counts old iron inside wrought iron; tin plates are taken from Nos. 10, 11 and 13 from 1848 and old "
+    "iron left out from 1849 (Nos. 11 and 13), so iron and steel in 1846-47 is about 1% too high on the later "
+    "definition (old iron 0.7% of iron and steel in 1849-53; pewter and tin ware 17,000 to 33,000 pounds a year) "
+    "and in 1848 about 0.7%. From 1912 (Nos. 70 and 83) the goods are the sum of their rows, "
     "with rail locomotives (now under vehicles) counted as machinery and railway axles, tyres and wheels as iron "
     "and steel; road locomotives and steam rollers are not shown (0.47 million in 1911). From 1924 (No. 83) part of "
     "other iron and steel was moved and boilers and boiler-house plant gathered under machinery: for 1924 No. 83's "
@@ -219,7 +236,8 @@ METALS_NOTE = (
     "recorded as exports from 1899, are not included.")
 SHARE_NOTE = (
     "The main goods as a share of all exports of United Kingdom produce (\"UK exports of UK produce\", the "
-    "Abstract's summary table, which counts the parcel post from 1885: 2.1 of 233.4 million in 1898; from August 1914 "
+    "Abstract's summary table; before 1854, when it begins, No. 8's total declared value of British and Irish produce "
+    "exported; the summary table counts the parcel post from 1885: 2.1 of 233.4 million in 1898; from August 1914 "
     "to June 1917 goods taken from government stores or shipped on government vessels were left out, and from April 1923 exports "
     "to the Irish Free State are counted and the Free State's own exports are not). Cotton, wool and linen together "
     "were {t0:.1f}% in {y0}, {t13:.1f}% in 1913 and {t1:.1f}% in {y1}; cotton alone {c0:.1f}%, {c13:.1f}% and "
@@ -241,6 +259,9 @@ def write(rows, log=print):
     printed = {y: v for y, v in rows.get("n70_all", {}).items() if abs(v / 1e6 - uk[y]) > 0.005}
     if printed:
         raise ValueError(f"No. 70's total exports differ from the summary table: {printed}")
+    # Before 1854 the summary table has no imports at real values; all exports come from No. 8's own total
+    # (table 15), printed the same as the total of No. 10's table of principal articles (1848-1853) and in No. 13.
+    uk.update({y: v / 1e6 for y, v in rows.get("all", {}).items() if y < min(uk)})
     pts = series(by_year, {y: v * 1e6 for y, v in uk.items()})
     for sid, p in pts.items():
         _csv(sid, p)

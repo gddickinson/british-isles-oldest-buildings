@@ -328,9 +328,22 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       of exports); coal 69.8 → 14.0 £m 1953-67; machinery 569.9 → 4,213.0 £m 1953-74; textile fibres 390.8 £m in 1953,
       246.8 in 1958. The sum checks now allow at most ~4 standard deviations of the rounding (`near`), so a misread
       unit in a class of 23 divisions is caught.
-- [ ] C5b2d3 1978-1999 (SITC revisions 2 and 3; the missing editions from the other scans or the later edition's
-      ten-year runs).
-- [ ] C5b2d4 Join the eras: graphs across 1846-2025 with the breaks of definition marked (1912, 1938, 1953, 2000);
+- [x] C5b2d3 (2026-10-25) 1975-1999 as shares, from a public-domain source (George, 2026-10-25: "Use a source that is
+      clearly OK for us to use. I don't wish to ask for permission at this time"). The Annual Abstract from No. 113
+      (1976) is in Crown copyright for 50 years, and The National Archives' pages do not say plainly that older HMSO
+      tables fall under the OGL (only that the old waiver's "headline statistics" do); ONS's MRETS starts in 1997.
+      Used instead: the Growth Lab at Harvard University's International Trade Data (SITC, Rev. 2), CC0, UN Comtrade
+      reconciled with partners' reports, in US dollars, so shares only (new `bidb/change_trade_atlas.py`), 1962-2024 on
+      the same divisions (machinery as Rev. 2's 71-77), shares of all goods but non-monetary gold (97: 12.2% of exports
+      in 2024, at most 2.34% before 1980). Against the Annual Abstract on 1962-1974 the mean differences are at most
+      0.52 points (textiles; machinery -0.12, cereals -0.35, wood -0.26) and under 1.5 points in every year (tested).
+      Results: textiles 7.2% of exports in 1962, 3.7% in 1975, 1.9% in 1999, 0.8% in 2024; machinery 27.0, 29.3, 36.2,
+      28.2%; cereals 5.1% of imports in 1962, 2.9% in 1975, 0.6% in 1999, 1.2% in 2024. Goods not classified by kind
+      (91-96) reach 12.1% of exports in 2011. Hardening: the charts draw at most three lines, so timber (1938-52) and
+      wood and textile fibres (1953-74) were never drawn; those graphs now split, and bidb.change_series refuses a
+      graph with more than two other lines (`MAX_MODELS`).
+- [ ] C5b2d4 Join the eras: graphs across 1846-2025 with the breaks of definition marked (1912, 1938, 1953, 2000;
+      1975-1999 from the Growth Lab shares of C5b2d3, which also overlap the Annual Abstract 1962-74 and HMRC 2000-24);
       hosted copy and release updated with the C5b2 graphs.
 - [ ] C5b3 Before 1800: Davis 1962, Schumpeter 1960 and Mitchell 1988 quoted per figure as estimate dots (needs the
       books' pages; `estimates.json`).

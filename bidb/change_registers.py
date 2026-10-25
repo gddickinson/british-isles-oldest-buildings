@@ -60,8 +60,8 @@ def sic_sector(text):
     return next((k for (lo, hi), k in _SIC if lo <= div <= hi), None)
 
 
-def _download(url, name, log):
-    path = cache_dir() / "registers" / name
+def _download(url, name, log, folder="registers"):
+    path = cache_dir() / folder / name
     if path.exists():
         return path
     path.parent.mkdir(parents=True, exist_ok=True)

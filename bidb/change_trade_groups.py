@@ -196,10 +196,13 @@ def write(by_year, rows, log=print):
             c38s=_then("sa_imports_cotton_uk"), w38=v["raw_wool"][1938], w38s=_then("sa_imports_wool_uk"),
             k38=v["timber"][1938], k38s=_then("sa_imports_timber_uk"), c1=v["raw_cotton"][y1], y1=y1,
             cmax=v["raw_cotton"][top("raw_cotton")], ycmax=top("raw_cotton"), wmax=v["raw_wool"][top("raw_wool")],
-            ywmax=top("raw_wool")), ["raw_cotton", "raw_wool", "timber"]),
+            ywmax=top("raw_wool")), ["raw_cotton", "raw_wool"]),
         row("raw_cotton", "Raw cotton imports by group", "Raw cotton and cotton waste", gbp, "£m"),
         row("raw_wool", "Wool imports by group", "Wool, raw and waste", gbp, "£m"),
-        row("timber", "Timber imports by group", "Wood and timber", gbp, "£m"),
+        row("timber", f"Timber imports by group, {span}", "Wood and timber", gbp, "£m",
+            f"Wood and timber (group II.E) imported each year, million pounds at the prices of the time; the sources, "
+            f"definitions and the comparison with 1938 are in the note to Main imports by group, {span}. "
+            f"{v['timber'][1938]:.1f} million in 1938, {v['timber'][y1]:.1f} in {y1}."),
         row("grain_share", f"Main imports by group, share of all imports, {span}", "Grain and flour",
             "% of all imports", pct, IMPORT_SHARE_NOTE.format(
                 g38=v["grain_share"][1938], g38s=_then("sa_imports_grain_share_uk"),

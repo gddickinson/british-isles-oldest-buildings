@@ -1169,3 +1169,27 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   OK (4 new); ui_check `change_trade_sitc` (spans now 1953-1974) and `change_trade_groups` pass; screenshot checked.
   Hosted copy and release not updated.
 - Next: C5b2d3 (1975/1978-1999; the OGL question for Nos. 113 onwards first).
+
+## 2026-10-25 — C5b2d3: the main goods 1962-2024 as shares, from the Growth Lab (public domain)
+- The OGL question for Annual Abstract No. 113 (1976) onwards: The National Archives makes the OGL the default licence
+  for Crown copyright and says re-use under the old waiver (which included "headline statistics") moves to the OGL,
+  but nothing found says plainly that whole HMSO tables from before 2010 are covered. George chose "a source that is
+  clearly OK for us to use", without asking permission. ONS's MRETS (OGL) starts only in 1997.
+- Source: the Growth Lab at Harvard University's International Trade Data (SITC, Rev. 2), Harvard Dataverse
+  doi:10.7910/DVN/H8SFD2, CC0 1.0 (UN Comtrade reconciled with partners' reports; the Atlas asks for citation).
+  `sitc_country_product_year_2.csv` (50 MB) in `<cache>/growthlab/`. In US dollars, so shares only.
+- New `bidb/change_trade_atlas.py` (155 lines): 9 series `gl_*_uk`, 1962-2024, shares of all goods but non-monetary
+  gold (97: 12.2% of exports and 9.2% of imports in 2024, at most 2.34% before 1980; a hand-written "under 0.2%" in
+  the first draft of the note was wrong and is now computed). Same divisions as the `aas_` graphs, machinery = Rev. 2's
+  71-77 (27.0% against the official 27.3% in 1962). Mean differences from the Annual Abstract's shares 1962-1974:
+  textiles +0.52, coal +0.01, iron +0.08, machinery -0.12, cereals -0.35, sugar -0.02, coffee-tea-cocoa +0.06, wood
+  -0.26, fibres -0.02 points; every year within 1.5 points (tested). Textiles 7.2% of exports in 1962, 3.7% in 1975,
+  1.9% in 1999, 0.8% in 2024; machinery 27.0, 29.3, 36.2, 28.2%; cereals 5.1, 2.9, 0.6, 1.2% of imports.
+- Found while checking the screenshot: `change_charts.draw` draws at most three lines, so the 1938-52 timber line and
+  the 1953-74 wood and textile-fibre lines were never drawn. Those graphs are split (timber; wood and fibres), and
+  `change_series.check` now refuses a graph with more than `MAX_MODELS` (2) other lines. `change_registers._download`
+  takes a cache folder.
+- Source `growth_lab_sitc2`, DATA_LICENSE.md row, INTERFACE.md; tests 225 OK (3 new); ui_check `change_trade_atlas`
+  (new), `change_trade_sitc`, `change_trade_groups`, `change_trade_hmrc`, `map` pass; screenshots checked (every line
+  drawn). Hosted copy and release not updated.
+- Next: C5b2d4 (join the eras 1846-2025, breaks marked; hosted copy and release).

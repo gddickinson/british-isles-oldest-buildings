@@ -959,5 +959,17 @@
   "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
   "used": "Exports of textile yarns and fabrics, coal, iron and steel and machinery; imports of cereals, sugar, coffee, tea and cocoa, wood and textile fibres; all imports and exports, 1953-1957 (£ million), and 1958 on this basis beside the SITC (R) figures, read from the page images (edition, leaf, page and table per figure in data/trade_classes_abstract_uk.csv); 1953 from No. 99, 1954-1957 from No. 100",
   "checked": "2026-10-25 (C5b2d2b): 1,890 figures read from the scans; every division checked against its class's total and the classes against the grand total, with no inconsistency; 1954-1960 agree figure for figure in Nos. 99 and 100 on both sides, only No. 99's 1961 (a first estimate) being revised; precious stones left out; exports include repayments of Lend-Lease silver in 1956 (22.4) and 1957 (7.1 £ million)"
+ },
+ "growth_lab_sitc2": {
+  "short": "Growth Lab at Harvard University, International Trade Data (SITC, Rev. 2)",
+  "publisher": "The Growth Lab at Harvard University (Harvard Dataverse); raw data from the United Nations Statistics Division (UN Comtrade)",
+  "citation": "The Growth Lab at Harvard University, International Trade Data (SITC, Rev. 2), Harvard Dataverse, doi:10.7910/DVN/H8SFD2, version 18 (2026-04-22), file sitc_country_product_year_2.csv; raw data from the United Nations Statistics Division (UN Comtrade), cleaned by the Bustos-Yildirim method. Hausmann, R., Hidalgo, C. A., Bustos, S., Coscia, M., Chung, S., Jimenez, J., Simoes, A. and Yildirim, M. (2013) The Atlas of Economic Complexity. Cambridge MA: MIT Press.",
+  "licence": "CC0 1.0",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licence_quote": "Harvard Dataverse record of doi:10.7910/DVN/H8SFD2: license 'CC0 1.0'. Atlas data downloads page: 'We encourage reuse and adaptation, provided that users cite the Atlas and underlying data sources appropriately.' Description: 'Raw data on trade in goods is provided by United Nations Statistical Division (COMTRADE). The data is then cleaned by Growth Lab researchers using the Bustos-Yildirim Method which uses bilateral trade flows to account for inconsistent reporting'.",
+  "url": "https://doi.org/10.7910/DVN/H8SFD2",
+  "download_url": "https://dataverse.harvard.edu/api/access/datafile/13685146",
+  "used": "UK exports of textile yarn and fabrics (65), coal (32), iron and steel (67) and machinery (71-77), and imports of cereals (04), sugar (06), coffee, tea and cocoa (07), wood (24) and textile fibres (26), as shares of all goods but non-monetary gold (97), 1962-2024; shares only, the values being in US dollars",
+  "checked": "2026-10-25 (C5b2d3): licence read from the Dataverse API and the Atlas downloads page; the divisions of each year sum to the country's totals in sitc_country_year.csv; shares compared with the Annual Abstract's on 1962-1974 (machinery on divisions 71-77 within 0.6 points)"
  }
 }

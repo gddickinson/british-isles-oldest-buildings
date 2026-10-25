@@ -226,10 +226,15 @@ def write(by_year, rows, old58, log=print):
                                 s63=v["sugar"][1963], w58=v["wood"][1958], go58=old58["cereals"],
                                 so58=old58["sugar"], wo58=old58["wood"], fo58=old58["fibres"],
                                 g52=_then("aa_grain_uk", 1952)),
-            ["sugar", "beverages", "wood", "fibres"]),
+            ["sugar", "beverages"]),
         row("sugar", "Sugar imports by division", "Sugar, sugar preparations and honey", gbp, "£m"),
         row("beverages", "Coffee, tea and cocoa imports by division", "Coffee, tea, cocoa and spices", gbp, "£m"),
-        row("wood", "Wood imports by division", "Wood, lumber and cork", gbp, "£m"),
+        row("wood", f"Wood and textile fibre imports by division, {span}", "Wood, lumber and cork", gbp, "£m",
+            f"Wood, lumber and cork (division 24) and textile fibres and their waste (26) imported each year, million "
+            f"pounds at the prices of the time; the sources, definitions and the change of basis in 1958 are in the "
+            f"note to Main imports by division, {span}. Wood {v['wood'][y0]:,.1f} million in {y0} and "
+            f"{v['wood'][y1]:,.1f} in {y1}; textile fibres {v['fibres'][y0]:,.1f} and {v['fibres'][y1]:,.1f}.",
+            ["fibres"]),
         row("fibres", "Textile fibre imports by division", "Textile fibres and waste", gbp, "£m"),
         row("food_share", f"Main imports by division, share of all imports, {span}", "Cereals, sugar, coffee and tea",
             "% of all imports", pct, IMPORT_SHARE_NOTE.format(**base, **abbr("f", "food_share"),

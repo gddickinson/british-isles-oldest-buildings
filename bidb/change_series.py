@@ -47,6 +47,8 @@ def read_points(path):
         pts.append(p)
     return sorted(pts, key=lambda p: p[0])
 
+MAX_MODELS = 2
+
 
 def check(sources, series, events):
     """Problems: a series or event without a known source, a source without licence or citation, unknown themes."""
@@ -65,6 +67,8 @@ def check(sources, series, events):
     for s in series:
         if not (SRC / "data" / s["file"]).exists():
             bad.append(f"{s['id']}: missing data/{s['file']}")
+        if len(s.get("models", [])) > MAX_MODELS:      # change_charts.draw has three line colours
+            bad.append(f"{s['id']}: {len(s['models'])} other lines, at most {MAX_MODELS} are drawn")
     return bad
 
 

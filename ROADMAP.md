@@ -492,10 +492,16 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       Shown with the other events on "Change over time" (theme Prosperity and work).
 - [ ] C7b Borough charters and guild charters beyond London as events or places (Wikidata "town charter" dates are
       sparse; the guilds list of C3b holds the oldest guilds already).
-- [ ] C8 Trade stories: one page per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and
-      steel, fishing, brewing and distilling, banking and finance), each with a timeline, its places on the map,
-      graphs, the people, and cited analysis notes (E5 style, both sides where historians disagree: e.g. wool and
-      the wool churches, the "industrious revolution", slavery's part in industrialisation, railway mania).
+- [x] C8 (2026-10-25) Trade stories: page `/trades` (nav "Trades"; hosted `trades.html` from `data/trades.json`), one
+      story per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and steel, fishing, brewing and
+      distilling, banking and finance) from `data/curated/trade/stories.json` and new `bidb/trade_stories.py`: intro,
+      timeline (the C7 events by `trade` tag, the tea events, the C6 innovations), map and lists of its places (by kind,
+      or whole-word name matches in trade-related groups) and catalogue buildings, the people linked to them, graphs of
+      Change over time, and a cited analysis note per trade with exact quotes (all 30 checked against the articles):
+      the wool churches and enclosure; tea, sugar and the "industrious revolution"; Williams's Capitalism and Slavery
+      thesis and its critics (Engerman, Richardson) and defenders (Carrington); the Cotton Famine (war or
+      overproduction); Belfast's linen and the Atlantic; Jevons's Coal Question; nationalised steel; herring towns;
+      taxing drink (gin, whisky); railway mania and Overend Gurney.
 - [ ] C9 GUI: the trade stories reachable from the Change over time page, detail views ("Trade and industry here":
       the guild, firm or trade of a building), map filters by trade, Oldest page entries, quiz questions
       ("which came first?"), exports; INTERFACE, Help and figures updated.

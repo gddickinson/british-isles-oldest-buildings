@@ -155,3 +155,11 @@
 .change-page .ch-quote { margin: 6px 0 6px 2px; padding-left: 10px; border-left: 3px solid var(--line); font-size: 13px; color: var(--ink); }
 .change-page .ch-quote cite { display: block; font-style: normal; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
 @media (max-width: 480px) { .change-page .ch-notes { grid-template-columns: 1fr; } }
+
+/* Trades page (roadmap C8) */
+.trades-page .tr-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.2rem; align-items: start; }
+.trades-page #tr_map { height: 420px; }
+.trades-page .tr-timeline li { margin-bottom: .35rem; }
+.trades-page .tr-list summary { cursor: pointer; margin: .4rem 0; }
+.trades-page .tr-list ul { max-height: 320px; overflow: auto; }
+@media (max-width: 860px) { .trades-page .tr-layout { grid-template-columns: 1fr; } }

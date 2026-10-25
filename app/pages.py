@@ -56,6 +56,11 @@ def oldest():
     return render_template("oldest.html", page="oldest")
 
 
+@bp.route("/trades")
+def trades():
+    return render_template("trades.html", page="trades")
+
+
 @bp.route("/stats")
 def stats():
     return render_template("stats.html", facets=db.FACETS, page="stats")

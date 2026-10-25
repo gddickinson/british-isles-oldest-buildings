@@ -43,6 +43,8 @@
   // Tours: data/tours.json; suggestions score the catalogue rows as bidb/tour_plan.interest does
   let TOURS = null, VISITS = null, STOPS = null, OLDNAMES = null, DOMESDAY = null, DIGS = null, TREE = null;
   const tours = () => (TOURS = TOURS || fetch("data/tours.json").then((r) => r.json()).catch(() => []));
+  let TRADES = null;
+  const tradesData = () => (TRADES = TRADES || fetch("data/trades.json").then((r) => r.json()).catch(() => ({ index: [], stories: {} })));
   const TOP = ["Grade I", "Category A", "Grade A", "World Heritage", "National Monument"];
   const interest = (r) => 1 + (r.landmark ? 3 : 0) + (r.oldest_of_type ? 2 : 0) + (r.curated ? 1.5 : 0) + (r.t != null ? 1.5 : 0)
     + Math.min((r.sk || []).length, 3) * 1.2 + (r.wikipedia_title ? 1 : 0) + (TOP.some((g) => (r.heritage_grade || "").includes(g)) ? 1 : 0)
@@ -236,6 +238,8 @@
     },
     async tour(p, f, id) { return (await tours()).find((t) => t.id === id); },
     async oldest_lists() { return fetch("data/oldest_lists.json").then((r) => r.json()); },
+    async trades() { return (await tradesData()).index; },
+    async trade(p, f, id) { return (await tradesData()).stories[id]; },
     async quiz_pool() { return fetch("data/quiz.json").then((r) => r.json()); },
     async dendro(p, f, id) {
       TREE = TREE || fetch("data/dendro.json").then((r) => r.json()).catch(() => ({}));
@@ -305,7 +309,7 @@
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);
-    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "stops", "old_names", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool"].includes(name);
+    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "stops", "old_names", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool", "trades", "trade"].includes(name);
     return fn(u.searchParams, plain ? null : filtersFrom(u.searchParams), id);
   };
 })();

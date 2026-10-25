@@ -70,6 +70,8 @@ def export(conn, out_dir):
     from .quiz_api import pool
     (out_dir / "quiz.json").write_text(json.dumps(pool(conn), ensure_ascii=False, separators=(",", ":")))
     (out_dir / "oldest_lists.json").write_text(json.dumps(lists(conn), ensure_ascii=False, separators=(",", ":")))
+    from bidb.trade_stories import export as trades
+    (out_dir / "trades.json").write_text(json.dumps(trades(conn), ensure_ascii=False, separators=(",", ":")))
     if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'dendro'").fetchone():
         tree = {}                                    # {record id: [[location, date text, method, reference], …]}
         for rid, loc, text, method, ref in conn.execute(

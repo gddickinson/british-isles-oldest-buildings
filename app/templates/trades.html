@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Trades · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page trades-page">
+  <h1>Trades and industries</h1>
+  <p class="prose">How wool, tea, sugar and slavery, cotton, linen, coal, iron, fishing, drink and banking shaped the
+    isles: for each trade, a timeline of its laws, events and inventions, its places and buildings on the map, the
+    people linked to them, graphs from <a href="{{ url_for('pages.change') }}">Change over time</a>, and notes on what
+    historians make of it, every claim quoted from a linked source. Where historians disagree, both sides are given.</p>
+  <div class="pron-chips" id="tr_chips" aria-label="Trade"></div>
+  <div id="tr_body" aria-live="polite"></div>
+</main>
+<div id="modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
+<script src="{{ url_for('static', filename='time_slider.js') }}"></script>
+<script src="{{ url_for('static', filename='change_charts.js') }}"></script>
+<script src="{{ url_for('static', filename='change_panel.js') }}"></script>
+<script src="{{ url_for('static', filename='trades.js') }}"></script>
+{% endblock %}

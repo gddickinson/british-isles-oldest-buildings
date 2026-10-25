@@ -1,0 +1,598 @@
+{
+ "about": "Trade stories (roadmap C8, 2026-10-25): one page per trade, read by bidb.trade_stories. `tags` pick the dated events of change/events.json by their `trade` (and `topics` by `topic`); `match` picks its places and catalogue buildings (place kinds, and words in the name or type); `series` are graphs of Change over time; `innovations` names entries of trade/innovations.json; `notes` are analysis notes with exact quotes (checked against the article text when written). The intros summarise the notes, events and graphs they sit with.",
+ "stories": [
+  {
+   "id": "wool",
+   "title": "Wool and cloth",
+   "tags": [
+    "wool"
+   ],
+   "intro": "Wool was the backbone of the medieval English economy: raw wool was exported through the Staple towns set up in 1353, and the Weavers of London had a royal charter by 1155. Its merchants and graziers built the wool churches of the Cotswolds and East Anglia; the flying shuttle and the spinning jenny later took cloth-making towards the mills.",
+   "match": {
+    "words": [
+     "wool",
+     "woollen",
+     "woollens",
+     "wool hall",
+     "wool house",
+     "woolstapler*",
+     "cloth hall",
+     "cloth market",
+     "worsted",
+     "fulling",
+     "weavers",
+     "weaving",
+     "drapers",
+     "clothier*",
+     "blanket"
+    ]
+   },
+   "series": [
+    "sheep_gb",
+    "markets_eng",
+    "tj_textiles_x_uk"
+   ],
+   "innovations": [
+    "Flying shuttle",
+    "Spinning jenny"
+   ],
+   "notes": [
+    {
+     "title": "Wool money in stone",
+     "text": "The wool churches are the clearest mark the trade left on the landscape: merchants and graziers paid for large, rebuilt parish churches in the wool towns, and the building stopped when the trade declined in the 16th century. Historians call the wool trade one of the most important parts of the medieval economy, and link it to enclosure, as landlords turned arable land over to sheep.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Wool church', https://en.wikipedia.org/wiki/Wool_church (checked 2026-10-25)",
+       "short": "Wikipedia: Wool church",
+       "url": "https://en.wikipedia.org/wiki/Wool_church",
+       "quote": "A wool church is an English church financed primarily by donations from rich merchants and farmers who had benefitted from the medieval wool trade",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Wool church', https://en.wikipedia.org/wiki/Wool_church (checked 2026-10-25)",
+       "short": "Wikipedia: Wool church",
+       "url": "https://en.wikipedia.org/wiki/Wool_church",
+       "quote": "The building of wool churches largely ended with the English Reformation and the simultaneous decline of the wool trade between 1525 and 1600.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'English wool trade', https://en.wikipedia.org/wiki/English_wool_trade (checked 2026-10-25)",
+       "short": "Wikipedia: English wool trade",
+       "url": "https://en.wikipedia.org/wiki/English_wool_trade",
+       "quote": "The wool trade was a major driver of enclosure (the privatisation of common land) in English agriculture",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tea",
+   "title": "Tea",
+   "tags": [
+    "tea"
+   ],
+   "topics": [
+    "tea"
+   ],
+   "intro": "Tea came to London in the 1650s as a luxury sold in coffee houses; within a century it was drunk across the isles, sweetened with sugar from the slave plantations of the West Indies. The East India Company's monopoly, high duties and smuggling shaped the trade until the duty was cut in 1784; from the 1830s tea came from India and Ceylon too, sold by grocers and by the tea rooms and chains of the later 19th century.",
+   "match": {
+    "kinds": [
+     "tea_firm",
+     "tea_room",
+     "tea_trade"
+    ],
+    "words": [
+     "tea room*",
+     "tearoom*",
+     "tea house",
+     "tea warehouse"
+    ]
+   },
+   "series": [
+    "tea_per_head_uk",
+    "tea_retained_uk",
+    "tea_price_uk",
+    "tea_duty_uk"
+   ],
+   "innovations": [],
+   "notes": [
+    {
+     "title": "Tea, sugar and the 'industrious revolution'",
+     "text": "Tea and sugar spread together: historians such as Sidney Mintz tie the rise of tea to sugar, and both to the plantations. Jan de Vries's 'industrious revolution' argues that households worked longer from about 1600 to buy goods such as these, before the factories; critics question how far working hours really rose. One study finds that tea, by getting people to boil water, lowered death rates in 18th-century England.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Tea in the United Kingdom', https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom (checked 2026-10-25)",
+       "short": "Wikipedia: Tea in the United Kingdom",
+       "url": "https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom",
+       "quote": "sugar played a monumental role in the rise of tea",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Industrious Revolution', https://en.wikipedia.org/wiki/Industrious_Revolution (checked 2026-10-25)",
+       "short": "Wikipedia: Industrious Revolution",
+       "url": "https://en.wikipedia.org/wiki/Industrious_Revolution",
+       "quote": "household productivity and consumer demand increased despite the absence of major technological innovations",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Tea in the United Kingdom', https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom (checked 2026-10-25)",
+       "short": "Wikipedia: Tea in the United Kingdom",
+       "url": "https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom",
+       "quote": "rising tea-consumption during the 18th century in England had the unintended effect of reducing mortality rates",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sugar",
+   "title": "Sugar and slavery",
+   "tags": [
+    "slavery"
+   ],
+   "intro": "Sugar grown by enslaved Africans on Caribbean plantations was Britain's most valuable import from the 1740s to the 1820s. Ships from Bristol and Liverpool, among others, carried enslaved people to the Americas; profits from the trade helped Liverpool and Bristol grow. Britain abolished the slave trade in 1807 and slavery in most colonies in 1833, paying £20 million to the owners and nothing to the enslaved.",
+   "match": {
+    "words": [
+     "sugar",
+     "slave*",
+     "slavery",
+     "sugar refinery",
+     "abolition",
+     "abolitionist",
+     "wilberforce",
+     "plantation owner*"
+    ]
+   },
+   "series": [
+    "sa_imports_food_share_uk",
+    "trade_ft_imports_uk"
+   ],
+   "innovations": [],
+   "notes": [
+    {
+     "title": "Did slavery pay for the Industrial Revolution?",
+     "text": "Eric Williams argued in Capitalism and Slavery (1944) that profits from slavery helped finance industrialisation, and that abolition came when the plantations' profits were declining rather than from humanitarian zeal alone. Critics such as Stanley Engerman and David Richardson measure the profits as a small share of the economy or of investment; others, such as Selwyn Carrington, defend the thesis. The debate is about scale and cause; that fortunes, ports and buildings in the isles were built on the trade is not in dispute.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Capitalism and Slavery', https://en.wikipedia.org/wiki/Capitalism_and_Slavery (checked 2026-10-25)",
+       "short": "Wikipedia: Capitalism and Slavery",
+       "url": "https://en.wikipedia.org/wiki/Capitalism_and_Slavery",
+       "quote": "the high profits from slavery, he wrote, helped finance the Industrial Revolution",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Capitalism and Slavery', https://en.wikipedia.org/wiki/Capitalism_and_Slavery (checked 2026-10-25)",
+       "short": "Wikipedia: Capitalism and Slavery",
+       "url": "https://en.wikipedia.org/wiki/Capitalism_and_Slavery",
+       "quote": "the total profits from the slave trade and of West Indian plantations amounted to less than 5% of the British economy during any year of the Industrial Revolution",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Capitalism and Slavery', https://en.wikipedia.org/wiki/Capitalism_and_Slavery (checked 2026-10-25)",
+       "short": "Wikipedia: Capitalism and Slavery",
+       "url": "https://en.wikipedia.org/wiki/Capitalism_and_Slavery",
+       "quote": "profits from the slave trade amounted to less than 1% of domestic investment in Britain",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'History of sugar', https://en.wikipedia.org/wiki/History_of_sugar (checked 2026-10-25)",
+       "short": "Wikipedia: History of sugar",
+       "url": "https://en.wikipedia.org/wiki/History_of_sugar",
+       "quote": "Great Britain, for example, consumed five times as much sugar in 1770 as in 1710.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'History of sugar', https://en.wikipedia.org/wiki/History_of_sugar (checked 2026-10-25)",
+       "short": "Wikipedia: History of sugar",
+       "url": "https://en.wikipedia.org/wiki/History_of_sugar",
+       "quote": "From the 1740s until the 1820s, sugar was Britain's most valuable import.",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cotton",
+   "title": "Cotton",
+   "tags": [
+    "cotton"
+   ],
+   "intro": "Cotton was the industry of the Industrial Revolution: the jenny, the water frame and the mule, Arkwright's mill at Cromford and then the steam-powered mills of Lancashire and Glasgow. Raw cotton came mostly from the slave plantations of the American South; when the American Civil War cut the supply, Lancashire suffered the Cotton Famine of 1861-65. The graphs show raw cotton among the largest imports and cotton cloth among the largest exports until the 20th century.",
+   "match": {
+    "words": [
+     "cotton",
+     "spinning",
+     "calico",
+     "fustian"
+    ]
+   },
+   "series": [
+    "sa_imports_cotton_uk",
+    "sa_qty_cotton_uk",
+    "sa_goods_cotton_uk",
+    "tj_textiles_x_uk"
+   ],
+   "innovations": [
+    "Spinning jenny",
+    "Cromford Mill, the first water-powered cotton spinning mill",
+    "Spinning mule"
+   ],
+   "notes": [
+    {
+     "title": "The Cotton Famine",
+     "text": "The Lancashire Cotton Famine of 1861-65 is usually told as the result of the American Civil War, when the Union blockade stopped the South's cotton; historians also point to overproduction and full warehouses before the war. Lancashire's mill workers, among the best-paid in Britain, became among the poorest, and relief funds were raised across the country.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Lancashire Cotton Famine', https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine (checked 2026-10-25)",
+       "short": "Wikipedia: Lancashire Cotton Famine",
+       "url": "https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine",
+       "quote": "was a depression in the textile industry of North West England, brought about by overproduction in a time of contracting world markets",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Lancashire Cotton Famine', https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine (checked 2026-10-25)",
+       "short": "Wikipedia: Lancashire Cotton Famine",
+       "url": "https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine",
+       "quote": "went from being the most prosperous workers in Britain to the most impoverished",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "linen",
+   "title": "Linen",
+   "tags": [],
+   "intro": "Flax was spun and woven in Ireland for centuries; with Huguenot and Scottish settlers the linen trade grew in Ulster, and Belfast became 'Linenopolis', the world's largest centre of linen making by 1888, its mills largely worked by women and children.",
+   "match": {
+    "words": [
+     "linen",
+     "flax",
+     "bleach*",
+     "scutch*",
+     "jute"
+    ]
+   },
+   "series": [
+    "work_irl_primary",
+    "tj_textiles_x_uk"
+   ],
+   "innovations": [],
+   "notes": [
+    {
+     "title": "Linenopolis and the Atlantic",
+     "text": "Belfast's linen trade grew with the Atlantic economy: rough linen and salted provisions went to the slave plantations of the West Indies, and profits from the trade paid for the Lagan Canal, new docks and the White Linen Hall, drawing the linen trade away from Dublin.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Belfast', https://en.wikipedia.org/wiki/Belfast (checked 2026-10-25)",
+       "short": "Wikipedia: Belfast",
+       "url": "https://en.wikipedia.org/wiki/Belfast",
+       "quote": "Fortunes were made carrying rough linen clothing and salted provisions to the slave plantations of the West Indies",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Belfast', https://en.wikipedia.org/wiki/Belfast (checked 2026-10-25)",
+       "short": "Wikipedia: Belfast",
+       "url": "https://en.wikipedia.org/wiki/Belfast",
+       "quote": "When granted city status in 1888, Belfast was the world's largest centre of linen manufacture",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Belfast', https://en.wikipedia.org/wiki/Belfast (checked 2026-10-25)",
+       "short": "Wikipedia: Belfast",
+       "url": "https://en.wikipedia.org/wiki/Belfast",
+       "quote": "Together with French Huguenots, the Scots introduced the production of linen",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Belfast', https://en.wikipedia.org/wiki/Belfast (checked 2026-10-25)",
+       "short": "Wikipedia: Belfast",
+       "url": "https://en.wikipedia.org/wiki/Belfast",
+       "quote": "mill, and finishing, work largely employing women and children",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "coal",
+   "title": "Coal",
+   "tags": [],
+   "intro": "Coal pumped by the first steam engine (1712) fired the engines, ironworks and homes of the industrial isles. Output peaked in 1913 at 287 million tonnes and over a million people worked in the mines around 1920; the mines were nationalised on 1 January 1947, and some 950 were closed by governments between 1947 and 1994.",
+   "match": {
+    "kinds": [
+     "mine"
+    ],
+    "words": [
+     "colliery",
+     "collieries",
+     "coal",
+     "coalfield",
+     "pit head",
+     "pithead",
+     "coke ovens",
+     "miners"
+    ]
+   },
+   "series": [
+    "coal_uk",
+    "coal_jobs_uk",
+    "sa_goods_coal_uk",
+    "co2_fossil_uk"
+   ],
+   "innovations": [
+    "Newcomen atmospheric engine"
+   ],
+   "notes": [
+    {
+     "title": "The Coal Question",
+     "text": "In 1865 W. S. Jevons warned that Britain's prosperity rested on coal that would run out, and that using it more efficiently would only raise demand (the 'Jevons paradox'). Output in fact peaked in 1913, not because the coal ran out but because oil, gas and imports became cheaper; employment fell from 1.19 million in 1920 to 44,000 by 1993.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'The Coal Question', https://en.wikipedia.org/wiki/The_Coal_Question (checked 2026-10-25)",
+       "short": "Wikipedia: The Coal Question",
+       "url": "https://en.wikipedia.org/wiki/The_Coal_Question",
+       "quote": "Jevons further argues that coal is the source of the UK's prosperity and global dominance.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Coal mining in the United Kingdom', https://en.wikipedia.org/wiki/Coal_mining_in_the_United_Kingdom (checked 2026-10-25)",
+       "short": "Wikipedia: Coal mining in the United Kingdom",
+       "url": "https://en.wikipedia.org/wiki/Coal_mining_in_the_United_Kingdom",
+       "quote": "UK coal production peaked in 1913 at 287 million tonnes.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Coal mining in the United Kingdom', https://en.wikipedia.org/wiki/Coal_mining_in_the_United_Kingdom (checked 2026-10-25)",
+       "short": "Wikipedia: Coal mining in the United Kingdom",
+       "url": "https://en.wikipedia.org/wiki/Coal_mining_in_the_United_Kingdom",
+       "quote": "Employment in coal mines fell from a peak of 1,191,000 in 1920 to 695,000 in 1956",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Coal mining in the United Kingdom', https://en.wikipedia.org/wiki/Coal_mining_in_the_United_Kingdom (checked 2026-10-25)",
+       "short": "Wikipedia: Coal mining in the United Kingdom",
+       "url": "https://en.wikipedia.org/wiki/Coal_mining_in_the_United_Kingdom",
+       "quote": "Between 1947 and 1994, some 950 mines were closed by UK governments.",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "iron",
+   "title": "Iron and steel",
+   "tags": [],
+   "intro": "Abraham Darby smelted iron with coke at Coalbrookdale in 1709; the Iron Bridge (1779) and the ironworks of Merthyr, where the first locomotive ran in 1804, followed. Bessemer's process (1856) made cheap steel. Nationalised in 1967 with 268,500 workers, the industry was privatised in 1988 and has shrunk since.",
+   "match": {
+    "kinds": [
+     "iw_metal",
+     "ironworks"
+    ],
+    "words": [
+     "ironworks",
+     "iron works",
+     "steelworks",
+     "steel works",
+     "blast furnace",
+     "furnace",
+     "forge",
+     "foundry",
+     "steel",
+     "ironmaster*",
+     "iron foundry",
+     "iron bridge"
+    ]
+   },
+   "series": [
+    "sa_goods_coal_uk",
+    "gl_machinery_uk",
+    "shipping_built_uk"
+   ],
+   "innovations": [
+    "Coke-fired blast furnace",
+    "The Iron Bridge, the first cast-iron arch bridge of its size",
+    "Bessemer process"
+   ],
+   "notes": [
+    {
+     "title": "Nationalised to keep jobs",
+     "text": "British Steel was formed in 1967 from about ninety per cent of the country's steelmaking; in the declining industry of the 1970s the government's aim was to keep employment high, and mills were kept open at a loss in depressed regions before privatisation in 1988.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'British Steel (1967–1999)', https://en.wikipedia.org/wiki/British_Steel_(1967–1999) (checked 2026-10-25)",
+       "short": "Wikipedia: British Steel (1967–1999)",
+       "url": "https://en.wikipedia.org/wiki/British_Steel_(1967–1999)",
+       "quote": "At the time of formation, BSC comprised around ninety per cent of the UK's steelmaking capacity; it had around 268,500 employees and roughly 200 subsidiaries.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'British Steel (1967–1999)', https://en.wikipedia.org/wiki/British_Steel_(1967–1999) (checked 2026-10-25)",
+       "short": "Wikipedia: British Steel (1967–1999)",
+       "url": "https://en.wikipedia.org/wiki/British_Steel_(1967–1999)",
+       "quote": "By the 1970s, the Labour government's main goal for the declining industry was to keep employment high.",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fishing",
+   "title": "Fishing",
+   "tags": [],
+   "intro": "Herring, the 'silver darlings', made Great Yarmouth a thriving port; the Dutch fished the same waters from their herring busses, to English annoyance. Yarmouth's herring fishery shrank after the mid-20th century and has all but ended.",
+   "match": {
+    "words": [
+     "herring",
+     "fishery",
+     "fisheries",
+     "fishing",
+     "fish market",
+     "fishmarket",
+     "kipper*",
+     "smokehouse",
+     "smoke house",
+     "curing",
+     "trawler*",
+     "fishermen"
+    ]
+   },
+   "series": [
+    "shipping_reg_total_uk"
+   ],
+   "innovations": [],
+   "notes": [
+    {
+     "title": "Herring towns",
+     "text": "The herring built towns: Great Yarmouth's medieval charters still owe the Crown herring pies, Defoe admired it as a thriving herring port, and its fishing industry has all but ended since the mid-20th century.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Great Yarmouth', https://en.wikipedia.org/wiki/Great_Yarmouth (checked 2026-10-25)",
+       "short": "Wikipedia: Great Yarmouth",
+       "url": "https://en.wikipedia.org/wiki/Great_Yarmouth",
+       "quote": "Its fishing industry, mainly for herring, shrank after the mid-20th century and has all but ended.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Herring', https://en.wikipedia.org/wiki/Herring (checked 2026-10-25)",
+       "short": "Wikipedia: Herring",
+       "url": "https://en.wikipedia.org/wiki/Herring",
+       "quote": "Herring were also known as \"silver darlings\" in the United Kingdom.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Herring buss', https://en.wikipedia.org/wiki/Herring_buss (checked 2026-10-25)",
+       "short": "Wikipedia: Herring buss",
+       "url": "https://en.wikipedia.org/wiki/Herring_buss",
+       "quote": "the English looked askance at what they considered \"poaching\" in waters they claimed",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "drink",
+   "title": "Brewing and distilling",
+   "tags": [],
+   "intro": "Arthur Guinness leased the St James's Gate brewery in Dublin in 1759 for 9,000 years. Gin flooded London in the 'Gin Craze' until the Gin Act of 1751; in Scotland the Excise Act of 1823 brought illicit whisky stills into the law and began the modern Scotch whisky industry.",
+   "match": {
+    "kinds": [
+     "iw_drink"
+    ],
+    "words": [
+     "brewery",
+     "breweries",
+     "distillery",
+     "distilleries",
+     "maltings",
+     "malthouse",
+     "malt house",
+     "brewhouse"
+    ]
+   },
+   "series": [
+    "sa_imports_grain_uk"
+   ],
+   "innovations": [],
+   "notes": [
+    {
+     "title": "Taxing and taming drink",
+     "text": "Governments have used tax and licensing to change what people drink: five acts between 1729 and 1751 tried to curb gin, the craze waning after the Gin Act of 1751; the Excise Act 1823 lowered the costs of licensed whisky distilling, and duty-paid whisky almost doubled in a year (2,232,000 gallons in 1823, 4,350,000 in 1824).",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Gin Craze', https://en.wikipedia.org/wiki/Gin_Craze (checked 2026-10-25)",
+       "short": "Wikipedia: Gin Craze",
+       "url": "https://en.wikipedia.org/wiki/Gin_Craze",
+       "quote": "Parliament passed five major acts, in 1729, 1736, 1743, 1747 and 1751, designed to control the consumption of gin.",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Scotch whisky', https://en.wikipedia.org/wiki/Scotch_whisky (checked 2026-10-25)",
+       "short": "Wikipedia: Scotch whisky",
+       "url": "https://en.wikipedia.org/wiki/Scotch_whisky",
+       "quote": "in 1823 2,232,000 gallons of whisky had duty paid on it; in 1824 this increased to 4,350,000 gallons",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Guinness Brewery', https://en.wikipedia.org/wiki/Guinness_Brewery (checked 2026-10-25)",
+       "short": "Wikipedia: Guinness Brewery",
+       "url": "https://en.wikipedia.org/wiki/Guinness_Brewery",
+       "quote": "Originally leased in 1759 to Arthur Guinness at £45 per year for 9,000 years",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "banking",
+   "title": "Banking and finance",
+   "tags": [
+    "banking"
+   ],
+   "intro": "The Bank of England (1694) became the government's banker; the Bubble Act of 1720 kept companies without a charter from raising shares until 1825, and the Acts of 1844 and 1855 opened incorporation and limited liability to all. The City lived through manias and panics (1720, 1845-46, 1866) and was remade by the Big Bang of 1986.",
+   "match": {
+    "kinds": [
+     "tr_bank",
+     "gu_bank",
+     "tr_bourse",
+     "gu_exchange"
+    ],
+    "words": [
+     "banking",
+     "bankers",
+     "stock exchange",
+     "royal exchange",
+     "exchange bank",
+     "savings bank"
+    ]
+   },
+   "series": [
+    "firms_founded_money",
+    "companies_incorporated_gb",
+    "companies_live_banks",
+    "prices_rpi_uk"
+   ],
+   "innovations": [
+    "Cash machine (ATM)"
+   ],
+   "notes": [
+    {
+     "title": "Railway mania and the bankers' bank",
+     "text": "Victorian finance went through manias and panics. In the railway mania, 263 railway Acts were passed in 1846 alone; about a third of the lines were never built and many middle-class savers lost everything. In 1866 Overend, Gurney, 'the bankers' bank', failed owing about £11 million and set off a panic across the country's cities.",
+     "sources": [
+      {
+       "citation": "Wikipedia contributors, 'Railway Mania', https://en.wikipedia.org/wiki/Railway_Mania (checked 2026-10-25)",
+       "short": "Wikipedia: Railway Mania",
+       "url": "https://en.wikipedia.org/wiki/Railway_Mania",
+       "quote": "The mania reached its zenith in 1846, when 263 Acts of Parliament for setting up new railway companies were passed",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Railway Mania', https://en.wikipedia.org/wiki/Railway_Mania (checked 2026-10-25)",
+       "short": "Wikipedia: Railway Mania",
+       "url": "https://en.wikipedia.org/wiki/Railway_Mania",
+       "quote": "About a third of the railways authorised were never built",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Overend, Gurney and Company', https://en.wikipedia.org/wiki/Overend,_Gurney_and_Company (checked 2026-10-25)",
+       "short": "Wikipedia: Overend, Gurney and Company",
+       "url": "https://en.wikipedia.org/wiki/Overend,_Gurney_and_Company",
+       "quote": "The collapse of the institution triggered a banking panic.",
+       "locator": "article text"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1420,3 +1420,14 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   abolition treated plainly: Liverpool's first slave ship (1699), Bristol's trade 1700-1807 (an estimated 500,000
   people carried), the 1807 and 1833 Acts and the £20 million paid to owners.
 - Tests 296 OK (2 new); ui_check `law_events` (new) passes.
+
+## 2026-10-25 — C8: trade stories
+- `data/curated/trade/stories.json` (10 trades) and `bidb/trade_stories.py` (check, events with innovations, places
+  by kind or whole-word name match restricted to trade-related groups, buildings without prehistoric/Roman/forts,
+  people via person_links, export); `app/trades_api.py` (`/api/trades`, `/api/trade/<id>`), page `/trades`
+  (`templates/trades.html`, `static/trades.js`, styles in pages.css), nav link, hosted copy (`trades.json` from
+  static_tours, routes in static_api.js, page in static_export PAGES).
+- Every note quote (30) checked against its Wikipedia article text; intro facts trimmed to what the notes, events,
+  innovations and graphs support. First version matched words with LIKE and caught "Drummond" for "rum" and long
+  barrows in "Plantation" woods: now regex whole words and trade-related place groups only.
+- Tests 300 OK (4 new); ui_check `trades` (new) passes; screenshot of the sugar and slavery story checked.

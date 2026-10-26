@@ -1696,3 +1696,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 367 OK (1 new in `test_type_stats`; HEAD had 366, the 370 of the last entry was a miscount); ui_check of the
   six /types pages OK. The running GUI needs a restart for the new code. Hosted copy not updated.
 - Next: BT4b with BT7 (hosted copy of /types, Help, figures, quiz questions).
+
+## 2026-10-26 — BT4b: /types in the hosted copy
+- New `app/static_types.py` and `app/static/static_types.js` (hooked into `static_api.js` as `STATIC_TYPES`): the
+  family tree, "Through time", all 311 type pages and 99 material pages, and the types and materials of each detail
+  view now work in the hosted copy; the "Building types" nav link is shown there.
+- Compact format, 21 files, 5.8 MB (the full local data would be ~28 MB): catalogue records by id, filled in from the
+  rows the browser already holds; places as [id, name, year, date, county, nation]; place map points as integer steps
+  of 1/1000° (dots link to the Map page there); family links once; 40/25 examples per type/material (the list says
+  "40 of 822 shown"; `material_stats.detail` now gives `dated` so local material pages say so too); the detail views
+  give materials and how they were found but not the evidence sentence.
+- Room, with nothing lost: tour route lines Douglas-Peucker at ~4 m (`static_tours.ROUTE_TOL`, 3.2 → 2.1 MB);
+  common link starts of places as `~<n>:` (`static_places.URL_PREFIXES`, expanded in `static_places.js` from meta);
+  4,293 register texts that only say "no description yet" left out (`NO_DESCRIPTION`). Without these the copy was
+  257.6 MiB.
+- Checked against `dist/` served locally in headless Chrome: tree, type page (Wealden house), "Through time" 1300,
+  motte and bailey (map with records and places, spread, lines), brick, a building's and an Irish SMR place's detail
+  views (link expanded correctly). Local ui_check of the four /types pages OK.
+- Hosted copy republished as versions 72-74 (three batches, 130 changed files, 151 MB: the catalogue data changed too
+  since version 71): 253.0 MiB, 487 files.
+- Tests 372 OK (5 new `test_static_types`; `test_static_split` follows the hash's move to `STATIC_ID_HASH`).
+- Next: BT7 (Help page section and figures for /types, quiz questions "which type came first?", "name the type").

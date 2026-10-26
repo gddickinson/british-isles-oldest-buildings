@@ -42,9 +42,11 @@ const TypeView = (() => {
     <div><b>Earliest surviving example in the catalogue</b><br>${entity(e)} <span class="meta">${esc([e.date_text, e.county, e.nation].filter(Boolean).join(" · "))}</span>
     <br><span class="hint">${esc(what)}</span></div></div>` : "";
 
-  function examples(rows, extra) {
+  // total: how many are dated (fewer are shown: 200 here, 40 or 25 in the hosted copy)
+  function examples(rows, extra, total) {
     if (!rows.length) return "";
-    return `<details class="tr-list"><summary>Dated examples, oldest first (${rows.length.toLocaleString()}${rows.length >= 200 ? " shown" : ""})</summary>
+    const shown = total > rows.length ? `${rows.length.toLocaleString()} of ${total.toLocaleString()} shown` : rows.length.toLocaleString();
+    return `<details class="tr-list"><summary>Dated examples, oldest first (${shown})</summary>
       <ul class="nearby">${rows.map((r) => `<li>${entity(r)} <span class="meta">${esc([r.date_text || yt(r.year), r.county, r.nation].filter(Boolean).join(" · "))}</span>
         ${r.too_early ? ' <span class="ty-flag" title="Begun long before the first known date: a later phase, or a mapping or dating error">too early</span>' : ""}${extra ? extra(r) : ""}</li>`).join("")}</ul></details>`;
   }
@@ -67,7 +69,8 @@ const TypeView = (() => {
       pts.push([lat, lon]);
       L.circleMarker([lat, lon], { radius: 4, weight: 1, color: cssVar(source === "place" ? "--g2" : "--g1"),
                                     fillOpacity: primary === 0 ? 0.25 : 0.8 })
-        .bindPopup(`${year != null ? yt(year) + " · " : ""}<a href="${source === "place" ? "#" : buildingUrl(id)}" ${
+        .bindPopup(id == null ? `<a href="${mapUrl({ lat, lon, name: "" })}">Show on the map</a>`     // hosted: places without ids
+          : `${year != null ? yt(year) + " · " : ""}<a href="${source === "place" ? "#" : buildingUrl(id)}" ${
           source === "place" ? "data-place" : "data-open"}="${esc(id)}">Open</a>`).addTo(map);
     });
     if (pts.length > 1) map.fitBounds(pts, { padding: [20, 20], maxZoom: 9 }); else map.setView(pts[0], 9);
@@ -93,7 +96,7 @@ const TypeView = (() => {
       <div class="ty-grid"><div><h4>Begun per century</h4><div class="ty-century"></div><h4>By nation</h4><div class="ty-nation"></div></div>
         <div><div class="ty-map stories-map"></div><p class="hint">Blue: catalogue records, orange: places; faint where it is not the main type.</p></div></div>
       <div class="ty-spread"></div>
-      ${examples(d.examples || [])}`}
+      ${examples(d.examples || [], null, d.dated)}`}
       <h3>Sources</h3>${sourceList(t.sources) || '<p class="hint">The period and links cite their sources above.</p>'}`;
     if (!d.abroad) { charts(box, d); drawMap(box, d.points); TypeTime.spread(box.querySelector(".ty-spread"), d.spread); }
   }
@@ -114,7 +117,7 @@ const TypeView = (() => {
       ${earliest(d.earliest, "Standing or a ruin, begun when the material was in use, not dated from its type.")}
       <div class="ty-grid"><div><h4>Begun per century</h4><div class="ty-century"></div><h4>By nation</h4><div class="ty-nation"></div></div>
         <div><div class="ty-map stories-map"></div></div></div>
-      ${examples(d.examples || [], (r) => r.evidence ? `<br><span class="hint">“${esc(r.evidence.length > 240 ? r.evidence.slice(0, 239) + "…" : r.evidence)}”</span>` : "")}
+      ${examples(d.examples || [], (r) => r.evidence ? `<br><span class="hint">“${esc(r.evidence.length > 240 ? r.evidence.slice(0, 239) + "…" : r.evidence)}”</span>` : "", d.dated)}
       <h3>Sources</h3>${sourceList(m.sources)}`;
     charts(box, d);
     drawMap(box, d.points.map((q) => q.concat([1])));

@@ -44,7 +44,7 @@
                     ('oldest','pages.oldest','Oldest by type'), ('types','pages.building_types','Building types'), ('stats','pages.stats','Statistics'),
                     ('compare','pages.compare','Compare'), ('glossary','pages.glossary','Glossary'),
                     ('data','pages.data','Data quality')] %}
-    {% for key, ep, label in links if not (static_mode and key == 'types') %}{# /types not in the hosted copy yet (BT4b) #}
+    {% for key, ep, label in links %}
       <a href="{{ url_for(ep) }}" class="{{ 'active' if page == key else '' }}">{{ label }}{% if key in ('tours','compare') %} <span class="count" data-count="{{ 'trip' if key == 'tours' else key }}"></span>{% endif %}</a>
     {% endfor %}
   </nav>
@@ -60,7 +60,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
 {% if not static_mode %}<script src="{{ url_for('static', filename='vendor/protomaps-leaflet.js') }}"></script>{% endif %}
-{% if static_mode %}<script>window.__STATIC__ = true;</script><script src="{{ url_for('static', filename='static_api.js') }}"></script><script src="{{ url_for('static', filename='static_places.js') }}"></script>{% endif %}
+{% if static_mode %}<script>window.__STATIC__ = true;</script><script src="{{ url_for('static', filename='static_api.js') }}"></script><script src="{{ url_for('static', filename='static_places.js') }}"></script><script src="{{ url_for('static', filename='static_types.js') }}"></script>{% endif %}
 <script src="{{ url_for('static', filename='ui_prefs.js') }}"></script>
 <script src="{{ url_for('static', filename='state.js') }}"></script>
 <script src="{{ url_for('static', filename='render.js') }}"></script>

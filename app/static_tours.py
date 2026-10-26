@@ -3,6 +3,11 @@
 import json
 
 from bidb import stories_db
+from bidb.tour_elevation import decode, encode
+
+from .geo_simplify import douglas_peucker
+
+ROUTE_TOL = 0.00004         # degrees (about 4 m): route lines simplified, 3.2 MB → 1.1 MB, not visible on the map
 
 STORY_FIELDS = ["entity_kind", "entity_id", "kind", "heading", "text", "source_url", "name", "nation", "locality",
                 "lat", "lon", "date_text", "licence"]
@@ -24,6 +29,8 @@ def export(conn, out_dir):
             t["stops"] = json.loads(t["stops"] or "[]")
             t["elevation"] = json.loads(t["elevation"]) if t.get("elevation") else None
             t["stages"] = json.loads(t["stages"]) if t.get("stages") else None
+            if t.get("geometry"):
+                t["geometry"] = encode(douglas_peucker(decode(t["geometry"]), ROUTE_TOL))
             tours.append(t)
         (out_dir / "tours.json").write_text(json.dumps(tours, ensure_ascii=False, separators=(",", ":")))
         print(f"exported {len(tours)} tours")

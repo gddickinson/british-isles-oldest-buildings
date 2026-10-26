@@ -6,12 +6,12 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; local only); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,716 records (69.8%) and 58,957 places typed, 247 of 285
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,716 records (69.8%) and 58,957 places typed, 247 of 285
   isles types with examples, 215 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
-  the Glossary page): 254.0 of 256 MiB, 458 of 511 files. Republish changed files only: checksum `dist/` before and after
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 74 (2026-10-26, with /types,
+  BT4b): 253.0 of 256 MiB, 487 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
   to replace files this session has not read or listed).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
@@ -711,7 +711,7 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
       layer. Split 2026-10-26: BT3c1 (materials on the detail views, the type pages and a material page of their
       own) is done with BT4a (2026-10-26); BT3c2 (the region over the geology layer) left open.
-- [ ] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
+- [x] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
       its years; solid lines for documented descent, dashed for disputed), a type page per type (definition, how to
       recognise it, features, materials, plan, period chart, map of examples, the oldest surviving, family links,
       sources), and a search; reachable from detail views ("This is a Wealden house: see its family").
@@ -725,7 +725,14 @@ the descent of a type is disputed, both views are given and the link is drawn as
       found in its records, family links with claims, views and quoted sources, earliest surviving example, begun per
       century and by nation, map, dated examples) and per material (BT3c1); detail views say "This is a Wealden house:
       see its family" and list the materials with the sentence that names them. Nav link hidden in the hosted copy.
-- [ ] BT4b The hosted copy's /types: static data for the tree, type and material pages (with BT7).
+- [x] BT4b (2026-10-26) The hosted copy's /types (new `app/static_types.py`, `app/static/static_types.js`): the tree,
+      the "Through time" tab, every type and material page and the detail views' types and materials, from 21 compact
+      files (5.8 MB: catalogue records named by id and filled in from the rows the browser already holds, places as
+      short arrays, place map points as integer steps of 1/1000°, family links stored once; 40 examples per type and 25
+      per material with evidence cut to 200 characters; place dots link to the Map page; no evidence sentences in the
+      detail views). Room made without losing anything: tour route lines simplified to ~4 m (3.2 → 2.1 MB), common link
+      starts of places encoded (`URL_PREFIXES`, the Irish SMR viewer link alone 127 characters × 13,425 places) and
+      4,293 register texts that only say there is no description left out. Hosted copy version 74: 253.0 MiB, 487 files.
 - [x] BT5 (2026-10-26) Charts (new `bidb/type_charts.py`, `app/static/types_time.js`, `/api/material_centuries`):
       tab "Through time" on /types (`?tab=time&year=`): types in use per domain at each date (an area per domain on
       the Map slider's axis, from the curated periods; a year to choose lists the types in use then, 79 in 1300, and

@@ -9,6 +9,16 @@ TRIM = {"description": 300, "wikipedia_extract": 300}   # the hosted copy may ho
 DROP = {"image_thumb", "image_page"}
 WIKIDATA = "https://www.wikidata.org/wiki/"
 # {kind: [label, group]}: a place's label and group are left out when they are its kind's (meta.place_kinds)
+# common starts of place links, written "~<n>:" + the rest (expanded in static_places.js; 3.7 MB less)
+URL_PREFIXES = ["https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8"
+                "&query=18a4b61b268-layer-9%2CSMRS%2C",
+                "https://historicengland.org.uk/listing/the-list/list-entry/", "https://openplaques.org/plaques/",
+                "https://portal.historicenvironment.scot/designation/",
+                "http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=",
+                "https://www.trove.scot/place/", "https://en.wikipedia.org/wiki/"]
+# register texts that only say there is no description yet
+NO_DESCRIPTION = ("We regret that we are unable to supply descriptive details",
+                  "The Archaeological Survey of Ireland (ASI) is in the process of providing information")
 KIND_DEFAULTS = {k: [KIND_LABEL.get(k, k), KIND_GROUP.get(k)] for k in set(KIND_LABEL) | set(KIND_GROUP)}
 
 
@@ -76,6 +86,8 @@ def export(conn, out_dir, write_shards):
     rows, other = [], pron_db.other_names(conn, "place")    # names in Welsh, Gaelic, Irish …
     for r in conn.execute("SELECT * FROM places ORDER BY kind_group, id"):
         d = {k: v for k, v in dict(r).items() if v not in (None, "") and k not in DROP}
+        if d.get("description", "").startswith(NO_DESCRIPTION):
+            del d["description"]
         for k, n in TRIM.items():
             if d.get(k):
                 d[k] = _trim(d[k], n)
@@ -96,6 +108,10 @@ def export(conn, out_dir, write_shards):
             del d["wikidata_id"]
             if d.get("url") == WIKIDATA + d["id"]:
                 del d["url"]
+        for i, start in enumerate(URL_PREFIXES):
+            if d.get("url", "").startswith(start):
+                d["url"] = f"~{i}:" + d["url"][len(start):]
+                break
         rows.append(d)
     names = write_shards(sorted(rows, key=lambda r: shard_of(r["id"])), "places", key=lambda r: shard_of(r["id"]))
     write_index(rows, out_dir)

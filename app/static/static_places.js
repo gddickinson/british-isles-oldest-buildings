@@ -10,8 +10,11 @@
     "Nature & deep time", "Graves & burial grounds", "Markets & trade", "Infrastructure & utilities", "Sport & leisure", "Public institutions", "Innovations & firsts"];
 
   // a place's full row as the export leaves it: label, group, source and Wikidata link are put back
-  const expand = (p, kinds) => {            // left out when they repeat the kind or the id (static_places.py)
-    const [label, group] = kinds[p.kind] || [];
+  // (left out when they repeat the kind or the id, static_places.py), and the common start of a link ("~2:…")
+  const expand = (p, meta) => {
+    const [label, group] = (meta.place_kinds || {})[p.kind] || [];
+    const m = p.url && /^~(\d+):/.exec(p.url);
+    if (m) p.url = (meta.url_prefixes || [])[+m[1]] + p.url.slice(m[0].length);
     if (!p.kind_label && label) p.kind_label = label;
     if (!p.kind_group && group) p.kind_group = group;
     if (!p.source) p.source = "Wikidata";
@@ -31,9 +34,8 @@
     const [shards] = await Promise.all([
       Promise.all((meta.place_shards || []).map((n) => fetch("data/" + n).then((r) => r.json()))), loadPeople()]);
     PLACES = shards.flat();
-    const kinds = meta.place_kinds || {};
     PLACES.forEach((p) => {
-      expand(p, kinds);
+      expand(p, meta);
       p._text = fold([p.name, p.description, p.type, p.locality, p.designation, p.wikipedia_extract,
       JSON.stringify(p.extra || ""), p.other_names].join(" ")); });
     BYID = new Map(PLACES.map((p) => [p.id, p]));
@@ -73,12 +75,13 @@
     await Promise.all(Array.from({ length: 6 }, async () => { while (keys.length) await loadCell(keys.shift()); }));
     return [...LITE.values()];
   };
-  // the same hash as static_places.shard_of: which shard holds a place's full row
-  const shardOf = (id) => {
+  // the same hash as static_places.shard_of: which shard holds a place's full row (also static_types.js)
+  const idHash = window.STATIC_ID_HASH = (id) => {
     let h = 0;
     for (let i = 0; i < id.length; i++) h = (Math.imul(h, 31) + id.charCodeAt(i)) >>> 0;
-    return h % INDEX.shards;
+    return h;
   };
+  const shardOf = (id) => idHash(id) % INDEX.shards;
   const SHARDS = new Map();
   async function fullPlace(id, meta) {
     if (BYID && LOADING) { await LOADING; return BYID.get(id); }
@@ -86,7 +89,7 @@
     const n = shardOf(id);
     if (!SHARDS.has(n)) SHARDS.set(n, fetch(`data/places_${n}.json`).then((r) => r.json()));
     const r = (await SHARDS.get(n)).find((p) => p.id === id);
-    return r && expand({ ...r }, meta.place_kinds || {});
+    return r && expand({ ...r }, meta);
   }
 
   const fold = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");   // accents ignored

@@ -121,7 +121,7 @@ def detail(conn, material_id, data=None, limit=EXAMPLES):
     ex = [dict(_brief(r), via=r["via"], label=r["label"], place=r["place"], evidence=r["evidence"],
                too_early=too_early(r, m)) for r in dated[:limit]]
     return {
-        "material": m, "count": len(rows),
+        "material": m, "count": len(rows), "dated": len(dated),
         "by_nation": dict(Counter(r["nation"] or "Unknown" for r in rows).most_common()),
         "by_century": dict(sorted(Counter(century(r["year"]) for r in dated if not too_early(r, m)).items())),
         "via": dict(Counter(r["via"] for r in rows)),

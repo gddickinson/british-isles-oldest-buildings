@@ -308,6 +308,10 @@
       const res = await window.STATIC_PLACES(parts, u.searchParams, { meta: META, buildings: BYID });
       if (res !== undefined) return res;
     }
+    if (window.STATIC_TYPES) {
+      const res = await window.STATIC_TYPES(parts, { meta: META, buildings: BYID });
+      if (res !== undefined) return res;
+    }
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);

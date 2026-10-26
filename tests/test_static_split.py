@@ -53,8 +53,8 @@ class PlaceIndex(unittest.TestCase):
         from app.static_places import shard_of
         ids = ["Q42", "Q126713899", "pio-ruthin-school", "hed-12345", "mm-é-museum", "x"]
         src = Path("app/static/static_places.js").read_text()
-        body = src[src.index("const shardOf"):src.index("const SHARDS")]
-        js = f"const INDEX = {{shards: 16}}; {body}; console.log(JSON.stringify({json.dumps(ids)}.map(shardOf)))"
+        body = src[src.index("const idHash"):src.index("const SHARDS")]
+        js = f"const window = {{}}; const INDEX = {{shards: 16}}; {body}; console.log(JSON.stringify({json.dumps(ids)}.map(shardOf)))"
         got = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, check=True).stdout)
         self.assertEqual(got, [shard_of(i) for i in ids])
 

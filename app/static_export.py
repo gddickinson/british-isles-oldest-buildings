@@ -13,13 +13,14 @@ from bidb.categories import CATEGORY_GROUPS, CATEGORY_ORDER, GROUP_ORDER
 from bidb.classify import PERIOD_ORDER
 from bidb.config import DATA_DIR, ROOT, cache_dir
 
-from . import pages, static_places, static_pron, static_thumbs, static_tours
+from . import pages, static_places, static_pron, static_thumbs, static_tours, static_types
 from .server import app
 
 DIST = ROOT / "dist"
 PAGES = {"/": "index.html", "/map": "map.html", "/places": "places.html", "/people": "people.html", "/pronunciation": "pronunciation.html",
          "/history": "history.html", "/change": "change.html", "/trades": "trades.html", "/oldest": "oldest.html",
          "/stats": "stats.html", "/tours": "tours.html", "/stories": "stories.html", "/quiz": "quiz.html", "/compare": "compare.html", "/data": "data.html", "/glossary": "glossary.html",
+         "/types": "types.html",
          "/settings": "settings.html", "/help": "help.html"}
 EXTRACT_CHARS = 900          # keep the data file small enough to host
 SHARD_BYTES = 9_000_000      # each data file stays well under the host's 16 MB per-file limit
@@ -114,10 +115,11 @@ def export(thumb_limit=850):           # 1,100 until the change layers pushed th
             "build_info": info, "plan_shards": plan_shards, "plan_index": plan_index, **lazy,
             "row_shards": write_json_shards(rows, "buildings_rows"),
             "place_shards": static_places.export(conn, DIST / "data", write_json_shards),
-            "place_kinds": static_places.KIND_DEFAULTS}
+            "place_kinds": static_places.KIND_DEFAULTS, "url_prefixes": static_places.URL_PREFIXES}
     (DIST / "data" / "buildings.json").write_text(
         json.dumps({"meta": meta, "rows": []}, ensure_ascii=False, separators=(",", ":")))
     static_pron.export(conn, DIST / "data")
+    static_types.export(conn, DIST / "data")
     from bidb import evidence
     (DIST / "data" / "evidence.json").write_text(json.dumps(evidence.export(), ensure_ascii=False, separators=(",", ":")))
     ver = DATA_DIR / "verification.json"

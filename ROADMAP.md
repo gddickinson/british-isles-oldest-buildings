@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
-- Building types: 311 types, 309 links, 2,123 quotes; 15,713 records (69.8%) and 58,753 places typed, 247 of 285
+- Building types: 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
   isles types with examples, 220 with an earliest surviving example (BT1d).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -639,11 +639,26 @@ the descent of a type is disputed, both views are given and the link is drawn as
       names still count: "Skye, Dun Liath"); friars' houses ("Religious house - Dominican friars") now get the
       friary range. Applied to the database: 78 re-estimated (tower houses 1400, friaries 1224), 30 left undated;
       too-early type examples 521 → 504.
-- [ ] BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,
+- BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,
       jetty, close studding, wattle and daub), brick (bonds, from the 13th c. revival to the Victorian kilns), roofs
       (thatch, stone slate, slate, tile, pantile; roof trusses from crown post to king post), glass, iron and steel,
       concrete; each with dates, regions (the geology layer of the Change page says where stone came from), the
-      technology that made it possible (brick tax, railways, Portland cement) and catalogue examples.
+      technology that made it possible (brick tax, railways, Portland cement) and catalogue examples. Only 500 of
+      22,508 records have a Wikidata material (P186), so split 2026-10-26:
+- [x] BT3a (2026-10-26) The curated materials and techniques (`data/curated/building_types/materials_*.json`, five
+      research agents, one file each, reviewed here; checked by new `bidb/building_materials.py`; FISH Building
+      Materials and Components thesauri read by `fish_types.concepts(scheme)`): 99 materials and techniques (stone
+      18, mortar and render 6, earth 5, timber 13, brick and tile 20, roofs 19, glass 8, iron and steel 5, concrete
+      5; 73 with a FISH concept), 51 links (documented 39, probable 11, disputed 1: the brick tax and mathematical
+      tiles), 151 named examples, 978 quotes, all found. Periods with regions, technology (brick, window and glass
+      taxes, slate duty 1831, railways, patents) and geology; `earlier: true` where the first date is only the
+      earliest a source names (6). Two duplicated cross-file links merged, one single-building link dropped.
+      Details in `data/curated/building_types/README.md`.
+- [ ] BT3b Catalogue records and places linked to materials: Wikidata P186, the article text ("built of red
+      sandstone", "timber-framed"), register descriptions where held (HES/Cadw dates text, listing descriptions);
+      table `material_map`, earliest dated examples per material, counts by century (for BT5).
+- [ ] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
+      layer.
 - [ ] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
       its years; solid lines for documented descent, dashed for disputed), a type page per type (definition, how to
       recognise it, features, materials, plan, period chart, map of examples, the oldest surviving, family links,

@@ -1,0 +1,2686 @@
+{
+ "about": "Building materials (roadmap BT3a): Glass, Iron and steel, Concrete, and the cements (Roman and Portland, group Mortar and render). Fields as bidb/building_materials.py.",
+ "researched": "2026-10-26",
+ "materials": [
+  {
+   "id": "window-glass",
+   "name": "Window glass",
+   "group": "Glass",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97939"
+   },
+   "period": {
+    "text": "AD 43, the Roman conquest: Roman villas in Britain had glazed windows (window glass found at Carsington); after the Romans left it is found again from the late 7th century, with the first churches and monasteries; still in use",
+    "from": 43,
+    "ongoing": true
+   },
+   "technology": "Glass was taxed as a luxury: the window tax (England and Wales 1696, Scotland 1748, Ireland 1799; all repealed in 1851) and the glass excise (Great Britain 1746, on finished glass including windows from 1811, abolished in 1845; Ireland 1825-1845).",
+   "examples": [
+    {
+     "name": "Carsington Roman Villa",
+     "wikidata": "Q86752251",
+     "note": "Small glazed windows with shutters; window glass found in the excavations"
+    }
+   ],
+   "note": "The individual ways of making window glass follow as their own entries (broad sheet, crown, sheet, plate and float glass).",
+   "sources": [
+    {
+     "title": "Glass (FISH Building Materials thesaurus, concept 97939)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97939.html",
+     "locator": "scope note",
+     "quote": "Transparent, hard substance made by fusing soda-silica which solidifies from a molten state."
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Carsington Roman Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carsington_Roman_Villa",
+     "locator": "section \"Construction\"",
+     "quote": "It had small Roman windows (window glass was found in the excavations) with shutters",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "History of glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_glass",
+     "locator": "section \"Anglo-Saxon world\"",
+     "quote": "From the late 7th century onwards, window glass is found more frequently. This is directly related to the introduction of Christianity and the construction of churches and monasteries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Window tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Window_tax",
+     "locator": "lead",
+     "quote": "In England and Wales it was introduced in 1696 and in Scotland from 1748. It was repealed in both cases in 1851.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Window tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Window_tax",
+     "locator": "section \"History\"",
+     "quote": "In Ireland, the tax was introduced in 1799 and was not repealed until 1851. Similarly, a glass tax was introduced in 1825 and remained in place until 1845.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Glass tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glass_tax",
+     "locator": "lead",
+     "quote": "The glass tax was introduced in Great Britain in 1746",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Glass tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glass_tax",
+     "locator": "lead",
+     "quote": "glass tax was shifted by the Duties on Glass Act 1811 (51 Geo. 3. c. 69) to all products made from glass, for examples green glass bottles, windows and flint glass",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Glass tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glass_tax",
+     "locator": "lead",
+     "quote": "the glass tax was abolished by Sir Robert Peel's government by the Glass Duties Repeal Act 1845",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stained-glass",
+   "name": "Stained glass",
+   "group": "Glass",
+   "kind": "material",
+   "fish": {
+    "scheme": "com",
+    "id": "138280"
+   },
+   "period": {
+    "text": "675, the earliest known reference: Benedict Biscop's glaziers from France at Monkwearmouth (coloured glass of the late 7th century found there and at Jarrow); most medieval windows were smashed at the Reformation and the craft died out in England until the Gothic Revival of the early 19th century; still made",
+    "from": 675,
+    "ongoing": true
+   },
+   "technology": "Brought in: Benedict Biscop fetched glassmakers from Francia, who worked at Monkwearmouth. The Reformation's destruction ended the craft in England; the Catholic and Gothic revival and the church building of the 19th century revived it.",
+   "examples": [
+    {
+     "name": "St Paul's Church, Jarrow",
+     "wikidata": "Q17540662",
+     "note": "Anglo-Saxon chancel window made up from excavated fragments, called the oldest stained glass window in the world"
+    }
+   ],
+   "note": "The Monkwearmouth-Jarrow article dates the Jarrow fragments to 'about AD 600', which is before the monastery was founded (674/682); the stained glass article dates the finds to the late 7th century.",
+   "sources": [
+    {
+     "title": "Stained glass (FISH Components thesaurus, concept 138280)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138280.html",
+     "locator": "scope note",
+     "quote": "Glass that has been coloured by fusing glass with a metallic oxide film or by burning pigment into the surface."
+    },
+    {
+     "title": "Stained glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stained_glass",
+     "locator": "section \"Origins\"",
+     "quote": "The earliest known reference dates from 675 AD when Benedict Biscop imported workmen from France to glaze the windows of the monastery of St Peter which he was building at Monkwearmouth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stained glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stained_glass",
+     "locator": "section \"Origins\"",
+     "quote": "Hundreds of pieces of coloured glass and lead, dating back to the late 7th century, have been discovered here and at Jarrow.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Monkwearmouth–Jarrow Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monkwearmouth–Jarrow_Abbey",
+     "locator": "section \"Foundation\"",
+     "quote": "Benedict wanted glass windows, which were also then unusual in England, so he brought glassmakers also from Francia.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Monkwearmouth–Jarrow Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monkwearmouth–Jarrow_Abbey",
+     "locator": "section \"Today\"",
+     "quote": "the Anglo-Saxon chancel survives, with the oldest stained glass window in the world, made from excavated fragments dating from about AD 600",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Stained glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stained_glass",
+     "locator": "section \"Renaissance, Reformation and Classical windows\"",
+     "quote": "With the latter wave of destruction the traditional methods of working with stained glass died, and were not rediscovered in England until the early 19th century.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Stained glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stained_glass",
+     "locator": "section \"Revival in Great Britain and Ireland\"",
+     "quote": "This brought about a great demand for the revival of the art of stained-glass window making.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cylinder-glass",
+   "name": "Broad sheet (cylinder) glass",
+   "group": "Glass",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "1226, when broad sheet glass was first made in the isles, at Chiddingfold in the Weald; making it there slowly declined and ceased by the early 16th century (about 1525)",
+    "from": 1226,
+    "to": 1525
+   },
+   "regions": {
+    "text": "The Weald: Chiddingfold, Surrey, on the border with Sussex",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A blown cylinder cut open and flattened on an iron plate; small, imperfect, mostly translucent pieces set in lead. The Weald had suitable sand, bracken ash for the alkali and beech charcoal for the kiln.",
+   "examples": [
+    {
+     "name": "Westminster Abbey",
+     "wikidata": "Q5933",
+     "year": 1240,
+     "note": "An order was placed for Wealden broad glass"
+    }
+   ],
+   "note": "Romans made window glass by the same muff (cylinder) process from the late 3rd century. Leadlight says domestic windows were of broad or cylinder glass until crown glass was first made in England in 1678, so broad glass was still glazed after Wealden making ended (imported glass: cylinder glass came from France and Germany in the 18th century). The 19th-century cylinder blown sheet is 'Sheet glass'.",
+   "sources": [
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "lead",
+     "quote": "Broad sheet glass is a type of blown glass that was used for windows prior to the development of plate glass."
+    },
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "the ends are cut off and the resulting cylinder is split with shears and flattened on an iron plate",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "Broad sheet glass was first made in the UK in Chiddingfold, Surrey on the border with Sussex in 1226.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "The choice of this location may have been due to the availability of suitable sand and the abundance of bracken",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "In 1240 an order was placed for this glass to be used in Westminster Abbey.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "Manufacture slowly decreased and ceased by the early 16th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Leadlight",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leadlight",
+     "locator": "section \"15th–17th centuries\"",
+     "quote": "Domestic windows were generally small and were made of broad glass or cylinder glass before crown glass was first made in England in 1678.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_glass",
+     "locator": "section \"Tesserae and window glass\"",
+     "quote": "from the late 3rd century onwards window glass was made by the muff process, where a blown cylinder was cut laterally and flattened out to produce a sheet"
+    },
+    {
+     "title": "Cylinder blown sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cylinder_blown_sheet_glass",
+     "locator": "section \"Manufacture\"",
+     "quote": "It had been manufactured in France and Germany (and imported to the UK) since the 18th century."
+    }
+   ]
+  },
+  {
+   "id": "crown-glass",
+   "name": "Crown glass",
+   "group": "Glass",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "1678, when crown glass was first made in London (the technique came from Normandy in the 17th century); it dominated window glass until the 19th century, and the hand-blown methods lasted at least until the end of the 19th century (about 1900)",
+    "from": 1678,
+    "to": 1900
+   },
+   "regions": {
+    "text": "London from 1678; later St Helens (St Helens Crown Glass Company, 1826) and Smethwick (Chance's Spon Lane works, a crown glass works bought in 1822)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A blown globe spun flat into a disc up to 5-6 feet across, cut into small panes (the thick centre, the bullseye, for cheap windows); the method was kept a trade secret by Venice and Normandy. Taxed by the glass excise (1746-1845) and, through the windows it filled, the window tax (1696-1851).",
+   "sources": [
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "lead",
+     "quote": "Crown glass is a type of hand-blown glass that was used in windows prior to the development of sheet window glass production."
+    },
+    {
+     "title": "Architectural glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_glass",
+     "locator": "section \"Timeline of modern architectural glass development\"",
+     "quote": "1678: \"Crown glass\" first produced in London. This process dominated until the 19th century.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "section \"History\"",
+     "quote": "from Normandy the crown glass technique made its way to England in the 17th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "section \"History\"",
+     "quote": "The medieval glass centers of Venice and Normandy were major producers of crown glass in Europe and kept their methods as a trade secret.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "section \"Manufacture\"",
+     "quote": "flattened by reheating and spinning out the bowl-shaped piece of glass (bullion) into a flat disk by centrifugal force",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "section \"Window glass types\"",
+     "quote": "These methods of manufacture lasted at least until the end of the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of St Helens, Merseyside",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_St_Helens,_Merseyside",
+     "locator": "section \"The Glassmaking Industry (1688–Present)\"",
+     "quote": "in 1826 with the establishment of the St Helens Crown Glass Company by William Pilkington",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Chance Brothers",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chance_Brothers",
+     "locator": "section \"19th century\"",
+     "quote": "bought the British Crown Glass Company's works in Spon Lane in November 1822. The company specialised in making crown window glass.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Glass tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glass_tax",
+     "locator": "lead",
+     "quote": "The glass tax was introduced in Great Britain in 1746",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Window tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Window_tax",
+     "locator": "lead",
+     "quote": "In England and Wales it was introduced in 1696 and in Scotland from 1748. It was repealed in both cases in 1851.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sheet-glass",
+   "name": "Sheet glass (cylinder blown sheet)",
+   "group": "Glass",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "1832, when Chance Brothers made the first British cylinder blown sheet glass; machine-drawn cylinder sheet was made under licence by Pilkington from 1910; float glass replaced the older methods once it sold at full scale from 1960",
+    "from": 1832,
+    "to": 1960
+   },
+   "regions": {
+    "text": "Smethwick (Chance Brothers), St Helens (Pilkington)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "French and Belgian glassblowers brought the cylinder process; Paxton's order for a large greenhouse at Chatsworth led Chance to make very long panes (about 1848), and so to the Crystal Palace, whose plan was set by the size of the pane.",
+   "types": [
+    "glasshouse"
+   ],
+   "examples": [
+    {
+     "name": "The Crystal Palace",
+     "wikidata": "Q202902",
+     "year": 1851,
+     "note": "293,000 panes by Chance Brothers, the largest then available (10 by 49 inches); destroyed 1936"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Cylinder blown sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cylinder_blown_sheet_glass",
+     "locator": "lead",
+     "quote": "Cylinder blown sheet is a type of hand-blown window glass in which glass is blown into a cylinder shape which is then cut lengthwise and opened flat."
+    },
+    {
+     "title": "Chance Brothers",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chance_Brothers",
+     "locator": "section \"19th century\"",
+     "quote": "In 1832, it made the first British cylinder blown sheet glass using French and Belgian workers.",
+     "about": [
+      "period",
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "History of glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_glass",
+     "locator": "section \"Industrial production\"",
+     "quote": "It was manufactured under licence in the UK by Pilkington from 1910 onwards.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Float glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Float_glass",
+     "locator": "section \"History\"",
+     "quote": "Full scale profitable sales of float glass were first achieved in 1960, and in the 1960s the process was licensed throughout the world, replacing previous production methods.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chance Brothers",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chance_Brothers",
+     "locator": "section \"Large glass\"",
+     "quote": "Chance was one of the first companies to produce very long pieces of window glass, following technology developed as a result of finding a solution for an order from Joseph Paxton for a large greenhouse on the Chatsworth estate",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "The Crystal Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace",
+     "locator": "lead",
+     "quote": "The 293,000 panes of glass were manufactured by Chance Brothers.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "The Crystal Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace",
+     "locator": "section \"Design\"",
+     "quote": "the shape and size of the whole building was directly based around the size of the panes of glass made by the supplier, Chance Brothers of Smethwick",
+     "about": [
+      "example",
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plate-glass",
+   "name": "Polished plate glass",
+   "group": "Glass",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "1773, when the British Cast Plate Glass Company was authorised at Ravenhead, St Helens (blown plate had been made in London since the 1620s, for mirrors and coach plates); rolled plate followed in 1847; replaced by float glass once it sold at full scale from 1960",
+    "from": 1773,
+    "to": 1960
+   },
+   "regions": {
+    "text": "Ravenhead, St Helens, Lancashire",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Cast on an iron table, then ground flat and polished, an expensive process; a casting hall built by French technicians from St Gobain. James Hartley's rolled plate (1847) roofed railway stations.",
+   "types": [
+    "railway-station"
+   ],
+   "note": "The History of St Helens gives 1773 for the company's authorisation and its casting hall, the St Helens article 1786 for its operations there. Hartley's rolled plate patent is dated 1838 by the Architectural glass article, 1847 by History of glass.",
+   "sources": [
+    {
+     "title": "Architectural glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_glass",
+     "locator": "section \"Polished plate glass\"",
+     "quote": "The polished plate glass process starts with sheet or rolled plate glass.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Architectural glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_glass",
+     "locator": "section \"Polished plate glass\"",
+     "quote": "These rough panes were ground flat and then polished clear. This was a fairly expensive process.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "History of St Helens, Merseyside",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_St_Helens,_Merseyside",
+     "locator": "section \"The Glassmaking Industry (1688–Present)\"",
+     "quote": "in 1773 when the British Parliament and the Crown authorized the establishment of the \"British Cast Plate Glass Company\" at Ravenhead",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "History of St Helens, Merseyside",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_St_Helens,_Merseyside",
+     "locator": "section \"The Glassmaking Industry (1688–Present)\"",
+     "quote": "Operating out of a massive, castle-like casting hall constructed by French manufacturing technicians imported from St. Gobain",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Architectural glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_glass",
+     "locator": "section \"Timeline of modern architectural glass development\"",
+     "quote": "1620s: \"Blown plate\" first produced in London. Used for mirrors and coach plates.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_glass",
+     "locator": "section \"Industrial production\"",
+     "quote": "James Hartley introduced the Rolled Plate method in 1847. This allowed a ribbed finish and was often used for extensive glass roofs such as within railway stations.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Float glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Float_glass",
+     "locator": "section \"History\"",
+     "quote": "Full scale profitable sales of float glass were first achieved in 1960, and in the 1960s the process was licensed throughout the world, replacing previous production methods.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "float-glass",
+   "name": "Float glass",
+   "group": "Glass",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "1959, when float glass was launched in the UK (developed 1953-1957 at Pilkington's Cowley Hill Works, St Helens; full-scale profitable sales from 1960); now most of the world's flat glass",
+    "from": 1959,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Invented at St Helens, Lancashire; licensed worldwide in the 1960s",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Molten glass poured onto a bath of molten tin flows flat under its own weight, giving a smooth face on both sides without grinding or polishing.",
+   "sources": [
+    {
+     "title": "Float glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Float_glass",
+     "locator": "lead",
+     "quote": "Float glass is a sheet of glass made by floating molten glass on a bed of molten metal of a low melting point, typically tin"
+    },
+    {
+     "title": "Architectural glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_glass",
+     "locator": "section \"Timeline of modern architectural glass development\"",
+     "quote": "1959: Float glass launched in UK. Invented by Sir Alastair Pilkington.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Float glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Float_glass",
+     "locator": "section \"History\"",
+     "quote": "Between 1953 and 1957, at the Cowley Hill Works St Helens, Lancashire, Sir Alastair Pilkington and Kenneth Bickerstaff of the UK's Pilkington Brothers developed the first successful commercial application for forming a continuous ribbon of glass using a molten tin bath",
+     "about": [
+      "period",
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Architectural glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_glass",
+     "locator": "section \"Float glass\"",
+     "quote": "Ninety percent of the world's flat glass is produced by the float glass process invented in the 1950s by Sir Alastair Pilkington of Pilkington Glass",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sash-window",
+   "name": "Sash window",
+   "group": "Glass",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "138197"
+   },
+   "period": {
+    "text": "The 1670s, the oldest surviving examples (Palace House, Newmarket, and Ham House); common in Georgian and Victorian houses, and still made",
+    "from": 1670,
+    "ongoing": true
+   },
+   "technology": "Sliding sashes balanced by hidden weights on cords over pulleys; late Victorian and Edwardian suburban houses used standard units about 4 feet wide.",
+   "examples": [
+    {
+     "name": "Ham House",
+     "wikidata": "Q1572552",
+     "year": 1670,
+     "note": "Sash windows of the 1670s"
+    },
+    {
+     "name": "Palace House, Newmarket",
+     "year": 1670,
+     "note": "Sash windows of the 1670s"
+    }
+   ],
+   "note": "Who invented the sash is unknown: Robert Hooke is sometimes credited without conclusive evidence, others see it as Dutch, and H. J. Louw thought it was developed in England.",
+   "sources": [
+    {
+     "title": "Sash window (FISH Components thesaurus, concept 138197)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138197.html",
+     "locator": "scope note",
+     "quote": "A window with a frame for holding the glass, capable of being raised and lowered in vertical grooves."
+    },
+    {
+     "title": "Sash window",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sash_window",
+     "locator": "section \"History\"",
+     "quote": "The oldest surviving examples of sash windows were installed in England in the 1670s, for example at Palace House, and Ham House.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Sash window",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sash_window",
+     "locator": "section \"History\"",
+     "quote": "The sash window is often found in Georgian and Victorian houses",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Window",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Window",
+     "locator": "section \"Design trends\"",
+     "quote": "In the 17th century in Europe, window designs had greater height than width, with timber frames being popular and sash windows were introduced.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sash window",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sash_window",
+     "locator": "section \"Box sash window\"",
+     "quote": "the weight of the glazed panel is usually balanced by a heavy steel, lead, or cast-iron sash weight or counter-weight concealed within the window frame",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Sash window",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sash_window",
+     "locator": "section \"History\"",
+     "quote": "Innumerable late Victorian and Edwardian suburban houses were built in England using standard sash window units approximately 4 feet (1.2 m) in width",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wrought-iron",
+   "name": "Wrought iron",
+   "group": "Iron and steel",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98305"
+   },
+   "period": {
+    "text": "About 800 BC, the start of the British Iron Age (the bloomery made wrought iron directly from ore); a structural material from the puddling process of 1784 until the 1880s; the last puddling works, Atlas Forge in Bolton, closed in 1973 (some is still recycled from scrap for restoration)",
+    "from": -800,
+    "flourish": [
+     1784,
+     1889
+    ],
+    "to": 1973
+   },
+   "technology": "Bloomery, then finery forge; Henry Cort's puddling furnace (1784) made it with coal instead of charcoal and cheap enough for beams, bridges and rails; cheap Bessemer and open-hearth steel replaced it.",
+   "types": [
+    "palm-house"
+   ],
+   "examples": [
+    {
+     "name": "Palm House, Kew Gardens",
+     "wikidata": "Q17528039",
+     "year": 1848,
+     "note": "The first large-scale structural use of wrought iron"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wrought iron (FISH Building Materials thesaurus, concept 98305)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98305.html",
+     "locator": "scope note",
+     "quote": "The oldest form of iron, it is a tough, pure form of iron that can be fashioned into decorative items or shapes by hammering, squeezing or rolling."
+    },
+    {
+     "title": "British Iron Age",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/British_Iron_Age",
+     "locator": "lead",
+     "quote": "The Iron Age in Great Britain spanned from c. 800 BC until the Roman period in the 1st century AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "section \"Terminology\"",
+     "quote": "While the bloomery process produced wrought iron directly from ore",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "section \"Puddling process\"",
+     "quote": "The most successful of those was puddling, using a puddling furnace (a variety of the reverberatory furnace), which was invented by Henry Cort in 1784.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Use with wrought iron\"",
+     "quote": "The puddling process, patented in 1784, was a relatively low cost method for producing a structural grade wrought iron.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "section \"Decline\"",
+     "quote": "Iron remained dominant for structural applications until the 1880s",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "section \"Decline\"",
+     "quote": "The last in the world was the Atlas Forge of Thomas Walmsley and Sons in Bolton, Great Britain, which closed in 1973.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "lead",
+     "quote": "straps for timber roof trusses, and ornamental ironwork"
+    },
+    {
+     "title": "Palm House, Kew Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
+     "locator": "lead",
+     "quote": "It was also the first large-scale structural use of wrought iron.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cast-iron",
+   "name": "Cast iron",
+   "group": "Iron and steel",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97805"
+   },
+   "period": {
+    "text": "About 1500: FISH dates cast iron from the 15th century, and in England it was first cast for cannon and shot in the Reformation (Wealden blast furnaces); a structural material from the Iron Bridge (1779) until it was replaced by steel in about 1900",
+    "from": 1500,
+    "flourish": [
+     1779,
+     1900
+    ],
+    "to": 1900
+   },
+   "regions": {
+    "text": "The Weald (until the 1760s), then Shropshire (Coalbrookdale) and the coalfields",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Abraham Darby's coke smelting at Coalbrookdale (1709) and steam-pumped blast from 1743 made it cheap; strong in compression but brittle in tension, so columns and arches. Bridge failures (Dee 1847, Tay 1879, Norwood Junction 1891) ended its use under railways.",
+   "types": [
+    "iron-bridge",
+    "fireproof-mill",
+    "pier"
+   ],
+   "examples": [
+    {
+     "name": "The Iron Bridge",
+     "wikidata": "Q99200",
+     "year": 1779,
+     "note": "First major bridge in the world made of cast iron; opened 1781"
+    },
+    {
+     "name": "Royal Pavilion",
+     "wikidata": "Q62364",
+     "year": 1816,
+     "note": "Cast-iron columns and beams, built 1816-1823"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Cast iron (FISH Building Materials thesaurus, concept 97805)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97805.html",
+     "locator": "scope note",
+     "quote": "Dating from the 15th century, it is a hard alloy of iron and carbon, melted and shaped into various moulded forms."
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "lead",
+     "quote": "During the 15th century AD, cast iron was utilized for cannons and shot in Burgundy, France, and in England during the Reformation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "section \"Finery process\"",
+     "quote": "From there, it spread via the Pays de Bray on the boundary of Normandy and then to the Weald in England.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"History\"",
+     "quote": "The ironmasters of the Weald continued producing cast irons until the 1760s",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "section \"Background\"",
+     "quote": "Abraham Darby I first smelted local iron ore with coke made from Coalbrookdale coal in 1709",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"History\"",
+     "quote": "Application of the steam engine to power blast bellows (indirectly by pumping water to a waterwheel) in Britain, beginning in 1743 and increasing in the 1750s, was a key factor in increasing the production of cast iron",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Cast-iron bridges\"",
+     "quote": "The use of cast iron for structural purposes began in the late 1770s, when Abraham Darby III built The Iron Bridge",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "lead",
+     "quote": "Opened in 1781, it was the first major bridge in the world to be made of cast iron.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Early use in buildings\"",
+     "quote": "up until it was finally replaced by steel in about 1900",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Cast-iron bridges\"",
+     "quote": "Thousands of cast-iron rail underbridges were eventually replaced by steel equivalents by 1900 owing to the widespread concern about cast iron under bridges on the rail network in Britain.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Early use in buildings\"",
+     "quote": "notably in the Royal Pavilion in Brighton, designed by John Nash and built between 1816 and 1823, where cast iron columns were used within the walls, as well as cast iron beams",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Piers\"",
+     "quote": "Cast iron was also used as the principle support structure for seaside piers"
+    }
+   ]
+  },
+  {
+   "id": "iron-frame",
+   "name": "Iron frame (fireproof construction)",
+   "group": "Iron and steel",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "1797, Ditherington Flax Mill, Shrewsbury (built 1796-1797), the first iron-framed building; cast-iron columns became usual in mills, warehouses and commercial buildings until steel replaced them in about 1900",
+    "from": 1797,
+    "to": 1900
+   },
+   "technology": "Textile mills full of flammable fibre burnt down; columns and beams of cast iron with brick arches made them non-combustible, and slender columns opened up the floors. Wrought-iron beams took the tension once puddled iron was cheap.",
+   "types": [
+    "fireproof-mill"
+   ],
+   "examples": [
+    {
+     "name": "Ditherington Flax Mill",
+     "wikidata": "Q1839955",
+     "year": 1797,
+     "note": "First iron-framed building in the world; architect Charles Bage, castings by William Hazledine"
+    },
+    {
+     "name": "The Crystal Palace",
+     "wikidata": "Q202902",
+     "year": 1851,
+     "note": "Prefabricated cast iron and glass; destroyed 1936"
+    },
+    {
+     "name": "Shed No. 78, Sheerness Dockyard",
+     "wikidata": "Q17530099",
+     "year": 1860,
+     "note": "Built 1856-1860; said to be the earliest surviving multi-storey iron-frame building"
+    }
+   ],
+   "note": "Cast-iron architecture dates Ditherington to 1795; its own article and Steel frame give 1796-1797 and 1797.",
+   "sources": [
+    {
+     "title": "Shrewsbury Flaxmill Maltings",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Flaxmill_Maltings",
+     "locator": "lead",
+     "quote": "It was the first iron-framed building in the world",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Shrewsbury Flaxmill Maltings",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Flaxmill_Maltings",
+     "locator": "section \"History\"",
+     "quote": "The construction of the mill ran from 1796 to 1797",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Steel frame",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steel_frame",
+     "locator": "section \"History\"",
+     "quote": "The first iron-framed building, Ditherington Flax Mill, had been built in 1797",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Textile mills\"",
+     "quote": "The solution was to build them completely of non-combustible materials, and it was found convenient to provide the building with an iron frame, largely of cast iron, replacing flammable wood.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Early use in buildings\"",
+     "quote": "it became ubiquitous in the multi-level mills of northern England, and then across Europe and the United States",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Early use in buildings\"",
+     "quote": "up until it was finally replaced by steel in about 1900",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Use with wrought iron\"",
+     "quote": "Puddled wrought iron was a much better structural material, and was preferred for bridges, rails, ships and building beams, and was often used in combination with cast iron, which was better in compression.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "The Crystal Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace",
+     "locator": "lead",
+     "quote": "The Crystal Palace was a cast iron and plate glass structure",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Shed Number 78, Sheerness Dockyard",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shed_Number_78,_Sheerness_Dockyard",
+     "locator": "section \"History\"",
+     "quote": "the building is said to be the earliest surviving example of a multi-storey iron-frame building in the world",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "steel",
+   "name": "Steel",
+   "group": "Iron and steel",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98213"
+   },
+   "period": {
+    "text": "1856, Bessemer's patent, which first made steel cheap enough to build with (steel had been made in small amounts since the Iron Age, at Broxmouth 490-375 BC, and by cementation in England from about 1614); the Forth Bridge (1882-1890) was the first major structure in Britain built of it; still the main structural metal",
+    "from": 1856,
+    "ongoing": true
+   },
+   "technology": "The Bessemer converter cut the price from £40 to £6-7 a ton; brittle Bessemer steel gave way to Siemens-Martin open-hearth steel for structures, and open hearth had superseded Bessemer in the UK by 1900. Basic oxygen steelmaking replaced both from the 1950s.",
+   "examples": [
+    {
+     "name": "Forth Bridge",
+     "wikidata": "Q275",
+     "year": 1882,
+     "note": "Built 1882-1890; steel from Siemens' Landore works and the Steel Company of Scotland"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Steel (FISH Building Materials thesaurus, concept 98213)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98213.html",
+     "locator": "scope note",
+     "quote": "An alloy of iron and carbon, its strength makes it suitable for load bearing purposes. It is primarily used in structural steelwork and concrete reinforcement."
+    },
+    {
+     "title": "Bessemer process",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bessemer_process",
+     "locator": "lead",
+     "quote": "the Englishman Henry Bessemer, who took out a patent on the process in 1856",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bessemer process",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bessemer_process",
+     "locator": "section \"Importance\"",
+     "quote": "Before it was introduced, steel was far too expensive to make bridges or the framework for buildings and thus wrought iron had been used throughout the Industrial Revolution.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Bessemer process",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bessemer_process",
+     "locator": "section \"Importance\"",
+     "quote": "The Bessemer process revolutionized steel manufacture by decreasing its cost, from £40 per long ton to £6–7 per long ton",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Bessemer process",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bessemer_process",
+     "locator": "section \"Importance\"",
+     "quote": "Open-hearth steel was suitable for structural applications.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Open-hearth furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Open-hearth_furnace",
+     "locator": "section \"Decline and current operations\"",
+     "quote": "Open-hearth steelmaking had superseded the Bessemer process in UK by 1900",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Open-hearth furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Open-hearth_furnace",
+     "locator": "section \"Decline and current operations\"",
+     "quote": "It rapidly superseded both the Bessemer and Siemens–Martin processes in western Europe from the 1950s",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Steel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steel",
+     "locator": "section \"Ancient\"",
+     "quote": "High-carbon steel was produced in Britain at Broxmouth Hillfort from 490 to 375 BC",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Steel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steel",
+     "locator": "section \"Processes starting from bar iron\"",
+     "quote": "The process was introduced to England in about 1614",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Forth Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Forth_Bridge",
+     "locator": "section \"Materials\"",
+     "quote": "The bridge was the first major structure in Britain to be constructed of steel",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Forth Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Forth_Bridge",
+     "locator": "lead",
+     "quote": "Construction of the bridge began in 1882 and it was opened on 4 March 1890",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Forth Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Forth_Bridge",
+     "locator": "section \"Materials\"",
+     "quote": "was to come from Siemens' steel works in Landore, Wales and the remainder from the Steel Company of Scotland's works near Glasgow",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "steel-frame",
+   "name": "Steel frame",
+   "group": "Iron and steel",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "1896, when the Royal Insurance Building in Liverpool (erected 1896-1903), the first to use a steel frame in the United Kingdom, was begun; in London the Savoy Hotel extension (1903-1904) came first; still the usual frame of large buildings",
+    "from": 1896,
+    "ongoing": true
+   },
+   "technology": "Cheap structural steel; the frame carries the floors and walls so that masonry is only a facing, and rooms can be free of columns. The early London frames used American materials and engineers such as Sven Bylander.",
+   "examples": [
+    {
+     "name": "Royal Insurance Building, Liverpool",
+     "wikidata": "Q7374338",
+     "year": 1896,
+     "note": "First steel frame in the UK; the general office is free of columns"
+    },
+    {
+     "name": "The Ritz London",
+     "wikidata": "Q1481002",
+     "year": 1906,
+     "note": "One of the earliest substantial steel-frame structures in London"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Steel frame",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steel_frame",
+     "locator": "section \"History\"",
+     "quote": "The Royal Insurance Building in Liverpool designed by James Francis Doyle in 1895 (erected 1896–1903) was the first to use a steel frame in the United Kingdom.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Royal Insurance Building, Liverpool",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Insurance_Building,_Liverpool",
+     "locator": "section \"Architecture\"",
+     "quote": "The interior contains the former General Office on the ground floor which, because of the steel frame, is free from any columns.",
+     "about": [
+      "example",
+      "technology"
+     ]
+    },
+    {
+     "title": "The Ritz Hotel, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Ritz_Hotel,_London",
+     "locator": "section \"Construction and early history\"",
+     "quote": "It was one of the earliest substantial steel frame structures in London, the Savoy Hotel extension of 1903-04 being the first in the capital.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "The Ritz Hotel, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Ritz_Hotel,_London",
+     "locator": "section \"Construction and early history\"",
+     "quote": "Many of the materials used in the construction of the hotel were US-made.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "The Ritz Hotel, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Ritz_Hotel,_London",
+     "locator": "section \"Construction and early history\"",
+     "quote": "with engineering collaboration by the Swedish engineer Sven Bylander",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Steel frame",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steel_frame",
+     "locator": "lead",
+     "quote": "Steel frame is a building technique with a \"skeleton frame\" of vertical steel columns and horizontal I-beams"
+    }
+   ]
+  },
+  {
+   "id": "roman-concrete",
+   "name": "Roman concrete (opus caementicium)",
+   "group": "Concrete",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97840"
+   },
+   "period": {
+    "text": "AD 49-60, the podium of the Temple of Claudius at Colchester, the earliest dated example a source names; until 410, the end of Roman rule; lime mortar and concrete went on afterwards, but of lower quality",
+    "from": 49,
+    "to": 410
+   },
+   "technology": "Lime with aggregate (rubble, broken tile) laid or poured in trenches and behind facings; in Italy with volcanic pozzolana, which Britain lacked.",
+   "examples": [
+    {
+     "name": "Temple of Claudius, Colchester",
+     "wikidata": "Q764886",
+     "year": 49,
+     "note": "Podium of mortar and stone poured into trenches; now the base of Colchester Castle"
+    }
+   ],
+   "note": "The temple's article calls the podium 'a mix of mortar and stone' poured into trenches and links it to Roman concrete.",
+   "sources": [
+    {
+     "title": "Concrete (FISH Building Materials thesaurus, concept 97840)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97840.html",
+     "locator": "scope note",
+     "quote": "Composed of sand, stones or other aggregate and cement mixed with water which sets in a hard mass. The material is usually associated with modern building but was developed by Romans where cement was obtained from quicklime."
+    },
+    {
+     "title": "Roman concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_concrete",
+     "locator": "lead",
+     "quote": "Roman concrete, also called opus caementicium, was used in construction in ancient Rome."
+    },
+    {
+     "title": "Temple of Claudius, Colchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Temple_of_Claudius,_Colchester",
+     "locator": "lead",
+     "quote": "The main building was constructed between 49 and 60 AD",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Temple of Claudius, Colchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Temple_of_Claudius,_Colchester",
+     "locator": "section \"Construction\"",
+     "quote": "The podium of the temple was constructed by pouring a mix of mortar and stone into trenches cut into the ground.",
+     "about": [
+      "period",
+      "example",
+      "technology"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concrete",
+     "locator": "section \"Middle Ages\"",
+     "quote": "It is thought that low kiln temperatures in the burning of lime, lack of pozzolana, poor mixing, and an Anglo-Saxon culture of timber construction all contributed to a decline in the quality of concrete and mortar there, but it did not become a lost art.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concrete",
+     "locator": "section \"Classical era\"",
+     "quote": "During the Roman Empire, Roman concrete (or opus caementicium) was made from quicklime, pozzolana, and an aggregate of pumice.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roman-cement",
+   "name": "Roman cement",
+   "group": "Mortar and render",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98156"
+   },
+   "period": {
+    "text": "1796, James Parker's patent (developed in the 1780s); used for 19th-century building work, above all stucco, until Portland cement took over (about 1900; no end date is given)",
+    "from": 1796,
+    "to": 1900
+   },
+   "regions": {
+    "text": "Northfleet, Kent, and the Thames; septaria from the London Clay",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A natural cement from burnt septaria nodules ground to powder; with sand it set in 5-15 minutes, even under water, so it served for stucco fronts and waterworks.",
+   "sources": [
+    {
+     "title": "Roman cement (FISH Building Materials thesaurus, concept 98156)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98156.html",
+     "locator": "scope note",
+     "quote": "Technically a quick setting hydraulic cement or lime,but term has been adapted to denote cement made from burning lumps of marl found in London clay,a technique adopted for C19th building work. Name not intended to denote a relationship with Roman period"
+    },
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "lead",
+     "quote": "Roman cement is a substance developed by James Parker in the 1780s, being patented in 1796.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "lead",
+     "quote": "This product, made into a mortar with sand, sets in 5–15 minutes.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "section \"History\"",
+     "quote": "His second patent in 1796 \"A certain Cement or Terras to be used in Aquatic and other Buildings and Stucco Work\", covers Roman cement",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "section \"History\"",
+     "quote": "He set up his manufacturing plant on Northfleetcreek, Kent.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "section \"History\"",
+     "quote": "There has been recent resurgence of interest in natural cements and Roman cements due mainly to the need for repair of façades done in this material in the 19th century.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "portland-cement",
+   "name": "Portland cement",
+   "group": "Mortar and render",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98121"
+   },
+   "period": {
+    "text": "1824, Joseph Aspdin's patent of 21 October 1824 (the name is in a directory of 1823); modern Portland cement came from William Aspdin's work of the 1840s and Isaac Charles Johnson's; now the usual cement of mortar and concrete",
+    "from": 1824,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Leeds and Wakefield (Aspdin, 1825); the Thames: Rotherhithe (William Aspdin, 1843) and Swanscombe (Johnson); later Gateshead",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Grew out of Smeaton's hydraulic-lime experiments (1756) and the natural cements; limestone and clay burnt to clinker at a higher heat. The 1859 London sewer specification set its standard, and the rotary kiln (Ransome, 1885) made it stronger and more uniform.",
+   "note": "Who invented 'true' Portland cement is disputed: Joseph Aspdin's 1824 cement was 'nothing like modern Portland cement'; his son William is regarded as the inventor of modern Portland cement; Isaac Charles Johnson claimed to be, and is 'generally recognised as such'.",
+   "sources": [
+    {
+     "title": "Portland cement (FISH Building Materials thesaurus, concept 98121)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98121.html",
+     "locator": "scope note",
+     "quote": "A form of cement originally named since it was said to be like Portland Stone in appearance."
+    },
+    {
+     "title": "Joseph Aspdin",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Joseph_Aspdin",
+     "locator": "lead",
+     "quote": "obtained the patent for Portland cement on 21 October 1824",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "section \"History\"",
+     "quote": "The name Portland cement is recorded in a directory published in 1823 being associated with a William Lockwood and possibly others.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "lead",
+     "quote": "It was developed from other types of hydraulic lime in England in the early 19th century by Joseph Aspdin",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "lead",
+     "quote": "His son William Aspdin is regarded as the inventor of \"modern\" Portland cement due to his developments in the 1840s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "section \"History\"",
+     "quote": "Aspdin's cement was nothing like modern Portland cement, but a first step in the development of modern Portland cement",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Isaac Charles Johnson",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Isaac_Charles_Johnson",
+     "locator": "lead",
+     "quote": "was able to claim that he was the inventor of \"true\" Portland cement and is generally recognised as such",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Joseph Aspdin",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Joseph_Aspdin",
+     "locator": "section \"Life\"",
+     "quote": "he set up a production plant for this product in Kirkgate, Wakefield",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "section \"History\"",
+     "quote": "In 1843, he set up a manufacturing plant at Rotherhithe, southeast London",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Isaac Charles Johnson",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Isaac_Charles_Johnson",
+     "locator": "lead",
+     "quote": "In 1833 he became manager of John Bazeley White's cement plant at Swanscombe on the Thames Estuary",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "section \"History\"",
+     "quote": "The development of modern Portland cement (sometimes called ordinary or normal Portland cement) began in 1756, when John Smeaton experimented",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "section \"History\"",
+     "quote": "In 1859, John Grant of the Metropolitan Board of Works, set out requirements for cement to be used in the London sewer project.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "section \"History\"",
+     "quote": "the introduction of the rotary kiln, patented by Frederick Ransome in 1885 (U.K.) and 1886 (U.S.); which allowed a stronger, more homogeneous mixture",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mass-concrete",
+   "name": "Mass concrete",
+   "group": "Concrete",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97840"
+   },
+   "period": {
+    "text": "In Britain the name for early unreinforced concrete cast in situ, used mainly between 1850 and 1900 (the years a source gives); Glenfinnan Viaduct, built 1897-1901, is of it",
+    "from": 1850,
+    "to": 1900
+   },
+   "technology": "Concrete poured into shuttering, strong in compression but weak in tension: walls, and works that need weight, such as dams, reservoirs, retaining walls and harbours; arches carried the loads.",
+   "types": [
+    "railway-viaduct"
+   ],
+   "examples": [
+    {
+     "name": "Glenfinnan Viaduct",
+     "wikidata": "Q1155735",
+     "year": 1897,
+     "note": "21 semicircular spans of 50 feet, the longest concrete railway bridge in Scotland"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Mass concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mass_concrete",
+     "locator": "section \"History\"",
+     "quote": "Historically, in Britain, mass concrete designated early concrete with no reinforcement cast in situ using shuttering. It was used mainly between 1850 and 1900 on a variety of buildings, mainly as a walling material or where mass was required for gravity such as in dams, reservoirs, retaining walls and maritime structures.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Glenfinnan Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glenfinnan_Viaduct",
+     "locator": "lead",
+     "quote": "built from 1897 to 1901",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Glenfinnan Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glenfinnan_Viaduct",
+     "locator": "section \"Design\"",
+     "quote": "The viaduct is built from mass concrete, and has 21 semicircular spans of 50 feet (15 m).",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Glenfinnan Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glenfinnan_Viaduct",
+     "locator": "section \"Design\"",
+     "quote": "It is formed by pouring concrete, typically using fine aggregate, into formwork, resulting in a material very strong in compression but weak in tension.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reinforced-concrete",
+   "name": "Reinforced concrete",
+   "group": "Concrete",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98145"
+   },
+   "period": {
+    "text": "1854, when William B. Wilkinson reinforced the concrete roof and floors of a house he was building, the earliest use in the isles a source names; the Hennebique system arrived with the Weaver building, Swansea, in 1897; still in general use",
+    "from": 1854,
+    "ongoing": true
+   },
+   "technology": "Iron, later steel, bars in the concrete take the tension. Hennebique's patent of 1892 joined column and beam in one; his British agents, L. G. Mouchel and others, spread it.",
+   "examples": [
+    {
+     "name": "Weaver building",
+     "wikidata": "Q7978370",
+     "year": 1897,
+     "note": "Flour mill in Swansea, the first Hennebique building in the UK; demolished 1984"
+    },
+    {
+     "name": "Royal Liver Building",
+     "wikidata": "Q1469988",
+     "year": 1908,
+     "note": "An early reinforced-concrete building; Mouchel advised; opened 1911"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Reinforced concrete (FISH Building Materials thesaurus, concept 98145)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98145.html",
+     "locator": "scope note",
+     "quote": "Aggregate, cement and mortar combined with structural elements of iron or steel mesh or rod reinforcement to form stonelike masses for load bearing, structural building work."
+    },
+    {
+     "title": "Reinforced concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reinforced_concrete",
+     "locator": "section \"History\"",
+     "quote": "In 1854, English builder William B. Wilkinson reinforced the concrete roof and floors in the two-story house he was constructing.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "François Hennebique",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/François_Hennebique",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The first building erected in the United Kingdom using this system was the 1897 Weaver Building",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Weaver building",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaver_building",
+     "locator": "lead",
+     "quote": "was notable as an early reinforced concrete structure",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "François Hennebique",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/François_Hennebique",
+     "locator": "lead",
+     "quote": "patented his pioneering reinforced-concrete construction system in 1892, integrating separate elements of construction, such as the column and the beam, into a single monolithic element",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "François Hennebique",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/François_Hennebique",
+     "locator": "lead",
+     "quote": "These included L.G. Mouchel and F.A. Macdonald & Partners in Britain",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Royal Liver Building",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Liver_Building",
+     "locator": "section \"History\"",
+     "quote": "The building is an early example of a building constructed using reinforced concrete",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Royal Liver Building",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Liver_Building",
+     "locator": "section \"History\"",
+     "quote": "The structural engineering advisor was L. G. Mouchel & Partners.",
+     "about": [
+      "example",
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prestressed-concrete",
+   "name": "Prestressed concrete",
+   "group": "Concrete",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98124"
+   },
+   "period": {
+    "text": "1943, when prestressed railway sleepers began to be made, among the few wartime uses in the UK; the HMSO Store at Sighthill, Edinburgh (opened 1950), is believed the first multi-storey prestressed building in Europe; still in use",
+    "from": 1943,
+    "ongoing": true
+   },
+   "technology": "Steel tendons tensioned before or after casting keep the concrete in compression; patented by Eugène Freyssinet in 1928. British engineers studied German practice from 1946.",
+   "examples": [
+    {
+     "name": "HMSO Store, Sighthill",
+     "wikidata": "Q139854770",
+     "year": 1950,
+     "note": "Believed the first multi-storey prestressed concrete building in Europe"
+    },
+    {
+     "name": "Hammersmith flyover",
+     "wikidata": "Q5645765",
+     "year": 1961,
+     "note": "Hollow prestressed deck"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Prestressed concrete (FISH Building Materials thesaurus, concept 98124)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98124.html",
+     "locator": "scope note",
+     "quote": "Concrete, containing bars or wires, which is compressed to greatly increase its strength."
+    },
+    {
+     "title": "Prestressed concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prestressed_concrete",
+     "locator": "lead",
+     "quote": "It was patented by Eugène Freyssinet in 1928.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "HMSO Store, Sighthill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMSO_Store,_Sighthill",
+     "locator": "section \"Background\"",
+     "quote": "railway sleeper production began using prestressed concrete from 1943",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "HMSO Store, Sighthill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMSO_Store,_Sighthill",
+     "locator": "section \"Background\"",
+     "quote": "In December 1946, two British government engineers, Francis Walley and Emil Probst, were sent to Germany and several other European countries to investigate prestressed concrete.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "HMSO Store, Sighthill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMSO_Store,_Sighthill",
+     "locator": "lead",
+     "quote": "It is believed to be the first multistorey building in Europe to be constructed with prestressed concrete. It was opened in December 1950",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Hammersmith flyover",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammersmith_flyover",
+     "locator": "section \"Design\"",
+     "quote": "The deck spine and wings are of hollow prestressed concrete design",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Hammersmith flyover",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammersmith_flyover",
+     "locator": "section \"History\"",
+     "quote": "Completed in 1961, it was one of the first examples of its design.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "precast-concrete",
+   "name": "Precast concrete",
+   "group": "Concrete",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "1905, precast panelled buildings pioneered in Liverpool by the city engineer John Alexander Brodie; little taken up in Britain until the post-war housing drive, when local authorities built pre-cast reinforced concrete (PRC) houses beside the 1945-1951 prefabs; still in use",
+    "from": 1905,
+    "ongoing": true
+   },
+   "technology": "Panels or frames cast in a factory or yard and erected on site. The Housing (Temporary Accommodation) Act 1944 and wartime factories made 156,623 prefabs by 1951 (of steel, aluminium, timber and concrete); councils followed with PRC and other non-traditional systems.",
+   "examples": [
+    {
+     "name": "Tram stables, Walton, Liverpool",
+     "year": 1906,
+     "note": "Brodie's precast system"
+    },
+    {
+     "name": "Edward Road demonstration estate, Northolt",
+     "year": 1944,
+     "note": "Ministry of Works estate showing houses and flats could be built of concrete"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Precast concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Precast_concrete",
+     "locator": "section \"History\"",
+     "quote": "In the modern world, precast panelled buildings were pioneered in Liverpool, England, in 1905. The process was invented by city engineer John Alexander Brodie.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Precast concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Precast_concrete",
+     "locator": "section \"History\"",
+     "quote": "The tram stables at Walton in Liverpool followed in 1906. The idea was not taken up extensively in Britain.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Prefabs in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prefabs_in_the_United_Kingdom",
+     "locator": "lead",
+     "quote": "of 1.2 million new houses built between 1945 and 1951 when the programme officially ended, 156,623  prefab houses were constructed",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Prefabs in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prefabs_in_the_United_Kingdom",
+     "locator": "lead",
+     "quote": "local authorities developed non-traditional building techniques, which included some prefabrication, notably pre-cast reinforced concrete (PRC)",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Prefabs in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prefabs_in_the_United_Kingdom",
+     "locator": "lead",
+     "quote": "legally outlined in the Housing (Temporary Accommodation) Act 1944",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Prefabs in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prefabs_in_the_United_Kingdom",
+     "locator": "section \"Temporary Housing Programme\"",
+     "quote": "The Ministry of Works built a small estate off Edward Road, Northolt, in 1944 to demonstrate to the construction industry, parliament and the media the principles of their standards, and show that houses and flats could be built of concrete as well as brick.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "crown-glass>sheet-glass",
+   "from": "crown-glass",
+   "to": "sheet-glass",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Crown glass was the window glass of the isles until cylinder blown sheet glass was made from 1832.",
+   "sources": [
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "lead",
+     "quote": "Crown glass is a type of hand-blown glass that was used in windows prior to the development of sheet window glass production."
+    },
+    {
+     "title": "Chance Brothers",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chance_Brothers",
+     "locator": "section \"19th century\"",
+     "quote": "In 1832, it made the first British cylinder blown sheet glass using French and Belgian workers."
+    }
+   ]
+  },
+  {
+   "id": "cylinder-glass>sheet-glass",
+   "from": "cylinder-glass",
+   "to": "sheet-glass",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Cylinder blown sheet is broad sheet glass made from larger cylinders.",
+   "sources": [
+    {
+     "title": "Cylinder blown sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cylinder_blown_sheet_glass",
+     "locator": "section \"Manufacture\"",
+     "quote": "Cylinder blown sheet glass is similar to broad sheet glass, but with the creation of larger cylinders to cut and form."
+    }
+   ]
+  },
+  {
+   "id": "cylinder-glass>plate-glass",
+   "from": "cylinder-glass",
+   "to": "plate-glass",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Plate glass replaced broad sheet and the other hand-blown window glass in the 19th century.",
+   "sources": [
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "Broad sheet and other methods for making hand-blown glass for windows lasted until the 19th century when plate glass became the common form of window glass."
+    }
+   ]
+  },
+  {
+   "id": "crown-glass>plate-glass",
+   "from": "crown-glass",
+   "to": "plate-glass",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Plate glass replaced crown glass and the other hand-blown window glass in the 19th century.",
+   "sources": [
+    {
+     "title": "Broad sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broad_sheet_glass",
+     "locator": "section \"Production\"",
+     "quote": "Broad sheet and other methods for making hand-blown glass for windows lasted until the 19th century when plate glass became the common form of window glass."
+    },
+    {
+     "title": "Crown glass (window)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_glass_(window)",
+     "locator": "section \"History\"",
+     "quote": "Crown glass was one of the two most common processes for making window glass until the 19th century."
+    }
+   ]
+  },
+  {
+   "id": "sheet-glass>plate-glass",
+   "from": "sheet-glass",
+   "to": "plate-glass",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Cylinder blown sheet was superseded by plate glass, quicker and cheaper to make well.",
+   "sources": [
+    {
+     "title": "Cylinder blown sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cylinder_blown_sheet_glass",
+     "locator": "section \"History\"",
+     "quote": "It was superseded eventually by plate glass, which could be produced at good quality faster and more cheaply than blown glass."
+    }
+   ]
+  },
+  {
+   "id": "plate-glass>float-glass",
+   "from": "plate-glass",
+   "to": "float-glass",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Float glass replaced polished plate from the 1960s: it needs no grinding or polishing.",
+   "sources": [
+    {
+     "title": "Float glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Float_glass",
+     "locator": "section \"History\"",
+     "quote": "in the 1960s the process was licensed throughout the world, replacing previous production methods."
+    },
+    {
+     "title": "Plate glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plate_glass",
+     "locator": "lead",
+     "quote": "Most flat glass is soda–lime glass, mainly produced by the float glass process since the 1950s."
+    }
+   ]
+  },
+  {
+   "id": "sheet-glass>float-glass",
+   "from": "sheet-glass",
+   "to": "float-glass",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Float glass replaced drawn sheet glass along with the other methods from the 1960s.",
+   "sources": [
+    {
+     "title": "Float glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Float_glass",
+     "locator": "section \"History\"",
+     "quote": "in the 1960s the process was licensed throughout the world, replacing previous production methods."
+    },
+    {
+     "title": "Cylinder blown sheet glass",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cylinder_blown_sheet_glass",
+     "locator": "section \"Manufacture\"",
+     "quote": "The early 20th century marks the move away from hand-blown to machine manufactured glass such as rolled plate, machine drawn cylinder sheet, the Fourcault process of flat drawn sheet, single and twin ground polished plate and most common, float glass."
+    }
+   ]
+  },
+  {
+   "id": "cast-iron>wrought-iron",
+   "from": "cast-iron",
+   "to": "wrought-iron",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Once puddling (1784) made it cheap, wrought iron took over the beams and other members in tension, cast iron keeping the columns.",
+   "sources": [
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Use with wrought iron\"",
+     "quote": "Puddled wrought iron was a much better structural material, and was preferred for bridges, rails, ships and building beams, and was often used in combination with cast iron, which was better in compression."
+    }
+   ]
+  },
+  {
+   "id": "wrought-iron>steel",
+   "from": "wrought-iron",
+   "to": "steel",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Cheap Bessemer and open-hearth steel replaced wrought iron for most purposes, for structures from the 1880s.",
+   "sources": [
+    {
+     "title": "Steel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Steel",
+     "locator": "section \"Processes starting from pig iron\"",
+     "quote": "thus mild steel came to be used for most purposes for which wrought iron was formerly used"
+    },
+    {
+     "title": "Wrought iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wrought_iron",
+     "locator": "section \"Decline\"",
+     "quote": "Iron remained dominant for structural applications until the 1880s"
+    }
+   ]
+  },
+  {
+   "id": "cast-iron>steel",
+   "from": "cast-iron",
+   "to": "steel",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Steel replaced cast-iron columns in about 1900, and steel bridges replaced cast-iron railway bridges.",
+   "sources": [
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Early use in buildings\"",
+     "quote": "up until it was finally replaced by steel in about 1900"
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Cast-iron bridges\"",
+     "quote": "Thousands of cast-iron rail underbridges were eventually replaced by steel equivalents by 1900"
+    }
+   ]
+  },
+  {
+   "id": "iron-frame>steel-frame",
+   "from": "iron-frame",
+   "to": "steel-frame",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The iron-framed mill, first at Ditherington, developed into the steel frame.",
+   "sources": [
+    {
+     "title": "Shrewsbury Flaxmill Maltings",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Flaxmill_Maltings",
+     "locator": "section \"History\"",
+     "quote": "a system which later developed into the modern steel frame which made skyscrapers possible"
+    },
+    {
+     "title": "Cast-iron architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast-iron_architecture",
+     "locator": "section \"Steel\"",
+     "quote": "The widespread use of cast-and-wrought iron frames in multi-level buildings was translated into steel-frame buildings"
+    }
+   ]
+  },
+  {
+   "id": "roman-cement>portland-cement",
+   "from": "roman-cement",
+   "to": "portland-cement",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The success of Parker's natural Roman cement led to artificial cements of burnt clay and chalk, among them Aspdin's Portland cement.",
+   "sources": [
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "lead",
+     "quote": "The success of Roman cement led other manufacturers to develop rival products by burning artificial mixtures of clay and chalk."
+    },
+    {
+     "title": "Roman cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_cement",
+     "locator": "section \"History\"",
+     "quote": "From around 1807 a number of people looked to make artificial versions of this cement"
+    }
+   ]
+  },
+  {
+   "id": "roman-concrete>mass-concrete",
+   "from": "roman-concrete",
+   "to": "mass-concrete",
+   "kind": "revival",
+   "confidence": "probable",
+   "claim": "After Roman concrete, only poorer lime concretes were made in Britain; hydraulic limes (Smeaton, 1756-1759) and then cements brought concrete back as a walling material from about 1850.",
+   "sources": [
+    {
+     "title": "Concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concrete",
+     "locator": "section \"Middle Ages\"",
+     "quote": "contributed to a decline in the quality of concrete and mortar there, but it did not become a lost art"
+    },
+    {
+     "title": "Smeaton's Tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smeaton's_Tower",
+     "locator": "section \"Construction\"",
+     "quote": "He rediscovered the use of hydraulic lime, a form of cement used in Roman times."
+    },
+    {
+     "title": "Mass concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mass_concrete",
+     "locator": "section \"History\"",
+     "quote": "It was used mainly between 1850 and 1900"
+    }
+   ]
+  },
+  {
+   "id": "mass-concrete>reinforced-concrete",
+   "from": "mass-concrete",
+   "to": "reinforced-concrete",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "Reinforcement was added to plain concrete, which is weak in tension; mass concrete went out of use about 1900.",
+   "sources": [
+    {
+     "title": "Glenfinnan Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glenfinnan_Viaduct",
+     "locator": "section \"Design\"",
+     "quote": "The concrete used in the Glenfinnan Viaduct is mass concrete, which unlike reinforced concrete does not contain any metal reinforcement."
+    },
+    {
+     "title": "Concrete",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concrete",
+     "locator": "section \"Reinforced\"",
+     "quote": "Unreinforced concrete is unsuitable for many structures"
+    }
+   ]
+  },
+  {
+   "id": "reinforced-concrete>prestressed-concrete",
+   "from": "reinforced-concrete",
+   "to": "prestressed-concrete",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "Prestressing puts the bars or wires of reinforced concrete under tension so that the concrete stays in compression.",
+   "sources": [
+    {
+     "title": "Prestressed concrete (FISH Building Materials thesaurus, concept 98124)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98124.html",
+     "locator": "scope note",
+     "quote": "Concrete, containing bars or wires, which is compressed to greatly increase its strength."
+    }
+   ]
+  },
+  {
+   "id": "reinforced-concrete>precast-concrete",
+   "from": "reinforced-concrete",
+   "to": "precast-concrete",
+   "kind": "variant",
+   "confidence": "probable",
+   "claim": "Post-war council houses were built of pre-cast reinforced concrete (PRC).",
+   "sources": [
+    {
+     "title": "Prefabs in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prefabs_in_the_United_Kingdom",
+     "locator": "lead",
+     "quote": "notably pre-cast reinforced concrete (PRC)"
+    }
+   ]
+  }
+ ]
+}

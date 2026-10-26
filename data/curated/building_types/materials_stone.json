@@ -1,0 +1,2956 @@
+{
+ "about": "Building materials (roadmap BT3a): Stone (forms, techniques and the great building stones of the isles) and Mortar and render (lime mortar, harling, roughcast, stucco). Fields as bidb/building_materials.py.",
+ "researched": "2026-10-26",
+ "materials": [
+  {
+   "id": "rubble",
+   "name": "Rubble masonry",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98165"
+   },
+   "period": {
+    "text": "Mortared rubble walling came with the Romans, who used rubble masonry widely: 43 is the year of the Roman conquest (Roman Britain lasted 43-410), not a dated wall. Unmortared rubble walls are much older (see dry-stone walling). Still used.",
+    "from": 43,
+    "ongoing": true
+   },
+   "examples": [
+    {
+     "name": "Holy Trinity Church, Colchester (tower)",
+     "note": "pre-Conquest 11th-century tower built of Roman rubble"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Rubble (FISH Building Materials, concept 98165)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98165.html",
+     "locator": "scope note",
+     "quote": "Rough, unhewn, undressed building stones with irregular faces, generally not laid in regular courses."
+    },
+    {
+     "title": "Rubble masonry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rubble_masonry",
+     "locator": "section \"History\"",
+     "quote": "The Romans made extensive use of rubble masonry, calling it opus caementicium",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Anglo-Saxon architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Saxon_architecture",
+     "locator": "section \"11th century\"",
+     "quote": "The tower of Holy Trinity Church in Colchester, Essex has a pre-Conquest 11th-century tower built out of Roman rubble",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ashlar",
+   "name": "Ashlar",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97722"
+   },
+   "period": {
+    "text": "Squared, dressed stone came with the Romans: 43 is the year of the Roman conquest, not a dated wall. Escomb church (built between 650 and 800) reused the squared masonry of a Roman fort, and Bede says such churches were built 'in the manner of the Romans'. Still used.",
+    "from": 43,
+    "ongoing": true
+   },
+   "examples": [
+    {
+     "name": "Escomb Church",
+     "wikidata": "Q5397373",
+     "year": 650,
+     "note": "built between 650 and 800 of large roughly-dressed squared stones, much of it from the Roman fort at Binchester"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Ashlar (FISH Building Materials, concept 97722)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97722.html",
+     "locator": "scope note",
+     "quote": "A square, hewn or worked, high class freestone which can be 'freely' cut and is laid in horizontal courses with vertical joints."
+    },
+    {
+     "title": "Ashlar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashlar",
+     "locator": "lead",
+     "quote": "is cut and dressed stone worked to achieve a specific form, typically rectangular"
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Escomb Church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Escomb_Church",
+     "locator": "section \"Anglo-Saxon\"",
+     "quote": "Much of the squared masonry was taken from the nearby Roman fort at Vinovia (Binchester).",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Escomb Church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Escomb_Church",
+     "locator": "section \"Anglo-Saxon\"",
+     "quote": "are consistent with it having been built between AD 650 and 800",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Anglo-Saxon architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Saxon_architecture",
+     "locator": "section \"7th century\"",
+     "quote": "was undertaken morem Romanorum, \"in the manner of the Romans\", in explicit contrast to existing traditions of timber construction",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dry-stone",
+   "name": "Dry-stone walling",
+   "group": "Stone",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "The stone-walled field system of the Céide Fields, County Mayo, carbon-dated to 3800 BC, is the earliest dry-stone work a source names in the isles; the dry-stone village of Skara Brae (occupied from about 3180 BC) is near contemporary. Wallers are still in demand.",
+    "from": -3800,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Upland Britain and Ireland where stone lies in the soil or outcrops, above all the west of Ireland (Connemara, the Burren); field walls are called dykes in Scotland",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Built of stones cleared from the fields, needing no lime; wire fencing later made new walls far cheaper to do without.",
+   "types": [
+    "blackhouse"
+   ],
+   "examples": [
+    {
+     "name": "Céide Fields",
+     "year": -3800,
+     "note": "field system of dry stone walls under the peat, County Mayo"
+    },
+    {
+     "name": "Skara Brae",
+     "wikidata": "Q816437",
+     "year": -3180,
+     "note": "Neolithic village built in dry stone"
+    },
+    {
+     "name": "Mourne Wall",
+     "note": "22-mile wall in the Mourne Mountains, County Down"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "lead",
+     "quote": "is a method of building structures from stones without any mortar to bind them together"
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"History\"",
+     "quote": "In County Mayo, Ireland, an entire field system made from dry stone walls, since covered in peat, has been carbon-dated to 3800 BC.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"History\"",
+     "quote": "These are near contemporary with the dry stone constructed Neolithic village of Skara Brae and the chambered cairns of Scotland.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Skara Brae",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Skara_Brae",
+     "locator": "section \"Dating and abandonment\"",
+     "quote": "occupation of Skara Brae began about 3180 BC",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Europe\"",
+     "quote": "Dry stone walls are characteristic of upland areas of Britain and Ireland where rock forms natural outcrops or large stones exist in quantity in the soil.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Europe\"",
+     "quote": "When used as field boundaries, dry stone structures are more commonly known as dykes in Scotland",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Europe\"",
+     "quote": "They are especially abundant in the West of Ireland, particularly Connemara.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Construction\"",
+     "quote": "Many older walls were constructed from stones and boulders cleared from fields during preparation for agriculture (field stones)",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Construction\"",
+     "quote": "Fields can be fenced with much less time and expense using modern wire fencing compared to stone walls",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Construction\"",
+     "quote": "As a result of the increasing appreciation of the landscape and heritage value of dry stone walls, wallers remain in demand, as do the walls themselves.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Construction\"",
+     "quote": "Notable examples include the Mourne Wall, a 22-mile (35 km) wall in the Mourne Mountains in County Down, Northern Ireland",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Dry stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dry_stone",
+     "locator": "section \"Other uses\"",
+     "quote": "Traditional turf-roofed Hebridean blackhouses were constructed using the double-wall dry stone method."
+    }
+   ]
+  },
+  {
+   "id": "flint",
+   "name": "Flint and knapped flint",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97921"
+   },
+   "period": {
+    "text": "The Late Roman fort at Burgh Castle, Norfolk, built of flint in lime mortar and dated to the third century (250 stands for that century), is the earliest flint building a source names. Decorative knapped flint flourished in the 15th and early 16th centuries; flint is still used.",
+    "from": 250,
+    "flourish": [
+     1400,
+     1530
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Southern England without good building stone, above all East Anglia, and the chalk country through Hampshire, Sussex, Surrey and Kent to Somerset",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Used where there was no good local building stone and brick-making came late; knapping flints flush and square is skilled work with much waste, so knapped flint marks high-status buildings.",
+   "examples": [
+    {
+     "name": "Burgh Castle Roman fort",
+     "wikidata": "Q11680360",
+     "year": 250,
+     "note": "Late Roman Saxon Shore fort, third century"
+    },
+    {
+     "name": "Framlingham Castle",
+     "wikidata": "Q2524183"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Flint (FISH Building Materials, concept 97921)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97921.html",
+     "locator": "scope note",
+     "quote": "Hard, durable, dark grey stone, the purest native form of silica, which can either be used decoratively or as a main material. Predominantly found in East Anglia and the South East.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "Flint, knapped or unknapped, has been used from antiquity (for example at the Late Roman fort of Burgh Castle in Norfolk) up to the present day as a material for building stone walls, using lime mortar",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Burgh Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burgh_Castle",
+     "locator": "section \"Roman fort\"",
+     "quote": "The fort, which is a possible site for Gariannonum, dates to the third century and was part of the Saxon Shore fortifications",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "It was most common in the parts of southern England where no good building stone was available locally, and where brick-making was not widespread until the late Middle Ages.",
+     "about": [
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "It is especially associated with East Anglia, but also used in chalky areas stretching through Hampshire, Sussex, Surrey and Kent to Somerset.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "Many different decorative effects have been achieved by using different types of knapping or arrangement and combinations with stone (flushwork), especially in the 15th and early 16th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "Because knapping flints to a relatively flush surface and size is a highly skilled process with a high level of wastage, flint finishes typically indicate high status buildings.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "Flint was used in the construction of many churches, houses, and other buildings, for example, the large stronghold of Framlingham Castle.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flushwork",
+   "name": "Flushwork",
+   "group": "Stone",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137784"
+   },
+   "period": {
+    "text": "Flushwork begins in the early 14th century: St Ethelbert's Gate, Norwich, begun in 1316-17, is the earliest important surviving example a source names. Its peak was the wool boom of about 1450 to the 1520s; revived in the 19th century and still sometimes used.",
+    "from": 1316,
+    "flourish": [
+     1450,
+     1530
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Parts of southern England and especially East Anglia (Norfolk, Suffolk); chequerwork also in Wiltshire",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Costly in labour but cheaper than importing enough stone to build or face a whole building; the pale stone was often limestone shipped from Caen.",
+   "types": [
+    "church"
+   ],
+   "examples": [
+    {
+     "name": "St Ethelbert's Gate, Norwich",
+     "wikidata": "Q17537330",
+     "year": 1316,
+     "note": "begun 1316-17, flushwork on all four elevations"
+    },
+    {
+     "name": "Holy Trinity Church, Long Melford",
+     "wikidata": "Q5886552",
+     "note": "flushwork over most of the body of the church"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Flushwork (FISH Components, concept 137784)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137784.html",
+     "locator": "scope note",
+     "quote": "The use of knapped flint applied to a wall to form a decorative pattern."
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "lead",
+     "quote": "It is characteristic of the external walls of medieval buildings – most of the survivors being churches – in parts of Southern England and especially East Anglia.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "lead",
+     "quote": "Flushwork begins in the early 14th century, but the peak period was during the wool boom between about 1450 and the English Reformation of the 1520s",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "lead",
+     "quote": "The technique continued in occasional use, and saw a major revival in the 19th century, and is still sometimes used in a modern style today",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "section \"Technique\"",
+     "quote": "Although the labour cost of creating flushwork was high, it was still cheaper than importing the large quantity of stone necessary to build or face the entire structure.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "section \"Technique\"",
+     "quote": "The stone usually used is a light limestone, often imported by sea and river from Caen in Normandy or other continental sources",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "section \"Uses\"",
+     "quote": "This style is a characteristic of Wiltshire architecture, both vernacular and ecclesiastical.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "section \"Examples\"",
+     "quote": "St Ethelbert's Gate at Norwich Cathedral is one of the most important surviving examples of early flushwork, begun in 1316–17 and completed the following decade.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "section \"Uses\"",
+     "quote": "Few churches have flushwork all over the main body of the building. An exception is Holy Trinity Church, Long Melford.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "galleting",
+   "name": "Galleting",
+   "group": "Stone",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "Eton College (about 1441) is the earliest dated galleting a source names; parts of Windsor Castle (undated) and the Tower of London (about 1514) were also galleted. Some writers put its heyday in the 17th and 18th centuries; it declined through the 19th century (1900 stands for the end of that decline, not a dated last use).",
+    "from": 1441,
+    "flourish": [
+     1600,
+     1799
+    ],
+    "to": 1900
+   },
+   "regions": {
+    "text": "South East England between the North and South Downs (sandstone) and Norfolk (flint)",
+    "nations": [
+     "England"
+    ]
+   },
+   "examples": [
+    {
+     "name": "Eton College",
+     "wikidata": "Q192088",
+     "year": 1441
+    },
+    {
+     "name": "Tower of London",
+     "wikidata": "Q62378",
+     "year": 1514,
+     "note": "galleted about 1514"
+    }
+   ],
+   "note": "Sources disagree on when it was most used (late medieval, or the 17th and 18th centuries) and on why: wedges for thick mortar joints, decoration, or superstition. Historic Scotland's advice note treats the pinning stones as structural.",
+   "sources": [
+    {
+     "title": "Galleting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Galleting",
+     "locator": "lead",
+     "quote": "is an architectural technique in which spalls (small pieces of stone) are pushed into wet mortar joints during the construction of a masonry building"
+    },
+    {
+     "title": "Galleting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Galleting",
+     "locator": "section \"Location\"",
+     "quote": "In England, galleting can be found almost exclusively in the South East between the North and South Downs, where sandstone is common, and in the county of Norfolk, where flint is common.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Galleting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Galleting",
+     "locator": "section \"Period of use\"",
+     "quote": "Historical records indicate that parts of Windsor Castle (n.d.), Eton College (c. 1441), and the Tower of London (c. 1514) were galleted with flint or oyster shells.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Galleting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Galleting",
+     "locator": "section \"Period of use\"",
+     "quote": "Some sources associate the technique with late medieval building construction, while others suggest that galleting was used mostly in the 17th and 18th centuries before declining in popularity over the course of the 19th century.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bath-stone",
+   "name": "Bath stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97737"
+   },
+   "period": {
+    "text": "Used in the Roman period (43, the year of the Roman conquest, stands for 'Roman') and the Middle Ages; Ralph Allen promoted it in Bath in the early 18th century and it built the Georgian city. Some quarries are still worked.",
+    "from": 43,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Quarried and mined around Bath (Combe Down, Bathampton Down) and in Wiltshire (Box, Corsham); used throughout southern England",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A freestone that can be sawn in any direction; mined by room and pillar, and Allen's railway and wharf on the Kennet and Avon Canal carried it to London.",
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "Prior Park",
+     "wikidata": "Q7245410",
+     "note": "Ralph Allen's mansion, built to show off the stone"
+    },
+    {
+     "name": "Lancaster House",
+     "wikidata": "Q1146311",
+     "year": 1825
+    }
+   ],
+   "sources": [
+    {
+     "title": "Bath stone (FISH Building Materials, concept 97737)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97737.html",
+     "locator": "scope note",
+     "quote": "Even grained, poorly fossiliferous, light brown/cream coloured, oolitic limestone. Quarried in the Bath area.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "lead",
+     "quote": "originally obtained from the Middle Jurassic aged Great Oolite Group of the Combe Down and Bathampton Down Mines under Combe Down, Somerset, England",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "lead",
+     "quote": "Bath stone has been used extensively as a building material throughout southern England, for churches, houses, and public buildings such as railway stations.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "section \"Use as a building stone\"",
+     "quote": "In the Roman and medieval periods, Bath stone was extensively used on domestic and ecclesiastical buildings, as well as civil engineering projects such as bridges.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "lead",
+     "quote": "Some quarries are still in use, but the majority have been converted to other purposes or are being filled in.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "section \"Use as a building stone\"",
+     "quote": "An important feature of Bath stone is that it is a freestone, one that can be sawn or 'squared up' in any direction",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "section \"Mines\"",
+     "quote": "In the early 18th century, Ralph Allen promoted the use of the stone in Bath itself, and demonstrated its potential by using it for his own mansion at Prior Park.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "section \"Mines\"",
+     "quote": "Allen built a railway line from his mine on Combe Down which carried the stone down the hill",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Bath stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_stone",
+     "locator": "section \"Use as a building stone\"",
+     "quote": "Lancaster House was built from Bath stone in 1825",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "portland-stone",
+   "name": "Portland stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98123"
+   },
+   "period": {
+    "text": "Quarried on Portland since Roman times (43, the year of the Roman conquest, stands for 'Roman'); shipped to London in the 14th century; an industry from the early 17th century (the Banqueting House), London's stone after Wren's St Paul's. Still quarried and mined.",
+    "from": 43,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Isle of Portland, Dorset; used throughout the British Isles, above all in London's public buildings",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Shipped by sea to London; Wren's choice for St Paul's made it London's stone; the railway reached the island in 1865.",
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "St Paul's Cathedral",
+     "wikidata": "Q173882"
+    },
+    {
+     "name": "Banqueting House, Whitehall",
+     "note": "Inigo Jones, early 17th century"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Portland stone (FISH Building Materials, concept 98123)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98123.html",
+     "locator": "scope note",
+     "quote": "Quarried since Roman times, it is one of Britain's best building stones, hence its use throughout the country.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "lead",
+     "quote": "is a limestone geological formation (formally named the Portland Stone Formation) dating to the Tithonian age of the Late Jurassic that is quarried on the Isle of Portland in Dorset, England",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "lead",
+     "quote": "It has been used extensively as a building stone throughout the British Isles, notably in major public buildings in London such as St Paul's Cathedral and Buckingham Palace.",
+     "about": [
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "section \"History of use\"",
+     "quote": "Stone has been quarried on Portland since Roman times and was being shipped to London in the 14th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "section \"History of use\"",
+     "quote": "Extraction as an industry began in the early 17th century, with shipments to London for Inigo Jones' Banqueting House.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "section \"History of use\"",
+     "quote": "Wren's choice of Portland for the new St Paul's Cathedral was a great boost for the quarries and established Portland as London's choice of building stone.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "section \"History of use\"",
+     "quote": "The island was connected by railway to the rest of the country from 1865.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "section \"History of use\"",
+     "quote": "Albion Stone PLC has been quarrying and mining Portland stone since 1984.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "purbeck-marble",
+   "name": "Purbeck Marble",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98131"
+   },
+   "period": {
+    "text": "Quarried since at least Roman times (43, the year of the Roman conquest, stands for 'Roman'), when it was used for inscriptions, mouldings and veneers; one Bronze Age use, a cist at Langton Matravers, is not building. Used in the shafts, panels and floors of almost every medieval cathedral in the south of England; last extracted in 1993.",
+    "from": 43,
+    "to": 1993
+   },
+   "regions": {
+    "text": "Isle of Purbeck, Dorset (Worbarrow Tout to Peveril Point); used in cathedrals across the south of England and at Llandaff",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "geology": [
+    "Cretaceous"
+   ],
+   "examples": [
+    {
+     "name": "Salisbury Cathedral",
+     "wikidata": "Q390150"
+    },
+    {
+     "name": "Ely Cathedral",
+     "wikidata": "Q579004"
+    },
+    {
+     "name": "Westminster Abbey",
+     "wikidata": "Q5933"
+    }
+   ],
+   "note": "Not a true marble but a shelly limestone that takes a polish. Wikipedia dates the beds to the Early Cretaceous (Berriasian); FISH files Purbeck stone under Portland stone (Jurassic oolitic limestone).",
+   "sources": [
+    {
+     "title": "Purbeck stone (FISH Building Materials, concept 98131)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98131.html",
+     "locator": "scope note",
+     "quote": "Collective name for the oolitic limestone quarried in the Isle of Purbeck region, geologically classified into two main groups."
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "lead",
+     "quote": "It is a variety of Purbeck stone that has been quarried since at least Roman times as a decorative building stone.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Geology\"",
+     "quote": "Purbeck Marble is not a metamorphic rock, like a true marble, but is so-called because it can take a fine polish."
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Geology\"",
+     "quote": "They were deposited during the Berriasian age of the Early Cretaceous epoch.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Occurrence\"",
+     "quote": "Purbeck Marble is found at outcrop, or beneath superficial cover, all the way across the Isle of Purbeck from Worbarrow Tout in the west to Peveril Point in the east.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Use\"",
+     "quote": "There is a single example of Purbeck Marble being used during the Bronze Age, in a cist at Langton Matravers.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Use\"",
+     "quote": "During the Romano-British period, Purbeck Marble was used for inscriptions, architectural mouldings and veneers",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Use\"",
+     "quote": "Purbeck Marble was also quarried in medieval times and can be seen in virtually all the cathedrals of the south of England, in columns and slab panels and flooring.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Use\"",
+     "quote": "For example, it is used in Exeter, Ely, Norwich, Chichester, Salisbury, Lincoln, Llandaff, Southwark and Canterbury Cathedrals, and in Westminster Abbey.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Use\"",
+     "quote": "Purbeck Marble was previously extracted in 1993.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kentish-ragstone",
+   "name": "Kentish ragstone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98003"
+   },
+   "period": {
+    "text": "Used in roughly squared blocks since Roman times (43, the year of the Roman conquest, stands for 'Roman'; a Roman ship found at Blackfriars carried it); built Norman castles and churches from 1066, went out of fashion for brick in Tudor times, came back for Victorian Gothic churches. Still quarried for building at Hermitage Quarry.",
+    "from": 43,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Quarried around Maidstone and along the Greensand Ridge in Kent; used in London and across South East England",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Carried by boat down the Medway to London; the only hard building stone of the South East.",
+   "geology": [
+    "Cretaceous"
+   ],
+   "examples": [
+    {
+     "name": "Tower of London",
+     "wikidata": "Q62378"
+    },
+    {
+     "name": "Westminster Abbey",
+     "wikidata": "Q5933",
+     "note": "rebuilding of the 1240s needed so much ragstone that a royal order reserved it"
+    },
+    {
+     "name": "Rochester Castle",
+     "wikidata": "Q1125527"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Kentish ragstone (FISH Building Materials, concept 98003)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98003.html",
+     "locator": "scope note",
+     "quote": "Sandy, rough blue to green/grey coloured limestone. Quarried in Kent and widely used throughout the South East.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"Geology\"",
+     "quote": "a layer of limestones running from Kent into Surrey which was laid down in the Cretaceous period",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"History\"",
+     "quote": "Since Roman times, ragstone has been used in roughly squared blocks for building walls.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"History\"",
+     "quote": "The stone was almost certainly quarried at the Tovil quarry near Maidstone, and then transported by boat along the River Medway to London.",
+     "about": [
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"History\"",
+     "quote": "With hard rock for building being in short supply in south-east England, it was inevitable that the only significant source of hard limestone – Kentish ragstone – would be used in building from an early period.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"History\"",
+     "quote": "From 1066, the Normans constructed a large number of public buildings using ragstone, such as Westminster Abbey and the Tower of London, castles such as Rochester and Leeds",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"History\"",
+     "quote": "The building of Westminster Abbey in the 1240s required large quantities of ragstone with the result that local supplies were commandeered for that purpose",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"History\"",
+     "quote": "although in Tudor times stone buildings went out of fashion in favour of brick, the demand for Gothic-style buildings in Victorian times led to many churches in south-east East England being built of ragstone",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kentish ragstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kentish_ragstone",
+     "locator": "section \"Modern uses of Kentish ragstone\"",
+     "quote": "Hermitage Quarry continues to meet the traditional demand for building stone for use in modern buildings.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ham-stone",
+   "name": "Ham Hill stone (Hamstone)",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97963"
+   },
+   "period": {
+    "text": "Chosen by masons for 'more than 1000 years' says one source, so about 1000 at the latest, an approximate year and not a dated building; quarrying grew greatly in later Victorian times. Still quarried at two places on Ham Hill.",
+    "from": 1000,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Ham Hill, south Somerset; the medieval church towers of the county and the town of South Petherton",
+    "nations": [
+     "England"
+    ]
+   },
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "Church of St Mary, Chedzoy",
+     "wikidata": "Q5117508",
+     "note": "doorway arches and bell openings of the tower"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Ham Hill stone (FISH Building Materials, concept 97963)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97963.html",
+     "locator": "scope note",
+     "quote": "Shelly, gold/brown, coloured liassic limestone containing large quantities of crystalline calcite."
+    },
+    {
+     "title": "Hamstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamstone",
+     "locator": "lead",
+     "quote": "In origin, Hamstone is a Jurassic limestone from the Toarcian, or Upper Lias, stage.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Hamstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamstone",
+     "locator": "section \"Style and usage\"",
+     "quote": "The attractive colour also contributes to its being chosen by masons and architects for more than 1000 years for adorning the buildings in the countryside of surrounding Somerset.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Hamstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamstone",
+     "locator": "section \"Style and usage\"",
+     "quote": "Hamstone is featured in the medieval church towers throughout the county, and the town of South Petherton is built largely of the material.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Hamstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamstone",
+     "locator": "section \"Style and usage\"",
+     "quote": "hamstone is soft enough to be cut to make decorative features such as doorway arches and bell openings in church towers such as at the Church of St Mary at Chedzoy, Somerset",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Hamstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamstone",
+     "locator": "section \"History\"",
+     "quote": "In later Victorian times industrial quarrying expanded significantly",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hamstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hamstone",
+     "locator": "section \"Modern quarrying\"",
+     "quote": "Today hamstone is quarried in only two areas of Ham Hill.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cotswold-stone",
+   "name": "Cotswold stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97863"
+   },
+   "period": {
+    "text": "The wool trade's best era, 1250-1350, paid for the Cotswold-stone 'wool churches': 1250 is the start of that era, not a dated building. The Cotswold style of stone houses emerged in the late 16th century and flourished through the 17th; the stone is still quarried.",
+    "from": 1250,
+    "flourish": [
+     1550,
+     1699
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "The Cotswolds: mainly Gloucestershire and Oxfordshire, and parts of Wiltshire, Somerset, Worcestershire and Warwickshire",
+    "nations": [
+     "England"
+    ]
+   },
+   "geology": [
+    "Jurassic"
+   ],
+   "sources": [
+    {
+     "title": "Cotswold stone (FISH Building Materials, concept 97863)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97863.html",
+     "locator": "scope note",
+     "quote": "Sandy, light brown (cream to golden) coloured limestone, easily worked and readily available."
+    },
+    {
+     "title": "Cotswolds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswolds",
+     "locator": "lead",
+     "quote": "The area is defined by the bedrock of Jurassic limestone that creates a type of grassland habitat that is quarried for the golden-coloured Cotswold stone.",
+     "about": [
+      "geology",
+      "period"
+     ]
+    },
+    {
+     "title": "Cotswolds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswolds",
+     "locator": "lead",
+     "quote": "It lies across the boundaries of several English counties: mainly Gloucestershire and Oxfordshire, and parts of Wiltshire, Somerset, Worcestershire, and Warwickshire.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cotswolds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswolds",
+     "locator": "section \"History\"",
+     "quote": "The most successful era for the wool trade was 1250–1350",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotswolds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswolds",
+     "locator": "section \"History\"",
+     "quote": "The area still preserves numerous large, handsome Cotswold Stone \"wool churches\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotswold architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswold_architecture",
+     "locator": "lead",
+     "quote": "The Cotswold style emerged during the late 16th century and flourished throughout the 17th century.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "barnack-stone",
+   "name": "Barnack stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98029"
+   },
+   "period": {
+    "text": "First used by the Romans (43, the year of the Roman conquest, stands for 'Roman'); the medieval Fenland abbeys fought over it. The best stone was worked out by about 1460; lesser stone was quarried into the 18th century and, last, as roadstone in 1825.",
+    "from": 43,
+    "to": 1825
+   },
+   "regions": {
+    "text": "Barnack, near Stamford (now Peterborough); carried by water across the Fens to Peterborough, Ely, Crowland, Ramsey and Bury St Edmunds, and reused in Cambridge colleges",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Blocks went by sledge to the Welland and by barge down the Nene and the Fenland waterways; after the Dissolution, stone from demolished monasteries was reused.",
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "Peterborough Cathedral",
+     "wikidata": "Q1259104"
+    },
+    {
+     "name": "Ely Cathedral",
+     "wikidata": "Q579004"
+    },
+    {
+     "name": "St John the Baptist's Church, Barnack",
+     "wikidata": "Q16822406"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Lincolnshire limestone (FISH Building Materials, concept 98029; Barnack Stone a non-preferred term)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98029.html",
+     "locator": "scope note",
+     "quote": "Generic term for the oolitic limestones quarried in Northamptonshire, Lincolnshire and Rutland."
+    },
+    {
+     "title": "Lincolnshire Limestone Formation",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lincolnshire_Limestone_Formation",
+     "locator": "lead",
+     "quote": "part of the Inferior Oolite Group of the (Bajocian) Middle Jurassic strata of eastern England",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "Oolitic Lincolnshire limestone, including some called Barnack rag, was a valuable building stone first used by the Romans.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "Quarrying continued in the Middle Ages when the abbeys at Peterborough, Crowland, Ramsey, Sawtry and Bury St Edmunds all used Barnack stone",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "Blocks of stone were transported on sleds to the river Welland and loaded onto barges on which they were taken down the River Nene and the Fenland waterways.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "Most notably, Barnack stone was used to build Peterborough and Ely Cathedrals.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "The stone was used for numerous buildings in Barnack itself, most notably the parish church.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "The best Barnack stone had been worked out by about 1460, but after the dissolution of the monasteries supplies became available from demolition of the Fenland monasteries and was reused in Cambridge colleges.",
+     "about": [
+      "period",
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"Barnack stone\"",
+     "quote": "Lesser-quality Barnack stone continued to be quarried until the 18th century, and in 1825 it was quarried as roadstone for the Great North Road.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "caen-stone",
+   "name": "Caen stone (imported from Normandy)",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97788"
+   },
+   "period": {
+    "text": "Not a stone of the isles: imported from Normandy. The Normans brought Romanesque building after the Conquest of 1066 and built the Tower of London and the cathedrals of Canterbury and Norwich partly of Caen stone; still used in the 19th century (Big Ben's clock tower). The trade ceased in the 1960s; quarrying in Normandy restarted in the 1980s, mainly for local work.",
+    "from": 1066,
+    "to": 1960
+   },
+   "regions": {
+    "text": "Quarried near Caen, Normandy (France); used mainly in south-east and eastern England, carried by sea and river",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Fine, even limestone easy to carve, shipped across the Channel and up rivers (to Norwich up the Wensum).",
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "Tower of London",
+     "wikidata": "Q62378"
+    },
+    {
+     "name": "Norwich Cathedral",
+     "wikidata": "Q768692"
+    }
+   ],
+   "note": "Wikipedia gives the Caen limestone a Jurassic (Bathonian) age; FISH files Caen stone under Cretaceous limestone.",
+   "sources": [
+    {
+     "title": "Caen stone (FISH Building Materials, concept 97788)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97788.html",
+     "locator": "scope note",
+     "quote": "Fine grained limestone, yellow or yellow/white in colour. Imported from France, mainly for ecclesiastical use.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "lead",
+     "quote": "is a light creamy-yellow Jurassic limestone quarried in north-western France near the city of Caen",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "lead",
+     "quote": "The stone is homogeneous, and therefore suitable for carving.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Norman architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Norman_architecture",
+     "locator": "section \"England and Wales\"",
+     "quote": "Romanesque architecture was introduced to England after the Norman Conquest of 1066.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "section \"Use in building\"",
+     "quote": "In England, Canterbury Cathedral, Westminster Abbey and the Tower of London were all partially built from imported Caen stone.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "section \"Notable examples\"",
+     "quote": "Used by the Normans for the cathedral and castle in Norwich, where it was brought by boat up the River Wensum.",
+     "about": [
+      "example",
+      "technology"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "section \"Notable examples\"",
+     "quote": "Caen stone continued to be a popular material in Britain after the Norman period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "section \"Use in building\"",
+     "quote": "Underground mining developed in the 19th century, but the stone trade declined in the 20th century, eventually ceasing in the 1960s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Caen stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caen_stone",
+     "locator": "section \"Use in building\"",
+     "quote": "Excavation restarted in the 1980s with the stone being used for building the Caen Memorial.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aberdeen-granite",
+   "name": "Aberdeen granite",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97702"
+   },
+   "period": {
+    "text": "Rubislaw Quarry opened in 1740 (another source says granite was quarried there for more than 300 years); Aberdeen was built of local grey granite from the mid-18th to the mid-20th century; Rubislaw closed in 1971.",
+    "from": 1740,
+    "flourish": [
+     1750,
+     1950
+    ],
+    "to": 1971
+   },
+   "regions": {
+    "text": "Aberdeen (the 'Granite City'); also sent to London for Waterloo Bridge and the terrace of the Palace of Westminster",
+    "nations": [
+     "Scotland",
+     "England"
+    ]
+   },
+   "technology": "Steam-powered cutting and polishing tools, invented by Alexander MacDonald of Aberdeen, made polished granite a Victorian status material from the 1830s.",
+   "geology": [
+    "Intrusions and undivided"
+   ],
+   "examples": [
+    {
+     "name": "Marischal College",
+     "wikidata": "Q11838975",
+     "year": 1906,
+     "note": "Mackenzie's extension of 1906, the second-largest granite building in the world"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Aberdeen granite (FISH Building Materials, concept 97702)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97702.html",
+     "locator": "scope note",
+     "quote": "Medium grained, dark bluish-grey stone. Quarried mainly from the Rubislaw Quarry.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Rubislaw quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rubislaw_quarry",
+     "locator": "section \"History\"",
+     "quote": "Rubislaw quarry was opened in 1740.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rubislaw quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rubislaw_quarry",
+     "locator": "section \"History\"",
+     "quote": "The quarry closed in 1971.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Aberdeen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aberdeen",
+     "locator": "lead",
+     "quote": "During the mid-18th to mid-20th centuries, Aberdeen's buildings incorporated locally quarried grey granite",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Aberdeen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aberdeen",
+     "locator": "section \"Economy\"",
+     "quote": "Grey granite was quarried at Rubislaw quarry for more than 300 years",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Aberdeen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aberdeen",
+     "locator": "section \"Economy\"",
+     "quote": "Aberdeen granite was used to build the terraces of the Houses of Parliament and Waterloo Bridge in London.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Aberdeen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aberdeen",
+     "locator": "section \"Location and area\"",
+     "quote": "with sporadic areas of igneous Diorite granites to be found, such as that at the Rubislaw quarry which was used to build much of the Victorian parts of the city",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Granite",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Granite",
+     "locator": "section \"Sculpture and memorials\"",
+     "quote": "A key breakthrough was the invention of steam-powered cutting and dressing tools by Alexander MacDonald of Aberdeen",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Granite",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Granite",
+     "locator": "section \"Sculpture and memorials\"",
+     "quote": "In 1832, the first polished tombstone of Aberdeen granite to be erected in an English cemetery was installed at Kensal Green Cemetery.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Rubislaw quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rubislaw_quarry",
+     "locator": "lead",
+     "quote": "One local building of particular note is Marischal College, the second-largest granite building in the world",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "red-sandstone",
+   "name": "Red sandstones (Old and New Red Sandstone)",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98171"
+   },
+   "period": {
+    "text": "The stone keep of Goodrich Castle, Herefordshire, from the middle of the 12th century (1150 stands for 'about'), is the earliest dated building of Old Red Sandstone country a source names; Arbroath Abbey (founded 1178) is of local red sandstone. The Permian red sandstone of Locharbriggs, Dumfriesshire, has been worked since the 18th century and is still quarried.",
+    "from": 1150,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Old Red Sandstone: Stirling, Stonehaven, Perth and Tayside, Caithness; Herefordshire, Monmouthshire and Brecknockshire. New Red Sandstone: Locharbriggs near Dumfries, used in Dumfries, Glasgow and Edinburgh",
+    "nations": [
+     "Scotland",
+     "England",
+     "Wales"
+    ]
+   },
+   "geology": [
+    "Devonian",
+    "Permian"
+   ],
+   "examples": [
+    {
+     "name": "Goodrich Castle",
+     "wikidata": "Q5583571",
+     "year": 1150,
+     "note": "Norman keep of sandstone, mid-12th century"
+    },
+    {
+     "name": "Arbroath Abbey",
+     "wikidata": "Q630683",
+     "year": 1178,
+     "note": "built over some sixty years of local red sandstone"
+    }
+   ],
+   "note": "Not all 'red' sandstone is red: the Old Red Sandstone also runs to grey, green and purple, and Goodrich's keep is of light grey sandstone.",
+   "sources": [
+    {
+     "title": "Sandstone (FISH Building Materials, concept 98171)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98171.html",
+     "locator": "scope note",
+     "quote": "Geologically sandstone consists of particles of quartz naturally cemented together by either silica, calcium or iron."
+    },
+    {
+     "title": "Old Red Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Red_Sandstone",
+     "locator": "lead",
+     "quote": "is an assemblage of rocks in the North Atlantic region largely of Devonian age",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Old Red Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Red_Sandstone",
+     "locator": "section \"Use as a building stone\"",
+     "quote": "Notable examples of its use can be found in the area surrounding Stirling, Stonehaven, Perth and Tayside.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Old Red Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Red_Sandstone",
+     "locator": "section \"Use as a building stone\"",
+     "quote": "Old Red Sandstone has also frequently been used in buildings in Herefordshire, Monmouthshire and the former Brecknockshire (now south Powys) of south Wales.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Old Red Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Red_Sandstone",
+     "locator": "section \"England\" (under \"Notable buildings\")",
+     "quote": "Goodrich Castle, Herefordshire",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Goodrich Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Goodrich_Castle",
+     "locator": "lead",
+     "quote": "In the middle of the 12th century the original castle was replaced with a stone keep",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Arbroath Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arbroath_Abbey",
+     "locator": "lead",
+     "quote": "was founded in 1178 by King William the Lion",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Arbroath Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arbroath_Abbey",
+     "locator": "section \"Architectural description\"",
+     "quote": "The Abbey was built over some sixty years using local red sandstone",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Dumfries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dumfries",
+     "locator": "section \"Architectural geology\"",
+     "quote": "Locharbriggs is from the New Red Sandstone of the Permian age.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Dumfries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dumfries",
+     "locator": "section \"Architectural geology\"",
+     "quote": "Quarry working at Locharbriggs dates from the 18th century, and the quarry has been worked continuously since 1890.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Locharbriggs",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Locharbriggs",
+     "locator": "lead",
+     "quote": "This has been used for buildings in towns and cities including Dumfries, Glasgow and Edinburgh.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Locharbriggs",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Locharbriggs",
+     "locator": "lead",
+     "quote": "Only one quarry now remains active.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gritstone",
+   "name": "Gritstone (Millstone Grit)",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97957"
+   },
+   "period": {
+    "text": "The Martello towers of 1804-1812, for which a source says Bramley Fall gritstone was ideal, are the earliest dated works the sources tie to it; the stone was used long before for millstones and walls, undated here. Bramley's quarries closed around 1930; Bramley Fall stone is still quarried near Leeds.",
+    "from": 1804,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "The Pennines and neighbouring Northern England (the Dark Peak, Derbyshire, Yorkshire around Leeds), north-east Wales and north-west Ireland",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "technology": "Quarried for millstones (hence the name), building stone, paving flags and roofing; strong and resistant to water, so used for docks, locks, railways and engine beds.",
+   "geology": [
+    "Carboniferous"
+   ],
+   "examples": [
+    {
+     "name": "Leeds Town Hall",
+     "wikidata": "Q2017744"
+    },
+    {
+     "name": "Armley Gaol",
+     "year": 1847
+    }
+   ],
+   "sources": [
+    {
+     "title": "Gritstone (sandstone) (FISH Building Materials, concept 97957)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97957.html",
+     "locator": "scope note",
+     "quote": "Carboniferous sandstone varying in grain size from coarse to fine and in colour from white, yellow, pink to brown.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "lead",
+     "quote": "Millstone Grit is any of a number of coarse-grained sandstones of Carboniferous age which occur in the British Isles.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "lead",
+     "quote": "The term gritstone describes any sandstone composed of coarse angular grains, and specifically refers to such sandstones within the Pennines and neighbouring areas of Northern England.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "section \"Geographical occurrence\"",
+     "quote": "They also occur in parts of northeast Wales and northwest Ireland.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "section \"Economic importance\"",
+     "quote": "Various of the sandstone beds of the Millstone Grit have been quarried for building stone, paving flags and roofing material.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "section \"Economic importance\"",
+     "quote": "The very name of the rock derives from its widespread use within cornmills where it proved suitable for grinding stones.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Bramley Fall stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramley_Fall_stone",
+     "locator": "lead",
+     "quote": "It is one of the cheapest and best-adapted English stones for extensive engineering works, docks, locks and railways",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Bramley Fall stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramley_Fall_stone",
+     "locator": "section \"Properties\"",
+     "quote": "The stone can withstand shock, making it ideal for engine beds and defensive works, such as the Napoleonic Martello Towers around the south-eastern coast of England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Martello tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martello_tower",
+     "locator": "section \"United Kingdom of Great Britain and Ireland\"",
+     "quote": "Between 1804 and 1812 the British authorities built a chain of towers based on the original Mortella tower",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bramley Fall stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramley_Fall_stone",
+     "locator": "lead",
+     "quote": "Evidence of the quarries, which were discontinued around 1930, remains in Bramley Fall Park.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bramley Fall stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramley_Fall_stone",
+     "locator": "section \"Quarrying today\"",
+     "quote": "The modern main source of Bramley Fall stone is the Blackhill Quarry operated by Mone Bros Ltd",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bramley Fall stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramley_Fall_stone",
+     "locator": "section \"Architectural use of Bramley Fall stone\"",
+     "quote": "Armley Gaol. Constructed in 1847 in a turreted Gothic Style",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Bramley Fall stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bramley_Fall_stone",
+     "locator": "section \"Architectural use of Bramley Fall stone\"",
+     "quote": "Leeds Town Hall",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kilkenny-marble",
+   "name": "Kilkenny marble (Irish Carboniferous limestone)",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97800"
+   },
+   "period": {
+    "text": "The Black Quarry south of Kilkenny was worked from the 17th to the 19th century (1600 and 1899 stand for those centuries); stone of the same formation is still marketed as Kilkenny black marble.",
+    "from": 1600,
+    "flourish": [
+     1600,
+     1899
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "County Kilkenny (Archersgrove and Gallowshill; the 'Marble City') and County Carlow; used across Ireland",
+    "nations": [
+     "Republic of Ireland",
+     "Northern Ireland"
+    ]
+   },
+   "technology": "Water-driven saws at a weir on the Nore cut the blocks, with sand as the abrasive; offcuts were burnt for lime.",
+   "geology": [
+    "Carboniferous"
+   ],
+   "examples": [
+    {
+     "name": "Green's Bridge, Kilkenny"
+    },
+    {
+     "name": "Lissadell House, County Sligo"
+    },
+    {
+     "name": "St Patrick's Church, Belfast",
+     "note": "the altar"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Carboniferous limestone (FISH Building Materials, concept 97800)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97800.html",
+     "locator": "scope note",
+     "quote": "Limestones formed during the Carboniferous period. Many are cut, polished and used as marble.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "lead",
+     "quote": "is a fine-grained very dark grey carboniferous limestone found around County Kilkenny in Ireland",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "lead",
+     "quote": "The first and main source was the \"Black Quarry\" in the townlands of Archersgrove and Gallowshill just south of Kilkenny city, which was used from the 17th to the 19th century.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "section \"Quarrying\"",
+     "quote": "Produce from other quarries of Butlersgrove Formation stone continue to be marketed as \"Kilkenny black marble\" when polished, including Bannagagole Quarry near Oldleighlin, County Carlow.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "section \"Quarrying\"",
+     "quote": "A weir on the river provided water to drive reciprocating cross-cut saws to cut the larger blocks into the finished shapes required for the market.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "section \"Quarrying\"",
+     "quote": "A lime kiln was located close by which produced lime from the stone chips and off-cuts.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "section \"Uses\"",
+     "quote": "As well as in several local buildings, including Green's Bridge, Kilkenny marble was used in Cobh Cathedral and Bowen's Court in County Cork; Lissadell House, County Sligo",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "section \"Uses\"",
+     "quote": "the altar of St Patrick's Church, Belfast",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lime-mortar",
+   "name": "Lime mortar",
+   "group": "Mortar and render",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98062"
+   },
+   "period": {
+    "text": "The Romans used lime mortars throughout their empire; 43, the year of the Roman conquest, stands for their arrival, and the Late Roman fort at Burgh Castle (third century) is the earliest building in the isles a source names as laid in lime mortar. Portland cement displaced it in new building through the 19th century; it is still used, above all in conservation.",
+    "from": 43,
+    "ongoing": true
+   },
+   "technology": "Lime burnt in kilns, mostly at small coastal ports where limestone and coal came by sea; the railways made the small kilns unprofitable through the 19th century, and quick-setting, strong Portland cement replaced lime mortar in new work.",
+   "sources": [
+    {
+     "title": "Mortar (FISH Building Materials, concept 98062; Lime Mortar a non-preferred term)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98062.html",
+     "locator": "scope note",
+     "quote": "A mixture of lime or more recently cement with sand and water used for bonding stones or bricks."
+    },
+    {
+     "title": "Lime mortar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lime_mortar",
+     "locator": "section \"History\"",
+     "quote": "The Roman Empire used lime-based mortars extensively.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "Flint, knapped or unknapped, has been used from antiquity (for example at the Late Roman fort of Burgh Castle in Norfolk) up to the present day as a material for building stone walls, using lime mortar",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lime mortar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lime_mortar",
+     "locator": "lead",
+     "quote": "With the introduction of Portland cement during the 19th century, the use of lime mortar in new constructions gradually declined. This was largely due to the ease of use of Portland cement, its quick setting, and high compressive strength.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Lime mortar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lime_mortar",
+     "locator": "section \"Uses\"",
+     "quote": "Lime mortar today is primarily used in the conservation of buildings originally built using it, but may be used as an alternative to ordinary portland cement.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lime kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lime_kiln",
+     "locator": "section \"Lime use in agriculture and coal\"",
+     "quote": "Because land transportation of minerals like limestone and coal was difficult in the pre-industrial era, they were distributed by sea, and lime was most often manufactured at small coastal ports.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Lime kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lime_kiln",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The development of the national rail network made the local small-scale kilns increasingly unprofitable, and they gradually died out through the 19th century.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "harling",
+   "name": "Harling (lime render, Scotland and Ulster)",
+   "group": "Mortar and render",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "Scots building accounts use the word in 1540, when craftsmen harled the chapel, tennis court walls and turret at Falkland Palace: the earliest dated harling a source names. Still used on new buildings.",
+    "from": 1540,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Scotland and Ulster",
+    "nations": [
+     "Scotland",
+     "Northern Ireland"
+    ]
+   },
+   "technology": "Lime render with pebbles or stone chips thrown on while wet, often limewashed; it sheds the wet climate. Cement harling, tried at the Hill House in 1904, trapped water and is not recommended.",
+   "examples": [
+    {
+     "name": "Falkland Palace",
+     "year": 1540,
+     "note": "harling in the building accounts of 1540"
+    },
+    {
+     "name": "Crathes Castle",
+     "wikidata": "Q2748806",
+     "note": "16th century"
+    },
+    {
+     "name": "Craigievar Castle",
+     "wikidata": "Q1138741",
+     "note": "17th century"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "lead",
+     "quote": "Harling is a rough-cast wall finish consisting of lime and aggregate, known for its rough texture."
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "lead",
+     "quote": "Many castles and other buildings in Scotland and Ulster have walls finished with harling.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "lead",
+     "quote": "It is also used on contemporary buildings, where it protects against the wet Scottish and Ulster climates and eliminates the need for paint.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "section \"Historic record\"",
+     "quote": "At Falkland Palace, in 1540, John Kelly and John Malcolm alias Callum worked on the \"harling\" of the chapel",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "section \"Technique\"",
+     "quote": "While this render is still wet a specially shaped trowel is used to throw the pebbles onto the lime surface",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "section \"Technique\"",
+     "quote": "using the newly available but poorly understood Portland cement harling",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "section \"Examples\"",
+     "quote": "Crathes Castle in Aberdeenshire (16th century)",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "section \"Examples\"",
+     "quote": "Craigievar Castle in Aberdeenshire (17th century)",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roughcast",
+   "name": "Roughcast and pebbledash",
+   "group": "Mortar and render",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98162"
+   },
+   "period": {
+    "text": "The Tudor period (from 1485), when glass fragments were sometimes set in it, is the earliest a source dates; the roughcast on St Albans' Norman tower was believed as old as the building but no year is given. Pebbledash spread in England and Wales in the 1920s; roughcast is still popular in Scotland and rural Ireland.",
+    "from": 1485,
+    "flourish": [
+     1920,
+     1929
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Common houses and outbuildings throughout; pebbledash in England and Wales in the 1920s; still very popular in Scotland and rural Ireland",
+    "nations": [
+     "England",
+     "Wales",
+     "Scotland",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Lime, later cement, with sand and gravel thrown on with a trowel; in the 1920s builders used pebbledash to cover cheap brickwork.",
+   "examples": [
+    {
+     "name": "St Albans Cathedral",
+     "wikidata": "Q334377",
+     "note": "roughcast on the central tower, removed around 1870"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Roughcast (FISH Building Materials, concept 98162)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98162.html",
+     "locator": "scope note",
+     "quote": "A render including an aggregate of gravel or stone chipping thrown rather than trowelled onto an external wall."
+    },
+    {
+     "title": "Roughcast",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roughcast",
+     "locator": "lead",
+     "quote": "They consist of lime and sometimes cement mixed with sand, small gravel and often pebbles or shells.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Roughcast",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roughcast",
+     "locator": "section \"Architectures\"",
+     "quote": "in the Tudor period fragments of glass (frit) were sometimes embedded",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roughcast",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roughcast",
+     "locator": "section \"Architectures\"",
+     "quote": "roughcast had been a widespread exterior coating given to the walls of common dwellings and outbuildings",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Roughcast",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roughcast",
+     "locator": "section \"Architectures\"",
+     "quote": "This exterior wall finish was made popular in England and Wales during the 1920s, when housing was in greater demand, and house builders were forced to cut costs wherever they could, and used pebbledash to cover poor quality brick work",
+     "about": [
+      "period",
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Roughcast",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roughcast",
+     "locator": "section \"Architectures\"",
+     "quote": "However roughcasting remains very popular in Scotland and rural Ireland, with a high percentage of new houses being built with roughcasting.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Roughcast",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roughcast",
+     "locator": "section \"Architectures\"",
+     "quote": "the central tower of St Albans Cathedral, built with Roman tiles from Verulamium, was covered with roughcast believed to be as old as the building",
+     "about": [
+      "example",
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stucco",
+   "name": "Stucco",
+   "group": "Mortar and render",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98220"
+   },
+   "period": {
+    "text": "The Regency (strictly 1811-1820, its style applied before and after, to the end of William IV's reign in 1837) is the period a source ties to white painted stucco fronts; earlier Georgian use is not dated by these sources. Now made with cement and still used.",
+    "from": 1811,
+    "flourish": [
+     1811,
+     1837
+    ],
+    "ongoing": true,
+    "earlier": true
+   },
+   "technology": "Lime and sand or brick dust at first, later cement (Portland cement is a basic ingredient of modern stucco); in the Cotswolds classical taste put stucco where limewash had been.",
+   "sources": [
+    {
+     "title": "Stucco (FISH Building Materials, concept 98220)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98220.html",
+     "locator": "scope note",
+     "quote": "Smooth rendering applied to the exterior of buildings which may be incised to suggest coursed masonry. Made of lime and sand or brick dust, and more recently, cement.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Regency architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Regency_architecture",
+     "locator": "section \"Houses\"",
+     "quote": "Many buildings of the Regency style have a white painted stucco façade",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Regency architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Regency_architecture",
+     "locator": "lead",
+     "quote": "The British Regency strictly lasted only from 1811 to 1820, but the term is applied to architecture more widely, both before 1811 and after 1820",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Regency architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Regency_architecture",
+     "locator": "lead",
+     "quote": "the next reign, of William IV from 1830 to 1837, has not been given its own stylistic descriptor",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotswold architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotswold_architecture",
+     "locator": "section \"Influences\"",
+     "quote": "Classical influences to the exteriors included the use of stucco on walls, which often replaced the limewash on original buildings.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "lead",
+     "quote": "Portland cement is the most common type of cement in general use around the world as a basic ingredient of concrete, mortar, stucco, and non-specialty grout.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "rubble>ashlar",
+   "from": "rubble",
+   "to": "ashlar",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Rubble and ashlar are the two forms of stone walling and often share one wall: an ashlar face over a rubble core, as in medieval cathedrals.",
+   "sources": [
+    {
+     "title": "Rubble masonry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rubble_masonry",
+     "locator": "lead",
+     "quote": "Some medieval cathedral walls have outer shells of ashlar with an inner backfill of mortarless rubble and dirt."
+    },
+    {
+     "title": "Ashlar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashlar",
+     "locator": "section \"Description\"",
+     "quote": "Ashlar masonry is in contrast to rubble masonry, which employs irregularly shaped stones"
+    }
+   ]
+  },
+  {
+   "id": "flint>flushwork",
+   "from": "flint",
+   "to": "flushwork",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Flushwork is a decorative form of knapped-flint walling, set flush with pale freestone, at its height in the 15th and early 16th centuries.",
+   "sources": [
+    {
+     "title": "Flint",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flint",
+     "locator": "section \"As a building material\"",
+     "quote": "Many different decorative effects have been achieved by using different types of knapping or arrangement and combinations with stone (flushwork), especially in the 15th and early 16th centuries."
+    },
+    {
+     "title": "Flushwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flushwork",
+     "locator": "lead",
+     "quote": "flushwork is decorative masonry work which combines on the same flat plane flint and ashlar stone"
+    }
+   ]
+  },
+  {
+   "id": "galleting>flint",
+   "from": "galleting",
+   "to": "flint",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "In higher-status buildings, galleted joints gave way to flints knapped square, which leave little mortar showing.",
+   "sources": [
+    {
+     "title": "Galleting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Galleting",
+     "locator": "section \"Description\"",
+     "quote": "In higher status buildings, galleting was superseded by square knapping the flints to produce flat, squared stones that produced a surface with little exposed mortar."
+    }
+   ]
+  },
+  {
+   "id": "lime-mortar>portland-cement",
+   "from": "lime-mortar",
+   "to": "portland-cement",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Portland cement, introduced in the 19th century, gradually replaced lime mortar in new building because it was easier to use, set quickly and was stronger.",
+   "sources": [
+    {
+     "title": "Lime mortar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lime_mortar",
+     "locator": "lead",
+     "quote": "With the introduction of Portland cement during the 19th century, the use of lime mortar in new constructions gradually declined."
+    },
+    {
+     "title": "Mortar (FISH Building Materials thesaurus, concept 98062)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98062.html",
+     "locator": "scope note",
+     "quote": "A mixture of lime or more recently cement with sand and water used for bonding stones or bricks."
+    },
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "lead",
+     "quote": "It was developed from other types of hydraulic lime in England in the early 19th century by Joseph Aspdin"
+    }
+   ]
+  },
+  {
+   "id": "portland-stone>portland-cement",
+   "from": "portland-stone",
+   "to": "portland-cement",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Joseph Aspdin named his patent cement of 1824 after Portland stone, which it resembled once hardened: an influence of name and look, not of material.",
+   "sources": [
+    {
+     "title": "Portland cement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_cement",
+     "locator": "lead",
+     "quote": "The cement was so named by Joseph Aspdin, who obtained a patent for it in 1824, because, once hardened, it resembled the fine, pale limestone known as Portland stone"
+    },
+    {
+     "title": "Portland cement (FISH Building Materials, concept 98121)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98121.html",
+     "locator": "scope note",
+     "quote": "A form of cement originally named since it was said to be like Portland Stone in appearance."
+    }
+   ]
+  },
+  {
+   "id": "harling>roughcast",
+   "from": "harling",
+   "to": "roughcast",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Harling is the Scottish and Ulster form of roughcast: lime render with aggregate thrown on.",
+   "sources": [
+    {
+     "title": "Harling (wall finish)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harling_(wall_finish)",
+     "locator": "lead",
+     "quote": "Harling is a rough-cast wall finish consisting of lime and aggregate, known for its rough texture."
+    }
+   ]
+  }
+ ]
+}

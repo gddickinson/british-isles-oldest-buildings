@@ -1576,3 +1576,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   register periods), none kept.
 - Tests 335 OK (5 new: `test_typology` 2, `TestGeneralTypes` 3). No GUI change (BT4); hosted copy not updated.
 - Next: BT3 (materials and techniques) or BT4 (the /types page).
+
+## 2026-10-26 — BT3a: materials and techniques of building, sourced
+- BT3 split (only 500 of 22,508 records have a Wikidata material): BT3a the curated file (done), BT3b records and
+  places linked to materials (P186, article text, register descriptions), BT3c materials on detail views and type pages.
+- `bidb/fish_types.py`: `concepts(scheme)` also reads the FISH Building Materials (232 terms, `eh_tbm`) and
+  Components (1,403, `eh_com`) thesauri of the cached v29 release; both OGL v3.0 (checked on heritagedata.org).
+- New `bidb/building_materials.py` (checker: groups, kinds, FISH ids per scheme, periods via the new
+  `building_types.period_errors`, regions/technology/geology/examples each backed by a source `about` it, building
+  type ids, links with the lineage rules, `earlier` flag; `--quotes`). `tests/test_building_materials.py` (7).
+- Five research agents in parallel, one file each (stone and mortar, earth and timber, brick and tile, roofs,
+  glass/iron/steel/concrete): 99 entries, 51 links, 978 quotes, all found (`data/building_materials_check.json`).
+- Reviewed here: Wikidata ids of the 151 examples against the catalogue (Coggeshall chapel id corrected); two links
+  defined in two files merged; lead → Lake District slate dropped (one building); `earlier: true` added for six
+  first dates that are only the earliest named (queen-post roof 1753 the worst: no source dates a medieval one).
+- Tests 342 OK. No GUI change (BT3c/BT4); hosted copy not updated.
+- Next: BT3b (records linked to materials).

@@ -53,10 +53,10 @@ def load(path=None):
     return data
 
 
-def _source_problems(where, sources):
+def _source_problems(where, sources, about=ABOUT):
     bad = []
     for s in sources:
-        if any(a not in ABOUT for a in s.get("about", [])):
+        if any(a not in about for a in s.get("about", [])):
             bad.append(f"{where}: source about {s.get('about')!r}")
         if s.get("kind") not in SOURCE_KINDS:
             bad.append(f"{where}: source kind {s.get('kind')!r}")
@@ -131,20 +131,27 @@ def period_problems(data):
     source marked about "period"; a structure or plan form is backed by a source marked about it."""
     bad = []
     for t in data["types"]:
-        where, p = f"type {t['id']}", t.get("period") or {}
+        where = f"type {t['id']}"
         about = {a for s in t.get("sources", []) for a in s.get("about", [])}
-        if not p.get("text") or not isinstance(p.get("from"), int):
-            bad.append(f"{where}: no period text and first year")
-            continue
-        if ("to" in p) == bool(p.get("ongoing")):
-            bad.append(f"{where}: period needs either a last year (to) or ongoing")
-        years = [p["from"], *p.get("flourish", []), *([p["to"]] if "to" in p else [])]
-        if "flourish" in p and len(p["flourish"]) != 2:
-            bad.append(f"{where}: flourish is not [from, to]")
-        if not all(isinstance(y, int) for y in years) or years != sorted(years) or years[-1] > THIS_YEAR:
-            bad.append(f"{where}: period years out of order {years}")
+        bad += period_errors(where, t.get("period"))
         bad += [f"{where}: no source about its {k}" for k in ("period", "structure", "plan")
                 if (k == "period" or t.get(k)) and k not in about]
+    return bad
+
+
+def period_errors(where, p):
+    """A period {text, from, flourish? [from, to], to | ongoing} with its years in order (also bidb.building_materials)."""
+    p = p or {}
+    if not p.get("text") or not isinstance(p.get("from"), int):
+        return [f"{where}: no period text and first year"]
+    bad = []
+    if ("to" in p) == bool(p.get("ongoing")):
+        bad.append(f"{where}: period needs either a last year (to) or ongoing")
+    years = [p["from"], *p.get("flourish", []), *([p["to"]] if "to" in p else [])]
+    if "flourish" in p and len(p["flourish"]) != 2:
+        bad.append(f"{where}: flourish is not [from, to]")
+    if not all(isinstance(y, int) for y in years) or years != sorted(years) or years[-1] > THIS_YEAR:
+        bad.append(f"{where}: period years out of order {years}")
     return bad
 
 

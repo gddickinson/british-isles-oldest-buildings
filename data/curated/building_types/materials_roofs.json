@@ -1,0 +1,2929 @@
+{
+ "about": "Building materials (roadmap BT3a): Roofs, the coverings (thatch, shingles, stone slates, slate, clay tiles, lead, corrugated iron) and the timber roof structures (crown-post, king-post, queen-post, arch-braced and hammerbeam roofs). Fields as bidb/building_materials.py.",
+ "researched": "2026-10-26",
+ "materials": [
+  {
+   "id": "thatch",
+   "name": "Thatch",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98239"
+   },
+   "period": {
+    "text": "about 1000 BC: the Bronze Age roundhouses of Must Farm, Cambridgeshire, whose roofs were found charred in situ 'after 3,000 years' (roundhouses with conical thatched roofs were the standard house of Britain and Ireland from the Bronze Age through the Iron Age); the usual roof of most of the English countryside until the late 1800s; still laid (about 60,000 thatched properties in the UK in 2013)",
+    "from": -1000,
+    "flourish": [
+     -1000,
+     1880
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Everywhere in the isles; water reed mainly in East Anglia, straw elsewhere in England, cereal straw over turf on the blackhouses of Lewis",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Needs only local vegetation and a light roof frame. Banned for new roofs in London in 1212 after a fire; from 1820 Welsh slate, carried by canals and then railways, gave the countryside other roofs, and thatch declined with the agricultural depression of the late 19th century.",
+   "types": [
+    "round-house",
+    "blackhouse",
+    "wealden-house"
+   ],
+   "note": "Wikipedia notes that no direct evidence of straw thatch survives in Europe before the early medieval period; the Bronze Age date rests on the excavated roofs of Must Farm and on the roundhouses generally.",
+   "sources": [
+    {
+     "title": "Thatch (FISH Building Materials, concept 98239)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98239.html",
+     "locator": "scope note",
+     "quote": "Traditional roof covering consisting of materials such as reed, straw or heather layered and fastened together onto roof to form a run off to prevent water penetration."
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Roundhouses were the standard form of housing built in Britain and Ireland from the Bronze Age throughout the Iron Age",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "topped with a conical thatched roof",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"Must Farm revelations\"",
+     "quote": "where samples of all the materials, from posts to walls, to roof were all found, collapsed and charred, but still in situ after 3,000 years",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "In most of England, thatch remained the only roofing material available to the bulk of the population in the countryside, in many towns and villages, until the late 1800s.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "Commercial distribution of Welsh slate began in 1820, and the mobility provided by canals and then railways made other materials readily available.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "A 2013 report estimated that there were 60,000 properties in the UK with a thatched roof",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Disadvantages\"",
+     "quote": "New thatched roofs were forbidden in London in 1212 following a major fire",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Material\"",
+     "quote": "All evidence indicates that water reed was rarely used for thatching outside of East Anglia.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Lewis blackhouse\"",
+     "quote": "The blackhouses on Lewis have roofs thatched with cereal straw over turf",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The early buildings had  thatched roofs and walls of wattle and daub",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "straw-thatch",
+   "name": "Straw thatch (long straw and combed wheat reed)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98219"
+   },
+   "period": {
+    "text": "base coats of straw thatch laid over 500 years ago survive on more than 250 roofs in southern England (about 1500 or earlier: the year is a floor, not a first use); still laid with long straw or combed wheat reed",
+    "from": 1500,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Southern England; the medieval base coats are of wheat, rye or maslin",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Tall medieval wheat gave grain and long, durable straw. The combine harvester (late 1930s and 1940s), short-stemmed wheats and nitrogen fertiliser made thatching straw scarce and weak; since the 1980s specialist growers raise tall heritage wheats for it.",
+   "sources": [
+    {
+     "title": "Straw (FISH Building Materials, concept 98219)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98219.html",
+     "locator": "scope note",
+     "quote": "Roofing material consisting of stems or stalks of wheat, rye, oats or barley separated from grain and laid flat in 'yealms' which form an overlapping surface which sheds water."
+    },
+    {
+     "title": "Long straw (FISH Building Materials, concept 98031)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98031.html",
+     "locator": "scope note",
+     "quote": "Composed of loose uncombed lengths of harvested wheat which are formed into bundles for laying."
+    },
+    {
+     "title": "Combed wheat reed (FISH Building Materials, concept 139757)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/139757.html",
+     "locator": "scope note",
+     "quote": "A form of thatching straw composed of stems that have been combed mechanically to remove grain and extraneous waste material without crushing the stem."
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Material\"",
+     "quote": "Over 250 roofs in Southern England have base coats of thatch that were applied over 500 years ago, providing direct evidence of the types of materials that were used for thatching in the medieval period.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Material\"",
+     "quote": "Almost all of these roofs are thatched with wheat, rye, or \"maslin\" - a mixture of both.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "they are usually made of long straw, combed wheat reed or water reed",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Material\"",
+     "quote": "The availability of good quality thatching straw declined in England after the introduction of the combine harvester in the late 1930s and 1940s, and the release of short-stemmed wheat varieties.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Material\"",
+     "quote": "Since the 1980s, there has been a big increase in straw quality as specialist growers have returned to growing older, tall-stemmed, \"heritage\" varieties of wheat",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wooden-shingles",
+   "name": "Wooden shingles",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98186"
+   },
+   "period": {
+    "text": "the earliest dated use a source here names is the shingled spire added to St Mary's, Hartfield, in the 15th century (1400 is the start of that century; shingles are surely older, but no source here dates them); still made: the belfry roof at Churchstoke was re-covered with oak shingles in 2005",
+    "from": 1400,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Church spires and belfries, above all in Sussex and the Weald; the Welsh Marches",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "examples": [
+    {
+     "name": "St Mary's Church, Hartfield",
+     "year": 1400,
+     "note": "shingled spire added in the 15th century"
+    },
+    {
+     "name": "St Giles' Church, Horsted Keynes",
+     "year": 1667,
+     "note": "lightning dislodged 3,000 shingles from the spire in 1667"
+    },
+    {
+     "name": "Church of St Mary the Blessed Virgin, Sompting",
+     "note": "the Saxon tower's Rhenish helm is a cap of four shingled gables; shinglework renewed in 1853"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Shingle (FISH Building Materials, concept 98186)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98186.html",
+     "locator": "scope note",
+     "quote": "Wooden roof tile (traditionally oak) which is riven or sawn from good quality timber to a regular size and used as a roof and/or wall covering."
+    },
+    {
+     "title": "Hartfield",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hartfield",
+     "locator": "section \"Landmarks\"",
+     "quote": "In the fifteenth century, the shingled spire was added to the tower.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Churchstoke",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Churchstoke",
+     "locator": "section \"St. Nicholas Church\"",
+     "quote": "a pyramidal roof which was re-tiled with oak roof shingles in 2005",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "St Giles' Church, Horsted Keynes",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Giles'_Church,_Horsted_Keynes",
+     "locator": "section \"History\"",
+     "quote": "The spire is known to have been in place by 1667, when lightning struck it and dislodged 3,000 shingles.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Church of St Mary the Blessed Virgin, Sompting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Church_of_St_Mary_the_Blessed_Virgin,_Sompting",
+     "locator": "section \"History\"",
+     "quote": "The design comprises a cap of four shingled gables rising steeply in a pyramid formation.",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stone-slate",
+   "name": "Stone slates (Collyweston, Stonesfield, Horsham, gritstone)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "Roman: Horsham Stone roof slates at the villas of Bignor and Fishbourne (the Fishbourne palace was built about AD 75-80; the year is the palace's, not a dated slate); Stonesfield slate was quarried extensively in the 18th and 19th centuries; Horsham Stone's large-scale extraction stopped by the 1880s; quarries reopened at Nowhurst (2004) and Collyweston (2015) to repair historic roofs",
+    "from": 75,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Limestone 'slates' of the Jurassic belt (Collyweston in Northamptonshire, Lincolnshire, Rutland and Cambridgeshire; Stonesfield in Oxfordshire), Horsham Stone in Sussex and the Weald, Millstone Grit flags in the Pennines",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Fissile beds of limestone and sandstone split into heavy roofing slabs; Collyweston stone was left out for three winters for the frost to open its layers, which artificial freezing has replicated since the late 1990s.",
+   "geology": [
+    "Jurassic",
+    "Cretaceous",
+    "Carboniferous"
+   ],
+   "examples": [
+    {
+     "name": "Fishbourne Roman Palace",
+     "year": 75,
+     "note": "Horsham Stone roof slates"
+    },
+    {
+     "name": "Apethorpe Palace",
+     "year": 2012,
+     "note": "reroofed with new artificially frosted Collyweston slates"
+    }
+   ],
+   "note": "Not true slate: Collyweston and Stonesfield 'slates' are limestones and Horsham Stone a sandstone.",
+   "sources": [
+    {
+     "title": "Horsham Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horsham_Stone",
+     "locator": "section \"Uses of Horsham Stone\"",
+     "quote": "Villas such as Bignor and Fishbourne have examples of flooring and roof slates of the material.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Fishbourne Roman Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace",
+     "locator": "section \"History and description\"",
+     "quote": "was built in around 75–80 AD and took around five years to complete",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Horsham Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horsham_Stone",
+     "locator": "section \"Uses of Horsham Stone\"",
+     "quote": "In later centuries there are numerous examples in Sussex and the surrounding counties as a roofing material, particularly for mills, dovecotes, churches, manor houses and similar buildings.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Horsham Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horsham_Stone",
+     "locator": "section \"Commercial use in the early 21st century\"",
+     "quote": "Large-scale commercial extraction of Horsham stone had stopped by the 1880s",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Horsham Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horsham_Stone",
+     "locator": "section \"Commercial use in the early 21st century\"",
+     "quote": "The Nowhurst quarry was reopened in 2004 by the Historic Horsham Stone Company.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Horsham Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horsham_Stone",
+     "locator": "section \"Formation\"",
+     "quote": "were formed around 130 million years ago in the Lower Cretaceous period",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "Collyweston stone slate is a traditional roofing material found in east-central England, primarily in Northamptonshire, Cambridgeshire, Lincolnshire, and Rutland.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "It is not a proper slate but a limestone found in narrow beds.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "dating to the Bajocian age of the Middle Jurassic, around 170 million years ago",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "Traditionally the mined stone was left outside for three winters until the frost revealed layers that could be broken (\"clived\") into flat slates.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "to develop an artificial system to reproduce the freeze-thaw cycle needed for production of slates",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "In 2012, when new slates were needed to reroof parts of Apethorpe Palace",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Collyweston stone slate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collyweston_stone_slate",
+     "locator": "lead",
+     "quote": "In 2015 a planning application to reopen a slate mine in Collyweston was approved; the slate mines had not been used since the 1960s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Taynton Limestone Formation",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Taynton_Limestone_Formation",
+     "locator": "lead",
+     "quote": "during the 18th and 19th centuries were extensively quarried for use in roof tiling within the vicinity of Stonesfield, Oxfordshire",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "section \"Economic importance\"",
+     "quote": "Various of the sandstone beds of the Millstone Grit have been quarried for building stone, paving flags and roofing material.",
+     "about": [
+      "region",
+      "geology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slate",
+   "name": "Slate",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98194"
+   },
+   "period": {
+    "text": "Roman: the later levels of the fort at Segontium (Caernarfon), founded in AD 77 or 78 and first roofed with tiles, contain many roofing slates (77 is the fort's founding year, so the first slates are somewhat later); small-scale quarrying through the Middle Ages; the boom ran from the abolition of the slate duty in 1831 to Welsh production's peak in 1898; still quarried on a much smaller scale",
+    "from": 77,
+    "flourish": [
+     1831,
+     1898
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "North-west Wales above all; also Cornwall (Delabole), the Lake District (Burlington, Honister), Argyll (Easdale, Ballachulish) and Valentia Island in Kerry",
+    "nations": [
+     "Wales",
+     "England",
+     "Scotland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Splits into thin, light, nearly waterproof sheets. A 20% tax on slate carried coastwise (1794-1831) held the trade back; after it was abolished, narrow gauge railways to the ports and then the main lines carried Welsh slate across Britain. Cheaper tiles closed most large quarries in the 1960s and 1970s.",
+   "examples": [
+    {
+     "name": "Segontium",
+     "year": 77,
+     "note": "later levels contain roofing and flooring slates"
+    },
+    {
+     "name": "Palace of Westminster",
+     "note": "roofed with Valentia slate (Kerry)"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Slate (FISH Building Materials, concept 98194)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98194.html",
+     "locator": "scope note",
+     "quote": "Collective term for a hard, fine grained, dark coloured metamorphic rock, which splits easily; hence its common use as a roofing and flooring material"
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Beginnings\"",
+     "quote": "The Roman fort at Segontium, Caernarfon, was originally roofed with tiles, but the later levels contain numerous slates, used for both roofing and flooring.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Segontium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Segontium",
+     "locator": "section \"Roman\"",
+     "quote": "Segontium was founded by Agricola in AD 77 or 78",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Beginnings\"",
+     "quote": "During the mediaeval period, there was small-scale quarrying of slate in several areas.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Expansion at Blaenau Ffestiniog\"",
+     "quote": "In 1831 slate duty was abolished, and this helped to produce a rapid expansion in the industry",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Labour disputes\"",
+     "quote": "Slate production in Wales peaked at over half a million tons in 1898",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "Slate production continues on a much reduced scale.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Growth (1760–1830)\"",
+     "quote": "In July 1794, the government imposed a 20% tax on all slate carried coastwise",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "After the government abolished slate duty in 1831, rapid expansion was propelled by the building of narrow gauge railways to transport the slates to the ports.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "competition from other roofing materials, particularly tiles, resulted in the closure of most of the larger quarries in the 1960s and 1970s",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Delabole",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Delabole",
+     "locator": "section \"Delabole Quarry\"",
+     "quote": "Delabole Quarry is one of the largest slate quarries in England",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Easdale",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Easdale",
+     "locator": "lead",
+     "quote": "Once the centre of the Scottish slate industry",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Kirkby Slate Quarries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kirkby_Slate_Quarries",
+     "locator": "lead",
+     "quote": "The quarries have produced a characteristic blue-grey slate for over 450 years",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Maurice FitzGerald, 18th Knight of Kerry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maurice_FitzGerald,_18th_Knight_of_Kerry",
+     "locator": "section \"Early life\"",
+     "quote": "Sir Maurice developed the famous Valentia slate quarry on the island.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Maurice FitzGerald, 18th Knight of Kerry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maurice_FitzGerald,_18th_Knight_of_Kerry",
+     "locator": "section \"Early life\"",
+     "quote": "was used on roofs of some of the most famous buildings of the day, such as the Paris Opera House, Westminster Abbey, St Paul's Cathedral and the new Palace of Westminster",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "welsh-slate",
+   "name": "Welsh slate (Penrhyn, Dinorwic, Blaenau Ffestiniog)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98286"
+   },
+   "period": {
+    "text": "Roman Segontium (founded AD 77 or 78; its later levels hold slates from about 8 km away); Penrhyn first recorded in 1570; the landowners' large quarries from the 1770s (Penrhyn) and 1787 (Dinorwic); the peak from 1831 to 1898 (17,000 men, half a million tons); Dinorwic closed in 1969, Penrhyn still works",
+    "from": 77,
+    "flourish": [
+     1831,
+     1898
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Caernarfonshire and Merioneth: Bethesda (Penrhyn), Llanberis (Dinorwic), the Nantlle Valley, Blaenau Ffestiniog; Corris; sent by sea and rail to England, Ireland and abroad",
+    "nations": [
+     "Wales"
+    ]
+   },
+   "technology": "Landowners (Richard Pennant at Penrhyn, Assheton Smith at Dinorwic) took over the quarries in the late 18th century; quarry railways to the ports (Penrhyn 1798, Dinorwic 1824, Ffestiniog Railway 1833-36), slate mills and the Greaves sawing table (1859) made it the cheap roof of industrial Britain.",
+   "geology": [
+    "Cambrian",
+    "Ordovician",
+    "Silurian"
+   ],
+   "sources": [
+    {
+     "title": "Welsh slate (FISH Building Materials, concept 98286)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98286.html",
+     "locator": "scope note",
+     "quote": "Collective term for the North and South Wales groups of slate."
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Beginnings\"",
+     "quote": "The nearest deposits are about five miles (8 km) away in the Cilgwyn area",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Penrhyn quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penrhyn_quarry",
+     "locator": "section \"History\"",
+     "quote": "The first reference to slate extraction at Penrhyn is from 1570, when the quarry is mentioned in a Welsh poem.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Penrhyn quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penrhyn_quarry",
+     "locator": "section \"History\"",
+     "quote": "on the narrow gauge Penrhyn Quarry Railway built in 1798, one of the earliest railway lines",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Dinorwic quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dinorwic_quarry",
+     "locator": "section \"History\"",
+     "quote": "The first commercial attempts at slate mining took place in 1787",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dinorwic quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dinorwic_quarry",
+     "locator": "section \"History\"",
+     "quote": "the business boomed after the construction of a horse-drawn tramway to Port Dinorwic in 1824",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Dinorwic quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dinorwic_quarry",
+     "locator": "section \"Closure\"",
+     "quote": "The quarry closed in July 1969",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Penrhyn quarry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penrhyn_quarry",
+     "locator": "lead",
+     "quote": "Penrhyn is still Britain's largest slate quarry but its workforce is now nearer 200.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "In 1898, a work force of 17,000 men produced half a million tons of slate.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "carted slate to the ports, and then shipped it to England, Ireland and sometimes France",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "These sites included the Penrhyn Quarry near Bethesda, the Dinorwic Quarry near Llanberis, the Nantlle Valley quarries, and Blaenau Ffestiniog",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Expansion at Blaenau Ffestiniog\"",
+     "quote": "The Ffestiniog Railway line was constructed between 1833 and 1836 to transport slate from Blaenau Ffestiniog to the coastal town of Porthmadog",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Mechanization and increased production\"",
+     "quote": "In 1859, John Whitehead Greaves invented the Greaves sawing table",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Beginnings\"",
+     "quote": "The slate deposits of Wales belong to three geological series: Cambrian, Ordovician and Silurian.",
+     "about": [
+      "geology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "scottish-slate",
+   "name": "Scottish slate (Easdale, Ballachulish)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98179"
+   },
+   "period": {
+    "text": "Easdale slate was used in major Scottish buildings in the 12th and 13th centuries (1100 is the start of that range); Ballachulish quarries opened in 1694, two years after the Glencoe Massacre; Easdale made 2.5 million slates a year by 1772; the Ballachulish quarries closed in 1955, the last date a source here gives",
+    "from": 1100,
+    "flourish": [
+     1694,
+     1881
+    ],
+    "to": 1955
+   },
+   "regions": {
+    "text": "The Slate Islands of the Firth of Lorn (Easdale, Seil) and Ballachulish on Loch Leven; the roofs of Edinburgh and Glasgow",
+    "nations": [
+     "Scotland"
+    ]
+   },
+   "geology": [
+    "Ordovician"
+   ],
+   "note": "The flourish ends in 1881, when the sea broke into the quarry of Eilean-a-beithich; Easdale's quarries declined after it.",
+   "sources": [
+    {
+     "title": "Scottish slate (FISH Building Materials, concept 98179)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98179.html",
+     "locator": "scope note",
+     "quote": "Collective term for the Scottish Slates including the Aberdeen/Baniff and Ballachulish/Easdale groups."
+    },
+    {
+     "title": "Easdale",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Easdale",
+     "locator": "section \"Slate mining\"",
+     "quote": "Easdale slate had been used in major construction projects in Scotland in the 12th and 13th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Easdale",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Easdale",
+     "locator": "section \"Slate mining\"",
+     "quote": "By the time of the 1772 visit to the area by Thomas Pennant the island was producing 2.5 million slates per annum.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Easdale",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Easdale",
+     "locator": "section \"Slate mining\"",
+     "quote": "This was breached by the sea in 1881",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Easdale",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Easdale",
+     "locator": "section \"Geography and geology\"",
+     "quote": "The Easdale Slates were created in the Ordovician period about 445 million years ago.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Ballachulish",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballachulish",
+     "locator": "section \"Slate\"",
+     "quote": "Slate from the East Laroch quarries, established just two years after the Glencoe Massacre of 1692, was used to provide the roofing slate for much of Edinburgh and Glasgow's skyline in the succeeding centuries.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Ballachulish",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballachulish",
+     "locator": "section \"Slate\"",
+     "quote": "In 1955 the quarries closed",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lake-district-slate",
+   "name": "Lake District slate (Burlington, Westmorland green)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98013"
+   },
+   "period": {
+    "text": "the Burlington (Kirkby) quarries have produced slate 'for over 450 years' (about 1570 or earlier), on a large scale from the early 19th century; Westmorland green slate quarried at Honister since the late 17th century; Westminster Hall's lead was replaced with Westmorland slates in the 1740s; Honister reopened in 1997 and still works",
+    "from": 1570,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Cumbria and Furness: Kirkby-in-Furness (Burlington blue-grey), Borrowdale and Honister (Westmorland green)",
+    "nations": [
+     "England"
+    ]
+   },
+   "geology": [
+    "Ordovician",
+    "Silurian"
+   ],
+   "examples": [
+    {
+     "name": "Westminster Hall",
+     "year": 1740,
+     "note": "lead roof replaced with Westmorland slates in the 1740s restorations"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Lake district slate (FISH Building Materials, concept 98013)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98013.html",
+     "locator": "scope note",
+     "quote": "Collective term for the Burlington (Silurian period) and Borrowdale (Ordovician period) groups of slates from the Lake District and parts of Cumbria, Lancashire.",
+     "about": [
+      "region",
+      "geology"
+     ]
+    },
+    {
+     "title": "Kirkby Slate Quarries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kirkby_Slate_Quarries",
+     "locator": "lead",
+     "quote": "The quarries have produced a characteristic blue-grey slate for over 450 years, with large-scale production starting in the early 19th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Honister Slate Mine",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Honister_Slate_Mine",
+     "locator": "lead",
+     "quote": "Quarrying for Westmorland green slate has been taking place in the area since the late 17th century.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Honister Slate Mine",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Honister_Slate_Mine",
+     "locator": "section \"Reopening & resurgence\"",
+     "quote": "In 1997 the mine was reopened by local businessman, Mark Weir",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Westminster Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Westminster_Hall",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "the replacement of lead on the roof with Westmorland slates",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Westminster Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Westminster_Hall",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "Restorations undertaken in the 1740s included the insertion of props inside the Hall to support the roof",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "west-country-slate",
+   "name": "West Country slate (Delabole)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98287"
+   },
+   "period": {
+    "text": "Delabole has been worked continuously since the 15th century (1400 is the start of that century; tradition says since King Stephen, 1135-54); exported to Brittany and the Netherlands under Elizabeth I; still worked, though cheaper Welsh slate and tiles cut it back",
+    "from": 1400,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Cornwall and Devon; Delabole near Camelford",
+    "nations": [
+     "England"
+    ]
+   },
+   "sources": [
+    {
+     "title": "West country slate (FISH Building Materials, concept 98287)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98287.html",
+     "locator": "scope note",
+     "quote": "Collective term for the slates from Devon and Cornwall.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Delabole",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Delabole",
+     "locator": "section \"Delabole Quarry\"",
+     "quote": "has been operated continuously since the 15th century, making it the oldest working slate quarry in England",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Delabole",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Delabole",
+     "locator": "section \"Delabole Quarry\"",
+     "quote": "it is reputed that slate has been quarried here since the reign of King Stephen",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Delabole",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Delabole",
+     "locator": "section \"Delabole Quarry\"",
+     "quote": "In the reign of Elizabeth I the five quarries on the site of the now larger pit assumed considerable importance delivering slate to Brittany and the Netherlands.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Delabole",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Delabole",
+     "locator": "section \"Delabole Quarry\"",
+     "quote": "the decline due to the availability of cheaper roofing materials e.g. Welsh slate or prefabricated tiles",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roman-roof-tile",
+   "name": "Roman roof tiles (tegula and imbrex)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "introduced after the Roman conquest of AD 43, the earliest known tileries being near Fishbourne; tile-making dwindled after Roman rule ended around 410",
+    "from": 43,
+    "to": 410
+   },
+   "regions": {
+    "text": "Roman Britain: forts, villas and towns (Fishbourne, Segontium; legionary tiles from Merseyside)",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "technology": "Kiln-fired flat tiles with raised edges (tegulae) and half-round cover tiles (imbrices), held by gravity on low-pitched roofs; many were made by the legions and stamped with their insignia.",
+   "types": [
+    "roman-villa",
+    "roman-fort"
+   ],
+   "examples": [
+    {
+     "name": "Fishbourne Roman Palace",
+     "year": 270,
+     "note": "tiles of the north wing's roof found in the rubble of the fire of about 270"
+    },
+    {
+     "name": "Segontium",
+     "year": 77,
+     "note": "the fort was first roofed with tiles"
+    }
+   ],
+   "note": "FISH's ROMAN TILE is a modern single-lap tile whose name 'does not denote a relationship with the Roman period', so no FISH concept is given.",
+   "sources": [
+    {
+     "title": "Imbrex and tegula",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Imbrex_and_tegula",
+     "locator": "lead",
+     "quote": "The imbrex and tegula (pl.: imbrices and tegulae) were overlapping roof tiles used in ancient Greek and Roman architecture as a waterproof and durable roof covering."
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "It is believed that the Romans introduced the use of clay roof tile to Britain after their conquest in AD 43.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "The earliest known sites for the production of roof tile are near the Fishbourne Roman Palace.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Vinovia",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Vinovia",
+     "locator": "section \"Later history\"",
+     "quote": "Although the Roman occupation of Britain ended officially around 410",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "For a while after the dissolution of the Roman Empire, the manufacture of tile for roofs and decoration diminished in Northern Europe.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Roman Empire\"",
+     "quote": "Roman imbrex and tebula roofs generally avoided the use of nails and were instead held in place through gravity",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Imbrex and tegula",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Imbrex_and_tegula",
+     "locator": "section \"History and development\"",
+     "quote": "By Roman times many tiles were being made under the auspices of various Roman legions, and were imprinted with a stamp of the legion's insignia.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Imbrex and tegula",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Imbrex_and_tegula",
+     "locator": "section \"History and development\"",
+     "quote": "a 1993 archaeological dig in Merseyside in England uncovered over 300 kg (660 lb) of tile and kiln remains",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Fishbourne Roman Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace",
+     "locator": "section \"Destruction and aftermath\"",
+     "quote": "some of the rubble from the collapsed roof as well as its tiles and melted fittings were scattered on the ground floor",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Fishbourne Roman Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace",
+     "locator": "section \"Destruction and aftermath\"",
+     "quote": "the north wing was completely destroyed in a fire around 270 AD",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Beginnings\"",
+     "quote": "The Roman fort at Segontium, Caernarfon, was originally roofed with tiles",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plain-tile",
+   "name": "Plain clay tile (peg tile)",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98241"
+   },
+   "period": {
+    "text": "after the Roman tileries lapsed, clay roof tiles came back into use in the 12th century (1100 is the start of that century), first on abbeys and royal palaces, then in towns against fire; the duty on tiles was abolished in 1833; still made",
+    "from": 1100,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Clay country of southern and eastern England, the Weald above all (peg-tiled hall houses); towns, where tile was encouraged against fire",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Flat moulded and fired clay tiles hung on laths by pegs or nibs, two courses lapped. Towns encouraged them to stop fires spreading; the tile duty, kept two years longer than the slate duty, was lifted in 1833.",
+   "types": [
+    "wealden-house"
+   ],
+   "examples": [
+    {
+     "name": "Bayleaf farmhouse (Weald and Downland Living Museum)",
+     "year": 1400,
+     "note": "Wealden hall house with a peg tile roof, early 15th century"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Tile (FISH Building Materials, concept 98241)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98241.html",
+     "locator": "scope note",
+     "quote": "Tablet of a uniform shape. Used as finishing or covering materials which fit together in a regular format."
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "In the twelfth century clay, slate, and stone roofing tile began to see more use, initially on abbeys and royal palaces.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "Their use was later encouraged within Medieval towns as a means of preventing the spread of fire.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "Simple flat shingle tiles became common during this period due to their ease of manufacture.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "section \"Expansion at Blaenau Ffestiniog\"",
+     "quote": "particularly since the duty on tiles was not abolished until 1833",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "Weald and Downland Living Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weald_and_Downland_Living_Museum",
+     "locator": "section \"Bayleaf farmhouse\"",
+     "quote": "Bayleaf farmhouse is a timber-framed Wealden hall house with a peg tile roof, dating from the early 15th century.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "St Peter's Church, Kinver",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter's_Church,_Kinver",
+     "locator": "section \"Exterior\"",
+     "quote": "St Peter's Church is built in dressed stone blocks with plain tile roofs",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pantile",
+   "name": "Pantile",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98081"
+   },
+   "period": {
+    "text": "first imported from the Netherlands in the early 17th century (1600 is the start of that century); still made in clay and concrete",
+    "from": 1600,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "The east coasts of England and Scotland: Norfolk, East Yorkshire, County Durham, Perthshire, Angus, Lothian, Fife; in the west only Bristol and Bridgwater",
+    "nations": [
+     "England",
+     "Scotland"
+    ]
+   },
+   "technology": "An S-shaped single-lap tile: lighter than plain tiles and laid to a lower pitch; brought across the North Sea from the Low Countries.",
+   "sources": [
+    {
+     "title": "Pantile (FISH Building Materials, concept 98081)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98081.html",
+     "locator": "scope note",
+     "quote": "Curved, interlocking roof tile of S-shaped section usually made of clay or concrete.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pantile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pantile",
+     "locator": "lead",
+     "quote": "where they were first imported from the Netherlands in the early 17th century",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Pantile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pantile",
+     "locator": "lead",
+     "quote": "In Britain, pantiles are found in eastern coastal parts of England and Scotland, including Norfolk, East Yorkshire, County Durham, Perthshire, Angus, Lothian and Fife",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Pantile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pantile",
+     "locator": "lead",
+     "quote": "They are rarely used in western England or western Scotland, except in Bristol and the Somerset town of Bridgwater.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Pantile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pantile",
+     "locator": "lead",
+     "quote": "A pantile-covered roof is considerably lighter than a flat-tiled equivalent and can be laid to a lower pitch.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roof-lead",
+   "name": "Lead roofing",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98022"
+   },
+   "period": {
+    "text": "about 670, when Wilfrid, bishop of York from that time, renewed the church at York with leaded roofs and glass windows (the earliest a source here names); sheet lead was the usual cover of low-pitched Gothic roofs; still used",
+    "from": 670,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Churches, cathedrals and great halls, above all on low-pitched Gothic roofs",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Soft, cast or later milled into sheets, worked cold and does not rust; a by-product of silver smelting. Fell out of favour for cheap roofs once iron became cheaper in the 19th century.",
+   "examples": [
+    {
+     "name": "York Minster",
+     "year": 670,
+     "note": "Wilfrid's leaded roofs"
+    },
+    {
+     "name": "Westminster Hall",
+     "year": 1740,
+     "note": "lead replaced with Westmorland slates in the 1740s"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Lead (FISH Building Materials, concept 98022)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98022.html",
+     "locator": "scope note",
+     "quote": "Metal used primarily for roof coverings and window fittings. It is easy to work, can be worked cold and does not rust which makes it suitable for holding or repelling water.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "York Minster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Minster",
+     "locator": "section \"History\"",
+     "quote": "He repaired and renewed the structure, installing leaded roofs, glass windows, and rich furnishings.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "York Minster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Minster",
+     "locator": "section \"History\"",
+     "quote": "The church soon fell into disrepair and was dilapidated by 670 when Saint Wilfrid ascended to the See of York.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English Gothic architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Gothic_architecture",
+     "locator": "section \"Roofs\"",
+     "quote": "The roofs were usually made of boards overlaid with tiles or sheet-lead, which was commonly used on low-pitched roofs.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Metal roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Metal_roof",
+     "locator": "section \"History\"",
+     "quote": "As a by-product of silver smelting, in Roman times it was readily available and relatively cheap.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Metal roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Metal_roof",
+     "locator": "section \"History\"",
+     "quote": "ore was so plentiful that iron became cheaper than lead, and much cheaper than copper",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Metal roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Metal_roof",
+     "locator": "section \"Stone-coated metal roofing\"",
+     "quote": "Other metals used for roofing are lead, tin, aluminium and copper.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Westminster Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Westminster_Hall",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "the replacement of lead on the roof with Westmorland slates",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "corrugated-iron",
+   "name": "Corrugated iron",
+   "group": "Roofs",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97992"
+   },
+   "period": {
+    "text": "patented by Henry Robinson Palmer in 1829 and first used for roofing in London that year; prefabricated iron churches, chapels and mission halls from 1850 until the First World War (R. R. Speirs alone supplied 75 churches in 1908-14); mild steel replaced wrought iron from about the 1890s; still made",
+    "from": 1829,
+    "flourish": [
+     1850,
+     1914
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Everywhere, above all farm and rural buildings, industrial villages and mission churches (tin tabernacles)",
+    "nations": [
+     "England",
+     "Scotland"
+    ]
+   },
+   "technology": "Corrugation stiffens thin sheet: Palmer's patent of 1829 for 'indented or corrugated metallic sheets' of puddled wrought iron, galvanising with zinc (Sorel, Paris, 1830s), then mild steel from the 1890s; light and easily carried, delivered in kits by rail.",
+   "examples": [
+    {
+     "name": "St Mark's Church, Birkenhead",
+     "year": 1867,
+     "note": "tin church for 500, over £2,000"
+    },
+    {
+     "name": "St Chad's Mission Church",
+     "note": "moved to Blists Hill Victorian Town"
+    },
+    {
+     "name": "St Margaret's Church, South Wonston",
+     "note": "now at the Weald and Downland Living Museum"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Iron (FISH Building Materials, concept 97992)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97992.html",
+     "locator": "scope note",
+     "quote": "A malleable, ductile ferromagnetic metal widely used for structural and decorative purposes."
+    },
+    {
+     "title": "Galvanized iron (FISH Building Materials, concept 102713)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/102713.html",
+     "locator": "scope note",
+     "quote": "Iron coated in zinc, giving good protection against weathering.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"History\"",
+     "quote": "The 3rd Marquess of Bute provided the first Roman Catholic cathedral to be erected in Oban in 1886.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Corrugated galvanised iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corrugated_galvanised_iron",
+     "locator": "section \"History\"",
+     "quote": "Henry Robinson Palmer, architect and engineer to the London Dock Company, was granted a patent in 1829 for \"indented or corrugated metallic sheets\".",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Corrugated galvanised iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corrugated_galvanised_iron",
+     "locator": "section \"History\"",
+     "quote": "It was originally made from wrought iron  produced by puddling.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Corrugated galvanised iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corrugated_galvanised_iron",
+     "locator": "section \"History\"",
+     "quote": "Wrought iron CGI was gradually replaced by mild steel from around the 1890s",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "Corrugated galvanised iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corrugated_galvanised_iron",
+     "locator": "section \"History\"",
+     "quote": "CGI remains common.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "lead",
+     "quote": "Corrugated iron was first used for roofing in London in 1829 by civil engineer Henry Robinson Palmer",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "lead",
+     "quote": "a process developed by Stanislas Sorel in Paris in the 1830s",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "lead",
+     "quote": "After 1850, many types of prefabricated buildings were produced, including churches, chapels and mission halls.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"Manufacturers\"",
+     "quote": "R. R. Speirs who supplied 75 churches between 1908 and 1914",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"History\"",
+     "quote": "Churches, chapels and mission halls were built in new industrial areas, pit villages, near railway works and in more isolated rural and coastal locations.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"History\"",
+     "quote": "delivered to the nearest railway station and erected on the purchaser's foundation",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"History\"",
+     "quote": "St Mark's Church in Birkenhead, built in 1867, cost more than £2,000 for 500 seats.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"History\"",
+     "quote": "St Chad's Mission Church was moved from near Telford to the Ironbridge Gorge Museum Trust's Blists Hill Victorian Town in Shropshire",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Tin tabernacle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tin_tabernacle",
+     "locator": "section \"History\"",
+     "quote": "St Margaret's Church from South Wonston, near Winchester, Hampshire, is now at the Weald and Downland Open Air Museum in West Sussex.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "crown-post-roof",
+   "name": "Crown-post roof",
+   "group": "Roofs",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137649"
+   },
+   "period": {
+    "text": "the 13th-century design of Old Soar Manor, Kent, built in 1290 (the earliest a source here dates); late medieval; the latest example a source here dates is the building from Sundridge, Kent, of 1492-1537",
+    "from": 1290,
+    "to": 1537
+   },
+   "regions": {
+    "text": "South-east England (Kent, the Weald) and beyond, e.g. York",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A post on the tie beam carries a collar plate running the length of the roof, which carries the collars: it stiffens a roof of closely set rafters without principal trusses.",
+   "examples": [
+    {
+     "name": "Old Soar Manor",
+     "year": 1290
+    },
+    {
+     "name": "Merchant Taylors' Hall, York",
+     "year": 1400,
+     "note": "15th-century crown-post roof; timbers felled 1385-1410"
+    },
+    {
+     "name": "Building from Sundridge (Weald and Downland Living Museum)",
+     "year": 1492
+    }
+   ],
+   "note": "Crown posts were once called king posts; the term now means only the short post ending at collar level. The end year is the latest example named here, not a documented end of the form.",
+   "sources": [
+    {
+     "title": "Crown post (FISH Components, concept 137649)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137649.html",
+     "locator": "scope note",
+     "quote": "An upright timber standing on a tiebeam to support a collar or purlin."
+    },
+    {
+     "title": "Crown post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_post",
+     "locator": "lead",
+     "quote": "A crown post is a term in traditional timber framing for a post in roof framing which stands on a tie beam or collar beam and supports a collar plate.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Crown post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_post",
+     "locator": "section \"Historical Context\"",
+     "quote": "One of the most famous examples is the crown post roof at Old Soar Manor, which showcases the typical design used in the 13th century.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Old Soar Manor",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Soar_Manor",
+     "locator": "lead",
+     "quote": "Built in 1290",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Crown post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crown_post",
+     "locator": "section \"Historical Context\"",
+     "quote": "The use of crown post roofs became prominent in medieval England, particularly during the late medieval period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Merchant Taylors' Hall, York",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Merchant_Taylors'_Hall,_York",
+     "locator": "section \"Main Hall\"",
+     "quote": "The interior features a prominent 15th-century crown-post roof structure with heavy tie-beams, crown posts, and curved crown-struts.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Weald and Downland Living Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weald_and_Downland_Living_Museum",
+     "locator": "section \"Winkhurst kitchen\"",
+     "quote": "It is timber-framed with a crown-post roof. The building dates from between 1492 and 1537.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Collar beam",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collar_beam",
+     "locator": "section \"Crown post roof framing\"",
+     "quote": "The crown plate in turn carries collar beams which help support and carry the rafters",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "king-post-roof",
+   "name": "King-post roof (and truss)",
+   "group": "Roofs",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137923"
+   },
+   "period": {
+    "text": "by about 1320-1340, when the timber-framed great hall of The Abbey, Sutton Courtenay, whose cruck truss carries a king post, was cased in stone (the earliest a source here dates); in parish churches and tithe barns, the Georgian roof truss of the 18th century, in Gothic Revival work and occasionally today",
+    "from": 1320,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "England: churches, tithe barns and halls",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A triangle of two principal rafters and a tie beam, the king post hanging from the apex to hold up the tie beam: the simplest truss, later with an iron king rod.",
+   "examples": [
+    {
+     "name": "The Abbey, Sutton Courtenay",
+     "year": 1320,
+     "note": "cruck truss carrying a king post"
+    },
+    {
+     "name": "St Giles' Church, Horsted Keynes",
+     "note": "18th-century king post roof, replaced 1885-88"
+    }
+   ],
+   "sources": [
+    {
+     "title": "King post (FISH Components, concept 137923)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137923.html",
+     "locator": "scope note",
+     "quote": "An upright post set on a tiebeam or collar and used to support a ridge piece."
+    },
+    {
+     "title": "King post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King_post",
+     "locator": "section \"History\"",
+     "quote": "King posts were used in timber-framed roof construction in Roman buildings, and in medieval architecture in buildings such as parish churches and tithe barns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "King post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King_post",
+     "locator": "section \"History\"",
+     "quote": "King posts also appear in Gothic Revival architecture, Queen Anne style architecture and occasionally in modern construction.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "King post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King_post",
+     "locator": "section \"Architecture\"",
+     "quote": "The king post, itself in tension, connects the apex of the truss with its base, holding up the tie beam (also in tension) at the base of the truss.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"King post truss\"",
+     "quote": "In a variation known as a king bolt (rod) truss the king post is replaced by a metal bolt (rod), usually of wrought iron.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "The Abbey, Sutton Courtenay",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Abbey,_Sutton_Courtenay",
+     "locator": "section \"West range\"",
+     "quote": "It was cased in stone between 1320 and 1340",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "The Abbey, Sutton Courtenay",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Abbey,_Sutton_Courtenay",
+     "locator": "section \"West range\"",
+     "quote": "The great hall was originally timber-framed and integrated with the contemporary service wing.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The Abbey, Sutton Courtenay",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Abbey,_Sutton_Courtenay",
+     "locator": "section \"West range\"",
+     "quote": "with one cruck truss carrying a king post",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "St Giles' Church, Horsted Keynes",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Giles'_Church,_Horsted_Keynes",
+     "locator": "section \"History\"",
+     "quote": "the replacement of the 18th-century king post roof",
+     "about": [
+      "example",
+      "period"
+     ]
+    },
+    {
+     "title": "English Gothic architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Gothic_architecture",
+     "locator": "section \"Roofs\"",
+     "quote": "Later, the roof was supported by structures called a King-point-truss and Queen-post truss",
+     "about": [
+      "period",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "queen-post-roof",
+   "name": "Queen-post roof (and truss)",
+   "group": "Roofs",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "138141"
+   },
+   "period": {
+    "text": "English Gothic builders came to the queen-post truss after the plain tie-beam roof, but no source here dates an early one: the earliest dated example a source here names is the original roof of 47 Bootham, York, completed in 1753 (so 1753 is a floor, not a first use); the Palladian truss of the 17th-19th centuries; still a standard truss (no source here names a recent one)",
+    "from": 1753,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "England: churches (Onibury) and houses (York)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Two posts on the tie beam carry a straining beam or collar purlins, so the truss spans further than a king-post truss; the posts may be iron rods.",
+   "examples": [
+    {
+     "name": "47 Bootham, York",
+     "year": 1753,
+     "note": "queen post roof visible on the second floor"
+    },
+    {
+     "name": "Church of St Michael and All Angels, Onibury",
+     "note": "queen post roof over the nave"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Queen post truss (FISH Components, concept 138141)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138141.html",
+     "locator": "scope note",
+     "quote": "A truss with paired vertical posts set on the tie-beam and supporting collar purlins or plates."
+    },
+    {
+     "title": "Queen post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queen_post",
+     "locator": "lead",
+     "quote": "A queen post is a tension member in a truss that can span longer openings than a king post truss.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Queen post truss\"",
+     "quote": "As with a king post, the queen posts may be replaced with iron rods and thus called a queen rod truss.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Queen post truss\"",
+     "quote": "This truss is often known as a palladiana (Palladian truss) in Italy, as it was frequently used by the Renaissance architect Andrea Palladio.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English Gothic architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Gothic_architecture",
+     "locator": "section \"Roofs\"",
+     "quote": "Later, the roof was supported by structures called a King-point-truss and Queen-post truss",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "47 Bootham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/47_Bootham",
+     "locator": "lead",
+     "quote": "It was designed by John Carr, and was completed in 1753.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "47 Bootham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/47_Bootham",
+     "locator": "lead",
+     "quote": "on the second floor, the queen post roof structure is visible",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Onibury",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Onibury",
+     "locator": "section \"Parish church\"",
+     "quote": "The nave has a queen post roof",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arch-braced-roof",
+   "name": "Arch-braced roof",
+   "group": "Roofs",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137345"
+   },
+   "period": {
+    "text": "the early 14th-century nave roof of St Peter's, Kinver, with arch-braced lower collars (1300 is the start of that century; the earliest a source here dates); 15th-century halls and chancels; Cotehele's hall roof, felled about 1500; the latest a source here dates is the oak arch-braced collar roof of 1671 at Ince",
+    "from": 1300,
+    "to": 1671
+   },
+   "regions": {
+    "text": "Churches and great halls of England, notably the south-west (Martock, Cotehele) and the Midlands",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Curved braces from the rafters or wall posts to the collar replace the tie beam and leave the roof open; a double set gives the wagon or barrel roof.",
+   "examples": [
+    {
+     "name": "St Peter's Church, Kinver",
+     "year": 1300
+    },
+    {
+     "name": "Treasurer's House, Martock",
+     "year": 1400,
+     "note": "15th-century great hall roof"
+    },
+    {
+     "name": "Cotehele",
+     "year": 1500,
+     "note": "hall roof, felling date about 1500"
+    },
+    {
+     "name": "St James' Church, Ince",
+     "year": 1671,
+     "note": "chancel roof"
+    }
+   ],
+   "note": "The end year is the latest dated example named here; arch-braced roofs were built again in Victorian Gothic churches.",
+   "sources": [
+    {
+     "title": "Arch brace (FISH Components, concept 137345)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137345.html",
+     "locator": "scope note",
+     "quote": "A curving, upright timber brace used in roof construction, found in pairs, forming an arch."
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Arch-braced truss\"",
+     "quote": "Lacking a tie beam, the arch-braced (arched brace) truss gives a more open look to the interior of the roof.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Arch-braced truss\"",
+     "quote": "This form is called a wagon, cradle, barrel or tunnel roof because of this cylindrical appearance.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "St Peter's Church, Kinver",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter's_Church,_Kinver",
+     "locator": "section \"Interior\"",
+     "quote": "The nave is covered by an early 14th-century common-rafter roof with double collars, with the lower collars being arch-braced.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Treasurer's House, Martock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Treasurer's_House,_Martock",
+     "locator": "section \"Architecture\"",
+     "quote": "The great hall has a 15th-century four-bay open arch-braced collar-truss timber roof.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Cotehele",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotehele",
+     "locator": "section \"Great Hall\"",
+     "quote": "Dendrochronology has given the roof timbers a felling date of c. 1500.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "St James' Church, Ince",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_James'_Church,_Ince",
+     "locator": "section \"History\"",
+     "quote": "The chancel roof, though restored, dates from 1671.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "St James' Church, Ince",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_James'_Church,_Ince",
+     "locator": "section \"History\"",
+     "quote": "The chancel has a 17th-century oak arch-braced collar roof.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hammerbeam-roof",
+   "name": "Hammerbeam roof",
+   "group": "Roofs",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "143336"
+   },
+   "period": {
+    "text": "the Pilgrims' Hall, Winchester, built about 1310, possibly the earliest standing; Westminster Hall's roof by Hugh Herland, commissioned in 1393 and built 1395-99; Stirling Castle's Great Hall about 1502; still built: Stirling's 57 trusses remade in 1991-99, St George's Hall at Windsor in 1997",
+    "from": 1310,
+    "flourish": [
+     1393,
+     1502
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "England, especially the churches of the eastern counties; royal halls in England and Scotland (Edinburgh, Stirling, Darnaway)",
+    "nations": [
+     "England",
+     "Scotland"
+    ]
+   },
+   "technology": "Short hammer beams on curved braces replace the tie beam, and hammer posts or arch braces above them carry the roof: the open roof spans wider than any single timber.",
+   "types": [
+    "church"
+   ],
+   "examples": [
+    {
+     "name": "Pilgrims' Hall, Winchester",
+     "year": 1310
+    },
+    {
+     "name": "Westminster Hall",
+     "year": 1395,
+     "note": "span 20.8 m, the largest timber roof of medieval Europe"
+    },
+    {
+     "name": "Great Hall, Stirling Castle",
+     "year": 1502
+    },
+    {
+     "name": "St George's Hall, Windsor Castle",
+     "year": 1997,
+     "note": "new Gothic roof after the 1992 fire"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Hammerbeam roof (FISH Components, concept 143336)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/143336.html",
+     "locator": "scope note",
+     "quote": "A roof consisting of trusses that have a pair of brackets supporting the hammer posts that in turn support the rafters."
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Examples\"",
+     "quote": "Possibly the earliest hammer-beamed building still standing in England, built in about 1310  and located in Winchester Cathedral Close, is the Pilgrims' Hall",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Westminster Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Westminster_Hall",
+     "locator": "lead",
+     "quote": "It is particularly notable for its hammerbeam roof, which was commissioned for Richard II in 1393 and built by the royal carpenter, Hugh Herland.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Hammerbeam truss\"",
+     "quote": "The hammerbeam roof of Westminster Hall in London, designed by Hugh Herland and installed between 1395 and 1399, was the largest timber-roofed space in medieval Europe",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Modern roofs\"",
+     "quote": "Since its construction around 1502 by King James IV of Scotland",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Modern roofs\"",
+     "quote": "Green oak from 350 Perthshire trees was used to fabricate and erect 57 hammerbeam trusses spanning approximately 15 metres.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Modern roofs\"",
+     "quote": "A spectacular modern example of a hammer-beam roof is the new Gothic roof of St George's Hall at Windsor Castle, designed by Giles Downe and completed in 1997",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Examples\"",
+     "quote": "There are also numerous examples of smaller dimensions in churches throughout England, particularly in the eastern counties.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Examples\"",
+     "quote": "There are also secular examples over the Parliament Hall in Edinburgh, the Great Hall in Edinburgh Castle",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Hammerbeam roof",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hammerbeam_roof",
+     "locator": "section \"Design\"",
+     "quote": "In place of a normal tie beam spanning the entire width of the roof, short beams – the hammer beams – are supported by curved braces from the wall",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "thatch>straw-thatch",
+   "from": "thatch",
+   "to": "straw-thatch",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Straw (long straw and combed wheat reed) is one of the thatching materials, beside water reed and heather.",
+   "sources": [
+    {
+     "title": "Thatch (FISH Building Materials, concept 98239)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98239.html",
+     "locator": "scope note",
+     "quote": "Traditional roof covering consisting of materials such as reed, straw or heather layered and fastened together onto roof to form a run off to prevent water penetration."
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "they are usually made of long straw, combed wheat reed or water reed"
+    }
+   ]
+  },
+  {
+   "id": "thatch>slate",
+   "from": "thatch",
+   "to": "slate",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Thatch stayed the common roof of the English countryside until Welsh slate, sold commercially from 1820 and carried by canals and railways, made other roofs available; thatch declined in the late 19th century.",
+   "sources": [
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "In most of England, thatch remained the only roofing material available to the bulk of the population in the countryside, in many towns and villages, until the late 1800s."
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "Commercial distribution of Welsh slate began in 1820, and the mobility provided by canals and then railways made other materials readily available."
+    }
+   ]
+  },
+  {
+   "id": "thatch>plain-tile",
+   "from": "thatch",
+   "to": "plain-tile",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Towns turned from thatch to tile against fire: London forbade new thatched roofs in 1212, and tile was encouraged in medieval towns to stop fires spreading.",
+   "sources": [
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"Disadvantages\"",
+     "quote": "New thatched roofs were forbidden in London in 1212 following a major fire"
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "Their use was later encouraged within Medieval towns as a means of preventing the spread of fire."
+    }
+   ]
+  },
+  {
+   "id": "roman-roof-tile>plain-tile",
+   "from": "roman-roof-tile",
+   "to": "plain-tile",
+   "kind": "revival",
+   "confidence": "probable",
+   "claim": "The Romans brought clay roof tiles to Britain, including flat tiles; tile-making dwindled after Rome and returned in the 12th century, when simple flat tiles became common.",
+   "sources": [
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "Early tiles produced in Britain followed the Roman imbrex and tebula style, but also included flat shingle tiles, which could be produced with less experience."
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "For a while after the dissolution of the Roman Empire, the manufacture of tile for roofs and decoration diminished in Northern Europe."
+    },
+    {
+     "title": "Roof tiles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roof_tiles",
+     "locator": "section \"Northern Europe\"",
+     "quote": "In the twelfth century clay, slate, and stone roofing tile began to see more use, initially on abbeys and royal palaces."
+    }
+   ]
+  },
+  {
+   "id": "slate>welsh-slate",
+   "from": "slate",
+   "to": "welsh-slate",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Welsh slate is one of the regional groups of slate.",
+   "sources": [
+    {
+     "title": "Welsh slate (FISH Building Materials, concept 98286)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98286.html",
+     "locator": "scope note",
+     "quote": "Collective term for the North and South Wales groups of slate."
+    }
+   ]
+  },
+  {
+   "id": "slate>scottish-slate",
+   "from": "slate",
+   "to": "scottish-slate",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Scottish slate is one of the regional groups of slate.",
+   "sources": [
+    {
+     "title": "Scottish slate (FISH Building Materials, concept 98179)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98179.html",
+     "locator": "scope note",
+     "quote": "Geologically different from Lake District, Welsh and West Country groups of slate."
+    }
+   ]
+  },
+  {
+   "id": "slate>lake-district-slate",
+   "from": "slate",
+   "to": "lake-district-slate",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Lake District slate is one of the regional groups of slate.",
+   "sources": [
+    {
+     "title": "Lake district slate (FISH Building Materials, concept 98013)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98013.html",
+     "locator": "scope note",
+     "quote": "Collective term for the Burlington (Silurian period) and Borrowdale (Ordovician period) groups of slates from the Lake District and parts of Cumbria, Lancashire."
+    }
+   ]
+  },
+  {
+   "id": "slate>west-country-slate",
+   "from": "slate",
+   "to": "west-country-slate",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "West Country slate is one of the regional groups of slate.",
+   "sources": [
+    {
+     "title": "West country slate (FISH Building Materials, concept 98287)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98287.html",
+     "locator": "scope note",
+     "quote": "West Country Slate is geologically different from both Lake District and Welsh Slate."
+    }
+   ]
+  },
+  {
+   "id": "west-country-slate>welsh-slate",
+   "from": "west-country-slate",
+   "to": "welsh-slate",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Cheaper Welsh slate (and prefabricated tiles) cut back the Delabole quarry, from 500 workers in 1910.",
+   "sources": [
+    {
+     "title": "Delabole",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Delabole",
+     "locator": "section \"Delabole Quarry\"",
+     "quote": "the decline due to the availability of cheaper roofing materials e.g. Welsh slate or prefabricated tiles"
+    }
+   ]
+  },
+  {
+   "id": "stone-slate>welsh-slate",
+   "from": "stone-slate",
+   "to": "welsh-slate",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Large-scale working of stone slates such as Horsham Stone stopped in the later 19th century, when Welsh slate, carried by rail and freed of duty, spread across England; the sources give the two facts but do not join them.",
+   "sources": [
+    {
+     "title": "Horsham Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Horsham_Stone",
+     "locator": "section \"Commercial use in the early 21st century\"",
+     "quote": "Large-scale commercial extraction of Horsham stone had stopped by the 1880s"
+    },
+    {
+     "title": "Slate industry in Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slate_industry_in_Wales",
+     "locator": "lead",
+     "quote": "After the government abolished slate duty in 1831, rapid expansion was propelled by the building of narrow gauge railways to transport the slates to the ports."
+    },
+    {
+     "title": "Thatching",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thatching",
+     "locator": "section \"History\"",
+     "quote": "Commercial distribution of Welsh slate began in 1820, and the mobility provided by canals and then railways made other materials readily available."
+    }
+   ]
+  },
+  {
+   "id": "king-post-roof>queen-post-roof",
+   "from": "king-post-roof",
+   "to": "queen-post-roof",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The queen-post truss uses two posts instead of the king post's one, to span wider openings.",
+   "sources": [
+    {
+     "title": "Queen post",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queen_post",
+     "locator": "lead",
+     "quote": "A king post uses one central supporting post, whereas the queen post truss uses two."
+    },
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Queen post truss\"",
+     "quote": "The queen post truss extends the span"
+    }
+   ]
+  },
+  {
+   "id": "arch-braced-roof>hammerbeam-roof",
+   "from": "arch-braced-roof",
+   "to": "hammerbeam-roof",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The hammerbeam roof grew out of the arch-braced truss, as its culmination, to span wider halls.",
+   "sources": [
+    {
+     "title": "Timber roof truss",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_roof_truss",
+     "locator": "section \"Hammerbeam truss\"",
+     "quote": "The hammerbeam roof was the culmination of the development of the arch-braced truss, allowing greater spaces to be spanned."
+    }
+   ]
+  }
+ ]
+}

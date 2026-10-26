@@ -1,0 +1,2980 @@
+{
+ "about": "Building materials (roadmap BT3a): Brick and tile (wall materials, bonds and brick techniques; roof tiles are in another file). Fields as bidb/building_materials.py.",
+ "researched": "2026-10-26",
+ "materials": [
+  {
+   "id": "roman-brick",
+   "name": "Roman brick and tile",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "made in Britain during the Roman occupation, AD 43 to 410 (the Romans brought fired brick with them; a Scottish source says brick came in with them in the first century AD); after it came a gap of 600-700 years in brick-making, while Roman brick was taken from ruins and reused in Anglo-Saxon and Norman buildings (St Albans, Brixworth, Colchester)",
+    "from": 43,
+    "to": 410
+   },
+   "regions": {
+    "text": "Roman Britain (England and Wales, briefly southern Scotland); reused near Roman towns such as Verulamium (St Albans) and Colchester",
+    "nations": [
+     "England",
+     "Wales",
+     "Scotland"
+    ]
+   },
+   "technology": "Legionary mobile kilns; thin bricks laid as levelling courses (bonding tiles) in flint and rubble walls. When Roman rule ended the craft lapsed, and later builders robbed Roman sites for brick.",
+   "examples": [
+    {
+     "name": "All Saints' Church, Brixworth",
+     "wikidata": "Q15179394",
+     "year": 680,
+     "note": "Anglo-Saxon church (founded about 680) built with reused Roman brick"
+    },
+    {
+     "name": "St Albans Cathedral",
+     "wikidata": "Q334377",
+     "year": 1077,
+     "note": "Norman abbey church (building began in 1077, when Abbot Paul of Caen arrived) with a crossing tower on massive piers of Roman brick from Verulamium"
+    },
+    {
+     "name": "Colchester Castle",
+     "wikidata": "Q198287",
+     "year": 1076,
+     "note": "Norman keep (begun 1076 according to the late 13th-century Colchester Chronicle) of coursed rubble with Roman brick and tile robbed from nearby ruins"
+    }
+   ],
+   "note": "Archaeologists often call Roman brick and tile together ceramic building material (CBM), since fragments of wall brick and roof or floor tile are hard to tell apart.",
+   "sources": [
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"History\", \"Ancient\"",
+     "quote": "Roman brick is a type of brick used in ancient Roman architecture and spread by the Romans to the lands they conquered"
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Exploring the 17th and 18th century in Scottish brick\"",
+     "quote": "The story of brick in Scotland begins with a brief period of use by the Romans in the first century AD.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"History\", \"Ancient\"",
+     "quote": "In the British Isles, the introduction of Roman brick by the Ancient Romans was followed by a 600–700 year gap in major brick production.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"History\", \"Ancient\"",
+     "quote": "The Roman legions operated mobile kilns and introduced bricks to many parts of the empire.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"History\", \"Ancient\"",
+     "quote": "When building in masonry, the Romans often interspersed the stonework at set intervals with thin courses of bricks, sometimes known as \"bonding tiles\".",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"History\", \"Medieval\"",
+     "quote": "Examples of this type of reuse in Great Britain can be found in Anglo-Saxon churches at Brixworth, Corbridge, St Martin's, Canterbury, and St Nicholas', Leicester, and also in St Albans Abbey church (now St Albans Cathedral).",
+     "about": [
+      "example",
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Brixworth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brixworth",
+     "locator": "section \"History\", \"The church\"",
+     "quote": "It was founded circa 680 AD",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "St Albans Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Albans_Cathedral",
+     "locator": "section \"Saxon buildings\"",
+     "quote": "With the great quantities of brick, tile and other stone in Verulamium, the Roman site became a prime source of building material for the Abbey and other projects in the area.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "St Albans Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Albans_Cathedral",
+     "locator": "section \"Norman abbey\"",
+     "quote": "Much of the current layout and proportions of the structure date from the first Norman abbot, Paul of Caen (1077–1093).",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "St Albans Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Albans_Cathedral",
+     "locator": "section \"Norman abbey\"",
+     "quote": "Building work started in the year of Abbot Paul's arrival.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "St Albans Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Albans_Cathedral",
+     "locator": "section \"Norman abbey\"",
+     "quote": "Robert began with special thick supporting walls and four massive brick piers.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Colchester Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Colchester_Castle",
+     "locator": "section \"Construction\"",
+     "quote": "credits Eudo with the construction of the castle and gives a commencement date of 1076",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Colchester Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Colchester_Castle",
+     "locator": "section \"Construction of the keep\"",
+     "quote": "The walls are made of coursed rubble, including septaria and Roman brick robbed from nearby ruins.",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "brick",
+   "name": "Brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97777"
+   },
+   "period": {
+    "text": "brick-making revived in eastern England after the Roman gap: the earliest dated surviving post-Roman brickwork a source here names is the lancet windows of the chapel of St Nicholas at Coggeshall Abbey, Essex, dated to the 1220s (one source puts the revival in 12th-century East Anglia, another in the late 13th and early 14th centuries); its use rose sharply after the Restoration of 1660 and peaked in the Victorian period (1830-1914), when more bricks were made than in all earlier periods; still made",
+    "from": 1220,
+    "flourish": [
+     1660,
+     1914
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "first eastern England (East Anglia, Essex, Hull and Beverley) where good stone was lacking; Tudor brick across south-east England; in Scotland a brief Roman use, a little in the 17th century and in earnest from the 18th; in Ireland from the 1630s (Jigginstown, Co. Kildare); everywhere with the railways",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Revived through trade with the Low Countries, which already had a large brick industry; Tudor bricks were made on site in clamps fired with wood, heather or turf; after the Great Fire of London (1666) timber framing was no longer acceptable in towns; the brick tax (1784-1850) raised its price; mechanised making from the mid-19th century and the railways spread uniform bricks everywhere",
+   "examples": [
+    {
+     "name": "Coggeshall Abbey (chapel of St Nicholas)",
+     "wikidata": "Q17536248",
+     "year": 1220,
+     "note": "early brickwork in lancet windows, the chapel dated to the 1220s"
+    },
+    {
+     "name": "Little Wenham Hall",
+     "wikidata": "Q17646885",
+     "year": 1270,
+     "note": "dated c. 1260-80 on style; one of the earliest large brick buildings in Britain"
+    },
+    {
+     "name": "Hull Minster",
+     "wikidata": "Q5886523",
+     "year": 1300,
+     "note": "transepts c. 1300-20, some of the finest medieval brickwork in England"
+    },
+    {
+     "name": "Beverley Bar (North Bar)",
+     "wikidata": "Q13217684",
+     "year": 1409,
+     "note": "brick town gate built 1409"
+    },
+    {
+     "name": "Tattershall Castle",
+     "wikidata": "Q2628361",
+     "year": 1406,
+     "note": "rebuilt in brick by Ralph Cromwell; under construction 1406-1431 (tree-ring dating)"
+    },
+    {
+     "name": "Hampton Court Palace",
+     "wikidata": "Q205666",
+     "year": 1515,
+     "note": "Wolsey's palace, begun 1515: a monument to Tudor brick"
+    },
+    {
+     "name": "Jigginstown Castle",
+     "wikidata": "Q18962162",
+     "year": 1636,
+     "note": "late 1630s; the first building in Ireland of red brick (said to be imported from Holland)"
+    },
+    {
+     "name": "Fort George",
+     "wikidata": "Q1426707",
+     "note": "a good example of 18th-century Scottish brickwork (brick vaults)"
+    }
+   ],
+   "note": "Sources differ on when brick-making restarted: Little Wenham Hall's article says the 12th century in East Anglia; Gerard Lynch says the late 13th and early 14th centuries in eastern England. The Coggeshall chapel's brick (1220s) is the earliest dated example here.",
+   "sources": [
+    {
+     "title": "Brick (FISH Building Materials thesaurus, concept 97777)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97777.html",
+     "locator": "scope note",
+     "quote": "Standard rectangular block or tablet bonded on mortar joints in a regular arrangement or pattern for strength or decoration."
+    },
+    {
+     "title": "Little Wenham Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Wenham_Hall",
+     "locator": "section \"Architecture\"",
+     "quote": "The art of brickmaking had been lost after the departure of the Romans, but began to be revived in 12th century East Anglia, notably at Coggeshall Abbey (Essex), due to a lack of good local building stone and connections with the Low Countries, which already had an extensive brick industry.",
+     "about": [
+      "period",
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "introduction",
+     "quote": "The popularity of the material can be traced to the revival of brick-making in eastern England in the late 13th and early 14th centuries.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Coggeshall Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coggeshall_Abbey",
+     "locator": "section \"Remains\"",
+     "quote": "This chapel survives in use as the Chapel of St Nicholas, though it served as a barn from the Reformation to the 19th century, and has been dated to the 1220s. It also includes early brickwork, formed into fine lancet windows.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Little Wenham Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Wenham_Hall",
+     "locator": "lead",
+     "quote": "one of the earliest large brick buildings in Britain",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Little Wenham Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Wenham_Hall",
+     "locator": "section \"History\"",
+     "quote": "However, on stylistic evidence its construction has been dated to c. 1260-80.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Hull Minster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hull_Minster",
+     "locator": "section \"Current status\"",
+     "quote": "contains what is widely acknowledged to be some of the finest medieval brick-work in the country, particularly in the transepts",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Hull Minster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hull_Minster",
+     "locator": "section \"History\"",
+     "quote": "The transepts date from c. 1300–20",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Beverley Bar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beverley_Bar",
+     "locator": "section \"History\"",
+     "quote": "It was built in 1409 at a cost of £98",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Tattershall Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tattershall_Castle",
+     "locator": "section \"History\"",
+     "quote": "Tree ring dating indicates that construction was under way between 1406 and 1431.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Tattershall Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tattershall_Castle",
+     "locator": "section \"History\"",
+     "quote": "The trend for using bricks was introduced by Flemish weavers.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Tudor Brickwork\"",
+     "quote": "Bricks were generally made on site in wood, heather or turf (peat) fired clamps by itinerant workers.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Tudor Brickwork\"",
+     "quote": "With the building of Hampton Court Palace we have not only the seal of royal approval, but a monument to the achievement of brick in this period.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Hampton Court Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hampton_Court_Palace",
+     "locator": "section \"21st century\"",
+     "quote": "The palace's construction began on 12 February 1515.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Dutch Influence in the 17th Century\"",
+     "quote": "The use of brick dramatically increased following the Restoration of the monarchy in 1660.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Dutch Influence in the 17th Century\"",
+     "quote": "following the Great Fire of London in 1666, timber-framed construction was no longer acceptable in towns and cities.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "During this period, more bricks were made and laid than during all the previous periods.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "With improvements in travel and communications, bricks could be transported over wide areas which removed the traditional local variations in building materials, particularly in cities and towns with rail connections.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Brick tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick_tax",
+     "locator": "lead",
+     "quote": "The brick tax was a property tax introduced in Great Britain in 1784, during the reign of King George III, to help pay for the wars in the American Colonies.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brick tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick_tax",
+     "locator": "section \"Consequences\"",
+     "quote": "The brick tax caused the price of brick to grow, which meant that construction and rent became more expensive.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Exploring the 17th and 18th century in Scottish brick\"",
+     "quote": "The material then largely fell out of use until the 17th century.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Exploring the 17th and 18th century in Scottish brick\"",
+     "quote": "The use of fired clay brick began in earnest in Scotland in the 18th century.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Exploring the 17th and 18th century in Scottish brick\"",
+     "quote": "If you look closely at the brick vaulting at Fort George you can see where the bricks were skilfully cut.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Jigginstown Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jigginstown_Castle",
+     "locator": "lead",
+     "quote": "At the time it was one of the largest buildings in Ireland, and the first to be constructed of red brick said to have been imported from Holland",
+     "about": [
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Jigginstown Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jigginstown_Castle",
+     "locator": "lead",
+     "quote": "It was constructed in the late 1630s",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diaper-brickwork",
+   "name": "Diaper brickwork (Tudor)",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "138862"
+   },
+   "period": {
+    "text": "the earliest dated example a source here names is Fulham Palace (late 15th century, the Tudor courtyard probably begun by Bishop Kempe about 1480); characteristic of 16th-century Tudor brickwork; the Tudor fashion ended with the Tudor period (1603), and diaper patterns came back with Victorian polychrome brickwork (see that entry)",
+    "from": 1480,
+    "flourish": [
+     1500,
+     1600
+    ],
+    "to": 1603
+   },
+   "regions": {
+    "text": "Tudor brick buildings of south-east and eastern England (London, Essex, Norfolk, Surrey...)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Headers over-burnt or vitrified in wood-fired clamps came out dark (purple to slate, stained by the potash of the fuel); laid in English bond, they made lozenges and chequers in the red brick",
+   "examples": [
+    {
+     "name": "Fulham Palace",
+     "wikidata": "Q5507927",
+     "year": 1480,
+     "note": "late 15th century: all walls in diaper pattern, black brick on red"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Diaper (FISH Components thesaurus, concept 138862)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138862.html",
+     "locator": "scope note",
+     "quote": "A decorative, repeating geometric pattern, utilizing motifs such as lozenges, leaves etc., applied to a wall or panel, or incorporated into brickwork by laying different coloured bricks in a series of squares, diamonds."
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "section \"Examples\"",
+     "quote": "Fulham Palace, London, late 15th century, all walls in diaper pattern black brick on red brick.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Fulham Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fulham_Palace",
+     "locator": "section \"Tudor period (1485–1603)\"",
+     "quote": "It is assumed that the development would have been undertaken by Bishop Thomas Kempe c. 1480",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "lead",
+     "quote": "Historically it was used in the late Gothic period in Europe, and the Tudor period in England.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Tudor Brickwork\"",
+     "quote": "The Tudors further patterned their brickwork by inserting flared headers of over burnt or vitrified bricks into the walling.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Tudor Brickwork\"",
+     "quote": "These dark surfaces, stained by the potash from the wood fuel, ranged from deep purple to slate in colour.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Tudor Brickwork\"",
+     "quote": "to form a diaper or chequered pattern within the predominantly red brickwork",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "english-bond",
+   "name": "English bond",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "the oldest regular bond: the earliest work a source here ties to it is Tudor brickwork (the late 15th and 16th centuries; the date given is the start of Tudor diaper work at Fulham, about 1480; Little Wenham Hall, c. 1270, was built before the standard bonds); commonly used until Flemish bond overtook it (by the mid-17th century for the best work, generally by the end of the 17th or the start of the 18th); still preferred for engineering and industrial work",
+    "from": 1480,
+    "flourish": [
+     1480,
+     1660
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "England and wherever brick was laid in the isles",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Alternate courses of stretchers and headers, with no continuous vertical joints in the wall's thickness: the strongest bond, so engineers kept it for industrial buildings and civil engineering",
+   "sources": [
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "The traditional English brick bond alternates between stretcher and header courses, with headers centred over the stretchers underneath."
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "This is the oldest pattern, and was commonly used until the end of the 17th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "section \"History\"",
+     "quote": "The pattern became preferred for brickwork in high-quality English architecture by the middle of the 17th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The history of brickwork: from ornate designs to industrial evolution",
+     "author": "Strutt & Parker",
+     "kind": "secondary",
+     "url": "https://www.struttandparker.com/knowledge-and-research/the-history-of-brickwork-from-ornate-designs-to-industrial-evolution",
+     "locator": "article text",
+     "quote": "It was popular until the late 17th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Tudor Brickwork\"",
+     "quote": "They were laid carefully in quarter brick offsets in mainly English bond or English cross-bond",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Little Wenham Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Wenham_Hall",
+     "locator": "section \"Architecture\"",
+     "quote": "the standard bonds had yet to be developed",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "Flemish bond predominated domestically, while English bond was favoured industrially.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "English Bond is considered stronger than Flemish bond, so continues to be used for civil engineering projects, such as bridges, viaducts and embankments.",
+     "about": [
+      "technology",
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flemish-bond",
+   "name": "Flemish bond",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "the Dutch House at Kew (Kew Palace), 1631, is thought to be the first example in England (the earliest known whole facade in correct Flemish bond); preferred for high-quality brickwork by the mid-17th century and the usual face bond of Georgian building; the main domestic bond of the Victorians; still used",
+    "from": 1631,
+    "flourish": [
+     1660,
+     1900
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "England first (London), then throughout the isles and the colonies",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Headers and stretchers alternate in each course; dark burnt or glazed headers could pattern it; the bond came with Dutch fashions, though it did not begin in Flanders",
+   "examples": [
+    {
+     "name": "Kew Palace (the Dutch House)",
+     "wikidata": "Q1050082",
+     "year": 1631,
+     "note": "thought to be the first example of Flemish bond in England"
+    }
+   ],
+   "note": "Despite its name the bond did not begin in Flanders; it was used across northern and central Europe in the late Middle Ages. Sources differ on when it overtook English bond: by the middle of the 17th century (Wikipedia) or from the beginning of the 18th century (Wienerberger).",
+   "sources": [
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "lead",
+     "quote": "The pattern features bricks laid lengthwise (stretchers) alternating with bricks laid with their shorter ends exposed (headers) within the same courses."
+    },
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "section \"History\"",
+     "quote": "Kew Palace (built 1631; also known as the Dutch House) in London is thought to be the first example of Flemish bond in England.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Dutch Influence in the 17th Century\"",
+     "quote": "is the earliest known example in England of a whole facade set out and built using correct Flemish Bond",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "section \"History\"",
+     "quote": "The pattern became preferred for brickwork in high-quality English architecture by the middle of the 17th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The history of brickwork: from ornate designs to industrial evolution",
+     "author": "Strutt & Parker",
+     "kind": "secondary",
+     "url": "https://www.struttandparker.com/knowledge-and-research/the-history-of-brickwork-from-ornate-designs-to-industrial-evolution",
+     "locator": "article text",
+     "quote": "Different styles of bricklaying became popular during the Georgian period, including the distinctive Flemish bond.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "From the beginning of the 18th century, the Flemish bond superseded English bond.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"The Georgian Period 1714-1830\"",
+     "quote": "Face brickwork was generally of a very high standard, laid mainly Flemish bond, although header bond was also popular in the early 18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "lead",
+     "quote": "This decorative pattern can be accented by glazing or burning the exposed ends of the headers so that they possess a dark, glassy surface that contrasts with the stretchers.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "lead",
+     "quote": "Despite the bond's name, the pattern did not originate in Flanders and can be found in European architecture dating to the late Middle Ages.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "header-bond",
+   "name": "Header bond",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "popular in the early 18th century (the date given, 1700, is the start of that century; no source here names an earlier example); still used, above all for curved walls",
+    "from": 1700,
+    "flourish": [
+     1700,
+     1750
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "high-quality buildings, notably in Lewes, Sussex, with blue vitrified bricks",
+    "nations": [
+     "England"
+    ]
+   },
+   "examples": [
+    {
+     "name": "small buildings in Lewes, Sussex",
+     "note": "many in header bond of blue bricks with vitrified surfaces"
+    }
+   ],
+   "sources": [
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "Popular during the 18th century, the header bond pattern often employed contrasting brick colours to give a decorative effect."
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"The Georgian Period 1714-1830\"",
+     "quote": "header bond was also popular in the early 18th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "This bond uses so many bricks that it is usually reserved for very high-quality buildings.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "It can also used for radial brickwork, as the header faces can accommodate smaller radii.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brickwork",
+     "locator": "section \"Header bond\"",
+     "quote": "In Lewes, Sussex, England, many small buildings are constructed in this bond, using blue coloured bricks and vitrified surfaces.",
+     "about": [
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brickwork",
+     "locator": "section \"Header bond\"",
+     "quote": "Header bond is often used on curving walls with a small radius of curvature.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stretcher-bond",
+   "name": "Stretcher bond",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "the bond of the half-brick outer leaf of the cavity wall, so it became the usual face of brick buildings when most new outside walls in the UK became cavity walls, from the 1920s (the date given; half-brick walls are older, but no source here dates them); still the commonest bond",
+    "from": 1920,
+    "ongoing": true
+   },
+   "technology": "Only possible in a wall half a brick thick, tied by metal wall ties to an inner leaf across the cavity; English or Flemish bond can be imitated on the outer leaf with half bricks (snap headers)",
+   "sources": [
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "As the outer leaf of a building envelope is now only half a brick thick in modern construction, stretcher bond has become the most popular bond as it is time and cost effective to use.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Brick bonds",
+     "author": "J. A. Harrison (jaharrison.me.uk)",
+     "kind": "secondary",
+     "url": "https://jaharrison.me.uk/Brickwork/Bonds.html",
+     "locator": "\"Hollow wall bonds\" and \"Cavity walls\"",
+     "quote": "Chinese bonds were in use in the late 19th century but by the 1920s had largely been displaced by the cavity wall (ie Stretcher Bond).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "With the stretcher bond, courses are laid as stretchers with the joint of one course falling midway between the joints of the courses below."
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "reference",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cavity_wall",
+     "locator": "article text",
+     "quote": "In the UK, most new, external masonry walls have been cavity walls since the 1920s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "Flemish bonds can be replicated in the half-brick outer leaf of a cavity wall by using whole bricks as stretchers, while the headers are created by half bricks called bats or snap-headers.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brick bonds",
+     "author": "J. A. Harrison (jaharrison.me.uk)",
+     "kind": "secondary",
+     "url": "https://jaharrison.me.uk/Brickwork/Bonds.html",
+     "locator": "\"Hollow wall bonds\" and \"Cavity walls\"",
+     "quote": "When cavity walls were introduced in the early 20th century, this was often offset by using half bricks to emulate the appearance of Flemish Bond.",
+     "about": [
+      "technology",
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cavity-wall",
+   "name": "Cavity wall",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "rare examples in the 18th and 19th centuries (the date given, 1700, is the start of the 18th century; Wikipedia instead says cavity walls were reintroduced in the UK in the 19th century); the usual outside wall of new UK buildings since the 1920s; insulation in the cavity standard from the 1970s and required by building codes from the 1990s",
+    "from": 1700,
+    "flourish": [
+     1920,
+     2025
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "throughout the UK",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland"
+    ]
+   },
+   "technology": "Early cavity walls were tied with headers spanning the cavity; metal wall ties from the second half of the 19th century, common by about 1900; cavity insulation from the 1970s",
+   "note": "Sources differ on the start: Designing Buildings puts rare early examples in the 18th and 19th centuries, Wikipedia says they were reintroduced (after Greek and Roman use) in the 19th century.",
+   "sources": [
+    {
+     "title": "Cavity wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cavity_wall",
+     "locator": "lead",
+     "quote": "A cavity wall is a type of wall that has an airspace between the outer face and the inner, usually structural, construction."
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "reference",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cavity_wall",
+     "locator": "article text",
+     "quote": "Cavity walls existed in Greek and Roman times, but only developed as a component of more recent construction in the 18th and 19th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "reference",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cavity_wall",
+     "locator": "article text",
+     "quote": "Even during this time, they were very rare, and generally involved two skins of masonry bonded by headers spanning across the cavity",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "reference",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cavity_wall",
+     "locator": "article text",
+     "quote": "The use of metal ties to connect the two skins only emerged in the second half of the 19th century and then became more common towards the beginning of the 20th century.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "reference",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cavity_wall",
+     "locator": "article text",
+     "quote": "In the UK, most new, external masonry walls have been cavity walls since the 1920s.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cavity_wall",
+     "locator": "section \"History\"",
+     "quote": "Cavity walls were first used in Greco-Roman buildings, but fell out of use until the 19th century, when they were reintroduced in the United Kingdom, gaining widespread use in the 1920s.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Cavity wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cavity_wall",
+     "locator": "section \"History\"",
+     "quote": "The introduction of insulation into the cavity became standard in the 1970s and then required by most building codes in the 1990s.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gauged-brickwork",
+   "name": "Gauged (rubbed) brickwork",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "an early form, introduced from the Netherlands, on the Dutch House at Kew (1631); popularised by Wren in the late 17th century; after 1730 too expensive for whole facades and kept for arches, aprons and ornament; used for Victorian enrichment and still carved by conservation craftsmen",
+    "from": 1631,
+    "flourish": [
+     1660,
+     1730
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "London and the south-east first, then fine brick buildings everywhere",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Soft, fine 'rubbing bricks' cut with the brick axe and rubbed to exact sizes after firing, laid with very thin joints of lime putty",
+   "examples": [
+    {
+     "name": "Kew Palace (the Dutch House)",
+     "wikidata": "Q1050082",
+     "year": 1631,
+     "note": "an early form of gauged brickwork introduced from the Netherlands"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Glossary of architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_architecture",
+     "locator": "entry \"Gauged brickwork\"",
+     "quote": "Brickwork constructed of soft bricks rubbed to achieve a fine smooth finish with narrow joints between courses."
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Dutch Influence in the 17th Century\"",
+     "quote": "in an early form of gauged brickwork",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"The Georgian Period 1714-1830\"",
+     "quote": "A more expensive solution was to use cut and rubbed, and 'gauged' brickwork which was popularised by Wren.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"The Georgian Period 1714-1830\"",
+     "quote": "This used a facade of fine, colour-matched bricks cut and rubbed to exact units, laid in thin lime putty joints.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"The Georgian Period 1714-1830\"",
+     "quote": "After 1730 however, this was considered too expensive for complete facades and was generally reserved for window arches, aprons, niches and other architectural ornamentation only.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "the lavishing of ornamentation by detailing mass-produced, purpose moulded 'special-shaped bricks' or by gauged brickwork",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "figure caption",
+     "quote": "a similarly gauged brickwork crest carved in situ by the author",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"The Georgian Period 1714-1830\"",
+     "quote": "In hugely influential London the colours of bricks changed in popularity",
+     "about": [
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mathematical-tile",
+   "name": "Mathematical tile",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98047"
+   },
+   "period": {
+    "text": "18th and early 19th centuries: black glazed tiles in Brighton from about 1760 (Patcham Place was clad in them when rebuilt in 1764); the latest dated example a source here names is the Jireh Chapel, Lewes, built in 1805",
+    "from": 1760,
+    "flourish": [
+     1760,
+     1805
+    ],
+    "to": 1805
+   },
+   "regions": {
+    "text": "south-east England, above all East Sussex (Brighton, Lewes) and Kent; also Wiltshire, Surrey and Hampshire",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Tiles hung on laths over timber-framed walls and pointed in lime mortar to look like brickwork (header or stretcher bond); cheaper and easier to lay than brick and resistant to sea spray. Whether the brick tax (1784-1850) encouraged them is disputed: the tiles were taxed too.",
+   "examples": [
+    {
+     "name": "Patcham Place, Brighton",
+     "year": 1764,
+     "note": "clad entirely in black mathematical tiles when rebuilt in 1764"
+    },
+    {
+     "name": "Royal Crescent, Brighton",
+     "wikidata": "Q7374083",
+     "year": 1799,
+     "note": "built 1799-1807, faced in black tiles"
+    },
+    {
+     "name": "Jireh Chapel, Lewes",
+     "year": 1805,
+     "note": "timber-framed chapel of 1805 clad in red mathematical tiles"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Mathematical tile (FISH Building Materials thesaurus, concept 98047)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98047.html",
+     "locator": "scope note",
+     "quote": "Tile nailed externally to a wall and usually laid in mortar designed to present a brick-like appearance."
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "lead",
+     "quote": "Mathematical tiles are tiles which were used extensively as a building material in the southeastern counties of England—especially East Sussex and Kent—in the 18th and early 19th centuries.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "lead",
+     "quote": "A distinctive black variety with a glazed surface was used on many buildings in Brighton (now part of the city of Brighton and Hove) from about 1760 onwards",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "section \"Black glazed tiles\"",
+     "quote": "When Patcham Place, a mid 16th-century house in nearby Patcham (now part of the city of Brighton and Hove), was rebuilt in 1764, it was clad entirely in the tiles.",
+     "about": [
+      "example",
+      "period"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "section \"Black glazed tiles\"",
+     "quote": "was faced in the same material when it was built between 1799 and 1807",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "section \"Black glazed tiles\"",
+     "quote": "The timber-framed chapel was built in 1805.",
+     "about": [
+      "example",
+      "period"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "section \"Usage and varieties\"",
+     "quote": "A 1987 count of surviving mathematical tiles in English counties found the most in Kent (407 buildings), followed by Sussex (382), Wiltshire (50), Surrey (47), and Hampshire (37 including the Isle of Wight).",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "section \"Usage and varieties\"",
+     "quote": "Mathematical tiles had several advantages over brick: they were cheaper, easier to lay than bricks (skilled workmen were not needed), and were more resistant to the weathering effects of wind, rain and sea-spray",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "lead",
+     "quote": "Although the brick tax (1784–1850) was formerly thought to have encouraged the use of mathematical tiles, in fact the tiles were subject to the same tax.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "machine-made-brick",
+   "name": "Machine-made and pressed brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "the first British brick-making machine patent a source here names is Bradley & Craven's stiff-plastic machine of 1853 (Henry Clayton's machine of 1855 made up to 25,000 bricks a day); mechanisation spread from the mid-19th century and after 1850 manufactured bricks replaced handmade ones; extruded and pressed facing bricks in Scotland in the mid-to-late 19th century; still how most bricks are made",
+    "from": 1853,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "throughout the isles; in Scotland extruded and pressed facing bricks from the late 19th century",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Patented brick-making machines (stiff-plastic pressing, extrusion and wire cutting) and continuous kilns: Friedrich Hoffmann patented his kiln in 1858, and by 1867 fifty were working in England; railways carried the bricks everywhere. Uniform pressed bricks allowed thinner joints.",
+   "types": [
+    "hoffmann-kiln"
+   ],
+   "sources": [
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Industrial era\"",
+     "quote": "The transition from the traditional method of production known as hand-moulding to a mechanised form of mass-production slowly took place during the first half of the nineteenth century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Industrial era\"",
+     "quote": "The Bradley & Craven Ltd 'Stiff-Plastic Brickmaking Machine' was patented in 1853.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Industrial era\"",
+     "quote": "Henry Clayton, employed at the Atlas Works in Middlesex, England, in 1855, patented a brick-making machine that was capable of producing up to 25,000 bricks daily with minimal supervision.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "From the mid-19th century onwards, the manufacturing process, like many others, was becoming mechanised.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "Brickwork joints reduced to 0.3 inches (8mm) due to the accuracy of the machine pressed bricks",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "The history of brickwork: from ornate designs to industrial evolution",
+     "author": "Strutt & Parker",
+     "kind": "secondary",
+     "url": "https://www.struttandparker.com/knowledge-and-research/the-history-of-brickwork-from-ornate-designs-to-industrial-evolution",
+     "locator": "article text",
+     "quote": "After 1850, manufactured bricks replaced handmade bricks, leading to more uniformity in construction and style.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The history of brickwork: from ornate designs to industrial evolution",
+     "author": "Strutt & Parker",
+     "kind": "secondary",
+     "url": "https://www.struttandparker.com/knowledge-and-research/the-history-of-brickwork-from-ornate-designs-to-industrial-evolution",
+     "locator": "article text",
+     "quote": "With the arrival of the railways, it became much easier to transport building materials around the country.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Discover Scotland's Historic Bricks and Tiles",
+     "author": "Historic Environment Scotland (Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2024/05/28/discover-scotlands-historic-bricks-and-tiles/",
+     "locator": "section \"Types of Brick in Scotland\"",
+     "quote": "As technology advanced in the mid-to-late 19th century, new types of brick began to be used. These could be produced by extrusion, which was an early method of mechanically moulding bricks.",
+     "about": [
+      "period",
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Discover Scotland's Historic Bricks and Tiles",
+     "author": "Historic Environment Scotland (Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2024/05/28/discover-scotlands-historic-bricks-and-tiles/",
+     "locator": "section \"Types of Brick in Scotland\"",
+     "quote": "Pressed facing bricks also began to be used in the late 19th century.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "lead",
+     "quote": "Patented by German Friedrich Hoffmann for brickmaking in 1858, it was later used for lime-burning, and was known as the Hoffmann continuous kiln.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Hoffmann kiln expansion\"",
+     "quote": "In 1867 there were already 250 of them, most in the Prussian part of Germany, fifty in England and three in France.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fletton-brick",
+   "name": "Fletton brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97777"
+   },
+   "period": {
+    "text": "brick-making at Fletton Lodge, Peterborough, began in 1877 (James McCallum Craig; the maker's own history); the London Brick Company grew from J. C. Hill's yard bought in 1889 (incorporated 1900); sales peaked in 1967; still made at Peterborough (Kings Dyke), though Stewartby closed in 2008",
+    "from": 1877,
+    "flourish": [
+     1923,
+     1973
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "the lower Oxford Clay of Peterborough (Fletton, Whittlesey) and the Marston Vale, Bedfordshire (Stewartby); sold across England, about 5 million UK houses",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "The lower Oxford Clay holds carbon that burns in the kiln, so the bricks cost little fuel to fire; mass production in large works with continuous Hoffmann kilns (one still works at Kings Dyke); Stewartby closed when it could not meet sulphur emission limits",
+   "types": [
+    "hoffmann-kiln"
+   ],
+   "sources": [
+    {
+     "title": "London Brick Company",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Brick_Company",
+     "locator": "section \"History\"",
+     "quote": "\"Fletton\" is the generic name given to bricks made from lower Oxford clay which have a low fuel cost due to the carbonaceous content of the clay.",
+     "about": [
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "London Brick: An icon on the British landscape",
+     "author": "Forterra (maker of London Brick)",
+     "kind": "secondary",
+     "url": "https://forterra.co.uk/london-brick",
+     "locator": "History, 1877",
+     "quote": "James McCallum Craig buys Fletton Lodge and brick making begins.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Brick Company",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Brick_Company",
+     "locator": "section \"History\"",
+     "quote": "In 1889, Hill bought the small T.W. Hardy & Sons brickyard at Fletton in Peterborough, and the business was incorporated as the London Brick Company in 1900.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Brick Company",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Brick_Company",
+     "locator": "section \"History\"",
+     "quote": "During the post war housing boom, Fletton brick sales increased, reaching a peak in 1967.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Brick Company",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Brick_Company",
+     "locator": "section \"History\"",
+     "quote": "Production of Fletton brick is now concentrated at Peterborough, while the Marston Vale site is being redeveloped for housing.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "London Brick Company",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Brick_Company",
+     "locator": "section \"Operations\"",
+     "quote": "The company estimates that 5 million houses in the United Kingdom are built using Fletton brick.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Stewartby",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stewartby",
+     "locator": "section \"Brickworks\"",
+     "quote": "The site closed in 2008 as the owners, Hanson, could not meet UK limits for sulphur dioxide emissions.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"UK\"",
+     "quote": "There is still a working kiln at Kings Dyke in Peterborough, which is the last site of the London Brick Company, owned by Forterra PLC.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "staffordshire-blue-brick",
+   "name": "Staffordshire blue brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97777"
+   },
+   "period": {
+    "text": "the Black Country brick industry goes back at least to the 17th century but took off in the 19th; the first date a source here gives for blue brick itself is the Joseph Hamblet works, West Bromwich, founded in 1851 and one of the largest makers; used for canal and then railway bridges and tunnels; still made",
+    "from": 1851,
+    "flourish": [
+     1851,
+     1945
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "the Black Country and Staffordshire (West Bromwich, Oldbury, Tipton, Rowley Regis); used across England on canals and railways",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Local Etruria marl fired hot in a reducing (low-oxygen) atmosphere turns deep blue, very hard and almost waterproof (Class A engineering brick)",
+   "sources": [
+    {
+     "title": "Staffordshire blue brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staffordshire_blue_brick",
+     "locator": "lead",
+     "quote": "Staffordshire blue brick is a strong type of construction brick, originally made in Staffordshire, England.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Staffordshire blue brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staffordshire_blue_brick",
+     "locator": "lead",
+     "quote": "The industry dates back to at least the 17th century, however brickworks really took off in the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Staffordshire blue brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staffordshire_blue_brick",
+     "locator": "lead",
+     "quote": "A key date is 1851 when the Joseph Hamblet brickworks were founded in West Bromwich, which became one of the largest producers of Staffordshire blue bricks.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Staffordshire blue brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staffordshire_blue_brick",
+     "locator": "lead",
+     "quote": "The brick is made from the local red clay, Etruria marl, which when fired at a high temperature in a low-oxygen reducing atmosphere takes on a deep blue colour and attains a very hard surface with high crushing strength and low water absorption.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Staffordshire blue brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staffordshire_blue_brick",
+     "locator": "lead",
+     "quote": "This type of brick was used for foundations as well as being extensively used for bridges and tunnels in canal construction, and later, for railways.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Staffordshire blue brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staffordshire_blue_brick",
+     "locator": "lead",
+     "quote": "Brickworks were a key industry across the whole of the Black Country throughout the 19th and 20th centuries, and were considered so important that they were designated as a reserved occupation during the Second World War.",
+     "about": [
+      "period",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "accrington-brick",
+   "name": "Accrington (Nori) engineering brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97912"
+   },
+   "period": {
+    "text": "made at Altham near Accrington from 1887 to 2008, and again from 2015",
+    "from": 1887,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Altham, near Accrington, Lancashire; used far afield (Blackpool Tower, Battersea Power Station)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Fireclay from beside the local coal seams, fired with local coal, gave iron-hard, acid-resistant engineering bricks for foundations, flues and chimneys",
+   "types": [
+    "red-brick-university",
+    "railway-viaduct"
+   ],
+   "examples": [
+    {
+     "name": "Blackpool Tower",
+     "wikidata": "Q880905",
+     "note": "foundations of Accrington brick"
+    },
+    {
+     "name": "University of Birmingham, original Edgbaston buildings",
+     "note": "its look helped popularise the term red brick university"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Engineering brick (FISH Building Materials thesaurus, concept 97912)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97912.html",
+     "locator": "scope note",
+     "quote": "A dense, high strength, low absorption brick of uniform size, employed predominantly in industrial structures such as railway viaducts."
+    },
+    {
+     "title": "Accrington brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Accrington_brick",
+     "locator": "lead",
+     "quote": "Accrington bricks, or Nori, are a type of iron-hard engineering brick, produced in Altham near Accrington, Lancashire, England from 1887 to 2008 and again from 2015.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Accrington brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Accrington_brick",
+     "locator": "lead",
+     "quote": "They were famed for their strength, and were used for the foundations of the Blackpool Tower and the Empire State Building.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Accrington brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Accrington_brick",
+     "locator": "section \"Geology\"",
+     "quote": "Fireclay is often found close to coal seams and the Accrington area had many collieries.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Accrington brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Accrington_brick",
+     "locator": "section \"History\"",
+     "quote": "These bricks were acid resistant, so could be used for the lining of flues and chimneys.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Accrington brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Accrington_brick",
+     "locator": "section \"Usage\"",
+     "quote": "Its distinctive appearance helped popularise the term red brick university.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Accrington brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Accrington_brick",
+     "locator": "section \"Usage\"",
+     "quote": "Battersea Power Station",
+     "about": [
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ruabon-brick",
+   "name": "Ruabon brick and terracotta",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97777"
+   },
+   "period": {
+    "text": "from the mid-19th century (the date given, 1860, is the opening of the Tatham brick and tile works, about 1860, the earliest Ruabon works a source here dates); Ruabon red brick and terracotta were used across the UK; the Jenks terracotta works (about 1883) closed in the mid-1970s, but the Dennis company still operates",
+    "from": 1860,
+    "flourish": [
+     1860,
+     1914
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Ruabon, near Wrexham, north-east Wales ('Terracottapolis'); used nationwide",
+    "nations": [
+     "Wales"
+    ]
+   },
+   "technology": "High-quality local Etruria marl clay, the coal of the area and the railway (which reached Ruabon in 1855)",
+   "sources": [
+    {
+     "title": "Ruabon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruabon",
+     "locator": "lead",
+     "quote": "From the mid-19th century, Ruabon became famous across the UK, for its red bricks and terracotta, which earnt the village the nickname \"Terracottapolis\".",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Ruabon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruabon",
+     "locator": "lead",
+     "quote": "The local discovery of high-quality Etruria marl clay led to the rise of the Dennis Ruabon Tile Factory, whose durable and richly coloured products were used nationwide.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Ruabon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruabon",
+     "locator": "section \"Brick and clay works\"",
+     "quote": "Opened about 1860 by Henry Richard Bowers & Co. of Penbedw, Acrefair, it produced bricks, pipes and chimney pots.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ruabon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruabon",
+     "locator": "section \"Brick and clay works\"",
+     "quote": "It was taken over by Dennis' in the 1960s but closed in the mid-1970s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ruabon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruabon",
+     "locator": "section \"Brick and clay works\"",
+     "quote": "The Dennis Company became world-famous for its tiles and still operates today.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ruabon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ruabon",
+     "locator": "section \"Iron works, coal mines and chemical works\"",
+     "quote": "until the railway reached Ruabon in 1855",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "colliery-brick",
+   "name": "Colliery (common) brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97777"
+   },
+   "period": {
+    "text": "emerges in the late 19th century (the date given, 1875, stands for 'the mid-to-late 19th century' the source gives for the new machine-made bricks it appeared with); made in vast quantities in Central Scotland; still seen in many buildings (no source here gives an end date, so it is left open)",
+    "from": 1875,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Central Scotland",
+    "nations": [
+     "Scotland"
+    ]
+   },
+   "technology": "Made from colliery shale, a by-product of coal mining",
+   "sources": [
+    {
+     "title": "Discover Scotland's Historic Bricks and Tiles",
+     "author": "Historic Environment Scotland (Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2024/05/28/discover-scotlands-historic-bricks-and-tiles/",
+     "locator": "section \"Types of Brick in Scotland\"",
+     "quote": "The use of colliery shale to make what were termed 'common' or 'colliery' bricks also emerges around this time.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Discover Scotland's Historic Bricks and Tiles",
+     "author": "Historic Environment Scotland (Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2024/05/28/discover-scotlands-historic-bricks-and-tiles/",
+     "locator": "section \"Types of Brick in Scotland\"",
+     "quote": "Such bricks were produced in vast quantities throughout Central Scotland and are frequently seen in buildings today.",
+     "about": [
+      "region",
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "polychrome-brick",
+   "name": "Polychrome brickwork",
+   "group": "Brick and tile",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "the Victorian revival began after Ruskin's Seven Lamps of Architecture (1849), with Butterfield's All Saints, Margaret Street (1850-59) as the lavish first; popular in Gothic Revival building across the UK, most elaborate in the 1860s-80s (Bristol Byzantine, Watson Fothergill in Nottingham); Lynch's Victorian brickwork runs to 1914, the date given as its end",
+    "from": 1850,
+    "flourish": [
+     1850,
+     1889
+    ],
+    "to": 1914
+   },
+   "regions": {
+    "text": "across the UK (London, Bristol, Nottingham...)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Bricks of different colours (red, black, cream, yellow) from different clays and firings, made widely available and carried by rail; the brick tax had ended in 1850",
+   "examples": [
+    {
+     "name": "All Saints, Margaret Street",
+     "wikidata": "Q4729371",
+     "year": 1850,
+     "note": "Butterfield, 1850-59: red brick banded and diapered with black, cream and stone"
+    },
+    {
+     "name": "Welsh Back Granary, Bristol",
+     "year": 1869,
+     "note": "Bristol Byzantine"
+    }
+   ],
+   "note": "Tudor diaper work is its forerunner (see diaper-brickwork).",
+   "sources": [
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "lead",
+     "quote": "Polychrome brickwork is a style of architectural brickwork in which bricks of different colours are used to create decorative patterns or highlight architectural features in the walls of a building."
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "lead",
+     "quote": "This style was revived in Britain in the 1850s as a feature of Gothic Revival architecture.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "section \"Beginnings in the British Gothic Revival\"",
+     "quote": "The revival of polychrome brickwork is generally thought to have been instigated by British critic and architectural theorist John Ruskin, in his 1849 book The Seven Lamps of Architecture",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "section \"Beginnings in the British Gothic Revival\"",
+     "quote": "William Butterfield made lavish use of the technique in his All Saints Margaret Street, built between 1850 and 1859, with an exterior of banded and diaper patterned brickwork in black and cream on a red brick background.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "section \"Beginnings in the British Gothic Revival\"",
+     "quote": "The use of coloured brick effects became quite popular in Gothic Revival across the United Kingdom, often in combination with stone, usually with far less elaboration that Butterfield.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "section \"Beginnings in the British Gothic Revival\"",
+     "quote": "in Bristol in the 1860s–80s it was often used is what is now known as 'Bristol Byzantine' style, for instance the 1869 Welsh Back Granary",
+     "about": [
+      "period",
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "the Victorian desire for enrichment was readily achieved by the use of often garish multi-coloured",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "Brick manufacturing methods had improved in all areas including quality, accuracy and regularity, and in a larger range of colours available.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Brick tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick_tax",
+     "locator": "section \"Consequences\"",
+     "quote": "Moreover, buildings constructed before 1784 and after 1850 show more ornaments than buildings built during the time of the brick tax.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "All Saints, Margaret Street",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/All_Saints,_Margaret_Street",
+     "locator": "section \"Architecture\"",
+     "quote": "The exterior of All Saints employs red brick, heavily banded and patterned with black brick, with bands of stone and carved elements in the gate, the church wall and spire.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "terracotta",
+   "name": "Architectural terracotta",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98235"
+   },
+   "period": {
+    "text": "first in Italian Renaissance ornament on early Tudor brick houses: Layer Marney Tower (about 1523) and Sutton Place (about 1525); revived on a large scale by the Victoria and Albert Museum (1867-80) and the Natural History Museum (opened 1881), which began an era of mass-produced terracotta; still made (Darwen Terracotta and Faience, 2014 to the present)",
+    "from": 1523,
+    "flourish": [
+     1867,
+     1914
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Tudor examples in Essex, Surrey and Norfolk; Victorian terracotta from Lambeth (Doulton), Tamworth (Gibbs and Canning), Ruabon, Leeds (Burmantofts) and Darwen, used across the UK",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "technology": "Moulded hollow clay blocks, mass-produced in the late 19th century; chosen because it resisted the sooty air of Victorian cities",
+   "types": [
+    "tudor-gatehouse",
+    "museum"
+   ],
+   "examples": [
+    {
+     "name": "Layer Marney Tower",
+     "wikidata": "Q1809395",
+     "year": 1523,
+     "note": "brick and terracotta Tudor gatehouse, about 1523"
+    },
+    {
+     "name": "Sutton Place, Surrey",
+     "wikidata": "Q7650312",
+     "year": 1525,
+     "note": "red brick with moulded terracotta in Italian Renaissance style"
+    },
+    {
+     "name": "Natural History Museum, London",
+     "wikidata": "Q309388",
+     "year": 1881,
+     "note": "Alfred Waterhouse; terracotta by Gibbs and Canning of Tamworth"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Terracotta (FISH Building Materials thesaurus, concept 98235)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98235.html",
+     "locator": "scope note",
+     "quote": "Hard, unglazed, brown, versatile earthenware which can be used as a tile or moulded into statuary."
+    },
+    {
+     "title": "Layer Marney Tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Layer_Marney_Tower",
+     "locator": "lead",
+     "quote": "Layer Marney Tower is an incomplete early Tudor country house, with gardens and parkland, dating from about 1523",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Layer Marney Tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Layer_Marney_Tower",
+     "locator": "lead",
+     "quote": "It is contemporaneous with East Barsham Manor in Norfolk and Sutton Place, Surrey, with which latter building it shares the rare combination of brick and terracotta construction.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Layer Marney Tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Layer_Marney_Tower",
+     "locator": "lead",
+     "quote": "Layer Marney Tower is in many ways the apotheosis of the Tudor gatehouse",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Sutton Place, Surrey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sutton_Place,_Surrey",
+     "locator": "lead",
+     "quote": "is a large Grade I listed Tudor prodigy house built c. 1525 by Sir Richard Weston",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Sutton Place, Surrey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sutton_Place,_Surrey",
+     "locator": "section \"Terracotta elements\"",
+     "quote": "The decorative elements made from moulded terracotta on the facade are in an Italian Renaissance style.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Architectural terracotta",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_terracotta",
+     "locator": "section \"Great Britain\"",
+     "quote": "The Victoria and Albert Museum (1867–1880) and the Natural History Museum of London (1879–1880) buildings ushered in an era of mass-produced architectural terracotta.",
+     "about": [
+      "period",
+      "technology",
+      "example"
+     ]
+    },
+    {
+     "title": "Architectural terracotta",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_terracotta",
+     "locator": "section \"Britain\"",
+     "quote": "Darwen Terracotta and Faience (2014–present)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Architectural terracotta",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_terracotta",
+     "locator": "section \"Britain\"",
+     "quote": "Gibbs and Canning (1847 to 1950s)",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Architectural terracotta",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_terracotta",
+     "locator": "lead",
+     "quote": "in most cases from the 19th century onwards each piece of terracotta is composed of a hollow clay web enclosing a void space or cell",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Natural History Museum, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
+     "locator": "section \"Planning and architecture of new building\"",
+     "quote": "Both the interiors and exteriors of the Waterhouse building make extensive use of architectural terracotta tiles to resist the sooty atmosphere of Victorian London, manufactured by the Tamworth-based company of Gibbs and Canning.",
+     "about": [
+      "technology",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Natural History Museum, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
+     "locator": "lead",
+     "quote": "the landmark Alfred Waterhouse building was built and opened by 1881",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Royal Doulton",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Doulton",
+     "locator": "section \"Architectural ceramics\"",
+     "quote": "Doulton also manufactured architectural terracotta (usually stoneware), mainly at Lambeth, and produced commissions for monumental sculpture in terracotta.",
+     "about": [
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "faience",
+   "name": "Faience (glazed architectural terracotta)",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97914"
+   },
+   "period": {
+    "text": "the earliest dated architectural maker a source here names is Burmantofts of Leeds, making glazed terracotta from 1879; Doulton's white glazed 'Carrara' (from 1887) was in fashion with Art Nouveau and stayed popular to the Art Deco of the 1930s; still made (Darwen Terracotta and Faience, 2014 to the present)",
+    "from": 1879,
+    "flourish": [
+     1880,
+     1939
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "made at Leeds (Burmantofts), Lambeth (Doulton) and Darwen; used across the UK, including Scotland",
+    "nations": [
+     "England",
+     "Scotland"
+    ]
+   },
+   "technology": "Glazed fireclay or terracotta blocks and slabs, bedded as cladding; washable, so suited to smoky cities, shops, pubs and cinemas",
+   "examples": [
+    {
+     "name": "Yorkshire College, Leeds",
+     "year": 1883,
+     "note": "Alfred Waterhouse, with Burmantofts materials"
+    },
+    {
+     "name": "National Liberal Club, London",
+     "year": 1884,
+     "note": "Alfred Waterhouse, with Burmantofts materials"
+    },
+    {
+     "name": "Turkey Cafe, Leicester",
+     "note": "glazed Doulton Carrara ware with bright colours"
+    }
+   ],
+   "note": "In English 19th-century usage 'faience' covered almost any earthenware with relief modelling under coloured glazes, including much glazed architectural terracotta.",
+   "sources": [
+    {
+     "title": "Faience (FISH Building Materials thesaurus, concept 97914)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97914.html",
+     "locator": "scope note",
+     "quote": "Faience also refers to decorative glazed units."
+    },
+    {
+     "title": "Faience",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Faience",
+     "locator": "lead",
+     "quote": "In English 19th-century usage \"faience\" was often used to describe \"any earthenware with relief modelling decorated with coloured glazes\", including much glazed architectural terracotta and Victorian majolica",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Burmantofts Pottery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burmantofts_Pottery",
+     "locator": "section \"Company history\"",
+     "quote": "In 1879, after a period of expansion, the firm made decorative bricks and tiles in orange or buff-coloured architectural terracotta, glazed bricks, and glazed terracotta.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Burmantofts Pottery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burmantofts_Pottery",
+     "locator": "section \"Company history\"",
+     "quote": "Architect Alfred Waterhouse used their materials in his Yorkshire College (1883) in Leeds, and his National Liberal Club (1884) in London.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Royal Doulton",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Doulton",
+     "locator": "section \"Architectural ceramics\"",
+     "quote": "the new taste for Art Nouveau favoured the glazed white \"Carrara\" material, which remained popular through to the Art Deco of the 1930s",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Royal Doulton",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Doulton",
+     "locator": "section \"Decorative wares\"",
+     "quote": "\"Carrara\" (1887)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Architectural terracotta",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architectural_terracotta",
+     "locator": "section \"Britain\"",
+     "quote": "Darwen Terracotta and Faience (2014–present)",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Discover Scotland's Historic Bricks and Tiles",
+     "author": "Historic Environment Scotland (Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2024/05/28/discover-scotlands-historic-bricks-and-tiles/",
+     "locator": "article text",
+     "quote": "terracotta and faience which have been used to create a decorative effect in a number of Scottish buildings",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Natural History Museum, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
+     "locator": "section \"Planning and architecture of new building\"",
+     "quote": "to resist the sooty atmosphere of Victorian London",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glazed-brick",
+   "name": "Glazed brick",
+   "group": "Brick and tile",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "the earliest dated British maker a source here names is Burmantofts of Leeds, making glazed bricks from 1879; Scotland had a well-developed glazed brick industry in the late 19th century, centred on Ayrshire, and many late 19th-century Scottish buildings use them in patterns; still made",
+    "from": 1879,
+    "flourish": [
+     1879,
+     1914
+    ],
+    "ongoing": true
+   },
+   "regions": {
+    "text": "made in Leeds and Ayrshire among other places; used across Britain (e.g. the Victorian toilets at Rothesay, 11-13 Crichton Street, Dundee)",
+    "nations": [
+     "England",
+     "Scotland"
+    ]
+   },
+   "technology": "A glaze (salt glazing during the burning, or a dipped slip refired) fused onto the brick face: hard-wearing, washable and light-reflecting",
+   "examples": [
+    {
+     "name": "Victorian toilets, Rothesay",
+     "note": "decorative patterns in glazed brick"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Influences on colour\"",
+     "quote": "An impervious and ornamental surface may be laid on brick either by salt glazing, in which salt is added during the burning process, or by the use of a slip, which is a glaze material into which the bricks are dipped.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Burmantofts Pottery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burmantofts_Pottery",
+     "locator": "section \"Company history\"",
+     "quote": "In 1879, after a period of expansion, the firm made decorative bricks and tiles in orange or buff-coloured architectural terracotta, glazed bricks, and glazed terracotta.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Dressed to impress: 19th century decorative brickwork\"",
+     "quote": "Scotland had a well-developed glazed brick manufacturing industry in the late 19th century, with a particular focus of this being in Ayrshire.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Dressed to impress: 19th century decorative brickwork\"",
+     "quote": "The use of glazed bricks to create decorative patterns can be seen in many late 19th century buildings across Scotland.",
+     "about": [
+      "period",
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "A tour of Scotland's beautiful brick buildings",
+     "author": "Moses Jenkins (Historic Environment Scotland, Engine Shed blog)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/10/15/scotlands-brick-buildings/",
+     "locator": "section \"Dressed to impress: 19th century decorative brickwork\"",
+     "quote": "A particularly good example of this is the Victorian toilets in Rothesay, with other examples including 11-13 Crichton Street, Dundee.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Types\"",
+     "quote": "Ceramic glazed – fire bricks with a decorative glazing",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "roman-brick>brick",
+   "from": "roman-brick",
+   "to": "brick",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "Brick-making in the isles, brought by the Romans, lapsed for 600-700 years after Roman rule and was revived in eastern England in the 12th-13th centuries under Low Countries influence; in between, Roman brick was reused.",
+   "sources": [
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"History\", \"Ancient\"",
+     "quote": "In the British Isles, the introduction of Roman brick by the Ancient Romans was followed by a 600–700 year gap in major brick production."
+    },
+    {
+     "title": "Little Wenham Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Wenham_Hall",
+     "locator": "section \"Architecture\"",
+     "quote": "The art of brickmaking had been lost after the departure of the Romans, but began to be revived in 12th century East Anglia"
+    }
+   ]
+  },
+  {
+   "id": "english-bond>flemish-bond",
+   "from": "english-bond",
+   "to": "flemish-bond",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Flemish bond replaced English bond as the fashionable face bond from the mid-17th century (Kew, 1631), while English bond stayed in use for engineering and industrial work.",
+   "sources": [
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "From the beginning of the 18th century, the Flemish bond superseded English bond."
+    },
+    {
+     "title": "Flemish bond",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flemish_bond",
+     "locator": "section \"History\"",
+     "quote": "The pattern became preferred for brickwork in high-quality English architecture by the middle of the 17th century."
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Victorian Brickwork 1830-1914\"",
+     "quote": "Flemish bond predominated domestically, while English bond was favoured industrially."
+    }
+   ]
+  },
+  {
+   "id": "flemish-bond>stretcher-bond",
+   "from": "flemish-bond",
+   "to": "stretcher-bond",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "With the cavity wall (usual for new UK outer walls since the 1920s) the half-brick outer leaf is laid in stretcher bond; Flemish or English bond survive on it only as an imitation with half bricks.",
+   "sources": [
+    {
+     "title": "A guide to brick bonding patterns",
+     "author": "Wienerberger UK (brick maker)",
+     "kind": "secondary",
+     "url": "https://www.wienerberger.co.uk/tips-and-advice/brickwork/how-do-i-choose-the-correct-brick-bonding-pattern.html",
+     "locator": "\"Types of brick bonding patterns\"",
+     "quote": "As the outer leaf of a building envelope is now only half a brick thick in modern construction, stretcher bond has become the most popular bond as it is time and cost effective to use."
+    },
+    {
+     "title": "Brick bonds",
+     "author": "J. A. Harrison (jaharrison.me.uk)",
+     "kind": "secondary",
+     "url": "https://jaharrison.me.uk/Brickwork/Bonds.html",
+     "locator": "\"Hollow wall bonds\" and \"Cavity walls\"",
+     "quote": "When cavity walls were introduced in the early 20th century, this was often offset by using half bricks to emulate the appearance of Flemish Bond."
+    }
+   ]
+  },
+  {
+   "id": "diaper-brickwork>polychrome-brick",
+   "from": "diaper-brickwork",
+   "to": "polychrome-brick",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "Patterned brickwork in bricks of different colours, used in the Tudor period, was revived in Britain in the 1850s by the Gothic Revival (All Saints, Margaret Street, with diaper-patterned brickwork).",
+   "sources": [
+    {
+     "title": "Polychrome brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polychrome_brickwork",
+     "locator": "lead",
+     "quote": "Historically it was used in the late Gothic period in Europe, and the Tudor period in England. This style was revived in Britain in the 1850s as a feature of Gothic Revival architecture."
+    }
+   ]
+  },
+  {
+   "id": "brick>machine-made-brick",
+   "from": "brick",
+   "to": "machine-made-brick",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "From the mid-19th century machine-made bricks replaced handmade (hand-moulded) bricks.",
+   "sources": [
+    {
+     "title": "The history of brickwork: from ornate designs to industrial evolution",
+     "author": "Strutt & Parker",
+     "kind": "secondary",
+     "url": "https://www.struttandparker.com/knowledge-and-research/the-history-of-brickwork-from-ornate-designs-to-industrial-evolution",
+     "locator": "article text",
+     "quote": "After 1850, manufactured bricks replaced handmade bricks, leading to more uniformity in construction and style."
+    },
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Industrial era\"",
+     "quote": "The transition from the traditional method of production known as hand-moulding to a mechanised form of mass-production slowly took place during the first half of the nineteenth century."
+    }
+   ]
+  },
+  {
+   "id": "brick>mathematical-tile",
+   "from": "brick",
+   "to": "mathematical-tile",
+   "kind": "replacement",
+   "confidence": "disputed",
+   "claim": "Mathematical tiles hung on timber-framed walls took the place of brick facing in south-east England in the 18th and early 19th centuries; whether the brick tax (1784-1850) drove the change is disputed.",
+   "views": [
+    "The brick tax made brick dearer, and many areas returned to timber and weatherboarding, with tiles hung to look like brick (mathematical tiles) (Wikipedia, Brick tax).",
+    "The brick tax was formerly thought to have encouraged mathematical tiles, but the tiles were taxed too; they were chosen because they were cheaper, easier to lay and resisted sea spray, and black tiles were used in Brighton from about 1760, before the tax (Wikipedia, Mathematical tile)."
+   ],
+   "sources": [
+    {
+     "title": "Brick tax",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick_tax",
+     "locator": "section \"Consequences\"",
+     "quote": "It also had an effect on architecture, with many areas returning to the use of timber and weatherboarding in house construction, especially weather tiles to simulate brick work, known as mathematical tiles."
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "lead",
+     "quote": "Although the brick tax (1784–1850) was formerly thought to have encouraged the use of mathematical tiles, in fact the tiles were subject to the same tax."
+    },
+    {
+     "title": "Mathematical tile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mathematical_tile",
+     "locator": "lead",
+     "quote": "They were laid on the exterior of timber-framed buildings as an alternative to brickwork, which their appearance closely resembled."
+    }
+   ]
+  },
+  {
+   "id": "terracotta>faience",
+   "from": "terracotta",
+   "to": "faience",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Faience is glazed architectural terracotta (FISH files it under terracotta); makers such as Burmantofts added glazed terracotta to their unglazed terracotta from 1879.",
+   "sources": [
+    {
+     "title": "Faience (FISH Building Materials thesaurus, concept 97914)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97914.html",
+     "locator": "scope note",
+     "quote": "Solid masonry slabs (tiles) of terracotta which are usually used as a cladding by bedding in concrete."
+    },
+    {
+     "title": "Burmantofts Pottery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burmantofts_Pottery",
+     "locator": "section \"Company history\"",
+     "quote": "In 1879, after a period of expansion, the firm made decorative bricks and tiles in orange or buff-coloured architectural terracotta, glazed bricks, and glazed terracotta."
+    }
+   ]
+  },
+  {
+   "id": "timber-framing>brick",
+   "from": "timber-framing",
+   "to": "brick",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Brick superseded timber framing, first in the south-east and eastern England from the 15th and 16th centuries; after the Great Fire of London (1666) timber framing was no longer acceptable in towns and cities, and the rebuilding law preferred brick and stone.",
+   "sources": [
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Masonry\"",
+     "quote": "Because south-east England lacks good building stones but has abundant clay, it was the first part of the country to make bricks, starting on a small scale in the 12th century (Coggeshall Abbey, Essex), but expanding after the 15th century. As well as superseding timber framing, brick began to displace stone"
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"South-East England\"",
+     "quote": "The lack of good stone meant that brick generally followed timber framing (though also some flintwork)."
+    },
+    {
+     "title": "Tudor architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tudor_architecture",
+     "locator": "lead",
+     "quote": "Brick was something of an exotic and expensive rarity at the beginning of the period, but during it became very widely used in many parts of England, gradually restricting traditional methods such as timber framing to vernacular architecture."
+    },
+    {
+     "title": "Rebuilding of London Act 1666",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rebuilding_of_London_Act_1666",
+     "locator": "section on the act's provisions",
+     "quote": "Building materials (brick and stone preferred)"
+    },
+    {
+     "title": "Brickwork: Historic Development, Decay, Conservation and Repair",
+     "author": "Gerard Lynch (The Building Conservation Directory)",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/articles/brick/brickwork.html",
+     "locator": "section \"Dutch Influence in the 17th Century\"",
+     "quote": "There brick clay was cheaper and more accessible than building stone, and following the Great Fire of London in 1666, timber-framed construction was no longer acceptable in towns and cities."
+    }
+   ]
+  },
+  {
+   "id": "brick>cavity-wall",
+   "from": "brick",
+   "to": "cavity-wall",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The cavity wall is two leaves of masonry (usually brick outside) separated by an air gap and joined by ties, a form of brick walling that became usual in the UK from the 1920s.",
+   "sources": [
+    {
+     "title": "Cavity wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cavity_wall",
+     "locator": "section \"Components\"",
+     "quote": "The outer wall is made of brick and faces the outside of the building structure."
+    },
+    {
+     "title": "Brickwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brickwork",
+     "locator": "section \"Cavity walls and ties\"",
+     "quote": "A cavity wall comprises two totally discrete walls, separated by an air gap, which serves both as barrier to moisture and heat."
+    }
+   ]
+  }
+ ]
+}

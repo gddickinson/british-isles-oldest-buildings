@@ -233,3 +233,30 @@ enclosures under hillforts, long barrows beside round barrows), coarse register 
 2000 BC), museums in old buildings; none kept. Still with no example (38): the earlier 29 less those now found, and
 Tudor gatehouse, gatehouse keep, by-law terrace, semi-detached house, grain distillery, municipal museum, cabinet of
 curiosities, Roman lighthouse: narrow types Wikidata does not class.
+
+## Materials and techniques (BT3a, 2026-10-26)
+
+`materials_stone.json` (stone, mortar and render: 22), `materials_earth_timber.json` (earth, timber: 18),
+`materials_brick.json` (brick and tile: 20), `materials_roofs.json` (coverings and roof structures: 19),
+`materials_modern.json` (glass, iron and steel, concrete, cements: 20), checked by `python -m bidb.building_materials`
+(quotes by `--quotes` → `data/building_materials_check.json`). 99 materials and techniques, 51 links (documented 39,
+probable 11, disputed 1: did the brick tax drive builders to mathematical tiles, or were the tiles older and taxed
+too?), 978 quotes, all found. 73 carry a FISH concept from the Building Materials (`eh_tbm`) or Components
+(`eh_com`) thesaurus, same release and licence (OGL v3.0, stated on each scheme's pages at heritagedata.org).
+151 named examples, Wikidata ids checked against the catalogue (one corrected: the chapel of St Nicholas at
+Coggeshall, not the abbey).
+
+What the years mean is written in each period's text. Many first dates are the earliest a source names, or a
+stand-in for a period ("43 stands for Roman"); where the use is surely older the period carries `earlier: true`
+(queen-post roof 1753, wooden shingles 1400, straw thatch 1500, weatherboarding 1600, gritstone 1804, stucco 1811),
+so charts should not draw them as beginnings. Disagreements are in the texts and notes: the age of Purbeck marble
+(Cretaceous, Wikipedia; filed under the Jurassic Portland stone by FISH) and of Caen stone, when brick-making
+revived (12th or 13th century), cavity walls (rare 18th-century examples or a 19th-century reintroduction),
+Ditherington (1795 or 1797), Ravenhead (1773 or 1786), who made "true" Portland cement, cruck origins and their
+absence in the east (two carpentry traditions or coppicing).
+
+Reviewed here: two links defined in two files merged (timber framing → brick, lime mortar → Portland cement);
+lead → Lake District slate dropped (one building, Westminster Hall, not a general change).
+Left out for want of a dated source: copper roofs, mansard, tie-beam and common-rafter roofs, heather, marram
+and rope thatch, Valentia slate as its own entry, wychert, the sub-forms of crucks, English garden wall bond,
+London stock brick, limewash, cobble walling, Cornish and Welsh granite; brutalism is a style, not a material.

@@ -17,8 +17,12 @@ from collections import Counter
 from functools import lru_cache
 
 URL = "https://heritage-standards.org.uk/2026/zip_files/MonumentTypeV29.zip"
+# BT3: the Building Materials and Components thesauri of the same release (OGL v3.0, stated at heritagedata.org)
+SCHEMES = {"mon": (URL, "eh_tmt2"),
+           "mat": (URL.replace("MonumentType", "BuildingMats"), "eh_tbm"),
+           "com": (URL.replace("MonumentType", "Components"), "eh_com")}
 VERSION = "29 (24 April 2026)"
-CONCEPT_URI = "http://purl.org/heritagedata/schemes/eh_tmt2/concepts/{}"
+CONCEPT_URI = "http://purl.org/heritagedata/schemes/{}/concepts/{}"
 ATTRIBUTION = ("FISH Thesaurus of Monument Types, version 29, Historic England, "
                "Open Government Licence v3.0")
 BY_FORM = "MONUMENT <BY FORM>"
@@ -28,12 +32,14 @@ def _rows(z, name):
     return list(csv.DictReader(io.StringIO(z.read(name).decode("utf-8", errors="replace"))))
 
 
-@lru_cache(maxsize=1)
-def concepts():
-    """{id: {id, term, note, alt: [non-preferred terms], broader: [ids], narrower: [ids], related: [ids]}}.
+@lru_cache(maxsize=None)
+def concepts(scheme="mon"):
+    """{id: {id, term, note, alt: [non-preferred terms], broader: [ids], narrower: [ids], related: [ids]}}
+    of monument types ("mon"), building materials ("mat") or components ("com", BT3).
     The CSVs place each term once per broader term ("uses", by label) and give related terms between uses."""
     from .change_registers import _download
-    with zipfile.ZipFile(_download(URL, URL.rsplit("/", 1)[1], print, folder="fish")) as z:
+    url = SCHEMES[scheme][0]
+    with zipfile.ZipFile(_download(url, url.rsplit("/", 1)[1], print, folder="fish")) as z:
         terms, prefs = _rows(z, "ThesaurusTerms.csv"), _rows(z, "ThesaurusTermPreferences.csv")
         uses, rels = _rows(z, "ThesaurusTermUses.csv"), _rows(z, "ThesaurusTermRelations.csv")
     out, by_term = {}, {}
@@ -62,14 +68,14 @@ def concepts():
     return out
 
 
-def label(cid):
+def label(cid, scheme="mon"):
     """Display form of a concept's term: sentence case ("Wealden house")."""
-    term = concepts()[cid]["term"]
+    term = concepts(scheme)[cid]["term"]
     return term[:1] + term[1:].lower()
 
 
-def uri(cid):
-    return CONCEPT_URI.format(cid)
+def uri(cid, scheme="mon"):
+    return CONCEPT_URI.format(SCHEMES[scheme][1], cid)
 
 
 def tops():

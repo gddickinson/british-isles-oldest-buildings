@@ -1,0 +1,2867 @@
+{
+ "about": "Building materials (roadmap BT3a): Earth and Timber. Fields as bidb/building_materials.py.",
+ "researched": "2026-10-26",
+ "materials": [
+  {
+   "id": "cob",
+   "name": "Cob",
+   "group": "Earth",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97835"
+   },
+   "period": {
+    "text": "About 1300: the earliest standing cob buildings in the isles (exceptional survivals); popular in Devon up to the 19th century, when vernacular building generally ceased; revived since the 1990s (a new cob house in England in 1994 was reputedly the first in 70 years, and one in County Cork in 2002-04 the first in Ireland for about a century)",
+    "from": 1300,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Devon and Cornwall above all; also Anglesey, Cumbria, the East Midlands, Hampshire, Donegal Bay and Munster; chalk cob (wychert) in Buckinghamshire",
+    "nations": [
+     "England",
+     "Wales",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Subsoil dug on the site, mixed with straw and water (traditionally trodden by oxen) and laid in courses on a stone plinth, each course left to dry; railways and mass-produced brick and slate ended vernacular building in the 19th century.",
+   "types": [
+    "longhouse"
+   ],
+   "note": "The word cob is attested only from about 1600. Earth walling of the same kind is called mudwall in Scotland and clay dabbins in Cumbria (see mud-walling); wychert of Buckinghamshire is a chalk cob.",
+   "sources": [
+    {
+     "title": "Cob (FISH Building Materials Thesaurus, concept 97835)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97835.html",
+     "locator": "scope note",
+     "quote": "Walls composed of clay, earth, straw, lime and sand, mixed with water. Constructed without shutters in layers upon a stone or brick plinth and usually covered with protective limewash."
+    },
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Earth building\"",
+     "quote": "The earliest standing examples in the British Isles date from around 1300, but these are exceptional.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Earth building\"",
+     "quote": "Cob was popular in Devon up to the 19th century and also used in Cumbria, the East Midlands, Hampshire and Ireland.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "in Wales, notably in rural Anglesey",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "in Donegal Bay in Ulster and in Munster, South-West Ireland",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "English soils contain varying amounts of chalk, and cob made with significant amounts of chalk are called chalk cob or wychert.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "Traditionally, English cob was made by mixing the clay-based subsoil with sand, straw and water using oxen to trample it.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "Cob is an English term attested to around the year 1600 for an ancient building material that has been used for building since prehistoric times."
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"Modern cob buildings\"",
+     "quote": "it was reputedly the first cob residence built in the country in 70 years",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"Modern cob buildings\"",
+     "quote": "the first new one in Ireland in circa one hundred years",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"History\"",
+     "quote": "Following the Industrial Revolution, mass-production of materials and improved railway transportation meant that similar building materials were used across the country, particularly brick and Welsh slate, meaning that vernacular building generally ceased in the 19th century.",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"South-West England\"",
+     "quote": "Early farms were often longhouses, with people and animals under one roof."
+    }
+   ]
+  },
+  {
+   "id": "clay-lump",
+   "name": "Clay lump",
+   "group": "Earth",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97828"
+   },
+   "period": {
+    "text": "Late 18th century (taken as about 1775): the earliest clay lump house the Norfolk Historic Environment Record names (Green Farmhouse, Toftwood, cased in brick about 1800); many early 19th-century examples; the latest named here is the steam-engine repair shop at Harling, built in the 1890s, possibly the largest clay lump building in Britain",
+    "from": 1775,
+    "to": 1890
+   },
+   "regions": {
+    "text": "East Anglia: Norfolk and Suffolk (Diss, Kenninghall, Harling, Toftwood)",
+    "nations": [
+     "England"
+    ]
+   },
+   "examples": [
+    {
+     "name": "Green Farmhouse, Dumpling Green, Toftwood",
+     "year": 1775,
+     "note": "late 18th-century clay lump house, cased in brick about 1800"
+    },
+    {
+     "name": "Three houses, Church Street, Kenninghall",
+     "year": 1810,
+     "note": "early 19th century, rendered clay lump on a brick and flint plinth"
+    },
+    {
+     "name": "Steam engine repair shop, Harling",
+     "year": 1890,
+     "note": "1890s, possibly the largest clay lump building in Britain; demolished 1989"
+    }
+   ],
+   "note": "Unfired blocks moulded and dried before laying, unlike cob, which is laid wet. A conference paper on Diss (Tipping, FIG 2010, citing McCann) gives a cottage at Great Shelford, Cambridgeshire, in 1791 as the first known example and the 1830s-1840s for its spread in Norfolk and Suffolk; it is a PDF the quote check cannot read, so it is not cited as a source here.",
+   "sources": [
+    {
+     "title": "Clay lump (FISH Building Materials Thesaurus, concept 97828)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97828.html",
+     "locator": "scope note",
+     "quote": "Large, moulded, unburnt blocks of clay type soil laid in a similar way to brick, but bedded in lime and clay 'mortar'. The walls produced are characteristically thinner than those of cob and pise."
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Earth\"",
+     "quote": "clay lump (adobe) in East Anglia",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "NHER 46760 (Building record) - Green Farmhouse, Dumpling Green, Toftwood",
+     "author": "Norfolk Historic Environment Record",
+     "kind": "listing",
+     "url": "https://nhe.esdm.co.uk/Monument/MNF51796",
+     "locator": "summary",
+     "quote": "A late 18th century clay lump house.",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "NHER 44262 (Building record) - Pwllhili, Brandon Cottage and White House, Church Street",
+     "author": "Norfolk Historic Environment Record",
+     "kind": "listing",
+     "url": "https://nhe.esdm.co.uk/Monument/MNF49221",
+     "locator": "summary",
+     "quote": "This range of three early 19th century clay lump houses was built on a brick and flint plinth and they have black glazed pantile roofs.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "NHER 45466 (Monument record) - Site of steam engine repair shop in Fox Grove",
+     "author": "Norfolk Historic Environment Record",
+     "kind": "listing",
+     "url": "https://nhe.esdm.co.uk/Monument/MNF50500",
+     "locator": "summary",
+     "quote": "Site of a clay lump steam engine repair shop that was possibly the largest clay lump building in Britain.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "NHER 45466 (Monument record) - Site of steam engine repair shop in Fox Grove",
+     "author": "Norfolk Historic Environment Record",
+     "kind": "listing",
+     "url": "https://nhe.esdm.co.uk/Monument/MNF50500",
+     "locator": "summary",
+     "quote": "It was built in the 1890s and demolished in 1989.",
+     "about": [
+      "period",
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mud-walling",
+   "name": "Mud and clay walling (clay dabbins, mudwall, Irish mud houses)",
+   "group": "Earth",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98069"
+   },
+   "period": {
+    "text": "1462: the earliest tree-ring date of the clay dabbins of the Solway Plain (dates run 1462-1788; many dabbins are of the 17th century); clay walls were used in medieval Scotland and earth was once the main material there; declined with the Industrial Revolution; Irish mud houses were built into the 19th century and lived in until the late 20th; repairs in the old way continue",
+    "from": 1462,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "The Solway Plain of north Cumbria (the only substantial survival of a tradition once common in northern England and southern Scotland); south-west Scotland, Dundee and the Carse of Gowrie, Moray (clay and bool); Lincolnshire and Lancashire (mud and stud); much of rural Ireland (Limerick, Clare, Wexford)",
+    "nations": [
+     "England",
+     "Scotland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Clay mixed with straw laid in thin lifts, each separated by a layer of straw, on the Solway; earth walls carry little load, so they were often combined with cruck roofs.",
+   "examples": [
+    {
+     "name": "Fairfield, Burgh by Sands, Cumbria",
+     "year": 1675,
+     "note": "late 17th-century clay-walled house, listed Grade II"
+    },
+    {
+     "name": "House at Gardenfield, County Limerick",
+     "year": 1750,
+     "note": "about 1750, rendered mud and rubble stone walls (NIAH)"
+    },
+    {
+     "name": "Johnnie McNamara's house, Tullaroe, County Clare",
+     "note": "one of the last mud houses in County Clare, recorded in 2025 before partial removal"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Mud (FISH Building Materials Thesaurus, concept 98069)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98069.html",
+     "locator": "scope note",
+     "quote": "Wet soil, sand or other earthy matter combined with ballast and bonded with straw or other binding material. Walls are built in the absence of shuttering by the simple process of pitching in layers."
+    },
+    {
+     "title": "Cumbria's vernacular architecture and Hadrian's Wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cumbria%27s_vernacular_architecture_and_Hadrian%27s_Wall",
+     "locator": "clay dabbins",
+     "quote": "Tree-ring dates range from 1462 to 1788.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cumbria's vernacular architecture and Hadrian's Wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cumbria%27s_vernacular_architecture_and_Hadrian%27s_Wall",
+     "locator": "clay dabbins",
+     "quote": "The method was common to both sides of the Solway: narrow lifts of a clay/straw mix with each layer separated by a thin layer of straw.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Cumbria's vernacular architecture and Hadrian's Wall",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://www.designingbuildings.co.uk/wiki/Cumbria%27s_vernacular_architecture_and_Hadrian%27s_Wall",
+     "locator": "clay dabbins",
+     "quote": "It was successfully rebuilt using traditional techniques and materials",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fairfield, Burgh by Sands (list entry)",
+     "author": "Historic England, via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101040026-fairfield-burgh-by-sands",
+     "locator": "history",
+     "quote": "The Solway Plain in northern Cumbria contains the only substantial surviving remnant of a clay building tradition that was once common throughout northern England and southern Scotland.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Fairfield, Burgh by Sands (list entry)",
+     "author": "Historic England, via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101040026-fairfield-burgh-by-sands",
+     "locator": "history",
+     "quote": "dendrochronology (tree ring dating) has indicated that the earliest dates for these buildings can be pushed back to the C15",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fairfield, Burgh by Sands (list entry)",
+     "author": "Historic England, via British Listed Buildings",
+     "kind": "listing",
+     "url": "https://britishlistedbuildings.co.uk/101040026-fairfield-burgh-by-sands",
+     "locator": "reasons for designation",
+     "quote": "a clay-walled building of C17 date that retains significant amounts of its original clay walling",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Earth\"",
+     "quote": "As earth walls have less structural capacity than masonry, they were often combined with cruck roofs.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Earth\"",
+     "quote": "mud and stud (a crude variant of wattle and daub) in Lincolnshire and Lancashire",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Down to Earth: Scotland's Earth Building Past and Future",
+     "author": "Historic Environment Scotland (Engine Shed blog, N. Bushell, 2021)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/04/21/scotlands-earth-building-past-and-future/",
+     "locator": "section \"The different types of earth construction in Scotland\"",
+     "quote": "(commonly known as ‘cob’ in the rest of the UK)"
+    },
+    {
+     "title": "Down to Earth: Scotland's Earth Building Past and Future",
+     "author": "Historic Environment Scotland (Engine Shed blog, N. Bushell, 2021)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/04/21/scotlands-earth-building-past-and-future/",
+     "locator": "section \"The different types of earth construction in Scotland\"",
+     "quote": "is a type of mudwall with rounded stone boulders set in rows between the earth material and is mostly seen around Spey Bay, Moray.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Down to Earth: Scotland's Earth Building Past and Future",
+     "author": "Historic Environment Scotland (Engine Shed blog, N. Bushell, 2021)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/04/21/scotlands-earth-building-past-and-future/",
+     "locator": "section \"The decline of earth construction\"",
+     "quote": "Earth construction in Scotland declined with the industrial revolution, which made stone, cement and brick much easier to access.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Architecture of Scotland in the Middle Ages",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architecture_of_Scotland_in_the_Middle_Ages",
+     "locator": "section \"Vernacular architecture\"",
+     "quote": "In some regions, including the south-west and around Dundee, solid clay walls were used, or combinations of clay, turf and straw, rendered with clay or lime to make them weatherproof.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Gardenfield, Co. Limerick (reg. no. 21903610)",
+     "author": "National Inventory of Architectural Heritage",
+     "kind": "listing",
+     "url": "https://buildingsofireland.ie/buildings-search/building/21903610/gardenfield-co-limerick",
+     "locator": "appraisal",
+     "quote": "This is a fine example of the early traditional thatched houses of Ireland that were constructed using mud walls.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "IHBC features 'Heritage from the (earthen) doorstep': Tullaroe, County Clare",
+     "author": "Institute of Historic Building Conservation NewsBlogs (2025)",
+     "kind": "secondary",
+     "url": "https://newsblogs.ihbc.org.uk/?p=43301",
+     "locator": "news item",
+     "quote": "One of the last remaining partial mud (and stone) houses in County Clare is being surveyed by archaeologist Dave Pollock, prior to its deconstruction for road safety purposes.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "IHBC features 'Heritage from the (earthen) doorstep': Tullaroe, County Clare",
+     "author": "Institute of Historic Building Conservation NewsBlogs (2025)",
+     "kind": "secondary",
+     "url": "https://newsblogs.ihbc.org.uk/?p=43301",
+     "locator": "news item",
+     "quote": "which was thatched and has fallen into ruin since Johnnie’s death in 1981 at the age of 95",
+     "about": [
+      "period",
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wattle-and-daub",
+   "name": "Wattle and daub",
+   "group": "Earth",
+   "kind": "technique",
+   "fish": {
+    "scheme": "mat",
+    "id": "97873"
+   },
+   "period": {
+    "text": "From the Bronze Age, when roundhouse walls in Britain and Ireland were of wooden posts joined by wattle-and-daub panels; about 1000 BC is used here, the date of the Bronze Age roundhouses at Must Farm (about 1000-800 BC), the earliest dated houses the sources here name; the technique is older in Europe (Neolithic). The usual infill of timber frames until brick nogging became standard; still used in repair",
+    "from": -1000,
+    "ongoing": true
+   },
+   "types": [
+    "round-house",
+    "hall-house",
+    "wealden-house"
+   ],
+   "examples": [
+    {
+     "name": "Must Farm Bronze Age settlement, Cambridgeshire",
+     "wikidata": "Q22047654",
+     "year": -1000,
+     "note": "roundhouses of about 1000-800 BC, burnt and preserved in the river silt"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Daub (FISH Building Materials Thesaurus, concept 97873)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97873.html",
+     "locator": "scope note",
+     "quote": "Application of earth based plaster to a backing of lath or wattle used in internal or external walls. Composite mixture which may include clay soil, dung, straw, lime putty, sand or horsehair."
+    },
+    {
+     "title": "Wattle (FISH Building Materials Thesaurus, concept 98276)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98276.html",
+     "locator": "scope note",
+     "quote": "Wooden rods or stakes which can be interlaced with twigs or branches to make walls or fences, or more commonly, to form the basis of panels in traditional timber framed buildings which are then covered with daub."
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Roundhouses were the standard form of housing built in Britain and Ireland from the Bronze Age throughout the Iron Age, and in some areas well into the Sub Roman period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The people built walls made of either stone or of wooden posts joined by wattle-and-daub panels, and topped with a conical thatched roof.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Must Farm",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Must_Farm",
+     "locator": "lead",
+     "quote": "Archaeologists found two roundhouses, from about 1000–800 BC",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Wattle and daub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wattle_and_daub",
+     "locator": "section \"History\"",
+     "quote": "The wattle and daub technique has been used since the Neolithic period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"Infill materials\"",
+     "quote": "Brick infill sometimes called nogging became the standard infill after the manufacturing of bricks made them more available and less expensive.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "lead",
+     "quote": "According to the locality, they built stone or timber-framed houses with wattle and daub or clay infill."
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The early buildings had thatched roofs and walls of wattle and daub often whitewashed."
+    }
+   ]
+  },
+  {
+   "id": "turf-walling",
+   "name": "Turf (sod) walling",
+   "group": "Earth",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98262"
+   },
+   "period": {
+    "text": "AD 122: Hadrian's Wall was begun, its western section built of turf (the Antonine Wall of AD 142 was turf on a stone base), the earliest dated turf structures the sources here name; turf walls were used in medieval and early modern Scottish houses and had to be rebuilt every few years; earth building declined with the Industrial Revolution; turf is still cut for repairs and reconstructions such as the 17th-century turf house at Glencoe",
+    "from": 122,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Rural Scotland, above all the Western Isles; the Roman frontier walls of Cumbria and central Scotland",
+    "nations": [
+     "Scotland",
+     "England"
+    ]
+   },
+   "types": [
+    "blackhouse"
+   ],
+   "examples": [
+    {
+     "name": "Antonine Wall",
+     "wikidata": "Q210957",
+     "year": 142,
+     "note": "Roman frontier of turf on a stone foundation"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Turf (FISH Building Materials Thesaurus, concept 98262)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98262.html",
+     "locator": "scope note",
+     "quote": "Layer of grass with earth and matted roots cut from the ground and used for earth buildings and as a covering material."
+    },
+    {
+     "title": "Hadrian's Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall",
+     "locator": "lead",
+     "quote": "Hadrian's Wall is a former defensive fortification of the Roman province of Britannia, begun in AD 122 in the reign of the Emperor Hadrian.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hadrian's Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall",
+     "locator": "section \"Turf wall\"",
+     "quote": "From Milecastle 49 to the western terminus at Bowness-on-Solway, the wall was originally constructed from turf, possibly due to the absence of limestone.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Antonine Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Antonine_Wall",
+     "locator": "lead",
+     "quote": "The Antonine Wall (Latin: Vallum Antonini) was a turf fortification on stone foundations, built by the Romans across what is now the Central Belt of Scotland, between the Firth of Clyde and the Firth of Forth.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Hadrian's Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall",
+     "locator": "section \"World Heritage Site\"",
+     "quote": "The turf-built Antonine Wall of AD 142",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Architecture of Scotland in the Middle Ages",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architecture_of_Scotland_in_the_Middle_Ages",
+     "locator": "section \"Vernacular architecture\"",
+     "quote": "In rural areas there was extensive use of turf to fill in the walls, sometimes on a stone base, but they were not long lasting and had to be rebuilt frequently, perhaps as often as every two or three years.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Down to Earth: Scotland's Earth Building Past and Future",
+     "author": "Historic Environment Scotland (Engine Shed blog, N. Bushell, 2021)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/04/21/scotlands-earth-building-past-and-future/",
+     "locator": "section \"The different types of earth construction in Scotland\"",
+     "quote": "Turf construction uses rectangular cut blocks of earth (known as turves) and was more common on the Western Isles.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Down to Earth: Scotland's Earth Building Past and Future",
+     "author": "Historic Environment Scotland (Engine Shed blog, N. Bushell, 2021)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/04/21/scotlands-earth-building-past-and-future/",
+     "locator": "section \"Where to spot earth building in Scotland today\"",
+     "quote": "The project is reconstructing a 17th century turf house at the Glencoe Visitor Centre.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Lewis blackhouse\"",
+     "quote": "the early examples may have been made of turf and thatch and quickly returned to the earth once abandoned"
+    }
+   ]
+  },
+  {
+   "id": "earthfast-posts",
+   "name": "Earthfast posts (post-hole construction)",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "138109"
+   },
+   "period": {
+    "text": "4000-3400 BC: the Neolithic timber hall at Balbridie, Aberdeenshire, known from its large post-holes, among the earliest timber houses in Europe; the usual way of building in timber until framing on sills, padstones or low walls became ubiquitous from about AD 1200; earthfast posts are still used for impermanent buildings",
+    "from": -4000,
+    "flourish": [
+     -4000,
+     1200
+    ],
+    "ongoing": true
+   },
+   "technology": "Posts set in the ground rot at the foot, so buildings were short-lived; raising the frame on a sill beam, padstones or a low wall kept the timber dry and made houses longer-lived.",
+   "examples": [
+    {
+     "name": "Balbridie timber hall, Aberdeenshire",
+     "year": -4000,
+     "note": "Neolithic hall, 4000-3400 BC, known from its post-holes"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Post hole (FISH Components Thesaurus, concept 138109)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138109.html",
+     "locator": "scope note",
+     "quote": "A hole occupied by a timber post or the void remaining after its removal, usually with packing."
+    },
+    {
+     "title": "Post in ground",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Post_in_ground",
+     "locator": "lead",
+     "quote": "Earthfast construction is common from the Neolithic period to the present and is used worldwide.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Post in ground",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Post_in_ground",
+     "locator": "lead",
+     "quote": "Post-in-the-ground construction is sometimes called an \"impermanent\" form, used for houses which are expected to last a decade or two before a better quality structure can be built.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Balbridie",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Balbridie",
+     "locator": "lead",
+     "quote": "The site is one of the earliest known permanent Neolithic settlements in Scotland, dating from 3400 to 4000 BC.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Balbridie",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Balbridie",
+     "locator": "lead",
+     "quote": "Subsequent archaeological work on site allowed the conceptual reconstruction of an enormous timber structure including the identification of large timber postholes.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"British tradition\"",
+     "quote": "Some of the earliest known timber houses in Europe have been found in Great Britain, dating to Neolithic times; Balbridie and Fengate are some of the rare examples of these constructions.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Island Farm, Ottery St Mary (Internet Archaeology 47)",
+     "author": "Internet Archaeology",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue47/4/3-1.html",
+     "locator": "section 3.1, citing Gardiner 2014",
+     "quote": "a constructional change that became ubiquitous in the country from around AD 1200 and gave rise to the possibility of houses being more stable and longer-lived by being less susceptible to decay in the ground",
+     "about": [
+      "period",
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "timber-framing",
+   "name": "Timber framing",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "About 1200: framed buildings raised off the ground replaced earthfast posts from around AD 1200, and surviving timber-framed buildings in England go back to the 13th century; the most common structural material in most of England until brick superseded it (from the 15th-16th centuries in the south-east; vernacular building ceased in the 19th century); half-timbering revived after 1860 and green-oak framing since about 1980",
+    "from": 1200,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Most of lowland England, especially East Anglia, the Weald, Warwickshire, Worcestershire, Herefordshire, Shropshire and Cheshire; the Welsh March; almost absent from Cumbria",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "technology": "Abundant oak; the frame was filled with wattle and daub, later brick; cheap brick, the rebuilding laws after the Great Fire of London (brick and stone preferred) and the railways ended it as ordinary building.",
+   "types": [
+    "hall-house",
+    "wealden-house"
+   ],
+   "examples": [
+    {
+     "name": "Little Moreton Hall, Cheshire",
+     "wikidata": "Q2943130",
+     "year": 1504,
+     "note": "built about 1504-1610, among the most elaborate English half-timbered houses"
+    },
+    {
+     "name": "The Barley Barn, Cressing Temple, Essex",
+     "wikidata": "Q17535932",
+     "year": 1205,
+     "note": "claimed as the oldest standing timber-framed barn in the world"
+    }
+   ],
+   "note": "Earlier standing timber buildings exist (Greensted church's oak staves, 1063-1100), but they are not framed in this way. Tree-ring dating (the Vernacular Architecture Group's database) gives most of the early dates.",
+   "sources": [
+    {
+     "title": "Timber walls",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls.html",
+     "locator": "Timber Walls",
+     "quote": "The great majority of surviving timber-framed buildings in England are domestic in origin, and date from the later middle ages onwards, although examples as early as the 13th century have been identified.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Island Farm, Ottery St Mary (Internet Archaeology 47)",
+     "author": "Internet Archaeology",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue47/4/3-1.html",
+     "locator": "section 3.1, citing Gardiner 2014",
+     "quote": "It does, however, appear to fit with the typical later medieval technique of timber framing, as opposed to the use of earth-fast posts, a constructional change that became ubiquitous in the country from around AD 1200",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Timber\"",
+     "quote": "In most parts of England, timber was historically abundant and was the most common structural material, though its susceptibility to decay means that it is now under-represented in surviving buildings.",
+     "about": [
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Masonry\"",
+     "quote": "As well as superseding timber framing, brick began to displace stone",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Cumbria\"",
+     "quote": "While timber framing is almost non-existent, clay buildings with cruck roofs (termed 'clay dabbins') where built on the Solway Plain to the north.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"British tradition\"",
+     "quote": "Half-timbering is characteristic of English vernacular architecture in East Anglia, Warwickshire, Worcestershire, Herefordshire, Shropshire, and Cheshire, where one of the most elaborate surviving English examples of half-timbered construction is Little Moreton Hall.",
+     "about": [
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"Revival styles in later centuries\"",
+     "quote": "When half-timbering regained popularity in Britain after 1860 in the various revival styles",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Revival\"",
+     "quote": "During the current revival of green-oak framing for new building work, which has occurred mainly since approximately 1980 in the UK",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rebuilding of London Act 1666",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rebuilding_of_London_Act_1666",
+     "locator": "section on the act's provisions",
+     "quote": "Building materials (brick and stone preferred)",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Tudor architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tudor_architecture",
+     "locator": "lead",
+     "quote": "Brick was something of an exotic and expensive rarity at the beginning of the period, but during it became very widely used in many parts of England, gradually restricting traditional methods such as timber framing to vernacular architecture.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "lead",
+     "quote": "Usually timber-framed, some high status examples were built in stone."
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The Wealden hall house is a type of vernacular medieval timber-framed hall house traditional in the south east of England."
+    },
+    {
+     "title": "Cressing Temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cressing_Temple",
+     "locator": "lead",
+     "quote": "one of these medieval barns is claimed to be the oldest standing timber-framed barn in the world",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Little Moreton Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Moreton_Hall",
+     "locator": "lead",
+     "quote": "The earliest parts of the house were built for the prosperous Cheshire landowner William Moreton in about 1504–1508 and the remainder was constructed in stages by successive generations of the family until about 1610.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cruck-frame",
+   "name": "Cruck framing",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137654"
+   },
+   "period": {
+    "text": "1262: the earliest surviving cruck, at the Royal George, Cottingham, Northamptonshire (tree-ring dated); documents name crucks ('forks') from 1189 in Somerset; more than three quarters of dated crucks were built in the 15th and 16th centuries; the latest dated ones are 1742 in England and Wales, 1690 in Ireland and 1801 in Scotland; crucks have been built again in green-oak framing since about 1980",
+    "from": 1262,
+    "flourish": [
+     1400,
+     1599
+    ],
+    "to": 1801
+   },
+   "regions": {
+    "text": "Wales, the Welsh March, the West Midlands, Devon and the north of England, with Scotland and Ireland; entirely absent from a swathe of eastern England from Kent and Sussex through East Anglia and Lincolnshire to the Humber. Jointed crucks belong to east Devon, west Dorset and Somerset; raised crucks set on walls are found in Scotland",
+    "nations": [
+     "England",
+     "Wales",
+     "Scotland"
+    ]
+   },
+   "technology": "Needs large curved oaks of a kind found at woodland edges; one explanation for the absence of crucks in the east is that coppiced woodland there gave straight timbers suited to box frames instead. Crucks went out of use when two full storeys were wanted.",
+   "types": [
+    "cruck-barn",
+    "hall-house"
+   ],
+   "examples": [
+    {
+     "name": "The Royal George, Cottingham, Northamptonshire",
+     "wikidata": "Q66477640",
+     "year": 1262,
+     "note": "earliest surviving tree-ring-dated cruck"
+    },
+    {
+     "name": "Stokesay Castle great hall, Shropshire",
+     "wikidata": "Q7618555",
+     "year": 1290,
+     "note": "raised crucks in a high-status hall, timbers 1284-1290"
+    },
+    {
+     "name": "18 The Street, Wilsford, Wiltshire",
+     "year": 1309,
+     "note": "small, exceptionally complete cruck house"
+    },
+    {
+     "name": "Leigh Court Barn, Worcestershire",
+     "wikidata": "Q6519565",
+     "year": 1344,
+     "note": "largest surviving cruck-framed structure in Britain"
+    }
+   ],
+   "note": "Origins are disputed: older writers saw crucks as prehistoric or 'early Celtic'; N. W. Alcock rejects that for want of evidence before the 13th century and thinks an 11th-century origin plausible, near the Welsh March and West Midlands. Why crucks are absent from the east is also argued: separate western and eastern carpentry traditions, or (P. Barnwell) coppice management that gave no suitable trees. Variants (FISH): base cruck, raised cruck, middle cruck, upper cruck, jointed cruck, end cruck.",
+   "sources": [
+    {
+     "title": "Cruck (FISH Components Thesaurus, concept 137654)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137654.html",
+     "locator": "scope note",
+     "quote": "A pair of timbers, or blades, usually curved, rising from a place at or near ground level to a point at or near the apex of a roof, forming an approximately triangular frame on which the subsidiary structure rests."
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "The earliest surviving cruck (the Royal George in Cottingham, Northamptonshire) has been dated to 1262, and the latest in England and Wales to 1742 (1690 in Ireland and 1801 in Scotland).",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "More than 75 per cent were built in the 15th and 16th centuries, with 12 known from the 13th century and 53 from the 14th.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"The origins of cruck construction\"",
+     "quote": "The Latin term furca (plural furcae), the Norman French fourche, and the Welsh fforch are found in documents dating from 1189 in Somerset, the 1220s in many parts of central England and Wales, and 1298 in Ireland.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"The origins of cruck construction\"",
+     "quote": "J T Smith published papers in the 1960s showing that crucks are entirely absent from a large swathe of eastern England: from Kent and Sussex, through East Anglia and Lincolnshire, and up to the Humber and beyond.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Coppicing or cultural factors?\"",
+     "quote": "He argues that the kind of mature trees of the required size to make cruck trusses might not have existed in eastern England because trees were managed there by coppicing, a regime that did not produce timbers of the right shape for crucks.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Coppicing or cultural factors?\"",
+     "quote": "whereas builders in Wales, the March, the Midlands, and the north of England had a choice of material and building technique",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"The origins of cruck construction\"",
+     "quote": "He rejects the first idea because there is no archaeological evidence for crucks before the 13th century."
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "One of these is No.18, The Street, in Wilsford, Wiltshire, with a felling date of 1309.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "This tells us that the mixture of raised crucks, aisled end-trusses, and collar-purlins dates from the same period and is not the result of later modification.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "Leigh Court Barn",
+     "quote": "This makes it the largest surviving cruck-framed structure in Britain, with the largest span of any known cruck building.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Dendrochronology Database: Leigh, Leigh Court, Barn",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Leigh, Leigh Court, Barn\" (1344)",
+     "quote": "The barn has ten bays of the same length, with nine almost identical large cruck trusses",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Cruck-framing\"",
+     "quote": "The earliest survivals date from the 13th century and most must have been built before 1600, when the rising demand for two full storeys made crucks obsolete.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"South-West England\"",
+     "quote": "Jointed crucks (where the curved blade is formed of two timbers, not one) were used in east Devon and west Dorset and Somerset.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Architecture in early modern Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architecture_in_early_modern_Scotland",
+     "locator": "section \"Vernacular architecture\"",
+     "quote": "With a lack of long span structural timber, the crucks were sometimes raised and supported on the walls.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Revival\"",
+     "quote": "genuine cruck frames have quite often been included in traditionally carpentered structures",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"General description\"",
+     "quote": "In its earliest and simplest form the medieval hall house would be a four-bay cruck-framed structure, with the open hall taking up the two bays in the middle of the building."
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Use\"",
+     "quote": "Crucks were chiefly used in the medieval period for structures such as houses and large tithe barns, which were entirely timber-framed."
+    }
+   ]
+  },
+  {
+   "id": "aisled-frame",
+   "name": "Aisled frame",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137263"
+   },
+   "period": {
+    "text": "1205-1230: the Barley Barn at Cressing Temple, Essex (tree-ring dated), the oldest surviving aisled barn; the aisled barn developed in the 12th and 13th centuries after royal halls; the halls of the Welsh princes were aisled until the late 13th century; aisled barns were still built in the 18th century (the latest named here: Mapledurham, 1740)",
+    "from": 1205,
+    "to": 1740
+   },
+   "regions": {
+    "text": "Lowland England, with very large and early aisled barns in Essex; aisled halls in Wales before the cruck",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "types": [
+    "aisled-barn",
+    "tithe-barn"
+   ],
+   "examples": [
+    {
+     "name": "The Barley Barn, Cressing Temple, Essex",
+     "wikidata": "Q17535932",
+     "year": 1205,
+     "note": "felled 1205-30"
+    },
+    {
+     "name": "The Wheat Barn, Cressing Temple, Essex",
+     "wikidata": "Q17535942",
+     "year": 1257,
+     "note": "built 1257-1280, remodelled 1420-1450"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Aisle (FISH Components Thesaurus, concept 137263)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137263.html",
+     "locator": "scope note",
+     "quote": "The side compartment of a building, usually a church, hall or barn, separated from the main body of the building by an arcade"
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"English styles\"",
+     "quote": "Aisled barns are of two or three aisled types, the oldest surviving aisled barn being the barley barn at Cressing Temple dated to 1205–1235.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Dendrochronology Database: Cressing, Cressing Temple, Barley Barn",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Cressing, Cressing Temple, Barley Barn\" (1205-30)",
+     "quote": "This section incorporates results from extensive re-sampling of the Barley Barn",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Dendrochronology Database: Cressing, Cressing Temple, Wheat Barn",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Cressing, Cressing Temple, Wheat Barn\" (1417-43)",
+     "quote": "Results have already been reported which show that the Wheat Barn was constructed in 1257-1280 and extensively remodelled in 1420-1450",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Tithe barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tithe_barn",
+     "locator": "lead",
+     "quote": "The medieval aisled barn was developed in the 12th and 13th centuries, following the examples of royal halls, hospitals and market halls.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "Until then, the halls of the Welsh princes had been aisled structures.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Dendrochronology Database: Mapledurham, New Farm, second barn",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Mapledurham, New Farm, second barn\" (1740)",
+     "quote": "The Second Barn, New Farm, Mapledurham, a fully aisled barn of six bays",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"East Anglia\"",
+     "quote": "Barns, of which Essex has some very large and early aisled examples, were weatherboarded and tarred.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barn",
+     "locator": "section \"History\"",
+     "quote": "The modern barn largely developed from the three aisled medieval barn, commonly known as tithe barn or monastic barn."
+    }
+   ]
+  },
+  {
+   "id": "box-frame",
+   "name": "Box frame",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137475"
+   },
+   "period": {
+    "text": "About 1200, when framing on sills replaced earthfast posts (examples as early as the 13th century survive); the usual framing in most regions, it overtook the cruck because it allowed two or three full storeys; the Wealden house and jettied town houses developed from it; still used in timber-frame and green-oak building",
+    "from": 1200,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Most regions of England; side by side with crucks in the West Midlands, the March and Wales",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "technology": "Straight timbers (from coppiced and managed woodland in the east) framed into posts, plates and tie-beams; allowed full upper storeys, jetties and easy addition of wings.",
+   "types": [
+    "wealden-house",
+    "hall-house"
+   ],
+   "sources": [
+    {
+     "title": "Box frame (FISH Components Thesaurus, concept 137475)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137475.html",
+     "locator": "scope note",
+     "quote": "Timber framed construction where a box of horizontal and vertical members is created to support the roof."
+    },
+    {
+     "title": "Timber walls",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls.html",
+     "locator": "Timber Walls",
+     "quote": "The great majority of surviving timber-framed buildings in England are domestic in origin, and date from the later middle ages onwards, although examples as early as the 13th century have been identified.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Box-framing\"",
+     "quote": "The box-frame overtook the cruck in popularity, for it permitted two (or three) full storeys.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Wealden house\"",
+     "quote": "This striking type of box-framed house was revolutionary in the high quality of its construction."
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Timber\"",
+     "quote": "Most regions used box framing, in which the roof structure sits atop the walls.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"West Midlands\"",
+     "quote": "Cruck and box frame construction sat side by side, with some very large timbers being used.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"English styles\"",
+     "quote": "From the box frame, more complex framed buildings such as the Wealden House and Jettied house developed.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Revival\"",
+     "quote": "During the current revival of green-oak framing for new building work, which has occurred mainly since approximately 1980 in the UK",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Coppicing or cultural factors?\"",
+     "quote": "The ready availability of straight timbers suited to box frames and the relative scarcity of timbers suitable for crucks meant that the crucks never became part of the carpentry tradition in the east",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"Wealden houses\"",
+     "quote": "Wealden houses are a specific form of the double ended hall plan."
+    }
+   ]
+  },
+  {
+   "id": "jetty",
+   "name": "Jetty (jettying)",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137902"
+   },
+   "period": {
+    "text": "13th century (taken as 1250): when jettying was introduced; popular in the 16th century and used through it; London banned jetties after the Great Fire, in 1667 (the Rebuilding Act); later overhanging floors are cantilevers rather than jetties",
+    "from": 1250,
+    "flourish": [
+     1500,
+     1599
+    ],
+    "to": 1667
+   },
+   "regions": {
+    "text": "Towns above all (The Shambles, York; pre-1666 London); the Weald (Wealden houses jettied at the ends); East Anglia (Lavenham)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Floor joists of the lower storey oversail the wall and carry the sill of the storey above; gained floor space on narrow town plots, used shorter timbers and gave scope for display. Banned in London in 1667 as a fire risk.",
+   "types": [
+    "wealden-house"
+   ],
+   "examples": [
+    {
+     "name": "The Shambles, York",
+     "note": "street of jettied houses that seem almost to touch overhead"
+    },
+    {
+     "name": "Lavenham Guildhall, Suffolk",
+     "wikidata": "Q15241947",
+     "year": 1529,
+     "note": "jettied, close-studded guildhall of the early 16th century"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Jetty (FISH Components Thesaurus, concept 137902)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137902.html",
+     "locator": "scope note",
+     "quote": "A projecting part of a building that overhangs the wall below it."
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"English styles\"",
+     "quote": "Jettying was introduced in the 13th century and continued to be used through the 16th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Jettying",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jettying",
+     "locator": "section \"Structure\"",
+     "quote": "Jetties were popular in the 16th century but banned in Rouen in 1520 relating to air circulation and the plague, and London in 1667 relating to the great fire.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Jettying",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jettying",
+     "locator": "section \"Structure\"",
+     "quote": "uses shorter timbers, a benefit due to timber shortages and difficult handling of long timbers especially in city streets.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Jettying",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jettying",
+     "locator": "section \"Cantilever\"",
+     "quote": "Jettying was used for timber-framed buildings, but was succeeded by cantilever which are used for the same reason as jettying, to maximise space in buildings.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rebuilding of London Act 1666",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rebuilding_of_London_Act_1666",
+     "locator": "section on the act's provisions",
+     "quote": "Jetties and similar overhangs (banned)",
+     "about": [
+      "period",
+      "technology"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"Jetties\"",
+     "quote": "In the city of York in the North of England the famous street known as The Shambles exemplifies this, where jettied houses seem to almost touch above the street.",
+     "about": [
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The upper stories on both ends typically extended beyond the lower outer wall being jettied on at least one side of the building.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "The Jetty",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls/the-jetty.html",
+     "locator": "The Jetty (with illustration of Lavenham Guildhall)",
+     "quote": "Jetties also provided scope for conspicuous ornament.",
+     "about": [
+      "technology",
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Public halls\"",
+     "quote": "Guildhall, Lavenham, Suffolk: close studding to all storeys, with tension braces and no middle rail (early 16th century)",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close-studding",
+   "name": "Close studding",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "137566"
+   },
+   "period": {
+    "text": "Early 13th century (taken as 1200): the earliest surviving close-studded walls, in East Anglia; the earliest dated examples elsewhere are St Michael's, Baddiley (1308) and Mancetter Manor (about 1330); fashionable from about 1400, in wide use from the mid-15th century to the end of the 17th century; later examples (Altcar church, 1879) are revivals",
+    "from": 1200,
+    "flourish": [
+     1450,
+     1699
+    ],
+    "to": 1700
+   },
+   "regions": {
+    "text": "Possibly first in East Anglia; the eastern school of the south and east, but used across England, notably in Cheshire, Worcestershire and Warwickshire (often with a middle rail in the Midlands)",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "A display of wealth rather than a structural need: it used much more timber than square framing, so it marked high-status buildings and was even faked in paint; scarcer home-grown hardwood helped end it at the close of the 17th century.",
+   "types": [
+    "guildhall",
+    "market-hall",
+    "inn"
+   ],
+   "examples": [
+    {
+     "name": "St Michael's Church, Baddiley, Cheshire (chancel)",
+     "wikidata": "Q7594738",
+     "year": 1308
+    },
+    {
+     "name": "Dragon Hall, Norwich",
+     "wikidata": "Q5305211",
+     "year": 1301,
+     "note": "14th century, close studding over a brick and flint ground floor"
+    },
+    {
+     "name": "Paycocke's, Coggeshall, Essex",
+     "wikidata": "Q17536153",
+     "year": 1500
+    },
+    {
+     "name": "Lavenham Guildhall, Suffolk",
+     "wikidata": "Q15241947",
+     "year": 1529
+    }
+   ],
+   "sources": [
+    {
+     "title": "Close studding (FISH Components Thesaurus, concept 137566)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/137566.html",
+     "locator": "scope note",
+     "quote": "In timber framed buildings this is the division of a wall into narrow panels by vertical studs."
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "lead",
+     "quote": "Close studding first appeared in England in the 13th century and was commonly used there from the mid-15th century until the end of the 17th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "The use of close studding possibly originated in East Anglia, where the technique was employed in the earliest surviving timber walls thought to date from the early 13th century.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "Among the earliest examples outside East Anglia are St Michael's Church, Baddiley in Cheshire (1308) and Mancetter Manor in Warwickshire (c. 1330).",
+     "about": [
+      "period",
+      "example",
+      "region"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "Public buildings such as guildhalls, market halls, churches and inns often employed close studding."
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "With its lavish use of timber, close studding was extravagant and was seen as a status symbol.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "The heavy timber consumption probably also contributed to the decline in the use of close studding from the end of the 17th century, with a reduced supply of domestic hardwood as well as increased competition for timber.",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Variations\"",
+     "quote": "Regional variation occurred across England in the use of the middle rail, which was common in the midlands but rare in the east and south east.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Churches\"",
+     "quote": "St Michael and All Angels Church, Altcar, West Lancashire:  mostly close studded with middle rail (a much later example of 1879)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Public halls\"",
+     "quote": "Dragon Hall, Norwich, Norfolk: close studding without middle rail to first floor, over brick and flint ground floor (14th century)",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Private houses\"",
+     "quote": "Paycocke's, Coggeshall, Essex: the main elevation has close studding on both storeys, with a middle rail on the ground floor (c. 1500)",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Public halls\"",
+     "quote": "Guildhall, Lavenham, Suffolk: close studding to all storeys, with tension braces and no middle rail (early 16th century)",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"English styles\"",
+     "quote": "Close studding was an elite style found mostly on expensive buildings.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "square-panel-framing",
+   "name": "Square-panel framing",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "The simplest timber wall, of large panels, as old as surviving framed walls (13th century, taken as 1200); the characteristic framing of the western school, with bigger timbers and square panels, through the Tudor period; small square panels above close studding from the end of the 16th century; still used in green-oak framing",
+    "from": 1200,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "The western school: the West Midlands, the Welsh March and Cheshire, with wide plain wattle and daub panels; 'square framing' with short straight timbers in the west",
+    "nations": [
+     "England",
+     "Wales"
+    ]
+   },
+   "technology": "Posts and rails form large square compartments, braced diagonally; uses far less timber than close studding.",
+   "sources": [
+    {
+     "title": "Close studding (glossary: Timber framing)",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls/close-studding.html",
+     "locator": "glossary entry \"Timber framing\"",
+     "quote": "in square panel construction the main uprights ( posts ) and horizontals ( rails ) form large square or near-square compartments"
+    },
+    {
+     "title": "Timber walls",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls.html",
+     "locator": "Timber Walls",
+     "quote": "The simplest type of timber wall has bays made up of large panels.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Timber walls",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls.html",
+     "locator": "Timber Walls",
+     "quote": "The great majority of surviving timber-framed buildings in England are domestic in origin, and date from the later middle ages onwards, although examples as early as the 13th century have been identified.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Large panel framing",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls/large-panel-framing.html",
+     "locator": "Large Panel Framing",
+     "quote": "Framing with large panels was often strengthened by diagonal bracing.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Tudor architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tudor_architecture",
+     "locator": "section on vernacular building",
+     "quote": "There was great regional variation in timber framing techniques: eastern England used close studding, with thin vertical panels, while western England used bigger timbers forming square panels.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"West Midlands\"",
+     "quote": "Wattle and daub panels were usually wide and plain.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Fascinating architecture (report of a Winchelsea Archaeological Society talk)",
+     "author": "Rye News",
+     "kind": "secondary",
+     "url": "https://www.ryenews.org.uk/people/community/fascinating-architecture",
+     "locator": "report",
+     "quote": "the styles were largely ‘stout framing’ in the north and ‘square framing’ with short straight timbers in the west",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Variations\"",
+     "quote": "In such buildings, the lower storey would usually employ close studding, while the upper storeys would have small square panels with or without ornamentation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "Compared with square framing, close studding uses a lot of timber and is time-consuming to construct",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Revival\"",
+     "quote": "During the current revival of green-oak framing for new building work, which has occurred mainly since approximately 1980 in the UK",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "decorative-framing",
+   "name": "Decorative framing (black-and-white, 'magpie' work)",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": null,
+   "period": {
+    "text": "Early 16th century (taken as 1500): decorative panelling above close studding at the White Lion, Congleton, and Little Moreton Hall begun about 1504-1508; used particularly from the end of the 16th century; the black-and-white colour scheme itself is Victorian: the Black-and-white Revival began with the Henry VII Lodge, Woburn Sands (1811), flourished in Chester from 1852 and continued into the 20th century, and mock-Tudor half-timbering is still applied to brick houses",
+    "from": 1500,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "The western school: Cheshire and south Lancashire (Little Moreton Hall, Speke Hall, Chorley Hall), Herefordshire, Shropshire, Worcestershire; the revival centred on Chester",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Square panels filled with lozenges, stars, quatrefoils, cusped and curved braces; in the revival the timber pattern is often a façade on brickwork rather than the structure.",
+   "examples": [
+    {
+     "name": "Little Moreton Hall, Cheshire",
+     "wikidata": "Q2943130",
+     "year": 1504,
+     "note": "built about 1504-1610; originally the oak was left unpainted and the infill painted ochre"
+    },
+    {
+     "name": "Henry VII Lodge, Woburn Sands",
+     "year": 1811,
+     "note": "earliest Black-and-white Revival building noted by Pevsner"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"English styles\"",
+     "quote": "A principal style of the western school is the use of square panels of roughly equal size and decorative framing utilizing many shapes such as lozenges, stars, crosses, quatrefoils, cusps, and many other shapes.",
+     "about": [
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"North-West England\"",
+     "quote": "In Cheshire and south Lancashire, the panels of timber framing were ornamented with cusping and curved or diagonal bracing, as at Chorley Hall, Little Moreton Hall and Speke Hall.",
+     "about": [
+      "region",
+      "example"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Variations\"",
+     "quote": "Close studding was sometimes used in association with decorative panel work or close panelling, particularly from the end of the 16th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Inns and cafés\"",
+     "quote": "White Lion, Congleton, Cheshire: lower storey has close studding, with decorative panelling above (early 16th century)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Little Moreton Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Moreton_Hall",
+     "locator": "lead",
+     "quote": "The earliest parts of the house were built for the prosperous Cheshire landowner William Moreton in about 1504–1508 and the remainder was constructed in stages by successive generations of the family until about 1610.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Little Moreton Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Little_Moreton_Hall",
+     "locator": "section on the exterior",
+     "quote": "The familiar black-and-white colour scheme is a fashion introduced by the Victorians; originally the oak beams would have been untreated and left to age naturally to a silver colour, and the rendered infill painted ochre.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Black-and-white Revival architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Black-and-white_Revival_architecture",
+     "locator": "lead",
+     "quote": "The earliest example noted by Pevsner is the Henry VII Lodge in Woburn Sands, Bedfordshire, built in 1811.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Black-and-white Revival architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Black-and-white_Revival_architecture",
+     "locator": "lead",
+     "quote": "The black-and-white tradition in Chester continued into the 20th century.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"Revival styles in later centuries\"",
+     "quote": "In the revival styles, such as Tudorbethan (Mock Tudor), the half-timbered appearance is superimposed on the brickwork or other material as an outside decorative façade rather than forming the main frame that supports the structure.",
+     "about": [
+      "period",
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weatherboarding",
+   "name": "Weatherboarding",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "138423"
+   },
+   "period": {
+    "text": "By the early 17th century (taken as 1600): clapboard facing was then an East Anglian tradition, which colonists took to New England; many earlier timber-framed houses in Essex were weatherboarded later; boards were usually elm, now pine; still used",
+    "from": 1600,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "South-east England and East Anglia: Essex (barns weatherboarded and tarred), Kent (Tenterden, even on classical buildings); found in most parts of the British Isles",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Overlapping horizontal boards nailed or pegged over a timber frame, first riven and later sawn; elm, later imported pine.",
+   "examples": [
+    {
+     "name": "Timber-framed houses with later weatherboarding, south-east Essex",
+     "note": "15th- to 17th-century houses boarded later (RCHME Essex vol. 4, plate 17)"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Weatherboarding (FISH Components Thesaurus, concept 138423)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138423.html",
+     "locator": "scope note",
+     "quote": "An external wall cladding consisting of overlapping horizontal boards."
+    },
+    {
+     "title": "Weatherboard (FISH Building Materials Thesaurus, concept 98282)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98282.html",
+     "locator": "scope note",
+     "quote": "Length of timber boarding (usually elm, now pine) fixed horizontally or vertically to the exterior of a structure",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"British tradition\"",
+     "quote": "Half-timbered construction traveled with British colonists to North America in the early 17th century but was soon abandoned in New England and the mid-Atlantic colonies for clapboard facings (an East Anglia tradition).",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Plate 17: Timber-Framed Houses with Later Weather-Boarding",
+     "author": "Royal Commission on Historical Monuments (England), Inventory of Essex vol. 4 (1923), British History Online",
+     "kind": "secondary",
+     "url": "https://www.british-history.ac.uk/rchme/essex/vol4/plate-17",
+     "locator": "plate 17",
+     "quote": "Timber-Framed Houses with Later Weather-Boarding.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"East Anglia\"",
+     "quote": "Barns, of which Essex has some very large and early aisled examples, were weatherboarded and tarred.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"South-East England\"",
+     "quote": "Timber could be clad in various forms of tile hanging, though in Tenterden weatherboarding was used even on Classical-style buildings.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Clapboard",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clapboard",
+     "locator": "section \"Wood species\"",
+     "quote": "Clapboard houses may be found in most parts of the British Isles",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Clapboard",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clapboard",
+     "locator": "section \"Riven\"",
+     "quote": "Clapboards were originally riven radially by hand producing triangular or \"feather-edged\" sections, attached thin side up and overlapped thick over thin to shed water.",
+     "about": [
+      "technology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pargetting",
+   "name": "Pargetting",
+   "group": "Timber",
+   "kind": "technique",
+   "fish": {
+    "scheme": "com",
+    "id": "138060"
+   },
+   "period": {
+    "text": "16th and 17th centuries (taken as 1500-1700): ornamental exterior plasterwork on timber-framed houses, with figures, birds and foliage in relief in the reign of Elizabeth I; later work is repair or revival",
+    "from": 1500,
+    "to": 1700
+   },
+   "regions": {
+    "text": "Suffolk and Essex above all ('pinking' in Norfolk); also Ipswich, Maidstone and Newark-on-Trent",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Lime plaster on the panels or whole wall of a timber frame, stamped or modelled while wet (combed patterns from boards set with pins, or relief work).",
+   "examples": [
+    {
+     "name": "The Ancient House, Ipswich",
+     "note": "moulded plasterwork"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Pargetting (FISH Components Thesaurus, concept 138060)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_com/concepts/138060.html",
+     "locator": "scope note",
+     "quote": "Ornamental plasterwork applied to the exterior of a building, especially timber-framed houses of the sixteenth and seventeenth centuries",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pargeting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pargeting",
+     "locator": "lead",
+     "quote": "The term, if not the practice, is particularly associated with the English counties of Suffolk and Essex. In the neighbouring county of Norfolk, the term \"pinking\" is used.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Pargeting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pargeting",
+     "locator": "lead",
+     "quote": "Sometimes these devices are in relief, and in the time of Elizabeth I of England represent figures, birds and foliage. Fine examples can be seen at Ipswich, Maidstone, and Newark-on-Trent.",
+     "about": [
+      "period",
+      "region",
+      "technology"
+     ]
+    },
+    {
+     "title": "Pargeting",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pargeting",
+     "locator": "lead",
+     "quote": "This seems generally to have been done by sticking a number of pins in a board in certain lines or curves, and then pressing on the wet plaster in various directions, so as to form geometrical figures.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"East Anglia\"",
+     "quote": "Limewash could also be decorated with incised pargeting, or even moulded plasterwork, as at the Ancient House, Ipswich.",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oak",
+   "name": "Oak",
+   "group": "Timber",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98074"
+   },
+   "period": {
+    "text": "1063-1100: the felling dates of the vertically set oak posts of Greensted church, Essex, the oldest standing oak walls the tree-ring database names (oak was used far earlier, but no source here names the species of prehistoric timbers); the main constructional timber until the middle of the 17th century, when depleted supplies made imported softwood the replacement; green oak is used again in framing since about 1980",
+    "from": 1063,
+    "ongoing": true
+   },
+   "technology": "Worked green, as seasoned oak was too hard; curved oaks for crucks grew at woodland edges; the navy's first call on quality timber and the depletion of managed woodland led to the shift to softwood.",
+   "examples": [
+    {
+     "name": "Greensted Church, Essex",
+     "wikidata": "Q2294625",
+     "year": 1063,
+     "note": "nave of vertically set oak posts (stave walls), felled 1063-1100"
+    },
+    {
+     "name": "Leigh Court Barn, Worcestershire",
+     "wikidata": "Q6519565",
+     "year": 1344,
+     "note": "built for Pershore Abbey from trees felled in 1344"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Oak (FISH Building Materials Thesaurus, concept 98074)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98074.html",
+     "locator": "scope note",
+     "quote": "A native hardwood of the Beech family with hard and durable characteristics which traditionally made it appropriate for structural work."
+    },
+    {
+     "title": "Dendrochronology Database: Greensted, St Andrew's Church",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Greensted, St Andrew's Church\" (1063-1100)",
+     "quote": "The existing church consists of a small nave incorporating vertically set oak posts",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Dendrochronology Database: Greensted, St Andrew's Church",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Greensted, St Andrew's Church\" (1063-1100)",
+     "quote": "Greensted, St Andrew's Church 1063-1100",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"Availability of timber\" and following",
+     "quote": "Although there was a well-established timber trade between the east coast of Britain and the Scandinavian and Baltic ports by the 16th century, it was not until the middle of the 17th century that imported softwoods became a replacement for the depleted resources of England’s oak forests.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"Seasoning, conversion and workability\"",
+     "quote": "Seasoned oak was much harder than green oak and could not be easily worked, so oak tended to be worked in its green state.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"Availability of timber\"",
+     "quote": "English expansionism overseas and the war with Spain gave the navy shipyards first call on any quality timber.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "Leigh Court Barn",
+     "quote": "Built for Pershore Abbey from trees felled in 1344",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "caption on cruck oaks",
+     "quote": "The best tend to be found at the edge of woodland, where the branches can grow out towards the light over arable fields or meadows.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Revival\"",
+     "quote": "During the current revival of green-oak framing for new building work, which has occurred mainly since approximately 1980 in the UK",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imported-softwood",
+   "name": "Imported softwood (deal: Baltic and Norwegian pine and fir)",
+   "group": "Timber",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98242"
+   },
+   "period": {
+    "text": "Mid-17th century (taken as 1650): imported softwoods became the replacement for England's depleted oak (the Baltic timber trade itself was established by the 16th century); large imports to rebuild London after the Great Fire of 1666; Polish pine through the Baltic ports for 18th-century London; the main constructional timber since",
+    "from": 1650,
+    "ongoing": true
+   },
+   "technology": "Dense, slow-grown, knot-free conifers of the Baltic and Norway, cut to size by water-driven frame saws, which cut transport costs; dries faster and stays more stable than oak; trussed roofs and partitions in softwood became commonplace in the 18th century.",
+   "note": "FISH lists deal as a non-preferred term of Timber (98242), the concept used here.",
+   "sources": [
+    {
+     "title": "Timber (FISH Building Materials Thesaurus, concept 98242)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98242.html",
+     "locator": "scope note",
+     "quote": "Wood, cut and seasoned so forming or capable of forming any part of a structure. May be treated with preservative before use."
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"Availability of timber\" and following",
+     "quote": "Although there was a well-established timber trade between the east coast of Britain and the Scandinavian and Baltic ports by the 16th century, it was not until the middle of the 17th century that imported softwoods became a replacement for the depleted resources of England’s oak forests.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"The softwood boom\"",
+     "quote": "Following the Great Fire of 1666, large quantities of softwood timber were imported for the rebuilding of London, and for the estate building that developed to the west of the city from the 17th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"The softwood boom\"",
+     "quote": "From the 17th century imported softwood timber was available from Norway and the Baltic, cut to size using water-driven frame saws.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"Seasoning, conversion and workability\"",
+     "quote": "Softwood, by comparison, dries far more quickly than oak and this reduces its weight and helps to keep it stable.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"The softwood boom\"",
+     "quote": "In the 18th century the use of softwood in carpentry for trussed roofing, trussed beams and trussed partitioning became commonplace.",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "British timber trade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/British_timber_trade",
+     "locator": "lead",
+     "quote": "The British shipping industry, by the late seventeenth century, increasingly used imports of Baltic timber.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "earthfast-posts>timber-framing",
+   "from": "earthfast-posts",
+   "to": "timber-framing",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "From about AD 1200 framed buildings standing on sills, padstones or low walls replaced posts set in the ground, which rotted at the foot; surviving crucks almost all stand on sills, padstones or walls.",
+   "sources": [
+    {
+     "title": "Island Farm, Ottery St Mary (Internet Archaeology 47)",
+     "author": "Internet Archaeology",
+     "kind": "secondary",
+     "url": "https://intarch.ac.uk/journal/issue47/4/3-1.html",
+     "locator": "section 3.1, citing Gardiner 2014",
+     "quote": "It does, however, appear to fit with the typical later medieval technique of timber framing, as opposed to the use of earth-fast posts, a constructional change that became ubiquitous in the country from around AD 1200"
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Tried and true crucks\"",
+     "quote": "By far the majority of crucks that spring from a low point in the building do so from a timber sill plate, from one or more padstones, or from a low wall."
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Tried and true crucks\"",
+     "quote": "Cruck blades set into post-holes or resting on the ground were perhaps once common enough, but they are now extremely rare in surviving buildings because of their vulnerability to rot."
+    }
+   ]
+  },
+  {
+   "id": "aisled-frame>cruck-frame",
+   "from": "aisled-frame",
+   "to": "cruck-frame",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "In Wales the aisled halls of the princes gave way to cruck-built halls after Edward I's conquest and castle-building of the 1280s (R. Suggett).",
+   "sources": [
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "Until then, the halls of the Welsh princes had been aisled structures."
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "Castle-building turned north Wales into the largest building site in Christendom in the 1280s, and it was out of this creative milieu that the cruck truss became increasingly popular as a timber version of the fashionable pointed Gothic arch in stone."
+    }
+   ]
+  },
+  {
+   "id": "cruck-frame>box-frame",
+   "from": "cruck-frame",
+   "to": "box-frame",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Where both were used (the West Midlands, the March, Wales), the box frame overtook the cruck from the 16th century because it allowed two or three full storeys; in Wales the gentry also rejected the cruck once peasants built cruck halls. Cruck halls often had box-framed wings, and cruck ranges were later extended with box-framed cross-wings.",
+   "sources": [
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Box-framing\"",
+     "quote": "The box-frame overtook the cruck in popularity, for it permitted two (or three) full storeys."
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"History\"",
+     "quote": "They may have declined due to providing an inconveniently shaped space in cases where an upper floor was used."
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Spanning social classes\"",
+     "quote": "In fact, there are examples throughout the Midlands and the March and into Wales of buildings that have a cruck-built open hall flanked by box-framed wings of two storeys."
+    },
+    {
+     "title": "Cruck construction: an uncouth and rudimentary building technique?",
+     "author": "Current Archaeology 365 (C. Catling, 2019), The Past",
+     "kind": "secondary",
+     "url": "https://the-past.com/?p=21463",
+     "locator": "section \"Coppicing or cultural factors?\"",
+     "quote": "this spurred the gentry of Wales to reject the cruck and seek new modes of construction to maintain the principle of social (status) distancing"
+    },
+    {
+     "title": "Dendrochronology Database: Wilsford, The Malthouse, Cruck Range",
+     "author": "Vernacular Architecture Group (Archaeology Data Service)",
+     "kind": "listing",
+     "url": "https://doi.org/10.5284/1132568",
+     "locator": "entry \"Wilsford, The Malthouse, Cruck Range\" (1410)",
+     "quote": "The earliest part comprises a four-bay cruck framed building running east-west, which was later extended with a box-framed cross-wing at each end, giving an H-plan to the complex."
+    }
+   ]
+  },
+  {
+   "id": "cob>clay-lump",
+   "from": "cob",
+   "to": "clay-lump",
+   "kind": "variant",
+   "confidence": "probable",
+   "claim": "Clay lump is the East Anglian form of unfired earth walling, counted among the cob family, but cast as dried blocks laid like brick, giving thinner walls than cob.",
+   "sources": [
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "and in East Anglia (where it is referred to as clay lump)"
+    },
+    {
+     "title": "Clay lump (FISH Building Materials Thesaurus, concept 97828)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97828.html",
+     "locator": "scope note",
+     "quote": "The walls produced are characteristically thinner than those of cob and pise."
+    }
+   ]
+  },
+  {
+   "id": "cob>mud-walling",
+   "from": "cob",
+   "to": "mud-walling",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Scottish mudwall, the clay dabbins of Cumbria and Irish mud walls are the same wet-laid earth-and-straw walling as cob under regional names and methods.",
+   "sources": [
+    {
+     "title": "Down to Earth: Scotland's Earth Building Past and Future",
+     "author": "Historic Environment Scotland (Engine Shed blog, N. Bushell, 2021)",
+     "kind": "secondary",
+     "url": "https://blog.engineshed.scot/2021/04/21/scotlands-earth-building-past-and-future/",
+     "locator": "section \"The different types of earth construction in Scotland\"",
+     "quote": "(commonly known as ‘cob’ in the rest of the UK)"
+    },
+    {
+     "title": "Cob (material)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cob_(material)",
+     "locator": "section \"History and usage\"",
+     "quote": "Many similar materials and methods of earthen building are used around the world, such as adobe, lump clay, puddled clay, chalk mud, wychert, clay daubins"
+    },
+    {
+     "title": "Vernacular architecture",
+     "author": "Building History (buildinghistory.org)",
+     "kind": "secondary",
+     "url": "https://www.buildinghistory.org/style/vernacular.shtml",
+     "locator": "section \"Earth building\"",
+     "quote": "Cob was popular in Devon up to the 19th century and also used in Cumbria, the East Midlands, Hampshire and Ireland."
+    }
+   ]
+  },
+  {
+   "id": "wattle-and-daub>brick",
+   "from": "wattle-and-daub",
+   "to": "brick",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "As brick became cheaper, brick nogging replaced wattle and daub as the infill of timber frames, and old wattle panels were often replaced with brick.",
+   "sources": [
+    {
+     "title": "Timber framing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Timber_framing",
+     "locator": "section \"Infill materials\"",
+     "quote": "Brick infill sometimes called nogging became the standard infill after the manufacturing of bricks made them more available and less expensive."
+    },
+    {
+     "title": "Timber walls",
+     "author": "Looking at Buildings (Pevsner Architectural Guides / Buildings Books Trust)",
+     "kind": "secondary",
+     "url": "https://www.lookingatbuildings.org.uk/styles/medieval/walls-and-windows/timber-walls.html",
+     "locator": "Timber Walls",
+     "quote": "Timber walls generally consist of a framework which is filled in by another material, commonly wattle and mud, often replaced later by brick."
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "Later buildings would have a brick infilling between timbers"
+    }
+   ]
+  },
+  {
+   "id": "oak>imported-softwood",
+   "from": "oak",
+   "to": "imported-softwood",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "From the middle of the 17th century imported Baltic and Norwegian softwood replaced depleted English oak as the main constructional timber.",
+   "sources": [
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "opening paragraph",
+     "quote": "By the end of the century these supply issues had influenced a shift from oak, as the most commonly used constructional timber, to softwood."
+    },
+    {
+     "title": "Seventeenth- and eighteenth-century softwood carpentry",
+     "author": "The Building Conservation Directory 2015, p. 125",
+     "kind": "secondary",
+     "url": "https://www.buildingconservation.com/books/bcd15/files/assets/basic-html/page-127.html",
+     "locator": "section \"Availability of timber\" and following",
+     "quote": "it was not until the middle of the 17th century that imported softwoods became a replacement for the depleted resources of England’s oak forests"
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "with a reduced supply of domestic hardwood as well as increased competition for timber"
+    }
+   ]
+  },
+  {
+   "id": "close-studding>decorative-framing",
+   "from": "close-studding",
+   "to": "decorative-framing",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Both were framing for display; from the end of the 16th century close studding on the lower storey was combined with small decorated square panels above, and close studding was faked in paint or planking.",
+   "sources": [
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"Variations\"",
+     "quote": "Close studding was sometimes used in association with decorative panel work or close panelling, particularly from the end of the 16th century."
+    },
+    {
+     "title": "Close studding",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Close_studding",
+     "locator": "section \"History and usage\"",
+     "quote": "This led to it being faked with paint or even cosmetic planking."
+    }
+   ]
+  }
+ ]
+}

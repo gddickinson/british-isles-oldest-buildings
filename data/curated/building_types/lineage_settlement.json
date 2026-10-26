@@ -1,0 +1,1939 @@
+{
+ "about": "Building types (roadmap BT1d): chapels and friaries, town defences, lighthouses, warehouses, factories, distilleries and museums. Same fields as lineage.json. roman-town-wall>town-wall links to the Roman town wall of lineage_prehistoric.json.",
+ "researched": "2026-10-26",
+ "types": [
+  {
+   "id": "chapel",
+   "name": "Chapel",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "69967",
+   "period": {
+    "text": "a room converted to a Christian chapel or house church at Lullingstone Roman villa in the 4th century, the earliest known in the isles; still built, now often multifaith, in hospitals, airports and universities",
+    "from": 350,
+    "ongoing": true
+   },
+   "note": "The general chapel: a small place of worship of its own, or part of a building with another main purpose (school, college, hospital, palace, castle, prison); chapels of ease, chantry chapels and nonconformist chapels are kinds of it.",
+   "sources": [
+    {
+     "title": "Lullingstone Roman Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lullingstone_Roman_Villa",
+     "locator": "lead",
+     "quote": "In the 4th century a room, probably already in religious use, was converted to a Christian chapel or house church, the earliest known in the British Isles.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "lead",
+     "quote": "Second, a chapel is a place of worship, sometimes interfaith, that is part of a building, complex, or vessel with some other main purpose, such as a school, college, hospital, palace or large aristocratic house, castle, barracks, prison, funeral home, cemetery, hotel, airport, or military or commercial ship."
+    },
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "section \"Types of chapel\"",
+     "quote": "It was originally Catholic, but chapels today are often multifaith.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chapel (FISH Thesaurus of Monument Types, concept 69967)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69967.html",
+     "locator": "scope note",
+     "quote": "A freestanding building, or a room or recess serving as a place of Christian worship in a church or other building. Use more specific type where known."
+    }
+   ]
+  },
+  {
+   "id": "nonconformist-chapel",
+   "name": "Nonconformist chapel",
+   "family": "Nonconformist places of worship",
+   "domain": "Religious",
+   "fish": "69973",
+   "period": {
+    "text": "dissenters allowed their own registered places of worship by the Toleration Act 1689; chapels rose in number in the late 18th and early 19th centuries, until by the 1851 census more people attended them than the Anglican churches; Gothic chapels from 1836 (March, Cambridgeshire) and common from the mid 19th century; still in use, the sources name no last one built",
+    "from": 1689,
+    "flourish": [
+     1770,
+     1851
+    ],
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Toleration Act 1688",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Toleration_Act_1688",
+     "locator": "lead",
+     "quote": "Nonconformists were allowed their own places of worship and their own schoolteachers, so long as they accepted certain oaths of allegiance.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "section \"Modern usage\"",
+     "quote": "In England and Wales, due to the rise in Nonconformist chapels during the late 18th and early 19th centuries, by the time of the 1851 census, more people attended the independent chapels than attended the state religion's Anglican churches.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Upper Brook Street Chapel, Manchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Upper_Brook_Street_Chapel,_Manchester",
+     "locator": "section \"Architecture\"",
+     "quote": "Said to be the first Neogothic Nonconformist chapel, Manchester's Unitarian Chapel was preceded by the Congregational Chapel in March, Cambridgeshire, which was constructed in 1836 and is also in the Neogothic style.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Nonconformist chapel (FISH Thesaurus of Monument Types, concept 69973)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69973.html",
+     "locator": "scope note",
+     "quote": "A place of worship for members of Protestant sects dissenting from the established Church."
+    }
+   ]
+  },
+  {
+   "id": "methodist-chapel",
+   "name": "Methodist chapel",
+   "family": "Nonconformist places of worship",
+   "domain": "Religious",
+   "fish": "71647",
+   "period": {
+    "text": "the New Room, Bristol, opened in June 1739, the oldest purpose-built Methodist chapel; membership grew from 56,000 at Wesley's death in 1791 to 1,463,000 by 1851; the branches joined in 1932; still in use, the sources name no last one built",
+    "from": 1739,
+    "flourish": [
+     1791,
+     1851
+    ],
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "New Room, Bristol",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/New_Room,_Bristol",
+     "locator": "lead",
+     "quote": "Opened in June 1739, it housed the earliest Methodist societies, and was enlarged in 1748.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "New Room, Bristol",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/New_Room,_Bristol",
+     "locator": "section \"History\"",
+     "quote": "Under Wesley's direction, the building followed two months later, making it the oldest purpose-built Methodist chapel in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Methodism",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Methodism",
+     "locator": "section \"Development until John Wesley's death\"",
+     "quote": "Total membership of the Methodist societies in Britain was recorded as 56,000 that year, rising to 360,000 in 1836 and 1,463,000 by the national census of 1851.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wesleyan methodist chapel (FISH Thesaurus of Monument Types, concept 78137)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/78137.html",
+     "locator": "scope note",
+     "quote": "In 1932 they joined the United Methodists and the Primitive Methodists to form the Methodist church.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Methodist chapel (FISH Thesaurus of Monument Types, concept 71647)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71647.html",
+     "locator": "scope note",
+     "quote": "A place of worship for Methodists, a movement founded by John Wesley. Following his death in 1791 there were many secessions."
+    }
+   ]
+  },
+  {
+   "id": "friary",
+   "name": "Friary",
+   "family": "Religious houses",
+   "domain": "Religious",
+   "fish": "70140",
+   "period": {
+    "text": "the Dominicans in Oxford from 1221 and the Franciscans at Canterbury from 1224, the first friaries; 183 friaries in England at the Dissolution, all surrendered by 1541 (the Canterbury friaries in December 1538); friars returned in the 19th century (the Servites in 1864), not counted here",
+    "from": 1221,
+    "to": 1541
+   },
+   "sources": [
+    {
+     "title": "Blackfriars, Oxford",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackfriars,_Oxford",
+     "locator": "section \"History\"",
+     "quote": "The Dominicans arrived in Oxford on 15 August 1221, at the instruction of a General Chapter meeting headed by Saint Dominic himself, little more than a week after the friar's death.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Greyfriars, Canterbury",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greyfriars,_Canterbury",
+     "locator": "lead",
+     "quote": "Greyfriars in Canterbury was the first Franciscan friary in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Greyfriars, Canterbury",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greyfriars,_Canterbury",
+     "locator": "section \"History\"",
+     "quote": "The first Franciscans arrived in the country in 1224 (during the lifetime of the Order's founder St Francis of Assisi) and the friary was set up soon afterwards.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dissolution of the Monasteries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Monasteries",
+     "locator": "lead",
+     "quote": "There were nearly 900 religious houses in England, around 260 for monks, 300 for regular canons, 142 nunneries and 183 friaries; some 12,000 people in total, 4,000 monks, 3,000 canons, 3,000 friars and 2,000 nuns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Greyfriars, Canterbury",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greyfriars,_Canterbury",
+     "locator": "section \"History\"",
+     "quote": "In December 1538, the Bishop of Dover, Richard Yngworth (or Ingworth), received in the King's name the surrender of all the Canterbury friaries with their lands and property.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Servite friary (FISH Thesaurus of Monument Types, concept 94002)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94002.html",
+     "locator": "scope note",
+     "quote": "The Servite Fathers came to England in 1864.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Friary (FISH Thesaurus of Monument Types, concept 70140)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70140.html",
+     "locator": "scope note",
+     "quote": "Houses specifically for men and of chiefly mendicant religious orders. The status of priory is represented in several friaries. Use with PRIORY if required."
+    }
+   ]
+  },
+  {
+   "id": "augustinian-friary",
+   "name": "Augustinian (Austin) friary",
+   "family": "Religious houses",
+   "domain": "Religious",
+   "fish": "91101",
+   "period": {
+    "text": "the first English house of the Austin friars at Clare, Suffolk, in 1248; dispersed from 1538 and gone by the end of the Dissolution in 1541",
+    "from": 1248,
+    "to": 1541
+   },
+   "sources": [
+    {
+     "title": "Austin friars",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Austin_friars",
+     "locator": "section \"Province of St. John Stone\"",
+     "quote": "In 1248 Richard de Clare, 6th Earl of Gloucester invited the Augustinians in Normandy to open their first English friary at Clare in Suffolk.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Austin friars",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Austin_friars",
+     "locator": "section \"Province of St. John Stone\"",
+     "quote": "The friaries were dispersed from 1538 in the dissolution of monasteries during the English Reformation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Augustinian friary (FISH Thesaurus of Monument Types, concept 91101)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91101.html",
+     "locator": "scope note",
+     "quote": "A house of friars of the Augustinian order. Also known as Austin Friars"
+    }
+   ]
+  },
+  {
+   "id": "town-wall",
+   "name": "Town wall (medieval)",
+   "family": "Town defences",
+   "domain": "Defence",
+   "fish": "71311",
+   "period": {
+    "text": "after the Norman castles, many new town walls by the 12th century, typically in stone; murage grants to build them from 1220 (Shrewsbury); walled towns of Edward I in North Wales in the late 13th century; Berwick's Italian-style bastioned walls from 1560; Derry's of 1613-1619 the last walled city built in Europe",
+    "from": 1100,
+    "flourish": [
+     1220,
+     1400
+    ],
+    "to": 1619
+   },
+   "structure": "a wall, typically of stone, around the town, with towers and gates; from the mid 16th century earthwork or stone bastions for artillery",
+   "sources": [
+    {
+     "title": "List of town walls in England and Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/List_of_town_walls_in_England_and_Wales",
+     "locator": "lead",
+     "quote": "The Norman invaders of the 11th century initially focused on building castles to control their new territories, rather than town walls to defend the urban centres, but by the 12th century many new town walls were built across England and Wales, typically in stone.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Murage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Murage",
+     "locator": "section \"Origin\"",
+     "quote": "(Actually, the grant is dated 26 June 1220.) Other towns receiving early grants included Bridgnorth, Stafford, Worcester, Oxford, Gloucester, and Bristol.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "List of town walls in England and Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/List_of_town_walls_in_England_and_Wales",
+     "locator": "lead",
+     "quote": "Edward I conquered North Wales in the late 13th century and built a number of walled towns as part of a programme of English colonisation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Berwick town walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Berwick_town_walls",
+     "locator": "section \"Elizabethan rebuilding\"",
+     "quote": "By 1560, however, it was concluded that it was impractical to upgrade the existing walls and a new set of town fortifications in an Italian style were constructed instead, destroying much of the earlier medieval stonework.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Walls of Derry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Walls_of_Derry",
+     "locator": "lead",
+     "quote": "Derry's walls, also known as the Walls of Derry, were originally built by the Irish Society between 1613 and 1619, under the supervision of the London builder and architect Peter Benson.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Derry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Derry",
+     "locator": "section \"City walls\"",
+     "quote": "as part of the last walled city to be built in Europe, stand as the most complete and spectacular",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Town wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_wall",
+     "locator": "lead",
+     "quote": "The walls can range from simple palisades or earthworks to extensive military fortifications such as curtain walls with towers, bastions and gates for access to the city.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Town wall (FISH Thesaurus of Monument Types, concept 71311)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71311.html",
+     "locator": "scope note",
+     "quote": "A fortified wall surrounding a town or city."
+    }
+   ]
+  },
+  {
+   "id": "town-gate",
+   "name": "Town gate (bar)",
+   "family": "Town defences",
+   "domain": "Defence",
+   "fish": "68916",
+   "period": {
+    "text": "Bootham Bar, York, keeps stonework of the 11th century; many grand gatehouses built in the 14th and 15th centuries as walls grew less military; Castle Gate, Derry, built 1805-1808, the latest in the sources",
+    "from": 1075,
+    "flourish": [
+     1300,
+     1500
+    ],
+    "to": 1808
+   },
+   "structure": "a defensible gateway, usually of stone and two or more storeys, built into the town wall; used to control traffic and collect tolls",
+   "sources": [
+    {
+     "title": "York city walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_city_walls",
+     "locator": "section \"Bootham Bar\"",
+     "quote": "Although much of Bootham Bar was built in the 14th and 19th centuries, it also has some of the oldest surviving stonework, dating to the 11th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "List of town walls in England and Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/List_of_town_walls_in_England_and_Wales",
+     "locator": "lead",
+     "quote": "By the late medieval period, town walls were increasingly less military in character and more closely associated with civic pride and urban governance: many grand gatehouses were built in the 14th and 15th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Walls of Derry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Walls_of_Derry",
+     "locator": "section \"Layout\"",
+     "quote": "Castle Gate was built between 1805 and 1808.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "York city walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_city_walls",
+     "locator": "section \"Bars\"",
+     "quote": "These restricted traffic in medieval times, and were used to extract tolls, as well as being defensive positions in times of war.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Town gate (FISH Thesaurus of Monument Types, concept 68916)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68916.html",
+     "locator": "scope note",
+     "quote": "A highly defensible gateway, usually of stone with two or more storeys, built into the defensive walls of a town or city.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pharos-of-alexandria",
+   "name": "Pharos of Alexandria",
+   "family": "Influences from abroad",
+   "domain": "Maritime",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "built in the 3rd century BC under Ptolemy II (280-247 BC); ruined by earthquakes between AD 956 and 1303",
+    "from": -280,
+    "to": 1303
+   },
+   "sources": [
+    {
+     "title": "Lighthouse of Alexandria",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
+     "locator": "lead",
+     "quote": "The Pharos of Alexandria was a lighthouse built by the Ptolemaic Kingdom of Ancient Egypt, during the reign of Ptolemy II Philadelphus (280–247 BC).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lighthouse of Alexandria",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
+     "locator": "lead",
+     "quote": "The lighthouse was severely damaged by three earthquakes between AD 956 and 1303 and became an abandoned ruin.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roman-lighthouse",
+   "name": "Roman lighthouse (pharos)",
+   "family": "Lighthouses and harbours",
+   "domain": "Maritime",
+   "fish": null,
+   "period": {
+    "text": "two built at Dover soon after the conquest of AD 43 (the eastern one stands in Dover Castle, later a church bell tower); many Roman lighthouses fell into disuse in the Middle Ages; no source dates the end of Dover's light, so the end of Roman rule (c. 410) is used",
+    "from": 50,
+    "to": 410
+   },
+   "sources": [
+    {
+     "title": "Dubris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dubris",
+     "locator": "section \"Lighthouses\"",
+     "quote": "Two lighthouses, each called the \"Pharos\", were built at Dover soon after the Roman conquest.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dover Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dover_Castle",
+     "locator": "section \"Roman era\"",
+     "quote": "The site also contains one of Dover's two Roman lighthouses, one of only three surviving Roman-era lighthouses in the world, and the tallest and most complete standing Roman structure in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of lighthouses",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_lighthouses",
+     "locator": "section \"Europe\"",
+     "quote": "During the European Middle Ages, many Roman lighthouses fell into disuse.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lighthouse",
+   "name": "Lighthouse",
+   "family": "Lighthouses and harbours",
+   "domain": "Maritime",
+   "fish": "68952",
+   "period": {
+    "text": "Hook Head, Co. Wexford, built between 1201 and 1240 and still working; Trinity House chartered 1514 and its Lowestoft light established 1609; all Trinity House lights automatic since 1998; still lit and maintained",
+    "from": 1240,
+    "ongoing": true
+   },
+   "structure": "a tower or other structure with a powerful light at the top, on or near the coast (some inland, to guide travellers)",
+   "sources": [
+    {
+     "title": "Hook Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hook_Lighthouse",
+     "locator": "section \"History\"",
+     "quote": "The exact year of construction is not known, but Pembroke first came to the region in 1201 and the first map that shows the lighthouse serving its function is dated 1240, so construction must have taken place between these dates.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hook Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hook_Lighthouse",
+     "locator": "lead",
+     "quote": "It is one of the oldest lighthouses in the world and the second oldest operating lighthouse in the world, after the Tower of Hercules in Spain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Trinity House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_House",
+     "locator": "lead",
+     "quote": "Trinity House, founded by Royal Charter in 1514, is the general lighthouse authority for England, Wales, the Channel Islands, and Gibraltar.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Trinity House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_House",
+     "locator": "section \"History\"",
+     "quote": "With the increasing number of ships lost along the Newcastle to London coal route, in 1609 Trinity House established the Lowestoft Lighthouse, a pair of wooden towers with candle illuminants.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Trinity House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_House",
+     "locator": "section \"Lighthouses\"",
+     "quote": "All Trinity House lighthouses have been automated since November 1998, when the UK's last staffed lighthouse, North Foreland in Kent, was converted to automatic operation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lighthouse (FISH Thesaurus of Monument Types, concept 68952)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68952.html",
+     "locator": "scope note",
+     "quote": "A tower or structure, with a powerful light or lights at the top, usually erected at an important or dangerous point on or near the sea-coast for the warning and guidance of mariners, but can also be erected inland for the guidance of travellers.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "offshore-lighthouse",
+   "name": "Rock (offshore) lighthouse",
+   "family": "Lighthouses and harbours",
+   "domain": "Maritime",
+   "fish": null,
+   "period": {
+    "text": "Winstanley's Eddystone light, 1696-1698, the first tower fully exposed to the open sea; Smeaton's Eddystone 1756-1759 the model; Bell Rock 1807-1810 the oldest still working; the second Fastnet tower, in service 1904, the latest in the sources",
+    "from": 1698,
+    "to": 1904
+   },
+   "structure": "a tapering tower of granite blocks dovetailed together and set in hydraulic lime, rooted in the rock, after Smeaton's Eddystone (Winstanley's first tower was of timber; Fastnet's first, of cast iron, proved too weak)",
+   "sources": [
+    {
+     "title": "Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse",
+     "locator": "section \"Modern construction\"",
+     "quote": "The first lighthouse built there was an octagonal wooden structure, anchored by 12 iron stanchions secured in the rock, and was built by Henry Winstanley from 1696 to 1698.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse",
+     "locator": "section \"Modern construction\"",
+     "quote": "His lighthouse was the first tower in the world to have been fully exposed to the open sea.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse",
+     "locator": "section \"Modern construction\"",
+     "quote": "He rediscovered and used \"hydraulic lime\", a form of concrete that will set under water used by the Romans, and developed a technique of securing the granite blocks together using dovetail joints and marble dowels.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse",
+     "locator": "section \"Modern construction\"",
+     "quote": "The dovetailing feature served to improve the structural stability, although Smeaton also had to taper the thickness of the tower towards the top, for which he curved the tower inwards on a gentle gradient.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bell Rock Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bell_Rock_Lighthouse",
+     "locator": "lead",
+     "quote": "The Bell Rock Lighthouse, off the coast of Angus, Scotland, is the world's oldest working sea-washed lighthouse.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bell Rock Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bell_Rock_Lighthouse",
+     "locator": "section \"Planning\"",
+     "quote": "The design was based on the earlier Eddystone Lighthouse, which had been designed by John Smeaton, and which Stevenson had visited and studied in detail in 1801—it too was built on an offshore reef using interlocking stones.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Fastnet Rock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fastnet_Rock",
+     "locator": "section \"Second lighthouse\"",
+     "quote": "Construction started in 1897, with the levelling of the site, and the first of 2,047 dovetailed blocks of Cornish granite was laid in June 1899.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Fastnet Rock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fastnet_Rock",
+     "locator": "section \"Second lighthouse\"",
+     "quote": "The new lighthouse entered service on 27 June 1904 (1904-06-27), having cost nearly £90,000.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "warehouse",
+   "name": "Warehouse",
+   "family": "Warehouses and works",
+   "domain": "Industrial",
+   "fish": "68806",
+   "period": {
+    "text": "Hanse House, King's Lynn, of 1475, with Marriott's Warehouse the only Hanseatic buildings left in England; larger and more specialised warehouses by canals, railways and ports from the industrial revolution; still built",
+    "from": 1475,
+    "ongoing": true
+   },
+   "structure": "load-bearing masonry walls or a heavy timber frame before the 19th century; then cast-iron columns and later steel posts inside",
+   "sources": [
+    {
+     "title": "King's Lynn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/King%27s_Lynn",
+     "locator": "section \"Middle Ages\"",
+     "quote": "It retains two former Hanseatic League warehouses: Hanse House of 1475 and Marriott's Warehouse, in use between the 15th and 17th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Warehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warehouse",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "The mass production of goods launched by the industrial revolution of the 18th and 19th centuries fuelled the development of larger and more specialised warehouses, usually located close to transport hubs on canals, at railways and portside.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Warehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warehouse",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "Before and into the nineteenth century, the basic European warehouse was built of load-bearing masonry walls or heavy-framed timber with a suitable external cladding.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Warehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warehouse",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "Strong, slender cast iron columns began to replace masonry piers or timber posts to carry levels above the ground floor.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Warehouse (FISH Thesaurus of Monument Types, concept 68806)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68806.html",
+     "locator": "scope note",
+     "quote": "A building or part of a building used for the storage of goods or merchandise. Use more specific type where known."
+    }
+   ]
+  },
+  {
+   "id": "dock-warehouse",
+   "name": "Dock warehouse",
+   "family": "Warehouses and works",
+   "domain": "Industrial",
+   "fish": "93958",
+   "period": {
+    "text": "the five-storey warehouses round the Import Dock of the West India Docks, London, opened 1802; warehouses on the quayside at St Katharine Docks, 1828; the Albert Dock, Liverpool, 1846, the first non-combustible warehouse system; the Stanley Dock Tobacco Warehouse, 1901, a late addition and the latest in the sources",
+    "from": 1802,
+    "to": 1901
+   },
+   "structure": "multi-storey brick warehouses on the quay, so that goods went straight from ship to store; from 1846 (Albert Dock) cast iron, brick and stone with no structural timber",
+   "sources": [
+    {
+     "title": "West India Docks",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/West_India_Docks",
+     "locator": "lead",
+     "quote": "Located on the Isle of Dogs in London, the first dock opened in 1802.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "West India Docks",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/West_India_Docks",
+     "locator": "section \"Layout\"",
+     "quote": "Around the Import Dock a continuous line of five-storey warehouses was constructed, designed by architect George Gwilt and his son, also named George.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "St Katharine Docks",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Katharine_Docks",
+     "locator": "section \"History\"",
+     "quote": "The surrounding warehouses, placed close to the quayside so that goods could be unloaded directly into them, were designed by the architect Philip Hardwick.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Royal Albert Dock, Liverpool",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Albert_Dock,_Liverpool",
+     "locator": "lead",
+     "quote": "Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in the United Kingdom to be built from a combination of cast iron, brick, and stone without also using wood for any structural element.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Royal Albert Dock, Liverpool",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Albert_Dock,_Liverpool",
+     "locator": "lead",
+     "quote": "As a result, it was the first non-combustible warehouse system in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stanley Dock Tobacco Warehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stanley_Dock_Tobacco_Warehouse",
+     "locator": "lead",
+     "quote": "The warehouse was a late addition to the Stanley Dock complex and was built on land reclaimed from the dock.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stanley Dock Tobacco Warehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stanley_Dock_Tobacco_Warehouse",
+     "locator": "lead",
+     "quote": "Standing 125 feet (38 m) high, the building was, at the time of its construction in 1901, claimed to be the world's largest building in terms of area.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shipping warehouse (FISH Thesaurus of Monument Types, concept 93958)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/93958.html",
+     "locator": "scope note",
+     "quote": "A large store for the temporary accommodation of goods awaiting transportation to or from the sea."
+    }
+   ]
+  },
+  {
+   "id": "factory",
+   "name": "Factory",
+   "family": "Warehouses and works",
+   "domain": "Industrial",
+   "fish": "69118",
+   "period": {
+    "text": "Lombe's silk mill at Derby, working by 1721, one of the earliest and probably the first fully mechanised; Arkwright's Cromford Mill, 1771, the prototype of the modern factory, widely copied; electrified from about 1900; still built",
+    "from": 1721,
+    "ongoing": true
+   },
+   "structure": "often multi-storey, with power from a water wheel or steam engine (later electric motors) carried through the floors by line shafts",
+   "sources": [
+    {
+     "title": "Factory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "One of the earliest factories was John Lombe's water-powered silk mill at Derby, operational by 1721.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lombe's Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe%27s_Mill",
+     "locator": "section \"History\"",
+     "quote": "Lombe's Mill was the first successful silk throwing mill in England and probably the first fully mechanised factory in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Factory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "Richard Arkwright is the person credited with inventing the prototype of the modern factory.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Factory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "Large scale electrification of factories began around 1900 after the development of the AC motor which was able to run at constant speed depending on the number of poles and the current electrical frequency.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Factory system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory_system",
+     "locator": "lead",
+     "quote": "The main characteristic of the factory system is the use of machinery, originally powered by water or steam and later by electricity.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Factory system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory_system",
+     "locator": "section \"Characteristics\"",
+     "quote": "(Multi-story buildings were common because they facilitated transmission of power through line shafts.)",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Factory (FISH Thesaurus of Monument Types, concept 69118)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69118.html",
+     "locator": "scope note",
+     "quote": "A building or complex, housing powered machinery and employing a large workforce for manufacturing purposes. Use specific monument type where known."
+    }
+   ]
+  },
+  {
+   "id": "distillery",
+   "name": "Distillery",
+   "family": "Warehouses and works",
+   "domain": "Industrial",
+   "fish": "69125",
+   "period": {
+    "text": "distilling recorded in Ireland in 1405 and Scotland in 1494; a royal licence to distil in Antrim in 1608; Kilbeggan, founded 1757, the oldest distillery in Ireland by its claim; licensed distilling eased by the Excise Act 1823 (Glenlivet licensed 1824), the start of the modern era of Scotch; still built",
+    "from": 1757,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Irish whiskey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_whiskey",
+     "locator": "section \"History\"",
+     "quote": "The oldest known documented record of whiskey in Ireland was in 1405; in the Annals of Clonmacnoise it was written that the head of a clan died after \"taking a surfeit of aqua vitae\" at Christmas.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scotch whisky",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scotch_whisky",
+     "locator": "section \"History\"",
+     "quote": "The earliest record of distillation in Scotland is in the Exchequer Rolls of Scotland for 1494.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Irish whiskey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_whiskey",
+     "locator": "section \"Start of licensed distillation\"",
+     "quote": "In 1608, King James I granted a licence to Sir Thomas Phillips, a landowner in County Antrim.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kilbeggan Distillery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilbeggan_Distillery",
+     "locator": "lead",
+     "quote": "Kilbeggan Distillery (formerly Brusna Distillery and Locke's Distillery) is an Irish whiskey distillery situated on the River Brosna in Kilbeggan, County Westmeath, Ireland, established in 1757 and owned by Suntory Global Spirits, a subsidiary of Suntory Holdings of Osaka, Japan.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scotch whisky",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scotch_whisky",
+     "locator": "section \"History\"",
+     "quote": "These changes ushered in the modern era of Scotch production: in 1823 2,232,000 gallons of whisky had duty paid on it; in 1824 this increased to 4,350,000 gallons.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scotch whisky",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scotch_whisky",
+     "locator": "section \"History\"",
+     "quote": "A farmer, George Smith, working under landlord the Duke of Gordon, was the first person in Scotland to take out a licence for a distillery under the new act, founding the Glenlivet Distillery in 1824, to make single malt Scotch.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Distillery (FISH Thesaurus of Monument Types, concept 69125)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69125.html",
+     "locator": "scope note",
+     "quote": "An establishment or works where the distilling of spirits is carried out."
+    }
+   ]
+  },
+  {
+   "id": "grain-distillery",
+   "name": "Grain (patent still) distillery",
+   "family": "Warehouses and works",
+   "domain": "Industrial",
+   "fish": null,
+   "period": {
+    "text": "Cameronbridge, Fife, among the first to make grain whisky in a column still, from 1830, the year Aeneas Coffey patented his; still working (Cameronbridge the largest of the remaining Scottish grain distilleries)",
+    "from": 1830,
+    "ongoing": true
+   },
+   "structure": "a still house of column (continuous, Coffey or patent) stills of two columns, in place of batches in pot stills",
+   "sources": [
+    {
+     "title": "Cameronbridge distillery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cameronbridge_distillery",
+     "locator": "section \"History\"",
+     "quote": "The  distillery was founded in 1824 and in 1830 became one of the first distilleries to produce grain whisky using the column still method invented by Robert Stein.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Aeneas Coffey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Aeneas_Coffey",
+     "locator": "section \"Biography\"",
+     "quote": "Post-resignation, he turned to the distilling business, managing Dublin distilleries and patenting his innovative continuous column still in 1830.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cameronbridge distillery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cameronbridge_distillery",
+     "locator": "section \"History\"",
+     "quote": "It is currently the largest of the remaining grain distilleries in Scotland and is owned by Diageo.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Column still",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Column_still",
+     "locator": "lead",
+     "quote": "A column still, also called a continuous still, patent still or Coffey still, is a variety of still consisting of two columns.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Column still",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Column_still",
+     "locator": "section \"Description\"",
+     "quote": "Column stills are frequently used in the production of grain whisky and are the most commonly used type of still in the production of bourbon and other American whiskeys.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cabinet-of-curiosities",
+   "name": "Cabinet of curiosities",
+   "family": "Museums",
+   "domain": "Civic",
+   "fish": null,
+   "period": {
+    "text": "classic cabinets from the 16th century on the Continent; in England the Tradescants' Ark in South Lambeth, first described in 1634, the earliest major one and the first museum open to the public; Hans Sloane's collection, left in 1753, founded the British Museum",
+    "from": 1634,
+    "to": 1753
+   },
+   "note": "The term first meant a room rather than a piece of furniture.",
+   "sources": [
+    {
+     "title": "Cabinet of curiosities",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cabinet_of_curiosities",
+     "locator": "lead",
+     "quote": "Although more rudimentary collections had preceded them, the classic cabinets of curiosities emerged in the sixteenth century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Musaeum Tradescantianum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Musaeum_Tradescantianum",
+     "locator": "lead",
+     "quote": "The Musaeum Tradescantianum was the first museum open to the public to be established in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Musaeum Tradescantianum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Musaeum_Tradescantianum",
+     "locator": "lead",
+     "quote": "The first account of the collection, by Peter Mundy, is from 1634.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Musaeum Tradescantianum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Musaeum_Tradescantianum",
+     "locator": "lead",
+     "quote": "The Tradescant collection is the earliest major English cabinet of curiosities.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "British Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/British_Museum",
+     "locator": "section \"Sir Hans Sloane\"",
+     "quote": "Its foundations lie in the will of the Anglo-Irish physician and naturalist Sir Hans Sloane (1660–1753), a London-based doctor and scientist from Ulster.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cabinet of curiosities",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cabinet_of_curiosities",
+     "locator": "lead",
+     "quote": "The term cabinet originally described a room rather than a piece of furniture."
+    }
+   ]
+  },
+  {
+   "id": "museum",
+   "name": "Museum (purpose-built)",
+   "family": "Museums",
+   "domain": "Civic",
+   "fish": "68698",
+   "period": {
+    "text": "the Old Ashmolean, Oxford, built 1678-1683, the world's first purpose-built museum building; the British Museum, 1753, the first public national museum, opened 1759; still built",
+    "from": 1683,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "History of Science Museum, Oxford",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_Science_Museum,_Oxford",
+     "locator": "section \"History\"",
+     "quote": "Built in 1683 to house Elias Ashmole's collection, the building was the world's first purpose-built museum building and was also open to the public.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ashmolean Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashmolean_Museum",
+     "locator": "lead",
+     "quote": "Its first building was erected in 1678–1683 to house the cabinet of curiosities that Elias Ashmole gave to the University of Oxford in 1677.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "British Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/British_Museum",
+     "locator": "lead",
+     "quote": "Established in 1753, the British Museum was the world's first public national museum.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Museum (FISH Thesaurus of Monument Types, concept 68698)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68698.html",
+     "locator": "scope note",
+     "quote": "A building, group of buildings or space within a building, where objects of value such as works of art, antiquities, scientific specimens, or other artefacts are housed and displayed."
+    }
+   ]
+  },
+  {
+   "id": "municipal-museum",
+   "name": "Municipal (borough) museum",
+   "family": "Museums",
+   "domain": "Civic",
+   "fish": null,
+   "period": {
+    "text": "the Museums Act 1845 let larger boroughs found museums; Warrington's museum and library opened in 1848; the act was replaced by the Public Libraries Act 1850; still run by councils, the sources name no last one built",
+    "from": 1848,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Museums Act 1845",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Museums_Act_1845",
+     "locator": "lead",
+     "quote": "43), sometimes called the Museums of Art Act 1845 or the Museums of Art in Boroughs Act, was an act of the Parliament of the United Kingdom which gave the town councils of larger municipal boroughs the power to establish museums.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Warrington Museum & Art Gallery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warrington_Museum_%26_Art_Gallery",
+     "locator": "lead",
+     "quote": "The Museum and the Library originally opened in 1848 as the first rate-supported library in the UK, before moving to their current premises in 1858.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Warrington Museum & Art Gallery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warrington_Museum_%26_Art_Gallery",
+     "locator": "lead",
+     "quote": "Operated by Culture Warrington, Warrington Museum and Art Gallery has the distinction of being one of the oldest municipal museums in the UK and much of the quintessential character of the building has been preserved.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "chapel>chapel-of-ease",
+   "from": "chapel",
+   "to": "chapel-of-ease",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The chapel of ease is a chapel built by a church as a satellite place of worship, for example in a remote part of a large parish.",
+   "sources": [
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "lead",
+     "quote": "Third, chapels are small places of worship, built as satellite sites by a church or monastery, for example in remote areas; these are often called a chapel of ease."
+    }
+   ]
+  },
+  {
+   "id": "chapel>nonconformist-chapel",
+   "from": "chapel",
+   "to": "nonconformist-chapel",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Chapel became the usual name for the places of worship of the independent or nonconformist denominations in England and especially Wales, even large ones that worked like parish churches; the thesaurus files the nonconformist chapel under chapel.",
+   "sources": [
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "lead",
+     "quote": "For historical reasons, chapel is also often the term used by independent or nonconformist denominations for their places of worship in England and especially in Wales, even where they are large and in practice operate like a parish church."
+    },
+    {
+     "title": "Nonconformist chapel (FISH Thesaurus of Monument Types, concept 69973)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69973.html",
+     "locator": "scope note",
+     "quote": "A place of worship for members of Protestant sects dissenting from the established Church."
+    }
+   ]
+  },
+  {
+   "id": "meeting-house>nonconformist-chapel",
+   "from": "meeting-house",
+   "to": "nonconformist-chapel",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Chapel and meeting house were both standard names for the buildings of nonconformist societies; the sources give the two names for the same use, not which building form came first.",
+   "sources": [
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "section \"History\"",
+     "quote": "In British history, \"chapel\" and \"meeting house\" were formerly the standard designations for church buildings belonging to independent or Nonconformist religious societies and their members."
+    }
+   ]
+  },
+  {
+   "id": "nonconformist-chapel>methodist-chapel",
+   "from": "nonconformist-chapel",
+   "to": "methodist-chapel",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Methodist chapel is the chapel of the Methodists, a movement that began within the Church of England and drew away from it as its societies multiplied; the thesaurus files it under nonconformist chapel.",
+   "sources": [
+    {
+     "title": "Methodism",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Methodism",
+     "locator": "section \"Development until John Wesley's death\"",
+     "quote": "As Methodist societies multiplied, and elements of an ecclesiastical system were, one after another, adopted, the breach between John Wesley and the Church of England gradually widened."
+    },
+    {
+     "title": "Methodist chapel (FISH Thesaurus of Monument Types, concept 71647)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71647.html",
+     "locator": "scope note",
+     "quote": "A place of worship for Methodists, a movement founded by John Wesley. Following his death in 1791 there were many secessions."
+    }
+   ]
+  },
+  {
+   "id": "ecclesiological-church>nonconformist-chapel",
+   "from": "ecclesiological-church",
+   "to": "nonconformist-chapel",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Gothic Revival reached nonconformist chapels from 1836 as 'Dissenting Gothic', freer than the ecclesiologists' pure English Gothic; it became common from the mid 19th century, and later chapels looked more like parish churches.",
+   "sources": [
+    {
+     "title": "Dissenting Gothic",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissenting_Gothic",
+     "locator": "lead",
+     "quote": "It is a distinctive style in its own right within Gothic Revival architecture that emerged primarily in Britain, its colonies and North America, during the 19th century."
+    },
+    {
+     "title": "Dissenting Gothic",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissenting_Gothic",
+     "locator": "section \"Later Gothic Revival period\"",
+     "quote": "For more prosaic reasons, Dissenting Gothic began to become commonplace from the mid-19th century onwards; by that date, the trustees of independent chapels could more easily afford the high building costs associated with the neo-Gothic style."
+    },
+    {
+     "title": "Upper Brook Street Chapel, Manchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Upper_Brook_Street_Chapel,_Manchester",
+     "locator": "section \"Architecture\"",
+     "quote": "Chapels built following the construction of these two resembled parish churches more than the former style."
+    }
+   ]
+  },
+  {
+   "id": "monastery>friary",
+   "from": "monastery",
+   "to": "friary",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The friary is a religious house of the mendicant orders: unlike monks bound to one self-sufficient community, friars worked among lay people on donations, and their houses stood mostly in towns.",
+   "sources": [
+    {
+     "title": "Friar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Friar",
+     "locator": "section \"Definition\"",
+     "quote": "Whereas monks live in a self-sufficient community, friars work among laypeople and are supported by donations or other charitable support."
+    },
+    {
+     "title": "Dissolution of the Monasteries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Monasteries",
+     "locator": "section \"Background\"",
+     "quote": "Friaries, for the most part, were concentrated in urban areas."
+    },
+    {
+     "title": "Friary (FISH Thesaurus of Monument Types, concept 70140)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70140.html",
+     "locator": "scope note",
+     "quote": "Houses specifically for men and of chiefly mendicant religious orders. The status of priory is represented in several friaries. Use with PRIORY if required."
+    }
+   ]
+  },
+  {
+   "id": "friary>augustinian-friary",
+   "from": "friary",
+   "to": "augustinian-friary",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Augustinian (Austin) friary is the house of one of the mendicant orders, the friars of the Augustinian order.",
+   "sources": [
+    {
+     "title": "Augustinian friary (FISH Thesaurus of Monument Types, concept 91101)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91101.html",
+     "locator": "scope note",
+     "quote": "A house of friars of the Augustinian order. Also known as Austin Friars"
+    }
+   ]
+  },
+  {
+   "id": "roman-town-wall>town-wall",
+   "from": "roman-town-wall",
+   "to": "town-wall",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Roman town defences survived and were used after Rome, and medieval walls were built on them: about half of York's Roman wall line and foundations are part of its medieval walls.",
+   "sources": [
+    {
+     "title": "List of town walls in England and Wales",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/List_of_town_walls_in_England_and_Wales",
+     "locator": "lead",
+     "quote": "Many of these defences survived the fall of the Roman Empire in the 4th and 5th centuries, and were used in the unstable post-Roman period."
+    },
+    {
+     "title": "York city walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_city_walls",
+     "locator": "section \"Roman walls\"",
+     "quote": "The foundations and the line of about half of these Roman walls form part of the existing walls, as follows:"
+    }
+   ]
+  },
+  {
+   "id": "town-wall>town-gate",
+   "from": "town-wall",
+   "to": "town-gate",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The town gate (in York a 'bar') is the strongly defended gateway built into a town wall, one of the parts of a town's defences.",
+   "sources": [
+    {
+     "title": "Town gate (FISH Thesaurus of Monument Types, concept 68916)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68916.html",
+     "locator": "scope note",
+     "quote": "A highly defensible gateway, usually of stone with two or more storeys, built into the defensive walls of a town or city."
+    },
+    {
+     "title": "York city walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_city_walls",
+     "locator": "section \"Bars\"",
+     "quote": "The walls are punctuated by four main gatehouses, or 'bars', (Bootham Bar, Monk Bar, Walmgate Bar and Micklegate Bar below)."
+    }
+   ]
+  },
+  {
+   "id": "italian-bastion>town-wall",
+   "from": "italian-bastion",
+   "to": "town-wall",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "At Berwick-upon-Tweed the medieval walls were replaced from 1560 by smaller town fortifications in the Italian style, with artillery emplacements and five stone bastions.",
+   "sources": [
+    {
+     "title": "Berwick town walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Berwick_town_walls",
+     "locator": "section \"Elizabethan rebuilding\"",
+     "quote": "By 1560, however, it was concluded that it was impractical to upgrade the existing walls and a new set of town fortifications in an Italian style were constructed instead, destroying much of the earlier medieval stonework."
+    },
+    {
+     "title": "Berwick town walls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Berwick_town_walls",
+     "locator": "section \"Elizabethan rebuilding\"",
+     "quote": "The new walls were much smaller in length, enclosing only two thirds of the medieval area, allowing them to include more artillery emplacements and five large stone bastions."
+    }
+   ]
+  },
+  {
+   "id": "pharos-of-alexandria>roman-lighthouse",
+   "from": "pharos-of-alexandria",
+   "to": "roman-lighthouse",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Caligula's lighthouse at Boulogne, whose light could be seen from Dover, was said to be 'not unlike the one at Pharos', and both Dover lighthouses were called 'Pharos'; the sources name Alexandria's as the model of Boulogne's, not of Dover's.",
+   "sources": [
+    {
+     "title": "Dover Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dover_Castle",
+     "locator": "section \"Roman era\"",
+     "quote": "Suetonius refers to Caligula's \"erection of a tall lighthouse, not unlike the one at Pharos, in which fires were to be kept going all night as a guide to ships\"."
+    },
+    {
+     "title": "Dover Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dover_Castle",
+     "locator": "section \"Roman era\"",
+     "quote": "The Roman lighthouse at Boulogne-sur-Mer across the Channel, known as the Tour d'Ordre, survived for many centuries, and its light should have been visible from Dover."
+    },
+    {
+     "title": "Dubris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dubris",
+     "locator": "section \"Lighthouses\"",
+     "quote": "Two lighthouses, each called the \"Pharos\", were built at Dover soon after the Roman conquest."
+    }
+   ]
+  },
+  {
+   "id": "roman-lighthouse>lighthouse",
+   "from": "roman-lighthouse",
+   "to": "lighthouse",
+   "kind": "revival",
+   "confidence": "probable",
+   "claim": "Roman lighthouses fell out of use in the Middle Ages and lights were built again from the 13th century (Hook Head); the sources give the order, not a link between the two.",
+   "sources": [
+    {
+     "title": "History of lighthouses",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_lighthouses",
+     "locator": "section \"Europe\"",
+     "quote": "During the European Middle Ages, many Roman lighthouses fell into disuse."
+    },
+    {
+     "title": "History of lighthouses",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_lighthouses",
+     "locator": "section \"Europe\"",
+     "quote": "It was built during the Middle Ages in a sturdy, circular design."
+    }
+   ]
+  },
+  {
+   "id": "lighthouse>offshore-lighthouse",
+   "from": "lighthouse",
+   "to": "offshore-lighthouse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The rock or offshore lighthouse stands away from the land on a reef, fully exposed to the sea; Winstanley's Eddystone (1698) was the first and Smeaton's (1759) set the design that Bell Rock (1810) followed.",
+   "sources": [
+    {
+     "title": "Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lighthouse",
+     "locator": "section \"Location\"",
+     "quote": "Offshore lighthouses are those which are located away from land."
+    },
+    {
+     "title": "Eddystone Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eddystone_Lighthouse",
+     "locator": "lead",
+     "quote": "The third (Smeaton's) is renowned because of its influence on lighthouse design and its importance in the development of concrete for building; its upper portions were re-erected in Plymouth as a monument."
+    },
+    {
+     "title": "Bell Rock Lighthouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bell_Rock_Lighthouse",
+     "locator": "section \"Planning\"",
+     "quote": "The design was based on the earlier Eddystone Lighthouse, which had been designed by John Smeaton, and which Stevenson had visited and studied in detail in 1801—it too was built on an offshore reef using interlocking stones."
+    }
+   ]
+  },
+  {
+   "id": "warehouse>dock-warehouse",
+   "from": "warehouse",
+   "to": "dock-warehouse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The dock warehouse is the large warehouse of the industrial era built by a port, placed on the quay so that goods could be unloaded directly into it.",
+   "sources": [
+    {
+     "title": "Warehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warehouse",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "The mass production of goods launched by the industrial revolution of the 18th and 19th centuries fuelled the development of larger and more specialised warehouses, usually located close to transport hubs on canals, at railways and portside."
+    },
+    {
+     "title": "St Katharine Docks",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Katharine_Docks",
+     "locator": "section \"History\"",
+     "quote": "The surrounding warehouses, placed close to the quayside so that goods could be unloaded directly into them, were designed by the architect Philip Hardwick."
+    }
+   ]
+  },
+  {
+   "id": "fireproof-mill>dock-warehouse",
+   "from": "fireproof-mill",
+   "to": "dock-warehouse",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Fireproof construction, which the thesaurus applies alike to factories, mills and warehouses, was taken into dock warehouses by Jesse Hartley, whose Albert Dock (1846) used no structural timber; no source here traces his designs to the fireproof mills.",
+   "sources": [
+    {
+     "title": "Fireproof factory (FISH Thesaurus of Monument Types, concept 91942)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91942.html",
+     "locator": "scope note",
+     "quote": "A factory, mill or warehouse constructed with the minimum amount of combustible materials."
+    },
+    {
+     "title": "Jesse Hartley",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jesse_Hartley",
+     "locator": "section \"Hartley's career\"",
+     "quote": "Between 1841 and 1843 he prepared a number of different designs for fireproof construction of dockside warehouses."
+    },
+    {
+     "title": "Royal Albert Dock, Liverpool",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Albert_Dock,_Liverpool",
+     "locator": "lead",
+     "quote": "As a result, it was the first non-combustible warehouse system in the world."
+    }
+   ]
+  },
+  {
+   "id": "silk-mill>factory",
+   "from": "silk-mill",
+   "to": "factory",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Lombe's silk-throwing mill at Derby, working by 1721, is named as one of the earliest factories and probably the first fully mechanised one.",
+   "sources": [
+    {
+     "title": "Factory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "One of the earliest factories was John Lombe's water-powered silk mill at Derby, operational by 1721."
+    },
+    {
+     "title": "Lombe's Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe%27s_Mill",
+     "locator": "section \"History\"",
+     "quote": "Lombe's Mill was the first successful silk throwing mill in England and probably the first fully mechanised factory in the world."
+    }
+   ]
+  },
+  {
+   "id": "cotton-mill>factory",
+   "from": "cotton-mill",
+   "to": "factory",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Arkwright's Cromford Mill, the first successful cotton spinning factory, is credited as the prototype of the modern factory and was widely copied.",
+   "sources": [
+    {
+     "title": "Factory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "Richard Arkwright is the person credited with inventing the prototype of the modern factory."
+    },
+    {
+     "title": "Factory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "Arkwright's factory was the first successful cotton spinning factory in the world; it showed unequivocally the way ahead for industry and was widely copied."
+    }
+   ]
+  },
+  {
+   "id": "distillery>grain-distillery",
+   "from": "distillery",
+   "to": "grain-distillery",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The grain distillery makes grain whisky in column (patent or Coffey) stills, continuously rather than in batches in pot stills; the column still came into Scotch whisky from about 1830.",
+   "sources": [
+    {
+     "title": "Scotch whisky",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scotch_whisky",
+     "locator": "section \"History\"",
+     "quote": "The column still allowed for continuous distillation, without the need for cleaning after each batch was made."
+    },
+    {
+     "title": "Cameronbridge distillery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cameronbridge_distillery",
+     "locator": "section \"History\"",
+     "quote": "The  distillery was founded in 1824 and in 1830 became one of the first distilleries to produce grain whisky using the column still method invented by Robert Stein."
+    }
+   ]
+  },
+  {
+   "id": "cabinet-of-curiosities>museum",
+   "from": "cabinet-of-curiosities",
+   "to": "museum",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The first purpose-built museum, the Ashmolean at Oxford (1683), was built to house a cabinet of curiosities, the Tradescants' collection given by Elias Ashmole; the British Museum began from Hans Sloane's collection.",
+   "sources": [
+    {
+     "title": "Ashmolean Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashmolean_Museum",
+     "locator": "lead",
+     "quote": "Its first building was erected in 1678–1683 to house the cabinet of curiosities that Elias Ashmole gave to the University of Oxford in 1677."
+    },
+    {
+     "title": "Musaeum Tradescantianum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Musaeum_Tradescantianum",
+     "locator": "lead",
+     "quote": "After the death of the younger Tradescant and his wife, the collection passed into the hands of the wealthy collector Elias Ashmole, who in 1691 gave it to Oxford University as the nucleus of the newly founded Ashmolean Museum."
+    },
+    {
+     "title": "Cabinet of curiosities",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cabinet_of_curiosities",
+     "locator": "lead",
+     "quote": "In addition to the most famous and best documented cabinets of rulers and aristocrats, members of the merchant class and early practitioners of science in Europe formed collections that were precursors to museums."
+    }
+   ]
+  },
+  {
+   "id": "museum>municipal-museum",
+   "from": "museum",
+   "to": "municipal-museum",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The municipal museum is the museum founded and run by a borough council, under the power the Museums Act 1845 gave to larger boroughs.",
+   "sources": [
+    {
+     "title": "Museums Act 1845",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Museums_Act_1845",
+     "locator": "lead",
+     "quote": "43), sometimes called the Museums of Art Act 1845 or the Museums of Art in Boroughs Act, was an act of the Parliament of the United Kingdom which gave the town councils of larger municipal boroughs the power to establish museums."
+    }
+   ]
+  },
+  {
+   "id": "municipal-museum>public-library",
+   "from": "municipal-museum",
+   "to": "public-library",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Borough museums and free public libraries grew up together: Warrington's museum and library opened together in 1848, and the act of 1850 that gave boroughs power to found free libraries (also called the Public Libraries and Museums Act) repealed the Museums Act 1845. The sources show the two Acts and institutions together, not that one type grew from the other.",
+   "sources": [
+    {
+     "title": "Warrington Museum & Art Gallery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warrington_Museum_%26_Art_Gallery",
+     "locator": "lead",
+     "quote": "The Museum and the Library originally opened in 1848 as the first rate-supported library in the UK, before moving to their current premises in 1858."
+    },
+    {
+     "title": "Public Libraries Act 1850",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Public_Libraries_Act_1850",
+     "locator": "lead",
+     "quote": "65), sometimes called the Public Libraries and Museums Act 1850, was an act of the Parliament of the United Kingdom which first gave local boroughs the power to establish free public libraries."
+    },
+    {
+     "title": "Museums Act 1845",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Museums_Act_1845",
+     "locator": "section \"Subsequent developments\"",
+     "quote": "The whole act was repealed by section 1 of the Public Libraries Act 1850 (13 & 14 Vict."
+    }
+   ]
+  }
+ ]
+}

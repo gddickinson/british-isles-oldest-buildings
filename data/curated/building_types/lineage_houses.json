@@ -1,0 +1,2002 @@
+{
+ "about": "Building types (roadmap BT1d): town houses, terraces, cottages, villas, clergy houses and palaces. Same fields as lineage.json; links reach the house types of lineage.json, the weaver's cottage of lineage_industrial.json and the Roman villa of lineage_prehistoric.json by id.",
+ "researched": "2026-10-26",
+ "types": [
+  {
+   "id": "medieval-town-house",
+   "name": "Medieval town house (merchant's house)",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": "71506",
+   "period": {
+    "text": "Medieval: the Jew's House in Lincoln, built around 1170, is one of the earliest town houses still standing in England; burgage plots were well established by the 13th century, and the Medieval Merchant's House in Southampton (about 1290) is the only one of its type to survive substantially as first built. No source gives the last one built; c. 1550 stands for the end of the Middle Ages.",
+    "from": 1170,
+    "to": 1550
+   },
+   "plan": "a house on a burgage plot, long and narrow with a narrow street frontage; the hall either at first floor over storage (the Jew's House) or set at right angles to the street to save frontage (the Southampton merchant's house), often over a cellar or undercroft for goods",
+   "note": "FISH MERCHANTS HOUSE; FISH has burgage house as a non-preferred term of HOUSE and BURGAGE PLOT.",
+   "sources": [
+    {
+     "title": "Jew's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jew's_House",
+     "locator": "lead",
+     "quote": "The Jew's House is one of the earliest extant town houses in England, estimated to have been built around 1170.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Burgage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burgage",
+     "locator": "lead",
+     "quote": "Burgage is a medieval land term used in Great Britain and Ireland, well established by the 13th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Medieval Merchant's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "lead",
+     "quote": "it is \"the only building of its type to survive substantially as first built\"",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Medieval Merchant's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "lead",
+     "quote": "The Medieval Merchant's House is a restored late-13th-century building in Southampton, Hampshire, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Merchants house (FISH Thesaurus of Monument Types, concept 71506)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71506.html",
+     "locator": "scope note",
+     "quote": "Originally, a house of higher social status in a town or port, often with a storage cellar."
+    },
+    {
+     "title": "Burgage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burgage",
+     "locator": "lead",
+     "quote": "The property (\"burgage tenement\") usually, and distinctly, consisted of a house on a long and narrow plot of land (Scots: toft), with a narrow street frontage.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Medieval Merchant's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "section \"Architecture\"",
+     "quote": "The layout of the house follows a medieval right-angle, narrow plan design, in that the hall stretches away from the street to conserve frontage, and there is no internal courtyard built into the design.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Jew's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jew's_House",
+     "locator": "section \"Architecture\"",
+     "quote": "Dating from the mid-twelfth century, the building originally consisted of a hall at the first floor level, measuring approximately 12 by 6 metres, above service and storage spaces at the ground level.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "terraced-house",
+   "name": "Terraced house (the terrace)",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": "71293",
+   "period": {
+    "text": "Introduced to London from Italy in the 1630s (Covent Garden, laid out from 1630); popular after the Great Fire of 1666, the norm in Georgian towns (1714-1830) and built in vast numbers for workers in the mid-19th century; seen as obsolete after the First World War (1914 stands for that), yet still built: a fifth of new houses in 2011.",
+    "from": 1630,
+    "flourish": [
+     1714,
+     1914
+    ],
+    "ongoing": true
+   },
+   "structure": "load-bearing brick or local stone with shared party walls; in London after the Great Fire timber framing was forbidden, and the Building Act of 1774 set wall thicknesses for each 'rate' of house and party walls carried above the roof",
+   "plan": "a row of houses built as one unit, each tall and narrow, occupying the whole height of the building, several storeys and two or three rooms deep, sometimes with a basement and attic",
+   "note": "Covers FISH TERRACE (71371), the row, as well as the house in it.",
+   "sources": [
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"Origin\"",
+     "quote": "Terraced houses were introduced to London from Italy in the 1630s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Covent Garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Covent_Garden",
+     "locator": "section \"Bedford Estate (1552–1918)\"",
+     "quote": "In 1630 Francis Russell, 4th Earl of Bedford commissioned the architect Inigo Jones to design and build a church and three terraces of fine houses around a large square or piazza.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"Origin\"",
+     "quote": "Terraces first became popular in England when Nicholas Barbon began rebuilding London after the Great Fire in 1666.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Georgian architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Georgian_architecture",
+     "locator": "lead",
+     "quote": "Georgian architecture is the name given in most English-speaking countries to the set of architectural styles current between 1714 and 1830.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Georgian architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Georgian_architecture",
+     "locator": "section \"Characteristics\"",
+     "quote": "In towns, which expanded greatly during the period, landowners turned into property developers, and rows of identical terraced houses became the norm.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"19th century\"",
+     "quote": "The terraced house reached mass popularity in the mid-19th century as a result of increased migration to urban areas.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"20th century\"",
+     "quote": "Terraced houses began to be perceived as obsolete following World War I and the rise of the suburban semi-detached house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"21st century\"",
+     "quote": "By 2011, a fifth of new houses built in Britain were terraced, and recreations of classic Georgian terraces have been built, such as at Richmond Lock.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Terraced house (FISH Thesaurus of Monument Types, concept 71293)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71293.html",
+     "locator": "scope note",
+     "quote": "A house in a line of houses attached to and adjoining one another and planned and built as one unit."
+    },
+    {
+     "title": "Terrace (FISH Thesaurus of Monument Types, concept 71371)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71371.html",
+     "locator": "scope note",
+     "quote": "A row of houses attached to and adjoining one another and planned and built as one unit."
+    },
+    {
+     "title": "London Building Act 1774",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Building_Act_1774",
+     "locator": "section \"Background\"",
+     "quote": "Timber-framed buildings were forbidden.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "London Building Act 1774",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Building_Act_1774",
+     "locator": "lead",
+     "quote": "The act placed buildings into classes or \"rates\" defined by size and value, with a code of structural requirements for the foundations and external and party walls for each of the rates.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"Origin\"",
+     "quote": "The London Building Act 1774 (14 Geo. 3. c. 78) made it a legal requirement for all terraced houses there to have a minimum wall thickness and a party wall extending above the roofline to help prevent fire spreading along the terrace, along with other specified basic building requirements.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Georgian architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Georgian_architecture",
+     "locator": "section \"Houses\"",
+     "quote": "Town terraced houses for all social classes remained resolutely tall and narrow, each dwelling occupying the whole height of the building.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"Definition\"",
+     "quote": "A house may be several storeys high, two or three rooms deep, and optionally contain a basement and attic.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "townhouse",
+   "name": "Townhouse (the aristocratic town house)",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": "68960",
+   "period": {
+    "text": "From the Middle Ages, when the London houses of the nobility were 'inns' in the City (Gray's Inn, the house of Reginald de Grey, who died in 1308; 1300 is approximate); from the 18th century the family moved there for the season, and most were terraced; after the First World War many were demolished or put to other uses. No source gives the last one built; 1918 is approximate.",
+    "from": 1300,
+    "flourish": [
+     1700,
+     1914
+    ],
+    "to": 1918
+   },
+   "plan": "the grandest detached, like the Parisian hôtel particulier; most, from the 18th century, a large house in a terrace",
+   "sources": [
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "section \"London\"",
+     "quote": "For example, Lincoln's Inn was the town house of the 3rd Earl of Lincoln, and Gray's Inn was a manor held by the 1st Baron Grey de Wilton.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "section \"Background\"",
+     "quote": "Many of the Inns of Court in London served this function; for example, Gray's Inn was the London townhouse of Reginald de Grey, 1st Baron Grey de Wilton (died 1308).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "section \"Background\"",
+     "quote": "From the 18th century, landowners and their servants would move to a townhouse during the social season when balls and other society gatherings took place.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "section \"London\"",
+     "quote": "Many aristocratic townhouses were demolished or ceased to be used for residential purposes after the First World War,  when the scarcity and greater expense of domestic servants made living on a grand scale impractical.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Town house (FISH Thesaurus of Monument Types, concept 68960)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68960.html",
+     "locator": "scope note",
+     "quote": "A gentry house in a town or city, either detached or in a terrace."
+    },
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "lead",
+     "quote": "The grandest of the London townhouses were stand-alone buildings, comparable to the hôtel particulier, which notably housed the French nobleman in Paris, as well as to the urban domus of the nobiles of Ancient Rome, but many were terraced buildings.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mews",
+   "name": "Mews",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": "71774",
+   "period": {
+    "text": "The royal hawk mews at Charing Cross from 1377 became the royal stables, the first recorded use of 'mews' for stables being in 1548; the name was taken up for town stables in the 17th century, and mews were built behind London's terraces in the 18th and 19th centuries until motor cars took the horses' place in the early 20th. No source gives the last one built; 1910 is approximate.",
+    "from": 1548,
+    "flourish": [
+     1700,
+     1900
+    ],
+    "to": 1910
+   },
+   "plan": "a row or yard of stables and carriage houses on a service street behind large town houses, horses and carriages on the ground floor and the stable servants' rooms above",
+   "sources": [
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"Mews stables\"",
+     "quote": "The first recorded use meaning stables is dated 1548, after the royal stables were built at Charing Cross, on the site of the royal hawk mews.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"Mews stables\"",
+     "quote": "The name mews was taken up for domestic stables in the city during the 17th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"London\"",
+     "quote": "In the 18th and 19th centuries, London housing for wealthy people generally consisted of streets of large terraced houses with stables at the back, which opened onto a small service street.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"Cars\"",
+     "quote": "Mews lost their equestrian function in the early 20th century when motor cars were introduced.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews (FISH Thesaurus of Monument Types, concept 71774)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71774.html",
+     "locator": "scope note",
+     "quote": "Traditionally a mew was a building housing hawks when they were moulting, however since the C16th the term has been used for a series of stables grouped around an open yard or alley, often with rooms above. Use only for stables otherwise use FALCONRY.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"London\"",
+     "quote": "The mews had horse stalls and a carriage house on the ground floor, and stable servants' living accommodation above.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "back-to-back-house",
+   "name": "Back-to-back house",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": "71514",
+   "period": {
+    "text": "The first were built by 1790 in Briggate, Leeds; thousands followed in the factory towns; many cities banned them in the mid-19th century and the Public Health Act 1875 let councils do so, a change in the law forbade them in 1909, but Leeds went on building improved ones until 1937.",
+    "from": 1790,
+    "to": 1937
+   },
+   "plan": "a double row of houses sharing a back wall, each with party walls on two or three sides and its only door and windows in the front; at first one room to a floor, later two-up two-down, around courts or along streets",
+   "sources": [
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "section \"Early houses\"",
+     "quote": "The first back-to-back houses were built by 1790 in Briggate, Leeds, by opportunists who realised the structural setup allowed for a cost saving by not requiring roads or drainage, with population density housing up to 300 people in 60–75 properties per acre.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "section \"Before the First World War\"",
+     "quote": "In 1909, a change in the law forbade the erection of this style of house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "section \"Between the wars\"",
+     "quote": "while continuing to build improved ones of a similar style until  1937, despite being outlawed in 1909",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Back to back house (FISH Thesaurus of Monument Types, concept 71514)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71514.html",
+     "locator": "scope note",
+     "quote": "A house in a terrace consisting of a double row of houses sharing a common back wall, characteristic of industrial cities in the North of England."
+    },
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "lead",
+     "quote": "Back-to-backs share party walls on two or three of their four sides, with the front wall having the only door and windows.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "section \"Description\"",
+     "quote": "Most back-to-backs were small: early examples had just a single room on each floor, while later houses were two-up two-down.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bylaw-terrace",
+   "name": "Byelaw terraced house",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "Built to the byelaws required by the Public Health Act 1875; the term usually refers to houses built between 1875 and 1918, when the Housing, Town Planning, &c. Act 1919 superseded the act.",
+    "from": 1875,
+    "to": 1918
+   },
+   "structure": "built to byelaw standards: foundations, damp-proof courses, wall thicknesses, ceiling heights, under-floor ventilation and window sizes laid down (Building Act 1878 and model byelaws)",
+   "plan": "a through house (no back-to-backs) in a long terrace: front living room and back dining room with the stair between, two bedrooms above, often a rear scullery, a long narrow yard with the privy, and a back alley",
+   "sources": [
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "lead",
+     "quote": "The term usually refers to houses built between 1875 and 1918.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "section \"History\"",
+     "quote": "This act remained in force until 1919 when it was superseded by the Housing, Town Planning, &c. Act 1919 with its aim of fulfilling the promise to returning soldiers, \"homes fit for heroes\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "section \"Public Health Act 1875\"",
+     "quote": "Three years later the Building Act 1878 provided more detail with constructions, defining foundations, damp-proof courses, thickness of walls, ceiling heights, space between dwellings, under-floor ventilation, ventilation of rooms, and size of windows.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "section \"Design\"",
+     "quote": "The ground floor contained a front living room and back dining room with the stair column running parallel to the street, in between.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "section \"Design\"",
+     "quote": "The houses had a long, narrow private yard (also known as an \"area\"), with the privy (outhouse) containing an earth closet on the back wall.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "section \"Public Health Act 1875\"",
+     "quote": "Section 57 determined that all houses must be through houses—no more back-to-back housing.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tenement",
+   "name": "Tenement (Scottish)",
+   "family": "Town houses",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "In Edinburgh's medieval Old Town multi-storey buildings with each flat a separate house grew up on the narrow burgage strips; Gladstone's Land was first built in 1550 and rebuilt from 1617; Glasgow's tenements were built for its growing population in the 19th and early 20th centuries (1800-1914 stands for that); many were demolished in the 1960s and 1970s. No source gives the last one built.",
+    "from": 1550,
+    "flourish": [
+     1800,
+     1914
+    ],
+    "to": 1914
+   },
+   "plan": "a building of several storeys with flats on each floor reached from a shared entrance and stair; in Edinburgh's Old Town up to 15 storeys, in Glasgow mostly 3-5, no taller than the street was wide",
+   "note": "FISH's TENEMENT is a parcel of land and its TENEMENT BLOCK means English model dwellings, so no FISH concept is given. Wikidata's 'apartment building' class may also belong here.",
+   "sources": [
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"History\"",
+     "quote": "The restricted site and the constraints of the Edinburgh town walls led to multi-storey buildings with each apartment treated as a separate house, built on top of each other (such as Gladstone's Land of 1617).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gladstone's Land",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gladstone's_Land",
+     "locator": "section \"Early owners and tenants\"",
+     "quote": "The \"Land\" (sited at 481 and 483 Lawnmarket) was originally built in 1550, but was bought and redeveloped in 1617 by a prosperous Edinburgh merchant and burgess, Thomas Gledstanes, and his wife, Bessie Cunningham.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"Glasgow and Edinburgh\"",
+     "quote": "Edinburgh's tenements are much older, dating from the 17th century onwards, and some were up to 15 stories high when first built, which made them among the tallest houses in the world at that time.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"Glasgow and Edinburgh\"",
+     "quote": "Glasgow tenements were built to provide high-density housing for the large number of people immigrating to the city in the 19th and early 20th century as a result of the Industrial Revolution, when the city's population boomed to more than 1 million people.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"Glasgow and Edinburgh\"",
+     "quote": "Many tenements in Glasgow were demolished in the 1960s and 1970s because of slum conditions, overcrowding and poor maintenance of the buildings.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "lead",
+     "quote": "A tenement, also called an apartment building, is a type of building shared by multiple dwellings, typically with flats or apartments on each floor and with shared entrance stairway access.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"Glasgow and Edinburgh\"",
+     "quote": "Glasgow tenements were generally built no taller than the width of the street on which they were located; therefore, most are about 3–5 storeys high.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cottage",
+   "name": "Cottage",
+   "family": "Cottages",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "The dwelling of the medieval cotter, recorded in Domesday Book (1086), small and built of the cheapest local materials; the word is in 15th-century court rolls; weavers' and miners' cottages came with industry from the 18th century, and cottages are still built, some as modern 'mock cottages'. Thatched cottages are the same type.",
+    "from": 1086,
+    "ongoing": true
+   },
+   "structure": "the cheapest local materials in the local style: thatch in wheat-growing areas, slate where it was found, walls of rubble stone or cob",
+   "plan": "small and modest, often semi-detached or terraced, typically four rooms ('two up, two down')",
+   "note": "FISH has Cottage only as a non-preferred term of HOUSE (68928). Wikidata's 'thatched cottage' belongs here.",
+   "sources": [
+    {
+     "title": "Cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage",
+     "locator": "section \"Medieval\"",
+     "quote": "The word originally referred to a humble rural detached dwelling of a cotter, a semi-independent resident of a manor who had certain residential rights from the lord of the manor, and who in the social hierarchy was a grade above the slave (mentioned in the Domesday Book of 1086), who had no right of tenure and worked full-time to the orders of the lord.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage",
+     "locator": "section \"Etymology\"",
+     "quote": "Examples of this may be found in 15th century manor court rolls.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage",
+     "locator": "lead",
+     "quote": "In British English the term now denotes a small, cosy dwelling of traditional build, although it can also be applied to modern construction designed to resemble traditional houses (\"mock cottages\").",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage",
+     "locator": "section \"Medieval\"",
+     "quote": "It would have been built from the cheapest locally available materials and in the local style, thus in wheat-growing areas, it would be roofed in thatch, and in slate-rich locations, such as Cornwall, slates would be used for roofing.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage",
+     "locator": "section \"Modern usage in Britain and Ireland\"",
+     "quote": "Older cottages are typically modest, often semi-detached or terraced, with only four basic rooms (\"two up, two down\"), although subsequent modifications can create more spacious accommodation.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "estate-cottage",
+   "name": "Estate cottage (estate and model village)",
+   "family": "Cottages",
+   "domain": "Domestic",
+   "fish": "71398",
+   "period": {
+    "text": "Landowners rebuilt villages out of sight of their houses from the 18th century (Milton Abbas, demolished and rebuilt in the 1770s; 1770 is the earliest date the sources give); picturesque double cottages from pattern books by the early 19th century; after the Swing Riots of 1830 the best landlords built cottages with basic sanitation. No source gives the last one built; 1900 is approximate.",
+    "from": 1770,
+    "to": 1900
+   },
+   "sources": [
+    {
+     "title": "Model village",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Model_village",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "Starting in the 18th century, new villages were created at Nuneham Courtenay when the village was rebuilt as plain brick dwellings either side of the main road, at Milton Abbas the village was moved and rebuilt in a rustic style and Blaise Hamlet in  Bristol had individually designed buildings, some with thatched roofs.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Milton Abbas",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Milton_Abbas",
+     "locator": "lead",
+     "quote": "This planned community was built after the old town was demolished in the 1770s, said to be \"the largest such project in England at the time\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Housing the rural working classes\"",
+     "quote": "By the early 19th century, landowners were typically using a \"picturesque\" style, and building double cottages as a way to reduce cost.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Model village",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Model_village",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "The Swing Riots of 1830 highlighted poor housing in the countryside, ill health and immorality and landowners had a responsibility to provide cottages with basic sanitation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Estate cottage (FISH Thesaurus of Monument Types, concept 71398)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71398.html",
+     "locator": "scope note",
+     "quote": "A cottage for workers on a country house estate."
+    }
+   ]
+  },
+  {
+   "id": "palladian-villa",
+   "name": "Palladio's villas of the Veneto",
+   "family": "Influences from abroad",
+   "domain": "Domestic",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "Andrea Palladio's villas in the Veneto, from his first works of the 1540s (by 1550 a group of villas) to his death in 1580.",
+    "from": 1540,
+    "to": 1580
+   },
+   "sources": [
+    {
+     "title": "Palladian villas of the Veneto",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palladian_villas_of_the_Veneto",
+     "locator": "lead",
+     "quote": "The Palladian villas of the Veneto are villas designed by Renaissance architect Andrea Palladio, all of whose buildings were erected in the Veneto, the mainland region of north-eastern Italy then under the political control of the Venetian Republic.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"Early villas\"",
+     "quote": "In his early works in Vicenza in the 1540s, he sometimes emulated the work of his predecessor Giulio Romano, but in doing so he added his own ideas and variations.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palladian villas of the Veneto",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palladian_villas_of_the_Veneto",
+     "locator": "section \"Villa architecture\"",
+     "quote": "By 1550, Palladio had produced a group of villas, whose scale and decoration can be seen as closely matching the wealth and social standing of the owners",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palladian architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palladian_architecture",
+     "locator": "lead",
+     "quote": "Palladian architecture is a European architectural style derived from the work of the Venetian architect Andrea Palladio (1508–1580).",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "villa",
+   "name": "Villa (Georgian and Victorian)",
+   "family": "Villas",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "The Queen's House at Greenwich (1616-35), modelled on Palladio's villas, came first; the English applied the word to compact houses in the country within reach of London in the early 18th century (Chiswick House, 1726-29), and in the 19th century to any large free-standing suburban house, until by about 1900, with semi-detached 'villas', the word had worn out. No source gives the last one built.",
+    "from": 1616,
+    "to": 1900
+   },
+   "plan": "a compact detached house standing in its own garden or landscaped plot near a town",
+   "note": "FISH VILLA (68653) covers both the Roman villa and the later villa; it is given to the Roman villa type (roman-villa, lineage_prehistoric.json).",
+   "sources": [
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"England\"",
+     "quote": "His first major work in the style was the Queen's House at Greenwich (1616–1635), modelled after Palladio's villas.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "In the early 18th century the English took up the term, and applied it to compact houses in the country, especially those accessible from London: Chiswick House is an example of such a \"party villa\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chiswick House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chiswick_House",
+     "locator": "section \"Boyle family (1682–1758)\"",
+     "quote": "Construction of the villa took place between 1726 and 1729.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "In the nineteenth century, the term villa was extended to describe any large suburban house that was free-standing in a landscaped plot of ground.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "By the time 'semi-detached villas' were being erected at the turn of the twentieth century, the term collapsed under its extension and overuse.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Villa (FISH Thesaurus of Monument Types, concept 68653)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68653.html",
+     "locator": "scope note",
+     "quote": "A term for a type of house, with varying definitions according to period. Roman villas were high-status and usually associated with a rural estate, whereas Georgian and later period villas were often semi-detached, town houses."
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "lead",
+     "quote": "In the early modern period, any comfortable detached house with a garden near a city or town was likely to be described as a villa; most surviving villas have now been engulfed by suburbia.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "semi-detached-house",
+   "name": "Semi-detached house",
+   "family": "Villas",
+   "domain": "Domestic",
+   "fish": "71529",
+   "period": {
+    "text": "Planned systematically from the late Georgian period; the earliest identifiable surviving pair was built in 1759 in Lancaster; the Addison Act of 1919 tipped the balance from short terraces to pairs of semis, and 41% of all homes built between 1945 and 1964 were semis; still built.",
+    "from": 1759,
+    "flourish": [
+     1919,
+     1964
+    ],
+    "ongoing": true
+   },
+   "plan": "two houses joined by one party wall, usually each the mirror image of the other; early pairs often made to look like one detached villa",
+   "sources": [
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Housing the middle classes\"",
+     "quote": "The earliest identifiable surviving pair is that built in 1759 on Cable Street (now facing the bus station and partly demolished) for Captain Henry Fell and Samuel Simpson.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Late 19th century and 20th century\"",
+     "quote": "This tipped the balance away from short terraces towards pairs of semi-detached houses.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "lead",
+     "quote": "Between 1945 and 1964, 41% of all properties built were semis.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "lead",
+     "quote": "After 1980, the proportion of semis built fell to 15%.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Semi detached house (FISH Thesaurus of Monument Types, concept 71529)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71529.html",
+     "locator": "scope note",
+     "quote": "A house joined to another to form one building."
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "lead",
+     "quote": "Often, semi-detached houses are built in pairs in which each house's layout is a mirror image of the other's.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clergy-house",
+   "name": "Clergy house (rectory, vicarage, parsonage)",
+   "family": "Clergy houses",
+   "domain": "Domestic",
+   "fish": "68933",
+   "period": {
+    "text": "The oldest the sources name is the 14th-century Alfriston Clergy House (a Wealden hall house first built for a farmer; 1350 is approximate); parishes still provide houses for their clergy, though many old rectories and vicarages have been sold.",
+    "from": 1350,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Clergy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clergy_house",
+     "locator": "section \"Function\"",
+     "quote": "In the United Kingdom, the 14th-century Alfriston Clergy House was the first property to be acquired by the National Trust.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Alfriston Clergy House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alfriston_Clergy_House",
+     "locator": "section \"History\"",
+     "quote": "Although the name reflects the fact that the parish priest and his housekeeper used it, the house was originally built as a farmer's house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Clergy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clergy_house",
+     "locator": "section \"Function\"",
+     "quote": "A clergy house is typically owned and maintained by a church, as a benefit to its clergy.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Clergy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clergy_house",
+     "locator": "section \"Function\"",
+     "quote": "In some countries where the clergy houses were often rather grand, many of them have now been sold off by the churches and replaced by more modest properties.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Clergy house (FISH Thesaurus of Monument Types, concept 68933)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68933.html",
+     "locator": "scope note",
+     "quote": "A residence for all clergy having the sole or subordinate charge of a living."
+    },
+    {
+     "title": "Vicarage (FISH Thesaurus of Monument Types, concept 68942)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68942.html",
+     "locator": "scope note",
+     "quote": "The residence of a vicar, parson or rector."
+    }
+   ]
+  },
+  {
+   "id": "manse",
+   "name": "Manse",
+   "family": "Clergy houses",
+   "domain": "Domestic",
+   "fish": "68935",
+   "period": {
+    "text": "By the 16th century 'manse' meant a dwelling (1500 is approximate); the house of a Presbyterian minister in Scotland and of nonconformist ministers elsewhere in the isles; the Church of Scotland still keeps working manses.",
+    "from": 1500,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Manse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manse",
+     "locator": "lead",
+     "quote": "Ultimately derived from the Latin mansus, \"dwelling\", from manere, \"to remain\", by the 16th century the term meant both a dwelling and, in ecclesiastical contexts, the amount of land needed to support a single family.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manse",
+     "locator": "lead",
+     "quote": "The intended result is that \"The Manse\" refers to a working building rather than simply applying as a name.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manse (FISH Thesaurus of Monument Types, concept 68935)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68935.html",
+     "locator": "scope note",
+     "quote": "A non-conformist minister's house."
+    }
+   ]
+  },
+  {
+   "id": "royal-palace",
+   "name": "Royal palace",
+   "family": "Palaces",
+   "domain": "Domestic",
+   "fish": "68950",
+   "period": {
+    "text": "Yeavering, the royal vill (villa regia) where Bishop Paulinus preached in 627, is the earliest the sources name; Edward the Confessor built a palace at Westminster about 1050 and Westminster Hall (1097) is its oldest surviving building; royal palaces remain official residences. No source gives the last one built.",
+    "from": 627,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Yeavering",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yeavering",
+     "locator": "lead",
+     "quote": "in the year 627 Bishop Paulinus of York accompanied the Northumbrian king Edwin and his queen Æthelburg to their royal vill (the Latin term is villa regia)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palace of Westminster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palace_of_Westminster",
+     "locator": "section \"Westminster Hall\"",
+     "quote": "Westminster Hall is a large medieval great hall and the oldest surviving palace building.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palace of Westminster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palace_of_Westminster",
+     "locator": "section \"Westminster Hall\"",
+     "quote": "It was erected in 1097 for William II (\"William Rufus\"), at which point it was the largest hall in Europe.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palace",
+     "locator": "section \"United Kingdom\"",
+     "quote": "in the United Kingdom, by tacit agreement, the word \"palace\" is reserved for official residences (present or former) of the royal family or bishops, regardless of whether located in town or country",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal palace (FISH Thesaurus of Monument Types, concept 68950)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68950.html",
+     "locator": "scope note",
+     "quote": "A large, luxuriously appointed building used as an official residence by a member of royalty."
+    }
+   ]
+  },
+  {
+   "id": "bishops-palace",
+   "name": "Bishop's palace",
+   "family": "Palaces",
+   "domain": "Domestic",
+   "fish": "68932",
+   "period": {
+    "text": "The term came with the Norman Conquest, though the oldest has been dated to the seventh century (650 is approximate); built and used throughout the Middle Ages, their use declined after the Reformation (1540 stands for that), and a few are still in use.",
+    "from": 650,
+    "flourish": [
+     1066,
+     1540
+    ],
+    "ongoing": true
+   },
+   "plan": "an enclosure, sometimes moated, holding the bishop's lodgings with a great hall, a chapel, a gatehouse and service buildings",
+   "sources": [
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "lead",
+     "quote": "The term was not used in the British Isles until the church was restructured following the Norman Conquest of 1066 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "lead",
+     "quote": "However, the oldest has been dated to the seventh century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "lead",
+     "quote": "Although many were used throughout the medieval period, their use declined after the Reformation, and only a few are still in use in the twenty-first century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bishops palace (FISH Thesaurus of Monument Types, concept 68932)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68932.html",
+     "locator": "scope note",
+     "quote": "The official residence of a bishop."
+    },
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "lead",
+     "quote": "They were generally set within enclosures, sometimes moated, often including ancillary buildings, such as halls, chapels or gatehouses.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dower-house",
+   "name": "Dower house",
+   "family": "Manor and country houses",
+   "domain": "Domestic",
+   "fish": "71559",
+   "period": {
+    "text": "A house on the estate for the widow of the owner; the earliest the sources date is Buckingham House, a royal dower house for a time in the 18th century (1700 is approximate), and the royal family still keeps dower houses.",
+    "from": 1700,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Dower house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dower_house",
+     "locator": "section \"Examples\"",
+     "quote": "Well-known royal dower-houses in London have included Clarence House, Marlborough House, and (for a time during the 18th century) Buckingham Palace (then known as \"Buckingham House\").",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dower house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dower_house",
+     "locator": "section \"Examples\"",
+     "quote": "The British royal family maintains a dower house in London as well as one in the country.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dower house (FISH Thesaurus of Monument Types, concept 71559)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71559.html",
+     "locator": "scope note",
+     "quote": "A small house, usually on the estate of a country house, forming part of a widow's dower and intended as her residence."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "hall-house>medieval-town-house",
+   "from": "hall-house",
+   "to": "medieval-town-house",
+   "kind": "variant",
+   "confidence": "probable",
+   "claim": "Medieval town houses kept the open hall of the hall house, fitted to a burgage plot: at Southampton the hall stretches back from the street to save frontage, and in Crawley a hall house stands on a burgage plot facing the High Street. The sources describe single houses, not a general account of the town house growing out of the hall house.",
+   "sources": [
+    {
+     "title": "Medieval Merchant's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "section \"Architecture\"",
+     "quote": "The layout of the house follows a medieval right-angle, narrow plan design, in that the hall stretches away from the street to conserve frontage, and there is no internal courtyard built into the design."
+    },
+    {
+     "title": "Medieval Merchant's House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Medieval_Merchant's_House",
+     "locator": "section \"Architecture\"",
+     "quote": "Behind this is the central hall, originally designed with an open hearth in the middle, but now fitted with a 14th-century Flemish chimney, plastered so as to resemble brickwork."
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"Ancient Priors\"",
+     "quote": "The Ancient Priors is a medieval timber-framed hall house on the High Street in Crawley."
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"Ancient Priors\"",
+     "quote": "Burgage plots—medieval land divisions with houses or other buildings which were rented from the Lord of the manor—were particularly clearly defined on the east side of the High Street; the buildings within them usually faced the High Street, but plots were sometimes subdivided."
+    }
+   ]
+  },
+  {
+   "id": "medieval-town-house>tenement",
+   "from": "medieval-town-house",
+   "to": "tenement",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "Edinburgh's tenements grew up on the narrow strips of its medieval Old Town, held as burgage tenements: hemmed in by the town walls, houses were built upward, each flat a separate house. The sources give this for Edinburgh only.",
+   "sources": [
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"History\"",
+     "quote": "In medieval times, the Old Town in Edinburgh, Scotland, developed along its High Street on narrow strips of land (\"tenements\") feued under tenement law."
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"History\"",
+     "quote": "The restricted site and the constraints of the Edinburgh town walls led to multi-storey buildings with each apartment treated as a separate house, built on top of each other (such as Gladstone's Land of 1617)."
+    },
+    {
+     "title": "Gladstone's Land",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gladstone's_Land",
+     "locator": "section \"Early owners and tenants\"",
+     "quote": "The cramped conditions of the Old Town, and the physical size of the lot, meant that the house could only be extended in depth or in height."
+    },
+    {
+     "title": "Burgage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burgage",
+     "locator": "lead",
+     "quote": "The property (\"burgage tenement\") usually, and distinctly, consisted of a house on a long and narrow plot of land (Scots: toft), with a narrow street frontage."
+    }
+   ],
+   "region": "Scotland (Edinburgh)"
+  },
+  {
+   "id": "renaissance-continent>terraced-house",
+   "from": "renaissance-continent",
+   "to": "terraced-house",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The terrace came to London from Italy: Inigo Jones's Covent Garden of 1630, three terraces of houses around an Italianate arcaded square, was the first.",
+   "sources": [
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"Origin\"",
+     "quote": "Terraced houses were introduced to London from Italy in the 1630s."
+    },
+    {
+     "title": "Covent Garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Covent_Garden",
+     "locator": "lead",
+     "quote": "Jones designed the Italianate arcaded square along with the church of St Paul's."
+    },
+    {
+     "title": "Covent Garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Covent_Garden",
+     "locator": "section \"Bedford Estate (1552–1918)\"",
+     "quote": "In 1630 Francis Russell, 4th Earl of Bedford commissioned the architect Inigo Jones to design and build a church and three terraces of fine houses around a large square or piazza."
+    }
+   ]
+  },
+  {
+   "id": "terraced-house>townhouse",
+   "from": "terraced-house",
+   "to": "townhouse",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "From the 18th century most aristocratic town houses were terraced houses, often on garden squares; only the largest stood on their own.",
+   "sources": [
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "section \"Background\"",
+     "quote": "From the 18th century, most townhouses were terraced; it was one of the successes of Georgian architecture to persuade the rich to buy terraced houses, especially if they were in a garden square."
+    },
+    {
+     "title": "Townhouse (Great Britain)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Townhouse_(Great_Britain)",
+     "locator": "section \"Background\"",
+     "quote": "Only a small minority of them, generally the largest, were detached; even aristocrats whose country houses had grounds of hundreds or thousands of acres often lived in terraced houses in town."
+    }
+   ]
+  },
+  {
+   "id": "terraced-house>mews",
+   "from": "terraced-house",
+   "to": "mews",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Mews were the stables of the terrace: in the 18th and 19th centuries London's large terraced houses had their stables at the back, on a service street of their own.",
+   "sources": [
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"London\"",
+     "quote": "In the 18th and 19th centuries, London housing for wealthy people generally consisted of streets of large terraced houses with stables at the back, which opened onto a small service street."
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"London\"",
+     "quote": "Generally this was mirrored by another row of stables on the opposite side of the service street, backing onto another row of terraced houses facing outward into the next street."
+    }
+   ]
+  },
+  {
+   "id": "terraced-house>back-to-back-house",
+   "from": "terraced-house",
+   "to": "back-to-back-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The back-to-back is a form of terraced house: a double row sharing a back wall, the cheapest housing of the industrial towns.",
+   "sources": [
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "lead",
+     "quote": "Back-to-backs are a form of terraced houses in the United Kingdom, built from the late 18th century through to the early 20th century in various forms throughout the North of England and parts of the Midlands."
+    },
+    {
+     "title": "Back to back house (FISH Thesaurus of Monument Types, concept 71514)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71514.html",
+     "locator": "scope note",
+     "quote": "A house in a terrace consisting of a double row of houses sharing a common back wall, characteristic of industrial cities in the North of England."
+    }
+   ]
+  },
+  {
+   "id": "terraced-house>bylaw-terrace",
+   "from": "terraced-house",
+   "to": "bylaw-terrace",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The byelaw terrace is the terraced house built to the byelaws of the Public Health Act 1875: a British terraced house at the other end of the social scale from the aristocratic town house, after earlier acts (1848, 1858) had begun to regulate terraces.",
+   "sources": [
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "lead",
+     "quote": "It is a type of British terraced house at the opposite end of the social scale from the aristocratic townhouse but a marked improvement on the pre-regulation house built as cheap accommodation for the urban poor of the Industrial Revolution."
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"19th century\"",
+     "quote": "The various acts led to a uniform design of terraced houses that was replicated in streets throughout the country."
+    }
+   ]
+  },
+  {
+   "id": "back-to-back-house>bylaw-terrace",
+   "from": "back-to-back-house",
+   "to": "bylaw-terrace",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The Public Health Act 1875 let councils ban new back-to-backs (its section 57 required through houses), and byelaw terraces took their place; Leeds went on building back-to-backs until 1937.",
+   "sources": [
+    {
+     "title": "Back-to-back house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Back-to-back_house",
+     "locator": "lead",
+     "quote": "The passage of the Public Health Act 1875 (38 & 39 Vict. c. 55) permitted municipal corporations to ban new back-to-backs, replaced in the next phase of building by byelaw terraced houses."
+    },
+    {
+     "title": "Byelaw terraced house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Byelaw_terraced_house",
+     "locator": "section \"Public Health Act 1875\"",
+     "quote": "Section 57 determined that all houses must be through houses—no more back-to-back housing."
+    }
+   ]
+  },
+  {
+   "id": "tenement>terraced-house",
+   "from": "tenement",
+   "to": "terraced-house",
+   "kind": "convergence",
+   "confidence": "probable",
+   "claim": "The tenement and the terrace were two answers to the same need, dense housing for the growing industrial towns: in Scotland flats were built and preferred where English and Welsh towns built terraces. The sources give the contrast, not a shared origin.",
+   "sources": [
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"19th century\"",
+     "quote": "The only area in Britain to not have a particularly high concentration of terraced houses around this time is Scotland, this is due to flats generally being built and preferred over terraced houses in many Scottish towns and cities."
+    },
+    {
+     "title": "Tenement",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tenement",
+     "locator": "section \"Glasgow and Edinburgh\"",
+     "quote": "Glasgow tenements were built to provide high-density housing for the large number of people immigrating to the city in the 19th and early 20th century as a result of the Industrial Revolution, when the city's population boomed to more than 1 million people."
+    }
+   ]
+  },
+  {
+   "id": "bylaw-terrace>semi-detached-house",
+   "from": "bylaw-terrace",
+   "to": "semi-detached-house",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "After the First World War the semi-detached house replaced the terrace as the new house of the suburbs: the Addison Act of 1919 tipped the balance from short terraces to pairs of semis, and terraces came to be seen as obsolete.",
+   "sources": [
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Late 19th century and 20th century\"",
+     "quote": "This tipped the balance away from short terraces towards pairs of semi-detached houses."
+    },
+    {
+     "title": "Terraced houses in the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Terraced_houses_in_the_United_Kingdom",
+     "locator": "section \"20th century\"",
+     "quote": "Terraced houses began to be perceived as obsolete following World War I and the rise of the suburban semi-detached house."
+    }
+   ]
+  },
+  {
+   "id": "villa>semi-detached-house",
+   "from": "villa",
+   "to": "semi-detached-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The semi-detached house began in the late Georgian period as a suburban compromise between the terrace and the detached villa; Nash and Loudon built pairs of 'semi-detached villas' made to look like one villa.",
+   "sources": [
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Housing the middle classes\"",
+     "quote": "Semi-detached houses for the middle class began to be planned systematically in late 18th-century Georgian architecture, as a suburban compromise between the terraced houses close to the city centre, and the detached \"villas\" further out, where land was cheaper."
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Housing the middle classes\"",
+     "quote": "Similarly, the landscape gardener John Claudius Loudon built a pair of semi-detached villas fashioned to appear as a single house in Porchester Terrace in 1825."
+    },
+    {
+     "title": "Villa (FISH Thesaurus of Monument Types, concept 68653)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68653.html",
+     "locator": "scope note",
+     "quote": "A term for a type of house, with varying definitions according to period. Roman villas were high-status and usually associated with a rural estate, whereas Georgian and later period villas were often semi-detached, town houses."
+    }
+   ]
+  },
+  {
+   "id": "estate-cottage>semi-detached-house",
+   "from": "estate-cottage",
+   "to": "semi-detached-house",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Landowners built double cottages on their estates by the early 19th century because a pair cost less than two cottages, and the semi-detached house of the 19th-century model villages followed; the sources put the two in one history, without saying that one led to the other.",
+   "sources": [
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Housing the rural working classes\"",
+     "quote": "By the early 19th century, landowners were typically using a \"picturesque\" style, and building double cottages as a way to reduce cost."
+    },
+    {
+     "title": "Semi-detached",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Semi-detached",
+     "locator": "section \"Housing the rural working classes\"",
+     "quote": "In 1834, Edinburgh architect George Smith wrote \"this species of cottage can be built cheaper than two single ones, and, in general, these double cottages are found to be warmer and fully as comfortable as single ones\"."
+    },
+    {
+     "title": "Semi detached house (FISH Thesaurus of Monument Types, concept 71529)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71529.html",
+     "locator": "scope note",
+     "quote": "A house joined to another to form one building."
+    }
+   ]
+  },
+  {
+   "id": "cottage>estate-cottage",
+   "from": "cottage",
+   "to": "estate-cottage",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The estate cottage is a cottage for the workers of a country house estate; landowners rebuilt the cottages of the poor in new estate villages from the 18th century.",
+   "sources": [
+    {
+     "title": "Estate cottage (FISH Thesaurus of Monument Types, concept 71398)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71398.html",
+     "locator": "scope note",
+     "quote": "A cottage for workers on a country house estate."
+    },
+    {
+     "title": "Model village",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Model_village",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "As landowners sought to improve their estates for aesthetic reasons, new landscapes were created and the cottages of the poor were demolished and rebuilt out of sight of their country house vistas."
+    }
+   ]
+  },
+  {
+   "id": "cottage>weavers-cottage",
+   "from": "cottage",
+   "to": "weavers-cottage",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "From about the 18th century industry brought weavers' and miners' cottages.",
+   "sources": [
+    {
+     "title": "Cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage",
+     "locator": "section \"Industrial Revolution\"",
+     "quote": "In England from about the 18th century onwards, the development of industry led to the development of weavers' cottages and miners' cottages."
+    }
+   ]
+  },
+  {
+   "id": "renaissance-continent>palladian-villa",
+   "from": "renaissance-continent",
+   "to": "palladian-villa",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Palladio's villas are the work of a Renaissance architect in the Veneto, the best known of the Renaissance villas.",
+   "sources": [
+    {
+     "title": "Palladian villas of the Veneto",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palladian_villas_of_the_Veneto",
+     "locator": "lead",
+     "quote": "The Palladian villas of the Veneto are villas designed by Renaissance architect Andrea Palladio, all of whose buildings were erected in the Veneto, the mainland region of north-eastern Italy then under the political control of the Venetian Republic."
+    }
+   ]
+  },
+  {
+   "id": "roman-villa>palladian-villa",
+   "from": "roman-villa",
+   "to": "palladian-villa",
+   "kind": "revival",
+   "confidence": "probable",
+   "claim": "The Renaissance villa revived the Roman one: Peruzzi's first suburban villas were based on a Roman model, and Palladio was inspired by classical Roman architecture. The sources speak of the Roman villa in general, not of the villas of Roman Britain, which were provincial examples of it.",
+   "sources": [
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"Palladian style\"",
+     "quote": "The architect Baldassare Peruzzi had introduced the first Renaissance suburban villas, based on a Roman model and surrounded by gardens."
+    },
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"Palladian style\"",
+     "quote": "Palladio was inspired by classical Roman architecture, but he did not slavishly imitate it."
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"In Roman Britannia\"",
+     "quote": "Like their Italian counterparts, they were complete working agrarian societies of fields and vineyards, perhaps even tileworks or quarries, ranged round a high-status power centre with its baths and gardens."
+    }
+   ]
+  },
+  {
+   "id": "palladian-villa>villa",
+   "from": "palladian-villa",
+   "to": "villa",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The English villa began with Palladio's: Inigo Jones's Queen's House was modelled on his villas, and with the 18th-century revival of Palladio and Jones neo-Palladian villas spread along the Thames.",
+   "sources": [
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"England\"",
+     "quote": "His first major work in the style was the Queen's House at Greenwich (1616–1635), modelled after Palladio's villas."
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "Thanks to the revival of interest in Palladio and Inigo Jones, soon Neo-Palladian villas dotted the valley of the River Thames and English countryside."
+    }
+   ]
+  },
+  {
+   "id": "palladian-villa>country-house",
+   "from": "palladian-villa",
+   "to": "country-house",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "In England Palladio's villa style was adapted for country houses (Wilton House among them), and by the middle of the 18th century Palladianism had become almost the national style.",
+   "sources": [
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"England\"",
+     "quote": "Palladio's work was especially popular in England, where the villa style was adapted for country houses."
+    },
+    {
+     "title": "Andrea Palladio",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+     "locator": "section \"England\"",
+     "quote": "Wilton House is another adaptation of Palladio's villa plans."
+    },
+    {
+     "title": "Palladian architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palladian_architecture",
+     "locator": "lead",
+     "quote": "By the middle of the century Palladianism had become almost the national architectural style, epitomised by Kent's Horse Guards at the centre of the nation's capital."
+    }
+   ]
+  },
+  {
+   "id": "clergy-house>manse",
+   "from": "clergy-house",
+   "to": "manse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The manse is the clergy house of the Scottish Presbyterian minister, and of nonconformist ministers elsewhere in the isles.",
+   "sources": [
+    {
+     "title": "Manse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manse",
+     "locator": "lead",
+     "quote": "A manse () is a clergy house inhabited by, or formerly inhabited by, a minister, usually used in the context of Presbyterian, Methodist, Baptist and other Christian traditions."
+    },
+    {
+     "title": "Clergy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clergy_house",
+     "locator": "section \"Nomenclature\"",
+     "quote": "Manse (cognate with mansion) is a Scottish term that is used in Scottish Presbyterianism, and also in other parts of the British Isles by Non-conformist churches such as the Methodists and the United Reformed Church."
+    }
+   ]
+  },
+  {
+   "id": "royal-palace>bishops-palace",
+   "from": "royal-palace",
+   "to": "bishops-palace",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "The bishop's house took the secular word palatium in the central Middle Ages, and in Britain the term came in after the Norman Conquest; the sources give the borrowed name, not a borrowed plan.",
+   "sources": [
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "section \"Origins and terminology\"",
+     "quote": "Over time, the terminology shifted from episcopium to domus (house), and by the central Middle Ages, the term palatium-borrowed from secular contexts-was adopted, reflecting the increasing involvement of bishops in civic life."
+    },
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "lead",
+     "quote": "The term was not used in the British Isles until the church was restructured following the Norman Conquest of 1066 AD."
+    }
+   ]
+  },
+  {
+   "id": "manor-house>bishops-palace",
+   "from": "manor-house",
+   "to": "bishops-palace",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Besides the palaces by their cathedrals, bishops held more modest residences that were manor houses.",
+   "sources": [
+    {
+     "title": "Bishop's palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_palace",
+     "locator": "lead",
+     "quote": "See palaces were those which were in the vicinity of the bishops' cathedrals, others were more modest manor houses."
+    }
+   ]
+  },
+  {
+   "id": "country-house>dower-house",
+   "from": "country-house",
+   "to": "dower-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The dower house is a smaller house on a country house estate for the widow of the late owner, who moved there when the heir took over the principal house.",
+   "sources": [
+    {
+     "title": "Dower house (FISH Thesaurus of Monument Types, concept 71559)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71559.html",
+     "locator": "scope note",
+     "quote": "A small house, usually on the estate of a country house, forming part of a widow's dower and intended as her residence."
+    },
+    {
+     "title": "Dower house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dower_house",
+     "locator": "lead",
+     "quote": "The new heir then occupies the vacated principal house."
+    }
+   ]
+  }
+ ]
+}

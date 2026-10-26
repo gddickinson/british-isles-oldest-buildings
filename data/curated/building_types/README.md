@@ -181,4 +181,55 @@ earliest phase (priories and parish churches on early minster sites, Roman forts
 castles), coarse register periods (brochs dated "Iron Age" from 400 BC, 31) and wrong classes (hillforts classed
 as castles on Wikidata: Caerau, Twmbarlwm, Castell Dinas Brân). No reviewed example was right and kept, so
 `early_ok` is empty. Found on the way: Irish SMR tower houses in townlands named Rath... or ...cashel are dated
-600, the year an early medieval ringfort or cashel would get (cause not yet checked), an emergent task.
+600, the year an early medieval ringfort or cashel would get (fixed: the type estimate read "Rath" in the townland).
+
+## More types: prehistoric and Roman, houses, estate, settlement, general types (BT1d, 2026-10-26)
+
+Five research agents in parallel, one new file each, every file reviewed here; 87 types, 126 links, 680 quotes (all
+found; 2,123 in all). George's decision: structures people built and used join the tree (tombs, ceremonial
+monuments, hillforts, Roman forts, villas, temples, town walls); single standing stones, rock art, carved stones and
+finds stay in the archaeology groups.
+- `lineage_prehistoric.json` (24 types, 30 links): chambered tomb with long barrow, passage, portal, court (court
+  cairn and Clyde tomb are one type) and wedge tombs; round barrow (bowl, bell, disc as one), round cairn; cursus,
+  henge, stone circle; hillfort, promontory fort, dun, ringfort, cashel, crannog, souterrain, fogou; Roman fort,
+  Saxon Shore fort, Roman villa, Romano-Celtic temple, Roman town wall. Disputed: henge and stone circle (a regional
+  form of henge, or distinct). Probable: hillfort → castle and Romano-Celtic temple → church (sites reused, not the
+  design), Roman villa → country house (revival through Palladio, not from Roman Britain).
+- `lineage_houses.json` (17, 22): medieval town house, terraced house, by-law terrace, back-to-back, tenement,
+  aristocratic townhouse, mews, cottage, estate cottage, Palladian villa (abroad), villa, semi-detached house,
+  clergy house, manse, royal and bishop's palaces, dower house. FISH lacks the Scottish tenement and the cottage.
+- `lineage_estate.json` (19, 16): gatehouse with castle, monastic and Tudor gatehouses and the gatehouse keep; gate
+  lodge, stable, coach house, orangery (and the Continental orangery), glasshouse, conservatory, palm house,
+  landscape park, folly, ice house (Italian ice stores abroad), mausoleum (classical mausolea abroad).
+- `lineage_settlement.json` (19, 21): chapel, nonconformist and Methodist chapels, friary and Augustinian friary,
+  town wall and gate, Pharos of Alexandria (abroad), Roman lighthouse, lighthouse, offshore lighthouse, warehouse,
+  dock warehouse, factory, distillery, grain distillery, cabinet of curiosities, museum, municipal museum. Changed
+  on review: municipal museum → public library is influence (probable), not convergence.
+- `lineage_general.json` (8, 37): windmill, mill, school, hospital, prison, theatre, bridge, pier: the parents of
+  the specific types (variant links, documented where FISH files the form under the general concept), for
+  catalogue classes that name only the family. Hospital and theatre share their FISH concept with the medieval
+  hospital and the Georgian playhouse; `type_map` gives the concept to the period-limited type when the year fits.
+
+Weak, stated in each period's text: ends that are a reign, a law or the latest example named (palm house 1901,
+gate lodge and coach house "early 20th century", Roman lighthouse 410); "ongoing" palaces are still used, not
+still built; the mausoleum dates from Castle Howard (1729, "first free-standing" since Rome), though earlier
+church-attached mausolea are in the catalogue (De Grey 1614). Left out: walled garden, summerhouse, garden temple,
+lighthouse keeper's house, council house, a general house type, tower (Wikidata's class too mixed), fort.
+
+**Mapping (BT2).** `type_map` now lets a general type give way to its forms (variant links), lets text and name
+rules refine a general type or a use, ranks uses (`secondary`: museum, school, hospital, theatre, prison) after the
+building's own type (Balmoral a country house, Arnol a blackhouse), and maps a shared FISH concept to several types.
+19 class aliases (terrace house, thatched cottage, castrum, court cairn, Clyde tomb, the hillfort forms, school,
+hospital, theatre, museum and mill buildings...), `roman-villa` in `within_period` (FISH Villa covers Georgian
+villas), 12 text rules (castle and monastic gatehouses, gate lodges, Methodist chapels, palm houses, fogous, Saxon
+Shore forts, rock lighthouses, Roman town walls, back-to-backs, merchants' houses, dock warehouses; gatehouse and
+lighthouse rules on the name only, reviewed match by match). Result: 15,713 of 22,508 records (69.8%, was 48.0%)
+and 58,753 places (was 28,528) typed; 247 of 285 isles types with examples, 220 with an earliest surviving example.
+357 records changed primary type at first: general types beating specific ones (grammar school → school, 90) were
+regressions and are fixed; 192 changes remain, mostly right (26 hillforts classed as castles on Wikidata, 23
+friaries, promontory forts) or Wikidata's own errors (Dryslwyn Castle classed a contour fort; the Royal Academy of
+Music a "conservatory"). Too early: 813 (was 504), reviewed by type: the site's earlier phase (Neolithic
+enclosures under hillforts, long barrows beside round barrows), coarse register periods (Scottish duns "Prehistoric",
+2000 BC), museums in old buildings; none kept. Still with no example (38): the earlier 29 less those now found, and
+Tudor gatehouse, gatehouse keep, by-law terrace, semi-detached house, grain distillery, municipal museum, cabinet of
+curiosities, Roman lighthouse: narrow types Wikidata does not class.

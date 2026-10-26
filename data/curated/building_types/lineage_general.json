@@ -1,0 +1,1082 @@
+{
+ "about": "Building types (roadmap BT1d): general types for catalogue classes that name only a family (windmill, mill, school, hospital, prison, theatre, bridge, pier), each with variant links to the specific types of its family that FISH files under it. Same fields as lineage.json.",
+ "researched": "2026-10-26",
+ "types": [
+  {
+   "id": "windmill",
+   "name": "Windmill",
+   "family": "Windmills",
+   "domain": "Industrial",
+   "fish": "69333",
+   "period": {
+    "text": "Weedley, Yorkshire, 1185, the earliest certain reference in northern Europe; windmills were built in large numbers until late in the 19th century (c. 1900), then steam-driven milling took over",
+    "from": 1185,
+    "flourish": [
+     1700,
+     1899
+    ],
+    "to": 1900
+   },
+   "note": "General type for a windmill whose form (post, tower or smock mill) is not known.",
+   "sources": [
+    {
+     "title": "Windmill (FISH Thesaurus of Monument Types, concept 69333)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69333.html",
+     "locator": "scope note",
+     "quote": "A tower-like structure of wood or brick with a wooden cap and sails which are driven around by the wind producing power to work the internal machinery. Use with product type where known."
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Vertical windmills\"",
+     "quote": "The earliest certain reference to a windmill in Northern Europe (assumed to have been of the vertical type) dates from 1185, in the former village of Weedley in Yorkshire",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Post mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Post_mill",
+     "locator": "lead",
+     "quote": "Their design and usage peaked in the 18th and 19th centuries and then declined after the introduction of high-speed steam-driven milling machinery.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Spread and decline\"",
+     "quote": "although windmills continued to be built in large numbers until late in the nineteenth century",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mill",
+   "name": "Mill",
+   "family": "Mills",
+   "domain": "Industrial",
+   "fish": "69303",
+   "period": {
+    "text": "a factory processing raw materials, by any power: the earliest in the isles are Irish water-powered mills, a 6th-century tide mill at Killoteran, Waterford, and watermills well established in Ireland by the early 7th century; still built (no source here names a recent one)",
+    "from": 500,
+    "ongoing": true
+   },
+   "note": "General type for a mill whose product or power is not known. FISH puts tide, textile and corn mills under MILL, but not WATERMILL (a water power site) or WINDMILL (a wind power site).",
+   "sources": [
+    {
+     "title": "Mill (FISH Thesaurus of Monument Types, concept 69303)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69303.html",
+     "locator": "scope note",
+     "quote": "A factory used for processing raw materials. Use more specific mill type where known. See also TEXTILE MILL, for more narrow terms."
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "section \"Early history\"",
+     "quote": "A 6th-century vertical-wheeled tide mill was located at Killoteran near Waterford.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Middle Ages\"",
+     "quote": "By the early 7th century, watermills were also well established in Ireland.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "school",
+   "name": "School",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "68700",
+   "period": {
+    "text": "the first cathedral schools, 597 and 604 (the King's School, Canterbury, 597); still built (a new grammar school annexe opened at Sevenoaks in 2017)",
+    "from": 597,
+    "ongoing": true
+   },
+   "note": "General type for a school whose kind is not known.",
+   "sources": [
+    {
+     "title": "School (FISH Thesaurus of Monument Types, concept 68700)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68700.html",
+     "locator": "scope note",
+     "quote": "An establishment in which people, usually children, are taught."
+    },
+    {
+     "title": "History of education in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_England",
+     "locator": "lead",
+     "quote": "The history of education in England is documented from Saxon settlement of England, and the setting up of the first cathedral schools in 597 and 604.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Grammar school",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grammar_school",
+     "locator": "section \"Medieval grammar schools\"",
+     "quote": "Although the term scolae grammaticales was not widely used until the 14th century, the earliest such schools appeared from the sixth century, e.g. the King's School, Canterbury (founded 597), the King's School, Rochester (604) and St Peter's School, York (627)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weald of Kent Grammar School",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weald_of_Kent_Grammar_School",
+     "locator": "section \"Sevenoaks annexe\"",
+     "quote": "The annexe opened in September 2017.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hospital",
+   "name": "Hospital",
+   "family": "Hospitals",
+   "domain": "Health and welfare",
+   "fish": "68716",
+   "period": {
+    "text": "some of the earliest recorded in England date from before the Norman Conquest; Harbledown, founded by Lanfranc in 1085, is the first dated here; still built (the new Royal Liverpool University Hospital opened in 2022)",
+    "from": 1085,
+    "ongoing": true
+   },
+   "note": "General type for a hospital whose kind or date is not known. Shares its FISH concept with medieval-hospital (lineage_health.json), which FISH does not separate from HOSPITAL.",
+   "sources": [
+    {
+     "title": "Hospital (FISH Thesaurus of Monument Types, concept 68716)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68716.html",
+     "locator": "scope note",
+     "quote": "An establishment providing medical or surgical treatment for the ill or wounded. Use narrower term where possible."
+    },
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Origins and development\"",
+     "quote": "In England, some of the earliest recorded hospitals date from before the Norman Conquest.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Harbledown",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harbledown",
+     "locator": "section \"History and churches\"",
+     "quote": "The leper's hospital was founded in 1085 by Archbishop Lanfranc; \"the hospital and well can still be seen\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Liverpool University Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Liverpool_University_Hospital",
+     "locator": "lead",
+     "quote": "A major redevelopment of the hospital began in 2013 and was scheduled for completion in 2017, but construction problems and the 2018 collapse of main contractor Carillion meant it did not open until late 2022.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prison",
+   "name": "Prison",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "68735",
+   "period": {
+    "text": "the Assize of Clarendon (1166) required prisons, and Newgate (1188) was the first built to meet it; still built (Five Wells, Wellingborough, took its first inmates in 2022)",
+    "from": 1188,
+    "ongoing": true
+   },
+   "note": "General type for a prison whose kind is not known.",
+   "sources": [
+    {
+     "title": "Prison (FISH Thesaurus of Monument Types, concept 68735)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68735.html",
+     "locator": "scope note",
+     "quote": "An establishment where offenders are confined. Use more specific type where known."
+    },
+    {
+     "title": "Newgate Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newgate_Prison",
+     "locator": "section \"History\"",
+     "quote": "In 1188, Newgate was the first institution established to meet that purpose.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "HMP Five Wells",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HMP_Five_Wells",
+     "locator": "section \"Operation\"",
+     "quote": "The first inmates arrived at the prison in early 2022.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "theatre",
+   "name": "Theatre",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": "69957",
+   "period": {
+    "text": "Roman theatres, such as the theatre with a stage at Verulamium (St Albans), built about AD 140; after them the first permanent English theatre was the Red Lion, 1567; still built (the Bridge Theatre, London, opened 2017)",
+    "from": 140,
+    "ongoing": true
+   },
+   "note": "General type for a theatre whose period or form is not known. Shares its FISH concept with georgian-playhouse (lineage_recreation.json).",
+   "sources": [
+    {
+     "title": "Theatre (FISH Thesaurus of Monument Types, concept 69957)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69957.html",
+     "locator": "scope note",
+     "quote": "A building used primarily for the performing of plays."
+    },
+    {
+     "title": "Roman Theatre, St Albans",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Theatre,_St_Albans",
+     "locator": "lead",
+     "quote": "The theatre was built in about 140AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Establishment of playhouses\"",
+     "quote": "The first permanent English theatre, the Red Lion, opened in 1567 but it was a short-lived failure.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bridge Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bridge_Theatre",
+     "locator": "lead",
+     "quote": "The Bridge Theatre is a commercial theatre near Tower Bridge in London that opened in October 2017.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bridge",
+   "name": "Bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70214",
+   "period": {
+    "text": "the first London Bridge, a timber bridge built by the Roman founders of London around AD 50; still built (the Queensferry Crossing opened in 2017)",
+    "from": 50,
+    "ongoing": true
+   },
+   "note": "General type for a bridge whose form is not known (road, foot and railway bridges are named by use, not form).",
+   "sources": [
+    {
+     "title": "Bridge (FISH Thesaurus of Monument Types, concept 70214)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70214.html",
+     "locator": "scope note",
+     "quote": "A structure of wood, stone, iron, brick or concrete, etc, with one or more intervals under it to span a river or other space. Use specific type where known."
+    },
+    {
+     "title": "London Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Bridge",
+     "locator": "lead",
+     "quote": "The medieval bridge was preceded by a succession of timber bridges, the first of which was built by the Roman founders of London (Londinium) around AD 50.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Queensferry Crossing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queensferry_Crossing",
+     "locator": "section \"Construction\"",
+     "quote": "The bridge opened on 30 August 2017 and was formally opened by Queen Elizabeth II on 4 September 2017.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pier",
+   "name": "Pier",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "69463",
+   "period": {
+    "text": "Ryde Pier, 1814, the first recorded in England; still built (Blackfriars Pier on the Thames, moved to a new site and opened 2016)",
+    "from": 1814,
+    "ongoing": true
+   },
+   "note": "General type for a pier whose use is not known. FISH's PIER is a promenade and landing stage; harbour piers and quays classed \"pier\" on Wikidata are older.",
+   "sources": [
+    {
+     "title": "Pier (FISH Thesaurus of Monument Types, concept 69463)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69463.html",
+     "locator": "scope note",
+     "quote": "A structure of iron or wood, open below, running out into the sea and used as a promenade and landing stage."
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"England and Wales\"",
+     "quote": "The first recorded pier in England was Ryde Pier, opened in 1814 on the Isle of Wight, as a landing stage to allow ferries to and from the mainland to berth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackfriars Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackfriars_Pier",
+     "locator": "section \"History\"",
+     "quote": "In order to allow for works on the Thames Tideway Tunnel, the pier was moved to a new location 250 m (820 ft) downstream and opened in October 2016.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "windmill>post-mill",
+   "from": "windmill",
+   "to": "post-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The post mill is a windmill whose body turns about an upright post.",
+   "sources": [
+    {
+     "title": "Post mill (FISH Thesaurus of Monument Types, concept 69334)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69334.html",
+     "locator": "scope note",
+     "quote": "A type of windmill, mainly timber-framed, whose body, containing machinery and carrying the sail, rotates about an upright post."
+    }
+   ]
+  },
+  {
+   "id": "windmill>tower-mill",
+   "from": "windmill",
+   "to": "tower-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The tower mill is a windmill with a fixed tower and a turning cap.",
+   "sources": [
+    {
+     "title": "Tower mill (FISH Thesaurus of Monument Types, concept 69336)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69336.html",
+     "locator": "scope note",
+     "quote": "A windmill with a rotating cap containing the windshaft, and a stationary body in the form of a tower."
+    }
+   ]
+  },
+  {
+   "id": "windmill>smock-mill",
+   "from": "windmill",
+   "to": "smock-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The smock mill is a windmill with a fixed timber body and a turning cap.",
+   "sources": [
+    {
+     "title": "Smock mill (FISH Thesaurus of Monument Types, concept 69335)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69335.html",
+     "locator": "scope note",
+     "quote": "A windmill with a stationary timber body which contains the grinding machinery, and which supports a rotating cap in which the sails rotate."
+    }
+   ]
+  },
+  {
+   "id": "mill>tide-mill",
+   "from": "mill",
+   "to": "tide-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The tide mill is a mill (FISH places it under MILL as well as water power sites).",
+   "sources": [
+    {
+     "title": "Tide mill (FISH Thesaurus of Monument Types, concept 69332)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69332.html",
+     "locator": "scope note",
+     "quote": "A type of WATERMILL, powered by retaining seawater at high tide and then releasing it at low tide via the water wheel."
+    }
+   ]
+  },
+  {
+   "id": "mill>fulling-mill",
+   "from": "mill",
+   "to": "fulling-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The fulling mill is a mill for beating and cleaning cloth (FISH: a textile mill, under MILL).",
+   "sources": [
+    {
+     "title": "Fulling mill (FISH Thesaurus of Monument Types, concept 69321)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69321.html",
+     "locator": "scope note",
+     "quote": "A mill for beating and cleaning cloth, using soap or fullers earth."
+    }
+   ]
+  },
+  {
+   "id": "mill>silk-mill",
+   "from": "mill",
+   "to": "silk-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The silk mill is a mill for processing silk (FISH: a textile mill, under MILL).",
+   "sources": [
+    {
+     "title": "Silk mill (FISH Thesaurus of Monument Types, concept 69325)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69325.html",
+     "locator": "scope note",
+     "quote": "A mill used for the mechanized processing of silk."
+    }
+   ]
+  },
+  {
+   "id": "mill>cotton-mill",
+   "from": "mill",
+   "to": "cotton-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The cotton mill is a cotton spinning (and sometimes weaving) mill (FISH: a textile mill, under MILL).",
+   "sources": [
+    {
+     "title": "Cotton mill (FISH Thesaurus of Monument Types, concept 69319)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69319.html",
+     "locator": "scope note",
+     "quote": "Usually a cotton spinning factory, although some mills have weaving sheds attached, in which case the end product is completed cloth, not yarn only."
+    }
+   ]
+  },
+  {
+   "id": "school>grammar-school",
+   "from": "school",
+   "to": "grammar-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The grammar school is a school, founded in or before the 16th century to teach Latin.",
+   "sources": [
+    {
+     "title": "Grammar school (FISH Thesaurus of Monument Types, concept 68701)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68701.html",
+     "locator": "scope note",
+     "quote": "A school founded in or before the 16th century, for teaching Latin, later becoming a secondary school teaching languages, history, science, etc."
+    }
+   ]
+  },
+  {
+   "id": "school>song-school",
+   "from": "school",
+   "to": "song-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The song (choir) school is a school attached to a cathedral or college to educate its choristers.",
+   "sources": [
+    {
+     "title": "Choir school (FISH Thesaurus of Monument Types, concept 71688)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71688.html",
+     "locator": "scope note",
+     "quote": "A school associated with a cathedral or college originally intended to provide a general education for their choristers."
+    }
+   ]
+  },
+  {
+   "id": "school>public-school",
+   "from": "school",
+   "to": "public-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The public school is an endowed school.",
+   "sources": [
+    {
+     "title": "Public school (FISH Thesaurus of Monument Types, concept 71788)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71788.html",
+     "locator": "scope note",
+     "quote": "An endowed school providing a liberal education for such as can afford it."
+    }
+   ]
+  },
+  {
+   "id": "school>national-school",
+   "from": "school",
+   "to": "national-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The national school is a school of the National Society, founded in 1811.",
+   "sources": [
+    {
+     "title": "National school (FISH Thesaurus of Monument Types, concept 92728)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92728.html",
+     "locator": "scope note",
+     "quote": "A school established by the National Society which was founded in 1811 to promote the education of the poor."
+    }
+   ]
+  },
+  {
+   "id": "school>british-school",
+   "from": "school",
+   "to": "british-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The British school is a school of the British and Foreign School Society.",
+   "sources": [
+    {
+     "title": "British and Foreign Society school (FISH Thesaurus of Monument Types, concept 91292)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91292.html",
+     "locator": "scope note",
+     "quote": "A school founded by the British and Foreign Society to provide non-denominational education. Usually built and supported by voluntary contributions."
+    }
+   ]
+  },
+  {
+   "id": "school>ragged-school",
+   "from": "school",
+   "to": "ragged-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The ragged school is a free school for poor children.",
+   "sources": [
+    {
+     "title": "Ragged school (FISH Thesaurus of Monument Types, concept 93076)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/93076.html",
+     "locator": "scope note",
+     "quote": "A free school for poor children."
+    }
+   ]
+  },
+  {
+   "id": "school>board-school",
+   "from": "school",
+   "to": "board-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The board school is a 19th-century school run by a school board.",
+   "sources": [
+    {
+     "title": "Board school (FISH Thesaurus of Monument Types, concept 71626)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71626.html",
+     "locator": "scope note",
+     "quote": "19th century school administered by a school board."
+    }
+   ]
+  },
+  {
+   "id": "school>scottish-parish-school",
+   "from": "school",
+   "to": "scottish-parish-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The parish school is a school serving or supported by a parish.",
+   "sources": [
+    {
+     "title": "Parish school (FISH Thesaurus of Monument Types, concept 92856)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92856.html",
+     "locator": "scope note",
+     "quote": "A school serving or supported by a parish. Usually teaching religious as well as conventional education."
+    }
+   ]
+  },
+  {
+   "id": "hospital>medieval-hospital",
+   "from": "hospital",
+   "to": "medieval-hospital",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The medieval hospital is the hospital of the Middle Ages, a place of shelter and basic care rather than medical treatment alone.",
+   "sources": [
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Origins and development\"",
+     "quote": "In the medieval period, hospitals were places of hospitality, providing shelter and basic care rather than medical treatment alone."
+    }
+   ]
+  },
+  {
+   "id": "hospital>leper-hospital",
+   "from": "hospital",
+   "to": "leper-hospital",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The leper hospital is a medieval hospital for lepers.",
+   "sources": [
+    {
+     "title": "Leper hospital (FISH Thesaurus of Monument Types, concept 68717)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68717.html",
+     "locator": "scope note",
+     "quote": "A medieval hospital for lepers, usually consisting of a church and individual shelters for the lepers."
+    }
+   ]
+  },
+  {
+   "id": "hospital>voluntary-hospital",
+   "from": "hospital",
+   "to": "voluntary-hospital",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The voluntary hospital is a general hospital (FISH GENERAL HOSPITAL, under HOSPITAL).",
+   "sources": [
+    {
+     "title": "General hospital (FISH Thesaurus of Monument Types, concept 92112)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92112.html",
+     "locator": "scope note",
+     "quote": "A non-specialist hospital dealing in general medical and surgical treatment."
+    }
+   ]
+  },
+  {
+   "id": "hospital>cottage-hospital",
+   "from": "hospital",
+   "to": "cottage-hospital",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The cottage hospital is a small, usually rural, hospital.",
+   "sources": [
+    {
+     "title": "Cottage hospital (FISH Thesaurus of Monument Types, concept 91639)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91639.html",
+     "locator": "scope note",
+     "quote": "Usually a rural hospital with up to 25 beds. Can include small pre-Cranleigh institutions, eg: dispensaries with in-patients."
+    }
+   ]
+  },
+  {
+   "id": "hospital>royal-naval-hospital",
+   "from": "hospital",
+   "to": "royal-naval-hospital",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The royal naval hospital is a hospital for naval personnel and their families.",
+   "sources": [
+    {
+     "title": "Royal naval hospital (FISH Thesaurus of Monument Types, concept 97461)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/97461.html",
+     "locator": "scope note",
+     "quote": "A hospital where Royal Naval personnel and their families receive medical and surgical treatment."
+    }
+   ]
+  },
+  {
+   "id": "hospital>fever-hospital",
+   "from": "hospital",
+   "to": "fever-hospital",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The fever hospital is an isolation hospital for infectious diseases.",
+   "sources": [
+    {
+     "title": "Infectious diseases hospital (FISH Thesaurus of Monument Types, concept 92358)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92358.html",
+     "locator": "scope note",
+     "quote": "An isolation hospital for infectious diseases and leprosy, sometimes known as a Pest House; commonly situated on the edge of a town."
+    }
+   ]
+  },
+  {
+   "id": "hospital>sanatorium",
+   "from": "hospital",
+   "to": "sanatorium",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The sanatorium is a hospital for convalescents or consumptives.",
+   "sources": [
+    {
+     "title": "Sanatorium (FISH Thesaurus of Monument Types, concept 68721)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68721.html",
+     "locator": "scope note",
+     "quote": "A hospital for convalescents or consumptives."
+    }
+   ]
+  },
+  {
+   "id": "hospital>county-asylum",
+   "from": "hospital",
+   "to": "county-asylum",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The county asylum is a psychiatric hospital (FISH PSYCHIATRIC HOSPITAL, under HOSPITAL).",
+   "sources": [
+    {
+     "title": "Psychiatric hospital (FISH Thesaurus of Monument Types, concept 93030)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/93030.html",
+     "locator": "scope note",
+     "quote": "Nowadays a hospital where patients suffering from psychiatric disorders receive medical care and treatment. Traditionally they were often places where psychiatric patients were kept confined away from society receiving minimal medical care or attention."
+    }
+   ]
+  },
+  {
+   "id": "prison>gaol",
+   "from": "prison",
+   "to": "gaol",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The gaol is a prison for felons and debtors.",
+   "sources": [
+    {
+     "title": "Gaol (FISH Thesaurus of Monument Types, concept 70905)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70905.html",
+     "locator": "scope note",
+     "quote": "An institution for the imprisonment of felons and debtors."
+    }
+   ]
+  },
+  {
+   "id": "prison>house-of-correction",
+   "from": "prison",
+   "to": "house-of-correction",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The house of correction is a prison for vagrants and misdemeanants.",
+   "sources": [
+    {
+     "title": "House of correction (FISH Thesaurus of Monument Types, concept 70981)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70981.html",
+     "locator": "scope note",
+     "quote": "An institution for the imprisonment of vagrants and misdemeanants."
+    }
+   ]
+  },
+  {
+   "id": "prison>prison-hulk",
+   "from": "prison",
+   "to": "prison-hulk",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The prison hulk is a dismantled ship used as a prison.",
+   "sources": [
+    {
+     "title": "Prison hulk (FISH Thesaurus of Monument Types, concept 76302)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/76302.html",
+     "locator": "scope note",
+     "quote": "The hull of a dismantled ship used as a prison."
+    }
+   ]
+  },
+  {
+   "id": "prison>penitentiary",
+   "from": "prison",
+   "to": "penitentiary",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The penitentiary is a prison whose regime sought to reform by silent isolation and labour.",
+   "sources": [
+    {
+     "title": "Penitentiary (FISH Thesaurus of Monument Types, concept 92887)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92887.html",
+     "locator": "scope note",
+     "quote": "An institution for convicted prisoners held under a regime which strove to reform by means of silent isolation and labour."
+    }
+   ]
+  },
+  {
+   "id": "prison>lock-up",
+   "from": "prison",
+   "to": "lock-up",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The lock-up is a prison for temporary detention.",
+   "sources": [
+    {
+     "title": "Lock up (FISH Thesaurus of Monument Types, concept 71054)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71054.html",
+     "locator": "scope note",
+     "quote": "A prison used for temporary detention. The typical village lock-up was a one-storeyed, one-celled building, sometimes of round or polygonal plan."
+    }
+   ]
+  },
+  {
+   "id": "theatre>elizabethan-playhouse",
+   "from": "theatre",
+   "to": "elizabethan-playhouse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Elizabethan open-air playhouse is a theatre with a central open yard (FISH OUTDOOR PLAYHOUSE, under THEATRE).",
+   "sources": [
+    {
+     "title": "Outdoor playhouse (FISH Thesaurus of Monument Types, concept 147526)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/147526.html",
+     "locator": "scope note",
+     "quote": "A purpose built theatre with a central open yard, dating to the Elizabethan period. Famous examples include The Globe and the Swan."
+    }
+   ]
+  },
+  {
+   "id": "theatre>inn-yard-theatre",
+   "from": "theatre",
+   "to": "inn-yard-theatre",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The inn-yard theatre is an inn used for a time for plays (FISH INN THEATRE, under THEATRE).",
+   "sources": [
+    {
+     "title": "Inn theatre (FISH Thesaurus of Monument Types, concept 147527)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/147527.html",
+     "locator": "scope note",
+     "quote": "An inn temporarily used for the performance of plays and other public entertainment."
+    }
+   ]
+  },
+  {
+   "id": "theatre>georgian-playhouse",
+   "from": "theatre",
+   "to": "georgian-playhouse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Georgian playhouse is a theatre of the 18th and early 19th centuries.",
+   "sources": [
+    {
+     "title": "Georgian Theatre Royal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Georgian_Theatre_Royal",
+     "locator": "lead",
+     "quote": "It is among the oldest of Britain's extant theatres."
+    }
+   ]
+  },
+  {
+   "id": "bridge>clapper-bridge",
+   "from": "bridge",
+   "to": "clapper-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The clapper bridge is a simple stone slab bridge.",
+   "sources": [
+    {
+     "title": "Clapper bridge (FISH Thesaurus of Monument Types, concept 70216)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70216.html",
+     "locator": "scope note",
+     "quote": "A simple form of stone slab bridge, particularly associated with South West England."
+    }
+   ]
+  },
+  {
+   "id": "bridge>arch-bridge",
+   "from": "bridge",
+   "to": "arch-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The arch bridge is a bridge with a curved span supported at its ends (FISH ARCH BRIDGE, under BRIDGE).",
+   "sources": [
+    {
+     "title": "Arch bridge (FISH Thesaurus of Monument Types, concept 94190)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94190.html",
+     "locator": "scope note",
+     "quote": "A curved structural span which is supported at the sides or ends. May vary in shape from the horizontal flat arch through semicircular and semielliptical forms."
+    }
+   ]
+  },
+  {
+   "id": "bridge>packhorse-bridge",
+   "from": "bridge",
+   "to": "packhorse-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The packhorse bridge is a narrow, high-humped bridge for trains of packhorses.",
+   "sources": [
+    {
+     "title": "Packhorse bridge (FISH Thesaurus of Monument Types, concept 70220)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70220.html",
+     "locator": "scope note",
+     "quote": "A high-humped, narrow, cobbled bridge used by trains of packhorses, often located in upland areas where the bulk of goods were carried by horses."
+    }
+   ]
+  },
+  {
+   "id": "bridge>suspension-bridge",
+   "from": "bridge",
+   "to": "suspension-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The suspension bridge is a bridge whose deck hangs from cables, chains or bars.",
+   "sources": [
+    {
+     "title": "Suspension bridge (FISH Thesaurus of Monument Types, concept 70223)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70223.html",
+     "locator": "scope note",
+     "quote": "A bridge whose deck is hung from above by large cables, chains or pinned iron or steel bars hanging from towers."
+    }
+   ]
+  },
+  {
+   "id": "pier>landing-pier",
+   "from": "pier",
+   "to": "landing-pier",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The landing pier is a pier where passengers and goods pass to and from vessels.",
+   "sources": [
+    {
+     "title": "Landing pier (FISH Thesaurus of Monument Types, concept 87799)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/87799.html",
+     "locator": "scope note",
+     "quote": "A pier where passsengers can embark and disembark and goods can be transferred to and from vessels."
+    }
+   ]
+  },
+  {
+   "id": "pier>pleasure-pier",
+   "from": "pier",
+   "to": "pleasure-pier",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The pleasure pier is a seaside pier used as a promenade and amusement park (FISH relates PLEASURE PIER to PIER but files it under recreation).",
+   "sources": [
+    {
+     "title": "Pleasure pier (FISH Thesaurus of Monument Types, concept 92951)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92951.html",
+     "locator": "scope note",
+     "quote": "A seaside pier used as a promenade and amusement park."
+    }
+   ]
+  }
+ ]
+}

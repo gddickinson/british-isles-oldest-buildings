@@ -17,7 +17,11 @@ year is known (no Iron Age "Clinch Castle"). Of the types found, the most specif
 found type's FISH concept lies under its own (motte-and-bailey and castle → motte-and-bailey). The first type
 left is the record's primary type. A type whose FISH concept is wider than the type (`within_period`: the
 Georgian playhouse has THEATRE, the medieval hospital HOSPITAL) is found through FISH only for a record begun
-within the type's period of use; a type limited to nations (`nations`) only for records there.
+within the type's period of use; a type limited to nations (`nations`) only for records there. BT1d: a general
+type (windmill, school, theatre) gives way to its forms found with it (variant links: post mill, grammar school), and
+one sharing a FISH concept with a `within_period` type gives way to it when the year fits (theatre → Georgian
+playhouse); uses of a building (`secondary`: museum, school, hospital...) rank after its own type; text and name
+rules may also refine a general type or a use ("Hulme Grammar School" labelled School, a castle that is a museum).
 
 Places (not the kinds in `skip_kinds`: objects, plaques, finds, battles, wrecks...; places never repeat a
 catalogue building): their own type label as a class (Wikidata class, or register type such as "Castle - tower house": the whole label,
@@ -85,7 +89,7 @@ def problems(aliases, types):
 class Matcher:
     """Class labels → building types. `concepts` as fish_types.concepts(), `lookup` a label → concept id."""
 
-    def __init__(self, types, aliases, concepts=None, lookup=None):
+    def __init__(self, types, aliases, concepts=None, lookup=None, links=()):
         self.types = [t for t in types if not t.get("abroad")]
         self.concepts = concepts if concepts is not None else fish_types.concepts()
         self.lookup = lookup or fish_types.lookup
@@ -96,7 +100,10 @@ class Matcher:
             self.by_name.setdefault(norm(t["id"]), t["id"])
         self.aliases = {norm(k): v for k, v in aliases.get("classes", {}).items()}
         self.place_types = {norm(k): v for k, v in aliases.get("place_types", {}).items()}
-        self.by_fish = {t["fish"]: t["id"] for t in self.types if t.get("fish")}
+        self.by_fish = {}       # a general type may share its concept with a type limited to a period
+        for t in self.types:
+            if t.get("fish"):
+                self.by_fish.setdefault(t["fish"], []).append(t["id"])
         self.fish_of = {t["id"]: t.get("fish") for t in self.types}
         self.categories = aliases.get("categories", {})
         self.place_kinds = aliases.get("place_kinds", {})
@@ -105,6 +112,11 @@ class Matcher:
         self.texts = [dict(r, rx=re.compile(r["pattern"], re.I), refines=set(r.get("refines", [])))
                       for r in aliases.get("texts", [])]
         self.within = set(aliases.get("within_period", []))
+        self.secondary = set(aliases.get("secondary", []))
+        self.parents = {}           # variant links: a general type (windmill) → its forms (post mill)
+        for link in links:
+            if link.get("kind") == "variant":
+                self.parents.setdefault(link["to"], set()).add(link["from"])
         self.nations = aliases.get("nations", {})
         self.period = {t["id"]: (t["period"]["from"], t["period"].get("to", building_types.THIS_YEAR))
                        for t in self.types if t.get("period")}
@@ -114,7 +126,7 @@ class Matcher:
         """Type ids of the nearest concepts at or above `cid` that are types' (all those at the least distance)."""
         seen, front, step = {cid}, [cid], 0
         while front:
-            hits = [self.by_fish[c] for c in front if c in self.by_fish]
+            hits = [t for c in front for t in self.by_fish.get(c, [])]
             if hits:
                 return hits, step
             nxt = []
@@ -131,7 +143,9 @@ class Matcher:
         if label not in self._memo:
             key = fish_types.normalise(label)
             if key in self.by_name:
-                out = [(self.by_name[key], "type")]
+                t = self.by_name[key]       # "hospital": the medieval hospital too, if the year fits
+                out = [(x, "fish") for x in self.by_fish.get(self.fish_of.get(t), [])
+                       if x != t and x in self.within] + [(t, "type")]
             elif key in self.aliases:
                 out = [(self.aliases[key], "alias")]
             else:
@@ -140,6 +154,21 @@ class Matcher:
                 out = [(h, "fish" if step == 0 else "broader") for h in hits]
             self._memo[label] = out
         return self._memo[label]
+
+    def general_of(self, t):
+        """Every type `t` is a form of, through variant links (post mill → windmill)."""
+        out, todo = set(), [t]
+        while todo:
+            for p in self.parents.get(todo.pop(), ()):
+                if p not in out:
+                    out.add(p)
+                    todo.append(p)
+        return out
+
+    def refines(self, t, found):
+        """Type `t` (of a text or name rule) may stand for the found primary type: nothing found, a general
+        type of which `t` is a form, or a use (`secondary`: museum, school) of the building."""
+        return not found or found[0][0] in self.general_of(t) or found[0][0] in self.secondary
 
     def _under(self, a, b):
         """Type a's FISH concept lies under type b's (a is the more specific)."""
@@ -165,7 +194,12 @@ class Matcher:
             if t not in seen and self.allowed(t, via, year, nation):
                 seen.add(t)
                 out.append((t, via, label))
-        return [x for x in out if not any(self._under(y[0], x[0]) for y in out if y[0] != x[0])]
+        out = [x for x in out if not any(self._under(y[0], x[0]) for y in out if y[0] != x[0])]
+        dated = {self.fish_of.get(t) for t, _, _ in out if t in self.within} - {None}   # period-limited wins
+        out = [x for x in out if x[0] in self.within or self.fish_of.get(x[0]) not in dated]
+        general = {g for t, _, _ in out for g in self.general_of(t)}
+        out = [x for x in out if x[0] not in general]
+        return sorted(out, key=lambda x: x[0] in self.secondary)    # a museum in a country house: house first
 
     def by_name_rule(self, name, category=None, kind=None):
         head = (name or "").split(",")[0].strip()
@@ -174,16 +208,25 @@ class Matcher:
                 return [(r["type"], "name", r["pattern"])]
         return []
 
+    def name_refined(self, found, name, year=None, nation=None, category=None, kind=None):
+        """`found`, or a name rule's type put first when nothing was found or it refines the primary type
+        ("Hulme Grammar School" labelled School)."""
+        hit = self.specific(self.by_name_rule(name, category=category, kind=kind), year, nation)
+        if hit and (not found or (hit[0][0] != found[0][0] and self.refines(hit[0][0], found))):
+            return self.specific(hit + found, year, nation)
+        return found
+
     def by_text(self, found, text, year=None, nation=None, category=None, kind=None):
         """`found` with the first text rule that matches put first, when nothing was found or the primary type
         is one the rule refines (the refined types are dropped)."""
-        if not text or (found and not any(found[0][0] in r["refines"] for r in self.texts)):
+        if not text or (found and not any(found[0][0] in r["refines"] or self.refines(r["type"], found)
+                                          for r in self.texts)):
             return found
         for r in self.texts:
             if (kind is not None and kind not in r.get("kinds", [])) or \
                     (kind is None and r.get("categories") and category not in r["categories"]):
                 continue
-            if (not found or found[0][0] in r["refines"]) and r["rx"].search(text) \
+            if (found and found[0][0] in r["refines"] or self.refines(r["type"], found)) and r["rx"].search(text) \
                     and self.allowed(r["type"], "text", year, nation, r.get("slack", SLACK)):
                 return [(r["type"], "text", r["pattern"])] + [x for x in found if x[0] not in r["refines"]
                                                                 and x[0] != r["type"]]
@@ -200,8 +243,7 @@ class Matcher:
         found = self.specific([(t, via, label) for label in labels for t, via in self.for_class(label)],
                               year, nation)
         found = self.by_text(found, text, year, nation, category=category)
-        if not found:
-            found = self.specific(self.by_name_rule(name, category=category), year, nation)
+        found = self.name_refined(found, name, year, nation, category=category)
         if not found and category in self.categories:
             found = self.specific([(self.categories[category], "category", category)], year, nation)
         return found
@@ -233,8 +275,7 @@ class Matcher:
                     if found:
                         break
         found = self.by_text(self.specific(found, year, nation), text, year, nation, kind=kind)
-        if not found:
-            found = self.specific(self.by_name_rule(name, kind=kind), year, nation)
+        found = self.name_refined(found, name, year, nation, kind=kind)
         if not found and kind in self.place_kinds:
             found = self.specific([(self.place_kinds[kind], "kind", kind)], year, nation)
         return found
@@ -273,7 +314,7 @@ def run(log=print):
         raise ValueError("aliases.json: " + "; ".join(bad))
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
-    out = rows(conn, Matcher(data["types"], aliases))
+    out = rows(conn, Matcher(data["types"], aliases, links=data["links"]))
     write(conn, out)
     n_b = conn.execute("SELECT COUNT(*) FROM buildings").fetchone()[0]
     typed = {s: len({r[0] for r in out if r[1] == s}) for s in ("building", "place")}

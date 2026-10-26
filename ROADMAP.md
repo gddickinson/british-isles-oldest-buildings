@@ -5,8 +5,8 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
-- Building types: 224 types, 183 links, 1,443 quotes; 10,812 records and 28,528 places typed, 174 of 203 isles types
-  with examples, 152 with an earliest surviving example (BT2b).
+- Building types: 311 types, 309 links, 2,123 quotes; 15,713 records (69.8%) and 58,753 places typed, 247 of 285
+  isles types with examples, 220 with an earliest surviving example (BT1d).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
@@ -624,14 +624,21 @@ the descent of a type is disputed, both views are given and the link is drawn as
       split at ";" and ":" → 174 of 203 isles types with examples (was 123), 152 with an earliest surviving
       example. Fixed on the way: "Republic of Ireland" in the nation limits, lifeboat and power stations typed as
       railway stations. Details in `data/curated/building_types/README.md`.
-- [ ] BT1d More types for what BT2a could not type (emergent 2026-10-26): town houses (terrace house 1,006 records,
-      tenement, townhouse, mews, cottage, villa), chapels (161), gatehouses (185), stables and carriage houses,
-      lighthouses, friaries, palaces, and general parents (windmill, school, hospital, prison, theatre) for classes
-      that name only the family; prehistoric and Roman monuments (hillforts, barrows, stone circles, Roman villas)
-      as a decision first: in the tree, or left to the archaeology groups.
-- [ ] Irish SMR dates (emergent 2026-10-26, found in BT2b): tower houses and castles in townlands named Rath... or
-      ...cashel (Moycashel barony) are dated 600, as if they were ringforts or cashels; check `registers.ireland`'s
-      period-from-class and name reading, rebuild the places stage.
+- [x] BT1d (2026-10-26) More types for what BT2a could not type. George's decision: prehistoric and Roman structures
+      people built and used join the tree; single standing stones, rock art, carved stones and finds stay in the
+      archaeology groups. Five research agents, one new file each, reviewed here (`lineage_prehistoric.json`,
+      `lineage_houses.json`, `lineage_estate.json`, `lineage_settlement.json`, `lineage_general.json`): 87 types
+      (311 in all), 126 links (309), 680 quotes, 2,123 of 2,123 found. `type_map`: general types give way to their
+      forms (variant links), text and name rules refine general types and uses, uses of a building (`secondary`)
+      rank after its own type, a FISH concept may map to several types; 19 aliases, 12 reviewed text rules →
+      15,713 records (69.8%, was 48.0%) and 58,753 places typed; 247 of 285 isles types with examples. Details in
+      `data/curated/building_types/README.md`.
+- [x] Irish SMR dates (emergent 2026-10-26, found in BT2b; fixed 2026-10-26): tower houses, churches and wells in
+      townlands named Rath... or ...cashel were dated 600: `places_build.estimate_dates` read the type estimate from
+      the whole name, and SMR names are "class, townland". SMR places now use the class alone (other registers'
+      names still count: "Skye, Dun Liath"); friars' houses ("Religious house - Dominican friars") now get the
+      friary range. Applied to the database: 78 re-estimated (tower houses 1400, friaries 1224), 30 left undated;
+      too-early type examples 521 → 504.
 - [ ] BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,
       jetty, close studding, wattle and daub), brick (bonds, from the 13th c. revival to the Victorian kilns), roofs
       (thatch, stone slate, slate, tile, pantile; roof trusses from crown post to king post), glass, iron and steel,

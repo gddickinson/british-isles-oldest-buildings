@@ -2,7 +2,9 @@
 
 Curated input `data/curated/building_types/lineage*.json` (lineage.json: houses and defence; lineage_religious.json,
 lineage_agricultural.json, lineage_commercial.json, lineage_industrial.json, lineage_transport.json, lineage_civic.json,
-lineage_education.json, lineage_health.json, lineage_recreation.json: one or two domains each; read together, links may cross files):
+lineage_education.json, lineage_health.json, lineage_recreation.json: one or two domains each; BT1d: lineage_prehistoric.json,
+lineage_houses.json, lineage_estate.json, lineage_settlement.json, lineage_general.json (general types such as windmill,
+school, hospital, whose forms are variant links); read together, links may cross files):
     types: [{id, name, family, domain, fish (FISH concept id or null), abroad?,
              period {text, from (first known; BC negative), flourish? [from, to], to (last built) | ongoing: true},
              structure? (structural system), plan? (plan form), note?, sources?}]

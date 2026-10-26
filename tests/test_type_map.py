@@ -119,3 +119,41 @@ class TestCuratedAliases(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestGeneralTypes(unittest.TestCase):
+    """BT1d: general types (theatre, school), forms of them through variant links, uses of a building."""
+    TYPES = TYPES + [
+        {"id": "theatre", "name": "Theatre", "fish": "4", "period": {"from": 140, "ongoing": True}},
+        {"id": "school", "name": "School", "fish": None, "period": {"from": 597, "ongoing": True}},
+        {"id": "grammar-school", "name": "Grammar school", "fish": None, "period": {"from": 1100, "ongoing": True}},
+        {"id": "museum", "name": "Museum", "fish": None, "period": {"from": 1683, "ongoing": True}},
+    ]
+    LINKS = [{"from": "school", "to": "grammar-school", "kind": "variant"},
+             {"from": "theatre", "to": "georgian-playhouse", "kind": "variant"}]
+    ALIASES = dict(ALIASES, secondary=["museum", "school"],
+                   names=ALIASES["names"] + [{"pattern": r"\bGrammar School$", "type": "grammar-school",
+                                               "categories": ["School / college"], "kinds": ["pi_school"]}])
+
+    def matcher(self):
+        m = type_map.Matcher(self.TYPES, self.ALIASES, concepts=CONCEPTS, lookup=lambda x: LOOKUP.get(x.lower()),
+                             links=self.LINKS)
+        m._under = lambda a, b: False
+        return m
+
+    def test_shared_concept_goes_to_the_dated_type_when_the_year_fits(self):
+        m = self.matcher()
+        self.assertEqual(m.record("theatre", "Theatre Royal", "Other", 1790)[0][0], "georgian-playhouse")
+        self.assertEqual([t for t, _, _ in m.record("theatre", "Apollo", "Other", 1930)], ["theatre"])
+
+    def test_a_form_replaces_its_general_type(self):
+        m = self.matcher()
+        self.assertEqual([t for t, _, _ in m.record("school; grammar school", "X", "School / college", 1550)],
+                         ["grammar-school"])
+        found = m.place("pi_school", "School", "Hulme Grammar School", 1611)
+        self.assertEqual([t for t, _, _ in found], ["grammar-school"])
+
+    def test_uses_rank_after_the_building(self):
+        m = self.matcher()
+        self.assertEqual([t for t, _, _ in m.record("museum; castle", "Y Castle", "Museum", 1300)],
+                         ["castle", "museum"])

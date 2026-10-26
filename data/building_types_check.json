@@ -1077,6 +1077,267 @@
   ],
   "checked": "2026-10-26"
  },
+ "type:gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:castle-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:gatehouse-keep": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:monastic-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:tudor-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:gate-lodge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:stable": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:coach-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:continental-orangery": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:orangery": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:glasshouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:conservatory": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:palm-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:landscape-park": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:folly": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:ice-store-italy": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:ice-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:classical-mausoleum": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:mausoleum": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:windmill": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:mill": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:school": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:hospital": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:prison": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:theatre": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:pier": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
  "type:medieval-hospital": {
   "sources": [
    "quote-found",
@@ -1307,6 +1568,194 @@
   "sources": [
    "quote-found",
    "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:medieval-town-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:terraced-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:townhouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:mews": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:back-to-back-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:bylaw-terrace": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:tenement": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:cottage": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:estate-cottage": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:palladian-villa": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:villa": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:semi-detached-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:clergy-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:manse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:royal-palace": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:bishops-palace": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:dower-house": {
+  "sources": [
    "quote-found",
    "quote-found",
    "quote-found"
@@ -1549,6 +1998,243 @@
    "quote-found",
    "quote-found",
    "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:chambered-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:long-barrow": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:passage-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:portal-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:court-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:wedge-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:round-barrow": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:round-cairn": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:cursus": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:henge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:stone-circle": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:hillfort": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:promontory-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:dun": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:ringfort": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:cashel": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:crannog": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:souterrain": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:fogou": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:roman-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:saxon-shore-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:roman-villa": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:romano-celtic-temple": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:roman-town-wall": {
+  "sources": [
    "quote-found",
    "quote-found",
    "quote-found",
@@ -1988,6 +2674,201 @@
   "sources": [
    "quote-found",
    "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:chapel": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:nonconformist-chapel": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:methodist-chapel": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:friary": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:augustinian-friary": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:town-wall": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:town-gate": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:pharos-of-alexandria": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:roman-lighthouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:lighthouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:offshore-lighthouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:warehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:dock-warehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:factory": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:distillery": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:grain-distillery": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:cabinet-of-curiosities": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:museum": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:municipal-museum": {
+  "sources": [
    "quote-found",
    "quote-found",
    "quote-found"
@@ -2843,6 +3724,346 @@
   ],
   "checked": "2026-10-26"
  },
+ "link:gatehouse>castle-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:gatehouse>monastic-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:castle-gatehouse>gatehouse-keep": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:castle-gatehouse>monastic-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:castle-gatehouse>tudor-gatehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:gatehouse>gate-lodge": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:landscape-park>gate-lodge": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:landscape-park>folly": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:stable>mews": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:stable>coach-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:continental-orangery>orangery": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:glasshouse>orangery": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:orangery>conservatory": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:conservatory>palm-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:ice-store-italy>ice-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:classical-mausoleum>mausoleum": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:windmill>post-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:windmill>tower-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:windmill>smock-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:mill>tide-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:mill>fulling-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:mill>silk-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:mill>cotton-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>grammar-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>song-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>public-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>national-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>british-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>ragged-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>board-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:school>scottish-parish-school": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>medieval-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>leper-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>voluntary-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>cottage-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>royal-naval-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>fever-hospital": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>sanatorium": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hospital>county-asylum": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:prison>gaol": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:prison>house-of-correction": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:prison>prison-hulk": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:prison>penitentiary": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:prison>lock-up": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:theatre>elizabethan-playhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:theatre>inn-yard-theatre": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:theatre>georgian-playhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>clapper-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>arch-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>packhorse-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>suspension-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:pier>landing-pier": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:pier>pleasure-pier": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
  "link:monastery>medieval-hospital": {
   "sources": [
    "quote-found",
@@ -3017,6 +4238,166 @@
   ],
   "checked": "2026-10-26"
  },
+ "link:hall-house>medieval-town-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:medieval-town-house>tenement": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:renaissance-continent>terraced-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:terraced-house>townhouse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:terraced-house>mews": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:terraced-house>back-to-back-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:terraced-house>bylaw-terrace": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:back-to-back-house>bylaw-terrace": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:tenement>terraced-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bylaw-terrace>semi-detached-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:villa>semi-detached-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:estate-cottage>semi-detached-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:cottage>estate-cottage": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:cottage>weavers-cottage": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:renaissance-continent>palladian-villa": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-villa>palladian-villa": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:palladian-villa>villa": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:palladian-villa>country-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:clergy-house>manse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:royal-palace>bishops-palace": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:manor-house>bishops-palace": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:country-house>dower-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
  "link:roman-watermill>watermill": {
   "sources": [
    "quote-found",
@@ -3119,6 +4500,220 @@
  },
  "link:brick-kiln>hoffmann-kiln": {
   "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chambered-tomb>passage-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chambered-tomb>portal-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chambered-tomb>court-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chambered-tomb>wedge-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:portal-tomb>passage-tomb": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:long-barrow>round-barrow": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chambered-tomb>round-cairn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:round-barrow>round-cairn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chambered-tomb>stone-circle": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:cursus>henge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:long-barrow>cursus": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:henge>stone-circle": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:round-house>hillfort": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hillfort>promontory-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hillfort>dun": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:round-house>crannog": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:dun>crannog": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hillfort>castle": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hillfort>roman-fort": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:hillfort>romano-celtic-temple": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:ringfort>cashel": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:round>ringfort": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:ringfort>motte-and-bailey": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:souterrain>fogou": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-fort>saxon-shore-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:saxon-shore-fort>castle": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-fort>roman-town-wall": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:romano-celtic-temple>church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-villa>church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-villa>country-house": {
+  "sources": [
+   "quote-found",
    "quote-found",
    "quote-found"
   ],
@@ -3389,6 +4984,156 @@
  },
  "link:parish-church>ecclesiological-church": {
   "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chapel>chapel-of-ease": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:chapel>nonconformist-chapel": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:meeting-house>nonconformist-chapel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:nonconformist-chapel>methodist-chapel": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:ecclesiological-church>nonconformist-chapel": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:monastery>friary": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:friary>augustinian-friary": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-town-wall>town-wall": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:town-wall>town-gate": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:italian-bastion>town-wall": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:pharos-of-alexandria>roman-lighthouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:roman-lighthouse>lighthouse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:lighthouse>offshore-lighthouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:warehouse>dock-warehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:fireproof-mill>dock-warehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:silk-mill>factory": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:cotton-mill>factory": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:distillery>grain-distillery": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:cabinet-of-curiosities>museum": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:museum>municipal-museum": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:municipal-museum>public-library": {
+  "sources": [
+   "quote-found",
    "quote-found",
    "quote-found"
   ],

@@ -33,7 +33,7 @@ TYPE_RANGES = [
     (r"pictish", 500, 900, "Pictish symbol stones"),
     (r"roman villa", 43, 410, "Roman villas"),
     (r"tower house", 1400, 1650, "tower houses"),
-    (r"friary", 1224, 1540, "Irish friaries"),
+    (r"friary|\bfriars\b", 1224, 1540, "Irish friaries"),
 ]
 
 

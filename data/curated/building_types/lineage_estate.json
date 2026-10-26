@@ -1,0 +1,1820 @@
+{
+ "about": "Building types (roadmap BT1d): estate and garden buildings: gatehouses and lodges, stables and coach houses, glasshouses, garden buildings, mausolea. Same fields as lineage.json.",
+ "researched": "2026-10-26",
+ "types": [
+  {
+   "id": "gatehouse",
+   "name": "Gatehouse",
+   "family": "Gatehouses and lodges",
+   "domain": "Defence",
+   "fish": "70372",
+   "period": {
+    "text": "fortified gateways from the Bronze Age into modern times (no early isles example dated in the sources); the earliest standing in the isles that the sources date is the Balkerne Gate, Colchester, probably 2nd century AD; still built",
+    "from": 100,
+    "ongoing": true
+   },
+   "structure": "a gateway with one or more chambers over the entrance arch, flanking towers holding stairs and rooms",
+   "note": "The general type: gatehouses of castles, monasteries, manors and colleges are its variants. FISH files castle, abbey, priory and friary gatehouses under it.",
+   "sources": [
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "lead",
+     "quote": "Fortified gates or gateways appear in the Bronze Age and reach into the modern times.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Balkerne Gate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Balkerne_Gate",
+     "locator": "section \"History\"",
+     "quote": "According to Historic England, the gate probably dates to the 2nd century AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Balkerne Gate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Balkerne_Gate",
+     "locator": "lead",
+     "quote": "It is the largest surviving gateway in Roman Britain and was built where the Roman road from Londinium intersected the town wall of Camulodunum.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gatehouse (FISH Thesaurus of Monument Types, concept 70372)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70372.html",
+     "locator": "scope note",
+     "quote": "A gateway with one or more chambers over the entrance arch; the flanking towers housing stairs and additional rooms. Use with wider site type where known.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "castle-gatehouse",
+   "name": "Castle gatehouse",
+   "family": "Gatehouses and lodges",
+   "domain": "Defence",
+   "fish": null,
+   "period": {
+    "text": "from the Norman conquest: the early Norman gatehouse of Exeter (Rougemont) Castle, begun in or shortly after 1068; at the end of the Middle Ages gatehouses became grand entrances to manor houses (c. 1500 used as the end)",
+    "from": 1068,
+    "to": 1500
+   },
+   "structure": "the most strongly defended part of the castle: drawbridge, portcullises, machicolations, arrow loops and murder-holes",
+   "note": "FISH has no concept of its own: 'Castle Gatehouse' is a non-preferred term of both GATEHOUSE (70372) and CASTLE (68833).",
+   "sources": [
+    {
+     "title": "Exeter Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Castle",
+     "locator": "lead",
+     "quote": "It was built into the northern corner of the Roman city walls starting in or shortly after the year 1068, following Exeter's rebellion against William the Conqueror.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Exeter Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Castle",
+     "locator": "lead",
+     "quote": "The castle is named after the red stone found in the hill, and used in the construction of the original buildings, of which the large early Norman gatehouse is the main remaining feature.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "section \"History\"",
+     "quote": "At the end of the Middle Ages, many gatehouses in England and France were converted into beautiful, grand entrance structures to manor houses or estates.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "section \"History\"",
+     "quote": "Strongly fortified medieval gatehouses may include a drawbridge, one or more portcullises, machicolations, arrow loops and murder-holes where stones would be dropped on attackers.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "lead",
+     "quote": "Gatehouses are often the most heavily defended section of a fortification, as the gate was the easiest point for an enemy to attack.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gatehouse-keep",
+   "name": "Gatehouse keep",
+   "family": "Gatehouses and lodges",
+   "domain": "Defence",
+   "fish": null,
+   "period": {
+    "text": "Tonbridge Castle's twin-towered gatehouse, completed 1260 after 30 years' work; much used in Edward I's Welsh castles, the last Beaumaris, where work stopped in 1330",
+    "from": 1260,
+    "to": 1330
+   },
+   "plan": "two massive D-shaped towers flanking the entrance passage (the 'Tonbridge style'), with rooms on the floors above",
+   "note": "Whether the upper floors were the constable's lodging (Taylor) or used otherwise (Ashbee) is debated for Harlech.",
+   "sources": [
+    {
+     "title": "Tonbridge Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tonbridge_Castle",
+     "locator": "section \"Early history\"",
+     "quote": "Construction of the gatehouse took 30 years, being completed in 1260.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "section \"Wales\"",
+     "quote": "The gatehouse-keep was greatly used in the Welsh castles of Edward I.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Beaumaris Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beaumaris_Castle",
+     "locator": "section \"13th–14th centuries\"",
+     "quote": "This work finally halted in 1330 with the castle still not built to its intended height; by the end of the project, £15,000 had been spent, a colossal sum for the period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Harlech Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harlech_Castle",
+     "locator": "section \"Architecture\"",
+     "quote": "The gatehouse follows the design, sometimes termed the Tonbridge-style, that became popular during the 13th century, with two massive \"D-shaped\" defensive towers flanking the entrance.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Harlech Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harlech_Castle",
+     "locator": "section \"Architecture\"",
+     "quote": "The use of these rooms has been the subject of academic debate: historian Arnold Taylor argued that the first floor of the gatehouse was used by the constable as living accommodation, with the second floor used by senior visitors; Jeremy Ashbee has since challenged this interpretation, suggesting the high status accommodation may instead have been in the inner ward, and the gatehouse used for other purposes.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "monastic-gatehouse",
+   "name": "Monastic gatehouse",
+   "family": "Gatehouses and lodges",
+   "domain": "Religious",
+   "fish": null,
+   "period": {
+    "text": "Bury St Edmunds' Norman Gate, 1120-1148, the earliest dated in the sources; its 14th-century Abbey Gate and Thornton Abbey's gatehouse the grandest; ended with the Dissolution, 1539",
+    "from": 1120,
+    "to": 1539
+   },
+   "note": "FISH files abbey, priory, friary and monastery gatehouses as non-preferred terms of GATEHOUSE (70372).",
+   "sources": [
+    {
+     "title": "Bury St Edmunds Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bury_St_Edmunds_Abbey",
+     "locator": "section \"History\"",
+     "quote": "The Norman Gate dates from 1120 to 1148 and was designed to be the gateway for the Abbey Church and it is still the belfry for the Church of St James, the present cathedral of Bury St Edmunds.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bury St Edmunds Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bury_St_Edmunds_Abbey",
+     "locator": "section \"History\"",
+     "quote": "Abbey Gate is an impressive 14th-century stone gatehouse, designed to be the gateway for the Great Courtyard.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Thornton Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thornton_Abbey",
+     "locator": "lead",
+     "quote": "Its ruins are a Grade I listed building, including notably England's largest and most impressive surviving monastic gatehouse.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Thornton Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thornton_Abbey",
+     "locator": "lead",
+     "quote": "The abbey was closed in 1539 by Henry VIII as part of the Dissolution of the Monasteries.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tudor-gatehouse",
+   "name": "Tudor and Jacobean gatehouse",
+   "family": "Gatehouses and lodges",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "Oxburgh Hall, licence to crenellate 1482, 'the most prominent of the English brick gatehouses of the 15th century'; Layer Marney under Henry VIII; Burton Agnes c. 1610; Stanway's Jacobean gateway of 1630 the latest in the sources",
+    "from": 1482,
+    "to": 1630
+   },
+   "structure": "a show of castle defences, symbolic rather than real: tall flanking towers, crenellations, often brick",
+   "note": "The same pattern served the colleges: St John's College, Cambridge, Great Gate follows those of Christ's and Queens'.",
+   "sources": [
+    {
+     "title": "Oxburgh Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxburgh_Hall",
+     "locator": "lead",
+     "quote": "The hall was built for Sir Edmund Bedingfeld who obtained a licence to crenellate in 1482.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Oxburgh Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxburgh_Hall",
+     "locator": "section \"History\"",
+     "quote": "The entrance, reached by a three-arched bridge on the north side, is through a fortified gatehouse, described by Nikolaus Pevsner as \"the most prominent of the English brick gatehouses of the 15th century\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Layer Marney Tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Layer_Marney_Tower",
+     "locator": "lead",
+     "quote": "Constructed in the first half of the reign of Henry VIII, Layer Marney Tower is in many ways the apotheosis of the Tudor gatehouse, and is the tallest example in Britain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Burton Agnes Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burton_Agnes_Hall",
+     "locator": "section \"Gatehouse\"",
+     "quote": "The gatehouse was completed around 1610 and is a grade I listed building.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stanway House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stanway_House",
+     "locator": "section \"History\"",
+     "quote": "The triple-gabled Jacobean gateway was created by Paul's son, Sir Richard Tracy, in 1630.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Oxburgh Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxburgh_Hall",
+     "locator": "section \"History\"",
+     "quote": "The gate was designed to evoke the owner's power and prestige, though as fortification its value is largely symbolic; it is flanked by tall polygonal towers rising in seven tiers, with symmetrical wings extending either side that reveal nothing on the exterior of their differing internal arrangements.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "St John's College, Cambridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_John's_College,_Cambridge",
+     "locator": "section \"Great Gate\"",
+     "quote": "St John's Great Gate follows the contemporary pattern employed previously at Christ's College and Queens' College."
+    }
+   ]
+  },
+  {
+   "id": "gate-lodge",
+   "name": "Gate lodge",
+   "family": "Gatehouses and lodges",
+   "domain": "Estate and garden",
+   "fish": "68971",
+   "period": {
+    "text": "fashionable in the Georgian era with landscape gardens; Worcester Lodge, Badminton, 1748, the earliest built example named (the porter's lodge at Denbigh Castle and New College, Oxford, are cited as antecedents); Eccleston Hill Lodge, 1881, the latest; out of use in the early 20th century (1914 used as the end)",
+    "from": 1748,
+    "to": 1914
+   },
+   "plan": "small, sometimes only two rooms",
+   "sources": [
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "A notable mid-18th century example is the Worcester Lodge at Badminton House, Gloucestershire, designed in 1748 by William Kent for the Duke of Beaufort.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "An example of such a Gothic Revival lodge is Eccleston Hill Lodge on the Eaton Hall estate in Cheshire, designed by John Douglas in 1881.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "lead",
+     "quote": "Originally intended as the office and accommodation for a gatekeeper who was employed by the landowner to control access to the property, they fell out of use in the early 20th century but surviving examples are often preserved and can sometimes be used as domestic housing.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gate Lodge (FISH Thesaurus of Monument Types, concept 68971)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68971.html",
+     "locator": "scope note",
+     "quote": "A dwelling, located at the entrance, or gates, to an estate or park, etc."
+    },
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "The accommodation inside a lodge was generally rather small, sometimes consisting of only two rooms.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stable",
+   "name": "Stable",
+   "family": "Stables and coach houses",
+   "domain": "Estate and garden",
+   "fish": "70413",
+   "period": {
+    "text": "stables are ancient (Pi-Ramesses, 13th century BC); free-standing stables near the house from the 16th century (1500 used); still built",
+    "from": 1500,
+    "ongoing": true
+   },
+   "structure": "in Great Britain traditionally a hayloft on the upper floor with a pitching door at the front",
+   "plan": "divided into stalls, usually with a large stall for a foaling mare or a sick horse",
+   "sources": [
+    {
+     "title": "Stable",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stable",
+     "locator": "section \"History\"",
+     "quote": "Free-standing stables began to be built from the 16th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stable",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stable",
+     "locator": "section \"History\"",
+     "quote": "They were well built and placed near the house since these animals were highly valued and carefully maintained.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stable (FISH Thesaurus of Monument Types, concept 70413)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70413.html",
+     "locator": "scope note",
+     "quote": "A building in which horses are accommodated."
+    },
+    {
+     "title": "Stable",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stable",
+     "locator": "section \"History\"",
+     "quote": "Traditionally, stables in Great Britain had a hayloft on the upper floor and a pitching door at the front.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Stable",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stable",
+     "locator": "section \"History\"",
+     "quote": "Their interiors were divided into stalls and usually included a large stall for a foaling mare or sick horse.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "coach-house",
+   "name": "Coach house (carriage house)",
+   "family": "Stables and coach houses",
+   "domain": "Estate and garden",
+   "fish": "70261",
+   "period": {
+    "text": "no earlier than the coach, adopted in England by the late 16th century (1580 used; the sources date no early coach house); built with stables and in mews until motor cars replaced horses in the early 20th century (1914 used as the end), then turned into garages",
+    "from": 1580,
+    "to": 1914
+   },
+   "note": "FISH has CARRIAGE HOUSE (70259) beside COACH HOUSE; the catalogue's 'carriage house' class maps here.",
+   "sources": [
+    {
+     "title": "Coach House (FISH Thesaurus of Monument Types, concept 70261)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70261.html",
+     "locator": "scope note",
+     "quote": "An outbuilding where a horse-drawn carriage is kept."
+    },
+    {
+     "title": "Carriage House (FISH Thesaurus of Monument Types, concept 70259)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70259.html",
+     "locator": "scope note",
+     "quote": "An outbuilding used for the storage and maintenance of horse-drawn carriages."
+    },
+    {
+     "title": "Coach (carriage)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coach_(carriage)",
+     "locator": "section \"History\"",
+     "quote": "By the late 16th century coaches had spread across the continent and were adopted in England, where they became a standard vehicle for aristocratic travel.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "lead",
+     "quote": "A mews is a row or courtyard of stables and carriage houses with living quarters above them, built behind large city houses before motor vehicles replaced horses in the early twentieth century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "lead",
+     "quote": "After the Second World War, mews were replaced by alleys and the carriage houses by garages for automobiles.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "continental-orangery",
+   "name": "Orangeries of Italy and the Continent",
+   "family": "Glasshouses",
+   "domain": "Estate and garden",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "Padua, 1545, the earliest in the sources; spread from the Renaissance gardens of Italy to the Netherlands and France; Versailles, 1684-1686, the largest (the latest the sources date before the type was taken up in England)",
+    "from": 1545,
+    "to": 1686
+   },
+   "sources": [
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Earliest examples\"",
+     "quote": "As early as 1545, an orangery was built in Padua, Italy.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "lead",
+     "quote": "The orangery originated from the Renaissance gardens of Italy, when glass-making technology enabled sufficient expanses of clear glass to be produced.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "Known in Italy as limonaia, these early structures employed wood panels or open galleries to protect from the cold.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Orangerie of Versailles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangerie_of_Versailles",
+     "locator": "lead",
+     "quote": "The Versailles Orangerie (French: L'orangerie du château de Versailles) was built by Jules Hardouin-Mansart between 1684 and 1686, before work on the Château de Versailles had even begun.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orangery",
+   "name": "Orangery",
+   "family": "Glasshouses",
+   "domain": "Estate and garden",
+   "fish": "69026",
+   "period": {
+    "text": "introduced to English readers by John Parkinson in 1628; Montacute (before c. 1700), Kenwood (c. 1700) and Kensington Palace (1704-1705) the earliest standing; Margam 1787-1793 the longest; still built (Mapperton, 1970)",
+    "from": 1628,
+    "ongoing": true
+   },
+   "structure": "south-facing, on brick or stone bases with brick or stone piers and tall windows, the north wall solid; solid roofs until glazed roofs came in the early 19th century",
+   "sources": [
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Earliest examples\"",
+     "quote": "In England, John Parkinson introduced the orangery to the readers of his Paradisus in Sole (1628), under the heading \"Oranges\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "An orangery dating from about 1700 is at Kenwood House in London, and a slightly earlier one at Montacute.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "The orangery built adjacent to Kensington Palace, believed to be designed by Nicholas Hawksmoor, was constructed between 1704 and 1705.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "In 1970, Victor Montagu constructed an orangery in his formal Italianate gardens at Mapperton, Dorset.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Orangery (FISH Thesaurus of Monument Types, concept 69026)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69026.html",
+     "locator": "scope note",
+     "quote": "A gallery or building in a garden, usually south facing, used for the growing of oranges and other fruit."
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Construction materials\"",
+     "quote": "Orangeries were generally built facing south to take advantage of the maximum possible light, and were constructed using brick or stone bases, brick or stone pillars, and a corbel gutter.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "lead",
+     "quote": "The glazed roof, which afforded sunlight to plants that were not dormant, was a development of the early 19th century.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glasshouse",
+   "name": "Glasshouse (greenhouse)",
+   "family": "Glasshouses",
+   "domain": "Estate and garden",
+   "fish": "70918",
+   "period": {
+    "text": "the greenhouse reached England in the 17th century; the first heated ('stove') greenhouse in the UK was finished at the Chelsea Physic Garden by 1681; the largest built in Victorian England; still built",
+    "from": 1681,
+    "ongoing": true
+   },
+   "structure": "a building made chiefly of glass, used to grow plants and fruit",
+   "sources": [
+    {
+     "title": "Greenhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greenhouse",
+     "locator": "section \"17th century\"",
+     "quote": "The concept of greenhouses also appeared in the Netherlands and then England in the 17th century, along with the plants.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Greenhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greenhouse",
+     "locator": "section \"17th century\"",
+     "quote": "The first 'stove' (heated) greenhouse in the UK was completed at Chelsea Physic Garden by 1681.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Greenhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greenhouse",
+     "locator": "section \"19th-century England\"",
+     "quote": "The largest glasshouses yet conceived were constructed in England during the Victorian era.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Glasshouse (FISH Thesaurus of Monument Types, concept 70918)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70918.html",
+     "locator": "scope note",
+     "quote": "A building made chiefly of glass, used to grow plants and fruit in. Use more specific type where possible.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "conservatory",
+   "name": "Conservatory",
+   "family": "Glasshouses",
+   "domain": "Estate and garden",
+   "fish": "69012",
+   "period": {
+    "text": "sloped glass in the 18th century (1700 used); the golden age in the 19th century, mainly in England; halted by the Second World War; Victorian-style domestic conservatories again from the 1970s",
+    "from": 1700,
+    "flourish": [
+     1800,
+     1899
+    ],
+    "ongoing": true
+   },
+   "structure": "glazed walls and roof (in UK law at least half the side walls and three-quarters of the roof), attached to a house or freestanding; the great public ones of iron and glass",
+   "sources": [
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "In the 18th century, sloped glass began to be used in conservatory design to allow more light into the structure, enhancing conditions for plant growth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "The 19th century was the golden age of conservatory building, primarily in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "The widespread construction of UK conservatories came to a halt with the onset of World War II.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Conservatory (FISH Thesaurus of Monument Types, concept 69012)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69012.html",
+     "locator": "scope note",
+     "quote": "A glasshouse used to grow and display tender decorative plants. May be either an extension to a house or freestanding.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"Description\"",
+     "quote": "In the UK, the legal definition of a conservatory is a building that has at least 50% of its side wall area glazed and at least 75% of its roof glazed with translucent materials, either polycarbonate sheeting or glass.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "Many of the magnificent public conservatories, built of iron and glass, are the result of this era.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "palm-house",
+   "name": "Palm house",
+   "family": "Glasshouses",
+   "domain": "Estate and garden",
+   "fish": "92849",
+   "period": {
+    "text": "Belfast Botanic Gardens, finished 1840, one of the earliest; Kew, 1844-1848, the first on its scale; built as status symbols in Victorian Britain (the end of the reign, 1901, used as the end)",
+    "from": 1840,
+    "to": 1901
+   },
+   "structure": "ornate glass and iron; Kew's the first large-scale structural use of wrought iron",
+   "sources": [
+    {
+     "title": "Palm House, Kew Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
+     "locator": "section \"History\"",
+     "quote": "One of the earliest examples of a palm house is located in the Belfast Botanic Gardens.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palm House, Kew Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
+     "locator": "section \"History\"",
+     "quote": "Designed by Charles Lanyon, the building was completed in 1840.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palm House, Kew Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
+     "locator": "section \"History\"",
+     "quote": "It was built between 1844 and 1848.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palm House, Kew Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
+     "locator": "lead",
+     "quote": "Initially built as status symbols in Victorian Britain, several examples of ornate glass and iron greenhouses, often but not always called \"the Palm House\", can still be found in botanical gardens and parks such as Liverpool's Sefton Park and Stanley Park, and in other countries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Victorian era",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Victorian_era",
+     "locator": "lead",
+     "quote": "In the history of the United Kingdom and the British Empire, the Victorian era was the reign of Queen Victoria, from 20 June 1837 until her death on 22 January 1901, although slightly different definitions are sometimes used.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Palm House, Kew Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palm_House,_Kew_Gardens",
+     "locator": "lead",
+     "quote": "It was also the first large-scale structural use of wrought iron.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Palm House (FISH Thesaurus of Monument Types, concept 92849)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92849.html",
+     "locator": "scope note",
+     "quote": "A greenhouse used for growing palms and/or tropical plants."
+    }
+   ]
+  },
+  {
+   "id": "landscape-park",
+   "name": "Landscape park (English landscape garden)",
+   "family": "Parks and gardens",
+   "domain": "Estate and garden",
+   "fish": "69033",
+   "period": {
+    "text": "emerged in England in the early 18th century: William Kent's gardens at Chiswick, laid out from 1724, among the first; Capability Brown; Humphry Repton (died 1818) the last great designer of the eighteenth-century style",
+    "from": 1724,
+    "to": 1818
+   },
+   "sources": [
+    {
+     "title": "English landscape garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_landscape_garden",
+     "locator": "lead",
+     "quote": "The English landscape garden, also called English landscape park or simply the English garden (French: Jardin à l'anglaise; Italian: Giardino all'inglese; German: Englischer Landschaftsgarten; Portuguese: Jardim inglês; Spanish: Jardín inglés), is a style of \"landscape\" garden which emerged in England in the early 18th century, and spread across Europe, replacing the more formal, symmetrical French formal garden which had emerged in the 17th century as the principal gardening style of Europe.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English landscape garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_landscape_garden",
+     "locator": "section \"Chiswick House\"",
+     "quote": "Kent created one of the first true English landscape gardens at Chiswick House for Richard Boyle, 3rd Earl of Burlington.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English landscape garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_landscape_garden",
+     "locator": "section \"Humphry Repton\"",
+     "quote": "Humphry Repton (21 April 1752 – 24 March 1818) was the last great English landscape designer of the eighteenth century, often regarded as the successor to Capability Brown.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Landscape Park (FISH Thesaurus of Monument Types, concept 69033)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69033.html",
+     "locator": "scope note",
+     "quote": "Grounds, usually associated with a country house, laid out so as to produce the effect of natural scenery."
+    }
+   ]
+  },
+  {
+   "id": "folly",
+   "name": "Folly",
+   "family": "Garden buildings",
+   "domain": "Estate and garden",
+   "fish": "69013",
+   "period": {
+    "text": "decorative accents of great estates from the late 16th century (the Triangular Lodge, Rushton, 1593-1597); flourished in the landscape gardens of the 18th century; famine follies in Ireland 1845-1849; Faringdon, 1935, the latest in the sources",
+    "from": 1593,
+    "flourish": [
+     1700,
+     1799
+    ],
+    "to": 1935
+   },
+   "sources": [
+    {
+     "title": "Folly",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Folly",
+     "locator": "section \"History\"",
+     "quote": "Follies began as decorative accents on the great estates of the late 16th and early 17th centuries, but they flourished especially in the two centuries that followed.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rushton Triangular Lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rushton_Triangular_Lodge",
+     "locator": "lead",
+     "quote": "The Triangular Lodge is a folly, designed by Sir Thomas Tresham and constructed between 1593 and 1597 near Rushton, Northamptonshire, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Folly",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Folly",
+     "locator": "section \"Follies in 18th-century French and English gardens\"",
+     "quote": "Follies (French: fabriques) were an important feature of the English garden and French landscape garden in the 18th century, such as Stowe and Stourhead in England and Ermenonville and the gardens of Versailles in France.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Folly",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Folly",
+     "locator": "section \"Famine follies\"",
+     "quote": "The Great Famine of Ireland of 1845–1849 led to the building of several follies in order to provide relief to the poor without issuing unconditional handouts.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Faringdon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Faringdon",
+     "locator": "section \"Faringdon Folly\"",
+     "quote": "The folly on Folly Hill was designed by Lord Gerald Wellesley, later 7th Duke of Wellington, for Lord Berners, and built in 1935.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Folly (FISH Thesaurus of Monument Types, concept 69013)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69013.html",
+     "locator": "scope note",
+     "quote": "A structure, often found in 18th century landscape gardens, that demonstrates eccentricity or excess rather than practical purpose. They can take many forms - ruins, sham castles, towers, hermits' cells or grottoes."
+    }
+   ]
+  },
+  {
+   "id": "ice-store-italy",
+   "name": "Ice and snow stores of Italy",
+   "family": "Garden buildings",
+   "domain": "Estate and garden",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "snow stored in straw-covered pits at Rome in the 3rd century AD (200 used); the Italian mountain ice kept in caves that travellers saw is not dated in the sources (1619, the first English ice house, used as the end)",
+    "from": 200,
+    "to": 1619
+   },
+   "sources": [
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"History\"",
+     "quote": "In Rome, in the 3rd century CE, snow was imported from the mountains, stored in straw-covered pits, and sold from snow shops.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Ice houses were introduced to Britain by travellers who had seen similar arrangements in Italy, where peasants collected ice from the mountains and used it to keep food fresh in caves.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ice-house",
+   "name": "Ice house",
+   "family": "Garden buildings",
+   "domain": "Estate and garden",
+   "fish": "71409",
+   "period": {
+    "text": "James I's at Greenwich Park, 1619, the first in Britain; many more on 18th-century estates; commercial ice wells to Carlo Gatti's of 1857 and 1863 in London, the latest built in the sources; made needless by artificial ice from about 1900",
+    "from": 1619,
+    "flourish": [
+     1700,
+     1799
+    ],
+    "to": 1863
+   },
+   "structure": "partly underground: in Britain commonly a brick-lined, domed chamber, conical or rounded at the base, with a drain for the meltwater",
+   "sources": [
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "James I commissioned the first modern ice house in 1619 in Greenwich Park and another in Hampton Court in 1625–6.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "During the 18th century, there was an increase in the construction of ice houses, often at large manor houses and their estates.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "They were built in 1857 and 1863 by the Swiss entrepreneur Carlo Gatti.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Ice was often imported into the United Kingdom from Scandinavia until the 1920s, although from around 1900 the import of ice declined sharply owing to the development of factories in the UK that produced artificial ice.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Icehouse (FISH Thesaurus of Monument Types, concept 71409)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71409.html",
+     "locator": "scope note",
+     "quote": "A structure, partly underground, for the preservation of ice for use during warmer weather.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Various types and designs of ice houses exist, but British ice houses were commonly brick-lined, domed structures, with most of their volume underground.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "They usually had a drain to take away the meltwater.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "classical-mausoleum",
+   "name": "Mausolea of Greece and Rome",
+   "family": "Funerary",
+   "domain": "Estate and garden",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "the Mausoleum at Halicarnassus, 353-351 BC, which gave the type its name; Roman private mausolea along the roads, such as the tomb of Caecilia Metella (c. 30-10 BC); Constantina's at Rome, c. 350, the latest in the sources; out of use once Christianity was dominant",
+    "from": -353,
+    "to": 350
+   },
+   "sources": [
+    {
+     "title": "Mausoleum at Halicarnassus",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
+     "locator": "lead",
+     "quote": "The Mausoleum at Halicarnassus or Tomb of Mausolus was a tomb built between 353 and 351 BC in Halicarnassus (present Bodrum, Turkey) for Mausolus, an Anatolian from Caria and a satrap in the Achaemenid Persian Empire, and his sister-wife Artemisia II.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tomb of Caecilia Metella",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tomb_of_Caecilia_Metella",
+     "locator": "lead",
+     "quote": "The mausoleum was probably built in 30–10 BC by her son who also had the same name, Marcus Licinius Crassus.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Santa Costanza",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Santa_Costanza",
+     "locator": "section \"History\"",
+     "quote": "The mausoleum was built around 350, as shown by excavations in 1992 which discovered an earlier building beneath which may have been the baptistry built by Constantine (at the same time as the funerary hall), in which Constantina and her paternal aunt were baptised by Pope Silvester I (d. 335), as recorded in Liber Pontificalis.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mausoleum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum",
+     "locator": "section \"Overview\"",
+     "quote": "When Christianity became dominant, mausolea fell out of use.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mausoleum",
+   "name": "Mausoleum",
+   "family": "Funerary",
+   "domain": "Estate and garden",
+   "fish": "70087",
+   "period": {
+    "text": "Hawksmoor's at Castle Howard, 1729-1742, almost certainly the first free-standing mausoleum in Western Europe since the fall of Rome; popular in the early modern and modern periods (Darnley 1786, Hamilton 1840-1858); still built",
+    "from": 1729,
+    "ongoing": true
+   },
+   "structure": "a free-standing monument enclosing a burial chamber, wholly above ground or over a burial vault",
+   "sources": [
+    {
+     "title": "Nicholas Hawksmoor",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nicholas_Hawksmoor",
+     "locator": "section \"Garden buildings and monuments\"",
+     "quote": "The Mausoleum (1729–40) built on the same scale as his London churches, it is almost certainly the first free-standing mausoleum built in Western Europe since the fall of the Western Roman Empire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The Mausoleum, Castle Howard",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Mausoleum,_Castle_Howard",
+     "locator": "lead",
+     "quote": "It was constructed by William Etty from 1729 to 1742, and bastion walls were added by Daniel Garrett.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mausoleum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum",
+     "locator": "section \"Overview\"",
+     "quote": "Later, mausolea became particularly popular in Europe and its colonies during the early modern and modern periods.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mausoleum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum",
+     "locator": "section \"Overview\"",
+     "quote": "Mausolea were historically, and still may be, large and impressive constructions for a deceased leader or other person of importance.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mausoleum (FISH Thesaurus of Monument Types, concept 70087)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70087.html",
+     "locator": "scope note",
+     "quote": "A monumental burial place, usually for a single person or family."
+    },
+    {
+     "title": "Mausoleum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum",
+     "locator": "lead",
+     "quote": "A mausoleum (plural: mausolea) is an external free-standing building or standalone structure constructed as a monument enclosing the burial chamber of a deceased person or people.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Mausoleum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum",
+     "locator": "section \"Overview\"",
+     "quote": "A mausoleum encloses a burial chamber either wholly above ground or within a burial vault below the superstructure.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "gatehouse>castle-gatehouse",
+   "from": "gatehouse",
+   "to": "castle-gatehouse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The castle gatehouse is the gatehouse made the strongest point of a fortification, the gate being the easiest point to attack.",
+   "sources": [
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "lead",
+     "quote": "Gatehouses are often the most heavily defended section of a fortification, as the gate was the easiest point for an enemy to attack."
+    },
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "lead",
+     "quote": "A gatehouse is a building that contains the entrance to a large structure or complex, such as a walled town, castle, manor, monastery or academic college, enabling the entrance to be controlled or defended by the inhabitants."
+    }
+   ]
+  },
+  {
+   "id": "gatehouse>monastic-gatehouse",
+   "from": "gatehouse",
+   "to": "monastic-gatehouse",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Monasteries are among the enclosed places whose entrance a gatehouse controlled; FISH files abbey and priory gatehouses under the gatehouse.",
+   "sources": [
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "lead",
+     "quote": "A gatehouse is a building that contains the entrance to a large structure or complex, such as a walled town, castle, manor, monastery or academic college, enabling the entrance to be controlled or defended by the inhabitants."
+    },
+    {
+     "title": "Gatehouse (FISH Thesaurus of Monument Types, concept 70372)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70372.html",
+     "locator": "scope note",
+     "quote": "A gateway with one or more chambers over the entrance arch; the flanking towers housing stairs and additional rooms. Use with wider site type where known."
+    }
+   ]
+  },
+  {
+   "id": "castle-gatehouse>gatehouse-keep",
+   "from": "castle-gatehouse",
+   "to": "gatehouse-keep",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "In some castles the gatehouse was fortified so strongly that it took on the function of the keep; the twin D-towered 'Tonbridge style' became popular in the 13th century and was much used in Edward I's Welsh castles.",
+   "sources": [
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "section \"History\"",
+     "quote": "In some castles, the gatehouse was so strongly fortified it took on the function of a keep, sometimes referred to as a \"gatehouse keep\"."
+    },
+    {
+     "title": "Harlech Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harlech_Castle",
+     "locator": "section \"Architecture\"",
+     "quote": "The gatehouse follows the design, sometimes termed the Tonbridge-style, that became popular during the 13th century, with two massive \"D-shaped\" defensive towers flanking the entrance."
+    }
+   ]
+  },
+  {
+   "id": "castle-gatehouse>monastic-gatehouse",
+   "from": "castle-gatehouse",
+   "to": "monastic-gatehouse",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "The great monastic gatehouses of the 14th century carried castle defences: Bury St Edmunds' Abbey Gate keeps its portcullis and Thornton's is approached over a fortified bridge. The sources describe the defences; none says that they were copied from castles.",
+   "sources": [
+    {
+     "title": "Bury St Edmunds Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bury_St_Edmunds_Abbey",
+     "locator": "section \"History\"",
+     "quote": "One of the best surviving examples of its type, this two-storey gate-hall is entered through a single archway which retains its portcullis."
+    },
+    {
+     "title": "Thornton Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thornton_Abbey",
+     "locator": "section \"Architecture\"",
+     "quote": "A bridge over the moat adjoins the gatehouse and is fortified with walls and garderobes."
+    }
+   ]
+  },
+  {
+   "id": "castle-gatehouse>tudor-gatehouse",
+   "from": "castle-gatehouse",
+   "to": "tudor-gatehouse",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "At the end of the Middle Ages gatehouses lost their defensive purpose and became grand entrances to manor houses; the Tudor great houses kept moats, gatehouses and crenellations to evoke the castle, their fortification largely symbolic.",
+   "sources": [
+    {
+     "title": "Gatehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gatehouse",
+     "locator": "section \"History\"",
+     "quote": "By this time, the gatehouse had lost its defensive purpose and had become more of a monumental structure designed to harmonise with the manor or mansion."
+    },
+    {
+     "title": "Tudor architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tudor_architecture",
+     "locator": "section \"Henry VII (1485–1509)\"",
+     "quote": "The residences of the king and nobility, while they had not been seriously defensible for centuries, still evoked the idea of the castle, with moats, gatehouses, machicolations and crenellations."
+    },
+    {
+     "title": "Oxburgh Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxburgh_Hall",
+     "locator": "section \"History\"",
+     "quote": "The gate was designed to evoke the owner's power and prestige, though as fortification its value is largely symbolic; it is flanked by tall polygonal towers rising in seven tiers, with symmetrical wings extending either side that reveal nothing on the exterior of their differing internal arrangements."
+    }
+   ]
+  },
+  {
+   "id": "gatehouse>gate-lodge",
+   "from": "gatehouse",
+   "to": "gate-lodge",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Estate lodges are said to have originated from the gatehouses of medieval monasteries and manor houses, with the porter's lodge at Denbigh Castle and New College, Oxford, as antecedents; the lodge at the park gate took over the gatekeeper's work. The source gives the origin, not how or when the change came.",
+   "sources": [
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "Estate lodges originated from the gatehouses of medieval monasteries and manor houses."
+    },
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "Timothy Mowl and Brian Earnshaw, in their study Trumpet at a Distant Gate: The Lodge as Prelude to the Country House, cite the Porter's Lodge Tower at Denbigh Castle, and the lodge at New College, Oxford as antecedent examples."
+    }
+   ]
+  },
+  {
+   "id": "landscape-park>gate-lodge",
+   "from": "landscape-park",
+   "to": "gate-lodge",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Gate lodges became fashionable in the Georgian era along with landscape gardens and grew into a visual statement of the owner's taste. The source gives them as fashions of the same time, not a cause.",
+   "sources": [
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "They became fashionable in the Georgian era along with landscape gardens."
+    },
+    {
+     "title": "Gate lodge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gate_lodge",
+     "locator": "section \"History\"",
+     "quote": "Initially these lodges were functional wooden buildings, intended to retain livestock and deter intruders, but during the 18th century, they developed into a visual statement, designed to give an initial impression of the landowner's wealth and taste."
+    }
+   ]
+  },
+  {
+   "id": "landscape-park>folly",
+   "from": "landscape-park",
+   "to": "folly",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Follies were an important feature of the English landscape garden of the 18th century, usually as Roman temples, ruined Gothic abbeys or pyramids; Kent's first garden at Chiswick already had a temple folly.",
+   "sources": [
+    {
+     "title": "Folly",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Folly",
+     "locator": "section \"Follies in 18th-century French and English gardens\"",
+     "quote": "Follies (French: fabriques) were an important feature of the English garden and French landscape garden in the 18th century, such as Stowe and Stourhead in England and Ermenonville and the gardens of Versailles in France."
+    },
+    {
+     "title": "English landscape garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_landscape_garden",
+     "locator": "section \"Chiswick House\"",
+     "quote": "The first gardens that he laid out between 1724 and 1733 had many formal elements of a garden à la française, including alleys forming a patte d'oie and canals, but they also featured a folly, a picturesque recreation of an Ionic temple set in a theatre of trees."
+    }
+   ]
+  },
+  {
+   "id": "stable>mews",
+   "from": "stable",
+   "to": "mews",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A mews is a set of stables grouped round a yard or along a service street behind town houses, often with rooms above; the word was taken from the royal stables built on the king's hawk mews.",
+   "sources": [
+    {
+     "title": "Mews (FISH Thesaurus of Monument Types, concept 71774)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71774.html",
+     "locator": "scope note",
+     "quote": "Traditionally a mew was a building housing hawks when they were moulting, however since the C16th the term has been used for a series of stables grouped around an open yard or alley, often with rooms above. Use only for stables otherwise use FALCONRY."
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"Mews stables\"",
+     "quote": "The first recorded use meaning stables is dated 1548, after the royal stables were built at Charing Cross, on the site of the royal hawk mews."
+    }
+   ]
+  },
+  {
+   "id": "stable>coach-house",
+   "from": "stable",
+   "to": "coach-house",
+   "kind": "variant",
+   "confidence": "probable",
+   "claim": "The coach house was built with the stables it served: in a mews the horse stalls and the carriage house share the ground floor. The sources show the two built together; none says that the coach house grew out of the stable.",
+   "sources": [
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "section \"London\"",
+     "quote": "The mews had horse stalls and a carriage house on the ground floor, and stable servants' living accommodation above."
+    },
+    {
+     "title": "Mews",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mews",
+     "locator": "lead",
+     "quote": "A mews is a row or courtyard of stables and carriage houses with living quarters above them, built behind large city houses before motor vehicles replaced horses in the early twentieth century."
+    }
+   ]
+  },
+  {
+   "id": "continental-orangery>orangery",
+   "from": "continental-orangery",
+   "to": "orangery",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The orangery began in the Renaissance gardens of Italy and spread north through the Netherlands and France; John Parkinson introduced it to English readers in 1628.",
+   "sources": [
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "lead",
+     "quote": "The orangery originated from the Renaissance gardens of Italy, when glass-making technology enabled sufficient expanses of clear glass to be produced."
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "lead",
+     "quote": "In the north, the Dutch led the way in developing expanses of window glass in orangeries, although the engravings illustrating Dutch manuals showed solid roofs, whether beamed or vaulted, and in providing stove heat rather than open fires."
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "section \"Earliest examples\"",
+     "quote": "In England, John Parkinson introduced the orangery to the readers of his Paradisus in Sole (1628), under the heading \"Oranges\"."
+    }
+   ]
+  },
+  {
+   "id": "glasshouse>orangery",
+   "from": "glasshouse",
+   "to": "orangery",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The orangery is a glasshouse for oranges and other non-hardy fruit trees, a large form of greenhouse; FISH places it under the glasshouse.",
+   "sources": [
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "lead",
+     "quote": "An orangery or orangerie is a room or dedicated building, historically where orange and other non-hardy fruit trees are protected during the winter, as a large form of greenhouse or conservatory."
+    },
+    {
+     "title": "Orangery (FISH Thesaurus of Monument Types, concept 69026)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69026.html",
+     "locator": "scope note",
+     "quote": "A gallery or building in a garden, usually south facing, used for the growing of oranges and other fruit."
+    }
+   ]
+  },
+  {
+   "id": "orangery>conservatory",
+   "from": "orangery",
+   "to": "conservatory",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The conservatory grew out of the orangery: the houses for citrus trees widened their use to entertaining and other tender plants, sloped glass came in the 18th century and the glazed roof in the early 19th; today an orangery is told from a conservatory by having less of its roof glazed.",
+   "sources": [
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "Orangeries, as they came to be called, were typically enclosed structures built with wood, brick or stone with tall vertical windows on the south walls."
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "Use of these rooms expanded socially and practically, being used to entertain and to host a wider variety of plants."
+    },
+    {
+     "title": "Orangery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orangery",
+     "locator": "lead",
+     "quote": "The glazed roof, which afforded sunlight to plants that were not dormant, was a development of the early 19th century."
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "In contemporary construction, a conservatory differs from an orangery in having more than 75% of its roof surface made from glass."
+    }
+   ]
+  },
+  {
+   "id": "conservatory>palm-house",
+   "from": "conservatory",
+   "to": "palm-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A palm house is a conservatory tall enough for trees, for palms and tropical plants; the Victorian ones were of iron and glass.",
+   "sources": [
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "lead",
+     "quote": "Elsewhere, especially in America, it can often refer to a large freestanding glass-walled building in a botanic garden or park, sometimes also called a palm house if tall enough for trees."
+    },
+    {
+     "title": "Palm House (FISH Thesaurus of Monument Types, concept 92849)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92849.html",
+     "locator": "scope note",
+     "quote": "A greenhouse used for growing palms and/or tropical plants."
+    },
+    {
+     "title": "Conservatory (greenhouse)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Conservatory_(greenhouse)",
+     "locator": "section \"History\"",
+     "quote": "Other examples include the Great Palm House at Kew Gardens that was built in 1844, built by Decimus Burton and the Crystal Palace, built for London's Great Exhibition of 1851 by Sir Joseph Paxton."
+    }
+   ]
+  },
+  {
+   "id": "ice-store-italy>ice-house",
+   "from": "ice-store-italy",
+   "to": "ice-house",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Ice houses were brought to Britain by travellers who had seen Italian peasants keep mountain ice in caves; the first was James I's at Greenwich in 1619.",
+   "sources": [
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Ice houses were introduced to Britain by travellers who had seen similar arrangements in Italy, where peasants collected ice from the mountains and used it to keep food fresh in caves."
+    },
+    {
+     "title": "Ice house (building)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ice_house_(building)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The ice house was introduced to Britain in the 1600s."
+    }
+   ]
+  },
+  {
+   "id": "classical-mausoleum>mausoleum",
+   "from": "classical-mausoleum",
+   "to": "mausoleum",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "The mausoleum, named after the tomb of Mausolus, went out of use with Christianity; Hawksmoor revived it at Castle Howard (1729), designed after the Roman tomb of Caecilia Metella, almost certainly the first free-standing mausoleum in Western Europe since the fall of Rome.",
+   "sources": [
+    {
+     "title": "Mausoleum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mausoleum",
+     "locator": "section \"Overview\"",
+     "quote": "The word mausoleum (from the Ancient Greek: μαυσωλεῖον) derives from the Mausoleum at Halicarnassus (near modern-day Bodrum in Turkey), the grave of King Mausolus, the Persian satrap of Caria, whose large tomb was one of the Seven Wonders of the Ancient World."
+    },
+    {
+     "title": "The Mausoleum, Castle Howard",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Mausoleum,_Castle_Howard",
+     "locator": "lead",
+     "quote": "The mausoleum was designed by Nicholas Hawksmoor between 1726 and 1729, its design inspired by the Tomb of Caecilia Metella and the alleged Tomb of Lars Porsena."
+    },
+    {
+     "title": "Nicholas Hawksmoor",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nicholas_Hawksmoor",
+     "locator": "section \"Garden buildings and monuments\"",
+     "quote": "The Mausoleum (1729–40) built on the same scale as his London churches, it is almost certainly the first free-standing mausoleum built in Western Europe since the fall of the Western Roman Empire."
+    }
+   ]
+  }
+ ]
+}

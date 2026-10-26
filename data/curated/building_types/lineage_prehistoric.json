@@ -1,0 +1,2543 @@
+{
+ "about": "Building types (roadmap BT1d): prehistoric and Roman built structures that people built and used: tombs and barrows, ceremonial monuments, hillforts and defended settlements, Roman military and civil types (single standing stones, rock art, carved stones and finds left out). Same fields as lineage.json.",
+ "researched": "2026-10-26",
+ "types": [
+  {
+   "id": "chambered-tomb",
+   "name": "Chambered tomb",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": "70064",
+   "period": {
+    "text": "Early Neolithic to Early Bronze Age: the tradition of building chambered tombs lasted from about 4000 to 3500 BC (one at Carrowmore disputably dated to 5000 BC); regional forms went on later (passage tombs to about 2500 BC, wedge tombs to about 2000 BC), and Corrimony, a Clava cairn, is dated to 2000 BC or older",
+    "from": -4000,
+    "flourish": [
+     -4000,
+     -3500
+    ],
+    "to": -2000
+   },
+   "structure": "a stone-built chamber within a mound of earth or stone (a cairn when of stones)",
+   "note": "The chambered cairns of Scotland (FISH: chambered cairn, narrower than chambered tomb) fall here.",
+   "sources": [
+    {
+     "title": "Chambered tomb (FISH Thesaurus of Monument Types, concept 70064)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70064.html",
+     "locator": "scope note",
+     "quote": "A Neolithic burial monument comprising a stone-built chamber within a mound of earth or stone.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Early Neolithic\"",
+     "quote": "The chambered tomb tradition lasted between about 4000 and 3500 BCE, although an earlier example, at Carrowmore in County Sligo, has been disputably dated to 5000 BCE.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chambered cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chambered_cairn",
+     "locator": "section \"Bronze Age\"",
+     "quote": "Corrimony chambered cairn near Drumnadrochit is an example dated to 2000 BC or older.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chambered cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chambered_cairn",
+     "locator": "section \"Background\"",
+     "quote": "by the Bronze Age it is possible that even where chambered cairns were still being built they had become the burial places of prominent individuals rather than of communities as a whole",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "long-barrow",
+   "name": "Long barrow",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": "70006",
+   "period": {
+    "text": "Early Neolithic: the tradition reached Britain in the first half of the 4th millennium BC; the earthen long barrows of eastern Britain were likely built between 3800 and 3000 BC; Bryn Celli Ddu, one of the last chambered tombs, was built long after",
+    "from": -3800,
+    "to": -3000
+   },
+   "structure": "an earthen (or, in the north and west, stone) mound, sometimes with a timber or stone chamber at one end",
+   "plan": "rectangular or trapezoidal mound, flanked or encircled by ditches",
+   "sources": [
+    {
+     "title": "Long barrow (FISH Thesaurus of Monument Types, concept 70006)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70006.html",
+     "locator": "scope note",
+     "quote": "A rectangular or trapezoidal earthen mound of Neolithic date, usually accompanied by flanking or encircling ditches, and normally associated with human remains.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "section \"Regional variation\"",
+     "quote": "Excavation suggests that these earthen long barrows were likely constructed between 3800 and 3000 BCE.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "section \"Distribution and chronology\"",
+     "quote": "The tradition had reached Britain by the first half of the 4th millennium BCE, either soon after farming or in some cases perhaps just before it.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "section \"Design and architecture\"",
+     "quote": "In the north and west of Britain, for instance, long barrows often consist of stone mounds containing chambers inside of them, whereas in the south and east of Britain these long barrows are typically made of earth.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "lead",
+     "quote": "Some examples have a timber or stone chamber in one end of the tumulus.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "passage-tomb",
+   "name": "Passage tomb",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": "70068",
+   "period": {
+    "text": "Neolithic: Irish passage tombs were used from about 3750 to about 2500 BC; Newgrange was built around 3100 BC",
+    "from": -3750,
+    "flourish": [
+     -3200,
+     -2900
+    ],
+    "to": -2500
+   },
+   "structure": "a stone-built chamber, often corbelled, reached by a narrow passage of large stones, under a mound of earth or stones",
+   "plan": "circular mound; a narrow passage leading to a wider, higher chamber, often cruciform",
+   "sources": [
+    {
+     "title": "Passage grave (FISH Thesaurus of Monument Types, concept 70068)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70068.html",
+     "locator": "scope note",
+     "quote": "A form of Neolithic burial monument comprising a large circular stone or earthen mound, with a low and narrow entrance passage leading to a wider and higher stone built chamber.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Passage tombs in Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passage_tombs_in_Ireland",
+     "locator": "lead",
+     "quote": "The usage period of Irish passage tombs date from c. 3750 B.C. to about 2500 B.C.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Newgrange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newgrange",
+     "locator": "lead",
+     "quote": "It is an exceptionally grand passage tomb built during the Neolithic Period, around 3100 BC, making it older than Stonehenge and the Egyptian pyramids.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Passage grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passage_grave",
+     "locator": "section \"Construction and design\"",
+     "quote": "One common interior layout, the cruciform passage grave, is cross-shaped",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Passage grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passage_grave",
+     "locator": "section \"Construction and design\"",
+     "quote": "Passage tombs of the cairn type often have elaborate corbelled roofs rather than simple slabs.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "portal-tomb",
+   "name": "Portal tomb (dolmen)",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": "70069",
+   "period": {
+    "text": "Neolithic: most dolmens date from 4000 to 3000 BC; a few in Wales and Ireland are dated 3800 to 3500 BC, among the first burial monuments there",
+    "from": -3800,
+    "to": -3000
+   },
+   "structure": "a single chamber of large upright stones supporting a large capstone",
+   "sources": [
+    {
+     "title": "Portal dolmen (FISH Thesaurus of Monument Types, concept 70069)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70069.html",
+     "locator": "scope note",
+     "quote": "A megalithic tomb of Neolithic date comprising a chamber bounded by large upright orthostats, often only three or four in number, which support a large capstone.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Dolmen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dolmen",
+     "locator": "lead",
+     "quote": "Most date from the Late Neolithic period (4000–3000 BCE) and were sometimes covered with earth or smaller stones to form a tumulus (burial mound).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "section \"History\"",
+     "quote": "A few dolmens can be dated in both Wales and Ireland from 3800 to 3500 BC.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "court-tomb",
+   "name": "Court tomb (court cairn, Clyde cairn)",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": null,
+   "period": {
+    "text": "Neolithic: the earliest court cairns were built around 3750 BC and new ones built and old ones enlarged until 2900 BC; most of the more than 390 in Ireland and over 100 in south-west Scotland date from 3900-3500 BC",
+    "from": -3750,
+    "flourish": [
+     -3750,
+     -3500
+    ],
+    "to": -2900
+   },
+   "structure": "burial chambers walled and roofed with large stones, divided by jamb stones into compartments, at one end of a cairn",
+   "plan": "an open court, most often U-shaped or semicircular, leading to one or more roofed chambers at one end of the cairn",
+   "note": "Called Clyde (Clyde-Carlingford) cairns in Scotland.",
+   "sources": [
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "section \"History\"",
+     "quote": "Radiocarbon dating indicates that the earliest court cairns were built around 3750 and new monuments continued to be built and existing ones enlarged until 2900 BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead",
+     "quote": "During the period, 3900–3500 BC, more than 390 court cairns were built in Ireland and over 100 in southwest Scotland.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead",
+     "quote": "The Neolithic (New Stone Age) monuments are identified by an uncovered courtyard connected to one or more roofed and partitioned burial chambers.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "section \"Construction and design\"",
+     "quote": "Courtyards were generally oval or circular in shape, with U-shaped and semi-circular courtyards being the most common layout.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "section \"Construction and design\"",
+     "quote": "Burial chambers are typically divided by jamb stones or jamb-and-sill stones into consecutive burial compartments.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "section \"Construction and design\"",
+     "quote": "Large standing stones were used to make the walls and roof of burial chambers, normally located at one end of the cairn.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Chambered cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chambered_cairn",
+     "locator": "section \"Clyde-Carlingford court cairns\"",
+     "quote": "The Clyde or Clyde-Carlingford type are principally found in northern and western Ireland and southwestern Scotland."
+    }
+   ]
+  },
+  {
+   "id": "wedge-tomb",
+   "name": "Wedge tomb",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": null,
+   "period": {
+    "text": "Late Neolithic to Middle Bronze Age in Ireland: about 2500 to 2000 BC",
+    "from": -2500,
+    "to": -2000
+   },
+   "structure": "a double-walled gallery under a round, oval or D-shaped cairn, often kerbed",
+   "plan": "a gallery narrowing from the west-facing entrance to the back",
+   "sources": [
+    {
+     "title": "Gallery grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallery_grave",
+     "locator": "section \"Wedge-shaped\"",
+     "quote": "Wedge tombs were built between the Irish late  Neolithic and middle Bronze Ages (about 2500 to 2000BC).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gallery grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallery_grave",
+     "locator": "section \"Wedge-shaped\"",
+     "quote": "They are so named because the burial chamber narrows at one end (usually decreasing both in height and width from west to east), producing a wedge shape in elevation.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Gallery grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallery_grave",
+     "locator": "section \"Wedge-shaped\"",
+     "quote": "They were often covered by cairns, which could be round, oval or D-shaped, often with a kerb to revet it.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Gallery grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallery_grave",
+     "locator": "section \"Wedge-shaped\"",
+     "quote": "An antechamber is separated from the burial area by a simple jamb or sill, and the doorway generally faces west.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Gallery grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallery_grave",
+     "locator": "section \"Wedge-shaped\"",
+     "quote": "A distinguishing characteristic of wedge tombs is the double-walling of the gallery.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "round-barrow",
+   "name": "Round barrow",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": "70010",
+   "period": {
+    "text": "Late Neolithic to Late Bronze Age: in Britain most were built between 2200 and 1100 BC (Neolithic examples are known; a brief Anglo-Saxon resurgence until the 7th century AD is a later use)",
+    "from": -2200,
+    "to": -1100
+   },
+   "structure": "a hemispherical mound of earth and/or stone over a burial, often with a ditch, stone kerb or berm",
+   "plan": "circular",
+   "note": "Bowl, bell, disc and other forms (FISH: narrower terms of round barrow) are kept as one type.",
+   "sources": [
+    {
+     "title": "Round barrow (FISH Thesaurus of Monument Types, concept 70010)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70010.html",
+     "locator": "scope note",
+     "quote": "Hemispherical mound surrounded by a ditch (or occasionally two or more concentric ditches), often accompanied by an external (or occasionally internal) bank.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Round barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round_barrow",
+     "locator": "lead",
+     "quote": "In Britain, most of them were built between 2200BC and 1100BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Round barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round_barrow",
+     "locator": "section \"Britain\"",
+     "quote": "In Britain round barrows generally date to the Early Bronze Age although Neolithic examples are also known.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Round barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round_barrow",
+     "locator": "section \"Description\"",
+     "quote": "At its simplest, a round barrow is a hemispherical mound of earth and/or stone raised over a burial placed in the middle.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Round barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round_barrow",
+     "locator": "section \"Description\"",
+     "quote": "Numerous subtypes include the bell barrow, bowl barrow, saucer barrow and disc barrow."
+    }
+   ]
+  },
+  {
+   "id": "round-cairn",
+   "name": "Round cairn",
+   "family": "Tombs and barrows",
+   "domain": "Prehistoric and Roman",
+   "fish": "70050",
+   "period": {
+    "text": "Neolithic and Bronze Age: cairns at Cwmcelyn are about 4,500 years old (c. 2500 BC); in the Early Bronze Age the dead were buried in cists covered with cairns; the Bronze Age in Britain ended c. 800 BC, used as the end",
+    "from": -2500,
+    "to": -800
+   },
+   "structure": "a mound built mainly of stones, sometimes retained by a low stone kerb",
+   "plan": "roughly circular",
+   "sources": [
+    {
+     "title": "Round cairn (FISH Thesaurus of Monument Types, concept 70050)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70050.html",
+     "locator": "scope note",
+     "quote": "A roughly hemispherical mound constructed primarily of stones, normally containing or covering one or more human burials.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cairn",
+     "locator": "section \"Ireland and Britain\"",
+     "quote": "In February 2020, ancient cairns dated back to 4,500 year-old used to bury the leaders or chieftains of Neolithic tribes people were revealed in the Cwmcelyn in Blaenau Gwent by the Aberystruth Archaeological Society.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "section \"Bell Beaker culture and migration\"",
+     "quote": "The 'Early Bronze Age' saw people buried in individual barrows, also commonly known and marked on modern British Ordnance Survey maps as tumuli, or sometimes in cists covered with cairns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "lead",
+     "quote": "The Bronze Age in Great Britain spanned from c. 2500–2200 BC until c. 800 BC.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cursus",
+   "name": "Cursus",
+   "family": "Ceremonial monuments",
+   "domain": "Prehistoric and Roman",
+   "fish": "69997",
+   "period": {
+    "text": "Neolithic, found only in Great Britain and Ireland: built between 3400 and 3000 BC",
+    "from": -3400,
+    "to": -3000
+   },
+   "structure": "parallel banks with external ditches, closed by banks at the ends",
+   "plan": "long, narrow and rectangular",
+   "sources": [
+    {
+     "title": "Cursus (FISH Thesaurus of Monument Types, concept 69997)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69997.html",
+     "locator": "scope note",
+     "quote": "A long narrow rectangular earthwork enclosure of Neolithic date, usually defined by a bank and ditch and presumed to be of ceremonial function.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Cursus",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cursus",
+     "locator": "lead",
+     "quote": "Found only in the islands of Great Britain and Ireland, relics within them indicate that they were built between 3400 and 3000 BC, making them among the oldest monumental structures on the islands.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "henge",
+   "name": "Henge",
+   "family": "Ceremonial monuments",
+   "domain": "Prehistoric and Roman",
+   "fish": "70096",
+   "period": {
+    "text": "Late Neolithic and Early Bronze Age: circular monuments, henges among them, replaced the long barrows and cursuses at the transition to the Late Neolithic about 3000 BC; the Beaker-period henges of the Boyne valley, about 2000 BC, are the latest dated in the sources",
+    "from": -3000,
+    "to": -2000
+   },
+   "structure": "an earthwork bank with the ditch (usually) inside it, sometimes enclosing timber or stone circles",
+   "plan": "circular or sub-circular, with one or two (rarely more) entrances",
+   "sources": [
+    {
+     "title": "Henge (FISH Thesaurus of Monument Types, concept 70096)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70096.html",
+     "locator": "scope note",
+     "quote": "Circular or sub-circular enclosure defined by a bank and (usually internal) ditch, with one or two (rarely more) entrances.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Late Neolithic\"",
+     "quote": "They were replaced by circular monuments of various kinds.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Henge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Henge",
+     "locator": "section \"Forms\"",
+     "quote": "Henges are usually associated with the Late Neolithic or Early Bronze Age, and especially with the pottery of this period: Grooved Ware, Impressed Wares (formerly known as Peterborough Ware), and Beakers.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Newgrange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newgrange",
+     "locator": "section \"Bronze Age and Iron Age\"",
+     "quote": "These structures at Newgrange are generally contemporary with several henges known from the Boyne Valley, at Newgrange Site A, Newgrange Site O, Dowth Henge, and Monknewtown Henge.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Newgrange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newgrange",
+     "locator": "section \"Bronze Age and Iron Age\"",
+     "quote": "by 2000 [BC] Newgrange was in decay and squatters were living around its collapsing edge",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stone-circle",
+   "name": "Stone circle",
+   "family": "Ceremonial monuments",
+   "domain": "Prehistoric and Roman",
+   "fish": "70190",
+   "period": {
+    "text": "Late Neolithic and Bronze Age: the earliest in Britain were raised 3200-2500 BC (Stenness and Callanish among the oldest), most between 3300 and 2500 BC; Burl's calibrated radiocarbon dates put the tradition between 3300 and 900 BC",
+    "from": -3300,
+    "flourish": [
+     -3200,
+     -2000
+    ],
+    "to": -900
+   },
+   "structure": "spaced, usually freestanding, upright stones",
+   "plan": "circular or oval, sometimes concentric rings",
+   "sources": [
+    {
+     "title": "Stone circle (FISH Thesaurus of Monument Types, concept 70190)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70190.html",
+     "locator": "scope note",
+     "quote": "An approximately circular or oval setting of spaced, usually freestanding, upright stones.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Stone circle (FISH Thesaurus of Monument Types, concept 70190)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70190.html",
+     "locator": "scope note",
+     "quote": "More than one circle may be present, arranged concentrically.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Stone circle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circle",
+     "locator": "section \"Dates and archaeology\"",
+     "quote": "The earliest stone circles in Britain were erected 3200–2500 BC, during the Middle Neolithic (c. 3200–2500 BC).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "lead",
+     "quote": "These were constructed from 3200 to 2000 BCE in Great Britain, Ireland and Brittany.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Dating, number and size\"",
+     "quote": "Burl said that, the calibration of these dates indicated that the stone circle tradition existed between 3300 and 900 BCE.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hillfort",
+   "name": "Hillfort",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": "68855",
+   "period": {
+    "text": "Late Bronze Age to the early Middle Ages: the first appeared in the Late Bronze Age; the great period of building was the Iron Age, 700 BC to the Roman conquest of AD 43; in the north and west some were built or reoccupied in the 5th-6th centuries (Dinas Powys), c. 600 used as the end",
+    "from": -1000,
+    "flourish": [
+     -700,
+     43
+    ],
+    "to": 600
+   },
+   "structure": "one or more circuits of ramparts of earth, stone or timber with external ditches (univallate or multivallate)",
+   "note": "Contour forts, partial contour, hillslope, level-terrain and multiple-enclosure forts are forms of this type; promontory forts are a variant.",
+   "sources": [
+    {
+     "title": "Hillfort (FISH Thesaurus of Monument Types, concept 68855)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68855.html",
+     "locator": "scope note",
+     "quote": "A hilltop enclosure bounded by one or more substantial banks, ramparts and ditches.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Bronze Age hillforts\"",
+     "quote": "British hillforts, as now recognised, first appeared in the Late Bronze Age.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hillfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillfort",
+     "locator": "section \"Great Britain\"",
+     "quote": "Hillforts in Britain are known from the Bronze Age, but the great period of hillfort construction was during the Celtic Iron Age, between 700 BC and the Roman conquest of Britain in 43 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Western Britain\"",
+     "quote": "For instance, the Dinas Powys hillfort in South Wales saw resettlement in the fifth century, as did South Cadbury Hillfort which has revealed significant evidence for the construction of a Sub-Roman 'Great Hall' within the enclosure, having long been associated with the mythical Camelot.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Nomenclature\"",
+     "quote": "They all refer to an elevated site with one or more ramparts made of earth, stone, or wood, with an external ditch.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Ramparts, walls and ditches\"",
+     "quote": "Univallate enclosures are characterized by a single circuit of ramparts for enclosure and defence.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "promontory-fort",
+   "name": "Promontory fort",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": "68863",
+   "period": {
+    "text": "Mostly Iron Age: Maen Castle, Cornwall, one of the oldest, about 500 BC (some Irish ones may begin in the Bronze Age); Tintagel was built or reoccupied in the early Middle Ages, c. 600 used as the end",
+    "from": -500,
+    "to": 600
+   },
+   "structure": "one or more lines of ramparts across the neck of a spur or headland",
+   "plan": "a promontory cut off by ramparts on the landward side",
+   "sources": [
+    {
+     "title": "Promontory fort (FISH Thesaurus of Monument Types, concept 68863)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68863.html",
+     "locator": "scope note",
+     "quote": "A defensive enclosure created by constructing one or more lines of ramparts across a neck of land, in order to defend, or restrict access to, a spur or promontory, either inland or on the coast.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Promontory fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Promontory_fort",
+     "locator": "section \"Devon and Cornwall\"",
+     "quote": "Maen Castle, near to Land's End is one of the oldest, having been dated to around 500 BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Promontory fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Promontory_fort",
+     "locator": "lead",
+     "quote": "Although their dating is problematic, most seem to date to the Iron Age.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Western Britain\"",
+     "quote": "For instance, on the defensive peninsula of Tintagel in Cornwall, a promontory fort known as Tintagel Castle was built in the early medieval period, with archaeologists believing that it acted as a \"stronghold for the post-Roman kings of Dumnonia.\"",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dun",
+   "name": "Dun",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": "143001",
+   "period": {
+    "text": "From about the 7th century BC; in use in some parts into the Middle Ages (the sources date no late example, so c. 1000 is used as the end)",
+    "from": -700,
+    "to": 1000
+   },
+   "structure": "a thick drystone (early ones stone and timber) wall",
+   "plan": "circular or oval",
+   "sources": [
+    {
+     "title": "Dun (FISH Thesaurus of Monument Types, concept 143001)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/143001.html",
+     "locator": "scope note",
+     "quote": "A building or settlement enclosure with a thick drystone wall, generally circular or oval in plan, usually sited in an elevated position.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Dun (fortification)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dun_(fortification)",
+     "locator": "section \"Details\"",
+     "quote": "Duns seem to have arrived with the Celts in about the 7th century BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dun (fortification)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dun_(fortification)",
+     "locator": "section \"Details\"",
+     "quote": "Use of duns continued in some parts into the Middle Ages.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dun (fortification)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dun_(fortification)",
+     "locator": "section \"Details\"",
+     "quote": "Early duns had near vertical ramparts made of stone and timber.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ringfort",
+   "name": "Ringfort (rath)",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": null,
+   "period": {
+    "text": "Early medieval Ireland: the generally accepted dating is the second half of the first millennium (543-991), two-thirds of dated sites 600-900 (Stout), with large-scale desertion at the end of the millennium; earlier (Iron Age, even Bronze Age) origins and later use are argued",
+    "from": 543,
+    "flourish": [
+     600,
+     900
+    ],
+    "to": 1000
+   },
+   "structure": "an earthen bank with an outer ditch, often with a stake wall, enclosing the house and farm buildings",
+   "plan": "circular, about 30 m across",
+   "sources": [
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"Chronology\"",
+     "quote": "the more common and generally accepted theory that ringforts were a product of the second half of the first millennium (543-991)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"7th to 10th centuries\"",
+     "quote": "has placed over half of all ringforts in the period 540 AD to 884 AD with two-thirds falling within the 600 AD to 900 AD period",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gaelic Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+     "locator": "section \"Settlements and architecture\"",
+     "quote": "Most date to the period 500–1000 CE and there is evidence of large-scale ringfort desertion at the end of the first millennium.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "lead",
+     "quote": "Earthen ringforts would have been marked by a circular rampart (a bank and ditch), often with a stakewall.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Gaelic Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+     "locator": "section \"Settlements and architecture\"",
+     "quote": "The ringfort would typically have enclosed the family home, small farm buildings or workshops, and animal pens.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Gaelic Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+     "locator": "section \"Settlements and architecture\"",
+     "quote": "The ráth is an earthen ringfort, averaging 30m diameter, with a dry outside ditch.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cashel",
+   "name": "Cashel (stone ringfort)",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": null,
+   "period": {
+    "text": "Stone ringforts: Staigue, County Kerry, probably about 100 BC; Cahergall around the 7th century AD and Leacanabuaile around the 9th century AD as defended farmsteads",
+    "from": -100,
+    "to": 900
+   },
+   "structure": "a thick drystone wall",
+   "plan": "circular",
+   "sources": [
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"Ireland\"",
+     "quote": "The caiseal and cathair was a stone ringfort.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Staigue stone fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Staigue_stone_fort",
+     "locator": "lead",
+     "quote": "The fort is thought to have been built during the late Iron Age, probably 100 BC, as a defensive stronghold for a local lord or king.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cahergal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cahergal",
+     "locator": "section \"History\"",
+     "quote": "The cashel was built around the 7th century AD as a defended farmstead.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Leacanabuaile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leacanabuaile",
+     "locator": "section \"History\"",
+     "quote": "The cashel was built around the 9th century AD as a defended farmstead.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Leacanabuaile",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leacanabuaile",
+     "locator": "section \"Description\"",
+     "quote": "It is built of drystone with gaps filled in with rubble.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Cahergal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cahergal",
+     "locator": "section \"Description\"",
+     "quote": "This is a circular stone ringfort (caiseal) of internal diameter 25 m (82 ft) with outer walls 4 m (13 ft) high and 5 m (16 ft) thick.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "crannog",
+   "name": "Crannog",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": "68944",
+   "period": {
+    "text": "Neolithic to the early 18th century: the oldest, Eilean Domhnuill and Loch Bhorghastail, 3650-2500 and 3630-3380 BC; at their peak in Scotland 800 BC-AD 200 and in Ireland in the Early Historic period; strongholds of Gaelic chiefs until the 17th century, used in Scotland into the early 18th",
+    "from": -3650,
+    "flourish": [
+     -800,
+     200
+    ],
+    "to": 1700
+   },
+   "structure": "an artificial island of timber, brush, earth and stones, often revetted with timber piles",
+   "sources": [
+    {
+     "title": "Crannog (FISH Thesaurus of Monument Types, concept 68944)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68944.html",
+     "locator": "scope note",
+     "quote": "An island, partly or wholly artificial, built up by dumping timber, earth and stones onto a lake or river bed.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Crannog",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crannog",
+     "locator": "lead",
+     "quote": "Some crannogs apparently involved free-standing wooden structures, as at Loch Tay, although more commonly they are composed of brush, stone or timber mounds that can be revetted with timber piles.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Crannog",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crannog",
+     "locator": "section \"History\"",
+     "quote": "Eilean Domhnuill has produced radiocarbon dates ranging from 3650 to 2500 BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Crannog",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crannog",
+     "locator": "section \"History\"",
+     "quote": "Crannog construction and occupation was at its peak in Scotland from about 800 BC to AD 200.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Crannog",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crannog",
+     "locator": "section \"Types and problems with definition\"",
+     "quote": "In Scotland, the medieval and post-medieval use of crannogs is also documented into the early 18th century.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "souterrain",
+   "name": "Souterrain",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": "68995",
+   "period": {
+    "text": "Late Iron Age to the 12th century: brought north from Gaul in the late Iron Age; the earliest dated in the sources, at Brechin, 1st-3rd centuries AD; in Ireland mostly contemporary with the ringforts (6th-century ogham stones reused in them), one closed up in the 12th century",
+    "from": 1,
+    "to": 1200
+   },
+   "structure": "underground galleries dug out, lined with stone slabs or wood, and covered over",
+   "sources": [
+    {
+     "title": "Souterrain (FISH Thesaurus of Monument Types, concept 68995)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68995.html",
+     "locator": "scope note",
+     "quote": "An underground chamber, store room or passage.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Souterrain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Souterrain",
+     "locator": "lead",
+     "quote": "These structures appear to have been brought northwards from Gaul during the late Iron Age.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Souterrain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Souterrain",
+     "locator": "section \"Brechin\"",
+     "quote": "Radiocarbon dating suggests occupation between the 1st and 3rd centuries AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Souterrain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Souterrain",
+     "locator": "section \"Other Irish souterrains\"",
+     "quote": "In Ireland, souterrains often are found inside or in close proximity to a ringfort and as such are thought to be mainly contemporary with them, making them somewhat later in date than in other countries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Souterrain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Souterrain",
+     "locator": "section \"Farrandreg\"",
+     "quote": "Based on the finds, the excavator concluded the souterrain had been closed up in the 12th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Souterrain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Souterrain",
+     "locator": "section \"Construction and suggested purpose\"",
+     "quote": "The galleries were dug out and then lined with stone slabs or wood before being reburied.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fogou",
+   "name": "Fogou",
+   "family": "Hillforts and defended settlements",
+   "domain": "Prehistoric and Roman",
+   "fish": "68996",
+   "period": {
+    "text": "Iron Age and Romano-British, Cornwall only: on settlement sites such as Carn Euny, occupied from the 5th century BC to the 4th century AD",
+    "from": -500,
+    "to": 400
+   },
+   "structure": "a buried drystone passage, usually corbelled, roofed with stone slabs",
+   "sources": [
+    {
+     "title": "Fogou (FISH Thesaurus of Monument Types, concept 68996)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68996.html",
+     "locator": "scope note",
+     "quote": "Underground chambers and stone passages of Iron Age date found in South West England.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Fogou",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fogou",
+     "locator": "lead",
+     "quote": "A fogou or fougou (pronounced \"foo-goo\") is an underground, dry-stone structure found on Iron Age or Romano-British-defended settlement sites in Cornwall, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Carn Euny",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carn_Euny",
+     "locator": "section \"Excavations\"",
+     "quote": "Four main occupation phases between the 5th century BC and the 4th century AD were found.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fogou",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fogou",
+     "locator": "section \"Construction\"",
+     "quote": "Fogous consist of a buried, usually corbelled stone wall, tapering at the top and capped by stone slabs.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roman-fort",
+   "name": "Roman fort (castrum)",
+   "family": "Roman military",
+   "domain": "Prehistoric and Roman",
+   "fish": "68870",
+   "period": {
+    "text": "Roman Britain, from the conquest of AD 43 to the end of Roman rule about 410",
+    "from": 43,
+    "to": 410
+   },
+   "structure": "ditches and ramparts or defensive walls with gates around the barracks, headquarters and other buildings",
+   "plan": "rectangular, with internal streets in a grid",
+   "note": "FISH files the permanent fort of auxiliaries as auxiliary fort; marching camps and legionary fortresses are other types.",
+   "sources": [
+    {
+     "title": "Auxiliary fort (FISH Thesaurus of Monument Types, concept 68870)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68870.html",
+     "locator": "scope note",
+     "quote": "A permanent Roman fort enclosed by a number of ditches and ramparts, used to house a garrison of auxiliaries.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Castra",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castra",
+     "locator": "lead",
+     "quote": "A castrum was the fortified base of a Roman legion, a detachment thereof, or of auxiliary units, providing secure locations for training, administration, and defense.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Castra",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castra",
+     "locator": "lead",
+     "quote": "They were typically designed with a standardized layout, including a rectangular plan, defensive walls, gates, and internal streets arranged in a grid pattern, reflecting Roman military discipline and engineering expertise.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "saxon-shore-fort",
+   "name": "Saxon Shore fort",
+   "family": "Roman military",
+   "domain": "Prehistoric and Roman",
+   "fish": "68872",
+   "period": {
+    "text": "Late Roman: Brancaster, Caister-on-Sea and Reculver built from the 230s; the rest between the 270s and 290s (Pevensey around 290, Portchester 285-290)",
+    "from": 230,
+    "flourish": [
+     270,
+     290
+    ],
+    "to": 290
+   },
+   "structure": "high, thick stone walls and a ditch",
+   "sources": [
+    {
+     "title": "Saxon shore fort (FISH Thesaurus of Monument Types, concept 68872)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68872.html",
+     "locator": "scope note",
+     "quote": "Roman coastal forts fortified with large walls and a ditch, introduced to cope with raids from across the English Channel and North Sea.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Saxon Shore",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saxon_Shore",
+     "locator": "section \"Background\"",
+     "quote": "Already in the 230s, under Severus Alexander, several units had been withdrawn from the northern frontier and garrisoned at locations in the south, and had built new forts at Brancaster and Caister-on-Sea in Norfolk and Reculver in Kent.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Saxon Shore",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saxon_Shore",
+     "locator": "section \"Background\"",
+     "quote": "Dover was already fortified in the early 2nd century, and the other forts in this group were constructed in the period between the 270s and 290s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Saxon Shore",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saxon_Shore",
+     "locator": "lead",
+     "quote": "Several well-preserved Saxon Shore forts survive in east and south-east England; they are some of the best-preserved Roman forts surviving in the world, notable for the height and strength of their walls.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roman-villa",
+   "name": "Roman villa",
+   "family": "Roman civil",
+   "domain": "Prehistoric and Roman",
+   "fish": "68653",
+   "period": {
+    "text": "Roman Britain: Fishbourne, unusually early, about AD 75; villa building and decoration blossomed between 300 and 350; villas were still occupied until at least 430 and abandoned in the 5th century",
+    "from": 75,
+    "flourish": [
+     300,
+     350
+    ],
+    "to": 430
+   },
+   "structure": "timber frames on stone footings, stone for the main rooms",
+   "plan": "ranges of rooms opening onto a linking portico, sometimes round a courtyard",
+   "note": "FISH's Villa also covers Georgian and later villas: only Roman examples belong to this type.",
+   "sources": [
+    {
+     "title": "Villa (FISH Thesaurus of Monument Types, concept 68653)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68653.html",
+     "locator": "scope note",
+     "quote": "Roman villas were high-status and usually associated with a rural estate, whereas Georgian and later period villas were often semi-detached, town houses."
+    },
+    {
+     "title": "Fishbourne Roman Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace",
+     "locator": "lead",
+     "quote": "The palace is the largest known Roman residence north of the Alps, and has an unusually early date of 75 AD, around thirty years after the Roman conquest of Britain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "section \"Economy\"",
+     "quote": "This prosperity lay behind the blossoming of villa building and decoration that occurred between 300 and 350.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "section \"End of Roman rule\"",
+     "quote": "Many suffered some decay before being abandoned in the 5th century; the story of Saint Patrick indicates that villas were still occupied until at least 430.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"In Roman Britannia\"",
+     "quote": "The more usual plan extended wings of rooms all opening onto a linking portico, which might be extended at right angles, even to enclose a courtyard.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"In Roman Britannia\"",
+     "quote": "Timber-framed construction, carefully fitted with mortises and tenons and dowelled together, set on stone footings, were the rule, replaced by stone buildings for the important ceremonial rooms.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "romano-celtic-temple",
+   "name": "Romano-Celtic temple",
+   "family": "Roman civil",
+   "domain": "Prehistoric and Roman",
+   "fish": "171421",
+   "period": {
+    "text": "Roman Britain, from the conquest of AD 43; Maiden Castle's was built after 367 and Brean Down's re-established in the mid-4th century; closed at the end of the 4th century by the anti-pagan laws (as stated for Gaul)",
+    "from": 43,
+    "to": 400
+   },
+   "structure": "a tower-like cella rising above a surrounding ambulatory, in stone, timber or both, within a walled or ditched sacred enclosure",
+   "plan": "square or octagonal (sometimes circular or triangular), the cella within an ambulatory",
+   "sources": [
+    {
+     "title": "Romano celtic temple (FISH Thesaurus of Monument Types, concept 171421)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/171421.html",
+     "locator": "scope note",
+     "quote": "Romano Celtic temples differ in form from rectangular Classical temples but being either square or octagonal with a central cella rising above a surrounding ambulatory.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Romano-Celtic temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Romano-Celtic_temple",
+     "locator": "section \"Layout and location\"",
+     "quote": "A Roman-Celtic temple consisted of a box-like or tower-like main room (cella), of variable height, surrounded by an ambulatory or veranda built from stone, wood or both.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Romano-Celtic temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Romano-Celtic_temple",
+     "locator": "section \"Layout and location\"",
+     "quote": "The main temple building usually stood within a sacred enclosure (temenos) along with other religious structures, which was usually marked off by a wall, palisade and ditch.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Romano-Celtic temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Romano-Celtic_temple",
+     "locator": "section \"Layout and location\"",
+     "quote": "The layout of these complexes were usually square or octagonal, but were sometimes circular or triangular as well.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Romano-Celtic temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Romano-Celtic_temple",
+     "locator": "section \"In Britain\"",
+     "quote": "Romano-Celtic temples were built across Britannia and are frequently associated with sites with recorded pre-Roman activity, such as at Jordan Hill.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Maiden Castle, Dorset",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maiden_Castle,_Dorset",
+     "locator": "section \"Roman activity and abandonment\"",
+     "quote": "Sometime after 367, a Romano-Celtic temple was built at Maiden Castle in the eastern half of the hill fort.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Romano-Celtic temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Romano-Celtic_temple",
+     "locator": "section \"In Gaul\"",
+     "quote": "These temples would have been closed at the end of the 4th century by late Roman imperial anti-pagan laws, but many had already been slowly abandoned during the preceding period, their cults having been neglected or the locality depopulated.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roman-town-wall",
+   "name": "Roman town wall",
+   "family": "Roman civil",
+   "domain": "Prehistoric and Roman",
+   "fish": null,
+   "period": {
+    "text": "Roman Britain: London's wall was built about AD 200 (after a mound and ditch of about AD 100); the walls fell into disrepair after the end of Roman rule about 410",
+    "from": 200,
+    "to": 410
+   },
+   "structure": "massive mortar-bound stone walls",
+   "sources": [
+    {
+     "title": "London Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Wall",
+     "locator": "lead",
+     "quote": "The London Wall is a defensive wall first built by the Romans around the strategically important port town of Londinium in c. AD 200, as well as the name of a modern street in the City of London, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Wall",
+     "locator": "lead",
+     "quote": "The end of Roman rule in Britain, around 410, led to the wall falling into disrepair.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Silchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silchester",
+     "locator": "lead",
+     "quote": "The site includes what is considered the best-preserved Roman town wall in Great Britain and the remains of what may be one of the earliest Christian churches found in the British Isles.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Defensive wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Defensive_wall",
+     "locator": "section \"Europe\"",
+     "quote": "The Romans later fortified their cities with massive, mortar-bound stone walls.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "chambered-tomb>passage-tomb",
+   "from": "chambered-tomb",
+   "to": "passage-tomb",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The passage tomb is a form of chambered tomb: a chamber reached by a narrow passage under a round mound; some chambered cairns are passage graves.",
+   "sources": [
+    {
+     "title": "Passage grave (FISH Thesaurus of Monument Types, concept 70068)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70068.html",
+     "locator": "scope note",
+     "quote": "A form of Neolithic burial monument comprising a large circular stone or earthen mound, with a low and narrow entrance passage leading to a wider and higher stone built chamber."
+    },
+    {
+     "title": "Chambered cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chambered_cairn",
+     "locator": "lead",
+     "quote": "Some chambered cairns are also passage-graves."
+    }
+   ]
+  },
+  {
+   "id": "chambered-tomb>portal-tomb",
+   "from": "chambered-tomb",
+   "to": "portal-tomb",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The portal tomb or dolmen is a single-chamber megalithic tomb of large uprights carrying a capstone, one of the forms of chambered tomb.",
+   "sources": [
+    {
+     "title": "Portal dolmen (FISH Thesaurus of Monument Types, concept 70069)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70069.html",
+     "locator": "scope note",
+     "quote": "A megalithic tomb of Neolithic date comprising a chamber bounded by large upright orthostats, often only three or four in number, which support a large capstone."
+    },
+    {
+     "title": "Dolmen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dolmen",
+     "locator": "lead",
+     "quote": "or portal tomb, is a type of single-chamber megalithic tomb"
+    }
+   ]
+  },
+  {
+   "id": "chambered-tomb>court-tomb",
+   "from": "chambered-tomb",
+   "to": "court-tomb",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The court tomb (court cairn, Clyde cairn) is a type of chambered cairn with an open court in front of its chambers, built in Ireland and south-west Scotland.",
+   "sources": [
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "lead",
+     "quote": "The court cairn or court tomb is a megalithic type of chambered cairn or gallery grave."
+    },
+    {
+     "title": "Chambered cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chambered_cairn",
+     "locator": "section \"Clyde-Carlingford court cairns\"",
+     "quote": "gives this type of chambered cairn its alternate name of court tomb or court cairn"
+    }
+   ],
+   "region": "Ireland and south-west Scotland"
+  },
+  {
+   "id": "chambered-tomb>wedge-tomb",
+   "from": "chambered-tomb",
+   "to": "wedge-tomb",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The wedge tomb is an Irish chamber tomb, a gallery grave narrowing to the back, the last of the Irish megalithic tomb types (about 2500-2000 BC).",
+   "sources": [
+    {
+     "title": "Gallery grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallery_grave",
+     "locator": "section \"Wedge-shaped\"",
+     "quote": "A wedge-shaped gallery grave or wedge tomb is a type of Irish chamber tomb."
+    },
+    {
+     "title": "Passage grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passage_grave",
+     "locator": "section \"Origins and distribution\"",
+     "quote": "describe four categories of megalithic tombs: court cairns, portal dolmens, wedge-shaped gallery graves, and passage tombs"
+    }
+   ],
+   "region": "Ireland"
+  },
+  {
+   "id": "portal-tomb>passage-tomb",
+   "from": "portal-tomb",
+   "to": "passage-tomb",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "The earliest passage tombs seem to take the form of small dolmens; the source says 'seem', and not all dolmens are passage tombs.",
+   "sources": [
+    {
+     "title": "Passage grave",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passage_grave",
+     "locator": "section \"Construction and design\"",
+     "quote": "The earliest passage tombs seem to take the form of small dolmens, although not all dolmens are passage graves."
+    },
+    {
+     "title": "Court cairn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Court_cairn",
+     "locator": "section \"History\"",
+     "quote": "The first burial monuments in these areas were most likely single chamber dolmens surrounded by large standing stones."
+    }
+   ]
+  },
+  {
+   "id": "long-barrow>round-barrow",
+   "from": "long-barrow",
+   "to": "round-barrow",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The communal burial of the Neolithic in long barrows and chambered cairns gave way in the Early Bronze Age to burial of individuals under round barrows.",
+   "sources": [
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "section \"Bell Beaker culture and migration\"",
+     "quote": "For example, in the Neolithic era, a large chambered cairn or long barrow was used to house the dead."
+    },
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "section \"Bell Beaker culture and migration\"",
+     "quote": "The 'Early Bronze Age' saw people buried in individual barrows, also commonly known and marked on modern British Ordnance Survey maps as tumuli, or sometimes in cists covered with cairns."
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Late Neolithic\"",
+     "quote": "By that date, the long barrows, causewayed enclosures, and cursuses which had predominated in the Early Neolithic had ceased to be built."
+    }
+   ]
+  },
+  {
+   "id": "chambered-tomb>round-cairn",
+   "from": "chambered-tomb",
+   "to": "round-cairn",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Where the Neolithic dead were placed together in chambered cairns, the Early Bronze Age buried individuals, sometimes in cists covered with cairns.",
+   "sources": [
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "section \"Bell Beaker culture and migration\"",
+     "quote": "In contrast to the Neolithic practice of communal burials, the Bronze Age society undergoes an apparent shift towards focusing on to the individual, rather on the ancestors as a collective."
+    },
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "section \"Bell Beaker culture and migration\"",
+     "quote": "The 'Early Bronze Age' saw people buried in individual barrows, also commonly known and marked on modern British Ordnance Survey maps as tumuli, or sometimes in cists covered with cairns."
+    }
+   ]
+  },
+  {
+   "id": "round-barrow>round-cairn",
+   "from": "round-barrow",
+   "to": "round-cairn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A round mound built of stone rather than earth is called a cairn instead of a barrow.",
+   "sources": [
+    {
+     "title": "Bowl barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bowl_barrow",
+     "locator": "section \"Description\"",
+     "quote": "Where the mound is composed entirely of stone, rather than earth, the term cairn replaces the word barrow."
+    },
+    {
+     "title": "Round cairn (FISH Thesaurus of Monument Types, concept 70050)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70050.html",
+     "locator": "scope note",
+     "quote": "A roughly hemispherical mound constructed primarily of stones, normally containing or covering one or more human burials."
+    }
+   ]
+  },
+  {
+   "id": "chambered-tomb>stone-circle",
+   "from": "chambered-tomb",
+   "to": "stone-circle",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "In the Late Neolithic the chambered tombs of the Early Neolithic ceased to be built and circular monuments, stone circles among them, took their place as the monuments of the time.",
+   "sources": [
+    {
+     "title": "Neolithic British Isles",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Neolithic_British_Isles",
+     "locator": "lead",
+     "quote": "The earliest of them are the chambered tombs of the Early Neolithic, but in the Late Neolithic, this form of monumentalization was replaced by the construction of stone circles, a trend that would continue into the following Bronze Age."
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Late Neolithic\"",
+     "quote": "There was a change from the cramped, gloomy chamber of a tomb to the unroofed, wide ring, a change from darkness to light, from the dead to the living, from the grave to the sky."
+    }
+   ]
+  },
+  {
+   "id": "cursus>henge",
+   "from": "cursus",
+   "to": "henge",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "By about 3000 BC cursuses (with long barrows and causewayed enclosures) had ceased to be built and were replaced by circular monuments, earthen henges among them; at Thornborough a henge overlies a cursus.",
+   "sources": [
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Late Neolithic\"",
+     "quote": "By that date, the long barrows, causewayed enclosures, and cursuses which had predominated in the Early Neolithic had ceased to be built."
+    },
+    {
+     "title": "Stone circles in the British Isles and Brittany",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circles_in_the_British_Isles_and_Brittany",
+     "locator": "section \"Late Neolithic\"",
+     "quote": "These include not only stone circles, but also earthen henges and timber circles."
+    },
+    {
+     "title": "Henge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Henge",
+     "locator": "section \"Forms\"",
+     "quote": "Earlier monuments associated with a later henge might include Neolithic monuments such as a cursus (e.g., at Thornborough Henges the central henge overlies the cursus), or a long barrow, such as the West Kennet Long Barrow at Avebury, Wiltshire, or, as in the case of Stonehenge, Mesolithic post holes."
+    }
+   ]
+  },
+  {
+   "id": "long-barrow>cursus",
+   "from": "long-barrow",
+   "to": "cursus",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Cursuses share the long barrows' parallel ditches on a far larger scale and are often aligned on existing long barrows; the sources give the likeness and the alignment, not a descent.",
+   "sources": [
+    {
+     "title": "Long barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Long_barrow",
+     "locator": "section \"Design and architecture\"",
+     "quote": "Cursus monuments also exhibit parallel ditches, but also extend over much longer distances than the long barrows."
+    },
+    {
+     "title": "Cursus",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cursus",
+     "locator": "section \"Function\"",
+     "quote": "They are often aligned on and respect the position of pre-existing long barrows and bank barrows and appear to ignore difficulties in terrain."
+    }
+   ]
+  },
+  {
+   "id": "henge>stone-circle",
+   "from": "henge",
+   "to": "stone-circle",
+   "kind": "variant",
+   "confidence": "disputed",
+   "claim": "Henges and stone circles overlap: the largest stone circles stand within henges, and one view makes the true stone circle a regional form of henge; the other holds them distinct monuments that occur together or apart.",
+   "sources": [
+    {
+     "title": "Stone circle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stone_circle",
+     "locator": "lead",
+     "quote": "Although it is often assumed there are thousands of stone circles across the British Isles and Europe, such enclosures are actually very rare, and constitute a regional form of henge."
+    },
+    {
+     "title": "Henge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Henge",
+     "locator": "section \"Forms\"",
+     "quote": "A henge should not be confused with a stone circle within it, as henges and stone circles can exist together or separately."
+    },
+    {
+     "title": "Henge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Henge",
+     "locator": "lead",
+     "quote": "The three largest stone circles in Britain (Avebury, the Great Circle at Stanton Drew stone circles, and the Ring of Brodgar) are each within a henge."
+    }
+   ],
+   "views": [
+    "Wikipedia's Stone circle article: true stone circles are rare and constitute a regional form of henge.",
+    "Wikipedia's Henge article: henges and stone circles are distinct and can exist together or separately."
+   ]
+  },
+  {
+   "id": "round-house>hillfort",
+   "from": "round-house",
+   "to": "hillfort",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Hillforts appeared in the Late Bronze Age as the middle Bronze Age settlements of groups of round houses within enclosures came to an end; inside hillforts such as Maiden Castle people lived in round houses. The sources give the order and the coincidence, not a descent.",
+   "sources": [
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Bronze Age hillforts\"",
+     "quote": "and the demise of a middle Bronze Age settlement format of groups of round houses set within enclosures"
+    },
+    {
+     "title": "Maiden Castle, Dorset",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maiden_Castle,_Dorset",
+     "locator": "section \"Developed hill fort\"",
+     "quote": "Maiden Castle was occupied throughout the Iron Age and its inhabitants lived in roundhouses."
+    }
+   ]
+  },
+  {
+   "id": "hillfort>promontory-fort",
+   "from": "hillfort",
+   "to": "promontory-fort",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Hillfort typologies class the inland promontory and the sea promontory among the locations of hillforts: ramparts across the neck of a spur or headland instead of round a hilltop.",
+   "sources": [
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Inland promontory\"",
+     "quote": "An inland defensive position on a ridge or spur with steep slopes on two or three sides, and artificial ramparts on the other level approach."
+    },
+    {
+     "title": "Hillforts in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillforts_in_Britain",
+     "locator": "section \"Sea promontory\"",
+     "quote": "A linear earthwork across a narrow neck of land leading to a peninsula with steep cliffs to the sea on three sides; common on indented Atlantic coasts, such as Ireland, Cornwall, Brittany and west Wales."
+    }
+   ]
+  },
+  {
+   "id": "hillfort>dun",
+   "from": "hillfort",
+   "to": "dun",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "In Britain and Ireland a dun is mainly a kind of hillfort (and also a kind of Atlantic roundhouse), a small fort with a thick drystone wall.",
+   "sources": [
+    {
+     "title": "Dun (fortification)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dun_(fortification)",
+     "locator": "lead",
+     "quote": "In Great Britain and Ireland it is mainly a kind of hillfort and also a kind of Atlantic roundhouse."
+    },
+    {
+     "title": "Dun (FISH Thesaurus of Monument Types, concept 143001)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/143001.html",
+     "locator": "scope note",
+     "quote": "A building or settlement enclosure with a thick drystone wall, generally circular or oval in plan, usually sited in an elevated position."
+    }
+   ],
+   "region": "Scotland and Ireland"
+  },
+  {
+   "id": "round-house>crannog",
+   "from": "round-house",
+   "to": "crannog",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "In Gaelic Ireland the crannog was a round house built on an artificial island in a lake.",
+   "sources": [
+    {
+     "title": "Gaelic Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+     "locator": "section \"Settlements and architecture\"",
+     "quote": "Another kind of native dwelling was the crannóg, which were roundhouses built on artificial islands in lakes."
+    }
+   ],
+   "region": "Ireland"
+  },
+  {
+   "id": "dun>crannog",
+   "from": "dun",
+   "to": "crannog",
+   "kind": "convergence",
+   "confidence": "probable",
+   "claim": "In the Western Isles stone-built dwellings on artificial islets are classed as island duns or as crannogs depending on whether a crannog must use timber; the sources describe overlapping forms, not a descent.",
+   "sources": [
+    {
+     "title": "Crannog",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crannog",
+     "locator": "section \"Types and problems with definition\"",
+     "quote": "If not classed as \"true\" crannogs, small occupied islets (often at least partially artificial in nature) may be referred to as \"island duns\"."
+    },
+    {
+     "title": "Dun (fortification)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dun_(fortification)",
+     "locator": "section \"Details\"",
+     "quote": "Good examples of this kind of dun can be found in the Outer Hebrides of Scotland, on artificial islands in small lakes."
+    }
+   ],
+   "region": "Western Isles"
+  },
+  {
+   "id": "hillfort>castle",
+   "from": "hillfort",
+   "to": "castle",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "A few hillforts became the sites of medieval castles: a motte and bailey at Old Sarum by 1069, a stone castle at Castell Dinas Brân in the 13th century. The sources record reuse of the sites, not that hillforts shaped the design of castles.",
+   "sources": [
+    {
+     "title": "Old Sarum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Sarum",
+     "locator": "lead",
+     "quote": "The Normans constructed a motte and bailey castle, a stone curtain wall, and Old Sarum Cathedral."
+    },
+    {
+     "title": "Hillfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillfort",
+     "locator": "section \"Great Britain\"",
+     "quote": "similarly at Castell Dinas Brân a hillfort of c. 600 BCE was reused in the Middle Ages, with a stone castle built there in the 13th century CE"
+    }
+   ]
+  },
+  {
+   "id": "hillfort>roman-fort",
+   "from": "hillfort",
+   "to": "roman-fort",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "After the conquest the Romans occupied some hillforts, putting a garrison in Hod Hill; others were destroyed and abandoned.",
+   "sources": [
+    {
+     "title": "Hillfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hillfort",
+     "locator": "section \"Great Britain\"",
+     "quote": "The Romans occupied some forts, such as the military garrison at Hod Hill, and the temple at Brean Down, but others were destroyed and abandoned."
+    }
+   ]
+  },
+  {
+   "id": "hillfort>romano-celtic-temple",
+   "from": "hillfort",
+   "to": "romano-celtic-temple",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Some hillforts became the sites of Romano-Celtic temples, as at Maiden Castle after 367 and at Brean Down; the sources record the choice of site, not a link of form.",
+   "sources": [
+    {
+     "title": "Romano-Celtic temple",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Romano-Celtic_temple",
+     "locator": "section \"In Britain\"",
+     "quote": "Prominent places within a landscape were also chosen as sites for Romano-Celtic temples, such as on top of a hill like the huge Iron Age Hillfort at Maiden Castle, Dorset or on a coastal promontory such as at Brean Down, Somerset."
+    },
+    {
+     "title": "Maiden Castle, Dorset",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maiden_Castle,_Dorset",
+     "locator": "section \"Roman activity and abandonment\"",
+     "quote": "Sometime after 367, a Romano-Celtic temple was built at Maiden Castle in the eastern half of the hill fort."
+    }
+   ]
+  },
+  {
+   "id": "ringfort>cashel",
+   "from": "ringfort",
+   "to": "cashel",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The cashel (caiseal, cathair) is the stone form of the ringfort, the rath its earthen form.",
+   "sources": [
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"Ireland\"",
+     "quote": "The caiseal and cathair was a stone ringfort."
+    },
+    {
+     "title": "Gaelic Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+     "locator": "section \"Settlements and architecture\"",
+     "quote": "The cathair or caiseal is a stone ringfort."
+    }
+   ],
+   "region": "Ireland"
+  },
+  {
+   "id": "round>ringfort",
+   "from": "round",
+   "to": "ringfort",
+   "kind": "convergence",
+   "confidence": "probable",
+   "claim": "The Cornish rounds and south Welsh raths resemble the Irish ringforts in their circular shape and souterrains; a link through contact is suggested but cannot be confirmed because their dates differ.",
+   "sources": [
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"England and Wales\"",
+     "quote": "In Cornwall, parts of Devon, and south Wales, enclosed settlements share many characteristics with the Irish counterparts, including the circular shape and souterrains (fogous), and their continuing occupation from the Iron Age into the early medieval period"
+    },
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"Dating from the Iron Age\"",
+     "quote": "The similarity with South Welsh 'raths' and Cornish 'rounds'  suggests a degree of cultural interaction between Western British and Irish populations, however differences in dates of occupation mean this cannot be confirmed."
+    }
+   ]
+  },
+  {
+   "id": "ringfort>motte-and-bailey",
+   "from": "ringfort",
+   "to": "motte-and-bailey",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "After the Norman invasion of Ireland some motte-and-bailey castles were made from existing ringforts, and by 1300 some mottes in frontier areas were built by the Gaelic Irish in imitation; most ringforts had been deserted at the end of the first millennium.",
+   "sources": [
+    {
+     "title": "Gaelic Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+     "locator": "section \"Settlements and architecture\"",
+     "quote": "After the invasion, the Normans built motte-and-bailey castles in the areas they occupied, some of which were converted from ringforts."
+    },
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"Use continuing into the later medieval period\"",
+     "quote": "in a number of cases it would appear that either the Normans converted existing ringforts into the basis of the future construction of mottes and earthworks, or that the Gaelic Irish, through the use of raised raths, sought to emulate the Norman example"
+    }
+   ],
+   "region": "Ireland"
+  },
+  {
+   "id": "souterrain>fogou",
+   "from": "souterrain",
+   "to": "fogou",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The fogou is the Cornish souterrain: the regional name is applied to souterrain structures in Cornwall.",
+   "sources": [
+    {
+     "title": "Souterrain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Souterrain",
+     "locator": "lead",
+     "quote": "In Cornwall the regional name of fogou (Cornish for 'cave') is applied to souterrain structures."
+    },
+    {
+     "title": "Carn Euny",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carn_Euny",
+     "locator": "section \"Construction\"",
+     "quote": "Fogous can be found in other places in the UK and Ireland, and are known more generally as souterrains."
+    }
+   ],
+   "region": "Cornwall"
+  },
+  {
+   "id": "roman-fort>saxon-shore-fort",
+   "from": "roman-fort",
+   "to": "saxon-shore-fort",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Saxon Shore forts were Roman coastal forts of the 3rd century with high, strong walls, built against raids across the Channel and North Sea.",
+   "sources": [
+    {
+     "title": "Saxon shore fort (FISH Thesaurus of Monument Types, concept 68872)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68872.html",
+     "locator": "scope note",
+     "quote": "Roman coastal forts fortified with large walls and a ditch, introduced to cope with raids from across the English Channel and North Sea."
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "section \"Third century\"",
+     "quote": "A string of forts were built along the coast of southern Britain to control piracy; and over the following hundred years they increased in number, becoming the Saxon Shore Forts."
+    }
+   ]
+  },
+  {
+   "id": "saxon-shore-fort>castle",
+   "from": "saxon-shore-fort",
+   "to": "castle",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The Normans built castles inside the walls of Saxon Shore forts: Pevensey, reoccupied in 1066 with a keep within the Roman walls, and Portchester, whose keep was probably built in the late 11th century.",
+   "sources": [
+    {
+     "title": "Pevensey Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pevensey_Castle",
+     "locator": "lead",
+     "quote": "Anderitum fell into ruin following the end of the Roman occupation but was reoccupied in 1066 by the Normans, for whom it became a key strategic bulwark."
+    },
+    {
+     "title": "Pevensey Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pevensey_Castle",
+     "locator": "lead",
+     "quote": "A stone keep and fortification was built within the Roman walls and faced several sieges."
+    },
+    {
+     "title": "Portchester Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portchester_Castle",
+     "locator": "lead",
+     "quote": "Portchester Castle is a medieval fortress that was developed within the walls of the Roman Saxon Shore fort of Portus Adurni at Portchester, to the east of Fareham in Hampshire."
+    }
+   ],
+   "region": "Pevensey and Portchester"
+  },
+  {
+   "id": "roman-fort>roman-town-wall",
+   "from": "roman-fort",
+   "to": "roman-town-wall",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "In London the walls of the Cripplegate fort (120-150) were thickened and heightened to become part of the town wall built about 200, giving the walled area its shape; the sources show forts taken into towns and their walls, not that town walls were designed after forts.",
+   "sources": [
+    {
+     "title": "London Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Wall",
+     "locator": "lead",
+     "quote": "The fort, now referred to as the Cripplegate Fort, was later incorporated into a comprehensive city-wide defence, with its strengthened northern and western sides becoming part of the Wall which was built around 200."
+    },
+    {
+     "title": "London Wall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Wall",
+     "locator": "section \"Roman London Wall\"",
+     "quote": "The fort's north and west walls were thickened and doubled in height to form part of the new city wall."
+    },
+    {
+     "title": "Castra",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castra",
+     "locator": "lead",
+     "quote": "Permanent castra often became the foundations for towns and cities across the Roman Empire, many of which still bear traces of their Roman origins in their modern layouts and names."
+    }
+   ],
+   "region": "London"
+  },
+  {
+   "id": "romano-celtic-temple>church",
+   "from": "romano-celtic-temple",
+   "to": "church",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "At Brean Down the Romano-Celtic temple of the mid-4th century was very likely succeeded by a small Christian oratory late in the same century; the source hedges ('according to at least one source').",
+   "sources": [
+    {
+     "title": "Brean Down",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brean_Down",
+     "locator": "section \"History\"",
+     "quote": "There is evidence of a shrine dating from pre-Roman times, which was re-established as a Romano-Celtic Temple in the mid-4th century."
+    },
+    {
+     "title": "Brean Down",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brean_Down",
+     "locator": "section \"History\"",
+     "quote": "According to at least one source, it is extremely likely this was succeeded by a small late-4th-century Christian oratory."
+    }
+   ],
+   "region": "Brean Down, Somerset"
+  },
+  {
+   "id": "roman-villa>church",
+   "from": "roman-villa",
+   "to": "church",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Some villa sites passed to the church: at Lullingstone a room became a house church in the 4th century, the earliest known in the British Isles, and at Woodchester the Anglo-Saxon parish church was built (not by chance) on the villa.",
+   "sources": [
+    {
+     "title": "Lullingstone Roman Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lullingstone_Roman_Villa",
+     "locator": "lead",
+     "quote": "In the 4th century a room, probably already in religious use, was converted to a Christian chapel or house church, the earliest known in the British Isles."
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"In Roman Britannia\"",
+     "quote": "The grand villa at Woodchester preserved its mosaic floors when the Anglo-Saxon parish church was built (not by chance) upon its site."
+    }
+   ]
+  },
+  {
+   "id": "roman-villa>country-house",
+   "from": "roman-villa",
+   "to": "country-house",
+   "kind": "revival",
+   "confidence": "probable",
+   "claim": "The idea and name of the villa returned to England in the early 18th century through the revival of Palladio and Inigo Jones (Chiswick House); the sources trace it from the Roman villa through the villas of Renaissance Italy, not from the villas of Roman Britain.",
+   "sources": [
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "lead",
+     "quote": "A villa is a type of house that was originally an ancient Roman upper class country house that provided an escape from urban life."
+    },
+    {
+     "title": "Villa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Villa",
+     "locator": "section \"18th and 19th centuries\"",
+     "quote": "Thanks to the revival of interest in Palladio and Inigo Jones, soon Neo-Palladian villas dotted the valley of the River Thames and English countryside."
+    },
+    {
+     "title": "Palladian architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Palladian_architecture",
+     "locator": "section \"Palladio's architecture\"",
+     "quote": "He was inspired by Roman buildings, the writings of Vitruvius (80 BC), and his immediate predecessors Donato Bramante and Raphael."
+    }
+   ]
+  }
+ ]
+}

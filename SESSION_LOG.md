@@ -1552,3 +1552,27 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 330 OK (5 new: `test_type_stats` 3, text rules and label parts in `test_type_map`). No GUI page yet (BT4);
   the hosted copy does not answer `/api/types` yet (BT7).
 - Next: BT1d (more types for what could not be typed) or BT3.
+
+## 2026-10-26 — Irish SMR dates; BT1d: prehistoric and Roman, houses, estate, settlement and general types
+- Irish SMR places in townlands named Rath... or ...cashel were dated 600: `places_build.estimate_dates` read the type
+  estimate from the whole name ("Church, Rath"); SMR places now use the class only, friars' houses get the friary
+  range. Applied to the database (78 re-estimated, 30 undated); too-early type examples 521 → 504. `test_typology`.
+- BT1d: George chose to put built prehistoric and Roman structures in the tree (standing stones, rock art, carved
+  stones left out). Five research agents in parallel, one new lineage file each (prehistoric and Roman 24 types,
+  houses 17, estate 19, settlement 19, general 8): 87 types, 126 links, 680 quotes, all found. Reviewed here: the
+  duplicate Roman town wall link and Roman villa settled between agents; municipal museum → public library made
+  influence, not convergence. One agent reported that its first 10 Wikipedia API calls sent George's email in the
+  User-Agent header (its own requests, not the project's code, whose user agent has no email).
+- `bidb/type_map.py`: a FISH concept may map to several types (general hospital and theatre share theirs with the
+  medieval hospital and Georgian playhouse; the period-limited type wins when the year fits); general types give way
+  to their forms (variant links); text and name rules refine general types and uses; `secondary` uses (museum,
+  school, hospital, theatre, prison) rank after the building's own type. First run made 357 primary-type changes,
+  among them regressions (grammar school → school 90, Balmoral → museum); after the fixes 192 changes, reviewed.
+- aliases.json: 19 class aliases, `roman-villa` in `within_period`, `secondary`, 12 text rules reviewed match by
+  match (gatehouse and rock-lighthouse rules on the name only; `[^\w|]` so patterns do not cross into the
+  description); `not_in_tree` 438 → 341.
+- Result: 15,713 of 22,508 records (69.8%, was 48.0%), 58,753 places (was 28,528); 247 of 285 isles types with
+  examples, 220 with an earliest surviving example; too early 813, reviewed (earlier phases of sites, coarse
+  register periods), none kept.
+- Tests 335 OK (5 new: `test_typology` 2, `TestGeneralTypes` 3). No GUI change (BT4); hosted copy not updated.
+- Next: BT3 (materials and techniques) or BT4 (the /types page).

@@ -173,7 +173,9 @@ def estimate_dates(places):
     n = 0
     for p in places:
         if p.get("year_start") is None and p["kind_group"] == "Archaeological sites":
-            est = typology.estimate([p.get("type") or ""], p.get("name"))
+            # Irish SMR names are "class, townland": a townland called Rath or Cashel is no ringfort
+            name = None if p["id"].startswith("iesmr-") else p.get("name")
+            est = typology.estimate([p.get("type") or ""], name)
             if est:
                 year, text, _ = est
                 p.update(year_start=year, date_text=f"{text}, estimate", period=period_for(year))

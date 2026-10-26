@@ -502,9 +502,15 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       thesis and its critics (Engerman, Richardson) and defenders (Carrington); the Cotton Famine (war or
       overproduction); Belfast's linen and the Atlantic; Jevons's Coal Question; nationalised steel; herring towns;
       taxing drink (gin, whisky); railway mania and Overend Gurney.
-- [ ] C9 GUI: the trade stories reachable from the Change over time page, detail views ("Trade and industry here":
-      the guild, firm or trade of a building), map filters by trade, Oldest page entries, quiz questions
-      ("which came first?"), exports; INTERFACE, Help and figures updated.
+- [x] C9 (2026-10-25) GUI for trade, enterprise and innovation: Change over time links to the trade stories (a line of
+      links, "<trade> story" on each law event and each graph a story uses; `index` gives tags and graphs); detail
+      views of buildings and places show "Trade and industry here" (the stories a record belongs to, the innovations
+      made or first used there; `trade_stories.here`, `/api/trade_here/<id>`, `static/trade_here.js`); the Map page has
+      a "Trade" select and `?trade=<id>` ringing the trade's places and buildings, linked from each story; the Oldest
+      page lists the innovations (C6); quiz "Which came first?" (innovations and trade laws, `quiz_api.firsts`); Export
+      on the Trades page saves the story's places and buildings (CSV, JSON, GeoJSON, KML) and its timeline; Help
+      section "Trades and industries" with figures `trades.jpg`, `trade_here.jpg` (`docs/make_figures.mjs`);
+      INTERFACE updated. Hosted copy: `trades.json` (0.6 MB) with `here`, static routes for all three APIs.
 
 ## Building types: a family tree of building (planned 2026-10-23, George's idea)
 A reference page that classifies every type of building and construction in the isles the way a biologist classifies

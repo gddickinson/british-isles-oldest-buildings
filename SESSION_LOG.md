@@ -1431,3 +1431,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   innovations and graphs support. First version matched words with LIKE and caught "Drummond" for "rum" and long
   barrows in "Plantation" woods: now regex whole words and trade-related place groups only.
 - Tests 300 OK (4 new); ui_check `trades` (new) passes; screenshot of the sugar and slavery story checked.
+
+## 2026-10-25 — C9: trade stories through the GUI
+- Change over time: line of links to the ten stories; each law event and each graph used by a story links to it.
+- Detail views: "Trade and industry here" (`static/trade_here.js`, `/api/trade_here/<id>`, `trade_stories.here`:
+  stories a record belongs to, innovations made there; a building where a story's invention was made joins the
+  story, e.g. Cromford Mill → cotton).
+- Map page: "Trade" select and `?trade=<id>` ring a story's places and buildings (kept in the address as the map
+  moves); the Trades page links to it. Quiz: "Which came first?" from the 36 innovations and 25 trade laws.
+  Export menu on the Trades page: places and buildings (CSV, JSON, GeoJSON, KML), timeline (CSV, JSON).
+- Help: section "Trades and industries" with two new figures (`node docs/make_figures.mjs trades trade_here`).
+- Hosted copy: `trades.json` written by static_tours (checked into a scratch folder: 0.57 MB); static routes for
+  trades, trade and trade_here. Hosted copy and release not republished.
+- ui_check: new `trades_change`, `trade_here`, `trade_map`, `quiz_first` pass.
+- Full checks: unit tests OK (304), JS checks pass, ui_check 71/72: `settings_share` fails because this computer's
+  settings.json has `share_on_network: true` (the check expects sharing off; it fails the same without these changes).

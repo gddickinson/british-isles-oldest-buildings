@@ -76,9 +76,29 @@ const ExportMenu = (() => {
       () => UI.toast("Link copied"), () => prompt("Copy this link:", text));
   }
 
+  // the trade story on screen (roadmap C9): its places and buildings, and its timeline, built in the browser
+  async function exportTrade(what, fmt) {
+    const id = new URLSearchParams(location.search).get("t") || "wool";
+    const s = await api("/api/trade/" + encodeURIComponent(id));
+    const f = ["id", "name", "what", "date_text", "year_start", "nation"];
+    const rows = what === "timeline"
+      ? s.events.map((e) => ({ year: e.year, end: e.end, title: e.title, text: e.text, citation: e.citation || "" }))
+      : s.places.map((r) => ({ ...r, what: r.kind_label })).concat(s.buildings.map((r) => ({ ...r, what: r.category })));
+    const name = `british_isles_trade_${s.id}_${what}.${fmt}`;
+    if (fmt === "csv") save(toCSV(what === "timeline" ? rows : rows.map((r) => pick({ ...r, lat: r.lat, lon: r.lon }, f.concat(["lat", "lon"])))), name, "text/csv");
+    else if (fmt === "json") save(JSON.stringify(rows), name, "application/json");
+    else if (fmt === "geojson") save(toGeoJSON(rows, f), name, "application/geo+json");
+    else save(toKML(rows, f, `${s.title}: places and buildings`), name, "application/vnd.google-earth.kml+xml");
+    UI.toast(`Saved ${rows.length.toLocaleString()} rows`);
+  }
+
   function items() {
     const p = page(), out = [];
-    if (p === "catalogue") out.push(...dataItems("buildings", "Buildings"));
+    if (p === "trades") out.push({ sep: "This trade's places and buildings" }, ...FORMATS.map(([fmt, name]) =>
+      ({ label: name, action: () => exportTrade("places", fmt).catch((e) => UI.toast("Export failed: " + e.message)) })),
+      { sep: "This trade's timeline" }, ...FORMATS.slice(0, 2).map(([fmt, name]) =>
+      ({ label: name, action: () => exportTrade("timeline", fmt).catch((e) => UI.toast("Export failed: " + e.message)) })));
+    else if (p === "catalogue") out.push(...dataItems("buildings", "Buildings"));
     else if (p === "places") out.push(...dataItems("places", "Places"));
     else if (p === "people") out.push(...dataItems("people", "People"));
     else if (p === "pron") out.push(...dataItems("pronunciations", "Pronunciations"));

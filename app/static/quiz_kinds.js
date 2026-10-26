@@ -170,11 +170,26 @@ const QuizKinds = (() => {
       });
     } };
 
+  K.first = { title: "Which came first?", icon: "💡", blurb: "Inventions, laws and firsts of trade and industry: which came first?",
+    make(d, hard) {
+      const gap = hard ? 5 : 30, pool = d.pool.firsts || [], out = [];
+      for (let i = 0; i < 60 && out.length < 10; i++) {
+        const pair = spread(pool, 2, (a, b) => Math.abs(a.year - b.year) >= gap, 5);
+        if (!pair || out.some((q) => q.ids.includes(pair[0].title) || q.ids.includes(pair[1].title))) continue;
+        const first = pair[0].year < pair[1].year ? pair[0] : pair[1];
+        out.push({ ids: pair.map((x) => x.title), prompt: "<p>Which came first?</p>",
+          choices: pair.map((x) => ({ value: x.title, label: x.title, sub: x.what })), answer: first.title,
+          explain: pair.map((x) => `<b>${esc(x.title)}</b>: ${x.year}${x.text ? ` — ${esc(x.text)}` : ""}`).join("<br>") +
+            ` <span class="hint">From the <a href="${IS_STATIC ? "trades.html" : "/trades"}">trade stories</a>.</span>` });
+      }
+      return out;
+    } };
+
   K.mixed = { title: "Mixed bag", icon: "🎲", blurb: "A bit of everything, one question from each quiz and more.",
     make(d, hard) {
       const kinds = Object.keys(K).filter((k) => k !== "mixed" && !K[k].order);
       return shuffle(kinds.flatMap((k) => K[k].make(d, hard).slice(0, 2))).slice(0, 12);
     } };
 
-  return { KINDS: K, PERIODS, needsPool: (k) => ["say", "story", "history", "ages", "mixed"].includes(k) };
+  return { KINDS: K, PERIODS, needsPool: (k) => ["say", "story", "history", "ages", "first", "mixed"].includes(k) };
 })();

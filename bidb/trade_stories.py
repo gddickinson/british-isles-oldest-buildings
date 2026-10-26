@@ -140,8 +140,8 @@ def innovations(s):
 
 
 def index(stories=None):
-    """[{id, title, intro}] for the list of stories."""
-    return [{"id": s["id"], "title": s["title"], "intro": s["intro"]} for s in stories or load()]
+    """[{id, title, intro, tags, series}] for the list of stories (tags and graphs link Change over time to them)."""
+    return [{k: s.get(k, []) for k in ("id", "title", "intro", "tags", "series")} for s in stories or load()]
 
 
 def story(conn, sid, stories=None):
@@ -154,10 +154,29 @@ def story(conn, sid, stories=None):
         "people": people(conn, [p["id"] for p in pl] + [b["id"] for b in bl])}
 
 
+def here(conn, stories=None):
+    """{record id: {"trades": [[id, title]], "made": [[place id, innovation, year]]}}: the trade stories a building or
+    place belongs to, and the innovations made or first used there (C6 `made_at_ref`), for detail views (C9)."""
+    out = {}
+    for s in stories or load():
+        for r in places(conn, s, limit=10 ** 6) + buildings(conn, s, limit=10 ** 6):
+            out.setdefault(r["id"], {"trades": [], "made": []})["trades"].append([s["id"], s["title"]])
+    of_innovation = {i["id"]: s for s in stories or load() for i in innovations(s)}
+    for pid, name, year, extra in conn.execute(
+            "SELECT id, name, year_start, extra FROM places WHERE extra LIKE '%made_at_ref%'"):
+        ref = json.loads(extra)["made_at_ref"].split(":", 1)[1]
+        h = out.setdefault(ref, {"trades": [], "made": []})
+        h["made"].append([pid, name, year])
+        s = of_innovation.get(pid)                   # the building where a trade's invention was made is in its story
+        if s and [s["id"], s["title"]] not in h["trades"]:
+            h["trades"].append([s["id"], s["title"]])
+    return out
+
+
 def export(conn):
-    """{index, stories: {id: story}} for the hosted copy."""
+    """{index, stories: {id: story}, here} for the hosted copy."""
     st = load()
-    return {"index": index(st), "stories": {s["id"]: story(conn, s["id"], st) for s in st}}
+    return {"index": index(st), "stories": {s["id"]: story(conn, s["id"], st) for s in st}, "here": here(conn, st)}
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@
 
   async function load(k) {
     if (data.buildings.length < 60) data.buildings = await api("/api/quiz?n=120").catch(() => []);
-    if (QuizKinds.needsPool(k) && !data.pool) data.pool = await api("/api/quiz_pool").catch(() => ({ pron: [], stories: [], history: [], lists: [] }));
+    if (QuizKinds.needsPool(k) && !data.pool) data.pool = await api("/api/quiz_pool").catch(() => ({ pron: [], stories: [], history: [], lists: [], firsts: [] }));
   }
 
   function menu() {

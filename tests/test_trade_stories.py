@@ -29,5 +29,26 @@ class Stories(unittest.TestCase):
                 self.assertTrue(all(x["quote"] and x["url"].startswith("https://") for x in n["sources"]))
 
 
+class Firsts(unittest.TestCase):
+    """C9: "Which came first?" questions from the innovations and the trade laws."""
+
+    def test_pool(self):
+        from app.quiz_api import firsts
+        f = firsts()
+        self.assertGreaterEqual(sum(x["what"] == "Innovation" for x in f), 30)
+        self.assertGreaterEqual(sum(x["what"] == "Law or institution" for x in f), 25)
+        self.assertTrue(all(isinstance(x["year"], int) for x in f))
+
+
+class Here(unittest.TestCase):
+    def test_trade_and_innovation_here(self):
+        from bidb.db import connect
+        h = ts.here(connect())
+        mill = h.get("Q2566525")                  # Cromford Mill: Arkwright's mill, in the cotton story
+        self.assertIsNotNone(mill)
+        self.assertIn(["cotton", "Cotton"], mill["trades"])
+        self.assertTrue(mill["made"])
+
+
 if __name__ == "__main__":
     unittest.main()

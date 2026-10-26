@@ -87,5 +87,20 @@ def oldest_lists():
             for name, spec in LISTS.items() for e in entries(name) if isinstance(e.get("year"), int)]
 
 
+def firsts():
+    """Innovations (C6) and the laws and institutions of the trades (C7) with a year, for "Which came first?"."""
+    from bidb.oldest_lists import entries
+    out = [{"title": e["name"], "year": e["year"], "what": "Innovation", "text": e.get("claim"), "where": e.get("location")}
+           for e in entries("innovations") if isinstance(e.get("year"), int)]
+    try:
+        events = json.loads((DATA_DIR / "curated" / "change" / "events.json").read_text())
+    except (FileNotFoundError, ValueError):
+        events = []
+    out += [{"title": e["title"], "year": e["year"], "what": "Law or institution", "text": e.get("text"), "where": None}
+            for e in events if e.get("topic") == "law"]
+    return out
+
+
 def pool(db):
-    return {"pron": pronunciations(db), "stories": stories(db), "history": history(), "lists": oldest_lists()}
+    return {"pron": pronunciations(db), "stories": stories(db), "history": history(), "lists": oldest_lists(),
+            "firsts": firsts()}

@@ -7,7 +7,7 @@
   <h1>Help &amp; guide</h1>
   <nav class="help-toc" aria-label="Help topics">
     <a href="#start">Getting started</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
-    <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a>
+    <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a><a href="#trades">Trades</a>
     <a href="#oldest">Oldest by type</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
     {% if not static_mode %}<a href="#sharing">Sharing at home</a>{% endif %}<a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
     <a href="#export">Export &amp; screenshots</a><a href="#shortcuts">Shortcuts</a><a href="#glossary">Glossary</a>
@@ -124,6 +124,22 @@
     {{ shot('history.jpg', 'A short history of the British Isles with sourced events placed on a map.') }}
     <p class="prose">Periods from the Neolithic to the modern era, a timeline of sourced events (each checked against its
       source; see Data quality) and where they happened.</p>
+  </section>
+
+  <section id="trades">
+    <h2>Trades and industries</h2>
+    {{ shot('trades.jpg', 'The story of a trade: intro, timeline of laws, events and inventions, its places and buildings on a map, people and cited notes.') }}
+    <p class="prose">One page per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and steel,
+      fishing, brewing and distilling, banking and finance). Each brings together its dated laws and events (with
+      quoted sources), the inventions made for it (💡), its places and catalogue buildings on a map, the people linked
+      to them, graphs from Change over time, and notes on what historians make of it, both sides where they disagree.
+      <b>Show on the Map page</b> rings the trade's places among the other layers (or choose a <b>Trade</b> in the
+      Map page's panel); <b>Export</b> saves its places and buildings (CSV, JSON, GeoJSON, KML) or its timeline.</p>
+    <p class="prose">The stories are reachable from <b>Change over time</b> too: its law events and its graphs link to
+      their trade. A building's or place's page shows <b>Trade and industry here</b>: the trade stories it belongs to
+      and any innovation made or first used there. The 36 innovations and firsts are also a places group of their own
+      (<b>Innovations &amp; firsts</b>) and a list on the Oldest page, and the quiz has <b>Which came first?</b></p>
+    {{ shot('trade_here.jpg', 'Trade and industry here: Cromford Mill, where Arkwright\'s water-powered cotton mill began in 1771.') }}
   </section>
 
   <section id="oldest">

@@ -27,7 +27,8 @@
         <figcaption class="cc-title">${esc(s.title)}${s.region ? ` <span class="cc-region">${esc(s.region)}</span>` : ""}
           <span class="cc-now">${esc(s.unit_long || s.unit || "")}</span></figcaption>
         <div class="cc-plot"></div>
-        <div class="cc-src">Source: ${cite(s.sources)}${s.modelled ? " · modelled" : ""}${modelsOf(s).map((m) =>
+        <div class="cc-src">Source: ${cite(s.sources)}${s.modelled ? " · modelled" : ""}${trades.filter((x) => x.series.includes(s.id))
+          .map((x) => ` · <a href="${tradeUrl(x.id)}">${esc(x.title)} story</a>`).join("")}${modelsOf(s).map((m) =>
           `<br>Compared with ${esc(m.label || m.title)}: ${cite(m.sources)}`).join("")}</div>
         ${s.note ? `<p class="cc-note">${esc(s.note)}</p>` : ""}
         ${s.breaks ? `<p class="cc-note"><b>Breaks in definition</b> (dotted marks): ${s.breaks.map((b) => `${b[0]}: ${esc(b[1])}`).join("; ")}.</p>` : ""}
@@ -40,11 +41,18 @@
       ChangeCharts.draw(f.querySelector(".cc-plot"), s, { ...ChangeCharts.span(s, $("#ch_range").value, models), year: null, models });
     });
   }
+  // trade stories (C8): a line of links, and each event or graph of a trade linked to its story
+  const trades = await api("/api/trades").catch(() => []);
+  const tradeUrl = (id) => `${IS_STATIC ? "trades.html" : "/trades"}?t=${encodeURIComponent(id)}`;
+  const storyOf = (tag) => trades.find((t) => t.tags.includes(tag));
+  if (trades.length) $("#ch_trades").innerHTML = `<b>Trade stories:</b> ${trades.map((t) =>
+    `<a href="${tradeUrl(t.id)}">${esc(t.title)}</a>`).join(" · ")} — each with its timeline, places, people and graphs.`;
   function eventList(list) {
     if (!list.length) return "";
     return `<h3>Events</h3><ul class="ch-events">${list.sort((a, b) => a.year - b.year).map((e) =>
       `<li><b>${yt(e.year)}${e.end && e.end !== e.year ? `–${yt(e.end)}` : ""}</b> ${esc(e.title)}${e.text ? ` — ${esc(e.text)}` : ""}
-        <span class="cc-src">(${e.sources ? cite(e.sources) : esc(e.citation)})</span></li>`).join("")}</ul>`;
+        <span class="cc-src">(${e.sources ? cite(e.sources) : esc(e.citation)})</span>${storyOf(e.trade || e.topic)
+          ? ` <a class="ch-chip" href="${tradeUrl(storyOf(e.trade || e.topic).id)}">${esc(storyOf(e.trade || e.topic).title)} story</a>` : ""}</li>`).join("")}</ul>`;
   }
   $("#ch_sources").innerHTML = Object.entries(sources).sort((a, b) => (a[1].short || "").localeCompare(b[1].short || ""))
     .map(([id, s]) => `<p id="src-${esc(id)}" class="ch-source"><b>${esc(s.short || s.publisher)}</b> — ${esc(s.citation)}

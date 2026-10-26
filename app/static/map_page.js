@@ -114,8 +114,41 @@ function wireExplore() {
   E$("#ex_toggle").addEventListener("click", () => E$("#ex_panel").classList.toggle("open"));
   exMap.on("moveend", () => {
     const c = exMap.getCenter();
-    history.replaceState(null, "", `${location.pathname}?lat=${c.lat.toFixed(4)}&lon=${c.lng.toFixed(4)}&z=${exMap.getZoom()}`);
+    history.replaceState(null, "", `${location.pathname}?lat=${c.lat.toFixed(4)}&lon=${c.lng.toFixed(4)}&z=${exMap.getZoom()}${
+      exTrade ? `&trade=${encodeURIComponent(exTrade)}` : ""}`);
   });
+}
+
+// A trade (roadmap C9): the places and buildings of one trade story (bidb/trade_stories.py), ringed, from the panel's
+// select or `?trade=<id>`; kept in the address as the map moves
+const tradeLayer = L.layerGroup().addTo(exMap);
+let exTrade = new URLSearchParams(location.search).get("trade") || "";
+async function showTrade(id, fit = true) {
+  exTrade = id;
+  tradeLayer.clearLayers();
+  E$("#ex_trade_note").innerHTML = "";
+  if (!id) return;
+  const s = await api("/api/trade/" + encodeURIComponent(id)).catch(() => null);
+  if (!s) return;
+  const pts = [];
+  s.places.concat(s.buildings).forEach((r) => {
+    pts.push([r.lat, r.lon]);
+    L.circleMarker([r.lat, r.lon], { radius: 7, weight: 2.5, color: cssVar("--accent"), fillColor: r.kind_group
+      ? placeColor(r.kind_group) : groupColor(r.category_group), fillOpacity: 0.85 })
+      .bindPopup(`<b>${esc(r.name)}</b><br>${esc(r.kind_label || r.category || "")}${r.date_text ? " · " + esc(r.date_text) : ""}<br>
+        <a href="${r.kind_group ? "#" : buildingUrl(r.id)}" ${r.kind_group ? "data-place" : "data-open"}="${esc(r.id)}">Open</a>`)
+      .addTo(tradeLayer);
+  });
+  E$("#ex_trade_note").innerHTML = `${pts.length.toLocaleString()} places and buildings of the trade, ringed.
+    <a href="${IS_STATIC ? "trades.html" : "/trades"}?t=${encodeURIComponent(id)}">The story of ${esc(s.title.toLowerCase())}</a>`;
+  if (fit && pts.length) exMap.fitBounds(pts, { padding: [30, 30], maxZoom: 10 });
+}
+async function wireTrades() {
+  const list = await api("/api/trades").catch(() => []);
+  E$("#ex_trade").innerHTML += list.map((t) => `<option value="${esc(t.id)}">${esc(t.title)}</option>`).join("");
+  E$("#ex_trade").value = exTrade;
+  E$("#ex_trade").addEventListener("change", (e) => showTrade(e.target.value));
+  if (exTrade) showTrade(exTrade, !new URLSearchParams(location.search).get("lat"));
 }
 
 // Arriving from "Show on the map": ring and name at the record, its places layer switched on
@@ -205,6 +238,7 @@ exTime = TimeSlider.mount(E$("#ex_time"), {
 wireChange();
 loadBuildings();
 markFromUrl();
+wireTrades();
 
 // Building links inside a detail view open in this page's modal
 window.openDetail = showBuilding;

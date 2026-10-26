@@ -200,7 +200,7 @@
    "tags": [
     "cotton"
    ],
-   "intro": "Cotton was the industry of the Industrial Revolution: the jenny, the water frame and the mule, Arkwright's mill at Cromford and then the steam-powered mills of Lancashire and Glasgow. Raw cotton came mostly from the slave plantations of the American South; when the American Civil War cut the supply, Lancashire suffered the Cotton Famine of 1861-65. The graphs show raw cotton among the largest imports and cotton cloth among the largest exports until the 20th century.",
+   "intro": "Cotton was the industry of the Industrial Revolution: the jenny, the water frame and the mule, Arkwright's mill at Cromford and then the steam-powered mills of Lancashire. Raw cotton came mostly from the slave plantations of the American South; when the American Civil War cut the supply, Lancashire suffered the Cotton Famine of 1861-65. The graphs show raw cotton among the largest imports and cotton cloth among the largest exports until the 20th century.",
    "match": {
     "words": [
      "cotton",
@@ -237,6 +237,13 @@
        "short": "Wikipedia: Lancashire Cotton Famine",
        "url": "https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine",
        "quote": "went from being the most prosperous workers in Britain to the most impoverished",
+       "locator": "article text"
+      },
+      {
+       "citation": "Wikipedia contributors, 'Lancashire Cotton Famine', https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine (checked 2026-10-25)",
+       "short": "Wikipedia: Lancashire Cotton Famine",
+       "url": "https://en.wikipedia.org/wiki/Lancashire_Cotton_Famine",
+       "quote": "the slave-owning southern states of America, where most of the world's raw cotton was produced",
        "locator": "article text"
       }
      ]

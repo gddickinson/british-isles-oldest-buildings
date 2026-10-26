@@ -68,7 +68,8 @@
     $("#tr_body").innerHTML = `<h2>${esc(s.title)}</h2><p class="prose">${esc(s.intro)}</p>
       <div class="tr-layout"><div>${timeline(s.events)}${people(s.people)}</div>
         <div><div id="tr_map" class="stories-map"></div><p class="hint">${s.places.length.toLocaleString()} places and
-          ${s.buildings.length.toLocaleString()} catalogue buildings (dark outline) whose kind or name belongs to the trade.</p>
+          ${s.buildings.length.toLocaleString()} catalogue buildings (dark outline) whose kind or name belongs to the trade.
+          <a href="${IS_STATIC ? "map.html" : "/map"}?trade=${encodeURIComponent(s.id)}">Show on the Map page</a>, with the other layers and the year slider.</p>
           ${list("Places", s.places, "place")}${list("Catalogue buildings", s.buildings, "building")}</div></div>
       <h3>What historians say</h3>${notes(s.notes)}
       <h3>Graphs</h3><div class="ch-grid" id="tr_graphs"></div>`;

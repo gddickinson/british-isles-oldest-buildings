@@ -1676,3 +1676,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Hosted copy not updated (BT4b).
 - Next: BT4b with BT7 (hosted copy of /types, Help, figures, quiz questions), or the register-period dates as
   earliest examples.
+
+## 2026-10-26 — Register-period dates no longer earliest examples; railway lines typed
+- `type_stats.estimated` counts "(register period)" dates (HES, Cadw and NI register places dated only by a
+  representative year of their period, e.g. "Prehistoric" = -2000) as estimates, so they are never a type's earliest
+  surviving example (also in the spread chart and for materials, which use the same test); `too_early` no longer
+  flags them (108 of 808 flags were these: 70 duns, 13 brochs).
+- Seven types changed: round-house, longhouse, fulling-mill, pottery-kiln, cursus now have none (215 types with an
+  earliest example, was 220); lock-up → Former Lockup 1823; railway → see below. No material changed.
+- Reviewing railway: lines (`in_rail`, `ino_rail`) were untyped. Two text rules in `aliases.json` on the name
+  ("… Railway / Line / Rail Road", names with Signal or Box left out), `slack: 0`: 198 lines railways from 1825, 9
+  wagonways before (Wollaton 1604, Tanfield 1725, Middleton 1758, Surrey Iron 1803, Swansea and Mumbles 1807…).
+  The earliest railway is now the Waterloo & City line, which was dated 1864 from a sentence about another line:
+  reviewed correction to 1894 (work began 18 June 1894; opened 1898), 207 corrections.
+- The type-map rerun also moved three records after earlier date corrections (Richborough, AD 85: Roman fort, no
+  longer Saxon Shore fort; Abbey Gateway, Banff Old Town Hall).
+- Emergent: catalogue records rank before places for the earliest example, so the Stockton and Darlington Railway
+  (1825, place) loses to the 1894 line; tramways, funiculars, inclines and signal boxes have no type.
+- Tests 367 OK (1 new in `test_type_stats`; HEAD had 366, the 370 of the last entry was a miscount); ui_check of the
+  six /types pages OK. The running GUI needs a restart for the new code. Hosted copy not updated.
+- Next: BT4b with BT7 (hosted copy of /types, Help, figures, quiz questions).

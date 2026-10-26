@@ -5,9 +5,9 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
-- Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 206 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; local only); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
-  isles types with examples, 220 with an earliest surviving example (BT1d).
+- Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; local only); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,716 records (69.8%) and 58,957 places typed, 247 of 285
+  isles types with examples, 215 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
@@ -684,11 +684,23 @@ the descent of a type is disputed, both views are given and the link is drawn as
       (c. 1600 vs 1754): review with the 69 in `docs/date_review.md`.
 - [ ] Clackmannan Tower (emergent 2026-10-26, seen in BT5's spread chart): year 1301 with the date text "Late 14th
       century"; check how the year and the text disagree and whether other records do the same.
-- [ ] Register-period dates as earliest examples (emergent 2026-10-26, seen on the /types tree): the earliest
-      surviving Roundhouse is "1 Ironshill Farm Cottages, settlements, barrow and pits", a HES place dated -2000 only
-      from its register period ("Prehistoric domestic and defensive"); `type_stats.estimated` catches only dates that
-      say "estimate". Treat "(register period)" dates as estimates for the earliest example, and review the types
-      whose earliest example changes.
+- [x] Register-period dates as earliest examples (emergent 2026-10-26, seen on the /types tree; fixed 2026-10-26):
+      `type_stats.estimated` now counts "(register period)" dates (8,800 HES, Cadw and NI places, whose year only
+      stands for the period, `registers.period_year`) as estimates, so they are never a type's earliest surviving
+      example, and `too_early` no longer flags them (108 of 808 flags were such years: 70 duns, 13 brochs at -2000).
+      Seven types changed: round-house, longhouse, fulling-mill, pottery-kiln and cursus now have no earliest
+      example (220 → 215 types with one); lock-up 1650 → Former Lockup 1823; railway → Waterloo & City line. Reviewing
+      them found railway lines untyped: two text rules on the name for kinds `in_rail`/`ino_rail` (signal boxes left
+      out) type 198 lines as railways from 1825 and 9 before it as wagonways (Wollaton 1604, Tanfield 1725, Middleton
+      1758…, the curated periods with `slack: 0`); the Waterloo & City line was dated 1864 (another company's line)
+      and is now 1894 (a reviewed date correction, quote found in the cached article).
+- [ ] Earliest railway is a catalogue record of 1894 (emergent 2026-10-26, from the fix above): `type_stats.earliest`
+      takes catalogue records before places, so the Stockton and Darlington Railway (1825, a researched place) loses
+      to the Waterloo & City line; decide whether places with a researched or Wikidata date to the year should rank
+      with records for types whose examples are mostly places (lines, bridges, earthworks).
+- [ ] Tramways, funiculars, cliff lifts and inclines (emergent 2026-10-26): about 25 `in_rail` places (Great Orme
+      Tramway, Blackpool Tramway, Lickey Incline, Scarborough funiculars) and the 360 signal boxes have no type in
+      the tree; research them as BT1d types (sourced periods) if wanted.
 - [x] FISH scope notes cut short (found in BT4a, fixed 2026-10-26): `glossary.ADVICE` matched "use with" inside
       "house with" (case-insensitive, no word boundary), so 52 notes (Wealden house: "A medieval ho") were cut on the
       Glossary page too; now case-sensitive at a word boundary.

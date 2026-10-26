@@ -67,6 +67,19 @@ class TestTypeStats(unittest.TestCase):
         self.assertTrue(type_stats.too_early(row, t))
         self.assertFalse(type_stats.too_early(row, t, {"b3": "reviewed"}))
         self.assertFalse(type_stats.too_early({"id": "x", "year": 951}, t))     # within EARLY years
+        period = {"id": "x", "year": -2000, "date_text": "Prehistoric (register period)"}
+        self.assertFalse(type_stats.too_early(period, t))        # the year only stands for the period
+
+    def test_register_period_is_an_estimate(self):
+        row = {"date_confidence": None, "date_text": "Medieval (register period)"}
+        self.assertTrue(type_stats.estimated(row))
+        self.assertFalse(type_stats.estimated(dict(row, date_text="1250")))
+        t = {"id": "castle", "period": {"from": 1066}}
+        rows = [{"id": "p1", "source": "place", "primary": 1, "year": 1250, "name": "A",
+                 "date_text": "Medieval (register period)", "status": None, "date_confidence": None},
+                {"id": "p2", "source": "place", "primary": 1, "year": 1300, "name": "B",
+                 "date_text": "1300", "status": None, "date_confidence": None}]
+        self.assertEqual(type_stats.earliest(rows, t)["id"], "p2")
         self.assertEqual([(x["id"], x["primary"]) for x in type_stats.for_entity(conn(), "b5", TYPES)],
                          [("castle", True), ("town-hall", False)])
 

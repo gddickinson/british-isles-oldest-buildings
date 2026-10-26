@@ -2058,6 +2058,24 @@
    "kinds": [
     "warehouse"
    ]
+  },
+  {
+   "type": "railway",
+   "pattern": "^(?![^|]*\\b(Signal|Box)\\b)[^,|]*\\b(Railway|Rail ?Road|Railroad|Line)\\s*(\\||,|$)",
+   "kinds": [
+    "in_rail",
+    "ino_rail"
+   ],
+   "slack": 0
+  },
+  {
+   "type": "wagonway",
+   "pattern": "^(?![^|]*\\b(Signal|Box)\\b)[^,|]*\\b(Railway|Rail ?Road|Railroad|Line)\\s*(\\||,|$)",
+   "kinds": [
+    "in_rail",
+    "ino_rail"
+   ],
+   "slack": 0
   }
  ],
  "place_kinds": {

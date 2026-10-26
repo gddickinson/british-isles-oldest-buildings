@@ -4,7 +4,8 @@ counts, map points, dated examples and the earliest surviving example, each chec
 An example begun more than EARLY years before the type's first known date (period.from) is "too early": a mapping
 or dating error to review, never the type's earliest example. The earliest surviving example is the earliest
 dated catalogue record, of which it is the primary type, that is standing or a ruin, whose date is not itself an estimate from its building type
-(that would be circular; for places, a date text that says "estimate") and not too early; failing that, the earliest such place (register monuments and
+(that would be circular; for places, a date text that says "estimate" or a register period such as "Prehistoric
+(register period)", whose year only stands for the period, bidb.registers.period_year) and not too early; failing that, the earliest such place (register monuments and
 Wikidata places carry no standing/demolished status, so `surviving` is None for them).
 Reviewed early examples that are right (the type's first known date is later than a real example) are listed in
 `aliases.json` `early_ok` with the reason, and kept as examples.
@@ -21,6 +22,7 @@ from .db import connect
 EARLY = 100                 # years before a type's first known date that make an example "too early"
 GONE = "Demolished / destroyed"
 ESTIMATE = "Estimate (building type)"
+REGISTER_PERIOD = "(register period)"   # date texts of register places dated only by their period
 EXAMPLES = 200              # dated examples returned for one type
 
 _ROWS = """
@@ -52,9 +54,11 @@ def early_ok():
 
 
 def too_early(row, t, ok=None):
+    """Begun more than EARLY years before the type's first known date; never a register period's year, which
+    stands for the whole period (a broch in "Prehistoric" is dated -2000)."""
     first = (t.get("period") or {}).get("from")
     return (row["year"] is not None and first is not None and row["year"] < first - EARLY
-            and row["id"] not in (ok or {}))
+            and row["id"] not in (ok or {}) and REGISTER_PERIOD not in (row.get("date_text") or "").lower())
 
 
 def surviving(row):
@@ -63,8 +67,10 @@ def surviving(row):
 
 
 def estimated(row):
-    """The date is an estimate from the building type (records) or says it is an estimate (places)."""
-    return row["date_confidence"] == ESTIMATE or "estimate" in (row["date_text"] or "").lower()
+    """The date is an estimate from the building type (records), says it is an estimate or is a register period's
+    representative year (places)."""
+    text = (row["date_text"] or "").lower()
+    return row["date_confidence"] == ESTIMATE or "estimate" in text or REGISTER_PERIOD in text
 
 
 def _candidate(row, t, ok):

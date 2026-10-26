@@ -1,0 +1,556 @@
+{
+  "_about": "BT3b: how catalogue records and places reach the materials and techniques of materials_*.json (bidb.material_map). `wikidata`: Wikidata material items (P186) by QID; `not_in_list`: P186 items reviewed and left out (too general for any entry, or not a building material); `terms`: rules on sentences of the Wikipedia article (sections not matching `skip_sections`), the extract and the register description: `pattern` (case-insensitive), `cue` (true: a building word must stand near the term, see bidb.material_text), `ignore` (a pattern that drops the match when it stands near the term), `near` (a pattern that must stand near the term). `skip_sentence`: sentences of register descriptions about other structures of the entry (boundary walls, gatepiers, gardens), left out. `skip_kinds`: place kinds left out besides type_map's (towns and parks, whose articles describe the buildings in them).",
+  "wikidata": {
+    "Q40089": "brick",
+    "Q4219493": "brick",
+    "Q6671147": "brick",
+    "Q5377879": "brick",
+    "Q7596719": "staffordshire-blue-brick",
+    "Q4672880": "accrington-brick",
+    "Q207079": "slate",
+    "Q84853758": "stone-slate",
+    "Q87261073": "stone-slate",
+    "Q16994306": "stone-slate",
+    "Q82337": "portland-stone",
+    "Q810781": "bath-stone",
+    "Q1421807": "caen-stone",
+    "Q2118764": "purbeck-marble",
+    "Q6392040": "kentish-ragstone",
+    "Q5175499": "cotswold-stone",
+    "Q5646433": "ham-stone",
+    "Q12207190": "red-sandstone",
+    "Q124556428": "red-sandstone",
+    "Q3249277": "red-sandstone",
+    "Q1048392": "gritstone",
+    "Q6860042": "gritstone",
+    "Q117052975": "kilkenny-marble",
+    "Q1225329": "rubble",
+    "Q47401": "rubble",
+    "Q1122603": "ashlar",
+    "Q21751016": "ashlar",
+    "Q83087": "flint",
+    "Q483269": "cast-iron",
+    "Q860451": "wrought-iron",
+    "Q2642947": "wrought-iron",
+    "Q11427": "steel",
+    "Q1432769": "corrugated-iron",
+    "Q184190": "reinforced-concrete",
+    "Q465444": "prestressed-concrete",
+    "Q831541": "precast-concrete",
+    "Q1486351": "roman-cement",
+    "Q911999": "lime-mortar",
+    "Q2550263": "roughcast",
+    "Q33526": "stucco",
+    "Q60424": "terracotta",
+    "Q4787071": "terracotta",
+    "Q54802": "cob",
+    "Q1368940": "wattle-and-daub",
+    "Q629000": "timber-framing",
+    "Q1141926": "cruck-frame",
+    "Q2075708": "oak",
+    "Q382362": "weatherboarding",
+    "Q874531": "thatch",
+    "Q1624070": "pantile",
+    "Q2227106": "wooden-shingles",
+    "Q1473346": "stained-glass",
+    "Q2469680": "cylinder-glass"
+  },
+  "not_in_list": {
+    "_note": "Reviewed 2026-10-26. Generic stones (sandstone, limestone, granite, marble) have no entry of their own in materials_*.json: emergent task in the roadmap.",
+    "items": [
+      "Q22731 stone",
+      "Q34095 bronze",
+      "Q13085 sandstone",
+      "Q41177 granite",
+      "Q3115353 granite",
+      "Q287 wood",
+      "Q23757 limestone",
+      "Q22657 concrete",
+      "Q60793701 Heavitree stone",
+      "Q40861 marble",
+      "Q121649 dimension stone",
+      "Q11426 metal",
+      "Q268547 roof tile",
+      "Q39782 brass",
+      "Q677 iron",
+      "Q172587 stainless steel",
+      "Q708 lead",
+      "Q1370714 structural wood",
+      "Q468402 tile",
+      "Q11469 glass",
+      "Q60998793 Cornish granite",
+      "Q682083 Coade stone",
+      "Q40088 Carrara marble",
+      "Q183670 chalk",
+      "Q1024124 weathering steel",
+      "Q272999 masonry",
+      "Q7282754 rag-stone",
+      "Q2509719 ironstone",
+      "Q8055782 Yorkstone",
+      "Q107196234 freestone",
+      "Q6731360 magnesian limestone",
+      "Q14917025 Hopton Wood stone",
+      "Q2920343 sarsen",
+      "Q274988 plaster",
+      "Q4752538 Ancaster stone",
+      "Q59141442 Hornton stone",
+      "Q63385305 Reigate stone",
+      "Q6395575 Ketton stone",
+      "Q5604432 greensand",
+      "Q143447 alabaster",
+      "Q944070 artificial stone"
+    ]
+  },
+  "skip_sections": "churchyard|graveyard|cemetery|burials|grounds|garden|park|estate|geology|geography|location|setting|surround|context|background|nearby|vicinity|village|town|parish|see also|references|notes|further reading|external links|bibliography|sources|legacy|popular culture|in fiction|media|film|literature|transport|access|sport|people|notable|residents|owners|economy|demograph|governance|education|bells|organ|memorials|monuments|fittings|furnish|tombs|treasures|collections|exhibits|museum|excavation|archaeolog|finds|artefacts|artifacts|quarr|mining|industry|works$",
+  "cue": "\\b(built|rebuilt|re-built|construct(?:ed|ion)|erected|faced|refaced|re-faced|clad|cased|encased|walls?|walled|roofs?|roofed|re-roofed|covered|dressings?|masonry|fabric|fa[cç]ade|front|elevations?|gables?|tower|spire|frame|framed|structure|storeys?|stor(?:e)?y|house|cottage|church|chapel|barn|hall|range|wing|building)\\b",
+  "ignore": "\\b(fonts?|tombs?|effig(?:y|ies)|monuments?|memorials?|pulpits?|screens?|reredos|altar|pews?|statues?|busts?|plaques?|tablets?|organ|chests?|coffins?|sarcophag\\w*|kilns?|brickworks|brickyards?|works|quarr(?:y|ies|ied)|mines?|mining|industry|factory|making|makers?|merchants?|unlike|tax|duty|company|boundary|fences?|bells?|derail\\w*|crash\\w*|balusters?|bannisters?|radiators?|ranges?|grates?|fireplaces?|fittings|brattishing|finials?|cresting|grilles?|grills?)\\b",
+  "terms": [
+    {
+      "material": "rubble",
+      "pattern": "\\brubble(?:[- ]stone)?\\b(?![- ](?:filled|core|fill|infill))",
+      "cue": true,
+      "ignore": "\\b(?:cleared|heaps?|piles?|debris|reduced to|tumbled?|spread of|collapsed into)\\b"
+    },
+    {
+      "material": "ashlar",
+      "pattern": "\\bashlar\\b",
+      "cue": true
+    },
+    {
+      "material": "dry-stone",
+      "pattern": "\\b(?:dry[- ]?stone|drystone|dry[- ]built|without (?:the use of )?mortar|mortarless)\\b"
+    },
+    {
+      "material": "flint",
+      "pattern": "\\b(?:flint(?:work|[- ]faced|[- ]built|[- ]walled|[- ]rubble|stone)|knapped flints?|flint (?:and|with) (?:stone|brick|rubble|chalk|ashlar|limestone|clunch|freestone)|(?:of|in|with) (?:coursed |knapped |squared |dressed |local |random |cobbled )?flints?\\b)",
+      "cue": true
+    },
+    {
+      "material": "flushwork",
+      "pattern": "\\bflush[- ]?work\\b"
+    },
+    {
+      "material": "galleting",
+      "pattern": "\\bgallet(?:ing|ting|ed|ted)\\b"
+    },
+    {
+      "material": "bath-stone",
+      "pattern": "\\bBath (?:stone|limestone|oolite|freestone|ashlar)\\b",
+      "cue": true
+    },
+    {
+      "material": "portland-stone",
+      "pattern": "\\bPortland (?:stone|limestone|ashlar)\\b",
+      "cue": true
+    },
+    {
+      "material": "purbeck-marble",
+      "pattern": "\\bPurbeck marble\\b",
+      "cue": true,
+      "ignore": "\\bslabs?\\b"
+    },
+    {
+      "material": "kentish-ragstone",
+      "pattern": "\\bKent(?:ish)? rag(?:stone)?\\b",
+      "cue": true
+    },
+    {
+      "material": "ham-stone",
+      "pattern": "\\b(?:Ham Hill stone|Hamstone|Ham stone|Hamdon stone)\\b",
+      "cue": true
+    },
+    {
+      "material": "cotswold-stone",
+      "pattern": "\\bCotswold (?:stone|limestone)\\b",
+      "cue": true
+    },
+    {
+      "material": "barnack-stone",
+      "pattern": "\\bBarnack (?:stone|rag|limestone)\\b",
+      "cue": true
+    },
+    {
+      "material": "caen-stone",
+      "pattern": "\\bCaen (?:stone|limestone)\\b",
+      "cue": true
+    },
+    {
+      "material": "aberdeen-granite",
+      "pattern": "\\b(?:Aberdeen|Rubislaw|Kemnay) granite\\b",
+      "cue": true
+    },
+    {
+      "material": "red-sandstone",
+      "pattern": "\\b(?:(?:Old|New) Red Sandstone|red(?:dish)? sandstone)\\b",
+      "cue": true
+    },
+    {
+      "material": "gritstone",
+      "pattern": "\\b(?:gritstone|Millstone Grit)\\b",
+      "cue": true
+    },
+    {
+      "material": "kilkenny-marble",
+      "pattern": "\\bKilkenny (?:marble|limestone)\\b",
+      "cue": true
+    },
+    {
+      "material": "lime-mortar",
+      "pattern": "\\blime mortar\\b",
+      "ignore": "\\bwithout\\b"
+    },
+    {
+      "material": "harling",
+      "pattern": "\\bharl(?:ed|ing)\\b"
+    },
+    {
+      "material": "roughcast",
+      "pattern": "\\b(?:rough[- ]?cast|pebble[- ]?dash(?:ed)?)\\b",
+      "cue": true
+    },
+    {
+      "material": "stucco",
+      "pattern": "\\bstucco(?:ed)?\\b",
+      "cue": true,
+      "ignore": "\\b(?:ceilings?|plasterwork|interior)\\b"
+    },
+    {
+      "material": "roman-cement",
+      "pattern": "\\bRoman cement\\b"
+    },
+    {
+      "material": "portland-cement",
+      "pattern": "\\bPortland cement\\b",
+      "ignore": "\\b(?:plant|produces|manufactur\\w*|needs)\\b"
+    },
+    {
+      "material": "cob",
+      "pattern": "\\bcob(?:[- ](?:built|walled|walls?|cottages?|houses?|and thatch))?\\b(?! ?(?:nut|web|bles?|bled|ham))",
+      "cue": true
+    },
+    {
+      "material": "clay-lump",
+      "pattern": "\\bclay[- ]lump\\b"
+    },
+    {
+      "material": "mud-walling",
+      "pattern": "\\b(?:clay dabbins|mud[- ]?walls?|mud[- ]walled|mud[- ]built|clay[- ]walled)\\b"
+    },
+    {
+      "material": "wattle-and-daub",
+      "pattern": "\\bwattle[- ]and[- ]daub\\b"
+    },
+    {
+      "material": "turf-walling",
+      "pattern": "\\b(?:turf|sod)[- ](?:walls?|walled|built|and stone walls?)\\b|\\bwalls? of (?:turf|sods?)\\b"
+    },
+    {
+      "material": "earthfast-posts",
+      "pattern": "\\bpost[- ]?holes?\\b",
+      "near": "\\b(?:building|house|hall|round-?house|structure|timber|church|hut|roof|walls?)\\b"
+    },
+    {
+      "material": "timber-framing",
+      "pattern": "\\b(?:timber[- ]framed?|timber[- ]framing|half[- ]timbered|half[- ]timbering)\\b"
+    },
+    {
+      "material": "cruck-frame",
+      "pattern": "\\bcrucks?\\b(?![- ]?(?:end|blades? (?:of|from)))",
+      "ignore": "\\b(?:reconstructed|re-erected|exhibits?|museum)\\b"
+    },
+    {
+      "material": "aisled-frame",
+      "pattern": "\\baisled (?:barn|hall|frame|timber|construction)\\b"
+    },
+    {
+      "material": "box-frame",
+      "pattern": "\\bbox[- ]fram(?:e|ed|ing)\\b",
+      "ignore": "\\bsignal"
+    },
+    {
+      "material": "jetty",
+      "pattern": "\\b(?:jettied|jettying|jettied|jetty(?:ed)? (?:upper|first))\\b",
+      "ignore": "\\b(?:pier|harbour|quay|landing|boats?|ships?|ferry|steamers?)\\b"
+    },
+    {
+      "material": "close-studding",
+      "pattern": "\\bclose[- ]stud(?:ding|ded)\\b"
+    },
+    {
+      "material": "square-panel-framing",
+      "pattern": "\\bsquare[- ]panel(?:led|ed)? (?:framing|frame|timber|work)\\b|\\btimber[- ]fram\\w*[^.]{0,30}\\bsquare panels\\b"
+    },
+    {
+      "material": "decorative-framing",
+      "pattern": "\\b(?:black[- ]and[- ]white (?:timber|half|framing|work)|magpie work|decorative (?:timber[- ])?framing)\\b"
+    },
+    {
+      "material": "weatherboarding",
+      "pattern": "\\b(?:weather[- ]?board(?:ed|ing|s)?|clapboard(?:ed|ing)?)\\b"
+    },
+    {
+      "material": "pargetting",
+      "pattern": "\\bparget(?:ting|ing|ted|ed|work)\\b"
+    },
+    {
+      "material": "oak",
+      "pattern": "\\boak(?:en)? (?:timbers?|frame|framed|framing|beams?|roof|posts?|trusses|rafters|piles|structure)\\b|\\b(?:built|framed|constructed|made) (?:of|from|in|with) (?:local |English |native )?oak\\b",
+      "ignore": "\\b(?:panell?ing|panell?ed|chairs?|furniture|doors?|pews?|longship|ships?|boats?)\\b"
+    },
+    {
+      "material": "imported-softwood",
+      "pattern": "\\b(?:Baltic|Memel|Norwegian|Scandinavian) (?:pine|fir|timber|softwood|deal)\\b|\\bimported (?:softwood|deal|pine|timber)\\b",
+      "ignore": "\\b(?:panell?ing|panell?ed|surround|driftwood|escapes|consignments?)\\b"
+    },
+    {
+      "material": "stained-glass",
+      "pattern": "\\b(?:medieval|mediaeval|(?:1[2-6]th|twelfth|thirteenth|fourteenth|fifteenth|sixteenth)[- ]century|Norman|original) (?:stained|painted) glass\\b"
+    },
+    {
+      "material": "cylinder-glass",
+      "pattern": "\\b(?:broad[- ]sheet|cylinder) glass\\b"
+    },
+    {
+      "material": "crown-glass",
+      "pattern": "\\bcrown glass\\b"
+    },
+    {
+      "material": "sheet-glass",
+      "pattern": "\\bsheet glass\\b"
+    },
+    {
+      "material": "plate-glass",
+      "pattern": "\\bplate[- ]glass\\b",
+      "ignore": "\\buniversit"
+    },
+    {
+      "material": "float-glass",
+      "pattern": "\\bfloat glass\\b"
+    },
+    {
+      "material": "sash-window",
+      "pattern": "\\bsash(?:es| windows?|-windows?)\\b|\\bsash(?:ed)?\\b(?= (?:and|with))"
+    },
+    {
+      "material": "wrought-iron",
+      "pattern": "\\bwrought[- ]iron\\b",
+      "cue": true,
+      "ignore": "\\b(?:gates?|railings?|screens?|balustrades?|lamps?|lanterns?|brackets?|weathervane|hinges?|chandelier|corona|light)\\b"
+    },
+    {
+      "material": "cast-iron",
+      "pattern": "\\bcast[- ]iron\\b",
+      "cue": true,
+      "ignore": "\\b(?:gates?|railings?|rainwater|gutters?|downpipes?|lamps?|posts?|grave|markers?|fountains?|pumps?|bollards?|plates?|signs?|benches?)\\b"
+    },
+    {
+      "material": "iron-frame",
+      "pattern": "\\b(?:iron[- ]framed?|iron[- ]framing|fire[- ]?proof (?:construction|mill|building|floors?)|cast[- ]iron (?:frame|columns and beams|beams and columns))\\b"
+    },
+    {
+      "material": "steel",
+      "pattern": "\\b(?:built|constructed|made|clad|framed) (?:of|in|from|with) (?:\\w+ )?steel\\b|\\bsteel (?:girders?|trusses|arch(?:es)?|structure|construction|spans?|cables?|deck)\\b"
+    },
+    {
+      "material": "steel-frame",
+      "pattern": "\\bsteel[- ]fram(?:e|ed|ing)\\b"
+    },
+    {
+      "material": "roman-concrete",
+      "pattern": "\\b(?:Roman concrete|opus caementicium)\\b"
+    },
+    {
+      "material": "mass-concrete",
+      "pattern": "\\bmass concrete\\b"
+    },
+    {
+      "material": "reinforced-concrete",
+      "pattern": "\\b(?:reinforced[- ]concrete|ferro[- ]?concrete|Hennebique)\\b"
+    },
+    {
+      "material": "prestressed-concrete",
+      "pattern": "\\bpre-?stressed(?: concrete)?\\b"
+    },
+    {
+      "material": "precast-concrete",
+      "pattern": "\\bpre-?cast(?: concrete)?\\b"
+    },
+    {
+      "material": "thatch",
+      "pattern": "\\bthatch(?:ed|ing)?\\b|\\bNorfolk reed\\b",
+      "ignore": "\\b(?:inn|pub|tavern)\\b(?= (?:is|was|named))"
+    },
+    {
+      "material": "straw-thatch",
+      "pattern": "\\b(?:long[- ]straw|wheat[- ]reed|combed wheat|straw thatch(?:ed)?|thatched (?:with|in) straw)\\b",
+      "ignore": "\\bpipes?\\b"
+    },
+    {
+      "material": "wooden-shingles",
+      "pattern": "\\b(?:oak |cedar |wooden |timber )?shingle(?:d|s)?\\b(?= (?:spire|roof|broach|bell|turret|lantern|cladding|covering))|\\b(?:spire|roof|broach|belfry|turret|bellcote)s? (?:is |was |are |were )?(?:covered |clad |roofed )?(?:in|with) (?:oak |cedar |wooden |timber )?shingles\\b|\\bshingled\\b"
+    },
+    {
+      "material": "stone-slate",
+      "pattern": "\\b(?:stone[- ]slates?|stone[- ]slated|stone tiles|Collyweston|Stonesfield (?:slates?|stone)|Horsham (?:stone|slabs?)|grey slates? of stone|flags(?:tone)? roof)\\b",
+      "cue": true
+    },
+    {
+      "material": "slate",
+      "pattern": "\\b(?:slate[- ](?:roofs?|roofed|hung|hanging|covered)|slated|roofed (?:in|with) (?:\\w+ )?slates?|slate roofs?|(?:in|with|of) (?:\\w+ )?slates?\\b)",
+      "cue": true,
+      "ignore": "\\b(?:stone[- ]slates?|slate (?:slab|plaque|tablet|headstone|gravestone|memorial))\\b"
+    },
+    {
+      "material": "welsh-slate",
+      "pattern": "\\b(?:Welsh slates?|Penrhyn slates?|Dinorwi[cg] slates?|Ffestiniog slates?)\\b",
+      "cue": true
+    },
+    {
+      "material": "scottish-slate",
+      "pattern": "\\b(?:Easdale|Ballachulish) slates?\\b",
+      "cue": true
+    },
+    {
+      "material": "lake-district-slate",
+      "pattern": "\\b(?:Westmorland|Burlington|Lakeland|Lake District|Honister|Kirkby) (?:green )?slates?\\b",
+      "cue": true
+    },
+    {
+      "material": "west-country-slate",
+      "pattern": "\\b(?:Delabole|Cornish|Devon) slates?\\b",
+      "cue": true
+    },
+    {
+      "material": "roman-roof-tile",
+      "pattern": "\\b(?:tegulae?|imbrex|imbrices)\\b"
+    },
+    {
+      "material": "plain-tile",
+      "pattern": "\\b(?:plain[- ]tiles?|peg[- ]tiles?|plain[- ]tiled|clay[- ]tiled roofs?|tiled roofs?|roofed (?:in|with) (?:red |clay |plain |Kent )?tiles|(?:red |clay )tiled)\\b",
+      "ignore": "\\b(?:pantiles?|encaustic|floor)\\b"
+    },
+    {
+      "material": "pantile",
+      "pattern": "\\bpan[- ]?tile(?:s|d)?\\b"
+    },
+    {
+      "material": "roof-lead",
+      "pattern": "\\b(?:lead[- ](?:covered|roofed|sheathed|clad)|roofed (?:in|with) lead|lead roofs?|(?:covered|sheathed|clad) (?:in|with) lead|lead (?:spire|covering|sheet))\\b"
+    },
+    {
+      "material": "corrugated-iron",
+      "pattern": "\\bcorrugated(?: galvani[sz]ed)? (?:iron|metal|steel|sheeting)\\b|\\btin tabernacle\\b"
+    },
+    {
+      "material": "crown-post-roof",
+      "pattern": "\\bcrown[- ]posts?\\b"
+    },
+    {
+      "material": "king-post-roof",
+      "pattern": "\\bking[- ]?posts?\\b"
+    },
+    {
+      "material": "queen-post-roof",
+      "pattern": "\\bqueen[- ]?posts?\\b"
+    },
+    {
+      "material": "arch-braced-roof",
+      "pattern": "\\barch[- ]braced?\\b|\\barch[- ]bracing\\b"
+    },
+    {
+      "material": "hammerbeam-roof",
+      "pattern": "\\bhammer[- ]?beams?\\b"
+    },
+    {
+      "material": "roman-brick",
+      "pattern": "\\b(?:re-?used |reclaimed |salvaged )?Roman (?:bricks?|brickwork|tiles?|tile[- ]?work)\\b"
+    },
+    {
+      "material": "brick",
+      "pattern": "\\b(?:brick[- ](?:built|faced|fronted|walled|and[- ]stone|vaulted)|bricks?|brickwork)\\b",
+      "cue": true,
+      "ignore": "\\b(?:Roman (?:bricks?|tiles?|brickwork)|Coade|bricked up|bricked-up|brick(?:ed)? in)\\b"
+    },
+    {
+      "material": "diaper-brickwork",
+      "pattern": "\\bdiaper(?:ed|work|[- ]?pattern(?:ed|ing)?|ing)?\\b(?=[^.]{0,40}\\b(?:brick|bricks|brickwork|headers)\\b)|\\b(?:brick|brickwork)s?\\b[^.]{0,40}\\bdiaper"
+    },
+    {
+      "material": "english-bond",
+      "pattern": "\\bEnglish(?: garden[- ]wall)? bond\\b"
+    },
+    {
+      "material": "flemish-bond",
+      "pattern": "\\bFlemish bond\\b"
+    },
+    {
+      "material": "header-bond",
+      "pattern": "\\bheader bond\\b"
+    },
+    {
+      "material": "stretcher-bond",
+      "pattern": "\\bstretcher bond\\b"
+    },
+    {
+      "material": "cavity-wall",
+      "pattern": "\\bcavity[- ]walls?\\b"
+    },
+    {
+      "material": "gauged-brickwork",
+      "pattern": "\\b(?:gauged|rubbed) brick(?:s|work)?\\b"
+    },
+    {
+      "material": "mathematical-tile",
+      "pattern": "\\bmathematical tiles?\\b"
+    },
+    {
+      "material": "machine-made-brick",
+      "pattern": "\\b(?:machine[- ]made|pressed|wire[- ]cut) bricks?\\b"
+    },
+    {
+      "material": "fletton-brick",
+      "pattern": "\\bFletton bricks?\\b|\\bFlettons\\b"
+    },
+    {
+      "material": "staffordshire-blue-brick",
+      "pattern": "\\b(?:Staffordshire )?blue (?:engineering )?bricks?\\b",
+      "cue": true
+    },
+    {
+      "material": "accrington-brick",
+      "pattern": "\\b(?:Accrington|NORI) (?:engineering )?bricks?\\b"
+    },
+    {
+      "material": "ruabon-brick",
+      "pattern": "\\bRuabon (?:bricks?|red|terracotta)\\b"
+    },
+    {
+      "material": "colliery-brick",
+      "pattern": "\\bcolliery bricks?\\b"
+    },
+    {
+      "material": "polychrome-brick",
+      "pattern": "\\bpolychrom(?:e|atic|y)\\b(?=[^.]{0,40}\\bbrick)|\\bbrick\\w*\\b[^.]{0,40}\\bpolychrom|\\bconstructional polychromy\\b"
+    },
+    {
+      "material": "terracotta",
+      "pattern": "\\bterra[- ]?cotta\\b",
+      "cue": true,
+      "ignore": "\\b(?:statues?|figures?|figurines?|pots?|vessels?|pipes?|ridges?|cans|chimney|finials?)\\b"
+    },
+    {
+      "material": "faience",
+      "pattern": "\\bfa[iï]ence\\b",
+      "cue": true
+    },
+    {
+      "material": "glazed-brick",
+      "pattern": "\\bglazed bricks?\\b"
+    }
+  ],
+  "skip_sentence": "^(?:BOUNDARY|WALLED GARDEN|GARDEN|GATE|GATES|GATEPIERS|GATE ?PIERS|RAILINGS|BURIAL GROUND|GRAVEYARD|CHURCHYARD|LODGE|STABLES?|STEADING|OUTBUILDINGS?|OFFICES|ENCLOSURES?|SUNDIAL|WELL|DOVECOTE|ICE ?HOUSE|Boundary walls?|Burial ground|Churchyard|Gatepiers)\\b",
+  "skip_kinds": [
+    "burh",
+    "park_garden"
+  ]
+}

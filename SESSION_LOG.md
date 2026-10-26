@@ -1592,3 +1592,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   first dates that are only the earliest named (queen-post roof 1753 the worst: no source dates a medieval one).
 - Tests 342 OK. No GUI change (BT3c/BT4); hosted copy not updated.
 - Next: BT3b (records linked to materials).
+
+## 2026-10-26 — BT3b: records and places linked to materials and techniques
+- New `bidb/material_text.py` (term rules on sentences: cue words near ambiguous terms, `ignore` and `near` windows,
+  register sentences about boundary walls and gardens skipped, Wikipedia sections skipped by heading),
+  `bidb/material_map.py` (build stage "Materials" after the stories: Wikidata P186 via QLever, cached HES/Cadw/NIAH
+  descriptions, cached Wikipedia articles → table `material_map` with the evidence sentence; `--report`) and
+  `bidb/material_stats.py` (per material: counts, by nation and century, too-early flags, earliest example).
+  Curated `data/curated/building_types/material_aliases.json`: 59 Wikidata material items, 41 left out, 95 term rules.
+- Only 5,357 isles items have P186 (mostly statues); most links come from the HES descriptions and Wikipedia.
+  Reviewed five samples per material and source (829 lines) and fixed the false matches (rubble as debris, dock
+  jetties, fence post-holes, museum crucks, interior fittings, plate glass universities, towns and parks); 30 random
+  Wikipedia links after: about 28 right. The run went from 4.3 to 2.5 minutes with a single prefilter pattern.
+- Result: 8,477 of 22,508 records (37.7%) and 2,352 places, 24,957 links to 92 of 99 materials; 901 links flagged
+  too early (later phases), 90 materials with an earliest example (begun in or after the material's first date).
+- Emergent: catalogue dates mined from quantities (Waterloo Bridge 748, Liverpool Street 600, Battersea Power
+  Station 400, an NIAH "c. 188"); generic stones (sandstone, limestone, granite...) have no BT3a entry.
+- Tests 351 OK (9 new: `test_material_map`). No GUI or API change (BT3c/BT4); hosted copy not updated.
+- Next: BT3c (materials on detail views and type pages, with BT4) or the catalogue date check.

@@ -260,3 +260,32 @@ lead → Lake District slate dropped (one building, Westminster Hall, not a gene
 Left out for want of a dated source: copper roofs, mansard, tie-beam and common-rafter roofs, heather, marram
 and rope thatch, Valentia slate as its own entry, wychert, the sub-forms of crucks, English garden wall bond,
 London stock brick, limewash, cobble walling, Cornish and Welsh granite; brutalism is a style, not a material.
+
+## Records and places linked to materials (BT3b, 2026-10-26)
+
+`material_aliases.json`, read by `bidb.material_map` (build stage "Materials", after the stories stage, whose
+article cache it reads) → table `material_map`, summed by `bidb.material_stats`. Three sources per record or place:
+Wikidata P186 (5,357 isles items with coordinates have one, mostly statues; 59 material items mapped, 41 reviewed
+and left out in `not_in_list`: generic stone, sandstone, limestone, granite, marble, wood, concrete, roof tile, lead,
+bronze), the cached register descriptions (HES whole, 6,133 records; Cadw Period and History only, 226; NIAH notes,
+107) and the cached Wikipedia article (25,672 titles; else the extract). Text is read sentence by sentence by 95
+term rules: the term itself, a building word near it where the term alone is ambiguous (`cue`: "brick" near built,
+walls, roof, church...), words that drop it nearby (fonts, tombs, statues, gates, balusters, kilns, quarries, bells,
+"unlike"), sections skipped by heading (Churchyard, Geology, Location, Monuments, Collections...) and register
+sentences about boundary walls, gatepiers and gardens. The matching sentence is kept as evidence.
+
+First run reviewed five samples per material and source (829 lines): fixed rubble as debris, jetties at docks,
+post-holes of fences, cruck barns in museums, interior fittings (cast-iron balusters and ranges, Memel pine
+panelling, a Reader's Chair of oak), the plate glass universities, "of mud and silt", "square panel" in register
+elevations, signal box frames, towns (burhs) and registered parks whose articles describe the buildings in them
+(those kinds left out). A random sample of 30 Wikipedia links after the fixes: about 28 right.
+
+Result: 8,477 of 22,508 records (37.7%; register 15,571 links, Wikipedia 5,818, Wikidata 207) and 2,352 places
+linked, 24,957 links to 92 of the 99 materials (none for machine-made, colliery and clay-lump brick, window,
+cylinder and float glass, Kilkenny marble). Most common: sash windows 3,848, ashlar 3,467, rubble 3,150, slate 2,668,
+brick 2,522, plate glass 1,795 (HES glazing), harling 896. A text names the materials of every phase, so 901 links
+whose building was begun over a century before the material's first date are flagged "too early" (sash windows in
+tower houses, brick repairs to Norman churches); the earliest example of a material is the earliest standing,
+non-estimated record begun in or after its first date (90 materials have one). Some earliest examples show catalogue
+dating errors instead (Waterloo Bridge 748, Liverpool Street station 600, Battersea Power Station 400, an NIAH house
+"c. 188"): an emergent task in the roadmap.

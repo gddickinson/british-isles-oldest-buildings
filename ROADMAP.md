@@ -5,7 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
-- Building types: 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
+- Building types: 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
   isles types with examples, 220 with an earliest surviving example (BT1d).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -654,9 +654,23 @@ the descent of a type is disputed, both views are given and the link is drawn as
       taxes, slate duty 1831, railways, patents) and geology; `earlier: true` where the first date is only the
       earliest a source names (6). Two duplicated cross-file links merged, one single-building link dropped.
       Details in `data/curated/building_types/README.md`.
-- [ ] BT3b Catalogue records and places linked to materials: Wikidata P186, the article text ("built of red
-      sandstone", "timber-framed"), register descriptions where held (HES/Cadw dates text, listing descriptions);
-      table `material_map`, earliest dated examples per material, counts by century (for BT5).
+- [x] BT3b (2026-10-26) Records and places linked to materials (new `bidb/material_text.py`, `bidb/material_map.py`,
+      build stage "Materials" after the stories; `bidb/material_stats.py`; `data/curated/building_types/
+      material_aliases.json`) → table `material_map` with the matching sentence as evidence: Wikidata P186 (59 material
+      items mapped, 41 left out as too general), cached HES/Cadw/NIAH register descriptions, cached Wikipedia articles,
+      by 95 reviewed term rules (cue words near ambiguous terms, fittings, kilns and quarries dropped). 8,477 of 22,508
+      records (37.7%) and 2,352 places, 24,957 links to 92 of 99 materials; about 28 of 30 sampled text links right.
+      Per material: counts by source, nation and century begun (`by_century`, for BT5), "too early" links (901: later
+      phases), earliest example begun in or after the material's first date (90). Details in the building types README.
+- [ ] Catalogue dates mined from quantities (emergent 2026-10-26, found in BT3b): Waterloo Bridge 748 ("748.6 m",
+      skipped by today's `date_mining.YEAR` but the database predates that), Liverpool Street station 600 ("the
+      remaining 600 into tenements"), Battersea Power Station 400 ("400 megawatts"): `date_source` "Wikipedia article"
+      (2,368 records, 1,713 of them landmarks) needs a check for numbers that are not years; an NIAH house dated
+      "c. 188 (NIAH date range 188–1840)".
+- [ ] Generic stones for BT3 (emergent 2026-10-26): sandstone (334 Wikidata items, 938 text mentions), limestone,
+      granite, marble, chalk, Coade stone and local freestones (Ancaster, Ketton, Hopton Wood, Heavitree, Yorkstone)
+      have no entry in materials_*.json, so they are left out of material_map; research them as BT3a entries (sourced
+      periods and regions) and map them.
 - [ ] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
       layer.
 - [ ] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans

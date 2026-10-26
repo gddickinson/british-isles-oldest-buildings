@@ -1,5 +1,5 @@
 {
- "about": "BT2a: how catalogue records and places reach the building types (bidb.type_map). `classes`: Wikidata class labels the FISH thesaurus lacks, or finds too generally, given a type. `within_period`: types whose FISH concept is wider than the type, found through FISH only for records begun within the type's period of use. `nations`: types found only in those nations. `names`: patterns on the name of a record or place none of whose classes finds a type, limited to categories (catalogue) or kinds (places). `categories`: a catalogue category that means one type. `place_kinds`, `place_types`: places by kind, or by their own type label (register types such as 'Castle - tower house'). `not_in_tree`: labels reviewed and left without a type (too general, or no such type in the tree yet), so the report lists only unreviewed ones. `skip_kinds`: place kinds that are not buildings or structures (objects, plaques, finds, events, clubs, firms), never typed.",
+ "about": "BT2a: how catalogue records and places reach the building types (bidb.type_map). `classes`: Wikidata class labels the FISH thesaurus lacks, or finds too generally, given a type. `within_period`: types whose FISH concept is wider than the type, found through FISH only for records begun within the type's period of use. `nations`: types found only in those nations. `names`: patterns on the name of a record or place none of whose classes finds a type, limited to categories (catalogue) or kinds (places). `texts` (BT2b): patterns on a record's or place's name, short description and the first two sentences of its Wikipedia extract, for records whose classes find no type or only a type the rule `refines` (a castle described as a 'tower keep castle'); limited to `categories` for records and applied to places only of the listed `kinds`; `slack` narrows the century allowed around the type's period. `categories`: a catalogue category that means one type. `place_kinds`, `place_types`: places by kind, or by their own type label (register types such as 'Castle - tower house'). `not_in_tree`: labels reviewed and left without a type (too general, or no such type in the tree yet), so the report lists only unreviewed ones. `skip_kinds`: place kinds that are not buildings or structures (objects, plaques, finds, events, clubs, firms), never typed. `early_ok` (BT2b, bidb.type_stats): examples begun more than a century before their type's first known date that were reviewed and are right, with the reason.",
  "reviewed": "2026-10-26",
  "within_period": [
   "georgian-playhouse",
@@ -32,11 +32,11 @@
    "Scotland"
   ],
   "irish-union-workhouse": [
-   "Ireland",
+   "Republic of Ireland",
    "Northern Ireland"
   ],
   "tholsel": [
-   "Ireland",
+   "Republic of Ireland",
    "Northern Ireland"
   ],
   "broch": [
@@ -172,7 +172,7 @@
    ]
   },
   {
-   "pattern": "\\bStation$",
+   "pattern": "^(?!.*\\b(Lifeboat|Power|Radar|Sub|Pumping|Brigade|Fire|Police|Signal|Coastguard|Wireless|Ambulance|Pilot|Mission|Research|Weather|Telegraph|Cable|Relay|Transmitting|Tracking|Naval|Air|Seaplane|Experimental|Marine|Gauging|Bus|Coach|Filling|Petrol|Service|Lifesaving|Rocket|Fishing|Whaling|Quarantine|Lighthouse|Pumping|Water|Sewage|Gas|Electricity|Generating|Hydro)\\b).*\\bStation$",
    "type": "railway-station",
    "categories": [
     "Railway",
@@ -925,6 +925,1020 @@
    ]
   }
  ],
+ "texts": [
+  {
+   "type": "round-house",
+   "pattern": "^([\\w'-]+ ){0,4}(round ?houses?|hut circles?)\\b",
+   "categories": [
+    "Prehistoric dwelling",
+    "Prehistoric monument",
+    "Ruin / archaeological site"
+   ],
+   "kinds": [
+    "scheduled",
+    "archaeology"
+   ]
+  },
+  {
+   "type": "blackhouse",
+   "pattern": "\\bblack ?houses?\\b",
+   "refines": [
+    "longhouse",
+    "farmhouse"
+   ],
+   "categories": [
+    "House / domestic",
+    "Museum",
+    "Ruin / archaeological site"
+   ],
+   "kinds": [
+    "scheduled",
+    "museum",
+    "housemuseum"
+   ]
+  },
+  {
+   "type": "wealden-house",
+   "pattern": "\\bWealden (hall[- ])?house|\\bWealden hall\\b",
+   "refines": [
+    "hall-house",
+    "farmhouse",
+    "manor-house",
+    "country-house"
+   ],
+   "categories": [
+    "House / domestic",
+    "Palace / manor house"
+   ],
+   "kinds": [
+    "scheduled",
+    "housemuseum"
+   ]
+  },
+  {
+   "type": "lobby-entry-house",
+   "pattern": "lobby[- ]entr|baffle[- ]entr",
+   "refines": [
+    "farmhouse",
+    "manor-house",
+    "country-house",
+    "hall-house"
+   ],
+   "categories": [
+    "House / domestic",
+    "Palace / manor house"
+   ],
+   "kinds": [
+    "scheduled",
+    "housemuseum"
+   ]
+  },
+  {
+   "type": "double-pile-house",
+   "pattern": "double[- ]pile",
+   "refines": [
+    "farmhouse",
+    "manor-house",
+    "country-house"
+   ],
+   "categories": [
+    "House / domestic",
+    "Palace / manor house"
+   ],
+   "kinds": [
+    "scheduled",
+    "housemuseum"
+   ]
+  },
+  {
+   "type": "tower-keep",
+   "pattern": "\\b(tower keep|donjon|rectangular keep|square keep)\\b",
+   "refines": [
+    "castle"
+   ],
+   "categories": [
+    "Castle / fortification",
+    "Ruin / archaeological site"
+   ],
+   "kinds": [
+    "scheduled",
+    "fort"
+   ]
+  },
+  {
+   "type": "scottish-baronial",
+   "pattern": "Scottish baronial",
+   "refines": [
+    "country-house",
+    "castle",
+    "manor-house",
+    "tower-house"
+   ],
+   "categories": [
+    "House / domestic",
+    "Palace / manor house",
+    "Castle / fortification"
+   ]
+  },
+  {
+   "type": "bastion-trace-fort",
+   "pattern": "\\b(bastioned|star) fort|trace italienne|bastioned artillery",
+   "refines": [
+    "castle"
+   ],
+   "categories": [
+    "Castle / fortification"
+   ],
+   "kinds": [
+    "scheduled",
+    "fort",
+    "battery"
+   ]
+  },
+  {
+   "type": "artillery-castle",
+   "pattern": "Device Forts?|Henrician (castle|fort)|(16th|sixteenth)[- ]century artillery (castle|fort)|artillery castle",
+   "refines": [
+    "castle"
+   ],
+   "categories": [
+    "Castle / fortification"
+   ],
+   "kinds": [
+    "scheduled",
+    "fort",
+    "battery"
+   ]
+  },
+  {
+   "type": "polygonal-fort",
+   "pattern": "Palmerston (Fort|Folly)|Palmerston Forts|Royal Commission on the Defence|polygonal fort",
+   "refines": [
+    "castle"
+   ],
+   "categories": [
+    "Castle / fortification"
+   ],
+   "kinds": [
+    "scheduled",
+    "fort",
+    "battery"
+   ]
+  },
+  {
+   "type": "aisled-barn",
+   "pattern": "aisled barn",
+   "refines": [
+    "barn",
+    "tithe-barn"
+   ],
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "cruck-barn",
+   "pattern": "cruck[- ]?(framed )?barn|barn\\b.{0,40}\\bcrucks?\\b",
+   "refines": [
+    "barn"
+   ],
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "bank-barn",
+   "pattern": "bank barn",
+   "refines": [
+    "barn"
+   ],
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "hay-barn",
+   "pattern": "Dutch barn|hay barn",
+   "refines": [
+    "barn"
+   ],
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "gin-gang",
+   "pattern": "gin gang|horse[- ]engine house|horse[- ]gin house|horse[- ]wheel house",
+   "refines": [
+    "barn",
+    "threshing-barn"
+   ],
+   "categories": [
+    "Agricultural / industrial",
+    "House / domestic"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "laithe-house",
+   "pattern": "laithe[- ]house",
+   "refines": [
+    "farmhouse",
+    "longhouse"
+   ],
+   "categories": [
+    "Agricultural / industrial",
+    "House / domestic"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "moot",
+   "pattern": "^(The )?Moot Hill\\b|\\bmoot (hill|mound|site)\\b|thing ?(mound|stead)|assembly (site|mound)",
+   "categories": [
+    "Prehistoric monument",
+    "Ruin / archaeological site",
+    "Other structure"
+   ],
+   "kinds": [
+    "scheduled",
+    "archaeology"
+   ]
+  },
+  {
+   "type": "tholsel",
+   "pattern": "^(The )?(Old )?Tholsel\\b|formerly known as The Tholsel|commonly called the Old Tholsel",
+   "refines": [
+    "town-hall",
+    "market-house",
+    "court-house",
+    "fortified-house",
+    "tower-house"
+   ],
+   "categories": [
+    "Civic building",
+    "Market / shop",
+    "Castle / fortification"
+   ],
+   "kinds": [
+    "pi_civic",
+    "pio_civic",
+    "tr_market",
+    "scheduled"
+   ]
+  },
+  {
+   "type": "prison-hulk",
+   "pattern": "prison (hulk|ship)",
+   "categories": [
+    "Prison"
+   ],
+   "kinds": [
+    "pi_prison",
+    "wreck"
+   ]
+  },
+  {
+   "type": "panopticon",
+   "pattern": "panopticon",
+   "refines": [
+    "gaol"
+   ],
+   "categories": [
+    "Prison"
+   ],
+   "kinds": [
+    "pi_prison"
+   ]
+  },
+  {
+   "type": "penitentiary",
+   "pattern": "Millbank Penitentiary|National Penitentiary",
+   "refines": [
+    "gaol"
+   ],
+   "categories": [
+    "Prison"
+   ],
+   "kinds": [
+    "pi_prison"
+   ]
+  },
+  {
+   "type": "separate-system-prison",
+   "pattern": "separate system|radial (plan|design|layout)",
+   "refines": [
+    "gaol"
+   ],
+   "categories": [
+    "Prison"
+   ],
+   "kinds": [
+    "pi_prison",
+    "victorian_public"
+   ]
+  },
+  {
+   "type": "fire-engine-house",
+   "pattern": "^[^|,]*\\bFire Engine House\\b",
+   "refines": [
+    "fire-station",
+    "police-station"
+   ],
+   "categories": [
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "pio_fire",
+    "pio_police",
+    "pi_civic",
+    "pi_prison",
+    "scheduled"
+   ]
+  },
+  {
+   "type": "gin-palace",
+   "pattern": "gin palace",
+   "refines": [
+    "public-house"
+   ],
+   "categories": [
+    "Public house / inn"
+   ],
+   "kinds": [
+    "tr_inn"
+   ]
+  },
+  {
+   "type": "drovers-inn",
+   "pattern": "drovers\\W? ?inn",
+   "refines": [
+    "inn",
+    "public-house"
+   ],
+   "categories": [
+    "Public house / inn"
+   ],
+   "kinds": [
+    "tr_inn"
+   ]
+  },
+  {
+   "type": "alehouse",
+   "pattern": "^[^|]*\\b(beer ?house|ale ?house)\\b|is an? (former )?(beer ?house|ale ?house)",
+   "refines": [
+    "public-house",
+    "inn"
+   ],
+   "categories": [
+    "Public house / inn"
+   ],
+   "kinds": [
+    "tr_inn"
+   ]
+  },
+  {
+   "type": "exchange",
+   "pattern": "^(?![^|]*(Square|Guardian|Assurance|Insurance))[^|]*\\b(wool|cloth|coal|hop|cotton|royal|merchants\\W?|commercial|linen|corn and) exchange\\b",
+   "categories": [
+    "Civic building",
+    "Market / shop",
+    "Bank / office"
+   ],
+   "kinds": [
+    "tr_exchange",
+    "gu_exchange",
+    "tr_market"
+   ]
+  },
+  {
+   "type": "song-school",
+   "pattern": "song school|choir school",
+   "refines": [
+    "grammar-school",
+    "public-school"
+   ],
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "type": "cathedral-school",
+   "pattern": "^[^|]*Cathedral School|is an? (former )?cathedral school|monastic school",
+   "refines": [
+    "grammar-school",
+    "public-school"
+   ],
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "type": "chantry-school",
+   "pattern": "chantry school",
+   "refines": [
+    "grammar-school"
+   ],
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "type": "monitorial-school",
+   "pattern": "monitorial|Lancasterian school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school",
+    "victorian_public"
+   ]
+  },
+  {
+   "type": "ragged-school",
+   "pattern": "ragged school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school",
+    "victorian_public",
+    "museum"
+   ]
+  },
+  {
+   "type": "board-school",
+   "pattern": "board school|(for|by) the [\\w ]{0,30}School Board",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school",
+    "victorian_public"
+   ]
+  },
+  {
+   "type": "scottish-parish-school",
+   "pattern": "parish school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "type": "academic-hall",
+   "pattern": "is an? (medieval )?academic hall|last surviving medieval (academic )?hall",
+   "refines": [
+    "college"
+   ],
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_university"
+   ]
+  },
+  {
+   "type": "red-brick-university",
+   "pattern": "red ?brick universit",
+   "refines": [
+    "university"
+   ],
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_university"
+   ]
+  },
+  {
+   "type": "chained-library",
+   "pattern": "chained library",
+   "categories": [
+    "Library",
+    "Church / chapel",
+    "Cathedral"
+   ],
+   "kinds": [
+    "library"
+   ]
+  },
+  {
+   "type": "royal-naval-hospital",
+   "pattern": "Royal Naval Hospital",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "type": "military-pensioners-hospital",
+   "pattern": "Royal Hospital (Chelsea|Kilmainham)|Greenwich Hospital",
+   "refines": [
+    "almshouse"
+   ],
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital",
+    "pi_community"
+   ]
+  },
+  {
+   "type": "workhouse-infirmary",
+   "pattern": "workhouse infirmary|infirmary of the [\\w ]{0,30}workhouse",
+   "refines": [
+    "union-workhouse"
+   ],
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital",
+    "pi_community"
+   ]
+  },
+  {
+   "type": "pavilion-hospital",
+   "pattern": "pavilion[- ](plan|principle|system|style|block)",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "type": "municipal-hospital",
+   "pattern": "municipal hospital",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "type": "voluntary-hospital",
+   "pattern": "voluntary hospital|^[^,|]*\\b(General|Royal|County) Infirmary\\b",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ],
+   "slack": 0
+  },
+  {
+   "type": "lunatic-hospital",
+   "pattern": "lunatic hospital|\\bBethlem\\b|\\bBedlam\\b",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "type": "echelon-plan-asylum",
+   "pattern": "echelon",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital",
+    "victorian_public"
+   ]
+  },
+  {
+   "type": "county-asylum",
+   "pattern": "^(?![^|]*\\bRailway\\b).*?(county (lunatic |pauper )?asylum|pauper lunatic asylum|district lunatic asylum|county mental hospital)",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital",
+    "victorian_public"
+   ]
+  },
+  {
+   "type": "scottish-poorhouse",
+   "pattern": "poor ?house",
+   "refines": [
+    "almshouse",
+    "union-workhouse"
+   ],
+   "kinds": [
+    "pi_community",
+    "victorian_public"
+   ]
+  },
+  {
+   "type": "irish-union-workhouse",
+   "pattern": "workhouse",
+   "refines": [
+    "union-workhouse"
+   ],
+   "categories": [
+    "Almshouse / hospital",
+    "Civic building"
+   ],
+   "kinds": [
+    "pi_community",
+    "victorian_public",
+    "industrial"
+   ]
+  },
+  {
+   "type": "parish-workhouse",
+   "pattern": "parish workhouse|^[^|]*Poor ?House\\b",
+   "refines": [
+    "almshouse"
+   ],
+   "kinds": [
+    "pi_community",
+    "victorian_public",
+    "museum",
+    "housemuseum"
+   ]
+  },
+  {
+   "type": "public-wash-house",
+   "pattern": "wash-?house|baths and wash",
+   "refines": [
+    "public-baths"
+   ],
+   "categories": [
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "sp_swim",
+    "victorian_public",
+    "pi_civic"
+   ]
+  },
+  {
+   "type": "fireproof-mill",
+   "pattern": "fire-?proof|iron[- ]framed",
+   "refines": [
+    "cotton-mill",
+    "silk-mill"
+   ],
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill",
+    "industrial"
+   ]
+  },
+  {
+   "type": "weavers-cottage",
+   "pattern": "weavers?\\W? cottage|loomshop|weaving (shop|loft)",
+   "categories": [
+    "House / domestic",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "housemuseum",
+    "museum",
+    "industrial"
+   ]
+  },
+  {
+   "type": "bottle-kiln",
+   "pattern": "bottle (kiln|oven)",
+   "refines": [
+    "pottery-kiln"
+   ],
+   "categories": [
+    "Agricultural / industrial",
+    "Other structure"
+   ],
+   "kinds": [
+    "industrial",
+    "iw_works",
+    "scheduled",
+    "kiln"
+   ]
+  },
+  {
+   "type": "gas-tunnel-kiln",
+   "pattern": "tunnel kiln",
+   "refines": [
+    "pottery-kiln"
+   ],
+   "categories": [
+    "Agricultural / industrial",
+    "Other structure"
+   ],
+   "kinds": [
+    "industrial",
+    "iw_works",
+    "kiln"
+   ]
+  },
+  {
+   "type": "brick-kiln",
+   "pattern": "\\b(tile and )?brick (and tile )?kilns?\\b(?!\\s+(copse|farm|lane|wood|cottages?))",
+   "categories": [
+    "Agricultural / industrial",
+    "Other structure",
+    "Roman structure"
+   ],
+   "kinds": [
+    "industrial",
+    "iw_works",
+    "scheduled",
+    "kiln"
+   ]
+  },
+  {
+   "type": "plen-an-gwary",
+   "pattern": "plen[- ]an[- ]gwary|plain[- ]an[- ]gwarr?y|playing place known as|medieval playing place",
+   "categories": [
+    "Theatre / entertainment",
+    "Other structure",
+    "Ruin / archaeological site"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "inn-yard-theatre",
+   "pattern": "inn[- ]yard theatre",
+   "categories": [
+    "Theatre / entertainment",
+    "Public house / inn"
+   ],
+   "kinds": [
+    "victorian_leisure",
+    "tr_inn"
+   ]
+  },
+  {
+   "type": "bear-garden",
+   "pattern": "bear[- ]garden|bear[- ]baiting (ring|pit)|baiting (ring|pit)",
+   "categories": [
+    "Theatre / entertainment",
+    "Other structure"
+   ],
+   "kinds": [
+    "scheduled",
+    "sp_venue"
+   ]
+  },
+  {
+   "type": "indoor-playhouse",
+   "pattern": "Blackfriars Theatre|Cockpit Theatre|Salisbury Court Theatre|indoor playhouse",
+   "categories": [
+    "Theatre / entertainment"
+   ]
+  },
+  {
+   "type": "elizabethan-playhouse",
+   "pattern": "Elizabethan (playhouse|theatre)",
+   "categories": [
+    "Theatre / entertainment"
+   ]
+  },
+  {
+   "type": "restoration-playhouse",
+   "pattern": "(?<!pre-)Restoration (theatre|playhouse)|Dorset Garden Theatre",
+   "categories": [
+    "Theatre / entertainment"
+   ]
+  },
+  {
+   "type": "cockpit",
+   "pattern": "^[^|]*\\bcock-?pit\\s*(\\||$)",
+   "categories": [
+    "Theatre / entertainment",
+    "Other structure",
+    "Public house / inn"
+   ],
+   "kinds": [
+    "scheduled",
+    "sp_venue"
+   ]
+  },
+  {
+   "type": "real-tennis-court",
+   "pattern": "real tennis|royal tennis",
+   "categories": [
+    "Theatre / entertainment",
+    "Other structure"
+   ],
+   "kinds": [
+    "sp_venue",
+    "scheduled"
+   ]
+  },
+  {
+   "type": "song-and-supper-room",
+   "pattern": "song[- ]and[- ]supper|supper rooms?|saloon theatre",
+   "refines": [
+    "music-hall",
+    "public-house"
+   ],
+   "categories": [
+    "Theatre / entertainment",
+    "Public house / inn"
+   ],
+   "kinds": [
+    "tr_inn",
+    "victorian_leisure"
+   ]
+  },
+  {
+   "type": "variety-theatre",
+   "pattern": "variety theatre|palace of varieties|^[^|]*\\b(Hippodrome|Empire)\\b[^|]*\\|[^|]*\\btheatre",
+   "refines": [
+    "music-hall"
+   ],
+   "categories": [
+    "Theatre / entertainment"
+   ],
+   "kinds": [
+    "victorian_public",
+    "victorian_leisure",
+    "sp_venue"
+   ]
+  },
+  {
+   "type": "landing-pier",
+   "pattern": "^([\\w'-]+ ){0,3}landing (pier|stage)",
+   "refines": [
+    "pleasure-pier"
+   ],
+   "categories": [
+    "Other structure",
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "victorian_leisure",
+    "scheduled",
+    "pier"
+   ]
+  },
+  {
+   "type": "spa",
+   "pattern": "\\b(chalybeate|mineral (spring|well)|medicinal (spring|well)|spa well)\\b|^[^|]*\\bSpa\\s*(\\||$)",
+   "categories": [
+    "Other structure",
+    "Civic building",
+    "Hotel"
+   ],
+   "kinds": [
+    "holy_well",
+    "pi_civic",
+    "victorian_leisure",
+    "scheduled",
+    "sp_swim"
+   ]
+  },
+  {
+   "type": "basilica",
+   "pattern": "Roman basilica|forum[- ]basilica|basilica (of|and) the (Roman )?forum",
+   "categories": [
+    "Roman structure",
+    "Ruin / archaeological site"
+   ],
+   "kinds": [
+    "scheduled",
+    "archaeology"
+   ]
+  },
+  {
+   "type": "chapel-of-ease",
+   "pattern": "(was|as|became|be|been|being|is|served as|described as|named) (a |an |the )?['‘]?(small |medieval )?chapel of ease|chapel of ease (to|for|of|in the parish)",
+   "refines": [
+    "church",
+    "parish-church"
+   ],
+   "categories": [
+    "Church / chapel"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "round-tower-church",
+   "pattern": "round[- ]tower(ed)? church",
+   "refines": [
+    "church",
+    "parish-church"
+   ],
+   "categories": [
+    "Church / chapel"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "commissioners-church",
+   "pattern": "(Commissioners\\W? church|Church Building Act|Million Act|Waterloo church)(?!.{0,80}Fifty New Churches)",
+   "refines": [
+    "church",
+    "parish-church"
+   ],
+   "categories": [
+    "Church / chapel"
+   ]
+  },
+  {
+   "type": "ecclesiological-church",
+   "pattern": "principles of the (Cambridge Camden|Ecclesiological) Society|Ecclesiologist|ecclesiological (principles|ideals)",
+   "refines": [
+    "church",
+    "parish-church"
+   ],
+   "categories": [
+    "Church / chapel"
+   ]
+  },
+  {
+   "type": "corbelled-oratory",
+   "pattern": "Gallarus (Oratory|type)|boat[- ]shaped oratory|corbelled (stone )?oratory|oratory\\b.{0,60}corbel",
+   "refines": [
+    "church"
+   ],
+   "categories": [
+    "Church / chapel"
+   ],
+   "kinds": [
+    "scheduled"
+   ]
+  },
+  {
+   "type": "flash-lock",
+   "pattern": "^[^|]*\\b(flash lock|staunch)\\b|is an? (former )?flash lock",
+   "refines": [
+    "pound-lock"
+   ],
+   "categories": [
+    "Bridge / infrastructure",
+    "Other structure"
+   ],
+   "kinds": [
+    "in_canal",
+    "scheduled"
+   ]
+  },
+  {
+   "type": "river-navigation",
+   "pattern": "^(?-i:[A-Z][\\w']*(?: (?:and|&) [A-Z][\\w']*)?(?: [A-Z][\\w']*)?) Navigation\\s*(\\||$)",
+   "refines": [
+    "canal"
+   ],
+   "categories": [
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "in_canal",
+    "industrial",
+    "ino_canal",
+    "canal"
+   ]
+  }
+ ],
  "place_kinds": {
   "tr_bank": "bank",
   "tr_shop": "shop",
@@ -951,7 +1965,12 @@
   "Castle - ringwork": "ringwork",
   "Castle - hall-house": "hall-house",
   "Castle - Anglo-Norman masonry castle": "castle",
-  "Church": "church"
+  "Church": "church",
+  "hut circle, roundhouse": "round-house",
+  "hut circle": "round-house",
+  "meeting place, thingstead, moot hill": "moot",
+  "Fort (Device Forts)": "artillery-castle",
+  "Fort (Palmerston Forts)": "polygonal-fort"
  },
  "not_in_tree": [
   "academic archive",
@@ -1438,5 +2457,6 @@
   "deserted_village",
   "memorial",
   "gr_burial"
- ]
+ ],
+ "early_ok": {}
 }

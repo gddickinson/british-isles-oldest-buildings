@@ -140,3 +140,45 @@ Roman villas), chapels (161), gatehouses (185), stables and carriage houses, lig
 museums, and the general windmill, school, hospital and prison. 80 types have no example yet: mostly narrow types
 (Wealden house, lobby-entry house, the asylum and school variants, the playhouses) that Wikidata does not class;
 BT2b looks for them by name and description.
+
+## Per type: counts, examples and the earliest surviving example (BT2b, 2026-10-26)
+
+`bidb/type_stats.py` (`python -m bidb.type_stats [--report] [--type ID]`; `/api/types`, `/api/type/<id>`,
+`/api/types_of/<id>`) reads table `type_map`: per type the records and places, dated examples oldest first, counts
+by nation and century, map points, and the earliest surviving example: the earliest dated example of which the type
+is the primary one (a castle later used as a town hall is no early town hall), catalogue records before places,
+not demolished, not dated by an estimate from its building type, and not "too early".
+
+**The 80 types with no example.** `aliases.json` `texts` (75 rules, each reviewed match by match): patterns on the
+name, short description and first two sentences of the Wikipedia extract ("is a 16th-century Device Fort", "a
+Wealden hall house", "tower keep castle", "Palmerston fort", "chapel of ease to", "round-tower church"), for records
+none of whose classes finds a type or whose type the rule `refines` (castle → tower keep, barn → aisled barn);
+limited to categories, and to listed kinds for places, because loose rules matched railway stations ("Bath Spa"),
+locks on a navigation, brickworks, moated sites at "Brick Kiln Farm", holy wells with corbelled roofs and buildings
+on Royal Exchange Square. Register type labels are now split at ";" and ":" as well as " - " ("Prehistoric
+domestic and defensive: hut circle, roundhouse"), and five labels aliased (hut circles → roundhouse, "meeting place,
+thingstead, moot hill" → moot, Device and Palmerston forts). Result: 174 of the 203 isles types have examples (was
+123), 10,812 records and 28,528 places typed; text rules type 68 records and 703 places.
+Rules tried and dropped: "university college" (UCL 1826, Durham 1832 and modern colleges are not the civic
+university colleges of 1851-1949), "great tower" (college and manor towers), "pump room" for spas (the Bath
+colonnades are parts of a pump room). Still with no example (29): round, lobby-entry house, bank barn, hay barn,
+laithe house, Victorian town hall, prison hulk, panopticon, Roman taberna, alehouse, drovers' inn, ragged school,
+Scottish parish school, academic hall, university college, pavilion hospital, echelon asylum, Scottish poorhouse,
+bottle kiln, gas tunnel kiln, inn-yard theatre, cockpit, indoor, Restoration playhouses, song-and-supper room, Roman
+basilica, Commissioners' church, ship's chain cable, flash lock: searched by name and description, and found only on
+plaques (ragged schools, a bottle kiln, Commissioners' churches), as place names (Laithe, Cockpit) or as a vanished
+building's site.
+
+**Found in review and fixed (BT2a errors).** The `nations` limits named "Ireland", but the database says "Republic of
+Ireland", so the tholsel and the Irish union workhouse never matched in the state (`problems` now checks nation
+names); the "...Station" name rule typed 24 lifeboat, power, radar and fire stations as railway stations.
+
+**Too early.** 521 examples (of about 39,000 typed records and places) begin more than a century before their type's first known date; they are
+listed by `--report`, flagged in `/api/type/<id>` and never the earliest example. Reviewed: mostly an older building
+in a later use (medieval inns now pubs and hotels, 63 and 40; theatres and a market hall now cinemas; medieval
+houses now country houses or farmhouses, 187 and 40, often dated by the first building on the site), the site's
+earliest phase (priories and parish churches on early minster sites, Roman forts under Pevensey and Cardiff
+castles), coarse register periods (brochs dated "Iron Age" from 400 BC, 31) and wrong classes (hillforts classed
+as castles on Wikidata: Caerau, Twmbarlwm, Castell Dinas Brân). No reviewed example was right and kept, so
+`early_ok` is empty. Found on the way: Irish SMR tower houses in townlands named Rath... or ...cashel are dated
+600, the year an early medieval ringfort or cashel would get (cause not yet checked), an emergent task.

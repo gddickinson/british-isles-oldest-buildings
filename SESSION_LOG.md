@@ -1534,3 +1534,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   reviewed (too general, or no such type yet). 80 types have no example yet (BT2b).
 - Tests 325 OK (7 new: `test_type_map`). No GUI change (BT4).
 - Next: BT2b.
+
+## 2026-10-26 — BT2b: per-type counts, examples and earliest surviving examples; 51 more types with examples
+- New `bidb/type_stats.py` (summary, detail, earliest, too-early check, types of one record) and `app/types_api.py`
+  (`/api/types`, `/api/type/<id>`, `/api/types_of/<id>`; ~0.1 s each). No build stage: it reads `type_map`.
+- The 80 types with no example: `bidb/type_map.py` gained text rules (`texts` in aliases.json: name, short
+  description, first two sentences of the extract; categories / place kinds, `refines`, `slack`) and splits register
+  labels at ";" and ":". First drafts matched far too widely (1,894 matches: railway stations for "spa", locks for
+  "Navigation", brickworks, holy wells with corbelled roofs); limited and reviewed match by match → 75 rules, 68
+  records and 703 places. 174 of 203 isles types now have examples (was 123); 29 still none (README lists them).
+- BT2a bugs fixed: nation limits said "Ireland" (database: "Republic of Ireland"), now checked by `problems`; the
+  "...Station" name rule typed 24 lifeboat, power and radar stations as railway stations.
+- Earliest surviving example for 152 types; prefers the type's primary records (Hertford Castle, used as a town
+  hall, gave way to Totnes Guildhall 1206). 521 examples "too early", reviewed by type: later use (pubs, hotels,
+  cinemas, country houses), first phase of the site, coarse register periods, wrong Wikidata classes; none kept.
+- Emergent: Irish SMR tower houses in "Rath..."/"...cashel" townlands dated 600.
+- Tests 330 OK (5 new: `test_type_stats` 3, text rules and label parts in `test_type_map`). No GUI page yet (BT4);
+  the hosted copy does not answer `/api/types` yet (BT7).
+- Next: BT1d (more types for what could not be typed) or BT3.

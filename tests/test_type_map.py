@@ -26,7 +26,10 @@ ALIASES = {
                "kinds": ["fort"]}],
     "categories": {"Tower": "tower-house"},
     "place_kinds": {"tr_bank": "castle"},
-    "place_types": {"Castle - tower house": "tower-house"},
+    "place_types": {"Castle - tower house": "tower-house", "hut circle, roundhouse": "broch"},
+    "texts": [{"pattern": r"\bshell keep\b", "type": "motte-and-bailey", "refines": ["castle"],
+               "categories": ["Castle / fortification"], "kinds": ["scheduled"]},
+              {"pattern": r"^[^|]*\bPlayhouse\b", "type": "georgian-playhouse", "slack": 0, "kinds": ["theatre"]}],
     "skip_kinds": ["object"],
 }
 
@@ -77,14 +80,41 @@ class TestMatcher(unittest.TestCase):
         self.assertEqual(m.place("fort", "Fort", "Pendennis Castle", 1540)[0][1], "name")
 
 
+    def test_label_parts(self):
+        parts = type_map.Matcher.label_parts("Prehistoric domestic: hut circle, roundhouse; Secular: hall")
+        self.assertEqual(parts, ["Prehistoric domestic: hut circle, roundhouse; Secular: hall",
+                                 "hut circle, roundhouse", "hall"])
+        self.assertEqual(matcher().place("scheduled", "hut circle, roundhouse; Secular: farmstead", "X", -100,
+                                         "Scotland")[0][:2], ("broch", "alias"))
+
+    def test_text_rules(self):
+        m = matcher()
+        text = m.text_of("Orford", "castle in Suffolk", "Orford is a castle. It has a shell keep. Later on, more.")
+        self.assertEqual(text, "Orford | castle in Suffolk | Orford is a castle. It has a shell keep.")
+        # refines a general type found by class; the refined type is dropped
+        self.assertEqual([t for t, _, _ in m.record("castle", "Orford", "Castle / fortification", 1170,
+                                                    text=text)], ["motte-and-bailey"])
+        # never outside its categories, never over a type it does not refine
+        self.assertEqual(m.record("castle", "Orford", "Church / chapel", 1170, text=text)[0][0], "castle")
+        self.assertEqual(m.record("Broch", "B", "Castle / fortification", -100, "Scotland", text=text)[0][0],
+                         "broch")
+        # places only of the rule's kinds; `slack` 0 keeps to the type's own period
+        self.assertEqual(m.place("scheduled", None, "X", 1170, text=text)[0][:2], ("motte-and-bailey", "text"))
+        self.assertEqual(m.place("fort", None, "X", 1170, text=text), [])
+        self.assertEqual(m.place("theatre", None, "Playhouse", 1790, text="Playhouse")[0][0], "georgian-playhouse")
+        self.assertEqual(m.place("theatre", None, "Playhouse", 1830, text="Playhouse"), [])
+
+
 class TestCuratedAliases(unittest.TestCase):
     def test_no_problems(self):
         self.assertEqual(type_map.problems(type_map.load_aliases(), building_types.load()["types"]), [])
 
     def test_problems_found(self):
         bad = type_map.problems({"classes": {"x": "nope"}, "names": [{"pattern": "(", "type": "castle"}],
-                                 "within_period": ["nope"], "not_in_tree": ["x"]}, TYPES)
-        self.assertEqual(len(bad), 5)
+                                 "within_period": ["nope"], "not_in_tree": ["x"],
+                                 "nations": {"broch": ["Ireland"]},
+                                 "texts": [{"pattern": "[", "type": "castle", "refines": ["nope"]}]}, TYPES)
+        self.assertEqual(len(bad), 8)
 
 
 if __name__ == "__main__":

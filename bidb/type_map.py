@@ -6,7 +6,10 @@ A record's Wikidata classes (buildings.classes, ';'-separated, most important fi
     fish     the class's FISH concept is a type's
     broader  the nearest broader FISH concept that is a type's (Wealden house → hall house type when the
              catalogue has no Wealden class, a ruined abbey → abbey); every concept at that distance counts
-A record whose classes find none may still match a name rule (`names`: a pattern on the head of the name, the
+A record whose classes find none, or only a type a text rule `refines`, may match a text rule (`texts`: a pattern
+on the name, the short description and the first two sentences of the Wikipedia extract: "is a Wealden hall
+house" makes a hall house a Wealden house; limited to `categories` for records, and applied to places only of the
+listed `kinds`; `slack` narrows the century allowed around the type's period) → via `text`. A record whose classes and texts find none may still match a name rule (`names`: a pattern on the head of the name, the
 part before the first comma, within the listed categories: "... Castle" only among castles and fortifications;
 "Gate Piers, Baldoon Castle" is not a castle) → via `name`, or its category (`categories`) → via `category`.
 Matches by name, category or kind need a record begun within a century of the type's period of use when its
@@ -18,7 +21,8 @@ within the type's period of use; a type limited to nations (`nations`) only for 
 
 Places (not the kinds in `skip_kinds`: objects, plaques, finds, battles, wrecks...; places never repeat a
 catalogue building): their own type label as a class (Wikidata class, or register type such as "Castle - tower house": the whole label,
-then the part after " - "), then its kind (`place_kinds`), then the name rules for that kind.
+then each part after " - ", ";" or ":", as in "Prehistoric domestic and defensive: hut circle, roundhouse"),
+then the text rules, then its kind (`place_kinds`), then the name rules for that kind.
 
 Labels reviewed and left without a type (no type for them in the tree yet, or too general) are listed in
 `not_in_tree`, so the report shows what is still unreviewed.
@@ -36,8 +40,11 @@ from .db import connect
 
 PATH = building_types.PATH.parent / "aliases.json"
 COLUMNS = ("entity_id", "source", "type_id", "via", "label", "is_primary")
-VIAS = ("type", "alias", "fish", "broader", "name", "category", "kind")
-SLACK = 100                 # years either side of a period for matches by name, category or kind
+VIAS = ("type", "alias", "fish", "broader", "text", "name", "category", "kind")
+NATIONS = ("England", "Scotland", "Wales", "Northern Ireland", "Republic of Ireland", "Isle of Man", "Jersey",
+           "Guernsey")
+SLACK = 100                 # years either side of a period for matches by text, name, category or kind
+SENTENCE = re.compile(r"(?<=[.!?])\s+(?=[A-Z])")
 
 
 def load_aliases(path=PATH):
@@ -49,6 +56,15 @@ def problems(aliases, types):
     ids, bad = {t["id"] for t in types}, []
     bad += [f"{where} {t!r}: unknown type" for where in ("within_period", "nations")
             for t in aliases.get(where, []) if t not in ids]
+    bad += [f"nations {t!r}: unknown nation {n!r}" for t, ns in aliases.get("nations", {}).items()
+            for n in ns if n not in NATIONS]
+    for rule in aliases.get("texts", []):
+        bad += [f"text rule {rule.get('pattern')!r}: unknown type {t!r}"
+                for t in [rule.get("type")] + rule.get("refines", []) if t not in ids]
+        try:
+            re.compile(rule["pattern"])
+        except (re.error, KeyError):
+            bad.append(f"text rule {rule.get('pattern')!r}: not a pattern")
     for where in ("classes", "categories", "place_kinds", "place_types"):
         bad += [f"{where} {k!r}: unknown type {v!r}" for k, v in aliases.get(where, {}).items() if v not in ids]
     for rule in aliases.get("names", []):
@@ -86,6 +102,8 @@ class Matcher:
         self.place_kinds = aliases.get("place_kinds", {})
         self.skip_kinds = aliases.get("skip_kinds", [])
         self.names = [dict(r, rx=re.compile(r["pattern"], re.I)) for r in aliases.get("names", [])]
+        self.texts = [dict(r, rx=re.compile(r["pattern"], re.I), refines=set(r.get("refines", [])))
+                      for r in aliases.get("texts", [])]
         self.within = set(aliases.get("within_period", []))
         self.nations = aliases.get("nations", {})
         self.period = {t["id"]: (t["period"]["from"], t["period"].get("to", building_types.THIS_YEAR))
@@ -128,12 +146,12 @@ class Matcher:
         fa, fb = self.fish_of.get(a), self.fish_of.get(b)
         return bool(fa and fb and fa != fb and fa in fish_types.descendants(fb)) if self.concepts else False
 
-    def allowed(self, t, via, year, nation):
+    def allowed(self, t, via, year, nation, slack=SLACK):
         if t in self.nations and nation not in self.nations[t]:
             return False
         lo, hi = self.period.get(t, (None, None))
-        if via in ("name", "category", "kind") and year is not None and lo is not None \
-                and not lo - SLACK <= year <= hi + SLACK:
+        if via in ("text", "name", "category", "kind") and year is not None and lo is not None \
+                and not lo - slack <= year <= hi + slack:
             return False
         if t in self.within and via in ("fish", "broader"):
             return year is not None and lo <= year <= hi
@@ -156,18 +174,49 @@ class Matcher:
                 return [(r["type"], "name", r["pattern"])]
         return []
 
-    def record(self, classes, name, category, year=None, nation=None):
+    def by_text(self, found, text, year=None, nation=None, category=None, kind=None):
+        """`found` with the first text rule that matches put first, when nothing was found or the primary type
+        is one the rule refines (the refined types are dropped)."""
+        if not text or (found and not any(found[0][0] in r["refines"] for r in self.texts)):
+            return found
+        for r in self.texts:
+            if (kind is not None and kind not in r.get("kinds", [])) or \
+                    (kind is None and r.get("categories") and category not in r["categories"]):
+                continue
+            if (not found or found[0][0] in r["refines"]) and r["rx"].search(text) \
+                    and self.allowed(r["type"], "text", year, nation, r.get("slack", SLACK)):
+                return [(r["type"], "text", r["pattern"])] + [x for x in found if x[0] not in r["refines"]
+                                                                and x[0] != r["type"]]
+        return found
+
+    @staticmethod
+    def text_of(name, description, extract):
+        """The text that text rules search: name, short description, first two sentences of the extract."""
+        return " | ".join(x for x in (name, description, " ".join(SENTENCE.split(extract or "")[:2])) if x)
+
+    def record(self, classes, name, category, year=None, nation=None, text=None):
         """[(type, via, label)] for a catalogue record, primary first."""
         labels = [s.strip() for s in (classes or "").split(";") if s.strip()]
         found = self.specific([(t, via, label) for label in labels for t, via in self.for_class(label)],
                               year, nation)
+        found = self.by_text(found, text, year, nation, category=category)
         if not found:
             found = self.specific(self.by_name_rule(name, category=category), year, nation)
         if not found and category in self.categories:
             found = self.specific([(self.categories[category], "category", category)], year, nation)
         return found
 
-    def place(self, kind, type_label, name, year=None, nation=None):
+    @staticmethod
+    def label_parts(label):
+        """A register type label and its parts: "A: b, c; D: e" → the whole, "b, c", "e"; "Castle - tower house"
+        → the whole, "tower house"."""
+        parts = [label]
+        for piece in label.split(";"):
+            piece = piece.strip().split(" - ", 1)[-1]
+            parts.append(piece.split(":", 1)[-1].strip())
+        return list(dict.fromkeys(p for p in parts if p))
+
+    def place(self, kind, type_label, name, year=None, nation=None, text=None):
         """[(type, via, label)] for a place without a catalogue building."""
         found = []
         if type_label:
@@ -175,12 +224,15 @@ class Matcher:
             if key in self.place_types:
                 found = [(self.place_types[key], "alias", type_label)]
             else:
-                for part in dict.fromkeys([type_label, type_label.split(" - ", 1)[-1]]):
+                for part in self.label_parts(type_label):
+                    if fish_types.normalise(part) in self.place_types:
+                        found = [(self.place_types[fish_types.normalise(part)], "alias", type_label)]
+                        break
                     found = [(t, via, type_label) for t, via in self.for_class(part)]
                     found = self.specific(found, year, nation)
                     if found:
                         break
-        found = self.specific(found, year, nation)
+        found = self.by_text(self.specific(found, year, nation), text, year, nation, kind=kind)
         if not found:
             found = self.specific(self.by_name_rule(name, kind=kind), year, nation)
         if not found and kind in self.place_kinds:
@@ -191,15 +243,15 @@ class Matcher:
 def rows(conn, matcher):
     """Rows of the type_map table for every catalogue record and place."""
     out, skip = [], set(matcher.skip_kinds)
-    for rid, classes, name, category, year, nation in conn.execute(
-            "SELECT id, classes, name, category, year_start, nation FROM buildings"):
-        found = matcher.record(classes, name, category, year, nation)
+    for rid, classes, name, category, year, nation, desc, extract in conn.execute(
+            "SELECT id, classes, name, category, year_start, nation, description, wikipedia_extract FROM buildings"):
+        found = matcher.record(classes, name, category, year, nation, matcher.text_of(name, desc, extract))
         out += [(rid, "building", t, via, label, int(i == 0)) for i, (t, via, label) in enumerate(found)]
-    for pid, kind, label, name, year, nation in conn.execute(
-            "SELECT id, kind, type, name, year_start, nation FROM places"):
+    for pid, kind, label, name, year, nation, desc, extract in conn.execute(
+            "SELECT id, kind, type, name, year_start, nation, description, wikipedia_extract FROM places"):
         if kind in skip:
             continue
-        found = matcher.place(kind, label, name, year, nation)
+        found = matcher.place(kind, label, name, year, nation, matcher.text_of(name, desc, extract))
         out += [(pid, "place", t, via, lab, int(i == 0)) for i, (t, via, lab) in enumerate(found)]
     return out
 

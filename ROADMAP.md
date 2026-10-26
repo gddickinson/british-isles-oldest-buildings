@@ -5,7 +5,8 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
-- Building types: 224 types, 183 links, 1,443 quotes; 10,805 records and 27,401 places typed (BT2a).
+- Building types: 224 types, 183 links, 1,443 quotes; 10,812 records and 28,528 places typed, 174 of 203 isles types
+  with examples, 152 with an earliest surviving example (BT2b).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
@@ -614,16 +615,23 @@ the descent of a type is disputed, both views are given and the link is drawn as
       kinds, categories, place kinds; name, category and kind matches only within a century of the type's period.
       10,805 of 22,508 records (48.0%) and 27,401 places typed, to 123 of 203 isles types; 438 leftover labels
       reviewed (`not_in_tree`). Details in `data/curated/building_types/README.md`.
-- [ ] BT2b Per type: counts, map points, dated examples and the earliest surviving example in the catalogue (moved
-      here from BT1c3), each checked against the type's period (an example far earlier than the type's first known
-      date is a mapping or dating error to review); look for the 80 types with no example by name and description
-      (Wealden house, lobby-entry house, the school and asylum variants); queries in bidb and `/api/types`,
-      `/api/type/<id>` for BT4.
+- [x] BT2b (2026-10-26) Per type (new `bidb/type_stats.py`, `app/types_api.py`: `/api/types`, `/api/type/<id>`,
+      `/api/types_of/<id>`): counts, dated examples, by nation and century, map points, the earliest surviving
+      example (primary type first, catalogue before places, not demolished, not dated by a type estimate) and
+      "too early" flags (begun over a century before the type's first known date: 521, reviewed; mostly later use
+      of an older building or the site's first phase, some wrong classes; never the earliest). The 80 types with no
+      example searched by name and description: 75 reviewed text rules in aliases.json (`texts`), register labels
+      split at ";" and ":" → 174 of 203 isles types with examples (was 123), 152 with an earliest surviving
+      example. Fixed on the way: "Republic of Ireland" in the nation limits, lifeboat and power stations typed as
+      railway stations. Details in `data/curated/building_types/README.md`.
 - [ ] BT1d More types for what BT2a could not type (emergent 2026-10-26): town houses (terrace house 1,006 records,
       tenement, townhouse, mews, cottage, villa), chapels (161), gatehouses (185), stables and carriage houses,
       lighthouses, friaries, palaces, and general parents (windmill, school, hospital, prison, theatre) for classes
       that name only the family; prehistoric and Roman monuments (hillforts, barrows, stone circles, Roman villas)
       as a decision first: in the tree, or left to the archaeology groups.
+- [ ] Irish SMR dates (emergent 2026-10-26, found in BT2b): tower houses and castles in townlands named Rath... or
+      ...cashel (Moycashel barony) are dated 600, as if they were ringforts or cashels; check `registers.ireland`'s
+      period-from-class and name reading, rebuild the places stage.
 - [ ] BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,
       jetty, close studding, wattle and daub), brick (bonds, from the 13th c. revival to the Victorian kilns), roofs
       (thatch, stone slate, slate, tile, pantile; roof trusses from crown post to king post), glass, iron and steel,

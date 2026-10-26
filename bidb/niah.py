@@ -28,6 +28,8 @@ def niah_records(records, log=print):
             continue
         name = _title(a.get("NAME")) or _title(a.get("ORIGINAL_TYPE")) or f"NIAH {reg}"
         year, end = a.get("DATEFROM"), a.get("DATETO")
+        if year and end and year < 1000 and end > 1500:
+            continue            # a digit lost from DATEFROM ("188–1840" for a house built c. 1820)
         desc = re.sub(r"\s+", " ", a.get("DESCRIPTION") or "").strip()
         appraisal = re.sub(r"\s+", " ", a.get("APPRAISAL") or "").strip()
         place = ", ".join(x for x in (_title(a.get("TOWN")) or _title(a.get("TOWNLAND")),

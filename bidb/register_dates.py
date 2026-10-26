@@ -76,9 +76,11 @@ def cached_description(rec):
 
 def normalise(text):
     """Register shorthand -> plain English: 'earlyC18th' -> 'early 18th century', '17th/18th' -> '17th or 18th'."""
+    text = re.sub(r"\bl(?=\d)", "1", text)      # scanned HES text: "l8th century", "l851-4"
     text = re.sub(r"\b(early|mid|late|later)?\s*-?C(\d{1,2})(?:st|nd|rd|th)?\b",
                   lambda m: f"{(m.group(1) or '').replace('later', 'late')} {m.group(2)}th century".strip(),
                   text, flags=re.I)
+    text = re.sub(r"(?<=[a-z])(?=\d{1,2}(?:st|nd|rd|th)\b)", " ", text)   # "of C14" above, Cadw "probably15th"
     text = re.sub(r"\b(Later|Earlier)(?=\s+\d)", lambda m: {"Later": "late", "Earlier": "early"}[m.group(1)], text)
     text = re.sub(r"(\d{1,2}(?:st|nd|rd|th))\s*/\s*(?=\d{1,2}(?:st|nd|rd|th))", r"\1 or ", text)
     text = re.sub(r"\bcentury century\b", "century", text)

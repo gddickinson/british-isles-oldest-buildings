@@ -5,6 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
+- Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 206 reviewed date corrections.
 - Building types: 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
   isles types with examples, 220 with an earliest surviving example (BT1d).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
@@ -662,11 +663,25 @@ the descent of a type is disputed, both views are given and the link is drawn as
       records (37.7%) and 2,352 places, 24,957 links to 92 of 99 materials; about 28 of 30 sampled text links right.
       Per material: counts by source, nation and century begun (`by_century`, for BT5), "too early" links (901: later
       phases), earliest example begun in or after the material's first date (90). Details in the building types README.
-- [ ] Catalogue dates mined from quantities (emergent 2026-10-26, found in BT3b): Waterloo Bridge 748 ("748.6 m",
-      skipped by today's `date_mining.YEAR` but the database predates that), Liverpool Street station 600 ("the
-      remaining 600 into tenements"), Battersea Power Station 400 ("400 megawatts"): `date_source` "Wikipedia article"
-      (2,368 records, 1,713 of them landmarks) needs a check for numbers that are not years; an NIAH house dated
-      "c. 188 (NIAH date range 188–1840)".
+- [x] Catalogue dates mined from quantities (emergent 2026-10-26, found in BT3b; fixed 2026-10-26): new
+      `bidb/date_recheck.py` dates the text-mined records of the existing database again with the build's own
+      `date_fill` step from the cache. `date_mining`: a bare number under 1000 is a year only after "c.", an era or
+      an introducing word ("the remaining 600", "400 megawatts", "500 cavalrymen" are not); thousands separators,
+      ordinals, "900-year-old", "between 600 and 1,000 years old", grid references and more units left out; life
+      dates "(d. AD 637)", "(b. 1270)" skipped; no sentence break after "d.", "b.", "c.", "fl."; "c1460", "AD 75",
+      "510±70 BC", "the 550s"; "mid-15th century" had stopped matching (the look-behind sat after the qualifier's
+      hyphen) and "early-mid"/"mid to late" keep the first qualifier; "Grade I listed" no longer counts as the skip
+      word "listed". Register text: "l8th"/"l851" (scanned l for 1) and "of C14" → "of14th" (normalise ate the
+      space). NIAH: two records in only through a lost digit ("188–1840", "820–1825") left out and removed. 156
+      dates changed (Liverpool Street, Battersea, Waterloo Bridge, Banff's "l8th century" houses dated 701, the
+      Churchill Barriers' lengths...), each reviewed; 25 dates the miner still gets wrong (the article's earliest
+      date is of something else) added to `date_corrections.json` with quotes (206 entries; St Seachnall's undated,
+      `year_start: null`). Timeline table rebuilt (45,805 events).
+- [ ] Seven new date-check conflicts (emergent 2026-10-26, from the fix above: the check now reads "Grade I listed
+      ... dating from the 11th century" and "c. 1600" introductions): Sheffield Cathedral (c. 1200 vs 15th century),
+      Woodchester Roman Villa (c. AD 325 vs 2nd century), St Mary Magdalene (675 vs 12th century), St James Antony
+      (1259 vs 12th century), St Michael (1440 vs 13th century), Ston Easton (11th vs 15th century), Ormesby Hall
+      (c. 1600 vs 1754): review with the 69 in `docs/date_review.md`.
 - [ ] Generic stones for BT3 (emergent 2026-10-26): sandstone (334 Wikidata items, 938 text mentions), limestone,
       granite, marble, chalk, Coade stone and local freestones (Ancaster, Ketton, Hopton Wood, Heavitree, Yorkstone)
       have no entry in materials_*.json, so they are left out of material_map; research them as BT3a entries (sourced

@@ -4,7 +4,9 @@ to an existing database with:  python -m bidb.date_corrections
 
 Entries come from reviewing the date-check conflicts: cases where the record's own Wikipedia
 introduction states that the building (or its surviving fabric) dates from another time than the
-catalogue's date, e.g. a Wikidata "inception" that is really a re-opening or listing year.
+catalogue's date, e.g. a Wikidata "inception" that is really a re-opening or listing year, or
+(bidb.date_recheck) a date mined from a length, a road number or a later event. "year_start": null
+leaves a record undated when no source dates it.
 """
 import json
 

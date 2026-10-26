@@ -1610,3 +1610,26 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Station 400, an NIAH "c. 188"); generic stones (sandstone, limestone, granite...) have no BT3a entry.
 - Tests 351 OK (9 new: `test_material_map`). No GUI or API change (BT3c/BT4); hosted copy not updated.
 - Next: BT3c (materials on detail views and type pages, with BT4) or the catalogue date check.
+
+## 2026-10-26 — Catalogue dates mined from quantities (emergent from BT3b)
+- New `bidb/date_recheck.py`: the text-mined (and type-estimated, and undated) records of the existing database dated
+  again by the build's own `date_fill` step from the download cache; changes to `runs/date_recheck.json`, `--apply`
+  writes them (a rebuild would drop the photo, plan and outline jobs' work). Database backed up first.
+- Rechecking the 2,368 "Wikipedia article" dates with today's code found more than the quantities: "mid-15th century"
+  had stopped matching altogether (the hyphen look-behind sat after the qualifier), "c1460" and "AD 75" were never
+  read, and HES's scanned "l8th century" and the register normaliser's own "of C14" → "of14th" gave years like 701.
+- `date_mining`: bare numbers under 1000 need "c.", an era or an introducing word; more units, thousands separators,
+  ordinals, ages, grid references; life dates "(d. 655)" skipped, no sentence break after "d."/"b."/"c."/"fl.";
+  "510±70 BC"; "the 550s"; double qualifiers ("Early-mid", "mid to late") keep the first; "Grade I listed" no longer
+  trips the skip word "listed" (but "made a Grade II Listed Building on 17 May 1994" still does). Tried and
+  reverted: pottery/sherd as skip words (pottery is how most forts are dated).
+- Result: 156 dates changed over two passes, all reviewed line by line; 25 the miner still gets wrong (the
+  article's earliest date belongs to a neighbouring building, a find or a later event) added to
+  `data/curated/date_corrections.json` with quotes, all found in the cached articles (Waterloo Bridge 1937, Liverpool
+  Street 1874, Battersea 1929, Brands Hatch 1926, Commando Memorial 1952, Hammerwood Park 1792...); St Seachnall's
+  Church left undated (`year_start: null`, newly allowed). NIAH typo records niah-20000033 and niah-21903502
+  removed and kept out of the build. Timeline table rebuilt (45,805 events).
+- Emergent: seven new date-check conflicts between Wikidata dates and introductions the check can now read
+  (Sheffield Cathedral, Woodchester Roman Villa, Ormesby Hall...), for the date review.
+- Tests 356 OK (5 new in `test_date_mining`). No GUI change; hosted copy and bundled release not updated.
+- Next: BT3c with BT4 (the /types page).

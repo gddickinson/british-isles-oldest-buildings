@@ -1717,3 +1717,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   since version 71): 253.0 MiB, 487 files.
 - Tests 372 OK (5 new `test_static_types`; `test_static_split` follows the hash's move to `STATIC_ID_HASH`).
 - Next: BT7 (Help page section and figures for /types, quiz questions "which type came first?", "name the type").
+
+## 2026-10-26 — BT7: building types in the quiz and the Help page
+- Two new quizzes (13 in all): "Which type came first?" (two isles types by first known date from the family tree,
+  400 years apart, 60 on Hard, Hard mostly within one domain) and "Name the type" (a photographed catalogue record
+  by its main type, up to 4 records for each of 187 types; wrong answers from other domains, on Hard the same domain
+  but another family, as the forms of one family, e.g. castle and concentric castle, can all be right). The pool gets
+  `types` (`quiz_api.types`: 285 kinds, 604 photos, 176 KB in data/quiz.json); new `tests/test_quiz_types.py`.
+- Help: new section "Building types" (family tree, type and material pages, Through time) with three new figures
+  (`types_tree`, `type_page`, `types_time`, in `docs/make_figures.mjs`); the quiz paragraph lists all thirteen (it had
+  left out "Which came first?"); quiz_menu figure regenerated.
+- ui_check: quiz_typefirst, quiz_nametype, help_types added and passing (against a fresh server on port 5072; the
+  GUI on 5050 runs older code until restarted).
+- Hosted copy version 75 (9 changed files: quiz data and scripts, Help page and four figures): 490 files. Checked
+  `dist/` served locally in headless Chrome: both new quizzes draw questions, no errors.
+- Tests 374 OK. Next: BT6 (generated examples) or BT3c2 (material regions over the geology layer), or the open
+  emergent items (generic stones, tramways and funiculars).

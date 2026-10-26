@@ -1,5 +1,5 @@
 """Quiz material: /api/quiz (photographed buildings with a well-supported date) and /api/quiz_pool (names
-to pronounce, stories, history events, the researched oldest lists). The questions are made in the browser
+to pronounce, stories, history events, the researched oldest lists, building types). The questions are made in the browser
 (static/quiz_kinds.js); `pool` is also written to data/quiz.json for the hosted copy (static_tours.py).
 """
 import json
@@ -101,6 +101,24 @@ def firsts():
     return out
 
 
+def types(db, per_type=4, data=None):
+    """Building types (BT7): isles types with a first known date, for "Which type came first?", and photographed
+    catalogue records of each type (their main type), for "Name the type"."""
+    from bidb import building_types
+    data = data or building_types.load()
+    kinds = [{"id": t["id"], "name": t["name"], "domain": t["domain"], "family": t["family"],
+              "year": (t.get("period") or {}).get("from")} for t in data["types"] if not t.get("abroad")]
+    known = {t["id"] for t in kinds}
+    photos, n = [], {}
+    for r in db.execute("""SELECT b.id, b.name, b.image_thumb, b.nation, t.type_id FROM type_map t
+            JOIN buildings b ON b.id = t.entity_id WHERE t.source = 'building' AND t.is_primary = 1
+            AND b.image_thumb IS NOT NULL ORDER BY random()"""):
+        if r["type_id"] in known and n.get(r["type_id"], 0) < per_type:
+            n[r["type_id"]] = n.get(r["type_id"], 0) + 1
+            photos.append(dict(r))
+    return {"kinds": kinds, "photos": photos}
+
+
 def pool(db):
     return {"pron": pronunciations(db), "stories": stories(db), "history": history(), "lists": oldest_lists(),
-            "firsts": firsts()}
+            "firsts": firsts(), "types": types(db)}

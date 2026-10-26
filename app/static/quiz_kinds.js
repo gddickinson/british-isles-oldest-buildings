@@ -1,5 +1,5 @@
 // The quizzes: each makes a round of questions from photographed buildings (/api/quiz) and the quiz pool
-// (/api/quiz_pool: names to say, stories, history events, the researched oldest lists). Used by quiz.js.
+// (/api/quiz_pool: names to say, stories, history events, the researched oldest lists, building types). Used by quiz.js.
 // A question: { prompt (HTML), image?, choices: [{ value, label, sub?, image? }], answer (value, or a list of
 // values in order for "order" questions), explain (HTML), link? }.
 const QuizKinds = (() => {
@@ -18,6 +18,7 @@ const QuizKinds = (() => {
   const link = (b) => `<a href="${buildingUrl(b.id)}" target="_blank" rel="noopener">${esc(b.name)}</a>`;
   const when = (b) => `${esc(b.date_text || yr(b.year_start))} (${esc(b.period)})`;
   const where = (b) => esc([b.locality, b.county !== b.locality && b.county, b.nation].filter(Boolean).join(", "));
+  const typeLink = (t) => `<a href="${IS_STATIC ? "types.html" : "/types"}?t=${encodeURIComponent(t.id)}" target="_blank" rel="noopener">${esc(t.name)}</a>`;
   const photo = (b) => ({ value: b.id, label: b.name, image: b.image_thumb, sub: b.category });
 
   // `n` items from `pool` that pass `ok` against each other (e.g. different enough dates), or null
@@ -185,11 +186,45 @@ const QuizKinds = (() => {
       return out;
     } };
 
+  K.typefirst = { title: "Which type came first?", icon: "🌿", blurb: "Two kinds of building: which was built first in the isles?",
+    make(d, hard) {
+      const gap = hard ? 60 : 400, pool = ((d.pool.types || {}).kinds || []).filter((t) => t.year != null), out = [];
+      for (let i = 0; i < 60 && out.length < 10; i++) {
+        const pair = spread(pool, 2, (a, b) => Math.abs(a.year - b.year) >= gap && (!hard || a.domain === b.domain || Math.random() < 0.3), 5);
+        if (!pair || out.some((q) => q.ids.includes(pair[0].id) || q.ids.includes(pair[1].id))) continue;
+        const first = pair[0].year < pair[1].year ? pair[0] : pair[1];
+        out.push({ ids: pair.map((t) => t.id), prompt: "<p>Which kind of building was built first in the isles?</p>",
+          choices: pair.map((t) => ({ value: t.id, label: t.name, sub: hard ? "" : t.family })), answer: first.id,
+          explain: pair.map((t) => `${typeLink(t)}: first known ${yr(t.year)}`).join("<br>") +
+            ` <span class="hint">From the family tree of <a href="${IS_STATIC ? "types.html" : "/types"}">building types</a>.</span>` });
+      }
+      return out;
+    } };
+
+  K.nametype = { title: "Name the type", icon: "🏛", blurb: "A photo of a building: what kind of building is it?",
+    make(d, hard) {
+      const t = d.pool.types || {}, kinds = new Map((t.kinds || []).map((k) => [k.id, k]));
+      const photos = (t.photos || []).filter((p) => kinds.has(p.type_id)), out = [], used = new Set();
+      for (const p of shuffle(photos)) {
+        if (out.length === 10) break;
+        if (used.has(p.type_id)) continue;
+        used.add(p.type_id);
+        const k = kinds.get(p.type_id), all = [...kinds.values()].filter((x) => x.id !== k.id);
+        // hard: the same domain but another family (forms of one family can all be right)
+        const same = all.filter((x) => (hard ? x.domain === k.domain && x.family !== k.family : x.domain !== k.domain));
+        const ch = options(k, same.length >= 3 ? same : all, (x) => x.id);
+        out.push({ prompt: `<p>What kind of building is this?</p><p class="hint">${esc(p.nation || "")}</p>`, image: p.image_thumb,
+          choices: ch.map((x) => ({ value: x.id, label: x.name, sub: hard ? "" : x.domain })), answer: k.id,
+          explain: `<a href="${buildingUrl(p.id)}" target="_blank" rel="noopener">${esc(p.name)}</a>: ${typeLink(k)} <span class="hint">(${esc(k.domain)}, ${esc(k.family)})</span>.` });
+      }
+      return out;
+    } };
+
   K.mixed = { title: "Mixed bag", icon: "🎲", blurb: "A bit of everything, one question from each quiz and more.",
     make(d, hard) {
       const kinds = Object.keys(K).filter((k) => k !== "mixed" && !K[k].order);
       return shuffle(kinds.flatMap((k) => K[k].make(d, hard).slice(0, 2))).slice(0, 12);
     } };
 
-  return { KINDS: K, PERIODS, needsPool: (k) => ["say", "story", "history", "ages", "first", "mixed"].includes(k) };
+  return { KINDS: K, PERIODS, needsPool: (k) => ["say", "story", "history", "ages", "first", "typefirst", "nametype", "mixed"].includes(k) };
 })();

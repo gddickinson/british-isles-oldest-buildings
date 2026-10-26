@@ -8,7 +8,7 @@
   <nav class="help-toc" aria-label="Help topics">
     <a href="#start">Getting started</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
     <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a><a href="#trades">Trades</a>
-    <a href="#oldest">Oldest by type</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
+    <a href="#oldest">Oldest by type</a><a href="#types">Building types</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
     {% if not static_mode %}<a href="#sharing">Sharing at home</a>{% endif %}<a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
     <a href="#export">Export &amp; screenshots</a><a href="#shortcuts">Shortcuts</a><a href="#glossary">Glossary</a>
     <a href="#faq">Questions</a><a href="#sources">Sources</a><a href="#about">About</a>
@@ -154,6 +154,30 @@
     {{ shot('oldest_lists.jpg', 'Researched oldest lists: the oldest burials, with the date, place, museum and the claim.') }}
   </section>
 
+  <section id="types">
+    <h2>Building types</h2>
+    <p class="prose">The <b>Building types</b> page is a family tree of about 300 kinds of building, from the roundhouse
+      and the long barrow to the Wealden house, the tower house, the cotton mill and the railway station. The
+      <b>Family tree</b> tab draws each type on a time axis, grouped by domain (houses, defence, religious, farming,
+      industry, transport…) and family: the bar spans its years of use, thicker while it flourished, and a dot marks the
+      earliest surviving example in the catalogue. Branches join a type to the ones it grew from, replaced or revived;
+      each link has its sources, and dashed lines are disputed. Fold the families, pick domains with the chips, or
+      search by name.</p>
+    {{ shot('types_tree.jpg', 'The family tree of building types: periods of use on a time axis, earliest surviving examples, sourced links.') }}
+    <p class="prose">Open a type for its page: the definition from Historic England's thesaurus of monument types, its
+      period, structure and plan, materials, family links with quoted sources (and the views where scholars disagree),
+      what came before and what came next, its earliest surviving example, how it spread across the counties, a map and
+      the dated examples. Dates far earlier than a type's first known date are flagged as too early (usually an older
+      site with a later building). The <b>Materials and techniques</b> tab does the same for stone, timber framing,
+      brick, roofs, glass, iron and concrete, with the sentence that names the material in each record. A building's
+      page says what type it is (“This is a Wealden house: see its family”) and which materials it is known for.</p>
+    {{ shot('type_page.jpg', 'A building type: definition, period, family links with sources, spread across the counties and the earliest examples.') }}
+    <p class="prose"><b>Through time</b> shows how many types of each domain were in use at each date (choose a year to
+      list them, or <b>Show the map at this year</b>) and, as a heatmap, the century each material appears in the
+      catalogue's buildings.</p>
+    {{ shot('types_time.jpg', 'Through time: building types in use per domain, and materials by the century their buildings were begun.') }}
+  </section>
+
   <section id="stats">
     <h2>Statistics</h2>
     {{ shot('stats.jpg', 'Statistics: buildings by nation, period, category and designation; data completeness.') }}
@@ -200,12 +224,14 @@
       deaths of the people in the catalogue on today's date (‹ › for other days). Dates before 1752 are given in the
       calendar used at the time. A building's page has a <b>Timeline</b> of dated events from its article: built,
       rebuilt, besieged, burned, dissolved, restored.</p>
-    <p class="prose">The <b>Quiz</b> page has ten quizzes of about ten questions each, drawn at random every round:
+    <p class="prose">The <b>Quiz</b> page has thirteen quizzes of about ten questions each, drawn at random every round:
       <b>Guess the period</b> from a photo; <b>Which is older?</b> and <b>Oldest of four</b>; <b>Put them in order</b>
       (tap four buildings from oldest to newest); <b>Where in the isles?</b> (the county); <b>Say the name</b> (Belvoir,
       Woodnesborough, Herstmonceux: pick the right respelling); <b>Whose story?</b> (a ghost story or legend with the
       place's name hidden); <b>When did it happen?</b> (events of the History page); <b>How old is it?</b> (ancient
-      trees, graves, markets, roads, sporting clubs and schools from the researched oldest lists); and a <b>Mixed bag</b>.
+      trees, graves, markets, roads, sporting clubs and schools from the researched oldest lists); <b>Which came first?</b> (inventions and laws
+      of trade and industry); <b>Which type came first?</b> (two kinds of building from the family tree);
+      <b>Name the type</b> (a photo: what kind of building is it?); and a <b>Mixed bag</b>.
       <b>Hard</b> makes the wrong answers closer to the right one. Each answer links to the record, the round ends
       with a review, and your best score for each quiz and level is kept in this browser.</p>
     {{ shot('quiz_menu.jpg', 'The quizzes: each round draws new questions; Hard makes the wrong answers closer.') }}

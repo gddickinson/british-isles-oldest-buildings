@@ -10,8 +10,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
   isles types with examples, 215 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 74 (2026-10-26, with /types,
-  BT4b): 253.0 of 256 MiB, 487 of 511 files. Republish changed files only: checksum `dist/` before and after
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
+  BT4b): 253.5 of 256 MiB, 490 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
   to replace files this session has not read or listed).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
@@ -751,7 +751,11 @@ the descent of a type is disputed, both views are given and the link is drawn as
       for the hosted copy; more types added in building-gen itself (its repo), not copied here. Where a generated
       example would be guesswork, use labelled diagrams (plan, section, elevation drawn as SVG) and Commons
       photographs and floor plans of real examples instead.
-- [ ] BT7 Hosted copy, Help page, INTERFACE, figures; quiz questions ("which type came first?", "name the type").
+- [x] BT7 (2026-10-26) Hosted copy (BT4b), Help page section "Building types" with three figures (`types_tree`,
+      `type_page`, `types_time`), INTERFACE; two quizzes: "Which type came first?" (two isles types by first known
+      date, 400 years apart or 60 on Hard, Hard mostly within one domain) and "Name the type" (a photographed
+      catalogue record, up to 4 per type over 187 types, by its main type; wrong answers from other domains, on Hard
+      the same domain but another family, since forms of one family can all be right).
 
 ## Data quality and references
 - [x] `bidb.bundle release` failed on this connection (found 2026-10-23: `gh release create` ended twice in HTTP 408,

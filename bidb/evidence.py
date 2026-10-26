@@ -85,11 +85,13 @@ def _vag_text():
 DATASETS = {"https://doi.org/10.5284/1132568": _vag_text}     # VAG Dendrochronology Database (bidb.dendro)
 
 
-def check(log=print, only_new=False):
+def check(log=print, only_new=False, claims=None, path=CHECK):
     """Fetch every source again and record whether its quote is there (only_new: just the claims the last
-    check has not seen, kept with its results)."""
+    check has not seen, kept with its results). `claims` and `path` let other curated files (building types)
+    use the same check."""
     from .verify_research import source_text
-    claims, out, texts = load(), (checks() if only_new else {}), {}
+    prev = json.loads(path.read_text()) if only_new and path.exists() else {}
+    claims, out, texts = load() if claims is None else claims, prev, {}
     for c in claims:
         if c["id"] in out:
             continue
@@ -106,7 +108,7 @@ def check(log=print, only_new=False):
             res.append("unreachable" if text is None else "quote-found" if quote_found(s["quote"], text) else "quote-missing")
         out[c["id"]] = {"sources": res, "checked": time.strftime("%Y-%m-%d")}
         log(f"  {c['id']}: {', '.join(res)}")
-    CHECK.write_text(json.dumps(out, indent=1) + "\n")
+    path.write_text(json.dumps(out, indent=1) + "\n")
     log(f"{sum(r == 'quote-found' for v in out.values() for r in v['sources'])} of "
         f"{sum(len(v['sources']) for v in out.values())} quotes found in their sources")
     return out

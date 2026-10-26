@@ -1,0 +1,1282 @@
+{
+ "about": "Building types (roadmap BT1b): types of the British Isles and their sourced 'family' links. kind: descent (grew out of), variant (a form of), influence (shaped by, without descent; also from abroad), replacement (superseded by), revival, convergence (similar form, separate origin). confidence: documented / probable / disputed (with views). fish: FISH Thesaurus of Monument Types concept id (Historic England, OGL v3.0). Checked by `python -m bidb.building_types`.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "round-house",
+   "name": "Roundhouse",
+   "family": "Round houses and defended homesteads",
+   "domain": "Domestic",
+   "fish": "94036",
+   "sources": [
+    {
+     "title": "Round house (domestic) (FISH Thesaurus of Monument Types, concept 94036)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94036.html",
+     "locator": "scope note",
+     "quote": "Circular structure"
+    }
+   ]
+  },
+  {
+   "id": "broch",
+   "name": "Broch",
+   "family": "Round houses and defended homesteads",
+   "domain": "Domestic",
+   "fish": "143003",
+   "period": {
+    "text": "Iron Age; the first perhaps c. 300 BC",
+    "from": -300
+   },
+   "note": "Where brochs came from was long disputed: mid-20th-century archaeologists saw them as the work of incomers from the south; the view now is that they developed in Scotland.",
+   "sources": [
+    {
+     "title": "Broch (FISH Thesaurus of Monument Types, concept 143003)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/143003.html",
+     "locator": "scope note",
+     "quote": "An Iron Age round defended house, found mainly in the north and west of Scotland"
+    },
+    {
+     "title": "Broch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broch",
+     "locator": "lead",
+     "quote": "The first brochs may have been built circa 300 BC"
+    },
+    {
+     "title": "Broch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broch",
+     "locator": "lead",
+     "quote": "While most mid-20th century archaeologists believed that brochs were built by invading chieftains displaced from the south of the English isles, there is now little doubt that the hollow-walled broch tower first developed in what is now Scotland."
+    }
+   ]
+  },
+  {
+   "id": "round",
+   "name": "Round (enclosed settlement)",
+   "family": "Round houses and defended homesteads",
+   "domain": "Domestic",
+   "fish": "68865",
+   "period": {
+    "text": "Iron Age into the early medieval period"
+   },
+   "sources": [
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"England and Wales\"",
+     "quote": "their continuing occupation from the Iron Age into the early medieval period"
+    }
+   ]
+  },
+  {
+   "id": "longhouse",
+   "name": "Longhouse",
+   "family": "Longhouses and farmhouses",
+   "domain": "Domestic",
+   "fish": "104173",
+   "sources": [
+    {
+     "title": "Longhouse (FISH Thesaurus of Monument Types, concept 104173)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/104173.html",
+     "locator": "scope note",
+     "quote": "A building that housed humans and cattle under one roof"
+    }
+   ]
+  },
+  {
+   "id": "blackhouse",
+   "name": "Blackhouse",
+   "family": "Longhouses and farmhouses",
+   "domain": "Domestic",
+   "fish": null,
+   "note": "Hebridean and Highland; few examples before the 18th century have been excavated.",
+   "sources": [
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Lewis blackhouse\"",
+     "quote": "The immediate origins of the blackhouse are unclear, as few pre-eighteenth century examples have ever been excavated."
+    }
+   ]
+  },
+  {
+   "id": "farmhouse",
+   "name": "Farmhouse",
+   "family": "Longhouses and farmhouses",
+   "domain": "Domestic",
+   "fish": "68560",
+   "sources": [
+    {
+     "title": "Farmhouse (FISH Thesaurus of Monument Types, concept 68560)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68560.html",
+     "locator": "scope note",
+     "quote": "The main dwelling-house of a farm"
+    }
+   ]
+  },
+  {
+   "id": "bastle",
+   "name": "Bastle house",
+   "family": "Fortified houses and towers",
+   "domain": "Defence",
+   "fish": "68823",
+   "sources": [
+    {
+     "title": "Bastle (FISH Thesaurus of Monument Types, concept 68823)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68823.html",
+     "locator": "scope note",
+     "quote": "A fortified house of two or three storeys, the lower floor being used to house animals"
+    }
+   ]
+  },
+  {
+   "id": "hall-house",
+   "name": "Hall house (open hall)",
+   "family": "Hall houses",
+   "domain": "Domestic",
+   "fish": "70943",
+   "sources": [
+    {
+     "title": "Hall house (FISH Thesaurus of Monument Types, concept 70943)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70943.html",
+     "locator": "scope note",
+     "quote": "A house consisting of a public hall with private living accommodation attached."
+    }
+   ]
+  },
+  {
+   "id": "wealden-house",
+   "name": "Wealden house",
+   "family": "Hall houses",
+   "domain": "Domestic",
+   "fish": "71335",
+   "period": {
+    "text": "medieval; most had a floor and fireplace inserted in the 16th and 17th centuries"
+   },
+   "sources": [
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The Wealden hall house is a type of vernacular medieval timber-framed hall house traditional in the south east of England."
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "In the 16th and 17th centuries, the open hall fell out of favour, and most Wealden houses had an intermediate floor and fireplace inserted."
+    }
+   ]
+  },
+  {
+   "id": "lobby-entry-house",
+   "name": "Lobby-entry house",
+   "family": "Chimneyed houses",
+   "domain": "Domestic",
+   "fish": "71051",
+   "period": {
+    "text": "from the 16th century (English vernacular); FISH: late 17th to early 18th century",
+    "from": 1500
+   },
+   "sources": [
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"East Anglia\"",
+     "quote": "The baffle-entry house plan, in which the front door leads to a lobby beside the central chimney, was common from the 16th century."
+    },
+    {
+     "title": "Lobby entry house (FISH Thesaurus of Monument Types, concept 71051)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71051.html",
+     "locator": "scope note",
+     "quote": "A late 17th - early 18th century house with a central chimney"
+    }
+   ]
+  },
+  {
+   "id": "double-pile-house",
+   "name": "Double-pile house",
+   "family": "Chimneyed houses",
+   "domain": "Domestic",
+   "fish": "94114",
+   "sources": [
+    {
+     "title": "Double pile house (FISH Thesaurus of Monument Types, concept 94114)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94114.html",
+     "locator": "scope note",
+     "quote": "A house having four rooms of equal height on each of two floors"
+    }
+   ]
+  },
+  {
+   "id": "manor-house",
+   "name": "Manor house",
+   "family": "Manor and country houses",
+   "domain": "Domestic",
+   "fish": "68948",
+   "sources": [
+    {
+     "title": "Manor house (FISH Thesaurus of Monument Types, concept 68948)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68948.html",
+     "locator": "scope note",
+     "quote": "The principal house of a manor or village."
+    }
+   ]
+  },
+  {
+   "id": "courtyard-house",
+   "name": "Courtyard house",
+   "family": "Manor and country houses",
+   "domain": "Domestic",
+   "fish": "68943",
+   "sources": [
+    {
+     "title": "Courtyard house (FISH Thesaurus of Monument Types, concept 68943)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68943.html",
+     "locator": "scope note",
+     "quote": "A building or buildings ranged around a courtyard on at least three sides."
+    }
+   ]
+  },
+  {
+   "id": "prodigy-house",
+   "name": "Prodigy house",
+   "family": "Manor and country houses",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "roughly 1570 to 1620 (core period)",
+    "from": 1570,
+    "to": 1620
+   },
+   "sources": [
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "lead",
+     "quote": "the term may be restricted to a core period of roughly 1570 to 1620"
+    }
+   ]
+  },
+  {
+   "id": "country-house",
+   "name": "Country house",
+   "family": "Manor and country houses",
+   "domain": "Domestic",
+   "fish": "68947",
+   "sources": [
+    {
+     "title": "Country house (FISH Thesaurus of Monument Types, concept 68947)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68947.html",
+     "locator": "scope note",
+     "quote": "The rural residence of a country gentleman."
+    }
+   ]
+  },
+  {
+   "id": "renaissance-continent",
+   "name": "Renaissance architecture of the Continent",
+   "family": "Influences from abroad",
+   "domain": "Domestic",
+   "fish": null,
+   "abroad": true
+  },
+  {
+   "id": "castle",
+   "name": "Castle",
+   "family": "Castles",
+   "domain": "Defence",
+   "fish": "68833",
+   "sources": [
+    {
+     "title": "Castle (FISH Thesaurus of Monument Types, concept 68833)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68833.html",
+     "locator": "scope note",
+     "quote": "A fortress and dwelling, usually medieval in origin"
+    }
+   ]
+  },
+  {
+   "id": "ringwork",
+   "name": "Ringwork",
+   "family": "Castles",
+   "domain": "Defence",
+   "fish": "68844",
+   "period": {
+    "text": "in England just before 1066; most built in the late 11th and early 12th centuries",
+    "from": 1050,
+    "to": 1150
+   },
+   "sources": [
+    {
+     "title": "Ringwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringwork",
+     "locator": "lead",
+     "quote": "They appeared in England just prior to the Norman conquest and large numbers were built during the late 11th and early 12th centuries."
+    }
+   ]
+  },
+  {
+   "id": "motte-and-bailey",
+   "name": "Motte and bailey",
+   "family": "Castles",
+   "domain": "Defence",
+   "fish": "68842",
+   "period": {
+    "text": "brought by the Normans (1066); largely superseded by the end of the 13th century",
+    "from": 1066,
+    "to": 1300
+   },
+   "sources": [
+    {
+     "title": "Motte-and-bailey castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Motte-and-bailey_castle",
+     "locator": "lead",
+     "quote": "The Normans introduced the design into England and Wales."
+    },
+    {
+     "title": "Motte-and-bailey castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Motte-and-bailey_castle",
+     "locator": "lead",
+     "quote": "By the end of the 13th century, the design was largely superseded by alternative forms of fortification"
+    }
+   ]
+  },
+  {
+   "id": "shell-keep",
+   "name": "Shell keep",
+   "family": "Castles",
+   "domain": "Defence",
+   "fish": "68839",
+   "period": {
+    "text": "from the 12th century",
+    "from": 1100
+   },
+   "sources": [
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Early stone keeps (10th–12th centuries)\"",
+     "quote": "The second early stone design, emerging from the 12th century onwards, was the shell keep"
+    }
+   ]
+  },
+  {
+   "id": "tower-keep",
+   "name": "Tower keep (great tower)",
+   "family": "Castles",
+   "domain": "Defence",
+   "fish": "68840",
+   "sources": [
+    {
+     "title": "Tower keep (FISH Thesaurus of Monument Types, concept 68840)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68840.html",
+     "locator": "scope note",
+     "quote": "A fortified keep in the form of a tower"
+    }
+   ]
+  },
+  {
+   "id": "concentric-castle",
+   "name": "Concentric castle",
+   "family": "Castles",
+   "domain": "Defence",
+   "fish": "68837",
+   "period": {
+    "text": "13th century (Edward I's castles in Wales)",
+    "from": 1200,
+    "to": 1300
+   },
+   "sources": [
+    {
+     "title": "Concentric castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concentric_castle",
+     "locator": "section \"Development\"",
+     "quote": "Concentric castles appeared in Europe in the 13th century, with the castles built in Wales by Edward I providing some outstanding examples"
+    }
+   ]
+  },
+  {
+   "id": "crusader-castle",
+   "name": "Crusader and Byzantine castles",
+   "family": "Influences from abroad",
+   "domain": "Defence",
+   "fish": null,
+   "abroad": true
+  },
+  {
+   "id": "fortified-house",
+   "name": "Fortified house",
+   "family": "Fortified houses and towers",
+   "domain": "Defence",
+   "fish": "68875",
+   "sources": [
+    {
+     "title": "Fortified house (FISH Thesaurus of Monument Types, concept 68875)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68875.html",
+     "locator": "scope note",
+     "quote": "A house which bears signs of fortification."
+    }
+   ]
+  },
+  {
+   "id": "tower-house",
+   "name": "Tower house",
+   "family": "Fortified houses and towers",
+   "domain": "Defence",
+   "fish": "68914",
+   "sources": [
+    {
+     "title": "Tower house (FISH Thesaurus of Monument Types, concept 68914)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68914.html",
+     "locator": "scope note",
+     "quote": "A multi-storey, fortified hall house"
+    }
+   ]
+  },
+  {
+   "id": "pele-tower",
+   "name": "Pele tower",
+   "family": "Fortified houses and towers",
+   "domain": "Defence",
+   "fish": "68899",
+   "period": {
+    "text": "mainly between the mid-14th century and about 1600",
+    "from": 1350,
+    "to": 1600
+   },
+   "sources": [
+    {
+     "title": "Peel tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peel_tower",
+     "locator": "lead",
+     "quote": "built along the English and Scottish borders in the Scottish Marches and North of England, mainly between the mid-14th century and about 1600"
+    }
+   ]
+  },
+  {
+   "id": "scottish-baronial",
+   "name": "Scottish baronial house",
+   "family": "Manor and country houses",
+   "domain": "Domestic",
+   "fish": null,
+   "period": {
+    "text": "16th century to about 1660; revived in the 19th century"
+   },
+   "sources": [
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "section \"Predecessors\"",
+     "quote": "The style of elite residences built by barons in Scotland developed under the influence of French architecture and the architecture of the County of Flanders in the 16th century, which had been abandoned by about 1660."
+    }
+   ]
+  },
+  {
+   "id": "artillery-castle",
+   "name": "Artillery castle (Device Fort)",
+   "family": "Artillery fortification",
+   "domain": "Defence",
+   "fish": "68835",
+   "period": {
+    "text": "Henry VIII's Device programme, 1539-1547",
+    "from": 1539,
+    "to": 1547
+   },
+   "sources": [
+    {
+     "title": "Artillery castle (FISH Thesaurus of Monument Types, concept 68835)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68835.html",
+     "locator": "scope note",
+     "quote": "Castles constructed between 1481 and 1561 for defence using heavy guns."
+    },
+    {
+     "title": "Device Forts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Device_Forts",
+     "locator": "lead",
+     "quote": "a major programme of work between 1539 and 1547"
+    }
+   ]
+  },
+  {
+   "id": "bastion-trace-fort",
+   "name": "Bastioned fort",
+   "family": "Artillery fortification",
+   "domain": "Defence",
+   "fish": "91148",
+   "sources": [
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "lead",
+     "quote": "a style of fortification developed in Italy during the early modern period in response to the ascendancy of gunpowder weapons such as cannon"
+    }
+   ]
+  },
+  {
+   "id": "italian-bastion",
+   "name": "Italian bastioned fortification (trace italienne)",
+   "family": "Influences from abroad",
+   "domain": "Defence",
+   "fish": null,
+   "abroad": true
+  },
+  {
+   "id": "martello-tower",
+   "name": "Martello tower",
+   "family": "Artillery fortification",
+   "domain": "Defence",
+   "fish": "68893",
+   "period": {
+    "text": "1804-1812 in England, Ireland, Jersey and Guernsey",
+    "from": 1804,
+    "to": 1812
+   },
+   "sources": [
+    {
+     "title": "Martello tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martello_tower",
+     "locator": "section \"United Kingdom of Great Britain and Ireland\"",
+     "quote": "Between 1804 and 1812 the British authorities built a chain of towers based on the original Mortella tower to defend the south and east coast of England, Ireland, Jersey and Guernsey"
+    }
+   ]
+  },
+  {
+   "id": "genoese-tower",
+   "name": "Genoese coastal tower (Corsica)",
+   "family": "Influences from abroad",
+   "domain": "Defence",
+   "fish": null,
+   "abroad": true
+  },
+  {
+   "id": "polygonal-fort",
+   "name": "Polygonal fort",
+   "family": "Artillery fortification",
+   "domain": "Defence",
+   "fish": null,
+   "period": {
+    "text": "in Britain from the Royal Commission of 1859",
+    "from": 1859
+   },
+   "sources": [
+    {
+     "title": "Polygonal fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polygonal_fort",
+     "locator": "section \"Impact of rifled artillery\"",
+     "quote": "The British were apprehensive about a French invasion and in 1859 appointed the Royal Commission on the Defence of the United Kingdom to fortify the naval dockyards of southern England."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "round-house>broch",
+   "from": "round-house",
+   "to": "broch",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Brochs are a complex form of the Iron Age roundhouse.",
+   "sources": [
+    {
+     "title": "Broch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broch",
+     "locator": "lead",
+     "quote": "Brochs belong to the classification \"complex Atlantic roundhouse\" devised by Scottish archaeologists in the 1980s."
+    }
+   ]
+  },
+  {
+   "id": "round>shell-keep",
+   "from": "round",
+   "to": "shell-keep",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "The circular enclosed settlements (rounds) of Cornwall, Devon and south Wales may have shaped the round shell keeps of the Severn region; the usual explanation is the circular earthworks the keeps were built on.",
+   "sources": [
+    {
+     "title": "Ringfort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringfort",
+     "locator": "section \"England and Wales\"",
+     "quote": "the form later influencing the distinctive circular shell-keeps found across the medieval Severnside region"
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Early stone keeps (10th–12th centuries)\"",
+     "quote": "the major reason for adopting a shell keep design, in the 12th century at least, was the circular design of the original earthworks exploited to support the keep"
+    }
+   ],
+   "views": [
+    "Wikipedia's Ringfort article: the rounds' form influenced the Severnside shell keeps.",
+    "Wikipedia's Keep article: shell keeps were circular because the earthworks under them were."
+   ],
+   "region": "Severn region"
+  },
+  {
+   "id": "longhouse>farmhouse",
+   "from": "longhouse",
+   "to": "farmhouse",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Dartmoor and Welsh longhouses were adapted over the 16th and 17th centuries: by 1700 most had separate buildings for livestock, a second storey and a chimney.",
+   "sources": [
+    {
+     "title": "Longhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longhouse",
+     "locator": "section \"Dartmoor longhouse\"",
+     "quote": "by 1700 most would have been adapted and have separate buildings for livestock, a second storey, stairways, a chimney with bread oven"
+    }
+   ],
+   "region": "Dartmoor and Wales"
+  },
+  {
+   "id": "longhouse>blackhouse",
+   "from": "longhouse",
+   "to": "blackhouse",
+   "kind": "variant",
+   "confidence": "probable",
+   "claim": "The blackhouse belongs to the North Atlantic longhouse tradition, people and cattle under one roof.",
+   "sources": [
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Lewis blackhouse\"",
+     "quote": "As one of the most primitive forms of the North Atlantic longhouse tradition, it is very probable that the roots of the blackhouse, in which cattle and humans shared the same roof, is well over 1000 years old."
+    }
+   ],
+   "region": "Hebrides and Highlands"
+  },
+  {
+   "id": "longhouse>bastle",
+   "from": "longhouse",
+   "to": "bastle",
+   "kind": "convergence",
+   "confidence": "documented",
+   "claim": "Bastle houses also keep animals and people in one building, but for defence: animals below, people above.",
+   "sources": [
+    {
+     "title": "Housebarn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Housebarn",
+     "locator": "section \"Styles\"",
+     "quote": "Similarly but for different reasons, some defensive house structures such as the bastle house and some tower houses combine animals on the ground floor and living quarters above, a security measure against raids."
+    }
+   ],
+   "region": "Anglo-Scottish border"
+  },
+  {
+   "id": "hall-house>wealden-house",
+   "from": "hall-house",
+   "to": "wealden-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Wealden house is a hall house with jettied two-storey bays at either end of the open hall.",
+   "sources": [
+    {
+     "title": "Wealden house (FISH Thesaurus of Monument Types, concept 71335)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71335.html",
+     "locator": "scope note",
+     "quote": "A medieval house with central open hall and two storey bays, jettied at first floor level, on either side."
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The Wealden hall house is a type of vernacular medieval timber-framed hall house"
+    }
+   ],
+   "region": "south-east England"
+  },
+  {
+   "id": "hall-house>lobby-entry-house",
+   "from": "hall-house",
+   "to": "lobby-entry-house",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "When the open hearth gave way to a chimney, the stack was often built by the cross passage; a stack in the passage leaves a lobby beside it, the plan of the lobby-entry house. The sources describe the insertion and single conversions; none found states the descent of the type as a whole.",
+   "sources": [
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"Later alterations\"",
+     "quote": "This was created in the vicinity of the cross passage, and sometimes this added chimney actually blocked the cross passage."
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"History\"",
+     "quote": "The increased use of chimneys and fireplaces meant that the open hall could be ceiled over, creating a house of multiple floors and enclosed rooms."
+    },
+    {
+     "title": "85 Church Street, Lavenham (Suffolk Heritage Explorer, MSF38224)",
+     "author": "Suffolk County Council Archaeological Service",
+     "kind": "secondary",
+     "url": "https://heritage.suffolk.gov.uk/Monument/MSF38224",
+     "locator": "description",
+     "quote": "A Chimney stack was inserted into the centre of the cross-passage during the 17th century to convert the room into a heated parlour with a newly fashionable 'lobby' entrance"
+    }
+   ]
+  },
+  {
+   "id": "lobby-entry-house>double-pile-house",
+   "from": "lobby-entry-house",
+   "to": "double-pile-house",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "In Cumbria the 17th-century plan, one room deep with the entrance through a lobby by the hearth, gave way to the double-pile plan, two rooms deep, in the 18th century.",
+   "sources": [
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Cumbria\"",
+     "quote": "The main entrance to the house was off the cross passage, through a lobby (mell), separated from the inglenook by a timber partition (heck)."
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"Cumbria\"",
+     "quote": "In the 18th century, houses moved to a double pile plan, i.e. two rooms deep."
+    }
+   ],
+   "region": "Cumbria"
+  },
+  {
+   "id": "hall-house>country-house",
+   "from": "hall-house",
+   "to": "country-house",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Many smaller country houses grew out of medieval hall houses, with rooms added as needed.",
+   "sources": [
+    {
+     "title": "English country house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_country_house",
+     "locator": "section \"Minor country houses\"",
+     "quote": "These tend either to have evolved from medieval hall houses, with rooms added as required, or were purpose-built by relatively unknown local architects."
+    }
+   ]
+  },
+  {
+   "id": "manor-house>country-house",
+   "from": "manor-house",
+   "to": "country-house",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Manor houses evolved into country houses, the estate taking the place of the manor.",
+   "sources": [
+    {
+     "title": "Manor house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manor_house",
+     "locator": "section \"Architecture\"",
+     "quote": "These would eventually evolve into country houses with the estate replacing the manor."
+    }
+   ]
+  },
+  {
+   "id": "courtyard-house>prodigy-house",
+   "from": "courtyard-house",
+   "to": "prodigy-house",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The sprawling Elizabethan prodigy houses developed the form of late medieval courtyard houses such as Knole.",
+   "sources": [
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "section \"Style\"",
+     "quote": "By the end of the Elizabethan period this sprawling style, essentially developing the form of late medieval buildings like Knole in Kent (which has a total of 7 courtyards), and many Oxbridge colleges, was giving way to more compact high-rising structures"
+    }
+   ]
+  },
+  {
+   "id": "renaissance-continent>prodigy-house",
+   "from": "renaissance-continent",
+   "to": "prodigy-house",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The prodigy houses took the Renaissance style mainly from books, French and Flemish decoration more than Italian.",
+   "sources": [
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "lead",
+     "quote": "The houses fall within the broad style of Renaissance architecture, but represent a distinctive English take on the style, mainly reliant on books for their knowledge of developments on the Continent."
+    },
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "lead",
+     "quote": "French and Flemish Northern Mannerist decoration was more influential than Italian"
+    }
+   ]
+  },
+  {
+   "id": "country-house>prodigy-house",
+   "from": "country-house",
+   "to": "prodigy-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Prodigy houses are the largest and showiest country houses of the Tudor and Jacobean courtiers.",
+   "sources": [
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "lead",
+     "quote": "Prodigy houses are large and showy English country houses built by courtiers and other wealthy families"
+    }
+   ]
+  },
+  {
+   "id": "ringwork>shell-keep",
+   "from": "ringwork",
+   "to": "shell-keep",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "A shell keep replaced the palisade on a ringwork (or the timber tower on a motte) with a ring of stone wall.",
+   "sources": [
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Early stone keeps (10th–12th centuries)\"",
+     "quote": "which involved replacing the wooden keep on a motte, or the palisade on a ringwork, with a circular stone wall"
+    }
+   ]
+  },
+  {
+   "id": "motte-and-bailey>shell-keep",
+   "from": "motte-and-bailey",
+   "to": "shell-keep",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Shell keeps succeeded motte-and-bailey castles: the timber fence around the top of the motte was replaced by a stone wall.",
+   "sources": [
+    {
+     "title": "Shell keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shell_keep",
+     "locator": "lead",
+     "quote": "In English castle morphology, shell keeps are perceived as the successors to motte-and-bailey castles, with the wooden fence around the top of the motte replaced by a stone wall."
+    }
+   ]
+  },
+  {
+   "id": "motte-and-bailey>tower-keep",
+   "from": "motte-and-bailey",
+   "to": "tower-keep",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The first keeps were timber towers on mottes; the Normans then built square stone keeps.",
+   "sources": [
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "lead",
+     "quote": "The first keeps were made of timber and formed a key part of the motte-and-bailey castles that emerged in Normandy and Anjou during the 10th century"
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Early stone keeps (10th–12th centuries)\"",
+     "quote": "Two broad types of design emerged across France and England during the period: four-sided stone keeps, known as Norman keeps or great keeps in English"
+    }
+   ]
+  },
+  {
+   "id": "tower-keep>concentric-castle",
+   "from": "tower-keep",
+   "to": "concentric-castle",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Concentric castles, with two or more rings of walls, were usually built without a free-standing keep.",
+   "sources": [
+    {
+     "title": "Concentric castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concentric_castle",
+     "locator": "lead",
+     "quote": "They are typically built without a central free-standing keep."
+    }
+   ]
+  },
+  {
+   "id": "crusader-castle>concentric-castle",
+   "from": "crusader-castle",
+   "to": "concentric-castle",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "Whether the concentric plan came west from crusader and Byzantine castles is argued over.",
+   "sources": [
+    {
+     "title": "Concentric castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concentric_castle",
+     "locator": "section \"Development\"",
+     "quote": "Some influence from crusader fortification has been conjectured, but the amount of technology transfer from the East and much earlier Byzantine examples remains controversial among historians."
+    }
+   ],
+   "views": [
+    "Influence from crusader castles has been suggested.",
+    "How much passed from the East and from Byzantine examples is disputed."
+   ]
+  },
+  {
+   "id": "tower-keep>tower-house",
+   "from": "tower-keep",
+   "to": "tower-house",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Tower houses are smaller keep-like towers, built from the 14th century by lesser lords while the wealthy built grand keeps.",
+   "sources": [
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Late medieval keeps (14th–16th centuries)\"",
+     "quote": "At the same time as these keeps were being built by the extremely wealthy, much smaller, keep-like structures called tower houses or peel towers were built across Ireland, Scotland, and northern England, often by relatively poorer local lords and landowners."
+    }
+   ]
+  },
+  {
+   "id": "hall-house>tower-house",
+   "from": "hall-house",
+   "to": "tower-house",
+   "kind": "descent",
+   "confidence": "disputed",
+   "claim": "In Ireland the tower house may have grown out of the hall house; an older view derived Irish tower houses from Scottish ones.",
+   "sources": [
+    {
+     "title": "Tower houses in Great Britain and Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_houses_in_Great_Britain_and_Ireland",
+     "locator": "section \"Irish tower houses\"",
+     "quote": "the Irish hall house is in fact the parent of the Irish tower house"
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Late medieval keeps (14th–16th centuries)\"",
+     "quote": "It was originally argued that Irish tower houses were based on the Scottish design, but the pattern of development of such castles in Ireland does not support this hypothesis."
+    },
+    {
+     "title": "Tower house (FISH Thesaurus of Monument Types, concept 68914)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68914.html",
+     "locator": "scope note",
+     "quote": "A multi-storey, fortified hall house"
+    }
+   ],
+   "views": [
+    "Tom Finan: the Irish hall house is the parent of the Irish tower house.",
+    "Older view: Irish tower houses were based on the Scottish design (not supported by the pattern of development in Ireland)."
+   ],
+   "region": "Ireland"
+  },
+  {
+   "id": "tower-house>pele-tower",
+   "from": "tower-house",
+   "to": "pele-tower",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Pele towers are the small tower houses of the Anglo-Scottish border.",
+   "sources": [
+    {
+     "title": "Peel tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peel_tower",
+     "locator": "lead",
+     "quote": "Peel towers (also spelt pele) are small fortified keeps or tower houses"
+    }
+   ],
+   "region": "Anglo-Scottish border"
+  },
+  {
+   "id": "fortified-house>tower-house",
+   "from": "fortified-house",
+   "to": "tower-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "FISH places the tower house among fortified houses.",
+   "sources": [
+    {
+     "title": "Fortified house (FISH Thesaurus of Monument Types, concept 68875)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68875.html",
+     "locator": "scope note",
+     "quote": "A house which bears signs of fortification."
+    }
+   ]
+  },
+  {
+   "id": "fortified-house>bastle",
+   "from": "fortified-house",
+   "to": "bastle",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "FISH places the bastle among fortified houses.",
+   "sources": [
+    {
+     "title": "Bastle (FISH Thesaurus of Monument Types, concept 68823)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68823.html",
+     "locator": "scope note",
+     "quote": "A fortified house of two or three storeys"
+    }
+   ]
+  },
+  {
+   "id": "tower-house>scottish-baronial",
+   "from": "tower-house",
+   "to": "scottish-baronial",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "The Scottish baronial revival of the 19th century built far more houses in the manner of the old towers than the originals.",
+   "sources": [
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "section \"Revival and name\"",
+     "quote": "The buildings constructed during the Scottish baronial revival by far outnumber those of the original Scottish \"baronial\" castles of the early modern period."
+    },
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "lead",
+     "quote": "some of the most emblematic country residences of 19th-century Scotland were built in the style, including Queen Victoria's Balmoral Castle and Walter Scott's Abbotsford"
+    }
+   ],
+   "region": "Scotland"
+  },
+  {
+   "id": "castle>artillery-castle",
+   "from": "castle",
+   "to": "artillery-castle",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Henry VIII's Device Forts kept the defences developed for medieval castles while mounting guns.",
+   "sources": [
+    {
+     "title": "Device Forts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Device_Forts",
+     "locator": "lead",
+     "quote": "The first wave of work between 1539 and 1543 was characterised by the use of circular bastions and multi-tiered defences, combined with many traditional medieval features."
+    },
+    {
+     "title": "Device Forts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Device_Forts",
+     "locator": "section \"Architecture\"",
+     "quote": "defensive paraphernalia developed in the Middle Ages"
+    }
+   ]
+  },
+  {
+   "id": "artillery-castle>bastion-trace-fort",
+   "from": "artillery-castle",
+   "to": "bastion-trace-fort",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "The second phase of the Device Forts (to 1547) brought in angular bastions, probably from Continental thinking.",
+   "sources": [
+    {
+     "title": "Device Forts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Device_Forts",
+     "locator": "lead",
+     "quote": "the second period of construction until 1547 saw the introduction of angular bastions and other innovations probably inspired by contemporary thinking in mainland Europe"
+    }
+   ]
+  },
+  {
+   "id": "italian-bastion>bastion-trace-fort",
+   "from": "italian-bastion",
+   "to": "bastion-trace-fort",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The bastioned fort was developed in Italy against cannon.",
+   "sources": [
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "lead",
+     "quote": "A bastion fort or trace italienne (a phrase derived from non-standard French, meaning 'Italian outline') is a style of fortification developed in Italy"
+    }
+   ]
+  },
+  {
+   "id": "genoese-tower>martello-tower",
+   "from": "genoese-tower",
+   "to": "martello-tower",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Martello towers copied the Genoese tower at Mortella Point in Corsica.",
+   "sources": [
+    {
+     "title": "Martello tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martello_tower",
+     "locator": "section \"Origins\"",
+     "quote": "Martello towers were inspired by a round fortress that was part of a larger Genoese defence system at Mortella (Myrtle) Point in Corsica."
+    }
+   ]
+  },
+  {
+   "id": "bastion-trace-fort>polygonal-fort",
+   "from": "bastion-trace-fort",
+   "to": "polygonal-fort",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "In the 19th century star-shaped bastioned forts gave way to polygonal forts without bastions.",
+   "sources": [
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "section \"Decline\"",
+     "quote": "In the nineteenth century, with the development of more powerful artillery and explosive shells, star forts were replaced by simpler but more robust polygonal forts."
+    },
+    {
+     "title": "Polygonal fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Polygonal_fort",
+     "locator": "lead",
+     "quote": "Unlike earlier forts, polygonal forts had no bastions, which had proven to be vulnerable."
+    }
+   ]
+  }
+ ]
+}

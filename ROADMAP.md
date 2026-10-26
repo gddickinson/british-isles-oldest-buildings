@@ -524,11 +524,39 @@ each type, date range and link cites published sources (Pevsner, Brunskill's *Ve
 England's listing selection guides and Introductions to Heritage Assets (OGL), HES/Cadw guidance, the Irish NIAH,
 RCAHMS/RCAHMW typologies, Getty AAT and Historic England's thesaurus of monument types (FISH, OGL) for terms); where
 the descent of a type is disputed, both views are given and the link is drawn as uncertain.
-- [ ] BT1 Research the classification: a hierarchy (domain → family → type → variant, e.g. Domestic → Hall houses →
+- BT1 Research the classification: a hierarchy (domain → family → type → variant, e.g. Domestic → Hall houses →
       Wealden house → "recessed-hall" Wealden), built on the FISH thesaurus of monument types (OGL) and Getty AAT,
       with periods of use (first known, flourishing, last built), regions, materials, structural system, plan form,
       the earliest surviving example in the catalogue, and the sourced "descended from / influenced by / replaced by"
       links (lineage, borrowing from abroad, convergence: similar forms with separate origins). Licence check first.
+      Split 2026-10-25:
+- [x] BT1a (2026-10-25) Licence check and the thesaurus (`data/curated/building_types/README.md`): FISH Thesaurus of
+      Monument Types v29 is OGL v3.0 (stated in the scheme's own RDF at heritagedata.org), Getty AAT ODC-By 1.0;
+      Historic England's publications are not stated as OGL and its site refuses scripts (cite with page, short
+      quote). New `bidb/fish_types.py` reads the yearly CSV release (cached in `<cache>/fish/`, Building Materials
+      and Components too, for BT3): 5,105 preferred terms, 3,192 non-preferred, 18 top concepts, 848 terms under
+      more than one broader term (by function and by form: Wealden house has six paths). Catalogue classes matched
+      by label alone: 18,638 of 27,400 uses (68.0%); the misses are synonyms and Wikidata-only classes ("built
+      structure", "terrace house", "English country house"): BT2's alias table. Wikidata P14369 (FISH id) is on only
+      172 classes so far.
+- [x] BT1b (2026-10-25) First families with sourced links (new `bidb/building_types.py`,
+      `data/curated/building_types/lineage.json`): houses (round houses, longhouses, hall houses, chimneyed houses,
+      manor and country houses) and defence (castles, fortified houses and towers, artillery fortification), 33 types
+      (5 abroad: Renaissance architecture of the Continent, crusader and Byzantine castles, the trace italienne, the
+      Genoese tower at Mortella) and 29 links: descent 11, variant 7, influence 6, replacement 3, convergence 1
+      (longhouse and bastle: animals and people under one roof "for different reasons"), revival 1 (Scottish
+      baronial); documented 21, probable 5, disputed 3 (rounds and the Severnside shell keeps; crusader castles and
+      the concentric plan; the Irish tower house from the hall house, Finan, or from Scotland). 76 quotes (Wikipedia,
+      FISH scope notes, one Suffolk HER entry), all found by `python -m bidb.building_types --quotes` (using
+      `evidence.check`, which now takes `claims` and `path`). The lobby-entry house from the hall house is "probable":
+      sources describe chimneys inserted by the cross passage and single conversions (85 Church Street, Lavenham),
+      none the descent of the type as a whole.
+- [ ] BT1c The other families: religious (minster → parish church, cathedral, chapel, meeting house, abbey and
+      priory), agricultural (barn, tithe barn, dovecote, bank barn, oast), commercial (alehouse → inn → coaching inn →
+      railway hotel; market hall, shop, bank), industrial (watermill → textile mill → factory; ironworks, kilns),
+      transport (bridge, canal, railway station), civic, education, health and welfare, recreational; periods of use
+      (first known, flourishing, last built) for every type, the earliest catalogue example per type (with BT2's
+      mapping); structural system and plan form where the sources give them.
 - [ ] BT2 Data: `data/curated/building_types.json` (types, links with kind and confidence, citations and quotes as
       the evidence file), checked by script; every catalogue record and place kind mapped to a type (the categories
       and Wikidata classes as a start), so each type shows counts, a map and the dated examples.

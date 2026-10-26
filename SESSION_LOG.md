@@ -1446,3 +1446,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - ui_check: new `trades_change`, `trade_here`, `trade_map`, `quiz_first` pass.
 - Full checks: unit tests OK (302), JS checks pass, ui_check 71/72: `settings_share` fails because this computer's
   settings.json has `share_on_network: true` (the check expects sharing off; it fails the same without these changes).
+
+## 2026-10-25 — BT1a, BT1b: building types, the thesaurus and the first families
+- BT1 split into BT1a (licences, thesaurus), BT1b (first families with sourced links), BT1c (the other families,
+  periods, earliest examples).
+- Licence check (`data/curated/building_types/README.md`): FISH Thesaurus of Monument Types v29 OGL v3.0 (stated in
+  its RDF at heritagedata.org), Getty AAT ODC-By 1.0; Historic England's publications not stated as OGL, and
+  historicengland.org.uk answers scripts with 403. FISH, Building Materials and Components zips cached in
+  `<cache>/fish/` (FANTOM). DATA_LICENSE.md row added.
+- New `bidb/fish_types.py`: concepts, non-preferred terms, polyhierarchy (848 terms under more than one broader term),
+  related terms, lookup; `--report`: catalogue class uses with a FISH concept by label alone 18,638 of 27,400 (68.0%).
+- New `bidb/building_types.py` and `data/curated/building_types/lineage.json`: 33 types, 29 links (houses and
+  defence), 76 quotes, all found in their sources (`--quotes` → `data/building_types_check.json`).
+  `evidence.check` takes `claims` and `path` so both files share one checker.
+- Tests 311 OK (9 new: `test_fish_types`, `test_building_types`). No GUI change yet (BT4).

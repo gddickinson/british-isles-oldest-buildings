@@ -1,0 +1,368 @@
+{
+ "type:round-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:broch": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:round": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:longhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:blackhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:farmhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:bastle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:hall-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:wealden-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:lobby-entry-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:double-pile-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:manor-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:courtyard-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:prodigy-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:country-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:castle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:ringwork": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:motte-and-bailey": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:shell-keep": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:tower-keep": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:concentric-castle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:fortified-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:tower-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:pele-tower": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:scottish-baronial": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:artillery-castle": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:bastion-trace-fort": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:martello-tower": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:polygonal-fort": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:round-house>broch": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:round>shell-keep": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:longhouse>farmhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:longhouse>blackhouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:longhouse>bastle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:hall-house>wealden-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:hall-house>lobby-entry-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:lobby-entry-house>double-pile-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:hall-house>country-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:manor-house>country-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:courtyard-house>prodigy-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:renaissance-continent>prodigy-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:country-house>prodigy-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:ringwork>shell-keep": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:motte-and-bailey>shell-keep": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:motte-and-bailey>tower-keep": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:tower-keep>concentric-castle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:crusader-castle>concentric-castle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:tower-keep>tower-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:hall-house>tower-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:tower-house>pele-tower": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:fortified-house>tower-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:fortified-house>bastle": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:tower-house>scottish-baronial": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:castle>artillery-castle": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:artillery-castle>bastion-trace-fort": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:italian-bastion>bastion-trace-fort": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:genoese-tower>martello-tower": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:bastion-trace-fort>polygonal-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ }
+}

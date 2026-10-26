@@ -1,0 +1,1064 @@
+{
+ "about": "Building types (roadmap BT1c3a): town and guild halls, courts and prisons, police and fire. Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "moot",
+   "name": "Moot (outdoor meeting place, moot hill)",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": "68742"
+  },
+  {
+   "id": "moot-hall",
+   "name": "Moot hall",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": "68743"
+  },
+  {
+   "id": "guildhall",
+   "name": "Guildhall",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": "68706",
+   "period": {
+    "text": "the London Guildhall first recorded 1127 or 1128; merchant guilds built halls in the 13th and 14th centuries",
+    "from": 1127
+   },
+   "sources": [
+    {
+     "title": "Guildhall, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall,_London",
+     "locator": "section \"Roman, Anglo-Saxon and Medieval\"",
+     "quote": "The first documentary reference to a London Guildhall is dated 1127 or 1128; archaeologists have also discovered foundations dating to around that time."
+    },
+    {
+     "title": "Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall",
+     "locator": "section \"As meeting houses for guilds\"",
+     "quote": "By the 13th and 14th centuries, merchant guilds had acquired sufficient resources to erect guild halls in many major market towns."
+    }
+   ]
+  },
+  {
+   "id": "town-hall",
+   "name": "Town hall",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": "68754"
+  },
+  {
+   "id": "tolbooth",
+   "name": "Tolbooth (Scottish town house)",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": null,
+   "note": "Not in FISH, which is the thesaurus for England; Scotland's own term.",
+   "period": {
+    "text": "first recorded at Berwick in the later 13th century; until the 19th century",
+    "from": 1250,
+    "to": 1850
+   },
+   "sources": [
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "lead",
+     "quote": "A tolbooth or town house was the main municipal building of a Scottish burgh, from medieval times until the 19th century."
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "The first record of a tolbooth is at Berwick upon Tweed in the later 13th century, and the earliest known grant of land for construction of a tolbooth is at Dundee in 1325, with many more grants recorded through the 14th century."
+    }
+   ]
+  },
+  {
+   "id": "tholsel",
+   "name": "Tholsel (Irish toll house and town hall)",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": null,
+   "note": "Not in FISH; similar English buildings are called tolseys.",
+   "sources": [
+    {
+     "title": "Tholsel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tholsel",
+     "locator": "lead",
+     "quote": "Tholsel was a name traditionally used for a local municipal and administrative building used to collect tolls and taxes and to administer trade and other documents in Irish towns and cities."
+    },
+    {
+     "title": "Tholsel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tholsel",
+     "locator": "lead",
+     "quote": "Similar buildings called tolseys or tolsey houses are found in some English towns and cities, including Burford, Gloucester and Wotton-under-Edge."
+    }
+   ]
+  },
+  {
+   "id": "continental-town-hall",
+   "name": "Medieval town halls of the Continent (Italy, the Low Countries)",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "the Palazzo Senatorio, Rome, from 1144; Cologne 1135",
+    "from": 1135
+   },
+   "sources": [
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "section \"History\"",
+     "quote": "The Palazzo Senatorio has been the headquarters of the municipal government of Rome since 1144, making it the oldest city hall in the world."
+    },
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "section \"History\"",
+     "quote": "These features became standard for town halls across Europe."
+    }
+   ]
+  },
+  {
+   "id": "victorian-town-hall",
+   "name": "Victorian civic town hall (municipal palace)",
+   "family": "Town and guild halls",
+   "domain": "Civic",
+   "fish": null,
+   "note": "Not a separate FISH concept (filed under town hall).",
+   "period": {
+    "text": "Leeds Town Hall, opened 1858, one of the largest and earliest",
+    "from": 1858
+   },
+   "sources": [
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "lead",
+     "quote": "Imagined as a municipal palace to demonstrate the power and success of Victorian Leeds, and opened by Queen Victoria in a lavish ceremony in 1858, it is one of the largest town halls in the United Kingdom."
+    },
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "lead",
+     "quote": "The form of Leeds Town Hall has been used as a model for civic buildings across Britain and the British Empire, being one of the largest and earliest."
+    }
+   ]
+  },
+  {
+   "id": "shire-hall",
+   "name": "Shire hall",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "71369"
+  },
+  {
+   "id": "county-hall",
+   "name": "County hall",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "68692",
+   "period": {
+    "text": "the county councils, from 1889",
+    "from": 1889
+   },
+   "sources": [
+    {
+     "title": "Quarter sessions",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quarter_sessions",
+     "locator": "section \"Civil\"",
+     "quote": "Most of these administrative functions were transferred to county councils when they were established in 1888."
+    }
+   ]
+  },
+  {
+   "id": "court-house",
+   "name": "Court house",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "68725"
+  },
+  {
+   "id": "gaol",
+   "name": "Gaol (county gaol)",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "70905"
+  },
+  {
+   "id": "house-of-correction",
+   "name": "House of correction (bridewell)",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "70981",
+   "period": {
+    "text": "Bridewell, London, a prison by 1556; houses of correction under the Poor Relief Act 1601",
+    "from": 1556
+   },
+   "sources": [
+    {
+     "title": "Bridewell",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bridewell",
+     "locator": "lead",
+     "quote": "By 1556 part of it had become a jail known as Bridewell Prison."
+    },
+    {
+     "title": "House of correction",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/House_of_correction",
+     "locator": "lead",
+     "quote": "The house of correction was a type of establishment built after the passing of the Poor Relief Act 1601, places where those who were \"unwilling to work\", including vagrants and beggars, were set to work."
+    },
+    {
+     "title": "House of correction",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/House_of_correction",
+     "locator": "section \"History\"",
+     "quote": "The first London house of correction was Bridewell Prison, and the Middlesex and Westminster houses also opened in the early seventeenth century."
+    }
+   ]
+  },
+  {
+   "id": "prison-hulk",
+   "name": "Prison hulk",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "76302",
+   "period": {
+    "text": "in the Thames from 1776",
+    "from": 1776
+   },
+   "sources": [
+    {
+     "title": "Prison ship",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison_ship",
+     "locator": "section \"History\"",
+     "quote": "In England in 1776, during the reign of King George III, due to a shortage of prison space in London, the concept of \"prison hulks\" moored in the Thames, was introduced to meet the need for prison space."
+    }
+   ]
+  },
+  {
+   "id": "panopticon",
+   "name": "Panopticon prison (Bentham's design)",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": null,
+   "note": "Not in FISH. A design more than a built type: Bentham's own scheme for Millbank was abandoned; Gandy's female prison at Lancaster Castle (1818-21) is the nearest built example in the isles.",
+   "period": {
+    "text": "conceived by Bentham from 1786; Panopticon, or The Inspection House, 1791",
+    "from": 1786
+   },
+   "sources": [
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "lead",
+     "quote": "The panopticon is a design of institutional building with an inbuilt system of control, originated by the English philosopher and social theorist Jeremy Bentham in the 18th century."
+    },
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "section \"Prison design\"",
+     "quote": "It has been observed that the architect Joseph Gandy modelled it very closely on Bentham's panopticon prison plans."
+    }
+   ]
+  },
+  {
+   "id": "penitentiary",
+   "name": "Penitentiary (the National Penitentiary, Millbank)",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": "92887",
+   "period": {
+    "text": "Millbank, opened 1816, closed 1890",
+    "from": 1816,
+    "to": 1890
+   },
+   "sources": [
+    {
+     "title": "Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison",
+     "locator": "section \"Development of the modern prison\"",
+     "quote": "The first state prison in England was the Millbank Prison, established in 1816 with a capacity for just under 1,000 inmates."
+    }
+   ]
+  },
+  {
+   "id": "eastern-state-penitentiary",
+   "name": "Eastern State Penitentiary, Philadelphia (the Pennsylvania or separate system)",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "opened 1829",
+    "from": 1829
+   },
+   "sources": [
+    {
+     "title": "Eastern State Penitentiary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eastern_State_Penitentiary",
+     "locator": "section \"19th century\"",
+     "quote": "Designed by John Haviland and opened on October 25, 1829, Eastern State is considered to be the world's first true penitentiary, with seven corridors of heated and sky-lighted cells capable of holding 500 convicts in isolation."
+    }
+   ]
+  },
+  {
+   "id": "separate-system-prison",
+   "name": "Separate-system (radial) prison",
+   "family": "Courts and prisons",
+   "domain": "Civic",
+   "fish": null,
+   "note": "Not in FISH (filed under prison or penitentiary). Pentonville, 1842, and the prisons built after it.",
+   "period": {
+    "text": "Pentonville opened 1842; 54 more on similar designs within six years",
+    "from": 1842
+   },
+   "sources": [
+    {
+     "title": "Separate system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Separate_system",
+     "locator": "section \"Early British prisons\"",
+     "quote": "It opened in 1842 and had separate cells for 520 prisoners."
+    },
+    {
+     "title": "HM Prison Pentonville",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
+     "locator": "section \"19th century\"",
+     "quote": "Pentonville became the model for British prisons."
+    },
+    {
+     "title": "HM Prison Pentonville",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
+     "locator": "section \"19th century\"",
+     "quote": "A further 54 were built to similar designs over six years and hundreds throughout the British Empire."
+    }
+   ]
+  },
+  {
+   "id": "lock-up",
+   "name": "Village lock-up (round house, blind house)",
+   "family": "Police and fire",
+   "domain": "Civic",
+   "fish": "71054",
+   "period": {
+    "text": "most survivors 18th and 19th century; until the county police stations after 1839",
+    "from": 1700,
+    "to": 1840
+   },
+   "sources": [
+    {
+     "title": "Village lock-up",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Village_lock-up",
+     "locator": "section \"Rise of the village lock-up\"",
+     "quote": "The majority of surviving village lock-ups date from the 18th and 19th centuries when rural communities struggled to police thefts, burglaries, shootings, drunkenness, the obstruction of watchmen and the stealing of livestock."
+    }
+   ]
+  },
+  {
+   "id": "watch-house",
+   "name": "Watch house",
+   "family": "Police and fire",
+   "domain": "Civic",
+   "fish": "71708",
+   "period": {
+    "text": "City of London watch houses from the 1640s",
+    "from": 1642
+   },
+   "sources": [
+    {
+     "title": "Watchman (law enforcement)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watchman_(law_enforcement)",
+     "locator": "section \"Watch houses\"",
+     "quote": "A City committee was asked to look into the question 'what watchhouses are necessary' and where 'for the safety of this cittye' in 1642."
+    }
+   ]
+  },
+  {
+   "id": "police-station",
+   "name": "Police station",
+   "family": "Police and fire",
+   "domain": "Civic",
+   "fish": "68734"
+  },
+  {
+   "id": "fire-engine-house",
+   "name": "Fire engine house",
+   "family": "Police and fire",
+   "domain": "Civic",
+   "fish": "71623"
+  },
+  {
+   "id": "fire-station",
+   "name": "Fire station",
+   "family": "Police and fire",
+   "domain": "Civic",
+   "fish": "68715"
+  }
+ ],
+ "links": [
+  {
+   "id": "moot>moot-hall",
+   "from": "moot",
+   "to": "moot-hall",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The moot hall grew from the open-air moot: some of the Anglo-Saxon moot hills or mounds where the elders of the hundred met were later given permanent buildings, the moot halls.",
+   "sources": [
+    {
+     "title": "Moot hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_hall",
+     "locator": "lead",
+     "quote": "In Anglo-Saxon England, a low ring-shaped earthwork served as a moot hill or moot mound, where the elders of the hundred would meet to take decisions."
+    },
+    {
+     "title": "Moot hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_hall",
+     "locator": "lead",
+     "quote": "Some of these acquired permanent buildings, known as moot halls."
+    },
+    {
+     "title": "Moot (FISH Thesaurus of Monument Types, concept 68742)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68742.html",
+     "locator": "scope note",
+     "quote": "An outdoor meeting place."
+    }
+   ]
+  },
+  {
+   "id": "guildhall>town-hall",
+   "from": "guildhall",
+   "to": "town-hall",
+   "kind": "descent",
+   "confidence": "disputed",
+   "claim": "Whether the British guildhall began as a guild's hall that later became the town hall, or was the town's hall from the start, is put two ways.",
+   "sources": [
+    {
+     "title": "Guildhall (FISH Thesaurus of Monument Types, concept 68706)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68706.html",
+     "locator": "scope note",
+     "quote": "Traditionally, the hall of a crafts, trade, or merchants' guild. Nowadays, often used to describe a TOWN HALL."
+    },
+    {
+     "title": "Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall",
+     "locator": "section \"As town hall in the United Kingdom\"",
+     "quote": "In the United Kingdom, a guildhall is usually a town hall: in the vast majority of cases, the guildhalls have never served as the meeting place of any specific guild."
+    },
+    {
+     "title": "Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall",
+     "locator": "section \"As town hall in the United Kingdom\"",
+     "quote": "A suggested etymology is from the Anglo Saxon \"gild\", or \"payment\"; the guildhall being where citizens came to pay their rates."
+    }
+   ],
+   "views": [
+    "From the guild: the guildhall was traditionally the hall of a craft, trade or merchants' guild, and the term is now often used to describe a town hall (FISH, Historic England).",
+    "The town's hall from the start: in the vast majority of cases British guildhalls never housed any particular guild; one suggested derivation is the Anglo-Saxon gild, payment, the guildhall being where citizens paid their dues (Wikipedia, Guildhall; Guildhall, London)."
+   ]
+  },
+  {
+   "id": "market-house>town-hall",
+   "from": "market-house",
+   "to": "town-hall",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Market houses, with an open market below and rooms for public business above, were often the forerunners of purpose-built town halls.",
+   "sources": [
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "section \"History\"",
+     "quote": "In the later Middle Ages or early modern period, many European market towns erected communal market halls, comprising a covered space to function as a marketplace at street level, and one or more rooms used for public or civic purposes above it."
+    },
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "section \"History\"",
+     "quote": "These buildings were frequently the precursors of dedicated town halls."
+    },
+    {
+     "title": "Market house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Market_house",
+     "locator": "lead",
+     "quote": "A market house or market hall is a covered space historically used as a marketplace to exchange goods and services such as provisions or livestock, sometimes combined with spaces for public or civic functions on the upper floors and often with a jail or lockup in the cellar or basement floor."
+    }
+   ]
+  },
+  {
+   "id": "tolbooth>town-hall",
+   "from": "tolbooth",
+   "to": "town-hall",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "In the Scottish burghs the tolbooth (later called the town house), which held council chamber, court and jail together, was replaced in the early 19th century by modern town halls as these functions were separated.",
+   "sources": [
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "lead",
+     "quote": "The tolbooth usually provided a council meeting chamber, a court house and a jail."
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "In the early 19th century, increasing separation of functions led to purpose-built courthouses and prisons, and the replacement of tolbooths and town houses with modern town halls, serving as council chamber and events venue."
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "By the 18th century, the term \"tolbooth\" had become closely associated with prison, and the term \"town house\" became more common to denote the municipal buildings."
+    }
+   ],
+   "region": "Scotland"
+  },
+  {
+   "id": "tolbooth>court-house",
+   "from": "tolbooth",
+   "to": "court-house",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The courts and prisons held in the tolbooths moved to purpose-built courthouses and prisons in the early 19th century; prison boards took over the tolbooth jails from 1839.",
+   "sources": [
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "In the early 19th century, increasing separation of functions led to purpose-built courthouses and prisons, and the replacement of tolbooths and town houses with modern town halls, serving as council chamber and events venue."
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "The prison functions of tolbooths were overseen by prison boards from 1839, but the jail cell in the Falkirk Steeple remained in use until 1984."
+    }
+   ],
+   "region": "Scotland"
+  },
+  {
+   "id": "tholsel>market-house",
+   "from": "tholsel",
+   "to": "market-house",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "In Irish towns the tholsel, the toll and administrative house, came to be called the market house towards the end of the 18th century, while its administrative business moved to courts, sessions houses and council buildings.",
+   "sources": [
+    {
+     "title": "Tholsel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tholsel",
+     "locator": "lead",
+     "quote": "Tholsel was a name traditionally used for a local municipal and administrative building used to collect tolls and taxes and to administer trade and other documents in Irish towns and cities."
+    },
+    {
+     "title": "Tholsel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tholsel",
+     "locator": "lead",
+     "quote": "Towards the end of the 18th century the term tholsel was typically swapped for Market House with many of the administrative functions of the original tholsel transferring to another dedicated local council or government building such as a court or sessions house."
+    }
+   ],
+   "region": "Ireland"
+  },
+  {
+   "id": "continental-town-hall>victorian-town-hall",
+   "from": "continental-town-hall",
+   "to": "victorian-town-hall",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The great town halls of the Continent were the standard the Victorian industrial towns set out to match: Leeds's campaigners admired the town halls of old European cities and wanted a municipal palace to rival them; Leeds Town Hall in turn became a model across Britain.",
+   "sources": [
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "section \"Background\"",
+     "quote": "The physician and social reformer Dr John Deakin Heaton became a major advocate and campaigner for a town hall, having visited Europe and enviously remarked on the \"famous old cities whose Town Halls are the permanent glory of the inhabitants and the standing wonder and delight of visitors from a distance\"."
+    },
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "lead",
+     "quote": "Imagined as a municipal palace to demonstrate the power and success of Victorian Leeds, and opened by Queen Victoria in a lavish ceremony in 1858, it is one of the largest town halls in the United Kingdom."
+    },
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "lead",
+     "quote": "The form of Leeds Town Hall has been used as a model for civic buildings across Britain and the British Empire, being one of the largest and earliest."
+    }
+   ]
+  },
+  {
+   "id": "shire-hall>county-hall",
+   "from": "shire-hall",
+   "to": "county-hall",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "The county hall of the county councils (from 1889) took over the place of the shire hall: the councils inherited the administrative work of the quarter sessions, which had met in the shire halls, and older county halls were also where sessions and assizes sat. The sources give the transfer of business and the buildings' uses; none traces the building type from one to the other in so many words.",
+   "sources": [
+    {
+     "title": "Shire hall (FISH Thesaurus of Monument Types, concept 71369)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71369.html",
+     "locator": "scope note",
+     "quote": "A county judicial building where the Quarter Session and the Assizes for the County were held."
+    },
+    {
+     "title": "County hall (FISH Thesaurus of Monument Types, concept 68692)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68692.html",
+     "locator": "scope note",
+     "quote": "A building from which the administration of a county is carried out by the County Council. It is also, historically, the site where the county quarter sessions and assizes were held."
+    },
+    {
+     "title": "Local Government Act 1888",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Local_Government_Act_1888",
+     "locator": "section \"The bill\"",
+     "quote": "The bill proposed the creation of elected county councils to take over the administrative functions of the magistrates of the Quarter Sessions courts, that ten large cities should be \"counties of themselves\" for the purposes of local government and that each county was to be divided into urban and rural districts, based on existing sanitary districts, governed by a district council."
+    }
+   ]
+  },
+  {
+   "id": "castle>gaol",
+   "from": "castle",
+   "to": "gaol",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Castles served as prisons, and many county gaols grew up inside them (Lancaster from 1196, Lincoln, Norwich), some lasting into modern times.",
+   "sources": [
+    {
+     "title": "Lancaster Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lancaster_Castle",
+     "locator": "section \"Foundation\"",
+     "quote": "One of the functions castles served was as a prison; the first record of the castle being used in this way was in 1196, although the role became much more important after the English Civil War."
+    },
+    {
+     "title": "Lincoln Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lincoln_Castle",
+     "locator": "section \"Later history\"",
+     "quote": "As in Norwich and other places, the castle was used as a secure site in which to establish a gaol (prison; jail)."
+    },
+    {
+     "title": "Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison",
+     "locator": "section \"Ancient and medieval\"",
+     "quote": "During the Middle Ages in Europe, castles, fortresses, and the basements of public buildings were often used as makeshift prisons."
+    }
+   ]
+  },
+  {
+   "id": "house-of-correction>gaol",
+   "from": "house-of-correction",
+   "to": "gaol",
+   "kind": "convergence",
+   "confidence": "probable",
+   "claim": "The house of correction began apart from the gaol, as a place of forced labour for vagrants and the idle poor (Bridewell, then under the Act of 1601), while the county gaol held prisoners awaiting trial; from 1720 houses of correction also held prisoners before trial, and the Gaols Act 1823 dealt with both as the two kinds of prison. The sources give each stage; none describes the two as merging.",
+   "sources": [
+    {
+     "title": "House of correction",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/House_of_correction",
+     "locator": "lead",
+     "quote": "The house of correction was a type of establishment built after the passing of the Poor Relief Act 1601, places where those who were \"unwilling to work\", including vagrants and beggars, were set to work."
+    },
+    {
+     "title": "House of correction",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/House_of_correction",
+     "locator": "section \"History\"",
+     "quote": "In 1720 an act allowed the use of houses of corrections for pretrial detention of \"vagrants, and other criminals, offenders, and persons charged with small offences\"."
+    },
+    {
+     "title": "Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison",
+     "locator": "section \"UK and Ireland\"",
+     "quote": "The Gaols Act 1823 describes two types of prison: gaols and houses of correction."
+    }
+   ]
+  },
+  {
+   "id": "gaol>eastern-state-penitentiary",
+   "from": "gaol",
+   "to": "eastern-state-penitentiary",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The Philadelphia penitentiary that gave the separate system its name was itself drawn mainly from the reformed prisons and asylums of England and Ireland built from the 1780s, by an English-born architect.",
+   "sources": [
+    {
+     "title": "Eastern State Penitentiary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eastern_State_Penitentiary",
+     "locator": "section \"Architectural significance\"",
+     "quote": "Haviland found most of his inspiration for his plan for the penitentiary from prisons and asylums built beginning in the 1780s in England and Ireland."
+    },
+    {
+     "title": "Eastern State Penitentiary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eastern_State_Penitentiary",
+     "locator": "section \"Architectural significance\"",
+     "quote": "Its architectural significance first arose in 1821, when British architect John Haviland was chosen to design the building."
+    }
+   ]
+  },
+  {
+   "id": "panopticon>penitentiary",
+   "from": "panopticon",
+   "to": "penitentiary",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "The National Penitentiary at Millbank was built on the site Bentham bought for his panopticon; the sources differ on whether the prison built there followed his plans.",
+   "sources": [
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "section \"Prison design\"",
+     "quote": "Based on Bentham's panopticon plans, the National Penitentiary opened in 1821."
+    },
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "section \"Construction\"",
+     "quote": "After various changes in circumstance, the Panopticon plan was abandoned in 1812."
+    },
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "section \"Construction\"",
+     "quote": "An architectural competition for a new prison building on the Millbank site attracted 43 entrants: the winning design was that of William Williams, drawing master at the Royal Military College, Sandhurst."
+    }
+   ],
+   "views": [
+    "Built on Bentham's plans: the National Penitentiary opened on the basis of his panopticon plans (Wikipedia, Panopticon).",
+    "A different design: the panopticon plan was abandoned in 1812 and the prison built to William Williams's competition design, adapted by Thomas Hardwick; Bentham disapproved of the result and his writings had virtually no immediate effect on prisons built at public expense (Wikipedia, Millbank Prison; Panopticon)."
+   ]
+  },
+  {
+   "id": "panopticon>separate-system-prison",
+   "from": "panopticon",
+   "to": "separate-system-prison",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "Whether Bentham's panopticon shaped the radial prisons of the separate system (Pentonville and its copies) is disputed.",
+   "sources": [
+    {
+     "title": "Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison",
+     "locator": "section \"Development of the modern prison\"",
+     "quote": "Bentham's panopticon introduced the principle of observation and control that underpins the design of the modern prison."
+    },
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "section \"Prison design\"",
+     "quote": "But the Pennsylvania–Pentonville architectural model with its radial prison wings was not designed to facilitate constant surveillance of individual prisoners."
+    },
+    {
+     "title": "HM Prison Pentonville",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
+     "locator": "section \"19th century\"",
+     "quote": "This design, intended to keep prisoners isolated – the \"separate system\" first used at Eastern State Penitentiary in Philadelphia – was not, as is often thought, a panopticon."
+    }
+   ],
+   "views": [
+    "Shaped by the panopticon: Bentham's principle of observation and control underpins modern prison design, and it has been claimed that the panopticon influenced the radial plans of the separate-system prisons (Wikipedia, Prison; Panopticon).",
+    "A different model: the Pennsylvania-Pentonville radial plan was not designed for constant surveillance of individual prisoners, and Pentonville was not, as often thought, a panopticon (Wikipedia, Panopticon; HM Prison Pentonville)."
+   ]
+  },
+  {
+   "id": "eastern-state-penitentiary>separate-system-prison",
+   "from": "eastern-state-penitentiary",
+   "to": "separate-system-prison",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Pentonville (1842) took the separate system, first used at Eastern State Penitentiary in Philadelphia, together with a radial plan of wings from a central hall; it became the model for British prisons.",
+   "sources": [
+    {
+     "title": "HM Prison Pentonville",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
+     "locator": "section \"19th century\"",
+     "quote": "This design, intended to keep prisoners isolated – the \"separate system\" first used at Eastern State Penitentiary in Philadelphia – was not, as is often thought, a panopticon."
+    },
+    {
+     "title": "Separate system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Separate_system",
+     "locator": "section \"Eastern State Penitentiary: Basis for many 19th-century prisons\"",
+     "quote": "Its design was later copied by more than 300 prisons worldwide."
+    },
+    {
+     "title": "HM Prison Pentonville",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
+     "locator": "section \"19th century\"",
+     "quote": "Pentonville became the model for British prisons."
+    }
+   ]
+  },
+  {
+   "id": "penitentiary>separate-system-prison",
+   "from": "penitentiary",
+   "to": "separate-system-prison",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Millbank's design proved unsatisfactory, and the new model prison at Pentonville took over its role as the National Penitentiary in 1842.",
+   "sources": [
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "section \"History\"",
+     "quote": "The design of Millbank also turned out to be unsatisfactory."
+    },
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "section \"History\"",
+     "quote": "In view of these problems, the decision was eventually taken to build a new \"model prison\" at Pentonville, which opened in 1842 and took over Millbank's role as the National Penitentiary."
+    }
+   ]
+  },
+  {
+   "id": "prison-hulk>separate-system-prison",
+   "from": "prison-hulk",
+   "to": "separate-system-prison",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Prison hulks were brought in from 1776 for want of prison space; by the 1840s they were in decline as Jebb's programme built a large prison a year after Pentonville. The sources give both halves at the same time; none says the new prisons were built to replace the hulks.",
+   "sources": [
+    {
+     "title": "Prison ship",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison_ship",
+     "locator": "section \"History\"",
+     "quote": "In England in 1776, during the reign of King George III, due to a shortage of prison space in London, the concept of \"prison hulks\" moored in the Thames, was introduced to meet the need for prison space."
+    },
+    {
+     "title": "Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prison",
+     "locator": "section \"Development of the modern prison\"",
+     "quote": "By the 1840s, penal transportation to Australia and the use of hulks was on the decline, and the Surveyor-General of convict prisons, Joshua Jebb, set an ambitious program of prison building in the country, with one large prison opening per year."
+    }
+   ]
+  },
+  {
+   "id": "lock-up>police-station",
+   "from": "lock-up",
+   "to": "police-station",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Village lock-ups fell out of use after the County Police Act 1839, which required the new county forces to have proper police stations with secure cells.",
+   "sources": [
+    {
+     "title": "Village lock-up",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Village_lock-up",
+     "locator": "section \"Decline and later uses\"",
+     "quote": "The rooms fell out of use when the County Police Act 1839 was introduced and more stations were built with their own holding facilities."
+    },
+    {
+     "title": "Village lock-up",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Village_lock-up",
+     "locator": "section \"Decline and later uses\"",
+     "quote": "The Act allowed justices of the peace to set up a paid police force in each county and made it compulsory for that force to be provided with proper police stations and secure cells."
+    }
+   ]
+  },
+  {
+   "id": "watch-house>police-station",
+   "from": "watch-house",
+   "to": "police-station",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "The parish watchmen, who had kept the London streets from watch houses built from the 1640s, were replaced by Peel's uniformed police after 1829, whose stations took over their work. The sources give the replacement of the watch by the police; none says in so many words that police stations replaced the watch houses.",
+   "sources": [
+    {
+     "title": "Watchman (law enforcement)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watchman_(law_enforcement)",
+     "locator": "section \"Watch houses\"",
+     "quote": "Workmen began building  watch houses in strategic spots soon after."
+    },
+    {
+     "title": "Watchman (law enforcement)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watchman_(law_enforcement)",
+     "locator": "section \"Policing the night streets\"",
+     "quote": "During the 1820s, mounting crime levels and increasing political and industrial disorder (including Peterloo Massacre) prompted calls for reform, led by Sir Robert Peel, which culminated in the demise of the watchmen and their replacement by a uniformed metropolitan police force on Peelian principles."
+    },
+    {
+     "title": "Watch house (FISH Thesaurus of Monument Types, concept 71708)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71708.html",
+     "locator": "scope note",
+     "quote": "A house or hut for a nightwatchman; including parish watch houses in churchyards and private watch houses, eg. in dockyards, factories, etc."
+    }
+   ]
+  },
+  {
+   "id": "fire-engine-house>fire-station",
+   "from": "fire-engine-house",
+   "to": "fire-station",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "The fire engine houses of the insurance companies' brigades gave way to fire stations with a permanent public fire force: the London companies pooled their brigades in 1833 and pressed for a public one after the fires of 1834 and 1861; Edinburgh had the first municipal brigade. The sources give the brigades' history and the two building types; none describes one building type becoming the other.",
+   "sources": [
+    {
+     "title": "Fire engine house (FISH Thesaurus of Monument Types, concept 71623)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71623.html",
+     "locator": "scope note",
+     "quote": "The carriage house or garage for a fire engine - especially those built by insurance companies or industrial concerns."
+    },
+    {
+     "title": "Fire station (FISH Thesaurus of Monument Types, concept 68715)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68715.html",
+     "locator": "scope note",
+     "quote": "A civic building housing fire engines and a permanent fire-fighting force."
+    },
+    {
+     "title": "London Fire Brigade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Fire_Brigade",
+     "locator": "section \"History\"",
+     "quote": "As demands grew on the primitive firefighting units they began to coordinate and co-operate with each other until, on 1 January 1833, the London Fire Engine Establishment was formed under the leadership of James Braidwood, who had founded the first professional, municipal fire brigade in Edinburgh."
+    }
+   ]
+  }
+ ]
+}

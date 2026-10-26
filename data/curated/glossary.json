@@ -1,0 +1,612 @@
+{
+ "about": "Glossary page (/glossary): terms used in the catalogue. A term has its own `text`, or a `fish` id whose FISH scope note (Historic England, OGL v3.0) is shown as its definition. `see` names other terms; `link` is a page of the app. Periods and building types are added by bidb.glossary.",
+ "groups": [
+  "Heritage designations",
+  "Dates and evidence",
+  "Periods",
+  "Architecture and building",
+  "Archaeology",
+  "Registers and sources",
+  "In this app",
+  "Building types"
+ ],
+ "terms": [
+  {
+   "term": "Listed building",
+   "group": "Heritage designations",
+   "text": "A building on a national list of buildings of special architectural or historic interest, which may not be demolished or altered in a way that affects its character without consent. England and Wales grade them I, II* and II; Scotland uses categories A, B and C; Northern Ireland grades A, B+, B1 and B2.",
+   "see": [
+    "Grade I",
+    "Grade II*",
+    "Grade II",
+    "Category A",
+    "Scheduled monument"
+   ]
+  },
+  {
+   "term": "Grade I",
+   "group": "Heritage designations",
+   "text": "In England and Wales, listed buildings of exceptional interest: the highest grade, about 2.5% of listed buildings in England.",
+   "see": [
+    "Listed building"
+   ]
+  },
+  {
+   "term": "Grade II*",
+   "group": "Heritage designations",
+   "text": "In England and Wales, particularly important listed buildings of more than special interest.",
+   "see": [
+    "Listed building"
+   ]
+  },
+  {
+   "term": "Grade II",
+   "group": "Heritage designations",
+   "text": "In England and Wales, listed buildings of special interest: most listed buildings are Grade II.",
+   "see": [
+    "Listed building"
+   ]
+  },
+  {
+   "term": "Category A",
+   "group": "Heritage designations",
+   "text": "In Scotland, listed buildings of national or international importance (Category B: regional or more than local importance; Category C: local importance).",
+   "see": [
+    "Listed building",
+    "Historic Environment Scotland"
+   ]
+  },
+  {
+   "term": "Grade A (NI)",
+   "group": "Heritage designations",
+   "text": "In Northern Ireland, listed buildings of greatest importance, above Grades B+, B1 and B2.",
+   "see": [
+    "Listed building"
+   ]
+  },
+  {
+   "term": "Scheduled monument",
+   "group": "Heritage designations",
+   "text": "A nationally important archaeological site or historic structure protected by law against unauthorised change; in Great Britain under the Ancient Monuments and Archaeological Areas Act 1979, and in Northern Ireland by its own order. Most are not buildings in use.",
+   "see": [
+    "Listed building",
+    "National Monument (IE)"
+   ]
+  },
+  {
+   "term": "World Heritage Site",
+   "group": "Heritage designations",
+   "text": "A place inscribed by UNESCO on the World Heritage List for its outstanding universal value, such as Stonehenge, the Giant's Causeway or Brú na Bóinne."
+  },
+  {
+   "term": "National Monument (IE)",
+   "group": "Heritage designations",
+   "text": "In the Republic of Ireland, a monument whose preservation is of national importance under the National Monuments Acts; many are in the ownership or guardianship of the state.",
+   "see": [
+    "National Monuments Service",
+    "Scheduled monument"
+   ]
+  },
+  {
+   "term": "Protected structure (IE)",
+   "group": "Heritage designations",
+   "text": "In the Republic of Ireland, a building on a council's Record of Protected Structures, which may not be altered in a way that affects its character without planning permission.",
+   "see": [
+    "NIAH"
+   ]
+  },
+  {
+   "term": "Registered building (IoM)",
+   "group": "Heritage designations",
+   "text": "On the Isle of Man, a building on the island's register of protected buildings."
+  },
+  {
+   "term": "State care (NI)",
+   "group": "Heritage designations",
+   "text": "In Northern Ireland, monuments owned or looked after by the state's Historic Environment Division, most of them open to visitors."
+  },
+  {
+   "term": "Date built",
+   "group": "Dates and evidence",
+   "text": "When construction began: the earliest surviving fabric where the sources say so, not the founding of an earlier building on the site.",
+   "see": [
+    "Date confidence",
+    "Date check"
+   ]
+  },
+  {
+   "term": "Date confidence",
+   "group": "Dates and evidence",
+   "text": "How the catalogue's date for a record was found: Recorded (Wikidata's date built, or a curated Wikipedia list), From register description (Historic Environment Scotland or Cadw listing text), From Wikipedia article, From Wikidata description, Estimate (building type: the usual date range of that kind of monument), Corrected (reviewed), or Not recorded. Anything but Recorded is shown with ≈.",
+   "link": {
+    "href": "/data",
+    "label": "Data quality"
+   },
+   "see": [
+    "Date check"
+   ]
+  },
+  {
+   "term": "Date check",
+   "group": "Dates and evidence",
+   "text": "The catalogue date compared with a second, independent source: Corroborated (another source agrees within 100 years, 500 for prehistoric dates), Earlier origin (the other source dates the founding or site, the catalogue the present building), Conflict (another source is more than 150 years away; worth a look), Reviewed (a conflict looked into and settled), Referenced (the date carries a reference on Wikidata) or Single source (nothing independent to compare).",
+   "link": {
+    "href": "/data",
+    "label": "Data quality"
+   },
+   "see": [
+    "Date confidence"
+   ]
+  },
+  {
+   "term": "Dendrochronology",
+   "group": "Dates and evidence",
+   "text": "Tree-ring dating: the pattern of wide and narrow rings in a building's timbers is matched against a dated master sequence, which can give the year, even the season, in which the tree was felled. Timber was usually used soon after felling, so the felling date dates the building work.",
+   "see": [
+    "Felling date",
+    "Vernacular Architecture Group"
+   ]
+  },
+  {
+   "term": "Felling date",
+   "group": "Dates and evidence",
+   "text": "The year a tree was cut down, found by dendrochronology when the outermost ring under the bark survives; otherwise a range is given.",
+   "see": [
+    "Dendrochronology"
+   ]
+  },
+  {
+   "term": "Radiocarbon dating",
+   "group": "Dates and evidence",
+   "text": "Dating organic material (wood, bone, charcoal) by the decay of carbon-14; results are given as a range of years with a stated probability, not a single year."
+  },
+  {
+   "term": "Inception",
+   "group": "Dates and evidence",
+   "text": "Wikidata's property for when something came into being (P571): for a building, usually when it was built or begun. The main source of the catalogue's recorded dates.",
+   "see": [
+    "Wikidata"
+   ]
+  },
+  {
+   "term": "Circa (c.)",
+   "group": "Dates and evidence",
+   "text": "'About': a date known only roughly. The catalogue shows dates known only to the decade or century as such (\"19th century\") rather than as an exact year."
+  },
+  {
+   "term": "Terminus post quem",
+   "group": "Dates and evidence",
+   "text": "The earliest date something can be: a building cannot be older than the timbers or coins found sealed in it. Its opposite, the latest possible date, is the terminus ante quem."
+  },
+  {
+   "term": "Romanesque",
+   "group": "Architecture and building",
+   "text": "The round-arched style of the 11th and 12th centuries; in England it is usually called Norman. Thick walls, round arches, massive cylindrical piers, chevron (zigzag) ornament.",
+   "see": [
+    "Gothic"
+   ]
+  },
+  {
+   "term": "Gothic",
+   "group": "Architecture and building",
+   "text": "The pointed-arched style of the later Middle Ages, from the late 12th century to the early 16th. English Gothic is usually divided into Early English, Decorated and Perpendicular.",
+   "see": [
+    "Early English",
+    "Decorated",
+    "Perpendicular",
+    "Gothic Revival"
+   ]
+  },
+  {
+   "term": "Early English",
+   "group": "Architecture and building",
+   "text": "The first English Gothic, from the late 12th century to the later 13th: tall narrow pointed (lancet) windows, slender shafts of dark Purbeck marble. Salisbury Cathedral is the classic example.",
+   "see": [
+    "Gothic"
+   ]
+  },
+  {
+   "term": "Decorated",
+   "group": "Architecture and building",
+   "text": "English Gothic of about 1290 to 1350: larger windows with flowing tracery, rich carving, the ogee (S-curved) arch.",
+   "see": [
+    "Gothic"
+   ]
+  },
+  {
+   "term": "Perpendicular",
+   "group": "Architecture and building",
+   "text": "The last English Gothic, from about 1350 into the 16th century: strong vertical lines, large windows divided into upright panels, fan vaults. King's College Chapel, Cambridge, is the classic example.",
+   "see": [
+    "Gothic"
+   ]
+  },
+  {
+   "term": "Tudor architecture",
+   "group": "Architecture and building",
+   "text": "Building of 1485 to 1603: the four-centred (flattened) arch, brick, tall clustered chimneys, timber framing in houses; Renaissance ornament arrives from the Continent.",
+   "see": [
+    "Jacobean"
+   ]
+  },
+  {
+   "term": "Jacobean",
+   "group": "Architecture and building",
+   "text": "The style of the reign of James I (1603-1625), carrying on the Elizabethan prodigy houses with more Renaissance ornament: strapwork, shaped gables, long galleries."
+  },
+  {
+   "term": "Palladian",
+   "group": "Architecture and building",
+   "text": "Classical architecture after the Italian architect Andrea Palladio, brought to England by Inigo Jones in the early 17th century and revived from about 1715: symmetry, porticoes, proportion.",
+   "see": [
+    "Georgian architecture"
+   ]
+  },
+  {
+   "term": "Georgian architecture",
+   "group": "Architecture and building",
+   "text": "Building of 1714 to 1830 or 1837: classical proportion, sash windows, symmetrical fronts, terraces and squares of brick or stone.",
+   "see": [
+    "Palladian"
+   ]
+  },
+  {
+   "term": "Gothic Revival",
+   "group": "Architecture and building",
+   "text": "The return to medieval Gothic forms, from the 18th century and above all in Victorian churches and public buildings (the Palace of Westminster).",
+   "see": [
+    "Gothic"
+   ]
+  },
+  {
+   "term": "Vernacular architecture",
+   "group": "Architecture and building",
+   "text": "Ordinary buildings - houses, barns, cottages - built in local materials and traditions rather than to an architect's design or a national style.",
+   "see": [
+    "Vernacular Architecture Group"
+   ]
+  },
+  {
+   "term": "Cruck",
+   "group": "Architecture and building",
+   "text": "A pair of large curved timbers, often cut from one tree split in two, rising from near the ground to the ridge to carry the roof: an early way of framing houses and barns, common in the west and north of England and in Wales."
+  },
+  {
+   "term": "Jetty",
+   "group": "Architecture and building",
+   "text": "An upper floor of a timber-framed building that projects out over the floor below."
+  },
+  {
+   "term": "Ashlar",
+   "group": "Architecture and building",
+   "text": "Stone cut into smooth, squared blocks laid in even courses with fine joints; the opposite of rubble walling."
+  },
+  {
+   "term": "Solar",
+   "group": "Architecture and building",
+   "text": "In a medieval house, the private upper room of the family, usually at the high end of the hall."
+  },
+  {
+   "term": "Licence to crenellate",
+   "group": "Architecture and building",
+   "text": "Royal permission to fortify a house with battlements, given in England from the 12th century; the date of a licence is often the best evidence for when a castle or fortified house was built."
+  },
+  {
+   "term": "Great hall",
+   "group": "Architecture and building",
+   "fish": "87136"
+  },
+  {
+   "term": "Timber-framed house",
+   "group": "Architecture and building",
+   "fish": "93574"
+  },
+  {
+   "term": "Motte",
+   "group": "Architecture and building",
+   "fish": "68841"
+  },
+  {
+   "term": "Bailey",
+   "group": "Architecture and building",
+   "fish": "68836"
+  },
+  {
+   "term": "Keep",
+   "group": "Architecture and building",
+   "fish": "68838"
+  },
+  {
+   "term": "Curtain wall",
+   "group": "Architecture and building",
+   "fish": "71391"
+  },
+  {
+   "term": "Undercroft",
+   "group": "Architecture and building",
+   "fish": "70344"
+  },
+  {
+   "term": "Cloister",
+   "group": "Architecture and building",
+   "fish": "70342"
+  },
+  {
+   "term": "Chapter house",
+   "group": "Architecture and building",
+   "fish": "69974"
+  },
+  {
+   "term": "Henge",
+   "group": "Archaeology",
+   "fish": "70096"
+  },
+  {
+   "term": "Stone circle",
+   "group": "Archaeology",
+   "fish": "70190"
+  },
+  {
+   "term": "Standing stone",
+   "group": "Archaeology",
+   "fish": "70185"
+  },
+  {
+   "term": "Long barrow",
+   "group": "Archaeology",
+   "fish": "70006"
+  },
+  {
+   "term": "Round barrow",
+   "group": "Archaeology",
+   "fish": "70010"
+  },
+  {
+   "term": "Chambered tomb",
+   "group": "Archaeology",
+   "fish": "70064"
+  },
+  {
+   "term": "Passage grave",
+   "group": "Archaeology",
+   "fish": "70068"
+  },
+  {
+   "term": "Portal tomb",
+   "group": "Archaeology",
+   "fish": "70069"
+  },
+  {
+   "term": "Cairn",
+   "group": "Archaeology",
+   "fish": "68612"
+  },
+  {
+   "term": "Cist",
+   "group": "Archaeology",
+   "fish": "70071"
+  },
+  {
+   "term": "Hillfort",
+   "group": "Archaeology",
+   "fish": "68855"
+  },
+  {
+   "term": "Broch",
+   "group": "Archaeology",
+   "fish": "143003"
+  },
+  {
+   "term": "Dun",
+   "group": "Archaeology",
+   "fish": "143001"
+  },
+  {
+   "term": "Crannog",
+   "group": "Archaeology",
+   "fish": "68944"
+  },
+  {
+   "term": "Souterrain",
+   "group": "Archaeology",
+   "fish": "68995"
+  },
+  {
+   "term": "Ringfort",
+   "group": "Archaeology",
+   "text": "A circular enclosure of the early medieval period, bounded by an earthen bank and ditch (a rath) or a stone wall (a cashel); the commonest field monument in Ireland, most of them farmsteads."
+  },
+  {
+   "term": "Ogham stone",
+   "group": "Archaeology",
+   "fish": "70111"
+  },
+  {
+   "term": "High cross",
+   "group": "Archaeology",
+   "fish": "70763"
+  },
+  {
+   "term": "Holy well",
+   "group": "Archaeology",
+   "fish": "70203"
+  },
+  {
+   "term": "Hoard",
+   "group": "Archaeology",
+   "text": "A group of valuable objects (coins, metalwork, jewellery) buried together and found together. In England, Wales and Northern Ireland finds of gold and silver over 300 years old are Treasure under the Treasure Act 1996.",
+   "link": {
+    "href": "/places?kind_group=Finds%20%26%20treasures",
+    "label": "Finds & treasures"
+   }
+  },
+  {
+   "term": "Historic England",
+   "group": "Registers and sources",
+   "text": "The public body that looks after England's historic environment and keeps the National Heritage List for England (listed buildings, scheduled monuments, parks and gardens, battlefields, wrecks).",
+   "see": [
+    "FISH Thesaurus"
+   ]
+  },
+  {
+   "term": "Historic Environment Scotland",
+   "group": "Registers and sources",
+   "text": "The public body for Scotland's historic environment (HES): it lists and schedules, cares for state monuments, and keeps Canmore.",
+   "see": [
+    "Canmore",
+    "Category A"
+   ]
+  },
+  {
+   "term": "Cadw",
+   "group": "Registers and sources",
+   "text": "The Welsh Government's historic environment service: it lists buildings and schedules monuments in Wales and looks after state monuments."
+  },
+  {
+   "term": "Historic Environment Division",
+   "group": "Registers and sources",
+   "text": "Northern Ireland's historic environment service (HED), in the Department for Communities: listing, scheduling and the Sites and Monuments Record."
+  },
+  {
+   "term": "National Monuments Service",
+   "group": "Registers and sources",
+   "text": "The Republic of Ireland's archaeological service; its Sites and Monuments Record (SMR) and Record of Monuments and Places list the known archaeological sites.",
+   "see": [
+    "National Monument (IE)"
+   ]
+  },
+  {
+   "term": "NIAH",
+   "group": "Registers and sources",
+   "text": "The National Inventory of Architectural Heritage: the Republic of Ireland's survey of buildings, mostly from 1700 onwards, county by county.",
+   "see": [
+    "Protected structure (IE)"
+   ]
+  },
+  {
+   "term": "Canmore",
+   "group": "Registers and sources",
+   "text": "Historic Environment Scotland's online record of Scotland's archaeology, buildings and maritime sites, including wrecks.",
+   "see": [
+    "Historic Environment Scotland"
+   ]
+  },
+  {
+   "term": "Historic Environment Record",
+   "group": "Registers and sources",
+   "text": "A local record (HER) of the known archaeology and historic buildings of a county or district, kept by the council."
+  },
+  {
+   "term": "FISH Thesaurus",
+   "group": "Registers and sources",
+   "text": "The Thesaurus of Monument Types of FISH (the Forum on Information Standards in Heritage), kept by Historic England under the Open Government Licence: the standard terms for kinds of monument and building, each with a scope note. The definitions marked FISH on this page are its scope notes.",
+   "link": {
+    "href": "https://www.heritagedata.org/live/schemes/eh_tmt2.html",
+    "label": "heritagedata.org"
+   }
+  },
+  {
+   "term": "Domesday Book",
+   "group": "Registers and sources",
+   "text": "The great survey of England made for William I in 1086: land, people, ploughs, mills and churches, settlement by settlement. Records here link to their settlement's entry on Open Domesday.",
+   "see": [
+    "Open Domesday"
+   ]
+  },
+  {
+   "term": "Open Domesday",
+   "group": "Registers and sources",
+   "text": "A free online edition of Domesday Book's figures and page images, settlement by settlement (opendomesday.org).",
+   "see": [
+    "Domesday Book"
+   ]
+  },
+  {
+   "term": "Vernacular Architecture Group",
+   "group": "Registers and sources",
+   "text": "A society for the study of traditional buildings; its dendrochronology database, published by the Archaeology Data Service, gives the tree-ring dates used in this catalogue.",
+   "see": [
+    "Dendrochronology"
+   ]
+  },
+  {
+   "term": "Wikidata",
+   "group": "Registers and sources",
+   "text": "The free knowledge base of the Wikimedia projects (CC0): the main source of the catalogue's buildings, places, dates and people. Every item has an identifier such as Q123.",
+   "see": [
+    "Inception"
+   ]
+  },
+  {
+   "term": "Ordnance Survey grid reference",
+   "group": "Registers and sources",
+   "text": "A position on the national grid of Great Britain, written as two letters for the 100 km square and figures for the distance east and north within it (SU 123 456); Ireland has its own grid with one letter."
+  },
+  {
+   "term": "Historic county",
+   "group": "Registers and sources",
+   "text": "The counties as they were before the local government changes of the 1970s (and 1890s in places); the map can show their borders.",
+   "link": {
+    "href": "/map",
+    "label": "Map"
+   }
+  },
+  {
+   "term": "Cut-off year",
+   "group": "In this app",
+   "text": "The catalogue keeps buildings begun before this year (1500 unless the build is told otherwise), plus the oldest examples of each building type and landmark buildings of any date.",
+   "see": [
+    "Landmark",
+    "Oldest of type"
+   ]
+  },
+  {
+   "term": "Landmark",
+   "group": "In this app",
+   "text": "A building of any date kept in the catalogue for its importance: Grade I, Category A, Grade A (NI) or World Heritage, a widely known structure, or the heritage of a Crown Dependency.",
+   "see": [
+    "Cut-off year"
+   ]
+  },
+  {
+   "term": "Oldest of type",
+   "group": "In this app",
+   "text": "The oldest surviving example of a building type (oldest church, oldest pub, oldest railway station...), with the researched claims and the evidence behind them.",
+   "link": {
+    "href": "/oldest",
+    "label": "Oldest by type"
+   }
+  },
+  {
+   "term": "Place",
+   "group": "In this app",
+   "text": "Something of interest that is not a catalogue building: a battlefield, an archaeological site, a lost village, a hoard, a museum, a tree, a plaque. Places are grouped (Archaeological sites, Battles & sieges, Maritime heritage...) on the Places page and the map.",
+   "link": {
+    "href": "/places",
+    "label": "Places"
+   }
+  },
+  {
+   "term": "Colour group",
+   "group": "In this app",
+   "text": "The eight colours the catalogue's 31 categories are gathered into on maps and charts (religious, defence, domestic and so on)."
+  },
+  {
+   "term": "Research claim",
+   "group": "In this app",
+   "text": "A statement of the catalogue (an oldest-of-type claim, a date, a link between building types) with its sources, each with a locator and an exact quote that a script checks is still in the source.",
+   "link": {
+    "href": "/data",
+    "label": "Data quality"
+   }
+  },
+  {
+   "term": "Regional period",
+   "group": "In this app",
+   "text": "Rome never ruled Ireland or the Isle of Man, so records there dated AD 43-410 are shown as Iron Age rather than Roman Britain.",
+   "see": [
+    "Roman Britain"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1070 @@
+{
+ "about": "Building types (roadmap BT1c3a): recreation: theatres and entertainment, spas and resorts, sport. Same fields as lineage.json. Public baths and wash-houses for hygiene are with health.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "roman-amphitheatre",
+   "name": "Roman amphitheatre",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": "68811",
+   "period": {
+    "text": "Roman Britain, 1st to 4th centuries AD"
+   }
+  },
+  {
+   "id": "plen-an-gwary",
+   "name": "Plen-an-gwary (Cornish playing place)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "period": {
+    "text": "medieval; the Cornish miracle plays performed in them date to the late 14th century"
+   },
+   "sources": [
+    {
+     "title": "Plen-an-gwary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
+     "locator": "lead",
+     "quote": "A plen-an-gwarry or plain-an-gwary (Cornish: Plen an Gwari), is a \"playing-place\" or round, a medieval amphitheatre found in Cornwall."
+    }
+   ]
+  },
+  {
+   "id": "inn-yard-theatre",
+   "name": "Inn-yard theatre",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "period": {
+    "text": "London inns used for plays from the 1550s to the early 17th century",
+    "from": 1557
+   },
+   "sources": [
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "lead",
+     "quote": "In the historical era of English Renaissance drama, an Inn-yard theatre or Inn-theatre was a common inn with an inner courtyard with balconies that provided a venue for the presentation of stage plays."
+    },
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Culmination\"",
+     "quote": "1557 - the Boar's Head Inn, Whitechapel, \"without Aldgate\""
+    }
+   ]
+  },
+  {
+   "id": "bear-garden",
+   "name": "Bear garden (baiting ring)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": "69931",
+   "note": "FISH files bear pits and bullrings under BAITING PLACE.",
+   "period": {
+    "text": "in existence on Bankside by the 1560s; the last recorded event 1682",
+    "to": 1682
+   },
+   "sources": [
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "section \"History\"",
+     "quote": "The date of the Beargarden's construction is unknown; it was in existence by the 1560s, when it is shown on the \"woodcut\" map of the city."
+    }
+   ]
+  },
+  {
+   "id": "elizabethan-playhouse",
+   "name": "Elizabethan open-air playhouse",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "note": "FISH has only THEATRE for all playhouses.",
+   "period": {
+    "text": "the Red Lion, 1567; The Theatre, 1576, the first successful one",
+    "from": 1567,
+    "to": 1642
+   },
+   "sources": [
+    {
+     "title": "The Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Theatre",
+     "locator": "lead",
+     "quote": "Built in 1576, after the Red Lion, it was the first permanent theatre built exclusively for the showing of theatrical productions in England, and its first successful one."
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Playhouse architecture\"",
+     "quote": "The three levels of inward-facing galleries overlooked the open centre, into which jutted the stage: essentially a platform surrounded on three sides by the audience."
+    }
+   ]
+  },
+  {
+   "id": "cockpit",
+   "name": "Cockpit",
+   "family": "Sport",
+   "domain": "Recreational",
+   "fish": "69933"
+  },
+  {
+   "id": "indoor-playhouse",
+   "name": "Indoor playhouse (Jacobean and Caroline)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "period": {
+    "text": "the Blackfriars in regular use from 1599",
+    "from": 1599,
+    "to": 1642
+   },
+   "sources": [
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Playhouse architecture\"",
+     "quote": "A different model was developed with the Blackfriars Theatre, which came into regular use on a long-term basis in 1599."
+    }
+   ]
+  },
+  {
+   "id": "real-tennis-court",
+   "name": "Real tennis court",
+   "family": "Sport",
+   "domain": "Recreational",
+   "fish": "93100"
+  },
+  {
+   "id": "italian-court-theatre",
+   "name": "Italian Renaissance theatre with proscenium and scenery",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "abroad": true,
+   "period": {
+    "text": "the earliest surviving true proscenium arch, Teatro Farnese, Parma, 1618",
+    "from": 1618
+   },
+   "sources": [
+    {
+     "title": "Proscenium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Proscenium",
+     "locator": "section \"Renaissance\"",
+     "quote": "The earliest true proscenium arch to survive in a permanent theatre is the Teatro Farnese in Parma (1618), many earlier such theatres having been lost."
+    }
+   ]
+  },
+  {
+   "id": "restoration-playhouse",
+   "name": "Restoration playhouse (with changeable scenery)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "note": "FISH has only THEATRE for all playhouses.",
+   "period": {
+    "text": "from Lincoln's Inn Fields, 1661",
+    "from": 1661
+   },
+   "sources": [
+    {
+     "title": "Restoration spectacular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Restoration_spectacular",
+     "locator": "section \"Changeable scenery\"",
+     "quote": "Lincoln's Inn Fields opened on 28 June 1661, with the first \"moveable\" or \"changeable\" scenery used on the British public stage, (i.e., wings or shutters that ran in grooves and could be smoothly and mechanically changed between or even within acts)."
+    }
+   ]
+  },
+  {
+   "id": "georgian-playhouse",
+   "name": "Georgian playhouse",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": "69957",
+   "period": {
+    "text": "Richmond, North Yorkshire, 1788, among the oldest surviving",
+    "from": 1788
+   },
+   "sources": [
+    {
+     "title": "Georgian Theatre Royal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Georgian_Theatre_Royal",
+     "locator": "lead",
+     "quote": "It is among the oldest of Britain's extant theatres."
+    }
+   ]
+  },
+  {
+   "id": "song-and-supper-room",
+   "name": "Song-and-supper room (saloon)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "period": {
+    "text": "the Grecian Saloon, 1825; Evans's, 1840s",
+    "from": 1825
+   },
+   "sources": [
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Origins and development\"",
+     "quote": "Another famous \"song and supper\" room of this period was Evans Music-and-Supper Rooms, 43 King Street, Covent Garden, established in the 1840s by W.H."
+    }
+   ]
+  },
+  {
+   "id": "music-hall",
+   "name": "Music hall",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": "69946",
+   "period": {
+    "text": "the Canterbury, Lambeth, 1852, often regarded as the first",
+    "from": 1852
+   }
+  },
+  {
+   "id": "variety-theatre",
+   "name": "Variety theatre (palace of varieties)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": null,
+   "note": "FISH files variety theatre under music hall.",
+   "period": {
+    "text": "from the rebuilding of the London Pavilion, 1885",
+    "from": 1885
+   },
+   "sources": [
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Variety theatre\"",
+     "quote": "A new era of variety theatre was developed by the rebuilding of the London Pavilion in 1885."
+    }
+   ]
+  },
+  {
+   "id": "cinema",
+   "name": "Cinema (picture palace)",
+   "family": "Theatres and entertainment",
+   "domain": "Recreational",
+   "fish": "69938",
+   "period": {
+    "text": "purpose-built under the Cinematograph Act 1909; the Electric, Birmingham, 1909",
+    "from": 1909
+   },
+   "sources": [
+    {
+     "title": "Electric Cinema, Birmingham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Electric_Cinema,_Birmingham",
+     "locator": "lead",
+     "quote": "It opened in Station Street in 1909, showing its first silent film on 27 December of that year."
+    }
+   ]
+  },
+  {
+   "id": "roman-baths",
+   "name": "Roman bath house (thermae)",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "70433",
+   "period": {
+    "text": "Bath made a spa town by the Romans c. 60 AD",
+    "from": 60
+   },
+   "sources": [
+    {
+     "title": "Bath, Somerset",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath,_Somerset",
+     "locator": "section \"Toponymy\"",
+     "quote": "60 AD, as part of which  they built the Roman Baths, from which the modern name of the city is derived."
+    }
+   ]
+  },
+  {
+   "id": "spa",
+   "name": "Spa",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "68722"
+  },
+  {
+   "id": "pump-room",
+   "name": "Pump room",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "71742",
+   "period": {
+    "text": "Bath's first Pump Room 1706",
+    "from": 1706
+   },
+   "sources": [
+    {
+     "title": "Grand Pump Room",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grand_Pump_Room",
+     "locator": "section \"History\"",
+     "quote": "The present building replaced an earlier one on the same site, designed by John Harvey at the request of Beau Nash, Bath's master of ceremonies, in 1706, before the discovery of Roman remains nearby."
+    }
+   ]
+  },
+  {
+   "id": "assembly-rooms",
+   "name": "Assembly rooms",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "87746",
+   "period": {
+    "text": "18th and 19th centuries; Harrison's Rooms, Bath, 1708",
+    "from": 1708
+   },
+   "sources": [
+    {
+     "title": "Bath Assembly Rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath_Assembly_Rooms",
+     "locator": "section \"History\"",
+     "quote": "The first built in 1708 for Thomas Harrison overlooking Parade Gardens between North Parade and Bath Abbey."
+    }
+   ]
+  },
+  {
+   "id": "pleasure-garden",
+   "name": "Pleasure garden",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "71155",
+   "period": {
+    "text": "Vauxhall, from the mid-17th to the mid-19th century",
+    "from": 1660,
+    "to": 1859
+   },
+   "sources": [
+    {
+     "title": "Vauxhall Gardens",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Vauxhall_Gardens",
+     "locator": "lead",
+     "quote": "From 1785 to 1859, the site was known as Vauxhall, a pleasure garden and one of the leading venues for public entertainment in London from the mid-17th century to the mid-19th century."
+    }
+   ]
+  },
+  {
+   "id": "bandstand",
+   "name": "Bandstand",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "69009",
+   "period": {
+    "text": "the first in Britain 1861",
+    "from": 1861
+   },
+   "sources": [
+    {
+     "title": "Bandstand",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bandstand",
+     "locator": "section \"History in Britain\"",
+     "quote": "The first bandstands in Britain were built in the Royal Horticultural Society Gardens, South Kensington in 1861."
+    }
+   ]
+  },
+  {
+   "id": "landing-pier",
+   "name": "Landing pier",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "87799",
+   "period": {
+    "text": "Ryde Pier, 1814, the first recorded in England",
+    "from": 1814
+   },
+   "sources": [
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"England and Wales\"",
+     "quote": "The first recorded pier in England was Ryde Pier, opened in 1814 on the Isle of Wight, as a landing stage to allow ferries to and from the mainland to berth."
+    }
+   ]
+  },
+  {
+   "id": "pleasure-pier",
+   "name": "Pleasure pier",
+   "family": "Spas and resorts",
+   "domain": "Recreational",
+   "fish": "92951",
+   "period": {
+    "text": "from the early 19th century; more than 100 by 1914",
+    "from": 1814
+   },
+   "sources": [
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"Pleasure piers\"",
+     "quote": "Pleasure piers were first built in Britain during the early 19th century."
+    }
+   ]
+  },
+  {
+   "id": "grandstand",
+   "name": "Grandstand",
+   "family": "Sport",
+   "domain": "Recreational",
+   "fish": "69944",
+   "period": {
+    "text": "York, 1754, said to be the oldest in the modern sense",
+    "from": 1754
+   },
+   "sources": [
+    {
+     "title": "York Racecourse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Racecourse",
+     "locator": "section \"Move to the Knavesmire and growth\"",
+     "quote": "It was ready for the 1754 August meeting and has been said to have been the oldest grandstand (in the modern sense) at any sporting venue in the world."
+    }
+   ]
+  },
+  {
+   "id": "football-ground",
+   "name": "Football ground (stadium)",
+   "family": "Sport",
+   "domain": "Recreational",
+   "fish": "71809",
+   "period": {
+    "text": "Goodison Park, 1892, England's first purpose-built",
+    "from": 1892
+   },
+   "sources": [
+    {
+     "title": "Goodison Park",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Goodison_Park",
+     "locator": "section \"Genesis of Goodison Park\"",
+     "quote": "The stadium was England's first purpose-built football ground, with stands on three sides."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "inn>inn-yard-theatre",
+   "from": "inn",
+   "to": "inn-yard-theatre",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Before the first purpose-built playhouses, plays were most often acted in the galleried courtyards of inns; at least six London inns were regular venues in the second half of the 16th century, and some yards were turned into near-permanent theatres.",
+   "sources": [
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Beginnings\"",
+     "quote": "Prior to the building of The Theatre, plays were sometimes staged in public halls, the private houses of aristocrats, or royal palaces —; but most often, and most publicly, they were acted in the courtyards of inns."
+    },
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Culmination\"",
+     "quote": "The available evidence indicates that six London inns were significant sites for drama during the second half of the sixteenth century."
+    }
+   ]
+  },
+  {
+   "id": "inn-yard-theatre>elizabethan-playhouse",
+   "from": "inn-yard-theatre",
+   "to": "elizabethan-playhouse",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "That the open-air playhouses from 1576 were modelled on the inn yards (galleries round an open yard, a stage to one side) is the usual account, called an 'often-stated truism' by the article on inn-yard theatres; the first playhouse is also said to have been adapted from the bear-baiting pits.",
+   "sources": [
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Beginnings\"",
+     "quote": "It is an often-stated truism of the critical literature that the open-air public theatres or amphitheatres of Burbage and his successors were modeled on the inn yards, with their surrounding balconies, open space in the center, and stage to one side."
+    },
+    {
+     "title": "Theatre (structure)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Theatre_(structure)",
+     "locator": "section \"Elizabethan England\"",
+     "quote": "This layout is said to derive from the practice of holding plays in the yard of an inn."
+    },
+    {
+     "title": "The Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Theatre",
+     "locator": "section \"History\"",
+     "quote": "The design of The Theatre was possibly adapted from the inn-yards that had served as playing spaces for actors and/or bear baiting pits."
+    }
+   ],
+   "views": [
+    "From the inn yards: the usual account in the critical literature, 'an often-stated truism' (Inn-yard theatre); the layout 'is said to derive' from plays in an inn yard (Theatre (structure)).",
+    "Only possibly, or from the baiting rings: The Theatre's design was 'possibly adapted' from the inn yards 'and/or bear baiting pits' (The Theatre); the round baiting rings are the subject of the bear-garden link."
+   ]
+  },
+  {
+   "id": "bear-garden>elizabethan-playhouse",
+   "from": "bear-garden",
+   "to": "elizabethan-playhouse",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "The Bankside bear garden was a round or polygonal galleried ring like the playhouses beside it, and The Theatre may have been adapted from the baiting pits; in 1614 the Hope replaced the Bear Garden as a dual-purpose house for plays and baiting. The likeness and the replacement are documented; that the baiting ring shaped the playhouse is not shown.",
+   "sources": [
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "section \"History\"",
+     "quote": "The Beargarden was constructed as a round or polygonal open structure, comparable to the public theatres built in and around London starting in 1576."
+    },
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "section \"History\"",
+     "quote": "In 1613, Henslowe and new partner Jacob Meade tore down the Beargarden, and in 1614 replaced it with the Hope Theatre."
+    },
+    {
+     "title": "Hope Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hope_Theatre",
+     "locator": "lead",
+     "quote": "Also, the Hope was likely a more complex construction job, since it was designed as a dual-purpose facility from the start."
+    }
+   ]
+  },
+  {
+   "id": "roman-amphitheatre>elizabethan-playhouse",
+   "from": "roman-amphitheatre",
+   "to": "elizabethan-playhouse",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Contemporaries called the London playhouses amphitheatres, and the Swan's columns were painted to give it a 'Roman' look; the sources show the name and the classical dress, not that the builders worked from Roman amphitheatres.",
+   "sources": [
+    {
+     "title": "The Swan (theatre)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Swan_(theatre)",
+     "locator": "section \"Construction\"",
+     "quote": "Translated from the Latin, his description identifies the Swan as the \"finest and biggest of the London amphitheatres\", with a capacity for 3000 spectators."
+    },
+    {
+     "title": "The Swan (theatre)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Swan_(theatre)",
+     "locator": "section \"Architecture\"",
+     "quote": "It was built of flint concrete, and its wooden supporting columns were so cleverly painted that \"they would deceive the most acute observer into thinking that they were marble\", giving the Swan a \"Roman\" appearance."
+    },
+    {
+     "title": "Amphitheatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Amphitheatre",
+     "locator": "section \"Roman amphitheatres\"",
+     "quote": "Roman amphitheatres were circular or oval in plan, with a central arena surrounded by perimeter seating tiers."
+    }
+   ]
+  },
+  {
+   "id": "round>plen-an-gwary",
+   "from": "round",
+   "to": "plen-an-gwary",
+   "kind": "descent",
+   "confidence": "disputed",
+   "claim": "Some Cornish playing places reused older earthworks; Perran Round, the best surviving plen-an-gwary, is scheduled as a later Iron Age and early post-Roman enclosure (a round), while Henry Jenner thought it more probably built as a playing place.",
+   "sources": [
+    {
+     "title": "Perran Round",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Perran_Round",
+     "locator": "section \"History\"",
+     "quote": "It has been described as an Iron Age circular enclosure, or round and the citation under the Ancient Monuments and Archaeological Areas Act 1979 does describe Perran Round as a small enclosure of later Iron Age and early post-Roman period."
+    },
+    {
+     "title": "Perran Round",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Perran_Round",
+     "locator": "section \"History\"",
+     "quote": "Henry Jenner compiled the scheduling paperwork which states that it is ″more probable″ that it was constructed as a plain-an-gwary, an open-air theatre for the performance of miracle plays although earlier structures were commonly repurposed as later 'playing places'."
+    }
+   ],
+   "region": "Cornwall",
+   "views": [
+    "A reused round: Perran Round is described as an Iron Age round, and the scheduling citation calls it an enclosure of the later Iron Age and early post-Roman period.",
+    "Built as a playing place: Henry Jenner's scheduling paperwork held it 'more probable' that it was constructed as a plain-an-gwary, while allowing that earlier structures were commonly repurposed."
+   ]
+  },
+  {
+   "id": "cockpit>indoor-playhouse",
+   "from": "cockpit",
+   "to": "indoor-playhouse",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The Cockpit in Drury Lane was a cockfighting pit converted in 1616 into an indoor playhouse, perhaps to designs by Inigo Jones; Jones designed another 'Cockpit' theatre at Whitehall in 1629. One building's history, not the origin of every indoor playhouse (the Blackfriars was a hall).",
+   "sources": [
+    {
+     "title": "Cockpit Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockpit_Theatre",
+     "locator": "section \"History\"",
+     "quote": "The original building was an actual cockpit; that is, a staging area for cockfights."
+    },
+    {
+     "title": "Cockpit Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockpit_Theatre",
+     "locator": "section \"History\"",
+     "quote": "In August 1616, Christopher Beeston acquired the lease to the building and converted it to an indoor playhouse."
+    }
+   ]
+  },
+  {
+   "id": "indoor-playhouse>restoration-playhouse",
+   "from": "indoor-playhouse",
+   "to": "restoration-playhouse",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "At the Restoration both patent companies briefly used the old indoor playhouses (the Cockpit, Salisbury Court) and quickly moved to new houses made from tennis courts; the Cockpit could not compete and no play is recorded there after 1665.",
+   "sources": [
+    {
+     "title": "Cockpit Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockpit_Theatre",
+     "locator": "section \"History\"",
+     "quote": "Both companies briefly made use of the earlier generation of theatres including the Cockpit and the Salisbury Court Theatre, but quickly moved to newer and more fashionable venues — Davenant in 1661 to a theatre in Lincoln's Inn Fields that was once Lisle's Tennis Court, and Killigrew in 1660 to Gibbon's Tennis Court in Vere Street."
+    }
+   ]
+  },
+  {
+   "id": "real-tennis-court>restoration-playhouse",
+   "from": "real-tennis-court",
+   "to": "restoration-playhouse",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Killigrew and Davenant, following a French practice, turned real tennis courts into theatres: long, high galleried buildings of about the size of the earlier theatres. Lisle's Tennis Court (1656) became the first public playhouse in London with moveable scenery.",
+   "sources": [
+    {
+     "title": "Lisle's Tennis Court",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lisle's_Tennis_Court",
+     "locator": "section \"The Duke's Company\"",
+     "quote": "Taking a hint from their new King's taste, Killigrew and Davenant both chose a solution that had been used in France: converting tennis courts into theatres."
+    },
+    {
+     "title": "Lisle's Tennis Court",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lisle's_Tennis_Court",
+     "locator": "section \"Structure\"",
+     "quote": "It was originally an indoor tennis court; courts were used as theatre spaces because they had a similar structure with a narrow, rectangular shape and gallery seating."
+    },
+    {
+     "title": "Lisle's Tennis Court",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lisle's_Tennis_Court",
+     "locator": "lead",
+     "quote": "The tennis court theatre was the first public playhouse in London to feature the moveable scenery that would become a standard feature of Restoration theatres."
+    }
+   ]
+  },
+  {
+   "id": "italian-court-theatre>restoration-playhouse",
+   "from": "italian-court-theatre",
+   "to": "restoration-playhouse",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Inigo Jones, who learnt Italian set design, brought movable scenery and the proscenium arch to the English court masque; the Restoration playhouses put such scenery on the public stage, borrowing also from French opera.",
+   "sources": [
+    {
+     "title": "Inigo Jones",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inigo_Jones",
+     "locator": "section \"Early life and career\"",
+     "quote": "Under the patronage of Queen Anne of Denmark (the consort of King James I), he is credited with introducing movable scenery and the proscenium arch to English theatre."
+    },
+    {
+     "title": "Restoration spectacular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Restoration_spectacular",
+     "locator": "lead",
+     "quote": "The spectacular has roots in early 17th-century court masque, though it borrowed ideas and technology from French opera."
+    },
+    {
+     "title": "Theatre (structure)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Theatre_(structure)",
+     "locator": "section \"Renaissance Europe\"",
+     "quote": "The Italian opera houses were the model for the subsequent theaters throughout Europe."
+    }
+   ]
+  },
+  {
+   "id": "restoration-playhouse>georgian-playhouse",
+   "from": "restoration-playhouse",
+   "to": "georgian-playhouse",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "The Georgian Theatre Royal at Richmond (1788) keeps parts of the Restoration theatre layout (deep apron, proscenium doors, galleries). The source cites it as an example of that layout; it does not trace the line of development between them.",
+   "sources": [
+    {
+     "title": "Lisle's Tennis Court",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lisle's_Tennis_Court",
+     "locator": "section \"Structure\"",
+     "quote": "However, a great example of the layout of the inside is the Georgian Theatre Royal in Richmond, North Yorkshire, which contains components of Restoration theatre spaces and still stands today."
+    }
+   ]
+  },
+  {
+   "id": "song-and-supper-room>music-hall",
+   "from": "song-and-supper-room",
+   "to": "music-hall",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The music hall grew in the 1850s out of the saloons and song-and-supper rooms of the 1830s and 1840s (the Grecian Saloon, Evans's, the Coal Hole, the Mogul Saloon, on whose site the Middlesex was built).",
+   "sources": [
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Origins and development\"",
+     "quote": "The music hall as we know it developed from such establishments during the 1850s and were built in and on the grounds of public houses."
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Origins and development\"",
+     "quote": "According to John Hollingshead, proprietor of the Gaiety Theatre, London (originally the Strand Music Hall), this establishment was \"the father and mother, the dry and wet nurse of the Music Hall\"."
+    }
+   ]
+  },
+  {
+   "id": "public-house>music-hall",
+   "from": "public-house",
+   "to": "music-hall",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Music hall began in the saloon bars of pubs in the 1830s; in the 1850s some pubs were pulled down for music halls, and the Canterbury (1852), often counted the first, was built beside the Canterbury Tavern and looked like a pub concert room.",
+   "sources": [
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "lead",
+     "quote": "Originating in saloon bars within pubs during the 1830s, music hall entertainment became increasingly popular with audiences—so much so, that during the 1850s some public houses were demolished, and specialised music hall theatres developed in their place."
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Early music halls\"",
+     "quote": "The hall looked like most contemporary pub concert rooms, but its replacement in 1854 was of then unprecedented size."
+    }
+   ]
+  },
+  {
+   "id": "music-hall>variety-theatre",
+   "from": "music-hall",
+   "to": "variety-theatre",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "From the 1880s music halls were rebuilt as larger variety theatres (the London Pavilion 1885, the Canterbury, Weston's as the Holborn Empire in 1906), and after 1918 the halls rebranded their shows as variety.",
+   "sources": [
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Early music halls\"",
+     "quote": "During 1906 it was rebuilt as a variety theatre and renamed as the Holborn Empire."
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "lead",
+     "quote": "It faded away after 1918 as the halls rebranded their entertainment as variety."
+    }
+   ]
+  },
+  {
+   "id": "variety-theatre>cinema",
+   "from": "variety-theatre",
+   "to": "cinema",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Films were first shown in fairgrounds, music halls and converted shops; the Cinematograph Act 1909 set a building code for cinemas, the cinema took the halls' audience, and some halls became cinemas (Gatti's Hungerford Palace of Varieties in 1910).",
+   "sources": [
+    {
+     "title": "Cinematograph Act 1909",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cinematograph_Act_1909",
+     "locator": "section \"Origins\"",
+     "quote": "During the 1890s and 1900s, most film exhibition took place in temporary venues such as fairgrounds, music halls and hastily converted shops (so-called 'penny gaffs')."
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Decline\"",
+     "quote": "The improvement of cinema, the development of radio, and the cheapening of the gramophone damaged its popularity greatly."
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Early music halls\"",
+     "quote": "It became a cinema in 1910, and the Players' Theatre in 1946."
+    }
+   ]
+  },
+  {
+   "id": "roman-baths>spa",
+   "from": "roman-baths",
+   "to": "spa",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "The Romans made Bath a spa town; it revived as a spa in the Elizabethan era, and the 18th-century Pump Room and baths stand over the Roman spring.",
+   "sources": [
+    {
+     "title": "Bath, Somerset",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath,_Somerset",
+     "locator": "lead",
+     "quote": "In the 17th century, claims were made for the curative properties of water from the springs, and Bath became popular as a spa town in the Georgian era."
+    },
+    {
+     "title": "Bath, Somerset",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bath,_Somerset",
+     "locator": "section \"Early modern period\"",
+     "quote": "The abbey church became derelict before being restored as the city's parish church in the Elizabethan era, when the city experienced a revival as a spa."
+    },
+    {
+     "title": "Roman Baths (Bath)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+     "locator": "section \"Post-Roman use\"",
+     "quote": "The spring is now housed in 18th-century buildings, designed by architects John Wood, the Elder and John Wood, the Younger, father and son."
+    }
+   ]
+  },
+  {
+   "id": "spa>pump-room",
+   "from": "spa",
+   "to": "pump-room",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The pump room is the spa's building, where the water was pumped up to be drunk; it was also the social room of the spa, as at Bath, where it formed one complex with the Lower Assembly Rooms.",
+   "sources": [
+    {
+     "title": "Pump rooms (FISH Thesaurus of Monument Types, concept 71742)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71742.html",
+     "locator": "scope note",
+     "quote": "A spa building to which water was pumped from springs or wells; usually also serving a social function as an ASSEMBLY ROOM, eg. as at Bath."
+    },
+    {
+     "title": "Grand Pump Room",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grand_Pump_Room",
+     "locator": "lead",
+     "quote": "Along with the Lower Assembly Rooms, it formed a complex where social activity was centred, and where visitors to the city gathered."
+    }
+   ]
+  },
+  {
+   "id": "assembly-rooms>hotel",
+   "from": "assembly-rooms",
+   "to": "hotel",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The assembly rooms of the 18th and 19th centuries were in part supplanted by the ballrooms of the large hotels of the railway age.",
+   "sources": [
+    {
+     "title": "Assembly rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Assembly_rooms",
+     "locator": "lead",
+     "quote": "Also to some extent they were supplanted by the ballrooms of major hotels as British hotels became larger from the railway age onwards."
+    }
+   ]
+  },
+  {
+   "id": "pleasure-garden>bandstand",
+   "from": "pleasure-garden",
+   "to": "bandstand",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Structures for bands playing to guests were found in the 18th-century pleasure gardens of London (Vauxhall's orchestra); the Victorian park bandstand followed, the first in Britain in 1861, with the brass band movement.",
+   "sources": [
+    {
+     "title": "Bandstand",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bandstand",
+     "locator": "section \"Origins\"",
+     "quote": "During the 18th and 19th centuries this type of performance building was found in the fashionable pleasure gardens of London and Paris where musicians played for guests dining and dancing."
+    },
+    {
+     "title": "Bandstand",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bandstand",
+     "locator": "section \"Origins\"",
+     "quote": "Many bandstands in the United Kingdom originated in the Victorian era as the British brass band movement gained popularity."
+    }
+   ]
+  },
+  {
+   "id": "landing-pier>pleasure-pier",
+   "from": "landing-pier",
+   "to": "pleasure-pier",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The seaside pier began as a landing stage for steamer passengers (Ryde, 1814) and became a promenade over the sea; working piers were later recycled as pleasure piers.",
+   "sources": [
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"Pleasure piers\"",
+     "quote": "The large tidal ranges at many such resorts meant that passengers arriving by pleasure steamer could use a pier to disembark safely."
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"England and Wales\"",
+     "quote": "Following the building of the world's first seaside pier at Ryde, the pier became fashionable at seaside resorts in England and Wales during the Victorian era, peaking in the 1860s with 22 being built in that decade."
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"Working piers\"",
+     "quote": "Many other working piers have been demolished, or remain derelict, but some have been recycled as pleasure piers."
+    }
+   ]
+  },
+  {
+   "id": "grandstand>football-ground",
+   "from": "grandstand",
+   "to": "football-ground",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "The racecourse grandstand (York, 1754) is the oldest kind of spectator stand; the football ground is a pitch with stands, the first purpose-built (Goodison Park, 1892) with stands on three sides, and a grandstand is in essence one section of a stadium. The sources give the parts and the order, not a line of descent.",
+   "sources": [
+    {
+     "title": "Grandstand (FISH Thesaurus of Monument Types, concept 69944)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69944.html",
+     "locator": "scope note",
+     "quote": "The principal stand at a sporting ground, eg. at a racecourse."
+    },
+    {
+     "title": "Grandstand",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grandstand",
+     "locator": "lead",
+     "quote": "The grandstand is in essence like a single section of a stadium, but differs from a stadium in that it does not wrap all or most of the way around."
+    },
+    {
+     "title": "Football ground (FISH Thesaurus of Monument Types, concept 71809)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71809.html",
+     "locator": "scope note",
+     "quote": "A site including a pitch, stands and other ancillary buildings associated with the game of football."
+    }
+   ]
+  }
+ ]
+}

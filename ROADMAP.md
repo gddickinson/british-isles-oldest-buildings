@@ -7,8 +7,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 ## Status (2026-10-25)
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
-- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 69 (2026-10-25, after C5b2d4):
-  252.9 of 256 MiB, 449 of 511 files. Republish changed files only: checksum `dist/` before and after
+- Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
+  the Glossary page): 254.0 of 256 MiB, 458 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
   to replace files this session has not read or listed).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
@@ -576,9 +576,25 @@ the descent of a type is disputed, both views are given and the link is drawn as
       (probable), canal and turnpike → railway (replaced); wagonway → railway; railway station → railway hotel.
       Disputed: the vertical windmill from Persia, the shopping arcade from Paris. Not yet researched: the factory
       as a type, ironworks beyond the furnace, the parts of a station (train shed, goods shed, engine shed).
-- [ ] BT1c3 Civic, education, health and welfare, recreational; periods of use (first known, flourishing, last
+- BT1c3 Civic, education, health and welfare, recreational; periods of use (first known, flourishing, last
       built) for every type; structural system and plan form where the sources give them. (The earliest catalogue
-      example per type needs BT2's mapping and moves there.)
+      example per type needs BT2's mapping and moves there.) Split 2026-10-25:
+- [x] BT1c3a (2026-10-25) Civic, education, health and welfare, recreational (`lineage_civic.json`,
+      `lineage_education.json`, `lineage_health.json`, `lineage_recreation.json`; four research agents in parallel,
+      each file reviewed): 96 types (8 abroad), 80 links, 288 more quotes; all 224 types and 183 links now, 593 of 593
+      quotes found. Moot → moot hall, market house and tolbooth → town hall, castle → county gaol, Eastern State
+      Penitentiary → Pentonville, lock-up → police station; cathedral school → grammar school → public school, Bell's
+      Madras system → National and British schools, academic hall → college, mechanics' institute → university and
+      public library, subscription library → public library → Carnegie library; monastery → medieval hospital →
+      almshouse, leper house → almshouse, Les Invalides → Chelsea and Kilmainham, Stonehouse → pavilion hospital →
+      workhouse infirmary → municipal hospital, corridor → echelon asylum, parish → union workhouse → Irish
+      workhouse; inn yard → playhouse, real tennis court → Restoration playhouse, pub and song-and-supper room →
+      music hall → variety theatre → cinema, Roman baths → spa (revival), landing pier → pleasure pier. 17 disputed in
+      all (8 new: guildhall origin, panopticon and Millbank, panopticon and the radial prison, Leach's chantry schools,
+      quadrangle and cloister, hospital origins, the first cottage hospital and sanatorium, the inn-yard theory,
+      Perran Round). Details and what was left out in `data/curated/building_types/README.md`.
+- [ ] BT1c3b Periods of use (first known, flourishing, last built) for every type; structural system and plan form
+      where the sources give them.
 - [ ] BT2 Data: the curated `lineage*.json` files (types, links with kind and confidence, citations and quotes as
       the evidence file), checked by script; every catalogue record and place kind mapped to a type (the categories
       and Wikidata classes as a start), so each type shows counts, a map and the dated examples.

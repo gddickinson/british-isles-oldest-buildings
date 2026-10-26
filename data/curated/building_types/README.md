@@ -67,3 +67,30 @@ market hall (order from FISH's dates), shop → bank (the goldsmith bankers' bus
 stones → clapper bridge (form and word), river navigation → canal (the Sankey Brook Navigation, one case).
 FISH notes: its TUNNEL KILN is a coal-fired lime kiln, so the pottery industry's gas tunnel kiln has no FISH id;
 the buttercross is a non-preferred term of MARKET CROSS; not in FISH: cast-iron bridge, the Roman taberna.
+
+## Civic, education, health and welfare, recreational (BT1c3a, 2026-10-25)
+
+Researched in parallel, one file per domain, each reviewed before it was kept:
+`lineage_civic.json` 23 types (2 abroad: the town halls of the Continent, Eastern State Penitentiary), 19 links;
+`lineage_education.json` 23 types (2 abroad: the Madras pial schools, Paris and Bologna), 18 links;
+`lineage_health.json` 25 types (3 abroad: the Hôpital Lariboisière, Les Invalides, Brehmer's sanatorium), 23 links;
+`lineage_recreation.json` 25 types (1 abroad: the Italian court theatre), 20 links. 288 more quotes.
+All 224 types and 183 links: documented 138, probable 28, disputed 17.
+Disputed: whether guildhalls began as guild halls (FISH) or as the town's hall (Wikipedia); whether Millbank followed
+Bentham's panopticon, and whether the panopticon shaped the radial prisons ("was not … a panopticon"); Leach's
+chantry-school thesis; the college quadrangle from the cloister (Mob Quad plain, without arcades); the monastic or
+leper-house origin of the medieval hospital (Gordon); the first cottage hospital (Cranleigh 1859 or earlier
+dispensaries with beds); the first sanatorium (Brehmer or Bodington, 1836); the inn-yard theory of the playhouse;
+Perran Round as a reused Iron Age round or built as a plen-an-gwary (Jenner).
+Probable, stated as such: shire hall → county hall, watch house → police station, fire engine house → fire station,
+prison hulk → separate-system prison, house of correction and gaol (convergence); Bethlem's galleries → the corridor
+asylum, Lariboisière → the pavilion plan in Britain, the Scottish poorhouse and the union workhouse (convergence),
+Bart's and St Thomas's → the voluntary hospitals; the bear garden and Roman amphitheatre → the playhouse,
+Restoration → Georgian playhouse, grandstand → football ground (influence only: a grandstand is one side of a ground).
+Changed on review: chained library → public library is influence ("forerunner"), not descent.
+Not in FISH (own sources): tolbooth, tholsel, panopticon, separate-system prison, cathedral and chantry schools,
+academic hall, red-brick university, chained and Carnegie libraries, pavilion hospital, echelon-plan asylum, parish
+workhouse, Irish workhouse, Scottish poorhouse, the playhouse types (FISH has only THEATRE), song-and-supper room.
+Left for later: charity, dame and Sunday schools, hedge schools → Irish national schools (sourced; FISH's "national
+school" is the English National Society's), plate-glass universities, custom houses, assize courts, houses of
+industry, the York Retreat, Turkish baths, the lido.

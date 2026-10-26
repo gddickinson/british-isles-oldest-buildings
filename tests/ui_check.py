@@ -41,6 +41,8 @@ PAGES = {
     "innovations": ("/oldest", r"(?s)Innovations and firsts made in the isles.*Coke-fired blast furnace.*Dolly the sheep"),
     "law_events": ("/change", r"(?s)Statute of Labourers.*Bubble Act.*Slavery abolished; slave owners compensated.*Big Bang"),
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),
+    "glossary": ("/glossary?q=wealden", r"(?s)Glossary.*Wealden house.*FISH Thesaurus"),
+    "glossary_see": ("/glossary#term-grade-ii", r"(?s)Grade II\*.*Listed building"),
     "trades_change": ("/change", r"(?s)Trade stories:.*Sugar and slavery.*Tea story"),
     "trade_here": ("/building/Q2566525", r"(?s)Trade and industry here.*Cromford Mill, the first water-powered.*story of.*cotton"),
     "trade_map": ("/map?trade=coal", r"(?s)Trade.*places and buildings of the trade, ringed.*The story of coal"),

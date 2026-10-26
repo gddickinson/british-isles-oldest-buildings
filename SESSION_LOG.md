@@ -1482,3 +1482,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Disputed: the vertical windmill from the Persian horizontal one; the shopping arcade from Paris or as early in
   Britain. Seven links probable, each saying what the sources do and do not show.
 - Tests 313 OK (1 new: every planned domain present). No GUI change (BT4).
+
+## 2026-10-25 — BT1c3a: civic, education, health and recreational building types; Glossary page; hosted copy v71
+- BT1c3 split into BT1c3a (the four domains' types and links, done) and BT1c3b (periods of use, structure and plan
+  form for every type). Four research agents wrote one file each (`lineage_civic.json` 23 types / 19 links,
+  `lineage_education.json` 23 / 18, `lineage_health.json` 25 / 23, `lineage_recreation.json` 25 / 20); each file
+  reviewed here: chained library → public library made influence ("forerunner"), grandstand → football ground made
+  influence. `python -m bidb.building_types --quotes`: 224 types, 183 links, 593 of 593 quotes found.
+- Glossary page `/glossary` (George's request): new `bidb/glossary.py` and `data/curated/glossary.json` (88 curated
+  terms: designations, dating and date checks, architecture, archaeology, registers, app terms; 27 of them FISH scope
+  notes, OGL, the indexing advice stripped) + the 13 periods + 181 building types with a definition = 282 terms;
+  `/api/glossary`, `static/glossary.js` (search, group chips, A-Z, see-also links, Find in the catalogue), nav link,
+  Help links to it, hosted `data/glossary.json`. Tests: `test_glossary` (4), ui_check `glossary`, `glossary_see`.
+- Hosted copy versions 70-71: 9 new and 194 changed files (96 MB in two batches; the C6-C9 trade work had not been
+  published), 458 files, 254.0 MiB; sizes checked against `dist/`; static GUI review 24/24 pages (glossary, trades
+  added to `tests/ui_review.mjs`). The database has changed since db-2026-10-24 (C6 innovation places, C3c people); no
+  new release made.
+- Tests 317 OK. GUI restarted (shares on the home network: settings.json has `share_on_network: true`).
+- Next: BT1c3b (periods of use for every type).

@@ -83,6 +83,8 @@ const PAGES = [
   ["data", "/data", "document.querySelectorAll('#g_tiles .tile').length"],
   ["settings", "/settings", "document.querySelectorAll('.set-card').length"],
   ["help", "/help", "document.querySelectorAll('section').length"],
+  ["glossary", "/glossary?q=castle", "document.querySelectorAll('.gl-entry').length"],
+  ["trades", "/trades?t=coal", "document.querySelectorAll('#tr_chips button').length"],
 ];
 
 async function pages(page) {

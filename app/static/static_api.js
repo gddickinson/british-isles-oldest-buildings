@@ -241,6 +241,7 @@
     async trades() { return (await tradesData()).index; },
     async trade(p, f, id) { return (await tradesData()).stories[id]; },
     async trade_here(p, f, id) { return (await tradesData()).here?.[id] || { trades: [], made: [] }; },
+    async glossary() { return fetch("data/glossary.json").then((r) => r.json()); },
     async quiz_pool() { return fetch("data/quiz.json").then((r) => r.json()); },
     async dendro(p, f, id) {
       TREE = TREE || fetch("data/dendro.json").then((r) => r.json()).catch(() => ({}));
@@ -310,7 +311,7 @@
     const name = parts[0], id = parts.length > 1 ? decodeURIComponent(parts.slice(1).join("/")) : null;
     const fn = routes[name];
     if (!fn) throw new Error("No static route for " + url);
-    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "stops", "old_names", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool", "trades", "trade", "trade_here"].includes(name);
+    const plain = ["history", "gaps", "tours", "tour", "tour_candidates", "visiting", "stops", "old_names", "domesday", "dendro", "excavations", "oldest_lists", "quiz", "quiz_pool", "trades", "trade", "trade_here", "glossary"].includes(name);
     return fn(u.searchParams, plain ? null : filtersFrom(u.searchParams), id);
   };
 })();

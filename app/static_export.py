@@ -19,7 +19,7 @@ from .server import app
 DIST = ROOT / "dist"
 PAGES = {"/": "index.html", "/map": "map.html", "/places": "places.html", "/people": "people.html", "/pronunciation": "pronunciation.html",
          "/history": "history.html", "/change": "change.html", "/trades": "trades.html", "/oldest": "oldest.html",
-         "/stats": "stats.html", "/tours": "tours.html", "/stories": "stories.html", "/quiz": "quiz.html", "/compare": "compare.html", "/data": "data.html",
+         "/stats": "stats.html", "/tours": "tours.html", "/stories": "stories.html", "/quiz": "quiz.html", "/compare": "compare.html", "/data": "data.html", "/glossary": "glossary.html",
          "/settings": "settings.html", "/help": "help.html"}
 EXTRACT_CHARS = 900          # keep the data file small enough to host
 SHARD_BYTES = 9_000_000      # each data file stays well under the host's 16 MB per-file limit

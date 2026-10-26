@@ -41,7 +41,7 @@
                     ('history','pages.history','History'), ('change','pages.change','Change over time'),
                     ('trades','pages.trades','Trades'),
                     ('oldest','pages.oldest','Oldest by type'), ('stats','pages.stats','Statistics'),
-                    ('compare','pages.compare','Compare'),
+                    ('compare','pages.compare','Compare'), ('glossary','pages.glossary','Glossary'),
                     ('data','pages.data','Data quality')] %}
     {% for key, ep, label in links %}
       <a href="{{ url_for(ep) }}" class="{{ 'active' if page == key else '' }}">{{ label }}{% if key in ('tours','compare') %} <span class="count" data-count="{{ 'trip' if key == 'tours' else key }}"></span>{% endif %}</a>

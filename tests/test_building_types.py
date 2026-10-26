@@ -80,7 +80,7 @@ class BuildingTypesTest(unittest.TestCase):
         if building_types.PATH.exists():
             domains = set(building_types.family_tree(building_types.load()))
             self.assertLessEqual({"Domestic", "Defence", "Religious", "Agricultural", "Commercial", "Industrial",
-                                  "Transport"}, domains)
+                                  "Transport", "Civic", "Education", "Health and welfare", "Recreational"}, domains)
 
 
 if __name__ == "__main__":

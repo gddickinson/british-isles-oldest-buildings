@@ -79,6 +79,12 @@ def oldest_lists():
     return jsonify(lists(conn()))
 
 
+@bp.route("/api/glossary")
+def glossary():
+    from bidb.glossary import entries
+    return jsonify(entries())
+
+
 @bp.route("/api/oldest")
 def oldest():
     return jsonify(queries.oldest_by_category(conn(), per=arg_num("per") or 6))

@@ -107,6 +107,11 @@ def pronunciation():
     return render_template("pronunciation.html", page="pron")
 
 
+@bp.route("/glossary")
+def glossary():
+    return render_template("glossary.html", page="glossary")
+
+
 @bp.route("/data")
 def data():
     return render_template("data.html", page="data")

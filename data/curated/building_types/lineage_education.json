@@ -1,0 +1,842 @@
+{
+ "about": "Building types (roadmap BT1c3a): schools, universities and colleges, libraries. Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "cathedral-school",
+   "name": "Cathedral school (and monastic school)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": null,
+   "period": {
+    "text": "from the Gregorian mission, 597",
+    "from": 597
+   },
+   "sources": [
+    {
+     "title": "History of education in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_England",
+     "locator": "lead",
+     "quote": "The history of education in England is documented from Saxon settlement of England, and the setting up of the first cathedral schools in 597 and 604."
+    }
+   ]
+  },
+  {
+   "id": "song-school",
+   "name": "Song school (choir school)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "71688",
+   "sources": [
+    {
+     "title": "History of education in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_England",
+     "locator": "section \"Medieval period\"",
+     "quote": "Further schools were established throughout the British Isles in the seventh and eighth centuries, generally following one of two forms: grammar schools to teach Latin, and song schools to train singers for cathedral choirs."
+    }
+   ]
+  },
+  {
+   "id": "chantry-school",
+   "name": "Chantry school",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": null,
+   "period": {
+    "text": "from 1384 to the dissolution of the chantries, 1547",
+    "from": 1384,
+    "to": 1547
+   },
+   "sources": [
+    {
+     "title": "Chantry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chantry",
+     "locator": "section \"Abolition of Chantries Acts, 1545 and 1547\"",
+     "quote": "Katherine, Lady Berkeley had founded the first chantry school in 1384."
+    }
+   ]
+  },
+  {
+   "id": "grammar-school",
+   "name": "Grammar school",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "68701"
+  },
+  {
+   "id": "public-school",
+   "name": "Public school (endowed boarding school)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "71788"
+  },
+  {
+   "id": "madras-pial-school",
+   "name": "Pial school of Madras (pupils teaching pupils)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "lead",
+     "quote": "He observed the system of pupil teachers that obtained in the Madras Pial schools (run around temples), and which in essence was also the system in the Bengal Pathsalas."
+    }
+   ]
+  },
+  {
+   "id": "monitorial-school",
+   "name": "Monitorial school (Bell and Lancaster)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": null,
+   "note": "One large schoolroom in which older pupils (monitors) taught the younger; FISH has no term for the system, only for the schools of the two societies.",
+   "sources": [
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "section \"Lancasterian system (Lancasterism)\"",
+     "quote": "Lancaster specified an ideal classroom (hall) as being a parallelogram, the length about twice the width."
+    }
+   ]
+  },
+  {
+   "id": "national-school",
+   "name": "National school (National Society, Anglican)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "92728"
+  },
+  {
+   "id": "british-school",
+   "name": "British school (British and Foreign School Society)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "91292"
+  },
+  {
+   "id": "ragged-school",
+   "name": "Ragged school",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "93076"
+  },
+  {
+   "id": "board-school",
+   "name": "Board school",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "71626"
+  },
+  {
+   "id": "scottish-parish-school",
+   "name": "Parish school (Scotland)",
+   "family": "Schools",
+   "domain": "Education",
+   "fish": "92856"
+  },
+  {
+   "id": "continental-university",
+   "name": "University of Paris (and Bologna)",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "University of Paris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Paris",
+     "locator": "section \"Origins\"",
+     "quote": "The faculty and nation system of the University of Paris (along with that of the University of Bologna) became the model for all later medieval universities."
+    }
+   ]
+  },
+  {
+   "id": "university",
+   "name": "University",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": "68703"
+  },
+  {
+   "id": "academic-hall",
+   "name": "Academic hall (medieval hall of Oxford and Cambridge)",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": null,
+   "sources": [
+    {
+     "title": "Colleges of the University of Oxford",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Colleges_of_the_University_of_Oxford",
+     "locator": "section \"Academic halls\"",
+     "quote": "As the university took shape, friction between the hundreds of students living where and how they pleased led to a decree that all undergraduates would have to reside in approved halls."
+    }
+   ]
+  },
+  {
+   "id": "college",
+   "name": "College (Oxford and Cambridge)",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": "68695"
+  },
+  {
+   "id": "mechanics-institute",
+   "name": "Mechanics' institute",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": "71699",
+   "period": {
+    "text": "from 1821 (Edinburgh School of Arts)",
+    "from": 1821
+   },
+   "sources": [
+    {
+     "title": "Mechanics' institute",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mechanics'_institute",
+     "locator": "section \"Origins and history\"",
+     "quote": "His fourth annual lecture attracted a crowd of 500, and became an annual occurrence after his departure for London in 1804, leading to the eventual formation on 16 October 1821 of the first mechanics' institute in Edinburgh, the Edinburgh School of Arts (later Heriot-Watt University)."
+    }
+   ]
+  },
+  {
+   "id": "university-college",
+   "name": "University college (civic college)",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": "71762"
+  },
+  {
+   "id": "red-brick-university",
+   "name": "Red-brick (civic) university",
+   "family": "Universities and colleges",
+   "domain": "Education",
+   "fish": null,
+   "sources": [
+    {
+     "title": "Red brick university",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_brick_university",
+     "locator": "lead",
+     "quote": "A redbrick university (or red-brick university) normally refers to one of the nine civic universities originally founded as university colleges in the major industrial cities of England in the second half of the 19th century."
+    }
+   ]
+  },
+  {
+   "id": "chained-library",
+   "name": "Chained library",
+   "family": "Libraries",
+   "domain": "Education",
+   "fish": null,
+   "sources": [
+    {
+     "title": "Chained library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chained_library",
+     "locator": "lead",
+     "quote": "A chained library is a library where the books are attached to their bookcase by a chain, which is long enough to allow the books to be taken from their shelves and read, but not removed from the library itself."
+    }
+   ]
+  },
+  {
+   "id": "subscription-library",
+   "name": "Subscription library",
+   "family": "Libraries",
+   "domain": "Education",
+   "fish": "71695",
+   "note": "FISH files subscription library as a non-preferred term of LENDING LIBRARY."
+  },
+  {
+   "id": "public-library",
+   "name": "Public library",
+   "family": "Libraries",
+   "domain": "Education",
+   "fish": "71434"
+  },
+  {
+   "id": "carnegie-library",
+   "name": "Carnegie library",
+   "family": "Libraries",
+   "domain": "Education",
+   "fish": null,
+   "period": {
+    "text": "from 1880 (Dunfermline, opened 1883)",
+    "from": 1880
+   },
+   "sources": [
+    {
+     "title": "Carnegie library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carnegie_library",
+     "locator": "section \"History\"",
+     "quote": "The first of Carnegie's public libraries, Dunfermline Carnegie Library, was in his birthplace, Dunfermline, Scotland."
+    },
+    {
+     "title": "Carnegie library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carnegie_library",
+     "locator": "lead",
+     "quote": "Most of them – 1,689 – were built in the United States, with 660 in the United Kingdom and Ireland, 125 in Canada, and 25 others in Australia, South Africa, New Zealand, Serbia, Belgium, France, the Caribbean, Mauritius, Malaysia, and Fiji."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "cathedral-school>grammar-school",
+   "from": "cathedral-school",
+   "to": "grammar-school",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The first grammar schools were the schools of cathedrals and monasteries, teaching Latin to future clergy; the oldest, the King's School at Canterbury, began as a cathedral school.",
+   "sources": [
+    {
+     "title": "Grammar school",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grammar_school",
+     "locator": "section \"Medieval grammar schools\"",
+     "quote": "The schools were attached to cathedrals and monasteries, teaching Latin – the language of the church – to future priests and monks."
+    },
+    {
+     "title": "History of education in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_England",
+     "locator": "section \"Early modern period\"",
+     "quote": "The oldest, having been founded in 597 as a cathedral school, is King's School, Canterbury."
+    }
+   ]
+  },
+  {
+   "id": "chantry-school>grammar-school",
+   "from": "chantry-school",
+   "to": "grammar-school",
+   "kind": "descent",
+   "confidence": "disputed",
+   "claim": "Some chantries became grammar schools named after Edward VI when the chantries were dissolved (1547); how many of the Tudor grammar schools were older chantry schools re-founded, rather than new foundations, is disputed.",
+   "sources": [
+    {
+     "title": "Chantry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chantry",
+     "locator": "section \"Abolition of Chantries Acts, 1545 and 1547\"",
+     "quote": "Some of the chantries were converted into grammar schools named after King Edward."
+    },
+    {
+     "title": "Arthur Francis Leach",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arthur_Francis_Leach",
+     "locator": "section \"Work\"",
+     "quote": "Leach's main theses were that English schools had greater antiquity than had been thought, and that the Tudors had not been the major patrons of English education."
+    },
+    {
+     "title": "Arthur Francis Leach",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arthur_Francis_Leach",
+     "locator": "section \"Work\"",
+     "quote": "He downplayed the contributions of monastic schools, overestimated the role of chantry schools and failed to explore the curricula of the non-monastic schools."
+    }
+   ],
+   "views": [
+    "A. F. Leach (English Schools at the Reformation, 1896; The Schools of Medieval England, 1915): English schools were older than thought; many 'King Edward' grammar schools continued medieval chantry and guild schools, and the Tudors were not the great founders of English education.",
+    "Later historians (the critique summarised in Leach's biography, which lists Joan Simon's articles of 1955 and 1963 against him): Leach overestimated the role of chantry schools and played down the monastic schools."
+   ]
+  },
+  {
+   "id": "grammar-school>public-school",
+   "from": "grammar-school",
+   "to": "public-school",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The public schools grew out of the grammar schools; Winchester (1382), Eton and Westminster, with larger foundations that took pupils from beyond their own town, became the first of them.",
+   "sources": [
+    {
+     "title": "Public school (United Kingdom)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Public_school_(United_Kingdom)",
+     "locator": "section \"Early history\"",
+     "quote": "Public schools emerged from grammar schools established to educate pupils, usually destined for clerical orders, in Latin grammar."
+    },
+    {
+     "title": "Public school (United Kingdom)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Public_school_(United_Kingdom)",
+     "locator": "section \"Early history\"",
+     "quote": "These schools had significantly larger foundations than the existing local grammar schools, had high level political patronage, and also accepted \"non-local\" pupils."
+    }
+   ]
+  },
+  {
+   "id": "song-school>scottish-parish-school",
+   "from": "song-school",
+   "to": "scottish-parish-school",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "At the Scottish Reformation the burgh song schools, with new foundations, became reformed grammar schools or ordinary parish schools, while the choir schools as such were lost.",
+   "sources": [
+    {
+     "title": "History of education in Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_Scotland",
+     "locator": "section \"Impact of the Reformation\"",
+     "quote": "In the burghs the old schools were maintained, with the song schools and a number of new foundations becoming reformed grammar schools or ordinary parish schools."
+    },
+    {
+     "title": "History of education in Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_Scotland",
+     "locator": "lead",
+     "quote": "The Scottish Reformation resulted in major changes to the organisation and nature of education, with the loss of choir schools and the expansion of parish schools, along with the reform and expansion of the Universities."
+    }
+   ],
+   "region": "Scotland"
+  },
+  {
+   "id": "scottish-parish-school>board-school",
+   "from": "scottish-parish-school",
+   "to": "board-school",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The Scottish parish schools, weakened by industrialisation and the Disruption of 1843, gave way after 1872 to schools run by elected school boards.",
+   "sources": [
+    {
+     "title": "History of education in Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_Scotland",
+     "locator": "section \"Nineteenth century\"",
+     "quote": "Industrialisation, urbanisation and the Disruption of 1843 all undermined the tradition of parish schools."
+    },
+    {
+     "title": "History of education in Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_Scotland",
+     "locator": "section \"Nineteenth century\"",
+     "quote": "From 1830 the state began to fund buildings with grants, then from 1846 it was funding schools by direct sponsorship, and in 1872 Scotland moved to a system like that in England of state-sponsored largely free schools, run by local school boards."
+    },
+    {
+     "title": "History of education in Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_Scotland",
+     "locator": "section \"Nineteenth century\"",
+     "quote": "Education was now compulsory from five to thirteen and many new board schools were built."
+    }
+   ],
+   "region": "Scotland"
+  },
+  {
+   "id": "madras-pial-school>monitorial-school",
+   "from": "madras-pial-school",
+   "to": "monitorial-school",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Andrew Bell took the monitorial method from the pial schools of Madras, where pupils taught pupils, while superintendent of the Male Orphan Asylum (1789-1796).",
+   "sources": [
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "lead",
+     "quote": "He observed the system of pupil teachers that obtained in the Madras Pial schools (run around temples), and which in essence was also the system in the Bengal Pathsalas."
+    },
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "section \"Madras system\"",
+     "quote": "Bell's \"Madras system\" was so named because it originated at the Military Male Orphan Asylum, Egmore, near Madras."
+    }
+   ]
+  },
+  {
+   "id": "monitorial-school>national-school",
+   "from": "monitorial-school",
+   "to": "national-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The National Society (1811) was formed to spread Bell's monitorial (Madras) system; its schools were the Anglican form of the monitorial school.",
+   "sources": [
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "section \"Comparison\"",
+     "quote": "The National Society was formed to propagate Bell's system and the British and Foreign School Society (B&FSS) was formed to propagate Lancaster's system."
+    },
+    {
+     "title": "History of education in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_England",
+     "locator": "section \"National schools and British Schools\"",
+     "quote": "The schools founded by the National Society were called National Schools."
+    }
+   ]
+  },
+  {
+   "id": "monitorial-school>british-school",
+   "from": "monitorial-school",
+   "to": "british-school",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The British schools were the nonconformist form of the monitorial school, spread by the society formed in 1808 to promote Lancaster's system; the British School at Hitchin survives as one built to Lancaster's design.",
+   "sources": [
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "section \"Comparison\"",
+     "quote": "The National Society was formed to propagate Bell's system and the British and Foreign School Society (B&FSS) was formed to propagate Lancaster's system."
+    },
+    {
+     "title": "History of education in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_education_in_England",
+     "locator": "section \"National schools and British Schools\"",
+     "quote": "The Protestant non-conformist, non-denominational, or \"British schools\" were founded by Society for Promoting the Lancasterian System for the Education of the Poor, an organisation formed in 1808 by Joseph Fox, William Allen and Samuel Whitbread and supported by several evangelical and non-conformist Christians."
+    },
+    {
+     "title": "Monitorial system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monitorial_system",
+     "locator": "section \"Comparison\"",
+     "quote": "There is one surviving Lancaster-designed British School in Hitchin, Hertfordshire—and this is now run as a museum with an experiential educational program suitable for Key Stage 1 and Key Stage 2 pupils."
+    }
+   ]
+  },
+  {
+   "id": "ragged-school>board-school",
+   "from": "ragged-school",
+   "to": "board-school",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "After the Elementary Education Act 1870 the board schools took over the free schooling of poor children, and the ragged schools declined as they were built.",
+   "sources": [
+    {
+     "title": "Ragged school",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ragged_school",
+     "locator": "section \"Legacy of the ragged schools\"",
+     "quote": "The demand for ragged schools declined as the school boards were built and funded."
+    },
+    {
+     "title": "Ragged school",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ragged_school",
+     "locator": "section \"Growth of the organisation\"",
+     "quote": "This helped to establish 350 ragged schools by the time the Elementary Education Act 1870 (33 & 34 Vict."
+    }
+   ]
+  },
+  {
+   "id": "continental-university>university",
+   "from": "continental-university",
+   "to": "university",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Oxford grew from 1167, when Henry II barred English students from Paris; the faculties and nations of Paris and Bologna were the model for all later medieval universities.",
+   "sources": [
+    {
+     "title": "University of Oxford",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+     "locator": "lead",
+     "quote": "It grew rapidly from 1167, when Henry II prohibited English students from attending the University of Paris."
+    },
+    {
+     "title": "University of Paris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Paris",
+     "locator": "section \"Origins\"",
+     "quote": "The faculty and nation system of the University of Paris (along with that of the University of Bologna) became the model for all later medieval universities."
+    }
+   ]
+  },
+  {
+   "id": "academic-hall>college",
+   "from": "academic-hall",
+   "to": "college",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Medieval students lived in halls; the endowed colleges, from the 1260s, took their place, and once the colleges took fee-paying undergraduates in the 14th century the halls died out.",
+   "sources": [
+    {
+     "title": "Colleges of the University of Oxford",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Colleges_of_the_University_of_Oxford",
+     "locator": "section \"Academic halls\"",
+     "quote": "What eventually put an end to the medieval halls was the emergence of colleges."
+    },
+    {
+     "title": "University of Oxford",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+     "locator": "section \"Founding\"",
+     "quote": "Thereafter, an increasing number of students lived in colleges rather than in halls and religious houses."
+    }
+   ]
+  },
+  {
+   "id": "monastery>college",
+   "from": "monastery",
+   "to": "college",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "The college quadrangle is often likened to the monastic cloister; but the oldest quadrangles (Merton's Mob Quad) were plain ranges of rooms without arcades, and cloister-like courts came later.",
+   "sources": [
+    {
+     "title": "Quadrangle (architecture)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quadrangle_(architecture)",
+     "locator": "lead",
+     "quote": "Some modern quadrangles resemble cloister gardens of medieval monasteries, called garths, which were usually square or rectangular, enclosed by covered arcades or cloisters."
+    },
+    {
+     "title": "Quadrangle (architecture)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quadrangle_(architecture)",
+     "locator": "lead",
+     "quote": "However, it is clear from the oldest examples (such as Mob Quad) which are plain and unadorned with arcades, that the medieval colleges at Oxford and Cambridge were creating practical accommodation for college members."
+    },
+    {
+     "title": "Quadrangle (architecture)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quadrangle_(architecture)",
+     "locator": "lead",
+     "quote": "Grander quadrangles that look like cloisters came later, once the idea of a college was well established and benefactors or founders wished to create more monumental buildings."
+    }
+   ],
+   "views": [
+    "From the cloister: the college quadrangle resembles the cloister garth of a monastery, enclosed by covered walks.",
+    "Practical accommodation: the oldest quadrangles (Mob Quad at Merton, 1288-1378) are plain ranges without arcades; cloister-like quadrangles came later, as monuments of founders (Quadrangle, citing the surviving buildings)."
+   ]
+  },
+  {
+   "id": "mechanics-institute>university",
+   "from": "mechanics-institute",
+   "to": "university",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Several mechanics' institutes grew into universities: the first, the Edinburgh School of Arts (1821), became Heriot-Watt University; the London institute became Birkbeck, and the Manchester institute (1824) UMIST.",
+   "sources": [
+    {
+     "title": "Mechanics' institute",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mechanics'_institute",
+     "locator": "section \"Origins and history\"",
+     "quote": "His fourth annual lecture attracted a crowd of 500, and became an annual occurrence after his departure for London in 1804, leading to the eventual formation on 16 October 1821 of the first mechanics' institute in Edinburgh, the Edinburgh School of Arts (later Heriot-Watt University)."
+    },
+    {
+     "title": "Mechanics' institute",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mechanics'_institute",
+     "locator": "section \"Origins and history\"",
+     "quote": "The London Mechanics' Institute (later Birkbeck College) was opened in December 1823, and the mechanics' institutes in Ipswich and Manchester (later to become UMIST) in 1824."
+    },
+    {
+     "title": "Mechanics' institute",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mechanics'_institute",
+     "locator": "section \"Origins and history\"",
+     "quote": "By the mid-19th century, there were over 700 institutes in towns and cities across the UK and overseas, some of which became the early roots of other colleges and universities."
+    }
+   ]
+  },
+  {
+   "id": "mechanics-institute>public-library",
+   "from": "mechanics-institute",
+   "to": "public-library",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The libraries of the mechanics' institutes, cheaper than subscription libraries, often became public libraries after the Public Libraries Act 1850.",
+   "sources": [
+    {
+     "title": "Mechanics' institute",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mechanics'_institute",
+     "locator": "section \"Origins and history\"",
+     "quote": "Some mechanics' libraries lasted only a decade or two, and many eventually became public libraries or (in the United States) were given to local public libraries after the Public Libraries Act 1850 passed."
+    },
+    {
+     "title": "Mechanics' institute",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mechanics'_institute",
+     "locator": "section \"Origins and history\"",
+     "quote": "Small tradesmen and workers could not afford subscription libraries, so for their benefit, benevolent groups and individuals created mechanics' institutes that contained inspirational  and vocational reading matter, for a small rental fee."
+    }
+   ]
+  },
+  {
+   "id": "university-college>red-brick-university",
+   "from": "university-college",
+   "to": "red-brick-university",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The red-brick universities grew out of the university colleges of the industrial cities, from Owens College, Manchester (1851); six had become universities by 1914, Birmingham first (1900).",
+   "sources": [
+    {
+     "title": "Red brick university",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_brick_university",
+     "locator": "section \"Civic university movement\"",
+     "quote": "The redbrick universities developed out of these 19th-century university colleges, providing degrees initially through the external examinations of the University of London, through membership of the federal Victoria University, or through association with the University of Durham."
+    },
+    {
+     "title": "Red brick university",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Red_brick_university",
+     "locator": "section \"Civic university movement\"",
+     "quote": "The civic university movement started with the foundation of Owens College in Manchester in 1851 and of other university colleges in major provincial cities in the later 19th century, where there was strong demand for a scientifically and technically educated workforce."
+    }
+   ]
+  },
+  {
+   "id": "chained-library>public-library",
+   "from": "chained-library",
+   "to": "public-library",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The Francis Trigge Chained Library at Grantham (1598), the first in England endowed for readers who were not members of a cathedral or college, is called the forerunner of the public library; Wimborne Minster's chained library was opened free to townspeople in 1695.",
+   "sources": [
+    {
+     "title": "History of libraries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_libraries",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The earliest example in England of a library to be endowed for the benefit of users who were not members of an institution such as a cathedral or college was the Francis Trigge Chained Library in Grantham, Lincolnshire, established in 1598."
+    },
+    {
+     "title": "History of libraries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_libraries",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The library still exists and can justifiably claim to be the forerunner of later public library systems."
+    },
+    {
+     "title": "Chained library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chained_library",
+     "locator": "section \"Recent interest in saving and preservation\"",
+     "quote": "When another local donor, Roger Gillingham, gave another 90 books in 1695, he insisted that the books be chained up, but also that the Library should be opened, free, for the people of the town, providing they were 'shopkeepers or the better class of person'."
+    }
+   ]
+  },
+  {
+   "id": "subscription-library>public-library",
+   "from": "subscription-library",
+   "to": "public-library",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The subscription libraries, 274 in England and 266 in Scotland by the mid-19th century, were the predecessors of the free public libraries opened under the act of 1850, which replaced or took over most of them.",
+   "sources": [
+    {
+     "title": "Subscription library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Subscription_library",
+     "locator": "lead",
+     "quote": "Historically, they are predecessors to the public library as it is known today."
+    },
+    {
+     "title": "Subscription library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Subscription_library",
+     "locator": "section \"Commercial circulating libraries\"",
+     "quote": "With the advent of free public libraries in the 19th century, most subscription libraries were replaced or taken over by the governing authorities."
+    },
+    {
+     "title": "History of libraries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_libraries",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Although by the mid-19th century England could claim 274 subscription libraries and Scotland, 266, the foundation of the modern public library system in Britain is the Public Libraries Act 1850."
+    }
+   ]
+  },
+  {
+   "id": "public-library>carnegie-library",
+   "from": "public-library",
+   "to": "carnegie-library",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Carnegie libraries are public libraries built with Andrew Carnegie's grants, the first at Dunfermline (granted 1880), 660 of them in the United Kingdom and Ireland; the town provided the site and paid for the running of the library.",
+   "sources": [
+    {
+     "title": "Carnegie library",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carnegie_library",
+     "locator": "section \"History\"",
+     "quote": "The first of Carnegie's public libraries, Dunfermline Carnegie Library, was in his birthplace, Dunfermline, Scotland."
+    },
+    {
+     "title": "History of libraries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_libraries",
+     "locator": "section \"United States\"",
+     "quote": "Carnegie did not assume full responsibility for the construction of new libraries and library branches; rather, he stipulated that communities provide sites for libraries, and governments commit to providing salaries for staff and maintaining the libraries."
+    }
+   ]
+  }
+ ]
+}

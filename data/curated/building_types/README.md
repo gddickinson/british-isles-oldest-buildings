@@ -113,3 +113,30 @@ late 17th century), oast house (17th century or 1750 at Golford). Left out becau
 Historic England pages (refuse scripts), Canmore, a 2015 Hampshire PDF dating a Winchester Wealden house to 1340,
 Asylum Projects (Cloudflare). Weakest: the clochán's end (corbelling into the 1950s, not clocháns as such), the
 Persian windmill's (no source), the dispensary as ongoing (FISH's room for medicines in a hospital).
+
+## Records and places mapped to the types (BT2a, 2026-10-26)
+
+`aliases.json`, read by `bidb/type_map.py` (`python -m bidb.type_map [--report]`, also a build stage after the
+place stages) → table `type_map`. A record's Wikidata classes are tried in order: the class names a type; a
+curated alias (Wikidata labels FISH lacks: "English country house", "London Underground station"); its FISH
+concept is a type's; the nearest broader FISH concept that is a type's. The most specific type found stays
+(motte-and-bailey, not castle as well). 21 types carry a FISH concept wider than themselves (THEATRE for the
+Georgian playhouse, HOSPITAL for the medieval hospital, WORKHOUSE for the union workhouse): `within_period` lets
+FISH find them only for records begun within their period of use, so a theatre of 1900 is not a Georgian
+playhouse. `nations` limits the Scottish and Irish types. A record no class types may match a name rule on the
+head of its name (before the first comma: "Gate Piers, Baldoon Castle" is not a castle), within listed
+categories, or its category (Cathedral, Hotel); these, and places typed by kind, need a start year within a
+century of the type's period when the year is known (the Iron Age "Clinch Castle" stays untyped). Places: their
+own type label (register types split at " - ": "Castle - tower house"), name rules for their kind, or the kind
+(banks, market crosses, police stations); `skip_kinds` (objects, plaques, finds, events, clubs, firms) are never
+typed.
+
+Result: 10,805 of 22,508 catalogue records (48.0%) and 27,401 places typed, to 123 of the 203 types in the isles.
+How: FISH concept 6,193, type name 2,849, alias 1,275, name rule 340, broader concept 113, category 35. The rest
+were reviewed (`not_in_tree`, 438 labels): too general ("built structure" 2,170, "building" 1,302, "house" 828) or
+kinds the tree does not have yet: town houses (terrace house 1,006, tenement, townhouse, mews, cottage, villa),
+prehistoric and Roman monuments (hillforts and forts about 1,000, barrows, stone circles, standing stones, cairns,
+Roman villas), chapels (161), gatehouses (185), stables and carriage houses, lighthouses, friaries, palaces,
+museums, and the general windmill, school, hospital and prison. 80 types have no example yet: mostly narrow types
+(Wealden house, lobby-entry house, the asylum and school variants, the playhouses) that Wikidata does not class;
+BT2b looks for them by name and description.

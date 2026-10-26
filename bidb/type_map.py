@@ -1,0 +1,264 @@
+"""Building types BT2a: catalogue records and places mapped to the building types of bidb.building_types.
+
+A record's Wikidata classes (buildings.classes, ';'-separated, most important first) are matched one by one:
+    type     the class names a type ("tolbooth", "Prodigy house": its name or id)
+    alias    curated Wikidata labels the thesaurus lacks (aliases.json `classes`: "English country house")
+    fish     the class's FISH concept is a type's
+    broader  the nearest broader FISH concept that is a type's (Wealden house → hall house type when the
+             catalogue has no Wealden class, a ruined abbey → abbey); every concept at that distance counts
+A record whose classes find none may still match a name rule (`names`: a pattern on the head of the name, the
+part before the first comma, within the listed categories: "... Castle" only among castles and fortifications;
+"Gate Piers, Baldoon Castle" is not a castle) → via `name`, or its category (`categories`) → via `category`.
+Matches by name, category or kind need a record begun within a century of the type's period of use when its
+year is known (no Iron Age "Clinch Castle"). Of the types found, the most specific stay: a type is dropped when another
+found type's FISH concept lies under its own (motte-and-bailey and castle → motte-and-bailey). The first type
+left is the record's primary type. A type whose FISH concept is wider than the type (`within_period`: the
+Georgian playhouse has THEATRE, the medieval hospital HOSPITAL) is found through FISH only for a record begun
+within the type's period of use; a type limited to nations (`nations`) only for records there.
+
+Places (not the kinds in `skip_kinds`: objects, plaques, finds, battles, wrecks...; places never repeat a
+catalogue building): their own type label as a class (Wikidata class, or register type such as "Castle - tower house": the whole label,
+then the part after " - "), then its kind (`place_kinds`), then the name rules for that kind.
+
+Labels reviewed and left without a type (no type for them in the tree yet, or too general) are listed in
+`not_in_tree`, so the report shows what is still unreviewed.
+
+    python -m bidb.type_map [--report]     → table type_map (entity, source, type_id, via, label, is_primary)
+"""
+import json
+import re
+import sys
+import time
+from collections import Counter
+
+from . import building_types, fish_types
+from .db import connect
+
+PATH = building_types.PATH.parent / "aliases.json"
+COLUMNS = ("entity_id", "source", "type_id", "via", "label", "is_primary")
+VIAS = ("type", "alias", "fish", "broader", "name", "category", "kind")
+SLACK = 100                 # years either side of a period for matches by name, category or kind
+
+
+def load_aliases(path=PATH):
+    return json.loads(path.read_text())
+
+
+def problems(aliases, types):
+    """Aliases that point at unknown types, name rules that do not compile, labels both aliased and left out."""
+    ids, bad = {t["id"] for t in types}, []
+    bad += [f"{where} {t!r}: unknown type" for where in ("within_period", "nations")
+            for t in aliases.get(where, []) if t not in ids]
+    for where in ("classes", "categories", "place_kinds", "place_types"):
+        bad += [f"{where} {k!r}: unknown type {v!r}" for k, v in aliases.get(where, {}).items() if v not in ids]
+    for rule in aliases.get("names", []):
+        if rule.get("type") not in ids:
+            bad.append(f"name rule {rule.get('pattern')!r}: unknown type {rule.get('type')!r}")
+        try:
+            re.compile(rule["pattern"])
+        except (re.error, KeyError):
+            bad.append(f"name rule {rule.get('pattern')!r}: not a pattern")
+        if not rule.get("categories") and not rule.get("kinds"):
+            bad.append(f"name rule {rule.get('pattern')!r}: no categories or kinds to limit it")
+    left = {fish_types.normalise(x) for x in aliases.get("not_in_tree", [])}
+    bad += [f"class {k!r}: both aliased and left out" for k in aliases.get("classes", {})
+            if fish_types.normalise(k) in left]
+    return bad
+
+
+class Matcher:
+    """Class labels → building types. `concepts` as fish_types.concepts(), `lookup` a label → concept id."""
+
+    def __init__(self, types, aliases, concepts=None, lookup=None):
+        self.types = [t for t in types if not t.get("abroad")]
+        self.concepts = concepts if concepts is not None else fish_types.concepts()
+        self.lookup = lookup or fish_types.lookup
+        norm = fish_types.normalise
+        self.by_name = {}
+        for t in self.types:
+            self.by_name.setdefault(norm(t["name"]), t["id"])
+            self.by_name.setdefault(norm(t["id"]), t["id"])
+        self.aliases = {norm(k): v for k, v in aliases.get("classes", {}).items()}
+        self.place_types = {norm(k): v for k, v in aliases.get("place_types", {}).items()}
+        self.by_fish = {t["fish"]: t["id"] for t in self.types if t.get("fish")}
+        self.fish_of = {t["id"]: t.get("fish") for t in self.types}
+        self.categories = aliases.get("categories", {})
+        self.place_kinds = aliases.get("place_kinds", {})
+        self.skip_kinds = aliases.get("skip_kinds", [])
+        self.names = [dict(r, rx=re.compile(r["pattern"], re.I)) for r in aliases.get("names", [])]
+        self.within = set(aliases.get("within_period", []))
+        self.nations = aliases.get("nations", {})
+        self.period = {t["id"]: (t["period"]["from"], t["period"].get("to", building_types.THIS_YEAR))
+                       for t in self.types if t.get("period")}
+        self._memo = {}
+
+    def nearest(self, cid):
+        """Type ids of the nearest concepts at or above `cid` that are types' (all those at the least distance)."""
+        seen, front, step = {cid}, [cid], 0
+        while front:
+            hits = [self.by_fish[c] for c in front if c in self.by_fish]
+            if hits:
+                return hits, step
+            nxt = []
+            for c in front:
+                for b in self.concepts.get(c, {}).get("broader", []):
+                    if b not in seen:
+                        seen.add(b)
+                        nxt.append(b)
+            front, step = nxt, step + 1
+        return [], step
+
+    def for_class(self, label):
+        """[(type id, via)] for one class label."""
+        if label not in self._memo:
+            key = fish_types.normalise(label)
+            if key in self.by_name:
+                out = [(self.by_name[key], "type")]
+            elif key in self.aliases:
+                out = [(self.aliases[key], "alias")]
+            else:
+                cid = self.lookup(label)
+                hits, step = self.nearest(cid) if cid else ([], 0)
+                out = [(h, "fish" if step == 0 else "broader") for h in hits]
+            self._memo[label] = out
+        return self._memo[label]
+
+    def _under(self, a, b):
+        """Type a's FISH concept lies under type b's (a is the more specific)."""
+        fa, fb = self.fish_of.get(a), self.fish_of.get(b)
+        return bool(fa and fb and fa != fb and fa in fish_types.descendants(fb)) if self.concepts else False
+
+    def allowed(self, t, via, year, nation):
+        if t in self.nations and nation not in self.nations[t]:
+            return False
+        lo, hi = self.period.get(t, (None, None))
+        if via in ("name", "category", "kind") and year is not None and lo is not None \
+                and not lo - SLACK <= year <= hi + SLACK:
+            return False
+        if t in self.within and via in ("fish", "broader"):
+            return year is not None and lo <= year <= hi
+        return True
+
+    def specific(self, found, year=None, nation=None):
+        """[(type, via, label)] allowed for the record's year and nation, without repeats, and without types
+        that another found type lies under."""
+        seen, out = set(), []
+        for t, via, label in found:
+            if t not in seen and self.allowed(t, via, year, nation):
+                seen.add(t)
+                out.append((t, via, label))
+        return [x for x in out if not any(self._under(y[0], x[0]) for y in out if y[0] != x[0])]
+
+    def by_name_rule(self, name, category=None, kind=None):
+        head = (name or "").split(",")[0].strip()
+        for r in self.names:
+            if (category in r.get("categories", []) or kind in r.get("kinds", [])) and r["rx"].search(head):
+                return [(r["type"], "name", r["pattern"])]
+        return []
+
+    def record(self, classes, name, category, year=None, nation=None):
+        """[(type, via, label)] for a catalogue record, primary first."""
+        labels = [s.strip() for s in (classes or "").split(";") if s.strip()]
+        found = self.specific([(t, via, label) for label in labels for t, via in self.for_class(label)],
+                              year, nation)
+        if not found:
+            found = self.specific(self.by_name_rule(name, category=category), year, nation)
+        if not found and category in self.categories:
+            found = self.specific([(self.categories[category], "category", category)], year, nation)
+        return found
+
+    def place(self, kind, type_label, name, year=None, nation=None):
+        """[(type, via, label)] for a place without a catalogue building."""
+        found = []
+        if type_label:
+            key = fish_types.normalise(type_label)
+            if key in self.place_types:
+                found = [(self.place_types[key], "alias", type_label)]
+            else:
+                for part in dict.fromkeys([type_label, type_label.split(" - ", 1)[-1]]):
+                    found = [(t, via, type_label) for t, via in self.for_class(part)]
+                    found = self.specific(found, year, nation)
+                    if found:
+                        break
+        found = self.specific(found, year, nation)
+        if not found:
+            found = self.specific(self.by_name_rule(name, kind=kind), year, nation)
+        if not found and kind in self.place_kinds:
+            found = self.specific([(self.place_kinds[kind], "kind", kind)], year, nation)
+        return found
+
+
+def rows(conn, matcher):
+    """Rows of the type_map table for every catalogue record and place."""
+    out, skip = [], set(matcher.skip_kinds)
+    for rid, classes, name, category, year, nation in conn.execute(
+            "SELECT id, classes, name, category, year_start, nation FROM buildings"):
+        found = matcher.record(classes, name, category, year, nation)
+        out += [(rid, "building", t, via, label, int(i == 0)) for i, (t, via, label) in enumerate(found)]
+    for pid, kind, label, name, year, nation in conn.execute(
+            "SELECT id, kind, type, name, year_start, nation FROM places"):
+        if kind in skip:
+            continue
+        found = matcher.place(kind, label, name, year, nation)
+        out += [(pid, "place", t, via, lab, int(i == 0)) for i, (t, via, lab) in enumerate(found)]
+    return out
+
+
+def write(conn, out):
+    conn.execute("DROP TABLE IF EXISTS type_map")
+    conn.execute(f"CREATE TABLE type_map ({', '.join(COLUMNS)})")
+    conn.execute("CREATE INDEX type_map_type ON type_map(type_id)")
+    conn.execute("CREATE INDEX type_map_entity ON type_map(entity_id)")
+    conn.executemany(f"INSERT INTO type_map VALUES ({', '.join('?' for _ in COLUMNS)})", out)
+    conn.commit()
+
+
+def run(log=print):
+    t0 = time.time()
+    data, aliases = building_types.load(), load_aliases()
+    bad = problems(aliases, data["types"])
+    if bad:
+        raise ValueError("aliases.json: " + "; ".join(bad))
+    conn = connect()
+    conn.execute("PRAGMA busy_timeout = 120000")
+    out = rows(conn, Matcher(data["types"], aliases))
+    write(conn, out)
+    n_b = conn.execute("SELECT COUNT(*) FROM buildings").fetchone()[0]
+    typed = {s: len({r[0] for r in out if r[1] == s}) for s in ("building", "place")}
+    log(f"[{time.time() - t0:5.0f}s] Building types: {typed['building']:,} of {n_b:,} records and "
+        f"{typed['place']:,} places mapped to {len({r[2] for r in out})} types")
+
+
+def report(conn, top=60):
+    """Coverage lines: records typed by how, the types with most records, the unreviewed classes left over."""
+    aliases = load_aliases()
+    left = {fish_types.normalise(x) for x in aliases.get("not_in_tree", [])}
+    lines = []
+    for source, table in (("building", "buildings"), ("place", "places")):
+        total = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
+        vias = Counter(dict(conn.execute("SELECT via, COUNT(*) FROM type_map WHERE source = ? AND is_primary "
+                                         "GROUP BY via", (source,))))
+        lines.append(f"{table}: {sum(vias.values()):,} of {total:,} typed "
+                     f"({100 * sum(vias.values()) / total:.1f}%): "
+                     + ", ".join(f"{v} {n:,}" for v, n in vias.most_common()))
+    lines.append("Types with most records: " + ", ".join(
+        f"{t} {n}" for t, n in conn.execute("SELECT type_id, COUNT(*) n FROM type_map WHERE source = 'building' "
+                                            "AND is_primary GROUP BY type_id ORDER BY n DESC LIMIT 40")))
+    unused = [t["id"] for t in building_types.load()["types"] if not t.get("abroad")
+              and not conn.execute("SELECT 1 FROM type_map WHERE type_id = ?", (t["id"],)).fetchone()]
+    lines.append(f"Types with no record or place ({len(unused)}): {', '.join(unused)}")
+    miss = Counter()
+    for (classes,) in conn.execute("SELECT classes FROM buildings WHERE id NOT IN "
+                                   "(SELECT entity_id FROM type_map WHERE source = 'building')"):
+        miss.update(x for x in (s.strip() for s in (classes or "").split(";"))
+                    if x and fish_types.normalise(x) not in left)
+    lines.append(f"Unreviewed classes of untyped records ({len(miss)}): "
+                 + "; ".join(f"{k} {n}" for k, n in miss.most_common(top)))
+    return lines
+
+
+if __name__ == "__main__":
+    if "--report" in sys.argv:
+        print("\n".join(report(connect())))
+    else:
+        run()

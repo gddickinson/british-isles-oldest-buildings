@@ -1516,3 +1516,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Weak years and disagreements listed in `data/curated/building_types/README.md`.
 - Tests 318 OK (1 new: `test_periods`; the curated-file test now includes the period check). No GUI change (BT4).
 - Next: BT2 (map catalogue records and place kinds to the types).
+
+## 2026-10-26 — BT2a: catalogue records and places mapped to the building types
+- BT2 split into BT2a (mapping, done) and BT2b (per-type counts, map, dated examples, earliest surviving example,
+  API); emergent BT1d (types the mapping showed missing: town houses, chapels, gatehouses, lighthouses, general
+  parents, and a decision on prehistoric monuments).
+- New `bidb/type_map.py` (build stage "Building types", after "Nations for places") and
+  `data/curated/building_types/aliases.json` → table `type_map` (entity, source, type, via, label, primary).
+  Classes by type name, alias, FISH concept, nearest broader FISH concept that is a type's; most specific kept.
+- Found in review and fixed: 21 types carry a FISH concept wider than the type (THEATRE → Georgian playhouse,
+  HOSPITAL → medieval hospital), now matched through FISH only within their period (`within_period`); name rules
+  matched parts of buildings ("Gate Piers, Baldoon Castle") → head of the name only; an Iron Age "Clinch Castle"
+  → name, category and kind matches need a year within a century of the type's period; objects kept in a building
+  inherited its type (Henry IV's tomb a cathedral) → no inheritance, non-building place kinds skipped; canal
+  aqueducts are not railway viaducts; Irish-type round towers and tolbooths not limited to one nation.
+- Result: 10,805 of 22,508 records (48.0%) and 27,401 places typed, to 123 of 203 isles types; 438 leftover labels
+  reviewed (too general, or no such type yet). 80 types have no example yet (BT2b).
+- Tests 325 OK (7 new: `test_type_map`). No GUI change (BT4).
+- Next: BT2b.

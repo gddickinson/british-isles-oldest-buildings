@@ -1,0 +1,1442 @@
+{
+ "about": "BT2a: how catalogue records and places reach the building types (bidb.type_map). `classes`: Wikidata class labels the FISH thesaurus lacks, or finds too generally, given a type. `within_period`: types whose FISH concept is wider than the type, found through FISH only for records begun within the type's period of use. `nations`: types found only in those nations. `names`: patterns on the name of a record or place none of whose classes finds a type, limited to categories (catalogue) or kinds (places). `categories`: a catalogue category that means one type. `place_kinds`, `place_types`: places by kind, or by their own type label (register types such as 'Castle - tower house'). `not_in_tree`: labels reviewed and left without a type (too general, or no such type in the tree yet), so the report lists only unreviewed ones. `skip_kinds`: place kinds that are not buildings or structures (objects, plaques, finds, events, clubs, firms), never typed.",
+ "reviewed": "2026-10-26",
+ "within_period": [
+  "georgian-playhouse",
+  "medieval-hospital",
+  "roman-amphitheatre",
+  "roman-baths",
+  "basilica",
+  "voluntary-hospital",
+  "workhouse-infirmary",
+  "county-asylum",
+  "union-workhouse",
+  "public-school",
+  "college",
+  "gaol",
+  "penitentiary",
+  "subscription-library",
+  "fever-hospital",
+  "minster",
+  "public-baths",
+  "alehouse",
+  "university-college",
+  "sanatorium",
+  "mechanics-institute"
+ ],
+ "nations": {
+  "scottish-parish-school": [
+   "Scotland"
+  ],
+  "scottish-poorhouse": [
+   "Scotland"
+  ],
+  "irish-union-workhouse": [
+   "Ireland",
+   "Northern Ireland"
+  ],
+  "tholsel": [
+   "Ireland",
+   "Northern Ireland"
+  ],
+  "broch": [
+   "Scotland"
+  ]
+ },
+ "classes": {
+  "English country house": "country-house",
+  "stately home": "country-house",
+  "country house hotel": "country-house",
+  "great house": "country-house",
+  "Anglican or Episcopal cathedral": "cathedral",
+  "Church of England parish church": "parish-church",
+  "church ruin": "church",
+  "former church building": "church",
+  "church/chapel": "church",
+  "monastery ruins": "monastery",
+  "destroyed monastery": "monastery",
+  "nunnery": "monastery",
+  "benedictine nunnery": "monastery",
+  "castle ruin": "castle",
+  "castle/fortified house": "castle",
+  "ringwork castle": "ringwork",
+  "bank building": "bank",
+  "association football venue": "football-ground",
+  "station located on surface": "railway-station",
+  "London Underground station": "railway-station",
+  "last station": "railway-station",
+  "elevated station": "railway-station",
+  "former railway station": "railway-station",
+  "station building": "railway-station",
+  "cross-platform interchange": "railway-station",
+  "movie theater": "cinema",
+  "thermae": "roman-baths",
+  "mercat cross": "market-cross",
+  "Market hall / market cross": "market-hall",
+  "thatched farmhouse": "farmhouse",
+  "thatched barn": "barn",
+  "stone arch bridge": "arch-bridge",
+  "stone bridge": "arch-bridge",
+  "village lock-up": "lock-up",
+  "dovecote/pigeon house/aviary": "dovecote",
+  "Quaker / nonconformist meeting house": "meeting-house",
+  "session house": "court-house",
+  "cruck framed barn": "cruck-barn"
+ },
+ "categories": {
+  "Cathedral": "cathedral",
+  "Hotel": "hotel"
+ },
+ "names": [
+  {
+   "pattern": "\\bCastle$",
+   "type": "castle",
+   "categories": [
+    "Castle / fortification"
+   ]
+  },
+  {
+   "pattern": "\\bTower House$",
+   "type": "tower-house",
+   "categories": [
+    "Castle / fortification",
+    "House / domestic"
+   ]
+  },
+  {
+   "pattern": "\\bCathedral\\b",
+   "type": "cathedral",
+   "categories": [
+    "Church / chapel"
+   ]
+  },
+  {
+   "pattern": "\\bAbbey$",
+   "type": "abbey",
+   "categories": [
+    "Abbey / monastery"
+   ]
+  },
+  {
+   "pattern": "\\bPriory$",
+   "type": "priory",
+   "categories": [
+    "Abbey / monastery"
+   ]
+  },
+  {
+   "pattern": "\\bChurch\\b(?! (Street|Lane|Road|Hall|House|Farm|Cottages?|Row|Gate|Walk|Square|Place)\\b)",
+   "type": "church",
+   "categories": [
+    "Church / chapel"
+   ]
+  },
+  {
+   "pattern": "\\bManor House$",
+   "type": "manor-house",
+   "categories": [
+    "House / domestic",
+    "Palace / manor house"
+   ]
+  },
+  {
+   "pattern": "\\bFarmhouse$",
+   "type": "farmhouse",
+   "categories": [
+    "House / domestic",
+    "Agricultural / industrial"
+   ]
+  },
+  {
+   "pattern": "\\bTithe Barn$",
+   "type": "tithe-barn",
+   "categories": [
+    "Agricultural / industrial",
+    "Other structure"
+   ]
+  },
+  {
+   "pattern": "\\bBarn$",
+   "type": "barn",
+   "categories": [
+    "Agricultural / industrial",
+    "Other structure"
+   ]
+  },
+  {
+   "pattern": "\\b(Dovecote|Doocot|Dovecot|Columbarium)$",
+   "type": "dovecote",
+   "categories": [
+    "Agricultural / industrial",
+    "Other structure"
+   ]
+  },
+  {
+   "pattern": "\\bStation$",
+   "type": "railway-station",
+   "categories": [
+    "Railway",
+    "Other structure"
+   ],
+   "kinds": [
+    "railway",
+    "tube",
+    "ghost"
+   ]
+  },
+  {
+   "pattern": "\\bViaduct\\b",
+   "type": "railway-viaduct",
+   "categories": [
+    "Railway"
+   ],
+   "kinds": [
+    "railway",
+    "br_rail"
+   ]
+  },
+  {
+   "pattern": "\\bTolbooth\\b",
+   "type": "tolbooth",
+   "categories": [
+    "Civic building",
+    "Other structure",
+    "Prison"
+   ],
+   "kinds": [
+    "pi_civic"
+   ]
+  },
+  {
+   "pattern": "\\bTholsel\\b",
+   "type": "tholsel",
+   "categories": [
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_civic"
+   ]
+  },
+  {
+   "pattern": "\\bAlms ?houses?\\b|\\bBede ?houses?\\b",
+   "type": "almshouse",
+   "categories": [
+    "Almshouse / hospital",
+    "House / domestic",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_community"
+   ]
+  },
+  {
+   "pattern": "\\bGuild ?hall\\b",
+   "type": "guildhall",
+   "categories": [
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_civic",
+    "tr_guild"
+   ]
+  },
+  {
+   "pattern": "\\b(Cloth|Piece) Hall\\b",
+   "type": "cloth-hall",
+   "categories": [
+    "Market / shop",
+    "Civic building"
+   ],
+   "kinds": [
+    "tr_guild",
+    "tr_market"
+   ]
+  },
+  {
+   "pattern": "\\bMoot Hall\\b",
+   "type": "moot-hall",
+   "categories": [
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_civic"
+   ]
+  },
+  {
+   "pattern": "\\b(Town|City) Hall\\b",
+   "type": "town-hall",
+   "categories": [
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_civic"
+   ]
+  },
+  {
+   "pattern": "\\bShire Hall\\b",
+   "type": "shire-hall",
+   "categories": [
+    "Civic building"
+   ],
+   "kinds": [
+    "pi_civic",
+    "pi_court"
+   ]
+  },
+  {
+   "pattern": "\\bCounty Hall\\b",
+   "type": "county-hall",
+   "categories": [
+    "Civic building"
+   ],
+   "kinds": [
+    "pi_civic"
+   ]
+  },
+  {
+   "pattern": "\\b(Market|Mercat) Cross\\b",
+   "type": "market-cross",
+   "categories": [
+    "Cross / carved stone",
+    "Market / shop",
+    "Other structure"
+   ]
+  },
+  {
+   "pattern": "\\bButter ?cross\\b",
+   "type": "buttercross",
+   "categories": [
+    "Cross / carved stone",
+    "Market / shop",
+    "Other structure"
+   ],
+   "kinds": [
+    "tr_cross"
+   ]
+  },
+  {
+   "pattern": "\\bMarket Hall\\b",
+   "type": "market-hall",
+   "categories": [
+    "Market / shop",
+    "Civic building"
+   ],
+   "kinds": [
+    "tr_market"
+   ]
+  },
+  {
+   "pattern": "\\bMarket House\\b",
+   "type": "market-house",
+   "categories": [
+    "Market / shop",
+    "Civic building"
+   ],
+   "kinds": [
+    "tr_market"
+   ]
+  },
+  {
+   "pattern": "\\bCorn Exchange\\b",
+   "type": "corn-exchange",
+   "categories": [
+    "Market / shop",
+    "Civic building"
+   ],
+   "kinds": [
+    "tr_market"
+   ]
+  },
+  {
+   "pattern": "\\bCoffee ?House\\b",
+   "type": "coffee-house",
+   "categories": [
+    "Public house / inn",
+    "Market / shop"
+   ],
+   "kinds": [
+    "tr_inn"
+   ]
+  },
+  {
+   "pattern": "\\bHotel\\b",
+   "type": "hotel",
+   "categories": [
+    "Public house / inn"
+   ],
+   "kinds": [
+    "tr_inn"
+   ]
+  },
+  {
+   "pattern": "\\bArcade\\b",
+   "type": "shopping-arcade",
+   "categories": [
+    "Market / shop"
+   ],
+   "kinds": [
+    "tr_shop"
+   ]
+  },
+  {
+   "pattern": "\\bGrammar School\\b",
+   "type": "grammar-school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "pattern": "\\bNational School\\b",
+   "type": "national-school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "pattern": "\\bBritish School\\b",
+   "type": "british-school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "pattern": "\\bBoard School\\b",
+   "type": "board-school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "pattern": "\\bRagged School\\b",
+   "type": "ragged-school",
+   "categories": [
+    "School / college"
+   ],
+   "kinds": [
+    "pi_school"
+   ]
+  },
+  {
+   "pattern": "\\bUniversity\\b",
+   "type": "university",
+   "kinds": [
+    "pi_university"
+   ]
+  },
+  {
+   "pattern": "\\bMechanics'? Institut",
+   "type": "mechanics-institute",
+   "categories": [
+    "School / college",
+    "Library"
+   ],
+   "kinds": [
+    "pi_university",
+    "library"
+   ]
+  },
+  {
+   "pattern": "\\bCarnegie\\b",
+   "type": "carnegie-library",
+   "categories": [
+    "Library"
+   ],
+   "kinds": [
+    "library"
+   ]
+  },
+  {
+   "pattern": "\\b(Public|Free) Library\\b",
+   "type": "public-library",
+   "categories": [
+    "Library"
+   ],
+   "kinds": [
+    "library"
+   ]
+  },
+  {
+   "pattern": "\\bCottage Hospital\\b",
+   "type": "cottage-hospital",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\b(Fever|Isolation) Hospital\\b",
+   "type": "fever-hospital",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\bSanatorium\\b",
+   "type": "sanatorium",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\bDispensary\\b",
+   "type": "dispensary",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\bLazar\\b|\\bLeper\\b",
+   "type": "leper-hospital",
+   "categories": [
+    "Almshouse / hospital"
+   ],
+   "kinds": [
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\bWorkhouse\\b",
+   "type": "union-workhouse",
+   "categories": [
+    "Almshouse / hospital",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_community",
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\bPoorhouse\\b",
+   "type": "scottish-poorhouse",
+   "categories": [
+    "Almshouse / hospital",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_community",
+    "pi_hospital"
+   ]
+  },
+  {
+   "pattern": "\\b(House of Correction|Bridewell)\\b",
+   "type": "house-of-correction",
+   "categories": [
+    "Prison"
+   ],
+   "kinds": [
+    "pi_prison"
+   ]
+  },
+  {
+   "pattern": "\\b(Gaol|Jail)\\b",
+   "type": "gaol",
+   "categories": [
+    "Prison"
+   ],
+   "kinds": [
+    "pi_prison"
+   ]
+  },
+  {
+   "pattern": "\\bLock-?up\\b",
+   "type": "lock-up",
+   "categories": [
+    "Prison",
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_prison",
+    "pi_police"
+   ]
+  },
+  {
+   "pattern": "\\bWatch ?house\\b",
+   "type": "watch-house",
+   "categories": [
+    "Other structure"
+   ],
+   "kinds": [
+    "pi_police"
+   ]
+  },
+  {
+   "pattern": "\\bWater ?mill\\b",
+   "type": "watermill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill"
+   ]
+  },
+  {
+   "pattern": "\\bTide ?mill\\b",
+   "type": "tide-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill"
+   ]
+  },
+  {
+   "pattern": "\\bFulling mill\\b|\\bTuck mill\\b|\\bWalk mill\\b|\\bPandy\\b",
+   "type": "fulling-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill"
+   ]
+  },
+  {
+   "pattern": "\\bPost mill\\b",
+   "type": "post-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill"
+   ]
+  },
+  {
+   "pattern": "\\bTower mill\\b",
+   "type": "tower-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill"
+   ]
+  },
+  {
+   "pattern": "\\bSmock mill\\b",
+   "type": "smock-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill"
+   ]
+  },
+  {
+   "pattern": "\\bSilk mill\\b",
+   "type": "silk-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill",
+    "iw_factory"
+   ]
+  },
+  {
+   "pattern": "\\bCotton mill\\b",
+   "type": "cotton-mill",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill",
+    "iw_factory"
+   ]
+  },
+  {
+   "pattern": "\\bWeaving shed\\b",
+   "type": "weaving-shed",
+   "categories": [
+    "Mill",
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_mill",
+    "mill",
+    "iw_factory"
+   ]
+  },
+  {
+   "pattern": "\\bBottle (Kiln|Oven)\\b",
+   "type": "bottle-kiln",
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_works",
+    "kiln"
+   ]
+  },
+  {
+   "pattern": "\\bHoffmann?\\b",
+   "type": "hoffmann-kiln",
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_works",
+    "kiln",
+    "iw_quarry"
+   ]
+  },
+  {
+   "pattern": "\\bBlast Furnace\\b",
+   "type": "blast-furnace",
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_metal",
+    "ironworks"
+   ]
+  },
+  {
+   "pattern": "\\bBloomery\\b",
+   "type": "bloomery",
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_metal",
+    "ironworks",
+    "scheduled",
+    "archaeology"
+   ]
+  },
+  {
+   "pattern": "\\bOast\\b",
+   "type": "oast-house",
+   "categories": [
+    "Agricultural / industrial"
+   ],
+   "kinds": [
+    "iw_drink"
+   ]
+  },
+  {
+   "pattern": "\\bMartello\\b",
+   "type": "martello-tower",
+   "categories": [
+    "Castle / fortification"
+   ],
+   "kinds": [
+    "tower",
+    "fort"
+   ]
+  },
+  {
+   "pattern": "\\bClapper Bridge\\b",
+   "type": "clapper-bridge",
+   "categories": [
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "br_early",
+    "bridge"
+   ]
+  },
+  {
+   "pattern": "\\bPackhorse Bridge\\b",
+   "type": "packhorse-bridge",
+   "categories": [
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "br_early",
+    "bridge"
+   ]
+  },
+  {
+   "pattern": "\\bStepping Stones\\b",
+   "type": "stepping-stones",
+   "categories": [
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "br_early",
+    "bridge"
+   ]
+  },
+  {
+   "pattern": "\\bSuspension Bridge\\b",
+   "type": "suspension-bridge",
+   "categories": [
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "bridge",
+    "br_foot"
+   ]
+  },
+  {
+   "pattern": "\\bLocks?\\b",
+   "type": "pound-lock",
+   "kinds": [
+    "in_canal",
+    "canal"
+   ]
+  },
+  {
+   "pattern": "\\b(Canal|Navigation)\\b",
+   "type": "canal",
+   "kinds": [
+    "in_canal",
+    "canal"
+   ]
+  },
+  {
+   "pattern": "\\bWagon ?way\\b|\\bWaggon ?way\\b|\\bTramroad\\b",
+   "type": "wagonway",
+   "kinds": [
+    "in_rail",
+    "ino_rail"
+   ]
+  },
+  {
+   "pattern": "\\bTurnpike\\b",
+   "type": "toll-road",
+   "kinds": [
+    "in_road"
+   ]
+  },
+  {
+   "pattern": "\\b(Pump Room|Pump Rooms)\\b",
+   "type": "pump-room",
+   "categories": [
+    "Theatre / entertainment",
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "victorian_public",
+    "victorian_leisure"
+   ]
+  },
+  {
+   "pattern": "\\bAssembly Rooms?\\b",
+   "type": "assembly-rooms",
+   "categories": [
+    "Theatre / entertainment",
+    "Civic building",
+    "Other structure"
+   ],
+   "kinds": [
+    "victorian_public"
+   ]
+  },
+  {
+   "pattern": "\\bBandstand\\b",
+   "type": "bandstand",
+   "categories": [
+    "Other structure"
+   ],
+   "kinds": [
+    "victorian_leisure",
+    "victorian_public"
+   ]
+  },
+  {
+   "pattern": "\\bPier\\b",
+   "type": "pleasure-pier",
+   "kinds": [
+    "victorian_leisure"
+   ]
+  },
+  {
+   "pattern": "\\bMusic Hall\\b",
+   "type": "music-hall",
+   "categories": [
+    "Theatre / entertainment"
+   ],
+   "kinds": [
+    "victorian_public"
+   ]
+  },
+  {
+   "pattern": "\\b(Cinema|Picture ?House|Picturedrome|Electric Theatre)\\b",
+   "type": "cinema",
+   "categories": [
+    "Theatre / entertainment"
+   ],
+   "kinds": [
+    "victorian_public"
+   ]
+  },
+  {
+   "pattern": "\\b(Public )?(Baths|Wash ?houses?)\\b",
+   "type": "public-baths",
+   "kinds": [
+    "sp_swim",
+    "victorian_public"
+   ]
+  },
+  {
+   "pattern": "\\bBroch\\b",
+   "type": "broch",
+   "categories": [
+    "Prehistoric dwelling",
+    "Prehistoric monument"
+   ],
+   "kinds": [
+    "scheduled",
+    "archaeology"
+   ]
+  }
+ ],
+ "place_kinds": {
+  "tr_bank": "bank",
+  "tr_shop": "shop",
+  "tr_cross": "market-cross",
+  "tr_exchange": "corn-exchange",
+  "tr_guild": "guildhall",
+  "tr_bourse": "stock-exchange",
+  "tr_inn": "public-house",
+  "tea_room": "shop",
+  "pi_police": "police-station",
+  "pi_fire": "fire-station",
+  "pi_court": "court-house",
+  "tube": "railway-station",
+  "ghost": "railway-station",
+  "br_suspension": "suspension-bridge",
+  "ironbridge": "iron-bridge",
+  "sp_football": "football-ground"
+ },
+ "place_types": {
+  "Castle - unclassified": "castle",
+  "Castle - tower house": "tower-house",
+  "Castle - motte and bailey": "motte-and-bailey",
+  "Castle - motte": "castle",
+  "Castle - ringwork": "ringwork",
+  "Castle - hall-house": "hall-house",
+  "Castle - Anglo-Norman masonry castle": "castle",
+  "Church": "church"
+ },
+ "not_in_tree": [
+  "academic archive",
+  "academic library",
+  "aerodrome",
+  "agricultural structure",
+  "airbase",
+  "airport",
+  "alcohol brand",
+  "ancient Roman structure",
+  "ancient trackway",
+  "apartment building",
+  "aqueduct",
+  "arch",
+  "archaeological artefact",
+  "archaeological site",
+  "architectural ensemble",
+  "archives",
+  "archway",
+  "area of London",
+  "arena",
+  "art gallery",
+  "art museum",
+  "artillery battery",
+  "arts center",
+  "assembly hall",
+  "astronomical observatory",
+  "aviary",
+  "ballroom",
+  "banqueting house",
+  "barracks",
+  "bascule bridge",
+  "bathhouse",
+  "beach",
+  "bell barrow",
+  "bell tower",
+  "biographical museum",
+  "blockhouse",
+  "boarding school",
+  "boathouse",
+  "bonded warehouse",
+  "botanical garden",
+  "boulder",
+  "boundary marker",
+  "bowl barrow",
+  "box girder bridge",
+  "boys' school",
+  "brewery",
+  "bridge",
+  "building",
+  "building complex",
+  "building of public administration",
+  "built structure",
+  "bunker",
+  "business",
+  "cable-stayed bridge",
+  "café",
+  "cairn",
+  "camera obscura",
+  "caretaker's house",
+  "carriage house",
+  "castle chapel",
+  "castrum",
+  "Catholic seminary",
+  "causeway",
+  "cave",
+  "cemetery",
+  "cemetery chapel",
+  "cenotaph",
+  "chamber tomb",
+  "chambered cairn",
+  "chambered long barrow",
+  "chapel",
+  "chapter house",
+  "charitable organization",
+  "chest tomb",
+  "chimney",
+  "church hall",
+  "churchyard",
+  "churchyard cross",
+  "château",
+  "cist",
+  "city gate",
+  "city walls",
+  "civil parish",
+  "Clava cairn",
+  "clergy house",
+  "clock tower",
+  "cloister",
+  "clubhouse",
+  "Clyde tomb",
+  "collection",
+  "Collection of Ogham Stones",
+  "column",
+  "commandry",
+  "commercial building",
+  "commercial traffic aerodrome",
+  "concert hall",
+  "conduit house",
+  "conservatory",
+  "contour fort",
+  "controlled-access highway",
+  "convention center",
+  "cottage",
+  "court cairn",
+  "covered bridge",
+  "cowshed",
+  "crannog",
+  "crescent",
+  "cricket field",
+  "cross dyke",
+  "cross slab",
+  "cultural heritage ensemble",
+  "cup and ring mark",
+  "custom house",
+  "dairy",
+  "dam",
+  "debtors' prison",
+  "deck arch bridge",
+  "defensive wall",
+  "destroyed building or structure",
+  "distillery",
+  "dock",
+  "dolmen",
+  "driveway bridge",
+  "dun",
+  "earthworks",
+  "educational institution",
+  "educational organization",
+  "Eleanor cross",
+  "enclosure",
+  "engine house",
+  "English garden",
+  "episcopal palace",
+  "estate",
+  "estate cottage",
+  "event venue",
+  "factory",
+  "farm building",
+  "field of study",
+  "field system",
+  "figurine",
+  "flax mill",
+  "folly",
+  "folly tower",
+  "footbridge",
+  "former educational institution",
+  "former hospital",
+  "former settlement",
+  "fort",
+  "fortification",
+  "fortified tower",
+  "fortified town",
+  "fountain",
+  "fragment",
+  "Franciscan friary",
+  "friary",
+  "game larder",
+  "garage",
+  "garden",
+  "garden building",
+  "garden pavilion",
+  "gasworks",
+  "gate",
+  "gatehouse",
+  "gatepost",
+  "gazebo",
+  "gentlemen's club",
+  "girder bridge",
+  "golf club",
+  "granary",
+  "grave",
+  "graveyard/cemetery",
+  "great hall",
+  "greenhouse",
+  "grotto",
+  "group",
+  "group of structures or buildings",
+  "guard rail",
+  "hall",
+  "hangar",
+  "harbour crane",
+  "henge",
+  "herbarium",
+  "hermitage",
+  "high cross",
+  "hill",
+  "hill figure",
+  "hillfort",
+  "hillslope fort",
+  "historic building",
+  "historic house",
+  "historic house museum",
+  "historic site",
+  "history museum",
+  "holy well",
+  "horse hill figure",
+  "hospital",
+  "hospital building",
+  "hostel",
+  "house",
+  "human settlement",
+  "hunting lodge",
+  "hut circle",
+  "hydroelectric power station",
+  "ice house",
+  "inclined tower",
+  "independent museum",
+  "independent school",
+  "industrial building",
+  "Inn of Chancery",
+  "inscribed stone",
+  "international airport",
+  "Irish passage tomb",
+  "ironworks",
+  "island",
+  "level terrain fort",
+  "library",
+  "Library",
+  "library building",
+  "lighthouse",
+  "Lighthouse",
+  "lighthouse keeper's house",
+  "lime kiln",
+  "listed building",
+  "local authority museum",
+  "local museum",
+  "lodge",
+  "long barrow",
+  "low-rise building",
+  "malt house",
+  "manse",
+  "marina",
+  "maritime museum",
+  "marsh fort",
+  "Masonic temple",
+  "mausoleum",
+  "megalith",
+  "megalithic tomb",
+  "memorial",
+  "memorial column",
+  "menhir",
+  "merchant's house",
+  "mews",
+  "milestone",
+  "military base",
+  "military museum",
+  "mill",
+  "mill building",
+  "mithraeum",
+  "mixed-use building",
+  "monolith",
+  "monument",
+  "monumental cross",
+  "morthouse",
+  "mosque",
+  "Mosque",
+  "motorsport racing track",
+  "mound",
+  "multi-purpose hall",
+  "Multi-purpose stadium",
+  "multiple enclosure hillfort",
+  "municipal building",
+  "museum",
+  "museum building",
+  "music venue",
+  "national library",
+  "national monument of Ireland",
+  "national museum",
+  "natural history museum",
+  "navigable aqueduct",
+  "Nazi concentration camp",
+  "non-departmental public body",
+  "non-megalithic round barrow",
+  "Nonconformist chapel",
+  "nonprofit organization",
+  "obelisk",
+  "observation tower",
+  "observatory",
+  "office building",
+  "ogham stone",
+  "Ogham Stone Concept",
+  "Ogham Stone Concept (Ogham in 3D Project)",
+  "Ogham Stone Concept (RAS Macalister)",
+  "Ogham Stone Semantic Concept",
+  "opera house",
+  "orangery",
+  "organization",
+  "outbuilding",
+  "palace",
+  "park",
+  "parliament building",
+  "partial contour fort",
+  "passage grave",
+  "pavilion",
+  "pedestrian zone",
+  "performing arts center",
+  "petroglyph",
+  "Pictish stone",
+  "pier",
+  "pillbox",
+  "port",
+  "post box",
+  "post office",
+  "prehistoric archaeological site",
+  "prison",
+  "promontory fort",
+  "psychiatric hospital",
+  "pumping station",
+  "quadrangle",
+  "railway bridge",
+  "railway tunnel",
+  "recumbent stone circle",
+  "refectory",
+  "reference library",
+  "research institute",
+  "reservoir",
+  "residential building",
+  "restaurant",
+  "retail building",
+  "retaining wall",
+  "retirement home",
+  "ring cairn",
+  "ringfort",
+  "road",
+  "road bridge",
+  "rock art",
+  "rock-cut tomb",
+  "Roman archaeological site",
+  "Roman limes",
+  "Roman road",
+  "Roman villa",
+  "Romano-Celtic temple",
+  "round barrow",
+  "round cairn",
+  "Royal Air Force station",
+  "Royal Navy Dockyard",
+  "royal palace",
+  "rugby union venue",
+  "ruins",
+  "sacristy",
+  "scheduled monument",
+  "school",
+  "school building",
+  "sculpture",
+  "secondary school",
+  "shed",
+  "shell grotto",
+  "shipyard",
+  "shrine",
+  "single-family detached home",
+  "skyscraper",
+  "slipway",
+  "smithy",
+  "souterrain",
+  "sports venue",
+  "square",
+  "stable",
+  "stadium",
+  "stairs",
+  "standing stone",
+  "standing stones",
+  "statue",
+  "steel bridge",
+  "steeple",
+  "stele",
+  "stone",
+  "stone circle",
+  "stone cross",
+  "stone row",
+  "street",
+  "street circuit",
+  "stupa",
+  "summer house",
+  "summit",
+  "sundial",
+  "swimming center",
+  "swimming pool",
+  "swing bridge",
+  "synagogue",
+  "tea house",
+  "teaching hospital",
+  "telephone kiosk",
+  "Templar Commandery",
+  "temple",
+  "tenement",
+  "terrace garden",
+  "terrace house",
+  "terrace of houses",
+  "textile factory",
+  "thatched building",
+  "thatched cottage",
+  "theatre building",
+  "theatre company",
+  "tidal island",
+  "timber-framed building",
+  "timber-framed house",
+  "tollhouse",
+  "tomb",
+  "Tomb",
+  "tombstone",
+  "tower",
+  "tower block",
+  "town",
+  "town/city walls",
+  "townhouse",
+  "triumphal arch",
+  "truss bridge",
+  "tumuli group",
+  "tumulus",
+  "undercroft",
+  "unfinished building",
+  "university dormitory",
+  "university library",
+  "university museum",
+  "university observatory",
+  "urban park",
+  "vacation home",
+  "vacation rental",
+  "victory column",
+  "villa",
+  "village",
+  "visitor center",
+  "wall",
+  "walled garden",
+  "war memorial",
+  "warehouse",
+  "watchtower",
+  "water tower",
+  "water well",
+  "wayside cross",
+  "wedge tomb",
+  "weir",
+  "well house",
+  "whisky distillery",
+  "windmill",
+  "wing",
+  "workers cottage",
+  "World War I memorial",
+  "zoo architecture"
+ ],
+ "skip_kinds": [
+  "object",
+  "kept",
+  "plaque",
+  "find",
+  "hoard",
+  "battle",
+  "siege",
+  "event",
+  "legend",
+  "literary",
+  "haunted",
+  "wreck",
+  "shipwreck",
+  "timeteam",
+  "excavated",
+  "tree",
+  "nt_wonder",
+  "nt_human",
+  "nt_fossil",
+  "nt_wood",
+  "nt_rock",
+  "nt_tree",
+  "museumship",
+  "spc_football",
+  "spc_rugby",
+  "spc_water",
+  "spc_gaelic",
+  "spc_cricket",
+  "spc_other",
+  "tr_livery",
+  "tea_firm",
+  "shipbuilder",
+  "inv_transport",
+  "inv_science",
+  "inv_power",
+  "inv_materials",
+  "inv_communication",
+  "inv_textiles",
+  "inv_everyday",
+  "gu_merchant",
+  "tr_town",
+  "deserted_village",
+  "memorial",
+  "gr_burial"
+ ]
+}

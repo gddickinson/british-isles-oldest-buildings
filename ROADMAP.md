@@ -5,6 +5,7 @@ each section; tick items off (and move them to SESSION_LOG.md) when done. Sectio
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
+- Building types: 224 types, 183 links, 1,443 quotes; 10,805 records and 27,401 places typed (BT2a).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
@@ -603,9 +604,26 @@ the descent of a type is disputed, both views are given and the link is drawn as
       hospital 1818/1827/1842/1859, Wealden house 1380 vs a 1340 claim in an unreadable PDF, lobby-entry house
       16th vs late 17th century). Reviewed here: the canal from the Roman Foss Dyke (c. AD 120, no consensus), the
       grammar school ongoing (the 2017 Sevenoaks annexe the first new one in decades, not the last).
-- [ ] BT2 Data: the curated `lineage*.json` files (types, links with kind and confidence, citations and quotes as
+- BT2 Data: the curated `lineage*.json` files (types, links with kind and confidence, citations and quotes as
       the evidence file), checked by script; every catalogue record and place kind mapped to a type (the categories
-      and Wikidata classes as a start), so each type shows counts, a map and the dated examples.
+      and Wikidata classes as a start), so each type shows counts, a map and the dated examples. Split 2026-10-26:
+- [x] BT2a (2026-10-26) Records and places mapped (new `bidb/type_map.py`, build stage "Building types";
+      `data/curated/building_types/aliases.json`) → table `type_map`: each Wikidata class by type name, alias, FISH
+      concept or nearest broader concept that is a type's (most specific kept; `within_period` for 21 types whose
+      FISH concept is wider than the type, `nations`); name rules on the head of the name within categories or
+      kinds, categories, place kinds; name, category and kind matches only within a century of the type's period.
+      10,805 of 22,508 records (48.0%) and 27,401 places typed, to 123 of 203 isles types; 438 leftover labels
+      reviewed (`not_in_tree`). Details in `data/curated/building_types/README.md`.
+- [ ] BT2b Per type: counts, map points, dated examples and the earliest surviving example in the catalogue (moved
+      here from BT1c3), each checked against the type's period (an example far earlier than the type's first known
+      date is a mapping or dating error to review); look for the 80 types with no example by name and description
+      (Wealden house, lobby-entry house, the school and asylum variants); queries in bidb and `/api/types`,
+      `/api/type/<id>` for BT4.
+- [ ] BT1d More types for what BT2a could not type (emergent 2026-10-26): town houses (terrace house 1,006 records,
+      tenement, townhouse, mews, cottage, villa), chapels (161), gatehouses (185), stables and carriage houses,
+      lighthouses, friaries, palaces, and general parents (windmill, school, hospital, prison, theatre) for classes
+      that name only the family; prehistoric and Roman monuments (hillforts, barrows, stone circles, Roman villas)
+      as a decision first: in the tree, or left to the archaeology groups.
 - [ ] BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,
       jetty, close studding, wattle and daub), brick (bonds, from the 13th c. revival to the Victorian kilns), roofs
       (thatch, stone slate, slate, tile, pantile; roof trusses from crown post to king post), glass, iron and steel,

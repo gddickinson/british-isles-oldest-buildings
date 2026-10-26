@@ -1444,5 +1444,5 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Hosted copy: `trades.json` written by static_tours (checked into a scratch folder: 0.57 MB); static routes for
   trades, trade and trade_here. Hosted copy and release not republished.
 - ui_check: new `trades_change`, `trade_here`, `trade_map`, `quiz_first` pass.
-- Full checks: unit tests OK (304), JS checks pass, ui_check 71/72: `settings_share` fails because this computer's
+- Full checks: unit tests OK (302), JS checks pass, ui_check 71/72: `settings_share` fails because this computer's
   settings.json has `share_on_network: true` (the check expects sharing off; it fails the same without these changes).

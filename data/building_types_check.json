@@ -229,6 +229,209 @@
   ],
   "checked": "2026-10-25"
  },
+ "type:roman-taberna": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:alehouse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:public-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:gin-palace": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:coaching-inn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:hotel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:railway-hotel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:coffee-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:buttercross": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:antwerp-bourse": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:exchange": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:corn-exchange": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:department-store": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:shopping-arcade": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:paris-passage": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:bank": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:roman-watermill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:watermill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:tide-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:persian-windmill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:post-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:tower-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:smock-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:italian-silk-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:silk-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:cotton-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:fireproof-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:weaving-shed": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:walloon-furnace": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:blast-furnace": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:bottle-kiln": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:gas-tunnel-kiln": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:hoffmann-kiln": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
  "type:basilica": {
   "sources": [
    "quote-found",
@@ -317,6 +520,73 @@
  },
  "type:friends-meeting-house": {
   "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:clapper-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:iron-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:suspension-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:ship-chain-cable": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:roman-aqueduct": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:toll-road": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:flash-lock": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:pound-lock": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:canal": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:wagonway": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:railway-station": {
+  "sources": [
+   "quote-found",
    "quote-found"
   ],
   "checked": "2026-10-25"
@@ -585,6 +855,238 @@
   ],
   "checked": "2026-10-25"
  },
+ "link:roman-taberna>alehouse": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:alehouse>public-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:gin-palace>public-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:inn>coaching-inn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:inn>drovers-inn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:inn>hotel": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:hotel>railway-hotel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:coaching-inn>railway-hotel": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:coffee-house>stock-exchange": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:market-cross>buttercross": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:market-house>market-hall": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:market-hall>cloth-hall": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:antwerp-bourse>exchange": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:exchange>corn-exchange": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:exchange>stock-exchange": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:shop>department-store": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:paris-passage>shopping-arcade": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:shop>bank": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:roman-watermill>watermill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:watermill>tide-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:watermill>fulling-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:persian-windmill>post-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:post-mill>tower-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:tower-mill>smock-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:italian-silk-mill>silk-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:silk-mill>cotton-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:watermill>cotton-mill": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:cotton-mill>fireproof-mill": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:weavers-cottage>weaving-shed": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:bloomery>blast-furnace": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:walloon-furnace>blast-furnace": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:pottery-kiln>bottle-kiln": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:bottle-kiln>gas-tunnel-kiln": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:brick-kiln>hoffmann-kiln": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
  "link:basilica>church": {
   "sources": [
    "quote-found",
@@ -703,6 +1205,89 @@
   "checked": "2026-10-25"
  },
  "link:parish-church>ecclesiological-church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:stepping-stones>clapper-bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:arch-bridge>packhorse-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:packhorse-bridge>toll-road": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:arch-bridge>iron-bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:ship-chain-cable>suspension-bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:roman-aqueduct>railway-viaduct": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:toll-road>railway": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:flash-lock>pound-lock": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:river-navigation>canal": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:canal>railway": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:wagonway>railway": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:railway-station>railway-hotel": {
   "sources": [
    "quote-found",
    "quote-found"

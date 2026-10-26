@@ -1,0 +1,801 @@
+{
+ "about": "Building types (roadmap BT1c2): watermills and windmills, textile mills, iron making, kilns. Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "roman-watermill",
+   "name": "Watermills of the Roman world",
+   "family": "Watermills",
+   "domain": "Industrial",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Classical antiquity\"",
+     "quote": "The Roman engineer Vitruvius has the first technical description of a watermill, dated to 40/10 BC"
+    }
+   ]
+  },
+  {
+   "id": "watermill",
+   "name": "Watermill",
+   "family": "Watermills",
+   "domain": "Industrial",
+   "fish": "71368",
+   "period": {
+    "text": "in Ireland by the early 7th century; 5,624 in England in Domesday Book (1086)",
+    "from": 600
+   },
+   "sources": [
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Middle Ages\"",
+     "quote": "By the early 7th century, watermills were also well established in Ireland."
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Middle Ages\"",
+     "quote": "The Domesday Book, compiled in 1086, records 5,624 watermills in England alone."
+    }
+   ]
+  },
+  {
+   "id": "tide-mill",
+   "name": "Tide mill",
+   "family": "Watermills",
+   "domain": "Industrial",
+   "fish": "69332",
+   "period": {
+    "text": "Nendrum, Strangford Lough, 619 and 787; Ebbsfleet, Kent, 691-692",
+    "from": 619
+   },
+   "sources": [
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "section \"Early history\"",
+     "quote": "The Nendrum Monastery mill from 787 was situated on an island in Strangford Lough in Northern Ireland."
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "section \"Early history\"",
+     "quote": "Remains of an earlier mill dated at 619 were also found at the site."
+    }
+   ]
+  },
+  {
+   "id": "fulling-mill",
+   "name": "Fulling mill (tuck mill, walk mill, pandy)",
+   "family": "Watermills",
+   "domain": "Industrial",
+   "fish": "69321",
+   "period": {
+    "text": "from the medieval period"
+   }
+  },
+  {
+   "id": "persian-windmill",
+   "name": "Horizontal windmills of Persia",
+   "family": "Windmills",
+   "domain": "Industrial",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "lead",
+     "quote": "the horizontal or panemone windmill first appeared in Persia during the 9th century, and the vertical windmill first appeared in northwestern Europe in the 12th century."
+    }
+   ]
+  },
+  {
+   "id": "post-mill",
+   "name": "Post mill",
+   "family": "Windmills",
+   "domain": "Industrial",
+   "fish": "69334",
+   "period": {
+    "text": "the earliest European type; Weedley, Yorkshire, 1185 the earliest certain reference",
+    "from": 1185
+   },
+   "sources": [
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Vertical windmills\"",
+     "quote": "The earliest certain reference to a windmill in Northern Europe (assumed to have been of the vertical type) dates from 1185, in the former village of Weedley in Yorkshire"
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Post mill\"",
+     "quote": "The evidence at present is that the earliest type of European windmill was the post mill"
+    }
+   ]
+  },
+  {
+   "id": "tower-mill",
+   "name": "Tower mill",
+   "family": "Windmills",
+   "domain": "Industrial",
+   "fish": "69336",
+   "period": {
+    "text": "introduced by the end of the 13th century",
+    "from": 1300
+   },
+   "sources": [
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Tower mill\"",
+     "quote": "By the end of the 13th century, the masonry tower mill, on which only the cap is rotated rather than the whole body of the mill, had been introduced."
+    }
+   ]
+  },
+  {
+   "id": "smock-mill",
+   "name": "Smock mill",
+   "family": "Windmills",
+   "domain": "Industrial",
+   "fish": "69335",
+   "period": {
+    "text": "the oldest surviving in England, Lacey Green, 1650",
+    "from": 1650
+   },
+   "sources": [
+    {
+     "title": "Smock mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smock_mill",
+     "locator": "section \"Britain\"",
+     "quote": "The oldest surviving smock mill in England (dated to 1650) is located in Lacey Green, Buckinghamshire."
+    }
+   ]
+  },
+  {
+   "id": "italian-silk-mill",
+   "name": "The silk-throwing mills of Piedmont",
+   "family": "Textile mills",
+   "domain": "Industrial",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Lombe's Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
+     "locator": "lead",
+     "quote": "It was built after John Lombe visited Piedmont in 1717 and returned to England with details of the Italian silk throwing machines"
+    }
+   ]
+  },
+  {
+   "id": "silk-mill",
+   "name": "Silk mill",
+   "family": "Textile mills",
+   "domain": "Industrial",
+   "fish": "69325",
+   "period": {
+    "text": "Lombe's Mill, Derby, working by 1721",
+    "from": 1721
+   },
+   "sources": [
+    {
+     "title": "Lombe's Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
+     "locator": "lead",
+     "quote": "Lombe's Mill was the first successful silk throwing mill in Britain."
+    },
+    {
+     "title": "Factory system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Factory_system",
+     "locator": "section \"Mills\"",
+     "quote": "One of the earliest factories was John Lombe's water-powered silk mill at Derby, operational by 1721."
+    }
+   ]
+  },
+  {
+   "id": "cotton-mill",
+   "name": "Cotton mill",
+   "family": "Textile mills",
+   "domain": "Industrial",
+   "fish": "69319",
+   "period": {
+    "text": "Cromford Mill, 1771, the first successful water-powered cotton spinning mill",
+    "from": 1771
+   },
+   "sources": [
+    {
+     "title": "Cromford Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cromford_Mill",
+     "locator": "lead",
+     "quote": "Cromford Mill is the world's first water-powered cotton spinning mill, developed by Richard Arkwright in 1771 in Cromford, Derbyshire, England."
+    }
+   ]
+  },
+  {
+   "id": "fireproof-mill",
+   "name": "Fireproof (iron-framed) mill",
+   "family": "Textile mills",
+   "domain": "Industrial",
+   "fish": "91942",
+   "period": {
+    "text": "Ditherington Flax Mill, Shrewsbury, 1796-1797, the first iron-framed building",
+    "from": 1796
+   },
+   "sources": [
+    {
+     "title": "Ditherington Flax Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ditherington_Flax_Mill",
+     "locator": "lead",
+     "quote": "It was the first iron-framed building in the world and has been described as \"the grandfather of skyscrapers\"."
+    }
+   ]
+  },
+  {
+   "id": "weavers-cottage",
+   "name": "Weaver's cottage (loomshop)",
+   "family": "Textile mills",
+   "domain": "Industrial",
+   "fish": "71394"
+  },
+  {
+   "id": "weaving-shed",
+   "name": "Weaving shed",
+   "family": "Textile mills",
+   "domain": "Industrial",
+   "fish": "71380",
+   "period": {
+    "text": "from the 1840s, when reliable power looms appeared",
+    "from": 1840
+   },
+   "sources": [
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"History\"",
+     "quote": "Reliable power looms that could be worked from an overhead line shaft were not available before Kenworthy and Bulloughs weft stop motion, the roller temple and the loose reed which appeared in the 1840s."
+    }
+   ]
+  },
+  {
+   "id": "bloomery",
+   "name": "Bloomery",
+   "family": "Iron making",
+   "domain": "Industrial",
+   "fish": "69180"
+  },
+  {
+   "id": "walloon-furnace",
+   "name": "The blast furnaces of Wallonia",
+   "family": "Iron making",
+   "domain": "Industrial",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"History\"",
+     "quote": "They spread from the region around Namur in Wallonia (Belgium) in the late 15th century, being introduced to England in 1491."
+    }
+   ]
+  },
+  {
+   "id": "blast-furnace",
+   "name": "Blast furnace",
+   "family": "Iron making",
+   "domain": "Industrial",
+   "fish": "69179",
+   "period": {
+    "text": "in England from 1491; coke instead of charcoal from 1709 (Abraham Darby, Coalbrookdale)",
+    "from": 1491
+   },
+   "sources": [
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"History\"",
+     "quote": "The successful substitution of coke for charcoal is widely attributed to British inventor Abraham Darby in 1709."
+    }
+   ]
+  },
+  {
+   "id": "pottery-kiln",
+   "name": "Pottery kiln",
+   "family": "Kilns",
+   "domain": "Industrial",
+   "fish": "69092"
+  },
+  {
+   "id": "bottle-kiln",
+   "name": "Bottle kiln (bottle oven)",
+   "family": "Kilns",
+   "domain": "Industrial",
+   "fish": "70595",
+   "period": {
+    "text": "mostly later 18th and 19th centuries; ended by the Clean Air Act 1956",
+    "from": 1750,
+    "to": 1960
+   },
+   "sources": [
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "lead",
+     "quote": "They were mostly built in the later 18th and the 19th centuries, although the surviving ones include examples from the 20th century."
+    }
+   ]
+  },
+  {
+   "id": "gas-tunnel-kiln",
+   "name": "Gas-fired tunnel kiln (pottery)",
+   "family": "Kilns",
+   "domain": "Industrial",
+   "fish": null,
+   "note": "FISH's TUNNEL KILN is a coal-burning lime kiln, a different thing.",
+   "sources": [
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "lead",
+     "quote": "Their decline was ultimately precipitated by the Clean Air Act 1956 and a systemic transition within the industry away from coal-fired processes in favour of cleaner, alternatives such as gas tunnel kilns."
+    }
+   ]
+  },
+  {
+   "id": "brick-kiln",
+   "name": "Brick kiln",
+   "family": "Kilns",
+   "domain": "Industrial",
+   "fish": "69053"
+  },
+  {
+   "id": "hoffmann-kiln",
+   "name": "Hoffmann kiln",
+   "family": "Kilns",
+   "domain": "Industrial",
+   "fish": "143476",
+   "period": {
+    "text": "patented by Friedrich Hoffmann in 1858",
+    "from": 1858
+   },
+   "sources": [
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "lead",
+     "quote": "Patented by German Friedrich Hoffmann for brickmaking in 1858, it was later used for lime-burning, and was known as the Hoffmann continuous kiln."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "roman-watermill>watermill",
+   "from": "roman-watermill",
+   "to": "watermill",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The Romans brought water power to their provinces; a Roman tide mill and a sequence of mills by the River Fleet have been found in London. Ireland, never Roman, had watermills by the early 7th century.",
+   "sources": [
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Classical antiquity\"",
+     "quote": "The Romans used both fixed and floating water wheels and introduced water power to other provinces of the Roman Empire."
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Classical antiquity\"",
+     "quote": "Recent excavations in Roman London, for example, have uncovered what appears to be a tide mill together with a possible sequence of mills worked by an aqueduct running along the side of the River Fleet."
+    }
+   ]
+  },
+  {
+   "id": "watermill>tide-mill",
+   "from": "watermill",
+   "to": "tide-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The tide mill is a watermill driven by sea water held back at high tide and let out through the wheel at low tide; the earliest known are on the Irish coast.",
+   "sources": [
+    {
+     "title": "Tide mill (FISH Thesaurus of Monument Types, concept 69332)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69332.html",
+     "locator": "scope note",
+     "quote": "A type of WATERMILL, powered by retaining seawater at high tide and then releasing it at low tide via the water wheel."
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "section \"Early history\"",
+     "quote": "a number of new archaeological finds have consecutively pushed back the date of the earliest tide mills, all of which were discovered on the Irish coast"
+    }
+   ]
+  },
+  {
+   "id": "watermill>fulling-mill",
+   "from": "watermill",
+   "to": "fulling-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "From the Middle Ages cloth was fulled (cleaned and thickened) in water mills, the fulling or tuck mill, in Wales the pandy.",
+   "sources": [
+    {
+     "title": "Fulling",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fulling",
+     "locator": "section \"Milling\"",
+     "quote": "From the medieval period, the fulling of cloth was often done in a water mill, known as a fulling mill, a walk mill, or a tuck mill, and in Wales, a pandy."
+    },
+    {
+     "title": "Fulling mill (FISH Thesaurus of Monument Types, concept 69321)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69321.html",
+     "locator": "scope note",
+     "quote": "A mill for beating and cleaning cloth, using soap or fullers earth."
+    }
+   ]
+  },
+  {
+   "id": "persian-windmill>post-mill",
+   "from": "persian-windmill",
+   "to": "post-mill",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "The horizontal windmill came from Persia, the vertical windmill (the post mill first) from north-western Europe in the 12th century; whether the second was inspired by the first is unclear.",
+   "sources": [
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Vertical windmills\"",
+     "quote": "It is unclear whether the vertical windmill was influenced by the introduction of the horizontal windmill from Persia-Middle East to Southern Europe in the preceding century."
+    }
+   ],
+   "views": [
+    "Borrowed: the horizontal windmill reached southern Europe in the century before the first vertical mills.",
+    "Separate: the vertical windmill is a 12th-century development of north-western Europe (northern France, eastern England, Flanders)."
+   ]
+  },
+  {
+   "id": "post-mill>tower-mill",
+   "from": "post-mill",
+   "to": "tower-mill",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The post mill, whose whole body turns to the wind, was the commonest windmill until the 19th century, when the more powerful tower and smock mills, which turn only the cap, replaced it.",
+   "sources": [
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Post mill\"",
+     "quote": "This type of windmill was the most common in Europe until the 19th century when more powerful tower and smock mills replaced them."
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Tower mill\"",
+     "quote": "In contrast to the post mill, only the cap of the tower mill needs to be turned into the wind, so the main structure can be made much taller"
+    }
+   ]
+  },
+  {
+   "id": "tower-mill>smock-mill",
+   "from": "tower-mill",
+   "to": "smock-mill",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The smock mill works as a tower mill does (a fixed body under a turning cap), with a sloping timber body, usually eight-sided, instead of masonry.",
+   "sources": [
+    {
+     "title": "Smock mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smock_mill",
+     "locator": "lead",
+     "quote": "It is topped with a roof or cap that rotates to bring the sails into the wind."
+    },
+    {
+     "title": "Smock mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smock_mill",
+     "locator": "section \"Construction\"",
+     "quote": "Smock mills differ from tower mills, which are usually conical rather than hexagonal or octagonal, and built from brick or stone masonry instead of timber."
+    }
+   ]
+  },
+  {
+   "id": "italian-silk-mill>silk-mill",
+   "from": "italian-silk-mill",
+   "to": "silk-mill",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Lombe's Mill at Derby was built with the machines of the Italian silk-throwing mills, which John Lombe studied in Piedmont in 1717, and with Italian craftsmen.",
+   "sources": [
+    {
+     "title": "Lombe's Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
+     "locator": "lead",
+     "quote": "It was built after John Lombe visited Piedmont in 1717 and returned to England with details of the Italian silk throwing machines"
+    }
+   ]
+  },
+  {
+   "id": "silk-mill>cotton-mill",
+   "from": "silk-mill",
+   "to": "cotton-mill",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Lombe's water-powered silk mill set the pattern of powered machinery and organised labour that Arkwright applied to cotton in the 1770s.",
+   "sources": [
+    {
+     "title": "Derwent Valley Mills",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Derwent_Valley_Mills",
+     "locator": "lead",
+     "quote": "Water-power was first introduced to England by John Lombe at his silk mill in Derby in 1719, but it was Richard Arkwright who applied water-power to the process of producing cotton in the 1770s."
+    },
+    {
+     "title": "Derwent Valley Mills",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Derwent_Valley_Mills",
+     "locator": "section \"History\"",
+     "quote": "Lombe had introduced a viable form of water powered machinery and had established a template for organised labour that later industrialists would follow."
+    }
+   ]
+  },
+  {
+   "id": "watermill>cotton-mill",
+   "from": "watermill",
+   "to": "cotton-mill",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Arkwright's cotton mill used the power of a water mill to drive his water frame, after a first horse-powered mill in Nottingham.",
+   "sources": [
+    {
+     "title": "Cromford Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cromford_Mill",
+     "locator": "section \"History\"",
+     "quote": "In 1769, Richard Arkwright patented a water frame  to use the extra power of a water mill after he had set up a horse-powered mill in Nottingham."
+    }
+   ]
+  },
+  {
+   "id": "cotton-mill>fireproof-mill",
+   "from": "cotton-mill",
+   "to": "fireproof-mill",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Cotton mills burned easily; the Strutts' experiments with cast-iron beams and brick vaults at their mills led to the fully iron-framed flax mill at Ditherington (1797), and William Strutt rebuilt Belper North Mill iron-framed in 1804.",
+   "sources": [
+    {
+     "title": "Strutt's North Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Strutt's_North_Mill",
+     "locator": "section \"Construction\"",
+     "quote": "Cotton mills were prone to fire as cotton dust ignites easily and the resulting fire burns through ceiling and floor timbers."
+    },
+    {
+     "title": "Ditherington Flax Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ditherington_Flax_Mill",
+     "locator": "section \"History\"",
+     "quote": "The Flax Mill's architect was Charles Bage, who designed the mill using an iron-framed structure, inspired by the work of William Strutt."
+    }
+   ]
+  },
+  {
+   "id": "weavers-cottage>weaving-shed",
+   "from": "weavers-cottage",
+   "to": "weaving-shed",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Handloom weavers worked in loom shops at home; from the 1840s power looms in single-storey weaving sheds took the work, some sheds built by co-operatives of former handloom weavers.",
+   "sources": [
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"History\"",
+     "quote": "Handloom weavers would take the yarn to their cottage loom shops, and return the completed fabric to the mill."
+    },
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"History\"",
+     "quote": "They initially adjoined existing mills, and then were built as standalone mills by speculating investors or by industrial cooperatives of former handloom weavers."
+    }
+   ]
+  },
+  {
+   "id": "bloomery>blast-furnace",
+   "from": "bloomery",
+   "to": "blast-furnace",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The bloomery made wrought iron directly without melting it; the blast furnace, which makes molten pig iron, largely superseded it.",
+   "sources": [
+    {
+     "title": "Bloomery (FISH Thesaurus of Monument Types, concept 69180)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69180.html",
+     "locator": "scope note",
+     "quote": "A charcoal fired shaft furnace used for the direct reduction of iron ore to produce wrought iron."
+    },
+    {
+     "title": "Bloomery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bloomery",
+     "locator": "lead",
+     "quote": "Blast furnaces, which produce pig iron, have largely superseded bloomeries."
+    }
+   ]
+  },
+  {
+   "id": "walloon-furnace>blast-furnace",
+   "from": "walloon-furnace",
+   "to": "blast-furnace",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The blast furnace came to England from the region of Namur in Wallonia, in 1491.",
+   "sources": [
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"History\"",
+     "quote": "They spread from the region around Namur in Wallonia (Belgium) in the late 15th century, being introduced to England in 1491."
+    }
+   ]
+  },
+  {
+   "id": "pottery-kiln>bottle-kiln",
+   "from": "pottery-kiln",
+   "to": "bottle-kiln",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The bottle kiln is a pottery kiln whose oven stands inside a bottle-shaped brick hovel; nearly 50 survive in Stoke-on-Trent.",
+   "sources": [
+    {
+     "title": "Bottle kiln (FISH Thesaurus of Monument Types, concept 70595)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70595.html",
+     "locator": "scope note",
+     "quote": "A large, bottle-shaped,  oven of brick construction used in the baking or firing of pottery."
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "lead",
+     "quote": "Bottle kilns were typical of the industrial landscape of Stoke-on-Trent, where nearly 50 are preserved as listed buildings."
+    }
+   ]
+  },
+  {
+   "id": "bottle-kiln>gas-tunnel-kiln",
+   "from": "bottle-kiln",
+   "to": "gas-tunnel-kiln",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The Clean Air Act 1956 and the move from coal to gas tunnel kilns ended the coal-fired bottle ovens by the early 1960s.",
+   "sources": [
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "lead",
+     "quote": "Their decline was ultimately precipitated by the Clean Air Act 1956 and a systemic transition within the industry away from coal-fired processes in favour of cleaner, alternatives such as gas tunnel kilns."
+    }
+   ]
+  },
+  {
+   "id": "brick-kiln>hoffmann-kiln",
+   "from": "brick-kiln",
+   "to": "hoffmann-kiln",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Hoffmann kiln is a brick kiln that burns continuously, its fire moving round a ring of chambers.",
+   "sources": [
+    {
+     "title": "Hoffmann kiln (FISH Thesaurus of Monument Types, concept 143476)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/143476.html",
+     "locator": "scope note",
+     "quote": "A kiln principally used in brick making which gives a continuous operation."
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Construction and operation\"",
+     "quote": "A Hoffmann kiln consists of a main fire passage surrounded on each side by several small rooms."
+    }
+   ]
+  }
+ ]
+}

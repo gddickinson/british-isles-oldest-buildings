@@ -50,3 +50,20 @@ derive"), dovecotes after castle nest-holes (the order is sourced, the descent i
 Irish round tower as convergences (no source links their origins). Not in FISH: clochán, corbelled oratory, Irish
 round tower, Commissioners' church, the ecclesiological church. Wikipedia's lists of listed buildings hold their
 descriptions in tables that the plain-text extract leaves out, so they cannot be quoted for a check.
+
+## Commercial, industrial and transport (BT1c2, 2026-10-25)
+
+`lineage_commercial.json`: 24 types (inns and public houses, markets and exchanges, shops and banks; abroad: the
+Antwerp bourse, the covered passages of Paris), 18 links. `lineage_industrial.json`: 22 types (watermills,
+windmills, textile mills, iron making, kilns; abroad: Roman watermills, Persian horizontal windmills, the Piedmont
+silk-throwing mills, the Walloon blast furnace), 16 links. `lineage_transport.json`: 17 types (bridges, turnpikes,
+waterways, railways; abroad: Roman aqueducts), 12 links; railway station → railway hotel crosses into the
+commercial file. All 128 types and 103 links: 305 quotes, all found; every Wikipedia locator checked against the
+section the quote stands in. Disputed: whether the vertical windmill borrowed from the Persian horizontal one
+("unclear"), whether the shopping arcade came from Paris (Palais-Royal 1784) or was as early here (Oxford's Covered
+Market 1774, Burlington Arcade 1819). Probable, stated as such: the alehouse taking the Roman tavern's place (no
+continuity shown), coaching inn → railway hotel (each half sourced, the replacement not stated), market house →
+market hall (order from FISH's dates), shop → bank (the goldsmith bankers' business, not the building), stepping
+stones → clapper bridge (form and word), river navigation → canal (the Sankey Brook Navigation, one case).
+FISH notes: its TUNNEL KILN is a coal-fired lime kiln, so the pottery industry's gas tunnel kiln has no FISH id;
+the buttercross is a non-preferred term of MARKET CROSS; not in FISH: cast-iron bridge, the Roman taberna.

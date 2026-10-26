@@ -561,8 +561,21 @@ the descent of a type is disputed, both views are given and the link is drawn as
       Commissioners' and ecclesiological churches as revivals; aisled barn → barn → threshing, cruck, bank, hay
       barns and the oast house; threshing barn → gin gang (1786-1840); dovecote after castle nest-holes (probable;
       Roman or Norman introduction disputed); longhouse and laithe house (convergence, probable).
-- [ ] BT1c2 Commercial (alehouse → inn → coaching inn → railway hotel; market hall, shop, bank), industrial
-      (watermill → textile mill → factory; ironworks, kilns), transport (bridge, canal, railway station).
+- [x] BT1c2 (2026-10-25) Commercial, industrial, transport (`lineage_commercial.json`, `lineage_industrial.json`,
+      `lineage_transport.json`): 63 types (7 abroad), 46 links, 135 more quotes (305 in all, all found; Wikipedia
+      locators checked against the section each quote stands in). Alehouse → public house, gin palace → pub (the
+      bar counter), inn → coaching inn, drovers' inn, hotel → railway hotel; coffee house → stock exchange
+      (Jonathan's, 1773); Antwerp bourse → Royal Exchange; market cross → buttercross, market house → market hall
+      → cloth hall; shop → department store, → bank (goldsmith bankers, probable). Roman watermills → watermill →
+      tide mill (Nendrum 619), fulling mill, cotton mill; post mill → tower mill (replaced) → smock mill; Piedmont
+      → Lombe's silk mill → Arkwright's cotton mill → fireproof mill (Strutt, Ditherington); weaver's cottage →
+      weaving shed; bloomery → blast furnace (Wallonia, 1491); pottery kiln → bottle kiln → gas tunnel kiln (Clean
+      Air Act 1956); brick kiln → Hoffmann kiln. Stepping stones → clapper bridge (probable); arch bridge →
+      packhorse bridge → turnpike (replaced), → Iron Bridge; ships' chain cable → suspension bridge (Union Bridge
+      1820); Roman aqueducts → railway viaduct; flash lock → pound lock (Exeter 1560s); river navigation → canal
+      (probable), canal and turnpike → railway (replaced); wagonway → railway; railway station → railway hotel.
+      Disputed: the vertical windmill from Persia, the shopping arcade from Paris. Not yet researched: the factory
+      as a type, ironworks beyond the furnace, the parts of a station (train shed, goods shed, engine shed).
 - [ ] BT1c3 Civic, education, health and welfare, recreational; periods of use (first known, flourishing, last
       built) for every type; structural system and plan form where the sources give them. (The earliest catalogue
       example per type needs BT2's mapping and moves there.)

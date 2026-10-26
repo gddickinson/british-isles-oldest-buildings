@@ -1,0 +1,592 @@
+{
+ "about": "Building types (roadmap BT1c2): bridges, roads, waterways, railways. Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "stepping-stones",
+   "name": "Stepping stones",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70276"
+  },
+  {
+   "id": "clapper-bridge",
+   "name": "Clapper bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70216",
+   "period": {
+    "text": "most medieval, some later, though often called prehistoric"
+   },
+   "sources": [
+    {
+     "title": "Clapper bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clapper_bridge",
+     "locator": "section \"History\"",
+     "quote": "Although often credited with prehistoric origin, most were erected in medieval times, and some in later centuries."
+    }
+   ]
+  },
+  {
+   "id": "arch-bridge",
+   "name": "Arch bridge (masonry)",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "94190"
+  },
+  {
+   "id": "packhorse-bridge",
+   "name": "Packhorse bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70220",
+   "period": {
+    "text": "on the packhorse routes until the turnpikes and canals of the 18th century",
+    "to": 1800
+   }
+  },
+  {
+   "id": "iron-bridge",
+   "name": "Cast-iron bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": null,
+   "period": {
+    "text": "the Iron Bridge, Coalbrookdale, opened 1781, the first major cast-iron bridge",
+    "from": 1781
+   },
+   "sources": [
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "lead",
+     "quote": "Opened in 1781, it was the first major bridge in the world to be made of cast iron."
+    }
+   ]
+  },
+  {
+   "id": "suspension-bridge",
+   "name": "Suspension bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70223",
+   "period": {
+    "text": "the Union Bridge over the Tweed, 1820, the first for vehicles in the UK",
+    "from": 1820
+   },
+   "sources": [
+    {
+     "title": "Union Bridge (Tweed)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Union_Bridge_(Tweed)",
+     "locator": "lead",
+     "quote": "When it opened in 1820 it was the longest wrought iron suspension bridge in the world with a span of 449 feet (137 m), and the first vehicular bridge of its type in the United Kingdom."
+    }
+   ]
+  },
+  {
+   "id": "ship-chain-cable",
+   "name": "Wrought-iron chain cable (ships)",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": null,
+   "note": "Not a building: the ship's chain from which Samuel Brown's bridge chains came.",
+   "sources": [
+    {
+     "title": "Union Bridge (Tweed)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Union_Bridge_(Tweed)",
+     "locator": "section \"Construction\"",
+     "quote": "Brown joined the Navy in 1795, and seeing the need for an improvement on the hemp ropes used, which frequently failed with resulting loss to shipping, he employed blacksmiths to create experimental wrought iron chains."
+    }
+   ]
+  },
+  {
+   "id": "roman-aqueduct",
+   "name": "Roman aqueducts",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Viaduct",
+     "locator": "lead",
+     "quote": "It is a 19th-century derivation from an analogy with ancient Roman aqueducts."
+    }
+   ]
+  },
+  {
+   "id": "railway-viaduct",
+   "name": "Railway viaduct",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70250"
+  },
+  {
+   "id": "toll-road",
+   "name": "Turnpike (toll road)",
+   "family": "Roads",
+   "domain": "Transport",
+   "fish": "70269",
+   "period": {
+    "text": "the first turnpike act 1663; trusts with their own trustees from 1706; declined with the railways",
+    "from": 1663,
+    "to": 1888
+   },
+   "sources": [
+    {
+     "title": "Turnpike trusts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "section \"The first turnpike trusts\"",
+     "quote": "The first scheme that had trustees who were not justices was established through the Bedfordshire and Buckinghamshire Roads Act 1706"
+    }
+   ]
+  },
+  {
+   "id": "flash-lock",
+   "name": "Flash lock (navigation weir, staunch)",
+   "family": "Waterways",
+   "domain": "Transport",
+   "fish": "91961",
+   "period": {
+    "text": "on the Thames since at least 1295; the last on the Nene replaced 1936-1941",
+    "from": 1295,
+    "to": 1941
+   },
+   "sources": [
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "Flash locks of this type have been documented in China since at least the 1st century BCE and on the Thames since at least 1295."
+    }
+   ]
+  },
+  {
+   "id": "pound-lock",
+   "name": "Pound lock",
+   "family": "Waterways",
+   "domain": "Transport",
+   "fish": "92981",
+   "period": {
+    "text": "in Britain from the 1560s (Exeter Canal)",
+    "from": 1564
+   },
+   "sources": [
+    {
+     "title": "Exeter Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Canal",
+     "locator": "lead",
+     "quote": "As built, it contained the first pound locks to be built in Britain."
+    }
+   ]
+  },
+  {
+   "id": "river-navigation",
+   "name": "River navigation",
+   "family": "Waterways",
+   "domain": "Transport",
+   "fish": "70303"
+  },
+  {
+   "id": "canal",
+   "name": "Canal",
+   "family": "Waterways",
+   "domain": "Transport",
+   "fish": "70288",
+   "period": {
+    "text": "Roman (Foss Dyke); the Newry Canal 1742, the Sankey 1757, the Bridgewater 1761; replaced by railways from the mid-19th century",
+    "from": 1742
+   },
+   "sources": [
+    {
+     "title": "Newry Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newry_Canal",
+     "locator": "section \"History\"",
+     "quote": "The Newry Canal was the first summit level canal to be built in Ireland or Great Britain,  and pre-dated the more famous Bridgewater Canal by nearly thirty years and Sankey Canal by fifteen years."
+    }
+   ]
+  },
+  {
+   "id": "wagonway",
+   "name": "Wagonway",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "71329",
+   "period": {
+    "text": "the Wollaton Wagonway, 1604, perhaps some older",
+    "from": 1604
+   },
+   "sources": [
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "section \"Wooden rails\"",
+     "quote": "In 1604, Huntingdon Beaumont completed the Wollaton Wagonway, built to transport coal from the mines at Strelley to Wollaton Lane End, just west of Nottingham, England."
+    }
+   ]
+  },
+  {
+   "id": "railway",
+   "name": "Railway",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "70241"
+  },
+  {
+   "id": "railway-station",
+   "name": "Railway station",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "70247",
+   "period": {
+    "text": "the first recorded 1807 (horse-drawn); Crown Street, Liverpool, 1830, the oldest terminal",
+    "from": 1807
+   },
+   "sources": [
+    {
+     "title": "Train station",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Train_station",
+     "locator": "section \"History\"",
+     "quote": "The world's first recorded railway station, for trains drawn by horses rather than engined locomotives, began passenger service in 1807."
+    },
+    {
+     "title": "Train station",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Train_station",
+     "locator": "section \"History\"",
+     "quote": "The oldest terminal station in the world was Crown Street railway station in Liverpool, England, built in 1830, on the locomotive-hauled Liverpool to Manchester line."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "stepping-stones>clapper-bridge",
+   "from": "stepping-stones",
+   "to": "clapper-bridge",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "The clapper bridge, slabs laid across piers of stones, is stepping stones bridged: the word is said to come from one meaning 'bridging the stepping stones'. The sources give the form and the word, not a dated descent.",
+   "sources": [
+    {
+     "title": "Clapper bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clapper_bridge",
+     "locator": "section \"History\"",
+     "quote": "the word 'clapper' derives ultimately from an Anglo-Saxon word, cleaca, meaning 'bridging the stepping stones'"
+    },
+    {
+     "title": "Stepping stones",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stepping_stones",
+     "locator": "lead",
+     "quote": "wood planks or stone slabs can be placed over between the stones (which serve as the piers) to improvise as low-water bridges"
+    }
+   ]
+  },
+  {
+   "id": "arch-bridge>packhorse-bridge",
+   "from": "arch-bridge",
+   "to": "packhorse-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The packhorse bridge is a narrow masonry arch bridge, one horse wide, with low parapets that leave room for the panniers.",
+   "sources": [
+    {
+     "title": "Packhorse bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Packhorse_bridge",
+     "locator": "lead",
+     "quote": "Typically a packhorse bridge consists of one or more narrow (one horse wide) masonry arches, and has low parapets so as not to interfere with the panniers borne by the horses."
+    }
+   ]
+  },
+  {
+   "id": "packhorse-bridge>toll-road",
+   "from": "packhorse-bridge",
+   "to": "toll-road",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The packhorse routes and their bridges carried goods until the turnpike roads and canals of the 18th century took the traffic.",
+   "sources": [
+    {
+     "title": "Packhorse bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Packhorse_bridge",
+     "locator": "lead",
+     "quote": "Packhorse bridges were often built on the trade routes (often called packhorse routes) that formed major transport arteries across Europe and Great Britain until the coming of the turnpike roads and canals in the 18th century."
+    }
+   ]
+  },
+  {
+   "id": "arch-bridge>iron-bridge",
+   "from": "arch-bridge",
+   "to": "iron-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Iron Bridge is an arch bridge in cast iron, its ribs joined with the carpenters' mortise and tenon joints and dovetails of timber building; its success spread cast iron as a structural material.",
+   "sources": [
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "lead",
+     "quote": "The Iron Bridge is a cast iron arch bridge that spans the Ironbridge Gorge of the River Severn in Shropshire, England."
+    },
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "section \"Design\"",
+     "quote": "resulting in the use of carpentry jointing details such as mortise and tenon joints and dovetails."
+    },
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "lead",
+     "quote": "Its success inspired the widespread use of cast iron as a structural material"
+    }
+   ]
+  },
+  {
+   "id": "ship-chain-cable>suspension-bridge",
+   "from": "ship-chain-cable",
+   "to": "suspension-bridge",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The Union Bridge (1820) was designed by a naval officer, Samuel Brown, who had made wrought-iron chains to replace ships' hemp ropes.",
+   "sources": [
+    {
+     "title": "Union Bridge (Tweed)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Union_Bridge_(Tweed)",
+     "locator": "section \"Construction\"",
+     "quote": "The bridge was designed by a Royal Navy officer, Captain Samuel Brown."
+    },
+    {
+     "title": "Union Bridge (Tweed)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Union_Bridge_(Tweed)",
+     "locator": "section \"Construction\"",
+     "quote": "he employed blacksmiths to create experimental wrought iron chains."
+    }
+   ]
+  },
+  {
+   "id": "roman-aqueduct>railway-viaduct",
+   "from": "roman-aqueduct",
+   "to": "railway-viaduct",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The viaduct of the 19th-century railways was named and often built after the Roman aqueducts: a series of arches of about equal span.",
+   "sources": [
+    {
+     "title": "Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Viaduct",
+     "locator": "lead",
+     "quote": "It is a 19th-century derivation from an analogy with ancient Roman aqueducts."
+    },
+    {
+     "title": "Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Viaduct",
+     "locator": "lead",
+     "quote": "Like the Roman aqueducts, many early viaducts comprised a series of arches of roughly equal length."
+    }
+   ]
+  },
+  {
+   "id": "toll-road>railway",
+   "from": "toll-road",
+   "to": "railway",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The turnpike trusts declined when the railways came, and the main roads passed to the county councils in 1888.",
+   "sources": [
+    {
+     "title": "Turnpike trusts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "lead",
+     "quote": "Turnpikes declined with the coming of the railways and then the Local Government Act 1888 gave responsibility for maintaining main roads to county councils and county borough councils."
+    }
+   ]
+  },
+  {
+   "id": "flash-lock>pound-lock",
+   "from": "flash-lock",
+   "to": "pound-lock",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "The flash lock let boats through on a rush of water; the pound lock, a chamber between two gates, is far easier, and came to Britain in the 1560s, though a few flash locks lasted into the 20th century.",
+   "sources": [
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "The pound lock holds water between two gates, and is considerably easier to navigate."
+    },
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "Pound locks have been built in China since 983, in the Netherlands from 1065 and in Britain from the 1560s."
+    },
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "Flash locks on the Nene continued to be used until they were replaced in a programme of modernisation, which included building new locks, carried out between 1936 and 1941."
+    }
+   ]
+  },
+  {
+   "id": "river-navigation>canal",
+   "from": "river-navigation",
+   "to": "canal",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "The first canal of the Industrial Revolution began as a river navigation: the Sankey Brook Navigation, perhaps presented to Parliament as an improvement of the brook but built as a true canal. One case, not a general account.",
+   "sources": [
+    {
+     "title": "Sankey Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sankey_Canal",
+     "locator": "lead",
+     "quote": "The Sankey Canal in North West England, initially known as the Sankey Brook Navigation and later the St Helens Canal, is a former industrial canal, which when opened in 1757 was England's first of the Industrial revolution, and the first modern canal."
+    },
+    {
+     "title": "Sankey Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sankey_Canal",
+     "locator": "section \"History\"",
+     "quote": "It is not known whether Berry or the promoters presented the plans to Parliament as an upgrade to the river navigation, despite building it as a true canal"
+    }
+   ]
+  },
+  {
+   "id": "canal>railway",
+   "from": "canal",
+   "to": "railway",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "From the mid-19th century railways took the canals' traffic; many canals were bought by railway companies and some turned into railways.",
+   "sources": [
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"History of commercial carrying\"",
+     "quote": "From the mid-19th century, railways began to replace canals, especially those built with the standard narrow (7 ft [2.1 m]) bridges and locks."
+    },
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"History of commercial carrying\"",
+     "quote": "Some narrow canals became unusable, filled with weeds, silt and rubbish, or were converted to railways."
+    }
+   ]
+  },
+  {
+   "id": "wagonway>railway",
+   "from": "wagonway",
+   "to": "railway",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The horse-drawn wagonway came before the steam railway; the Middleton Railway at Leeds, built as a wagonway in 1758, became the first working railway.",
+   "sources": [
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "lead",
+     "quote": "A wagonway (or waggonway; also known as a horse-drawn tramway, horse-drawn railway, or horse-drawn railroad) was a method of railway transportation that preceded the steam locomotive and used horses to haul wagons."
+    },
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "section \"Wooden rails\"",
+     "quote": "The Middleton Railway in Leeds, which was built in 1758 as a wagonway, later became the world's first operational railway (other than funiculars), albeit in an upgraded form."
+    }
+   ]
+  },
+  {
+   "id": "railway-station>railway-hotel",
+   "from": "railway-station",
+   "to": "railway-hotel",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The railway hotel was built beside a station, from the Great Western Hotel at Reading (1844) to the grand hotels at the termini of St Pancras and Charing Cross.",
+   "sources": [
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"Railway hotels\"",
+     "quote": "The first recorded purpose-built railway hotel was the Great Western Hotel, which opened adjacent to Reading railway station in 1844"
+    },
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"Railway hotels\"",
+     "quote": "in London the ones above St Pancras railway station and Charing Cross railway station."
+    }
+   ]
+  }
+ ]
+}

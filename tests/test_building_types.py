@@ -76,6 +76,12 @@ class BuildingTypesTest(unittest.TestCase):
         if building_types.PATH.exists():
             self.assertEqual(building_types.validate(building_types.load()), [])
 
+    def test_curated_domains(self):
+        if building_types.PATH.exists():
+            domains = set(building_types.family_tree(building_types.load()))
+            self.assertLessEqual({"Domestic", "Defence", "Religious", "Agricultural", "Commercial", "Industrial",
+                                  "Transport"}, domains)
+
 
 if __name__ == "__main__":
     unittest.main()

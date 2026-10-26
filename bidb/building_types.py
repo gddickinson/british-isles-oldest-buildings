@@ -1,7 +1,8 @@
 """Building types BT1b, BT1c: a family tree of building types, with sourced links between types.
 
 Curated input `data/curated/building_types/lineage*.json` (lineage.json: houses and defence; lineage_religious.json,
-lineage_agricultural.json, ...: one or two domains each; read together, links may cross files):
+lineage_agricultural.json, lineage_commercial.json, lineage_industrial.json, lineage_transport.json: one or two
+domains each; read together, links may cross files):
     types: [{id, name, family, domain, fish (FISH concept id or null), abroad?, period? {text, from?, to?},
              note?, sources?}]
     links: [{id "from>to", from, to, kind, confidence, claim, sources, views? (disputed), region?}]

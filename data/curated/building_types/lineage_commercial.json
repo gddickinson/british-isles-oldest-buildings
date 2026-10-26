@@ -1,0 +1,876 @@
+{
+ "about": "Building types (roadmap BT1c2): inns and public houses, markets and exchanges, shops and banks. Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "roman-taberna",
+   "name": "Roman tavern (taberna)",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": null,
+   "period": {
+    "text": "with the Roman roads, from the 1st century AD"
+   },
+   "sources": [
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Origins\"",
+     "quote": "it was with the construction of the Roman road network that the first pubs, called tabernae (the origin of modern English \"tavern\"), began to appear."
+    }
+   ]
+  },
+  {
+   "id": "alehouse",
+   "name": "Alehouse (beer house)",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "71558",
+   "period": {
+    "text": "first attested in the 10th century",
+    "from": 900
+   },
+   "sources": [
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Origins\"",
+     "quote": "the Anglo-Saxons established alehouses that may have grown out of domestic dwellings, first attested in the 10th century."
+    }
+   ]
+  },
+  {
+   "id": "public-house",
+   "name": "Public house",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "68800",
+   "period": {
+    "text": "as it is today, from the early 19th century",
+    "from": 1800
+   },
+   "sources": [
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "lead",
+     "quote": "it was not until the early 19th century that pubs, as they are today, first began to appear."
+    }
+   ]
+  },
+  {
+   "id": "gin-palace",
+   "name": "Gin palace",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "92120",
+   "period": {
+    "text": "the earliest in the 1830s (Thompson and Fearon's, Holborn)",
+    "from": 1830
+   },
+   "sources": [
+    {
+     "title": "Gin palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_palace",
+     "locator": "section \"Architecture\"",
+     "quote": "The earliest 'Gin Palaces' emerged in the 1830s, Thompson and Fearon's in Holborn and Weller's in Old Street, London."
+    }
+   ]
+  },
+  {
+   "id": "inn",
+   "name": "Inn",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "68793"
+  },
+  {
+   "id": "coaching-inn",
+   "name": "Coaching inn",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "68794",
+   "period": {
+    "text": "about 200 years from the mid-17th century, until the railways",
+    "from": 1650,
+    "to": 1850
+   },
+   "sources": [
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"History\"",
+     "quote": "For a period of about 200 years from the mid-17th century, coaching inns served as a place for lodging for coach travellers"
+    }
+   ]
+  },
+  {
+   "id": "drovers-inn",
+   "name": "Drovers' inn",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "91798"
+  },
+  {
+   "id": "hotel",
+   "name": "Hotel",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "68792",
+   "period": {
+    "text": "the Royal Clarence, Exeter, 1768, among the first; the idea caught on in the early 19th century",
+    "from": 1768
+   },
+   "sources": [
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"History\"",
+     "quote": "One of the first hotels in a modern sense, the Royal Clarence, opened in Exeter in 1768, although the idea only really caught on in the early-19th century."
+    }
+   ]
+  },
+  {
+   "id": "railway-hotel",
+   "name": "Railway hotel",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "71364",
+   "period": {
+    "text": "the first recorded purpose-built, the Great Western Hotel at Reading, 1844",
+    "from": 1844
+   },
+   "sources": [
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"Railway hotels\"",
+     "quote": "The first recorded purpose-built railway hotel was the Great Western Hotel, which opened adjacent to Reading railway station in 1844"
+    }
+   ]
+  },
+  {
+   "id": "coffee-house",
+   "name": "Coffee house",
+   "family": "Inns and public houses",
+   "domain": "Commercial",
+   "fish": "68784",
+   "period": {
+    "text": "the first in England at Oxford, 1650s",
+    "from": 1650
+   },
+   "sources": [
+    {
+     "title": "English coffeehouses in the 17th and 18th centuries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
+     "locator": "section \"Early Oxford coffeehouses\"",
+     "quote": "Thus the first English coffeehouse was established in 1650 at the Angel coaching inn in Oxford by a Jewish entrepreneur named Jacob."
+    },
+    {
+     "title": "English coffeehouses in the 17th and 18th centuries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
+     "locator": "section \"Early Oxford coffeehouses\"",
+     "quote": "Although most works on the early English coffeehouses say that Jacob's in Oxford was the first, this claim has been questioned."
+    }
+   ]
+  },
+  {
+   "id": "market-cross",
+   "name": "Market cross (mercat cross)",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "69990"
+  },
+  {
+   "id": "buttercross",
+   "name": "Buttercross",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": null,
+   "note": "FISH files the buttercross under market cross.",
+   "sources": [
+    {
+     "title": "Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buttercross",
+     "locator": "lead",
+     "quote": "A buttercross, butter cross or butter market cross is a type of market cross associated with English market towns and dating from medieval times."
+    }
+   ]
+  },
+  {
+   "id": "market-house",
+   "name": "Market house",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "71722",
+   "period": {
+    "text": "pre-19th century (FISH)",
+    "to": 1800
+   }
+  },
+  {
+   "id": "market-hall",
+   "name": "Market hall",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "68798",
+   "period": {
+    "text": "usually 19th century; earlier at Abingdon, c. 1680 (FISH)",
+    "from": 1680
+   }
+  },
+  {
+   "id": "cloth-hall",
+   "name": "Cloth hall (piece hall)",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "68783"
+  },
+  {
+   "id": "antwerp-bourse",
+   "name": "The Antwerp bourse",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Royal Exchange, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "section \"History\"",
+     "quote": "its original design was inspired by the Stock Exchange in Antwerp, the world's first purpose-built bourse"
+    }
+   ]
+  },
+  {
+   "id": "exchange",
+   "name": "Exchange",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "68786",
+   "period": {
+    "text": "the Royal Exchange, London, opened 1571",
+    "from": 1571
+   },
+   "sources": [
+    {
+     "title": "Royal Exchange, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "section \"History\"",
+     "quote": "The Royal Exchange was officially opened on 23 January 1571 by Queen Elizabeth I"
+    }
+   ]
+  },
+  {
+   "id": "corn-exchange",
+   "name": "Corn exchange",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "68787",
+   "period": {
+    "text": "from the earlier 18th century, most after 1846; in decline from the late 19th century",
+    "from": 1700,
+    "to": 1900
+   },
+   "sources": [
+    {
+     "title": "Corn exchange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_exchange",
+     "locator": "section \"History in England\"",
+     "quote": "Dedicated corn exchanges start appearing in the earlier part of the 18th century, increasing greatly following the repeal of the Corn Laws in 1846."
+    }
+   ]
+  },
+  {
+   "id": "stock-exchange",
+   "name": "Stock exchange",
+   "family": "Markets and exchanges",
+   "domain": "Commercial",
+   "fish": "68788",
+   "period": {
+    "text": "Sweeting's Alley, London, 1773; the London Stock Exchange founded 1801",
+    "from": 1773
+   }
+  },
+  {
+   "id": "shop",
+   "name": "Shop",
+   "family": "Shops and banks",
+   "domain": "Commercial",
+   "fish": "68803"
+  },
+  {
+   "id": "department-store",
+   "name": "Department store",
+   "family": "Shops and banks",
+   "domain": "Commercial",
+   "fish": "71698",
+   "period": {
+    "text": "Harding, Howell & Co., Pall Mall, 1796, the first reliably dated",
+    "from": 1796
+   },
+   "sources": [
+    {
+     "title": "Department store",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Department_store",
+     "locator": "section \"Origins in England, 1700s\"",
+     "quote": "However, the first reliably dated department store to be established, was Harding, Howell & Co., which opened in 1796 on Pall Mall, London."
+    }
+   ]
+  },
+  {
+   "id": "shopping-arcade",
+   "name": "Shopping arcade",
+   "family": "Shops and banks",
+   "domain": "Commercial",
+   "fish": "68804",
+   "period": {
+    "text": "late 18th / early 19th century (FISH); Oxford's Covered Market 1774, Burlington Arcade 1819",
+    "from": 1774
+   },
+   "sources": [
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "One of the earliest British examples of a shopping arcade, the Covered Market, Oxford, England was officially opened on 1 November 1774 and is still active today."
+    }
+   ]
+  },
+  {
+   "id": "paris-passage",
+   "name": "The covered passages of Paris",
+   "family": "Shops and banks",
+   "domain": "Commercial",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "The Palais-Royal, which opened in 1784 and became one of the most important marketplaces in Paris, is generally regarded as the earliest example of the grand shopping arcades."
+    }
+   ]
+  },
+  {
+   "id": "bank",
+   "name": "Bank",
+   "family": "Shops and banks",
+   "domain": "Commercial",
+   "fish": "91127",
+   "period": {
+    "text": "goldsmith bankers in London from the 1630s",
+    "from": 1630
+   },
+   "sources": [
+    {
+     "title": "Goldsmith banker",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Goldsmith_banker",
+     "locator": "section \"History\"",
+     "quote": "exchanging goldsmiths, who dealt in coinage, started to become recognised as carrying out a different activity from a working goldsmith in the 1630s."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "roman-taberna>alehouse",
+   "from": "roman-taberna",
+   "to": "alehouse",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "After Roman rule the Anglo-Saxon alehouse, which may have grown out of ordinary houses, took the place of the Roman tavern; no continuity between the two is shown, and the sources trace the pub through both.",
+   "sources": [
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Origins\"",
+     "quote": "it was with the construction of the Roman road network that the first pubs, called tabernae (the origin of modern English \"tavern\"), began to appear."
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Origins\"",
+     "quote": "the Anglo-Saxons established alehouses that may have grown out of domestic dwellings, first attested in the 10th century."
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "lead",
+     "quote": "The history of pubs can be traced to taverns in Roman Britain, and through Anglo-Saxon alehouses"
+    }
+   ]
+  },
+  {
+   "id": "alehouse>public-house",
+   "from": "alehouse",
+   "to": "public-house",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The public house of the 19th century grew from the alehouse and beer house, set apart from them by its decoration and fittings; before then alehouses were hardly distinguishable from private houses.",
+   "sources": [
+    {
+     "title": "Public house (FISH Thesaurus of Monument Types, concept 68800)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68800.html",
+     "locator": "scope note",
+     "quote": "The public house was a 19th century development, distinctive from the earlier BEER HOUSE by its decorative treatment and fittings."
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Advent of the modern pub\"",
+     "quote": "Before this time alehouses were largely indistinguishable from private houses"
+    }
+   ]
+  },
+  {
+   "id": "gin-palace>public-house",
+   "from": "gin-palace",
+   "to": "public-house",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The Victorian pub took its long serving bar from the gin palaces of the 1830s.",
+   "sources": [
+    {
+     "title": "Gin palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_palace",
+     "locator": "section \"Architecture\"",
+     "quote": "the bar in pubs is based on the shop counter of the gin palace, designed for swift service and ideal for attaching beer pumps"
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Counter\"",
+     "quote": "When purpose built Victorian pubs were built after the Beerhouse Act 1830, the main room was the public room with a large serving bar copied from the gin houses"
+    }
+   ]
+  },
+  {
+   "id": "inn>coaching-inn",
+   "from": "inn",
+   "to": "coaching-inn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The coaching inn is an inn with stabling for the horses of stage and mail coaches, where tired teams were changed.",
+   "sources": [
+    {
+     "title": "Coaching inn (FISH Thesaurus of Monument Types, concept 68794)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68794.html",
+     "locator": "scope note",
+     "quote": "A public house offering lodgings to the passengers, and stabling for the horses of stage coaches."
+    },
+    {
+     "title": "Coaching inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coaching_inn",
+     "locator": "lead",
+     "quote": "Coaching inns stabled teams of horses for stagecoaches and mail coaches and replaced tired teams with fresh teams."
+    }
+   ]
+  },
+  {
+   "id": "inn>drovers-inn",
+   "from": "inn",
+   "to": "drovers-inn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The drovers' inn is a wayside inn for the drovers who walked livestock to market.",
+   "sources": [
+    {
+     "title": "Drovers inn (FISH Thesaurus of Monument Types, concept 91798)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91798.html",
+     "locator": "scope note",
+     "quote": "A wayside inn for livestock traders."
+    }
+   ]
+  },
+  {
+   "id": "inn>hotel",
+   "from": "inn",
+   "to": "hotel",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The hotel grew out of the inn: inns began to serve wealthier guests in the mid-18th century, and the first buildings called hotels opened in the 1760s.",
+   "sources": [
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "lead",
+     "quote": "The precursor to the modern hotel was the inn of medieval Europe."
+    },
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "lead",
+     "quote": "Inns began to cater to wealthier clients in the mid-18th century."
+    }
+   ]
+  },
+  {
+   "id": "hotel>railway-hotel",
+   "from": "hotel",
+   "to": "railway-hotel",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The railway hotel is a hotel beside a railway terminus, often owned by the railway company.",
+   "sources": [
+    {
+     "title": "Railway hotel (FISH Thesaurus of Monument Types, concept 71364)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71364.html",
+     "locator": "scope note",
+     "quote": "A hotel adjacent to a railway terminus. Railway hotels were often owned by a railway company."
+    }
+   ]
+  },
+  {
+   "id": "coaching-inn>railway-hotel",
+   "from": "coaching-inn",
+   "to": "railway-hotel",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Coaching inns lost their trade when the railways replaced the coach routes, and the railway companies built hotels at their stations from 1844. The sources give both halves; none says in so many words that the one took the other's place.",
+   "sources": [
+    {
+     "title": "Coaching inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coaching_inn",
+     "locator": "section \"Historic coaching inns\"",
+     "quote": "Other coaching inns lost their customers when the railway replaced the mail coach routes, and were closed down."
+    },
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"Railway hotels\"",
+     "quote": "Frequently, expanding railway companies built grand hotels at their termini"
+    }
+   ]
+  },
+  {
+   "id": "coffee-house>stock-exchange",
+   "from": "coffee-house",
+   "to": "stock-exchange",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The London stock market grew up in the coffee houses: prices were listed at Jonathan's from 1698, and in 1773 its brokers opened a formal Stock Exchange in Sweeting's Alley.",
+   "sources": [
+    {
+     "title": "London Stock Exchange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Stock_Exchange",
+     "locator": "section \"Coffee House\"",
+     "quote": "At that coffee house, a broker named John Castaing started listing the prices of a few commodities including salt, coal, paper, and exchange rates in 1698."
+    },
+    {
+     "title": "London Stock Exchange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Stock_Exchange",
+     "locator": "section \"Royal Exchange\"",
+     "quote": "In 1773, Jonathan, together with 150 other brokers, formed a club and opened a new and more formal \"Stock Exchange\" in Sweeting's Alley."
+    }
+   ]
+  },
+  {
+   "id": "market-cross>buttercross",
+   "from": "market-cross",
+   "to": "buttercross",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The buttercross is a market cross where butter and other farm produce were sold, often later given a roof for shelter.",
+   "sources": [
+    {
+     "title": "Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buttercross",
+     "locator": "lead",
+     "quote": "Their design varies from place to place, but they are often covered by some type of roof to offer shelter."
+    },
+    {
+     "title": "Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buttercross",
+     "locator": "lead",
+     "quote": "The roofs were generally added at a much later date than the construction of the original cross."
+    }
+   ]
+  },
+  {
+   "id": "market-house>market-hall",
+   "from": "market-house",
+   "to": "market-hall",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "The market house with rooms above an open arcade is the type before the 19th century; the purpose-built covered market hall is mostly of the 19th century. The order is in the thesaurus; no source describes one becoming the other.",
+   "sources": [
+    {
+     "title": "Market house (FISH Thesaurus of Monument Types, concept 71722)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71722.html",
+     "locator": "scope note",
+     "quote": "A market building, pre-19th century, incorporating other function rooms, eg. theatres, courtrooms, schoolrooms."
+    },
+    {
+     "title": "Market hall (FISH Thesaurus of Monument Types, concept 68798)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68798.html",
+     "locator": "scope note",
+     "quote": "A purpose built covered market hall, usually 19th century, although earlier examples do exist, eg. that at Abingdon, Oxfordshire c.1680."
+    },
+    {
+     "title": "Market house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Market_house",
+     "locator": "lead",
+     "quote": "Market houses usually included an arcade to protect traders and their goods from the elements while maintaining private access to most of the building."
+    }
+   ]
+  },
+  {
+   "id": "market-hall>cloth-hall",
+   "from": "market-hall",
+   "to": "cloth-hall",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The cloth hall is a market hall where cloth merchants showed and sold their cloth.",
+   "sources": [
+    {
+     "title": "Cloth hall (FISH Thesaurus of Monument Types, concept 68783)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68783.html",
+     "locator": "scope note",
+     "quote": "A market hall where cloth merchants can show their wares and conduct business."
+    }
+   ]
+  },
+  {
+   "id": "antwerp-bourse>exchange",
+   "from": "antwerp-bourse",
+   "to": "exchange",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The Royal Exchange in London (1571), the first exchange in the isles, was designed after the bourse at Antwerp, and some of its materials were brought from there.",
+   "sources": [
+    {
+     "title": "Royal Exchange, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "section \"History\"",
+     "quote": "its original design was inspired by the Stock Exchange in Antwerp, the world's first purpose-built bourse"
+    },
+    {
+     "title": "Royal Exchange, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "section \"History\"",
+     "quote": "It was Britain's first specialist commercial building, and Clough oversaw the importing of some of the materials from Antwerp"
+    }
+   ]
+  },
+  {
+   "id": "exchange>corn-exchange",
+   "from": "exchange",
+   "to": "corn-exchange",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The corn exchange is an exchange where samples of corn were sold or auctioned, used as a public hall between market days.",
+   "sources": [
+    {
+     "title": "Corn exchange (FISH Thesaurus of Monument Types, concept 68787)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68787.html",
+     "locator": "scope note",
+     "quote": "A building where samples of corn were sold or auctioned during the early to mid 19th century."
+    }
+   ]
+  },
+  {
+   "id": "exchange>stock-exchange",
+   "from": "exchange",
+   "to": "stock-exchange",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The stock exchange is an exchange for trading in stocks and shares.",
+   "sources": [
+    {
+     "title": "Stock exchange (FISH Thesaurus of Monument Types, concept 68788)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68788.html",
+     "locator": "scope note",
+     "quote": "A building which provides the centralized market for trading in stocks and shares and for raising capital for industry."
+    }
+   ]
+  },
+  {
+   "id": "shop>department-store",
+   "from": "shop",
+   "to": "department-store",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Department stores grew out of single shops that added departments: Bennett's of Derby began as an ironmonger's in 1734, and Kendal's of Manchester traded as Watts Bazaar from 1796.",
+   "sources": [
+    {
+     "title": "Department store (FISH Thesaurus of Monument Types, concept 71698)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71698.html",
+     "locator": "scope note",
+     "quote": "A large shop supplying many kinds of goods from various departments."
+    },
+    {
+     "title": "Department store",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Department_store",
+     "locator": "section \"Origins in England, 1700s\"",
+     "quote": "One of the first department stores may have been Bennett's in Derby, first established as an ironmonger (hardware shop) in 1734."
+    },
+    {
+     "title": "Department store",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Department_store",
+     "locator": "section \"Origins in England, 1700s\"",
+     "quote": "The Manchester institution dates back to 1836 but had been trading as Watts Bazaar since 1796."
+    }
+   ]
+  },
+  {
+   "id": "paris-passage>shopping-arcade",
+   "from": "paris-passage",
+   "to": "shopping-arcade",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "The grand shopping arcade is usually traced to Paris (the Palais-Royal, 1784), but Oxford's Covered Market opened in 1774 and London's Burlington Arcade (1819) is itself called a precursor of the European shopping gallery.",
+   "sources": [
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "The Palais-Royal, which opened in 1784 and became one of the most important marketplaces in Paris, is generally regarded as the earliest example of the grand shopping arcades."
+    },
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "One of the earliest British examples of a shopping arcade, the Covered Market, Oxford, England was officially opened on 1 November 1774 and is still active today."
+    },
+    {
+     "title": "Burlington Arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burlington_Arcade",
+     "locator": "lead",
+     "quote": "It is a precursor to the mid-19th-century European shopping gallery and the world's first modern shopping mall."
+    }
+   ],
+   "views": [
+    "From Paris: the Palais-Royal (1784) and the Paris passages are generally regarded as the first grand shopping arcades.",
+    "In Britain as early: Oxford's Covered Market opened in 1774, and the Burlington Arcade (1819) is called a precursor of the European shopping gallery."
+   ]
+  },
+  {
+   "id": "shop>bank",
+   "from": "shop",
+   "to": "bank",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "English banking grew from the goldsmiths of London, who kept deposits and lent money from their shops in the 17th century (Child & Co. at the sign of the Marygold, Hoare's at the Golden Bottle). The sources describe the business; the bank as a building of its own came later.",
+   "sources": [
+    {
+     "title": "Goldsmith banker",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Goldsmith_banker",
+     "locator": "lead",
+     "quote": "A  goldsmith banker was a business role that emerged in seventeenth century London from the London goldsmiths where they gradually expanded their services to include storage of wealth, providing loans, transferring money and providing bills of exchange that would lead to the development of cheques."
+    },
+    {
+     "title": "C. Hoare & Co",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/C._Hoare_&_Co",
+     "locator": "section \"17th century\"",
+     "quote": "Richard established his business at the sign of the Golden Bottle in Cheapside, London; since street numbering was unknown in those days, signs were used to distinguish one business from another."
+    }
+   ]
+  }
+ ]
+}

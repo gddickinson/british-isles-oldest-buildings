@@ -1470,3 +1470,15 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - `python -m bidb.building_types --quotes`: 170 of 170 quotes found (FISH scope notes and Wikipedia).
   Disputed: the minster hypothesis; Roman or Norman dovecotes.
 - Tests 312 OK (1 new: merged files). No GUI change (BT4).
+
+## 2026-10-25 — BT1c2: commercial, industrial and transport building types
+- New `data/curated/building_types/lineage_commercial.json` (24 types, 18 links: inns and pubs, markets and
+  exchanges, shops and banks), `lineage_industrial.json` (22 types, 16 links: watermills, windmills, textile mills,
+  iron making, kilns), `lineage_transport.json` (17 types, 12 links: bridges, turnpikes, waterways, railways).
+  Now 128 types, 103 links (documented 81, probable 15, disputed 7).
+- `python -m bidb.building_types --quotes`: 305 of 305 quotes found (Wikipedia and FISH scope notes). Wikipedia
+  locators checked by script against the section each quote stands in (46 first guesses corrected to the real
+  subsection).
+- Disputed: the vertical windmill from the Persian horizontal one; the shopping arcade from Paris or as early in
+  Britain. Seven links probable, each saying what the sources do and do not show.
+- Tests 313 OK (1 new: every planned domain present). No GUI change (BT4).

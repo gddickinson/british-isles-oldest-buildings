@@ -1,6 +1,7 @@
 # Building types: sources and licences (roadmap BT1)
 
-`lineage.json` holds the types and their sourced links (checked by `python -m bidb.building_types`, quotes
+`lineage.json` (houses and defence), `lineage_religious.json` and `lineage_agricultural.json` hold the types and
+their sourced links (read together; links may cross files) (checked by `python -m bidb.building_types`, quotes
 by `--quotes` → `data/building_types_check.json`). The hierarchy of types and their definitions come from the
 FISH Thesaurus of Monument Types (`bidb/fish_types.py`); the links between types are not in any thesaurus and
 each cites its sources with an exact quote.
@@ -36,3 +37,16 @@ disputed 3), 76 quotes, all found in their sources. Disputed: the Cornish rounds
 crusader castles and the concentric plan, the Irish tower house from the hall house (Finan) or from Scotland.
 Probable, stated as such: the lobby-entry house from the hall house with a chimney inserted by the cross passage
 (single buildings described, no general account found), the double pile replacing it (a Cumbrian source).
+
+## Religious and farm buildings (BT1c1, 2026-10-25)
+
+`lineage_religious.json`: 20 types (the Roman basilica, churches, religious houses, early Christian Ireland,
+nonconformist meeting houses; one abroad: the reformed Benedictine houses of the Continent), 17 links.
+`lineage_agricultural.json`: 12 types (barns, gin gang, oast house, dovecote, laithe house; one abroad: the Roman
+columbarium), 11 links, two of them from the house and castle families (longhouse → laithe house, tower keep →
+dovecote). All 65 types and 57 links: 170 quotes, all found. Disputed: the minster hypothesis (Blair; Cambridge
+and Rollason), a Roman or Norman start for dovecotes. Probable, stated as such: Gallarus from the clochán ("may
+derive"), dovecotes after castle nest-holes (the order is sourced, the descent is not), the laithe house and the
+Irish round tower as convergences (no source links their origins). Not in FISH: clochán, corbelled oratory, Irish
+round tower, Commissioners' church, the ecclesiological church. Wikipedia's lists of listed buildings hold their
+descriptions in tables that the plain-text extract leaves out, so they cannot be quoted for a check.

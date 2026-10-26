@@ -1460,3 +1460,13 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   defence), 76 quotes, all found in their sources (`--quotes` → `data/building_types_check.json`).
   `evidence.check` takes `claims` and `path` so both files share one checker.
 - Tests 311 OK (9 new: `test_fish_types`, `test_building_types`). No GUI change yet (BT4).
+
+## 2026-10-25 — BT1c1: religious and farm building types
+- BT1c split into BT1c1 (religious, agricultural), BT1c2 (commercial, industrial, transport), BT1c3 (civic and the
+  rest, periods of use for every type); the earliest catalogue example per type moves to BT2.
+- New `data/curated/building_types/lineage_religious.json` (20 types, 17 links) and `lineage_agricultural.json`
+  (12 types, 11 links); `building_types.load` merges every `lineage*.json` (links cross files: longhouse → laithe
+  house, tower keep → dovecote). Now 65 types, 57 links (documented 43, probable 9, disputed 5).
+- `python -m bidb.building_types --quotes`: 170 of 170 quotes found (FISH scope notes and Wikipedia).
+  Disputed: the minster hypothesis; Roman or Norman dovecotes.
+- Tests 312 OK (1 new: merged files). No GUI change (BT4).

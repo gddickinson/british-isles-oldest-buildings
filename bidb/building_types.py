@@ -1,6 +1,7 @@
-"""Building types BT1b: a family tree of building types, with sourced links between types.
+"""Building types BT1b, BT1c: a family tree of building types, with sourced links between types.
 
-Curated input `data/curated/building_types/lineage.json`:
+Curated input `data/curated/building_types/lineage*.json` (lineage.json: houses and defence; lineage_religious.json,
+lineage_agricultural.json, ...: one or two domains each; read together, links may cross files):
     types: [{id, name, family, domain, fish (FISH concept id or null), abroad?, period? {text, from?, to?},
              note?, sources?}]
     links: [{id "from>to", from, to, kind, confidence, claim, sources, views? (disputed), region?}]
@@ -26,8 +27,21 @@ CONFIDENCE = ("documented", "probable", "disputed")
 SOURCE_KINDS = ("primary", "listing", "secondary", "reference")
 
 
-def load(path=PATH):
-    return json.loads(path.read_text())
+def files():
+    """The curated files, lineage.json first."""
+    return sorted(PATH.parent.glob("lineage*.json"))
+
+
+def load(path=None):
+    """One file, or every curated file merged into one {types, links}."""
+    if path:
+        return json.loads(path.read_text())
+    data = {"types": [], "links": []}
+    for p in files():
+        d = json.loads(p.read_text())
+        data["types"] += d["types"]
+        data["links"] += d["links"]
+    return data
 
 
 def _source_problems(where, sources):

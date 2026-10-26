@@ -60,6 +60,18 @@ class BuildingTypesTest(unittest.TestCase):
             self.assertEqual(out["link:hall>wealden"]["sources"], ["quote-found"])
             self.assertEqual(json.loads(path.read_text()).keys(), out.keys())
 
+    def test_load_merges_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            a, b = copy.deepcopy(GOOD), {"types": [{"id": "barn", "name": "Barn", "family": "Barns",
+                                                    "domain": "Agricultural", "fish": "68547"}],
+                                         "links": [dict(GOOD["links"][0], id="hall>barn", to="barn")]}
+            (Path(tmp) / "lineage.json").write_text(json.dumps(a))
+            (Path(tmp) / "lineage_agricultural.json").write_text(json.dumps(b))
+            with mock.patch.object(building_types, "PATH", Path(tmp) / "lineage.json"):
+                data = building_types.load()
+            self.assertEqual([t["id"] for t in data["types"]], ["hall", "wealden", "abroad", "barn"])
+            self.assertEqual(building_types.validate(data), [])
+
     def test_curated_file(self):
         if building_types.PATH.exists():
             self.assertEqual(building_types.validate(building_types.load()), [])

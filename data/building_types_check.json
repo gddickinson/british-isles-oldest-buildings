@@ -179,6 +179,148 @@
   ],
   "checked": "2026-10-25"
  },
+ "type:tithe-barn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:cruck-barn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:bank-barn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:gin-gang": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:oast-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:dovecote": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:roman-columbarium": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:laithe-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:basilica": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:church": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:minster": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:round-tower-church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:collegiate-church": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:chantry-chapel": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:commissioners-church": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:ecclesiological-church": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:reformed-houses-continent": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:clochan": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:corbelled-oratory": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:irish-round-tower": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:meeting-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "type:friends-meeting-house": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
  "link:round-house>broch": {
   "sources": [
    "quote-found"
@@ -359,6 +501,208 @@
   "checked": "2026-10-25"
  },
  "link:bastion-trace-fort>polygonal-fort": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:aisled-barn>barn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:aisled-barn>tithe-barn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:barn>threshing-barn": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:barn>cruck-barn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:barn>bank-barn": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:barn>hay-barn": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:threshing-barn>gin-gang": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:barn>oast-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:tower-keep>dovecote": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:roman-columbarium>dovecote": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:longhouse>laithe-house": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:basilica>church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:church>parish-church": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:minster>parish-church": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:chapel-of-ease>parish-church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:parish-church>round-tower-church": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:irish-round-tower>round-tower-church": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:minster>collegiate-church": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:chantry-chapel>collegiate-church": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:minster>monastery": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:reformed-houses-continent>monastery": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:monastery>abbey": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:monastery>priory": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:abbey>cathedral": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:clochan>corbelled-oratory": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:meeting-house>friends-meeting-house": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:parish-church>commissioners-church": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-25"
+ },
+ "link:parish-church>ecclesiological-church": {
   "sources": [
    "quote-found",
    "quote-found"

@@ -551,13 +551,22 @@ the descent of a type is disputed, both views are given and the link is drawn as
       `evidence.check`, which now takes `claims` and `path`). The lobby-entry house from the hall house is "probable":
       sources describe chimneys inserted by the cross passage and single conversions (85 Church Street, Lavenham),
       none the descent of the type as a whole.
-- [ ] BT1c The other families: religious (minster → parish church, cathedral, chapel, meeting house, abbey and
-      priory), agricultural (barn, tithe barn, dovecote, bank barn, oast), commercial (alehouse → inn → coaching inn →
-      railway hotel; market hall, shop, bank), industrial (watermill → textile mill → factory; ironworks, kilns),
-      transport (bridge, canal, railway station), civic, education, health and welfare, recreational; periods of use
-      (first known, flourishing, last built) for every type, the earliest catalogue example per type (with BT2's
-      mapping); structural system and plan form where the sources give them.
-- [ ] BT2 Data: `data/curated/building_types.json` (types, links with kind and confidence, citations and quotes as
+- BT1c The other families, split 2026-10-25 into BT1c1–BT1c3:
+- [x] BT1c1 (2026-10-25) Religious and agricultural (`lineage_religious.json`, `lineage_agricultural.json`, read
+      with lineage.json by `building_types.load`): 32 types, 28 links, 94 more quotes (170 in all, all found).
+      Roman basilica → church; minster → parish church (disputed: the minster hypothesis, Blair vs Cambridge and
+      Rollason), → collegiate church, → monastery (replaced in the Benedictine Reform, continental houses an
+      influence); chapel of ease → parish church; round-tower churches (flint) vs Irish round towers (convergence);
+      abbey → cathedral (monastic cathedrals, almost only in the isles); clochán → Gallarus-type oratory (probable);
+      Commissioners' and ecclesiological churches as revivals; aisled barn → barn → threshing, cruck, bank, hay
+      barns and the oast house; threshing barn → gin gang (1786-1840); dovecote after castle nest-holes (probable;
+      Roman or Norman introduction disputed); longhouse and laithe house (convergence, probable).
+- [ ] BT1c2 Commercial (alehouse → inn → coaching inn → railway hotel; market hall, shop, bank), industrial
+      (watermill → textile mill → factory; ironworks, kilns), transport (bridge, canal, railway station).
+- [ ] BT1c3 Civic, education, health and welfare, recreational; periods of use (first known, flourishing, last
+      built) for every type; structural system and plan form where the sources give them. (The earliest catalogue
+      example per type needs BT2's mapping and moves there.)
+- [ ] BT2 Data: the curated `lineage*.json` files (types, links with kind and confidence, citations and quotes as
       the evidence file), checked by script; every catalogue record and place kind mapped to a type (the categories
       and Wikidata classes as a start), so each type shows counts, a map and the dated examples.
 - [ ] BT3 Materials and techniques: stone (rubble, ashlar, flint, cob, clay lump), timber framing (cruck, box frame,

@@ -1,0 +1,518 @@
+{
+ "about": "Building types (roadmap BT1c1): farm buildings. Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "aisled-barn",
+   "name": "Aisled barn",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "71767"
+  },
+  {
+   "id": "barn",
+   "name": "Barn",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "68547"
+  },
+  {
+   "id": "tithe-barn",
+   "name": "Tithe barn (great medieval barn)",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "68549",
+   "note": "English Heritage: not one of England's surviving architecturally impressive barns was a tithe barn; many were monastic barns.",
+   "sources": [
+    {
+     "title": "Tithe barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tithe_barn",
+     "locator": "lead",
+     "quote": "not one of England's surviving architecturally impressive barns was a tithe barn, although such barns existed"
+    },
+    {
+     "title": "Tithe barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tithe_barn",
+     "locator": "lead",
+     "quote": "Many were monastic barns, originally used by the monastery itself or by a monastic grange."
+    }
+   ]
+  },
+  {
+   "id": "threshing-barn",
+   "name": "Threshing barn",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "71296"
+  },
+  {
+   "id": "cruck-barn",
+   "name": "Cruck barn",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "91679",
+   "period": {
+    "text": "the oldest tree-ring dated crucks from about the mid-13th century",
+    "from": 1250
+   },
+   "sources": [
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"History\"",
+     "quote": "The oldest surviving crucks with dates confirmed by tree ring analysis date from around the middle of the 13th century."
+    }
+   ]
+  },
+  {
+   "id": "bank-barn",
+   "name": "Bank barn",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "71448",
+   "period": {
+    "text": "Cumbria by the 1660s; most built 1750-1860; the last just before the First World War",
+    "from": 1660,
+    "to": 1914
+   },
+   "sources": [
+    {
+     "title": "Bank barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_barn",
+     "locator": "section \"History\"",
+     "quote": "The great majority of bank barns were built in Cumbria between 1750 and 1860, and the last were built just before World War I."
+    }
+   ]
+  },
+  {
+   "id": "hay-barn",
+   "name": "Hay barn (Dutch barn)",
+   "family": "Barns",
+   "domain": "Agricultural",
+   "fish": "71528",
+   "period": {
+    "text": "mostly from the 19th century",
+    "from": 1800
+   }
+  },
+  {
+   "id": "gin-gang",
+   "name": "Gin gang (horse engine house)",
+   "family": "Farm buildings",
+   "domain": "Agricultural",
+   "fish": "71546",
+   "period": {
+    "text": "from Meikle's threshing machine (c. 1786) until the portable horse engine (c. 1840)",
+    "from": 1786,
+    "to": 1840
+   },
+   "sources": [
+    {
+     "title": "Threshing machine",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Threshing_machine",
+     "locator": "lead",
+     "quote": "The first threshing machine was invented circa 1786 by the Scottish engineer Andrew Meikle"
+    },
+    {
+     "title": "Gin gang",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_gang",
+     "locator": "section \"History and distribution\"",
+     "quote": "The truly portable horse engine was invented around 1840; this obviated the necessity for building further gin gangs."
+    }
+   ]
+  },
+  {
+   "id": "oast-house",
+   "name": "Oast house",
+   "family": "Farm buildings",
+   "domain": "Agricultural",
+   "fish": "68564",
+   "period": {
+    "text": "after hops came to England in the mid-16th century; the earliest surviving (Golford, Cranbrook) 17th century",
+    "from": 1550
+   },
+   "sources": [
+    {
+     "title": "Oast house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oast_house",
+     "locator": "lead",
+     "quote": "It dates from some time in the 17th century and closely mirrors the first documentary evidence on oasts soon after the introduction of hops into England in the mid-16th century."
+    }
+   ]
+  },
+  {
+   "id": "dovecote",
+   "name": "Dovecote (doocot)",
+   "family": "Farm buildings",
+   "domain": "Agricultural",
+   "fish": "68558",
+   "period": {
+    "text": "from the 12th century; the earliest surely dated free-standing one in England 1326 (Garway)",
+    "from": 1100
+   },
+   "sources": [
+    {
+     "title": "Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dovecote",
+     "locator": "section \"England and Wales\"",
+     "quote": "The earliest surviving, definitely dated free-standing dovecote in England was built in 1326 at Garway in Herefordshire."
+    }
+   ]
+  },
+  {
+   "id": "roman-columbarium",
+   "name": "Roman columbarium (dovecote)",
+   "family": "Influences from abroad",
+   "domain": "Agricultural",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dovecote",
+     "locator": "section \"Columbaria in ancient Rome\"",
+     "quote": "Pigeon keeping was then a passion in Rome: the Roman-style, generally round, columbarium had its interior covered with a white coating of marble powder."
+    }
+   ]
+  },
+  {
+   "id": "laithe-house",
+   "name": "Laithe house",
+   "family": "Farm buildings",
+   "domain": "Agricultural",
+   "fish": "71406",
+   "sources": [
+    {
+     "title": "Housebarn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Housebarn",
+     "locator": "section \"Great Britain and Ireland\"",
+     "quote": "Laithe house, upland Pennines."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "aisled-barn>barn",
+   "from": "aisled-barn",
+   "to": "barn",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The later barn largely developed from the medieval aisled barn; where walls were of stone the aisled timber frame often gave way to a single span.",
+   "sources": [
+    {
+     "title": "Barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barn",
+     "locator": "section \"History\"",
+     "quote": "The modern barn largely developed from the three aisled medieval barn, commonly known as tithe barn or monastic barn."
+    },
+    {
+     "title": "Barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barn",
+     "locator": "section \"History\"",
+     "quote": "Whenever stone walls were applied, the aisled timber frame often gave way to single-naved buildings."
+    }
+   ]
+  },
+  {
+   "id": "aisled-barn>tithe-barn",
+   "from": "aisled-barn",
+   "to": "tithe-barn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The great aisled barns of the Middle Ages are commonly called tithe barns; many were monastic barns, and the name is often wrong.",
+   "sources": [
+    {
+     "title": "Barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barn",
+     "locator": "section \"History\"",
+     "quote": "the three aisled medieval barn, commonly known as tithe barn or monastic barn"
+    },
+    {
+     "title": "Tithe barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tithe_barn",
+     "locator": "lead",
+     "quote": "Many were monastic barns, originally used by the monastery itself or by a monastic grange."
+    }
+   ]
+  },
+  {
+   "id": "barn>threshing-barn",
+   "from": "barn",
+   "to": "threshing-barn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A threshing barn is a barn with a central threshing floor.",
+   "sources": [
+    {
+     "title": "Threshing barn (FISH Thesaurus of Monument Types, concept 71296)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71296.html",
+     "locator": "scope note",
+     "quote": "A barn usually containing a single, central threshing floor."
+    }
+   ]
+  },
+  {
+   "id": "barn>cruck-barn",
+   "from": "barn",
+   "to": "cruck-barn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A cruck barn is a barn whose roof is carried on pairs of curved timbers (crucks), used in the Middle Ages for houses and large barns.",
+   "sources": [
+    {
+     "title": "Cruck barn (FISH Thesaurus of Monument Types, concept 91679)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91679.html",
+     "locator": "scope note",
+     "quote": "A barn in which a pair of curved timbers form a bowed A-frame which supports the roof independently of the walls."
+    },
+    {
+     "title": "Cruck",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cruck",
+     "locator": "section \"Use\"",
+     "quote": "Crucks were chiefly used in the medieval period for structures such as houses and large tithe barns, which were entirely timber-framed."
+    }
+   ]
+  },
+  {
+   "id": "barn>bank-barn",
+   "from": "barn",
+   "to": "bank-barn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The bank barn, built into a slope with a threshing floor above and animals below, appears in Cumbria by the 1660s on the farms of wealthy farmers fattening Scottish drove cattle; its origins in Britain are obscure.",
+   "sources": [
+    {
+     "title": "Bank barn (FISH Thesaurus of Monument Types, concept 71448)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71448.html",
+     "locator": "scope note",
+     "quote": "A multi-purpose, two-storey barn, built on a hillside with entrances at both levels to a first floor threshing barn and ground floor animal housing."
+    },
+    {
+     "title": "Bank barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_barn",
+     "locator": "section \"History\"",
+     "quote": "The bank barn had made its first appearance in Cumbria by the 1660s on the farms of wealthy farmers"
+    },
+    {
+     "title": "Bank barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_barn",
+     "locator": "section \"History\"",
+     "quote": "The origins of bank barns in the UK are obscure."
+    }
+   ],
+   "region": "Cumbria, Northumberland, Devon"
+  },
+  {
+   "id": "barn>hay-barn",
+   "from": "barn",
+   "to": "hay-barn",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Dutch barn of the British Isles, for hay and straw only, often open-sided, is a relatively recent development, mostly 19th century.",
+   "sources": [
+    {
+     "title": "Hay barn (FISH Thesaurus of Monument Types, concept 71528)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71528.html",
+     "locator": "scope note",
+     "quote": "A special type of barn, lacking a threshing floor, usually with open walls, intended for the dry and well ventilated storage of hay only."
+    },
+    {
+     "title": "Dutch barn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dutch_barn",
+     "locator": "lead",
+     "quote": "In the United Kingdom a structure called a Dutch barn is a relatively recent agricultural development meant specifically for hay and straw storage; most examples were built from the 19th century."
+    }
+   ]
+  },
+  {
+   "id": "threshing-barn>gin-gang",
+   "from": "threshing-barn",
+   "to": "gin-gang",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The gin gang was added to the threshing barn to house the horse engine that drove a threshing machine inside the barn.",
+   "sources": [
+    {
+     "title": "Gin gang",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_gang",
+     "locator": "lead",
+     "quote": "A gin gang, wheelhouse, roundhouse or horse-engine house is a structure built to enclose a horse engine, usually circular but sometimes square or octagonal, attached to a threshing barn."
+    },
+    {
+     "title": "Threshing machine",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Threshing_machine",
+     "locator": "section \"Later adoption\"",
+     "quote": "Some were housed in a specially constructed building, a gin gang, which would be attached to a threshing barn."
+    }
+   ],
+   "region": "north-east and south-west England, Scotland"
+  },
+  {
+   "id": "barn>oast-house",
+   "from": "barn",
+   "to": "oast-house",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The first oast houses were adapted barns; by the 18th century tall kilns with conical roofs had been developed for the draught, square at first, round from about 1800.",
+   "sources": [
+    {
+     "title": "Oast house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oast_house",
+     "locator": "lead",
+     "quote": "Early oast houses were simply adapted barns, but by the 18th century the distinctive tall buildings with conical roofs had been developed to increase the draught."
+    },
+    {
+     "title": "Oast house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oast_house",
+     "locator": "lead",
+     "quote": "At first, these were square, but around 1800 roundel kilns were developed in the belief that they were more efficient."
+    }
+   ],
+   "region": "Kent, Sussex, Herefordshire, Worcestershire"
+  },
+  {
+   "id": "tower-keep>dovecote",
+   "from": "tower-keep",
+   "to": "dovecote",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "Dove-keeping in England is first known from nest-holes in Norman castle keeps of the 12th century (Rochester); the free-standing dovecote follows (the earliest surely dated, 1326). The sources give the order, not the descent.",
+   "sources": [
+    {
+     "title": "Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dovecote",
+     "locator": "section \"England and Wales\"",
+     "quote": "The earliest known examples of dove-keeping occur in Norman castles of the 12th century (for example, at Rochester Castle, Kent, where nest-holes can be seen in the keep), and documentary references also begin in the 12th century."
+    },
+    {
+     "title": "Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dovecote",
+     "locator": "section \"England and Wales\"",
+     "quote": "The earliest surviving, definitely dated free-standing dovecote in England was built in 1326 at Garway in Herefordshire."
+    }
+   ]
+  },
+  {
+   "id": "roman-columbarium>dovecote",
+   "from": "roman-columbarium",
+   "to": "dovecote",
+   "kind": "influence",
+   "confidence": "disputed",
+   "claim": "The Romans may have brought dovecotes to Britain (pigeon holes at Caerwent), but doves are thought not to have been commonly kept until after the Norman Conquest.",
+   "sources": [
+    {
+     "title": "Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dovecote",
+     "locator": "section \"England and Wales\"",
+     "quote": "The Romans may have introduced dovecotes or columbaria to Britain since pigeon holes have been found in Roman ruins at Caerwent."
+    },
+    {
+     "title": "Dovecote",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dovecote",
+     "locator": "section \"England and Wales\"",
+     "quote": "However, it is believed that doves were not commonly kept there until after the Norman Conquest."
+    }
+   ],
+   "views": [
+    "Roman introduction: pigeon holes in the Roman ruins at Caerwent.",
+    "Norman introduction: doves not commonly kept until after the Conquest; the earliest known dove-keeping is in 12th-century Norman castles."
+   ]
+  },
+  {
+   "id": "longhouse>laithe-house",
+   "from": "longhouse",
+   "to": "laithe-house",
+   "kind": "convergence",
+   "confidence": "probable",
+   "claim": "The Pennine laithe house, like the longhouse, keeps family and farm building under one roof, but as a house attached to a laithe (cow-house and crop store) rather than one long range shared with the animals. No source found derives one from the other.",
+   "sources": [
+    {
+     "title": "Connected farm",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Connected_farm",
+     "locator": "section \"In the United Kingdom\"",
+     "quote": "The laithe house confines the family and the farm building under the same roof."
+    },
+    {
+     "title": "Laithe house (FISH Thesaurus of Monument Types, concept 71406)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71406.html",
+     "locator": "scope note",
+     "quote": "A laithe with an attached house."
+    },
+    {
+     "title": "Laithe (FISH Thesaurus of Monument Types, concept 71396)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71396.html",
+     "locator": "scope note",
+     "quote": "A building combining a cow-house with crop storage space."
+    }
+   ],
+   "region": "upland Pennines"
+  }
+ ]
+}

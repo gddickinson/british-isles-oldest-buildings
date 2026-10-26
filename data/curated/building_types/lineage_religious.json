@@ -1,0 +1,879 @@
+{
+ "about": "Building types (roadmap BT1c1): religious buildings (and the Roman basilica they grew from). Same fields as lineage.json.",
+ "researched": "2026-10-25",
+ "types": [
+  {
+   "id": "basilica",
+   "name": "Roman basilica",
+   "family": "Roman public buildings",
+   "domain": "Civic",
+   "fish": "68678",
+   "sources": [
+    {
+     "title": "Basilica (FISH Thesaurus of Monument Types, concept 68678)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68678.html",
+     "locator": "scope note",
+     "quote": "An aisled timber or masonry hall, serving as the chief administrative public meeting centre and law courts for a Roman town. Usually located alongside the forum."
+    },
+    {
+     "title": "Silchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silchester",
+     "locator": "section \"Iron Age and Roman town\"",
+     "quote": "Notable finds include the bronze Silchester eagle, discovered in the basilica in 1866"
+    }
+   ]
+  },
+  {
+   "id": "church",
+   "name": "Church",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "69980",
+   "period": {
+    "text": "in the isles from Roman Britain (Silchester, perhaps 4th century)"
+   },
+   "sources": [
+    {
+     "title": "Silchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silchester",
+     "locator": "lead",
+     "quote": "the remains of what may be one of the earliest Christian churches found in the British Isles"
+    }
+   ]
+  },
+  {
+   "id": "minster",
+   "name": "Minster (Anglo-Saxon)",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "70108",
+   "period": {
+    "text": "7th century to the 11th, when parishes took over",
+    "from": 600,
+    "to": 1100
+   },
+   "sources": [
+    {
+     "title": "Minster (church)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_(church)",
+     "locator": "section \"Early and mid Anglo-Saxon periods\"",
+     "quote": "The first minsters in the English-speaking parts of Britain were founded in the century after the mission to the Saxons led by Augustine of Canterbury in 597."
+    },
+    {
+     "title": "Minster (church)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_(church)",
+     "locator": "lead",
+     "quote": "Widespread in 10th-century England, minsters declined in importance with the systematic introduction of parishes and parish churches from the 11th century onwards."
+    }
+   ]
+  },
+  {
+   "id": "parish-church",
+   "name": "Parish church",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "69982"
+  },
+  {
+   "id": "chapel-of-ease",
+   "name": "Chapel of ease",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "71454"
+  },
+  {
+   "id": "round-tower-church",
+   "name": "Round-tower church",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "118514",
+   "note": "About 185 survive in England, 124 of them in Norfolk; about 20 of similar design in Germany.",
+   "sources": [
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "of about 185 surviving examples in the country, 124 are in Norfolk"
+    },
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "There is evidence of about 20 round-tower churches in Germany, of similar design and construction to those in East Anglia."
+    }
+   ]
+  },
+  {
+   "id": "collegiate-church",
+   "name": "Collegiate church",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "69981",
+   "period": {
+    "text": "early medieval to 1547, when most were dissolved",
+    "to": 1547
+   },
+   "sources": [
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"England\"",
+     "quote": "They were mostly abolished during the reign of Edward VI in 1547, as part of the Reformation, by the Act for the Dissolution of Collegiate Churches and Chantries (Dissolution of Colleges Act 1547)."
+    }
+   ]
+  },
+  {
+   "id": "chantry-chapel",
+   "name": "Chantry chapel",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "69970",
+   "period": {
+    "text": "13th century to 1547",
+    "to": 1547
+   },
+   "sources": [
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"History\"",
+     "quote": "From the 13th century onwards, existing collegiate foundations (like monasteries) also attracted chantry endowments"
+    }
+   ]
+  },
+  {
+   "id": "cathedral",
+   "name": "Cathedral",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": "69975"
+  },
+  {
+   "id": "commissioners-church",
+   "name": "Commissioners' church",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": null,
+   "period": {
+    "text": "from the Church Building Act 1818 (further grant 1824)",
+    "from": 1818
+   },
+   "sources": [
+    {
+     "title": "Commissioners' church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Commissioners'_church",
+     "locator": "lead",
+     "quote": "A Commissioners' church, also known as a Waterloo church and Million Act church, is an Anglican church in England or Wales built with money voted by Parliament as a result of the Church Building Act 1818"
+    }
+   ]
+  },
+  {
+   "id": "ecclesiological-church",
+   "name": "Ecclesiological Gothic Revival church",
+   "family": "Churches",
+   "domain": "Religious",
+   "fish": null,
+   "period": {
+    "text": "from the founding of the Cambridge Camden Society, 1839",
+    "from": 1839
+   },
+   "sources": [
+    {
+     "title": "Cambridge Camden Society",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cambridge_Camden_Society",
+     "locator": "lead",
+     "quote": "The society and its publications enjoyed wide influence over the design of English churches throughout the 19th century, and are often known as the ecclesiological movement."
+    }
+   ]
+  },
+  {
+   "id": "monastery",
+   "name": "Monastery",
+   "family": "Religious houses",
+   "domain": "Religious",
+   "fish": "70152"
+  },
+  {
+   "id": "abbey",
+   "name": "Abbey",
+   "family": "Religious houses",
+   "domain": "Religious",
+   "fish": "70120"
+  },
+  {
+   "id": "priory",
+   "name": "Priory",
+   "family": "Religious houses",
+   "domain": "Religious",
+   "fish": "70177"
+  },
+  {
+   "id": "reformed-houses-continent",
+   "name": "Reformed Benedictine houses of the Continent",
+   "family": "Influences from abroad",
+   "domain": "Religious",
+   "fish": null,
+   "abroad": true,
+   "sources": [
+    {
+     "title": "English Benedictine Reform",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Benedictine_Reform",
+     "locator": "section \"Background\"",
+     "quote": "When Gérard of Brogne reformed the Abbey of Saint Bertin in Saint-Omer along Benedictine lines in 944, dissident monks found a refuge in England under King Edmund (939–946)."
+    }
+   ]
+  },
+  {
+   "id": "clochan",
+   "name": "Clochán (beehive hut)",
+   "family": "Early Christian Ireland",
+   "domain": "Religious",
+   "fish": null,
+   "note": "Most clocháin cannot be dated; some on religious sites may be pre-Romanesque, others 12th century or later.",
+   "sources": [
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "lead",
+     "quote": "A clochán (plural clocháin) or beehive hut is a dry-stone hut with a corbelled roof, commonly associated with the south-western Irish seaboard."
+    },
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "lead",
+     "quote": "Some associated with religious sites may be pre-Romanesque, some consider that the most fully intact structures date after the 12th century or later."
+    }
+   ]
+  },
+  {
+   "id": "corbelled-oratory",
+   "name": "Corbelled stone oratory (Gallarus type)",
+   "family": "Early Christian Ireland",
+   "domain": "Religious",
+   "fish": null,
+   "note": "Gallarus is the only intact example, and its date is disputed: early Christian (Smith 1756), 12th century (Harbison 1970), or a pilgrims' shelter (Harbison 1994).",
+   "sources": [
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "lead",
+     "quote": "It has been presented variously as an early-Christian stone church by antiquary Charles Smith, in 1756; a 12th-century Romanesque church by archaeologist Peter Harbison in 1970; a shelter for pilgrims by the same in 1994."
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Discovery\"",
+     "quote": "As the oratory is the only intact specimen of its type, it has attracted considerable attention, starting from antiquarians in the mid-18th century."
+    }
+   ]
+  },
+  {
+   "id": "irish-round-tower",
+   "name": "Irish round tower",
+   "family": "Early Christian Ireland",
+   "domain": "Religious",
+   "fish": null,
+   "period": {
+    "text": "probably 9th to 12th centuries",
+    "from": 800,
+    "to": 1200
+   },
+   "note": "Their purpose is debated: bell towers by their Irish name, refuges, or (O'Keeffe) high-status royal chapels.",
+   "sources": [
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "lead",
+     "quote": "Irish round towers (Irish: Cloigtheach (singular), Cloigthithe (plural); literally 'bell house') are early medieval stone towers of a type found mainly in Ireland, with two in Scotland and one on the Isle of Man."
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Construction and distribution\"",
+     "quote": "The towers were probably built between the 9th and 12th centuries."
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Purpose\"",
+     "quote": "University College Dublin Professor of Archaeology Tadhg O'Keeffe has suggested that the towers were originally high-status royal chapels"
+    }
+   ]
+  },
+  {
+   "id": "meeting-house",
+   "name": "Nonconformist meeting house",
+   "family": "Nonconformist places of worship",
+   "domain": "Religious",
+   "fish": "92762",
+   "sources": [
+    {
+     "title": "Meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Meeting_house",
+     "locator": "section \"The meeting house in England\"",
+     "quote": "In England, where it originated, a meeting house is distinguished from a church or cathedral by being a place of worship for dissenters or nonconformists."
+    },
+    {
+     "title": "Meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Meeting_house",
+     "locator": "section \"Meeting houses in America\"",
+     "quote": "The nonconformist meeting houses generally do not have steeples"
+    }
+   ]
+  },
+  {
+   "id": "friends-meeting-house",
+   "name": "Friends (Quaker) meeting house",
+   "family": "Nonconformist places of worship",
+   "domain": "Religious",
+   "fish": "70107",
+   "period": {
+    "text": "the first purpose-built one in England in 1670",
+    "from": 1670
+   },
+   "sources": [
+    {
+     "title": "Friends meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Friends_meeting_house",
+     "locator": "section \"History\"",
+     "quote": "In 1670, Friends in England built the first worship-purposed meeting house."
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "basilica>church",
+   "from": "basilica",
+   "to": "church",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The early Church adopted the Roman basilica, a public hall, for congregational worship; churches of that plan kept the name.",
+   "sources": [
+    {
+     "title": "Basilica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basilica",
+     "locator": "section \"Late antiquity\"",
+     "quote": "New religions like Christianity required space for congregational worship, and the basilica was adapted by the early Church for worship."
+    },
+    {
+     "title": "Basilica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basilica",
+     "locator": "lead",
+     "quote": "By extension, the name was later applied to Christian churches that adopted the same basic plan."
+    }
+   ]
+  },
+  {
+   "id": "church>parish-church",
+   "from": "church",
+   "to": "parish-church",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A parish church is the foremost church of a parish.",
+   "sources": [
+    {
+     "title": "Parish church (FISH Thesaurus of Monument Types, concept 69982)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69982.html",
+     "locator": "scope note",
+     "quote": "The foremost church within a parish."
+    }
+   ]
+  },
+  {
+   "id": "minster>parish-church",
+   "from": "minster",
+   "to": "parish-church",
+   "kind": "descent",
+   "confidence": "disputed",
+   "claim": "On John Blair's account, the minsters served wide territories (parochiae) until estate churches built by local landowners, often dependent on the minster, took over parish duties in the 10th and 11th centuries; how planned and how general the minster system was is disputed.",
+   "sources": [
+    {
+     "title": "Minster hypothesis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_hypothesis",
+     "locator": "section \"The underlying ideas\"",
+     "quote": "During 10th and 11th centuries, parochial duties were increasingly taken over by estate churches which were the property of local land owners."
+    },
+    {
+     "title": "Minster hypothesis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_hypothesis",
+     "locator": "section \"The underlying ideas\"",
+     "quote": "The new estate churches were frequently dependent to some extent on the original minster church within whose boundary they were located."
+    },
+    {
+     "title": "Minster hypothesis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_hypothesis",
+     "locator": "section \"Etymology\"",
+     "quote": "The term \"minster hypothesis\" was first used in a critical review by Cambridge and Rollason."
+    },
+    {
+     "title": "Minster hypothesis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_hypothesis",
+     "locator": "section \"Areas of dispute\"",
+     "quote": "the extent to which there was a deliberate and planned programme of establishing minsters to provide parochial services"
+    }
+   ],
+   "views": [
+    "John Blair: early church organisation was based on minsters serving a defined parochia, later divided among estate churches.",
+    "Cambridge and Rollason (and others): how far minsters were planned to give parish services, how many private churches there were early on, and whether all minsters had parish duties are disputed."
+   ]
+  },
+  {
+   "id": "chapel-of-ease>parish-church",
+   "from": "chapel-of-ease",
+   "to": "parish-church",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "A chapel of ease built for an outlying part of a parish can be promoted to a parish church when the parish is divided (St Margaret's, Rochester: chapel of ease 1108, parish church 1488).",
+   "sources": [
+    {
+     "title": "Chapel of ease",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel_of_ease",
+     "locator": "lead",
+     "quote": "When a parish is split because of expanding population a chapel of ease may be promoted to a full parish church."
+    },
+    {
+     "title": "Chapel of ease",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel_of_ease",
+     "locator": "lead",
+     "quote": "Margaret's Church, Rochester in Kent which started as a chapel of ease for the parish of St Nicholas in 1108, became a parish church in 1488"
+    }
+   ]
+  },
+  {
+   "id": "parish-church>round-tower-church",
+   "from": "parish-church",
+   "to": "round-tower-church",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Round-tower churches are parish churches, mostly in East Anglia, whose towers are round because they are built of flint, where corners are hard to make.",
+   "sources": [
+    {
+     "title": "Round towered church (FISH Thesaurus of Monument Types, concept 118514)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/118514.html",
+     "locator": "scope note",
+     "quote": "A church, usually found in East Anglia, of early Medieval and/or Medieval date with attached or detached round tower."
+    },
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "Round-tower churches are found in areas lacking normal building stone, and are therefore built of knapped flint."
+    },
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "Corners are difficult to construct in flint, hence the thick, round walls of the towers."
+    }
+   ],
+   "region": "East Anglia"
+  },
+  {
+   "id": "irish-round-tower>round-tower-church",
+   "from": "irish-round-tower",
+   "to": "round-tower-church",
+   "kind": "convergence",
+   "confidence": "probable",
+   "claim": "Both are round church towers, but they are different types: the Irish towers are tall freestanding towers of monastic sites (by name bell houses), the East Anglian towers are round because of their flint. No source found links their origins.",
+   "sources": [
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "Round-tower churches should not be confused with similarly shaped structures such as the Irish round towers found in Ireland and Scotland"
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "lead",
+     "quote": "As their name Cloigtheach indicates, they were originally bell towers, though they may have been later used for additional purposes."
+    },
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "Corners are difficult to construct in flint, hence the thick, round walls of the towers."
+    }
+   ]
+  },
+  {
+   "id": "minster>collegiate-church",
+   "from": "minster",
+   "to": "collegiate-church",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Before the parish system, many churches were served by communities of secular priests; in England these were the minsters, and the later collegiate churches (colleges of secular canons) continue the form, some keeping the title minster (Beverley).",
+   "sources": [
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"History\"",
+     "quote": "In the early medieval period, before the development of the parish system in Western Christianity, many new church foundations were staffed by groups of secular priests, living a communal life and serving an extensive territory."
+    },
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"History\"",
+     "quote": "In England these churches were termed minsters, from the Latin monasterium, although only a few were truly houses of monks."
+    },
+    {
+     "title": "Minster (church)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_(church)",
+     "locator": "lead",
+     "quote": "The term continued as a title of dignity in later medieval England, in instances where a cathedral, monastery, collegiate church or parish church had originated with an Anglo-Saxon foundation."
+    }
+   ]
+  },
+  {
+   "id": "chantry-chapel>collegiate-church",
+   "from": "chantry-chapel",
+   "to": "collegiate-church",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "Endowments for prayers for the dead (chantries) led to many new collegiate foundations in the later Middle Ages: chantry colleges, often in a rebuilt parish church; both were abolished in 1547.",
+   "sources": [
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"History\"",
+     "quote": "The same impetus to establish endowed prayer also led to many new collegiate foundations in this later period; under which an existing parish church would be rebuilt to accommodate a new chantry college"
+    },
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"England\"",
+     "quote": "They were mostly abolished during the reign of Edward VI in 1547"
+    }
+   ]
+  },
+  {
+   "id": "minster>monastery",
+   "from": "minster",
+   "to": "monastery",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "In the Benedictine Reform under King Edgar (959–975) the secular clergy of many old minsters were expelled and replaced by monks under the Rule of St Benedict. (The surviving accounts are all by supporters of the reform.)",
+   "sources": [
+    {
+     "title": "English Benedictine Reform",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Benedictine_Reform",
+     "locator": "lead",
+     "quote": "The English movement became dominant under King Edgar (959–975), who supported the expulsion of secular clergy from religious establishments, and their replacement by monks."
+    },
+    {
+     "title": "English Benedictine Reform",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Benedictine_Reform",
+     "locator": "section \"Reform and the Crown\"",
+     "quote": "led to court support for the imposition of Benedictine rules on a number of old minsters"
+    },
+    {
+     "title": "English Benedictine Reform",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Benedictine_Reform",
+     "locator": "lead",
+     "quote": "All surviving medieval accounts of the movement are by supporters of reform"
+    }
+   ]
+  },
+  {
+   "id": "reformed-houses-continent>monastery",
+   "from": "reformed-houses-continent",
+   "to": "monastery",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "The English Benedictine Reform of the 10th century took its inspiration from the reformed houses of the Continent.",
+   "sources": [
+    {
+     "title": "English Benedictine Reform",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Benedictine_Reform",
+     "locator": "section \"Early development\"",
+     "quote": "Dunstan and Æthelwold reached maturity in Æthelstan's cosmopolitan, intellectual court in the 930s, where they met monks from the European reformed houses which provided the inspiration for the English movement."
+    }
+   ]
+  },
+  {
+   "id": "monastery>abbey",
+   "from": "monastery",
+   "to": "abbey",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "An abbey is a monastery governed by an abbot or abbess.",
+   "sources": [
+    {
+     "title": "Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Abbey",
+     "locator": "lead",
+     "quote": "An abbey is a type of monastery used by members of a religious order under the governance of an abbot or abbess."
+    },
+    {
+     "title": "Abbey (FISH Thesaurus of Monument Types, concept 70120)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70120.html",
+     "locator": "scope note",
+     "quote": "A religious house governed by an abbot or abbess. Use with narrow terms of DOUBLE HOUSE, MONASTERY or NUNNERY."
+    }
+   ]
+  },
+  {
+   "id": "monastery>priory",
+   "from": "monastery",
+   "to": "priory",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A priory is a monastery governed by a prior or prioress; the first were dependencies of Cluny, and many were dependencies of abbeys.",
+   "sources": [
+    {
+     "title": "Priory (FISH Thesaurus of Monument Types, concept 70177)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70177.html",
+     "locator": "scope note",
+     "quote": "A monastery governed by a prior or prioress. Use with narrow terms of DOUBLE HOUSE, FRIARY, MONASTERY or NUNNERY."
+    },
+    {
+     "title": "Priory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Priory",
+     "locator": "section \"History\"",
+     "quote": "Priories first came to existence as subsidiaries to the Abbey of Cluny."
+    },
+    {
+     "title": "Priory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Priory",
+     "locator": "section \"History\"",
+     "quote": "Simple or obedientiary priories are dependencies of abbeys."
+    }
+   ]
+  },
+  {
+   "id": "abbey>cathedral",
+   "from": "abbey",
+   "to": "cathedral",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "Many English cathedrals were Benedictine abbeys: when an abbey church became a cathedral the community became a cathedral priory. Monastic cathedrals are almost unknown outside the isles.",
+   "sources": [
+    {
+     "title": "Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Abbey",
+     "locator": "section \"Benedictine abbeys in England\"",
+     "quote": "Many of today's cathedrals in England were originally Benedictine monasteries."
+    },
+    {
+     "title": "Priory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Priory",
+     "locator": "lead",
+     "quote": "In pre-Reformation England, if an abbey church was raised to cathedral status, the abbey became a cathedral priory."
+    },
+    {
+     "title": "Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cathedral",
+     "locator": "section \"Late Middle Ages: monastic and secular cathedrals\"",
+     "quote": "Outside Great Britain, monastic cathedrals are known only at Monreale in Sicily and Downpatrick in Ireland."
+    }
+   ],
+   "region": "England"
+  },
+  {
+   "id": "clochan>corbelled-oratory",
+   "from": "clochan",
+   "to": "corbelled-oratory",
+   "kind": "descent",
+   "confidence": "probable",
+   "claim": "Dry-stone corbelled churches like Gallarus Oratory may derive from the corbelled beehive huts (clocháin) of the same coast.",
+   "sources": [
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "section \"Locations\"",
+     "quote": "Elaborate dry walled stone churches like the Gallarus Oratory may derive from the clochán."
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Morphology\"",
+     "quote": "The edifice uses corbel vaulting."
+    }
+   ],
+   "region": "south-west Ireland"
+  },
+  {
+   "id": "meeting-house>friends-meeting-house",
+   "from": "meeting-house",
+   "to": "friends-meeting-house",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Friends meeting house is the meeting house of the Quakers, who met in the open or in homes until the first purpose-built one in 1670.",
+   "sources": [
+    {
+     "title": "Friends meeting house (FISH Thesaurus of Monument Types, concept 70107)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70107.html",
+     "locator": "scope note",
+     "quote": "A place of worship for members of the Religious Society of Friends, often known as Quakers."
+    },
+    {
+     "title": "Friends meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Friends_meeting_house",
+     "locator": "section \"History\"",
+     "quote": "Before the advent of meeting houses, Quakers met for worship outdoors, in homes, or in local buildings."
+    }
+   ]
+  },
+  {
+   "id": "parish-church>commissioners-church",
+   "from": "parish-church",
+   "to": "commissioners-church",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "Most Commissioners' churches outside London were built in a late Georgian Gothic Revival style, with little concern for accurate medieval detail.",
+   "sources": [
+    {
+     "title": "Commissioners' church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Commissioners'_church",
+     "locator": "section \"The commission\"",
+     "quote": "outside London most commissioners' churches conformed to a characteristic late Georgian Gothic Revival style, with little concern for accurate reproduction of medieval Gothic features."
+    }
+   ]
+  },
+  {
+   "id": "parish-church>ecclesiological-church",
+   "from": "parish-church",
+   "to": "ecclesiological-church",
+   "kind": "revival",
+   "confidence": "documented",
+   "claim": "The Cambridge Camden Society (Ecclesiological Society) argued for a return to medieval church architecture and reshaped the design of the English parish church in the 19th century.",
+   "sources": [
+    {
+     "title": "Cambridge Camden Society",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cambridge_Camden_Society",
+     "locator": "lead",
+     "quote": "advocating a return to a medieval style of church architecture in England, known as Gothic Revival architecture."
+    },
+    {
+     "title": "Cambridge Camden Society",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cambridge_Camden_Society",
+     "locator": "lead",
+     "quote": "almost single-handedly reinvented the architectural design of the parish church."
+    }
+   ]
+  }
+ ]
+}

@@ -5,7 +5,8 @@ from unittest import mock
 from bidb import glossary
 
 FISH = {"70096": {"note": "Circular enclosure with a bank. Use more specific type where known."},
-        "68841": {"note": "An earthen mound for a castle tower."}}
+        "68841": {"note": "An earthen mound for a castle tower."},
+        "71335": {"note": "A medieval house with central open hall."}}
 DATA = {"groups": ["Archaeology", "In this app", "Periods", "Building types"],
         "terms": [{"term": "Henge", "group": "Archaeology", "fish": "70096", "see": ["Cut-off year"]},
                   {"term": "Cut-off year", "group": "In this app", "text": "Begun before 1500."},
@@ -24,6 +25,8 @@ class GlossaryTest(unittest.TestCase):
         henge = next(t for t in self.entries() if t["term"] == "Henge")
         self.assertEqual(henge["text"], "Circular enclosure with a bank.")
         self.assertIn("/70096.html", henge["source"]["url"])
+        # "house with" is not the advice "Use with"
+        self.assertEqual(glossary.scope_note(FISH["71335"]), "A medieval house with central open hall.")
 
     def test_missing_fish_concept_left_out_and_periods_added(self):
         names = [t["term"] for t in self.entries()]

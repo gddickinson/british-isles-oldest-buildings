@@ -180,6 +180,7 @@ function renderDetail(b, inModal) {
       ${b.wikipedia_extract ? `<h4>About</h4>${b.wikipedia_extract.split(/\n+/).map((p) => `<p>${esc(p)}</p>`).join("")}` : ""}
       <div class="stories-box" data-stories="${esc(b.id)}"></div>
       <div class="timeline-box" data-timeline="${esc(b.id)}"></div>
+      <div class="types-box" data-types-here="${esc(b.id)}"></div>
       <div class="trade-box" data-trade-here="${esc(b.id)}"></div>
       <div class="then-box" data-then="${esc(b.id)}"></div>
       <div class="evidence-box" data-evidence="${esc(b.id)}"></div>

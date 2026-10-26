@@ -18,7 +18,8 @@ from .config import DATA_DIR
 PATH = DATA_DIR / "curated" / "glossary.json"
 FISH = {"title": "FISH Thesaurus of Monument Types (Historic England, OGL v3.0)",
         "url": "https://www.heritagedata.org/live/schemes/eh_tmt2/concepts/{}.html"}
-ADVICE = re.compile(r"\s*(Use (?:with |only |more |wider |specific |the )[^.]*\.|Index (?:with|under) [^.]*\.)", re.I)
+# the advice's own sentences only: "house with" is no "Use with" (case and word boundary matter)
+ADVICE = re.compile(r"\s*\b(Use (?:with |only |more |wider |specific |the )[^.]*\.|Index (?:with|under) [^.]*\.)")
 
 
 def load():

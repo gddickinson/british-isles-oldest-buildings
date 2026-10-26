@@ -1633,3 +1633,26 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (Sheffield Cathedral, Woodchester Roman Villa, Ormesby Hall...), for the date review.
 - Tests 356 OK (5 new in `test_date_mining`). No GUI change; hosted copy and bundled release not updated.
 - Next: BT3c with BT4 (the /types page).
+
+## 2026-10-26 — BT4a: the page /types (family tree, type and material pages), BT3c1
+- BT4 split into BT4a (the local page, done) and BT4b (the hosted copy, with BT7); BT3c into BT3c1 (materials on the
+  detail views, type pages and material pages, done here) and BT3c2 (a material's region over the geology layer).
+- New `bidb/type_pages.py` (tree, type page, materials, material page, types here) and five endpoints in
+  `app/types_api.py` (`/api/type_tree` kept until the database file changes: 2 s of counting, then 2 ms).
+- New page `/types` (nav "Building types"): `types_tree.js` draws every type as a row on the Map slider's non-linear
+  time axis, the period of use as a bar (thick while flourishing), the earliest surviving example as a dot, the links
+  as branches at the later type's first date (colour by kind; dashed disputed, faint probable; links between domains
+  only on hover, else long lines crossed the whole chart); families fold, domain chips, search, link kinds as
+  checkboxes. `types_view.js`: per type and per material, the FISH definition, period, structure, plan, materials,
+  family links with claims/views/quoted sources, earliest surviving example, begun per century, by nation, map,
+  dated examples (materials: with the evidence sentence), sources. `types_here.js`: detail views of records and
+  places say "This is a Wealden house (Hall houses): see its family" and list the materials found.
+- Fixed: `glossary.ADVICE` cut 52 FISH scope notes at "house with" ("Use with" matched case-insensitively mid-word);
+  the Glossary page had the same truncations.
+- Checked in headless Chrome: tree (light, dark), Wealden house, brick at 390 px, The Wealden Hall's detail view.
+  Nav link hidden in the hosted copy until BT4b.
+- Emergent: register-period dates ("Prehistoric domestic and defensive") count as real dates for the earliest
+  surviving example (Roundhouse: a HES place dated -2000).
+- Tests 362 OK (6 new `test_type_pages`, 1 in `test_glossary`); ui_check types, type_page, material_page,
+  types_here OK. Hosted copy not updated.
+- Next: BT5 (charts: types in use through time, materials by century) or BT4b with BT7.

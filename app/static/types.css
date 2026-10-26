@@ -1,0 +1,60 @@
+/* Building types page (/types, BT4a): family tree on a time axis, type and material views, detail-view box */
+.tt-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); margin: 6px 0 10px; }
+.tt-key { display: inline-flex; align-items: center; gap: 5px; }
+.tt-key i { display: inline-block; width: 22px; }
+.tt-key-span { border-top: 2px solid var(--muted); opacity: .6; }
+.tt-key-flourish { border-top: 5px solid var(--accent); border-radius: 3px; }
+.tt-key-dot { width: 7px !important; height: 7px; border-radius: 50%; background: var(--ink); }
+.tt-key-link { border-top: 2px solid var(--muted); }
+.tt-key-link.disputed { border-top-style: dashed; }
+.tt-key-link.probable { opacity: .45; }
+.tt-box { overflow-x: auto; }
+.tt-svg { display: block; font-size: 12px; }
+.tt-axis text { fill: var(--muted); font-size: 10.5px; }
+.tt-grid { stroke: var(--line); stroke-width: 1; }
+.tt-domain-band { fill: var(--accent-soft); }
+.tt-domain { font-weight: 700; font-size: 13.5px; fill: var(--accent); }
+.tt-family { cursor: pointer; }
+.tt-family text { font-weight: 600; fill: var(--ink); }
+.tt-family:focus-visible text, .tt-type:focus-visible .tt-label { outline: none; text-decoration: underline; }
+.tt-type { cursor: pointer; }
+.tt-hit { fill: transparent; }
+.tt-type:hover .tt-hit, .tt-type:focus .tt-hit { fill: var(--band-alt); opacity: .55; }
+.tt-label { fill: var(--ink); }
+.tt-type.abroad .tt-label { font-style: italic; fill: var(--muted); }
+.tt-count { fill: var(--muted); font-size: 10.5px; }
+.tt-span { stroke: var(--muted); stroke-width: 2; opacity: .55; stroke-linecap: round; }
+.tt-span.ongoing { stroke-dasharray: none; }
+.tt-flourish { stroke: var(--accent); stroke-width: 6; stroke-linecap: round; }
+.tt-type.abroad .tt-flourish { stroke: var(--muted); }
+.tt-earliest { fill: var(--ink); stroke: var(--panel); stroke-width: 1; }
+.tt-link { fill: none; stroke-width: 1.3; opacity: .5; }
+.tt-link.probable { opacity: .28; }
+.tt-link.disputed { stroke-dasharray: 4 3; }
+.tt-link.far { opacity: 0; }
+.tt-svg.focus .tt-link { opacity: .07; }
+.tt-svg.focus .tt-link.far { opacity: 0; }
+.tt-svg.focus .tt-link.on, .tt-svg.focus .tt-link.far.on { opacity: 1; stroke-width: 2.2; }
+.ty-links dt { font-weight: 600; margin-top: 8px; }
+.ty-links dd { margin: 2px 0 4px 14px; }
+.ty-links details summary { font-size: 13px; color: var(--muted); cursor: pointer; }
+.ty-conf { font-size: 11px; padding: 0 6px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.ty-conf.disputed { border-style: dashed; color: var(--accent); }
+.ty-flag { font-size: 11px; padding: 0 6px; border-radius: 999px; background: var(--warn-soft); }
+.ty-sources li { margin: 3px 0; }
+.ty-earliest { display: flex; gap: 12px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; padding: 10px; margin: 10px 0; }
+.ty-earliest img { width: 96px; height: 72px; object-fit: cover; border-radius: 6px; }
+.ty-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.ty-grid .stories-map { height: 420px; position: static; }
+.ty-matlist li { margin: 4px 0; }
+.ty-here-mats { margin: 4px 0; padding-left: 18px; }
+@media (max-width: 760px) {
+  .ty-grid { grid-template-columns: 1fr; }
+  .ty-grid .stories-map { height: 300px; }
+}
+.types-page .gl-tools { display: flex; gap: .8rem; align-items: center; flex-wrap: wrap; margin: .8rem 0 .3rem; }
+.types-page .gl-tools input[type=search] { flex: 0 1 280px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--panel); color: var(--ink); font-size: 15px; }
+.types-page #ty_tabs { display: inline-flex; margin-top: 4px; }
+.ty-links { display: block; }

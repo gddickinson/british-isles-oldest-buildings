@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 206 reviewed date corrections.
-- Building types: 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; local only); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
   isles types with examples, 220 with an earliest surviving example (BT1d).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -682,16 +682,36 @@ the descent of a type is disputed, both views are given and the link is drawn as
       Woodchester Roman Villa (c. AD 325 vs 2nd century), St Mary Magdalene (675 vs 12th century), St James Antony
       (1259 vs 12th century), St Michael (1440 vs 13th century), Ston Easton (11th vs 15th century), Ormesby Hall
       (c. 1600 vs 1754): review with the 69 in `docs/date_review.md`.
+- [ ] Register-period dates as earliest examples (emergent 2026-10-26, seen on the /types tree): the earliest
+      surviving Roundhouse is "1 Ironshill Farm Cottages, settlements, barrow and pits", a HES place dated -2000 only
+      from its register period ("Prehistoric domestic and defensive"); `type_stats.estimated` catches only dates that
+      say "estimate". Treat "(register period)" dates as estimates for the earliest example, and review the types
+      whose earliest example changes.
+- [x] FISH scope notes cut short (found in BT4a, fixed 2026-10-26): `glossary.ADVICE` matched "use with" inside
+      "house with" (case-insensitive, no word boundary), so 52 notes (Wealden house: "A medieval ho") were cut on the
+      Glossary page too; now case-sensitive at a word boundary.
 - [ ] Generic stones for BT3 (emergent 2026-10-26): sandstone (334 Wikidata items, 938 text mentions), limestone,
       granite, marble, chalk, Coade stone and local freestones (Ancaster, Ketton, Hopton Wood, Heavitree, Yorkstone)
       have no entry in materials_*.json, so they are left out of material_map; research them as BT3a entries (sourced
       periods and regions) and map them.
 - [ ] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
-      layer.
+      layer. Split 2026-10-26: BT3c1 (materials on the detail views, the type pages and a material page of their
+      own) is done with BT4a (2026-10-26); BT3c2 (the region over the geology layer) left open.
 - [ ] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
       its years; solid lines for documented descent, dashed for disputed), a type page per type (definition, how to
       recognise it, features, materials, plan, period chart, map of examples, the oldest surviving, family links,
       sources), and a search; reachable from detail views ("This is a Wealden house: see its family").
+      Split 2026-10-26: BT4a the local page (done), BT4b the hosted copy's /types (with BT7).
+- [x] BT4a (2026-10-26) The page `/types` in the local GUI (new `bidb/type_pages.py`, `app/static/types_tree.js`,
+      `types_view.js`, `types_page.js`, `types_here.js`, `types.css`; five endpoints in `app/types_api.py`): the
+      family tree on the Map slider's time axis, 285 isles types and 26 abroad in 14 domains, bars for the period of
+      use (thick while flourishing), a dot for the earliest surviving example, the 309 links as branches at the later
+      type's first date (colour by kind, dashed disputed, faint probable; links between domains only on hover), folding
+      families, domain chips, search; a page per type (FISH definition, period, structure, plan, materials curated and
+      found in its records, family links with claims, views and quoted sources, earliest surviving example, begun per
+      century and by nation, map, dated examples) and per material (BT3c1); detail views say "This is a Wealden house:
+      see its family" and list the materials with the sentence that names them. Nav link hidden in the hosted copy.
+- [ ] BT4b The hosted copy's /types: static data for the tree, type and material pages (with BT7).
 - [ ] BT5 Charts: types in use through time (a stream/swimlane chart of each family's span, linked to the Map
       page's slider), materials by century (from catalogue records with a recorded material), the spread of a type
       across the isles over time (first dates by county), and "what came next" chains.

@@ -107,6 +107,11 @@ def pronunciation():
     return render_template("pronunciation.html", page="pron")
 
 
+@bp.route("/types")
+def building_types():
+    return render_template("types.html", page="types")
+
+
 @bp.route("/glossary")
 def glossary():
     return render_template("glossary.html", page="glossary")

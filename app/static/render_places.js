@@ -129,6 +129,7 @@ function placeDetailHTML(p) {
       ${keptHereHTML(ex.kept_here)}
       ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}` : ""}
       <div class="stories-box" data-stories="${esc(p.id)}"></div>
+      <div class="types-box" data-types-here="${esc(p.id)}"></div>
       <div class="trade-box" data-trade-here="${esc(p.id)}"></div>
       <div class="then-box" data-then="${esc(p.id)}"></div>
       <div class="evidence-box" data-evidence="${esc(p.id)}"></div>

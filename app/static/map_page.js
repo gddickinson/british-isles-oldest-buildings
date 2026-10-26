@@ -238,6 +238,7 @@ exTime = TimeSlider.mount(E$("#ex_time"), {
 wireChange();
 loadBuildings();
 markFromUrl();
+{ const y = parseInt(new URLSearchParams(location.search).get("year"), 10); if (!Number.isNaN(y)) exTime.setYear(y); }
 wireTrades();
 
 // Building links inside a detail view open in this page's modal

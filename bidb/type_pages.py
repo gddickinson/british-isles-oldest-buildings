@@ -5,13 +5,14 @@ mapped to them (bidb.type_stats, bidb.material_stats).
     tree      every type (isles types with their counts and earliest surviving example; types abroad that the
               links reach, flagged), domains and families in file order, and the links between types
     type      one type: definition, period, structure, plan, links in and out with their sources, the materials
-              the curated file gives it and those found in its records, examples, by nation and century, map
+              the curated file gives it and those found in its records, examples, by nation and century, map;
+              what came before and after and its first example per county (bidb.type_charts, BT5)
     materials every material and technique by group, with counts
     material  one material: definition, period, regions, technology, geology, links, building types (curated and
               among its records), examples with the evidence sentence, by nation and century, map
     here      the types and materials of one record or place (detail views)
 """
-from . import building_materials, building_types, material_stats, type_stats
+from . import building_materials, building_types, material_stats, type_charts, type_stats
 
 FISH_URL = "https://www.heritagedata.org/live/schemes/{}/concepts/{}.html"
 TOP = 12                    # materials of a type's records, types of a material's records
@@ -81,6 +82,8 @@ def type_page(conn, type_id, data=None, mdata=None):
     d["materials"] = [{"id": m["id"], "name": m["name"], "group": m["group"], "kind": m["kind"]}
                       for m in building_materials.for_type(type_id, mdata)]
     d["record_materials"] = _materials_of_type(conn, type_id, mats) if not d.get("abroad") else []
+    d["chains"] = type_charts.chains(type_id, data)                                  # BT5
+    d["spread"] = [] if d.get("abroad") else type_charts.spread(conn, type_id, data)
     return d
 
 

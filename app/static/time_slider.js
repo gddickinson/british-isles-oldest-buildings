@@ -108,7 +108,13 @@ const TimeSlider = (() => {
         if (+range.value >= 1000) play.click();
       }, 60);
     });
-    return { refresh: redrawHist, year: () => (on.checked ? current() : null) };
+    // switch on at a year (the Map page's ?year=, from "Show the map at this year" on /types)
+    const setYear = (y) => {
+      visible(true, false);
+      range.value = toPos(y);
+      if (!on.checked) { on.checked = true; on.dispatchEvent(new Event("change")); } else update();
+    };
+    return { refresh: redrawHist, year: () => (on.checked ? current() : null), setYear };
   }
 
   return { mount, standing, endOf, toYear, toPos, label };

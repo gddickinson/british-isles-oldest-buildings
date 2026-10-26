@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 206 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; local only); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; local only); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,713 records (69.8%) and 58,753 places typed, 247 of 285
   isles types with examples, 220 with an earliest surviving example (BT1d).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -682,6 +682,8 @@ the descent of a type is disputed, both views are given and the link is drawn as
       Woodchester Roman Villa (c. AD 325 vs 2nd century), St Mary Magdalene (675 vs 12th century), St James Antony
       (1259 vs 12th century), St Michael (1440 vs 13th century), Ston Easton (11th vs 15th century), Ormesby Hall
       (c. 1600 vs 1754): review with the 69 in `docs/date_review.md`.
+- [ ] Clackmannan Tower (emergent 2026-10-26, seen in BT5's spread chart): year 1301 with the date text "Late 14th
+      century"; check how the year and the text disagree and whether other records do the same.
 - [ ] Register-period dates as earliest examples (emergent 2026-10-26, seen on the /types tree): the earliest
       surviving Roundhouse is "1 Ironshill Farm Cottages, settlements, barrow and pits", a HES place dated -2000 only
       from its register period ("Prehistoric domestic and defensive"); `type_stats.estimated` catches only dates that
@@ -712,9 +714,16 @@ the descent of a type is disputed, both views are given and the link is drawn as
       century and by nation, map, dated examples) and per material (BT3c1); detail views say "This is a Wealden house:
       see its family" and list the materials with the sentence that names them. Nav link hidden in the hosted copy.
 - [ ] BT4b The hosted copy's /types: static data for the tree, type and material pages (with BT7).
-- [ ] BT5 Charts: types in use through time (a stream/swimlane chart of each family's span, linked to the Map
-      page's slider), materials by century (from catalogue records with a recorded material), the spread of a type
-      across the isles over time (first dates by county), and "what came next" chains.
+- [x] BT5 (2026-10-26) Charts (new `bidb/type_charts.py`, `app/static/types_time.js`, `/api/material_centuries`):
+      tab "Through time" on /types (`?tab=time&year=`): types in use per domain at each date (an area per domain on
+      the Map slider's axis, from the curated periods; a year to choose lists the types in use then, 79 in 1300, and
+      "Show the map at this year" opens /map?year=, which now switches the slider on there), materials by century
+      begun (91 materials, rows shaded against their own busiest century, first known date ticked, too-early records
+      left out); on each type page the spread across the isles (counties with a dated example by each date, step
+      chart, first example per county: motte and bailey 63 counties, tower house 40) and "what came before and what
+      came next" (lines of descent, replacement and revival, no type twice; forms without lines of their own show
+      their general type's: Wealden house → hall house's; 207 of 311 types have lines). Century-only dates gather at
+      1001, 1101… in the spread chart (said under it). Local GUI only (hosted with BT4b).
 - [ ] BT6 Generated examples (George's building-gen, `~/Documents/GitHub/building-gen`, MIT, own project: procedural
       glTF buildings from period-correct construction rules; 4 of its 29 researched types implemented: Georgian
       townhouse, Victorian terrace, cottage, medieval tavern). First check its accuracy against the sources and the

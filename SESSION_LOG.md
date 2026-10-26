@@ -1656,3 +1656,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 362 OK (6 new `test_type_pages`, 1 in `test_glossary`); ui_check types, type_page, material_page,
   types_here OK. Hosted copy not updated.
 - Next: BT5 (charts: types in use through time, materials by century) or BT4b with BT7.
+
+## 2026-10-26 — BT5: charts of building types and materials through time
+- New `bidb/type_charts.py` (`spread`, `chains`, `centuries`), `app/static/types_time.js` (`TypeTime`), endpoint
+  `/api/material_centuries`; `type_pages.type_page` now carries `chains` and `spread`.
+- /types has a third tab "Through time" (`?tab=time&year=`): types in use per domain at each date (one area per
+  domain on the Map slider's non-linear axis, counted in the browser from the tree's periods; hover gives every
+  domain's count; a year lists the types in use then, 79 in 1300, 98 in 1500) with "Show the map at this year" →
+  `/map?year=`, which now switches the Map page's slider on at that year (`TimeSlider.setYear`); and materials by
+  century begun (heatmap of 91 materials, each row against its own busiest century, the first known date ticked).
+- Type pages: "What came before and what came next" (descent, replacement and revival lines; forms such as the
+  Wealden house show their general type's lines; 207 of 311 types have some) and "Spread across the isles"
+  (counties with a dated example by each date, first example per county: motte and bailey 63 counties).
+- Seen: century-only dates pile up at 1001, 1101… in the spread chart (noted under it); Clackmannan Tower is year
+  1301 with date text "Late 14th century" (catalogue date to check with the date review).
+- Checked in headless Chrome: the tab (light), motte and bailey's page, /map?year=1300, the tab at 390 px dark
+  (labels moved above the rows on narrow screens).
+- Tests 370 OK (4 new `test_type_charts`); ui_check types_time, type_chains and the other /types pages OK.
+  Hosted copy not updated (BT4b).
+- Next: BT4b with BT7 (hosted copy of /types, Help, figures, quiz questions), or the register-period dates as
+  earliest examples.

@@ -12,6 +12,7 @@
     <div class="tabs" id="ty_tabs" role="tablist">
       <button class="tab" type="button" data-tab="tree">Family tree</button>
       <button class="tab" type="button" data-tab="materials">Materials and techniques</button>
+      <button class="tab" type="button" data-tab="time">Through time</button>
     </div>
     <div id="ty_tree_view">
       <div class="gl-tools">
@@ -26,6 +27,10 @@
         fold it. The time axis gives early millennia less room than recent centuries.</p>
     </div>
     <div id="ty_mats" hidden></div>
+    <div id="ty_time" hidden>
+      <h2>Types in use</h2><div id="ty_inuse"></div>
+      <h2>Materials and techniques by century</h2><div id="ty_matcent"><p class="hint">Loading…</p></div>
+    </div>
   </div>
   <div id="ty_one" hidden>
     <p><a href="{{ url_for('pages.building_types') }}" id="ty_back">← Building types</a></p>
@@ -43,6 +48,7 @@
 <script src="{{ url_for('static', filename='charts.js') }}"></script>
 <script src="{{ url_for('static', filename='time_slider.js') }}"></script>
 <script src="{{ url_for('static', filename='types_tree.js') }}"></script>
+<script src="{{ url_for('static', filename='types_time.js') }}"></script>
 <script src="{{ url_for('static', filename='types_view.js') }}"></script>
 <script src="{{ url_for('static', filename='types_page.js') }}"></script>
 {% endblock %}

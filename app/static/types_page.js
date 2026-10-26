@@ -1,10 +1,11 @@
 // Building types page (/types, BT4a): the family tree on a time axis (TypeTree) with domain chips, a search and the
-// link kinds to draw; the materials and techniques by group; one type (?t=<id>) or material (?m=<id>) (TypeView).
+// link kinds to draw; the materials and techniques by group; charts through time (TypeTime, BT5, ?tab=time&year=);
+// one type (?t=<id>) or material (?m=<id>) (TypeView).
 (async () => {
   const $ = (s) => document.querySelector(s);
   const tree = await api("/api/type_tree");
   const state = { domain: "", q: "", kinds: new Set(Object.keys(TypeTree.KINDS)), collapsed: new Set() };
-  let mats = null;
+  let mats = null, cents = null, timeDrawn = false;
 
   $("#ty_domains").innerHTML = [["", "All"], ...tree.tree.map(([d]) => [d, d])]
     .map(([d, label]) => `<button type="button" data-d="${esc(d)}" class="${d === state.domain ? "on" : ""}">${esc(label)}</button>`).join("");
@@ -28,7 +29,16 @@
           m.earliest ? ` · earliest: ${esc(m.earliest.name)} (${esc(m.earliest.date_text || TypeTree.yearText(m.earliest.year))})` : ""}</span></li>`).join("")}</ul>`).join("")}`;
   }
 
-  // which view: the tree, the materials, one type or one material
+  async function drawTime() {
+    const y = +new URLSearchParams(location.search).get("year") || 1500;
+    if (!timeDrawn) TypeTime.inUse($("#ty_inuse"), tree, {
+      year: y, onOpen: (yr) => history.replaceState(null, "", location.pathname + "?" + new URLSearchParams({ tab: "time", year: yr })) });
+    timeDrawn = true;
+    cents = cents || await api("/api/material_centuries");
+    if (!$("#ty_matcent .tt-heat")) TypeTime.materials($("#ty_matcent"), cents);
+  }
+
+  // which view: the tree, the materials, the charts through time, one type or one material
   async function show() {
     const p = new URLSearchParams(location.search), t = p.get("t"), m = p.get("m"), tab = p.get("tab") || "tree";
     const one = t || m;
@@ -48,7 +58,8 @@
     document.title = "Building types · British Isles Oldest Buildings";
     $("#ty_tree_view").hidden = tab !== "tree";
     $("#ty_mats").hidden = tab !== "materials";
-    tab === "tree" ? drawTree() : drawMaterials();
+    $("#ty_time").hidden = tab !== "time";
+    tab === "tree" ? drawTree() : tab === "time" ? drawTime() : drawMaterials();
   }
   function go(params) {
     history.pushState(null, "", location.pathname + "?" + new URLSearchParams(params));
@@ -86,9 +97,10 @@
   window.addEventListener("popstate", show);
   let width = window.innerWidth;
   window.addEventListener("resize", () => {
-    if (Math.abs(window.innerWidth - width) < 40 || $("#ty_tree_view").hidden || !$("#ty_one").hidden) return;
+    if (Math.abs(window.innerWidth - width) < 40 || !$("#ty_one").hidden) return;
     width = window.innerWidth;
-    drawTree();
+    if (!$("#ty_tree_view").hidden) drawTree();
+    if (!$("#ty_time").hidden) { timeDrawn = false; drawTime(); }
   });
   show();
 })();

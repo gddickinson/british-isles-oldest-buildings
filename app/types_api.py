@@ -1,11 +1,12 @@
 """Building types (BT2b, BT4a) and materials (BT3c1): `/api/types` (every isles type: counts, period, earliest
 surviving example), `/api/type/<id>` (one type, bidb.type_stats), `/api/types_of/<record or place id>` (the types of
 one record, primary first); for the page /types (bidb.type_pages): `/api/type_tree`, `/api/type_page/<id>`,
-`/api/materials`, `/api/material/<id>`, `/api/types_here/<record or place id>` (types and materials, detail views)."""
+`/api/materials`, `/api/material/<id>`, `/api/types_here/<record or place id>` (types and materials, detail views);
+`/api/material_centuries` (BT5: materials by the century their records were begun, bidb.type_charts)."""
 from flask import Blueprint, abort, jsonify
 
 from bidb.config import db_path
-from bidb import building_materials, building_types, type_pages, type_stats
+from bidb import building_materials, building_types, type_charts, type_pages, type_stats
 
 from .common import conn
 
@@ -77,3 +78,8 @@ def material(mid):
 @bp.route("/api/types_here/<rid>")
 def types_here(rid):
     return jsonify(type_pages.here(conn(), rid, _data(), _mdata()))
+
+
+@bp.route("/api/material_centuries")
+def material_centuries():
+    return jsonify(type_charts.centuries(conn(), _mdata()))

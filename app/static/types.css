@@ -58,3 +58,26 @@
   background: var(--panel); color: var(--ink); font-size: 15px; }
 .types-page #ty_tabs { display: inline-flex; margin-top: 4px; }
 .ty-links { display: block; }
+/* BT5: charts through time */
+.tt-year { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 8px 0; }
+.tt-year input[type=range] { width: min(420px, 60vw); vertical-align: middle; }
+.tt-area { fill: var(--accent); opacity: .55; }
+.tt-base { stroke: var(--line); }
+.tt-mark { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.tt-inuse-list p { margin: 4px 0; font-size: 14px; }
+.tt-heat { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
+.tt-heat thead th { height: 74px; vertical-align: bottom; font-weight: 400; color: var(--muted); }
+.tt-heat thead th span { display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; }
+.tt-heat tbody th[scope=row] { text-align: left; font-weight: 400; white-space: nowrap; padding-right: 8px; max-width: 220px;
+  overflow: hidden; text-overflow: ellipsis; }
+.tt-heat-group th { text-align: left; font-weight: 700; color: var(--accent); padding-top: 8px; }
+.tt-heat td { width: 18px; min-width: 18px; height: 16px; border-radius: 3px;
+  background: color-mix(in srgb, var(--accent) calc(var(--v) * 100%), var(--accent-soft)); }
+.tt-heat td.first { box-shadow: inset 2px 0 0 var(--ink); }
+.tt-step { fill: none; stroke: var(--accent); stroke-width: 2; }
+.tt-dot { fill: var(--accent); stroke: var(--panel); stroke-width: 2; cursor: default; }
+.tt-chains { padding-left: 18px; }
+.tt-chains li { margin: 5px 0; line-height: 1.6; }
+.tt-chains a.abroad { font-style: italic; }
+.tt-arrow { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+.tt-arrow.disputed, .tt-arrow.probable { font-style: italic; }

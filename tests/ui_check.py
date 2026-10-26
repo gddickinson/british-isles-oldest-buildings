@@ -42,6 +42,8 @@ PAGES = {
     "law_events": ("/change", r"(?s)Statute of Labourers.*Bubble Act.*Slavery abolished; slave owners compensated.*Big Bang"),
     "types": ("/types", r"(?s)Building types.*Family tree.*Domestic.*Wealden house"),
     "type_page": ("/types?t=wealden-house", r"(?s)Wealden house.*A medieval house with central open hall.*A form of.*Hall house.*Earliest surviving example"),
+    "types_time": ("/types?tab=time&year=1300", r"(?s)Types in use.*types in use in 1300.*Motte and bailey.*Materials and techniques by century.*Rubble masonry"),
+    "type_chains": ("/types?t=motte-and-bailey", r"(?s)What came before and what came next.*Ringfort.*Concentric castle.*Spread across the isles.*counties"),
     "material_page": ("/types?m=brick", r"(?s)Brick.*Main types of its records.*Revival of.*Roman brick and tile"),
     "types_here": ("/building/Q17530628", r"(?s)Building type and materials.*Wealden house.*see its family"),
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),

@@ -1,7 +1,8 @@
 // Building types (BT4a) and materials (BT3c1): the view of one type (/types?t=<id>) or one material (/types?m=<id>):
 // definition (FISH scope note), period, structure and plan, family links with their claims and quoted sources, the
 // materials of the type (curated and found in its records), the earliest surviving example, examples by century and
-// nation, a map, examples oldest first and the sources. TypeView.type(el, d, names), TypeView.material(el, d).
+// nation, a map, its spread across the counties and what came before and after (TypeTime, BT5), examples oldest first
+// and the sources. TypeView.type(el, d, names), TypeView.material(el, d).
 const TypeView = (() => {
   const yt = TypeTree.yearText;
   // the link as read from this side: [label, other end]
@@ -84,16 +85,17 @@ const TypeView = (() => {
       <h2>${esc(t.name)}</h2>${definition(d, t.note)}${d.definition && t.note ? `<p class="prose">${esc(t.note)}</p>` : ""}
       <p><b>In use:</b> ${esc(TypeTree.periodText(p))}. ${esc(cap(p.text))}</p>
       ${t.structure ? `<p><b>Structure:</b> ${esc(t.structure)}</p>` : ""}${t.plan ? `<p><b>Plan:</b> ${esc(t.plan)}</p>` : ""}
-      ${mats}${recMats}${links(d.links, typeUrl)}
+      ${mats}${recMats}${links(d.links, typeUrl)}${TypeTime.chains(d.chains, t.name)}
       ${d.abroad ? "" : `<h3>In the catalogue</h3><p>${counts(d)}${d.dated ? `, ${d.dated.toLocaleString()} dated` : ""}${
         d.too_early ? `; ${d.too_early.toLocaleString()} begun more than a century before the first known date (later use of an older building, or an error)` : ""}.
         <a href="${IS_STATIC ? "index.html" : "/"}?q=${encodeURIComponent(t.name)}">Search the catalogue</a></p>
       ${earliest(d.earliest, "Standing or a ruin, of which this is the main type, not dated from the type itself and not too early.")}
       <div class="ty-grid"><div><h4>Begun per century</h4><div class="ty-century"></div><h4>By nation</h4><div class="ty-nation"></div></div>
         <div><div class="ty-map stories-map"></div><p class="hint">Blue: catalogue records, orange: places; faint where it is not the main type.</p></div></div>
+      <div class="ty-spread"></div>
       ${examples(d.examples || [])}`}
       <h3>Sources</h3>${sourceList(t.sources) || '<p class="hint">The period and links cite their sources above.</p>'}`;
-    if (!d.abroad) { charts(box, d); drawMap(box, d.points); }
+    if (!d.abroad) { charts(box, d); drawMap(box, d.points); TypeTime.spread(box.querySelector(".ty-spread"), d.spread); }
   }
 
   function material(box, d) {

@@ -72,9 +72,29 @@ class BuildingTypesTest(unittest.TestCase):
             self.assertEqual([t["id"] for t in data["types"]], ["hall", "wealden", "abroad", "barn"])
             self.assertEqual(building_types.validate(data), [])
 
+    def test_periods(self):
+        d = copy.deepcopy(GOOD)
+        src = dict(SRC, about=["period", "plan"])
+        d["types"][0].update(period={"text": "t", "from": 1300, "flourish": [1400, 1500], "to": 1600},
+                             plan="open hall", sources=[src])
+        d["types"][1].update(period={"text": "t", "from": 1350, "ongoing": True}, structure="box frame",
+                             sources=[src])
+        d["types"][2].update(period={"text": "t", "from": 1500, "flourish": [1400, 1450], "to": 1600,
+                                     "ongoing": True}, sources=[dict(SRC, about=["dates"])])
+        bad = building_types.period_problems(d)
+        self.assertFalse([b for b in bad if "type hall" in b], bad)
+        for text in ("wealden: no source about its structure", "abroad: period needs either",
+                     "abroad: period years out of order", "abroad: no source about its period"):
+            self.assertTrue(any(text in b for b in bad), (text, bad))
+        self.assertTrue(any("about ['dates']" in b for b in building_types.validate(d)))
+        d["types"][0]["period"] = {"text": "t", "from": "c. 1300", "to": 1600}
+        self.assertTrue(any("hall: no period text and first year" in b
+                            for b in building_types.period_problems(d)))
+
     def test_curated_file(self):
         if building_types.PATH.exists():
-            self.assertEqual(building_types.validate(building_types.load()), [])
+            data = building_types.load()
+            self.assertEqual(building_types.validate(data) + building_types.period_problems(data), [])
 
     def test_curated_domains(self):
         if building_types.PATH.exists():

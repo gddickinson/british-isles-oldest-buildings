@@ -1500,3 +1500,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   new release made.
 - Tests 317 OK. GUI restarted (shares on the home network: settings.json has `share_on_network: true`).
 - Next: BT1c3b (periods of use for every type).
+
+## 2026-10-26 — BT1c3b: periods of use, structure and plan form for every building type
+- Schema and check first (`bidb/building_types.py`): `period` {text, from, flourish?, to | ongoing}, `structure`,
+  `plan`; sources carry `about` (period / structure / plan); `period_problems` (years in order, to or ongoing, a
+  source for each); `--file lineage_x.json [--quotes PATH]` for one file (`summary` names other files' types by id).
+- Six research agents in parallel (houses and defence; religious and farm; commercial; industrial and transport;
+  civic and health; education and recreation), each file checked by its agent and reviewed here: no type, link or
+  quote lost, 850 quotes added. All 224 types: flourish 68, to 170, ongoing 54, structure 66, plan 100.
+  `python -m bidb.building_types --quotes`: 1,443 of 1,443 quotes found.
+- Changed in review: canal from the Foss Dyke (c. AD 120, "no consensus", Wikipedia) rather than Exeter 1564;
+  grammar school ongoing (the 2017 Sevenoaks annexe is the first new one in decades). The agents moved several
+  earlier years (artillery castle 1481-1561 from FISH, martello tower to 1857 at Pembroke Dock, tide mill from
+  Killoteran in the 6th century, cotton mill 1741, gin gang to 1868, bear garden to 1614...); each move is quoted.
+  Weak years and disagreements listed in `data/curated/building_types/README.md`.
+- Tests 318 OK (1 new: `test_periods`; the curated-file test now includes the period check). No GUI change (BT4).
+- Next: BT2 (map catalogue records and place kinds to the types).

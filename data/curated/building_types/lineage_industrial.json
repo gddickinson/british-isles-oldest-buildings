@@ -9,6 +9,12 @@
    "domain": "Industrial",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "Vitruvius describes one c. 40-10 BC; Romans took water power to the provinces; the latest dated Roman use in the source is the ship mills of Rome in 537, and the type carried on into the medieval watermill",
+    "from": -40,
+    "to": 537
+   },
+   "structure": "a vertical waterwheel on a horizontal shaft, geared to the millstones",
    "sources": [
     {
      "title": "Watermill",
@@ -16,7 +22,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Watermill",
      "locator": "section \"Classical antiquity\"",
-     "quote": "The Roman engineer Vitruvius has the first technical description of a watermill, dated to 40/10 BC"
+     "quote": "The Roman engineer Vitruvius has the first technical description of a watermill, dated to 40/10 BC",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Classical antiquity\"",
+     "quote": "The Romans used both fixed and floating water wheels and introduced water power to other provinces of the Roman Empire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Classical antiquity\"",
+     "quote": "In 537 AD, ship mills were ingeniously used by the East Roman general Belisarius, when the besieging Goths cut off the water supply for those mills.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Classical antiquity\"",
+     "quote": "Roman style mills are more complicated as they require gears to transmit the power from a shaft with a horizontal axis to one with a vertical axis.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -27,8 +69,13 @@
    "domain": "Industrial",
    "fish": "71368",
    "period": {
-    "text": "in Ireland by the early 7th century; 5,624 in England in Domesday Book (1086)",
-    "from": 600
+    "text": "in Ireland by the early 7th century; 5,624 in England in Domesday Book (1086); still two-thirds of the power for British grain milling in 1870; made obsolete by cheap electricity by the early 20th century (c. 1900), though small rural mills worked on",
+    "from": 600,
+    "flourish": [
+     1086,
+     1870
+    ],
+    "to": 1900
    },
    "sources": [
     {
@@ -37,7 +84,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Watermill",
      "locator": "section \"Middle Ages\"",
-     "quote": "By the early 7th century, watermills were also well established in Ireland."
+     "quote": "By the early 7th century, watermills were also well established in Ireland.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Watermill",
@@ -45,7 +95,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Watermill",
      "locator": "section \"Middle Ages\"",
-     "quote": "The Domesday Book, compiled in 1086, records 5,624 watermills in England alone."
+     "quote": "The Domesday Book, compiled in 1086, records 5,624 watermills in England alone.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Current status\"",
+     "quote": "In 1870 watermills still produced 2/3 of the power available for British grain milling.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watermill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watermill",
+     "locator": "section \"Current status\"",
+     "quote": "By the early 20th century, availability of cheap electrical energy made the watermill obsolete in developed countries although some smaller rural mills continued to operate commercially later throughout the century.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -56,9 +131,11 @@
    "domain": "Industrial",
    "fish": "69332",
    "period": {
-    "text": "Nendrum, Strangford Lough, 619 and 787; Ebbsfleet, Kent, 691-692",
-    "from": 619
+    "text": "a 6th-century tide mill at Killoteran, Waterford; Nendrum, Strangford Lough, 619 and 787; Ebbsfleet, Kent, 691-692; the latest building in the sources is the Clock Mill at Three Mills, London, rebuilt 1815-1817; Woodbridge, the last working commercially, closed in 1957",
+    "from": 500,
+    "to": 1817
    },
+   "structure": "a dam with a sluice across a tidal inlet holds a mill pond, filled through a one-way gate and let out through the waterwheel",
    "sources": [
     {
      "title": "Tide mill",
@@ -66,7 +143,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Tide_mill",
      "locator": "section \"Early history\"",
-     "quote": "The Nendrum Monastery mill from 787 was situated on an island in Strangford Lough in Northern Ireland."
+     "quote": "The Nendrum Monastery mill from 787 was situated on an island in Strangford Lough in Northern Ireland.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Tide mill",
@@ -74,7 +154,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Tide_mill",
      "locator": "section \"Early history\"",
-     "quote": "Remains of an earlier mill dated at 619 were also found at the site."
+     "quote": "Remains of an earlier mill dated at 619 were also found at the site.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "section \"Early history\"",
+     "quote": "A 6th-century vertical-wheeled tide mill was located at Killoteran near Waterford.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "section \"Early history\"",
+     "quote": "In England, an exceptionally well preserved tidal mill, dated by dendrochronology to the late 7th century (691-692 AD) was excavated in the Ebbsfleet Valley",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Three Mills",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Three_Mills",
+     "locator": "section \"History\"",
+     "quote": "The Clock Mill was rebuilt by Philip Metcalfe between 1815 and 1817 incorporating the old clock, and an older bell.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Woodbridge Tide Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Woodbridge_Tide_Mill",
+     "locator": "section \"History\"",
+     "quote": "In 1957 it closed as the last commercially operating tide mill in Britain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "lead",
+     "quote": "A dam with a sluice is created across a suitable tidal inlet, or a section of river estuary is made into a reservoir.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Tide mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tide_mill",
+     "locator": "lead",
+     "quote": "As the tide comes in, it enters the mill pond through a one-way gate, and this gate closes automatically when the tide begins to fall.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -85,8 +234,56 @@
    "domain": "Industrial",
    "fish": "69321",
    "period": {
-    "text": "from the medieval period"
-   }
+    "text": "from the medieval period: a fulling mill at Temple Guiting, Gloucestershire, documented (by the Wikipedia account) in 1086; in Wales from the early 14th century; the last working Welsh one, at Abercegir, had machinery of 1859 and closed in 1964; the sources give no later new mill",
+    "from": 1086,
+    "to": 1859
+   },
+   "sources": [
+    {
+     "title": "Fulling",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fulling",
+     "locator": "section \"Milling\"",
+     "quote": "There was a fulling mill established at Temple Guiting, Gloucestershire which was documented in the Domesday Book (also 1086).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fulling",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fulling",
+     "locator": "section \"Milling\"",
+     "quote": "Fulling mills appear in Wales early in the reign of Edward II., just at the time when fulling mills were being introduced into Lancashire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ffatri Isaf Woollen Mill, Abercegir (NPRN 41022)",
+     "author": "Royal Commission on the Ancient and Historical Monuments of Wales (Coflein)",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/41022/",
+     "locator": "description",
+     "quote": "Closed 1964. Last operating Welsh fulling mill.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ffatri Isaf Woollen Mill, Abercegir (NPRN 41022)",
+     "author": "Royal Commission on the Ancient and Historical Monuments of Wales (Coflein)",
+     "kind": "listing",
+     "url": "https://coflein.gov.uk/en/site/41022/",
+     "locator": "description",
+     "quote": "Builder, Newtown Foundry, Millwright - Samuel Owens 1859.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "persian-windmill",
@@ -95,6 +292,12 @@
    "domain": "Industrial",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "in Khorasan and Sistan by the 9th century (a story of one in the 7th century was recorded only in the 10th); used through the medieval and early modern periods; some at Nashtifan, Iran, still turn, but the sources give no date for the last built, so the end of the early modern period (c. 1800) is used",
+    "from": 800,
+    "to": 1800
+   },
+   "structure": "a vertical axle with four to eight cloth sails inside a slit wall of clay or mud brick",
    "sources": [
     {
      "title": "Windmill",
@@ -102,7 +305,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Windmill",
      "locator": "lead",
-     "quote": "the horizontal or panemone windmill first appeared in Persia during the 9th century, and the vertical windmill first appeared in northwestern Europe in the 12th century."
+     "quote": "the horizontal or panemone windmill first appeared in Persia during the 9th century, and the vertical windmill first appeared in northwestern Europe in the 12th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Horizontal windmills\"",
+     "quote": "The Persian geographer Estakhri reported windmills being operated in Khorasan (Eastern Iran and Western Afghanistan) already in the 9th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "lead",
+     "quote": "Windmills were used throughout the high medieval and early modern periods",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "1000 year old windmills",
+     "author": "Long Now Foundation",
+     "kind": "secondary",
+     "url": "https://longnow.org/ideas/1000-year-old-windmills/",
+     "locator": "text",
+     "quote": "These windmills constructed over a thousand years ago out of clay, straw and wood are not only still standing; they work just as well as they did when they were first built.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Panemone windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panemone_windmill",
+     "locator": "lead",
+     "quote": "Historically the earliest known wind machine was made by the Persians and it was the panemone design, consisting of a wall, with slits, surrounding a vertical axle containing four to eight fabric sails.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -113,9 +364,15 @@
    "domain": "Industrial",
    "fish": "69334",
    "period": {
-    "text": "the earliest European type; Weedley, Yorkshire, 1185 the earliest certain reference",
-    "from": 1185
+    "text": "the earliest European type; Weedley, Yorkshire, 1185 the earliest certain reference; most used in the 18th and 19th centuries; windmills were built in large numbers until late in the 19th century (c. 1900), then tower mills and steam took over",
+    "from": 1185,
+    "flourish": [
+     1700,
+     1899
+    ],
+    "to": 1900
    },
+   "structure": "a mainly timber-framed body carrying the sails and machinery, turning on one upright post braced by four quarter bars",
    "sources": [
     {
      "title": "Windmill",
@@ -123,7 +380,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Windmill",
      "locator": "section \"Vertical windmills\"",
-     "quote": "The earliest certain reference to a windmill in Northern Europe (assumed to have been of the vertical type) dates from 1185, in the former village of Weedley in Yorkshire"
+     "quote": "The earliest certain reference to a windmill in Northern Europe (assumed to have been of the vertical type) dates from 1185, in the former village of Weedley in Yorkshire",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Windmill",
@@ -131,7 +391,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Windmill",
      "locator": "section \"Post mill\"",
-     "quote": "The evidence at present is that the earliest type of European windmill was the post mill"
+     "quote": "The evidence at present is that the earliest type of European windmill was the post mill",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Post mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Post_mill",
+     "locator": "lead",
+     "quote": "Their design and usage peaked in the 18th and 19th centuries and then declined after the introduction of high-speed steam-driven milling machinery.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Spread and decline\"",
+     "quote": "although windmills continued to be built in large numbers until late in the nineteenth century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Post mill (FISH Thesaurus of Monument Types, concept 69334)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69334.html",
+     "locator": "scope note",
+     "quote": "A type of windmill, mainly timber-framed, whose body, containing machinery and carrying the sail, rotates about an upright post.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Post mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Post_mill",
+     "locator": "lead",
+     "quote": "The vertical post is supported by four quarter bars.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -142,9 +449,11 @@
    "domain": "Industrial",
    "fish": "69336",
    "period": {
-    "text": "introduced by the end of the 13th century",
-    "from": 1300
+    "text": "introduced by the end of the 13th century: the earliest record is from Dover, 1295 (one source puts an illustration of 1180 earlier); a source of power from 1300 to 1900",
+    "from": 1295,
+    "to": 1900
    },
+   "structure": "a brick or stone tower with a wooden cap that turns to bring the sails into the wind",
    "sources": [
     {
      "title": "Windmill",
@@ -152,7 +461,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Windmill",
      "locator": "section \"Tower mill\"",
-     "quote": "By the end of the 13th century, the masonry tower mill, on which only the cap is rotated rather than the whole body of the mill, had been introduced."
+     "quote": "By the end of the 13th century, the masonry tower mill, on which only the cap is rotated rather than the whole body of the mill, had been introduced.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tower mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_mill",
+     "locator": "section \"History\"",
+     "quote": "the earliest record of its existence is from 1295, from Stephen de Pencastor of Dover, but the earliest illustrations date from 1390.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tower mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_mill",
+     "locator": "section \"History\"",
+     "quote": "Other sources pin its earliest inception back in 1180 in the form of an illustration on a Norman deed, showing this new western-style windmill.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tower mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_mill",
+     "locator": "lead",
+     "quote": "The tower mill was an important source of power for Europe for nearly 600 years from 1300 to 1900",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tower mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_mill",
+     "locator": "lead",
+     "quote": "A tower mill is a type of vertical windmill consisting of a brick or stone tower, on which sits a wooden 'cap' or roof, which can rotate to bring the sails into the wind.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -163,9 +519,16 @@
    "domain": "Industrial",
    "fish": "69335",
    "period": {
-    "text": "the oldest surviving in England, Lacey Green, 1650",
-    "from": 1650
+    "text": "introduced by the Dutch in the 17th century; the oldest surviving in England, Lacey Green, 1650; at their height in the early 19th century; windmills were built in large numbers until late in the 19th century (c. 1900)",
+    "from": 1650,
+    "flourish": [
+     1800,
+     1840
+    ],
+    "to": 1900
    },
+   "structure": "a stationary timber body, often on a brick base, carrying a cap that turns with the sails",
+   "plan": "a sloping tower, usually of six or eight sides",
    "sources": [
     {
      "title": "Smock mill",
@@ -173,7 +536,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Smock_mill",
      "locator": "section \"Britain\"",
-     "quote": "The oldest surviving smock mill in England (dated to 1650) is located in Lacey Green, Buckinghamshire."
+     "quote": "The oldest surviving smock mill in England (dated to 1650) is located in Lacey Green, Buckinghamshire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Smock mill\"",
+     "quote": "Smock windmills were introduced by the Dutch in the 17th century to overcome the limitations of tower windmills, which were expensive to build and could not be erected on wet surfaces.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Smock mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smock_mill",
+     "locator": "section \"Distribution\"",
+     "quote": "They reached their heyday in the early part of the 19th century, after which the advent of steam power started the decline of the windmill.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Spread and decline\"",
+     "quote": "although windmills continued to be built in large numbers until late in the nineteenth century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Smock mill (FISH Thesaurus of Monument Types, concept 69335)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69335.html",
+     "locator": "scope note",
+     "quote": "A windmill with a stationary timber body which contains the grinding machinery, and which supports a rotating cap in which the sails rotate.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Windmill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Windmill",
+     "locator": "section \"Smock mill\"",
+     "quote": "The lower half of the smock windmill was made of brick, while the upper half was made of wood, with a sloping tower shape that added structural strength to the design.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Smock mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Smock_mill",
+     "locator": "lead",
+     "quote": "The smock mill is a type of windmill that consists of a sloping, horizontally weatherboarded, thatched, or shingled tower, usually with six or eight sides.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -184,6 +616,11 @@
    "domain": "Industrial",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "powered throwing machines (filatoio) from the 13th century, Bologna the leading town; in England the circular Italian machines had given way to rectangular cast-iron frames by 1820",
+    "from": 1200,
+    "to": 1820
+   },
    "sources": [
     {
      "title": "Lombe's Mill",
@@ -192,6 +629,39 @@
      "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
      "locator": "lead",
      "quote": "It was built after John Lombe visited Piedmont in 1717 and returned to England with details of the Italian silk throwing machines"
+    },
+    {
+     "title": "Silk throwing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silk_throwing",
+     "locator": "section \"History\"",
+     "quote": "The first evidence of an externally powered filatoio comes from the thirteenth century, and the earliest illustration from around 1500.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Silk throwing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silk_throwing",
+     "locator": "section \"History\"",
+     "quote": "Bologna became the most technological advanced silk-throwing town, with filatoio driven by overhead shafts that were powered by water.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Silk throwing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silk_throwing",
+     "locator": "section \"The silk-throwing process\"",
+     "quote": "By 1820, throwing was done using rectangular frames, manufactured from cast iron, and powered by belts from line shafts.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -202,8 +672,13 @@
    "domain": "Industrial",
    "fish": "69325",
    "period": {
-    "text": "Lombe's Mill, Derby, working by 1721",
-    "from": 1721
+    "text": "Cotchett's mill, Derby, 1704, a failure; Lombe's Mill working by 1721; more in Stockport and Macclesfield once the patent lapsed in 1732; 71 in Macclesfield in 1832, then a crash in 1851; the latest built in the sources is Lister Mills, Bradford, 1871",
+    "from": 1704,
+    "flourish": [
+     1732,
+     1851
+    ],
+    "to": 1871
    },
    "sources": [
     {
@@ -212,7 +687,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
      "locator": "lead",
-     "quote": "Lombe's Mill was the first successful silk throwing mill in Britain."
+     "quote": "Lombe's Mill was the first successful silk throwing mill in Britain.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Factory system",
@@ -220,7 +698,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Factory_system",
      "locator": "section \"Mills\"",
-     "quote": "One of the earliest factories was John Lombe's water-powered silk mill at Derby, operational by 1721."
+     "quote": "One of the earliest factories was John Lombe's water-powered silk mill at Derby, operational by 1721.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Silk mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silk_mill",
+     "locator": "section \"History\"",
+     "quote": "Thomas Cotchett's mill, was built in Derby in 1704, and was a failure.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lombe's Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lombe's_Mill",
+     "locator": "section \"History\"",
+     "quote": "When the patents lapsed in 1732, other mills were built in Stockport and Macclesfield.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Macclesfield",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Macclesfield",
+     "locator": "section \"Industry\"",
+     "quote": "There were 71 silk mills operating in 1832, employing 10,000 people, but a crash occurred in 1851 and many mill-workers emigrated to the American silk town of Paterson, New Jersey.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Silk mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Silk_mill",
+     "locator": "section \"Examples\"",
+     "quote": "Lister Mills, Bradford, England, built in 1871, known for being the largest silk mill in the world.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -231,9 +756,16 @@
    "domain": "Industrial",
    "fish": "69319",
    "period": {
-    "text": "Cromford Mill, 1771, the first successful water-powered cotton spinning mill",
-    "from": 1771
+    "text": "the first in the 1740s for Paul and Wyatt's machines; Cromford Mill, 1771, the first successful water-powered spinning mill; many built from 1783 until rapid growth ended in 1860, and again by joint-stock companies from about 1870; the last, Holden and Elk mills, completed in 1927 (an open-end spinning works followed in 1978)",
+    "from": 1741,
+    "flourish": [
+     1783,
+     1860
+    ],
+    "to": 1927
    },
+   "structure": "a multi-storey load-bearing masonry box, with timber floors or, in fireproof mills, iron (later steel) beams and brick vaults",
+   "plan": "long and narrow, often L- or U-shaped, with rows of windows along each side and open floors",
    "sources": [
     {
      "title": "Cromford Mill",
@@ -241,7 +773,110 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Cromford_Mill",
      "locator": "lead",
-     "quote": "Cromford Mill is the world's first water-powered cotton spinning mill, developed by Richard Arkwright in 1771 in Cromford, Derbyshire, England."
+     "quote": "Cromford Mill is the world's first water-powered cotton spinning mill, developed by Richard Arkwright in 1771 in Cromford, Derbyshire, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Paul-Wyatt mills\"",
+     "quote": "The first cotton mills were established in the 1740s to house roller spinning machinery invented by Lewis Paul and John Wyatt.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Key inventions\"",
+     "quote": "Many mills were built after Arkwright's patent expired in 1783 and, by 1788, there were about 210 mills in Great Britain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"United Kingdom\"",
+     "quote": "1860 saw the end of this period of rapid growth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Just before 1870, a mill was built by a joint-stock spinning company and this financial structure led to a new wave of mill construction.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Consolidation (1918–50)\"",
+     "quote": "The last mills were completed in 1927, these were Holden Mill (Astley Bridge Mill) and Elk Mill.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Decline of spinning in England\"",
+     "quote": "In 1978 Carrington Viyella opened a factory to do open-end spinning in Atherton.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Arkwright-type mills\"",
+     "quote": "Constructed as a five-storey masonry box; high, long and narrow, with ranges of windows along each side and large relatively unbroken internal spaces, it provided the basic architectural prototype that was followed by cotton mills and English industrial architecture through to the end of the 19th century.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Mills from 1825 to 1865 were generally constructed with wooden beamed floors and lath and plaster ceilings.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Early steam mills\"",
+     "quote": "The mills, often 'L' or U-shaped, were narrow and multi-storeyed.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -252,9 +887,11 @@
    "domain": "Industrial",
    "fish": "91942",
    "period": {
-    "text": "Ditherington Flax Mill, Shrewsbury, 1796-1797, the first iron-framed building",
-    "from": 1796
+    "text": "Ditherington Flax Mill, Shrewsbury, 1796-1797, the first iron-framed building; others in Shropshire and Derbyshire in the 1790s and Salford 1801-1802; timber floors stayed common through the 19th century; steel beams and concrete floors widely used in Lancashire mills only in the 20th century, until the last cotton mills of 1927",
+    "from": 1796,
+    "to": 1927
    },
+   "structure": "cast-iron columns and beams carrying brick jack arches, levelled with ash, sand or rubble and floored with flags or boards; later steel beams and concrete floors",
    "sources": [
     {
      "title": "Ditherington Flax Mill",
@@ -262,7 +899,88 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Ditherington_Flax_Mill",
      "locator": "lead",
-     "quote": "It was the first iron-framed building in the world and has been described as \"the grandfather of skyscrapers\"."
+     "quote": "It was the first iron-framed building in the world and has been described as \"the grandfather of skyscrapers\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ditherington Flax Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ditherington_Flax_Mill",
+     "locator": "section \"History\"",
+     "quote": "The construction of the mill ran from 1796 to 1797, at a cost (including equipment) of £17,000.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Fireproof construction\"",
+     "quote": "The first mills using fireproof construction were built in Shropshire and Derbyshire in the 1790s and Philips & Lee's mill built in Salford in 1801–2.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Fireproof construction\"",
+     "quote": "Fireproof construction was expensive and timber, sometimes clad in plaster or metal continued to be used throughout the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Fireproof construction\"",
+     "quote": "Rolled steel beams and reinforced concrete flooring was introduced in a limited way in the 1880s but not widely adopted in Lancashire mills until the 20th century.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Consolidation (1918–50)\"",
+     "quote": "The last mills were completed in 1927, these were Holden Mill (Astley Bridge Mill) and Elk Mill.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Fireproof construction\"",
+     "quote": "Fireproofing took the form of cast iron columns and beams from which sprang jack arches that were infilled with ash or sand and covered with stone flags or floorboards.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Belper North Mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Belper_North_Mill",
+     "locator": "section \"Construction\"",
+     "quote": "The wooden beams supporting the floor timbers were replaced with beams of cast iron, (steel was not available till after 1860) and between them were low vaults made of brick with a 9 feet (2.7 m) span.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -271,7 +989,96 @@
    "name": "Weaver's cottage (loomshop)",
    "family": "Textile mills",
    "domain": "Industrial",
-   "fish": "71394"
+   "fish": "71394",
+   "period": {
+    "text": "most surviving ones in the north-west are of the late 18th and early 19th centuries (the sources date none earlier); Macclesfield silk weavers' terraces after about 1790; hand-loom weaving at its height about 1820 and nearly gone by 1891",
+    "from": 1775,
+    "flourish": [
+     1790,
+     1825
+    ],
+    "to": 1891
+   },
+   "plan": "living rooms on the lower floors and a loomshop on the top floor (wool, silk) or in a damp cellar or ground-floor room (cotton), lit by long rows of windows",
+   "sources": [
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "section \"Cottage industry\"",
+     "quote": "Most extant cottages in the north-west date from the late-18th and early-19th century when weaving had ceased to be a sideline.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "section \"Cottage industry\"",
+     "quote": "Terraces of three-storey brick-built domestic workshops were built in Macclesfield after silk weaving was introduced around 1790 and more than 600 weavers had looms in their homes in 1825.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "section \"Lancashire cellar loomshops\"",
+     "quote": "In the peak years of handloom weaving around 1820, there were 170,000 handloom weavers in Lancashire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "section \"Lancashire cellar loomshops\"",
+     "quote": "By 1891, few were left.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "lead",
+     "quote": "Weavers' cottages were common in Great Britain, often with dwelling quarters on the lower floors and loom-shop on the top floor.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "lead",
+     "quote": "Cellar loomshops on the ground floor or in the basement were found where cotton was woven, as they provided high humidity.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Weavers' cottage",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weavers'_cottage",
+     "locator": "lead",
+     "quote": "A loom-shop can be often recognised by a long row of windows which provided maximum light for the weaver.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "weaving-shed",
@@ -280,9 +1087,12 @@
    "domain": "Industrial",
    "fish": "71380",
    "period": {
-    "text": "from the 1840s, when reliable power looms appeared",
-    "from": 1840
+    "text": "developed in Lancashire, Derbyshire and Yorkshire in the early 1800s (lead of the source), but common only from the 1840s, when reliable power looms appeared; the sources give no last shed: no new textile works were built in Lancashire between 1929 and 1978, and the last weaving firms closed by the 1980s",
+    "from": 1800,
+    "to": 1929
    },
+   "structure": "a single-storey shed with a north-light roof on cast-iron columns, the cast-iron beams doubling as gutters",
+   "plan": "modular bays of about 3 m by 6 m, with a boiler house, engine room and a two- or three-storey preparation and warehouse block",
    "sources": [
     {
      "title": "Weaving shed",
@@ -290,7 +1100,87 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Weaving_shed",
      "locator": "section \"History\"",
-     "quote": "Reliable power looms that could be worked from an overhead line shaft were not available before Kenworthy and Bulloughs weft stop motion, the roller temple and the loose reed which appeared in the 1840s."
+     "quote": "Reliable power looms that could be worked from an overhead line shaft were not available before Kenworthy and Bulloughs weft stop motion, the roller temple and the loose reed which appeared in the 1840s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "lead",
+     "quote": "A weaving shed is a distinctive type of mill developed in the early 1800s in Lancashire, Derbyshire and Yorkshire to accommodate the new power looms weaving cotton, silk, woollen and worsted.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cotton mill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cotton_mill",
+     "locator": "section \"Decline of spinning in England\"",
+     "quote": "This was the first new textile production facility in Lancashire since 1929.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"Restoration and reuse\"",
+     "quote": "By the 1980s the final weaving companies were woven out (closed), and in a few cases the mills were mothballed.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Weaving shed (FISH Thesaurus of Monument Types, concept 71380)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71380.html",
+     "locator": "scope note",
+     "quote": "A textile-weaving factory housing powerlooms; commonly a one-storeyed shed with wide, north-light roof carried on iron columns.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"Construction\"",
+     "quote": "The cast iron beams that support these rows of north lights are ingeniously designed as inverted channel sections such that they both carry the load of the roofs and act as rainwater gutters.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"Construction\"",
+     "quote": "The shed would be modular using a 3m by 6m bay, the beams of the roof being supported by cast iron columns.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Weaving shed",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Weaving_shed",
+     "locator": "section \"Function\"",
+     "quote": "Attached to the weaving shed in a typical mill would be a boiler house where the steam was raised, an engine room housing a stationary steam engine and a two or three-storey building where the preparatory processes were done below and above would be the warehouse.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -299,7 +1189,92 @@
    "name": "Bloomery",
    "family": "Iron making",
    "domain": "Industrial",
-   "fish": "69180"
+   "fish": "69180",
+   "period": {
+    "text": "iron smelting in Britain from the Iron Age, c. 800 BC (iron working from the 10th century BC); about 113 Roman bloomeries in the Weald; again from the 9th century (Millbrook, Ashdown Forest); water-powered from the 14th century; the blast furnace replaced it from 1491, though the last in England, near Garstang, closed about 1770 (no last building date in the sources)",
+    "from": -800,
+    "to": 1770
+   },
+   "structure": "a charcoal-fired shaft furnace: a pit or chimney with walls of earth, clay or stone, blown through pipes near the bottom",
+   "sources": [
+    {
+     "title": "Ferrous metallurgy",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ferrous_metallurgy",
+     "locator": "section \"Iron Age Europe\"",
+     "quote": "Evidence for iron metallurgy in Britain dates from the 10th century BC, with the beginning of the Iron Age dated to the 8th century BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wealden iron industry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_iron_industry",
+     "locator": "section \"Roman ironmaking\"",
+     "quote": "The sites of about 113 bloomeries have been identified as Roman, mainly in East Sussex.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wealden iron industry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_iron_industry",
+     "locator": "section \"Medieval\"",
+     "quote": "No evidence of iron smelting has been found after the end of Roman rule until the ninth century when a primitive bloomery was built at Millbrook on Ashdown Forest, with a small hearth for reheating the blooms nearby.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bloomery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bloomery",
+     "locator": "section \"Early to medieval Europe\"",
+     "quote": "In Furness and Cumberland, they operated into the early 17th century and the last one in England (near Garstang) did not close until about 1770.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bloomery (FISH Thesaurus of Monument Types, concept 69180)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69180.html",
+     "locator": "scope note",
+     "quote": "A charcoal fired shaft furnace used for the direct reduction of iron ore to produce wrought iron.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bloomery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bloomery",
+     "locator": "section \"Process\"",
+     "quote": "A bloomery consists of a pit or chimney with heat-resistant walls made of earth, clay, or stone.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bloomery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bloomery",
+     "locator": "section \"Process\"",
+     "quote": "Near the bottom, one or more pipes (made of clay or metal) enter through the side walls.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "walloon-furnace",
@@ -308,6 +1283,11 @@
    "domain": "Industrial",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "the blast furnace and finery forge process devised around Namur in the 15th century; in England from 1491; in the Weald nearly 180 sites worked it between the 15th and 18th centuries (taken as c. 1800; the sources give no last building)",
+    "from": 1400,
+    "to": 1800
+   },
    "sources": [
     {
      "title": "Blast furnace",
@@ -315,7 +1295,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Blast_furnace",
      "locator": "section \"History\"",
-     "quote": "They spread from the region around Namur in Wallonia (Belgium) in the late 15th century, being introduced to England in 1491."
+     "quote": "They spread from the region around Namur in Wallonia (Belgium) in the late 15th century, being introduced to England in 1491.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wealden iron industry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_iron_industry",
+     "locator": "section \"The introduction of the blast furnace\"",
+     "quote": "A new ironmaking process was devised in the Namur region of what is now Belgium in the 15th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wealden iron industry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_iron_industry",
+     "locator": "section \"The mature industry\"",
+     "quote": "Nearly 180 sites in all were used for this process, having a furnace, a forge or both between the 15th century and 18th century.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -326,8 +1331,9 @@
    "domain": "Industrial",
    "fish": "69179",
    "period": {
-    "text": "in England from 1491; coke instead of charcoal from 1709 (Abraham Darby, Coalbrookdale)",
-    "from": 1491
+    "text": "one medieval example known in Britain (Laskill, Rievaulx Abbey, undated in the source); in England from 1491; coke instead of charcoal from 1709 (Abraham Darby, Coalbrookdale); hot blast from 1828; still used for iron making, though Port Talbot's last closed in 2024 for an electric arc furnace",
+    "from": 1491,
+    "ongoing": true
    },
    "sources": [
     {
@@ -336,7 +1342,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Blast_furnace",
      "locator": "section \"History\"",
-     "quote": "The successful substitution of coke for charcoal is widely attributed to British inventor Abraham Darby in 1709."
+     "quote": "The successful substitution of coke for charcoal is widely attributed to British inventor Abraham Darby in 1709.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"History\"",
+     "quote": "They spread from the region around Namur in Wallonia (Belgium) in the late 15th century, being introduced to England in 1491.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"Cistercian contributions\"",
+     "quote": "At Laskill, an outstation of Rievaulx Abbey and the only medieval blast furnace so far identified in Britain, the slag produced was low in iron content.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"History\"",
+     "quote": "The efficiency of the process was further enhanced by the practice of preheating the combustion air (hot blast), patented by British inventor James Beaumont Neilson in 1828.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blast furnace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+     "locator": "section \"Oldest European blast furnaces\"",
+     "quote": "These early blast furnaces, like the Chinese examples, were very inefficient compared to those used today.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Port Talbot Steelworks",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Port_Talbot_Steelworks",
+     "locator": "lead",
+     "quote": "Over 4,000 people worked at the plant until the last blast furnace closed in October 2024.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -345,7 +1409,70 @@
    "name": "Pottery kiln",
    "family": "Kilns",
    "domain": "Industrial",
-   "fish": "69092"
+   "fish": "69092",
+   "period": {
+    "text": "in Britain from the Roman occupation (AD 43), when kilns fired roof tiles and British coarse and fine wares were made locally; still built, most large ones now fired by gas",
+    "from": 43,
+    "ongoing": true
+   },
+   "structure": "an oven inside a hovel",
+   "sources": [
+    {
+     "title": "Iron Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Iron_Age_Britain",
+     "locator": "lead",
+     "quote": "The Iron Age ended in most of Britain with the Roman conquest which began in 43 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiln",
+     "locator": "section \"Ceramic kilns\"",
+     "quote": "Early examples of simpler kilns found in Britain include those that made roof-tiles during the Roman occupation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ancient Roman pottery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ancient_Roman_pottery",
+     "locator": "lead",
+     "quote": "For example, dozens of different types of British coarse and fine wares were produced locally, yet many other classes of pottery were also imported from elsewhere in the Empire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiln",
+     "locator": "section \"Modern kilns\"",
+     "quote": "Many large industrial pottery kilns use natural gas, as it is generally clean, efficient and easy to control.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pottery kiln (FISH Thesaurus of Monument Types, concept 69092)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/69092.html",
+     "locator": "scope note",
+     "quote": "A structure, composed of oven and hovel, used for the firing of pottery ware.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "bottle-kiln",
@@ -354,10 +1481,16 @@
    "domain": "Industrial",
    "fish": "70595",
    "period": {
-    "text": "mostly later 18th and 19th centuries; ended by the Clean Air Act 1956",
+    "text": "used in the Potteries from the 18th century, mostly built in the later 18th and 19th centuries; the latest dated in the sources is of 1906 (Falcon Pottery, Hanley); the Clean Air Act 1956 ended them, and firings stopped by the end of 1963 (one later firing in 1978)",
     "from": 1750,
-    "to": 1960
+    "flourish": [
+     1750,
+     1899
+    ],
+    "to": 1956
    },
+   "structure": "a cylindrical brick oven with a domed roof and walls about 30 cm thick, bound with iron bands, inside a bottle-shaped brick hovel",
+   "plan": "a circular chamber with a floor rising to a central well-hole and low brick fireplaces (bags) round the inside",
    "sources": [
     {
      "title": "Bottle kiln",
@@ -365,7 +1498,109 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
      "locator": "lead",
-     "quote": "They were mostly built in the later 18th and the 19th centuries, although the surviving ones include examples from the 20th century."
+     "quote": "They were mostly built in the later 18th and the 19th centuries, although the surviving ones include examples from the 20th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bottle Kilns",
+     "author": "thepotteries.org",
+     "kind": "secondary",
+     "url": "https://thepotteries.org/did_you/003.htm",
+     "locator": "text",
+     "quote": "Bottle kilns, also known as bottle ovens, were used in the Stoke-on-Trent pottery industry from the 18th century until the mid-20th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bottle Kilns",
+     "author": "thepotteries.org",
+     "kind": "secondary",
+     "url": "https://thepotteries.org/did_you/003.htm",
+     "locator": "list of surviving kilns, Hanley",
+     "quote": "1906 bottle kiln at the Falcon Pottery of J H Weatherby",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "lead",
+     "quote": "Their decline was ultimately precipitated by the Clean Air Act 1956 and a systemic transition within the industry away from coal-fired processes in favour of cleaner, alternatives such as gas tunnel kilns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "lead",
+     "quote": "Seven years were given from the passing of the act for bottle oven firings to cease and as a result firings stopped by the end of 1963.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "section \"Description\"",
+     "quote": "The oven itself is inside the hovel and is cylindrical in shape with domed roof and foot (30cm) thick walls.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "section \"Description\"",
+     "quote": "The brick structure of the oven was reinforced with iron bands that ran around the circumference.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bottle kiln (FISH Thesaurus of Monument Types, concept 70595)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70595.html",
+     "locator": "scope note",
+     "quote": "A large, bottle-shaped, oven of brick construction used in the baking or firing of pottery.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "section \"Construction\"",
+     "quote": "The structure comprises a circular chamber topped with a high, domed roof and a floor that rises slightly towards a central well-hole.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Bottle kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
+     "locator": "section \"Construction\"",
+     "quote": "Positioned around the internal circumference are several low brick chimneys, referred to as \"bags\".",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -375,6 +1610,12 @@
    "family": "Kilns",
    "domain": "Industrial",
    "fish": null,
+   "period": {
+    "text": "took over in the Potteries as coal-fired bottle ovens were given up after the Clean Air Act 1956: by 1958, 654 kilns were fired by gas or electricity; the sources give no first date; still used",
+    "from": 1958,
+    "ongoing": true
+   },
+   "structure": "a long continuous kiln heated only in its central part, the ware moving through on kiln cars",
    "note": "FISH's TUNNEL KILN is a coal-burning lime kiln, a different thing.",
    "sources": [
     {
@@ -383,7 +1624,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Bottle_kiln",
      "locator": "lead",
-     "quote": "Their decline was ultimately precipitated by the Clean Air Act 1956 and a systemic transition within the industry away from coal-fired processes in favour of cleaner, alternatives such as gas tunnel kilns."
+     "quote": "Their decline was ultimately precipitated by the Clean Air Act 1956 and a systemic transition within the industry away from coal-fired processes in favour of cleaner, alternatives such as gas tunnel kilns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Last firing of a bottle kiln in Stoke-on-Trent",
+     "author": "thepotteries.org",
+     "kind": "secondary",
+     "url": "https://www.thepotteries.org/potworks_wk/080.htm",
+     "locator": "text",
+     "quote": "By 1958 there were 438 bottle kilns still in use with 654 kilns now fired by gas or electric.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Saggar",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saggar",
+     "locator": "section \"Surface protection of whiteware ceramics\"",
+     "quote": "They are primarily used to create a \"micro-environment\" that protects the sensitive glaze from the high-velocity air currents found in modern gas-fired shuttle kilns and tunnel kilns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiln",
+     "locator": "section \"Ceramic kilns\"",
+     "quote": "A continuous kiln, sometimes called a tunnel kiln, is long with only the central portion directly heated.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiln",
+     "locator": "section \"Ceramic kilns\"",
+     "quote": "A shuttle kiln derives its name from the fact that kiln cars can enter a shuttle kiln from either end of the kiln, whereas a tunnel kiln has flow in only one direction.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -392,7 +1680,58 @@
    "name": "Brick kiln",
    "family": "Kilns",
    "domain": "Industrial",
-   "fish": "69053"
+   "fish": "69053",
+   "period": {
+    "text": "in Britain from the Roman occupation (AD 43), when legions fired brick and tile in kilns; continuous kilns from the Hoffmann kiln (1858) to the tunnel kilns of modern brickworks; still built",
+    "from": 43,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Iron Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Iron_Age_Britain",
+     "locator": "lead",
+     "quote": "The Iron Age ended in most of Britain with the Roman conquest which began in 43 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kiln",
+     "locator": "section \"Ceramic kilns\"",
+     "quote": "Early examples of simpler kilns found in Britain include those that made roof-tiles during the Roman occupation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_brick",
+     "locator": "section \"Ancient\"",
+     "quote": "The Roman legions operated mobile kilns and introduced bricks to many parts of the empire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brick",
+     "locator": "section \"Kilns\"",
+     "quote": "In many modern brickworks, bricks are usually fired in a continuously fired tunnel kiln, in which the bricks are fired as they move slowly through the kiln on conveyors, rails, or kiln cars, which achieves a more consistent brick product.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "hoffmann-kiln",
@@ -401,9 +1740,11 @@
    "domain": "Industrial",
    "fish": "143476",
    "period": {
-    "text": "patented by Friedrich Hoffmann in 1858",
-    "from": 1858
+    "text": "patented by Friedrich Hoffmann in 1858 and first fired in 1859; fifty in England by 1867 and more than 4,000 across the world by 1900; still worked, as at King's Dyke, Peterborough",
+    "from": 1858,
+    "ongoing": true
    },
+   "plan": "a series of chambers, each joined to the next by a passage for the hot gases, fired one after another as the fire moves on",
    "sources": [
     {
      "title": "Hoffmann kiln",
@@ -411,7 +1752,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
      "locator": "lead",
-     "quote": "Patented by German Friedrich Hoffmann for brickmaking in 1858, it was later used for lime-burning, and was known as the Hoffmann continuous kiln."
+     "quote": "Patented by German Friedrich Hoffmann for brickmaking in 1858, it was later used for lime-burning, and was known as the Hoffmann continuous kiln.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Hoffmann kiln expansion\"",
+     "quote": "The first kiln of this class was put into operation on November 22, 1859 in Scholwin",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Hoffmann kiln expansion\"",
+     "quote": "In 1867 there were already 250 of them, most in the Prussian part of Germany, fifty in England and three in France.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Hoffmann kiln expansion\"",
+     "quote": "In 1900 there were already more than 4,000 kilns of this type, distributed throughout Europe, Russia, the Americas, Africa and even the East Indies.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"UK\"",
+     "quote": "There is still a working kiln at Kings Dyke in Peterborough, which is the last site of the London Brick Company, owned by Forterra PLC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Construction and operation\"",
+     "quote": "Each room is connected to the next room by a passageway carrying hot gases from the fire.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Hoffmann kiln",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hoffmann_kiln",
+     "locator": "section \"Construction and operation\"",
+     "quote": "Each room is fired for a specific time, until the bricks are vitrified properly, and thereafter the fire wagon is rolled to the next room to be fired.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   }

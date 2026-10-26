@@ -9,8 +9,80 @@
    "domain": "Recreational",
    "fish": "68811",
    "period": {
-    "text": "Roman Britain, 1st to 4th centuries AD"
-   }
+    "text": "Roman Britain, 1st to 4th centuries AD: Silchester's added about AD 70-80; Chester's rebuilt around 275 and out of use around 350",
+    "from": 70,
+    "to": 275
+   },
+   "structure": "earth banks with seating cut into them and revetted in chalk or timber (Maumbury Rings), or a stone ellipse (Chester)",
+   "plan": "an oval or circular arena with tiers of seats around it",
+   "sources": [
+    {
+     "title": "Calleva Atrebatum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Calleva_Atrebatum",
+     "locator": "section \"Roman\"",
+     "quote": "The remains of the amphitheatre, added about AD 70–80 and outside the city walls, can also be clearly seen.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chester Roman Amphitheatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chester_Roman_Amphitheatre",
+     "locator": "section \"Construction\"",
+     "quote": "This amphitheatre fell into disuse when Legio XX were assigned to the construction of Hadrian's Wall, and upon their return around 275, the amphitheatre was once again rebuilt.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chester Roman Amphitheatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chester_Roman_Amphitheatre",
+     "locator": "lead",
+     "quote": "In use through much of the Roman occupation of Britain, the amphitheatre fell into disuse around the year 350.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Maumbury Rings",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maumbury_Rings",
+     "locator": "section \"Roman era\"",
+     "quote": "The interior was modified by the excavation of an oval, level arena floor, and the cutting of seating into the scarp and bank which was revetted with either chalk or timber.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Chester Roman Amphitheatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chester_Roman_Amphitheatre",
+     "locator": "section \"Construction\"",
+     "quote": "The newer structure consisted of a 40 feet (12 m) high stone ellipse",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Amphitheatre (FISH Thesaurus of Monument Types, concept 68811)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68811.html",
+     "locator": "scope note",
+     "quote": "An oval or circular structure with seats rising in tiers around a central open space.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "plen-an-gwary",
@@ -19,8 +91,12 @@
    "domain": "Recreational",
    "fish": null,
    "period": {
-    "text": "medieval; the Cornish miracle plays performed in them date to the late 14th century"
+    "text": "medieval; the Cornish miracle plays performed in them date to the late 14th century; a play was still being watched in one at Penryn c. 1587; when the last was made is not recorded",
+    "from": 1400,
+    "to": 1587
    },
+   "structure": "an enclosing bank or a stone wall (St Just), sometimes reusing an Iron Age round (Perran Round)",
+   "plan": "a circular open space with two entrances",
    "sources": [
     {
      "title": "Plen-an-gwary",
@@ -28,7 +104,77 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
      "locator": "lead",
-     "quote": "A plen-an-gwarry or plain-an-gwary (Cornish: Plen an Gwari), is a \"playing-place\" or round, a medieval amphitheatre found in Cornwall."
+     "quote": "A plen-an-gwarry or plain-an-gwary (Cornish: Plen an Gwari), is a \"playing-place\" or round, a medieval amphitheatre found in Cornwall.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Plen-an-gwary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
+     "locator": "lead",
+     "quote": "The most important work of literature surviving from the Middle Cornish period is Ordinalia, a 9000-line religious verse drama which had probably reached its present form by 1400.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plen-an-gwary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
+     "locator": "lead",
+     "quote": "Such plays were performed in a plain-an-gwarry.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plen-an-gwary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
+     "locator": "section \"Other sites\"",
+     "quote": "In circa 1587 it is recorded that in Penryn a group of Spaniards landed with the intention of sacking the town",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plen-an-gwary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
+     "locator": "section \"St Just-in-Penwith\"",
+     "quote": "St Just's plain-an-gwarry is a large circular space, encircled by a 2-metre-high (6.6 ft) wall of stone.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Plen-an-gwary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plen-an-gwary",
+     "locator": "section \"St Just-in-Penwith\"",
+     "quote": "There are two entries into the space.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Perran Round",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Perran_Round",
+     "locator": "section \"History\"",
+     "quote": "A round consists of an embanked enclosure and is considered to be the Iron Age equivalent of a farming hamlet.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -39,9 +185,15 @@
    "domain": "Recreational",
    "fish": null,
    "period": {
-    "text": "London inns used for plays from the 1550s to the early 17th century",
-    "from": 1557
+    "text": "London inns used for plays from the 1550s to the early 17th century: the Boar's Head and Saracen's Head from 1557, six inns in the second half of the 16th century; the last conversion the Red Bull, Clerkenwell, 1604",
+    "from": 1557,
+    "flourish": [
+     1557,
+     1600
+    ],
+    "to": 1604
    },
+   "plan": "an inn's inner courtyard with balconies round an open centre and the stage to one side",
    "sources": [
     {
      "title": "Inn-yard theatre",
@@ -49,7 +201,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
      "locator": "lead",
-     "quote": "In the historical era of English Renaissance drama, an Inn-yard theatre or Inn-theatre was a common inn with an inner courtyard with balconies that provided a venue for the presentation of stage plays."
+     "quote": "In the historical era of English Renaissance drama, an Inn-yard theatre or Inn-theatre was a common inn with an inner courtyard with balconies that provided a venue for the presentation of stage plays.",
+     "about": [
+      "plan"
+     ]
     },
     {
      "title": "Inn-yard theatre",
@@ -57,7 +212,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
      "locator": "section \"Culmination\"",
-     "quote": "1557 - the Boar's Head Inn, Whitechapel, \"without Aldgate\""
+     "quote": "1557 - the Boar's Head Inn, Whitechapel, \"without Aldgate\"",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Culmination\"",
+     "quote": "The available evidence indicates that six London inns were significant sites for drama during the second half of the sixteenth century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Reprieve\"",
+     "quote": "In 1604, an inn in Clerkenwell was converted into the Red Bull Theatre, which remained an important site for acting in the coming decades, and was finally abandoned only in 1660.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Inn-yard theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn-yard_theatre",
+     "locator": "section \"Beginnings\"",
+     "quote": "were modeled on the inn yards, with their surrounding balconies, open space in the center, and stage to one side.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -67,11 +258,13 @@
    "family": "Theatres and entertainment",
    "domain": "Recreational",
    "fish": "69931",
-   "note": "FISH files bear pits and bullrings under BAITING PLACE.",
    "period": {
-    "text": "in existence on Bankside by the 1560s; the last recorded event 1682",
-    "to": 1682
+    "text": "in existence on Bankside by the 1560s; pulled down in 1613 and rebuilt as the Hope (1614), playhouse and baiting ring in one; the last recorded event 1682",
+    "from": 1560,
+    "to": 1614
    },
+   "plan": "a round or polygonal open ring like the playhouses, with scaffold seating",
+   "note": "FISH files bear pits and bullrings under BAITING PLACE.",
    "sources": [
     {
      "title": "Beargarden",
@@ -79,7 +272,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Beargarden",
      "locator": "section \"History\"",
-     "quote": "The date of the Beargarden's construction is unknown; it was in existence by the 1560s, when it is shown on the \"woodcut\" map of the city."
+     "quote": "The date of the Beargarden's construction is unknown; it was in existence by the 1560s, when it is shown on the \"woodcut\" map of the city.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "section \"History\"",
+     "quote": "In 1613, Henslowe and new partner Jacob Meade tore down the Beargarden, and in 1614 replaced it with the Hope Theatre.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "lead",
+     "quote": "The last recorded event at the Beargarden was the baiting of \"a fine but vicious horse\" in 1682.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "section \"History\"",
+     "quote": "The Beargarden was constructed as a round or polygonal open structure, comparable to the public theatres built in and around London starting in 1576.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Beargarden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beargarden",
+     "locator": "section \"History\"",
+     "quote": "On Sunday, January 13, 1583, eight people were killed and others injured when the scaffold seating in the Beargarden collapsed under their weight.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -89,12 +329,18 @@
    "family": "Theatres and entertainment",
    "domain": "Recreational",
    "fish": null,
-   "note": "FISH has only THEATRE for all playhouses.",
    "period": {
-    "text": "the Red Lion, 1567; The Theatre, 1576, the first successful one",
+    "text": "the Red Lion, 1567; The Theatre, 1576, the first successful one, followed by the Curtain, Rose, Swan, Globe, Fortune and Red Bull (1604); the Fortune rebuilt in brick in 1623; plays banned in 1642",
     "from": 1567,
-    "to": 1642
+    "flourish": [
+     1576,
+     1604
+    ],
+    "to": 1623
    },
+   "structure": "timber and plaster (the second Fortune, 1623, brick)",
+   "plan": "usually polygonal, with three levels of galleries round an open yard into which the stage jutted",
+   "note": "FISH has only THEATRE for all playhouses.",
    "sources": [
     {
      "title": "The Theatre",
@@ -102,7 +348,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/The_Theatre",
      "locator": "lead",
-     "quote": "Built in 1576, after the Red Lion, it was the first permanent theatre built exclusively for the showing of theatrical productions in England, and its first successful one."
+     "quote": "Built in 1576, after the Red Lion, it was the first permanent theatre built exclusively for the showing of theatrical productions in England, and its first successful one.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "English Renaissance theatre",
@@ -110,7 +359,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
      "locator": "section \"Playhouse architecture\"",
-     "quote": "The three levels of inward-facing galleries overlooked the open centre, into which jutted the stage: essentially a platform surrounded on three sides by the audience."
+     "quote": "The three levels of inward-facing galleries overlooked the open centre, into which jutted the stage: essentially a platform surrounded on three sides by the audience.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Establishment of playhouses\"",
+     "quote": "The first permanent English theatre, the Red Lion, opened in 1567 but it was a short-lived failure.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Establishment of playhouses\"",
+     "quote": "The Theatre was rapidly followed by the nearby Curtain Theatre (1577), the Rose (1587), the Swan (1595), the Globe (1599), the Fortune (1600), and the Red Bull (1604).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fortune Playhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortune_Playhouse",
+     "locator": "section \"Second theatre\"",
+     "quote": "The theatre re-opened in March 1623.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fortune Playhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortune_Playhouse",
+     "locator": "section \"Second theatre\"",
+     "quote": "The new theatre appears to have been made of brick, with a lead and tile roof as fire-proofing measure.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Playhouse architecture\"",
+     "quote": "The playhouses were generally built with timber and plaster.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Playhouse architecture\"",
+     "quote": "Usually polygonal in plan to give an overall rounded effect, although the Red Bull and the first Fortune were square.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -119,7 +437,59 @@
    "name": "Cockpit",
    "family": "Sport",
    "domain": "Recreational",
-   "fish": "69933"
+   "fish": "69933",
+   "period": {
+    "text": "Henry VIII's Cockpit at Whitehall, built after 1529; cockfighting banned in England and Wales in 1835 and in Scotland in 1895",
+    "from": 1530,
+    "to": 1895
+   },
+   "plan": "a ring or pit for the birds with the spectators round it",
+   "sources": [
+    {
+     "title": "Cockpit-in-Court",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockpit-in-Court",
+     "locator": "lead",
+     "quote": "The structure was originally built by Henry VIII, after he had acquired Cardinal Wolsey's York Place to the north of the Palace of Westminster, following the Cardinal's downfall in 1529.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cockfight",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockfight",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Cockfighting was banned outright in England and Wales and in the British Overseas Territories with the Cruelty to Animals Act 1835.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cockfight",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockfight",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Sixty years later, in 1895, cockfighting was also banned in Scotland, where it had been relatively common in the 18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cockfight",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cockfight",
+     "locator": "lead",
+     "quote": "Wagers are often made on the outcome of the match, held in a ring called a cockpit.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "indoor-playhouse",
@@ -128,9 +498,9 @@
    "domain": "Recreational",
    "fish": null,
    "period": {
-    "text": "the Blackfriars in regular use from 1599",
+    "text": "the Blackfriars in regular use from 1599, then the Whitefriars (1608) and the Cockpit (1617); Salisbury Court, 1629, the last theatre built before the theatres closed in 1642",
     "from": 1599,
-    "to": 1642
+    "to": 1629
    },
    "sources": [
     {
@@ -139,7 +509,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
      "locator": "section \"Playhouse architecture\"",
-     "quote": "A different model was developed with the Blackfriars Theatre, which came into regular use on a long-term basis in 1599."
+     "quote": "A different model was developed with the Blackfriars Theatre, which came into regular use on a long-term basis in 1599.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English Renaissance theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_Renaissance_theatre",
+     "locator": "section \"Playhouse architecture\"",
+     "quote": "Other small enclosed theatres followed, notably the Whitefriars (1608) and the Cockpit (1617).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Salisbury Court Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Salisbury_Court_Theatre",
+     "locator": "lead",
+     "quote": "Salisbury Court was the last theatre to be built before the closing of the theatres in 1642, during the Puritan era.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -148,7 +543,105 @@
    "name": "Real tennis court",
    "family": "Sport",
    "domain": "Recreational",
-   "fish": "93100"
+   "fish": "93100",
+   "period": {
+    "text": "Hampton Court, built for Wolsey 1526-29; Falkland, 1541; courts are still built, though the recent ones are abroad (Prince's Court, Virginia, 2022)",
+    "from": 1526,
+    "ongoing": true
+   },
+   "structure": "high walls of brick or block, plastered smooth, under a gabled roof, with sloping wooden penthouses along three walls",
+   "plan": "a rectangular indoor court with the dedans, grille and galleries opening beneath the penthouses",
+   "sources": [
+    {
+     "title": "Royal Tennis Court, Hampton Court",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Tennis_Court,_Hampton_Court",
+     "locator": "lead",
+     "quote": "It was built for Cardinal Wolsey between 1526 and 1529.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Falkland Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Falkland_Palace",
+     "locator": "section \"James V and Mary of Guise\"",
+     "quote": "He arranged to build a Royal Tennis Court and bowling alley in the garden in 1541.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "International Tennis Club of Washington",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/International_Tennis_Club_of_Washington",
+     "locator": "lead",
+     "quote": "With its Grand Opening on November 4, 2022 with Prince Edward as the guest of honor, Prince's Court",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Real tennis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Real_tennis",
+     "locator": "section \"Courts\"",
+     "quote": "The jeu à dedans court is a rectangular indoor court with high walls on all four sides and a high ceiling.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Real tennis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Real_tennis",
+     "locator": "section \"Courts\"",
+     "quote": "The surrounding walls are usually constructed of brick or cinder block and are plastered smooth.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Real tennis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Real_tennis",
+     "locator": "section \"Courts\"",
+     "quote": "Three walls feature sloping wooden roofs, known as penthouses",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Real tennis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Real_tennis",
+     "locator": "section \"Courts\"",
+     "quote": "Most courts have gabled roofs, with the ridge line along the length of the court.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Real tennis",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Real_tennis",
+     "locator": "section \"Courts\"",
+     "quote": "Beneath the penthouses are various openings in the wall, which have various mechanics in the gameplay and allow spectators to view the game.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "italian-court-theatre",
@@ -158,8 +651,9 @@
    "fish": null,
    "abroad": true,
    "period": {
-    "text": "the earliest surviving true proscenium arch, Teatro Farnese, Parma, 1618",
-    "from": 1618
+    "text": "a proscenium arch in use at Siena by 1560; the earliest surviving true one, Teatro Farnese, Parma, 1618; theatres with a proscenium arch are still built, though many modern ones prefer a thrust stage",
+    "from": 1560,
+    "ongoing": true
    },
    "sources": [
     {
@@ -168,7 +662,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Proscenium",
      "locator": "section \"Renaissance\"",
-     "quote": "The earliest true proscenium arch to survive in a permanent theatre is the Teatro Farnese in Parma (1618), many earlier such theatres having been lost."
+     "quote": "The earliest true proscenium arch to survive in a permanent theatre is the Teatro Farnese in Parma (1618), many earlier such theatres having been lost.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Proscenium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Proscenium",
+     "locator": "section \"Renaissance\"",
+     "quote": "Engravings suggest that the proscenium arch was already in use as early as 1560 at a production in Siena.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Proscenium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Proscenium",
+     "locator": "section \"Function\"",
+     "quote": "Many modern theatres attempt to do away with the fourth wall concept and so are instead designed with a thrust stage that projects out of the proscenium arch",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -178,11 +697,12 @@
    "family": "Theatres and entertainment",
    "domain": "Recreational",
    "fish": null,
-   "note": "FISH has only THEATRE for all playhouses.",
    "period": {
-    "text": "from Lincoln's Inn Fields, 1661",
-    "from": 1661
+    "text": "from Lincoln's Inn Fields, 1661; Dorset Garden, 1671; the King's Company's Drury Lane, 1674, the last new playhouse of the period the sources name",
+    "from": 1661,
+    "to": 1674
    },
+   "note": "FISH has only THEATRE for all playhouses.",
    "sources": [
     {
      "title": "Restoration spectacular",
@@ -190,7 +710,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Restoration_spectacular",
      "locator": "section \"Changeable scenery\"",
-     "quote": "Lincoln's Inn Fields opened on 28 June 1661, with the first \"moveable\" or \"changeable\" scenery used on the British public stage, (i.e., wings or shutters that ran in grooves and could be smoothly and mechanically changed between or even within acts)."
+     "quote": "Lincoln's Inn Fields opened on 28 June 1661, with the first \"moveable\" or \"changeable\" scenery used on the British public stage, (i.e., wings or shutters that ran in grooves and could be smoothly and mechanically changed between or even within acts).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Salisbury Court Theatre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Salisbury_Court_Theatre",
+     "locator": "lead",
+     "quote": "It was replaced in 1671 by the Dorset Garden Theatre, which was built slightly further south to a design by Christopher Wren.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Restoration spectacular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Restoration_spectacular",
+     "locator": "section \"Parody\"",
+     "quote": "Even after the King's Company got their new well-appointed playhouse in Drury Lane in 1674",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -201,9 +746,11 @@
    "domain": "Recreational",
    "fish": "69957",
    "period": {
-    "text": "Richmond, North Yorkshire, 1788, among the oldest surviving",
-    "from": 1788
+    "text": "Bristol's Theatre Royal, 1766, the oldest working; Richmond, North Yorkshire, 1788, among the oldest surviving; Bury St Edmunds, 1819, a late Regency example; the sources give no end to the type",
+    "from": 1766,
+    "to": 1819
    },
+   "plan": "a pit with boxes around it and a gallery above, and a forestage in front of the scene",
    "sources": [
     {
      "title": "Georgian Theatre Royal",
@@ -211,7 +758,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Georgian_Theatre_Royal",
      "locator": "lead",
-     "quote": "It is among the oldest of Britain's extant theatres."
+     "quote": "It is among the oldest of Britain's extant theatres.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bristol Old Vic",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bristol_Old_Vic",
+     "locator": "lead",
+     "quote": "The Theatre Royal, the oldest continually-operating theatre in the English-speaking world, was built between 1764 and 1766 on King Street in Bristol.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Theatre Royal, Bury St Edmunds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Theatre_Royal,_Bury_St_Edmunds",
+     "locator": "section \"The New Theatre\"",
+     "quote": "The Theatre Royal was opened by its proprietor and architect William Wilkins on 11 October 1819 as the \"New Theatre\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Theatre Royal, Bury St Edmunds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Theatre_Royal,_Bury_St_Edmunds",
+     "locator": "section \"2000s restoration\"",
+     "quote": "Previous restorations to the building had removed the original Georgian entrances to the pit as well as its distinctive Georgian forestage.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Theatre Royal, Bury St Edmunds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Theatre_Royal,_Bury_St_Edmunds",
+     "locator": "section \"2000s restoration\"",
+     "quote": "The boxes had also been removed from the dress circle and the seating layout changed throughout the building.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Bristol Old Vic",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bristol_Old_Vic",
+     "locator": "section \"History of the theatre\"",
+     "quote": "The auditorium was rebuilt with a new sloping ceiling and gallery in 1800.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -222,8 +827,9 @@
    "domain": "Recreational",
    "fish": null,
    "period": {
-    "text": "the Grecian Saloon, 1825; Evans's, 1840s",
-    "from": 1825
+    "text": "the Grecian Saloon, 1825; saloons spread in the 1830s; Evans's, 1840s; music halls took their place in the 1850s, so the last year is approximate",
+    "from": 1825,
+    "to": 1850
    },
    "sources": [
     {
@@ -232,7 +838,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Music_hall",
      "locator": "section \"Origins and development\"",
-     "quote": "Another famous \"song and supper\" room of this period was Evans Music-and-Supper Rooms, 43 King Street, Covent Garden, established in the 1840s by W.H."
+     "quote": "Another famous \"song and supper\" room of this period was Evans Music-and-Supper Rooms, 43 King Street, Covent Garden, established in the 1840s by W.H.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Origins and development\"",
+     "quote": "The most famous London saloon of the early days was the Grecian Saloon, established in 1825, at The Eagle (a former tea-garden), 2 Shepherdess Walk, off the City Road in east London.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "lead",
+     "quote": "during the 1850s some public houses were demolished, and specialised music hall theatres developed in their place.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -243,9 +874,83 @@
    "domain": "Recreational",
    "fish": "69946",
    "period": {
-    "text": "the Canterbury, Lambeth, 1852, often regarded as the first",
-    "from": 1852
-   }
+    "text": "the Canterbury, Lambeth, 1852, often regarded as the first; London's large halls peaked at 78 in 1878; halls still rebuilt in the 1890s (Royal Cambridge, 1898); the form faded after 1918 as the halls turned to variety",
+    "from": 1852,
+    "flourish": [
+     1852,
+     1878
+    ],
+    "to": 1898
+   },
+   "plan": "a large hall with tables where the audience ate, drank and smoked during the show, the cheapest seats in the gallery",
+   "sources": [
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Early music halls\"",
+     "quote": "It opened on 17 May 1852 and was described by the musician and author Benny Green as being \"the most significant date in all the history of music hall\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Early music halls\"",
+     "quote": "Numbers peaked in 1878, with 78 large music halls in the metropolis and 300 smaller venues.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Early music halls\"",
+     "quote": "Designed by William Finch Hill (the designer of the Britannia theatre in nearby Hoxton), it was rebuilt after a fire in 1898.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "lead",
+     "quote": "It faded away after 1918 as the halls rebranded their entertainment as variety.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "lead",
+     "quote": "These theatres were designed chiefly so that people could consume food and alcohol and smoke tobacco in the auditorium while the entertainment took place, with the cheapest seats located in the gallery.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Variety theatre\"",
+     "quote": "the original arrangement of a large hall with tables at which drink was served, changed to that of a drink-free auditorium.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "variety-theatre",
@@ -253,11 +958,17 @@
    "family": "Theatres and entertainment",
    "domain": "Recreational",
    "fish": null,
-   "note": "FISH files variety theatre under music hall.",
    "period": {
-    "text": "from the rebuilding of the London Pavilion, 1885",
-    "from": 1885
+    "text": "from the rebuilding of the London Pavilion, 1885; the Tivoli (1888-90), the Coliseum (1904) and the London Palladium (1910), the latest the source names",
+    "from": 1885,
+    "flourish": [
+     1885,
+     1910
+    ],
+    "to": 1910
    },
+   "plan": "a drink-free theatre auditorium with foyers and promenades, replacing the hall with tables",
+   "note": "FISH files variety theatre under music hall.",
    "sources": [
     {
      "title": "Music hall",
@@ -265,7 +976,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Music_hall",
      "locator": "section \"Variety theatre\"",
-     "quote": "A new era of variety theatre was developed by the rebuilding of the London Pavilion in 1885."
+     "quote": "A new era of variety theatre was developed by the rebuilding of the London Pavilion in 1885.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Variety theatre\"",
+     "quote": "One of the grandest of these new halls was the Coliseum Theatre built by Oswald Stoll in 1904 at the bottom of St Martin's Lane.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Variety theatre\"",
+     "quote": "This was followed by the London Palladium (1910) in Argyll Street.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Variety theatre\"",
+     "quote": "its lavishly appointed auditorium and its elegant and luxurious foyers and promenades",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Music hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Music_hall",
+     "locator": "section \"Variety theatre\"",
+     "quote": "the original arrangement of a large hall with tables at which drink was served, changed to that of a drink-free auditorium.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -276,8 +1034,9 @@
    "domain": "Recreational",
    "fish": "69938",
    "period": {
-    "text": "purpose-built under the Cinematograph Act 1909; the Electric, Birmingham, 1909",
-    "from": 1909
+    "text": "purpose-built under the Cinematograph Act 1909; the Electric, Birmingham, 1909; still built (a ten-screen cinema opened in Basildon in 2024)",
+    "from": 1909,
+    "ongoing": true
    },
    "sources": [
     {
@@ -286,7 +1045,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Electric_Cinema,_Birmingham",
      "locator": "lead",
-     "quote": "It opened in Station Street in 1909, showing its first silent film on 27 December of that year."
+     "quote": "It opened in Station Street in 1909, showing its first silent film on 27 December of that year.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Basildon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basildon",
+     "locator": "section \"Cinema\"",
+     "quote": "In 2018, planning permission was granted for a new ten screen Empire cinema",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Basildon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basildon",
+     "locator": "section \"Cinema\"",
+     "quote": "As of July 2024, the cinema was opened under Vue's management.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -297,9 +1081,12 @@
    "domain": "Recreational",
    "fish": "70433",
    "period": {
-    "text": "Bath made a spa town by the Romans c. 60 AD",
-    "from": 60
+    "text": "Bath made a spa town by the Romans c. 60 AD; the bathing complex built up over the next 300 years (to c. 370) and used until Roman rule ended in the early 5th century",
+    "from": 60,
+    "to": 370
    },
+   "structure": "heated by hypocausts, floors raised on stacks of pillars over hot air from a furnace; at Bath the bath enclosed in a barrel-vaulted building",
+   "plan": "a sequence of hot, warm and cold rooms (caldarium, tepidarium, frigidarium)",
    "sources": [
     {
      "title": "Bath, Somerset",
@@ -307,7 +1094,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Bath,_Somerset",
      "locator": "section \"Toponymy\"",
-     "quote": "60 AD, as part of which  they built the Roman Baths, from which the modern name of the city is derived."
+     "quote": "60 AD, as part of which  they built the Roman Baths, from which the modern name of the city is derived.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Baths (Bath)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+     "locator": "section \"Roman Britain\"",
+     "quote": "The temple was constructed in 60–70 AD and the bathing complex was gradually built up over the next 300 years.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Baths (Bath)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+     "locator": "lead",
+     "quote": "The Roman baths were designed for public bathing and were used until the end of Roman rule in Britain in the 5th century AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Baths (Bath)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+     "locator": "section \"Roman Britain\"",
+     "quote": "In the 2nd century it was enclosed within a wooden barrel-vaulted building, and included the caldarium (hot bath), tepidarium (lukewarm bath), and frigidarium (cold bath).",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Hypocaust",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hypocaust",
+     "locator": "section \"Roman operation\"",
+     "quote": "The floor of the hypocaust was raised above the ground by pillars, called pilae stacks.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -316,7 +1151,62 @@
    "name": "Spa",
    "family": "Spas and resorts",
    "domain": "Recreational",
-   "fish": "68722"
+   "fish": "68722",
+   "period": {
+    "text": "Harrogate's Tewit Well, found in 1571, the first resort in England for drinking medicinal waters; spas most popular in the 18th century; still built (Thermae Bath Spa, opened 2006)",
+    "from": 1571,
+    "flourish": [
+     1700,
+     1799
+    ],
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Harrogate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harrogate",
+     "locator": "section \"History\"",
+     "quote": "The first mineral spring was discovered in 1571 by William Slingsby, who found that water from the Tewit Well in High Harrogate possessed similar properties to that from springs in the Belgian town of Spa, which gave its name to spa towns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Spa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Spa",
+     "locator": "section \"Etymology\"",
+     "quote": "He built an enclosed well at what became known as Harrogate, the first resort in England for drinking medicinal waters.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Spa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Spa",
+     "locator": "lead",
+     "quote": "Following a decline in public bathing during medieval times, spas became popular health resorts and social centers for the upper class in the 18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Thermae Bath Spa",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Thermae_Bath_Spa",
+     "locator": "lead",
+     "quote": "Thermae Bath Spa is a combination of the historic spa and a contemporary building in the city of Bath, England, and reopened in 2006.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "pump-room",
@@ -325,8 +1215,9 @@
    "domain": "Recreational",
    "fish": "71742",
    "period": {
-    "text": "Bath's first Pump Room 1706",
-    "from": 1706
+    "text": "Bath's first Pump Room 1706; Leamington, 1814; Harrogate's Royal Pump Room, 1842, the latest new one found (its glazed annexe 1913)",
+    "from": 1706,
+    "to": 1842
    },
    "sources": [
     {
@@ -335,7 +1226,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Grand_Pump_Room",
      "locator": "section \"History\"",
-     "quote": "The present building replaced an earlier one on the same site, designed by John Harvey at the request of Beau Nash, Bath's master of ceremonies, in 1706, before the discovery of Roman remains nearby."
+     "quote": "The present building replaced an earlier one on the same site, designed by John Harvey at the request of Beau Nash, Bath's master of ceremonies, in 1706, before the discovery of Roman remains nearby.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Pump Rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Pump_Rooms",
+     "locator": "section \"Background and beginnings\"",
+     "quote": "The building, named The New Pump Rooms and Baths, was opened three years later in July 1814.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Pump Room Museum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Pump_Room_Museum",
+     "locator": "lead",
+     "quote": "Today, the Pump Room consists of both the original 1842 stone rotunda and a glazed annexe which was opened in 1913.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -346,9 +1262,15 @@
    "domain": "Recreational",
    "fish": "87746",
    "period": {
-    "text": "18th and 19th centuries; Harrison's Rooms, Bath, 1708",
-    "from": 1708
+    "text": "18th and 19th centuries; Harrison's Rooms, Bath, 1708; mostly of the 18th century; by the 1900s supplanted by dance halls, nightclubs and hotel ballrooms, so the last year is approximate",
+    "from": 1708,
+    "flourish": [
+     1708,
+     1799
+    ],
+    "to": 1900
    },
+   "plan": "a main room with smaller card, tea and supper rooms; in small towns one large room attached to the best inn",
    "sources": [
     {
      "title": "Bath Assembly Rooms",
@@ -356,7 +1278,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Bath_Assembly_Rooms",
      "locator": "section \"History\"",
-     "quote": "The first built in 1708 for Thomas Harrison overlooking Parade Gardens between North Parade and Bath Abbey."
+     "quote": "The first built in 1708 for Thomas Harrison overlooking Parade Gardens between North Parade and Bath Abbey.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Assembly rooms (FISH Thesaurus of Monument Types, concept 87746)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/87746.html",
+     "locator": "scope note",
+     "quote": "A building or set of rooms, primarily of the 18th century, in which social gatherings and balls were held.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Assembly rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Assembly_rooms",
+     "locator": "lead",
+     "quote": "In Great Britain and Ireland, especially in the 18th and 19th centuries, assembly rooms were gathering places for members of the higher social classes open to members of both sexes.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Assembly rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Assembly_rooms",
+     "locator": "lead",
+     "quote": "By the 1900s, people became more accepting of women entering public places, and new venues for entertainment arose, such as public dance halls and nightclubs.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Assembly rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Assembly_rooms",
+     "locator": "lead",
+     "quote": "A major set of assembly rooms consisted of a main room and several smaller subsidiary rooms such as card rooms, tea rooms and supper rooms.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Assembly rooms",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Assembly_rooms",
+     "locator": "lead",
+     "quote": "On the other hand, in smaller towns a single large room attached to the best inn might serve for the occasional assembly for the local landed gentry.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -367,9 +1347,13 @@
    "domain": "Recreational",
    "fish": "71155",
    "period": {
-    "text": "Vauxhall, from the mid-17th to the mid-19th century",
+    "text": "opened in London from the later 17th century (Vauxhall from the mid-17th to the mid-19th century); the 18th century their heyday; still opened in the 19th, the latest named Leeds Royal Park, 1858",
     "from": 1660,
-    "to": 1859
+    "flourish": [
+     1700,
+     1799
+    ],
+    "to": 1858
    },
    "sources": [
     {
@@ -378,7 +1362,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Vauxhall_Gardens",
      "locator": "lead",
-     "quote": "From 1785 to 1859, the site was known as Vauxhall, a pleasure garden and one of the leading venues for public entertainment in London from the mid-17th century to the mid-19th century."
+     "quote": "From 1785 to 1859, the site was known as Vauxhall, a pleasure garden and one of the leading venues for public entertainment in London from the mid-17th century to the mid-19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pleasure garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pleasure_garden",
+     "locator": "section \"British early modern and Victorian times\"",
+     "quote": "Public pleasure gardens were opened in London from the later 17th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pleasure garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pleasure_garden",
+     "locator": "section \"British early modern and Victorian times\"",
+     "quote": "These both expanded their areas greatly in the 18th century, the heyday of the pleasure garden.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pleasure garden",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pleasure_garden",
+     "locator": "section \"British early modern and Victorian times\"",
+     "quote": "Other cities, in England and abroad, acquired their own, such as Holte Bridgman's Apollo Gardens in Birmingham (1740s) and Leeds Royal Park in 1858.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -389,9 +1409,11 @@
    "domain": "Recreational",
    "fish": "69009",
    "period": {
-    "text": "the first in Britain 1861",
-    "from": 1861
+    "text": "the first in Britain 1861; many lost after the Second World War, but bandstands were again restored and built with park funding between 1996 and 2010",
+    "from": 1861,
+    "ongoing": true
    },
+   "plan": "a circular, semicircular or polygonal open platform under a roof",
    "sources": [
     {
      "title": "Bandstand",
@@ -399,7 +1421,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Bandstand",
      "locator": "section \"History in Britain\"",
-     "quote": "The first bandstands in Britain were built in the Royal Horticultural Society Gardens, South Kensington in 1861."
+     "quote": "The first bandstands in Britain were built in the Royal Horticultural Society Gardens, South Kensington in 1861.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bandstand",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bandstand",
+     "locator": "section \"History in Britain\"",
+     "quote": "Between 1996 and 2010 there was over £500 million worth of investments in parks - a significant chunk of this money was spent on the restoration and building of bandstands.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bandstand",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bandstand",
+     "locator": "lead",
+     "quote": "A bandstand (sometimes music kiosk) is a circular, semicircular or polygonal structure set in a park, garden, pier, or indoor space",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -410,9 +1457,11 @@
    "domain": "Recreational",
    "fish": "87799",
    "period": {
-    "text": "Ryde Pier, 1814, the first recorded in England",
-    "from": 1814
+    "text": "Ryde Pier, 1814, the first recorded in England; still built (Blackfriars Pier on the Thames, moved to a new site and opened 2016)",
+    "from": 1814,
+    "ongoing": true
    },
+   "structure": "timber at first; cast iron from Gravesend Town Pier, 1834",
    "sources": [
     {
      "title": "Pier",
@@ -420,7 +1469,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pier",
      "locator": "section \"England and Wales\"",
-     "quote": "The first recorded pier in England was Ryde Pier, opened in 1814 on the Isle of Wight, as a landing stage to allow ferries to and from the mainland to berth."
+     "quote": "The first recorded pier in England was Ryde Pier, opened in 1814 on the Isle of Wight, as a landing stage to allow ferries to and from the mainland to berth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackfriars Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackfriars_Pier",
+     "locator": "section \"History\"",
+     "quote": "In order to allow for works on the Thames Tideway Tunnel, the pier was moved to a new location 250 m (820 ft) downstream and opened in October 2016.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"Pleasure piers\"",
+     "quote": "Early pleasure piers were of complete timber construction, as was with Margate which opened in 1824.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"England and Wales\"",
+     "quote": "The oldest cast iron pier in the world is Town Pier, Gravesend, in Kent, which opened in 1834.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -431,9 +1516,15 @@
    "domain": "Recreational",
    "fish": "92951",
    "period": {
-    "text": "from the early 19th century; more than 100 by 1914",
-    "from": 1814
+    "text": "from the early 19th century; building peaked in the 1860s, with 22 that decade; more than 100 by 1914; Deal, 1957, a late example of concrete-clad steel (no source names the last)",
+    "from": 1814,
+    "flourish": [
+     1860,
+     1869
+    ],
+    "to": 1957
    },
+   "structure": "all timber at first, then iron and timber or cast iron; Deal (1957) concrete-clad steel",
    "sources": [
     {
      "title": "Pier",
@@ -441,7 +1532,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pier",
      "locator": "section \"Pleasure piers\"",
-     "quote": "Pleasure piers were first built in Britain during the early 19th century."
+     "quote": "Pleasure piers were first built in Britain during the early 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"England and Wales\"",
+     "quote": "the pier became fashionable at seaside resorts in England and Wales during the Victorian era, peaking in the 1860s with 22 being built in that decade.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"England and Wales\"",
+     "quote": "A symbol of the typical British seaside holiday, by 1914, more than 100 pleasure piers were located around the UK coast.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Deal Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Deal_Pier",
+     "locator": "lead",
+     "quote": "It is the third pier to exist in Deal and was opened in November 1957 by the Duke of Edinburgh.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"Pleasure piers\"",
+     "quote": "Early pleasure piers were of complete timber construction, as was with Margate which opened in 1824.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pier",
+     "locator": "section \"Pleasure piers\"",
+     "quote": "The first iron and timber built pleasure pier Margate Jetty, opened in 1855.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Deal Pier",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Deal_Pier",
+     "locator": "section \"Third pier\"",
+     "quote": "Constructed predominantly from concrete-clad steel",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -452,8 +1612,9 @@
    "domain": "Recreational",
    "fish": "69944",
    "period": {
-    "text": "York, 1754, said to be the oldest in the modern sense",
-    "from": 1754
+    "text": "York, 1754, said to be the oldest in the modern sense; still built (Ascot's grandstand completed 2006)",
+    "from": 1754,
+    "ongoing": true
    },
    "sources": [
     {
@@ -462,7 +1623,21 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/York_Racecourse",
      "locator": "section \"Move to the Knavesmire and growth\"",
-     "quote": "It was ready for the 1754 August meeting and has been said to have been the oldest grandstand (in the modern sense) at any sporting venue in the world."
+     "quote": "It was ready for the 1754 August meeting and has been said to have been the oldest grandstand (in the modern sense) at any sporting venue in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ascot Racecourse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ascot_Racecourse",
+     "locator": "lead",
+     "quote": "The racetrack's current grandstand was completed in 2006.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -473,9 +1648,11 @@
    "domain": "Recreational",
    "fish": "71809",
    "period": {
-    "text": "Goodison Park, 1892, England's first purpose-built",
-    "from": 1892
+    "text": "Goodison Park, 1892, England's first purpose-built; still built (Tottenham Hotspur Stadium, 2019)",
+    "from": 1892,
+    "ongoing": true
    },
+   "plan": "a pitch with stands round it (at Goodison on three sides) and other buildings",
    "sources": [
     {
      "title": "Goodison Park",
@@ -483,7 +1660,33 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Goodison_Park",
      "locator": "section \"Genesis of Goodison Park\"",
-     "quote": "The stadium was England's first purpose-built football ground, with stands on three sides."
+     "quote": "The stadium was England's first purpose-built football ground, with stands on three sides.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    },
+    {
+     "title": "Tottenham Hotspur Stadium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_Stadium",
+     "locator": "lead",
+     "quote": "The stadium opened on 3 April 2019 with a ceremony before the first Premier League game held there.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Football ground (FISH Thesaurus of Monument Types, concept 71809)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71809.html",
+     "locator": "scope note",
+     "quote": "A site including a pitch, stands and other ancillary buildings associated with the game of football.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   }

@@ -7,14 +7,127 @@
    "name": "Moot (outdoor meeting place, moot hill)",
    "family": "Town and guild halls",
    "domain": "Civic",
-   "fish": "68742"
+   "fish": "68742",
+   "period": {
+    "text": "hundred courts first recorded in King Edmund I's laws of the 10th century (c. 940); in Scotland moot hills kept a role in baronial courts until 1747, when heritable jurisdictions were abolished; a few, such as Tynwald Hill, are still used",
+    "from": 940,
+    "to": 1747
+   },
+   "sources": [
+    {
+     "title": "Hundred (county division)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hundred_(county_division)",
+     "locator": "section \"Description\"",
+     "quote": "The term \"hundred\" is first recorded in the 10th-century laws of King Edmund I as a measure of land and the area served by a hundred court.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot hill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_hill",
+     "locator": "lead",
+     "quote": "In early medieval Britain, such hills were used for \"moots\", meetings of local people to settle local business.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot hill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_hill",
+     "locator": "section \"The demise of moot hills\"",
+     "quote": "After 1747 the moot hill was not used as a part of the baronial court process and the requirement for a gathering place for soldiers was also a thing of the past.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot hill",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_hill",
+     "locator": "section \"The demise of moot hills\"",
+     "quote": "A few, notably the Tynwald Hill in the Isle of Man, continue to have a function in the 21st century.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "moot-hall",
    "name": "Moot hall",
    "family": "Town and guild halls",
    "domain": "Civic",
-   "fish": "68743"
+   "fish": "68743",
+   "period": {
+    "text": "the surviving moot halls run from Hexham (c. 1379) through timber-framed halls of c. 1500 (Elstow) and c. 1520 (Aldeburgh) to Keswick (1813) and Wirksworth (1814), the latest found; no source says when the name stopped being used for new buildings",
+    "from": 1379,
+    "to": 1814
+   },
+   "sources": [
+    {
+     "title": "Moot Hall, Hexham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Hexham",
+     "locator": "section \"History\"",
+     "quote": "The Moot Hall was designed in the Medieval style, built in rubble masonry and was completed in around 1379.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot Hall, Elstow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Elstow",
+     "locator": "section \"History\"",
+     "quote": "It was designed in the Tudor style, built in timber frame in-filled with wattle and daub and was completed around 1500.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot Hall, Aldeburgh",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Aldeburgh",
+     "locator": "section \"The building\"",
+     "quote": "The building was designed in the Tudor style, built using timber frame construction techniques with wattle and daub and brick nog infilling, and was completed around 1520.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot Hall, Keswick",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Keswick",
+     "locator": "section \"History\"",
+     "quote": "The current structure, built of lime-washed stone and slate walling, was commissioned by the trustees of Greenwich Hospital in 1813.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot Hall, Wirksworth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Wirksworth",
+     "locator": "section \"History\"",
+     "quote": "The new building was designed in the neoclassical style, built in ashlar stone and was completed in 1814.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "guildhall",
@@ -23,9 +136,15 @@
    "domain": "Civic",
    "fish": "68706",
    "period": {
-    "text": "the London Guildhall first recorded 1127 or 1128; merchant guilds built halls in the 13th and 14th centuries",
-    "from": 1127
+    "text": "the London Guildhall first recorded 1127 or 1128; merchant guilds built halls in the 13th and 14th centuries; in Britain the name lived on for town halls, as at Swansea's Guildhall of 1934, the latest found",
+    "from": 1127,
+    "flourish": [
+     1200,
+     1400
+    ],
+    "to": 1934
    },
+   "plan": "a hall over a ground floor that some guilds let for market trading",
    "sources": [
     {
      "title": "Guildhall, London",
@@ -33,7 +152,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Guildhall,_London",
      "locator": "section \"Roman, Anglo-Saxon and Medieval\"",
-     "quote": "The first documentary reference to a London Guildhall is dated 1127 or 1128; archaeologists have also discovered foundations dating to around that time."
+     "quote": "The first documentary reference to a London Guildhall is dated 1127 or 1128; archaeologists have also discovered foundations dating to around that time.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Guildhall",
@@ -41,7 +163,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Guildhall",
      "locator": "section \"As meeting houses for guilds\"",
-     "quote": "By the 13th and 14th centuries, merchant guilds had acquired sufficient resources to erect guild halls in many major market towns."
+     "quote": "By the 13th and 14th centuries, merchant guilds had acquired sufficient resources to erect guild halls in many major market towns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall",
+     "locator": "section \"As meeting houses for guilds\"",
+     "quote": "Some medieval guilds allowed market trading to occur on the ground floor of the guildhall.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Guildhall, Swansea",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall,_Swansea",
+     "locator": "section \"History\"",
+     "quote": "The building was designed by Sir Percy Thomas in the neoclassical style (but perhaps more accurately described as Stripped Classicism) and was officially opened by The Duke of Kent on 23 October 1934.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -50,7 +197,71 @@
    "name": "Town hall",
    "family": "Town and guild halls",
    "domain": "Civic",
-   "fish": "68754"
+   "fish": "68754",
+   "period": {
+    "text": "in Britain from the London Guildhall (c. 1120), a guildhall being usually the town hall; Exeter's, rebuilt 1468-70, is claimed as the oldest municipal building in England still in use; new town halls and civic centres are still built",
+    "from": 1120,
+    "ongoing": true
+   },
+   "plan": "a large open hall for meetings, courts and entertainments with the council's rooms beside it; until the mid-19th century the hall was always part of it, later civic centres are planned for many uses",
+   "sources": [
+    {
+     "title": "Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guildhall",
+     "locator": "section \"As town hall in the United Kingdom\"",
+     "quote": "The London Guildhall was established around 1120.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Exeter Guildhall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Guildhall",
+     "locator": "section \"Early history\"",
+     "quote": "On this basis it has been claimed to be the oldest municipal building in England still in use.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "FISH Thesaurus of Monument Types: Town Hall",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68754.html",
+     "locator": "scope note",
+     "quote": "A large building used for the transaction of the public business of a town, the holding of courts of justice, entertainments and other activities.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "lead",
+     "quote": "By convention, until the middle of the 19th century, a single large, open chamber (or \"hall\") formed an integral part of the building housing the council and other organs of government that supported it.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "lead",
+     "quote": "Modern town halls or \"civic centres\" are often designed with a great variety and flexibility of purpose in mind.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "tolbooth",
@@ -60,10 +271,11 @@
    "fish": null,
    "note": "Not in FISH, which is the thesaurus for England; Scotland's own term.",
    "period": {
-    "text": "first recorded at Berwick in the later 13th century; until the 19th century",
+    "text": "first recorded at Berwick in the later 13th century, with many grants of land for tolbooths through the 14th; the oldest intact are Musselburgh (1590) and Canongate (1591); replaced by town halls, courthouses and prisons in the early 19th century, Forres (1839) the latest listed built new",
     "from": 1250,
-    "to": 1850
+    "to": 1839
    },
+   "plan": "a council chamber, court house and jail in one building, most with a bell, often in a steeple",
    "sources": [
     {
      "title": "Tolbooth",
@@ -71,7 +283,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Tolbooth",
      "locator": "lead",
-     "quote": "A tolbooth or town house was the main municipal building of a Scottish burgh, from medieval times until the 19th century."
+     "quote": "A tolbooth or town house was the main municipal building of a Scottish burgh, from medieval times until the 19th century.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Tolbooth",
@@ -79,7 +294,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Tolbooth",
      "locator": "section \"History\"",
-     "quote": "The first record of a tolbooth is at Berwick upon Tweed in the later 13th century, and the earliest known grant of land for construction of a tolbooth is at Dundee in 1325, with many more grants recorded through the 14th century."
+     "quote": "The first record of a tolbooth is at Berwick upon Tweed in the later 13th century, and the earliest known grant of land for construction of a tolbooth is at Dundee in 1325, with many more grants recorded through the 14th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "The oldest tolbooths which survive intact are those of Musselburgh (1590) and Canongate (1591).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "In the early 19th century, increasing separation of functions led to purpose-built courthouses and prisons, and the replacement of tolbooths and town houses with modern town halls, serving as council chamber and events venue.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"Present\"",
+     "quote": "Forres Tolbooth, built in 1839",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "lead",
+     "quote": "The tolbooth usually provided a council meeting chamber, a court house and a jail.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Tolbooth",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tolbooth",
+     "locator": "section \"History\"",
+     "quote": "Most tolbooths had a bell, often mounted on a steeple, and later clocks were added.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -90,6 +363,12 @@
    "domain": "Civic",
    "fish": null,
    "note": "Not in FISH; similar English buildings are called tolseys.",
+   "period": {
+    "text": "Kilkenny's first tholsel may date from the 14th century (uncertain) and Dublin's was a late medieval merchants' hall; towards the end of the 18th century the name gave way to market house (Kilkenny's present tholsel 1761)",
+    "from": 1300,
+    "to": 1800
+   },
+   "plan": "arcaded ground floor for markets with an assembly room above (Kilkenny, 1761)",
    "sources": [
     {
      "title": "Tholsel",
@@ -97,7 +376,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Tholsel",
      "locator": "lead",
-     "quote": "Tholsel was a name traditionally used for a local municipal and administrative building used to collect tolls and taxes and to administer trade and other documents in Irish towns and cities."
+     "quote": "Tholsel was a name traditionally used for a local municipal and administrative building used to collect tolls and taxes and to administer trade and other documents in Irish towns and cities.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Tholsel",
@@ -106,6 +388,50 @@
      "url": "https://en.wikipedia.org/wiki/Tholsel",
      "locator": "lead",
      "quote": "Similar buildings called tolseys or tolsey houses are found in some English towns and cities, including Burford, Gloucester and Wotton-under-Edge."
+    },
+    {
+     "title": "The Tholsel, Kilkenny",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Tholsel,_Kilkenny",
+     "locator": "section \"History\"",
+     "quote": "The first tholsel, or guildhall, in the High Street may have dated back to the 14th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tholsel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tholsel",
+     "locator": "lead",
+     "quote": "The Tholsel building in Dublin was built in the late Middle Ages as a merchants' hall, at the corner of Nicholas Street and Christ Church place, next to the Church of St. Nicholas Within.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tholsel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tholsel",
+     "locator": "lead",
+     "quote": "Towards the end of the 18th century the term tholsel was typically swapped for Market House with many of the administrative functions of the original tholsel transferring to another dedicated local council or government building such as a court or sessions house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The Tholsel, Kilkenny",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Tholsel,_Kilkenny",
+     "locator": "section \"History\"",
+     "quote": "It was arcaded on the ground floor, so that markets could be held, with an assembly room on the first floor.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -117,8 +443,9 @@
    "fish": null,
    "abroad": true,
    "period": {
-    "text": "the Palazzo Senatorio, Rome, from 1144; Cologne 1135",
-    "from": 1135
+    "text": "Cologne 1135 and the Palazzo Senatorio, Rome, from 1144; Siena 1297 and Florence 1299; Brussels, built in stages 1401-1455, the grandest of the medieval era",
+    "from": 1135,
+    "to": 1455
    },
    "sources": [
     {
@@ -127,7 +454,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Town_hall",
      "locator": "section \"History\"",
-     "quote": "The Palazzo Senatorio has been the headquarters of the municipal government of Rome since 1144, making it the oldest city hall in the world."
+     "quote": "The Palazzo Senatorio has been the headquarters of the municipal government of Rome since 1144, making it the oldest city hall in the world.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Town hall",
@@ -136,6 +466,39 @@
      "url": "https://en.wikipedia.org/wiki/Town_hall",
      "locator": "section \"History\"",
      "quote": "These features became standard for town halls across Europe."
+    },
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "section \"History\"",
+     "quote": "The Cologne City Hall of 1135 is another early example.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Town hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Town_hall",
+     "locator": "section \"History\"",
+     "quote": "The Palazzo Pubblico of the Republic of Siena and the Palazzo Vecchio of the Republic of Florence, both late-medieval town halls, date from 1297 and 1299 respectively.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brussels Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brussels_Town_Hall",
+     "locator": "lead",
+     "quote": "Erected in stages between 1401 and 1455, the Town Hall is the only surviving medieval building on the Grand-Place and forms the square's architectural centrepiece.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -147,9 +510,11 @@
    "fish": null,
    "note": "Not a separate FISH concept (filed under town hall).",
    "period": {
-    "text": "Leeds Town Hall, opened 1858, one of the largest and earliest",
-    "from": 1858
+    "text": "Leeds Town Hall, opened 1858, one of the largest and earliest; by definition until the end of Victoria's reign in 1901",
+    "from": 1858,
+    "to": 1901
    },
+   "plan": "a great hall at the centre, surrounded by law courts, council chamber, offices and ceremonial rooms (Leeds)",
    "sources": [
     {
      "title": "Leeds Town Hall",
@@ -157,7 +522,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
      "locator": "lead",
-     "quote": "Imagined as a municipal palace to demonstrate the power and success of Victorian Leeds, and opened by Queen Victoria in a lavish ceremony in 1858, it is one of the largest town halls in the United Kingdom."
+     "quote": "Imagined as a municipal palace to demonstrate the power and success of Victorian Leeds, and opened by Queen Victoria in a lavish ceremony in 1858, it is one of the largest town halls in the United Kingdom.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Leeds Town Hall",
@@ -165,7 +533,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
      "locator": "lead",
-     "quote": "The form of Leeds Town Hall has been used as a model for civic buildings across Britain and the British Empire, being one of the largest and earliest."
+     "quote": "The form of Leeds Town Hall has been used as a model for civic buildings across Britain and the British Empire, being one of the largest and earliest.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Victorian era",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Victorian_era",
+     "locator": "lead",
+     "quote": "In the history of the United Kingdom and the British Empire, the Victorian era was the reign of Queen Victoria, from 20 June 1837 until her death on 22 January 1901, although slightly different definitions are sometimes used.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "lead",
+     "quote": "Planned to include law courts, a council chamber, offices, a public hall, and a suite of ceremonial rooms, it was built between 1853 and 1858 to a design by the architect Cuthbert Brodrick.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Leeds Town Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leeds_Town_Hall",
+     "locator": "section \"Description\"",
+     "quote": "The Victoria Hall – originally the Great Hall – rises to 92 ft 6 in (28.19 m) inside the parallelogram of surrounding rooms and corridors and the enclosing colonnades.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -174,7 +578,47 @@
    "name": "Shire hall",
    "family": "Courts and prisons",
    "domain": "Civic",
-   "fish": "71369"
+   "fish": "71369",
+   "period": {
+    "text": "built for the county quarter sessions (held from 1388) and the assizes; no new ones needed after both were abolished in 1972 (Scotland's quarter sessions in 1975); no source here dates the first purpose-built shire hall",
+    "from": 1388,
+    "to": 1972
+   },
+   "sources": [
+    {
+     "title": "FISH Thesaurus of Monument Types: Shire Hall",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71369.html",
+     "locator": "scope note",
+     "quote": "A county judicial building where the Quarter Session and the Assizes for the County were held.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Quarter sessions",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quarter_sessions",
+     "locator": "lead",
+     "quote": "The courts of quarter sessions or quarter sessions were local courts that were traditionally held at four set times each year in the Kingdom of England from 1388; they were extended to Wales following the Laws in Wales Act 1535.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Quarter sessions",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Quarter_sessions",
+     "locator": "lead",
+     "quote": "In 1972, all quarter sessions were abolished in England and Wales with the commencement of the Courts Act 1971, which replaced them and the assizes with a single permanent Crown Court.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "county-hall",
@@ -183,9 +627,11 @@
    "domain": "Civic",
    "fish": "68692",
    "period": {
-    "text": "the county councils, from 1889",
-    "from": 1889
+    "text": "the county councils, from 1889; still built, as at Monmouthshire's new county hall near Usk, opened 2013 (none in Scotland after 1975 or Northern Ireland after 1973)",
+    "from": 1889,
+    "ongoing": true
    },
+   "plan": "a council chamber, committee rooms and offices",
    "sources": [
     {
      "title": "Quarter sessions",
@@ -193,7 +639,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Quarter_sessions",
      "locator": "section \"Civil\"",
-     "quote": "Most of these administrative functions were transferred to county councils when they were established in 1888."
+     "quote": "Most of these administrative functions were transferred to county councils when they were established in 1888.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Monmouthshire County Council",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monmouthshire_County_Council",
+     "locator": "section \"Premises\"",
+     "quote": "The new county hall cost £6 million and was opened in 2013.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "County hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/County_hall",
+     "locator": "section \"Scotland\"",
+     "quote": "County halls ceased to have a role in Scotland in 1975, when a system of large regional councils was introduced.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "County hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/County_hall",
+     "locator": "lead",
+     "quote": "County halls usually contain a council chamber, committee rooms and offices.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -202,14 +684,83 @@
    "name": "Court house",
    "family": "Courts and prisons",
    "domain": "Civic",
-   "fish": "68725"
+   "fish": "68725",
+   "period": {
+    "text": "Hexham's moot hall (c. 1379) is one of the best surviving medieval courthouses in the north of England; still built, as the Manchester Civil Justice Centre (2007)",
+    "from": 1379,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Moot Hall, Hexham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Hexham",
+     "locator": "section \"History\"",
+     "quote": "After that it was used as a venue for the midsummer quarter sessions until 1838, and the building still stands as one of the best surviving examples of a medieval courthouse in the north of England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Moot Hall, Hexham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moot_Hall,_Hexham",
+     "locator": "section \"History\"",
+     "quote": "The Moot Hall was designed in the Medieval style, built in rubble masonry and was completed in around 1379.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manchester Civil Justice Centre",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manchester_Civil_Justice_Centre",
+     "locator": "lead",
+     "quote": "Completed in 2007, it houses Manchester's county court and the Manchester District Registry of the High Court, the city's family proceedings court, the district probate registry, and the regional and area offices of the Court Service.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "gaol",
    "name": "Gaol (county gaol)",
    "family": "Courts and prisons",
    "domain": "Civic",
-   "fish": "70905"
+   "fish": "70905",
+   "period": {
+    "text": "gaols in castles from the 12th century (Lancaster first recorded as a prison in 1196); the Prison Act 1865 joined gaol and house of correction into the local prison",
+    "from": 1196,
+    "to": 1865
+   },
+   "sources": [
+    {
+     "title": "Lancaster Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lancaster_Castle",
+     "locator": "section \"Foundation\"",
+     "quote": "One of the functions castles served was as a prison; the first record of the castle being used in this way was in 1196, although the role became much more important after the English Civil War.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prisons",
+     "author": "Herefordshire Through Time (Herefordshire Council)",
+     "kind": "secondary",
+     "url": "https://htt.herefordshire.gov.uk/herefordshires-past/the-post-medieval-period/institutions/prisons",
+     "locator": "section \"Local prisons\"",
+     "quote": "The Prison Act of 1865 formally amalgamated the jail and the house of correction.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "house-of-correction",
@@ -218,8 +769,9 @@
    "domain": "Civic",
    "fish": "70981",
    "period": {
-    "text": "Bridewell, London, a prison by 1556; houses of correction under the Poor Relief Act 1601",
-    "from": 1556
+    "text": "Bridewell, London, a prison by 1556; houses of correction under the Poor Relief Act 1601, many more in the late 17th century; joined with the gaol by the Prison Act 1865",
+    "from": 1556,
+    "to": 1865
    },
    "sources": [
     {
@@ -228,7 +780,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Bridewell",
      "locator": "lead",
-     "quote": "By 1556 part of it had become a jail known as Bridewell Prison."
+     "quote": "By 1556 part of it had become a jail known as Bridewell Prison.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "House of correction",
@@ -236,7 +791,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/House_of_correction",
      "locator": "lead",
-     "quote": "The house of correction was a type of establishment built after the passing of the Poor Relief Act 1601, places where those who were \"unwilling to work\", including vagrants and beggars, were set to work."
+     "quote": "The house of correction was a type of establishment built after the passing of the Poor Relief Act 1601, places where those who were \"unwilling to work\", including vagrants and beggars, were set to work.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "House of correction",
@@ -244,7 +802,21 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/House_of_correction",
      "locator": "section \"History\"",
-     "quote": "The first London house of correction was Bridewell Prison, and the Middlesex and Westminster houses also opened in the early seventeenth century."
+     "quote": "The first London house of correction was Bridewell Prison, and the Middlesex and Westminster houses also opened in the early seventeenth century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prisons",
+     "author": "Herefordshire Through Time (Herefordshire Council)",
+     "kind": "secondary",
+     "url": "https://htt.herefordshire.gov.uk/herefordshires-past/the-post-medieval-period/institutions/prisons",
+     "locator": "section \"Local prisons\"",
+     "quote": "The Prison Act of 1865 formally amalgamated the jail and the house of correction.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -255,9 +827,11 @@
    "domain": "Civic",
    "fish": "76302",
    "period": {
-    "text": "in the Thames from 1776",
-    "from": 1776
+    "text": "in the Thames from 1776; hulks ceased to be used in Great Britain when the Act lapsed in 1857",
+    "from": 1776,
+    "to": 1857
    },
+   "structure": "the hull of a dismantled ship",
    "sources": [
     {
      "title": "Prison ship",
@@ -265,7 +839,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Prison_ship",
      "locator": "section \"History\"",
-     "quote": "In England in 1776, during the reign of King George III, due to a shortage of prison space in London, the concept of \"prison hulks\" moored in the Thames, was introduced to meet the need for prison space."
+     "quote": "In England in 1776, during the reign of King George III, due to a shortage of prison space in London, the concept of \"prison hulks\" moored in the Thames, was introduced to meet the need for prison space.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "List of British prison hulks",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/List_of_British_prison_hulks",
+     "locator": "section \"Initial authorization and later expansion of use\"",
+     "quote": "Hulks ceased to be used in Great Britain on the final expiry of the act in 1857.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "FISH Thesaurus of Monument Types: Prison Hulk",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/76302.html",
+     "locator": "scope note",
+     "quote": "The hull of a dismantled ship used as a prison.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -277,9 +876,11 @@
    "fish": null,
    "note": "Not in FISH. A design more than a built type: Bentham's own scheme for Millbank was abandoned; Gandy's female prison at Lancaster Castle (1818-21) is the nearest built example in the isles.",
    "period": {
-    "text": "conceived by Bentham from 1786; Panopticon, or The Inspection House, 1791",
-    "from": 1786
+    "text": "conceived by Bentham from 1786; Panopticon, or The Inspection House, 1791; none built in his lifetime (Gandy's women's prison at Lancaster, 1818-21, is close); Cuba's Presidio Modelo, 1926-1931, the latest full example found",
+    "from": 1786,
+    "to": 1931
    },
+   "plan": "a rotunda of cells round a central inspection house",
    "sources": [
     {
      "title": "Panopticon",
@@ -287,7 +888,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Panopticon",
      "locator": "lead",
-     "quote": "The panopticon is a design of institutional building with an inbuilt system of control, originated by the English philosopher and social theorist Jeremy Bentham in the 18th century."
+     "quote": "The panopticon is a design of institutional building with an inbuilt system of control, originated by the English philosopher and social theorist Jeremy Bentham in the 18th century.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Panopticon",
@@ -295,7 +899,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Panopticon",
      "locator": "section \"Prison design\"",
-     "quote": "It has been observed that the architect Joseph Gandy modelled it very closely on Bentham's panopticon prison plans."
+     "quote": "It has been observed that the architect Joseph Gandy modelled it very closely on Bentham's panopticon prison plans.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "section \"Prison design\"",
+     "quote": "Between 1818 and 1821, a small prison for women was built in Lancaster.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "section \"Prison design\"",
+     "quote": "Between 1926 and 1931, the Cuban government built four such panopticons connected with tunnels to a massive central structure that served as a community centre.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Panopticon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Panopticon",
+     "locator": "lead",
+     "quote": "The architecture consists of a rotunda with an inspection house at its centre.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -306,10 +946,11 @@
    "domain": "Civic",
    "fish": "92887",
    "period": {
-    "text": "Millbank, opened 1816, closed 1890",
+    "text": "Millbank, the only National Penitentiary: first prisoners 1816, completed by Smirke in 1821, closed 1890 (Pentonville took over its role in 1842)",
     "from": 1816,
-    "to": 1890
+    "to": 1821
    },
+   "plan": "a hexagonal central courtyard with a pentagonal courtyard on each of its six sides",
    "sources": [
     {
      "title": "Prison",
@@ -317,7 +958,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Prison",
      "locator": "section \"Development of the modern prison\"",
-     "quote": "The first state prison in England was the Millbank Prison, established in 1816 with a capacity for just under 1,000 inmates."
+     "quote": "The first state prison in England was the Millbank Prison, established in 1816 with a capacity for just under 1,000 inmates.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "section \"Construction\"",
+     "quote": "Harvey was dismissed in turn in 1815, and replaced by Robert Smirke, who brought the project to completion in 1821.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "lead",
+     "quote": "It was opened in 1816 and closed in 1890.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Millbank Prison",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millbank_Prison",
+     "locator": "section \"Construction\"",
+     "quote": "It was to consist of a hexagonal central courtyard with an elongated pentagonal courtyard on each outer wall of the central courtyard; the three outer corners of the pentagonal courtyards each had a tower one storey higher than the three floors of the rest of the building.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -329,9 +1006,11 @@
    "fish": null,
    "abroad": true,
    "period": {
-    "text": "opened 1829",
-    "from": 1829
+    "text": "begun 1822, opened 1829; the last cell blocks added in 1877; in use until 1971",
+    "from": 1829,
+    "to": 1877
    },
+   "plan": "cell blocks radiating from a central hub (seven at first)",
    "sources": [
     {
      "title": "Eastern State Penitentiary",
@@ -339,7 +1018,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Eastern_State_Penitentiary",
      "locator": "section \"19th century\"",
-     "quote": "Designed by John Haviland and opened on October 25, 1829, Eastern State is considered to be the world's first true penitentiary, with seven corridors of heated and sky-lighted cells capable of holding 500 convicts in isolation."
+     "quote": "Designed by John Haviland and opened on October 25, 1829, Eastern State is considered to be the world's first true penitentiary, with seven corridors of heated and sky-lighted cells capable of holding 500 convicts in isolation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Eastern State Penitentiary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eastern_State_Penitentiary",
+     "locator": "section \"19th century\"",
+     "quote": "In 1877, four additional cell blocks were constructed in between the original cellblocks but did not contain the individual exercise yards.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Eastern State Penitentiary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Eastern_State_Penitentiary",
+     "locator": "section \"19th century\"",
+     "quote": "The original design called for seven one-story cellblocks radiating from a central hub.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -351,9 +1055,15 @@
    "fish": null,
    "note": "Not in FISH (filed under prison or penitentiary). Pentonville, 1842, and the prisons built after it.",
    "period": {
-    "text": "Pentonville opened 1842; 54 more on similar designs within six years",
-    "from": 1842
+    "text": "Pentonville opened 1842; 54 more on similar designs within six years; still built on the separate system at Strangeways (1868-69), the latest found; the radial plan is said to recur in the latest UK prisons",
+    "from": 1842,
+    "flourish": [
+     1842,
+     1848
+    ],
+    "to": 1869
    },
+   "plan": "a central hall with four to eight radiating wings of cells",
    "sources": [
     {
      "title": "Separate system",
@@ -361,7 +1071,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Separate_system",
      "locator": "section \"Early British prisons\"",
-     "quote": "It opened in 1842 and had separate cells for 520 prisoners."
+     "quote": "It opened in 1842 and had separate cells for 520 prisoners.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "HM Prison Pentonville",
@@ -369,7 +1082,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
      "locator": "section \"19th century\"",
-     "quote": "Pentonville became the model for British prisons."
+     "quote": "Pentonville became the model for British prisons.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "HM Prison Pentonville",
@@ -377,7 +1093,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/HM_Prison_Pentonville",
      "locator": "section \"19th century\"",
-     "quote": "A further 54 were built to similar designs over six years and hundreds throughout the British Empire."
+     "quote": "A further 54 were built to similar designs over six years and hundreds throughout the British Empire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "HM Prison Manchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Manchester",
+     "locator": "lead",
+     "quote": "The prison is known for its prominent ventilation tower and imposing design, structured by the principles of the separate system.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "HM Prison Manchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Manchester",
+     "locator": "section \"History\"",
+     "quote": "Construction of the Grade II listed prison was completed in 1869, to replace the New Bailey Prison in Salford, which closed in 1868.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "HM Prison Leeds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/HM_Prison_Leeds",
+     "locator": "section \"History\"",
+     "quote": "Built from locally quarried stone, the prison originally had four wings radiating from a central point in a Victorian architectural style (known as 'radial') typical both of the time, and in the latest UK prisons.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Separate system",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Separate_system",
+     "locator": "section \"Eastern State Penitentiary: Basis for many 19th-century prisons\"",
+     "quote": "Common features of a separate system prison include a central hall, with several (from four to eight) radiating wings of prison blocks, separated from the central hall and from each other by large metal bars.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -388,10 +1151,12 @@
    "domain": "Civic",
    "fish": "71054",
    "period": {
-    "text": "most survivors 18th and 19th century; until the county police stations after 1839",
+    "text": "most survivors 18th and 19th century (the round-house is named from 1589; London's Tun of 1281 was similar); out of use after the County Police Act 1839 gave the county forces stations with cells",
     "from": 1700,
     "to": 1840
    },
+   "structure": "brick, stone or timber, most with a tiled or stone dome or spire",
+   "plan": "one storey and one cell, sometimes round or polygonal",
    "sources": [
     {
      "title": "Village lock-up",
@@ -399,7 +1164,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Village_lock-up",
      "locator": "section \"Rise of the village lock-up\"",
-     "quote": "The majority of surviving village lock-ups date from the 18th and 19th centuries when rural communities struggled to police thefts, burglaries, shootings, drunkenness, the obstruction of watchmen and the stealing of livestock."
+     "quote": "The majority of surviving village lock-ups date from the 18th and 19th centuries when rural communities struggled to police thefts, burglaries, shootings, drunkenness, the obstruction of watchmen and the stealing of livestock.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Village lock-up",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Village_lock-up",
+     "locator": "section \"Decline and later uses\"",
+     "quote": "The rooms fell out of use when the County Police Act 1839 was introduced and more stations were built with their own holding facilities.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Village lock-up",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Village_lock-up",
+     "locator": "lead",
+     "quote": "Most lock-ups feature a tiled or stone-built dome or spire as a roof and are built from brick, stone or timber.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "FISH Thesaurus of Monument Types: Lock Up",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71054.html",
+     "locator": "scope note",
+     "quote": "The typical village lock-up was a one-storeyed, one-celled building, sometimes of round or polygonal plan.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -410,8 +1211,9 @@
    "domain": "Civic",
    "fish": "71708",
    "period": {
-    "text": "City of London watch houses from the 1640s",
-    "from": 1642
+    "text": "City of London watch houses from the 1640s; the watchmen were replaced by the Metropolitan Police from 1829; churchyard watch houses were also put up to shelter those guarding graves from body-snatchers",
+    "from": 1642,
+    "to": 1829
    },
    "sources": [
     {
@@ -420,7 +1222,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Watchman_(law_enforcement)",
      "locator": "section \"Watch houses\"",
-     "quote": "A City committee was asked to look into the question 'what watchhouses are necessary' and where 'for the safety of this cittye' in 1642."
+     "quote": "A City committee was asked to look into the question 'what watchhouses are necessary' and where 'for the safety of this cittye' in 1642.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Watchman (law enforcement)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Watchman_(law_enforcement)",
+     "locator": "section \"Policing the night streets\"",
+     "quote": "During the 1820s, mounting crime levels and increasing political and industrial disorder (including Peterloo Massacre) prompted calls for reform, led by Sir Robert Peel, which culminated in the demise of the watchmen and their replacement by a uniformed metropolitan police force on Peelian principles.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mortsafe",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mortsafe",
+     "locator": "section \"Vaults and watch-houses\"",
+     "quote": "Watch-houses were sometimes erected to shelter the watchers.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -429,21 +1256,176 @@
    "name": "Police station",
    "family": "Police and fire",
    "domain": "Civic",
-   "fish": "68734"
+   "fish": "68734",
+   "period": {
+    "text": "the Thames River Police at Wapping from 1798, on the site of today's police station; still built, as Hull's Clough Road station (2013)",
+    "from": 1798,
+    "ongoing": true
+   },
+   "plan": "offices, a public reception area and holding cells (a custody suite)",
+   "sources": [
+    {
+     "title": "Marine Police Force",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marine_Police_Force",
+     "locator": "section \"Marine Police\"",
+     "quote": "With the initial investment of £4,200, they took a lease of premises on the current site of Wapping Police Station and appointed a Superintendent of Ship Constables with five surveyors to patrol the river, day and night.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Humberside Police",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Humberside_Police",
+     "locator": "section \"Custody suites\"",
+     "quote": "A 40-cell custody suite is located at Clough Road police station in Hull, opened in 2013 as part of a £32 million replacement for the Queens Gardens police station in the city centre",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Police station",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Police_station",
+     "locator": "section \"Facilities\"",
+     "quote": "Police stations typically feature office space for personnel to work, a reception area for public visitors, holding cells for temporarily confining detainees (the area these cells are in is called a custody suite in the United Kingdom)",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "fire-engine-house",
    "name": "Fire engine house",
    "family": "Police and fire",
    "domain": "Civic",
-   "fish": "71623"
+   "fish": "71623",
+   "period": {
+    "text": "the insurance companies' brigades, each with its own engines, for most of the 18th century (the first fire insurance office 1681); pooled into the London Fire Engine Establishment in 1833 and a public brigade in 1865; no source here dates the last engine house",
+    "from": 1700,
+    "to": 1865
+   },
+   "sources": [
+    {
+     "title": "Fire mark",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fire_mark",
+     "locator": "section \"British\"",
+     "quote": "For most of the 18th century, each insurance company maintained its own fire brigade, which extinguished fires in those buildings insured by the company and, in exchange for a fee to be paid later, in buildings insured by other companies.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fire insurance",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fire_insurance",
+     "locator": "section \"History\"",
+     "quote": "A number of attempted fire insurance schemes came to nothing, but in 1681, economist Nicholas Barbon and eleven associates established the first fire insurance company, the \"Insurance Office for Houses\", at the back of the Royal Exchange to insure brick and frame homes.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Fire Brigade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Fire_Brigade",
+     "locator": "lead",
+     "quote": "It was formed by the Metropolitan Fire Brigade Act 1865 (28 & 29 Vict.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "fire-station",
    "name": "Fire station",
    "family": "Police and fire",
    "domain": "Civic",
-   "fish": "68715"
+   "fish": "68715",
+   "period": {
+    "text": "Edinburgh's municipal fire service from 1824; the London Fire Engine Establishment of 1833 had 13 stations; still built, as at Hull and Brough in 2017",
+    "from": 1824,
+    "ongoing": true
+   },
+   "plan": "at least a garage for a fire engine with storage, often with working and living space and a tower",
+   "sources": [
+    {
+     "title": "James Braidwood",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/James_Braidwood",
+     "locator": "lead",
+     "quote": "James Braidwood (1800–1861) was a Scottish firefighter who was the first Master of Engines in the world's first municipal fire service in Edinburgh in 1824.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Fire Brigade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Fire_Brigade",
+     "locator": "section \"History\"",
+     "quote": "With 80 firefighters and 13 fire stations, the unit was still a private enterprise, funded by the insurance companies and as such was responsible mainly for saving material goods from fire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Humberside Fire and Rescue Service",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Humberside_Fire_and_Rescue_Service",
+     "locator": "section \"Fire stations\"",
+     "quote": "Two new fire stations in central Hull and Brough were opened in 2017",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fire station",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fire_station",
+     "locator": "section \"Facilities\"",
+     "quote": "A fire station will at a minimum have a garage for housing at least one fire engine.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Fire station",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fire_station",
+     "locator": "lead",
+     "quote": "Fire stations frequently contain working and living space for the firefighters and support staff.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Fire station",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fire_station",
+     "locator": "section \"Facilities\"",
+     "quote": "Fire stations have often been built with a tower, for purposes that have changed with time.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   }
  ],
  "links": [

@@ -8,6 +8,17 @@
    "family": "Round houses and defended homesteads",
    "domain": "Domestic",
    "fish": "94036",
+   "period": {
+    "text": "Bronze Age to the sub-Roman period. The standard house of Britain and Ireland from the Bronze Age (which began c. 2500-2200 BC; the oldest documented roundhouse, in south-west Scotland, is of the 3rd millennium BC) through the Iron Age (to AD 43), and in some areas into the sub-Roman period (407-577, longer in the west); c. 600 is approximate. Modern eco-roundhouses since the late 20th century are a revival.",
+    "from": -2500,
+    "flourish": [
+     -2000,
+     43
+    ],
+    "to": 600
+   },
+   "structure": "walls of stone, or of wooden posts with wattle-and-daub panels, under a conical thatched roof",
+   "plan": "circular",
    "sources": [
     {
      "title": "Round house (domestic) (FISH Thesaurus of Monument Types, concept 94036)",
@@ -16,6 +27,105 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94036.html",
      "locator": "scope note",
      "quote": "Circular structure"
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Roundhouses were the standard form of housing built in Britain and Ireland from the Bronze Age throughout the Iron Age, and in some areas well into the Sub Roman period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Atlantic roundhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Atlantic_roundhouse",
+     "locator": "lead",
+     "quote": "The oldest documented roundhouse was founded in the 3rd millennium BC in South-West Scotland.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Atlantic roundhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Atlantic_roundhouse",
+     "locator": "lead",
+     "quote": "Circular houses were the predominant architectural style of the British landscape since the second millennium BC (Early Bronze Age).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bronze Age Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bronze_Age_Britain",
+     "locator": "lead",
+     "quote": "The Bronze Age in Great Britain spanned from c. 2500–2200 BC until c. 800 BC.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prehistoric Cornwall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prehistoric_Cornwall",
+     "locator": "lead",
+     "quote": "The Iron Age, c. 800 BCE – 43 CE",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sub-Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sub-Roman_Britain",
+     "locator": "lead",
+     "quote": "It is now used to describe the period that began with the recall of Roman troops from Britannia to Gaul by Constantine III in 407 and ended with the Battle of Deorham in 577.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "lead",
+     "quote": "In the later part of the 20th century, modern designs of roundhouse eco-buildings were constructed",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The people built walls made of either stone or of wooden posts joined by wattle-and-daub panels, and topped with a conical thatched roof.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Roundhouse (dwelling)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+     "locator": "lead",
+     "quote": "A roundhouse is a type of house with a circular plan, usually with a conical roof.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -26,9 +136,15 @@
    "domain": "Domestic",
    "fish": "143003",
    "period": {
-    "text": "Iron Age; the first perhaps c. 300 BC",
-    "from": -300
+    "text": "Iron Age; the first perhaps c. 300 BC (one claimed earlier, at Old Scatness, 390-200 BC), most built in the 1st centuries BC and AD, and broch building ending around AD 100-200.",
+    "from": -300,
+    "flourish": [
+     -100,
+     100
+    ],
+    "to": 200
    },
+   "structure": "thick, usually hollow dry-stone walls holding galleries, cells and a stair, with a tapering profile",
    "note": "Where brochs came from was long disputed: mid-20th-century archaeologists saw them as the work of incomers from the south; the view now is that they developed in Scotland.",
    "sources": [
     {
@@ -45,7 +161,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Broch",
      "locator": "lead",
-     "quote": "The first brochs may have been built circa 300 BC"
+     "quote": "The first brochs may have been built circa 300 BC",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Broch",
@@ -54,6 +173,39 @@
      "url": "https://en.wikipedia.org/wiki/Broch",
      "locator": "lead",
      "quote": "While most mid-20th century archaeologists believed that brochs were built by invading chieftains displaced from the south of the English isles, there is now little doubt that the hollow-walled broch tower first developed in what is now Scotland."
+    },
+    {
+     "title": "Broch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broch",
+     "locator": "section \"Origin and definition\"",
+     "quote": "still suggests that most of the towers were built in the 1st centuries BC and AD",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Broch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Broch",
+     "locator": "section \"Structures\"",
+     "quote": "The end of the broch building period seems to have come around AD 100–200.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Broch (FISH Thesaurus of Monument Types, concept 143003)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/143003.html",
+     "locator": "scope note",
+     "quote": "Brochs have a tapering profile and thick, usually hollow dry stone walls which contain galleries, cells and a stairway, with guard cells at the entrance.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -64,8 +216,11 @@
    "domain": "Domestic",
    "fish": "68865",
    "period": {
-    "text": "Iron Age into the early medieval period"
+    "text": "From the 4th century BC (Late Iron Age) into the early medieval period: as many as a thousand built in Cornwall over a millennium; they went out of use in the 5th to 7th centuries, when unenclosed farms and hamlets took their place.",
+    "from": -400,
+    "to": 700
    },
+   "plan": "a few roundhouses inside one, sometimes two, banks and ditches",
    "sources": [
     {
      "title": "Ringfort",
@@ -73,7 +228,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Ringfort",
      "locator": "section \"England and Wales\"",
-     "quote": "their continuing occupation from the Iron Age into the early medieval period"
+     "quote": "their continuing occupation from the Iron Age into the early medieval period",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prehistoric Cornwall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prehistoric_Cornwall",
+     "locator": "section \"Iron Age (c. 800 BCE – 43 CE)\", \"Settlements\"",
+     "quote": "They are the most common Late Iron Age enclosed settlement type in Cornwall, with as many as a thousand rounds constructed in Cornwall over a millennium from the 4th century BCE to the early medieval period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Medieval Cornwall (Cornish Archaeology 25, 1986)",
+     "author": "Ann Preston-Jones and Peter Rose, via Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2011/01/medieval-cornwall/",
+     "locator": "introduction",
+     "quote": "the 5th to 7th centuries does genuinely appear to be a time of changes",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Medieval Cornwall (Cornish Archaeology 25, 1986)",
+     "author": "Ann Preston-Jones and Peter Rose, via Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2011/01/medieval-cornwall/",
+     "locator": "introduction",
+     "quote": "the rounds went out of use and unenclosed farms and hamlets, including the ubiquitous tre settlements, became the norm",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prehistoric Cornwall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prehistoric_Cornwall",
+     "locator": "section \"Iron Age (c. 800 BCE – 43 CE)\", \"Settlements\"",
+     "quote": "consist of a few roundhouses enclosed by either one (univallate) or occasionally two (bivallate) ramparts and ditches",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -83,6 +285,13 @@
    "family": "Longhouses and farmhouses",
    "domain": "Domestic",
    "fish": "104173",
+   "period": {
+    "text": "Medieval and early modern: one in Wales dated to the 11th century, the earliest on Dartmoor thought to be of the 13th century; built through the Middle Ages into the early modern period, and by 1700 most had been adapted, with separate buildings for livestock. No source gives the last one built.",
+    "from": 1050,
+    "to": 1700
+   },
+   "structure": "stone (granite on Dartmoor) or cob walls, often with cruck frames, under thatch",
+   "plan": "long single-storey range down a slope, a cross passage between the people's upper end and the shippon below",
    "sources": [
     {
      "title": "Longhouse (FISH Thesaurus of Monument Types, concept 104173)",
@@ -91,6 +300,61 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/104173.html",
      "locator": "scope note",
      "quote": "A building that housed humans and cattle under one roof"
+    },
+    {
+     "title": "Dartmoor longhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dartmoor_longhouse",
+     "locator": "section \"History\"",
+     "quote": "The earliest are thought to have been built in the 13th century, and they continued to be constructed throughout the mediaeval period and into the Early Modern, using local granite or other stone.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dartmoor longhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dartmoor_longhouse",
+     "locator": "section \"History\"",
+     "quote": "One particular longhouse near Carreg Cennen Castle in Wales is dated to the 11th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Longhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longhouse",
+     "locator": "section \"Dartmoor longhouse\"",
+     "quote": "by 1700 most would have been adapted and have separate buildings for livestock",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Longhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longhouse",
+     "locator": "section \"Dartmoor longhouse\"",
+     "quote": "are often typified by the use of cruck construction",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Dartmoor longhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dartmoor_longhouse",
+     "locator": "section \"History\"",
+     "quote": "The longhouse consists of a long, single-storey gable-ended granite structure built lengthwise down the slope of a hill, with a central 'cross-passage' dividing it into two rooms",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -100,6 +364,13 @@
    "family": "Longhouses and farmhouses",
    "domain": "Domestic",
    "fish": null,
+   "period": {
+    "text": "Few examples before the 18th century have been excavated, though the tradition is thought far older; still built in the late 19th century (the Arnol museum house, 1875), they were replaced by 'white houses' from the end of the 1800s, and the last were lived in until the 1970s. No source gives the last one built; 1700 and 1900 are approximate.",
+    "from": 1700,
+    "to": 1900
+   },
+   "structure": "double dry-stone walls packed with earth, roof timbers on the inner wall face, thatch over turf",
+   "plan": "one long room shared by people at one end and animals at the other, with a central hearth and no chimney",
    "note": "Hebridean and Highland; few examples before the 18th century have been excavated.",
    "sources": [
     {
@@ -108,7 +379,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Blackhouse",
      "locator": "section \"Lewis blackhouse\"",
-     "quote": "The immediate origins of the blackhouse are unclear, as few pre-eighteenth century examples have ever been excavated."
+     "quote": "The immediate origins of the blackhouse are unclear, as few pre-eighteenth century examples have ever been excavated.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackhouse Museum",
+     "author": "Undiscovered Scotland",
+     "kind": "secondary",
+     "url": "https://www.undiscoveredscotland.co.uk/lewis/blackhousemuseum/index.html",
+     "locator": "feature page",
+     "quote": "The blackhouse used as the museum was built as recently as 1875.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackhouse Museum",
+     "author": "Undiscovered Scotland",
+     "kind": "secondary",
+     "url": "https://www.undiscoveredscotland.co.uk/lewis/blackhousemuseum/index.html",
+     "locator": "feature page",
+     "quote": "In fact it stems from the introduction of more modern housing from the end of the 1800s in response to legal and other pressures, especially to separate housing for people from housing for animals.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Lewis blackhouse\"",
+     "quote": "Many were still roofed until the 1970s",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Description\"",
+     "quote": "The buildings were generally built with double wall dry-stone walls packed with earth, and were roofed with wooden rafters covered with a thatch of turf with cereal straw or reed.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Blackhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackhouse",
+     "locator": "section \"Description\"",
+     "quote": "People lived at one end and the animals lived at the other with a partition between them.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -118,6 +447,15 @@
    "family": "Longhouses and farmhouses",
    "domain": "Domestic",
    "fish": "68560",
+   "period": {
+    "text": "Vernacular farmhouses survive in numbers from the Great Rebuilding, which began in the south-east in the 16th century and lasted into the 18th in the north-west (earlier farm dwellings were longhouses and hall houses); still built, as planning guidance allows new dwellings for farm businesses.",
+    "from": 1500,
+    "flourish": [
+     1500,
+     1750
+    ],
+    "ongoing": true
+   },
    "sources": [
     {
      "title": "Farmhouse (FISH Thesaurus of Monument Types, concept 68560)",
@@ -126,6 +464,28 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68560.html",
      "locator": "scope note",
      "quote": "The main dwelling-house of a farm"
+    },
+    {
+     "title": "English vernacular architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
+     "locator": "section \"History\"",
+     "quote": "It is believed to have begun in the prosperous south-east in the 16th century, and to have lasted in the poorer north-west into the 18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Housing needs of different groups (Planning Practice Guidance)",
+     "author": "Ministry of Housing, Communities and Local Government (GOV.UK)",
+     "kind": "primary",
+     "url": "https://www.gov.uk/guidance/housing-needs-of-different-groups",
+     "locator": "paragraph 009",
+     "quote": "whether the provision of an additional dwelling on site is essential for the continued viability of a farming business through the farm succession process",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -135,6 +495,17 @@
    "family": "Fortified houses and towers",
    "domain": "Defence",
    "fish": "68823",
+   "period": {
+    "text": "Appear quite suddenly around 1600: Denton Foot (1594) may be the earliest dated, others are of the early 1600s; by around 1650 most people were living at ground level again (around Alston, upstairs until the later 1700s).",
+    "from": 1594,
+    "flourish": [
+     1600,
+     1650
+    ],
+    "to": 1650
+   },
+   "structure": "stone walls about a metre thick; close-set oak beams carrying a stone-flagged floor over the byre",
+   "plan": "animals on the ground floor, the family on the floor above",
    "sources": [
     {
      "title": "Bastle (FISH Thesaurus of Monument Types, concept 68823)",
@@ -143,6 +514,72 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68823.html",
      "locator": "scope note",
      "quote": "A fortified house of two or three storeys, the lower floor being used to house animals"
+    },
+    {
+     "title": "Bastles",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://designingbuildings.co.uk/wiki/Bastles",
+     "locator": "article",
+     "quote": "Bastles appear quite suddenly in history at about the time of the Union of the Crowns (1603), just when one might expect more peaceful conditions to become the norm.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastles",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://designingbuildings.co.uk/wiki/Bastles",
+     "locator": "article",
+     "quote": "Denton Foot (1594), not far south of the Wall in Cumbria, may be the earliest.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastles",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://designingbuildings.co.uk/wiki/Bastles",
+     "locator": "article",
+     "quote": "In most areas by around 1650, people were thinking it safe enough to come down and live at ground level once more",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastles",
+     "author": "Designing Buildings Wiki",
+     "kind": "secondary",
+     "url": "https://designingbuildings.co.uk/wiki/Bastles",
+     "locator": "article",
+     "quote": "the majority settled for close-set oak beams carrying a floor of stone flags",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bastle house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastle_house",
+     "locator": "section \"Characteristics\"",
+     "quote": "The characteristics of the classic bastle house are thick stone walls (about one metre thick)",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bastle (FISH Thesaurus of Monument Types, concept 68823)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68823.html",
+     "locator": "scope note",
+     "quote": "the lower floor being used to house animals and the upper for domestic use",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -152,6 +589,13 @@
    "family": "Hall houses",
    "domain": "Domestic",
    "fish": "70943",
+   "period": {
+    "text": "Medieval: a 13th-century stone example survives at Aydon Hall; by about 1400 houses in lowland Britain were built to last, and hall houses built after 1570 are rare.",
+    "from": 1200,
+    "to": 1570
+   },
+   "structure": "usually timber-framed (cruck or box frame), some high-status examples in stone",
+   "plan": "open hall between a cross passage with service rooms at the lower end and private rooms at the upper end",
    "sources": [
     {
      "title": "Hall house (FISH Thesaurus of Monument Types, concept 70943)",
@@ -160,6 +604,61 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70943.html",
      "locator": "scope note",
      "quote": "A house consisting of a public hall with private living accommodation attached."
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"Materials\"",
+     "quote": "A thirteenth century example of a stone roofed  hall-house survives in a good state of preservation at Aydon Hall in Northumberland.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"Origins\"",
+     "quote": "Hall houses built after 1570 are rare.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "lead",
+     "quote": "Usually timber-framed, some high status examples were built in stone.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hall_house",
+     "locator": "section \"General description\"",
+     "quote": "In its earliest and simplest form the medieval hall house would be a four-bay cruck-framed structure, with the open hall taking up the two bays in the middle of the building.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Hall house (FISH Thesaurus of Monument Types, concept 70943)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70943.html",
+     "locator": "scope note",
+     "quote": "Built from the medieval period onwards.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -170,8 +669,12 @@
    "domain": "Domestic",
    "fish": "71335",
    "period": {
-    "text": "medieval; most had a floor and fireplace inserted in the 16th and 17th centuries"
+    "text": "Late medieval: the earliest certain one, Chart Hall Farmhouse in Kent, is tree-ring dated 1379/80; still built in the early 16th century (Little Harts Heath, 1507, floored from the start; Suters, Headley, 1520). No source gives the last one; in the 16th and 17th centuries most had a floor and fireplace inserted.",
+    "from": 1380,
+    "to": 1520
    },
+   "structure": "timber frame, first-floor jetties at the two ends",
+   "plan": "four bays: a two-bay open hall with a cross passage, two-storey service and parlour bays at either end",
    "sources": [
     {
      "title": "Wealden hall house",
@@ -179,7 +682,11 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
      "locator": "lead",
-     "quote": "The Wealden hall house is a type of vernacular medieval timber-framed hall house traditional in the south east of England."
+     "quote": "The Wealden hall house is a type of vernacular medieval timber-framed hall house traditional in the south east of England.",
+     "about": [
+      "period",
+      "structure"
+     ]
     },
     {
      "title": "Wealden hall house",
@@ -187,7 +694,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
      "locator": "lead",
-     "quote": "In the 16th and 17th centuries, the open hall fell out of favour, and most Wealden houses had an intermediate floor and fireplace inserted."
+     "quote": "In the 16th and 17th centuries, the open hall fell out of favour, and most Wealden houses had an intermediate floor and fireplace inserted.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chart Hall Farmhouse, Chart Sutton (Listed Building record TQ 74 NE 42)",
+     "author": "Kent Historic Environment Record",
+     "kind": "listing",
+     "url": "https://heritage.kent.gov.uk/Monument/MKE13916",
+     "locator": "description",
+     "quote": "Dendrochronology dating of the hall and service-end of the wealden house gave a date of 1379/80.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chart Hall Farmhouse, Chart Sutton (Listed Building record TQ 74 NE 42)",
+     "author": "Kent Historic Environment Record",
+     "kind": "listing",
+     "url": "https://heritage.kent.gov.uk/Monument/MKE13916",
+     "locator": "description",
+     "quote": "The earliest certain Wealden house recorded of which a formerly open 2-bay hall and lower end survive.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Little Harts Heath, Staplehurst (Listed Building record TQ 74 SE 31)",
+     "author": "Kent Historic Environment Record",
+     "kind": "listing",
+     "url": "https://heritage.kent.gov.uk/Monument/MKE13915",
+     "locator": "description",
+     "quote": "Dendrochronology dating gave a date of 1507.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Explore Headley - Suters",
+     "author": "Headley Village",
+     "kind": "secondary",
+     "url": "https://headley-village.com/node/97",
+     "locator": "article",
+     "quote": "Dendro chronology has dated the timber framing to 1520",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wealden hall house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wealden_hall_house",
+     "locator": "lead",
+     "quote": "The original floor plan usually had four bays with the two central ones forming the main hall open to the roof with the hearth in the middle and two doors to the outside at one end forming a cross passage.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -198,9 +763,11 @@
    "domain": "Domestic",
    "fish": "71051",
    "period": {
-    "text": "from the 16th century (English vernacular); FISH: late 17th to early 18th century",
-    "from": 1500
+    "text": "Common in East Anglia from the 16th century (English vernacular); FISH dates the type to the late 17th and early 18th centuries. No source gives the last one built; c. 1730 stands for FISH's early 18th century.",
+    "from": 1500,
+    "to": 1730
    },
+   "plan": "central chimney stack with the front door opening into a small lobby against it",
    "sources": [
     {
      "title": "English vernacular architecture",
@@ -208,7 +775,11 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/English_vernacular_architecture",
      "locator": "section \"East Anglia\"",
-     "quote": "The baffle-entry house plan, in which the front door leads to a lobby beside the central chimney, was common from the 16th century."
+     "quote": "The baffle-entry house plan, in which the front door leads to a lobby beside the central chimney, was common from the 16th century.",
+     "about": [
+      "period",
+      "plan"
+     ]
     },
     {
      "title": "Lobby entry house (FISH Thesaurus of Monument Types, concept 71051)",
@@ -216,7 +787,11 @@
      "kind": "reference",
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71051.html",
      "locator": "scope note",
-     "quote": "A late 17th - early 18th century house with a central chimney"
+     "quote": "A late 17th - early 18th century house with a central chimney",
+     "about": [
+      "period",
+      "plan"
+     ]
     }
    ]
   },
@@ -226,6 +801,16 @@
    "family": "Chimneyed houses",
    "domain": "Domestic",
    "fish": "94114",
+   "period": {
+    "text": "Compact plans two rooms deep appear in England in the last quarter of the 16th century (Newton, Brecon, 1582, the earliest in Wales); much in vogue from the late 17th to the mid-18th century, and still built in the early 19th (Newfield Hall, Minshull Vernon). No source gives when they stopped; c. 1830 is the latest sourced example, not an end date.",
+    "from": 1575,
+    "flourish": [
+     1670,
+     1750
+    ],
+    "to": 1830
+   },
+   "plan": "two rooms deep: four rooms of equal height on each of two floors, often under two parallel roofs",
    "sources": [
     {
      "title": "Double pile house (FISH Thesaurus of Monument Types, concept 94114)",
@@ -234,6 +819,61 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94114.html",
      "locator": "scope note",
      "quote": "A house having four rooms of equal height on each of two floors"
+    },
+    {
+     "title": "Newton House",
+     "author": "Abercamlais (quoting W. S. K. Thomas, Brecon 1093-1660)",
+     "kind": "secondary",
+     "url": "https://www.abercamlais.com/house/",
+     "locator": "The House",
+     "quote": "Compact square or rectangular plans of this sort are found in the last quarter of the 16th century in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Newton House",
+     "author": "Abercamlais (quoting W. S. K. Thomas, Brecon 1093-1660)",
+     "kind": "secondary",
+     "url": "https://www.abercamlais.com/house/",
+     "locator": "The House",
+     "quote": "it is the earliest example in Wales of the double-pile plan",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "An Archaeological Building Assessment at the Dower House, Rushton, Northamptonshire (SNN103355)",
+     "author": "Northamptonshire Historic Environment Record",
+     "kind": "secondary",
+     "url": "https://her.northamptonshire.gov.uk/Source/SNN103355",
+     "locator": "abstract",
+     "quote": "late 17th and early/mid 18th century domestic building resorted to the post-Renaissance double-pile form that was so much in vogue",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Minshull Vernon",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minshull_Vernon",
+     "locator": "section \"Other landmarks\"",
+     "quote": "Newfield Hall on Middlewich Road in Walley's Green is a red-brick mansion on a double pile plan which dates from the early 19th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Double pile house (FISH Thesaurus of Monument Types, concept 94114)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/94114.html",
+     "locator": "scope note",
+     "quote": "A house having four rooms of equal height on each of two floors; in larger houses there are often two parallel and equal roofs.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -243,6 +883,12 @@
    "family": "Manor and country houses",
    "domain": "Domestic",
    "fish": "68948",
+   "period": {
+    "text": "Norman to Tudor: Saltford Manor, Somerset, built 1148-1150, is thought the oldest continuously occupied; from the 16th century manor houses took on the character of country gentlemen's houses and evolved into country houses. c. 1600 is approximate.",
+    "from": 1148,
+    "to": 1600
+   },
+   "plan": "a great hall with subsidiary apartments added",
    "sources": [
     {
      "title": "Manor house (FISH Thesaurus of Monument Types, concept 68948)",
@@ -251,6 +897,39 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68948.html",
      "locator": "scope note",
      "quote": "The principal house of a manor or village."
+    },
+    {
+     "title": "Saltford Manor House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saltford_Manor_House",
+     "locator": "lead",
+     "quote": "The original Norman construction was by William Fitz Robert, 2nd Earl of Gloucester between 1148 and 1150",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manor house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manor_house",
+     "locator": "section \"Architecture\"",
+     "quote": "A late 16th-century transformation produced many of the smaller Renaissance châteaux of France and the numerous country mansions of the Elizabethan and Jacobean styles in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manor house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manor_house",
+     "locator": "section \"Architecture\"",
+     "quote": "The primary feature of the manor house was its great hall, to which subsidiary apartments were added as the lessening of feudal warfare permitted more peaceful domestic life.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -260,6 +939,16 @@
    "family": "Manor and country houses",
    "domain": "Domestic",
    "fish": "68943",
+   "period": {
+    "text": "An influential plan for large houses from the 15th century, popular in the 16th; in the late Tudor and early Stuart period it gave way to compact plans (Hatfield House, 1611, replacing Hatfield Palace). Iron Age courtyard houses in Cornwall are a separate tradition. c. 1610 is approximate.",
+    "from": 1400,
+    "flourish": [
+     1500,
+     1600
+    ],
+    "to": 1610
+   },
+   "plan": "main rooms ranged around a central courtyard",
    "sources": [
     {
      "title": "Courtyard house (FISH Thesaurus of Monument Types, concept 68943)",
@@ -268,6 +957,50 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68943.html",
      "locator": "scope note",
      "quote": "A building or buildings ranged around a courtyard on at least three sides."
+    },
+    {
+     "title": "Courtyard house (FISH Thesaurus of Monument Types, concept 68943)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68943.html",
+     "locator": "scope note",
+     "quote": "an influential plan type of house from the 15th century onwards",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Courtyard house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Courtyard_house",
+     "locator": "lead",
+     "quote": "In England the courtyard house was a popular design for large houses in the sixteenth century, after noblemen had stopped building themselves castles",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Courtyard house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Courtyard_house",
+     "locator": "section \"History\"",
+     "quote": "in the late Tudor and early Stuart period a transition occurred to more compactly planned and symmetrical layouts",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Courtyard house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Courtyard_house",
+     "locator": "lead",
+     "quote": "where the main part of the building is disposed around a central courtyard",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -278,10 +1011,11 @@
    "domain": "Domestic",
    "fish": null,
    "period": {
-    "text": "roughly 1570 to 1620 (core period)",
+    "text": "Roughly 1570 to 1620 (core period); the term is not used for houses built after about 1620.",
     "from": 1570,
     "to": 1620
    },
+   "plan": "symmetrical, rather square plans (often E- or H-shaped), with tower pavilions at the corners",
    "sources": [
     {
      "title": "Prodigy house",
@@ -289,7 +1023,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Prodigy_house",
      "locator": "lead",
-     "quote": "the term may be restricted to a core period of roughly 1570 to 1620"
+     "quote": "the term may be restricted to a core period of roughly 1570 to 1620",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "section \"History\"",
+     "quote": "The term prodigy house ceases to be used for houses built after about 1620.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Prodigy house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prodigy_house",
+     "locator": "section \"Style\"",
+     "quote": "a rather square plan, often with tower pavilions at the corners that rise above the main roofline",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -299,6 +1058,15 @@
    "family": "Manor and country houses",
    "domain": "Domestic",
    "fish": "68947",
+   "period": {
+    "text": "From the Tudor period: the first unfortified great houses, such as Sutton Place (c. 1521); the great 'power houses' reached their zenith from the late 17th to the mid-18th century; country houses are still built.",
+    "from": 1521,
+    "flourish": [
+     1675,
+     1750
+    ],
+    "ongoing": true
+   },
    "sources": [
     {
      "title": "Country house (FISH Thesaurus of Monument Types, concept 68947)",
@@ -307,6 +1075,39 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68947.html",
      "locator": "scope note",
      "quote": "The rural residence of a country gentleman."
+    },
+    {
+     "title": "Manor house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manor_house",
+     "locator": "section \"Decline of the manor house\"",
+     "quote": "The Tudor period (16th century) of stability in England saw the building of the first of the unfortified great houses, for example Sutton Place in Surrey, circa 1521.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English country house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_country_house",
+     "locator": "section \"Power houses\"",
+     "quote": "Such building reached its zenith from the late 17th century until the mid-18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "How to create a new-build country house",
+     "author": "John Goodall, Country Life (2017)",
+     "kind": "secondary",
+     "url": "https://www.countrylife.co.uk/property/how-to-create-a-new-build-country-house-154543",
+     "locator": "article",
+     "quote": "Country houses continue to be built across Britain.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -316,7 +1117,40 @@
    "family": "Influences from abroad",
    "domain": "Domestic",
    "fish": null,
-   "abroad": true
+   "abroad": true,
+   "period": {
+    "text": "In Italy (its home) from about 1400 to c. 1525, later elsewhere; Mannerism (c. 1520-1600) then led to the Baroque. c. 1600 is approximate.",
+    "from": 1400,
+    "flourish": [
+     1400,
+     1525
+    ],
+    "to": 1600
+   },
+   "sources": [
+    {
+     "title": "Renaissance architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Renaissance_architecture",
+     "locator": "section \"Principal phases\"",
+     "quote": "the word Renaissance among architectural historians usually applies to the period 1400 to c. 1525, or later in the case of non-Italian Renaissances",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Renaissance architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Renaissance_architecture",
+     "locator": "section \"Principal phases\"",
+     "quote": "Mannerism (c. 1520–1600)",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "castle",
@@ -324,6 +1158,15 @@
    "family": "Castles",
    "domain": "Defence",
    "fish": "68833",
+   "period": {
+    "text": "A few built in England in the 1050s, then in large numbers after the Norman conquest of 1066; the rate of building declined from the beginning of the 15th century, and castle construction faded towards the end of the 16th (tower houses in Scotland went on to the 1640s). Later 'castles' such as Castle Drogo (1911-1930) are a revival.",
+    "from": 1050,
+    "flourish": [
+     1066,
+     1400
+    ],
+    "to": 1600
+   },
    "sources": [
     {
      "title": "Castle (FISH Thesaurus of Monument Types, concept 68833)",
@@ -332,6 +1175,39 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68833.html",
      "locator": "scope note",
      "quote": "A fortress and dwelling, usually medieval in origin"
+    },
+    {
+     "title": "Castles in Great Britain and Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castles_in_Great_Britain_and_Ireland",
+     "locator": "lead",
+     "quote": "Although a small number of castles had been built in England in the 1050s, the Normans began to build motte and bailey and ringwork castles in large numbers to control their newly occupied territories in England and the Welsh Marches.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castle",
+     "locator": "section \"13th to 15th centuries\"",
+     "quote": "by the beginning of the 15th century, the rate of castle construction in England and Wales went into decline",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castle",
+     "locator": "section \"Bastions and star forts (16th century)\"",
+     "quote": "Although castle construction faded towards the end of the 16th century, castles did not necessarily all fall out of use.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -342,10 +1218,16 @@
    "domain": "Defence",
    "fish": "68844",
    "period": {
-    "text": "in England just before 1066; most built in the late 11th and early 12th centuries",
+    "text": "In England just before 1066; most built in the late 11th and early 12th centuries. No source gives the last one; c. 1150 is approximate.",
     "from": 1050,
+    "flourish": [
+     1066,
+     1150
+    ],
     "to": 1150
    },
+   "structure": "earthworks: a bank and ditch around the site",
+   "plan": "circular or oval, round one or more buildings",
    "sources": [
     {
      "title": "Ringwork",
@@ -353,7 +1235,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Ringwork",
      "locator": "lead",
-     "quote": "They appeared in England just prior to the Norman conquest and large numbers were built during the late 11th and early 12th centuries."
+     "quote": "They appeared in England just prior to the Norman conquest and large numbers were built during the late 11th and early 12th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ringwork",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ringwork",
+     "locator": "lead",
+     "quote": "Defences were usually earthworks in the form of a ditch and bank surrounding the site.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Ringwork (FISH Thesaurus of Monument Types, concept 68844)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68844.html",
+     "locator": "scope note",
+     "quote": "A defensive bank and ditch, circular or oval in plan, surrounding one or more buildings.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -364,10 +1271,16 @@
    "domain": "Defence",
    "fish": "68842",
    "period": {
-    "text": "brought by the Normans (1066); largely superseded by the end of the 13th century",
+    "text": "Brought by the Normans (1066); mottes ceased to be built in most of England after around 1170, though they went on in Wales and the Marches, and in Scotland and Ireland in the 12th and 13th centuries; largely superseded by the end of the 13th century.",
     "from": 1066,
+    "flourish": [
+     1066,
+     1170
+    ],
     "to": 1300
    },
+   "structure": "a flat-topped, steep-sided earthen mound carrying a wooden tower, with a palisaded bailey",
+   "plan": "a keep on a mound (the motte) beside a walled or fenced courtyard (the bailey), each with its ditch",
    "sources": [
     {
      "title": "Motte-and-bailey castle",
@@ -375,7 +1288,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Motte-and-bailey_castle",
      "locator": "lead",
-     "quote": "The Normans introduced the design into England and Wales."
+     "quote": "The Normans introduced the design into England and Wales.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Motte-and-bailey castle",
@@ -383,7 +1299,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Motte-and-bailey_castle",
      "locator": "lead",
-     "quote": "By the end of the 13th century, the design was largely superseded by alternative forms of fortification"
+     "quote": "By the end of the 13th century, the design was largely superseded by alternative forms of fortification",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Motte-and-bailey castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Motte-and-bailey_castle",
+     "locator": "section \"Conversion and decline, 13th–14th centuries\"",
+     "quote": "mottes ceased to be built in most of England after around 1170, although they continued to be erected in Wales and along the Marches",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Motte and bailey (FISH Thesaurus of Monument Types, concept 68842)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68842.html",
+     "locator": "scope note",
+     "quote": "An early form of castle consisting of a flat-top steep-sided earthen mound, supporting a wooden tower, and a bailey.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Motte-and-bailey castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Motte-and-bailey_castle",
+     "locator": "lead",
+     "quote": "with a wooden or stone keep situated on a raised area of ground called a motte, accompanied by a walled courtyard, or bailey, surrounded by a protective ditch and palisade",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -394,9 +1346,16 @@
    "domain": "Defence",
    "fish": "68839",
    "period": {
-    "text": "from the 12th century",
-    "from": 1100
+    "text": "Most built in the 11th and 12th centuries (the Keep article says from the 12th century); the form stayed in fashion in Devon and Cornwall, with Restormel built in the 1270s or 1280s and Totnes rebuilt in the 14th century. 1100 and 1280 are approximate.",
+    "from": 1100,
+    "flourish": [
+     1100,
+     1200
+    ],
+    "to": 1280
    },
+   "structure": "a stone wall round the top of a motte, with lean-to buildings against it",
+   "plan": "circular or polygonal enclosure with a small courtyard in the middle",
    "sources": [
     {
      "title": "Keep",
@@ -404,7 +1363,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Keep",
      "locator": "section \"Early stone keeps (10th–12th centuries)\"",
-     "quote": "The second early stone design, emerging from the 12th century onwards, was the shell keep"
+     "quote": "The second early stone design, emerging from the 12th century onwards, was the shell keep",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shell keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shell_keep",
+     "locator": "section \"Examples\"",
+     "quote": "The majority were built in the 11th and 12th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shell keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shell_keep",
+     "locator": "section \"Examples\"",
+     "quote": "the form remained fashionable in Devon and particularly Cornwall into the later Middle Ages, with the shell keep-like castle at Restormel being built in the 1270s or '80s",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shell keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shell_keep",
+     "locator": "section \"Examples\"",
+     "quote": "True shell keeps were a stone wall around the upper perimeter of the motte with lean-to buildings against this outer wall and a small courtyard in the middle.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Shell keep (FISH Thesaurus of Monument Types, concept 68839)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68839.html",
+     "locator": "scope note",
+     "quote": "A Norman keep, in the form of a circular or polygonal enclosure surrounded by a wall.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -414,6 +1421,17 @@
    "family": "Castles",
    "domain": "Defence",
    "fish": "68840",
+   "period": {
+    "text": "Norman: the White Tower was begun in 1075-1079 (tree-ring dates); square Norman keeps were still being built in the 1170s; later great tower keeps of the very wealthy into the 16th century, the last Holyrood's Great Tower (1528-1532). By the 16th century keeps were falling out of fashion.",
+    "from": 1075,
+    "flourish": [
+     1075,
+     1180
+    ],
+    "to": 1532
+   },
+   "structure": "masonry with pilaster buttresses at the corners",
+   "plan": "square or rectangular (in England usually square)",
    "sources": [
     {
      "title": "Tower keep (FISH Thesaurus of Monument Types, concept 68840)",
@@ -422,6 +1440,72 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68840.html",
      "locator": "scope note",
      "quote": "A fortified keep in the form of a tower"
+    },
+    {
+     "title": "White Tower (Tower of London)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/White_Tower_(Tower_of_London)",
+     "locator": "section \"History\"",
+     "quote": "Dendrochronological evidence suggests construction of the White Tower began in 1075–1079.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Mid-medieval keeps (late 12th–14th centuries)\"",
+     "quote": "as late as the 1170s, square Norman great keeps were being built at Newcastle",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Late medieval keeps (14th–16th centuries)\"",
+     "quote": "In Scotland, the construction of Holyrood Great Tower between 1528 and 1532 drew on this English tradition",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "lead",
+     "quote": "By the 16th century, keeps were slowly falling out of fashion as fortifications and residences.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Early stone keeps (10th–12th centuries)\"",
+     "quote": "Norman keeps had four sides, with the corners reinforced by pilaster buttresses",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Early stone keeps (10th–12th centuries)\"",
+     "quote": "being rectangular in plan with their length twice their width, while others, particularly in England, formed a square",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -432,10 +1516,11 @@
    "domain": "Defence",
    "fish": "68837",
    "period": {
-    "text": "13th century (Edward I's castles in Wales)",
-    "from": 1200,
-    "to": 1300
+    "text": "13th century (Edward I's castles in Wales): Caerphilly, begun in 1268, brought concentric defences to Britain; work on Beaumaris, begun in 1295, stopped about 1330 with the castle unfinished.",
+    "from": 1268,
+    "to": 1330
    },
+   "plan": "two or more rings of curtain wall, the outer lower than the inner, usually without a free-standing keep",
    "sources": [
     {
      "title": "Concentric castle",
@@ -443,7 +1528,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Concentric_castle",
      "locator": "section \"Development\"",
-     "quote": "Concentric castles appeared in Europe in the 13th century, with the castles built in Wales by Edward I providing some outstanding examples"
+     "quote": "Concentric castles appeared in Europe in the 13th century, with the castles built in Wales by Edward I providing some outstanding examples",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Caerphilly Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caerphilly_Castle",
+     "locator": "lead",
+     "quote": "It is famous for having introduced concentric castle defences to Britain and for its large gatehouses.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Caerphilly Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Caerphilly_Castle",
+     "locator": "lead",
+     "quote": "Gilbert began work on the castle in 1268",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Beaumaris Castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beaumaris_Castle",
+     "locator": "section \"13th–14th centuries\"",
+     "quote": "This work finally halted in 1330 with the castle still not built to its intended height",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Concentric castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concentric_castle",
+     "locator": "lead",
+     "quote": "Concentric castles resemble one castle nested inside the other, thus creating an inner and outer ward.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -453,7 +1585,51 @@
    "family": "Influences from abroad",
    "domain": "Defence",
    "fish": null,
-   "abroad": true
+   "abroad": true,
+   "period": {
+    "text": "Abroad: Byzantine concentric castles such as Korykos from the early 11th century; the crusader states (1098-1291) built their concentric castles in the 12th and 13th centuries. c. 1000 is approximate.",
+    "from": 1000,
+    "flourish": [
+     1100,
+     1291
+    ],
+    "to": 1291
+   },
+   "sources": [
+    {
+     "title": "Concentric castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concentric_castle",
+     "locator": "section \"Development\"",
+     "quote": "An example of an early concentric castle is the Byzantine castle of Korykos in Turkey, built in the early 11th century AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Concentric castle",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Concentric_castle",
+     "locator": "section \"Development\"",
+     "quote": "the concentric defence arose as a response to advances in siege technology in the crusader states from the 12th to the 13th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Crusader states",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Crusader_states",
+     "locator": "lead",
+     "quote": "The Crusader states, or Outremer, were four Catholic polities established in the Levant region and southeastern Anatolia from 1098 to 1291.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "fortified-house",
@@ -461,6 +1637,11 @@
    "family": "Fortified houses and towers",
    "domain": "Defence",
    "fish": "68875",
+   "period": {
+    "text": "Medieval and early modern: licences to crenellate were issued from the 12th to the 16th century (the earliest disputed, most surviving from 1199); before around 1600 larger English houses were usually fortified, and in Ireland fortified houses replaced tower houses from the late 16th century to the 1650s. c. 1200 is approximate.",
+    "from": 1200,
+    "to": 1650
+   },
    "sources": [
     {
      "title": "Fortified house (FISH Thesaurus of Monument Types, concept 68875)",
@@ -469,6 +1650,61 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68875.html",
      "locator": "scope note",
      "quote": "A house which bears signs of fortification."
+    },
+    {
+     "title": "Licence to crenellate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Licence_to_crenellate",
+     "locator": "lead",
+     "quote": "Licences to crenellate were issued from the 12th to 16th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Licence to crenellate",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Licence_to_crenellate",
+     "locator": "lead",
+     "quote": "In 1199 the administration of the country began to be systematically recorded, and the majority of licences survive in the Patent Rolls.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manor house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manor_house",
+     "locator": "section \"Decline of the manor house\"",
+     "quote": "Before around 1600, larger houses were usually fortified",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fortified houses in Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortified_houses_in_Ireland",
+     "locator": "lead",
+     "quote": "In Ireland at the end of the sixteenth and beginning of the seventeenth century, the fortified house (Irish: teach daingean), along with the stronghouse, developed as a replacement for the tower house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fortified houses in Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fortified_houses_in_Ireland",
+     "locator": "lead",
+     "quote": "The social, political and military changes that took place from the 1580s-1650s were to play a major role in the development of this unique Irish structure.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -478,6 +1714,12 @@
    "family": "Fortified houses and towers",
    "domain": "Defence",
    "fish": "68914",
+   "period": {
+    "text": "From the 14th century (FISH: mid-14th to 17th century in the north of England); in Scotland tower houses were being built up until the 1640s.",
+    "from": 1350,
+    "to": 1645
+   },
+   "structure": "tall, square, crenellated stone tower",
    "sources": [
     {
      "title": "Tower house (FISH Thesaurus of Monument Types, concept 68914)",
@@ -486,6 +1728,39 @@
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68914.html",
      "locator": "scope note",
      "quote": "A multi-storey, fortified hall house"
+    },
+    {
+     "title": "Tower house (FISH Thesaurus of Monument Types, concept 68914)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68914.html",
+     "locator": "scope note",
+     "quote": "Permanently occupied, they date from the mid 14th to the 17th century and are found mainly in the border counties of the North of England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Castles in Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castles_in_Scotland",
+     "locator": "section \"Decline\"",
+     "quote": "Tower houses were being built up until the 1640s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Keep",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Keep",
+     "locator": "section \"Late medieval keeps (14th–16th centuries)\"",
+     "quote": "A tower house would typically be a tall, square, stone-built, crenelated building",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -496,10 +1771,11 @@
    "domain": "Defence",
    "fish": "68899",
    "period": {
-    "text": "mainly between the mid-14th century and about 1600",
+    "text": "Mainly between the mid-14th century and about 1600 (Wikipedia); FISH says from the mid-14th to the 17th century.",
     "from": 1350,
     "to": 1600
    },
+   "structure": "a stone tower of two to four storeys",
    "sources": [
     {
      "title": "Peel tower",
@@ -507,7 +1783,44 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Peel_tower",
      "locator": "lead",
-     "quote": "built along the English and Scottish borders in the Scottish Marches and North of England, mainly between the mid-14th century and about 1600"
+     "quote": "built along the English and Scottish borders in the Scottish Marches and North of England, mainly between the mid-14th century and about 1600",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pele tower (FISH Thesaurus of Monument Types, concept 68899)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68899.html",
+     "locator": "scope note",
+     "quote": "A strong, fortified dwelling, of between two and four storeys.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Pele tower (FISH Thesaurus of Monument Types, concept 68899)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68899.html",
+     "locator": "scope note",
+     "quote": "built mainly in the border country of the North from the mid 14th to the 17th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Peel tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peel_tower",
+     "locator": "lead",
+     "quote": "Pevsner defines a peel as simply a stone tower.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -518,8 +1831,16 @@
    "domain": "Domestic",
    "fish": null,
    "period": {
-    "text": "16th century to about 1660; revived in the 19th century"
+    "text": "From the 1560s to about 1660; revived in the 19th century (Abbotsford, rebuilt from 1816), when far more were built than in the first period, the last significant building being the Scottish National War Memorial (opened 1927).",
+    "from": 1560,
+    "flourish": [
+     1816,
+     1927
+    ],
+    "to": 1927
    },
+   "structure": "stone, ashlar or rubble masonry",
+   "plan": "often asymmetric, with conical-roofed turrets and battlements",
    "sources": [
     {
      "title": "Scottish baronial architecture",
@@ -527,7 +1848,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
      "locator": "section \"Predecessors\"",
-     "quote": "The style of elite residences built by barons in Scotland developed under the influence of French architecture and the architecture of the County of Flanders in the 16th century, which had been abandoned by about 1660."
+     "quote": "The style of elite residences built by barons in Scotland developed under the influence of French architecture and the architecture of the County of Flanders in the 16th century, which had been abandoned by about 1660.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Architecture in early modern Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Architecture_in_early_modern_Scotland",
+     "locator": "lead",
+     "quote": "From the 1560s great private houses were built in a distinctive style that became known as Scottish Baronial.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "section \"Scottish baronial revival\"",
+     "quote": "Rebuilt for him from 1816, it became a model for the Scottish baronial Revival style.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "section \"Revival and name\"",
+     "quote": "The buildings constructed during the Scottish baronial revival by far outnumber those of the original Scottish \"baronial\" castles of the early modern period.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "lead",
+     "quote": "The Scottish National War Memorial, opened in 1927 in Edinburgh Castle, was the last significant building in the baronial style.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "lead",
+     "quote": "Baronial style buildings were typically of stone, whether ashlar or masonry.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Scottish baronial architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_baronial_architecture",
+     "locator": "lead",
+     "quote": "characterised by elaborate rooflines embellished with conical roofs, tourelles, and battlements with machicolations, often with an asymmetric plan",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -538,10 +1928,15 @@
    "domain": "Defence",
    "fish": "68835",
    "period": {
-    "text": "Henry VIII's Device programme, 1539-1547",
-    "from": 1539,
-    "to": 1547
+    "text": "FISH: castles built between 1481 and 1561 for heavy guns; most belong to Henry VIII's Device programme, 1539-1547.",
+    "from": 1481,
+    "flourish": [
+     1539,
+     1547
+    ],
+    "to": 1561
    },
+   "plan": "a central keep with curved, concentric bastions around it",
    "sources": [
     {
      "title": "Artillery castle (FISH Thesaurus of Monument Types, concept 68835)",
@@ -549,7 +1944,10 @@
      "kind": "reference",
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68835.html",
      "locator": "scope note",
-     "quote": "Castles constructed between 1481 and 1561 for defence using heavy guns."
+     "quote": "Castles constructed between 1481 and 1561 for defence using heavy guns.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Device Forts",
@@ -557,7 +1955,21 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Device_Forts",
      "locator": "lead",
-     "quote": "a major programme of work between 1539 and 1547"
+     "quote": "a major programme of work between 1539 and 1547",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Device Forts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Device_Forts",
+     "locator": "section \"Architecture\"",
+     "quote": "They usually had a central keep, echoing earlier medieval designs, with curved, concentric bastions spreading out from the centre.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -567,6 +1979,12 @@
    "family": "Artillery fortification",
    "domain": "Defence",
    "fish": "91148",
+   "period": {
+    "text": "In England from 1547 (Yarmouth Castle, the first with arrow-head bastions); the bastion system dominated until the first decades of the 19th century and gave way to polygonal forts. c. 1830 is approximate.",
+    "from": 1547,
+    "to": 1830
+   },
+   "plan": "a fort with projecting bastions",
    "sources": [
     {
      "title": "Bastion fort",
@@ -575,6 +1993,40 @@
      "url": "https://en.wikipedia.org/wiki/Bastion_fort",
      "locator": "lead",
      "quote": "a style of fortification developed in Italy during the early modern period in response to the ascendancy of gunpowder weapons such as cannon"
+    },
+    {
+     "title": "Device Forts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Device_Forts",
+     "locator": "section \"Architecture\"",
+     "quote": "Yarmouth Castle, finished by 1547, was the first fortification in England to adopt the new arrow-headed bastion design",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "section \"Decline\"",
+     "quote": "The bastion system of fortification had dominated military thinking since its introduction in 16th century Italy, until the first decades of the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastion trace fort (FISH Thesaurus of Monument Types, concept 91148)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91148.html",
+     "locator": "scope note",
+     "quote": "A fort with projecting bastions, which came into use from the 16th century onwards.",
+     "about": [
+      "period",
+      "plan"
+     ]
     }
    ]
   },
@@ -584,7 +2036,60 @@
    "family": "Influences from abroad",
    "domain": "Defence",
    "fish": null,
-   "abroad": true
+   "abroad": true,
+   "period": {
+    "text": "Abroad: developed in Italy in the late 15th and early 16th centuries, spreading out of Italy in the 1530s and 1540s; dominant until the first decades of the 19th century. 1500 and 1830 are approximate.",
+    "from": 1500,
+    "to": 1830
+   },
+   "structure": "low, thick walls, usually of earth and brick",
+   "plan": "a polygonal curtain wall with pointed bastions at each corner",
+   "sources": [
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "section \"Origins\"",
+     "quote": "Bastion fortifications were further developed in the late fifteenth and early sixteenth centuries, primarily in response to the French invasion of the Italian peninsula.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "section \"Decline\"",
+     "quote": "The bastion system of fortification had dominated military thinking since its introduction in 16th century Italy, until the first decades of the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "section \"Origins\"",
+     "quote": "They were built of many materials, usually earth and brick, as brick does not shatter on impact from a cannonball as stone does.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bastion fort",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bastion_fort",
+     "locator": "lead",
+     "quote": "The design is characterized by a polygonal curtain wall with pointed bastions protruding from each corner.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "martello-tower",
@@ -593,10 +2098,16 @@
    "domain": "Defence",
    "fish": "68893",
    "period": {
-    "text": "1804-1812 in England, Ireland, Jersey and Guernsey",
+    "text": "Mostly 1804-1812 in England, Ireland, Jersey and Guernsey; a few later, the last in the British Isles the two at Pembroke Dock (1848-1857).",
     "from": 1804,
-    "to": 1812
+    "flourish": [
+     1804,
+     1812
+    ],
+    "to": 1857
    },
+   "structure": "masonry tower about 12 m high with walls about 2.4 m thick, a gun on the flat roof",
+   "plan": "round, two storeys (sometimes over a basement)",
    "sources": [
     {
      "title": "Martello tower",
@@ -604,7 +2115,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Martello_tower",
      "locator": "section \"United Kingdom of Great Britain and Ireland\"",
-     "quote": "Between 1804 and 1812 the British authorities built a chain of towers based on the original Mortella tower to defend the south and east coast of England, Ireland, Jersey and Guernsey"
+     "quote": "Between 1804 and 1812 the British authorities built a chain of towers based on the original Mortella tower to defend the south and east coast of England, Ireland, Jersey and Guernsey",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Martello tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martello_tower",
+     "locator": "section \"Wales\"",
+     "quote": "The most notable surviving towers are the two located in Pembroke Dock, which were built between 1848 and 1857 to protect the naval base there.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Martello tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martello_tower",
+     "locator": "section \"Design and construction\"",
+     "quote": "The towers were about 40 feet (12 m) high with walls about 8 feet (2.4 m) thick.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Martello tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Martello_tower",
+     "locator": "section \"Design and construction\"",
+     "quote": "The interior of a classic British Martello tower consisted of two storeys (sometimes with an additional basement).",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -614,7 +2161,37 @@
    "family": "Influences from abroad",
    "domain": "Defence",
    "fish": null,
-   "abroad": true
+   "abroad": true,
+   "period": {
+    "text": "Abroad: built by the Republic of Genoa round Corsica between 1530 and 1620, when the programme was abandoned.",
+    "from": 1530,
+    "to": 1620
+   },
+   "plan": "circular, with a roof terrace protected by machicolations",
+   "sources": [
+    {
+     "title": "Genoese towers in Corsica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Genoese_towers_in_Corsica",
+     "locator": "lead",
+     "quote": "are a series of coastal defences constructed by the Republic of Genoa between 1530 and 1620 to stem the attacks by Barbary pirates",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Genoese towers in Corsica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Genoese_towers_in_Corsica",
+     "locator": "lead",
+     "quote": "Most were built to a similar circular design with a roof terrace protected by machicolations.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "polygonal-fort",
@@ -623,9 +2200,11 @@
    "domain": "Defence",
    "fish": null,
    "period": {
-    "text": "in Britain from the Royal Commission of 1859",
-    "from": 1859
+    "text": "In Britain from the Royal Commission of 1859 (some landward forts at Portsmouth and Plymouth were begun in the 1850s; the Chatham ring not until 1875); the fortifications were completed in the 1880s. c. 1885 is approximate.",
+    "from": 1859,
+    "to": 1885
    },
+   "plan": "polygonal, without bastions, the forts placed in a ring to support each other",
    "sources": [
     {
      "title": "Polygonal fort",
@@ -633,7 +2212,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Polygonal_fort",
      "locator": "section \"Impact of rifled artillery\"",
-     "quote": "The British were apprehensive about a French invasion and in 1859 appointed the Royal Commission on the Defence of the United Kingdom to fortify the naval dockyards of southern England."
+     "quote": "The British were apprehensive about a French invasion and in 1859 appointed the Royal Commission on the Defence of the United Kingdom to fortify the naval dockyards of southern England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Commission on the Defence of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Commission_on_the_Defence_of_the_United_Kingdom",
+     "locator": "section \"Implementation\"",
+     "quote": "By the time the fortifications were completed in the 1880s it was clear that the French had not seriously planned to invade.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Commission on the Defence of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Commission_on_the_Defence_of_the_United_Kingdom",
+     "locator": "section \"Land forts\"",
+     "quote": "Construction of some landward forts at Portsmouth and Plymouth had already begun in the 1850s and work on the ring fortress at Chatham was not started until 1875",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Commission on the Defence of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Commission_on_the_Defence_of_the_United_Kingdom",
+     "locator": "section \"Land forts\"",
+     "quote": "These forts were built in the new polygonal style without the traditional bastions and generally sited so as to form a \"ring fortress\", so that each fort could support its neighbour with artillery fire.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   }

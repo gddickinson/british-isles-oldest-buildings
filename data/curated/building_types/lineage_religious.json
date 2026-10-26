@@ -8,6 +8,13 @@
    "family": "Roman public buildings",
    "domain": "Civic",
    "fish": "68678",
+   "period": {
+    "text": "Roman: London's first under the Flavians, after AD 60; Verulamium's finished in AD 79; London's great basilica destroyed c. 300; none after Roman rule ended in 410",
+    "from": 79,
+    "to": 410
+   },
+   "structure": "an aisled hall of timber or masonry",
+   "plan": "nave and aisles with a tribunal, along one side of the forum",
    "sources": [
     {
      "title": "Basilica (FISH Thesaurus of Monument Types, concept 68678)",
@@ -15,7 +22,10 @@
      "kind": "reference",
      "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68678.html",
      "locator": "scope note",
-     "quote": "An aisled timber or masonry hall, serving as the chief administrative public meeting centre and law courts for a Roman town. Usually located alongside the forum."
+     "quote": "An aisled timber or masonry hall, serving as the chief administrative public meeting centre and law courts for a Roman town. Usually located alongside the forum.",
+     "about": [
+      "structure"
+     ]
     },
     {
      "title": "Silchester",
@@ -24,6 +34,50 @@
      "url": "https://en.wikipedia.org/wiki/Silchester",
      "locator": "section \"Iron Age and Roman town\"",
      "quote": "Notable finds include the bronze Silchester eagle, discovered in the basilica in 1866"
+    },
+    {
+     "title": "Basilica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basilica",
+     "locator": "section \"Early Empire\"",
+     "quote": "After its destruction in 60 AD, Londinium (London) was endowed with its first forum and basilica under the Flavian dynasty.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Basilica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basilica",
+     "locator": "section \"Early Empire\"",
+     "quote": "Later, in 79 AD, an inscription commemorated the completion of the 385 by 120 foot (117 m × 37 m) basilica at Verulamium (St Albans) under the governor Gnaeus Julius Agricola",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Basilica",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Basilica",
+     "locator": "section \"Early Empire\"",
+     "quote": "The basilica delimited the northern edge of the forum with typical nave, aisles, and a tribunal",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -34,7 +88,9 @@
    "domain": "Religious",
    "fish": "69980",
    "period": {
-    "text": "in the isles from Roman Britain (Silchester, perhaps 4th century)"
+    "text": "in the isles from Roman Britain: a possible church at Silchester, probably from before Constantine (c. 300); built in every period since, in steel and concrete in the 20th century",
+    "from": 300,
+    "ongoing": true
    },
    "sources": [
     {
@@ -43,7 +99,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Silchester",
      "locator": "lead",
-     "quote": "the remains of what may be one of the earliest Christian churches found in the British Isles"
+     "quote": "the remains of what may be one of the earliest Christian churches found in the British Isles",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Calleva Atrebatum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Calleva_Atrebatum",
+     "locator": "section \"Religion\"",
+     "quote": "The apse-ended basilica building has a layout comparable to early churches in the western Roman empire, but the date is likely to be pre-Constantinian.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Parish church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Parish_church",
+     "locator": "lead",
+     "quote": "Many villages in Europe have churches that date back to the Middle Ages, but all periods of architecture are represented.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Church architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Church_architecture",
+     "locator": "lead",
+     "quote": "In the 20th century, the use of new materials, such as steel and concrete, has had an effect upon the design of churches.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -54,8 +146,12 @@
    "domain": "Religious",
    "fish": "70108",
    "period": {
-    "text": "7th century to the 11th, when parishes took over",
+    "text": "7th century to the 11th, when parishes took over; widespread in the 10th century",
     "from": 600,
+    "flourish": [
+     900,
+     1000
+    ],
     "to": 1100
    },
    "sources": [
@@ -65,7 +161,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Minster_(church)",
      "locator": "section \"Early and mid Anglo-Saxon periods\"",
-     "quote": "The first minsters in the English-speaking parts of Britain were founded in the century after the mission to the Saxons led by Augustine of Canterbury in 597."
+     "quote": "The first minsters in the English-speaking parts of Britain were founded in the century after the mission to the Saxons led by Augustine of Canterbury in 597.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Minster (church)",
@@ -73,7 +172,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Minster_(church)",
      "locator": "lead",
-     "quote": "Widespread in 10th-century England, minsters declined in importance with the systematic introduction of parishes and parish churches from the 11th century onwards."
+     "quote": "Widespread in 10th-century England, minsters declined in importance with the systematic introduction of parishes and parish churches from the 11th century onwards.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -82,14 +184,83 @@
    "name": "Parish church",
    "family": "Churches",
    "domain": "Religious",
-   "fish": "69982"
+   "fish": "69982",
+   "period": {
+    "text": "from the 11th century, as parishes took over from the minsters (c. 1000); churches of every period since, and still built, more modestly in the 20th century",
+    "from": 1000,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Minster (church)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_(church)",
+     "locator": "lead",
+     "quote": "minsters declined in importance with the systematic introduction of parishes and parish churches from the 11th century onwards",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Parish church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Parish_church",
+     "locator": "lead",
+     "quote": "Many villages in Europe have churches that date back to the Middle Ages, but all periods of architecture are represented.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Church architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Church_architecture",
+     "locator": "section \"Modernism\"",
+     "quote": "Parish churches were inevitably built more modestly.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "chapel-of-ease",
    "name": "Chapel of ease",
    "family": "Churches",
    "domain": "Religious",
-   "fish": "71454"
+   "fish": "71454",
+   "period": {
+    "text": "St Margaret's, Rochester was one by 1108; chapelries, the parts of a parish such chapels served, lasted in England until the mid 19th century; no source gives the last one built",
+    "from": 1108,
+    "to": 1850
+   },
+   "sources": [
+    {
+     "title": "Chapel of ease",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel_of_ease",
+     "locator": "lead",
+     "quote": "St. Margaret's Church, Rochester in Kent which started as a chapel of ease for the parish of St Nicholas in 1108",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chapelry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapelry",
+     "locator": "lead",
+     "quote": "A chapelry was a subdivision of an ecclesiastical parish in England and parts of Lowland Scotland up to the mid 19th century.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "round-tower-church",
@@ -97,6 +268,12 @@
    "family": "Churches",
    "domain": "Religious",
    "fish": "118514",
+   "period": {
+    "text": "the towers from the 11th century to the 14th, besides later revivals; none shown to be earlier than the 11th century, though some are called Saxon",
+    "from": 1000,
+    "to": 1400
+   },
+   "structure": "knapped flint walls; the towers round because corners are hard to build in flint",
    "note": "About 185 survive in England, 124 of them in Norfolk; about 20 of similar design in Germany.",
    "sources": [
     {
@@ -114,6 +291,50 @@
      "url": "https://en.wikipedia.org/wiki/Round-tower_church",
      "locator": "lead",
      "quote": "There is evidence of about 20 round-tower churches in Germany, of similar design and construction to those in East Anglia."
+    },
+    {
+     "title": "Round Tower Churches",
+     "author": "Stephen Hart (Historic Churches, 2008)",
+     "kind": "secondary",
+     "url": "https://buildingconservation.com/articles/roundtower/roundtower.htm",
+     "locator": "article",
+     "quote": "It can therefore be said that (excluding post-Reformation and 19th and 20th century revivals) the building of round towers occurred from the 11th to the 14th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Round Tower Churches",
+     "author": "Stephen Hart (Historic Churches, 2008)",
+     "kind": "secondary",
+     "url": "https://buildingconservation.com/articles/roundtower/roundtower.htm",
+     "locator": "article",
+     "quote": "There are about 40 round towers of the possible Saxon and Saxo-Norman overlap periods, with no evidence to suggest that any may be earlier than the 11th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "Round-tower churches are found in areas lacking normal building stone, and are therefore built of knapped flint.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Round-tower church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Round-tower_church",
+     "locator": "lead",
+     "quote": "Corners are difficult to construct in flint, hence the thick, round walls of the towers.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -124,7 +345,12 @@
    "domain": "Religious",
    "fish": "69981",
    "period": {
-    "text": "early medieval to 1547, when most were dissolved",
+    "text": "from the 10th century, when old minsters were refounded as colleges (c. 950); many new chantry colleges from the 13th century; most dissolved in 1547",
+    "from": 950,
+    "flourish": [
+     1200,
+     1547
+    ],
     "to": 1547
    },
    "sources": [
@@ -134,7 +360,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Collegiate_church",
      "locator": "section \"England\"",
-     "quote": "They were mostly abolished during the reign of Edward VI in 1547, as part of the Reformation, by the Act for the Dissolution of Collegiate Churches and Chantries (Dissolution of Colleges Act 1547)."
+     "quote": "They were mostly abolished during the reign of Edward VI in 1547, as part of the Reformation, by the Act for the Dissolution of Collegiate Churches and Chantries (Dissolution of Colleges Act 1547).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Minster (church)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Minster_(church)",
+     "locator": "section \"Late Saxon and Norman periods\"",
+     "quote": "Following the English recovery in the 10th century, surviving minsters were often refounded in accordance with the new types of collective religious bodies then becoming widespread in Western Europe, as monasteries following the reformed Benedictine rule, or as collegiate churches or cathedral chapters following the rule of Chrodegang of Metz.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"History\"",
+     "quote": "The same impetus to establish endowed prayer also led to many new collegiate foundations in this later period",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -145,7 +396,8 @@
    "domain": "Religious",
    "fish": "69970",
    "period": {
-    "text": "13th century to 1547",
+    "text": "the first perpetual chantry outside the royal family endowed in 1191 (Broad Colney); common from the 13th century; abolished by the Acts of 1545 and 1547",
+    "from": 1191,
     "to": 1547
    },
    "sources": [
@@ -155,7 +407,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Collegiate_church",
      "locator": "section \"History\"",
-     "quote": "From the 13th century onwards, existing collegiate foundations (like monasteries) also attracted chantry endowments"
+     "quote": "From the 13th century onwards, existing collegiate foundations (like monasteries) also attracted chantry endowments",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chantry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chantry",
+     "locator": "section \"Royal endowments\"",
+     "quote": "In non-royal society, the first perpetual mass was endowed by Richard FitzReiner, Sheriff of the City of London, in his private chapel within his manor of Broad Colney in Hertfordshire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chantry",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chantry",
+     "locator": "section \"Abolition of Chantries Acts, 1545 and 1547\"",
+     "quote": "Parliament passed an Act in 1545 which defined chantries as representing misapplied funds and misappropriated lands",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Collegiate church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Collegiate_church",
+     "locator": "section \"England\"",
+     "quote": "They were mostly abolished during the reign of Edward VI in 1547, as part of the Reformation, by the Act for the Dissolution of Collegiate Churches and Chantries",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -164,7 +452,47 @@
    "name": "Cathedral",
    "family": "Churches",
    "domain": "Religious",
-   "fish": "69975"
+   "fish": "69975",
+   "period": {
+    "text": "from Canterbury, 597; few new ones after the Reformation (Liverpool, 1904-1978, was only the third Anglican one in England); still built and enlarged: St Edmundsbury's tower was finished in 2005",
+    "from": 597,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Anglo-Saxon architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Saxon_architecture",
+     "locator": "section \"Church architecture: historical context\"",
+     "quote": "In 597, the mission of Augustine from Rome came to England to convert the southern Anglo-Saxons, and founded the first cathedral and a Benedictine monastery at Canterbury.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Liverpool Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Liverpool_Cathedral",
+     "locator": "section \"1901 competition\"",
+     "quote": "it was only the third opportunity to build an Anglican cathedral in England since the Reformation in the 16th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "St Edmundsbury Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Edmundsbury_Cathedral",
+     "locator": "section \"History\"",
+     "quote": "Its completion was officially celebrated on 22 July 2005.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "commissioners-church",
@@ -173,8 +501,9 @@
    "domain": "Religious",
    "fish": null,
    "period": {
-    "text": "from the Church Building Act 1818 (further grant 1824)",
-    "from": 1818
+    "text": "from the Church Building Act 1818 (further grant 1824) until the Commission was absorbed into the Ecclesiastical Commission at the end of 1856; 612 churches",
+    "from": 1818,
+    "to": 1856
    },
    "sources": [
     {
@@ -183,7 +512,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Commissioners'_church",
      "locator": "lead",
-     "quote": "A Commissioners' church, also known as a Waterloo church and Million Act church, is an Anglican church in England or Wales built with money voted by Parliament as a result of the Church Building Act 1818"
+     "quote": "A Commissioners' church, also known as a Waterloo church and Million Act church, is an Anglican church in England or Wales built with money voted by Parliament as a result of the Church Building Act 1818",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Commissioners' church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Commissioners'_church",
+     "locator": "lead",
+     "quote": "The Commission continued to function as a separate body until the end of 1856, when it was absorbed into the Ecclesiastical Commission.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Commissioners' church",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Commissioners'_church",
+     "locator": "lead",
+     "quote": "In total 612 new churches were provided, mainly in expanding industrial towns and cities.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -194,9 +548,15 @@
    "domain": "Religious",
    "fish": null,
    "period": {
-    "text": "from the founding of the Cambridge Camden Society, 1839",
-    "from": 1839
+    "text": "from the founding of the Cambridge Camden Society, 1839; the Gothic Revival peaked by the 1870s; far fewer after the 1930s, but still built",
+    "from": 1839,
+    "flourish": [
+     1840,
+     1870
+    ],
+    "ongoing": true
    },
+   "plan": "a nave without rented pews and a distinct chancel",
    "sources": [
     {
      "title": "Cambridge Camden Society",
@@ -204,7 +564,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Cambridge_Camden_Society",
      "locator": "lead",
-     "quote": "The society and its publications enjoyed wide influence over the design of English churches throughout the 19th century, and are often known as the ecclesiological movement."
+     "quote": "The society and its publications enjoyed wide influence over the design of English churches throughout the 19th century, and are often known as the ecclesiological movement.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gothic Revival architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gothic_Revival_architecture",
+     "locator": "lead",
+     "quote": "The influence of Revivalism had nevertheless peaked by the 1870s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gothic Revival architecture",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gothic_Revival_architecture",
+     "locator": "section \"20th and 21st centuries\"",
+     "quote": "Though the number of new Gothic Revival buildings declined sharply after the 1930s, they continue to be built.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cambridge Camden Society",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cambridge_Camden_Society",
+     "locator": "section \"The Ecclesiologist\"",
+     "quote": "Soon almost all old churches were dismantling their pews, and new churches were being built with chancels.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Cambridge Camden Society",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cambridge_Camden_Society",
+     "locator": "section \"Results\"",
+     "quote": "Pews bought by money have vanished entirely thanks to the Society's campaign and chancels have been a normal feature in Neo-Medieval churches since the 1860s.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -213,21 +620,207 @@
    "name": "Monastery",
    "family": "Religious houses",
    "domain": "Religious",
-   "fish": "70152"
+   "fish": "70152",
+   "period": {
+    "text": "Iona from 563; all dissolved 1536-1541; revived from the 19th century and still built (Buckfast's church 1906-1938, guesthouse 1982-1994)",
+    "from": 563,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Iona Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Iona_Abbey",
+     "locator": "section \"Early history\"",
+     "quote": "In 563, Columba came to Iona from Ireland with twelve companions and founded a monastery.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dissolution of the Monasteries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Monasteries",
+     "locator": "lead",
+     "quote": "a set of administrative and legal processes between 1536 and 1541, by which Henry VIII disbanded all Catholic monasteries, priories, convents, and friaries in England, Wales, and Ireland",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Monastery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monastery",
+     "locator": "section \"Anglican\"",
+     "quote": "In the 19th-century monasticism was revived in the Church of England",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Buckfast Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buckfast_Abbey",
+     "locator": "section \"Reconstruction\"",
+     "quote": "with the current abbey church constructed between 1906 and 1938, mostly on the footprint of the Cistercian Abbey",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Buckfast Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buckfast_Abbey",
+     "locator": "section \"Reconstruction\"",
+     "quote": "This was incorporated into the abbey's guesthouse, which was constructed between 1982 and 1994, when the abbey's precinct was rebuilt.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "abbey",
    "name": "Abbey",
    "family": "Religious houses",
    "domain": "Religious",
-   "fish": "70120"
+   "fish": "70120",
+   "period": {
+    "text": "St Augustine's, Canterbury, from 598; all dissolved 1536-1541; revived from the 19th century (Buckfast's church 1906-1938)",
+    "from": 598,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "St Augustine's Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Augustine's_Abbey",
+     "locator": "lead",
+     "quote": "The abbey was founded in 598 and functioned as a monastery until its dissolution in 1538",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dissolution of the Monasteries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Monasteries",
+     "locator": "lead",
+     "quote": "a set of administrative and legal processes between 1536 and 1541, by which Henry VIII disbanded all Catholic monasteries, priories, convents, and friaries in England, Wales, and Ireland",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Monastery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monastery",
+     "locator": "section \"Anglican\"",
+     "quote": "In the 19th-century monasticism was revived in the Church of England",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Buckfast Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buckfast_Abbey",
+     "locator": "section \"Reconstruction\"",
+     "quote": "with the current abbey church constructed between 1906 and 1938, mostly on the footprint of the Cistercian Abbey",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Buckfast Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buckfast_Abbey",
+     "locator": "section \"Reconstruction\"",
+     "quote": "This was incorporated into the abbey's guesthouse, which was constructed between 1982 and 1994, when the abbey's precinct was rebuilt.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "priory",
    "name": "Priory",
    "family": "Religious houses",
    "domain": "Religious",
-   "fish": "70177"
+   "fish": "70177",
+   "period": {
+    "text": "Christ Church, Canterbury, a monastery by c. 997 and later a cathedral priory; many more after the Norman Conquest; dissolved 1536-1541; revived in the Church of England from the 19th century (Cleeve Priory)",
+    "from": 997,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Canterbury Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+     "locator": "section \"Early Medieval\"",
+     "quote": "But the formal establishment as a monastery seems to date only to c. 997",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canterbury Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+     "locator": "lead",
+     "quote": "Before the English Reformation, the cathedral was part of a Benedictine monastic community known as the Priory of Christ Church, Canterbury",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Alien priory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alien_priory",
+     "locator": "section \"History\"",
+     "quote": "The practice increased after the Norman Conquest.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Dissolution of the Monasteries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Monasteries",
+     "locator": "lead",
+     "quote": "a set of administrative and legal processes between 1536 and 1541, by which Henry VIII disbanded all Catholic monasteries, priories, convents, and friaries in England, Wales, and Ireland",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Monastery",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Monastery",
+     "locator": "section \"Anglican\"",
+     "quote": "Cleeve Priory (Community of the Glorious Ascension)",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "reformed-houses-continent",
@@ -236,6 +829,11 @@
    "domain": "Religious",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "abroad: from Cluny, founded 910, and the houses reformed from it and from Brogne (944), Fleury and Ghent; Cluny's churches built into the early 12th century (c. 1100), when the Cistercians and then the friars overtook the order",
+    "from": 910,
+    "to": 1100
+   },
    "sources": [
     {
      "title": "English Benedictine Reform",
@@ -243,7 +841,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/English_Benedictine_Reform",
      "locator": "section \"Background\"",
-     "quote": "When Gérard of Brogne reformed the Abbey of Saint Bertin in Saint-Omer along Benedictine lines in 944, dissident monks found a refuge in England under King Edmund (939–946)."
+     "quote": "When Gérard of Brogne reformed the Abbey of Saint Bertin in Saint-Omer along Benedictine lines in 944, dissident monks found a refuge in England under King Edmund (939–946).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cluny Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+     "locator": "lead",
+     "quote": "Cluny was founded by Duke William I of Aquitaine in 910.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cluny Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+     "locator": "lead",
+     "quote": "The abbey was constructed in the Romanesque architectural style, with three churches built in succession from the 10th to the early 12th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cluny Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+     "locator": "section \"Later medieval decline\"",
+     "quote": "As other religious orders such as the Cistercians in the 12th and then the Mendicants in the 13th century arose within the Western Christian church, the competition gradually weakened the status and influence of the abbey.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -253,6 +887,13 @@
    "family": "Early Christian Ireland",
    "domain": "Religious",
    "fish": null,
+   "period": {
+    "text": "no direct evidence before c. 700; some of the most intact may be 12th century or later; farm clocháns were still built in modern times, and corbelling as late as the 1950s (c. 1950)",
+    "from": 700,
+    "to": 1950
+   },
+   "structure": "dry-stone walls up to 1.5 m thick and a corbelled roof",
+   "plan": "mostly round, some rectangular (perhaps later); sometimes several joined by their walls",
    "note": "Most clocháin cannot be dated; some on religious sites may be pre-Romanesque, others 12th century or later.",
    "sources": [
     {
@@ -261,7 +902,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Clochán",
      "locator": "lead",
-     "quote": "A clochán (plural clocháin) or beehive hut is a dry-stone hut with a corbelled roof, commonly associated with the south-western Irish seaboard."
+     "quote": "A clochán (plural clocháin) or beehive hut is a dry-stone hut with a corbelled roof, commonly associated with the south-western Irish seaboard.",
+     "about": [
+      "structure"
+     ]
     },
     {
      "title": "Clochán",
@@ -269,7 +913,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Clochán",
      "locator": "lead",
-     "quote": "Some associated with religious sites may be pre-Romanesque, some consider that the most fully intact structures date after the 12th century or later."
+     "quote": "Some associated with religious sites may be pre-Romanesque, some consider that the most fully intact structures date after the 12th century or later.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "lead",
+     "quote": "there is at present no direct evidence to date the surviving examples before c. 700 CE",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Morphology\"",
+     "quote": "Both techniques can still be seen in the modern agricultural clocháns of the Dingle peninsula.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Caher Conor (Cathair na gConchuireach)",
+     "author": "Saints and Stones",
+     "kind": "secondary",
+     "url": "https://saintsandstones.net/stones-caherconorfahan-journey.htm",
+     "locator": "page",
+     "quote": "Dating the huts is difficult because the skill of corbelling has been used in Newgrange (3100 B.C.) and as recently as the 1950s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "section \"Form\"",
+     "quote": "The walls are very thick, up to 1.5 metres (4 ft 11 in).",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "section \"Form\"",
+     "quote": "They are most commonly round beehive huts, but rectangular plans are known as well.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Clochán",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clochán",
+     "locator": "section \"Form\"",
+     "quote": "Sometimes several clocháin are joined by their walls.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -279,6 +992,13 @@
    "family": "Early Christian Ireland",
    "domain": "Religious",
    "fish": null,
+   "period": {
+    "text": "perhaps from the 6th to 8th centuries (c. 600), the date of the monastery whose oratories are corbelled on Skellig Michael; perhaps as late as the 12th century (c. 1200; Harbison's date for Gallarus); disputed",
+    "from": 600,
+    "to": 1200
+   },
+   "structure": "dry-built corbel vaulting: sloping side and end walls that are both walls and half-vault",
+   "plan": "one small rectangular room, about 4.8 by 3 m, with the door at one end and a small window in the east wall opposite",
    "note": "Gallarus is the only intact example, and its date is disputed: early Christian (Smith 1756), 12th century (Harbison 1970), or a pilgrims' shelter (Harbison 1994).",
    "sources": [
     {
@@ -287,7 +1007,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
      "locator": "lead",
-     "quote": "It has been presented variously as an early-Christian stone church by antiquary Charles Smith, in 1756; a 12th-century Romanesque church by archaeologist Peter Harbison in 1970; a shelter for pilgrims by the same in 1994."
+     "quote": "It has been presented variously as an early-Christian stone church by antiquary Charles Smith, in 1756; a 12th-century Romanesque church by archaeologist Peter Harbison in 1970; a shelter for pilgrims by the same in 1994.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Gallarus Oratory",
@@ -296,6 +1019,73 @@
      "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
      "locator": "section \"Discovery\"",
      "quote": "As the oratory is the only intact specimen of its type, it has attracted considerable attention, starting from antiquarians in the mid-18th century."
+    },
+    {
+     "title": "Skellig Michael",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Skellig_Michael",
+     "locator": "section \"Monastic\"",
+     "quote": "Monks of the Celtic Christian tradition founded a monastery on Skellig Michael sometime between the 6th and 8th centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Skellig Michael",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Skellig_Michael",
+     "locator": "section \"Monastery\"",
+     "quote": "The cells and oratories are all of dry-built corbel construction, whereas the church, which was constructed at a later date, is of mortared stone.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Interpretations as to dates and uses\"",
+     "quote": "In 1970, archaeologist Peter Harbison argued that the oratory might have been built as late as the 12th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Morphology\"",
+     "quote": "The edifice has two side walls and two end walls, sloping and converging at the top, each of one piece, playing a dual role as load-bearing wall and corbelled half-vault.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Morphology\"",
+     "quote": "The interior room is approximately 4.8 metres (16 ft) by 3 metres (10 ft), a size that befits more an oratory or a small chapel than a church.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Gallarus Oratory",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gallarus_Oratory",
+     "locator": "section \"Morphology\"",
+     "quote": "It is dimly lit, with only a tiny round-headed window in the east wall, opposite the entrance door.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -306,10 +1096,11 @@
    "domain": "Religious",
    "fish": null,
    "period": {
-    "text": "probably 9th to 12th centuries",
+    "text": "probably 9th to 12th centuries; first recorded at Slane, burnt in 948; Ardmore, c. 12th century, thought the last",
     "from": 800,
     "to": 1200
    },
+   "structure": "a stone tower with a solid base, a door raised above the ground, wooden floors and a conical stone cap; rubble in the earliest, ashlar in the later",
    "note": "Their purpose is debated: bell towers by their Irish name, refuges, or (O'Keeffe) high-status royal chapels.",
    "sources": [
     {
@@ -326,7 +1117,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
      "locator": "section \"Construction and distribution\"",
-     "quote": "The towers were probably built between the 9th and 12th centuries."
+     "quote": "The towers were probably built between the 9th and 12th centuries.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Irish round tower",
@@ -335,6 +1129,83 @@
      "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
      "locator": "section \"Purpose\"",
      "quote": "University College Dublin Professor of Archaeology Tadhg O'Keeffe has suggested that the towers were originally high-status royal chapels"
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Purpose\"",
+     "quote": "The oldest reference to a round tower (the one at Slane, see below) records its use as a refuge",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Slane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Slane",
+     "locator": "section \"The Hill of Slane\"",
+     "quote": "The Annals of the Four Masters record that in A.D. 948 \"The belfry of Slaine [an Irish round tower] was burned by the foreigners [Vikings]",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Construction and distribution\"",
+     "quote": "The round tower at Ardmore, County Waterford, believed to be the latest built in Ireland (c. 12th century), has the unique feature of three string courses around the exterior.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Construction and distribution\"",
+     "quote": "The masonry differs according to date, the earliest examples being uncut rubble, while the later ones are of neatly joined stonework (ashlar).",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Construction and distribution\"",
+     "quote": "The lower portion is solid masonry with a single door raised two to three metres above, often accessible only by a ladder.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Construction and distribution\"",
+     "quote": "Within, in some, are two or more floors (or signs of where such floors existed), usually of wood",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Irish round tower",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+     "locator": "section \"Construction and distribution\"",
+     "quote": "The cap (roof), is of stone, usually conical in shape",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -344,6 +1215,15 @@
    "family": "Nonconformist places of worship",
    "domain": "Religious",
    "fish": "92762",
+   "period": {
+    "text": "the first purpose-built Quaker one in 1670; registered under the Toleration Act 1689; most chapels built in the late 18th and early 19th centuries; still built (Kingston Quaker Centre, 2015)",
+    "from": 1670,
+    "flourish": [
+     1750,
+     1850
+    ],
+    "ongoing": true
+   },
    "sources": [
     {
      "title": "Meeting house",
@@ -360,6 +1240,50 @@
      "url": "https://en.wikipedia.org/wiki/Meeting_house",
      "locator": "section \"Meeting houses in America\"",
      "quote": "The nonconformist meeting houses generally do not have steeples"
+    },
+    {
+     "title": "Friends meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Friends_meeting_house",
+     "locator": "section \"History\"",
+     "quote": "In 1670, Friends in England built the first worship-purposed meeting house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Toleration Act 1688",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Toleration_Act_1688",
+     "locator": "lead",
+     "quote": "Dissenters were required to register their meeting houses and were forbidden from meeting in private homes.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chapel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chapel",
+     "locator": "section \"Modern usage\"",
+     "quote": "In England and Wales, due to the rise in Nonconformist chapels during the late 18th and early 19th centuries, by the time of the 1851 census, more people attended the independent chapels than attended the state religion's Anglican churches.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kingston Quaker Centre scoops architecture award",
+     "author": "The Friend (Tara Craig, 4 December 2015)",
+     "kind": "secondary",
+     "url": "https://thefriend.org/article/kingston-quaker-centre-scoops-architecture-award",
+     "locator": "article",
+     "quote": "The new Kingston Quaker Centre, designed by Tectus Architects, has won the ACE/Royal Institute of British Architects award for religious architecture.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -370,9 +1294,11 @@
    "domain": "Religious",
    "fish": "70107",
    "period": {
-    "text": "the first purpose-built one in England in 1670",
-    "from": 1670
+    "text": "the first purpose-built one in England in 1670; still built (Blackheath 1972, Kingston 2015)",
+    "from": 1670,
+    "ongoing": true
    },
+   "plan": "a room for meeting for worship and a women's meeting room; a minister's gallery at one end with an elders' bench before it",
    "sources": [
     {
      "title": "Friends meeting house",
@@ -380,7 +1306,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Friends_meeting_house",
      "locator": "section \"History\"",
-     "quote": "In 1670, Friends in England built the first worship-purposed meeting house."
+     "quote": "In 1670, Friends in England built the first worship-purposed meeting house.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackheath Quaker Meeting House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackheath_Quaker_Meeting_House",
+     "locator": "section \"Design and construction\"",
+     "quote": "Construction finally took place between September 1971 and September 1972, and the first Meeting for Worship in the new building was held in October 1972.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kingston Quaker Centre scoops architecture award",
+     "author": "The Friend (Tara Craig, 4 December 2015)",
+     "kind": "secondary",
+     "url": "https://thefriend.org/article/kingston-quaker-centre-scoops-architecture-award",
+     "locator": "article",
+     "quote": "The new Kingston Quaker Centre, designed by Tectus Architects, has won the ACE/Royal Institute of British Architects award for religious architecture.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Friends meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Friends_meeting_house",
+     "locator": "section \"Description\"",
+     "quote": "Meeting Houses built in a traditional style usually had two meeting rooms: one for the main meeting for worship, and another where the women's business meeting may be held (often referred to as the women's meeting room).",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Friends meeting house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Friends_meeting_house",
+     "locator": "section \"Description\"",
+     "quote": "Meeting houses of this style usually have a minister's gallery at one end of the meeting room, where traditionally those traveling in the ministry would have sat, with an elders bench immediately in front of this.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   }

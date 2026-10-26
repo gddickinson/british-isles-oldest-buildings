@@ -94,3 +94,22 @@ workhouse, Irish workhouse, Scottish poorhouse, the playhouse types (FISH has on
 Left for later: charity, dame and Sunday schools, hedge schools → Irish national schools (sourced; FISH's "national
 school" is the English National Society's), plate-glass universities, custom houses, assize courts, houses of
 industry, the York Retreat, Turkish baths, the lido.
+
+## Periods of use, structure and plan form (BT1c3b, 2026-10-26)
+
+Every one of the 224 types has `period`: `text` (what the years are and how sure), `from` (first known example;
+for types abroad, in their own country; BC negative), `flourish` [from, to] where sources say when most were built
+(68 types), and `to` (last built, 170) or `ongoing: true` (still built, 54). `structure` (66) and `plan` (100) only
+where a source states them for the type, not a single building. Each is backed by a source marked
+`"about": ["period" | "structure" | "plan"]`; `python -m bidb.building_types` checks this (`period_problems`) and
+`--file lineage_x.json [--quotes PATH]` checks one file. 850 quotes added: 1,443 of 1,443 found.
+
+What the years are: many "to" years are the latest example a source names (railway hotel 1937, pleasure pier 1957,
+aisled barn 1771), or the end of use or a law (alehouse 1869, voluntary and fever hospitals 1948, union workhouse
+1930, moot 1747), not a known last building; the text says which. Approximate years ("c.", "by the 13th century")
+are said so. Disagreements are given in the text: cottage hospital (first 1818, 1827, 1842 or 1859), sanatorium
+(Bodington 1836 or Brehmer 1854), echelon asylum (Coney Hill 1883 or Claybury 1893), lobby-entry house (16th or
+late 17th century), oast house (17th century or 1750 at Golford). Left out because the checker cannot read them:
+Historic England pages (refuse scripts), Canmore, a 2015 Hampshire PDF dating a Winchester Wealden house to 1340,
+Asylum Projects (Cloudflare). Weakest: the clochán's end (corbelling into the 1950s, not clocháns as such), the
+Persian windmill's (no source), the dispensary as ongoing (FISH's room for medicines in a hospital).

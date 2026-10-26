@@ -4,7 +4,7 @@ Future work for British Isles Oldest Buildings, kept between sessions. Newest de
 each section; tick items off (and move them to SESSION_LOG.md) when done. Sections with every item done
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
-## Status (2026-10-25)
+## Status (2026-10-26)
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 71 (2026-10-25, with C6-C9 and
@@ -593,8 +593,16 @@ the descent of a type is disputed, both views are given and the link is drawn as
       all (8 new: guildhall origin, panopticon and Millbank, panopticon and the radial prison, Leach's chantry schools,
       quadrangle and cloister, hospital origins, the first cottage hospital and sanatorium, the inn-yard theory,
       Perran Round). Details and what was left out in `data/curated/building_types/README.md`.
-- [ ] BT1c3b Periods of use (first known, flourishing, last built) for every type; structural system and plan form
-      where the sources give them.
+- [x] BT1c3b (2026-10-26) Periods of use for all 224 types (six research agents, one or two files each, reviewed
+      here): `period` {text, from (first known), flourish [from, to] (68 types), to (last built, 170) or ongoing
+      (54)}, structure (66 types) and plan form (100) where a source states them for the type; each backed by a
+      source marked `about` period / structure / plan, checked by `building_types.period_problems` (years in order,
+      to or ongoing, a source for each). 850 more quotes: 1,443 of 1,443 found. The texts say what each year really
+      is: many "to" years are the latest example a source names, or a law or end of use (Beerhouse Act 1869, NHS
+      1948, the 1930 end of the workhouses), not a known last building; disagreements given in the text (cottage
+      hospital 1818/1827/1842/1859, Wealden house 1380 vs a 1340 claim in an unreadable PDF, lobby-entry house
+      16th vs late 17th century). Reviewed here: the canal from the Roman Foss Dyke (c. AD 120, no consensus), the
+      grammar school ongoing (the 2017 Sevenoaks annexe the first new one in decades, not the last).
 - [ ] BT2 Data: the curated `lineage*.json` files (types, links with kind and confidence, citations and quotes as
       the evidence file), checked by script; every catalogue record and place kind mapped to a type (the categories
       and Wikidata classes as a start), so each type shows counts, a map and the dated examples.

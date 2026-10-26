@@ -9,8 +9,11 @@
    "domain": "Commercial",
    "fish": null,
    "period": {
-    "text": "with the Roman roads, from the 1st century AD"
+    "text": "with the Roman roads, from the conquest of AD 43 until Roman rule ended about 410",
+    "from": 43,
+    "to": 410
    },
+   "plan": "a single room open to the street, often on the ground floor of a house",
    "sources": [
     {
      "title": "Pub",
@@ -18,7 +21,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pub",
      "locator": "section \"Origins\"",
-     "quote": "it was with the construction of the Roman road network that the first pubs, called tabernae (the origin of modern English \"tavern\"), began to appear."
+     "quote": "it was with the construction of the Roman road network that the first pubs, called tabernae (the origin of modern English \"tavern\"), began to appear.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Britain",
+     "locator": "lead",
+     "quote": "The occupation lasted from 43 AD to 410 AD.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tabernae",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tabernae",
+     "locator": "lead",
+     "quote": "tabernae were often incorporated into domestic dwellings on the ground level flanking the fauces, the main entrance to a home, but with one side open to the street.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -29,9 +57,15 @@
    "domain": "Commercial",
    "fish": "71558",
    "period": {
-    "text": "first attested in the 10th century",
-    "from": 900
+    "text": "first attested in the 10th century; beerhouses multiplied after the Beerhouse Act 1830, until the Wine and Beerhouse Act 1869 brought back their licensing; after that the purpose-built pub took their place. The end year is the law's, not a last building",
+    "from": 900,
+    "flourish": [
+     1830,
+     1869
+    ],
+    "to": 1869
    },
+   "plan": "an ordinary house, hardly set apart from private houses",
    "sources": [
     {
      "title": "Pub",
@@ -39,7 +73,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pub",
      "locator": "section \"Origins\"",
-     "quote": "the Anglo-Saxons established alehouses that may have grown out of domestic dwellings, first attested in the 10th century."
+     "quote": "the Anglo-Saxons established alehouses that may have grown out of domestic dwellings, first attested in the 10th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Licensing laws\"",
+     "quote": "Within eight years 46,000 new beerhouses opened and, because operating costs were so low, huge profits were often made.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Beerhouse Act 1830",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beerhouse_Act_1830",
+     "locator": "section \"Subsequent developments\"",
+     "quote": "One factor in the act was the dismantling of provisions for detailed recording of licences, which were restored by subsequent regulatory legislation: the Wine and Beerhouse Act 1869",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Advent of the modern pub\"",
+     "quote": "Before this time alehouses were largely indistinguishable from private houses",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -50,9 +120,15 @@
    "domain": "Commercial",
    "fish": "68800",
    "period": {
-    "text": "as it is today, from the early 19th century",
-    "from": 1800
+    "text": "as it is today, from the early 19th century; the peak of pub building was the late 19th century (c. 1870-1900); still opened today, as micropubs since 2005",
+    "from": 1800,
+    "flourish": [
+     1870,
+     1900
+    ],
+    "ongoing": true
    },
+   "plan": "a public bar with a long serving counter and smaller, more private rooms served from it",
    "sources": [
     {
      "title": "Pub",
@@ -60,7 +136,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pub",
      "locator": "lead",
-     "quote": "it was not until the early 19th century that pubs, as they are today, first began to appear."
+     "quote": "it was not until the early 19th century that pubs, as they are today, first began to appear.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gin palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_palace",
+     "locator": "section \"Architecture\"",
+     "quote": "The term has survived for any pub in the late 19th-century style; as this was the peak of pub building in Britain the style has become associated with the pub, even though none of the original gin palaces survives.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Micropubs\"",
+     "quote": "In Britain, a micropub is a very small, modern, one-room pub founded on principles set up by Martyn Hillier, the creator of the first micropub, the Butchers Arms in Herne, Kent, in 2005.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Counter\"",
+     "quote": "When purpose built Victorian pubs were built after the Beerhouse Act 1830, the main room was the public room with a large serving bar copied from the gin houses",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Pub",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pub",
+     "locator": "section \"Counter\"",
+     "quote": "The other, more private, rooms had no serving bar\u2014they had the beer brought to them from the public bar.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -71,8 +194,9 @@
    "domain": "Commercial",
    "fish": "92120",
    "period": {
-    "text": "the earliest in the 1830s (Thompson and Fearon's, Holborn)",
-    "from": 1830
+    "text": "the earliest in the 1830s (Thompson and Fearon's, Holborn); the name and style passed to the ornate pubs of the late 19th century (taken here as c. 1900), and none of the original gin palaces survives",
+    "from": 1830,
+    "to": 1900
    },
    "sources": [
     {
@@ -81,7 +205,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Gin_palace",
      "locator": "section \"Architecture\"",
-     "quote": "The earliest 'Gin Palaces' emerged in the 1830s, Thompson and Fearon's in Holborn and Weller's in Old Street, London."
+     "quote": "The earliest 'Gin Palaces' emerged in the 1830s, Thompson and Fearon's in Holborn and Weller's in Old Street, London.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gin palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_palace",
+     "locator": "lead",
+     "quote": "A gin palace (also gin house and gin shop) is an English name originally for a lavish bar selling gin, later transferred by association to late Victorian pubs designed in a similar style.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gin palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gin_palace",
+     "locator": "section \"Architecture\"",
+     "quote": "The term has survived for any pub in the late 19th-century style; as this was the peak of pub building in Britain the style has become associated with the pub, even though none of the original gin palaces survives.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -90,7 +239,71 @@
    "name": "Inn",
    "family": "Inns and public houses",
    "domain": "Commercial",
-   "fish": "68793"
+   "fish": "68793",
+   "period": {
+    "text": "by the 14th century in England; the inn's work is now split between hotels and pubs, but budget hotels still take the name",
+    "from": 1300,
+    "ongoing": true
+   },
+   "structure": "two-storey timber frame with steep shingle roofs (14th century)",
+   "plan": "rooms round an inner court, with kitchen and parlour at the front and stables at the back",
+   "sources": [
+    {
+     "title": "Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn",
+     "locator": "section \"History\"",
+     "quote": "In 14th-century England, the courtyards of the inns were often not paved or cobbled but rather flattened earth or mud.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn",
+     "locator": "section \"History\"",
+     "quote": "These inns would be made of two-story timber framed buildings with steep shingle roofs.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"History\"",
+     "quote": "A typical layout of an inn featured an inner court with bedrooms on the two sides, with the kitchen and parlour at the front and the stables at the back.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn",
+     "locator": "section \"History\"",
+     "quote": "The original functions of an inn are now usually split among separate establishments.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inn",
+     "locator": "section \"Usage of the term\"",
+     "quote": "Examples are Comfort Inn, Days Inn, Holiday Inn, Knights Inn, and Premier Inn.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "coaching-inn",
@@ -99,10 +312,11 @@
    "domain": "Commercial",
    "fish": "68794",
    "period": {
-    "text": "about 200 years from the mid-17th century, until the railways",
+    "text": "about 200 years from the mid-17th century, when the stagecoach routes were set up, until the railways took the traffic in the 1830s and 1840s",
     "from": 1650,
     "to": 1850
    },
+   "plan": "an inn yard with stables, the bedrooms reached from galleries above",
    "sources": [
     {
      "title": "Hotel",
@@ -110,7 +324,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Hotel",
      "locator": "section \"History\"",
-     "quote": "For a period of about 200 years from the mid-17th century, coaching inns served as a place for lodging for coach travellers"
+     "quote": "For a period of about 200 years from the mid-17th century, coaching inns served as a place for lodging for coach travellers",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stagecoach",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stagecoach",
+     "locator": "section \"Origins\"",
+     "quote": "By the mid 17th century, a basic stagecoach infrastructure had been put in place.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stagecoach",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stagecoach",
+     "locator": "section \"Decline and evolution\"",
+     "quote": "By the early 1840s most London-based coaches had been withdrawn from service.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Coaching inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coaching_inn",
+     "locator": "section \"Historic coaching inns\"",
+     "quote": "The only remaining one with the galleries to the bedrooms above is The George Inn, Southwark, owned by the National Trust and still run as a pub.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Coaching inn (FISH Thesaurus of Monument Types, concept 68794)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68794.html",
+     "locator": "scope note",
+     "quote": "A public house offering lodgings to the passengers, and stabling for the horses of stage coaches.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -119,7 +380,47 @@
    "name": "Drovers' inn",
    "family": "Inns and public houses",
    "domain": "Commercial",
-   "fish": "91798"
+   "fish": "91798",
+   "period": {
+    "text": "the Drovers Inn at Inverarnan, established 1705, is the earliest dated example found; droving, and with it the need for these inns, ended about 1900 (last sheep drove across Wales 1900, in Scotland 1906)",
+    "from": 1705,
+    "to": 1900
+   },
+   "sources": [
+    {
+     "title": "Inverarnan",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Inverarnan",
+     "locator": "section \"The Drovers Inn\"",
+     "quote": "The Drovers Inn is a hotel in Inverarnan. Established in 1705, it is known for being one of Scotland's most haunted pubs.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Drovers' road",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Drove_road",
+     "locator": "section \"Drover's House\"",
+     "quote": "Whilst drovers often slept in the open, there were pubs that catered for the needs of drovers and their stock.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Drovers' road",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Drove_road",
+     "locator": "section \"Decline of droving\"",
+     "quote": "The last recorded large-scale cattle drove across Wales was in 1870, and of sheep in 1900, although droving was briefly resumed during the rail strike of 1912.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "hotel",
@@ -128,8 +429,13 @@
    "domain": "Commercial",
    "fish": "68792",
    "period": {
-    "text": "the Royal Clarence, Exeter, 1768, among the first; the idea caught on in the early 19th century",
-    "from": 1768
+    "text": "the Royal Clarence, Exeter, 1768, among the first; the idea caught on in the early 19th century and hotels spread through the 19th; still built",
+    "from": 1768,
+    "flourish": [
+     1800,
+     1900
+    ],
+    "ongoing": true
    },
    "sources": [
     {
@@ -138,7 +444,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Hotel",
      "locator": "section \"History\"",
-     "quote": "One of the first hotels in a modern sense, the Royal Clarence, opened in Exeter in 1768, although the idea only really caught on in the early-19th century."
+     "quote": "One of the first hotels in a modern sense, the Royal Clarence, opened in Exeter in 1768, although the idea only really caught on in the early-19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hotel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hotel",
+     "locator": "section \"History\"",
+     "quote": "Hotels proliferated throughout Western Europe and North America in the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Premier Inn",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Premier_Inn",
+     "locator": "section \"History\"",
+     "quote": "In July 2015, the 700th Premier Inn was opened in Kingston-upon-Thames, London.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -149,8 +480,9 @@
    "domain": "Commercial",
    "fish": "71364",
    "period": {
-    "text": "the first recorded purpose-built, the Great Western Hotel at Reading, 1844",
-    "from": 1844
+    "text": "hotels at Euston and Curzon Street opened with the trunk lines in 1839; the Great Western Hotel at Reading (1844) is the first recorded purpose-built one; 93 railway hotels by 1913; the LMS's Queens Hotel, Leeds (1937) is the latest found, not shown to be the last",
+    "from": 1839,
+    "to": 1937
    },
    "sources": [
     {
@@ -159,7 +491,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Hotel",
      "locator": "section \"Railway hotels\"",
-     "quote": "The first recorded purpose-built railway hotel was the Great Western Hotel, which opened adjacent to Reading railway station in 1844"
+     "quote": "The first recorded purpose-built railway hotel was the Great Western Hotel, which opened adjacent to Reading railway station in 1844",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "British Transport Hotels",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/British_Transport_Hotels",
+     "locator": "section \"Origins of the company\"",
+     "quote": "Britain's private railway companies pioneered the concept of the railway hotel, initially at locations such as London Euston and Birmingham Curzon Street where hotels were opened at the start of trunk railway operation in 1839.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "British Transport Hotels",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/British_Transport_Hotels",
+     "locator": "section \"Origins of the company\"",
+     "quote": "Most of the railway companies followed suit, and by 1913 there were 93 railway owned hotels.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Queens Hotel, Leeds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queens_Hotel,_Leeds",
+     "locator": "section \"History\"",
+     "quote": "The Midland Railway was taken over by the London, Midland and Scottish Railway and in 1935 it was decided to demolish the old building and build a grand new one.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Queens Hotel, Leeds",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queens_Hotel,_Leeds",
+     "locator": "section \"History\"",
+     "quote": "This was officially opened on 12 November  1937, by the Princess Royal and Lord Harewood.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -170,8 +549,13 @@
    "domain": "Commercial",
    "fish": "68784",
    "period": {
-    "text": "the first in England at Oxford, 1650s",
-    "from": 1650
+    "text": "the first in England at Oxford, 1650s (Jacob's claim is questioned); popular from the mid-1660s, London had more than any western city but Constantinople by the early 18th century; almost gone by the end of the 18th century",
+    "from": 1650,
+    "flourish": [
+     1665,
+     1720
+    ],
+    "to": 1800
    },
    "sources": [
     {
@@ -180,7 +564,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
      "locator": "section \"Early Oxford coffeehouses\"",
-     "quote": "Thus the first English coffeehouse was established in 1650 at the Angel coaching inn in Oxford by a Jewish entrepreneur named Jacob."
+     "quote": "Thus the first English coffeehouse was established in 1650 at the Angel coaching inn in Oxford by a Jewish entrepreneur named Jacob.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "English coffeehouses in the 17th and 18th centuries",
@@ -188,7 +575,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
      "locator": "section \"Early Oxford coffeehouses\"",
-     "quote": "Although most works on the early English coffeehouses say that Jacob's in Oxford was the first, this claim has been questioned."
+     "quote": "Although most works on the early English coffeehouses say that Jacob's in Oxford was the first, this claim has been questioned.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English coffeehouses in the 17th and 18th centuries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
+     "locator": "section \"Early London coffeehouses\"",
+     "quote": "The London coffeehouses do not seem to have been popular until the mid-1660s or later.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English coffeehouses in the 17th and 18th centuries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
+     "locator": "section \"Early London coffeehouses\"",
+     "quote": "By the early 18th century, London boasted more coffeehouses than any other city in the western world, except for Constantinople.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "English coffeehouses in the 17th and 18th centuries",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/English_coffeehouses_in_the_17th_and_18th_centuries",
+     "locator": "section \"Decline\"",
+     "quote": "Towards the end of the 18th century, coffeehouses almost completely disappeared from the popular social scene in England.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -197,7 +620,74 @@
    "name": "Market cross (mercat cross)",
    "family": "Markets and exchanges",
    "domain": "Commercial",
-   "fish": "69990"
+   "fish": "69990",
+   "period": {
+    "text": "the earliest documentary reference in Scotland is under William the Lion (1165-1214); many Scottish crosses date from the 16th and 17th centuries; replacements and replicas into the 20th century (Glasgow, 1921)",
+    "from": 1165,
+    "flourish": [
+     1500,
+     1700
+    ],
+    "to": 1921
+   },
+   "structure": "a stone shaft, often on a stepped octagonal base; the earliest probably wooden pillars",
+   "sources": [
+    {
+     "title": "Mercat cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mercat_cross",
+     "locator": "section \"History\"",
+     "quote": "The earliest documentary reference occurs in the reign of William the Lion (1165\u20131214), when it was decreed that \"all merchandises sal be presentit at the mercat and mercat croce of burghis\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mercat cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mercat_cross",
+     "locator": "lead",
+     "quote": "There are around 126 known examples of mercat crosses in Scotland, with many examples dating from the sixteenth and seventeenth centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mercat cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mercat_cross",
+     "locator": "section \"Descriptions\"",
+     "quote": "A plainer understructure faintly echoing the design was adopted for Glasgow's cross when a replacement was erected on or near the site of the original in 1921",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Mercat cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mercat_cross",
+     "locator": "section \"History\"",
+     "quote": "They are thought to have been originally pillars of wood, possibly placed on stone bases, changing to stone pillars in later centuries.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Mercat cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mercat_cross",
+     "locator": "section \"Descriptions\"",
+     "quote": "Most crosses, however, stand on stepped, often octagonal stone bases and are of an average height of between 9 and 13 feet.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "buttercross",
@@ -205,6 +695,12 @@
    "family": "Markets and exchanges",
    "domain": "Commercial",
    "fish": null,
+   "period": {
+    "text": "from medieval times: Winchester's City Cross, also called the Buttercross, is dated to the 15th century; later buttercrosses are market halls on an open arcade, as at Ludlow (1746) and Brigg (opened 1819), the latest found",
+    "from": 1400,
+    "to": 1819
+   },
+   "structure": "a cross on circular stone steps, often roofed later; later ones a hall over an open arcade",
    "note": "FISH files the buttercross under market cross.",
    "sources": [
     {
@@ -213,7 +709,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Buttercross",
      "locator": "lead",
-     "quote": "A buttercross, butter cross or butter market cross is a type of market cross associated with English market towns and dating from medieval times."
+     "quote": "A buttercross, butter cross or butter market cross is a type of market cross associated with English market towns and dating from medieval times.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Winchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Winchester",
+     "locator": "section \"Modern period\"",
+     "quote": "The City Cross (also known as the Buttercross) has been dated to the 15th century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ludlow Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ludlow_Buttercross",
+     "locator": "lead",
+     "quote": "The Buttercross in Ludlow, Shropshire, England, is a market hall dating from 1746.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Buttercross, Brigg",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buttercross,_Brigg",
+     "locator": "section \"History\"",
+     "quote": "The building was designed in the neoclassical style, built in buff brick at a cost of circa \u00a31,000 and was officially opened with a celebratory ball on 28 June 1819.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buttercross",
+     "locator": "lead",
+     "quote": "The fresh produce was laid out and displayed on the circular stepped bases of the cross.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Buttercross",
+     "locator": "lead",
+     "quote": "Their design varies from place to place, but they are often covered by some type of roof to offer shelter.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Ludlow Buttercross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ludlow_Buttercross",
+     "locator": "lead",
+     "quote": "Beneath the hall was an open arcade, now partly enclosed, where stalls selling produce could be set up.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -224,9 +789,81 @@
    "domain": "Commercial",
    "fish": "71722",
    "period": {
-    "text": "pre-19th century (FISH)",
-    "to": 1800
-   }
+    "text": "pre-19th century (FISH); Ledbury's, completed 1617, is an early dated example; built until the mid-19th century, when towns began to split markets, courts and halls into separate buildings",
+    "from": 1617,
+    "to": 1850
+   },
+   "structure": "an upper floor on posts or arches over an open ground floor (Ledbury: timber frame on 16 oak posts)",
+   "plan": "an open arcade for the market below, rooms for civic use above",
+   "sources": [
+    {
+     "title": "Market house (FISH Thesaurus of Monument Types, concept 71722)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71722.html",
+     "locator": "scope note",
+     "quote": "A market building, pre-19th century, incorporating other function rooms, eg. theatres, courtrooms, schoolrooms.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ledbury Market Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ledbury_Market_Hall",
+     "locator": "section \"History\"",
+     "quote": "The building, which has been attributed to the master mason, John Abel, was designed in the Tudor style using half-timbered construction and was completed in 1617.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Ledbury Market Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ledbury_Market_Hall",
+     "locator": "section \"History\"",
+     "quote": "The first floor, which was jettied out over the pavement, was supported by 16 oak posts and was accessed by a wooden staircase at the north end of the building.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Shrewsbury Market Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shrewsbury_Market_Hall",
+     "locator": "section \"The New Corn Exchange and Market\"",
+     "quote": "Prior to the mid-19th century, many British towns and cities  included market houses, which would serve different functions across multiple floors.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Market house",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Market_house",
+     "locator": "lead",
+     "quote": "A market house or market hall is a covered space historically used as a marketplace to exchange goods and services such as provisions or livestock, sometimes combined with spaces for public or civic functions on the upper floors and often with a jail or lockup in the cellar or basement floor.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Market houses in Northern Ireland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Market_houses_in_Northern_Ireland",
+     "locator": "lead",
+     "quote": "An upper floor was often used as a court house or ballroom.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "market-hall",
@@ -235,16 +872,131 @@
    "domain": "Commercial",
    "fish": "68798",
    "period": {
-    "text": "usually 19th century; earlier at Abingdon, c. 1680 (FISH)",
-    "from": 1680
-   }
+    "text": "usually 19th century; earlier at Abingdon, c. 1680 (FISH); from about 1800 towns brought their markets indoors, with more than 300 market Acts 1801-1880; still built (Camden, 1991)",
+    "from": 1680,
+    "flourish": [
+     1800,
+     1880
+    ],
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Market hall (FISH Thesaurus of Monument Types, concept 68798)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68798.html",
+     "locator": "scope note",
+     "quote": "A purpose built covered market hall, usually 19th century, although earlier examples do exist, eg. that at Abingdon, Oxfordshire c.1680.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "St. John's Market",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_John's_Market",
+     "locator": "section \"Background\"",
+     "quote": "From about 1800, market halls emerged as the 'perfect form' of the marketplace, and town followed town in bringing their markets indoors into roofed buildings supplying amenities such as water, lighting and heating.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "St. John's Market",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_John's_Market",
+     "locator": "section \"Background\"",
+     "quote": "More than 300 Acts of Parliament were passed between 1801 and 1880 allowing nascent local governments to acquire market rights from their manorial holders, and to fund the construction of market facilities.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Camden Market",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Camden_Market",
+     "locator": "section \"Camden Lock Market\"",
+     "quote": "In 1991 a three-storey indoor market hall designed by architect John Dickinson was opened on the site of the first outdoor market.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "cloth-hall",
    "name": "Cloth hall (piece hall)",
    "family": "Markets and exchanges",
    "domain": "Commercial",
-   "fish": "68783"
+   "fish": "68783",
+   "period": {
+    "text": "Blackwell Hall, London, a cloth market from 1397; cloth halls were built into the 18th century, the Yorkshire ones at Wakefield (1710), Leeds (1711, 1756, 1775-6) and Halifax (1779), the latest found",
+    "from": 1397,
+    "to": 1779
+   },
+   "plan": "rooms or stalls round a central open court",
+   "sources": [
+    {
+     "title": "Blackwell Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackwell_Hall",
+     "locator": "section \"History\"",
+     "quote": "In 1395, the City of London Corporation purchased it from the de Bankwell family (from which it derives its name) and it was established as a cloth market under Dick Whittington's first mayoralty in 1397 in order to provide the first place where non-citizen and foreigners could buy and sell cloth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cloth hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cloth_hall",
+     "locator": "lead",
+     "quote": "Cloth halls were built from medieval times into the 18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "1st White Cloth Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/1st_White_Cloth_Hall",
+     "locator": "section \"History\"",
+     "quote": "Originally named The White Cloth Hall, it was opened in 1711 as a response to the building of a covered cloth hall by the merchants of Wakefield in 1710, built in order to entice traders away from Leeds.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Piece Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Piece_Hall",
+     "locator": "section \"History\"",
+     "quote": "It opened on 1 January 1779, with 315 separate rooms arranged around a central open courtyard.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    },
+    {
+     "title": "1st White Cloth Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/1st_White_Cloth_Hall",
+     "locator": "section \"History\"",
+     "quote": "It was 'built upon Pillars and Arches in the form of an Exchange, with a Quadrangular Court within'.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "antwerp-bourse",
@@ -253,6 +1005,12 @@
    "domain": "Commercial",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "opened in Antwerp in 1531 as the first purpose-built commodity exchange; out of use in the 17th century; rebuilt after a fire of 1858 and a stock exchange again from 1872",
+    "from": 1531,
+    "to": 1872
+   },
+   "plan": "an open rectangular court with covered galleries on all four sides",
    "sources": [
     {
      "title": "Royal Exchange, London",
@@ -260,7 +1018,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
      "locator": "section \"History\"",
-     "quote": "its original design was inspired by the Stock Exchange in Antwerp, the world's first purpose-built bourse"
+     "quote": "its original design was inspired by the Stock Exchange in Antwerp, the world's first purpose-built bourse",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Antwerp Bourse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Antwerp_Bourse",
+     "locator": "lead",
+     "quote": "The Stock Exchange, Antwerp or Handelsbeurs (in Dutch) is a building in Antwerp, Belgium, which opened in 1531 as the world's first purpose-built commodity exchange.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Antwerp Bourse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Antwerp_Bourse",
+     "locator": "lead",
+     "quote": "Following a fire in 1858, the building was reconstructed, and from 1872 once again served the purpose of housing a true stock exchange, the Antwerp Stock Exchange.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Antwerp Bourse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Antwerp_Bourse",
+     "locator": "section \"1531\u20131661: Commodity exchange\"",
+     "quote": "The new exchange's building was conceived as a rectangular square with galleries covered on four sides, built on top of a street intersection.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -271,9 +1065,11 @@
    "domain": "Commercial",
    "fish": "68786",
    "period": {
-    "text": "the Royal Exchange, London, opened 1571",
-    "from": 1571
+    "text": "the Royal Exchange, London, opened 1571; Manchester's first exchange 1729; the Manchester Royal Exchange, extended 1914-1931 into the largest trading hall in England, is the latest found (trading there ended 1968)",
+    "from": 1571,
+    "to": 1931
    },
+   "plan": "a four-sided building round a central courtyard where merchants traded",
    "sources": [
     {
      "title": "Royal Exchange, London",
@@ -281,7 +1077,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
      "locator": "section \"History\"",
-     "quote": "The Royal Exchange was officially opened on 23 January 1571 by Queen Elizabeth I"
+     "quote": "The Royal Exchange was officially opened on 23 January 1571 by Queen Elizabeth I",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Exchange, Manchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_Manchester",
+     "locator": "section \"History, 1729 to 1973\"",
+     "quote": "Manchester's first exchange opened in 1729 but closed by the end of the century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Exchange, Manchester",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_Manchester",
+     "locator": "section \"History, 1729 to 1973\"",
+     "quote": "It was extended and modified by Bradshaw Gass & Hope between 1914 and 1931 to form the largest trading hall in England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Exchange, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+     "locator": "section \"Current building\"",
+     "quote": "Tite's design adheres to the original layout\u2013consisting of a four-sided structure surrounding a central courtyard where merchants and tradesmen could do business.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -292,10 +1124,15 @@
    "domain": "Commercial",
    "fish": "68787",
    "period": {
-    "text": "from the earlier 18th century, most after 1846; in decline from the late 19th century",
+    "text": "from the earlier 18th century (London's Mark Lane, 1747, the earliest covered one there); a great many after the repeal of the Corn Laws in 1846; new building had largely stopped by 1880, after which old ones were rebuilt, as late as 1952 at Mark Lane",
     "from": 1700,
-    "to": 1900
+    "flourish": [
+     1846,
+     1880
+    ],
+    "to": 1952
    },
+   "plan": "early ones built round an open quadrangle for trading, roofed over later",
    "sources": [
     {
      "title": "Corn exchange",
@@ -303,7 +1140,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Corn_exchange",
      "locator": "section \"History in England\"",
-     "quote": "Dedicated corn exchanges start appearing in the earlier part of the 18th century, increasing greatly following the repeal of the Corn Laws in 1846."
+     "quote": "Dedicated corn exchanges start appearing in the earlier part of the 18th century, increasing greatly following the repeal of the Corn Laws in 1846.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Corn exchanges in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_exchanges_in_England",
+     "locator": "section \"Early corn exchanges\"",
+     "quote": "In London the earliest covered corn exchange building was the London Corn Exchange built in Mark Lane in 1747.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Corn exchanges in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_exchanges_in_England",
+     "locator": "section \"After the repeal of the Corn Laws\"",
+     "quote": "With the Great Depression of British Agriculture, which occurred from about 1873 to 1893, the building of new corn exchanges had largely ceased by 1880.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Corn exchanges in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_exchanges_in_England",
+     "locator": "section \"After the repeal of the Corn Laws\"",
+     "quote": "The building of new exchanges was limited to re-building earlier exchanges, normally as part of larger market schemes.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Corn exchanges in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_exchanges_in_England",
+     "locator": "section \"City of London\"",
+     "quote": "Its replacement, by Terence Heysham, was opened in 1952 and continued trading until 1987.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Corn exchanges in England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Corn_exchanges_in_England",
+     "locator": "section \"Early corn exchanges\"",
+     "quote": "Many of the early corn exchanges, such as Hadleigh and Winchester, were built round quadrangles where the trading took place, but the central area was roofed over at a later date.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -314,16 +1209,92 @@
    "domain": "Commercial",
    "fish": "68788",
    "period": {
-    "text": "Sweeting's Alley, London, 1773; the London Stock Exchange founded 1801",
-    "from": 1773
-   }
+    "text": "Sweeting's Alley, London, 1773; the London Stock Exchange founded 1801; its last building with a trading floor, the Stock Exchange Tower, opened 1972, and screen trading replaced the floor after Big Bang (1986); the 2004 headquarters at Paternoster Square is offices",
+    "from": 1773,
+    "to": 1972
+   },
+   "sources": [
+    {
+     "title": "London Stock Exchange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Stock_Exchange",
+     "locator": "section \"Royal Exchange\"",
+     "quote": "In 1773, Jonathan, together with 150 other brokers, formed a club and opened a new and more formal \"Stock Exchange\" in Sweeting's Alley.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Stock Exchange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Stock_Exchange",
+     "locator": "section \"Post-war\"",
+     "quote": "Queen Elizabeth II opened the building on 8 November 1972.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "London Stock Exchange",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/London_Stock_Exchange",
+     "locator": "section \"21st century\"",
+     "quote": "The old Stock Exchange Tower became largely redundant with Big Bang, which deregulated many of the LSE's activities: computerised systems and dealing rooms replaced face-to-face trading.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "shop",
    "name": "Shop",
    "family": "Shops and banks",
    "domain": "Commercial",
-   "fish": "68803"
+   "fish": "68803",
+   "period": {
+    "text": "a few permanent shops in the larger towns by the 13th century; by the 17th century shops were taking over from markets and fairs; still built, now mostly in retail parks out of town",
+    "from": 1200,
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Retail",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Retail",
+     "locator": "section \"History\"",
+     "quote": "In the more populous cities, a small number of shops were beginning to emerge by the 13th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Retail",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Retail",
+     "locator": "section \"History\"",
+     "quote": "By the 17th century, permanent shops with more regular trading hours were beginning to supplant markets and fairs as the main retail outlet.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shopping mall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_mall",
+     "locator": "section \"U.K. and Ireland\"",
+     "quote": "Out-of-town shopping developments in the UK are now focused on retail parks, which consist of groups of warehouse style shops with individual entrances from outdoors.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "department-store",
@@ -332,8 +1303,13 @@
    "domain": "Commercial",
    "fish": "71698",
    "period": {
-    "text": "Harding, Howell & Co., Pall Mall, 1796, the first reliably dated",
-    "from": 1796
+    "text": "Harding, Howell & Co., Pall Mall, 1796, the first reliably dated (Bennett's of Derby, 1734, may be earlier); most major high streets had one by the mid-to-late 19th century; still built (Rushden Lakes, 2017)",
+    "from": 1796,
+    "flourish": [
+     1850,
+     1900
+    ],
+    "ongoing": true
    },
    "sources": [
     {
@@ -342,7 +1318,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Department_store",
      "locator": "section \"Origins in England, 1700s\"",
-     "quote": "However, the first reliably dated department store to be established, was Harding, Howell & Co., which opened in 1796 on Pall Mall, London."
+     "quote": "However, the first reliably dated department store to be established, was Harding, Howell & Co., which opened in 1796 on Pall Mall, London.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Department store",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Department_store",
+     "locator": "section \"Origins in England, 1700s\"",
+     "quote": "By the mid-to-late nineteenth century, most major High Streets in British cities featured flourishing department stores.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "House of Fraser",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/House_of_Fraser",
+     "locator": "section \"2014\u20132018: Sanpower Group ownership\"",
+     "quote": "In 2017, a new department store opened at the Rushden Lakes development in Rushden, Northamptonshire.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -353,9 +1354,12 @@
    "domain": "Commercial",
    "fish": "68804",
    "period": {
-    "text": "late 18th / early 19th century (FISH); Oxford's Covered Market 1774, Burlington Arcade 1819",
-    "from": 1774
+    "text": "late 18th / early 19th century (FISH); Oxford's Covered Market 1774, Burlington Arcade 1819; Lemoine's 'arcade era' in Europe ran 1786-1935, after which the name passed to shopping centres without the form",
+    "from": 1774,
+    "to": 1935
    },
+   "structure": "usually a glass roof over the shopping street",
+   "plan": "a covered shopping street lined with shops, sometimes with galleries",
    "sources": [
     {
      "title": "Shopping arcade",
@@ -363,7 +1367,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
      "locator": "section \"Shopping arcades\"",
-     "quote": "One of the earliest British examples of a shopping arcade, the Covered Market, Oxford, England was officially opened on 1 November 1774 and is still active today."
+     "quote": "One of the earliest British examples of a shopping arcade, the Covered Market, Oxford, England was officially opened on 1 November 1774 and is still active today.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shopping arcade (FISH Thesaurus of Monument Types, concept 68804)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68804.html",
+     "locator": "scope note",
+     "quote": "A covered shopping street, sometimes with galleries, dating from the late 18th/early 19th century.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    },
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "The French architect, Bertrand Lemoine, described the period, 1786 to 1935, as l\u2019\u00c8re des passages couverts (the Arcade Era).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "Shopping arcades were the precursor to the modern shopping mall, and the word \"arcade\" is now often used for malls which do not use the architectural form at all.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "Typically, the roof was constructed of glass to allow for natural light and to reduce the need for candles or electric lighting.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -374,6 +1426,17 @@
    "domain": "Commercial",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "the Palais-Royal (1784) is generally taken as the first grand arcade; the Paris passages were built mostly in the first half of the 19th century, and many were lost in Haussmann's rebuilding; Lemoine's 'arcade era' ends in 1935",
+    "from": 1784,
+    "flourish": [
+     1800,
+     1850
+    ],
+    "to": 1935
+   },
+   "structure": "glass roofs over a pedestrian passage, lit by gas at night",
+   "plan": "a passage linking two streets, small shops on the ground floor and flats above",
    "sources": [
     {
      "title": "Shopping arcade",
@@ -381,7 +1444,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
      "locator": "section \"Shopping arcades\"",
-     "quote": "The Palais-Royal, which opened in 1784 and became one of the most important marketplaces in Paris, is generally regarded as the earliest example of the grand shopping arcades."
+     "quote": "The Palais-Royal, which opened in 1784 and became one of the most important marketplaces in Paris, is generally regarded as the earliest example of the grand shopping arcades.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Covered passages of Paris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passages_couverts_de_Paris",
+     "locator": "lead",
+     "quote": "The covered passages of Paris (French: Passages couverts de Paris) are an early form of shopping arcade built in Paris, France, primarily during the first half of the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Shopping arcade",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shopping_arcade",
+     "locator": "section \"Shopping arcades\"",
+     "quote": "The French architect, Bertrand Lemoine, described the period, 1786 to 1935, as l\u2019\u00c8re des passages couverts (the Arcade Era).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Covered passages of Paris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passages_couverts_de_Paris",
+     "locator": "lead",
+     "quote": "The common characteristics of the covered passages is that they link at least two streets, have glass ceilings and are pedestrianised, artificially illuminated at night (initially with gas lamps), privately owned, highly ornamented and decorated, and lined with small shops on the ground floor.",
+     "about": [
+      "structure",
+      "plan"
+     ]
+    },
+    {
+     "title": "Covered passages of Paris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Passages_couverts_de_Paris",
+     "locator": "lead",
+     "quote": "The passages\u2019 upper floors usually had apartments.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -392,8 +1503,9 @@
    "domain": "Commercial",
    "fish": "91127",
    "period": {
-    "text": "goldsmith bankers in London from the 1630s",
-    "from": 1630
+    "text": "goldsmith bankers in London from the 1630s, working from their shops; the Bank of England moved into its first purpose-built premises in Threadneedle Street in 1734; still built (Metro Bank, the first new high-street bank in over 150 years, opened its first branch in 2010)",
+    "from": 1630,
+    "ongoing": true
    },
    "sources": [
     {
@@ -402,7 +1514,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Goldsmith_banker",
      "locator": "section \"History\"",
-     "quote": "exchanging goldsmiths, who dealt in coinage, started to become recognised as carrying out a different activity from a working goldsmith in the 1630s."
+     "quote": "exchanging goldsmiths, who dealt in coinage, started to become recognised as carrying out a different activity from a working goldsmith in the 1630s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bank of England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_of_England",
+     "locator": "section \"Threadneedle Street\"",
+     "quote": "The newly built premises, designed by George Sampson, occupied a narrow plot (around 80 feet (24 m) wide) extending north from Threadneedle Street.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bank of England",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bank_of_England",
+     "locator": "section \"Threadneedle Street\"",
+     "quote": "The Bank of England moved to its current location, on the site of Sir John Houblon's house and garden in Threadneedle Street (close by the church of St Christopher le Stocks), in 1734.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Metro Bank (United Kingdom)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Metro_Bank_(United_Kingdom)",
+     "locator": "section \"History\"",
+     "quote": "Its first branch opened on 29 July 2010 in Holborn, central London.",
+     "about": [
+      "period"
+     ]
     }
    ]
   }

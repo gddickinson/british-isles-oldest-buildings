@@ -1,10 +1,12 @@
-"""Building types BT1b, BT1c, BT1c3a: a family tree of building types, with sourced links between types.
+"""Building types BT1b, BT1c, BT1c3a, BT1c3b: a family tree of building types, with sourced links between types.
 
 Curated input `data/curated/building_types/lineage*.json` (lineage.json: houses and defence; lineage_religious.json,
 lineage_agricultural.json, lineage_commercial.json, lineage_industrial.json, lineage_transport.json, lineage_civic.json,
 lineage_education.json, lineage_health.json, lineage_recreation.json: one or two domains each; read together, links may cross files):
-    types: [{id, name, family, domain, fish (FISH concept id or null), abroad?, period? {text, from?, to?},
-             note?, sources?}]
+    types: [{id, name, family, domain, fish (FISH concept id or null), abroad?,
+             period {text, from (first known; BC negative), flourish? [from, to], to (last built) | ongoing: true},
+             structure? (structural system), plan? (plan form), note?, sources?}]
+    A type's sources say what they support: about ["period", "structure", "plan"] (none: the type itself).
     links: [{id "from>to", from, to, kind, confidence, claim, sources, views? (disputed), region?}]
     Sources as in the evidence file: {title, author, kind, url, locator, quote}.
 
@@ -12,11 +14,13 @@ The types' place in the thesaurus comes from bidb.fish_types (FISH Thesaurus of 
 the links ("grew out of", "a form of", "shaped by"...) are not in the thesaurus and each cites its sources.
 
     python -m bidb.building_types              check the file and the FISH ids, print the families and links
+    python -m bidb.building_types --file lineage_x.json [--quotes PATH]   one file only (check written to PATH)
     python -m bidb.building_types --quotes     also fetch every source and look for its quote
                                                (→ data/building_types_check.json)
 """
 import json
 import sys
+from pathlib import Path
 from collections import Counter, defaultdict
 
 from .config import DATA_DIR
@@ -26,6 +30,8 @@ CHECK = DATA_DIR / "building_types_check.json"
 KINDS = ("descent", "variant", "influence", "replacement", "revival", "convergence")
 CONFIDENCE = ("documented", "probable", "disputed")
 SOURCE_KINDS = ("primary", "listing", "secondary", "reference")
+ABOUT = ("period", "structure", "plan")
+THIS_YEAR = 2026
 
 
 def files():
@@ -48,6 +54,8 @@ def load(path=None):
 def _source_problems(where, sources):
     bad = []
     for s in sources:
+        if any(a not in ABOUT for a in s.get("about", [])):
+            bad.append(f"{where}: source about {s.get('about')!r}")
         if s.get("kind") not in SOURCE_KINDS:
             bad.append(f"{where}: source kind {s.get('kind')!r}")
         if not s.get("title") or not s.get("quote") or not (s.get("url") or s.get("locator")):
@@ -116,6 +124,28 @@ def _loops(data):
     return loops
 
 
+def period_problems(data):
+    """BT1c3b: every type has a period of use (first known, last built or still built, in order) backed by a
+    source marked about "period"; a structure or plan form is backed by a source marked about it."""
+    bad = []
+    for t in data["types"]:
+        where, p = f"type {t['id']}", t.get("period") or {}
+        about = {a for s in t.get("sources", []) for a in s.get("about", [])}
+        if not p.get("text") or not isinstance(p.get("from"), int):
+            bad.append(f"{where}: no period text and first year")
+            continue
+        if ("to" in p) == bool(p.get("ongoing")):
+            bad.append(f"{where}: period needs either a last year (to) or ongoing")
+        years = [p["from"], *p.get("flourish", []), *([p["to"]] if "to" in p else [])]
+        if "flourish" in p and len(p["flourish"]) != 2:
+            bad.append(f"{where}: flourish is not [from, to]")
+        if not all(isinstance(y, int) for y in years) or years != sorted(years) or years[-1] > THIS_YEAR:
+            bad.append(f"{where}: period years out of order {years}")
+        bad += [f"{where}: no source about its {k}" for k in ("period", "structure", "plan")
+                if (k == "period" or t.get(k)) and k not in about]
+    return bad
+
+
 def fish_problems(data):
     """FISH ids that are not concepts of the thesaurus (needs the cached thesaurus)."""
     from . import fish_types
@@ -151,17 +181,26 @@ def summary(data):
     lines.append("Links")
     for link in data["links"]:
         where = f" [{link['region']}]" if link.get("region") else ""
-        lines.append(f"  {names[link['from']]} → {names[link['to']]}: {link['kind']}, {link['confidence']}{where}")
+        lines.append(f"  {names.get(link['from'], link['from'])} → {names.get(link['to'], link['to'])}: "
+                     f"{link['kind']}, {link['confidence']}{where}")      # --file: ends in other files by id
     return lines
+
+
+def _arg(name):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv[:-1] else None
 
 
 def main():
     from .evidence import check
-    data = load()
-    bad = validate(data) + fish_problems(data)
+    one = _arg("--file")
+    data = load(PATH.parent / one) if one else load()
+    bad = (validate(data) if not one else [b for b in validate(data) if "unknown type" not in b
+                                          and "not in any link" not in b]) + fish_problems(data)
+    bad += period_problems(data)
     print("\n".join(bad or summary(data)))
     if not bad and "--quotes" in sys.argv:
-        check(claims=claims(data), path=CHECK)
+        out = _arg("--quotes")
+        check(claims=claims(data), path=CHECK if not out or out.startswith("--") else Path(out))
     sys.exit(1 if bad else 0)
 
 

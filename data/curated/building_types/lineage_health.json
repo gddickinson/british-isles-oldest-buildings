@@ -9,10 +9,12 @@
    "domain": "Health and welfare",
    "fish": "68716",
    "period": {
-    "text": "from before the Norman Conquest; St Bartholomew's, London, founded 1123",
-    "from": 1123
+    "text": "from before the Norman Conquest; St Bartholomew's, London, founded 1123; in England the church ceased to support hospitals at the Dissolution (1540), while in Scotland hospitals, bedehouses and maisons Dieu were built from c. 1144 to c. 1650",
+    "from": 1123,
+    "to": 1540
    },
    "note": "FISH has no term of its own for the medieval hospital; HOSPITAL is its general term. A medieval hospital was a house of hospitality for the poor, travellers and the sick, not only a place of treatment.",
+   "plan": "a large hall with beds along the walls, joined to a chapel and sometimes a kitchen; courtyard plans became more common in the later Middle Ages",
    "sources": [
     {
      "title": "Almshouse",
@@ -20,7 +22,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Almshouse",
      "locator": "section \"Origins and development\"",
-     "quote": "In the medieval period, hospitals were places of hospitality, providing shelter and basic care rather than medical treatment alone."
+     "quote": "In the medieval period, hospitals were places of hospitality, providing shelter and basic care rather than medical treatment alone.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Almshouse",
@@ -28,7 +33,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Almshouse",
      "locator": "section \"Origins and development\"",
-     "quote": "In England, some of the earliest recorded hospitals date from before the Norman Conquest."
+     "quote": "In England, some of the earliest recorded hospitals date from before the Norman Conquest.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of hospitals",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_hospitals",
+     "locator": "section \"Early modern Europe\"",
+     "quote": "After the dissolution of the monasteries in 1540 by King Henry VIII the church abruptly ceased to be the supporter of hospitals, and only by direct petition from the citizens of London, were the hospitals St Bartholomew's, St Thomas's and St Mary of Bethlehem's (Bedlam) endowed directly by the crown.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hospitals in medieval Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hospitals_in_medieval_Scotland",
+     "locator": "lead",
+     "quote": "From c. 1144 to c. 1650 many hospitals, bedehouses and maisons Dieu were built in Scotland.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Medieval layouts\"",
+     "quote": "Almshouses developed from monastic infirmaries, typically arranged as large halls with bed spaces along the walls and were connected to a chapel and, in some cases, a kitchen.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Medieval layouts\"",
+     "quote": "From the later medieval period, courtyard designs became more common, with individual living spaces arranged around a central courtyard, often entered through a gate or archway, and with a residence for the master incorporated into the gatehouse.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -37,7 +89,74 @@
    "name": "Leper hospital (lazar house)",
    "family": "Hospitals",
    "domain": "Health and welfare",
-   "fish": "68717"
+   "fish": "68717",
+   "period": {
+    "text": "Harbledown, founded by Lanfranc c. 1085, the first recorded; most founded in England between 1100 and 1250; no source here dates the last foundation: as leprosy declined some became almshouses, and it was nearly gone from Europe by 1700",
+    "from": 1085,
+    "flourish": [
+     1100,
+     1250
+    ],
+    "to": 1700
+   },
+   "plan": "a church with separate shelters for the lepers",
+   "sources": [
+    {
+     "title": "Harbledown",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Harbledown",
+     "locator": "section \"History and churches\"",
+     "quote": "The leper's hospital was founded in 1085 by Archbishop Lanfranc; \"the hospital and well can still be seen\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of leprosy",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_leprosy",
+     "locator": "section \"Asylums\"",
+     "quote": "The first recorded leper colony was in Harbledown, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of leprosy",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_leprosy",
+     "locator": "section \"Asylums\"",
+     "quote": "The expansion of asylums in England between 1100 and 1250 was not necessarily in response to a major epidemic of leprosy.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Leper colony",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leper_colony",
+     "locator": "lead",
+     "quote": "Recent research has shown M. leprae has maintained a similarly virulent genome over at least the last thousand years, leaving it unclear which precise factors led to leprosy's near elimination in Europe by 1700.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "FISH Thesaurus of Monument Types: Leper Hospital",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/68717.html",
+     "locator": "scope note",
+     "quote": "A medieval hospital for lepers, usually consisting of a church and individual shelters for the lepers.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "voluntary-hospital",
@@ -46,8 +165,9 @@
    "domain": "Health and welfare",
    "fish": "92112",
    "period": {
-    "text": "from 1718 (the French Hospital, Finsbury; Westminster Hospital 1719, Guy's 1724)",
-    "from": 1718
+    "text": "from 1718 (the French Hospital, Finsbury; Westminster Hospital 1719, Guy's 1724); St Mary's (1851) the last of London's six great voluntary hospitals; taken over by the National Health Service in 1948",
+    "from": 1718,
+    "to": 1948
    },
    "note": "In FISH 'voluntary hospital' is a non-preferred term of GENERAL HOSPITAL; SUBSCRIPTION HOSPITAL is a separate term.",
    "sources": [
@@ -57,7 +177,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Cottage_hospital",
      "locator": "section \"Background\"",
-     "quote": "The first voluntary hospital created to provide free care through the philanthropic action of doctors and surgeons for the ill poor was the French Hospital in Finsbury, London, started in 1718 by Huguenot immigrants."
+     "quote": "The first voluntary hospital created to provide free care through the philanthropic action of doctors and surgeons for the ill poor was the French Hospital in Finsbury, London, started in 1718 by Huguenot immigrants.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Voluntary hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Voluntary_hospital",
+     "locator": "section \"United Kingdom\"",
+     "quote": "By the middle of the 18th century, there were six in London: St Barts, Guy's, St Thomas', Westminster, St George's, and St Mary's (the last to be founded in England, in 1851).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of hospitals",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_hospitals",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The National Health Service, the principal provider of health care in Britain, was founded in 1948, and took control of nearly all the hospitals.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -68,8 +213,9 @@
    "domain": "Health and welfare",
    "fish": "71527",
    "period": {
-    "text": "common from the 1770s (Edinburgh 1776, London 1779-80)",
-    "from": 1770
+    "text": "the London Dispensary of 1696 the first; common from the 1770s (Edinburgh 1776, London 1779-80); rooms for giving out medicines are still part of hospitals and clinics; no source here dates the end of the charitable dispensary",
+    "from": 1696,
+    "ongoing": true
    },
    "sources": [
     {
@@ -78,7 +224,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/History_of_hospitals",
      "locator": "section \"18th century\"",
-     "quote": "The idea was slow to catch on until the 1770s, when many such organizations began to appear, including the Public Dispensary of Edinburgh (1776), the Metropolitan Dispensary and Charitable Fund (1779) and the Finsbury Dispensary (1780)."
+     "quote": "The idea was slow to catch on until the 1770s, when many such organizations began to appear, including the Public Dispensary of Edinburgh (1776), the Metropolitan Dispensary and Charitable Fund (1779) and the Finsbury Dispensary (1780).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of hospitals",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_hospitals",
+     "locator": "section \"18th century\"",
+     "quote": "The London Dispensary opened its doors in 1696 as the first such clinic in the British Empire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "FISH Thesaurus of Monument Types: Dispensary",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71527.html",
+     "locator": "scope note",
+     "quote": "A building or room for the distribution of medicines, eg. in a hospital or clinic.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -89,9 +260,15 @@
    "domain": "Health and welfare",
    "fish": "91639",
    "period": {
-    "text": "most from 1855 to 1898 (294 founded)",
-    "from": 1855
+    "text": "which came first is argued: Wrington (1818), Piccotts End (1827, called the first), Wellow (1842) or Cranleigh (1859, the usual first); 294 founded 1855-98; still opening in 1940 (Leatherhead); now mostly called community hospitals",
+    "from": 1827,
+    "flourish": [
+     1855,
+     1898
+    ],
+    "to": 1940
    },
+   "plan": "a small rural building with a few beds, at most about 25",
    "sources": [
     {
      "title": "Cottage hospital",
@@ -99,7 +276,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Cottage_hospital",
      "locator": "section \"History\"",
-     "quote": "Between 1855 and 1898, 294 cottage hospitals were established."
+     "quote": "Between 1855 and 1898, 294 cottage hospitals were established.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage_hospital",
+     "locator": "section \"History\"",
+     "quote": "In 1827 Sir Astley Cooper converted some cottages at Piccotts End, close to Hemel Hempstead, into the first cottage hospital providing free medical services.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage_hospital",
+     "locator": "section \"History\"",
+     "quote": "Sapte made a cottage available, rent-free, which after being whitewashed and simply furnished opened after a few weeks as the first cottage hospital.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Leatherhead",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leatherhead",
+     "locator": "section \"Leatherhead in the world wars\"",
+     "quote": "The cottage hospital on Poplar Road opened in May 1940 and by June of that year was treating 78 members of the British Expeditionary Force, who had been evacuated from Dunkirk.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage_hospital",
+     "locator": "lead",
+     "quote": "The term community hospital is now applied to most of these buildings where they are used to deliver healthcare, reflecting the wider range of services that are provided in more modern times.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cottage hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cottage_hospital",
+     "locator": "lead",
+     "quote": "The original concept was a small rural building having several beds.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "FISH Thesaurus of Monument Types: Cottage Hospital",
+     "author": "Historic England",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91639.html",
+     "locator": "scope note",
+     "quote": "Usually a rural hospital with up to 25 beds.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -110,9 +356,11 @@
    "domain": "Health and welfare",
    "fish": "97461",
    "period": {
-    "text": "Haslar first received patients c. 1753; Stonehouse built 1758-65",
-    "from": 1753
+    "text": "ordered in 1744; Haslar first received patients c. 1753, Stonehouse built 1758-65; smaller ones at Yarmouth (1793) and Deal (1800); the new hospital at Chatham of 1905 the latest; the last closed in 2009",
+    "from": 1753,
+    "to": 1905
    },
+   "plan": "detached ward blocks (Stonehouse), foreshadowing the pavilion plan",
    "sources": [
     {
      "title": "Pavilion hospital",
@@ -120,7 +368,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
      "locator": "lead",
-     "quote": "One of the earliest pavilion hospitals in England is the Royal Naval Hospital, Stonehouse, near Plymouth, built from 1758."
+     "quote": "One of the earliest pavilion hospitals in England is the Royal Naval Hospital, Stonehouse, near Plymouth, built from 1758.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Naval Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Naval_Hospital",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Royal Naval Hospital Haslar (Gosport); opened 1753 as the Royal Hospital Haslar, designated as the tri-Service core military hospital in 1996.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Naval Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Naval_Hospital",
+     "locator": "section \"United Kingdom\"",
+     "quote": "Melville Hospital, Chatham: opened as a Royal Marine Infirmary in 1828, became a Royal Naval Hospital in 1885; replaced by a new Royal Naval Hospital in 1905",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Naval Hospital, Stonehouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Naval_Hospital,_Stonehouse",
+     "locator": "section \"Design\"",
+     "quote": "Its pattern of detached wards (arranged so as to maximise ventilation and minimise spread of infection) foreshadowed the 'pavilion' style of hospital building which was popularised by Florence Nightingale a century later.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -131,6 +415,12 @@
    "domain": "Health and welfare",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "built 1846-1853, opened 1854; one hospital, the model of the pavilion plan across Europe",
+    "from": 1846,
+    "to": 1854
+   },
+   "plan": "six buildings round a central courtyard, joined by colonnaded walkways (the double-comb layout)",
    "sources": [
     {
      "title": "Lariboisière Hospital",
@@ -138,7 +428,33 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Lariboisi%C3%A8re_Hospital",
      "locator": "lead",
-     "quote": "It was built from 1846 to 1853 under architect Pierre Gauthier, with six buildings arranged around a central courtyard, connected by colonnaded walkways."
+     "quote": "It was built from 1846 to 1853 under architect Pierre Gauthier, with six buildings arranged around a central courtyard, connected by colonnaded walkways.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    },
+    {
+     "title": "Pavilion hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
+     "locator": "lead",
+     "quote": "This organizational model spread mainly during the 19th century—notably with the construction in Paris of Lariboisière Hospital, opened in 1854—and reached its culmination in Lyon with Hôpital Édouard-Herriot, built by Tony Garnier between 1911 and 1933.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pavilion hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
+     "locator": "section \"Tenon system\"",
+     "quote": "The most notable example of the double-comb type is the Lariboisière Hospital in Paris, inaugurated in 1854.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -149,9 +465,16 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "18th century; widespread in the 19th (the Royal Herbert Hospital, Woolwich, 1865)"
+    "text": "emerged in the 18th century (Stonehouse, from 1758); widespread in the 19th (the Royal Herbert Hospital, Woolwich, 1865); its last great example Lyon's Édouard-Herriot (1911-33); the block hospital took over from the 1930s",
+    "from": 1758,
+    "flourish": [
+     1800,
+     1900
+    ],
+    "to": 1933
    },
    "note": "FISH has PAVILION WARD BLOCK (92870) for the ward blocks but no term for the hospital plan.",
+   "plan": "separate ward pavilions, each joined to a central corridor for daylight and fresh air",
    "sources": [
     {
      "title": "Pavilion hospital",
@@ -159,7 +482,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
      "locator": "lead",
-     "quote": "A pavilion hospital is a functional and spatial organization of hospitals that emerged in the 18th century and became widespread in the 19th century."
+     "quote": "A pavilion hospital is a functional and spatial organization of hospitals that emerged in the 18th century and became widespread in the 19th century.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Royal Herbert Hospital",
@@ -167,7 +493,44 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Royal_Herbert_Hospital",
      "locator": "section \"History\"",
-     "quote": "It utilised a new approach to open planning, and was based on the revolutionary 'pavilion' design whereby each ward was connected to a central corridor to maximise daylight and fresh air intake."
+     "quote": "It utilised a new approach to open planning, and was based on the revolutionary 'pavilion' design whereby each ward was connected to a central corridor to maximise daylight and fresh air intake.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    },
+    {
+     "title": "Pavilion hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
+     "locator": "lead",
+     "quote": "One of the earliest pavilion hospitals in England is the Royal Naval Hospital, Stonehouse, near Plymouth, built from 1758.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pavilion hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
+     "locator": "lead",
+     "quote": "This organizational model spread mainly during the 19th century—notably with the construction in Paris of Lariboisière Hospital, opened in 1854—and reached its culmination in Lyon with Hôpital Édouard-Herriot, built by Tony Garnier between 1911 and 1933.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pavilion hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pavilion_hospital",
+     "locator": "lead",
+     "quote": "From the 1930s onward, a new model, the block hospital, became dominant.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -178,8 +541,13 @@
    "domain": "Health and welfare",
    "fish": "92358",
    "period": {
-    "text": "smallpox hospital 1741; fever hospitals from 1801; common after the notification Acts of 1889 and 1899",
-    "from": 1741
+    "text": "smallpox hospital 1741; fever hospitals from 1801; common after the notification Acts of 1889 and 1899 and the most common sort of hospital by 1914; wound down after the NHS began in 1948, few left by 1968",
+    "from": 1741,
+    "flourish": [
+     1889,
+     1914
+    ],
+    "to": 1948
    },
    "sources": [
     {
@@ -188,7 +556,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Fever_hospital",
      "locator": "section \"England and Wales\"",
-     "quote": "The first hospital specifically for smallpox was the London Smallpox Hospital, founded in 1741."
+     "quote": "The first hospital specifically for smallpox was the London Smallpox Hospital, founded in 1741.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Fever hospital",
@@ -196,7 +567,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Fever_hospital",
      "locator": "section \"England and Wales\"",
-     "quote": "The first specialist hospital for other infectious diseases was the Liverpool Fever Hospital which was founded in 1801."
+     "quote": "The first specialist hospital for other infectious diseases was the Liverpool Fever Hospital which was founded in 1801.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fever hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fever_hospital",
+     "locator": "section \"England and Wales\"",
+     "quote": "As the germ theory of disease and nature of infection became established, more fever hospitals were established so that, by 1914, they were the most common sort of hospital.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Fever hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fever_hospital",
+     "locator": "lead",
+     "quote": "After the introduction of the National Health Service in 1948, the hospitals were wound down so that, by 1968, there were few left.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -207,6 +603,11 @@
    "domain": "Health and welfare",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "opened by Brehmer at Görbersdorf in 1854 in most accounts (1863 in the Sanatorium article); one institution, not a type built again",
+    "from": 1854,
+    "to": 1863
+   },
    "sources": [
     {
      "title": "Hermann Brehmer",
@@ -214,7 +615,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Hermann_Brehmer",
      "locator": "lead",
-     "quote": "a German physician who established the first German sanatorium for the systematic open-air treatment of tuberculosis"
+     "quote": "a German physician who established the first German sanatorium for the systematic open-air treatment of tuberculosis",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sokołowsko",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sokołowsko",
+     "locator": "section \"History\"",
+     "quote": "In 1854 she and Brehmer opened the world's first sanatorium for the treatment of tuberculosis at Görbersdorf.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sanatorium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sanatorium",
+     "locator": "section \"Conception\"",
+     "quote": "In 1863, Hermann Brehmer opened the Brehmersche Heilanstalt für Lungenkranke in Görbersdorf (Sokołowsko), Silesia (now Poland), for the treatment of tuberculosis.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -223,7 +649,47 @@
    "name": "Sanatorium (tuberculosis)",
    "family": "Hospitals",
    "domain": "Health and welfare",
-   "fish": "68721"
+   "fish": "68721",
+   "period": {
+    "text": "Bodington's sanatorium at Sutton Coldfield (1836) or Brehmer's at Görbersdorf (1854) the first, as the accounts differ; common in Europe from the late 19th century; they began to close after streptomycin (1943), and no source here dates the last built",
+    "from": 1836,
+    "to": 1943
+   },
+   "sources": [
+    {
+     "title": "Sanatorium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sanatorium",
+     "locator": "section \"Conception\"",
+     "quote": "The first suggestion of sanatoria in the modern sense was likely made by George Bodington, who opened a sanatorium in Sutton Coldfield in 1836 and later published his essay \"On the Treatment and Cure of Pulmonary Consumption\" in 1840.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sanatorium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sanatorium",
+     "locator": "section \"Conception\"",
+     "quote": "Tuberculosis sanatoria became common throughout Europe from the late-19th century onward.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sanatorium",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sanatorium",
+     "locator": "section \"Discovery of antibiotics and decline\"",
+     "quote": "After 1943, when Albert Schatz, then a graduate student at Rutgers University, discovered streptomycin, an antibiotic and the first cure for tuberculosis, sanatoria began to close.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "workhouse-infirmary",
@@ -231,7 +697,48 @@
    "family": "Hospitals",
    "domain": "Health and welfare",
    "fish": "70976",
-   "note": "FISH INFIRMARY is used for the sick wards of a complex such as a workhouse."
+   "note": "FISH INFIRMARY is used for the sick wards of a complex such as a workhouse.",
+   "period": {
+    "text": "small infirmary blocks in the union workhouses from the 1834 Act; separate infirmaries under their own management after 1867; the workhouse system ended in 1930, when councils could take the infirmaries over as municipal hospitals",
+    "from": 1834,
+    "to": 1930
+   },
+   "plan": "long corridors with separate wards for men, women and children (1840-75); later pavilions",
+   "sources": [
+    {
+     "title": "Workhouse infirmary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse_infirmary",
+     "locator": "section \"1840s–1870\"",
+     "quote": "Most workhouses had a small infirmary block, but nursing was in the hands of the other inmates, most of whom could not read.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Workhouse infirmary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse_infirmary",
+     "locator": "section \"1900–1930\"",
+     "quote": "The workhouse system was abolished in the UK by the same Act on 1 April 1930, but many workhouses, renamed Public Assistance Institutions, continued under the control of local county councils.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Workhouse infirmary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse_infirmary",
+     "locator": "section \"1840s–1870\"",
+     "quote": "These new buildings often had long corridors with separate wards leading off for men, women and children.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "municipal-hospital",
@@ -240,7 +747,7 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "from the Local Government Act 1929; into the NHS in 1948",
+    "text": "from the Local Government Act 1929 (few outside London); into the NHS in 1948",
     "from": 1929,
     "to": 1948
    },
@@ -251,7 +758,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Workhouse",
      "locator": "lead",
-     "quote": "in 1929 legislation was passed to allow local authorities to take over workhouse infirmaries as municipal hospitals"
+     "quote": "in 1929 legislation was passed to allow local authorities to take over workhouse infirmaries as municipal hospitals",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Workhouse infirmary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse_infirmary",
+     "locator": "section \"1900–1930\"",
+     "quote": "The Local Government Act 1929 gave local authorities the power to take over workhouse infirmaries as municipal hospitals, although outside London few did so.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "History of hospitals",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/History_of_hospitals",
+     "locator": "section \"United Kingdom\"",
+     "quote": "The National Health Service, the principal provider of health care in Britain, was founded in 1948, and took control of nearly all the hospitals.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -260,7 +792,85 @@
    "name": "Almshouse (bede-house)",
    "family": "Almshouses",
    "domain": "Health and welfare",
-   "fish": "68709"
+   "fish": "68709",
+   "period": {
+    "text": "St Cross, Winchester (1136), called England's oldest almshouse; the word itself from the 14th century; many new foundations c. 1550-1650; still built, some 700-800 new homes a year in 2021",
+    "from": 1136,
+    "flourish": [
+     1550,
+     1650
+    ],
+    "ongoing": true
+   },
+   "plan": "medieval halls and courtyards, then from the late 16th century rows of cottages of one or two rooms each with its own fireplace",
+   "sources": [
+    {
+     "title": "Hospital of St Cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hospital_of_St_Cross",
+     "locator": "lead",
+     "quote": "It has been described as \"England's oldest and most perfect almshouse\".",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hospital of St Cross",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hospital_of_St_Cross",
+     "locator": "section \"History\"",
+     "quote": "It was founded by Henry of Blois, Bishop of Winchester, grandson of William the Conqueror and younger brother to King Stephen in 1136.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Origins and development\"",
+     "quote": "This pattern continued into the early modern period, with a marked increase in new foundations between about 1550 and 1650, particularly in towns, reflecting changing approaches to charity and poor relief.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Inside Housing: Open alms: the almshouse charities building new homes",
+     "author": "The Almshouse Association",
+     "kind": "secondary",
+     "url": "https://www.almshouses.org/news/inside-housing-open-alms-the-almshouse-charities-building-new-homes/",
+     "locator": "article",
+     "quote": "he estimates that almshouse charities are today building between 700 and 800 new homes a year, up from just a few hundred annually 20 years ago.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Later developments\"",
+     "quote": "Residents were housed in separate rooms or small cottages, typically with one or two rooms and their own fireplace for heating and cooking.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Almshouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Almshouse",
+     "locator": "section \"Later developments\"",
+     "quote": "By the late 16th century, almshouses were commonly built as rows of cottages, usually located in the center of a village or town, near the parish church.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "military-pensioners-hospital",
@@ -269,9 +879,11 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "Kilmainham, Dublin, then Chelsea (founded 1682) and Greenwich (1690s)",
-    "from": 1682
+    "text": "Kilmainham, Dublin, built 1679-87, then Chelsea (founded 1682) and Greenwich (from 1692); Greenwich's Queen Mary Court, the last of the principal buildings, completed in 1742",
+    "from": 1679,
+    "to": 1742
    },
+   "plan": "a formal front and a large enclosed courtyard, after Les Invalides (Kilmainham)",
    "sources": [
     {
      "title": "Royal Hospital Chelsea",
@@ -279,7 +891,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Royal_Hospital_Chelsea",
      "locator": "section \"History\"",
-     "quote": "King Charles II founded the Royal Hospital as a retreat for veterans in 1682."
+     "quote": "King Charles II founded the Royal Hospital as a retreat for veterans in 1682.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Greenwich Hospital, London",
@@ -287,7 +902,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Greenwich_Hospital,_London",
      "locator": "section \"History\"",
-     "quote": "She ordered the King Charles wing of the palace—originally designed by architect John Webb for King Charles II in 1664—to be remodelled as a naval hospital to provide a counterpart for the Chelsea Hospital for soldiers."
+     "quote": "She ordered the King Charles wing of the palace—originally designed by architect John Webb for King Charles II in 1664—to be remodelled as a naval hospital to provide a counterpart for the Chelsea Hospital for soldiers.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Hospital Kilmainham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Hospital_Kilmainham",
+     "locator": "section \"Commissioning, design and construction\"",
+     "quote": "The hospital was built as a home for retired soldiers of the Irish Army by Sir William Robinson, Surveyor General for James Butler, 1st Duke of Ormond, Lord Lieutenant of Ireland, between 1679 and 1687 on what was then a portion of the Phoenix Park.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Greenwich Hospital, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Greenwich_Hospital,_London",
+     "locator": "section \"History\"",
+     "quote": "Queen Mary Court (planned by Wren and Hawksmoor, but not built until after Wren's death, by Thomas Ripley), completed in 1742",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Royal Hospital Kilmainham",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Royal_Hospital_Kilmainham",
+     "locator": "section \"Commissioning, design and construction\"",
+     "quote": "The building was inspired by Les Invalides in Paris which also has a formal facade and a large enclosed courtyard.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -298,6 +949,12 @@
    "domain": "Health and welfare",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "ordered by Louis XIV in 1670; the main complex complete in 1676 and the Dome chapel in 1706; one building, not a type built again",
+    "from": 1670,
+    "to": 1706
+   },
+   "plan": "a formal front and fifteen courtyards, the largest the cour d'honneur",
    "sources": [
     {
      "title": "Royal Hospital Kilmainham",
@@ -305,7 +962,44 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Royal_Hospital_Kilmainham",
      "locator": "section \"Commissioning, design and construction\"",
-     "quote": "The building was inspired by Les Invalides in Paris which also has a formal facade and a large enclosed courtyard."
+     "quote": "The building was inspired by Les Invalides in Paris which also has a formal facade and a large enclosed courtyard.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Les Invalides",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Les_Invalides",
+     "locator": "section \"History\"",
+     "quote": "Louis XIV initiated the project by an order dated 24 November 1670 to create a home and hospital for aged and disabled (invalide) soldiers, the veterans of his many military campaigns.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Les Invalides",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Les_Invalides",
+     "locator": "section \"History\"",
+     "quote": "The Dome chapel was finished in 1706.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Les Invalides",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Les_Invalides",
+     "locator": "section \"History\"",
+     "quote": "By the time the enlarged project was completed in 1676, the façade fronting the Seine measured 196 metres (643 ft) in width, and the complex had fifteen courtyards, the largest being the cour d'honneur designed for military parades.",
+     "about": [
+      "period",
+      "plan"
+     ]
     }
    ]
   },
@@ -316,6 +1010,16 @@
    "domain": "Health and welfare",
    "fish": null,
    "note": "FISH files every asylum under PSYCHIATRIC HOSPITAL.",
+   "period": {
+    "text": "insane patients at Bethlem by 1403; Bethlem rebuilt at Moorfields in 1676; charitable asylums from St Luke's (1751) to Liverpool (1797); Bethlem rebuilt again at St George's Fields in 1815, as the county asylums began",
+    "from": 1403,
+    "flourish": [
+     1751,
+     1797
+    ],
+    "to": 1815
+   },
+   "plan": "cells off long galleries, men and women in separate wings (Bethlem, 1676 and 1815)",
    "sources": [
     {
      "title": "Lunatic asylum",
@@ -323,7 +1027,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Lunatic_asylum",
      "locator": "section \"Emergence of public lunatic asylums\"",
-     "quote": "From the mid-eighteenth century the number of public charitably funded asylums expanded moderately with the opening of St Luke's Hospital in 1751 in Upper Moorfields, London"
+     "quote": "From the mid-eighteenth century the number of public charitably funded asylums expanded moderately with the opening of St Luke's Hospital in 1751 in Upper Moorfields, London",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bethlem Royal Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bethlem_Royal_Hospital",
+     "locator": "section \"From Bethlem to Bedlam\"",
+     "quote": "The presence of a small number of insane patients in 1403 marks Bethlem's gradual transition from a diminutive general hospital into a specialist institution for the confinement of the insane.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lunatic asylum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lunatic_asylum",
+     "locator": "section \"Emergence of public lunatic asylums\"",
+     "quote": "In 1676, Bethlem expanded into newly built premises at Moorfields with a capacity for 100 inmates.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lunatic asylum",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lunatic_asylum",
+     "locator": "section \"Emergence of public lunatic asylums\"",
+     "quote": "the York Asylum in 1777 (not to be confused with the York Retreat); the Leicester Lunatic Asylum (1794), and the Liverpool Lunatic Asylum (1797).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bethlem Royal Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bethlem_Royal_Hospital",
+     "locator": "section \"Bethlem rebuilt at St George's Fields\"",
+     "quote": "Completed after three years in 1815, it was constructed during the first wave of county asylum building in England under the County Asylums Act 1808",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bethlem Royal Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bethlem_Royal_Hospital",
+     "locator": "section \"Bethlem rebuilt at St George's Fields\"",
+     "quote": "Female patients occupied the west wing and males the east; as at Moorfields, the cells were located off galleries that traversed each wing.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -334,10 +1096,12 @@
    "domain": "Health and welfare",
    "fish": "93030",
    "period": {
-    "text": "after the County Asylums Act 1808; the first opened 1812 (Nottinghamshire)",
-    "from": 1812
+    "text": "after the County Asylums Act 1808; the first opened 1812 (Nottinghamshire); Hanwell (1831) copied widely; the corridor plan gave way to the echelon plan, first used successfully at Claybury (1893)",
+    "from": 1812,
+    "to": 1893
    },
    "note": "Hanwell (the First Middlesex County Asylum, 1831) had octagonal 'panopticon' towers at its centre and ends; the panopticon prison is a civic type and is not linked here.",
+   "plan": "a corridor plan: long ward ranges joined by corridors (Wakefield, 1818)",
    "sources": [
     {
      "title": "Psychiatric hospital",
@@ -345,7 +1109,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Psychiatric_hospital",
      "locator": "section \"History\"",
-     "quote": "Nine counties first applied, the first public asylum opening in 1812 in Nottinghamshire."
+     "quote": "Nine counties first applied, the first public asylum opening in 1812 in Nottinghamshire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Claybury Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Claybury_Hospital",
+     "locator": "section \"The project\"",
+     "quote": "It was the first asylum to successfully use the echelon plan upon which all later asylums were based.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stanley Royd Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stanley_Royd_Hospital",
+     "locator": "section \"History\"",
+     "quote": "The facility, which was designed by Watson and Pritchett using a corridor plan layout, was opened as the West Riding Pauper Lunatic Asylum in 1818.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -356,8 +1145,9 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "Claybury, opened 1893",
-    "from": 1893
+    "text": "Coney Hill, Gloucester (opened 1883), called the first built in true echelon plan though its outer sections were never built; Claybury (1893) the first to use it successfully, the model for all later asylums; Severalls (opened 1913) the latest found",
+    "from": 1883,
+    "to": 1913
    },
    "sources": [
     {
@@ -366,7 +1156,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/George_Thomas_Hine",
      "locator": "section \"Architectural style\"",
-     "quote": "Hine was an early exponent of the 'echelon' design of asylums which he deployed at Claybury."
+     "quote": "Hine was an early exponent of the 'echelon' design of asylums which he deployed at Claybury.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Claybury Hospital",
@@ -374,7 +1167,76 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Claybury_Hospital",
      "locator": "lead",
-     "quote": "It was opened in 1893 making it the Fifth Middlesex County Asylum."
+     "quote": "It was opened in 1893 making it the Fifth Middlesex County Asylum.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Claybury Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Claybury_Hospital",
+     "locator": "section \"The project\"",
+     "quote": "It was the first asylum to successfully use the echelon plan upon which all later asylums were based.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Coney Hill Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coney_Hill_Hospital",
+     "locator": "section \"History\"",
+     "quote": "It was the first asylum to be built in true echelon plan.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Coney Hill Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coney_Hill_Hospital",
+     "locator": "section \"History\"",
+     "quote": "It was designed by John Giles & Gough and opened as the Second Gloucestershire County Asylum in 1883.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Coney Hill Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coney_Hill_Hospital",
+     "locator": "section \"History\"",
+     "quote": "Outer sections to the echelon were planned but never implemented.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Severalls Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Severalls_Hospital",
+     "locator": "section \"Early history\"",
+     "quote": "The hospital was designed by Frank Whitmore, the county architect, and William Town using an echelon formation layout.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Severalls Hospital",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Severalls_Hospital",
+     "locator": "section \"Early history\"",
+     "quote": "The foundation stone was laid by Sir Thomas Barrett-Lennard in June 1910 and it opened as the Second Essex County Asylum in May 1913.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -385,7 +1247,7 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "from 1631 (Abingdon); many after the Workhouse Test Act 1723, until 1834",
+    "text": "from 1631 (Abingdon); many after the Workhouse Test Act 1723, until the union workhouses of 1834",
     "from": 1631,
     "to": 1834
    },
@@ -397,7 +1259,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Workhouse",
      "locator": "lead",
-     "quote": "The earliest known use of the term workhouse is from 1631, in an account by the mayor of Abingdon reporting that \"we have erected within our borough a workhouse to set poorer people to work\"."
+     "quote": "The earliest known use of the term workhouse is from 1631, in an account by the mayor of Abingdon reporting that \"we have erected within our borough a workhouse to set poorer people to work\".",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Workhouse",
@@ -405,7 +1270,21 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Workhouse",
      "locator": "section \"Georgian era\"",
-     "quote": "This growth in the number of workhouses was prompted by the Workhouse Test Act 1723"
+     "quote": "This growth in the number of workhouses was prompted by the Workhouse Test Act 1723",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Workhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse",
+     "locator": "section \"1834 Act\"",
+     "quote": "Individual parishes were grouped into Poor Law Unions, each of which was to have a union workhouse.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -416,11 +1295,16 @@
    "domain": "Health and welfare",
    "fish": "68723",
    "period": {
-    "text": "after the Poor Law Amendment Act 1834; abolished 1930",
+    "text": "after the Poor Law Amendment Act 1834: more than 500 built in the next 50 years, two-thirds of them by 1840; abolished 1930",
     "from": 1834,
+    "flourish": [
+     1834,
+     1840
+    ],
     "to": 1930
    },
    "note": "Sampson Kempthorne's model plans of 1835 (square and Y or hexagonal) resembled Bentham's panopticon prison, and critics doubted that the likeness to model prisons was coincidental; the panopticon is a civic type and is not linked here.",
+   "plan": "Kempthorne's model plans of 1835: a radial or octagonal centre in a walled yard, divided into yards for each class of inmate; from 1840 separate blocks linked by long corridors",
    "sources": [
     {
      "title": "Workhouse",
@@ -428,7 +1312,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Workhouse",
      "locator": "section \"Early Victorian workhouses\"",
-     "quote": "A common layout resembled Jeremy Bentham's prison panopticon, a radial design with four three-storey buildings at its centre set within a rectangular courtyard, the perimeter of which was defined by a three-storey entrance block and single-storey outbuildings, all enclosed by a wall."
+     "quote": "A common layout resembled Jeremy Bentham's prison panopticon, a radial design with four three-storey buildings at its centre set within a rectangular courtyard, the perimeter of which was defined by a three-storey entrance block and single-storey outbuildings, all enclosed by a wall.",
+     "about": [
+      "plan"
+     ]
     },
     {
      "title": "Workhouse",
@@ -437,6 +1324,50 @@
      "url": "https://en.wikipedia.org/wiki/Workhouse",
      "locator": "section \"Early Victorian workhouses\"",
      "quote": "Some critics of the new Poor Law noted the similarities between Kempthorne's plans and model prisons, and doubted that they were merely coincidental - Richard Oastler went as far as referring to the institutions as 'prisons for the poor'."
+    },
+    {
+     "title": "Workhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse",
+     "locator": "section \"1834 Act\"",
+     "quote": "More than 500 of these were built during the next 50 years, two-thirds of them by 1840.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Workhouse infirmary",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse_infirmary",
+     "locator": "section \"1900–1930\"",
+     "quote": "The workhouse system was abolished in the UK by the same Act on 1 April 1930, but many workhouses, renamed Public Assistance Institutions, continued under the control of local county councils.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Workhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse",
+     "locator": "section \"Early Victorian workhouses\"",
+     "quote": "That basic layout, one of two designed by the architect Sampson Kempthorne (his other design was octagonal with a segmented interior, sometimes known as the Kempthorne star), allowed for four separate work and exercise yards, one for each class of inmate.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Workhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Workhouse",
+     "locator": "section \"Early Victorian workhouses\"",
+     "quote": "Typically the entrance building contained offices, while the main workhouse building housed the various wards and workrooms, all linked by long corridors designed to improve ventilation and lighting.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -447,8 +1378,9 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "after the Poor Relief (Ireland) Act 1838",
-    "from": 1838
+    "text": "after the Poor Relief (Ireland) Act 1838: 130 unions, each with a workhouse designed by George Wilkinson; more unions were formed in the Famine (Portumna, 1850), the latest found",
+    "from": 1838,
+    "to": 1850
    },
    "sources": [
     {
@@ -457,7 +1389,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Poor_Relief_(Ireland)_Act_1838",
      "locator": "lead",
-     "quote": "Following its enactment, one hundred and thirty Poor Law Unions were established throughout the country."
+     "quote": "Following its enactment, one hundred and thirty Poor Law Unions were established throughout the country.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Poor Relief (Ireland) Act 1838",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Poor_Relief_(Ireland)_Act_1838",
+     "locator": "lead",
+     "quote": "Each Union had a workhouse, financed by the payment of rates on landholders in the Union district.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Portumna",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portumna",
+     "locator": "section \"Workhouse\"",
+     "quote": "The Portumna Union was formally declared on 22 February 1850, covering an area of 121 square miles (310 km2) as a subdivision of the Ballinasloe and Loughrea unions.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Portumna",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portumna",
+     "locator": "section \"Workhouse\"",
+     "quote": "Designed by the Poor Law Commissioners' architect George Wilkinson, the building was intended to accommodate 600 inmates who were badly affected by the lack of both employment and food at the time.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -468,8 +1436,13 @@
    "domain": "Health and welfare",
    "fish": null,
    "period": {
-    "text": "town poorhouses in the 18th century; most after the Poor Law (Scotland) Act 1845",
-    "from": 1845
+    "text": "town poorhouses in the 18th century (Glasgow's Town's Hospital 1731, Edinburgh's Canongate 1761); most after the Poor Law (Scotland) Act 1845, fifty by 1868; the Poor Law ended in 1948",
+    "from": 1731,
+    "flourish": [
+     1845,
+     1868
+    ],
+    "to": 1948
    },
    "note": "FISH has no poorhouse term.",
    "sources": [
@@ -487,7 +1460,43 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Scottish_poorhouse",
      "locator": "lead",
-     "quote": "By 1868 there were fifty poorhouses in Scotland; strict regulations applied to admissions and were overseen by a local Inspector of the Poor."
+     "quote": "By 1868 there were fifty poorhouses in Scotland; strict regulations applied to admissions and were overseen by a local Inspector of the Poor.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish poorhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_poorhouse",
+     "locator": "section \"Medieval to Early Modern period\"",
+     "quote": "In Aberdeen during the 1630s an institution had been established by wealthy cloth merchants; Canongate Charity Workhouse in Edinburgh was managed by several trade associations after being opened in 1761; and Glasgow had the Town's Hospital, opened in 1731.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish poorhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_poorhouse",
+     "locator": "lead",
+     "quote": "Expansions to existing facilities in Edinburgh and Glasgow and design guidelines for constructing new poorhouses were drawn up by the Board of Supervision which advised the parochial boards set up after the enactment of the Poor Law (Scotland) Act 1845.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scottish poorhouse",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scottish_poorhouse",
+     "locator": "lead",
+     "quote": "The number of inmates peaked in 1906 and after the introduction of the National Assistance Act 1948 (11 & 12 Geo. 6. c. 29), the Poor Law system was abolished throughout the United Kingdom.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -498,8 +1507,13 @@
    "domain": "Health and welfare",
    "fish": "68712",
    "period": {
-    "text": "Liverpool 1828; under the Baths and Washhouses Act 1846",
-    "from": 1828
+    "text": "Liverpool 1828; under the Baths and Washhouses Act 1846, and by 1915 most towns in Britain had at least one; still built in 1961 (Bow Baths, with 60 slipper baths), the latest found, as homes gained bathrooms",
+    "from": 1828,
+    "flourish": [
+     1846,
+     1915
+    ],
+    "to": 1961
    },
    "note": "Baths for washing, as a matter of hygiene; swimming baths and lidos are recreation types.",
    "sources": [
@@ -509,7 +1523,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Baths_and_wash_houses_in_Britain",
      "locator": "lead",
-     "quote": "salt-water baths were opened in 1828 by the Corporation of Liverpool"
+     "quote": "salt-water baths were opened in 1828 by the Corporation of Liverpool",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Baths and wash houses in Britain",
@@ -517,7 +1534,32 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Baths_and_wash_houses_in_Britain",
      "locator": "section \"Regulation\"",
-     "quote": "This was the first legislation to empower British local authorities to fund the building of public baths and wash houses."
+     "quote": "This was the first legislation to empower British local authorities to fund the building of public baths and wash houses.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Public bathing",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Public_bathing",
+     "locator": "section \"British Empire\"",
+     "quote": "The introduction of bath houses into British culture was a response to the public's desire for increased sanitary conditions, and by 1915 most towns in Britain had at least one.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Road, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Road,_London",
+     "locator": "section \"Bow Baths\"",
+     "quote": "In 1961, a new Bow Baths was built in Sutherland Place which included 60 slipper baths and a laundry block.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -528,8 +1570,9 @@
    "domain": "Health and welfare",
    "fish": "87934",
    "period": {
-    "text": "Liverpool, 1842 (Frederick Street)",
-    "from": 1842
+    "text": "Liverpool, 1842 (Frederick Street); still built with baths in 1961 (Bow Baths' laundry block), the latest found; demand fell as home laundry became easier",
+    "from": 1842,
+    "to": 1961
    },
    "note": "Kitty Wilkinson's washing of infected clothes in her own house in the cholera of 1832 is often called the first public wash-house; John Dobie (1972), from the council's records, showed the corporation's baths and wash-house opened in 1842, before the one she ran, and that her legend was built up later.",
    "sources": [
@@ -539,7 +1582,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Kitty_Wilkinson",
      "locator": "lead",
-     "quote": "Ten years later with public funds, her efforts resulted in the opening of a combined washhouse and public baths, the first in the United Kingdom."
+     "quote": "Ten years later with public funds, her efforts resulted in the opening of a combined washhouse and public baths, the first in the United Kingdom.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Kitty Wilkinson",
@@ -548,6 +1594,39 @@
      "url": "https://en.wikipedia.org/wiki/Kitty_Wilkinson",
      "locator": "section \"Biographies\"",
      "quote": "A series of articles in 1972, published in Baths Service ‘The Journal of the Institute of Baths Management Incorporated’, argued that Kitty Wilkinson's life had become \"a civic myth\"."
+    },
+    {
+     "title": "Baths and wash houses in Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Baths_and_wash_houses_in_Britain",
+     "locator": "lead",
+     "quote": "George's Pier Head salt-water baths were opened in 1828 by the Corporation of Liverpool, with the first known warm fresh-water public wash house being opened in May 1842 on Frederick Street.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman Road, London",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_Road,_London",
+     "locator": "section \"Bow Baths\"",
+     "quote": "In 1961, a new Bow Baths was built in Sutherland Place which included 60 slipper baths and a laundry block.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stockton's public baths and wash house",
+     "author": "Stockton-on-Tees Borough Council heritage",
+     "kind": "secondary",
+     "url": "https://heritage.stockton.gov.uk/articles/buildings/stocktons-public-baths-and-wash-house",
+     "locator": "article",
+     "quote": "As the development of domestic appliances made home laundry less onerous the demand for the wash-house declined, although the public laundry continued to be used for many years.",
+     "about": [
+      "period"
+     ]
     }
    ]
   }

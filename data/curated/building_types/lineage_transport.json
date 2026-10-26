@@ -7,7 +7,70 @@
    "name": "Stepping stones",
    "family": "Bridges",
    "domain": "Transport",
-   "fish": "70276"
+   "fish": "70276",
+   "period": {
+    "text": "origin unknown, probably among the earliest ways of crossing water; the earliest dated in the sources, on the Derwent at Offerton, Derbyshire, were in place before 1764; still laid, as in gardens",
+    "from": 1764,
+    "ongoing": true
+   },
+   "structure": "stones set in the bed of a stream or on wet ground, crossed on foot, sometimes with planks or slabs laid between them",
+   "sources": [
+    {
+     "title": "Stepping stones",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stepping_stones",
+     "locator": "lead",
+     "quote": "Although their historical origin is unknown, stepping stones, along with log bridges, are likely to have been among the earliest means of crossing inland bodies of water devised by humans.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stepping stones, River Derwent, Offerton Hall, Outseats (MDR7411)",
+     "author": "Derbyshire Historic Environment Record",
+     "kind": "listing",
+     "url": "https://her.derbyshire.gov.uk/Monument/MDR7411",
+     "locator": "full description",
+     "quote": "They were put in place sometime before 1764, the date of the earliest available map of the area.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stepping stones",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stepping_stones",
+     "locator": "lead",
+     "quote": "Stepping stones or stepstones are sets of stones arranged to form an improvised causeway that allows a pedestrian to cross a natural watercourse such as a creek, a small river; or a water feature in a garden where water is allowed to flow between stone steps.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stepping stones (FISH Thesaurus of Monument Types, concept 70276)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70276.html",
+     "locator": "scope note",
+     "quote": "Stones placed in the bed of a stream or on wet ground, to enable crossing on foot.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Stepping stones",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stepping_stones",
+     "locator": "lead",
+     "quote": "Unlike bridges, stepstone crossings typically have no spans, although wood planks or stone slabs can be placed over between the stones (which serve as the piers) to improvise as low-water bridges.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "clapper-bridge",
@@ -16,8 +79,11 @@
    "domain": "Transport",
    "fish": "70216",
    "period": {
-    "text": "most medieval, some later, though often called prehistoric"
+    "text": "most medieval, some later, though often called prehistoric: Postbridge, Dartmoor, believed 13th century and first recorded 1380; Stara Bridge, Cornwall, 1301-1500; the sources date none of the later ones, so c. 1500 is used as the end",
+    "from": 1200,
+    "to": 1500
    },
+   "structure": "large flat unmortared slabs of stone, often granite or schist, laid on stone piers or on the banks",
    "sources": [
     {
      "title": "Clapper bridge",
@@ -25,7 +91,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Clapper_bridge",
      "locator": "section \"History\"",
-     "quote": "Although often credited with prehistoric origin, most were erected in medieval times, and some in later centuries."
+     "quote": "Although often credited with prehistoric origin, most were erected in medieval times, and some in later centuries.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Postbridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Postbridge",
+     "locator": "lead",
+     "quote": "First recorded in the 14th century, the bridge is believed to have been built in the 13th century to enable pack horses to cross, carrying tin to the stannary town of Tavistock.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Stara Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stara_Bridge",
+     "locator": "section \"History\"",
+     "quote": "The date of construction of the bridge is uncertain; Historic England suggest the late Middle Ages, a span of 200 years from 1301 to 1500.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Clapper bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clapper_bridge",
+     "locator": "lead",
+     "quote": "It is formed by large flat slabs of stone, often granite or schist.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Clapper bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clapper_bridge",
+     "locator": "lead",
+     "quote": "These can be supported on stone piers across rivers, or rest on the banks of streams.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Tarr Steps",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tarr_Steps",
+     "locator": "section \"Bridge\"",
+     "quote": "It is an ancient form of bridge constructed with large unmortared slabs of stone resting on one another; this is the largest example of its type.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -34,7 +158,81 @@
    "name": "Arch bridge (masonry)",
    "family": "Bridges",
    "domain": "Transport",
-   "fish": "94190"
+   "fish": "94190",
+   "period": {
+    "text": "the Old Exe Bridge, Exeter, begun 1190 and finished by 1214, is the oldest surviving of its size in England; stone and brick arches were still built through the 18th and 19th centuries (c. 1900), then steel and concrete took over",
+    "from": 1190,
+    "to": 1900
+   },
+   "structure": "stone or brick arch rings in compression, loaded with rubble fill, springing from piers and abutments",
+   "sources": [
+    {
+     "title": "Old Exe Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Exe_Bridge",
+     "locator": "lead",
+     "quote": "Construction of the bridge began in 1190, and was completed by 1214.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Old Exe Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Exe_Bridge",
+     "locator": "lead",
+     "quote": "The bridge is the oldest surviving bridge of its size in England and the oldest bridge in Britain with a chapel still on it.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Arch bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arch_bridge",
+     "locator": "section \"History\"",
+     "quote": "With the coming of the Industrial Revolution, in the 18th and 19th centuries, stone and brick arches continued to be built by many prominent British civil engineers, including Thomas Telford, John Rennie, and latterly Isambard Kingdom Brunel.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Arch bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arch_bridge",
+     "locator": "section \"History\"",
+     "quote": "and then steel and concrete, which have been increasingly used in the construction of arch bridges, to almost the exclusion of other materials.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Arch bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arch_bridge",
+     "locator": "section \"Advantages of simple materials\"",
+     "quote": "Masonry arch bridges use a quantity of fill material (typically compacted rubble) above the arch to increase the dead weight on the bridge and prevent tension from occurring in the arch ring as loads move across the bridge.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Arch bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arch_bridge",
+     "locator": "section \"Advantages of simple materials\"",
+     "quote": "As a result, masonry arch bridges are designed to be kept under constant compression, so far as possible.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "packhorse-bridge",
@@ -43,9 +241,79 @@
    "domain": "Transport",
    "fish": "70220",
    "period": {
-    "text": "on the packhorse routes until the turnpikes and canals of the 18th century",
+    "text": "a 15th-century example at Moulton, Suffolk; Carrbridge, 1717, the oldest stone bridge in the Highlands; built on the packhorse routes until the turnpikes and canals of the 18th century (Hinchliffe's definition: built before 1800)",
+    "from": 1400,
     "to": 1800
-   }
+   },
+   "structure": "one or more narrow masonry arches, one horse wide, with low parapets",
+   "sources": [
+    {
+     "title": "Moulton, Suffolk",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Moulton,_Suffolk",
+     "locator": "lead",
+     "quote": "The village is older than the now larger town of Newmarket and includes a 15th-century packhorse bridge spanning the River Kennett.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Carrbridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Carrbridge",
+     "locator": "section \"Attractions\"",
+     "quote": "The bridge, built in 1717, is the oldest stone bridge in the Highlands.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Packhorse bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Packhorse_bridge",
+     "locator": "lead",
+     "quote": "Packhorse bridges were often built on the trade routes (often called packhorse routes) that formed major transport arteries across Europe and Great Britain until the coming of the turnpike roads and canals in the 18th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Packhorse bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Packhorse_bridge",
+     "locator": "section \"Definition\"",
+     "quote": "built before 1800;",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Packhorse bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Packhorse_bridge",
+     "locator": "lead",
+     "quote": "Typically a packhorse bridge consists of one or more narrow (one horse wide) masonry arches, and has low parapets so as not to interfere with the panniers borne by the horses.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Packhorse bridge (FISH Thesaurus of Monument Types, concept 70220)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70220.html",
+     "locator": "scope note",
+     "quote": "A high-humped, narrow, cobbled bridge used by trains of packhorses, often located in upland areas where the bulk of goods were carried by horses.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "iron-bridge",
@@ -54,9 +322,11 @@
    "domain": "Transport",
    "fish": null,
    "period": {
-    "text": "the Iron Bridge, Coalbrookdale, opened 1781, the first major cast-iron bridge",
-    "from": 1781
+    "text": "the Iron Bridge, Coalbrookdale, opened 1781, the first major cast-iron bridge; cast-iron arches of large span late in the 18th and early in the 19th century, and cast-iron beams on the early railways until the Dee bridge collapse of 1847, after which many were rebuilt in wrought iron; the sources give no last year",
+    "from": 1781,
+    "to": 1847
    },
+   "structure": "cast-iron arch ribs in compression, the first cast in sections joined as in carpentry; beam bridges of cast-iron girders on the early railways",
    "sources": [
     {
      "title": "The Iron Bridge",
@@ -64,7 +334,66 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
      "locator": "lead",
-     "quote": "Opened in 1781, it was the first major bridge in the world to be made of cast iron."
+     "quote": "Opened in 1781, it was the first major bridge in the world to be made of cast iron.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "The Iron Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+     "locator": "section \"Influence on bridge design\"",
+     "quote": "The successful use of cast iron in 1781 pioneered the choice of that material for many subsequent bridges, and cast iron arches of considerable span were constructed late in the 18th and early in the 19th century.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Cast-iron bridges\"",
+     "quote": "Cast-iron beam bridges were used widely by the early railways, such as the Water Street Bridge in 1830 at the Manchester terminus of the Liverpool and Manchester Railway",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Cast-iron bridges\"",
+     "quote": "The Dee bridge disaster was caused by excessive loading at the centre of the beam by a passing train, and many similar bridges had to be demolished and rebuilt, often in wrought iron.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Cast iron",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cast_iron",
+     "locator": "section \"Cast-iron bridges\"",
+     "quote": "The best way of using cast iron for bridge construction was by using arches, so that all the material is in compression.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Arch bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arch_bridge",
+     "locator": "section \"History\"",
+     "quote": "the Iron Bridge with a single arch of sections of cast iron constructed in traditional woodworking techniques",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -75,9 +404,11 @@
    "domain": "Transport",
    "fish": "70223",
    "period": {
-    "text": "the Union Bridge over the Tweed, 1820, the first for vehicles in the UK",
-    "from": 1820
+    "text": "in Britain the Dryburgh Abbey Bridge, 1817, and the Union Bridge, 1820, the first for vehicles; the Menai Bridge, 1826; still built (the Severn Bridge, 1961-1966, with box-girder deck and wire-rope cables)",
+    "from": 1817,
+    "ongoing": true
    },
+   "structure": "a deck hung from chains, linked bars or (later) wire-rope cables slung between towers and anchored at the ends",
    "sources": [
     {
      "title": "Union Bridge (Tweed)",
@@ -85,7 +416,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Union_Bridge_(Tweed)",
      "locator": "lead",
-     "quote": "When it opened in 1820 it was the longest wrought iron suspension bridge in the world with a span of 449 feet (137 m), and the first vehicular bridge of its type in the United Kingdom."
+     "quote": "When it opened in 1820 it was the longest wrought iron suspension bridge in the world with a span of 449 feet (137 m), and the first vehicular bridge of its type in the United Kingdom.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Suspension bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Suspension_bridge",
+     "locator": "section \"Chain bridges\"",
+     "quote": "Early British chain bridges included the Dryburgh Abbey Bridge (1817) and 137 m Union Bridge (1820)",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Suspension bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Suspension_bridge",
+     "locator": "section \"Deck structure types\"",
+     "quote": "In the 1960s, developments in bridge aerodynamics allowed the re-introduction of plate structures as shallow box girders, first seen on the Severn bridge, built 1961–1966.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Suspension bridge (FISH Thesaurus of Monument Types, concept 70223)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70223.html",
+     "locator": "scope note",
+     "quote": "A bridge whose deck is hung from above by large cables, chains or pinned iron or steel bars hanging from towers.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Suspension bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Suspension_bridge",
+     "locator": "section \"Suspension cable types\"",
+     "quote": "The main suspension cables in older bridges were often made from a chain or linked bars, but modern bridge cables are made from multiple strands of wire rope.",
+     "about": [
+      "structure",
+      "period"
+     ]
     }
    ]
   },
@@ -95,6 +474,12 @@
    "family": "Bridges",
    "domain": "Transport",
    "fish": null,
+   "period": {
+    "text": "Samuel Brown's stud-linked wrought-iron chain made from 1803 after experiments begun in the Navy; the Admiralty ordered chains for four warships in 1808; anchor cables are still made of chain",
+    "from": 1803,
+    "ongoing": true
+   },
+   "structure": "stud-linked wrought-iron chain",
    "note": "Not a building: the ship's chain from which Samuel Brown's bridge chains came.",
    "sources": [
     {
@@ -103,7 +488,44 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Union_Bridge_(Tweed)",
      "locator": "section \"Construction\"",
-     "quote": "Brown joined the Navy in 1795, and seeing the need for an improvement on the hemp ropes used, which frequently failed with resulting loss to shipping, he employed blacksmiths to create experimental wrought iron chains."
+     "quote": "Brown joined the Navy in 1795, and seeing the need for an improvement on the hemp ropes used, which frequently failed with resulting loss to shipping, he employed blacksmiths to create experimental wrought iron chains.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brown Lenox",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brown_Lenox",
+     "locator": "section \"Early history\"",
+     "quote": "The company was started by Samuel Brown, initially called Brown & Co Ltd, following his patent on a stud-linked wrought iron chain that was suitable as a ship's anchor cable, and began manufacturing in 1803.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Brown Lenox",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brown_Lenox",
+     "locator": "section \"Royal Navy supply contract\"",
+     "quote": "On his return in 1808 the Admiralty were impressed by their performance and immediately ordered chains to be fitted to four warships.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Anchor",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Anchor",
+     "locator": "section \"Anchoring\"",
+     "quote": "It can be made of rope, chain or a combination of rope and chain.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -114,6 +536,12 @@
    "domain": "Transport",
    "fish": null,
    "abroad": true,
+   "period": {
+    "text": "Rome's first, the Aqua Appia, 312 BC; aqueducts also supplied Roman forts in Britain; the Aqueduct of Valens at Constantinople, completed in 368 (373 in the article's lead), is the latest in the sources",
+    "from": -312,
+    "to": 373
+   },
+   "structure": "mostly buried arch-section masonry conduits on a slight even fall, carried on tiers of arches across valleys",
    "sources": [
     {
      "title": "Viaduct",
@@ -122,6 +550,72 @@
      "url": "https://en.wikipedia.org/wiki/Viaduct",
      "locator": "lead",
      "quote": "It is a 19th-century derivation from an analogy with ancient Roman aqueducts."
+    },
+    {
+     "title": "Roman aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_aqueduct",
+     "locator": "lead",
+     "quote": "Rome's first aqueduct was built in 312 BC, and supplied a water fountain at the city's cattle market.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_aqueduct",
+     "locator": "section \"Aqueducts in the Roman Empire\"",
+     "quote": "Aqueducts were built to supply Roman military bases in Britain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Valens Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Valens_Aqueduct",
+     "locator": "lead",
+     "quote": "was completed in 373 by the Emperor Valens",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Valens Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Valens_Aqueduct",
+     "locator": "section \"Roman period\"",
+     "quote": "The exact date that construction on the aqueduct began is uncertain, but it was completed in 368 AD during the reign of Valens, whose name it bears.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Roman aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roman_aqueduct",
+     "locator": "section \"Conduits and gradients\"",
+     "quote": "Most Roman aqueducts were flat-bottomed, arch-section conduits, approximately 0.7 m (2.3 ft) wide and 1.5 m (5 ft) high internally, running 0.5 to 1 m beneath the ground surface, with inspection-and-access covers at regular intervals.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Arch bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arch_bridge",
+     "locator": "section \"Aqueducts\"",
+     "quote": "Rather than building extremely large arches or very tall supporting columns (difficult to construct in stone), a series of arched structures is built one atop another, with wider structures at the base.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -130,7 +624,81 @@
    "name": "Railway viaduct",
    "family": "Bridges",
    "domain": "Transport",
-   "fish": "70250"
+   "fish": "70250",
+   "period": {
+    "text": "Laigh Milton Viaduct, Ayrshire, for the Kilmarnock and Troon Railway opened 1812, probably the earliest surviving on a public railway; the Sankey Viaduct, 1828-1830, the earliest major one; still built (the Colne Valley Viaduct for High Speed 2, 2021-2025)",
+    "from": 1812,
+    "ongoing": true
+   },
+   "structure": "a row of masonry arches on piers (later also concrete and steel spans)",
+   "sources": [
+    {
+     "title": "Laigh Milton Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Laigh_Milton_Viaduct",
+     "locator": "lead",
+     "quote": "It is probably the world's earliest surviving railway viaduct on a public railway, and the earliest known survivor of a type of multi-span railway structure subsequently adopted universally.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Laigh Milton Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Laigh_Milton_Viaduct",
+     "locator": "lead",
+     "quote": "It was built for the Kilmarnock and Troon Railway, opened in 1812; the line was a horse drawn plateway (although locomotive traction was tried later).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sankey Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sankey_Viaduct",
+     "locator": "lead",
+     "quote": "The viaduct was built between 1828 and 1830, although work on the structure did not finish until the middle of 1833.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Colne Valley Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Colne_Valley_Viaduct",
+     "locator": "lead",
+     "quote": "Construction of the viaduct began in March 2021, with the main deck completed in September 2024 and full completion of the bridge in September 2025.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Railway viaduct (FISH Thesaurus of Monument Types, concept 70250)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70250.html",
+     "locator": "scope note",
+     "quote": "A bridge, usually resting on raised arches, carrying a railway across low-lying land or water.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Laigh Milton Viaduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Laigh_Milton_Viaduct",
+     "locator": "section \"The first Laigh Milton viaduct\"",
+     "quote": "It was built with four segmental arches of 12.3 m (40 ft) span, and a rise of one-third span; the voussoirs were 610 mm (24 in) thick.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   },
   {
    "id": "toll-road",
@@ -139,8 +707,12 @@
    "domain": "Transport",
    "fish": "70269",
    "period": {
-    "text": "the first turnpike act 1663; trusts with their own trustees from 1706; declined with the railways",
+    "text": "the first turnpike act 1663; trusts with their own trustees from 1706; most set up from the 1750s (over 700 trusts by 1800, over 1,000 at the peak in the 1830s); fewer new trusts in the early 19th century; declined with the railways and ended by the Local Government Act 1888",
     "from": 1663,
+    "flourish": [
+     1750,
+     1800
+    ],
     "to": 1888
    },
    "sources": [
@@ -150,7 +722,54 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
      "locator": "section \"The first turnpike trusts\"",
-     "quote": "The first scheme that had trustees who were not justices was established through the Bedfordshire and Buckinghamshire Roads Act 1706"
+     "quote": "The first scheme that had trustees who were not justices was established through the Bedfordshire and Buckinghamshire Roads Act 1706",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Turnpike trusts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "section \"Precursors to turnpike trusts\"",
+     "quote": "it then passed an act of Parliament, the Road Repair (Hertfordshire, Cambridgeshire, and Huntingdonshire) Act 1663",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Turnpike trusts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "section \"The growth of the turnpike system\"",
+     "quote": "About 150 trusts were established by 1750; by 1772 a further 400 were established and, in 1800, there were over 700 trusts.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Turnpike trusts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "section \"The growth of the turnpike system\"",
+     "quote": "The rate at which new trusts were created slowed in the early 19th century but the existing trusts were making major investments in highway improvement.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Turnpike trusts",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Turnpike_trusts",
+     "locator": "lead",
+     "quote": "Turnpikes declined with the coming of the railways and then the Local Government Act 1888 gave responsibility for maintaining main roads to county councils and county borough councils.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -161,10 +780,11 @@
    "domain": "Transport",
    "fish": "91961",
    "period": {
-    "text": "on the Thames since at least 1295; the last on the Nene replaced 1936-1941",
+    "text": "on the Thames since at least 1295; guillotine-gated ones on the Nene from the early 17th century; the last on the Thames went in 1937 and those on the Nene were replaced 1936-1941 (the sources give no date for the last built)",
     "from": 1295,
     "to": 1941
    },
+   "structure": "a weir across the river with a gated opening, on the Nene a guillotine gate in a wooden frame",
    "sources": [
     {
      "title": "Flash lock",
@@ -172,7 +792,55 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Flash_lock",
      "locator": "section \"Development\"",
-     "quote": "Flash locks of this type have been documented in China since at least the 1st century BCE and on the Thames since at least 1295."
+     "quote": "Flash locks of this type have been documented in China since at least the 1st century BCE and on the Thames since at least 1295.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "On the River Nene and some of the tributaries of the River Great Ouse, a design using a guillotine gate in a wooden frame was used from the early seventeenth century onwards.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "Flash locks on the Nene continued to be used until they were replaced in a programme of modernisation, which included building new locks, carried out between 1936 and 1941.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "The last flash lock on the Thames was Hart's Lock (also known as Eaton Lock), which lasted until 1937",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flash lock (FISH Thesaurus of Monument Types, concept 91961)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91961.html",
+     "locator": "scope note",
+     "quote": "A form of lock on a river, which increased the depth upstream and had a gated opening.",
+     "about": [
+      "structure"
+     ]
     }
    ]
   },
@@ -183,9 +851,11 @@
    "domain": "Transport",
    "fish": "92981",
    "period": {
-    "text": "in Britain from the 1560s (Exeter Canal)",
-    "from": 1564
+    "text": "in Britain from the 1560s (Exeter Canal, begun 1564); still built for new waterways",
+    "from": 1564,
+    "ongoing": true
    },
+   "plan": "a chamber in a fixed position with gates at each end, its water level raised or lowered",
    "sources": [
     {
      "title": "Exeter Canal",
@@ -193,7 +863,65 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Exeter_Canal",
      "locator": "lead",
-     "quote": "As built, it contained the first pound locks to be built in Britain."
+     "quote": "As built, it contained the first pound locks to be built in Britain.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Exeter Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Canal",
+     "locator": "section \"History\"",
+     "quote": "Work began in February 1564, and was completed in Autumn 1566 or early 1567.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Flash lock",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flash_lock",
+     "locator": "section \"Development\"",
+     "quote": "Pound locks have been built in China since 983, in the Netherlands from 1065 and in Britain from the 1560s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lock (water navigation)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lock_(water_navigation)",
+     "locator": "section \"Historic lock designs\"",
+     "quote": "Historic lock designs, which are no longer used for constructing new locks as these have now been replaced by newer and better designs, are as follows:",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Pound lock (FISH Thesaurus of Monument Types, concept 92981)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92981.html",
+     "locator": "scope note",
+     "quote": "A common type of lock in the form of a chamber with gates on either side.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "Lock (water navigation)",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lock_(water_navigation)",
+     "locator": "lead",
+     "quote": "The distinguishing feature of a lock is a chamber in a permanently fixed position in which the water level can be varied.",
+     "about": [
+      "plan"
+     ]
     }
    ]
   },
@@ -202,7 +930,82 @@
    "name": "River navigation",
    "family": "Waterways",
    "domain": "Transport",
-   "fish": "70303"
+   "fish": "70303",
+   "period": {
+    "text": "rivers used by small boats since the Middle Ages; the Wey Navigation, opened 1653 with 12 locks, one of the first in England (cuts from 1618); the Don from 1726; the last major work was the enlargement of the Sheffield and South Yorkshire Navigation in the early 1980s (c. 1980)",
+    "from": 1653,
+    "to": 1980
+   },
+   "plan": "man-made cuts joined to dredged and straightened stretches of the river, with locks",
+   "sources": [
+    {
+     "title": "Wey and Godalming Navigations",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wey_and_Godalming_Navigations",
+     "locator": "lead",
+     "quote": "The Wey was one of the first rivers in England to be made navigable; the River Wey Navigation opened in 1653, with 12 locks between Weybridge and Guildford, and the Godalming Navigation, with a further four locks, was completed in 1764.",
+     "about": [
+      "period",
+      "plan"
+     ]
+    },
+    {
+     "title": "Wey and Godalming Navigations",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wey_and_Godalming_Navigations",
+     "locator": "section \"History\"",
+     "quote": "It had been used by small boats since medieval times, and some improvements were made to the channel from 1618.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "River Don Navigation",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/River_Don_Navigation",
+     "locator": "lead",
+     "quote": "The first act of Parliament to improve navigation on the river was obtained in 1726, by a group of Cutlers based in Sheffield",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"History of commercial carrying\"",
+     "quote": "The last major investment development of the inland waterways was the enlargement of the Sheffield and South Yorkshire Navigation in the early 1980s to cope with barges of standard European dimensions that never came.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wey and Godalming Navigations",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wey_and_Godalming_Navigations",
+     "locator": "lead",
+     "quote": "The navigations consist of both man-made canal cuts and adapted (dredged and straightened) parts of the River Wey.",
+     "about": [
+      "plan"
+     ]
+    },
+    {
+     "title": "River navigation (FISH Thesaurus of Monument Types, concept 70303)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70303.html",
+     "locator": "scope note",
+     "quote": "A river canalized for shipping.",
+     "about": [
+      "plan"
+     ]
+    }
+   ]
   },
   {
    "id": "canal",
@@ -211,8 +1014,13 @@
    "domain": "Transport",
    "fish": "70288",
    "period": {
-    "text": "Roman (Foss Dyke); the Newry Canal 1742, the Sankey 1757, the Bridgewater 1761; replaced by railways from the mid-19th century",
-    "from": 1742
+    "text": "Roman canals, mainly for irrigation, but the Foss Dyke from the Trent to Lincoln is usually thought Roman, c. AD 120 (no consensus), and is still navigable; the Exeter Canal, 1564-1566, the first since; the Newry Canal 1742, the Sankey 1757, the Bridgewater 1761; most built in the Canal Mania of the 1790s to 1810s; replaced by railways from the mid-19th century; the New Junction Canal, 1905, the last new one for nearly a century, but new links (the Ribble Link, the Liverpool Canal Link) have been built since",
+    "from": 120,
+    "flourish": [
+     1790,
+     1819
+    ],
+    "ongoing": true
    },
    "sources": [
     {
@@ -221,7 +1029,87 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Newry_Canal",
      "locator": "section \"History\"",
-     "quote": "The Newry Canal was the first summit level canal to be built in Ireland or Great Britain,  and pre-dated the more famous Bridgewater Canal by nearly thirty years and Sankey Canal by fifteen years."
+     "quote": "The Newry Canal was the first summit level canal to be built in Ireland or Great Britain,  and pre-dated the more famous Bridgewater Canal by nearly thirty years and Sankey Canal by fifteen years.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"History of commercial carrying\"",
+     "quote": "Canals first saw use during the Roman occupation of the south of Great Britain and were used mainly for irrigation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Exeter Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Exeter_Canal",
+     "locator": "section \"History\"",
+     "quote": "Work began in February 1564, and was completed in Autumn 1566 or early 1567.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canal mania",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canal_mania",
+     "locator": "lead",
+     "quote": "Canal Mania was the period of intense canal building in England and Wales between the 1790s and 1810s, and the speculative frenzy that ensued in the early 1790s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"History of commercial carrying\"",
+     "quote": "From the mid-19th century, railways began to replace canals, especially those built with the standard narrow (7 ft [2.1 m]) bridges and locks.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"History of commercial carrying\"",
+     "quote": "However, the last new canal before the end of the 20th century was the New Junction Canal in Yorkshire (now South Yorkshire) in 1905.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canals of the United Kingdom",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canals_of_the_United_Kingdom",
+     "locator": "section \"Growth of leisure use\"",
+     "quote": "As a result of this growing revival of interest, for the first time in a century some new routes have been constructed (the Ribble Link and the Liverpool Canal Link), another is under construction (the Fens Waterways Link).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Foss Dyke",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foss_Dyke",
+     "locator": "lead",
+     "quote": "It is usually thought to have been built around AD 120 by the Romans, but there is no consensus among authors.",
+     "about": [
+      "period"
+     ]
     }
    ]
   },
@@ -232,9 +1120,11 @@
    "domain": "Transport",
    "fish": "71329",
    "period": {
-    "text": "the Wollaton Wagonway, 1604, perhaps some older",
-    "from": 1604
+    "text": "the Wollaton Wagonway, 1603-1604, the first in Britain apart from guide-pin tracks (German miners at Keswick, c. 1568); many in the coalfields; cast-iron rails from 1767; horse wagonways were argued obsolete in 1821 and gave way to steam railways from 1825",
+    "from": 1604,
+    "to": 1825
    },
+   "structure": "wooden rails, reinforced with iron bars from 1760 and replaced by cast-iron rails from 1767",
    "sources": [
     {
      "title": "Wagonway",
@@ -242,7 +1132,66 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Wagonway",
      "locator": "section \"Wooden rails\"",
-     "quote": "In 1604, Huntingdon Beaumont completed the Wollaton Wagonway, built to transport coal from the mines at Strelley to Wollaton Lane End, just west of Nottingham, England."
+     "quote": "In 1604, Huntingdon Beaumont completed the Wollaton Wagonway, built to transport coal from the mines at Strelley to Wollaton Lane End, just west of Nottingham, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wollaton Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wollaton_Wagonway",
+     "locator": "lead",
+     "quote": "The Wollaton Wagonway (or Waggonway), built between October 1603 and 1604 in the East Midlands of England by Huntingdon Beaumont in partnership with Sir Percival Willoughby, was the first railway in Britain, excluding systems using a guided pin",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "section \"Wooden rails\"",
+     "quote": "Around 1568, German miners working in the Mines Royal near Keswick used such a system.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "section \"Steam power\"",
+     "quote": "In 1821 when a wagonway was proposed to connect the mines at West Durham, Darlington and the River Tees at Stockton, George Stephenson successfully argued that horse-drawn wagonways were obsolete and a steam-powered railway could carry 50 times as much coal.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "section \"Metal rails\"",
+     "quote": "In 1760, the Coalbrookdale Iron Works began to reinforce their wooden-railed tramway with iron bars, which were found to facilitate passage and diminish expenses.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Wagonway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wagonway",
+     "locator": "section \"Metal rails\"",
+     "quote": "As a result, in 1767, they began to make cast iron rails.",
+     "about": [
+      "structure",
+      "period"
+     ]
     }
    ]
   },
@@ -251,7 +1200,84 @@
    "name": "Railway",
    "family": "Railways",
    "domain": "Transport",
-   "fish": "70241"
+   "fish": "70241",
+   "period": {
+    "text": "the first locomotive-hauled public railway in 1825 (the Middleton Railway, a wagonway of 1758, is the oldest still working); rapid growth to about 1900, above all from the projects of 1844-1846, then attrition and the cuts of the 1950s and 1960s; still built (27 new lines 1995-2009, High Speed 1 from 2003)",
+    "from": 1825,
+    "flourish": [
+     1825,
+     1900
+    ],
+    "ongoing": true
+   },
+   "sources": [
+    {
+     "title": "Rail transport in Great Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rail_transport_in_Great_Britain",
+     "locator": "lead",
+     "quote": "The first locomotive-hauled public railway opened in 1825, which was followed by an era of rapid expansion.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Middleton Railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Middleton_Railway",
+     "locator": "lead",
+     "quote": "It was founded in 1758 and is now a heritage railway, run by volunteers from The Middleton Railway Trust Ltd.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rail transport in Great Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rail_transport_in_Great_Britain",
+     "locator": "lead",
+     "quote": "After the initial period of rapid expansion following the first public railways in the early 19th century, from about 1900 onwards the network suffered from gradual attrition, and more severe rationalisation in the 1950s and 1960s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Railway mania",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Railway_mania",
+     "locator": "section \"Results\"",
+     "quote": "A total of 6,220 miles (10,010 km) of railway line were built as a result of projects authorised between 1844 and 1846",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rail transport in Great Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rail_transport_in_Great_Britain",
+     "locator": "section \"Proposed line re-openings\"",
+     "quote": "From 1995 until 2009, 27 new lines (totalling 199 track miles) and 68 stations were opened",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rail transport in Great Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rail_transport_in_Great_Britain",
+     "locator": "section \"Reorganisation and privatisation\"",
+     "quote": "In 2003 the first part of High Speed 1, a high-speed link to the Channel Tunnel and onward to France and Belgium, was completed, significantly adding to the rail infrastructure of the country.",
+     "about": [
+      "period"
+     ]
+    }
+   ]
   },
   {
    "id": "railway-station",
@@ -260,8 +1286,9 @@
    "domain": "Transport",
    "fish": "70247",
    "period": {
-    "text": "the first recorded 1807 (horse-drawn); Crown Street, Liverpool, 1830, the oldest terminal",
-    "from": 1807
+    "text": "the first recorded 1807 (horse-drawn); Crown Street, Liverpool, 1830, the oldest terminal; still built (68 new stations 1995-2009)",
+    "from": 1807,
+    "ongoing": true
    },
    "sources": [
     {
@@ -270,7 +1297,10 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Train_station",
      "locator": "section \"History\"",
-     "quote": "The world's first recorded railway station, for trains drawn by horses rather than engined locomotives, began passenger service in 1807."
+     "quote": "The world's first recorded railway station, for trains drawn by horses rather than engined locomotives, began passenger service in 1807.",
+     "about": [
+      "period"
+     ]
     },
     {
      "title": "Train station",
@@ -278,7 +1308,21 @@
      "kind": "reference",
      "url": "https://en.wikipedia.org/wiki/Train_station",
      "locator": "section \"History\"",
-     "quote": "The oldest terminal station in the world was Crown Street railway station in Liverpool, England, built in 1830, on the locomotive-hauled Liverpool to Manchester line."
+     "quote": "The oldest terminal station in the world was Crown Street railway station in Liverpool, England, built in 1830, on the locomotive-hauled Liverpool to Manchester line.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Rail transport in Great Britain",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rail_transport_in_Great_Britain",
+     "locator": "section \"Proposed line re-openings\"",
+     "quote": "From 1995 until 2009, 27 new lines (totalling 199 track miles) and 68 stations were opened",
+     "about": [
+      "period"
+     ]
     }
    ]
   }

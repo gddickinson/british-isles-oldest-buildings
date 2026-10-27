@@ -13,7 +13,8 @@ const TourLib = (() => {
                    victorian: "Victorian", underground: "Underground",
                    coastal: "Coastal defences", military: "Military heritage",
                    museums: "Museums & galleries", bridges: "Bridges",
-                   digs: "Archaeology & digs" };
+                   digs: "Archaeology & digs", trade: "Markets & trade", sport: "Sport & leisure",
+                   civic: "Schools, hospitals & town halls", graves: "Graves & churchyards" };
   const rad = Math.PI / 180;
   const km = (a, b) => {
     const h = Math.sin((b.lat - a.lat) * rad / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin((b.lon - a.lon) * rad / 2) ** 2;

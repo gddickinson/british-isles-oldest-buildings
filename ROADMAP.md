@@ -954,6 +954,15 @@ export, coverage on the Data quality page, hosted copy via `data/pron.json`.
 - [ ] Hosted copy: recordings open on Commons (external media are blocked in the sandbox).
 
 ## Stories and tours (added 2026-10-20)
+- [x] Quiz and tours brought up to date (2026-10-27): quizzes "Oldest things" (which is the oldest recipe, book,
+      song…? easy from other themes, hard from the same) and "What is it built of?" (a photo; materials found in the
+      register text or on Wikidata, walls first; wrong answers never one of its materials or related to them, hard
+      from the same group and kind); the oldest things also in "How old is it?" and, from AD 43, "Which came first?"
+      (15 quizzes). Tours: four themes for the newer place groups, markets & trade, sport & leisure, schools,
+      hospitals & town halls, graves & churchyards (39 tours; 407 in all), also in "Suggest a tour".
+      `tour_surface` keeps its downloads by the route's points (regenerated tours keep their ids, not their routes).
+- [ ] Graves & churchyards gave one walk (few burial grounds with an article within walking distance of each other):
+      allow cemeteries without an article as tour stops, or a shorter APART for walks of that theme.
 - [x] Stories from full Wikipedia articles (`bidb/stories.py`): 1,904 stories for 1,326 records in four
       themes (ghosts & the supernatural, legends & myths, folklore & customs, curious history); detail
       views, Stories page with map, catalogue filter, hosted copy (`data/stories.json`), 2026-10-20.

@@ -81,13 +81,16 @@ def shares(samples, ways):
 
 def fetch_ways(samples, name, chunk=40):
     """Ways along the route, asked for in pieces of `chunk` points (long lines come back empty); an empty
-    answer is not kept, so a busy server's reply is tried again next time."""
+    answer is not kept, so a busy server's reply is tried again next time. Kept by the route's points, not only
+    the tour's id: regenerated tours keep their ids but may take another route."""
+    import hashlib
     from app.basemap_sources import CACHE, overpass
+    digest = hashlib.sha1(repr([(round(a, 5), round(b, 5)) for a, b in samples]).encode()).hexdigest()[:10]
     ways = {}
     for i in range(0, len(samples), chunk):
         part = samples[max(0, i - 1):i + chunk]
         coords = ",".join(f"{a:.5f},{b:.5f}" for a, b in part)
-        key = f"tour_surface_{name}_{i // chunk}"
+        key = f"tour_surface_{name}_{digest}_{i // chunk}"
         res = overpass(f"[out:json][timeout:180];way[highway](around:12,{coords});out tags geom;", key, pause=2)
         if not res.get("elements"):
             (CACHE / f"osm_{key}.json").unlink(missing_ok=True)

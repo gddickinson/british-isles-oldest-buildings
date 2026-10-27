@@ -1,5 +1,6 @@
 // The quizzes: each makes a round of questions from photographed buildings (/api/quiz) and the quiz pool
-// (/api/quiz_pool: names to say, stories, history events, the researched oldest lists, building types). Used by quiz.js.
+// (/api/quiz_pool: names to say, stories, history events, the researched oldest lists and oldest things, building
+// types, materials). Used by quiz.js.
 // A question: { prompt (HTML), image?, choices: [{ value, label, sub?, image? }], answer (value, or a list of
 // values in order for "order" questions), explain (HTML), link? }.
 const QuizKinds = (() => {
@@ -19,6 +20,9 @@ const QuizKinds = (() => {
   const when = (b) => `${esc(b.date_text || yr(b.year_start))} (${esc(b.period)})`;
   const where = (b) => esc([b.locality, b.county !== b.locality && b.county, b.nation].filter(Boolean).join(", "));
   const typeLink = (t) => `<a href="${IS_STATIC ? "types.html" : "/types"}?t=${encodeURIComponent(t.id)}" target="_blank" rel="noopener">${esc(t.name)}</a>`;
+  const thingsUrl = IS_STATIC ? "things.html" : "/things";
+  const thingLink = (t) => `<a href="${thingsUrl}#thing-${encodeURIComponent(t.id)}" target="_blank" rel="noopener">${esc(t.name)}</a>`;
+  const matLink = (m) => `<a href="${IS_STATIC ? "types.html" : "/types"}?m=${encodeURIComponent(m.id)}" target="_blank" rel="noopener">${esc(m.name)}</a>`;
   const photo = (b) => ({ value: b.id, label: b.name, image: b.image_thumb, sub: b.category });
 
   // `n` items from `pool` that pass `ok` against each other (e.g. different enough dates), or null
@@ -158,7 +162,7 @@ const QuizKinds = (() => {
       });
     } };
 
-  K.ages = { title: "How old is it?", icon: "🌳", blurb: "Ancient trees, graves, markets, roads and sport: the oldest things that are not buildings.",
+  K.ages = { title: "How old is it?", icon: "🌳", blurb: "Ancient trees, graves, markets, roads, sport, recipes, books and customs: the oldest things that are not buildings.",
     make(d, hard) {
       const pool = d.pool.lists.filter((e) => e.age);
       return take(pool, 10).map((e) => {
@@ -167,11 +171,11 @@ const QuizKinds = (() => {
         const ch = options(e, hard ? near.slice(0, 6) : near.slice(5), (x) => x.age);
         return { prompt: `<p class="quiz-big">${esc(e.name)}</p><p class="hint">${esc(e.category)} · ${esc(e.location || "")}</p>`,
           choices: ch.sort((a, b) => a.year - b.year).map((x) => ({ value: x.age, label: x.age })), answer: e.age,
-          explain: `<b>${esc(e.name)}</b>: ${esc(e.age)}${e.claim ? `, ${esc(e.claim)}` : ""}. <span class="hint">From the researched lists on the Oldest page.</span>` };
+          explain: `<b>${esc(e.name)}</b>: ${esc(e.age)}${e.claim ? `, ${esc(e.claim)}` : ""}. <span class="hint">From the researched lists on the ${/^Oldest things/.test(e.list) ? `<a href="${thingsUrl}">Oldest things</a>` : "Oldest"} page.</span>` };
       });
     } };
 
-  K.first = { title: "Which came first?", icon: "💡", blurb: "Inventions, laws and firsts of trade and industry: which came first?",
+  K.first = { title: "Which came first?", icon: "💡", blurb: "Inventions, laws, firsts of trade and industry, and the oldest things: which came first?",
     make(d, hard) {
       const gap = hard ? 5 : 30, pool = d.pool.firsts || [], out = [];
       for (let i = 0; i < 60 && out.length < 10; i++) {
@@ -180,8 +184,8 @@ const QuizKinds = (() => {
         const first = pair[0].year < pair[1].year ? pair[0] : pair[1];
         out.push({ ids: pair.map((x) => x.title), prompt: "<p>Which came first?</p>",
           choices: pair.map((x) => ({ value: x.title, label: x.title, sub: x.what })), answer: first.title,
-          explain: pair.map((x) => `<b>${esc(x.title)}</b>: ${x.year}${x.text ? ` — ${esc(x.text)}` : ""}`).join("<br>") +
-            ` <span class="hint">From the <a href="${IS_STATIC ? "trades.html" : "/trades"}">trade stories</a>.</span>` });
+          explain: pair.map((x) => `<b>${esc(x.title)}</b>: ${yr(x.year)}${x.text ? ` — ${esc(x.text)}` : ""}`).join("<br>") +
+            ` <span class="hint">From ${pair.some((x) => x.page === "things") ? `<a href="${thingsUrl}">Oldest things</a> and ` : ""}the <a href="${IS_STATIC ? "trades.html" : "/trades"}">trade stories</a>.</span>` });
       }
       return out;
     } };
@@ -220,11 +224,45 @@ const QuizKinds = (() => {
       return out;
     } };
 
+  K.things = { title: "Oldest things", icon: "📖", blurb: "The oldest recipe, book, song, law, game, custom or photograph: which is it?",
+    make(d, hard) {
+      const pool = d.pool.things || [];
+      return take(pool, 10).map((t) => {
+        // easy: the other answers from other themes; hard: from the same theme
+        const others = pool.filter((x) => x.id !== t.id && (hard ? x.theme === t.theme : x.theme !== t.theme));
+        const ch = options(t, others.length >= 3 ? others : pool.filter((x) => x.id !== t.id), (x) => x.id);
+        return { prompt: `<p>Which is <b>${esc(t.claim)}</b>?</p><p class="hint">${esc(t.age)}</p>`,
+          choices: ch.map((x) => ({ value: x.id, label: x.name, sub: hard ? "" : x.theme_title })), answer: t.id,
+          explain: `${thingLink(t)} (${esc(t.age)})${t.where ? `, ${esc(t.where)}` : ""}.${t.verdict === "open" ? ` <span class="hint">The claim is disputed: see the entry.</span>` : ""}` };
+      });
+    } };
+
+  K.material = { title: "What is it built of?", icon: "🧱", blurb: "A photo of a building: which of these materials or ways of building does it use?",
+    make(d, hard) {
+      const m = d.pool.materials || {}, kinds = new Map((m.kinds || []).map((k) => [k.id, k]));
+      const out = [], used = new Set();
+      for (const p of shuffle(m.photos || [])) {
+        if (out.length === 10) break;
+        const k = kinds.get(p.material);
+        if (!k || used.has(k.id)) continue;
+        used.add(k.id);
+        // never offer a material the building also has, or one related to them (sandstone beside red sandstone)
+        const no = new Set([...p.all, ...p.all.flatMap((x) => (kinds.get(x) || {}).related || [])]);
+        const free = [...kinds.values()].filter((x) => !no.has(x.id));
+        const same = free.filter((x) => (hard ? x.group === k.group && x.kind === k.kind : x.group !== k.group));
+        const ch = options(k, same.length >= 3 ? same : free, (x) => x.id);
+        out.push({ prompt: `<p>Which of these is <a href="${buildingUrl(p.id)}" target="_blank" rel="noopener">${esc(p.name)}</a> built of or with?</p><p class="hint">${esc(p.nation || "")}</p>`,
+          image: p.image_thumb, choices: ch.map((x) => ({ value: x.id, label: x.name, sub: hard ? "" : x.group })), answer: k.id,
+          explain: `${matLink(k)}${p.evidence ? `: “${esc(p.evidence)}”` : ""} <span class="hint">(${p.via === "register" ? "from the official list description" : "from Wikidata"}).</span>` });
+      }
+      return out;
+    } };
+
   K.mixed = { title: "Mixed bag", icon: "🎲", blurb: "A bit of everything, one question from each quiz and more.",
     make(d, hard) {
       const kinds = Object.keys(K).filter((k) => k !== "mixed" && !K[k].order);
       return shuffle(kinds.flatMap((k) => K[k].make(d, hard).slice(0, 2))).slice(0, 12);
     } };
 
-  return { KINDS: K, PERIODS, needsPool: (k) => ["say", "story", "history", "ages", "first", "typefirst", "nametype", "mixed"].includes(k) };
+  return { KINDS: K, PERIODS, needsPool: (k) => ["say", "story", "history", "ages", "first", "typefirst", "nametype", "things", "material", "mixed"].includes(k) };
 })();

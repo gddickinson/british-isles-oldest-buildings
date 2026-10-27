@@ -1920,3 +1920,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   with quotes and check results; `/api/things`; nav "Oldest things"; hosted copy `data/things.json`; Help section.
 - Tests 389 OK (new `test_oldest_things`); ui_check `things`, `things_search` and neighbours 5/5 (port 5079); light
   and dark screenshots checked.
+
+## 2026-10-27 — Quiz and tours brought up to date
+- Quiz (15 quizzes): new "Oldest things" (the claim of an entry of /things: which is it? easy from other themes,
+  hard from the same) and "What is it built of?" (`quiz_api.materials`: photographed records with materials found in
+  the register text or on Wikidata, not the looser Wikipedia sentences; walls first, `BUILT_OF`; windows left out;
+  wrong answers never one of the record's materials or related to them by a family link; hard from the same group
+  and kind). The first try asked a Biel chapel about wrought iron (its ironwork), hence walls first. The oldest things
+  also join "How old is it?" and, from AD 43, "Which came first?"; the "Oldest things" prompt no longer shows the
+  category (it gave the answer away). New `tests/test_quiz_materials.py`.
+- Tours: themes trade (Markets & trade, Innovations & firsts, markets, shops, banks), sport, civic (Public
+  institutions, schools, almshouses and hospitals, civic buildings), graves; titles (the first run stopped on a
+  missing title before writing anything); 407 tours (39 new: trade 13, sport 8, civic 10, graves 5; graves found one
+  walk only, roadmap). The builder's "Suggest a tour" offers them (it reads the server's themes).
+- `tour_surface` kept its Overpass answers by tour id: a regenerated tour with the same id and a new route would
+  take the old route's surfaces. Now keyed by a digest of the route's points too. Surfaces of the 63 bike rides are
+  being fetched again in the background (Overpass slow, ~3.5 min a ride; 2 done at commit): rides without one
+  show no surface line until it finishes.
+- Tests all OK; ui_check quiz pages (things, material, first, nametype) and tours (with new `tour_trade`) pass;
+  screenshots of both new quizzes and the trade tours checked. Demo site not updated yet.

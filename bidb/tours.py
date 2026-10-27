@@ -39,6 +39,13 @@ THEMES = {
     "digs": {"title": "Archaeology & digs", "test": lambda r: r.get("kind_group") == "Excavations"
              or r.get("kind_label") == "Hoard"},
     "underground": {"title": "Underground", "test": lambda r: r.get("kind_group") == "Underground"},
+    # the place groups added after the first tours (C3, sport, public institutions, graves)
+    "trade": {"title": "Markets & trade", "test": lambda r: r.get("kind_group") in ("Markets & trade", "Innovations & firsts")
+              or r.get("category") in ("Market / shop", "Bank / office")},
+    "sport": {"title": "Sport & leisure", "test": lambda r: r.get("kind_group") == "Sport & leisure"},
+    "civic": {"title": "Schools, hospitals & town halls", "test": lambda r: r.get("kind_group") == "Public institutions"
+              or r.get("category") in ("School / college", "Almshouse / hospital", "Civic building")},
+    "graves": {"title": "Graves & churchyards", "test": lambda r: r.get("kind_group") == "Graves & burial grounds"},
     "literary": {"title": "Literary places", "test": lambda r: r.get("kind_label") == "Literary place" or r.get("writer")},
     "prehistoric": {"title": "Prehistoric", "test": lambda r: r.get("period") in ("Neolithic", "Bronze Age", "Iron Age")
                     or r.get("category_group") == "Prehistoric" or r.get("kind_group") == "Archaeological sites"},
@@ -62,7 +69,9 @@ PLAN = {("highlights", "walk"): 45, ("highlights", "cycle"): 25, ("highlights", 
         ("coastal", "cycle"): 5, ("coastal", "drive"): 6, ("military", "drive"): 6, ("military", "walk"): 3,
         ("museums", "walk"): 10, ("museums", "drive"): 4,
         ("bridges", "walk"): 6, ("bridges", "cycle"): 5, ("bridges", "drive"): 6,
-        ("digs", "drive"): 6}
+        ("digs", "drive"): 6,
+        ("trade", "walk"): 8, ("trade", "drive"): 5, ("sport", "walk"): 4, ("sport", "drive"): 4,
+        ("civic", "walk"): 6, ("civic", "drive"): 4, ("graves", "walk"): 6, ("graves", "drive"): 4}
 # keep tours of the same theme and mode this far apart (km)
 APART = {"walk": 6, "cycle": 22, "drive": 60}
 COLUMNS = ["id", "mode", "theme", "title", "area", "nation", "summary", "distance_km", "duration_min",
@@ -157,7 +166,11 @@ def title_for(theme, mode, area):
             "prehistoric": f"Prehistoric {area} ({noun})",
             "castles": f"Castles of {area} ({noun})",
             "churches": f"Early churches around {area} ({noun})",
-            "roman": f"Roman {area} ({noun})"}[theme]
+            "roman": f"Roman {area} ({noun})",
+            "trade": f"Markets & trade of {area} ({noun})",
+            "sport": f"Sporting {area} ({noun})",
+            "civic": f"Schools, hospitals & town halls of {area} ({noun})",
+            "graves": f"Graves & churchyards of {area} ({noun})"}[theme]
 
 
 def _label(stop):

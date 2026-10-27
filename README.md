@@ -26,7 +26,7 @@ be shared read-only on your home network, and exports to a static copy that any 
 | **17,412** dated buildings, each date with its source, basis and a check against other sources | **870** researched claims with **1,660** quotes, re-checked in their sources by script |
 | **11,927** people linked to the buildings and places they built, owned, lived in or are buried in | **96 %** of buildings and **55,000** places with a photo; **3,111** paintings and prints |
 | **10,506** building outlines, **265** floor plans, **1,129** tree-ring dates on **592** buildings | **21** map layers, **17** historic maps plus 153 town plans, satellite and offline maps |
-| **2,443** stories, legends and ghost tales; **45,875** timeline events; **17,649** "on this day" entries | **368** ready-made walks, rides, drives and long-distance ways; **10** quizzes |
+| **2,443** stories, legends and ghost tales; **45,875** timeline events; **17,649** "on this day" entries | **407** ready-made walks, rides, drives and long-distance ways; **15** quizzes |
 | **7,734** pronunciations (2,145 recordings) in English and the languages of the isles | **17,935** links to Domesday Book (1086) |
 
 ## Contents
@@ -127,17 +127,17 @@ schools founded before 1900, hospitals, prisons, courts, police, fire and post o
 ### Stories, tours and quizzes
 - **Stories:** the Grey Lady of Stirling Castle, the giant Cormoran, priest holes and smugglers' tunnels,
   taken from each record's Wikipedia article in four themes, with a map and **read aloud**.
-- **368 ready-made tours** (walks, rides, drives and 89 long-distance and pilgrim ways) along real paths
-  and roads, with distance, time and an **elevation profile**; or star (☆) anything to build **your own
+- **407 ready-made tours** (walks, rides, drives and 92 long-distance and pilgrim ways) along real paths
+  and roads, in 21 themes from castles and ghosts to markets and trade, sport, schools and hospitals, and graves, with distance, time and an **elevation profile**; or star (☆) anything to build **your own
   tour**, put it in the best order, and download GPX or KML.
-- **Ten quizzes**, easy or hard, with new questions every round: guess the period, which is older, oldest of
-  four, put them in order, which county, say the name, whose story, when did it happen, how old is it, and a
-  mixed bag.
+- **Fifteen quizzes**, easy or hard, with new questions every round: guess the period, which is older, oldest of
+  four, put them in order, which county, say the name, whose story, when did it happen, how old is it, which
+  came first, which type came first, name the type, the oldest things, what is it built of, and a mixed bag.
 
 <table>
 <tr><td width="50%"><img src="docs/img/tours.jpg" alt="Tours"><br><sub>A ghosts and legends walk in Cambridge along real streets</sub></td>
 <td width="50%"><img src="docs/img/tour_builder.jpg" alt="Your tour"><br><sub>Your tour: five stops in York in the best order, with an elevation profile</sub></td></tr>
-<tr><td width="50%"><img src="docs/img/quiz_menu.jpg" alt="Quizzes"><br><sub>Ten quizzes; best scores are kept in your browser</sub></td>
+<tr><td width="50%"><img src="docs/img/quiz_menu.jpg" alt="Quizzes"><br><sub>Fifteen quizzes; best scores are kept in your browser</sub></td>
 <td width="50%"><img src="docs/img/quiz_story.jpg" alt="Whose story?"><br><sub>Whose story? A legend with the place's name hidden</sub></td></tr>
 <tr><td width="50%"><img src="docs/img/quiz_order.jpg" alt="Put them in order"><br><sub>Put them in order: tap four buildings from oldest to newest</sub></td>
 <td width="50%"><img src="docs/img/stories.jpg" alt="Stories"><br><sub>Stories: ghosts and the supernatural, with a map</sub></td></tr>
@@ -221,7 +221,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 | **Pronunciation** | How to say the names, by variety | The Welsh chip; ▶ plays a recording |
 | **Stories** | Ghosts, legends, folklore, curious history | Read one aloud |
 | **Tours** | Ready-made routes, or your own from ☆ | ✨ Suggest a tour from your town |
-| **Quiz** | Ten quizzes, easy or hard | Say the name, then Hard |
+| **Quiz** | Fifteen quizzes, easy or hard | Say the name, then Hard |
 | **History** | A short history, events on a map, on this day | ‹ › for other days |
 | **Oldest by type** | The oldest of each building type and the researched lists | The verdicts on famous claims |
 | **Oldest things** | The oldest recipes, books, songs, laws, games, customs, objects and pictures | Theme chips, oldest first, the map of where they are |

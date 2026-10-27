@@ -8,8 +8,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
-  series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 267
+  series, 73 events, 23 map layers, 19 notes, 116 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -71,10 +71,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       in 1902 → 16.1d in 1919) and "Duty on tea" (steps at each dated change, 1874–1938, from the tariffs of 1874 and 1921
       and the tables of taxes reduced or increased; Empire rate from 1919 as a second line, none printed for 1922–29).
       Edition, leaf and page per row in `change/data/tea_price_uk.csv`, `tea_duty_uk.csv`, `tea_duty_empire_uk.csv`.
-- [ ] C2d3b Later and earlier tea prices and duty: "Tea—Indian average, London Auctions" (wholesale, No. 83 and the
-      1930s editions; a different measure), prices by origin (India and Ceylon, China) 1908–1922 (Nos. 67–68), the duty
-      before 1874 (the Abstract lists the 1865 cut without rates; needs the tariff Acts or another quoted source) and
-      after 1938 (wartime editions).
+- [x] C2d3b1 (2026-10-27; C2d3b split) Later tea prices, read from the page images: "Wholesale price of tea"
+      (`tea_auction_uk`, "Tea—Indian average, London Auctions", d. a lb: No. 78 table 156 pp. 224-225, 1913 and
+      1920-33; No. 83 table 192 pp. 258-259, 1924-38; overlaps equal; none printed 1914-19, dotted): 14.06d. in 1913,
+      25.23 in 1923, 10.24 in 1932, 19.44 in 1938. Tea from India and Ceylon and from China (`tea_price_india_uk`,
+      `tea_price_china_uk`, No. 68 table 49 pp. 218-219, 1908-22, declared values c.i.f.) drawn as two more lines on
+      "Price of imported tea" (India within 0.5d. of all tea 1908-19; China 39.80d. in 1918 as printed). No. 77's OCR
+      gives 1922 as 22.98; the page reads 22.93. No. 67's page index does not lead to its import-price page (1906-07
+      left out). The new graph is also on the tea story.
+- [ ] C2d3b2 Tea duty before 1874 and after 1938: the Abstract lists the 1865 cut without rates, and the Annual
+      Abstracts from No. 84 print no customs tariff or tea duty (checked 2026-10-27), so both need the Finance Acts
+      (legislation.gov.uk, OGL) or another quoted source. Also the prices by country before 1865 (No. 13 p. 37: China,
+      India, Japan).
 - [x] C2d4 (2026-10-23) Tea after 1974: Defra's Family Food "UK - household purchases" (OGL; code 304 Tea, g a person a
       week, National Food Survey 1974–2000, then EFS/LCFS to 2024-25) → series `tea_household_uk` (lb a year), a third
       line on "Tea drunk per person": 7.8 lb in 1974 (MAFF supplies: 7.8), 4.2 in 2000, 2.4 in 2024-25; tea drunk away

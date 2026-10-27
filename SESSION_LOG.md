@@ -1969,3 +1969,16 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `bidb.nation_geo` (nations for the 16). Detail views label `inventors` "Invented or discovered by".
 - Tests 394 OK (new `test_innovations_wd`); ui_check places OK; card checked in a screenshot. Demo site and hosted
   copy not updated (the database changed: next release).
+
+## 2026-10-27 — C2d3b1: later tea prices
+- C2d3b split: C2d3b1 prices (done), C2d3b2 duty before 1874 and after 1938 (pending: the Annual Abstracts from
+  No. 84 print no tariff; needs the Finance Acts).
+- New graph "Wholesale price of tea" (`tea_auction_uk`): "Tea—Indian average, London Auctions" from the Board of
+  Trade's wholesale prices table, read from the page images of No. 78 (table 156, pp. 224-225: 1913, 1920-33) and
+  No. 83 (table 192, pp. 258-259: 1924-38); overlapping years equal. 14.06d. a lb in 1913, 25.23 in 1923, 10.24 in
+  1932, 19.44 in 1938; 1914-19 not printed (`gap: 2`, drawn dotted). No. 77's OCR misreads 1922 (22.98; page 22.93).
+- "Price of imported tea" now carries tea from India and Ceylon and from China (No. 68 table 49 pp. 218-219,
+  1908-22) as two more lines (`models`); India within 0.5d. of all tea 1908-19; China 39.80d. in 1918 as printed.
+- Tea trade story shows the new graph. New `tests/test_tea_prices.py`; ui_check `change_tea` now requires the
+  wholesale graph. Tests 397 OK; ui_check change_tea, trades OK; light and dark screenshots checked. Hosted copy not
+  updated.

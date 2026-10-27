@@ -1282,7 +1282,56 @@
    "stat_abstract_uk"
   ],
   "file": "tea_price_uk.csv",
-  "note": "The average price of all tea imported into the United Kingdom, in pence (old pence, 240 to the pound sterling) per lb, as the Board of Trade's Statistical Abstract printed it in its table of the average prices of articles imported: the value of the year's imports divided by their quantity, before duty. 1865-1870 are \"from computed values\" and 1871 onwards \"from declared values\" (the importers' own declarations), so the two parts are not strictly comparable. Read from the page images of Nos. 27, 30, 45, 46, 59 and 66; where editions overlap (1868-72, 1884-90, 1897-98, 1905-11) they agree to the hundredth of a penny. Before 1865 the Abstract gives tea prices only by country of origin (China, India, Japan), and after 1919 only for tea from India and Ceylon and from China, so neither is joined to this line. The price fell from 19.9d. a lb in 1865 to 12.6d. in 1882, 9.4d. in 1897 and 7.2d. in 1902, then rose with the war to 16.1d. in 1919."
+  "models": [
+   "tea_price_india_uk",
+   "tea_price_china_uk"
+  ],
+  "note": "The average price of all tea imported into the United Kingdom, in pence (old pence, 240 to the pound sterling) per lb, as the Board of Trade's Statistical Abstract printed it in its table of the average prices of articles imported: the value of the year's imports divided by their quantity, before duty. 1865-1870 are \"from computed values\" and 1871 onwards \"from declared values\" (the importers' own declarations), so the two parts are not strictly comparable. Read from the page images of Nos. 27, 30, 45, 46, 59 and 66; where editions overlap (1868-72, 1884-90, 1897-98, 1905-11) they agree to the hundredth of a penny. Before 1865 the Abstract gives tea prices only by country of origin (China, India, Japan), and from 1908 (No. 68) by origin only: tea from India and Ceylon and tea from China, drawn as two more lines for 1908-1922 rather than joined to this one. The price fell from 19.9d. a lb in 1865 to 12.6d. in 1882, 9.4d. in 1897 and 7.2d. in 1902, then rose with the war to 16.1d. in 1919. For prices after 1919 see \"Wholesale price of tea\", a different measure."
+ },
+ {
+  "id": "tea_price_india_uk",
+  "theme": "Prosperity and work",
+  "title": "Price of imported tea from India and Ceylon",
+  "region": "United Kingdom",
+  "unit": "d. a lb",
+  "unit_long": "pence per pound: average declared value (c.i.f.) of the tea imported from India and Ceylon",
+  "label": "Tea from India and Ceylon (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_price_india_uk.csv",
+  "hidden": true,
+  "note": "Average declared value per lb (c.i.f.) of tea imported into the United Kingdom from India and Ceylon, from the Statistical Abstract No. 68 (1908-1922), table 49 \"Average declared values per unit (c.i.f.) of the undermentioned articles imported\", pp. 218-219, read from the page images. 7.96d. in 1908, 9.17d. in 1913, 15.99d. in 1919, 12.75d. in 1921, 15.34d. in 1922. It runs close to the average price of all tea for the years both are printed (1908-1919: 7.96d. against 7.96d. in 1908, 9.17d. against 9.06d. in 1913, 15.99d. against 16.05d. in 1919)."
+ },
+ {
+  "id": "tea_price_china_uk",
+  "theme": "Prosperity and work",
+  "title": "Price of imported tea from China",
+  "region": "United Kingdom",
+  "unit": "d. a lb",
+  "unit_long": "pence per pound: average declared value (c.i.f.) of the tea imported from China",
+  "label": "Tea from China (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_price_china_uk.csv",
+  "hidden": true,
+  "note": "Average declared value per lb (c.i.f.) of tea imported into the United Kingdom from China, from the Statistical Abstract No. 68 (1908-1922), table 49, pp. 218-219, read from the page images. 8.44d. in 1908, 9.03d. in 1913, 12.89d. in 1917; 39.80d. in 1918 as printed, 17.40d. in 1919, 15.96d. in 1922."
+ },
+ {
+  "id": "tea_auction_uk",
+  "theme": "Prosperity and work",
+  "title": "Wholesale price of tea",
+  "region": "United Kingdom",
+  "unit": "d. a lb",
+  "unit_long": "pence per pound: Indian tea, average price at the London auctions",
+  "label": "Indian tea at the London auctions (Statistical Abstract)",
+  "sources": [
+   "stat_abstract_uk"
+  ],
+  "file": "tea_auction_uk.csv",
+  "gap": 2,
+  "note": "\"Tea - Indian average, London Auctions\", in pence per lb, from the Board of Trade's table of wholesale prices of commodities in the Statistical Abstract: No. 78 (table 156, pp. 224-225: 1913 and 1920-1933) and No. 83 (table 192, pp. 258-259: 1924-1938), read from the page images; the years printed in both agree. The editions give 1913 and then 1920 onwards, so 1914-1919 have no figure (dotted). A wholesale auction price of one kind of tea, not the average value of all tea imported, so it is not joined to \"Price of imported tea\": in 1913 the auction average was 14.06d. a lb against 9.17d. for the declared value of tea from India and Ceylon. 23.54d. in 1920, 25.23d. in 1923, down to 10.24d. in 1932 (the duty was off tea from 1929 to 1932), back to 19.44d. in 1938."
  },
  {
   "id": "tea_duty_uk",

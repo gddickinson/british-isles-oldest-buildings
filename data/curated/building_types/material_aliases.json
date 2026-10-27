@@ -53,21 +53,32 @@
     "Q1624070": "pantile",
     "Q2227106": "wooden-shingles",
     "Q1473346": "stained-glass",
-    "Q2469680": "cylinder-glass"
+    "Q2469680": "cylinder-glass",
+    "Q13085": "sandstone",
+    "Q23757": "limestone",
+    "Q41177": "granite",
+    "Q3115353": "granite",
+    "Q60998793": "granite",
+    "Q40861": "marble",
+    "Q40088": "marble",
+    "Q183670": "chalk",
+    "Q682083": "coade-stone",
+    "Q6731360": "magnesian-limestone",
+    "Q2920343": "sarsen",
+    "Q8055782": "york-stone",
+    "Q63385305": "reigate-stone",
+    "Q6395575": "ketton-stone",
+    "Q4752538": "ancaster-stone",
+    "Q60793701": "heavitree-stone",
+    "Q14917025": "hopton-wood-stone"
   },
   "not_in_list": {
-    "_note": "Reviewed 2026-10-26. Generic stones (sandstone, limestone, granite, marble) have no entry of their own in materials_*.json: emergent task in the roadmap.",
+    "_note": "Reviewed 2026-10-26. Generic stones (sandstone, limestone, granite, marble, chalk) and the local stones with an entry (materials_stones.json) moved to `wikidata` the same day; Cornish granite and Carrara marble go to granite and marble.",
     "items": [
       "Q22731 stone",
       "Q34095 bronze",
-      "Q13085 sandstone",
-      "Q41177 granite",
-      "Q3115353 granite",
       "Q287 wood",
-      "Q23757 limestone",
       "Q22657 concrete",
-      "Q60793701 Heavitree stone",
-      "Q40861 marble",
       "Q121649 dimension stone",
       "Q11426 metal",
       "Q268547 roof tile",
@@ -78,24 +89,13 @@
       "Q1370714 structural wood",
       "Q468402 tile",
       "Q11469 glass",
-      "Q60998793 Cornish granite",
-      "Q682083 Coade stone",
-      "Q40088 Carrara marble",
-      "Q183670 chalk",
       "Q1024124 weathering steel",
       "Q272999 masonry",
       "Q7282754 rag-stone",
       "Q2509719 ironstone",
-      "Q8055782 Yorkstone",
       "Q107196234 freestone",
-      "Q6731360 magnesian limestone",
-      "Q14917025 Hopton Wood stone",
-      "Q2920343 sarsen",
       "Q274988 plaster",
-      "Q4752538 Ancaster stone",
       "Q59141442 Hornton stone",
-      "Q63385305 Reigate stone",
-      "Q6395575 Ketton stone",
       "Q5604432 greensand",
       "Q143447 alabaster",
       "Q944070 artificial stone"
@@ -546,9 +546,90 @@
     {
       "material": "glazed-brick",
       "pattern": "\\bglazed bricks?\\b"
+    },
+    {
+      "material": "sandstone",
+      "pattern": "\\bsandstones?\\b",
+      "cue": true
+    },
+    {
+      "material": "limestone",
+      "pattern": "\\blimestones?\\b",
+      "cue": true,
+      "ignore": "\\b(?:karst|landscapes?|bedrock|outcrops?|spurs?|plateau|rocky|cliffs?|caves?|kilns?|burnt|burning|pavements?|gorge|crags?|scars?|escarpment|hills?|ridge|formed from)\\b"
+    },
+    {
+      "material": "granite",
+      "pattern": "\\bgranite\\b",
+      "cue": true,
+      "ignore": "\\b(?:setts|kerbs?|plinths?|obelisks?|headstones?|gravestones?|crosses|cross|boulders?|tors?|outcrops?|intrusions?|hills?|soil|bedrock|insets?|surrounds?|clocks?|chimney ?pieces?|fountains?)\\b"
+    },
+    {
+      "material": "marble",
+      "pattern": "\\bmarbles?\\b",
+      "cue": false,
+      "ignore": "\\b(?:chimney ?pieces?|chimneys?|mantel\\w*|floors?|flooring|paving|paved|steps?|baths?|tables?|basins?|sculpt\\w*|carved|figures?|slabs?|panels?|inlaid|inlay|veneer|tiles?|mosaics?|elgin|marble halls?|murals?|recreat\\w*|reconstruct\\w*|tablets?|monuments?|memorials?|graves?|kerbs?|reredos|altars?|fonts?|busts?|statues?)\\b",
+      "near": "\\b(?:columns?|piers?|shafts?|shafting|faced|facing|cladding|clad|built|construct\\w*|fa[cç]ades?|walls?|dressings?|pillars?|arcades?|portico|colonnades?|exterior)\\b"
+    },
+    {
+      "material": "chalk",
+      "pattern": "\\b(?:clunch|chalk(?:stone)? (?:blocks?|rubble|ashlar|walls?|lump)|(?:of|in|with) (?:local |coursed |squared |dressed )?(?:chalk|chalkstone)\\b(?! (?:downs?|hills?|cliffs?|pits?|figures?|horses?|escarpment|grassland|downland|ridge|streams?|soils?|bedrock|spur|plateau|land|country)))",
+      "cue": true,
+      "ignore": "\\b(?:dumping|tons of|silt|ditch(?:es)?|cross in chalk|figures?|horse'?s?|siding|goods)\\b"
+    },
+    {
+      "material": "whinstone",
+      "pattern": "\\b(?:whinstone|whin (?:rubble|stone|walls?|masonry|ashlar|boulders?))\\b",
+      "cue": true
+    },
+    {
+      "material": "coade-stone",
+      "pattern": "\\bCoade(?:'s)?(?: artificial)? stone\\b|\\bCoadestone\\b",
+      "cue": true
+    },
+    {
+      "material": "magnesian-limestone",
+      "pattern": "\\bmagnesian limestone\\b",
+      "cue": true
+    },
+    {
+      "material": "sarsen",
+      "pattern": "\\bsarsens?\\b",
+      "ignore": "\\b(?:not|moved|naturally present)\\b"
+    },
+    {
+      "material": "york-stone",
+      "pattern": "\\bYork(?:shire)? ?stone\\b",
+      "cue": true,
+      "ignore": "\\b(?:flags?|flagstones?|paving|paved|slabs?|setts)\\b"
+    },
+    {
+      "material": "reigate-stone",
+      "pattern": "\\bReigate stone\\b",
+      "cue": true
+    },
+    {
+      "material": "ketton-stone",
+      "pattern": "\\bKetton (?:stone|limestone|freestone|ashlar)\\b",
+      "cue": true
+    },
+    {
+      "material": "ancaster-stone",
+      "pattern": "\\bAncaster (?:stone|limestone|freestone|ashlar)\\b",
+      "cue": true
+    },
+    {
+      "material": "heavitree-stone",
+      "pattern": "\\bHeavitree (?:stone|breccia|sandstone|conglomerate)\\b",
+      "cue": true
+    },
+    {
+      "material": "hopton-wood-stone",
+      "pattern": "\\bHopton[- ]?Wood (?:stone|limestone)\\b",
+      "cue": true
     }
   ],
-  "skip_sentence": "^(?:BOUNDARY|WALLED GARDEN|GARDEN|GATE|GATES|GATEPIERS|GATE ?PIERS|RAILINGS|BURIAL GROUND|GRAVEYARD|CHURCHYARD|LODGE|STABLES?|STEADING|OUTBUILDINGS?|OFFICES|ENCLOSURES?|SUNDIAL|WELL|DOVECOTE|ICE ?HOUSE|Boundary walls?|Burial ground|Churchyard|Gatepiers)\\b",
+  "skip_sentence": "^(?:FORMER )?(?:BOUNDARY|WALLED GARDEN|GARDEN|GATE|GATES|GATEPIERS|GATE ?PIERS|RAILINGS|BURIAL GROUND|GRAVEYARD|CHURCHYARD|LODGE|STABLES?|STEADING|OUTBUILDINGS?|OFFICES|ENCLOSURES?|SUNDIAL|WELL|DOVECOTE|ICE ?HOUSE|Boundary walls?|Burial ground|Churchyard|Gatepiers)\\b",
   "skip_kinds": [
     "burh",
     "park_garden"

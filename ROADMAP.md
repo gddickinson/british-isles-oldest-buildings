@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -726,10 +726,20 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [x] FISH scope notes cut short (found in BT4a, fixed 2026-10-26): `glossary.ADVICE` matched "use with" inside
       "house with" (case-insensitive, no word boundary), so 52 notes (Wealden house: "A medieval ho") were cut on the
       Glossary page too; now case-sensitive at a word boundary.
-- [ ] Generic stones for BT3 (emergent 2026-10-26): sandstone (334 Wikidata items, 938 text mentions), limestone,
-      granite, marble, chalk, Coade stone and local freestones (Ancaster, Ketton, Hopton Wood, Heavitree, Yorkstone)
-      have no entry in materials_*.json, so they are left out of material_map; research them as BT3a entries (sourced
-      periods and regions) and map them.
+- [x] Generic stones for BT3 (emergent 2026-10-26, done 2026-10-26): new `materials_stones.json`, 15 entries with
+      sourced periods, regions, technology and geology (127 quotes, all found): sandstone (from Coldrum's sarsens,
+      3980 BC), limestone (West Kennet, 37th century BC), granite (Brownshill dolmen), marble (Fishbourne, 75),
+      chalk and clunch (Hyde Abbey 1110), whinstone (St Giles' 12th century), Coade stone 1769-1840, Magnesian
+      Limestone, sarsen, York, Reigate (to the 1960s), Ketton, Ancaster, Heavitree (c. 1350-19th century), Hopton
+      Wood (1687-2006); 23 links: variants from limestone, sandstone, granite and marble to the 19 named stones, Coade
+      stone replaced by cast stone (probable). Materials marked `general` give way to their named variants in
+      `material_map` (`general_of`: a Bath stone church is not also limestone; rubble/ashlar and slate/Welsh slate
+      still both kept). 17 Wikidata P186 items moved from `not_in_list`; text rules with reviewed exclusions (marble
+      fittings, fonts and monuments, limestone landscapes, York stone paving, hill figures). Result: sandstone 1,874
+      links, limestone 570, granite 505, marble 145, whinstone 96; records linked 8,475 → 8,879, places 2,352 → 2,621.
+- [ ] Marble's earliest example is Chester Roman Amphitheatre (a sentence about a modern mural of it) (found
+      2026-10-26); and Hopton Wood stone has no examples (its P186 items are memorials of skipped kinds). Greensand,
+      ironstone, lias, Bargate stone, Pennant sandstone and Collyweston still have no entry (P186 and text mentions).
 - [ ] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
       layer. Split 2026-10-26: BT3c1 (materials on the detail views, the type pages and a material page of their
       own) is done with BT4a (2026-10-26); BT3c2 (the region over the geology layer) left open.

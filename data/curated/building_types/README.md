@@ -238,8 +238,11 @@ curiosities, Roman lighthouse: narrow types Wikidata does not class.
 
 `materials_stone.json` (stone, mortar and render: 22), `materials_earth_timber.json` (earth, timber: 18),
 `materials_brick.json` (brick and tile: 20), `materials_roofs.json` (coverings and roof structures: 19),
-`materials_modern.json` (glass, iron and steel, concrete, cements: 20), checked by `python -m bidb.building_materials`
-(quotes by `--quotes` → `data/building_materials_check.json`). 99 materials and techniques, 51 links (documented 39,
+`materials_modern.json` (glass, iron and steel, concrete, cements: 20), `materials_stones.json` (generic stones, Coade
+stone and local building stones: 15, with variant links from sandstone, limestone, granite and marble to the named
+stones; added 2026-10-26), checked by `python -m bidb.building_materials`
+(quotes by `--quotes` → `data/building_materials_check.json`). 114 materials and techniques, 74 links (the 23 of
+materials_stones.json not in the counts that follow) (documented 39,
 probable 11, disputed 1: did the brick tax drive builders to mathematical tiles, or were the tiles older and taxed
 too?), 978 quotes, all found. 73 carry a FISH concept from the Building Materials (`eh_tbm`) or Components
 (`eh_com`) thesaurus, same release and licence (OGL v3.0, stated on each scheme's pages at heritagedata.org).

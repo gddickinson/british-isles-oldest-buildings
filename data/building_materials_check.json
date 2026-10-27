@@ -1726,5 +1726,322 @@
    "quote-found"
   ],
   "checked": "2026-10-26"
+ },
+ "material:sandstone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:limestone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:granite": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:marble": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:chalk": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:whinstone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:coade-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:magnesian-limestone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:sarsen": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:york-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:reigate-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:ketton-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:ancaster-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:heavitree-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "material:hopton-wood-stone": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>bath-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>portland-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>purbeck-marble": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:marble>purbeck-marble": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>kentish-ragstone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>ham-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>cotswold-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>barnack-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>caen-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>kilkenny-marble": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:marble>kilkenny-marble": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>chalk": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>magnesian-limestone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>ketton-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>ancaster-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:limestone>hopton-wood-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:sandstone>red-sandstone": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:sandstone>gritstone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:sandstone>york-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:sandstone>reigate-stone": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:sandstone>sarsen": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:granite>aberdeen-granite": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "mlink:coade-stone>precast-concrete": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
  }
 }

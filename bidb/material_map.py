@@ -10,8 +10,10 @@ not repeated):
     wikipedia  the cached Wikipedia article (<cache>/wiki_articles.json, written by bidb.stories), sections not
                skipped, else the extract
 Text is matched by the term rules of material_aliases.json (bidb.material_text), and the sentence that matched is
-kept as evidence. A material named in a text may be of any phase of the building (a Norman church re-roofed in
-Welsh slate), so bidb.material_stats flags examples begun long before the material's first date.
+kept as evidence. The most specific stone is kept: a record built of Bath stone is not also linked to limestone
+(a material marked `general` gives way to the materials it has variant links to, `general_of`; other variants, as
+rubble and ashlar or slate and Welsh slate, are both kept). A material named in a text
+may be of any phase of the building (a Norman church re-roofed in Welsh slate), so bidb.material_stats flags examples begun long before the material's first date.
 Places are read when their kind is a building or structure (type_map's `skip_kinds` and the file's own left out).
 
     python -m bidb.material_map [--report]     → table material_map (entity_id, source, material_id, via, label,
@@ -34,6 +36,17 @@ from .stories import STORE
 PATH = building_materials.FOLDER / "material_aliases.json"
 COLUMNS = ("entity_id", "source", "material_id", "via", "label", "place", "evidence")
 VIAS = ("wikidata", "register", "wikipedia")
+
+
+def general_of(data):
+    """{material: {general materials it is a variant of}}: variant links of bidb.building_materials from a material
+    marked `general`."""
+    general = {m["id"] for m in data["materials"] if m.get("general")}
+    out = {}
+    for x in data["links"]:
+        if x["kind"] == "variant" and x["from"] in general:
+            out.setdefault(x["to"], set()).add(x["from"])
+    return out
 
 
 def load_aliases(path=PATH):
@@ -70,8 +83,9 @@ SELECT DISTINCT ?i ?m ?l WHERE {{ VALUES ?c {{ {" ".join("wd:" + c for c in COUN
 
 
 class Linker:
-    def __init__(self, aliases, known, wd_materials, articles):
+    def __init__(self, aliases, known, wd_materials, articles, general=None):
         self.qids, self.rules = aliases["wikidata"], Rules(aliases, known)
+        self.general = general or {}
         self.wd, self.articles = wd_materials, articles
 
     def from_wikidata(self, qid):
@@ -88,7 +102,8 @@ class Linker:
                            ("wikipedia", self.rules.find(self.wiki_blocks(title, extract)))):
             for mid, (label, where, ev) in found.items():
                 out.setdefault(mid, (mid, via, label, where, ev))
-        return list(out.values())
+        drop = {g for mid in out for g in self.general.get(mid, ())}
+        return [v for mid, v in out.items() if mid not in drop]
 
 
 def register_blocks(row):
@@ -124,12 +139,13 @@ def write(conn, out):
 
 def run(log=print):
     t0 = time.time()
-    known = {m["id"] for m in building_materials.load()["materials"]}
+    data = building_materials.load()
+    known = {m["id"] for m in data["materials"]}
     aliases = load_aliases()
     bad = problems(aliases, known)
     if bad:
         raise ValueError("material_aliases.json: " + "; ".join(bad))
-    linker = Linker(aliases, known, wikidata_materials(), load_store(STORE))
+    linker = Linker(aliases, known, wikidata_materials(), load_store(STORE), general_of(data))
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
     out = rows(conn, linker, type_map.load_aliases().get("skip_kinds", []) + aliases.get("skip_kinds", []))

@@ -1,0 +1,2115 @@
+{
+ "about": "Building materials (roadmap BT3a, generic stones): the common stones of the isles (sandstone, limestone, granite, marble, chalk and clunch, whinstone), Coade stone and local building stones (Magnesian Limestone, sarsen, York, Reigate, Ketton, Ancaster, Heavitree, Hopton Wood); variant links from each generic stone to the named stones of materials_stone.json. Fields as bidb/building_materials.py.",
+ "researched": "2026-10-26",
+ "materials": [
+  {
+   "id": "sandstone",
+   "name": "Sandstone",
+   "group": "Stone",
+   "kind": "material",
+   "general": true,
+   "fish": {
+    "scheme": "mat",
+    "id": "98171"
+   },
+   "period": {
+    "text": "Used since prehistory: the sarsens (a silicified sandstone) of Coldrum Long Barrow in Kent, where human remains were placed between 3980 and 3800 BC (-3980), are the earliest a source here names. Still quarried and built with.",
+    "from": -3980,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Throughout the isles: the Old and New Red Sandstones, the Carboniferous gritstones and York stone of the Pennines, the Cretaceous sandstones of the Weald",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Easy to work for its hardness, so a common building and paving stone; some beds weather badly and have had to be replaced in old buildings.",
+   "examples": [
+    {
+     "name": "Coldrum Long Barrow",
+     "year": -3980,
+     "note": "chamber of local sarsen megaliths"
+    }
+   ],
+   "note": "The more specific sandstones (red sandstones, gritstone, York stone, Reigate stone, sarsen) have entries of their own; a record that names one is linked to it, not to sandstone.",
+   "sources": [
+    {
+     "title": "Sandstone (FISH Building Materials, concept 98171)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98171.html",
+     "locator": "scope note",
+     "quote": "Geologically sandstone consists of particles of quartz naturally cemented together by either silica, calcium or iron."
+    },
+    {
+     "title": "Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sandstone",
+     "locator": "section \"Uses\"",
+     "quote": "Sandstone has been used since prehistoric times for construction, decorative art works and tools.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sandstone",
+     "locator": "section \"Uses\"",
+     "quote": "Although its resistance to weathering varies, sandstone is easy to work.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sandstone",
+     "locator": "section \"Uses\"",
+     "quote": "have had poor long-term weather resistance, necessitating repair and replacement in older buildings",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "lead",
+     "quote": "Sarsen stones are silicified sandstone blocks found extensively across Southern England",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "section \"Human remains\"",
+     "quote": "Radiocarbon dating of the human remains suggested that some were brought to the site between either 3980–3800 calibrated BCE",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "lead",
+     "quote": "Built out of earth and around fifty local sarsen-stone megaliths",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Old Red Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Red_Sandstone",
+     "locator": "lead",
+     "quote": "The presence of Old in the name is to distinguish the sequence from the younger New Red Sandstone which also occurs widely throughout Britain.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "lead",
+     "quote": "Millstone Grit is any of a number of coarse-grained sandstones of Carboniferous age which occur in the British Isles.",
+     "about": [
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "limestone",
+   "name": "Limestone",
+   "group": "Stone",
+   "kind": "material",
+   "general": true,
+   "fish": {
+    "scheme": "mat",
+    "id": "98028"
+   },
+   "period": {
+    "text": "Used since prehistory: oolitic limestone from the Cotswolds walls the chamber of West Kennet Long Barrow, built in the 37th century BC (-3650 stands for it); the Romans and the medieval church builders used it widely. Still quarried and built with.",
+    "from": -3650,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Quarried and used throughout the isles: the Jurassic belt from Dorset to Yorkshire (Portland, Bath, Cotswold, Ham Hill, Barnack, Ketton, Ancaster), the Magnesian Limestone of the north-east, the Carboniferous limestone of the Pennines, Wales and most of Ireland",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "Readily available, easy to cut into blocks and to carve, and lasting, but heavy; burnt in kilns it also gave the lime of mortar and render.",
+   "examples": [
+    {
+     "name": "West Kennet Long Barrow",
+     "year": -3650,
+     "note": "dry-stone walling of oolitic limestone"
+    },
+    {
+     "name": "Norwich Cathedral",
+     "year": 1096,
+     "note": "limestone from Lincolnshire, Barnack and Caen over flint"
+    }
+   ],
+   "note": "The named limestones (Portland, Bath, Purbeck, Kentish rag, Ham Hill, Cotswold, Barnack, Caen, Kilkenny, chalk, Magnesian, Ketton, Ancaster, Hopton Wood) have entries of their own; a record that names one is linked to it, not to limestone.",
+   "sources": [
+    {
+     "title": "Limestone (FISH Building Materials, concept 98028)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98028.html",
+     "locator": "scope note",
+     "quote": "Sedimentary rock consisting mainly of calcium carbonate. Varying in grain size, colour and hardness, quarried and used throughout the country.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "West Kennet Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/West_Kennet_Long_Barrow",
+     "locator": "lead",
+     "quote": "Probably constructed in the thirty-seventh century BC, during Britain's Early Neolithic period",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "West Kennet Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/West_Kennet_Long_Barrow",
+     "locator": "section \"Construction\"",
+     "quote": "Oolitic limestone was also used in the dry stone walling of West Kennet Long Barrow",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Limestone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Limestone",
+     "locator": "section \"Uses\"",
+     "quote": "Limestone is readily available and relatively easy to cut into blocks or more elaborate carving.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Limestone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Limestone",
+     "locator": "section \"Uses\"",
+     "quote": "However, it is very heavy (density 2.6), making it impractical for tall buildings, and relatively expensive as a building material.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Limestone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Limestone",
+     "locator": "section \"Uses\"",
+     "quote": "Limestone was also a very popular building block in the Middle Ages in the areas where it occurred",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Norwich Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Norwich_Cathedral",
+     "locator": "section \"Architecture\"",
+     "quote": "The cathedral is constructed using limestone sourced from Lincolnshire, Barnack and Caen, flint, and mortar.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Norwich Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Norwich_Cathedral",
+     "locator": "lead",
+     "quote": "Construction of the building was begun in 1096",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "granite",
+   "name": "Granite",
+   "group": "Stone",
+   "kind": "material",
+   "general": true,
+   "fish": {
+    "scheme": "mat",
+    "id": "97944"
+   },
+   "period": {
+    "text": "Used as found since prehistory: Brownshill dolmen, Co. Carlow, built between 4000 and 3000 BC (-3500 stands for it), has a granite capstone; Bronze Age Grimspound on Dartmoor (first settled about 1300 BC) has a granite perimeter wall. Hard to dress by hand until steam-powered cutting tools came from Aberdeen in the 19th century. Still used.",
+    "from": -3500,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Found in the uplands: Cornwall and Dartmoor, the Lake District (Shap), Leicestershire (Mountsorrel), Aberdeenshire and the Highlands, the Mournes, Wicklow and Galway, Guernsey and Jersey",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland",
+     "Jersey",
+     "Guernsey"
+    ]
+   },
+   "technology": "Hard and durable, so long worked only as found boulders or roughly dressed; Alexander MacDonald of Aberdeen's steam-powered cutting and polishing tools (1830s) made fine dressed and polished granite possible.",
+   "geology": [
+    "Intrusions and undivided"
+   ],
+   "examples": [
+    {
+     "name": "Brownshill dolmen",
+     "year": -3500,
+     "note": "granite capstone"
+    },
+    {
+     "name": "Grimspound",
+     "year": -1300,
+     "note": "hut circles and perimeter wall of granite slabs"
+    }
+   ],
+   "note": "Aberdeen granite has an entry of its own. Wikidata gives granite as the material of many war memorials and statues; they are linked too.",
+   "sources": [
+    {
+     "title": "Granite (FISH Building Materials, concept 97944)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97944.html",
+     "locator": "scope note",
+     "quote": "A hard, coarse grained, durable igneous rock. Can be used decoratively or as a main material. Found throughout the country.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Granite",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Granite",
+     "locator": "lead",
+     "quote": "is a coarse-grained (phaneritic) intrusive igneous rock composed mostly of quartz, alkali feldspar, mica and plagioclase",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Brownshill dolmen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brownshill_dolmen",
+     "locator": "lead",
+     "quote": "The tomb was built between 4000 and 3000 BC.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Brownshill dolmen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brownshill_dolmen",
+     "locator": "lead",
+     "quote": "supporting the granite capstone (roof) of the chamber",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Grimspound",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grimspound",
+     "locator": "lead",
+     "quote": "The site was first settled in about 1300 BC.",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Grimspound",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Grimspound",
+     "locator": "lead",
+     "quote": "The 24 hut circles are surrounded by a massive granite perimeter wall",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Granite",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Granite",
+     "locator": "section \"Sculpture and memorials\"",
+     "quote": "Until the early 18th century, in the Western world, granite could be carved only by hand tools with generally poor results.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Granite",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Granite",
+     "locator": "section \"Sculpture and memorials\"",
+     "quote": "A key breakthrough was the invention of steam-powered cutting and dressing tools by Alexander MacDonald of Aberdeen",
+     "about": [
+      "technology",
+      "period"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marble",
+   "name": "Marble",
+   "group": "Stone",
+   "kind": "material",
+   "general": true,
+   "fish": {
+    "scheme": "mat",
+    "id": "98044"
+   },
+   "period": {
+    "text": "Imported marble came with the Romans: Fishbourne Roman Palace, built around 75-80 AD (75), had marble polychrome panels. In the Middle Ages the 'marbles' were polished British limestones (Purbeck, later Kilkenny); white Italian marble was imported again from the 17th century, mostly for interiors and monuments. Still used.",
+    "from": 75,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Almost all imported (Carrara and other Italian, Greek and French marbles); the isles' true marbles are few (Connemara, Iona, Skye); in the British sense any stone that takes a polish, as Purbeck marble",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "examples": [
+    {
+     "name": "Fishbourne Roman Palace",
+     "year": 75,
+     "note": "opus sectile marble panels"
+    }
+   ],
+   "note": "Marble in a building is mostly for fittings (fireplaces, floors, monuments, fonts); those sentences are not counted, only columns, shafts, facings and walls. Purbeck and Kilkenny marble have entries of their own.",
+   "sources": [
+    {
+     "title": "Marble (FISH Building Materials, concept 98044)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98044.html",
+     "locator": "scope note",
+     "quote": "Collective name for, in a true geological sense, a metamorphosed limestone, eg. Carrara marble, and, in the British sense any decorative stone that will take a polish, eg. Purbeck marble.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Fishbourne Roman Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace",
+     "locator": "section \"The palace\"",
+     "quote": "The decoration of the palace was elaborate, including wall paintings, stucco mouldings and opus sectile, marble polychrome panels",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Fishbourne Roman Palace",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace",
+     "locator": "lead",
+     "quote": "was built in around 75–80 AD",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marble",
+     "locator": "section \"Construction\"",
+     "quote": "Construction marble is a stone which is composed of calcite, dolomite or serpentine that is capable of taking a polish.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "lead",
+     "quote": "It is a variety of Purbeck stone that has been quarried since at least Roman times as a decorative building stone.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Marble",
+     "locator": "section \"Production\"",
+     "quote": "Limestones are often commercially and historically referred to as marble, which differs from the geological definition.",
+     "about": [
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chalk",
+   "name": "Chalk and clunch",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97814"
+   },
+   "period": {
+    "text": "Chalk rubble was building material for the church of Hyde Abbey, Winchester, built in 1110 (with flint); clunch, the harder chalk, was cut as ashlar for walls and dressings of medieval churches in eastern England. Chalk houses still standing are mostly pre-Victorian; clunch is still quarried at Totternhoe.",
+    "from": 1110,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "The chalk country of southern and eastern England: East Anglia (Thetford, Ely, Burwell), Bedfordshire (Totternhoe), Hertfordshire, Cambridgeshire, Surrey",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Soft when quarried and full of water, so easily sawn, it hardens as it dries; it weathers badly unless rendered, so it was often used inside or for dressings and boundary walls.",
+   "geology": [
+    "Cretaceous"
+   ],
+   "examples": [
+    {
+     "name": "Hyde Abbey",
+     "year": 1110,
+     "note": "flint and chalk rubble"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Chalk (FISH Building Materials, concept 97814)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97814.html",
+     "locator": "scope note",
+     "quote": "A soft, porous, white to light grey coloured limestone."
+    },
+    {
+     "title": "Clunch (FISH Building Materials, concept 97833)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97833.html",
+     "locator": "scope note",
+     "quote": "A hard, gritty, grey/green coloured form of chalk."
+    },
+    {
+     "title": "Hyde Abbey",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hyde_Abbey",
+     "locator": "section \"History\"",
+     "quote": "The church, as built in 1110, was constructed of flint and chalk rubble bonded by a pale brown chalky mortar.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Chalk",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chalk",
+     "locator": "section \"Previous uses\"",
+     "quote": "There are still houses standing which have been constructed using chalk as the main building material. Most are pre-Victorian though a few are more recent.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Chalk",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chalk",
+     "locator": "section \"Previous uses\"",
+     "quote": "quarried chalk was cut into blocks and used as ashlar, or loose chalk was rammed into blocks and laid in mortar",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Clunch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clunch",
+     "locator": "lead",
+     "quote": "Clunch is a traditional building material of chalky limestone rock used mainly in eastern England and Normandy.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Clunch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clunch",
+     "locator": "section \"Properties\"",
+     "quote": "The stone is a chalk from the Lower Chalk of the Cretaceous age",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Clunch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clunch",
+     "locator": "section \"Properties\"",
+     "quote": "This stone has been quarried at Totternhoe Quarry in Dunstable, Bedfordshire, by H. G. Clarke & Son since 1920.",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Clunch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clunch",
+     "locator": "section \"Properties\"",
+     "quote": "It can be cut by a saw when in its softer state; when it has been quarried out of the ground it still contains a large amount of water.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Clunch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clunch",
+     "locator": "section \"Properties\"",
+     "quote": "It is used in various parts of East Anglia, where more durable stone is uncommon, and can be seen frequently in and around Thetford",
+     "about": [
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "whinstone",
+   "name": "Whinstone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98293"
+   },
+   "period": {
+    "text": "Excavation found that the 12th-century church of St Giles', Edinburgh (1101 stands for the century) was likely built of pink sandstone and grey whinstone; whinstone rubble walls are common in Scottish buildings of every later date. The word whinstone is first attested in the 16th century.",
+    "from": 1101,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Northern England and Scotland: the Whin Sill of Northumberland and Durham, the Pentland Hills and the Lowlands of Scotland",
+    "nations": [
+     "Scotland",
+     "England"
+    ]
+   },
+   "technology": "So hard that it is difficult to work and its angular pieces fit together badly; mostly laid as rubble with dressings of sandstone.",
+   "examples": [
+    {
+     "name": "St Giles' Cathedral",
+     "year": 1101,
+     "note": "12th-century church of pink sandstone and grey whinstone"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Whinstone (FISH Building Materials, concept 98293)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98293.html",
+     "locator": "scope note",
+     "quote": "Northern quarryman's name for any fine grained, dark grey/black to green coloured igneous rock.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Whinstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whinstone",
+     "locator": "section \"Etymology\"",
+     "quote": "The Northern English/Scots term whin is first attested in the fourteenth century, and the compound whinstone from the sixteenth.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Whinstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whinstone",
+     "locator": "section \"Description\"",
+     "quote": "Massive outcrops of whinstone occur at the Pentland Hills, Scotland and the Whin Sills, England.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Whinstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whinstone",
+     "locator": "section \"Description\"",
+     "quote": "its natural angular shapes do not fit together well and are not easy to build with, and its hardness makes it a difficult material to work",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "St Giles' Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Giles'_Cathedral",
+     "locator": "section \"Architecture\"",
+     "quote": "Archaeological excavations in the 1980s found the 12th-century church was likely constructed of pink sandstone and grey whinstone.",
+     "about": [
+      "period",
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "coade-stone",
+   "name": "Coade stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "97834"
+   },
+   "period": {
+    "text": "Made at Eleanor Coade's Artificial Stone Manufactory in Lambeth from 1769; production ended in the early 1840s, when cast stone made with Portland cement had taken its place.",
+    "from": 1769,
+    "to": 1840
+   },
+   "regions": {
+    "text": "Made in Lambeth, London, and sent all over the isles for architectural ornament, statues and garden ornaments",
+    "nations": [
+     "England",
+     "Scotland",
+     "Wales",
+     "Northern Ireland",
+     "Republic of Ireland"
+    ]
+   },
+   "technology": "A stoneware, not a stone: a clay body cast in moulds and fired twice, virtually weatherproof; Coade perfected the recipe and the firing.",
+   "examples": [
+    {
+     "name": "Royal Pavilion, Brighton",
+     "note": "Coade stone features made by appointment to the Prince Regent"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Coade stone (FISH Building Materials, concept 97834)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97834.html",
+     "locator": "scope note",
+     "quote": "Durable artificial stone consisting of china clay, sand and finely ground stoneware cast from moulds and fired in a kiln. Commonly used for architectural ornament and facings."
+    },
+    {
+     "title": "Coade stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coade_stone",
+     "locator": "section \"History\"",
+     "quote": "In 1769, Mrs Coade bought Daniel Pincot's struggling artificial stone business at Kings Arms Stairs, Narrow Wall, Lambeth",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Coade stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coade_stone",
+     "locator": "section \"History\"",
+     "quote": "Trade declined, and production came to an end in the early 1840s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Coade stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coade_stone",
+     "locator": "lead",
+     "quote": "It was used for moulding neoclassical statues, architectural decorations and garden ornaments of the highest quality that remain virtually weatherproof today.",
+     "about": [
+      "technology",
+      "region"
+     ]
+    },
+    {
+     "title": "Coade stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coade_stone",
+     "locator": "section \"History\"",
+     "quote": "She was, however, probably responsible for perfecting both the clay recipe and the firing process.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Coade stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coade_stone",
+     "locator": "lead",
+     "quote": "Coade stone features were produced by appointment to George III and the Prince Regent for St George's Chapel, Windsor; The Royal Pavilion, Brighton",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "magnesian-limestone",
+   "name": "Magnesian Limestone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98036"
+   },
+   "period": {
+    "text": "York Minster, whose bulk was built between 1220 and 1472, is of magnesian limestone quarried at Tadcaster; many churches of its outcrop are older (Saxon and Norman), so the use is surely earlier.",
+    "from": 1220,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "North-east England, from Nottingham north through Yorkshire into County Durham",
+    "nations": [
+     "England"
+    ]
+   },
+   "geology": [
+    "Permian"
+   ],
+   "examples": [
+    {
+     "name": "York Minster",
+     "year": 1220,
+     "note": "creamy-white magnesian limestone from Tadcaster"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Magnesian limestone (FISH Building Materials, concept 98036)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98036.html",
+     "locator": "scope note",
+     "quote": "Permian limestones which have had their chemical composition naturally altered with the calcium content being replaced by magnesium.",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Magnesian Limestone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Magnesian_Limestone",
+     "locator": "lead",
+     "quote": "The Magnesian Limestone is a suite of carbonate rocks in north-east England dating from the Permian period.",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Magnesian Limestone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Magnesian_Limestone",
+     "locator": "lead",
+     "quote": "The outcrop stretches from Nottingham northwards through Yorkshire and into County Durham",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "York Minster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Minster",
+     "locator": "section \"Architecture\"",
+     "quote": "The stone used for the building is magnesian limestone, a creamy-white coloured rock that was quarried in nearby Tadcaster.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "York Minster",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Minster",
+     "locator": "section \"History\"",
+     "quote": "but the bulk of the building was constructed between 1220 and 1472",
+     "about": [
+      "period",
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sarsen",
+   "name": "Sarsen",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98173"
+   },
+   "period": {
+    "text": "Used as found since the Early Neolithic: the chamber of Coldrum Long Barrow, Kent, where human remains were placed between 3980 and 3800 BC (-3980), the other Medway megaliths and West Kennet Long Barrow (37th century BC) are of sarsen; Stonehenge's sarsen circle followed. Broken up for building in later centuries, and prized for steps and kerbs; no source here gives an end to its use.",
+    "from": -3980,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Southern England: Salisbury Plain and the Marlborough Downs in Wiltshire, Kent, and less in Berkshire, Essex, Oxfordshire, Dorset and Hampshire",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Too hard to dress, so used whole or broken with fire and later explosives; damp in buildings.",
+   "geology": [
+    "Palaeogene"
+   ],
+   "examples": [
+    {
+     "name": "Coldrum Long Barrow",
+     "year": -3980,
+     "note": "chamber of local sarsen megaliths"
+    },
+    {
+     "name": "West Kennet Long Barrow",
+     "year": -3650
+    }
+   ],
+   "sources": [
+    {
+     "title": "Sarsen stone (FISH Building Materials, concept 98173)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98173.html",
+     "locator": "scope note",
+     "quote": "Extremely hard, fine grained, grey to brown silica rich sandstone. It is often found on the surface of the South Downs and has been used, as found, since prehistoric times.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "lead",
+     "quote": "found extensively across Southern England on the Salisbury Plain and the Marlborough Downs in Wiltshire; in Kent; and in smaller quantities in Berkshire, Essex, Oxfordshire, Dorset, and Hampshire",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "section \"Geology\"",
+     "quote": "resulting from acid leaching",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "section \"Geology\"",
+     "quote": "This is thought to have formed during Neogene to Quaternary weathering by the silicification of Upper Paleocene Lambeth Group sediments",
+     "about": [
+      "geology"
+     ]
+    },
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "section \"Human uses\"",
+     "quote": "fire and in later times explosives were sometimes employed to break the stones into pieces of a suitable size for use in construction",
+     "about": [
+      "technology",
+      "period"
+     ]
+    },
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "section \"Human uses\"",
+     "quote": "sarsen remained highly prized for its durability, being a favoured material for steps and kerb stones",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "section \"Human remains\"",
+     "quote": "Radiocarbon dating of the human remains suggested that some were brought to the site between either 3980–3800 calibrated BCE",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "West Kennet Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/West_Kennet_Long_Barrow",
+     "locator": "lead",
+     "quote": "Probably constructed in the thirty-seventh century BC, during Britain's Early Neolithic period",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "West Kennet Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/West_Kennet_Long_Barrow",
+     "locator": "lead",
+     "quote": "Built out of earth, local sarsen megaliths, and oolitic limestone imported from the Cotswolds",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Coldrum Long Barrow",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coldrum_Long_Barrow",
+     "locator": "lead",
+     "quote": "Built out of earth and around fifty local sarsen-stone megaliths",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "york-stone",
+   "name": "York stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98307"
+   },
+   "period": {
+    "text": "Quarried in Yorkshire since the Middle Ages (1066 stands for them); East Riddlesden Hall was rebuilt of local Yorkshire stone in 1648. Still quarried, mostly for paving.",
+    "from": 1066,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Quarried around Leeds, Bradford, Halifax and Holmfirth in West Yorkshire; its paving all over Britain, London's traditional paving stone",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Splits along its mica-rich layers into flags and roofing slates (thackstones); now often sawn.",
+   "geology": [
+    "Carboniferous"
+   ],
+   "examples": [
+    {
+     "name": "East Riddlesden Hall",
+     "year": 1648,
+     "note": "rebuilt of local Yorkshire stone"
+    }
+   ],
+   "note": "York stone paving and flags are not counted, only buildings of it.",
+   "sources": [
+    {
+     "title": "York stone (FISH Building Materials, concept 98307)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98307.html",
+     "locator": "scope note",
+     "quote": "Generic name for the fine grained, brown coloured carboniferous sandstone, quarried in the Leeds, Bradford and Halifax area.",
+     "about": [
+      "region",
+      "geology"
+     ]
+    },
+    {
+     "title": "Yorkstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yorkstone",
+     "locator": "lead",
+     "quote": "is a variety of sandstone, specifically from quarries in Yorkshire that have been worked since the middle ages",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Yorkstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yorkstone",
+     "locator": "lead",
+     "quote": "The stone can be split along mica-rich layers: it has a slaty cleavage and may therefore be called sandstone slate.",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Yorkstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yorkstone",
+     "locator": "lead",
+     "quote": "The traditional London paving stone has been cut and pressed from quarries in Holmfirth, West Yorkshire.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Yorkstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yorkstone",
+     "locator": "lead",
+     "quote": "Yorkshire Stone is most commonly used for paving and garden walls, but it is also a popular choice for new builds",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "East Riddlesden Hall",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/East_Riddlesden_Hall",
+     "locator": "section \"History\"",
+     "quote": "The property was extended and re-built by James Murgatroyd and his wife Hannah, using local Yorkshire stone, in 1648.",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reigate-stone",
+   "name": "Reigate stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": {
+    "scheme": "mat",
+    "id": "98144"
+   },
+   "period": {
+    "text": "First recorded in the foundations of Edward the Confessor's Westminster in the first half of the 11th century (1001 stands for it; finds at Stoke d'Abernon suggest the early 8th century); used widely in place of Caen stone after 1204, by Wren after the Great Fire; the last mine closed in the 1960s (1960).",
+    "from": 1001,
+    "to": 1960
+   },
+   "regions": {
+    "text": "Mined along the foot of the North Downs in north-east Surrey (Buckland to Chaldon); used in London and south-east England",
+    "nations": [
+     "England"
+    ]
+   },
+   "technology": "Mined by post and stall from adits under the chalk; a soft freestone that suffers from frost and pollution.",
+   "geology": [
+    "Cretaceous"
+   ],
+   "examples": [
+    {
+     "name": "Westminster Abbey",
+     "note": "foundations of the Confessor's monastery"
+    },
+    {
+     "name": "Tower of London",
+     "note": "the White Tower"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Reigate stone (FISH Building Materials, concept 98144)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98144.html",
+     "locator": "scope note",
+     "quote": "Soft, medium grained, green/grey coloured, highly calcareous, cretaceous sandstone. Mined (more frequently than quarried) since pre-Norman times from the Reigate area of Surrey.",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "section \"Use\"",
+     "quote": "The first recorded use of Reigate Stone is in the foundations of Edward the Confessor's monastery at Westminster in the first half of the 11th century",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "section \"Use\"",
+     "quote": "archaeological evidence from St Mary's Church, Stoke d'Abernon suggests that it was being quarried by the early eighth century",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "section \"Use\"",
+     "quote": "It was used increasingly in place of Caen stone, especially after the loss of the Duchy of Normandy by King John in 1204.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "section \"Use\"",
+     "quote": "The final mine closed in the 1960s",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "lead",
+     "quote": "Mines are thought to have existed along the base of the North Downs from Buckland in the west to Chaldon in the east.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "lead",
+     "quote": "The stone was mined using the post-and-stall technique",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "section \"Use\"",
+     "quote": "having identified its susceptibility to frost damage",
+     "about": [
+      "technology"
+     ]
+    },
+    {
+     "title": "Reigate Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Reigate_Stone",
+     "locator": "section \"Use\"",
+     "quote": "including the White Tower of the Tower of London",
+     "about": [
+      "example",
+      "region"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ketton-stone",
+   "name": "Ketton stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "Used as a building stone since the 16th century (1501 stands for it): Burghley House, built 1555-1587; then many Cambridge colleges. Selected stone is still set aside at the Ketton quarry.",
+    "from": 1501,
+    "ongoing": true
+   },
+   "regions": {
+    "text": "Quarried at Ketton, Rutland; used mostly outside Rutland, especially in Cambridge",
+    "nations": [
+     "England"
+    ]
+   },
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "Burghley House",
+     "year": 1555
+    },
+    {
+     "name": "Wren Library, Cambridge"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Ketton stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ketton_stone",
+     "locator": "lead",
+     "quote": "Ketton stone is a Jurassic oolitic limestone, cream to pale yellow or pink in colour,  used as a building stone since the 16th century.",
+     "about": [
+      "period",
+      "geology"
+     ]
+    },
+    {
+     "title": "Ketton stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ketton_stone",
+     "locator": "lead",
+     "quote": "It was used as freestone, mostly in buildings outside Rutland, particularly in Cambridge, where it was used in many of the colleges.",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Ketton stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ketton_stone",
+     "locator": "lead",
+     "quote": "selected stone is still set aside for cut building blocks",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ketton stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ketton_stone",
+     "locator": "section \"Notable buildings\"",
+     "quote": "Burghley House",
+     "about": [
+      "example"
+     ]
+    },
+    {
+     "title": "Burghley House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burghley_House",
+     "locator": "lead",
+     "quote": "between 1555 and 1587",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ancaster-stone",
+   "name": "Ancaster stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "Its works include Norwich Cathedral, begun in 1096, and Wollaton Hall, Belton House and St Pancras Station; Glebe quarry at Ancaster is still worked.",
+    "from": 1096,
+    "ongoing": true,
+    "earlier": true
+   },
+   "regions": {
+    "text": "Quarried only at Ancaster, Lincolnshire; used across eastern England",
+    "nations": [
+     "England"
+    ]
+   },
+   "geology": [
+    "Jurassic"
+   ],
+   "examples": [
+    {
+     "name": "Norwich Cathedral",
+     "year": 1096
+    },
+    {
+     "name": "Wollaton Hall"
+    },
+    {
+     "name": "Belton House"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Ancaster stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ancaster_stone",
+     "locator": "lead",
+     "quote": "Ancaster stone is Middle Jurassic oolitic limestone, quarried around Ancaster, Lincolnshire, England.",
+     "about": [
+      "geology",
+      "region"
+     ]
+    },
+    {
+     "title": "Ancaster stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ancaster_stone",
+     "locator": "lead",
+     "quote": "Glebe quarry (UK Grid reference: SK992409) being the only active quarry",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Ancaster stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ancaster_stone",
+     "locator": "lead",
+     "quote": "including Wollaton Hall, Belton House, Harlaxton Manor, Mentmore Towers, St Pancras Station, Norwich Cathedral and St John's College, Cambridge",
+     "about": [
+      "example",
+      "period"
+     ]
+    },
+    {
+     "title": "Norwich Cathedral",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Norwich_Cathedral",
+     "locator": "lead",
+     "quote": "Construction of the building was begun in 1096",
+     "about": [
+      "period",
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "heavitree-stone",
+   "name": "Heavitree stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "Quarried at Heavitree from about 1350 (a quarry is first recorded in 1390) to the 19th century (1899); the article on the Bishop's Palace, Exeter, says it was built of Heavitree stone in the 13th century, so the use may be older.",
+    "from": 1350,
+    "to": 1899
+   },
+   "regions": {
+    "text": "Heavitree and Wonford, by Exeter; most of Exeter's older buildings: the city walls, almshouses and parish churches",
+    "nations": [
+     "England"
+    ]
+   },
+   "examples": [
+    {
+     "name": "Bishop's Palace, Exeter",
+     "note": "built in the 13th century of Heavitree stone"
+    },
+    {
+     "name": "Exeter city walls"
+    }
+   ],
+   "note": "A red breccia, not a sandstone. Its age is given as Triassic in one sentence and as 280 million years (Permian) in the next, so no bedrock period is given.",
+   "sources": [
+    {
+     "title": "Heavitree stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Heavitree_stone",
+     "locator": "lead",
+     "quote": "It was quarried in the area from about 1350 to the 19th century, and was used to construct many of Exeter's older buildings",
+     "about": [
+      "period",
+      "region"
+     ]
+    },
+    {
+     "title": "Heavitree stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Heavitree_stone",
+     "locator": "section \"Quarries\"",
+     "quote": "A quarry is first recorded in 1390.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Heavitree stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Heavitree_stone",
+     "locator": "lead",
+     "quote": "is a type of breccia stone, red in colour, of very coarse texture and prone to weathering",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Bishop's Palace, Exeter",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bishop's_Palace,_Exeter",
+     "locator": "section \"Architecture\"",
+     "quote": "The palace was originally built in the 13th century of Heavitree stone.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Heavitree stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Heavitree_stone",
+     "locator": "lead",
+     "quote": "including Exeter Castle, the old city walls, and many of the almshouses and parish churches",
+     "about": [
+      "example"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hopton-wood-stone",
+   "name": "Hopton Wood stone",
+   "group": "Stone",
+   "kind": "material",
+   "fish": null,
+   "period": {
+    "text": "Chatsworth House, rebuilt from 1687, was built of it (Imperial Gazetteer, 1870-72); quarried from the 18th century on a large scale, for 120,000 war graves headstones after the First World War, until 2006.",
+    "from": 1687,
+    "to": 2006
+   },
+   "regions": {
+    "text": "Quarried north of Hopton and west of Middleton-by-Wirksworth, Derbyshire; decorative work across Britain",
+    "nations": [
+     "England"
+    ]
+   },
+   "examples": [
+    {
+     "name": "Chatsworth House",
+     "year": 1687
+    }
+   ],
+   "note": "A very pure limestone that takes a polish like marble; more often in decorative work, floors and headstones than whole buildings.",
+   "sources": [
+    {
+     "title": "Hopton Wood Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hopton_Wood_Stone",
+     "locator": "lead",
+     "quote": "is a type of limestone quarried north of Hopton and west of Middleton-by-Wirksworth, Derbyshire, England",
+     "about": [
+      "region"
+     ]
+    },
+    {
+     "title": "Hopton Wood Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hopton_Wood_Stone",
+     "locator": "section \"History\"",
+     "quote": "was the material of Chatsworth House and Belvoir Castle",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Chatsworth House",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Chatsworth_House",
+     "locator": "section \"First Duke of Devonshire\"",
+     "quote": "William Cavendish, 4th Earl of Devonshire started rebuilding the house in 1687.",
+     "about": [
+      "period",
+      "example"
+     ]
+    },
+    {
+     "title": "Hopton Wood Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hopton_Wood_Stone",
+     "locator": "section \"History\"",
+     "quote": "operations ended in 2006",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hopton Wood Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hopton_Wood_Stone",
+     "locator": "section \"History\"",
+     "quote": "with over 120,000 being created and sent to war cemeteries in Britain, Belgium, and France",
+     "about": [
+      "period"
+     ]
+    }
+   ]
+  }
+ ],
+ "links": [
+  {
+   "id": "limestone>bath-stone",
+   "from": "limestone",
+   "to": "bath-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Bath stone is an oolitic limestone.",
+   "sources": [
+    {
+     "title": "Bath stone (FISH Building Materials, concept 97737)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97737.html",
+     "locator": "scope note",
+     "quote": "Even grained, poorly fossiliferous, light brown/cream coloured, oolitic limestone."
+    }
+   ]
+  },
+  {
+   "id": "limestone>portland-stone",
+   "from": "limestone",
+   "to": "portland-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Portland stone is a Jurassic limestone.",
+   "sources": [
+    {
+     "title": "Portland stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Portland_stone",
+     "locator": "lead",
+     "quote": "is a limestone geological formation"
+    }
+   ]
+  },
+  {
+   "id": "limestone>purbeck-marble",
+   "from": "limestone",
+   "to": "purbeck-marble",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Purbeck marble is a fossiliferous limestone, called marble because it takes a polish.",
+   "sources": [
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "lead",
+     "quote": "Purbeck Marble is a fossiliferous limestone found in the Isle of Purbeck"
+    }
+   ]
+  },
+  {
+   "id": "marble>purbeck-marble",
+   "from": "marble",
+   "to": "purbeck-marble",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Purbeck marble is a marble in the British sense: a stone that takes a polish, not a true (metamorphic) marble.",
+   "sources": [
+    {
+     "title": "Marble (FISH Building Materials, concept 98044)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98044.html",
+     "locator": "scope note",
+     "quote": "in the British sense any decorative stone that will take a polish, eg. Purbeck marble"
+    },
+    {
+     "title": "Purbeck Marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Purbeck_Marble",
+     "locator": "section \"Geology\"",
+     "quote": "Purbeck Marble is not a metamorphic rock, like a true marble, but is so-called because it can take a fine polish."
+    }
+   ]
+  },
+  {
+   "id": "limestone>kentish-ragstone",
+   "from": "limestone",
+   "to": "kentish-ragstone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Kentish ragstone is a sandy limestone.",
+   "sources": [
+    {
+     "title": "Kentish ragstone (FISH Building Materials, concept 98003)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98003.html",
+     "locator": "scope note",
+     "quote": "Sandy, rough blue to green/grey coloured limestone."
+    }
+   ]
+  },
+  {
+   "id": "limestone>ham-stone",
+   "from": "limestone",
+   "to": "ham-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Ham Hill stone is a liassic limestone.",
+   "sources": [
+    {
+     "title": "Ham Hill stone (FISH Building Materials, concept 97963)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97963.html",
+     "locator": "scope note",
+     "quote": "Shelly, gold/brown, coloured liassic limestone containing large quantities of crystalline calcite."
+    }
+   ]
+  },
+  {
+   "id": "limestone>cotswold-stone",
+   "from": "limestone",
+   "to": "cotswold-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Cotswold stone is a limestone.",
+   "sources": [
+    {
+     "title": "Cotswold stone (FISH Building Materials, concept 97863)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97863.html",
+     "locator": "scope note",
+     "quote": "Sandy, light brown (cream to golden) coloured limestone, easily worked and readily available."
+    }
+   ]
+  },
+  {
+   "id": "limestone>barnack-stone",
+   "from": "limestone",
+   "to": "barnack-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Barnack stone is an oolitic Lincolnshire limestone.",
+   "sources": [
+    {
+     "title": "Barnack",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barnack",
+     "locator": "section \"History\"",
+     "quote": "Oolitic Lincolnshire limestone, including some called Barnack rag, was a valuable building stone first used by the Romans."
+    }
+   ]
+  },
+  {
+   "id": "limestone>caen-stone",
+   "from": "limestone",
+   "to": "caen-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Caen stone is a limestone imported from Normandy.",
+   "sources": [
+    {
+     "title": "Caen stone (FISH Building Materials, concept 97788)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97788.html",
+     "locator": "scope note",
+     "quote": "Fine grained limestone, yellow or yellow/white in colour. Imported from France, mainly for ecclesiastical use."
+    }
+   ]
+  },
+  {
+   "id": "limestone>kilkenny-marble",
+   "from": "limestone",
+   "to": "kilkenny-marble",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Kilkenny marble is a Carboniferous limestone.",
+   "sources": [
+    {
+     "title": "Kilkenny marble",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kilkenny_marble",
+     "locator": "lead",
+     "quote": "is a fine-grained very dark grey carboniferous limestone found around County Kilkenny in Ireland"
+    }
+   ]
+  },
+  {
+   "id": "marble>kilkenny-marble",
+   "from": "marble",
+   "to": "kilkenny-marble",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Kilkenny marble is a limestone cut and polished as marble.",
+   "sources": [
+    {
+     "title": "Carboniferous limestone (FISH Building Materials, concept 97800)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97800.html",
+     "locator": "scope note",
+     "quote": "Many are cut, polished and used as marble."
+    }
+   ]
+  },
+  {
+   "id": "limestone>chalk",
+   "from": "limestone",
+   "to": "chalk",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Chalk is a soft limestone; clunch a harder form of it.",
+   "sources": [
+    {
+     "title": "Chalk (FISH Building Materials, concept 97814)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/97814.html",
+     "locator": "scope note",
+     "quote": "A soft, porous, white to light grey coloured limestone."
+    },
+    {
+     "title": "Clunch",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clunch",
+     "locator": "section \"Properties\"",
+     "quote": "Clunch is generically a soft limestone."
+    }
+   ]
+  },
+  {
+   "id": "limestone>magnesian-limestone",
+   "from": "limestone",
+   "to": "magnesian-limestone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The Magnesian Limestone is a Permian limestone altered by magnesium (dolomite).",
+   "sources": [
+    {
+     "title": "Magnesian limestone (FISH Building Materials, concept 98036)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98036.html",
+     "locator": "scope note",
+     "quote": "Permian limestones which have had their chemical composition naturally altered with the calcium content being replaced by magnesium."
+    }
+   ]
+  },
+  {
+   "id": "limestone>ketton-stone",
+   "from": "limestone",
+   "to": "ketton-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Ketton stone is an oolitic limestone.",
+   "sources": [
+    {
+     "title": "Ketton stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ketton_stone",
+     "locator": "lead",
+     "quote": "Ketton stone is a Jurassic oolitic limestone"
+    }
+   ]
+  },
+  {
+   "id": "limestone>ancaster-stone",
+   "from": "limestone",
+   "to": "ancaster-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Ancaster stone is an oolitic limestone.",
+   "sources": [
+    {
+     "title": "Ancaster stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ancaster_stone",
+     "locator": "lead",
+     "quote": "Ancaster stone is Middle Jurassic oolitic limestone"
+    }
+   ]
+  },
+  {
+   "id": "limestone>hopton-wood-stone",
+   "from": "limestone",
+   "to": "hopton-wood-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Hopton Wood stone is a limestone.",
+   "sources": [
+    {
+     "title": "Hopton Wood Stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hopton_Wood_Stone",
+     "locator": "lead",
+     "quote": "is a type of limestone quarried north of Hopton"
+    }
+   ]
+  },
+  {
+   "id": "sandstone>red-sandstone",
+   "from": "sandstone",
+   "to": "red-sandstone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "The red sandstones are sandstones coloured by iron.",
+   "sources": [
+    {
+     "title": "Sandstone (FISH Building Materials, concept 98171)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98171.html",
+     "locator": "scope note",
+     "quote": "Geologically sandstone consists of particles of quartz naturally cemented together by either silica, calcium or iron. It is this geological composition that accounts for the varying colours and grain sizes found in the many building sandstones."
+    },
+    {
+     "title": "Old Red Sandstone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Red_Sandstone",
+     "locator": "lead",
+     "quote": "The presence of Old in the name is to distinguish the sequence from the younger New Red Sandstone which also occurs widely throughout Britain."
+    }
+   ]
+  },
+  {
+   "id": "sandstone>gritstone",
+   "from": "sandstone",
+   "to": "gritstone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Gritstone is a coarse Carboniferous sandstone.",
+   "sources": [
+    {
+     "title": "Millstone Grit",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Millstone_Grit",
+     "locator": "lead",
+     "quote": "Millstone Grit is any of a number of coarse-grained sandstones of Carboniferous age which occur in the British Isles."
+    }
+   ]
+  },
+  {
+   "id": "sandstone>york-stone",
+   "from": "sandstone",
+   "to": "york-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "York stone is a Carboniferous sandstone.",
+   "sources": [
+    {
+     "title": "York stone (FISH Building Materials, concept 98307)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98307.html",
+     "locator": "scope note",
+     "quote": "Generic name for the fine grained, brown coloured carboniferous sandstone, quarried in the Leeds, Bradford and Halifax area."
+    }
+   ]
+  },
+  {
+   "id": "sandstone>reigate-stone",
+   "from": "sandstone",
+   "to": "reigate-stone",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Reigate stone is a calcareous sandstone.",
+   "sources": [
+    {
+     "title": "Reigate stone (FISH Building Materials, concept 98144)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tbm/concepts/98144.html",
+     "locator": "scope note",
+     "quote": "Soft, medium grained, green/grey coloured, highly calcareous, cretaceous sandstone."
+    }
+   ]
+  },
+  {
+   "id": "sandstone>sarsen",
+   "from": "sandstone",
+   "to": "sarsen",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Sarsen is a silicified sandstone.",
+   "sources": [
+    {
+     "title": "Sarsen",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sarsen",
+     "locator": "lead",
+     "quote": "Sarsen stones are silicified sandstone blocks"
+    }
+   ]
+  },
+  {
+   "id": "granite>aberdeen-granite",
+   "from": "granite",
+   "to": "aberdeen-granite",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "Aberdeen granite is the local granite that built Aberdeen.",
+   "sources": [
+    {
+     "title": "Granite",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Granite",
+     "locator": "section \"Buildings\"",
+     "quote": "Aberdeen in Scotland, which is constructed principally from local granite"
+    }
+   ]
+  },
+  {
+   "id": "coade-stone>precast-concrete",
+   "from": "coade-stone",
+   "to": "precast-concrete",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Coade stone was superseded after 1821 by cast stone made with Portland cement.",
+   "sources": [
+    {
+     "title": "Coade stone",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coade_stone",
+     "locator": "section \"Demise\"",
+     "quote": "Coade stone was only superseded after Mrs Coade's death in 1821, by cast stone products using naturally exothermic Portland cement as a binder."
+    }
+   ]
+  }
+ ]
+}

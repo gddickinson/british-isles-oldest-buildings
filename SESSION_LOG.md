@@ -1807,3 +1807,33 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 380 OK (new `TestBridgeRules`); ui_check of the /types pages + new `type_bridge` 7/7 on a fresh server
   (port 5075); canal aqueduct page checked by screenshot. The running GUI needs a restart. Hosted copy not updated.
 - Next: generic stones (BT3a research), BT3c2 (material regions over the geology layer) or BT6.
+
+## 2026-10-26 — Generic stones for BT3 (sandstone, limestone, granite, marble...)
+- Emergent item from BT3b: the common stones had no materials entry, so 153 sandstone, 151 granite, 87 limestone and
+  29 marble P186 items and thousands of register sentences ("Sandstone rubble with ashlar dressings") were left out.
+- New `data/curated/building_types/materials_stones.json`: 15 entries, each with a FISH concept where one exists, a
+  sourced period, regions, technology and geology (127 quotes from Wikipedia and the FISH scope notes, all found;
+  merged into `data/building_materials_check.json`, 1,105 of 1,105): sandstone -3980 (Coldrum's sarsens, radiocarbon
+  3980-3800 BC), limestone -3650 (West Kennet), granite -3500 (Brownshill dolmen), marble 75 (Fishbourne), chalk and
+  clunch 1110 (Hyde Abbey), whinstone 1101 (St Giles'), Coade stone 1769-1840, Magnesian Limestone 1220 (York
+  Minster), sarsen, York stone, Reigate stone 1001-1960, Ketton 1501, Ancaster 1096, Heavitree 1350-1899 (its article
+  contradicts itself on Triassic vs Permian, so no bedrock period), Hopton Wood 1687-2006. The one end date with no
+  source (sarsen 1900) was taken out before writing. 23 links: limestone, sandstone, granite and marble → the 19
+  named stones (Purbeck and Kilkenny marble from both limestone and marble); Coade stone → precast concrete.
+- `material_map.general_of`: materials marked `general: true` give way to their named variants (a Bath stone church
+  is not also limestone). The first version used every variant link and the dry run showed rubble falling from
+  3,148 to 1,344 links (rubble → ashlar is a variant); limited to `general` materials, rubble, slate and flint stay
+  as they were. `building_materials` validates the field.
+- `material_aliases.json`: 17 P186 items moved from `not_in_list` (Cornish granite → granite, Carrara → marble); 15
+  text rules, reviewed on two dry runs (marble only for columns, shafts, facings and walls, never fittings, fonts,
+  monuments or murals; limestone not for landscapes, kilns and caves; York stone not for paving; chalk not for hill
+  figures; sarsen not "chose not to use"); `skip_sentence` also skips "FORMER WALLED GARDEN" and the like.
+- Result: sandstone 1,874 links, limestone 570, granite 505, marble 145, whinstone 96, chalk 56, Magnesian 38,
+  sarsen 35, Heavitree 27; records linked 8,475 → 8,879, places 2,352 → 2,621. Earliest examples: West Kennet
+  (limestone, sarsen), Brownshill dolmen (granite), Traquair House (whinstone), Assembly Rooms (Coade stone).
+- Tests 383 OK (new `test_specific_stone_kept`, `TestGenericStones`); ui_check of the /types pages + new
+  `material_stone` 8/8 (port 5076); limestone page checked by screenshot. The running GUI needs a restart. Hosted
+  copy not updated.
+- Left open (roadmap): marble's earliest is a Chester amphitheatre mural sentence; Hopton Wood has no examples;
+  greensand, ironstone, lias, Bargate, Pennant and Collyweston have no entry.
+- Next: BT3c2 (material regions over the geology layer), the stones left open, or BT6.

@@ -9,7 +9,8 @@ cross files):
                  true when `from` is only the earliest example a source names and the use is surely older),
                  regions? {text, nations? [NATIONS]}, technology? (what made it possible, cheaper or ended it),
                  geology? [bedrock periods of bidb.change_geology], types? [building type ids],
-                 examples? [{name, wikidata?, year?, note?}], note?, sources}]
+                 examples? [{name, wikidata?, year?, note?}], note?, general? (true: a generic stone, as limestone,
+                 that gives way in bidb.material_map to the named stones it has variant links to), sources}]
     A material's sources say what they support: about ["period", "region", "technology", "geology", "example"]
     (none: the material itself).
     links: [{id "from>to", from, to, kind, confidence, claim, sources, views? (disputed)}] as bidb.building_types.
@@ -75,6 +76,8 @@ def validate(data, type_ids=None, partial=False):
             bad.append(f"{where}: fish {fish!r}")
         bad += bt._source_problems(where, m.get("sources", []), ABOUT)
         bad += bt.period_errors(where, m.get("period"))
+        if "general" in m and m["general"] is not True:
+            bad.append(f"{where}: general is not true")
         if "earlier" in (m.get("period") or {}) and m["period"]["earlier"] is not True:
             bad.append(f"{where}: period earlier is not true")
         about = {a for s in m.get("sources", []) for a in s.get("about", [])}

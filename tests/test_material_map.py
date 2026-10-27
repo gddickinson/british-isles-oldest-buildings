@@ -65,6 +65,36 @@ class TestLinker(unittest.TestCase):
         out = linker.link(None, [], "Missing", "It is a cob cottage with a thatched roof.")
         self.assertEqual({m for m, *_ in out}, {"cob", "thatch"})
 
+    def test_specific_stone_kept(self):
+        general = material_map.general_of(building_materials.load())
+        self.assertIn("limestone", general["bath-stone"])
+        self.assertEqual(general["purbeck-marble"], {"limestone", "marble"})
+        self.assertNotIn("ashlar", general)          # rubble is not general: both are kept
+        linker = material_map.Linker(ALIASES, None, {}, {}, general)
+        mats = lambda text: {m for m, *_ in linker.link(None, [], None, text)}
+        self.assertEqual(mats("The church is built of Bath limestone ashlar."), {"bath-stone", "ashlar"})
+        self.assertEqual(mats("The church has nave piers of Purbeck marble."), {"purbeck-marble"})
+        self.assertEqual(mats("The church is built of limestone rubble."), {"limestone", "rubble"})
+        self.assertEqual(mats("Walls of red sandstone with grey sandstone dressings."), {"red-sandstone"})
+
+
+class TestGenericStones(unittest.TestCase):
+    def test_stones(self):
+        self.assertIn("sandstone", found("Coursed sandstone rubble with ashlar dressings."))
+        self.assertIn("whinstone", found("Whinstone rubble with ashlar dressings."))
+        self.assertIn("chalk", found("The church was built of flint and chalk rubble."))
+        self.assertIn("chalk", found("Built of flint rubble with clunch dressings."))
+        self.assertIn("marble", found("The portico has columns of white marble."))
+        self.assertIn("coade-stone", found("The south front has Coade stone ornaments."))
+
+    def test_not_the_building(self):
+        self.assertNotIn("marble", found("The house has a fine marble chimneypiece in the drawing room."))
+        self.assertNotIn("marble", found("The earlier font is of white marble."))
+        self.assertNotIn("limestone", found("It was constructed on a karst landscape formed from limestone."))
+        self.assertNotIn("sarsen", found("The builders chose not to use sarsens, which are naturally present."))
+        self.assertNotIn("whinstone", found("FORMER WALLED GARDEN: random rubble whinstone wall to N of the drive."))
+        self.assertNotIn("york-stone", found("The terrace is paved with York stone flags."))
+
 
 MATS = {"materials": [{"id": "brick", "name": "Brick", "group": "Brick and tile", "kind": "material",
                        "period": {"from": 1220, "ongoing": True}},

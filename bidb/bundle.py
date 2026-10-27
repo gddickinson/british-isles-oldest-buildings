@@ -7,8 +7,8 @@
                                      then published; an interrupted run carries on with its draft
 
 data/bundled.json (committed) names the release tag, asset, size, date and SHA-256; downloads are
-checked against it. The repository is private, so downloading needs GitHub access: the GitHub CLI
-(`gh auth login`) or a token in GH_TOKEN / GITHUB_TOKEN; a public repository needs neither.
+checked against it. The public repository's release downloads need no sign-in; a private copy or fork
+needs the GitHub CLI (`gh auth login`) or a token in GH_TOKEN / GITHUB_TOKEN, used when present.
 """
 import hashlib
 import json
@@ -68,7 +68,7 @@ def fetch(log=print):
         log(f"Bundled database already here ({BUNDLED.stat().st_size / 1e6:.0f} MB).")
         return
     headers, token = {"User-Agent": USER_AGENT}, _token()
-    if token:                                   # private repository: the API asset URL with a token
+    if token:                                   # works for private copies too: the API asset URL with a token
         headers["Authorization"] = f"Bearer {token}"
         api = f"https://api.github.com/repos/{m['repo']}/releases/tags/{m['tag']}"
         r = requests.get(api, headers=headers, timeout=60)
@@ -81,8 +81,8 @@ def fetch(log=print):
     part = BUNDLED.with_suffix(".gz.part")
     with requests.get(url, headers=headers, stream=True, timeout=120) as r:
         if r.status_code == 404 and not token:
-            raise PermissionError("The release could not be downloaded: the repository is private. Sign in with "
-                                  "`gh auth login` or set GH_TOKEN, then try again.")
+            raise PermissionError("The release could not be downloaded (not found). If this copy's repository is "
+                                  "private, sign in with `gh auth login` or set GH_TOKEN, then try again.")
         r.raise_for_status()
         done, t0 = 0, time.time()
         with open(part, "wb") as f:

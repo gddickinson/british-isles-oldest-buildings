@@ -1,0 +1,23 @@
+name: Missing building or place
+description: A building begun before 1500, an oldest-of-its-type example, a landmark or a place of interest is not in the app.
+labels: [missing record]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name and location
+      description: Name, town or county, and a Wikidata id or coordinates if you have them.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: Its date (begun before 1500?), why it is the oldest of its type, or which list or register it is on.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link (and the sentence that gives the date or claim, if you can).

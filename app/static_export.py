@@ -7,6 +7,7 @@ import base64
 import json
 import re
 import shutil
+import sys
 
 from bidb import db, pron_db
 from bidb.categories import CATEGORY_GROUPS, CATEGORY_ORDER, GROUP_ORDER
@@ -50,11 +51,14 @@ def _strip_document(html):
 def _rewrite(html):
     for route, fname in PAGES.items():
         html = html.replace(f'href="{route}"', f'href="{fname}"')
+    html = html.replace('href="/trip"', 'href="tours.html"')          # the nav's Tours link (/trip → /tours)
     html = re.sub(r'href="/building/([^"]+)"', r'href="index.html#\1"', html)
     return html.replace('"/static/', '"static/')
 
 
-def export(thumb_limit=850):           # 1,100 until the change layers pushed the copy past 256 MiB
+def export(thumb_limit=850, full_pages=False):
+    """full_pages: keep index.html a whole document, for ordinary web hosts (GitHub Pages, serve_dist.sh); by default
+    it is stripped to head and body contents for the claude.ai artifact host, which adds its own skeleton."""           # 1,100 until the change layers pushed the copy past 256 MiB
     if DIST.exists():
         shutil.rmtree(DIST)
     (DIST / "data").mkdir(parents=True)
@@ -70,7 +74,7 @@ def export(thumb_limit=850):           # 1,100 until the change layers pushed th
             resp = client.get(route)
             assert resp.status_code == 200, (route, resp.status_code)
             html = _rewrite(resp.get_data(as_text=True))
-            (DIST / fname).write_text(_strip_document(html) if fname == "index.html" else html)
+            (DIST / fname).write_text(_strip_document(html) if fname == "index.html" and not full_pages else html)
     finally:
         pages.STATIC_MODE = False
     conn = db.connect(readonly=True)
@@ -220,4 +224,4 @@ def write_json_shards(items, stem, key=None):
 
 
 if __name__ == "__main__":
-    export()
+    export(full_pages="--full-pages" in sys.argv[1:])

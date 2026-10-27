@@ -1,0 +1,34 @@
+name: Wrong date, place or detail
+description: A building or place has a wrong date, location, name, type or other detail.
+labels: [data correction]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record
+      description: Link to the record in the app or its Wikidata id (e.g. Q17530628), and its name.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+      description: What the app shows, and what it should show.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: >
+        A source for the correction (list entry, Wikipedia section, book with page, paper), with a link and
+        the sentence that says so if you can. Corrections are kept with their evidence
+        (data/curated/date_corrections.json), so a quote helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: upstream
+    attributes:
+      label: Is it wrong at the source too?
+      description: Many details come from Wikidata or the heritage registers; errors there are best fixed there as well.
+      options: ["Don't know", "Yes, Wikidata is wrong", "Yes, the register is wrong", "No, only this app"]

@@ -43,7 +43,10 @@ class Firsts(unittest.TestCase):
 class Here(unittest.TestCase):
     def test_trade_and_innovation_here(self):
         from bidb.db import connect
-        h = ts.here(connect())
+        conn = connect()
+        if not conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'places'").fetchone():
+            self.skipTest("needs the database (python -m bidb.bundle fetch, or a build)")
+        h = ts.here(conn)
         mill = h.get("Q2566525")                  # Cromford Mill: Arkwright's mill, in the cotton story
         self.assertIsNotNone(mill)
         self.assertIn(["cotton", "Cotton"], mill["trades"])

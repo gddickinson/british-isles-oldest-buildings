@@ -165,7 +165,6 @@ works on a phone and can be installed; keeps pages you've opened for offline use
 - About 400 MB of disk for the app and database; another ~3 GB if you build the data yourself.
 
 ### Install and run
-The repository is private for now: you need access to clone it and to download the bundled database.
 ```sh
 git clone https://github.com/gddickinson/british-isles-oldest-buildings.git
 cd british-isles-oldest-buildings
@@ -298,6 +297,13 @@ Every download is cached, so a rebuild reuses it; refresh what is older than som
   (size and SHA-256), made after each significant data change; new installations download the latest.
 - **The hosted copy** is `dist/` from `app.static_export`. It must stay under 256 MiB, so it shortens place
   descriptions to 300 characters and floor plans to 480 px; the local app always shows the full data.
+- **GitHub Pages** serves the same copy, built with `--full-pages` (a whole `index.html`; the claude.ai host
+  wants it stripped). The site is not kept in git: `tar -czf site.tar.gz -C dist .`, then
+  `gh release create site-YYYY-MM-DD site.tar.gz`; `.github/workflows/pages.yml` deploys the newest `site-*`
+  release when one is published (or by hand from the Actions tab). Mark the database release Latest again
+  afterwards (`gh release edit db-… --latest`).
+- **Tests run on GitHub** for every push and pull request (`.github/workflows/tests.yml`: the unit tests and
+  `tests/ui_prefs_test.js`; the one test that needs the database skips itself there).
 - **Research** grows in rounds (see the research track in [`ROADMAP.md`](ROADMAP.md)): new claims go into
   `data/curated/`, are checked with `bidb.evidence --check --new`, and corrections into
   `date_corrections.json`.
@@ -313,7 +319,8 @@ Every download is cached, so a rebuild reuses it; refresh what is older than som
 | Regenerate the figures in this README and Help | `node docs/make_figures.mjs` (app running) |
 
 ## Data sources and licences
-- **Code:** MIT ([LICENSE](LICENSE)).
+- **Code:** MIT ([LICENSE](LICENSE)). It covers the source code only: the data in this repository and in the
+  bundled database release keep their own licences, below.
 - **Data:** each source keeps its own licence; [DATA_LICENSE.md](DATA_LICENSE.md) lists them with the
   credits to keep:
   - Wikidata and Open Plaques: CC0; Wikipedia text: CC BY-SA 4.0; OpenStreetMap: ODbL;

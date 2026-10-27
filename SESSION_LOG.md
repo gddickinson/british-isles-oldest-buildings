@@ -1874,3 +1874,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 385 OK; ui_check material pages + new `material_ireland` (granite) on port 5078; limestone map checked by
   screenshot. The running GUI needs a restart. Hosted copy not updated (rocks.json +0.45 MB; 2.5 MiB free).
 - Next: the stones left open (greensand, ironstone, lias, Bargate, Pennant, Collyweston), or BT6.
+
+## 2026-10-27 — Getting the repository ready to be public
+- Checked for going public: no passwords, tokens or keys in any commit, `settings.json` never committed, no
+  personal paths (home folder, FANTOM, the mini) in files or history; the 135 commits carry George's Gmail
+  address (left as it is; rewriting history was not asked for); history 34 MB, largest file 3 MB.
+- README and `bidb/bundle.py` no longer say the repository is private (a token is still used when present, for
+  private forks). `LICENSE` is plain MIT again so GitHub detects it (the note on data licences moved to the README).
+- CI: `.github/workflows/tests.yml` (Python 3.11, requirements.txt, unit tests, `node tests/ui_prefs_test.js`). On a
+  clean checkout two tests needed the database: `test_trade_stories.Here` now skips when there is no `places`
+  table, `test_lan` accepts any status but 401/403 for a trusted code (503 with no database). 385 OK, 1 skipped there.
+- Issue templates (`.github/ISSUE_TEMPLATE/`: wrong data with a source and whether it is wrong upstream, missing
+  record, bug) and labels "data correction", "missing record".
+- GitHub Pages: `app.static_export --full-pages` keeps `index.html` a whole document (the claude.ai host wants it
+  stripped); the nav's Tours link was `/trip` in every exported page (now `tours.html`, also for the hosted copy).
+  Checked under a sub-path (`/british-isles-oldest-buildings/`) with headless Chrome: catalogue, map, types load,
+  no 404s. The site (268 MB) is release asset `site.tar.gz` on `site-2026-10-27` (94 MB, SHA-256 checked against
+  GitHub's), deployed by `.github/workflows/pages.yml`; db-2026-10-24 kept as Latest. Turning Pages on (Settings ›
+  Pages › Source: GitHub Actions) was left to George: it publishes a public site, and a private repository needs
+  a paid plan for it.
+- `dist/` is now the full-pages build; run `app.static_export` without the flag before republishing the claude.ai
+  hosted copy (it is 255.5 MiB of 256).

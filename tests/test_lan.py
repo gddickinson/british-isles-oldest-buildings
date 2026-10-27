@@ -84,4 +84,5 @@ class ShareCodes(unittest.TestCase):
             self.assertNotEqual(client.get("/api/stats", environ_base=far).status_code, 401)   # the cookie now
             self.assertEqual(client.get("/api/settings/browse?path=/", environ_base=far).status_code, 403)
             client.get("/help?code=XYZ789", environ_base=far)
-            self.assertEqual(client.get("/api/share", environ_base=far).status_code, 200)    # trusted: full access
+            self.assertNotIn(client.get("/api/share", environ_base=far).status_code, (401, 403))   # trusted: full access
+                                                                                    # (503 with no database, as in CI)

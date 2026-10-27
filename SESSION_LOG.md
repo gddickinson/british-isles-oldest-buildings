@@ -1950,3 +1950,9 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   page: a note above both tabs with "Before you go" (`.tour-warning` in tours.css), linking to Help.
 - `static_export._rewrite` now also rewrites page links with an anchor (`/help#accuracy` → `help.html#accuracy`).
 - ui_check `tour_warning`, `help_accuracy` and neighbours 6/6 (port 5083); dark-mode screenshot checked.
+
+## 2026-10-27 — Bike-ride surfaces and demo site
+- `bidb.tour_surface` rerun after the tours were regenerated (cache now keyed by route): surfaces for all 63 cycle
+  tours (51 in the first pass, ~4.4 h; 12 needed one or two more passes after Overpass failures).
+- Demo site republished from release `site-2026-10-27-4` (Pages workflow run 40596033853); old site releases
+  `site-2026-10-27` and `-2` deleted; `db-2026-10-24` kept as Latest.

@@ -49,6 +49,19 @@ def sort_year(year, precision):
     return year
 
 
+def century_start(n, bc, qual=None):
+    """First year of the nth century, moved on by a qualifier: mid +33, late or second half +50 (BC: late +66)."""
+    q = (qual or "").lower()
+    if bc:
+        return -n * 100 + (66 if q.startswith("late") else 0)
+    start = (n - 1) * 100 + 1
+    if q.startswith("mid"):
+        return start + 33
+    if q.startswith("late") or q.startswith("second half"):
+        return start + 50
+    return start
+
+
 def parse_text_year(text):
     """Best-effort year from free text like '3800 BC', 'c. 1080', '7th century'."""
     if not text:
@@ -61,8 +74,10 @@ def parse_text_year(text):
         return -(k * 1000) if m.group(2) else (k - 1) * 1000 + 1
     m = re.search(r"(\d+)(?:st|nd|rd|th)\b[^.;]*?\bcentur(?:y|ies)\s*(BC)?", t, re.I)
     if m:
-        c = int(m.group(1))
-        return -(c * 100) if m.group(2) else (c - 1) * 100 + 1
+        # "Late 14th century", "early to mid-18th century": the first qualifier right before the ordinal counts
+        q = re.search(r"\b(early|mid|middle|late|second half)\b(?:[\s-]+(?:to\s+)?(?:early|mid|middle|late)\b)?"
+                      r"[\s-]*(?:of\s+)?(?:the\s+)?$", t[:m.start()], re.I)
+        return century_start(int(m.group(1)), bool(m.group(2)), q.group(1) if q else None)
     for word, year in (("neolithic", -3000), ("bronze age", -1500), ("iron age", -400)):
         if word in t.lower() and not re.search(r"\d", t):
             return year

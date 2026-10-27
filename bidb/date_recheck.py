@@ -2,7 +2,9 @@
 
 `python -m bidb.date_recheck [--apply]`: records whose date came from a Wikipedia article, a register
 description, the Wikidata description or a type estimate (or that had none) are dated again by the build's
-own step (`date_fill.fill_missing_dates`, from the download cache) and the changes listed in
+own step (`date_fill.fill_missing_dates`, from the download cache); records dated from a Wikipedia list's
+date text, and hoards, are read again with today's `dates.parse_text_year` ("Late 14th century" was 1301,
+now 1351; a list date no longer earlier than Wikidata's gives way to it). The changes are listed in
 `runs/date_recheck.json`. A rebuild would do the same but drop what the photo, plan and outline jobs added.
 Dates kept after review (`date_confirmations.json`) and user corrections are left alone. With --apply the
 changes are written, and records the build would now leave out (begun after the cutoff, neither a landmark
@@ -10,10 +12,13 @@ nor an oldest example) are listed for review, not deleted; NIAH records that cam
 digit missing from their date range are removed.
 """
 import json
+import re
 import sys
 
 from . import config, overrides
+from .classify import period_for
 from .date_fill import fill_missing_dates
+from .dates import parse_text_year
 
 MINED = ("From Wikipedia article", "From register description", "From Wikidata description",
          "Estimate (building type)", "Not recorded")
@@ -60,6 +65,48 @@ def recheck(conn, log=print):
     return changes
 
 
+QUALIFIED = re.compile(r"\b(?:mid|middle|late|second half)\b[^.;]{0,25}?\d+(?:st|nd|rd|th)[\s-]+centur", re.I)
+
+
+def listed(conn):
+    """-> changes for records dated from a Wikipedia list whose qualified century ("Late 14th century") now
+    reads as a later year."""
+    kept = _kept()
+    changes = []
+    for row in conn.execute(f"SELECT id, name, {', '.join(FIELDS)} FROM buildings "
+                            "WHERE date_source LIKE 'Wikipedia list%'"):
+        b = dict(zip(("id", "name") + FIELDS, row))
+        if b["id"] in kept or not QUALIFIED.search(b["date_text"] or ""):
+            continue
+        a = dict((k, b[k]) for k in FIELDS)
+        m = re.fullmatch(r"(.*) \(Wikidata: (.*)\)", b["date_text"] or "", re.S)
+        if b["date_source"].endswith("(earlier than Wikidata)") and m:
+            listed_year, wd_year = parse_text_year(m.group(1)), parse_text_year(m.group(2))
+            if wd_year is not None and listed_year is not None and listed_year >= wd_year:
+                a.update(year_start=wd_year, date_text=f"{m.group(2)} (Wikipedia list: {m.group(1)})",
+                         date_source="Wikidata inception")     # as records.build_record writes it
+            else:
+                a["year_start"] = listed_year
+        else:
+            a["year_start"] = parse_text_year(b["date_text"])
+        if a["year_start"] is None or a["year_start"] == b["year_start"]:
+            continue
+        a["period"] = period_for(a["year_start"])
+        changes.append({"id": b["id"], "name": b["name"], "old": {k: b[k] for k in FIELDS}, "new": a,
+                        "leaves": False})
+    return changes
+
+
+def hoards(conn):
+    """-> [(new year, period, id)] for hoards whose date text now reads as another year."""
+    out = []
+    for pid, year, text in conn.execute("SELECT id, year_start, date_text FROM places WHERE kind = 'hoard'"):
+        y = parse_text_year(text or "")
+        if y is not None and y != year:
+            out.append((y, period_for(y), pid))
+    return out
+
+
 def niah_typos(conn):
     """NIAH records in only because a digit is missing from the start of their date range ("188–1840"):
     the build leaves them out now (niah.py)."""
@@ -98,7 +145,9 @@ def main(argv):
     from .db import connect
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
-    changes = recheck(conn)
+    changes = recheck(conn) + listed(conn)
+    hoard_years = hoards(conn)
+    print(f"hoards dated again: {len(hoard_years)}")
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(changes, indent=1, ensure_ascii=False))
     print(f"{len(changes)} changes ({sum(c['leaves'] for c in changes)} now after the cutoff) → {OUT}")
@@ -106,6 +155,8 @@ def main(argv):
     print(f"NIAH records with a digit missing from their date: {typos}")
     if "--apply" in argv:
         apply(conn, changes)
+        conn.executemany("UPDATE places SET year_start = ?, period = ? WHERE id = ?", hoard_years)
+        conn.commit()
         if typos:
             remove(conn, typos)
 

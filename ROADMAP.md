@@ -682,8 +682,12 @@ the descent of a type is disputed, both views are given and the link is drawn as
       Woodchester Roman Villa (c. AD 325 vs 2nd century), St Mary Magdalene (675 vs 12th century), St James Antony
       (1259 vs 12th century), St Michael (1440 vs 13th century), Ston Easton (11th vs 15th century), Ormesby Hall
       (c. 1600 vs 1754): review with the 69 in `docs/date_review.md`.
-- [ ] Clackmannan Tower (emergent 2026-10-26, seen in BT5's spread chart): year 1301 with the date text "Late 14th
-      century"; check how the year and the text disagree and whether other records do the same.
+- [x] Clackmannan Tower (emergent 2026-10-26, seen in BT5's spread chart; fixed 2026-10-26): year 1301 with the date
+      text "Late 14th century". `dates.parse_text_year` (Wikipedia list dates, hoards, research claims) ignored
+      qualifiers; it now reads them as the text miner does (`dates.century_start`, shared: mid +33, late or second
+      half +50, the first qualifier counts). `bidb.date_recheck` reads list dates and hoards again: 6 records
+      (Clackmannan and Crichton 1351, Lauriston 1251, Oxford Castle 1034, Glasgow Cathedral 1134; Culross Abbey's
+      list date no longer earlier than Wikidata's, so 1217) and 43 hoards; Sketrick Castle kept (confirmed date).
 - [x] Register-period dates as earliest examples (emergent 2026-10-26, seen on the /types tree; fixed 2026-10-26):
       `type_stats.estimated` now counts "(register period)" dates (8,800 HES, Cadw and NI places, whose year only
       stands for the period, `registers.period_year`) as estimates, so they are never a type's earliest surviving

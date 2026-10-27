@@ -4,6 +4,8 @@ Every hit keeps the sentence it came from, so the GUI can show the evidence.
 """
 import re
 
+from .dates import century_start
+
 ORDINAL_WORDS = {"first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5, "sixth": 6,
                  "seventh": 7, "eighth": 8, "ninth": 9, "tenth": 10, "eleventh": 11,
                  "twelfth": 12, "thirteenth": 13, "fourteenth": 14, "fifteenth": 15,
@@ -87,19 +89,6 @@ def _ord_value(num, word):
     return int(num) if num else ORDINAL_WORDS[word.lower()]
 
 
-def _century_start(n, bc, qual):
-    if bc:
-        start = -n * 100
-        return start + (66 if qual and qual.lower().startswith("late") else 0)
-    start = (n - 1) * 100 + 1
-    q = (qual or "").lower()
-    if q.startswith("mid") or q.startswith("middle"):
-        return start + 33
-    if q.startswith("late") or q.startswith("second half"):
-        return start + 50
-    return start
-
-
 def _sentences(text):
     # not after "(d. 655)", "b. 1590", "c. 1200", "fl. 1400"
     return [s.strip() for s in re.split(r"(?<!\bd\.)(?<!\bb\.)(?<!\bc\.)(?<!\bfl\.)(?<=[.!?])\s+|\n+", text or "")
@@ -127,7 +116,7 @@ def candidates(sentence):
         n = _ord_value(m.group(2), m.group(3))
         if n > 21:
             continue
-        out.append((_century_start(n, bool(m.group(4)), m.group(1)), m.group(0).strip()))
+        out.append((century_start(n, bool(m.group(4)), m.group(1)), m.group(0).strip()))
     for m in YEAR.finditer(sentence):
         if _LIFE.search(sentence[:m.start()]):
             continue          # "(d. 655)", "(b. 1270)": a person's dates

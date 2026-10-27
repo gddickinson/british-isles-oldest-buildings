@@ -1733,3 +1733,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `dist/` served locally in headless Chrome: both new quizzes draw questions, no errors.
 - Tests 374 OK. Next: BT6 (generated examples) or BT3c2 (material regions over the geology layer), or the open
   emergent items (generic stones, tramways and funiculars).
+
+## 2026-10-26 — Qualified centuries in list dates (Clackmannan Tower)
+- Emergent item from BT5: Clackmannan Tower had year 1301 with the date text "Late 14th century".
+  `dates.parse_text_year` (Wikipedia list dates, hoards, research claims) ignored qualifiers. It now reads them as
+  the text miner does: `dates.century_start` moved from `date_mining` and shared (mid +33, late or second half +50,
+  late BC +66; the first qualifier counts, "early to mid-18th century" → 1701).
+- `bidb.date_recheck` gains `listed` (records dated from a Wikipedia list whose date text has a qualified century;
+  a list date no longer earlier than Wikidata's gives way to it, as records.build_record does) and `hoards`.
+  Applied: Clackmannan Tower and Crichton Castle 1351, Lauriston Castle 1251, Oxford Castle 1034, Glasgow Cathedral
+  1134, Culross Abbey 1217 (Wikidata; the list's "Late 13th century" is 1251); 43 hoards (Trewhiddle 851...).
+  Sketrick Castle kept (in date_confirmations.json). Date checks recomputed: still 7 conflicts.
+- Tests 376 OK (2 new in `test_date_mining`). Hosted copy not updated (6 records, 43 places).
+- Next: the open emergent items (seven date-check conflicts, earliest railway ranking, tramways, generic stones),
+  BT3c2 (material regions over the geology layer) or BT6.

@@ -86,3 +86,22 @@ class RegisterTextTest(unittest.TestCase):
         self.assertEqual(date_from_register("Gatehouse of C14, 1368-99")[0], 1301)
         self.assertEqual(date_from_register("Anglican parish church, probably15th century with vaulted nave")[0], 1401)
         self.assertIsNone(date_from_register("The fort is situated on a knoll approximately 400m SW of the summit"))
+
+
+class ListDateTextTest(unittest.TestCase):
+    """dates.parse_text_year (Wikipedia list and hoard dates) reads qualifiers as the text miner does."""
+
+    def test_qualified_centuries(self):
+        from bidb.dates import parse_text_year
+        self.assertEqual(parse_text_year("Late 14th century"), 1351)        # Clackmannan Tower, was 1301
+        self.assertEqual(parse_text_year("mid-12th century (Wikidata: 1136)"), 1134)
+        self.assertEqual(parse_text_year("second half of the 15th century"), 1451)
+        self.assertEqual(parse_text_year("late 3rd century BC"), -234)
+        self.assertEqual(date_from_text("It was built in the late 14th century.")[0], 1351)
+
+    def test_first_qualifier_and_plain_centuries(self):
+        from bidb.dates import parse_text_year
+        self.assertEqual(parse_text_year("Early-mid 16th century"), 1501)
+        self.assertEqual(parse_text_year("early to mid-18th century"), 1701)
+        self.assertEqual(parse_text_year("13th century (rebuilt late 14th century)"), 1201)
+        self.assertEqual(parse_text_year("14th century"), 1301)

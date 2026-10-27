@@ -1747,3 +1747,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 376 OK (2 new in `test_date_mining`). Hosted copy not updated (6 records, 43 places).
 - Next: the open emergent items (seven date-check conflicts, earliest railway ranking, tramways, generic stones),
   BT3c2 (material regions over the geology layer) or BT6.
+
+## 2026-10-26 — Earliest examples: structure places rank with records
+- Emergent item from the register-period fix: the earliest railway was the Waterloo & City line (1894) because
+  `type_stats.earliest` took catalogue records before places. Now, for a type with more places than records, places
+  of the structure groups (Military heritage, Infrastructure & utilities, Bridges, Maritime heritage, Underground)
+  dated to the year ("1805", "opened 27 September 1825") rank with the records (`structure_place`).
+- Simulated over all types first: eight would change if every place group counted, but hospitals, fire stations,
+  theatres and works carry the founding date of the organisation (Manchester Royal Infirmary 1752, Carron Company
+  1759, Chiltern Firehouse 1889), so only the structure groups count. Three changed: railway → Stockton and
+  Darlington Railway 1825, Martello tower → Dymchurch 1805, polygonal fort → Fort Brockhurst 1858.
+- Type pages say when the earliest example is a place ("whether it still stands is not recorded").
+- Tests 377 OK (1 new in `test_type_stats`); ui_check of the four /types pages OK (server on port 5073). The running
+  GUI needs a restart. Hosted copy not updated (3 earliest examples).
+- Next: tramways and funiculars, generic stones (BT3a research), BT3c2 or BT6.

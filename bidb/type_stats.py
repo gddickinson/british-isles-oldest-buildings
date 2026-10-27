@@ -13,6 +13,7 @@ Reviewed early examples that are right (the type's first known date is later tha
     python -m bidb.type_stats [--report] [--type ID]
 """
 import json
+import re
 import sys
 from collections import defaultdict
 
@@ -24,18 +25,22 @@ GONE = "Demolished / destroyed"
 ESTIMATE = "Estimate (building type)"
 REGISTER_PERIOD = "(register period)"   # date texts of register places dated only by their period
 EXAMPLES = 200              # dated examples returned for one type
+# Place groups whose dates are of the structure itself (a fort, a line, a bridge), not of an organisation founded
+# earlier (a hospital, a firm): their places dated to the year rank with catalogue records (`structure_place`)
+STRUCTURE_GROUPS = {"Military heritage", "Infrastructure & utilities", "Bridges", "Maritime heritage", "Underground"}
+_TO_YEAR = re.compile(r"(?:(?:built|opened|founded|completed|begun|established) )?(?:\d{1,2} [A-Z][a-z]+ )?\d{3,4}")
 
 _ROWS = """
 SELECT tm.type_id, tm.source, tm.entity_id, tm.via, tm.is_primary, b.name, b.year_start, b.date_text, b.lat, b.lon,
-       b.nation, b.county, b.status, b.date_confidence, b.image_thumb, NULL AS kind
+       b.nation, b.county, b.status, b.date_confidence, b.image_thumb, NULL AS kind, NULL AS kind_group
 FROM type_map tm JOIN buildings b ON tm.source = 'building' AND b.id = tm.entity_id {where}
 UNION ALL
 SELECT tm.type_id, tm.source, tm.entity_id, tm.via, tm.is_primary, p.name, p.year_start, p.date_text, p.lat, p.lon,
-       p.nation, p.county, NULL, NULL, p.image_thumb, p.kind
+       p.nation, p.county, NULL, NULL, p.image_thumb, p.kind, p.kind_group
 FROM type_map tm JOIN places p ON tm.source = 'place' AND p.id = tm.entity_id {where}
 """
 _COLS = ("type_id", "source", "id", "via", "primary", "name", "year", "date_text", "lat", "lon", "nation",
-         "county", "status", "date_confidence", "thumb", "kind")
+         "county", "status", "date_confidence", "thumb", "kind", "kind_group")
 
 
 def _rows(conn, type_id=None):
@@ -78,12 +83,23 @@ def _candidate(row, t, ok):
             and not estimated(row))
 
 
+def structure_place(row):
+    """A place of a STRUCTURE_GROUPS group dated to the year ("1805", "opened 27 September 1825")."""
+    return (row["source"] == "place" and row.get("kind_group") in STRUCTURE_GROUPS
+            and bool(_TO_YEAR.fullmatch((row["date_text"] or "").strip())))
+
+
 def earliest(rows, t, ok=None):
     """The earliest surviving example among a type's rows: where the type is the primary one (a castle later
-    used as a town hall is no early town hall), catalogue records before places; then any."""
+    used as a town hall is no early town hall), catalogue records before places; then any. For a type with more
+    places than records (railway lines, Martello towers), its structure places dated to the year rank with the
+    records: the Stockton and Darlington Railway (1825) before a line in the catalogue of 1894."""
+    mostly_places = (len({r["id"] for r in rows if r["source"] == "place"})
+                     > len({r["id"] for r in rows if r["source"] == "building"}))
     for primary, source in ((True, "building"), (True, "place"), (False, "building"), (False, "place")):
-        found = [r for r in rows if r["source"] == source and (r["primary"] or not primary)
-                 and _candidate(r, t, ok)]
+        found = [r for r in rows if (r["source"] == source or (source == "building" and mostly_places
+                                                               and structure_place(r)))
+                 and (r["primary"] or not primary) and _candidate(r, t, ok)]
         if found:
             return min(found, key=lambda r: (r["year"], r["name"] or ""))
     return None

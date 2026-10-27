@@ -698,10 +698,12 @@ the descent of a type is disputed, both views are given and the link is drawn as
       out) type 198 lines as railways from 1825 and 9 before it as wagonways (Wollaton 1604, Tanfield 1725, Middleton
       1758…, the curated periods with `slack: 0`); the Waterloo & City line was dated 1864 (another company's line)
       and is now 1894 (a reviewed date correction, quote found in the cached article).
-- [ ] Earliest railway is a catalogue record of 1894 (emergent 2026-10-26, from the fix above): `type_stats.earliest`
-      takes catalogue records before places, so the Stockton and Darlington Railway (1825, a researched place) loses
-      to the Waterloo & City line; decide whether places with a researched or Wikidata date to the year should rank
-      with records for types whose examples are mostly places (lines, bridges, earthworks).
+- [x] Earliest railway is a catalogue record of 1894 (emergent 2026-10-26, fixed 2026-10-26): for a type with more
+      places than records, `type_stats.earliest` now ranks its places of the structure groups (Military heritage,
+      Infrastructure & utilities, Bridges, Maritime heritage, Underground) dated to the year with the records
+      (`structure_place`). Railway → Stockton and Darlington Railway 1825, Martello tower → Dymchurch 1805, polygonal
+      fort → Fort Brockhurst 1858. Hospitals, fire stations, theatres and works left as they were: their places carry
+      the founding date of the organisation (Manchester Royal Infirmary 1752, Carron Company 1759), not the building's.
 - [ ] Tramways, funiculars, cliff lifts and inclines (emergent 2026-10-26): about 25 `in_rail` places (Great Orme
       Tramway, Blackpool Tramway, Lickey Incline, Scarborough funiculars) and the 360 signal boxes have no type in
       the tree; research them as BT1d types (sourced periods) if wanted.

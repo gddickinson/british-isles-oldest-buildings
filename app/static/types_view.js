@@ -40,7 +40,7 @@ const TypeView = (() => {
   const entity = (e) => `<a href="${e.source === "place" ? "#" : buildingUrl(e.id)}" ${e.source === "place" ? "data-place" : "data-open"}="${esc(e.id)}">${esc(e.name)}</a>`;
   const earliest = (e, what) => e ? `<div class="ty-earliest">${e.thumb ? `<img src="${esc(e.thumb)}" alt="" loading="lazy">` : ""}
     <div><b>Earliest surviving example in the catalogue</b><br>${entity(e)} <span class="meta">${esc([e.date_text, e.county, e.nation].filter(Boolean).join(" · "))}</span>
-    <br><span class="hint">${esc(what)}</span></div></div>` : "";
+    <br><span class="hint">${esc(what)}${e.source === "place" ? " A place, not a catalogue record: whether it still stands is not recorded." : ""}</span></div></div>` : "";
 
   // total: how many are dated (fewer are shown: 200 here, 40 or 25 in the hosted copy)
   function examples(rows, extra, total) {

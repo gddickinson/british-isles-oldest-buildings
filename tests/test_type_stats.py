@@ -30,10 +30,11 @@ def conn():
     c = sqlite3.connect(":memory:")
     c.execute("CREATE TABLE buildings (id, name, year_start, date_text, lat, lon, nation, county, status, "
               "date_confidence, image_thumb)")
-    c.execute("CREATE TABLE places (id, name, year_start, date_text, lat, lon, nation, county, image_thumb, kind)")
+    c.execute("CREATE TABLE places (id, name, year_start, date_text, lat, lon, nation, county, image_thumb, kind, "
+              "kind_group)")
     c.execute("CREATE TABLE type_map (entity_id, source, type_id, via, label, is_primary)")
     c.executemany("INSERT INTO buildings VALUES (?,?,?,?,?,?,?,NULL,?,?,NULL)", BUILDINGS)
-    c.executemany("INSERT INTO places VALUES (?,?,?,?,?,?,?,NULL,NULL,?)", PLACES)
+    c.executemany("INSERT INTO places VALUES (?,?,?,?,?,?,?,NULL,NULL,?,NULL)", PLACES)
     c.executemany("INSERT INTO type_map VALUES (?,?,?,?,?,?)", MAP)
     return c
 
@@ -82,6 +83,22 @@ class TestTypeStats(unittest.TestCase):
         self.assertEqual(type_stats.earliest(rows, t)["id"], "p2")
         self.assertEqual([(x["id"], x["primary"]) for x in type_stats.for_entity(conn(), "b5", TYPES)],
                          [("castle", True), ("town-hall", False)])
+
+    def test_structure_places_rank_with_records(self):
+        t = {"id": "railway", "period": {"from": 1825}}
+        line = {"source": "place", "primary": 1, "status": None, "date_confidence": None,
+                "kind_group": "Infrastructure & utilities"}
+        rows = [{"id": "b1", "source": "building", "primary": 1, "year": 1894, "name": "City line",
+                 "date_text": "1894", "status": "Standing", "date_confidence": "Recorded", "kind_group": None},
+                dict(line, id="p1", year=1825, name="S&D", date_text="opened 27 September 1825"),
+                dict(line, id="p2", year=1830, name="L&M", date_text="1830")]
+        self.assertTrue(type_stats.structure_place(rows[1]))
+        self.assertEqual(type_stats.earliest(rows, t)["id"], "p1")
+        self.assertEqual(type_stats.earliest(rows[:2], t)["id"], "b1")      # not mostly places
+        hospital = [rows[0]] + [dict(r, kind_group="Public institutions") for r in rows[1:]]
+        self.assertEqual(type_stats.earliest(hospital, t)["id"], "b1")      # a founding date, not the building's
+        century = [rows[0]] + [dict(r, date_text="19th century") for r in rows[1:]]
+        self.assertEqual(type_stats.earliest(century, t)["id"], "b1")
 
 
 if __name__ == "__main__":

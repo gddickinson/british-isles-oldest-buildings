@@ -26,7 +26,8 @@ age claim, how well it is established, sources with exact quotes and a verdict):
   innovations - inventions, discoveries and firsts made in the isles (roadmap C6, `data/curated/trade/innovations.json`),
             placed where they were made, tried or first used -> "Innovations & firsts"; `made_at` (the Wikipedia title
             of the building or place) is resolved to its Wikidata id (`made_at_ids`, `extra.made_at_qid`) and linked to
-            its catalogue record or place (`link_made_at`, `extra.made_at_ref` = "building:<id>" or "place:<id>")
+            its catalogue record or place (`link_made_at`, `extra.made_at_ref` = "building:<id>" or "place:<id>");
+            with them the Wikidata inventions made at a known place (kind `inv_wd`, bidb.innovations_wd, C6b)
   civic   - oldest schools, universities, hospitals, post offices, courts, police and fire stations, town halls
             and other public institutions -> "Public institutions" (with bidb.institutions)
 An entry whose Wikidata item is already a catalogue building stays there; one already a place moves to the
@@ -91,6 +92,8 @@ LISTS = {
 }
 KIND_LABEL = {k: cat for spec in LISTS.values() for cat, k in spec["kinds"].items()}
 KIND_GROUP = {k: spec.get("groups", {}).get(cat, spec["group"]) for spec in LISTS.values() for cat, k in spec["kinds"].items()}
+KIND_LABEL["inv_wd"] = "Invention or discovery (Wikidata)"     # bidb.innovations_wd (C6b)
+KIND_GROUP["inv_wd"] = "Innovations & firsts"
 KINDS = tuple(KIND_LABEL)
 
 
@@ -216,6 +219,19 @@ def run(log=print):
                              [(by[i]["year_start"], by[i]["date_text"], period_for(by[i]["year_start"])
                                if by[i]["year_start"] is not None else "Unknown", i) for i in kept])
             conn.executemany("UPDATE places SET type = ? WHERE id = ?", [(by[i]["type"], i) for i in moved])
+    from . import innovations_wd
+    try:
+        recs = innovations_wd.records()
+    except Exception as exc:                  # QLever unreachable: keep the places of the last build
+        log(f"Wikidata inventions not fetched ({exc}); kept as they were")
+    else:
+        # discoveries with a place of discovery (P189) were taken as finds by bidb.places_build: replaced here
+        ids = [r["id"] for r in recs]
+        q = ",".join("?" * len(ids))
+        conn.execute(f"DELETE FROM places_fts WHERE id IN (SELECT id FROM places WHERE kind = 'find' AND id IN ({q}))", ids)
+        conn.execute(f"DELETE FROM places WHERE kind = 'find' AND id IN ({q})", ids)
+        place_stage.write(conn, recs, (innovations_wd.KIND,), "Innovations & firsts", lambda kind, r: False,
+                          lambda m: log(f"[{time.time() - t0:5.0f}s] Wikidata inventions: {m}"))
     link_made_at(conn)
     conn.commit()
 

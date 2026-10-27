@@ -483,8 +483,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       `made_at` linked to the building or place (Cromford Mill, Hall i' th' Wood, the Iron Bridge, Cragside, St Mary's
       Hospital, Bletchley Park, Penydarren Ironworks, Birr Castle, Maynooth...; 15 of 36) shown as "Made or first used
       at"; section on the Oldest page.
-- [ ] C6b Wikidata inventions in the isles (inventor P61 with a place of discovery P189 or of creation): the first
-      query (2026-10-25) did not finish within the endpoint's time; narrow it (by class of invention or by year).
+- [x] C6b (2026-10-27) Wikidata inventions in the isles (new `bidb/innovations_wd.py`, run with bidb.oldest_lists):
+      the narrow query (inventor P61 + place of discovery P189 or creation P1071 in the isles, no class tree) takes
+      seconds on QLever. Wikidata places few: of ~580 items with an inventor and any isles place, 16 are kept: a place
+      with its own coordinates (hydrogen, nitrogen, sodium and others are placed only at "United Kingdom"), not a
+      find, fossil or museum object, not one of the 36 researched; 2 reviewed out (`SKIP`: "mechanical computer" is
+      the general class; Salter's duck is placed at Coventry, it was devised at Edinburgh). Kind "Invention or
+      discovery (Wikidata)" in Innovations & firsts (iridium 1803, barium at the Royal Institution 1808, Babbage's
+      engines, Daniell cell, quaternions at Broom Bridge 1843, mauveine, traffic light, electron, xenon, proton,
+      neutron, Turing machine, Hamilton scale, Pedersen bicycle, Fisherman's Friend); 10 linked to their place. The
+      electron, proton, neutron, xenon and Hamilton scale had been filed under Finds & treasures (places_build takes
+      anything with P189 as a find): this stage replaces those rows. Marked "Wikidata statements, not checked".
 - [x] C7 (2026-10-25) Laws and institutions: 25 dated events in `change/events.json` (`topic: law`, a `trade` tag
       read by the trade stories: wool, trade, work, tea, banking, slavery, farming, cotton), each cited with an exact
       quote from its Wikipedia article (all 25 checked present when written): the Weavers' charter 1155, Carta

@@ -10,7 +10,7 @@ const PLACE_ICON = { "Battles & sieges": "⚔", "Archaeological sites": "🪨", 
 const EXTRA_LABELS = { part_of: "Part of", now_in: "Now kept at", found_at: "Found at",
   commemorates: "Commemorates", inscription: "Inscription", region: "Region", register_ref: "Register reference",
   works: "Works set here", found: "Year found", order: "Order of precedence", trade: "Trade", charter: "Charter granted",
-  hall: "Hall", made_at: "Made or first used at", motto: "Motto", translation: "Motto in English" };
+  hall: "Hall", made_at: "Made or first used at", inventors: "Invented or discovered by", motto: "Motto", translation: "Motto in English" };
 // a list value: plain strings, or [title, author, year] for literary works
 const extraText = (v) => (Array.isArray(v) ? v.map((x) => (Array.isArray(x)
   ? `${x[0]}${x[1] ? ` (${x[1]}${x[2] ? ", " + x[2] : ""})` : ""}` : x)).join("; ") : v);

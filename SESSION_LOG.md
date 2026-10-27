@@ -1956,3 +1956,16 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   tours (51 in the first pass, ~4.4 h; 12 needed one or two more passes after Overpass failures).
 - Demo site republished from release `site-2026-10-27-4` (Pages workflow run 40596033853); old site releases
   `site-2026-10-27` and `-2` deleted; `db-2026-10-24` kept as Latest.
+
+## 2026-10-27 — C6b: Wikidata inventions in the isles
+- New `bidb/innovations_wd.py`, run inside the oldest_lists stage: a narrow QLever query (inventor P61 + place of
+  discovery P189 or creation P1071, no class tree; seconds, where the first C6b query timed out). Wikidata places few
+  inventions: 16 kept (a place in the isles with its own coordinates, not a whole nation; finds, fossils, museum objects
+  and the 36 researched innovations left out; "mechanical computer" and Salter's duck reviewed out in `SKIP`).
+  Kind "Invention or discovery (Wikidata)" in Innovations & firsts, described as unchecked Wikidata statements; 10
+  linked to their place (Broom Bridge, King's College London, University of Manchester...). Five (electron, proton,
+  neutron, xenon, Hamilton scale) had been "finds" from places_build; the stage now replaces those rows.
+- Written into the existing database with only this step (rerunning a whole stage undoes later stages), then
+  `bidb.nation_geo` (nations for the 16). Detail views label `inventors` "Invented or discovered by".
+- Tests 394 OK (new `test_innovations_wd`); ui_check places OK; card checked in a screenshot. Demo site and hosted
+  copy not updated (the database changed: next release).

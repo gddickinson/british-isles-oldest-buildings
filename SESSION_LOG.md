@@ -1939,3 +1939,14 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   show no surface line until it finishes.
 - Tests all OK; ui_check quiz pages (things, material, first, nametype) and tours (with new `tour_trade`) pass;
   screenshots of both new quizzes and the trade tours checked. Demo site not updated yet.
+
+## 2026-10-27 — Accuracy and safety warnings
+- README: final section "Important: how this was made, and how far to trust it" (linked in Contents): everything
+  generated automatically by scripts and AI and unchecked by hand; where the data comes from and how dates, types
+  and materials are found; what the quote check proves (the source says those words) and what it does not (that
+  the source is right or the claim follows), the verdicts; tours are computer-made, untested suggestions, with the
+  hazards, access rights by nation and what to check before going.
+- Help: new section "Accuracy and safety" (`#accuracy`, in the contents) and a safety paragraph in Tours; Tours
+  page: a note above both tabs with "Before you go" (`.tour-warning` in tours.css), linking to Help.
+- `static_export._rewrite` now also rewrites page links with an anchor (`/help#accuracy` → `help.html#accuracy`).
+- ui_check `tour_warning`, `help_accuracy` and neighbours 6/6 (port 5083); dark-mode screenshot checked.

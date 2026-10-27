@@ -50,7 +50,7 @@ def _strip_document(html):
 
 def _rewrite(html):
     for route, fname in PAGES.items():
-        html = html.replace(f'href="{route}"', f'href="{fname}"')
+        html = html.replace(f'href="{route}"', f'href="{fname}"').replace(f'href="{route}#', f'href="{fname}#')
     html = html.replace('href="/trip"', 'href="tours.html"')          # the nav's Tours link (/trip → /tours)
     html = re.sub(r'href="/building/([^"]+)"', r'href="index.html#\1"', html)
     return html.replace('"/static/', '"static/')

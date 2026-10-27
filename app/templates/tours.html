@@ -3,6 +3,20 @@
 {% block body %}
 <main class="page tours-page">
   <h1>Tours</h1>
+  <aside class="tour-warning" role="note">
+    <p><b>⚠️ Computer-made suggestions, not tested routes.</b> Stops are chosen by a score and joined by an automatic
+      route planner; nobody has walked, cycled or driven these tours. Routes may use busy roads without pavements,
+      private, closed or rough paths, and tidal crossings; stops may be private, closed, ruined or unsafe (cliffs,
+      caves, mines, tunnels). Distances, times, climbs and surfaces are estimates, and a stop on a tour gives no
+      right of access.</p>
+    <details><summary>Before you go</summary>
+      <p>Plan with an official map (Ordnance Survey, OSNI or Tailte Éireann) and proper navigation, not this page
+        alone; check the weather, tide and ferry times and opening hours; follow the Countryside Code (the Scottish
+        Outdoor Access Code in Scotland) and respect graves, churches and private homes. Access rights differ:
+        Scotland has a general right of responsible access, England and Wales public rights of way and open-access
+        land, and Ireland, Northern Ireland, the Isle of Man and the Channel Islands more limited rights. You use the
+        tours at your own risk. <a href="{{ url_for('pages.help_page') }}#accuracy">How this app was made</a>.</p></details>
+  </aside>
   <div class="tabs tour-tabs" role="tablist">
     <button class="tab active" data-tab="ready" role="tab">Ready-made tours</button>
     <button class="tab" data-tab="build" role="tab">Your tour <span class="count" data-count="trip"></span></button>

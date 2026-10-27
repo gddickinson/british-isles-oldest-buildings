@@ -101,6 +101,8 @@ PAGES = {
     "tours": ("/tours", r'class="tour-card'),
     "tour_detail": ("/tours?mode=walk", r'class="tour-stops"'),
     "tour_trade": ("/tours?theme=trade", r"(?s)tour-card.*Markets &(amp;)? trade of"),
+    "tour_warning": ("/tours", r"(?s)Computer-made suggestions, not tested routes.*Before you go"),
+    "help_accuracy": ("/help#accuracy", r"(?s)Accuracy and safety.*generated automatically and may be wrong.*Use the tours with care"),
     "tour_builder": ("/tours?tab=build", r'id="tb_list"'),
     "history": ("/history", r'class="otd-year"'),
     "quiz": ("/quiz?q=period", r'class="quiz-choices'),

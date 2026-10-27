@@ -6,7 +6,7 @@
 <main class="page help-page">
   <h1>Help &amp; guide</h1>
   <nav class="help-toc" aria-label="Help topics">
-    <a href="#start">Getting started</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
+    <a href="#start">Getting started</a><a href="#accuracy">Accuracy and safety</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
     <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a><a href="#trades">Trades</a>
     <a href="#oldest">Oldest by type</a><a href="#things">Oldest things</a><a href="#types">Building types</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
     {% if not static_mode %}<a href="#sharing">Sharing at home</a>{% endif %}<a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
@@ -27,6 +27,27 @@
       <li>Click a card to open the building; use ☆ to add it to the trip planner, ⇄ to compare.</li>
       <li>Press <kbd>⌘K</kbd> (<kbd>Ctrl+K</kbd> on Windows/Linux) anywhere to jump to a page, building, place or person.</li>
     </ol>
+  </section>
+
+  <section id="accuracy">
+    <h2>Accuracy and safety</h2>
+    <p class="prose"><b>⚠️ Everything here was generated automatically and may be wrong.</b> The catalogue, places,
+      dates, building types, materials, stories, oldest-of lists, quizzes and tours were assembled by scripts and by
+      AI (Claude, working as a coding and research assistant), not by historians, archaeologists or surveyors, and
+      no entry has been checked by hand. Most records come from Wikidata, Wikipedia, the heritage registers and
+      OpenStreetMap and keep their errors; dates read from text or estimated from the kind of monument are marked
+      "≈"; building types and materials are linked by rules that misfire. Treat it as a starting point for your own
+      reading.</p>
+    <p class="prose"><b>Citations.</b> Researched claims (the oldest-of lists, Oldest things, building types and
+      materials, trades and the change-over-time notes) were compiled with AI assistance. Each names its sources with
+      an exact quote, and a script fetches every source again to confirm the quoted words are there (marked "quote
+      found"). That shows the source exists and says those words, not that it is right, that the quote bears out
+      the claim, or that no contrary source exists: those judgements were made by AI and are not verified. Verdicts:
+      <b>kept</b> (the sources found agree), <b>corrected</b> (the popular claim is wrong; the entry gives the one the
+      sources support), <b>open</b> (disputed or uncertain). Check the sources before relying on a claim, and report
+      errors on <a href="https://github.com/gddickinson/british-isles-oldest-buildings/issues">GitHub</a>.</p>
+    <p class="prose"><b>Tours</b> are computer-made suggestions, never walked, cycled or driven by anyone: see
+      <a href="#tours">Tours</a> for how to use them safely.</p>
   </section>
 
   <section id="catalogue">
@@ -218,6 +239,16 @@
       and roads (OpenStreetMap, OSRM); the time includes a stop at each place. Each tour opens in Google Maps for
       turn-by-turn directions, downloads as GPX (sat-navs, cycling and walking apps) or KML (Google Earth), prints,
       or copies to <b>Your tour</b>.</p>
+    <p class="prose"><b>⚠️ Use the tours with care.</b> Stops are chosen by a score and joined by an automatic route
+      planner (OSRM on OpenStreetMap data); nobody has tested them. Routes may follow busy roads without pavements,
+      unlit, private, closed or rough paths, river and tidal crossings or steep ground, and distances, times, climbs
+      and surfaces are estimates. Stops may be private homes or land, closed, ruined or unsafe (cliffs, caves, mines,
+      tunnels), or open only at times or for a fee; opening details from OpenStreetMap may be out of date. Being on a
+      tour gives no right of access: Scotland has a general right of responsible access, England and Wales public
+      rights of way and open-access land, and Ireland, Northern Ireland, the Isle of Man and the Channel Islands more
+      limited rights. Plan with an official map (Ordnance Survey, OSNI or Tailte Éireann) and proper navigation, check
+      the weather, tides, ferries and opening hours, follow the Countryside Code (the Scottish Outdoor Access Code in
+      Scotland), respect graves, churches and private homes, and go at your own risk.</p>
     <p class="prose"><b>Your tour</b>: star (☆) buildings and places anywhere, or <b>✨ Suggest a tour</b> from a town,
       postcode, your location or the map centre, for one to two hours, half a day or a day, on a theme. Choose
       walking, cycling or driving and whether to return to the start; <b>Best order</b> finds the shortest order;

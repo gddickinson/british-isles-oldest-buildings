@@ -105,3 +105,9 @@
 :root[data-theme="dark"] .quiz-choices .btn.right { background: #1f3b24; color: #bfe6c5; }
 :root[data-theme="dark"] .quiz-choices .btn.wrong { background: #46201e; color: #f3c0bc; }
 .quiz-choices .btn:disabled { opacity: 1; cursor: default; }
+
+/* safety note above both tabs */
+.tour-warning { border: 1px solid var(--line); border-left: 4px solid #b5651d; background: var(--warn-soft);
+  border-radius: 8px; padding: .5rem .8rem; margin: .4rem 0 .9rem; max-width: 80ch; font-size: 14px; }
+.tour-warning p { margin: .2rem 0; }
+.tour-warning summary { cursor: pointer; font-weight: 600; }

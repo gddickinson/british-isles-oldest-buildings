@@ -1782,3 +1782,28 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   server (port 5074); funicular type page checked by screenshot. The running GUI needs a restart. Hosted copy not
   updated (the /types data and quiz pool will pick the new types up at the next export).
 - Next: tramroad bridges (new emergent item), generic stones (BT3a research), BT3c2 or BT6.
+
+## 2026-10-26 — Bridge places typed; canal aqueducts, swing, bascule and transporter bridges
+- Emergent item "tramroad bridges untyped" was wider: 980 bridge places had no building type (597 railway bridges,
+  all 169 aqueducts and 91 swing or bascule bridges, 121 early crossings) because the kind labels of bidb.bridges
+  ("Railway viaduct or bridge") match no class. `aliases.json` `place_kinds`: br_rail, br_early, br_moving and
+  br_aqueduct default to the general bridge type (name and text rules still refine them).
+- Four new forms of bridge in `lineage_transport.json`, each with a sourced period and structure (35 quotes,
+  2,216 of 2,216 found by the quote check): canal aqueduct 1761- (Barton Aqueduct; Kelvin 1790; cast-iron troughs
+  1796; Falkirk Wheel aqueduct 2002; no FISH concept: AQUEDUCT also covers water channels), swing bridge 1786-
+  (Oxford Canal's Banbury-Oxford length; Seán O'Casey 2005, Scale Lane 2013), bascule or lifting bridge 1786-
+  (canal lift bridges and drawbridges; Tower Bridge 1886-94; Gull Wing Bridge 2024), transporter bridge 1905-1917
+  (Widnes-Runcorn to Warrington). Four variant links from bridge. 321 types, 320 links.
+- Text rules for the four (canal aqueducts need a canal or navigation word; transporter-bridge power houses and
+  Glen Etive's box transporters left out) and a name rule for canal aqueducts named only "X Aqueduct"; reviewed
+  exclusions: pipe bridges, the Loch Katrine water aqueducts (Tom and Eas, Loch Chon), Flash Road (New River), the
+  River Wey aqueducts, Sawley (a pipe bridge). Class aliases: navigable aqueduct, drawbridge.
+- `type_map.CLOSED`: kind labels ending "(gone or closed)" (bridges, institutions, sports, trade_works stages) are
+  read without it: 95 closed schools and 21 bridges typed.
+- Dry run before writing: 1,224 primary types changed (856 to bridge, 117 canal aqueducts, 100 swing, 46 bascule,
+  5 transporter, 95 schools; Tower Bridge now bascule first). Records typed 15,729 (69.9%), places 60,506; 257 of
+  295 isles types with examples, 223 with an earliest surviving example (Luggie Aqueduct 1775, Leith Swing Bridge,
+  Turnbridge Lift Bridge 1865, Newport Transporter Bridge).
+- Tests 380 OK (new `TestBridgeRules`); ui_check of the /types pages + new `type_bridge` 7/7 on a fresh server
+  (port 5075); canal aqueduct page checked by screenshot. The running GUI needs a restart. Hosted copy not updated.
+- Next: generic stones (BT3a research), BT3c2 (material regions over the geology layer) or BT6.

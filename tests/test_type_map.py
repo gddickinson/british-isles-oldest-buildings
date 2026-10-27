@@ -192,3 +192,28 @@ class TestRailwayRules(unittest.TestCase):
         found = m.record("lock; canal inclined plane", "Bingley Five Rise Locks", "Bridge / infrastructure", 1774,
                          text="Bingley Five Rise Locks | staircase lock on the Leeds and Liverpool Canal")
         self.assertEqual(found[0][0], "pound-lock")
+
+
+class TestBridgeRules(unittest.TestCase):
+    """Bridge places by kind, canal aqueducts, swing, bascule and transporter bridges (curated rules)."""
+    matcher, place = TestRailwayRules.matcher, TestRailwayRules.place
+
+    def test_bridges(self):
+        m = self.matcher()
+        self.assertEqual(self.place(m, "br_rail", "Ynysafan Tramroad Bridge", label="Railway viaduct or bridge"),
+                         "bridge")
+        self.assertEqual(self.place(m, "bridge", "Old Ness Bridge", year=1684, label="Bridge (gone or closed)"),
+                         "bridge")
+        self.assertEqual(self.place(m, "br_aqueduct", "Dove Aqueduct", "canal aqueduct over the River Dove"),
+                         "canal-aqueduct")
+        self.assertEqual(self.place(m, "br_aqueduct", "Carmuirs Aqueduct"), "canal-aqueduct")
+        self.assertEqual(self.place(m, "br_aqueduct", "Loch Chon Aqueduct No 3 (Former Glasgow Corporation Water "
+                                    "Works), Dow of Chon", "aqueduct bridge carrying the Katrine aqueduct"), "bridge")
+        self.assertEqual(self.place(m, "br_aqueduct", "pipeline bridge over the Calder and Hebble Navigation"),
+                         "bridge")
+        self.assertEqual(self.place(m, "br_moving", "Tomnahurich Swing Bridge", "swing bridge in Inverness"),
+                         "swing-bridge")
+        self.assertEqual(self.place(m, "br_moving", "Starks Bridge", "Grade II* listed canal lift bridge"),
+                         "bascule-bridge")
+        self.assertEqual(self.place(m, "bridge", "Middlesbrough Transporter Bridge", year=1911), "transporter-bridge")
+        self.assertNotEqual(self.place(m, "in_power", "Former transporter bridge power house"), "transporter-bridge")

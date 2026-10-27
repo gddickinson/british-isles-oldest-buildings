@@ -6,8 +6,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 317 types, 316 links, 2,179 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,717 records (69.8%) and 59,375 places typed, 253 of 291
-  isles types with examples, 219 with an earliest surviving example (register periods no longer count).
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
+  isles types with examples, 223 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -713,8 +713,14 @@ the descent of a type is disputed, both views are given and the link is drawn as
       (Cadw "Tramroad", "Incline") type 434 places: 370 signal boxes, 22 funiculars, 20 plateways, 14 railway and 4
       canal inclines, 3 street tramways. Left out on review: railway stations and tram stops whose articles mention a
       tramway, the Lickey Incline (a locomotive gradient, never rope-worked), a proposed light railway, a target railway.
-- [ ] Tramroad bridges untyped (found 2026-10-26): about 25 `br_rail` places ("Tramroad Bridge over Sychnant River",
-      "Redbrook Incline Bridge") have no type; they are bridges, not plateways, but no bridge rule reaches them.
+- [x] Tramroad bridges untyped (found 2026-10-26, done 2026-10-26): wider than found: 980 bridge places had no
+      type (597 railway, 169 aqueducts, 91 swing or bascule, 121 early crossings) because their kind labels match no
+      class. Bridge kinds now default to the general bridge type (`place_kinds`), and four new forms with sourced
+      periods (35 quotes, all found): canal aqueduct 1761- (Barton; no FISH concept of its own), swing bridge 1786-,
+      bascule or lifting bridge 1786- (canal lift bridges, drawbridges; Tower Bridge 1886-94; Gull Wing 2024),
+      transporter bridge 1905-1917. Kind labels ending "(gone or closed)" were not read either (`type_map.CLOSED`):
+      95 closed schools and 21 bridges typed. Left out on review: pipe bridges, Loch Katrine water aqueducts, the
+      New River's Flash Road aqueduct, the River Wey aqueducts.
 - [ ] Wikidata classes Bingley Five Rise Locks as a "canal inclined plane" (found 2026-10-26; a staircase lock rule
       types it a pound lock); fix at source with the other Wikidata errors.
 - [x] FISH scope notes cut short (found in BT4a, fixed 2026-10-26): `glossary.ADVICE` matched "use with" inside

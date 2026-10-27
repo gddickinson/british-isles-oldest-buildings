@@ -108,13 +108,22 @@
   "theatre building": "theatre",
   "school building": "school",
   "museum building": "museum",
-  "mill building": "mill"
+  "mill building": "mill",
+  "navigable aqueduct": "canal-aqueduct",
+  "drawbridge": "bascule-bridge"
  },
  "categories": {
   "Cathedral": "cathedral",
   "Hotel": "hotel"
  },
  "names": [
+  {
+   "pattern": "^(?!.*(Water ?Works|Waterworks|Railway|Roman|Pipe|Footbridge|River Wey|Flash Road|Sawley|Tom and Eas)).*\\bAqueduct\\b",
+   "type": "canal-aqueduct",
+   "kinds": [
+    "br_aqueduct"
+   ]
+  },
   {
    "pattern": "\\bCastle$",
    "type": "castle",
@@ -953,6 +962,84 @@
   }
  ],
  "texts": [
+  {
+   "type": "canal-aqueduct",
+   "pattern": "^(?![^|]*(water ?works|pipe(line)? bridge))(?=[^|]*\\baqueducts?\\b)[^|]*\\b(canal|navigation|navigable)\\b|\\b(canal|navigable) aqueducts?\\b",
+   "refines": [
+    "arch-bridge",
+    "canal"
+   ],
+   "kinds": [
+    "br_aqueduct",
+    "br_moving",
+    "br_rail",
+    "br_foot",
+    "br_early",
+    "bridge",
+    "scheduled",
+    "industrial",
+    "in_canal",
+    "canal"
+   ],
+   "categories": [
+    "Bridge / infrastructure",
+    "Other structure"
+   ]
+  },
+  {
+   "type": "transporter-bridge",
+   "pattern": "^(?![^|]*(power ?house|box transporter))[^|]*\\btransporter bridges?\\b",
+   "kinds": [
+    "br_aqueduct",
+    "br_moving",
+    "br_rail",
+    "br_foot",
+    "br_early",
+    "bridge",
+    "scheduled",
+    "industrial"
+   ],
+   "categories": [
+    "Bridge / infrastructure",
+    "Other structure"
+   ]
+  },
+  {
+   "type": "swing-bridge",
+   "pattern": "\\bswing ?bridges?\\b|\\bswing footbridge\\b",
+   "kinds": [
+    "br_aqueduct",
+    "br_moving",
+    "br_rail",
+    "br_foot",
+    "br_early",
+    "bridge",
+    "scheduled",
+    "industrial"
+   ],
+   "categories": [
+    "Bridge / infrastructure",
+    "Other structure"
+   ]
+  },
+  {
+   "type": "bascule-bridge",
+   "pattern": "\\bbascule\\b|(?<!vertical )(?<!vertical-)\\blift(ing)? bridges?\\b|\\bdrawbridges?\\b",
+   "kinds": [
+    "br_aqueduct",
+    "br_moving",
+    "br_rail",
+    "br_foot",
+    "br_early",
+    "bridge",
+    "scheduled",
+    "industrial"
+   ],
+   "categories": [
+    "Bridge / infrastructure",
+    "Other structure"
+   ]
+  },
   {
    "type": "round-house",
    "pattern": "^([\\w'-]+ ){0,4}(round ?houses?|hut circles?)\\b",
@@ -2206,7 +2293,11 @@
   "ghost": "railway-station",
   "br_suspension": "suspension-bridge",
   "ironbridge": "iron-bridge",
-  "sp_football": "football-ground"
+  "sp_football": "football-ground",
+  "br_rail": "bridge",
+  "br_early": "bridge",
+  "br_moving": "bridge",
+  "br_aqueduct": "bridge"
  },
  "place_types": {
   "Castle - unclassified": "castle",
@@ -2436,7 +2527,6 @@
   "national monument of Ireland",
   "national museum",
   "natural history museum",
-  "navigable aqueduct",
   "Nazi concentration camp",
   "non-departmental public body",
   "non-megalithic round barrow",

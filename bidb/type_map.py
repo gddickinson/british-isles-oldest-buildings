@@ -49,6 +49,7 @@ NATIONS = ("England", "Scotland", "Wales", "Northern Ireland", "Republic of Irel
            "Guernsey")
 SLACK = 100                 # years either side of a period for matches by text, name, category or kind
 SENTENCE = re.compile(r"(?<=[.!?])\s+(?=[A-Z])")
+CLOSED = re.compile(r"\s*\(gone or closed\)$")   # added to kind labels by the bridges, institutions, sports... stages
 
 
 def load_aliases(path=PATH):
@@ -262,6 +263,7 @@ class Matcher:
         """[(type, via, label)] for a place without a catalogue building."""
         found = []
         if type_label:
+            type_label = CLOSED.sub("", type_label)
             key = fish_types.normalise(type_label)
             if key in self.place_types:
                 found = [(self.place_types[key], "alias", type_label)]

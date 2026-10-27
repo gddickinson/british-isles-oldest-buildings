@@ -45,6 +45,7 @@ PAGES = {
     "types_time": ("/types?tab=time&year=1300", r"(?s)Types in use.*types in use in 1300.*Motte and bailey.*Materials and techniques by century.*Rubble masonry"),
     "type_chains": ("/types?t=motte-and-bailey", r"(?s)What came before and what came next.*Ringfort.*Concentric castle.*Spread across the isles.*counties"),
     "material_page": ("/types?m=brick", r"(?s)Brick.*Main types of its records.*Revival of.*Roman brick and tile"),
+    "type_bridge": ("/types?t=transporter-bridge", r"(?s)Transporter bridge.*A form of.*Bridge.*Earliest surviving example.*Newport Transporter Bridge"),
     "types_here": ("/building/Q17530628", r"(?s)Building type and materials.*Wealden house.*see its family"),
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),
     "glossary": ("/glossary?q=wealden", r"(?s)Glossary.*Wealden house.*FISH Thesaurus"),

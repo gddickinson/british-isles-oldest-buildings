@@ -5342,5 +5342,82 @@
    "quote-found"
   ],
   "checked": "2026-10-26"
+ },
+ "type:canal-aqueduct": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:swing-bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:bascule-bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:transporter-bridge": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>canal-aqueduct": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>swing-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>bascule-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:bridge>transporter-bridge": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
  }
 }

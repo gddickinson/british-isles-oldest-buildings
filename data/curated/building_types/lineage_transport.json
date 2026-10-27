@@ -1870,6 +1870,431 @@
      ]
     }
    ]
+  },
+  {
+   "id": "canal-aqueduct",
+   "name": "Canal aqueduct (navigable aqueduct)",
+   "family": "Bridges",
+   "domain": "Transport",
+   "period": {
+    "text": "the Barton Aqueduct on the Bridgewater Canal, opened 1761, the first navigable aqueduct built in England (demolished 1893); the Kelvin Aqueduct, 1790, then Britain's largest; cast-iron troughs from 1796 (Holmes and Longdon-on-Tern) and Pontcysyllte, 1805; the Barton Swing Aqueduct, 1894; still built (the aqueduct of the Falkirk Wheel, 2002)",
+    "from": 1761,
+    "ongoing": true
+   },
+   "structure": "a bridge carrying a canal in a watertight channel: a puddled-clay trough on masonry arches, later a cast-iron trough",
+   "note": "A bridge that carries a navigable canal over a river, valley, road or railway. FISH has no concept of its own for it (AQUEDUCT, 70432, also covers water-supply channels), so pipe bridges and water-supply aqueducts are typed as bridges, not here.",
+   "sources": [
+    {
+     "title": "Barton Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barton_Aqueduct",
+     "locator": "lead",
+     "quote": "The Barton Aqueduct, opened on 17 July 1761, carried the Bridgewater Canal over the River Irwell at Barton-upon-Irwell, in the historic county of Lancashire, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Barton Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barton_Aqueduct",
+     "locator": "lead",
+     "quote": "Designed largely by James Brindley under the direction of John Gilbert, it was the first navigable aqueduct to be built in England",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Kelvin Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kelvin_Aqueduct",
+     "locator": "section \"History\"",
+     "quote": "When opened in 1790 it was Britain's largest aqueduct, and onlookers were impressed at the sight of sailing boats crossing above them.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Longdon-on-Tern Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longdon-on-Tern_Aqueduct",
+     "locator": "section \"History\"",
+     "quote": "The 186 feet (57 m) aqueduct was opened one month after Benjamin Outram's 44 feet (13 m) cast iron Holmes Aqueduct on the Derby Canal, the world's first cast iron canal aqueduct.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Navigable aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Navigable_aqueduct",
+     "locator": "section \"Notable navigable aqueducts\"",
+     "quote": "it was designed by Thomas Telford, opened in 1805 and is the highest navigable aqueduct in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Barton Swing Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barton_Swing_Aqueduct",
+     "locator": "lead",
+     "quote": "Designed by Sir Edward Leader Williams and built by Andrew Handyside and Company of Derby, the swing bridge opened in 1894 and remains in regular use.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Falkirk Wheel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Falkirk_Wheel",
+     "locator": "lead",
+     "quote": "It opened in 2002 as part of the Millennium Link project, reconnecting the two canals for the first time since the 1930s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Falkirk Wheel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Falkirk_Wheel",
+     "locator": "lead",
+     "quote": "The wheel raises boats by 24 metres (79 ft), but the Union Canal is still 11 metres (36 ft) higher than the aqueduct which meets the wheel.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Navigable aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Navigable_aqueduct",
+     "locator": "lead",
+     "quote": "Navigable aqueducts (sometimes called navigable water bridges or canal bridges) are bridge structures that carry navigable waterway canals over other rivers, valleys, railways or roads.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Barton Aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barton_Aqueduct",
+     "locator": "section \"Background\"",
+     "quote": "He then formed the clay into a trough and showed how it would only form a watertight seal if it had been worked with water to form puddle.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "swing-bridge",
+   "name": "Swing bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70224",
+   "period": {
+    "text": "wooden lift or swing bridges on the Oxford Canal's Banbury-Oxford length, begun 1786; dock and river swing bridges in the 19th century (the Barton Swing Aqueduct 1894); still built (Seán O'Casey Bridge, Dublin, 2005; Scale Lane Bridge, Hull, 2013)",
+    "from": 1786,
+    "ongoing": true
+   },
+   "structure": "a span that turns horizontally on a pivot, a central pier or one end, to open a channel; small canal swing bridges open like a gate",
+   "sources": [
+    {
+     "title": "Oxford Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxford_Canal",
+     "locator": "section \"History\", \"Construction\"",
+     "quote": "Financial problems meant that work on the final stretch from Banbury to Oxford did not begin until 1786, and when it did, James Barnes was appointed as the engineer.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Oxford Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxford_Canal",
+     "locator": "section \"History\", \"Construction\"",
+     "quote": "Wooden lift or swing bridges were built, instead of more expensive fixed brick bridges.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Seán O'Casey Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Seán_O'Casey_Bridge",
+     "locator": "lead",
+     "quote": "the bridge was built in 2005 as part of a large-scale urban renewal scheme under the Dublin Docklands Development Authority to link the north and south quays and rejuvenate both.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Scale Lane Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scale_Lane_Bridge",
+     "locator": "lead",
+     "quote": "The bridge officially opened on 28 June 2013.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Swing bridge (FISH Thesaurus of Monument Types, concept 70224)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70224.html",
+     "locator": "scope note",
+     "quote": "A movable bridge that swings or rotates around a central pier, or one that is pivoted only at one end, to provide a passageway for navigation.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Swing bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swing_bridge",
+     "locator": "lead",
+     "quote": "Small swing bridges as found over narrow canals may be pivoted only at one end, opening as would a gate, but require substantial underground structure to support the pivot.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bascule-bridge",
+   "name": "Bascule or lifting bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "97483",
+   "period": {
+    "text": "in use since ancient times, as drawbridges; wooden lift bridges on the Oxford Canal's Banbury-Oxford length, begun 1786; long heavy spans only with steam power from the 1850s: Tower Bridge, 1886-1894; still built (the Gull Wing Bridge, Lowestoft, 2024)",
+    "from": 1786,
+    "ongoing": true
+   },
+   "structure": "a span or leaf balanced by a counterweight that tilts upwards to let boats pass, single or double; on canals a timber deck lifted by balance beams",
+   "note": "Drawbridges, canal lift bridges and the few vertical-lift bridges are counted here (FISH has them apart as DRAWBRIDGE, 70217, and LIFT BRIDGE, 70219); castle drawbridges are part of the gatehouse.",
+   "sources": [
+    {
+     "title": "Bascule bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bascule_bridge",
+     "locator": "section \"History\"",
+     "quote": "Bascule bridges have been in use since ancient times, but until the adoption of steam power in the 1850s, very long, heavy spans could not be moved quickly enough for practical application.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Oxford Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxford_Canal",
+     "locator": "section \"History\", \"Construction\"",
+     "quote": "Financial problems meant that work on the final stretch from Banbury to Oxford did not begin until 1786, and when it did, James Barnes was appointed as the engineer.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Oxford Canal",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Oxford_Canal",
+     "locator": "section \"History\", \"Construction\"",
+     "quote": "Wooden lift or swing bridges were built, instead of more expensive fixed brick bridges.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tower Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tower_Bridge",
+     "locator": "lead",
+     "quote": "Tower Bridge is a Grade I listed combined bascule, suspension, and, until 1960, cantilever bridge in London, built between 1886 and 1894, designed by Horace Jones and engineered by John Wolfe Barry with the help of Henry Marc Brunel.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gull Wing Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gull_Wing_Bridge",
+     "locator": "lead",
+     "quote": "The Gull Wing Bridge is a rolling bascule bridge that spans Lake Lothing in the town of Lowestoft, Suffolk, England, and is the largest bridge of its kind in the world to date.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Gull Wing Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gull_Wing_Bridge",
+     "locator": "lead",
+     "quote": "Originally planned for opening in Summer, delays led to the bridge being opened to traffic on 7 September 2024.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Bascule bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bascule_bridge",
+     "locator": "lead",
+     "quote": "A bascule bridge (also referred to as a drawbridge or a lifting bridge) is a moveable bridge with a counterweight that continuously balances a span, or leaf, throughout its upward swing to provide clearance for boat traffic.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bascule bridge (FISH Thesaurus of Monument Types, concept 97483)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/97483.html",
+     "locator": "scope note",
+     "quote": "A bridge that incorporates one or two spans that tilt at the abutments, to move up and out of the way of shipping.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "transporter-bridge",
+   "name": "Transporter bridge",
+   "family": "Bridges",
+   "domain": "Transport",
+   "fish": "70226",
+   "period": {
+    "text": "invented by Charles Smith of Hartlepool in 1873; the first built at Bilbao in 1893; in Britain the Widnes-Runcorn bridge 1905 (demolished after 1961), Newport 1906, Middlesbrough 1911 and Warrington 1916-1917, the last; little used after the rise of the motor car",
+    "from": 1905,
+    "to": 1917
+   },
+   "structure": "a girder high between two towers from which a car or gondola, carrying vehicles and passengers at road level, is drawn across the river",
+   "sources": [
+    {
+     "title": "Transporter bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transporter_bridge",
+     "locator": "section \"History\"",
+     "quote": "The concept of the transporter bridge was invented in 1873 by Charles Smith (1844–1882), the manager of an engine works in Hartlepool, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Transporter bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transporter_bridge",
+     "locator": "section \"History\"",
+     "quote": "Because transporter bridges can carry only a limited load, the idea was little used after the rise of the automobile.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Widnes–Runcorn Transporter Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Widnes–Runcorn_Transporter_Bridge",
+     "locator": "lead",
+     "quote": "Completed in 1905, it was Britain's first transporter bridge and the largest of its type ever built in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Newport Transporter Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newport_Transporter_Bridge",
+     "locator": "lead",
+     "quote": "Built in 1906, it is a Grade I listed structure.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tees Transporter Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tees_Transporter_Bridge",
+     "locator": "lead",
+     "quote": "It is grade II* listed and the longest existing transporter in the world.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Transporter bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transporter_bridge",
+     "locator": "section \"History\"",
+     "quote": "The Middlesbrough Transporter Bridge opened in 1911 crossing the River Tees.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Warrington Transporter Bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Warrington_Transporter_Bridge",
+     "locator": "section \"History\"",
+     "quote": "It was constructed in 1916–17  and fell into disuse in approximately 1964.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Transporter bridge (FISH Thesaurus of Monument Types, concept 70226)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70226.html",
+     "locator": "scope note",
+     "quote": "A bridge consisting of a lattice girder spanning the distance between the tops of two towers.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Transporter bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transporter_bridge",
+     "locator": "lead",
+     "quote": "The gondola is slung from a tall span by wires or a metal frame.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   }
  ],
  "links": [
@@ -2365,6 +2790,82 @@
      "url": "https://en.wikipedia.org/wiki/Signal_box",
      "locator": "lead",
      "quote": "The first use of a signal box was by the London & Croydon Railway, in 1843, to control the junction to Bricklayers Arms in London."
+    }
+   ]
+  },
+  {
+   "id": "bridge>canal-aqueduct",
+   "from": "bridge",
+   "to": "canal-aqueduct",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A canal aqueduct is a bridge that carries a navigable canal over a river, valley, railway or road.",
+   "sources": [
+    {
+     "title": "Navigable aqueduct",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Navigable_aqueduct",
+     "locator": "lead",
+     "quote": "Navigable aqueducts (sometimes called navigable water bridges or canal bridges) are bridge structures that carry navigable waterway canals over other rivers, valleys, railways or roads.",
+     "about": []
+    }
+   ]
+  },
+  {
+   "id": "bridge>swing-bridge",
+   "from": "bridge",
+   "to": "swing-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A swing bridge is a movable bridge whose span turns on a pivot.",
+   "sources": [
+    {
+     "title": "Swing bridge (FISH Thesaurus of Monument Types, concept 70224)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70224.html",
+     "locator": "scope note",
+     "quote": "A movable bridge that swings or rotates around a central pier, or one that is pivoted only at one end, to provide a passageway for navigation.",
+     "about": []
+    }
+   ]
+  },
+  {
+   "id": "bridge>bascule-bridge",
+   "from": "bridge",
+   "to": "bascule-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A bascule bridge is a movable bridge whose counterweighted span tilts upwards.",
+   "sources": [
+    {
+     "title": "Bascule bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bascule_bridge",
+     "locator": "lead",
+     "quote": "A bascule bridge (also referred to as a drawbridge or a lifting bridge) is a moveable bridge with a counterweight that continuously balances a span, or leaf, throughout its upward swing to provide clearance for boat traffic.",
+     "about": []
+    }
+   ]
+  },
+  {
+   "id": "bridge>transporter-bridge",
+   "from": "bridge",
+   "to": "transporter-bridge",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A transporter bridge is a movable bridge that carries a short stretch of roadway across in a gondola.",
+   "sources": [
+    {
+     "title": "Transporter bridge",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Transporter_bridge",
+     "locator": "lead",
+     "quote": "A transporter bridge, also known as a ferry bridge or aerial transfer bridge, is a type of movable bridge that carries a segment of roadway across a river.",
+     "about": []
     }
    ]
   }

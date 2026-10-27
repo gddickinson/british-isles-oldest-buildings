@@ -1,5 +1,5 @@
 {
- "about": "Building types (roadmap BT1c2): bridges, roads, waterways, railways. Same fields as lineage.json.",
+ "about": "Building types (roadmap BT1c2): bridges, roads, waterways, railways. Same fields as lineage.json; BT1d (2026-10-26): plateways, street tramways, funiculars, inclined planes, signal boxes.",
  "researched": "2026-10-25",
  "types": [
   {
@@ -1325,6 +1325,551 @@
      ]
     }
    ]
+  },
+  {
+   "id": "plateway",
+   "name": "Plateway",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "70253",
+   "period": {
+    "text": "L-section cast-iron plates introduced underground by John Curr at Sheffield Park Colliery in about 1787 and by Joseph Butler at Wingerworth in 1788; favoured in South Wales and the Forest of Dean (the tramroads); mainly used for about 50 years up to 1830, some later; most relaid with edge rails",
+    "from": 1787,
+    "to": 1830
+   },
+   "structure": "short cast-iron plates of L section, the flange guiding plain wagon wheels, on stone blocks or sleepers; horse-drawn, later sometimes by cable or small locomotives",
+   "sources": [
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "section \"Plates and rails\"",
+     "quote": "The L-section plateway was introduced for underground use in about 1787, by John Curr of Sheffield Park Colliery.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "section \"Plates and rails\"",
+     "quote": "Joseph Butler, of Wingerworth near Chesterfield, constructed a line using similarly flanged plates in 1788.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "lead",
+     "quote": "They were mainly used for about 50 years up to 1830, though some continued later.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "lead",
+     "quote": "Plateways were particularly favoured in South Wales and the Forest of Dean, in some cases replacing existing edge rails.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "lead",
+     "quote": "Plateways consisted of L-shaped rails, where the flange on the rail guides the wheels, in contrast to edgeways, where flanges on the wheels guide them onto the track.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "section \"Plates and rails\"",
+     "quote": "The plates of a plateway generally rested on stone blocks or sleepers, which served to spread the load over the ground, and to maintain the gauge (the distance between the rails or plates).",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "lead",
+     "quote": "Plateways were originally horse-drawn but, later on, cable haulage and small locomotives were sometimes used.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Plateway (FISH Thesaurus of Monument Types, concept 70253)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70253.html",
+     "locator": "scope note",
+     "quote": "A track consisting of flanged strips used in early colliery railways.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "street-tramway",
+   "name": "Street tramway",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "70279",
+   "period": {
+    "text": "no street tramway in Britain until George Francis Train's horse tramway at Birkenhead, 1860 (the Swansea and Mumbles line had carried passengers from 1807); electric from 1883 (Volk's, Brighton) and 1885 (Blackpool); the last city system, Glasgow, closed in 1962, leaving Blackpool alone until the Manchester Metrolink of 1992 began a revival",
+    "from": 1860,
+    "ongoing": true
+   },
+   "structure": "track laid in the surface of the street, on which tramcars run carrying passengers; drawn by horses, then steam, cable or electricity (overhead wires or a conduit in the road)",
+   "sources": [
+    {
+     "title": "Tram",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tram",
+     "locator": "section \"History\"",
+     "quote": "The Swansea and Mumbles Railway was something of a one-off however, and no street tramway appeared in Britain until 1860 when one was built in Birkenhead by the American George Francis Train.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "George Francis Train",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/George_Francis_Train",
+     "locator": "section \"Career\"",
+     "quote": "In 1860 he went to England to found horse tramway companies in Birkenhead and London, where he soon met opposition.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Tram",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tram",
+     "locator": "section \"Electric\"",
+     "quote": "The Blackpool Tramway was opened in Blackpool, UK on 29 September 1885 using conduit collection along Blackpool Promenade.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Glasgow Corporation Tramways",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glasgow_Corporation_Tramways",
+     "locator": "lead",
+     "quote": "The system closed in 1962 and was the last city tramway in Great Britain (prior to the construction of new systems in the 1990s).",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Blackpool tramway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Blackpool_tramway",
+     "locator": "section \"History\"",
+     "quote": "The 1992 opening of the Manchester Metrolink heralded a revival.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Manchester Metrolink",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Manchester_Metrolink",
+     "locator": "section \"History\"",
+     "quote": "Metrolink became the United Kingdom's first modern street-running rail system; the 1885-built Blackpool tramway being the only first-generation tram system in the UK that had survived up to Metrolink's creation.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Street tramway (FISH Thesaurus of Monument Types, concept 70279)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70279.html",
+     "locator": "scope note",
+     "quote": "A track inlaid into the road surface of a street or road, on which tram cars run for the conveyance of passengers.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "funicular-railway",
+   "name": "Funicular or cliff railway",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "92051",
+   "period": {
+    "text": "the oldest working in Britain, at Scarborough, dates from 1875; most are cliff railways (cliff lifts) joining a seaside town to its beach; Lynton and Lynmouth (opened 1890) is water-powered; still built",
+    "from": 1875,
+    "ongoing": true
+   },
+   "structure": "two cars fixed to the ends of one cable over a pulley at the top, counterbalancing each other as one rises and the other descends; most cliff railways in the United Kingdom have two parallel tracks; some balanced by water tanks",
+   "note": "Cliff railways (FISH 70243, CLIFF RAILWAY: 'Cliff Lift') are counted here: the thesaurus has them as a separate railway type, but most British funiculars are cliff railways.",
+   "sources": [
+    {
+     "title": "Funicular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funicular",
+     "locator": "section \"History\"",
+     "quote": "The oldest funicular railway operating in Britain dates from 1875 and is in Scarborough, North Yorkshire.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Lynton and Lynmouth Cliff Railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lynton_and_Lynmouth_Cliff_Railway",
+     "locator": "lead",
+     "quote": "The completed railway was opened on Easter Monday 1890; it has been in continuous use since.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Funicular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funicular",
+     "locator": "lead",
+     "quote": "The system is characterized by two counterbalanced carriages (also called cars or trains) permanently attached to opposite ends of a haulage cable, which is looped over a pulley at the upper end of the track.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Funicular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funicular",
+     "locator": "section \"Layout\"",
+     "quote": "Examples of four-rail funiculars are the Duquesne Incline in Pittsburgh, Pennsylvania, and most cliff railways in the United Kingdom.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Lynton and Lynmouth Cliff Railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lynton_and_Lynmouth_Cliff_Railway",
+     "locator": "lead",
+     "quote": "The Lynton and Lynmouth Cliff Railway is a water-powered funicular railway joining the twin towns of Lynton and Lynmouth on the rugged coast of North Devon in southwest England.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Cliff railway (FISH Thesaurus of Monument Types, concept 70243)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/70243.html",
+     "locator": "scope note",
+     "quote": "A railway, usually by the sea, linking the beach with the cliff top.",
+     "about": [
+      "structure",
+      "period"
+     ]
+    },
+    {
+     "title": "Funicular railway (FISH Thesaurus of Monument Types, concept 92051)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92051.html",
+     "locator": "scope note",
+     "quote": "A cable railway with ascending and descending cars counterbalanced.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "railway-inclined-plane",
+   "name": "Railway inclined plane",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "93079",
+   "period": {
+    "text": "rope-worked inclines on the early horse and gravity tramways (Peak Forest Tramway, opened 1796, its self-acting plane at Chapel-en-le-Frith); self-acting and engine-hauled inclines on Stephenson's Hetton colliery railway, 1822, and on the Stockton and Darlington, 1825; the last working inclines, on the Bowes Railway, closed in 1974",
+    "from": 1796,
+    "to": 1974
+   },
+   "structure": "a slope of uniform gradient up or down which wagons were hauled by rope: self-acting (descending full wagons drawing up the empty ones) or worked by a stationary engine or horse gin at the top",
+   "sources": [
+    {
+     "title": "Peak Forest Tramway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peak_Forest_Tramway",
+     "locator": "lead",
+     "quote": "Opened for trade on 31 August 1796, it remained in operation until the 1920s.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Peak Forest Tramway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peak_Forest_Tramway",
+     "locator": "section \"Remains\"",
+     "quote": "The most important surviving features of the tramway are the elevated tramway branch at Bugsworth Basin, Stodhart Tunnel and the self-acting inclined plane at Chapel-en-le-Frith, known as the Chapel inclined plane.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hetton colliery railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hetton_colliery_railway",
+     "locator": "section \"Route\"",
+     "quote": "Overall, the route featured a total of five self-acting inclines, where a roped system would allow the ascending empty wagons to be powered up the incline by the momentum of the descending laden wagons.",
+     "about": [
+      "period",
+      "structure"
+     ]
+    },
+    {
+     "title": "Hetton colliery railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hetton_colliery_railway",
+     "locator": "lead",
+     "quote": "The Hetton colliery railway was an 8-mile (13 km) long private railway opened in 1822 by the Hetton Coal Company at Hetton-le-Hole, County Durham, England.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Brusselton Incline",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brusselton_Incline",
+     "locator": "lead",
+     "quote": "The incline was worked by a stationary steam engine located at the summit, and this pulled wagons up the incline and slowly released them down with the aid of ropes.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Bowes Railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bowes_Railway",
+     "locator": "section \"Operation\"",
+     "quote": "The line's gradual closure eventually left only four inclines in use, these finally closing on 4 October 1974.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Railway inclined plane (FISH Thesaurus of Monument Types, concept 93079)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/93079.html",
+     "locator": "scope note",
+     "quote": "An embankment or cutting on a railway system, surfaced at a uniform gradient, up or down which materials were hauled by rope.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "canal-inclined-plane",
+   "name": "Canal inclined plane",
+   "family": "Waterways",
+   "domain": "Transport",
+   "fish": "91335",
+   "period": {
+    "text": "three 'dry wherries' on Dukart's Canal, County Tyrone, 1777; first in England on the Ketley Canal, 1788, then the Shropshire tub-boat canals (Hay, 1793-1894); the last built at Foxton, 1900 (dismantled 1926); the Trench plane, closed 1921, was the last boat-carrying plane in Britain",
+    "from": 1777,
+    "to": 1900
+   },
+   "structure": "a railed slope between two levels of a canal, boats carried up and down it floating in caissons or dry in cradles, usually two balancing each other",
+   "sources": [
+    {
+     "title": "Canal inclined plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canal_inclined_plane",
+     "locator": "section \"Timeline\"",
+     "quote": "1777 – 3 inclined planes or 'dry wherries' began operation on Dukart's Canal, near Coalisland, in the south-east of County Tyrone in Ulster.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canal inclined plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canal_inclined_plane",
+     "locator": "section \"Timeline\"",
+     "quote": "1788 – An inclined plane was built by William Reynolds and used, for the first time in England, to raise canal boats on England's Ketley Canal.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Hay Inclined Plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hay_Inclined_Plane",
+     "locator": "lead",
+     "quote": "The inclined plane was in operation from 1793 to 1894.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Canal inclined plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canal_inclined_plane",
+     "locator": "section \"Timeline\"",
+     "quote": "One of these, the Trench plane closed in 1921 and brought to an end boat-carrying inclined planes in Britain",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Foxton Inclined Plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foxton_Inclined_Plane",
+     "locator": "lead",
+     "quote": "The plane was built in 1900 as a solution to various operational restrictions imposed by the Foxton Lock flight.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Foxton Inclined Plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foxton_Inclined_Plane",
+     "locator": "section \"History\"",
+     "quote": "It had two tanks, or caissons, each capable of holding two narrowboats or a barge. The water-holding caissons balanced each other.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Canal inclined plane (FISH Thesaurus of Monument Types, concept 91335)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/91335.html",
+     "locator": "scope note",
+     "quote": "A prepared slope with rails on which boats can be transferred from one canal to another at a higher or lower level. The boats can either be floated in a caisson or carried in a cradle or sling.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "signal-box",
+   "name": "Signal box",
+   "family": "Railways",
+   "domain": "Transport",
+   "fish": "71193",
+   "period": {
+    "text": "first used by the London & Croydon Railway in 1843 at the junction to Bricklayers Arms; still common away from the busiest lines in the UK and Ireland, but being replaced by signalling centres",
+    "from": 1843,
+    "ongoing": true
+   },
+   "structure": "a raised building by the line, the signalman on the operating floor above with the lever frame, its interlocking on a beam beneath; wires and rods to the signals and points",
+   "sources": [
+    {
+     "title": "Signal box",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Signal_box",
+     "locator": "lead",
+     "quote": "The first use of a signal box was by the London & Croydon Railway, in 1843, to control the junction to Bricklayers Arms in London.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Signal box",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Signal_box",
+     "locator": "section \"Modern signal boxes\"",
+     "quote": "In both the UK and Ireland, however, mechanical signalling is still relatively common away from the busiest lines; in Europe, there is also a considerable amount in Germany, Poland, and the Czech Republic.",
+     "about": [
+      "period"
+     ]
+    },
+    {
+     "title": "Signal box",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Signal_box",
+     "locator": "lead",
+     "quote": "The raised design of most signal boxes (which gave rise to the term tower in North America) also provided the signalman with a good view of the railway under his control.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Signal box",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Signal_box",
+     "locator": "section \"Mechanical\"",
+     "quote": "The frame was usually mounted on a beam beneath the operating floor.",
+     "about": [
+      "structure"
+     ]
+    },
+    {
+     "title": "Signal box (FISH Thesaurus of Monument Types, concept 71193)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/71193.html",
+     "locator": "scope note",
+     "quote": "A building on a railway system housing levers used to regulate trains on the tracks using signals and to change the points to enable a train to transfer from one track to another.",
+     "about": [
+      "structure"
+     ]
+    }
+   ]
   }
  ],
  "links": [
@@ -1629,6 +2174,197 @@
      "url": "https://en.wikipedia.org/wiki/Hotel",
      "locator": "section \"Railway hotels\"",
      "quote": "in London the ones above St Pancras railway station and Charing Cross railway station."
+    }
+   ]
+  },
+  {
+   "id": "wagonway>plateway",
+   "from": "wagonway",
+   "to": "plateway",
+   "kind": "descent",
+   "confidence": "documented",
+   "claim": "The plateway is the wagonway with cast-iron plates for rails: the wooden-railed wagonways came first, and plates were laid on colliery lines from about 1787, in places replacing edge rails.",
+   "sources": [
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "section \"Antecedents\"",
+     "quote": "Even older than plateways were wagonways, which used wooden rails."
+    },
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "lead",
+     "quote": "A plateway is an early kind of railway, tramway or wagonway, where the rails are made from cast iron."
+    }
+   ]
+  },
+  {
+   "id": "plateway>railway",
+   "from": "plateway",
+   "to": "railway",
+   "kind": "replacement",
+   "confidence": "documented",
+   "claim": "Most plateways were relaid with wrought-iron edge rails and realigned, becoming railways fit for locomotives.",
+   "sources": [
+    {
+     "title": "Plateway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plateway",
+     "locator": "lead",
+     "quote": "On most lines, that system was replaced by rolled wrought iron (and later steel) \"edge rails\" which, along with realignment to increase the radius of curves, converted them into modern railways, better suited to locomotive operation."
+    }
+   ]
+  },
+  {
+   "id": "wagonway>street-tramway",
+   "from": "wagonway",
+   "to": "street-tramway",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "The street tramway took its name and its rails from the mineral lines: a 'tramway' was a line for mineral wagons until the Tramways Act 1870, and one such line, the Oystermouth tramroad, carried the first fare-paying passengers in 1807. The sources name the wagonways as precursors, not a direct line of descent.",
+   "sources": [
+    {
+     "title": "Tram",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tram",
+     "locator": "section \"History\"",
+     "quote": "Precursors to the tramway included the wooden or stone wagonways that were used in central Europe to transport mine carts with unflanged wheels since the 1500s"
+    },
+    {
+     "title": "Swansea and Mumbles Railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swansea_and_Mumbles_Railway",
+     "locator": "section \"Terminology\"",
+     "quote": "In the early nineteenth century a tramway was a line for mineral wagons (trams), the term railway being used when edge rails replaced plates."
+    },
+    {
+     "title": "Swansea and Mumbles Railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Swansea_and_Mumbles_Railway",
+     "locator": "lead",
+     "quote": "it carried the world's first fare-paying railway passengers under an agreement effective from 25 March 1807"
+    }
+   ]
+  },
+  {
+   "id": "railway>funicular-railway",
+   "from": "railway",
+   "to": "funicular-railway",
+   "kind": "variant",
+   "confidence": "documented",
+   "claim": "A funicular is a form of railway: a cable railway on a steep slope with two counterbalanced cars.",
+   "sources": [
+    {
+     "title": "Funicular railway (FISH Thesaurus of Monument Types, concept 92051)",
+     "author": "Historic England (Open Government Licence v3.0)",
+     "kind": "reference",
+     "url": "https://heritagedata.org/live/schemes/eh_tmt2/concepts/92051.html",
+     "locator": "scope note",
+     "quote": "A cable railway with ascending and descending cars counterbalanced.",
+     "about": []
+    },
+    {
+     "title": "Funicular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funicular",
+     "locator": "lead",
+     "quote": "A funicular ( few-NIK-yoo-lər, f(y)uu-, f(j)ə-), or funicular railway, is a type of cable railway system that connects points along a railway track laid on a steep slope."
+    }
+   ]
+  },
+  {
+   "id": "railway-inclined-plane>funicular-railway",
+   "from": "railway-inclined-plane",
+   "to": "funicular-railway",
+   "kind": "influence",
+   "confidence": "probable",
+   "claim": "Cable-hauled inclines, some balancing descending wagons against ascending ones, worked goods lines from the 1820s; the passenger funicular, two cars balanced on one cable, emerged from them in the second half of the 19th century.",
+   "sources": [
+    {
+     "title": "Funicular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funicular",
+     "locator": "section \"History\"",
+     "quote": "Several cable railway systems, which pull their cars on inclined slopes, have been built since the 1820s."
+    },
+    {
+     "title": "Funicular",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Funicular",
+     "locator": "section \"History\"",
+     "quote": "In the second half of the 19th century, the design of a funicular as a transit system emerged."
+    },
+    {
+     "title": "Hetton colliery railway",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hetton_colliery_railway",
+     "locator": "section \"Route\"",
+     "quote": "Overall, the route featured a total of five self-acting inclines, where a roped system would allow the ascending empty wagons to be powered up the incline by the momentum of the descending laden wagons."
+    }
+   ]
+  },
+  {
+   "id": "pound-lock>canal-inclined-plane",
+   "from": "pound-lock",
+   "to": "canal-inclined-plane",
+   "kind": "replacement",
+   "confidence": "probable",
+   "claim": "Inclined planes were built where a flight of locks would be too slow or need too much water: Foxton's plane was planned to replace the Foxton locks and was built beside them. Few were built, and the locks outlived them.",
+   "sources": [
+    {
+     "title": "Foxton Inclined Plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Foxton_Inclined_Plane",
+     "locator": "section \"History\"",
+     "quote": "Initially, the company had planned for the plane to replace the locks, rather than having it act as a second, faster option."
+    },
+    {
+     "title": "Canal inclined plane",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Canal_inclined_plane",
+     "locator": "section \"Timeline\"",
+     "quote": "1900–1926 – Foxton Inclined Plane was built in England to help overcome shortcomings of the Foxton locks on the Grand Union Canal."
+    }
+   ]
+  },
+  {
+   "id": "railway>signal-box",
+   "from": "railway",
+   "to": "signal-box",
+   "kind": "influence",
+   "confidence": "documented",
+   "claim": "As railways grew, the levers of points and signals, at first worked one by one beside the track, were gathered into one building, the signal box, first in 1843.",
+   "sources": [
+    {
+     "title": "Signal box",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Signal_box",
+     "locator": "lead",
+     "quote": "Before long, it was realized that control should be concentrated into one building, which came to be known as a signal box."
+    },
+    {
+     "title": "Signal box",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Signal_box",
+     "locator": "lead",
+     "quote": "The first use of a signal box was by the London & Croydon Railway, in 1843, to control the junction to Bricklayers Arms in London."
     }
    ]
   }

@@ -1761,3 +1761,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 377 OK (1 new in `test_type_stats`); ui_check of the four /types pages OK (server on port 5073). The running
   GUI needs a restart. Hosted copy not updated (3 earliest examples).
 - Next: tramways and funiculars, generic stones (BT3a research), BT3c2 or BT6.
+
+## 2026-10-26 — Tramways, funiculars, inclines and signal boxes as building types
+- Emergent item from BT2b: ~430 railway places (370 signal boxes, cliff railways, tramways, inclines) had no type.
+  Six new types in `lineage_transport.json`, each with a sourced period and structure (47 quotes from Wikipedia and
+  the FISH scope notes, all found by the quote check; merged into `data/building_types_check.json`, 2,179 of 2,179):
+  plateway 1787-1830, street tramway 1860- (Birkenhead; Glasgow last city system 1962; Metrolink 1992), funicular or
+  cliff railway 1875- (one type), railway inclined plane 1796-1974, canal inclined plane 1777-1900, signal box 1843-.
+  Seven sourced links (wagonway → plateway → railway; railway → funicular as a form; pound lock → canal incline...).
+  317 types, 316 links.
+- `aliases.json`: seven text rules ahead of the generic railway rule, Cadw's "Tramroad"/"Incline" labels, a
+  staircase-lock rule that overrides Wikidata's wrong "canal inclined plane" class on Bingley Five Rise Locks; the
+  wagonway name rule no longer takes tramroads (Surrey Iron Railway and the Mumbles line are now plateways).
+  Dry run against the table before writing it: stations and tram stops whose articles mention trams, tramroad bridges,
+  the Severn Tunnel, the Lickey Incline (locomotive-worked) and a target railway were caught and left out.
+- Result: 434 places typed or retyped; records 15,717, places 59,375; 253 of 291 isles types with examples, 219 with
+  an earliest surviving example (funicular: Scarborough Spa lift, begun 1873; signal box: High Street, Lincoln 1874;
+  plateway: Surrey Iron Railway 1803; street tramway: Douglas Bay Horse Tramway 1876).
+- Tests 379 OK (2 new in `test_type_map`, on the curated rules); ui_check of the six /types pages OK on a fresh
+  server (port 5074); funicular type page checked by screenshot. The running GUI needs a restart. Hosted copy not
+  updated (the /types data and quiz pool will pick the new types up at the next export).
+- Next: tramroad bridges (new emergent item), generic stones (BT3a research), BT3c2 or BT6.

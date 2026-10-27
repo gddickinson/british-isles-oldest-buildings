@@ -6,8 +6,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 311 types, 309 links, 2,123 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,716 records (69.8%) and 58,957 places typed, 247 of 285
-  isles types with examples, 215 with an earliest surviving example (register periods no longer count).
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 317 types, 316 links, 2,179 quotes; materials and techniques: 99, 51 links, 978 quotes (BT3a), 8,477 records and 2,352 places linked to them (BT3b); 15,717 records (69.8%) and 59,375 places typed, 253 of 291
+  isles types with examples, 219 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -704,9 +704,19 @@ the descent of a type is disputed, both views are given and the link is drawn as
       (`structure_place`). Railway → Stockton and Darlington Railway 1825, Martello tower → Dymchurch 1805, polygonal
       fort → Fort Brockhurst 1858. Hospitals, fire stations, theatres and works left as they were: their places carry
       the founding date of the organisation (Manchester Royal Infirmary 1752, Carron Company 1759), not the building's.
-- [ ] Tramways, funiculars, cliff lifts and inclines (emergent 2026-10-26): about 25 `in_rail` places (Great Orme
-      Tramway, Blackpool Tramway, Lickey Incline, Scarborough funiculars) and the 360 signal boxes have no type in
-      the tree; research them as BT1d types (sourced periods) if wanted.
+- [x] Tramways, funiculars, cliff lifts and inclines (emergent 2026-10-26, done 2026-10-26): six types in
+      `lineage_transport.json` with sourced periods and structure (47 quotes, all found): plateway 1787-1830, street
+      tramway 1860- (Birkenhead; Glasgow closed 1962; Metrolink 1992), funicular or cliff railway 1875- (one type:
+      most British funiculars are cliff railways), railway inclined plane 1796-1974, canal inclined plane 1777-1900,
+      signal box 1843-; seven links (wagonway → plateway → railway, wagonway ⇢ street tramway, railway → funicular,
+      railway incline ⇢ funicular, pound lock → canal incline, railway ⇢ signal box). Text rules and register labels
+      (Cadw "Tramroad", "Incline") type 434 places: 370 signal boxes, 22 funiculars, 20 plateways, 14 railway and 4
+      canal inclines, 3 street tramways. Left out on review: railway stations and tram stops whose articles mention a
+      tramway, the Lickey Incline (a locomotive gradient, never rope-worked), a proposed light railway, a target railway.
+- [ ] Tramroad bridges untyped (found 2026-10-26): about 25 `br_rail` places ("Tramroad Bridge over Sychnant River",
+      "Redbrook Incline Bridge") have no type; they are bridges, not plateways, but no bridge rule reaches them.
+- [ ] Wikidata classes Bingley Five Rise Locks as a "canal inclined plane" (found 2026-10-26; a staircase lock rule
+      types it a pound lock); fix at source with the other Wikidata errors.
 - [x] FISH scope notes cut short (found in BT4a, fixed 2026-10-26): `glossary.ADVICE` matched "use with" inside
       "house with" (case-insensitive, no word boundary), so 52 notes (Wealden house: "A medieval ho") were cut on the
       Glossary page too; now case-sensitive at a word boundary.

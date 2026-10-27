@@ -854,7 +854,7 @@
    ]
   },
   {
-   "pattern": "\\bWagon ?way\\b|\\bWaggon ?way\\b|\\bTramroad\\b",
+   "pattern": "\\bWagon ?way\\b|\\bWaggon ?way\\b",
    "type": "wagonway",
    "kinds": [
     "in_rail",
@@ -2060,6 +2060,118 @@
    ]
   },
   {
+   "type": "pound-lock",
+   "pattern": "\\bstaircase locks?\\b|\\b(Three|Four|Five) Rise\\b",
+   "refines": [
+    "canal-inclined-plane"
+   ],
+   "categories": [
+    "Bridge / infrastructure"
+   ],
+   "kinds": [
+    "in_canal",
+    "canal"
+   ]
+  },
+  {
+   "type": "signal-box",
+   "pattern": "\\bsignal ?(box|cabin)e?s?\\b|^[^|,]*\\b(Junction|Crossing|Frame|Hump|Station) Box\\b",
+   "kinds": [
+    "in_rail",
+    "ino_rail",
+    "scheduled"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
+   "type": "funicular-railway",
+   "pattern": "\\bfunicular\\b|\\bcliff (railway|lift|tramway)s?\\b|\\binclinator\\b|\\binclined (elevator|lift)\\b|\\bcable[- ](hauled|operated) ([\\w ]+ )?tramway\\b|\\bcable tramway\\b",
+   "refines": [
+    "railway",
+    "street-tramway"
+   ],
+   "kinds": [
+    "in_rail",
+    "ino_rail",
+    "scheduled"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
+   "type": "canal-inclined-plane",
+   "pattern": "\\binclined? planes?\\b|\\bincline\\b",
+   "kinds": [
+    "in_canal",
+    "canal"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
+   "type": "canal-inclined-plane",
+   "pattern": "^[^|]*\\b(canal|tub[- ]boat|locks?)\\b[^|]*\\binclin|^[^|]*\\binclin[^|]*\\b(canal|locks?)\\b|^(Coalport|Hay) Inclined Plane\\b",
+   "kinds": [
+    "scheduled"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
+   "type": "railway-inclined-plane",
+   "pattern": "^(?![^|,]*\\b(target|Lickey)\\b)[^|,]*\\b(inclined planes?|inclines?)\\b",
+   "kinds": [
+    "in_rail",
+    "ino_rail",
+    "scheduled",
+    "iw_quarry"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
+   "type": "street-tramway",
+   "pattern": "\\b(horse|electric|street|town|steam|city|corporation|urban)[- ]?(drawn )?tram(way|car)?s?\\b|\\btram (system|network)\\b",
+   "refines": [
+    "railway"
+   ],
+   "kinds": [
+    "in_rail",
+    "ino_rail"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
+   "type": "plateway",
+   "pattern": "\\bplateways?\\b|\\bplate[- ]?rails?\\b|\\btram ?roads?\\b",
+   "refines": [
+    "wagonway"
+   ],
+   "kinds": [
+    "in_rail",
+    "ino_rail",
+    "scheduled"
+   ],
+   "categories": [
+    "Railway",
+    "Bridge / infrastructure"
+   ]
+  },
+  {
    "type": "railway",
    "pattern": "^(?![^|]*\\b(Signal|Box)\\b)[^,|]*\\b(Railway|Rail ?Road|Railroad|Line)\\s*(\\||,|$)",
    "kinds": [
@@ -2109,7 +2221,10 @@
   "hut circle": "round-house",
   "meeting place, thingstead, moot hill": "moot",
   "Fort (Device Forts)": "artillery-castle",
-  "Fort (Palmerston Forts)": "polygonal-fort"
+  "Fort (Palmerston Forts)": "polygonal-fort",
+  "Tramroad": "plateway",
+  "Incline": "railway-inclined-plane",
+  "Incline Drumhouse": "railway-inclined-plane"
  },
  "not_in_tree": [
   "academic archive",

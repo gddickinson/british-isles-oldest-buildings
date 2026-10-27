@@ -157,3 +157,38 @@ class TestGeneralTypes(unittest.TestCase):
         m = self.matcher()
         self.assertEqual([t for t, _, _ in m.record("museum; castle", "Y Castle", "Museum", 1300)],
                          ["castle", "museum"])
+
+
+class TestRailwayRules(unittest.TestCase):
+    """BT1d tramways, funiculars, inclines and signal boxes: the curated rules on real names and descriptions."""
+    def matcher(self):
+        data = building_types.load()
+        return type_map.Matcher(data["types"], type_map.load_aliases(), concepts={}, lookup=lambda x: None,
+                                links=data["links"])
+
+    def place(self, m, kind, name, desc=None, year=None, label=None):
+        found = m.place(kind, label, name, year, text=m.text_of(name, desc, None))
+        return found[0][0] if found else None
+
+    def test_places(self):
+        m = self.matcher()
+        self.assertEqual(self.place(m, "in_rail", "Forsinard Station", "railway signal box in Highland"), "signal-box")
+        self.assertEqual(self.place(m, "in_rail", "West Cliff Railway", "funicular in Bournemouth", 1908),
+                         "funicular-railway")
+        self.assertEqual(self.place(m, "in_rail", "Great Orme Tramway", "Cable tramway in North Wales", 1902),
+                         "funicular-railway")
+        self.assertEqual(self.place(m, "ino_rail", "Blackpool Tramway",
+                                    "one of the oldest electric tramways in the world", 1885), "street-tramway")
+        self.assertEqual(self.place(m, "ino_rail", "Surrey Iron Railway", "early plateway in south London", 1803),
+                         "plateway")
+        self.assertEqual(self.place(m, "scheduled", "Trefil Tramroad", label="Tramroad", year=1650), "plateway")
+        self.assertEqual(self.place(m, "scheduled", "Coalport Inclined Plane"), "canal-inclined-plane")
+        self.assertEqual(self.place(m, "in_rail", "Beckhole Incline", "disused railway incline"),
+                         "railway-inclined-plane")
+        self.assertIsNone(self.place(m, "in_rail", "Lickey Incline", "stretch of 2 miles of 1 in 37.7"))
+
+    def test_staircase_lock_over_a_wrong_class(self):
+        m = self.matcher()
+        found = m.record("lock; canal inclined plane", "Bingley Five Rise Locks", "Bridge / infrastructure", 1774,
+                         text="Bingley Five Rise Locks | staircase lock on the Leeds and Liverpool Canal")
+        self.assertEqual(found[0][0], "pound-lock")

@@ -5221,5 +5221,126 @@
    "quote-found"
   ],
   "checked": "2026-10-26"
+ },
+ "type:plateway": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:street-tramway": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:funicular-railway": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:railway-inclined-plane": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:canal-inclined-plane": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "type:signal-box": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:wagonway>plateway": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:plateway>railway": {
+  "sources": [
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:wagonway>street-tramway": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:railway>funicular-railway": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:railway-inclined-plane>funicular-railway": {
+  "sources": [
+   "quote-found",
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:pound-lock>canal-inclined-plane": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
+ },
+ "link:railway>signal-box": {
+  "sources": [
+   "quote-found",
+   "quote-found"
+  ],
+  "checked": "2026-10-26"
  }
 }

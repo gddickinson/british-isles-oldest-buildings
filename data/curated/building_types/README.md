@@ -289,3 +289,22 @@ tower houses, brick repairs to Norman churches); the earliest example of a mater
 non-estimated record begun in or after its first date (90 materials have one). Some earliest examples show catalogue
 dating errors instead (Waterloo Bridge 748, Liverpool Street station 600, Battersea Power Station 400, an NIAH house
 "c. 188"): an emergent task in the roadmap.
+
+## Tramways, funiculars, inclines and signal boxes (BT1d, 2026-10-26)
+
+Six types added to `lineage_transport.json` (47 quotes, all found; 2,179 in all), from Wikipedia and the FISH scope
+notes: plateway (L-section cast-iron plates, Curr c. 1787 to about 1830; the Welsh tramroads), street tramway
+(Birkenhead 1860; the last city system, Glasgow, closed 1962; revival from Manchester Metrolink 1992), funicular or
+cliff railway (one type with FISH 92051: the thesaurus keeps CLIFF RAILWAY apart, but most British funiculars are
+cliff railways; Scarborough 1875), railway inclined plane (Peak Forest Tramway 1796; Bowes Railway's last inclines
+closed 1974), canal inclined plane (Dukart's Canal, Tyrone, 1777; Foxton 1900 the last built) and signal box (London
+& Croydon Railway 1843). Links: wagonway → plateway (descent) → railway (replacement), wagonway ⇢ street tramway
+(influence, probable: the name and the mineral lines), railway → funicular (variant), railway incline ⇢ funicular
+(influence, probable), pound lock → canal incline (replacement, probable: Foxton was planned to replace its locks),
+railway ⇢ signal box (influence). `aliases.json`: text rules ahead of the railway rule (signal box on the name or
+short description; funicular, cliff railway, cliff lift, inclinator, cable tramway; inclines, with canal inclines
+told apart by canal or lock words; electric, horse or street tramways; plateway, plate rail, tramroad), Cadw's
+"Tramroad" and "Incline" labels, and a staircase-lock rule that overrides Wikidata's "canal inclined plane" class on
+Bingley Five Rise Locks. The wagonway name rule no longer takes tramroads. Result: 434 places typed or retyped (370
+signal boxes, 22 funiculars, 20 plateways, 18 inclines, 3 street tramways); records 15,717, places 59,375; 253 of 291
+isles types with examples.

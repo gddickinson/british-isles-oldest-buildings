@@ -1898,3 +1898,7 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - George made the repository public (2026-10-27). The bundled database downloads without sign-in (checked); the
   setup page no longer says the release needs GitHub access; roadmap status and A6 (Pages, when wanted) updated.
   Pages workflow left run-by-hand only.
+- GitHub Pages switched on (source: GitHub Actions) at George's request; the Pages workflow deployed
+  `site-2026-10-27` (run 40534647606); https://gddickinson.github.io/british-isles-oldest-buildings/ checked: pages,
+  scripts and data files 200, map drawn in headless Chrome. Address set as the repository's website and linked at
+  the top of the README.

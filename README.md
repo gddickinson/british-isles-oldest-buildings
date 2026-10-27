@@ -10,6 +10,9 @@ that link them, and quizzes.
 [![Python 3.11](https://img.shields.io/badge/python-3.11-3776ab.svg)](requirements.txt)
 [![Flask](https://img.shields.io/badge/web-Flask%20%2B%20Leaflet-555.svg)](INTERFACE.md)
 
+**[Try the demo site](https://gddickinson.github.io/british-isles-oldest-buildings/)**: the whole catalogue, maps, places, stories, tours and quizzes in the
+browser, nothing to install (a static copy: no editing or rebuilding, place descriptions shortened).
+
 ![The catalogue showing landmarks, oldest first: dolmens of the Channel Islands, the Stonehenge Cursus, Knowth](docs/img/catalogue_landmarks.jpg)
 
 The app brings together **Wikidata**, **Wikipedia**, the **official heritage registers** of all five
@@ -300,7 +303,7 @@ Every download is cached, so a rebuild reuses it; refresh what is older than som
 - **GitHub Pages** serves the same copy, built with `--full-pages` (a whole `index.html`; the claude.ai host
   wants it stripped). The site is not kept in git: `tar -czf site.tar.gz -C dist .`, then
   `gh release create site-YYYY-MM-DD site.tar.gz`; `.github/workflows/pages.yml` deploys the newest `site-*`
-  release, run by hand from the Actions tab once Pages is switched on (not yet). Mark the database release Latest again
+  release, run by hand from the Actions tab; the site is https://gddickinson.github.io/british-isles-oldest-buildings/. Mark the database release Latest again
   afterwards (`gh release edit db-… --latest`).
 - **Tests run on GitHub** for every push and pull request (`.github/workflows/tests.yml`: the unit tests and
   `tests/ui_prefs_test.js`; the one test that needs the database skips itself there).

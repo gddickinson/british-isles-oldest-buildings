@@ -11,7 +11,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
-  every push); GitHub Pages not switched on yet (site release `site-2026-10-27` ready, `.github/workflows/pages.yml`).
+  every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
   BT4b): 253.5 of 256 MiB, 490 of 511 files. Republish changed files only: checksum `dist/` before and after
   `python -m app.static_export`, batches under 64 MB, removals (null) first; list the files first (the service refuses
@@ -1012,8 +1012,9 @@ App and hosted copy
 - [x] A3 Accessibility: contrast checked (all ≥ 4.5:1), visible focus, dialog focus, labels, live counts.
 - [x] A4 Browser checks of every page: `python -m tests.ui_check` (20 pages).
 - [ ] A5 Share the hosted copy (user, from the page's Share menu).
-- [ ] A6 GitHub Pages (user, when wanted; free for the public repository): Settings › Pages › Source: GitHub Actions,
-      then run the Pages workflow; add the site address to the repository's website and the README.
+- [x] A6 GitHub Pages (2026-10-27): switched on (source GitHub Actions), `site-2026-10-27` deployed by the Pages
+      workflow, live at https://gddickinson.github.io/british-isles-oldest-buildings/ (address on the repository and in the README). Refresh: export with
+      `--full-pages`, new `site-*` release, run the workflow.
 New content
 - [ ] N1 Portable Antiquities Scheme (CC BY, precise findspots need registered access) and Ancient
       Tree Inventory (Woodland Trust, access on request): user to ask.

@@ -29,7 +29,7 @@
     $("#su_problems").innerHTML = st.problems.map((p) => `<p class="warn-text">${h(p)}</p>`).join("");
     const b = st.bundled;
     $("#su_bundled").innerHTML = b ? `The database that comes with the app (${b.mb} MB packed, made ${h(b.date)}${b.local ? ""
-      : "; downloaded from the project's GitHub release, which needs GitHub access while the repository is private"}): every
+      : "; downloaded from the project's GitHub release, no sign-in needed"}): every
       building, place, story and tour as of then. Photos and the street map load from the internet as you browse.
       Rebuild later on the Data quality page to bring it up to date.` : "No bundled database in this copy of the app.";
     $("#su_use_bundled").disabled = !b;

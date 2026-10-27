@@ -1895,3 +1895,6 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   a paid plan for it.
 - `dist/` is now the full-pages build; run `app.static_export` without the flag before republishing the claude.ai
   hosted copy (it is 255.5 MiB of 256).
+- George made the repository public (2026-10-27). The bundled database downloads without sign-in (checked); the
+  setup page no longer says the release needs GitHub access; roadmap status and A6 (Pages, when wanted) updated.
+  Pages workflow left run-by-hand only.

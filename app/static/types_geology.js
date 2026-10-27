@@ -1,8 +1,8 @@
 // Building types BT3c2: a material's bedrock drawn on its page's map, from the layers of "Change over time"
-// (bidb.change_geology). A material with rock kinds (m.rock, e.g. ["limestone"]) is drawn where BGS 625k maps a unit
-// containing that rock in the UK (any of the unit's periods), within its periods (m.geology) unless the kinds are igneous (dated by when
-// they cooled); Ireland, whose layer gives only ages, by period. A material with periods only is drawn by period
-// everywhere; m.rock = [] means quarried abroad (nothing drawn). The examples are counted by whether they stand on it,
+// (bidb.change_geology). A material with rock kinds (m.rock, e.g. ["limestone"]) is drawn where BGS 625k (the UK) or
+// GSI/GSNI 1:500k (all Ireland) maps a unit containing that rock (any of the unit's periods), within its periods
+// (m.geology) unless the kinds are igneous (dated by when they cooled). A material with periods only is drawn by
+// period everywhere; m.rock = [] means quarried abroad (nothing drawn). The examples are counted by whether they stand on it,
 // out of those on the land the layers cover. TypeGeology.draw(map, m, points) → Promise of a summary, or null.
 const TypeGeology = (() => {
   const ROOT = (typeof IS_STATIC !== "undefined" && IS_STATIC ? "static" : "/static") + "/data/change/";
@@ -51,7 +51,6 @@ const TypeGeology = (() => {
       style: (f) => { const c = color(f); return { fillColor: c, color: c, fillOpacity: 0.5, weight: 0.8, opacity: 0.9 }; } }).addTo(map);
     const legend = [];
     const target = [];
-    let ireland = false;
     if (kinds.length) {
       const bit = (k) => 1 << rd.kinds.findIndex((x) => x.id === k);
       kinds.forEach((k) => {
@@ -60,21 +59,18 @@ const TypeGeology = (() => {
         legend.push({ color: COLOR[k], label: rd.kinds.find((x) => x.id === k).label + (igneous || !pset.size ? "" : ` (${periods.join(", ")})`) });
         target.push(...feats);
       });
-      ireland = !igneous && pset.size > 0;                  // the Irish layer has ages only
     }
-    const periodFeats = g.features.filter((f) => pset.has(f.properties.p) && (!kinds.length || (ireland && f.properties.s === "gsi")));
+    const periodFeats = kinds.length ? [] : g.features.filter((f) => pset.has(f.properties.p));
     if (periodFeats.length) {
       fill(periodFeats, (f) => meta.legend[f.properties.p].color);
-      [...pset].sort((a, b) => a - b).forEach((i) => legend.push({ color: meta.legend[i].color,
-        label: `${names[i]} bedrock${kinds.length ? ", Ireland (by period only)" : ""}` }));
+      [...pset].sort((a, b) => a - b).forEach((i) => legend.push({ color: meta.legend[i].color, label: `${names[i]} bedrock` }));
     }
-    // examples on land the layers cover: Great Britain (BGS) for rock kinds, and Ireland too when drawn by period
-    const cover = parts(g.features.filter((f) => !kinds.length || f.properties.s === "bgs" || (ireland && f.properties.s === "gsi")));
+    // examples on land the layers cover (the UK and Ireland; not the Isle of Man or the Channel Islands)
+    const cover = parts(g.features);
     const tparts = parts(target.concat(periodFeats));
     const covered = points.filter(([lat, lon]) => on(cover, lat, lon));
     const n = covered.filter(([lat, lon]) => on(tparts, lat, lon)).length;
-    const sources = kinds.length && !ireland ? meta.sources.filter((s) => s.short.startsWith("BGS")) : meta.sources;
-    return { on: n, total: covered.length, all: points.length, legend, sources, gbOnly: kinds.length > 0 && !ireland };
+    return { on: n, total: covered.length, all: points.length, legend, sources: meta.sources };
   }
 
   return { draw, inPoly };

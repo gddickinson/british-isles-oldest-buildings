@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -754,9 +754,14 @@ the descent of a type is disputed, both views are given and the link is drawn as
       has ages only); materials with periods and no rock (sarsen, Lake District slate) by period. The caption counts
       the examples standing on it, of those on land the layers cover: Cotswold stone 81%, gritstone 72%, chalk 71%,
       limestone 43%, Bath stone 30%, granite 20%, Portland stone 5% and Welsh slate 2% (both carried far).
-- [ ] Ireland's rock kinds for BT3c2 (found 2026-10-26): the Irish bedrock layer has ages only, so Kilkenny marble
-      and Irish limestone are drawn by period; GSI's 1:500k descriptions would give rock kinds as BGS's do. Lake
-      District slate (volcanic green slate and Silurian blue-grey) and sarsen (silcrete) have no rock kind of their own.
+- [x] Ireland's rock kinds for BT3c2 (found 2026-10-26, done 2026-10-27): the GSI/GSNI 1:500k shapefile (CC BY 4.0 /
+      OGL, 7 MB, `<cache>/gsi500k/`) names each unit's rocks in plain words; `prepare_rocks.py gsi` reads them with the
+      same six kinds (whole words; gneiss, schist, quartzite and meta-dolerite left out as BGS's metamorphic rocks are,
+      rhyolite as a lava; age brackets kept as period ranges) → `gsi500k_bedrock_rock.geojson` (3,257 polygons → 33
+      features, 495 KB), merged into `rocks.json` (1.3 → 1.7 MB). Materials with rock kinds are now drawn on rock
+      in all Ireland, no longer by period there: limestone 43% → 51% of 546 mapped examples.
+- [ ] Lake District slate (volcanic green slate and Silurian blue-grey) and sarsen (silcrete) have no rock kind of
+      their own (found 2026-10-26); Kilkenny marble has no examples yet (no P186 items or text matches).
 - [x] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
       its years; solid lines for documented descent, dashed for disputed), a type page per type (definition, how to
       recognise it, features, materials, plan, period chart, map of examples, the oldest surviving, family links,

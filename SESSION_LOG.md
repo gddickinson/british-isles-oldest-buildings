@@ -1860,3 +1860,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   5077); Bath stone and granite maps checked by screenshot. Help (Building types) and DATA_LICENSE updated. The
   running GUI needs a restart. Hosted copy not updated (rocks.json adds 1.3 MB; 2.5 MiB is free).
 - Next: Ireland's rock kinds (new emergent item), the stones left open, or BT6.
+
+## 2026-10-27 — Ireland's rock kinds on the material maps (BT3c2)
+- The material pages drew Ireland by period only (the Irish bedrock layer had ages only). Downloaded the GSI/GSNI
+  Bedrock Geology 1:500k shapefile (data.gov.ie, CC BY 4.0 / OGL, 7 MB, `<cache>/gsi500k/`): each unit names its
+  rocks ("Argillaceous dark-grey bioclastic limestone, subsidiary shale"). `prepare_rocks.py` now has `bgs` and
+  `gsi` modes; `gsi_kinds` matches the six kinds as whole words in the rock part of the name (metamorphic gneiss,
+  schist, quartzite and meta-dolerite left out as for BGS; rhyolite left out of felsic as a lava; shale with
+  mudstone), `gsi_periods` keeps the age bracket as a period range. 3,257 polygons → 33 features, 495 KB.
+- `change_geology.build` merges both files into `rocks.json` (1.7 MB, features tagged `s`); `types_geology.js`
+  draws rock kinds in all Ireland and counts examples over the UK and Ireland (no longer "in the UK" only).
+  Limestone: 280 of 546 mapped examples (51%) stand on it (was 43% of the British ones).
+- Tests 385 OK; ui_check material pages + new `material_ireland` (granite) on port 5078; limestone map checked by
+  screenshot. The running GUI needs a restart. Hosted copy not updated (rocks.json +0.45 MB; 2.5 MiB free).
+- Next: the stones left open (greensand, ironstone, lias, Bargate, Pennant, Collyweston), or BT6.

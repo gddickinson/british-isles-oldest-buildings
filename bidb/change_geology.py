@@ -6,8 +6,9 @@ period (Great Britain; OGL), GSI/GSNI Bedrock Geology 1:500k dissolved by age br
 OGL) and the Coal Authority's coalfield consultation areas (OGL).
 
     python -m bidb.change_geology     → app/static/data/change/geology.json, coalfields.json (+ entries in layers.json),
-                                        rocks.json (building types BT3c2: Great Britain by period and kinds of building
-                                        rock, made by layers/prepare_rocks.py; drawn on material pages, not a layer here)
+                                        rocks.json (building types BT3c2: the UK (BGS) and all Ireland (GSI/GSNI) by period
+                                        range and kinds of building rock, made by layers/prepare_rocks.py; drawn on
+                                        material pages, not a layer here)
 """
 import json
 
@@ -95,9 +96,11 @@ def build():
                "note": "Areas over coal resources where planning consults the Coal Authority, a good outline of the "
                        "British coalfields; mining towns grew on them from the 18th century.",
                "sources": [SOURCES["coal"]]}]
-    src = json.loads((SRC / "bgs625k_bedrock_rock.geojson").read_text())
-    assert src["kinds"] == [k for k, _ in ROCKS], "prepare_rocks.KINDS and ROCKS differ"
-    rocks = [_feature(f["geometry"], f["properties"]) for f in src["features"]]
+    rocks = []
+    for s, name in (("bgs", "bgs625k_bedrock_rock.geojson"), ("gsi", "gsi500k_bedrock_rock.geojson")):
+        src = json.loads((SRC / name).read_text())
+        assert src["kinds"] == [k for k, _ in ROCKS], "prepare_rocks.KINDS and ROCKS differ"
+        rocks += [_feature(f["geometry"], {**f["properties"], "s": s}) for f in src["features"]]
     (OUT / "rocks.json").write_text(json.dumps({"type": "FeatureCollection", "kinds": [{"id": k, "label": l} for k, l in ROCKS],
                                                 "features": rocks}, separators=(",", ":")))
     meta_path = OUT / "layers.json"

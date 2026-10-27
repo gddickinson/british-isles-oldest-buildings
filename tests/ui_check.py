@@ -48,6 +48,7 @@ PAGES = {
     "material_stone": ("/types?m=limestone", r"(?s)Limestone.*Sedimentary rock consisting mainly of calcium carbonate.*Bath stone.*West Kennet Long Barrow"),
     "type_bridge": ("/types?t=transporter-bridge", r"(?s)Transporter bridge.*A form of.*Bridge.*Earliest surviving example.*Newport Transporter Bridge"),
     "material_bedrock": ("/types?m=bath-stone", r"(?s)Bath stone.*Limestone and dolostone \(Jurassic\).*mapped examples \(\d+%\) stand on it"),
+    "material_ireland": ("/types?m=granite", r"(?s)Granite.*Granite and other felsic intrusions.*mapped examples \(\d+%\) stand on it.*1:500,000 \(Ireland\)"),
     "material_abroad": ("/types?m=caen-stone", r"(?s)Caen stone.*Quarried outside the isles"),
     "types_here": ("/building/Q17530628", r"(?s)Building type and materials.*Wealden house.*see its family"),
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),

@@ -300,7 +300,7 @@ Every download is cached, so a rebuild reuses it; refresh what is older than som
 - **GitHub Pages** serves the same copy, built with `--full-pages` (a whole `index.html`; the claude.ai host
   wants it stripped). The site is not kept in git: `tar -czf site.tar.gz -C dist .`, then
   `gh release create site-YYYY-MM-DD site.tar.gz`; `.github/workflows/pages.yml` deploys the newest `site-*`
-  release when one is published (or by hand from the Actions tab). Mark the database release Latest again
+  release, run by hand from the Actions tab once Pages is switched on (not yet). Mark the database release Latest again
   afterwards (`gh release edit db-… --latest`).
 - **Tests run on GitHub** for every push and pull request (`.github/workflows/tests.yml`: the unit tests and
   `tests/ui_prefs_test.js`; the one test that needs the database skips itself there).

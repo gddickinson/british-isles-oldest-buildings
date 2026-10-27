@@ -2,12 +2,13 @@
 # The site (~270 MB) is not in git: it is a release asset `site.tar.gz` on a `site-YYYY-MM-DD` release, made with
 #   .venv/bin/python -m app.static_export --full-pages && tar -czf site.tar.gz -C dist .
 #   gh release create site-YYYY-MM-DD site.tar.gz --title "Static site YYYY-MM-DD" --notes "..."
-# This workflow deploys the newest such release (or the tag given) whenever a site release is published or by hand.
+# This workflow deploys the newest such release (or the tag given), run by hand from the Actions tab once Pages is on
+# (Settings › Pages › Source: GitHub Actions). To deploy every new site release automatically, add under `on:`
+#   release:
+#     types: [published]
 name: Pages
 
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       tag:

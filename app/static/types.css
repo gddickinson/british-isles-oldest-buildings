@@ -81,3 +81,7 @@
 .tt-chains a.abroad { font-style: italic; }
 .tt-arrow { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
 .tt-arrow.disputed, .tt-arrow.probable { font-style: italic; }
+/* BT3c2: the material's bedrock under its map */
+.ty-bedrock .tt-legend { margin: 6px 0 4px; }
+.ty-bedrock .tt-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.ty-bedrock .tt-legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; }

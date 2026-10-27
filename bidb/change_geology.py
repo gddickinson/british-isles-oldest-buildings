@@ -5,7 +5,9 @@ Inputs (simplified by the research step, in data/curated/change/layers/): BGS Ge
 period (Great Britain; OGL), GSI/GSNI Bedrock Geology 1:500k dissolved by age bracket (all Ireland; CC BY 4.0 /
 OGL) and the Coal Authority's coalfield consultation areas (OGL).
 
-    python -m bidb.change_geology     → app/static/data/change/geology.json, coalfields.json (+ entries in layers.json)
+    python -m bidb.change_geology     → app/static/data/change/geology.json, coalfields.json (+ entries in layers.json),
+                                        rocks.json (building types BT3c2: Great Britain by period and kinds of building
+                                        rock, made by layers/prepare_rocks.py; drawn on material pages, not a layer here)
 """
 import json
 
@@ -32,6 +34,13 @@ SOURCES = {
              "citation": "Mining Remediation Authority (Coal Authority), Coalfield Consultation Areas. Contains public sector "
                          "information licensed under the Open Government Licence v3.0"},
 }
+
+
+# kinds of building rock in rocks.json, in bit order (prepare_rocks.KINDS): a material names its own in `rock`
+ROCKS = [("limestone", "Limestone and dolostone"), ("chalk", "Chalk"), ("sandstone", "Sandstone"),
+         ("mudstone", "Mudstone, pelite and slate"), ("felsic", "Granite and other felsic intrusions"),
+         ("mafic", "Dolerite and basalt (whinstone)")]
+IGNEOUS = {"felsic", "mafic"}                          # dated by when they cooled, so drawn whatever their period
 
 
 def bgs_period(props):
@@ -86,9 +95,15 @@ def build():
                "note": "Areas over coal resources where planning consults the Coal Authority, a good outline of the "
                        "British coalfields; mining towns grew on them from the 18th century.",
                "sources": [SOURCES["coal"]]}]
+    src = json.loads((SRC / "bgs625k_bedrock_rock.geojson").read_text())
+    assert src["kinds"] == [k for k, _ in ROCKS], "prepare_rocks.KINDS and ROCKS differ"
+    rocks = [_feature(f["geometry"], f["properties"]) for f in src["features"]]
+    (OUT / "rocks.json").write_text(json.dumps({"type": "FeatureCollection", "kinds": [{"id": k, "label": l} for k, l in ROCKS],
+                                                "features": rocks}, separators=(",", ":")))
     meta_path = OUT / "layers.json"
     meta = json.loads(meta_path.read_text()) if meta_path.exists() else {"layers": []}
-    meta["layers"] = [l for l in meta["layers"] if l["id"] not in ("geology", "coalfields")] + layers
+    new = {l["id"]: l for l in layers}                 # replaced where they stand, so the chooser keeps its order
+    meta["layers"] = [new.pop(l["id"], l) for l in meta["layers"]] + list(new.values())
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=1))
     return feats, coal
 
@@ -96,4 +111,5 @@ def build():
 if __name__ == "__main__":
     g, c = build()
     print(f"geology: {len(g)} features, {(OUT / 'geology.json').stat().st_size // 1024} KB; "
-          f"coalfields: {len(c)}, {(OUT / 'coalfields.json').stat().st_size // 1024} KB")
+          f"coalfields: {len(c)}, {(OUT / 'coalfields.json').stat().st_size // 1024} KB; "
+          f"rocks: {(OUT / 'rocks.json').stat().st_size // 1024} KB")

@@ -8,7 +8,9 @@ cross files):
                  period {text, from, flourish? [from, to], to | ongoing, earlier?} (as the building types; earlier:
                  true when `from` is only the earliest example a source names and the use is surely older),
                  regions? {text, nations? [NATIONS]}, technology? (what made it possible, cheaper or ended it),
-                 geology? [bedrock periods of bidb.change_geology], types? [building type ids],
+                 geology? [bedrock periods of bidb.change_geology], rock? [kinds of building rock of
+                 change_geology.ROCKS: where the BGS map has its rock, within the geology periods unless igneous; []
+                 when it was not quarried in the isles] (BT3c2), types? [building type ids],
                  examples? [{name, wikidata?, year?, note?}], note?, general? (true: a generic stone, as limestone,
                  that gives way in bidb.material_map to the named stones it has variant links to), sources}]
     A material's sources say what they support: about ["period", "region", "technology", "geology", "example"]
@@ -42,6 +44,7 @@ NATIONS = ("England", "Scotland", "Wales", "Northern Ireland", "Republic of Irel
 SCHEMES = ("mat", "com", "mon")
 GEOLOGY = ("Precambrian", "Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic",
            "Jurassic", "Cretaceous", "Palaeogene", "Neogene", "Intrusions and undivided")   # change_geology.NAMES
+ROCKS = ("limestone", "chalk", "sandstone", "mudstone", "felsic", "mafic")       # change_geology.ROCKS (BT3c2)
 
 
 def files():
@@ -88,6 +91,9 @@ def validate(data, type_ids=None, partial=False):
         if regions is not None and (not regions.get("text") or any(n not in NATIONS for n in regions.get("nations", []))):
             bad.append(f"{where}: regions {regions!r}")
         bad += [f"{where}: geology {g!r}" for g in m.get("geology", []) if g not in GEOLOGY]
+        rock = m.get("rock")
+        if rock is not None and (not isinstance(rock, list) or any(r not in ROCKS for r in rock)):
+            bad.append(f"{where}: rock {rock!r}")
         bad += [f"{where}: unknown building type {t!r}" for t in m.get("types", []) if t not in type_ids]
         for e in m.get("examples", []):
             if not e.get("name") or (e.get("wikidata") and not str(e["wikidata"]).startswith("Q")):

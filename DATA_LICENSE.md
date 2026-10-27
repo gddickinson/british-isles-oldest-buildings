@@ -79,7 +79,7 @@ Observatory temperatures (copyright retained), SILSO sunspot numbers and the She
 
 Map layers on the Map page's "Change over time" panel: HYDE 3.2.1 population and cropland grids (Klein Goldewijk
 et al. 2017, ESSD 9:927–953; DANS doi:10.17026/dans-25g-gez3; CC BY 3.0 per its readme, CC0 per the DANS record);
-bedrock geology: Contains British Geological Survey materials © UKRI 2025 (BGS Geology 625k, OGL v3.0); Contains Irish
+bedrock geology (also the rock kinds drawn on the material pages of /types): Contains British Geological Survey materials © UKRI 2025 (BGS Geology 625k, OGL v3.0); Contains Irish
 Public Sector Data (Geological Survey Ireland) licensed under CC BY 4.0 and UK public sector information (Geological
 Survey of Northern Ireland) licensed under the OGL v3.0 (Bedrock Geology 1:500,000); coalfields: Mining Remediation
 Authority (Coal Authority) Coalfield Consultation Areas, OGL v3.0.

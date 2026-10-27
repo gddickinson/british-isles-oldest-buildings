@@ -701,6 +701,9 @@
    "geology": [
     "Jurassic"
    ],
+   "rock": [
+    "limestone"
+   ],
    "examples": [
     {
      "name": "Prior Park",
@@ -841,6 +844,9 @@
    "geology": [
     "Jurassic"
    ],
+   "rock": [
+    "limestone"
+   ],
    "examples": [
     {
      "name": "St Paul's Cathedral",
@@ -969,6 +975,9 @@
    },
    "geology": [
     "Cretaceous"
+   ],
+   "rock": [
+    "limestone"
    ],
    "examples": [
     {
@@ -1118,6 +1127,10 @@
    "geology": [
     "Cretaceous"
    ],
+   "rock": [
+    "sandstone",
+    "limestone"
+   ],
    "examples": [
     {
      "name": "Tower of London",
@@ -1260,6 +1273,10 @@
    "geology": [
     "Jurassic"
    ],
+   "rock": [
+    "limestone",
+    "sandstone"
+   ],
    "examples": [
     {
      "name": "Church of St Mary, Chedzoy",
@@ -1372,6 +1389,9 @@
    "geology": [
     "Jurassic"
    ],
+   "rock": [
+    "limestone"
+   ],
    "sources": [
     {
      "title": "Cotswold stone (FISH Building Materials, concept 97863)",
@@ -1462,6 +1482,9 @@
    "technology": "Blocks went by sledge to the Welland and by barge down the Nene and the Fenland waterways; after the Dissolution, stone from demolished monasteries was reused.",
    "geology": [
     "Jurassic"
+   ],
+   "rock": [
+    "limestone"
    ],
    "examples": [
     {
@@ -1604,6 +1627,7 @@
    "geology": [
     "Jurassic"
    ],
+   "rock": [],
    "examples": [
     {
      "name": "Tower of London",
@@ -1748,6 +1772,9 @@
    "technology": "Steam-powered cutting and polishing tools, invented by Alexander MacDonald of Aberdeen, made polished granite a Victorian status material from the 1830s.",
    "geology": [
     "Intrusions and undivided"
+   ],
+   "rock": [
+    "felsic"
    ],
    "examples": [
     {
@@ -1896,6 +1923,9 @@
    "geology": [
     "Devonian",
     "Permian"
+   ],
+   "rock": [
+    "sandstone"
    ],
    "examples": [
     {
@@ -2071,6 +2101,9 @@
    "technology": "Quarried for millstones (hence the name), building stone, paving flags and roofing; strong and resistant to water, so used for docks, locks, railways and engine beds.",
    "geology": [
     "Carboniferous"
+   ],
+   "rock": [
+    "sandstone"
    ],
    "examples": [
     {
@@ -2256,6 +2289,9 @@
    "technology": "Water-driven saws at a weir on the Nore cut the blocks, with sand as the abrasive; offcuts were burnt for lime.",
    "geology": [
     "Carboniferous"
+   ],
+   "rock": [
+    "limestone"
    ],
    "examples": [
     {

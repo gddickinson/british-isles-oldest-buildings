@@ -9,6 +9,7 @@ credits: `DATA_LICENSE.md` (Change over time).
 |---|---|---|
 | `bgs625k_bedrock_period.geojson` | GB bedrock dissolved by period, simplified 400 m | BGS Geology 625k V5 (OGL) |
 | `gsi500k_bedrock_age.geojson` | All-Ireland bedrock by age bracket, simplified 300 m | GSI/GSNI 1:500k (CC BY 4.0 / OGL) |
+| `bgs625k_bedrock_rock.geojson` | UK bedrock dissolved by period range (oldest `p`, youngest `q`) and the kinds of building rock a unit contains (`k`, bits of `kinds`), simplified ~400 m (`prepare_rocks.py`; material pages of /types, BT3c2) | BGS Geology 625k V5 (OGL) |
 | `coal_authority_coalfield_areas.geojson` | Coalfield consultation areas, simplified 200 m | Coal Authority (OGL) |
 | `ghsl_built_{1975,2020}.json.gz` | % of each 1/60° cell under buildings | GHS-BUILT-S R2023A 30″ grids, cropped remotely, summed to 1/60° |
 | `ghs_pop_{1975…2020}.json.gz` | People per km² per 1/60° cell, every 5 years | GHS-POP R2023A 30″ grids (zips read remotely), summed to 1/60° |

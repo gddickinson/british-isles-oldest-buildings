@@ -74,6 +74,25 @@ const TypeView = (() => {
           source === "place" ? "data-place" : "data-open"}="${esc(id)}">Open</a>`).addTo(map);
     });
     if (pts.length > 1) map.fitBounds(pts, { padding: [20, 20], maxZoom: 9 }); else map.setView(pts[0], 9);
+    return map;
+  }
+
+  // BT3c2: the material's bedrock under its dots (TypeGeology), and how many of them stand on it
+  async function bedrock(box, map, m, points) {
+    const el = box.querySelector(".ty-bedrock");
+    if (!el) return;
+    if (!map) { el.remove(); return; }
+    const r = await TypeGeology.draw(map, m, points);
+    if (!r) { el.remove(); return; }
+    if (r.abroad) { el.textContent = "Quarried outside the isles, so no bedrock is drawn."; return; }
+    const pct = r.total ? Math.round((100 * r.on) / r.total) : 0;
+    const where = r.gbOnly ? " in the UK" : "";
+    el.innerHTML = `<span class="tt-legend">${r.legend.map((l) => `<span><i style="background:${l.color};opacity:.75"></i>${esc(l.label)}</span>`).join("")}</span>
+      ${r.total ? `${r.on.toLocaleString()} of the ${r.total.toLocaleString()} mapped examples${where} (${pct}%) stand on it.` : ""}
+      ${m.rock ? "Shaded where the 1:625,000 map's rock units include this rock (mixed units count for each of their rocks), far" +
+        " more than the beds of one stone;" : "The periods are broad (Jurassic rock is far wider than the beds of one stone), and"}
+      stone travelled, by river and sea and later by canal and rail, so examples off it are not errors.
+      <span class="meta">Bedrock: ${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.short)}</a> (${esc(s.licence)})`).join(", ")}.</span>`;
   }
 
   const counts = (d) => `${d.buildings.toLocaleString()} catalogue records and ${d.places.toLocaleString()} places`;
@@ -116,11 +135,11 @@ const TypeView = (() => {
         materials of all its phases and is dated by when it was begun, so early examples may owe the material to a later phase.</p>
       ${earliest(d.earliest, "Standing or a ruin, begun when the material was in use, not dated from its type.")}
       <div class="ty-grid"><div><h4>Begun per century</h4><div class="ty-century"></div><h4>By nation</h4><div class="ty-nation"></div></div>
-        <div><div class="ty-map stories-map"></div></div></div>
+        <div><div class="ty-map stories-map"></div>${m.geology || m.rock ? '<p class="hint ty-bedrock"></p>' : ""}</div></div>
       ${examples(d.examples || [], (r) => r.evidence ? `<br><span class="hint">“${esc(r.evidence.length > 240 ? r.evidence.slice(0, 239) + "…" : r.evidence)}”</span>` : "", d.dated)}
       <h3>Sources</h3>${sourceList(m.sources)}`;
     charts(box, d);
-    drawMap(box, d.points.map((q) => q.concat([1])));
+    bedrock(box, drawMap(box, d.points.map((q) => q.concat([1]))), m, d.points);
   }
 
   return { type, material };

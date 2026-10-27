@@ -28,6 +28,9 @@
      "Republic of Ireland"
     ]
    },
+   "rock": [
+    "sandstone"
+   ],
    "technology": "Easy to work for its hardness, so a common building and paving stone; some beds weather badly and have had to be replaced in old buildings.",
    "examples": [
     {
@@ -165,6 +168,9 @@
      "Republic of Ireland"
     ]
    },
+   "rock": [
+    "limestone"
+   ],
    "technology": "Readily available, easy to cut into blocks and to carve, and lasting, but heavy; burnt in kilns it also gave the lime of mortar and render.",
    "examples": [
     {
@@ -303,6 +309,9 @@
    "technology": "Hard and durable, so long worked only as found boulders or roughly dressed; Alexander MacDonald of Aberdeen's steam-powered cutting and polishing tools (1830s) made fine dressed and polished granite possible.",
    "geology": [
     "Intrusions and undivided"
+   ],
+   "rock": [
+    "felsic"
    ],
    "examples": [
     {
@@ -541,6 +550,9 @@
    "geology": [
     "Cretaceous"
    ],
+   "rock": [
+    "chalk"
+   ],
    "examples": [
     {
      "name": "Hyde Abbey",
@@ -679,6 +691,9 @@
      "England"
     ]
    },
+   "rock": [
+    "mafic"
+   ],
    "technology": "So hard that it is difficult to work and its angular pieces fit together badly; mostly laid as rubble with dressings of sandstone.",
    "examples": [
     {
@@ -868,6 +883,9 @@
    },
    "geology": [
     "Permian"
+   ],
+   "rock": [
+    "limestone"
    ],
    "examples": [
     {
@@ -1112,6 +1130,9 @@
    "geology": [
     "Carboniferous"
    ],
+   "rock": [
+    "sandstone"
+   ],
    "examples": [
     {
      "name": "East Riddlesden Hall",
@@ -1213,6 +1234,9 @@
    "technology": "Mined by post and stall from adits under the chalk; a soft freestone that suffers from frost and pollution.",
    "geology": [
     "Cretaceous"
+   ],
+   "rock": [
+    "sandstone"
    ],
    "examples": [
     {
@@ -1349,6 +1373,9 @@
    "geology": [
     "Jurassic"
    ],
+   "rock": [
+    "limestone"
+   ],
    "examples": [
     {
      "name": "Burghley House",
@@ -1437,6 +1464,9 @@
    },
    "geology": [
     "Jurassic"
+   ],
+   "rock": [
+    "limestone"
    ],
    "examples": [
     {

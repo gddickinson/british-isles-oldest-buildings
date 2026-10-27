@@ -74,3 +74,26 @@ class MaterialsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RockTest(unittest.TestCase):
+    """BT3c2: kinds of building rock a material is drawn by, and the file the material pages read."""
+    def check(self, rock):
+        return bm.validate({"materials": [material("bath", rock=rock)], "links": []}, type_ids=set())
+
+    def test_kinds(self):
+        self.assertEqual(self.check(["limestone", "sandstone"]), [])
+        self.assertEqual(self.check([]), [])                       # quarried abroad
+        self.assertEqual(self.check(["cheddar"]), ["material bath: rock ['cheddar']"])
+        self.assertEqual(self.check("limestone"), ["material bath: rock 'limestone'"])
+
+    def test_same_kinds_everywhere(self):
+        import json
+        from bidb import change_geology
+        from bidb.config import ROOT
+        self.assertEqual(bm.ROCKS, tuple(k for k, _ in change_geology.ROCKS))
+        rocks = json.loads((ROOT / "app" / "static" / "data" / "change" / "rocks.json").read_text())
+        self.assertEqual([k["id"] for k in rocks["kinds"]], list(bm.ROCKS))
+        props = [f["properties"] for f in rocks["features"]]
+        self.assertTrue(all(0 <= p["p"] <= p["q"] < len(change_geology.NAMES) and 0 < p["k"] < 1 << len(bm.ROCKS) for p in props))
+        self.assertEqual(bm.validate(bm.load(), partial=True), [])  # every curated rock is a known kind

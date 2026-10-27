@@ -1837,3 +1837,26 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Left open (roadmap): marble's earliest is a Chester amphitheatre mural sentence; Hopton Wood has no examples;
   greensand, ironstone, lias, Bargate, Pennant and Collyweston have no entry.
 - Next: BT3c2 (material regions over the geology layer), the stones left open, or BT6.
+
+## 2026-10-26 — BT3c2: a material's bedrock on its page's map
+- The material pages of /types now shade the rock a material comes from under its dots and count how many of its
+  examples stand on it (new `app/static/types_geology.js`, `TypeGeology`).
+- First version drew the curated bedrock periods from the "Change over time" layer; it showed the period layer cannot
+  serve igneous stones (it dates granite by when it cooled: Dartmoor "Carboniferous", Aberdeen "Ordovician"; granite 2 of
+  505 examples on "Intrusions"). Downloaded the BGS Geology 625k shapefile (OGL, 16 MB, `<cache>/bgs625k/`) and
+  dissolved its bedrock once by period range and the kinds of building rock each unit names
+  (`data/curated/change/layers/prepare_rocks.py`, GDAL and shapely from the flika env; 11,244 polygons → 68 features;
+  `bidb.change_geology` → `app/static/data/change/rocks.json`, 1.3 MB): limestone and dolostone, chalk, sandstone,
+  mudstone/pelite/slate, felsic intrusions, dolerite and basalt. BGS 625k includes Northern Ireland.
+- Units were first keyed by their oldest period: Bath stone came out at 9% because the Lias Group round Bath runs
+  Triassic to Jurassic. Now each unit keeps its period range (p, q) and matches any period in it: 30%.
+- 25 materials name their rocks (new field `rock`, checked by `building_materials.validate` against `ROCKS`; Caen stone
+  [] = quarried abroad, "no bedrock drawn"). Ireland is drawn by period only (the Irish layer has ages only).
+- `change_geology.build` now replaces its layers where they stand in layers.json (it used to move geology and
+  coalfields to the end of the Change page's chooser).
+- Shares on it: Cotswold stone 81%, gritstone 72%, chalk 71%, limestone 43%, Magnesian 39%, Kentish rag 37%, Bath
+  30%, red sandstones 27%, granite and whinstone 20%, Portland 5%, Welsh slate 2% (stones that travelled far).
+- Tests 385 OK (new `RockTest`); ui_check of the /types pages + new `material_bedrock`, `material_abroad` 8/8 (port
+  5077); Bath stone and granite maps checked by screenshot. Help (Building types) and DATA_LICENSE updated. The
+  running GUI needs a restart. Hosted copy not updated (rocks.json adds 1.3 MB; 2.5 MiB is free).
+- Next: Ireland's rock kinds (new emergent item), the stones left open, or BT6.

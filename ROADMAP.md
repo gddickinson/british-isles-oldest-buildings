@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-26)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 256
   series, 48 events, 23 map layers, 19 notes, 108 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -740,9 +740,23 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] Marble's earliest example is Chester Roman Amphitheatre (a sentence about a modern mural of it) (found
       2026-10-26); and Hopton Wood stone has no examples (its P186 items are memorials of skipped kinds). Greensand,
       ironstone, lias, Bargate stone, Pennant sandstone and Collyweston still have no entry (P186 and text mentions).
-- [ ] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
+- [x] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
       layer. Split 2026-10-26: BT3c1 (materials on the detail views, the type pages and a material page of their
-      own) is done with BT4a (2026-10-26); BT3c2 (the region over the geology layer) left open.
+      own) is done with BT4a (2026-10-26); BT3c2 done 2026-10-26.
+- [x] BT3c2 (2026-10-26) A material's bedrock on its page's map (new `app/static/types_geology.js`): the period layer
+      alone could not do it (it dates granite by when it cooled: Dartmoor is "Carboniferous", Aberdeen "Ordovician"),
+      so the BGS 625k bedrock (OGL, 16 MB zip in `<cache>/bgs625k/`) was dissolved once by period range and the kinds
+      of building rock each unit names (`data/curated/change/layers/prepare_rocks.py` → `rocks.json`, 1.3 MB: limestone
+      and dolostone, chalk, sandstone, mudstone/pelite/slate, felsic intrusions, dolerite and basalt; UK, as BGS 625k
+      includes Northern Ireland). 25 materials name their rocks (`rock`, validated: `building_materials.ROCKS`; [] for
+      Caen stone, quarried abroad). Drawn within the material's curated periods (any of a unit's periods, so the Lias
+      Group, Triassic to Jurassic, counts for Bath stone), igneous kinds at any age; Ireland by period only (its layer
+      has ages only); materials with periods and no rock (sarsen, Lake District slate) by period. The caption counts
+      the examples standing on it, of those on land the layers cover: Cotswold stone 81%, gritstone 72%, chalk 71%,
+      limestone 43%, Bath stone 30%, granite 20%, Portland stone 5% and Welsh slate 2% (both carried far).
+- [ ] Ireland's rock kinds for BT3c2 (found 2026-10-26): the Irish bedrock layer has ages only, so Kilkenny marble
+      and Irish limestone are drawn by period; GSI's 1:500k descriptions would give rock kinds as BGS's do. Lake
+      District slate (volcanic green slate and Silurian blue-grey) and sarsen (silcrete) have no rock kind of their own.
 - [x] BT4 The page `/types`: a browsable tree (cladogram-style, collapsible, with a time axis so each branch spans
       its years; solid lines for documented descent, dashed for disputed), a type page per type (definition, how to
       recognise it, features, materials, plan, period chart, map of examples, the oldest surviving, family links,

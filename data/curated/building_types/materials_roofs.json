@@ -385,6 +385,10 @@
     "Cretaceous",
     "Carboniferous"
    ],
+   "rock": [
+    "limestone",
+    "sandstone"
+   ],
    "examples": [
     {
      "name": "Fishbourne Roman Palace",
@@ -805,6 +809,9 @@
     "Ordovician",
     "Silurian"
    ],
+   "rock": [
+    "mudstone"
+   ],
    "sources": [
     {
      "title": "Welsh slate (FISH Building Materials, concept 98286)",
@@ -985,6 +992,9 @@
    },
    "geology": [
     "Ordovician"
+   ],
+   "rock": [
+    "mudstone"
    ],
    "note": "The flourish ends in 1881, when the sea broke into the quarry of Eilean-a-beithich; Easdale's quarries declined after it.",
    "sources": [

@@ -1,0 +1,589 @@
+{
+ "about": "Researched oldest everyday things found or made in the British Isles (clothing and shoes, tools, boats and wheels, coins, jewellery and clocks), each with quoted sources; researched 2026-10-27.",
+ "entries": [
+  {
+   "category": "Oldest clothing or footwear",
+   "name": "Orkney Hood",
+   "year": 250,
+   "age_text": "AD 250–615 (radiocarbon)",
+   "claim": "Described by National Museums Scotland as the only complete piece of clothing to survive from before the medieval period in Scotland",
+   "evidence": "The child-sized woollen hood with a tablet-woven fringe was found in a peat bog at Tankerness, Orkney, in 1867. It was long thought Viking-age until a radiocarbon date of 1991 placed it between AD 250 and 615, in the Late Iron Age; its cloth was cut down from older garments. Fragments of older textiles survive elsewhere in the isles, so the claim is for a complete garment.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "National Museum of Scotland, Edinburgh",
+    "role": "kept",
+    "lat": 55.9469,
+    "lon": -3.19
+   },
+   "wikipedia_title": "Orkney Hood",
+   "qid": "Q21051423",
+   "sources": [
+    {
+     "title": "Orkney Hood",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Orkney_Hood",
+     "locator": "Dating",
+     "quote": "Radiocarbon testing dated the hood to some point between 250 and 615 CE."
+    },
+    {
+     "title": "Orkney’s Iron Age Hood",
+     "author": "Orkney Museums",
+     "kind": "secondary",
+     "url": "https://orkneymuseums.co.uk/?p=3970",
+     "locator": "article",
+     "quote": "It seems to have been made sometime between the third and seventh centuries AD."
+    },
+    {
+     "title": "Scotland's ancient history through the zodiac",
+     "author": "Dig It! Scotland",
+     "kind": "secondary",
+     "url": "https://www.digitscotland.com/?p=19251",
+     "locator": "Aries",
+     "quote": "is the only complete piece of clothing to survive from before the medieval period in Scotland according to National Museums Scotland"
+    }
+   ]
+  },
+  {
+   "category": "Oldest clothing or footwear",
+   "name": "Bronze Age toddler's shoe from north Kent",
+   "year": -888,
+   "age_text": "888–781 BC (radiocarbon)",
+   "claim": "May be the oldest shoe found in the British Isles",
+   "evidence": "A 15 cm leather shoe sole found by a mudlark on a north Kent foreshore in 2022 was radiocarbon dated twice to 888–781 BC; the previous record-holder, found in a hollow tree at Whiteball quarry in Somerset in 2005, is about 2,000 years old. The finder has not named the beach, the shoe has not yet been fully published, and the claim is the finders' own ('pretty confident').",
+   "verdict": "open",
+   "nation": "England",
+   "sources": [
+    {
+     "title": "Mudlark finds Bronze Age toddler’s shoe",
+     "author": "The History Blog",
+     "kind": "secondary",
+     "url": "https://www.thehistoryblog.com/archives/date/2023/02/27",
+     "locator": "27 February 2023",
+     "quote": "A 3,000-year-old toddler’s shoe discovered on a foreshore in North Kent may be the oldest shoe in the British Isles."
+    },
+    {
+     "title": "Mudlark finds Bronze Age toddler’s shoe",
+     "author": "The History Blog",
+     "kind": "secondary",
+     "url": "https://www.thehistoryblog.com/archives/date/2023/02/27",
+     "locator": "27 February 2023",
+     "quote": "The previous record-holder, found in a quarry in Somerset in 2005, was a mere 2,000 years old."
+    },
+    {
+     "title": "Use of micro CT scanner to verify Bronze Age Toddler shoe",
+     "author": "University of Kent, School of Anthropology and Conservation",
+     "kind": "secondary",
+     "url": "https://blogs.kent.ac.uk/sac-news-events/2023/03/01/use-of-micro-ct-scanner-to-verify-bronze-age-toddler-shoe/",
+     "locator": "news, 1 March 2023",
+     "quote": "appears to be the oldest found in Britain, dating from between 888-781BC"
+    }
+   ]
+  },
+  {
+   "category": "Oldest tool, vessel or vehicle",
+   "name": "Happisburgh flint tools",
+   "year": -950000,
+   "age_text": "c. 840,000 or 950,000 years ago",
+   "claim": "The oldest human artefacts found in Britain",
+   "evidence": "Seventy-eight worked flints excavated on the foreshore at Happisburgh, Norfolk, and published in 2010 come from sediments laid down in one of two warm periods, about 840,000 or 950,000 years ago. That is at least 100,000 years earlier than the tools from Pakefield, Suffolk. No human remains were found, so the makers are unknown (Homo antecessor is suggested).",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Happisburgh, Norfolk (find-spot)",
+    "role": "found",
+    "lat": 52.8242,
+    "lon": 1.5309
+   },
+   "wikipedia_title": "Happisburgh",
+   "sources": [
+    {
+     "title": "Happisburgh",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Happisburgh",
+     "locator": "Archaeology",
+     "quote": "around 100,000 years earlier than finds at Pakefield"
+    },
+    {
+     "title": "Tools from oldest known northern Europeans found in Britain",
+     "author": "Stone Pages Archaeo News",
+     "kind": "secondary",
+     "url": "https://www.stonepages.com/news/archives/003903.html",
+     "locator": "15 July 2010",
+     "quote": "making them the oldest human artefacts ever found in Britain"
+    },
+    {
+     "title": "Archaeologists find tools of oldest known northern Europeans",
+     "author": "NBC News",
+     "kind": "secondary",
+     "url": "https://www.nbcnews.com/id/wbna38128914",
+     "locator": "article",
+     "quote": "That's at least 100,000 years before the earliest known date for British settlement, in nearby Pakefield."
+    }
+   ]
+  },
+  {
+   "category": "Oldest tool, vessel or vehicle",
+   "name": "Clacton Spear",
+   "year": -400000,
+   "age_text": "c. 400,000 years ago (420,000 on the museum label)",
+   "claim": "The oldest worked wooden implement found in Britain, and a contender for the oldest wooden weapon in the world",
+   "evidence": "The tip of a yew spear was found at Clacton-on-Sea, Essex, in 1911 in deposits of the Hoxnian interglacial. It has been called the oldest known worked wooden weapon, but archaeologists count it, the Schöningen spears of Germany and the Kathu Pan points of South Africa as contenders for the oldest evidence of weapons, and it was once thought to be a digging stick.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Natural History Museum, London",
+    "role": "kept",
+    "lat": 51.4961,
+    "lon": -0.1761
+   },
+   "wikipedia_title": "Clacton Spear",
+   "qid": "Q28407399",
+   "sources": [
+    {
+     "title": "Clacton Spear",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Clacton_Spear",
+     "locator": "lead",
+     "quote": "at approximately 400,000 years old, it is the oldest known worked wooden weapon"
+    },
+    {
+     "title": "Making a point: early wood technologies of the British Isles",
+     "author": "University of Reading",
+     "kind": "secondary",
+     "url": "https://research.reading.ac.uk/engagement-and-impact/making-a-point-early-wood-technologies-of-the-british-isles/",
+     "locator": "article",
+     "quote": "the Clacton spear is one of the oldest examples of woodworking in the world with an approximate age of 400,000 years"
+    },
+    {
+     "title": "What's the oldest weapon in the world?",
+     "author": "Isabel Gil, Live Science",
+     "kind": "secondary",
+     "url": "https://www.livescience.com/archaeology/whats-the-oldest-weapon-in-the-world",
+     "locator": "article",
+     "quote": "archaeologists generally consider three finds as contenders for the oldest evidence of weaponry in the archaeological record"
+    }
+   ]
+  },
+  {
+   "category": "Oldest tool, vessel or vehicle",
+   "name": "Rotten Bottom bow",
+   "year": -4040,
+   "age_text": "4040–3640 BC (radiocarbon)",
+   "claim": "The oldest bow found in Britain",
+   "evidence": "Half of a yew flatbow was found by a hill walker in 1990 in the peat at Rotten Bottom, Tweedsmuir, in the Scottish Borders, and radiocarbon dated to 4040–3640 BC, in the early Neolithic. It is older than Ötzi's bow from the Alps; a yew bow from Somerset is dated 2700–2600 BC. Bows of this age are very rare in Britain and Ireland.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "sources": [
+    {
+     "title": "Longbow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longbow",
+     "locator": "History",
+     "quote": "A slightly shorter bow comes from the Scottish parish of Tweedsmuir in a peat bog known as Rotten Bottom."
+    },
+    {
+     "title": "Longbow",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Longbow",
+     "locator": "History",
+     "quote": "The bow, made from yew, has been given a calibrated radiocarbon date of 4040 BC to 3640 BC."
+    },
+    {
+     "title": "Scotland's ancient history through the zodiac",
+     "author": "Dig It! Scotland",
+     "kind": "secondary",
+     "url": "https://www.digitscotland.com/?p=19251",
+     "locator": "Sagittarius",
+     "quote": "bows surviving from Neolithic Britain and Ireland are extremely rare and it’s the oldest bow ever discovered in Britain"
+    }
+   ]
+  },
+  {
+   "category": "Oldest tool, vessel or vehicle",
+   "name": "Must Farm wheel",
+   "year": -1100,
+   "age_text": "1100–800 BC",
+   "claim": "The earliest and most complete wheel found in Britain",
+   "evidence": "A wooden wheel about a metre across, with its hub, was found in 2016 at the Must Farm pile-dwelling settlement near Peterborough, which burned and sank into a river channel in the Late Bronze Age. A horse's spine found nearby suggests a horse-drawn cart. Wheels were in use on the Continent much earlier, so the record is for Britain.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Must Farm, near Whittlesey, Cambridgeshire (find-spot)",
+    "role": "found",
+    "lat": 52.5552,
+    "lon": -0.1773
+   },
+   "wikipedia_title": "Must Farm Bronze Age settlement",
+   "sources": [
+    {
+     "title": "Must Farm Bronze Age settlement",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Must_Farm_Bronze_Age_settlement",
+     "locator": "Finds",
+     "quote": "represents the most complete and earliest of its type found in Britain"
+    },
+    {
+     "title": "Most complete Bronze Age wheel to date found at Must Farm near Peterborough",
+     "author": "Mark Milligan, HeritageDaily",
+     "kind": "secondary",
+     "url": "https://www.heritagedaily.com/2016/02/most-complete-bronze-age-wheel-to-date-found-at-must-farm-near-peterborough/109803",
+     "locator": "19 February 2016",
+     "quote": "the first and largest complete example ever to be discovered in Britain"
+    }
+   ]
+  },
+  {
+   "category": "Oldest coin or money",
+   "name": "Kentish cast bronzes ('Thurrock' potins)",
+   "year": -120,
+   "age_text": "late 2nd century BC (c. 120–100 BC)",
+   "claim": "The first coins made in Britain",
+   "evidence": "Gold coins from Gaul were imported in numbers from about 150 BC; the first coins made in Britain seem to be cast bronze (potin) pieces copying the Apollo-and-bull bronzes of Massalia (Marseille), circulating mainly in Kent at the end of the 2nd century BC. Whether they were cast in Kent, on the north bank of the Thames or in Gaul is debated, and dates vary from about 150 to 100 BC. Iron currency bars were used before coins.",
+   "verdict": "kept",
+   "nation": "England",
+   "wikipedia_title": "Potin",
+   "qid": "Q1427612",
+   "sources": [
+    {
+     "title": "Potin",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Potin",
+     "locator": "British potins",
+     "quote": "appear to have been the first coins made in Britain and to have circulated mainly in Kent"
+    },
+    {
+     "title": "Celtic currency of Britain",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Celtic_currency_of_Britain",
+     "locator": "lead",
+     "quote": "Coins were first imported in large numbers in around 150 BC and domestic minting began around 100BC."
+    },
+    {
+     "title": "The Ancient Celtic Coinage of Britain",
+     "author": "CoinWeek",
+     "kind": "secondary",
+     "url": "https://coinweek.com/ancient-coins/the-ancient-celtic-coinage-of-britain/",
+     "locator": "Potin",
+     "quote": "Some of the earliest coins produced in Britain (c. 120 BCE) were cast from potin"
+    }
+   ]
+  },
+  {
+   "category": "Oldest coin or money",
+   "name": "Hiberno-Norse pennies of Sihtric Silkbeard",
+   "year": 997,
+   "age_text": "c. 997",
+   "claim": "The first coins struck in Ireland",
+   "evidence": "Silver pennies copying those of Æthelred II of England were struck in Dublin for the Norse king Sihtric III (Silkbeard) from about 997 or 998. For about a century before, coins made elsewhere (Anglo-Saxon, Carolingian and Islamic) had circulated in Viking Ireland. Some sources put the first issue a year or two earlier.",
+   "verdict": "kept",
+   "nation": "Republic of Ireland",
+   "where": {
+    "name": "Dublin",
+    "role": "made",
+    "lat": 53.3497,
+    "lon": -6.2603
+   },
+   "wikipedia_title": "Coins of Ireland",
+   "sources": [
+    {
+     "title": "Coins of Ireland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coins_of_Ireland",
+     "locator": "Hiberno-Norse coins",
+     "quote": "Hiberno-Norse coins were first produced in Dublin in about 997 under the authority of King Sitric Silkbeard."
+    },
+    {
+     "title": "950-1450: Vikings, Normans and Medieval Mints",
+     "author": "National Museum of Ireland",
+     "kind": "secondary",
+     "url": "https://source.museum.ie/en-IE/Collections-Research/Art-and-Industry-Collections/Art-Industry-Collections-List/Numismatics/Airgead-A-Thousand-Years-of-Irish-Coins-Currency/950-1450-Vikings,-Normans-and-Medieval-Mints",
+     "locator": "Airgead",
+     "quote": "the very earliest coins actually struck in the country - silver pennies - were produced in Dublin under the Viking King Sihtric III around 997 or 998 AD"
+    },
+    {
+     "title": "The First Irish Coins",
+     "author": "CoinWeek",
+     "kind": "secondary",
+     "url": "https://coinweek.com/ancient-coins/the-first-irish-coins/",
+     "locator": "article",
+     "quote": "These were the first coins struck in Ireland"
+    }
+   ]
+  },
+  {
+   "category": "Oldest coin or money",
+   "name": "Silver pennies of David I",
+   "year": 1136,
+   "age_text": "from 1136",
+   "claim": "The first coins of the Kingdom of Scotland",
+   "evidence": "David I struck silver pennies after taking Carlisle, with its English mint and the silver mines at Alston, in 1136; the first were close copies of King Stephen's pennies. Roman and other foreign coins had circulated in Scotland long before. The 1136 start is the traditional date.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "Carlisle (mint)",
+    "role": "made",
+    "lat": 54.8947,
+    "lon": -2.9364
+   },
+   "wikipedia_title": "Coinage of Scotland",
+   "sources": [
+    {
+     "title": "Coinage of Scotland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coinage_of_Scotland",
+     "locator": "Scottish Penny",
+     "quote": "The first king of Scots to produce his own coinage was David I (r. 1124–1153)."
+    },
+    {
+     "title": "Coinage of Scotland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coinage_of_Scotland",
+     "locator": "Scottish Penny",
+     "quote": "In 1136 he captured Carlisle, including its English mint and nearby silver mines from Stephen, King of England."
+    },
+    {
+     "title": "David I of Scotland",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/David_I_of_Scotland",
+     "locator": "Carlisle",
+     "quote": "David's acquisition of the mines at Alston on the South Tyne enabled him to begin minting the Kingdom of Scotland's first silver coinage."
+    }
+   ]
+  },
+  {
+   "category": "Oldest jewellery or ornament",
+   "name": "Star Carr pendant",
+   "year": -9000,
+   "age_text": "c. 11,000 years old",
+   "claim": "The earliest known Mesolithic art in Britain",
+   "evidence": "A small engraved shale pendant, 31 by 35 mm, was found in 2015 at the Early Mesolithic lakeside site of Star Carr, North Yorkshire. No other engraved shale pendant is known in Europe. The claim is for the Mesolithic: older, Palaeolithic art is known in Britain.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Yorkshire Museum, York",
+    "role": "kept",
+    "lat": 53.9618,
+    "lon": -1.0874
+   },
+   "wikipedia_title": "Star Carr",
+   "qid": "Q2299200",
+   "sources": [
+    {
+     "title": "Star Carr",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Star_Carr",
+     "locator": "Recent work",
+     "quote": "thought to be the oldest known Mesolithic art in Britain, was found at the site in 2015"
+    },
+    {
+     "title": "11,000 year old pendant is earliest known Mesolithic art in Britain",
+     "author": "University of York",
+     "kind": "secondary",
+     "url": "https://www.york.ac.uk/news-and-events/news/2016/research/mesolithic-shale-pendant",
+     "locator": "news, 25 February 2016",
+     "quote": "11,000 year old pendant is earliest known Mesolithic art in Britain"
+    },
+    {
+     "title": "Star Carr Pendant",
+     "author": "Yorkshire Museum",
+     "kind": "listing",
+     "url": "https://www.yorkshiremuseum.org.uk/collections/collections-highlights/star-carr-pendant/",
+     "locator": "collection highlight",
+     "quote": "is the earliest known Mesolithic art in Britain"
+    }
+   ]
+  },
+  {
+   "category": "Oldest jewellery or ornament",
+   "name": "Amesbury Archer's gold hair ornaments",
+   "year": -2470,
+   "age_text": "as early as 2470 BC; burial c. 2300 BC",
+   "claim": "The earliest gold objects found in Britain",
+   "evidence": "A pair of small gold hair tresses (sometimes called earrings) was buried with the 'Amesbury Archer', a man who died around 2300 BC near Stonehenge, in the richest early Bronze Age grave found in Britain; the gold has been dated as early as 2470 BC. Wikipedia words the record for England, Wessex Archaeology for Britain.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "The Salisbury Museum",
+    "role": "kept",
+    "lat": 51.0643,
+    "lon": -1.8001
+   },
+   "wikipedia_title": "Amesbury Archer",
+   "qid": "Q890530",
+   "sources": [
+    {
+     "title": "Amesbury Archer",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Amesbury_Archer",
+     "locator": "Grave goods",
+     "quote": "a pair of gold hair ornaments, the oldest gold objects known from England"
+    },
+    {
+     "title": "The Amesbury Archer",
+     "author": "Wessex Archaeology",
+     "kind": "secondary",
+     "url": "https://www.wessexarch.co.uk/amesbury-archer",
+     "locator": "article",
+     "quote": "The gold dated to as early as 2,470BC and is the earliest found in Britain."
+    }
+   ]
+  },
+  {
+   "category": "Oldest jewellery or ornament",
+   "name": "Llanllyfni lunula",
+   "year": -2200,
+   "age_text": "2200–2000 BC (or 2400–2000 BC)",
+   "claim": "One of the earliest gold ornaments from Wales",
+   "evidence": "A crescent-shaped gold collar found in a bog on Llecheiddior-uchaf farm near Llanllyfni, Gwynedd, about 1869; at 185 g it is the heaviest lunula from Britain and Ireland. Lunulae are not directly dated: a box with an Irish one gives 2460–2040 BC, and most of the hundred or so known come from Ireland. Museum Wales lists it among the items stolen from a Cardiff museum, so where it is now is uncertain.",
+   "verdict": "kept",
+   "nation": "Wales",
+   "wikipedia_title": "Llanllyfni lunula",
+   "qid": "Q116548963",
+   "sources": [
+    {
+     "title": "Llanllyfni lunula",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Llanllyfni_lunula",
+     "locator": "About",
+     "quote": "is one of the earliest gold ornaments from Wales"
+    },
+    {
+     "title": "Early Bronze Age gold lunula",
+     "author": "Amgueddfa Cymru – Museum Wales, Collections Online",
+     "kind": "listing",
+     "url": "https://museum.wales/collections/online/object/0b02ed3b-a2bc-39a2-908c-a689f3c3ca05",
+     "locator": "object record",
+     "quote": "One of the earliest gold ornaments from Wales."
+    },
+    {
+     "title": "Stunning gold relic unearthed in Gwynedd",
+     "author": "Amgueddfa Cymru – Museum Wales",
+     "kind": "secondary",
+     "url": "https://museum.wales/articles/1356/Stunning-gold-relic-unearthed-in-Gwynedd",
+     "locator": "article",
+     "quote": "This stunning decorated object is one of the earliest gold artefacts to have been found in Wales"
+    },
+    {
+     "title": "Gold lunula",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gold_lunula",
+     "locator": "lead",
+     "quote": "a wooden box associated with one Irish find has recently given a radiocarbon dating range of 2460–2040 BC"
+    }
+   ]
+  },
+  {
+   "category": "Oldest clock or mechanism",
+   "name": "Salisbury Cathedral clock",
+   "year": 1386,
+   "age_text": "c. 1386 (or earlier)",
+   "claim": "Said to be the oldest working mechanical clock in the world",
+   "evidence": "A dial-less iron-framed verge-and-foliot clock, rediscovered in the cathedral in 1928 and restored to working order in 1956; it is identified with a clock mentioned in a deed of 1386. Its construction has been compared with much later clocks, so some doubt that it is the 1386 clock, and Beauvais, Chioggia and Comayagua make rival claims; its escapement is said to have been replaced in the 17th century.",
+   "verdict": "open",
+   "nation": "England",
+   "where": {
+    "name": "Salisbury Cathedral",
+    "role": "kept",
+    "lat": 51.0647,
+    "lon": -1.7975
+   },
+   "wikipedia_title": "Salisbury Cathedral clock",
+   "qid": "Q7404840",
+   "sources": [
+    {
+     "title": "Salisbury Cathedral clock",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Salisbury_Cathedral_clock",
+     "locator": "lead",
+     "quote": "is said to be the oldest working clock in the world, although similar claims are made for other clocks"
+    },
+    {
+     "title": "Salisbury Cathedral clock",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Salisbury_Cathedral_clock",
+     "locator": "Oldest working clock claim",
+     "quote": "There are some doubts that the clock displayed in Salisbury Cathedral is actually the clock mentioned in 1386"
+    },
+    {
+     "title": "Tours and Demonstrations: Medieval Clock Demonstration",
+     "author": "Salisbury Cathedral",
+     "kind": "listing",
+     "url": "https://www.salisburycathedral.org.uk/event-type/tours-and-demos",
+     "locator": "Medieval Clock Demonstration",
+     "quote": "See and hear the world’s oldest working mechanical clock in action. Made in 1386 or earlier"
+    },
+    {
+     "title": "Oldest clock",
+     "author": "Guinness World Records",
+     "kind": "listing",
+     "url": "https://guinnessworldrecords.com/world-records/oldest-clock",
+     "locator": "record",
+     "quote": "The worlds oldest surviving working clock is the faceless clock dating from 1386, or possibly earlier, at Salisbury Cathedral"
+    }
+   ]
+  },
+  {
+   "category": "Oldest clock or mechanism",
+   "name": "Wells Cathedral clock",
+   "year": 1386,
+   "age_text": "c. 1390 (mechanism dated 1386–1392)",
+   "claim": "Its astronomical dial is claimed as the oldest surviving original clock face anywhere",
+   "evidence": "The clock in the north transept shows the sun and moon circling a fixed earth, with jousting knights that turn at each quarter. Its original works, dated between 1386 and 1392, were replaced in the 19th century and now run in the Science Museum in London; the face is still in the cathedral. The cathedral itself calls the mechanism the second oldest in Britain, after Salisbury, and the face claim is its own.",
+   "verdict": "open",
+   "nation": "England",
+   "where": {
+    "name": "Wells Cathedral",
+    "role": "kept",
+    "lat": 51.2104,
+    "lon": -2.6437
+   },
+   "wikipedia_title": "Wells Cathedral clock",
+   "qid": "Q11156104",
+   "sources": [
+    {
+     "title": "Wells Cathedral clock",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wells_Cathedral_clock",
+     "locator": "lead",
+     "quote": "The surviving mechanism, dated to between 1386 and 1392, was replaced in the 19th century, and was eventually moved to the Science Museum in London"
+    },
+    {
+     "title": "Historical Highlights",
+     "author": "Wells Cathedral",
+     "kind": "secondary",
+     "url": "https://www.wellscathedral.org.uk/heritage-conservation/historical-highlights",
+     "locator": "The Wells Cathedral Clock",
+     "quote": "the clock face is the oldest surviving original of its kind anywhere"
+    },
+    {
+     "title": "Historical Highlights",
+     "author": "Wells Cathedral",
+     "kind": "secondary",
+     "url": "https://www.wellscathedral.org.uk/heritage-conservation/historical-highlights",
+     "locator": "The Wells Cathedral Clock",
+     "quote": "considered to be the second oldest clock mechanism in Britain, and probably in the world"
+    }
+   ]
+  }
+ ]
+}

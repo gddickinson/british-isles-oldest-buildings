@@ -52,6 +52,8 @@ PAGES = {
     "material_abroad": ("/types?m=caen-stone", r"(?s)Caen stone.*Quarried outside the isles"),
     "types_here": ("/building/Q17530628", r"(?s)Building type and materials.*Wealden house.*see its family"),
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),
+    "things": ("/things", r"(?s)Oldest things.*Food and drink.*Oldest recipe or cookery book.*sources?"),
+    "things_search": ("/things?q=harp&sort=year", r"(?s)Oldest things.*[Hh]arp"),
     "glossary": ("/glossary?q=wealden", r"(?s)Glossary.*Wealden house.*FISH Thesaurus"),
     "glossary_see": ("/glossary#term-grade-ii", r"(?s)Grade II\*.*Listed building"),
     "trades_change": ("/change", r"(?s)Trade stories:.*Sugar and slavery.*Tea story"),

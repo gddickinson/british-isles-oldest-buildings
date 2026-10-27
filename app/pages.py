@@ -112,6 +112,11 @@ def building_types():
     return render_template("types.html", page="types")
 
 
+@bp.route("/things")
+def things():
+    return render_template("things.html", page="things")
+
+
 @bp.route("/glossary")
 def glossary():
     return render_template("glossary.html", page="glossary")

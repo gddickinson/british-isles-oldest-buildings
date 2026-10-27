@@ -77,6 +77,8 @@ def export(conn, out_dir):
     from .quiz_api import pool
     (out_dir / "quiz.json").write_text(json.dumps(pool(conn), ensure_ascii=False, separators=(",", ":")))
     (out_dir / "oldest_lists.json").write_text(json.dumps(lists(conn), ensure_ascii=False, separators=(",", ":")))
+    from bidb.oldest_things import index as things
+    (out_dir / "things.json").write_text(json.dumps(things(), ensure_ascii=False, separators=(",", ":")))
     from bidb.glossary import entries as glossary
     (out_dir / "glossary.json").write_text(json.dumps(glossary(), ensure_ascii=False, separators=(",", ":")))
     from bidb.trade_stories import export as trades

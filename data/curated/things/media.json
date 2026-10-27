@@ -1,0 +1,495 @@
+{
+ "about": "Oldest photographs and films, paintings and portraits, cards, stamps and printed ephemera, and scientific instruments and records of the British Isles, each with quoted sources; researched 2026-10-27.",
+ "entries": [
+  {
+   "category": "Oldest photograph or film",
+   "name": "Latticed Window at Lacock Abbey",
+   "year": 1835,
+   "age_text": "August 1835",
+   "claim": "the earliest surviving photographic negative",
+   "evidence": "Henry Fox Talbot made this tiny paper negative of the oriel window in the south gallery of Lacock Abbey with one of his small 'mousetrap' cameras; his note on the mount dates it August 1835. It is in the Science Museum Group collection, kept in the archive of the National Science and Media Museum, Bradford. Niépce's View from the Window at Le Gras (1826-27, France) is an older photograph but not a negative; Wikipedia's articles say 'may be' the earliest surviving negative.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Lacock Abbey, Wiltshire",
+    "role": "made",
+    "lat": 51.4147,
+    "lon": -2.1172
+   },
+   "wikipedia_title": "Lacock Abbey",
+   "qid": "Q1148460",
+   "sources": [
+    {
+     "title": "The world's earliest surviving photographic negative is part of our collection",
+     "author": "Colin Harding, National Science and Media Museum blog",
+     "kind": "secondary",
+     "url": "https://blog.scienceandmediamuseum.org.uk/the-birth-of-photography-30th-birthday-countdown/",
+     "locator": "post, 22 May 2013",
+     "quote": "The world's earliest surviving negative, of a latticed window at Lacock Abbey, was taken using one of these little cameras."
+    },
+    {
+     "title": "Lacock Abbey",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lacock_Abbey",
+     "locator": "History",
+     "quote": "in 1835 made what may be the earliest surviving photographic camera negative: an interior view of the oriel window in the south gallery of the abbey"
+    },
+    {
+     "title": "Latticed Window at Lacock Abbey",
+     "author": "Peter Stubbs, EdinPhoto",
+     "kind": "secondary",
+     "url": "https://edinphoto.org.uk/1_P/1_photographers_talbot_smm_latticed_window.htm",
+     "locator": "page",
+     "quote": "A print made from the earliest surviving negative"
+    }
+   ]
+  },
+  {
+   "category": "Oldest photograph or film",
+   "name": "Hill & Adamson's Rock House studio",
+   "year": 1843,
+   "age_text": "1843-1847",
+   "claim": "the first photography studio in Scotland",
+   "evidence": "Robert Adamson moved to Rock House on Calton Hill, Edinburgh, in May 1843 and went into partnership with the painter David Octavius Hill; their calotype portraits and views of 1843-47 are among the earliest photographs of people in Scotland and survive in large numbers, many in the Scottish National Portrait Gallery. Adamson and his circle had already spent about a year making calotypes in St Andrews, so the 'first' is for a studio, not for photography in Scotland.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "Rock House, Calton Hill, Edinburgh",
+    "role": "made",
+    "lat": 55.9553,
+    "lon": -3.1822
+   },
+   "wikipedia_title": "Hill & Adamson",
+   "qid": "Q3678920",
+   "sources": [
+    {
+     "title": "Hill & Adamson",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hill_%26_Adamson",
+     "locator": "lead",
+     "quote": "Hill & Adamson was the first photography studio in Scotland, set up by painter David Octavius Hill and engineer Robert Adamson in 1843."
+    },
+    {
+     "title": "Robert Adamson",
+     "author": "Peter Stubbs, EdinPhoto",
+     "kind": "secondary",
+     "url": "https://edinphoto.org.uk/PP/pp_adamson.htm",
+     "locator": "Edinburgh: Rock House",
+     "quote": "Robert Adamson moved to Rock House, Calton Hill, Edinburgh. One of the first photographs he took in Edinburgh was of the Royal High School on 17 May 1843"
+    },
+    {
+     "title": "History of Photography in Scotland: Rock House Studio",
+     "author": "Peter Stubbs, EdinPhoto",
+     "kind": "secondary",
+     "url": "https://edinphoto.org.uk/talks/talk_lauriston_2012_history_of_photography_page_05.htm",
+     "locator": "5. Professional photographers and their studios",
+     "quote": "Here are a few of the many calotype photos that have survived from the studio of Hill & Adamson at Rock House."
+    }
+   ]
+  },
+  {
+   "category": "Oldest photograph or film",
+   "name": "Roundhay Garden Scene",
+   "year": 1888,
+   "age_text": "14 October 1888 (Guinness: early October 1888)",
+   "claim": "believed to be the oldest surviving film",
+   "evidence": "Louis Le Prince filmed his family walking in the garden of Oakwood Grange, Roundhay, Leeds, with his single-lens camera on paper film. The original negative is lost; it survives as 20 frames copied on glass plates by the Science Museum in the 1930s. The frame rate (12 or 7 frames a second) is disputed, and some count Janssen's Passage de Vénus series of 1874 as an earlier film.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Roundhay, Leeds",
+    "role": "made",
+    "lat": 53.831,
+    "lon": -1.497
+   },
+   "wikipedia_title": "Roundhay Garden Scene",
+   "qid": "Q267176",
+   "sources": [
+    {
+     "title": "Roundhay Garden Scene",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhay_Garden_Scene",
+     "locator": "lead",
+     "quote": "on 14 October 1888. It is believed to be the oldest surviving film."
+    },
+    {
+     "title": "Roundhay Garden Scene",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Roundhay_Garden_Scene",
+     "locator": "Preservation",
+     "quote": "the Science Museum in London produced a photographic glass plate copy of 20 surviving frames from the original negative before it was lost"
+    },
+    {
+     "title": "First surviving film",
+     "author": "Guinness World Records",
+     "kind": "listing",
+     "url": "https://www.guinnessworldrecords.com/world-records/first-surviving-film",
+     "locator": "record",
+     "quote": "The earliest surviving film (sensitized 53.9mm (21/8in) wide paper roll) is from the camera of Louis Aimé Augustin Le Prince"
+    }
+   ]
+  },
+  {
+   "category": "Oldest painting or portrait",
+   "name": "Westminster Retable",
+   "year": 1270,
+   "age_text": "1270s",
+   "claim": "the oldest known panel painting in England, and England's oldest altarpiece",
+   "evidence": "The retable was probably painted for the high altar of Westminster Abbey in the circle of Henry III's court painters. It survived only because it was turned into furniture (by the 1720s it was the top of a cupboard), and much of it is lost; the Hamilton Kerr Institute conserved it from 1998 to 2004. It is now shown in the Abbey's Queen's Diamond Jubilee Galleries.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Westminster Abbey, London",
+    "role": "kept",
+    "lat": 51.4994,
+    "lon": -0.1275
+   },
+   "wikipedia_title": "Westminster Retable",
+   "qid": "Q3428054",
+   "sources": [
+    {
+     "title": "Westminster Retable",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Westminster_Retable",
+     "locator": "lead",
+     "quote": "The Westminster Retable, the oldest known panel painting altarpiece in England, is estimated to have been painted in the 1270s"
+    },
+    {
+     "title": "Bejewelled backdrop to coronations did not cost a king's ransom",
+     "author": "University of Cambridge",
+     "kind": "secondary",
+     "url": "https://www.cam.ac.uk/research/news/bejewelled-backdrop-to-coronations-did-not-cost-a-kings-ransom",
+     "locator": "news, 2015",
+     "quote": "the Retable, the oldest known panel painting in England"
+    },
+    {
+     "title": "Retable",
+     "author": "Westminster Abbey",
+     "kind": "secondary",
+     "url": "https://www.westminster-abbey.org/about-the-abbey/history/retable",
+     "locator": "Explore our History",
+     "quote": "The 13th century Westminster Retable is England's oldest altarpiece."
+    }
+   ]
+  },
+  {
+   "category": "Oldest painting or portrait",
+   "name": "Westminster portrait of Richard II",
+   "year": 1390,
+   "age_text": "1390s",
+   "claim": "the earliest known painted portrait of an English monarch",
+   "evidence": "The over life-size panel shows Richard II enthroned in coronation robes and hangs in the nave of Westminster Abbey; the artist is unknown (André Beauneveu has been suggested). It was restored in 1866, when some of its original gilding and gesso work was removed. Earlier kings appear in effigies, seals and manuscripts, so the claim is for a panel portrait.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Westminster Abbey, London",
+    "role": "kept",
+    "lat": 51.4994,
+    "lon": -0.1275
+   },
+   "sources": [
+    {
+     "title": "Richard II and Anne of Bohemia",
+     "author": "Westminster Abbey",
+     "kind": "secondary",
+     "url": "https://www.westminster-abbey.org/abbey-commemorations/royals/richard-ii-and-anne-of-bohemia",
+     "locator": "Earliest Portrait of an English King",
+     "quote": "This wooden panel-painting (213.5cm x 110cm) is the earliest known portrait of an English monarch, dating from the 1390s."
+    },
+    {
+     "title": "Richard II of England",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Richard_II_of_England",
+     "locator": "Court culture",
+     "quote": "Unlike any other English king before him, he had himself portrayed in panel paintings of elevated majesty, of which two survive"
+    }
+   ]
+  },
+  {
+   "category": "Oldest painting or portrait",
+   "name": "Wilton Diptych",
+   "year": 1395,
+   "age_text": "about 1395-1399",
+   "claim": "one of the handful of English panel paintings to survive from the Middle Ages, with a portrait of Richard II",
+   "evidence": "The small folding altarpiece was painted for Richard II's private devotion and shows him kneeling before the Virgin and Child with his patron saints. Whether its painter was English or French is unknown. It is younger than the Westminster Retable and about the same age as the Westminster portrait of Richard II, so its standing is as a rare survival, not the oldest.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "National Gallery, London",
+    "role": "kept",
+    "lat": 51.5089,
+    "lon": -0.1283
+   },
+   "wikipedia_title": "Wilton Diptych",
+   "qid": "Q1813497",
+   "sources": [
+    {
+     "title": "The Wilton Diptych",
+     "author": "The National Gallery",
+     "kind": "secondary",
+     "url": "https://www.nationalgallery.org.uk/paintings/english-or-french-the-wilton-diptych",
+     "locator": "Overview",
+     "quote": "This small, portable diptych is one of a handful of English panel paintings to have survived from the Middle Ages."
+    },
+    {
+     "title": "Wilton Diptych",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wilton_Diptych",
+     "locator": "lead",
+     "quote": "It is an extremely rare survival of a late medieval religious panel painting from England."
+    }
+   ]
+  },
+  {
+   "category": "Oldest card, stamp or printed ephemera",
+   "name": "Margery Brews's valentine letter",
+   "year": 1477,
+   "age_text": "February 1477",
+   "claim": "the earliest surviving valentine letter in English",
+   "evidence": "Margery Brews of Topcroft, Norfolk, dictated letters to John Paston III in February 1477 calling him her 'right well-beloved Valentine' while their families argued over her dowry; they married later that year. The letters are among the Paston Letters in the British Library. Claims that it is the oldest valentine 'in the world' go further than the sources show; the claim here is for English.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Topcroft, Norfolk",
+    "role": "made",
+    "lat": 52.4888,
+    "lon": 1.3354
+   },
+   "wikipedia_title": "Margery Brews",
+   "qid": "Q90879950",
+   "sources": [
+    {
+     "title": "The Earliest Surviving Valentine's Letter",
+     "author": "This is Paston (Paston Footprints)",
+     "kind": "secondary",
+     "url": "https://thisispaston.co.uk/valentine.html",
+     "locator": "page",
+     "quote": "is the first instance in written English of a loved one being called a Valentine"
+    },
+    {
+     "title": "Margery Brews",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Margery_Brews",
+     "locator": "Letters",
+     "quote": "She addresses John as \"my right well-beloved Valentine\" or \"dearly beloved Valentine\""
+    },
+    {
+     "title": "Paston Letters",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Paston_Letters",
+     "locator": "Content",
+     "quote": "Margery Brews' famous Valentines to John Paston III"
+    }
+   ]
+  },
+  {
+   "category": "Oldest card, stamp or printed ephemera",
+   "name": "Penny Black",
+   "year": 1840,
+   "age_text": "issued 1 May 1840, valid from 6 May 1840",
+   "claim": "the world's first adhesive postage stamp used in a public postal system",
+   "evidence": "The Penny Black was introduced with Rowland Hill's uniform penny post and printed until February 1841; tens of millions were printed and many survive. Stamps were sold unofficially before 6 May, and covers postmarked 2 May are known.",
+   "verdict": "kept",
+   "nation": "England",
+   "wikipedia_title": "Penny Black",
+   "qid": "Q107701",
+   "sources": [
+    {
+     "title": "Penny Black",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Penny_Black",
+     "locator": "lead",
+     "quote": "The Penny Black was the world's first adhesive postage stamp used in a public postal system."
+    },
+    {
+     "title": "First postage stamp",
+     "author": "Guinness World Records",
+     "kind": "listing",
+     "url": "https://www.guinnessworldrecords.com/world-records/562001-first-postage-stamp",
+     "locator": "record",
+     "quote": "The first postage stamp with an adhesive backing was the 1d (one penny) Penny Black, which was put on sale in major post offices in the UK on 1 May 1840"
+    }
+   ]
+  },
+  {
+   "category": "Oldest card, stamp or printed ephemera",
+   "name": "Henry Cole's first Christmas card",
+   "year": 1843,
+   "age_text": "December 1843",
+   "claim": "the first commercially produced Christmas card",
+   "evidence": "Henry Cole, later the first director of the V&A, had John Callcott Horsley design the card; about a thousand were printed, and copies sold at a shilling were a commercial flop. The V&A holds a copy. A card by William Maw Egley once thought older was dated 1842 by a misreading; it is from 1848.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Victoria and Albert Museum, London",
+    "role": "kept",
+    "lat": 51.4967,
+    "lon": -0.1719
+   },
+   "wikipedia_title": "Christmas card",
+   "qid": "Q622508",
+   "sources": [
+    {
+     "title": "Christmas card",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_card",
+     "locator": "History",
+     "quote": "The first commercially produced card was commissioned by Sir Henry Cole and designed by John Callcott Horsley in London 1843."
+    },
+    {
+     "title": "The first Christmas card",
+     "author": "Victoria and Albert Museum",
+     "kind": "secondary",
+     "url": "https://www.vam.ac.uk/articles/the-first-christmas-card",
+     "locator": "article",
+     "quote": "came a few years later in 1848 (it was once thought to pre-date Horsley's card, as the date was misread as 1842)"
+    },
+    {
+     "title": "The first Christmas card",
+     "author": "Victoria and Albert Museum",
+     "kind": "secondary",
+     "url": "https://www.vam.ac.uk/articles/the-first-christmas-card",
+     "locator": "article",
+     "quote": "Cole's diary entry for 17 December 1843 records"
+    }
+   ]
+  },
+  {
+   "category": "Oldest scientific instrument or record",
+   "name": "William Merle's weather diary",
+   "year": 1337,
+   "age_text": "January 1337 to January 1344",
+   "claim": "the longest and most complete of the earliest weather diaries in Europe, kept in England",
+   "evidence": "William Merle, a rector in Lincolnshire with ties to Oxford, recorded rainfall, temperature and wind for seven years and wrote two treatises on weather forecasting. His is the longest of the three earliest European weather diaries; a shorter set of daily observations by Roger Bacon from 1269-1270 is older.",
+   "verdict": "kept",
+   "nation": "England",
+   "sources": [
+    {
+     "title": "IMC 2013 session 1620: weather diaries",
+     "author": "International Medieval Congress, University of Leeds",
+     "kind": "secondary",
+     "url": "https://www.imc.leeds.ac.uk/imcarchive/2013/sessions/1620",
+     "locator": "session abstract",
+     "quote": "The third is the most comprehensive and longest of the diaries, covering the years 1337 to 1344. It can be attributed to William Merle"
+    },
+    {
+     "title": "Daily Weather Observations in Sixteenth-Century Europe",
+     "author": "Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2014/09/daily-weather-observations-sixteenth-century-europe/",
+     "locator": "article",
+     "quote": "The Reverend William Merle in Lincolnshire (England) kept a weather diary from January 1337 to January 1344."
+    },
+    {
+     "title": "Daily Weather Observations in Sixteenth-Century Europe",
+     "author": "Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2014/09/daily-weather-observations-sixteenth-century-europe/",
+     "locator": "article",
+     "quote": "The earliest known daily weather observations in Europe"
+    }
+   ]
+  },
+  {
+   "category": "Oldest scientific instrument or record",
+   "name": "Central England Temperature record",
+   "year": 1659,
+   "age_text": "monthly from 1659, daily from 1772",
+   "claim": "the longest instrumental record of temperature in the world",
+   "evidence": "Gordon Manley compiled monthly mean temperatures for the English Midlands from 1659, published in 1953 and 1974; the Met Office keeps the series up to date. Its years before 1722 are mostly given only to the nearest half or whole degree and are pieced together from scattered early records.",
+   "verdict": "kept",
+   "nation": "England",
+   "wikipedia_title": "Central England temperature",
+   "qid": "Q3814006",
+   "sources": [
+    {
+     "title": "Hadley Centre Central England Temperature (HadCET) dataset",
+     "author": "Met Office Hadley Centre",
+     "kind": "primary",
+     "url": "https://www.metoffice.gov.uk/hadobs/hadcet/",
+     "locator": "Brief description of the data",
+     "quote": "The monthly series, which begins in 1659, is the longest available instrumental record of temperature in the world."
+    },
+    {
+     "title": "Central England temperature",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Central_England_temperature",
+     "locator": "lead",
+     "quote": "This record represents the longest series of monthly temperature observations in existence."
+    },
+    {
+     "title": "Central England temperature",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Central_England_temperature",
+     "locator": "lead",
+     "quote": "The earliest years of the series, from 1659 to October 1722 inclusive, for the most part only have monthly means given to the nearest degree or half a degree"
+    }
+   ]
+  },
+  {
+   "category": "Oldest scientific instrument or record",
+   "name": "Newton's reflecting telescope at the Royal Society",
+   "year": 1671,
+   "age_text": "plaque says 1671; probably a later instrument by Newton (or Newton and John Wickens)",
+   "claim": "not Newton's first reflecting telescope (1668, lost), as its plaque says, but a later one that probably keeps his mirrors",
+   "evidence": "Newton built the first known reflecting telescope in 1668 and a second in 1671, which he gave to the Royal Society; that one fell apart by 1731 and was lost. The telescope the Society now holds was presented in 1766 by the instrument makers Heath and Wing, and its plaque calls it the first, made in 1671. The Royal Society's catalogue calls it his second model; analysis of its mirror (no silver, some arsenic) suggests a third telescope.",
+   "verdict": "corrected",
+   "nation": "England",
+   "where": {
+    "name": "The Royal Society, Carlton House Terrace, London",
+    "role": "kept",
+    "lat": 51.5058,
+    "lon": -0.1322
+   },
+   "wikipedia_title": "Newton's reflector",
+   "qid": "Q7020022",
+   "sources": [
+    {
+     "title": "Newton's reflector",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newton%27s_reflector",
+     "locator": "lead",
+     "quote": "being the first known reflecting telescope"
+    },
+    {
+     "title": "Newton's reflector",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newton%27s_reflector",
+     "locator": "Surviving telescope",
+     "quote": "At a later date a plaque was added to this telescope with the incorrect inscription claiming that it was his first telescope and made in 1671."
+    },
+    {
+     "title": "Reflecting telescope (RS.8462)",
+     "author": "The Royal Society, picture library",
+     "kind": "listing",
+     "url": "https://pictures.royalsociety.org/image-rs-8462",
+     "locator": "description and object history",
+     "quote": "Newton built his first reflecting telescope in 1668, this is his second model."
+    },
+    {
+     "title": "Replica of Isaac Newton's original reflector telescope",
+     "author": "Royal Astronomical Society of Canada",
+     "kind": "listing",
+     "url": "https://rasc.ca/node/55128",
+     "locator": "notes",
+     "quote": "that instrument doesn't survive"
+    }
+   ]
+  }
+ ]
+}

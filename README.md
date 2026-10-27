@@ -56,6 +56,13 @@ places; and links to the official registers.
 </table>
 
 ### The oldest of everything
+The **Oldest things** page gathers the oldest things that are not buildings or places, in eight themes: recipes
+and cookery books (the Poitou sauces of the 12th century, the Forme of Cury), writing (the Bloomberg tablets of
+AD 57, the Cathach, the St Cuthbert Gospel), music (the Wicklow Pipes, "Sumer is icumen in", the 1888 Handel
+recording), laws and maps, games and the first written rules of sports, customs still kept, everyday things (the
+Clacton Spear, the Star Carr pendant, the Must Farm wheel) and the first photographs, films and Christmas card.
+113 entries, each with its claim, a verdict and 332 quotes checked in their sources.
+
 The **Oldest** page sets the oldest surviving building of each type beside researched lists of the oldest
 things that are not buildings: ancient trees and rocks, the earliest burials and gravestones, markets,
 shops and manufacturers, roads, canals and railways, sporting clubs and grounds, and schools, hospitals,
@@ -217,6 +224,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 | **Quiz** | Ten quizzes, easy or hard | Say the name, then Hard |
 | **History** | A short history, events on a map, on this day | ‹ › for other days |
 | **Oldest by type** | The oldest of each building type and the researched lists | The verdicts on famous claims |
+| **Oldest things** | The oldest recipes, books, songs, laws, games, customs, objects and pictures | Theme chips, oldest first, the map of where they are |
 | **Statistics**, **Compare** | Charts; up to three buildings side by side (⇄) | The oldest building in your county |
 | **Data quality** | Gaps, date conflicts, the research and its checks; rebuilds and other jobs | Researched claims |
 

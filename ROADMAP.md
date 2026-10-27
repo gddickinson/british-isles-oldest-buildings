@@ -1046,6 +1046,16 @@ Detail views show "Evidence"; the Data quality page lists every claim. Sources t
 (paywalled books, Historic England list pages, archives in person) are cited with a locator and marked unreachable.
 - [x] R0–R8 done 2026-10-21/22 (evidence file and checker, date conflicts, research entries, oldest-of-type
       evidence, earliest churches, manor houses, tree-ring dates, the 100 oldest, oldest lists): see ROADMAP_DONE.md.
+- [x] R9 Oldest things (2026-10-27, George's idea): the page /things (`bidb/oldest_things.py`, `app/static/things.js`,
+      `/api/things`, hosted too): 113 researched entries in eight themes (`data/curated/things/*.json`: food and drink,
+      writing, music, laws and maps, games and sport, customs, everyday things, pictures and media), each with claim,
+      evidence, verdict (74 kept, 10 corrected, 29 open), where it is kept, made, found or held, and 332 quotes, all
+      found (`data/things_check.json`).
+- [ ] R9b Oldest things to add (left out in the first round): Anglo-Norman recipe collections (their only source
+      gives the checker a bot page), Bakewell pudding and mince pies, the Biddenden dole (from 1605), Swan Upping,
+      the Padstow 'Obby 'Oss, the Kirkwall Ba', the Olney pancake race, the Ballinderry board, the 1729 cricket
+      bat, the 1511 curling stone, the Ferriby and Dover boats, Offa's penny, astrolabes made in England; more
+      Welsh and Irish entries in pictures and media; "Which came first?" quiz questions from the entries.
 - [~] R5 Historic England list texts behind the bot check: cite by list entry number (reproductions such as British
       Listed Buildings can be checked by script). `bidb/listings.py` reads them (both page layouts); used for R3.
 

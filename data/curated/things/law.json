@@ -1,0 +1,672 @@
+{
+ "about": "Oldest laws, documents and maps of the isles: law codes and laws still in force, charters, records of government and the oldest maps, each with quoted sources; researched 2026-10-27.",
+ "entries": [
+  {
+   "category": "Oldest law or law code",
+   "name": "Law of Æthelberht",
+   "year": 600,
+   "age_text": "c. 600 (early 7th century); only copy in the Textus Roffensis of the early 1120s",
+   "claim": "The first law code in a Germanic language, and the earliest datable text composed in English",
+   "evidence": "About ninety laws of King Æthelberht of Kent, mostly a tariff of compensations, thought to have been written down soon after the conversion of Kent. No original survives: the only copy is in the Textus Roffensis, compiled at Rochester half a millennium later, so its wording may have been updated in copying. It is the oldest of the English law codes that follow it (Hlothhere and Eadric, Wihtred, Ine, Alfred).",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Rochester Cathedral (Textus Roffensis)",
+    "role": "kept",
+    "lat": 51.3889,
+    "lon": 0.5035
+   },
+   "wikipedia_title": "Law of Æthelberht",
+   "qid": "Q4184958",
+   "sources": [
+    {
+     "title": "Law of Æthelberht",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Law_of_Æthelberht",
+     "locator": "lead",
+     "quote": "It originates in the kingdom of Kent, and is the first Germanic-language law code."
+    },
+    {
+     "title": "Origins: Textus Roffensis",
+     "author": "Rochester Cathedral",
+     "kind": "secondary",
+     "url": "https://rochestercathedral.org/research/textus/origins",
+     "locator": "research blog",
+     "quote": "Penned originally about the year 600, it is ‘the earliest datable work composed in English’"
+    },
+    {
+     "title": "Textus Roffensis: Collection of Early English Laws",
+     "author": "UK National Commission for UNESCO",
+     "kind": "listing",
+     "url": "https://unesco.org.uk/our-sites/memory-of-the-world/textus-roffensis-collection-of-early-english-laws",
+     "locator": "Memory of the World UK Register, 2023",
+     "quote": "Textus Roffensis has enormous significance as a well preserved example of early English legal codes, and includes the earliest datable English text."
+    }
+   ]
+  },
+  {
+   "category": "Oldest law or law code",
+   "name": "Senchas Már (Brehon law)",
+   "year": 650,
+   "age_text": "tracts written down from the 7th century; collected in the 8th century",
+   "claim": "The largest collection of early Irish (Brehon) law, among the oldest law texts of Ireland",
+   "evidence": "Early Irish law was the work of professional jurists (brehons); its oldest surviving tracts were first written down in the seventh century and gathered into the Senchas Már in the eighth, though its prologue claims the time of St Patrick. The texts survive in much later manuscripts, mostly of the 14th to 16th centuries, and dates for individual tracts vary. Brehon law stayed in use in much of Ireland until it was replaced by English common law in the 17th century.",
+   "verdict": "kept",
+   "nation": "Republic of Ireland",
+   "wikipedia_title": "Senchas Már",
+   "qid": "Q2269916",
+   "sources": [
+    {
+     "title": "Senchas Már",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Senchas_M%C3%A1r",
+     "locator": "lead",
+     "quote": "is the largest collection of early Irish legal texts, compiled into a single group sometime in the 8th century, though individual tracts vary in date"
+    },
+    {
+     "title": "Early Irish law",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Early_Irish_law",
+     "locator": "lead",
+     "quote": "The oldest surviving law tracts were first written down in the seventh century and compiled in the eighth century."
+    },
+    {
+     "title": "Brehon Law (Early Irish Law)",
+     "author": "EBSCO Research Starters",
+     "kind": "secondary",
+     "url": "https://www.ebsco.com/research-starters/law/brehon-law-early-irish-law/",
+     "locator": "overview",
+     "quote": "The earliest known book of Brehon Law was written between the sixth and eighth centuries"
+    }
+   ]
+  },
+  {
+   "category": "Oldest law or law code",
+   "name": "Laws of Hywel Dda (Cyfraith Hywel)",
+   "year": 940,
+   "age_text": "traditionally codified mid-10th century; earliest manuscripts 13th century",
+   "claim": "The native law of medieval Wales; its oldest manuscript, Peniarth 28, is the earliest surviving copy",
+   "evidence": "Welsh law is said to have been codified under Hywel Dda in the mid-10th century, but that rests on tradition: no manuscript survives from before the 13th century, and the surviving texts show regional differences and later revision. Peniarth 28, a Latin text with drawings of the king and his officers, is generally taken as the earliest copy; the National Library of Wales dates it to the middle of the 13th century, Wikipedia to the second half.",
+   "verdict": "open",
+   "nation": "Wales",
+   "where": {
+    "name": "National Library of Wales, Aberystwyth (Peniarth 28)",
+    "role": "kept",
+    "lat": 52.4144,
+    "lon": -4.0685
+   },
+   "wikipedia_title": "Cyfraith Hywel",
+   "qid": "Q63300138",
+   "sources": [
+    {
+     "title": "Cyfraith Hywel",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Cyfraith_Hywel",
+     "locator": "lead",
+     "quote": "according to tradition, only first codified during the reign of Hywel Dda in the mid-10th century. The earliest surviving manuscripts, however, are in Latin, date from the early 13th century"
+    },
+    {
+     "title": "Peniarth 28",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peniarth_28",
+     "locator": "lead",
+     "quote": "Peniarth 28 is the earliest of the surviving copy of the Laws of Hywel Dda."
+    },
+    {
+     "title": "Peniarth Exhibition",
+     "author": "Hywel Dda Interpretive Centre, Whitland",
+     "kind": "secondary",
+     "url": "https://hywel-dda.co.uk/peniarth-exhibition.htm",
+     "locator": "The Manuscript",
+     "quote": "Peniarth 28 is one of the oldest of Welsh Manuscripts. It is the Latin version of the Laws of Hywel Dda, and dates back to the thirteenth century."
+    }
+   ]
+  },
+  {
+   "category": "Oldest law or law code",
+   "name": "Statute of Marlborough",
+   "year": 1267,
+   "age_text": "18 or 19 November 1267",
+   "claim": "The oldest statute law still in force in the United Kingdom",
+   "evidence": "Passed at Marlborough under Henry III; four of its 29 chapters, about distress (seizing goods for debt) and waste, remain in force, one of them retitled the Distress Act 1267 in 1948. The Law Commission has proposed repealing two of them. Older rules survive as common law rather than statute; the oldest statutes in force elsewhere in the isles are the Fairs Act 1204 in Ireland and the Royal Mines Act 1424 in Scotland.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Marlborough, Wiltshire",
+    "role": "made",
+    "lat": 51.42,
+    "lon": -1.73
+   },
+   "wikipedia_title": "Statute of Marlborough",
+   "qid": "Q7604654",
+   "sources": [
+    {
+     "title": "Statute of Marlborough",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Statute_of_Marlborough",
+     "locator": "lead",
+     "quote": "Those four chapters constitute the oldest piece of statute law in the United Kingdom still in force"
+    },
+    {
+     "title": "Oldest surviving judicial code",
+     "author": "Guinness World Records",
+     "kind": "secondary",
+     "url": "https://www.guinnessworldrecords.com/world-records/oldest-surviving-judicial-code/",
+     "locator": "record",
+     "quote": "The oldest English statute in the Statute Book is a section of the Statute of Marlborough of 18 Nov 1267, re-entitled in 1948 `The Distress Act 1267'"
+    },
+    {
+     "title": "The 750th anniversary of England's oldest law",
+     "author": "Ian Mansfield, IanVisits",
+     "kind": "secondary",
+     "url": "https://www.ianvisits.co.uk/articles/the-750th-anniversary-of-englands-oldest-law-22917/",
+     "locator": "19 November 2017",
+     "quote": "affixed his seal to a document that is still in force, and now the oldest law still functioning in England"
+    },
+    {
+     "title": "Statute of Marlborough",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Statute_of_Marlborough",
+     "locator": "See also",
+     "quote": "Fairs Act 1204, the oldest statute still in force in Ireland Royal Mines Act 1424, the oldest statute still in force in Scotland"
+    }
+   ]
+  },
+  {
+   "category": "Oldest charter or legal document",
+   "name": "Charter of Hlothhere to Reculver",
+   "year": 679,
+   "age_text": "May 679",
+   "claim": "The oldest Anglo-Saxon charter surviving as an original",
+   "evidence": "King Hlothhere of Kent granted land on Thanet and at Sturry to Abbot Beorhtwald and his minster at Reculver; the charter was written at Reculver and kept in the archive of Christ Church, Canterbury. The original is British Library Cotton Augustus ii. 2 (Wikipedia places it in the Canterbury Cathedral archive, the Sawyer catalogue in the British Library). Older charters survive only as later copies, and many of those are interpolated or forged.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "Anglo-Saxon charters",
+   "sources": [
+    {
+     "title": "Anglo-Saxon charters",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Saxon_charters",
+     "locator": "lead",
+     "quote": "The oldest extant original charter, now in Canterbury Cathedral archive, was issued in 679 by King Hlothhere of Kent granting land to Reculver Abbey."
+    },
+    {
+     "title": "S 8: Hlothhere, king of Kent, to Abbot Beorhtwald and his minster",
+     "author": "The Electronic Sawyer, University of Cambridge",
+     "kind": "listing",
+     "url": "https://esawyer.lib.cam.ac.uk/charter/8.html",
+     "locator": "MSS and comments",
+     "quote": "London, British Library, Cotton Augustus ii. 2"
+    },
+    {
+     "title": "S 8: Hlothhere, king of Kent, to Abbot Beorhtwald and his minster",
+     "author": "The Electronic Sawyer, University of Cambridge",
+     "kind": "listing",
+     "url": "https://esawyer.lib.cam.ac.uk/charter/8.html",
+     "locator": "comments (Bruckner 1965)",
+     "quote": "oldest surviving Anglo-Saxon charter in contemporary form"
+    },
+    {
+     "title": "The Syrians and Reculver",
+     "author": "Anglo-Saxon Churches",
+     "kind": "secondary",
+     "url": "https://anglosaxonchurches.co.uk/syrians.html",
+     "locator": "Reculver",
+     "quote": "in a charter of 679, the oldest to survive as an original"
+    }
+   ]
+  },
+  {
+   "category": "Oldest charter or legal document",
+   "name": "William Charter to the City of London",
+   "year": 1067,
+   "age_text": "1067",
+   "claim": "The oldest document in the City of London's archive, and apparently the earliest royal document guaranteeing the collective rights of a town's inhabitants",
+   "evidence": "A strip of vellum about six inches by one and a half, written in Old English, in which William the Conqueror confirms to the bishop, the portreeve and the burgesses of London the rights they had under Edward the Confessor. It has been kept by the City ever since. The claim to be the first guarantee of a town's collective rights is UNESCO's, phrased as 'appears to be'.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "The London Archives, Clerkenwell",
+    "role": "kept",
+    "lat": 51.5254,
+    "lon": -0.1073
+   },
+   "sources": [
+    {
+     "title": "William Charter to the City of London",
+     "author": "The London Archives",
+     "kind": "primary",
+     "url": "https://www.thelondonarchives.org/your-research/william-1-charter-to-the-city-of-london",
+     "locator": "Our oldest document",
+     "quote": "is the oldest document in the City's archive, given by King William I (the Conqueror) to the City in 1067"
+    },
+    {
+     "title": "Charter of King William I to the City of London",
+     "author": "UK National Commission for UNESCO",
+     "kind": "listing",
+     "url": "https://unesco.org.uk/our-sites/memory-of-the-world/charter-of-king-william-i-to-the-city-of-london",
+     "locator": "Memory of the World UK Register, 2010",
+     "quote": "The Charter appears to be the earliest royal or imperial document which guarantees the collective rights of the inhabitants of any town."
+    }
+   ]
+  },
+  {
+   "category": "Oldest charter or legal document",
+   "name": "Charter of Duncan II",
+   "year": 1094,
+   "age_text": "c. 1094 (between November 1093 and November 1094)",
+   "claim": "The earliest surviving Scottish charter",
+   "evidence": "Duncan II, king for about six months in 1094, granted Tyninghame and other lands in Lothian to the monks of St Cuthbert at Durham, whose archive still holds the original. It is his only surviving charter; there is no sign the grant took effect, and his half-brother Edgar later made a similar one.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "Durham Cathedral archives",
+    "role": "kept",
+    "lat": 54.7735,
+    "lon": -1.5762
+   },
+   "wikipedia_title": "Duncan II of Scotland",
+   "sources": [
+    {
+     "title": "Duncan II (r. 1094)",
+     "author": "The Royal Household",
+     "kind": "secondary",
+     "url": "https://www.royal.uk/duncan-ii-r1094",
+     "locator": "biography",
+     "quote": "It was he who granted the earliest surviving Scottish charter."
+    },
+    {
+     "title": "Duncan II of Scotland",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Duncan_II_of_Scotland",
+     "locator": "charter",
+     "quote": "The sole surviving charter of Duncan II granted Tynninghame and its surrounding area to the monks of Durham."
+    },
+    {
+     "title": "Charter by King Duncan II of Scotland to the monks of St Cuthbert of Tyninghame, c. 1094",
+     "author": "School of History, Classics and Archaeology, University of Edinburgh",
+     "kind": "primary",
+     "url": "https://collections.shca.ed.ac.uk/items/show/3",
+     "locator": "facsimile 001",
+     "quote": "Charter by King Duncan II of Scotland to the monks of St Cuthbert of Tyninghame, c. 1094"
+    }
+   ]
+  },
+  {
+   "category": "Oldest record of government",
+   "name": "Domesday Book",
+   "year": 1086,
+   "age_text": "survey 1085–86 (completion of the book possibly later)",
+   "claim": "The oldest public record in England, and The National Archives' earliest surviving public record",
+   "evidence": "The record of William the Conqueror's survey of who held land in England and parts of Wales before and after 1066. Its colophon dates the survey to 1086, but when the book itself was written is debated, and one recent study argues it may not have been completed until 1098–1114. Older records of government survive elsewhere in fragments and copies; Domesday is the oldest held in the public records.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "The National Archives, Kew",
+    "role": "kept",
+    "lat": 51.4811,
+    "lon": -0.2797
+   },
+   "wikipedia_title": "Domesday Book",
+   "qid": "Q19867",
+   "sources": [
+    {
+     "title": "Domesday Book",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Domesday_Book",
+     "locator": "Importance",
+     "quote": "can have nothing but admiration for what is the oldest 'public record' in England"
+    },
+    {
+     "title": "Domesday Book",
+     "author": "UK National Commission for UNESCO",
+     "kind": "listing",
+     "url": "https://unesco.org.uk/our-sites/memory-of-the-world/domesday-book",
+     "locator": "Memory of the World UK Register, 2012",
+     "quote": "It is The National Archives’ earliest surviving public record and, perhaps, the most iconic."
+    },
+    {
+     "title": "Domesday Book",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Domesday_Book",
+     "locator": "lead",
+     "quote": "though recent research by Medievalist professor Carol Symes indicates that this book might have been completed as late as 1098 to 1114"
+    }
+   ]
+  },
+  {
+   "category": "Oldest record of government",
+   "name": "Pipe Rolls",
+   "year": 1130,
+   "age_text": "earliest roll 1129–30; nearly continuous from 1155–56 to 1832",
+   "claim": "The oldest continuous series of records of English government",
+   "evidence": "The annual audit of the sheriffs' and others' accounts at the Exchequer. The roll of 1129–30 is the earliest to survive, already in a mature form, and an extract from one of 1124 is known; the series then runs almost unbroken from 1155 until 1832, with only four rolls missing. Ireland's earliest surviving pipe roll is of 1212.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "The National Archives, Kew",
+    "role": "kept",
+    "lat": 51.4811,
+    "lon": -0.2797
+   },
+   "wikipedia_title": "Pipe rolls",
+   "qid": "Q614407",
+   "sources": [
+    {
+     "title": "Pipe rolls",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pipe_rolls",
+     "locator": "lead",
+     "quote": "They form the oldest continuous series of records concerning English governance"
+    },
+    {
+     "title": "Medieval financial records: pipe rolls 1130-c.1300",
+     "author": "The National Archives",
+     "kind": "secondary",
+     "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/medieval-financial-records-pipe-rolls-1130-1300",
+     "locator": "What do they contain?",
+     "quote": "A nearly continuous series runs from 1155 until 1832, the earliest series of English royal records; only four are missing."
+    },
+    {
+     "title": "What is a pipe roll?",
+     "author": "Pipe Roll Society",
+     "kind": "secondary",
+     "url": "https://piperollsociety.co.uk/what-is-a-pipe-roll%3F",
+     "locator": "about",
+     "quote": "The earliest surviving roll is for the year to Michaelmas 1130. It was not the first to be produced: an extract from the roll of 1124 has been discovered"
+    }
+   ]
+  },
+  {
+   "category": "Oldest record of government",
+   "name": "Aberdeen Burgh Registers",
+   "year": 1398,
+   "age_text": "from 1398 (first eight volumes 1398–1511)",
+   "claim": "The earliest and most complete surviving records of any Scottish town",
+   "evidence": "The council registers ('common books') of Aberdeen survive from 1398, recording elections, burgess admissions, property and disputes; the third volume (about 1414–34) has been lost. The first eight volumes are on the UK Memory of the World Register. Scotland's national records of government suffered heavy losses, which makes this run exceptional.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "Aberdeen Town House (Aberdeen City and Aberdeenshire Archives)",
+    "role": "kept",
+    "lat": 57.1481,
+    "lon": -2.0947
+   },
+   "sources": [
+    {
+     "title": "Aberdeen Burgh Registers",
+     "author": "UK National Commission for UNESCO",
+     "kind": "listing",
+     "url": "https://unesco.org.uk/our-sites/memory-of-the-world/aberdeen-burgh-registers",
+     "locator": "Memory of the World UK Register, 2013",
+     "quote": "The first eight volumes of the Burgh Registers for Aberdeen between 1398 and 1509 represents the earliest and most complete body of surviving records of any Scottish town."
+    },
+    {
+     "title": "Aberdeen Registers Online: 1398-1511",
+     "author": "Research Institute of Irish and Scottish Studies, University of Aberdeen",
+     "kind": "secondary",
+     "url": "https://abdn.ac.uk/riiss/projects/burgh-records/aberdeen-registers-online",
+     "locator": "about",
+     "quote": "These comprise the earliest and most complete run of books of civic government in Scotland, beginning in 1398 (volume one)"
+    }
+   ]
+  },
+  {
+   "category": "Oldest record of government",
+   "name": "Tynwald",
+   "year": 979,
+   "age_text": "traditionally 979; first records 13th–14th century",
+   "claim": "Claims to be the oldest continuous parliament in the world",
+   "evidence": "The parliament of the Isle of Man, of Norse origin, still meets in the open air at Tynwald Hill, St John's, every July. The date 979 was chosen for the millennium of 1979 without evidence; the place-name is first recorded in the 13th–14th century Chronicles of Mann. Iceland's Althing is older but was interrupted, which is why Tynwald's claim is to unbroken existence.",
+   "verdict": "open",
+   "nation": "Isle of Man",
+   "where": {
+    "name": "Tynwald, Douglas",
+    "role": "held",
+    "lat": 54.1508,
+    "lon": -4.4814
+   },
+   "wikipedia_title": "Tynwald",
+   "qid": "Q827704",
+   "sources": [
+    {
+     "title": "Tynwald",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald",
+     "locator": "lead",
+     "quote": "Established in 979 according to tradition or in the 13th century according to available historical evidence, it is the oldest continuous legislature in the world"
+    },
+    {
+     "title": "Tynwald",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald",
+     "locator": "History",
+     "quote": "there is no evidence indicating that such an assembly was held in 979, or that any such event resembled the modern-day court"
+    },
+    {
+     "title": "About Tynwald",
+     "author": "Tynwald",
+     "kind": "primary",
+     "url": "https://www.tynwald.org.im/about",
+     "locator": "About",
+     "quote": "Tynwald claims to be the oldest continuous parliamentary assembly in the world, with a tradition of over 1,000 years of meetings being held."
+    }
+   ]
+  },
+  {
+   "category": "Oldest map",
+   "name": "Ptolemy's map of the British Isles",
+   "year": 150,
+   "age_text": "c. AD 150 (coordinates); oldest surviving drawn copies c. 1300",
+   "claim": "The oldest known map of the British Isles, preserved as coordinates and redrawn in later manuscripts",
+   "evidence": "Ptolemy's Geography, written at Alexandria in the 2nd century, listed places of the known world by latitude and longitude, including Britain (Albion) and Ireland (Hibernia). No ancient drawing survives: the oldest maps were redrawn from the numbers by Maximos Planudes' team in Constantinople a little before 1300, with Scotland turned sharply to the east. Whether Ptolemy himself drew maps is debated.",
+   "verdict": "open",
+   "nation": "British Isles",
+   "where": {
+    "name": "British Library, London (Add MS 19391)",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "Ptolemy's Geography",
+   "sources": [
+    {
+     "title": "Medieval Maps of Britain",
+     "author": "Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2026/01/medieval-maps-of-britain/",
+     "locator": "Planudes and Ptolemy's British Isles",
+     "quote": "producing the earliest surviving Greek manuscript tradition with a full set of Ptolemaic maps. This includes a map of the British Isles."
+    },
+    {
+     "title": "Ptolemy's Geography",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ptolemy%27s_Geography",
+     "locator": "Manuscripts",
+     "quote": "The three earliest surviving texts with maps are those from Constantinople (Istanbul) based on Planudes's work."
+    }
+   ]
+  },
+  {
+   "category": "Oldest map",
+   "name": "Anglo-Saxon Cotton world map",
+   "year": 1025,
+   "age_text": "c. 1025–1050",
+   "claim": "One of the earliest surviving maps to show the British Isles in a recognisable way",
+   "evidence": "A world map in a manuscript of Priscian's geography (Cotton Tiberius B. V, fol. 56v), probably made at or near Canterbury, once dated to the 990s. Britain and Ireland appear as distinct islands with London, Winchester and Dublin marked. Earlier world maps label Britannia and Hibernia (the map linked to Abbo of Fleury, c. 1000) or may show Britain as a blot (the 8th-century Albi map), so it is not the first depiction, only one of the first recognisable ones.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "sources": [
+    {
+     "title": "Medieval Maps of Britain",
+     "author": "Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2026/01/medieval-maps-of-britain/",
+     "locator": "Anglo-Saxon Mappa Mundi",
+     "quote": "one of the earliest surviving maps to depict the British Isles in a recognisable way"
+    },
+    {
+     "title": "Early world maps",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Early_world_maps",
+     "locator": "Anglo-Saxon Cotton World Map",
+     "quote": "more recent analysis indicates that, although the information was revised about that time, the map was probably drawn between 1025 and 1050"
+    }
+   ]
+  },
+  {
+   "category": "Oldest map",
+   "name": "Matthew Paris's maps of Britain",
+   "year": 1250,
+   "age_text": "c. 1250 (1250s)",
+   "claim": "The earliest surviving maps of Great Britain on its own",
+   "evidence": "Matthew Paris, a monk of St Albans, drew four maps of Britain in his chronicles in the 1250s, with north at the top and over 250 place-names, laid out as a guide rather than to scale. They predate the Gough Map by about a century; the sources call his the first English map of Britain, but none states in so many words that no earlier map of Britain survives.",
+   "verdict": "open",
+   "nation": "England",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "Matthew Paris",
+   "qid": "Q369366",
+   "sources": [
+    {
+     "title": "Medieval Maps of Britain",
+     "author": "Medievalists.net",
+     "kind": "secondary",
+     "url": "https://www.medievalists.net/2026/01/medieval-maps-of-britain/",
+     "locator": "Matthew Paris' Map",
+     "quote": "produced a map of Britain in the 1250s. It survives in four manuscripts"
+    },
+    {
+     "title": "Christopher Saxton's Atlas (Book of the Month, June 2002)",
+     "author": "University of Glasgow Library",
+     "kind": "secondary",
+     "url": "https://www.gla.ac.uk/myglasgow/library/files/special/exhibns/month/june2002.html",
+     "locator": "introduction",
+     "quote": "Although the first English map of Britain by Matthew Paris had appeared in about 1250"
+    },
+    {
+     "title": "Matthew Paris",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Matthew_Paris",
+     "locator": "works",
+     "quote": "It also contains the most developed of Paris's four maps of Great Britain."
+    }
+   ]
+  },
+  {
+   "category": "Oldest map",
+   "name": "Gough Map",
+   "year": 1360,
+   "age_text": "conventionally c. 1360; recent studies 1370s to early 15th century",
+   "claim": "The earliest surviving map to show routes across Britain and a recognisable coastline; the earliest known sheet map of Britain",
+   "evidence": "A map of Britain on two sheepskins in the Bodleian Library, with red lines and distances between towns. Its long-accepted date of about 1360 is now in doubt: studies of handwriting and spectral imaging suggest it was made in the 1370s and revised into the 15th century, or drawn in layers from about 1390 onwards. Matthew Paris's maps of Britain are older, but the Gough Map is the first with a recognisable outline.",
+   "verdict": "open",
+   "nation": "England",
+   "where": {
+    "name": "Bodleian Library, Oxford",
+    "role": "kept",
+    "lat": 51.754,
+    "lon": -1.2551
+   },
+   "wikipedia_title": "Gough Map",
+   "qid": "Q1428402",
+   "sources": [
+    {
+     "title": "The Gough Map",
+     "author": "UK National Commission for UNESCO",
+     "kind": "listing",
+     "url": "https://unesco.org.uk/our-sites/memory-of-the-world/the-gough-map",
+     "locator": "Memory of the World UK Register, 2011",
+     "quote": "Dated approximately 1360, it is the earliest surviving map to show routes across Britain and to depict a recognisable coastline."
+    },
+    {
+     "title": "About the Gough Map",
+     "author": "Linguistic Geographies: The Gough Map of Great Britain",
+     "kind": "secondary",
+     "url": "https://goughmap.uk/about",
+     "locator": "About",
+     "quote": "The Gough Map is the earliest known sheet map of Britain, noted for its remarkable accuracy, particularly in south east England"
+    },
+    {
+     "title": "Gough Map",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gough_Map",
+     "locator": "Dating",
+     "quote": "One study concludes that the map must have been made in the early years of the fifteenth century, while another suggests that the map was produced in the 1370s but extensively revised, perhaps as late as 1430."
+    }
+   ]
+  },
+  {
+   "category": "Oldest map",
+   "name": "Saxton's Atlas of England and Wales",
+   "year": 1579,
+   "age_text": "surveyed 1574–78; published as an atlas in 1579",
+   "claim": "The first county maps of England and Wales, often called the first national atlas of any country",
+   "evidence": "Christopher Saxton surveyed every county of England and Wales with the backing of Thomas Seckford and Lord Burghley; the sheets were printed separately from 1574 and issued together with a general map in 1579. Mercator's map of the British Isles (1564) is older but is a single map; Saxton's maps were the basis of English county maps for over a century.",
+   "verdict": "kept",
+   "nation": "England",
+   "wikipedia_title": "Christopher Saxton",
+   "qid": "Q2099402",
+   "sources": [
+    {
+     "title": "Christopher Saxton",
+     "author": "Wikipedia",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christopher_Saxton",
+     "locator": "lead",
+     "quote": "was an English cartographer who produced the first county maps of England and Wales"
+    },
+    {
+     "title": "See the First Atlas Created of a Country",
+     "author": "Caitlin Dempsey, Geography Realm",
+     "kind": "secondary",
+     "url": "https://www.geographyrealm.com/see-the-first-atlas-created-of-a-country/",
+     "locator": "article",
+     "quote": "Christopher Saxton, created the first atlas of any country"
+    },
+    {
+     "title": "Christopher Saxton's Atlas (Book of the Month, June 2002)",
+     "author": "University of Glasgow Library",
+     "kind": "secondary",
+     "url": "https://www.gla.ac.uk/myglasgow/library/files/special/exhibns/month/june2002.html",
+     "locator": "the atlas",
+     "quote": "The general map and all the county maps were first issued as an atlas in 1579."
+    }
+   ]
+  }
+ ]
+}

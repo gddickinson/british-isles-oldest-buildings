@@ -1,0 +1,517 @@
+{
+ "about": "Oldest recipes and cookery books, dishes still made, records of brewing and distilling, and food brands of the British Isles, each with quoted sources; researched 2026-10-27.",
+ "entries": [
+  {
+   "category": "Oldest recipe or cookery book",
+   "name": "Poitou sauces (salsamenta pictavensia), Sidney Sussex College MS 51",
+   "year": 1170,
+   "age_text": "later 12th century",
+   "claim": "the earliest discrete block of culinary recipes yet found in a manuscript from England",
+   "evidence": "About ten Latin recipes for sauces 'from Poitou', found by Faith Wallis in a medical collection from Durham Cathedral Priory (now Sidney Sussex College, Cambridge, MS 51) and published with Giles Gasper, date from the later 12th century. They were hailed as the earliest English culinary recipes, but scattered food recipes already occur in Old English medical collections compiled before the Norman Conquest, so they are the oldest set of recipes rather than the oldest recipes. The oldest collections from England after them are Anglo-Norman, of the late 13th century.",
+   "verdict": "open",
+   "nation": "England",
+   "where": {
+    "name": "Sidney Sussex College, Cambridge",
+    "role": "kept",
+    "lat": 52.2075,
+    "lon": 0.1208
+   },
+   "sources": [
+    {
+     "title": "Sauces from Poitou: Twelfth-Century Culinary Recipes in a Medical Collection (session, 49th International Congress on Medieval Studies, 2014)",
+     "author": "Giles E. M. Gasper (organiser), Western Michigan University ScholarWorks",
+     "kind": "listing",
+     "url": "https://scholarworks.wmich.edu/medieval_icms/2014/Schedule/320",
+     "locator": "description",
+     "quote": "Newly discovered culinary recipes from the later 12th century in a Durham Cathedral Priory manuscript"
+    },
+    {
+     "title": "Medieval European Medical Manuscripts: recipes, food and cookery (working group, 29 April 2021)",
+     "author": "Debby Banham, Consortium for History of Science, Technology and Medicine",
+     "kind": "secondary",
+     "url": "https://chstm.org/node/47369",
+     "locator": "abstract",
+     "quote": "They are indeed the earliest discrete block of culinary recipes yet found in a manuscript from England, but they are by no means the earliest culinary recipes"
+    }
+   ]
+  },
+  {
+   "category": "Oldest recipe or cookery book",
+   "name": "The Forme of Cury",
+   "year": 1390,
+   "age_text": "c. 1390",
+   "claim": "among the oldest surviving cookery books in English, compiled by Richard II's master cooks",
+   "evidence": "The collection of about 196 Middle English recipes is headed as the work of the chief master cooks of Richard II, and is usually dated to about 1390; it survives in nine manuscripts, the best known a scroll in the British Library (another copy is in the John Rylands Library, Manchester). It is among the oldest cookery books in English, but older recipes from England survive in Latin and Anglo-Norman French.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "The Forme of Cury",
+   "qid": "Q166358",
+   "sources": [
+    {
+     "title": "The Forme of Cury (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Forme_of_Cury",
+     "locator": "lead",
+     "quote": "It is among the oldest extant English cookery books"
+    },
+    {
+     "title": "The Forme of Cury (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Forme_of_Cury",
+     "locator": "lead",
+     "quote": "the most famous in the form of a scroll with a headnote citing it as the work of \"the chief Master Cooks of King Richard II\""
+    },
+    {
+     "title": "Oldest English recipes cooked up at John Rylands",
+     "author": "University of Manchester",
+     "kind": "secondary",
+     "url": "https://www.manchester.ac.uk/about/news/oldest-english-recipes-cooked-up-at-john-rylands/",
+     "locator": "news, 4 December 2009",
+     "quote": "The Forme of Cury was compiled and written in 1390 by King Richard II’s master cooks and contains over 190 recipes"
+    }
+   ]
+  },
+  {
+   "category": "Oldest recipe or cookery book",
+   "name": "Mrs McLintock's Receipts for Cookery and Pastry-Work",
+   "year": 1736,
+   "age_text": "Glasgow, 1736",
+   "claim": "the first cookery book printed in Scotland",
+   "evidence": "Mrs McLintock's book, printed in Glasgow in 1736, is held to be the first cookery book printed in Scotland; it was reprinted by Aberdeen University Press in 1986. Older Scottish recipes survive in manuscript, so this is the first printed book, not the oldest Scottish recipes.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "Glasgow University Library",
+    "role": "kept",
+    "lat": 55.8733,
+    "lon": -4.289
+   },
+   "sources": [
+    {
+     "title": "Mrs Maciver: the thread about Edinburgh’s first cookery teacher",
+     "author": "Andy Arthur, Threadinburgh",
+     "kind": "secondary",
+     "url": "https://threadinburgh.scot/2022/10/24/the-thread-about-mrs-maciver-edinburghs-first-cookery-teacher-and-writer-who-published-the-first-known-recipe-for-haggis-and-a-little-about-the-early-history-of-t",
+     "locator": "opening",
+     "quote": "neither the first such book printed in Scotland (that title goes to Mrs McLintock’s Recepits for Cooking and Pastrywork , Glasgow, 1736)"
+    },
+    {
+     "title": "Mrs. McLintock's receipts for cookery and pastry-work (catalogue record)",
+     "author": "New York Public Library",
+     "kind": "listing",
+     "url": "https://www.nypl.org/research/research-catalog/bib/b11081310",
+     "locator": "details",
+     "quote": "Reprint. Originally published : Glasgow, 1736"
+    }
+   ]
+  },
+  {
+   "category": "Oldest dish or food still made",
+   "name": "Haggis",
+   "year": 1430,
+   "age_text": "c. 1430",
+   "claim": "the earliest known written recipes for haggis are English, of about 1430, not Scottish",
+   "evidence": "The first known written recipes for a dish called haggis ('hagese') are in the verse cookbook Liber Cure Cocorum of about 1430 from Lancashire, and in another English cookbook of the same date. The earliest Scottish mention is in Dunbar's poem The Flyting of Dunbar and Kennedie, early in the 16th century. The dish is regarded as Scottish, but the oldest written evidence is from England.",
+   "verdict": "corrected",
+   "nation": "England",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "Haggis",
+   "qid": "Q209500",
+   "sources": [
+    {
+     "title": "Haggis (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Haggis",
+     "locator": "History",
+     "quote": "The first known written recipes for a dish of the name, made with offal and herbs, are as \"hagese\", in the verse cookbook Liber Cure Cocorum dating from around 1430 in Lancashire"
+    },
+    {
+     "title": "Liber Cure Cocorum (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Liber_Cure_Cocorum",
+     "locator": "Content",
+     "quote": "including the earliest references to several dishes, including haggis and humble pie"
+    },
+    {
+     "title": "Northwest Recipes: Hagese",
+     "author": "Northwest Nature and History",
+     "kind": "secondary",
+     "url": "https://northwestnatureandhistory.co.uk/2025/01/26/northwest-recipes-hagese/",
+     "locator": "opening",
+     "quote": "the oldest known recipe, referred to as ‘hagese’ in the text, can be found in the medieval Lancashire manuscript ‘ Liber Cure Cocorum ’ dating from around 1430AD"
+    },
+    {
+     "title": "Mrs Maciver: the thread about Edinburgh’s first cookery teacher",
+     "author": "Andy Arthur, Threadinburgh",
+     "kind": "secondary",
+     "url": "https://threadinburgh.scot/2022/10/24/the-thread-about-mrs-maciver-edinburghs-first-cookery-teacher-and-writer-who-published-the-first-known-recipe-for-haggis-and-a-little-about-the-early-history-of-t",
+     "locator": "haggis",
+     "quote": "The earliest printed mention seems to be it used in an insult, in an early 16th century poem by William Dunbar"
+    }
+   ]
+  },
+  {
+   "category": "Oldest dish or food still made",
+   "name": "Pasty",
+   "year": 1208,
+   "age_text": "13th century; in Devon or Cornwall from 1509/10",
+   "claim": "pasties are documented in England from the 13th century; the earliest record in Devon or Cornwall is from Plymouth in 1509/10",
+   "evidence": "Pasties appear in a charter of King John to Great Yarmouth in 1208 and in Matthew Paris's 13th-century chronicle of St Albans, and in medieval cookbooks. The earliest reference in Devon or Cornwall is in Plymouth's records of 1509/10. The Cornish pasty as now made, with beef and vegetables, is much later; early recipes used venison.",
+   "verdict": "kept",
+   "nation": "England",
+   "wikipedia_title": "Pasty",
+   "qid": "Q126777",
+   "sources": [
+    {
+     "title": "Pasty (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pasty",
+     "locator": "History",
+     "quote": "Other early references to pasties include a charter that was granted by King John of England to the town of Great Yarmouth in 1208"
+    },
+    {
+     "title": "Pasty (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Pasty",
+     "locator": "History",
+     "quote": "The earliest reference for a pasty in Devon or Cornwall can be found in Plymouth city records of 1509/10"
+    },
+    {
+     "title": "The Cornish Pasty",
+     "author": "Ben Johnson, Historic UK",
+     "kind": "secondary",
+     "url": "https://www.historic-uk.com/CultureUK/The-Cornish-Pasty/",
+     "locator": "opening",
+     "quote": "The pasty has been a documented part of the British diet since the 13th Century, at this time being devoured by the rich upper classes and royalty"
+    }
+   ]
+  },
+  {
+   "category": "Oldest dish or food still made",
+   "name": "Welsh rarebit",
+   "year": 1725,
+   "age_text": "first recorded 1725 ('Welsh rabbit')",
+   "claim": "the name is first recorded in 1725 as 'Welsh rabbit'; 'rarebit' only from 1781",
+   "evidence": "The dish of melted cheese on toast is first recorded as 'Welsh rabbit' in 1725, in an English context; 'Welsh rarebit' is a later corruption first documented in 1781. The origin of the name is unknown, and toasted cheese was surely eaten earlier.",
+   "verdict": "kept",
+   "nation": "Wales",
+   "wikipedia_title": "Welsh rarebit",
+   "qid": "Q1210230",
+   "sources": [
+    {
+     "title": "Welsh rarebit (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Welsh_rarebit",
+     "locator": "lead",
+     "quote": "the earliest recorded use is 1725 as \"Welsh rabbit\", a jocular name as the dish contains no rabbit; the earliest documented use of \"Welsh rarebit\" is in 1781"
+    },
+    {
+     "title": "Welsh rarebit (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Welsh_rarebit",
+     "locator": "Name",
+     "quote": "The first recorded reference to the dish was \"Welsh rabbit\" in 1725 in an English context, but the origin of the term is unknown"
+    }
+   ]
+  },
+  {
+   "category": "Oldest drink or brewing record",
+   "name": "Exchequer Rolls entry for Friar John Cor's aqua vitae",
+   "year": 1494,
+   "age_text": "1494 (roll of 1494–95)",
+   "claim": "the first written record of Scotch whisky",
+   "evidence": "The Exchequer Rolls record eight bolls of malt given 'to Friar John Cor, by order of the King, to make aqua vitae'; the entry is usually dated 1494, though it falls in the roll of 1494–95 and is also given as 1 June 1495. Which house Cor belonged to is debated: Lindores Abbey claims him, others suggest the Blackfriars of Edinburgh. Distilling in Scotland is surely older than its first record.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "General Register House, Edinburgh (National Records of Scotland)",
+    "role": "kept",
+    "lat": 55.9537,
+    "lon": -3.1893
+   },
+   "wikipedia_title": "John Cor",
+   "qid": "Q6227082",
+   "sources": [
+    {
+     "title": "Scotch whisky (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Scotch_whisky",
+     "locator": "History",
+     "quote": "The earliest record of distillation in Scotland is in the Exchequer Rolls of Scotland for 1494"
+    },
+    {
+     "title": "John Cor (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Cor",
+     "locator": "lead",
+     "quote": "In a Latin entry in the Exchequer Rolls John Cor is addressed by King James IV of Scotland, with the order to use \"eight bolls of malt (brasium) to make whisky (aquavitae)"
+    },
+    {
+     "title": "John Cor (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Cor",
+     "locator": "lead",
+     "quote": "The reference to Cor and Scotch Whisky occurs on 1 June 1495"
+    },
+    {
+     "title": "History",
+     "author": "Lindores Abbey Distillery",
+     "kind": "secondary",
+     "url": "https://lindoresabbeydistillery.com/history/",
+     "locator": "history page",
+     "quote": "With Lindores Abbey’s widely recognised links to the earliest written reference to Scotch Whisky"
+    }
+   ]
+  },
+  {
+   "category": "Oldest drink or brewing record",
+   "name": "Annals of Clonmacnoise entry on aqua vitae",
+   "year": 1405,
+   "age_text": "1405",
+   "claim": "the oldest known documented record of whiskey in Ireland",
+   "evidence": "The Annals of Clonmacnoise record under 1405 that a chieftain died after 'taking a surfeit of aqua vitae' at Christmas, the oldest known written mention of whiskey in Ireland. Whether aqua vitae meant a grain spirit like later whiskey is not certain.",
+   "verdict": "kept",
+   "nation": "Republic of Ireland",
+   "wikipedia_title": "Irish whiskey",
+   "qid": "Q909747",
+   "sources": [
+    {
+     "title": "Irish whiskey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_whiskey",
+     "locator": "History",
+     "quote": "The oldest known documented record of whiskey in Ireland was in 1405; in the Annals of Clonmacnoise it was written that the head of a clan died after \"taking a surfeit of aqua vitae\" at Christmas"
+    }
+   ]
+  },
+  {
+   "category": "Oldest drink or brewing record",
+   "name": "Bushmills 1608 licence",
+   "year": 1608,
+   "age_text": "licence 1608; distillery company 1784",
+   "claim": "the 1608 licence to Sir Thomas Phillips is the oldest surviving licence to distil, but the Bushmills distillery itself dates from 1784",
+   "evidence": "In 1608 James I granted Sir Thomas Phillips a licence to distil whiskey in County Antrim, and Bushmills prints 1608 on its label. The Bushmills company was formed only in 1784, and the distillery does not clearly descend from any distillery of Phillips's, so 'the oldest distillery' claim is not borne out.",
+   "verdict": "corrected",
+   "nation": "Northern Ireland",
+   "where": {
+    "name": "Old Bushmills Distillery, County Antrim",
+    "role": "made",
+    "lat": 55.2019,
+    "lon": -6.5196
+   },
+   "wikipedia_title": "Old Bushmills Distillery",
+   "qid": "Q268267",
+   "sources": [
+    {
+     "title": "Old Bushmills Distillery (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Old_Bushmills_Distillery",
+     "locator": "lead",
+     "quote": "The company that originally built the distillery was formed in 1784, although the date 1608 is printed on the label of the brand"
+    },
+    {
+     "title": "Irish whiskey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_whiskey",
+     "locator": "History",
+     "quote": "the Bushmills distillery does not clearly descend from any distillery operated by Phillips through ownership or location"
+    },
+    {
+     "title": "Irish whiskey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Irish_whiskey",
+     "locator": "History",
+     "quote": "it is through the earlier 1608 licence that the Old Bushmills Distillery lays claim to being the oldest surviving grant of licence to distil in the world"
+    }
+   ]
+  },
+  {
+   "category": "Oldest drink or brewing record",
+   "name": "Shepherd Neame brewery, Faversham",
+   "year": 1573,
+   "age_text": "founded 1698; brewing on the site from at least 1573",
+   "claim": "claims to be Britain's oldest brewer",
+   "evidence": "Shepherd Neame dates its founding to 1698, and documents found in 2006 suggest brewing on its Court Street site from at least 1573. The Three Tuns Brewery at Bishop's Castle, Shropshire (licensed 1642) also claims to be Britain's oldest, so the title depends on what is counted.",
+   "verdict": "open",
+   "nation": "England",
+   "where": {
+    "name": "Faversham, Kent",
+    "role": "made",
+    "lat": 51.3177,
+    "lon": 0.8928
+   },
+   "wikipedia_title": "Shepherd Neame Brewery",
+   "qid": "Q12002324",
+   "sources": [
+    {
+     "title": "Our rich history",
+     "author": "Shepherd Neame",
+     "kind": "secondary",
+     "url": "https://www.shepherdneame.co.uk/brewery/history",
+     "locator": "history page",
+     "quote": "evidence suggests that brewing has taken place on the site for even longer, stretching back to at least 1573"
+    },
+    {
+     "title": "Shepherd Neame ages 150 years overnight",
+     "author": "The Morning Advertiser, 25 July 2006",
+     "kind": "secondary",
+     "url": "https://www.morningadvertiser.co.uk/Article/2006/07/25/Shepherd-Neame-ages-150-years-overnight",
+     "locator": "article",
+     "quote": "brewing moved from the old Abbey brewhouse to the current site sometime between 1550 and 1573"
+    },
+    {
+     "title": "Shepherd Neame Brewery (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Shepherd_Neame_Brewery",
+     "locator": "lead",
+     "quote": "Along with the Three Tuns Brewery in Shropshire, Shepherd Neame claims to be the oldest brewery in Great Britain"
+    },
+    {
+     "title": "Three Tuns Brewery (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Three_Tuns_Brewery",
+     "locator": "lead",
+     "quote": "established in 1642 on its current site, making it the oldest licensed brewery site in Britain"
+    }
+   ]
+  },
+  {
+   "category": "Oldest food brand or packaging",
+   "name": "Lyle's Golden Syrup tin",
+   "year": 1883,
+   "age_text": "design 1883; syrup sold from 1885",
+   "claim": "named by Guinness World Records (2006) the world's oldest branding and packaging",
+   "evidence": "The green and gold tin with its lion and bees has stayed essentially unchanged since 1883 (some accounts give 1881 or 1885 for the launch), and Guinness World Records named it the world's oldest branding and packaging in 2006. A new logo was introduced on other products in 2024, but the classic tin kept the original design.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Plaistow, London (Abram Lyle & Sons refinery)",
+    "role": "made",
+    "lat": 51.5243,
+    "lon": 0.0245
+   },
+   "wikipedia_title": "Golden syrup",
+   "qid": "Q2688129",
+   "sources": [
+    {
+     "title": "Golden syrup (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golden_syrup",
+     "locator": "lead",
+     "quote": "in 2006 Guinness World Records declared the mark to be the world's oldest branding and packaging"
+    },
+    {
+     "title": "Lyle’s Golden Syrup lion logo ‘revitalised’ in first re-branding since 1883",
+     "author": "The Irish News (PA), 20 February 2024",
+     "kind": "secondary",
+     "url": "https://www.irishnews.com/news/uk/lyles-golden-syrup-lion-logo-revitalised-in-first-re-branding-since-1883-WWJGHKVUERIKTHF5WI4CGGQULA/",
+     "locator": "article",
+     "quote": "holds the Guinness World Record for the world’s oldest unchanged brand packaging, having remained essentially identical since 1883"
+    }
+   ]
+  },
+  {
+   "category": "Oldest food brand or packaging",
+   "name": "Bass red triangle",
+   "year": 1876,
+   "age_text": "registered 1 January 1876",
+   "claim": "the first trade mark registered in the United Kingdom",
+   "evidence": "Registration of trade marks began on 1 January 1876 under the Trade Marks Registration Act 1875, and Bass & Co's red triangle for its pale ale was the first mark registered; it is still registered as UK00000000001. The story of an employee queuing overnight to be first is a legend.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Bass Brewery, Burton upon Trent",
+    "role": "made",
+    "lat": 52.807,
+    "lon": -1.632
+   },
+   "wikipedia_title": "Bass Brewery",
+   "qid": "Q532084",
+   "sources": [
+    {
+     "title": "United Kingdom trade mark law (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/United_Kingdom_trade_mark_law",
+     "locator": "History",
+     "quote": "The first trade mark to be so registered was the red triangle of the Bass Brewery"
+    },
+    {
+     "title": "Bass Brewery (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bass_Brewery",
+     "locator": "lead",
+     "quote": "The Bass Red Triangle was the first trade mark to be registered under the UK's Trade Marks Registration Act 1875"
+    },
+    {
+     "title": "Luxury motors, chocolate and pirate radio: the UK's most iconic trade marks revealed",
+     "author": "Boult",
+     "kind": "secondary",
+     "url": "https://www.boult.com/bulletin/luxury-motors-chocolate-and-pirate-radio-the-uks-most-iconic-trade-marks-revealed/",
+     "locator": "bulletin",
+     "quote": "The UK trade mark system first opened for new applications on 1 January 1876, when Bass & Co applied that very same day to register its red triangle"
+    }
+   ]
+  },
+  {
+   "category": "Oldest food brand or packaging",
+   "name": "Twinings logo",
+   "year": 1787,
+   "age_text": "1787",
+   "claim": "claimed to be the world's oldest commercial logo in continuous use",
+   "evidence": "Twinings' logo, the name under a lion, dates from 1787, when Richard Twining built the doorway of the shop at 216 Strand, London, where the firm has traded since 1706. It is widely described as the oldest logo in continuous use, but no register settles such a claim, and Lyle's tin is the record holder for unchanged packaging.",
+   "verdict": "open",
+   "nation": "England",
+   "wikipedia_title": "Twinings",
+   "qid": "Q1054692",
+   "sources": [
+    {
+     "title": "Twinings (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Twinings",
+     "locator": "lead",
+     "quote": "The firm's logo, created in 1787, is the world's oldest in continuous use"
+    },
+    {
+     "title": "Where’s London’s oldest… tea shop?",
+     "author": "Exploring London",
+     "kind": "secondary",
+     "url": "https://exploring-london.com/tag/216-strand/",
+     "locator": "post",
+     "quote": "the company’s logo, which dates back to 1787, is the oldest commercial logo in continuous use"
+    }
+   ]
+  }
+ ]
+}

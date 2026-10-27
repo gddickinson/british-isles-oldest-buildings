@@ -79,6 +79,12 @@ def oldest_lists():
     return jsonify(lists(conn()))
 
 
+@bp.route("/api/things")
+def things():
+    from bidb.oldest_things import index
+    return jsonify(index())
+
+
 @bp.route("/api/glossary")
 def glossary():
     from bidb.glossary import entries

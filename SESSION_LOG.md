@@ -1902,3 +1902,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `site-2026-10-27` (run 40534647606); https://gddickinson.github.io/british-isles-oldest-buildings/ checked: pages,
   scripts and data files 200, map drawn in headless Chrome. Address set as the repository's website and linked at
   the top of the README.
+
+## 2026-10-27 — Oldest things: a new page of researched oldest recipes, books, songs, laws, games, customs, objects
+- George asked for a page of other historic items (e.g. the oldest recipes), with categories researched and filled.
+- New `bidb/oldest_things.py`: eight themes with 4-5 categories each (`THEMES`), one file per theme in
+  `data/curated/things/`, entries in the oldest-lists style (claim, evidence, verdict, nation, `where` with role
+  kept/made/held/found, sources with exact quotes); `validate`, `claims`, `index`; `--file` checks one file
+  (used by the research rounds), `--check` writes `data/things_check.json`.
+- Research by four agents in parallel (food + customs, writing + law, music + media, games + objects), each
+  validating with `--file` until every quote was found. Abbots Bromley Horn Dance was in both customs and music,
+  kept in customs. 113 entries: food 13, writing 17, music 13, law 16, games 14, customs 14, objects 14, media 12;
+  74 kept, 10 corrected (haggis's earliest recipes are English, Bushmills' 1608 licence is not the company's
+  start, the Trinity College harp is not Brian Boru's, the Lanark Silver Bell is c. 1608-17 not 1160, Up Helly Aa
+  is Victorian...), 29 open. Full check: 332 of 332 quotes found. Spot-checked six claims against their quotes.
+- Page /things (`app/templates/things.html`, `app/static/things.js`, styles in pages.css): theme chips, search,
+  nation, by category or oldest first, map fitted to the entries shown (click a place name to find it), sources
+  with quotes and check results; `/api/things`; nav "Oldest things"; hosted copy `data/things.json`; Help section.
+- Tests 389 OK (new `test_oldest_things`); ui_check `things`, `things_search` and neighbours 5/5 (port 5079); light
+  and dark screenshots checked.

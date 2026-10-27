@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Oldest things · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page things-page">
+  <h1>Oldest things</h1>
+  <p class="prose">The oldest things of the isles that are not buildings or places: recipes and cookery books,
+    manuscripts and letters, songs and instruments, laws and maps, games and the rules of sports, customs still kept,
+    everyday objects and the first photographs. Each claim is researched with its sources and the exact words they
+    use, checked by script; many "oldest" claims are disputed, and each entry says how well its claim stands.</p>
+  <div class="pron-chips" id="th_chips" aria-label="Theme"></div>
+  <div class="filter-row">
+    <input id="th_q" type="search" aria-label="Search the oldest things" placeholder="Search (e.g. recipe, harp, Magna Carta, Dublin)…">
+    <select id="th_nation" aria-label="Nation"><option value="">All nations</option><option>England</option><option>Scotland</option>
+      <option>Wales</option><option>Northern Ireland</option><option>Republic of Ireland</option>
+      <option>Isle of Man</option><option>Jersey</option><option>Guernsey</option><option>British Isles</option></select>
+    <select id="th_sort" aria-label="Order"><option value="cat">By category</option><option value="year">Oldest first</option></select>
+    <span id="th_count" class="hint" aria-live="polite"></span>
+  </div>
+  <div class="stories-layout">
+    <div id="th_list" class="th-list"></div>
+    <div id="th_map" class="stories-map"></div>
+  </div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='things.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,601 @@
+{
+ "about": "Oldest songs and written music, instruments, hymns, carols and anthems, recordings and performances of the British Isles, each with quoted sources; researched 2026-10-27.",
+ "entries": [
+  {
+   "category": "Oldest song or written music",
+   "name": "Sumer is icumen in",
+   "year": 1261,
+   "age_text": "mid-13th century; the manuscript copied 1261-1264",
+   "claim": "the oldest known musical composition in six-part polyphony: a round in Middle English",
+   "evidence": "The round survives in British Library Harley MS 978, a miscellany from Reading Abbey (or its cell at Leominster) copied in the early 1260s. It is the oldest known piece written for six parts (four voices in canon over a two-part pes). Its composer is unknown; W. de Wycombe and John of Fornsete are suggestions, not established.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "Sumer is icumen in",
+   "qid": "Q1190737",
+   "sources": [
+    {
+     "title": "Sumer is icumen in",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sumer_is_icumen_in",
+     "locator": "lead",
+     "quote": "This rota is the oldest known musical composition featuring six-part polyphony."
+    },
+    {
+     "title": "Sumer is icumen in",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Sumer_is_icumen_in",
+     "locator": "lead",
+     "quote": "The manuscript in which it is preserved was copied between 1261 and 1264."
+    },
+    {
+     "title": "GB-Lbl Harley 978",
+     "author": "Digital Image Archive of Medieval Music (DIAMM)",
+     "kind": "listing",
+     "url": "https://www.diamm.ac.uk/sources/434",
+     "locator": "source description",
+     "quote": "The rota is a canon in up to four parts over a two-part Pes."
+    },
+    {
+     "title": "Harley 978: 'Sumer is icumen in' and music at Reading Abbey",
+     "author": "Reading Museum",
+     "kind": "secondary",
+     "url": "https://www.readingmuseum.org.uk/node/16041",
+     "locator": "online exhibition",
+     "quote": "Harley 978 is most famous for the presence of the round or canon"
+    }
+   ]
+  },
+  {
+   "category": "Oldest song or written music",
+   "name": "Winchester Troper",
+   "year": 1020,
+   "age_text": "11th century; the core of Corpus 473 probably copied in the 1020s-1030s",
+   "claim": "the largest surviving collection of 11th-century polyphony, among the oldest written part-music in Europe",
+   "evidence": "Two Winchester manuscripts make up the Troper; only Cambridge, Corpus Christi College MS 473 has polyphony, 174 two-voice organa written apart from their chants. Its dating has moved from about 1000 to the 1020s-1030s. The neumes give no exact pitches, so modern performances are reconstructions.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Parker Library, Corpus Christi College, Cambridge",
+    "role": "kept",
+    "lat": 52.2031,
+    "lon": 0.118
+   },
+   "wikipedia_title": "Winchester Troper",
+   "qid": "Q1164089",
+   "sources": [
+    {
+     "title": "Winchester Troper",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Winchester_Troper",
+     "locator": "lead",
+     "quote": "Corpus 473 contains the most significant and largest surviving collection of eleventh-century organum"
+    },
+    {
+     "title": "Winchester Troper",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Winchester_Troper",
+     "locator": "Dating",
+     "quote": "The core repertory of Corpus 473 was likely copied in the 1020s-1030s."
+    },
+    {
+     "title": "The Winchester Troper: facsimile edition and introduction by Susan Rankin (publisher's description)",
+     "author": "OMI / Stainer & Bell",
+     "kind": "secondary",
+     "url": "https://omifacsimiles.com/brochures/winchester.html",
+     "locator": "description",
+     "quote": "a series of 174 organa for two voices, representing a musical practice not recorded elsewhere in Europe before the 13th century"
+    }
+   ]
+  },
+  {
+   "category": "Oldest song or written music",
+   "name": "Robert ap Huw manuscript",
+   "year": 1340,
+   "age_text": "copied c. 1613; the pieces date from between 1340 and 1500",
+   "claim": "the oldest written Welsh music, and claimed to be the oldest notated harp music in Europe",
+   "evidence": "Robert ap Huw of Anglesey copied the music around 1613 in a tablature of his own tradition, from the lost manuscript of the harper William Penllyn. The pieces of cerdd dant it holds are dated between about 1340 and 1500; the title's claim that its rules were settled under Gruffudd ap Cynan about 1100 is not accepted as fact. The 'oldest notated harp music in Europe' claim comes from a Welsh music centre, not a survey.",
+   "verdict": "kept",
+   "nation": "Wales",
+   "where": {
+    "name": "British Library, London",
+    "role": "kept",
+    "lat": 51.5294,
+    "lon": -0.1269
+   },
+   "wikipedia_title": "Robert ap Huw",
+   "qid": "Q3401572",
+   "sources": [
+    {
+     "title": "Robert ap Huw",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_ap_Huw",
+     "locator": "The Robert ap Huw Manuscript",
+     "quote": "The compositions all date from between 1340 and 1500"
+    },
+    {
+     "title": "Robert ap Huw",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_ap_Huw",
+     "locator": "The Robert ap Huw Manuscript",
+     "quote": "Around 1613, Robert ap Huw compiled a retrospective manuscript of harp music, the only reliable source of cerdd dant to survive."
+    },
+    {
+     "title": "Mysterious musical artefacts",
+     "author": "Tŷ Cerdd",
+     "kind": "secondary",
+     "url": "https://www.tycerdd.org/welsh-music-collection/mysterious-musical-artefacts",
+     "locator": "article",
+     "quote": "it's the oldest written Welsh music of any kind that we have, and is the oldest notated harp music in Europe"
+    },
+    {
+     "title": "Add MS 14905",
+     "author": "British Library Archives and Manuscripts Catalogue",
+     "kind": "listing",
+     "url": "https://searcharchives.bl.uk/catalog/040-002086588",
+     "locator": "Scope & Content",
+     "quote": "transcribed by Robert ap Huw, of Bodwigan, Anglesea; temp. Car. I., from the original, by William Penllyn."
+    }
+   ]
+  },
+  {
+   "category": "Oldest musical instrument",
+   "name": "Wicklow Pipes",
+   "year": -2170,
+   "age_text": "radiocarbon dated about 2100 BC (4170 ± 30 BP)",
+   "claim": "the oldest known wooden pipes in the world, found in Ireland",
+   "evidence": "Six yew tubes were found in 2003 in a wood-lined trough during a rescue excavation at Charlesland, Co. Wicklow, and dated by radiocarbon to the end of the Stone Age or start of the Bronze Age. They are taken to be a set of pipes, but whether they were played as musical instruments is an interpretation of the find. Bone flutes found elsewhere in Europe are far older; the claim is for wooden pipes.",
+   "verdict": "open",
+   "nation": "Republic of Ireland",
+   "where": {
+    "name": "Charlesland, Greystones, County Wicklow",
+    "role": "found",
+    "lat": 53.144,
+    "lon": -6.072
+   },
+   "wikipedia_title": "Prehistoric music",
+   "sources": [
+    {
+     "title": "Prehistoric music",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prehistoric_music",
+     "locator": "Ireland",
+     "quote": "The oldest known wooden pipes were discovered in Wicklow, Ireland, in the winter of 2003"
+    },
+    {
+     "title": "Prehistoric music",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Prehistoric_music",
+     "locator": "Ireland",
+     "quote": "A wood-lined pit contained a group of six flutes made from yew wood"
+    },
+    {
+     "title": "Trumpets, Horns & Wicklow Pipes",
+     "author": "Ancient Music Ireland",
+     "kind": "secondary",
+     "url": "https://ancientmusicireland.com/original-instruments/original-instruments-bronze-age",
+     "locator": "The Wicklow Pipes",
+     "quote": "placed them at the transition from the Stone Age into the Early Bronze Age"
+    }
+   ]
+  },
+  {
+   "category": "Oldest musical instrument",
+   "name": "Queen Mary Harp",
+   "year": 1300,
+   "age_text": "frame radiocarbon dated to the 14th or early 15th century (cal AD 1302-1413)",
+   "claim": "the oldest dated surviving European harp",
+   "evidence": "This Gaelic clarsach from the West Highlands was long dated to the 15th century by its carving; radiocarbon dating of all three frame timbers, funded by the Society of Antiquaries of Scotland, put them in the 14th or early 15th century. No other early clarsach has been dated by analysis, so the Lamont Harp (also in Edinburgh) and the Trinity College harp in Dublin may be as old. The story that Mary, Queen of Scots gave it away in 1563 is family tradition.",
+   "verdict": "kept",
+   "nation": "Scotland",
+   "where": {
+    "name": "National Museum of Scotland, Edinburgh",
+    "role": "kept",
+    "lat": 55.9469,
+    "lon": -3.19
+   },
+   "wikipedia_title": "Queen Mary Harp",
+   "qid": "Q7270459",
+   "sources": [
+    {
+     "title": "Radiocarbon Dating the Queen Mary Harp",
+     "author": "Society of Antiquaries of Scotland",
+     "kind": "secondary",
+     "url": "https://www.socantscot.org/?p=16335",
+     "locator": "Society-funded research",
+     "quote": "the radiocarbon dating reveals that the Queen Mary is the oldest dated extant European harp"
+    },
+    {
+     "title": "Radiocarbon Dating the Queen Mary Harp",
+     "author": "Society of Antiquaries of Scotland",
+     "kind": "secondary",
+     "url": "https://www.socantscot.org/?p=16335",
+     "locator": "Society-funded research",
+     "quote": "No other surviving historical clarsach has been analytically dated"
+    },
+    {
+     "title": "Queen Mary Harp",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Queen_Mary_Harp",
+     "locator": "lead",
+     "quote": "It is one of the three oldest surviving Gaelic harps, the others being the Lamont Harp and the Trinity College Harp."
+    }
+   ]
+  },
+  {
+   "category": "Oldest musical instrument",
+   "name": "Trinity College harp (Brian Boru harp)",
+   "year": 1350,
+   "age_text": "14th or 15th century",
+   "claim": "the oldest surviving Irish harp; it did not belong to Brian Boru",
+   "evidence": "The harp is one of the three surviving medieval Gaelic harps, with the Queen Mary and Lamont harps in Edinburgh. Its link to Brian Boru (d. 1014), published in the 18th century, was dismissed by George Petrie in 1840 as a forgery, and Trinity's library calls the association mistaken. It has not been dated by radiocarbon; dates on style range from the 14th to the 15th century.",
+   "verdict": "corrected",
+   "nation": "Republic of Ireland",
+   "where": {
+    "name": "Long Room, Old Library, Trinity College Dublin",
+    "role": "kept",
+    "lat": 53.3439,
+    "lon": -6.2568
+   },
+   "wikipedia_title": "Trinity College harp",
+   "qid": "Q3127686",
+   "sources": [
+    {
+     "title": "Historical objects",
+     "author": "The Library of Trinity College Dublin",
+     "kind": "listing",
+     "url": "https://www.tcd.ie/library/research-collections/subject-strengths/historical-objects.php",
+     "locator": "Historical objects",
+     "quote": "the oldest surviving Irish harp, mistakenly associated with Brian Boru (d.1014) but probably dating from the later Middle Ages"
+    },
+    {
+     "title": "Trinity College harp",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_College_harp",
+     "locator": "lead",
+     "quote": "It is dated to the 14th or 15th century and, along with the Queen Mary Harp and the Lamont Harp, is the oldest of three surviving medieval harps from the region."
+    },
+    {
+     "title": "Trinity College harp",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Trinity_College_harp",
+     "locator": "History",
+     "quote": "a clumsy forgery, which will not bear for a moment the test of critical antiquarian examination"
+    },
+    {
+     "title": "The 'Brian Boru' harp",
+     "author": "History Ireland",
+     "kind": "secondary",
+     "url": "https://historyireland.com/?p=19600",
+     "locator": "article",
+     "quote": "it is the oldest harp in Ireland and in 1922 was adopted as the official symbol of the Irish government"
+    }
+   ]
+  },
+  {
+   "category": "Oldest hymn, carol or anthem",
+   "name": "Hymn to St Magnus (Nobilis, humilis)",
+   "year": 1200,
+   "age_text": "12th or 13th century",
+   "claim": "the oldest surviving Scottish choral music, a two-part hymn from Orkney",
+   "evidence": "The hymn honours St Magnus, Earl of Orkney (killed about 1117), and survives only in a manuscript at Uppsala University in Sweden. It is sung in two parts moving mostly in parallel thirds. Its date is given as the 12th or the 13th century, and its 'oldest Scottish' standing rests on reviews and summaries rather than a published survey.",
+   "verdict": "open",
+   "nation": "Scotland",
+   "where": {
+    "name": "St Magnus Cathedral, Kirkwall",
+    "role": "made",
+    "lat": 58.9814,
+    "lon": -2.9599
+   },
+   "sources": [
+    {
+     "title": "Echoes and Traces (review)",
+     "author": "The Wee Review",
+     "kind": "secondary",
+     "url": "https://theweereview.com/review/echoes-and-traces/",
+     "locator": "review",
+     "quote": "the oldest recorded Scottish choral work, which is dedicated to Orkney's St Magnus"
+    },
+    {
+     "title": "Norse Music: Vocal",
+     "author": "Dark Ages Re-Creation Company",
+     "kind": "secondary",
+     "url": "https://darkcompany.ca/articles/NorseMusicAVocal.php",
+     "locator": "article",
+     "quote": "The earliest complete melody, believed to have been written in the Orkneys during the thirteenth century, is Nobilis Humilis"
+    },
+    {
+     "title": "Magnus Erlendsson, Earl of Orkney",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Magnus_Erlendsson,_Earl_of_Orkney",
+     "locator": "Legacy",
+     "quote": "based on a 12th-century theme existing in Uppsala University, Sweden"
+    }
+   ]
+  },
+  {
+   "category": "Oldest hymn, carol or anthem",
+   "name": "Wexford Carol",
+   "year": 1400,
+   "age_text": "15th or 16th century on its style; sometimes said to be 12th century",
+   "claim": "said to be Ireland's oldest known Christmas carol; its age is unsettled",
+   "evidence": "The carol from Enniscorthy became known after the organist William Grattan Flood took it down from a local singer and had it printed in The Oxford Book of Carols (1928). A 12th-century origin is repeated widely, but its music and words point to the 15th or 16th century, and some editors think the text is English in origin. No early manuscript is known.",
+   "verdict": "open",
+   "nation": "Republic of Ireland",
+   "where": {
+    "name": "Enniscorthy, County Wexford",
+    "role": "made",
+    "lat": 52.5021,
+    "lon": -6.5659
+   },
+   "wikipedia_title": "Wexford Carol",
+   "qid": "Q4019212",
+   "sources": [
+    {
+     "title": "Wexford Carol",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wexford_Carol",
+     "locator": "Grattan Flood transcription",
+     "quote": "while it is occasionally claimed to be from the early Middle Ages, it likely was composed in the 15th or 16th century based on its musical and lyrical style"
+    },
+    {
+     "title": "The Wexford Carol",
+     "author": "America Magazine",
+     "kind": "secondary",
+     "url": "https://www.americamagazine.org/arts-culture/2023/11/16/wexford-carol-christmas-hark-246500",
+     "locator": "article",
+     "quote": "Scholars quibble over its origins; some say as early as the 12th century, others put it as late as the 16th."
+    },
+    {
+     "title": "The Wexford Carol and mystery",
+     "author": "Patrick Comerford",
+     "kind": "secondary",
+     "url": "https://www.patrickcomerford.com/2023/12/the-wexford-carol-and-mystery.html",
+     "locator": "blog post, 17 December 2023",
+     "quote": "It is one of the oldest Irish carols and is also one of the oldest surviving Christmas carols in the European tradition."
+    }
+   ]
+  },
+  {
+   "category": "Oldest hymn, carol or anthem",
+   "name": "God Save the King",
+   "year": 1744,
+   "age_text": "tune first printed 1744; words printed and first sung in public in 1745",
+   "claim": "the British national anthem, first printed in 1744 (the tune) and 1745 (the words)",
+   "evidence": "The often-quoted date of 1745 is when the song was sung at the London theatres during the Jacobite rising and printed in The Gentleman's Magazine; a version for two voices had already appeared in Thesaurus Musicus in 1744. Words and tune are anonymous, and claims for older authors (John Bull, Henry Carey and others) are unproven.",
+   "verdict": "corrected",
+   "nation": "England",
+   "wikipedia_title": "God Save the King",
+   "qid": "Q40807",
+   "sources": [
+    {
+     "title": "God Save the King",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/God_Save_the_King",
+     "locator": "History",
+     "quote": "The first published version that resembles the present song appeared in 1744, with no title but the heading \"For two voices\""
+    },
+    {
+     "title": "God Save the King",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/God_Save_the_King",
+     "locator": "History",
+     "quote": "In 1745, The Gentleman's Magazine published \"God save our lord the king: A new song set for two voices\""
+    },
+    {
+     "title": "National Anthem",
+     "author": "The Royal Household",
+     "kind": "reference",
+     "url": "https://www.royal.uk/national-anthem",
+     "locator": "National Anthem",
+     "quote": "The words and tune are anonymous, and may date back to the seventeenth century."
+    },
+    {
+     "title": "National Anthem",
+     "author": "The Royal Household",
+     "kind": "reference",
+     "url": "https://www.royal.uk/national-anthem",
+     "locator": "National Anthem",
+     "quote": "was a patriotic song first publicly performed in London in 1745"
+    }
+   ]
+  },
+  {
+   "category": "Oldest recording",
+   "name": "Handel Festival recording of Israel in Egypt",
+   "year": 1888,
+   "age_text": "29 June 1888",
+   "claim": "the earliest surviving deliberate recording of music, and the oldest surviving recording made in Britain",
+   "evidence": "Colonel George Gouraud, Edison's agent in London, recorded a chorus of some 4,000 voices at the Crystal Palace Handel Festival on wax cylinders from about 100 yards away; the cylinders are in the Thomas Edison National Historical Park. Until 2009 it was thought the oldest recorded voice; the 1860 phonautograph of 'Au clair de la lune' is older but was not made to be played back. Recordings made in the 1870s on tinfoil are lost.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "Crystal Palace Park, London",
+    "role": "made",
+    "lat": 51.4203,
+    "lon": -0.0705
+   },
+   "wikipedia_title": "Israel in Egypt",
+   "qid": "Q1674646",
+   "sources": [
+    {
+     "title": "Israel in Egypt",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Israel_in_Egypt",
+     "locator": "Wax cylinder recording of excerpt",
+     "quote": "For a long time, the earliest known recording of music known to still exist was an excerpt from this oratorio conducted by August Manns."
+    },
+    {
+     "title": "Very Early Recorded Sound",
+     "author": "Thomas Edison National Historical Park (US National Park Service)",
+     "kind": "listing",
+     "url": "https://home.nps.gov/edis/learn/photosmultimedia/very-early-recorded-sound.htm",
+     "locator": "Handel Festival: Israel In Egypt - excerpt",
+     "quote": "Location: the Crystal Palace, London, England Recording date: June 29, 1888."
+    },
+    {
+     "title": "Excerpt from Handel's Israel in Egypt (1888)",
+     "author": "The Public Domain Review",
+     "kind": "secondary",
+     "url": "https://publicdomainreview.org/collection/excerpt-from-handel-s-israel-in-egypt-1888/",
+     "locator": "collection note",
+     "quote": "this haunting excerpt from Handel's oratorio recorded in 1888 was the oldest known recorded human voice in existence"
+    },
+    {
+     "title": "It was 123 years ago today. The first ever UK recordings.",
+     "author": "Sound of the Hound",
+     "kind": "secondary",
+     "url": "https://soundofthehound.com/2011/06/29/it-was-123-years-ago-today-the-first-ever-uk-recordings/",
+     "locator": "post, 29 June 2011",
+     "quote": "These are the earliest deliberate recordings of music known to exist (earlier recordings from the 1870s are considered lost)."
+    }
+   ]
+  },
+  {
+   "category": "Oldest recording",
+   "name": "Sullivan's The Lost Chord on the phonograph",
+   "year": 1888,
+   "age_text": "c. August 1888 (played to the press on 14 August 1888)",
+   "claim": "one of the first recordings of music ever made, and among the oldest recordings made in Britain",
+   "evidence": "Gouraud played a cornet and piano recording of Arthur Sullivan's song 'The Lost Chord' when he introduced Edison's improved phonograph to the London press on 14 August 1888; the cylinder is kept by the Edison National Historical Park. On 5 October 1888 Sullivan himself recorded a message to Edison at Gouraud's house, 'Little Menlo', which also survives. The Handel Festival cylinders of June 1888 are older.",
+   "verdict": "kept",
+   "nation": "England",
+   "wikipedia_title": "The Lost Chord",
+   "qid": "Q3521660",
+   "sources": [
+    {
+     "title": "The Lost Chord",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/The_Lost_Chord",
+     "locator": "1888 recording for Edison",
+     "quote": "one of the first recordings of music ever made. A series of parties followed"
+    },
+    {
+     "title": "Very Early Recorded Sound",
+     "author": "Thomas Edison National Historical Park (US National Park Service)",
+     "kind": "listing",
+     "url": "https://home.nps.gov/edis/learn/photosmultimedia/very-early-recorded-sound.htm",
+     "locator": "The Lost Chord",
+     "quote": "Recording date: c. August 1888 Recorded by: Col. George Gouraud Location: London, England"
+    },
+    {
+     "title": "George Edward Gouraud",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/George_Edward_Gouraud",
+     "locator": "The Edison phonograph",
+     "quote": "on 14 August 1888, Gouraud introduced the phonograph to London in a press conference"
+    }
+   ]
+  },
+  {
+   "category": "Oldest dance or performance",
+   "name": "York Mystery Plays",
+   "year": 1376,
+   "age_text": "recorded in 1376; manuscript c. 1463-1477",
+   "claim": "one of the four nearly complete English mystery play cycles, recorded in York from 1376 and played again today",
+   "evidence": "The 48 pageants were staged by the York craft guilds on wagons at Corpus Christi from the 14th century until they were suppressed in 1569; the first record is from 1376, when the wagons were already in use. Their manuscript of about 1463-1477 survives in the British Library. Chester, Towneley (Wakefield) and N-Town cycles are of similar age, and Coventry's pageants are recorded from 1392.",
+   "verdict": "kept",
+   "nation": "England",
+   "where": {
+    "name": "York",
+    "role": "held",
+    "lat": 53.96,
+    "lon": -1.08
+   },
+   "wikipedia_title": "York Mystery Plays",
+   "qid": "Q2516416",
+   "sources": [
+    {
+     "title": "York Mystery Plays",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Mystery_Plays",
+     "locator": "Plays",
+     "quote": "they were recorded as celebrating the festival of Corpus Christi in York in 1376, by which time the use of pageant wagons had already been established"
+    },
+    {
+     "title": "York Mystery Plays",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/York_Mystery_Plays",
+     "locator": "lead",
+     "quote": "The plays are one of four virtually complete surviving English mystery play cycles"
+    },
+    {
+     "title": "History",
+     "author": "York Mystery Plays Supporters Trust",
+     "kind": "secondary",
+     "url": "https://www.yorkmysteryplays.co.uk/history",
+     "locator": "History",
+     "quote": "After a run of nearly 200 years, the plays were confiscated during the Reformation with the final medieval production in 1569."
+    }
+   ]
+  },
+  {
+   "category": "Oldest dance or performance",
+   "name": "The Pride of Life",
+   "year": 1343,
+   "age_text": "written on an account roll of 1343-1344; usually dated to the later 14th century",
+   "claim": "the earliest known morality play in English, written down in Dublin",
+   "evidence": "The play was copied on the back of an account roll of the Priory of the Holy Trinity (Christ Church), Dublin, for 1343-1344; the roll was destroyed in the Public Record Office fire of 1922, so it is known from an 1891 transcription. The text breaks off mid-line. The play itself may be later than the roll; Hildegard of Bingen's Latin Ordo Virtutum is a far older morality play.",
+   "verdict": "kept",
+   "nation": "Republic of Ireland",
+   "where": {
+    "name": "Christ Church Cathedral, Dublin",
+    "role": "made",
+    "lat": 53.3431,
+    "lon": -6.2714
+   },
+   "wikipedia_title": "Morality play",
+   "sources": [
+    {
+     "title": "Morality play",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Morality_play",
+     "locator": "English morality plays",
+     "quote": "The Pride of Life was the earliest record of a morality play written in the English language"
+    },
+    {
+     "title": "Morality play",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Morality_play",
+     "locator": "English morality plays",
+     "quote": "existed on the back of a parchment account roll from June 30, 1343, to January 5, 1344, from the Priory of the Holy Trinity in Dublin"
+    },
+    {
+     "title": "Morality plays",
+     "author": "Premodernity",
+     "kind": "secondary",
+     "url": "https://premodernity.net/morality-plays",
+     "locator": "Corpus",
+     "quote": "The Pride of Life is the earliest record of a morality play written in the English language"
+    }
+   ]
+  }
+ ]
+}

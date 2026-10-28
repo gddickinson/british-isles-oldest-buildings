@@ -2241,3 +2241,8 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Source `stat_abstract_banknotes_uk` (131); DATA_LICENSE.md row extended; 295 series, 74 events. Tests 437 OK
   (`test_change_banknotes`, 5 new); ui_check change_banknotes (new), change_banks, trades OK; graphs checked in a
   screenshot of /trades?t=banking. Hosted copy not updated.
+
+## 2026-10-28 — Change over time: graph notes folded
+- On /change each graph's note, breaks in definition, the other lines' sources ("Compared with …") and notes are now
+  in a collapsible "Notes" ("Notes and sources" when the graph has more than one line) under the key, like "Table of
+  values"; the graph's own one-line source and trade-story links stay visible (`change_page.js`, `notesOf`).

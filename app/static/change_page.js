@@ -20,6 +20,16 @@
       </tbody></table>`;
   }
 
+  // The graph's note, breaks in definition, the other lines' sources and notes, folded like the table of values
+  function notesOf(s) {
+    const models = modelsOf(s);
+    const parts = [s.note ? `<p class="cc-note">${esc(s.note)}</p>` : "",
+      models.length ? `<p class="cc-src">${models.map((m) => `Compared with ${esc(m.label || m.title)}: ${cite(m.sources)}`).join("<br>")}</p>` : "",
+      s.breaks ? `<p class="cc-note"><b>Breaks in definition</b> (dotted marks): ${s.breaks.map((b) => `${b[0]}: ${esc(b[1])}`).join("; ")}.</p>` : "",
+      ...models.map((m) => m.note ? `<p class="cc-note"><b>${esc(m.label || m.title)}:</b> ${esc(m.note)}</p>` : "")].join("");
+    return parts ? `<details class="ch-fig-notes"><summary>Notes${models.length ? " and sources" : ""}</summary>${parts}</details>` : "";
+  }
+
   function draw() {
     const only = $("#ch_theme").value;
     $("#ch_body").innerHTML = themes.filter((t) => !only || t === only).map((t) => `<section class="ch-theme"><h2>${esc(t)}</h2>
@@ -28,11 +38,8 @@
           <span class="cc-now">${esc(s.unit_long || s.unit || "")}</span></figcaption>
         <div class="cc-plot"></div>
         <div class="cc-src">Source: ${cite(s.sources)}${s.modelled ? " · modelled" : ""}${trades.filter((x) => x.series.includes(s.id))
-          .map((x) => ` · <a href="${tradeUrl(x.id)}">${esc(x.title)} story</a>`).join("")}${modelsOf(s).map((m) =>
-          `<br>Compared with ${esc(m.label || m.title)}: ${cite(m.sources)}`).join("")}</div>
-        ${s.note ? `<p class="cc-note">${esc(s.note)}</p>` : ""}
-        ${s.breaks ? `<p class="cc-note"><b>Breaks in definition</b> (dotted marks): ${s.breaks.map((b) => `${b[0]}: ${esc(b[1])}`).join("; ")}.</p>` : ""}
-        ${modelsOf(s).map((m) => m.note ? `<p class="cc-note"><b>${esc(m.label || m.title)}:</b> ${esc(m.note)}</p>` : "").join("")}
+          .map((x) => ` · <a href="${tradeUrl(x.id)}">${esc(x.title)} story</a>`).join("")}</div>
+        ${notesOf(s)}
         <details><summary>Table of values</summary>${[s, ...modelsOf(s)].map(table).join("")}</details></figure>`).join("")}</div>
       ${eventList(events.filter((e) => e.theme === t))}</section>`).join("");
     document.querySelectorAll(".ch-fig").forEach((f) => {

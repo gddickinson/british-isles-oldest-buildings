@@ -3280,6 +3280,242 @@
      "locator": "p. 126 (Internet Archive cu31924032453502, image n153)"
     }
    ]
+  },
+  {
+   "id": "power_kanefsky1979",
+   "series_like": "power_steam_gb",
+   "region": "Great Britain",
+   "title": "Sources of power (steam, water, wind) in horsepower, 1760-1907, Kanefsky (1979) as summarised by Crafts (2004)",
+   "unit": "horsepower",
+   "kind": "estimate",
+   "citation": "Crafts, N. (2004) Steam as a general purpose technology: a growth accounting perspective. The Economic Journal 114 (495), 338-351, Table 3 'Sources of Power, 1760-1907 (Horsepower)', p. 342; source given: Kanefsky, J. W. (1979) The Diffusion of Power Technology in British Industry, 1760-1870. PhD thesis, University of Exeter, p. 338.",
+   "short": "Kanefsky 1979 via Crafts 2004",
+   "url": "https://doi.org/10.1111/j.1468-0297.2003.00200.x",
+   "licence": null,
+   "open_access": false,
+   "note": "Not including internal combustion engines. The working paper version (LSE Working Paper 75/03, May 2003, p. 17) prints 160,000 for steam and for water in 1830, which with wind's 20,000 do not make its printed total of 350,000; the journal's 165,000 do, and its text says 'only 165,000 steam horsepower had been installed'.",
+   "points": [
+    {
+     "year": 1760,
+     "kind": "steam",
+     "value": 5000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "5,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Steam 5,000 35,000 165,000 2,060,000 9,659,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1800,
+     "kind": "steam",
+     "value": 35000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "35,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Steam 5,000 35,000 165,000 2,060,000 9,659,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1830,
+     "kind": "steam",
+     "value": 165000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "165,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Steam 5,000 35,000 165,000 2,060,000 9,659,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1870,
+     "kind": "steam",
+     "value": 2060000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "2,060,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Steam 5,000 35,000 165,000 2,060,000 9,659,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1907,
+     "kind": "steam",
+     "value": 9659000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "9,659,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Steam 5,000 35,000 165,000 2,060,000 9,659,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1760,
+     "kind": "water",
+     "value": 70000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "70,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Water 70,000 120,000 165,000 230,000 178,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1800,
+     "kind": "water",
+     "value": 120000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "120,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Water 70,000 120,000 165,000 230,000 178,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1830,
+     "kind": "water",
+     "value": 165000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "165,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Water 70,000 120,000 165,000 230,000 178,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1870,
+     "kind": "water",
+     "value": 230000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "230,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Water 70,000 120,000 165,000 230,000 178,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1907,
+     "kind": "water",
+     "value": 178000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "178,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Water 70,000 120,000 165,000 230,000 178,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1760,
+     "kind": "wind",
+     "value": 10000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "10,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Wind 10,000 15,000 20,000 10,000 5,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1800,
+     "kind": "wind",
+     "value": 15000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "15,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Wind 10,000 15,000 20,000 10,000 5,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1830,
+     "kind": "wind",
+     "value": 20000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "20,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Wind 10,000 15,000 20,000 10,000 5,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1870,
+     "kind": "wind",
+     "value": 10000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "10,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Wind 10,000 15,000 20,000 10,000 5,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1907,
+     "kind": "wind",
+     "value": 5000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "5,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Wind 10,000 15,000 20,000 10,000 5,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1760,
+     "kind": "total",
+     "value": 85000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "85,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Total 85,000 170,000 350,000 2,300,000 9,842,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1800,
+     "kind": "total",
+     "value": 170000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "170,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Total 85,000 170,000 350,000 2,300,000 9,842,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1830,
+     "kind": "total",
+     "value": 350000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "350,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Total 85,000 170,000 350,000 2,300,000 9,842,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1870,
+     "kind": "total",
+     "value": 2300000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "2,300,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Total 85,000 170,000 350,000 2,300,000 9,842,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    },
+    {
+     "year": 1907,
+     "kind": "total",
+     "value": 9842000,
+     "low": null,
+     "high": null,
+     "midpoint": false,
+     "printed": "9,842,000",
+     "quote": "Sources of Power, 1760-1907 (Horsepower) ... 1760 1800 1830 1870 1907 ... Total 85,000 170,000 350,000 2,300,000 9,842,000",
+     "locator": "Table 3, p. 342 (source given: Kanefsky (1979a, p. 338))"
+    }
+   ]
   }
  ],
  "notes": "POPULATION, ENGLAND. Medieval estimates split into two camps. 'Low': Russell (1948) peak c.3.7m; Campbell 4.0m in 1290 and 4.25-4.5m in 1315; Overton & Campbell 4.0-4.5m; Broadberry et al. 4.75m (1290) and 4.81m (1348), which sits between the camps. 'High': Postan c.6m; Smith 'over 6 million' in 1300 (6-6.5m per Clark); Clark's wage-based model peaks at 5.98m in the 1310s; Wrigley 5.75m for England AND Wales c.1300. The 1377 poll-tax benchmark depends on the assumed share of children and the evasion rate: 2.23m (Russell), 2.49m (Broadberry 'best'), 3.22m (Postan). For 1086 the multiplier and omission rate matter: 1.11m (Russell) to 1.45-1.60m (Darby) to 1.87m (Harvey-style); Broadberry's back-projection gives 1.71m. For 1541-1801 Wrigley et al. (1997) is the standard reconstruction (England without Monmouthshire; it is about 7% below England and Wales). Wrigley's 1801 value for England is 8.66m; the 1801 census for England and Wales is 8.89m, so the series join is not exact. The 1541 value 2.83m is shared by Broadberry Table 6 and Wrigley. Clark's 1540s+ decadal figures (marked a) are Wrigley's and were left out of the Clark model.\nPOPULATION, IRELAND. All Irish figures are for the whole island. The existing pop_ie series covers the 26 counties, so these belong in a new island series or should be plotted with a note. Connell (1950) is high (2.8m in 1712, 4.8m in 1791). Daultrey, Dickson & O Grada (1981/82) are lower (2.0-2.3m in 1712, 4.4m in 1791) and became standard. Clarkson is lower still for 1687 (1.7m). Parker (2017, History Ireland, a magazine article by an independent researcher) argues for higher household sizes (4.62m in 1791, 2.4-2.9m in 1700-25). The 1821 census (6.8m) was revised to 7.2m by Lee. Medieval: Campbell 1.25-1.5m c.1290, against 0.7-1.4m (Gillespie & Connolly) and 0.72-1.0m (Clarke, Glasscock). Cullen's 1.4m for 1600 is thought implausibly high by Canny and by Mokyr & O Grada. The 1641 peak of 2.1m is cited by Campbell from Kennedy & Clarkson. Petty's 1672 figure of 1.1m is considered an underestimate.\nPOPULATION, SCOTLAND AND WALES. No open source with a 1690s Scottish estimate (hearth or poll tax) was found. The only numbers are: c.1290 0.75m (Campbell; 0.5-1.0m range of historians; around 1.0m favoured by Scottish historians), about 1.1m in 1707, 1.3m in 1751/5 and 1,265,380 in 1755 (Webster, NRS). Wales: 0.25m (Campbell) or 0.30m (Williams-Jones) c.1290, 0.6m in 1751/5.\nCOAL. Flinn's British output benchmarks, 1700 to 1830: 3.03, 5.31, 8.99 (1775), 15.29 and 30.99 Mt (the last is Church's 1830 figure). These come from the NIC/Fouquet dataset (OGL), whose values look like Flinn's long tons converted to tonnes. Before 1700, Nef (1932) gives 0.21m tons in the 1550s and 2.98m in the 1680s/1690. Hatcher (1993) revised Nef. The only open copy of Hatcher's numbers found was Munro's teaching slide (0.227 Mt in 1560, 2.64 Mt in 1700, labelled 'English'), so treat that one as weak. No open source was found for Pollard's (1980) higher 1750-1850 estimates or for Hatcher's own tables. Note that Nef's 1690 figure (2.98m tons) is almost the same as Flinn's 1700 figure.\nTOWNS. Definitions differ hugely, and the definition matters more than the scholar: 1300 ranges from 3-4% (towns of 10,000+: Clark, Malanima) to 9% (towns of 2,000+) and 15-20% (all towns: Campbell, Dyer). c.1700 ranges from 13% (10,000+, Malanima) to 30-33% (Glennie & Whyte) and 40% (Langton, wide definition). Plot the threshold with each model. HYDE 3.5 (CC BY-NC) is a coarse model: flat at 2% for the UK before 1700, and 0% for Ireland before 1700. It is far below every scholarly estimate and its NC licence may not suit the project. No open numbers were found for Wrigley's 1520-1801 series (5,000+ threshold) or for Law's 1801-1911 census-based series (E&W 33.8% in 1801, 78.9% in 1911 per a search snippet, unverified). Scotland and Ireland after c.1700 are not covered, apart from HYDE.\nWOODLAND. England's 1086 figure of about 15% (Rackham) agrees with the existing Forest Research value, so it adds no competing figure. Ireland: McCracken's 'at least one eighth' (12.5%) in 1600 is contested, and Teagasc notes that pollen evidence does not support it. Rackham's Civil Survey figure of 2.1% (1654-6) and the 'less than 2% by 1700' (Nelson & Walsh) imply that either the decline was very fast or McCracken was too high. Ireland 1920 1% and 1951 1.8% refer to the 26 counties. No open national figures were found for Scotland or Wales before 1900 beyond what Forest Research already has.\nMARKETS. Letters' Gazetteer gives cumulative counts of markets and fairs recorded in England by 1100, 1200, 1300, 1400 and 1516. These are not markets operating at those dates. Per-decade grants 1200-1516 are published only as a chart (Fig. 5), and Britnell's (1981) per-decade table is not open.\nLICENCES. Most points are individual published figures cited as facts with a citation (working papers, the CUHB excerpt, the History Ireland article, Munro's teaching material). The open-licence datasets are NIC/Fouquet (OGL v3.0, as recorded by OWID; the NIC page is now only on the Wayback Machine) and HYDE 3.5 (CC BY-NC 4.0). The UCD repository copy of Mokyr & O Grada says 'Some rights reserved' without naming a licence; its Table 1 was read from a scanned page image.\n"

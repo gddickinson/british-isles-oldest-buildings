@@ -5065,5 +5065,62 @@
   "file": "fleet_500gt_container_uk.csv",
   "default": false,
   "hidden": true
+ },
+ {
+  "id": "power_steam_gb",
+  "theme": "Industry and energy",
+  "title": "Power in British industry, 1760-1907",
+  "region": "Great Britain",
+  "unit": "hp",
+  "unit_long": "horsepower (estimates)",
+  "label": "steam",
+  "sources": [
+   "est_power_kanefsky1979",
+   "nuvolari_2011_steam"
+  ],
+  "file": "power_steam_gb.csv",
+  "default": false,
+  "models": [
+   "power_water_gb",
+   "power_wind_gb"
+  ],
+  "note": "Horsepower of the engines, water wheels and windmills at work in Great Britain, as reckoned by John Kanefsky (The Diffusion of Power Technology in British Industry, 1760-1870, Exeter thesis 1979, p. 338) and summarised by Nicholas Crafts (Economic Journal 2004, Table 3; internal combustion engines not included). These are estimates for five years, not counts: the dots are joined only to guide the eye, on a scale of powers of ten. Steam had 5,000 horsepower in 1760 against 70,000 from water, drew level with water in 1830 (165,000 each) and had 9,659,000 in 1907, 98% of the total; water power grew until 1870 (230,000) and wind's was never more than 20,000. Crafts: \"it was only in 1830 that steam reached parity with water as a source of power in the economy at which point only 165,000 steam horsepower had been installed representing about 1.5% of the total capital stock\"; Kanefsky's data are thinnest between the end of Watt's patent in 1800 and the Factory Act returns of 1838, and after 1870. Engines burned less coal as they improved: \"about 30 lb. with the Newcomen engines prior to James Watt, to 12.5 lb. with the Watt engine, 5 lb. with the move to high pressure in the mid 19th century and 2 lb with very high pressure in the early 20th century\" per horsepower an hour. Engines, not horsepower, in the 18th century (Nuvolari, Verspagen and von Tunzelmann 2011, from Kanefsky's updated list): \"From 1710 to 1733, 95 Savery-Newcomen engines were constructed\", \"In the period 1734-1774, instead, 442 engines were built\", and the list holds 2,279 engines erected by 1800, 479 of them Watt's (Jennifer Tann's count from the Boulton and Watt papers is 449). The 2003 working paper of Crafts' article prints 160,000 for steam and for water in 1830, which do not add to its total of 350,000; the journal's 165,000 do.",
+  "style": "estimates",
+  "zero": false,
+  "log": true
+ },
+ {
+  "id": "power_water_gb",
+  "theme": "Industry and energy",
+  "title": "Water power (Kanefsky)",
+  "region": "Great Britain",
+  "unit": "hp",
+  "unit_long": "horsepower (estimates)",
+  "label": "water",
+  "sources": [
+   "est_power_kanefsky1979"
+  ],
+  "file": "power_water_gb.csv",
+  "default": false,
+  "hidden": true,
+  "style": "estimates",
+  "zero": false
+ },
+ {
+  "id": "power_wind_gb",
+  "theme": "Industry and energy",
+  "title": "Wind power (Kanefsky)",
+  "region": "Great Britain",
+  "unit": "hp",
+  "unit_long": "horsepower (estimates)",
+  "label": "wind",
+  "sources": [
+   "est_power_kanefsky1979"
+  ],
+  "file": "power_wind_gb.csv",
+  "default": false,
+  "hidden": true,
+  "style": "estimates",
+  "zero": false
  }
 ]

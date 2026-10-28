@@ -8,8 +8,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 283
-  series, 73 events, 23 map layers, 19 notes, 127 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 286
+  series, 73 events, 23 map layers, 19 notes, 129 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -565,9 +565,17 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       hold the old types (cargo liners under Ro-Ro, tramps under bulk carriers), so only all, tankers and containers are
       drawn. The 1970s gap of the net-ton register line is not joined (different coverage: every ship of 500 gross
       tons and over, 21.2 million in 1961, against 20.5 million of trading vessels).
-- [ ] C5e2b2b2 The rest of C5e: steam power as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011);
-      banks (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual reports
-      2002-, quote figures) and 1916-94 grants.
+- [x] C5e2b2b2a (2026-10-28; C5e2b2b2 split) Steam power (new `bidb/change_steam.py`): graph "Power in British
+      industry, 1760-1907" (Industry and energy, log axis): Kanefsky's horsepower of steam, water and wind in Great
+      Britain at 1760, 1800, 1830, 1870 and 1907 (thesis p. 338, not open) as printed in Crafts, Economic Journal 2004,
+      Table 3 p. 342, quoted per figure in estimates.json (model `power_kanefsky1979`), drawn as estimate dots; `check`:
+      each year's parts add to the printed total (the 2003 working paper's 160,000 for steam and water in 1830 do not,
+      the journal's 165,000 do). Steam 5,000 hp in 1760, level with water in 1830, 9,659,000 (98%) in 1907; water's
+      peak 230,000 in 1870. Note quotes Nuvolari, Verspagen and von Tunzelmann 2011 (Cliometrica, CC BY-NC): 95
+      engines 1710-1733, 442 in 1734-1774, 2,279 by 1800 (479 Watt's; Tann 449). The NIC/Fouquet energy dataset has no
+      power-by-source table. Nothing after 1907 yet (Census of Production engine horsepower 1907-1935 would continue it).
+- [ ] C5e2b2b2b Banks (Statistical Abstract; country banks quoted from Pressnell).
+- [ ] C5e2b2b2c Patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and
       engines, iron and materials, textiles, transport, communication and computing, science and medicine, farming,

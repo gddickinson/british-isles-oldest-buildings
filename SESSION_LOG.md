@@ -2174,3 +2174,20 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   424 OK (`test_trading_fleet` skips without the downloaded ODS, as on CI; `test_fleet_misreading_caught`); ui_check
   change_shipping (extended), change_trade_joined, change_wages OK; graph checked in a screenshot. Hosted copy not
   updated.
+
+## 2026-10-28 — C5e2b2b2a: steam power, 1760-1907
+- C5e2b2b2 split: C5e2b2b2a (done), C5e2b2b2b (banks), C5e2b2b2c (Irish patents).
+- New `bidb/change_steam.py`: graph "Power in British industry, 1760-1907" (Industry and energy, log axis, estimate
+  dots): Kanefsky's horsepower of steam, water and wind in Great Britain (Exeter thesis 1979, p. 338, not open) as
+  printed in Crafts, "Steam as a general purpose technology", Economic Journal 114 (2004), Table 3 p. 342; the 15
+  figures quoted with their printed rows in estimates.json (model `power_kanefsky1979`). `check`: parts add to the
+  printed totals. The LSE working paper version (75/03, 2003, p. 17) prints 160,000 for steam and water in 1830, which
+  do not add to its 350,000; the journal's 165,000 do (and its text says 165,000), so the journal is used.
+- Steam 5,000 hp in 1760 (water 70,000), 35,000 in 1800, level with water at 165,000 in 1830, 2.06 million in 1870,
+  9.66 million in 1907 (98%); water peaked at 230,000 in 1870, wind at 20,000 in 1830.
+- Note quotes Nuvolari, Verspagen and von Tunzelmann 2011 (Cliometrica 5, CC BY-NC, footnotes 7 and 11): 95 engines
+  1710-1733, 442 in 1734-1774, 2,279 erected by 1800, 479 of them Watt's (Tann: 449); and Crafts on coal per hp-hour
+  (30 lb Newcomen → 2 lb in the early 20th century). The NIC/Fouquet energy dataset (OGL) was checked: no power-by-source
+  table, only energy for power in toe.
+- Sources `est_power_kanefsky1979`, `nuvolari_2011_steam` (129); 286 series. Tests 428 OK (`test_change_steam`, 4 new);
+  ui_check change_steam (new), change_shipping, change_wages OK; graph checked in a screenshot. Hosted copy not updated.

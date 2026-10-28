@@ -2275,3 +2275,31 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 445 OK (`test_type_diagrams`, 7 new); ui_check type_diagram (new), type_page, types, type_chains OK; every
   diagram checked in a screenshot and labels moved where they clipped. Hosted copy not updated.
 - BT6c split: BT6c2 (Commons plans of terraces, cottages, inns; more diagrams once plans have quotes) left open.
+
+## 2026-10-28 — C5e2b2b2b3a: savings banks 1846-1938
+- C5e2b2b2b3 split: a (savings banks, done), b (London Bankers' Clearing House; savings banks after 1938 and by nation).
+- New `bidb/change_savings.py`: the Statistical Abstract's tables of the amount received from, paid to and due to depositors
+  in the trustee savings banks and the Post Office Savings Bank, read from the page images (image `page/n<leaf-1>`): No. 8
+  table 39 p. 61 (1846-60), No. 13 tables 42-43 pp. 100-101, No. 26 tables 49-50 pp. 115-117, No. 41 pp. 195-196 (1879 only),
+  No. 42 tables 80-81 pp. 204-206 (1880-94), No. 46 pp. 220-222 (1894-98), No. 59 tables 91-92 pp. 354-357, No. 70 tables
+  125-126 pp. 184-187, No. 83 tables 193-194 pp. 262-267 (thousands; trustee ordinary and special investment departments)
+  → `savings_banks_abstract_uk.csv` (929 printed figures; nations to 1898, then the United Kingdom only).
+- Method (page images cached as `<cache>/stat_abstract_img/sb_n<edition>_<leaf>.jpg`): tesseract at three scales plus the base page, a row kept only where its nations add to the printed United Kingdom
+  figure; the other rows read from stacked crops of the image. Years printed by one edition only (1846-50, 1861-63,
+  1866-72) also compared with the image by eye. One consistent 3→8 misreading (Post Office paid 1868, nations and total
+  alike) was caught only by the year-to-year balance.
+- Checks (`check`, all pass): nations (two rows do not add up as printed, `KNOWN`: trustee capital 1849, Post Office capital
+  1864 in No. 26); each year's amount due = the year before + receipts + interest - payments, exact for the Post Office
+  1864-1938 and the trustee banks 1877-1938 (to 1876 the trustee banks print no interest: implied 1.8-3.4% a year);
+  overlapping editions equal, receipts compared with interest added; revisions 1860 (No. 8's "approximation") and 1865, and
+  the accounts of 1924-25 (No. 83's lower count), `REVISED`; No. 83's accounts follow from openings, closings and transfers
+  but 1933 (coupon accounts left out). Two digits settled by the sums are marked in the `read` column (1892 Scotland, 1934
+  Post Office accounts closed in bold type), and 1858 England, where No. 8's print looks like 6,408,481 but No. 13 and the
+  total give 6,498,481.
+- Graphs "Savings banks: amount due to depositors, 1846-1938" (trustee banks £31.7 million in 1846, £41.5 million in 1861,
+  £36.4 million in 1866; the Post Office passed them in 1885, £187 million in 1913, £509 million in 1938; trustee special
+  investment departments £96 million in 1938) and "Savings bank accounts open, 1897-1938" (breaks 1909, 1924, 1933), both in
+  the banking trade story. Events "The first trustee savings bank, at Ruthwell" (1810) and "Post Office Savings Bank founded"
+  (1861), quoted from Wikipedia. Source `stat_abstract_savings_uk` (132); DATA_LICENSE.md row extended; 300 series, 76 events.
+- Tests 451 OK (`test_change_savings`, 6 new); ui_check change_savings (new), change_banknotes, trades OK; graphs checked in a
+  screenshot of /trades?t=banking. Hosted copy not updated.

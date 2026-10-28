@@ -8,8 +8,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b; BT6b: plans of real examples on type pages; BT6c1: labelled diagrams of 22 types); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 286
-  series, 73 events, 23 map layers, 19 notes, 129 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 300
+  series, 76 events, 23 map layers, 19 notes, 132 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -595,7 +595,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       banks) and "Country bank notes in England and Wales, 1846-1921" (£7.65 million in 1846, £0.17 million in 1911,
       £2,000 in March 1921, none from June 1921), both in the banking trade story; event "Bank Charter Act and the end of
       country bank notes" (1844-1921). The Treasury's currency notes (1914-1928) are not drawn yet.
-- [ ] C5e2b2b2b3 Savings banks (trustee and Post Office: depositors and amount due) and the London Bankers' Clearing House.
+- [x] C5e2b2b2b3a (2026-10-28; C5e2b2b2b3 split) Savings banks (new `bidb/change_savings.py`): the Statistical Abstract's tables of
+      the amount received from, paid to and due to depositors, read from the page images of Nos. 8, 13, 26, 41 (1879), 42, 46, 59, 70
+      and 83 (`savings_banks_abstract_uk.csv`, 929 printed figures; nations to 1898, the United Kingdom from No. 59; No. 83 in
+      thousands). OCR rows kept only where the nations add to the printed total, the rest read from the image; every year's amount
+      due checked against the year before and the year's receipts, interest and payments (exact to the pound for the Post Office
+      throughout and the trustee banks from 1877, when interest is first printed); overlapping editions equal with interest added
+      to receipts (No. 46's Post Office receipts include it, No. 83 counts the trustee banks' dividends as receipts); two rows whose
+      nations do not add up as printed (`KNOWN`), revisions of 1860 (No. 8's estimate) and 1865 (`REVISED`). Graphs "Savings banks:
+      amount due to depositors, 1846-1938" (trustee banks £31.7 million in 1846, £41.5 million in 1861, £36.4 million in 1866; the
+      Post Office passed them in 1885 and held £187 million in 1913, £509 million in 1938; special investment departments £96 million
+      in 1938) and "Savings bank accounts open, 1897-1938" (breaks at 1909: active accounts only; 1924: No. 83's lower count; 1933:
+      coupon accounts left out), both in the banking trade story; events "The first trustee savings bank, at Ruthwell" (1810) and
+      "Post Office Savings Bank founded" (1861). Nations not drawn (in the CSV to 1898); Government stock held for depositors not drawn.
+- [ ] C5e2b2b2b3b The London Bankers' Clearing House (amounts cleared, in the Statistical Abstract from the 1860s); savings banks after
+      1938 (Annual Abstract, National Savings) and by nation.
 - [ ] C5e2b2b2c Patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and

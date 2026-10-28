@@ -1332,5 +1332,16 @@
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
   "used": "Bank notes in circulation four times a year 1846-1922 by issuer (data/curated/change/data/banknotes_abstract_uk.csv: 420 printed rows, one per edition and date; bidb.change_banknotes, roadmap C5e2b2b2b2): yearly means of the four dates from the latest edition, England and Wales country banks (private, joint stock) to 1921",
   "checked": "2026-10-28, page images read: tesseract readings kept only where both printed sums hold; every other row read from the image; overlapping editions equal but two misprinted Bank of England figures"
+ },
+ "stat_abstract_savings_uk": {
+  "short": "Statistical Abstract for the UK: savings banks 1846-1938",
+  "publisher": "Board of Trade (HMSO); returns of the Commissioners for the Reduction of the National Debt (trustee savings banks) and the Postmaster-General (Post Office Savings Bank)",
+  "citation": "Statistical Abstract for the United Kingdom (annual, HMSO), tables of the total amount received from, paid to and due to depositors in the trustee savings banks and the Post Office Savings Banks (the 'computed capital' to No. 42), with the number of accounts open from No. 59: No. 8 (1846-1860), table 39, p. 61; No. 13 (1851-1865), tables 42-43, pp. 100-101; No. 26 (1864-1878), tables 49-50, pp. 115-117; No. 41 (1879-1893), tables 77-78, pp. 195-196 (1879 only); No. 42 (1880-1894), tables 80-81, pp. 204-206; No. 46 (1884-1898), tables 80-81, pp. 220-222 (1894-1898); No. 59 (1897-1911), tables 91-92, pp. 354-357; No. 70 (1911-1925), tables 125-126, pp. 184-187; No. 83 (1924-1938), tables 193-194, pp. 262-267 (thousands; trustee banks' ordinary and special investment departments). Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "used": "Savings banks 1846-1938 (data/curated/change/data/savings_banks_abstract_uk.csv: 929 printed figures, one row per edition, bank, year and measure; bidb.change_savings, roadmap C5e2b2b2b3a): amount due to depositors in the trustee savings banks (1846-), the Post Office Savings Bank (1863-) and the trustee banks' special investment departments (1924-), and accounts open (1897-), each year from the latest edition",
+  "checked": "2026-10-28, page images read: OCR readings kept only where the nations add to the printed United Kingdom figure, every other row read from the image; each year's amount due checked against the year before and the year's receipts, interest and payments (exact for the Post Office throughout and the trustee banks from 1877), overlapping editions equal but the revisions noted"
  }
 }

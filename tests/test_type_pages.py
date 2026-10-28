@@ -37,6 +37,8 @@ def conn():
     c = stats_conn()
     c.execute("CREATE TABLE material_map (entity_id, source, material_id, via, label, place, evidence)")
     c.executemany("INSERT INTO material_map VALUES (?,?,?,?,?,?,?)", MATS)
+    c.execute("ALTER TABLE buildings ADD COLUMN plan_image")
+    c.executemany("UPDATE buildings SET plan_image = ? WHERE id = ?", [("Plan b1.png", "b1"), ("", "b2"), ("Plan b5.png", "b5"), ("Plan b6.jpg", "b6")])
     return c
 
 
@@ -65,6 +67,18 @@ class TestTypePages(unittest.TestCase):
         # materials found in the castle records b1 and b5: ashlar 2, brick 1
         self.assertEqual([(m["id"], m["count"]) for m in castle["record_materials"]], [("ashlar", 2), ("brick", 1)])
         self.assertIsNone(type_pages.type_page(conn(), "nothing", DATA, MDATA))
+
+    def test_plans_of_real_examples(self):
+        # BT6b: records with a Commons plan (an empty name is none), oldest first; the main type's own first
+        self.assertEqual([(p["id"], p["plan"]) for p in type_pages.plans(conn(), "castle")],
+                         [("b5", "Plan b5.png"), ("b1", "Plan b1.png")])
+        self.assertEqual([p["id"] for p in type_pages.type_page(conn(), "town-hall", DATA, MDATA)["plans"]], ["b6", "b5"])
+        # begun too early for the type: last (castles from 1050; b3 is dated 500 BC)
+        c = conn()
+        c.execute("UPDATE buildings SET plan_image = 'Plan b3.png' WHERE id = 'b3'")
+        with mock.patch.object(type_pages.type_stats, "early_ok", return_value={}):
+            self.assertEqual([p["id"] for p in type_pages.plans(c, "castle", DATA["types"][0])], ["b5", "b1", "b3"])
+        self.assertEqual(type_pages.type_page(conn(), "donjon", DATA, MDATA)["plans"], [])
 
     def test_abroad_type_has_no_examples(self):
         d = type_pages.type_page(conn(), "donjon", DATA, MDATA)

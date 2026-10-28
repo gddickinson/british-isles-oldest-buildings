@@ -2246,3 +2246,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - On /change each graph's note, breaks in definition, the other lines' sources ("Compared with …") and notes are now
   in a collapsible "Notes" ("Notes and sources" when the graph has more than one line) under the key, like "Table of
   values"; the graph's own one-line source and trade-story links stay visible (`change_page.js`, `notesOf`).
+
+## 2026-10-28 — BT6a, BT6b: building-gen checked; plans of real examples
+- BT6 split: BT6a the check (done), BT6b plans of real examples (done), BT6c labelled diagrams, BT6d generated examples
+  once building-gen passes.
+- BT6a: building-gen (commit b58feca) outputs read against the sourced `plan`/`structure` of the catalogue's types →
+  `docs/building_gen_review.md`. None of its four types is shown: one "georgian" brick style for every type, modern
+  fittings in every period, 3D views as boxes; Georgian townhouse near-square with a 50 m² ground-floor dressing room,
+  the detailed 1763 façade with chimney stacks across its windows and a street gable; Victorian terrace right in
+  outline but full-width outshot and indoor bathroom; cottage with no ground-floor windows; "medieval tavern" a brick
+  double pile with no courtyard or stables. The catalogue has no plans of these types to compare (two pre-1650
+  townhouses). Checks a type must pass listed at the end of the review. Nothing changed in building-gen.
+- BT6b: `type_pages.plans`: up to 12 records of a type with a Commons floor plan (main type first, too-early last,
+  oldest first) → "Plans of real examples" on the type page (`types_view.js`, `.ty-plans`), links only in the hosted
+  copy (`static_types` row key `pl`). 61 types have one (castle 123, country house 53, church 49). Test in
+  `test_type_pages`; castle page checked in a screenshot. Hosted copy not updated.

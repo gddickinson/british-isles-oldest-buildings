@@ -73,6 +73,7 @@ def type_entry(d, link_at, links):
     ex = d.pop("examples", None) or []
     d["ex"] = [[ref(e), int(bool(e["too_early"]))] for e in ex[:EXAMPLES]]
     d["sp"] = [[s["county"], s["nation"], s["year"], ref(s)] for s in d.pop("spread", None) or []]
+    d["pl"] = [[p["id"], p["plan"]] for p in d.pop("plans", None) or []]                    # BT6b
     d["pts"] = _points(d.pop("points", None) or [], primary_at=5)
     return d
 

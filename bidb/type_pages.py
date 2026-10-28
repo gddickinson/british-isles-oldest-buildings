@@ -6,7 +6,8 @@ mapped to them (bidb.type_stats, bidb.material_stats).
               links reach, flagged), domains and families in file order, and the links between types
     type      one type: definition, period, structure, plan, links in and out with their sources, the materials
               the curated file gives it and those found in its records, examples, by nation and century, map;
-              what came before and after and its first example per county (bidb.type_charts, BT5)
+              what came before and after and its first example per county (bidb.type_charts, BT5); plans of
+              real examples (catalogue records with a Commons plan, BT6b)
     materials every material and technique by group, with counts
     material  one material: definition, period, regions, technology, geology, links, building types (curated and
               among its records), examples with the evidence sentence, by nation and century, map
@@ -16,6 +17,7 @@ from . import building_materials, building_types, material_stats, type_charts, t
 
 FISH_URL = "https://www.heritagedata.org/live/schemes/{}/concepts/{}.html"
 TOP = 12                    # materials of a type's records, types of a material's records
+PLANS = 12                  # plans of real examples on a type page (BT6b)
 
 
 def _definition(scheme, fish_id):
@@ -68,6 +70,22 @@ def _materials_of_type(conn, type_id, mats):
             for mid, n in rows if mid in mats][:TOP]
 
 
+def plans(conn, type_id, t=None, limit=PLANS):
+    """BT6b: catalogue records of the type with a floor plan on Commons: those of this main type first, those
+    begun too early for the type (bidb.type_stats) last, then oldest first: [{id, name, year, date_text, plan}].
+    Real buildings, often drawn with their later phases."""
+    rows = conn.execute("""SELECT b.id, b.name, b.year_start, b.date_text, b.plan_image, tm.is_primary
+                           FROM type_map tm JOIN buildings b ON b.id = tm.entity_id
+                           WHERE tm.type_id = ? AND tm.source = 'building' AND b.plan_image IS NOT NULL
+                             AND b.plan_image != ''""", (type_id,)).fetchall()
+    ok = type_stats.early_ok() if t else {}
+    out = [{"id": i, "name": n, "year": y, "date_text": dt, "plan": f,
+            "too_early": bool(t) and type_stats.too_early({"id": i, "year": y, "date_text": dt}, t, ok),
+            "primary": primary} for i, n, y, dt, f, primary in rows]
+    out.sort(key=lambda p: (not p["primary"], p["too_early"], p["year"] is None, p["year"] or 0, p["name"] or ""))
+    return [{k: p[k] for k in ("id", "name", "year", "date_text", "plan")} for p in out[:limit]]
+
+
 def type_page(conn, type_id, data=None, mdata=None):
     """One type, or None. Types abroad (only reached by links) have no examples."""
     data, mdata = data or building_types.load(), mdata or building_materials.load()
@@ -84,6 +102,7 @@ def type_page(conn, type_id, data=None, mdata=None):
     d["record_materials"] = _materials_of_type(conn, type_id, mats) if not d.get("abroad") else []
     d["chains"] = type_charts.chains(type_id, data)                                  # BT5
     d["spread"] = [] if d.get("abroad") else type_charts.spread(conn, type_id, data)
+    d["plans"] = [] if d.get("abroad") else plans(conn, type_id, t)                    # BT6b
     return d
 
 

@@ -1,8 +1,8 @@
 // Building types (BT4a) and materials (BT3c1): the view of one type (/types?t=<id>) or one material (/types?m=<id>):
 // definition (FISH scope note), period, structure and plan, family links with their claims and quoted sources, the
 // materials of the type (curated and found in its records), the earliest surviving example, examples by century and
-// nation, a map, its spread across the counties and what came before and after (TypeTime, BT5), examples oldest first
-// and the sources. TypeView.type(el, d, names), TypeView.material(el, d).
+// nation, a map, its spread across the counties and what came before and after (TypeTime, BT5), plans of real
+// examples from Commons (BT6b), examples oldest first and the sources. TypeView.type(el, d, names), TypeView.material(el, d).
 const TypeView = (() => {
   const yt = TypeTree.yearText;
   // the link as read from this side: [label, other end]
@@ -94,6 +94,21 @@ const TypeView = (() => {
       <span class="meta">Bedrock: ${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.short)}</a> (${esc(s.licence)})`).join(", ")}.</span>`;
   }
 
+  // BT6b: floor plans of catalogue records of the type (Commons thumbnails here; links in the hosted copy)
+  function plans(list) {
+    if (!list || !list.length) return "";
+    const file = (f) => encodeURIComponent(f.replace(/ /g, "_"));
+    const label = (p) => `${entity({ ...p, source: "building" })} <span class="meta">${esc(p.date_text || (p.year != null ? yt(p.year) : ""))}</span>`;
+    const body = IS_STATIC
+      ? `<ul class="nearby">${list.map((p) => `<li>${label(p)} · <a href="https://commons.wikimedia.org/wiki/File:${file(p.plan)}"
+          target="_blank" rel="noopener">plan on Wikimedia Commons</a></li>`).join("")}</ul>`
+      : `<div class="ty-plans">${list.map((p) => `<figure><a href="https://commons.wikimedia.org/wiki/File:${file(p.plan)}" target="_blank"
+          rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/${file(p.plan)}?width=320" alt="Plan of ${esc(p.name)}"
+          loading="lazy"></a><figcaption>${label(p)}</figcaption></figure>`).join("")}</div>`;
+    return `<h3>Plans of real examples</h3><p class="hint">Floor plans of buildings of this type in the catalogue, from Wikimedia Commons
+      (author and licence on each file page). Plans of real buildings, often with their later phases, not a typical plan.</p>${body}`;
+  }
+
   const counts = (d) => `${d.buildings.toLocaleString()} catalogue records and ${d.places.toLocaleString()} places`;
 
   function type(box, d) {
@@ -113,7 +128,7 @@ const TypeView = (() => {
       ${earliest(d.earliest, "Standing or a ruin, of which this is the main type, not dated from the type itself and not too early.")}
       <div class="ty-grid"><div><h4>Begun per century</h4><div class="ty-century"></div><h4>By nation</h4><div class="ty-nation"></div></div>
         <div><div class="ty-map stories-map"></div><p class="hint">Blue: catalogue records, orange: places; faint where it is not the main type.</p></div></div>
-      <div class="ty-spread"></div>
+      <div class="ty-spread"></div>${plans(d.plans)}
       ${examples(d.examples || [], null, d.dated)}`}
       <h3>Sources</h3>${sourceList(t.sources) || '<p class="hint">The period and links cite their sources above.</p>'}`;
     if (!d.abroad) { charts(box, d); drawMap(box, d.points); TypeTime.spread(box.querySelector(".ty-spread"), d.spread); }

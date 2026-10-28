@@ -65,6 +65,7 @@
       return { ...d, links: links(d.links, t.type_links, names, id),
         examples: d.ex.map(([ref, early]) => ({ ...entity(ref, rows), too_early: !!early })),
         spread: d.sp.map(([county, nation, year, ref]) => ({ ...entity(ref, rows), county, nation, year })),
+        plans: (d.pl || []).map(([ref, plan]) => ({ ...entity(ref, rows), plan })),
         points: points(d.pts || {}, rows) };
     },
     async material(id, rows) {

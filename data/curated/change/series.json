@@ -4750,7 +4750,7 @@
    "wages_real_1914_uk",
    "wages_real_1924_uk"
   ],
-  "note": "Wage rates divided by prices: what a week's wage at the standard rates would buy, three lines on their own bases. 1879-1913: the Board of Trade's index of the general course of wages (unweighted mean of building, coal mining, engineering, textiles and agriculture), 1900 = 100, over the ONS's long-run Retail Prices Index. 1914-1934: July 1914 = 100, wage rates over the official cost-of-living index at the same date, the band showing the range printed: to 1919 Bowley's rough average of time rates in July (1921), from 1920 the Ministry of Labour's estimate of the average increase in weekly full-time rates at the end of each year (the cost of living at the beginning of the next January). 1924-1938: the Ministry of Labour's index of weekly full-time rates in a representative selection of industries, 1924 = 100, over the RPI. Rates, not earnings: none counts short time, unemployment, overtime or the move of workers into better-paid trades (war work raised earnings well above rates). Real wage rates rose 19% from 1879 to 1900 as prices fell (84.3 to 100), then fell to 96.1 in 1912 as prices rose. In the war prices outran wages (real rates 76 in July 1917, July 1914 = 100); wages caught up in 1918-19 and stood at 104 at the end of 1920 and 111 a year later, as prices fell first; the wage cuts of 1922 took them back to 97, and as prices then fell faster than money rates they reached 115 at the end of 1934. On the 1924 base, money rates fell to 94.0 in 1933 and real rates rose to 110.7 in 1933 and 117.2 in 1938.",
+  "note": "Wage rates divided by prices: what a week's wage at the standard rates would buy, three lines on their own bases. 1879-1913: the Board of Trade's index of the general course of wages (unweighted mean of building, coal mining, engineering, textiles and agriculture), 1900 = 100, over the ONS's long-run Retail Prices Index. 1914-1934: July 1914 = 100, wage rates over the official cost-of-living index at the same date, the band showing the range printed: to 1919 Bowley's rough average of time rates in July (1921), from 1920 the Ministry of Labour's estimate of the average increase in weekly full-time rates at the end of each year (the cost of living at the beginning of the next January). 1924-1938: the Ministry of Labour's index of weekly full-time rates in a representative selection of industries, 1924 = 100, over the RPI. Rates, not earnings: none counts short time, unemployment, overtime or the move of workers into better-paid trades (war work raised earnings well above rates). Real wage rates rose 19% from 1879 to 1900 as prices fell (84.3 to 100), then fell to 96.1 in 1912 as prices rose. In the war prices outran wages (real rates 76 in July 1917, July 1914 = 100); wages caught up in 1918-19 and stood at 104 at the end of 1920 and 111 a year later, as prices fell first; the wage cuts of 1922 took them back to 97, and as prices then fell faster than money rates they reached 115 at the end of 1934. On the 1924 base, money rates fell to 94.0 in 1933 and real rates rose to 110.7 in 1933 and 117.2 in 1938. The Ministry's later index, on four bases from September 1939, is drawn in \"Real wage rates, 1935-1975\".",
   "zero": false
  },
  {
@@ -4791,6 +4791,37 @@
   "file": "wages_real_1924_uk.csv",
   "default": false,
   "hidden": true,
+  "zero": false
+ },
+ {
+  "id": "wages_real_1939_uk",
+  "theme": "Prosperity and work",
+  "title": "Real wage rates, 1935-1975",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index of wage rates over prices",
+  "label": "1935-1975 (1939 = 100)",
+  "sources": [
+   "annual_abstract_wages_uk",
+   "ons_cdko"
+  ],
+  "file": "wages_real_1939_uk.csv",
+  "default": false,
+  "note": "The Ministry of Labour's index of weekly full-time wage rates (all workers, all industries and services; later titled the index of basic wage rates of manual workers, from 1970 the Department of Employment's) at the end of June each year, divided by the year's Retail Prices Index (ONS long-run series), 1939 = 100. The index was based four times: 1 September 1939, 30 June 1947, 31 January 1956 and 31 July 1972; the bases are joined by the levels the Annual Abstract prints (June 1947 between 167 and 168 on the 1939 base, revised from 166-167; January 1956 by the factor 1.561; July 1972 249.5 on the 1956 base), and the weights change at each (marked). Rates, not earnings (war work raised earnings well above rates). Real rates fell to 94 in 1941 as prices rose faster, were back to 100 in 1947, fell again to 95 in 1952, then rose almost every year: 110 in 1960, 121 in 1970 and 152 in 1975 (money rates rose 82% from June 1972 to June 1975, yearly prices 57% from 1972 to 1975).",
+  "breaks": [
+   [
+    1948,
+    "New base, 30 June 1947: new weights"
+   ],
+   [
+    1956,
+    "New base, 31 January 1956: new weights"
+   ],
+   [
+    1973,
+    "New base, 31 July 1972: new weights"
+   ]
+  ],
   "zero": false
  },
  {

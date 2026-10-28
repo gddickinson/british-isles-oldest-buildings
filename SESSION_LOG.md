@@ -2029,3 +2029,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (`test_change_wages`: editions, the 1914-1934 line, July 1920 against the end of 1920); new ui_check `change_wages`
   OK, change_tea and trades OK; graph checked in a screenshot. Page images cached in `<cache>/stat_abstract_img/`
   (n70_105-107, n79_155-161, n80_156) and `<cache>/labour_abstract/`. Hosted copy not updated.
+
+## 2026-10-27 — C5d2b1: real wage rates 1935-1975
+- C5d2b split: C5d2b1 (done), C5d2b2 (before 1879, and 1976-1999: Annual Abstracts after 1975 are still Crown
+  copyright, so an OGL ONS series is needed).
+- New graph "Real wage rates, 1935-1975" (`wages_real_1939_uk`, 1939 = 100), new `bidb/change_wages_post.py`: the Ministry
+  of Labour's index of weekly wage rates (all workers, all industries and services) at the end of each June, over the
+  ONS long-run RPI. 76 figures read from the page images of the Annual Abstract Nos. 84 (table 140, monthly 1935-47 on
+  1 Sept 1939 = 100), 88, 90, 92, 93 (30 June 1947 = 100), 94 (old and new series, linking factors), 100, 104, 108,
+  112 (31 Jan 1956 = 100; 31 July 1972 = 100) → `wages_mol_1935_1975.csv`, edition/leaf/page/table per figure (cached
+  in `<cache>/stat_abstract_img/n84_127` ... `n112_180`; OCR text in `<cache>/annual_abstract_txt/`).
+- Bases chained by the printed links: June 1947 "between 167 and 168, taking September 1939 = 100" (No. 94; Nos. 84,
+  88-93 print 166-167), January 1956 by the factor 1.561, July 1972 249.5. Checks: overlapping editions equal except the
+  printed revisions (June 1966-67 +0.1 in No. 108, June 1971 220.7 → 221.0 in No. 112); June 1956 105.4 × 1.561 = 164.5
+  against 164 printed on the old base. Breaks marked at 1948, 1956, 1973.
+- Real rates 94 in 1941, 100 in 1947, 95 in 1952, 110 in 1960, 121 in 1970, 152 in 1975 (money rates +82% June 1972 to
+  June 1975, yearly prices +57%). The 1879-1938 graph's note points to the new one (MAX_MODELS = 2 is full there).
+- New source `annual_abstract_wages_uk` (122 sources). Tests 408 OK (`test_change_wages`: checks, a misreading caught,
+  chain and links, latest edition); ui_check change_wages (extended), change_tea, trades OK; graph checked in a
+  screenshot. Hosted copy not updated.

@@ -8,8 +8,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 271
-  series, 73 events, 23 map layers, 19 notes, 121 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 272
+  series, 73 events, 23 map layers, 19 notes, 122 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -490,11 +490,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       No. 70 p. 93, No. 79 pp. 140-141; overlaps 1922-25 equal) over the cost of living at the next 1 January (No. 79
       p. 137, No. 80 p. 137). Real rates 76 in July 1917, 104 at the end of 1920, 111 in 1921, 97 in 1922, 115 in 1934.
       Bowley's July 1920 (260 over 252) agrees with the Ministry's end of 1920 within 2% (tested).
-- [ ] C5d2b Wages before 1879 and 1935-1999: Phelps Brown–Hopkins 1956 (Economica; JSTOR, not open) quoted per figure
-      as estimate dots; for 1939-1999 the Ministry of Labour Gazette (Internet Archive has monthly issues
-      `labour-gazette_<year>-<month>_<vol>_<issue>`; a first search found 1927, 1942 and many of 1951-1978, not yet
-      listed in full; to check: which index of weekly rates of wages each era prints and its base, and the retail
-      price index to divide by; Crown copyright expired for issues before 1976); Bowley's Wages and Income since 1860 (1937) is a restricted lending copy.
+- [x] C5d2b1 (2026-10-27; C5d2b split) Wage rates 1935-1975 (new `bidb/change_wages_post.py`): graph "Real wage rates,
+      1935-1975" (1939 = 100), the Ministry of Labour's index of weekly wage rates (all workers, all industries and
+      services) at the end of each June over the RPI, read from the page images of the Annual Abstract Nos. 84, 88, 90,
+      92, 93, 94, 100, 104, 108 and 112 (76 figures, `wages_mol_1935_1975.csv`, edition, leaf, page, table each; out
+      of Crown copyright, published 1947-1975). Four bases chained by the printed links: June 1947 167-168 on September
+      1939 = 100 (No. 94, revised from 166-167), January 1956 factor 1.561 (No. 94), July 1972 249.5 (No. 112); breaks
+      marked at 1948, 1956, 1973. Overlapping editions agree except printed revisions (1966-67 +0.1, 1971 220.7 ->
+      221.0); June 1956 105.4 x 1.561 = 164.5 against 164 on the old base. Real rates 94 in 1941, 100 in 1947, 95 in
+      1952, 110 in 1960, 121 in 1970, 152 in 1975. New source `annual_abstract_wages_uk` (122).
+- [ ] C5d2b2 Wages before 1879 and 1976-1999: Phelps Brown–Hopkins 1956 (Economica; JSTOR, not open) quoted per figure
+      as estimate dots; after 1975 the Annual Abstracts are still in Crown copyright (OGL only for the ONS's own
+      releases: look for an ONS or DE series of basic wage rates or average earnings 1963- under OGL, e.g. the ONS's
+      discontinued Average Earnings Index, series code not yet checked, before the KAB9 line that starts in 2000); Bowley's Wages and Income since
+      1860 (1937) is a restricted lending copy.
 - [x] C5e1 (2026-10-25; C5e split) Shipping (new `bidb/change_shipping.py`): "Merchant fleet registered in the UK,
       1884-1938" (all, steam and motor, sail; Statistical Abstract Nos. 46, 59, 70, 83, every row's parts checked, the
       editions' overlaps equal): 7.4 million net tons in 1884, 12.4 in 1914, 10.1 in 1918, 10.7 in 1938; sail 3.5 → 0.4;

@@ -18,6 +18,9 @@ long-run RPI, bidb.change_prices), stretches that cannot be joined (different me
 - 1924-1938: the Ministry of Labour's "Index numbers showing the general course of weekly rates of wages" (average
   for 1924 = 100), by quarter, Statistical Abstract No. 83, table 138, p. 155 (leaf 176), `wages_mol_1924_1938.csv`;
   the year is the mean of its four quarters.
+- 1935-1975 (C5d2b1, bidb.change_wages_post): the Ministry of Labour's index of weekly wage rates at the end of each
+  June, its four bases (1939, 1947, 1956, 1972) chained by the printed links, over the RPI, 1939 = 100; a graph of its
+  own (the 1879-1938 graph already draws two other lines).
 - 2000-2025: ONS Average Weekly Earnings, whole economy, total pay (KAB9, OGL), yearly £ a week, at 2025 prices.
 
     python -m bidb.change_wages      → data/curated/change/data/wages_*.csv + series.json entries
@@ -26,7 +29,7 @@ import csv
 import json
 import sys
 
-from . import change_prices
+from . import change_prices, change_wages_post
 from .change_firms import DATA
 from .change_registers import _csv, _row
 from .change_work import _ons
@@ -118,7 +121,17 @@ NOTE_RATES = ("Wage rates divided by prices: what a week's wage at the standard 
               "later, as prices fell first; the wage cuts of 1922 took them back to {w1922:.0f}, and as prices then "
               "fell faster than money rates they reached {w1934:.0f} at the end of 1934. On the 1924 base, "
               "money rates fell to {m1933:.1f} in 1933 and real rates rose to {w1933:.1f} in 1933 and {w1938:.1f} in "
-              "1938.")
+              "1938. The Ministry's later index, on four bases from September 1939, is drawn in \"Real wage rates, 1935-1975\".")
+NOTE_POST = ("The Ministry of Labour's index of weekly full-time wage rates (all workers, all industries and services; "
+             "later titled the index of basic wage rates of manual workers, from 1970 the Department of Employment's) at the end of June each "
+             "year, divided by the year's Retail Prices Index (ONS long-run series), 1939 = 100. The index was based four "
+             "times: 1 September 1939, 30 June 1947, 31 January 1956 and 31 July 1972; the bases are joined by the levels "
+             "the Annual Abstract prints (June 1947 between 167 and 168 on the 1939 base, revised from 166-167; January "
+             "1956 by the factor 1.561; July 1972 249.5 on the 1956 base), and the weights change at each (marked). Rates, "
+             "not earnings (war work raised earnings well above rates). "
+             "Real rates fell to {low:.0f} in {ylow} as prices rose faster, were back to {y47:.0f} in 1947, fell again to "
+             "{low2:.0f} in {ylow2}, then rose almost every year: {y60:.0f} in 1960, {y70:.0f} in 1970 and {y75:.0f} in "
+             "1975 (money rates rose {m72:.0f}% from June 1972 to June 1975, yearly prices {p72:.0f}% from 1972 to 1975).")
 NOTE_AWE = ("Average weekly earnings, whole economy, total pay (ONS series KAB9), yearly, at {y1} prices (divided by "
             "the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix "
             "of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), "
@@ -126,10 +139,13 @@ NOTE_AWE = ("Average weekly earnings, whole economy, total pay (ONS series KAB9)
             "{ypeak}, fell to £{low:.0f} in {ylow} and were £{r1:.0f} in {y1}.")
 
 
-def series(bot, mol, war, pounds, prices):
+def series(bot, mol, war, pounds, prices, post):
     w1 = real({r["year"]: r["mean_all"] for r in bot}, prices, 1900)
     w2 = real(mol, prices, 1924)
     w3 = real_1914(war)
+    w4 = real({y: v for y, (v, _) in post.items()}, prices, 1939)
+    plow = min((y for y in w4 if y < 1947), key=w4.get)
+    plow2 = min((y for y in w4 if 1947 < y < 1956), key=w4.get)
     war_year = min((y for y in w3 if y <= 1919), key=lambda y: w3[y][0])
     y1 = max(y for y in pounds if y in prices)
     a = at_prices({y: v for y, v in pounds.items() if y in prices}, prices, y1)
@@ -149,6 +165,11 @@ def series(bot, mol, war, pounds, prices):
              "United Kingdom", unit=""),
         _row("wages_real_1924_uk", "Real wage rates, 1924-1938", "1924-1938 (1924 = 100)",
              "index of wage rates over prices", ["stat_abstract_wages_uk", "ons_cdko"], "United Kingdom", unit=""),
+        _row("wages_real_1939_uk", f"Real wage rates, {min(w4)}-{max(w4)}", f"{min(w4)}-{max(w4)} (1939 = 100)",
+             "index of wage rates over prices", ["annual_abstract_wages_uk", "ons_cdko"], "United Kingdom",
+             NOTE_POST.format(low=w4[plow], ylow=plow, y47=w4[1947], low2=w4[plow2], ylow2=plow2, y60=w4[1960],
+                              y70=w4[1970], y75=w4[max(w4)], m72=(post[max(post)][0] / post[1972][0] - 1) * 100,
+                              p72=(prices[max(post)] / prices[1972] - 1) * 100), unit=""),
         _row("wages_awe_real_uk", f"Average weekly earnings at {y1} prices, 2000-{y1}", "Average weekly earnings",
              f"£ a week at {y1} prices", ["ons_kab9", "ons_cdko"], "United Kingdom",
              NOTE_AWE.format(y1=y1, a2000=pounds[2000], r2000=a[2000], peak=a[ypeak], ypeak=ypeak, low=a[ylow],
@@ -156,9 +177,11 @@ def series(bot, mol, war, pounds, prices):
     ]
     rows[1]["breaks"] = [[1920, "July figures (Bowley) to 1919; from 1920 the Ministry of Labour's, at the end of "
                                 "each year"]]
+    rows[3]["breaks"] = [[y, f"New base, {d}: new weights"] for y, d in
+                         ((1948, "30 June 1947"), (1956, "31 January 1956"), (1973, "31 July 1972"))]
     for r in rows:
         r["zero"] = False
-    return {"wages_real_uk": w1, "wages_real_1914_uk": w3, "wages_real_1924_uk": w2, "wages_awe_real_uk": a}, rows
+    return {"wages_real_1939_uk": w4, "wages_real_uk": w1, "wages_real_1914_uk": w3, "wages_real_1924_uk": w2, "wages_awe_real_uk": a}, rows
 
 
 def write(points, rows):
@@ -178,10 +201,11 @@ def write(points, rows):
 
 def run(log=print):
     bot = load_bot()
-    bad = check(bot)
+    bad = check(bot) + change_wages_post.check()
     if bad:
         raise ValueError("; ".join(bad))
-    points, rows = series(bot, load_mol(), load_war(), awe(log), change_prices.rpi(log))
+    points, rows = series(bot, load_mol(), load_war(), awe(log), change_prices.rpi(log),
+                          change_wages_post.chain(change_wages_post.load()))
     write(points, rows)
     for r in rows:
         log(f"{r['id']}: {(r.get('note') or '')[-220:]}")

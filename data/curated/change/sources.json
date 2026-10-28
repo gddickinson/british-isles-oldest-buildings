@@ -1220,5 +1220,16 @@
   "download_url": "https://www.thegazette.co.uk/London/issue/43185/page/10290/data.pdf",
   "used": "The end of the tea duty: the order removing 'the import duties on tea' from 1 January 1964",
   "checked": "2026-10-27, page PDF read (text layer)"
+ },
+ "annual_abstract_wages_uk": {
+  "short": "Annual Abstract of Statistics: index of weekly wage rates, 1935-1975",
+  "publisher": "Central Statistical Office (HMSO); figures of the Ministry of Labour and National Service, later the Ministry of Labour and the Department of Employment",
+  "citation": "Central Statistical Office, Annual Abstract of Statistics (HMSO), Index of weekly wage rates, all workers, all industries and services, figures at the end of the month: No. 84 (1935-1946), table 140, 1 September 1939 = 100, p. 118 (leaf 127); No. 88 (1938-1950), table 141, 30 June 1947 = 100, p. 130 (leaf 141); No. 90 (1953), table 133, p. 121 (leaf 132); No. 92 (1955), table 142, p. 122 (leaf 133); No. 93 (1956), table 144, p. 124 (leaf 135); No. 94 (1957), table 146, old series 30 June 1947 = 100 and new series 31 January 1956 = 100 with the linking factors, p. 126 (leaf 137); No. 100 (1963), table 149, p. 124 (leaf 135); No. 104 (1967), table 154, p. 133 (leaf 146); No. 108 (1971), table 160, Indices of basic wage rates of manual workers, p. 147 (leaf 162); No. 112 (1975), table 162, 31 January 1956 = 100 and 31 July 1972 = 100, p. 163 (leaf 180). Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published 1947-1975",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "used": "Real wage rates 1935-1975: each June's index on the newest base, the bases chained by the printed links (June 1947 'between 167 and 168, taking September 1939 = 100', No. 94; January 1956 by the factor 1.561 for all workers, No. 94; July 1972 249.5 on the 1956 base, No. 112), over the ONS long-run RPI (data/curated/change/data/wages_mol_1935_1975.csv, roadmap C5d2b1)",
+  "checked": "2026-10-27 (C5d2b1): 76 figures read from the page images; overlapping editions agree figure for figure except later revisions (June 1966 and 1967 +0.1 in No. 108, June 1971 220.7 -> 221.0 in No. 112, the June 1947 link 166-167 -> 167-168 in No. 94); June 1956 105.4 on the new base x 1.561 = 164.5 against 164 printed on the old (No. 93)"
  }
 }

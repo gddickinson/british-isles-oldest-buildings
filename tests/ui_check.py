@@ -81,7 +81,7 @@ PAGES = {
     "change_trade_groups": ("/change", r"(?s)Textile exports by group, 1938-1952.*Annual Abstract of Statistics.*Coal, iron and machinery exports by group, 1938-1952.*Main imports by group, share of all imports, 1938-1952.*Overseas trade at the prices of the time, 1938-1952"),
     "change_trade_hmrc": ("/change", r"(?s)Textile exports, 2000-20\d\d.*Overseas Trade Statistics.*Coal, iron and machinery exports, 2000-20.*Main imports, share of all imports, 2000-20.*Raw cotton and wool imported by weight, 2000-20"),
     "change_trade_quantities": ("/change", r"(?s)Food imports by weight, 1854-1938.*Raw cotton and wool imported by weight, 1854-1938.*Timber imported, 1857-1934.*Sawn softwood and pit props.*Food import prices, 1854-1938.*Raw material import prices, 1854-1938"),
-    "change_wages": ("/change", r"(?s)Real wage rates, 1879-1938.*1914-1934 \(July 1914 = 100\).*Bowley.*76 in July 1917.*115 at the end of 1934"),
+    "change_wages": ("/change", r"(?s)Real wage rates, 1879-1938.*1914-1934 \(July 1914 = 100\).*Bowley.*76 in July 1917.*115 at the end of 1934.*Real wage rates, 1935-1975.*167 and 168.*152 in 1975"),
     "change_tea": ("/change", r"(?s)Tea retained for home consumption.*432 million in 1938.*Tea drunk per person.*Ministry of Food.*Family Food.*Price of imported tea.*16.1d. in 1919.*Price of imported tea by origin, 1854-1864.*Japan.*Wholesale price of tea.*19.44d. in 1938.*Duty on tea.*2s. 2¼d.*Imperial Preference.*1 January 1964.*Commutation Act cuts the tea duty.*Tea rationed"),
     "places_institutions": ("/places?kind_group=Public+institutions", r"data-place="),
     "quiz_menu": ("/quiz", r"Say the name"),

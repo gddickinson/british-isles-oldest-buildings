@@ -5122,5 +5122,53 @@
   "hidden": true,
   "style": "estimates",
   "zero": false
+ },
+ {
+  "id": "banks_country_licences_ew",
+  "theme": "Prosperity and work",
+  "title": "Country banks in England and Wales, 1809-1832",
+  "region": "England and Wales",
+  "unit": "licences",
+  "unit_long": "licences to issue notes",
+  "label": "licences issued",
+  "sources": [
+   "gilbart_1837_banks"
+  ],
+  "file": "banks_country_licences_ew.csv",
+  "default": false,
+  "models": [
+   "banks_country_banks_ew"
+  ],
+  "note": "Country banks (outside London) in England and Wales, from J. W. Gilbart's History and Principles of Banking (3rd edition, 1837, pp. 110-111). From 1808 a bank issuing its own notes had to take out a yearly licence, so the licences count only banks of issue, and not exactly: \"a bank that issues notes in several places, must take out a licence for each place\" (up to four), and \"banks that do not issue notes do not take out a licence\". Licences rose from 702 in 1809 to 940 in 1814, fell to 752 in 1817, stayed between 765 and 809 until 1826, dropped to 668 in 1827 and were 636 in 1832. The second line is the Stamp Office's own count of banks licensed, by county, for the licence years 1811-12 to 1818-19 (drawn at the first year): 739 banks with 2,277 partners in 1811-12, 761 in 1812-13, 576 in 1817-18, about three partners a bank throughout; Yorkshire had the most (75 in 1811-12), Devon 48, Gloucestershire 39 and Somerset 47; Carnarvonshire and Anglesey none. The printed total for 1815-16 is 643, one fewer than its counties (644). Gilbart on the years before: \"very few country banks existed previous to the American war ... they received a severe check in the year 1793, when twenty-two became bankrupt\"; and after: \"According to the Post-office Directory for 1834, the number of private country banks, and branches of private banks in England and Wales is 638; and the number of joint-stock banks and their branches is 106.\""
+ },
+ {
+  "id": "banks_country_banks_ew",
+  "theme": "Prosperity and work",
+  "title": "Country banks licensed (Stamp Office)",
+  "region": "England and Wales",
+  "unit": "banks",
+  "unit_long": "banks licensed to issue notes",
+  "label": "banks licensed",
+  "sources": [
+   "gilbart_1837_banks"
+  ],
+  "file": "banks_country_banks_ew.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "banks_country_failures_ew",
+  "theme": "Prosperity and work",
+  "title": "Country bank failures, 1809-1830",
+  "region": "England and Wales",
+  "unit": "banks",
+  "unit_long": "commissions of bankruptcy against country banks",
+  "label": "commissions of bankruptcy",
+  "sources": [
+   "gilbart_1837_banks"
+  ],
+  "file": "banks_country_failures_ew.csv",
+  "default": false,
+  "note": "Commissions of bankruptcy issued against country banks in England and Wales each year, from the same table of Gilbart's (1837, p. 110; none given for 1831-1832). 311 in 1809-1830: 89 in 1814-1816 and 80 in the crisis of 1825-1826; 20 in 1810. Gilbart counts 22 country banks bankrupt in 1793."
  }
 ]

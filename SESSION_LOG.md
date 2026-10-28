@@ -2191,3 +2191,25 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   table, only energy for power in toe.
 - Sources `est_power_kanefsky1979`, `nuvolari_2011_steam` (129); 286 series. Tests 428 OK (`test_change_steam`, 4 new);
   ui_check change_steam (new), change_shipping, change_wages OK; graph checked in a screenshot. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2b2b1: country banks, 1809-1832
+- C5e2b2b2b split: C5e2b2b2b1 (done), C5e2b2b2b2 (bank notes in circulation 1846-1921), C5e2b2b2b3 (savings banks,
+  clearing house). The Statistical Abstract has no count of banks (only notes in circulation, savings banks and the
+  clearing house), and Pressnell's counts are not open.
+- New `bidb/change_banks.py`: Gilbart, The History and Principles of Banking (3rd edition, 1837; public domain;
+  Internet Archive `historyprinciple00gilb`), read from the page images: Table I p. 110 (leaf 125), licences issued
+  to country bankers and commissions of bankruptcy against country banks 1809-1832 (`banks_gilbart_1837_table1.csv`);
+  Table II p. 111 (leaf 126), the Stamp Office's return of 1 May 1819, country banks and partners by county for the
+  licence years 1811-12 to 1818-19 (`banks_gilbart_1837_table2.csv`, 52 counties and the total). Every county column
+  adds to its printed total except the banks of 1815-16 (644 against 643; the column read again from a zoomed crop,
+  its partners add exactly), kept as `KNOWN`.
+- Graph "Country banks in England and Wales, 1809-1832": licences 702 in 1809, 940 in 1814, 752 in 1817, 765-809 to
+  1826, 668 in 1827, 636 in 1832; banks licensed 739 (2,277 partners) in 1811-12, 761 in 1812-13, 576 in 1817-18;
+  Yorkshire 75, Devon 48, Somerset 47, Gloucestershire 39. "Country bank failures, 1809-1830": 311 commissions, 89 in
+  1814-16, 80 in 1825-26. Note quotes Gilbart's caveats (a licence per place up to four; banks not issuing notes take
+  none), 1793 (22 bankrupt) and the Post-office Directory for 1834 (638 private country banks and branches, 106
+  joint-stock banks and branches). Both graphs added to the banking trade story.
+- Mistake caught: the input CSV was first named like the series id and `change_wages.write` overwrote it; inputs
+  renamed `banks_gilbart_1837_table*.csv`.
+- New source `gilbart_1837_banks` (130); DATA_LICENSE.md row; 289 series. Tests 432 OK (`test_change_banks`, 4 new);
+  ui_check change_banks (new), change_steam, trades OK; graphs checked in a screenshot. Hosted copy not updated.

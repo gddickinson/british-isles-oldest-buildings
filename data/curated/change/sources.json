@@ -1310,5 +1310,16 @@
   "licence_quote": "Open Access This article is distributed under the terms of the Creative Commons Attribution Noncommercial License which permits any noncommercial use, distribution, and reproduction in any medium, provided the original author(s) and source are credited.",
   "used": "Engines erected 1710-1733, 1734-1774 and in all by 1800 (Watt's among them), quoted in the note of 'Power in British industry, 1760-1907' (roadmap C5e2b2b2a)",
   "checked": "2026-10-28, article PDF read"
+ },
+ "gilbart_1837_banks": {
+  "short": "Gilbart 1837, The History and Principles of Banking: country bank licences and failures",
+  "citation": "Gilbart, J. W. (1837) The History and Principles of Banking, 3rd edition. London: Longman, Rees, Orme, Brown, Green and Longman. Table I 'An account of the number of licences issued to country bankers, and the number of commissions of bankruptcy issued against country banks', 1809-1832, p. 110; Table II 'An account of the number of country banks in England and Wales, for which licenses to issue promissory notes have been taken out in each year, from 1811 to 1818, distinguishing the number in each county, and the number of partners concerned in the banks of each county' (Stamp Office, Somerset Place, 1 May 1819), p. 111; Post-office Directory for 1834, p. 112. Page images: Internet Archive, historyprinciple00gilb (leaves 125-127).",
+  "publisher": "Longman, Rees, Orme, Brown, Green and Longman",
+  "licence": "Public domain (author died 1863; published 1837)",
+  "licence_url": "",
+  "licence_quote": "James William Gilbart (1794-1863); Internet Archive item metadata: 'possible-copyright-status': 'NOT_IN_COPYRIGHT'.",
+  "url": "https://archive.org/details/historyprinciple00gilb",
+  "used": "Licences issued to country bankers 1809-1832, banks licensed 1811-1818 (by county, with partners) and commissions of bankruptcy against country banks 1809-1830 (data/curated/change/data/banks_gilbart_1837_table1.csv, banks_gilbart_1837_table2.csv; bidb.change_banks, roadmap C5e2b2b2b1)",
+  "checked": "2026-10-28, page images read (pp. 110-112); every county column adds to its printed total except the banks of 1815-16 (644 against 643 printed)"
  }
 }

@@ -574,7 +574,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       peak 230,000 in 1870. Note quotes Nuvolari, Verspagen and von Tunzelmann 2011 (Cliometrica, CC BY-NC): 95
       engines 1710-1733, 442 in 1734-1774, 2,279 by 1800 (479 Watt's; Tann 449). The NIC/Fouquet energy dataset has no
       power-by-source table. Nothing after 1907 yet (Census of Production engine horsepower 1907-1935 would continue it).
-- [ ] C5e2b2b2b Banks (Statistical Abstract; country banks quoted from Pressnell).
+- [x] C5e2b2b2b1 (2026-10-28; C5e2b2b2b split) Country banks (new `bidb/change_banks.py`): the Statistical Abstract has no count of banks
+      (only notes in circulation, savings banks, clearing; Pressnell is not open), so the count comes from Gilbart, The History
+      and Principles of Banking (3rd edition 1837, public domain, `historyprinciple00gilb`), read from the page images: Table I
+      p. 110, licences issued to country bankers and commissions of bankruptcy against country banks 1809-1832; Table II
+      p. 111, the Stamp Office's country banks and partners by county for the licence years 1811-12 to 1818-19 (every county
+      column adds to its printed total but the banks of 1815-16, 644 against 643, `KNOWN`). Graphs "Country banks in England
+      and Wales, 1809-1832" (licences 702 in 1809, 940 in 1814, 636 in 1832; banks licensed 739 in 1811-12, 576 in 1817-18)
+      and "Country bank failures, 1809-1830" (311 commissions; 89 in 1814-16, 80 in 1825-26), both in the banking trade story.
+      Note quotes Gilbart on 1793 (22 bankrupt) and the Post-office Directory for 1834 (638 private country banks and branches,
+      106 joint-stock banks and branches).
+- [ ] C5e2b2b2b2 Bank notes in circulation 1846-1921 (Statistical Abstract: Bank of England, English private and joint-stock
+      banks, Scottish and Irish banks, four dates a year; the fall of the country note issue after the Act of 1844).
+- [ ] C5e2b2b2b3 Savings banks (trustee and Post Office: depositors and amount due) and the London Bankers' Clearing House.
 - [ ] C5e2b2b2c Patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and

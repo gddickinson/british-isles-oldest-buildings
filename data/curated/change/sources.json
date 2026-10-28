@@ -1354,5 +1354,16 @@
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
   "used": "Bankers' clearing houses 1868-1938 (data/curated/change/data/clearing_london_abstract_uk.csv, 229 printed rows; clearing_provincial_abstract_uk.csv, 120 rows; bidb.change_clearing, roadmap C5e2b2b2b3b1): amounts cleared at the London Bankers' Clearing House (total; town, metropolitan and country clearings from 1902) and at the provincial houses (1897-), each year from the latest edition",
   "checked": "2026-10-28, page images read: London town + metropolitan + country against the printed total from 1902, provincial houses against their printed total, every year but 1868 compared across two to seven editions (one London revision, 1883; the provincial revisions at No. 69's change of source and nine others listed)"
+ },
+ "annual_abstract_clearing_uk": {
+  "short": "Annual Abstract of Statistics: bank clearing, 1935-1974",
+  "publisher": "Central Statistical Office (HMSO); figures of the Bank of England and the Bankers' Clearing House",
+  "citation": "Central Statistical Office, Annual Abstract of Statistics (HMSO), Bank clearings (Bank clearing from No. 104), £ million: No. 84 (1935-1946), table 282, London bankers' clearing house and provincial bankers' clearing houses, p. 236 (leaf 246); No. 88 (1938-1950), table 300, p. 281 (leaf 293); No. 92 (1955), table 312, p. 270 (leaf 282); No. 96 (1959), table 316, p. 273 (leaf 285); No. 99 (1962), table 329, p. 275 (leaf 287); No. 104 (1967), table 358, p. 307 (leaf 321); No. 108 (1971), table 368, p. 347 (leaf 363); No. 111 (1974), table 384, p. 369 (leaf 387); No. 112 (1975), table 396, p. 387 (leaf 405). Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published 1948-1975",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "used": "Bank clearing 1939-1974 (data/curated/change/data/clearing_london_annual_uk.csv, 100 printed rows; clearing_provincial_annual_uk.csv, 84 rows; bidb.change_clearing_post, roadmap C5e2b2b2b3b2a): the London Bankers' Clearing House's total, town, country (to August 1939) and general clearings, the credit clearing from 1960, the provincial houses one by one to 1967, each year from the latest edition",
+  "checked": "2026-10-28, page images read: the Clearing House's clearings against its total, the debit clearing against the Clearing House plus the provincial houses, the towns against their printed total (within the rounding of whole millions), every year 1939-1973 printed by two editions or more but 1939-1940 (No. 84 only) and 1974 (No. 112 only); the only differences between editions are revisions stated in the footnotes (1968-1969 debit totals with the Liverpool afternoon clearing, the 1970 credit clearing after the bank mergers)"
  }
 }

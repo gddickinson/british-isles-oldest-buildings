@@ -2329,3 +2329,32 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   306 series.
 - Tests 456 OK (`test_change_clearing`, 5 new); ui_check change_clearing (new), change_savings, trades OK; graphs checked in a
   screenshot of /trades?t=banking. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2b2b3b2a: bank clearing 1939-1974 from the Annual Abstract
+- C5e2b2b2b3b2 split: a (clearing 1939-1974 and clearings over prices, done), b (savings banks after 1938 and by nation; the credit
+  clearing not drawn yet).
+- New `bidb/change_clearing_post.py`: the Annual Abstract's "Bank clearings" tables read from the page images (`<cache>/stat_abstract_img/cl_n<no>_<leaf>.jpg`,
+  image `page/n<leaf-1>_w2400.jpg`; for these editions the hOCR page index finds the page one or two leaves late, so each leaf
+  was confirmed by the table's title): No. 84 table 282 p. 236 (leaf 246), No. 88 table 300 p. 281 (293), No. 92 table 312 p. 270
+  (282), No. 96 table 316 p. 273 (285), No. 99 table 329 p. 275 (287), No. 104 table 358 p. 307 (321), No. 108 table 368 p. 347
+  (363), No. 111 table 384 p. 369 (387), No. 112 table 396 p. 387 (405) → `clearing_london_annual_uk.csv` (100 rows),
+  `clearing_provincial_annual_uk.csv` (84 rows). Every figure read by eye from the image; no OCR used.
+- Checks (`check`, all pass): Clearing House clearings add to its total (1939: town printed in two parts, 1 January-26 August and
+  28 August-31 December, summed); debit clearing = Clearing House + provincial houses; the towns against their printed total
+  (whole millions from No. 92: differences of 1-2 from rounding); every figure printed twice equal but two footnoted revisions:
+  the 1968-1969 debit totals (No. 108 left out the Liverpool afternoon clearing, Nos. 111-112 add £616 and £618 million) and the
+  1970 credit clearing (14,391 → 10,969, "not comparable ... owing to mergers among the London Clearing banks"). One broken
+  figure (No. 99, Birmingham 1956 "3 0") settled as 310 by Nos. 96 and 104 (`read` column). 1938 overlaps the Statistical
+  Abstract: London total 39,610 against No. 83's 39,611, provincial 1,258.2 against 1,258.3 (the joined series keeps No. 83 to 1938).
+- Graphs: "London Bankers' Clearing House: amounts cleared, 1868-1974" (the general clearing from 28 August 1939, under the
+  clearing banks' emergency operations, continues the country line; break 1939; 1929's peak passed in 1942; £225,417 million
+  in 1960, £1,640,190 million in 1974; town 90.2% of the total in 1974); new "London Bankers' Clearing House at 1974 prices,
+  1868-1974" (each total times the ONS RPI of 1974 over the year's: 1920 below 1913, highest before the war in 1937, lowest
+  in 1941, above 1937 again by 1948; 6.4 times 1938-1974 against 41 times in pounds of the time); "Provincial bankers' clearing
+  houses, 1897-1967" (1939-1940 the houses' sum, no total printed; Manchester largest to 1943, its area restricted in July 1943;
+  Liverpool largest from 1944 but 1961; height £3,215 million in 1966; abolished from 12 January 1968 but the Liverpool
+  afternoon clearing, £616-898 million 1968-1974, in the note). Source `annual_abstract_clearing_uk` (134); DATA_LICENSE.md row;
+  307 series. The RPI graph added to the banking trade story.
+- Tests 460 OK (`test_change_clearing`: the series test now passes its own prices, no download; 4 new for the Annual Abstract);
+  ui_check change_clearing (updated), change_savings, trades OK; graphs checked in a screenshot of /trades?t=banking. Hosted
+  copy not updated.

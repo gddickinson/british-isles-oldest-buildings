@@ -8,8 +8,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b; BT6b: plans of real examples on type pages; BT6c1: labelled diagrams of 22 types); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 306
-  series, 76 events, 23 map layers, 19 notes, 133 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 307
+  series, 76 events, 23 map layers, 19 notes, 134 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -620,8 +620,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       country lines; break 1936, the District Bank admitted; £3,425 million 1868, £44,897 million at the 1929 height) and
       "Provincial bankers' clearing houses, 1897-1938" (Manchester, Liverpool; breaks 1909 Nottingham, 1912 Bradford, 1921
       Hull), both in the banking trade story.
-- [ ] C5e2b2b2b3b2 Clearing house and savings banks after 1938 (Annual Abstract Nos. 84-112: the clearing table is printed in each),
-      savings banks by nation (in the CSV to 1898), clearings deflated by the RPI.
+- [x] C5e2b2b2b3b2a (2026-10-28; C5e2b2b2b3b2 split) Bank clearing 1939-1974 (new `bidb/change_clearing_post.py`, joined by
+      bidb.change_clearing): the Annual Abstract's bank clearing tables read from the page images of Nos. 84, 88, 92, 96, 99, 104, 108,
+      111 and 112 (`clearing_london_annual_uk.csv` 100 rows, `clearing_provincial_annual_uk.csv` 84 rows): every row checked by
+      its parts (clearings against the Clearing House total, debit clearing = Clearing House + provincial houses, towns against
+      their total within rounding), every year 1941-1973 printed by two editions or more and equal but the footnoted revisions
+      (1968-1969 debit totals with the Liverpool afternoon clearing, the 1970 credit clearing after the bank mergers); 1939-1940
+      only in No. 84, 1974 only in No. 112 (No. 113 still in Crown copyright). Graphs extended: "London Bankers' Clearing House:
+      amounts cleared, 1868-1974" (general clearing from 28 August 1939 continuing the country line, break 1939; £1,640,190
+      million in 1974), "Provincial bankers' clearing houses, 1897-1967" (abolished from 12 January 1968 but Liverpool's
+      afternoon clearing; breaks 1943 Manchester restricted, 1945 Southampton); new "London Bankers' Clearing House at 1974
+      prices, 1868-1974" (over the ONS long-run RPI: less in 1920 than 1913, 6.4 times 1938-1974 against 41 times in pounds
+      of the time), in the banking trade story.
+- [ ] C5e2b2b2b3b2b Savings banks after 1938 (Annual Abstract: trustee and Post Office Savings Banks), savings banks by nation
+      (in the CSV to 1898); the credit clearing 1960-1974 (in clearing_london_annual_uk.csv) not drawn yet.
 - [ ] C5e2b2b2c Patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and

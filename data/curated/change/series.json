@@ -4827,18 +4827,40 @@
  {
   "id": "wages_awe_real_uk",
   "theme": "Prosperity and work",
-  "title": "Average weekly earnings at 2025 prices, 2000-2025",
+  "title": "Average weekly earnings at 2025 prices, 1963-2025",
   "region": "United Kingdom",
   "unit": "£",
   "unit_long": "£ a week at 2025 prices",
-  "label": "Average weekly earnings",
+  "label": "2000-2025 (KAB9)",
   "sources": [
    "ons_kab9",
+   "ons_md9m",
    "ons_cdko"
   ],
   "file": "wages_awe_real_uk.csv",
   "default": false,
-  "note": "Average weekly earnings, whole economy, total pay (ONS series KAB9), yearly, at 2025 prices (divided by the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), so the fall since 2007 is larger here than on those measures. £313 a week in 2000 was £740 at 2025 prices; earnings peaked at £819 in 2007, fell to £711 in 2023 and were £728 in 2025.",
+  "models": [
+   "wages_awe_back_uk"
+  ],
+  "note": "Average weekly earnings, whole economy, total pay (ONS series KAB9), yearly, at 2025 prices (divided by the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), so the fall since 2007 is larger here than on those measures. £313 a week in 2000 was £740 at 2025 prices; earnings peaked at £819 in 2007, fell to £711 in 2023 and were £728 in 2025. Dashed, 1963-1999: the ONS's long run back series of average weekly earnings, which the ONS gives \"with a warning stating clearly that they are modelled estimates and do not come with the same methodological assurances on quality as estimates from January 2000 onwards\" (\"produced using the VAR model\" of its methodology paper; not seasonally adjusted, each year the mean of its months). £10.92 a week in 1963 was £321 at 2025 prices; real earnings fell only in 1976-77 and 1995; they rose 50% from 1963 to 1975 (real wage rates, on the 1935-1975 graph, 35%: earnings also count overtime, bonuses and better-paid jobs) and 54% from 1975 to 1999 (£741 in 1999); the 1999 figure is £1 above the 2000 figure of the main line.",
+  "zero": false
+ },
+ {
+  "id": "wages_awe_back_uk",
+  "theme": "Prosperity and work",
+  "title": "Average weekly earnings at 2025 prices, 1963-1999 (modelled)",
+  "region": "United Kingdom",
+  "unit": "£",
+  "unit_long": "£ a week at 2025 prices",
+  "label": "1963-1999 (modelled back series)",
+  "sources": [
+   "ons_md9m",
+   "ons_cdko"
+  ],
+  "file": "wages_awe_back_uk.csv",
+  "default": false,
+  "hidden": true,
+  "modelled": true,
   "zero": false
  }
 ]

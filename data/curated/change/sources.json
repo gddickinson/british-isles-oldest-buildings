@@ -1231,5 +1231,18 @@
   "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
   "used": "Real wage rates 1935-1975: each June's index on the newest base, the bases chained by the printed links (June 1947 'between 167 and 168, taking September 1939 = 100', No. 94; January 1956 by the factor 1.561 for all workers, No. 94; July 1972 249.5 on the 1956 base, No. 112), over the ONS long-run RPI (data/curated/change/data/wages_mol_1935_1975.csv, roadmap C5d2b1)",
   "checked": "2026-10-27 (C5d2b1): 76 figures read from the page images; overlapping editions agree figure for figure except later revisions (June 1966 and 1967 +0.1 in No. 108, June 1971 220.7 -> 221.0 in No. 112, the June 1947 link 166-167 -> 167-168 in No. 94); June 1956 105.4 on the new base x 1.561 = 164.5 against 164 printed on the old (No. 93)"
+ },
+ "ons_md9m": {
+  "short": "ONS, AWE long run back series, whole economy (MD9M), 1963-1999",
+  "publisher": "Office for National Statistics",
+  "citation": "Office for National Statistics, MD9M: AWE: Whole Economy Historic Level (£): Non Seasonally Adjusted, dataset EMP (Average weekly earnings time series); EARN02: Average weekly earnings by sector, table 11 \"AWE Long Run Back Series\" (October 2026 edition).",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+  "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/md9m/emp",
+  "download_url": "https://www.ons.gov.uk/generator?format=csv&uri=/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/md9m/emp",
+  "quote": "These back series are provided with a warning stating clearly that they are modelled estimates and do not come with the same methodological assurances on quality as estimates from January 2000 onwards. The historic time series do not have the same National Statistics status as the series from January 2000 onwards",
+  "used": "Average weekly earnings 1963-1999 at 2025 prices, dashed as modelled (deflated by CDKO) (roadmap C5d2b2)",
+  "checked": "2026-10-27, CSV downloaded (monthly January 1963 to December 1999); EARN02 notes read"
  }
 }

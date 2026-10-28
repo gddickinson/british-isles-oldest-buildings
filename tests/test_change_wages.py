@@ -69,6 +69,34 @@ class After1935(unittest.TestCase):
         self.assertIn("_108", r[(1965, "1956-01-31")]["edition"])
 
 
+class Earnings(unittest.TestCase):
+    def test_monthly_means(self):
+        import os, tempfile
+        rows = ['"Title","x"', '"CDID","MD9M"'] + [f'"1963 {m}","{v}"' for m, v in
+                zip(("JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC").split(), range(1, 13))] + ['"1964 JAN","5"']
+        with tempfile.NamedTemporaryFile("w", suffix=".csv", delete=False) as f:
+            f.write("\n".join(rows))
+        try:
+            self.assertEqual(cw.monthly_means(f.name), {1963: 6.5})       # 1964 has one month: left out
+        finally:
+            os.unlink(f.name)
+
+    def test_falls(self):
+        self.assertEqual(cw.falls({1975: 3, 1976: 2, 1977: 1, 1978: 4, 1995: 5, 1996: 4}), "1976-77 and 1996")
+        self.assertEqual(cw.falls({1: 1, 2: 2}), "")
+
+    def test_back_series_meets_kab9(self):
+        import csv
+        from bidb.change_firms import DATA
+
+        def read(name):
+            with open(DATA / name, newline="") as f:
+                return {int(r["year"]): float(r["value"]) for r in csv.DictReader(f)}
+        back, now = read("wages_awe_back_uk.csv"), read("wages_awe_real_uk.csv")
+        self.assertEqual((min(back), max(back), min(now)), (1963, 1999, 2000))
+        self.assertLess(abs(back[1999] - now[2000]) / now[2000], 0.03)   # the modelled series meets the survey's
+
+
 class Prices(unittest.TestCase):
     def test_not_rising(self):
         self.assertEqual(cp.not_rising({1934: 1, 1935: 2, 1936: 2, 1937: 3}), [1936])

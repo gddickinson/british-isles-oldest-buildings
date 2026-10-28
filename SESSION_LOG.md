@@ -2048,3 +2048,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - New source `annual_abstract_wages_uk` (122 sources). Tests 408 OK (`test_change_wages`: checks, a misreading caught,
   chain and links, latest edition); ui_check change_wages (extended), change_tea, trades OK; graph checked in a
   screenshot. Hosted copy not updated.
+
+## 2026-10-27 — C5d2b2a: average weekly earnings 1963-1999
+- C5d2b2 split: C5d2b2a (done), C5d2b2b (wages before 1879).
+- "Average weekly earnings at 2025 prices" now runs 1963-2025: the ONS's AWE long run back series (MD9M, "AWE: Whole
+  Economy Historic Level (£): Non Seasonally Adjusted", dataset EMP; EARN02 table 11, OGL), monthly January 1963 to
+  December 1999, each year the mean of its twelve months (`monthly_means`), over the RPI, drawn as a dashed modelled
+  line (`wages_awe_back_uk`) under KAB9. EARN02's warning quoted in the note (modelled estimates, not National
+  Statistics, "produced using the VAR model").
+- £10.92 a week in 1963 = £321 at 2025 prices; £741 in 1999 against KAB9's £740 in 2000 (the join tested within 3%);
+  real earnings fell only in 1976-77 and 1995; +50% 1963-1975 against +35% for real wage rates over the same years,
+  +54% 1975-1999.
+- New source `ons_md9m` (123 sources). Tests 411 OK (`test_change_wages`: monthly means, falls, the join); ui_check
+  change_wages (now requires the 1963 graph), change_tea, trades OK; graph checked in a screenshot. ONS series API
+  searched for the code (`api.beta.ons.gov.uk/v1/search`); the ONS website rate-limits quick requests (Cloudflare
+  1015). Hosted copy not updated.

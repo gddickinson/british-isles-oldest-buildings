@@ -21,12 +21,15 @@ long-run RPI, bidb.change_prices), stretches that cannot be joined (different me
 - 1935-1975 (C5d2b1, bidb.change_wages_post): the Ministry of Labour's index of weekly wage rates at the end of each
   June, its four bases (1939, 1947, 1956, 1972) chained by the printed links, over the RPI, 1939 = 100; a graph of its
   own (the 1879-1938 graph already draws two other lines).
-- 2000-2025: ONS Average Weekly Earnings, whole economy, total pay (KAB9, OGL), yearly £ a week, at 2025 prices.
+- 2000-2025: ONS Average Weekly Earnings, whole economy, total pay (KAB9, OGL), yearly £ a week, at 2025 prices;
+  1963-1999 (C5d2b2) the ONS's modelled AWE long run back series (MD9M, EARN02 table 11, OGL; not seasonally
+  adjusted, so the year is the mean of its twelve months) on the same graph as a dashed line of its own.
 
     python -m bidb.change_wages      → data/curated/change/data/wages_*.csv + series.json entries
 """
 import csv
 import json
+import re
 import sys
 
 from . import change_prices, change_wages_post
@@ -41,6 +44,8 @@ GROUPS = ("building", "coal", "engineering", "textile", "agriculture")
 KNOWN = {}          # (year, column): a printed mean kept although its groups do not give it
 AWE_URL = ("https://www.ons.gov.uk/generator?format=csv&uri=/employmentandlabourmarket/peopleinwork/"
            "earningsandworkinghours/timeseries/kab9/lms")
+BACK_URL = ("https://www.ons.gov.uk/generator?format=csv&uri=/employmentandlabourmarket/peopleinwork/"
+            "earningsandworkinghours/timeseries/md9m/emp")
 
 
 def load_bot(path=BOT):
@@ -94,6 +99,22 @@ def awe(log=print):
         return {int(r[0]): float(r[1]) for r in csv.reader(f) if len(r) == 2 and r[0].isdigit()}
 
 
+def monthly_means(path):
+    """{year: mean of its twelve months} from an ONS series CSV of monthly rows ("1963 JAN"); years with a month
+    missing left out."""
+    months = {}
+    with open(path, newline="") as f:
+        for r in csv.reader(f):
+            if len(r) == 2 and re.fullmatch(r"\d{4} [A-Z]{3}", r[0]):
+                months.setdefault(int(r[0][:4]), []).append(float(r[1]))
+    return {y: round(sum(v) / 12, 2) for y, v in months.items() if len(v) == 12}
+
+
+def awe_back(log=print):
+    """{year: £ a week}, the AWE long run back series (MD9M), 1963-1999."""
+    return monthly_means(_ons(BACK_URL, "md9m.csv", log))
+
+
 def real(wages, prices, base):
     """Wages divided by prices, base year = 100."""
     r = {y: w / prices[y] for y, w in wages.items()}
@@ -136,10 +157,30 @@ NOTE_AWE = ("Average weekly earnings, whole economy, total pay (ONS series KAB9)
             "the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix "
             "of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), "
             "so the fall since 2007 is larger here than on those measures. £{a2000:.0f} a week in 2000 was £{r2000:.0f} at {y1} prices; earnings peaked at £{peak:.0f} in "
-            "{ypeak}, fell to £{low:.0f} in {ylow} and were £{r1:.0f} in {y1}.")
+            "{ypeak}, fell to £{low:.0f} in {ylow} and were £{r1:.0f} in {y1}. Dashed, 1963-1999: the ONS's long run "
+            "back series of average weekly earnings, which the ONS gives \"with a warning stating clearly that they are "
+            "modelled estimates and do not come with the same methodological assurances on quality as estimates from "
+            "January 2000 onwards\" (\"produced using the VAR model\" of its methodology paper; not seasonally "
+            "adjusted, each year the mean of its months). £{b63:.2f} a week in 1963 was £{rb63:.0f} at {y1} prices; "
+            "real earnings fell only in {falls}; they rose {g75:.0f}% from 1963 to 1975 (real wage rates, on the "
+            "1935-1975 graph, {r75:.0f}%: earnings also count overtime, bonuses and better-paid jobs) and {g99:.0f}% "
+            "from 1975 to 1999 (£{rb99:.0f} in 1999); the 1999 figure is £{gap:.0f} {gapdir} the 2000 figure of the main line.")
 
 
-def series(bot, mol, war, pounds, prices, post):
+def falls(a):
+    """The years in which real earnings fell, as text ("1977, 1980-81")."""
+    ys = [y for y in sorted(a) if y - 1 in a and a[y] < a[y - 1]]
+    runs = []
+    for y in ys:
+        if runs and runs[-1][1] == y - 1:
+            runs[-1][1] = y
+        else:
+            runs.append([y, y])
+    t = [str(a) if a == b else f"{a}-{str(b)[2:]}" for a, b in runs]
+    return " and ".join([", ".join(t[:-1]), t[-1]] if len(t) > 1 else t)
+
+
+def series(bot, mol, war, pounds, prices, post, back):
     w1 = real({r["year"]: r["mean_all"] for r in bot}, prices, 1900)
     w2 = real(mol, prices, 1924)
     w3 = real_1914(war)
@@ -151,6 +192,7 @@ def series(bot, mol, war, pounds, prices, post):
     a = at_prices({y: v for y, v in pounds.items() if y in prices}, prices, y1)
     ypeak = max((y for y in a if y < 2014), key=a.get)
     ylow = min((y for y in a if y > ypeak), key=a.get)
+    b = at_prices({y: v for y, v in back.items() if y in prices}, prices, y1)
     rows = [
         _row("wages_real_uk", "Real wage rates, 1879-1938", "1879-1913 (1900 = 100)",
              "index of wage rates over prices",
@@ -170,18 +212,27 @@ def series(bot, mol, war, pounds, prices, post):
              NOTE_POST.format(low=w4[plow], ylow=plow, y47=w4[1947], low2=w4[plow2], ylow2=plow2, y60=w4[1960],
                               y70=w4[1970], y75=w4[max(w4)], m72=(post[max(post)][0] / post[1972][0] - 1) * 100,
                               p72=(prices[max(post)] / prices[1972] - 1) * 100), unit=""),
-        _row("wages_awe_real_uk", f"Average weekly earnings at {y1} prices, 2000-{y1}", "Average weekly earnings",
-             f"£ a week at {y1} prices", ["ons_kab9", "ons_cdko"], "United Kingdom",
+        _row("wages_awe_real_uk", f"Average weekly earnings at {y1} prices, {min(b)}-{y1}",
+             f"2000-{y1} (KAB9)", f"£ a week at {y1} prices", ["ons_kab9", "ons_md9m", "ons_cdko"], "United Kingdom",
              NOTE_AWE.format(y1=y1, a2000=pounds[2000], r2000=a[2000], peak=a[ypeak], ypeak=ypeak, low=a[ylow],
-                             ylow=ylow, r1=a[y1]), unit="£"),
+                             ylow=ylow, r1=a[y1], b63=back[min(b)], rb63=b[min(b)], falls=falls(b),
+                             g75=(b[1975] / b[min(b)] - 1) * 100,
+                             r75=(w4[1975] / w4[min(b)] - 1) * 100, g99=(b[1999] / b[1975] - 1) * 100, rb99=b[1999],
+                             gap=abs(a[2000] - b[1999]), gapdir="below" if b[1999] < a[2000] else "above"),
+             ["wages_awe_back_uk"], unit="£"),
+        _row("wages_awe_back_uk", f"Average weekly earnings at {y1} prices, {min(b)}-{max(b)} (modelled)",
+             f"{min(b)}-{max(b)} (modelled back series)", f"£ a week at {y1} prices", ["ons_md9m", "ons_cdko"],
+             "United Kingdom", unit="£"),
     ]
+    rows[-1]["modelled"] = True
     rows[1]["breaks"] = [[1920, "July figures (Bowley) to 1919; from 1920 the Ministry of Labour's, at the end of "
                                 "each year"]]
     rows[3]["breaks"] = [[y, f"New base, {d}: new weights"] for y, d in
                          ((1948, "30 June 1947"), (1956, "31 January 1956"), (1973, "31 July 1972"))]
     for r in rows:
         r["zero"] = False
-    return {"wages_real_1939_uk": w4, "wages_real_uk": w1, "wages_real_1914_uk": w3, "wages_real_1924_uk": w2, "wages_awe_real_uk": a}, rows
+    return {"wages_real_1939_uk": w4, "wages_real_uk": w1, "wages_real_1914_uk": w3, "wages_real_1924_uk": w2, "wages_awe_real_uk": a,
+            "wages_awe_back_uk": b}, rows
 
 
 def write(points, rows):
@@ -205,7 +256,7 @@ def run(log=print):
     if bad:
         raise ValueError("; ".join(bad))
     points, rows = series(bot, load_mol(), load_war(), awe(log), change_prices.rpi(log),
-                          change_wages_post.chain(change_wages_post.load()))
+                          change_wages_post.chain(change_wages_post.load()), awe_back(log))
     write(points, rows)
     for r in rows:
         log(f"{r['id']}: {(r.get('note') or '')[-220:]}")

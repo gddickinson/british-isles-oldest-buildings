@@ -5364,5 +5364,125 @@
   "file": "savings_accounts_trustee_uk.csv",
   "default": false,
   "hidden": true
+ },
+ {
+  "id": "clearing_london_uk",
+  "theme": "Prosperity and work",
+  "title": "London Bankers' Clearing House: amounts cleared, 1868-1938",
+  "region": "London",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "total",
+  "sources": [
+   "stat_abstract_clearing_uk"
+  ],
+  "file": "clearing_london_uk.csv",
+  "default": false,
+  "models": [
+   "clearing_town_uk",
+   "clearing_country_uk"
+  ],
+  "note": "Amounts cleared at the London Bankers' Clearing House in each calendar year, in pounds of the time, from the Statistical Abstract read from the page images (Nos. 31, 32, 33, 42, 46, 50, 59, 62, 66, 69, 71, 78, 82 and 83, each year from the latest edition; every year but 1868 printed by two editions or more and compared, and from 1902 the town, metropolitan and country clearings checked against the total). The amounts cleared came to £3,425 million in 1868, £16,436 million in 1913 and, with the prices of the war, £39,019 million in 1920; the highest year was 1929 (£44,897 million), and the slump took them down to £32,112 million in 1932. Town clearings were 91.3% of the total in 1902 and 85.5% in 1938; country clearings are printed from 1902, metropolitan clearings (not drawn) from 19 February 1907 (£482 million to the end of that year, £2,076 million in 1938). The Stock Exchange account days of 1914 are eighteen settlements (twenty-five or twenty-six in 1922-1923) and its consols settling days seven, January to July. From 1936 the figures include the District Bank, whose admission 'accounts for part of the increase in Town and Metropolitan Clearings, but not in Country Clearing' (No. 82). Nos. 29 and 30 print other totals for 1868-1882 with no year end stated; they are not used.",
+  "log": true,
+  "zero": false,
+  "breaks": [
+   [
+    1936,
+    "From 1936 including the District Bank, newly admitted to the London Bankers' Clearing House (part of the rise in town and metropolitan clearings)"
+   ]
+  ]
+ },
+ {
+  "id": "clearing_town_uk",
+  "theme": "Prosperity and work",
+  "title": "Town clearings",
+  "region": "London",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "town clearings",
+  "sources": [
+   "stat_abstract_clearing_uk"
+  ],
+  "file": "clearing_town_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "clearing_country_uk",
+  "theme": "Prosperity and work",
+  "title": "Country clearings",
+  "region": "London",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "country clearings",
+  "sources": [
+   "stat_abstract_clearing_uk"
+  ],
+  "file": "clearing_country_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "clearing_provincial_uk",
+  "theme": "Prosperity and work",
+  "title": "Provincial bankers' clearing houses, 1897-1938",
+  "region": "England",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "all provincial houses",
+  "sources": [
+   "stat_abstract_clearing_uk"
+  ],
+  "file": "clearing_provincial_uk.csv",
+  "default": false,
+  "models": [
+   "clearing_manchester_uk",
+   "clearing_liverpool_uk"
+  ],
+  "note": "Amounts cleared at the provincial bankers' clearing houses in each calendar year, £ million, from the same tables (printed from No. 59, 1897; each year from the latest edition, every row checked against its printed total). From No. 69 the figures were compiled from the London Bankers' Clearing House's annual statements instead of returns from the houses themselves, and most years 1905-1924 were revised by about 0.1 (Leeds 1916 from 28.0 to 38.5). The total covers more houses over time: Nottingham from 1909 ('no record kept' before), Bradford from 1912 (added by No. 71, back to 1912), Hull from its opening on 1 February 1921; Bristol's area was restricted in July 1922, Nottingham's in 1931 and Liverpool's on 1 April 1935. Manchester was the largest throughout (£193.0 million in 1897, £1,451.2 million in 1920, £475.6 million in 1938); the total was £483.6 million in 1897, £899.8 million in 1913, £3,134.4 million at its height in 1920 and £1,258.3 million in 1938, when London cleared 31 times as much.",
+  "breaks": [
+   [
+    1909,
+    "From 1909 including Nottingham (no record kept before)"
+   ],
+   [
+    1912,
+    "From 1912 including Bradford (added by Statistical Abstract No. 71)"
+   ],
+   [
+    1921,
+    "From 1921 including Hull, opened 1 February 1921"
+   ]
+  ]
+ },
+ {
+  "id": "clearing_manchester_uk",
+  "theme": "Prosperity and work",
+  "title": "Manchester clearing house",
+  "region": "England",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "Manchester",
+  "sources": [
+   "stat_abstract_clearing_uk"
+  ],
+  "file": "clearing_manchester_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "clearing_liverpool_uk",
+  "theme": "Prosperity and work",
+  "title": "Liverpool clearing house",
+  "region": "England",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "Liverpool",
+  "sources": [
+   "stat_abstract_clearing_uk"
+  ],
+  "file": "clearing_liverpool_uk.csv",
+  "default": false,
+  "hidden": true
  }
 ]

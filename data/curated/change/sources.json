@@ -1343,5 +1343,16 @@
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
   "used": "Savings banks 1846-1938 (data/curated/change/data/savings_banks_abstract_uk.csv: 929 printed figures, one row per edition, bank, year and measure; bidb.change_savings, roadmap C5e2b2b2b3a): amount due to depositors in the trustee savings banks (1846-), the Post Office Savings Bank (1863-) and the trustee banks' special investment departments (1924-), and accounts open (1897-), each year from the latest edition",
   "checked": "2026-10-28, page images read: OCR readings kept only where the nations add to the printed United Kingdom figure, every other row read from the image; each year's amount due checked against the year before and the year's receipts, interest and payments (exact for the Post Office throughout and the trustee banks from 1877), overlapping editions equal but the revisions noted"
+ },
+ "stat_abstract_clearing_uk": {
+  "short": "Statistical Abstract for the UK: bankers' clearing houses 1868-1938",
+  "publisher": "Board of Trade (HMSO); compiled from the annual statements of the London Bankers' Clearing House and returns furnished by the provincial bankers' clearing houses",
+  "citation": "Statistical Abstract for the United Kingdom (annual, HMSO), tables of amounts cleared at the London Bankers' Clearing House and (from No. 59) at the provincial bankers' clearing houses, in millions of pounds: No. 31 (1868-1883), table 72, p. 154; No. 32, table 73, p. 160; No. 33, table 83, p. 180; No. 42, table 97, p. 228; No. 46, table 87, p. 225; No. 50, table 85, p. 233; No. 59 (1897-1911), tables 96-97, p. 359; No. 62, tables 89-90, p. 345; No. 66, tables 91-92, p. 353; No. 69, tables 90-91, p. 213; No. 71, tables 130-131, p. 189; No. 78, tables 152-153, p. 221; No. 82, tables 186-187, p. 254; No. 83 (1924-1938), tables 189-190, p. 256. Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "used": "Bankers' clearing houses 1868-1938 (data/curated/change/data/clearing_london_abstract_uk.csv, 229 printed rows; clearing_provincial_abstract_uk.csv, 120 rows; bidb.change_clearing, roadmap C5e2b2b2b3b1): amounts cleared at the London Bankers' Clearing House (total; town, metropolitan and country clearings from 1902) and at the provincial houses (1897-), each year from the latest edition",
+  "checked": "2026-10-28, page images read: London town + metropolitan + country against the printed total from 1902, provincial houses against their printed total, every year but 1868 compared across two to seven editions (one London revision, 1883; the provincial revisions at No. 69's change of source and nine others listed)"
  }
 }

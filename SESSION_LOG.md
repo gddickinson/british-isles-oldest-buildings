@@ -2303,3 +2303,29 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (1861), quoted from Wikipedia. Source `stat_abstract_savings_uk` (132); DATA_LICENSE.md row extended; 300 series, 76 events.
 - Tests 451 OK (`test_change_savings`, 6 new); ui_check change_savings (new), change_banknotes, trades OK; graphs checked in a
   screenshot of /trades?t=banking. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2b2b3b1: bankers' clearing houses 1868-1938
+- Committed the savings banks first (b14c4dc). C5e2b2b2b3b split: b1 (clearing houses to 1938, done), b2 (clearing houses and
+  savings banks after 1938, savings banks by nation, clearings over prices).
+- New `bidb/change_clearing.py`: the Statistical Abstract's "Amounts cleared at the London Bankers' Clearing House" and (from
+  No. 59) "at the provincial bankers' clearing houses", read from the page images (`<cache>/stat_abstract_img/cl_<volume>_<leaf>.jpg`,
+  image `page/n<leaf-1>`; leaves found from the hOCR page index) of Nos. 31, 32, 33, 42, 46, 50, 59, 62, 66, 69, 71, 78, 82, 83
+  → `clearing_london_abstract_uk.csv` (229 rows), `clearing_provincial_abstract_uk.csv` (120 rows).
+- Nos. 29 and 30 print other totals for 1868-1882 (1873: 6,182 against 6,071) with no year end stated; No. 31 labels its years
+  "ended 31st Dec." and every later edition agrees with it, so the series starts with No. 31.
+- Checks (`check`, all pass): London town + metropolitan + country = total from 1902; provincial towns = printed total (within
+  0.25: Nos. 82-83's totals come from unrounded figures); every year but 1868 compared across two to seven editions. London:
+  one revision (1883 4th of the month, 237 → 239 from No. 32). Provincial: No. 69 compiled them "from the Annual Statements of
+  the London Bankers' Clearing House" instead of the houses' own returns and revised most years 1905-1924 by 0.1 (Leeds 1916
+  28.0 → 38.5); nine other differences listed (`PROVINCIAL_REVISED`; No. 66 alone prints Newcastle 1910 as 49.4).
+- Three of my own misreadings caught: No. 59's 1905 six-month figure (6,062 for 6,082, by the editions), No. 83's 1926
+  Leicester (30.9 for 39.9, by the sum), No. 71's 1926 Liverpool (406.6 for 400.6, by the sum); each checked in a zoomed crop.
+  Manchester 1919 in Nos. 69 and 71 has a broken first figure (reads 846.1); 946.1 from the printed totals (`read` column).
+- Graphs "London Bankers' Clearing House: amounts cleared, 1868-1938" (log axis; town and country clearings as lines, the
+  metropolitan clearings in the note since only two other lines are drawn; break 1936, the District Bank admitted;
+  £3,425 million 1868, £16,436 million 1913, £44,897 million in 1929, £32,112 million in 1932) and "Provincial bankers'
+  clearing houses, 1897-1938" (Manchester, the largest every year, and Liverpool; breaks 1909 Nottingham, 1912 Bradford,
+  1921 Hull), both in the banking trade story. Source `stat_abstract_clearing_uk` (133); DATA_LICENSE.md row extended;
+  306 series.
+- Tests 456 OK (`test_change_clearing`, 5 new); ui_check change_clearing (new), change_savings, trades OK; graphs checked in a
+  screenshot of /trades?t=banking. Hosted copy not updated.

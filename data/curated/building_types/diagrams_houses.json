@@ -1,0 +1,228 @@
+{"diagrams": [
+{"id": "hall-house-sections", "type": "hall-house", "view": "section", "title": "Hall house: long section and a cruck frame",
+ "size": [480, 250],
+ "shapes": [
+  ["line", [10, 200, 340, 200], "ground"],
+  ["rect", 20, 60, 300, 140, "room"],
+  ["rect", 95, 60, 150, 140, "open"],
+  ["line", [20, 60, 20, 200], "timber"], ["line", [95, 60, 95, 200], "timber"], ["line", [170, 60, 170, 200], "timber"],
+  ["line", [245, 60, 245, 200], "timber"], ["line", [320, 60, 320, 200], "timber"],
+  ["line", [20, 215, 320, 215], "thin"], ["line", [20, 210, 20, 220], "thin"], ["line", [320, 210, 320, 220], "thin"],
+  ["line", [360, 200, 470, 200], "ground"],
+  ["path", "M375 200 Q382 115 415 60", "timber"], ["path", "M455 200 Q448 115 415 60", "timber"]
+ ],
+ "labels": [
+  {"t": "open hall", "at": [170, 125]},
+  {"t": "two bays in the middle", "at": [170, 45], "to": [170, 60]},
+  {"t": "four-bay", "at": [120, 238]},
+  {"t": "cruck-framed", "at": [415, 45], "to": [415, 62]},
+  {"t": "long section", "at": [270, 238]},
+  {"t": "cross section", "at": [415, 238]}
+ ],
+ "note": "The simplest, earliest form. The rooms of the two end bays are not named in the quoted source; heights and widths are not to scale."},
+
+{"id": "wealden-house-plan", "type": "wealden-house", "view": "plan", "title": "Wealden house: ground plan",
+ "size": [480, 230],
+ "shapes": [
+  ["rect", 40, 50, 400, 130, "room"],
+  ["rect", 140, 50, 200, 130, "open"],
+  ["rect", 40, 50, 400, 130, "wall"],
+  ["line", [140, 50, 140, 180], "wall"], ["line", [340, 50, 340, 180], "wall"],
+  ["line", [240, 50, 240, 180], "dash"], ["line", [178, 50, 178, 180], "dash"],
+  ["rect", 148, 44, 24, 12, "door"], ["rect", 148, 174, 24, 12, "door"],
+  ["circle", 265, 115, 11, "hearth"]
+ ],
+ "labels": [
+  {"t": "four bays", "at": [240, 22]},
+  {"t": "main hall", "at": [285, 80]},
+  {"t": "open to the roof", "at": [285, 96]},
+  {"t": "hearth in the middle", "at": [285, 150], "to": [265, 126]},
+  {"t": "two doors", "at": [100, 30], "to": [[160, 50], [160, 180]]},
+  {"t": "cross passage", "at": [160, 210], "to": [160, 160]}
+ ],
+ "note": "The rooms of the two end bays are not named in the quoted source. Bays drawn equal; widths not to scale."},
+
+{"id": "longhouse-elevation", "type": "longhouse", "view": "elevation", "title": "Dartmoor longhouse: side elevation down the slope",
+ "size": [480, 240],
+ "shapes": [
+  ["poly", [0, 112, 480, 210, 480, 240, 0, 240], "land"],
+  ["poly", [60, 74, 420, 147, 420, 186, 60, 120], "stone"],
+  ["poly", [60, 74, 420, 147, 420, 116, 60, 42], "roof"],
+  ["rect", 230, 125, 20, 34, "door"],
+  ["line", [240, 104, 240, 125], "dash"]
+ ],
+ "labels": [
+  {"t": "single-storey", "at": [110, 30], "to": [110, 84]},
+  {"t": "gable-ended", "at": [455, 100], "a": "end", "to": [420, 150]},
+  {"t": "central cross-passage", "at": [240, 205], "to": [240, 160]},
+  {"t": "dividing it into two rooms", "at": [240, 222]},
+  {"t": "slope of a hill", "at": [470, 236], "a": "end"}
+ ],
+ "note": "Which room housed the people and which the animals is not in the quoted source. Roof line, slope and door drawn schematically."},
+
+{"id": "blackhouse-plan", "type": "blackhouse", "view": "plan", "title": "Blackhouse: plan",
+ "size": [480, 210],
+ "shapes": [
+  ["rect", 30, 50, 420, 130, "stone", 40],
+  ["rect", 40, 60, 400, 110, "earth", 32],
+  ["rect", 50, 70, 380, 90, "stone", 24],
+  ["rect", 60, 80, 360, 70, "room", 16],
+  ["line", [290, 80, 290, 150], "wall"]
+ ],
+ "labels": [
+  {"t": "people", "at": [175, 120]},
+  {"t": "animals", "at": [355, 120]},
+  {"t": "partition", "at": [320, 200], "to": [290, 150]},
+  {"t": "double wall dry-stone walls packed with earth", "at": [240, 28], "to": [[150, 55], [150, 65]]}
+ ],
+ "note": "Which end the people had, the doors, windows and hearth are not drawn: the quoted sources do not place them."},
+
+{"id": "bastle-section", "type": "bastle", "view": "section", "title": "Bastle: cross section",
+ "size": [480, 260],
+ "shapes": [
+  ["line", [20, 220, 460, 220], "ground"],
+  ["poly", [90, 64, 230, 12, 370, 64], "roof"],
+  ["rect", 100, 64, 30, 156, "stone"], ["rect", 330, 64, 30, 156, "stone"],
+  ["rect", 130, 126, 200, 7, "stone"],
+  ["rect", 136, 133, 8, 11, "timber"], ["rect", 152, 133, 8, 11, "timber"], ["rect", 168, 133, 8, 11, "timber"],
+  ["rect", 184, 133, 8, 11, "timber"], ["rect", 200, 133, 8, 11, "timber"], ["rect", 216, 133, 8, 11, "timber"],
+  ["rect", 232, 133, 8, 11, "timber"], ["rect", 248, 133, 8, 11, "timber"], ["rect", 264, 133, 8, 11, "timber"],
+  ["rect", 280, 133, 8, 11, "timber"], ["rect", 296, 133, 8, 11, "timber"], ["rect", 312, 133, 8, 11, "timber"]
+ ],
+ "labels": [
+  {"t": "domestic use", "at": [230, 100]},
+  {"t": "animals", "at": [230, 185]},
+  {"t": "close-set oak beams", "at": [470, 175], "a": "end", "to": [316, 140]},
+  {"t": "floor of stone flags", "at": [470, 112], "a": "end", "to": [320, 129]},
+  {"t": "thick stone walls", "at": [10, 95], "a": "start", "to": [112, 110]},
+  {"t": "about one metre thick", "at": [10, 245], "a": "start", "to": [115, 220]}
+ ],
+ "note": "Doors, windows and the roof outline are not in the quoted sources and are left out or drawn plain."},
+
+{"id": "lobby-entry-plan", "type": "lobby-entry-house", "view": "plan", "title": "Lobby-entry house: ground plan",
+ "size": [480, 230],
+ "shapes": [
+  ["rect", 60, 40, 360, 140, "room"],
+  ["rect", 60, 40, 360, 140, "wall"],
+  ["rect", 215, 80, 50, 55, "walls"],
+  ["rect", 215, 135, 50, 45, "open"],
+  ["line", [215, 135, 215, 180], "thin"], ["line", [265, 135, 265, 180], "thin"],
+  ["rect", 228, 174, 24, 12, "door"]
+ ],
+ "labels": [
+  {"t": "central chimney", "at": [330, 70], "to": [262, 95]},
+  {"t": "lobby", "at": [240, 160]},
+  {"t": "front door", "at": [240, 212], "to": [240, 183]},
+  {"t": "front", "at": [440, 212], "a": "end"}
+ ],
+ "note": "The rooms either side of the stack are not named in the quoted sources and are drawn as plain space."},
+
+{"id": "double-pile-plan", "type": "double-pile-house", "view": "plan", "title": "Double pile house: plan and end elevation",
+ "size": [480, 250],
+ "shapes": [
+  ["rect", 30, 50, 200, 150, "room"],
+  ["rect", 30, 50, 200, 150, "wall"],
+  ["line", [130, 50, 130, 200], "wall"], ["line", [30, 125, 230, 125], "wall"],
+  ["line", [270, 210, 470, 210], "ground"],
+  ["poly", [290, 120, 330, 60, 370, 120], "roof"], ["poly", [370, 120, 410, 60, 450, 120], "roof"],
+  ["rect", 290, 120, 160, 90, "room"],
+  ["line", [290, 165, 450, 165], "dash"]
+ ],
+ "labels": [
+  {"t": "four rooms", "at": [130, 30]},
+  {"t": "plan", "at": [130, 228]},
+  {"t": "two parallel and equal roofs", "at": [370, 40]},
+  {"t": "two floors", "at": [370, 150]},
+  {"t": "end elevation", "at": [370, 238]}
+ ],
+ "note": "Rooms drawn equal, as the quoted definition says; doors, stair and chimneys are not placed by it and are left out."},
+
+{"id": "bylaw-terrace-plan", "type": "bylaw-terrace", "view": "plan", "title": "Byelaw terrace: ground plan of three houses",
+ "size": [600, 290],
+ "shapes": [
+  ["rect", 0, 250, 600, 40, "yard"],
+  ["rect", 20, 30, 390, 80, "yard"],
+  ["rect", 20, 110, 390, 130, "room"],
+  ["rect", 20, 162, 390, 14, "stair"],
+  ["line", [20, 162, 410, 162], "thin"], ["line", [20, 176, 410, 176], "thin"],
+  ["rect", 20, 110, 390, 130, "wall"],
+  ["line", [150, 30, 150, 240], "wall"], ["line", [280, 30, 280, 240], "wall"],
+  ["line", [20, 30, 410, 30], "wall"], ["line", [20, 30, 20, 110], "wall"], ["line", [410, 30, 410, 110], "wall"],
+  ["rect", 120, 32, 26, 22, "room"], ["rect", 250, 32, 26, 22, "room"], ["rect", 380, 32, 26, 22, "room"]
+ ],
+ "labels": [
+  {"t": "front living room", "at": [85, 212]},
+  {"t": "back dining room", "at": [85, 140]},
+  {"t": "stair column", "at": [420, 172], "a": "start", "to": [405, 169]},
+  {"t": "running parallel to the street", "at": [420, 188], "a": "start"},
+  {"t": "long, narrow private yard", "at": [420, 80], "a": "start", "to": [380, 80]},
+  {"t": "privy", "at": [420, 48], "a": "start", "to": [406, 44]},
+  {"t": "back wall", "at": [420, 20], "a": "start", "to": [400, 30]},
+  {"t": "street", "at": [215, 274]},
+  {"t": "through houses", "at": [420, 124], "a": "start"}
+ ],
+ "note": "Doors, windows, fireplaces and the room above are not drawn; widths and the length of the yard are not to scale."},
+
+{"id": "back-to-back-plan", "type": "back-to-back-house", "view": "plan", "title": "Back-to-back houses: plan of a double row",
+ "size": [480, 280],
+ "shapes": [
+  ["rect", 40, 50, 400, 160, "room"],
+  ["rect", 40, 50, 400, 160, "wall"],
+  ["line", [40, 130, 440, 130], "wall"],
+  ["line", [140, 50, 140, 210], "wall"], ["line", [240, 50, 240, 210], "wall"], ["line", [340, 50, 340, 210], "wall"],
+  ["rect", 60, 44, 18, 12, "door"], ["rect", 160, 44, 18, 12, "door"], ["rect", 260, 44, 18, 12, "door"], ["rect", 360, 44, 18, 12, "door"],
+  ["rect", 60, 204, 18, 12, "door"], ["rect", 160, 204, 18, 12, "door"], ["rect", 260, 204, 18, 12, "door"], ["rect", 360, 204, 18, 12, "door"],
+  ["rect", 95, 47, 30, 6, "window"], ["rect", 195, 47, 30, 6, "window"], ["rect", 295, 47, 30, 6, "window"], ["rect", 395, 47, 30, 6, "window"],
+  ["rect", 95, 207, 30, 6, "window"], ["rect", 195, 207, 30, 6, "window"], ["rect", 295, 207, 30, 6, "window"], ["rect", 395, 207, 30, 6, "window"]
+ ],
+ "labels": [
+  {"t": "share party walls", "at": [240, 22], "to": [[240, 70], [140, 110]]},
+  {"t": "on two or three of their four sides", "at": [240, 36]},
+  {"t": "front wall having the only door and windows", "at": [440, 240], "a": "end", "to": [300, 212]},
+  {"t": "a single room on each floor", "at": [40, 268], "a": "start", "to": [90, 180]}
+ ],
+ "note": "Four houses a row drawn; rows were longer or set round courts. Sizes not to scale."},
+
+{"id": "cottage-section", "type": "cottage", "view": "section", "title": "Cottage: long section, two up, two down",
+ "size": [480, 250],
+ "shapes": [
+  ["line", [40, 210, 440, 210], "ground"],
+  ["poly", [70, 92, 240, 22, 410, 92], "roof"],
+  ["rect", 80, 92, 320, 118, "room"],
+  ["rect", 80, 92, 320, 118, "wall"],
+  ["line", [80, 150, 400, 150], "wall"], ["line", [240, 92, 240, 210], "thin"]
+ ],
+ "labels": [
+  {"t": "four basic rooms", "at": [160, 125]},
+  {"t": "two up, two down", "at": [240, 235]},
+  {"t": "thatch", "at": [450, 45], "a": "end", "to": [330, 58]},
+  {"t": "slates", "at": [450, 62], "a": "end"}
+ ],
+ "note": "Thatch in wheat-growing areas, slate where it was found, as the quoted source says; doors, stair, windows and chimneys are not placed by it."},
+
+{"id": "roman-villa-plans", "type": "roman-villa", "view": "plan", "title": "Roman villa: a range with a portico, and round a courtyard",
+ "size": [480, 260],
+ "shapes": [
+  ["rect", 20, 80, 200, 60, "room"],
+  ["rect", 20, 80, 200, 60, "wall"],
+  ["line", [60, 80, 60, 140], "wall"], ["line", [100, 80, 100, 140], "wall"], ["line", [140, 80, 140, 140], "wall"], ["line", [180, 80, 180, 140], "wall"],
+  ["rect", 20, 140, 200, 24, "open"],
+  ["circle", 30, 160, 3, "stone"], ["circle", 70, 160, 3, "stone"], ["circle", 110, 160, 3, "stone"], ["circle", 150, 160, 3, "stone"],
+  ["circle", 190, 160, 3, "stone"], ["circle", 216, 160, 3, "stone"],
+  ["rect", 260, 30, 200, 190, "room"],
+  ["rect", 300, 70, 120, 150, "open"],
+  ["rect", 320, 90, 80, 130, "yard"],
+  ["rect", 260, 30, 200, 190, "wall"],
+  ["line", [300, 70, 300, 220], "wall"], ["line", [420, 70, 420, 220], "wall"], ["line", [300, 70, 420, 70], "wall"],
+  ["line", [260, 110, 300, 110], "wall"], ["line", [260, 160, 300, 160], "wall"], ["line", [420, 110, 460, 110], "wall"],
+  ["line", [420, 160, 460, 160], "wall"], ["line", [340, 30, 340, 70], "wall"], ["line", [380, 30, 380, 70], "wall"]
+ ],
+ "labels": [
+  {"t": "wings of rooms", "at": [120, 60]},
+  {"t": "linking portico", "at": [120, 190], "to": [120, 152]},
+  {"t": "extended at right angles", "at": [360, 20]},
+  {"t": "enclose a courtyard", "at": [360, 158]},
+  {"t": "linking portico", "at": [360, 245], "to": [310, 200]}
+ ],
+ "note": "Two arrangements the quoted source names. The number and size of rooms, and the side open to the courtyard, are not from it."}
+]}

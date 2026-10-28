@@ -7,13 +7,13 @@ mapped to them (bidb.type_stats, bidb.material_stats).
     type      one type: definition, period, structure, plan, links in and out with their sources, the materials
               the curated file gives it and those found in its records, examples, by nation and century, map;
               what came before and after and its first example per county (bidb.type_charts, BT5); plans of
-              real examples (catalogue records with a Commons plan, BT6b)
+              real examples (catalogue records with a Commons plan, BT6b); labelled diagrams (bidb.type_diagrams, BT6c)
     materials every material and technique by group, with counts
     material  one material: definition, period, regions, technology, geology, links, building types (curated and
               among its records), examples with the evidence sentence, by nation and century, map
     here      the types and materials of one record or place (detail views)
 """
-from . import building_materials, building_types, material_stats, type_charts, type_stats
+from . import building_materials, building_types, material_stats, type_charts, type_diagrams, type_stats
 
 FISH_URL = "https://www.heritagedata.org/live/schemes/{}/concepts/{}.html"
 TOP = 12                    # materials of a type's records, types of a material's records
@@ -103,6 +103,7 @@ def type_page(conn, type_id, data=None, mdata=None):
     d["chains"] = type_charts.chains(type_id, data)                                  # BT5
     d["spread"] = [] if d.get("abroad") else type_charts.spread(conn, type_id, data)
     d["plans"] = [] if d.get("abroad") else plans(conn, type_id, t)                    # BT6b
+    d["diagrams"] = type_diagrams.for_type(type_id, data)                                # BT6c
     return d
 
 

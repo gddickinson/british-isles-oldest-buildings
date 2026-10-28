@@ -2261,3 +2261,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   oldest first) → "Plans of real examples" on the type page (`types_view.js`, `.ty-plans`), links only in the hosted
   copy (`static_types` row key `pl`). 61 types have one (castle 123, country house 53, church 49). Test in
   `test_type_pages`; castle page checked in a screenshot. Hosted copy not updated.
+
+## 2026-10-28 — BT6c1: labelled diagrams of building types
+- New `bidb/type_diagrams.py` and `data/curated/building_types/diagrams_houses.json`, `diagrams_monuments.json`:
+  22 diagrams (plans, sections, elevations) of 22 types as simple shapes, drawn by `app/static/types_diagram.js`
+  (`TypeDiagram`, classes `td-*` in types.css, theme colours) in a "Diagrams" section of the type page, before the
+  plans of real examples; hosted copy carries them in the type pages unchanged.
+- Rule: every label is found word for word (case, punctuation and hyphens ignored) in a quote of the type's own
+  sources marked `about` plan or structure, or is an orientation word ("plan", "section", "west"…); `validate`
+  enforces it, so labels come from the quotes, not the curated summaries (e.g. the hall house has no "cross passage"
+  label: its plan quote does not say so). Each diagram lists the quotes it is drawn from and a note of what is
+  schematic. Martello tower to its quoted 12 m height and 2.4 m walls; ringfort to its 30 m average.
+- Tests 445 OK (`test_type_diagrams`, 7 new); ui_check type_diagram (new), type_page, types, type_chains OK; every
+  diagram checked in a screenshot and labels moved where they clipped. Hosted copy not updated.
+- BT6c split: BT6c2 (Commons plans of terraces, cottages, inns; more diagrams once plans have quotes) left open.

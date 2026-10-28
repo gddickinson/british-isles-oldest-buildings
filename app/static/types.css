@@ -89,3 +89,36 @@
 .ty-bedrock .tt-legend { margin: 6px 0 4px; }
 .ty-bedrock .tt-legend span { display: inline-flex; align-items: center; gap: 5px; }
 .ty-bedrock .tt-legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; }
+/* BT6c: labelled diagrams of a type */
+.td-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 14px; margin: 8px 0 12px; }
+.td-fig { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+.td-fig figcaption { font-size: .88em; margin-top: 4px; }
+.td-svg { width: 100%; height: auto; display: block; background: var(--surface); border-radius: 4px; }
+.td-svg * { vector-effect: non-scaling-stroke; }
+.td-room { fill: var(--panel); stroke: var(--ink); stroke-width: 1; }
+.td-open { fill: color-mix(in srgb, var(--g4) 22%, var(--panel)); stroke: var(--ink); stroke-width: 1; }
+.td-chamber { fill: color-mix(in srgb, var(--g4) 22%, var(--panel)); stroke: var(--ink); stroke-width: 2; }
+.td-wall { fill: none; stroke: var(--ink); stroke-width: 4; }
+.td-walls { fill: var(--ink); stroke: none; }
+.td-stone { fill: color-mix(in srgb, var(--g-other) 55%, var(--panel)); stroke: var(--ink); stroke-width: 1; }
+.td-cairn { fill: color-mix(in srgb, var(--g-other) 30%, var(--panel)); stroke: var(--muted); stroke-width: 1; }
+.td-kerb { fill: color-mix(in srgb, var(--g-other) 30%, var(--panel)); stroke: var(--ink); stroke-width: 3; }
+.td-timber { fill: color-mix(in srgb, var(--g11) 55%, var(--panel)); stroke: var(--g11); stroke-width: 2; }
+.td-earth { fill: color-mix(in srgb, var(--g11) 28%, var(--panel)); stroke: var(--g11); stroke-width: 1; }
+.td-bank { fill: none; stroke: color-mix(in srgb, var(--g11) 60%, var(--panel)); stroke-width: 12; }
+.td-ditch { fill: none; stroke: color-mix(in srgb, var(--g12) 45%, var(--panel)); stroke-width: 9; }
+.td-water { fill: color-mix(in srgb, var(--g1) 30%, var(--panel)); stroke: none; }
+.td-land { fill: color-mix(in srgb, var(--g13) 22%, var(--panel)); stroke: var(--g13); stroke-width: 1; }
+.td-yard { fill: color-mix(in srgb, var(--g13) 12%, var(--panel)); stroke: none; }
+.td-roof { fill: color-mix(in srgb, var(--g19) 35%, var(--panel)); stroke: var(--ink); stroke-width: 1; }
+.td-gap { fill: var(--surface); stroke: none; }
+.td-door { fill: var(--surface); stroke: none; }
+.td-window { fill: color-mix(in srgb, var(--g1) 25%, var(--panel)); stroke: var(--ink); stroke-width: 1; }
+.td-hearth { fill: color-mix(in srgb, var(--g8) 55%, var(--panel)); stroke: var(--ink); stroke-width: 1; }
+.td-stair { fill: color-mix(in srgb, var(--g-other) 20%, var(--panel)); stroke: var(--ink); stroke-width: 1; stroke-dasharray: 2 2; }
+.td-dash { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; }
+.td-thin { fill: none; stroke: var(--ink); stroke-width: 1; }
+.td-ground { fill: none; stroke: var(--g11); stroke-width: 2; }
+.td-leader { stroke: var(--muted); stroke-width: 1; }
+.td-tip { fill: var(--muted); }
+.td-label { font-size: 12px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }

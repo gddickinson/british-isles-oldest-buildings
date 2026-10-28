@@ -128,7 +128,7 @@ const TypeView = (() => {
       ${earliest(d.earliest, "Standing or a ruin, of which this is the main type, not dated from the type itself and not too early.")}
       <div class="ty-grid"><div><h4>Begun per century</h4><div class="ty-century"></div><h4>By nation</h4><div class="ty-nation"></div></div>
         <div><div class="ty-map stories-map"></div><p class="hint">Blue: catalogue records, orange: places; faint where it is not the main type.</p></div></div>
-      <div class="ty-spread"></div>${TypeDiagram.html(d.diagrams)}${plans(d.plans)}
+      <div class="ty-spread"></div>${typeof TypeDiagram === "undefined" ? "" : TypeDiagram.html(d.diagrams)}${plans(d.plans)}
       ${examples(d.examples || [], null, d.dated)}`}
       <h3>Sources</h3>${sourceList(t.sources) || '<p class="hint">The period and links cite their sources above.</p>'}`;
     if (!d.abroad) { charts(box, d); drawMap(box, d.points); TypeTime.spread(box.querySelector(".ty-spread"), d.spread); }

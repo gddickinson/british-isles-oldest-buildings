@@ -1177,15 +1177,15 @@
   "checked": "2026-10-25, CSV downloaded"
  },
  "stat_abstract_shipping_uk": {
-  "short": "Statistical Abstract for the UK: shipping registered and built, 1884-1938",
+  "short": "Statistical Abstract for the UK: shipping registered 1848-1938 and built 1897-1938",
   "publisher": "Board of Trade (HMSO)",
-  "citation": "Statistical Abstract for the United Kingdom (annual, HMSO), tables of the total number and tonnage of vessels registered belonging to the United Kingdom at the end of each year and of vessels built in the United Kingdom: No. 46 (1884-1898), table 60, p. 177; No. 59 (1897-1911), tables 70 and 71, p. 312; No. 70 (1911-1925), tables 191 and 192, pp. 274-275; No. 83 (1924-1938), tables 269 and 270, pp. 360-361. Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "citation": "Statistical Abstract for the United Kingdom (annual, HMSO), tables of the total number and tonnage of vessels registered belonging to the United Kingdom at the end of each year and of vessels built in the United Kingdom: No. 10 (1848-1862), table 35, p. 69; No. 13 (1851-1865), table 36, p. 91; No. 26 (1864-1878), table 40, p. 100; No. 32 (1870-1884), table 54, p. 127; No. 45 (1883-1897), table 60, p. 175; No. 46 (1884-1898), table 60, p. 177; No. 59 (1897-1911), tables 70 and 71, p. 312; No. 70 (1911-1925), tables 191 and 192, pp. 274-275; No. 83 (1924-1938), tables 269 and 270, pp. 360-361. Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
   "licence": "Public domain (Crown copyright expired)",
   "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
   "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
-  "used": "Merchant fleet registered 1884-1938 and ships built 1897-1938, net tons, read from the page images (data/curated/change/data/shipping_registered_abstract_uk.csv, shipping_built_abstract_uk.csv; every row's parts checked against its total, the editions' overlapping years equal) (roadmap C5e1)",
-  "checked": "2026-10-25, page images read"
+  "used": "Merchant fleet registered 1848-1938 and ships built 1897-1938, net tons, read from the page images (data/curated/change/data/shipping_registered_abstract_uk.csv, shipping_built_abstract_uk.csv; every row's parts checked against its total, the editions' overlapping years equal) (roadmap C5e1, C5e2a: 1848-1883; 1883's steam tonnage from No. 45, misprinted 3,728,263 in Nos. 31 and 32)",
+  "checked": "2026-10-27, page images read"
  },
  "hansard_tea_duty": {
   "short": "Hansard, tea duty in the Budgets 1852-1865, 1949 and 1963",

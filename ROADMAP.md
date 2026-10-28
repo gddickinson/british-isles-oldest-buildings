@@ -521,9 +521,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       1884-1938" (all, steam and motor, sail; Statistical Abstract Nos. 46, 59, 70, 83, every row's parts checked, the
       editions' overlaps equal): 7.4 million net tons in 1884, 12.4 in 1914, 10.1 in 1918, 10.7 in 1938; sail 3.5 → 0.4;
       "Merchant ships built in the UK, 1897-1938" (1,200 thousand tons in 1913, 84 in 1933).
-- [ ] C5e2 The rest of C5e: shipping before 1884 (the multi-volume scans Nos. 8-13, 23-26, 31-33: their page views
-      did not match the OCR leaf numbers; the registered tons of the old measurement need a break) and since 1938 (DfT
-      FLE0101 1997-); steam power as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks
+- [x] C5e2a (2026-10-27; C5e2 split) Merchant fleet registered 1848-1883: "Merchant fleet registered in the UK" now
+      runs 1848-1938, read from the page images of Statistical Abstract No. 10 (table 35, p. 69, 1848-50), No. 13
+      (table 36, p. 91, 1851-63), No. 26 (table 40, p. 100, 1864-69), No. 32 (table 54, p. 127, 1870-82) and No. 45
+      (table 60, p. 175, 1883); in these multi-volume scans the image `page/n<leaf-1>` is the OCR leaf. Every row's
+      sail + steam equals its printed total; the overlaps agree figure for figure (1851-62 Nos. 10/13, 1864-65 Nos.
+      13/26, 1870-78 Nos. 26/32, 1884 Nos. 32/46) except 1883's steam tonnage (3,728,263 in Nos. 31 and 32, 3,728,268
+      in No. 45, which adds to the total; `MISPRINTS`). Nos. 8 and 9 have no table of registered ships. 3.40 million
+      net tons in 1848 (0.15 steam), sail at its peak 4.94 million in 1865, steam (net) overtook sail in 1883. No
+      break marked for the Merchant Shipping Act 1854's measurement: the tables print no note of it and the line shows
+      no jump at 1855 (ships were re-measured over years).
+- [ ] C5e2b The rest of C5e: shipping since 1938 (DfT FLE0101 1997-; the Annual Abstracts to 1975), ships built before
+      1897 (the earlier tables leave out ships built for foreigners: a line of its own, or a break); steam power as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks
       (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual reports 2002-, quote
       figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996

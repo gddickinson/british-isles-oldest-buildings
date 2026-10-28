@@ -2084,3 +2084,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - New sources `wood_1899_wages`, `est_wages_bowley1900` (125); 276 series. Tests OK (new `test_change_wages_early`);
   ui_check change_wages (now requires the new graph), change_tea, trades OK; graph checked in a screenshot. Page
   images cached in `<cache>/labour_abstract/` (ej1899_p588, ej1899_p591, bowley1900_p126). Hosted copy not updated.
+
+## 2026-10-27 — C5e2a: merchant fleet registered 1848-1883
+- C5e2 split: C5e2a (done), C5e2b (shipping since 1938, ships built before 1897, steam power, banks, Irish patents).
+- "Merchant fleet registered in the UK" now runs 1848-1938 (`bidb/change_shipping.py`, `FIRST`, `MISPRINTS`): 36 rows
+  added to `shipping_registered_abstract_uk.csv` from the page images of Statistical Abstract No. 10 (table 35, p. 69,
+  leaf 217), No. 13 (table 36, p. 91, leaf 525), No. 26 (table 40, p. 100, leaf 510), No. 32 (table 54, p. 127, leaf
+  305) and No. 45 (table 60, p. 175, leaf 179), cached as `<cache>/stat_abstract_img/n10_217.jpg` ... `n45_179.jpg` (also
+  `n31_127.jpg`). The leaf problem noted in C5e1 is gone: in these multi-volume scans `page/n<leaf-1>` is the OCR leaf.
+- Checks: every row adds up; overlaps equal (1851-62, 1864-65, 1870-78, 1884); 1883's steam tonnage is 3,728,263 in
+  Nos. 31 and 32 (both images) but 3,728,268 in No. 45, which adds to the printed total: No. 45 used. Nos. 8 and 9 have
+  no registered-fleet table, so the line starts in 1848.
+- 3.40 million net tons in 1848 (0.15 steam), 5.76 in 1865 (sail's peak, 4.94), 7.41 in 1884; steam (net) overtook
+  sail in 1883. No break for the 1854 Act's tonnage rule (no printed note, no jump at 1855); Wikipedia's API did not
+  answer this evening, so the rule is not quoted in the note.
+- Source `stat_abstract_shipping_uk` updated. Tests 418 OK (`test_change_shipping`: years, editions, the misprint); new
+  ui_check `change_shipping` OK, change_wages and trades OK; graph checked in a screenshot. Hosted copy not updated.

@@ -2,6 +2,9 @@
 long-run RPI, bidb.change_prices), stretches that cannot be joined (different measures, and no open index for
 1939-1999 found):
 
+- 1790-1860 (C5d2b2b, bidb.change_wages_early): Wood's money wages in towns (1840 = 100) and the same over the RPI from
+  1800, with Bowley's 1900 index numbers by decade as estimate dots; a graph of its own.
+
 - 1879-1913: the Board of Trade's "Index numbers showing general course of wages in the United Kingdom", wages in
   1900 = 100: 1879 from the Sixteenth Abstract of Labour Statistics (Cd. 7131, 1914), p. 82 (Internet Archive
   `op1256492-1001`, leaf 107), 1880-1913 from the Seventeenth (1915; `op1256333-1001`, leaf 90, p. 66), which revised
@@ -32,10 +35,10 @@ import json
 import re
 import sys
 
-from . import change_prices, change_wages_post
+from . import change_prices, change_wages_early, change_wages_post
 from .change_firms import DATA
 from .change_registers import _csv, _row
-from .change_work import _ons
+from .change_work import _est_csv, _ons
 
 BOT = DATA / "wages_bot_1879_1913.csv"
 MOL = DATA / "wages_mol_1924_1938.csv"
@@ -142,7 +145,8 @@ NOTE_RATES = ("Wage rates divided by prices: what a week's wage at the standard 
               "later, as prices fell first; the wage cuts of 1922 took them back to {w1922:.0f}, and as prices then "
               "fell faster than money rates they reached {w1934:.0f} at the end of 1934. On the 1924 base, "
               "money rates fell to {m1933:.1f} in 1933 and real rates rose to {w1933:.1f} in 1933 and {w1938:.1f} in "
-              "1938. The Ministry's later index, on four bases from September 1939, is drawn in \"Real wage rates, 1935-1975\".")
+              "1938. The Ministry's later index, on four bases from September 1939, is drawn in \"Real wage rates, 1935-1975\"; "
+              "wages before 1861 in \"Wages in towns, 1790-1860\".")
 NOTE_POST = ("The Ministry of Labour's index of weekly full-time wage rates (all workers, all industries and services; "
              "later titled the index of basic wage rates of manual workers, from 1970 the Department of Employment's) at the end of June each "
              "year, divided by the year's Retail Prices Index (ONS long-run series), 1939 = 100. The index was based four "
@@ -237,7 +241,9 @@ def series(bot, mol, war, pounds, prices, post, back):
 
 def write(points, rows):
     for sid, p in points.items():
-        if any(isinstance(v, tuple) for v in p.values()):          # value, low, high
+        if isinstance(p, list):                                     # estimate dots
+            _est_csv(sid, p)
+        elif any(isinstance(v, tuple) for v in p.values()):          # value, low, high
             with open(DATA / f"{sid}.csv", "w", newline="") as f:
                 w = csv.writer(f)
                 w.writerow(["year", "value", "low", "high"])
@@ -252,11 +258,14 @@ def write(points, rows):
 
 def run(log=print):
     bot = load_bot()
-    bad = check(bot) + change_wages_post.check()
+    bad = check(bot) + change_wages_post.check() + change_wages_early.check()
     if bad:
         raise ValueError("; ".join(bad))
-    points, rows = series(bot, load_mol(), load_war(), awe(log), change_prices.rpi(log),
+    prices = change_prices.rpi(log)
+    points, rows = series(bot, load_mol(), load_war(), awe(log), prices,
                           change_wages_post.chain(change_wages_post.load()), awe_back(log))
+    early, early_rows = change_wages_early.series(prices)
+    points, rows = {**early, **points}, early_rows + rows
     write(points, rows)
     for r in rows:
         log(f"{r['id']}: {(r.get('note') or '')[-220:]}")

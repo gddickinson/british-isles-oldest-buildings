@@ -2063,3 +2063,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   change_wages (now requires the 1963 graph), change_tea, trades OK; graph checked in a screenshot. ONS series API
   searched for the code (`api.beta.ons.gov.uk/v1/search`); the ONS website rate-limits quick requests (Cloudflare
   1015). Hosted copy not updated.
+
+## 2026-10-27 — C5d2b2b: wages before 1879
+- C2d2b2 and C5b3 (books not open) skipped; C5d2b2b was the next workable item.
+- New graph "Wages in towns, 1790-1860" (`wages_real_wood_uk`, 1840 = 100), new `bidb/change_wages_early.py` (read by
+  bidb.change_wages). Wood 1899 (Economic Journal 9, 588-592; "Table showing course of average wages in towns,
+  1790-1860", p. 591): all 24 towns and the average read from the page image (Internet Archive
+  `sim_economic-journal_march-december-1899_9_33-36`, image n598; the OCR had dropped columns) into
+  `wages_wood_1790_1860.csv`. `check`: each printed average within a point of the mean of its towns, except 1860
+  (116 printed, as Bowley's; the towns give 117.4; `KNOWN`). Wood's text checked too (+69% 1790-1810, -19% 1810-1845,
+  +14% 1850-55; tested).
+- Lines: money wages (Wood) 1790-1860, and real wages over the ONS RPI 1800-1860 (to 1810 over the mean of the year
+  and those beside it): 72 in 1800, 96 in 1810, 100 in 1840, 135 in 1850, 138 in 1860; the note quotes Bowley's
+  warning on price indexes and says 1840 was a dear year (prices -24% to 1850).
+- Dots: Bowley 1900, p. 126 (Cornell scan `cu31924032453502`, image n153), money wages by decade 1780-1899 on
+  1890-99 = 100 "which our work indicates, but which are not yet established", in estimates.json (model
+  `wages_bowley1900`, quote and page per figure), drawn on 1840-50 = 100 at mid-decade, the ranges as bars.
+- Not found open: Wood's 1909 JRSS real wages, Bowley's 1895 JRSS index (no such JRSS volumes on the Internet
+  Archive), so 1861-78 has Bowley's decade dots only. The 1879-1938 graph's note points to the new graph.
+- New sources `wood_1899_wages`, `est_wages_bowley1900` (125); 276 series. Tests OK (new `test_change_wages_early`);
+  ui_check change_wages (now requires the new graph), change_tea, trades OK; graph checked in a screenshot. Page
+  images cached in `<cache>/labour_abstract/` (ej1899_p588, ej1899_p591, bowley1900_p126). Hosted copy not updated.

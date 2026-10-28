@@ -1244,5 +1244,26 @@
   "quote": "These back series are provided with a warning stating clearly that they are modelled estimates and do not come with the same methodological assurances on quality as estimates from January 2000 onwards. The historic time series do not have the same National Statistics status as the series from January 2000 onwards",
   "used": "Average weekly earnings 1963-1999 at 2025 prices, dashed as modelled (deflated by CDKO) (roadmap C5d2b2)",
   "checked": "2026-10-27, CSV downloaded (monthly January 1963 to December 1999); EARN02 notes read"
+ },
+ "wood_1899_wages": {
+  "short": "Wood 1899, The Course of Average Wages between 1790 and 1860",
+  "citation": "Wood, G. H. (1899) The Course of Average Wages between 1790 and 1860. The Economic Journal 9 (36), 588-592 (read to the British Association, Section F, Dover, 19 September 1899). Table showing course of average wages in towns, 1790-1860 (1840 = 100), p. 591. Page images: Internet Archive, sim_economic-journal_march-december-1899_9_33-36 (image n598).",
+  "publisher": "Macmillan for the British Economic Association",
+  "licence": "Public domain (author died 1940; published 1899)",
+  "licence_url": "",
+  "licence_quote": "George Henry Wood (1874-1940): the paper is out of copyright in the UK since the end of 2010.",
+  "url": "https://archive.org/details/sim_economic-journal_march-december-1899_9_33-36",
+  "used": "Money wages in towns 1790-1860, the printed average of 24 towns and districts, and, over the ONS long-run RPI, real wages 1800-1860 (data/curated/change/data/wages_wood_1790_1860.csv; roadmap C5d2b2b)",
+  "checked": "2026-10-27, page image read (p. 591); every printed average within a point of the mean of its towns except 1860 (116 printed, 117.4)"
+ },
+ "est_wages_bowley1900": {
+  "short": "Bowley 1900, Wages in the United Kingdom in the Nineteenth Century",
+  "citation": "Bowley, A. L. (1900) Wages in the United Kingdom in the Nineteenth Century: Notes for the Use of Students of Social and Economic Questions. Cambridge: Cambridge University Press. Index numbers of money wages by decade, 1780-1899, p. 126.",
+  "url": "https://archive.org/details/cu31924032453502",
+  "licence": "Published figures cited as facts (no open licence)",
+  "licence_url": "",
+  "licence_quote": "Bowley died in 1957, so the book is in copyright in the UK until the end of 2027; its figures are quoted with page.",
+  "used": "Money wages by decade 1780-1899 as estimate dots, rebased to 1840-50 = 100 (see data/curated/change/estimates.json for the quote of each figure; roadmap C5d2b2b)",
+  "checked": "2026-10-27, page image read (p. 126, image n153)"
  }
 }

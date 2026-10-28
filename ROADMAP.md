@@ -8,8 +8,8 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 273
-  series, 73 events, 23 map layers, 19 notes, 123 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 276
+  series, 73 events, 23 map layers, 19 notes, 125 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -505,9 +505,18 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       methodological assurances on quality as estimates from January 2000 onwards", quoted) under KAB9. £321 a week in
       1963 at 2025 prices, £741 in 1999 against KAB9's £740 in 2000; real earnings fell only in 1976-77 and 1995; +50%
       1963-1975 against +35% for real wage rates. New source `ons_md9m` (123).
-- [ ] C5d2b2b Wages before 1879: Phelps Brown–Hopkins 1956 (Economica; JSTOR, not open) quoted per figure as estimate
-      dots; Bowley's Wages and Income since 1860 (1937) is a restricted lending copy; Bowley's and Wood's 19th-century
-      tables in the JRSS (1898-1910, public domain, on the Internet Archive or JSTOR's early journal content) as a lead.
+- [x] C5d2b2b (2026-10-27) Wages before 1879 (new `bidb/change_wages_early.py`): graph "Wages in towns, 1790-1860"
+      (1840 = 100). G. H. Wood, "The Course of Average Wages between 1790 and 1860" (Economic Journal 9, 1899, p. 591;
+      public domain, Internet Archive periodicals scan): money wages in 24 towns and districts and their unweighted
+      average (72 in 1790, 122 in 1810, 99 in 1845, 116 in 1860), every figure read from the page image
+      (`wages_wood_1790_1860.csv`), each printed average within a point of its towns' mean except 1860 (116 printed,
+      117.4). Real wages over the ONS RPI from 1800 (to 1810 over three years, as Wood's years stand for short
+      periods): 72 in 1800, 96 in 1810, 138 in 1860 (1840 a dear year). Bowley's money-wage index numbers by decade
+      1780-1899 ("not yet established", Wages in the United Kingdom in the Nineteenth Century, 1900, p. 126; quoted per
+      figure in estimates.json) as estimate dots on 1840-50 = 100: 67 in the 1780s, 112 in the 1810s, 167 in the 1890s.
+      New sources `wood_1899_wages`, `est_wages_bowley1900` (125). Not found open: Wood's 1909 JRSS real wages 1850-1902
+      and Bowley's 1895 JRSS index 1860-91 (no JRSS volumes of those years on the Internet Archive), Phelps
+      Brown–Hopkins (JSTOR); so 1861-1878 has only Bowley's decade dots.
 - [x] C5e1 (2026-10-25; C5e split) Shipping (new `bidb/change_shipping.py`): "Merchant fleet registered in the UK,
       1884-1938" (all, steam and motor, sail; Statistical Abstract Nos. 46, 59, 70, 83, every row's parts checked, the
       editions' overlaps equal): 7.4 million net tons in 1884, 12.4 in 1914, 10.1 in 1918, 10.7 in 1938; sail 3.5 → 0.4;

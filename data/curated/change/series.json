@@ -4730,6 +4730,61 @@
   "note": "Merchant ships built in the United Kingdom each year, thousand net tons, ships for foreign owners included, from the Statistical Abstract (Nos. 59, 70, 83). 1200 thousand tons in 1913; 410 in 1915; 1278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before)."
  },
  {
+  "id": "wages_real_wood_uk",
+  "theme": "Prosperity and work",
+  "title": "Wages in towns, 1790-1860",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index, 1840 = 100",
+  "label": "real wages, 1800-1860",
+  "sources": [
+   "wood_1899_wages",
+   "ons_cdko",
+   "est_wages_bowley1900"
+  ],
+  "file": "wages_real_wood_uk.csv",
+  "default": false,
+  "models": [
+   "wages_money_wood_uk",
+   "wages_bowley_est"
+  ],
+  "note": "Wages before the Board of Trade's index (drawn from 1879 in \"Real wage rates, 1879-1938\"), 1840 = 100. Money wages: G. H. Wood's index of average wages in towns (1899), the unweighted average of 24 towns and districts (London, Manchester, Glasgow, Dublin, Leeds, Sheffield, the Durham and Northumberland and the South of Scotland coalfields, Monimail in Fife and Glamorgan for rural artisans and labourers...), all trades for which he found figures, agriculture left out; a town's line is led by its staple trade. To 1810 \"each year stated may, therefore, best be considered as the middle year of a short period\". Real wages: the same over the ONS's long-run Retail Prices Index (to 1810 the mean of the year and those beside it), from 1800 when the RPI begins. Bowley warned in 1900 that \"it is unfortunate that we cannot with safety use index numbers of wholesale prices as a measure of the purchasing power of the workman's wages\"; the RPI before 1914 is itself joined from older estimates, and 1840 was a dear year (prices fell 24% to 1850), so the real line rises sharply after it. Money wages rose 69% from 1790 to 1810 and fell 19% from 1810 to 1845 (Wood: \"the increase (69 per cent.) which took place between 1790 and 1810; the decrease (19 per cent.) between 1810 and 1845\"); real wages were 72 in 1800, 96 in 1810 and 138 in 1860. Dots: Bowley's index numbers by decade (1900), \"which our work indicates, but which are not yet established\", printed on 1890-99 = 100 and drawn here on 1840-50 = 100 at mid-decade, ranges as bars: 67 in the 1780s, 112 in the 1810s, 167 in the 1890s. Wood's printed average for 1860 (116, as Bowley's) is 1.4 below the mean of the towns he prints for that year.",
+  "zero": false
+ },
+ {
+  "id": "wages_money_wood_uk",
+  "theme": "Prosperity and work",
+  "title": "Money wages in towns (Wood 1899)",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index, 1840 = 100",
+  "label": "money wages (Wood)",
+  "sources": [
+   "wood_1899_wages"
+  ],
+  "file": "wages_money_wood_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": false
+ },
+ {
+  "id": "wages_bowley_est",
+  "theme": "Prosperity and work",
+  "title": "Money wages by decade (Bowley 1900)",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index, 1840-50 = 100",
+  "label": "money wages by decade (Bowley, estimates)",
+  "sources": [
+   "est_wages_bowley1900"
+  ],
+  "file": "wages_bowley_est.csv",
+  "default": false,
+  "hidden": true,
+  "style": "estimates",
+  "zero": false
+ },
+ {
   "id": "wages_real_uk",
   "theme": "Prosperity and work",
   "title": "Real wage rates, 1879-1938",
@@ -4750,7 +4805,7 @@
    "wages_real_1914_uk",
    "wages_real_1924_uk"
   ],
-  "note": "Wage rates divided by prices: what a week's wage at the standard rates would buy, three lines on their own bases. 1879-1913: the Board of Trade's index of the general course of wages (unweighted mean of building, coal mining, engineering, textiles and agriculture), 1900 = 100, over the ONS's long-run Retail Prices Index. 1914-1934: July 1914 = 100, wage rates over the official cost-of-living index at the same date, the band showing the range printed: to 1919 Bowley's rough average of time rates in July (1921), from 1920 the Ministry of Labour's estimate of the average increase in weekly full-time rates at the end of each year (the cost of living at the beginning of the next January). 1924-1938: the Ministry of Labour's index of weekly full-time rates in a representative selection of industries, 1924 = 100, over the RPI. Rates, not earnings: none counts short time, unemployment, overtime or the move of workers into better-paid trades (war work raised earnings well above rates). Real wage rates rose 19% from 1879 to 1900 as prices fell (84.3 to 100), then fell to 96.1 in 1912 as prices rose. In the war prices outran wages (real rates 76 in July 1917, July 1914 = 100); wages caught up in 1918-19 and stood at 104 at the end of 1920 and 111 a year later, as prices fell first; the wage cuts of 1922 took them back to 97, and as prices then fell faster than money rates they reached 115 at the end of 1934. On the 1924 base, money rates fell to 94.0 in 1933 and real rates rose to 110.7 in 1933 and 117.2 in 1938. The Ministry's later index, on four bases from September 1939, is drawn in \"Real wage rates, 1935-1975\".",
+  "note": "Wage rates divided by prices: what a week's wage at the standard rates would buy, three lines on their own bases. 1879-1913: the Board of Trade's index of the general course of wages (unweighted mean of building, coal mining, engineering, textiles and agriculture), 1900 = 100, over the ONS's long-run Retail Prices Index. 1914-1934: July 1914 = 100, wage rates over the official cost-of-living index at the same date, the band showing the range printed: to 1919 Bowley's rough average of time rates in July (1921), from 1920 the Ministry of Labour's estimate of the average increase in weekly full-time rates at the end of each year (the cost of living at the beginning of the next January). 1924-1938: the Ministry of Labour's index of weekly full-time rates in a representative selection of industries, 1924 = 100, over the RPI. Rates, not earnings: none counts short time, unemployment, overtime or the move of workers into better-paid trades (war work raised earnings well above rates). Real wage rates rose 19% from 1879 to 1900 as prices fell (84.3 to 100), then fell to 96.1 in 1912 as prices rose. In the war prices outran wages (real rates 76 in July 1917, July 1914 = 100); wages caught up in 1918-19 and stood at 104 at the end of 1920 and 111 a year later, as prices fell first; the wage cuts of 1922 took them back to 97, and as prices then fell faster than money rates they reached 115 at the end of 1934. On the 1924 base, money rates fell to 94.0 in 1933 and real rates rose to 110.7 in 1933 and 117.2 in 1938. The Ministry's later index, on four bases from September 1939, is drawn in \"Real wage rates, 1935-1975\"; wages before 1861 in \"Wages in towns, 1790-1860\".",
   "zero": false
  },
  {

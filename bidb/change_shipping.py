@@ -19,7 +19,8 @@ figure adds to the printed total (`MISPRINTS`). Nos. 8 and 9 have no table of re
 raised slightly in 1914 by the Merchant Shipping Act 1907 (both noted).
 
 C5e2b2a: from 1939 the fleet line continues (after a break) with the Annual Abstract's steam and motor vessels
-1939-1970, and a graph of merchant ships completed 1940-1974 in gross tons (bidb.change_shipping_post).
+1939-1970, and a graph of merchant ships completed 1940-1974 in gross tons (bidb.change_shipping_post). C5e2b2b1: the
+UK-registered trading fleet of 500 gross tons and over 1950-2025 (DfT FLE0301, bidb.change_shipping_fleet).
 
     python -m bidb.change_shipping      → shipping_*_uk series csv + series.json entries
 """
@@ -31,6 +32,7 @@ from .change_firms import DATA
 from .change_registers import _csv, _row
 from . import change_shipping_built as early
 from . import change_shipping_post as post
+from . import change_shipping_fleet as fleet
 
 FILES = {"registered": DATA / "shipping_registered_abstract_uk.csv", "built": DATA / "shipping_built_abstract_uk.csv"}
 KINDS = ("steam", "motor", "sailing")
@@ -81,7 +83,7 @@ NOTE_REG = ("Merchant ships registered in the United Kingdom (with the Channel I
             "in 1961, {n1962:.1f} million in 1962 (its gross tonnage hardly changed: {g1961:.2f} and {g1962:.2f} "
             "million) and {n1970:.1f} million in 1970 (an estimate in No. 108). Vessels under 500 gross tons rose "
             "from {s1935:,} in 1935 to {s1970:,} in 1970 (No. 104: \"including miscellaneous craft\"). After 1970 "
-            "the Annual Abstract gives only ships of 500 gross tons and over.")
+            "the Annual Abstract gives only ships of 500 gross tons and over: see \"UK-registered trading fleet\".")
 NOTE_BUILT = ("Merchant ships built in the United Kingdom each year, thousand tons, from the Statistical Abstract: "
               "to 1896 ships for British owners only (Nos. 8, 9, 23, 26, 32, 33, 46; ships built and first registered "
               "to 1870, built whether registered or not from 1871), from 1897 all merchant ships, those for foreign "
@@ -187,8 +189,13 @@ def run(log=print):
     if sorted(post.registered()) != list(range(1939, post.LAST_REG + 1)) or \
             sorted(post.built()["shipping_completed_uk"]) != list(range(post.FIRST_BUILT, post.LAST_BUILT + 1)):
         raise ValueError("Annual Abstract years missing")
+    fle, old = fleet.dft(log=log)
+    bad = fleet.problems(fle)
+    if bad:
+        raise ValueError("; ".join(bad))
     pts, rows = series(reg, built)
-    write(pts, rows)
+    more, extra = fleet.series(fle, old, reg1961=int(post.latest("registered")[1961]["g_500plus"]) / 1000)
+    write({**pts, **more}, rows + extra)
     for r in rows:
         if r.get("note"):
             log(r["note"][:400])

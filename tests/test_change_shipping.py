@@ -1,10 +1,20 @@
-"""Shipping registered 1848-1970 and built 1846-1974 (roadmap C5e1, C5e2a, C5e2b1, C5e2b2a), read from the Statistical
+"""Shipping registered 1848-1970 and built 1846-1974, trading fleet 1950-2025 (roadmap C5e1, C5e2a, C5e2b1, C5e2b2a, C5e2b2b1), read from the Statistical
 Abstract and the Annual Abstract."""
 import unittest
 
 from bidb import change_shipping as cs
 from bidb import change_shipping_built as early
 from bidb import change_shipping_post as post
+from bidb import change_shipping_fleet as fleet
+
+
+def _fle0301():
+    try:
+        from bidb.config import cache_dir
+        path = cache_dir() / "registers" / "dft" / "fle0301.ods"
+    except Exception:
+        return None
+    return path if path.exists() else None
 
 
 class Shipping(unittest.TestCase):
@@ -70,6 +80,28 @@ class Shipping(unittest.TestCase):
         self.assertEqual(pts["shipping_reg_total_uk"][1939], 10.511)               # Annual Abstract, steam and motor
         self.assertEqual(rows[0]["breaks"][0][0], 1939)
         self.assertIn("611 in 1967 (51% of all completed)", rows[5]["note"])
+
+    def test_trading_fleet(self):
+        """DfT FLE0301 (stored ODS) equals the Annual Abstract 1961-1974 but for 1962-1963; breaks at 1986, 2009, 2022."""
+        self.assertEqual(fleet.check(), [])
+        if not _fle0301():
+            self.skipTest("DfT FLE0301 not downloaded (no data folder)")
+        fle, old = fleet.dft(_fle0301())
+        self.assertEqual(fleet.problems(fle), [])
+        self.assertEqual(sorted(old), [1986, 2009])
+        self.assertEqual((old[1986]["gross"], fle[1986]["gross"]), (7711, 8046))
+        self.assertEqual(fleet.latest()[1968]["tramps"], 2174)                     # No. 112's revision
+        pts, rows = fleet.series(fle, old, reg1961=21.193)
+        g = pts["fleet_500gt_uk"]
+        self.assertEqual((g[1950], g[1975], g[1993]), (17.198, 31.489, 4.67))
+        self.assertEqual(min(pts["fleet_500gt_container_uk"]), 1969)
+        self.assertEqual([b[0] for b in rows[0]["breaks"]], [1986, 2009, 2022])
+        self.assertIn("31.5 million in 1975 (1,682 ships", rows[0]["note"])
+
+    def test_fleet_misreading_caught(self):
+        r = [dict(x) for x in fleet.aa_rows() if x["no"] == 110 and x["year"] == 1972]
+        r[0]["bulk"] = 6125
+        self.assertTrue(fleet.check(r))
 
     def test_annual_misreading_caught(self):
         r = [dict(x) for x in post.rows("built") if x["no"] == 94 and x["year"] == 1953]

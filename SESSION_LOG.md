@@ -2152,3 +2152,25 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - New source `annual_abstract_shipping_uk` (126), DATA_LICENSE.md row; 280 series. Tests 422 OK (two new in
   `test_change_shipping`); ui_check change_shipping (extended), change_trade_joined, change_wages, trades OK; both
   graphs checked in screenshots. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2b1: the UK-registered trading fleet 1950-2025
+- C5e2b2b split: C5e2b2b1 (done), C5e2b2b2 (steam power, banks, Irish patents). C2d2b2 and C5b3 above it stay
+  blocked (books not on the Internet Archive).
+- New `bidb/change_shipping_fleet.py` (read by bidb.change_shipping): graph "UK-registered trading fleet, 1950-2025"
+  from DfT's Shipping fleet statistics table FLE0301 (OGL; `<cache>/registers/dft/fle0301.ods`, read with a stdlib
+  ODS reader): trading vessels of 500 gross tons and over in the UK and Crown Dependencies, all, tankers and
+  container ships (from 1969), million gross tons. Breaks from DfT's notes and definitions: 1986 (DfT's own records →
+  Lloyd's/IHS General Ship File; 7.71 million on the old basis, 8.05 on the new), 2009 (Statcode5 types; 25.81 on
+  both), 2022 (Sea/ by Maritech, "used with caution").
+- Check: Annual Abstract "United Kingdom merchant vessels of 500 gross tons and over", summary by type, read from
+  the page images: No. 109 table 267 p. 236 (n109_252, 1961-1971), No. 110 table 263 p. 236 (n110_254, 1962-1972),
+  No. 112 table 283 p. 264 (n112_282, 1964-1974) → `shipping_500gt_annual_uk.csv` (34 rows). Types add to totals;
+  totals agree across editions; No. 112 revised 1968 tramps (2,173 → 2,174) and 1969 cargo liners (5,645 → 5,646).
+  DfT's number, gross tons and tankers equal the latest edition's 1961-1974 except 1962 tankers (7,488 → 7,486),
+  1963 gross (20,400 → 20,396) and tankers (7,798 → 7,788): DfT's revision, its types still add up.
+- 17.2 million gross tons (3,092 ships) in 1950, 20.5 in 1961, 31.5 in 1975 (1,682 ships; tankers 17.1), 8.0 in
+  1986, 4.7 in 1993 (344 ships), 30.5 in 2017, 18.8 in 2025 (421 ships, containers 4.3).
+- New source `dft_fleet_uk` (127), `annual_abstract_shipping_uk` extended; DATA_LICENSE.md row; 283 series. Tests
+  424 OK (`test_trading_fleet` skips without the downloaded ODS, as on CI; `test_fleet_misreading_caught`); ui_check
+  change_shipping (extended), change_trade_joined, change_wages OK; graph checked in a screenshot. Hosted copy not
+  updated.

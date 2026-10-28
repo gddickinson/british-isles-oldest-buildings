@@ -4872,7 +4872,7 @@
    "shipping_reg_steam_uk",
    "shipping_reg_sail_uk"
   ],
-  "note": "Merchant ships registered in the United Kingdom (with the Channel Islands and the Isle of Man) at the end of each year, net tons, from the Statistical Abstract (Nos. 10, 13, 26, 32, 45, 46, 59, 70, 83): steam, motor (shown apart from 1924, with steam before) and sailing. Steam (net) tonnage overtook sail in 1883. The fleet grew from 3.4 million tons in 1848 (0.15 million of them steam) to 5.8 million in 1865, 7.4 million in 1884 and 12.4 million in 1914, lost 2.3 million in the First World War (to 1918), was 11.8 million in 1922, 12.5 million in 1930 and 10.7 million in 1938; sail peaked at 4.9 million in 1865 and fell to 0.4 million in 1938. From 1923 ships registered in the Irish Free State are left out; steamers' net tonnage rose slightly in 1914 when the Merchant Shipping Act 1907 came fully into force. From 1939 the line comes from the Annual Abstract (Ministry of Transport, later the Board of Trade): steam and motor vessels only, as it no longer counts sail each year (sailing vessels and other craft without engines: 414,000 net tons in 1935, 278,243 in 1966); its footnotes say that the figures for 1939-1962 include Commonwealth and foreign vessels on bareboat charter to or requisitioned by the United Kingdom. The fleet fell to 9.0 million net tons in 1942 and was 10.3 million in 1946, 12.0 million in 1961, 11.5 million in 1962 (its gross tonnage hardly changed: 21.90 and 21.94 million) and 14.7 million in 1970 (an estimate in No. 108). Vessels under 500 gross tons rose from 9,134 in 1935 to 21,200 in 1970 (No. 104: \"including miscellaneous craft\"). After 1970 the Annual Abstract gives only ships of 500 gross tons and over.",
+  "note": "Merchant ships registered in the United Kingdom (with the Channel Islands and the Isle of Man) at the end of each year, net tons, from the Statistical Abstract (Nos. 10, 13, 26, 32, 45, 46, 59, 70, 83): steam, motor (shown apart from 1924, with steam before) and sailing. Steam (net) tonnage overtook sail in 1883. The fleet grew from 3.4 million tons in 1848 (0.15 million of them steam) to 5.8 million in 1865, 7.4 million in 1884 and 12.4 million in 1914, lost 2.3 million in the First World War (to 1918), was 11.8 million in 1922, 12.5 million in 1930 and 10.7 million in 1938; sail peaked at 4.9 million in 1865 and fell to 0.4 million in 1938. From 1923 ships registered in the Irish Free State are left out; steamers' net tonnage rose slightly in 1914 when the Merchant Shipping Act 1907 came fully into force. From 1939 the line comes from the Annual Abstract (Ministry of Transport, later the Board of Trade): steam and motor vessels only, as it no longer counts sail each year (sailing vessels and other craft without engines: 414,000 net tons in 1935, 278,243 in 1966); its footnotes say that the figures for 1939-1962 include Commonwealth and foreign vessels on bareboat charter to or requisitioned by the United Kingdom. The fleet fell to 9.0 million net tons in 1942 and was 10.3 million in 1946, 12.0 million in 1961, 11.5 million in 1962 (its gross tonnage hardly changed: 21.90 and 21.94 million) and 14.7 million in 1970 (an estimate in No. 108). Vessels under 500 gross tons rose from 9,134 in 1935 to 21,200 in 1970 (No. 104: \"including miscellaneous craft\"). After 1970 the Annual Abstract gives only ships of 500 gross tons and over: see \"UK-registered trading fleet\".",
   "breaks": [
    [
     1939,
@@ -4999,6 +4999,70 @@
    "annual_abstract_shipping_uk"
   ],
   "file": "shipping_completed_export_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "fleet_500gt_uk",
+  "theme": "Industry and energy",
+  "title": "UK-registered trading fleet, 1950-2025",
+  "region": "United Kingdom",
+  "unit": "m gt",
+  "unit_long": "million gross tons",
+  "label": "All trading vessels",
+  "sources": [
+   "dft_fleet_uk",
+   "annual_abstract_shipping_uk"
+  ],
+  "file": "fleet_500gt_uk.csv",
+  "default": false,
+  "models": [
+   "fleet_500gt_tankers_uk",
+   "fleet_500gt_container_uk"
+  ],
+  "note": "Trading vessels (carrying cargo or passengers) of 500 gross tons and over registered in the United Kingdom, the Channel Islands and the Isle of Man at the end of each year, million gross tons, from the Department for Transport's table FLE0301: all, tankers and (from 1969) container ships. To 1974 these are the Annual Abstract's \"United Kingdom merchant vessels of 500 gross tons and over\" (Nos. 109, 110, 112, read from the page images: DfT gives the same number, gross tons and tankers in every year but 1962-1963, which it has revised slightly). The fleet was 17.2 million gross tons (3,092 ships) in 1950, 20.5 million in 1961, and grew with its tankers to 31.5 million in 1975 (1,682 ships; tankers 17.1 million in 1975), then fell to 8.0 million in 1986 and 4.7 million in 1993 (344 ships); it was 30.5 million in 2017 and 18.8 million in 2025 (421 ships, 4.3 million of them container ships). The gross tons of the register graph to 1970 count every steam and motor ship of 500 gross tons and over, trading or not (21.2 million in 1961); these trading vessels are fewer. Breaks: 1986 (Lloyd's Register data), 2009 (new ship types), 2022 (new data supplier), each with the year on both bases where DfT prints it.",
+  "breaks": [
+   [
+    1986,
+    "From 1986 Lloyd's Register (IHS) data on new ship types; before, DfT's own records of trading vessels of 500 gross tons and over. 1986: 7.71 million gross tons on the old basis, 8.05 on the new"
+   ],
+   [
+    2009,
+    "From 2009 DfT's ship types from IHS Statcode5 (before, the International Classification of Ship Types). 2009: 25.81 million gross tons on the old basis, 25.81 on the new"
+   ],
+   [
+    2022,
+    "From 2022 data from Sea/ by Maritech (before, IHS); DfT: \"comparisons between 2022 and previous years should be used with caution\""
+   ]
+  ]
+ },
+ {
+  "id": "fleet_500gt_tankers_uk",
+  "theme": "Industry and energy",
+  "title": "Trading fleet: tankers",
+  "region": "United Kingdom",
+  "unit": "m gt",
+  "unit_long": "million gross tons",
+  "label": "Tankers",
+  "sources": [
+   "dft_fleet_uk"
+  ],
+  "file": "fleet_500gt_tankers_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "fleet_500gt_container_uk",
+  "theme": "Industry and energy",
+  "title": "Trading fleet: container ships",
+  "region": "United Kingdom",
+  "unit": "m gt",
+  "unit_long": "million gross tons",
+  "label": "Container ships",
+  "sources": [
+   "dft_fleet_uk"
+  ],
+  "file": "fleet_500gt_container_uk.csv",
   "default": false,
   "hidden": true
  }

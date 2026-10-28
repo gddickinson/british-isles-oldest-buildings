@@ -1,5 +1,6 @@
-"""Tea prices read from the Statistical Abstract page images (C2d3, C2d3b): files cover their years, and the
-price of tea from India and Ceylon stays close to the average of all tea where both are printed."""
+"""Tea prices read from the Statistical Abstract page images (C2d3, C2d3b): files cover their years, the
+price of tea from India and Ceylon stays close to the average of all tea where both are printed, and the prices by
+origin of 1854-1864 (C2d3b3) end where the average of all tea begins."""
 import unittest
 
 from bidb import change_series as cs
@@ -24,9 +25,19 @@ class TeaPrices(unittest.TestCase):
         for y in both:
             self.assertLess(abs(india[y] - all_tea[y]), 0.5, y)
 
+    def test_by_origin_1854(self):
+        china, india, japan = (points(f"tea_price_{k}_1854_uk.csv") for k in ("china", "india", "japan"))
+        self.assertEqual(sorted(china), list(range(1856, 1865)))
+        self.assertEqual(sorted(india), list(range(1856, 1865)))
+        self.assertEqual(sorted(japan), list(range(1859, 1865)))
+        self.assertEqual((china[1862], india[1857], japan[1864]), (20.1875, 25.375, 15.75))
+        # all tea in 1865 lies between the cheapest and dearest origin of 1864
+        self.assertTrue(min(china[1864], japan[1864]) < points("tea_price_uk.csv")[1865] < india[1864])
+
     def test_every_row_cites_its_page(self):
         import csv
-        for name in ("tea_auction_uk.csv", "tea_price_india_uk.csv", "tea_price_china_uk.csv"):
+        for name in ("tea_auction_uk.csv", "tea_price_india_uk.csv", "tea_price_china_uk.csv",
+                     "tea_price_china_1854_uk.csv", "tea_price_india_1854_uk.csv", "tea_price_japan_1854_uk.csv"):
             with open(DATA / name, newline="") as f:
                 for r in csv.DictReader(f):
                     self.assertTrue(r["edition"] and r["leaf"].isdigit() and r["page"].isdigit(), (name, r["year"]))

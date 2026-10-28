@@ -8,7 +8,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 267
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 270
   series, 73 events, 23 map layers, 19 notes, 119 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
@@ -87,8 +87,13 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       tea (Finance Act 1949 s. 1, as enacted, OGL), a protective duty from 1963, removed from 1 Jan. 1964 (London
       Gazette 17 Dec. 1963: Import Duties (General) (No. 11) Order 1963). The Finance Acts 1939-64 with text were
       searched for tea (1941, 1943, 1945, 1947 (No. 2), 1955, 1957 have none there). New `tests/test_tea_duty.py`.
-- [ ] C2d3b3 Tea prices by country before 1865 (Statistical Abstract No. 13 p. 37: China, India, Japan), split from
-      C2d3b2.
+- [x] C2d3b3 (2026-10-27) Tea prices by origin 1854-1864: new graph "Price of imported tea by origin, 1854-1864"
+      (`tea_price_china_1854_uk` with `tea_price_india_1854_uk`, `tea_price_japan_1854_uk` as lines), from No. 13's
+      "Average prices, as fixed for the computed real value" pp. 36-37 (leaves 470-471; Nos. 11 p. 30 and 12 p. 36 print
+      the same figures), read from crops of the page images: China 1856-64 (14.5d. → 20.19d. in 1862 → 18d.), India
+      (Assam) 1856-64 (28.75d., 21d. in 1860-62, 27d.), Japan 1859-64 (18d. → 15.75d.); 1854-55 one price for China and
+      India together (15.5d., 15.06d.), in the note. India 1857 read 2s. 1⅜d. (numerator blurred in all three
+      editions). Computed values, so not joined to the declared values of 1908-22. On the tea story.
 - [x] C2d4 (2026-10-23) Tea after 1974: Defra's Family Food "UK - household purchases" (OGL; code 304 Tea, g a person a
       week, National Food Survey 1974–2000, then EFS/LCFS to 2024-25) → series `tea_household_uk` (lb a year), a third
       line on "Tea drunk per person": 7.8 lb in 1974 (MAFF supplies: 7.8), 4.2 in 2000, 2.4 in 2024-25; tea drunk away

@@ -1995,3 +1995,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   series rewritten. New `tests/test_tea_duty.py` (steps join up, span, every row cites); ui_check `change_tea`
   now requires the 1847 and 1964 ends. Tests 401 OK; ui_check change_tea, trades OK; graph checked in a screenshot.
 - Left as C2d3b3: tea prices by country before 1865 (Abstract No. 13). Hosted copy not updated.
+
+## 2026-10-27 — C2d3b3: tea prices by origin 1854-1864
+- New graph "Price of imported tea by origin, 1854-1864" (`tea_price_china_1854_uk`, with `tea_price_india_1854_uk` and
+  `tea_price_japan_1854_uk` as its other lines): Statistical Abstract No. 13, "Average prices, as fixed for the computed
+  real value", pp. 36-37 (Internet Archive leaves 470-471; page images `n469`, `n470`, cached in
+  `<cache>/stat_abstract_img/n13_*.jpg`), each fraction read from enlarged crops; Nos. 11 (p. 30) and 12 (p. 36) print
+  the same figures. China 14.5d. a lb in 1856, 20.19d. in 1862, 18d. in 1864; India (Assam) 28.75d., 21d., 27d.;
+  Japan from 1859 (18d.) to 15.75d. in 1864. The table starts in 1854 and prints one price for China and India
+  together in 1854-55 (15.5d., 15.06d.; in the note). India's 1857 numerator is blurred in all three editions: read ⅜.
+  All tea in 1865 (19.88d., computed values) lies between China's and India's 1864 prices (tested).
+- Not joined to the 1908-22 declared values; the main graph's note points to the new one; on the tea story; citation of
+  `stat_abstract_uk` extended. Tests 402 OK (`test_tea_prices` extended); ui_check change_tea (now requires the new
+  graph) and trades OK; graph checked in a screenshot. Hosted copy not updated.
+- Slip: the first page-image download sent George's email address in its User-Agent to archive.org; later requests
+  used the project's own `config.USER_AGENT`.

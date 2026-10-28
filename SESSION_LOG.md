@@ -1982,3 +1982,16 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tea trade story shows the new graph. New `tests/test_tea_prices.py`; ui_check `change_tea` now requires the
   wholesale graph. Tests 397 OK; ui_check change_tea, trades OK; light and dark screenshots checked. Hosted copy not
   updated.
+
+## 2026-10-27 — C2d3b2: tea duty 1847-1964
+- "Duty on tea" now runs 1847-1964 (was 1874-1938). Before 1874 from the Budget debates in Hansard (historic-hansard
+  and the Hansard search API; the Victorian Customs and Revenue Acts carry no text on legislation.gov.uk): 2s. 2¼d.
+  (26¼d.) in 1847 and 1852, 1s. 10d. 1853, 1s. 6d. 1854, 1s. 9d. 1855, 1s. 5d. 1857, 1s. 1863, 6d. 1865. After 1938:
+  Hansard 22 June 1949 gives the rates then as 8d. foreign and 6d. Empire (so unchanged through the war); Finance
+  Act 1949 s. 1 (enacted text, OGL) 2d. on foreign tea, Empire tea free from 7 April 1949; Hansard 22 July 1963 on the
+  No. 4 Order making it a protective duty; London Gazette 17 Dec. 1963 (issue 43185 p. 10290): the No. 11 Order
+  removed the import duties on tea from 1 January 1964. Every row quotes its source (`note` column).
+- Three new sources (`hansard_tea_duty`, `finance_act_1949_tea`, `london_gazette_1963_tea`), 119 in all; notes of both
+  series rewritten. New `tests/test_tea_duty.py` (steps join up, span, every row cites); ui_check `change_tea`
+  now requires the 1847 and 1964 ends. Tests 401 OK; ui_check change_tea, trades OK; graph checked in a screenshot.
+- Left as C2d3b3: tea prices by country before 1865 (Abstract No. 13). Hosted copy not updated.

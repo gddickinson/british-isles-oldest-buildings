@@ -1164,5 +1164,39 @@
   "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
   "used": "Merchant fleet registered 1884-1938 and ships built 1897-1938, net tons, read from the page images (data/curated/change/data/shipping_registered_abstract_uk.csv, shipping_built_abstract_uk.csv; every row's parts checked against its total, the editions' overlapping years equal) (roadmap C5e1)",
   "checked": "2026-10-25, page images read"
+ },
+ "hansard_tea_duty": {
+  "short": "Hansard, tea duty in the Budgets 1852-1865, 1949 and 1963",
+  "publisher": "UK Parliament",
+  "citation": "House of Commons Debates: HC Deb 3 December 1852 vol 123 cc836-920 (Budget, Disraeli); 18 April 1853 vol 125 cc1350-427 (Budget, Gladstone); 6 March 1854 vol 131 cc357-440 (Budget, Gladstone); 20 April 1855 vol 137 cc1555-76 (Budget, Lewis); 6 March 1857 vol 144 cc1957-2025 (tea duties, Lewis); 2 May 1861 (Ways and Means, Lewis); 16 April 1863 vol 170 cc200-64 (Budget, Gladstone); 27 April 1865 vol 178 cc1084-156 (Budget, Gladstone); 22 June 1949 vol 466 cc213-7 (Finance Bill, Clause 1, Tea, Jay); 22 July 1963 vol 681 cc1202-15 (Commonwealth Preference Area (West Cameroon), Green).",
+  "licence": "Open Parliament Licence v3.0",
+  "licence_url": "https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/",
+  "licence_quote": "Hansard pages carry '© UK Parliament'; Parliamentary copyright material is licensed under the Open Parliament Licence",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1853/apr/18/the-financial-statement-the-budget",
+  "used": "The tea duty before 1874 (each Budget's old and new rate, quoted per row in data/tea_duty_uk.csv) and the rates of 1938-1949 and after",
+  "checked": "2026-10-27, every quoted passage read in historic Hansard (api.parliament.uk/historic-hansard) and the Hansard search API"
+ },
+ "finance_act_1949_tea": {
+  "short": "Finance Act 1949, s. 1 (tea)",
+  "publisher": "The National Archives (legislation.gov.uk)",
+  "citation": "Finance Act 1949 (12, 13 & 14 Geo. 6 c. 47), Part I, section 1 'Tea', as enacted.",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "legislation.gov.uk: 'All content is available under the Open Government Licence v3.0 except where otherwise stated'",
+  "url": "https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/47/enacted",
+  "used": "Tea duty from 7 April 1949: 2d. a lb on tea not an Empire product, none on Empire tea",
+  "checked": "2026-10-27, enacted text read (data.xml); the Finance Acts 1939-1964 with enacted text searched for 'tea' (1941, 1943, 1945, 1947 (No. 2), 1955, 1957 have no text there; Hansard of 1949 gives the rates then as those of 1938)"
+ },
+ "london_gazette_1963_tea": {
+  "short": "London Gazette, 17 December 1963 (tea duty removed)",
+  "publisher": "The Gazette (TSO)",
+  "citation": "The London Gazette, 17 December 1963, issue 43185, p. 10290: notice of the Import Duties (General) (No. 11) Order 1963 (SI 1963/2010), in operation on 1 January 1964.",
+  "licence": "OGL v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licence_quote": "The Gazette (page footer): 'All content is available under the Open Government Licence v3.0, except where otherwise stated.'",
+  "url": "https://www.thegazette.co.uk/London/issue/43185/page/10290",
+  "download_url": "https://www.thegazette.co.uk/London/issue/43185/page/10290/data.pdf",
+  "used": "The end of the tea duty: the order removing 'the import duties on tea' from 1 January 1964",
+  "checked": "2026-10-27, page PDF read (text layer)"
  }
 }

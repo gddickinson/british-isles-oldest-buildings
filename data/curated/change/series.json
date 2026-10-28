@@ -1339,16 +1339,19 @@
   "title": "Duty on tea",
   "region": "United Kingdom",
   "unit": "d. a lb",
-  "unit_long": "pence of customs duty per pound of tea (the full rate)",
-  "label": "Tea duty, full rate (Statistical Abstract)",
+  "unit_long": "pence of customs duty per pound of tea (the full rate; from 1932 the rate on tea from outside the Empire)",
+  "label": "Tea duty, full rate (Hansard, Statistical Abstract, Finance Act)",
   "sources": [
-   "stat_abstract_uk"
+   "hansard_tea_duty",
+   "stat_abstract_uk",
+   "finance_act_1949_tea",
+   "london_gazette_1963_tea"
   ],
   "file": "tea_duty_uk.csv",
   "models": [
    "tea_duty_empire_uk"
   ],
-  "note": "The customs duty on a pound of tea, in old pence, from the Statistical Abstract's customs tariffs (the rate in force on a stated day: 31 May 1874 and 1 July 1921) and its tables of taxes reduced or increased (the date and the old and new rate of each change). Each change is drawn as a step in the year it was made. 6d. a lb on 31 May 1874; the tariffs of May 1875 and August 1889 also give 6d., and no change to the tea duty is listed between them. Cut to 4d. on 1 May 1890; 6d. from 6 March 1900; 8d. from 20 April 1904; 6d. from 1 July 1905; 5d. from 14 May 1906; 8d. from 18 November 1914; 1s. (12d.) from 22 September 1915. From 2 June 1919 tea from the British Empire paid less (\"Imperial Preference\"; five-sixths of the full rate in the 1921 tariff), shown as a second line. \"Reduced by one-third\" on 15 May 1922 (to 8d.) and \"by one-half\" on 5 May 1924 (to 4d.); repealed from 22 April 1929; from 20 April 1932 4d. on foreign and 2d. on Empire tea; from 22 April 1936 6d. and 4d.; from 27 April 1938 8d. and 6d. The Empire rate between 1922 and 1929 is not printed in the editions read and is left out (dotted). The duty before 1874 (it was cut in 1865, but the Abstract's table of changes gives no rates) is not shown."
+  "note": "The customs duty on a pound of tea, in old pence (12d. = 1s.), each change drawn as a step in the year it was made. 1847-1865 from the Budget debates in Hansard (the old and new rate as the Chancellor gave them): 2s. 2¼d. (26¼d., the duty of 2s. 1d. with 5 per cent added) in 1847 and still in December 1852; 1s. 10d. in the Budget of 18 April 1853 (Gladstone's Budget: the first step of a planned fall to 1s.); 1s. 6d. from 5 April 1854; raised for the Crimean War to 1s. 9d. in April 1855; 1s. 5d. from 6 April 1857; 1s. from April 1863; 6d. in the Budget of 27 April 1865 (Lewis's speech of 1855 gives the 1853 duty as 2s. 2½d.; Gladstone's and Disraeli's give 2s. 2¼d.). 1874-1938 from the Statistical Abstract's customs tariffs (the rate in force on 31 May 1874 and 1 July 1921) and its tables of taxes reduced or increased: 6d. on 31 May 1874 (the tariffs of May 1875 and August 1889 also give 6d., and no change to the tea duty is listed between them). Cut to 4d. on 1 May 1890; 6d. from 6 March 1900; 8d. from 20 April 1904; 6d. from 1 July 1905; 5d. from 14 May 1906; 8d. from 18 November 1914; 1s. (12d.) from 22 September 1915. From 2 June 1919 tea from the British Empire paid less (\"Imperial Preference\"; five-sixths of the full rate in the 1921 tariff), shown as a second line. \"Reduced by one-third\" on 15 May 1922 (to 8d.) and \"by one-half\" on 5 May 1924 (to 4d.); repealed from 22 April 1929; from 20 April 1932 4d. on foreign and 2d. on Empire tea; from 22 April 1936 6d. and 4d.; from 27 April 1938 8d. and 6d. These rates held through the war: in the Finance Bill debate of 22 June 1949 \"The duty on tea was 8d. per lb. on foreign tea, and 6d. on Empire tea\". The Finance Act 1949 charged 2d. on tea not from the Empire and none on Empire tea from 7 April 1949 (the duty had been paid back as a food subsidy: \"no point in raising money on the one hand and paying it away on the other\"). The 2d. kept only the Empire's preference; in 1963 it became a protective duty (Import Duties (General) (No. 4) Order 1963), and the Import Duties (General) (No. 11) Order 1963 removed the import duties on tea from 1 January 1964, by an arrangement with the European Economic Community. 1866-1873 come from no source read: no change is drawn between 1865 and the 1874 tariff, both 6d."
  },
  {
   "id": "tea_duty_empire_uk",
@@ -1357,14 +1360,16 @@
   "region": "United Kingdom",
   "unit": "d. a lb",
   "unit_long": "pence of customs duty per pound of tea from the British Empire (preferential rate)",
-  "label": "Tea duty on Empire tea (Statistical Abstract)",
+  "label": "Tea duty on Empire tea (Statistical Abstract, Hansard)",
   "sources": [
-   "stat_abstract_uk"
+   "stat_abstract_uk",
+   "hansard_tea_duty",
+   "finance_act_1949_tea"
   ],
   "file": "tea_duty_empire_uk.csv",
   "hidden": true,
   "gap": 5,
-  "note": "The preferential rate of customs duty on tea consigned from and produced in the British Empire, from 2 June 1919 (five-sixths of the full rate, 10d. a lb, in the tariff of 1 July 1921), and from 1932 as printed in the Abstract's table of changes (2d., 4d. from 22 April 1936, 6d. from 27 April 1938). No Empire rate is printed for 1922-29 in the editions read; the duty was repealed on all tea from 22 April 1929 to 20 April 1932."
+  "note": "The preferential rate of customs duty on tea consigned from and produced in the British Empire, from 2 June 1919 (five-sixths of the full rate, 10d. a lb, in the tariff of 1 July 1921), and from 1932 as printed in the Abstract's table of changes (2d., 4d. from 22 April 1936, 6d. from 27 April 1938). No Empire rate is printed for 1922-29 in the editions read; the duty was repealed on all tea from 22 April 1929 to 20 April 1932. 6d. until 7 April 1949, when the Finance Act 1949 removed the duty on Empire tea (Hansard, 22 June 1949: \"the duty on Empire tea is removed altogether\")."
  },
  {
   "id": "homes_eng_est",

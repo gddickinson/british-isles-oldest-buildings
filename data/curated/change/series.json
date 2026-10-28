@@ -4857,13 +4857,14 @@
  {
   "id": "shipping_reg_total_uk",
   "theme": "Industry and energy",
-  "title": "Merchant fleet registered in the UK, 1848-1938",
+  "title": "Merchant fleet registered in the UK, 1848-1970",
   "region": "United Kingdom",
   "unit": "m t",
   "unit_long": "million net tons",
-  "label": "All ships",
+  "label": "All ships (from 1939 steam and motor)",
   "sources": [
-   "stat_abstract_shipping_uk"
+   "stat_abstract_shipping_uk",
+   "annual_abstract_shipping_uk"
   ],
   "file": "shipping_reg_total_uk.csv",
   "default": false,
@@ -4871,7 +4872,13 @@
    "shipping_reg_steam_uk",
    "shipping_reg_sail_uk"
   ],
-  "note": "Merchant ships registered in the United Kingdom (with the Channel Islands and the Isle of Man) at the end of each year, net tons, from the Statistical Abstract (Nos. 10, 13, 26, 32, 45, 46, 59, 70, 83): steam, motor (shown apart from 1924, with steam before) and sailing. Steam (net) tonnage overtook sail in 1883. The fleet grew from 3.4 million tons in 1848 (0.15 million of them steam) to 5.8 million in 1865, 7.4 million in 1884 and 12.4 million in 1914, lost 2.3 million in the First World War (to 1918), was 11.8 million in 1922, 12.5 million in 1930 and 10.7 million in 1938; sail peaked at 4.9 million in 1865 and fell to 0.4 million in 1938. From 1923 ships registered in the Irish Free State are left out; steamers' net tonnage rose slightly in 1914 when the Merchant Shipping Act 1907 came fully into force."
+  "note": "Merchant ships registered in the United Kingdom (with the Channel Islands and the Isle of Man) at the end of each year, net tons, from the Statistical Abstract (Nos. 10, 13, 26, 32, 45, 46, 59, 70, 83): steam, motor (shown apart from 1924, with steam before) and sailing. Steam (net) tonnage overtook sail in 1883. The fleet grew from 3.4 million tons in 1848 (0.15 million of them steam) to 5.8 million in 1865, 7.4 million in 1884 and 12.4 million in 1914, lost 2.3 million in the First World War (to 1918), was 11.8 million in 1922, 12.5 million in 1930 and 10.7 million in 1938; sail peaked at 4.9 million in 1865 and fell to 0.4 million in 1938. From 1923 ships registered in the Irish Free State are left out; steamers' net tonnage rose slightly in 1914 when the Merchant Shipping Act 1907 came fully into force. From 1939 the line comes from the Annual Abstract (Ministry of Transport, later the Board of Trade): steam and motor vessels only, as it no longer counts sail each year (sailing vessels and other craft without engines: 414,000 net tons in 1935, 278,243 in 1966); its footnotes say that the figures for 1939-1962 include Commonwealth and foreign vessels on bareboat charter to or requisitioned by the United Kingdom. The fleet fell to 9.0 million net tons in 1942 and was 10.3 million in 1946, 12.0 million in 1961, 11.5 million in 1962 (its gross tonnage hardly changed: 21.90 and 21.94 million) and 14.7 million in 1970 (an estimate in No. 108). Vessels under 500 gross tons rose from 9,134 in 1935 to 21,200 in 1970 (No. 104: \"including miscellaneous craft\"). After 1970 the Annual Abstract gives only ships of 500 gross tons and over.",
+  "breaks": [
+   [
+    1939,
+    "From 1939 the Annual Abstract (Nos. 84, 88, 94, 100, 104, 108): steam and motor vessels only (sail left out); 1939-1962 with Commonwealth and foreign vessels on bareboat charter to or requisitioned by the UK; 10.31 million net tons in 1938 there, 10.30 in the Statistical Abstract"
+   ]
+  ]
  },
  {
   "id": "shipping_reg_steam_uk",
@@ -4919,7 +4926,7 @@
   "models": [
    "shipping_built_foreign_uk"
   ],
-  "note": "Merchant ships built in the United Kingdom each year, thousand tons, from the Statistical Abstract: to 1896 ships for British owners only (Nos. 8, 9, 23, 26, 32, 33, 46; ships built and first registered to 1870, built whether registered or not from 1871), from 1897 all merchant ships, those for foreign owners included (Nos. 59, 70, 83, net tons); each year from the latest edition, which revised 1861, 1867-1873 and 1877-1878. 125 thousand tons in 1846; steam first outweighed sail in 1870, sail last in 1885; 769 thousand in 1883, the most for British owners before 1897; the second line counts the ships (war and merchant) built for foreigners 1884-1898. 1,200 thousand tons in 1913; 410 in 1915; 1,278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before).",
+  "note": "Merchant ships built in the United Kingdom each year, thousand tons, from the Statistical Abstract: to 1896 ships for British owners only (Nos. 8, 9, 23, 26, 32, 33, 46; ships built and first registered to 1870, built whether registered or not from 1871), from 1897 all merchant ships, those for foreign owners included (Nos. 59, 70, 83, net tons); each year from the latest edition, which revised 1861, 1867-1873 and 1877-1878. 125 thousand tons in 1846; steam first outweighed sail in 1870, sail last in 1885; 769 thousand in 1883, the most for British owners before 1897; the second line counts the ships (war and merchant) built for foreigners 1884-1898. 1,200 thousand tons in 1913; 410 in 1915; 1,278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before). From 1940 in gross tons: \"Merchant ships completed in the UK, 1940-1974\".",
   "breaks": [
    [
     1871,
@@ -4943,6 +4950,55 @@
    "stat_abstract_shipping_uk"
   ],
   "file": "shipping_built_foreign_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "shipping_completed_uk",
+  "theme": "Industry and energy",
+  "title": "Merchant ships completed in the UK, 1940-1974",
+  "region": "United Kingdom",
+  "unit": "k gt",
+  "unit_long": "thousand gross tons",
+  "label": "All ships completed",
+  "sources": [
+   "annual_abstract_shipping_uk"
+  ],
+  "file": "shipping_completed_uk.csv",
+  "default": false,
+  "models": [
+   "shipping_completed_tankers_uk",
+   "shipping_completed_export_uk"
+  ],
+  "note": "Merchant ships of 100 gross tons and over completed in the United Kingdom each year, thousand gross tons, from the Annual Abstract (Nos. 84, 88, 90, 94, 100, 104, 108, 112; figures of the Admiralty to No. 94, of the Ministry of Transport in No. 100 and the Ministry of Technology in No. 104), each year from the latest edition (No. 88 revised 1941 from 1,192 to 1,158). Gross tons are larger than the net tons of the graph to 1938 for the same ships: for 1938 the Statistical Abstract gives 598 thousand net tons built, No. 84 1,030 thousand gross tons launched in the UK and Eire (Lloyd's Register: 499 in 1935, 630 in 1939, not comparable with completions, it says) and Nos. 88 and 90 843 thousand from Lloyd's Register with Eire. 1,302 thousand gross tons were completed in 1942, the most of the war, 743 in 1945, 1,493 in 1954, the most of these years, 1,022 in 1962 and 848 in 1964; 1,189 in 1974. Tankers were 782 thousand in 1951 and 47 in 1969. Ships for export (printed from 1957): 375 thousand in 1957, 611 in 1967 (51% of all completed), 235 in 1974."
+ },
+ {
+  "id": "shipping_completed_tankers_uk",
+  "theme": "Industry and energy",
+  "title": "Ships completed: tankers",
+  "region": "United Kingdom",
+  "unit": "k gt",
+  "unit_long": "thousand gross tons",
+  "label": "Tankers",
+  "sources": [
+   "annual_abstract_shipping_uk"
+  ],
+  "file": "shipping_completed_tankers_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "shipping_completed_export_uk",
+  "theme": "Industry and energy",
+  "title": "Ships completed for export",
+  "region": "United Kingdom",
+  "unit": "k gt",
+  "unit_long": "thousand gross tons",
+  "label": "For export",
+  "sources": [
+   "annual_abstract_shipping_uk"
+  ],
+  "file": "shipping_completed_export_uk.csv",
   "default": false,
   "hidden": true
  }

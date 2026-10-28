@@ -2123,3 +2123,32 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Source `stat_abstract_shipping_uk` updated. Tests 420 OK (`test_change_shipping`: two new); ui_check
   change_shipping (now requires the breaks), change_trade_joined, change_wages, trades OK; graph checked in a
   screenshot. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2a: shipping 1939-1974 from the Annual Abstract
+- C5e2b2 split: C5e2b2a (done), C5e2b2b (shipping since 1970, steam power, banks, Irish patents).
+- New `bidb/change_shipping_post.py` (read by bidb.change_shipping). Read from the page images (Internet Archive;
+  `<cache>/annual_abstract_txt/<id>_page_numbers.json` maps printed page → leaf, image `page/n<leaf-1>_w2400.jpg`,
+  cached as `<cache>/stat_abstract_img/n<no>_<leaf>.jpg`):
+  - merchant vessels on the UK register: No. 84 table 244 p. 207 (n84_217), No. 88 table 254 p. 243 (n88_255), No. 94
+    table 247 p. 208 (n94_220), No. 100 table 253 p. 199 (n100_211), No. 104 table 259 p. 211 (n104_225), No. 108
+    table 263 p. 234 (n108_250) → `shipping_registered_annual_uk.csv` (67 rows);
+  - merchant shipbuilding: No. 84 table 184 p. 157 (n84_167), No. 88 table 187 p. 180 (n88_192), No. 90 table 178 p.
+    172 (n90_184), No. 94 table 192 p. 166 (n94_178), No. 100 table 198 p. 160 (n100_172), No. 104 table 201 p. 171
+    (n104_185), No. 108 table 207 p. 191 (n108_207), No. 112 table 219 p. 214 (n112_232) →
+    `shipping_completed_annual_uk.csv` (83 rows).
+- Checks: every row's parts against its total; all overlapping editions figure for figure, except No. 88's revision
+  of 1941 (1,192 → 1,158 thousand gross tons completed). Misprints: No. 84's 1944 vessels 12,524 (parts and No. 88
+  12,525), No. 108's 1961 completions 1,384 (parts and Nos. 100/104 1,390, zoomed crop read twice).
+- "Merchant fleet registered in the UK, 1848-1970": after a break at 1939 the line is the Annual Abstract's steam and
+  motor vessels in net tons (10.31 million in 1938 there, 10.30 steam + motor in the Statistical Abstract); sail
+  only in footnotes (414,000 net tons 1935, 278,243 in 1966); 9.0 million in 1942, 12.0 in 1961, 11.5 in 1962 (gross
+  21.90 → 21.94, cause not stated, not guessed), 14.7 in 1970 (an estimate). No. 109 on prints only ships of 500
+  gross tons and over (no register table), so the line ends in 1970.
+- New graph "Merchant ships completed in the UK, 1940-1974" (thousand gross tons; tankers; for export from 1957): the
+  wartime most 1,302 in 1942, the peak 1,493 in 1954, 848 in 1964, 1,189 in 1974; export 611 in 1967 (51%). The
+  note gives 1938 in three ways (598 thousand net tons built, Statistical Abstract; 1,030 thousand gross tons
+  launched in the UK and Eire, No. 84; 843 thousand from Lloyd's Register, Nos. 88 and 90). The 1846-1938 graph's note
+  points to it.
+- New source `annual_abstract_shipping_uk` (126), DATA_LICENSE.md row; 280 series. Tests 422 OK (two new in
+  `test_change_shipping`); ui_check change_shipping (extended), change_trade_joined, change_wages, trades OK; both
+  graphs checked in screenshots. Hosted copy not updated.

@@ -541,9 +541,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       foreigners, war and merchant, 1884-1898 (No. 46 table 62: 162,430 tons in 1897 beside 482,267 for British
       owners; No. 59 gives 635,210 merchant tons in all, so the rest were warships). 125 thousand tons in 1846, steam
       first outweighed sail in 1870 and sail last in 1885, 769 thousand in 1883 the most before 1897.
-- [ ] C5e2b2 The rest of C5e: shipping since 1938 (DfT FLE0101 1997-; the Annual Abstracts to 1975); steam power as
-      quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks (Statistical Abstract; country banks
-      quoted from Pressnell); patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
+- [x] C5e2b2a (2026-10-28; C5e2b2 split) Shipping 1939-1974 from the Annual Abstract (new
+      `bidb/change_shipping_post.py`, read by bidb.change_shipping): "Merchant fleet registered in the UK" now runs
+      1848-1970, the line continuing after a break at 1939 with the Annual Abstract's steam and motor vessels (net
+      tons; Nos. 84, 88, 94, 100, 104, 108; sail no longer counted yearly, 3-4% of the tonnage; 1939-1962 with
+      Commonwealth and foreign vessels on bareboat charter or requisitioned; 10.31 million in 1938 there against 10.30
+      in the Statistical Abstract): 9.0 million in 1942, 12.0 in 1961, 11.5 in 1962, 14.7 in 1970 (estimate). New
+      graph "Merchant ships completed in the UK, 1940-1974" (thousand gross tons, vessels of 100 gross tons and over;
+      Nos. 84, 88, 90, 94, 100, 104, 108, 112) with tankers and ships for export (from 1957): 1,302 in 1942, 1,493 in
+      1954, 848 in 1964, 1,189 in 1974; export 611 in 1967 (51%). Every row's parts checked, overlaps figure for
+      figure (`REVISED`: only 1941 in No. 88), two misprinted totals replaced by their parts' sums (`MISPRINTS`).
+      No. 109 onwards print only ships of 500 gross tons and over, so the register line ends in 1970.
+- [ ] C5e2b2b The rest of C5e: shipping since 1970 (UK-registered ships of 500 gross tons and over, Annual Abstract
+      Nos. 109-112, then DfT FLE0101 1997-); steam power as quoted totals (Kanefsky's published counts, Nuvolari et
+      al. 2011); banks (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual
+      reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and
       engines, iron and materials, textiles, transport, communication and computing, science and medicine, farming,

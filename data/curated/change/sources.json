@@ -1265,5 +1265,16 @@
   "licence_quote": "Bowley died in 1957, so the book is in copyright in the UK until the end of 2027; its figures are quoted with page.",
   "used": "Money wages by decade 1780-1899 as estimate dots, rebased to 1840-50 = 100 (see data/curated/change/estimates.json for the quote of each figure; roadmap C5d2b2b)",
   "checked": "2026-10-27, page image read (p. 126, image n153)"
+ },
+ "annual_abstract_shipping_uk": {
+  "short": "Annual Abstract of Statistics: merchant vessels on the UK register 1935-1970 and merchant shipbuilding 1935-1974",
+  "publisher": "Central Statistical Office (HMSO); figures of the Ministry of Transport (later the Board of Trade and the Department of Trade and Industry) and of the Admiralty (later the Ministry of Transport and the Ministry of Technology)",
+  "citation": "Central Statistical Office, Annual Abstract of Statistics (HMSO). Merchant vessels on the United Kingdom register, end of year: No. 84 (1935-1946), table 244, p. 207 (leaf 217); No. 88 (1938-1950), table 254, p. 243 (leaf 255); No. 94 (1957), table 247, p. 208 (leaf 220); No. 100 (1963), table 253, p. 199 (leaf 211); No. 104 (1967), table 259, p. 211 (leaf 225); No. 108 (1971), table 263, p. 234 (leaf 250). Merchant shipbuilding, vessels of 100 gross tons and over: No. 84, table 184, p. 157 (leaf 167); No. 88, table 187, p. 180 (leaf 192); No. 90 (1953), table 178, p. 172 (leaf 184); No. 94, table 192, p. 166 (leaf 178); No. 100, table 198, p. 160 (leaf 172); No. 104, table 201, p. 171 (leaf 185); No. 108, table 207, p. 191 (leaf 207); No. 112 (1975), table 219, p. 214 (leaf 232). Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "licence": "Public domain: Crown copyright in a published work lasts 50 years from publication (CDPA 1988 s.163(3)); these editions were published 1947-1975",
+  "licence_url": "https://www.legislation.gov.uk/ukpga/1988/48/section/163",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "used": "Merchant fleet (steam and motor, net tons) 1939-1970 joined to the Statistical Abstract's 1848-1938 after a break; merchant ships completed 1940-1974 in gross tons, tankers and ships for export (data/curated/change/data/shipping_registered_annual_uk.csv, shipping_completed_annual_uk.csv; bidb.change_shipping_post, roadmap C5e2b2a)",
+  "checked": "2026-10-28 (C5e2b2a): read from the page images; every row's parts checked against its total, two misprinted totals (No. 84's 1944 number of vessels, No. 108's 1961 completions) replaced by their parts' sum, which the other editions print; overlapping editions agree figure for figure except No. 88's revision of 1941 (1,192 -> 1,158 thousand gross tons completed)"
  }
 }

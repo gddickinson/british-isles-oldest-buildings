@@ -531,10 +531,19 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       net tons in 1848 (0.15 steam), sail at its peak 4.94 million in 1865, steam (net) overtook sail in 1883. No
       break marked for the Merchant Shipping Act 1854's measurement: the tables print no note of it and the line shows
       no jump at 1855 (ships were re-measured over years).
-- [ ] C5e2b The rest of C5e: shipping since 1938 (DfT FLE0101 1997-; the Annual Abstracts to 1975), ships built before
-      1897 (the earlier tables leave out ships built for foreigners: a line of its own, or a break); steam power as quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks
-      (Statistical Abstract; country banks quoted from Pressnell); patents in Ireland (IPOI annual reports 2002-, quote
-      figures) and 1916-94 grants.
+- [x] C5e2b1 (2026-10-28; C5e2b split) Ships built before 1897 (new `bidb/change_shipping_built.py`): "Merchant
+      ships built in the UK" now runs 1846-1938, one line with breaks at 1871 and 1897: ships for British owners from
+      the page images of Statistical Abstract Nos. 8 and 9 (built and registered, 1846-1861), 23 and 26 (built and
+      first registered, to 1870), 26, 32, 33 and 46 (built whether registered or not, foreigners' and the Navy's left
+      out, 1871-1898; `shipping_built_early_abstract_uk.csv`, 120 printed rows); every tonnage adds up (two printed
+      vessel counts do not, `KNOWN`); each year from the latest edition, the revisions exactly as `REVISED` (1861 by
+      No. 23: 310,900 → 200,839 tons; 1867-1873 by No. 26; 1877-1878 by No. 32). Second line: ships built for
+      foreigners, war and merchant, 1884-1898 (No. 46 table 62: 162,430 tons in 1897 beside 482,267 for British
+      owners; No. 59 gives 635,210 merchant tons in all, so the rest were warships). 125 thousand tons in 1846, steam
+      first outweighed sail in 1870 and sail last in 1885, 769 thousand in 1883 the most before 1897.
+- [ ] C5e2b2 The rest of C5e: shipping since 1938 (DfT FLE0101 1997-; the Annual Abstracts to 1975); steam power as
+      quoted totals (Kanefsky's published counts, Nuvolari et al. 2011); banks (Statistical Abstract; country banks
+      quoted from Pressnell); patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and
       engines, iron and materials, textiles, transport, communication and computing, science and medicine, farming,

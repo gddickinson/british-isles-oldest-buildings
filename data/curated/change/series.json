@@ -4906,16 +4906,44 @@
  {
   "id": "shipping_built_uk",
   "theme": "Industry and energy",
-  "title": "Merchant ships built in the UK, 1897-1938",
+  "title": "Merchant ships built in the UK, 1846-1938",
   "region": "United Kingdom",
   "unit": "k t",
-  "unit_long": "thousand net tons",
+  "unit_long": "thousand tons",
   "label": "Ships built",
   "sources": [
    "stat_abstract_shipping_uk"
   ],
   "file": "shipping_built_uk.csv",
   "default": false,
-  "note": "Merchant ships built in the United Kingdom each year, thousand net tons, ships for foreign owners included, from the Statistical Abstract (Nos. 59, 70, 83). 1200 thousand tons in 1913; 410 in 1915; 1278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before)."
+  "models": [
+   "shipping_built_foreign_uk"
+  ],
+  "note": "Merchant ships built in the United Kingdom each year, thousand tons, from the Statistical Abstract: to 1896 ships for British owners only (Nos. 8, 9, 23, 26, 32, 33, 46; ships built and first registered to 1870, built whether registered or not from 1871), from 1897 all merchant ships, those for foreign owners included (Nos. 59, 70, 83, net tons); each year from the latest edition, which revised 1861, 1867-1873 and 1877-1878. 125 thousand tons in 1846; steam first outweighed sail in 1870, sail last in 1885; 769 thousand in 1883, the most for British owners before 1897; the second line counts the ships (war and merchant) built for foreigners 1884-1898. 1,200 thousand tons in 1913; 410 in 1915; 1,278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before).",
+  "breaks": [
+   [
+    1871,
+    "From 1871 ships built whether registered or not, those built for foreigners left out (No. 26 onwards); before, ships built and first registered in the UK. No. 23 had printed 391,058 tons for 1871 on the old definition, No. 26 354,355 on the new"
+   ],
+   [
+    1897,
+    "From 1897 all merchant ships built in the UK, those for foreign owners included (No. 59 onwards); before, those for British owners only. 1897: 482,267 tons for British owners and 162,430 for foreigners (war and merchant ships) in No. 46; 635,210 in all in No. 59"
+   ]
+  ]
+ },
+ {
+  "id": "shipping_built_foreign_uk",
+  "theme": "Industry and energy",
+  "title": "Ships built for foreigners",
+  "region": "United Kingdom",
+  "unit": "k t",
+  "unit_long": "thousand tons",
+  "label": "Built for foreigners (war and merchant)",
+  "sources": [
+   "stat_abstract_shipping_uk"
+  ],
+  "file": "shipping_built_foreign_uk.csv",
+  "default": false,
+  "hidden": true
  }
 ]

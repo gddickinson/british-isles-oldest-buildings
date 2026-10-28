@@ -1,6 +1,6 @@
 """Shipping for "Change over time" (roadmap C5e1): the merchant fleet registered in the United Kingdom (with the
 Channel Islands and the Isle of Man) at the end of each year, 1848-1938, and merchant ships built in the United
-Kingdom, 1897-1938, net tons, read from the page images of the Statistical Abstract for the United Kingdom (public
+Kingdom, 1846-1938 (C5e2b1: before 1897 for British owners only), read from the page images of the Statistical Abstract for the United Kingdom (public
 domain; Internet Archive, collection pub_annual-abstract-of-statistics-gb):
 
 - registered (`data/curated/change/data/shipping_registered_abstract_uk.csv`): No. 10 (1848-1850, table 35, p. 69),
@@ -8,9 +8,8 @@ domain; Internet Archive, collection pub_annual-abstract-of-statistics-gb):
   No. 45 (1883, table 60, p. 175), No. 46 (1884-1896, table 60, p. 177), No. 59
   (1897-1910, table 70, p. 312), No. 70 (1911-1923, table 191, p. 274), No. 83 (1924-1938, table 269, p. 360, in
   thousand tons); sailing, steam and (from 1924) motor;
-- built (`shipping_built_abstract_uk.csv`): No. 59 (table 71, p. 312), No. 70 (table 192, p. 275), No. 83 (table 270, p. 361):
-  all merchant vessels built, those for foreign owners included (earlier editions leave those out, so the line starts
-  in 1897).
+- built (`shipping_built_abstract_uk.csv`): before 1897 for British owners only, bidb.change_shipping_built; No. 59 (table 71, p. 312), No. 70 (table 192, p. 275), No. 83 (table 270, p. 361):
+  all merchant vessels built, those for foreign owners included (earlier editions leave those out: a break at 1897).
 
 `check` tests every row's parts against its printed total. The editions overlap and agree (1851-1862 in Nos. 10 and
 13, 1864-1865 in Nos. 13 and 26, 1870-1878 in Nos. 26 and 32, 1884 in Nos. 32 and 46, 1911 in Nos. 59 and 70,
@@ -27,6 +26,7 @@ import sys
 
 from .change_firms import DATA
 from .change_registers import _csv, _row
+from . import change_shipping_built as early
 
 FILES = {"registered": DATA / "shipping_registered_abstract_uk.csv", "built": DATA / "shipping_built_abstract_uk.csv"}
 KINDS = ("steam", "motor", "sailing")
@@ -65,10 +65,16 @@ NOTE_REG = ("Merchant ships registered in the United Kingdom (with the Channel I
             "World War (to 1918), was {t1922:.1f} million in 1922, {t1930:.1f} million in 1930 and {t1938:.1f} million in 1938; sail peaked at "
             "{smax:.1f} million in {ysmax} and fell to {s1938:.1f} million in 1938. From 1923 ships registered in the Irish Free State are left out; "
             "steamers' net tonnage rose slightly in 1914 when the Merchant Shipping Act 1907 came fully into force.")
-NOTE_BUILT = ("Merchant ships built in the United Kingdom each year, thousand net tons, ships for foreign owners "
-              "included, from the Statistical Abstract (Nos. 59, 70, 83). {t1913:.0f} thousand tons in 1913; "
-              "{t1915:.0f} in 1915; {t1920:.0f} in the post-war boom of 1920; {t1933:.0f} in 1933, the depth of the "
-              "slump; {t1938:.0f} in 1938. Motor ships from 1924 (with steam before).")
+NOTE_BUILT = ("Merchant ships built in the United Kingdom each year, thousand tons, from the Statistical Abstract: "
+              "to 1896 ships for British owners only (Nos. 8, 9, 23, 26, 32, 33, 46; ships built and first registered "
+              "to 1870, built whether registered or not from 1871), from 1897 all merchant ships, those for foreign "
+              "owners included (Nos. 59, 70, 83, net tons); each year from the latest edition, which revised 1861, "
+              "1867-1873 and 1877-1878. {t1846:.0f} thousand tons in 1846; steam first outweighed sail in "
+              "{steam_first}, sail last in {sail_last}; {peak_tons:.0f} thousand in {peak}, the most for British "
+              "owners before 1897; the second line counts the ships (war and merchant) built for foreigners "
+              "1884-1898. {t1913:,.0f} thousand tons in 1913; {t1915:.0f} in 1915; {t1920:,.0f} in the post-war boom "
+              "of 1920; {t1933:.0f} in 1933, the depth of the slump; {t1938:.0f} in 1938. Motor ships from 1924 "
+              "(with steam before).")
 
 
 def series(reg, built):
@@ -78,7 +84,9 @@ def series(reg, built):
     pts = {"shipping_reg_steam_uk": {y: round((v["steam"] + v["motor"]) / 1000, 3) for y, v in reg.items()},
            "shipping_reg_sail_uk": {y: round(v["sailing"] / 1000, 3) for y, v in reg.items()},
            "shipping_reg_total_uk": {y: round(v["total"] / 1000, 3) for y, v in reg.items()},
-           "shipping_built_uk": {y: round(v["total"], 1) for y, v in built.items()}}
+           "shipping_built_uk": early.joined(built),
+           "shipping_built_foreign_uk": {y: round(int(r["total"]) / 1000, 1)
+                                         for y, r in early.latest(foreign=True).items()}}
     t, s = pts["shipping_reg_total_uk"], pts["shipping_reg_sail_uk"]
     b = pts["shipping_built_uk"]
     unit = "million net tons"
@@ -91,9 +99,13 @@ def series(reg, built):
             _row("shipping_reg_steam_uk", "Merchant fleet: steam and motor", "Steam and motor", unit, [SOURCE],
                  "United Kingdom", unit="m t"),
             _row("shipping_reg_sail_uk", "Merchant fleet: sail", "Sail", unit, [SOURCE], "United Kingdom", unit="m t"),
-            _row("shipping_built_uk", "Merchant ships built in the UK, 1897-1938", "Ships built", "thousand net tons",
-                 [SOURCE], "United Kingdom", NOTE_BUILT.format(**{f"t{y}": b[y] for y in (1913, 1915, 1920, 1933, 1938)}),
-                 unit="k t")]
+            _row("shipping_built_uk", "Merchant ships built in the UK, 1846-1938", "Ships built", "thousand tons",
+                 [SOURCE], "United Kingdom", NOTE_BUILT.format(**{f"t{y}": b[y] for y in (1913, 1915, 1920, 1933, 1938)},
+                                                               **early.facts()),
+                 ["shipping_built_foreign_uk"], unit="k t"),
+            _row("shipping_built_foreign_uk", "Ships built for foreigners", "Built for foreigners (war and merchant)",
+                 "thousand tons", [SOURCE], "United Kingdom", unit="k t")]
+    rows[3]["breaks"] = early.breaks(built)
     for r in rows:
         r["theme"] = "Industry and energy"
     return pts, rows
@@ -109,7 +121,9 @@ def write(pts, rows):
 
 
 def run(log=print):
-    bad = check("registered") + check("built")
+    bad = check("registered") + check("built") + early.check()
+    if early.revisions() != early.REVISED:
+        bad.append(f"revisions {early.revisions()} not as REVISED")
     if bad:
         raise ValueError("; ".join(bad))
     reg, built = load("registered"), load("built")

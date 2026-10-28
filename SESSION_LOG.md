@@ -2100,3 +2100,26 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   answer this evening, so the rule is not quoted in the note.
 - Source `stat_abstract_shipping_uk` updated. Tests 418 OK (`test_change_shipping`: years, editions, the misprint); new
   ui_check `change_shipping` OK, change_wages and trades OK; graph checked in a screenshot. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b1: merchant ships built 1846-1896
+- C5e2b split: C5e2b1 (done), C5e2b2 (shipping since 1938, steam power, banks, Irish patents).
+- "Merchant ships built in the UK" now runs 1846-1938 (new `bidb/change_shipping_built.py`, read by
+  bidb.change_shipping). Before 1897 the Statistical Abstract counts ships for British owners only, read from the page
+  images into `shipping_built_early_abstract_uk.csv` (120 printed rows): No. 8 table 33 p. 52 and No. 9 table 34 p. 52
+  (built and registered, 1846-1861), No. 23 table 41 p. 94 (built and first registered 1861-1871; 1872-75 starred,
+  "whether registered or not"), No. 26 table 41 p. 100, No. 32 table 55 p. 127 and No. 33 table 58 p. 133 (from 1871
+  built whether registered or not, foreigners' and the Navy's ships left out), No. 46 tables 61 and 62 pp. 178-179
+  (British owners; built for foreigners, war and merchant, 1884-1898). Images in `<cache>/stat_abstract_img/`
+  (n8_56, n9_128, n23_98, n26_510, n32_305, n33_491, n46_450, n46_451; image `page/n<leaf-1>`).
+- Checks: every row's sail + steam tonnage equals its total; vessel counts too except 1847 (830 + 103 printed 936,
+  Nos. 8 and 9) and No. 46's 1887 foreign count (56 for 156), `KNOWN`. Each year from the latest edition; the
+  overlaps agree except the revisions, which must equal `REVISED`: 1861 (No. 9 310,900 tons, No. 23 200,839),
+  1867-1873 (No. 23 → No. 26, 1871-73 also a change of definition), 1877-1878 (No. 26 → No. 32). No. 33 equals No. 32
+  for 1871-1884 and No. 46 for 1884-85, so the Navy exclusion it states is no change.
+- Breaks at 1871 (definition) and 1897 (foreign owners included). 1897: 482,267 tons for British owners + 162,430 for
+  foreigners (war and merchant) in No. 46; 635,210 merchant tons in all in No. 59 (1898 sail equal in both, so the
+  steam difference is warships). 125 thousand tons in 1846, steam first outweighed sail in 1870 and last fell behind
+  in 1885, 769 thousand in 1883.
+- Source `stat_abstract_shipping_uk` updated. Tests 420 OK (`test_change_shipping`: two new); ui_check
+  change_shipping (now requires the breaks), change_trade_joined, change_wages, trades OK; graph checked in a
+  screenshot. Hosted copy not updated.

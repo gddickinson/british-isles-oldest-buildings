@@ -14,6 +14,23 @@ class Wages(unittest.TestCase):
         rows[5]["coal"] += 1
         self.assertEqual(len(cw.check(rows)), 2)
 
+    def test_editions(self):
+        rows = cw.load_bot()
+        self.assertEqual([r["year"] for r in rows], list(range(1879, 1914)))
+        self.assertEqual({r["edition"] for r in rows if r["year"] > 1879}, {"op1256333-1001"})
+
+    def test_war_and_after(self):
+        rows = cw.load_war()
+        r = cw.real_1914(rows)
+        self.assertEqual(sorted(r), list(range(1914, 1935)))       # one point a year, July 1920 left out
+        self.assertEqual(r[1914], (100.0, 100.0, 100.0))
+        self.assertTrue(all(lo <= v <= hi for v, lo, hi in r.values()))
+        self.assertLess(r[1917][0], 80)                            # prices outran wages in the war
+        july, end = [x for x in rows if x["year"] == 1920]
+        a, b = july["wage_high"] / july["cost_of_living"], end["wage_low"] / end["cost_of_living"]
+        self.assertLess(abs(a - b), 0.02)                          # Bowley's July 1920 near the Ministry's end of 1920
+        self.assertTrue(all(x["wage_low"] <= x["wage_high"] for x in rows))
+
     def test_quarters(self):
         m = cw.load_mol()
         self.assertEqual(m[1924], 100)

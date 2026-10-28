@@ -4666,61 +4666,6 @@
   "zero": false
  },
  {
-  "id": "wages_real_uk",
-  "theme": "Prosperity and work",
-  "title": "Real wage rates, 1879-1912 and 1924-1938",
-  "region": "United Kingdom",
-  "unit": "",
-  "unit_long": "index of wage rates over prices",
-  "label": "1879-1912 (1900 = 100)",
-  "sources": [
-   "bot_labour_abstract_16",
-   "stat_abstract_wages_uk",
-   "ons_cdko"
-  ],
-  "file": "wages_real_uk.csv",
-  "default": false,
-  "models": [
-   "wages_real_1924_uk"
-  ],
-  "note": "Wage rates divided by prices (the ONS's long-run Retail Prices Index): what a week's wage at the standard rates would buy. 1879-1912: the Board of Trade's index of the general course of wages (unweighted mean of building, coal mining, engineering, textiles and agriculture), 1900 = 100; 1924-1938: the Ministry of Labour's index of weekly full-time rates of wages in a representative selection of industries, 1924 = 100. Rates, not earnings: neither counts short time, unemployment, overtime or the move of workers into better-paid trades, and the two cannot be joined (no index of the same kind for 1913-1923 is open). Real wage rates rose 19% from 1879 to 1900 as prices fell (84.3 to 100), then fell to 95.7 in 1912 as prices rose; between the wars money rates fell (94.0 in 1933) but prices fell faster, so real rates rose to 110.7 in 1933 and 117.2 in 1938.",
-  "zero": false
- },
- {
-  "id": "wages_real_1924_uk",
-  "theme": "Prosperity and work",
-  "title": "Real wage rates, 1924-1938",
-  "region": "United Kingdom",
-  "unit": "",
-  "unit_long": "index of wage rates over prices",
-  "label": "1924-1938 (1924 = 100)",
-  "sources": [
-   "stat_abstract_wages_uk",
-   "ons_cdko"
-  ],
-  "file": "wages_real_1924_uk.csv",
-  "default": false,
-  "hidden": true,
-  "zero": false
- },
- {
-  "id": "wages_awe_real_uk",
-  "theme": "Prosperity and work",
-  "title": "Average weekly earnings at 2025 prices, 2000-2025",
-  "region": "United Kingdom",
-  "unit": "£",
-  "unit_long": "£ a week at 2025 prices",
-  "label": "Average weekly earnings",
-  "sources": [
-   "ons_kab9",
-   "ons_cdko"
-  ],
-  "file": "wages_awe_real_uk.csv",
-  "default": false,
-  "note": "Average weekly earnings, whole economy, total pay (ONS series KAB9), yearly, at 2025 prices (divided by the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), so the fall since 2007 is larger here than on those measures. £313 a week in 2000 was £740 at 2025 prices; earnings peaked at £819 in 2007, fell to £711 in 2023 and were £728 in 2025.",
-  "zero": false
- },
- {
   "id": "shipping_reg_total_uk",
   "theme": "Industry and energy",
   "title": "Merchant fleet registered in the UK, 1884-1938",
@@ -4783,5 +4728,86 @@
   "file": "shipping_built_uk.csv",
   "default": false,
   "note": "Merchant ships built in the United Kingdom each year, thousand net tons, ships for foreign owners included, from the Statistical Abstract (Nos. 59, 70, 83). 1200 thousand tons in 1913; 410 in 1915; 1278 in the post-war boom of 1920; 84 in 1933, the depth of the slump; 598 in 1938. Motor ships from 1924 (with steam before)."
+ },
+ {
+  "id": "wages_real_uk",
+  "theme": "Prosperity and work",
+  "title": "Real wage rates, 1879-1938",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index of wage rates over prices",
+  "label": "1879-1913 (1900 = 100)",
+  "sources": [
+   "bot_labour_abstract_16",
+   "bot_labour_abstract_17",
+   "bowley_1921_wages",
+   "stat_abstract_wages_uk",
+   "ons_cdko"
+  ],
+  "file": "wages_real_uk.csv",
+  "default": false,
+  "models": [
+   "wages_real_1914_uk",
+   "wages_real_1924_uk"
+  ],
+  "note": "Wage rates divided by prices: what a week's wage at the standard rates would buy, three lines on their own bases. 1879-1913: the Board of Trade's index of the general course of wages (unweighted mean of building, coal mining, engineering, textiles and agriculture), 1900 = 100, over the ONS's long-run Retail Prices Index. 1914-1934: July 1914 = 100, wage rates over the official cost-of-living index at the same date, the band showing the range printed: to 1919 Bowley's rough average of time rates in July (1921), from 1920 the Ministry of Labour's estimate of the average increase in weekly full-time rates at the end of each year (the cost of living at the beginning of the next January). 1924-1938: the Ministry of Labour's index of weekly full-time rates in a representative selection of industries, 1924 = 100, over the RPI. Rates, not earnings: none counts short time, unemployment, overtime or the move of workers into better-paid trades (war work raised earnings well above rates). Real wage rates rose 19% from 1879 to 1900 as prices fell (84.3 to 100), then fell to 96.1 in 1912 as prices rose. In the war prices outran wages (real rates 76 in July 1917, July 1914 = 100); wages caught up in 1918-19 and stood at 104 at the end of 1920 and 111 a year later, as prices fell first; the wage cuts of 1922 took them back to 97, and as prices then fell faster than money rates they reached 115 at the end of 1934. On the 1924 base, money rates fell to 94.0 in 1933 and real rates rose to 110.7 in 1933 and 117.2 in 1938.",
+  "zero": false
+ },
+ {
+  "id": "wages_real_1914_uk",
+  "theme": "Prosperity and work",
+  "title": "Real wage rates, 1914-1934",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index of wage rates over the cost of living",
+  "label": "1914-1934 (July 1914 = 100)",
+  "sources": [
+   "bowley_1921_wages",
+   "stat_abstract_wages_uk"
+  ],
+  "file": "wages_real_1914_uk.csv",
+  "default": false,
+  "hidden": true,
+  "breaks": [
+   [
+    1920,
+    "July figures (Bowley) to 1919; from 1920 the Ministry of Labour's, at the end of each year"
+   ]
+  ],
+  "zero": false
+ },
+ {
+  "id": "wages_real_1924_uk",
+  "theme": "Prosperity and work",
+  "title": "Real wage rates, 1924-1938",
+  "region": "United Kingdom",
+  "unit": "",
+  "unit_long": "index of wage rates over prices",
+  "label": "1924-1938 (1924 = 100)",
+  "sources": [
+   "stat_abstract_wages_uk",
+   "ons_cdko"
+  ],
+  "file": "wages_real_1924_uk.csv",
+  "default": false,
+  "hidden": true,
+  "zero": false
+ },
+ {
+  "id": "wages_awe_real_uk",
+  "theme": "Prosperity and work",
+  "title": "Average weekly earnings at 2025 prices, 2000-2025",
+  "region": "United Kingdom",
+  "unit": "£",
+  "unit_long": "£ a week at 2025 prices",
+  "label": "Average weekly earnings",
+  "sources": [
+   "ons_kab9",
+   "ons_cdko"
+  ],
+  "file": "wages_awe_real_uk.csv",
+  "default": false,
+  "note": "Average weekly earnings, whole economy, total pay (ONS series KAB9), yearly, at 2025 prices (divided by the Retail Prices Index). Earnings, not rates: they include bonuses and overtime and change with the mix of jobs. The RPI rises faster than the official CPI and CPIH (the ONS no longer counts it a national statistic), so the fall since 2007 is larger here than on those measures. £313 a week in 2000 was £740 at 2025 prices; earnings peaked at £819 in 2007, fell to £711 in 2023 and were £728 in 2025.",
+  "zero": false
  }
 ]

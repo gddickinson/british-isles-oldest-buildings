@@ -2010,3 +2010,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   graph) and trades OK; graph checked in a screenshot. Hosted copy not updated.
 - Slip: the first page-image download sent George's email address in its User-Agent to archive.org; later requests
   used the project's own `config.USER_AGENT`.
+
+## 2026-10-27 — C5d2a: real wage rates 1913-1934
+- C5d2 split: C5d2a (done), C5d2b (before 1879 and 1935-1999: Phelps Brown–Hopkins quoted, the Labour Gazette issues on
+  the Internet Archive as the lead for 1939-1999).
+- "Real wage rates" now runs 1879-1938 with three lines on their own bases. Board of Trade index to 1913 from the
+  Seventeenth Abstract of Labour Statistics (Cd. 7733, p. 66, leaf 90), which revised agriculture, so 1880-1913 come
+  from it and 1879 from the Sixteenth (`wages_bot_1879_1913.csv`, replacing `wages_bot_1879_1912.csv`). All 35 rows'
+  printed means are recomputed within their rounding; the old 1911 slip (`KNOWN`) belonged to the Sixteenth and is gone.
+- New line `wages_real_1914_uk` (July 1914 = 100, band = printed ranges, `wages_mol_1914_1934.csv`, every row with
+  edition, leaf and page): Bowley, Prices and Wages in the UK 1914-1920 (1921), Table XXXIII p. 106, July 1914-1919
+  (wages and the Labour Gazette cost of living; quoted figures, new source `bowley_1921_wages`). From 1920 the
+  Ministry of Labour's increase in weekly full-time rates since July 1914 at each 31 December (Statistical Abstract
+  No. 70 p. 93 and No. 79 pp. 140-141, equal on 1922-25), divided by the cost of living at the next 1 January (No. 79
+  p. 137, No. 80 p. 137). Real rates: 76 in July 1917, 104 at the end of 1920, 111 in 1921, 97 in 1922, 115 in 1934.
+  The line restarts at 1920 (`breaks`).
+- New source `bot_labour_abstract_17`, `stat_abstract_wages_uk` extended (121 sources). Tests 404 OK
+  (`test_change_wages`: editions, the 1914-1934 line, July 1920 against the end of 1920); new ui_check `change_wages`
+  OK, change_tea and trades OK; graph checked in a screenshot. Page images cached in `<cache>/stat_abstract_img/`
+  (n70_105-107, n79_155-161, n80_156) and `<cache>/labour_abstract/`. Hosted copy not updated.

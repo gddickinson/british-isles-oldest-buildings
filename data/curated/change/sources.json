@@ -1321,5 +1321,16 @@
   "url": "https://archive.org/details/historyprinciple00gilb",
   "used": "Licences issued to country bankers 1809-1832, banks licensed 1811-1818 (by county, with partners) and commissions of bankruptcy against country banks 1809-1830 (data/curated/change/data/banks_gilbart_1837_table1.csv, banks_gilbart_1837_table2.csv; bidb.change_banks, roadmap C5e2b2b2b1)",
   "checked": "2026-10-28, page images read (pp. 110-112); every county column adds to its printed total except the banks of 1815-16 (644 against 643 printed)"
+ },
+ "stat_abstract_banknotes_uk": {
+  "short": "Statistical Abstract for the UK: bank notes in circulation 1846-1922",
+  "publisher": "Board of Trade (HMSO); returns furnished by the Inland Revenue Department (the Stamp Office before)",
+  "citation": "Statistical Abstract for the United Kingdom (annual, HMSO), table of the average amount of promissory notes payable to bearer on demand in circulation in each of the undermentioned months (from No. 68: four weekly periods), distinguishing those issued in England and Wales (Bank of England; country banks, private and joint stock), Scotland (chartered and joint stock banks) and Ireland (Bank of Ireland; private and joint stock banks): No. 8 (1846-1860), pp. 64-67; No. 13 (1851-1865), pp. 104-107; No. 26 (1864-1878), pp. 124-127; No. 41 (1879-1893), pp. 216-219; No. 46 (1884-1898), pp. 242-245; No. 59 (1897-1911), table 108, pp. 380-383; No. 62 (1900-1914), pp. 368-369 (to confirm June 1900); No. 68 (1908-1922), table 92, p. 303 (thousands; country banks not divided, Ireland in one column). Internet Archive scans, collection pub_annual-abstract-of-statistics-gb.",
+  "licence": "Public domain (Crown copyright expired)",
+  "licence_url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+  "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
+  "url": "https://archive.org/details/pub_annual-abstract-of-statistics-gb",
+  "used": "Bank notes in circulation four times a year 1846-1922 by issuer (data/curated/change/data/banknotes_abstract_uk.csv: 420 printed rows, one per edition and date; bidb.change_banknotes, roadmap C5e2b2b2b2): yearly means of the four dates from the latest edition, England and Wales country banks (private, joint stock) to 1921",
+  "checked": "2026-10-28, page images read: tesseract readings kept only where both printed sums hold; every other row read from the image; overlapping editions equal but two misprinted Bank of England figures"
  }
 }

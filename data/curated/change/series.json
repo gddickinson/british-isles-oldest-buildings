@@ -5170,5 +5170,103 @@
   "file": "banks_country_failures_ew.csv",
   "default": false,
   "note": "Commissions of bankruptcy issued against country banks in England and Wales each year, from the same table of Gilbart's (1837, p. 110; none given for 1831-1832). 311 in 1809-1830: 89 in 1814-1816 and 80 in the crisis of 1825-1826; 20 in 1810. Gilbart counts 22 country banks bankrupt in 1793."
+ },
+ {
+  "id": "banknotes_boe_uk",
+  "theme": "Prosperity and work",
+  "title": "Bank notes in circulation, 1846-1922",
+  "region": "United Kingdom",
+  "unit": "£ million",
+  "unit_long": "£ million (yearly mean)",
+  "label": "Bank of England",
+  "sources": [
+   "stat_abstract_banknotes_uk"
+  ],
+  "file": "banknotes_boe_uk.csv",
+  "default": false,
+  "models": [
+   "banknotes_scotland_uk",
+   "banknotes_ireland_uk"
+  ],
+  "note": "Bank notes in circulation, the mean of four dates a year (the months ended in March, June, September and December; four-weekly periods from 1908), from the Statistical Abstract's returns of notes payable to bearer on demand, read from the page images (Nos. 8, 13, 26, 41, 46, 59 and 68, each year from the latest edition; every row checked against its printed totals). The Bank Charter Act of 1844 barred new banks of issue, so the Bank of England's notes grew while the country banks' shrank: £20.8 million of Bank of England notes in 1846 against £7.6 million of country bank notes in England and Wales, £28.5 million and £0.14 million in 1913. Scottish banks issued £3.5 million in 1846 and £7.7 million in 1913, the Irish £7.2 million and £8.2 million. With the war the Bank of England's notes rose to £118 million in 1920 (the Treasury's currency notes are in another table of the Abstract, not drawn here); all notes in the United Kingdom came to £39.1 million in 1846, £44.5 million in 1913 and £173 million in 1920. Three printed rows do not add up: December 1893 and December 1897 (the Bank of England figure, corrected in the next edition) and June 1900 (parts £45,902,258, total printed £45,884,258, the same in No. 62)."
+ },
+ {
+  "id": "banknotes_scotland_uk",
+  "theme": "Prosperity and work",
+  "title": "Scottish banks' notes",
+  "region": "Scotland",
+  "unit": "£ million",
+  "unit_long": "£ million (yearly mean)",
+  "label": "Scottish banks",
+  "sources": [
+   "stat_abstract_banknotes_uk"
+  ],
+  "file": "banknotes_scotland_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "banknotes_ireland_uk",
+  "theme": "Prosperity and work",
+  "title": "Irish banks' notes",
+  "region": "Ireland",
+  "unit": "£ million",
+  "unit_long": "£ million (yearly mean)",
+  "label": "Irish banks",
+  "sources": [
+   "stat_abstract_banknotes_uk"
+  ],
+  "file": "banknotes_ireland_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "banknotes_country_ew",
+  "theme": "Prosperity and work",
+  "title": "Country bank notes in England and Wales, 1846-1921",
+  "region": "England and Wales",
+  "unit": "£ million",
+  "unit_long": "£ million (yearly mean)",
+  "label": "all country banks",
+  "sources": [
+   "stat_abstract_banknotes_uk"
+  ],
+  "file": "banknotes_country_ew.csv",
+  "default": false,
+  "models": [
+   "banknotes_private_ew",
+   "banknotes_jointstock_ew"
+  ],
+  "note": "Notes of the country banks of England and Wales in circulation (the mean of four dates a year), private and joint stock banks apart to 1911 (No. 68 prints them as one column). After the Act of 1844 no new bank could issue notes and a bank lost its issue when it merged, so the issue shrank: £7.65 million in 1846 (private 4.49, joint stock 3.15), £5.14 million in 1866, £2.31 million in 1890, £1.23 million in 1900 and £0.168 million in 1911 (private 0.081, joint stock 0.087). £2,000 remained in March 1921; from June 1921 the column is blank (the event \"Bank Charter Act and the end of country bank notes\" names the last bank of issue)."
+ },
+ {
+  "id": "banknotes_private_ew",
+  "theme": "Prosperity and work",
+  "title": "Private banks' notes",
+  "region": "England and Wales",
+  "unit": "£ million",
+  "unit_long": "£ million (yearly mean)",
+  "label": "private banks",
+  "sources": [
+   "stat_abstract_banknotes_uk"
+  ],
+  "file": "banknotes_private_ew.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "banknotes_jointstock_ew",
+  "theme": "Prosperity and work",
+  "title": "Joint stock banks' notes",
+  "region": "England and Wales",
+  "unit": "£ million",
+  "unit_long": "£ million (yearly mean)",
+  "label": "joint stock banks",
+  "sources": [
+   "stat_abstract_banknotes_uk"
+  ],
+  "file": "banknotes_jointstock_ew.csv",
+  "default": false,
+  "hidden": true
  }
 ]

@@ -2213,3 +2213,31 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   renamed `banks_gilbart_1837_table*.csv`.
 - New source `gilbart_1837_banks` (130); DATA_LICENSE.md row; 289 series. Tests 432 OK (`test_change_banks`, 4 new);
   ui_check change_banks (new), change_steam, trades OK; graphs checked in a screenshot. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2b2b2: bank notes in circulation, 1846-1922
+- New `bidb/change_banknotes.py`: the Statistical Abstract's "average amount of promissory notes payable to bearer on
+  demand in circulation", four dates a year (March, June, September, December; four-weekly periods in No. 68), by
+  issuer: Bank of England, country banks of England and Wales (private, joint stock), Scotland, Bank of Ireland, other
+  Irish banks, United Kingdom. Pages (image = leaf - 1): No. 8 pp. 64-67, No. 13 pp. 104-107, No. 26 pp. 124-127,
+  No. 41 pp. 216-219, No. 46 pp. 242-245, No. 59 table 108 pp. 380-383, No. 68 table 92 p. 303 (thousands; country
+  banks and Ireland one column each), No. 62 pp. 368-369 to confirm June 1900 → `banknotes_abstract_uk.csv`
+  (420 printed rows, one per edition and date, with how each was read).
+- Method: tesseract at three scales on every page; a row kept from OCR only when its readings satisfy both printed
+  sums (private + joint stock = country; Bank of England + country + Scotland + Ireland = United Kingdom), allowing
+  for 3/8, 5/6, 0/9 confusions; every other row (175) checked or read from crops of the page image (the solver's
+  "corrected" proposals were wrong in several rows, so none were taken unseen). 4 figures on damaged scans taken from
+  the printed total (Scotland Dec 1868 and Mar 1869, Irish joint stock Mar 1876 and June 1893), each matching the
+  visible digits (June 1893 also printed so in No. 46). No. 41's right-hand page lost a row at Sept 1888 and was re-aligned.
+- Checks: every row adds up but three (`KNOWN`): Dec 1893 in No. 41 and Dec 1897 in No. 59 (Bank of England 5 and 230
+  over the total; Nos. 46 print 25,296,323 and 27,262,697) and June 1900 (parts £45,902,258, total £45,884,258, the
+  same in No. 62). Overlapping editions (1851-60, 1864-65, 1884-93, 1897-98, 1908-11) equal figure for figure but
+  those two; No. 68 equals No. 59 to its rounding.
+- Graphs (yearly means, latest edition): "Bank notes in circulation, 1846-1922" (Bank of England £20.8 million in
+  1846, £28.5 million in 1913, £118 million in 1920; Scottish banks £3.5 → £7.7 million, Irish £7.2 → £8.2 million by
+  1913) and "Country bank notes in England and Wales, 1846-1921" (£7.65 million in 1846, £2.31 million in 1890,
+  £0.168 million in 1911; £2,000 in March 1921, blank from June 1921). Both in the banking trade story. New event
+  "Bank Charter Act and the end of country bank notes" (1844-1921, quoted from Wikipedia: no new banks of issue;
+  Fox, Fowler and Company the last, 1921).
+- Source `stat_abstract_banknotes_uk` (131); DATA_LICENSE.md row extended; 295 series, 74 events. Tests 437 OK
+  (`test_change_banknotes`, 5 new); ui_check change_banknotes (new), change_banks, trades OK; graphs checked in a
+  screenshot of /trades?t=banking. Hosted copy not updated.

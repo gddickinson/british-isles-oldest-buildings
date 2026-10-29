@@ -46,3 +46,21 @@
 .sky-panel .sky-key.then::before { border-top-style: dashed; }
 .sky-table td:nth-child(2), .sky-table td:nth-child(3) { white-space: nowrap; }
 .sky-grid > div { min-width: 0; overflow-x: auto; }
+/* Sky calendar page (/sky, sky_page.js) */
+.sky-page .sky-tools { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin: 8px 0; }
+.sky-page-map { height: 360px; border-radius: 8px; border: 1px solid var(--line); margin: 8px 0 16px; }
+.sky-event { border: 1px solid var(--line); border-left: 4px solid var(--sky-sun); border-radius: 8px; background: var(--panel);
+  padding: 10px 14px; margin: 10px 0; }
+.sky-event h2 { font-size: 1.1rem; margin: 0 0 2px; }
+.sky-when { font-weight: 400; color: var(--muted); font-size: .95rem; margin-left: 6px; }
+.sky-sites { padding-left: 18px; margin: 6px 0; }
+.sky-sites li { margin: 6px 0; }
+#sk_moon h2 { font-size: 1.1rem; margin-top: 1.4rem; }
+.sky-compass .sky-axis { stroke: var(--ink); stroke-width: 4; opacity: .75; }
+.sky-compass .sky-axis-back { stroke-width: 2; opacity: .4; }
+.sky-key.axis::before { border-color: var(--ink); border-top-width: 3px; }
+.sky-hist { width: 100%; max-width: 680px; height: auto; display: block; margin: 8px 0; }
+.sky-hist .sky-range { fill: var(--sky-sun); opacity: .15; }
+.sky-hist .sky-eq { stroke: var(--sky-sun); stroke-dasharray: 3 3; }
+.sky-hist .sky-bar { fill: var(--accent); }
+.sky-hist text { font-size: 11px; fill: var(--muted); text-anchor: middle; }

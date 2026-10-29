@@ -9,6 +9,26 @@ const SkyHere = (() => {
       d.alignments.forEach((a) => a.record && (by[a.record] = by[a.record] || []).push(a));
       return { all: d.alignments, by };
     }).catch(() => ({ all: [], by: {} })));
+  let CHURCHES = null;
+  const churches = () => (CHURCHES = CHURCHES || fetch((typeof IS_STATIC !== "undefined" && IS_STATIC ? "static" : "/static")
+    + "/data/church_orientation.json").then((r) => r.json()).catch(() => ({ churches: {} })));
+  const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const md = (s) => { const [m, d] = s.split("-").map(Number); return `${d} ${MONTHS[m - 1]}`; };
+  const calendarPage = () => (IS_STATIC ? "sky.html" : "/sky");
+
+  // Church orientation (SK5): [axis, length/width, dates the sun rose on the axis, calendar year, feast, difference]
+  function churchHTML(c) {
+    const [az, el, dates, cal, feast, diff] = c;
+    if (el < 1.4) return `<h4>Orientation</h4><p class="meta">The outline has no clear long axis (${el.toFixed(2)} times as long as wide).</p>`;
+    if (!dates) return `<h4>Orientation</h4><p>The axis of the outline runs ${az.toFixed(0)}°–${(az + 180).toFixed(0)}°; neither end faces the sunrise.</p>`;
+    return `<h4>Orientation</h4>
+      <p>The east end of the outline's axis points ${az.toFixed(1)}° (${Sky.compass(az)}). ${dates.length
+        ? `The sun rose on that line on about ${dates.map(md).join(" and ")} ${cal != null ? ` in the Julian calendar of ${cal}, the year it was begun` : " in the Julian calendar of 1300 (it has no medieval start date)"}.`
+        : "The sun never rises that far round."}${feast ? ` On the feast of its saint (${esc(feast)}) the sun rose ${diff.toFixed(1)}° from the axis.` : ""}</p>
+      <p class="meta">From the OpenStreetMap outline, flat horizon. Whether churches were set out to face sunrise on
+        their saint's day is disputed: see <a href="${calendarPage()}#churches">the test across the catalogue</a>.</p>`;
+  }
+
   const VERDICT = { established: "Established", probable: "Probable", disputed: "Disputed" };
   const fmtDate = (d) => d.toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" });
   const deg = (a) => (a == null ? "–" : `${a.toFixed(1)}° ${Sky.compass(a)}`);
@@ -45,7 +65,7 @@ const SkyHere = (() => {
     return ev;
   }
 
-  function compassSVG(lat, ev, year, aligned) {
+  function compassSVG(lat, ev, year, aligned, church) {
     const S = 200, c = S / 2, r = 78;
     const ray = (az, cls, len = r) => { const x = c + len * Math.sin(az * Math.PI / 180), y = c - len * Math.cos(az * Math.PI / 180);
       return `<line class="${cls}" x1="${c}" y1="${c}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`; };
@@ -57,6 +77,7 @@ const SkyHere = (() => {
       if (then != null && Math.abs(then - now) >= 0.3) lines.push(ray(then, "sky-then", r - 8));
     }));
     aligned.filter((a) => a.event).forEach((a) => lines.push(ray(a.azimuth_built ?? a.azimuth_now, "sky-aligned", r + 10)));
+    if (church && church[1] >= 1.4) lines.push(ray(church[0], "sky-axis", r + 10), ray(church[0] + 180, "sky-axis sky-axis-back", r - 20));
     const label = (t, az) => `<text x="${c + (r + 14) * Math.sin(az * Math.PI / 180)}" y="${c - (r + 14) * Math.cos(az * Math.PI / 180) + 4}">${t}</text>`;
     return `<svg class="sky-compass" viewBox="0 0 ${S} ${S}" role="img" aria-label="Compass of sunrise and sunset directions">
       <circle cx="${c}" cy="${c}" r="${r}"/>${label("N", 0)}${label("E", 90)}${label("S", 180)}${label("W", 270)}${lines.join("")}
@@ -82,14 +103,16 @@ const SkyHere = (() => {
     if (Number.isNaN(lat)) return;
     const year = el.dataset.year === "" || el.dataset.year == null ? null : parseInt(el.dataset.year, 10);
     const aligned = ((await load()).by[el.dataset.sky]) || [];
+    const church = el.dataset.church ? (await churches()).churches[el.dataset.sky] : null;
     const ev = events(year != null && year < -500, aligned);
-    el.innerHTML = `${aligned.length ? `<h4>Sky alignment</h4>${aligned.map(alignmentHTML).join("")}` : ""}
+    el.innerHTML = `${aligned.length ? `<h4>Sky alignment</h4>${aligned.map(alignmentHTML).join("")}` : ""}${church ? churchHTML(church) : ""}
       <details class="sky-details"${aligned.length ? " open" : ""}><summary>Sun${ev.some(([b]) => b === "moon") ? " and moon" : ""} on the horizon here</summary>
-        <div class="sky-grid">${compassSVG(lat, ev, year, aligned)}<div>${tableHTML(lat, ev, year)}
+        <div class="sky-grid">${compassSVG(lat, ev, year, aligned, church)}<div>${tableHTML(lat, ev, year)}
         <p class="hint">Directions from true north where the first or last gleam appears over a flat horizon; hills and
         buildings move them. Lines: <span class="sky-key sun">sun</span>${ev.some(([b]) => b === "moon") ? ' <span class="sky-key moon">moon at its standstills</span>' : ""}${
-          aligned.length ? ' <span class="sky-key aligned">researched alignment</span>' : ""}${year != null && year < 1000 ? ' <span class="sky-key then">when begun</span>' : ""}.</p>
-        ${el.dataset.lon ? `<p><a href="${esc(skyMapUrl(el))}">Show sun lines on the map</a></p>` : ""}</div></div>
+          aligned.length ? ' <span class="sky-key aligned">researched alignment</span>' : ""}${
+          church && church[1] >= 1.4 ? ' <span class="sky-key axis">axis of the building</span>' : ""}${year != null && year < 1000 ? ' <span class="sky-key then">when begun</span>' : ""}.</p>
+        ${el.dataset.lon ? `<p><a href="${esc(skyMapUrl(el))}">Show sun lines on the map</a> · <a href="${calendarPage()}">Sky calendar</a></p>` : ""}</div></div>
       </details>`;
   }
   const skyMapUrl = (el) => {

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Sky calendar · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page sky-page">
+  <h1>Sky calendar</h1>
+  <p class="prose">The coming solstices, equinoxes and the days half way between them, with the monuments said to face
+    each sunrise or sunset, the time the sun rises or sets there and how to see it. Each alignment is a claim with its
+    sources quoted; disputed ones give both views. Directions and times are for a flat horizon: hills move them by a few
+    degrees and minutes.</p>
+  <div class="sky-tools">
+    <label class="check"><input type="checkbox" id="sk_disputed" checked> Include disputed alignments</label>
+    <span class="meta" id="sk_count" aria-live="polite"></span>
+  </div>
+  <div id="sk_map" class="sky-page-map"></div>
+  <div id="sk_events"></div>
+  <section id="sk_moon"></section>
+  <section id="churches" class="sky-churches"></section>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='sky_page.js') }}"></script>
+<script src="{{ url_for('static', filename='sky_churches.js') }}"></script>
+{% endblock %}

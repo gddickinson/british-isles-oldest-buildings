@@ -37,11 +37,14 @@ Sky and alignments (first)
       was begun), drawn on a small compass; the researched alignment and the next date to see it.
 - [x] SK4 (2026-10-29) Sun and moon lines on the Map page: rays of sunrise, sunset, moonrise and moonset from a chosen point for a
       chosen date (photographer's-ephemeris style), and the solstice lines of a researched alignment.
-- [ ] SK5 Church orientation: axis of each church's OSM outline (footprints) → the dates the sun rises on that line →
+- [x] SK5 (2026-10-29: 2,499 medieval churches tested, 396 within 5° of their feast-day sunrise against 390 by chance (95%: 359-423): no more than chance, as Hinton 2006 found; 51 dedications and 5 studies, 74 quotes found) Church orientation: axis of each church's OSM outline (footprints) → the dates the sun rises on that line →
       compared with the patron saint's day (`dedication`), as the published studies do; stated as a test of a
       disputed idea, with the share of churches that agree against chance.
-- [ ] SK6 Sky calendar: the next solstice, equinox, cross-quarter day and lunar standstill season, where to stand for
+- [x] SK6 (2026-10-29, page `/sky`; access from the researched `viewing` lines, not the visiting table) Sky calendar: the next solstice, equinox, cross-quarter day and lunar standstill season, where to stand for
       each researched alignment, public access (visiting table) and booking notes (e.g. Newgrange lottery).
+- [ ] SK5b Church orientation, next: the alternative saints of ambiguous Wikidata labels (`if_other_saint`: Oswald of
+      Northumbria, Augustine of Canterbury); Hoare and Sweet 2000 (abstract not fetchable) and Hinton's survey data
+      (UEA thesis downloads) to compare; outlines of the nave only (later aisles and towers skew the axis); horizons (SK7).
 - [ ] SK7 Real horizons: horizon altitude from a DEM (OpenTopoData, local GUI only) so rising points behind hills are
       right; cached per monument.
 

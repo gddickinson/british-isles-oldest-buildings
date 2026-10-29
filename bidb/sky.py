@@ -131,11 +131,46 @@ def sun_declination(jd):
 
 def next_sun_event(event, jd):
     """Julian day of the next time after jd that the sun reaches the longitude of an event."""
-    target = SUN_EVENTS[event]
+    return next_longitude(SUN_EVENTS[event], jd)
+
+
+def next_longitude(target, jd):
+    """Julian day of the next time after jd that the sun reaches an ecliptic longitude (degrees)."""
     guess = jd + ((target - sun_longitude(jd)) % 360) / 360 * 365.2422
     for _ in range(6):
         guess += ((target - sun_longitude(guess) + 180) % 360 - 180) / 360 * 365.2422
-    return guess if guess > jd else next_sun_event(event, jd + 1)
+    return guess if guess > jd else next_longitude(target, jd + 1)
+
+
+def equation_of_time(jd):
+    """Apparent minus mean solar time in minutes (NOAA's approximation)."""
+    t = (jd - 2451545.0) / 36525
+    eps = rad(obliquity(2000 + t * 100))
+    l0 = rad((280.46646 + 36000.76983 * t) % 360)
+    m = rad(357.52911 + 35999.05029 * t)
+    e = 0.016708634 - 0.000042037 * t
+    y = math.tan(eps / 2) ** 2
+    return 4 * deg(y * math.sin(2 * l0) - 2 * e * math.sin(m) + 4 * e * y * math.sin(m) * math.cos(2 * l0)
+                   - 0.5 * y * y * math.sin(4 * l0) - 1.25 * e * e * math.sin(2 * m))
+
+
+def rise_set_times(lat, lon, jd0, horizon=0.0):
+    """Julian days of sunrise and sunset on the day starting at jd0 (0h UT), lon east positive; None when the sun
+    does not rise or set. Two passes, so within about a minute."""
+    out = []
+    for sign in (-1, 1):
+        t = jd0 + 0.5 - lon / 360
+        for _ in range(2):
+            dec, h = rad(sun_declination(t)), rad(centre_altitude("sun", horizon))
+            c = (math.sin(h) - math.sin(rad(lat)) * math.sin(dec)) / (math.cos(rad(lat)) * math.cos(dec))
+            if abs(c) > 1:
+                out.append(None)
+                break
+            noon = jd0 + (720 - 4 * lon - equation_of_time(t)) / 1440
+            t = noon + sign * deg(math.acos(c)) * 4 / 1440
+        else:
+            out.append(t)
+    return tuple(out)
 
 
 def node_longitude(jd):

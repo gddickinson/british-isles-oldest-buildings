@@ -2574,3 +2574,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Wales, NI and Ireland checked, no hillshade service (LD1b). Fixed: historic.js inserted its panel block before the
   first nested `small:last-child`, which broke once another block was added (now `:scope >`).
 - Tests 503 OK. Running server on 5050 still has the old templates (restart to see the changes); hosted copy not updated.
+
+## 2026-10-29 — Sky calendar (SK6) and church orientation (SK5)
+- Page `/sky` (nav "Sky calendar"): the next solstices, equinoxes and cross-quarter days in date order with the
+  researched alignments facing each, the sun's rising or setting time there (new `rise_set_times` /
+  `riseSetTimes`, equation of time; London midsummer 04:43 and 21:21 BST in the tests), how to see it; the moon's
+  standstills; a map of the sites. Detail views link to it.
+- `bidb/church_orientation.py`: axis of each religious record's OSM outline (smallest rectangle round the hull;
+  4,916 of 5,818 have a clear axis, 4,782 face NNE-SSE, spike at due east), Julian-calendar dates the sun rose on it.
+  `data/curated/church_orientation.json` (research agent): feasts of 51 dedications (several per saint where parishes
+  kept more than one; movable ones left out) and 5 studies (Ali and Cunich 2001, Hinton 2006, Hoare 2015, Wikipedia,
+  González-García and Belmonte 2015, the last Iberian); 74 quotes, all found. Hoare and Sweet 2000 not included (abstract
+  not fetchable).
+- Test: 2,499 churches begun before 1540 with a fixed feast; 396 (15.8%) face within 5° of sunrise on their feast in
+  the year begun; with dedications shuffled 200 times, 389.6 on average (95%: 359-423). No more than chance.
+  Shown on `/sky#churches` (histogram, result, by dedication, studies) and as "Orientation" in church detail views
+  (axis drawn on the compass).
+- Tests 508 OK (`test_church_orientation` new, `test_sky` +1); ui_check sky, sky_churches, building_orientation OK.
+- Restarted the app on 5050 (the old servers on 5050 and 5073 stopped). Hosted copy not updated.

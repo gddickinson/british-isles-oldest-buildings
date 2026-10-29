@@ -59,11 +59,31 @@ const Sky = (() => {
     return Math.asin(Math.sin(eps * R) * Math.sin(sunLongitude(jd) * R)) / R;
   }
   const wrap = (x) => ((x % 360) + 360) % 360;
-  function nextSunEvent(event, jd) {
-    const target = SUN_EVENTS[event];
+  const nextSunEvent = (event, jd) => nextLongitude(SUN_EVENTS[event], jd);
+  function nextLongitude(target, jd) {
     let g = jd + wrap(target - sunLongitude(jd)) / 360 * 365.2422;
     for (let i = 0; i < 6; i++) g += (wrap(target - sunLongitude(g) + 180) - 180) / 360 * 365.2422;
-    return g > jd ? g : nextSunEvent(event, jd + 1);
+    return g > jd ? g : nextLongitude(target, jd + 1);
+  }
+  function equationOfTime(jd) {
+    const t = (jd - 2451545) / 36525, eps = obliquity(2000 + t * 100) * R;
+    const l0 = wrap(280.46646 + 36000.76983 * t) * R, m = (357.52911 + 35999.05029 * t) * R;
+    const e = 0.016708634 - 0.000042037 * t, y = Math.tan(eps / 2) ** 2;
+    return 4 * (y * Math.sin(2 * l0) - 2 * e * Math.sin(m) + 4 * e * y * Math.sin(m) * Math.cos(2 * l0)
+      - 0.5 * y * y * Math.sin(4 * l0) - 1.25 * e * e * Math.sin(2 * m)) / R;
+  }
+  // Julian days of sunrise and sunset on the day starting at jd0 (0h UT); lon east positive; null if none.
+  function riseSetTimes(lat, lon, jd0, horizon = 0) {
+    return [-1, 1].map((sign) => {
+      let t = jd0 + 0.5 - lon / 360;
+      for (let i = 0; i < 2; i++) {
+        const dec = sunDeclination(t) * R, h = centreAltitude("sun", horizon) * R;
+        const c = (Math.sin(h) - Math.sin(lat * R) * Math.sin(dec)) / (Math.cos(lat * R) * Math.cos(dec));
+        if (Math.abs(c) > 1) return null;
+        t = jd0 + (720 - 4 * lon - equationOfTime(t)) / 1440 + sign * Math.acos(c) / R * 4 / 1440;
+      }
+      return t;
+    });
   }
   const nodeLongitude = (jd) => wrap(125.04452 - 1934.136261 * (jd - 2451545) / 36525);
   function nextStandstill(kind, jd) {
@@ -95,6 +115,6 @@ const Sky = (() => {
   const compass = (az) => ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"][Math.round(wrap(az) / 22.5) % 16];
 
   return { SUN_EVENTS, NAMES, SHORT, obliquity, declination, refraction, centreAltitude, azimuth, declinationOf, eventAzimuth,
-    jdOf, dateOf, sunLongitude, sunDeclination, nextSunEvent, nodeLongitude, nextStandstill, next, sunDatesAt, compass };
+    jdOf, dateOf, sunLongitude, sunDeclination, nextSunEvent, nextLongitude, equationOfTime, riseSetTimes, nodeLongitude, nextStandstill, next, sunDatesAt, compass };
 })();
 if (typeof module !== "undefined") module.exports = Sky;

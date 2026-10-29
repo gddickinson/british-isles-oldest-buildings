@@ -42,6 +42,14 @@ class SkyTest(unittest.TestCase):
         self.assertEqual(sky.calendar_date(sky.next_standstill("major", sky.julian_day(2020, 1, 1)))[0], 2025)
         self.assertAlmostEqual(sky.sun_declination(sky.julian_day(2026, 6, 21) + 0.5), 23.44, delta=0.01)
 
+    def test_rise_set_times(self):
+        hours = lambda jd: ((jd + 0.5) % 1) * 24
+        rise, set_ = sky.rise_set_times(51.5074, -0.1278, sky.julian_day(2026, 6, 21))   # London: 04:43, 21:21 BST
+        self.assertAlmostEqual(hours(rise), 3 + 43 / 60, delta=2 / 60)
+        self.assertAlmostEqual(hours(set_), 20 + 21 / 60, delta=2 / 60)
+        self.assertEqual(sky.rise_set_times(78, 15, sky.julian_day(2026, 6, 21)), (None, None))   # midnight sun
+        self.assertEqual(sky.calendar_date(sky.next_longitude(180, sky.julian_day(2026, 1, 1))), (2026, 9, 23))
+
     def test_problems(self):
         good = {"id": "x", "name": "X", "lat": 51, "lon": -1, "body": "sun", "event": "winter_solstice",
                 "rise_set": "set", "verdict": "established", "claim": "c",
@@ -57,7 +65,8 @@ class SkyTest(unittest.TestCase):
             const out = [];
             for (const [lat, body, ev, rs, y] of INPUT) out.push(Sky.eventAzimuth(lat, body, ev, rs, y));
             out.push(Sky.declinationOf(52, 60), Sky.sunDeclination(2461000.5), Sky.nextSunEvent("samhain", 2461342.5),
-                     Sky.nextStandstill("minor", 2461342.5));
+                     Sky.nextStandstill("minor", 2461342.5), ...Sky.riseSetTimes(53.69, -6.48, 2461395.5),
+                     Sky.equationOfTime(2461100.5));
             console.log(JSON.stringify(out));"""
         cases = [(51.18, "sun", "summer_solstice", "rise", 2000), (53.7, "sun", "winter_solstice", "set", -3100),
                  (58.2, "moon", "major_south", "set", -2900), (57.0, "moon", "minor_north", "rise", 2000),
@@ -65,7 +74,8 @@ class SkyTest(unittest.TestCase):
         script = f"const INPUT = {json.dumps(cases)};\n" + script
         js = json.loads(subprocess.run(["node", "-e", script], capture_output=True, text=True, check=True).stdout)
         py = [sky.event_azimuth(*c) for c in cases] + [sky.declination_of(52, 60), sky.sun_declination(2461000.5),
-              sky.next_sun_event("samhain", 2461342.5), sky.next_standstill("minor", 2461342.5)]
+              sky.next_sun_event("samhain", 2461342.5), sky.next_standstill("minor", 2461342.5),
+              *sky.rise_set_times(53.69, -6.48, 2461395.5), sky.equation_of_time(2461100.5)]
         for a, b in zip(js, py):
             self.assertAlmostEqual(a, b, places=6)
 

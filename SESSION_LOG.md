@@ -2504,3 +2504,12 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   on a sheet rendered with the app's own `types_diagram.js` (labels running off the canvas fixed); notes that named
   facts no quoted source gives (Pentonville's wings, Kilkenny's arches) removed. ui_check `type_diagram_prison` (new).
 - Remaining as BT6c2c: generic Commons plan categories; tower house, tenement, almshouse and playhouse need quotes.
+
+## 2026-10-28 — Emergent fixes: Grime's Graves, marble's earliest example
+- Grime's Graves: Wikidata's class "round barrow" made it a round barrow on /types and gave it the barrows' typical
+  date. New `not_types` (aliases.json, per entity, reason required) in `bidb/type_map.py`; reviewed date corrections
+  now apply to places as well (`date_corrections.apply_places` in places_build; `apply_to_db`): c. 2600-2300 BC with
+  the article's quote. type_map rerun (15,729 records, 60,505 places).
+- Marble: sentences about murals, recreations and reconstruction drawings are skipped (`skip_sentence`); material_map
+  rerun: 8,875 records, 2,621 places, 28,320 links; marble's earliest example Canterbury Cathedral.
+- Tests 486 OK (`test_type_map` not_types, `test_date_corrections_places` new).

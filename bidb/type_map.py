@@ -28,6 +28,9 @@ catalogue building): their own type label as a class (Wikidata class, or registe
 then each part after " - ", ";" or ":", as in "Prehistoric domestic and defensive: hut circle, roundhouse"),
 then the text rules, then its kind (`place_kinds`), then the name rules for that kind.
 
+Records or places given a type by a wrong Wikidata class are listed with the reviewed reason in `not_types`
+({entity id: {types, reason}}): those types are dropped for that entity.
+
 Labels reviewed and left without a type (no type for them in the tree yet, or too general) are listed in
 `not_in_tree`, so the report shows what is still unreviewed.
 
@@ -81,6 +84,10 @@ def problems(aliases, types):
             bad.append(f"name rule {rule.get('pattern')!r}: not a pattern")
         if not rule.get("categories") and not rule.get("kinds"):
             bad.append(f"name rule {rule.get('pattern')!r}: no categories or kinds to limit it")
+    for e, v in aliases.get("not_types", {}).items():
+        bad += [f"not_types {e!r}: unknown type {t!r}" for t in v.get("types", []) if t not in ids]
+        if not v.get("reason"):
+            bad.append(f"not_types {e!r}: no reason")
     left = {fish_types.normalise(x) for x in aliases.get("not_in_tree", [])}
     bad += [f"class {k!r}: both aliased and left out" for k in aliases.get("classes", {})
             if fish_types.normalise(k) in left]
@@ -109,6 +116,7 @@ class Matcher:
         self.categories = aliases.get("categories", {})
         self.place_kinds = aliases.get("place_kinds", {})
         self.skip_kinds = aliases.get("skip_kinds", [])
+        self.not_types = {e: set(v["types"]) for e, v in aliases.get("not_types", {}).items()}
         self.names = [dict(r, rx=re.compile(r["pattern"], re.I)) for r in aliases.get("names", [])]
         self.texts = [dict(r, rx=re.compile(r["pattern"], re.I), refines=set(r.get("refines", [])))
                       for r in aliases.get("texts", [])]
@@ -289,12 +297,14 @@ def rows(conn, matcher):
     for rid, classes, name, category, year, nation, desc, extract in conn.execute(
             "SELECT id, classes, name, category, year_start, nation, description, wikipedia_extract FROM buildings"):
         found = matcher.record(classes, name, category, year, nation, matcher.text_of(name, desc, extract))
+        found = [f for f in found if f[0] not in matcher.not_types.get(rid, ())]
         out += [(rid, "building", t, via, label, int(i == 0)) for i, (t, via, label) in enumerate(found)]
     for pid, kind, label, name, year, nation, desc, extract in conn.execute(
             "SELECT id, kind, type, name, year_start, nation, description, wikipedia_extract FROM places"):
         if kind in skip:
             continue
         found = matcher.place(kind, label, name, year, nation, matcher.text_of(name, desc, extract))
+        found = [f for f in found if f[0] not in matcher.not_types.get(pid, ())]
         out += [(pid, "place", t, via, lab, int(i == 0)) for i, (t, via, lab) in enumerate(found)]
     return out
 

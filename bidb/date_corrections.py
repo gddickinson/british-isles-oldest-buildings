@@ -6,7 +6,9 @@ Entries come from reviewing the date-check conflicts: cases where the record's o
 introduction states that the building (or its surviving fabric) dates from another time than the
 catalogue's date, e.g. a Wikidata "inception" that is really a re-opening or listing year, or
 (bidb.date_recheck) a date mined from a length, a road number or a later event. "year_start": null
-leaves a record undated when no source dates it.
+leaves a record undated when no source dates it. An entry whose id is a place's (a Wikidata place not in the
+catalogue, e.g. one dated from a wrong class's typical range) corrects the place's year, date text and period
+(`apply_places`, run by bidb.places_build after its type estimates).
 """
 import json
 
@@ -43,6 +45,18 @@ def apply(records):
     return n
 
 
+def apply_places(places):
+    """Apply to freshly built place records in place; returns how many were corrected."""
+    data = load()
+    n = 0
+    for p in places:
+        e = data.get(p["id"])
+        if e:
+            p.update(year_start=e["year_start"], date_text=e["date_text"], period=period_for(e["year_start"]))
+            n += 1
+    return n
+
+
 def apply_to_db(log=print):
     from .db import connect
     from .references import recheck
@@ -53,6 +67,8 @@ def apply_to_db(log=print):
         f = fields(e)
         conn.execute(f"UPDATE buildings SET {', '.join(k + ' = ?' for k in f)} WHERE id = ?",
                      [*f.values(), bid])
+        conn.execute("UPDATE places SET year_start = ?, date_text = ?, period = ? WHERE id = ?",
+                     (e["year_start"], e["date_text"], f["period"], bid))
     conn.commit()
     log(f"applied {len(data)} reviewed date corrections")
     recheck(log)

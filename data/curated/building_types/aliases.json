@@ -2705,5 +2705,14 @@
   "memorial",
   "gr_burial"
  ],
+ "not_types": {
+  "Q638485": {
+   "name": "Grime's Graves",
+   "types": [
+    "round-barrow"
+   ],
+   "reason": "Wikidata gives the flint mine the class round barrow (with mine and mining museum); its article: \"a large Neolithic flint mining complex\" (checked 2026-10-28)."
+  }
+ },
  "early_ok": {}
 }

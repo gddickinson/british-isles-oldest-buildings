@@ -115,6 +115,21 @@ class TestCuratedAliases(unittest.TestCase):
                                  "nations": {"broch": ["Ireland"]},
                                  "texts": [{"pattern": "[", "type": "castle", "refines": ["nope"]}]}, TYPES)
         self.assertEqual(len(bad), 8)
+        bad = type_map.problems({"not_types": {"Q1": {"types": ["nope"]}}}, TYPES)
+        self.assertEqual(len(bad), 2)                 # unknown type, no reason
+
+    def test_not_types_drops_a_wrong_class(self):
+        # Grime's Graves: Wikidata's class "round barrow" on a flint mine; a reviewed entry drops it
+        import sqlite3
+        c = sqlite3.connect(":memory:")
+        c.execute("CREATE TABLE buildings (id, classes, name, category, year_start, nation, description, wikipedia_extract)")
+        c.execute("CREATE TABLE places (id, kind, type, name, year_start, nation, description, wikipedia_extract)")
+        c.executemany("INSERT INTO places VALUES (?,?,?,?,?,?,?,?)",
+                      [("p1", "scheduled", "Castle - tower house", "A", 1400, None, None, None),
+                       ("p2", "scheduled", "Castle - tower house", "B", 1400, None, None, None)])
+        m = type_map.Matcher(TYPES, dict(ALIASES, not_types={"p2": {"types": ["tower-house"], "reason": "r"}}),
+                             concepts=CONCEPTS, lookup=lambda x: LOOKUP.get(x.lower()))
+        self.assertEqual([r[0] for r in type_map.rows(c, m)], ["p1"])
 
 
 if __name__ == "__main__":

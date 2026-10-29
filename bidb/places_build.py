@@ -9,7 +9,7 @@ import re
 import time
 
 from . import (enrich, history_geo, land, objects_in, openplaques, people, place_fetch, places_db,
-               references, registers, typology)
+               references, registers, typology, date_corrections)
 from .classify import period_for, regional_period
 from .config import require_locations
 from . import wikidata as wd
@@ -181,6 +181,7 @@ def estimate_dates(places):
                 p.update(year_start=year, date_text=f"{text}, estimate", period=period_for(year))
                 n += 1
     log(f"type-based date estimates for {n} places")
+    log(f"reviewed date corrections for {date_corrections.apply_places(places)} places")
 
 
 def people_stage(target_ids):

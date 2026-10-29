@@ -967,8 +967,12 @@ the descent of a type is disputed, both views are given and the link is drawn as
       still both kept). 17 Wikidata P186 items moved from `not_in_list`; text rules with reviewed exclusions (marble
       fittings, fonts and monuments, limestone landscapes, York stone paving, hill figures). Result: sandstone 1,874
       links, limestone 570, granite 505, marble 145, whinstone 96; records linked 8,475 → 8,879, places 2,352 → 2,621.
-- [ ] Marble's earliest example is Chester Roman Amphitheatre (a sentence about a modern mural of it) (found
-      2026-10-26); and Hopton Wood stone has no examples (its P186 items are memorials of skipped kinds). Greensand,
+- [x] Marble's earliest example was Chester Roman Amphitheatre, from a sentence about its recreation in a modern mural
+      (found 2026-10-26, fixed 2026-10-28): `skip_sentence` in material_aliases.json now also drops sentences about
+      murals, recreations, artist's impressions and reconstruction drawings, from any source. Earliest now Canterbury
+      Cathedral (Purbeck marble shafting; dated by the founding, the known later-phase limit); records linked to
+      materials 8,879 → 8,875.
+- [ ] Hopton Wood stone has no examples (found 2026-10-26); and Hopton Wood stone has no examples (its P186 items are memorials of skipped kinds). Greensand,
       ironstone, lias, Bargate stone, Pennant sandstone and Collyweston still have no entry (P186 and text mentions).
 - [x] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
       layer. Split 2026-10-26: BT3c1 (materials on the detail views, the type pages and a material page of their
@@ -1081,7 +1085,12 @@ the descent of a type is disputed, both views are given and the link is drawn as
       hospital, funicular, public baths, Roman villa). Shown after the catalogue's plans on type pages (and as links
       in the hosted copy, `static_types` `pl` now takes places). Commons holds few plans of these places: the
       generic categories ("Floor plans of houses in …") not tried.
-- [ ] Grime's Graves (flint mines) typed a round barrow (found in BT6c2a, 2026-10-28): check the type rule.
+- [x] Grime's Graves (flint mines) typed a round barrow (found in BT6c2a, fixed 2026-10-28): Wikidata gives Q638485
+      the class "round barrow" beside mine and mining museum, and the places build dated it by the round barrows'
+      typical range (c. 2200-1500 BC). New `not_types` in aliases.json (entity → types dropped, with the reviewed
+      reason; checked by `type_map.problems`) and reviewed date corrections now reach places (`date_corrections.
+      apply_places`, run by places_build after its type estimates; `apply_to_db` updates places too): c. 2600-2300 BC,
+      "It was worked between c. 2600 and c. 2300 BC" (its article). The class is listed with the Wikidata errors.
 - [ ] BT6d Generated examples from building-gen, type by type, once a type passes the checks at the end of
       `docs/building_gen_review.md` (fixes made in building-gen's own repo).
 - [x] BT7 (2026-10-26) Hosted copy (BT4b), Help page section "Building types" with three figures (`types_tree`,
@@ -1132,7 +1141,7 @@ the descent of a type is disputed, both views are given and the link is drawn as
       number need Historic England's help (bulk text) or manual work.
 - [x] References for people links (shown as "source: …") and for Wikidata places (dates,
       designations), 2026-10-20.
-- [ ] Known Wikidata errors to fix at source: Joan of Arc "place of burial" = Winchester Cathedral
+- [ ] Known Wikidata errors to fix at source: Grime's Graves (Q638485) an instance of "round barrow"; Joan of Arc "place of burial" = Winchester Cathedral
       (statue, not grave).
 - [x] German fallback labels rewritten ("Court Tomb von Doon" → "Doon court tomb"), 2026-10-20.
 

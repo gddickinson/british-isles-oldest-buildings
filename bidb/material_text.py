@@ -12,7 +12,8 @@ The file's `ignore` pattern (fonts, tombs, statues, gates, quarries, kilns...) d
 IGNORE_WINDOW characters of the term: a Purbeck marble font or wrought-iron gates say nothing of the building.
 Wikipedia sections whose heading matches `skip_sections` (Churchyard, Geology, Location, Monuments...) are left
 out, and so are sentences of a register description matching `skip_sentence` (its boundary walls, gatepiers and
-gardens); the first sentence that matches is kept as the evidence.
+gardens) or describing a mural, recreation or reconstruction drawing (any source); the first sentence that matches
+is kept as the evidence.
 """
 import re
 

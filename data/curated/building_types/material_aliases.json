@@ -629,7 +629,7 @@
       "cue": true
     }
   ],
-  "skip_sentence": "^(?:FORMER )?(?:BOUNDARY|WALLED GARDEN|GARDEN|GATE|GATES|GATEPIERS|GATE ?PIERS|RAILINGS|BURIAL GROUND|GRAVEYARD|CHURCHYARD|LODGE|STABLES?|STEADING|OUTBUILDINGS?|OFFICES|ENCLOSURES?|SUNDIAL|WELL|DOVECOTE|ICE ?HOUSE|Boundary walls?|Burial ground|Churchyard|Gatepiers)\\b",
+  "skip_sentence": "^(?:FORMER )?(?:BOUNDARY|WALLED GARDEN|GARDEN|GATE|GATES|GATEPIERS|GATE ?PIERS|RAILINGS|BURIAL GROUND|GRAVEYARD|CHURCHYARD|LODGE|STABLES?|STEADING|OUTBUILDINGS?|OFFICES|ENCLOSURES?|SUNDIAL|WELL|DOVECOTE|ICE ?HOUSE|Boundary walls?|Burial ground|Churchyard|Gatepiers)\\b|^.*\\b(?:murals?|(?:carefully |faithfully )?recreated|artist's impressions?|reconstruction drawings?)\\b",
   "skip_kinds": [
     "burh",
     "park_garden"

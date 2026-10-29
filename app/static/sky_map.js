@@ -36,7 +36,7 @@ const SkyMap = (() => {
       const dec = Sky.sunDeclination(Sky.jdOf(d));
       ["rise", "set"].forEach((rs) => ray(Sky.azimuth(lat, dec, rs), "sun-date", `Sun${rs} on ${fmt(d)}`, 0.46));
     }
-    near.filter((a) => a.event).forEach((a) => ray(a.azimuth_built ?? a.azimuth_now, "aligned", `${a.name}: ${Sky.NAMES[a.event]} ${a.body}${a.rise_set} (researched)`, 0.5));
+    near.filter((a) => a.event).forEach((a) => ray(a.azimuth_horizon_built ?? a.azimuth_built ?? a.azimuth_now, "aligned", `${a.name}: ${Sky.NAMES[a.event]} ${a.body}${a.rise_set} (researched)`, 0.5));
     const pos = panel.querySelector(".sky-pos");
     if (pos) pos.textContent = `${point.lat.toFixed(4)}, ${point.lng.toFixed(4)}`;
   }

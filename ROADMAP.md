@@ -45,8 +45,16 @@ Sky and alignments (first)
 - [ ] SK5b Church orientation, next: the alternative saints of ambiguous Wikidata labels (`if_other_saint`: Oswald of
       Northumbria, Augustine of Canterbury); Hoare and Sweet 2000 (abstract not fetchable) and Hinton's survey data
       (UEA thesis downloads) to compare; outlines of the nave only (later aisles and towers skew the axis); horizons (SK7).
-- [ ] SK7 Real horizons: horizon altitude from a DEM (OpenTopoData, local GUI only) so rising points behind hills are
-      right; cached per monument.
+- [x] SK7 (2026-10-29; Terrain Tiles on AWS instead of OpenTopoData: no daily limit, EA LiDAR in England) Real horizons:
+      skyline every 0.5° from the terrain model (`bidb/terrain_tiles.py`, `bidb/sky_horizon.py`, mirrored in sky.js), so
+      rising points behind hills are right; researched sites precomputed into sky.json (hosted too), any record in the
+      local GUI by "use the real skyline" (`/api/horizon`, cached per point); skyline strip in detail views; the Sky
+      calendar and the map's alignment rays use it. Stonehenge midsummer sunrise 2500 BC: 48.1° flat, 49.2° over its
+      skyline (+0.6°). Slieve Gullion's position was a rounded one 440 m down the slope (corrected to the summit).
+- [ ] SK7b Skylines, next: Loanhead of Daviot (published 199°, skyline 203.2°) and Tomnaverie (published 238°, skyline
+      229.8°, flat 233.3°) still differ by more than 3°: read the published surveys (horizon, which stone pair, which
+      moon limb) before calling either wrong; sun lines on the Map page over the skyline of the clicked point (local
+      GUI); church orientation (SK5) over each church's skyline; trees and buildings are not in the terrain model.
 
 LiDAR and landscape
 - [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade

@@ -1,17 +1,28 @@
 // "Sun and sky" in detail views (roadmap SK2, SK3): any [data-sky="<id>"] element with data-lat, data-lon and
 // data-year gets the researched alignments of the record (static/data/sky.json, written by bidb.sky) and a compass of
-// where the sun (and, for prehistoric sites, the moon at its standstills) rises and sets there, now and when begun.
+// where the sun (and, for prehistoric sites, the moon at its standstills) rises and sets there, now and when begun;
+// over the real skyline (SK7: sky.json for researched sites, /api/horizon in the local GUI) when it is known.
 const SkyHere = (() => {
   let DATA = null;
   const load = () => (DATA = DATA || fetch((typeof IS_STATIC !== "undefined" && IS_STATIC ? "static" : "/static") + "/data/sky.json")
     .then((r) => r.json()).then((d) => {
       const by = {};
-      d.alignments.forEach((a) => a.record && (by[a.record] = by[a.record] || []).push(a));
+      d.alignments.forEach((a) => {
+        if (a.horizon) a.horizon = skyline(a.horizon);
+        if (a.record) (by[a.record] = by[a.record] || []).push(a);
+      });
       return { all: d.alignments, by };
     }).catch(() => ({ all: [], by: {} })));
   let CHURCHES = null;
   const churches = () => (CHURCHES = CHURCHES || fetch((typeof IS_STATIC !== "undefined" && IS_STATIC ? "static" : "/static")
     + "/data/church_orientation.json").then((r) => r.json()).catch(() => ({ churches: {} })));
+  // Skyline (bidb.sky_horizon.compact): altitudes in hundredths of a degree → degrees.
+  const skyline = (h) => ({ ...h, alt: h.alt.map((a) => a / 100) });
+  const horizonFor = (lat, lon) => fetch(`/api/horizon?lat=${lat}&lon=${lon}`).then((r) => (r.ok ? r.json() : null))
+    .then((h) => h && skyline(h)).catch(() => null);
+  // Azimuth of an event over the skyline when known, else over a flat horizon.
+  const eventAz = (lat, body, e, rs, year, hz) => (hz
+    ? Sky.horizonAzimuth(lat, body, e, rs, year ?? 2000, hz.alt, hz.step) : Sky.eventAzimuth(lat, body, e, rs, year ?? 2000));
   const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const md = (s) => { const [m, d] = s.split("-").map(Number); return `${d} ${MONTHS[m - 1]}`; };
   const calendarPage = () => (IS_STATIC ? "sky.html" : "/sky");
@@ -43,13 +54,17 @@ const SkyHere = (() => {
   }
 
   function alignmentHTML(a) {
-    const nums = !a.event ? [] : [`computed ${deg(a.azimuth_built ?? a.azimuth_now)}${a.built != null ? ` when built (${yearText(a.built)})` : ""}`,
-      a.built != null ? `today ${deg(a.azimuth_now)}` : "", a.azimuth != null ? `published ${a.azimuth}°` : ""].filter(Boolean);
+    const hz = a.azimuth_horizon_built != null;
+    const nums = !a.event ? [] : [hz ? `over the skyline ${deg(a.azimuth_horizon_built)}${a.built != null ? ` when built (${yearText(a.built)})` : ""}, where the hills stand ${
+        a.horizon_altitude >= 0 ? "+" : ""}${a.horizon_altitude.toFixed(1)}° ${a.horizon_km < 1 ? "under a kilometre" : `${Math.round(a.horizon_km)} km`} away` : "",
+      `over a flat horizon ${deg(a.azimuth_built ?? a.azimuth_now)}${!hz && a.built != null ? ` when built (${yearText(a.built)})` : ""}`,
+      a.built != null ? `today ${deg(hz && a.azimuth_horizon_now != null ? a.azimuth_horizon_now : a.azimuth_now)}` : "",
+      a.azimuth != null ? `published ${a.azimuth}°` : ""].filter(Boolean);
     return `<div class="sky-align">
       <p><b>${esc(what(a))}</b> <span class="sky-verdict ${esc(a.verdict)}">${esc(VERDICT[a.verdict] || a.verdict)}</span></p>
       <p>${esc(a.claim)}</p>${a.feature ? `<p class="meta">${esc(a.feature)}</p>` : ""}
       ${(a.views || []).length ? `<ul>${a.views.map((v) => `<li>${esc(v)}</li>`).join("")}</ul>` : ""}
-      ${a.event ? `<p class="meta">Direction: ${nums.join("; ")} (flat horizon). ${esc(nextText(a))}.</p>` : ""}
+      ${a.event ? `<p class="meta">Direction: ${nums.join("; ")}. ${esc(nextText(a))}.</p>` : ""}
       ${a.viewing ? `<p class="meta">Seeing it: ${esc(a.viewing)}</p>` : ""}
       <ul class="sky-sources">${a.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${
         s.author ? ` <span class="meta">${esc(s.author)}${s.locator ? `, ${esc(s.locator)}` : ""}</span>` : ""}<br>“${esc(s.quote)}”${
@@ -65,18 +80,18 @@ const SkyHere = (() => {
     return ev;
   }
 
-  function compassSVG(lat, ev, year, aligned, church) {
+  function compassSVG(lat, ev, year, aligned, church, hz) {
     const S = 200, c = S / 2, r = 78;
     const ray = (az, cls, len = r) => { const x = c + len * Math.sin(az * Math.PI / 180), y = c - len * Math.cos(az * Math.PI / 180);
       return `<line class="${cls}" x1="${c}" y1="${c}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`; };
     const lines = [];
     ev.forEach(([body, e]) => ["rise", "set"].forEach((rs) => {
-      const now = Sky.eventAzimuth(lat, body, e, rs);
+      const now = eventAz(lat, body, e, rs, 2000, hz);
       if (now != null) lines.push(ray(now, `sky-${body} sky-${e.split("_")[0]}`));
-      const then = year != null && year < 1000 ? Sky.eventAzimuth(lat, body, e, rs, year) : null;
+      const then = year != null && year < 1000 ? eventAz(lat, body, e, rs, year, hz) : null;
       if (then != null && Math.abs(then - now) >= 0.3) lines.push(ray(then, "sky-then", r - 8));
     }));
-    aligned.filter((a) => a.event).forEach((a) => lines.push(ray(a.azimuth_built ?? a.azimuth_now, "sky-aligned", r + 10)));
+    aligned.filter((a) => a.event).forEach((a) => lines.push(ray(a.azimuth_horizon_built ?? a.azimuth_built ?? a.azimuth_now, "sky-aligned", r + 10)));
     if (church && church[1] >= 1.4) lines.push(ray(church[0], "sky-axis", r + 10), ray(church[0] + 180, "sky-axis sky-axis-back", r - 20));
     const label = (t, az) => `<text x="${c + (r + 14) * Math.sin(az * Math.PI / 180)}" y="${c - (r + 14) * Math.cos(az * Math.PI / 180) + 4}">${t}</text>`;
     return `<svg class="sky-compass" viewBox="0 0 ${S} ${S}" role="img" aria-label="Compass of sunrise and sunset directions">
@@ -84,17 +99,40 @@ const SkyHere = (() => {
       <circle class="sky-centre" cx="${c}" cy="${c}" r="3"/></svg>`;
   }
 
-  function tableHTML(lat, ev, year) {
+  function tableHTML(lat, ev, year, hz) {
     const then = year != null && year < 1000;
+    const flat = (body, e, rs, y) => (hz ? ` title="Over a flat horizon ${deg(Sky.eventAzimuth(lat, body, e, rs, y))}"` : "");
     const row = ([body, e]) => {
       const n = Sky.next(body, e);
-      return `<tr><td title="${esc(Sky.NAMES[e])}">${esc(Sky.SHORT[e])}</td>${["rise", "set"].map((rs) => `<td>${deg(Sky.eventAzimuth(lat, body, e, rs))}${
-        then ? `<br><span class="meta">${deg(Sky.eventAzimuth(lat, body, e, rs, year))}</span>` : ""}</td>`).join("")}
+      return `<tr><td title="${esc(Sky.NAMES[e])}">${esc(Sky.SHORT[e])}</td>${["rise", "set"].map((rs) => `<td${flat(body, e, rs, 2000)}>${deg(eventAz(lat, body, e, rs, 2000, hz))}${
+        then ? `<br><span class="meta">${deg(eventAz(lat, body, e, rs, year, hz))}</span>` : ""}</td>`).join("")}
         <td>${body === "sun" ? n.date.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" }) : n.season ? `now (peak ${n.date.getFullYear()})` : n.date.getFullYear()}</td></tr>`;
     };
     return `<table class="sky-table"><thead><tr><th></th><th>Rises</th><th>Sets</th><th>Next</th></tr></thead>
       <tbody>${ev.map(row).join("")}</tbody></table>
       ${then ? `<p class="hint">Second line: when begun (${yearText(year)}); the earth's tilt was then ${Sky.obliquity(year).toFixed(2)}°, now ${Sky.obliquity(new Date().getFullYear()).toFixed(2)}°.</p>` : ""}`;
+  }
+
+  // The skyline as a strip from north round to north, heights stretched, with where each event rises and sets on it.
+  function panoramaSVG(lat, ev, hz, aligned) {
+    const W = 360, H = 70, top = Math.max(2, ...hz.alt), low = Math.min(-1, ...hz.alt);
+    const y = (a) => (H - 14) * (top - a) / (top - low) + 4;
+    const pts = hz.alt.map((a, i) => `${(i * hz.step).toFixed(1)},${y(a).toFixed(1)}`);
+    const marks = [];
+    ev.forEach(([body, e]) => ["rise", "set"].forEach((rs) => {
+      const az = eventAz(lat, body, e, rs, 2000, hz);
+      if (az != null) marks.push(`<line class="sky-${body} sky-${e.split("_")[0]}" x1="${az}" x2="${az}" y1="${y(Sky.altitudeAt(hz.alt, hz.step, az))}" y2="${y(Sky.altitudeAt(hz.alt, hz.step, az)) - 10}"><title>${esc(Sky.SHORT[e])} ${rs}: ${deg(az)}</title></line>`);
+    }));
+    aligned.filter((a) => a.azimuth_horizon_built != null).forEach((a) => marks.push(
+      `<line class="sky-aligned" x1="${a.azimuth_horizon_built}" x2="${a.azimuth_horizon_built}" y1="${y(a.horizon_altitude)}" y2="${y(a.horizon_altitude) - 14}"><title>Researched alignment ${deg(a.azimuth_horizon_built)}</title></line>`));
+    const tick = (t, az) => `<text x="${az}" y="${H - 1}">${t}</text>`;
+    return `<svg class="sky-panorama" viewBox="0 0 ${W} ${H}" role="img" aria-label="Skyline from north round to north">
+      <polygon class="sky-land" points="0,${H - 10} ${pts.join(" ")} ${W},${y(hz.alt[0])} ${W},${H - 10}"/>
+      <line class="sky-flat" x1="0" x2="${W}" y1="${y(0)}" y2="${y(0)}"/>${marks.join("")}
+      ${tick("N", 4)}${tick("E", 90)}${tick("S", 180)}${tick("W", 270)}</svg>
+      <p class="hint">The skyline from north round to north (heights stretched; the dotted line is level with the eye),
+        highest ${Math.max(...hz.alt).toFixed(1)}°; from the terrain tiles (Environment Agency LiDAR in England, SRTM and EU-DEM elsewhere),
+        bare ground with no trees or buildings.</p>`;
   }
 
   async function mount(el) {
@@ -105,15 +143,29 @@ const SkyHere = (() => {
     const aligned = ((await load()).by[el.dataset.sky]) || [];
     const church = el.dataset.church ? (await churches()).churches[el.dataset.sky] : null;
     const ev = events(year != null && year < -500, aligned);
-    el.innerHTML = `${aligned.length ? `<h4>Sky alignment</h4>${aligned.map(alignmentHTML).join("")}` : ""}${church ? churchHTML(church) : ""}
-      <details class="sky-details"${aligned.length ? " open" : ""}><summary>Sun${ev.some(([b]) => b === "moon") ? " and moon" : ""} on the horizon here</summary>
-        <div class="sky-grid">${compassSVG(lat, ev, year, aligned, church)}<div>${tableHTML(lat, ev, year)}
-        <p class="hint">Directions from true north where the first or last gleam appears over a flat horizon; hills and
-        buildings move them. Lines: <span class="sky-key sun">sun</span>${ev.some(([b]) => b === "moon") ? ' <span class="sky-key moon">moon at its standstills</span>' : ""}${
+    const lon = parseFloat(el.dataset.lon);
+    const hz0 = (aligned.find((a) => a.horizon) || {}).horizon || null;
+    const grid = (hz) => `${compassSVG(lat, ev, year, aligned, church, hz)}<div>${tableHTML(lat, ev, year, hz)}
+        <p class="hint">Directions from true north where the first or last gleam appears ${hz ? "over the skyline (hover a direction for the flat-horizon one)" : `over a flat horizon; hills and
+        buildings move them${IS_STATIC || Number.isNaN(lon) ? "" : ' <button type="button" class="linkish sky-hz-btn">use the real skyline</button>'}`}. Lines: <span class="sky-key sun">sun</span>${ev.some(([b]) => b === "moon") ? ' <span class="sky-key moon">moon at its standstills</span>' : ""}${
           aligned.length ? ' <span class="sky-key aligned">researched alignment</span>' : ""}${
           church && church[1] >= 1.4 ? ' <span class="sky-key axis">axis of the building</span>' : ""}${year != null && year < 1000 ? ' <span class="sky-key then">when begun</span>' : ""}.</p>
-        ${el.dataset.lon ? `<p><a href="${esc(skyMapUrl(el))}">Show sun lines on the map</a> · <a href="${calendarPage()}">Sky calendar</a></p>` : ""}</div></div>
+        ${el.dataset.lon ? `<p><a href="${esc(skyMapUrl(el))}">Show sun lines on the map</a> · <a href="${calendarPage()}">Sky calendar</a></p>` : ""}</div>
+        ${hz ? `<div class="sky-pano">${panoramaSVG(lat, ev, hz, aligned)}</div>` : ""}`;
+    el.innerHTML = `${aligned.length ? `<h4>Sky alignment</h4>${aligned.map(alignmentHTML).join("")}` : ""}${church ? churchHTML(church) : ""}
+      <details class="sky-details"${aligned.length ? " open" : ""}><summary>Sun${ev.some(([b]) => b === "moon") ? " and moon" : ""} on the horizon here</summary>
+        <div class="sky-grid">${grid(hz0)}</div>
       </details>`;
+    const box = el.querySelector(".sky-grid");
+    box.addEventListener("click", async (e) => {
+      const b = e.target.closest(".sky-hz-btn");
+      if (!b) return;
+      b.disabled = true;
+      b.textContent = "reading the terrain…";
+      const hz = await horizonFor(lat, lon);
+      if (hz) box.innerHTML = grid(hz);
+      else b.textContent = "terrain not available";
+    });
   }
   const skyMapUrl = (el) => {
     const p = new URLSearchParams({ lat: el.dataset.lat, lon: el.dataset.lon, z: "15", mark: el.dataset.name || "", sky: "1" });

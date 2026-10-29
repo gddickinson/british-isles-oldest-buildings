@@ -1,9 +1,9 @@
-"""Interactive tools: place search, Commons image galleries, user corrections (jobs: app/jobs_api.py)."""
+"""Interactive tools: place search, Commons image galleries, skylines, user corrections (jobs: app/jobs_api.py)."""
 import re
 
 from flask import Blueprint, abort, jsonify, request
 
-from bidb import db, overrides
+from bidb import db, overrides, sky_horizon
 from bidb.config import POSTCODES_API, WIKIDATA_API
 from bidb.http import request_json
 
@@ -34,6 +34,22 @@ def geocode():
         return jsonify([])
     return jsonify([{"name": r["display_name"], "lat": float(r["lat"]), "lon": float(r["lon"])}
                     for r in res])
+
+
+@bp.route("/api/horizon")
+def horizon():
+    """The skyline round a point (SK7): altitudes in hundredths of a degree every half degree from north, distances in
+    km; terrain tiles downloaded the first time (a few seconds), then cached."""
+    try:
+        lat, lon = round(float(request.args["lat"]), 4), round(float(request.args["lon"]), 4)
+    except (KeyError, ValueError):
+        abort(400)
+    if not (49 <= lat <= 61.5 and -11 <= lon <= 2.5):
+        abort(404)
+    try:
+        return jsonify(sky_horizon.compact(sky_horizon.cached_profile(lat, lon)))
+    except Exception:
+        abort(503)
 
 
 @bp.route("/api/images/<path:bid>")

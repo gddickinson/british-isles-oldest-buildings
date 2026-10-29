@@ -27,10 +27,10 @@
   function site(a, jd) {
     let when = "";
     if (jd != null) {
-      const d0 = Math.floor(jd - 0.5) + 0.5, [rise, set] = Sky.riseSetTimes(a.lat, a.lon, d0);
+      const d0 = Math.floor(jd - 0.5) + 0.5, [rise, set] = Sky.riseSetTimes(a.lat, a.lon, d0, a.horizon_altitude ?? 0);   // over the skyline (SK7)
       when = ` · sun${a.rise_set} ${time(a.rise_set === "rise" ? rise : set)}`;
     }
-    const az = a.azimuth_built ?? a.azimuth_now;
+    const az = a.azimuth_horizon_built ?? a.azimuth_built ?? a.azimuth_now;
     return `<li>${link(a)} ${badge(a)}<span class="meta"> ${esc(a.body)}${esc(a.rise_set || "")}${
       az != null ? ` towards ${az.toFixed(0)}° ${Sky.compass(az)}` : ""}${when}</span>
       <br>${esc(a.claim)}${a.viewing ? `<br><span class="meta">Seeing it: ${esc(a.viewing)}</span>` : ""}</li>`;

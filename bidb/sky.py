@@ -3,7 +3,8 @@
 Where the sun and moon rise and set at a place for any declination, the declinations of the solstices,
 equinoxes, cross-quarter days and lunar standstills for any year (the obliquity of the ecliptic changes: the
 midwinter sun of 3000 BC rose about a degree further south), the dates of those events, and the researched
-alignments of `data/curated/sky_alignments.json` checked and written with their computed azimuths to
+alignments of `data/curated/sky_alignments.json` checked and written with their computed azimuths (over a flat
+horizon and over the skyline from the terrain tiles, bidb.sky_horizon) to
 `app/static/data/sky.json` (`python -m bidb.sky [--quotes]`; `--quotes` fetches every source and looks for its
 quote, → `data/sky_check.json`).
 
@@ -223,17 +224,32 @@ def problems(rows=None):
     return out
 
 
-def computed(a):
-    """The alignment with azimuths computed for today and for the year it was built (flat horizon)."""
+def computed(a, horizon=None):
+    """The alignment with azimuths computed for today and for the year it was built, over a flat horizon and,
+    given the place's skyline (bidb.sky_horizon profile), over the real one (SK7)."""
+    from .sky_horizon import altitude_at, compact, horizon_azimuth
     out = dict(a)
+    if horizon:
+        out["horizon"] = compact(horizon)
     if a["event"] is None:                         # sources name no event: nothing to compute
         return out
     args = (a["lat"], a["body"], a["event"], a["rise_set"])
     out["azimuth_now"] = round(event_azimuth(*args), 1)
     if a.get("built") is not None:
         out["azimuth_built"] = round(event_azimuth(*args, year=a["built"]), 1)
+    ref = out.get("azimuth_built", out["azimuth_now"])
+    if horizon:
+        now = horizon_azimuth(*args, 2000, horizon["alt"], horizon["step"])
+        then = horizon_azimuth(*args, a["built"], horizon["alt"], horizon["step"]) if a.get("built") is not None else now
+        if now is not None:
+            out["azimuth_horizon_now"] = round(now, 1)
+        if then is not None:
+            out["azimuth_horizon_built"] = round(then, 1)
+            i = round(then / horizon["step"]) % len(horizon["alt"])
+            out["horizon_altitude"] = round(altitude_at(horizon["alt"], horizon["step"], then), 2)
+            out["horizon_km"] = horizon["km"][i]
+            ref = then
     if a.get("azimuth") is not None:
-        ref = out.get("azimuth_built", out["azimuth_now"])
         out["difference"] = round((a["azimuth"] - ref + 180) % 360 - 180, 1)
     return out
 
@@ -248,11 +264,14 @@ def claims(rows=None):
 def write():
     """Every alignment with its computed azimuths and each source's last quote check → sky.json."""
     ck = json.loads(CHECK.read_text()) if CHECK.exists() else {}
-    rows = []
+    from .sky_horizon import cached_profile
+    from .terrain_tiles import Terrain
+    rows, terrain = [], Terrain()
     for a in load():
         res = ck.get("sky-" + a["id"], {}).get("sources", [])
         rows.append(computed({**a, "sources": [{**s, "check": res[i] if i < len(res) else None}
-                                               for i, s in enumerate(a["sources"])]}))
+                                               for i, s in enumerate(a["sources"])]},
+                             cached_profile(a["lat"], a["lon"], terrain)))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"alignments": rows}, ensure_ascii=False, separators=(",", ":")))
     return rows
@@ -270,8 +289,10 @@ def main():
         if a["event"] is None:
             print(f"  {a['name'][:34]:34} {a['body']} (no event named)")
             continue
-        print(f"  {a['name'][:34]:34} {a['body']} {a['event']:16} {a['rise_set']:4} computed "
-              f"{a.get('azimuth_built', a['azimuth_now']):6.1f}  published {a.get('azimuth') or '-'}{flag}")
+        hz = a.get("azimuth_horizon_built")
+        print(f"  {a['name'][:34]:34} {a['body']} {a['event']:16} {a['rise_set']:4} flat "
+              f"{a.get('azimuth_built', a['azimuth_now']):6.1f}  skyline {'-' if hz is None else f'{hz:5.1f}'} "
+              f"({a.get('horizon_altitude', 0):+.1f}° at {a.get('horizon_km', 0):.1f} km)  published {a.get('azimuth') or '-'}{flag}")
     if not bad and "--quotes" in sys.argv:
         from .evidence import check
         check(claims=claims(), path=CHECK)

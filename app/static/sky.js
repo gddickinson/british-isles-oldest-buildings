@@ -44,6 +44,33 @@ const Sky = (() => {
   const eventAzimuth = (lat, body, event, riseSet, year = 2000, horizon = 0) =>
     azimuth(lat, declination(body, event, year), riseSet, body, horizon);
 
+  // Real horizons (SK7, bidb/sky_horizon.py): alt = skyline altitudes in degrees every `step` degrees from north.
+  const HORIZON_LOWEST = -2;
+  function altitudeAt(alt, step, az) {
+    const x = (((az % 360) + 360) % 360) / step, i = Math.floor(x) % alt.length, f = x - Math.floor(x);
+    return alt[i] * (1 - f) + alt[(i + 1) % alt.length] * f;
+  }
+  function horizonAzimuth(lat, body, event, riseSet, year, alt, step, fine = 0.05, span = 60) {
+    const above = (az) => {
+      const a = eventAzimuth(lat, body, event, riseSet, year, altitudeAt(alt, step, az));
+      return a != null && (riseSet === "rise" ? a <= az : a >= az);
+    };
+    const start = eventAzimuth(lat, body, event, riseSet, year, HORIZON_LOWEST);
+    if (start == null) return null;
+    const sign = riseSet === "rise" ? 1 : -1;
+    let prev = start;
+    for (let k = 1; k <= Math.round(span / fine); k++) {
+      const az = start + sign * k * fine;
+      if (above(az)) {
+        let lo = prev, hi = az;
+        for (let j = 0; j < 12; j++) { const mid = (lo + hi) / 2; if (above(mid)) hi = mid; else lo = mid; }
+        return ((hi % 360) + 360) % 360;
+      }
+      prev = az;
+    }
+    return null;
+  }
+
   // Dates: Julian days from JavaScript dates (UT).
   const jdOf = (date) => date.getTime() / 86400000 + 2440587.5;
   const dateOf = (jd) => new Date((jd - 2440587.5) * 86400000);
@@ -114,7 +141,7 @@ const Sky = (() => {
   }
   const compass = (az) => ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"][Math.round(wrap(az) / 22.5) % 16];
 
-  return { SUN_EVENTS, NAMES, SHORT, obliquity, declination, refraction, centreAltitude, azimuth, declinationOf, eventAzimuth,
+  return { SUN_EVENTS, NAMES, SHORT, obliquity, declination, refraction, centreAltitude, azimuth, declinationOf, eventAzimuth, altitudeAt, horizonAzimuth,
     jdOf, dateOf, sunLongitude, sunDeclination, nextSunEvent, nextLongitude, equationOfTime, riseSetTimes, nodeLongitude, nextStandstill, next, sunDatesAt, compass };
 })();
 if (typeof module !== "undefined") module.exports = Sky;

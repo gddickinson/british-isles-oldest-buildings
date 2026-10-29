@@ -2592,3 +2592,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (axis drawn on the compass).
 - Tests 508 OK (`test_church_orientation` new, `test_sky` +1); ui_check sky, sky_churches, building_orientation OK.
 - Restarted the app on 5050 (the old servers on 5050 and 5073 stopped). Hosted copy not updated.
+
+## 2026-10-29 — Real horizons (SK7)
+- New `bidb/terrain_tiles.py`: ground heights from the Terrain Tiles on AWS (Mapzen terrarium PNGs; EA LiDAR in much of
+  England, SRTM/EU-DEM elsewhere; open data, no key, no daily limit, unlike OpenTopoData), PNGs read with the stdlib
+  (all five filter types), tiles cached in `<cache>/terrain/`. Reusable for viewsheds (LD4).
+- New `bidb/sky_horizon.py` (+ `Sky.altitudeAt`, `Sky.horizonAzimuth` in sky.js, tested against each other): the
+  skyline every 0.5° (rays to 60 km, zoom 13 within 1.5 km, 11 to 8 km, 9 beyond; earth curve with terrestrial
+  refraction k = 0.13; eye 1.6 m; bare ground), cached per point; the first or last gleam found by walking south from
+  the azimuth for a -2° horizon to where the body's path clears the skyline (robust where a fixed-point iteration
+  would oscillate on steep ridges). About 3 s and ~20 tiles a new site.
+- sky.json now carries each researched site's skyline (hundredths of a degree, 177 KB in all) and the azimuths over it:
+  Stonehenge midsummer sunrise 2500 BC 49.2° (flat 48.1°), Newgrange midwinter sunrise 133.9° (flat 131.9°, Red
+  Mountain +0.9° at 3 km), Castlerigg midwinter sunrise 142.6° (flat 133.1°, fells +4.1°). Loanhead of Daviot and
+  Tomnaverie still differ from their published bearings by more than 3° (SK7b). Slieve Gullion South Cairn's
+  position (54.1333, -6.4333, rounded) was 440 m down the north slope, giving an 11° skyline; set to the summit.
+- Detail views: azimuths over the skyline (flat value on hover), a skyline strip with the events marked; records
+  without a researched alignment get "use the real skyline" in the local GUI (`/api/horizon`). Sky calendar: sunrise
+  times over the skyline's altitude; map: alignment rays over the skyline.
+- Tests 515 OK (`test_sky_horizon` new); ui_check building_skyline (new), building_orientation, sky OK. App restarted
+  on 5050. Hosted copy not updated (sky.json +133 KB).

@@ -60,6 +60,7 @@ PAGES = {
     "sky": ("/sky", r"(?s)Sky calendar.*Midwinter \(winter solstice\).*Newgrange.*The moon's standstills"),
     "sky_churches": ("/sky#churches", r"(?s)Churches and their saints' days.*sky-hist.*midwinter sunrise"),
     "building_orientation": ("/building/Q390150", r"(?s)Orientation.*The east end of the outline's axis points"),
+    "building_skyline": ("/building/Q339503", r"(?s)over the skyline 133\.9° SE.*sky-panorama.*bare ground with no trees"),
     "glossary": ("/glossary?q=wealden", r"(?s)Glossary.*Wealden house.*FISH Thesaurus"),
     "glossary_see": ("/glossary#term-grade-ii", r"(?s)Grade II\*.*Listed building"),
     "trades_change": ("/change", r"(?s)Trade stories:.*Sugar and slavery.*Tea story"),

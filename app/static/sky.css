@@ -64,3 +64,15 @@
 .sky-hist .sky-eq { stroke: var(--sky-sun); stroke-dasharray: 3 3; }
 .sky-hist .sky-bar { fill: var(--accent); }
 .sky-hist text { font-size: 11px; fill: var(--muted); text-anchor: middle; }
+/* Skyline strip (SK7) */
+.sky-pano { grid-column: 1 / -1; }
+.sky-panorama { width: 100%; height: auto; display: block; }
+.sky-panorama .sky-land { fill: color-mix(in srgb, var(--muted) 30%, transparent); stroke: var(--ink); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+.sky-panorama .sky-flat { stroke: var(--muted); stroke-dasharray: 3 3; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.sky-panorama line { stroke-width: 2; vector-effect: non-scaling-stroke; }
+.sky-panorama .sky-sun { stroke: var(--sky-sun); }
+.sky-panorama .sky-moon { stroke: var(--sky-moon); }
+.sky-panorama .sky-aligned { stroke: var(--sky-aligned); stroke-width: 3; }
+.sky-panorama text { font-size: 9px; fill: var(--muted); text-anchor: middle; }
+.sky-hz-btn { border: 0; background: none; color: var(--accent, #1565c0); padding: 0; font: inherit; cursor: pointer; text-decoration: underline; }
+.sky-hz-btn:disabled { color: var(--muted); cursor: default; text-decoration: none; }

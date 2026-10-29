@@ -280,6 +280,16 @@ window.addEventListener("resize", W.resize);
 W.resize();
 VIEWS[q.get("cam") && VIEWS[q.get("cam")] ? q.get("cam") : "overview"][1]();
 if (q.get("cam")) $("#sh_cams").value = q.get("cam");
+// With no moment in the link, open on a midsummer morning this year (the stones in sunlight) rather than
+// whatever the present hour is, perhaps the dark.
+if (!["y", "m", "d", "t"].some((k) => q.has(k))) {
+  const jd = EVENTS.summer_rise[1]();
+  if (jd != null) {
+    setJD(jd);
+    st.t = 10 * 60;
+    $("#sh_note").textContent = "Midsummer morning this year. Press “Midsummer sunrise” for the sun over the Heel Stone, or “Now” for the sky at this moment.";
+  }
+}
 update();
 document.body.classList.add("sh-ready");
 requestAnimationFrame(frame);

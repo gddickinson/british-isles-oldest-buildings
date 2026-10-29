@@ -6,7 +6,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
 ## Status (2026-10-28)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
-- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b; BT6b: plans of real examples on type pages; BT6c1: labelled diagrams of 22 types); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
+- Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b; BT6b: plans of real examples on type pages; BT6c1, BT6c2b: labelled diagrams of 35 types; BT6c2a: plans of places); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 320
   series, 76 events, 24 map layers, 19 notes, 138 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
@@ -1058,7 +1058,16 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT6c2 Commons plans of real examples of types the catalogue has none for (terraces, cottages, inns: Commons
       categories "Floor plans of houses in …"); more diagrams where a type's plan has a quoted source (tower house,
       tenement, almshouse, union workhouse, panopticon, Elizabethan playhouse, need quotes on their plan first).
-      Split 2026-10-28: BT6c2a plans of typed places (done), BT6c2b more diagrams.
+      Split 2026-10-28: BT6c2a plans of typed places (done), BT6c2b more diagrams (done); BT6c2c the rest.
+- [x] BT6c2b (2026-10-28) 13 more labelled diagrams from the plan quotes the types already had (no new research):
+      threshing barn, bank barn (section into the slope), laithe house, shell keep, concentric castle, gatehouse keep
+      (Tonbridge style), tower keep (square and twice-as-long), separate-system prison, panopticon, monitorial
+      schoolroom, Kempthorne's square union workhouse, pavilion hospital, tholsel (`diagrams_castles_farms.json`,
+      `diagrams_institutions.json`); every label found in a quote (`bidb.type_diagrams`: 35 diagrams of 35 types, no
+      problems); notes say only what is schematic (first drafts named Pentonville's five wings and Kilkenny's arches,
+      which no quoted source gives: taken out).
+- [ ] BT6c2c Commons plans from generic categories ("Floor plans of houses in …") for terraces, cottages and inns;
+      diagrams for tower house, tenement, almshouse, Elizabethan playhouse once their plans have quoted sources.
 - [x] BT6c2a (2026-10-28) Plans of typed places (new `bidb/place_plans.py`, build stage after type_map → table
       `place_plans`): of 48,537 typed places with a Wikidata item (not catalogue records), 20 have a plan view image
       (P3311; maps, sections and elevations left out: Ham Hill and Bat's Castle "Somerset Map", the Eddystone section,

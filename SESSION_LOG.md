@@ -2495,3 +2495,12 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   ui_check `type_place_plans` (new), `type_page`, `types` OK on a fresh server; screenshot of /types?t=polygonal-fort.
   Hosted copy not updated.
 - Emergent: Grime's Graves typed a round barrow.
+
+## 2026-10-28 — BT6c2b: 13 more labelled diagrams
+- Drawn from the plan and structure quotes the types already had: threshing barn, bank barn, laithe house, shell keep,
+  concentric castle, gatehouse keep, tower keep, separate-system prison, panopticon, monitorial schoolroom, union
+  workhouse (Kempthorne's square plan), pavilion hospital, tholsel → `diagrams_castles_farms.json`,
+  `diagrams_institutions.json`. `python -m bidb.type_diagrams`: 35 diagrams of 35 types, 0 problems. Layouts checked
+  on a sheet rendered with the app's own `types_diagram.js` (labels running off the canvas fixed); notes that named
+  facts no quoted source gives (Pentonville's wings, Kilkenny's arches) removed. ui_check `type_diagram_prison` (new).
+- Remaining as BT6c2c: generic Commons plan categories; tower house, tenement, almshouse and playhouse need quotes.

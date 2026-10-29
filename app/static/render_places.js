@@ -132,6 +132,7 @@ function placeDetailHTML(p) {
       <div class="types-box" data-types-here="${esc(p.id)}"></div>
       <div class="trade-box" data-trade-here="${esc(p.id)}"></div>
       <div class="then-box" data-then="${esc(p.id)}"></div>
+      ${p.lat != null ? `<div class="sky-box" data-sky="${esc(p.id)}" data-lat="${p.lat}" data-lon="${p.lon}" data-year="${p.year_start ?? ""}" data-name="${esc(p.name || "")}"></div>` : ""}
       <div class="evidence-box" data-evidence="${esc(p.id)}"></div>
       ${peopleByRoleHTML(p.people)}
       ${p.lat != null ? `<p class="getting-there" data-transport="${p.lat},${p.lon}" data-visit="${esc(p.id)}"></p>` : ""}

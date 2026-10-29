@@ -2555,3 +2555,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Found: 17 list entries on two or more records (article and list-entry items of one building), 23 records on a
   registered park's entry; both added to the roadmap.
 
+
+## 2026-10-29 — Roadmap: sky, landscape, research tools, everyday fun; sun and sky (SK1-SK4); LiDAR in England (LD1a)
+- New roadmap section from a review of what would help historians and archaeologists and make the app more fun
+  (George: "add them all", sky alignments first, then LiDAR): SK1-SK7, LD1-LD5, RC1-RC7, EV1-EV11.
+- `bidb/sky.py` + `static/sky.js` (mirror; `tests/test_sky.py` runs the JS through node and compares): rising and
+  setting azimuths (upper limb, Bennett refraction, horizon altitude, moon parallax), obliquity for any year (Laskar),
+  solar events by ecliptic longitude, standstills from the node. Checks: Stonehenge midsummer sunrise 49.2° (flat
+  horizon), next winter solstice 21 Dec 2026, last major standstill Jan 2025.
+- `data/curated/sky_alignments.json` (research agent): 31 alignments, 13 established, 6 probable, 12 disputed with both
+  views; 71 quotes, all found (`python -m bidb.sky --quotes` → `data/sky_check.json`). HES and Canmore refuse scripted
+  requests, so the Scottish entries rest on Wikipedia, Stone Pages and a research page; Ring of Brodgar and Nether
+  Largie name no lunar event (kept, nothing computed). `viewing` lines are summaries, not quoted. Loanhead of Daviot and
+  Tomnaverie: published bearings 5-6° south of the flat-horizon moonset (their hill horizons).
+- Detail views (buildings and places): "Sky alignment" (claim, verdict, directions then and now, next date, quoted
+  sources) and "Sun and moon on the horizon here" (compass, table, link to the map). Map page: "☀ Sun lines".
+- LiDAR: Environment Agency 1 m DTM hillshade of England (WMS, OGL) in the layer panel (`static/lidar.js`); Scotland,
+  Wales, NI and Ireland checked, no hillshade service (LD1b). Fixed: historic.js inserted its panel block before the
+  first nested `small:last-child`, which broke once another block was added (now `:scope >`).
+- Tests 503 OK. Running server on 5050 still has the old templates (restart to see the changes); hosted copy not updated.

@@ -183,6 +183,7 @@ function renderDetail(b, inModal) {
       <div class="types-box" data-types-here="${esc(b.id)}"></div>
       <div class="trade-box" data-trade-here="${esc(b.id)}"></div>
       <div class="then-box" data-then="${esc(b.id)}"></div>
+      ${b.lat != null ? `<div class="sky-box" data-sky="${esc(b.id)}" data-lat="${b.lat}" data-lon="${b.lon}" data-year="${b.year_start ?? ""}" data-name="${esc(b.name || "")}"></div>` : ""}
       <div class="evidence-box" data-evidence="${esc(b.id)}"></div>
       ${b.lat != null ? `<p class="getting-there" data-transport="${b.lat},${b.lon}" data-visit="${esc(b.id)}"${b.category === "Public house / inn" ? ' data-pub="1"' : ""}></p>` : ""}
       <div class="links">${detailLinks(b)}${inModal ? `<a class="ext" href="${buildingUrl(b.id)}">Permalink</a>` : ""}</div>

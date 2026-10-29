@@ -238,6 +238,7 @@ exTime = TimeSlider.mount(E$("#ex_time"), {
 wireChange();
 loadBuildings();
 markFromUrl();
+SkyMap.attach(exMap);
 { const y = parseInt(new URLSearchParams(location.search).get("year"), 10); if (!Number.isNaN(y)) exTime.setYear(y); }
 wireTrades();
 

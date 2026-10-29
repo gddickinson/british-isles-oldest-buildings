@@ -313,6 +313,7 @@ const Basemap = (() => {
       map.on("layeradd layerremove", syncBase);
       setTimeout(syncBase);
       if (typeof Historic !== "undefined") Historic.bind(panel, map);
+      if (typeof Lidar !== "undefined") Lidar.bind(panel, map);
       return box;
     } });
     map.addControl(new C());

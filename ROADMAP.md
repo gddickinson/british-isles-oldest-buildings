@@ -19,6 +19,78 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Figures: `node docs/make_figures.mjs` (app running); the setup figure needs a copy with no data
   (`git archive HEAD | tar -x -C <dir>`, run on port 5071).
 
+## Sky, landscape, research tools and everyday fun (planned 2026-10-29, George: "add them all", sky first, then LiDAR)
+Ideas from a review of what would make the app more useful to historians and archaeologists and more fun for
+everyday users; items reuse what the app already holds where noted. Everything that can should also work in the
+hosted static copy (no server: localStorage, client-side maths).
+
+Sky and alignments (first)
+- [x] SK1 (2026-10-29) Sun and moon calculator, `static/sky.js` mirrored by `bidb/sky.py` (tests check both): rising and setting
+      azimuth for any place and date (refraction, sun's semi-diameter, horizon altitude), declination of the sun at
+      the solstices and equinoxes and of the moon at the major and minor standstills, the obliquity of the ecliptic for
+      any year (so an alignment can be read for the date the monument was built, not only today).
+- [x] SK2 (2026-10-29: 31 alignments: 13 established, 6 probable, 12 disputed; 71 quotes, all found) Researched alignments (`data/curated/sky_alignments.json`): monuments whose solar or lunar alignment is
+      published (Newgrange, Maeshowe, Stonehenge, Bryn Celli Ddu, Loughcrew Cairn T, Drombeg, Clava, Callanish, Long
+      Meg...), each with the event, the direction, the record it belongs to and quoted sources; disputed ones marked
+      with both views; quotes checked by `evidence.check`; computed azimuths compared with the published ones.
+- [x] SK3 (2026-10-29) "Sky" in detail views: where the sun rises and sets at the solstices and equinoxes (today and when the place
+      was begun), drawn on a small compass; the researched alignment and the next date to see it.
+- [x] SK4 (2026-10-29) Sun and moon lines on the Map page: rays of sunrise, sunset, moonrise and moonset from a chosen point for a
+      chosen date (photographer's-ephemeris style), and the solstice lines of a researched alignment.
+- [ ] SK5 Church orientation: axis of each church's OSM outline (footprints) → the dates the sun rises on that line →
+      compared with the patron saint's day (`dedication`), as the published studies do; stated as a test of a
+      disputed idea, with the share of churches that agree against chance.
+- [ ] SK6 Sky calendar: the next solstice, equinox, cross-quarter day and lunar standstill season, where to stand for
+      each researched alignment, public access (visiting table) and booking notes (e.g. Newgrange lottery).
+- [ ] SK7 Real horizons: horizon altitude from a DEM (OpenTopoData, local GUI only) so rising points behind hills are
+      right; cached per monument.
+
+LiDAR and landscape
+- [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade
+      (WMS, OGL), "Ground (LiDAR)" in the layer panel with opacity; local GUI (the hosted copy cannot reach map servers).
+- [ ] LD1b The rest of the isles. Checked 2026-10-29: Scotland's Remote Sensing Portal WMS
+      (ows.remotesensing.data.gov.scot) serves the DTMs by phase with elevation colour styles only (lidar-dem,
+      lidar-dem-viridis), no hillshade; DataMapWales' geoserver WMS has no LiDAR layers (the 2020-23 DTM hillshade is a
+      Cloud Optimized GeoTIFF on dmwproductionblob.blob.core.windows.net: draw it in the browser, e.g. georaster-layer, if
+      the blob store allows CORS range requests); Northern Ireland (OpenDataNI hillshade) refused scripted access;
+      Ireland (GSI / Tailte Éireann) not found as a service. Options: browser hillshade from the Scottish DEM tiles, the
+      Welsh COG, or tiles prepared once and bundled.
+- [ ] LD2 Grid references everywhere: OS and Irish grid references on every record and on map clicks (copy button);
+      inverse of `bidb/osgrid.py` in the browser.
+- [ ] LD3 Distribution analysis for any filtered set: density (kernel) map, nearest-neighbour statistic, sites within
+      a distance of Roman roads, rivers, the coast.
+- [ ] LD4 Intervisibility: what can be seen from a hillfort or cairn (viewshed from the DEM; local GUI).
+- [ ] LD5 Heritage at Risk status (Historic England's open layer; others if open) and "lost since listing" counts.
+
+Research tools
+- [ ] RC1 "Cite this record": BibTeX, RIS and plain text on every detail view; embedded metadata so Zotero saves a
+      record in one click.
+- [ ] RC2 A DOI for each database release (Zenodo's GitHub integration), cited by RC1.
+- [ ] RC3 Linked Places format (Pelagios / World Historical Gazetteer) export; later CIDOC-CRM JSON-LD.
+- [ ] RC4 Research collections: named sets of records with notes and tags, exported together (CSV, GeoJSON, BibTeX);
+      grows from the favourites store.
+- [ ] RC5 Building phases: a `phases` table (from the timeline, dendro, register descriptions) drawn as stacked bars
+      on detail views, instead of one start year.
+- [ ] RC6 Aoristic analysis: each site weighted across its date range; activity through time for any filter, as a
+      graph on the Change over time panel.
+- [ ] RC7 Radiocarbon dates (ADS radiocarbon index, Irish radiocarbon database; licences first), calibrated in the
+      browser, beside the tree-ring dates.
+
+Everyday fun
+- [ ] EV1 "The story of my place": a postcode or point → one page of the oldest building near it, plaques and who lived
+      there, battles, Domesday, old names, stories, a historic map, what was built the year your house was.
+- [ ] EV2 Heritage passport: visited buildings (GPS or by hand), badges (all four nations, ten castles, a building from
+      every century...), a map of your visits; localStorage.
+- [ ] EV3 Birthday mode: built the year you were born; on your birthday in history (on_this_day).
+- [ ] EV4 Daily challenge (Wordle-style): one photo a day, guesses of century, county and type, shareable result.
+- [ ] EV5 "Where is this?": drop a pin on the map, scored by distance (quiz pool photos).
+- [ ] EV6 Treasure trails: tour stops with a clue to answer on the spot.
+- [ ] EV7 Day-out finder: within an hour, rainy day (indoors), free, dogs welcome, wheelchair access (visiting table).
+- [ ] EV8 Narrated tours: follow mode reads each stop's story aloud on arrival.
+- [ ] EV9 Then and now: slider between a painting (depictions) and a modern photo.
+- [ ] EV10 Kids' I-spy sheets from the labelled type diagrams (arrow slits, gargoyles, sundials, ogham).
+- [ ] EV11 Postcards: a shareable image card of a record (photo, date, one fact).
+
 ## Trade, enterprise and innovation (planned 2026-10-23, George's idea)
 How trades, guilds, trading companies, markets and exchanges (the stock market among them), firms and their
 technologies shaped where people lived and worked, their towns, communities and government. Builds on the Markets

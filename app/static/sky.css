@@ -1,0 +1,48 @@
+/* "Sun and sky" in detail views (sky_here.js) and sun lines on the map (sky_map.js) */
+.sky-box:empty { display: none; }
+.sky-align { border-left: 3px solid var(--sky-sun); padding: 2px 0 2px 10px; margin: 8px 0; }
+.sky-align p { margin: 4px 0; }
+.sky-verdict { display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em;
+  border: 1px solid var(--muted); color: var(--muted); border-radius: 4px; padding: 0 5px; vertical-align: 1px; }
+.sky-verdict.established { color: #2e7d32; border-color: #2e7d32; }
+.sky-verdict.disputed { color: #b5651d; border-color: #b5651d; }
+.sky-sources { font-size: 13px; padding-left: 18px; }
+.sky-sources li { margin: 4px 0; }
+.sky-details summary { cursor: pointer; font-weight: 600; margin: 10px 0 6px; }
+.sky-grid { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 14px; align-items: start; }
+@media (max-width: 560px) { .sky-grid { grid-template-columns: 1fr; } .sky-compass { max-width: 200px; } }
+:root { --sky-sun: #d08a12; --sky-moon: #6b7fa8; --sky-then: #8d6e63; --sky-aligned: #c62828; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sky-sun: #f2b544; --sky-moon: #9fb3dc; --sky-then: #bca59b; --sky-aligned: #ff6e6e; } }
+:root[data-theme="dark"] { --sky-sun: #f2b544; --sky-moon: #9fb3dc; --sky-then: #bca59b; --sky-aligned: #ff6e6e; }
+.sky-compass { width: 100%; height: auto; }
+.sky-compass circle { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.sky-compass .sky-centre { fill: var(--ink); stroke: none; }
+.sky-compass text { font-size: 12px; fill: var(--muted); text-anchor: middle; }
+.sky-compass line { stroke-width: 2; stroke-linecap: round; }
+.sky-compass .sky-sun { stroke: var(--sky-sun); }
+.sky-compass .sky-sun.sky-equinox, .sky-compass .sky-sun.sky-beltane, .sky-compass .sky-sun.sky-samhain { stroke-width: 1.2; }
+.sky-compass .sky-moon { stroke: var(--sky-moon); stroke-dasharray: 4 3; }
+.sky-compass .sky-then { stroke: var(--sky-then); stroke-width: 1; stroke-dasharray: 2 2; }
+.sky-compass .sky-aligned { stroke: var(--sky-aligned); stroke-width: 3.5; }
+.sky-table { border-collapse: collapse; font-size: 13px; width: 100%; }
+.sky-table th, .sky-table td { text-align: left; padding: 3px 8px 3px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.sky-key { white-space: nowrap; }
+.sky-key::before { content: ""; display: inline-block; width: 14px; height: 0; border-top: 2px solid; margin-right: 3px; vertical-align: middle; }
+.sky-key.sun::before { border-color: var(--sky-sun); }
+.sky-key.moon::before { border-color: var(--sky-moon); border-top-style: dashed; }
+.sky-key.aligned::before { border-color: var(--sky-aligned); border-top-width: 3px; }
+.sky-key.then::before { border-color: var(--sky-then); border-top-style: dotted; }
+.sky-control { background: var(--panel); color: var(--ink); max-width: 250px; }
+.sky-control .sky-toggle { border: 0; background: var(--panel); color: var(--ink); padding: 6px 9px; cursor: pointer; font-size: 13px; font-weight: 600; width: 100%; text-align: left; }
+.sky-panel { padding: 4px 9px 8px; font-size: 13px; }
+.sky-panel label { display: block; margin: 5px 0; }
+.sky-panel input[type=date], .sky-panel input[type=number] { width: 100%; padding: 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+.sky-panel .hint { margin: 4px 0; }
+.sky-picking { cursor: crosshair; }
+.sky-ray.sun-date { stroke: var(--sky-sun); }
+.sky-ray.sun-event { stroke: var(--sky-then); stroke-dasharray: 6 5; }
+.sky-ray.moon { stroke: var(--sky-moon); stroke-dasharray: 3 5; }
+.sky-ray.aligned { stroke: var(--sky-aligned); }
+.sky-panel .sky-key.then::before { border-top-style: dashed; }
+.sky-table td:nth-child(2), .sky-table td:nth-child(3) { white-space: nowrap; }
+.sky-grid > div { min-width: 0; overflow-x: auto; }

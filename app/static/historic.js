@@ -71,7 +71,7 @@ const Historic = (() => {
       </select>
       <label class="ml-op">Opacity <input type="range" min="0.2" max="1" step="0.05" value="${st.opacity}"></label>
       <small class="ml-hnote"></small>`;
-    panel.insertBefore(block, panel.querySelector("small:last-child"));
+    panel.insertBefore(block, panel.querySelector(":scope > small:last-child"));
     const sel = block.querySelector("select"), op = block.querySelector("input"), note = block.querySelector(".ml-hnote");
     let current = null;
     const apply = () => {

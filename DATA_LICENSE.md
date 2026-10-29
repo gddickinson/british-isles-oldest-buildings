@@ -53,6 +53,7 @@ Nothing here is legal advice; follow each source's own terms.
 | [Protomaps](https://protomaps.com) daily build | street detail saved for offline use (local app) | ODbL (OpenStreetMap data) | © OpenStreetMap contributors, Protomaps |
 | [OSRM](https://routing.openstreetmap.de) (FOSSGIS) | tour routes along paths and roads | OpenStreetMap data, ODbL | © OpenStreetMap contributors |
 | [OpenTopoData](https://www.opentopodata.org), EU-DEM 25 m | elevation profiles | Copernicus EU-DEM: free use with attribution | Produced using Copernicus data and information funded by the European Union (EU-DEM layers) |
+| [Environment Agency LIDAR Composite DTM 1 m](https://environment.data.gov.uk/spatialdata/lidar-composite-digital-terrain-model-dtm-1m/wms?service=WMS&request=GetCapabilities) (hillshade WMS) | "Ground (LiDAR)" layer in England (local app, shown live, not stored) | OGL v3.0 | LiDAR © Environment Agency, Open Government Licence |
 
 ## Figures in `docs/img/`
 

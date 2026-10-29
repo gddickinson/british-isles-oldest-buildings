@@ -632,8 +632,20 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       afternoon clearing; breaks 1943 Manchester restricted, 1945 Southampton); new "London Bankers' Clearing House at 1974
       prices, 1868-1974" (over the ONS long-run RPI: less in 1920 than 1913, 6.4 times 1938-1974 against 41 times in pounds
       of the time), in the banking trade story.
-- [ ] C5e2b2b2b3b2b Savings banks after 1938 (Annual Abstract: trustee and Post Office Savings Banks), savings banks by nation
-      (in the CSV to 1898); the credit clearing 1960-1974 (in clearing_london_annual_uk.csv) not drawn yet.
+- [x] C5e2b2b2b3b2b (2026-10-28) Savings banks 1939-1975, by nation, and the credit clearing (new `bidb/change_savings_post.py`,
+      read by bidb.change_savings): the Annual Abstract's "National savings" tables read from the page images of Nos. 86, 88,
+      92, 96, 99, 104, 108 and 112 (`savings_banks_annual_uk.csv`, 2,728 printed figures; receipts, repayments and interest
+      in years ended 31 March, amounts remaining invested at 31 March); every printed total checked against its parts, each
+      savings bank's amount against the year before and the year's movements (within £1 million but the Eire banks in 1942,
+      Service release benefits 1946-1949 and eight years the footnotes do not explain, `UNBALANCED`), the savings-bank
+      figures of overlapping editions equal but twenty revisions (`REVISED`). "Savings banks: amount due to depositors"
+      extended to 1846-1975 (break 1939: at 31 March from then; the trustee banks' departments printed together 1939-1948,
+      their lines start again in 1949): the Post Office £1,981 million at its height in 1947, £1,475 million in 1971; the
+      trustee banks' two departments passed the Post Office's ordinary accounts in 1965 and held £3,669 million in 1975. New
+      "Savings banks by nation, 1846-1898" (England and Wales, Scotland, Ireland; trustee banks and from 1863 the Post Office;
+      log axis) and "London credit clearing, 1961-1974" (breaks 1970, mergers, and 1971, BACS transfers left out, both
+      quoted from the footnotes of Nos. 111-112), in the banking trade story. No account counts after 1938 (not in these
+      tables); the other national savings (certificates, bonds, SAYE) are in the CSV for the checks, not drawn.
 - [ ] C5e2b2b2c Patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and

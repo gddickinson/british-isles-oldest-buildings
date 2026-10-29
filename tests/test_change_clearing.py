@@ -1,5 +1,5 @@
-"""Bankers' clearing houses 1868-1974 (roadmap C5e2b2b2b3b1, C5e2b2b2b3b2a): Statistical Abstract and Annual Abstract,
-read from the page images."""
+"""Bankers' clearing houses 1868-1974 (roadmap C5e2b2b2b3b1, C5e2b2b2b3b2a, C5e2b2b2b3b2b): Statistical Abstract and
+Annual Abstract, read from the page images."""
 import copy
 import unittest
 
@@ -59,6 +59,11 @@ class ClearingHouses(unittest.TestCase):
         self.assertEqual([b[0] for b in out[0]["breaks"]], [1936, 1939])
         self.assertTrue(out[0]["log"])
         self.assertNotIn("{", "".join(r.get("note", "") for r in out))
+        # the credit clearing (C5e2b2b2b3b2b): 1960 from 1 May not drawn, 1970 on the new basis, breaks 1970 and 1971
+        credit = pts["clearing_credit_uk"]
+        self.assertEqual(sorted(credit), list(range(1961, 1975)))
+        self.assertEqual((credit[1970], credit[1974]), (10969, 18580))
+        self.assertEqual([b[0] for b in out[ids.index("clearing_credit_uk")]["breaks"]], [1970, 1971])
 
 
 class AnnualAbstract(unittest.TestCase):

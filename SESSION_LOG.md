@@ -2358,3 +2358,34 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 460 OK (`test_change_clearing`: the series test now passes its own prices, no download; 4 new for the Annual Abstract);
   ui_check change_clearing (updated), change_savings, trades OK; graphs checked in a screenshot of /trades?t=banking. Hosted
   copy not updated.
+
+## 2026-10-28 — C5e2b2b2b3b2b: savings banks 1939-1975, by nation, and the credit clearing
+- New `bidb/change_savings_post.py`: the Annual Abstract's "National savings" tables read from the page images (Internet
+  Archive, `page/n<leaf-1>_w2400.jpg`, cached as `<cache>/stat_abstract_img/sv_n<no>_<leaf>.jpg`; leaves from each item's
+  `_page_numbers.json`, each confirmed by the table's title): No. 86 table 286 p. 257 (leaf 267; used instead of No. 84,
+  which has no amounts remaining invested), No. 88 table 310 p. 291 (303), No. 92 table 320 p. 277 (289), No. 96 table 324
+  p. 280 (292), No. 99 table 340 p. 284 (296), No. 104 table 325 p. 281 (295), No. 108 table 335 pp. 316-317 (332-333), No.
+  112 table 361 pp. 347-348 (365-366) → `savings_banks_annual_uk.csv` (2,728 printed figures, every row of the tables, read
+  by eye from enlarged crops; no OCR used).
+- Checks (`check`, all pass): every printed total of receipts, repayments and amounts against its parts (within the
+  rounding of the parts); each savings bank's amount at 31 March from the year before and the year's receipts, interest
+  and repayments, within £1 million but the Eire banks dropped in 1941/42 (£2.4 million), Service release benefits left out
+  of the Post Office flows 1946-1949 (+£135.5 million in 1946), and eight years the footnotes do not explain (Post Office
+  1943-1945, 1952-1954, 1957, 1969, up to £3.6 million; trustee banks 1965, £1.5 million); savings-bank figures printed by
+  two editions equal but twenty revisions (Post Office amounts 1946-1948 in No. 92; the last year of Nos. 86, 88, 96 and
+  108 revised by the next). The other items are not compared across editions (No. 96 redefined the certificates'
+  interest and repayments; No. 104 revised their accrued interest).
+- Graphs: "Savings banks: amount due to depositors" extended to 1846-1975 (break 1939: at 31 March from then; the trustee
+  banks' departments printed together 1939-1948, £242.9 million to £764.1 million, given in the note, their lines start
+  again in 1949): the Post Office £523.7 million at 31 March 1939, £1,981.0 million at its height in 1947, £1,474.7
+  million in 1971; the trustee banks' two departments passed its ordinary accounts in 1965 (£1,956.6 against £1,837.7
+  million) and held £3,668.7 million in 1975. New "Savings banks by nation, 1846-1898" (from the Statistical Abstract CSV:
+  England and Wales, Scotland, Ireland, trustee banks and from 1863 the Post Office; log axis; Ireland fell from £2.9
+  million in 1846 to £1.2 million in 1849) and "London credit clearing, 1961-1974" (1960 from 1 May not drawn; breaks
+  1970, mergers, and 1971, credit transfers processed by BACS left out: both footnotes of Nos. 111-112, the second missed
+  last session). Both new graphs in the banking trade story. Source `annual_abstract_savings_uk` (135); DATA_LICENSE.md
+  row extended; 311 series.
+- Two unsourced phrases I had first written into the notes (a Dublin bank failure, "war savings drives") were taken out
+  before the build.
+- Tests 465 OK (`test_change_savings`: 5 new, `test_change_clearing`: credit clearing); ui_check change_savings (updated),
+  change_clearing (updated), trades OK; graphs checked in a screenshot of /trades?t=banking. Hosted copy not updated.

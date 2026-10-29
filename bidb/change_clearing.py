@@ -1,7 +1,8 @@
-"""Bankers' clearing houses (roadmap C5e2b2b2b3b1, C5e2b2b2b3b2a): graphs "London Bankers' Clearing House: amounts
-cleared, 1868-1974" (the total, and from 1902 the town and country clearings, the general clearing from 1939), "London
+"""Bankers' clearing houses (roadmap C5e2b2b2b3b1, C5e2b2b2b3b2a, C5e2b2b2b3b2b): graphs "London Bankers' Clearing
+House: amounts cleared, 1868-1974" (the total, and from 1902 the town and country clearings, the general clearing from 1939), "London
 Bankers' Clearing House at 1974 prices, 1868-1974" (the total over the ONS's long-run RPI) and "Provincial bankers'
-clearing houses, 1897-1967" (their total, Manchester and Liverpool); from 1939 from bidb.change_clearing_post (the
+clearing houses, 1897-1967" (their total, Manchester and Liverpool) and "London credit clearing, 1961-1974" (breaks
+1970, 1971); from 1939 from bidb.change_clearing_post (the
 Annual Abstract), to 1938 from the Statistical Abstract's tables of amounts cleared,
 read from the page images of Nos. 31, 32, 33, 42, 46, 50, 59, 62, 66, 69, 71, 78, 82 and 83 →
 `clearing_london_abstract_uk.csv` (one printed row per edition and year: total, six months to 30 June, Stock Exchange
@@ -149,7 +150,7 @@ NOTE = ("Amounts cleared at the London Bankers' Clearing House in each calendar 
         "after the operations ended in August 1946, and the town clearing came back to {s1974}% of the total by 1974. "
         "The figures then rose to £{t1960:,} million in 1960 and £{t1974:,} "
         "million in 1974. The credit clearing (established on 20 April 1960, figures from 1 May: £{c1961:,} million in 1961, "
-        "£{c1974:,} million in 1974) is not included. The Stock Exchange account days of 1914 are eighteen "
+        "£{c1974:,} million in 1974) is not included (its own graph). The Stock Exchange account days of 1914 are eighteen "
         "settlements (twenty-five or twenty-six in 1922-1923) and its consols settling days seven, January to July. "
         "From 1936 the figures include the District Bank, whose admission 'accounts for part of the increase in "
         "Town and Metropolitan Clearings, but not in Country Clearing' (No. 82). The Annual Abstract warns that the "
@@ -184,6 +185,25 @@ PROVINCIAL_NOTE = ("Amounts cleared at the provincial bankers' clearing houses i
                    "provincial clearings, with the exception of the afternoon clearing at Liverpool were abolished and "
                    "transferred to General Clearing from 12 January 1968' (Annual Abstract No. 108); the afternoon "
                    "clearing at Liverpool, not drawn, came to £{a1968} million in 1968 and £{a1974} million in 1974.")
+
+CREDIT_NOTE = ("The credit clearing of the London Bankers' Clearing House "
+               "(established on 20 April 1960) in each calendar year, £ million, from the Annual Abstract of Statistics "
+               "(Nos. 99, 104, 108, 111 and 112, read from the page images; each year from the latest edition). 1960 "
+               "is from 1 May only (£{c1960:,} million) and is not drawn. Nos. 111 and 112: 'The 1970 figure is not "
+               "comparable with earlier figures owing to mergers among the London Clearing banks' (£{c1970:,} million; "
+               "No. 108 printed £{c1970old:,} million) and 'Figures from 1971 are not comparable with earlier figures, "
+               "owing to the exclusion of credit transfers processed by the Bankers' Automated Clearing Service'. "
+               "£{c1961:,} million "
+               "in 1961, £{c1974:,} million in 1974, against £{d1974:,} million of debit clearing (the Clearing House "
+               "and the provincial houses) in 1974.")
+
+
+def credit(post_rows=None):
+    """({year: £ million} 1961-1974 from the latest edition, 1970 as No. 108 printed it, 1960 from 1 May)."""
+    lon, _ = post_rows or post.load()
+    old = next(r["credit"] for r in lon if r["edition"] == 108 and r["year"] == 1970)
+    c = post.values(lon, "credit")
+    return {y: v for y, v in c.items() if y > 1960}, old, c[1960]
 
 
 def joined(rows=None, post_rows=None):
@@ -254,7 +274,16 @@ def series(rows=None, post_rows=None, prices=None):
                         [1921, "From 1921 including Hull, opened 1 February 1921"],
                         [1943, "Manchester's area restricted in July 1943 (extended again 1 July 1947)"],
                         [1945, "From 1945 including Southampton"]]
-    return {**pts, "clearing_london_real_uk": real}, out
+    cr, old, c1960 = credit(post_rows)
+    out.append(_row("clearing_credit_uk", "London credit clearing, 1961-1974", "credit clearing", ul, src[1:],
+                    "London", CREDIT_NOTE.format(c1960=round(c1960), c1970=round(cr[1970]), c1970old=round(old),
+                                                 c1961=round(cr[1961]), c1974=round(cr[1974]),
+                                                 d1974=round(g["debit"][1974])), unit=unit))
+    out[-1]["breaks"] = [[1970, "1970 not comparable with earlier figures (mergers among the London clearing "
+                                f"banks; No. 108 printed £{round(old):,} million)"],
+                         [1971, "From 1971 not comparable with earlier figures (credit transfers processed by the "
+                                "Bankers' Automated Clearing Service left out)"]]
+    return {**pts, "clearing_london_real_uk": real, "clearing_credit_uk": {y: round(v) for y, v in cr.items()}}, out
 
 
 def run(log=print):

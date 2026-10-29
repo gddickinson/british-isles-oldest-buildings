@@ -1,6 +1,8 @@
-"""Savings banks (roadmap C5e2b2b2b3a): graphs "Savings banks: amount due to depositors, 1846-1938" (trustee savings
-banks, the Post Office Savings Bank from 1863 and the trustee banks' special investment departments from 1924) and
-"Savings bank accounts open, 1897-1938", from the Statistical Abstract's tables of the amount received from, paid to
+"""Savings banks (roadmap C5e2b2b2b3a, C5e2b2b2b3b2b): graphs "Savings banks: amount due to depositors, 1846-1975"
+(trustee savings banks, the Post Office Savings Bank from 1863 and the trustee banks' special investment departments
+from 1924; from 1939 at 31 March from the Annual Abstract, bidb.change_savings_post), "Savings banks by nation,
+1846-1898" (England and Wales, Scotland, Ireland: trustee banks and, from 1863, the Post Office) and "Savings bank
+accounts open, 1897-1938", to 1938 from the Statistical Abstract's tables of the amount received from, paid to
 and due to depositors, read from the page images of Nos. 8, 13, 26, 41, 42, 46, 59, 70 and 83 →
 `savings_banks_abstract_uk.csv` (one printed row per edition, bank, year and measure: received, interest, paid, due,
 accounts, dormant, opened, closed, transferred; England and Wales or the four nations and the United Kingdom to 1898,
@@ -16,6 +18,7 @@ transferred). Printed rows that do not add up are `KNOWN`; figures an edition re
 """
 import csv
 
+from . import change_savings_post as post
 from .change_firms import DATA
 from .change_registers import _row
 from .change_wages import write
@@ -157,6 +160,25 @@ def values(bank, measure, rows=None, scale=1e6, digits=3):
             for (b, y, m), r in sorted(latest(rows).items()) if b == bank and m == measure}
 
 
+def by_nation(rows=None):
+    """{"ew"|"sc"|"ir": {year: £ million}}: amount due in the trustee banks and, from 1863, the Post Office Savings
+    Bank, from the latest edition that prints the nations (to 1898)."""
+    best = {}
+    for r in sorted(rows or load(), key=lambda r: int(r["edition"])):
+        if r["measure"] == "due" and any(r[c] is not None for c in NATIONS):
+            best[(r["bank"], r["year"])] = r
+    out = {"ew": {}, "sc": {}, "ir": {}}
+    for (b, y), t in sorted(best.items()):
+        if b != "trustee":
+            continue
+        p = best.get(("post_office", y))
+        parts = {"ew": t["england"] + t["wales"] + (p["england_wales"] if p else 0),
+                 "sc": t["scotland"] + (p["scotland"] if p else 0), "ir": t["ireland"] + (p["ireland"] if p else 0)}
+        for k, v in parts.items():
+            out[k][y] = round(v / 1e6, 3)
+    return out
+
+
 def facts(rows=None):
     """Figures quoted in the notes."""
     rows = rows or load()
@@ -183,6 +205,23 @@ NOTE = ("Amount due to depositors at the end of each year (trustee savings banks
         "departments (open only to ordinary depositors, printed from 1924) £{sp1938} million. Printed as 'capital' "
         "to No. 42 (1894); the trustee banks' interest is printed from 1877 (the rate allowed to trustees fell from 3¼ to 3 "
         "per cent from 20 November 1880).")
+POST_NOTE = (" From 1939 the amount at 31 March of each year, from the Annual Abstract of Statistics' tables of national "
+             "savings read from the page images (Nos. 86, 88, 92, 96, 99, 104, 108 and 112; every printed total checked "
+             "against its parts and each bank's amount against the year before and the year's movements); the Post "
+             "Office line is its ordinary accounts (the National Savings Bank from 1969; investment accounts, opened "
+             "in 1966, held £{inv1975} million in 1975). The Annual Abstract prints the trustee banks' two departments "
+             "together to 1948 (£{both1939} million in 1939, £{both1948} million in 1948), so their lines start again "
+             "in 1949. The Post Office Savings Bank held £{po1939} million at 31 March 1939 and £{popeak} million at "
+             "its height in {peak}, then fell to £{polow} million in {low} while the "
+             "trustee banks grew: their two departments together passed the Post Office's ordinary accounts in "
+             "{over} (£{bothover} million against £{poover} million) and held £{both1975} million in 1975 (ordinary "
+             "£{tr1975} million, special investment £{sp1975} million).")
+NATION_NOTE = ("Amount due to depositors in the trustee savings banks (20 November) and, from 1863, the Post Office "
+               "Savings Bank (31 December), by nation, from the same Statistical Abstract tables (printed by nation to "
+               "1898; each row checked against the United Kingdom total). Log axis. In 1846 England and Wales held "
+               "£{ew1846} million, Scotland £{sc1846} million and Ireland £{ir1846} million; Ireland's deposits fell "
+               "to £{irlow} million in {irlowy}. In 1898 England and Wales held £{ew1898} million, Scotland "
+               "£{sc1898} million and Ireland £{ir1898} million.")
 ACCOUNTS_NOTE = ("Accounts open at the end of each year, from the same tables (printed from No. 59, 1897): "
                  "{po1897} million in the Post Office Savings Bank and {tr1897} million in the trustee banks in 1897, "
                  "{po1938} million and {tr1938} million in 1938. From 1909 the Post Office counts active accounts "
@@ -207,31 +246,68 @@ def series(rows=None):
     anote = ACCOUNTS_NOTE.format(po1897=f"{acc[1897]:.2f}", tr1897=f"{tacc[1897]:.2f}", po1938=f"{acc[1938]:.2f}",
                                  tr1938=f"{tacc[1938]:.2f}", dormant=f["dormant"], po1924=f"{acc[1924]:.2f}",
                                  po1924old=f"{old['united_kingdom'] / 1e6:.2f}")
+    note += post_note()
+    nat = by_nation(rows)
+    ir_low = min((y for y in nat["ir"] if y < 1863), key=nat["ir"].get)
+    nnote = NATION_NOTE.format(**{f"{k}{y}": f"{nat[k][y]:.1f}" for k in nat for y in (1846, 1898)},
+                               irlow=f"{nat['ir'][ir_low]:.1f}", irlowy=ir_low)
     src = ["stat_abstract_savings_uk"]
     breaks = [[1909, "From 1909 active accounts only (dormant accounts of under £1 untouched for five years left out: "
                      f"{f['dormant']:,} in 1909)"],
               [1924, "From 1924 Statistical Abstract No. 83's count of active accounts (No. 70 gives "
                      f"{old['united_kingdom']:,} for 1924)"],
               [1933, "From 1933 coupon accounts left out (the coupon system replaced by a stamp savings scheme)"]]
-    out = [_row("savings_due_trustee_uk", "Savings banks: amount due to depositors, 1846-1938", "trustee savings banks",
-                "£ million at the end of the year", src, "United Kingdom", note,
+    psrc = src + ["annual_abstract_savings_uk"]
+    out = [_row("savings_due_trustee_uk", "Savings banks: amount due to depositors, 1846-1975", "trustee savings banks",
+                "£ million at the end of the year (from 1939 at 31 March)", psrc, "United Kingdom", note,
                 ["savings_due_po_uk", "savings_due_special_uk"], unit="£ million"),
            _row("savings_due_po_uk", "Post Office Savings Bank", "Post Office Savings Bank",
-                "£ million at the end of the year", src, "United Kingdom", unit="£ million"),
+                "£ million at the end of the year (from 1939 at 31 March)", psrc, "United Kingdom", unit="£ million"),
            _row("savings_due_special_uk", "Trustee banks' special investment departments", "trustee special "
-                "investment departments", "£ million at the end of the year", src, "United Kingdom", unit="£ million"),
+                "investment departments", "£ million at the end of the year (from 1939 at 31 March)", psrc,
+                "United Kingdom", unit="£ million"),
+           _row("savings_nation_ew", "Savings banks by nation, 1846-1898", "England and Wales",
+                "£ million due to depositors at the end of the year", src, "United Kingdom", nnote,
+                ["savings_nation_sc", "savings_nation_ir"], unit="£ million"),
+           _row("savings_nation_sc", "Savings banks: Scotland", "Scotland", "£ million due to depositors at the end of "
+                "the year", src, "Scotland", unit="£ million"),
+           _row("savings_nation_ir", "Savings banks: Ireland", "Ireland", "£ million due to depositors at the end of "
+                "the year", src, "Ireland", unit="£ million"),
            _row("savings_accounts_po_uk", "Savings bank accounts open, 1897-1938", "Post Office Savings Bank",
                 "million accounts open at the end of the year", src, "United Kingdom", anote,
                 ["savings_accounts_trustee_uk"], unit="million accounts"),
            _row("savings_accounts_trustee_uk", "Trustee savings bank accounts", "trustee savings banks",
                 "million accounts open at the end of the year", src, "United Kingdom", unit="million accounts")]
-    out[3]["breaks"] = breaks
-    return {"savings_due_trustee_uk": tr, "savings_due_po_uk": po, "savings_due_special_uk": sp,
+    out[0]["breaks"] = [[1939, "From 1939 at 31 March of each year (Annual Abstract of Statistics); to 1938 the "
+                               "trustee banks at 20 November and the Post Office at 31 December"]]
+    out[3]["breaks"] = [[1863, "From 1863 with the Post Office Savings Bank"]]
+    out[3]["log"] = True
+    out[6]["breaks"] = breaks
+    pr = post.load()
+    return {"savings_due_trustee_uk": {**tr, **post.values("due_tsb_ord", pr)},
+            "savings_due_po_uk": {**po, **post.values("due_po", pr)},
+            "savings_due_special_uk": {**sp, **post.values("due_tsb_special", pr)},
+            "savings_nation_ew": nat["ew"], "savings_nation_sc": nat["sc"], "savings_nation_ir": nat["ir"],
             "savings_accounts_po_uk": acc, "savings_accounts_trustee_uk": tacc}, out
 
 
+def post_note(rows=None):
+    """The 1939-1975 part of the note, from bidb.change_savings_post."""
+    rows = rows or post.load()
+    po, both = post.values("due_po", rows), post.tsb_both(rows)
+    peak = max(po, key=po.get)
+    low = min((y for y in po if y > peak), key=po.get)
+    over = min(y for y in both if both[y] > po[y])
+    return POST_NOTE.format(inv1975=f"{post.values('due_po_investment', rows)[1975]:.0f}", both1939=f"{both[1939]:.1f}",
+                            both1948=f"{both[1948]:.1f}", po1939=f"{po[1939]:.1f}", popeak=f"{po[peak]:,.1f}",
+                            peak=peak, polow=f"{po[low]:,.1f}", low=low, over=over, bothover=f"{both[over]:,.1f}",
+                            poover=f"{po[over]:,.1f}", both1975=f"{both[1975]:,.1f}",
+                            tr1975=f"{post.values('due_tsb_ord', rows)[1975]:,.1f}",
+                            sp1975=f"{post.values('due_tsb_special', rows)[1975]:,.1f}")
+
+
 def run(log=print):
-    bad = check()
+    bad = check() + post.check()
     if bad:
         raise ValueError("; ".join(bad))
     pts, rows = series()

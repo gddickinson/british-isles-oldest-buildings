@@ -5270,102 +5270,6 @@
   "hidden": true
  },
  {
-  "id": "savings_due_trustee_uk",
-  "theme": "Prosperity and work",
-  "title": "Savings banks: amount due to depositors, 1846-1938",
-  "region": "United Kingdom",
-  "unit": "£ million",
-  "unit_long": "£ million at the end of the year",
-  "label": "trustee savings banks",
-  "sources": [
-   "stat_abstract_savings_uk"
-  ],
-  "file": "savings_due_trustee_uk.csv",
-  "default": false,
-  "models": [
-   "savings_due_po_uk",
-   "savings_due_special_uk"
-  ],
-  "note": "Amount due to depositors at the end of each year (trustee savings banks on 20 November, the Post Office Savings Bank on 31 December), from the Statistical Abstract read from the page images (Nos. 8, 13, 26, 41, 42, 46, 59, 70 and 83, each year from the latest edition; every row checked against its nations, and each year against the year before and the year's receipts, interest and payments wherever interest is printed). Government stock held for depositors is not included. The trustee banks held £31.7 million in 1846 and £41.5 million in 1861, then fell to £36.4 million in 1866 while the Post Office Savings Bank, opened in 1861 (see the event), grew; the Post Office passed them in 1885 (£47.7 million against £46.4 million) and held £187 million in 1913, the trustee banks £54 million. The Post Office held £266 million in 1919, a year whose figures include the gratuities paid to demobilised men; the Irish Free State opened its own Post Office Savings Bank on 1 January 1923. In 1938 the Post Office held £509 million, the trustee banks' ordinary departments £142 million and their special investment departments (open only to ordinary depositors, printed from 1924) £96 million. Printed as 'capital' to No. 42 (1894); the trustee banks' interest is printed from 1877 (the rate allowed to trustees fell from 3¼ to 3 per cent from 20 November 1880)."
- },
- {
-  "id": "savings_due_po_uk",
-  "theme": "Prosperity and work",
-  "title": "Post Office Savings Bank",
-  "region": "United Kingdom",
-  "unit": "£ million",
-  "unit_long": "£ million at the end of the year",
-  "label": "Post Office Savings Bank",
-  "sources": [
-   "stat_abstract_savings_uk"
-  ],
-  "file": "savings_due_po_uk.csv",
-  "default": false,
-  "hidden": true
- },
- {
-  "id": "savings_due_special_uk",
-  "theme": "Prosperity and work",
-  "title": "Trustee banks' special investment departments",
-  "region": "United Kingdom",
-  "unit": "£ million",
-  "unit_long": "£ million at the end of the year",
-  "label": "trustee special investment departments",
-  "sources": [
-   "stat_abstract_savings_uk"
-  ],
-  "file": "savings_due_special_uk.csv",
-  "default": false,
-  "hidden": true
- },
- {
-  "id": "savings_accounts_po_uk",
-  "theme": "Prosperity and work",
-  "title": "Savings bank accounts open, 1897-1938",
-  "region": "United Kingdom",
-  "unit": "million accounts",
-  "unit_long": "million accounts open at the end of the year",
-  "label": "Post Office Savings Bank",
-  "sources": [
-   "stat_abstract_savings_uk"
-  ],
-  "file": "savings_accounts_po_uk.csv",
-  "default": false,
-  "models": [
-   "savings_accounts_trustee_uk"
-  ],
-  "note": "Accounts open at the end of each year, from the same tables (printed from No. 59, 1897): 7.24 million in the Post Office Savings Bank and 1.53 million in the trustee banks in 1897, 11.13 million and 2.42 million in 1938. From 1909 the Post Office counts active accounts only (3,491,273 dormant accounts of under £1 untouched for five years in 1909, not distinguished before); No. 83's count from 1924 is lower than No. 70's for the same years (10.67 million against 12.20 million) and leaves out coupon accounts from 1933. The trustee line is the ordinary departments.",
-  "breaks": [
-   [
-    1909,
-    "From 1909 active accounts only (dormant accounts of under £1 untouched for five years left out: 3,491,273 in 1909)"
-   ],
-   [
-    1924,
-    "From 1924 Statistical Abstract No. 83's count of active accounts (No. 70 gives 12,200,013 for 1924)"
-   ],
-   [
-    1933,
-    "From 1933 coupon accounts left out (the coupon system replaced by a stamp savings scheme)"
-   ]
-  ]
- },
- {
-  "id": "savings_accounts_trustee_uk",
-  "theme": "Prosperity and work",
-  "title": "Trustee savings bank accounts",
-  "region": "United Kingdom",
-  "unit": "million accounts",
-  "unit_long": "million accounts open at the end of the year",
-  "label": "trustee savings banks",
-  "sources": [
-   "stat_abstract_savings_uk"
-  ],
-  "file": "savings_accounts_trustee_uk.csv",
-  "default": false,
-  "hidden": true
- },
- {
   "id": "clearing_london_uk",
   "theme": "Prosperity and work",
   "title": "London Bankers' Clearing House: amounts cleared, 1868-1974",
@@ -5383,7 +5287,7 @@
    "clearing_town_uk",
    "clearing_country_uk"
   ],
-  "note": "Amounts cleared at the London Bankers' Clearing House in each calendar year, in pounds of the time, on a logarithmic axis: to 1938 from the Statistical Abstract read from the page images (Nos. 31, 32, 33, 42, 46, 50, 59, 62, 66, 69, 71, 78, 82 and 83, each year from the latest edition; every year but 1868 printed by two editions or more and compared, and from 1902 the town, metropolitan and country clearings checked against the total), from 1939 from the Annual Abstract of Statistics (Nos. 84, 88, 92, 96, 99, 104, 108, 111 and 112, every row checked by its parts). The amounts cleared came to £3,425 million in 1868, £16,436 million in 1913 and, with the prices of the war, £39,019 million in 1920; 1929 (£44,897 million) was not passed until 1942, the slump having taken them down to £32,112 million in 1932. Town clearings were 91.3% of the total in 1902 and 85.5% in 1938; metropolitan clearings (not drawn) are printed from 19 February 1907 (£482 million to the end of that year, £2,076 million in 1938). From 28 August 1939, under the clearing banks' emergency operations, a general clearing took the country and metropolitan clearings and part of the town clearing (£5,245 million to the end of 1939, £28,292 million in 1944); it was kept after the operations ended in August 1946, and the town clearing came back to 90.2% of the total by 1974. The figures then rose to £225,417 million in 1960 and £1,640,190 million in 1974. The credit clearing (established on 20 April 1960, figures from 1 May: £5,252 million in 1961, £18,580 million in 1974) is not included. The Stock Exchange account days of 1914 are eighteen settlements (twenty-five or twenty-six in 1922-1923) and its consols settling days seven, January to July. From 1936 the figures include the District Bank, whose admission 'accounts for part of the increase in Town and Metropolitan Clearings, but not in Country Clearing' (No. 82). The Annual Abstract warns that the figures 'are not strictly comparable throughout owing to changes in the composition of the clearings'. Nos. 29 and 30 print other totals for 1868-1882 with no year end stated; they are not used.",
+  "note": "Amounts cleared at the London Bankers' Clearing House in each calendar year, in pounds of the time, on a logarithmic axis: to 1938 from the Statistical Abstract read from the page images (Nos. 31, 32, 33, 42, 46, 50, 59, 62, 66, 69, 71, 78, 82 and 83, each year from the latest edition; every year but 1868 printed by two editions or more and compared, and from 1902 the town, metropolitan and country clearings checked against the total), from 1939 from the Annual Abstract of Statistics (Nos. 84, 88, 92, 96, 99, 104, 108, 111 and 112, every row checked by its parts). The amounts cleared came to £3,425 million in 1868, £16,436 million in 1913 and, with the prices of the war, £39,019 million in 1920; 1929 (£44,897 million) was not passed until 1942, the slump having taken them down to £32,112 million in 1932. Town clearings were 91.3% of the total in 1902 and 85.5% in 1938; metropolitan clearings (not drawn) are printed from 19 February 1907 (£482 million to the end of that year, £2,076 million in 1938). From 28 August 1939, under the clearing banks' emergency operations, a general clearing took the country and metropolitan clearings and part of the town clearing (£5,245 million to the end of 1939, £28,292 million in 1944); it was kept after the operations ended in August 1946, and the town clearing came back to 90.2% of the total by 1974. The figures then rose to £225,417 million in 1960 and £1,640,190 million in 1974. The credit clearing (established on 20 April 1960, figures from 1 May: £5,252 million in 1961, £18,580 million in 1974) is not included (its own graph). The Stock Exchange account days of 1914 are eighteen settlements (twenty-five or twenty-six in 1922-1923) and its consols settling days seven, January to July. From 1936 the figures include the District Bank, whose admission 'accounts for part of the increase in Town and Metropolitan Clearings, but not in Country Clearing' (No. 82). The Annual Abstract warns that the figures 'are not strictly comparable throughout owing to changes in the composition of the clearings'. Nos. 29 and 30 print other totals for 1868-1882 with no year end stated; they are not used.",
   "log": true,
   "zero": false,
   "breaks": [
@@ -5525,6 +5429,192 @@
    "annual_abstract_clearing_uk"
   ],
   "file": "clearing_liverpool_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "clearing_credit_uk",
+  "theme": "Prosperity and work",
+  "title": "London credit clearing, 1961-1974",
+  "region": "London",
+  "unit": "£ million",
+  "unit_long": "£ million cleared in the year",
+  "label": "credit clearing",
+  "sources": [
+   "annual_abstract_clearing_uk"
+  ],
+  "file": "clearing_credit_uk.csv",
+  "default": false,
+  "note": "The credit clearing of the London Bankers' Clearing House (established on 20 April 1960) in each calendar year, £ million, from the Annual Abstract of Statistics (Nos. 99, 104, 108, 111 and 112, read from the page images; each year from the latest edition). 1960 is from 1 May only (£2,304 million) and is not drawn. Nos. 111 and 112: 'The 1970 figure is not comparable with earlier figures owing to mergers among the London Clearing banks' (£10,969 million; No. 108 printed £14,391 million) and 'Figures from 1971 are not comparable with earlier figures, owing to the exclusion of credit transfers processed by the Bankers' Automated Clearing Service'. £5,252 million in 1961, £18,580 million in 1974, against £1,641,088 million of debit clearing (the Clearing House and the provincial houses) in 1974.",
+  "breaks": [
+   [
+    1970,
+    "1970 not comparable with earlier figures (mergers among the London clearing banks; No. 108 printed £14,391 million)"
+   ],
+   [
+    1971,
+    "From 1971 not comparable with earlier figures (credit transfers processed by the Bankers' Automated Clearing Service left out)"
+   ]
+  ]
+ },
+ {
+  "id": "savings_due_trustee_uk",
+  "theme": "Prosperity and work",
+  "title": "Savings banks: amount due to depositors, 1846-1975",
+  "region": "United Kingdom",
+  "unit": "£ million",
+  "unit_long": "£ million at the end of the year (from 1939 at 31 March)",
+  "label": "trustee savings banks",
+  "sources": [
+   "stat_abstract_savings_uk",
+   "annual_abstract_savings_uk"
+  ],
+  "file": "savings_due_trustee_uk.csv",
+  "default": false,
+  "models": [
+   "savings_due_po_uk",
+   "savings_due_special_uk"
+  ],
+  "note": "Amount due to depositors at the end of each year (trustee savings banks on 20 November, the Post Office Savings Bank on 31 December), from the Statistical Abstract read from the page images (Nos. 8, 13, 26, 41, 42, 46, 59, 70 and 83, each year from the latest edition; every row checked against its nations, and each year against the year before and the year's receipts, interest and payments wherever interest is printed). Government stock held for depositors is not included. The trustee banks held £31.7 million in 1846 and £41.5 million in 1861, then fell to £36.4 million in 1866 while the Post Office Savings Bank, opened in 1861 (see the event), grew; the Post Office passed them in 1885 (£47.7 million against £46.4 million) and held £187 million in 1913, the trustee banks £54 million. The Post Office held £266 million in 1919, a year whose figures include the gratuities paid to demobilised men; the Irish Free State opened its own Post Office Savings Bank on 1 January 1923. In 1938 the Post Office held £509 million, the trustee banks' ordinary departments £142 million and their special investment departments (open only to ordinary depositors, printed from 1924) £96 million. Printed as 'capital' to No. 42 (1894); the trustee banks' interest is printed from 1877 (the rate allowed to trustees fell from 3¼ to 3 per cent from 20 November 1880). From 1939 the amount at 31 March of each year, from the Annual Abstract of Statistics' tables of national savings read from the page images (Nos. 86, 88, 92, 96, 99, 104, 108 and 112; every printed total checked against its parts and each bank's amount against the year before and the year's movements); the Post Office line is its ordinary accounts (the National Savings Bank from 1969; investment accounts, opened in 1966, held £582 million in 1975). The Annual Abstract prints the trustee banks' two departments together to 1948 (£242.9 million in 1939, £764.1 million in 1948), so their lines start again in 1949. The Post Office Savings Bank held £523.7 million at 31 March 1939 and £1,981.0 million at its height in 1947, then fell to £1,474.7 million in 1971 while the trustee banks grew: their two departments together passed the Post Office's ordinary accounts in 1965 (£1,956.6 million against £1,837.7 million) and held £3,668.7 million in 1975 (ordinary £1,591.7 million, special investment £2,077.0 million).",
+  "breaks": [
+   [
+    1939,
+    "From 1939 at 31 March of each year (Annual Abstract of Statistics); to 1938 the trustee banks at 20 November and the Post Office at 31 December"
+   ]
+  ]
+ },
+ {
+  "id": "savings_due_po_uk",
+  "theme": "Prosperity and work",
+  "title": "Post Office Savings Bank",
+  "region": "United Kingdom",
+  "unit": "£ million",
+  "unit_long": "£ million at the end of the year (from 1939 at 31 March)",
+  "label": "Post Office Savings Bank",
+  "sources": [
+   "stat_abstract_savings_uk",
+   "annual_abstract_savings_uk"
+  ],
+  "file": "savings_due_po_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "savings_due_special_uk",
+  "theme": "Prosperity and work",
+  "title": "Trustee banks' special investment departments",
+  "region": "United Kingdom",
+  "unit": "£ million",
+  "unit_long": "£ million at the end of the year (from 1939 at 31 March)",
+  "label": "trustee special investment departments",
+  "sources": [
+   "stat_abstract_savings_uk",
+   "annual_abstract_savings_uk"
+  ],
+  "file": "savings_due_special_uk.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "savings_nation_ew",
+  "theme": "Prosperity and work",
+  "title": "Savings banks by nation, 1846-1898",
+  "region": "United Kingdom",
+  "unit": "£ million",
+  "unit_long": "£ million due to depositors at the end of the year",
+  "label": "England and Wales",
+  "sources": [
+   "stat_abstract_savings_uk"
+  ],
+  "file": "savings_nation_ew.csv",
+  "default": false,
+  "models": [
+   "savings_nation_sc",
+   "savings_nation_ir"
+  ],
+  "note": "Amount due to depositors in the trustee savings banks (20 November) and, from 1863, the Post Office Savings Bank (31 December), by nation, from the same Statistical Abstract tables (printed by nation to 1898; each row checked against the United Kingdom total). Log axis. In 1846 England and Wales held £27.4 million, Scotland £1.4 million and Ireland £2.9 million; Ireland's deposits fell to £1.2 million in 1849. In 1898 England and Wales held £143.5 million, Scotland £20.1 million and Ireland £9.5 million.",
+  "breaks": [
+   [
+    1863,
+    "From 1863 with the Post Office Savings Bank"
+   ]
+  ],
+  "log": true
+ },
+ {
+  "id": "savings_nation_sc",
+  "theme": "Prosperity and work",
+  "title": "Savings banks: Scotland",
+  "region": "Scotland",
+  "unit": "£ million",
+  "unit_long": "£ million due to depositors at the end of the year",
+  "label": "Scotland",
+  "sources": [
+   "stat_abstract_savings_uk"
+  ],
+  "file": "savings_nation_sc.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "savings_nation_ir",
+  "theme": "Prosperity and work",
+  "title": "Savings banks: Ireland",
+  "region": "Ireland",
+  "unit": "£ million",
+  "unit_long": "£ million due to depositors at the end of the year",
+  "label": "Ireland",
+  "sources": [
+   "stat_abstract_savings_uk"
+  ],
+  "file": "savings_nation_ir.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "savings_accounts_po_uk",
+  "theme": "Prosperity and work",
+  "title": "Savings bank accounts open, 1897-1938",
+  "region": "United Kingdom",
+  "unit": "million accounts",
+  "unit_long": "million accounts open at the end of the year",
+  "label": "Post Office Savings Bank",
+  "sources": [
+   "stat_abstract_savings_uk"
+  ],
+  "file": "savings_accounts_po_uk.csv",
+  "default": false,
+  "models": [
+   "savings_accounts_trustee_uk"
+  ],
+  "note": "Accounts open at the end of each year, from the same tables (printed from No. 59, 1897): 7.24 million in the Post Office Savings Bank and 1.53 million in the trustee banks in 1897, 11.13 million and 2.42 million in 1938. From 1909 the Post Office counts active accounts only (3,491,273 dormant accounts of under £1 untouched for five years in 1909, not distinguished before); No. 83's count from 1924 is lower than No. 70's for the same years (10.67 million against 12.20 million) and leaves out coupon accounts from 1933. The trustee line is the ordinary departments.",
+  "breaks": [
+   [
+    1909,
+    "From 1909 active accounts only (dormant accounts of under £1 untouched for five years left out: 3,491,273 in 1909)"
+   ],
+   [
+    1924,
+    "From 1924 Statistical Abstract No. 83's count of active accounts (No. 70 gives 12,200,013 for 1924)"
+   ],
+   [
+    1933,
+    "From 1933 coupon accounts left out (the coupon system replaced by a stamp savings scheme)"
+   ]
+  ]
+ },
+ {
+  "id": "savings_accounts_trustee_uk",
+  "theme": "Prosperity and work",
+  "title": "Trustee savings bank accounts",
+  "region": "United Kingdom",
+  "unit": "million accounts",
+  "unit_long": "million accounts open at the end of the year",
+  "label": "trustee savings banks",
+  "sources": [
+   "stat_abstract_savings_uk"
+  ],
+  "file": "savings_accounts_trustee_uk.csv",
   "default": false,
   "hidden": true
  }

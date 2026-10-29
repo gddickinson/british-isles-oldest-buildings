@@ -66,8 +66,15 @@ LiDAR and landscape
       the blob store allows CORS range requests); Northern Ireland (OpenDataNI hillshade) refused scripted access;
       Ireland (GSI / Tailte Éireann) not found as a service. Options: browser hillshade from the Scottish DEM tiles, the
       Welsh COG, or tiles prepared once and bundled.
-- [ ] LD2 Grid references everywhere: OS and Irish grid references on every record and on map clicks (copy button);
-      inverse of `bidb/osgrid.py` in the browser.
+- [x] LD2 (2026-10-29) Grid references everywhere: OS or Irish grid reference (10 m) beside the coordinates in every
+      detail view with copy buttons; Map page: grid reference under the pointer, right-click pop-up, grid references in
+      the finder; `static/osgrid.js` mirrors `bidb/osgrid.py`, now both ways. Found on the way: `to_latlon` applied the
+      Helmert shift backwards (every converted reference ~200 m out); fixed, checked against PROJ/OSTN15 (≤ 6 m); tree-ring
+      matches redone (median distance 238 m → 55 m) and two loose matching rules tightened.
+- [ ] LD2b Review and add the 16 buildings `python -m bidb.dendro_add --dry-run` now finds (2026-10-29, after the grid
+      fix): Lime Tree House, Harwell (1243), 40-44 Castlegate, Newark (1330), The Ship Inn, Exeter (1415) and the Raven
+      Hotel, Droitwich (1462), whose timbers had been matched to churches, Stank Hall Barn, Watchbell House, Rye...;
+      check each against its VAG entry as in the first review, then run it without `--dry-run` and `bidb.dendro`.
 - [ ] LD3 Distribution analysis for any filtered set: density (kernel) map, nearest-neighbour statistic, sites within
       a distance of Roman roads, rivers, the coast.
 - [ ] LD4 Intervisibility: what can be seen from a hillfort or cairn (viewshed from the DEM; local GUI).

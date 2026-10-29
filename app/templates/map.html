@@ -4,7 +4,7 @@
 <div class="explore">
   <aside class="explore-panel" id="ex_panel">
     <div class="ex-find">
-      <input id="ex_q" type="search" list="ex_towns" placeholder="Find a town or village…" autocomplete="off">
+      <input id="ex_q" type="search" list="ex_towns" placeholder="Town, village or grid ref…" autocomplete="off">
       <datalist id="ex_towns"></datalist>
       <button id="ex_go" class="btn small" type="button">Go</button>
     </div>
@@ -42,5 +42,6 @@
 <script src="{{ url_for('static', filename='change_layers.js') }}"></script>
 <script src="{{ url_for('static', filename='change_panel.js') }}"></script>
 <script src="{{ url_for('static', filename='sky_map.js') }}"></script>
+<script src="{{ url_for('static', filename='grid_map.js') }}"></script>
 <script src="{{ url_for('static', filename='map_page.js') }}"></script>
 {% endblock %}

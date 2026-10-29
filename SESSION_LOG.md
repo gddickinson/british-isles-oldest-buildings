@@ -2612,3 +2612,27 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   times over the skyline's altitude; map: alignment rays over the skyline.
 - Tests 515 OK (`test_sky_horizon` new); ui_check building_skyline (new), building_orientation, sky OK. App restarted
   on 5050. Hosted copy not updated (sky.json +133 KB).
+
+## 2026-10-29 — Grid references everywhere (LD2); grid conversion fixed (~200 m out)
+- `bidb/osgrid.py` now converts both ways (`to_en`, `from_latlon`, `format_en`) and chooses the grid in use at a point
+  (`for_point`: a coarse outline of Ireland, `in_ireland`; at sea the other grid where the first has no square; none in
+  the Channel Islands). Browser mirror `static/osgrid.js`; `tests/test_osgrid.py` checks both against PROJ (OSTN15,
+  EPSG:27700/29903; pyproj values written into the test) and against each other.
+- Bug found: `to_latlon` applied the Helmert shift the wrong way (the parameters are WGS84 → OSGB36/TM65), so every
+  converted grid reference (VAG tree-ring entries, Welsh place names) was ~200 m out. The old test allowed ±0.01°.
+  Now within 6 m of PROJ. On land the outline agrees with every record's nation but two records with bad data
+  (Templeton Mausoleum's position is in the sea off Co. Down; a "Celtic Park" in Co. Mayo has nation England).
+- Tree-ring matches redone: median distance from the tree-ring entry to the matched record 238 m → 55 m; 40 matches
+  moved to the right record (the Westminster Abbey infirmary had been on Westminster Hall, the Hales Hall barn on the
+  hall...). Two rules tightened after review: a church named only by its saint needs a church word in the entry
+  ("St Mary Cray, 91 High Street", "St Martin's Lane, The Ship Inn" were matched to churches), and a town-and-kind
+  name must not match another named building of the kind ("Holmesfield, Cartledge Hall"); 1,829 entries on 1,061
+  records. Welsh place names: 4,850 records linked (was 4,824).
+- Detail views (buildings and places): "OS grid SU 1428 2950" / "Irish grid O 0074 7272" (10 m) under the coordinates,
+  copy buttons on both. Map page: grid reference under the pointer (bottom left, click to copy), right-click pop-up
+  with both forms, grid references accepted by the finder.
+- Fixed on the way: the Map page assumed a 58 px header; the nav now wraps to two rows, so the map ran ~70 px below
+  the window, hiding its bottom controls (time slider, attribution). Its height now comes from where it starts (`fitExplore`).
+- `bidb.dendro_add --dry-run` now finds 16 buildings to add (roadmap LD2b, not added: to review first).
+- Tests 520 OK; ui_check building_gridref, building_gridref_os, map_gridref (new), building_skyline, sky OK. App
+  restarted on 5050. Hosted copy not updated.

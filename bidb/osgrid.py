@@ -1,7 +1,9 @@
-"""Ordnance Survey (GB) and Irish grid references -> WGS84 latitude/longitude.
+"""Ordnance Survey (GB) and Irish grid references <-> WGS84 latitude/longitude (mirrored in static/osgrid.js).
 
     to_latlon("SP 536 027")        -> (51.72…, -1.22…)   British National Grid (OSGB36, Helmert to WGS84)
     to_latlon("C 799 348", irish=True)                    Irish Grid (TM65)
+    from_latlon(51.1789, -1.8262)  -> "SU 12236 42189"   and back (roadmap LD2)
+    for_point(54.6, -5.9)          -> ("J 34xx 74xx", "Irish")   the grid in use there; None in the Channel Islands
 
 Accuracy a few metres (a seven-parameter Helmert shift; no OSTN15), ample for grid references given
 to 10 or 100 m.
@@ -46,24 +48,37 @@ def parse(ref, irish=False):
     return e0 + int(digits[:half]) * unit + unit / 2, n0 + int(digits[half:]) * unit + unit / 2
 
 
-def _tm_inverse(E, N, p):
+def _arc(lat, p):
+    """Meridional arc from the true origin, scaled by F0."""
     a, b, F0 = p["a"], p["b"], p["F0"]
-    lat0, lon0 = math.radians(p["lat0"]), math.radians(p["lon0"])
-    e2 = 1 - b * b / (a * a)
+    lat0 = math.radians(p["lat0"])
     n = (a - b) / (a + b)
+    return b * F0 * ((1 + n + 5 / 4 * n ** 2 + 5 / 4 * n ** 3) * (lat - lat0)
+                     - (3 * n + 3 * n ** 2 + 21 / 8 * n ** 3) * math.sin(lat - lat0) * math.cos(lat + lat0)
+                     + (15 / 8 * n ** 2 + 15 / 8 * n ** 3) * math.sin(2 * (lat - lat0)) * math.cos(2 * (lat + lat0))
+                     - 35 / 24 * n ** 3 * math.sin(3 * (lat - lat0)) * math.cos(3 * (lat + lat0)))
+
+
+def _radii(lat, p):
+    a, b, F0 = p["a"], p["b"], p["F0"]
+    e2 = 1 - b * b / (a * a)
+    s = math.sin(lat)
+    nu = a * F0 / math.sqrt(1 - e2 * s * s)
+    rho = a * F0 * (1 - e2) / (1 - e2 * s * s) ** 1.5
+    return nu, rho, nu / rho - 1
+
+
+def _tm_inverse(E, N, p):
+    a, F0 = p["a"], p["F0"]
+    lat0, lon0 = math.radians(p["lat0"]), math.radians(p["lon0"])
     lat, M = lat0, 0.0
     while True:
         lat = (N - p["N0"] - M) / (a * F0) + lat
-        M = b * F0 * ((1 + n + 5 / 4 * n ** 2 + 5 / 4 * n ** 3) * (lat - lat0)
-                      - (3 * n + 3 * n ** 2 + 21 / 8 * n ** 3) * math.sin(lat - lat0) * math.cos(lat + lat0)
-                      + (15 / 8 * n ** 2 + 15 / 8 * n ** 3) * math.sin(2 * (lat - lat0)) * math.cos(2 * (lat + lat0))
-                      - 35 / 24 * n ** 3 * math.sin(3 * (lat - lat0)) * math.cos(3 * (lat + lat0)))
+        M = _arc(lat, p)
         if abs(N - p["N0"] - M) < 0.00001:
             break
-    s, c, t = math.sin(lat), math.cos(lat), math.tan(lat)
-    nu = a * F0 / math.sqrt(1 - e2 * s * s)
-    rho = a * F0 * (1 - e2) / (1 - e2 * s * s) ** 1.5
-    eta2 = nu / rho - 1
+    c, t = math.cos(lat), math.tan(lat)
+    nu, rho, eta2 = _radii(lat, p)
     dE = E - p["E0"]
     VII = t / (2 * rho * nu)
     VIII = t / (24 * rho * nu ** 3) * (5 + 3 * t * t + eta2 - 9 * t * t * eta2)
@@ -76,26 +91,53 @@ def _tm_inverse(E, N, p):
             lon0 + X * dE - XI * dE ** 3 + XII * dE ** 5 - XIIA * dE ** 7)
 
 
-def _helmert(lat, lon, p):
-    """Local datum lat/lon (radians) -> WGS84 degrees."""
-    a, b = p["a"], p["b"]
+def _tm_forward(lat, lon, p):
+    """Local datum lat/lon (radians) -> (easting, northing) in metres."""
+    s, c, t = math.sin(lat), math.cos(lat), math.tan(lat)
+    nu, rho, eta2 = _radii(lat, p)
+    dl = lon - math.radians(p["lon0"])
+    I = _arc(lat, p) + p["N0"]
+    II = nu / 2 * s * c
+    III = nu / 24 * s * c ** 3 * (5 - t * t + 9 * eta2)
+    IIIA = nu / 720 * s * c ** 5 * (61 - 58 * t * t + t ** 4)
+    IV = nu * c
+    V = nu / 6 * c ** 3 * (nu / rho - t * t)
+    VI = nu / 120 * c ** 5 * (5 - 18 * t * t + t ** 4 + 14 * eta2 - 58 * t * t * eta2)
+    return (p["E0"] + IV * dl + V * dl ** 3 + VI * dl ** 5,
+            I + II * dl ** 2 + III * dl ** 4 + IIIA * dl ** 6)
+
+
+def _to_cart(lat, lon, a, b):
     e2 = 1 - b * b / (a * a)
     nu = a / math.sqrt(1 - e2 * math.sin(lat) ** 2)
-    x, y, z = (nu * math.cos(lat) * math.cos(lon), nu * math.cos(lat) * math.sin(lon), (1 - e2) * nu * math.sin(lat))
-    tx, ty, tz, s, rx, ry, rz = p["helmert"]
+    return (nu * math.cos(lat) * math.cos(lon), nu * math.cos(lat) * math.sin(lon), (1 - e2) * nu * math.sin(lat))
+
+
+def _shift(xyz, helmert, sign=1):
+    """Seven-parameter Helmert transform, WGS84 -> local datum (the parameters' direction); sign -1: the reverse,
+    by negated parameters."""
+    x, y, z = xyz
+    tx, ty, tz, s, rx, ry, rz = (sign * v for v in helmert)
     s = s * 1e-6
     rx, ry, rz = (math.radians(r / 3600) for r in (rx, ry, rz))
-    x2 = tx + (1 + s) * x - rz * y + ry * z
-    y2 = ty + rz * x + (1 + s) * y - rx * z
-    z2 = tz - ry * x + rx * y + (1 + s) * z
-    a2, b2 = _WGS
-    e22 = 1 - b2 * b2 / (a2 * a2)
-    pp = math.hypot(x2, y2)
-    lat2 = math.atan2(z2, pp * (1 - e22))
+    return (tx + (1 + s) * x - rz * y + ry * z, ty + rz * x + (1 + s) * y - rx * z, tz - ry * x + rx * y + (1 + s) * z)
+
+
+def _from_cart(xyz, a, b):
+    x, y, z = xyz
+    e2 = 1 - b * b / (a * a)
+    pp = math.hypot(x, y)
+    lat = math.atan2(z, pp * (1 - e2))
     for _ in range(10):
-        nu2 = a2 / math.sqrt(1 - e22 * math.sin(lat2) ** 2)
-        lat2 = math.atan2(z2 + e22 * nu2 * math.sin(lat2), pp)
-    return math.degrees(lat2), math.degrees(math.atan2(y2, x2))
+        nu = a / math.sqrt(1 - e2 * math.sin(lat) ** 2)
+        lat = math.atan2(z + e2 * nu * math.sin(lat), pp)
+    return lat, math.atan2(y, x)
+
+
+def _helmert(lat, lon, p):
+    """Local datum lat/lon (radians) -> WGS84 degrees."""
+    lat2, lon2 = _from_cart(_shift(_to_cart(lat, lon, p["a"], p["b"]), p["helmert"], -1), *_WGS)
+    return math.degrees(lat2), math.degrees(lon2)
 
 
 def to_latlon(ref, irish=False):
@@ -105,3 +147,65 @@ def to_latlon(ref, irish=False):
         return None
     p = _IE if irish else _GB
     return _helmert(*_tm_inverse(*en, p), p)
+
+
+def to_en(lat, lon, irish=False):
+    """WGS84 degrees -> (easting, northing) on the national grid, in metres."""
+    p = _IE if irish else _GB
+    local = _from_cart(_shift(_to_cart(math.radians(lat), math.radians(lon), *_WGS), p["helmert"]), p["a"], p["b"])
+    return _tm_forward(*local, p)
+
+
+def _letter(i):
+    return chr(ord("A") + i + (i > 7))           # no I
+
+
+def format_en(E, N, irish=False, digits=10):
+    """(easting, northing) -> "SU 12236 42189" (digits 2-10, truncated as the OS does), or None off the grid."""
+    e100, n100 = int(E // 100000), int(N // 100000)
+    if irish:
+        if not (0 <= e100 < 5 and 0 <= n100 < 5):
+            return None
+        letters = _letter((4 - n100) * 5 + e100)
+    else:
+        if not (0 <= e100 < 7 and 0 <= n100 < 13):
+            return None
+        l1 = (19 - n100) - (19 - n100) % 5 + (e100 + 10) // 5
+        l2 = (19 - n100) * 5 % 25 + e100 % 5
+        letters = _letter(l1) + _letter(l2)
+    half = digits // 2
+    unit = 10 ** (5 - half)
+    e, n = int(E % 100000 // unit), int(N % 100000 // unit)
+    return f"{letters} {e:0{half}d} {n:0{half}d}"
+
+
+def from_latlon(lat, lon, irish=False, digits=10):
+    """WGS84 degrees -> grid reference string, or None off the grid."""
+    return format_en(*to_en(lat, lon, irish), irish, digits)
+
+
+# The island of Ireland, coarsely, with the North Channel and the Irish Sea between it and Kintyre, Galloway,
+# Man and Wales (lon, lat); Rathlin and Inishtrahull inside, Islay and the Smalls outside
+_IRELAND = [(-11.0, 51.2), (-6.1, 51.2), (-6.05, 52.5), (-5.85, 53.3), (-5.3, 54.2), (-5.3, 54.85),
+            (-6.0, 55.2), (-6.05, 55.36), (-7.0, 55.5), (-11.0, 55.5)]
+
+
+def in_ireland(lat, lon):
+    inside, j = False, len(_IRELAND) - 1
+    for i, (x, y) in enumerate(_IRELAND):
+        xj, yj = _IRELAND[j]
+        if (y > lat) != (yj > lat) and lon < (xj - x) * (lat - y) / (yj - y) + x:
+            inside = not inside
+        j = i
+    return inside
+
+
+def for_point(lat, lon, digits=10):
+    """(grid reference, "OS" or "Irish") of the grid in use at a point (at sea off the other grid's squares, that
+    one); None off both (the Channel Islands, abroad)."""
+    irish = in_ireland(lat, lon)
+    for grid in (irish, not irish):
+        ref = from_latlon(lat, lon, grid, digits)
+        if ref:
+            return ref, "Irish" if grid else "OS"
+    return None

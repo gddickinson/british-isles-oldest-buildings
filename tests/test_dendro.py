@@ -12,16 +12,8 @@ def grid(*recs):
     return g
 
 
-class OsGrid(unittest.TestCase):
-    def test_british_and_irish(self):
-        lat, lon = to_latlon("SP 536 027")                 # Littlemore, Oxford
-        self.assertAlmostEqual(lat, 51.72, delta=0.01)
-        self.assertAlmostEqual(lon, -1.22, delta=0.01)
-        lat, lon = to_latlon("C 799 348", irish=True)      # Pottagh, Co. Londonderry
-        self.assertAlmostEqual(lat, 55.15, delta=0.01)
-        self.assertAlmostEqual(lon, -6.74, delta=0.015)
-
-    def test_typos_and_bad_refs(self):
+class OsGridRefs(unittest.TestCase):
+    def test_typos_and_bad_refs(self):                 # the conversion itself: tests/test_osgrid.py
         self.assertIsNotNone(to_latlon("S0 281 554"))      # zero for the letter O
         self.assertIsNone(to_latlon("SP 12345"))
         self.assertIsNone(to_latlon(""))
@@ -47,6 +39,23 @@ class Match(unittest.TestCase):
     def test_other_dedication(self):
         g = grid(("Q4", "St Paul's Church, Bristol", 52.002, -1.0))
         self.assertIsNone(match(self.entry("Bristol, Whitson Street, Church of St James, chancel roof"), g))
+
+    def test_saint_in_a_street_or_place_name(self):
+        g = grid(("Q5", "Church of St Mary", 52.001, -1.0))
+        self.assertIsNone(match(self.entry("Bromley, St Mary Cray, 91 High Street"), g))
+        self.assertIsNone(match(self.entry("Shrewsbury, St Mary's Street, The Old Mansion, Hall Range"), g))
+        self.assertEqual(match(self.entry("Bromley, St Mary Cray, Church of St Mary, nave roof"), g)[0], "Q5")
+        g = grid(("Q6", "St Leonard's Barn", 52.001, -1.0))           # not a church: the saint is its name
+        self.assertEqual(match(self.entry("Beaulieu, St Leonard's Grange, barn"), g)[0], "Q6")
+
+    def test_another_named_building_of_the_kind(self):
+        g = grid(("Q7", "Holmesfield Hall", 52.004, -1.0))
+        self.assertIsNone(match(self.entry("Holmesfield, Cartledge Hall, Barn"), g))
+        g = grid(("Q8", "Windsor Castle", 52.001, -1.0), ("Q9", "Newport Cathedral", 52.0, -1.001),
+                 ("Q10", "Harmondsworth Great Barn", 52.001, -1.001))
+        self.assertEqual(match(self.entry("Windsor, Windsor Castle, Round Tower"), g)[0], "Q8")
+        self.assertEqual(match(self.entry("Newport, St Woolos Cathedral, Nave roof"), g)[0], "Q9")
+        self.assertEqual(match(self.entry("Harmondsworth (Hillingdon), Tithe Barn"), g)[0], "Q10")
 
 
 if __name__ == "__main__":

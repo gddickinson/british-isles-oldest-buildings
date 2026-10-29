@@ -124,7 +124,7 @@ function placeDetailHTML(p) {
         ${p.period && p.period !== "Unknown" ? `<span class="chip">${esc(p.period)}</span>` : ""}</div>
       <dl>${field("Date", p.date_text)}${field("Where", p.locality)}${field("Designation", p.designation)}
         ${field("Source", p.source)}${extra}${mappingMuseumsHTML(ex.mapping_museums)}
-        ${field("Coordinates", p.lat != null ? `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}` : "")}</dl>
+        ${coordsField(p.lat, p.lon)}</dl>
       ${p.building_id ? `<p>Kept in: <a href="${buildingUrl(p.building_id)}" data-open="${esc(p.building_id)}">${esc(p.locality || "the building")}</a></p>` : ""}
       ${keptHereHTML(ex.kept_here)}
       ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}` : ""}

@@ -88,6 +88,13 @@ async function suggest() {
 async function findTown() {
   const q = E$("#ex_q").value.trim().toLowerCase();
   if (!q) return;
+  const ref = GridMap.parse(q);
+  if (ref) {                                    // a grid reference: go there and mark it
+    E$("#ex_status").textContent = "";
+    markFromUrl(`?lat=${ref[0]}&lon=${ref[1]}&mark=${encodeURIComponent(q.toUpperCase())}`);
+    exMap.setView(ref, 16);
+    return;
+  }
   const all = await towns();
   const hit = all.find((t) => t[0].toLowerCase() === q) || all.find((t) => t[0].toLowerCase().startsWith(q));
   if (!hit) { E$("#ex_status").textContent = "Not found"; return; }
@@ -239,6 +246,16 @@ wireChange();
 loadBuildings();
 markFromUrl();
 SkyMap.attach(exMap);
+GridMap.attach(exMap);
+
+// The map fills the window below the header, however many rows the nav wraps to
+function fitExplore() {
+  const box = E$(".explore");
+  box.style.setProperty("--explore-top", box.getBoundingClientRect().top + window.scrollY + "px");
+  exMap.invalidateSize();
+}
+fitExplore();
+window.addEventListener("resize", fitExplore);
 { const y = parseInt(new URLSearchParams(location.search).get("year"), 10); if (!Number.isNaN(y)) exTime.setYear(y); }
 wireTrades();
 

@@ -79,6 +79,22 @@ SAINTS = set("mary peter paul john andrew michael james thomas nicholas margaret
              "martin bartholomew leonard botolph edmund luke mark matthew stephen catherine baptist evangelist".split())
 
 
+DESCRIBING = {"tithe", "aisled", "cruck", "medieval", "timber", "stone", "brick", "moated", "fortified", "bishop",
+              "bishops", "abbot", "abbots", "royal", "guild"}
+CHURCH_WORDS = {"church", "chapel", "minster", "abbey", "priory", "cathedral", "chantry", "kirk", "saints", "bellframe",
+                "belfry", "nave", "chancel", "aisle", "spire", "transept"}
+
+
+def _named_kind(text, kinds, own_words):
+    """True when the entry names its kind of building with another name before it ("Holmesfield, Cartledge Hall";
+    not the record's own words, a saint's, a describing or a generic word: "Windsor Castle", "St Woolos Cathedral",
+    "Tithe Barn")."""
+    words = _words(text)
+    return any(w in kinds and i and len(words[i - 1]) > 2
+               and words[i - 1] not in GENERIC | SAINTS | DESCRIBING | own_words
+               and (i < 2 or words[i - 2] not in ("st", "saint")) for i, w in enumerate(words))
+
+
 def _words(text):
     text = re.sub(r"\b\w+ (?:street|road|lane|place|close|gate|row|square|walk)\b", " ", (text or "").lower())
     return re.findall(r"[a-z]+", text.replace("'s", ""))
@@ -101,8 +117,9 @@ def match(entry, grid):
     """(record id, metres) of the catalogue building this entry describes, or None.
 
     Either every distinctive word of the record's name that is not the town's is in the entry (within 1.5 km;
-    300 m for a church named only by its saint), or the name is the town and a kind of building ("Lincoln
-    Cathedral") and the entry names that kind outside its town part (within 600 m)."""
+    300 m for a church named only by its saint, and then the entry must name a church: "St Mary Cray, 91 High Street" is
+    a house), or the name is the town and a kind of building ("Lincoln Cathedral") and the entry names that kind
+    outside its town part, not as another named one ("Holmesfield, Cartledge Hall"; within 600 m)."""
     loc = tokens(entry["location"])
     parts = entry["location"].split(",", 1)
     town = tokens(parts[0]) if len(parts) > 1 else set()
@@ -117,12 +134,14 @@ def match(entry, grid):
                     continue
                 own = tok - town
                 if own and own <= loc:
-                    if own <= SAINTS and km > 0.3:
+                    if own <= SAINTS and (km > 0.3 or (set(_words(name)) & CHURCH_WORDS
+                                                       and not rest_words & CHURCH_WORDS)):
                         continue
                     score = (2, len(own), -km)
                 else:
                     kinds = set(_words(name)) & KIND_WORDS
-                    if own or not (tok & town) or not kinds or not kinds <= rest_words or km > 0.6:
+                    if own or not (tok & town) or not kinds or not kinds <= rest_words or km > 0.6 \
+                            or _named_kind(parts[-1], kinds, set(_words(name))):
                         continue
                     score = (1, len(tok & loc), -km)
                 if best is None or score > best[0]:

@@ -82,6 +82,18 @@ function field(label, value) {
   return `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`;
 }
 
+// Coordinates and the OS or Irish grid reference (to 10 m), each with a copy button (roadmap LD2)
+function coordsHTML(lat, lon) {
+  const ll = `${lat.toFixed(5)}, ${lon.toFixed(5)}`, g = typeof OSGrid !== "undefined" && OSGrid.forPoint(lat, lon, 8);
+  const copy = (text) => `<button class="copy-btn" type="button" data-copy="${esc(text)}" title="Copy" aria-label="Copy ${esc(text)}">⧉</button>`;
+  return `${esc(ll)} ${copy(ll)}` + (g ? `<br><span title="${g.grid === "OS" ? "Ordnance Survey National Grid" : "Irish Grid"}, to 10 m">${g.grid} grid ${esc(g.ref)}</span> ${copy(g.ref)}` : "");
+}
+const coordsField = (lat, lon) => (lat != null ? `<dt>Coordinates</dt><dd>${coordsHTML(lat, lon)}</dd>` : "");
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-copy]");
+  if (b) { e.preventDefault(); copyText(b.dataset.copy, b, "✓"); }
+});
+
 function link(label, url) {
   return url ? `<a class="ext" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>` : "";
 }
@@ -154,7 +166,7 @@ function renderDetail(b, inModal) {
         ${field("Address", address)}
         ${field("Administrative area", b.located_in)}
         ${field("County / district", [b.county, b.district].filter((v, i, a) => v && a.indexOf(v) === i).join(" / "))}
-        ${field("Coordinates", b.lat != null ? `${b.lat.toFixed(5)}, ${b.lon.toFixed(5)}` : "")}
+        ${coordsField(b.lat, b.lon)}
         ${field("Type (Wikidata)", b.classes)}
         ${field("Heritage designations", b.designations)}
         ${field("NHLE list entry", b.nhle_id)}

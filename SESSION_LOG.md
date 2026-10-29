@@ -2513,3 +2513,9 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Marble: sentences about murals, recreations and reconstruction drawings are skipped (`skip_sentence`); material_map
   rerun: 8,875 records, 2,621 places, 28,320 links; marble's earliest example Canterbury Cathedral.
 - Tests 486 OK (`test_type_map` not_types, `test_date_corrections_places` new).
+
+## 2026-10-28 — The seven date-check conflicts reviewed
+- Ston Easton church, Bradeston, Sheffield Cathedral and Ormesby Hall corrected from their list descriptions
+  (`date_corrections.json`, 212 entries); Antony, Hart and Woodchester kept (`date_confirmations.json`, reasons).
+  `python -m bidb.date_corrections`: conflicts 7 → 0, reviewed 262. Table in `docs/date_review.md`.
+- Emergent: Wikidata's NHLE id for Ormesby Hall is the stable block's.

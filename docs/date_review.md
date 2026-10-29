@@ -147,3 +147,19 @@ Not yet fixed in the data (they come from Wikidata or the registers; best correc
   Perry Dale and White Rake include later round barrows; Weetwood Moor and Achnabreck are rock art, not buildings.
 - Garn Coch (Q20597409) is a round cairn, probably Bronze Age (open); Buzza Hill is a Scillonian entrance grave.
 - Manor of Old Fishbourne (Q-record "Manor of Old Fishbourne") is a manorial title, not a building.
+
+## Third review (2026-10-28): the seven conflicts found after the 2026-10-26 date-mining fixes → 0
+Each checked against the official list description (British Listed Buildings' reproduction of the Historic England
+entry) and the article body.
+
+| Record | Catalogue | Other date | Verdict | Evidence |
+|---|---|---|---|---|
+| Church of St Mary the Virgin, Ston Easton | 15th century | 11th century | corrected → 11th century | list: "C11, C15, much rebuilt C19 by Blomfield."; "Norman chancel arch" |
+| Church of St Michael, Bradeston | 1440 | 13th century | corrected → 13th century | list: "C13 lancet in north wall"; tower "built 1440-1480" |
+| Sheffield Cathedral | 15th century | c. 1200 | corrected → c. 1430 | list: "Crossing tower, spire, chancel and chancel chapels c1430."; article: the 1280 church "mostly demolished and rebuilt about 1430" (the intro's c. 1200 has no support) |
+| Ormesby Hall | 1754 | c. 1600 | corrected → c. 1600 | list (entry 1311002): "Manor house, c.1600 … Largely rebuilt mid/late C18 to form service wing of Ormesby Hall : 1730/45" |
+| Church of St James, Antony | 1259 | 12th century | kept | list: "rededicated in 1259"; oldest fabric "the C13 phase of building" |
+| Church of St Mary Magdalene, Hart | 675 | 12th century | kept | list: "having Anglo Saxon nave, C12 north arcade, chancel arch and tower" |
+| Woodchester Roman Villa | 2nd century | c. AD 325 | kept | article: "occupied between the early 2nd and late 4th centuries AD" |
+
+`bidb.listings` matched Ormesby Hall to its stable block (entry 1139662); the hall's own entry is 1311002.

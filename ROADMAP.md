@@ -907,11 +907,13 @@ the descent of a type is disputed, both views are given and the link is drawn as
       Churchill Barriers' lengths...), each reviewed; 25 dates the miner still gets wrong (the article's earliest
       date is of something else) added to `date_corrections.json` with quotes (206 entries; St Seachnall's undated,
       `year_start: null`). Timeline table rebuilt (45,805 events).
-- [ ] Seven new date-check conflicts (emergent 2026-10-26, from the fix above: the check now reads "Grade I listed
-      ... dating from the 11th century" and "c. 1600" introductions): Sheffield Cathedral (c. 1200 vs 15th century),
-      Woodchester Roman Villa (c. AD 325 vs 2nd century), St Mary Magdalene (675 vs 12th century), St James Antony
-      (1259 vs 12th century), St Michael (1440 vs 13th century), Ston Easton (11th vs 15th century), Ormesby Hall
-      (c. 1600 vs 1754): review with the 69 in `docs/date_review.md`.
+- [x] Seven new date-check conflicts (emergent 2026-10-26, reviewed 2026-10-28; `docs/date_review.md`, third review):
+      against the list descriptions and article bodies, four corrected (Ston Easton church 11th century, Bradeston
+      13th century, Sheffield Cathedral c. 1430, Ormesby Hall c. 1600 from its own entry 1311002, not the stable
+      block's 1139662 that `bidb.listings` matched) and three kept (Antony 1259, Hart 675, Woodchester 2nd century).
+      Conflicts 7 → 0; 262 reviewed.
+- [ ] `bidb.listings` takes Ormesby Hall's list entry from Wikidata, which points at the stable block (found
+      2026-10-28): check how many records' NHLE ids are those of an outbuilding.
 - [x] Clackmannan Tower (emergent 2026-10-26, seen in BT5's spread chart; fixed 2026-10-26): year 1301 with the date
       text "Late 14th century". `dates.parse_text_year` (Wikipedia list dates, hoards, research claims) ignored
       qualifiers; it now reads them as the text miner does (`dates.century_start`, shared: mid +33, late or second
@@ -972,7 +974,7 @@ the descent of a type is disputed, both views are given and the link is drawn as
       murals, recreations, artist's impressions and reconstruction drawings, from any source. Earliest now Canterbury
       Cathedral (Purbeck marble shafting; dated by the founding, the known later-phase limit); records linked to
       materials 8,879 → 8,875.
-- [ ] Hopton Wood stone has no examples (found 2026-10-26); and Hopton Wood stone has no examples (its P186 items are memorials of skipped kinds). Greensand,
+- [ ] Hopton Wood stone has no examples (found 2026-10-26; its P186 items are memorials of skipped kinds). Greensand,
       ironstone, lias, Bargate stone, Pennant sandstone and Collyweston still have no entry (P186 and text mentions).
 - [x] BT3c Materials on the detail views and type pages (with BT4); a material's region drawn over the geology
       layer. Split 2026-10-26: BT3c1 (materials on the detail views, the type pages and a material page of their

@@ -5617,5 +5617,106 @@
   "file": "savings_accounts_trustee_uk.csv",
   "default": false,
   "hidden": true
+ },
+ {
+  "id": "ie_patents_applications",
+  "theme": "Prosperity and work",
+  "title": "Patents in Ireland, 2000-2025",
+  "region": "Ireland (the state)",
+  "unit": "patents",
+  "unit_long": "national patent applications received in the year",
+  "label": "Applications (Irish Office)",
+  "sources": [
+   "ipoi_annual_reports"
+  ],
+  "file": "ie_patents_applications.csv",
+  "default": false,
+  "models": [
+   "ie_patents_granted",
+   "ie_patents_state"
+  ],
+  "note": "National patent applications received and patents granted each year by the Patents Office in Kilkenny (\"In December 2019, the Patents Office changed its name to the 'Intellectual Property Office of Ireland'\", 2019 report), with the applications from applicants in the State, from the Office's annual reports 2002-2025 (each prints its year and the two before; the latest report is kept where they differ). Ireland joined the European Patent Convention in 1992, and \"there was a drop in the annual volume of patent applications being filed at the Office. The number of applications being received appears to have stabilised at around 25% of the pre - 1992 level\" (2002 report); applications fell from 1,169 in 2001 to 206 in 2022, and those from the State from 1,019 to 153 in 2024. In 22 of the 25 years more than half of the applications were for short-term patents (see the graph by term). The rises from 2023 are \"due to a significant rise in applications received from China\" (2023 report): 774 applications in 2024, 153 of them from the State. No counts are drawn before 2000: the Controller's reports since the Office opened under the Industrial and Commercial Property (Protection) Act 1927 (the 2002 report is the seventy-fifth) are not online. Figures cited from the reports (all rights reserved)."
+ },
+ {
+  "id": "ie_patents_granted",
+  "theme": "Prosperity and work",
+  "title": "Patents granted by the Irish Office",
+  "region": "Ireland (the state)",
+  "unit": "patents",
+  "unit_long": "patents granted by the Office in the year",
+  "label": "Granted (Irish Office)",
+  "sources": [
+   "ipoi_annual_reports"
+  ],
+  "file": "ie_patents_granted.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "ie_patents_state",
+  "theme": "Prosperity and work",
+  "title": "Patent applications from the State",
+  "region": "Ireland (the state)",
+  "unit": "patents",
+  "unit_long": "national patent applications from applicants in the State",
+  "label": "Applications from the State",
+  "sources": [
+   "ipoi_annual_reports"
+  ],
+  "file": "ie_patents_state.csv",
+  "default": false,
+  "hidden": true
+ },
+ {
+  "id": "ie_patents_ep",
+  "theme": "Prosperity and work",
+  "title": "Patents with effect in Ireland, 2001-2025",
+  "region": "Ireland (the state)",
+  "unit": "patents",
+  "unit_long": "European patents granted by the EPO with effect in Ireland",
+  "label": "European patents for Ireland (EPO)",
+  "sources": [
+   "ipoi_annual_reports"
+  ],
+  "file": "ie_patents_ep.csv",
+  "default": false,
+  "models": [
+   "ie_patents_granted"
+  ],
+  "note": "European patents granted by the European Patent Office that take effect in Ireland, against the patents granted by the Irish Office (annual reports 2002-2025), on a scale of powers of ten: \"They have the same legal status in Ireland as if they had been granted by my Office\" (Controller's report 2002). They were 7,922 in 2001 and 135,374 at their height in 2019; in 2025 the Office granted 110 patents against 119,552 European ones. Three reports print a slightly different figure in the text than in their table (2010, 2019, 2024); the table's is drawn.",
+  "log": true
+ },
+ {
+  "id": "ie_patents_short",
+  "theme": "Prosperity and work",
+  "title": "Irish patent applications by term, 2001-2025",
+  "region": "Ireland (the state)",
+  "unit": "patents",
+  "unit_long": "short-term patent applications received in the year",
+  "label": "Short term (10 years)",
+  "sources": [
+   "ipoi_annual_reports"
+  ],
+  "file": "ie_patents_short.csv",
+  "default": false,
+  "models": [
+   "ie_patents_full"
+  ],
+  "note": "National patent applications to the Irish Office by term: full-term patents (20 years) and short-term patents (10 years) \"under Part II of the 1992 Act, which came into force on 1 August 1992\" (2002 report). Short-term applications were 648 of 1,169 in 2001 and 642 of 774 in 2024; full-term applications fell from 521 in 2001 to 89 in 2022. The 2018 report gives no reason for that year's 533 short-term applications (from 131 in 2017); the rise of 2023 was \"due to a significant rise in applications received from China\" (2023 report). Of the patents granted, 461 of 617 were short-term in 2002 and 64 of 110 in 2025."
+ },
+ {
+  "id": "ie_patents_full",
+  "theme": "Prosperity and work",
+  "title": "Full-term patent applications",
+  "region": "Ireland (the state)",
+  "unit": "patents",
+  "unit_long": "full-term patent applications received in the year",
+  "label": "Full term (20 years)",
+  "sources": [
+   "ipoi_annual_reports"
+  ],
+  "file": "ie_patents_full.csv",
+  "default": false,
+  "hidden": true
  }
 ]

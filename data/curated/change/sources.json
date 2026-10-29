@@ -1376,5 +1376,17 @@
   "licence_quote": "Crown copyright in published works lasts for 50 years from the end of the year in which they were first published.",
   "used": "Savings banks 1939-1975 (data/curated/change/data/savings_banks_annual_uk.csv, 2,728 printed figures, one row per edition, item and year; bidb.change_savings_post, roadmap C5e2b2b2b3b2b): amount remaining invested at 31 March in the Post Office Savings Bank (National Savings Bank from 1969) ordinary accounts and the trustee savings banks' ordinary and special investment departments (together to 1948), each year from the latest edition; the other national savings in the CSV for the checks",
   "checked": "2026-10-28, page images read by eye, no OCR used: every printed total against its parts (receipts, repayments, amounts remaining invested), each savings bank's amount against the year before and the year's receipts, interest and repayments (within £1 million but the Eire banks in 1942, Service release benefits 1946-1949 and eight unexplained years), the savings-bank figures of every overlapping edition equal but twenty revisions, mostly the last year of an edition"
+ },
+ "ipoi_annual_reports": {
+  "short": "IPOI annual reports 2002-2025",
+  "publisher": "Intellectual Property Office of Ireland (the Patents Office to 2018)",
+  "citation": "Controller of Patents, Designs and Trade Marks, Annual Report 2002 (the seventy-fifth) to 2018 (Patents Office), and Intellectual Property Office of Ireland, Annual Report 2019-2025 (Kilkenny): patent applications and grants, applications from the State, patents granted having effect in the State",
+  "url": "https://ipoi.gov.ie/en/about-us/ipoi-publications/annual-reports/",
+  "download_url": "https://ipoi.gov.ie/media/4u0bvylu/annual-report-2024.pdf",
+  "licence": "All rights reserved (IPOI); figures cited as facts, one per row with report and page",
+  "licence_url": "https://ipoi.gov.ie/en/copyright/",
+  "licence_quote": "All rights, including copyright, in the content and design of these web pages are owned or controlled for these purposes by the Intellectual Property Office of Ireland.",
+  "used": "National patent applications (full and short term) and grants 2000-2025, applications from the State 2001-2025, European patents granted with effect in Ireland 2001-2025 (data/curated/change/data/patents_ipoi_reports_ie.csv, roadmap C5e2b2b2c)",
+  "checked": "2026-10-28, the 24 English reports downloaded (HTTP 200)"
  }
 }

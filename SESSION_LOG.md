@@ -2389,3 +2389,32 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   before the build.
 - Tests 465 OK (`test_change_savings`: 5 new, `test_change_clearing`: credit clearing); ui_check change_savings (updated),
   change_clearing (updated), trades OK; graphs checked in a screenshot of /trades?t=banking. Hosted copy not updated.
+
+## 2026-10-28 — C5e2b2b2c: patents in Ireland 2000-2025 from the IPOI annual reports
+- Sources checked first: the IPOI's copyright page reserves all rights (no reuse licence), so the figures are cited one
+  by one as facts, like the Letters gazetteer; WIPO's IP Statistics Data Center says "users agree not to republish ...
+  WIPO's statistical datasets" (not used); the CSO's PxStat (CC BY 4.0, including the CEPH tables from the old Statistical
+  Abstracts of Ireland) and the Statistical Yearbook 2010 have no patent tables; the Internet Archive has neither the
+  Controller's reports nor the Statistical Abstract of Ireland. So nothing before 2000 (new open item C5e2b2b2c2).
+- New `bidb/change_patents_ie.py`: the 24 English annual reports 2002-2025 (Patents Office to 2018, "In December 2019,
+  the Patents Office changed its name to the 'Intellectual Property Office of Ireland'"), born-digital PDFs read from their
+  text layer → `data/curated/change/data/patents_ipoi_reports_ie.csv` (511 printed figures, one per row: report, PDF page,
+  year, measure, table or text). Each report's three-year table (applications and grants, full 20-year and short 10-year
+  term; the 2002 report totals only, from 2000), the applications from the State, the European patents granted with
+  effect in Ireland (table from 2007, sentence before). The bilingual 2004-2006 State counts and the 2010 sentence
+  (ligatures in the text) were added by hand from the pages; a 2025 table cell read wrongly by the first pass (895, the
+  State's share) and the 2002 chart's axis labels were taken out.
+- Checks (`check`, all pass): every total equals its full- and short-term parts; every figure printed twice equal but
+  eight (`KNOWN`): State applications 2014 (263 → 262), 2015 (289 in its own report, 250 in the next and in the 2015
+  report's chart) and 2017 (182 → 183); European patents in the text unlike the table in 2010 (39,538/39,539), 2019
+  (135,313/135,374) and 2024 (109,371/109,390); the 2014 report's Irish-language page swaps the full- and short-term grants.
+  Each year from the latest report, a table before a sentence.
+- Graphs (theme Prosperity and work, region Ireland (the state)): "Patents in Ireland, 2000-2025" (applications, grants,
+  applications from the State: 1,169 applications in 2001, 206 in 2022, 774 in 2024 "due to a significant rise in
+  applications received from China"; the 2002 report's "around 25% of the pre - 1992 level" quoted), "Patents with effect
+  in Ireland, 2001-2025" (log axis: 7,922 European patents in 2001, 135,374 in 2019, 119,552 in 2025 against the Office's
+  110) and "Irish patent applications by term, 2001-2025" (short term more than half in 22 of 25 years; 533 in 2018, no
+  reason given in that report). Ids `ie_patents_*` (change_patents.write drops every `patents_*` row). Source
+  `ipoi_annual_reports` (136 sources), DATA_LICENSE.md row, trade sources entry updated; 317 series.
+- Tests 470 OK (`test_change_patents_ie`, 5 new); ui_check change_patents_ie (new), change_clearing OK; the three graphs
+  checked in a screenshot of /change. Hosted copy not updated.

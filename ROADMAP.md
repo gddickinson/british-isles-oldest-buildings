@@ -4,12 +4,12 @@ Future work for British Isles Oldest Buildings, kept between sessions. Newest de
 each section; tick items off (and move them to SESSION_LOG.md) when done. Sections with every item done
 are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 
-## Status (2026-10-27)
+## Status (2026-10-28)
 - Dates: 156 text-mined catalogue dates corrected (quantities, road numbers, scanned register text; `bidb.date_recheck`), 207 reviewed date corrections.
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b; BT6b: plans of real examples on type pages; BT6c1: labelled diagrams of 22 types); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
-- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 307
-  series, 76 events, 23 map layers, 19 notes, 134 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+- Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 317
+  series, 76 events, 23 map layers, 19 notes, 136 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -646,7 +646,21 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       log axis) and "London credit clearing, 1961-1974" (breaks 1970, mergers, and 1971, BACS transfers left out, both
       quoted from the footnotes of Nos. 111-112), in the banking trade story. No account counts after 1938 (not in these
       tables); the other national savings (certificates, bonds, SAYE) are in the CSV for the checks, not drawn.
-- [ ] C5e2b2b2c Patents in Ireland (IPOI annual reports 2002-, quote figures) and 1916-94 grants.
+- [x] C5e2b2b2c (2026-10-28) Patents in Ireland 2000-2025 (new `bidb/change_patents_ie.py`): every English annual report of
+      the Patents Office / IPOI 2002-2025 (24 PDFs, born-digital, read from their text) → `patents_ipoi_reports_ie.csv`
+      (511 printed figures, one per row with report, PDF page and table or text): national applications and grants
+      (full and short term, each report its year and the two before), applications from the State, European patents
+      granted with effect in Ireland. Checks: every total against its parts, every figure printed twice equal but eight
+      (`KNOWN`: three State counts revised by the next report, the 2015 report's 289 against its own chart's 250; three
+      text figures unlike their table; the 2014 report's Irish-language page swapping the grant columns), every year
+      present. Graphs "Patents in Ireland, 2000-2025" (1,169 applications in 2001, 206 in 2022; 774 in 2024 with the
+      applications from China), "Patents with effect in Ireland, 2001-2025" (log axis: 7,922 European patents in 2001,
+      135,374 in 2019, against the Office's 110 in 2025) and "Irish patent applications by term, 2001-2025". The site
+      reserves all rights: figures cited one by one (source `ipoi_annual_reports`).
+- [ ] C5e2b2b2c2 Patents in Ireland 1927-1999 (blocked, checked 2026-10-28): the Controller's annual reports since 1928
+      are not online (Internet Archive: none), the Statistical Abstract of Ireland's patent tables are not in the CSO's
+      CEPH tables (PxStat has none on patents), and WIPO's statistics (1980-) may not be republished. Needs scans of the
+      reports or abstracts (National Library of Ireland), or WIPO's leave.
 - [x] C6 (2026-10-25) Innovations: 36 inventions, discoveries and firsts made in the isles, 1701-1996
       (`data/curated/trade/innovations.json`, list `innovations` of bidb.oldest_lists, seven categories: power and
       engines, iron and materials, textiles, transport, communication and computing, science and medicine, farming,

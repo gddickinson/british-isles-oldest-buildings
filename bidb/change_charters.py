@@ -6,7 +6,13 @@ and the sources from which our text is derived", England and Wales, Scotland and
 (Internet Archive britishboroughch00balluoft, leaves 32-39) into `charters_ballard_1913.csv`, one printed row per line
 ("Do." written out; "(2)" after a date is two charters; the sources column left out: the page is the citation).
 Names "mentioned in Domesday Book are printed in capitals, and of those founded by mesne lords in italics" (column
-`style`). Charters in the book's appendix and the undated Leges Quattuor Burgorum are not in the table.
+`style`). The undated Leges Quattuor Burgorum is not in the table.
+
+The book's appendix of "Additional Charters" (C7b3; p. 250, leaf 404; "Some additional Charters will be found in the
+Appendix", p. xxxiii n. 1), eight charters not in the table, is read the same way into `charters_ballard_1913_appendix.csv` and counts with the first volume. It prints Hartlepool
+in italics (the table, roman) and Christchurch in italic capitals (a Domesday borough with a lord; kept as italics, as
+the 1923 table prints it), so a borough's one typeface is checked per printed table. The Addenda on pp. 255-259 add
+texts to charters already in the table (Newcastle-on-Tyne, Tewkesbury) and reject John's Waterford charter.
 
 The second volume (C7b2): Adolphus Ballard and James Tait, British Borough Charters 1216-1307 (Cambridge, 1923;
 public domain, Tait d. 1944), Introduction section 3, "Sources", pp. xxv-xxxvi, read the same way from the page images
@@ -17,6 +23,10 @@ Henry III; the sources cited are of those reigns). Rows with no grantor printed 
 York 1256-67), the borough's own grants and the Totnes composition are kind `other`, counted but not drawn. Two
 charters of the first volume are printed again with new dates (`REDATED`: Barnard Castle, Hugh de Balliol; Rathmore,
 Maurice fitz Gerald) and count once, at the 1923 date; the footnote on Oxford University "1301 (b)": "Should be 1305".
+Rathcool, printed as in co. Tipperary, is the archbishop of Dublin's borough of Rathcoole, co. Dublin: its charter
+1228-56 (a) grants the burgesses "de Radcull" common "in monte de Slescoll" with the men of Nova Villa for four
+shillings a year, the grant Lewis (Topographical Dictionary of Ireland, 1837, "Rathcoole") quotes there as "Lucas,
+Archbishop of Dublin, grants to the burgesses of Radcull common of pasture and turbary in the mountain of Slescol".
 
 - `check`: every date read, ranges in order and within 1040-1320, one style per borough in each volume, every borough
   placed (but `UNPLACED`).
@@ -40,10 +50,10 @@ from .config import ROOT
 
 FILE = DATA / "charters_ballard_1913.csv"
 FILE_1923 = DATA / "charters_ballard_tait_1923.csv"
+APPENDIX = DATA / "charters_ballard_1913_appendix.csv"   # vol. 1, p. 250: additional charters
 REDATED = {("Barnard Castle", "Hugh de Balliol"), ("Rathmore", "Maurice fitz Gerald")}   # vol. 1 rows printed again
 FOOTNOTES = {("Oxford (University)", "1301 (b)"): 1305}                 # p. xxxii n. 1: "Should be 1305"
-UNPLACED = {"Rathcool": "printed as in co. Tipperary; no place of the name found there",
-            "Cinque Ports": "the confederation of ports, not one town (Hythe and Lydd have their own rows)"}
+UNPLACED = {"Cinque Ports": "the confederation of ports, not one town (Hythe and Lydd have their own rows)"}
 TOWNS = ROOT / "app" / "static" / "data" / "basemap" / "towns.json"
 STYLES = {"capitals": "Domesday borough (capitals)", "italics": "Founded by a lesser lord (italics)",
           "roman": "Other borough"}
@@ -62,7 +72,8 @@ PLACES = {"Appleby": "Appleby-in-Westmorland", "Bridgenorth": "Bridgnorth", "Bri
           "Lyme": "Lyme Regis", "Melcombe": "Melcombe Regis", "Nether Weare": "Lower Weare", "Windsor, New": "Windsor",
           "Wycombe": "High Wycombe", "Fraunceville (Newtown)": "Newtown (I. of W.)", "Agardsley": "Newborough (Staffs.)",
           "Skynburgh": "Skinburness", "Wavermouth": "Skinburness", "Westcheap": "Pontefract", "Aberavon": "Port Talbot",
-          "Kilmaclenine": "Kilmaclenine Cross Roads", "Salisbury (Old)": "Salisbury", "Salisbury (New)": "Salisbury"}
+          "Kilmaclenine": "Kilmaclenine Cross Roads", "Salisbury (Old)": "Salisbury", "Salisbury (New)": "Salisbury",
+          "Rathcool": "Rathcoole", "York (Weavers)": "York"}
 POINTS = {"Hythe": (51.0715, 1.0842), "Kells (Meath)": (53.7264, -6.8792), "Kells (Kilkenny)": (52.5411, -7.2731),
           "Newport (Salop)": (52.7668, -2.3773), "Rathmore": (53.2172, -6.5644), "Richmond": (54.4036, -1.7343),
           "Bere (Merioneth)": (52.6597, -3.9017), "Bridgeton Pomeroy": (50.4320, -3.6800), "Burford (Salop)": (52.3110, -2.5940),
@@ -119,13 +130,16 @@ def load_volume(path, volume):
             # vol. 1: "can be dated before the death of King John"; vol. 2 runs from 1216 to the end of Edward I's reign
             r["year"] = min(mid, 1216) if volume == 1 else max(mid, 1216)
             r["volume"], r["kind"], r["place"] = volume, kind(r["grantor"]), place(r["borough"])
+            r["table"] = path.stem
             rows.append(r)
     return rows
 
 
-def load(path=FILE, path_1923=FILE_1923):
-    """Both volumes' rows, without the first volume's charters printed again in the second (`REDATED`)."""
-    return ([r for r in load_volume(path, 1) if (r["borough"], r["grantor"]) not in REDATED]
+def load(path=FILE, path_1923=FILE_1923, appendix=APPENDIX):
+    """Both volumes' rows (the first with its appendix), without the first volume's charters printed again in the
+    second (`REDATED`)."""
+    v1 = load_volume(path, 1) + (load_volume(appendix, 1) if appendix else [])
+    return ([r for r in v1 if (r["borough"], r["grantor"]) not in REDATED]
             + (load_volume(path_1923, 2) if path_1923 else []))
 
 
@@ -147,12 +161,12 @@ def check(rows=None, t=None):
            if not 1040 <= r["first"] <= r["last"] <= 1320]
     styles = defaultdict(set)
     for r in rows:
-        styles[r.get("volume", 1), r["borough"]].add(r["style"])
+        styles[r.get("table", r.get("volume", 1)), r["borough"]].add(r["style"])
     bad += [f"{b}: printed in {sorted(s)}" for (_, b), s in styles.items() if len(s) > 1 or not s <= set(STYLES)]
     bad += [f"{r['borough']}: no place for {r['place']!r}" for r in rows
             if not point(r["place"], t) and r["place"] not in UNPLACED]
     total = sum(r["count"] for r in rows if r.get("volume", 1) == 1)
-    if not 300 <= total <= 340:                     # preface: "about 330 charters and documents"
+    if not 300 <= total <= 340:                     # preface: "about 330 charters and documents" (with the appendix)
         bad.append(f"{total} charters, the preface says about 330")
     return bad
 
@@ -198,7 +212,7 @@ def facts(rows=None):
 
 NOTE = ("The charters and other documents granted to the boroughs of the isles from Edward the Confessor to the end of "
         "Edward I's reign, from the tables of sources in British Borough Charters: {v1} to 1216 in Adolphus Ballard's "
-        "first volume (1913, pp. xxvi-xxxiii) and {v2} from 1216 to 1307 in the second, which James Tait finished "
+        "first volume (1913, pp. xxvi-xxxiii, and the additional charters of its appendix, p. 250) and {v2} from 1216 to 1307 in the second, which James Tait finished "
         "after Ballard's death (1923, pp. xxv-xxxvi): {charters} charters to {boroughs} towns (sokens, gilds and the "
         "universities of Oxford and Cambridge counted with their town). Each charter is at the decade of the middle "
         "of its dated range, kept within its volume's years; {wide} are dated only within more than twenty years, so "
@@ -247,12 +261,13 @@ def layer(rows=None):
                     "middle of the dated range of their earliest one: "
                     f"{by[STYLES['capitals']]} mentioned as boroughs in Domesday Book, {by[STYLES['italics']]} founded "
                     "by lesser lords, as the tables print them. A town appears with its earliest charter in the "
-                    "tables, not when it became a town or a borough. The charters to the Cinque Ports as a body, and "
-                    "Rathcool's (printed as in county Tipperary), are not placed.",
+                    "tables, not when it became a town or a borough. The charters to the Cinque Ports as a body are not "
+                    "placed; Rathcool, printed as in county Tipperary, is the archbishop of Dublin's Rathcoole in "
+                    "county Dublin (Lewis 1837 quotes the same grant there).",
             "sources": [{"short": "Ballard 1913", "licence": "Public domain (1913)",
                          "url": "https://archive.org/details/britishboroughch00balluoft",
                          "citation": "Adolphus Ballard, British Borough Charters 1042-1216 (Cambridge University Press, "
-                                     "1913), Introduction section 4, Sources, pp. xxvi-xxxiii"},
+                                     "1913), Introduction section 4, Sources, pp. xxvi-xxxiii; Appendix, Additional Charters, p. 250"},
                         {"short": "Ballard and Tait 1923", "licence": "Public domain (authors died 1915 and 1944)",
                          "url": "https://archive.org/details/britishboroughc00balluoft",
                          "citation": "Adolphus Ballard and James Tait, British Borough Charters 1216-1307 (Cambridge "

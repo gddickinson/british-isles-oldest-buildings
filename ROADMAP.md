@@ -693,7 +693,7 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       Shown with the other events on "Change over time" (theme Prosperity and work).
 - [x] C7b Borough charters and guild charters beyond London as events or places (Wikidata "town charter" dates are
       sparse; the guilds list of C3b holds the oldest guilds already). Split 2026-10-28: C7b1 Ballard 1913, C7b2
-      Ballard and Tait 1923 (both done); the 1913 appendix is C7b3.
+      Ballard and Tait 1923, C7b3 the 1913 appendix (all done).
 - [x] C7b1 (2026-10-28) Borough charters 1042-1216 (new `bidb/change_charters.py`): the table of sources of Adolphus
       Ballard's British Borough Charters 1042-1216 (1913, public domain; Introduction section 4, pp. xxvi-xxxiii) read
       from the page images (Internet Archive, leaves 32-39) → `charters_ballard_1913.csv` (310 printed rows, 323 charters
@@ -717,8 +717,14 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       layer to 1307 (258 towns, 121 first after 1216; Rathcool, "co. Tipperary", and the Cinque Ports as a body not
       placed; lost towns placed by hand: Ravenserod, Warenmouth, Skinburness for Skynburgh and Wavermouth, Nova
       Villa at Newton in Studland, Bere).
-- [ ] C7b3 Ballard 1913's appendix of additional charters (not in its table), and Rathcool's place (printed "co.
-      Tipperary"; the grantor is the archbishop of Dublin).
+- [x] C7b3 (2026-10-28) Ballard 1913's appendix of additional charters (p. 250, leaf 404; "Some additional Charters
+      will be found in the Appendix", p. xxxiii n. 1): 8 charters (Aberdeen, Christchurch, Devizes, Hartlepool,
+      Newport and Yarmouth in the Isle of Wight, Torksey, the York weavers) → `charters_ballard_1913_appendix.csv`,
+      counted with the first volume (331 printed against the preface's "about 330"); the one-typeface check runs per
+      printed table (Hartlepool roman in the table, italics in the appendix). Rathcool placed at Rathcoole, co. Dublin:
+      its charter 1228-56 (a) grants the burgesses "de Radcull" common "in monte de Slescoll", the grant Lewis 1837
+      quotes under Rathcoole. 861 charters to 261 towns; layer 260 towns (Torksey and Rathcoole new). The Addenda
+      (pp. 255-259) add texts to charters already in the table and reject John's Waterford charter: nothing to add.
 - [x] C8 (2026-10-25) Trade stories: page `/trades` (nav "Trades"; hosted `trades.html` from `data/trades.json`), one
       story per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and steel, fishing, brewing and
       distilling, banking and finance) from `data/curated/trade/stories.json` and new `bidb/trade_stories.py`: intro,

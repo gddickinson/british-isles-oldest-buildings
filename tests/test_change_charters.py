@@ -54,12 +54,19 @@ class Charters(unittest.TestCase):
 
     def test_totals(self):
         f = cc.facts(self.rows)
-        self.assertEqual((f["v1"], f["v2"], f["charters"], f["boroughs"]), (321, 532, 853, 260))
-        self.assertEqual(f["kinds"], {"crown": 617, "lay": 173, "church": 51})
+        self.assertEqual((f["v1"], f["v2"], f["charters"], f["boroughs"]), (329, 532, 861, 261))
+        self.assertEqual(f["kinds"], {"crown": 621, "lay": 177, "church": 51})
         self.assertEqual((f["other"], f["john"], f["henry3"], f["edward1"]), (12, 99, 235, 117))
-        self.assertEqual(sum(sum(d.values()) for d in cc.per_decade(self.rows).values()), 853)
+        self.assertEqual(sum(sum(d.values()) for d in cc.per_decade(self.rows).values()), 861)
         v1 = cc.load(path_1923=None)
-        self.assertEqual(sum(r["count"] for r in v1), 321)              # 323 printed, 2 dated again in 1923
+        self.assertEqual(sum(r["count"] for r in v1), 329)              # 323 + 8 printed, 2 dated again in 1923
+        self.assertEqual(sum(r["count"] for r in cc.load(path_1923=None, appendix=None)), 321)
+
+    def test_appendix(self):
+        app = [r for r in self.rows if r["table"] == "charters_ballard_1913_appendix"]
+        self.assertEqual((len(app), {r["volume"] for r in app}), (8, {1}))
+        self.assertEqual({r["style"] for r in self.rows if r["borough"] == "Hartlepool" and r["volume"] == 1},
+                         {"roman", "italics"})                          # printed two ways, checked per table
 
     def test_volumes(self):
         v2 = [r for r in self.rows if r["volume"] == 2]
@@ -80,6 +87,9 @@ class Charters(unittest.TestCase):
         self.assertEqual(first["Skinburness"][3], 1300)              # Wavermouth, the same port (critical note)
         self.assertAlmostEqual(first["Berwick"][1], 55.77, places=2) # Berwick-upon-Tweed
         self.assertNotIn("Rathcool", first)
+        self.assertAlmostEqual(first["Rathcoole"][2], -6.47, places=2)   # the archbishop of Dublin's, co. Dublin
+        self.assertEqual(first["Hartlepool"][3], 1173)               # appendix: Adam de Brus, 1162-85
+        self.assertEqual(first["Torksey"][3], 1165)                  # appendix only
         self.assertEqual(len({(r[1], r[2]) for r in first.values()}), len(first))
 
     def test_series(self):
@@ -87,7 +97,7 @@ class Charters(unittest.TestCase):
         self.assertEqual(len(rows), 3)
         self.assertEqual(rows[0]["models"], ["charters_lay", "charters_church"])
         self.assertEqual(rows[0]["breaks"][0][0], 1216)
-        self.assertIn("853 charters to 260 towns", rows[0]["note"])
+        self.assertIn("861 charters to 261 towns", rows[0]["note"])
         self.assertEqual(dict(pts["charters_crown"])[1200], 68)
         self.assertEqual(dict(pts["charters_crown"])[1250], 86)
 

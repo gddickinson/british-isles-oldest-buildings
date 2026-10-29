@@ -2465,3 +2465,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Source `ballard_tait_1923_charters` (138), DATA_LICENSE.md row; 320 series, 24 layers.
 - Tests 478 OK (`test_change_charters`: new date forms, kinds, both volumes); ui_check change_charters (updated), map
   OK; graph and layer (1300: 253 boroughs) checked in screenshots. Hosted copy not updated.
+
+## 2026-10-28 — C7b3: Ballard 1913's appendix of additional charters; Rathcool placed
+- The appendix "1. Additional Charters" of British Borough Charters 1042-1216 (p. 250, Internet Archive leaf 404, read
+  from the page image; footnote on p. xxxiii: "Some additional Charters will be found in the Appendix") →
+  `data/curated/change/data/charters_ballard_1913_appendix.csv`: Aberdeen 1187-1203 (William the Lion), CHRISTCHURCH
+  1137-55 (Baldwin de Redvers; italic capitals, kept as italics as the 1923 table prints it), Devizes 1155-66
+  (Henry II), Hartlepool 1162-85 (Adam de Bruce), Newport and Yarmouth, I. of Wight (Richard and Baldwin de Redvers),
+  TORKSEY 1154-76 and YORK Weavers 1154-73 (Henry II). Loaded with the first volume (`load(appendix=)`); the
+  one-typeface check now keys on the printed table (Hartlepool roman in the table, italics in the appendix).
+  331 printed charters in the first volume against the preface's "about 330". The Addenda (pp. 255-259) only add texts
+  to charters already in the table (Newcastle-on-Tyne, Tewkesbury) and reject John's Waterford charter.
+- Rathcool, printed "co. Tipperary": its charter 1228-56 (a) grants the burgesses "de Radcull" common "in monte de
+  Slescoll" with the men of Nova Villa for 4s. (1923, pp. 75-76); Lewis's Topographical Dictionary of Ireland (1837),
+  "Rathcoole" (co. Dublin), quotes "Lucas, Archbishop of Dublin, grants to the burgesses of Radcull common of pasture
+  and turbary in the mountain of Slescol" at 4s. a year: the same grant, so placed at Rathcoole (GeoNames town).
+- Totals: 861 charters to 261 towns (kings 621, lay lords 177, church 51); layer 260 towns (Torksey 1165 and Rathcoole
+  1242 new; Hartlepool first at 1173, Christchurch 1146). Sources entries and DATA_LICENSE row updated.
+- Tests 479 OK (`test_change_charters`: appendix, Rathcoole); ui_check change_charters, map OK. Hosted copy not updated.

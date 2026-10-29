@@ -5,6 +5,7 @@ rise and set over it (mirrored in app/static/sky.js: `horizonAzimuth`).
     cached_profile(lat, lon)   the same, kept in `<cache>/horizons/` (downloads tiles the first time)
     altitude_at(alt, step, az) horizon altitude at an azimuth (linear between steps)
     horizon_azimuth(...)       first gleam over the skyline (rise) or last gleam (set); None if never
+    horizon_azimuth_dec(...)   the same for any declination (the sun on a chosen date)
 
 Bare ground only: the terrain model has no trees or buildings. Light bends over the ground (terrestrial
 refraction, k = 0.13) and the earth curves away, so far hills sit lower than their height alone suggests.
@@ -14,7 +15,7 @@ import math
 import os
 
 from .config import cache_dir
-from .sky import event_azimuth
+from .sky import azimuth, declination
 from .terrain_tiles import Terrain
 
 STEP = 0.5             # degrees of azimuth
@@ -110,30 +111,35 @@ def altitude_at(alt, step, az):
     return alt[i] * (1 - f) + alt[(i + 1) % len(alt)] * f
 
 
-def _above(lat, body, event, rise_set, year, alt, step, az):
+def _above(lat, dec, body, rise_set, alt, step, az):
     """Whether the body, on its path through the sky that day, stands above the skyline at azimuth az."""
-    a = event_azimuth(lat, body, event, rise_set, year, altitude_at(alt, step, az))
+    a = azimuth(lat, dec, rise_set, body, altitude_at(alt, step, az))
     if a is None:
         return False
     return a <= az if rise_set == "rise" else a >= az
 
 
 def horizon_azimuth(lat, body, event, rise_set, year, alt, step=STEP, fine=0.05, span=60):
-    """Azimuth of the first gleam (rise) or last gleam (set) over the skyline: walking from where the body
-    would cross a horizon at LOWEST, towards the south (a higher horizon always moves it south), the first
-    azimuth at which its path is above the skyline."""
-    start = event_azimuth(lat, body, event, rise_set, year, LOWEST)
+    """Azimuth of the first gleam (rise) or last gleam (set) of an event over the skyline."""
+    return horizon_azimuth_dec(lat, declination(body, event, year), body, rise_set, alt, step, fine, span)
+
+
+def horizon_azimuth_dec(lat, dec, body, rise_set, alt, step=STEP, fine=0.05, span=60):
+    """The same for any declination (the sun on a chosen date): walking from where the body would cross a
+    horizon at LOWEST, towards the south (a higher horizon always moves it south), the first azimuth at which
+    its path is above the skyline."""
+    start = azimuth(lat, dec, rise_set, body, LOWEST)
     if start is None:
         return None
     sign = 1 if rise_set == "rise" else -1
     prev = start
     for k in range(1, round(span / fine) + 1):
         az = start + sign * k * fine
-        if _above(lat, body, event, rise_set, year, alt, step, az):
+        if _above(lat, dec, body, rise_set, alt, step, az):
             lo, hi = prev, az                       # refine between the last step below and this one
             for _ in range(12):
                 mid = (lo + hi) / 2
-                lo, hi = (lo, mid) if _above(lat, body, event, rise_set, year, alt, step, mid) else (mid, hi)
+                lo, hi = (lo, mid) if _above(lat, dec, body, rise_set, alt, step, mid) else (mid, hi)
             return hi % 360
         prev = az
     return None

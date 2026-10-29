@@ -2682,3 +2682,14 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   1390-1412) and Twyning (bellframe 1453) are C12 churches: dated 1101 by two reviewed date corrections (217).
 - `bidb.dendro` rerun: 1,849 entries on 1,075 records. Catalogue 22,520 records. Tests 523 OK (`test_dendro` +2 cases).
   Hosted copy not updated.
+
+## 2026-10-29 — Sun lines over the real skyline on the Map page (SK7b1)
+- Map page, "☀ Sun lines": new "Over the real skyline" option (local GUI only; the hosted copy has no `/api/horizon`)
+  reads the clicked point's skyline and draws the solstice, equinox, moon-standstill and chosen-date lines where the
+  first or last gleam clears the hills; tooltips give the flat-horizon direction beside it; a newer click wins over a
+  skyline still loading; "Terrain not available here" falls back to flat.
+- `bidb.sky_horizon.horizon_azimuth_dec` / `Sky.horizonAzimuthDec`: the skyline search for any declination (the sun on
+  a date); `horizon_azimuth` now calls it. Stonehenge 2500 BC midsummer sunrise 48.2° flat, 49.3° over the skyline
+  (unchanged). Checked headless on /map?sky=1 at Stonehenge (10 rays, skyline note shown).
+- Tests: `test_sky_horizon` +1 (browser mirror of the declination search, flat skyline = plain formula).
+  Hosted copy not updated. Next: SK7b2 (Loanhead of Daviot, Tomnaverie surveys), SK5b2, LD1b, LD3.

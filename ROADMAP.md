@@ -55,10 +55,12 @@ Sky and alignments (first)
       local GUI by "use the real skyline" (`/api/horizon`, cached per point); skyline strip in detail views; the Sky
       calendar and the map's alignment rays use it. Stonehenge midsummer sunrise 2500 BC: 48.1° flat, 49.2° over its
       skyline (+0.6°). Slieve Gullion's position was a rounded one 440 m down the slope (corrected to the summit).
-- [ ] SK7b Skylines, next: Loanhead of Daviot (published 199°, skyline 203.2°) and Tomnaverie (published 238°, skyline
+- [x] SK7b1 (2026-10-29) Sun lines on the Map page over the skyline of the clicked point (local GUI: "Over the real
+      skyline", `/api/horizon`; the date's sunrise and sunset too, `horizonAzimuthDec` / `horizon_azimuth_dec`; flat
+      direction on hover). Stonehenge 2500 BC midsummer sunrise: 48.2° flat, 49.3° over the skyline.
+- [ ] SK7b2 Skylines, next: Loanhead of Daviot (published 199°, skyline 203.2°) and Tomnaverie (published 238°, skyline
       229.8°, flat 233.3°) still differ by more than 3°: read the published surveys (horizon, which stone pair, which
-      moon limb) before calling either wrong; sun lines on the Map page over the skyline of the clicked point (local
-      GUI); trees and buildings are not in the terrain model (church orientation over each skyline: done, SK5b1).
+      moon limb) before calling either wrong; trees and buildings are not in the terrain model.
 
 LiDAR and landscape
 - [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade

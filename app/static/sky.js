@@ -51,11 +51,15 @@ const Sky = (() => {
     return alt[i] * (1 - f) + alt[(i + 1) % alt.length] * f;
   }
   function horizonAzimuth(lat, body, event, riseSet, year, alt, step, fine = 0.05, span = 60) {
+    return horizonAzimuthDec(lat, declination(body, event, year), body, riseSet, alt, step, fine, span);
+  }
+  // The same for any declination (the sun on a chosen date).
+  function horizonAzimuthDec(lat, dec, body, riseSet, alt, step, fine = 0.05, span = 60) {
     const above = (az) => {
-      const a = eventAzimuth(lat, body, event, riseSet, year, altitudeAt(alt, step, az));
+      const a = azimuth(lat, dec, riseSet, body, altitudeAt(alt, step, az));
       return a != null && (riseSet === "rise" ? a <= az : a >= az);
     };
-    const start = eventAzimuth(lat, body, event, riseSet, year, HORIZON_LOWEST);
+    const start = azimuth(lat, dec, riseSet, body, HORIZON_LOWEST);
     if (start == null) return null;
     const sign = riseSet === "rise" ? 1 : -1;
     let prev = start;
@@ -141,7 +145,7 @@ const Sky = (() => {
   }
   const compass = (az) => ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"][Math.round(wrap(az) / 22.5) % 16];
 
-  return { SUN_EVENTS, NAMES, SHORT, obliquity, declination, refraction, centreAltitude, azimuth, declinationOf, eventAzimuth, altitudeAt, horizonAzimuth,
+  return { SUN_EVENTS, NAMES, SHORT, obliquity, declination, refraction, centreAltitude, azimuth, declinationOf, eventAzimuth, altitudeAt, horizonAzimuth, horizonAzimuthDec,
     jdOf, dateOf, sunLongitude, sunDeclination, nextSunEvent, nextLongitude, equationOfTime, riseSetTimes, nodeLongitude, nextStandstill, next, sunDatesAt, compass };
 })();
 if (typeof module !== "undefined") module.exports = Sky;

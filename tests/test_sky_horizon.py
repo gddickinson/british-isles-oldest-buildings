@@ -89,6 +89,20 @@ class TestHorizon(unittest.TestCase):
         for c, a in zip(cases, js):
             self.assertAlmostEqual(a, H.horizon_azimuth(*c, alt, 0.5), places=6)
 
+    @unittest.skipUnless(shutil.which("node"), "node not installed")
+    def test_browser_mirror_declination(self):
+        alt = [2.0 if 120 <= i * 0.5 <= 135 else 0.3 * math.cos(i / 15) for i in range(720)]
+        cases = [(51.5, 10.0, "sun", "rise"), (55.0, -20.0, "sun", "set"), (52.0, 5.0, "moon", "rise")]
+        script = (ROOT / "app" / "static" / "sky.js").read_text() + f"""
+            const ALT = {json.dumps(alt)};
+            console.log(JSON.stringify({json.dumps(cases)}.map(([la, d, b, rs]) => Sky.horizonAzimuthDec(la, d, b, rs, ALT, 0.5))));"""
+        js = json.loads(subprocess.run(["node", "-e", script], capture_output=True, text=True, check=True).stdout)
+        for (la, d, b, rs), a in zip(cases, js):
+            self.assertAlmostEqual(a, H.horizon_azimuth_dec(la, d, b, rs, alt, 0.5), places=6)
+        flat = [0.0] * 720                                   # a flat skyline: the plain formula
+        self.assertAlmostEqual(H.horizon_azimuth_dec(51.5, 10.0, "sun", "rise", flat, 0.5),
+                               sky.azimuth(51.5, 10.0, "rise", "sun", 0.0), places=2)
+
 
 if __name__ == "__main__":
     unittest.main()

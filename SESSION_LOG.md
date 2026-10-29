@@ -2662,6 +2662,6 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (Culbone 28° at 170 m, Rievaulx, Grasmere) are churches in combes and valleys; skylines within a few hundred metres
   depend on the record's exact position.
 - Detail views: orientation over the skyline (flat difference beside it); /sky#churches: table of the three tests.
-- Tests 524 OK (`test_church_orientation` +1); ui_check sky_churches and building_orientation tightened to the new
+- Tests 523 OK (`test_church_orientation` +1); ui_check sky_churches and building_orientation tightened to the new
   text, building_skyline OK. Hosted copy not updated (church_orientation.json 582 KB).
 - Next: SK5b2 (Hoare and Sweet, Hinton's data, nave-only outlines), SK7b, LD1b, LD2b.

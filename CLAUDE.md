@@ -7,4 +7,5 @@ Project folder is still named `UK_buildings` (renaming it would break `.venv`); 
 - Python env: `.venv/` (flask 3.0.3, requests 2.32.3). Run with `.venv/bin/python`.
 - Rebuild data: `.venv/bin/python -m bidb.build` (cached; `rm -rf data/cache` for fresh data).
 - Run GUI: `./run.sh` → http://127.0.0.1:5050
+- Backups: `.venv/bin/python -m bidb.backup` (daily launchd job `com.bidb.backup`; database, settings, `runs/*.json` → `backup_dir` in settings.json, on FANTOM; `--list` to see them).
 - Keep files under 500 lines; update INTERFACE.md and SESSION_LOG.md with structural changes.

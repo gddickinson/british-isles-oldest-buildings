@@ -2636,3 +2636,15 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - `bidb.dendro_add --dry-run` now finds 16 buildings to add (roadmap LD2b, not added: to review first).
 - Tests 520 OK; ui_check building_gridref, building_gridref_os, map_gridref (new), building_skyline, sky OK. App
   restarted on 5050. Hosted copy not updated.
+
+## 2026-10-29 — Backups to FANTOM (bidb.backup)
+- Found: the database (364 MB) and the review outputs in `runs/*.json` existed only on the laptop (the last release,
+  db-2026-10-24, lacks everything since); Time Machine has a destination but fails to mount it; FANTOM is 99% full
+  (33 GB free) and already holds the download cache.
+- New `bidb/backup.py`: consistent snapshot (SQLite backup API, safe with the app running), gzipped (~116 MB), with
+  settings.json and `runs/*.json`, into `/Volumes/FANTOM/UK_BUILDINGS_DATA/backups/<date_time>/` with a MANIFEST
+  (SHA-256, row counts); skipped when the database and settings are unchanged; newest 10 kept; does nothing when
+  FANTOM is unplugged or short of space. `backup_dir` set in settings.json.
+- launchd job `com.bidb.backup` (~/Library/LaunchAgents): daily at 13:00 and at login, log `runs/backup.log`; its
+  first run read FANTOM fine. First backup 2026-10-29_1245 restored and checked (integrity ok, 1,829 tree-ring rows).
+- Tests: `test_backup` (2) new.

@@ -11,6 +11,7 @@ refraction, k = 0.13) and the earth curves away, so far hills sit lower than the
 """
 import json
 import math
+import os
 
 from .config import cache_dir
 from .sky import event_azimuth
@@ -62,14 +63,44 @@ def profile(lat, lon, terrain=None, step=STEP):
     return {"step": step, "ground": round(ground, 1), "alt": alt, "km": km}
 
 
+def _path(lat, lon):
+    return cache_dir() / "horizons" / f"{lat:.5f}_{lon:.5f}.json"
+
+
 def cached_profile(lat, lon, terrain=None):
-    path = cache_dir() / "horizons" / f"{lat:.5f}_{lon:.5f}.json"
+    path = _path(lat, lon)
     if path.exists():
         return json.loads(path.read_text())
     p = profile(lat, lon, terrain)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(p, separators=(",", ":")))
+    tmp = path.with_suffix(f".{os.getpid()}.tmp")
+    tmp.write_text(json.dumps(p, separators=(",", ":")))
+    tmp.replace(path)
     return p
+
+
+_TERRAIN = None
+
+
+def _one(point):
+    global _TERRAIN
+    _TERRAIN = _TERRAIN or Terrain()
+    if len(_TERRAIN.tiles) > 150:          # decoded tiles take ~2 MB each: start again now and then
+        _TERRAIN.tiles.clear()
+    return cached_profile(*point, terrain=_TERRAIN)
+
+
+def many(points, workers=8, log=print):
+    """Profiles of many (lat, lon) points, in that order, computing the ones not yet cached in `workers` processes."""
+    todo = sorted({p for p in points if not _path(*p).exists()})
+    if todo:
+        from multiprocessing import Pool
+        log(f"skylines: {len(todo)} to compute ({len(points) - len(todo)} cached)")
+        with Pool(workers) as pool:
+            for i, _ in enumerate(pool.imap_unordered(_one, todo, chunksize=4), 1):
+                if i % 100 == 0 or i == len(todo):
+                    log(f"  {i}/{len(todo)}")
+    return [cached_profile(*p) for p in points]
 
 
 def altitude_at(alt, step, az):

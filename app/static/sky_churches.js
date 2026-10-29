@@ -33,15 +33,26 @@
         : s.observed < s.chance_95[0] ? "Fewer churches face their own saint's sunrise than chance would give."
         : "That is no more than chance: these churches as a whole do not face their own saint's sunrise more often than another saint's."}</p>`
     : '<p class="meta">The feast days are still being researched; the test will appear here.</p>';
+  // SK5b: the same test over each church's own skyline, and counting the other saint an ambiguous label may mean
+  const verdict = (t) => (t.observed > t.chance_95[1] ? "more than chance" : t.observed < t.chance_95[0] ? "fewer than chance" : "no more than chance");
+  const testRow = (name, t) => `<tr><td>${name}</td><td>${t.tested.toLocaleString()}</td><td>${t.observed.toLocaleString()} (${pct(t.observed, t.tested)})</td>
+      <td>${t.chance_mean} (${t.chance_95[0]}–${t.chance_95[1]})</td><td>${verdict(t)}</td></tr>`;
+  const tests = s.skyline ? `<table class="sky-table"><thead><tr><th>Test</th><th>Churches</th><th>Within ${s.tolerance}° of their feast</th>
+      <th>Shuffled: mean (95%)</th><th>Result</th></tr></thead><tbody>
+      ${testRow("Flat horizon", s)}${testRow("Over each church's skyline", s.skyline)}
+      ${testRow(`Over the skyline, either saint where the label is ambiguous (${s.other_saints.labels.map(esc).join(", ")})`, s.other_saints)}</tbody></table>
+    <p class="meta">The skyline is the bare ground of the terrain model (trees and buildings are not in it), at the axis of
+      each church; the sun rises later and further south over higher ground, so the dates the axis points to move.</p>` : "";
   const ded = (s.by_dedication || []).filter((d) => d[1] >= 10);
   const STUDY = { yes: "found support", partly: "found partial support", no: "found no support" };
   box.innerHTML = `<h2>Churches and their saints' days</h2>
     <p class="prose">An old idea holds that a medieval church was set out to face sunrise on its patron saint's day. The
       axes of ${s.with_axis.toLocaleString()} churches in the catalogue, from their OpenStreetMap outlines, are below:
       ${s.east_facing.toLocaleString()} face between north-north-east and south-south-east, most within the year's range of sunrise (shaded) and near
-      the equinox line, but many outlines include later aisles, towers and chapels, the spike at due east may partly be outlines drawn square to the map, and the horizon is taken as flat.</p>
+      the equinox line, but many outlines include later aisles, towers and chapels, the spike at due east may partly be outlines drawn square to the map, and the horizon is the bare ground of the terrain model.</p>
     ${svg}
     ${result}
+    ${tests}
     ${ded.length ? `<details><summary>By dedication (10 or more churches)</summary><table class="sky-table"><thead><tr><th>Dedication</th><th>Churches</th><th>Within ${s.tolerance}°</th></tr></thead>
       <tbody>${ded.map(([d, n, k]) => `<tr><td>${esc(d)}</td><td>${n}</td><td>${k} (${pct(k, n)})</td></tr>`).join("")}</tbody></table></details>` : ""}
     ${(data.studies || []).length ? `<h3>What studies have found</h3><ul class="sky-sites">${data.studies.map((st) => `<li>${esc(st.citation)}

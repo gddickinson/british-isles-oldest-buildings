@@ -7,6 +7,7 @@ EU-DEM elsewhere in the isles, GMTED/ETOPO1 at small zooms. Tiles are cached onc
     decode_png(data)                  -> (width, height, rows of RGB bytes) for 8-bit RGB/RGBA PNGs
 """
 import math
+import os
 import struct
 import zlib
 
@@ -102,7 +103,9 @@ class Terrain:
                 resp = self.session.get(URL.format(z=z, x=x, y=y), timeout=60)
                 resp.raise_for_status()
                 path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_bytes(resp.content)
+                tmp = path.with_suffix(f".{os.getpid()}.tmp")      # other processes may want the same tile
+                tmp.write_bytes(resp.content)
+                tmp.replace(path)
                 self.downloads += 1
             self.tiles[key] = heights(path.read_bytes())
         return self.tiles[key]

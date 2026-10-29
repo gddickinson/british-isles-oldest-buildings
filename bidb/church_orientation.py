@@ -4,10 +4,14 @@ Each religious record's axis is taken from its OpenStreetMap outline (`footprint
 rectangle around the outline; outlines less than 1.4 times as long as wide have no clear axis). The east end is the
 end between north and south through east. For churches begun before 1540 with a dedication whose feast is fixed
 (`data/curated/church_orientation.json`, researched with quoted sources), the sun's rising direction on the feast
-day of the year begun, in the Julian calendar then in use, is compared with the axis (flat horizon, bidb.sky). The
-share of churches within `TOLERANCE` degrees of a feast is set against chance: the same churches with their
-dedications shuffled (`SHUFFLES` times). Written to `app/static/data/church_orientation.json` for detail views and
-the Sky calendar page (`python -m bidb.church_orientation`; `--quotes` checks the sources' quotes).
+day of the year begun, in the Julian calendar then in use, is compared with the axis (bidb.sky), over a flat
+horizon and over the church's own skyline (SK5b: bidb.sky_horizon, bare ground: the altitude of the skyline on the
+axis is the horizon for both the axis and the feast, so the sun's path is taken as straight across the few degrees
+between them). The share of churches within `TOLERANCE` degrees of a feast is set against chance: the same churches
+with their dedications shuffled (`SHUFFLES` times). A third test also counts the feast of the other saint an
+ambiguous Wikidata dedication may mean (`if_other_saint`: St Oswald churches may be Oswald of Northumbria's). Written
+to `app/static/data/church_orientation.json` for detail views and the Sky calendar page
+(`python -m bidb.church_orientation [--flat]`; `--flat` skips the skylines; `--quotes` checks the sources' quotes).
 """
 import json
 import math
@@ -88,16 +92,16 @@ def julian_calendar_day(y, m, d):
     return int(365.25 * (y + 4716)) + int(30.6001 * (m + 1)) + d - 1524.5
 
 
-def feast_azimuth(lat, year, month_day):
-    """Where the sun rose (flat horizon) on a Julian-calendar date of a year."""
+def feast_azimuth(lat, year, month_day, horizon=0.0):
+    """Where the sun rose over a horizon of this altitude (degrees) on a Julian-calendar date of a year."""
     m, d = (int(x) for x in month_day.split("-"))
     jd = julian_calendar_day(year, m, d) + 0.25            # about sunrise in the isles
-    return sky.azimuth(lat, sky.sun_declination(jd), "rise", "sun")
+    return sky.azimuth(lat, sky.sun_declination(jd), "rise", "sun", horizon)
 
 
-def axis_dates(lat, az, year):
-    """Julian-calendar (month, day) dates of the year when the sun rose on this azimuth."""
-    dec = sky.declination_of(lat, az)
+def axis_dates(lat, az, year, horizon=0.0):
+    """Julian-calendar (month, day) dates of the year when the sun rose on this azimuth over a horizon."""
+    dec = sky.declination_of(lat, az, "sun", horizon)
     start = julian_calendar_day(year, 1, 1) + 0.25
     out, prev = [], sky.sun_declination(start) - dec
     for i in range(1, 366):
@@ -124,28 +128,47 @@ def load():
     return json.loads(FILE.read_text()) if FILE.exists() else {"feasts": {}, "studies": []}
 
 
-def fixed_feasts(entry):
-    return [f for f in entry.get("feasts", []) if not f.get("movable") and f.get("date")]
+def fixed_feasts(entry, other=False):
+    """A dedication's fixed feasts; with `other`, also the feast of the other saint an ambiguous label may mean."""
+    out = [f for f in entry.get("feasts", []) if not f.get("movable") and f.get("date")]
+    alt = entry.get("if_other_saint")
+    return out + [{"name": alt["name"], "date": alt["date"]}] if other and alt else out
 
 
 def churches(con):
-    rows = con.execute("SELECT id, lat, year_start, dedication, footprint FROM buildings "
+    rows = con.execute("SELECT id, lat, lon, year_start, dedication, footprint FROM buildings "
                        "WHERE category_group = 'Religious' AND footprint <> '' AND lat IS NOT NULL")
     out = []
-    for rid, lat, year, ded, fp in rows:
+    for rid, lat, lon, year, ded, fp in rows:
         try:
             ax = axis(json.loads(fp))
         except (ValueError, KeyError, TypeError, IndexError):
             ax = None
-        out.append({"id": rid, "lat": lat, "year": year, "dedication": ded or "", "axis": ax})
+        out.append({"id": rid, "lat": lat, "lon": lon, "year": year, "dedication": ded or "", "axis": ax})
     return out
 
 
-def best_diff(lat, year, az, feasts):
+def east_facing(r):
+    return bool(r["axis"]) and r["axis"][1] >= MIN_ELONGATION and 30 <= r["axis"][0] <= 150
+
+
+def medieval(r):
+    return r["year"] is not None and 600 <= r["year"] < MEDIEVAL
+
+
+def add_skylines(rows, workers=8, log=print):
+    """Each medieval east-facing church's skyline altitude on its axis (`hz`, degrees; bidb.sky_horizon)."""
+    from .sky_horizon import altitude_at, many
+    todo = [r for r in rows if east_facing(r) and medieval(r)]
+    for r, p in zip(todo, many([(round(r["lat"], 5), round(r["lon"], 5)) for r in todo], workers, log)):
+        r["hz"] = round(altitude_at(p["alt"], p["step"], r["axis"][0]), 2)
+
+
+def best_diff(lat, year, az, feasts, horizon=0.0):
     """(smallest |axis - feast sunrise| in degrees, that feast) over a dedication's fixed feasts."""
     best = None
     for f in feasts:
-        fa = feast_azimuth(lat, year, f["date"])
+        fa = feast_azimuth(lat, year, f["date"], horizon)
         if fa is None:
             continue
         diff = abs((az - fa + 90) % 180 - 90)
@@ -155,26 +178,48 @@ def best_diff(lat, year, az, feasts):
 
 
 def analyse(rows, feasts, seed=1):
-    """Per church: axis, dates and its feast's difference; the share within TOLERANCE against shuffled dedications."""
+    """Per church: axis, dates and its feast's difference, flat and over the skyline (rows with `hz`); the share
+    within TOLERANCE against shuffled dedications: flat, over the skyline, and over the skyline with other saints."""
     out, tested = {}, []
     for r in rows:
         if not r["axis"]:
             continue
         az, el = r["axis"]
         rec = {"az": round(az, 1), "el": round(el, 2)}
-        if el >= MIN_ELONGATION and 30 <= az <= 150:
-            year = r["year"] if r["year"] is not None and 600 <= r["year"] < MEDIEVAL else None
+        if east_facing(r):
+            year = r["year"] if medieval(r) else None
             rec["dates"] = ["%02d-%02d" % md for md in axis_dates(r["lat"], az, year or 1300)]
             rec["cal"] = year                   # None: not medieval or undated, dates for 1300
+            if "hz" in r:
+                rec["hz"] = r["hz"]
+                rec["dates_hz"] = ["%02d-%02d" % md for md in axis_dates(r["lat"], az, year, r["hz"])]
             entry = feasts.get(r["dedication"])
             if year and entry and fixed_feasts(entry):
                 best = best_diff(r["lat"], year, az, fixed_feasts(entry))
                 if best:
                     rec["feast"], rec["diff"] = best[1]["name"], round(best[0], 1)
                     tested.append(r)
+                    if "hz" in r:
+                        best = best_diff(r["lat"], year, az, fixed_feasts(entry), r["hz"])
+                        rec["feast_hz"], rec["diff_hz"] = best[1]["name"], round(best[0], 1)
         out[r["id"]] = rec
-    hit = lambda r, ded: (lambda b: b is not None and b[0] <= TOLERANCE)(
-        best_diff(r["lat"], r["year"], r["axis"][0], fixed_feasts(feasts[ded])))
+    summary = {"churches": len(rows), "with_axis": sum(1 for r in out.values() if r["el"] >= MIN_ELONGATION),
+               "east_facing": sum(1 for r in out.values() if "dates" in r), "tolerance": TOLERANCE, "shuffles": SHUFFLES}
+    summary.update(_test(tested, feasts, seed))
+    summary["by_dedication"] = _by_dedication(tested, out)
+    with_hz = [r for r in tested if "hz" in r]
+    if with_hz:
+        summary["skyline"] = _test(with_hz, feasts, seed, horizon=True)
+        summary["other_saints"] = _test(with_hz, feasts, seed, horizon=True, other=True)
+        summary["other_saints"]["labels"] = sorted(k for k, v in feasts.items() if v.get("if_other_saint"))
+    return out, summary
+
+
+def _test(tested, feasts, seed, horizon=False, other=False):
+    """How many churches face within TOLERANCE of their own saint's feast sunrise, against shuffled dedications."""
+    def hit(r, ded):
+        b = best_diff(r["lat"], r["year"], r["axis"][0], fixed_feasts(feasts[ded], other), r["hz"] if horizon else 0.0)
+        return b is not None and b[0] <= TOLERANCE
     observed = sum(hit(r, r["dedication"]) for r in tested)
     rnd, chance = random.Random(seed), []
     for _ in range(SHUFFLES if tested else 0):
@@ -182,14 +227,9 @@ def analyse(rows, feasts, seed=1):
         rnd.shuffle(deds)
         chance.append(sum(hit(r, d) for r, d in zip(tested, deds)))
     chance.sort()
-    n = len(tested)
-    summary = {"churches": len(rows), "with_axis": sum(1 for r in out.values() if r["el"] >= MIN_ELONGATION),
-               "east_facing": sum(1 for r in out.values() if "dates" in r), "tested": n, "tolerance": TOLERANCE,
-               "observed": observed, "chance_mean": round(sum(chance) / len(chance), 1) if chance else None,
-               "chance_95": [chance[int(len(chance) * 0.025)], chance[int(len(chance) * 0.975) - 1]] if chance else None,
-               "shuffles": SHUFFLES}
-    summary["by_dedication"] = _by_dedication(tested, out)
-    return out, summary
+    return {"tested": len(tested), "observed": observed,
+            "chance_mean": round(sum(chance) / len(chance), 1) if chance else None,
+            "chance_95": [chance[int(len(chance) * 0.025)], chance[int(len(chance) * 0.975) - 1]] if chance else None}
 
 
 def _by_dedication(tested, out):
@@ -201,20 +241,29 @@ def _by_dedication(tested, out):
     return sorted(([d, n, k] for d, (n, k) in by.items()), key=lambda x: -x[1])
 
 
-def run(log=print):
+FIELDS = ("az", "el", "dates", "cal", "feast", "diff", "hz", "dates_hz", "feast_hz", "diff_hz")
+
+
+def run(log=print, skylines=True):
     data = load()
     con = sqlite3.connect(db_path())
     rows = churches(con)
+    if skylines:
+        add_skylines(rows, log=log)
     per, summary = analyse(rows, data["feasts"])
-    OUT.write_text(json.dumps({"summary": summary, "studies": data.get("studies", []),
-                               "churches": {k: [v["az"], v["el"], v.get("dates"), v.get("cal"), v.get("feast"), v.get("diff")]
-                                            for k, v in per.items()}}, ensure_ascii=False, separators=(",", ":")))
+    OUT.write_text(json.dumps({"summary": summary, "studies": data.get("studies", []), "fields": FIELDS,
+                               "churches": {k: [v.get(f) for f in FIELDS] for k, v in per.items()}},
+                              ensure_ascii=False, separators=(",", ":")))
     log(f"{summary['churches']} religious records with outlines; {summary['with_axis']} with a clear axis, "
         f"{summary['east_facing']} facing between NNE and SSE; {summary['tested']} medieval with a fixed feast")
     if summary["tested"]:
         log(f"within {TOLERANCE}° of a feast-day sunrise: {summary['observed']} "
             f"({100 * summary['observed'] / summary['tested']:.1f}%); shuffled dedications: mean {summary['chance_mean']}, "
             f"95% range {summary['chance_95']}")
+    for key, what in (("skyline", "over the skyline"), ("other_saints", "over the skyline, either saint")):
+        t = summary.get(key)
+        if t:
+            log(f"{what}: {t['observed']} of {t['tested']}; shuffled mean {t['chance_mean']}, 95% {t['chance_95']}")
     return summary
 
 
@@ -229,7 +278,7 @@ def claims():
 
 
 if __name__ == "__main__":
-    run()
+    run(skylines="--flat" not in sys.argv)
     if "--quotes" in sys.argv:
         from .evidence import check
         check(claims=claims(), path=CHECK)

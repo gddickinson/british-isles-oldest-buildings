@@ -2648,3 +2648,20 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - launchd job `com.bidb.backup` (~/Library/LaunchAgents): daily at 13:00 and at login, log `runs/backup.log`; its
   first run read FANTOM fine. First backup 2026-10-29_1245 restored and checked (integrity ok, 1,829 tree-ring rows).
 - Tests: `test_backup` (2) new.
+
+## 2026-10-29 — Church orientation over each church's skyline (SK5b1)
+- `bidb.church_orientation` now tests the feast-day idea three ways: flat horizon (as before), over each church's own
+  skyline at its axis (`add_skylines`; the skyline altitude on the axis is the horizon for the axis and the feast), and
+  over the skyline counting the other saint an ambiguous Wikidata label may mean (`if_other_saint`: Oswald of
+  Worcester/Northumbria, Augustine of Hippo/Canterbury). Per church the JSON carries `FIELDS` (skyline altitude, dates
+  and feast difference over it).
+- `bidb.sky_horizon.many`: uncached skylines in 8 processes (tiles and profiles written atomically). 3,909 medieval
+  east-facing churches in ~14 min; terrain tile cache now 973 MB, horizons 31 MB (FANTOM).
+- Results: flat 396 of 2,499 within 5° (chance 390, 95% 359-423); skyline 405 (406, 378-437); either saint 407 (408,
+  379-439): no more than chance in every test. Skyline on the axis: median +0.5°, 736 churches over 2°; the highest
+  (Culbone 28° at 170 m, Rievaulx, Grasmere) are churches in combes and valleys; skylines within a few hundred metres
+  depend on the record's exact position.
+- Detail views: orientation over the skyline (flat difference beside it); /sky#churches: table of the three tests.
+- Tests 524 OK (`test_church_orientation` +1); ui_check sky_churches and building_orientation tightened to the new
+  text, building_skyline OK. Hosted copy not updated (church_orientation.json 582 KB).
+- Next: SK5b2 (Hoare and Sweet, Hinton's data, nave-only outlines), SK7b, LD1b, LD2b.

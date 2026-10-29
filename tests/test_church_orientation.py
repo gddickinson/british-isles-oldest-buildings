@@ -60,6 +60,28 @@ class ChurchOrientationTest(unittest.TestCase):
         self.assertIsNone(per["late"]["cal"])
         self.assertEqual(s["by_dedication"][0][0], "A")
 
+    def test_skyline_and_other_saints(self):
+        lat = 52.0
+        # a higher horizon: the sun clears it further south, and the axis catches it on different days
+        self.assertGreater(co.feast_azimuth(lat, 1300, "03-12", 3.0), co.feast_azimuth(lat, 1300, "03-12") + 3)
+        self.assertNotEqual(co.axis_dates(lat, 89.0, 1250, 3.0), co.axis_dates(lat, 89.0, 1250))
+        entry = {"feasts": [{"name": "A day", "date": "03-12"}], "if_other_saint": {"name": "Other A", "date": "11-30"}}
+        self.assertEqual([f["name"] for f in co.fixed_feasts(entry)], ["A day"])
+        self.assertEqual([f["name"] for f in co.fixed_feasts(entry, other=True)], ["A day", "Other A"])
+        feasts = {"A": entry, "B": {"feasts": [{"name": "B day", "date": "08-01"}]}}
+        hz = 2.0
+        az_other = co.feast_azimuth(lat, 1200, "11-30", hz)       # these face the other saint's sunrise over a hill
+        rows = [{"id": f"a{i}", "lat": lat, "year": 1200, "dedication": "A", "axis": (az_other, 3.0), "hz": hz}
+                for i in range(10)]
+        rows += [{"id": f"b{i}", "lat": lat, "year": 1200, "dedication": "B", "axis": (100.0, 3.0), "hz": hz}
+                 for i in range(10)]
+        per, s = co.analyse(rows, feasts)
+        self.assertEqual(s["skyline"]["observed"], 0)
+        self.assertEqual(s["other_saints"]["observed"], 10)
+        self.assertEqual(s["other_saints"]["labels"], ["A"])
+        self.assertEqual(per["a0"]["hz"], hz)
+        self.assertIn("dates_hz", per["a0"])
+
     def test_curated(self):
         data = co.load()
         for name, e in data["feasts"].items():

@@ -42,9 +42,13 @@ Sky and alignments (first)
       disputed idea, with the share of churches that agree against chance.
 - [x] SK6 (2026-10-29, page `/sky`; access from the researched `viewing` lines, not the visiting table) Sky calendar: the next solstice, equinox, cross-quarter day and lunar standstill season, where to stand for
       each researched alignment, public access (visiting table) and booking notes (e.g. Newgrange lottery).
-- [ ] SK5b Church orientation, next: the alternative saints of ambiguous Wikidata labels (`if_other_saint`: Oswald of
-      Northumbria, Augustine of Canterbury); Hoare and Sweet 2000 (abstract not fetchable) and Hinton's survey data
-      (UEA thesis downloads) to compare; outlines of the nave only (later aisles and towers skew the axis); horizons (SK7).
+- [x] SK5b1 (2026-10-29: skylines of 3,909 medieval east-facing churches, median +0.5° on the axis, 736 over 2°;
+      flat 396 of 2,499 within 5° vs 390 by chance (359-423), over the skyline 405 vs 406 (378-437), either saint 407 vs
+      408 (379-439): no more than chance in all three) Church orientation over each church's own skyline
+      (bidb.sky_horizon) and a third test counting the other saint of ambiguous Wikidata labels (`if_other_saint`:
+      Oswald of Northumbria, Augustine of Canterbury); detail views and /sky#churches show them.
+- [ ] SK5b2 Church orientation, next: Hoare and Sweet 2000 (abstract not fetchable) and Hinton's survey data (UEA thesis
+      downloads) to compare; outlines of the nave only (later aisles and towers skew the axis; OSM building:part).
 - [x] SK7 (2026-10-29; Terrain Tiles on AWS instead of OpenTopoData: no daily limit, EA LiDAR in England) Real horizons:
       skyline every 0.5° from the terrain model (`bidb/terrain_tiles.py`, `bidb/sky_horizon.py`, mirrored in sky.js), so
       rising points behind hills are right; researched sites precomputed into sky.json (hosted too), any record in the
@@ -54,7 +58,7 @@ Sky and alignments (first)
 - [ ] SK7b Skylines, next: Loanhead of Daviot (published 199°, skyline 203.2°) and Tomnaverie (published 238°, skyline
       229.8°, flat 233.3°) still differ by more than 3°: read the published surveys (horizon, which stone pair, which
       moon limb) before calling either wrong; sun lines on the Map page over the skyline of the clicked point (local
-      GUI); church orientation (SK5) over each church's skyline; trees and buildings are not in the terrain model.
+      GUI); trees and buildings are not in the terrain model (church orientation over each skyline: done, SK5b1).
 
 LiDAR and landscape
 - [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade

@@ -77,7 +77,9 @@ class DendroAdd(unittest.TestCase):
                  ("Pennellick Farmhouse", "Pelynt, Pennellick", True),
                  ("1 and 2, Ufton Fields", "Ufton, 1-2 Ufton Fields, Cruck House", True),
                  ("The King's Head Public House", "Shrewsbury, Mardol, The King's Head", True),
-                 ("Kilve Chantry", "Kilve, Sea Lane, Kilve Chantry, North wing", True)]
+                 ("Kilve Chantry", "Kilve, Sea Lane, Kilve Chantry, North wing", True),
+                 ("Church of St Michael", "Woodham Walter, St Michael, Church, Bellframe", False),
+                 ("Church of St Leonard", "Yarpole, Church of St Leonard, bell-tower", True)]
         for label, location, want in cases:
             self.assertEqual(plausible(label, {"location": location}), want, label)
 

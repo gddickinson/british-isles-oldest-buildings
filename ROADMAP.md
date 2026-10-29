@@ -75,10 +75,12 @@ LiDAR and landscape
       the finder; `static/osgrid.js` mirrors `bidb/osgrid.py`, now both ways. Found on the way: `to_latlon` applied the
       Helmert shift backwards (every converted reference ~200 m out); fixed, checked against PROJ/OSTN15 (≤ 6 m); tree-ring
       matches redone (median distance 238 m → 55 m) and two loose matching rules tightened.
-- [ ] LD2b Review and add the 16 buildings `python -m bidb.dendro_add --dry-run` now finds (2026-10-29, after the grid
-      fix): Lime Tree House, Harwell (1243), 40-44 Castlegate, Newark (1330), The Ship Inn, Exeter (1415) and the Raven
-      Hotel, Droitwich (1462), whose timbers had been matched to churches, Stank Hall Barn, Watchbell House, Rye...;
-      check each against its VAG entry as in the first review, then run it without `--dry-run` and `bidb.dendro`.
+- [x] LD2b (2026-10-29: 14 of 16 added) Buildings dated by tree-ring that the catalogue lacked, found after the grid
+      fix, each checked against its VAG entry and list entry: Lime Tree House, Harwell (1243), 40-44 Castlegate, Newark
+      (1330), The Ship Inn, Exeter (1415), Raven Hotel, Droitwich (1462)... added; Woodham Walter church left out (the
+      date is its bellframe's, the church c.1563; bellframes now count as fittings) and Watchbell House, Rye (14-15
+      Watchbell Street; the entry is 27-28, `SKIP`); Littleton and Twyning churches dated from their list entries (C12;
+      the tree-ring dates are a C15 roof and a bellframe).
 - [ ] LD3 Distribution analysis for any filtered set: density (kernel) map, nearest-neighbour statistic, sites within
       a distance of Roman roads, rivers, the coast.
 - [ ] LD4 Intervisibility: what can be seen from a hillfort or cairn (viewshed from the DEM; local GUI).

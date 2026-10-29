@@ -2665,3 +2665,20 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 523 OK (`test_church_orientation` +1); ui_check sky_churches and building_orientation tightened to the new
   text, building_skyline OK. Hosted copy not updated (church_orientation.json 582 KB).
 - Next: SK5b2 (Hoare and Sweet, Hinton's data, nave-only outlines), SK7b, LD1b, LD2b.
+
+## 2026-10-29 — Tree-ring-dated buildings added (LD2b)
+- `bidb.dendro_add` ran for real by mistake (`--help` is not `--dry-run`; it ignored unknown arguments): 16 records
+  inserted before review. Reviewed afterwards against each VAG entry and Historic England list entry; the CLI now
+  refuses arguments other than `--dry-run`.
+- Kept 14: Lime Tree House, Harwell (1243), 40-44 Castlegate, Newark (1330), Holywell Farmhouse, Rowington (1395),
+  Culm Davy Farmhouse (1402), The Ship Inn, Exeter (1415), 9 Town Green, Wymondham (1422), Crutchfield Farm House
+  (1455), Raven Hotel, Droitwich (1462), Russetts, Berrick Salome (1464), Stank Hall Barn (1469), Humphreston Hall
+  (1470), Calendars, Burford (1473, list entry "Late C15"), Batchelors, North Waltham (1499), Church of St Catherine,
+  Littleton.
+- Removed 2: Church of St Michael, Woodham Walter (VAG dates its bellframe, 1382+; the church is c.1563 with reused
+  C14 roofs: after the cutoff) and Watchbell House, Rye (14-15 Watchbell Street; the VAG entry is 27-28, Watchbell
+  Chambers). `dendro_add`: bellframes are fittings (`NOT_FABRIC`), reviewed wrong matches in `SKIP`.
+- Same check over all 475 added items: only Twyning's church was matched by a bellframe alone. Littleton (roof
+  1390-1412) and Twyning (bellframe 1453) are C12 churches: dated 1101 by two reviewed date corrections (217).
+- `bidb.dendro` rerun: 1,849 entries on 1,075 records. Catalogue 22,520 records. Tests 523 OK (`test_dendro` +2 cases).
+  Hosted copy not updated.

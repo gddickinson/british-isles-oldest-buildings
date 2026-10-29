@@ -47,7 +47,12 @@ KINDS = {"barn", "cottage", "lych", "gate", "gatehouse", "dovecote", "stable", "
 OPPOSED = [{"east", "west", "north", "south"}, {"first", "second", "third", "1st", "2nd", "3rd"},
            {"upper", "lower", "nether"}, {"great", "little"}, {"old", "new"}]
 NOT_BUILDINGS = re.compile(r"\b(street|road|lane|square|village|hamlet|town|civil parish|settlement|locality)\b")
-NOT_FABRIC = re.compile(r"\b(chest|coffin|door|table|bench|cupboard|screen|reused|re-used|ex situ)\b", re.I)
+# fittings date nothing about the walls round them: a bellframe may be older than its church (Woodham Walter's, 1382+,
+# hangs in a church of c.1563)
+NOT_FABRIC = re.compile(r"\b(chest|coffin|door|table|bench|cupboard|screen|reused|re-used|ex situ|bell-?frame|bell frame)\b",
+                        re.I)
+# reviewed matches that are another building (LD2b, 2026-10-29)
+SKIP = {"Q26543967": "Watchbell House is 14-15 Watchbell Street, Rye; the VAG entry is 27-28 (Watchbell Chambers)"}
 
 
 def _plain(text):
@@ -89,7 +94,7 @@ def candidates(conn=None, cutoff=CUTOFF_YEAR, log=print):
         for e in es:
             grid = defaultdict(list)
             for qid, label, ilat, ilon in items:
-                if plausible(label, e):
+                if qid not in SKIP and plausible(label, e):
                     grid[round(ilat * 20), round(ilon * 20)].append((qid, label, ilat, ilon, dendro.tokens(label)))
             m = dendro.match(e, grid)
             if m:
@@ -173,4 +178,6 @@ def _saved():
 
 
 if __name__ == "__main__":
+    if set(sys.argv[1:]) - {"--dry-run"}:           # anything else would add records without being asked
+        sys.exit("usage: python -m bidb.dendro_add [--dry-run]")
     run(dry_run="--dry-run" in sys.argv[1:])

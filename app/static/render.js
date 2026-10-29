@@ -143,6 +143,7 @@ function renderDetail(b, inModal) {
         <button class="btn small ghost tg-wide" data-fav="${esc(b.id)}">${store.get(FAV).includes(b.id) ? "★ In your tour" : "☆ Add to your tour"}</button>
         <button class="btn small ghost tg-wide" data-cmp="${esc(b.id)}">${store.get(CMP).includes(b.id) ? "⇄ In compare" : "⇄ Add to compare"}</button>
         ${mapButton(b)}
+        ${b.id === "Q39671" ? `<a class="btn small" href="${typeof IS_STATIC !== "undefined" && IS_STATIC ? "stonehenge.html" : "/stonehenge"}">🪨 Stonehenge in 3D</a>` : ""}
         ${CAN_EDIT ? '<button class="btn small ghost" id="edit_open">✎ Correct this record</button>' : ""}
       </div>
       ${b.description ? `<p class="lede">${esc(b.description)}</p>` : ""}

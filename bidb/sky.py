@@ -9,7 +9,9 @@ horizon and over the skyline from the terrain tiles, bidb.sky_horizon) to
 quote, → `data/sky_check.json`).
 
 Rising and setting mean the first and last gleam of the upper limb, with standard refraction; the horizon
-altitude may be given in degrees (hills raise it).
+altitude may be given in degrees (hills raise it). Where the published azimuth is a direction of the stones
+(`azimuth_of`, e.g. the perpendicular to a recumbent stone) rather than of the event, the horizon declination
+there is given beside the body's declination at the event, as Ruggles reads them (SK7b2).
 """
 import json
 import math
@@ -215,6 +217,8 @@ def problems(rows=None):
             out.append(f"{name}: disputed with fewer than two views")
         if not isinstance(a.get("lat"), (int, float)) or not isinstance(a.get("lon"), (int, float)):
             out.append(f"{name}: no position")
+        if a.get("azimuth_of") and (a.get("azimuth") is None or a.get("event") is None):
+            out.append(f"{name}: azimuth_of needs a published azimuth and an event")
         if not a.get("sources"):
             out.append(f"{name}: no sources")
         for s in a.get("sources") or []:
@@ -251,6 +255,14 @@ def computed(a, horizon=None):
             ref = then
     if a.get("azimuth") is not None:
         out["difference"] = round((a["azimuth"] - ref + 180) % 360 - 180, 1)
+    if a.get("azimuth_of") and a.get("azimuth") is not None:
+        # A published direction of the stones, not of the event (SK7b2): as Ruggles does, the declination a body
+        # needs to show above the horizon there, against the body's declination at the event when built.
+        out["event_declination"] = round(declination(a["body"], a["event"], a.get("built") or 2000), 2)
+        out["horizon_declination_flat"] = round(declination_of(a["lat"], a["azimuth"], a["body"]), 2)
+        if horizon:
+            alt = altitude_at(horizon["alt"], horizon["step"], a["azimuth"])
+            out["horizon_declination"] = round(declination_of(a["lat"], a["azimuth"], a["body"], alt), 2)
     return out
 
 
@@ -286,6 +298,10 @@ def main():
     for a in rows:
         diff = a.get("difference")
         flag = "" if diff is None or abs(diff) <= 3 else "   ← published azimuth differs by more than 3°"
+        if a.get("azimuth_of"):                   # the stones' direction: compare declinations instead
+            hd = a.get("horizon_declination", a["horizon_declination_flat"])
+            flag = (f"   (published {a['azimuth']}° is {a['azimuth_of']}: horizon declination there {hd:+.1f}°, "
+                    f"the {a['body']} at the event {a['event_declination']:+.1f}°)")
         if a["event"] is None:
             print(f"  {a['name'][:34]:34} {a['body']} (no event named)")
             continue

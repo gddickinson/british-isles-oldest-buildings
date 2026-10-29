@@ -16,6 +16,9 @@ Statuses:
 import html
 import json
 import re
+import shutil
+import subprocess
+from pathlib import Path
 from urllib.parse import unquote
 
 import requests
@@ -36,6 +39,16 @@ def _wiki_title(url):
 MIN_TEXT = 200
 
 
+def pdf_text(data):
+    """Plain text of a PDF (poppler's pdftotext; words split over a line end joined), or None without it."""
+    exe = shutil.which("pdftotext") or next((p for p in ("/opt/homebrew/bin/pdftotext", "/usr/local/bin/pdftotext")
+                                             if Path(p).exists()), None)
+    if not exe:
+        return None
+    r = subprocess.run([exe, "-q", "-", "-"], input=data, capture_output=True, timeout=120)
+    return re.sub(r"(\w)-\n(\w)", r"\1\2", r.stdout.decode("utf-8", "replace")) if r.returncode == 0 else None
+
+
 def source_text(url):
     """Plain text of a source page, or None."""
     title = _wiki_title(url)
@@ -49,6 +62,9 @@ def source_text(url):
         r = _session.get(url, timeout=30)
         if r.status_code != 200:
             return None
+        if r.content[:5] == b"%PDF-":
+            text = pdf_text(r.content)
+            return text if text and len(text.strip()) >= MIN_TEXT else None
         text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", r.text, flags=re.S | re.I)
         text = html.unescape(re.sub(r"<[^>]+>", " ", text))
         return text if len(text.strip()) >= MIN_TEXT else None      # a refusal ("no scraping"), not a page

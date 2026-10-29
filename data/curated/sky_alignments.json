@@ -486,7 +486,7 @@
    "body": "moon",
    "event": "major_south",
    "rise_set": "set",
-   "azimuth": null,
+   "azimuth": 200.0,
    "feature": "The level top of the recumbent stone, between its two flankers, lines up with the southern moonset towards the Hill of Fare.",
    "claim": "Easter Aquhorthies, a recumbent stone circle, faces the setting of the southern moon.",
    "verdict": "disputed",
@@ -520,8 +520,25 @@
      "url": "https://en.wikipedia.org/wiki/Recumbent_stone_circle",
      "locator": "Lunar alignment",
      "quote": "However recent excavation at Tomnaverie stone circle has suggested that no accurate alignment of the circle was ever intentional."
+    },
+    {
+     "title": "Recumbent stone circles: perpendicular line azimuth values",
+     "author": "Adam Welfare and Alison McCaig, Historic Environment Scotland (2023)",
+     "kind": "survey",
+     "url": "https://i.rcahms.gov.uk/canmore-pdf/WP00007950.pdf",
+     "locator": "Alphabetical order",
+     "quote": "Easter Aquhorthies 200°"
+    },
+    {
+     "title": "Recumbent stone circles: perpendicular line azimuth values",
+     "author": "Adam Welfare and Alison McCaig, Historic Environment Scotland (2023)",
+     "kind": "survey",
+     "url": "https://i.rcahms.gov.uk/canmore-pdf/WP00007950.pdf",
+     "locator": "Note 1",
+     "quote": "making a judgement as to the best line representative of the horizontal axis of a recumbent stone, dropping the perpendicular from its centre and then evaluating the latter’s angle"
     }
-   ]
+   ],
+   "azimuth_of": "the perpendicular to the recumbent stone"
   },
   {
    "id": "loanhead-of-daviot-southern-moon",
@@ -532,8 +549,8 @@
    "body": "moon",
    "event": "major_south",
    "rise_set": "set",
-   "azimuth": 199.0,
-   "feature": "The recumbent stone and flankers lie between azimuths 196 and 202 degrees from the centre of the ring, towards the arc of the southern moon.",
+   "azimuth": 182.0,
+   "feature": "The recumbent stone faces 182° (the perpendicular on the RCAHMS plan; Ruggles' measures from the centre of the ring give 196-202°), over the southern hills where the moon at the major standstill passes low.",
    "claim": "Like other Aberdeenshire recumbent stone circles, Loanhead of Daviot is oriented on the southern moon.",
    "verdict": "disputed",
    "views": [
@@ -566,8 +583,25 @@
      "url": "https://en.wikipedia.org/wiki/Recumbent_stone_circle",
      "locator": "Lunar alignment",
      "quote": "Recent excavations at Tomnaverie stone circle have suggested that no alignment of the circle was intended."
+    },
+    {
+     "title": "Recumbent stone circles: perpendicular line azimuth values",
+     "author": "Adam Welfare and Alison McCaig, Historic Environment Scotland (2023)",
+     "kind": "survey",
+     "url": "https://i.rcahms.gov.uk/canmore-pdf/WP00007950.pdf",
+     "locator": "Alphabetical order",
+     "quote": "Loanhead of Daviot 182°"
+    },
+    {
+     "title": "Recumbent stone circles: perpendicular line azimuth values",
+     "author": "Adam Welfare and Alison McCaig, Historic Environment Scotland (2023)",
+     "kind": "survey",
+     "url": "https://i.rcahms.gov.uk/canmore-pdf/WP00007950.pdf",
+     "locator": "Note 1",
+     "quote": "making a judgement as to the best line representative of the horizontal axis of a recumbent stone, dropping the perpendicular from its centre and then evaluating the latter’s angle"
     }
-   ]
+   ],
+   "azimuth_of": "the perpendicular to the recumbent stone"
   },
   {
    "id": "tomnaverie-minor-southern-moonset",
@@ -578,8 +612,8 @@
    "body": "moon",
    "event": "minor_south",
    "rise_set": "set",
-   "azimuth": 238.0,
-   "feature": "Seen across the circle, the recumbent (azimuth 236-240 degrees) points to Lochnagar, where the midsummer full moon sets at a minor standstill.",
+   "azimuth": 233.0,
+   "feature": "The recumbent faces 233° (the perpendicular on the RCAHMS plan; 236-240° by other measures) towards Lochnagar, 30 km away, where the moon sets at the minor standstill.",
    "claim": "Tomnaverie's recumbent marks the set of the midsummer full moon at the minor standstill over Lochnagar, though its excavator later doubted this mattered.",
    "verdict": "disputed",
    "views": [
@@ -612,8 +646,41 @@
      "url": "https://en.wikipedia.org/wiki/Tomnaverie_stone_circle",
      "locator": "Excavation",
      "quote": "This new discovery has made it doubtful that astronomical observations could have been made from within the circle or that the circle had been intended to have any precise orientation."
+    },
+    {
+     "title": "Recumbent stone circles: perpendicular line azimuth values",
+     "author": "Adam Welfare and Alison McCaig, Historic Environment Scotland (2023)",
+     "kind": "survey",
+     "url": "https://i.rcahms.gov.uk/canmore-pdf/WP00007950.pdf",
+     "locator": "Alphabetical order",
+     "quote": "Tomnaverie 233°"
+    },
+    {
+     "title": "The Moon and the Bonfire: an investigation of three stone circles in north-east Scotland",
+     "author": "Richard Bradley (Society of Antiquaries of Scotland, 2005; CC BY-NC 4.0)",
+     "kind": "excavation report",
+     "url": "https://books.socantscot.org/digital-books/catalog/download/17/13/987?inline=1",
+     "locator": "p. 33",
+     "quote": "Between the flankers a section of sky is visible above the recumbent stone. Ruggles has suggested that this corresponds to the position of the setting moon every eighteen and a half years."
+    },
+    {
+     "title": "The Moon and the Bonfire: an investigation of three stone circles in north-east Scotland",
+     "author": "Richard Bradley (Society of Antiquaries of Scotland, 2005; CC BY-NC 4.0)",
+     "kind": "excavation report",
+     "url": "https://books.socantscot.org/digital-books/catalog/download/17/13/987?inline=1",
+     "locator": "p. 50",
+     "quote": "it is the only place which combines a view towards Lochnagar and the northernmost position of the moon"
+    },
+    {
+     "title": "The Moon and the Bonfire: an investigation of three stone circles in north-east Scotland",
+     "author": "Richard Bradley (Society of Antiquaries of Scotland, 2005; CC BY-NC 4.0)",
+     "kind": "excavation report",
+     "url": "https://books.socantscot.org/digital-books/catalog/download/17/13/987?inline=1",
+     "locator": "p. 50",
+     "quote": "Any further to the south and the position of the moon would not coincide with the summit of the mountain."
     }
-   ]
+   ],
+   "azimuth_of": "the perpendicular to the recumbent stone"
   },
   {
    "id": "long-meg-winter-solstice-sunset",

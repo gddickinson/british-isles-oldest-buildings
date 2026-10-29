@@ -58,6 +58,20 @@ class SkyTest(unittest.TestCase):
         bad = dict(good, event="midsummer", verdict="disputed", sources=[{"title": "t"}])
         self.assertEqual(len(sky.problems([bad, bad])), 7)    # event, views, source twice; duplicate id
         self.assertEqual(sky.problems(), [])                  # the researched file
+        self.assertEqual(len(sky.problems([dict(good, azimuth_of="the recumbent")])), 1)   # no published azimuth
+
+    def test_stones_direction(self):
+        """SK7b2: a published direction of the stones gets the horizon declination there (Ruggles' measure)."""
+        a = {"lat": 57.1194, "lon": -2.85, "body": "moon", "event": "minor_south", "rise_set": "set",
+             "built": -2500, "azimuth": 233.0, "azimuth_of": "the perpendicular to the recumbent stone"}
+        out = sky.computed(a)
+        self.assertAlmostEqual(out["event_declination"], -18.83, delta=0.02)
+        self.assertAlmostEqual(out["horizon_declination_flat"], sky.declination_of(57.1194, 233.0, "moon"), places=2)
+        self.assertNotIn("horizon_declination", out)          # no skyline given
+        flat = {"alt": [1.5] * 720, "km": [30] * 720, "step": 0.5, "ground": 200}
+        hill = sky.computed(a, flat)
+        self.assertGreater(hill["horizon_declination"], hill["horizon_declination_flat"])   # hills need a higher one
+        self.assertNotIn("event_declination", sky.computed(dict(a, azimuth_of=None)))
 
     @unittest.skipUnless(shutil.which("node"), "node not installed")
     def test_browser_mirror(self):

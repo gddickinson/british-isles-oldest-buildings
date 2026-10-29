@@ -58,9 +58,16 @@ Sky and alignments (first)
 - [x] SK7b1 (2026-10-29) Sun lines on the Map page over the skyline of the clicked point (local GUI: "Over the real
       skyline", `/api/horizon`; the date's sunrise and sunset too, `horizonAzimuthDec` / `horizon_azimuth_dec`; flat
       direction on hover). Stonehenge 2500 BC midsummer sunrise: 48.2° flat, 49.3° over the skyline.
-- [ ] SK7b2 Skylines, next: Loanhead of Daviot (published 199°, skyline 203.2°) and Tomnaverie (published 238°, skyline
-      229.8°, flat 233.3°) still differ by more than 3°: read the published surveys (horizon, which stone pair, which
-      moon limb) before calling either wrong; trees and buildings are not in the terrain model.
+- [x] SK7b2 (2026-10-29) Loanhead of Daviot and Tomnaverie: the published figures are the recumbents' directions, not
+      the moon's: HES's 2023 table of perpendiculars measured on the RCAHMS plans (Loanhead 182°, Tomnaverie 233°,
+      Easter Aquhorthies 200°) and Bradley 2005 (Ruggles: the minor-standstill moon sets over Lochnagar) added; such
+      entries (`azimuth_of`) are read as Ruggles does, by the horizon declination over the stones against the moon's.
+      Easter Aquhorthies: the major-standstill moon clears the skyline over the recumbent by 0.6° of declination;
+      Loanhead by 3.3° (it passes low over it); Tomnaverie: 1.5° short, the moon sets at 229.8° on the southern end of
+      the Lochnagar massif (29 km), 3.2° left of the summit (233°) the recumbent faces. Quote checks read PDFs now.
+- [ ] SK7b3 Tomnaverie, next: Ruggles 1999 (Tables 5.1-5.3, horizon declinations of the recumbents) and Ruggles and
+      Burl 1985 to see why the moon is put on Lochnagar's summit (moon limb, the 0.15° wobble of the orbit's
+      inclination, or the summit seen between the flankers); not online.
 
 - [x] SH1 (2026-10-29, George's idea, page `/stonehenge`) Stonehenge in 3D: the stones as they survive (Anthony
       Johnson's numbered plan digitised, 89 stones; placed on the ground on the OSM stones, 1.2 m rms) and as thought

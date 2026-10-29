@@ -2725,3 +2725,21 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - `tests/cdp.mjs`: `webgl: true` launches Chrome with WebGL on the GPU (SwiftShader gives no context here);
   ui_check `stonehenge` (passes with or without WebGL: the loader says why when there is none).
 - Tests 530 OK (`test_stonehenge`: 6). Hosted copy not updated.
+
+## 2026-10-29 — Recumbent stone circles read as Ruggles does (SK7b2)
+- The two published azimuths that differed by more than 3° from the computed moonsets were never moonsets: Wikipedia's
+  196-202° (Loanhead) and 236-240° (Tomnaverie) are measures of the recumbent stone's direction. Added Historic
+  Environment Scotland's 2023 table of perpendicular-line azimuths measured on the RCAHMS plans (Welfare and McCaig;
+  Loanhead of Daviot 182°, Tomnaverie 233°, Easter Aquhorthies 200°) and Bradley's *The Moon and the Bonfire* (2005,
+  SAS, CC BY-NC 4.0: Ruggles' suggestion that the sky between the flankers is where the moon sets every 18.6 years;
+  "the only place which combines a view towards Lochnagar and the northernmost position of the moon").
+- `bidb.sky`: alignments with `azimuth_of` (the stones' direction) get the horizon declination there, flat and over the
+  skyline, beside the body's declination at the event when built; detail views say whether the body clears the skyline
+  over the stones. Easter Aquhorthies: the major-standstill moon (-29.1°) clears it by 0.6° (needs -29.7°); Loanhead:
+  by 3.3° (-32.4°), passing low over the recumbent; Tomnaverie: 1.5° short (needs -17.3°, the minor standstill gives
+  -18.8°): the moon sets at 229.8° on the southern end of the Lochnagar massif, 29 km off, 3.2° left of the summit
+  (233°) that the recumbent faces. Left as disputed; SK7b3 to read Ruggles 1999's tables.
+- Quote checks read PDF sources (`verify_research.pdf_text`, poppler's pdftotext; line-end hyphens joined): 79 of 79
+  sky quotes found.
+- Tests 532 OK (`test_sky` +1, `test_evidence` +1 with a hand-made PDF); ui_check sky passes; Tomnaverie's detail view
+  checked by screenshot. Hosted copy not updated.

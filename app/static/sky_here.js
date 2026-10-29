@@ -57,18 +57,28 @@ const SkyHere = (() => {
       : a.body === "moon" ? `Next standstill ${n.date.getFullYear()}` : `Next on ${fmtDate(n.date)}`;
   }
 
+  // The published direction is the stones', not the event's (SK7b2): is the body above the skyline there?
+  function overStones(a) {
+    const hd = a.horizon_declination ?? a.horizon_declination_flat;
+    if (hd == null || a.event_declination == null) return "";
+    const ed = a.event_declination, gap = Math.abs(ed - hd).toFixed(1);
+    return `<p class="meta">Over the stones' direction (${a.azimuth}°) a body shows above the ${a.horizon_declination != null ? "skyline" : "horizon"} only with a declination above ${hd.toFixed(1)}°; the ${
+      a.body} reaches ${ed.toFixed(1)}° (${Sky.NAMES[a.event].toLowerCase()}${a.built != null ? `, ${yearText(a.built)}` : ""}): ${ed > hd ? `it passes over that direction, ${gap}° of declination clear`
+      : `it has gone below the skyline before it gets there (${gap}° of declination short)`}.</p>`;
+  }
+
   function alignmentHTML(a) {
     const hz = a.azimuth_horizon_built != null;
     const nums = !a.event ? [] : [hz ? `over the skyline ${deg(a.azimuth_horizon_built)}${a.built != null ? ` when built (${yearText(a.built)})` : ""}, where the hills stand ${
         a.horizon_altitude >= 0 ? "+" : ""}${a.horizon_altitude.toFixed(1)}° ${a.horizon_km < 1 ? "under a kilometre" : `${Math.round(a.horizon_km)} km`} away` : "",
       `over a flat horizon ${deg(a.azimuth_built ?? a.azimuth_now)}${!hz && a.built != null ? ` when built (${yearText(a.built)})` : ""}`,
       a.built != null ? `today ${deg(hz && a.azimuth_horizon_now != null ? a.azimuth_horizon_now : a.azimuth_now)}` : "",
-      a.azimuth != null ? `published ${a.azimuth}°` : ""].filter(Boolean);
+      a.azimuth != null ? `published ${a.azimuth}°${a.azimuth_of ? ` (${a.azimuth_of})` : ""}` : ""].filter(Boolean);
     return `<div class="sky-align">
       <p><b>${esc(what(a))}</b> <span class="sky-verdict ${esc(a.verdict)}">${esc(VERDICT[a.verdict] || a.verdict)}</span></p>
       <p>${esc(a.claim)}</p>${a.feature ? `<p class="meta">${esc(a.feature)}</p>` : ""}
       ${(a.views || []).length ? `<ul>${a.views.map((v) => `<li>${esc(v)}</li>`).join("")}</ul>` : ""}
-      ${a.event ? `<p class="meta">Direction: ${nums.join("; ")}. ${esc(nextText(a))}.</p>` : ""}
+      ${a.event ? `<p class="meta">Direction: ${nums.join("; ")}. ${esc(nextText(a))}.</p>` : ""}${overStones(a)}
       ${a.viewing ? `<p class="meta">Seeing it: ${esc(a.viewing)}</p>` : ""}
       <ul class="sky-sources">${a.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${
         s.author ? ` <span class="meta">${esc(s.author)}${s.locator ? `, ${esc(s.locator)}` : ""}</span>` : ""}<br>“${esc(s.quote)}”${

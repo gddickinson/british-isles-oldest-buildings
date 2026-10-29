@@ -20,7 +20,7 @@ from .server import app
 DIST = ROOT / "dist"
 PAGES = {"/": "index.html", "/map": "map.html", "/places": "places.html", "/people": "people.html", "/pronunciation": "pronunciation.html",
          "/history": "history.html", "/change": "change.html", "/trades": "trades.html", "/oldest": "oldest.html",
-         "/stats": "stats.html", "/tours": "tours.html", "/stories": "stories.html", "/quiz": "quiz.html", "/compare": "compare.html", "/data": "data.html", "/glossary": "glossary.html", "/things": "things.html", "/sky": "sky.html", "/stonehenge": "stonehenge.html",
+         "/stats": "stats.html", "/tours": "tours.html", "/stories": "stories.html", "/quiz": "quiz.html", "/compare": "compare.html", "/data": "data.html", "/glossary": "glossary.html", "/things": "things.html", "/sky": "sky.html", "/stonehenge": "stonehenge.html", "/models": "models.html",
          "/types": "types.html",
          "/settings": "settings.html", "/help": "help.html"}
 EXTRACT_CHARS = 900          # keep the data file small enough to host
@@ -70,7 +70,10 @@ def export(thumb_limit=850, full_pages=False):
     pages.STATIC_MODE = True
     try:
         client = app.test_client()
-        for route, fname in PAGES.items():
+        from bidb import models3d
+        built = {f"/model/{m['id']}": models3d.page_file(m) for m in models3d.MODELS
+                 if m["id"] != "stonehenge" and models3d.ready(m)}       # 3D models (SH3)
+        for route, fname in {**PAGES, **built}.items():
             resp = client.get(route)
             assert resp.status_code == 200, (route, resp.status_code)
             html = _rewrite(resp.get_data(as_text=True))

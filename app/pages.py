@@ -1,7 +1,7 @@
 """HTML pages. Each page is a thin template; its data comes from the JSON API."""
 from flask import Blueprint, abort, render_template, send_from_directory
 
-from bidb import db
+from bidb import db, models3d
 from bidb.config import ROOT
 
 from .common import build_info, conn
@@ -17,7 +17,7 @@ def _globals():
     # this computer (or a device with the trusted share code), not another one
     here = not STATIC_MODE and (not has_request_context() or full_access())
     return {"info": build_info(), "static_mode": STATIC_MODE, "this_machine": here,
-            "can_edit": here and (ROOT / "data").exists()}
+            "can_edit": here and (ROOT / "data").exists(), "models3d": models3d.links(STATIC_MODE)}
 
 
 @bp.route("/")
@@ -124,7 +124,26 @@ def sky():
 
 @bp.route("/stonehenge")
 def stonehenge():
-    return render_template("stonehenge.html", page="stonehenge")
+    return render_template("stonehenge.html", page="models",
+                           m={"name": "Stonehenge", "record": "Q39671", "built_label": "As built (c. 2500 BC)",
+                              "axis_label": "Solstice axis", "ghosts": "Mark lost stones (as built)"})
+
+
+@bp.route("/models")
+def models():
+    """Every 3D model (roadmap SH3), built or still to come."""
+    rows = [{**m, "ready": models3d.ready(m),
+             "href": models3d.page_file(m) if STATIC_MODE else m.get("route", f"/model/{m['id']}")}
+            for m in models3d.MODELS]
+    return render_template("models.html", page="models", models=rows)
+
+
+@bp.route("/model/<mid>")
+def model(mid):
+    m = models3d.get(mid)
+    if not m or m["id"] == "stonehenge" or not models3d.ready(m):
+        abort(404)
+    return render_template("model.html", page="models", m={**m, **m.get("page", {})}, mid=mid)
 
 
 @bp.route("/glossary")

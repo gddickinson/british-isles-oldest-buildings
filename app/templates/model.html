@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ m.name }} in 3D · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='stonehenge.css') }}">
+<main class="sh-page">
+  <div class="sh-stage">
+    <canvas id="sh_canvas" data-module="model_view.js" data-model="{{ mid }}" aria-label="3D model of {{ m.name }}"></canvas>
+    <div id="sh_names" class="sh-names" aria-hidden="true"></div>
+    {% include "_model_panel.html" %}
+    <div class="sh-bar"><b id="sh_when"></b><div id="sh_read"></div></div>
+    <aside id="sh_stone" class="sh-stone" hidden></aside>
+  </div>
+  <section class="prose sh-about">
+    <h2>About the model</h2>
+    {% for para in m.about or [] %}<p>{{ para }}</p>{% endfor %}
+    <h3>What it is built from</h3>
+    <ul id="sh_facts"></ul>
+    <h3>Sources and credits</h3>
+    <ul id="sh_credits" class="meta"></ul>
+  </section>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='stonehenge_astro.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='stonehenge_page.js') }}"></script>
+{% endblock %}

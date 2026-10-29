@@ -1,0 +1,34 @@
+{# The panel of a 3D model page (stonehenge.html, model.html); controls wired by model_clock.js.
+   m: {name, built_label (or none), lantern, ghosts, axis_label} #}
+<aside class="sh-panel">
+  <h1>{{ m.name }} in 3D</h1>
+  {% if m.built_label %}
+  <fieldset class="sh-row sh-views">
+    <label><input type="radio" name="sh_view" value="now" checked> As it is now</label>
+    <label><input type="radio" name="sh_view" value="built"> {{ m.built_label }}</label>
+  </fieldset>
+  {% endif %}
+  <div class="sh-row sh-date">
+    <input id="sh_d" type="number" min="1" max="31" aria-label="Day">
+    <select id="sh_m" aria-label="Month"></select>
+    <input id="sh_y" type="number" min="1" max="9999" aria-label="Year">
+    <select id="sh_era" aria-label="Era"><option>BC</option><option selected>AD</option></select>
+    <button type="button" class="btn" id="sh_now">Now</button>
+  </div>
+  <label class="sh-row">Time of day <input id="sh_time" type="range" min="0" max="1439" step="1"></label>
+  <div class="sh-row">
+    <button type="button" class="btn" id="sh_play">▶ Play</button>
+    <select id="sh_speed" aria-label="Speed"><option value="60">1 hour a second</option><option value="10">10 minutes a second</option><option value="1">1 minute a second</option><option value="1440">1 day a second</option></select>
+  </div>
+  <div id="sh_events" class="sh-events"></div>
+  <label class="sh-row">View <select id="sh_cams"></select></label>
+  <div class="sh-row sh-checks">
+    <label class="check"><input type="checkbox" id="sh_labels"> {{ m.labels_label or "Stone numbers" }}</label>
+    <label class="check"><input type="checkbox" id="sh_starnames"> Star names</label>
+    {% if m.axis_label %}<label class="check"><input type="checkbox" id="sh_axis"> {{ m.axis_label }}</label>{% endif %}
+    {% if m.ghosts %}<label class="check"><input type="checkbox" id="sh_ghosts"> {{ m.ghosts }}</label>{% endif %}
+    {% if m.lantern %}<label class="check"><input type="checkbox" id="sh_lantern"> Lantern (light inside)</label>{% endif %}
+  </div>
+  <p id="sh_note" class="meta" aria-live="polite"></p>
+  <p class="meta"><a href="{{ url_for('pages.models') }}">All 3D models</a>{% if m.record %} · <a href="{{ url_for('pages.building_page', bid=m.record) }}">The record</a>{% endif %}</p>
+</aside>

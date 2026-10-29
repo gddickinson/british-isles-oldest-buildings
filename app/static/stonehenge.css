@@ -37,3 +37,8 @@
   .sh-stone { left: 12px; width: auto; top: auto; bottom: 70px; max-height: 45%; }
 }
 .sh-nogl { color: #f2efe8; padding: 40px; max-width: 520px; }
+/* Page /models: every 3D model (SH3) */
+.models-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.models-item { border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; background: var(--panel); }
+.models-item p { margin: 6px 0 0; }
+.models-item.soon { opacity: 0.6; }

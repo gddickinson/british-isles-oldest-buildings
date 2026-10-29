@@ -26,6 +26,16 @@ const PALETTES = {
   sarsen: { base: [150, 143, 128], dark: [96, 92, 84], patches: [[176, 172, 120], [190, 192, 176], [170, 120, 70]] },
   bluestone: { base: [92, 98, 108], dark: [60, 64, 72], patches: [[150, 156, 160], [120, 126, 118], [168, 168, 150]] },
   sandstone: { base: [128, 130, 112], dark: [92, 96, 84], patches: [[160, 160, 140], [140, 150, 120], [150, 140, 110]] },
+  // Rocks of the other models (model_parts.js): Lewisian gneiss, greywacke, granite, quartz, Orkney flagstone,
+  // schist, oak timber, and the rubble of a cairn.
+  gneiss: { base: [150, 148, 142], dark: [88, 86, 84], patches: [[200, 198, 190], [120, 118, 126], [176, 168, 120]] },
+  greywacke: { base: [104, 108, 100], dark: [66, 70, 64], patches: [[140, 146, 132], [120, 126, 110], [160, 150, 110]] },
+  granite: { base: [150, 146, 140], dark: [100, 96, 92], patches: [[190, 186, 180], [130, 120, 116], [170, 160, 140]] },
+  quartz: { base: [226, 226, 220], dark: [176, 176, 170], patches: [[240, 240, 236], [200, 200, 196], [214, 210, 196]] },
+  flagstone: { base: [112, 106, 98], dark: [70, 66, 62], patches: [[140, 134, 124], [120, 116, 104], [168, 150, 110]] },
+  schist: { base: [122, 124, 118], dark: [80, 82, 78], patches: [[160, 162, 150], [140, 136, 112], [176, 160, 120]] },
+  timber: { base: [128, 100, 72], dark: [84, 62, 44], patches: [[150, 120, 88], [110, 86, 60], [140, 116, 84]] },
+  cairn: { base: [130, 128, 120], dark: [76, 74, 70], patches: [[170, 168, 160], [110, 108, 100], [150, 146, 120]] },
 };
 function rockCanvas(kind, size = 512) {
   const p = PALETTES[kind], c = document.createElement("canvas");

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}3D models · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='stonehenge.css') }}">
+<main class="page models-page">
+  <h1>3D models</h1>
+  <p class="lede">Monuments rebuilt in three dimensions from their published surveys, every stone and measurement
+    with its source, on the real ground and under the sun, moon and stars of any date and time, so the sunrises,
+    sunsets and moonrises they are said to face can be watched as they happen.</p>
+  <ul class="models-list">
+    {% for x in models %}
+    <li class="models-item{{ '' if x.ready else ' soon' }}">
+      {% if x.ready %}<a href="{{ x.href }}"><b>{{ x.name }}</b></a>{% else %}<b>{{ x.name }}</b> <span class="meta">(coming)</span>{% endif %}
+      <p>{{ x.summary }}</p>
+      <p class="meta"><a href="{{ url_for('pages.building_page', bid=x.record) }}">The record</a></p>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="meta">The models need a browser that can draw WebGL. Each model's page lists the facts it is built from
+    and where each comes from; what is not known is said, not invented.</p>
+</main>
+{% endblock %}

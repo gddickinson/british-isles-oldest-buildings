@@ -81,6 +81,26 @@ Sky and alignments (first)
       barrows named; per-stone heights for the fallen and lost uprights where published (Cleal et al. 1995, the
       2012 laser-scan report, not reachable online); the hosted copy (about 1.3 MB more).
 
+3D models (planned 2026-10-29, George: "go ahead with your recommendation, then work through all of the candidates";
+a page listing every model, and a link on each structure's own page)
+- [ ] SH3a Shared engine: the sky, ground and clock of /stonehenge as modules any model uses (`model_clock.js`,
+      stonehenge_scene.js with a shadow box per model), a generic page `/model/<id>` built from one data file
+      (stones, mounds with passages and chambers, posts, slabs; interior surfaces lit only by direct light, so a
+      sunbeam shows in a dark chamber), `bidb/models3d.py` (registry, ground from EA LiDAR in England else the
+      terrain tiles, stars, skyline, quotes checked); page `/models` with every model, "3D model" on each record's
+      page, nav and Help.
+- [ ] SH3b Bryn Celli Ddu: the passage tomb on its henge, the midsummer sunrise down the passage into the chamber.
+- [ ] SH3c Newgrange: mound, kerb, passage rising to the cruciform chamber, the roof-box; the midwinter sunbeam.
+- [ ] SH3d Calanais: the circle, avenue, rows and chambered cairn from the OSM stones; the moon skimming the
+      "Sleeping Beauty" at the major standstill.
+- [ ] SH3e Orkney: Maeshowe (midwinter sunset down the passage, Ward Hill, the Barnhouse Stone), the Stones of
+      Stenness and the Ring of Brodgar in one landscape.
+- [ ] SH3f Woodhenge and the Durrington Walls Southern Circle rebuilt from their postholes (midsummer sunrise,
+      midwinter sunrise), facing Stonehenge across the landscape.
+- [ ] SH3g Mousa Broch, surviving and in cutaway (galleries and stair inside the double wall).
+- [ ] SH3h Any stone circle: a simpler 3D view built from its OSM stones and the terrain tiles for every circle with
+      mapped stones, from its record page.
+
 LiDAR and landscape
 - [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade
       (WMS, OGL), "Ground (LiDAR)" in the layer panel with opacity; local GUI (the hosted copy cannot reach map servers).

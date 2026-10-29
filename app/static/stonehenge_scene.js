@@ -21,7 +21,7 @@ export function heightField(dtm, raw) {
   };
 }
 
-function grassTexture() {
+export function grassTexture() {
   const s = 512, c = document.createElement("canvas");
   c.width = c.height = s;
   const g = c.getContext("2d"), img = g.createImageData(s, s);
@@ -191,14 +191,18 @@ export function createScene(canvas, data, dtmRaw) {
   const glow = sunGlow();
   scene.add(glow);
 
+  // Shadows are sharp within `half` metres of the model's focus (data.shadow: {half, centre: [x, y]}): small for a
+  // passage tomb, so a narrow sunbeam down its passage is drawn crisply.
+  const half = data.shadow?.half ?? 95, fc = data.shadow?.centre ?? [0, 0];
+  const focus = new THREE.Vector3(fc[0], height(fc[0], fc[1]) ?? 0, -fc[1]);
   const sunLight = new THREE.DirectionalLight(0xffffff, 3);
   const moonLight = new THREE.DirectionalLight(0xb8c8ff, 0.3);
   for (const l of [sunLight, moonLight]) {
     l.castShadow = true;
     l.shadow.mapSize.set(l === sunLight ? 4096 : 2048, l === sunLight ? 4096 : 2048);
-    Object.assign(l.shadow.camera, { left: -95, right: 95, top: 95, bottom: -95, near: 1, far: 800 });
-    l.shadow.bias = -0.0004; l.shadow.normalBias = 0.04;
-    l.target.position.set(0, 0, 0);
+    Object.assign(l.shadow.camera, { left: -half, right: half, top: half, bottom: -half, near: 1, far: 800 });
+    l.shadow.bias = -0.0004; l.shadow.normalBias = half < 60 ? 0.02 : 0.04;
+    l.target.position.copy(focus);
     scene.add(l, l.target);
   }
   const hemi = new THREE.HemisphereLight(0xbfd4ff, 0x4a5a32, 0.5);
@@ -212,12 +216,12 @@ export function createScene(canvas, data, dtmRaw) {
     su.sunPosition.value.copy(sd);
     const day = THREE.MathUtils.smoothstep(s.seen, -4, 6);
     const low = 1 - THREE.MathUtils.smoothstep(s.seen, 2, 25);
-    sunLight.position.copy(sd).multiplyScalar(400);
+    sunLight.position.copy(sd).multiplyScalar(400).add(focus);
     sunLight.intensity = 3.2 * THREE.MathUtils.smoothstep(s.seen, -1, 4);
     sunLight.color.setRGB(1, 0.92 - 0.25 * low, 0.85 - 0.45 * low);
     sunLight.castShadow = s.seen > -1;
     const moonUp = THREE.MathUtils.smoothstep(m.seen, -1, 3);
-    moonLight.position.copy(md).multiplyScalar(400);
+    moonLight.position.copy(md).multiplyScalar(400).add(focus);
     moonLight.intensity = 0.55 * m.phase * moonUp * (1 - day);
     moonLight.castShadow = moonLight.intensity > 0.03;
     hemi.intensity = 0.14 + 0.5 * day + 0.08 * m.phase * moonUp;   // starlight and sky glow on moonless nights
@@ -251,5 +255,5 @@ export function createScene(canvas, data, dtmRaw) {
     camera.updateProjectionMatrix();
     starPts.material.uniforms.scale.value = renderer.getPixelRatio() * Math.max(0.8, h / 900);
   }
-  return { renderer, scene, camera, height, setSky, resize, starPts };
+  return { renderer, scene, camera, height, setSky, resize, starPts, hemi };
 }

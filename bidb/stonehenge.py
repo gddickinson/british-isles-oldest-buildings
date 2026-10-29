@@ -12,7 +12,7 @@ import math
 import os
 import struct
 
-from . import osgrid, sky_horizon
+from . import models3d, osgrid, sky_horizon
 from . import stonehenge_layout as L
 from . import stonehenge_sources as S
 from .config import ROOT
@@ -21,15 +21,6 @@ HERE = os.path.join(ROOT, "data", "curated", "stonehenge")
 OUT = os.path.join(ROOT, "app", "static", "data")
 SIZE, STEP = 800, 2              # metres of LiDAR round the centre, metres between written heights
 OUTLIERS = ("91", "92", "93", "94", "95", "96", "97")
-STAR_NAMES = {
-    "Alp CMa": "Sirius", "Alp Boo": "Arcturus", "Alp Lyr": "Vega", "Alp Aur": "Capella", "Bet Ori": "Rigel",
-    "Alp CMi": "Procyon", "Alp Ori": "Betelgeuse", "Alp Aql": "Altair", "Alp Tau": "Aldebaran", "Alp Sco": "Antares",
-    "Alp Vir": "Spica", "Bet Gem": "Pollux", "Alp PsA": "Fomalhaut", "Alp Cyg": "Deneb", "Alp Leo": "Regulus",
-    "Alp Gem": "Castor", "Alp UMi": "Polaris", "Alp Dra": "Thuban", "Gam Ori": "Bellatrix", "Eps Ori": "Alnilam",
-    "Zet Ori": "Alnitak", "Del Ori": "Mintaka", "Eta Tau": "Alcyone (Pleiades)", "Alp UMa": "Dubhe",
-    "Eta UMa": "Alkaid", "Zet UMa": "Mizar", "Bet UMi": "Kochab", "Alp Per": "Mirfak", "Bet Per": "Algol",
-    "Alp And": "Alpheratz", "Alp Cas": "Schedar", "Alp Hya": "Alphard", "Alp Peg": "Markab",
-}
 
 
 def _round(pts):
@@ -83,13 +74,7 @@ def write():
     with open(os.path.join(OUT, dtm["file"]), "wb") as f:
         f.write(struct.pack("<%dH" % (dtm["n"] ** 2), *[round((h - dtm["min"]) * 100) for r in grid for h in r]))
     hz = sky_horizon.compact(sky_horizon.cached_profile(round(lat, 4), round(lon, 4)))
-    stars = []
-    for ra, dec, pmra, pmdec, mag, bv, name in S.bright_stars(5.5):
-        bayer = " ".join(name.lstrip("0123456789").split()[:2]) if name else ""
-        row = [round(ra, 4), round(dec, 4), round(pmra, 3), round(pmdec, 3), round(mag, 2), round(bv, 2)]
-        if bayer in STAR_NAMES:
-            row.append(STAR_NAMES[bayer])
-        stars.append(row)
+    stars = models3d.stars()
     sources = research["sources"]
     info = {sid: {"group": r["group"], "state": r["state_now"], "notes": r.get("notes", ""),
                   "cites": [{"title": sources[c["source"]]["title"], "url": sources[c["source"]]["url"],

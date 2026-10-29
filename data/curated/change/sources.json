@@ -1400,5 +1400,17 @@
   "licence_quote": "Cambridge : at the University Press 1913 (title page)",
   "used": "Every row of the table of sources, read from the page images (leaves 32-39): 310 printed rows, 323 charters to 137 places (data/curated/change/data/charters_ballard_1913.csv, roadmap C7b1)",
   "checked": "2026-10-28, page images and text downloaded (HTTP 200)"
+ },
+ "ballard_tait_1923_charters": {
+  "short": "Ballard and Tait, British Borough Charters 1216-1307 (1923)",
+  "publisher": "Cambridge University Press",
+  "citation": "Adolphus Ballard and James Tait, British Borough Charters 1216-1307 (Cambridge: at the University Press, 1923), Introduction, section 3, Sources, pp. xxv-xxxvi (table of the charters, their dates and grantors; England and Wales, Scotland, Ireland) and section 4, Critical Notes",
+  "url": "https://archive.org/details/britishboroughc00balluoft",
+  "download_url": "https://archive.org/download/britishboroughc00balluoft/page/n32_w2000.jpg",
+  "licence": "Public domain (published 1923; Ballard died in 1915, Tait in 1944, more than 70 years ago)",
+  "licence_url": "https://archive.org/details/britishboroughc00balluoft",
+  "licence_quote": "ADOLPHUS BALLARD, who died in 1915 at the early age of forty-eight (Preface, p. v)",
+  "used": "Every row of the table of sources, read from the page images (leaves 33-45): 532 printed rows to 214 places (data/curated/change/data/charters_ballard_tait_1923.csv, roadmap C7b2); the critical notes for Rathmore, Barnard Castle and Skynburgh",
+  "checked": "2026-10-28, page images and text downloaded (HTTP 200)"
  }
 }

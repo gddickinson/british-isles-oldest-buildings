@@ -1833,7 +1833,24 @@
     1205,
     1210,
     1215,
-    1220
+    1220,
+    1225,
+    1230,
+    1235,
+    1240,
+    1245,
+    1250,
+    1255,
+    1260,
+    1265,
+    1270,
+    1275,
+    1280,
+    1285,
+    1290,
+    1295,
+    1300,
+    1305
    ],
    "labels": {},
    "unit": "",
@@ -1851,13 +1868,19 @@
      "label": "Other borough"
     }
    ],
-   "note": "137 towns with a charter (or other grant) dated before 1216 in Ballard's British Borough Charters, shown from the middle of the dated range of their earliest one: 51 mentioned as boroughs in Domesday Book, 45 founded by lesser lords, as his table prints them. A town appears with its earliest charter in the table, not when it became a town or a borough.",
+   "note": "258 towns with a charter (or other grant) dated before 1307 in British Borough Charters (Ballard 1913, Ballard and Tait 1923), 121 of them first after 1216, shown from the middle of the dated range of their earliest one: 57 mentioned as boroughs in Domesday Book, 122 founded by lesser lords, as the tables print them. A town appears with its earliest charter in the tables, not when it became a town or a borough. The charters to the Cinque Ports as a body, and Rathcool's (printed as in county Tipperary), are not placed.",
    "sources": [
     {
      "short": "Ballard 1913",
      "licence": "Public domain (1913)",
      "url": "https://archive.org/details/britishboroughch00balluoft",
      "citation": "Adolphus Ballard, British Borough Charters 1042-1216 (Cambridge University Press, 1913), Introduction section 4, Sources, pp. xxvi-xxxiii"
+    },
+    {
+     "short": "Ballard and Tait 1923",
+     "licence": "Public domain (authors died 1915 and 1944)",
+     "url": "https://archive.org/details/britishboroughc00balluoft",
+     "citation": "Adolphus Ballard and James Tait, British Borough Charters 1216-1307 (Cambridge University Press, 1923), Introduction section 3, Sources, pp. xxv-xxxvi"
     }
    ]
   }

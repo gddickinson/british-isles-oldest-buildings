@@ -2441,3 +2441,27 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   build.
 - Tests 477 OK (`test_change_charters`, 7 new); ui_check change_charters (new), change_steam, map OK; the layer checked in
   screenshots of /map at 1160 and 1210. Hosted copy not updated.
+
+## 2026-10-28 — C7b2: borough charters 1216-1307 from Ballard and Tait (1923)
+- The table of sources of British Borough Charters 1216-1307 (Ballard and Tait 1923, Introduction section 3,
+  pp. xxv-xxxvi; public domain, Tait d. 1944) read by eye from the page images (Internet Archive
+  `britishboroughc00balluoft`, leaves 33-45, `page/n<leaf-1>_w2000.jpg` cropped in halves) →
+  `data/curated/change/data/charters_ballard_tait_1923.csv` (532 printed rows to 214 places; the sources column left
+  out). "(a)", "(b)" after a date are separate charters; "Do." under a king of another reign is written as the king of
+  the date (Stafford 1228 and 1261, Stamford 1257 under Edward I; Dublin 1280 and 1285 under Henry III; the rolls cited
+  are of those reigns). Rows with no grantor printed (Brecon, Criccieth, Portsmouth, York 1256-67), the boroughs' own
+  grants (Newcastle-under-Lyme, Warrington) and the Totnes composition: kind `other`, counted, not drawn.
+- Joined to C7b1 in `bidb/change_charters.py` (`load_volume`, `load`): the critical notes show two first-volume
+  charters printed again with new dates (Rathmore "assigned ... to 1195-1257" in vol. i; Barnard Castle, Hugh de
+  Balliol died 1228 or 1229), counted once at the 1923 date; the footnote on Oxford University "1301 (b)": "Should be
+  1305". Wavermouth and Skynburgh both placed at Skinburness (Collingwood in the critical note: "only an alternative
+  name"); Westcheap at Pontefract; Rathcool and the Cinque Ports as a body not placed (`UNPLACED`).
+- Graph "Borough charters per decade, 1040-1309" replaces the 1040-1219 one (ids `charters_<kind>`; old CSVs removed),
+  break at 1216; 853 charters to 260 towns; busiest decade the 1250s (113; 43 dated 1256) with Tait's quote on the lost
+  Charter Roll of 40 Henry III, and his "as nearly exhaustive as it was possible to make it" against Ballard's "about
+  330" for why the line may step at 1216. Layer to 1307: 258 towns, 121 first after 1216.
+- Correction: C7b1's note said 100 royal grants were King John's; the count matched John fitz Robert (Corbridge), a
+  lord. Now 99 (counted by kind).
+- Source `ballard_tait_1923_charters` (138), DATA_LICENSE.md row; 320 series, 24 layers.
+- Tests 478 OK (`test_change_charters`: new date forms, kinds, both volumes); ui_check change_charters (updated), map
+  OK; graph and layer (1300: 253 boroughs) checked in screenshots. Hosted copy not updated.

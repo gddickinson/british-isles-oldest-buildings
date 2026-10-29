@@ -1,4 +1,4 @@
-"""Borough charters 1042-1216 (roadmap C7b1): Ballard's table of sources, read from the page images."""
+"""Borough charters 1042-1307 (roadmap C7b1, C7b2): the tables of sources of both volumes, read from the page images."""
 import unittest
 
 from bidb import change_charters as cc
@@ -21,6 +21,12 @@ class Charters(unittest.TestCase):
         self.assertEqual(cc.years("c. 1175"), (1175, 1175, 1))
         self.assertEqual(cc.years("After 1212"), (1212, 1212, 1))
         self.assertEqual(cc.years("1154-89 (R)"), (1154, 1189, 1))
+        self.assertEqual(cc.years("1228 (b)"), (1228, 1228, 1))
+        self.assertEqual(cc.years("?1296"), (1296, 1296, 1))
+        self.assertEqual(cc.years("1230?"), (1230, 1230, 1))
+        self.assertEqual(cc.years("1272-c. 74"), (1272, 1274, 1))
+        self.assertEqual(cc.years("1241-c. 1286"), (1241, 1286, 1))
+        self.assertEqual(cc.years("1254 (Fine)"), (1254, 1254, 1))
         with self.assertRaises(ValueError):
             cc.years("Do.")
 
@@ -38,12 +44,30 @@ class Charters(unittest.TestCase):
         self.assertEqual(cc.kind("Odo, Bp. of Bayeux"), "church")
         self.assertEqual(cc.kind("Henry, Abbot of Fécamp"), "church")
         self.assertEqual(cc.kind("Walter de Lacy"), "lay")
+        self.assertEqual(cc.kind("Henry III (to Prior)"), "crown")
+        self.assertEqual(cc.kind("Edward son of Henry III"), "lay")         # the Lord Edward
+        self.assertEqual(cc.kind("Richard, king of the Romans"), "lay")     # earl of Cornwall
+        self.assertEqual(cc.kind("Jordan Bishop"), "lay")                   # a surname
+        self.assertEqual(cc.kind("Gilbert dean of Cloyne"), "church")
+        self.assertEqual(cc.kind("Mayor and community"), "other")
+        self.assertEqual(cc.kind(""), "other")
 
     def test_totals(self):
         f = cc.facts(self.rows)
-        self.assertEqual((f["charters"], f["boroughs"]), (323, 137))
-        self.assertEqual(f["kinds"], {"crown": 234, "lay": 63, "church": 26})
-        self.assertEqual(sum(sum(d.values()) for d in cc.per_decade(self.rows).values()), 323)
+        self.assertEqual((f["v1"], f["v2"], f["charters"], f["boroughs"]), (321, 532, 853, 260))
+        self.assertEqual(f["kinds"], {"crown": 617, "lay": 173, "church": 51})
+        self.assertEqual((f["other"], f["john"], f["henry3"], f["edward1"]), (12, 99, 235, 117))
+        self.assertEqual(sum(sum(d.values()) for d in cc.per_decade(self.rows).values()), 853)
+        v1 = cc.load(path_1923=None)
+        self.assertEqual(sum(r["count"] for r in v1), 321)              # 323 printed, 2 dated again in 1923
+
+    def test_volumes(self):
+        v2 = [r for r in self.rows if r["volume"] == 2]
+        self.assertEqual(min(r["year"] for r in v2), 1216)               # Helmsley c. 1186-1227 kept at 1216
+        self.assertEqual(max(r["year"] for r in self.rows if r["volume"] == 1), 1216)
+        oxf = [r for r in v2 if r["borough"] == "Oxford (University)" and r["date"] == "1301 (b)"]
+        self.assertEqual(oxf[0]["year"], 1305)                           # footnote: "Should be 1305"
+        self.assertEqual({r["date"] for r in self.rows if r["borough"] == "Rathmore"}, {"1215-57"})
 
     def test_first_charters(self):
         first = {r[0]: r for r in cc.first_charters(self.rows)}
@@ -52,15 +76,20 @@ class Charters(unittest.TestCase):
         self.assertAlmostEqual(first["Hythe"][2], 1.08, places=2)   # Hythe in Kent, not Hampshire
         self.assertEqual(first["Kilkenny"][5], 1)                   # italics: founded by a lesser lord
         self.assertNotIn("Elvet", first)                            # the prior's borough stands at Durham
+        self.assertEqual(first["Kingston upon Hull"][3], 1299)       # Edward I, first in the second volume
+        self.assertEqual(first["Skinburness"][3], 1300)              # Wavermouth, the same port (critical note)
+        self.assertAlmostEqual(first["Berwick"][1], 55.77, places=2) # Berwick-upon-Tweed
+        self.assertNotIn("Rathcool", first)
         self.assertEqual(len({(r[1], r[2]) for r in first.values()}), len(first))
 
     def test_series(self):
         pts, rows = cc.series(self.rows)
         self.assertEqual(len(rows), 3)
-        self.assertEqual(rows[0]["models"], ["charters_lay_1216", "charters_church_1216"])
-        self.assertIn("323 charters to 137 towns", rows[0]["note"])
-        self.assertEqual(dict(pts["charters_crown_1216"])[1200], 68)
-
+        self.assertEqual(rows[0]["models"], ["charters_lay", "charters_church"])
+        self.assertEqual(rows[0]["breaks"][0][0], 1216)
+        self.assertIn("853 charters to 260 towns", rows[0]["note"])
+        self.assertEqual(dict(pts["charters_crown"])[1200], 68)
+        self.assertEqual(dict(pts["charters_crown"])[1250], 86)
 
 if __name__ == "__main__":
     unittest.main()

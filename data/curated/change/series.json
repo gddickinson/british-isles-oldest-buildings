@@ -5720,26 +5720,33 @@
   "hidden": true
  },
  {
-  "id": "charters_crown_1216",
+  "id": "charters_crown",
   "theme": "People and settlements",
-  "title": "Borough charters per decade, 1040-1219",
+  "title": "Borough charters per decade, 1040-1309",
   "region": "the isles",
   "unit": "charters",
   "unit_long": "charters granted in the decade",
   "label": "Granted by kings",
   "sources": [
-   "ballard_1913_charters"
+   "ballard_1913_charters",
+   "ballard_tait_1923_charters"
   ],
-  "file": "charters_crown_1216.csv",
+  "file": "charters_crown.csv",
   "default": false,
   "models": [
-   "charters_lay_1216",
-   "charters_church_1216"
+   "charters_lay",
+   "charters_church"
   ],
-  "note": "The charters and other documents granted to the boroughs of the isles before the death of King John, from the table of sources in Adolphus Ballard's British Borough Charters 1042-1216 (1913, pp. xxvi-xxxiii): 323 charters to 137 towns (London's sokens and gilds and Oxford's cordwainers counted with their town), by the decade of the middle of their dated range (1216 for ranges running past it); 46 are dated only within more than twenty years, so a decade's count is rough. Kings granted 234, lay lords 63 and bishops, abbots and popes 26. The busiest decade is the 1200s (81); 100 of the royal grants are King John's (1199-1216). These are the charters Ballard found in print, rolls and town archives, not every grant made: he writes that he collected \"about 330 charters and documents relating to the boroughs of the British Isles, which can be dated before the death of King John\" (Preface, p. v). John's charters as Count of Mortain and Lord of Ireland count with the lords."
+  "note": "The charters and other documents granted to the boroughs of the isles from Edward the Confessor to the end of Edward I's reign, from the tables of sources in British Borough Charters: 321 to 1216 in Adolphus Ballard's first volume (1913, pp. xxvi-xxxiii) and 532 from 1216 to 1307 in the second, which James Tait finished after Ballard's death (1923, pp. xxv-xxxvi): 853 charters to 260 towns (sokens, gilds and the universities of Oxford and Cambridge counted with their town). Each charter is at the decade of the middle of its dated range, kept within its volume's years; 72 are dated only within more than twenty years, so a decade's count is rough. Kings granted 617, lay lords 173 and bishops, abbots and popes 51; 12 more have no grantor printed or were made by the townspeople themselves, and are not drawn. 99 of the royal grants before 1216 are King John's, 235 after it Henry III's and 117 Edward I's. The busiest decade is the 1250s (113; 43 dated 1256 alone), although Tait regrets that of the Charter Rolls \"one of the missing rolls is that of 40 Henry III (1255-6) which was the most important year of the reign from our point of view\" (p. xxiv). The two volumes did not collect alike: Ballard writes of \"about 330 charters and documents relating to the boroughs of the British Isles, which can be dated before the death of King John\" (1913, Preface, p. v), while for 1216-1307 \"as regards charters in the strict sense, the collection is as nearly exhaustive as it was possible to make it\" but of documents such as grants of murage and pavage \"only typical examples could be given\" (1923, pp. v-vi, xxiii), so the line may step at 1216. John's charters as Count of Mortain and Lord of Ireland, the Lord Edward's, Edward of Caernarfon's as Prince of Wales and Richard of Cornwall's as King of the Romans count with the lords.",
+  "breaks": [
+   [
+    1216,
+    "Ballard's first volume ends with King John's death in 1216 and the second (Ballard and Tait, 1923) begins there; the second aims to hold every charter in the strict sense"
+   ]
+  ]
  },
  {
-  "id": "charters_lay_1216",
+  "id": "charters_lay",
   "theme": "People and settlements",
   "title": "Borough charters: by lay lords",
   "region": "the isles",
@@ -5747,14 +5754,15 @@
   "unit_long": "charters granted in the decade",
   "label": "By lay lords",
   "sources": [
-   "ballard_1913_charters"
+   "ballard_1913_charters",
+   "ballard_tait_1923_charters"
   ],
-  "file": "charters_lay_1216.csv",
+  "file": "charters_lay.csv",
   "default": false,
   "hidden": true
  },
  {
-  "id": "charters_church_1216",
+  "id": "charters_church",
   "theme": "People and settlements",
   "title": "Borough charters: by bishops, abbots and popes",
   "region": "the isles",
@@ -5762,9 +5770,10 @@
   "unit_long": "charters granted in the decade",
   "label": "By bishops, abbots and popes",
   "sources": [
-   "ballard_1913_charters"
+   "ballard_1913_charters",
+   "ballard_tait_1923_charters"
   ],
-  "file": "charters_church_1216.csv",
+  "file": "charters_church.csv",
   "default": false,
   "hidden": true
  }

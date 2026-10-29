@@ -9,7 +9,7 @@ are moved to [`ROADMAP_DONE.md`](ROADMAP_DONE.md).
 - Building types: page `/types` (BT4a: family tree on a time axis, type and material pages, detail-view links; BT5: charts through time, spread by county, lines of descent; hosted too, BT4b; BT6b: plans of real examples on type pages; BT6c1: labelled diagrams of 22 types); 321 types, 320 links, 2,216 quotes; materials and techniques: 114, 74 links, 1,105 quotes (BT3a), 8,879 records and 2,621 places linked to them (BT3b), each stone's bedrock on its map, the UK and Ireland (BT3c2); 15,729 records (69.9%) and 60,506 places typed, 257 of 295
   isles types with examples, 223 with an earliest surviving example (register periods no longer count).
 - Catalogue 22,508 records; 173,789 places in 22 groups; 12,193 people; 517 floor plans; "Change over time": 320
-  series, 76 events, 24 map layers, 19 notes, 137 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
+  series, 76 events, 24 map layers, 19 notes, 138 sources; 894 researched claims (with the 24 of the tea list). Release db-2026-10-24 (102 MB).
 - Repository public since 2026-10-27 (https://github.com/gddickinson/british-isles-oldest-buildings, MIT code, tests on
   every push); demo site on GitHub Pages https://gddickinson.github.io/british-isles-oldest-buildings/ (from release `site-2026-10-27`).
 - Hosted copy https://claude.ai/artifact/4H8rfcGGxSJki91SrNFTPv (private), version 75 (2026-10-26, BT7 quizzes and Help; /types since 74,
@@ -691,9 +691,9 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       to slave owners (Legacies of British Slavery named, not used as data), Factory Act 1833, Tolpuddle 1834,
       Rochdale Pioneers and the Joint Stock Companies Act 1844, Limited Liability Act 1855, TUC 1868, Big Bang 1986.
       Shown with the other events on "Change over time" (theme Prosperity and work).
-- [ ] C7b Borough charters and guild charters beyond London as events or places (Wikidata "town charter" dates are
-      sparse; the guilds list of C3b holds the oldest guilds already). Split 2026-10-28: C7b1 Ballard 1913 (done), C7b2
-      Ballard and Tait 1923.
+- [x] C7b Borough charters and guild charters beyond London as events or places (Wikidata "town charter" dates are
+      sparse; the guilds list of C3b holds the oldest guilds already). Split 2026-10-28: C7b1 Ballard 1913, C7b2
+      Ballard and Tait 1923 (both done); the 1913 appendix is C7b3.
 - [x] C7b1 (2026-10-28) Borough charters 1042-1216 (new `bidb/change_charters.py`): the table of sources of Adolphus
       Ballard's British Borough Charters 1042-1216 (1913, public domain; Introduction section 4, pp. xxvi-xxxiii) read
       from the page images (Internet Archive, leaves 32-39) → `charters_ballard_1913.csv` (310 printed rows, 323 charters
@@ -703,11 +703,22 @@ locator and quote. Rules as E1–E6: open licences or quoted published figures; 
       Kells in Meath and Kilkenny, Rathmore in Kildare, Great Yarmouth...), 323 against the preface's "about 330" (the
       rest are in the appendix). Map layer "Boroughs by their first charter" (137 towns, following the slider: London
       1043, 43 by 1160, 125 by 1210) and graph "Borough charters per decade, 1040-1219" (kings 234, lay lords 63,
-      bishops, abbots and popes 26; the 1200s busiest with 81; 100 royal grants are King John's), theme People and
-      settlements. The book's appendix (additional charters) and its code of clauses are not read.
-- [ ] C7b2 Borough charters 1216-1307: the same table in Ballard and Tait, British Borough Charters 1216-1307 (1923;
-      Tait died 1944, so public domain in the UK; Internet Archive `britishboroughc00balluoft`), joined to C7b1 on the
-      layer and the graph; Ballard 1913's appendix of additional charters.
+      bishops, abbots and popes 26; the 1200s busiest with 81; 99 royal grants are King John's: first written as 100,
+      John fitz Robert's Corbridge charter wrongly counted, corrected in C7b2), theme People and settlements. The book's appendix (additional charters) and its code of clauses are not read.
+- [x] C7b2 (2026-10-28) Borough charters 1216-1307: the table of sources of Ballard and Tait, British Borough Charters
+      1216-1307 (1923, public domain; pp. xxv-xxxvi, Internet Archive leaves 33-45) read from the page images →
+      `charters_ballard_tait_1923.csv` (532 printed rows to 214 places), joined to C7b1 in `bidb/change_charters.py`:
+      the Barnard Castle (Hugh de Balliol) and Rathmore charters printed again with new dates count once, at the 1923
+      date; Oxford University "1301 (b)" at 1305 as the footnote says; "Do." under a king of another reign written as
+      the king of the date (Stafford, Stamford, Dublin). Graph "Borough charters per decade, 1040-1309" (replaces
+      the 1040-1219 one; break at 1216 where the volumes meet; 853 charters to 260 towns: kings 617, lay lords 173,
+      church 51, 12 with no grantor printed or the townspeople's own not drawn; Henry III 235, Edward I 117; busiest
+      decade the 1250s, 113, 43 of them dated 1256, with Tait's note that the Charter Roll of 1255-6 is lost) and the
+      layer to 1307 (258 towns, 121 first after 1216; Rathcool, "co. Tipperary", and the Cinque Ports as a body not
+      placed; lost towns placed by hand: Ravenserod, Warenmouth, Skinburness for Skynburgh and Wavermouth, Nova
+      Villa at Newton in Studland, Bere).
+- [ ] C7b3 Ballard 1913's appendix of additional charters (not in its table), and Rathcool's place (printed "co.
+      Tipperary"; the grantor is the archbishop of Dublin).
 - [x] C8 (2026-10-25) Trade stories: page `/trades` (nav "Trades"; hosted `trades.html` from `data/trades.json`), one
       story per trade (wool and cloth, tea, sugar and slavery, cotton, linen, coal, iron and steel, fishing, brewing and
       distilling, banking and finance) from `data/curated/trade/stories.json` and new `bidb/trade_stories.py`: intro,

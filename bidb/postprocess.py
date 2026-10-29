@@ -2,7 +2,7 @@
 import json
 import re
 
-from . import date_corrections, land, overrides
+from . import date_corrections, land, nhle_check, overrides
 from .categories import group_for
 from .classify import GENERIC_CATEGORIES, period_for, regional_period
 from .config import DATA_DIR, DB_PATH
@@ -83,6 +83,7 @@ def finalise(records, cutoff, log=print):
         if r.get("image_file") and not r.get("image_thumb"):
             r["image_thumb"] = commons_thumb(r["image_file"])
     n = date_corrections.apply(kept)
+    log(f"{nhle_check.apply(kept)} reviewed NHLE list entries")
     overrides.apply(kept)
     for r in kept:
         r["period"] = regional_period(r.get("period"), r.get("nation"))

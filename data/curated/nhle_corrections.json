@@ -1,0 +1,29 @@
+{
+ "Q7103392": {
+  "name": "Ormesby Hall",
+  "nhle_id": "1311002",
+  "was": "1139662",
+  "entry": "ORMESBY HALL, ADJOINING OUTBUILDINGS AND SCREEN WALLS (Grade I)",
+  "was_entry": "STABLEBLOCK, CIRCA 80 METRES NORTH-EAST OF ORMESBY HALL",
+  "reason": "Wikidata's NHLE id is the stable block's; the hall's own entry is 1311002, as docs/date_review.md found.",
+  "checked": "2026-10-29"
+ },
+ "Q7740094": {
+  "name": "The Homestead",
+  "nhle_id": "1229478",
+  "was": "1229479",
+  "entry": "The Homestead with gatepiers (Grade I)",
+  "was_entry": "FORMER COACH HOUSE OF THE HOMESTEAD (Grade II)",
+  "reason": "The record is the Grade I house (\"It is Grade I listed\", its Wikipedia article); Wikidata gives the coach house's entry.",
+  "checked": "2026-10-29"
+ },
+ "Q1688607": {
+  "name": "Jewel House",
+  "nhle_id": "1242210",
+  "was": "1266310",
+  "entry": "WATERLOO BLOCK (Grade II)",
+  "was_entry": "FORMER DOCK RETAINING WALLS TO MOAT AROUND JEWEL HOUSE",
+  "reason": "The entry Wikidata gives is the moat walls of the Jewel Tower at Westminster; the Jewel House \"occupies almost the entire ground floor of the Waterloo Block\" at the Tower of London (its Wikipedia article).",
+  "checked": "2026-10-29"
+ }
+}

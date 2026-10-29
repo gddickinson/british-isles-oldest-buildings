@@ -8,7 +8,7 @@ inserted. Run bidb.dendro afterwards to match tree-ring dates to the new records
 """
 import sys
 
-from . import date_corrections, enrich, overrides, references, wikidata as wd
+from . import date_corrections, enrich, nhle_check, overrides, references, wikidata as wd
 from .build import LABEL_PROPS
 from .categories import group_for
 from .classify import regional_period
@@ -72,6 +72,7 @@ def records_for(research, log=print, adjust=None):
         if r.get("image_file") and not r.get("image_thumb"):
             r["image_thumb"] = commons_thumb(r["image_file"])
     date_corrections.apply(records)
+    nhle_check.apply(records)
     overrides.apply(records)
     for r in records:
         r["period"] = regional_period(r.get("period"), r.get("nation"))

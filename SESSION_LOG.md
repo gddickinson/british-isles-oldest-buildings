@@ -2540,3 +2540,18 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Period quiz: Irish and Manx records see "Iron Age 800 BC–c. AD 400" and never a Roman Britain choice.
 - Tests 493 OK (`test_classify` sweep); ui_check quiz, quiz_menu, quiz_order OK. Hosted copy not updated.
 
+## 2026-10-29 — Records on an outbuilding's list entry (roadmap, data quality)
+- New `bidb/nhle_check.py`: every record's NHLE list entry name from Historic England's open NHLE layers (listed
+  buildings, scheduled monuments, parks and gardens, battlefields, wrecks, World Heritage; OGL; 11,457 of 11,466
+  named). A record is flagged when the head of the entry's name (before "and", "with", a comma or a locator such as
+  "700m south of") has an outbuilding word its own name lacks. The first rule (any such word) flagged 459, mostly
+  "Church of St X and attached railings"; with the head only, 10.
+- Wrong entries, corrected in new `data/curated/nhle_corrections.json` (applied in postprocess.finalise and
+  research_add; `--apply` on the database with the source links remade): Ormesby Hall 1139662 → 1311002, The
+  Homestead (Spondon) 1229479 (coach house) → 1229478, Jewel House 1266310 (the Jewel Tower's moat walls,
+  Westminster) → 1242210 (Waterloo Block). Jewel House also dated 1994 (date_corrections.json, 213 entries: the 1378
+  Jewel House is an earlier building). Six read and kept (`KEPT`: Charlecote outbuildings, Old Cloth Hall, Hogarth's
+  House, Sexey's Hospital, Shepherd Gate Clock, Wilder's Folly).
+- Found: 17 list entries on two or more records (article and list-entry items of one building), 23 records on a
+  registered park's entry; both added to the roadmap.
+

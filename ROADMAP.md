@@ -912,8 +912,20 @@ the descent of a type is disputed, both views are given and the link is drawn as
       13th century, Sheffield Cathedral c. 1430, Ormesby Hall c. 1600 from its own entry 1311002, not the stable
       block's 1139662 that `bidb.listings` matched) and three kept (Antony 1259, Hart 675, Woodchester 2nd century).
       Conflicts 7 → 0; 262 reviewed.
-- [ ] `bidb.listings` takes Ormesby Hall's list entry from Wikidata, which points at the stable block (found
-      2026-10-28): check how many records' NHLE ids are those of an outbuilding.
+- [x] `bidb.listings` takes Ormesby Hall's list entry from Wikidata, which points at the stable block (found
+      2026-10-28): check how many records' NHLE ids are those of an outbuilding. (2026-10-29, new `bidb.nhle_check`:
+      the names of all 11,449 list entries from Historic England's open layers; 3 records on the wrong entry, now
+      corrected in `data/curated/nhle_corrections.json`: Ormesby Hall (stable block), The Homestead, Spondon (its coach
+      house), Jewel House (the Jewel Tower's moat walls at Westminster; also dated 1994, not 1378, from its article);
+      6 flags read and kept.)
+- [ ] Records sharing one NHLE list entry (found 2026-10-29): 17 ids are on two or more records, mostly an
+      article item and a list-entry item of one building in Wikidata (Ormesby Hall and "Ormesby Hall, Adjoining
+      Outbuildings And Screen Walls", The Homestead and "The Homestead With Gatepiers", Halwell Camp, Whitefriars,
+      the British Museum), or parts given the main entry's id (Heathcote's terrace and cottages): merge duplicates
+      or move the parts to their own entries.
+- [ ] 23 records carry a registered park or garden's entry (100xxxx) instead of their building's (Battle Abbey,
+      Lambeth Palace, Kentwell Hall, Sandringham House...; `runs/nhle_check.json` layer 7): find each building's
+      own entry as for the outbuildings.
 - [x] Clackmannan Tower (emergent 2026-10-26, seen in BT5's spread chart; fixed 2026-10-26): year 1301 with the date
       text "Late 14th century". `dates.parse_text_year` (Wikipedia list dates, hoards, research claims) ignored
       qualifiers; it now reads them as the text miner does (`dates.century_start`, shared: mid +33, late or second

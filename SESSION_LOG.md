@@ -2483,3 +2483,15 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Totals: 861 charters to 261 towns (kings 621, lay lords 177, church 51); layer 260 towns (Torksey 1165 and Rathcoole
   1242 new; Hartlepool first at 1173, Christchurch 1146). Sources entries and DATA_LICENSE row updated.
 - Tests 479 OK (`test_change_charters`: appendix, Rathcoole); ui_check change_charters, map OK. Hosted copy not updated.
+
+## 2026-10-28 — BT6c2a: floor plans of typed places on the type pages
+- New `bidb/place_plans.py` (build stage "Plans of places" after Building types → table `place_plans`): plans for
+  places (not catalogue records) of the building types, from Wikidata P3311 (20, maps/sections/elevations left out),
+  Commons "Plans of" categories (1) and, for types short of 12 plans, a file titled as a plan in the place's own
+  Commons category tree (25 places a type; 16 found in 1,250 searched, ~40 min). Five files reviewed out
+  (`NOT_PLANS`). 30 places; types with any plan 61 → 69.
+- `type_pages.plans` adds the places after the catalogue records (same ordering); `types_view.js` labels them;
+  `app/static_types.py` writes places as refs in `pl`. Tests 484 OK (`test_place_plans` new, `test_type_pages`);
+  ui_check `type_place_plans` (new), `type_page`, `types` OK on a fresh server; screenshot of /types?t=polygonal-fort.
+  Hosted copy not updated.
+- Emergent: Grime's Graves typed a round barrow.

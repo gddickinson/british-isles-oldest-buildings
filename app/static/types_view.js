@@ -94,18 +94,18 @@ const TypeView = (() => {
       <span class="meta">Bedrock: ${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.short)}</a> (${esc(s.licence)})`).join(", ")}.</span>`;
   }
 
-  // BT6b: floor plans of catalogue records of the type (Commons thumbnails here; links in the hosted copy)
+  // BT6b, BT6c2a: floor plans of catalogue records and places of the type (Commons thumbnails here; links in the hosted copy)
   function plans(list) {
     if (!list || !list.length) return "";
     const file = (f) => encodeURIComponent(f.replace(/ /g, "_"));
-    const label = (p) => `${entity({ ...p, source: "building" })} <span class="meta">${esc(p.date_text || (p.year != null ? yt(p.year) : ""))}</span>`;
+    const label = (p) => `${entity({ source: "building", ...p })} <span class="meta">${esc(p.date_text || (p.year != null ? yt(p.year) : ""))}</span>`;
     const body = IS_STATIC
       ? `<ul class="nearby">${list.map((p) => `<li>${label(p)} · <a href="https://commons.wikimedia.org/wiki/File:${file(p.plan)}"
           target="_blank" rel="noopener">plan on Wikimedia Commons</a></li>`).join("")}</ul>`
       : `<div class="ty-plans">${list.map((p) => `<figure><a href="https://commons.wikimedia.org/wiki/File:${file(p.plan)}" target="_blank"
           rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/${file(p.plan)}?width=320" alt="Plan of ${esc(p.name)}"
           loading="lazy"></a><figcaption>${label(p)}</figcaption></figure>`).join("")}</div>`;
-    return `<h3>Plans of real examples</h3><p class="hint">Floor plans of buildings of this type in the catalogue, from Wikimedia Commons
+    return `<h3>Plans of real examples</h3><p class="hint">Floor plans of buildings of this type in the catalogue and among the places, from Wikimedia Commons
       (author and licence on each file page). Plans of real buildings, often with their later phases, not a typical plan.</p>${body}`;
   }
 

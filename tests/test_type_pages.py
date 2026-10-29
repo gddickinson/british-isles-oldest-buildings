@@ -80,6 +80,18 @@ class TestTypePages(unittest.TestCase):
             self.assertEqual([p["id"] for p in type_pages.plans(c, "castle", DATA["types"][0])], ["b5", "b1", "b3"])
         self.assertEqual(type_pages.type_page(conn(), "donjon", DATA, MDATA)["plans"], [])
 
+    def test_plans_of_places(self):
+        # BT6c2a: places with a plan (bidb.place_plans) after the catalogue records, with what the page shows of them
+        c = conn()
+        c.execute("CREATE TABLE place_plans (place_id, file, via)")
+        c.executemany("INSERT INTO place_plans VALUES (?,?,?)", [("p1", "Plan p1.svg", "wikidata"),
+                                                                  ("p2", "Plan p2.jpg", "commons category")])
+        got = type_pages.plans(c, "castle")
+        self.assertEqual([(p["id"], p["source"]) for p in got],
+                         [("b5", "building"), ("b1", "building"), ("p1", "place"), ("p2", "place")])
+        self.assertEqual((got[2]["name"], got[2]["year"], got[2]["nation"], got[2]["plan"]),
+                         ("Castle mound", 1052, "Scotland", "Plan p1.svg"))
+
     def test_abroad_type_has_no_examples(self):
         d = type_pages.type_page(conn(), "donjon", DATA, MDATA)
         self.assertTrue(d["abroad"])

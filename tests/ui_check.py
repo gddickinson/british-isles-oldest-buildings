@@ -44,6 +44,7 @@ PAGES = {
     "type_page": ("/types?t=wealden-house", r"(?s)Wealden house.*A medieval house with central open hall.*A form of.*Hall house.*Earliest surviving example"),
     "types_time": ("/types?tab=time&year=1300", r"(?s)Types in use.*types in use in 1300.*Motte and bailey.*Materials and techniques by century.*Rubble masonry"),
     "type_diagram": ("/types?t=wealden-house", r"(?s)Diagrams.*Wealden house: ground plan.*cross passage.*Drawn from.*four bays"),
+    "type_place_plans": ("/types?t=polygonal-fort", r"(?s)Plans of real examples.*among the places.*Fort Gomer"),
     "type_chains": ("/types?t=motte-and-bailey", r"(?s)What came before and what came next.*Ringfort.*Concentric castle.*Spread across the isles.*counties"),
     "material_page": ("/types?m=brick", r"(?s)Brick.*Main types of its records.*Revival of.*Roman brick and tile"),
     "material_stone": ("/types?m=limestone", r"(?s)Limestone.*Sedimentary rock consisting mainly of calcium carbonate.*Bath stone.*West Kennet Long Barrow"),

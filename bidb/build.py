@@ -181,7 +181,7 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
     """[(stage name, function)] for a full build (also run from the GUI by app/jobs.py)."""
     from . import (bridges, burials, dendro, depictions, digs, domesday, domesday_entries, era_places, hoards, institutions,
                    lore_places, mapping_museums, maritime, material_map, military, museums, nation_geo, oldest_checks, oldest_lists, on_this_day,
-                   naptan, places_build, pronunciations, sports, timeline, tour_surface, tours, trade_people, trade_works, type_map, underground, visiting, welsh_names, wrecks)
+                   naptan, place_plans, places_build, pronunciations, sports, timeline, tour_surface, tours, trade_people, trade_works, type_map, underground, visiting, welsh_names, wrecks)
     from . import stories as stories_mod
     out = [("Buildings", lambda: run(cutoff))]
     if places:
@@ -193,7 +193,8 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
                 ("Graves and burial grounds", burials.run),
                 ("Markets, works and infrastructure", trade_works.run), ("Sport", sports.run), ("Public institutions", institutions.run), ("Oldest in nature and graves", oldest_lists.run), ("Earliest dated places checked", oldest_checks.run),
                 ("People of the guilds, companies and banks", trade_people.run),
-                ("Nations for places", nation_geo.run), ("Building types", type_map.run)]
+                ("Nations for places", nation_geo.run), ("Building types", type_map.run),
+                ("Plans of places", place_plans.run)]
         if pron:
             out += [("Pronunciations", pronunciations.run), ("Domesday Book", domesday.run),
                     ("Domesday entries", domesday_entries.run), ("Old Welsh place-name forms", welsh_names.run)]

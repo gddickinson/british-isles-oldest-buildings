@@ -1058,6 +1058,21 @@ the descent of a type is disputed, both views are given and the link is drawn as
 - [ ] BT6c2 Commons plans of real examples of types the catalogue has none for (terraces, cottages, inns: Commons
       categories "Floor plans of houses in …"); more diagrams where a type's plan has a quoted source (tower house,
       tenement, almshouse, union workhouse, panopticon, Elizabethan playhouse, need quotes on their plan first).
+      Split 2026-10-28: BT6c2a plans of typed places (done), BT6c2b more diagrams.
+- [x] BT6c2a (2026-10-28) Plans of typed places (new `bidb/place_plans.py`, build stage after type_map → table
+      `place_plans`): of 48,537 typed places with a Wikidata item (not catalogue records), 20 have a plan view image
+      (P3311; maps, sections and elevations left out: Ham Hill and Bat's Castle "Somerset Map", the Eddystone section,
+      Wolf Rock's engineering drawing, Wyre Light's elevation), 1 a Commons "Plans of" category (Powis Castle), and
+      for the types short of 12 plans, 25 places a type with a Commons category were searched for a file titled as
+      a plan in their own category tree: 16 found in 1,250 searched (Hurst and Sandown Castles, Millbank Prison,
+      Newcastle Gaol, the Surrey Dispensary, Manchester and Bristol infirmaries, Crofton Roman villa, Easter
+      Aquhorthies...). Reviewed out (`NOT_PLANS`): the Stockton and Darlington's route map, Liverpool Royal
+      Infirmary's nurses' home, a proposal for La Hougue Bie, Grime's Graves (typed a round barrow). 30 places;
+      types with a plan 61 → 69 (8 only from places: polygonal fort 5, gaol, penitentiary, dispensary, fever
+      hospital, funicular, public baths, Roman villa). Shown after the catalogue's plans on type pages (and as links
+      in the hosted copy, `static_types` `pl` now takes places). Commons holds few plans of these places: the
+      generic categories ("Floor plans of houses in …") not tried.
+- [ ] Grime's Graves (flint mines) typed a round barrow (found in BT6c2a, 2026-10-28): check the type rule.
 - [ ] BT6d Generated examples from building-gen, type by type, once a type passes the checks at the end of
       `docs/building_gen_review.md` (fixes made in building-gen's own repo).
 - [x] BT7 (2026-10-26) Hosted copy (BT4b), Help page section "Building types" with three figures (`types_tree`,

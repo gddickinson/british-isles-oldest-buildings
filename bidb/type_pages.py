@@ -7,7 +7,7 @@ mapped to them (bidb.type_stats, bidb.material_stats).
     type      one type: definition, period, structure, plan, links in and out with their sources, the materials
               the curated file gives it and those found in its records, examples, by nation and century, map;
               what came before and after and its first example per county (bidb.type_charts, BT5); plans of
-              real examples (catalogue records with a Commons plan, BT6b); labelled diagrams (bidb.type_diagrams, BT6c)
+              real examples (catalogue records and places with a Commons plan, BT6b, BT6c2a); labelled diagrams (bidb.type_diagrams, BT6c)
     materials every material and technique by group, with counts
     material  one material: definition, period, regions, technology, geology, links, building types (curated and
               among its records), examples with the evidence sentence, by nation and century, map
@@ -71,19 +71,29 @@ def _materials_of_type(conn, type_id, mats):
 
 
 def plans(conn, type_id, t=None, limit=PLANS):
-    """BT6b: catalogue records of the type with a floor plan on Commons: those of this main type first, those
-    begun too early for the type (bidb.type_stats) last, then oldest first: [{id, name, year, date_text, plan}].
-    Real buildings, often drawn with their later phases."""
-    rows = conn.execute("""SELECT b.id, b.name, b.year_start, b.date_text, b.plan_image, tm.is_primary
+    """BT6b, BT6c2a: catalogue records of the type with a floor plan on Commons, then places with one
+    (bidb.place_plans): those of this main type first, those begun too early for the type (bidb.type_stats) last,
+    then oldest first: [{id, source, name, year, date_text, county, nation, plan}]. Real buildings, often drawn with
+    their later phases."""
+    rows = conn.execute("""SELECT b.id, 'building', b.name, b.year_start, b.date_text, b.county, b.nation,
+                                  b.plan_image, tm.is_primary
                            FROM type_map tm JOIN buildings b ON b.id = tm.entity_id
                            WHERE tm.type_id = ? AND tm.source = 'building' AND b.plan_image IS NOT NULL
                              AND b.plan_image != ''""", (type_id,)).fetchall()
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'place_plans'").fetchone():
+        rows += conn.execute("""SELECT p.id, 'place', p.name, p.year_start, p.date_text, p.county, p.nation,
+                                       pp.file, tm.is_primary
+                                FROM type_map tm JOIN places p ON p.id = tm.entity_id
+                                JOIN place_plans pp ON pp.place_id = p.id
+                                WHERE tm.type_id = ? AND tm.source = 'place'""", (type_id,)).fetchall()
     ok = type_stats.early_ok() if t else {}
-    out = [{"id": i, "name": n, "year": y, "date_text": dt, "plan": f,
-            "too_early": bool(t) and type_stats.too_early({"id": i, "year": y, "date_text": dt}, t, ok),
-            "primary": primary} for i, n, y, dt, f, primary in rows]
-    out.sort(key=lambda p: (not p["primary"], p["too_early"], p["year"] is None, p["year"] or 0, p["name"] or ""))
-    return [{k: p[k] for k in ("id", "name", "year", "date_text", "plan")} for p in out[:limit]]
+    keys = ("id", "source", "name", "year", "date_text", "county", "nation", "plan")
+    out = [dict(zip(keys + ("primary",), r)) for r in rows]
+    for p in out:
+        p["too_early"] = bool(t) and type_stats.too_early(p, t, ok)
+    out.sort(key=lambda p: (not p["primary"], p["too_early"], p["source"] != "building", p["year"] is None,
+                            p["year"] or 0, p["name"] or ""))
+    return [{k: p[k] for k in keys} for p in out[:limit]]
 
 
 def type_page(conn, type_id, data=None, mdata=None):

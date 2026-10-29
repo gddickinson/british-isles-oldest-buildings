@@ -1,4 +1,4 @@
-"""People of the guilds, companies, banks, exchanges, inns and shops (roadmap C3c): python -m bidb.trade_people
+"""People of the guilds, companies, banks, exchanges, inns and shops (roadmap C3c): python -m bidb.trade_people [--later]
 
 The people stage of bidb.places_build runs before bidb.trade_works and bidb.oldest_lists add the Markets & trade
 places, so this stage links their people afterwards, from Wikidata:
@@ -15,8 +15,14 @@ Market towns, and places recorded on a settlement's item, are left out: being bo
 mayor is not a link with its trade.
 Re-running replaces this stage's links (place targets of the group); people already in the table are kept.
 
+The same for the other groups the place stages add after the people stage of places_build (`LATER`: maritime,
+military, museums, sport, institutions, bridges, graves...; `run_later`, build stage after this one): the place
+roles for all of them, the organisation roles only for museums (directors, curators, trustees) as for trade; for
+universities, hospitals and the like "employer" would bring in everyone who ever worked there.
+
     org_links(targets)   [(person, target, role)] for the organisation roles
     run()                links, people and their references written to persons / person_links
+    run_later()          the same for the LATER groups
 """
 import sys
 import time
@@ -25,8 +31,16 @@ from . import people
 from .http import sparql
 
 GROUP = "Markets & trade"
+LATER = ("Maritime heritage", "Military heritage", "Museums & collections", "Sport & leisure", "Public institutions",
+         "Infrastructure & utilities", "Bridges", "Industrial heritage", "Graves & burial grounds", "Underground",
+         "Victorian era", "Excavations", "Legends & literature", "Innovations & firsts", "Nature & deep time")
+ORG_GROUPS = (GROUP, "Museums & collections")
 SKIP_KINDS = ("tr_town",)
 SETTLEMENT = "Q486972"
+ADMIN_AREA = "Q56061"       # counties, nations: settings of literary works ("Devon") gather everyone born there;
+                            # only for literary places: forts reach it through "military area"
+ISLAND = "Q23442"           # the island of Ireland as a setting
+LITERARY = "literary"
 MEMBER, WORKED, OFFICER = "Member", "Worked for", "Master, governor or officer"
 PERSON_PROPS = {"P463": MEMBER, "P108": WORKED}
 HEAD_PROPS = ("P488", "P169", "P1037", "P3320")
@@ -58,21 +72,29 @@ def org_links(targets, log=print):
     return sorted(links)
 
 
-def targets(conn, settlements=None):
-    """The group's places with a Wikidata id, less market towns and places whose item is a settlement (an oldest
-    market recorded on its town's item)."""
+def targets(conn, settlements=None, groups=(GROUP,)):
+    """The groups' places with a Wikidata id, less market towns and places whose item is a settlement (an oldest
+    market recorded on its town's item), and literary settings that are administrative areas or islands (a novel
+    set in a county)."""
     q = ",".join("?" for _ in SKIP_KINDS)
+    g = ",".join("?" for _ in groups)
     ids = {i for (i,) in conn.execute(
-        f"SELECT id FROM places WHERE kind_group = ? AND kind NOT IN ({q}) AND id LIKE 'Q%'", (GROUP, *SKIP_KINDS))}
-    return ids - (settlements if settlements is not None else _settlements(ids))
+        f"SELECT id FROM places WHERE kind_group IN ({g}) AND kind NOT IN ({q}) AND id LIKE 'Q%'",
+        (*groups, *SKIP_KINDS))}
+    if settlements is None:
+        lit = {i for (i,) in conn.execute(f"SELECT id FROM places WHERE kind = ? AND kind_group IN ({g})",
+                                          (LITERARY, *groups))} & ids
+        settlements = _settlements(ids) | (_settlements(lit, f"wd:{SETTLEMENT} wd:{ADMIN_AREA} wd:{ISLAND}") if lit else set())
+    return ids - settlements
 
 
-def _settlements(ids):
+def _settlements(ids, classes=f"wd:{SETTLEMENT}"):
     out, ids = set(), sorted(ids)
     for i in range(0, len(ids), 300):
         values = " ".join("wd:" + q for q in ids[i:i + 300])
         out |= {_q(r["t"]["value"]) for r in sparql(
-            f"SELECT DISTINCT ?t WHERE {{ VALUES ?t {{ {values} }} ?t wdt:P31/wdt:P279* wd:{SETTLEMENT} }}")}
+            f"SELECT DISTINCT ?t WHERE {{ VALUES ?t {{ {values} }} VALUES ?c {{ {classes} }} "
+            f"?t wdt:P31/wdt:P279* ?c }}")}
     return out
 
 
@@ -91,21 +113,26 @@ def write(conn, targets, persons, rows):
     conn.commit()
 
 
-def run(log=print):
+def run(log=print, groups=(GROUP,), what="trade"):
     from .db import connect
     t0 = time.time()
     say = lambda m: log(f"[{time.time() - t0:5.0f}s] {m}")
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
-    tg = targets(conn)
-    group = targets(conn, settlements=set())
-    links = people.find_links(tg, say) + org_links(tg, say)
+    tg = targets(conn, groups=groups)
+    group = targets(conn, settlements=set(), groups=groups)
+    org = targets(conn, settlements=set(), groups=[g for g in groups if g in ORG_GROUPS]) & tg
+    links = sorted(set(people.find_links(tg, say)) | set(org_links(org, say) if org else []))
     persons, links = people.prepare(links, say, intros_for=1500)
     refs = people.link_references(links, say, PERSON_PROPS)
     write(conn, group, persons, [(p, t, "place", role, refs.get((p, t, role))) for p, t, role in links])
-    say(f"trade people: {len(tg)} places, {len(persons)} people, {len(links)} links "
+    say(f"{what} people: {len(tg)} places, {len(persons)} people, {len(links)} links "
         f"({len(refs)} with a Wikidata reference)")
     conn.close()
+
+
+def run_later(log=print):
+    run(log, groups=LATER, what="later place groups'")
 
 
 def report():
@@ -123,4 +150,7 @@ def report():
 
 
 if __name__ == "__main__":
-    report() if sys.argv[1:] == ["--report"] else run()
+    if sys.argv[1:] == ["--report"]:
+        report()
+    else:
+        run_later() if sys.argv[1:] == ["--later"] else run()

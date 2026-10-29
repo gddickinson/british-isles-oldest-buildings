@@ -55,6 +55,20 @@ class TradePeople(unittest.TestCase):
         conn = _db()
         self.assertEqual(trade_people.targets(conn, settlements={"Q3"}), {"Q1"})   # no towns, no other groups
         self.assertEqual(trade_people.targets(conn, settlements=set()), {"Q1", "Q3"})
+        # the later place groups (run_later): the mill only
+        self.assertEqual(trade_people.targets(conn, settlements=set(), groups=trade_people.LATER), {"Q4"})
+
+    def test_organisation_roles_only_for_trade_and_museums(self):
+        conn = _db()
+        found = {}
+        with mock.patch("bidb.db.connect", return_value=conn), \
+                mock.patch.object(trade_people, "_settlements", return_value=set()), \
+                mock.patch.object(trade_people.people, "find_links", return_value=[]), \
+                mock.patch.object(trade_people, "org_links", side_effect=lambda t, log: found.setdefault("org", set(t)) and []), \
+                mock.patch.object(trade_people.people, "prepare", return_value=([], [])), \
+                mock.patch.object(trade_people.people, "link_references", return_value={}):
+            trade_people.run_later(log=lambda *a: None)
+        self.assertNotIn("org", found)                 # the mill's group has no organisation roles
 
     def test_write_replaces_links_keeps_people(self):
         conn = _db()

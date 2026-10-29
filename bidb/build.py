@@ -1,5 +1,6 @@
 """Build the database: python -m bidb.build [--cutoff 1500] [--no-places] [--no-pron] [--no-stories]
     [--refresh-days N] [--refresh wikidata,wikipedia,…]  (fetch cached downloads again: bidb.refresh)
+    [--from STAGE] [--to STAGE]  (rerun one stage with those after it, e.g. --from "Markets" --to "Plans of places")
 
 Stages: curated Wikipedia lists + researched oldest-of-type examples -> Wikidata candidates
 (inception < cutoff, Irish National Monuments, oldest of each type) -> class filter -> entity
@@ -193,6 +194,7 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
                 ("Graves and burial grounds", burials.run),
                 ("Markets, works and infrastructure", trade_works.run), ("Sport", sports.run), ("Public institutions", institutions.run), ("Oldest in nature and graves", oldest_lists.run), ("Earliest dated places checked", oldest_checks.run),
                 ("People of the guilds, companies and banks", trade_people.run),
+                ("People of the later place groups", trade_people.run_later),
                 ("Nations for places", nation_geo.run), ("Building types", type_map.run),
                 ("Plans of places", place_plans.run)]
         if pron:
@@ -204,6 +206,21 @@ def stages(cutoff=CUTOFF_YEAR, places=True, pron=True, stories=True):
             out += [("Stories", stories_mod.run), ("Materials", material_map.run), ("Timelines", timeline.run), ("Tours", tours.run), ("Bike ride surfaces", tour_surface.run),
                     ("On this day", on_this_day.run), ("Visiting information", visiting.run), ("Bus stops and ferries", naptan.run)]
     return out
+
+
+def select(steps, start=None, end=None):
+    """The stages from the first whose name contains `start` to the first after it containing `end` (case
+    ignored). Rerunning one place stage by hand undoes what later stages did to its places (dates of the oldest
+    lists and their checks, nations, people, building types), so a stage is rerun with those after it:
+    --from "Markets" --to "Plans of places"."""
+    def at(word, frm=0):
+        for i in range(frm, len(steps)):
+            if word.lower() in steps[i][0].lower():
+                return i
+        raise SystemExit(f"no stage named like {word!r}; stages: " + "; ".join(n for n, _ in steps))
+    a = at(start) if start else 0
+    b = at(end, a) + 1 if end else len(steps)
+    return steps[a:b]
 
 
 def main():
@@ -221,12 +238,16 @@ def main():
                     help="download again anything cached more than N days ago")
     ap.add_argument("--refresh", metavar="SOURCES", default="",
                     help="download again from these sources only: " + ", ".join(refresh.SOURCES))
+    ap.add_argument("--from", dest="start", metavar="STAGE",
+                    help="start at the first stage whose name contains this (e.g. \"Markets\"); the stages before are not run")
+    ap.add_argument("--to", dest="end", metavar="STAGE", help="stop after the first stage from there whose name contains this")
     args = ap.parse_args()
     require_locations()
     refresh.set_rule(args.refresh_days, [s for s in args.refresh.split(",") if s])
     if refresh.active():
         log(f"refresh: {refresh.describe()}")
-    progress.run_stages("build", stages(args.cutoff, not args.no_places, not args.no_pron, not args.no_stories),
+    steps = select(stages(args.cutoff, not args.no_places, not args.no_pron, not args.no_stories), args.start, args.end)
+    progress.run_stages("build", steps,
                         options={"cutoff": args.cutoff, "refresh": refresh.describe()})
 
 

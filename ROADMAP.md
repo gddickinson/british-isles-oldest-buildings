@@ -1114,18 +1114,26 @@ the descent of a type is disputed, both views are given and the link is drawn as
       nation; catalogue buildings with a Time Team dig within 300 m 865 → 916 excavation rows. Rerunning digs also
       showed it deleted its own 335 excavated places (they counted as already in the database): fixed.
       In the local database only; the hosted copy and the release still have the old positions.
-- [ ] People of the places added after places_build (found in C3c, 2026-10-23): Maritime 9,184, Military 9,186,
-      Museums 5,146, Sport 5,495, Victorian 684, Excavations 540 and others have no linked people (the people stage
-      runs before them). bidb.trade_people's `run` could take a group list: museums (directors, founders), sport
-      (founders), military (commanders) would gain most.
-- [ ] Rerunning one place stage by hand undoes what later stages did to its places (found in C3c, 2026-10-23): C3a
-      reran trade_works and lost, for its 27,000 places, the researched dates of bidb.oldest_lists, the date
-      precision and reviewed corrections of bidb.oldest_checks (8,530 + 52) and every nation (nation_geo). Fixed by
-      rerunning oldest_lists → oldest_checks → nation_geo → trade_people. Either a `--after` option that reruns the
-      dependent stages, or document the order in each stage's docstring.
-- [ ] Catalogue categories of guildhalls (found in C3a, 2026-10-23): Merchant Adventurers' Hall (York), Norwich
-      Guildhall and St Mary's Guildhall (Coventry) are "House / domestic"; guildhalls, livery and cloth halls
-      probably want "Civic building" or a guild category (bidb.categories keyword rules; check the knock-on counts).
+- [x] People of the places added after places_build (found in C3c, 2026-10-23; done 2026-10-29): `trade_people.run_later`
+      (`--later`, build stage "People of the later place groups" after the trade people): the place roles of bidb.people
+      for the 15 groups added after the people stage (`LATER`), the organisation roles (members, staff, officers) only
+      for museums as for trade; settlements left out as before, and literary settings that are administrative areas or
+      islands (a first run linked everyone born or dying in Devon or Ireland: 3,698 links on 73 settings; testing every
+      place against "administrative area" also caught forts and barracks, through Wikidata's "military area", so
+      that test is for literary places only). 80,882 places: 7,947 people, 8,997 links (3,806 with a Wikidata
+      reference): graves 4,378 links, institutions 1,834, museums 1,196, military 428, Victorian 250, sport 180,
+      bridges 170, maritime 88... 18,301 people in all.
+- [x] Rerunning one place stage by hand undoes what later stages did to its places (found in C3c, 2026-10-23; done
+      2026-10-29): `python -m bidb.build --from STAGE [--to STAGE]` (`build.select`, by part of the stage name) reruns a
+      stage with the stages after it, e.g. `--from "Markets" --to "Plans of places"` (trade_works, sport, institutions,
+      oldest lists and checks, people, nations, building types, plans).
+- [x] Catalogue categories of guildhalls (found in C3a, 2026-10-23; done 2026-10-29): Wikidata's "guild house" fell to
+      the generic "house" and "city hall" to "hall" (Palace / manor house). The civic rule now has guild house, livery
+      hall and cloth hall, and a second civic rule for "city hall" after castles (Hertford Castle stays a castle) and
+      before "hall"; `CATEGORY_ORDER` lists each category once. 100 records moved to Civic building (88 from Palace /
+      manor house: Windsor, Totnes, Derry, Swansea guildhalls, the Scottish city chambers and town houses; 11 from House
+      / domestic: Merchant Adventurers' Hall, Norwich, Beverley, Bury St Edmunds, St Mary's Coventry) and updated in
+      the database; type_map rerun (15,739 records typed, +10).
 - [x] Reviewed the 451 date-check conflicts (2026-10-20, `docs/date_review.md`): checker noise
       removed, new status "Earlier origin" (67), 56 reviewed corrections with evidence
       (`data/curated/date_corrections.json`, `python -m bidb.date_corrections`), 69 genuine

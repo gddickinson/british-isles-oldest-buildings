@@ -1,7 +1,8 @@
 """Building categories: (category, keywords) checked in order against Wikidata class labels.
 
 Order matters: specific types ('public house', 'almshouse', 'gatehouse') must come before the
-generic words they contain ('house'), and museums after castles (many castles are museums).
+generic words they contain ('house'), and museums after castles (many castles are museums). A category may
+have a second rule further down ("city hall" after castles but before the generic "hall").
 """
 
 CATEGORY_RULES = [
@@ -42,12 +43,13 @@ CATEGORY_RULES = [
     ("Bank / office", ["bank", "office building", "office"]),
     ("Observatory / science", ["observatory", "laboratory"]),
     ("Market / shop", ["market hall", "market cross", "market", "shop", "store", "arcade"]),
-    ("Civic building", ["town hall", "moot hall", "guildhall", "guild hall", "tolbooth",
-                        "courthouse", "shire hall", "custom house", "exchange"]),
+    ("Civic building", ["town hall", "moot hall", "guildhall", "guild hall", "guild house", "livery hall",
+                        "cloth hall", "tolbooth", "courthouse", "shire hall", "custom house", "exchange"]),
     ("Castle / fortification", ["castle", "keep", "tower house", "fortification", "fortified",
                                 "fort", "fortress", "bastle", "gatehouse", "town wall",
                                 "city wall", "city gate", "barbican", "motte", "peel tower",
                                 "pele", "defensive", "tower"]),
+    ("Civic building", ["city hall"]),     # after castles (Hertford Castle: "castle; city hall"), before "hall"
     ("Palace / manor house", ["palace", "manor", "hall house", "great hall", "country house",
                               "mansion", "hall", "bishop's palace"]),
     ("House / domestic", ["house", "cottage", "dwelling", "residential", "farmhouse", "townhouse",
@@ -63,7 +65,7 @@ CATEGORY_RULES = [
     ("Ruin / archaeological site", ["ruin", "archaeological", "site"]),
 ]
 
-CATEGORY_ORDER = [c for c, _ in CATEGORY_RULES] + ["Other structure"]
+CATEGORY_ORDER = list(dict.fromkeys(c for c, _ in CATEGORY_RULES)) + ["Other structure"]
 
 # Eight colour groups for maps and charts (fixed order = fixed colour slot); rest -> "Other"
 CATEGORY_GROUPS = [

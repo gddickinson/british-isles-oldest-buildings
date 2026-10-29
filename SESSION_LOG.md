@@ -2519,3 +2519,14 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (`date_corrections.json`, 212 entries); Antony, Hart and Woodchester kept (`date_confirmations.json`, reasons).
   `python -m bidb.date_corrections`: conflicts 7 → 0, reviewed 262. Table in `docs/date_review.md`.
 - Emergent: Wikidata's NHLE id for Ormesby Hall is the stable block's.
+
+## 2026-10-29 — People of the later place groups; rerunning part of the build; guildhall categories
+- `trade_people.run_later` (`--later`, new build stage after the trade people): people linked to the places of the
+  15 groups added after places_build's people stage. First run linked whole counties and countries used as literary
+  settings (Devon, Ireland: 3,698 links); my first cleanup tested every place against "administrative area" and
+  removed 3,412 good links of forts and barracks too (Wikidata: fortification ⊂ military area ⊂ administrative
+  territorial entity). Restored by a full rerun with the area/island test for literary places only: 80,882 places,
+  7,947 people, 8,997 links; orphaned people removed (18,301 people).
+- `bidb.build --from STAGE --to STAGE` (`select`, test `test_build_select`).
+- Categories: guild house, livery hall, cloth hall and (after castles) city hall are Civic building; 100 records
+  updated in place; type_map rerun. Tests 492 OK (`test_categories` new, `test_trade_people` +2).

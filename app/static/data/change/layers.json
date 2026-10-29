@@ -1788,6 +1788,78 @@
      "citation": "Wikidata contributors, companies (Q783794 and subclasses) and items directly of class business (Q4830453) or enterprise (Q6881511) in the isles or with their head office there, with founding (P571), dissolution (P576), coordinates (P625, else head office P159) and industry (P452), queried 2026 through QLever"
     }
    ]
+  },
+  {
+   "id": "charters",
+   "title": "Boroughs by their first charter",
+   "kind": "spans",
+   "verb": "first charter",
+   "count": "boroughs with a charter by",
+   "file": "layers/charters.json",
+   "years": [
+    1040,
+    1045,
+    1050,
+    1055,
+    1060,
+    1065,
+    1070,
+    1075,
+    1080,
+    1085,
+    1090,
+    1095,
+    1100,
+    1105,
+    1110,
+    1115,
+    1120,
+    1125,
+    1130,
+    1135,
+    1140,
+    1145,
+    1150,
+    1155,
+    1160,
+    1165,
+    1170,
+    1175,
+    1180,
+    1185,
+    1190,
+    1195,
+    1200,
+    1205,
+    1210,
+    1215,
+    1220
+   ],
+   "labels": {},
+   "unit": "",
+   "legend": [
+    {
+     "color": "#7a2e2e",
+     "label": "Domesday borough (capitals)"
+    },
+    {
+     "color": "#2b6cb0",
+     "label": "Founded by a lesser lord (italics)"
+    },
+    {
+     "color": "#c08a2b",
+     "label": "Other borough"
+    }
+   ],
+   "note": "137 towns with a charter (or other grant) dated before 1216 in Ballard's British Borough Charters, shown from the middle of the dated range of their earliest one: 51 mentioned as boroughs in Domesday Book, 45 founded by lesser lords, as his table prints them. A town appears with its earliest charter in the table, not when it became a town or a borough.",
+   "sources": [
+    {
+     "short": "Ballard 1913",
+     "licence": "Public domain (1913)",
+     "url": "https://archive.org/details/britishboroughch00balluoft",
+     "citation": "Adolphus Ballard, British Borough Charters 1042-1216 (Cambridge University Press, 1913), Introduction section 4, Sources, pp. xxvi-xxxiii"
+    }
+   ]
   }
  ]
 }

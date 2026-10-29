@@ -83,7 +83,7 @@ const ChangeLayers = (() => {
         } else if (!shown) {
           shown = L.layerGroup(data.map(([name, lat, lon, o, c, k]) => Object.assign(L.circleMarker([lat, lon], {   // k: legend entry (firms' industry)
             pane: "changePane", renderer: spanCanvas, radius: 2.2, weight: 0, fillOpacity: 0.9 })
-            .bindTooltip(`${esc(name)}${k != null ? ` (${esc(l.legend[k].label)})` : ""}: ${l.id === "firms" ? "founded" : "opened"} ${o}${c ? `, closed ${c}` : ""}`),
+            .bindTooltip(`${esc(name)}${k != null ? ` (${esc(l.legend[k].label)})` : ""}: ${l.verb || (l.id === "firms" ? "founded" : "opened")} ${o}${c ? `, closed ${c}` : ""}`),
             { span: [o, c], key: k ?? 0 }))).addTo(map);
         }
         let open = 0;
@@ -100,7 +100,7 @@ const ChangeLayers = (() => {
           m.setStyle({ fillColor: now ? l.legend[m.key].color : l.legend[l.legend.length - 1].color, fillOpacity: now ? 0.9 : gone ? 0.5 : 0,
                        radius: now ? 2.2 : 1.6 });
         });
-        when.textContent = `${open.toLocaleString()} ${l.kind === "lines" ? "sections open" : "open"} in ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;
+        when.textContent = `${open.toLocaleString()} ${l.count || (l.kind === "lines" ? "sections open in" : "open in")} ${y}${year == null && !dateSel.value ? " (use the year slider)" : ""}`;
         spanCanvas._redraw?.();                         // the canvas does not always repaint until the map moves
       } else if (l.kind === "choro") {                 // areas with {year: people}: coloured by the share of the base year
         geo[l.id] = geo[l.id] || fetch(ROOT + l.file).then((r) => r.json());

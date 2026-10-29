@@ -2418,3 +2418,26 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `ipoi_annual_reports` (136 sources), DATA_LICENSE.md row, trade sources entry updated; 317 series.
 - Tests 470 OK (`test_change_patents_ie`, 5 new); ui_check change_patents_ie (new), change_clearing OK; the three graphs
   checked in a screenshot of /change. Hosted copy not updated.
+
+## 2026-10-28 — C7b1: borough charters 1042-1216 from Ballard (1913)
+- C7b (borough and guild charters) split: C7b1 Ballard 1913 (this session), C7b2 Ballard and Tait 1923 (1216-1307) and
+  the 1913 appendix. Both volumes are on the Internet Archive and public domain (Ballard d. 1915, Tait d. 1944).
+- New `bidb/change_charters.py`: the table of sources in British Borough Charters 1042-1216 (Introduction section 4,
+  pp. xxvi-xxxiii) read by eye from the page images (leaves 32-39, `page/n<leaf-1>_w2000.jpg`, cropped in halves; the OCR
+  text is too garbled to use or to cross-check mechanically) → `data/curated/change/data/charters_ballard_1913.csv`
+  (310 printed rows: page, leaf, nation, borough, typeface, date as printed, grantor with "Do." written out; the sources
+  column left out). 323 charters (rows marked "(2)" or "(3)" count so) to 145 printed boroughs, sokens and gilds;
+  the undated Leges Quattuor Burgorum and the appendix not in the table. One grantor printed as "Do." under Earl Robert
+  (Bossu) for 1191-1204 is written "Earl Robert".
+- Checks (`check`, all pass): every date read, ranges in order within 1040-1250, one typeface per borough, every borough
+  placed on a GeoNames town (by hand for renamed or ambiguous names; Elvet at Durham, the London sokens and gilds at
+  London, Drogheda's two boroughs as one), 323 against the preface's "about 330".
+- Map layer "Boroughs by their first charter" (Change over time panel, follows the slider; coloured by Ballard's
+  typeface: 51 Domesday boroughs, 45 founded by lesser lords, 41 others; London 1043, 43 towns by 1160, 125 by 1210) and
+  graph "Borough charters per decade, 1040-1219" (each charter at the middle of its range, at most 1216; kings 234, lay
+  lords 63, bishops, abbots and popes 26; 81 in the 1200s; 100 royal grants are King John's). Layers may now name their
+  own words (`verb`, `count`) in `change_layers.js`. Source `ballard_1913_charters` (137), DATA_LICENSE.md row; 320
+  series, 24 layers. An unsourced phrase I first wrote into the note ("sold charters freely") was taken out before the
+  build.
+- Tests 477 OK (`test_change_charters`, 7 new); ui_check change_charters (new), change_steam, map OK; the layer checked in
+  screenshots of /map at 1160 and 1210. Hosted copy not updated.

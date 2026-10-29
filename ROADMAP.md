@@ -62,6 +62,18 @@ Sky and alignments (first)
       229.8°, flat 233.3°) still differ by more than 3°: read the published surveys (horizon, which stone pair, which
       moon limb) before calling either wrong; trees and buildings are not in the terrain model.
 
+- [x] SH1 (2026-10-29, George's idea, page `/stonehenge`) Stonehenge in 3D: the stones as they survive (Anthony
+      Johnson's numbered plan digitised, 89 stones; placed on the ground on the OSM stones, 1.2 m rms) and as thought
+      complete (sarsen circle and curved lintels, trilithons with 55 and 59 mirrored across the axis: surviving pairs
+      symmetric within 0.5 m; bluestones filled at the survivors' spacing), 127 stones researched with 87 quoted
+      sources; EA 1 m LiDAR ground, land to the real skyline; sun, moon (phase, ΔT) and 2,887 stars for any date back
+      to the Neolithic, shadows from either; events and standing views. Midsummer sunrise 2500 BC 49.2°, midwinter
+      sunset 230.2° (sky.json: 49.2°, 230.0°).
+- [ ] SH2 Stonehenge in 3D, next: the earlier stages (Stage 1 enclosure with the Aubrey Holes, the bluestones'
+      earlier settings, Q and R holes) on a stage slider with their dates; planets; the Avenue's banks and the
+      barrows named; per-stone heights for the fallen and lost uprights where published (Cleal et al. 1995, the
+      2012 laser-scan report, not reachable online); the hosted copy (about 1.3 MB more).
+
 LiDAR and landscape
 - [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade
       (WMS, OGL), "Ground (LiDAR)" in the layer panel with opacity; local GUI (the hosted copy cannot reach map servers).

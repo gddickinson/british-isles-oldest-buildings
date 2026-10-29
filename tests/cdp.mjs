@@ -8,9 +8,11 @@ import { join } from "node:path";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export async function launch(chromePath, { port = 9333, width = 1280, height = 900 } = {}) {
+// webgl: WebGL on the GPU (ANGLE over Metal; SwiftShader gives no context here) for pages that draw in 3D (/stonehenge) instead of --disable-gpu.
+export async function launch(chromePath, { port = 9333, width = 1280, height = 900, webgl = false } = {}) {
   const profile = mkdtempSync(join(tmpdir(), "uireview-"));
-  const proc = spawn(chromePath, ["--headless=new", "--disable-gpu", `--remote-debugging-port=${port}`,
+  const gpu = webgl ? ["--enable-gpu", "--use-angle=metal", "--ignore-gpu-blocklist"] : ["--disable-gpu"];
+  const proc = spawn(chromePath, ["--headless=new", ...gpu, `--remote-debugging-port=${port}`,
     `--user-data-dir=${profile}`, `--window-size=${width},${height}`, "--no-first-run", "--hide-scrollbars",
     "about:blank"], { stdio: "ignore" });
   for (let i = 0; i < 50; i++) {

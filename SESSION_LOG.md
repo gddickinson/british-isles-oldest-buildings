@@ -2693,3 +2693,35 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (unchanged). Checked headless on /map?sky=1 at Stonehenge (10 rays, skyline note shown).
 - Tests: `test_sky_horizon` +1 (browser mirror of the declination search, flat skyline = plain formula).
   Hosted copy not updated. Next: SK7b2 (Loanhead of Daviot, Tomnaverie surveys), SK5b2, LD1b, LD3.
+
+## 2026-10-29 — Stonehenge in 3D (SH1, George's request)
+- New page `/stonehenge` (Sky calendar, Help and Stonehenge's detail view link to it): a three.js model (r160 kept in
+  `app/static/vendor/three/`, MIT) of the stones **now** and **as built**, under the sun, moon and stars of any date
+  and local solar time, with shadows from the sun or moon, camera presets (overview, plan view, standing views that
+  look round and up), events (midsummer sunrise, midwinter sunset and sunrise, equinox sunrise, full moons nearest
+  the solstices rising, all over the real skyline), stone numbers, star names, axis, "Mark lost stones"; click a stone
+  for its record and quoted sources.
+- Data (`python -m bidb.stonehenge` → `app/static/data/stonehenge.json` 290 KB + `stonehenge_dtm.bin` 320 KB):
+  - Stones now: Anthony Johnson's numbered plan (2007, CC BY 3.0; coloured version CC BY-SA 4.0) digitised by
+    `data/curated/stonehenge/prepare_plan.py` (colour classes, seeded watershed along the drawn outlines; 89 stones,
+    each checked on an overlay), placed on the ground by fitting it to 55 OSM stones (shift only, 1.16 m rms; a free
+    fit would turn it 0.7°, which OSM's traced outlines cannot settle).
+  - Research (subagent): `data/curated/stonehenge/stones.json`, 127 stones with state, height, notes and 87 quoted
+    sources (all quotes found in the saved pages); states of fallen stones and most bluestones read off the same plan
+    ("derived"); Historic England pages refuse scripted access, so the 2012 laser-scan report and Cleal et al. 1995
+    are not used.
+  - As built: circle uprights on a circle fitted to the 17 standing (r 15.37 m, 11.99° apart), 30 curved lintels
+    (top 4.9 m), trilithons 55 and 59 mirrored across the axis from 56 and 52 (the surviving pairs are symmetric
+    within 0.2-0.5 m; their midpoints give the axis 48.5-53.6°, the 1/30 gap 48.9°, published 49.57°), bluestone
+    circle and horseshoe filled at the survivors' spacing, Altar Stone shown standing on the axis (one view),
+    Slaughter, Heel Stone and its lost companion (hole 97), Station Stones from OSM.
+  - Ground: Environment Agency LiDAR Composite DTM 1 m by WCS (800 m square; the bank and ditch, the old A344 and
+    barrows show; the AWS terrain tiles are too smooth for the ditch); beyond it the land rises to the skyline of
+    bidb.sky_horizon.
+  - Sky: `static/stonehenge_astro.js` (`SkyPos`): moon by Meeus ch. 47 main terms (within 0.005° of example 47.a),
+    ΔT by Espenak and Meeus (16.6 h at 2500 BC), sidereal time, precession and proper motion for the 2,887 BSC5
+    stars to magnitude 5.5. Midsummer sunrise 2500 BC 49.2°, midwinter sunset 230.2° over the skyline (sky.json:
+    49.2°, 230.0°); today's midsummer sunrise 03:52 local solar time (04:59 BST, over the skyline).
+- `tests/cdp.mjs`: `webgl: true` launches Chrome with WebGL on the GPU (SwiftShader gives no context here);
+  ui_check `stonehenge` (passes with or without WebGL: the loader says why when there is none).
+- Tests 530 OK (`test_stonehenge`: 6). Hosted copy not updated.

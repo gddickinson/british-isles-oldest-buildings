@@ -154,7 +154,8 @@ const SkyHere = (() => {
         buildings move them${IS_STATIC || Number.isNaN(lon) ? "" : ' <button type="button" class="linkish sky-hz-btn">use the real skyline</button>'}`}. Lines: <span class="sky-key sun">sun</span>${ev.some(([b]) => b === "moon") ? ' <span class="sky-key moon">moon at its standstills</span>' : ""}${
           aligned.length ? ' <span class="sky-key aligned">researched alignment</span>' : ""}${
           church && church[1] >= 1.4 ? ' <span class="sky-key axis">axis of the building</span>' : ""}${year != null && year < 1000 ? ' <span class="sky-key then">when begun</span>' : ""}.</p>
-        ${el.dataset.lon ? `<p><a href="${esc(skyMapUrl(el))}">Show sun lines on the map</a> · <a href="${calendarPage()}">Sky calendar</a></p>` : ""}</div>
+        ${el.dataset.lon ? `<p><a href="${esc(skyMapUrl(el))}">Show sun lines on the map</a> · <a href="${calendarPage()}">Sky calendar</a>${
+          el.dataset.sky === "Q39671" ? ` · <a href="${IS_STATIC ? "stonehenge.html" : "/stonehenge"}">Stonehenge in 3D</a>` : ""}</p>` : ""}</div>
         ${hz ? `<div class="sky-pano">${panoramaSVG(lat, ev, hz, aligned)}</div>` : ""}`;
     el.innerHTML = `${aligned.length ? `<h4>Sky alignment</h4>${aligned.map(alignmentHTML).join("")}` : ""}${church ? churchHTML(church) : ""}
       <details class="sky-details"${aligned.length ? " open" : ""}><summary>Sun${ev.some(([b]) => b === "moon") ? " and moon" : ""} on the horizon here</summary>

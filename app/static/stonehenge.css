@@ -1,0 +1,39 @@
+/* Stonehenge in 3D (/stonehenge) */
+.sh-page { padding: 0; }
+.sh-stage { position: relative; height: calc(100vh - var(--sh-top, 120px)); min-height: 480px; background: #0b0d12; overflow: hidden; }
+#sh_canvas { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+#sh_canvas:active { cursor: grabbing; }
+.sh-panel { position: absolute; top: 12px; left: 12px; width: 300px; max-height: calc(100% - 90px); overflow: auto;
+  background: color-mix(in srgb, var(--panel) 92%, transparent); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 10px; padding: 10px 12px; font-size: 14px; box-shadow: 0 4px 18px rgba(0,0,0,.25); }
+.sh-panel h1 { font: 600 19px Georgia, serif; margin: 0 0 8px; }
+.sh-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 8px; }
+.sh-views { border: 0; padding: 0; flex-direction: column; align-items: flex-start; gap: 2px; }
+.sh-date input[type=number] { width: 4.2em; }
+.sh-date #sh_y { width: 5.2em; }
+.sh-panel input, .sh-panel select { background: var(--bg); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 3px 5px; font: inherit; }
+.sh-panel input[type=range] { flex: 1; padding: 0; }
+.sh-events { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 8px; }
+.sh-events .btn, .sh-panel .btn { font-size: 13px; padding: 3px 8px; }
+.sh-checks { flex-direction: column; align-items: flex-start; gap: 2px; }
+.sh-bar { position: absolute; left: 324px; right: 12px; bottom: 12px; color: #f2efe8; font-size: 13.5px;
+  background: rgba(10, 12, 18, .62); border-radius: 8px; padding: 6px 10px; pointer-events: none; }
+.sh-bar .meta { color: #c8c2b8; }
+.sh-stone { position: absolute; top: 12px; right: 12px; width: 320px; max-height: calc(100% - 90px); overflow: auto;
+  background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px;
+  font-size: 14px; box-shadow: 0 4px 18px rgba(0,0,0,.25); }
+.sh-stone h3 { margin: 0 0 4px; font: 600 17px Georgia, serif; }
+.sh-close { float: right; border: 0; background: none; font-size: 22px; line-height: 1; cursor: pointer; color: var(--muted); }
+.sh-cites { padding-left: 18px; font-size: 13px; }
+.sh-cites li { margin: 0 0 6px; }
+.sh-names { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.sh-names span { position: absolute; transform: translate(8px, -50%); color: rgba(220, 228, 255, .85); font-size: 12px; text-shadow: 0 0 3px #000; white-space: nowrap; }
+.sh-names .sh-body { color: #fff6d8; transform: translate(-50%, 0); }
+.sh-about { max-width: 900px; margin: 20px auto; padding: 0 16px; }
+@media (max-width: 760px) {
+  .sh-stage { height: 78vh; }
+  .sh-panel { width: auto; right: 12px; max-height: 42%; }
+  .sh-bar { left: 12px; }
+  .sh-stone { left: 12px; width: auto; top: auto; bottom: 70px; max-height: 45%; }
+}
+.sh-nogl { color: #f2efe8; padding: 40px; max-width: 520px; }

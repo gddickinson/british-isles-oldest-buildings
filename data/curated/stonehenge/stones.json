@@ -1,0 +1,3573 @@
+{
+ "about": "Stonehenge stone by stone (Petrie numbering) as it is today and as thought complete (sarsen phase c. 2500 BC, later bluestone settings), for a 3D model. Research file; quotes are exact text from the cited pages (whitespace normalised). 'derived' marks values computed or read off a plan.",
+ "date_checked": "2026-10-29",
+ "sources": {
+  "wp_stonehenge": {
+   "title": "Stonehenge - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Stonehenge",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_heel": {
+   "title": "Heel Stone - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Heel_Stone",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_altar": {
+   "title": "Altar Stone (Stonehenge) - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Altar_Stone_(Stonehenge)",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_avenue": {
+   "title": "Stonehenge Avenue - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Stonehenge_Avenue",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_station": {
+   "title": "Station Stones - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Station_Stones",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_bluestone": {
+   "title": "Bluestone - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bluestone",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "eh_description": {
+   "title": "Description of Stonehenge - English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/description/",
+   "licence_note": "English Heritage copyright; short quotes only"
+  },
+  "eh_history": {
+   "title": "History of Stonehenge - English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+   "licence_note": "English Heritage copyright; short quotes only"
+  },
+  "eh_stones": {
+   "title": "Discover more about the Stones - English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/things-to-do/stone-circle/stones-of-stonehenge/",
+   "licence_note": "English Heritage copyright; short quotes only"
+  },
+  "eh_building": {
+   "title": "Building Stonehenge - English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/building-stonehenge/",
+   "licence_note": "English Heritage copyright; short quotes only"
+  },
+  "eh_audio": {
+   "title": "Stonehenge stone circle tour - audio guide transcript (PDF) - English Heritage",
+   "url": "https://www.english-heritage.org.uk/siteassets/home/visit/places-to-visit/stonehenge/plan-your-visit/stonehenge-stone-circle-tour---audio-guide-transcript.pdf",
+   "licence_note": "English Heritage copyright; short quotes only"
+  },
+  "darvill2022": {
+   "title": "Darvill, T. 2022. Keeping time at Stonehenge. Antiquity 96: 319-335",
+   "url": "https://www.cambridge.org/core/journals/antiquity/article/keeping-time-at-stonehenge/792A5E8E091C8B7CB9C26B4A35A6B399",
+   "licence_note": "Open access, CC BY 4.0"
+  },
+  "banton2014": {
+   "title": "Banton, S. et al. 2014. Parchmarks at Stonehenge, July 2013. Antiquity 88: 733-739",
+   "url": "https://www.cambridge.org/core/journals/antiquity/article/abs/parchmarks-at-stonehenge-july-2013/69AAE39C702A5B844CFDD84EA0B3F26C",
+   "licence_note": "Publisher page (opening paragraph visible); short quotes only"
+  },
+  "field2015": {
+   "title": "Field, D. et al. 2015. Analytical Surveys of Stonehenge and its Environs, 2009-2013: Part 2 - the Stones. Proceedings of the Prehistoric Society 81: 125-148 (abstract)",
+   "url": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/analytical-surveys-of-stonehenge-and-its-environs-20092013-part-2-the-stones/5EA6E761CCA1B30E29EA0E7C97C4C33C",
+   "licence_note": "Abstract; short quotes only"
+  },
+  "nash2020": {
+   "title": "Nash, D.J. et al. 2020. Origins of the sarsen megaliths at Stonehenge. Science Advances 6: eabc0133",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7439454/",
+   "licence_note": "Open access, CC BY-NC 4.0"
+  },
+  "clarke2024": {
+   "title": "Clarke, A.J.I. et al. 2024. A Scottish provenance for the Altar Stone of Stonehenge. Nature 632: 570-575",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11324516/",
+   "licence_note": "Open access, CC BY 4.0"
+  },
+  "lockyer1909": {
+   "title": "Lockyer, N. 1909. Stonehenge and Other British Stone Monuments Astronomically Considered (2nd ed.), Project Gutenberg #62342",
+   "url": "https://www.gutenberg.org/cache/epub/62342/pg62342.txt",
+   "licence_note": "Public domain"
+  },
+  "commons_stone_plan": {
+   "title": "File:Stone Plan.jpg (Anthony Johnson, 2007) - Wikimedia Commons; numbered plan of the stones as they survive, legend Sarsen / Fallen sarsen / Bluestone / Fallen bluestone / Sandstone",
+   "url": "https://commons.wikimedia.org/wiki/File:Stone_Plan.jpg",
+   "licence_note": "CC BY 3.0 (image); states read off the plan are marked derived"
+  },
+  "commons_site_plan": {
+   "title": "File:Stonehenge plan.jpg (Adamsan, 2004 state) - Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Stonehenge_plan.jpg",
+   "licence_note": "CC BY-SA 3.0"
+  },
+  "sos_missing": {
+   "title": "Missing Stones - The Stones of Stonehenge (Simon Banton; secondary)",
+   "url": "https://www.stonesofstonehenge.org.uk/p/missing-stones.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_1": {
+   "title": "Stone 1 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-1.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_2": {
+   "title": "Stone 2 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-2.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_3": {
+   "title": "Stone 3 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-3.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_4": {
+   "title": "Stone 4 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-4.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_5": {
+   "title": "Stone 5 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-5.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_6": {
+   "title": "Stone 6 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-6.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_7": {
+   "title": "Stone 7 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-7.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_8": {
+   "title": "Stone 8 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-8.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_9": {
+   "title": "Stone 9 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-9.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_10": {
+   "title": "Stone 10 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-10.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_11": {
+   "title": "Stone 11 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-11.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_12": {
+   "title": "Stone 12 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-12.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_14": {
+   "title": "Stone 14 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-14.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_15": {
+   "title": "Stone 15 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-15.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_16": {
+   "title": "Stone 16 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-16.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_19": {
+   "title": "Stone 19 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-19.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_21": {
+   "title": "Stone 21 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-21.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_22": {
+   "title": "Stone 22 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-22.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_122": {
+   "title": "Stone 122 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-122.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_23": {
+   "title": "Stone 23 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-23.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_25": {
+   "title": "Stone 25 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-25.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_26": {
+   "title": "Stone 26 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-26.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_27": {
+   "title": "Stone 27 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-27.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_28": {
+   "title": "Stone 28 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-28.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_29": {
+   "title": "Stone 29 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-29.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_30": {
+   "title": "Stone 30 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-30.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_101": {
+   "title": "Stone 101 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/stone-101.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_120": {
+   "title": "Stone 120 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-120.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_127": {
+   "title": "Stone 127 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-127.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_51": {
+   "title": "Stone 51 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/06/stone-51.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_52": {
+   "title": "Stone 52 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/06/stone-52.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_53": {
+   "title": "Stone 53 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/06/stone-53.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_158": {
+   "title": "Stone 158 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-158.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_54": {
+   "title": "Stone 54 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/08/stone-54.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_55": {
+   "title": "Stone 55 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/12/stone-55.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_56": {
+   "title": "Stone 56 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-56.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_57": {
+   "title": "Stone 57 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-57.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_58": {
+   "title": "Stone 58 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-58.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_59": {
+   "title": "Stone 59 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-59.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_60": {
+   "title": "Stone 60 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-60.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_156": {
+   "title": "Stone 156 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-156.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_160": {
+   "title": "Stone 160 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-160.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_altar_stone_stone_80": {
+   "title": "Altar Stone (Stone 80) - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/altar-stone-stone-80.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_slaughter_stone_stone_95": {
+   "title": "Slaughter Stone (Stone 95) - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/slaughter-stone-stone-95.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_eastern_station_stone_stone_91": {
+   "title": "Eastern Station Stone (Stone 91) - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/eastern-station-stone-stone-91.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_western_station_stone_stone_93": {
+   "title": "Western Station Stone (Stone 93) - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/western-station-stone-stone-93.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_31": {
+   "title": "Stone 31 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-31.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_33": {
+   "title": "Stone 33 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-33.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_34": {
+   "title": "Stone 34 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-34.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_35": {
+   "title": "Stone 35 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-35.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_36": {
+   "title": "Stone 36 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-36.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_37": {
+   "title": "Stone 37 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/05/stone-37.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stumps": {
+   "title": "Stumps - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2020/07/below-ground-stumps.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_46": {
+   "title": "Stone 46 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/06/stone-46.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_47": {
+   "title": "Stone 47 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/06/stone-47.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_49": {
+   "title": "Stone 49 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2014/06/stone-49.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_150": {
+   "title": "Stone 150 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/04/stone-150.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_61": {
+   "title": "Stone 61 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-61.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_62": {
+   "title": "Stone 62 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-62.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_63": {
+   "title": "Stone 63 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-63.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_64": {
+   "title": "Stone 64 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-64.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_66": {
+   "title": "Stone 66 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/01/stone-66.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_68": {
+   "title": "Stone 68 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/stone-68.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_69": {
+   "title": "Stone 69 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/stone-69.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_70": {
+   "title": "Stone 70 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/stone-70.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_stone_71": {
+   "title": "Stone 71 - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2020/04/stone-71.html",
+   "licence_note": "Personal site; secondary pointer only"
+  },
+  "sos_the_heel_stone_stone_96": {
+   "title": "The Heel Stone (Stone 96) - The Stones of Stonehenge (Simon Banton; secondary: photos, weights, heights)",
+   "url": "https://www.stonesofstonehenge.org.uk/2015/02/the-heelstone-stone-96.html",
+   "licence_note": "Personal site; secondary pointer only"
+  }
+ },
+ "stones": [
+  {
+   "id": "1",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "Flanks the north-east entrance on the solstice axis; the gap between 1 and 30 is wider than the rest (1.38 m).",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_1",
+     "quote": "Height: 3.96m (13ft 0in)"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "the gap between S1 and S30 to the north-east is larger than average, at 1.38m, suggesting that this was an entrance"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.27,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_2",
+     "quote": "Height: 4.27m (14ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.16,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_3",
+     "quote": "Height: 4.16m (13ft 8in)"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.27,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_4",
+     "quote": "Height: 4.27m (14ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.27,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_5",
+     "quote": "Height: 4.27m (14ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.19,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_6",
+     "quote": "Height: 4.19m (13ft 9in)"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_7",
+     "quote": "Height: 3.96m (13ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "group": "sarsen_upright",
+   "state_now": "fallen",
+   "notes": "Fallen remnant in the south-east arc (est. 1.56 t above ground).",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_8",
+     "quote": "Estimated above ground weight: 1.56 tons"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "group": "sarsen_upright",
+   "state_now": "fragment",
+   "notes": "Broken in two pieces (9a, 9b) lying on the circle line (derived from the plan); weight estimate queried by the photo site.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_9",
+     "quote": "Estimated above ground weight: 0.29 tons (Query - possible error in data source?)"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_10",
+     "quote": "Height: 3.96m (13ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "Notably narrow (1.1 m), thinner and shorter than the rest; its top may have been broken off.",
+   "fallen_toward": null,
+   "height_above_ground_m": 2.74,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_11",
+     "quote": "Height: 2.74m (9ft 0in)"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "S11 (Figure 2) in the south-eastern sector is notably narrower, at 1.1m wide"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "recent work suggests that its top has been broken off"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "group": "sarsen_upright",
+   "state_now": "fallen",
+   "notes": "Fallen; lies on the southern arc (est. 15.16 t above ground).",
+   "fallen_toward": "outward, roughly south (derived from the plan)",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_12",
+     "quote": "Estimated above ground weight: 15.16 tons"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "group": "sarsen_upright",
+   "state_now": "missing",
+   "notes": "No stone on site; socket(s) for the missing south-western uprights known from excavation or the 2013 parchmarks.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Seventeen of the uprights are still standing in their original positions, seven are extant but fallen and six are missing."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "Although the six missing uprights lie in the south-western sector of the circle"
+    },
+    {
+     "source": "sos_missing",
+     "quote": "Four sarsen stones that might be expected to complete the sarsen circle are also missing (eg Stones 13, 17, 18 and 20)"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "group": "sarsen_upright",
+   "state_now": "fallen",
+   "notes": "Fallen in the south-west arc; probably the stone first called the 'Friar's Heel' (Aubrey: 'lies downe, on the west side').",
+   "fallen_toward": "inward, towards the north-east (derived from the plan)",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_14",
+     "quote": "One of the great Stones that lies downe, on the west side, hath a cavity something resembling the print of a mans foot"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "group": "sarsen_upright",
+   "state_now": "fallen",
+   "notes": "SOURCES DISAGREE: the numbered plan shows a fallen sarsen labelled 15 (photo site: est. 3.14 t above ground), but Darvill 2022 counts S15 among the six missing uprights (and so seven fallen, not eight).",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_15",
+     "quote": "Estimated above ground weight: 3.14 tons"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "as S15 is missing, it is difficult to judge whether there was a correspondingly wide gap to the south-west"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.27,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_16",
+     "quote": "Height: 4.27m (14ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "group": "sarsen_upright",
+   "state_now": "missing",
+   "notes": "No stone on site; socket(s) for the missing south-western uprights known from excavation or the 2013 parchmarks.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Seventeen of the uprights are still standing in their original positions, seven are extant but fallen and six are missing."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "Although the six missing uprights lie in the south-western sector of the circle"
+    },
+    {
+     "source": "sos_missing",
+     "quote": "Four sarsen stones that might be expected to complete the sarsen circle are also missing (eg Stones 13, 17, 18 and 20)"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "group": "sarsen_upright",
+   "state_now": "missing",
+   "notes": "No stone on site; socket(s) for the missing south-western uprights known from excavation or the 2013 parchmarks.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Seventeen of the uprights are still standing in their original positions, seven are extant but fallen and six are missing."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "Although the six missing uprights lie in the south-western sector of the circle"
+    },
+    {
+     "source": "sos_missing",
+     "quote": "Four sarsen stones that might be expected to complete the sarsen circle are also missing (eg Stones 13, 17, 18 and 20)"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "group": "sarsen_upright",
+   "state_now": "fallen",
+   "notes": "Fallen outside the circle on the west, with fallen lintel 120 beside it.",
+   "fallen_toward": "outward, west (derived from the plan)",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_19",
+     "quote": "Estimated above ground weight: 3.96 tons"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "group": "sarsen_upright",
+   "state_now": "missing",
+   "notes": "No stone on site; socket(s) for the missing south-western uprights known from excavation or the 2013 parchmarks.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Seventeen of the uprights are still standing in their original positions, seven are extant but fallen and six are missing."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "Although the six missing uprights lie in the south-western sector of the circle"
+    },
+    {
+     "source": "sos_missing",
+     "quote": "Four sarsen stones that might be expected to complete the sarsen circle are also missing (eg Stones 13, 17, 18 and 20)"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "Narrower (1.5 m) and thinner than average but appears complete.",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_21",
+     "quote": "Height: 3.96m (13ft 0in)"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "S21 (Figure 3) in the western sector appears complete but is narrower, at 1.5m wide, and thinner than average"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "Fell with lintel 122 in a storm on 31 December 1900; re-erected (with 21 and 122) in the 1950s restoration (1958).",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.81,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_22",
+     "quote": "Height: 3.81m (12ft 6in)"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "Stone 22 fell during a fierce storm on 31 December 1900."
+    },
+    {
+     "source": "sos_stone_122",
+     "quote": "Stone 122 fell, along with Stone 22, on 31st December 1900."
+    },
+    {
+     "source": "sos_stone_122",
+     "quote": "Prior to the re-erection of Stones 21, 22 and 122 in the 1950s"
+    },
+    {
+     "source": "sos_stone_22",
+     "quote": "Was fallen when Chief Architect inspected in 1919"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "Fell in 1963 and was re-erected (restoration of 1963-64, set in concrete).",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.81,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_23",
+     "quote": "Height: 3.81m (12ft 6in)"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The last restoration was carried out in 1963 after stone 23 of the Sarsen Circle fell over. It was again re-erected"
+    },
+    {
+     "source": "eh_history",
+     "quote": "the last stones were consolidated in 1964"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "group": "sarsen_upright",
+   "state_now": "missing",
+   "notes": "No stone on site; socket(s) for the missing south-western uprights known from excavation or the 2013 parchmarks. Not drawn on the numbered plan of surviving stones (derived).",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Seventeen of the uprights are still standing in their original positions, seven are extant but fallen and six are missing."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "Although the six missing uprights lie in the south-western sector of the circle"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "group": "sarsen_upright",
+   "state_now": "fallen",
+   "notes": "Fallen on the northern arc (est. 7.08 t above ground).",
+   "fallen_toward": "along the circle line (derived from the plan; uncertain)",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_25",
+     "quote": "Estimated above ground weight: 7.08 tons"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "group": "sarsen_upright",
+   "state_now": "fragment",
+   "notes": "Small fallen fragment (est. 0.96 t above ground); chemically distinct from the other sarsens, the northernmost upright of the circle.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_26",
+     "quote": "Estimated above ground weight: 0.96 tons"
+    },
+    {
+     "source": "nash2020",
+     "quote": "Stone 26 is the northernmost upright of the Sarsen Circle"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_27",
+     "quote": "Height: 3.96m (13ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_28",
+     "quote": "Height: 3.96m (13ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_29",
+     "quote": "Height: 3.96m (13ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "group": "sarsen_upright",
+   "state_now": "standing",
+   "notes": "Flanks the north-east entrance on the solstice axis; the gap between 1 and 30 is wider than the rest (1.38 m).",
+   "fallen_toward": null,
+   "height_above_ground_m": 3.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_30",
+     "quote": "Height: 3.96m (13ft 0in)"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "the gap between S1 and S30 to the north-east is larger than average, at 1.38m, suggesting that this was an entrance"
+    }
+   ]
+  },
+  {
+   "id": "101",
+   "group": "sarsen_lintel",
+   "state_now": "standing",
+   "notes": "In place on uprights 30 and 1.",
+   "fallen_toward": null,
+   "rests_on": [
+    "30",
+    "1"
+   ],
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There are only six remaining lintels of the outer sarsen circle in place at Stonehenge"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: lintel outline drawn over its two uprights"
+    },
+    {
+     "source": "sos_stone_101",
+     "quote": "Stone 101 spans the primary axis of Stonehenge and is supported by the uprights Stone 30 and Stone 1."
+    }
+   ]
+  },
+  {
+   "id": "102",
+   "group": "sarsen_lintel",
+   "state_now": "standing",
+   "notes": "In place on uprights 1 and 2.",
+   "fallen_toward": null,
+   "rests_on": [
+    "1",
+    "2"
+   ],
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There are only six remaining lintels of the outer sarsen circle in place at Stonehenge"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: lintel outline drawn over its two uprights"
+    }
+   ]
+  },
+  {
+   "id": "103",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "2",
+    "3"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "104",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "3",
+    "4"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "105",
+   "group": "sarsen_lintel",
+   "state_now": "standing",
+   "notes": "In place on uprights 4 and 5.",
+   "fallen_toward": null,
+   "rests_on": [
+    "4",
+    "5"
+   ],
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There are only six remaining lintels of the outer sarsen circle in place at Stonehenge"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: lintel outline drawn over its two uprights"
+    }
+   ]
+  },
+  {
+   "id": "106",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "5",
+    "6"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "107",
+   "group": "sarsen_lintel",
+   "state_now": "standing",
+   "notes": "In place on uprights 6 and 7.",
+   "fallen_toward": null,
+   "rests_on": [
+    "6",
+    "7"
+   ],
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There are only six remaining lintels of the outer sarsen circle in place at Stonehenge"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: lintel outline drawn over its two uprights"
+    }
+   ]
+  },
+  {
+   "id": "108",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "7",
+    "8"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "109",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "8",
+    "9"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "110",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "9",
+    "10"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "111",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "10",
+    "11"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "112",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "11",
+    "12"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "113",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "12",
+    "13"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "114",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "13",
+    "14"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "115",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "14",
+    "15"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "116",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "15",
+    "16"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "117",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "16",
+    "17"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "118",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "17",
+    "18"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "119",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "18",
+    "19"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "120",
+   "group": "sarsen_lintel",
+   "state_now": "fallen",
+   "notes": "Fallen lintel lying on the ground beside fallen upright 19 (outside the circle, west).",
+   "fallen_toward": null,
+   "rests_on": [
+    "19",
+    "20"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_120",
+     "quote": "Estimated above ground weight: 1.17 tons"
+    }
+   ]
+  },
+  {
+   "id": "121",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "20",
+    "21"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "122",
+   "group": "sarsen_lintel",
+   "state_now": "standing",
+   "notes": "In place on uprights 21 and 22. Fell with upright 22 on 31 December 1900 and broke on the fallen West Trilithon; pinned and glued and replaced in the 1950s (1958).",
+   "fallen_toward": null,
+   "rests_on": [
+    "21",
+    "22"
+   ],
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There are only six remaining lintels of the outer sarsen circle in place at Stonehenge"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: lintel outline drawn over its two uprights"
+    },
+    {
+     "source": "sos_stone_122",
+     "quote": "Stone 122 broke when it hit the already fallen stones of the West Trilithon"
+    },
+    {
+     "source": "sos_stone_122",
+     "quote": "the two parts of Stone 122 had to be pinned and glued back together"
+    }
+   ]
+  },
+  {
+   "id": "123",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "22",
+    "23"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "124",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "23",
+    "24"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "125",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "24",
+    "25"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "126",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "25",
+    "26"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "127",
+   "group": "sarsen_lintel",
+   "state_now": "fallen",
+   "notes": "Fallen lintel lying on the ground between upright 26 and 27 (north).",
+   "fallen_toward": null,
+   "rests_on": [
+    "26",
+    "27"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_127",
+     "quote": "Estimated above ground weight: 1.44 tons"
+    }
+   ]
+  },
+  {
+   "id": "128",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "27",
+    "28"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "129",
+   "group": "sarsen_lintel",
+   "state_now": "missing",
+   "notes": "Not on site.",
+   "fallen_toward": null,
+   "rests_on": [
+    "28",
+    "29"
+   ],
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Six lintels remain in place atop their supporting uprights, while two fallen examples lie on the ground; 22 are missing."
+    }
+   ]
+  },
+  {
+   "id": "130",
+   "group": "sarsen_lintel",
+   "state_now": "standing",
+   "notes": "In place on uprights 29 and 30.",
+   "fallen_toward": null,
+   "rests_on": [
+    "29",
+    "30"
+   ],
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There are only six remaining lintels of the outer sarsen circle in place at Stonehenge"
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: lintel outline drawn over its two uprights"
+    }
+   ]
+  },
+  {
+   "id": "51",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "East trilithon (51-52-152), smallest pair, on the south-east side of the opening (position derived from the plan).",
+   "fallen_toward": null,
+   "height_above_ground_m": 4.98,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_51",
+     "quote": "Height: 4.98m (16ft 4in)"
+    }
+   ]
+  },
+  {
+   "id": "52",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "East trilithon (51-52-152).",
+   "fallen_toward": null,
+   "height_above_ground_m": 5.08,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_52",
+     "quote": "Height: 5.08m (16ft 8in)"
+    }
+   ]
+  },
+  {
+   "id": "53",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "South-east trilithon (53-54-154); Bronze Age dagger and axe carvings on its face. Never fell.",
+   "fallen_toward": null,
+   "height_above_ground_m": 5.18,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_53",
+     "quote": "Height: 5.18m (17ft 0in)"
+    },
+    {
+     "source": "sos_stone_158",
+     "quote": "its \"twin\" trilithon on the southeast side which has remained standing for 4,500 years"
+    }
+   ]
+  },
+  {
+   "id": "54",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "South-east trilithon (53-54-154). Never fell.",
+   "fallen_toward": null,
+   "height_above_ground_m": 5.18,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_54",
+     "quote": "Height: 5.18m (17ft 0in)"
+    },
+    {
+     "source": "sos_stone_158",
+     "quote": "its \"twin\" trilithon on the southeast side which has remained standing for 4,500 years"
+    }
+   ]
+  },
+  {
+   "id": "55",
+   "group": "trilithon_upright",
+   "state_now": "fallen",
+   "notes": "Great Trilithon (55-56-156) upright; fell (Lockyer: 1620) and broke in two (55a, 55b); 55b lies across the Altar Stone.",
+   "fallen_toward": "north-east, across the Altar Stone (derived from the plan)",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_55",
+     "quote": "This stone is the fallen upright of the Great Trilithon. It has broken in half."
+    },
+    {
+     "source": "clarke2024",
+     "quote": "the current arrangement has Stones 55b and 156 from the collapsed Great Trilithon resting atop the prone and broken Altar Stone"
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "Of this trilithon the southernmost upright with the lintel stone fell in 1620",
+     "note": "date as given by Lockyer; not checked against a modern source"
+    }
+   ]
+  },
+  {
+   "id": "56",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "Great Trilithon; the tallest stone, leaning until straightened and set in concrete by Gowland in 1901 (moved about 0.5 m).",
+   "fallen_toward": null,
+   "height_above_ground_m": 6.55,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_56",
+     "quote": "Height: 6.55m (21ft 6in)"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "That involved straightening and concrete-setting of sarsen stone number 56, which was in danger of falling. In straightening the stone, he moved it about half a metre from its original position."
+    },
+    {
+     "source": "eh_stones",
+     "quote": "Stone 56 is the only remaining upright of the tallest trilithon"
+    }
+   ]
+  },
+  {
+   "id": "57",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "West trilithon (57-58-158); fell outwards in January 1797, re-erected 1958.",
+   "fallen_toward": null,
+   "height_above_ground_m": 5.18,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_57",
+     "quote": "Height: 5.18m (17ft 0in)"
+    },
+    {
+     "source": "sos_stone_58",
+     "quote": "This stone along with Stone 57 and Lintel 158 - known as the \"West Trilithon\" - collapsed outwards in January 1797 and lay on the ground until their re-erection in 1958."
+    },
+    {
+     "source": "nash2020",
+     "quote": "three sarsen stones that fell in 1797 were reerected (uprights 57 and 58 and lintel 158 from the Trilithon Horseshoe"
+    }
+   ]
+  },
+  {
+   "id": "58",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "West trilithon (57-58-158); fell outwards in January 1797, re-erected 1958 (bolted through a bedding plane).",
+   "fallen_toward": null,
+   "height_above_ground_m": 5.18,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_58",
+     "quote": "Height: 5.18m (17ft 0in)"
+    },
+    {
+     "source": "sos_stone_58",
+     "quote": "This stone along with Stone 57 and Lintel 158 - known as the \"West Trilithon\" - collapsed outwards in January 1797 and lay on the ground until their re-erection in 1958."
+    },
+    {
+     "source": "nash2020",
+     "quote": "three sarsen stones that fell in 1797 were reerected (uprights 57 and 58 and lintel 158 from the Trilithon Horseshoe"
+    }
+   ]
+  },
+  {
+   "id": "59",
+   "group": "trilithon_upright",
+   "state_now": "fallen",
+   "notes": "North-west trilithon (59-60-160); 59 fallen and broken into three (59a, 59b, 59c).",
+   "fallen_toward": "inward, towards the centre (derived from the plan)",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_59",
+     "quote": "Stone 59 has fallen and has broken into three pieces."
+    }
+   ]
+  },
+  {
+   "id": "60",
+   "group": "trilithon_upright",
+   "state_now": "standing",
+   "notes": "North-west trilithon; the only upright still standing; straightened in 1959 and its basal cavity filled with concrete.",
+   "fallen_toward": null,
+   "height_above_ground_m": 5.03,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_60",
+     "quote": "Height: 5.03m (16ft 6in)"
+    },
+    {
+     "source": "eh_stones",
+     "quote": "In 1959 during a programme of restoration, the stone was straightened and the hole filled with concrete."
+    }
+   ]
+  },
+  {
+   "id": "152",
+   "group": "trilithon_lintel",
+   "state_now": "standing",
+   "notes": "In place on 51 and 52.",
+   "fallen_toward": null,
+   "rests_on": [
+    "51",
+    "52"
+   ],
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "154",
+   "group": "trilithon_lintel",
+   "state_now": "standing",
+   "notes": "In place on 53 and 54; never fell.",
+   "fallen_toward": null,
+   "rests_on": [
+    "53",
+    "54"
+   ],
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_158",
+     "quote": "its \"twin\" trilithon on the southeast side which has remained standing for 4,500 years"
+    }
+   ]
+  },
+  {
+   "id": "156",
+   "group": "trilithon_lintel",
+   "state_now": "fallen",
+   "notes": "Great Trilithon lintel; lies on its edge across the western end of the Altar Stone.",
+   "fallen_toward": "on its edge across the Altar Stone",
+   "rests_on": [
+    "55",
+    "56"
+   ],
+   "cites": [
+    {
+     "source": "sos_stone_156",
+     "quote": "It now lies on its edge across the western end of the Altar Stone following the collapse of the Great Trilithon which comprised Stones 55, 56 and 156."
+    }
+   ]
+  },
+  {
+   "id": "158",
+   "group": "trilithon_lintel",
+   "state_now": "standing",
+   "notes": "Fell westwards with 57 and 58 in 1797; replaced 1958.",
+   "fallen_toward": null,
+   "rests_on": [
+    "57",
+    "58"
+   ],
+   "cites": [
+    {
+     "source": "sos_stone_158",
+     "quote": "this lintel fell westwards in 1797 and lay on the ground until 1958 when it was re-erected"
+    }
+   ]
+  },
+  {
+   "id": "160",
+   "group": "trilithon_lintel",
+   "state_now": "fallen",
+   "notes": "Fallen and broken in three (160a, b, c) towards the centre; chemically distinct from most sarsens.",
+   "fallen_toward": "inward, towards the centre (derived from the plan)",
+   "rests_on": [
+    "59",
+    "60"
+   ],
+   "cites": [
+    {
+     "source": "sos_stone_160",
+     "quote": "Stone 160 is in three fragments, it is the fallen and broken lintel of the northwestern trilithon of which only Stone 60 still stands."
+    },
+    {
+     "source": "nash2020",
+     "quote": "Upright 26 and lintel 160 have distinctly different chemistries"
+    }
+   ]
+  },
+  {
+   "id": "80",
+   "group": "altar_stone",
+   "state_now": "fallen",
+   "notes": "Recumbent sandstone slab, broken in two, partly buried under fallen 55b and lintel 156; lies at about 80 degrees to the axis (not 90). Whether it ever stood upright is unknown.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "clarke2024",
+     "quote": "the Altar Stone (Stone 80), is the largest of the bluestones, measuring 4.9 × 1.0 × 0.5 m, and is a recumbent stone"
+    },
+    {
+     "source": "clarke2024",
+     "quote": "Whether the Altar Stone once stood upright as an approximately 4 m high megalith is unclear"
+    },
+    {
+     "source": "sos_altar_stone_stone_80",
+     "quote": "The Altar Stone lies at 80° to the main solstitial axis beneath the collapsed upright of the Great Trilithon (Stone 55b) and its lintel (Stone 156), sunk into the grass."
+    },
+    {
+     "source": "sos_altar_stone_stone_80",
+     "quote": "The stone itself was broken by the fall of the Great Trilithon's upright and is in two pieces."
+    }
+   ]
+  },
+  {
+   "id": "95",
+   "group": "slaughter_stone",
+   "state_now": "fallen",
+   "notes": "Lies prone in the entrance, once upright with one or two other stones across the causeway; its north-eastern end was the buried end. About 4.9 m long.",
+   "fallen_toward": "lies prone (buried end to the north-east)",
+   "cites": [
+    {
+     "source": "eh_description",
+     "quote": "the Slaughter Stone, a fallen sarsen that once stood upright with one or two other stones across the entrance causeway"
+    },
+    {
+     "source": "sos_slaughter_stone_stone_95",
+     "quote": "The Slaughter Stone originally stood upright with its northeastern end planted in the ground."
+    },
+    {
+     "source": "commons_site_plan",
+     "quote": "The fallen Slaughter Stone, 4.9 metres long"
+    }
+   ]
+  },
+  {
+   "id": "96",
+   "group": "heel_stone",
+   "state_now": "leaning",
+   "notes": "Unshaped sarsen outside the entrance in the Avenue, leaning south-west about 27 degrees from vertical; 4.7 m high above ground with 1.2 m buried; 77.4 m from the centre.",
+   "fallen_toward": "leans south-west (towards the circle)",
+   "height_above_ground_m": 4.7,
+   "cites": [
+    {
+     "source": "wp_heel",
+     "quote": "It leans towards the southwest nearly 27 degrees from the vertical."
+    },
+    {
+     "source": "wp_heel",
+     "quote": "It is 77.4 metres (254 ft) from the centre of Stonehenge circle."
+    },
+    {
+     "source": "eh_audio",
+     "quote": "The large leaning stone close to the path is called the Heel"
+    }
+   ]
+  },
+  {
+   "id": "91",
+   "group": "station_stone",
+   "state_now": "fallen",
+   "notes": "Eastern / north-east Station Stone, one of the two survivors. State derived: the photo site gives a weight but no standing height; not stated in a reachable source.",
+   "fallen_toward": "unknown",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Only two survive: S91 at the north-east corner (Figure 6) and S93 at the south-west corner (Figure 7)"
+    },
+    {
+     "source": "sos_eastern_station_stone_stone_91",
+     "quote": "Estimated above ground weight: 2.78 tons"
+    }
+   ]
+  },
+  {
+   "id": "92",
+   "group": "station_stone",
+   "state_now": "missing",
+   "notes": "On the South 'Barrow'; empty socket known by excavation; marked by a modern marker.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "empty sockets representing the other two (S92 and S94) are known through excavation"
+    },
+    {
+     "source": "sos_western_station_stone_stone_93",
+     "quote": "The positions of the missing two Station Stones (92 and 94) are indicated by modern stone and steel markers in the turf"
+    }
+   ]
+  },
+  {
+   "id": "93",
+   "group": "station_stone",
+   "state_now": "standing",
+   "notes": "Western / south-west Station Stone; small (1.22 m), minimally dressed.",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.22,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Only two survive: S91 at the north-east corner (Figure 6) and S93 at the south-west corner (Figure 7)"
+    },
+    {
+     "source": "sos_western_station_stone_stone_93",
+     "quote": "Height: 1.22m (4ft 0in)"
+    }
+   ]
+  },
+  {
+   "id": "94",
+   "group": "station_stone",
+   "state_now": "missing",
+   "notes": "On the North 'Barrow'; empty socket known by excavation; marked by a modern marker.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "empty sockets representing the other two (S92 and S94) are known through excavation"
+    }
+   ]
+  },
+  {
+   "id": "97",
+   "group": "heel_stone_companion",
+   "state_now": "missing",
+   "notes": "Companion of the Heel Stone; stonehole found 1979.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "the Heel Stone (S96) and its now-missing companion (S97)"
+    },
+    {
+     "source": "eh_stones",
+     "quote": "In 1979, the hole for another similar-sized stone was discovered next to it"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.88,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_31",
+     "quote": "Height: 1.88m (6ft 2in)"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "Fallen; bluestone lintel 150 lies across it.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "32c",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "32d",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "32e",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.68,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_33",
+     "quote": "Height: 1.68m (5ft 6in)"
+    }
+   ]
+  },
+  {
+   "id": "33e",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "33f",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "Low (0.97 m).",
+   "fallen_toward": null,
+   "height_above_ground_m": 0.97,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_34",
+     "quote": "Height: 0.97m (3ft 2in)"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "group": "bluestone_circle",
+   "state_now": "fragment",
+   "notes": "Two widely separated pieces (35a, 35b).",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_35",
+     "quote": "This stone is in two widely separated pieces."
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "group": "bluestone_lintel",
+   "state_now": "fallen",
+   "notes": "A former lintel (two mortise holes), later set as a single standing stone; lies partly buried.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_36",
+     "quote": "Stone 36 lies partly buried in the bluestone circle, where it once stood as a single standing stone."
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.27,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_37",
+     "quote": "Height: 1.27m (4ft 2in)"
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "39",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "40",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "40c",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "40g",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "Position marked by a lead cover.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    },
+    {
+     "source": "sos_stumps",
+     "quote": "Stone 40g is exceptional in that its position has been marked at ground level by a lead cover"
+    }
+   ]
+  },
+  {
+   "id": "41",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "41d",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "42",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "42c",
+   "group": "bluestone_circle",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "43",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "44",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "45",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "46",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "Low (0.96 m).",
+   "fallen_toward": null,
+   "height_above_ground_m": 0.96,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_46",
+     "quote": "Height: 0.96m (3ft 2in)"
+    }
+   ]
+  },
+  {
+   "id": "47",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.45,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_47",
+     "quote": "Height: 1.45m (4ft 9in)"
+    }
+   ]
+  },
+  {
+   "id": "48",
+   "group": "bluestone_circle",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "49",
+   "group": "bluestone_circle",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.9,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_49",
+     "quote": "Height: 1.9m (6ft 3in)"
+    }
+   ]
+  },
+  {
+   "id": "150",
+   "group": "bluestone_lintel",
+   "state_now": "fallen",
+   "notes": "A former lintel (two mortise holes); fallen and partly buried in the north-east arc of the circle.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_150",
+     "quote": "it now lies partly buried in the northeast arc of the bluestone circle where it has fallen from its position as a single standing stone"
+    }
+   ]
+  },
+  {
+   "id": "61",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "North-easternmost standing stone of the horseshoe.",
+   "fallen_toward": null,
+   "height_above_ground_m": 1.75,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_61",
+     "quote": "Stone 61 is the northeasternmost upstanding Bluestone in the inner horseshoe."
+    },
+    {
+     "source": "sos_stone_61",
+     "quote": "Height: 1.75m (5ft 9in)"
+    }
+   ]
+  },
+  {
+   "id": "61a",
+   "group": "bluestone_horseshoe",
+   "state_now": "stump",
+   "notes": "Barely emerges from the ground.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_61",
+     "quote": "About 2m to the right of it is a stone called Stone 61a, a stump that barely emerges from ground level."
+    }
+   ]
+  },
+  {
+   "id": "62",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 2.03,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_62",
+     "quote": "Height: 2.03m (6ft 8in)"
+    }
+   ]
+  },
+  {
+   "id": "63",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 2.11,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_63",
+     "quote": "Height: 2.11m (6ft 11in)"
+    }
+   ]
+  },
+  {
+   "id": "64",
+   "group": "bluestone_horseshoe",
+   "state_now": "stump",
+   "notes": "Just visible in the grass.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_64",
+     "quote": "Stone 64 is another stump that is just visible in the grass."
+    }
+   ]
+  },
+  {
+   "id": "65",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "Shown standing on the plan; no height recorded by the photo site (may be low): uncertain.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "66",
+   "group": "bluestone_horseshoe",
+   "state_now": "stump",
+   "notes": "Ground-level stump under the southern corner of fallen 55b; has a worked tongue.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_66",
+     "quote": "Stone 66 is a ground level stump underneath the southern corner of fallen Stone 55b."
+    }
+   ]
+  },
+  {
+   "id": "67",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "Shown standing on the plan; no height recorded by the photo site and a long outline on the plan, so it may lean: uncertain.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  {
+   "id": "68",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "Long worked groove down its northern face.",
+   "fallen_toward": null,
+   "height_above_ground_m": 2.49,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_68",
+     "quote": "Stone 68 has a long worked groove down its northern face"
+    },
+    {
+     "source": "sos_stone_68",
+     "quote": "Height: 2.49m (8ft 2in)"
+    }
+   ]
+  },
+  {
+   "id": "69",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 2.59,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_69",
+     "quote": "Height: 2.59m (8ft 6in)"
+    }
+   ]
+  },
+  {
+   "id": "70",
+   "group": "bluestone_horseshoe",
+   "state_now": "standing",
+   "notes": "",
+   "fallen_toward": null,
+   "height_above_ground_m": 2.34,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_70",
+     "quote": "Height: 2.34m (7ft 8in)"
+    }
+   ]
+  },
+  {
+   "id": "70a",
+   "group": "bluestone_horseshoe",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "70b",
+   "group": "bluestone_horseshoe",
+   "state_now": "buried",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "sos_missing",
+     "quote": "Some bluestones that are labelled on the plan, ie Stones 32c, 32d, 32e, 33e, 33f, 40c, 40g, 41d, 42c, 70a and 70b are not visible above ground level and exist only as completely buried stumps."
+    }
+   ]
+  },
+  {
+   "id": "71",
+   "group": "bluestone_horseshoe",
+   "state_now": "stump",
+   "notes": "Stump buried in the turf at the edge of fallen 59a.",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    },
+    {
+     "source": "sos_stone_71",
+     "quote": "Stone 71 is a stump buried in the turf at the edge of Stone 59a."
+    }
+   ]
+  },
+  {
+   "id": "72",
+   "group": "bluestone_horseshoe",
+   "state_now": "fallen",
+   "notes": "",
+   "fallen_toward": null,
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  }
+ ],
+ "bluestones_summary": {
+  "counts_by_state_derived": {
+   "bluestone_circle": {
+    "standing": 7,
+    "fallen": 10,
+    "buried": 9,
+    "fragment": 1
+   },
+   "bluestone_lintel": {
+    "fallen": 2
+   },
+   "bluestone_horseshoe": {
+    "standing": 8,
+    "stump": 4,
+    "buried": 2,
+    "fallen": 1
+   }
+  },
+  "note": "Counts derived from the per-stone list above (states from the Johnson plan legend, the buried-stump list of The Stones of Stonehenge, and individual stone pages). No official per-stone condition list was reachable; leaning bluestones are not distinguished on the plan, so 'standing' may include leaning stones.",
+  "surviving_total": {
+   "value": 43,
+   "cites": [
+    {
+     "source": "wp_bluestone",
+     "quote": "It is assumed that there were about 80 monoliths originally, but this has never been proven since only 43 remain."
+    }
+   ]
+  },
+  "original_total": {
+   "value": "up to 80",
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "There were up to 80 bluestones brought from the Preseli Hills in south-west Wales to Stonehenge."
+    }
+   ]
+  },
+  "general_condition": {
+   "cites": [
+    {
+     "source": "eh_description",
+     "quote": "Today, some of the bluestones have fallen and others are just stumps"
+    }
+   ]
+  },
+  "weights_t": {
+   "value": "2-5 (EH); up to 3 (EH audio guide)",
+   "cites": [
+    {
+     "source": "eh_building",
+     "quote": "They weigh between 2 and 5 tons each."
+    },
+    {
+     "source": "eh_audio",
+     "quote": "still weighing up to three"
+    }
+   ]
+  },
+  "heights_standing_m": {
+   "value": "0.96-2.59 above ground (from the photo site's heights of standing bluestones; horseshoe stones tallest, 2.03-2.59 m)",
+   "derived": true,
+   "cites": [
+    {
+     "source": "sos_stone_69",
+     "quote": "Height: 2.59m (8ft 6in)"
+    },
+    {
+     "source": "sos_stone_46",
+     "quote": "Height: 0.96m (3ft 2in)"
+    }
+   ]
+  }
+ },
+ "dimensions": {
+  "sarsen_circle_diameter_m": {
+   "value": 30,
+   "note": "Neither says whether to the inner faces, the centres or the outer faces. Lockyer 1909 gives 'about 100 feet'. Measured off the Johnson plan's scale bar the stone centres lie about 15.3-15.7 m from the centre (derived, approximate), i.e. about 31 m centre-line diameter.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "30 sarsens were erected in a circle of standing stones approximately 98 feet (30 m) in diameter"
+    },
+    {
+     "source": "eh_stones",
+     "quote": "an unbroken ring of stone, 30m in diameter, suspended 4m above the ground"
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "an external circle of about 100 feet in diameter, composed of thirty large upright stones"
+    }
+   ]
+  },
+  "sarsen_circle_inner_diameter_m": {
+   "value": "unknown",
+   "note": "No reachable source gives the inner-face diameter separately (Petrie 1880 does, but no online text was found).",
+   "cites": []
+  },
+  "sarsen_circle_outer_diameter_m": {
+   "value": "unknown",
+   "note": "As above.",
+   "cites": []
+  },
+  "sarsen_upright_height_above_ground_m": {
+   "value": 4.11,
+   "range": "about 4.0-4.3 m; heights vary round the ring to keep the lintels level; individual heights 3.81-4.27 m on the photo site; 11 is 2.74 m",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "Each standing stone was around 13.5 feet (4.11 m) high, 7.0 feet (2.13 m) wide, and 3.5 feet (1.06 m) deep, weighing around 26 tons."
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "each around 13 feet (4.0 m) high, seven feet (2.1 m) wide"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "The height of the uprights varies around the circumference in order to account for the natural slope on the ground, ensuring that the ring of lintels is level."
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "The upright stones formerly stood 14 feet above the surface of the ground."
+    }
+   ]
+  },
+  "sarsen_upright_width_m": {
+   "value": 2.13,
+   "note": "Darvill gives a 'standard width' of about 1.9 m measured 1.5 m above ground; S11 1.1 m, S21 1.5 m.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "Each standing stone was around 13.5 feet (4.11 m) high, 7.0 feet (2.13 m) wide"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "the 'standard width' being approximately 1.9m, measured 1.5m above ground level"
+    }
+   ]
+  },
+  "sarsen_upright_thickness_m": {
+   "value": 1.06,
+   "note": "Wikipedia also gives an average thickness of 1.1 m.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "and 3.5 feet (1.06 m) deep"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The average thickness of the stones is 3.6 feet (1.1 m)"
+    }
+   ]
+  },
+  "sarsen_upright_gap_m": {
+   "value": 1.0,
+   "note": "The 1-30 entrance gap is 1.38 m (Darvill).",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "the average distance between them is 3.3 feet (1 m)"
+    }
+   ]
+  },
+  "sarsen_lintel_length_m": {
+   "value": 3.2,
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "The lintel stones are each around 10 feet (3.2 m) long, 3.3 feet (1 m) wide and 2.6 feet (0.8 m) thick."
+    }
+   ]
+  },
+  "sarsen_lintel_width_m": {
+   "value": 1.0,
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "3.3 feet (1 m) wide"
+    }
+   ]
+  },
+  "sarsen_lintel_thickness_m": {
+   "value": 0.8,
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "2.6 feet (0.8 m) thick"
+    }
+   ]
+  },
+  "sarsen_lintel_top_height_m": {
+   "value": 4.9,
+   "note": "English Heritage instead says the ring was 'suspended 4m above the ground' (the underside, roughly the upright height); the two figures are compatible as underside ~4.1 m + 0.8 m lintel = 4.9 m (derived).",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "The tops of the lintels are 16 feet (4.9 m) above the ground."
+    },
+    {
+     "source": "eh_stones",
+     "quote": "suspended 4m above the ground"
+    }
+   ]
+  },
+  "sarsen_upright_total_length_m": {
+   "value": "6.0-7.0 (incl. buried part); 56 is 9.1 m",
+   "cites": [
+    {
+     "source": "nash2020",
+     "quote": "Typical sarsen uprights at Stonehenge have a long-axis length of 6.0 to 7.0 m (including sections below ground)"
+    },
+    {
+     "source": "nash2020",
+     "quote": "with the largest reaching 9.1 m (Stone 56)"
+    }
+   ]
+  },
+  "sarsen_weight_t": {
+   "value": "about 25-26 t per circle upright; trilithon stones up to 50 t",
+   "cites": [
+    {
+     "source": "eh_building",
+     "quote": "On average the sarsens weigh 25 tons"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "These huge stones, ten uprights and five lintels, weigh up to 50 tons each."
+    }
+   ]
+  },
+  "trilithon_horseshoe_width_m": {
+   "value": 13.7,
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "five trilithons of dressed sarsen stone arranged in a horseshoe shape 45 feet (13.7 m) across, with its open end facing northeast"
+    }
+   ]
+  },
+  "trilithon_heights_m": {
+   "value": {
+    "51-52-152 and 59-60-160 (smallest pair)": "about 6",
+    "53-54-154 and 57-58-158": "a little higher than 6 (unknown exactly)",
+    "55-56-156 (Great Trilithon)": 7.3
+   },
+   "note": "Heights of the uprights above ground on the photo site: 51 4.98, 52 5.08, 53 5.18, 54 5.18, 57 5.18 (est.), 58 5.18 (est.), 60 5.03, 56 6.55 to the platform / 6.88 to the tenon top. Add the lintel (thickness unknown per lintel) for the overall trilithon height. The pairing of the 'smallest pair' with 51-52 and 59-60 follows the symmetry Wikipedia/Darvill describe (heights rising towards the south-west); derived.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "The smallest pair of trilithons were around 20 feet (6 m) tall, the next pair a little higher, and the largest, single trilithon in the south-west corner would have been 24 feet (7.3 m) tall."
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "the loftiest stones being 25 feet above the ground"
+    }
+   ]
+  },
+  "great_trilithon_upright_56_m": {
+   "value": {
+    "visible": 6.7,
+    "below_ground": 2.4
+   },
+   "note": "EH audio guide says 'over seven metres' with 'another two and a half metres below ground'; Wikipedia 6.7 m + 2.4 m; Nash 9.1 m total.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "Only one upright from the Great Trilithon still stands, of which 22 feet (6.7 m) is visible, and a further 7.9 feet (2.4 m) is below ground."
+    },
+    {
+     "source": "eh_audio",
+     "quote": "The tallest one here stands over seven metres high with"
+    },
+    {
+     "source": "sos_stone_56",
+     "quote": "Height: 6.55m (21ft 6in) to platform, 6.88m (22ft 7in) to top of tenon"
+    }
+   ]
+  },
+  "bluestone_circle_diameter_m": {
+   "value": "about 23 (derived)",
+   "derived": true,
+   "note": "Measured off the Johnson plan's 10 m scale bar: standing circle bluestones (31, 46, 49, 37) lie 11.1-12.1 m from the centre. No reachable source states the diameter.",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  "bluestone_horseshoe_width_m": {
+   "value": "about 11-13 (derived)",
+   "derived": true,
+   "note": "Measured off the Johnson plan: 69 to 62 about 10.7 m, 70 to 61 about 13.4 m across the open end. No reachable source states it.",
+   "cites": [
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  "bluestone_heights_m": {
+   "value": "0.96-2.59 above ground",
+   "derived": true,
+   "cites": [
+    {
+     "source": "sos_stone_69",
+     "quote": "Height: 2.59m (8ft 6in)"
+    },
+    {
+     "source": "sos_stone_46",
+     "quote": "Height: 0.96m (3ft 2in)"
+    }
+   ]
+  },
+  "altar_stone_m": {
+   "value": {
+    "length": 4.9,
+    "width": 1.0,
+    "thickness": 0.5,
+    "weight_t": 6
+   },
+   "cites": [
+    {
+     "source": "clarke2024",
+     "quote": "measuring 4.9 × 1.0 × 0.5 m, and is a recumbent stone (Fig. 1b), weighing 6 t"
+    },
+    {
+     "source": "wp_altar",
+     "quote": "(measuring 4.9 m long by 1 m wide by 0.5 m thick)"
+    }
+   ]
+  },
+  "heel_stone": {
+   "value": {
+    "height_above_ground_m": 4.7,
+    "buried_m": 1.2,
+    "min_thickness_m": 2.4,
+    "girth_m": 7.6,
+    "distance_from_centre_m": 77.4,
+    "lean_deg_from_vertical": 27,
+    "weight_t": "about 30-36 (sources differ)"
+   },
+   "note": "Weight disagrees: EH stones page >36 t, EH building page ~30 t, Wikipedia ~35 t.",
+   "cites": [
+    {
+     "source": "wp_heel",
+     "quote": "rising to a tapered top about 4.7 metres (15 ft) high. Excavation has shown that a further 1.2 metres (3 ft 11 in) is buried in the ground."
+    },
+    {
+     "source": "wp_heel",
+     "quote": "It has a  minimum thickness of 2.4 metres"
+    },
+    {
+     "source": "wp_heel",
+     "quote": "The stone has an overall girth of 7.6 metres (25 ft) and weighs about 35 tons."
+    },
+    {
+     "source": "wp_heel",
+     "quote": "It is 77.4 metres (254 ft) from the centre of Stonehenge circle."
+    },
+    {
+     "source": "eh_stones",
+     "quote": "It weighs more than 36 tonnes!"
+    },
+    {
+     "source": "eh_building",
+     "quote": "with the largest stone, the Heel Stone, weighing about 30 tons"
+    }
+   ]
+  },
+  "slaughter_stone_length_m": {
+   "value": 4.9,
+   "cites": [
+    {
+     "source": "commons_site_plan",
+     "quote": "The fallen Slaughter Stone, 4.9 metres long"
+    }
+   ]
+  },
+  "station_stone_93_height_m": {
+   "value": 1.22,
+   "cites": [
+    {
+     "source": "sos_western_station_stone_stone_93",
+     "quote": "Height: 1.22m (4ft 0in)"
+    }
+   ]
+  },
+  "bank_and_ditch_diameter_m": {
+   "value": "about 100-110",
+   "note": "Ditch with an internal bank and a smaller external bank; EH ~100 m, Wikipedia ~110 m (probably to the outer edge).",
+   "cites": [
+    {
+     "source": "eh_history",
+     "quote": "This enclosed an area about 100 metres in diameter, and had two entrances."
+    },
+    {
+     "source": "eh_audio",
+     "quote": "circle around Stonehenge that is 100 metres or about 300 feet"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "measuring about 360 feet (110 m) in diameter, with a large entrance to the north east and a smaller one to the south"
+    },
+    {
+     "source": "eh_description",
+     "quote": "The first major construction at Stonehenge was a circular ditch, with an internal bank and a smaller external bank, built about 3000 BC."
+    }
+   ]
+  }
+ },
+ "layout": {
+  "numbering": {
+   "value": "Petrie 1880 numbering: uprights 1-30 clockwise from the north-east; lintel 1nn rests on uprights nn-1 and nn (101 on 30 and 1)",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "The uprights are conventionally numbered S(tone)1 to S30 in clockwise fashion, starting at the north-east."
+    },
+    {
+     "source": "sos_stone_101",
+     "quote": "Stone 101 spans the primary axis of Stonehenge and is supported by the uprights Stone 30 and Stone 1."
+    }
+   ]
+  },
+  "trilithons": {
+   "value": {
+    "51-52-152": "east, south of the axis by the open end (derived from the plan)",
+    "53-54-154": "south-east",
+    "55-56-156": "south-west, on the axis at the closed end (Great Trilithon)",
+    "57-58-158": "west ('West Trilithon')",
+    "59-60-160": "north-west"
+   },
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Inside the Sarsen Circle are five sarsen trilithons arranged in a horseshoe shape that opens to the north-east."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "The south-western trilithon (comprising uprights S55 and S56, and lintel S156) is the tallest and largest; the others reduce in height towards the north-east"
+    },
+    {
+     "source": "sos_stone_158",
+     "quote": "its \"twin\" trilithon on the southeast side"
+    },
+    {
+     "source": "sos_stone_160",
+     "quote": "the fallen and broken lintel of the northwestern trilithon"
+    },
+    {
+     "source": "sos_stone_58",
+     "quote": "known as the \"West Trilithon\""
+    },
+    {
+     "source": "commons_stone_plan",
+     "quote": "Plan of the central Stone Structure at Stonehenge as it survives today.",
+     "note": "derived: state read from the plan's legend (solid = standing, hatched = fallen)"
+    }
+   ]
+  },
+  "axis_azimuth_deg": {
+   "value": 49.57,
+   "note": "Lockyer and Penrose (1901) measured 49° 38′ 48″ and 49° 32′ 54″ for the two parts of the Avenue and adopted 49° 34′ 18″ (= 49.57°). Darvill describes the axis as summer-solstice sunrise (NE) to winter-solstice sunset (SW). Modern figures of about 49-50° are commonly quoted; no reachable modern measured value was found.",
+   "cites": [
+    {
+     "source": "lockyer1909",
+     "quote": "For the above reasons 49° 34′ 18″ has been adopted for the azimuth of the avenue."
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "The mean of these two lines drawn from the central interval of the great trilithon"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "This line joins the points on the locally visible horizons where the sun rises during the summer solstice to the north-east and sets during the winter solstice to the south-west."
+    }
+   ]
+  },
+  "entrance_and_axis_through_circle": {
+   "value": "axis passes between uprights 1 and 30 (NE) and between 15 and 16 (SW); the trilithon horseshoe sits symmetrically astride it",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "The principal axis runs through the entrance to the Sarsen Circle, which is flanked by S1 and S30 on the north-east side, and between S15 and S16 on the south-west side."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "The Trilithon Horseshoe sits symmetrically astride the axis."
+    }
+   ]
+  },
+  "station_stones": {
+   "value": {
+    "rectangle_m": [
+     80,
+     30
+    ],
+    "corners": {
+     "91": "north-east (eastern)",
+     "92": "south-east, on the South 'Barrow'",
+     "93": "south-west (western)",
+     "94": "north-west, on the North 'Barrow'"
+    },
+    "short_sides": "parallel to the solstice axis",
+    "centre": "centre of the monument"
+   },
+   "note": "Which barrow holds which missing stone (92 south, 94 north) follows the conventional numbering and the EH plan's 'Station Stone marker' labels; derived.",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "Together, these four stones define a relatively precise rectangle measuring 80 × 30m."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "The two short sides of the Station Stone Rectangle run parallel to the principal axis"
+    },
+    {
+     "source": "eh_stones",
+     "quote": "They mark the corners of a perfect rectangle with its central point in the exact centre of the monument."
+    },
+    {
+     "source": "sos_eastern_station_stone_stone_91",
+     "quote": "They formed a rectangle around the central monument with its sides in the ratio of 5:12."
+    },
+    {
+     "source": "wp_station",
+     "quote": "Two stood on earth mounds at opposing corners, one corner broadly in the north of the site and one in the south."
+    }
+   ]
+  },
+  "heel_stone_position": {
+   "value": "77.4 m from the centre, just east of the axis, within the Avenue outside the north-east entrance",
+   "cites": [
+    {
+     "source": "wp_heel",
+     "quote": "It is 77.4 metres (254 ft) from the centre of Stonehenge circle."
+    },
+    {
+     "source": "sos_the_heel_stone_stone_96",
+     "quote": "fractionally to the east of the main solstitial axis"
+    },
+    {
+     "source": "eh_description",
+     "quote": "Immediately outside the north-east entrance is the Heel Stone, a huge unshaped sarsen boulder."
+    }
+   ]
+  },
+  "slaughter_stone_position": {
+   "value": "in the north-east entrance, midway between the circle and the Heel Stone, just east of the axis",
+   "cites": [
+    {
+     "source": "sos_slaughter_stone_stone_95",
+     "quote": "The Slaughter Stone lies prone, midway between the central monument and the Heel Stone just east of the primary solstitial axis."
+    }
+   ]
+  },
+  "avenue": {
+   "value": {
+    "direction": "north-east from the entrance along the solstice axis (azimuth ~49.6 deg near the monument)",
+    "width_m": "about 12 between the banks (EH); about 20 including banks and ditches (EH audio); Lockyer about 50 feet",
+    "length_km": "nearly 3, to the River Avon"
+   },
+   "note": "Width figures disagree (12 m corridor vs 20 m vs ~15 m); probably measured to different edges.",
+   "cites": [
+    {
+     "source": "eh_description",
+     "quote": "Today it can be seen in part as low parallel banks enclosing a corridor about 12 metres wide."
+    },
+    {
+     "source": "eh_audio",
+     "quote": "They form a corridor running towards Stonehenge about 20"
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "receiving into itself the banks forming the avenue before mentioned, which is about 50 feet across"
+    },
+    {
+     "source": "wp_avenue",
+     "quote": "it measures nearly 3 kilometres, and connects Stonehenge with the River Avon"
+    },
+    {
+     "source": "wp_avenue",
+     "quote": "Along some of its length, the avenue is aligned with the sunrise of the summer solstice"
+    }
+   ]
+  },
+  "bank_and_ditch": {
+   "value": "circular ditch with an internal bank and a smaller external bank, about 100-110 m across, main entrance north-east, smaller one south",
+   "cites": [
+    {
+     "source": "eh_description",
+     "quote": "Today the ditch and inner bank are visible as low earthworks in the grass, but the outer bank has largely been ploughed away."
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "with a large entrance to the north east and a smaller one to the south"
+    }
+   ]
+  },
+  "bluestone_settings": {
+   "value": "a circle between the sarsen circle and the trilithons, and an inner horseshoe (formerly an oval) inside the trilithons, open to the north-east",
+   "cites": [
+    {
+     "source": "eh_history",
+     "quote": "About 200 or 300 years later the central bluestones were rearranged to form a circle and inner oval (which was again later altered to form a horseshoe)."
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "the northeastern section of the Phase 3 IV bluestone circle was removed, creating a horseshoe-shaped setting (the Bluestone Horseshoe) which mirrored the shape of the central sarsen Trilithons"
+    }
+   ]
+  },
+  "construction_dates": {
+   "value": "sarsens c. 2620-2480 BC (all three sarsen structures, Stage 2); bluestones in their present positions c. 2400-2200 BC",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "were set up during the period 2620–2480 BC"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "Radiocarbon dating suggests that the bluestones were given their current positions between 2400 and 2200 BC"
+    }
+   ]
+  }
+ },
+ "missing_debate": [
+  {
+   "claim": "The present monument is incomplete; it has been suggested that the sarsen circle was only ever finished on the north-eastern side.",
+   "cites": [
+    {
+     "source": "banton2014",
+     "quote": "Yet Stonehenge in its present form is incomplete—some of the expected stones are missing—and it has sometimes been suggested that it was never complete"
+    }
+   ]
+  },
+  {
+   "claim": "In the dry summer of 2013 parchmarks appeared in the south-west where missing uprights should stand (around 16-20), evidence of stoneholes.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "an exceptionally dry summer in 2013 revealed patches of parched grass which may correspond to the location of missing sarsens"
+    },
+    {
+     "source": "sos_missing",
+     "quote": "a series of parch marks appeared in the circuit exactly where some of the missing uprights should be"
+    }
+   ]
+  },
+  {
+   "claim": "Darvill (2022): sockets for some missing uprights are known by excavation, the rest from the parchmarks; jointing shows a complete circuit was intended; the missing uprights and lintels were robbed in antiquity.",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "As such, it must be concluded that the missing sarsen uprights and lintels were robbed in antiquity."
+    },
+    {
+     "source": "darvill2022",
+     "quote": "provide evidence of an intention to form a compete circuit"
+    }
+   ]
+  },
+  {
+   "claim": "Field et al. (2015): the evidence is not conclusive; the circle may have been built as a facade with other parts added and an entrance in the south. They also suggest a lintelled bluestone trilithon formed an entrance in the north-east.",
+   "cites": [
+    {
+     "source": "field2015",
+     "quote": "This work has added detail that allows discussion on the question of whether the sarsen circle was a completed structure, although it is by no means conclusive in this respect."
+    },
+    {
+     "source": "field2015",
+     "quote": "it is suggested that it was built as a façade, with other parts of the circuit added and with an entrance in the south"
+    },
+    {
+     "source": "field2015",
+     "quote": "The probability that a lintelled bluestone trilithon formed an entrance in the north-east is signposted."
+    }
+   ]
+  },
+  {
+   "claim": "English Heritage remains cautious ('if it was ever completed'); the earlier view that the circle was never completed (Ashbee 1998) is cited by Darvill.",
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "if it was ever completed, there would have been an unbroken ring of stone"
+    },
+    {
+     "source": "darvill2022",
+     "quote": "Although the missing stones have sometimes been suggested to indicate that the Sarsen Circle was never completed (e.g. Ashbee Reference Ashbee1998)"
+    }
+   ]
+  },
+  {
+   "claim": "A complete design needs 75 sarsens in the circle and horseshoe (60 + 15); 52 sarsens survive on site in all.",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "A total of 75 stones would have been needed to complete the circle (60 stones) and the trilithon horseshoe (15 stones)."
+    },
+    {
+     "source": "nash2020",
+     "quote": "50 of the 52 sarsens at the monument share a consistent chemistry"
+    }
+   ]
+  },
+  {
+   "claim": "All 15 trilithon stones survive on site (none robbed); bluestones: about 80 assumed originally, 43 survive.",
+   "cites": [
+    {
+     "source": "darvill2022",
+     "quote": "All stones survive on site, although some have fallen."
+    },
+    {
+     "source": "wp_bluestone",
+     "quote": "only 43 remain"
+    }
+   ]
+  },
+  {
+   "claim": "The Heel Stone had a companion (S97) whose hole was found in 1979; the Slaughter Stone stood with one or two others (all missing) across the entrance.",
+   "cites": [
+    {
+     "source": "eh_stones",
+     "quote": "In 1979, the hole for another similar-sized stone was discovered next to it"
+    },
+    {
+     "source": "eh_stones",
+     "quote": "Originally standing upright at the entrance to Stonehenge and flanked by additional stones that are now missing"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "Petrie 1880 (the source of the numbering, with every stone's state and measurements in 1880) has no free online text that could be found (not on archive.org, Gutenberg, HathiTrust or Wikisource).",
+  "Historic England's reports (Abbott & Anderson-Whymark 2012, research report 32/2012) and photo captions (e.g. 'fallen stone 14', stone 23 'collapsed', lintel 127 'temporarily removed' in 1964) are behind a Cloudflare check (HTTP 403) and could not be quoted or checked; Cleal, Walker & Montague 1995 is not online.",
+  "No reachable official per-stone condition list: the states of 8, 9, 12, 14, 15, 19, 25, 26, the fallen lintels 120 and 127, and nearly all bluestones are read off Anthony Johnson's numbered plan (Wikimedia Commons, 'as it survives today', 2007) and are marked derived; heights and weights come from The Stones of Stonehenge (a careful personal site, secondary).",
+  "Stone 15: the plan shows it fallen, Darvill 2022 counts it missing (17 standing / 7 fallen / 6 missing vs the plan's 17 / 8 / 5).",
+  "Station Stone 91 lies fallen (standard descriptions) but no reachable source states it; marked fallen from the absence of a standing height (derived). Its fall direction is unknown.",
+  "Leaning bluestones cannot be told from standing ones on the plan; 65 and 67 are uncertain (67 may lean).",
+  "No reachable source gives the sarsen circle's inner and outer diameters separately (only ~30 m), nor the bluestone circle and horseshoe diameters (derived from the plan: ~23 m and ~11-13 m).",
+  "Exact heights of the middle trilithon pair (53-54, 57-58) overall, and individual lintel sizes, not found.",
+  "Fall dates for the circle stones fallen before the 18th century (8, 9, 12, 14, 15, 19, 25, 26) and for 59/160 are unknown; Lockyer's 1620 date for 55/156 is unverified by a modern source.",
+  "No modern measured axis azimuth was reachable; Lockyer & Penrose 1901 (49° 34′ 18″) is used.",
+  "Which restorations of 1919-20 straightened which stones (e.g. 6, 7 and their lintels) is not documented in a reachable source; the 1958 work re-erected 57, 58, 158 and reset 21, 22, 122; 1959 straightened 60; 1963-64 re-erected 23."
+ ]
+}

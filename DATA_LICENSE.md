@@ -56,6 +56,16 @@ Nothing here is legal advice; follow each source's own terms.
 | [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen terrarium, AWS Open Data) | skylines round researched alignments and, in the local GUI, any record (bidb.sky_horizon) | open data, attribution per source | Environment Agency LiDAR (OGL v3), SRTM (USGS/NASA), EU-DEM (Copernicus), GMTED, ETOPO1; [attribution list](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) |
 | [Environment Agency LIDAR Composite DTM 1 m](https://environment.data.gov.uk/spatialdata/lidar-composite-digital-terrain-model-dtm-1m/wms?service=WMS&request=GetCapabilities) (hillshade WMS) | "Ground (LiDAR)" layer in England (local app, shown live, not stored) | OGL v3.0 | LiDAR © Environment Agency, Open Government Licence |
 
+## Stonehenge in 3D (`app/static/data/stonehenge.json`, `stonehenge_dtm.bin`; page /stonehenge)
+
+| Source | Used for | Licence | Credit |
+|---|---|---|---|
+| Anthony Johnson, [Plan of the central Stone Structure at Stonehenge](https://commons.wikimedia.org/wiki/File:Stone_Plan.jpg) (2007), coloured by Nightdevil ([File:Stone_Plan_Coloured.jpg](https://commons.wikimedia.org/wiki/File:Stone_Plan_Coloured.jpg), 2018) | every surviving stone's outline and state, digitised (`data/curated/stonehenge/plan_stones.json`) | CC BY 3.0; the coloured version and so the digitised outlines **CC BY-SA 4.0** | Anthony Johnson; Nightdevil |
+| [OpenStreetMap](https://www.openstreetmap.org/copyright) | placing the plan on the ground; Heel, Slaughter and Station Stones | ODbL 1.0 | © OpenStreetMap contributors |
+| [Environment Agency LIDAR Composite DTM 1 m](https://environment.data.gov.uk/spatialdata/lidar-composite-digital-terrain-model-dtm-1m/wcs?service=WCS&request=GetCapabilities) (WCS) | the ground of the model, 800 m square written at 2 m | OGL v3.0 | LiDAR © Environment Agency, Open Government Licence |
+| [Yale Bright Star Catalogue](https://heasarc.gsfc.nasa.gov/W3Browse/star-catalog/bsc5p.html), 5th revised edition (Hoffleit and Warren 1991; CDS V/50, HEASARC copy) | 2,887 stars to magnitude 5.5 | public (NASA HEASARC) | Hoffleit and Warren 1991 |
+| Researched record of every stone (`data/curated/stonehenge/stones.json`) | heights, states, dimensions, layout, with quoted sources (English Heritage, Darvill 2022, Wikipedia, Lockyer 1909, Clarke et al. 2024, The Stones of Stonehenge...) | quotes for citation; each source's own terms | sources listed per stone in the model |
+
 ## Figures in `docs/img/`
 
 The screenshots show this app with photos from Wikimedia Commons (each under its own licence,
@@ -70,6 +80,7 @@ credited on its file page), OpenStreetMap tiles (© OpenStreetMap contributors),
 | [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) 1.5.3 | `app/static/vendor/MarkerCluster*.css` | MIT |
 | [qrcodejs](https://github.com/davidshimjs/qrcodejs) 1.0.0 (script from cdnjs, Settings › Sharing only) | not included | MIT |
 | [protomaps-leaflet](https://github.com/protomaps/protomaps-leaflet) | `app/static/vendor/protomaps-leaflet.js` | BSD 3-Clause |
+| [three.js](https://threejs.org) r160 (with OrbitControls and Sky from its examples) | `app/static/vendor/three/` | MIT |
 | Python packages: Flask, requests, pmtiles | `requirements.txt` | BSD 3-Clause, Apache 2.0, BSD 3-Clause |
 
 ## Change over time (graphs on the Map page and the Change over time page)

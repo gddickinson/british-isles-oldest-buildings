@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Stonehenge in 3D · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='stonehenge.css') }}">
+<main class="sh-page">
+  <div class="sh-stage">
+    <canvas id="sh_canvas" aria-label="3D model of Stonehenge"></canvas>
+    <div id="sh_names" class="sh-names" aria-hidden="true"></div>
+    <aside class="sh-panel">
+      <h1>Stonehenge in 3D</h1>
+      <fieldset class="sh-row sh-views">
+        <label><input type="radio" name="sh_view" value="now" checked> As it is now</label>
+        <label><input type="radio" name="sh_view" value="built"> As built (c. 2500 BC)</label>
+      </fieldset>
+      <div class="sh-row sh-date">
+        <input id="sh_d" type="number" min="1" max="31" aria-label="Day">
+        <select id="sh_m" aria-label="Month"></select>
+        <input id="sh_y" type="number" min="1" max="9999" aria-label="Year">
+        <select id="sh_era" aria-label="Era"><option>BC</option><option selected>AD</option></select>
+        <button type="button" class="btn" id="sh_now">Now</button>
+      </div>
+      <label class="sh-row">Time of day <input id="sh_time" type="range" min="0" max="1439" step="1"></label>
+      <div class="sh-row">
+        <button type="button" class="btn" id="sh_play">▶ Play</button>
+        <select id="sh_speed" aria-label="Speed"><option value="60">1 hour a second</option><option value="10">10 minutes a second</option><option value="1">1 minute a second</option><option value="1440">1 day a second</option></select>
+      </div>
+      <div id="sh_events" class="sh-events"></div>
+      <label class="sh-row">View <select id="sh_cams"></select></label>
+      <div class="sh-row sh-checks">
+        <label class="check"><input type="checkbox" id="sh_labels"> Stone numbers</label>
+        <label class="check"><input type="checkbox" id="sh_starnames"> Star names</label>
+        <label class="check"><input type="checkbox" id="sh_axis"> Solstice axis</label>
+        <label class="check"><input type="checkbox" id="sh_ghosts"> Mark lost stones (as built)</label>
+      </div>
+      <p id="sh_note" class="meta" aria-live="polite"></p>
+    </aside>
+    <div class="sh-bar"><b id="sh_when"></b><div id="sh_read"></div></div>
+    <aside id="sh_stone" class="sh-stone" hidden></aside>
+  </div>
+  <section class="prose sh-about">
+    <h2>About the model</h2>
+    <p><b>As it is now</b>: every surviving stone from Anthony Johnson's numbered plan of the stones as they survive,
+      with the height recorded for each standing stone; lintels still in place sit on their uprights; the Heel Stone
+      leans as it does. <b>As built</b>: the sarsen circle of 30 uprights and 30 curved lintels, the five trilithons
+      (stones 55 and 59 set where the horseshoe's symmetry puts them; the surviving pairs agree with it within half a
+      metre), the bluestone circle and horseshoe filled in at the spacing of the stones that survive, the Altar Stone
+      standing on the axis (its first position is not known), the Slaughter Stone and the Heel Stone upright with its
+      lost companion, and the four Station Stones. "Mark lost stones" draws the lost ones pale: they are placed where they are thought
+      to have stood; the bluestones are shown in their last arrangement (c. 2400–2200 BC).</p>
+    <p>Click a stone for its record and the sources quoted for it. The ground is the Environment Agency's 1 m LiDAR
+      survey (the henge bank and ditch, the Avenue's banks and the barrows show in it); beyond it the land rises to the
+      real skyline, so the sun and moon rise and set where they would. Sun, moon and stars are placed for the date and
+      time chosen (local solar time; years before AD 1582 in the Gregorian calendar extended back). The moon before
+      about 500 BC is uncertain by up to half a degree, since the earth's rotation then (ΔT) is known only to about an
+      hour. Planets are not shown.</p>
+    <h3>Was the circle ever complete?</h3>
+    <ul id="sh_debate"></ul>
+    <h3>Sources and credits</h3>
+    <ul id="sh_credits" class="meta"></ul>
+  </section>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='stonehenge_astro.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='stonehenge_page.js') }}"></script>
+{% endblock %}

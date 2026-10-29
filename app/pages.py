@@ -122,6 +122,11 @@ def sky():
     return render_template("sky.html", page="sky")
 
 
+@bp.route("/stonehenge")
+def stonehenge():
+    return render_template("stonehenge.html", page="stonehenge")
+
+
 @bp.route("/glossary")
 def glossary():
     return render_template("glossary.html", page="glossary")

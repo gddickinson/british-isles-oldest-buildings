@@ -57,6 +57,7 @@ PAGES = {
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),
     "things": ("/things", r"(?s)Oldest things.*Food and drink.*Oldest recipe or cookery book.*sources?"),
     "things_search": ("/things?q=harp&sort=year", r"(?s)Oldest things.*[Hh]arp"),
+    "stonehenge": ("/stonehenge", r"(?s)Stonehenge in 3D.*(The 3D model needs WebGL|sh-ready).*Was the circle ever complete"),
     "sky": ("/sky", r"(?s)Sky calendar.*Midwinter \(winter solstice\).*Newgrange.*The moon's standstills"),
     "sky_churches": ("/sky#churches", r"(?s)Churches and their saints' days.*sky-hist.*midwinter sunrise.*Over each church's skyline.*either saint"),
     "building_orientation": ("/building/Q390150", r"(?s)Orientation.*The east end of the outline's axis points.*where the skyline stands.*over a flat horizon"),

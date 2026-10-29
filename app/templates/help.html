@@ -8,7 +8,7 @@
   <nav class="help-toc" aria-label="Help topics">
     <a href="#start">Getting started</a><a href="#accuracy">Accuracy and safety</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
     <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a><a href="#trades">Trades</a>
-    <a href="#oldest">Oldest by type</a><a href="#things">Oldest things</a><a href="#types">Building types</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
+    <a href="#oldest">Oldest by type</a><a href="#things">Oldest things</a><a href="#types">Building types</a><a href="#sky">Sky &amp; Stonehenge in 3D</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
     {% if not static_mode %}<a href="#sharing">Sharing at home</a>{% endif %}<a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
     <a href="#export">Export &amp; screenshots</a><a href="#shortcuts">Shortcuts</a><a href="#glossary">Glossary</a>
     <a href="#faq">Questions</a><a href="#sources">Sources</a><a href="#about">About</a>
@@ -214,6 +214,18 @@
       list them, or <b>Show the map at this year</b>) and, as a heatmap, the century each material appears in the
       catalogue's buildings.</p>
     {{ shot('types_time.jpg', 'Through time: building types in use per domain, and materials by the century their buildings were begun.') }}
+  </section>
+
+  <section id="sky">
+    <h2>Sky calendar and Stonehenge in 3D</h2>
+    <p>The <a href="{{ url_for('pages.sky') }}">Sky calendar</a> lists the coming solstices, equinoxes and the days
+      between them with the monuments said to face each sunrise or sunset. <a href="{{ url_for('pages.stonehenge') }}">Stonehenge
+      in 3D</a> draws the monument as it is now (every surviving stone from a numbered survey plan) or as it is
+      thought to have been when complete, on the real ground (the Environment Agency's 1 m LiDAR) under the sun, moon
+      and stars of any date, back to the Neolithic. Drag to turn the view, scroll to zoom (except in the standing
+      views, where dragging looks round and up at the sky), pick a view from the list, and use the buttons to jump to
+      midsummer sunrise, midwinter sunset or a full moon rising. Shadows follow the sun or moon. Click a stone for its
+      record and sources; "Mark lost stones" shows which stones of the complete monument are lost.</p>
   </section>
 
   <section id="stats">

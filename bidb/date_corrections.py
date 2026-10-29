@@ -58,6 +58,7 @@ def apply_places(places):
 
 
 def apply_to_db(log=print):
+    from .classify import regional_periods
     from .db import connect
     from .references import recheck
     conn = connect()
@@ -71,6 +72,7 @@ def apply_to_db(log=print):
                      (e["year_start"], e["date_text"], f["period"], bid))
     conn.commit()
     log(f"applied {len(data)} reviewed date corrections")
+    regional_periods(conn)
     recheck(log)
 
 

@@ -87,6 +87,18 @@ def regional_period(period, nation):
     return "Iron Age" if period == "Roman Britain" and nation in NOT_ROMAN else period
 
 
+def regional_periods(conn):
+    """regional_period for every row of buildings and places, for writers that date rows after the build
+    set their period (date rechecks, hoards, oldest checks) or before their nation is known. -> rows changed"""
+    marks = ", ".join("?" * len(NOT_ROMAN))
+    n = 0
+    for table in ("buildings", "places"):
+        n += conn.execute(f"UPDATE {table} SET period = 'Iron Age' WHERE period = 'Roman Britain' "
+                          f"AND nation IN ({marks})", sorted(NOT_ROMAN)).rowcount
+    conn.commit()
+    return n
+
+
 def heritage_grade(designations):
     """Collapse designation labels into the highest headline grade."""
     joined = " | ".join(d.lower() for d in designations)

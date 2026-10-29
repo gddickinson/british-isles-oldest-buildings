@@ -10,6 +10,9 @@ const QuizKinds = (() => {
     "Roman Britain": "43–410", "Early Medieval": "410–1066", Norman: "1066–1154", "High Medieval": "1154–1307",
     "Late Medieval": "1307–1485", Tudor: "1485–1603", Stuart: "1603–1714", Georgian: "1714–1837",
     Victorian: "1837–1901", Modern: "1901–" };
+  // Rome never ruled Ireland or the Isle of Man: their Iron Age runs on to c. AD 400 (classify.NOT_ROMAN)
+  const NOT_ROMAN = ["Republic of Ireland", "Northern Ireland", "Isle of Man"];
+  const IRON_AGE_HERE = "800 BC–c. AD 400";
   const STORY = { supernatural: "ghost story", legend: "legend", folklore: "custom or piece of folklore",
                   curiosity: "curious tale" };
 
@@ -50,16 +53,19 @@ const QuizKinds = (() => {
   K.period = { title: "Guess the period", icon: "⏳", blurb: "A photo of a building: when was it begun?",
     make(d, hard) {
       return take(d.buildings, 10).map((b) => {
-        const k = Math.max(0, PERIODS.indexOf(b.period));
+        const outside = NOT_ROMAN.includes(b.nation);
+        const periods = outside ? PERIODS.filter((p) => p !== "Roman Britain") : PERIODS;
+        const k = Math.max(0, periods.indexOf(b.period));
         let ps;
         if (hard) {                                 // the answer and its neighbours
-          const lo = Math.max(0, Math.min(PERIODS.length - 4, k - Math.floor(Math.random() * 4)));
-          ps = PERIODS.slice(lo, lo + 4);
+          const lo = Math.max(0, Math.min(periods.length - 4, k - Math.floor(Math.random() * 4)));
+          ps = periods.slice(lo, lo + 4);
         } else {                                    // periods at least two apart
-          ps = [b.period, ...take(PERIODS.filter((p, i) => Math.abs(i - k) >= 2), 3)].sort((x, y) => PERIODS.indexOf(x) - PERIODS.indexOf(y));
+          ps = [b.period, ...take(periods.filter((p, i) => Math.abs(i - k) >= 2), 3)].sort((x, y) => periods.indexOf(x) - periods.indexOf(y));
         }
+        const span = (p) => (outside && p === "Iron Age" ? IRON_AGE_HERE : SPAN[p]);
         return { prompt: `<p class="hint">${esc(b.category)} · ${esc(b.nation || "")}</p>`, image: b.image_thumb,
-          choices: ps.map((p) => ({ value: p, label: p, sub: SPAN[p] })), answer: b.period,
+          choices: ps.map((p) => ({ value: p, label: p, sub: span(p) })), answer: b.period,
           explain: `It is ${link(b)}, ${when(b)}.`, story: b.id };
       });
     } };

@@ -133,15 +133,18 @@ def remove(conn, ids, log=print):
 
 def apply(conn, changes, log=print):
     """Write the new date fields, then recompute the date checks."""
+    from .classify import regional_periods
     from .references import recheck as recheck_refs
     conn.executemany(f"UPDATE buildings SET {', '.join(k + ' = ?' for k in FIELDS)} WHERE id = ?",
                      [[c["new"][k] for k in FIELDS] + [c["id"]] for c in changes])
     conn.commit()
     log(f"{len(changes)} dates changed")
+    regional_periods(conn)
     recheck_refs(log)
 
 
 def main(argv):
+    from .classify import regional_periods
     from .db import connect
     conn = connect()
     conn.execute("PRAGMA busy_timeout = 120000")
@@ -157,6 +160,7 @@ def main(argv):
         apply(conn, changes)
         conn.executemany("UPDATE places SET year_start = ?, period = ? WHERE id = ?", hoard_years)
         conn.commit()
+        regional_periods(conn)
         if typos:
             remove(conn, typos)
 

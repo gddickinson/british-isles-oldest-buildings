@@ -110,6 +110,8 @@ def run(log=print):
     conn.commit()
     log(f"[{time.time() - t0:5.0f}s] nations: {len(found)} of {len(rows)} places without one placed "
         f"({', '.join(f'{n} {c}' for n, c in Counter(n for n, _ in found).most_common())})")
+    from .classify import regional_periods             # nations now known: no Roman period outside Rome's reach
+    log(f"  periods in their nation's terms: {regional_periods(conn)} rows")
 
 
 if __name__ == "__main__":

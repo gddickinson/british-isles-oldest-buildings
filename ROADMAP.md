@@ -1279,8 +1279,10 @@ export, coverage on the Data quality page, hosted copy via `data/pron.json`.
       OSRM itself returns no surface). Opening times / ticketed
       sites, public transport to walk starts, multi-day touring routes with overnight stops.
 - [ ] Hosted copy: builder routes are straight-line estimates (external services are blocked there).
-- [ ] Period labels: Irish records of AD 43–410 are labelled "Roman Britain" (period is set from the
-      date alone); Ireland's Iron Age continues to c. AD 400.
+- [x] Period labels: Irish records of AD 43–410 are labelled "Roman Britain" (period is set from the
+      date alone); Ireland's Iron Age continues to c. AD 400. (`classify.regional_period` in the build; 2026-10-29:
+      `regional_periods` sweeps rows dated after it, at the nations stage and in the date CLIs, 6 rows; the period
+      quiz gives Irish and Manx records Ireland's Iron Age span and no Roman Britain choice.)
 
 ## Further additions (planned 2026-10-20; worked through 2026-10-20)
 Stories and history

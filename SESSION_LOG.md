@@ -2530,3 +2530,13 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - `bidb.build --from STAGE --to STAGE` (`select`, test `test_build_select`).
 - Categories: guild house, livery hall, cloth hall and (after castles) city hall are Civic building; 100 records
   updated in place; type_map rerun. Tests 492 OK (`test_categories` new, `test_trade_people` +2).
+
+## 2026-10-29 — Periods in Ireland and Man (roadmap "Period labels")
+- The build already used `classify.regional_period` (no "Roman Britain" in Ireland or the Isle of Man), but rows
+  dated after it kept the Roman label: three ogham stones re-dated by `bidb.date_recheck`, the Balline and Coleraine
+  hoards (nation known only at the nations stage), an ogham-stone place. New `classify.regional_periods` (SQL sweep of
+  buildings and places), run at the end of `nation_geo.run` and by `date_recheck --apply` and
+  `date_corrections.apply_to_db`; run once on the database: 6 rows.
+- Period quiz: Irish and Manx records see "Iron Age 800 BC–c. AD 400" and never a Roman Britain choice.
+- Tests 493 OK (`test_classify` sweep); ui_check quiz, quiz_menu, quiz_order OK. Hosted copy not updated.
+

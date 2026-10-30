@@ -61,8 +61,13 @@ Sky and alignments (first)
       vs nave 94.9°, rectangle 88.8°). Also checked privately against Hinton's survey (`runs/church_survey.json`,
       `nave` vs `nave_rectangle`). Feast-day test: 400 of 2,485 within 5° vs 381 by chance (351-414, p 0.13); over
       the skyline 399 vs 397 (p 0.44); either saint p 0.45: still no more than chance.
-- [ ] SK5b2c Hoare and Sweet 2000 (abstract not fetchable); outlines that take in a whole abbey or friary (the
-      church's own part from OSM where mapped, else leave such records out of the test).
+- [x] SK5b2c (2026-10-30, `bidb/church_sites.py`) Outlines that are not the church: 264 religious records whose OSM
+      outline is a precinct, churchyard or ruin site (no `building` tag) or another building (tower, house, barn):
+      51 now take the axis of the largest church building mapped inside (Dunbrody Abbey 26° → 87°, Adare Friary 179° →
+      89°, Kells Priory 20° → 90°), 213 are left out. Feast-day test: 398 of 2,473 within 5° vs 378 by chance (350-413,
+      p 0.13); over the skyline p 0.45; either saint p 0.44: still no more than chance.
+- [ ] SK5b2d Hoare and Sweet 2000 (abstract not fetchable); abbey churches drawn with their cloister ranges in one
+      building outline (the church's own part where mapped).
 - [x] SK7 (2026-10-29; Terrain Tiles on AWS instead of OpenTopoData: no daily limit, EA LiDAR in England) Real horizons:
       skyline every 0.5° from the terrain model (`bidb/terrain_tiles.py`, `bidb/sky_horizon.py`, mirrored in sky.js), so
       rising points behind hills are right; researched sites precomputed into sky.json (hosted too), any record in the

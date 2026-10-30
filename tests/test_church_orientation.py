@@ -55,6 +55,28 @@ class ChurchOrientationTest(unittest.TestCase):
         self.assertAlmostEqual(ca.body_axis(by["c"])[0], 95, delta=0.3)              # nave before church
         self.assertIsNone(ca.body_axis([{"part": "nave", "geom": rectangle(95, 10, 9)}]))    # too near square
 
+    def test_sites(self):
+        from bidb import church_sites as cs
+        self.assertIsNone(cs.site_kind({"building": "church"}))
+        self.assertIsNone(cs.site_kind(None))                                          # tags unknown: as before
+        self.assertEqual(cs.site_kind({"historic": "monastery"}), "site")
+        self.assertEqual(cs.site_kind({"amenity": "grave_yard", "building": "no"}), "site")
+        self.assertEqual(cs.site_kind({"building": "tower"}), "other building")
+        precinct = rectangle(20, 200, 150)                                           # a field round the abbey
+        church = {"geom": rectangle(97, 60, 18), "tags": {"building": "church"}}
+        chapel = {"geom": rectangle(80, 12, 6, lat=52.0003), "tags": {"building": "chapel"}}
+        away = {"geom": rectangle(90, 80, 20, lat=53), "tags": {"building": "church"}}
+        self.assertIs(cs.inner_church(precinct, [chapel, church, away]), church)     # largest inside
+        self.assertIsNone(cs.inner_church(precinct, [away]))
+        rows = [{"id": "a", "axis": [20.0, 1.33], "src": "walls"}, {"id": "b", "axis": [20.0, 1.33], "src": "walls"},
+                {"id": "c", "axis": [97.0, 3.0], "src": "walls"}]
+        tags = {"a": {"historic": "monastery"}, "b": {"landuse": "cemetery"}, "c": {"building": "church"}}
+        co._site_axes(rows, {"a": precinct, "b": rectangle(20, 50, 40, lat=54), "c": church["geom"]}, tags, [church])
+        self.assertEqual(rows[0]["src"], "building")
+        self.assertAlmostEqual(rows[0]["axis"][0], 97, delta=0.3)
+        self.assertEqual((rows[1]["axis"], rows[1]["src"]), (None, "site"))             # nothing inside: left out
+        self.assertEqual(rows[2]["src"], "walls")
+
     def test_julian_calendar(self):
         self.assertEqual(co.julian_calendar_day(1582, 10, 4) + 1, 2299160.5)    # 4 Oct (Julian) → 15 Oct 1582
         self.assertEqual(co._julian_md(co.julian_calendar_day(1250, 3, 12) + 0.25), (3, 12))

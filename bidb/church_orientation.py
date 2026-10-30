@@ -3,7 +3,8 @@
 Each religious record's axis is taken from its OpenStreetMap outline (`footprint`): since SK5b2b the direction of its
 walls, or the nave, chancel or church part where one is mapped (bidb.church_axes; towers, porches and aisles turn the
 long side of the smallest rectangle round the outline, `axis`, kept for comparison); outlines less than 1.4 times as
-long as wide have no clear axis. The east end is the
+long as wide have no clear axis. An outline that is not a church building (a precinct, churchyard or tower: SK5b2c,
+bidb.church_sites) takes the axis of the largest church building mapped inside it, else is left out. The east end is the
 end between north and south through east. For churches begun before 1540 with a dedication whose feast is fixed
 (`data/curated/church_orientation.json`, researched with quoted sources), the sun's rising direction on the feast
 day of the year begun, in the Julian calendar then in use, is compared with the axis (bidb.sky), over a flat
@@ -137,9 +138,10 @@ def fixed_feasts(entry, other=False):
     return out + [{"name": alt["name"], "date": alt["date"]}] if other and alt else out
 
 
-def churches(con, parts=None):
+def churches(con, parts=None, sites=None):
     """Religious records with an outline and their axis (SK5b2b): the mapped nave, chancel or church part where
-    there is one (`parts`: bidb.church_axes.fetch_parts), else the direction of the outline's walls (`src`)."""
+    there is one (`parts`: bidb.church_axes.fetch_parts), else the direction of the outline's walls (`src`);
+    `sites`: (outline tags, church buildings) of bidb.church_sites for outlines that are not the church."""
     from .church_axes import body_axis, parts_of, wall_axis
     rows = con.execute("SELECT id, lat, lon, year_start, dedication, footprint FROM buildings "
                        "WHERE category_group = 'Religious' AND footprint <> '' AND lat IS NOT NULL")
@@ -157,7 +159,22 @@ def churches(con, parts=None):
         b = body_axis(by_id.get(r["id"], []))
         if b:
             r["axis"], r["src"] = b[:2], "part"
+    if sites:
+        _site_axes(out, outlines, *sites)
     return out
+
+
+def _site_axes(rows, outlines, tags, buildings):
+    """SK5b2c: an outline that is not a church building (bidb.church_sites) takes the axis of the largest church
+    building mapped inside it (`src` "building"), else has none (`src` "site")."""
+    from .church_axes import wall_axis
+    from .church_sites import inner_church, site_kind
+    for r in rows:
+        if r["src"] == "part" or r["id"] not in outlines or not site_kind(tags.get(r["id"])):
+            continue
+        inner = inner_church(outlines[r["id"]], buildings)
+        ax = wall_axis(inner["geom"]) if inner else None
+        r["axis"], r["src"] = (ax[:2], "building") if ax else (None, "site")
 
 
 def east_facing(r):
@@ -195,6 +212,8 @@ def analyse(rows, feasts, seed=1):
     out, tested = {}, []
     for r in rows:
         if not r["axis"]:
+            if r.get("src") == "site":
+                out[r["id"]] = {"az": None, "el": None, "src": "site"}
             continue
         az, el = r["axis"]
         rec = {"az": round(az, 1), "el": round(el, 2), "src": r.get("src")}
@@ -216,7 +235,9 @@ def analyse(rows, feasts, seed=1):
                         rec["feast_hz"], rec["diff_hz"] = best[1]["name"], round(best[0], 1)
         out[r["id"]] = rec
     summary = {"churches": len(rows), "from_parts": sum(1 for r in out.values() if r["src"] == "part"),
-               "with_axis": sum(1 for r in out.values() if r["el"] >= MIN_ELONGATION),
+               "from_buildings": sum(1 for r in out.values() if r["src"] == "building"),
+               "sites_left_out": sum(1 for r in out.values() if r["src"] == "site"),
+               "with_axis": sum(1 for r in out.values() if (r["el"] or 0) >= MIN_ELONGATION),
                "east_facing": sum(1 for r in out.values() if "dates" in r), "tolerance": TOLERANCE, "shuffles": SHUFFLES}
     summary.update(_test(tested, feasts, seed))
     summary["by_dedication"] = _by_dedication(tested, out)
@@ -263,14 +284,22 @@ def run(log=print, skylines=True):
     data = load()
     con = sqlite3.connect(db_path())
     from .church_axes import fetch_parts
-    rows = churches(con, fetch_parts(log))
+    from .church_sites import fetch_buildings, outline_tags, site_kind
+    tags, outlines = outline_tags(), {}
+    for rid, fp in con.execute("SELECT id, footprint FROM buildings WHERE category_group = 'Religious' "
+                               "AND footprint <> '' AND lat IS NOT NULL"):
+        if site_kind(tags.get(rid)):
+            outlines[rid] = json.loads(fp)
+    rows = churches(con, fetch_parts(log), (tags, fetch_buildings(outlines, log)))
     if skylines:
         add_skylines(rows, log=log)
     per, summary = analyse(rows, data["feasts"])
     OUT.write_text(json.dumps({"summary": summary, "studies": data.get("studies", []), "fields": FIELDS,
                                "churches": {k: [v.get(f) for f in FIELDS] for k, v in per.items()}},
                               ensure_ascii=False, separators=(",", ":")))
-    log(f"{summary['churches']} religious records with outlines; {summary['with_axis']} with a clear axis, "
+    log(f"{summary['churches']} religious records with outlines; {summary['from_buildings']} outlines of a site or "
+        f"another building read from the church inside, {summary['sites_left_out']} left out")
+    log(f"{summary['with_axis']} with a clear axis, "
         f"{summary['east_facing']} facing between NNE and SSE; {summary['tested']} medieval with a fixed feast")
     if summary["tested"]:
         log(f"within {TOLERANCE}° of a feast-day sunrise: {summary['observed']} "

@@ -2841,3 +2841,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Tests 547 OK (`test_festivals`: files, validation, finds on an in-memory catalogue); ui_check festivals,
   festival_page, help pass. Hosted copy not republished.
 - Lead: catalogue record Q116535113 (Hill of Uisneach) is labelled a ringfort in Co. Offaly on Wikidata (EV0b).
+
+## 2026-10-30 — Church outlines that are not the church (SK5b2c)
+- 264 religious records take their OSM outline from something other than a church building: an abbey's or friary's
+  precinct (historic=monastery, archaeological_site, ruins over a field), a churchyard (amenity=grave_yard,
+  landuse=cemetery), or another building carrying the Wikidata id (tower, lych gate, house, barn). The edges of such
+  outlines gave meaningless axes.
+- `bidb/church_sites.py`: the outline's own tags from the cached footprint responses; for those that are not a church
+  building, the largest church, chapel or cathedral building mapped inside (Overpass, cached). 51 records now take that
+  building's axis (`src` "building": Dunbrody Abbey 26° → 87°, Adare Friary 179° → 89°, Kells Priory 20° → 90°,
+  Haughmond Abbey 18° → 100°), 213 with none are left out (`src` "site"; detail views say why).
+- Feast-day test rerun: 398 of 2,473 within 5° vs 378 by chance (95%: 350-413, p 0.13); over the skyline 398 vs 394
+  (p 0.45); either saint p 0.44. Still no more than chance. /sky#churches counts both groups.
+- Tests 548 OK (`test_sites`); ui_check sky passes. Hosted copy not updated.
+  Next: SK5b2d (Hoare and Sweet 2000; abbey churches drawn with their cloister ranges).

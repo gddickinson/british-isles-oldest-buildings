@@ -28,10 +28,11 @@ const SkyHere = (() => {
   const calendarPage = () => (IS_STATIC ? "sky.html" : "/sky");
 
   // Church orientation (SK5, SK5b): [axis, length/width, dates the sun rose on the axis, calendar year, feast, difference,
-  // skyline altitude on the axis, the dates, feast and difference over that skyline, axis from "walls" or a mapped "part"]
+  // skyline altitude on the axis, the dates, feast and difference over that skyline, axis from "walls", a mapped "part" or the church "building" inside a site's outline; "site": none]
   // (bidb.church_orientation.FIELDS)
   function churchHTML(c) {
     const [az, el, flatDates, cal, flatFeast, flatDiff, hz, hzDates, hzFeast, hzDiff, src] = c;
+    if (src === "site") return `<h4>Orientation</h4><p class="meta">The OpenStreetMap outline of this record is its site (a precinct, churchyard or another building), not the church, and no church building is mapped inside it, so it has no axis here.</p>`;
     if (el < 1.4) return `<h4>Orientation</h4><p class="meta">The outline has no clear long axis (${el.toFixed(2)} times as long as wide).</p>`;
     if (!flatDates) return `<h4>Orientation</h4><p>The axis of the outline runs ${az.toFixed(0)}°–${(az + 180).toFixed(0)}°; neither end faces the sunrise.</p>`;
     const sky = hz != null, dates = sky ? hzDates : flatDates, feast = sky ? hzFeast : flatFeast, diff = sky ? hzDiff : flatDiff;
@@ -41,7 +42,7 @@ const SkyHere = (() => {
         ? `The sun rose on that line ${sky ? "over the skyline " : ""}on about ${dates.map(md).join(" and ")} ${cal != null ? ` in the Julian calendar of ${cal}, the year it was begun` : " in the Julian calendar of 1300 (it has no medieval start date)"}.`
         : "The sun never rises that far round."}${feast ? ` On the feast of its saint (${esc(feast)}) the sun rose ${diff.toFixed(1)}° from the axis${
           sky && flatDiff != null ? ` (${flatDiff.toFixed(1)}° over a flat horizon)` : ""}.` : ""}</p>
-      <p class="meta">${src === "part" ? "From the nave, chancel or church body mapped on OpenStreetMap" : "From the direction of the walls of the OpenStreetMap outline"}${sky ? "; skyline from the terrain model (bare ground: no trees or buildings)" : ", flat horizon"}.
+      <p class="meta">${src === "part" ? "From the nave, chancel or church body mapped on OpenStreetMap" : src === "building" ? "From the walls of the church building mapped inside the record's OpenStreetMap outline (the outline itself is the site's)" : "From the direction of the walls of the OpenStreetMap outline"}${sky ? "; skyline from the terrain model (bare ground: no trees or buildings)" : ", flat horizon"}.
         Whether churches were set out to face sunrise on their saint's day is disputed: see <a href="${calendarPage()}#churches">the test across the catalogue</a>.</p>`;
   }
 

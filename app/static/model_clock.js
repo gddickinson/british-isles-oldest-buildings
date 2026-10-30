@@ -125,13 +125,13 @@ export function wirePanel(clock, { update, events, face, views }) {
 // Open on a chosen moment when the link names none (data.start: {event, minutes after it} or {m, d, t}).
 export function startMoment(clock, start, note) {
   if (!start || ["y", "m", "d", "t"].some((k) => clock.q.has(k))) return;
+  if (start.year != null) clock.st.y = start.year;
   if (start.event) {
     const jd = EVENT_KINDS[start.event]?.[1](clock);
     if (jd == null) return;
     clock.setJD(jd + (start.after ?? 2) / 1440);
     if (start.t != null) clock.st.t = start.t;
   } else Object.assign(clock.st, { m: start.m, d: start.d, t: start.t });
-  if (start.year != null) clock.st.y = start.year;
   if (note) $("#sh_note").textContent = note;
 }
 

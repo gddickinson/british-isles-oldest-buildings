@@ -140,6 +140,21 @@ def flatten_grid(grid, step, flatten):
     return level
 
 
+def despike(alt, width=3, jump=150):
+    """Remove narrow spikes from a skyline (centidegrees every step): a run of up to `width` steps rising more than
+    `jump` above both sides is a fault of the terrain data (a single bad pixel seen from close by), not a hill."""
+    out, n = list(alt), len(alt)
+    for i in range(n):
+        for w in range(1, width + 1):
+            lo, hi = out[(i - 1) % n], out[(i + w) % n]
+            run = [out[(i + k) % n] for k in range(w)]
+            if min(run) - max(lo, hi) > jump:
+                for k in range(w):
+                    out[(i + k) % n] = round(lo + (hi - lo) * (k + 1) / (w + 1))
+                break
+    return out
+
+
 def cite(research, refs):
     """[{source, quote}] of a research file → [{title, url, quote}] for the page."""
     src = research["sources"]
@@ -161,6 +176,7 @@ def write(mid):
     with open(OUT / dtm["file"], "wb") as f:
         f.write(struct.pack("<%dH" % (dtm["n"] ** 2), *[round((h - dtm["min"]) * 100) for r in grid for h in r]))
     hz = sky_horizon.compact(sky_horizon.cached_profile(round(spec["lat"], 4), round(spec["lon"], 4)))
+    hz["alt"] = despike(hz["alt"])
     credits = spec.get("credits", []) + [CREDITS_EA if spec.get("ground") == "ea" else CREDITS_TILES,
                                          "Stars: Yale Bright Star Catalogue (BSC5), via HEASARC", "three.js r160 (MIT)"]
     data = {"id": mid, "name": spec["name"], "record": spec.get("record"),

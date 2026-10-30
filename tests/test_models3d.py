@@ -25,6 +25,14 @@ class Models3DTest(unittest.TestCase):
         self.assertEqual(grid[0][0], 0.0)                                  # far corner untouched
         self.assertAlmostEqual(level, 20, delta=0.5)                       # the ring round a plane averages its centre
 
+    def test_despike(self):
+        alt = [50] * 20
+        alt[7], alt[8], alt[9] = 282, 770, 548                             # Calanais's bad terrain pixel at 340°
+        alt[15] = 120                                                      # a small real rise stays
+        out = models3d.despike(alt)
+        self.assertEqual(out[6:11], [50] * 5)
+        self.assertEqual(out[15], 120)
+
     def test_claims(self):
         fake = {"name": "X", "record": "Q1", "sources": {"a": {"title": "A", "url": "https://a"}, "b": {"title": "B"}},
                 "facts": {"r_m": {"value": 1, "cites": [{"source": "a", "quote": "one"}, {"source": "b", "quote": "two"}]}},

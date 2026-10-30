@@ -143,7 +143,11 @@ def model(mid):
     m = models3d.get(mid)
     if not m or m["id"] == "stonehenge" or not models3d.ready(m):
         abort(404)
-    return render_template("model.html", page="models", m={**m, **m.get("page", {})}, mid=mid)
+    import json
+    data = json.loads((models3d.OUT / f"model_{mid}.json").read_text())
+    page = {"about": data.get("about", []), "built_label": data.get("built_label"), "lantern": data.get("lantern"),
+            "axis_label": data.get("axis_label"), "ghosts": data.get("ghosts"), "labels_label": data.get("labels_label")}
+    return render_template("model.html", page="models", m={**m, **page}, mid=mid)
 
 
 @bp.route("/glossary")

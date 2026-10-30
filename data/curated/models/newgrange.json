@@ -1,0 +1,1632 @@
+{
+ "id": "newgrange",
+ "name": "Newgrange",
+ "record": "Q339503",
+ "date_checked": "2026-10-29",
+ "about": "Newgrange (Sí an Bhrú), Brú na Bóinne, Co. Meath: a Neolithic passage tomb of c. 3200 BC - a cairn of water-rolled pebbles about 85 m across and 11 m high retained by 97 kerbstones, with a 19 m passage (22 + 21 orthostats) rising about 2 m to a cruciform chamber with a 6 m corbelled vault, three recesses and four basins, and a roof-box above the entrance that admits the winter solstice sunrise. Twelve stones of a Great Circle survive round it. The vault is original; the passage orthostats were straightened and the passage roof and roof-box dismantled and rebuilt in 1963-; the quartz-and-granite facade (to about 3 m), the kerb exposure, the curved entrance walls (modern, for visitors), a concrete wall behind the facade and a cowl over the chamber date from M. J. O'Kelly's excavation and reconstruction (1962-75) and later repairs (1984-88). Research file for a 3D model; quotes are exact text from the cited pages.",
+ "sources": {
+  "wp_newgrange": {
+   "title": "Newgrange - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Newgrange",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "nms_smr": {
+   "title": "Sites and Monuments Record ME019-045---- (Newgrange) and ME019-045005- (stone circle), SMR open data (ArcGIS query)",
+   "author": "National Monuments Service, Dept. of Housing, Local Government and Heritage (from the Archaeological Inventory of County Meath, 1987)",
+   "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%20LIKE%20%27ME019-045%25%27&outFields=SMRS,WEB_NOTES,LATITUDE,LONGITUDE,ITM_E,ITM_N&f=json",
+   "licence_note": "NMS open data (CC BY 4.0); JSON reply, quotes are from WEB_NOTES and the point fields"
+  },
+  "whi_report_2024": {
+   "title": "Winter Solstice Phenomenon at Newgrange: Research Report 2024",
+   "author": "Frank Prendergast et al. for the World Heritage Unit / National Monuments Service",
+   "url": "https://www.worldheritageireland.ie/wp-content/uploads/2024/12/1314_World-Heritage-Unit_Winter-Solstice-Research-Report_Final-Pages.pdf",
+   "licence_note": "Government of Ireland publication; short quotes"
+  },
+  "whi_bnb": {
+   "title": "Brú na Bóinne - World Heritage Ireland",
+   "url": "https://www.worldheritageireland.ie/bru-na-boinne/",
+   "licence_note": "short quotes"
+  },
+  "hi_edu": {
+   "title": "Brú na Bóinne education pack: Art History, Leaving Certificate (PDF)",
+   "author": "OPW / Heritage Ireland",
+   "url": "https://heritageireland.ie/assets/uploads/2021/08/Art-History-Leaving-Certificate-1-1.pdf",
+   "licence_note": "OPW; short quotes"
+  },
+  "ng_description": {
+   "title": "Description of Newgrange (based on Claire O'Kelly's Illustrated Guide to Newgrange, 1978)",
+   "author": "Claire O'Kelly, via newgrange.com (Anthony Murphy / Mythical Ireland, secondary host)",
+   "url": "https://www.newgrange.com/description.htm",
+   "licence_note": "copyright; short quotes. Text reproduces C. O'Kelly's guide, the closest reachable text to the excavators' own measurements"
+  },
+  "ng_kerbstones": {
+   "title": "Newgrange Kerbstones - newgrange.com",
+   "url": "https://www.newgrange.com/kerbstones.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "ng_k52": {
+   "title": "Newgrange Kerbstone K52 - newgrange.com",
+   "url": "https://www.newgrange.com/newgrange-k52.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "ng_great_circle": {
+   "title": "Newgrange Great Circle Standing Stones - newgrange.com",
+   "url": "https://www.newgrange.com/newgrange-great-circle.htm",
+   "licence_note": "secondary (summarises O'Kelly 1982 and Williams 2023); short quotes"
+  },
+  "ng_home": {
+   "title": "Newgrange World Heritage Site - newgrange.com",
+   "url": "https://www.newgrange.com/",
+   "licence_note": "secondary; short quotes"
+  },
+  "ng_wakeman": {
+   "title": "The Tumulus of Newgrange (Wakeman's Handbook of Irish Antiquities, 1903 ed.)",
+   "author": "W. F. Wakeman, ed. J. Cooke",
+   "url": "https://www.newgrange.com/newgrange-tumulus.htm",
+   "licence_note": "public-domain text (1903) on newgrange.com; pre-excavation state"
+  },
+  "ray_1989": {
+   "title": "The winter solstice phenomenon at Newgrange, Ireland: accident or design? (Nature 337, 343-345, 1989) - abstract",
+   "author": "Tom P. Ray",
+   "url": "https://www.nature.com/articles/337343a0",
+   "licence_note": "abstract; short quotes"
+  },
+  "ray_1989_text": {
+   "title": "The winter solstice phenomenon at Newgrange (text of Ray 1989 reproduced on newgrange.com)",
+   "author": "Tom P. Ray",
+   "url": "https://www.newgrange.com/stonelight20.htm",
+   "licence_note": "Nature copyright, reproduced; short quotes. The checker reads this page with UTF-8 mis-decoded, so a degree sign appears as 'Â°' in quotes (read: °)"
+  },
+  "hensey_2017": {
+   "title": "Rediscovering the Winter Solstice Alignment at Newgrange, Ireland (Oxford Handbook of Light in Archaeology, 2017; PDF)",
+   "author": "Robert Hensey",
+   "url": "https://www.newgrange.com/pdf/rediscovering-winter-solstice-alignment-newgrange.pdf",
+   "licence_note": "OUP copyright; short quotes"
+  },
+  "knowth_newgrange": {
+   "title": "Newgrange Passage Tomb - knowth.com",
+   "author": "Anthony Murphy (secondary)",
+   "url": "https://www.knowth.com/newgrange.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "knowth_interior": {
+   "title": "Inside Newgrange - knowth.com",
+   "url": "https://www.knowth.com/newgrange-interior.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "knowth_solstice": {
+   "title": "Newgrange - Winter Solstice - knowth.com",
+   "url": "https://www.knowth.com/winter-solstice.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "knowth_article": {
+   "title": "A Passage to the Afterworld - the story of New Grange (World of Hibernia article) - knowth.com",
+   "url": "https://www.knowth.com/new_grange.htm",
+   "licence_note": "secondary, popular article; short quotes"
+  }
+ },
+ "facts": {
+  "reference_point": {
+   "value": {
+    "lat": 53.69473446696109,
+    "lon": -6.475538786506573,
+    "itm_e": 700676,
+    "itm_n": 772749
+   },
+   "unit": "WGS84 / ITM",
+   "note": "SMR point of the main mound ME019-045---- (the stone circle ME019-045005- is given 3 m S of it, 53.694707517, -6.475539760). The catalogue record Q339503 is at 53.6947251, -6.4755655. Not stated to be the chamber or mound centre: the OSM entrance node lies 33.8 m from it at bearing 142 (derived).",
+   "cites": [
+    {
+     "source": "nms_smr",
+     "quote": "\"LATITUDE\":53.694734466961087,\"LONGITUDE\":-6.475538786506573"
+    },
+    {
+     "source": "nms_smr",
+     "quote": "The great mound of Newgrange, 85m in max. dim. and 11m H"
+    }
+   ]
+  },
+  "solstice_report_position": {
+   "value": {
+    "lat": 53.6944,
+    "lon": -6.4752
+   },
+   "unit": "deg",
+   "note": "position the 2024 report gives for its lux measurements outside Newgrange",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "(+53°.6944, -6°.4752)"
+    }
+   ]
+  },
+  "mound_max_diameter_m": {
+   "value": 85,
+   "unit": "m",
+   "note": "mound at its widest; kerb diameter varies 79 m NW-SE to 85 m NE-SW. The mound is not circular.",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "The mound is 85 metres (279 ft) wide at its widest point and 12 metres (39 ft) high"
+    },
+    {
+     "source": "nms_smr",
+     "quote": "The great mound of Newgrange, 85m in max. dim. and 11m H"
+    },
+    {
+     "source": "ng_description",
+     "quote": "The diameter of the kerb (and mound) varies between 79m (260 ft) NW-SE and 85m (280 ft) NE-SW."
+    },
+    {
+     "source": "knowth_newgrange",
+     "quote": "It measures approximately 85 metres (279 feet) in diameter and rises 13 metres (43 feet) high."
+    }
+   ]
+  },
+  "kerb_min_diameter_m": {
+   "value": 79,
+   "unit": "m",
+   "note": "kerb (and mound) diameter NW-SE",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "varies between 79m (260 ft) NW-SE and 85m (280 ft) NE-SW"
+    }
+   ]
+  },
+  "mound_height_m": {
+   "value": 11,
+   "unit": "m",
+   "note": "Sources differ: 11 m (C. O'Kelly: from original ground level just outside the Entrance Stone; SMR), 12 m (Wikipedia), 13 m (knowth.com, newgrange.com). Use 11 m above ground at the entrance; the other figures may be measured from lower ground.",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "At present the cairn is about 11m (36 ft) high, taking its vertical height from original ground level just outside the Entrance Stone"
+    },
+    {
+     "source": "nms_smr",
+     "quote": "85m in max. dim. and 11m H"
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "12 metres (39 ft) high"
+    },
+    {
+     "source": "ng_home",
+     "quote": "85 metres (279 feet) in diameter and 13 metres (43 feet) high"
+    }
+   ]
+  },
+  "mound_area_m2": {
+   "value": 4500,
+   "unit": "m2",
+   "note": "ground covered. Sources: 4,500 m2 (Wikipedia), 0.45 ha (newgrange.com), 0.4 ha (knowth.com), 'just over one acre' within the kerb (C. O'Kelly). The OSM outline (way 25696157) encloses 5,213 m2 (derived, shoelace on a local plane).",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "covers 4,500 square metres (1.1 acres) of ground"
+    },
+    {
+     "source": "ng_home",
+     "quote": "covering an area of approximately 0.45 hectares (1.1 acres)"
+    },
+    {
+     "source": "knowth_newgrange",
+     "quote": "covers 0.4 hectares (1 acre) of ground"
+    },
+    {
+     "source": "ng_description",
+     "quote": "It encloses an area of just over one acre."
+    }
+   ]
+  },
+  "cairn_material": {
+   "value": "water-rolled pebbles 15-22 cm, layers of earth and stones; c. 200,000 tonnes",
+   "unit": "",
+   "note": "what the mound is made of",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "it is made up of medium-sized water-rolled pebbles, 15cm (5.9 in) to 22cm (8.7 in) across"
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "built of alternating layers of earth and stones"
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "It consists of about 200,000 tonnes of material."
+    }
+   ]
+  },
+  "facade_height_m": {
+   "value": 3,
+   "unit": "m",
+   "note": "height of the original quartz facade as calculated for O'Kelly by John Fogarty (the basis of the rebuilt facade)",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "The height of the original façade was calculated as being up to 3 meters tall"
+    }
+   ]
+  },
+  "facade_material": {
+   "value": "white quartz with rounded granite (granodiorite) cobbles; also gabbro and banded siltstone",
+   "unit": "",
+   "note": "facade stones and where from",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "The facade and entrance were built with white quartz cobblestones from the Wicklow Mountains, about 50 km to the south; dark rounded granodiorite cobbles from the Mourne Mountains"
+    },
+    {
+     "source": "ng_description",
+     "quote": "Round boulders of granite, about the size and shape of a child's football, rugby style, which were found with the quartz"
+    }
+   ]
+  },
+  "structural_stones": {
+   "value": 547,
+   "unit": "slabs",
+   "note": "slabs of passage, chambers and kerb, mostly greywacke",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "Most of the 547 slabs that make up the inner passage, chambers, and the outer kerbstones are greywacke."
+    }
+   ]
+  },
+  "kerbstone_count": {
+   "value": 97,
+   "unit": "stones",
+   "note": "numbered K1-K97 by O'Kelly, K1 at the entrance; K22-K46 still buried",
+   "cites": [
+    {
+     "source": "ng_home",
+     "quote": "The mound is encircled by 97 large kerbstones"
+    },
+    {
+     "source": "ng_kerbstones",
+     "quote": "the kerbstones are numbered 1 to 97."
+    },
+    {
+     "source": "ng_kerbstones",
+     "quote": "Kerbstones 22 to 46 are still buried."
+    }
+   ]
+  },
+  "kerbstone_length_m": {
+   "value": {
+    "min": 1.7,
+    "max": 4.5,
+    "entrance_area": [
+     3,
+     4
+    ]
+   },
+   "unit": "m",
+   "note": "kerbstone lengths; laid on their long edges, ends touching",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The kerbstones vary in length, the smallest being about 1.7m (5.6 ft) long while the largest is 4.5m (14.8 ft)."
+    },
+    {
+     "source": "ng_description",
+     "quote": "a kerb of massive slabs laid on their long edges, ends touching"
+    }
+   ]
+  },
+  "kerbstone_height_m": {
+   "value": 1.2,
+   "unit": "m",
+   "note": "average height above original ground of the kerbstones in the entrance area",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "Those in the entrance area are between 3m (9.8 ft) and 4m (13.1 ft) in length and average about 1.2m (3.9 ft) in height above original ground level."
+    }
+   ]
+  },
+  "kerbstones_decorated": {
+   "value": 39,
+   "unit": "stones",
+   "note": "kerbstones with known megalithic art; K1, K52, K67 the most decorated (fully panelled)",
+   "cites": [
+    {
+     "source": "hi_edu",
+     "quote": "39 of the 97 kerbstones at Newgrange have known megalithic art."
+    },
+    {
+     "source": "hi_edu",
+     "quote": "The three of the most highly decorated kerbstones are 1, 52 and 67."
+    }
+   ]
+  },
+  "kerbstones_exposed": {
+   "value": {
+    "left_of_entrance": 21,
+    "right_of_entrance": 18,
+    "back": 8
+   },
+   "unit": "stones",
+   "note": "kerbstones fully exposed today (the rest only their tops); before excavation only K1, K52, K67 were",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "Twenty-one stones are now fully exposed to the left of the entrance and eighteen to the right, while a further eight can be seen at the back of the mound."
+    }
+   ]
+  },
+  "passage_length_m": {
+   "value": 18.9,
+   "unit": "m",
+   "note": "passage from entrance to chamber; 24 m with the chamber. Ray gives 18 m from roof-box to chamber floor.",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The passage is 18.9m (62 ft) long and about 1m (3.3 ft) wide."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "The passage stretches for 19 metres (60 ft)"
+    },
+    {
+     "source": "ray_1989",
+     "quote": "illuminates the floor of its main chamber 18 m away"
+    }
+   ]
+  },
+  "tomb_length_m": {
+   "value": 24,
+   "unit": "m",
+   "note": "passage and chamber together",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The combined length of passage and chamber is 24m (79 ft)"
+    },
+    {
+     "source": "nms_smr",
+     "quote": "It covers a cruciform passage-tomb, 24m long, opening to SE."
+    }
+   ]
+  },
+  "passage_width_m": {
+   "value": 1.0,
+   "unit": "m",
+   "note": "about 1 m; Wakeman (1903, pre-restoration) 3 ft 2 in at the top, 3 ft 5 in at the base at the entrance",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "about 1m (3.3 ft) wide"
+    },
+    {
+     "source": "ng_wakeman",
+     "quote": "in breadth at the top, 3 feet 2 inches; and at the base, 3 feet 5 inches"
+    }
+   ]
+  },
+  "passage_height_m": {
+   "value": {
+    "outer": [
+     1.5,
+     2.0
+    ],
+    "last_roofslab_RS17": 3.6
+   },
+   "unit": "m",
+   "note": "height above the floor: first stretch flat-roofed by three slabs, then corbelled rising to RS17. Wakeman 1903: 4 ft 9 in at the entrance, about 6 ft at 26 ft in, sinking to 4 ft 10 in at 43 ft (pre-1963 tilted orthostats).",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "the first part is from 1.5m (4.9 ft) to 2m (6.6 ft) high but as the corbelling rises, so does the height until the last roofslab, RS 17, is 3.6m (11.8 ft) above the floor"
+    },
+    {
+     "source": "ng_description",
+     "quote": "The first part of the passage is roofed by three large slabs"
+    },
+    {
+     "source": "ng_wakeman",
+     "quote": "rises gradually to a height of about 6 feet through a distance of 26 feet from the external entrance"
+    },
+    {
+     "source": "ng_wakeman",
+     "quote": "but sinks to 4 feet 10 inches at 43 feet"
+    }
+   ]
+  },
+  "passage_roofslabs": {
+   "value": 17,
+   "unit": "slabs",
+   "note": "roofslabs RS1-RS17 seen from below",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "There are 17 roofslabs in all in the passage as viewed from below."
+    }
+   ]
+  },
+  "passage_orthostats": {
+   "value": {
+    "west_left": 22,
+    "east_right": 21
+   },
+   "unit": "stones",
+   "note": "passage orthostats (L and R numbering); average 1.5 m high above present floor, almost 2 m near the chamber",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "there are 22 on the left-hand (west) side and 21 on the right (east)"
+    },
+    {
+     "source": "ng_description",
+     "quote": "those nearest the chamber are the tallest, being almost 2m (6.6 ft) high"
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "They average 1.5 metres in height"
+    }
+   ]
+  },
+  "passage_gap_R3_R4_m": {
+   "value": 0.6,
+   "unit": "m",
+   "note": "the only substantial gap between passage orthostats, under the roof-box, now filled with drywalling",
+   "cites": [
+    {
+     "source": "hensey_2017",
+     "quote": "about 60 cm wide and sufficient to accommodate another orthostat"
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "directly over the space between passage orthostats R3 and R4"
+    }
+   ]
+  },
+  "floor_rise_m": {
+   "value": 2.0,
+   "unit": "m",
+   "note": "rise of the floor from entrance to chamber. Sources: about 2 m (Hensey, quoting O'Kelly 1982: 125; knowth.com), 6 ft / 1.8 m (popular article), ground sloping +8% along the 19 m passage (2024 report; 19 x 0.08 = 1.5 m, derived).",
+   "cites": [
+    {
+     "source": "hensey_2017",
+     "quote": "the 2m difference between the elevation of the passage floor at the monument"
+    },
+    {
+     "source": "knowth_interior",
+     "quote": "The passage rises about 2 metres (7 feet) from the entrance so that the roof-box is lined up with the chamber."
+    },
+    {
+     "source": "knowth_article",
+     "quote": "with the chamber 6 feet (1.8 m) above the entrance"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "19 m-long passage on ground sloping +8% from the entrance"
+    }
+   ]
+  },
+  "passage_shape": {
+   "value": "sinuous",
+   "unit": "",
+   "note": "the passage is not straight: it bends, restricting the azimuths from which light reaches the chamber. No quoted figure for where or by how much it bends was found (see gaps).",
+   "cites": [
+    {
+     "source": "ray_1989_text",
+     "quote": "The passage itself is sinuous (Fig."
+    }
+   ]
+  },
+  "roofbox_setback_m": {
+   "value": 2.4,
+   "unit": "m",
+   "note": "roof-box rests on the passage roof this far back from the passage entrance (Hensey: 2.5 m)",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "rests on the front part of the passage roof about 2.4m (7.9 ft) back from the entrance to the passage"
+    },
+    {
+     "source": "nms_smr",
+     "quote": "some 2.4m back from the passage entrance"
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "the roof-box is set 2.5m back from the passage entrance"
+    }
+   ]
+  },
+  "roofbox_size_m": {
+   "value": {
+    "height": 0.9,
+    "width": 1.0,
+    "depth_front_to_back": 1.2
+   },
+   "unit": "m",
+   "note": "the roof-box structure (sits on RS1 and RS2)",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The roof-box is 90cm (35.4 in) high, 1m (3.3 ft) wide, and 1.2m (3.9 ft) from front to back."
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "The structure sits partially on the first roof slab of the passage (RS1) and partly on the next roof slab (RS2)."
+    }
+   ]
+  },
+  "roofbox_slit": {
+   "value": {
+    "width": [
+     0.2,
+     0.25
+    ],
+    "height": [
+     0.18,
+     0.22
+    ]
+   },
+   "unit": "m",
+   "note": "the slit between RS1 and RS2 through which the sun enters: 20-25 cm wide (C. O'Kelly), 18-22 cm high, 20 cm on average (Ray)",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "situated over a small gap, 20cm (7.9 in) to 25cm (9.8 in) wide, between the first two roofslabs of the passage"
+    },
+    {
+     "source": "ray_1989_text",
+     "quote": "The height of the gap behind the roof-box varies between 18 and 22 cm, being 20 cm on average."
+    }
+   ]
+  },
+  "roofbox_side_walls_m": {
+   "value": {
+    "front": 0.55,
+    "back": 0.4
+   },
+   "unit": "m",
+   "note": "dry-built side walls on RS1, decreasing in height front to back, each topped by a slab over 1 m long; a back corbel closed the back",
+   "cites": [
+    {
+     "source": "hensey_2017",
+     "quote": "The walls decreased in height from front to back (i.e. from 55cm to 40cm)"
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "a slab, something over 1m in length, lay along the top of each wall"
+    }
+   ]
+  },
+  "roofbox_lintel": {
+   "value": "decorated with lozenges in high relief (the 'False Lintel')",
+   "unit": "",
+   "note": "front roofstone of the roof-box, visible since the 1830s",
+   "cites": [
+    {
+     "source": "hensey_2017",
+     "quote": "highlighted by a lintel decorated with lozenges carved in high relief"
+    },
+    {
+     "source": "ng_description",
+     "quote": "The name 'False Lintel' was applied to the decorated roofstone"
+    }
+   ]
+  },
+  "roofbox_quartz_block_m": {
+   "value": [
+    0.3,
+    0.38
+   ],
+   "unit": "m",
+   "note": "a quartz block found in the roof-box; scratches on RS1 suggest three such blocks could close it",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "describes it as being 30 cm–38 cm in length"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "suggesting that three such quartz blocks could have sealed the opening"
+    }
+   ]
+  },
+  "chamber_size_m": {
+   "value": {
+    "length_entrance_to_back_of_end_recess": 5.2,
+    "width_west_to_east_recess": 6.5
+   },
+   "unit": "m",
+   "note": "cruciform chamber; Wakeman 1903: 26 ft long, 21 ft wide",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The chamber is 5.2m (17 ft) long from its entrance to the back of the end recess and 6.5m (21 ft 6 in) wide from the back of the west recess to the back of the east recess."
+    }
+   ]
+  },
+  "chamber_height_m": {
+   "value": 6.0,
+   "unit": "m",
+   "note": "corbelled vault to the single capstone (Wakeman 1903: 19.5 ft)",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "the vault is closed by a single capstone 6m (20 ft) above the floor"
+    },
+    {
+     "source": "ng_wakeman",
+     "quote": "The chamber is 19.5 feet high"
+    }
+   ]
+  },
+  "recess_height_m": {
+   "value": [
+    2.4,
+    2.8
+   ],
+   "unit": "m",
+   "note": "heights of the three recesses (west, east, end/north)",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The recesses are between 2.4m (7.9 ft) and 2.8m (9.2 ft) high."
+    }
+   ]
+  },
+  "recess_depth_ft": {
+   "value": {
+    "east": 7.75,
+    "north": 7.5,
+    "west": 3.33
+   },
+   "unit": "ft",
+   "note": "depths of the recesses from the 1903 Wakeman text (7 ft 9 in, 7.5 ft, 3 ft 4 in)",
+   "cites": [
+    {
+     "source": "ng_wakeman",
+     "quote": "The east is 7 feet 9 inches in depth, the north 7.5 feet, and the west 3 feet 4 inches."
+    }
+   ]
+  },
+  "chamber_orthostats": {
+   "value": 4,
+   "unit": "stones",
+   "note": "orthostats of the main chamber itself; the others form the recesses",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "there are only four orthostats, strictly speaking, in the main chamber"
+    }
+   ]
+  },
+  "passage_azimuth_deg": {
+   "value": {
+    "ray_range": [
+     133.82,
+     137.48
+    ],
+    "patrick_range": [
+     133.7,
+     138.4
+    ],
+    "coffey_plan": 132
+   },
+   "unit": "deg from true north",
+   "note": "No single quoted passage axis azimuth was found. Ray 1989: light can enter the chamber over azimuths 133°49'-137°29' (±3'), the minimum ('first-light') axis being the passage's narrowest line of sight; Patrick (1970s): 133°42'-138°24'; Coffey's 1890s plan c. 132°, 'within 2° of its true value'. Decimal values derived from the quoted degrees and minutes.",
+   "cites": [
+    {
+     "source": "ray_1989_text",
+     "quote": "We found this range to be 133Â°49' - 137Â°29 at the chamber entrance, with a typical error of about +/-3'."
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "occurring when the azimuth of the Sun was between the limits 133° 42' and 138° 24'"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Examination of Coffey’s drawing shows the azimuth of the passage axis to be c. 132°."
+    },
+    {
+     "source": "nms_smr",
+     "quote": "opening to SE"
+    }
+   ],
+   "derived": true
+  },
+  "local_horizon_altitude": {
+   "value": {
+    "ray": "55' ±2'",
+    "patrick": "+0° 51' ±2'"
+   },
+   "unit": "arcmin",
+   "note": "altitude of the skyline (Red Mountain, 2.7 km) in the sunrise direction seen from the chamber",
+   "cites": [
+    {
+     "source": "ray_1989_text",
+     "quote": "The minimum altitude at which sunlight can enter the chamber is given by the height of the local horizon, 55' +/-2'"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Patrick measured the angular altitude of the local horizon to be +0° 51’ ±2'"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Red Mountain ridge - range 2.7 km"
+    }
+   ]
+  },
+  "true_vs_grid_north_deg": {
+   "value": -1.2,
+   "unit": "deg",
+   "note": "true north is 1.2° west of Irish grid north at Newgrange (for laying out plans on the grid)",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "True North on each plan is 1°.2 west of Grid North"
+    }
+   ]
+  }
+ },
+ "elements": [
+  {
+   "id": "K1",
+   "kind": "kerbstone",
+   "name": "Entrance Stone",
+   "position": "at the passage mouth, under the roof-box",
+   "length_m": 3,
+   "height_m": 1.2,
+   "weight_t": 5,
+   "state": "standing, fully exposed; carved in situ; triple spirals",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "It is approximately three metres long and 1.2 metres high (10 ft long and 4 ft high), and about five tonnes in weight."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "the entrance stone was carved in situ before the kerbstones were placed alongside it"
+    },
+    {
+     "source": "ng_description",
+     "quote": "the Entrance Stone directly outside the mouth of the passage"
+    }
+   ]
+  },
+  {
+   "id": "K52",
+   "kind": "kerbstone",
+   "position": "diametrically opposite K1 on the north (north-west, rear) side",
+   "state": "standing, fully exposed; fully panelled art (spirals, lozenges)",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "Kerbstone 52 diametrically opposite the Entrance Stone on the north side of the mound"
+    },
+    {
+     "source": "ng_k52",
+     "quote": "Kerbstone K52 stands on the north-western (rear side) of the kerb at Newgrange in the Boyne Valley, opposite the entrance passage."
+    },
+    {
+     "source": "ng_k52",
+     "quote": "Kerbstone K52 is one of three fully panelled kerbstones at Newgrange."
+    }
+   ]
+  },
+  {
+   "id": "K67",
+   "kind": "kerbstone",
+   "position": "east side of the kerb",
+   "state": "standing, exposed, highly decorated",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "and Kerbstone 67 to the east"
+    }
+   ]
+  },
+  {
+   "id": "K97",
+   "kind": "kerbstone",
+   "position": "immediately right (east) of the entrance stone",
+   "cites": [
+    {
+     "source": "nms_smr",
+     "quote": "K97, the kerbstone immediately to the right of the entrance stone"
+    }
+   ]
+  },
+  {
+   "id": "K22-K46",
+   "kind": "kerbstones",
+   "state": "still buried under cairn slip",
+   "cites": [
+    {
+     "source": "ng_kerbstones",
+     "quote": "Kerbstones 22 to 46 are still buried."
+    }
+   ]
+  },
+  {
+   "id": "doorstone",
+   "kind": "closing stone",
+   "position_now": "set upright to the right (east) of the passage mouth",
+   "weight_t": 5,
+   "state": "moved; once closed the passage entrance; by 1845 one end rested on K1, prone by 1892, now upright beside the entrance. No measured size found (popular article: 5-ton).",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The large slab now set upright to the right of the passage mouth was used by the tomb-builders to block the passage entrance when the monument was finished."
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "the doorstone now positioned on the right-hand side of the entrance has a profile which matches that of the passage"
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "This ‘doorstone’ was laid prone at least by 1892"
+    },
+    {
+     "source": "knowth_article",
+     "quote": "which was firmly sealed with a 5-ton slab of stone"
+    }
+   ]
+  },
+  {
+   "id": "roof-box",
+   "kind": "aperture",
+   "see_facts": [
+    "roofbox_setback_m",
+    "roofbox_size_m",
+    "roofbox_slit",
+    "roofbox_side_walls_m",
+    "roofbox_lintel"
+   ],
+   "state": "found intact under cairn in 1963 apart from some subsidence; dismantled and rebuilt after the passage orthostats were straightened",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "the structure was discovered buried underneath it but quite intact except for a certain amount of subsidence at its north and east sides"
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "be completely disassembled and reconstructed after the orthostats were corrected"
+    }
+   ]
+  },
+  {
+   "id": "RS17",
+   "kind": "passage roofslab",
+   "height_above_floor_m": 3.6,
+   "decoration": "four divided lozenges on its forward edge",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "the last roofslab, RS 17, is 3.6m (11.8 ft) above the floor"
+    },
+    {
+     "source": "ng_description",
+     "quote": "have a pattern of four divided lozenges carved on it"
+    }
+   ]
+  },
+  {
+   "id": "L20",
+   "kind": "passage orthostat",
+   "state": "leans inwards near the chamber, narrowing the light beam by up to 8 cm",
+   "cites": [
+    {
+     "source": "ray_1989_text",
+     "quote": "largely because stone L20 leans inwards"
+    },
+    {
+     "source": "ray_1989_text",
+     "quote": "L20 restricts the width of the light beam by 8 cm at most"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "kind": "chamber orthostat",
+   "position": "end recess",
+   "decoration": "three-spiral, about 30 x 28 cm",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "the three-spiral motif on stone C10 located in the end recess"
+    },
+    {
+     "source": "knowth_interior",
+     "quote": "The tri-spiral itself is relatively modest in scale, measuring approximately 30 by 28 cm."
+    }
+   ]
+  },
+  {
+   "id": "basin_west",
+   "kind": "basin stone",
+   "recess": "west",
+   "size_m": [
+    1.2,
+    0.9
+   ],
+   "shape": "almost rectangular, flat interior",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "The basin stone in the west recess is almost rectangular, measuring 1.2m (3.9 ft) by 90cm (35.4 in)"
+    }
+   ]
+  },
+  {
+   "id": "basin_north",
+   "kind": "basin stone",
+   "recess": "north (end)",
+   "size_m": [
+    1.2,
+    1.8
+   ],
+   "state": "broken, several fragments",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "That in the north recess is in several fragments but a basin of about 1.2m (3.9 ft) by 1.8m (5.9 ft) is suggested"
+    }
+   ]
+  },
+  {
+   "id": "basin_east_upper",
+   "kind": "basin stone",
+   "recess": "east",
+   "rim_diameter_m": [
+    1.0,
+    1.2
+   ],
+   "material": "granite (Mourne)",
+   "shape": "almost circular, inside the lower basin, two cup depressions 20 and 45 cm",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "This basin is almost circular, having a rim-diameter varying from 1m (3.3 ft) to 1.2m (3.9 ft)."
+    },
+    {
+     "source": "ng_description",
+     "quote": "two in the east recess, one standing inside the other"
+    },
+    {
+     "source": "ng_description",
+     "quote": "The upper of these two is particularly well-shaped and is of granite"
+    }
+   ]
+  },
+  {
+   "id": "basin_east_lower",
+   "kind": "basin stone",
+   "recess": "east",
+   "size_m": [
+    1.8,
+    1.2
+   ],
+   "shape": "rectangular",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "it is rectangular in shape, measuring 1.8m (5.9 ft) by 1.2m (3.9 ft)."
+    }
+   ]
+  },
+  {
+   "id": "great_circle",
+   "kind": "stone circle",
+   "surviving": 12,
+   "original_estimate": [
+    35,
+    38
+   ],
+   "mean_diameter_m": 103.6,
+   "distance_outside_kerb_m": [
+    7,
+    17
+   ],
+   "spacing_if_complete_m": 9,
+   "numbering": "GC1-GC17 clockwise west of the entrance, GC-1 to GC-10 anticlockwise east of it",
+   "surviving_stones": [
+    "GC1",
+    "GC3",
+    "GC5",
+    "GC7",
+    "GC9",
+    "GC11",
+    "GC13",
+    "GC17",
+    "GC-1",
+    "GC-2",
+    "GC-8",
+    "GC-10"
+   ],
+   "note": "Not concentric with the kerb: farthest from it in front of the entrance. SMR gives 'diam. c. 130m' against C. O'Kelly's 103.6 m average; the OSM area way 1136291630 round the circle is 95 x 94 m (derived). The four tallest (GC3, GC1, GC-1, GC-2) stand 2-2.5 m in a flattened arc before the entrance; many others are broken near the ground; GC-10 was fallen and re-erected in 1973.",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "Twelve standing-stones survive out of a possible original thirty-five or thereabouts."
+    },
+    {
+     "source": "nms_smr",
+     "quote": "Originally there may have been as many as thirty-eight placed c. 9m apart."
+    },
+    {
+     "source": "nms_smr",
+     "quote": "Twelve standing stones surround mound of passage-tomb (ME019-045----) (diam. c. 130m)."
+    },
+    {
+     "source": "ng_description",
+     "quote": "The Circle is 103.6m (340 ft) in average diameter"
+    },
+    {
+     "source": "ng_description",
+     "quote": "situated from 7m (23 ft) to 17m (55.8 ft) outside it"
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "West of the passage they run clockwise from GC1 to GC17 . East of it they run anticlockwise from GC-1 to GC-10 ."
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "The four tallest stones opposite the entrance, GC3 , GC1 , GC-1 and GC-2 , rise between 2 and 2.5 metres"
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "Those four tall stones form a flattened arc opposite the passage mouth."
+    },
+    {
+     "source": "ng_description",
+     "quote": "many of the remaining stones have been broken off near the ground"
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "GC-10 was raised again in 1973 once its original socket had been found."
+    }
+   ]
+  },
+  {
+   "id": "great_circle_rocks",
+   "kind": "stone materials",
+   "greywacke": [
+    "GC3",
+    "GC13",
+    "GC17",
+    "GC-8",
+    "GC-10"
+   ],
+   "grey_sandstone": [
+    "GC11"
+   ],
+   "volcanic_breccia": [
+    "GC9"
+   ],
+   "others": "dolerite, basalt, limestone, spilite, conglomerate (not assigned per stone in the source)",
+   "decorated_picking": [
+    "GC3",
+    "GC17",
+    "GC-8",
+    "GC-10"
+   ],
+   "cites": [
+    {
+     "source": "ng_great_circle",
+     "quote": "Those five are GC3, GC13, GC17, GC-8 and GC-10. GC11 is grey sandstone."
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "dolerite, basalt, limestone, volcanic breccia, spilite and conglomerate"
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "megalithic art on four Great Circle stones: GC3 , GC17 , GC-8 and GC-10"
+    }
+   ]
+  },
+  {
+   "id": "entrance_walls_modern",
+   "kind": "modern revetment",
+   "state": "modern: inward-curving dark stone walls either side of the entrance, built for visitor access; not shown in an 'as built' view",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "The inward-curving dark stone walls on each side of the entrance are not original, nor are they meant to suggest Newgrange's original appearance."
+    },
+    {
+     "source": "whi_bnb",
+     "quote": "At Newgrange, there has been comprehensive anastylosis of the kerbstones and the revetment wall, though the latter has been curtailed to allow access by visitors."
+    }
+   ]
+  },
+  {
+   "id": "chamber_cowl_modern",
+   "kind": "modern structure",
+   "state": "passage roof dismantled and rebuilt with reinforcement; a cowl built over the chamber area; concrete wall behind the facade",
+   "cites": [
+    {
+     "source": "whi_bnb",
+     "quote": "The passage roof was completely dismantled to allow the orthostats to be returned to the vertical, with the introduction of reinforcement, and a cowl has been constructed over the chamber area."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "a concrete support wall built behind it in case of a future cairn collapse"
+    }
+   ]
+  },
+  {
+   "id": "ceremonial_setting_K97",
+   "kind": "oval stone setting",
+   "position": "about 2.5 m outside K97, east of the entrance",
+   "size_m": {
+    "spread": [
+     4,
+     3.4
+    ],
+    "slab_oval": [
+     3,
+     2
+    ],
+    "height": 0.5
+   },
+   "cites": [
+    {
+     "source": "nms_smr",
+     "quote": "The total spread of the mound measures approximately 4m x 3.4m and it was about 50cm in height."
+    },
+    {
+     "source": "nms_smr",
+     "quote": "a setting of small thin slabs forming an oval 3m x 2m"
+    }
+   ]
+  },
+  {
+   "id": "osm_mapped",
+   "kind": "OpenStreetMap features (Overpass, 2026-10-29, within 200 m of 53.6947,-6.4756)",
+   "derived": true,
+   "mound_outline": {
+    "way": 25696157,
+    "tags": "man_made=cairn, archaeological_site=tumulus, wikidata=Q339503",
+    "nodes": 41,
+    "extent_m": {
+     "EW": 82.8,
+     "NS": 80.3,
+     "max": 86.4
+    },
+    "area_m2": 5213
+   },
+   "grass_outline": {
+    "way": 1427711726,
+    "extent_m": {
+     "EW": 80.5,
+     "NS": 76.1
+    },
+    "area_m2": 4745
+   },
+   "circle_area": {
+    "way": 1136291630,
+    "tags": "area=yes only",
+    "extent_m": {
+     "EW": 95.0,
+     "NS": 94.0,
+     "max": 104.0
+    }
+   },
+   "entrance_node": {
+    "node": 5335472272,
+    "lat": 53.6944932,
+    "lon": -6.475224
+   },
+   "menhirs": [
+    {
+     "node": 11038172328,
+     "lat": 53.6944721,
+     "lon": -6.4748492
+    },
+    {
+     "node": 11038172329,
+     "lat": 53.6944141,
+     "lon": -6.4749344
+    },
+    {
+     "node": 11038172330,
+     "lat": 53.6943629,
+     "lon": -6.4750417
+    },
+    {
+     "node": 11038172332,
+     "lat": 53.6942771,
+     "lon": -6.4752582
+    },
+    {
+     "node": 11038172331,
+     "lat": 53.6942255,
+     "lon": -6.4755144
+    }
+   ],
+   "note": "Only 5 of the 12 Great Circle stones are mapped (the arc in front of the entrance, 52-56 m from the SMR point at bearings 123-178; not labelled with GC numbers). No kerbstones, passage, roof-box or individual facade features are mapped. Small way 1188743119 (historic=archaeological_site, c. 10 m across, 65 m NE) is probably satellite Site Z or the folly (untagged). Measurements derived on a local plane.",
+   "cites": []
+  }
+ ],
+ "alignment": [
+  {
+   "event": "winter solstice sunrise",
+   "claim": "Sunlight enters through the roof-box slit (not the doorway), runs up the passage and lights the chamber floor. O'Kelly, 21 December 1967: sun's upper edge at 8.54 GMT, beam in at 8.58, a 17 cm band, narrowing at 9.09, cut off at 9.15: 17 minutes.",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "At exactly 8.54 hours GMT the top edge of the ball of the sun appeared above the local horizon and at 8.58 hours, the first pencil of direct sunlight shone through the roofbox"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "As the thin line of light widened to a 17 cm-band and swung across the chamber floor"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "at exactly 9.15 hours, the direct beam was cut off from the tomb"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "For 17 minutes, therefore, at sunrise on the shortest day of the year"
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "Michael J. O'Kelly was the first person in modern times to observe this event on 21 December 1967."
+    }
+   ]
+  },
+  {
+   "event": "how far the beam reaches now",
+   "claim": "Today it reaches the chamber floor as far as the front edge of the basin in the end recess, about 2 m short of the back recess; maximum length on the chamber floor measured in 2020 3.49 m.",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "to reach across the tomb chamber floor as far as the front edge of the basin stone in the end recess"
+    },
+    {
+     "source": "knowth_solstice",
+     "quote": "Due to changes in the tilt of the Earth's axis the sunbeam now stops 2 metres (7 feet) from the back recess."
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "The maximum current length of the sunbeam within the bounds of the chamber floor is 3.49 m"
+    }
+   ]
+  },
+  {
+   "event": "beam width",
+   "claim": "Ray measured the beam just under 34 cm wide near the chamber entrance, narrowing towards the back (L20). 2024 report: on 24 December 2020 average 0.26 m (0.25-0.29 m); on 12 and 15 December 2020 9 cm at culmination; the fixed ambient-light beam is 26 cm (30 cm in the report's summary).",
+   "cites": [
+    {
+     "source": "ray_1989_text",
+     "quote": "We measured the light beam to be just under 34 cm wide near the entrance although it narrows towards the back recess"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Measurements of the sunbeam using GIS tools show that the average width is 0.26 m, varying from 0.29 m to 0.25 m."
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Compare its path and width of 9 cm with that of the ambient light beam which maintains a constant direction and a width of 26 cm"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "the 30 cm-wide beam of ambient light"
+    }
+   ]
+  },
+  {
+   "event": "timing after sunrise",
+   "claim": "First light enters about four and a half minutes after sunrise (Ray; the report: four minutes after sunrise over Red Mountain); culmination about two minutes after ingress; altitude window from 55' (horizon) to 2°11'.",
+   "cites": [
+    {
+     "source": "ray_1989",
+     "quote": "On Midwinter's Day, around four and a half minutes after sunrise, the sun shines down the 'roof-box'"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Four minutes must elapse, however, before the first rays of the rising Sun come into alignment with the lefthand limit of the roof-box"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "the beam of direct sunlight reaches culmination in the chamber about two minutes after ingress"
+    },
+    {
+     "source": "ray_1989_text",
+     "quote": "is 2Â°11' +/-2'"
+    }
+   ]
+  },
+  {
+   "event": "measured sun azimuths of ingress and egress (December 2020)",
+   "claim": "On 20 December 2020 the beam entered at sun azimuth 133.9° and culminated at 134.3°; on 24 December entered at 133.8°; on 17 December egress at 136.5°. Sun altitude about 1° (zenith distance 88-89°).",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "20201220-08-56-31 133.9 89.1 -23.4 Ingress into chamber"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "20201220-08-58-48 134.3 88.9 -23.4 Culmination of light beam"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "20201224-08-58-02 133.8 89.1 -23.4 Ingress into chamber"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "20201217-09-08-01 136.5 87.7 -23.4 Egress from chamber"
+    }
+   ]
+  },
+  {
+   "event": "days of the year",
+   "claim": "Public viewing 19-23 December; direct sunlight reaches the chamber for less than 20 minutes on mornings about 18-20 days either side of the solstice (2024 report).",
+   "cites": [
+    {
+     "source": "ng_home",
+     "quote": "At dawn, from 19th to 23rd December, a narrow beam of light penetrates the roof-box and reaches the floor of the chamber"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "can only penetrate the chamber for less than 20 minutes for about 18 days either side of the date of the winter solstice"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "Limiting dates for when direct sunlight enters/exits the chamber are discovered as currently being about 20 days either side of the notional date of the winter solstice"
+    }
+   ]
+  },
+  {
+   "event": "winter solstice sunrise when built (c. 3150-3200 BC)",
+   "claim": "Obliquity then about 24.1°, sunrise 1°11' (two solar diameters) further south; the first beam was under 10 cm wide, about 2 m long and bisected the chamber, and reached the back stone of the end recess.",
+   "cites": [
+    {
+     "source": "whi_report_2024",
+     "quote": "Obliquity in the Neolithic was 24°.1 compared with the present value of 23°.4"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "cause the observed azimuth of sunrise on the winter solstice to decrease by 1° 11’ or about two solar diameters"
+    },
+    {
+     "source": "ray_1989_text",
+     "quote": "the first beam of sunlight on the floor was less than 10 cm wide, approximately 2M long, and bisected the chamber"
+    },
+    {
+     "source": "ray_1989_text",
+     "quote": "the 'first-light' axis of the passage corresponds, within 5' or so, to midwinter sunrise 5,150 years ago"
+    },
+    {
+     "source": "whi_report_2024",
+     "quote": "could have reached the back stone in the end recess of the cruciform chamber in Neolithic times"
+    }
+   ]
+  },
+  {
+   "event": "design intent",
+   "claim": "Ray: roof-box width and height probably deliberate; a slit 20 cm lower or a passage a few metres longer would let no sunlight in.",
+   "cites": [
+    {
+     "source": "ray_1989",
+     "quote": "Here I suggest that the width and height of the gap in the floor of the roof-box may have been deliberate"
+    },
+    {
+     "source": "ray_1989_text",
+     "quote": "If the gap between the first two roof-slabs was, say, 20 cm lower, or equivalently the passage was a few metres longer, sunlight would not enter the chamber."
+    }
+   ]
+  }
+ ],
+ "phases": [
+  {
+   "name": "passage tomb built",
+   "date": "c. 3200 BC (Wikipedia: c. 3100 BC)",
+   "what": "mound, kerb, passage, chamber, roof-box",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "Its probable date of erection is about 3200 BC."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "The original complex of Newgrange was built around 3100 BC."
+    }
+   ]
+  },
+  {
+   "name": "possible passage extension",
+   "date": "Late Neolithic (Hensey's hypothesis)",
+   "what": "the three outermost orthostats each side, their roofslabs and the roof-box as a later extension",
+   "cites": [
+    {
+     "source": "hensey_2017",
+     "quote": "The proposed extension is therefore represented by the three outermost orthostats on either side of the passage, the roof slabs above them, and the roof-box."
+    }
+   ]
+  },
+  {
+   "name": "decay, Beaker occupation, Great Circle",
+   "date": "by 2000 BC (circle date debated)",
+   "what": "cairn collapse buries the kerb and front; Great Circle dated after the tomb and before Beaker occupation by O'Kelly",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "by 2000 [BC] Newgrange was in decay and squatters were living around its collapsing edge"
+    },
+    {
+     "source": "nms_smr",
+     "quote": "Dated later than passage-tomb (ME019-045----) and earlier than Beaker occupation (ME019-045004-) by O'Kelly (1982, 82)."
+    }
+   ]
+  },
+  {
+   "name": "entrance rediscovered",
+   "date": "1699",
+   "what": "Charles Campbell's labourers find the entrance while taking stone",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "The labourers soon discovered the entrance to the tomb within the mound"
+    }
+   ]
+  },
+  {
+   "name": "state care and first conservation",
+   "date": "1882, 1890",
+   "what": "Board of Public Works conservation",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "In 1890, under the leadership of Thomas Newenham Deane, the board began a project to conserve the monument."
+    }
+   ]
+  },
+  {
+   "name": "O'Kelly excavation and reconstruction",
+   "date": "1962-1975",
+   "what": "roof-box found 1963; orthostats straightened and roof rebuilt; quartz facade rebuilt with concrete wall behind; kerb exposed",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "The first thorough archaeological investigation and excavation of Newgrange was undertaken from 1962 through to 1975"
+    },
+    {
+     "source": "ng_description",
+     "quote": "Before the cairn material was removed from this part of the roof in 1963 so that the orthostats (standing-stones) in the passage beneath could be straightened up"
+    }
+   ]
+  },
+  {
+   "name": "rear of mound repaired",
+   "date": "1984-1988",
+   "what": "collapse at the back after weep holes blocked; gabions and concrete; Ann Lynch excavation",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "Further excavation and conservation of the mound took place between 1984 and 1988 under the direction of Ann Lynch."
+    }
+   ]
+  }
+ ],
+ "debate": [
+  {
+   "claim": "The vertical quartz facade is O'Kelly's interpretation of quartz found spread before the kerb; critics call it overdone and doubt a near-vertical revetment was possible, supporters (Hensey and Shee Twohig 2017, Carleton Jones) cite Breton parallels. An 'as built' view may show the facade or a quartz spread; both are defensible.",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "O'Kelly concluded that the quartz had made up a white façade or revetment on the front of the monument."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "Some critics claim that the Neolithic builders didn't have the technology to construct a revetment at this angle."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "passage tombs in Brittany have similar near-vertical dry stone fronts, such as Gavrinis and Barnenez"
+    }
+   ]
+  },
+  {
+   "claim": "How far quartz was used round the mound: C. O'Kelly says 'at least in the entrance area'; Wikipedia says the facade covers part of the circumference.",
+   "cites": [
+    {
+     "source": "ng_description",
+     "quote": "White quartz stones were used as an outside finishing layer, at least in the entrance area."
+    },
+    {
+     "source": "wp_newgrange",
+     "quote": "covering part of the circumference"
+    }
+   ]
+  },
+  {
+   "claim": "Roof-box authenticity: a 2016 claim that it was fabricated was refuted; it is photographed from the early 1900s. Hensey asks whether reports of the solstice influenced its reconstruction.",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "it has been recorded photographically since the early 1900s"
+    },
+    {
+     "source": "hensey_2017",
+     "quote": "to what extent may pre-excavation reports of a winter solstice connection with Newgrange have influenced the reconstruction"
+    }
+   ]
+  },
+  {
+   "claim": "Date and completeness of the Great Circle: Bronze Age addition, or Neolithic (Williams 2023); whether the ring was ever complete is open.",
+   "cites": [
+    {
+     "source": "wp_newgrange",
+     "quote": "Most archaeologists suggest that they were added later, during the Bronze Age"
+    },
+    {
+     "source": "ng_great_circle",
+     "quote": "whether a full ring was erected remains uncertain"
+    }
+   ]
+  },
+  {
+   "claim": "Mound height and Great Circle diameter differ between sources (11/12/13 m; 103.6 m average vs SMR c. 130 m); see facts.",
+   "cites": []
+  },
+  {
+   "claim": "SMR says two basins in the 'NE recess' where C. O'Kelly says the east recess; taken as the same (east) recess.",
+   "cites": [
+    {
+     "source": "nms_smr",
+     "quote": "There are two stone basins in NE recess"
+    }
+   ]
+  }
+ ],
+ "plans": [
+  {
+   "title": "Plan of Newgrange Mound adapted from O'Kelly 1982",
+   "url": "https://www.newgrange.com/newgrange-plans.htm",
+   "licence": "copyright (Thames and Hudson / O'Kelly); not traceable",
+   "what it shows": "mound, kerb, Great Circle stones and passage"
+  },
+  {
+   "title": "Coffey, 'On the Tumuli and Inscribed Stones at New Grange, Dowth, and Knowth', Trans. RIA 30 (1892-96)",
+   "url": "https://www.jstor.org/stable/30078779",
+   "licence": "public domain (1890s; JSTOR Early Journal Content). URL not checked here",
+   "what it shows": "plan of passage and chamber (the 2024 report reads the passage azimuth c. 132° off it), before the 1960s straightening"
+  },
+  {
+   "title": "Wilde, The Beauties of the Boyne (1849)",
+   "url": "https://commons.wikimedia.org/wiki/File:The_beauties_of_the_Boyne,_and_its_tributary,_the_Blackwater_(IA_beautiesofboyne00wild).pdf",
+   "licence": "public domain",
+   "what it shows": "contains an early plan/section of the passage and chamber (page not checked)"
+  },
+  {
+   "title": "Borlase, The Dolmens of Ireland (1897)",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Dolmens_of_Ireland_(IA_cu31924091786578).pdf",
+   "licence": "public domain",
+   "what it shows": "Newgrange plans after Coffey (page not checked)"
+  },
+  {
+   "title": "Figure 4 of the 2024 Winter Solstice Research Report: path of sunbeam on ground plan of passage and chamber",
+   "url": "https://www.worldheritageireland.ie/wp-content/uploads/2024/12/1314_World-Heritage-Unit_Winter-Solstice-Research-Report_Final-Pages.pdf",
+   "licence": "Government of Ireland copyright; not stated as open",
+   "what it shows": "the most accurate published plan of passage and chamber (ITM-georeferenced, true north 1.2° W of grid north) with the beam"
+  },
+  {
+   "title": "OpenStreetMap mound outline way 25696157 and five menhir nodes",
+   "url": "https://www.openstreetmap.org/way/25696157",
+   "licence": "ODbL",
+   "what it shows": "mound footprint (41 nodes) and 5 Great Circle stones before the entrance"
+  }
+ ],
+ "gaps": [
+  "No quoted single azimuth for the passage axis; only Ray's (133°49'-137°29') and Patrick's light windows and Coffey's c. 132°. Prendergast's total-station survey value is in the 2024 report's figures (Figure 3 shows 134-137°) and in Prendergast's papers (e.g. 'Facing the Sun', Archaeology Ireland 2017), not reachable as text.",
+  "Where and how much the passage bends: only 'sinuous' (Ray). O'Kelly 1982 (pp. 21-35, fig. of passage plan) has the orthostat-by-orthostat plan; no free text found.",
+  "Passage width along its length (only 'about 1 m'; Wakeman 1903 for the entrance) and the floor profile are in O'Kelly 1982 and the 2024 report's Figure 4 plan.",
+  "Per-stone sizes of kerbstones other than K1, of the 43 passage orthostats, and of the Great Circle stones (only the four tallest 2-2.5 m); GC positions are on O'Kelly's plan (copyright). Only 5 GC stones are on OSM.",
+  "Size of the closing (door) stone: only a popular '5-ton slab'; O'Kelly 1982 p. 35 describes it.",
+  "Facade length round the circumference and its exact plan; Hensey and Shee Twohig 2017 'Facing the cairn at Newgrange' (cited by Wikipedia) was not found online.",
+  "UNESCO whc.unesco.org and mythicalireland.com refused the checker; knowth.com and newgrange.com are secondary (Anthony Murphy) and decode with mojibake, so quotes from them avoid non-ASCII characters (except Ray's text, see source note).",
+  "No free-licence plan of the passage and chamber was found on Commons; the public-domain Coffey (1890s) and Wilde (1849) plans would need checking page by page and show the pre-restoration tilted orthostats."
+ ]
+}

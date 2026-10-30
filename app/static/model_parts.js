@@ -2,14 +2,14 @@
 // with a kerb drum and openings, passages (orthostats, capstones, floor, and a liner behind them), chambers
 // (orthostats, a capstone or a corbelled roof), timber posts and banks. Model metres: x east, y north; heights of a
 // part are above the ground under it (`height(x, y)`, metres above the ground at the origin). Surfaces inside a
-// passage or chamber take no light from the sky (an ambient-occlusion map of 8%), only direct sun or moon light
+// passage or chamber take no light from the sky (an ambient-occlusion map of 16%), only direct sun or moon light
 // coming in through the openings, and the lantern.
 import * as THREE from "./vendor/three/three.module.min.js";
 import { grassTexture } from "./stonehenge_scene.js";
 import { stoneMesh, material, label } from "./stonehenge_stones.js";
 
 const R = Math.PI / 180;
-const AO = (() => { const t = new THREE.DataTexture(new Uint8Array([20, 20, 20, 255]), 1, 1); t.needsUpdate = true; return t; })();
+const AO = (() => { const t = new THREE.DataTexture(new Uint8Array([40, 40, 40, 255]), 1, 1); t.needsUpdate = true; return t; })();
 const CACHE = {};
 // The interior form of a material: no sky light, only direct light.
 export function interior(kind) {
@@ -24,11 +24,11 @@ export function interior(kind) {
 function grass() {
   if (!CACHE.grass) {
     const t = grassTexture();
-    CACHE.grass = new THREE.MeshStandardMaterial({ map: t, roughness: 1, shadowSide: THREE.DoubleSide });
+    CACHE.grass = new THREE.MeshStandardMaterial({ map: t, roughness: 1, side: THREE.DoubleSide, shadowSide: THREE.DoubleSide });
   }
   return CACHE.grass;
 }
-const surface = (kind) => (kind === "grass" ? grass() : (CACHE["s-" + kind] ??= Object.assign(material(kind).clone(), { shadowSide: THREE.DoubleSide })));
+const surface = (kind) => (kind === "grass" ? grass() : (CACHE["s-" + kind] ??= Object.assign(material(kind).clone(), { side: THREE.DoubleSide, shadowSide: THREE.DoubleSide })));
 
 // A rectangle of length `len` along azimuth `az` and width `wid` round centre c.
 export function rect(c, len, wid, az) {
@@ -70,38 +70,54 @@ export function stone(p, height, seed) {
   return m;
 }
 
-// Mound: {c, r, h, kerb_h, p (profile), surface, kerb_rock, gap: {az, width, open: [[lo, hi], ...]}} on ground
-// flattened by the builder. The top is a dome down to the kerb drum; the drum is open where the passage enters.
+// Mound: {c, r (or radii: one every 360/n degrees from north), h, kerb_h, p (profile), surface, kerb_rock,
+// facade: {from, to, rock, h} (an arc of the drum faced in another stone, and as high as h there, blending back to
+// kerb_h over 10°), gap: {az, width, open: [[lo, hi], ...]}} on
+// ground flattened by the builder. The top is a dome down to the kerb drum; the drum is open where the passage enters.
 function mound(p, height) {
-  const [cx, cy] = p.c, Rr = p.r, NR = 28, NS = 180, kerb = p.kerb_h ?? 0, g0 = height(cx, cy) ?? 0;
+  const [cx, cy] = p.c, NR = 28, NS = 180, kerb = p.kerb_h ?? 0, g0 = height(cx, cy) ?? 0;
+  const rAt = (az) => {
+    if (!p.radii) return p.r;
+    const n = p.radii.length, f = (((az % 360) + 360) % 360) / 360 * n, i = Math.floor(f) % n, t = f - Math.floor(f);
+    return p.radii[i] * (1 - t) + p.radii[(i + 1) % n] * t;
+  };
+  const within = (az, a, b) => ((az - a + 360) % 360) <= ((b - a + 360) % 360);
+  const kAt = (az) => {
+    const f = p.facade;
+    if (!f || f.h == null) return kerb;
+    if (within(az, f.from, f.to)) return f.h;
+    const off = Math.min((f.from - az + 360) % 360, (az - f.to + 360) % 360);
+    return off >= 10 ? kerb : f.h + (kerb - f.h) * off / 10;
+  };
   const pos = [], idx = [];
   for (let i = 0; i <= NR; i++) for (let j = 0; j < NS; j++) {
-    const r = Rr * i / NR, a = j / NS * 2 * Math.PI;
-    const z = g0 + kerb + (p.h - kerb) * Math.pow(Math.max(0, 1 - (r / Rr) ** 2), p.p ?? 0.8);
-    pos.push(cx + r * Math.sin(a), z, -(cy + r * Math.cos(a)));
+    const a = j / NS * 360, Rr = rAt(a), r = Rr * i / NR, k = kAt(a);
+    const z = g0 + k + (p.h - k) * Math.pow(Math.max(0, 1 - (i / NR) ** 2), p.p ?? 0.8);
+    pos.push(cx + r * Math.sin(a * R), z, -(cy + r * Math.cos(a * R)));
   }
   for (let i = 0; i < NR; i++) for (let j = 0; j < NS; j++) {
     const a = i * NS + j, b = i * NS + (j + 1) % NS;
-    idx.push(a, a + NS, b, b, a + NS, b + NS);
+    idx.push(a, b, a + NS, b, b + NS, a + NS);           // faces up
   }
   const g = new THREE.Group();
   g.add(mesh(pos, idx, surface(p.surface ?? "grass")));
-  // Drum: one wall per run of segments with the same openings.
-  const gapHalf = p.gap ? (p.gap.width / 2) / Rr / R : 0;
+  // Drum: one wall per segment, open where the passage comes in.
+  const gapHalf = p.gap ? (p.gap.width / 2) / rAt(p.gap.az) / R : 0;
   const inGap = (az) => p.gap && Math.abs(((az - p.gap.az + 540) % 360) - 180) < gapHalf;
   const bands = (az) => {
-    if (!inGap(az)) return [[0, kerb]];
+    const top = kAt(az);
+    if (!inGap(az)) return [[0, top]];
     const out = []; let lo = 0;
     for (const [a, b] of p.gap.open) { if (a > lo) out.push([lo, a]); lo = b; }
-    if (lo < kerb) out.push([lo, kerb]);
+    if (lo < top) out.push([lo, top]);
     return out;
   };
-  const dm = surface(p.kerb_rock ?? "cairn");
   for (let j = 0; j < NS; j++) {
     const a0 = j / NS * 360, a1 = (j + 1) / NS * 360, am = (a0 + a1) / 2;
+    const dm = surface(p.facade && within(am, p.facade.from, p.facade.to) ? p.facade.rock : p.kerb_rock ?? "cairn");
     for (const [lo, hi] of bands(am)) {
-      const pt = (a, z) => [cx + Rr * Math.sin(a * R), cy + Rr * Math.cos(a * R), g0 + lo, g0 + z];
-      if (hi > lo) g.add(wall([pt(a0, hi), pt(a1, hi)], dm));
+      const pt = (a) => [cx + rAt(a) * Math.sin(a * R), cy + rAt(a) * Math.cos(a * R), g0 + lo, g0 + Math.min(hi, kAt(a))];
+      if (hi > lo + 0.02) g.add(wall([pt(a0), pt(a1)], dm));
     }
   }
   return g;
@@ -183,8 +199,27 @@ function chamber(p, height, seed) {
   p.outline.forEach((pt) => fpos.push(pt[0], g0 + 0.02, -pt[1]));
   for (let i = 0; i < n; i++) fidx.push(0, 1 + i, 1 + (i + 1) % n);
   g.add(mesh(fpos, fidx, interior("floor")));
-  const liner = ring(0.42, 0).map(([x, y]) => [x, y, g0 - 0.05, g0 + p.h + 0.3]);
-  g.add(wall([...liner, liner[0]], interior(rock)));
+  // Liner behind the uprights, edge by edge, open where the passage comes in.
+  const lin = ring(0.42, 0);
+  for (let i = 0; i < n; i++) {
+    const a = lin[i], b = lin[(i + 1) % n], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const cut = (p.open ?? []).map((o) => {
+      const ex = (b[0] - a[0]) / len, ey = (b[1] - a[1]) / len, t = (o.at[0] - a[0]) * ex + (o.at[1] - a[1]) * ey;
+      const d = Math.abs((o.at[0] - a[0]) * ey - (o.at[1] - a[1]) * ex);
+      return d < 0.8 && t > -o.width && t < len + o.width ? [t - o.width / 2 - 0.2, t + o.width / 2 + 0.2] : null;
+    }).filter(Boolean);
+    const spans = [[0, len]];
+    for (const [lo, hi] of cut) {
+      const s0 = spans.pop();
+      if (lo > s0[0]) spans.push([s0[0], Math.min(lo, s0[1])]);
+      if (hi < s0[1]) spans.push([Math.max(hi, s0[0]), s0[1]]);
+    }
+    for (const [t0, t1] of spans) {
+      if (t1 - t0 < 0.05) continue;
+      const pt = (t) => [a[0] + (b[0] - a[0]) * t / len, a[1] + (b[1] - a[1]) * t / len, g0 - 0.05, g0 + p.h + 0.3];
+      g.add(wall([pt(t0), pt(t1)], interior(rock)));
+    }
+  }
   const roof = p.roof ?? { kind: "capstone", thickness: 0.6 };
   if (roof.kind === "corbel") {
     const rings = roof.rings ?? 8, top = roof.top ?? p.h + 2;

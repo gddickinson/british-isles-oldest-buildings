@@ -58,6 +58,7 @@ PAGES = {
     "things": ("/things", r"(?s)Oldest things.*Food and drink.*Oldest recipe or cookery book.*sources?"),
     "things_search": ("/things?q=harp&sort=year", r"(?s)Oldest things.*[Hh]arp"),
     "models": ("/models", r"(?s)3D models.*Stonehenge.*Bryn Celli Ddu"),
+    "model_bryn_celli_ddu": ("/model/bryn_celli_ddu", r"(?s)Bryn Celli Ddu in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),
     "stonehenge": ("/stonehenge", r"(?s)Stonehenge in 3D.*(The 3D model needs WebGL|sh-ready).*Was the circle ever complete"),
     "sky": ("/sky", r"(?s)Sky calendar.*Midwinter \(winter solstice\).*Newgrange.*The moon's standstills"),
     "sky_churches": ("/sky#churches", r"(?s)Churches and their saints' days.*sky-hist.*midwinter sunrise.*Over each church's skyline.*either saint"),

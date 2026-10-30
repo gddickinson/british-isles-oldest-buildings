@@ -1,0 +1,2525 @@
+{
+ "id": "orkney",
+ "name": "Heart of Neolithic Orkney: Maeshowe, Stones of Stenness, Ring of Brodgar",
+ "date_checked": "2026-10-29",
+ "about": "Research for 3D models of three monuments of the Heart of Neolithic Orkney World Heritage Site, each under 'sites' with its own record, reference point, facts, elements, alignment, phases and debate; sources, plans, OSM features and gaps are shared. Every number is quoted from a fetchable source (checked with bidb.evidence.quote_found); where sources disagree all are kept and the note says so. Quotes from the PSAS PDFs are their OCR text (decimal points print as '-', e.g. '5-7 m' = 5.7 m; '3£ feet' = 3 1/2 ft). 'derived' marks values computed here (grid conversions, OSM distances).",
+ "sources": {
+  "hes_sos_maeshowe": {
+   "title": "Statement of Significance: Maeshowe, Chambered Cairn",
+   "author": "Historic Environment Scotland",
+   "url": "https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/6b515377-58d2-4140-82fe-b2ad00a2c95c",
+   "licence_note": "Open Government Licence v3.0 (HES Statements of Significance say so; logos and images excluded)"
+  },
+  "hes_sos_stenness": {
+   "title": "Statement of Significance: Stones of Stenness",
+   "author": "Historic Environment Scotland (2025 update)",
+   "url": "https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/13c5f474-68db-480c-ab9a-b2bc00a439dc",
+   "licence_note": "Open Government Licence v3.0 (HES Statements of Significance say so; logos and images excluded)"
+  },
+  "hes_sos_brodgar": {
+   "title": "Statement of Significance: Ring of Brodgar",
+   "author": "Historic Environment Scotland",
+   "url": "https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/58d9154e-789a-4fe1-914d-b2bc009eebb4",
+   "licence_note": "Open Government Licence v3.0 (HES Statements of Significance say so; logos and images excluded)"
+  },
+  "hes_sm90209": {
+   "title": "Maes Howe, chambered cairn (SM90209), scheduled monument record",
+   "author": "Historic Environment Scotland",
+   "url": "https://portal.historicenvironment.scot/designation/SM90209",
+   "licence_note": "HES portal; text quotes"
+  },
+  "hes_sm90285": {
+   "title": "Stenness, stone circle and henge (SM90285), scheduled monument record",
+   "author": "Historic Environment Scotland",
+   "url": "https://portal.historicenvironment.scot/designation/SM90285",
+   "licence_note": "HES portal; text quotes"
+  },
+  "hes_sm90042": {
+   "title": "Ring of Brogar, stone circle, henge and nearby remains (SM90042), scheduled monument record",
+   "author": "Historic Environment Scotland",
+   "url": "https://portal.historicenvironment.scot/designation/SM90042",
+   "licence_note": "HES portal; text quotes"
+  },
+  "hes_sm90341": {
+   "title": "Barnhouse Stone, standing stone (SM90341), scheduled monument record",
+   "author": "Historic Environment Scotland",
+   "url": "https://portal.historicenvironment.scot/designation/SM90341",
+   "licence_note": "HES portal; text quotes"
+  },
+  "hes_sm90352": {
+   "title": "Watch Stone, stone settings, Barnhouse settlement, and related remains (SM90352), scheduled monument record",
+   "author": "Historic Environment Scotland",
+   "url": "https://portal.historicenvironment.scot/designation/SM90352",
+   "licence_note": "HES portal; text quotes"
+  },
+  "wp_maeshowe": {
+   "title": "Maeshowe - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Maeshowe",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_stenness": {
+   "title": "Standing Stones of Stenness - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Standing_Stones_of_Stenness",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_brodgar": {
+   "title": "Ring of Brodgar - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ring_of_Brodgar",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "ness_maeshowe": {
+   "title": "Maeshowe",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/maeshowe/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_maeshowe_solstice": {
+   "title": "Maeshowe and the winter solstice",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/maeshowe-winter-solstice/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_barnhouse_stone": {
+   "title": "The Barnhouse Stone",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/barnhouse-stone/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_stenness": {
+   "title": "The Stones of Stenness",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/stones-of-stenness/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_stenness_2": {
+   "title": "The Stones of Stenness, part two: destruction and reconstruction",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/around-the-ness-stones-of-stenness-part-two/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_watchstone": {
+   "title": "Watching the Watchstone",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/watching-the-watchstone/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_odin": {
+   "title": "The Stone of Odin",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/odinstone/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_brodgar": {
+   "title": "The Ring of Brodgar",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/ring-of-brodgar/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_comet": {
+   "title": "The Comet Stone",
+   "author": "Sigurd Towrie, Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/comet-stone/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ness_size": {
+   "title": "Ring of Brodgar relegated to fifth place in stone circle size table",
+   "author": "Ness of Brodgar Project",
+   "url": "https://www.nessofbrodgar.co.uk/ring-of-brodgar-relegated-to-fifth-place-in-stone-circle-size-table/",
+   "licence_note": "Ness of Brodgar Trust / Sigurd Towrie, copyright; short quotes only"
+  },
+  "ritchie_1976": {
+   "title": "The Stones of Stenness, Orkney (with an account of the Stone of Odin by Ernest W Marwick), Proc Soc Antiq Scot 107 (1975-6), 1-60",
+   "author": "J N Graham Ritchie",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/8930/8898/8884",
+   "licence_note": "Society of Antiquaries of Scotland open access PDF (OCR text: the printed decimal point reads as '-', so '5-7 m' is 5.7 m); text quotes; check the paper's own Creative Commons licence before tracing its figures"
+  },
+  "stuart_1865": {
+   "title": "Notice of excavations in the chambered mound of Maeshowe, in Orkney, and of the runic inscriptions on the walls of its central chamber, Proc Soc Antiq Scot 5 (1862-64), 247-279",
+   "author": "John Stuart",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/5132/5110/5101",
+   "licence_note": "Published 1865, out of copyright; open access PDF (OCR text). Stuart treats the passage as running west, so his cell directions are turned"
+  },
+  "childe_1956": {
+   "title": "Maes Howe, Proc Soc Antiq Scot 88 (1954-56), 155-172",
+   "author": "V G Childe",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/8467/8435/8422",
+   "licence_note": "Society of Antiquaries of Scotland open access PDF; text quotes. Childe also calls the passage direction 'west' (WNW and so on)"
+  },
+  "patat_2011": {
+   "title": "Horizon synthesis for archaeo-astronomical purposes, Astronomische Nachrichten (arXiv:1107.1957)",
+   "author": "F Patat",
+   "url": "https://arxiv.org/pdf/1107.1957",
+   "licence_note": "arXiv preprint; text quotes"
+  },
+  "stonesofwonder_brodgar": {
+   "title": "Ring of Brodgar, Orkney",
+   "author": "R Pollock, Stones of Wonder",
+   "url": "https://stonesofwonder.com/brodgar.htm",
+   "licence_note": "copyright; short quotes only"
+  },
+  "stonepages_brodgar": {
+   "title": "Ring of Brodgar stone circle and henge",
+   "author": "Stone Pages",
+   "url": "https://www.stonepages.com/scotland/ringofbrodgar.html",
+   "licence_note": "copyright; short quotes only"
+  },
+  "stonepages_maeshowe": {
+   "title": "Maes Howe passage grave",
+   "author": "Stone Pages",
+   "url": "https://www.stonepages.com/scotland/maeshowe.html",
+   "licence_note": "copyright; short quotes only"
+  }
+ },
+ "sites": {
+  "maeshowe": {
+   "name": "Maeshowe",
+   "record": "Q507076",
+   "about": "Maeshowe is a late Neolithic chambered cairn (passage grave), the type-site of the Maeshowe group, on Mainland Orkney: a grass-covered mound about 35 m across and 7 m high on a levelled oval platform, inside a wide flat-bottomed ditch and an outer bank. A long low passage from the south-west, lined in its inner part with huge single slabs and with a blocking stone in a recess, leads to a corbelled chamber about 4.6-4.7 m square with a tall standing stone inside a buttress in each corner and three raised side cells. Radiocarbon dates from the ditch put it around 2700 BC (the chamber may be earlier). Norsemen broke in through the roof in the 12th century and carved over 30 runic inscriptions. James Farrer opened it through the roof in 1861; the outer passage was rebuilt and the chamber was re-roofed (HES: a stone roof of the 1860s; Ness of Brodgar: a modern roof of 1910) with a concrete raft over it in the early 20th century. The original Neolithic masonry survives to about 3.8-4 m; everything above is modern. The setting midwinter sun shines along the passage.",
+   "reference_point": {
+    "what": "HES scheduled-monument grid reference for Maes Howe (the mound)",
+    "ngr": "HY 31829 12772",
+    "lat": 58.996606,
+    "lon": -3.188182,
+    "derived": true,
+    "how": "NGR converted to WGS84 with bidb.osgrid.to_latlon; agrees within 5 m with the centroid of OSM way 774967953 (mound outline, 58.996590, -3.188236)",
+    "cites": [
+     {
+      "source": "hes_sm90209",
+      "quote": "NGR HY 31829 12772"
+     }
+    ]
+   },
+   "facts": {
+    "mound_diameter_m": {
+     "value": 35,
+     "unit": "m",
+     "note": "diameter of the grass-covered mound",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "a grass-covered mound measuring approximately 35m in diameter and 7m high"
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "The grass-covered mound that encloses the tomb measures about 35 metres (115 ft) in diameter and rises to a height of 7.3 metres (24 ft)."
+      }
+     ],
+     "alt": [
+      {
+       "value": 92,
+       "unit": "ft",
+       "note": "Petrie's 1861 figure as reported by Stuart (28 m)",
+       "cites": [
+        {
+         "source": "stuart_1865",
+         "quote": "It is said by Mr Petrie to measure 92 feet in diameter, 36 feet in height, and about 300 feet in circumference."
+        }
+       ]
+      }
+     ]
+    },
+    "mound_height_m": {
+     "value": 7,
+     "unit": "m",
+     "note": "height of the mound; HES gives 7 m, Wikipedia 7.3 m. Petrie's 36 ft (11 m) in Stuart 1865 is probably a slant height and is not used",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "a grass-covered mound measuring approximately 35m in diameter and 7m high"
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "rises to a height of 7.3 metres (24 ft)"
+      }
+     ]
+    },
+    "enclosure_size_m": {
+     "value": [
+      80,
+      70
+     ],
+     "unit": "m",
+     "note": "the whole enclosure (platform, ditch and bank): sources disagree. HES: about 80 m N-S by 70 m E-W; Ness of Brodgar: oval c. 106 by 93 m. The OSM ditch outline (way 288905594) is 107 m at its longest (derived), closer to the Ness figure",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The entire enclosure measures about 80m north-south by 70m east-west."
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "creating an oval enclosure c.106 metres by 93 metres"
+      }
+     ]
+    },
+    "scheduled_area_m": {
+     "value": [
+      130,
+      120
+     ],
+     "unit": "m",
+     "note": "the scheduled area, elliptical, including a 10 m band outside the area in care (not the monument itself)",
+     "cites": [
+      {
+       "source": "hes_sm90209",
+       "quote": "It measures 130m NW-SE or thereabouts, and 120m NE-SW or thereabouts."
+      }
+     ]
+    },
+    "ditch_width_m": {
+     "value": 14,
+     "unit": "m",
+     "note": "ditch width (up to); its distance from the mound foot 15-21 m. Childe's 1954-55 sections: floor width 60 ft on the east, 25 ft on the south; Stuart (from Petrie) a trench 40 ft wide and 4-8 ft deep",
+     "cites": [
+      {
+       "source": "wp_maeshowe",
+       "quote": "Around the base of the mound runs a ditch located roughly 15 to 21 metres (49 to 69 ft) away and up to 14 metres (46 ft) wide."
+      },
+      {
+       "source": "childe_1956",
+       "quote": "its width on floor varies—60' on east, 25' on south"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "It is surrounded by a trench 40 feet wide, and averaging in depth from 4 to 8 feet."
+      }
+     ]
+    },
+    "ditch_depth_ft": {
+     "value": [
+      3,
+      4
+     ],
+     "unit": "ft",
+     "note": "depth of the rock-cut, flat-bottomed ditch floor below the natural clay outside (Childe's sections); filled with 2 ft 6 in of peat",
+     "cites": [
+      {
+       "source": "childe_1956",
+       "quote": "In both sections the floor of the ditch was only 3' to 4' below the surface of the natural grey clay outside it."
+      },
+      {
+       "source": "childe_1956",
+       "quote": "The ditch is filled with peat 2' 6\" deep."
+      }
+     ]
+    },
+    "bank_wall_thickness_m": {
+     "value": 2,
+     "unit": "m",
+     "note": "the outer bank was once a wall about 2 m thick and probably about as high (Richards 1991 excavation); present bank form is Norse",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The encircling bank was found to have once comprised a substantial wall, approximately 2m thick and probably of similar height."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The present form of the outer bank dates to the Norse period"
+      }
+     ]
+    },
+    "passage_length_m": {
+     "value": 15,
+     "unit": "m",
+     "note": "length of the entrance passage: sources disagree. HES c. 15 m; Stuart (1861 survey) nearly 54 ft (16.5 m) from chamber to its outer end; Wikipedia and Stone Pages about 11 m; Ness of Brodgar 10 m. The outer part was ruinous in 1861 and rebuilt, so the lengths measure different things",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "a long entrance-passage measuring c. 15m in length and up to 1.4m high"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "measures in length from the chamber to its extremity nearly 54 feet"
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "The entrance passage is about 11 metres (36 ft) long"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "The ten-metre-long entrance passage slopes slightly downwards towards the exterior"
+      }
+     ]
+    },
+    "passage_height_m": {
+     "value": 1.4,
+     "unit": "m",
+     "note": "passage height: HES up to 1.4 m; Stuart's inner passage 4 ft 4 in (1.32 m), 4 ft 8 in (1.42 m) at the chamber; Wikipedia about 0.91 m; the surviving roofed part of the outer passage 70 cm (Ness), 28 in / 71 cm (Petrie)",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "up to 1.4m high"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "and 4 feet 4 inches in height, and continues so for 26 feet"
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "The passage itself is only around 0.91 metres (3.0 ft) high"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "The innermost surviving section of the outer passage was roofed at a height of 70cm"
+      }
+     ]
+    },
+    "passage_widths_ft": {
+     "value": {
+      "mouth": 2.333,
+      "inner": 3.5,
+      "between_jambs": 2.417,
+      "at_chamber": 3.333
+     },
+     "unit": "ft",
+     "note": "Stuart's widths (1861): 2 ft 4 in at the outer mouth, 3 1/2 ft after the recess (OCR prints '3£'), narrowed to 2 ft 5 in by two upright slabs each 2 ft 4 in broad, 3 ft 4 in where it opens into the chamber",
+     "cites": [
+      {
+       "source": "stuart_1865",
+       "quote": "At its mouth on the west side the passage measured 2 feet 4 inches in width"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "when it is again narrowed by two upright stone slabs to 2 feet 5 inches. These slabs are each 2 feet 4 inches broad"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "where it measures 3 feet 4 inches in width by 4 feet 8 inches in height"
+      }
+     ]
+    },
+    "passage_slab_length_ft": {
+     "value": 18,
+     "unit": "ft",
+     "note": "the inner passage (recess to chamber) has sides, floor and roof of single huge flagstone slabs, one about 18 ft long; four megaliths line it",
+     "cites": [
+      {
+       "source": "stuart_1865",
+       "quote": "From this recess to the chamber, the sides, floor, and roof of the passage are formed by immense slabs of flagstone, one of them measuring about 18 feet in"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "another four lining the floor, walls and roof of the inner entrance passage"
+      }
+     ]
+    },
+    "slab_weight_t": {
+     "value": 30,
+     "unit": "t",
+     "note": "heaviest slabs (Wikipedia; no primary source given)",
+     "cites": [
+      {
+       "source": "wp_maeshowe",
+       "quote": "Some of these slabs weigh as much as 30 tons."
+      }
+     ]
+    },
+    "door_jamb_position_m": {
+     "value": 6,
+     "unit": "m",
+     "note": "the door jambs divide the passage about 6 m from the mound's perimeter",
+     "cites": [
+      {
+       "source": "ness_maeshowe",
+       "quote": "is divided into two sections by a door jamb about six metres from the mound’s perimeter"
+      }
+     ]
+    },
+    "passage_floor_slope": {
+     "value": "down outwards",
+     "unit": "",
+     "note": "the passage slopes slightly down towards the outside; present floor slightly higher than the original in the rebuilt outer part",
+     "cites": [
+      {
+       "source": "ness_maeshowe",
+       "quote": "The ten-metre-long entrance passage slopes slightly downwards towards the exterior"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "leading to the present floor levels being slightly higher"
+      }
+     ]
+    },
+    "chamber_side_m": {
+     "value": 4.6,
+     "unit": "m",
+     "note": "chamber side: Wikipedia and Stone Pages about 4.6 m; HES and Ness of Brodgar 4.7 m; Stuart about 15 ft (4.57 m) at floor level",
+     "cites": [
+      {
+       "source": "wp_maeshowe",
+       "quote": "leads to a central chamber that is almost square, measuring about 4.6 metres (15 ft) on each side"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "about 4.7m square by 4.5m high (it may originally have been higher)"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "the excavators found a well-built square chamber, 4.7 metres across"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "Maeshowe contained a central chamber about 15 feet square on the level of the floor, and 13 feet in height to the top of the present walls."
+      }
+     ]
+    },
+    "chamber_height_m": {
+     "value": 4.5,
+     "unit": "m",
+     "note": "chamber height today 4.5 m (HES); original masonry survives to at least 4 m (HES) or 3.8 m (Wikipedia); the original roof perhaps 4.6 m or more (Wikipedia) or 4.5-6 m (Ness)",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "about 4.7m square by 4.5m high (it may originally have been higher)"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The original Neolithic masonry survives up to at least 4m high internally"
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "Today the chamber stands about 3.8 metres (12 ft) high, reflecting the height of the surviving original stonework."
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "The height of the original roof is not known, although it could have been anything from 4.5m to 6m high."
+      }
+     ]
+    },
+    "chamber_wall_vertical_m": {
+     "value": 1.4,
+     "unit": "m",
+     "note": "height where the walls stop rising vertically and corbelling begins: Ness 1.4 m; Wikipedia about 0.91 m",
+     "cites": [
+      {
+       "source": "ness_maeshowe",
+       "quote": "The walls rise vertically to a height of 1.4 metres before they begin to slope inwards to finish in a corbelled roof."
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "At a height of about 0.91 metres (3.0 ft), the construction changes from flat slabs to overlapping stones"
+      }
+     ]
+    },
+    "buttress_size_ft": {
+     "value": {
+      "base": 3,
+      "height": [
+       9,
+       10
+      ]
+     },
+     "unit": "ft",
+     "note": "corner buttresses about 3 ft square at the base and 9-10 ft high, one side a single long slab (the standing stone)",
+     "cites": [
+      {
+       "source": "stuart_1865",
+       "quote": "on an average they are about 3 feet square at the base, and from 9 to 10 feet high. One side of each buttress is formed by a single long slab, the other sides of square stones."
+      }
+     ]
+    },
+    "cell_sill_height_m": {
+     "value": 0.8,
+     "unit": "m",
+     "note": "the side-cell openings are raised: Ness about 80 cm; Stuart about 3 ft; Stone Pages nearly 1 m. Openings about 2 1/2 ft square (Stuart; OCR prints '2|')",
+     "cites": [
+      {
+       "source": "ness_maeshowe",
+       "quote": "the side cells are not at ground level but about 80cm from chamber floor"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "entering from it by small doors in the wall at a height of about 3 feet from the floor"
+      },
+      {
+       "source": "stonepages_maeshowe",
+       "quote": "each of the other three walls contains a square hole nearly 1 m (3 ft) above the ground"
+      }
+     ]
+    },
+    "masonry_concrete_raft_m": {
+     "value": 9,
+     "unit": "m",
+     "note": "the early 20th-century concrete raft over the roof, domed, about 9 m across (invisible from inside)",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the early 20th-century roof comprises a square raft of concrete, domed towards the centre, some 9m across"
+      }
+     ]
+    },
+    "rune_inscriptions": {
+     "value": 33,
+     "unit": "inscriptions",
+     "note": "Norse runic inscriptions in the chamber: at least 33, plus at least 8 sketches or motifs (HES); more than thirty (Wikipedia)",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The large collection of runes (at least 33 inscriptions, including twig runes and at least 8 sketches or motifs) date to the middle of the 12th century."
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "the visitors carved more than thirty runic inscriptions into the stone walls"
+      }
+     ]
+    },
+    "stone": {
+     "value": "flagstone (sandstone)",
+     "unit": "",
+     "note": "local flagstone; the four corner stones are sandstone",
+     "cites": [
+      {
+       "source": "wp_maeshowe",
+       "quote": "built from large slabs of local flagstone"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "four massive sandstone standing stones in each of the corners"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "mound",
+     "kind": "mound",
+     "diameter_m": 35,
+     "height_m": 7,
+     "material": "earth, clay and stone revetment walls over the chamber; no vertical outer kerb wall",
+     "state": "intact, turf-covered; summit disturbed by the Norse and 1861 entries",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The mound, which consists of earth, clay and stone revetment walls, covers the stone architecture of the chambered tomb and passage beneath."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the absence of a vertical wall-face to revet the outer edge of the mound"
+      }
+     ],
+     "osm": "way 774967953 (building=yes, ruins=yes; 45 m at its longest, derived)"
+    },
+    {
+     "id": "platform",
+     "kind": "platform",
+     "shape": "levelled oval, the mound near its northern end (Childe)",
+     "note": "the glacial knoll was levelled and enhanced with clay from the Loch of Harray",
+     "cites": [
+      {
+       "source": "childe_1956",
+       "quote": "the latter is an elongated oval rather than a circle in plan and the mound stands near its northern extremity"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "using clay from the Loch of Harray to create the oval platform we see today"
+      }
+     ]
+    },
+    {
+     "id": "ditch",
+     "kind": "ditch",
+     "width_m": "up to 14",
+     "distance_from_mound_m": [
+      15,
+      21
+     ],
+     "profile": "flat-bottomed, cut to blue rock, peat-filled",
+     "causeway": "none",
+     "cites": [
+      {
+       "source": "wp_maeshowe",
+       "quote": "Around the base of the mound runs a ditch located roughly 15 to 21 metres (49 to 69 ft) away and up to 14 metres (46 ft) wide."
+      },
+      {
+       "source": "childe_1956",
+       "quote": "the ditch is flat-bottomed and cut down to an impervious bed of blue rock"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "Maeshowe ’s enclosure, however, had no causeway across the ditch"
+      }
+     ],
+     "osm": "way 288905594 (barrier=ditch, the protected-area outline, 26 nodes)"
+    },
+    {
+     "id": "bank",
+     "kind": "bank",
+     "as_built": "a wall about 2 m thick and as high",
+     "now": "turf bank of Norse form; Childe found the turf dyke outside the ditch modern",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The encircling bank was found to have once comprised a substantial wall, approximately 2m thick and probably of similar height."
+      },
+      {
+       "source": "childe_1956",
+       "quote": "The turf dyke outside the ditch is quite modern"
+      }
+     ]
+    },
+    {
+     "id": "passage_outer",
+     "kind": "passage",
+     "section": "outer, from the mouth to the door jambs",
+     "width_ft_mouth": "2 ft 4 in",
+     "height_m_roofed_part": 0.7,
+     "state": "ruinous and mostly unroofed in 1861 (roof missing for about 22 1/2 ft), rebuilt after Farrer; original form uncertain, perhaps an open trench",
+     "cites": [
+      {
+       "source": "stuart_1865",
+       "quote": "At its mouth on the west side the passage measured 2 feet 4 inches in width"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "All but a two-metre section of the outer passage was found to be unroofed."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The outer section of the passage was found in a ruinous state by the excavators in 1861 and appears to have been reconstructed following Farrer’s investigations"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "It has been suggested that at least part of the outer passage took the form of an open trench"
+      }
+     ]
+    },
+    {
+     "id": "passage_inner",
+     "kind": "passage",
+     "section": "inner, megalith-lined, from the recess to the chamber",
+     "width_ft": 3.5,
+     "height_ft": "4 ft 4 in",
+     "length_ft": 26,
+     "construction": "sides, floor and roof each of immense single flagstone slabs (one about 18 ft long); widened and heightened at the door-checks",
+     "cites": [
+      {
+       "source": "stuart_1865",
+       "quote": "From this recess to the chamber, the sides, floor, and roof of the passage are formed by immense slabs of flagstone, one of them measuring about 18 feet in"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "and 4 feet 4 inches in height, and continues so for 26 feet"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "widening and heightening of passage part way along to form ‘door-checks’"
+      }
+     ]
+    },
+    {
+     "id": "blocking_stone",
+     "kind": "blocking stone",
+     "shape": "triangular, a little narrower than the passage, top lower than the passage roof (leaves a gap)",
+     "position": "now in the triangular recess (about 2 ft deep) in the north side of the inner passage, just inside the door jambs; found lying in the passage in 1861",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Inside the door jambs is a triangular recess, shown clearly in drawings in 1861; it is now filled with a large blocking stone, recorded by Farrer as lying in the passage at the time of excavation."
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "there is a triangular recess in the wall, about 2 feet deep"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "The triangular stone, which is only slightly narrower than the width of the passage, fitted perfectly into the recess"
+      },
+      {
+       "source": "ness_maeshowe_solstice",
+       "quote": "The top of the huge stone is lower than the passage roof so, when in place, it left a distinct gap."
+      }
+     ]
+    },
+    {
+     "id": "chamber",
+     "kind": "chamber",
+     "plan": "square",
+     "side_m": [
+      4.6,
+      4.7
+     ],
+     "height_m_now": 4.5,
+     "original_masonry_to_m": [
+      3.8,
+      4
+     ],
+     "roof": "corbelled; above about 4 m it is a 19th/20th-century rebuild with a concrete raft over it",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "about 4.7m square by 4.5m high (it may originally have been higher)"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the upper part now comprises a stone roof built in the 1860s and above this (invisible to view) a concrete ‘raft’ added in the early 20th century"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "Maeshowe ’s present roof is a modern one, installed in 1910, when the monument was taken into state care."
+      }
+     ],
+     "note": "HES dates the present stone roof to the 1860s (the landowner resealed the tomb after Farrer), Ness of Brodgar to 1910; both may be right for different parts"
+    },
+    {
+     "id": "buttresses",
+     "kind": "corner buttress",
+     "count": 4,
+     "base_ft": 3,
+     "height_ft": [
+      9,
+      10
+     ],
+     "construction": "each a tall standing stone set first, then encased in a pier of smaller stones; structurally unnecessary",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "four massive sandstone standing stones in each of the corners, each encased in a pier or corner-block of smaller stones"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "Four can be seen in the central chamber – one in each corner"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "on an average they are about 3 feet square at the base, and from 9 to 10 feet high"
+      }
+     ]
+    },
+    {
+     "id": "cells",
+     "kind": "side cell",
+     "count": 3,
+     "walls": "north-east, south-east and north-west (the three walls other than the entrance)",
+     "sizes_ft": {
+      "Stuart 'north'": [
+       5.75,
+       4.5
+      ],
+      "Stuart 'east'": [
+       5.5,
+       4.5
+      ],
+      "Stuart 'west'": [
+       7,
+       4.5
+      ]
+     },
+     "height_ft": 3,
+     "construction": "roof, floor and back wall each a single slab; openings raised about 0.8-0.9 m",
+     "blocking_stones": "a large stone lies on the chamber floor outside each cell, thought to have closed it",
+     "cites": [
+      {
+       "source": "ness_maeshowe",
+       "quote": "three side-chambers in the north-east, south-east and north-west walls"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "The cell on the north measures 5 feet 9 inches by 4 feet 6 inches; that on the east measures 5 feet 6 inches by 4 feet 6 inches"
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "while that on the west measures 7 feet by 4 feet 6 inches. Their height is about 3 feet."
+      },
+      {
+       "source": "stuart_1865",
+       "quote": "The roofs, floors, and back walls of the cells are each formed by a single slab of stone"
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "A single large stone lies outside each of the cells, thought to have been used to seal the chambers."
+      }
+     ],
+     "note": "Stuart takes the passage as running west, so his 'north', 'east' and 'west' cells are those on the walls opposite and either side of the entrance (his own list says north, south and east in one sentence and north, east, west in the next); map them by the Ness wall directions"
+    },
+    {
+     "id": "runes",
+     "kind": "inscriptions",
+     "count": "at least 33 + at least 8 sketches",
+     "date": "mid 12th century",
+     "where": "chamber walls",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The large collection of runes (at least 33 inscriptions, including twig runes and at least 8 sketches or motifs) date to the middle of the 12th century."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the famous ‘Maeshowe Dragon’ or lion"
+      }
+     ]
+    },
+    {
+     "id": "rear_stone_socket",
+     "kind": "stone socket",
+     "position": "behind (to the rear of) the mound",
+     "state": "socket only; the stone was removed",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Richards’ excavations located an earlier socket for a standing stone to the rear of the mound, which was subsequently removed."
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "winter solstice sunset",
+     "claim": "The passage faces south-west towards the hills of Hoy; for almost three weeks either side of midwinter the setting sun shines along the passage, and at the solstice its light moves across the rear wall of the chamber.",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The passage into the central chamber is orientated towards the hills of Hoy and the setting of the sun on the Midwinter Solstice."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Each year at and for almost three weeks on either side of midwinter, the rays of the setting sun shine along the passage and on the midwinter solstice itself move across the rear wall of the main chamber."
+      }
+     ]
+    },
+    {
+     "event": "passage azimuth",
+     "azimuth_deg": 221,
+     "claim": "Ruggles gives 221 degrees for the mean axis of the inner passage, more in line with sunsets about three weeks before or after the solstice than with the solstice itself. The OSM positions give Maeshowe to the Barnhouse Stone as 221.4 degrees, 805 m (derived from OSM way 774967953 centroid and node 5522405525).",
+     "cites": [
+      {
+       "source": "ness_maeshowe_solstice",
+       "quote": "the mean axis of the inner part of the passage (azimuth 221°) was more in line with sunsets some three weeks earlier or later"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the passage is not centrally aligned with the setting sun and would not have been in the past"
+      }
+     ]
+    },
+    {
+     "event": "solstice sunset azimuth and the light window",
+     "azimuth_deg": 216.8,
+     "claim": "Over the SRTM horizon the solstice sun sets at azimuth 216.8 (disc centre) at horizon altitude 1.3 degrees; the sun can light the back of the chamber between about 217 and 223 degrees (Reijs 1998).",
+     "cites": [
+      {
+       "source": "patat_2011",
+       "quote": "This turns out to be 216◦ .8 (disk center), and the horizon altitude is 1◦ .3"
+      },
+      {
+       "source": "patat_2011",
+       "quote": "As minimum and maximum azimuths for which the sun can shine on the back of the chamber are approximately 217◦ and 223◦ (Reijs 1998)"
+      }
+     ]
+    },
+    {
+     "event": "reappearing sun behind Ward Hill",
+     "claim": "About twenty days before and after the solstice the sun sets behind Ward Hill on Hoy (about 14 km SW), reappears for a couple of minutes at azimuth about 223 degrees, and briefly lights the chamber again.",
+     "cites": [
+      {
+       "source": "patat_2011",
+       "quote": "Around twenty days before (and after) the winter solstice, the sun sets below the horizon defined by Ward Hill, placed at about 14 km SW of Maes Howe."
+      },
+      {
+       "source": "patat_2011",
+       "quote": "The sun reappears for a couple of minutes at an azimuth around 223◦"
+      },
+      {
+       "source": "ness_maeshowe_solstice",
+       "quote": "This brief return of the sun also casts its light within the chamber for about a minute."
+      }
+     ]
+    },
+    {
+     "event": "Barnhouse Stone as marker",
+     "claim": "The Barnhouse Stone stands on the line of the passage to the south-west and marks the midwinter sunset behind Ward Hill. Distance: HES 800 m (SoS); Ness of Brodgar 750 m and 760 m; Wikipedia 700 m. OSM gives 805 m (derived).",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the alignment with the Barnhouse Stone c. 800m to the south-southwest, which acts as a marker for alignment with the setting of the midwinter sun behind Ward Hill on Hoy"
+      },
+      {
+       "source": "hes_sm90341",
+       "quote": "The stone stands on the projected line of the passage of the nearby chambered tomb of Maes Howe."
+      },
+      {
+       "source": "ness_barnhouse_stone",
+       "quote": "the wedge-shaped monolith is aligned to entrance of Maeshowe , around 750 metres to the north-east"
+      },
+      {
+       "source": "ness_maeshowe_solstice",
+       "quote": "Standing around 760 metres to the south-west of Maeshowe , and aligned to its entrance, is the Barnhouse stone ."
+      },
+      {
+       "source": "wp_maeshowe",
+       "quote": "the so-called \"Barnhouse Stone\" in a field around 700 metres away is perfectly aligned with the entrance to Maeshowe"
+      }
+     ]
+    },
+    {
+     "event": "1893 observation",
+     "claim": "Magnus Spence (1893) read the passage-Barnhouse line as pointing to sunset some ten days before the winter solstice and, the other way, to midsummer sunrise.",
+     "cites": [
+      {
+       "source": "ness_maeshowe_solstice",
+       "quote": "points in a south-westerly direction to the point where the sun sets some ten days before the winter solstice"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "earlier structure",
+     "date": "before the tomb",
+     "what": "an earlier building and a standing-stone socket under and behind the mound; its entrance may have set the passage orientation",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the entrance of the earlier structure seems to have influenced the orientation of the later passage grave"
+      }
+     ]
+    },
+    {
+     "name": "tomb, platform, ditch and bank",
+     "date": "c. 2700 BC (ditch date; chamber perhaps c. 3000 BC)",
+     "what": "four corner stones raised first, chamber and passage built round them, mound heaped over",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The mound, chamber and surrounding bank and ditch were probably all built around 2700 BC."
+      },
+      {
+       "source": "ness_maeshowe",
+       "quote": "We do not know when Maeshowe was constructed, although these days it is generally accepted as being around 3000BC."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "The primary phase of tomb construction would have been the four large uprights, or standing stones, which form the corners of the central chamber."
+      }
+     ]
+    },
+    {
+     "name": "Norse bank and entry",
+     "date": "9th century; 1150s",
+     "what": "outer bank altered in the 9th century; Norsemen broke in through the top of the mound in the 12th century and carved runes",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Evidence suggests that the outer bank was altered and strengthened in 9th century"
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Norsemen under Harald Maddadarson (Orkneyinga Saga) broke into the tomb, via the top of the mound, in 1153 AD."
+      }
+     ]
+    },
+    {
+     "name": "Farrer's opening",
+     "date": "1861",
+     "what": "opened through the corbelled roof; outer passage damaged and rebuilt; resealed with a reconstructed corbelled roof",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "He opened the tomb via the top of the mound, breaking through the corbelled roof."
+      },
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Following Farrer's investigations the tomb was resealed by the landowner, with a reconstructed corbelled structure."
+      }
+     ]
+    },
+    {
+     "name": "state care",
+     "date": "1910 and early 20th century",
+     "what": "in state care from 1910; concrete raft over the roof",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "It passed into state care in 1910"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Whether the chamber, ditch and bank were one build: the only radiocarbon date (c. 2700 BC) is from the ditch, which may be centuries later than the chamber.",
+     "cites": [
+      {
+       "source": "ness_maeshowe",
+       "quote": "Although there is little doubt the ditch was dug around 2700BC, it may have been added centuries after the chamber’s construction."
+      }
+     ]
+    },
+    {
+     "claim": "The original outer passage (roofed or an open trench, longer and narrower) and so how much midwinter light reached the chamber in the Neolithic is uncertain.",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "the passage may have originally been longer and narrower"
+      },
+      {
+       "source": "ness_maeshowe_solstice",
+       "quote": "Because the original form of the outer passage remains unclear, how the midwinter sunsets affected Maeshowe in the Neolithic remains a topic of debate."
+      }
+     ]
+    }
+   ]
+  },
+  "stenness": {
+   "name": "Stones of Stenness",
+   "record": "Q1478558",
+   "about": "A Neolithic henge and stone circle on the Stenness promontory, built c. 3000-2900 cal BC and among the earliest henges in the British Isles. A rock-cut ditch with a single causeway on the north (an outer bank, now rebuilt) encloses a platform about 44 m across with an elliptical ring (about 32 by 30 m) of very thin, tall flagstone slabs, planned as 12 but probably never complete (no stone in hole 12, none likely in 9). Four stones stand: 2, 3 and 5 (5 to 5.7 m) and the short stone 7; stumps 4, 8, 10 and 11 survive; 1 and 6 are empty holes. In the centre is a square stone hearth (2.1 by 1.9 m). In December 1814 a tenant farmer felled stone 5, broke up stone 6 and destroyed the holed Odin Stone outside the circle. In 1906-07 stone 5 was re-erected, stone 7 was found and set up in concrete and a spurious 'dolmen' was built north of the hearth; its capstone was pushed over in 1972 and the 1973-74 excavation (Ritchie) left it lying. The bank was rebuilt in 1985 to its 1851 form. Outliers: the Watch Stone (5.5-5.6 m) by the Brig o' Brodgar and the Barnhouse Stone.",
+   "reference_point": {
+    "what": "HES scheduled-monument grid reference for the stone circle and henge",
+    "ngr": "HY 30675 12501",
+    "lat": 58.993987,
+    "lon": -3.208176,
+    "derived": true,
+    "how": "NGR converted with bidb.osgrid.to_latlon; about 6 m from the centroid of the OSM ring outline way 782724929 (58.994039, -3.208079) and from the OSM hearth outline way 774960021",
+    "cites": [
+     {
+      "source": "hes_sm90285",
+      "quote": "NGR HY 30675 12501"
+     }
+    ]
+   },
+   "facts": {
+    "ring_diameter_m": {
+     "value": 32,
+     "unit": "m",
+     "note": "the stone ring is an ellipse: Wikipedia about 32 m; Ritchie gives 'some 30 m' as a circle and fits an ellipse in Appendix 8 (Curtis): a 39 : 36 MY Pythagorean ellipse, which at Thom's 0.8297 m is 32.4 by 29.9 m (derived)",
+     "cites": [
+      {
+       "source": "wp_stenness",
+       "quote": "laid out in an ellipse about 32 m (105 ft) diameter on a levelled platform of 44 m (144 ft) diameter"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "stand on the perimeter of a circle with a diameter of some 30 m"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "having sides in the proportions 13 : 12 : 5 or 39 : 36 : 15 MY"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "The ellipses provide significantly better fits than the circles."
+      }
+     ]
+    },
+    "ring_major_axis_orientation_deg": {
+     "value": -20,
+     "unit": "deg",
+     "note": "major axis about 20 deg (plus or minus 10) west of true north, i.e. azimuth about 340",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "the orientation of the major axis can only be indicated as about 20° ±10 West of true North"
+      }
+     ]
+    },
+    "stone_spacing": {
+     "value": 30,
+     "unit": "deg",
+     "note": "12 positions about 30 degrees apart; the reliable stones are within 4.5 degrees of that pattern",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "it is found that the remaining stones are all within 4-5° of this regular 30° pattern"
+      }
+     ]
+    },
+    "platform_diameter_m": {
+     "value": 44,
+     "unit": "m",
+     "note": "the levelled platform / enclosure inside the ditch",
+     "cites": [
+      {
+       "source": "wp_stenness",
+       "quote": "on a levelled platform of 44 m (144 ft) diameter"
+      },
+      {
+       "source": "ness_stenness",
+       "quote": "the circular enclosure has an approximate diameter of 44 metres"
+      }
+     ]
+    },
+    "ditch_width_m": {
+     "value": 4,
+     "unit": "m",
+     "note": "ditch: Ritchie's rock-cut base about 4 m wide and 1 m into rock, sections about 2.3 m deep in all; Ness of Brodgar 4 m wide and 2.3 m deep; Wikipedia 7 m wide and up to 2 m into rock (probably the width at the top)",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "its base was cut into the solid rock to a depth of about 1 -0 m over a width of some 4-0 m"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "The ditch sections were in all about 2-3 m in depth"
+      },
+      {
+       "source": "ness_stenness",
+       "quote": "Surrounded by a flat-bottomed, rock-cut ditch, four metres wide and 2.3 metres deep"
+      },
+      {
+       "source": "wp_stenness",
+       "quote": "The ditch is cut into rock by as much as 2 m (6.6 ft) and is 7 m (23 ft) wide"
+      }
+     ]
+    },
+    "causeway": {
+     "value": 8,
+     "unit": "m",
+     "note": "single entrance causeway across the ditch on the north (Ritchie: N quadrant, the geophysics NW quadrant); Ness: c. 8 m wide; a possible second, southern entrance from geophysics only",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "an inner ditch with a single causeway in the N quadrant"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "the ditch surrounding the stone circle was broken by only one entrance-causeway, which was situated in the NW quadrant"
+      },
+      {
+       "source": "ness_stenness",
+       "quote": "a single, c. eight-metre-wide entrance, to the north"
+      }
+     ]
+    },
+    "bank": {
+     "value": 1,
+     "unit": "m",
+     "note": "outer bank: about a metre high in the mid 19th century; ploughed out; present bank rebuilt in 1985 to the 1851 form",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "when the bank was described as being about a metre in height"
+      },
+      {
+       "source": "hes_sos_stenness",
+       "quote": "the present form reflects rebuilding in 1985, to the form recorded in 1851"
+      }
+     ]
+    },
+    "stones_planned": {
+     "value": 12,
+     "unit": "stones",
+     "note": "planned 12, but no socket for stone 12 and stone 9's hole too shallow: ten, eleven at most, were ever raised",
+     "cites": [
+      {
+       "source": "hes_sos_stenness",
+       "quote": "Today, four stones are standing (some re-erected) of a possible twelve."
+      },
+      {
+       "source": "hes_sos_stenness",
+       "quote": "no stone socket was located for ‘Stone 12’ and the socket for Stone 9 was so shallow that it was unlikely to ever have held a stone upright"
+      },
+      {
+       "source": "ness_stenness",
+       "quote": "only ten stones – eleven at the most – were ever raised"
+      }
+     ]
+    },
+    "stone_thickness_m": {
+     "value": 0.3,
+     "unit": "m",
+     "note": "the stones are thin blades with sharply angled tops (Ritchie's thicknesses 0.25-0.45 m)",
+     "cites": [
+      {
+       "source": "wp_stenness",
+       "quote": "The stones are thin slabs, approximately 30 cm (12 in) thick with sharply angled tops."
+      },
+      {
+       "source": "hes_sos_stenness",
+       "quote": "they are very tall and very thin blades of stone"
+      }
+     ]
+    },
+    "tallest_stone_m": {
+     "value": 5.7,
+     "unit": "m",
+     "note": "stone 2 (Ritchie); Ness says up to six metres, Wikipedia up to about 5 m",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "measuring 5-7 m in height, 1-4 m in breadth and up to 0-25 m in thickness"
+      },
+      {
+       "source": "ness_stenness",
+       "quote": "standing at a maximum height of six metres"
+      },
+      {
+       "source": "wp_stenness",
+       "quote": "Four, up to about 5 m (16 ft) high"
+      }
+     ]
+    },
+    "socket_depth_m": {
+     "value": [
+      0.7,
+      1.2
+     ],
+     "unit": "m",
+     "note": "deep, well-packed sockets",
+     "cites": [
+      {
+       "source": "ness_stenness",
+       "quote": "Erected in deep, well-packed sockets (0.7-1.2 metres)"
+      }
+     ]
+    },
+    "stone_sources": {
+     "value": 5,
+     "unit": "sources",
+     "note": "the monoliths came from at least five sources, one at Vestra Fiold",
+     "cites": [
+      {
+       "source": "hes_sos_stenness",
+       "quote": "The stone monoliths were derived from at least five different sources, one of which was Vestra Fiold"
+      }
+     ]
+    },
+    "height_od_m": {
+     "value": 4.0,
+     "unit": "m",
+     "note": "ground level at the circle above Ordnance Datum",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "situated in a level arable field close to the shore at a height of about 4-0 m OD"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "stone_1",
+     "kind": "stone",
+     "number": 1,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "lost; stone-hole only (at least 2.2 by 1.7 m, 0.9 m deep; base of upright about 0.9 by 0.4 m)",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stonehole 1 measured at least 2-2 m by 1 -7 m and 0-9 m in depth"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "the original position and approximate dimensions of the base of the upright (0-9 m in breadth and 0-4 m in thickness)"
+      }
+     ]
+    },
+    {
+     "id": "stone_2",
+     "kind": "stone",
+     "number": 2,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "standing (original), leans slightly inwards",
+     "height_m": 5.7,
+     "breadth_m": 1.4,
+     "thickness_m": 0.25,
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stone 2, now leaning slightly inwards, is the tallest and perhaps the shapeliest of the surviving stones of the circle, measuring 5-7 m in height, 1-4 m in breadth and up to 0-25 m in thickness."
+      }
+     ]
+    },
+    {
+     "id": "stone_3",
+     "kind": "stone",
+     "number": 3,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "standing (original), leans slightly outwards",
+     "height_m": 5.3,
+     "breadth_m": 1.35,
+     "thickness_m": 0.38,
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stone 3 is 5-3 m in height, 1-35 m in breadth and up to 0-38 m in thickness; this monolith leans slightly outwards."
+      }
+     ]
+    },
+    {
+     "id": "stone_4",
+     "kind": "stone",
+     "number": 4,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "stump in a deep stone-hole",
+     "height_m": 0.57,
+     "breadth_m": 0.8,
+     "thickness_m": 0.3,
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stone 4 survived as a substantial stump measuring 0-57 m in height, 0-8 m in breadth and 0-3 m in thickness"
+      }
+     ]
+    },
+    {
+     "id": "stone_5",
+     "kind": "stone",
+     "number": 5,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "standing, re-erected 1906 in its original hole (felled December 1814); 5.5 m long, 9-10 tons",
+     "height_m": 4.8,
+     "breadth_m": 1.55,
+     "thickness_m": 0.45,
+     "restored": true,
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "this stone, toppled in December 1814, measured 5-5 m in length, and weighed between 9 and 10 tons"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "As it stands at present, stone 5 measures 4-8 m in height, 1-55 m in breadth and 0-45 m in thickness."
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "A contemporary photograph shows the completed re-erection on 31 August 1906"
+      }
+     ]
+    },
+    {
+     "id": "stone_6",
+     "kind": "stone",
+     "number": 6,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "lost: broken up December 1814; stone-hole about 2.2 by 1.6 m",
+     "cites": [
+      {
+       "source": "ness_stenness_2",
+       "quote": "Before he was stopped, he had toppled one megalith (Stone Five) and smashed another (Stone Six)."
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "The former measured about 2-2 m by 1-6 m and 0-7 m in average depth"
+      }
+     ]
+    },
+    {
+     "id": "stone_7",
+     "kind": "stone",
+     "number": 7,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "standing but doubtful: found lying in 1906 and set up in a concrete raft by the entrance causeway; ill-shaped, perhaps a broken piece",
+     "height_m": 2.0,
+     "thickness_m": 0.1,
+     "restored": true,
+     "note": "height 2 m above the concrete (Ritchie), 1.8 m (Ness), 'about 6 1/2 feet' (Spence 1906, quoted by Ness)",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stone 7, discovered and erected in 1906, is firmly embedded in a concrete raft; the stone now stands to a height of 2 m above it and measures on average about 0-1 m in thickness."
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "Spence (1906, 63, fig 2) recorded that its original height was 9 feet (2-74 m)."
+      },
+      {
+       "source": "ness_stenness_2",
+       "quote": "It was raised in the socket-hole but the inclusion of the 1.8-metre-high megalith was contentious."
+      }
+     ]
+    },
+    {
+     "id": "stone_8",
+     "kind": "stone",
+     "number": 8,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "stump (0.4 m), by the entrance causeway opposite stone 7",
+     "height_m": 0.4,
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "The stump of stone 8 stands to a height of 0-4 m and is a feature of several early views of the circle."
+      }
+     ]
+    },
+    {
+     "id": "stone_9",
+     "kind": "stone",
+     "number": 9,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "empty hole (about 1.6 by 1.6 m, 0.75 m deep), backfilled; probably never held a stone",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stone-hole 9 was about 1-6 m by 1-6 m (though the W side was not excavated as it was covered by a balk) and about 0-75 m in depth."
+      }
+     ]
+    },
+    {
+     "id": "stone_10",
+     "kind": "stone",
+     "number": 10,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "stump below ground (found under turf)",
+     "breadth_m": 1.09,
+     "thickness_m": 0.4,
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "Stone 10 was a severely laminated slab measuring about 1 -09 m in breadth by 0-4 m in thickness and at least 0-3 m in height"
+      }
+     ]
+    },
+    {
+     "id": "stone_11",
+     "kind": "stone",
+     "number": 11,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "stump below ground (found under turf)",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "the stump itself measured only 0-81 m in length and 0-1 m in thickness and protruded for about 0-3 m"
+      }
+     ]
+    },
+    {
+     "id": "stone_12",
+     "kind": "stone",
+     "number": 12,
+     "numbering": "Ritchie 1976 (HES uses the same)",
+     "state": "never erected: only a slight hollow",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "There is likewise no good evidence for stone no. 12"
+      }
+     ]
+    },
+    {
+     "id": "hearth",
+     "kind": "central hearth",
+     "size_m": [
+      2.1,
+      1.9
+     ],
+     "construction": "almost square setting of four massive stones (up to 0.5 m broad, 0.3 m deep) in bedding trenches; cremated bone, charcoal, Grooved Ware",
+     "osm": "way 774960021 (historic=stone, at the ring centre, 3.2 m diagonal, derived)",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "In the centre of the site was discovered an almost square setting of four massive stones enclosing an area 2-1 m by 1-9 m"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "The blocks, measuring up to 0-5 m in breadth and 0-3 m in depth, seem to have been carefully set into bedding trenches."
+      }
+     ]
+    },
+    {
+     "id": "dolmen",
+     "kind": "modern reconstruction",
+     "now": "two low angular uprights standing side by side with a large slab lying beside them, midway between the hearth and the causeway",
+     "history": "one upright stood and its partner lay with the slab on it before 1906; built into a 'dolmen' (third leg added) in 1906-07; capstone pushed over in 1972; left lying after the 1973-74 excavation",
+     "capstone_m": [
+      2.74,
+      1.99,
+      0.16
+     ],
+     "cites": [
+      {
+       "source": "ness_stenness_2",
+       "quote": "roughly midway between the central hearth and the entrance causeway are two angular, flat-topped, stones, standing side by side, with a large prone slab beside them"
+      },
+      {
+       "source": "ness_stenness_2",
+       "quote": "The fallen stone was raised again, a third support added and the prone slab placed on top."
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "The capstone of this 'dolmen' was pushed over in October 1972."
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "the former 'capstone', measures up to 2-74 m by 1-99 m and 0-16 m in thickness"
+      },
+      {
+       "source": "hes_sos_stenness",
+       "quote": "Early 20th-century works involve erection of spurious ‘dolmen’, now reconfigured"
+      }
+     ],
+     "note": "Ritchie: October 1972; Ness of Brodgar: September 1972. Ritchie dates the dolmen's building to 1907"
+    },
+    {
+     "id": "twin_stone_holes",
+     "kind": "stone sockets",
+     "position": "north of the hearth, parallel to the causeway, linked to it by a slab path; with traces of a small timber structure north of them",
+     "cites": [
+      {
+       "source": "ness_stenness",
+       "quote": "To the north of the hearth, and running parallel to the entrance causeway, excavators found the sockets for a pair of standing stones."
+      }
+     ]
+    },
+    {
+     "id": "ditch",
+     "kind": "ditch",
+     "width_m": 4,
+     "depth_m": 2.3,
+     "rock_cut_m": 1.0,
+     "profile": "flat rock floor; waterlogged",
+     "causeway": "one, north",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "its base was cut into the solid rock to a depth of about 1 -0 m over a width of some 4-0 m"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "an inner ditch with a single causeway in the N quadrant"
+      }
+     ]
+    },
+    {
+     "id": "bank",
+     "kind": "bank",
+     "now": "rebuilt 1985 to the form of 1851 (south-west arc best preserved in 1848)",
+     "cites": [
+      {
+       "source": "hes_sos_stenness",
+       "quote": "the outer bank of this henge monument was largely destroyed by ploughing; the present form reflects rebuilding in 1985, to the form recorded in 1851"
+      }
+     ]
+    },
+    {
+     "id": "watch_stone",
+     "kind": "outlying standing stone",
+     "height_m": 5.6,
+     "breadth_m": 1.5,
+     "thickness_m": 0.46,
+     "position": "by the Brig o' Brodgar, 170 m NNW of the circle (Ritchie)",
+     "partner": "stump of a second stone found 1930: 12.8 m SSW (Ritchie), about 13 m SW (Ness), about 7.5 m SW per the OS (HES); 1.4 m by 0.13 m, at least 0.9 m high",
+     "osm": "node 1293208753 (184 m at azimuth 315 from the OSM ring centroid, derived)",
+     "cites": [
+      {
+       "source": "ness_watchstone",
+       "quote": "Measuring 5.6 metres high, 1.5 metres wide and 0.46m thick"
+      },
+      {
+       "source": "hes_sm90352",
+       "quote": "The Watch Stone is a sandstone monolith 5.5m tall."
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "the former 170 m to the NNW and the latter 700 m to the SE"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "The stump of another standing stone, situated about 12-8 m SSW of the Watch Stone, was discovered in 1930"
+      },
+      {
+       "source": "ness_watchstone",
+       "quote": "During roadworks in 1930, the stump of a second megalith was discovered around 13 metres to its south-west."
+      },
+      {
+       "source": "hes_sm90352",
+       "quote": "Its site is shown by the Ordnance Survey as about 7.5m SW of the Watch Stone"
+      }
+     ],
+     "note": "height 5.6 m (Ness, Wikipedia) or 5.5 m (HES)"
+    },
+    {
+     "id": "odin_stone",
+     "kind": "lost holed stone",
+     "height_m": 2.5,
+     "breadth_m": "just under 1",
+     "hole": "beside its western edge, about 0.9 m above ground",
+     "state": "destroyed December 1814; socket found by geophysics and excavation (1991 per HES, 1993 per Ness), 0.6 m deep, the southernmost of three",
+     "position": "north of the circle: c. 60 m (HES, Ness, 60 m NNW of the entrance); 'about one hundred and fifty yards' (Thomas 1852 via Ritchie)",
+     "osm": "node 9609087415 'Stone of Odin (probable site)' (108 m N of the OSM ring centroid, derived)",
+     "cites": [
+      {
+       "source": "ness_odin",
+       "quote": "It is generally accepted that the stone was approximately 2.5 metres high and just under a metre wide"
+      },
+      {
+       "source": "ness_odin",
+       "quote": "It was perforated by a hole beside its western edge about 0.9 metres from the ground."
+      },
+      {
+       "source": "hes_sos_stenness",
+       "quote": "including the famous holed Stone of Odin c.60m to the north"
+      },
+      {
+       "source": "ness_odin",
+       "quote": "revealed three standing stone sockets, around 60 metres to the north-north-west of the stone circle’s entrance"
+      },
+      {
+       "source": "ness_odin",
+       "quote": "The Odin Stone ’s socket, the southernmost of the three, was 0.6 metres deep, with the packing stones still in place."
+      },
+      {
+       "source": "hes_sos_stenness",
+       "quote": "the position of which was discovered in 1991"
+      },
+      {
+       "source": "ritchie_1976",
+       "quote": "about one hundred and fifty yards to the northward of the Ring of Stenness"
+      }
+     ]
+    },
+    {
+     "id": "barnhouse_stone",
+     "kind": "outlying standing stone",
+     "height_m": 3.2,
+     "thickness_m": 0.2,
+     "width_m": "1.1 at ground widening to 1.8 at 2.4 m up",
+     "position": "on the line of the Maeshowe passage; HES SM90341 NGR HY 31284 12174 (58.991149, -3.197479, derived)",
+     "osm": "node 5522405525",
+     "cites": [
+      {
+       "source": "hes_sm90341",
+       "quote": "stands some 3.2m high and is about 0.2m thick"
+      },
+      {
+       "source": "hes_sm90341",
+       "quote": "It expands upwards, from 1.1m wide at ground level to 1.8m wide at about 2.4m up."
+      },
+      {
+       "source": "hes_sm90341",
+       "quote": "NGR HY 31284 12174"
+      },
+      {
+       "source": "ness_barnhouse_stone",
+       "quote": "Standing 3.2 metres high (10.5ft)"
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "none established for the circle",
+     "claim": "No solar or lunar alignment of the ring itself is sourced here. HES notes the alignment of the central stone setting towards Maeshowe; the entrance faces the Barnhouse settlement.",
+     "cites": [
+      {
+       "source": "hes_sos_maeshowe",
+       "quote": "Other significant physical relationships are the alignments of the stone setting within the circle at Stones of Stenness"
+      },
+      {
+       "source": "wp_stenness",
+       "quote": "The entrance faces towards the Neolithic Barnhouse Settlement"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "henge and stone ring",
+     "date": "3000-2900 cal BC (HES); about 2900 BC (Bayliss et al. 2017 via Ness); work begun by 3100 BC (Wikipedia, older dates)",
+     "what": "ditch, platform, ring and hearth; perhaps preceded by a building and timber posts",
+     "cites": [
+      {
+       "source": "hes_sos_stenness",
+       "quote": "constructed between 3000-2900 cal BC"
+      },
+      {
+       "source": "ness_stenness",
+       "quote": "a reanalysis of Orcadian radiocarbon dates suggested a later date – around 2900BC"
+      },
+      {
+       "source": "wp_stenness",
+       "quote": "Based on radiocarbon dating, it is thought that work on the site had begun by 3100 BCE."
+      }
+     ]
+    },
+    {
+     "name": "Iron Age pits",
+     "date": "c. 50 BC - AD 300",
+     "what": "five pits south of the hearth",
+     "cites": [
+      {
+       "source": "ness_stenness",
+       "quote": "South of the central hearth, excavation revealed five pits containing Iron Age pottery sherds and burnt cereal grains."
+      }
+     ]
+    },
+    {
+     "name": "1814 destruction",
+     "date": "December 1814",
+     "what": "Odin Stone destroyed, stone 5 felled, stone 6 broken up",
+     "cites": [
+      {
+       "source": "ness_stenness_2",
+       "quote": "Before he was stopped, he had toppled one megalith (Stone Five) and smashed another (Stone Six)."
+      }
+     ]
+    },
+    {
+     "name": "Office of Works restoration",
+     "date": "1906-07",
+     "what": "stone 5 re-erected, stone 7 found and erected, 'dolmen' built",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "in the third period, between 1906 and 1907, stone no. 5 was re-erected, stone no. 7 was discovered and erected, and the 'dolmen' was put up"
+      }
+     ]
+    },
+    {
+     "name": "dolmen toppled and excavation",
+     "date": "1972; 1973-74",
+     "what": "capstone pushed over; Ritchie's excavation; the stones left lying",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "The capstone of this 'dolmen' was pushed over in October 1972."
+      }
+     ]
+    },
+    {
+     "name": "bank rebuilt",
+     "date": "1985",
+     "what": "outer bank rebuilt to its 1851 form",
+     "cites": [
+      {
+       "source": "hes_sos_stenness",
+       "quote": "the present form reflects rebuilding in 1985, to the form recorded in 1851"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Was the ring ever finished? Ritchie found no clear evidence that holes 9 and 12 ever held stones.",
+     "cites": [
+      {
+       "source": "ritchie_1976",
+       "quote": "in the case of two holes there is no clear evidence that the hole or space was ever filled"
+      }
+     ]
+    },
+    {
+     "claim": "Bank or wall: Richards suggests the 'bank' was the foundation of an enclosure wall.",
+     "cites": [
+      {
+       "source": "ness_stenness",
+       "quote": "He proposed that the clay band encountered in the 1970s was actually the foundation spread for an enclosure wall"
+      }
+     ]
+    },
+    {
+     "claim": "The stones' angular tops may be due to incorrect re-erection; the original form of the 'dolmen' stones is unknown.",
+     "cites": [
+      {
+       "source": "hes_sos_stenness",
+       "quote": "note the possibility that this may be due to incorrect re-erection"
+      }
+     ]
+    }
+   ]
+  },
+  "brodgar": {
+   "name": "Ring of Brodgar",
+   "record": "Q643631",
+   "about": "A late Neolithic henge and stone circle on the Ness of Brodgar isthmus between the Lochs of Stenness and Harray, the largest stone circle in Scotland and a near-perfect circle about 104 m across (103.6 m). It stands on a platform inside a rock-cut ditch about 123 m across (originally over 4 m deep and 10 m wide), crossed by two opposed causeways, north-west (about 3-3.4 m wide) and south-east (just over 1 m); no outer bank has been found. The ditch is dated to about 2600-2400 BC; the stones may be earlier or later. Thought to have held 60 stones (the 2008 tomography suggests more, not all at once), of thin flagstone from up to seven quarries in very shallow sockets. Today 27 stand (21 according to the HES Statement of Significance), from 2.1 to 4.7 m high, with stumps and fallen stones; most fallen stones were re-erected after the site came into state care in 1906 (1908 per Ness of Brodgar) and two have since been split by lightning. One stone carries a Norse runic inscription. Barrows (Salt Knowe, Fresh Knowe, Plumcake) and the Comet Stone stand around it; Thom read them as backsights of a lunar observatory, which is not accepted.",
+   "reference_point": {
+    "what": "ring centre, grid reference given by Stones of Wonder",
+    "ngr": "HY 29450 13361",
+    "lat": 59.001508,
+    "lon": -3.229764,
+    "derived": true,
+    "how": "NGR converted with bidb.osgrid.to_latlon. The HES scheduling NGR HY 29481 13296 (59.000929, -3.229204) is for the whole scheduled area and lies about 65 m south of the ring; the OSM area way 268713656 (centroid 59.001471, -3.229628) is the fenced site, not the ring",
+    "cites": [
+     {
+      "source": "stonesofwonder_brodgar",
+      "quote": "HY 29450 13361"
+     },
+     {
+      "source": "hes_sm90042",
+      "quote": "NGR HY 29481 13296"
+     }
+    ]
+   },
+   "facts": {
+    "ring_diameter_m": {
+     "value": 103.6,
+     "unit": "m",
+     "note": "diameter of the stone circle: 103.6 m (Ness of Brodgar size table), c. 103 m (HES SoS, Stones of Wonder), 104 m (Wikipedia; Ruggles 1999 via Patat); Stone Pages' 110 m is too large",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "With a diameter of 103.6m, the Ring of Brodgar is the larger of the two stone circles"
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "The stone circle has a diameter of c.103m"
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "The stone circle is 104 metres (341 ft) in diameter, and the third largest in the British Isles."
+      },
+      {
+       "source": "patat_2011",
+       "quote": "has a diameter of about 104 m, and is the third largest in the British Isles (Ruggles 1999)"
+      }
+     ]
+    },
+    "ditch_diameter_m": {
+     "value": 123,
+     "unit": "m",
+     "note": "diameter of the rock-cut ditch",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "its rock-cut ditch (c.123m diameter)"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "the 123-metre diameter ditch surrounding the circle of stone"
+      }
+     ]
+    },
+    "ditch_circumference_m": {
+     "value": 386,
+     "unit": "m",
+     "note": "ditch circumference: 386 m (Ness, Renfrew 1979), 380 m (Wikipedia)",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "to create the 386-metre-circumference ditch"
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "380 metres (1,250 ft) in circumference"
+      }
+     ]
+    },
+    "ditch_width_m": {
+     "value": 10,
+     "unit": "m",
+     "note": "original width at ground level: 10 m (HES, Ness); Wikipedia 9 m",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "at an original depth of around 4m and a width of 10m it would have been particularly impressive when freshly exposed"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "was originally over four metres deep and ten metres wide at ground level"
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "The stones are set within a circular ditch up to 3 metres (9.8 ft) deep, 9 metres (30 ft) wide"
+      }
+     ]
+    },
+    "ditch_depth_m": {
+     "value": 4,
+     "unit": "m",
+     "note": "original depth about 4 m (HES; Ness 'over four metres'); Wikipedia up to 3 m, Stone Pages 3.6 m; now largely silted",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "at an original depth of around 4m and a width of 10m"
+      },
+      {
+       "source": "stonepages_brodgar",
+       "quote": "once no less than 3.6 m (12 ft) deep and 9 m (30 ft) wide"
+      }
+     ]
+    },
+    "ditch_volume_m3": {
+     "value": 4700,
+     "unit": "m3",
+     "note": "rock quarried for the ditch (Renfrew 1979 via Ness)",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "An estimated 4,700 cubic metres (11,000 tonnes) of rock had to be quarried"
+      }
+     ]
+    },
+    "causeway_nw_width_m": {
+     "value": 3,
+     "unit": "m",
+     "note": "north-west causeway: 3 m (HES), 3.4 m (Ness)",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "two narrow opposed causeways in the northwest (3m wide) and southeast (just over 1m wide)"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "The south-eastern entrance is just over a metre wide, narrow compared to its 3.4-metre-wide north-western counterpart."
+      }
+     ]
+    },
+    "causeway_se_width_m": {
+     "value": 1,
+     "unit": "m",
+     "note": "south-east causeway, just over 1 m",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "two narrow opposed causeways in the northwest (3m wide) and southeast (just over 1m wide)"
+      }
+     ]
+    },
+    "bank": {
+     "value": 0,
+     "unit": "m",
+     "note": "no outer bank found in either excavation (1973, 2008); spoil probably went into the inner platform",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "no trace of a bank was identified in either phase of excavation"
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "It is likely that some of the material from the ditch was used to form the internal platform."
+      }
+     ]
+    },
+    "stones_original": {
+     "value": 60,
+     "unit": "stones",
+     "note": "thought to have held 60; the 2008 tomography found 19 possible extra sockets in the south-east half (36 positions there), so more than 70 may have stood, not necessarily at once",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "it is thought to have originally incorporated 60 monoliths"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "Including the surviving stones and stumps this meant 36 stones once stood in that section."
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "this suggests the Ring of Brodgar may have been made up of more than 70 megaliths, but – and this is an important point – not necessarily at the same time"
+      }
+     ]
+    },
+    "stones_standing": {
+     "value": 27,
+     "unit": "stones",
+     "note": "standing today: 27 (Ness, Wikipedia, Stones of Wonder: plus about 13 stumps); the HES Statement of Significance says 21 stand erect",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "Since then two stones have suffered lightning strikes, leaving 27 standing today."
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "The ring originally had up to 60 stones, of which only 27 remained standing at the end of the 20th century."
+      },
+      {
+       "source": "stonesofwonder_brodgar",
+       "quote": "There are now 27 stones of the ring upstanding, with about 13 stumps still also in position."
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "with 21 stones currently standing erect"
+      }
+     ]
+    },
+    "stone_heights_m": {
+     "value": [
+      2.1,
+      4.7
+     ],
+     "unit": "m",
+     "note": "range of heights; tallest stones at the south and west",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "varying in height from 2.1 metres to a maximum of 4.7 metres"
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "The tallest stones stand at the south and west of the ring"
+      }
+     ]
+    },
+    "stone_states_1848": {
+     "value": {
+      "upright": 13,
+      "fallen": 10,
+      "stumps": 13
+     },
+     "unit": "stones",
+     "note": "state before the restoration (Thomas 1848); 16 standing and 8 prone in 1792",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "By 1848, only 13 remained upright while ten lay “nearly perfect, but prostate” along with the “stumps or fragments of thirteen more”"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "by 1792, the ring contained 16 standing stones, with eight lying prone"
+      }
+     ]
+    },
+    "socket_depth_m": {
+     "value": [
+      0.18,
+      0.27
+     ],
+     "unit": "m",
+     "note": "the two sockets excavated in 2008 were extremely shallow",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "Two were excavated and measured a mere 27cm and 18cm deep."
+      }
+     ]
+    },
+    "stone_sources": {
+     "value": 7,
+     "unit": "sources",
+     "note": "up to seven lithologies; quarries at Houton, Staneyhill and Vestra Fiold identified",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "with potentially up to seven different stone sources represented"
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "three probable sources have been identified at Houton, Staneyhill, and Vestra Fiold"
+      }
+     ]
+    },
+    "spacing": {
+     "value": "regular, closer at the causeways",
+     "unit": "",
+     "note": "the stones are fairly regularly spaced but closer together beside the causeways",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "are apparently positioned more closely together in the groupings adjacent to the causeways"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "ring",
+     "kind": "stone circle",
+     "diameter_m": 103.6,
+     "shape": "near-perfect circle",
+     "stones_original": "60 (perhaps more)",
+     "standing": "27 (HES SoS: 21)",
+     "stone_numbering": "not found: no fetchable source gives Thom's or the HES/Canmore stone numbers with positions (see gaps). Stones of Wonder and Stone Pages count clockwise from the north-west entrance, the carvings being on stones 3, 4, 8 and 9",
+     "osm": "no individual stones mapped in OSM (only the site area, way 268713656, 16 nodes); stone positions must come from another survey",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "The standing stones form a near perfect circle"
+      },
+      {
+       "source": "stonesofwonder_brodgar",
+       "quote": "Going clockwise from the north-west entrance, the carvings are on stone 3 (runes, undeciphered), stone 4 (a cross), stone 8 (an anvil), and stone 9 (an ogham inscription)."
+      }
+     ]
+    },
+    {
+     "id": "ditch",
+     "kind": "ditch",
+     "diameter_m": 123,
+     "width_m": 10,
+     "depth_m": 4,
+     "profile": "rock-cut, deep, broad and flat-bottomed, dug in segments",
+     "now": "largely filled, water-logged",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "The ditch has filled in over millennia"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "It was deep, broad and flat bottomed and not dug in one continuous process."
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "the enormous ditch was originally dug out in segments"
+      }
+     ]
+    },
+    {
+     "id": "causeway_nw",
+     "kind": "causeway",
+     "position": "north-west",
+     "width_m": [
+      3,
+      3.4
+     ],
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "two narrow opposed causeways in the northwest (3m wide) and southeast (just over 1m wide)"
+      }
+     ]
+    },
+    {
+     "id": "causeway_se",
+     "kind": "causeway",
+     "position": "south-east",
+     "width_m": "just over 1",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "The south-eastern entrance is just over a metre wide"
+      }
+     ]
+    },
+    {
+     "id": "rune_stone",
+     "kind": "inscription",
+     "what": "Norse runic inscription (the name Bjorn) and a small cross; a second reported inscription no longer visible",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "a runic inscription (the name Bjorn) and a small cross"
+      },
+      {
+       "source": "stonepages_brodgar",
+       "quote": "they are on stones 3 (a runic inscription of the name Bjorn - probably a Norse visitor), 4 (a cross), 8 (an anvil), and 9 (an ogham inscription)"
+      }
+     ]
+    },
+    {
+     "id": "lightning_stones",
+     "kind": "damaged stones",
+     "what": "two stones split by lightning since the restoration (one HES-mentioned)",
+     "cites": [
+      {
+       "source": "ness_brodgar",
+       "quote": "Since then two stones have suffered lightning strikes, leaving 27 standing today."
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "at least one other has been struck by lightning"
+      }
+     ]
+    },
+    {
+     "id": "comet_stone",
+     "kind": "outlying standing stone",
+     "height_m": 1.75,
+     "position": "140 m east of the ring (Ness); 137 m SE (Stone Pages); on an oval mound about 13 by 12 m, with two stumps beside it",
+     "osm": "node 1291972590 'The Comet Stone'",
+     "cites": [
+      {
+       "source": "ness_comet",
+       "quote": "Standing on low ground, 140 metres to the east of the Ring of Brodgar"
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "To the south-east of the Ring stands the now solitary 1.75m high Comet Stone, but the two neighbouring stumps of stone suggest it"
+      },
+      {
+       "source": "stonepages_brodgar",
+       "quote": "To the SE, 137 m (449 ft) away, lies the Comet Stone ."
+      }
+     ]
+    },
+    {
+     "id": "salt_knowe",
+     "kind": "mound",
+     "size_m": [
+      40,
+      6
+     ],
+     "note": "HES gives '40m by 6m'; comparable in scale to Maeshowe; function and date unknown",
+     "osm": "node 5522411677",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "The prominent mound of Salt Knowe measures 40m by 6m and is comparable in scale to Maeshowe."
+      }
+     ]
+    },
+    {
+     "id": "fresh_knowe_plumcake",
+     "kind": "mounds",
+     "osm": "way 666205652 'Fresh Knowe and Plumcake Mound'",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "Plumcake Mound, named for its distinctive shape, was explored by James Farrer and George Petrie in 1854"
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "lunar backsights (Thom)",
+     "claim": "A. Thom and A. S. Thom (1973) proposed that the ring and the surrounding mounds were backsights for observing the moon at the major and minor standstills over distant foresights (e.g. the minor standstill southern moonset over the cliffs at Hellia, Hoy). Disputed: the mounds are undated; HES finds conclusive evidence very hard to find, though a significant subset of archaeologists accept an astronomical interest.",
+     "verdict": "disputed",
+     "cites": [
+      {
+       "source": "wp_brodgar",
+       "quote": "Thom and his father made other controversial contentions, for example, that Brodgar and the burial mounds that surround it were designed specifically as backsights for astronomical observations of the Moon."
+      },
+      {
+       "source": "stonesofwonder_brodgar",
+       "quote": "One of the suggested astronomical lines at the Ring of Brodgar is to the minor standstill southern moonset, indicated by the cliffs at Hellia on the island of Hoy."
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "Graham Ritchie points out that the burial mounds have not been reliably dated, and he casts doubt on the astronomical prowess of the builders."
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "It has been suggested that the sites and monuments in the surrounding area were used for astrological observations from the Ring of Brodgar, but it is very hard to find conclusive evidence for this."
+      },
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "Thought by a significant subset of archaeologists to fossilise, together with the lesser monuments visible from it, an interest in astronomical events."
+      }
+     ]
+    },
+    {
+     "event": "midwinter sun from the ring",
+     "claim": "From the ring the midwinter sun sets over the Kame of Hoy without reappearing; a reappearing sun can be seen about a month either side of the solstice (declination -20.1).",
+     "cites": [
+      {
+       "source": "patat_2011",
+       "quote": "around ±20 days from winter solstice the sun sets over the Kame of Hoy, about 10◦ S of Ward Hill, without re-emerging from behind it"
+      },
+      {
+       "source": "patat_2011",
+       "quote": "the reappearance of the sun is in principle observable from the Ring of Brodgar when δ =−20◦ .1 (November 22/January 21)"
+      }
+     ]
+    },
+    {
+     "event": "megalithic yard",
+     "claim": "Burl: the bank (ditch) diameter equals 125 megalithic yards of 0.8297 m; Heggie found little evidence for an accurate unit.",
+     "verdict": "disputed",
+     "cites": [
+      {
+       "source": "wp_brodgar",
+       "quote": "125 \"megalithic yards\" (MY), at 0.8297 metres (2.722 ft) per MY"
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "little justification for the claim that a highly accurate unit was in use"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "ditch",
+     "date": "c. 2600-2400 BC",
+     "what": "ditch dug in segments, then silted quickly; the stones' date is unknown (may be before or after)",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "suggests that the ditch was dug somewhere between 2600-2400 BC"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "Dates from the ditch, however, suggests it was dug between 2600BC and 2400BC."
+      }
+     ]
+    },
+    {
+     "name": "date range for the monument",
+     "date": "2600-2000 BC (HES); 2500-2000 BC (Wikipedia); 3000-2500 BC (Ness)",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "It is thought to date to between 2600 and 2000 BC"
+      },
+      {
+       "source": "wp_brodgar",
+       "quote": "It is generally thought to have been erected between 2500 BCE and 2000 BCE"
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "it is generally thought to be later than the Stones of Stenness and from between 3000BC and 2500BC"
+      }
+     ]
+    },
+    {
+     "name": "state care and re-erection",
+     "date": "1906 (HES); re-erection 1908 (Ness)",
+     "what": "most fallen stones re-erected in what were thought to be their sockets; guardianship extended 1966",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "1906 passes to state care, and most of the fallen stones were reerected at this time; guardianship area extended in 1966."
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "The Ring of Brodgar was taken into state care in 1906 and, two years later, most of the fallen stones were placed in what was thought to be their original sockets."
+      }
+     ]
+    },
+    {
+     "name": "excavations",
+     "date": "1973; 2008",
+     "what": "three narrow trenches (Renfrew 1973), two across the ditch reopened in 2008; interior never excavated",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "3 narrow trenches opened by Colin Renfrew in 1973, with two of these (cutting across the ditch) reopened and extended by ORCA in 2008"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Was it ever complete with 60 stones, or built up over generations with stones added and lost?",
+     "cites": [
+      {
+       "source": "hes_sos_brodgar",
+       "quote": "Although there was space for 60 monoliths, we do not know whether the Neolithic builders ever finished erecting all 60."
+      },
+      {
+       "source": "ness_brodgar",
+       "quote": "the erection of stones at the Ring of Brodgar may have taken place over generations"
+      }
+     ]
+    },
+    {
+     "claim": "Size ranking: a 2018 excavation showed another site was once a circle of about 110 m, and Brodgar is now fifth in the size table behind Avebury, Stanton Drew and Long Meg.",
+     "cites": [
+      {
+       "source": "ness_size",
+       "quote": "But excavation in 2018 suggests it was once a stone circle with a diameter of around 110m."
+      },
+      {
+       "source": "ness_size",
+       "quote": "The Ring of Brodgar , with its 103.6m diameter, now sits behind the Avebury outer ring (331m), Stanton Drew (113m) and Long Meg and her Daughters (107m)."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "osm": {
+  "checked": "2026-10-29, Overpass (overpass-api.de), radius 120-300 m round each site",
+  "maeshowe": [
+   {
+    "id": "way 774967953",
+    "tags": "building=yes, ruins=yes",
+    "what": "outline of the mound (25 nodes, 45 m longest, centroid 58.996590, -3.188236)"
+   },
+   {
+    "id": "way 288905594",
+    "tags": "name=Maes Howe, barrier=ditch, boundary=protected_area, wikidata=Q507076",
+    "what": "outer edge of the ditch / site (26 nodes, 107 m longest)"
+   }
+  ],
+  "stenness": [
+   {
+    "id": "way 782724929",
+    "tags": "name=Stones of Stenness, megalith_type=stone_circle, wikidata=Q1478558",
+    "what": "ring outline (18 nodes, 35 m across, centroid 58.994039, -3.208079)"
+   },
+   {
+    "id": "ways 774960013-774960023",
+    "tags": "historic=stone, natural=bare_rock",
+    "what": "11 individual stone outlines (positions from the ring centroid, derived: 774960014 r15.3 az12; 774960018 r15.1 az341; 774960019 r11.1 az359, 4.7 m long, probably the fallen 'dolmen' slab; 774960016 r18.1 az56; 774960017 r15.4 az74; 774960015 r16.1 az160; 774960020 r16.2 az183; 774960022 r15.5 az213; 774960023 r14.5 az281; 774960021 r0.9 = central hearth; 774960013 r32.3 az82, 3.6 m, outside the ring). Which Ritchie number each is has to be matched against his fig 2 / the tall stones in photographs; not done here"
+   },
+   {
+    "id": "node 1293208753",
+    "tags": "name=Watch Stone (Orkney), megalith_type=menhir, wikidata=Q2248726",
+    "what": "Watch Stone"
+   },
+   {
+    "id": "node 9609087415",
+    "tags": "name=Stone of Odin (probable site), ref:canmore=2128",
+    "what": "Odin Stone site"
+   },
+   {
+    "id": "node 5522405525",
+    "tags": "name=Barnhouse Stone, megalith_type=standing_stone, wikidata=Q56661429",
+    "what": "Barnhouse Stone (805 m at azimuth 221.4 from the Maeshowe mound centroid, derived)"
+   },
+   {
+    "id": "way 509423192 and ways 774956390-774956401",
+    "tags": "historic=ruins / man_made=embankment",
+    "what": "Barnhouse settlement (Structure 8, houses 2, 3, 5)"
+   }
+  ],
+  "brodgar": [
+   {
+    "id": "way 268713656",
+    "tags": "name=Ring of Brodgar, megalith_type=stone_circle, wikidata=Q643631",
+    "what": "site area (16 nodes, 178 m across): not the ring itself"
+   },
+   {
+    "id": "node 1291972590",
+    "tags": "name=The Comet Stone, wikidata=Q2207281",
+    "what": "Comet Stone"
+   },
+   {
+    "id": "node 5522411677",
+    "tags": "name=Salt Knowe, tumulus",
+    "what": "Salt Knowe"
+   },
+   {
+    "id": "node 2402625128",
+    "tags": "name=South Knowe, tumulus",
+    "what": "South Knowe"
+   },
+   {
+    "id": "way 666205652",
+    "tags": "name=Fresh Knowe and Plumcake Mound, wikidata=Q1393146",
+    "what": "mounds north-east of the ring"
+   },
+   {
+    "id": "none",
+    "tags": "",
+    "what": "no individual stones, no ditch, no causeways are mapped at Brodgar"
+   }
+  ]
+ },
+ "plans": [
+  {
+   "title": "General plan of the antiquities of Stenness (Thomas 1851, Archaeologia 34, plate 12)",
+   "url": "https://commons.wikimedia.org/wiki/File:Stenness_Plan_Thomas_1851_50.png",
+   "licence": "public domain (Wikimedia Commons)",
+   "what it shows": "the whole Stenness-Brodgar isthmus with both rings, mounds and outliers as in 1848-49; small scale"
+  },
+  {
+   "title": "Archaeologia vol. 34 (1852), with Thomas's plates of the Ring of Brogar and the Ring of Stenness",
+   "url": "https://commons.wikimedia.org/wiki/File:Archaeologia,_or,_Miscellaneous_tracts_relating_to_antiquity_(IA_archaeologiaormi34sociuoft).pdf",
+   "licence": "public domain (1852 scan on Commons)",
+   "what it shows": "Thomas's detailed plans of each ring with standing, fallen and stump stones before the restorations; the best traceable layout for Brodgar (check the plates are in this scan)"
+  },
+  {
+   "title": "Plan and Section of Maes-Howe, from Mr Farrer's work (Fergusson, Rude Stone Monuments, 1872)",
+   "url": "https://commons.wikimedia.org/wiki/File:Rude_Stone_Monuments_0272.png",
+   "licence": "public domain (Wikimedia Commons)",
+   "what it shows": "plan of passage, chamber and cells and a section; 19th-century survey"
+  },
+  {
+   "title": "Stuart 1865, PSAS 5, Plate XVIII: ground plan of Maeshowe",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/5132/5110/5101",
+   "licence": "out of copyright (1865)",
+   "what it shows": "ground plan of the chamber, cells and passage with the recess and jambs (the scan quality of the plate not checked)"
+  },
+  {
+   "title": "Maes Howe Cross Sections (Wikimedia Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:Maes_Howe_Cross_Sections.gif",
+   "licence": "CC BY-SA 3.0 (Fantoman400, Wikimedia Commons)",
+   "what it shows": "a drawn cross section of the chamber; its sources not stated, so use only as a check"
+  },
+  {
+   "title": "Ritchie 1976, PSAS 107, fig 2 (plan of the Stones of Stenness with stone numbers) and fig 4 (central features)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/8930/8898/8884",
+   "licence": "PSAS open access; the paper's own Creative Commons licence (CC BY, CC BY-NC or CC BY-NC-ND per the journal policy) not confirmed",
+   "what it shows": "the stone numbers 1-12 with stones, stumps and holes, ditch and causeway; would let the OSM stone outlines be numbered"
+  },
+  {
+   "title": "Childe 1956, PSAS 88, fig 1 (plan of excavated areas) and fig 4 (sections across fosse, platform and mound)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/8467/8435/8422",
+   "licence": "PSAS open access; licence per paper not confirmed",
+   "what it shows": "Maeshowe platform, ditch and mound profile in feet"
+  }
+ ],
+ "gaps": [
+  "Canmore / trove.scot (canmore.org.uk now redirects to trove.scot) refuses scripts (HTTP 403), so the Canmore site records (Maeshowe 2111, Stenness 2105, Brodgar 1696/1722) with their stone-by-stone descriptions could not be quoted.",
+  "HES visitor 'history and stories' pages answer scripts with HTTP 429 (curl in a browser user agent works): they say 36 of 60 Brodgar stones survive, 2.1-4.7 m, ditch 136 m across; not used. The HES Statements of Significance (PDF, OGL) and portal records were used instead.",
+  "Orkneyjar.com pages (orkneyjar.com/history/...) now return 404; Sigurd Towrie's material is on nessofbrodgar.co.uk and was used from there.",
+  "Ring of Brodgar stone numbering (Thom's / HES's) and each stone's height, width and state: not found in any fetchable source. Probably in Thom & Thom 1973 (JHA 4, 111-123; ADS has only page images), Renfrew 1979 (Investigations in Orkney), Downes et al. 2013 (Building the Great Stone Circles of the North) and Canmore. OSM has no individual Brodgar stones, so positions need a survey (e.g. the HES/ORCA laser scan, or Thomas 1852 plan traced).",
+  "Maeshowe passage width in metres and the exact passage azimuth from a primary survey: only Stuart's 1861 feet and Ruggles' 221 degrees (quoted via Ness of Brodgar) were found. Davidson & Henshall 1989 (The Chambered Cairns of Orkney, no. 36) and Challands et al. 2005 have the modern plan; not online.",
+  "Reijs's own Maeshowe pages (iol.ie/~geniet) are gone; his figures are quoted via Patat 2011 and Ness of Brodgar.",
+  "Stenness: which OSM stone outline is which Ritchie stone; the ditch's outer diameter; Ritchie's Table 9 ellipse dimensions are garbled in the OCR (only the 39 : 36 MY Pythagorean ellipse is quoted).",
+  "Odin Stone thickness: Ness quotes a socket impression 'c1.15 metres wide and 0.22 metres thick' split across a line break in the page text; not quoted.",
+  "Ruggles 1999 (Astronomy in Prehistoric Britain and Ireland) on Brodgar's lunar lines is not online; his Maeshowe statement is quoted second-hand from Ness of Brodgar."
+ ]
+}

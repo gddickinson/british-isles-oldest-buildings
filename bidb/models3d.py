@@ -94,11 +94,6 @@ def stars(mag=5.5):
     return rows
 
 
-def local(lat, lon, lat0, lon0):
-    """Metres east and north of (lat0, lon0)."""
-    return ((lon - lon0) * 111320 * math.cos(math.radians(lat0)), (lat - lat0) * 110574)
-
-
 def ground(lat, lon, size=600, step=2, source="tiles", flatten=None):
     """Ground heights round a point every `step` m over a `size` m square, rows north to south: (grid, meta).
     source "ea": Environment Agency LiDAR (England); "tiles": the terrain tiles (zoom 15, bilinear). `flatten`:
@@ -172,7 +167,8 @@ def write(mid):
             "origin": {"lat": round(spec["lat"], 7), "lon": round(spec["lon"], 7)},
             "dtm": dtm, "horizon": hz, "stars": stars(), "credits": credits,
             **{k: spec[k] for k in ("views", "cams", "events", "face", "start", "axis", "axis_length", "shadow",
-                                    "facts", "built_year") if k in spec}}
+                                    "facts", "built_year", "about", "built_label", "lantern", "axis_label", "ghosts",
+                                    "labels_label") if k in spec}}
     (OUT / f"model_{mid}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     return data
 

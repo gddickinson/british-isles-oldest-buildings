@@ -1,0 +1,390 @@
+{
+ "id": "durrington",
+ "name": "Woodhenge and the Durrington Walls Southern Circle",
+ "date_checked": "2026-10-29",
+ "about": "Two Late Neolithic timber monuments 2 miles north-east of Stonehenge, rebuilt from their excavated postholes. Woodhenge: six concentric oval (egg-shaped) rings of postholes, lettered A (outer) to F (inner) by Maud Cunnington, who dug the whole interior in 1926-28; the long axis points roughly to the midsummer sunrise; a child's grave lay near the centre; a ditch with an external bank and one north-east entrance surrounds the rings; the timber rings are dated about 2600-2450 BC and the henge earthwork somewhat later; at least two sarsens were set on the south side later. Nothing above ground survives: the Cunningtons marked the postholes with concrete markers (not exactly on the post positions) and the grave with a flint cairn; the bank and ditch are ploughed almost flat. The Southern Circle, inside the south-east entrance of the great henge of Durrington Walls about 60-70 m north of Woodhenge, was dug by Wainwright in 1966-67 (about two-thirds; the western third left unexcavated) and again by the Stonehenge Riverside Project in 2005-06: a Phase 1 of four rings of slender posts with a central four-post setting and a south-east facade, replaced in Phase 2 by six rings of massive posts with a south-east entrance between two huge posts facing the midwinter sunrise, a platform before it, and a 170-180 m avenue running to the River Avon on the midsummer sunset line. Nothing survives above ground (the A345 road crosses the site). The henge of Durrington Walls (bank about 440-500 m across) is context only; under its bank lay a ring of large posts, first announced in 2015 as buried standing stones, shown by excavation in 2016 to be postholes. Research file: quotes are exact text from the cited pages (whitespace and OCR as fetched); values read from table images are marked derived.",
+ "sources": {
+  "wl1971": {"title": "Durrington Walls: Excavations 1966-1968 (Reports of the Research Committee of the Society of Antiquaries of London No. XXIX)", "author": "G. J. Wainwright with I. H. Longworth, 1971", "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-3630-1/dissemination/SAL_vol_XXIX.pdf", "licence_note": "(c) Society of Antiquaries of London 1971; free PDF from the Archaeology Data Service under ADS terms of use (not an open licence). Text quotes only; figures not to be traced without permission. Includes Appendix VI (Atkinson, ring centres), VII (Musson, building forms, Woodhenge ring axes) and VIII (every posthole)."},
+  "wanhm45": {"title": "Review of M. E. Cunnington, Woodhenge (1929), in Wiltshire Books, Pamphlets, and Articles, Wiltshire Archaeological and Natural History Magazine 45 (1930-32), pp. 113-116 (OCR text, Internet Archive)", "author": "Wiltshire Archaeological and Natural History Society (unsigned review, probably E. H. Goddard)", "url": "https://archive.org/download/wiltshirearchaeo451930193/wiltshirearchaeo451930193_djvu.txt", "licence_note": "Internet Archive: 'In copyright. Digitized with the permission of the rights holder'. Short text quotes only. OCR text: quotes keep its spellings."},
+  "wanhm44": {"title": "Report of the Seventy-fourth General Meeting (excavations note), Wiltshire Archaeological and Natural History Magazine 44 (1927-29), p. 121 (OCR text, Internet Archive)", "author": "Wiltshire Archaeological and Natural History Society", "url": "https://archive.org/download/wiltshirearchaeo441927/wiltshirearchaeo441927_djvu.txt", "licence_note": "Internet Archive: 'In copyright. Digitized with the permission of the rights holder'. Short text quotes only."},
+  "sfta1": {"title": "Stonehenge for the Ancestors: Part 1: Landscape and Monuments (The Stonehenge Riverside Project Volume 1)", "author": "M. Parker Pearson, J. Pollard, C. Richards, J. Thomas, C. Tilley, K. Welham and others, Sidestone Press 2020", "url": "https://sidestone.com/openaccess/9789088907029.pdf", "licence_note": "Open-access PDF from Sidestone Press, (c) 2020 the authors (Sidestone open access, CC BY-NC-ND per the publisher's open-access titles); text quotes only. The Durrington Walls and Woodhenge results are in Volume 3, not yet published (see gaps)."},
+  "jonas2004": {"title": "The Stonehenge Riverside project: Research design and initial results, Journal of Nordic Archaeological Science 14 (2004), 45-60", "author": "M. Parker Pearson, C. Richards, M. Allen, A. Payne, K. Welham", "url": "https://publicera.kb.se/jonas/article/download/64389/51696", "licence_note": "Open-access journal PDF (publicera.kb.se); text quotes only."},
+  "archanz2006": {"title": "Stonehenge, its river and its landscape: Unravelling the mysteries of a prehistoric sacred place (Archaologischer Anzeiger 2006/1, 237-258) - abstract on the UHI research portal", "author": "M. Parker Pearson, J. Pollard, C. Richards, J. Thomas, C. Tilley, K. Welham", "url": "https://pure.uhi.ac.uk/de/publications/stonehenge-its-river-and-its-landscape-unravelling-the-mysteries-/", "licence_note": "Abstract only; text quotes only."},
+  "eh_history": {"title": "History of Woodhenge - English Heritage", "author": "English Heritage", "url": "https://www.english-heritage.org.uk/visit/places/woodhenge/history/", "licence_note": "English Heritage copyright; short quotes only"},
+  "eh_woodhenge": {"title": "Woodhenge - English Heritage (visit page)", "author": "English Heritage", "url": "https://www.english-heritage.org.uk/visit/places/woodhenge/", "licence_note": "English Heritage copyright; short quotes only"},
+  "wp_woodhenge": {"title": "Woodhenge - Wikipedia", "author": "Wikipedia contributors", "url": "https://en.wikipedia.org/wiki/Woodhenge", "licence_note": "CC BY-SA 4.0 text"},
+  "wp_durrington": {"title": "Durrington Walls - Wikipedia", "author": "Wikipedia contributors", "url": "https://en.wikipedia.org/wiki/Durrington_Walls", "licence_note": "CC BY-SA 4.0 text"},
+  "thepast2025": {"title": "100 years of Woodhenge: Tracing an archaeological icon, from discovery to new dating evidence (Current Archaeology 429)", "author": "Amanda Chadburn, The Past, 5 November 2025", "url": "https://the-past.com/feature/100-years-of-woodhenge-tracing-an-archaeological-icon-from-discovery-to-new-dating-evidence", "licence_note": "(c) The Past Ltd; short quotes only. Summarises Marshall, Chadburn et al. 2024 (Historic England Research Report 94/2024) and Ruggles and Chadburn 2024, which could not be fetched."},
+  "bristol2007": {"title": "Huge settlement unearthed at Stonehenge (University of Bristol news, 2007)", "author": "University of Bristol / National Geographic Society press release", "url": "https://bristol.ac.uk/news/2007/5271.html", "licence_note": "Press release; short quotes only"},
+  "trail": {"title": "Stonehenge's secret sister: Durrington Walls trail (Discovering Britain, Royal Geographical Society)", "author": "Mary-Ann Ochota", "url": "https://discoveringbritain.org/content/discoveringbritain/trail booklets/Durrington Walls trail.pdf", "licence_note": "RGS-IBG copyright; short quotes only. A popular trail booklet: used only for post-height estimates, marked as such."},
+  "standrews2015": {"title": "Archaeology on steroids (University of St Andrews news, 8 September 2015)", "author": "University of St Andrews / Stonehenge Hidden Landscapes Project", "url": "https://news.st-andrews.ac.uk/?p=13776", "licence_note": "Press release; short quotes only"},
+  "stonepages2015": {"title": "Huge ritual arena discovered near Stonehenge (Stone Pages news, 28 September 2015)", "author": "Stone Pages", "url": "https://www.stonepages.com/news/archives/005574.html", "licence_note": "News report; short quotes only"},
+  "archmag2016": {"title": "No Evidence of Standing Stones Found at Durrington Walls (Archaeology magazine news, 12 August 2016)", "author": "Archaeological Institute of America", "url": "https://archaeology.org/?p=5369", "licence_note": "News report; short quotes only"}
+ },
+ "sites": {
+  "woodhenge": {
+   "name": "Woodhenge",
+   "record": "Q534028",
+   "reference_position": {
+    "what": "centre of the timber rings / monument",
+    "grid_ref": "SU 1506 4337",
+    "note": "Wainwright gives the coarser SU 150434. The catalogue record Q534028 has lat 51.18963, lon -1.78674 (Wikidata), not from a quoted source.",
+    "cites": [
+     {"source": "sfta1", "quote": "Woodhenge is situated immediately south of Durrington Walls, on the western escarpment bounding the River Avon (SU 1506 4337)."},
+     {"source": "wl1971", "quote": "Woodhenge (SU 150434) Situated some 60.9 m. south of Durrington Walls"}
+    ]
+   },
+   "facts": {
+    "rings_count": {"value": 6, "unit": "rings", "note": "six concentric oval (egg-shaped) rings of postholes, lettered A (outermost) to F (innermost) by Cunnington",
+     "cites": [
+      {"source": "wl1971", "quote": "rings of post-holes, which were lettered A-F from the outer circle by Mrs Cunnington."},
+      {"source": "wp_woodhenge", "quote": "The site consists of six concentric oval rings of postholes"},
+      {"source": "wl1971", "quote": "the rings of the former are egg-shaped and not circular in plan."}
+     ]},
+    "outer_ring_max_m": {"value": 44.1, "unit": "m", "note": "maximum diameter of the timber structure (ring A, NE-SW) by 39.6 m (NW-SE). Wikipedia rounds to about 43 by 40 m; English Heritage gives 40 by 36 m for the monument. Sources disagree; Wainwright's Table XXI is the one with every ring.",
+     "cites": [
+      {"source": "wl1971", "quote": "with a maximum diameter of 44. 1 m. as opposed to the 38.9 m. of the Southern Circle"},
+      {"source": "wl1971", "quote": "the 44. l m. by 39.6 m. of Woodhenge"},
+      {"source": "wp_woodhenge", "quote": "the outermost being about 43 by 40 metres (141 by 131 ft) wide"},
+      {"source": "eh_history", "quote": "forming an oval monument 40 metres (131 feet) long and 36 metres (118 feet) wide"}
+     ]},
+    "posts_total": {"value": 168, "unit": "postholes", "note": "Total given by Wikipedia and Chadburn. The per-ring counts disagree: Wainwright's Table XXI gives 60+32+16+18+18+12 = 156 (derived sum); the 1930 review of Cunnington's book gives the outer ring 62, so 158 (derived sum). The 168 may include the six extra holes outside the rings and the stone holes; not resolved here.",
+     "cites": [
+      {"source": "wp_woodhenge", "quote": "Most of the 168 post holes held wooden posts"},
+      {"source": "thepast2025", "quote": "A total of 168 posts"},
+      {"source": "wanhm45", "quote": "the outermost has 62 holes, the second 32, the third 16, the three innermost having 18, 18, and 12 holes respectively."}
+     ]},
+    "largest_ring_C_posts": {"value": 16, "unit": "posts", "note": "ring C (third from outside) has the largest holes, all ramped; English Heritage gives its posts about 35 cm across, Wainwright's table an average post diameter of 0.82 m (derived from the table image) - they disagree.",
+     "cites": [
+      {"source": "eh_history", "quote": "Moving inwards was the ring with the largest posts, comprising 16 posts measuring about 35 centimetres (14 inches) in diameter, each erected using a ramp."},
+      {"source": "wanhm45", "quote": "Thethird ring has the largest holes, which all have ramps to them, the second ring has also smaller ramps."},
+      {"source": "wl1971", "quote": "at Woodhenge the largest posts occur in Circle C and not in Circle E"}
+     ]},
+    "deepest_postholes_m": {"value": 2, "unit": "m", "note": "deepest postholes (Wikipedia); Wainwright's table gives ring C an average depth of 1.7 m",
+     "cites": [{"source": "wp_woodhenge", "quote": "The deepest post holes measured up to 2 metres (6.6 ft)"}]},
+    "post_height_above_ground_m": {"value": 7.5, "unit": "m", "note": "published estimates differ: Wikipedia 7.5 m above ground and up to 5 tons; Cunnington (as reported in 1930) argued a ring C post about 30 ft long standing 24 ft (7.3 m, derived) above ground; a popular trail booklet says up to 6 m. No source gives a measured height.",
+     "cites": [
+      {"source": "wp_woodhenge", "quote": "are believed to have held posts which reached as high as 7.5 metres (25 ft) above ground"},
+      {"source": "wp_woodhenge", "quote": "Those posts would have weighed up to 5 tons"},
+      {"source": "wanhm45", "quote": "that the tree was about 30 feet long and stood 24 feet above ground."},
+      {"source": "trail", "quote": "These timbers were up to 6 metres high"}
+     ]},
+    "timber": {"value": "oak (some birch)", "unit": "", "note": "charcoal from the charred post butts",
+     "cites": [
+      {"source": "wl1971", "quote": "out of 21 identifications 15 are of oak and 6 are of birch"},
+      {"source": "thepast2025", "quote": "The post-holes were found to contain the remains of oak timbers"}
+     ]},
+    "henge_external_diameter_m": {"value": [85.3, 88.3], "unit": "m", "note": "external diameters of the bank, east-west and NE-SW (Wainwright). English Heritage: about 90 m across; Wikipedia: 110 m overall including bank and ditch. Sources disagree.",
+     "cites": [
+      {"source": "wl1971", "quote": "It was sited outside the ditch with external diameters of 85.3 m. east-west and 88.3 m. north-east-south- west"},
+      {"source": "eh_history", "quote": "making a henge monument about 90 metres (295 feet) across"},
+      {"source": "wp_woodhenge", "quote": "With an overall diameter measuring 110 metres (360 ft) (including bank and ditch)"}
+     ]},
+    "ditch_depth_m": {"value": [1.8, 2.1], "unit": "m", "note": "Wainwright 1.8-2.1 m deep with a flat bottom 3.6-4.8 m wide; the 1930 review 6-7 ft deep and generally 12-16 ft wide at the top; Wikipedia 2.4 m deep and up to 12 m wide.",
+     "cites": [
+      {"source": "wl1971", "quote": "the ditch which was r.8-2.1 m. deep with a broad flat bottom 3.6-4.8 m. wide."},
+      {"source": "wanhm45", "quote": "It was found to vary from 6ft. to 7ft. in depth, and generally from i2ft. to 16ft. in width"},
+      {"source": "wp_woodhenge", "quote": "a single flat-bottomed ditch, 2.4 metres (7.9 ft) deep and up to 12 metres (39 ft) wide"}
+     ]},
+    "berm_ft": {"value": [4, 5], "unit": "ft", "note": "berm between ditch and bank",
+     "cites": [{"source": "wanhm45", "quote": "Between:the ditch and the bank outside it was a ‘ berm” 4ft. to 5ft. wide."}]},
+    "bank": {"value": {"width_m": 10, "height_m": 1}, "unit": "m", "note": "outer bank about 10 m wide and 1 m high (Wikipedia); in 1926-28 only a low band of chalk rubble survived over half the circuit",
+     "cites": [
+      {"source": "wp_woodhenge", "quote": "an outer bank, about 10 metres (33 ft) wide and 1 metre (3.3 ft) high"},
+      {"source": "wanhm45", "quote": "The bank had been ploughed away over half the site"}
+     ]},
+    "entrance_causeway_m": {"value": 9.1, "unit": "m", "note": "single causeway facing north-east towards Durrington Walls",
+     "cites": [
+      {"source": "wl1971", "quote": "was crossed by a single causeway about 9. r m. wide facing northeast towards the Durrington Walls enclosure"},
+      {"source": "eh_history", "quote": "A single entrance lay to the north-east."}
+     ]},
+    "distance_to_durrington_walls_m": {"value": 70, "unit": "m", "note": "English Heritage 70 m to the Durrington Walls enclosure; Wainwright 60.9 m; Wikipedia puts the Southern Circle 70 m north",
+     "cites": [
+      {"source": "eh_history", "quote": "This faced towards Durrington Walls , a large enclosure 70 metres (230 feet) away"},
+      {"source": "wp_woodhenge", "quote": "another timber circle of comparable size was discovered in 1966, 70 metres (230 ft) to the north"}
+     ]}
+   },
+   "elements": [
+    {"id": "ring_A", "kind": "post ring", "order_from_outside": 1, "diameter_NE_SW_m": 44.1, "diameter_NW_SE_m": 39.6, "posts": 60, "posts_alt": 62, "avg_posthole_diameter_m": 0.94, "avg_posthole_depth_m": 0.6, "avg_post_diameter_m": 0.38, "state": "postholes only, marked by concrete markers", "derived": true, "how": "Table XXI (Wainwright 1971 p. 209) read from the page image; Southern Circle figures in brackets omitted. 62 posts per the 1930 review.",
+     "note": "relatively small, closely spaced posts; a gap in rings A and B but no formal entrance. Wainwright's quote of the table header and post counts below are OCR from the same table.",
+     "cites": [
+      {"source": "wl1971", "quote": "TABLE XXI Details of the Woodhenge Rings"},
+      {"source": "wl1971", "quote": "60 (50) 32 (36) I 6 (34) 18 (24) I8 (I2) 12 (10)"},
+      {"source": "eh_history", "quote": "The outermost two rings consisted of relatively small and closely spaced posts."},
+      {"source": "wl1971", "quote": "there is no formal entrance into the Woodhenge structure, as in the Southern Circle and the Sanctuary on Overton Hill, although there is a gap in the two outer rings of post-holes."}
+     ]},
+    {"id": "ring_B", "kind": "post ring", "order_from_outside": 2, "diameter_NE_SW_m": 38.1, "diameter_NW_SE_m": 34.1, "posts": 32, "avg_posthole_diameter_m": 0.97, "avg_posthole_depth_m": 1.1, "avg_post_diameter_m": 0.45, "ramps": "smaller ramps", "derived": true, "how": "Table XXI read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE XXI Details of the Woodhenge Rings"}, {"source": "wanhm45", "quote": "the second ring has also smaller ramps."}]},
+    {"id": "ring_C", "kind": "post ring", "order_from_outside": 3, "diameter_NE_SW_m": 29.4, "diameter_NW_SE_m": 25.2, "posts": 16, "avg_posthole_diameter_m": 1.4, "avg_posthole_depth_m": 1.7, "avg_post_diameter_m": 0.82, "ramps": "all ramped", "derived": true, "how": "Table XXI read from the page image",
+     "note": "the largest posts; Piggott's roof ridge; posthole C14 held a cremation (2580-2460 cal BC) and was packed to set its post more shallowly; some suggest lintels, without evidence",
+     "cites": [
+      {"source": "wl1971", "quote": "TABLE XXI Details of the Woodhenge Rings"},
+      {"source": "wanhm45", "quote": "It hasin- | deed been suggested that the uprights of this [C] ring may have sup- ported wooden cross beams or lintels, but there is no evidence of this."},
+      {"source": "sfta1", "quote": "where a cremation burial dating to 2580–2460 cal BC (95% confidence; OxA-19047; 3997±30 BP) was excavated from within posthole C14"}
+     ]},
+    {"id": "ring_D", "kind": "post ring", "order_from_outside": 4, "diameter_NE_SW_m": 22.5, "diameter_NW_SE_m": 18.8, "posts": 18, "avg_posthole_diameter_m": 0.73, "avg_posthole_depth_m": 0.85, "avg_post_diameter_m": 0.36, "derived": true, "how": "Table XXI read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE XXI Details of the Woodhenge Rings"}]},
+    {"id": "ring_E", "kind": "post ring", "order_from_outside": 5, "diameter_NE_SW_m": 17.3, "diameter_NW_SE_m": 14.0, "posts": 18, "avg_posthole_diameter_m": 0.76, "avg_posthole_depth_m": 1.0, "avg_post_diameter_m": 0.27, "derived": true, "how": "Table XXI read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE XXI Details of the Woodhenge Rings"}]},
+    {"id": "ring_F", "kind": "post ring", "order_from_outside": 6, "diameter_NE_SW_m": 11.8, "diameter_NW_SE_m": 8.5, "posts": 12, "avg_posthole_diameter_m": 0.7, "avg_posthole_depth_m": 1.0, "avg_post_diameter_m": 0.33, "derived": true, "how": "Table XXI read from the page image",
+     "note": "rings D, E, F were dug without ramps (Musson's possible earlier phase)",
+     "cites": [{"source": "wl1971", "quote": "TABLE XXI Details of the Woodhenge Rings"}, {"source": "wl1971", "quote": "The post-holes of the initial and smaller phase (rings D, E, F) were built without ramps"}]},
+    {"id": "central_grave", "kind": "burial", "what": "crouched skeleton of a child of about 3 with a cleft skull, in a small grave at the centre, at right angles to the axis; bones lost (destroyed in the Blitz per Wikipedia); now marked by a flint cairn", "state_now": "flint cairn",
+     "cites": [
+      {"source": "eh_history", "quote": "a two- or three-year old child buried near the centre (now marked by a flint cairn)"},
+      {"source": "wanhm45", "quote": "lay in the centre, upon, and at right angles to, this line of orientation."},
+      {"source": "wp_woodhenge", "quote": "After excavation, the remains were taken to London, where they were destroyed during The Blitz"}
+     ]},
+    {"id": "ditch_burial", "kind": "burial", "what": "crouched young man in a grave in the floor of the ditch, east sector, opposite the entrance; dated 1760-1670 BC",
+     "cites": [
+      {"source": "wl1971", "quote": "the crouched skeleton of a young man was found in a grave dug into the floor of the ditch in its eastern sector"},
+      {"source": "eh_history", "quote": "This burial from the ditch has been dated to between 1760 and 1670 BC"}
+     ]},
+    {"id": "stone_holes", "kind": "sarsen stone holes", "what": "at least two (2006: perhaps five, a 'cove') sarsens set later between posts on the south side; one large hole a little west of south with sarsen fragments; stones gone, holes marked with flint heaps",
+     "cites": [
+      {"source": "eh_history", "quote": "Later at least two large sarsen stones were added to the southern side of Woodhenge, placed between pairs of timber posts, perhaps after they had rotted."},
+      {"source": "wp_woodhenge", "quote": "Excavations in 2006 indicated that there were at least five standing stones on the site, arranged in a \"cove\"."},
+      {"source": "wanhm45", "quote": "this stone a little west of south of the circle"},
+      {"source": "thepast2025", "quote": "the central grave and stone-holes were marked with ‘heaps of flint’"}
+     ]},
+    {"id": "extra_holes", "kind": "outlying postholes", "what": "six holes outside the rings; two on the lines from the centre to the midsummer sunrise and midwinter sunset, one towards the Cuckoo Stone, one perhaps marking south",
+     "cites": [
+      {"source": "wanhm45", "quote": "Six extra holes were found having no relation to either of the circles."},
+      {"source": "wanhm45", "quote": "Two of these assisted in directing the line of sight from the centre to the midsummer sunrise and. midwinter sunset respectively"}
+     ]},
+    {"id": "modern_markers", "kind": "modern presentation", "what": "each posthole filled and marked by a drain pipe filled with concrete standing about 3 ft high, tops painted by ring; markers not exactly on the post positions; bronze and enamel plaques (with a plan of the rings) stolen in 2015",
+     "cites": [
+      {"source": "wanhm45", "quote": "each be- ing marked by a large drain pipe standing some three feet above ground, filled with concrete."},
+      {"source": "thepast2025", "quote": "The tops of the concrete markers were painted to differentiate each of the six rings"},
+      {"source": "thepast2025", "quote": "though crucially these markers do not precisely preserve their positions"},
+      {"source": "thepast2025", "quote": "these plaques were stolen in November 2015"},
+      {"source": "eh_woodhenge", "quote": "Today, concrete markers show the positions of the timber posts."}
+     ]}
+   ],
+   "alignment": [
+    {"event": "summer solstice sunrise (long axis of the rings)", "claim": "The long axes of the oval rings point roughly to midsummer sunrise (and midwinter sunset the other way). Musson measured the rings' long axes graphically: Cunnington's survey A,B 36.5 deg, C,F 40.5, D,E 43.5; Thom's survey 44.0, 47.0, 48.5; the 'assumed' midsummer sunrise axis 50.5 (Cunnington) and 49.2 (Thom). The henge entrance has a different orientation from the rings.", "derived": true, "how": "azimuths read from the table on p. 374 (page image); quote is the text that introduces it",
+     "cites": [
+      {"source": "wanhm45", "quote": "their longest diameter being directed nearly, but not quite, to the point of midsummer sunrise looked at from the centre of the rings."},
+      {"source": "wl1971", "quote": "The orientations so obtained were as follows"},
+      {"source": "wl1971", "quote": "in particular the divergence from the 'assumed' axes (lines of midsummer sunrise) adopted by Cunnington and Thom."},
+      {"source": "eh_history", "quote": "so it seems likely that the monument was built to align with the midsummer sunrise."},
+      {"source": "thepast2025", "quote": "it is also noteworthy that the entrance of the henge and the axis of the oval rings are on different orientations."}
+     ]}
+   ],
+   "phases": [
+    {"name": "timber rings", "date": "c. 2600 BC (2580-2450 cal BC)", "what": "the six rings erected apparently at one time; posts decaying seriously within about 90 years",
+     "cites": [
+      {"source": "thepast2025", "quote": "had been erected around 2600 BC, apparently all at broadly the same time."},
+      {"source": "sfta1", "quote": "This oval setting of concentric rings of postholes is dated to 2580–2450 cal BC"},
+      {"source": "thepast2025", "quote": "as the posts had begun to decay seriously within around 90 years of their initial installation."}
+     ]},
+    {"name": "henge ditch and bank", "date": "2480-2030 cal BC; about 150-200 years after the rings", "what": "ditch dug with antler picks and external bank thrown up",
+     "cites": [
+      {"source": "sfta1", "quote": "earlier than the date of 2480–2030 cal BC for the encircling henge ditch and external bank."},
+      {"source": "thepast2025", "quote": "The surrounding earthworks, though, were not constructed until around 150-200 years later"}
+     ]},
+    {"name": "sarsen stones", "date": "after the posts rotted", "what": "sarsens set between pairs of posts on the south side",
+     "cites": [{"source": "eh_history", "quote": "Later at least two large sarsen stones were added to the southern side of Woodhenge"}]},
+    {"name": "ditch burial and later use", "date": "1760-1670 BC; use to about 1800 BC", "what": "young man buried in the ditch",
+     "cites": [{"source": "eh_history", "quote": "This burial from the ditch has been dated to between 1760 and 1670 BC"}, {"source": "wp_woodhenge", "quote": "Radiocarbon dating of artefacts shows that the site was still in use around 1800 BC."}]},
+    {"name": "discovery, excavation, presentation", "date": "1925-1932", "what": "aerial photographs by Insall 1925-26, excavation 1926-28, concrete markers, given to the state in 1932",
+     "cites": [
+      {"source": "eh_history", "quote": "The couple eventually purchased the land and installed painted concrete posts to display the site to visitors."},
+      {"source": "thepast2025", "quote": "on 19 July 1932 Ben signed a Deed of Gift"},
+      {"source": "wanhm44", "quote": "this was a great circular structure, formed of large wooden posts and surrounded by a wide and deep ditch."}
+     ]}
+   ],
+   "debate": [
+    {"claim": "Roofed building or free-standing posts? Cunnington saw an open-air structure; Piggott (1940) a roofed building with a ridge on ring C, open in the centre; Musson (1971) also two successive annular buildings (rings D-F, then A-C) or ritual settings; English Heritage and Wikipedia now favour free-standing posts (individual posts replaced at the Sanctuary).",
+     "cites": [
+      {"source": "eh_history", "quote": "Although Maud Cunnington interpreted Woodhenge as an open-air structure, shortly afterwards the archaeologist Stuart Piggott argued that it was a large communal building."},
+      {"source": "wl1971", "quote": "who interpreted Woodhenge as a roofed building of one period which was probably open in the centre, the roof sloping both inwards and outwards from a high central ridge (the C ring)."},
+      {"source": "wl1971", "quote": "Mr Musson has made an alternative suggestion (Appendix VII, fig. II5) that Woodhenge represents two separate buildings"},
+      {"source": "eh_history", "quote": "indicating that both that monument and Woodhenge are more likely to have been free-standing structures."},
+      {"source": "wp_woodhenge", "quote": "it is likely that the timbers were free-standing, rather than part of a roofed structure."}
+     ]},
+    {"claim": "Several posts were replaced in antiquity (mostly in the middle and outer rings).",
+     "cites": [{"source": "sfta1", "quote": "Her report on Woodhenge reveals that several posts (mostly in the middle and outer rings) were replaced in antiquity"}]},
+    {"claim": "Thom's egg-shaped geometry rests on the concrete markers, which diverge from his idealised rings.",
+     "cites": [{"source": "wl1971", "quote": "these same modern markers diverge frequently from Professor Thom's idealized rings."}]}
+   ]
+  },
+  "southern_circle": {
+   "name": "Durrington Walls Southern Circle",
+   "record": "Q17648062",
+   "reference_position": {
+    "what": "circle within the south-east (east) entrance of Durrington Walls",
+    "grid_ref": null,
+    "note": "No quoted grid reference found for the circle itself. Placement: 27.4 m north-west of the henge's east entrance; the line bisecting the henge entrances (123 deg 30') cuts entrance posthole 23; about 70 m north of Woodhenge (Wikipedia). Record Q17648062 is the whole scheduled monument (lat 51.1914, lon -1.78657), not the circle.",
+    "cites": [
+     {"source": "wl1971", "quote": "were located 27.4 m. north-west of the east entrance into the main enclosure"},
+     {"source": "wl1971", "quote": "the imaginary line bisecting the entrances cuts post-hole 23 of the Southern Circle"}
+    ]
+   },
+   "facts": {
+    "max_diameter_m": {"value": 38.9, "unit": "m", "note": "Phase 2 outer ring (2A) diameter, twice the 19.46 m radius",
+     "cites": [{"source": "wl1971", "quote": "as opposed to the 38.9 m. of the Southern Circle"}]},
+    "excavated_share": {"value": "about two-thirds; western third unexcavated (left for the future); 60% of ring 2A, 80% of 2F", "unit": "",
+     "cites": [
+      {"source": "wl1971", "quote": "the western third of the Southern Circle was not to be destroyed and was therefore not excavated."},
+      {"source": "wl1971", "quote": "it is estimated that some 60% of Circle 2A was recorded and excavated and 80% of Circle 2F."}
+     ]},
+    "phase1_post_diameter_cm": {"value": [15, 21], "unit": "cm", "note": "Phase 1 posts set centrally in narrow 'jump-bar' holes; average hole 57 cm across and 1.14 m deep",
+     "cites": [
+      {"source": "wl1971", "quote": "The posts, which were between 15 cm. and 21 cm. in diameter"},
+      {"source": "wl1971", "quote": "the average diameter for all post-holes is 57 cm. and the average depth 1.14 m."}
+     ]},
+    "phase2_largest_holes": {"value": {"ring_2E_avg_diameter_m": 1.8, "ring_2E_avg_depth_m": 2.3, "posthole_95_diameter_m": 2.2, "posthole_95_depth_m": 2.9}, "unit": "m",
+     "cites": [{"source": "wl1971", "quote": "in Circle 2E where the largest posts were recorded, the holes averaged I.8 m. in diameter and 2.3 m. deep, whilst post-hole 95 in this series was 2.2 m. in diameter and 2.9 m. deep."}]},
+    "phase2_post_diameters_cm": {"value": [30, 51, 48, 57, 64, 24], "unit": "cm", "note": "average post diameters, rings 2A to 2F",
+     "cites": [{"source": "wl1971", "quote": "the average diameters of the timbers from the outer to the inner rings are: 30 cm., 51 cm., 48 cm., 57 cm., 64 cm. and 24 cm."}]},
+    "entrance_m": {"value": {"width_m": 3.8, "post_22_diameter_m": 1.06, "post_23_diameter_m": 0.91, "post_22_depth_m": 2.4, "post_23_depth_m": 1.9}, "unit": "m", "note": "entrance in ring 2A facing SE towards the henge causeway; its two posts were the largest timbers",
+     "cites": [{"source": "wl1971", "quote": "It is 3.8 m. wide and was flanked by two posts 1.06 m. and 91 cm. in diameter which were embedded 2.4 m. and 1.9 m. respectively into the natural chalk."}]},
+    "platform_m": {"value": {"north_south_m": 17.6, "east_west_m": 8.5}, "unit": "m", "note": "platform of chalk blocks and flint gravel before the entrance, with a hearth area",
+     "cites": [{"source": "wl1971", "quote": "The maximum dimensions of this platform were 17.6 m. from north to south and 8.5 m. from east to west."}]},
+    "timber": {"value": "oak (Quercus robur)", "unit": "", "note": "charcoal from the base of post-hole 92 (oak post 0.76 m across in a pit 2.07 m wide and 2.89 m deep)",
+     "cites": [
+      {"source": "wl1971", "quote": "from charcoal (Q,uercus robur) from the base of post-hole g2."},
+      {"source": "wl1971", "quote": "Post-hole g2 is a pit 2.07 m. in diameter and 2.8g m. deep which houses an oak post with a diameter of o. 76 m."}
+     ]},
+    "roof_height_if_roofed_m": {"value": 10.5, "unit": "m", "note": "only on Wainwright's roofed-building reading: height at ring 2E for a 25 deg pitch and 3 m eaves; not a measured post height",
+     "cites": [{"source": "wl1971", "quote": "Assuming a roof-pitch of 25 ° such a building would have a height of 10.5 m. at Circle 2E, if there was an eaves height of about 3 m. at the outer wall."}]},
+    "antler_picks": {"value": 345, "unit": "picks", "note": "in the packing of the Phase 2 postholes",
+     "cites": [{"source": "wl1971", "quote": "345 picks were recorded from the packing material of the post-holes of Phase 2."}]}
+   },
+   "elements": [
+    {"id": "1A", "phase": 1, "kind": "post ring", "radius_m": 15.02, "posts_excavated": 5, "posts_presumed": null, "avg_posthole_diameter_m": 0.54, "avg_posthole_depth_m": 1.14, "avg_post_diameter_m": 0.19, "derived": true, "how": "radii from the text; other values from Table I (p. 26) read from the page image",
+     "cites": [{"source": "wl1971", "quote": "Phase 1 of the Southern Circle consists of four nearly concentric rings of timber uprights with radii of 15.02m."}, {"source": "wl1971", "quote": "TABLE I Details of the Southern Circle; Phase 1"}]},
+    {"id": "1B", "phase": 1, "kind": "post ring", "radius_m": 11.62, "posts_excavated": 20, "posts_presumed": 44, "presumed_uncertain": true, "avg_spacing_m": 1.6, "avg_posthole_diameter_m": 0.53, "avg_posthole_depth_m": 1.37, "avg_post_diameter_m": 0.21, "derived": true, "how": "Table I read from the page image (presumed '?44')", "note": "same plan line as ring 2D",
+     "cites": [{"source": "wl1971", "quote": "TABLE I Details of the Southern Circle; Phase 1"}, {"source": "wl1971", "quote": "in particular Circles 2D and 2E correspond with Circles 1B and 1C respectively."}]},
+    {"id": "1C", "phase": 1, "kind": "post ring", "radius_m": 7.37, "posts_excavated": 11, "posts_presumed": null, "avg_posthole_diameter_m": 0.54, "avg_posthole_depth_m": 1.44, "avg_post_diameter_m": 0.18, "derived": true, "how": "Table I read from the page image", "note": "same plan line as ring 2E",
+     "cites": [{"source": "wl1971", "quote": "TABLE I Details of the Southern Circle; Phase 1"}]},
+    {"id": "1D", "phase": 1, "kind": "post ring (free-standing central ring)", "radius_m": 1.12, "posts_excavated": 6, "posts_presumed": 6, "avg_spacing_m": 1.15, "avg_posthole_diameter_m": 0.6, "avg_posthole_depth_m": 0.42, "avg_post_diameter_m": 0.18, "derived": true, "how": "Table I read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE I Details of the Southern Circle; Phase 1"}]},
+    {"id": "1_rectilinear", "phase": 1, "kind": "four-post setting (renewed)", "radius_m": 3.85, "postholes": 8, "avg_posthole_diameter_m": 0.6, "avg_posthole_depth_m": 1.3, "avg_post_diameter_m": 0.21, "max_post_diameter_m": 0.38, "ramps_inward_avg_m": 1.7,
+     "cites": [
+      {"source": "wl1971", "quote": "rectilinear setting of four posts which are distributed around the circumference of a circle with a radius of 3.85 m."},
+      {"source": "wl1971", "quote": "The average diameter of the posts was 2 1 cm. with a maximum diameter of 38 cm."}
+     ]},
+    {"id": "1_facade", "phase": 1, "kind": "facade of close-set posts", "recorded_length_m": 37.1, "what": "on the south-east, posts perhaps decreasing in size from the centre outwards; south-west half lost to stream erosion; gap fronted by posthole 139",
+     "cites": [
+      {"source": "wl1971", "quote": "To the south-east the structure was fronted by a fa<_;ade with a recorded length of 3 7. 1 m."},
+      {"source": "wl1971", "quote": "the posts may have decreased in size from the centre outwards."}
+     ]},
+    {"id": "2A", "phase": 2, "kind": "post ring with SE entrance", "radius_m": 19.46, "posts_excavated": 30, "posts_presumed": 50, "avg_spacing_m": 2.3, "avg_posthole_diameter_m": 0.76, "avg_posthole_depth_m": 0.42, "avg_post_diameter_m": 0.3, "avg_ramp_length_m": null, "derived": true, "how": "Table II (p. 30) read from the page image; radii also in the text", "note": "dug after 2B (its holes cut 2B ramps), probably within hours or days",
+     "cites": [{"source": "wl1971", "quote": "In its second phase the Southern Circle comprises six nearly concentric circles of more massive timber uprights with radii of 19.46 m., 17.86 m., 14.67 m., 11.46 m., 7.60 m. and 5.37 m."}, {"source": "wl1971", "quote": "TABLE II Details of the Southern Circle; Phase 2"}]},
+    {"id": "2B", "phase": 2, "kind": "post ring", "radius_m": 17.86, "posts_excavated": 22, "posts_presumed": 36, "avg_spacing_m": 3.0, "avg_posthole_diameter_m": 1.1, "avg_posthole_depth_m": 1.6, "avg_post_diameter_m": 0.51, "avg_ramp_length_m": 1.7, "ramps": "outward, inward at the entrance", "derived": true, "how": "Table II read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE II Details of the Southern Circle; Phase 2"}]},
+    {"id": "2C", "phase": 2, "kind": "post ring", "radius_m": 14.67, "posts_excavated": 20, "posts_presumed": 34, "avg_spacing_m": 2.8, "avg_posthole_diameter_m": 1.1, "avg_posthole_depth_m": 1.7, "avg_post_diameter_m": 0.48, "avg_ramp_length_m": 1.4, "derived": true, "how": "Table II read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE II Details of the Southern Circle; Phase 2"}]},
+    {"id": "2D", "phase": 2, "kind": "post ring", "radius_m": 11.46, "posts_excavated": 16, "posts_presumed": 24, "avg_spacing_m": 2.9, "avg_posthole_diameter_m": 1.4, "avg_posthole_depth_m": 2.1, "avg_post_diameter_m": 0.57, "avg_ramp_length_m": 2.0, "derived": true, "how": "Table II read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE II Details of the Southern Circle; Phase 2"}]},
+    {"id": "2E", "phase": 2, "kind": "post ring (largest posts)", "radius_m": 7.6, "posts_excavated": 9, "posts_presumed": 12, "avg_spacing_m": 3.8, "avg_posthole_diameter_m": 1.8, "avg_posthole_depth_m": 2.3, "avg_post_diameter_m": 0.64, "avg_ramp_length_m": 3.0, "derived": true, "how": "Table II read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE II Details of the Southern Circle; Phase 2"}]},
+    {"id": "2F", "phase": 2, "kind": "post ring (free-standing, slender, deep-set)", "radius_m": 5.37, "posts_excavated": 8, "posts_presumed": 10, "avg_spacing_m": 3.1, "avg_posthole_diameter_m": 0.85, "avg_posthole_depth_m": 1.5, "avg_post_diameter_m": 0.24, "avg_ramp_length_m": 1.9, "ramps": "inward", "derived": true, "how": "Table II read from the page image",
+     "cites": [{"source": "wl1971", "quote": "TABLE II Details of the Southern Circle; Phase 2"}, {"source": "wl1971", "quote": "The innermost ring (2F) has deeply set but relatively slender posts."}]},
+    {"id": "flint_cairn", "kind": "marker", "what": "a flint cairn over the position of posthole 32",
+     "cites": [{"source": "sfta1", "quote": "the position of a timber upright (posthole 32) was marked by a flint cairn"}]},
+    {"id": "avenue", "kind": "avenue to the River Avon", "length_m": 180, "length_alt": "560 ft (about 170 m, derived) by 90 ft wide (about 27 m, derived), stone-surfaced", "what": "from the Southern Circle through the henge's south-east entrance to a cliff over the River Avon; found 2005",
+     "cites": [
+      {"source": "sfta1", "quote": "A 180m-long avenue, aligned on midsummer sunset, connected the midwinter sunriseoriented Southern Circle to the River Avon."},
+      {"source": "bristol2007", "quote": "an imposing stone-surfaced avenue some 90 feet wide and 560 feet long, found in 2005"},
+      {"source": "bristol2007", "quote": "The Durrington avenue leads to a cliff over the river."}
+     ]},
+    {"id": "palisade_trench", "kind": "later feature", "what": "Late Pre-Roman Iron Age palisade trench crossing the south of the circle west-east (not part of the Neolithic model)",
+     "cites": [{"source": "wl1971", "quote": "The debris found in this feature dates it to the Late Pre-Roman Iron Age"}]}
+   ],
+   "alignment": [
+    {"event": "winter solstice sunrise (entrance)", "claim": "The entrance faces south-east on the midwinter sunrise and looks through the henge's south-east entrance to the river about 100 m away.",
+     "cites": [
+      {"source": "jonas2004", "quote": "The entrance of the Southern Circle faces southeast on the alignment of the midwinter solstice sunrise"},
+      {"source": "eh_history", "quote": "Another timber monument nearby, the Southern Circle at Durrington Walls, was aligned on the midwinter sunrise."}
+     ]},
+    {"event": "summer solstice sunset (avenue)", "claim": "The avenue from the circle to the river runs on the midsummer sunset line (looking up it from the river).",
+     "cites": [
+      {"source": "bristol2007", "quote": "the Durrington avenue lines up with midsummer solstice sunset."},
+      {"source": "wp_durrington", "quote": "A paved avenue was constructed on a slightly different alignment – towards the sunset on the summer solstice – and it led to the River Avon."}
+     ]},
+    {"event": "henge axis", "claim": "The line bisecting the two henge entrances has an orientation of 123 deg 30' from north (Wainwright); no measured azimuth of the circle's own entrance or the avenue was found.",
+     "cites": [{"source": "wl1971", "quote": "This line has an orientation of 123° 30' from north."}]}
+   ],
+   "phases": [
+    {"name": "Phase 1", "date": "radiocarbon 1810 +- 170 bc uncalibrated (NPL-239, antler picks); thought too young", "what": "four rings of slender posts, central six-post ring in a renewed four-post setting, south-east facade; decayed in place, not pulled out",
+     "cites": [
+      {"source": "wl1971", "quote": "the earliest structure on the site comprised four nearly concentric circles of slender posts"},
+      {"source": "wl1971", "quote": "a radiocarbon determination of 1810 ± 170 e.c. (NPL-239) was obtained on antler picks"}
+     ]},
+    {"name": "Phase 2", "date": "c. 2600 BC (Wikipedia); radiocarbon 1925 +- 90 bc uncalibrated (Wainwright)", "what": "six rings of massive posts built from the inside out, entrance and platform to the south-east",
+     "cites": [
+      {"source": "wl1971", "quote": "it was replaced by a much larger structure of six nearly concentric rings of more massive posts"},
+      {"source": "wl1971", "quote": "which is therefore likely to have occurred within the range 1g25 ±go B.C."},
+      {"source": "wp_durrington", "quote": "At some point c. 2600 BC, a large timber circle was constructed. It is now known as the Southern Circle."}
+     ]},
+    {"name": "Durrington Walls palisade and henge (context)", "date": "henge completed 2480-2450 cal BC", "what": "the settlement's perimeter first ringed with posts, then the bank and ditch",
+     "cites": [{"source": "sfta1", "quote": "its perimeter was first encircled by wooden posts and then by a large henge ditch and external bank, completed by 2480–2450 cal BC."}]}
+   ],
+   "debate": [
+    {"claim": "Roofed building or open timber settings? Wainwright read both phases as roofed buildings (Phase 2 with an outward-sloping annular roof, a ridge at 2E and an open court with free-standing ring 2F); Musson stressed no conclusive evidence of roofing; the Riverside Project treats the circle as a timber circle.",
+     "cites": [
+      {"source": "wl1971", "quote": "The only building form appropriate to this pattern is an outward sloping roof with an outside wall probably at Circle 2A and a high ridge at Circle 2E surrounding an open central court."},
+      {"source": "wl1971", "quote": "It should be stressed again that no conclusive evidence has been produced to show that these monuments were in fact roofed buildings."}
+     ]},
+    {"claim": "'Stonehenge for the ancestors' (Parker Pearson and Ramilisonina 1998): timber at Durrington for the living, stone at Stonehenge for the ancestors, linked by the Avon and the two avenues; contested by Wainwright and Darvill.",
+     "cites": [
+      {"source": "jonas2004", "quote": "The main theory that has motivated our own project is that Stonehenge was built for the community’s ancestors (Parker Pearson and Ramilisonina 1998a)"},
+      {"source": "wp_durrington", "quote": "He suggests that the timber circle at Durrington Walls represented life and a land of the living, whilst Stonehenge and the down around it, encircled by burial mounds, represented a land of the dead."},
+      {"source": "wp_durrington", "quote": "Geoff Wainwright and Timothy Darvill have contested Pearson's theories, however."},
+      {"source": "archanz2006", "quote": "The orientations of the circles and their avenues, together with seasonality patterns of pig culling, show that the midwinter and midsummer solstices were important times for gathering at these sites."}
+     ]}
+   ]
+  }
+ },
+ "context": {
+  "durrington_walls_henge": {
+   "facts": {
+    "diameter_m": {"value": 441.9, "unit": "m", "note": "circle fitted to the bank (Wainwright); external bank 440 m (Riverside Project); oval interior 487 x 472 m (2004); about 500 m in popular accounts",
+     "cites": [
+      {"source": "wl1971", "quote": "Such a circle has a diameter of 441.9 m."},
+      {"source": "sfta1", "quote": "The henge’s external bank, 440m in diameter"},
+      {"source": "jonas2004", "quote": "It encloses an oval area of 487 m × 472 m"},
+      {"source": "wp_durrington", "quote": "a 500-metre-diameter (1,600 ft) henge"}
+     ]},
+    "ditch_and_bank": {"value": {"ditch_depth_m": 5.5, "ditch_top_width_m": 18, "ditch_bottom_width_m": 7, "bank_width_m": 30}, "unit": "m",
+     "cites": [
+      {"source": "wp_durrington", "quote": "Originally the ditch was 5.5 metres (18 ft) deep, 7 metres (23 ft) wide at its bottom and 18 metres (59 ft) wide at the top."},
+      {"source": "wp_durrington", "quote": "The bank was in some areas 30 metres (98 ft) wide."}
+     ]},
+    "entrances": {"value": "north-west and south-east (possibly also south and north-east)", "unit": "",
+     "cites": [{"source": "wp_durrington", "quote": "There were two entrances through the bank and ditch – at the north western and south eastern ends."}]}
+   }
+  },
+  "post_ring_under_bank": {
+   "what": "2015: geophysics read as a buried row of up to 90 standing stones (some up to 4.5 m) under the southern bank; 2016 excavation found postholes with ramps whose posts had been lifted out and the holes filled with chalk rubble before the bank was built. Popular estimates of the posts: about 300 trunks, about 7 m high (Wikipedia), up to 5 m high and 3 tonnes (trail booklet) - not from the excavation report.",
+   "cites": [
+    {"source": "standrews2015", "quote": "has now discovered evidence for a row of up to 90 standing stones"},
+    {"source": "stonepages2015", "quote": "The hidden arrangement of up to 90 huge standing stones formed part of a C-shaped Neolithic arena"},
+    {"source": "archmag2016", "quote": "But the excavation team uncovered two pits for wooden posts."},
+    {"source": "archmag2016", "quote": "“They have got ramps at the sides to lower posts into,” said Nicola Snashall"},
+    {"source": "sfta1", "quote": "Excavation in 2016 showed that the geophysical anomalies recorded by the SHLP are postholes, not stone sockets."},
+    {"source": "wp_durrington", "quote": "The ring of around 300 huge trunks stood on the same line where the Durrington Walls outer bank now stands."},
+    {"source": "wp_durrington", "quote": "Each trunk was approximately 1.5 metres (4 ft 11 in) in diameter and 7 metres (23 ft) high"},
+    {"source": "trail", "quote": "These huge tree trunks may have been up to 5 metres high, and weighed up to 3 tonnes each."}
+   ]
+  }
+ },
+ "plans": [
+  {"title": "Woodhenge on-site bronze plaque 'Plan of Rings' (photograph)", "url": "https://commons.wikimedia.org/wiki/File:Woodhenge_Karte_DB.jpg", "licence": "Photograph CC BY-SA 3.0 (Wikimedia Commons). The plaque was one of the Cunningtons' bronze and enamel plaques (stolen 2015); if drawn by the Cunningtons (Maud d. 1951, Ben d. 1950) its design is public domain in the UK since 2022, but the plaque's designer is not stated: check before tracing.", "what it shows": "all six rings of Woodhenge coloured by ring, ramps of rings B and C, north arrow and a scale bar in feet (0-160 ft); taken almost square-on, so traceable with a perspective correction against the scale bar. Shows the excavated posthole plan, not the concrete markers."},
+  {"title": "Cunnington 1929, Woodhenge, general plan", "url": null, "licence": "Public domain in the UK if drawn by Maud Cunnington (died 1951; life + 70 years ended 31 Dec 2021); no scan found online (not on the Internet Archive, Google Books or HathiTrust).", "what it shows": "the original survey of every posthole, ditch sections and the extra holes; the best source to trace if a scan can be obtained (Wiltshire Museum, Devizes, holds the Cunnington archive)."},
+  {"title": "Wainwright with Longworth 1971: fig. 85 Plan of Woodhenge (p. 208); figs. 9, 11, 12, 14 Southern Circle general plan, Phase 1, Phase 2 and post-pipe positions; Appendix VIII posthole details", "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-3630-1/dissemination/SAL_vol_XXIX.pdf", "licence": "(c) Society of Antiquaries of London; ADS terms of use, not an open licence: use to check positions, ask the Society before tracing.", "what it shows": "fig. 14 plots the post-pipe (actual timber) positions of Phase 2; Appendix VI gives the ring centres; the western third of the circle is unexcavated."},
+  {"title": "Gaffney et al. 2020, A Massive, Late Neolithic Pit Structure associated with Durrington Walls Henge (Internet Archaeology 55)", "url": "https://commons.wikimedia.org/wiki/File:A_Massive,_Late_Neolithic_Pit_Structure_associated_with_Durrington_Walls_Henge.ia.55.4.pdf", "licence": "CC BY 3.0", "what it shows": "survey maps of the Durrington Walls henge and its surroundings: usable to place the henge bank and Woodhenge (not checked for a plan of the Southern Circle)."}
+ ],
+ "gaps": [
+  "Historic England pages refuse scripts (403): the scheduling entry, the Research Records and, most importantly, Marshall, Chadburn et al. 2024, 'Woodhenge, Durrington, Wiltshire: radiocarbon dating and chronological modelling' (Research Report 94/2024), and Ruggles and Chadburn 2024, Stonehenge: sighting the sun, with Sharon Soutar's plan and the measured solstitial axes. Only Chadburn's summary in The Past was quotable.",
+  "Cunnington 1929 (Woodhenge) is not online; per-posthole positions, diameters and depths for Woodhenge are only available as Wainwright's ring averages (Table XXI) and the 1930 review. The 1930 review (62 posts in ring A) and Wainwright (60) disagree; neither sums to the 168 posts of Wikipedia and Chadburn.",
+  "Riverside Project results for the Southern Circle (Trenches 7 and 19, 2005-06), the Woodhenge stone holes (2006 'cove') and the 2016 posthole excavation under the bank are in Stonehenge Riverside Project Volume 3 (Durrington Walls and Woodhenge: a place for the living, Sidestone, forthcoming 22 April 2027, CC BY-NC-ND). Thomas 2007 (internal features, BAR) and Parker Pearson et al. 2007 Antiquity were not reachable openly.",
+  "No measured azimuth for the Southern Circle entrance or the Durrington avenue was found in a fetchable source; only the henge entrance axis (123 deg 30') and the solstice statements.",
+  "No grid reference or coordinates for the Southern Circle itself; it must be placed from Wainwright's figs. 2-3 (27.4 m NW of the east entrance) or the Internet Archaeology maps.",
+  "Post heights are estimates only (7.5 m, 24 ft, 6 m for Woodhenge; 10.5 m roof only on the roofed reading for the Southern Circle); no source gives heights per ring. Height above ground could be estimated from posthole depth, but no quoted rule was found.",
+  "Phase 1 ring counts of the Southern Circle are uncertain (presumed numbers '?' and '?44' in Table I)."
+ ]
+}

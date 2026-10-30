@@ -1,0 +1,259 @@
+{
+ "id": "bryn_celli_ddu",
+ "name": "Bryn Celli Ddu",
+ "record": "Q2519821",
+ "date_checked": "2026-10-29",
+ "about": "Late Neolithic passage tomb on Anglesey (Burrow's radiocarbon model: built 3074-2956 cal BC) with an east/north-east-facing stone-lined passage, roughly aligned on the midsummer sunrise, leading to a polygonal chamber of large slabs with a free-standing rounded blueschist pillar. It overlies, or is enlarged from, an earlier phase with an encircling ditch (c. 21 m across) and an inner ring of stones, usually read as a henge with a stone circle; whether there was a henge (outer bank) is debated. A ring of kerbstones c. 26 m across marks the edge of the final mound. Five Mesolithic postholes lie in front of the entrance. Excavated by W. J. Hemp in 1928-29 (Ministry of Works guardianship from 1923), after which the mound was rebuilt only around the passage and chamber: the modern mound is much smaller than the original, leaves the back of the chamber open to the air, and is held up in part by concrete roof supports. The carved Pattern Stone, found lying flat by the central pit behind the chamber, is in Amgueddfa Cymru (St Fagans); a cast stands upright behind the chamber near where it was found. Quotes are exact text of the cited pages (whitespace normalised); 'derived' marks values computed from quoted numbers or OSM geometry.",
+ "sources": {
+  "wp": {"title": "Bryn Celli Ddu - Wikipedia", "author": "Wikipedia contributors", "url": "https://en.wikipedia.org/wiki/Bryn_Celli_Ddu", "licence_note": "CC BY-SA 4.0 text"},
+  "simplewp": {"title": "Bryn Celli Ddu - Simple English Wikipedia", "author": "Wikipedia contributors", "url": "https://simple.wikipedia.org/wiki/Bryn_Celli_Ddu", "licence_note": "CC BY-SA 4.0 text; its figures are cited to megalithics.com and pegasusarchive.org (enthusiast sites), so secondary"},
+  "cadw_visit": {"title": "Bryn Celli Ddu Chambered Tomb - Cadw (visit page)", "author": "Cadw", "url": "https://cadw.gov.wales/visit/places-to-visit/bryn-celli-ddu-burial-chamber", "licence_note": "Crown copyright (Welsh Government); short quotes"},
+  "cadw_more": {"title": "More about Bryn Celli Ddu - Cadw", "author": "Cadw", "url": "https://cadw.gov.wales/more-about-bryn-celli-ddu", "licence_note": "Crown copyright (Welsh Government); short quotes"},
+  "cadw_news": {"title": "Hidden in the soil (news, 12 June 2019) - Cadw", "author": "Cadw", "url": "https://cadw.gov.wales/about-us/news/hidden-soil", "licence_note": "Crown copyright (Welsh Government); short quotes"},
+  "coflein": {"title": "Bryn Celli Ddu Chambered Tomb, NPRN 93827 - Coflein", "author": "RCAHMW (T. Driver 2012, 2019)", "url": "https://coflein.gov.uk/en/site/93827/", "licence_note": "RCAHMW, Non-commercial Government Licence; short quotes"},
+  "coflein_cairn": {"title": "Bryn Celli Ddu Cairn (Plough Levelled), NPRN 408570 - Coflein", "author": "RCAHMW (T. Driver 2008)", "url": "https://coflein.gov.uk/en/site/408570/", "licence_note": "RCAHMW, Non-commercial Government Licence; short quotes"},
+  "coflein_cairn_s": {"title": "Site of Cairn South of Bryn Celli Ddu, NPRN 309540 - Coflein", "author": "RCAHMW (J. Wiles 2007)", "url": "https://coflein.gov.uk/en/site/309540/", "licence_note": "RCAHMW, Non-commercial Government Licence; short quotes"},
+  "coflein_stone": {"title": "Bryn Celli Ddu Standing Stone, NPRN 302503 - Coflein", "author": "RCAHMW (J. Wiles 2007)", "url": "https://coflein.gov.uk/en/site/302503/", "licence_note": "RCAHMW, Non-commercial Government Licence; short quotes"},
+  "her": {"title": "Bryn Celli Ddu Burial Chamber, Llanddaniel Fab, PRN 2694 - Heneb Historic Environment Record", "author": "Heneb (Gwynedd Archaeological Trust) HER; quotes Anwyl 1908 and Skinner 1802", "url": "https://archwilio.org.uk/her/chi3/report/page.php?watprn=GAT2694", "licence_note": "Heneb HER Charitable Trust copyright, information and research use; acknowledge 'Derived from information held by the Heneb HER Charitable Trust'"},
+  "burrow2010": {"title": "Bryn Celli Ddu Passage Tomb, Anglesey: Alignment, Construction, Date, and Ritual (abstract)", "author": "Steve Burrow, Proceedings of the Prehistoric Society 76 (2010), 249-270", "url": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/bryn-celli-ddu-passage-tomb-anglesey-alignment-construction-date-and-ritual/6A95DFB4ED16F57FFCC6501466424DF1", "licence_note": "Cambridge University Press; only the abstract is open; short quotes"},
+  "griffiths2016": {"title": "Bryn Celli Ddu passage tomb revisited (Antiquity Project Gallery 349)", "author": "S. Griffiths, B. Edwards, A. Wilson, F. Reynolds and A. Stanford (2016)", "url": "https://antiquity.ac.uk/projgall/griffiths349", "licence_note": "Antiquity Publications; open to read; short quotes"},
+  "museum_stone": {"title": "Bryn-celli-ddu pattern stone, item 29.403 - Collections Online", "author": "Amgueddfa Cymru - Museum Wales", "url": "https://museum.wales/collections/online/object/6512880d-e714-305a-babe-768fd4dc4e0c/Bryn-celli-ddu-pattern-stone/", "licence_note": "Amgueddfa Cymru; short quotes"},
+  "museum_rhagor": {"title": "The burial tombs of Stone Age Wales (Rhagor article, 2007; archived 2014)", "author": "Amgueddfa Cymru - National Museum Wales", "url": "https://web.archive.org/web/20140714144426/http://www.museumwales.ac.uk/rhagor/article/1969", "licence_note": "Amgueddfa Cymru; short quotes (Internet Archive copy)"},
+  "ba89": {"title": "Sensational new discoveries at Bryn Celli Ddu (British Archaeology 89, news; archived)", "author": "Mike Pitts (ed.), Council for British Archaeology, 2006", "url": "https://web.archive.org/web/20150923173717/http://www.archaeologyuk.org/ba/ba89/news.shtml", "licence_note": "CBA copyright; short quotes (Internet Archive copy)"},
+  "blog_pillar": {"title": "The blueschist stone pillar inside Bryn Celli Ddu", "author": "Ffion Reynolds, Bryn Celli Ddu Public Archaeology Project blog (Cadw), 5 Feb 2017", "url": "https://bryncellidduarchaeology.wordpress.com/2017/02/05/the-blueschist-stone-pillar-inside-bryn-celli-ddu/", "licence_note": "project blog; short quotes"},
+  "blog_2016": {"title": "The Mound in the Dark Grove: Bryn Celli Ddu, Anglesey 2016", "author": "Bryn Celli Ddu Public Archaeology Project blog (Cadw/UCLan/MMU), 4 Dec 2016", "url": "https://bryncellidduarchaeology.wordpress.com/2016/12/04/the-mound-in-the-dark-grove-bryn-celli-ddu-anglesey-2016/", "licence_note": "project blog; short quotes"},
+  "lockyer1909": {"title": "Stonehenge and other British stone monuments astronomically considered (2nd ed., 1909), ch. XLI 'Some cromlechs in North Wales' (OCR text)", "author": "Norman Lockyer", "url": "https://archive.org/download/stonehengeotherb0000unse/stonehengeotherb0000unse_djvu.txt", "licence_note": "public domain (1909; author d. 1920); OCR text, some characters garbled"},
+  "tna": {"title": "Bryn Celli Ddu, Llandaniel Fab, Anglesey - The Northern Antiquarian", "author": "Paul Bennett (2010, rev. 2019); quotes Pennant (1770s), W. F. Grimes (1932, PPSEA 7) and R. Bradley (1998)", "url": "https://www.thenorthernantiquarian.org/2010/10/21/bryn-celli-ddu/", "licence_note": "enthusiast site, copyright Paul Bennett; used only for its verbatim quotations of Pennant, Grimes and Bradley"},
+  "medheritage": {"title": "Bryn Celli Ddu - Neolithic tomb - medievalheritage.eu", "author": "medievalheritage.eu (summary of Burrow 2010, Hemp 1930, RCAHMW 1937 and Cadw boards)", "url": "https://medievalheritage.eu/en/main-page/heritage/wales/bryn-celli-ddu-burial-chamber/", "licence_note": "secondary enthusiast site; used where it reports Burrow's reconstruction, which is paywalled"},
+  "pegasus": {"title": "Bryn Celli Ddu - The Ancient Britain pages (pegasusarchive.org)", "author": "pegasusarchive.org (enthusiast)", "url": "http://www.pegasusarchive.org/ancientbritain/bryn_celli_ddu.htm", "licence_note": "secondary enthusiast site; figures older/looser than Cadw's"},
+  "anglesey_history": {"title": "Bryn Celli Ddu - Anglesey History", "author": "Warren Kovach", "url": "https://www.anglesey-history.co.uk/places/prehistoric-monuments/bryn-celli-ddu/", "licence_note": "copyright Warren Kovach; secondary; short quotes"}
+ },
+ "facts": {
+  "reference_point_grid": {"value": "SH5076170185", "unit": "OS grid reference", "note": "Coflein's reference for the tomb. OSGB -> WGS84 with bidb.osgrid gives 53.207725, -4.236067 (derived). The Heneb HER gives SH5075970184 (53.207715, -4.236097, derived) and Griffiths et al. give OS 250759 370184; all within about 2 m. This falls 5 m from the centroid of the OSM outline (53.207719, -4.236139, derived), i.e. at the chamber/centre of the kerb ring. The 53.2079, -4.2355 point used elsewhere is about 45 m NE, near the path.", "derived": true, "cites": [
+   {"source": "coflein", "quote": "Grid Reference SH5076170185"},
+   {"source": "her", "quote": "NGR : SH5075970184"},
+   {"source": "griffiths2016", "quote": "Bryn Celli Ddu, Anglesey, UK (OS 250759 370184) is a passage tomb"}]},
+  "kerb_diameter_m": {"value": 26, "unit": "m", "note": "Outer kerb ring marking the edge of the final (original) mound; Cadw gives the mound 'up to' 26 m. Pegasus (older enthusiast source) says about 30 m; not used.", "cites": [
+   {"source": "coflein", "quote": "It comprises an outer circular stone kerb c. 26m diameter, with an inner stone arc"},
+   {"source": "cadw_visit", "quote": "a chambered tomb beneath a mound measuring up to 85ft/26m in diameter"},
+   {"source": "wp", "quote": "creating an impressive retaining wall around the mound, 26 m (85 ft) across"},
+   {"source": "pegasus", "quote": "The mound which envelops this structure is marked by a circle of small kerbstones, set at about 30 metres in diameter."}]},
+  "ditch_diameter_m": {"value": 21, "unit": "m", "note": "Diameter of the encircling (henge) ditch; whether to inner edge, centre line or outer edge is not stated. The kerb follows the line of the ditch (Wikipedia), and Grimes (1932) describes the outer and inner kerb circles as sunk in the ditch. Simple Wikipedia and pegasus give a henge about 30 m across with a 5 m wide ditch (probably outer diameter, enthusiast sources).", "cites": [
+   {"source": "cadw_more", "quote": "The ditch originally measured 21 meters in diameter."},
+   {"source": "wp", "quote": "only the ditch survives, some 21 m (69 ft) across"},
+   {"source": "simplewp", "quote": "the henge was about 30 m in diameter, with a ditch about 5 m across"}]},
+  "ditch_width_depth": {"value": {"width_m": 5, "depth_m": 2}, "unit": "m", "note": "Simple Wikipedia (citing megalithics.com) gives about 5 m wide and 2 m deep; Grimes's 1932 summary of Hemp gives a ditch 'six feet deep and eighteen wide' (1.8 m deep, 5.5 m wide, derived conversion). medievalheritage gives the second-phase ditch as 1.5 m deep. Sources agree on c. 5 m width; depth 1.5-2 m.", "cites": [
+   {"source": "simplewp", "quote": "The ditch was about 2 m deep."},
+   {"source": "tna", "quote": "sunk in a ditch six feet deep and eighteen wide"},
+   {"source": "medheritage", "quote": "The ditch was about 5 meters wide and 2 meters deep."},
+   {"source": "medheritage", "quote": "surrounded by a ditch about 26 meters in diameter and 1.5 meters deep"}]},
+  "possible_outer_bank": {"value": 2, "unit": "m", "note": "ERT survey 2015: anomaly A, a possible denuded outer bank, now only below ground; distance from the ditch centre to the bank crest about 2 m. Burrow (2010) found no evidence for a bank, so its existence is disputed (see debate). The Cadw text says the bank is now lost.", "cites": [
+   {"source": "griffiths2016", "quote": "The distance from the centre of the ditch to the crest of the ‘bank’ is approximately 2m."},
+   {"source": "cadw_more", "quote": "It consisted of a bank (now lost) around an inner ditch, which enclosed a circle of upright stones."}]},
+  "passage_length_m": {"value": 8.4, "unit": "m", "note": "Passage as it now stands, of which the first 3.4 m (outer part) is unroofed, between a pair of portal stones; the inner part is roofed with lintels. Simple Wikipedia gives about 8.5 m long and 1 m wide; Coflein gives the inturned forecourt plus stone-lined entrance passage as c. 7 m. Before restoration Anwyl (1908, in the HER) gave about 18 ft (5.5 m, derived) for the roofed part and Pennant about nineteen and a half feet (5.9 m, derived).", "cites": [
+   {"source": "wp", "quote": "the passage is 8.4 m (28 ft) long, the first 3.4 m (11 ft) being unroofed with a pair of portal stones"},
+   {"source": "simplewp", "quote": "The passage is about 8.5m long and 1 m wide."},
+   {"source": "coflein", "quote": "The c.7m long inturned forecourt and stone-lined entrance passage gives access to a central polygonal chamber made of large slabs."},
+   {"source": "her", "quote": "the passage leading to the chambers underneath is about 18 ft. long, 3 ft. high"},
+   {"source": "tna", "quote": "a passage three feet wide, four feet two or three inches high and about nineteen feet and a half long"}]},
+  "passage_width_height_m": {"value": {"width_m": 0.9, "height_m": 1.0}, "unit": "m", "note": "Roofed inner passage. Derived from Pennant (3 ft wide, 4 ft 2-3 in high -> 0.91 m x 1.28 m) and Anwyl 1908 (3 ft high, 2 1/2 ft broad -> 0.91 m x 0.76 m; the HER's OCR prints '2}' for 2 1/2). Simple Wikipedia gives about 1 m wide. Taken here as about 0.8-1.0 m wide and 0.9-1.3 m high; no modern measured section was found.", "derived": true, "cites": [
+   {"source": "tna", "quote": "a passage three feet wide, four feet two or three inches high"},
+   {"source": "her", "quote": "about 18 ft. long, 3 ft. high, and 2} ft. in breadth"},
+   {"source": "simplewp", "quote": "The passage is about 8.5m long and 1 m wide."}]},
+  "passage_wall_slabs": {"value": {"one_side": 4, "other_side": 5}, "unit": "slabs", "note": "Anwyl (1908, quoted in the HER), before restoration: four slabs on one side and five on the other, gaps filled with drystone walling, roofed with slabs. Which side has which is not stated.", "cites": [
+   {"source": "her", "quote": "It is formed of four slabs on one side and five on the other, the interstices being filled with dry masonry, while the top is covered with rude slabs, which form the roof."}]},
+  "passage_azimuth_deg": {"value": 52, "unit": "degrees from true north (outward, looking out of the passage)", "note": "Lockyer (1909) prints two clinocompass measures along the 'creepway': 51° true (Griffith and Lockyer) and 52° true (Lord Boston and Baynes), horizon altitude estimated 2°; he warns the measures are uncertain. The OSM covered footway drawn along the passage (way 1367245454, entrance 53.2077960,-4.2359851 to 53.2077272,-4.2361380) runs at 53° outward (233° inward), derived from its node coordinates; OSM is not a survey. No modern published azimuth (e.g. Burrow 2010) could be read (paywalled). Lockyer's OCR line for the azimuth itself is garbled.", "cites": [
+   {"source": "lockyer1909", "quote": "Magnetic, 69°; true, 51°; (value along creepway) ; hill estimated 2°."},
+   {"source": "lockyer1909", "quote": "Magnetic, 70°; true, 52°; hill (as above), estimated 2°."},
+   {"source": "lockyer1909", "quote": "the observations were made with a clino- compass only"}]},
+  "entrance_side": {"value": "east / north-east", "unit": "", "note": "Coflein says east; Grimes (1932) says north-east; the measured axis (c. 52°) is north-east.", "cites": [
+   {"source": "coflein", "quote": "a simple passage tomb whose entrance lies on the east side"},
+   {"source": "tna", "quote": "entered on the northeast side by a long passage built in the same way"}]},
+  "chamber_width_m": {"value": 2.4, "unit": "m", "note": "Cadw: octagonal chamber 2.4 m across. Anglesey History says 3 m at its widest; Simple Wikipedia about 2 m wide. Coflein and Burrow call it polygonal.", "cites": [
+   {"source": "cadw_visit", "quote": "a long, narrow passage leads to an octagonal chamber 8ft/2.4m across"},
+   {"source": "anglesey_history", "quote": "leading to a polygonal stone chamber, 3m across at its widest"},
+   {"source": "simplewp", "quote": "The burial chamber is about 2 m wide, made from six large upright stones, covered with two capstones."}]},
+  "chamber_uprights": {"value": 6, "unit": "stones", "note": "Six large uprights (Anwyl 1908, Pennant, Simple Wikipedia), drystone walling between and above them (Skinner, Grimes). Cadw's 'octagonal' suggests eight sides; the walling may make up the extra sides (not stated).", "cites": [
+   {"source": "her", "quote": "The uprights consist of six rude slabs."},
+   {"source": "tna", "quote": "The form was an irregular hexagon, and the sides composed of six rude slabs, one of which measured in its diagonal eight feet nine inches."},
+   {"source": "her", "quote": "The intermediate space up to the roof is filled with stones placed one above the other in the manner they build walls but without any kind of cement."}]},
+  "chamber_capstones": {"value": 2, "unit": "stones", "note": "Skinner (1802): two capstones, one about three yards by two (2.7 x 1.8 m, derived), the other smaller, of a gritty stone not local. Pennant described one great roof stone near ten feet across; Anglesey History one large plus one smaller. Wikipedia: concrete roof supports were added at some point.", "cites": [
+   {"source": "her", "quote": "Two prodigious flat stones covered the whole one about three yards in length and two in breadth the other not quite so large."},
+   {"source": "her", "quote": "These are of a gritty substance not like any stone found in the vicinity."},
+   {"source": "anglesey_history", "quote": "The chamber was capped by one large stone, plus another smaller one."},
+   {"source": "tna", "quote": "This supports the roof, which consists of one great stone near ten feet in diameter."},
+   {"source": "wp", "quote": "Some additional concrete roof supports have also been added at some point."}]},
+  "chamber_height_m": {"value": 2.7, "unit": "m", "note": "Skinner (1802): height of the chamber nine feet (2.74 m, derived), sides 4-5 ft high (1.2-1.5 m) with walling above; Pennant gives seven feet (2.13 m, derived). The HER summary calls it a high-roofed chamber with a lower passage. No modern figure found.", "derived": true, "cites": [
+   {"source": "her", "quote": "The height of the chamber is nine feet, its form nearly triangular some of the sides being about three yards long and four or five feet high."},
+   {"source": "her", "quote": "comprising a high-roofed polygonal chamber and a lower entrance passage, containing a rounded stone pillar"}]},
+  "pillar_height_m": {"value": 1.7, "unit": "m", "note": "Free-standing smoothed pillar in the north angle of the chamber; it does not support the roof. Coflein and medievalheritage give 1.7 m (medievalheritage: above the ground); Wikipedia 'some 2 m'. Pennant gives its girth as 4 ft 8 in (1.42 m), i.e. about 0.45 m diameter if round (derived). It was uprooted by the finder before 1802 and re-set upright after 1929.", "cites": [
+   {"source": "coflein", "quote": "In the north angle of the chamber is a 1.7m high smoothed stone pillar"},
+   {"source": "medheritage", "quote": "one of the stones was left loose in a vertical position , projecting 1.7 meters above the ground"},
+   {"source": "wp", "quote": "a smooth pillar of blueschist, a metamorphic rock, some 2 m (6.6 ft) high, with a very rounded shape"},
+   {"source": "tna", "quote": "In the middle was an artless pillar of stone, four feet eight inches in circumference."},
+   {"source": "wp", "quote": "The Pillar was set back upright"}]},
+  "pattern_stone_size_mm": {"value": {"height": 1524, "width": 588, "thickness": 305, "weight_kg": 551}, "unit": "mm", "note": "The original (Amgueddfa Cymru 29.403), maximum approximate dimensions; gritstone (the museum text also says sandstone); carved on both faces, sides and top. The 2007 museum article gives 1.5 m high.", "cites": [
+   {"source": "museum_stone", "quote": "height / mm:1524 (max., approx) width / mm:588 (max., approx) thickness / mm:305 (max., approx) weight / kg:551"},
+   {"source": "museum_stone", "quote": "Material Gritstone"},
+   {"source": "museum_stone", "quote": "Decoration of incised spiral and sinuous ornament on both faces, sides and top"},
+   {"source": "museum_rhagor", "quote": "Decorated stone found beneath Bryn Celli Ddu (Anglesey). 1.5m (4.9 feet) high."}]},
+  "original_mound_height_m": {"value": 3.7, "unit": "m", "note": "Grimes (1932, summarising Hemp): original maximum height of at least 12 ft (3.66 m, derived). The same quoted sentence gives the cairn as 'a chamber of some 160ft', evidently a garbled diameter; not used. medievalheritage (reporting Burrow's first phase) gives a cairn about 3 m high and 13-14 m across, enlarged later to the 26 m kerb.", "derived": true, "cites": [
+   {"source": "tna", "quote": "an original maximum height of at least 12ft"},
+   {"source": "medheritage", "quote": "with an estimated height of about 3 meters and a diameter of 13-14 meters"}]},
+  "modern_mound_extent": {"value": "covers only the passage and chamber; back of chamber open", "unit": "", "note": "The 1928-29 restoration rebuilt the mound only around the chamber and passage. Pegasus says it is about a quarter of the original size and stops about 15 m short of the kerb at the rear (enthusiast estimate; 15 m is more than the 13 m radius of the kerb, so at best rough). No measured diameter or height of the modern mound was found. The OSM outline of the site (way 919723575) is 28.7 m E-W by 26.7 m N-S, area 575 m², equal-area diameter 27.0 m (derived), so it traces the kerb ring, not the smaller modern mound.", "cites": [
+   {"source": "her", "quote": "was restored only around the chamber and passage"},
+   {"source": "wp", "quote": "The mound, being substantially smaller than as originally made, no longer completely encloses the burial chamber, so the back wall is open to the air, allowing some natural light in."},
+   {"source": "pegasus", "quote": "The mound that we see today is only about a quarter of the size of the original"},
+   {"source": "anglesey_history", "quote": "However, the current mound only just covers the passage and chamber."}]},
+  "stone_circle_count": {"value": 17, "unit": "stones", "note": "Number of stones in the inner ring is disputed: Wikipedia 17 (an oval, many in matched pairs across the centre); Simple Wikipedia and pegasus 14; medievalheritage says sixteen were damaged. Grimes (1932): stones of various sizes, irregularly placed, some inclined outwards, with burnt bone under some, and lines between them crossing at the centre behind the chamber. Several survive: Wikipedia says three are visible within the mound.", "cites": [
+   {"source": "wp", "quote": "A ring of 17 stones formed an oval, many being in matched pairs either side of the centre."},
+   {"source": "simplewp", "quote": "There were 14 stones in the circle"},
+   {"source": "medheritage", "quote": "Sixteen stones were damaged, some were overturned, and six were destroyed."},
+   {"source": "tna", "quote": "This consisted of a number of stones of various sizes, irregularly placed and in some cases inclined outwards."},
+   {"source": "tna", "quote": "Lines connecting these stones diametrically were found to intersect at the centre of the monument, directly behind the chamber"},
+   {"source": "wp", "quote": "Three of the stones, visible within the cairn mound, are thought to be from the stone circle of that time."}]},
+  "central_pit_diameter_m": {"value": 1, "unit": "m", "note": "Pit at the centre of the earlier enclosure, behind the chamber; held a burnt human ear bone and was covered with a slab, the Pattern Stone lying beside it.", "cites": [
+   {"source": "anglesey_history", "quote": "a pit, about 1m in diameter, was dug at the centre of the henge"},
+   {"source": "museum_stone", "quote": "Found during excavation of the cairn lying flat against and partly overlapping the cover-stone of the central pit behind the main chamber."}]}
+ },
+ "elements": [
+  {"id": "mound_now", "kind": "mound", "state": "restored 1928-29 (Ministry of Works), much smaller than the original", "shape": "earth and stone mound over the passage and chamber only; the back (west/south-west) of the chamber is exposed; an artificial opening on the south side", "dimensions": "not published; see facts.modern_mound_extent", "cites": [
+   {"source": "her", "quote": "The entire monument was originally covered by an earth and stone mound which, after excavation by W.J.Hemp between 1927-31, was restored only around the chamber and passage."},
+   {"source": "griffiths2016", "quote": "The reconstructed mound (anomaly E) shows clear differentiation from other features."},
+   {"source": "griffiths2016", "quote": "the artificial southern opening (anomaly J)"},
+   {"source": "cadw_more", "quote": "Impressive Neolithic chambered tomb, with partially restored entrance passage and mound, on the site of a former henge monument."}]},
+  {"id": "mound_original", "kind": "mound", "state": "lost; as built (final phase)", "diameter_m": 26, "height_m": "at least 3.7 (Grimes, derived)", "edge": "kerb ring following the old ditch line; the burial chamber entirely enclosed", "cites": [
+   {"source": "wp", "quote": "Much larger than the mound now remaining, it would have had a complete circle of kerbstones following the line of the old henge ditch"},
+   {"source": "wp", "quote": "The burial chamber would have been entirely enclosed within the mound, rather than the back wall being open to the air, as in the reconstructed mound now seen."}]},
+  {"id": "kerb", "kind": "kerb", "diameter_m": 26, "state": "ring of kerbstones visible round the outside of the modern mound; Grimes describes an outer circle of large stones and an inner of smaller set in the ditch, merging into the passage walls", "cites": [
+   {"source": "wp", "quote": "Outside the tomb, a ring of kerbstones shows the original extent of the mound, and they also follow the line of the ditch of the earlier henge monument."},
+   {"source": "tna", "quote": "Here the walls of the passage were found to merge into an outer circle of large stones and an inner of smaller, set close together and elaborately packed"}]},
+  {"id": "outer_circle_lost", "kind": "stone circle (outer, lost)", "state": "lost; known from early accounts and a single stonehole", "note": "Grimes's first of four circles, at the foot of the mound.", "cites": [
+   {"source": "tna", "quote": "it was found that the chamber had been surrounded by four circles of standing stones"},
+   {"source": "tna", "quote": "The first of these, around the outside of the mound at its base, had disappeared, although early accounts and a single hole found in the course of the work of excavation, are evidence of its existence."}]},
+  {"id": "ditch", "kind": "ditch", "diameter_m": 21, "width_m": 5, "depth_m": "1.5-2", "state": "outer edge still visible as a hollow; near the entrance altered by the 20th-century reconstruction", "cites": [
+   {"source": "cadw_more", "quote": "The outer edge can still be seen and several stones from the inner stone circle also survive."},
+   {"source": "griffiths2016", "quote": "Near the entrance, the ditch shows as an area of higher resistance, probably as a result of twentieth-century reconstruction."}]},
+  {"id": "inner_stone_circle", "kind": "stone circle", "count": "14 or 17 (disputed)", "shape": "oval, stones in matched pairs either side of the centre (Wikipedia); irregular, some leaning outwards (Grimes)", "state": "deliberately damaged before or during the tomb's building: all but one damaged, some knocked over, six smashed; a few survive within the mound", "positions": "no published coordinates found; Hemp's 1930 plan shows them", "cites": [
+   {"source": "wp", "quote": "All but one of the standing stones were intentionally damaged, some were knocked over and six were smashed with heavy stones."},
+   {"source": "simplewp", "quote": "Five of the stones were removed, two were pushed over, and six were smashed, and one was buried."},
+   {"source": "wp", "quote": "Cremated human remains were buried at the base of some of them"}]},
+  {"id": "portal_stones", "kind": "portal stones", "count": 2, "state": "standing at the entrance of the unroofed outer passage; a large blocking stone was once set between them", "cites": [
+   {"source": "wp", "quote": "At the end of its period of use the tomb was 'closed' by means of a large stone set across the entrance, between the two portal stones."}]},
+  {"id": "passage", "kind": "passage", "length_m": 8.4, "unroofed_outer_m": 3.4, "width_m": "c. 0.8-1.0", "height_m": "c. 0.9-1.3", "azimuth_out_deg": "51-53", "construction": "vertical slabs (4 on one side, 5 on the other before restoration), drystone walling between, lintel roof over the inner part; a low bench of flat stones on clay along the north wall; the last two stones before the chamber set at an angle to narrow it", "cites": [
+   {"source": "wp", "quote": "The main passage has walls of vertical rock slabs, roofed by a series of stone lintels."},
+   {"source": "anglesey_history", "quote": "The passage was divided into two parts, an inner passage roofed with large capstones, plus a shorter outer one which was never roofed."},
+   {"source": "medheritage", "quote": "An interesting element of the passage was a kind of a low bench added to its northern wall, made of flat stones set on a clay base."},
+   {"source": "medheritage", "quote": "The more common element was the narrow part of the passage, made of the last two stones in front of the burial chamber, placed at an angle."}]},
+  {"id": "chamber", "kind": "chamber", "plan": "polygonal (Cadw: octagonal), six large uprights with drystone walling", "width_m": 2.4, "height_m": "c. 2.7 (Skinner 1802)", "roof": "two capstones (one c. 2.7 x 1.8 m) plus later concrete supports", "stone": "many stones dressed; blueschist used in the monument", "cites": [
+   {"source": "tna", "quote": "The chamber is a polygonal structure of large stones augmented…with dry-stone walling"},
+   {"source": "tna", "quote": "Many of the stones had been dressed and in the chamber stood a single pillar which had been artificially rounded and smoothed, but which had never actually supported the capstone."},
+   {"source": "blog_pillar", "quote": "But more than that, the whole of the Bryn Celli Ddu monument is made from several blueschist rocks."}]},
+  {"id": "pillar", "kind": "free-standing pillar", "height_m": "1.7 (Coflein) or c. 2 (Wikipedia)", "girth_m": 1.42, "position": "north angle of the chamber", "stone": "blueschist (glaucophane schist), cylindrical, folded and contorted", "state": "uprooted before 1802, re-set upright after the 1928-29 excavation", "cites": [
+   {"source": "blog_pillar", "quote": "It is a very unusual rock, cylindrical in its form, which appears folded and intensely contorted."},
+   {"source": "wp", "quote": "he uprooted the pillar"},
+   {"source": "coflein", "quote": "In the north angle of the chamber is a 1.7m high smoothed stone pillar"}]},
+  {"id": "spiral_stone", "kind": "carved chamber upright", "note": "One chamber stone has a small pecked spiral; Coflein thinks it probably Neolithic, Wikipedia notes its authenticity is questioned. Which upright is not stated in the sources read.", "cites": [
+   {"source": "coflein", "quote": "One of the chamber stones bears a small spiral carving which is probably Neolithic."},
+   {"source": "wp", "quote": "Inside the tomb another stone has a small spiral pattern chipped into it, although its authenticity has been questioned."}]},
+  {"id": "pattern_stone_replica", "kind": "carved standing stone (cast)", "height_m": 1.52, "position": "standing behind (outside) the back wall of the chamber, within the original mound area, close to where the original lay beside the central pit", "state": "replica (cast) erected after 1929; the original gritstone is at St Fagans (Amgueddfa Cymru 29.403)", "cites": [
+   {"source": "wp", "quote": "Beyond the back wall of the chamber, in a location that would once have been within the mound, is a replica of the 'Pattern Stone'."},
+   {"source": "wp", "quote": "It has since been moved to the National Museum of Wales and replaced with a replica standing outside the back wall, but within the area of the original mound, and close to the spot where it was found."},
+   {"source": "coflein", "quote": "The original is in the National Museum Wales, with a cast on site."},
+   {"source": "museum_stone", "quote": "Location St Fagans Gweithdy gallery : Stone Carving"}]},
+  {"id": "central_pit", "kind": "pit", "diameter_m": 1, "position": "centre of the earlier enclosure, directly behind the chamber", "contents": "burnt human ear bone, covered with a flat slab", "cites": [
+   {"source": "wp", "quote": "During this period a pit was dug within the henge; a single human ear-bone was buried, and covered with a flat slab."}]},
+  {"id": "forecourt", "kind": "forecourt, postholes and ox burial", "position": "outside the entrance (east/north-east)", "note": "Row of five postholes (Mesolithic, not part of the tomb), an ox burial, hearths, and walls suggesting a forecourt with a temporary barrier.", "cites": [
+   {"source": "tna", "quote": "outside the entrance, a line of post-holes and remains of walls suggesting the former existence of some kind of forecourt crossed by a temporary barrier"},
+   {"source": "ba89", "quote": "A row of five postholes in front of the barrow appears to be much older."},
+   {"source": "ba89", "quote": "An ox skeleton was buried nearby."}]},
+  {"id": "purple_clay_floor", "kind": "old ground surface", "note": "Within the ditch the old surface was covered by a floor of purple clay; the Pattern Stone was set in it (RCAHMW 1937).", "cites": [
+   {"source": "tna", "quote": "a uniform floor of purple clay was found to cover the old natural surface within the area enclosed by the ditch"},
+   {"source": "her", "quote": "Incised pattern-stone set in floor of purple clay."}]},
+  {"id": "cairn_south", "kind": "Bronze Age cairn (levelled)", "position": "c. 50 m south (Coflein NPRN 309540, SH5072670125); re-excavated 2016-19", "diameter_m": 20, "note": "Double kerb of large stones, some over a tonne; radiocarbon 1900 BC (Cadw). Not part of the tomb model; optional context.", "cites": [
+   {"source": "coflein_cairn_s", "quote": "The cairn, set some 50m south of Bryn Celli Ddu, was a circular structure some 20m in diameter."},
+   {"source": "cadw_news", "quote": "Radiocarbon dating has given a date of 1,900 BC, with finds of flint tools and a double kerb of large stones, some of them weighing over a tonne each."},
+   {"source": "blog_2016", "quote": "the recent two-week excavation revealed a circular stone cairn with two concentric stone kerbs"}]},
+  {"id": "cairn_cropmark", "kind": "possible cairn (cropmark)", "position": "c. 48 m south of the tomb, SH5076370135 (Coflein NPRN 408570)", "diameter_m": 10, "cites": [
+   {"source": "coflein_cairn", "quote": "The cropmark is likely to represent the buried remains of a plough-levelled burial cairn or barrow c.10m diameter."}]},
+  {"id": "standing_stone_sw", "kind": "standing stone", "position": "c. 150 m south-west, SH5061570105 (Coflein NPRN 302503)", "dimensions": "1.88 m long, 0.4 m thick (Coflein prints 'high'), stands 1.3 m high", "note": "Possibly a recent clearance stone (not on early OS maps). Not mapped in OSM within 400 m.", "cites": [
+   {"source": "coflein_stone", "quote": "The stone is 1.88m long and 0.4m high and stands 1.3m high."}]},
+  {"id": "osm_site_outline", "kind": "OpenStreetMap way 919723575", "osm_tags": {"historic": "archaeological_site", "archaeological_site": "tumulus", "tumulus": "mound", "man_made": "embankment", "name": "Bryn Celli Ddu Chambered Tomb", "wikidata": "Q2519821"}, "geometry": "closed way of 37 nodes; extent 28.7 m E-W x 26.7 m N-S, area 575 m², equal-area diameter 27.0 m, centroid 53.207719, -4.236139 (derived from node coordinates)", "note": "Matches the 26 m kerb ring rather than the modern mound. OSM data ODbL (© OpenStreetMap contributors); fetched from the Overpass API 2026-10-29.", "derived": true},
+  {"id": "osm_passage", "kind": "OpenStreetMap way 1367245454", "osm_tags": {"highway": "footway", "covered": "yes", "surface": "dirt"}, "geometry": "2 nodes: 53.2077960,-4.2359851 (on the outline, the entrance) to 53.2077272,-4.2361380 (about 1 m from the outline centroid); length 12.7 m, bearing 233° inward / 53° outward (derived)", "note": "The walk-in route through the passage into the chamber, so its line approximates the passage axis; its length (12.7 m) runs from the kerb line to the chamber centre, longer than the 8.4 m passage. No individual stones, kerb, ditch, pattern stone or standing stones are mapped in OSM within 400 m (only gates, information boards, paths, fences). ODbL.", "derived": true}
+ ],
+ "alignment": [
+  {"event": "summer solstice sunrise", "claim": "The passage faces the midsummer sunrise; at dawn around the solstice a beam shines down the passage into the chamber. Wikipedia: for some weeks around the solstice light reaches the back wall.", "cites": [
+   {"source": "cadw_visit", "quote": "As the sun rises on the summer solstice (the longest day of the year) shafts of light shine directly down the tomb’s passageway to illuminate the chamber within."},
+   {"source": "cadw_more", "quote": "it is the only one to be accurately aligned to coincide with the rising sun on the longest day of the year"},
+   {"source": "wp", "quote": "for some weeks around the summer solstice, sunlight can find its way through to the back wall of the burial chamber"}]},
+  {"event": "where the light falls", "claim": "Burrow (observed 2005) reports that the rays light a quartz-rich stone at the back of the tomb. medievalheritage (reporting Burrow's section drawing) says the pillar stands in a spot left in shadow even at the solstice. Lockyer thought the pillar once stood in the light's path (his conjecture; the pillar was not in place then).", "cites": [
+   {"source": "ba89", "quote": "The rays light up a quartz-rich stone at the back of the tomb."},
+   {"source": "medheritage", "quote": "it was placed in a permanently shaded spot, even during the summer solstice"},
+   {"source": "lockyer1909", "quote": "it once stood in the fairway of the allée cowverte for the light to fall upon at the solstice"}]},
+  {"event": "history of the claim", "claim": "Lockyer proposed the midsummer alignment (1906/1909); Burrow watched it from inside the chamber at midsummer dawn 2005 (cloudy in 2004).", "cites": [
+   {"source": "ba89", "quote": "At midsummer dawn last year, Burrow was inside the chamber waiting to see what would happen. It was his second time; in 2004 the sky was cloudy."},
+   {"source": "coflein", "quote": "A solar alignment on midsummer sunrise, first postulated by Sir Norman Lockyer in 1909, was finally proven and documented by Dr Steve Burrow of the National Museum Wales in 2005."},
+   {"source": "burrow2010", "quote": "the recent demonstration that the tomb is aligned on the midsummer sunrise"}]},
+  {"event": "possible lightbox", "claim": "A roof-box like Newgrange's may exist at Bryn Celli Ddu (suggested, not shown).", "cites": [
+   {"source": "ba89", "quote": "a \"lightbox\" at Newgrange that lets in the rays may be matched at Bryn Celli Ddu"}]}
+ ],
+ "phases": [
+  {"name": "Mesolithic postholes", "date": "c. 4000 BC (Wikipedia, from 2006 dates) or sixth millennium cal BC (Griffiths et al.)", "what": "Row of five postholes in front of the later entrance, pine charcoal dated; sources disagree on the millennium.", "cites": [
+   {"source": "wp", "quote": "Radiocarbon dating of pine charcoal from two of the pits, carried out in 2006, showed these to date from around 4000 BC"},
+   {"source": "griffiths2016", "quote": "five sixth-millennium cal BC Mesolithic postholes (Burrow 2010)"}]},
+  {"name": "Enclosure / henge and stone circle", "date": "c. 3000 BC (Wikipedia); 'later Neolithic around 5,000 years ago' (Cadw)", "what": "Ditch c. 21 m across (bank disputed) round a ring of stones, central pit with an ear bone, Pattern Stone probably standing.", "cites": [
+   {"source": "wp", "quote": "Around 3000 BC, a henge monument was constructed."},
+   {"source": "cadw_more", "quote": "The monument seems to have begun in the later Neolithic around 5,000 years ago, as a ‘henge’ or a ritual enclosure."}]},
+  {"name": "Passage tomb", "date": "built 3074-2956 cal BC (Burrow 2010, two-phase model)", "what": "Passage and polygonal chamber; mound enlarged to the 26 m kerb (Burrow: two phases; Bradley: first a c. 15 m unrevetted mound, enlarged twice). Wikipedia's 'around 1,000 years after the henge' conflicts with Burrow's dates.", "cites": [
+   {"source": "burrow2010", "quote": "The result is a two phase model which shows the tomb to have been built between 3074 and 2956 cal bc"},
+   {"source": "tna", "quote": "in its first phase it consisted of a circular unrevetted mound about 15m in diameter, containing a passage grave"},
+   {"source": "wp", "quote": "Around 1,000 years after the henge was built, the site was radically altered."}]},
+  {"name": "Bronze Age cairns nearby", "date": "c. 1900 BC", "what": "Cairn c. 50 m south, double kerb.", "cites": [
+   {"source": "cadw_news", "quote": "Radiocarbon dating has given a date of 1,900 BC"}]},
+  {"name": "Antiquarian damage", "date": "18th century to 1802", "what": "Discovered by a farmer seeking stone a generation before 1802; the pillar uprooted; stones taken for walls.", "cites": [
+   {"source": "wp", "quote": "he was told how the passage tomb had been discovered a generation before, by a farmer looking for useful stone"}]},
+  {"name": "Guardianship, excavation and restoration", "date": "1923 handed over; first explored 1865; excavated 1928-29 (HER: 1927-31)", "what": "Hemp's excavation; pillar re-set; mound rebuilt over passage and chamber only; Pattern Stone to the museum and a cast set up.", "cites": [
+   {"source": "cadw_more", "quote": "First explored seriously 1865, the tomb was thoroughly excavated in 1928–29."},
+   {"source": "anglesey_history", "quote": "Baynes suggested that the landowner, Lord Anglesey, should turn the site over to the Commissioners for the Preservation of Ancient Monuments, which he did in 1923."},
+   {"source": "wp", "quote": "the earth and stone mound covering the passage and chamber was reinstated, but clearly there was much less material available than had been used originally"},
+   {"source": "cadw_news", "quote": "was first excavated in 1865 and then completely reconstructed in the 1920s"}]}
+ ],
+ "debate": [
+  {"claim": "Henge first, then tomb (Hemp, O'Kelly 1969) or not a henge at all (Eogan 1983, Bradley 1998, Burrow 2010): the case rests on an outer bank, for which Burrow found no evidence; the 2015 ERT survey found a possible buried bank.", "cites": [
+   {"source": "coflein", "quote": "Hemps' original hypothesis, that the tomb was built within a ruined henge, is nowadays seen as problematic."},
+   {"source": "griffiths2016", "quote": "O’Kelly’s henge thesis rests on whether or not the ditch was accompanied by an external bank, for which there is no evidence, either as a positive feature, or from fill layers in the ditch (Burrow 2010)."},
+   {"source": "griffiths2016", "quote": "Anomaly A, located in transects 1 and 2, represents a potential outer bank."}]},
+  {"claim": "Number of stones in the inner circle: 17 (Wikipedia) vs 14 (Simple Wikipedia, pegasus); medievalheritage 'sixteen' damaged. Hemp's plan is needed to settle it.", "cites": [
+   {"source": "wp", "quote": "A ring of 17 stones formed an oval"},
+   {"source": "pegasus", "quote": "a circular array of 14 standing stones"}]},
+  {"claim": "Pillar height: 1.7 m (Coflein) vs some 2 m (Wikipedia). Pillar rock: blueschist (project) rather than petrified wood (Soskin and Bott).", "cites": [
+   {"source": "coflein", "quote": "a 1.7m high smoothed stone pillar"},
+   {"source": "simplewp", "quote": "Two researchers, Rupert Soskin and Michael Bott recently suggested that the pillar standing within the chamber is in fact the petrified remains of a tree trunk."},
+   {"source": "blog_pillar", "quote": "This post argues that it is made from blueschist"}]},
+  {"claim": "Chamber width: 2.4 m (Cadw) vs 3 m at widest (Anglesey History) vs about 2 m (Simple Wikipedia); 'octagonal' (Cadw) vs six uprights (Anwyl, Pennant).", "cites": [
+   {"source": "cadw_visit", "quote": "an octagonal chamber 8ft/2.4m across"},
+   {"source": "anglesey_history", "quote": "3m across at its widest"}]},
+  {"claim": "Was the Pattern Stone part of the earlier phase (standing in the enclosure, buried by the tomb builders) or placed for the tomb? Wikipedia and Anglesey History: earlier, standing; HER: thought to belong to the later phase; Museum: deliberately hidden by the tomb's builders.", "cites": [
+   {"source": "wp", "quote": "It is thought this would have stood upright within the henge, as the patterns cover both sides."},
+   {"source": "her", "quote": "A pit and a decorated stone found beside it are also thought to belong to this later phase."},
+   {"source": "museum_stone", "quote": "The builders of the tomb deliberately hid it from view."}]}
+ ],
+ "plans": [
+  {"title": "Hemp 1930, plan of the excavated monument (Archaeologia 80, 179-214; also Hemp 1931, Archaeologia Cambrensis 86, 216-58)", "url": "https://doi.org/10.1017/S0261340900013096", "licence": "uncertain: published by the Society of Antiquaries of London; Hemp died 1962, so in copyright to 2032 unless it counts as Crown copyright (Hemp was Inspector of Ancient Monuments, Office of Works), which would have expired. Not to be traced until cleared. DOI not verified (Cambridge Core paywalled).", "what it shows": "the definitive plan: passage and chamber stones, kerbs, ditch, inner stone circle positions, central pit, Pattern Stone, forecourt and postholes"},
+  {"title": "Lockyer 1909, Fig. 94 'Plan of Bryn Celli Ddu' (copied by Baynes from the Lukis plan in Archaeologia Cambrensis)", "url": "https://archive.org/details/stonehengeotherb0000unse", "licence": "public domain (1909; the 1847/1860s source plan also public domain)", "what it shows": "pre-excavation chamber and passage stones only; Lockyer notes the Arch. Camb. north arrow is 35° out, so orientation must not be taken from it"},
+  {"title": "Burrow 2010, phase plans and the longitudinal section at the solstice (redrawn from Hemp)", "url": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/bryn-celli-ddu-passage-tomb-anglesey-alignment-construction-date-and-ritual/6A95DFB4ED16F57FFCC6501466424DF1", "licence": "copyright (Prehistoric Society / CUP); paywalled; not traceable", "what it shows": "two-phase construction, where the solstice light falls"},
+  {"title": "Griffiths et al. 2016, Figure 1 (phases redrawn from Burrow 2010) and Figure 2 (ERT transects)", "url": "https://antiquity.ac.uk/projgall/griffiths349", "licence": "copyright Antiquity Publications; not traceable", "what it shows": "the alternative first-phase layouts and the final phase"},
+  {"title": "OpenStreetMap ways 919723575 (site outline) and 1367245454 (passage footway)", "url": "https://www.openstreetmap.org/way/919723575", "licence": "ODbL", "what it shows": "kerb-ring outline (c. 27 m) and the passage line (53° outward); no stones"}
+ ],
+ "gaps": [
+  "No modern measured passage azimuth, width or height, chamber height or modern-mound dimensions were found in an open source; Burrow 2010 (PPS 76, paywalled at Cambridge Core) and Hemp 1930 (Archaeologia 80, paywalled) hold them. Hemp's plan and sections would give every stone's position.",
+  "Welsh Journals Online (journals.library.wales) answers scripts with a Cloudflare challenge (HTTP 403), so Hemp 1931 (Archaeologia Cambrensis 86, 216-58), O'Kelly 1969 (Arch. Camb. 118, 17-48) and the 1847 description could not be quoted.",
+  "RCAHMW Anglesey Inventory (1937) is on the Internet Archive only as a restricted lending copy (inventoryofancie0000vari).",
+  "Positions and sizes of the individual inner-circle stones, kerbstones and passage/chamber uprights: not published in any reachable source; the number of circle stones is disputed (14 vs 17).",
+  "Coflein's page has no plan image licence statement reachable by script; its images (map.coflein.gov.uk plans mentioned by medievalheritage) are Crown copyright under RCAHMW's non-commercial licence.",
+  "The modern mound's diameter and height are not published; OSM maps only the kerb-ring outline. Its size would have to come from photos, the HeritageTogether/Stanford photogrammetry models or the 2015 laser scan (project blog), whose licences were not checked (a Sketchfab model of the replica Pattern Stone is on Zenodo 10.5281/zenodo.10378632 under CC BY 4.0).",
+  "Which stone exactly the solstice light falls on: only 'a quartz-rich stone at the back of the tomb' (Burrow via British Archaeology 2006); which upright is not identified in open sources.",
+  "Cadw's guidebook text and the Cadw scheduled-monument full report (AN002) were not reachable by script; Cadw's /history subpage returned nothing.",
+  "Mesolithic posthole date conflict (c. 4000 BC per Wikipedia vs sixth millennium cal BC per Griffiths et al. citing Burrow 2010) could not be settled without Burrow 2010."
+ ]
+}

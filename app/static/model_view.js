@@ -124,4 +124,4 @@ startMoment(clock, data.start, data.start?.note);
 update();
 document.body.classList.add("sh-ready");
 requestAnimationFrame(frame);
-window.SH = { st, update, scene, camera, controls, data };   // for checks
+window.SH = { st, update, scene, camera, controls, data, THREE };   // for checks

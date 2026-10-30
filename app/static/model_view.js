@@ -10,11 +10,23 @@ import "./model_broch.js";
 import "./model_tower.js";
 import { $, esc, toward, BASE, createClock, wirePanel, startMoment, readout, tick, starNames } from "./model_clock.js";
 
-const DS = $("#sh_canvas").dataset, ID = DS.model;                 // a built model, or a stone circle built on request
-if (DS.src) $("#sh_note").textContent = "Building the model from the mapped stones (the first time takes a while)…";
-const [data, raw] = await Promise.all([fetch(DS.src || `${BASE}model_${ID}.json`).then((r) => r.json()),
-  fetch(DS.dtm || `${BASE}model_${ID}_dtm.bin`).then((r) => r.arrayBuffer())]);
-if (DS.src) $("#sh_note").textContent = "";
+const DS = $("#sh_canvas").dataset, ID = DS.model;                 // a built model, or one built on request
+// Built on request (a stone circle, a LiDAR surface): say so over the canvas while the server works, and fetch the
+// data before the ground grid, so the server builds it once.
+const wait = DS.src ? Object.assign(document.createElement("div"), { className: "sh-wait",
+  textContent: "Building the 3D model: fetching the survey and working out the skyline. The first time this takes up to a couple of minutes…" }) : null;
+if (wait) $(".sh-stage").append(wait);
+let data, raw;
+try {
+  const res = await fetch(DS.src || `${BASE}model_${ID}.json`);
+  if (!res.ok) throw new Error(`the server answered ${res.status}`);
+  data = await res.json();
+  raw = await fetch(DS.dtm || `${BASE}model_${ID}_dtm.bin`).then((r) => r.arrayBuffer());
+} catch (err) {
+  if (wait) wait.textContent = `The model could not be built (${err.message}). Try again later.`;
+  throw err;
+}
+wait?.remove();
 const LAT = data.origin.lat, LON = data.origin.lon;
 const canvas = $("#sh_canvas");
 const W = createScene(canvas, data, raw);

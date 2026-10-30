@@ -9,6 +9,7 @@ in `<cache>/lidar_models/`. It is a shell seen from the air: no interiors, and w
 """
 import base64
 import json
+import threading
 import math
 import sqlite3
 import struct
@@ -56,7 +57,17 @@ def eligible(conn, eid):
     return r if r and r[4] == "England" and r[3] else None
 
 
+_LOCK = threading.Lock()
+
+
 def build(eid):
+    """One build at a time: the model page asks for the data and then the ground grid, and two pages may ask at
+    once; the second waits and reads the cache."""
+    with _LOCK:
+        return _build(eid)
+
+
+def _build(eid):
     """The model's data and surface grid (bytes) for an English record with a footprint, cached; None if not one."""
     conn = sqlite3.connect(db_path())
     row = eligible(conn, eid)
@@ -113,7 +124,7 @@ def build(eid):
     hz = sky_horizon.compact(sky_horizon.cached_profile(round(lat, 4), round(lon, 4)))
     hz["alt"] = models3d.despike(hz["alt"])
     tall = max((h for h, c in zip(heights, classes) if c == OWN), default=ground_c) - ground_c
-    r = max(25.0, extent)
+    r = max(45.0, extent)                          # the camera far enough out for a small church
     data = {"id": eid, "name": name, "record": eid, "origin": {"lat": round(lat, 7), "lon": round(lon, 7)},
             "dtm": meta, "horizon": hz, "stars": models3d.stars(), "views": {"now": []},
             "shadow": {"half": size / 2, "centre": [0, 0]},

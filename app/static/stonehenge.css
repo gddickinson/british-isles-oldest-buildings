@@ -44,3 +44,5 @@
 .models-item.soon { opacity: 0.6; }
 .models-circles { columns: 3 220px; padding-left: 1.1em; }
 .models-circles li { break-inside: avoid; }
+.sh-wait { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); max-width: 420px; padding: 14px 18px;
+  background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; text-align: center; z-index: 5; }

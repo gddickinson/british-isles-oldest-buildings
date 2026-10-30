@@ -9,6 +9,7 @@ each stone at its mapped position, its outline if mapped as an area, its height 
 ground from the terrain tiles and the skyline round the circle's centre, so the sun and moon rise where they would.
 """
 import json
+import threading
 import math
 import struct
 import sys
@@ -89,7 +90,17 @@ def known():
     return json.loads(OUT.read_text()) if OUT.exists() else {}
 
 
+_LOCK = threading.Lock()
+
+
 def build(eid):
+    """One build at a time: the model page asks for the data and then the ground grid, and two pages may ask at
+    once; the second waits and reads the cache."""
+    with _LOCK:
+        return _build(eid)
+
+
+def _build(eid):
     """The model's data and ground grid (bytes) for a surveyed circle, cached; None if it is not one."""
     info = known().get(eid)
     if not info:

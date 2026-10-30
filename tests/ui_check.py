@@ -64,6 +64,7 @@ PAGES = {
     "model_orkney": ("/model/orkney", r"(?s)Maeshowe, Stenness and Brodgar in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),
     "model_durrington": ("/model/durrington", r"(?s)Woodhenge and Durrington Walls in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),
     "model_mousa": ("/model/mousa", r"(?s)Mousa Broch in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),
+    "model_clava": ("/model/clava", r"(?s)Balnuaran of Clava in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),
     "stonehenge": ("/stonehenge", r"(?s)Stonehenge in 3D.*(The 3D model needs WebGL|sh-ready).*Was the circle ever complete"),
     "sky": ("/sky", r"(?s)Sky calendar.*Midwinter \(winter solstice\).*Newgrange.*The moon's standstills"),
     "sky_churches": ("/sky#churches", r"(?s)Churches and their saints' days.*sky-hist.*midwinter sunrise.*Over each church's skyline.*either saint"),

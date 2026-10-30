@@ -1,0 +1,1723 @@
+{
+ "id": "hougue_clava",
+ "name": "La Hougue Bie and Balnuaran of Clava",
+ "date_checked": "2026-10-29",
+ "about": "Two passage graves aligned on the sun: La Hougue Bie in Jersey (Neolithic, c. 4000 BC; equinox sunrise along the passage; medieval chapels on top and the lost Prince's Tower, 1792-1924) and the Bronze Age cemetery of Balnuaran of Clava near Inverness (c. 2000 BC; two passage graves facing the midwinter sunset with a ring cairn between, each in a ring of graded standing stones).",
+ "sources": {
+  "wp_lhb": {
+   "title": "La Hougue Bie - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/La_Hougue_Bie",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_lhb_fr": {
+   "title": "La Hougue Bie - Wikipédia (French)",
+   "author": "Wikipedia contributors",
+   "url": "https://fr.wikipedia.org/wiki/La_Hougue_Bie",
+   "licence_note": "CC BY-SA 4.0 text; its description and radiocarbon dates are cited to Patton, Rodwell and Finch 1999 (the excavation monograph)"
+  },
+  "wp_lhb_de": {
+   "title": "La Hougue Bie - Wikipedia (German)",
+   "author": "Wikipedia contributors",
+   "url": "https://de.wikipedia.org/wiki/La_Hougue_Bie",
+   "licence_note": "CC BY-SA 4.0 text; figures unreferenced in the article (literature: Sebire 2005)"
+  },
+  "wp_lhb_nl": {
+   "title": "La Hougue Bie - Wikipedia (Dutch)",
+   "author": "Wikipedia contributors",
+   "url": "https://nl.wikipedia.org/wiki/La_Hougue_Bie",
+   "licence_note": "CC BY-SA 4.0 text; unreferenced figures"
+  },
+  "wp_lhb_pl": {
+   "title": "La Hougue Bie - Wikipedia (Polish)",
+   "author": "Wikipedia contributors",
+   "url": "https://pl.wikipedia.org/wiki/La_Hougue_Bie",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "jh_museum": {
+   "title": "La Hougue Bie (visit page)",
+   "author": "Jersey Heritage",
+   "url": "https://www.jerseyheritage.org/places-to-visit/la-hougue-bie-museum/",
+   "licence_note": "© Jersey Heritage, all rights reserved; short quotes"
+  },
+  "jh_discovery": {
+   "title": "The Discovery of La Hougue Bie",
+   "author": "Jersey Heritage",
+   "url": "https://www.jerseyheritage.org/history/the-discovery-of-la-hougue-bie/",
+   "licence_note": "© Jersey Heritage, all rights reserved; short quotes"
+  },
+  "jh_tower": {
+   "title": "The Prince's Tower",
+   "author": "Jersey Heritage",
+   "url": "https://www.jerseyheritage.org/history/the-princes-tower/",
+   "licence_note": "© Jersey Heritage, all rights reserved; short quotes"
+  },
+  "gov_je": {
+   "title": "Listed building or place GR0212, La Hougue Bie",
+   "author": "Government of Jersey, Planning (historic environment register)",
+   "url": "https://www.gov.je/citizen/Planning/Pages/HistoricEnvironmentDetail.aspx?r=GR0212",
+   "licence_note": "Government of Jersey; short quotes. The full schedule (PDF) is behind an ASP.NET postback and cannot be fetched by a script"
+  },
+  "sp_bbc_2009": {
+   "title": "The mysteries of La Hougue Bie site in Jersey (17 October 2009, from BBC Jersey)",
+   "author": "Stone Pages Archaeo News, quoting curator Olga Finch",
+   "url": "https://www.stonepages.com/news/archives/003562.html",
+   "licence_note": "news digest; short quotes"
+  },
+  "current_arch": {
+   "title": "La Hougue Bie, Jersey Island story (Current Archaeology 361, 1 September 2022)",
+   "author": "Current Archaeology",
+   "url": "https://the-past.com/shorts/the-picture-desk/la-hougue-bie-jersey-island-story",
+   "licence_note": "© Current Publishing; short quotes"
+  },
+  "history_alive": {
+   "title": "La Hougue Bie Neolithic (tour page)",
+   "author": "History Alive Jersey (guided tours)",
+   "url": "https://www.historyalive.je/tours/private-guided-tours/megalithic-jersey/la-hougue-bie-neolithic/",
+   "licence_note": "tour guide's site; secondary"
+  },
+  "pj": {
+   "title": "La Hougue Bie - Prehistoric Jersey",
+   "author": "prehistoricjersey.net (enthusiast site)",
+   "url": "https://prehistoricjersey.net/La_Hougue_Bie.shtml",
+   "licence_note": "enthusiast site; secondary, short quotes"
+  },
+  "subbrit": {
+   "title": "La Hougue Bie Neolithic Passage Grave - Subterranea Britannica",
+   "author": "Subterranea Britannica",
+   "url": "https://www.subbrit.org.uk/sites/la-hougue-bie-neolithic-passage-grave/",
+   "licence_note": "society site; secondary"
+  },
+  "hes_sm90074": {
+   "title": "Scheduled Monument SM90074: Clava Cairns (description and Statement of National Importance)",
+   "author": "Historic Environment Scotland (amended 2016)",
+   "url": "https://portal.historicenvironment.scot/designation/SM90074",
+   "licence_note": "Open Government Licence v3.0 (HES portal text)"
+  },
+  "hes_sos": {
+   "title": "Statement of Significance: Clava Cairns (PIC328, last reviewed 2021)",
+   "author": "Historic Environment Scotland",
+   "url": "https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/018ae4fe-caa2-443a-8c81-aeed00a22e8a",
+   "licence_note": "Open Government Licence v3.0 (stated in the document; logos and images excluded)"
+  },
+  "her_ne": {
+   "title": "MHG3013 - North east cairn - Balnuaran of Clava",
+   "author": "Highland Historic Environment Record (incl. Henshall 1963 visit 1957, OS 1962, Bradley 1995 DES)",
+   "url": "https://her.highland.gov.uk/Monument/MHG3013",
+   "licence_note": "Highland Council HER; short quotes"
+  },
+  "her_c": {
+   "title": "MHG4366 - Central ring cairn - Balnuaran of Clava",
+   "author": "Highland Historic Environment Record (incl. Henshall 1963, Bradley 1994 DES)",
+   "url": "https://her.highland.gov.uk/Monument/MHG4366",
+   "licence_note": "Highland Council HER; short quotes"
+  },
+  "her_sw": {
+   "title": "MHG3002 - South west cairn - Balnuaran of Clava",
+   "author": "Highland Historic Environment Record (incl. Henshall 1963, Bradley 1994-95 DES, Bradley et al. 2000)",
+   "url": "https://her.highland.gov.uk/Monument/MHG3002",
+   "licence_note": "Highland Council HER; short quotes"
+  },
+  "her_kc": {
+   "title": "MHG3012 - Kerb cairn - Balnuaran of Clava",
+   "author": "Highland Historic Environment Record",
+   "url": "https://her.highland.gov.uk/Monument/MHG3012",
+   "licence_note": "Highland Council HER; short quotes"
+  },
+  "fraser_1884": {
+   "title": "Descriptive Notes on the Stone Circles of Strathnairn and Neighbourhood of Inverness, with Plans, &c. (PSAS 18, 328-62)",
+   "author": "James Fraser, C.E. (1884)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/6114/6084/6073",
+   "licence_note": "PSAS 1884, public domain text and plans (Society of Antiquaries of Scotland open archive); the OCR text layer is imperfect, quotes are as it reads"
+  },
+  "piggott_1956": {
+   "title": "Excavations in Passage-Graves and Ring-Cairns of the Clava Group, 1952-3 (PSAS 88, 173-207)",
+   "author": "Stuart Piggott (1956)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/8468/8436/8423",
+   "licence_note": "PSAS open archive (Society of Antiquaries of Scotland); short quotes"
+  },
+  "barclay_1990": {
+   "title": "The clearing and partial excavation of the cairns at Balnuaran of Clava, Inverness-shire, by Miss Kathleen Kennedy, 1930-31 (PSAS 120, 17-32)",
+   "author": "G. J. Barclay (1990, printed 1991)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/9377/9345/9330",
+   "licence_note": "PSAS open archive (Society of Antiquaries of Scotland); short quotes; OCR prints 0·3 as 0-3"
+  },
+  "estaroth_2018": {
+   "title": "The Clava cairns of Scotland, midsummer full moon and the major lunar limit (Mediterranean Archaeology and Archaeometry 18(4))",
+   "author": "J. Anna Estaroth (2018)",
+   "url": "https://zenodo.org/records/1478022/files/18_Estaroth%2018(4).pdf",
+   "licence_note": "open access (Zenodo, CC BY 4.0); short quotes"
+  },
+  "wp_clava": {
+   "title": "Clava cairn - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Clava_cairn",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "stonepages_clava": {
+   "title": "Balnuaran of Clava - Stone Pages",
+   "author": "Stone Pages",
+   "url": "https://www.stonepages.com/scotland/clava.html",
+   "licence_note": "enthusiast guide; short quotes (already in sky_alignments.json)"
+  },
+  "archh_2021": {
+   "title": "Balnuaran of Clava cairns (Site of the Month, 1 February 2021)",
+   "author": "ARCH Highland",
+   "url": "https://www.archhighland.org.uk/news.asp?newsid=335",
+   "licence_note": "ARCH Highland; short quotes"
+  }
+ },
+ "sites": {
+  "la_hougue_bie": {
+   "name": "La Hougue Bie",
+   "record": "Q1395892",
+   "record_note": "Q1395892 is a place (table places), not a buildings row; there is no catalogue building for La Hougue Bie",
+   "about": "La Hougue Bie in Grouville, Jersey, is a Neolithic passage grave (4000-3500 BC on Jersey Heritage's dating; French Wikipedia's radiocarbon dates from the 1991-94 excavations put the first phase c. 4365-4055 cal BC) under a great mound about 12 m high and 55-58 m across. A long, low passage, entered from the east, leads to a long chamber with side cells to north and south and a raised end compartment with a terminal cell, giving a cruciform plan; it is roofed with capstones. The tomb was closed in the later Neolithic and the cairn later covered with a clay mantle. A granite chapel, Notre Dame de la Clarté, was built on the summit in the 12th century; in the early 16th century Dean Richard Mabon added the Jerusalem Chapel with its crypt imitating the Holy Sepulchre. From 1792 Philippe d'Auvergne incorporated the chapels in the Prince's Tower, a Gothic Revival house with a round crenellated tower; it was demolished in July-August 1924 by the Société Jersiaise (owners from 1919), which then dug into the mound in September 1924 and found the tomb, entered since through a modern (concrete) tunnel. The chapels were restored (reconsecrated 1931). The original entrance and forecourt with dry-stone walls were excavated and restored in the 1990s; since then the sunrise at the equinoxes has been seen to shine along the passage to the back of the terminal cell. A German command bunker (1942) is set into the mound's flank. Quotes are exact text of the cited pages (whitespace normalised); 'derived' marks values computed from quoted numbers or OSM geometry.",
+   "reference_point": {
+    "what": "the passage grave (OSM node 5445516318, 'Passage Grave'; prehistoricjersey.net gives almost the same point, 13 m away)",
+    "lat": 49.200326,
+    "lon": -2.063647,
+    "derived": true,
+    "how": "OSM node position; the OSM chapel outline (way 217483595) has its centroid at 49.200344, -2.063818, the mound outline (way 877941435) at 49.200357, -2.063866",
+    "cites": [
+     {
+      "source": "pj",
+      "quote": "49.200345º -2.063819º"
+     }
+    ]
+   },
+   "facts": {
+    "mound_height_m": {
+     "value": 12.2,
+     "unit": "m",
+     "note": "height of the mound (Jersey Heritage, English Wikipedia, Current Archaeology); French Wikipedia 12 m, Dutch 13 m, German 14 m",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "The Neolithic monument has a circular earth mound of 12.2 metres high and 58 metres wide"
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "covered by a 12.2 metre high earth mound"
+      },
+      {
+       "source": "current_arch",
+       "quote": "The 12.2m-tall man-made mound"
+      }
+     ],
+     "alt": [
+      {
+       "value": 12,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_lhb_fr",
+         "quote": "Il est enterré sous un tumulus de 55 m de diamètre et 12 m de hauteur, composé de terre et de roches"
+        }
+       ]
+      },
+      {
+       "value": 14,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_lhb_de",
+         "quote": "Er liegt unter einem 14 m hohen Steinhügel"
+        }
+       ]
+      }
+     ]
+    },
+    "mound_diameter_m": {
+     "value": 58,
+     "unit": "m",
+     "note": "Jersey Heritage 58 m 'wide'; French Wikipedia 55 m. The OSM outline (way 877941435, man_made=embankment) is only about 30-35 m across (radius 15-18 m from its centroid, derived) and probably traces the steep upper part, not the foot",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "The Neolithic monument has a circular earth mound of 12.2 metres high and 58 metres wide"
+      }
+     ],
+     "alt": [
+      {
+       "value": 55,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_lhb_fr",
+         "quote": "Il est enterré sous un tumulus de 55 m de diamètre et 12 m de hauteur"
+        }
+       ]
+      }
+     ]
+    },
+    "first_cairn_m": {
+     "value": {
+      "diameter": 36,
+      "height": 9
+     },
+     "unit": "m",
+     "note": "the first-phase stone cairn over the tomb, with earth terraces held by dry-stone walls either side of the entrance (French Wikipedia, from the 1991-94 excavations); later buried under the clay mound",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Dans une première phase, le dolmen était recouvert d'un cairn dolménique de 36 m de diamètre et 9 m de hauteur"
+      }
+     ]
+    },
+    "tomb_length_m": {
+     "value": 20,
+     "unit": "m",
+     "note": "whole tomb, entrance to back of the chamber. Sources disagree: English Wikipedia and prehistoricjersey.net 20.4 m ('passage chamber'), French Wikipedia 20 m, German 22 m, Jersey Heritage 18 m, Subterranea Britannica 'around 19 metres' (called the passage). Probably the restored 1990s entrance adds to the 1924 length; not resolved",
+     "cites": [
+      {
+       "source": "wp_lhb",
+       "quote": "The site consists of an 20.4 metre long passage chamber"
+      },
+      {
+       "source": "wp_lhb_fr",
+       "quote": "L'édifice mesure 20 m de long depuis l'entrée jusqu'au fond de la chambre sépulcrale."
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "revealed an 18m long passage grave with three smaller side chambers"
+      }
+     ],
+     "alt": [
+      {
+       "value": 22,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_lhb_de",
+         "quote": "Die Anlage ist 22 m lang"
+        }
+       ]
+      },
+      {
+       "value": 19,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "subbrit",
+         "quote": "The entrance passage is around 19 metres long"
+        }
+       ]
+      }
+     ]
+    },
+    "passage_length_m": {
+     "value": 9.7,
+     "unit": "m",
+     "note": "the passage (vestibule) before the chamber: 9.7 m (French Wikipedia, prehistoricjersey.net), 9.6 m (Dutch), 'nine metre' (curator in BBC 2009), 'nearly 10m' (Current Archaeology), about 11 m (German)",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Il se compose d'un vestibule de 9,7 m de long permettant d'accéder à la chambre terminale cruciforme."
+      },
+      {
+       "source": "pj",
+       "quote": "The 9.7m long passage opens out into a main chamber that has three smaller side chambers giving the whole appearance a cruciform shape."
+      },
+      {
+       "source": "sp_bbc_2009",
+       "quote": "to negotiate the nine metre passageway leading to the chamber"
+      },
+      {
+       "source": "current_arch",
+       "quote": "the original entrance to the nearly 10m-long passage was revealed"
+      }
+     ],
+     "alt": [
+      {
+       "value": 9.6,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_lhb_nl",
+         "quote": "De gang is 9,6 meter lang"
+        }
+       ]
+      },
+      {
+       "value": 11,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_lhb_de",
+         "quote": "Der etwa elf Meter lange Gang"
+        }
+       ]
+      }
+     ]
+    },
+    "passage_height": {
+     "value": null,
+     "note": "no measured height found; it is low enough that visitors must crouch",
+     "cites": [
+      {
+       "source": "sp_bbc_2009",
+       "quote": "requiring visitors to crouch, chimp-like"
+      }
+     ]
+    },
+    "chamber_m": {
+     "value": {
+      "length": 9,
+      "width": 3.6,
+      "height": 1.9
+     },
+     "unit": "m",
+     "note": "main chamber: Dutch Wikipedia 'oval' 9 by 3.6 m; German Wikipedia over 3 m wide, over 9 m long, in part 1.9 m high (both unreferenced; secondary)",
+     "cites": [
+      {
+       "source": "wp_lhb_nl",
+       "quote": "Aan het einde van de gang is een grotere, ovale, ruimte van 9 bij 3,6 m."
+      },
+      {
+       "source": "wp_lhb_de",
+       "quote": "führt in die über drei Meter breite und über neun Meter lange Kammer, die teilweise 1,9 m hoch ist"
+      }
+     ]
+    },
+    "stones": {
+     "value": {
+      "stones": 70,
+      "capstones": 16
+     },
+     "note": "German Wikipedia: 70 megalithic elements in all, the largest among the 16 capstones; Dutch: the passage of about 70 stones",
+     "cites": [
+      {
+       "source": "wp_lhb_de",
+       "quote": "Die größten ihrer insgesamt 70 megalithischen Bauelemente sind einige der 16 Decksteine."
+      }
+     ]
+    },
+    "orientation": {
+     "value": 90,
+     "unit": "deg",
+     "approx": true,
+     "note": "no measured azimuth found. The entrance faces east ('points directly east', curator 2009; Polish Wikipedia says from the south-east). Value 90 is the word 'east', not a measurement; the equinox sunrise over a flat horizon at this latitude is at about 89° (derived with bidb.sky.event_azimuth). OSM has no passage line",
+     "cites": [
+      {
+       "source": "sp_bbc_2009",
+       "quote": "La Hougue Bie's entrance points directly east, which enables a beam of sunlight to travel up the passageway to illuminate the chamber deep in the mound."
+      },
+      {
+       "source": "wp_lhb_pl",
+       "quote": "Od strony południowo-wschodniej znajduje się wejście"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "mound",
+     "kind": "mound",
+     "diameter_m": 58,
+     "height_m": 12.2,
+     "material": "earth and stone (French Wikipedia: earth and rocks); a clay mantle over an earlier stone cairn",
+     "state": "intact; cut by the 1924 entry tunnel, the German bunker (1942) and the 1990s forecourt excavation",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "The Neolithic monument has a circular earth mound of 12.2 metres high and 58 metres wide"
+      },
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Par la suite, l'ensemble fut recouvert d'une épaisse couche d'argile constituant ainsi le tumulus final."
+      }
+     ],
+     "osm": "way 877941435 (historic=archaeological_site, archaeological_site=earthwork, man_made=embankment; 27 nodes, ~30-35 m across, derived: smaller than the quoted mound)"
+    },
+    {
+     "id": "forecourt",
+     "kind": "entrance forecourt",
+     "what": "the original entrance and forecourt with dry-stone walls, excavated and restored in the 1990s; earth terraces held by dry-stone walls either side of the entrance in the first phase",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "In the 1990s a team of archaeologists excavated the main entrance and forecourt area you see today with its impressive dry-stone walls."
+      },
+      {
+       "source": "wp_lhb_fr",
+       "quote": "précédé, de chaque côté de l'entrée, de terrasses en terre délimitées par des murettes en pierres sèches"
+      }
+     ]
+    },
+    {
+     "id": "passage",
+     "kind": "passage",
+     "length_m": 9.7,
+     "facing": "east",
+     "height": "low (visitors crouch)",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Il se compose d'un vestibule de 9,7 m de long permettant d'accéder à la chambre terminale cruciforme."
+      },
+      {
+       "source": "sp_bbc_2009",
+       "quote": "La Hougue Bie's entrance points directly east"
+      }
+     ]
+    },
+    {
+     "id": "chamber",
+     "kind": "chamber",
+     "length_m": 9,
+     "width_m": 3.6,
+     "height_m": 1.9,
+     "plan": "cruciform: main chamber with side cells to north and south, end compartment raised as a 'sanctuary', and a terminal cell of three flat uprights beyond",
+     "cites": [
+      {
+       "source": "pj",
+       "quote": "The side chambers are divided from the main chamber by the use of large uprights."
+      },
+      {
+       "source": "pj",
+       "quote": "The end chamber is also slightly raised to form a sanctuary."
+      },
+      {
+       "source": "pj",
+       "quote": "Beyond the sanctuary is a further terminal cell that is formed with 3 large, flat uprights."
+      },
+      {
+       "source": "sp_bbc_2009",
+       "quote": "Two side chambers to the north and south were the burial plots for the dead."
+      },
+      {
+       "source": "wp_lhb_de",
+       "quote": "Von der Kammer durch Plattenreihen abgetrennt sind die beiden Seitenkammern und der Kopfbereich, der sich in einer koaxialen Nische fortsetzt."
+      }
+     ]
+    },
+    {
+     "id": "side_cells",
+     "kind": "side cells",
+     "count": 3,
+     "note": "Jersey Heritage, English Wikipedia and prehistoricjersey.net count three side chambers (north, south and the end/terminal cell); the curator (2009) and German Wikipedia name two side chambers plus the end. The north side cell has cup marks (Polish Wikipedia: 24 hollows; Jersey Heritage: two stones of the side chamber)",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "revealed an 18m long passage grave with three smaller side chambers"
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "Two stones of the side chamber are decorated with carved ‘cup marks’."
+      },
+      {
+       "source": "wp_lhb_pl",
+       "quote": "Na jednej ze ścian przylegającej do niej od północy mniejszej komory wyryto 24 owalne otwory."
+      }
+     ]
+    },
+    {
+     "id": "chamber_contents",
+     "kind": "finds",
+     "what": "19 broken vase-supports from the centre of the chamber; bone of at least eight people near the side chambers; a quern under the slab at the entrance to the end cell; a small cist under three slabs; limpet shells on the capstones",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "The remains of 19 pottery vessels, known as vase-supports, were excavated from the centre of the chamber."
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "A large broken quern was found buried beneath the slab at the entrance to the end cell."
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "Limpet shells were found on top of some of the capstones, placed there during the construction of the mound."
+      }
+     ]
+    },
+    {
+     "id": "chapel_clarte",
+     "kind": "chapel",
+     "name": "Notre Dame de la Clarté",
+     "date": "12th century",
+     "material": "granite",
+     "size_m": {
+      "length": 11.5,
+      "width": 5.1,
+      "derived": true,
+      "how": "sides of the OSM outline way 217483595 (a 4-corner rectangle, long axis 88°/268°, i.e. east-west); a rough outline of both chapels together, not a survey"
+     },
+     "state": "restored after 1924 (reconsecrated 1931); round-headed arches",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Au XII e siècle , une chapelle en granit , dédiée à Notre-Dame-de-la-Clarté, fut édifiée au sommet du tumulus ."
+      },
+      {
+       "source": "gov_je",
+       "quote": "A rare example of a medieval chapel surviving in Jersey, containing important architectural details including round-headed arches and a crypt with ambulatory."
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "Atop the mound are two medieval chapels, one from the 12th Century and the other from the 16th Century."
+      },
+      {
+       "source": "wp_lhb_nl",
+       "quote": "In 1925 werd het herbouwd en in 1931 opnieuw ingewijd."
+      }
+     ],
+     "osm": "way 217483595 (amenity=place_of_worship, building=chapel, historic=chapel, name=Chapel of Notre Dame de la Clarté)"
+    },
+    {
+     "id": "jerusalem_chapel",
+     "kind": "chapel",
+     "name": "Jerusalem Chapel",
+     "date": "16th century (German Wikipedia: added in 1520)",
+     "builder": "Richard Mabon, Dean of Jersey, after a pilgrimage to Jerusalem",
+     "what": "Mabon made the east end into a bell-shaped (rounded) chapel over a crypt standing for the tomb of Christ; Jersey Heritage calls the east end a medieval elliptical rotunda",
+     "cites": [
+      {
+       "source": "wp_lhb_de",
+       "quote": "die im Jahre 1520 angefügte „Jerusalem Chapel“"
+      },
+      {
+       "source": "wp_lhb_nl",
+       "quote": "De kapel is gebouwd nadat Richard Mabon , de deken van Jersey, van een pelgrimstocht naar Jeruzalem terugkwam."
+      },
+      {
+       "source": "wp_lhb_nl",
+       "quote": "Hij maakte van het oostelijke uiteinde van de kerk een kapel in de vorm van een klok ."
+      },
+      {
+       "source": "wp_lhb_nl",
+       "quote": "Erin bevindt zich een crypte die symbool staat voor het graf van Christus ."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "a circular tower which was built directly on top of the medieval elliptical rotunda"
+      }
+     ]
+    },
+    {
+     "id": "princes_tower",
+     "kind": "lost building",
+     "name": "Prince's Tower (La Tour d'Auvergne)",
+     "date": "1792 to 1924",
+     "what": "Gothic Revival house round the chapels: octagonal entrance hall; Jerusalem chapel made a library; brick range on the north round an octagonal stair hall with a flat lead roof; dining room 5.8 x 4 m against the chapel's north side; three-stage round stair turret on the chapel vault; a round crenellated tower of two floors (rooms 4.6 m across) on the east rotunda; signal mast over the chapel's south-west corner",
+     "dimensions_m": {
+      "tower_room_diameter": 4.6,
+      "dining_room": [
+       5.8,
+       4
+      ]
+     },
+     "state": "demolished July-August 1924; no plans were made; fragments in the 1990s excavations and some foundations still buried",
+     "cites": [
+      {
+       "source": "jh_tower",
+       "quote": "Constructed in 1792, the Prince’s Tower (La Tour d’Auvergne) was one of the most outstanding and distinctive structures built in Jersey."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "This main tower had two floors each containing one magnificent round room (4.6m diameter)."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "it measured 5.8m by 4m"
+      },
+      {
+       "source": "jh_tower",
+       "quote": "A circular three-stage stair-turret was built on top of the medieval chapel’s stone vaulted ceiling, destroying the belfry."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "A signalling mast was erected over the southwest corner of the medieval chapel."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "Unfortunately when the Prince’s Tower was demolished in 1924, no detailed plans or descriptions were made."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "The Prince’s Tower was demolished at the cost of £135, during July and August 1924 against the wishes of the majority of Islanders."
+      }
+     ]
+    },
+    {
+     "id": "bunker",
+     "kind": "modern",
+     "name": "German command bunker",
+     "date": "1942",
+     "what": "underground command bunker built into the mound and the area beside it in the Second World War; now an exhibition on the forced workers",
+     "cites": [
+      {
+       "source": "wp_lhb",
+       "quote": "an underground command bunker was built in the mound and the adjacent area"
+      },
+      {
+       "source": "wp_lhb_nl",
+       "quote": "Met de bouw van de bunker werd begonnen op 10 maart 1942 ."
+      }
+     ],
+     "osm": "way 877941436 (building=yes, military=bunker), node 12997637660 (Second World War Nazi Bunker), node 5887408253 (Forced Workers Memorial, steps down to the bunker)"
+    }
+   ],
+   "alignment": [
+    {
+     "event": "equinox sunrise",
+     "claim": "At sunrise at the spring and autumn equinoxes, in clear weather, sunlight runs along the passage and reaches the back of the terminal cell, lighting the stone at the far end. Seen since the 1990s restoration of the original entrance. Jersey Heritage says the chamber was built to align so; English Wikipedia (from the post-restoration observations) calls the orientation probably fortuitous.",
+     "verdict": "disputed",
+     "cites": [
+      {
+       "source": "jh_museum",
+       "quote": "Its ancient chamber was once a sacred space for rituals and ceremonies and was built to align with the rising sun at spring and summer equinox."
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "The structure aligns with the rising sun at the spring and autumn equinoxes – sunlight reaches the end of the passage grave if the weather is clear."
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "This gives the stone at the far end a beautiful glow"
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "allows the sun's rays to shine through to the chamber entering the back recess of the terminal cell"
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "probably fortuitously"
+      },
+      {
+       "source": "current_arch",
+       "quote": "it was found that the alignment allows the sun’s rays to shine all the way through to the tomb’s rear wall at the equinox"
+      },
+      {
+       "source": "sp_bbc_2009",
+       "quote": "The equinox sunrise concentrates initially in that area."
+      },
+      {
+       "source": "history_alive",
+       "quote": "the first rays of the rising sun on the equinox strike the standing stone standing at the very back of the chamber"
+      }
+     ],
+     "note": "Jersey Heritage's visit page says 'spring and summer equinox', a slip for spring and autumn (its history page says autumn). The sky_alignments.json entry la-hougue-bie-equinox-sunrise uses the same two sources"
+    }
+   ],
+   "phases": [
+    {
+     "name": "first cairn and tomb",
+     "date": "c. 4365-4055 cal BC (5410 ± 70 BP); Jersey Heritage 4000-3500 BC",
+     "what": "passage grave under a stone cairn 36 m across and 9 m high, with terraces either side of the entrance",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Cette première étape de construction a été datée au C14 de 5 410 +/- 70 BP (Beta-77360/ETH-13185), soit environ entre 4 365 et 4 055 av. J.-C."
+      },
+      {
+       "source": "jh_discovery",
+       "quote": "La Hougue Bie dates back to 4000-3500 BCE"
+      }
+     ]
+    },
+    {
+     "name": "terraces consolidated",
+     "date": "c. 4334-4047 cal BC (5360 ± 60 BP)",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Cette seconde étape de construction a été datée au C14 de 5 360 +/- 60 BP (Beta-57925/ETH-9972), soit environ entre 4 334 et 4 047 av. J.-C."
+      }
+     ]
+    },
+    {
+     "name": "closing",
+     "date": "c. 3675-3330 cal BC (4760 ± 70 BP)",
+     "what": "passage closed by a dry-stone wall and the entrance blocked with rubble",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "A la fin du Néolithique , le couloir fut fermé par un mur en pierres sèches et l'entrée condamnée par un mas de blocs rocheux."
+      }
+     ]
+    },
+    {
+     "name": "clay mound",
+     "date": "after a Beaker pit; charcoal c. 2919-2583 cal BC",
+     "what": "the cairn, weathered for centuries, covered by a thick clay layer: the final mound",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Par la suite, l'ensemble fut recouvert d'une épaisse couche d'argile constituant ainsi le tumulus final."
+      }
+     ]
+    },
+    {
+     "name": "chapel of Notre Dame de la Clarté",
+     "date": "12th century",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Au XII e siècle , une chapelle en granit , dédiée à Notre-Dame-de-la-Clarté, fut édifiée au sommet du tumulus ."
+      }
+     ]
+    },
+    {
+     "name": "Jerusalem Chapel",
+     "date": "16th century (1520 in German Wikipedia)",
+     "cites": [
+      {
+       "source": "wp_lhb_de",
+       "quote": "die im Jahre 1520 angefügte „Jerusalem Chapel“"
+      }
+     ]
+    },
+    {
+     "name": "Prince's Tower",
+     "date": "1792-1924",
+     "cites": [
+      {
+       "source": "jh_tower",
+       "quote": "Philippe d’Auvergne began the construction of the Prince’s Tower in 1792."
+      }
+     ]
+    },
+    {
+     "name": "excavation",
+     "date": "September 1924",
+     "what": "Société Jersiaise (owners since 1919, bought for £750) dug into the mound and found the tomb; a tunnel was cut into the slope (French Wikipedia: a concrete tunnel) for access",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "The Société Jersiaise excavated the mound at La Hougue Bie during September 1924 and discovered a passage grave."
+      },
+      {
+       "source": "jh_tower",
+       "quote": "Eventually in 1919 the Société Jersiaise purchased La Hougue Bie for £750."
+      },
+      {
+       "source": "wp_lhb_pl",
+       "quote": "W 1924 roku przeprowadzone zostały prace wykopaliskowe, w trakcie których archeolodzy dostali się do wnętrza kurhanu, wybijając tunel w zboczu"
+      },
+      {
+       "source": "wp_lhb_fr",
+       "quote": "Le dolmen ne fut découvert qu'en 1924 et un tunnel en béton fut construit pour en faciliter la visite."
+      }
+     ]
+    },
+    {
+     "name": "German bunker",
+     "date": "from 10 March 1942",
+     "cites": [
+      {
+       "source": "wp_lhb_nl",
+       "quote": "Met de bouw van de bunker werd begonnen op 10 maart 1942 ."
+      }
+     ]
+    },
+    {
+     "name": "excavation and restoration of the original entrance",
+     "date": "1991-1994 (Patton, Rodwell and Finch 1999); Nash's facade reports 1997-99",
+     "cites": [
+      {
+       "source": "wp_lhb_fr",
+       "quote": "La véritable étude archéologique du tumulus fut entreprise de 1991 à 1994"
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "Since the excavations and restoration of the original entrance of the passage"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Whether the equinox alignment was intended (Jersey Heritage) or fortuitous (English Wikipedia).",
+     "cites": [
+      {
+       "source": "jh_museum",
+       "quote": "was built to align with the rising sun at spring and summer equinox"
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "probably fortuitously"
+      }
+     ]
+    },
+    {
+     "claim": "Lengths disagree by source (whole tomb 18, 19, 20, 20.4 or 22 m; passage 9, 9.6, 9.7, 'nearly 10' or 11 m) and so does the mound (55 or 58 m across; 12, 12.2, 13 or 14 m high). The model should use 20 m / 9.7 m / 58 m / 12.2 m and note the spread.",
+     "cites": [
+      {
+       "source": "jh_discovery",
+       "quote": "revealed an 18m long passage grave with three smaller side chambers"
+      },
+      {
+       "source": "wp_lhb",
+       "quote": "The site consists of an 20.4 metre long passage chamber"
+      }
+     ]
+    }
+   ]
+  },
+  "clava": {
+   "name": "Balnuaran of Clava (Clava Cairns)",
+   "record": "Q39505213",
+   "record_note": "Q39505213 'Balnuaran of Clava' (buildings); Q457879 'Clava cairn' is the monument type at almost the same point; place hes-SM90074 is the scheduled monument",
+   "about": "Balnuaran of Clava, on a gravel terrace above the River Nairn east of Inverness, is the type-site of the Clava cairns: a row of three large cairns running north-east to south-west, a passage grave at each end and a ring cairn in the middle, each with a kerb of boulders, a low rubble platform and a ring of standing stones, with a small kerb cairn to the west. The passages of the two passage graves are in line, pointing south-west to the midwinter sunset; the kerbstones and the standing stones are graded in height, tallest to the south-west, and stones were chosen for colour (red sandstone to the south-west, paler stones to the north-east). The central ring cairn has an open interior with no entrance and three stone 'rays' joining its kerb to three of the standing stones. Bradley's excavations of 1994-97 showed each monument (cairn, kerb, platform and circle) was built in one operation around 2000 BC (Early Bronze Age); the small kerb cairn and other small cairns were added about 1000 years later, when the south-west cairn was reused, and a cremation was placed by the ring cairn in the 1st millennium AD. The chambers, probably once corbelled, are now open to the sky. Fallen stones were re-erected and the cairns 'restored' by the owner in 1870-81 (a road was moved, clipping the south-west cairn, and two of its stones were moved); after Guardianship in 1925 Kathleen Kennedy cleared and tidied the cairns in 1930-31, heaping cairn material higher and making the kerbs more prominent. Quotes are exact text of the cited pages (whitespace normalised; Fraser 1884 and Barclay 1990 as their OCR reads); feet are converted at 0.3048 m and marked derived.",
+   "reference_point": {
+    "what": "centre of the central ring cairn (Highland HER 'Centred NH 7571 4443')",
+    "ngr": "NH 7571 4443",
+    "lat": 57.473086,
+    "lon": -4.074064,
+    "derived": true,
+    "how": "NGR converted to WGS84 with bidb.osgrid.to_latlon; agrees within 2 m with the centroid of OSM way 41662530 (57.473075, -4.074087). HES scheduling point NH 75775 44452 = 57.473260, -4.073064",
+    "cites": [
+     {
+      "source": "her_c",
+      "quote": "(Centred NH 7571 4443)"
+     },
+     {
+      "source": "hes_sm90074",
+      "quote": "NGR NH 75775 44452"
+     }
+    ]
+   },
+   "layout": {
+    "line": "the three cairns in a row north-east to south-west; the centre of the middle cairn 44 ft (13.4 m) north(-west) of the line joining the other two",
+    "axis_azimuth_deg": {
+     "value": 216.4,
+     "derived": true,
+     "how": "azimuth from the centroid of OSM way 41662528 (NE cairn, 57.473499, -4.073229) to that of way 41662532 (SW cairn, 57.472590, -4.074473): 125.6 m apart, 216.4° (reverse 36.4°); the central cairn's centroid (way 41662530) lies 13.4 m off that line to the north-west, matching Fraser's 44 ft"
+    },
+    "centre_spacing_m": {
+     "SW_to_central": 58.8,
+     "central_to_NE": 69.7,
+     "derived": true,
+     "how": "OSM centroid distances; Fraser's 80 ft and 123 ft, and the HER's figures, are gaps between the rings of standing stones, not centre to centre"
+    },
+    "cites": [
+     {
+      "source": "wp_clava",
+      "quote": "At Balnuaran of Clava itself there is a group of three Bronze Age cairns which lie close together in a line running north east to south west."
+     },
+     {
+      "source": "fraser_1884",
+      "quote": "The middle circle of the group is 80 feet north-east of the westward one; and the farthest east is 123 feet north-east of the middle one."
+     },
+     {
+      "source": "fraser_1884",
+      "quote": "The centre of the middle circle, again, is 44 feet north of the straight line drawn through the centres of the other two."
+     },
+     {
+      "source": "her_c",
+      "quote": "the standing stones encircling these sites being only 80 and 123 feet from the monolithic circle of this cairn"
+     }
+    ]
+   },
+   "facts": {
+    "passage_cairn_diameter_m": {
+     "value": 15.5,
+     "unit": "m",
+     "note": "HES: the two passage-grave cairns are around 15.5 m across within their kerbs. Henshall (HER): NE kerb 55 ft (16.8 m), SW kerb 52 ft 6 in (16.0 m; 50 ft on the passage axis where flattened); Fraser 1884 (outside the 'intermediate ring' = kerb): SW 53 ft (16.2 m), NE 58 ft (17.7 m). OSM outlines: NE 17.8 m, SW 16.1 m at their longest (derived)",
+     "cites": [
+      {
+       "source": "hes_sm90074",
+       "quote": "comprising sub-circular chambers entered along a passage through a sub-circular cairn around 15.5m in diameter, faced internally and externally with kerb stones"
+      },
+      {
+       "source": "her_ne",
+       "quote": "The kerb is of massive boulders and has a diameter of 55 feet."
+      },
+      {
+       "source": "her_sw",
+       "quote": "The kerb of large boulders is almost complete and encloses a cairn 52 feet 6 inches in diameter, though a flattening of the kerb at the entrance reduces the diameter on the axis of the chamber ot about 50 feet."
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The intermediate ring is 58 feet in diameter outside"
+      }
+     ]
+    },
+    "midwinter_sunset_flat_horizon_deg": {
+     "value": 223.0,
+     "derived": true,
+     "how": "bidb.sky.event_azimuth(57.4733, 'sun', 'winter_solstice', 'set', year=-2000) over a flat horizon (224.2° in 2025). The real skyline to the south-west is hills, which moves the set point south, towards the 216-219° of the passages; to be checked with bidb.sky_horizon"
+    }
+   },
+   "elements": [
+    {
+     "id": "ne_cairn",
+     "kind": "passage grave",
+     "name": "North-east cairn (Balnuaran of Clava NE)",
+     "kerb_diameter_m": {
+      "value": 16.8,
+      "derived": true,
+      "how": "55 ft x 0.3048 (Henshall); Fraser 58 ft = 17.7 m"
+     },
+     "kerb": "massive boulders graded from 3 ft (0.9 m) by the south-west entrance to 1 ft 6 in (0.46 m) at the back; the two entrance stones 2 ft",
+     "cairn_height_m": {
+      "value": 3.0,
+      "derived": true,
+      "how": "'nearly 10 feet' x 0.3048 (Henshall 1957)"
+     },
+     "platform": "stony platform 10-18 ft (3-5.5 m) beyond the kerb, about 1 ft 6 in deep; continuous across the entrance and out to the stone circle (Bradley 1995)",
+     "chamber": {
+      "diameter_m": {
+       "value": [
+        3.7,
+        4.0
+       ],
+       "derived": true,
+       "how": "12-13 ft"
+      },
+      "wall_height_m": {
+       "value": 2.1,
+       "derived": true,
+       "how": "7 ft at the back, eight courses, overhang up to 1 ft"
+      },
+      "lowest_course": "upright boulders 3 ft 9 in and 3 ft by the entrance, 2 ft 5 in at the back",
+      "roof": "probably corbelled once; now open"
+     },
+     "passage": {
+      "width_m": {
+       "value": 0.76,
+       "derived": true,
+       "how": "Fraser '2 J feet' (OCR of 2½ ft) x 0.3048"
+      },
+      "length": "not given in the sources reached (Bradley 2000, p. 34 plan)",
+      "azimuth": "in line with the SW cairn's passage (Thom; HES: faces the SW cairn)"
+     },
+     "circle": {
+      "stones": "11 standing stones and one small earthfast stone (Henshall); Fraser: originally 11 or 12, 10 remain, 3 restored; HES: 11, maybe 12 originally, at least 3 re-erected",
+      "distance_from_kerb_m": {
+       "value": [
+        7.3,
+        11.3
+       ],
+       "derived": true,
+       "how": "24-37 ft"
+      },
+      "diameter_m": {
+       "value": [
+        33.5,
+        35.7
+       ],
+       "derived": true,
+       "how": "110-117 ft (Henshall); Fraser 110 ft outside"
+      },
+      "tallest": "the stones either side of the entrance, 9 ft (2.7 m) and 5 ft 3 in (1.6 m); one just outside the entrance may have been re-erected in the wrong place, perhaps upside down, in the 1880s"
+     },
+     "date": "Early Bronze Age; all of the NE cairn's dates 2150-1700 BC, most likely 1850-1770 BC (HES SoS)",
+     "cites": [
+      {
+       "source": "her_ne",
+       "quote": "The stones graduate irregularly in size from 3 feet by the entrance on the south-west side to 1 foot 6 inches at the back, though the pair of stones which actually form the entrance are lower, 2 feet high."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The cairn material is now piled up inside the kerb and reaches a height of nearly 10 feet."
+      },
+      {
+       "source": "her_ne",
+       "quote": "There is a distinct platform of stoney material, rather irregular in outline, extending for 10 to 18 feet beyond the kerb and having a depth of about 1 foot 6 inches."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The chamber has a diameter of 12-13 feet."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The wall at the back still remains up to 7 feet high consisting of eight rough and irregular courses including some very large stones."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The cairn is surrounded by a circle of eleven standing stones (and one small earthfast stone on the north-north-east)."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The stones are irregularly spaced and vary from 24 to 37 feet from the kerb having an overall diameter of 110 to 117 feet."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The two stones on either side of the entrance one 9 feet and 5 feet 3 ins. High."
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "and the passage leading to it 2 J feet wide"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The chamber is at present 8 feet in height"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "the passage of the north-east cairn is also aligned to face the south-west cairn"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "one just outside the entrance may have been reerected in the wrong position, possibly upside down, in the 1880s"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The central chamber of the north-east cairn survives to a greater degree than that of the south-west cairn, and it is slightly larger in size."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "all these dates fall between 2150 and 1700 BC, with the date most likely being between 1850-1770 BC"
+      }
+     ],
+     "osm": "way 41662528 (man_made=cairn, megalith_type=passage_grave, name=Balnuaran of Clava NE, ref:canmore=14257; 33 nodes, 17.8 m longest, derived)"
+    },
+    {
+     "id": "central_ring_cairn",
+     "kind": "ring cairn",
+     "name": "Central ring cairn",
+     "kerb_m": {
+      "value": [
+       18.3,
+       15.8
+      ],
+      "derived": true,
+      "how": "outer kerb 60 by 52 ft (Henshall, Piggott); overall cairn 70 by 64 ft = 21.3 x 19.5 m (Piggott); Fraser: outer ring of standing stones 107 ft, kerb 57 ft outside, inner ring 22 ft inside"
+     },
+     "inner_kerb": "flat slabs 2 ft 9 in to 3 ft 6 in (0.84-1.07 m) high round an almost circular open space 21 by 18 ft (6.4 x 5.5 m)",
+     "cairn_height_m": {
+      "value": 1.2,
+      "derived": true,
+      "how": "about 4 ft inside the kerb"
+     },
+     "kerb_note": "the notable kerbstone on the SSW, opposite a monolith stump, 4 ft 3 in (1.3 m) high; neighbours to the west 2 ft and 2 ft 10 in; kerb imperfect on the south (robbed on the SW arc)",
+     "circle": {
+      "stones": "9 monoliths (Henshall, Piggott; HES: originally probably 11, three re-erected in the 19th century; stump of a tenth found 1995)",
+      "diameter_m": {
+       "value": 30.5,
+       "derived": true,
+       "how": "about 100 ft"
+      },
+      "distance_from_kerb": "21-25 ft (6.4-7.6 m)",
+      "tallest": "WSW stone 7 ft 6 in (2.3 m); the others down to under 1 ft"
+     },
+     "rays": {
+      "count": 3,
+      "width": "6-8 ft (1.8-2.4 m; Fraser about 7 ft), at least 1 ft high",
+      "bearings": "Fraser: E. 10° S. (100°), S. 10° E. (170°), W. 25° N. (295°) (magnetic or true not stated); Piggott: W., E. and SSE.",
+      "build": "small boulders packed into a slightly convex strip; built with the cairn and circle (Bradley 1994)"
+     },
+     "entrance": "none; never roofed",
+     "cites": [
+      {
+       "source": "piggott_1956",
+       "quote": "consists of a slightly oval cairn 70 by 64 ft. overall, within which a massive boulder kerb 60 by 52 ft. contains the main bulk of the structure"
+      },
+      {
+       "source": "piggott_1956",
+       "quote": "enclosed by a nearly circular setting of stone slabs 21 by 18 ft. across"
+      },
+      {
+       "source": "piggott_1956",
+       "quote": "The whole cairn stands within a circle of standing-stones with an approximate diameter of 100 ft."
+      },
+      {
+       "source": "piggott_1956",
+       "quote": "These stones vary in height from 7 ft. 6 ins. to less than 1 ft., and to three of them, on the W., E. and SSE., narrow \"causeways\" of small pitched stones, from 6 to 8 ft. wide, run from the boulder kerb of the cairn."
+      },
+      {
+       "source": "her_c",
+       "quote": "On the south-south-west opposite the stump of a monolith is the most notable of the kerb-stones, a great rectangular block 4 feet 3 inches high"
+      },
+      {
+       "source": "her_c",
+       "quote": "The cairn material is heaped up to a height of about 4 feet inside the kerb."
+      },
+      {
+       "source": "her_c",
+       "quote": "The central area is defined by a setting of flat slabs (in contrast to the boulders of the kerb, 2 feet 9 inches to 3 feet 6 inches high"
+      },
+      {
+       "source": "her_c",
+       "quote": "The cairn is surrounded by nine monoliths set 25 to 21 feet outside the kerb, with an overall diameter of about 100 feet."
+      },
+      {
+       "source": "her_c",
+       "quote": "The tallest stone remaining is on the west-south- west and is 7 feet 6 inches high."
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "Its outer ring is 107 feet in diameter outside"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The intermediate ring is 57 feet in diameter outside"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "one of them pointing to E. 10° S., another to S. 10° E., and"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "the third to W. 25° N."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The cairn itself is surrounded by a ring of nine standing stones (originally there were probably 11; three were re-erected in 19th century); three of these are linked to the outer kerb by stone banks"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The stump of a tenth stone was revealed through visitor erosion and recorded in 1995."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "There is no evidence to suggest that the chamber ever had an entrance passage or that it was roofed."
+      },
+      {
+       "source": "her_c",
+       "quote": "At the central ring cairn, there is evidence that the cairn, the stone circle and the external rays which connect these features together were all built at the same time."
+      }
+     ],
+     "osm": "way 41662530 (man_made=cairn, name=Balnuaran of Clava Central, alt_name=Central Ring Cairn, ref:canmore=14277; 18 nodes, 16.0 m longest, derived; tagged megalith_type=passage_grave though it is a ring cairn)"
+    },
+    {
+     "id": "sw_cairn",
+     "kind": "passage grave",
+     "name": "South-west cairn (Balnuaran of Clava SW)",
+     "kerb_diameter_m": {
+      "value": 16.0,
+      "derived": true,
+      "how": "52 ft 6 in (Henshall); about 50 ft (15.2 m) on the chamber axis where the kerb is flattened at the entrance; Fraser 53 ft outside"
+     },
+     "kerb": "largest by the entrance, 3 ft 6 in (1.07 m); originally leant back into the cairn (HES); kerb without sockets, held by the rubble ramp (Bradley)",
+     "cairn_height_m": {
+      "value": 2.7,
+      "derived": true,
+      "how": "'over 9 feet' (Henshall); Fraser: highest point 9 ft"
+     },
+     "platform": "12 ft to 13 ft 6 in (3.7-4.1 m) outside the kerb, part destroyed on the SE by the road; surfaced with flat slabs (Bradley)",
+     "passage": {
+      "length_m": {
+       "value": 6.0,
+       "derived": true,
+       "how": "19 ft 9 in x 0.3048"
+      },
+      "width_m": {
+       "value": 0.61,
+       "derived": true,
+       "how": "2 ft (Henshall); Fraser: 2 ft at the outer end, 3 ft at the inner"
+      },
+      "height_m": {
+       "value": 1.2,
+       "derived": true,
+       "how": "up to 4 ft (Henshall); Fraser 4-4½ ft"
+      },
+      "build": "two rows of upright boulders with one or two courses of masonry above",
+      "azimuth_deg": {
+       "value": 219,
+       "note": "Fraser 1884: 'S. 39° W.' (whether magnetic or true is not stated; the OSM cairn-centre line is 216.4°, derived)"
+      }
+     },
+     "chamber": {
+      "size_m": {
+       "value": [
+        3.5,
+        4.0
+       ],
+       "derived": true,
+       "how": "11 ft 6 in by 13 ft"
+      },
+      "wall_height_m": {
+       "value": 2.06,
+       "derived": true,
+       "how": "6 ft 9 in, up to six oversailing courses; Fraser 7½ ft, vertical for about 4 ft then corbelled, needing 4-5 ft more to close"
+      },
+      "inner_ring": "12½ ft (3.8 m) inside (Fraser)",
+      "roof": "corbelling survives in part"
+     },
+     "circle": {
+      "stones": "10 monoliths now, all but four reset (Henshall); HES: 12 originally, 11 survive, 2 moved in 1870 for the road, 3 re-erected; Fraser: 11 and a gap for a 12th, 4 restored (one tilted the wrong way), 2 shifted for the road",
+      "distance_from_kerb_m": {
+       "value": [
+        7.3,
+        8.5
+       ],
+       "derived": true,
+       "how": "24-28 ft"
+      },
+      "diameter_m": {
+       "value": 32.9,
+       "derived": true,
+       "how": "Fraser 108 ft outside; Stone Pages 31 m"
+      },
+      "stone": "all but one of shaly sandstone flags (Fraser)"
+     },
+     "possible_porch_forecourt": "two rows of stones on Somerville's 1910 plan continue the passage beyond the kerb; flattened kerb and platform on the SW arc may mark a forecourt; neither survives",
+     "date": "Early Bronze Age build (identical to the NE cairn); reused in the Late Bronze Age (two urns and cremated bone found 1828)",
+     "cites": [
+      {
+       "source": "her_sw",
+       "quote": "The kerbstones are largest by the entrance where they are 3 feet 6 inches high."
+      },
+      {
+       "source": "her_sw",
+       "quote": "The cairn of bare stones stands over 9 feet high."
+      },
+      {
+       "source": "her_sw",
+       "quote": "There is a very distinct platform of stony material stretching 12 feet to 13 feet 6 inches outside the kerb except where it has been partially destroyed on the SE side."
+      },
+      {
+       "source": "her_sw",
+       "quote": "The passage, 19 feet 9 inches long and 2 feet wide, is constructed of two rows of upright boulders with one or two courses of masonry above, giving a total height of up to 4 feet."
+      },
+      {
+       "source": "her_sw",
+       "quote": "The chamber is not exactly circular in plan, measuring 11 feet 6 inches by 13 feet in diameter."
+      },
+      {
+       "source": "her_sw",
+       "quote": "The walls stand to a total height of 6 feet 9 inches, with a maximum of six courses of flattish but irregular stones slightly oversailing"
+      },
+      {
+       "source": "her_sw",
+       "quote": "The surrounding circle of standing stones now has ten monoliths remaining, all but four of which are known to have been reset."
+      },
+      {
+       "source": "her_sw",
+       "quote": "The circle seems to have been set 24 to 28 feet outside the kerb."
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "There is an entrance to the central chamber from the south-west (S. 39° W.), 2 feet wide at the oiiter end"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The outer ring is 108 feet in diameter outside, and consists at present of eleven standing stones"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The intermediate ring which forms the base of the central cairn is 53 feet in diameter outside"
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The present height of the chamber is 7 J feet; and it would require to be 4 or 5 feet higher in order to form a complete dome."
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "outer ring are of the shaly sandstone flags found plentifully, in situ, in the district"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The outer kerb of the south-west passage grave was originally intended to lean back into the body of cairn."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "Evidence of corbelling of the central chamber survives, supporting the theory that both passage graves were originally roofed."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "two rows of parallel stones are depicted on Somerville’s 1910 plan, extending along the same line as the entrance passage, beyond the outer kerb, though no trace survives."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "Of the 12 original monoliths surrounding the cairn, 11 survive (two were removed in 1870 when the earlier road was"
+      },
+      {
+       "source": "her_sw",
+       "quote": "The SW cairn, however, on the basis of its radiocarbon dates, was reused in the Late Bronze Age"
+      },
+      {
+       "source": "stonepages_clava",
+       "quote": "The circle surrounding the cairn nearest the entrance is 31 m (103 ft) in diameter"
+      }
+     ],
+     "osm": "way 41662532 (man_made=cairn, name=Balnuaran of Clava SW, ref:canmore=14279; 34 nodes, 16.1 m longest, derived)"
+    },
+    {
+     "id": "kerb_cairn",
+     "kind": "kerb cairn",
+     "name": "Kerb cairn ('small stone circle')",
+     "position": "immediately west of the ring cairn (HER NH 7568 4442 = 57.472988, -4.074558, derived)",
+     "size": "15 contiguous kerbstones round about 4 m (12 ft) inside; graded, tallest on the SW; cup-and-ring marked red sandstone slab on the east (ESE); a shallow grave 5 ft 6 in by 2 ft 6 in with white quartz pebbles",
+     "date": "Late Bronze Age (about 1000 years after the main cairns)",
+     "cites": [
+      {
+       "source": "hes_sm90074",
+       "quote": "Immediately west of this ring cairn is a kerb cairn, visible as a ring of 15 kerbstones around four metres in internal diameter."
+      },
+      {
+       "source": "her_kc",
+       "quote": "lies a small circle of contiguous recumbent stone, approximately 12 feet in internal diameter"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "including the use of monoliths of graded height, with the tallest on the south-west arc"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "On the eastern side is a larger, flatter slab of red sandstone with cup-and-ring marks on its surface."
+      },
+      {
+       "source": "hes_sm90074",
+       "quote": "The two small ring-cairns and kerb cairn were constructed about a thousand years later and new burials placed in some of the earlier cairns."
+      }
+     ],
+     "osm": "not mapped"
+    },
+    {
+     "id": "stone_and_colour",
+     "kind": "materials",
+     "what": "river-worn pebbles, quarried red sandstone slabs and glacial erratics (banded gneiss, conglomerate); kerbs of granite and gneiss boulders (Fraser); kerbstones graded and chosen for colour, larger and redder to the SW, smaller and whiter to the NE",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "The materials include a mix of river-worn pebbles, quarried red sandstone slabs, and glacial erratics (of mixed geology, including banded gneiss and conglomerates)."
+      },
+      {
+       "source": "wp_clava",
+       "quote": "The kerb stones are graded in size and selected for colour, so that the stones are larger and redder to the south west, and smaller and whiter to the north east."
+      },
+      {
+       "source": "hes_sm90074",
+       "quote": "The visual impact of the first group is enhanced by the grading in height of the kerbstones and surrounding monoliths, creating an alignment extending from northeast to southwest"
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "winter solstice sunset",
+     "claim": "The passages of the two passage graves are in line with each other and point south-west to the setting midwinter sun; the line passes two stones of the central ring cairn's circle (Thom). The grading of kerbs and circles and the stone colours emphasise the same NE-SW axis; less precisely it points to the midwinter sunrise the other way. The cairn was photographed at midwinter sunset in 1995 (Douglas Scott).",
+     "verdict": "established",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "Both have sub-circular chambers, with entrance passages aligned towards the south-west at the point the setting midwinter sun meets the horizon"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The precision of the alignment of the cairns at Balnuaran of Clava with the setting of the midwinter sun is particularly notable."
+      },
+      {
+       "source": "hes_sm90074",
+       "quote": "This has been connected with an alignment on the midwinter sunset and, less precisely, the midwinter sunrise."
+      },
+      {
+       "source": "stonepages_clava",
+       "quote": "Professor Alexander Thom discovered that the two entrance passages align exactly and that the alignment passes through two of the stones surrounding the central non-aligned cairn."
+      },
+      {
+       "source": "stonepages_clava",
+       "quote": "The alignment points to the midwinter sun's setting position, indicating that at some time the site perhaps had an astronomical function."
+      },
+      {
+       "source": "wp_clava",
+       "quote": "with the entrances oriented southwest towards midwinter sunset"
+      },
+      {
+       "source": "estaroth_2018",
+       "quote": "Boyle Somerville and Euan MacKie recorded both Balnuaran of Clava passage-graves as orientated on midwinter sunset"
+      },
+      {
+       "source": "her_ne",
+       "quote": "The cairn was photographed at midwinter sunset in 1995 by Douglas Scott."
+      }
+     ],
+     "azimuth_note": "passage bearing S. 39° W. = 219° (Fraser 1884, SW cairn); cairn-centre line 216.4° (OSM, derived); flat-horizon midwinter sunset 223° in 2000 BC (derived)"
+    },
+    {
+     "event": "summer solstice sunrise",
+     "claim": "Bradley suggested that midsummer sunrise linked the central ring cairn with the monument at Mains of Clava, not opposite the passages; HES describes paler mica- and quartz-rich stones sparkling in the rising midsummer sun.",
+     "verdict": "possible",
+     "cites": [
+      {
+       "source": "estaroth_2018",
+       "quote": "Bradley (2000) also suggested that midsummer sunrise at Balnuaran of Clava connected the central ring-cairn with a separate monument at Mains of Clava"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "whereas at midsummer, lighter coloured stones containing mica and quartz, reflect the light"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "main cemetery built",
+     "date": "about 2000 cal BC (Early Bronze Age)",
+     "what": "the two passage graves, the ring cairn and the circles, each built in one operation: cairn, kerb, passage, platform and stone circle together",
+     "cites": [
+      {
+       "source": "hes_sm90074",
+       "quote": "The four large monuments forming the northern row of cairns were built around 2000BC along the line of the gravel terrace."
+      },
+      {
+       "source": "her_ne",
+       "quote": "All proved to have been constructed during a single phase."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "radiocarbon dates from Bradley’s investigations indicate that they date from about 2000 cal BC (the Early Bronze Age)"
+      }
+     ]
+    },
+    {
+     "name": "Late Bronze Age reuse",
+     "date": "around 1000-800 cal BC",
+     "what": "kerb cairn and small ring cairns added on a different axis; the SW cairn reused",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "There was extensive reuse of the site in the Late Bronze Age (around 1000-800 cal BC) and the cemetery area was enlarged."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "the later and smaller cairns built around 1000 BC are set on a different axis"
+      }
+     ]
+    },
+    {
+     "name": "early historic cremation",
+     "date": "1st millennium AD",
+     "cites": [
+      {
+       "source": "hes_sm90074",
+       "quote": "Finally, a cremation was placed outside the central ring-cairn in the later 1st millennium AD."
+      }
+     ]
+    },
+    {
+     "name": "Mrs Campbell's dig",
+     "date": "1828-29",
+     "what": "SW cairn chamber: two urns and calcined bone",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "Mrs Campbell of Kilravock supervises excavations in the south-west passage grave; fragments of two urns and cremated remains are discovered."
+      }
+     ]
+    },
+    {
+     "name": "road moved and stones re-erected",
+     "date": "1870-1881",
+     "what": "road diverted, clipping the SW cairn; two monoliths moved; fallen stones re-erected; cairn material robbed for walls; trees planted; the three cairns 'restored' in 1881",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "Part of the new road clipped the edge of the south-west passage grave and two monoliths were relocated."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "In addition, fallen standing stones were re-erected, vegetation was cleared, and some of the cairn material was robbed to construct enclosing walls."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The three main cairns at Balnuaran of Clava were ‘restored’ by the owner, but the details of what was carried out are unclear."
+      }
+     ]
+    },
+    {
+     "name": "Kennedy's clearance",
+     "date": "1930-31 (Guardianship from 1 June 1925)",
+     "what": "vegetation and fallen stone cleared, depressions in the cairns filled and contours 'restored', kerbs exposed; over 0.3 m added to the SW cairn and its profile smoothed; kerbs made more prominent than originally",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "The site came into Guardianship on 1 June 1925."
+      },
+      {
+       "source": "barclay_1990",
+       "quote": "Depressions in the Cairn (caused by the removal of cartloads of stones by road workers) were filled in, and the contour of the cairn restored."
+      },
+      {
+       "source": "barclay_1990",
+       "quote": "Over 0-3 m has been added and the profile of the cairn has been very much smoothed."
+      },
+      {
+       "source": "barclay_1990",
+       "quote": "It is clear that the prominent flat tops of the ramps of stone surrounding the kerb are the result of selective removal of material and that the kerbs were originally less prominent."
+      }
+     ]
+    },
+    {
+     "name": "Piggott's excavation",
+     "date": "1953",
+     "what": "central ring cairn interior and two trenches; kerb cairn",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "Professor Stuart Piggott conducted small-scale excavations at Balnuaran of Clava in 1953"
+      }
+     ]
+    },
+    {
+     "name": "Bradley's excavations",
+     "date": "1994-1997",
+     "what": "reopened Kennedy's trenches; SW cairn and ring cairn 1994, NE cairn 1995; 23 radiocarbon dates; monograph The Good Stones (SAS Monograph 17, 2000)",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "1994-7 Archaeological excavation, field survey and recording by Professor Richard Bradley."
+      },
+      {
+       "source": "hes_sos",
+       "quote": "A total of 23 dates were obtained, with two clear clusters around the late 3rd and early 2nd millennia BC, and in the latter half of the 2nd millennium BC."
+      },
+      {
+       "source": "her_ne",
+       "quote": "The second season of excavation (see Bradley 1994) focused on the NE passage grave"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Dating: the passage graves were long thought Neolithic (Stone Pages still says so); Bradley's radiocarbon dates put them in the Early Bronze Age.",
+     "cites": [
+      {
+       "source": "stonepages_clava",
+       "quote": "the passage graves were probably constructed in Neolithic times, and the stone circles later, during the Bronze Age"
+      },
+      {
+       "source": "hes_sos",
+       "quote": "The passage graves were once thought to be Neolithic, but Bradley’s investigations at Balnuaran of Clava confirmed that they date from around 2000 cal BC."
+      }
+     ]
+    },
+    {
+     "claim": "Single build or not: excavation showed each monument built in one phase (Bradley 1994-95), but Bradley later argued the circles and platforms need not be of one period.",
+     "cites": [
+      {
+       "source": "her_ne",
+       "quote": "All proved to have been constructed during a single phase."
+      },
+      {
+       "source": "archh_2021",
+       "quote": "Bradley argues that the cairns need not be one period construction, perhaps with the circles and platforms coming later (Bradley 2016a, 116)."
+      }
+     ]
+    },
+    {
+     "claim": "Roofing: HES and Bradley think both chambers were corbelled and roofed; Henshall and Ritchie (2001) are cautious.",
+     "cites": [
+      {
+       "source": "hes_sos",
+       "quote": "Though Henshall and Ritchie (2001) are cautious in their interpretation of any possible roofing."
+      }
+     ]
+    },
+    {
+     "claim": "Diameters differ by source and by what is measured (kerb vs whole cairn vs circle; Fraser measures 'outside'). Henshall's figures are used for kerbs; Fraser's for the circles.",
+     "cites": [
+      {
+       "source": "her_ne",
+       "quote": "The kerb is of massive boulders and has a diameter of 55 feet."
+      },
+      {
+       "source": "fraser_1884",
+       "quote": "The intermediate ring is 58 feet in diameter outside"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "osm": {
+  "checked": "2026-10-29, Overpass (overpass-api.de), radius 150 m round La Hougue Bie and 260 m round Balnuaran of Clava",
+  "la_hougue_bie": [
+   {
+    "id": "way 170213915",
+    "tags": "name=La Hougue Bie, tourism=museum, boundary=protected_area, wikidata=Q1395892",
+    "what": "site boundary (157 m across)"
+   },
+   {
+    "id": "way 877941435",
+    "tags": "historic=archaeological_site, archaeological_site=earthwork, man_made=embankment",
+    "what": "mound outline, 27 nodes, centroid 49.200357, -2.063866, radius 15-18 m (derived): smaller than the 55-58 m mound, probably its upper part"
+   },
+   {
+    "id": "node 5445516318",
+    "tags": "name=Passage Grave, megalith_type=passage_grave, historic=archaeological_site",
+    "what": "point for the tomb (49.200326, -2.063647)"
+   },
+   {
+    "id": "way 217483595",
+    "tags": "name=Chapel of Notre Dame de la Clarté, building=chapel, historic=chapel",
+    "what": "rectangle 11.5 x 5.1 m, long axis 88°/268° (derived), both chapels together"
+   },
+   {
+    "id": "way 877941436, node 12997637660, node 5887408253",
+    "tags": "military=bunker; historic=memorial",
+    "what": "German bunker and Forced Workers Memorial"
+   },
+   {
+    "id": "way 565427894, way 877941437",
+    "tags": "tourism=museum",
+    "what": "Geology and Archaeology Museum; Neolithic Longhouse replica (not part of the monument)"
+   }
+  ],
+  "la_hougue_bie_missing": "no passage line, chamber stones, entrance or forecourt walls",
+  "clava": [
+   {
+    "id": "way 41662528",
+    "tags": "man_made=cairn, megalith_type=passage_grave, name=Balnuaran of Clava NE, ref:canmore=14257",
+    "what": "NE cairn outline, 33 nodes, centroid 57.473499, -4.073229, 17.8 m longest"
+   },
+   {
+    "id": "way 41662530",
+    "tags": "man_made=cairn, name=Balnuaran of Clava Central, alt_name=Central Ring Cairn, ref:canmore=14277",
+    "what": "ring cairn outline, 18 nodes, centroid 57.473075, -4.074087, 16.0 m longest"
+   },
+   {
+    "id": "way 41662532",
+    "tags": "man_made=cairn, name=Balnuaran of Clava SW, ref:canmore=14279",
+    "what": "SW cairn outline, 34 nodes, centroid 57.472590, -4.074473, 16.1 m longest"
+   },
+   {
+    "id": "way 41662537",
+    "tags": "name=Balnuaran of Clava, barrier=fence, historic=archaeological_site, wikidata=Q39505213",
+    "what": "fenced site boundary (191 m)"
+   },
+   {
+    "id": "way 246647311",
+    "tags": "barrier=wall",
+    "what": "field wall along the road (157 m)"
+   }
+  ],
+  "clava_missing": "no individual standing stones, kerbstones, passages, rays or the kerb cairn are mapped; the stone circles must come from Fraser's 1884 plans or Bradley 2000"
+ },
+ "plans": [
+  {
+   "title": "Fraser 1884, figs 9-16: ground plans and developed views of the outer rings of the western (No. 10), middle (No. 11) and eastern (No. 12) circles at Balnuaran of Clava and the smaller circle",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/6114/6084/6073",
+   "licence": "public domain (published 1884; PSAS open archive)",
+   "what it shows": "each stone of the three circles and kerbs, chambers and passages, with the restored stones marked, and elevations (developed views) of every circle stone, i.e. their heights; scale given on fig. 1. The best plan to trace stone positions and heights"
+  },
+  {
+   "title": "Piggott 1956, figs 9 and 11: plans of the central ring cairn and the small kerb cairn ('Clava stone circle'); new plans of the two passage graves",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/8468/8436/8423",
+   "licence": "© Society of Antiquaries of Scotland (open access to read; not an open licence)",
+   "what it shows": "ring cairn kerbs, causeways, circle stones; kerb cairn"
+  },
+  {
+   "title": "Ministry of Works plan c. 1931 (HES SoS fig. 7) and Somerville 1910, Bradley 2000 plans",
+   "url": "https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/018ae4fe-caa2-443a-8c81-aeed00a22e8a",
+   "licence": "Crown copyright / © HES and SAS (the OGL in the SoS excludes images); look only",
+   "what it shows": "condition of the three cairns when taken into care, fallen, restored and loose stones"
+  },
+  {
+   "title": "Schematic map of site of La Hougue Bie (Commons, photograph of a site board)",
+   "url": "https://commons.wikimedia.org/wiki/File:IMG_2464_schematic_map_of_site_of_La_Hougue_Bie_Jersey.JPG",
+   "licence": "CC BY 2.5",
+   "what it shows": "the site layout as drawn on the site board (buildings, mound, bunker); not a survey of the tomb"
+  },
+  {
+   "title": "Plans of the passage grave (prehistoricjersey.net 'Plans' page; Patton, Rodwell and Finch 1999)",
+   "url": "https://prehistoricjersey.net/La_Hougue_Bie.shtml",
+   "licence": "copyright of the publishers (Société Jersiaise); look only",
+   "what it shows": "the tomb plan with stone numbers (stone 41 cup-marked, stone 34 with a bétyle)"
+  }
+ ],
+ "gaps": [
+  "La Hougue Bie: no open source gives the passage's width or height, the chamber's measured plan, side-cell sizes or a measured azimuth. They are in Patton, Rodwell and Finch 1999 (La Hougue Bie, Jersey, Société Jersiaise) and the Société Jersiaise Bulletin 1925 excavation report, neither online. societe.je refuses scripts; theislandwiki.org (Jerripedia), megalithics.com and themodernantiquarian.com returned nothing to the checker.",
+  "La Hougue Bie chapels: no dimensions found except the rough OSM rectangle (11.5 x 5.1 m, derived). The gov.je listing schedule PDF (GR0212, 2018) would describe them but is behind an ASP.NET postback.",
+  "La Hougue Bie: the 'Plans de La Hougue avec son projet' file on Commons (Category:La Hougue Bie) is a 1787 fortification plan of Saint-Vaast-la-Hougue in Normandy, wrongly categorised; not this site.",
+  "Clava: Bradley's 'The Good Stones' (SAS Monograph 17, 2000) is not free on books.socantscot.org as far as found (the download link found serves another monograph); its plans (p. 34 NE cairn), passage lengths of the NE cairn, the individual stone heights and the 23 radiocarbon dates are there.",
+  "Clava: Canmore (site 14257 etc.) and the HES visitor pages refused the checker's script; the HES Statement of Significance PDF and portal record were used instead.",
+  "Clava: no measured modern azimuths of the passages found in open sources (MacKie 1975, Burl 1981, Ruggles 1999, Scott's 'Astronomical Assessment' are not online). Fraser's S. 39° W. does not say magnetic or true; if magnetic in 1883 (about 20° W variation at Inverness) the true bearing would be near 199°, which does not fit the OSM line (216°); it is probably true, but unconfirmed.",
+  "Clava: NE cairn passage length not found (Fraser gives only its width); Fraser's 'developed views' give every circle stone's height graphically; a heights table would need reading the figures."
+ ]
+}

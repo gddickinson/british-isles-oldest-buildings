@@ -188,7 +188,7 @@ function passage(p, height, seed) {
 }
 
 // Chamber: {outline: [[x, y], ...], floor (above the ground at its centre), h (walls), roof: {kind: "capstone",
-// thickness} or {kind: "corbel", top, rings}, rock, roof_rock, open: [{at: [x, y], width}] where the passage comes in}.
+// thickness}, {kind: "corbel", top, rings} or {kind: "none"}, rock, roof_rock, open: [{at: [x, y], width}] where the passage comes in}.
 function chamber(p, height, seed) {
   const g = new THREE.Group(), c = mid(p.outline), g0 = (height(c[0], c[1]) ?? 0) + (p.floor ?? 0);
   const rock = p.rock ?? "sandstone", roofRock = p.roof_rock ?? rock, n = p.outline.length;
@@ -233,6 +233,7 @@ function chamber(p, height, seed) {
     }
   }
   const roof = p.roof ?? { kind: "capstone", thickness: 0.6 };
+  if (roof.kind === "none") return g;                  // open to the sky (a ruined chamber)
   if (roof.kind === "corbel") {
     const rings = roof.rings ?? 8, top = roof.top ?? p.h + 2;
     for (let r = 0; r < rings; r++) {
@@ -264,7 +265,8 @@ function post(p, height) {
   return m;
 }
 
-// Bank (h > 0) or the hollow of a silted ditch (h < 0) drawn on the ground: {c, r, w, h, gaps: [[az, width m]]}.
+// Bank (h > 0) or the hollow of a silted ditch (h < 0) drawn on the ground: {c, r, w, h, gaps: [[az, width m]],
+// surface (grass unless given, e.g. the rubble of a cairn ring)}.
 function bank(p, height) {
   const [cx, cy] = p.c, NS = Math.max(90, Math.round(p.r * 2)), NW = 6, pos = [], idx = [];
   const gap = (az) => (p.gaps ?? []).some(([a, w]) => Math.abs(((az - a + 540) % 360) - 180) < (w / 2) / p.r / R);
@@ -274,7 +276,7 @@ function bank(p, height) {
     pos.push(x, (height(x, y) ?? 0) + 0.03 + p.h * prof, -y);
   }
   for (let j = 0; j < NS; j++) for (let i = 0; i < NW; i++) { const a = j * (NW + 1) + i, b = a + NW + 1; idx.push(a, b, a + 1, a + 1, b, b + 1); }
-  return mesh(pos, idx, grass());
+  return mesh(pos, idx, p.surface ? surface(p.surface) : grass());
 }
 
 // Builders by part kind; other modules add their own (model_broch.js).

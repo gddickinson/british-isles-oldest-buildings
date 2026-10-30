@@ -40,6 +40,8 @@ MODELS = [
      "summary": "The timber circles rebuilt from their postholes, facing the solstices."},
     {"id": "mousa", "name": "Mousa Broch", "record": "Q923376",
      "summary": "The best-preserved Iron Age tower, whole and in cutaway."},
+    {"id": "clava", "name": "Balnuaran of Clava", "record": "Q39505213", "research": "hougue_clava",
+     "summary": "Two passage graves and a ring cairn in their stone circles, the passages facing the midwinter sunset."},
 ]
 
 
@@ -237,10 +239,12 @@ def main(argv):
     if "--quotes" in argv:
         from .evidence import check
         prev = json.loads(CHECK.read_text()) if CHECK.exists() else {}
-        out = check(claims=[c for mid in ids for c in claims(mid)], path=CHECK)
+        rids = sorted({(get(mid) or {}).get("research", mid) for mid in ids})
+        out = check(claims=[c for r in rids for c in claims(r)], path=CHECK)
         CHECK.write_text(json.dumps({**prev, **out}, indent=1) + "\n")
         return 0
-    bad = [p for mid in ids for p in problems(mid)]
+    rid = lambda mid: (get(mid) or {}).get("research", mid)            # noqa: E731  the model's research file
+    bad = [p for r in sorted({rid(mid) for mid in ids}) for p in problems(r)]
     for p in bad:
         print("problem:", p)
     for mid in ids:

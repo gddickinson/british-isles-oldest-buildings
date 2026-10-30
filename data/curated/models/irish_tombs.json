@@ -1,0 +1,2413 @@
+{
+ "id": "irish_tombs",
+ "name": "Irish passage tombs: Loughcrew Cairn T, Knowth, Dowth, Carrowkeel Cairn G",
+ "date_checked": "2026-10-29",
+ "about": "Research for 3D models of four Irish passage tombs of the 4th millennium BC, one entry per site under 'sites'. Positions are the National Monuments Service SMR points (each within 1-6 m of the OSM outline centroid). Measured azimuths were found only for Knowth (Prendergast and Ray, gyro-theodolite); for the others the orientations are approximate and marked derived.",
+ "sources": {
+  "wp_bnb": {
+   "title": "Brú na Bóinne - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Brú_na_Bóinne",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_newgrange": {
+   "title": "Newgrange - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Newgrange",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "hi_edu": {
+   "title": "Brú na Bóinne education pack: Art History, Leaving Certificate (PDF)",
+   "author": "OPW / Heritage Ireland",
+   "url": "https://heritageireland.ie/assets/uploads/2021/08/Art-History-Leaving-Certificate-1-1.pdf",
+   "licence_note": "OPW; short quotes. Has small plans of the three mounds (OPW copyright, not for tracing)"
+  },
+  "ck_macalister": {
+   "title": "Report on the exploration of Bronze-Age carns on Carrowkeel Mountain, Co. Sligo (PRIA 29C, 1912), transcribed",
+   "author": "R. A. S. Macalister, E. C. R. Armstrong, R. Ll. Praeger; transcription on carrowkeel.com (Martin Byrne)",
+   "url": "http://www.carrowkeel.com/files/macalister1911.html",
+   "licence_note": "1912 text, public domain; web transcription. Bearings are by compass (magnetic, 1911)"
+  },
+  "wp_loughcrew": {
+   "title": "Loughcrew - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Loughcrew",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "hi_loughcrew": {
+   "title": "Loughcrew Cairns - Heritage Ireland",
+   "author": "OPW",
+   "url": "https://heritageireland.ie/places-to-visit/loughcrew-cairns/",
+   "licence_note": "short quotes"
+  },
+  "smr_t": {
+   "title": "Sites and Monuments Record ME015-012001- to ME015-012009- (Carnbane East: Cairn T = ME015-012004-, with S, U, V, W, R1, R2), SMR open data (ArcGIS query)",
+   "author": "National Monuments Service (Archaeological Inventory of County Meath, 1987, revised by Michael Moore 2019)",
+   "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%20LIKE%20%27ME015-012%25%27&outFields=SMRS,WEB_NOTES,LATITUDE,LONGITUDE,ITM_E,ITM_N&f=json",
+   "licence_note": "NMS open data (CC BY 4.0); JSON reply, quotes from WEB_NOTES and the point fields"
+  },
+  "conwell_1873": {
+   "title": "Discovery of the Tomb of Ollamh Fodhla (1873), OCR text (Internet Archive, Google scan)",
+   "author": "Eugene Alfred Conwell",
+   "url": "https://archive.org/download/discoverytombol01conwgoog/discoverytombol01conwgoog_djvu.txt",
+   "licence_note": "public domain (1873); quotes are copied from the OCR text, which writes the degree sign as '*' (read: °). Conwell's bearings are by compass, 1865, probably magnetic"
+  },
+  "ck_cairn_t": {
+   "title": "Cairn T at Loughcrew - carrowkeel.com",
+   "author": "Martin Byrne",
+   "url": "http://www.carrowkeel.com/sites/loughcrew/cairnt.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_cairn_t_equinox": {
+   "title": "Equinox sunrise at Cairn T - carrowkeel.com",
+   "author": "Martin Byrne (quoting Martin Brennan, The Stones of Time)",
+   "url": "http://www.carrowkeel.com/sites/loughcrew/cairnt3.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "knowth_loughcrew": {
+   "title": "Loughcrew Megalithic Cairns - knowth.com",
+   "author": "Michael Fox / knowth.com",
+   "url": "https://www.knowth.com/loughcrew.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "ng_obrien": {
+   "title": "Reflections on Loughcrew and Newgrange (2007) - newgrange.com",
+   "author": "Tim O'Brien, author of Light Years Ago",
+   "url": "https://www.newgrange.com/loughcrew-newgrange.htm",
+   "licence_note": "secondary (observer's own account); short quotes"
+  },
+  "is_cairn_t": {
+   "title": "Loughcrew Tomb T - irishstones.org",
+   "url": "https://www.irishstones.org/Place.aspx?p=744",
+   "licence_note": "secondary (amateur gazetteer); short quotes"
+  },
+  "wp_knowth": {
+   "title": "Knowth - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Knowth",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "smr_k": {
+   "title": "Sites and Monuments Record ME019-030001- (Knowth great mound, Tomb 1), SMR open data (ArcGIS query)",
+   "author": "National Monuments Service (summarising Eogan and Cleary 2017, Excavations at Knowth 6)",
+   "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%20%3D%20%27ME019-030001-%27&outFields=SMRS,WEB_NOTES,LATITUDE,LONGITUDE,ITM_E,ITM_N&f=json",
+   "licence_note": "NMS open data (CC BY 4.0); the WEB_NOTES field is cut off at 8,000 characters in the reply"
+  },
+  "pr_knowth": {
+   "title": "Alignment of the Western and Eastern Passage Tombs at Knowth Tomb 1 (Excavations at Knowth 6, Appendix 2, RIA 2017; author's copy, PDF)",
+   "author": "Frank Prendergast and Tom Ray",
+   "url": "https://www.knowth.com/pdf/knowth-alignments.pdf",
+   "licence_note": "RIA copyright, open access on ARROW@TU Dublin (arrow.tudublin.ie/arastbk, which refuses scripts); this copy on knowth.com. Short quotes; its plans (Figs A2.1-A2.3) are not for tracing"
+  },
+  "knowth_align": {
+   "title": "Alignment of the Western and Eastern Passage Tombs at Knowth - knowth.com",
+   "author": "knowth.com, summarising Prendergast and Ray",
+   "url": "https://www.knowth.com/knowth-alignments.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "knowth_com": {
+   "title": "Knowth - knowth.com",
+   "url": "https://www.knowth.com/knowth.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_knowth": {
+   "title": "The Great Mound of Knowth - carrowkeel.com",
+   "author": "Martin Byrne",
+   "url": "http://www.carrowkeel.com/sites/boyne/knowth1.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_knowth_astro": {
+   "title": "Astronomy at Knowth - carrowkeel.com",
+   "author": "Martin Byrne",
+   "url": "http://www.carrowkeel.com/sites/boyne/knowth2.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_knowth_east": {
+   "title": "Knowth East passage - carrowkeel.com",
+   "author": "Martin Byrne",
+   "url": "http://www.carrowkeel.com/sites/boyne/knowth3.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_knowth_west": {
+   "title": "Knowth West passage - carrowkeel.com",
+   "author": "Martin Byrne",
+   "url": "http://www.carrowkeel.com/sites/boyne/knowth4.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "wp_dowth": {
+   "title": "Dowth - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dowth",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "smr_d": {
+   "title": "Sites and Monuments Record ME020-017---- (Dowth) and ME020-017001- (souterrain), SMR open data (ArcGIS query)",
+   "author": "National Monuments Service (Archaeological Inventory of County Meath, 1987)",
+   "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%20LIKE%20%27ME020-017%25%27&outFields=SMRS,WEB_NOTES,LATITUDE,LONGITUDE,ITM_E,ITM_N&f=json",
+   "licence_note": "NMS open data (CC BY 4.0); JSON reply"
+  },
+  "whi_dowth_panel": {
+   "title": "Dowth information panel (PDF)",
+   "author": "World Heritage Ireland / OPW",
+   "url": "https://www.worldheritageireland.ie/wp-content/uploads/2022/08/Dowth-Panel.pdf",
+   "licence_note": "short quotes; the PDF text runs the North and South panels together"
+  },
+  "knowth_dowth": {
+   "title": "Dowth Megalithic Passage Tomb - knowth.com",
+   "url": "https://www.knowth.com/dowth.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "knowth_dowth_sunsets": {
+   "title": "Dowth winter sunsets - knowth.com",
+   "author": "knowth.com, on Anne-Marie Moroney's observations (Dowth Winter Sunsets, 1999)",
+   "url": "https://www.knowth.com/dowth-sunsets.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_dowth_north": {
+   "title": "The north chamber of Dowth - carrowkeel.com",
+   "author": "Martin Byrne (quoting Wilde 1849 and O'Kelly and O'Kelly 1983)",
+   "url": "http://www.carrowkeel.com/sites/boyne/dowth2.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_dowth_south": {
+   "title": "The South Chamber at Dowth - carrowkeel.com",
+   "author": "Martin Byrne (quoting O'Kelly and O'Kelly 1983, The Tumulus of Dowth, PRIA 83C, and Brennan 1984)",
+   "url": "http://www.carrowkeel.com/sites/boyne/dowth2a.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "mi_dowth": {
+   "title": "Dowth (Dubad) - Mythical Ireland",
+   "author": "Anthony Murphy",
+   "url": "https://mythicalireland.com/blogs/ancient-sites/dowth-dubad",
+   "licence_note": "secondary; short quotes"
+  },
+  "ng_news56": {
+   "title": "Dowth - Winter Solstice Sunset 2018 - newgrange.com",
+   "url": "https://www.newgrange.com/news56.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "wp_carrowkeel": {
+   "title": "Carrowkeel Megalithic Cemetery - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Carrowkeel_Megalithic_Cemetery",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "smr_g": {
+   "title": "Sites and Monuments Record SL040-089---- (Carrowkeel Cairn G) and SL040-090001- (Cairn H), SMR open data (ArcGIS query)",
+   "author": "National Monuments Service (Archaeological Inventory of County Sligo, 2005, after Ó Nualláin 1989)",
+   "url": "https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/services/SMROpenData/FeatureServer/0/query?where=SMRS%20LIKE%20%27SL040-089%25%27%20OR%20SMRS%20LIKE%20%27SL040-090001%25%27&outFields=SMRS,WEB_NOTES,LATITUDE,LONGITUDE,ITM_E,ITM_N&f=json",
+   "licence_note": "NMS open data (CC BY 4.0); JSON reply"
+  },
+  "ck_cairn_g": {
+   "title": "Cairn G at Carrowkeel - carrowkeel.com",
+   "author": "Martin Byrne",
+   "url": "http://www.carrowkeel.com/sites/carrowkeel/cairng1.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "ck_cairn_g_astro": {
+   "title": "Astronomy at Cairn G - carrowkeel.com",
+   "author": "Martin Byrne (observer)",
+   "url": "http://www.carrowkeel.com/sites/carrowkeel/cairng2.html",
+   "licence_note": "secondary; short quotes"
+  },
+  "mi_carrowkeel": {
+   "title": "Carrowkeel Summer Solstice - newgrange.com",
+   "url": "https://newgrange.com/carrowkeel-solstice.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "mi_carrowkeel_08": {
+   "title": "Carrowkeel Cairn G Summer Solstice Sunset (2008) - newgrange.com",
+   "url": "https://www.newgrange.com/carrowkeel-solstice-08.htm",
+   "licence_note": "secondary; short quotes"
+  },
+  "is_cairn_g": {
+   "title": "Carrowkeel Cairn G - irishstones.org",
+   "url": "https://www.irishstones.org/Place.aspx?p=917",
+   "licence_note": "secondary (amateur gazetteer); short quotes"
+  },
+  "kador_2018": {
+   "title": "Rites of Passage: Mortuary Practice, Population Dynamics, and Chronology at the Carrowkeel Passage Tomb Complex (PPS 84, 2018), accepted manuscript",
+   "author": "T. Kador, L. M. Cassidy, J. Geber, R. Hensey, P. Meehan, S. Moore",
+   "url": "https://discovery.ucl.ac.uk/10059777/1/PPR84%20Kador%20et%20al.pdf",
+   "licence_note": "UCL Discovery open access copy; short quotes"
+  }
+ },
+ "sites": {
+  "loughcrew_t": {
+   "name": "Loughcrew Cairn T (Slieve na Calliagh, Carnbane East)",
+   "record": "Q202563",
+   "record_note": "Q202563 is the Loughcrew complex; the catalogue point (53.7694, -7.1031) is about 2.8 km NNE of Cairn T, so place the model at the SMR point below, not the catalogue point.",
+   "smr": "ME015-012004-",
+   "osm": {
+    "cairn": "way 61742829 'Cairn T' (24 nodes, closed; ref:IE:smr ME015-012004): encloses 1,034 m2, equal-area diameter 36.3 m, extents 34.2 m E-W x 40.0 m N-S (the outline bulges N round the Hag's Chair); centroid 53.744687, -7.112329, 0.9 m from the SMR point (derived, shoelace on a local plane)",
+    "stones": "node 769315559 'Hag's Chair' (alt_name K29, 53.7448732, -7.1122743), about 21 m N of the cairn centroid (derived)",
+    "neighbours": "ways 61742993 Cairn U, 61742994 Cairn V, 61742995 Cairn S, 850220855 (unnamed archaeological site); no entrance, passage or kerb nodes mapped"
+   },
+   "about": "Cairn T (Carn Bán, the Hag's Cairn) is the central and largest passage tomb on the summit of Carnbane East (Slieve na Calliagh), the highest point in Meath, in the Loughcrew cemetery of c. 3300 BC. A cairn about 35 m across and 6-7 m high, kerbed by 37-38 slabs with the decorated 'Hag's Chair' on the north side, covers a short east-facing segmented passage (about 5 m) and a cruciform chamber: an octagonal central chamber with a corbelled beehive roof and three side cells, 28 decorated stones. Conwell cleared it in 1865 when the passage was roofless and two thirds of the chamber vault had fallen; the passage roof and chamber top were rebuilt in concrete (OPW, 1964 per the SMR; 'late 1800s' per carrowkeel.com) and a grille fills the missing keystone. Since Brennan and Roberts (1980) the equinox sunrises are known to light the decorated backstone of the rear (west) cell. The interior has been closed since 2018 for a cracked lintel.",
+   "facts": {
+    "reference_point": {
+     "value": {
+      "lat": 53.7446865653379,
+      "lon": -7.112314874215592,
+      "itm_e": 658555,
+      "itm_n": 777594
+     },
+     "unit": "WGS84 / ITM",
+     "note": "SMR point of Cairn T (ME015-012004-); it lies 0.9 m from the centroid of the OSM cairn outline (derived), so it can be taken as the cairn centre.",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "\"LATITUDE\":53.7446865653379,\"LONGITUDE\":-7.1123148742155919"
+      },
+      {
+       "source": "smr_t",
+       "quote": "This tomb is at the summit of Slieve na Calliagh, and it is at the centre of the monuments on this hill."
+      }
+     ]
+    },
+    "cairn_diameter_m": {
+     "value": 35,
+     "unit": "m",
+     "note": "Cairn diameter. Conwell: 38.5 yards at the base (= 35.2 m, derived); a NMNI photo caption: 116 feet (= 35.4 m, derived); OSM outline equal-area 36.3 m (derived).",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "The cairn (diam. 35m; H c. 7m) has a kerb of 38 stones, including the decorated ‘Hag’s Chair’ on the N side."
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The cairn at Cairn T is thirty-five meters in diameter and seven meters high."
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "It is thirty-eight and one-half yards in diameter at the base"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The main chambered cairn, diameter 116 feet, on Loughcrew Hills, Meath."
+      },
+      {
+       "source": "is_cairn_t",
+       "quote": "a huge mound with a diameter of about 35 metres, a height of about 6 metres and an entrance facing east (95°)."
+      }
+     ]
+    },
+    "cairn_height_m": {
+     "value": 7,
+     "unit": "m",
+     "note": "Sources differ: c. 7 m (SMR, carrowkeel.com), about 6 m (irishstones). Conwell gives only a slant height of 21 paces.",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "(diam. 35m; H c. 7m)"
+      },
+      {
+       "source": "is_cairn_t",
+       "quote": "a height of about 6 metres"
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "having an elevation of twenty-one paces in slant-height from base to summit"
+      }
+     ]
+    },
+    "summit_altitude_m": {
+     "value": 276,
+     "unit": "m",
+     "note": "Ground at the summit; Conwell: 904 feet above sea level (= 275.5 m, derived).",
+     "derived": true,
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "904 feet above the sea level"
+      }
+     ]
+    },
+    "kerb_stones": {
+     "value": 38,
+     "unit": "stones",
+     "note": "Sources differ: 38 including the Hag's Chair (SMR); 37 flags 6-12 ft long (Conwell 1865); 'thirty-eight massive kerbstones ... and the huge ornamented kerbstone known as the Hag's Chair' (carrowkeel.com, which may count 39). Kerbstones are larger towards the entrance on the east, which is set back inside the kerb line.",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "has a kerb of 38 stones, including the decorated ‘Hag’s Chair’ on the N side"
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "consisting of thirty-seven large flags laid on edge, and varying in length from six to twelve feet"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "There are thirty-eight massive kerbstones surrounding the cairn, and the huge ornamented kerbstone known as the Hag's Chair"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "their scale increasing towards the entrance at the east, where the largest stones were placed to each side of the entrance, which is set back within the ring of the kerb"
+      }
+     ]
+    },
+    "kerb_incurve_m": {
+     "value": 7.8,
+     "unit": "m",
+     "note": "On the east the kerb curves inwards for 8-9 yards on each side of the passage mouth (7.3-8.2 m, derived).",
+     "derived": true,
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "this surrounding circle of large stones curves inwards for a distance of eight or nine yards on each side of a point where the passage to the interior chambers commences"
+      }
+     ]
+    },
+    "passage_length_m": {
+     "value": 5.2,
+     "unit": "m",
+     "note": "Passage alone: Conwell 17 ft (= 5.2 m, derived); carrowkeel.com 5 m; Tim O'Brien 'six metres'. Passage and chamber together: 28 ft (8.5 m, Conwell, quote split by a page break so not quoted) or 9 m (carrowkeel.com).",
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "The passage has an average breadth of three feet, and is seventeen feet in length"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The passage, five meters in length, is lined with engraved orthostats and oriented to the east."
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The total lenght of the passage and chamber is nine meters, and the corbelled chamber is four meters high."
+      },
+      {
+       "source": "ng_obrien",
+       "quote": "The passage is about nineteen metres long compared to the six metres of Cairn T."
+      }
+     ]
+    },
+    "passage_width_m": {
+     "value": 0.91,
+     "unit": "m",
+     "note": "Average 3 ft (= 0.91 m, derived); 3 ft 1 in (0.94 m) where it meets the central chamber.",
+     "derived": true,
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "The passage has an average breadth of three feet"
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "is only three feet one inch"
+      }
+     ]
+    },
+    "passage_azimuth_deg": {
+     "value": 98,
+     "unit": "deg (true, approx.)",
+     "note": "No surveyed azimuth was reachable. carrowkeel.com gives 8° and 9° S of E (98-99°, derived); irishstones 95°; the SMR only 'aligned E'. Conwell's 'E. 10° S.' (100°) is a compass bearing of 1865 whose north (magnetic or true) is not stated: if magnetic, true would be about 25° less (not used). Prendergast 2011 (thesis) holds the measured value.",
+     "derived": true,
+     "cites": [
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "This is because the monument is aligned 8° south of east"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The passage points to 9° south of east, so the beam of light can only enter the chamber when the sun has reached the appropriate altitude about 40 minutes after sunrise."
+      },
+      {
+       "source": "is_cairn_t",
+       "quote": "an entrance facing east (95°)"
+      },
+      {
+       "source": "smr_t",
+       "quote": "The segmented entrance passage is aligned E"
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "the bearing of the passage being E. 10* S., probably intended to face the rising sun"
+      }
+     ]
+    },
+    "central_chamber_width_m": {
+     "value": 2.1,
+     "unit": "m",
+     "note": "Octagonal central chamber about 7 ft across in every direction (2.1 m, derived; the quoted OCR reads 'ev6ry' so only the measure across the arms is quoted). Across the side cells N-S from back to back: 16 ft 4 in (= 4.98 m, derived), their entrances 7 ft (2.13 m) apart.",
+     "derived": true,
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "The distance from the back of the southern to that of the northern chamber is sixteen feet four inches, the distance between their entrances being seven feet"
+      }
+     ]
+    },
+    "central_chamber_height_m": {
+     "value": 3.05,
+     "unit": "m",
+     "note": "Sources differ: 3.05 m (SMR, as reconstructed); corbelled chamber 4 m (carrowkeel.com); in 1865 the surviving corbelling (about thirty overlapping flags) reached about 10 ft (3.05 m, derived).",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "the central octagonal beehive chamber (H 3.05m) was also collapsed"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "the corbelled chamber is four meters high"
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "carrying the roof over the central chamber to a height of about ten feet"
+      }
+     ]
+    },
+    "quartz_layer_m": {
+     "value": {
+      "height": "0.9-1.2",
+      "thickness": 0.6
+     },
+     "unit": "m",
+     "note": "Behind the kerb Conwell found a layer of quartz lumps 3-4 ft high and about 2 ft thick (derived metric); gone now.",
+     "derived": true,
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "piled up a layer, rising from three to four feet in height, and about two feet in thickness, of broken lumps of sparkling native Irish quartz"
+      },
+      {
+       "source": "smr_t",
+       "quote": "Behind the kerb and overlying the base of the cairn originally was a layer of quartz stones."
+      }
+     ]
+    },
+    "decorated_stones": {
+     "value": 28,
+     "unit": "stones",
+     "note": "28 decorated stones in the tomb; of the kerb only the Hag's Chair is decorated.",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "Apart from the Hag’s Chair, none of the kerbstones are decorated, but 28 of the stones in the tomb have decoration."
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "cairn",
+     "kind": "cairn",
+     "diameter_m": 35,
+     "height_m": 7,
+     "material": "stone cairn of local grit ('Lower Silurian grit'); formerly a quartz layer behind the kerb",
+     "state": "largely complete, grass-grown; no great quarrying",
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "consisting of a conical mound of loose stones, nearly all apparently fragments of the native rock, Lower Silurian grit"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The mound at Cairn T is more or less complete, and does not seem to have suffered from too much quarrying for field-walls."
+      }
+     ]
+    },
+    {
+     "id": "kerb",
+     "kind": "kerb",
+     "count": 38,
+     "material": "glacial sandstone boulders and slabs, some split in two",
+     "shape": "ring, curving inwards on the east to the passage mouth",
+     "state": "in place",
+     "cites": [
+      {
+       "source": "ck_cairn_t",
+       "quote": "The kerbstones are a mixed collection of glacial sandstone boulders of all shapes and sizes"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "In a number of cases a slab or boulder has been split into two parts to make more kerb material"
+      }
+     ]
+    },
+    {
+     "id": "hags_chair",
+     "kind": "kerbstone",
+     "name": "Hag's Chair",
+     "position": "north side of the kerb (OSM node 769315559)",
+     "weight_t": 2,
+     "state": "standing; seat hollowed, a cross cut in it; back broken; carvings weathered",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "including the decorated ‘Hag’s Chair’ on the N side"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "It is a large stone, about two tons weight, ornamented with a cross sunk (cut) into the seat of the chair, in which three might sit together."
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The back of the chair was broken by some human enemy to old Evlin."
+      }
+     ]
+    },
+    {
+     "id": "passage",
+     "kind": "passage",
+     "length_m": 5.2,
+     "width_m": 0.91,
+     "azimuth_deg": 98,
+     "structure": "segmented by sill stones; orthostats engraved; one original roofing stone (No. 26, 6 ft long) left in 1865, now roofed in concrete",
+     "state": "reconstructed roof; a modern door at the entrance",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "The passage was roofless and closed with large boulders and quartz pebbles before Conwell had it cleared"
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "which is six feet in length and eighteen inches in breadth and thickness"
+      },
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "The lock on the modern door leading to the passage had frozen during the night"
+      }
+     ]
+    },
+    {
+     "id": "central_chamber",
+     "kind": "chamber",
+     "plan": "cruciform: octagonal central chamber with three side cells (N, S, W)",
+     "width_m": 2.1,
+     "height_m": 3.05,
+     "roof": "corbelled beehive vault; original lower courses, upper part rebuilt; grille in the place of the missing keystone",
+     "walls": "four large sandstone flags over 2 m high",
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "The long passage and the tricameral arrangement round a central octagonal chamber give the general outline the appearance of a cross"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The walls of the chamber are formed from four large flags of sandstone, each over two meters high."
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "A small grill fills the hole created by the missing keystone"
+      }
+     ]
+    },
+    {
+     "id": "cell_south",
+     "kind": "side chamber",
+     "plan": "nearly 4 ft (1.2 m) square, roofed by one horizontal flag; sill stone No. 30 (1 ft 8 in high) at the front",
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "The southern chamber is nearly four feet square, and is covered by a horizontal roofing flag."
+      },
+      {
+       "source": "conwell_1873",
+       "quote": "No. 30, the stone closing in the entrance to the chamber at the bottom is devoid of sculpture, and measures one foot eight inches in height"
+      }
+     ]
+    },
+    {
+     "id": "cell_west",
+     "kind": "end chamber",
+     "plan": "about 4 ft (1.2 m) square, nearly 5 ft (1.5 m) high to the corbels; seven corbels and a decorated cap flag; sill No. 29 (2 ft 4 in high); the backstone (C8) carries the equinox art",
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "On entering the chamber, which is about four feet square, and nearly five feet in height"
+      },
+      {
+       "source": "smr_t",
+       "quote": "the backstone of the rear chamber (C8) with its all over decoration, including four petal-and-circle motifs that are almost unique in this cemetery"
+      },
+      {
+       "source": "smr_t",
+       "quote": "The closing roofstone of this chamber is filled with a variety of motifs that extend beyond its visible edges"
+      }
+     ]
+    },
+    {
+     "id": "cell_north",
+     "kind": "side chamber",
+     "plan": "three side cells kept their beehive roofs and sill stones in 1865",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "the three side-chambers with their beehive roofs and sill stones were intact"
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "equinox sunrise (spring and autumn)",
+     "claim": "Light from the rising sun runs down the passage and forms a rectangle on the decorated backstone (C8) of the rear (west) cell, then shrinks and moves down and to the right across the motifs. The passage points 8-9° S of E, so the beam only enters when the sun is well up (about 40 minutes after sunrise); it lasts about 50 minutes and can be seen on about six days at each equinox. Its left and top edges are cut by orthostat L3 and its roofstone 5.4 m from the backstone, the bottom and right by the end-cell sill and jamb 1 m from it. Recorded on 23 March 2005; Brennan and Roberts found it in 1980.",
+     "cites": [
+      {
+       "source": "wp_loughcrew",
+       "quote": "Cairn T in Carnbane East is directed to receive the beams of the rising sun on the spring and autumnal equinox - the light shining down the passage and illuminating the art on the backstone."
+      },
+      {
+       "source": "hi_loughcrew",
+       "quote": "The cairn is aligned to sunrise at the spring and autumn equinoxes and at these times people gather there to greet the first rays of the sun."
+      },
+      {
+       "source": "smr_t",
+       "quote": "a sunrise event at the Equinox occurs when the backstone of the rear chamber (C8) with its all over decoration"
+      },
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "At Cairn T, the sun does not enter the chamber until it has risen well over the horizon."
+      },
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "According to Brennan, the sun can enter the chamber for a maximum of six days over the equinox."
+      },
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "The passage orthostats, sillstones and roof all combine to shape the beam of sunlight into a large rectangle of light which forms on the backstone of the end recess."
+      },
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "As the sun rises in the sky, the shape of the light beam in the passage changes, and the rectangle of light shrinks, moving down and right."
+      },
+      {
+       "source": "knowth_loughcrew",
+       "quote": "The illumination lasts for about 50 minutes and creates a striking visual effect inside the otherwise dark chamber."
+      },
+      {
+       "source": "knowth_loughcrew",
+       "quote": "This equinox event was recorded on the morning of March 23rd 2005"
+      },
+      {
+       "source": "ng_obrien",
+       "quote": "The left margin of the beam was formed by a large stone in the passageway referred to as Orthostat L3."
+      },
+      {
+       "source": "ng_obrien",
+       "quote": "these were 5.4 metres away from the back stone in the end chamber"
+      },
+      {
+       "source": "ng_obrien",
+       "quote": "These stones were only one metre from the back stone."
+      },
+      {
+       "source": "wp_loughcrew",
+       "quote": "In 1980 Irish-American researcher Martin Brennan discovered"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "construction",
+     "date": "c. 3300 BC (no dating programme)",
+     "what": "cemetery of cruciform passage tombs on the hilltops",
+     "cites": [
+      {
+       "source": "wp_loughcrew",
+       "quote": "No comprehensive dating programme has been conducted there, but the monuments are estimated to date from about 3300 BC."
+      }
+     ]
+    },
+    {
+     "name": "Conwell's clearance",
+     "date": "1865",
+     "what": "passage and chamber cleared of fallen stone; passage roofless, two thirds of the chamber vault gone",
+     "cites": [
+      {
+       "source": "conwell_1873",
+       "quote": "The first operation in the examination of this cam"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The roof of the passage had fallen in when Conwell arrived in 1864, and the beautiful beehive-corbelled chamber was in very poor condition, with two thirds of the neolithic roof collapsed."
+      }
+     ]
+    },
+    {
+     "name": "reconstruction",
+     "date": "1964 (SMR) or late 1800s (carrowkeel.com)",
+     "what": "passage roof and upper chamber rebuilt with a concrete roof; the two sources disagree on the date",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "the tomb was reconstructed by OPW in 1964"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "The problem appears to be that the concrete roof, added in the late 1800's has cracked and deteriorated."
+      }
+     ]
+    },
+    {
+     "name": "closure",
+     "date": "2018-",
+     "what": "interior closed for a cracked lintel / damaged passage roof",
+     "cites": [
+      {
+       "source": "ck_cairn_t",
+       "quote": "The interior of Cairn T has been closed to the public since 2018 due to structural damage to the roof of the passage."
+      },
+      {
+       "source": "hi_loughcrew",
+       "quote": "Due to ongoing conservation works access to the interior of Cairn T is not possible at present."
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Intent: the equinox is not a horizon extreme, and Prendergast and Ray found only 4 of 122 Irish passage tombs with an apparent equinox alignment, 'mere chance'; Cairn T is commonly counted among them, while Brennan and O'Brien read the backstone motifs as a calibrated calendar (possibly a four-year cycle).",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "there are just four instances out of a total of 122 tombs with extant passages that have an apparent alignment on sunrise or sunset at the equinox and this suggests mere chance"
+      },
+      {
+       "source": "ck_cairn_t_equinox",
+       "quote": "It is quite possible that the beam runs on a four year cycle used to calculate leap years."
+      }
+     ]
+    },
+    {
+     "claim": "Date of the concrete roof: OPW 1964 (SMR) against 'late 1800s' (carrowkeel.com).",
+     "cites": [
+      {
+       "source": "smr_t",
+       "quote": "reconstructed by OPW in 1964"
+      },
+      {
+       "source": "ck_cairn_t",
+       "quote": "added in the late 1800's"
+      }
+     ]
+    }
+   ]
+  },
+  "knowth": {
+   "name": "Knowth, great mound (Tomb 1)",
+   "record": "Q1482124",
+   "record_note": "The catalogue also has Q116510750 'Knowth Mound' (53.7048, -6.48802), about 460 m NNE of the great mound; Q1482124 is the OSM-linked item for the great mound.",
+   "smr": "ME019-030001-",
+   "osm": {
+    "mound": "way 264536965 'Knowth' (43 nodes, closed; wikidata Q1482124, ref:IE:nm 409): encloses 6,367 m2, equal-area diameter 90.0 m, extents 86.3 m E-W x 91.9 m N-S; centroid 53.701204, -6.491406, 1.5 m from the SMR point (derived)",
+    "other": "satellite tombs as 12 ways tagged megalith_type=tholos, ruins=yes (927054593-927054604), node 8601685871 'Knowth Timber Circle', information boards; no entrance, passage, kerbstone or standing-stone nodes for the great mound"
+   },
+   "about": "The great mound at Knowth (Tomb 1), built and used c. 3200-2900 BC, is subcircular (95 m N-S, 80 m E-W, 10 m high) with a kerb of 127 contiguous kerbstones, most of them decorated, and covers two back-to-back passage tombs whose chambers are about 5 m apart: the eastern tomb (40.2 m long, a straight passage to a cruciform chamber with a corbelled vault 6.1 m high) and the western tomb (34.2 m, a passage bending 19-20° about 25-27 m in, to an undifferentiated chamber). Built in phases (1A dismantled; 1B the two chambers with short passages in a 38 m cairn; 1C passages lengthened to a new kerb under the great mound). In the early medieval period the mound became a rath and the passage ends were cut by ditches and souterrains, so the original entrances are lost. Excavated by George Eogan 1962-2000; the entrances were reconstructed and closed (concrete), the passages encased and propped, and the chambers are closed to visitors. The equinox alignment often claimed has been tested and rejected by Prendergast and Ray.",
+   "facts": {
+    "reference_point": {
+     "value": {
+      "lat": 53.70121749717225,
+      "lon": -6.491404265732647,
+      "itm_e": 699613,
+      "itm_n": 773448
+     },
+     "unit": "WGS84 / ITM",
+     "note": "SMR point of the great mound; 1.5 m from the OSM outline centroid (derived), so close to the mound centre. The chambers are 'only c. 5 m apart at the centre of the mound'. Prendergast and Ray's sun table gives the site as W6°29'26\", N53°42'04\", 78 m.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "\"LATITUDE\":53.701217497172252,\"LONGITUDE\":-6.4914042657326467"
+      },
+      {
+       "source": "smr_k",
+       "quote": "the chambers of which are only c. 5m apart at the centre of the mound"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "Horizon coordinates for sun at Knowth (W6° 29' 26\", N53° 42' 04\", Elev. 78m)"
+      }
+     ]
+    },
+    "mound_dimensions_m": {
+     "value": {
+      "n_s": 95,
+      "e_w": 80,
+      "height": 10
+     },
+     "unit": "m",
+     "note": "SMR (after Eogan and Cleary 2017). knowth.com and OPW: 95 m at its widest, about 10 m high. Wikipedia's '67 metres ... 12 metres' disagrees with all others and with OSM (91.9 x 86.3 m, derived) and is not used.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "The mound is subcircular (dims 95m N-S; 80m E-W; H 10m)"
+      },
+      {
+       "source": "knowth_com",
+       "quote": "It is about 10 metres (33 feet) high and 95 metres (312 feet) across at its widest point"
+      },
+      {
+       "source": "hi_edu",
+       "quote": "The mound covers over half a hectare and is 95m across at its widest point."
+      },
+      {
+       "source": "wp_knowth",
+       "quote": "The mound is about 12 metres (40 ft) high and 67 metres (220 ft) in diameter, covering roughly a hectare."
+      }
+     ]
+    },
+    "kerb_stones": {
+     "value": 127,
+     "unit": "stones",
+     "note": "127 contiguous kerbstones numbered clockwise from the junction with Tomb 16 at NE; three missing (124 survive), kerb straightened at N to avoid Tomb 13 and incurving at E and W to the entrances.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "has a circuit of 127 contiguous kerbstones including a few gaps, which are numbered clockwise from its junction with Tomb 16 at NE"
+      },
+      {
+       "source": "wp_knowth",
+       "quote": "is encircled by 127 kerbstones, of which three are missing, and four badly damaged"
+      },
+      {
+       "source": "knowth_com",
+       "quote": "At the base of the Great Mound at Knowth are 124 surviving kerbstones"
+      },
+      {
+       "source": "smr_k",
+       "quote": "Incurving of the kerb at E and W funnels traffic to the entrances of two back-to-back passage tombs"
+      }
+     ]
+    },
+    "east_tomb_length_m": {
+     "value": 40.2,
+     "unit": "m",
+     "note": "Total length of the eastern tomb, entrance kerbstone to end recess (SMR). Prendergast and Ray give 'a total length of c. 35 m (including the chamber)'; knowth.com 'passage approximately 35 metres ... total length to over 40 metres'. The outer 5 m were destroyed by the early medieval ditch.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "The E tomb (total L 40.2m) is a straight passage (Wth c. 0.6-0.8m; H 1.5-1.6m) that increases in height (max. H 2.7m) as it approaches the cruciform chamber (max. dims 8.16m N-S; 5.6m E-W)."
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "from c. 9 m for phase 1B to a total length of c. 35 m (including the chamber) following the addition of phase 1C"
+      },
+      {
+       "source": "knowth_com",
+       "quote": "The eastern passage of the Great Mound at Knowth is approximately 35 metres (115 feet) (115 feet) long and leads into a cruciform chamber, bringing the tomb's total length to over 40 metres (131 feet)."
+      },
+      {
+       "source": "ck_knowth_east",
+       "quote": "During excavations at Knowth it was discovered that the first five meters of the passage had been destroyed by a defensive ditch excavated inside the kerb during the seventh and eighth centuries."
+      }
+     ]
+    },
+    "east_passage_azimuth_deg": {
+     "value": 85.13,
+     "unit": "deg true (outwards)",
+     "note": "Gyro-theodolite, 24 June 1985 (Mooney and Prendergast): 85° 08'; passage floor slope taken as altitude 0°; local eastern horizon about +1°. Solar declination +2° 12' (26 March, 16 September). carrowkeel.com's 83° is superseded.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "Azimuth of Baseline = RO (mean) – U (Mean) = 45° 30' − 320° 22' = 85° 08'"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "At Knowth, the altitude of the eastern local horizon is about +1°."
+      },
+      {
+       "source": "ck_knowth_astro",
+       "quote": "The East pasage is oriented to 83°—an azimuth 7° north of due east"
+      }
+     ]
+    },
+    "east_passage_floor": {
+     "value": 0,
+     "unit": "deg",
+     "note": "The eastern passage is 'comparatively straight and level over its entire length'.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "is comparatively straight and level over its entire length"
+      }
+     ]
+    },
+    "east_chamber": {
+     "value": {
+      "n_s": 8.16,
+      "e_w": 5.6,
+      "apex_height": 6.1
+     },
+     "unit": "m",
+     "note": "Cruciform chamber, recesses N, S, W under capstones, corbelled vault (ten courses) to an apex 6.1 m (SMR; OPW 'capstone ... 6m above the floor'; carrowkeel.com 'some seven meters'). The N (right) recess is the largest, with the decorated basin.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "The chamber has recesses at N, S and W that are covered by capstones, with a corbelled roof rising over them to the apex (max. H 6.1m) at the centre."
+      },
+      {
+       "source": "hi_edu",
+       "quote": "the capstone of the chamber roof is 6m above the floor"
+      },
+      {
+       "source": "ck_knowth_east",
+       "quote": "The roof is composed of ten courses of corbels, each overlapping the course below."
+      },
+      {
+       "source": "smr_k",
+       "quote": "The N or right-hand recess is the largest and has an elaborately decorated stone basin while the S recess has a smaller, plainer one."
+      }
+     ]
+    },
+    "west_tomb_length_m": {
+     "value": 34.2,
+     "unit": "m",
+     "note": "Total length of the western tomb (SMR; OPW 'over 34m'; Eogan's team measured 'some 34 meters' on entry in 1967).",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "The W tomb (total L 34.2m) comprises a passage (Wth c. 0.6m; H c. 1.1m) with a slight bend to the south c. 25m in from the kerb leading to a simple undifferentiated chamber (L c. 3.2m; Wth 1.3m; H 2m)."
+      },
+      {
+       "source": "hi_edu",
+       "quote": "The western tomb would originally have been over 34m in total length."
+      },
+      {
+       "source": "ck_knowth_west",
+       "quote": "we had travelled some 34 meters into the mound"
+      }
+     ]
+    },
+    "west_passage_azimuths_deg": {
+     "value": {
+      "outer_outwards": 258.57,
+      "inner_outwards": 278.23,
+      "deflection": 19.67
+     },
+     "unit": "deg true",
+     "note": "Gyro-theodolite, 27 November 1997 (Prendergast and Ray): outer passage 258° 34', inner (beyond the bend, the Tomb 1B part) 278° 14', deflection 19° 40' in the appendix (the text says 19°.4). Kerb to bend 26.7 m (SMR: c. 25 m).",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "Outer Passage Azimuth (inwards) Outer Passage Azimuth (outwards) 78° 34' 258° 34'"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "Inner Passage Azimuth (inwards) Inner Passage Azimuth (outwards) 98° 14' 278° 14'"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "Angle of bend in passage Deflection angle of passage 199° 40' (clockwise exterior) 160° 20' (clockwise interior) 19° 40'"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "the angular deflection between the outer and inner sections of the passage and this was found to be 19°.4"
+      }
+     ]
+    },
+    "west_passage_floor_rise_m": {
+     "value": 0.72,
+     "unit": "m",
+     "note": "Measured floor at the bend 0.72 m above the floor inside the kerb ('not true floor') over 26.7 m: about 1.5° up into the mound (derived); top of the entrance kerbstone 1.21 m above that datum, giving the +1° 03' lower limit of visible sky from the bend.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "Height of Floor inside Kerb Height of Floor @ bend in Passage Height of top of Kerb Stone Distance from Kerb to Bend 0.00 m (an assumed datum) 0.72 m (not true floor) 1.21 m 26.7 m"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "Vertical angle from floor at bend in passage to top of entrance kerb stone +1° 03'"
+      }
+     ]
+    },
+    "west_chamber": {
+     "value": {
+      "length": 3.2,
+      "width": 1.3,
+      "height": 2
+     },
+     "unit": "m",
+     "note": "Undifferentiated chamber beyond three sill stones; the passage narrows to 40 cm after the first sill; roofed by a single stone about 2 m long. Basin found at the bend, not in place.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "simple undifferentiated chamber (L c. 3.2m; Wth 1.3m; H 2m)"
+      },
+      {
+       "source": "hi_edu",
+       "quote": "Just after the bend, there is a sill-stone and after that the passage narrows to a width of just 40cm."
+      },
+      {
+       "source": "hi_edu",
+       "quote": "finally forms a rectangular shaped chamber about 2m in height, roofed with a huge 2m long stone"
+      },
+      {
+       "source": "smr_k",
+       "quote": "A stone basin was found at the bend in the passage but this is not its original position."
+      }
+     ]
+    },
+    "tomb_1b_cairn_m": {
+     "value": {
+      "diameter_n_s": 38,
+      "height": 9
+     },
+     "unit": "m",
+     "note": "The earlier cairn (Tomb 1B) round the two chambers and inner passages, no kerb.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "they are both secured by the same cairn (diam. c. 38m N-S; max. H c. 9m)"
+      }
+     ]
+    },
+    "stone": {
+     "value": "greywacke",
+     "unit": "rock",
+     "note": "Structural stones mostly greywacke from outside the locality (possibly Clogher Head); quartz (Dublin/Wicklow) and granite (Mournes) in the finishing and entrance settings.",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "Almost all the structural stones are greywacke, which was not derived from the immediate locality although there is a possible source at Clogher Head, Co. Louth."
+      },
+      {
+       "source": "hi_edu",
+       "quote": "Around the entrances to the tombs are settings of unusual stones such as quartz, granite and banded stones."
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "mound",
+     "kind": "mound",
+     "plan": "subcircular",
+     "n_s_m": 95,
+     "e_w_m": 80,
+     "height_m": 10,
+     "material": "sods intermixed with clay and stone layers over a stone cairn",
+     "state": "restored after excavation; path to the summit",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "the mound of sods intermixed with various clay and stone layers(Tomb 1C) was added"
+      },
+      {
+       "source": "knowth_com",
+       "quote": "The tour takes in the exterior of the Great Mound, including the decorated kerbstones and the path to the summit."
+      }
+     ]
+    },
+    {
+     "id": "kerb",
+     "kind": "kerb",
+     "count": 127,
+     "missing": 3,
+     "state": "exposed all round; most decorated",
+     "cites": [
+      {
+       "source": "ck_knowth",
+       "quote": "A continous ring of 127 kerbstones encircles the base of the enormous mound."
+      },
+      {
+       "source": "ck_knowth",
+       "quote": "Three kerbstones are missing and all but ten of the are engraved"
+      }
+     ]
+    },
+    {
+     "id": "K11",
+     "kind": "kerbstone",
+     "position": "east entrance kerbstone",
+     "note": "narrows the aperture of the east passage",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "The problem is further compounded by the erection of kerbstone 11 which would have considerably narrowed the size of the apparent aperture at the entrance"
+      }
+     ]
+    },
+    {
+     "id": "K74",
+     "kind": "kerbstone",
+     "position": "west entrance kerbstone",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "the first was located just inside the entrance kerbstone K74"
+      }
+     ]
+    },
+    {
+     "id": "east_passage",
+     "kind": "passage",
+     "length_m": 40.2,
+     "width_m": "0.6-0.8",
+     "height_m": "1.5-1.6 rising to 2.7",
+     "azimuth_deg": 85.13,
+     "roof": "lintels on orthostats or corbels; many orthostats pushed inwards (inverted V)",
+     "state": "outer end lost; straightened in excavation; entrance closed by a concrete slab",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "Both passages are roofed with lintels or capstones supported on the orthostats or on corbels protruding inwards over them, but pressure from the mound has forced the tops of many orthostats inwards so that much of the passages had an inverted V profile when discovered."
+      },
+      {
+       "source": "ck_knowth_east",
+       "quote": "The Entrance, in a most bizarre effort to make the monument tourist-friendly, was sealed off by a slab of concrete."
+      }
+     ]
+    },
+    {
+     "id": "east_chamber",
+     "kind": "chamber",
+     "plan": "cruciform, recesses N (largest, decorated basin), S, W",
+     "n_s_m": 8.16,
+     "e_w_m": 5.6,
+     "apex_m": 6.1,
+     "roof": "corbelled, ten courses, capstone",
+     "state": "propped with timber",
+     "cites": [
+      {
+       "source": "ck_knowth_east",
+       "quote": "oaken timber props were added to support the chamber and recesses"
+      }
+     ]
+    },
+    {
+     "id": "west_passage",
+     "kind": "passage",
+     "length_m": 34.2,
+     "width_m": 0.6,
+     "height_m": 1.1,
+     "outer_azimuth_deg": 258.57,
+     "inner_azimuth_deg": 278.23,
+     "bend_from_kerb_m": 26.7,
+     "sills": 3,
+     "state": "outer end lost; concrete wall inside the entrance; reinforced concrete casing",
+     "cites": [
+      {
+       "source": "wp_knowth",
+       "quote": "resulted in the erection of a concrete slab wall inside the mound's west entrance"
+      },
+      {
+       "source": "ck_knowth_west",
+       "quote": "The passage was encased in reinforced concrete"
+      }
+     ]
+    },
+    {
+     "id": "O49",
+     "kind": "orthostat",
+     "position": "west passage, S side at the first sill beyond the bend",
+     "note": "'owl' eyes",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "the first guarded on the S by an orthostat (O 49) which is decorated in the rare anthropomorphic style with two owl-like eyes"
+      }
+     ]
+    },
+    {
+     "id": "west_chamber",
+     "kind": "chamber",
+     "plan": "undifferentiated",
+     "length_m": 3.2,
+     "width_m": 1.3,
+     "height_m": 2,
+     "roof": "single capstone about 2 m long",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "simple undifferentiated chamber (L c. 3.2m; Wth 1.3m; H 2m)"
+      }
+     ]
+    },
+    {
+     "id": "entrance_standing_stones",
+     "kind": "standing stones",
+     "count": "1 at the east entrance, 2 at the west",
+     "cites": [
+      {
+       "source": "ck_knowth_astro",
+       "quote": "These pillar stones, one to the east and two at the west, cast shadows which interact with their respective entrance stones around the equinoxes."
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "equinox sunrise (east passage) - rejected",
+     "claim": "The east passage (85° 08') points about 5° N of E; with the +1° horizon the equinox sunrise is further south still. The aperture through the 35 m passage and K11 is under 1.4° wide, so direct sun in the chamber is unlikely. Matching dates: about 26 March and 16 September.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "Such an alignment is therefore north of east by about 5° and further north again of actual sunrise at the equinox because of the elevated angular altitude of the horizon."
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "we estimate the angular limits of the apparent aperture to be less than 1°.4 horizontally and significantly less in the vertical, thus making any penetration of the chamber by direct sunlight unlikely"
+      },
+      {
+       "source": "wp_knowth",
+       "quote": "The east–west orientation of the passages at Knowth suggests astronomical alignment with the equinoxes."
+      }
+     ]
+    },
+    {
+     "event": "equinox sunset (west passage) - rejected; sunset on c. 4 March and 9 October",
+     "claim": "The outer west passage (258° 34', declination -6° 12') takes the setting sun about 17 days before the spring and after the autumn equinox (c. 4 March, 9 October), for a day or two, reaching orthostats 33/34 at the bend; the inner passage (278° 14', +5° 18') matches c. 3 April and 8 September. At the equinox only a few metres of the S wall near the entrance are lit. The light seen in 1997 (23 September, 18:20 UTC+1, beyond the first sill to orthostat 38) came with the capstones off and was probably reflected. A tree and hedgerow now block the view.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "the setting sun will directly illuminate the outer passage as described above, approximately seventeen days after the autumnal equinox, or equivalently, seventeen days before the vernal equinox"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "there will only be a brief period, occurring twice a year and lasting a day or two at most, when direct light from the setting sun will penetrate as far as orthostats 33 and 34"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "direct sunlight entered the passage on the 23rd September 1997 at c.18:20 (UTC +1)"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "the illumination reached beyond the first sill stone as far as orthostat 38"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "it seems likely that what was observed was reflected light"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "only a few metres of the southern sidewall of the passage nearest the entrance were illuminated"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "the spectacle is blocked by the large tree and high hedgerow to the west of the entrance"
+      },
+      {
+       "source": "knowth_align",
+       "quote": "the western outer passage corresponds to around March 4 and October 9, while the western inner passage aligns more closely with dates around April 3 and September 8."
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "Tomb 1A",
+     "date": "before c. 3200 BC",
+     "what": "an earlier passage tomb dismantled for the site and its materials",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "the first being a passage tomb (1A) that was dismantled to provide a location and materials for the second phase (Tomb 1B)"
+      }
+     ]
+    },
+    {
+     "name": "Tomb 1B",
+     "date": "before Tomb 1C (not separately dated)",
+     "what": "the E and W chambers with short passages (c. 9 m) in a 38 m cairn without kerb; the bend of the west passage may mark its edge",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "when the E and W chambers with short passages and their stabilising cairn (diam. 38m N-S) were built"
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "the circumference of the earlier Tomb 1B cairn may have coincided with the bend of the western passage"
+      }
+     ]
+    },
+    {
+     "name": "Tomb 1C",
+     "date": "c. 3200-2900 BC",
+     "what": "passages lengthened to a new kerb, the great mound added",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "the passages were lengthened to meet a new kerb"
+      },
+      {
+       "source": "smr_k",
+       "quote": "This central mound, which was built and utilised over three centuries c. 3200 – c. 2900 BC"
+      }
+     ]
+    },
+    {
+     "name": "early medieval rath and settlement",
+     "date": "7th-11th centuries AD",
+     "what": "ditches cut inside the kerb; passages entered, outer ends removed (up to 14 orthostats each), joined to souterrains",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "the tombs had been discovered in the seventh century AD when the mound was converted into a rath"
+      },
+      {
+       "source": "smr_k",
+       "quote": "The outer ends of both passages had been removed by these works when as many as 14 orthostats or large upright stones from each of the tombs could have been discarded, with the result that the original articulation of the passages with the kerb is not known."
+      }
+     ]
+    },
+    {
+     "name": "excavation and conservation",
+     "date": "1962-2000 (west passage found July 1967, east August 1968)",
+     "what": "Eogan's excavation; entrances reconstructed, passages straightened, chambers closed to visitors",
+     "cites": [
+      {
+       "source": "smr_k",
+       "quote": "The passages of the W and E tombs were discovered almost accidentally in July 1967 and August 1968 respectively"
+      },
+      {
+       "source": "ck_knowth_astro",
+       "quote": "As a consequence, the entrances to both passages were reconstructed by George Eogan."
+      },
+      {
+       "source": "smr_k",
+       "quote": "Therefore, it was decided that these passages and their chambers must remain off-limits to visitors."
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Equinox alignment: proposed by Brennan (1983) and Eogan (1986); the gyro-theodolite surveys show neither passage is aligned on the equinox sunrise or sunset. The sky_alignments.json entries (verdict 'disputed') stand; the measured azimuths can now be added.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "the eastern passage and the western passage (inner and outer) are not aligned towards sunrise and sunset respectively at the period of the vernal and autumnal equinoxes"
+      },
+      {
+       "source": "wp_knowth",
+       "quote": "the original entrances to the passages were distorted or destroyed, making it difficult to establish if an alignment ever existed."
+      },
+      {
+       "source": "knowth_align",
+       "quote": "Their conclusion is clear. The eastern and western passages of Knowth are not aligned on the equinox sunrise or equinox sunset."
+      }
+     ]
+    },
+    {
+     "claim": "Magnetic versus true north on the excavation plans (magnetic north about 11° W of true in 1970, 6° 30' in 1997) caused much of the confusion; true north is 1° 13' W of grid north at Knowth.",
+     "cites": [
+      {
+       "source": "pr_knowth",
+       "quote": "The same value in 1970, when the first plans for Knowth were published, was c. 11° i.e. at that time the western passage would have been almost aligned with magnetic west."
+      },
+      {
+       "source": "pr_knowth",
+       "quote": "true north is west of grid north by a constant 1° 13' for the geographic location of the passage tomb"
+      }
+     ]
+    },
+    {
+     "claim": "Quartz facade: Eogan left the quartz spread on the ground (as found); others argue Knowth, like Newgrange, had a quartz front.",
+     "cites": [
+      {
+       "source": "wp_knowth",
+       "quote": "He suggested that most or all of the white quartz had been spread on the ground, and so it was left on the ground at Knowth."
+      }
+     ]
+    }
+   ]
+  },
+  "dowth": {
+   "name": "Dowth (Dowth North and Dowth South)",
+   "record": "Q1253443",
+   "record_note": "Q1253443 is the OSM-linked item for the great mound. The catalogue's Q116803531 'Dowth Mound' is OSM way 1136283441, SMR ME020-012, a different mound.",
+   "smr": "ME020-017----",
+   "osm": {
+    "mound": "way 264536947 'Dowth' (22 nodes, closed; wikidata Q1253443, ref:IE:smr ME020-017): encloses 5,583 m2, equal-area diameter 84.3 m, extents 86.6 m E-W x 82.3 m N-S; centroid 53.703807, -6.450461, 6.2 m from the SMR point (derived)",
+    "other": "no entrance, passage or kerbstone nodes; nearby ways for Dowth Henge (624111210) and Dowth Hall Passage Tomb (619872953)"
+   },
+   "about": "Dowth, one of the three great mounds of Brú na Bóinne (c. 3200 BC, not independently dated), is a kerbed mound about 85 m across and 15 m high with an estimated 115 kerbstones (about half visible), covering two passage tombs that open on its west side within 25 m of each other, and an early medieval souterrain. Dowth North: a passage now about 8 m long with three sills to a cruciform chamber (a large basin in the centre, pieced together in 1847) and an annex off the right recess. Dowth South: a short passage (3.3-4 m) to a circular chamber about 5 m across with one large right-hand recess; its roof is a concrete one of c. 1885-86. The 1847 excavation left a crater in the top that was never repaired. Dowth South is lit by the setting sun in the winter months, most fully around the winter solstice; Dowth North's entrance was remodelled and blocked.",
+   "facts": {
+    "reference_point": {
+     "value": {
+      "lat": 53.70384136145005,
+      "lon": -6.450535765269109,
+      "itm_e": 702305,
+      "itm_n": 773798
+     },
+     "unit": "WGS84 / ITM",
+     "note": "SMR point of the great mound (6.2 m from the OSM outline centroid, derived). The tombs open on the west side; no position for either entrance was found.",
+     "cites": [
+      {
+       "source": "smr_d",
+       "quote": "\"LATITUDE\":53.703841361450053,\"LONGITUDE\":-6.4505357652691089"
+      },
+      {
+       "source": "smr_d",
+       "quote": "covering two passage-tombs opening onto its W side"
+      }
+     ]
+    },
+    "mound_diameter_m": {
+     "value": 85,
+     "unit": "m",
+     "note": "Kerbed mound 85 m in diameter (SMR, OPW, Wikipedia, knowth.com); OSM 84.3 m equal-area (derived).",
+     "cites": [
+      {
+       "source": "smr_d",
+       "quote": "This monument comprises a kerbed mound, 85m in diam., and 15m in H"
+      },
+      {
+       "source": "whi_dowth_panel",
+       "quote": "much of the original 85-metre diameter kerb can still be traced"
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "The cairn or tumulus is about 85 metres (280 ft) in diameter and 15 metres (50 ft) high"
+      }
+     ]
+    },
+    "mound_height_m": {
+     "value": 15,
+     "unit": "m",
+     "note": "15 m at the highest point, but OPW says this is probably spoil heaped up by the 1847 digging and the mound was lower.",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "At its highest part, it is over 15m but it is likely that it was lower originally and this high point represents dug up material that was piled up on the mound."
+      }
+     ]
+    },
+    "kerb_stones": {
+     "value": 115,
+     "unit": "stones (estimated)",
+     "note": "Estimated 115; about half visible, 15 of these carved; K51 'Stone of the Seven Suns'.",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "the mound is surrounded by a kerb of an estimated 115 stones and has two tombs facing westwards"
+      },
+      {
+       "source": "whi_dowth_panel",
+       "quote": "About half of the kerbstones are visible and 15 of these are carved."
+      }
+     ]
+    },
+    "tombs_spacing_m": {
+     "value": 25,
+     "unit": "m (within)",
+     "note": "The two tombs are within 25 m of each other, both in the SW quadrant.",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "There are two burial chambers in the mound within 25 metres of one another."
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "both located within the southwest quadrant of the monument"
+      }
+     ]
+    },
+    "north_passage_length_m": {
+     "value": 8.2,
+     "unit": "m",
+     "note": "Sources differ widely: 8.2 m 'at present' (OPW panel and pack); about 8 m (carrowkeel.com); 27 ft = 8.2 m (Wilde 1849, derived); 14 m (knowth.com); 18.2 m (Wikipedia); the whole tomb 12.5 m (SMR). The entrance was reconstructed, so the original length is unknown.",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "The passage of this tomb is at present 8.2m long and is divided by three sill stones."
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "The passage extends for about eight meters from the entrance to the chamber, and has eight orthostats on the right side and nine on the left."
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "This passage is twenty-seven feet long"
+      },
+      {
+       "source": "knowth_dowth",
+       "quote": "Dowth North has a passage approximately 14 metres (46 feet) long leading to a cruciform chamber"
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "The longest of the passages (Dowth North) is 18.2 metres in length and is crossed by 3 sill-stones"
+      },
+      {
+       "source": "smr_d",
+       "quote": "The N tomb, 12.5m long, is of cruciform shape; an annex of two chambers opens off S recess."
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "so it is impossible to say what the original length of the passage was"
+      }
+     ]
+    },
+    "north_passage_azimuth_deg": {
+     "value": 238,
+     "unit": "deg true (derived)",
+     "note": "Clare O'Kelly's 1969 plan gives 250° magnetic; Murphy subtracts 12° for magnetic variation then to get 238° true (derived by him, not a survey); the passage allows 231°-245°.",
+     "derived": true,
+     "cites": [
+      {
+       "source": "mi_dowth",
+       "quote": "The orientation of the northern passage of Dowth is given as 250 degrees magnetic azimuth in Clare O’Kelly’s 1969 drawing."
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "This gives us 238 degrees (true)"
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "The northernmost azimuth covered is 245 degrees"
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "The southernmost reach of the range of azimuths is 231 degrees T"
+      }
+     ]
+    },
+    "north_chamber": {
+     "value": {
+      "plan": "cruciform",
+      "roof_height": 3,
+      "orthostat_height": "almost 3"
+     },
+     "unit": "m",
+     "note": "Cruciform chamber with three recesses and an annex of two chambers off the right (S) recess; a low 3 m corbelled roof per OPW, but Wikipedia says lintelled, not corbelled, and carrowkeel.com 'roofed by one huge slab' (disagreement); four huge stones almost 3 m high; basin 1.4 x 1 m (OPW) or 1.5 x 1 m, 25 cm deep (O'Kelly) in the centre where it was put together in 1847.",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "The passage leads into a cruciform chamber with three side recesses. There is a low 3m corbelled roof. A large stone basin (1.4m x 1m) lies on the floor of the central chamber. The four huge stones that define the chamber space are almost 3m high."
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "ends in a cruciform chamber with a lintelled (not corbelled as in Newgrange or Knowth) roof"
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "roofed by one huge slab"
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "The nine fragments of the Dowth basin were put together in the course of the excavation and the whole placed in the centre of the chamber but there is no certainty that this is the correct position."
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "Its dimensions are l-5m by lm and themaximum depth of the hollowed part is 25cm."
+      }
+     ]
+    },
+    "north_annex": {
+     "value": 2.4,
+     "unit": "m",
+     "note": "Annex off the right-hand recess (L-shaped) floored by a 2.4 m flagstone with an oval bullaun.",
+     "cites": [
+      {
+       "source": "wp_dowth",
+       "quote": "This annex is floored with a 2.4 metre-long flagstone containing an oval bullaun (artificial depression)."
+      }
+     ]
+    },
+    "south_passage_length_m": {
+     "value": 3.3,
+     "unit": "m",
+     "note": "Sources differ: 3.3 m (OPW); 3.5 m (Wikipedia, knowth.com); four meters with three orthostats a side (carrowkeel.com); tomb 8.25 m long (SMR).",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "There is a sill stone at the end of the short (3.3m) passage, which leads into an almost circular chamber with one recess."
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "Dowth South is 3.5 metres long and ends in a roughly circular chamber with a modern concrete roof"
+      },
+      {
+       "source": "ck_dowth_south",
+       "quote": "The passage is four meters long and constructed with three large orthostats on each side."
+      },
+      {
+       "source": "smr_d",
+       "quote": "S tomb is 8.25m long and comprises a short passage leading to a sub-circular chamber with a single recess opening off its SE side."
+      }
+     ]
+    },
+    "south_orientation": {
+     "value": "SW (azimuth not found)",
+     "unit": "direction",
+     "note": "OPW: aligned south-westerly to the winter solstice sunset; no surveyed azimuth was found. Murphy says its central axis points to the Hill of Tara.",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "The southern passage and chamber are aligned in a south-westerly direction, facing the setting sun on the winter solstice."
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "the central axis of Dowth South points to the Hill of Tara and is oriented towards Major Standstill moonset"
+      }
+     ]
+    },
+    "south_chamber": {
+     "value": {
+      "diameter": 5,
+      "orthostats": 12
+     },
+     "unit": "m",
+     "note": "Roughly circular chamber about 5 m across, twelve orthostats and a gap for a thirteenth, a sill between passage and chamber.",
+     "cites": [
+      {
+       "source": "ck_dowth_south",
+       "quote": "The passage opens into an unusual round chamber, about five meters in diameter, with a sill-stone dividing the passage from the chamber."
+      },
+      {
+       "source": "ck_dowth_south",
+       "quote": "There are twelve orthostats (structural stones) which form the roughly circular chamber, and an empty space where there may have been a thirteenth stone."
+      }
+     ]
+    },
+    "south_recess": {
+     "value": {
+      "length": 2.9,
+      "width": 1.6,
+      "height": 2
+     },
+     "unit": "m",
+     "note": "The single recess on the right (S), wedge-shaped, three slabs on their long edges averaging 2.6 m, corbelled roof (original but rearranged), sill across the entrance (O'Kelly and O'Kelly 1983).",
+     "cites": [
+      {
+       "source": "ck_dowth_south",
+       "quote": "The recess measures 2.9 meters from front to back and l.6 meters from side to side across the centre. It is about 2 meters high."
+      },
+      {
+       "source": "ck_dowth_south",
+       "quote": "The sides are formed of three large slabs laid on their long edges, averaging 2.6 meters in length."
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "mound",
+     "kind": "mound",
+     "diameter_m": 85,
+     "height_m": 15,
+     "state": "unrestored; crater in the top from 1847; quarried on the west",
+     "cites": [
+      {
+       "source": "wp_dowth",
+       "quote": "leaving a large crater in the mound that has never been repaired"
+      },
+      {
+       "source": "whi_dowth_panel",
+       "quote": "There has also been quarrying on the western side of the mound."
+      }
+     ]
+    },
+    {
+     "id": "kerb",
+     "kind": "kerb",
+     "count_estimated": 115,
+     "visible": "about half",
+     "state": "many partly or completely buried",
+     "cites": [
+      {
+       "source": "knowth_dowth",
+       "quote": "it is encircled by a ring of large kerbstones, many of which are now partially or completely buried"
+      }
+     ]
+    },
+    {
+     "id": "K51",
+     "kind": "kerbstone",
+     "name": "Stone of the Seven Suns",
+     "cites": [
+      {
+       "source": "wp_dowth",
+       "quote": "Kerbstone 51, sometimes called the Stone of the Seven Suns"
+      }
+     ]
+    },
+    {
+     "id": "south_K1",
+     "kind": "kerbstone",
+     "position": "entrance of Dowth South",
+     "state": "fallen forwards; spiral and cupmarks",
+     "cites": [
+      {
+       "source": "ck_dowth_south",
+       "quote": "Although this entrance stone has fallen forwards, an engraved spiral and some cupmarks can be seen carved into it."
+      }
+     ]
+    },
+    {
+     "id": "dowth_north",
+     "kind": "passage tomb",
+     "passage_length_m": 8.2,
+     "sills": 3,
+     "chamber": "cruciform with annex",
+     "azimuth_deg": 238,
+     "state": "original entrance buried; reached through the early medieval souterrain; a Victorian (1847-48) or early 20th-century concrete shaft meets the passage near its entrance",
+     "cites": [
+      {
+       "source": "ck_dowth_north",
+       "quote": "When the monument was excavated in 1847 and 1848, the entrance was re-modelled, with the original opening blocked off and a new entry made in the roof using a trapdoor and ladder."
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "The early Christian souterrain which joins up with the neolithic passage, is now the main way to access Dowth North."
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "intruded upon by a concretre shaft built by the Office of Public Works (OPW) in the early 20th century"
+      }
+     ]
+    },
+    {
+     "id": "dowth_south",
+     "kind": "passage tomb",
+     "passage_length_m": 3.3,
+     "chamber": "circular, about 5 m, one right-hand recess",
+     "roof": "concrete, c. 1885-86 (Deane); original probably corbelled, gone by the 1880s",
+     "state": "gated; closed except for solstice openings",
+     "cites": [
+      {
+       "source": "ck_dowth_south",
+       "quote": "A concrete roof was added around 1885 or 1886 during renovations on Boyne Valley monuments supervised by Sir Thomas Newton Deane."
+      },
+      {
+       "source": "whi_dowth_panel",
+       "quote": "The roof of this chamber is a modern, concrete one but the original was possibly corbelled."
+      }
+     ]
+    },
+    {
+     "id": "souterrain",
+     "kind": "souterrain",
+     "length_m": 23.5,
+     "date": "early medieval (10th-11th c. per Wikipedia)",
+     "cites": [
+      {
+       "source": "smr_d",
+       "quote": "Two passages connected by drop-hole (total L c. 23.5m), terminating in beehive chamber with another beehive chamber off main passage close to entrance."
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "It leads into the passage of Dowth North and was constructed around the 10th or 11th century."
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "winter solstice sunset (Dowth South)",
+     "claim": "From about November (or early October) to February the setting sun enters Dowth South, between the top of K1 and the lintel, over the sill, and onto the stones at the back of the chamber; the convex stone C7 reflects light into the decorated right-hand recess. Around 21 December light enters at about 3 pm (Brennan: a broad beam at 4.15 pm) and withdraws after about two hours. OPW opens it for the solstice sunset (2:30-4 pm in 2018). Trees to the west now obstruct it.",
+     "cites": [
+      {
+       "source": "wp_dowth",
+       "quote": "From November to February, the rays of the evening sun reach into the passage and then the chamber of Dowth South."
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "the light of the low sun moves along the left side of the passage, then into the circular chamber, where three stones are lit up by its rays"
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "after about two hours the sun withdraws from Dowth South"
+      },
+      {
+       "source": "wp_bnb",
+       "quote": "Newgrange and Dowth have winter solstice solar alignments"
+      },
+      {
+       "source": "knowth_dowth",
+       "quote": "In the days around 21 December, at approximately 3pm, sunlight enters the passage and reaches into the chamber."
+      },
+      {
+       "source": "knowth_dowth",
+       "quote": "From early October to late February, sunlight can enter the chamber under favourable conditions."
+      },
+      {
+       "source": "knowth_dowth_sunsets",
+       "quote": "the beam, entering the passage in the space between the top of kerbstone K1 and under the lintel, travels first over the sill stone, then enters the chamber and finally shines directly onto the stones at the back of the chamber"
+      },
+      {
+       "source": "knowth_dowth_sunsets",
+       "quote": "The sunlight is also reflected from stone C7 into a dark recess on the southern side of the chamber, where it illuminates decorated stones."
+      },
+      {
+       "source": "ck_dowth_south",
+       "quote": "A broad beam of sunlight enters the passage at 4.15 pm, sweeps across the floor and illuminates the decorated stone at the back of the chamber."
+      },
+      {
+       "source": "ng_news56",
+       "quote": "The Office of Public Works will have staff at Dowth South for Winter Solstice Sunset on Friday 21st December from 2:30pm until 4"
+      },
+      {
+       "source": "knowth_dowth_sunsets",
+       "quote": "Evergreen trees to the west of the mound at Dowth are a growing problem, obstructing the sunbeam into the passage and chamber."
+      }
+     ]
+    },
+    {
+     "event": "cross-quarter sunsets (Dowth North), proposed",
+     "claim": "Dowth North (231°-245° allowed by the passage) is proposed for the sunsets of early November and early February (Brennan, Murphy) and the minor-standstill moonset (Murphy); the blocked entrance stops any light now.",
+     "cites": [
+      {
+       "source": "ck_dowth_north",
+       "quote": "The passage is oriented to the sunsets at Samhain and Imbolc, which occur in early November and February."
+      },
+      {
+       "source": "ck_dowth_north",
+       "quote": "Due to the obstructions at the entrance the sun has been unable to enter for many years and the chamber remains in darkness"
+      },
+      {
+       "source": "mi_dowth",
+       "quote": "which almost certainly would allow the sunset on the November-February (Samhain/Imbolc) cross quarter day to shine onto chamber stone 13"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "construction",
+     "date": "c. 3200-2900 BC (by analogy; not dated)",
+     "what": "two passage tombs under a kerbed mound",
+     "cites": [
+      {
+       "source": "wp_dowth",
+       "quote": "Unlike Newgrange and Knowth, Dowth has not been independently dated, but its features align it with the other passage tombs which date from between approximately 3200 and 2900 BC."
+      }
+     ]
+    },
+    {
+     "name": "souterrain",
+     "date": "10th-11th century AD",
+     "what": "souterrain built into the mound and joined to the passage of Dowth North",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "people living on or near the mound constructed a souterrain within the kerb and linked it to the passage of Dowth North"
+      }
+     ]
+    },
+    {
+     "name": "RIA excavation",
+     "date": "1847",
+     "what": "a cutting into the top looking for a central chamber; crater left; later quarrying",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "In 1847, a large cutting was made into the mound. The aim of those who dug this trench was to find a central chamber."
+      }
+     ]
+    },
+    {
+     "name": "state care and repairs",
+     "date": "1882; c. 1885-86",
+     "what": "taken into state care; concrete roof over Dowth South; spalls inserted in the recess",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "The monument was taken into State Care in 1882"
+      },
+      {
+       "source": "ck_dowth_south",
+       "quote": "In the course of that work, a concrete roof was placed over the chamber."
+      }
+     ]
+    },
+    {
+     "name": "survey",
+     "date": "1970s (published 1983)",
+     "what": "M. J. and C. O'Kelly survey",
+     "cites": [
+      {
+       "source": "whi_dowth_panel",
+       "quote": "the mound was surveyed and studied in detail by M.J. and Claire O’Kelly in the 1970’s"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Dowth North's roof: corbelled (OPW) or lintelled / one huge slab (Wikipedia, carrowkeel.com).",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "There is a low 3m corbelled roof."
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "with a lintelled (not corbelled as in Newgrange or Knowth) roof"
+      }
+     ]
+    },
+    {
+     "claim": "Dowth North's passage length: 8.2 m now (OPW) against 14 m (knowth.com), 18.2 m (Wikipedia) and a 12.5 m tomb (SMR); the entrance was rebuilt in 1847-48, so the original length is unknown.",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "The passage of this tomb is at present 8.2m long"
+      },
+      {
+       "source": "wp_dowth",
+       "quote": "is 18.2 metres in length"
+      }
+     ]
+    },
+    {
+     "claim": "The Dowth South alignment is rated 'probable' in sky_alignments.json; no measured azimuth or horizon survey was reachable (Prendergast 2011 holds one).",
+     "cites": [
+      {
+       "source": "hi_edu",
+       "quote": "There is no roof box at Dowth."
+      }
+     ]
+    }
+   ]
+  },
+  "carrowkeel_g": {
+   "name": "Carrowkeel Cairn G",
+   "record": "Q261318",
+   "record_note": "Q261318 is the Carrowkeel cemetery (catalogue point 54.0533, -8.3778, about 310 m S of Cairn G); place the model at the SMR point.",
+   "smr": "SL040-089----",
+   "osm": {
+    "cairn": "way 541508806 'Cairn G' (19 nodes, closed; ref:IE:smr SL040-089, ref:IE:nm 518): encloses 281 m2, equal-area diameter 18.9 m, extents 19.4 m E-W x 18.7 m N-S; centroid 54.056074, -8.377760, 2.5 m from the SMR point (derived)",
+    "other": "neighbouring cairns B, E, F, H, K, L, C, D, M, N, O, P as ways; no entrance, roof-box or kerbstone nodes"
+   },
+   "about": "Cairn G is the best preserved tomb of the Carrowkeel passage tomb cemetery on the Bricklieve Mountains, Co. Sligo, at 290 m on the north end of Carrowkeel Mountain. A limestone cairn 18-21 m across and 3 m high (Macalister: 21 ft) covers a short cruciform tomb opening to the NW: a 2 m passage closed by a stone door slab, a central chamber 1.7 x 1.9 m and 2.3 m high roofed by lintels and oversailing corbels under a large flat slab, and three small cells behind high sills. Above the lintel of the entrance is a slot, the 'roof-box', through which the setting sun shines into the chamber for weeks either side of the summer solstice. Opened intact in April 1911 by Macalister, Armstrong and Praeger; burials there date to the Middle-Late Neolithic (c. 3450-2800 cal BC for the cemetery). Bog covers the base; one kerbstone is visible. Not reconstructed: the roof is original.",
+   "facts": {
+    "reference_point": {
+     "value": {
+      "lat": 54.05606164206028,
+      "lon": -8.377727925289712,
+      "itm_e": 575268,
+      "itm_n": 811945
+     },
+     "unit": "WGS84 / ITM",
+     "note": "SMR point of Cairn G, 2.5 m from the OSM outline centroid (derived).",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "\"LATITUDE\":54.056061642060278,\"LONGITUDE\":-8.3777279252897117"
+      },
+      {
+       "source": "smr_g",
+       "quote": "This is a National Monument in State care (no. 518). Carn G in the Carrowkeel-Kesh Corann passage tomb cemetery."
+      }
+     ]
+    },
+    "altitude_m": {
+     "value": 290,
+     "unit": "m",
+     "note": "Ground at the cairn.",
+     "cites": [
+      {
+       "source": "ck_cairn_g",
+       "quote": "The cairn is situated at 290 metres above sea level on the north end of Carrowkeel Mountain."
+      }
+     ]
+    },
+    "cairn_diameter_m": {
+     "value": 19,
+     "unit": "m",
+     "note": "Sources differ: 18-20 m (SMR); 68-70 ft (20.7-21.3 m, derived; Macalister 1911); 21 m (carrowkeel.com, newgrange.com); about 22 m (irishstones). OSM 18.9 m equal-area (derived). The base is buried in bog, which may explain the spread.",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "A circular cairn (diam. 18-20m; H 3m) covers a well-preserved cruciform passage tomb opening to the NW."
+      },
+      {
+       "source": "ck_macalister",
+       "quote": "This carn is about the same size as B, 21 feet high and 68 feet to 70 feet in diameter at the base."
+      },
+      {
+       "source": "ck_cairn_g",
+       "quote": "The diameter of the cairn is given as 21 metres."
+      },
+      {
+       "source": "mi_carrowkeel_08",
+       "quote": "Its cairn is about 21 metres (69 feet) in diameter"
+      },
+      {
+       "source": "is_cairn_g",
+       "quote": "it has a diameter of about 22 metres"
+      }
+     ]
+    },
+    "cairn_height_m": {
+     "value": 3,
+     "unit": "m",
+     "note": "3 m (SMR) against 21 ft = 6.4 m (Macalister 1911, derived). Not reconciled; Macalister may have measured up the slope or from lower ground.",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "(diam. 18-20m; H 3m)"
+      },
+      {
+       "source": "ck_macalister",
+       "quote": "21 feet high"
+      }
+     ]
+    },
+    "kerb": {
+     "value": 1,
+     "unit": "visible kerbstone",
+     "note": "Any kerb is under the turf/bog; one kerbstone (a gneiss boulder) shows W of the entrance; the chamber floor is about 2 ft (0.6 m) below the present base level.",
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "There may be a kerb, but if so it is completely concealed by the turf which has grown up round the margin of the heap of stones, to such an extent that the floor of the chamber is some 2 feet below the present average level of the base of the mound."
+      },
+      {
+       "source": "ck_cairn_g",
+       "quote": "The base of the cairn and most of the north face are buried under a thick layer of blanket bog, with one kerbstone, a gneiss boulder, visible west of the entrance."
+      }
+     ]
+    },
+    "tomb_length_m": {
+     "value": 5,
+     "unit": "m",
+     "note": "Whole tomb 5 m: passage 2 m (about 1 m wide) to the chamber.",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "The tomb (L 5m) consists of a passage (L 2m; Wth c. 1m) leading to a chamber (L 1.7m; Wth 1.9m; H 2.3m)"
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "The passage is much shorter than Newgrange, only about two meters long, and so the roof box opens directly into the chamber."
+      }
+     ]
+    },
+    "entrance_azimuth_deg": {
+     "value": 308,
+     "unit": "deg true (approx., derived)",
+     "note": "Macalister 1911: 'north-west by north (compass bearings 328 degrees)'. A compass bearing of 1911 is magnetic; with a magnetic variation of about 20° W in Sligo then (an assumption, not from a source) that is about 308° true (derived, rough). SMR: 'opening to the NW'; irishstones 300°. No surveyed azimuth was reachable (Prendergast 2011). Byrne: the main axis points to the left edge of Knocknarea.",
+     "derived": true,
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "The entrance faces north-west by north (compass bearings 328 degrees)."
+      },
+      {
+       "source": "smr_g",
+       "quote": "opening to the NW"
+      },
+      {
+       "source": "is_cairn_g",
+       "quote": "a lintelled entrance at the northwest (300°)"
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "The main axis of Cairn G is aligned to the left edge of Knocknarea mountain where Queen Maeve's cairn is clearly visible on the summit."
+      }
+     ]
+    },
+    "chamber": {
+     "value": {
+      "length": 1.7,
+      "width": 1.9,
+      "height": 2.3
+     },
+     "unit": "m",
+     "note": "Central chamber 'more or less circular' (Macalister) or polygonal; standing stones up to 6 ft (1.8 m); walls of eight split and trimmed orthostats; roof on two large corbels to a massive covering slab.",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "leading to a chamber (L 1.7m; Wth 1.9m; H 2.3m)"
+      },
+      {
+       "source": "ck_macalister",
+       "quote": "Well-selected standing stones of a maximum height of 6 feet support a system of lintels and cross-beams of stone, which, rising by oversailing courses, form a chamber very similar to Brugh na Boinne both in plan and construction."
+      },
+      {
+       "source": "ck_cairn_g",
+       "quote": "The walls are composed of eight orthostats, which were split and trimmed and give a fine sense of balance and symmetry. The roof rises on two large corbels to a massive covering slab."
+      }
+     ]
+    },
+    "cells_m": {
+     "value": {
+      "west_right": [
+       0.85,
+       0.95,
+       1.3
+      ],
+      "east_left": [
+       0.85,
+       1.1,
+       1.4
+      ],
+      "end": [
+       1,
+       1,
+       1.3
+      ]
+     },
+     "unit": "m (L, W, H)",
+     "note": "Three cells behind high sills, each floored with a large flagstone; a window-type slot over each recess.",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "one to the right or W (L 0.85m; Wth 0.95m; H 1.3m), another to the left or E (L 0.85m; Wth 1.1m; H 1.4m) and an endchamber (L 1m; Wth 1m; H 1.3m)"
+      },
+      {
+       "source": "ck_macalister",
+       "quote": "three small cells, of lesser heights and separated by high sills from the main chamber, give a cruciform shape to the plan of the structure"
+      },
+      {
+       "source": "ck_cairn_g",
+       "quote": "The recesses are flanked by orthostats and there is a window-type slot over each recess."
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "cairn",
+     "kind": "cairn",
+     "diameter_m": 19,
+     "height_m": 3,
+     "material": "angular limestone blocks",
+     "state": "intact; base and N face under blanket bog",
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "Like most of the others, it is a conical mound of angular limestone blocks"
+      }
+     ]
+    },
+    {
+     "id": "entrance",
+     "kind": "entrance",
+     "azimuth_deg": 308,
+     "note": "a small hole between a lintel and a threshold close together; the stone door slab still in place, with a slit on its right; entry between door and lintel",
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "It is a small hole, confined between a lintel and a threshold very close together"
+      },
+      {
+       "source": "ck_cairn_g",
+       "quote": "The stone door slab still remains in place, with an unusual slit in the right hand side."
+      },
+      {
+       "source": "ck_cairn_g",
+       "quote": "Access is gained between the door and lintel"
+      }
+     ]
+    },
+    {
+     "id": "roof_box",
+     "kind": "roof-box",
+     "position": "slot above the entrance lintel, between horizontal lintels, opening straight into the chamber",
+     "dimensions": "not found",
+     "cites": [
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "Above the entrance of Cairn G is an opening or slot which seems to be an early version of a roofbox."
+      },
+      {
+       "source": "mi_carrowkeel_08",
+       "quote": "Carrowkeel Cairn G roofbox opening between horizontal lintels."
+      },
+      {
+       "source": "wp_newgrange",
+       "quote": "Cairn G at Carrowkeel has a similar \"roofbox\""
+      }
+     ]
+    },
+    {
+     "id": "passage",
+     "kind": "passage",
+     "length_m": 2,
+     "width_m": 1,
+     "note": "sillstones divide it into two compartments; floored with flat slabs",
+     "cites": [
+      {
+       "source": "smr_g",
+       "quote": "Sillstones divide the passage into two compartments and are in place at the front of the two side-chambers and endchamber."
+      },
+      {
+       "source": "smr_g",
+       "quote": "large flat slabs (some of which are still visible) had been laid as floorstones along the passage and in the chambers"
+      }
+     ]
+    },
+    {
+     "id": "chamber",
+     "kind": "chamber",
+     "plan": "cruciform: central chamber and three cells",
+     "length_m": 1.7,
+     "width_m": 1.9,
+     "height_m": 2.3,
+     "roof": "lintels and oversailing corbels, roofing slabs sloping down to the outside, capped by a large flat slab",
+     "stone": "limestone orthostats",
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "The roofing-slabs, as in Carn F , slope downwards to the outside."
+      },
+      {
+       "source": "smr_g",
+       "quote": "these support a series of lintels and oversailing corbels capped by a large flat slab above the main chamber"
+      },
+      {
+       "source": "mi_carrowkeel_08",
+       "quote": "The chamber is formed by massive limestone orthostats that were carefully shaped and fitted with notable precision."
+      }
+     ]
+    },
+    {
+     "id": "child_shelf",
+     "kind": "wall pocket",
+     "position": "behind the fourth standing stone on the right of the entrance, just under the roofing slab",
+     "dimensions_m": "2 ft 6 in x 2 ft, floor 4 ft 4 in above the chamber floor, 1 ft 9 in clear",
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "The floor of this \"shelf\" is on a level 4 feet 4 inches above the floor of the main chamber, and the height of the clear space is about 1 foot 9 inches."
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "summer solstice sunset",
+     "claim": "The setting sun shines through the roof-box into the chamber for about a month (Byrne: up to six weeks) either side of the summer solstice; around the solstice it lights the back of the chamber (newgrange.com) - more exactly the left (east) recess, where it stays about two weeks: Byrne says it can never have reached the end recess. Seen from the chamber the solstice sun sets on the flat-topped Doomore; Croghaun (Ox Mountains) marks the lunar standstill. Photographed on 20 June 2008. The full moons around the winter solstice also shine in.",
+     "cites": [
+      {
+       "source": "mi_carrowkeel",
+       "quote": "The sun enters the chamber through the roofbox at sunset for about a month before and after the summer solstice."
+      },
+      {
+       "source": "mi_carrowkeel",
+       "quote": "For the days around the summer solstice the sunset illuminates the back of the chamber."
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "The sun enters the chamber of Cairn G for approximately a month before and after midsummer, though it only spends about two weeks in the rear left recess of the chamber."
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "it is impossible that the midsummer sunset could ever have shone into the end recess of Cairn G. It currently enters the left resess of the cruciform chamber."
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "The sun can shine into this monument for about six weeks on either side of midsummer."
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "When viewed from within Cairn G, the cairn on Doomore marks the midsummer and Croghaun the lunar extreme or 'lunstice' setting positions."
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "The setting full moons on either side of the winter solstice also illuminate the chamber of Cairn G in much the same fashion as the sun does each summer."
+      },
+      {
+       "source": "mi_carrowkeel",
+       "quote": "Photographs of the setting sun from Cairn G on 20th June 2008."
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "use of the cemetery",
+     "date": "c. 3450-2800 cal BC (modelled); samples 3641-2469 cal BC",
+     "what": "burials, cremated and unburnt; two skull fragments from Cairn G dated (Hensey et al. 2014)",
+     "cites": [
+      {
+       "source": "kador_2018",
+       "quote": "the model supports one continuous phase of burial activity from 3454–3354 to 2894–2786 cal BC"
+      },
+      {
+       "source": "kador_2018",
+       "quote": "These dates are in good agreement with two recently dated human skull fragments from Cairn G"
+      },
+      {
+       "source": "wp_carrowkeel",
+       "quote": "the new study has shown that the sites were in use between c. 3,500 and 2,500 Cal. BC"
+      }
+     ]
+    },
+    {
+     "name": "1911 excavation",
+     "date": "14 April 1911",
+     "what": "opened intact through the entrance after removing a cover-stone; contents removed and sifted; floor flags raised",
+     "cites": [
+      {
+       "source": "ck_macalister",
+       "quote": "We began work on the morning of April 14th, with two labourers, beginning with the nearest carn ( Carn G )."
+      },
+      {
+       "source": "ck_macalister",
+       "quote": "These flagstones were raised, but nothing was found underneath them."
+      }
+     ]
+    },
+    {
+     "name": "now",
+     "date": "2026",
+     "what": "open access, not restored; OPW preparing protective works; cairn stones lie on the chamber floor",
+     "cites": [
+      {
+       "source": "ck_cairn_g",
+       "quote": "they are covered with loose cairn stones at present"
+      },
+      {
+       "source": "wp_carrowkeel",
+       "quote": "The Office of Public Works is preparing a program of works for the preservation and protection of Carrowkeel."
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Where the solstice light falls: 'the back of the chamber' (newgrange.com) against the left (east) recess and never the end recess (Byrne).",
+     "cites": [
+      {
+       "source": "mi_carrowkeel",
+       "quote": "For the days around the summer solstice the sunset illuminates the back of the chamber."
+      },
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "It currently enters the left resess of the cruciform chamber."
+      }
+     ]
+    },
+    {
+     "claim": "Lunar reading: Byrne holds that the chamber axis faces the setting extreme (major standstill) moon, not the solstice sun; unmeasured.",
+     "cites": [
+      {
+       "source": "ck_cairn_g_astro",
+       "quote": "The alignment of the chamber is oriented directly the setting extreme lunar standstill."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "plans": [
+  {
+   "title": "Ground plan of the interior of Ollamh Fodhla's Tomb (Cairn T), stones numbered",
+   "url": "https://archive.org/details/discoverytombol01conwgoog",
+   "licence": "public domain (Conwell 1873)",
+   "what it shows": "Cairn T passage, octagonal chamber and three cells with Conwell's stone numbers; also a ground plan of the cairn. Traceable; scale and north to be checked against the OSM outline."
+  },
+  {
+   "title": "Plan and sections of Carn G (Plates XX and XXII), Macalister, Armstrong and Praeger 1912",
+   "url": "http://www.carrowkeel.com/files/macalister1911.html",
+   "licence": "public domain (1912 publication); images reproduced on carrowkeel.com",
+   "what it shows": "Cairn G chamber plan and elevation, cairn section. Traceable; north is a 1911 compass north."
+  },
+  {
+   "title": "Plan of Dowth mound with the two passages and souterrain (George Coffey)",
+   "url": "http://www.carrowkeel.com/sites/boyne/dowth2.html",
+   "licence": "public domain (Coffey, d. 1916); reproduced on carrowkeel.com",
+   "what it shows": "positions of Dowth North, Dowth South and the souterrain in the mound. Traceable for layout, not for azimuths."
+  },
+  {
+   "title": "Knowth Tomb 1 plans, Figs A2.1-A2.3 (Prendergast and Ray 2017)",
+   "url": "https://www.knowth.com/pdf/knowth-alignments.pdf",
+   "licence": "RIA copyright: not for tracing; numbers only",
+   "what it shows": "complex plan on the Irish Grid (true north 1°.2 W of grid north), outlines of Tombs 1B and 1C, western and eastern passages and chambers with true north"
+  },
+  {
+   "title": "Plans of Dowth North and South (O'Kelly and O'Kelly 1983); Cairn T (Jean McMann); Cairn G (Ó Nualláin 1989, linked from the SMR record)",
+   "url": "http://www.carrowkeel.com/sites/boyne/dowth2a.html",
+   "licence": "copyright (RIA / authors / Stationery Office): not for tracing",
+   "what it shows": "detailed chamber plans"
+  }
+ ],
+ "gaps": [
+  "Prendergast's thesis (Linked Landscapes, UCD 2011) and his 2018 Archaeology Ireland guide 'Solar Alignment and the Irish Passage Tomb Tradition' hold measured azimuths and horizon altitudes for Cairn T, Dowth South and Carrowkeel G; ARROW@TU Dublin (arrow.tudublin.ie) refuses scripts (Cloudflare 403), so none could be quoted. Their azimuths here are approximate.",
+  "Cairn T: Conwell's bearing E. 10° S. (1865) does not say magnetic or true; no floor-rise figure; the passage length and number of kerbstones differ between sources.",
+  "Dowth South: no azimuth, passage width or chamber height; Dowth North's original passage length is unknown (entrance rebuilt 1847-48) and its roof is called corbelled and lintelled by different sources. O'Kelly and O'Kelly 1983 (PRIA 83C, JSTOR, refuses scripts) has the measured plans.",
+  "Carrowkeel G: roof-box size and the altitude window it gives were not found; the 1911 bearing is magnetic and the conversion to true here uses an assumed variation (~20° W); cairn height 3 m (SMR) against 21 ft (Macalister) unresolved. Aaron Watson's archaeo-optic notes (aaronwatson.co.uk) refused the script.",
+  "Knowth: the SMR WEB_NOTES are cut at 8,000 characters (the end of the Tomb 1A section is lost); the Excavations at Knowth volumes (DRI repository) did not return text to the script. No floor-rise figure for the east passage beyond 'level'.",
+  "No passage-floor gradients, orthostat-by-orthostat sizes or kerbstone positions were found for any of the four (OSM maps only the outlines and the Hag's Chair).",
+  "Catalogue records: Loughcrew Q202563 and Carrowkeel Q261318 are cemetery items placed away from the tombs; Dowth's 'Dowth Mound' Q116803531 is a different mound (SMR ME020-012)."
+ ]
+}

@@ -1,7 +1,9 @@
 """Church orientation (roadmap SK5): do medieval churches face sunrise on their patron saint's day?
 
-Each religious record's axis is taken from its OpenStreetMap outline (`footprint`: the long side of the smallest
-rectangle around the outline; outlines less than 1.4 times as long as wide have no clear axis). The east end is the
+Each religious record's axis is taken from its OpenStreetMap outline (`footprint`): since SK5b2b the direction of its
+walls, or the nave, chancel or church part where one is mapped (bidb.church_axes; towers, porches and aisles turn the
+long side of the smallest rectangle round the outline, `axis`, kept for comparison); outlines less than 1.4 times as
+long as wide have no clear axis. The east end is the
 end between north and south through east. For churches begun before 1540 with a dedication whose feast is fixed
 (`data/curated/church_orientation.json`, researched with quoted sources), the sun's rising direction on the feast
 day of the year begun, in the Julian calendar then in use, is compared with the axis (bidb.sky), over a flat
@@ -135,16 +137,26 @@ def fixed_feasts(entry, other=False):
     return out + [{"name": alt["name"], "date": alt["date"]}] if other and alt else out
 
 
-def churches(con):
+def churches(con, parts=None):
+    """Religious records with an outline and their axis (SK5b2b): the mapped nave, chancel or church part where
+    there is one (`parts`: bidb.church_axes.fetch_parts), else the direction of the outline's walls (`src`)."""
+    from .church_axes import body_axis, parts_of, wall_axis
     rows = con.execute("SELECT id, lat, lon, year_start, dedication, footprint FROM buildings "
                        "WHERE category_group = 'Religious' AND footprint <> '' AND lat IS NOT NULL")
-    out = []
+    out, outlines = [], {}
     for rid, lat, lon, year, ded, fp in rows:
         try:
-            ax = axis(json.loads(fp))
-        except (ValueError, KeyError, TypeError, IndexError):
-            ax = None
-        out.append({"id": rid, "lat": lat, "lon": lon, "year": year, "dedication": ded or "", "axis": ax})
+            outlines[rid] = json.loads(fp)
+            ax, src = wall_axis(outlines[rid]), "walls"
+        except (ValueError, KeyError, TypeError, IndexError, ZeroDivisionError):
+            ax, src = None, None
+        out.append({"id": rid, "lat": lat, "lon": lon, "year": year, "dedication": ded or "",
+                    "axis": ax[:2] if ax else None, "src": src})
+    by_id = parts_of(outlines, parts or [])
+    for r in out:
+        b = body_axis(by_id.get(r["id"], []))
+        if b:
+            r["axis"], r["src"] = b[:2], "part"
     return out
 
 
@@ -185,7 +197,7 @@ def analyse(rows, feasts, seed=1):
         if not r["axis"]:
             continue
         az, el = r["axis"]
-        rec = {"az": round(az, 1), "el": round(el, 2)}
+        rec = {"az": round(az, 1), "el": round(el, 2), "src": r.get("src")}
         if east_facing(r):
             year = r["year"] if medieval(r) else None
             rec["dates"] = ["%02d-%02d" % md for md in axis_dates(r["lat"], az, year or 1300)]
@@ -203,7 +215,8 @@ def analyse(rows, feasts, seed=1):
                         best = best_diff(r["lat"], year, az, fixed_feasts(entry), r["hz"])
                         rec["feast_hz"], rec["diff_hz"] = best[1]["name"], round(best[0], 1)
         out[r["id"]] = rec
-    summary = {"churches": len(rows), "with_axis": sum(1 for r in out.values() if r["el"] >= MIN_ELONGATION),
+    summary = {"churches": len(rows), "from_parts": sum(1 for r in out.values() if r["src"] == "part"),
+               "with_axis": sum(1 for r in out.values() if r["el"] >= MIN_ELONGATION),
                "east_facing": sum(1 for r in out.values() if "dates" in r), "tolerance": TOLERANCE, "shuffles": SHUFFLES}
     summary.update(_test(tested, feasts, seed))
     summary["by_dedication"] = _by_dedication(tested, out)
@@ -243,13 +256,14 @@ def _by_dedication(tested, out):
     return sorted(([d, n, k] for d, (n, k) in by.items()), key=lambda x: -x[1])
 
 
-FIELDS = ("az", "el", "dates", "cal", "feast", "diff", "hz", "dates_hz", "feast_hz", "diff_hz")
+FIELDS = ("az", "el", "dates", "cal", "feast", "diff", "hz", "dates_hz", "feast_hz", "diff_hz", "src")
 
 
 def run(log=print, skylines=True):
     data = load()
     con = sqlite3.connect(db_path())
-    rows = churches(con)
+    from .church_axes import fetch_parts
+    rows = churches(con, fetch_parts(log))
     if skylines:
         add_skylines(rows, log=log)
     per, summary = analyse(rows, data["feasts"])

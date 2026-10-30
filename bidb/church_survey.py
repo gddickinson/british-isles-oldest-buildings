@@ -129,7 +129,11 @@ def run(log=print):
     rows = survey()
     pairs = match(rows, records)
     nave = [_diff(rec["az"], r["nave"]) for r, rec in pairs]
+    from .church_orientation import axis
+    fps = dict(con.execute("SELECT id, footprint FROM buildings WHERE category_group = 'Religious' AND footprint <> ''"))
+    rect = [_diff(axis(json.loads(fps[rec["id"]]))[0], r["nave"]) for r, rec in pairs]
     out = {"survey": len(rows), "matched": len(pairs), "nave": _stats(nave),
+           "nave_rectangle": _stats(rect),       # the axis before SK5b2b: smallest rectangle round the outline
            "chancel": _stats([_diff(rec["az"], r["chancel"]) for r, rec in pairs if isinstance(r["chancel"], float)])}
     # by plan and outline shape: do aisles, towers and short outlines skew the OSM axis?
     groups = {"aisles": lambda r, rec: str(r["aisles"]).strip().lower() not in ("", "none"),

@@ -3,6 +3,7 @@ import json
 import math
 import unittest
 
+from bidb import church_axes as ca
 from bidb import church_orientation as co
 
 
@@ -27,6 +28,32 @@ class ChurchOrientationTest(unittest.TestCase):
         multi = {"type": "MultiPolygon", "coordinates": [rectangle(95)["coordinates"]]}
         self.assertAlmostEqual(co.axis(multi)[0], 95, delta=0.2)
         self.assertIsNone(co.axis({"type": "Polygon", "coordinates": [[[0, 0], [0, 0]]]}))
+
+    def test_wall_axis(self):
+        for az in (60, 84.5, 90, 112, 150):
+            got, el, share = ca.wall_axis(rectangle(az))
+            self.assertAlmostEqual(got, az, delta=0.2)
+            self.assertAlmostEqual(el, 40 / 12, delta=0.05)
+            self.assertAlmostEqual(share, 1.0)
+        # a nave at 88° with a square west tower set at 70°: the smallest rectangle turns, the walls hardly do
+        nave = rectangle(88, 30, 10)["coordinates"][0][:-1]
+        a = math.radians(88)
+        k = 111320 * math.cos(math.radians(52))
+        cx, cy = -1.0 - 17 * math.sin(a) / k, 52.0 - 17 * math.cos(a) / 111320     # 17 m west of the centre
+        tower = rectangle(70, 8, 8, lat=cy, lon=cx)["coordinates"][0][:-1]
+        geom = {"type": "MultiPolygon", "coordinates": [[nave + nave[:1]], [tower + tower[:1]]]}
+        self.assertAlmostEqual(ca.wall_axis(geom)[0], 88, delta=1.0)
+        self.assertEqual(ca.diff(179, 1), 2)
+        self.assertIsNone(ca.wall_axis({"type": "Polygon", "coordinates": [[[0, 0], [0, 0], [0, 0], [0, 0]]]}))
+
+    def test_parts(self):
+        outlines = {"c": rectangle(80, 40, 15)}
+        parts = [{"part": "church", "geom": rectangle(80, 30, 10)}, {"part": "nave", "geom": rectangle(95, 20, 8)},
+                 {"part": "nave", "geom": rectangle(95, 5, 3, lat=53)}]           # outside: another church
+        by = ca.parts_of(outlines, parts)
+        self.assertEqual(len(by["c"]), 2)
+        self.assertAlmostEqual(ca.body_axis(by["c"])[0], 95, delta=0.3)              # nave before church
+        self.assertIsNone(ca.body_axis([{"part": "nave", "geom": rectangle(95, 10, 9)}]))    # too near square
 
     def test_julian_calendar(self):
         self.assertEqual(co.julian_calendar_day(1582, 10, 4) + 1, 2299160.5)    # 4 Oct (Julian) → 15 Oct 1582

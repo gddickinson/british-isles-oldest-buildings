@@ -2807,3 +2807,17 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   skyline p 0.56; either saint p 0.57 (unchanged result). Page /sky shows p in its table.
 - Tests 542 OK; ui_check sky passes. Hosted copy not updated. Next: SK5b2b (nave-only outlines).
 
+## 2026-10-30 — Church axes from the walls (SK5b2b)
+- `bidb/church_axes.py`: each church's axis is now the direction of its outline's walls (every edge weighted by its
+  length, folded onto 0-90°, the busiest direction in a 6° window), or the nave, chancel or church `building:part`
+  mapped on OSM inside the outline (163 such parts in the isles, 11 inside catalogue churches). The smallest
+  rectangle round the outline, used before, turns with a tower, porch or aisle set askew.
+- Old and new axes agree within 0.1° (median) over 4,782 east-facing churches; 375 differ by more than 5°. Where a
+  nave is mapped the wall axis is within 0.6° of it (Colmworth: walls 94.8°, nave 94.9°, rectangle 88.8°);
+  Askeaton Friary's outline is the whole friary, so its church part is used. Checked privately against Hinton's
+  survey too (results only in git-ignored `runs/church_survey.json`, `nave` vs `nave_rectangle`).
+- Feast-day test rerun: 400 of 2,485 within 5° vs 381 by chance (95%: 351-414, p 0.13); over the skyline 399 vs 397
+  (p 0.44); either saint p 0.45. Still no more than chance. Detail views say where the axis comes from (`src`,
+  a new last field), /sky#churches explains the wall axis.
+- Tests 544 OK (wall axis with a skewed tower, parts); ui_check sky passes. Hosted copy not updated.
+  Next: SK5b2c (whole-abbey outlines; Hoare and Sweet 2000).

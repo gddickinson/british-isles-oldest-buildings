@@ -53,8 +53,16 @@ Sky and alignments (first)
       stdlib `bidb.xls_read`). Its title sheet forbids publishing its data "nor any information derived therefrom"
       without the author's written consent, so the results stay in git-ignored `runs/church_survey.json`; to publish
       them, ask Ian Hinton first. The feast-day tests now give a p-value (share of shuffles with as many or more).
-- [ ] SK5b2b Church orientation, next: outlines of the nave only (later aisles and towers skew the axis; OSM
-      building:part); Hoare and Sweet 2000 (abstract not fetchable).
+- [x] SK5b2b (2026-10-30, `bidb/church_axes.py`) Church axes from the walls: the length-weighted direction of the
+      outline's edges (towers, porches and aisles set askew move it little), or the nave, chancel or church
+      `building:part` where one is mapped (OSM has 163 in the isles; 11 inside catalogue churches, e.g. Askeaton Friary,
+      whose outline takes in the whole friary). Smallest-rectangle and wall axes agree within 0.1° (median) for 4,782
+      churches, 375 differ by more than 5°; where a nave is mapped the wall axis is within 0.6° of it (Colmworth: 94.8°
+      vs nave 94.9°, rectangle 88.8°). Also checked privately against Hinton's survey (`runs/church_survey.json`,
+      `nave` vs `nave_rectangle`). Feast-day test: 400 of 2,485 within 5° vs 381 by chance (351-414, p 0.13); over
+      the skyline 399 vs 397 (p 0.44); either saint p 0.45: still no more than chance.
+- [ ] SK5b2c Hoare and Sweet 2000 (abstract not fetchable); outlines that take in a whole abbey or friary (the
+      church's own part from OSM where mapped, else leave such records out of the test).
 - [x] SK7 (2026-10-29; Terrain Tiles on AWS instead of OpenTopoData: no daily limit, EA LiDAR in England) Real horizons:
       skyline every 0.5° from the terrain model (`bidb/terrain_tiles.py`, `bidb/sky_horizon.py`, mirrored in sky.js), so
       rising points behind hills are right; researched sites precomputed into sky.json (hosted too), any record in the

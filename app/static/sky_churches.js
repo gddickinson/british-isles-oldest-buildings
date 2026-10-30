@@ -49,7 +49,9 @@
     <p class="prose">An old idea holds that a medieval church was set out to face sunrise on its patron saint's day. The
       axes of ${s.with_axis.toLocaleString()} churches in the catalogue, from their OpenStreetMap outlines, are below:
       ${s.east_facing.toLocaleString()} face between north-north-east and south-south-east, most within the year's range of sunrise (shaded) and near
-      the equinox line, but many outlines include later aisles, towers and chapels, the spike at due east may partly be outlines drawn square to the map, and the horizon is the bare ground of the terrain model.</p>
+      the equinox line. Each axis is the direction of the outline's walls (weighted by length), so a tower, porch or aisle
+      set askew moves it little${s.from_parts ? `; for ${s.from_parts} churches whose nave, chancel or body is mapped as a part of its own, that part's` : ""}.
+      Outlines that take in a whole abbey or friary can still mislead, the spike at due east may partly be outlines drawn square to the map, and the horizon is the bare ground of the terrain model.</p>
     ${svg}
     ${result}
     ${tests}

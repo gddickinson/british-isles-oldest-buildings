@@ -66,7 +66,9 @@ function ground(dtm, height, rad) {
 // Land from the edge of the LiDAR out to `far` m, rising so that its far edge stands at the skyline's altitude as
 // seen from eye height at the centre (the profile already allows for the earth's curve and refraction).
 function land(hz, height, inner, far = 5200) {
-  const step = hz.step, m = hz.alt.length, radii = [inner, 600, 900, 1400, 2200, 3400, far];
+  const step = hz.step, m = hz.alt.length;
+  far = Math.max(far, inner * 2);                                     // rings outward from wherever the ground grid ends
+  const radii = [inner, ...[600, 900, 1400, 2200, 3400].filter((r) => r > inner + 100).map((r) => r * far / 5200), far];
   const pos = [], col = [], idx = [];
   const near = new THREE.Color(0x5d7040), farC = new THREE.Color(0x6f7a68);
   for (let k = 0; k < radii.length; k++) for (let a = 0; a < m; a++) {

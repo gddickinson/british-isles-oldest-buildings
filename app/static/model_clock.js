@@ -71,7 +71,7 @@ export function createClock(lat, lon, horizon) {
   }
   const midnight = (jd) => Math.floor(jd + lon / 360 - 0.5) + 0.5 - lon / 360;   // local midnight (UT Julian day)
   const sunEvent = (slon, month, rising) => crossing(midnight(sunAtLongitude(st.y, slon, month)), 24, "sun", rising);
-  return { st, q, hz, at, setJD, jdNow, posAt, crossing, sunAtLongitude, fullMoonNear, sunEvent, solarNow, today };
+  return { st, q, hz, lat, lon, at, setJD, jdNow, posAt, crossing, sunAtLongitude, fullMoonNear, sunEvent, solarNow, today };
 }
 
 // Wire the panel (#sh_* controls) to a clock: `update()` redraws; `face(key)` turns the camera for an event;
@@ -122,11 +122,17 @@ export function wirePanel(clock, { update, events, face, views }) {
   if (cam && views[cam]) $("#sh_cams").value = cam;
 }
 
-// Open on a chosen moment when the link names none (data.start: {event, minutes after it} or {m, d, t}).
+// Open on a chosen moment when the link names none (data.start: {event, after: minutes}, {sun: "rise"|"set", m, d,
+// after} or {m, d, t}; year optional).
 export function startMoment(clock, start, note) {
   if (!start || ["y", "m", "d", "t"].some((k) => clock.q.has(k))) return;
   if (start.year != null) clock.st.y = start.year;
-  if (start.event) {
+  if (start.sun && start.m) {                                       // sunrise or sunset on a given day
+    const jd0 = SkyPos.julianDay(clock.st.y, start.m, start.d, 0) - clock.lon / 360;
+    const jd = clock.crossing(jd0, 24, "sun", start.sun === "rise");
+    if (jd == null) return;
+    clock.setJD(jd + (start.after ?? 2) / 1440);
+  } else if (start.event) {
     const jd = EVENT_KINDS[start.event]?.[1](clock);
     if (jd == null) return;
     clock.setJD(jd + (start.after ?? 2) / 1440);

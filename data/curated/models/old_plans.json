@@ -1,0 +1,1725 @@
+{
+ "id": "old_plans",
+ "name": "Traceable old plans, and simple structures with published measurements",
+ "date_checked": "2026-10-29",
+ "about": "Two kinds of research for the 3D models. plan_sources: plans that show stones or posts one by one in publications now out of copyright (antiquarian works whose authors died over 70 years ago; Crown publications more than 50 years old), with the scan, the page or plate, scale, north arrow and what they show. sites: Irish-type round towers (Glendalough, Kildare, Ardmore, Clondalkin, Brechin, Abernethy) and brochs (Dun Carloway, Clickimin, Dun Telve, Dun Troddan) for models built from dimensions alone. Imperial figures are kept as printed; scan page numbers are the Internet Archive's 0-based leaf index (n), and PDF pages are 1-based.",
+ "sources": {
+  "thomas1852": {
+   "title": "An account of some of the Celtic antiquities of Orkney (Archaeologia 34, 1852), OCR text of the Internet Archive scan",
+   "url": "https://archive.org/download/archaeologiaormi34sociuoft/archaeologiaormi34sociuoft_djvu.txt",
+   "licence_note": "Public domain: published 1852; F. W. L. Thomas died 1885",
+   "author": "F. W. L. Thomas"
+  },
+  "atkinson1959": {
+   "title": "Stonehenge and Avebury and neighbouring monuments (Ministry of Works guide, 1959; eighth impression with amendments 1971), OCR text",
+   "url": "https://archive.org/download/stonehenge-and-avebury-images/StonehengeAndAvebury_Images_djvu.txt",
+   "licence_note": "Crown copyright 1959/1971, expired (50 years from publication); Internet Archive marks it Public Domain Mark 1.0",
+   "author": "R. J. C. Atkinson"
+  },
+  "hamilton1970": {
+   "title": "The Brochs of Mousa and Clickhimin, official guide (HMSO 1970), OCR text",
+   "url": "https://archive.org/download/brochs-mousa-clickhimin-guide/BrochsMousaClickhiminGuide_Images_djvu.txt",
+   "licence_note": "Crown copyright 1970, expired end of 2020; Internet Archive: Public Domain Mark 1.0",
+   "author": "J. R. C. Hamilton"
+  },
+  "am_scot1970": {
+   "title": "Ancient Monuments, vol. 6: Scotland (HMSO 1970), OCR text",
+   "url": "https://archive.org/download/ancient-monuments-volume-6-scotland-hmso-images/AncientMonumentsVolume6ScotlandHMSO_Images_djvu.txt",
+   "licence_note": "Crown copyright 1970, expired; Internet Archive: Public Domain Mark 1.0",
+   "author": "S. Piggott and W. D. Simpson"
+  },
+  "petrie1845": {
+   "title": "The ecclesiastical architecture of Ireland ... round towers of Ireland (1845), OCR text",
+   "url": "https://archive.org/download/ecclesiasticalar00petruoft/ecclesiasticalar00petruoft_djvu.txt",
+   "licence_note": "Public domain: 1845; George Petrie died 1866",
+   "author": "George Petrie"
+  },
+  "stokes1878": {
+   "title": "Early Christian architecture in Ireland (1878), OCR text",
+   "url": "https://archive.org/download/earlychristianar00stokuoft/earlychristianar00stokuoft_djvu.txt",
+   "licence_note": "Public domain: 1878; Margaret Stokes died 1900",
+   "author": "Margaret Stokes"
+  },
+  "paterson1922": {
+   "title": "The Broch of Mousa: a survey by H.M. Office of Works (PSAS 56, 1922, 172-183)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/7542/7510/7498",
+   "licence_note": "Drawings by the Office of Works (Crown copyright 1922, expired); PSAS open access, the journal's own reuse terms not stated on the article page",
+   "author": "J. Wilson Paterson"
+  },
+  "curle1916": {
+   "title": "An account of the ruins of the broch of Dun Telve, near Glenelg, excavated by H.M. Office of Works in 1914 (PSAS 50, 1916, 241-254)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/7386/7355/7343",
+   "licence_note": "Text: A. O. Curle died 1955 (life + 70 ended 2025), public domain; drawings signed J. Wilson Paterson, H.M. Office of Works (Crown copyright, expired)",
+   "author": "A. O. Curle"
+  },
+  "curle1921": {
+   "title": "The broch of Dun Troddan, Gleann Beag, Glenelg, Inverness-shire (PSAS 55, 1921, 83-94)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/7505/7473/7461",
+   "licence_note": "Text: A. O. Curle died 1955, public domain from 2026; plan from the Office of Works excavation (Crown copyright, expired); check the drawing's signature",
+   "author": "A. O. Curle"
+  },
+  "brash1862_abernethy": {
+   "title": "The round tower of Abernethy, with drawings (PSAS 3, 303-319)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/4529/4507/4500",
+   "licence_note": "Public domain: R. R. Brash died 1876",
+   "author": "Richard Rolt Brash"
+  },
+  "brash1862_brechin": {
+   "title": "Notices, historical and architectural, of the round tower of Brechin (PSAS 4, 188-210)",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/4675/4653/4646",
+   "licence_note": "Public domain: R. R. Brash died 1876",
+   "author": "Richard Rolt Brash"
+  },
+  "jervise1862": {
+   "title": "Remarks on the round tower of Brechin (PSAS 3, 28-35), with Plate III",
+   "url": "https://journals.socantscot.org/index.php/psas/article/download/4483/4461/4454",
+   "licence_note": "Public domain: Andrew Jervise died 1878; the plate is marked as measured by William Ormiston in the 1850s (over 150 years old)",
+   "author": "Andrew Jervise"
+  },
+  "hes_carloway": {
+   "title": "Dun Carloway, broch (SM90110)",
+   "url": "https://portal.historicenvironment.scot/designation/SM90110",
+   "licence_note": "HES portal text; short quotes only"
+  },
+  "her_carloway": {
+   "title": "Western Isles HER, monument record 2483, Dun Carloway (with the OS Archaeology Division notes)",
+   "url": "https://her.cne-siar.gov.uk/Monument/MWE4121",
+   "licence_note": "Comhairle nan Eilean Siar HER; short quotes only"
+  },
+  "hes_glenelg": {
+   "title": "Dun Telve and Dun Troddan, brochs, Glenelg (SM90152)",
+   "url": "https://portal.historicenvironment.scot/designation/SM90152",
+   "licence_note": "HES portal text; short quotes only"
+  },
+  "hes_abernethy": {
+   "title": "Abernethy round tower (SM90005)",
+   "url": "https://portal.historicenvironment.scot/designation/SM90005",
+   "licence_note": "HES portal text; short quotes only"
+  },
+  "hes_brechin": {
+   "title": "Brechin Cathedral round tower (SM90041)",
+   "url": "https://portal.historicenvironment.scot/designation/SM90041",
+   "licence_note": "HES portal text; short quotes only"
+  },
+  "wp_glendalough": {
+   "title": "Glendalough - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Glendalough",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_kildare": {
+   "title": "Kildare Cathedral - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kildare_Cathedral",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_declan": {
+   "title": "St. Declan's Monastery - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/St._Declan's_Monastery",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_clondalkin": {
+   "title": "Clondalkin Round Tower - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Clondalkin_Round_Tower",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_irt": {
+   "title": "Irish round tower - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Irish_round_tower",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_brechin": {
+   "title": "Brechin Cathedral - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Brechin_Cathedral",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_abernethy": {
+   "title": "Abernethy Round Tower - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Abernethy_Round_Tower",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_carloway": {
+   "title": "Dun Carloway - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dun_Carloway",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_clickimin": {
+   "title": "Clickimin Broch - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Clickimin_Broch",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_telve": {
+   "title": "Dun Telve - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dun_Telve",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_troddan": {
+   "title": "Dun Troddan - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dun_Troddan",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "is_glendalough": {
+   "title": "Glendalough - Round Tower (irishstones.org)",
+   "url": "https://www.irishstones.org/place.aspx?p=532",
+   "licence_note": "All rights reserved (A. D'Imperio); short quotes of measurements only",
+   "author": "Antonio D'Imperio"
+  },
+  "is_kildare": {
+   "title": "Kildare round tower (irishstones.org)",
+   "url": "https://www.irishstones.org/place.aspx?p=535",
+   "licence_note": "All rights reserved (A. D'Imperio); short quotes of measurements only",
+   "author": "Antonio D'Imperio"
+  },
+  "is_ardmore": {
+   "title": "Ardmore Round Tower (irishstones.org)",
+   "url": "https://www.irishstones.org/place.aspx?p=632",
+   "licence_note": "All rights reserved (A. D'Imperio); short quotes of measurements only",
+   "author": "Antonio D'Imperio"
+  },
+  "exc_ardmore": {
+   "title": "Excavations.ie 1996:0002516, Ardmore round tower",
+   "url": "https://excavations.ie/report/1996/Waterford/0002516/",
+   "licence_note": "Excavations bulletin text; short quotes only"
+  }
+ },
+ "sites": {
+  "round_towers": {
+   "glendalough": {
+    "record": "Q113976325",
+    "name": "Glendalough round tower, Co. Wicklow",
+    "facts": {
+     "height_m": {
+      "value": 29.5,
+      "unit": "m",
+      "note": "height to the top of the cap",
+      "cites": [
+       {
+        "source": "is_glendalough",
+        "quote": "It stands at 29.50 metres high."
+       },
+       {
+        "source": "wp_glendalough",
+        "quote": "is about 30 metres high, with an entrance 3.5 metres from the base"
+       }
+      ]
+     },
+     "door_sill_above_ground_m": {
+      "value": 3.56,
+      "unit": "m",
+      "note": "doorway above ground (Wikipedia: 3.5 m)",
+      "cites": [
+       {
+        "source": "is_glendalough",
+        "quote": "The rounded doorway is at 3.56 metres from the ground, it's 1.55 metres high and 53 centimetres wide, and faces southeast (140°)."
+       }
+      ]
+     },
+     "door_height_m": {
+      "value": 1.55,
+      "unit": "m",
+      "note": "doorway opening, 53 cm wide; Brash: 5 ft 7.5 in high, 2 ft wide at base",
+      "cites": [
+       {
+        "source": "is_glendalough",
+        "quote": "it's 1.55 metres high and 53 centimetres wide"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "the semicircular-headed doorway of the round tower of Giendalough is 5 feet 7J inches high, 2 feet wide at base"
+       }
+      ]
+     },
+     "door_azimuth_deg": {
+      "value": 140,
+      "unit": "deg",
+      "note": "doorway faces south-east (irishstones, compass bearing)",
+      "cites": [
+       {
+        "source": "is_glendalough",
+        "quote": "faces southeast (140°)"
+       }
+      ]
+     },
+     "storeys": {
+      "value": 6,
+      "unit": "floors",
+      "note": "six timber floors; four storeys above the doorway level each lit by one window, the top storey by four",
+      "cites": [
+       {
+        "source": "is_glendalough",
+        "quote": "Internally the tower had six timber floors connected by ladders."
+       },
+       {
+        "source": "wp_glendalough",
+        "quote": "The four storeys above entrance level are each lit by a small window; while the top storey has four windows facing the cardinal compass points."
+       }
+      ]
+     },
+     "cap": {
+      "value": "conical, rebuilt 1876 from the original stones",
+      "unit": "",
+      "note": "stone conical cap",
+      "cites": [
+       {
+        "source": "wp_glendalough",
+        "quote": "The conical roof was rebuilt in 1876 using the original stones."
+       },
+       {
+        "source": "is_glendalough",
+        "quote": "The conical cap was rebuilt in 1876 using the original stones."
+       }
+      ]
+     },
+     "material": {
+      "value": "mica-slate with granite",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_glendalough",
+        "quote": "built of mica-slate interspersed with granite"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "Base diameter, circumference and wall thickness: not found in a fetchable source. The OPW 80th Annual Report (1911-12) gives about 16 ft external diameter above the first offset and a 3 ft 3 in wall at the door sill (reported in a search summary), but glendalough.wicklowheritage.org refuses scripts (403). Stokes 1878 classes it among 'third style' towers without dimensions."
+    ]
+   },
+   "kildare": {
+    "record": "Q124853386",
+    "name": "Kildare round tower (St Brigid's Cathedral)",
+    "facts": {
+     "height_m": {
+      "value": 31.8,
+      "unit": "m",
+      "note": "height to the top of the (later) crenellated parapet; Wikipedia gives 32 m",
+      "cites": [
+       {
+        "source": "is_kildare",
+        "quote": "it's 31.80 metres tall and has a diameter of 4.30 metres"
+       },
+       {
+        "source": "wp_kildare",
+        "quote": "which is 32 metres (105 ft) high"
+       }
+      ]
+     },
+     "diameter_m": {
+      "value": 4.3,
+      "unit": "m",
+      "note": "external diameter (height not stated)",
+      "cites": [
+       {
+        "source": "is_kildare",
+        "quote": "has a diameter of 4.30 metres"
+       }
+      ]
+     },
+     "internal_diameter_ft": {
+      "value": "9 ft 3 in",
+      "unit": "ft",
+      "note": "internal diameter at the level of the doorway (2.82 m)",
+      "cites": [
+       {
+        "source": "stokes1878",
+        "quote": "Kildare 9 ft 3 in."
+       }
+      ],
+      "derived": true,
+      "how": "2.82 m converted from 9 ft 3 in"
+     },
+     "door_sill_above_ground_m": {
+      "value": 4.5,
+      "unit": "m",
+      "note": "",
+      "cites": [
+       {
+        "source": "is_kildare",
+        "quote": "The doorway is at 4.50 metres from the ground."
+       }
+      ]
+     },
+     "door_azimuth_deg": {
+      "value": 130,
+      "unit": "deg",
+      "note": "Romanesque doorway of four orders, faces south-east",
+      "cites": [
+       {
+        "source": "is_kildare",
+        "quote": "The rounded doorway faces southeast (130°) and is in Romanesque style with four orders."
+       },
+       {
+        "source": "stokes1878",
+        "quote": "Kildare. Inserted Romanesque doorway."
+       }
+      ]
+     },
+     "top": {
+      "value": "crenellation, five round-headed windows at the top level",
+      "unit": "",
+      "note": "no conical cap now",
+      "cites": [
+       {
+        "source": "is_kildare",
+        "quote": "The top of the tower has a crenellation and there are five rounded windows at the top level."
+       }
+      ]
+     },
+     "base_masonry": {
+      "value": "granite ashlar to about 8 ft",
+      "unit": "ft",
+      "note": "",
+      "cites": [
+       {
+        "source": "brash1862_abernethy",
+        "quote": "The lower part of this tower, to a height of eight feet, shows evidence of great antiquity, being built of granite ashler in courses"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "Number of storeys, window positions below the top, wall thickness and the date of the parapet: not found in a fetchable source."
+    ]
+   },
+   "ardmore": {
+    "record": "Q61374651",
+    "name": "Ardmore round tower, Co. Waterford",
+    "facts": {
+     "height_m": {
+      "value": 29,
+      "unit": "m",
+      "note": "over 29 m (irishstones), about 30 m (Wikipedia); Stokes 98 ft by 52 ft circumference; Brash 91 ft",
+      "cites": [
+       {
+        "source": "is_ardmore",
+        "quote": "The round tower is in excess of 29 metres tall and still has its conical roof"
+       },
+       {
+        "source": "wp_declan",
+        "quote": "The round tower is about 30 m (98 ft) high"
+       },
+       {
+        "source": "stokes1878",
+        "quote": "Ardmore, 98 ft. by 52ft"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "this tower, be it remembered, is 91 feet high"
+       }
+      ]
+     },
+     "circumference_ft": {
+      "value": 52,
+      "unit": "ft",
+      "note": "external circumference (Stokes's table of perfect towers: height by circumference); 15.85 m, diameter about 5.05 m",
+      "cites": [
+       {
+        "source": "stokes1878",
+        "quote": "Ardmore, 98 ft. by 52ft"
+       }
+      ],
+      "derived": true,
+      "how": "52 ft = 15.85 m; / pi = 5.05 m diameter"
+     },
+     "internal_diameter_ft": {
+      "value": "9 ft at base, 4 ft 10 in at top",
+      "unit": "ft",
+      "note": "internal diameters",
+      "cites": [
+       {
+        "source": "brash1862_abernethy",
+        "quote": "Ardmore Tower, diameter at base 9 feet, at top 4 feet 10 inches"
+       }
+      ]
+     },
+     "door": {
+      "value": {
+       "sill_above_ground_m": 3.89,
+       "height_m": 1.66,
+       "width_m": 0.6,
+       "azimuth_deg": 55
+      },
+      "unit": "m",
+      "note": "round-headed doorway facing north-east",
+      "cites": [
+       {
+        "source": "is_ardmore",
+        "quote": "The rounded doorway is at 3.89 metres from the ground, it measures 1.66 metres in height and 60 centimetres in width, and faces northeast (55°)."
+       }
+      ]
+     },
+     "storeys": {
+      "value": 4,
+      "unit": "storeys",
+      "note": "string courses outside mark the storeys (the only towers with them, with Killossy and Dysert O'Dea: Stokes)",
+      "cites": [
+       {
+        "source": "is_ardmore",
+        "quote": "The tower has four internal storeys, and these divisions are marked on the outside by four string courses."
+       },
+       {
+        "source": "wp_declan",
+        "quote": "with four storeys (each separated by string-courses) and three small windows along its body and four windows at the top"
+       }
+      ]
+     },
+     "windows": {
+      "value": "3 along the shaft, 4 under the cap at the compass points",
+      "unit": "",
+      "note": "three of the top four angle-headed, the south one lintelled",
+      "cites": [
+       {
+        "source": "is_ardmore",
+        "quote": "There are three square windows along the height of the tower, and there are four more windows below the roof level facing to the compass points."
+       }
+      ]
+     },
+     "cap": {
+      "value": "conical",
+      "unit": "",
+      "note": "rebuilt: after the storm of February 1867 (irishstones) or in 1875/6 after a lightning strike in the early 1800s (excavations.ie); the dates differ",
+      "cites": [
+       {
+        "source": "is_ardmore",
+        "quote": "though it's been rebuilt after the storm of the February 1867"
+       },
+       {
+        "source": "exc_ardmore",
+        "quote": "the tower was hit by lightning in the early 1800s and the conical cap was rebuilt in 1875/6"
+       }
+      ]
+     },
+     "plinth": {
+      "value": 0.2,
+      "unit": "m",
+      "note": "single course of cut stone projecting 70-80 mm",
+      "cites": [
+       {
+        "source": "exc_ardmore",
+        "quote": "consisting of a single course of cutstone projecting 70–80mm beyond the tower wall and averaging 0.2m in height"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "Wall thickness and the height of each storey: not found. Heights disagree (91 ft Brash, 98 ft Stokes, 'in excess of 29 m')."
+    ]
+   },
+   "clondalkin": {
+    "record": "Q24896274",
+    "name": "Clondalkin round tower, Co. Dublin",
+    "facts": {
+     "height_m": {
+      "value": 25.6,
+      "unit": "m",
+      "note": "Wikipedia 25.6 m (84 ft); Petrie's section and Stokes 85 ft; Brash: 85 ft to the eaves",
+      "cites": [
+       {
+        "source": "wp_clondalkin",
+        "quote": "stands at 25.6 m (84 ft) high"
+       },
+       {
+        "source": "stokes1878",
+        "quote": "Clondalkin, 85 ft."
+       },
+       {
+        "source": "brash1862_brechin",
+        "quote": "both are 85 feet high to eaves"
+       }
+      ]
+     },
+     "circumference_ft": {
+      "value": 45,
+      "unit": "ft",
+      "note": "above the projecting base (Petrie); Stokes gives 43 ft",
+      "cites": [
+       {
+        "source": "petrie1845",
+        "quote": "Above the base the Tower of Clondalkin measures forty-five feet in circumference"
+       },
+       {
+        "source": "stokes1878",
+        "quote": "Clondalkin, 85 ft. by43"
+       }
+      ]
+     },
+     "diameter_m": {
+      "value": 4.04,
+      "unit": "m",
+      "note": "external diameter at its widest (Wikipedia)",
+      "cites": [
+       {
+        "source": "wp_clondalkin",
+        "quote": "the diameter being only 4.04 m (13.3 ft) meters at its widest point"
+       }
+      ]
+     },
+     "projecting_base_ft": {
+      "value": 13,
+      "unit": "ft",
+      "note": "a solid buttress-like projecting base, nearly 13 ft high, with steps up to the door",
+      "cites": [
+       {
+        "source": "petrie1845",
+        "quote": "the Tower of Clondalkin has a singular projecting base, which is nearly thirteen feet in height"
+       }
+      ]
+     },
+     "wall_thickness_ft": {
+      "value": "3 ft 10 in at the door sill; 2 ft 8 in at the attic windows",
+      "unit": "ft",
+      "note": "",
+      "cites": [
+       {
+        "source": "brash1862_brechin",
+        "quote": "thickness of wall at door sill, Brechin, 3 feet 10 inches—Clondalkin, same"
+       },
+       {
+        "source": "brash1862_brechin",
+        "quote": "thickness of wall at attic windows, Brechin, 2 feet 10 inches—Clondalkin, 2 feet 8 inches"
+       }
+      ]
+     },
+     "internal_diameter_ft": {
+      "value": "7 ft 4 in at the door sill, 6 ft 6 in at the attic storey",
+      "unit": "ft",
+      "note": "Brash 1862 Abernethy paper: 7 ft 6 in at base, 6 ft 4 in at top",
+      "cites": [
+       {
+        "source": "brash1862_brechin",
+        "quote": "internal diameter at door sill, Brechin, 7 feet 9 inches—Clondalkin, 7 feet 4 inches"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "at Clondalkin, Co. Dublin, diameter at base 7 feet 6 inches, at top 6 feet 4 inches"
+       }
+      ]
+     },
+     "door": {
+      "value": {
+       "sill_above_ground_m": 3.9,
+       "faces": "east"
+      },
+      "unit": "m",
+      "note": "plain lintelled granite doorway",
+      "cites": [
+       {
+        "source": "wp_clondalkin",
+        "quote": "The doorway, 3.9 m (13 ft) above pavement level, faces east toward St."
+       },
+       {
+        "source": "wp_clondalkin",
+        "quote": "The plain lintelled doorway is composed mainly of granite."
+       }
+      ]
+     },
+     "windows": {
+      "value": 6,
+      "unit": "windows",
+      "note": "six windows; the top four face the cardinal points",
+      "cites": [
+       {
+        "source": "wp_clondalkin",
+        "quote": "There are 6 windows in the tower, and the top 4 of them point north, south, east and west."
+       }
+      ]
+     },
+     "cap": {
+      "value": "original conical cap",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_irt",
+        "quote": "that at Clondalkin is the only round tower in Ireland to still retain its original cap"
+       }
+      ]
+     },
+     "material": {
+      "value": "calp limestone rubble, chiselled stones round the doorway",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "petrie1845",
+        "quote": "it is altogether constructed of common rubble masonry, of the calp limestone of the district"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "Storey heights are on Petrie's dimensioned section (plan_sources), not in the text."
+    ]
+   },
+   "brechin": {
+    "record": "Q2307632",
+    "name": "Brechin round tower (attached to Brechin Cathedral; no separate catalogue record)",
+    "facts": {
+     "height_m": {
+      "value": 26.5,
+      "unit": "m",
+      "note": "tower without its spire: 86 ft 9 in (Jervise), 85 ft to the eaves (Brash), 86 ft (Wikipedia), about 26.5 m (HES)",
+      "cites": [
+       {
+        "source": "hes_brechin",
+        "quote": "rises to a height of about 26.5m, from a base 5m in diameter"
+       },
+       {
+        "source": "jervise1862",
+        "quote": "The tower itself is 86 feet 9 inches high"
+       },
+       {
+        "source": "wp_brechin",
+        "quote": "It is 86 ft.(26.21 m) high, has at the base a circumference of 50 ft.(15.3 m) and a diameter of 16 ft.(4.9 m)"
+       }
+      ]
+     },
+     "diameter_ft": {
+      "value": "15 ft 2 in at the door sill, 12 ft 8.5 in at the upper windows",
+      "unit": "ft",
+      "note": "external; Brash 16 ft at bottom",
+      "cites": [
+       {
+        "source": "jervise1862",
+        "quote": "Diameter at door-sill is 15 feet 2 inches"
+       },
+       {
+        "source": "brash1862_brechin",
+        "quote": "this gives the entire diameter at bottom 16 feet"
+       }
+      ]
+     },
+     "wall_thickness_ft": {
+      "value": "3 ft 8 in near the bottom, 2 ft 5 in near the top (Jervise); 4 ft 2 in at base (Brash)",
+      "unit": "ft",
+      "note": "",
+      "cites": [
+       {
+        "source": "jervise1862",
+        "quote": "the walls being 3 feet 8 inches thick near the bottom, and 2 feet 5 inches near the top"
+       },
+       {
+        "source": "brash1862_brechin",
+        "quote": "The interior diameter of the tower at the base is 7 feet 8 inches, the thickness of walling4 feet 2 inches"
+       }
+      ]
+     },
+     "door": {
+      "value": {
+       "sill_above_ground_ft": 6.67,
+       "faces": "west",
+       "height_ft": 6.6
+      },
+      "unit": "ft",
+      "note": "sill 6 ft 8 in (Jervise) or 6 ft 6 in (Brash) above ground; carved Crucifixion doorway",
+      "cites": [
+       {
+        "source": "jervise1862",
+        "quote": "The door-sill is 6 feet 8 inches from the ground."
+       },
+       {
+        "source": "brash1862_brechin",
+        "quote": "It faces the 190 PROCEEDINGS OF THE SOCIETY OF west, and the top of its sill is 6 feet 6 inches from the present ground level"
+       }
+      ]
+     },
+     "storeys": {
+      "value": 7,
+      "unit": "storeys",
+      "note": "seven storeys divided by stone string courses (corbels) carrying wooden floors",
+      "cites": [
+       {
+        "source": "jervise1862",
+        "quote": "it is divided into seven unequal apartments or storeys, exclusive of the spire"
+       }
+      ]
+     },
+     "windows": {
+      "value": "4th and 5th storeys one each (east, south); 7th storey four at the cardinal points",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "jervise1862",
+        "quote": "The fourth and fifth storeys are lighted by a window or aperture on the east and south respectively"
+       },
+       {
+        "source": "jervise1862",
+        "quote": "The seventh storey contains four windows, which face the four Cardinal points"
+       }
+      ]
+     },
+     "cap": {
+      "value": "octagonal spire, 14th century, about 18 ft (Black, Brash), 15-16 ft (Jervise's later figures), 25 ft (Jervise); Wikipedia says hexagonal",
+      "unit": "ft",
+      "note": "",
+      "cites": [
+       {
+        "source": "brash1862_brechin",
+        "quote": "This tower has an octangular roof or spirelet, the perpendicular height of which is 18 feet according to Mr Black."
+       },
+       {
+        "source": "jervise1862",
+        "quote": "The spire is octagonal in form, and contains four angular-headed windows"
+       },
+       {
+        "source": "am_scot1970",
+        "quote": "The spire is an addition of the fourteenth century."
+       }
+      ]
+     },
+     "plinth": {
+      "value": "18 in high",
+      "unit": "in",
+      "note": "",
+      "cites": [
+       {
+        "source": "brash1862_brechin",
+        "quote": "At the foot of this tower is a plinth or offset 18 inches high"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "The tower stands at the south-west corner of the cathedral nave; the model needs the cathedral wall it touches."
+    ]
+   },
+   "abernethy": {
+    "record": "Q1147465",
+    "name": "Abernethy round tower, Perthshire",
+    "facts": {
+     "height_m": {
+      "value": 22.5,
+      "unit": "m",
+      "note": "22.5 m (Wikipedia), some 22 m (HES), 72 ft from the road-side base stone to the coping (Brash)",
+      "cites": [
+       {
+        "source": "wp_abernethy",
+        "quote": "The sandstone tower is 22.5 m (73 ft 10 in) high and has a diameter of 4.57 m (15 ft 0 in) at ground level, tapering upwards to 3.96 m (13 ft 0 in)."
+       },
+       {
+        "source": "hes_abernethy",
+        "quote": "It comprises a round tower some 22m high by about 5m in diameter"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "The height of the tower at present, measured from a flat stone at its base on the road side to the top of the present coping, is 72 feet."
+       }
+      ]
+     },
+     "diameter_m": {
+      "value": 4.57,
+      "unit": "m",
+      "note": "at ground level, tapering to 3.96 m; Brash computes 15 ft 9 in at base and 13 ft 8 in at top",
+      "cites": [
+       {
+        "source": "wp_abernethy",
+        "quote": "has a diameter of 4.57 m (15 ft 0 in) at ground level"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "it will give the extreme diameter at the base 15 feet 9 inches"
+       }
+      ]
+     },
+     "wall_thickness_m": {
+      "value": 1.07,
+      "unit": "m",
+      "note": "3 ft 6 in at the doorway",
+      "cites": [
+       {
+        "source": "wp_abernethy",
+        "quote": "The walls are 1.07 m (3 ft 6 in) thick."
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "The thickness of the walling at the side of doorway I found to be 3 feet 6 inches"
+       }
+      ]
+     },
+     "door": {
+      "value": {
+       "faces": "north",
+       "height_ft": 7.67
+      },
+      "unit": "ft",
+      "note": "sill 2.5 ft above the raised cemetery now, originally about 6 ft above ground (Brash's estimate)",
+      "cites": [
+       {
+        "source": "brash1862_abernethy",
+        "quote": "The entrance faces the north, and the sill is but 2J feet from the present level of cemetery"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "I should say the top of door-sill was originally 6 feet over the ground level."
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "while the doorway of Abernethy is 7 feet 8 inches in height"
+       }
+      ]
+     },
+     "storeys": {
+      "value": "6 (indications of six wooden floors); Brash measured the storeys between string courses: 14 ft 8 in, 11 ft 8 in, 13 ft 2 in, 12 ft 11 in, 10 ft 8 in",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_abernethy",
+        "quote": "There are indications that the tower originally had six wooden floors, probably connected by ladders."
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "The first storey, then, measures 14 feet 8 inches; the second, 11 feet 8 inches; the third, 13 feet 2 inches; the fourth, 12 feet 11 inches"
+       }
+      ]
+     },
+     "windows": {
+      "value": "four large round-headed belfry windows at the cardinal points; one angle-headed window in the second storey (south); two narrow openings in the third and fourth",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "brash1862_abernethy",
+        "quote": "The fifth is lighted by four windows facing the cardinal points."
+       },
+       {
+        "source": "am_scot1970",
+        "quote": "the belfry windows are of Romanesque character"
+       }
+      ]
+     },
+     "two_builds": {
+      "value": "lowest twelve courses (about 14 ft) of a different stone",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_abernethy",
+        "quote": "The twelve lower layers are of a different coloured stone to the rest of the building"
+       },
+       {
+        "source": "brash1862_abernethy",
+        "quote": "Because the tower for a height of near 14 feet from its base, or about twelve courses of its masonry, is built of a different stone from the rest"
+       }
+      ]
+     },
+     "top": {
+      "value": "flat lead platform, no cap",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "brash1862_abernethy",
+        "quote": "Over this is a wooden platform sheeted with lead, and supported on the top string course"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "Whether a conical cap existed originally is not stated in any source reached."
+    ]
+   }
+  },
+  "brochs": {
+   "dun_carloway": {
+    "record": "Q1265209",
+    "name": "Dun Carloway, Lewis",
+    "facts": {
+     "height_m": {
+      "value": 9,
+      "unit": "m",
+      "note": "almost 9 m (HES), 9.2 m on the south (Wikipedia), about 30 ft on the east (OS 1969)",
+      "cites": [
+       {
+        "source": "hes_carloway",
+        "quote": "The broch stands in part almost 9m high, close to its original height."
+       },
+       {
+        "source": "wp_carloway",
+        "quote": "The wall of the broch rises on the south side to 9.2 metres."
+       },
+       {
+        "source": "her_carloway",
+        "quote": "part of the old walling on the east still attaining a height of about 30'"
+       }
+      ]
+     },
+     "diameters_m": {
+      "value": {
+       "external": 14.3,
+       "internal": 7.4
+      },
+      "unit": "m",
+      "note": "OS 1969: average external diameter 47 ft",
+      "cites": [
+       {
+        "source": "hes_carloway",
+        "quote": "On plan it is roughly circular, measuring 14.3m externally and 7.4m internally, with walls varying in thickness from 2.9-3.8m."
+       },
+       {
+        "source": "her_carloway",
+        "quote": "It has an average external diameter of 47'"
+       }
+      ]
+     },
+     "wall_thickness_m": {
+      "value": [
+       2.9,
+       3.8
+      ],
+      "unit": "m",
+      "note": "thinnest south-east, thickest north",
+      "cites": [
+       {
+        "source": "wp_carloway",
+        "quote": "The walls vary in thickness from 2.9 to 3.8 metres from the south-east to the north."
+       }
+      ]
+     },
+     "galleries": {
+      "value": 2,
+      "unit": "tiers",
+      "note": "two tiers of galleries survive; continuous galleries begin about 2 m above ground; scarcement at the level of the lower gallery",
+      "cites": [
+       {
+        "source": "hes_carloway",
+        "quote": "typical double-skinned wall with two tiers of internal galleries formed by flat slabs"
+       },
+       {
+        "source": "hes_carloway",
+        "quote": "but about 2m above ground level the continuous galleries begin"
+       }
+      ]
+     },
+     "entrance": {
+      "value": {
+       "faces": "north-west",
+       "width_m": 0.75,
+       "height_m": 1.0
+      },
+      "unit": "m",
+      "note": "guard cell on the south side of the passage; stair opposite on the east side",
+      "cites": [
+       {
+        "source": "wp_carloway",
+        "quote": "The entrance is on the north-west side."
+       },
+       {
+        "source": "wp_carloway",
+        "quote": "The entrance is 75 centimetres wide and 1 metre high."
+       }
+      ]
+     },
+     "stair": {
+      "value": "a quarter of the circumference",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_carloway",
+        "quote": "The staircase runs along one quarter of the circumference of the broch."
+       }
+      ]
+     },
+     "scarcement_m": {
+      "value": 2,
+      "unit": "m",
+      "note": "above ground level",
+      "cites": [
+       {
+        "source": "wp_carloway",
+        "quote": "the scarcement (ledge) which could hold such a floor is visible 2 metres above ground level"
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "RCAHMS 1928 (Outer Hebrides inventory, no. 68, plan fig. 58) is out of copyright but its ScotlandsPlaces scan could not be reached (redirect loop for scripts). Tabraham 1977 (PSAS 108, 156-67) has the modern plan; not checked."
+    ]
+   },
+   "clickimin": {
+    "record": "Q923324",
+    "name": "Broch of Clickimin, Shetland",
+    "facts": {
+     "diameter_m": {
+      "value": 19.8,
+      "unit": "m",
+      "note": "external diameter of the broch tower (Hamilton); Wikipedia: around 20 m external, 9 m internal",
+      "cites": [
+       {
+        "source": "hamilton1970",
+        "quote": "The broch tower, 19:8 m (65 ft) in diameter, was constructed quickly"
+       },
+       {
+        "source": "wp_clickimin",
+        "quote": "The broch has an external diameter of around 20 metres and an internal diameter of around 9 metres."
+       }
+      ]
+     },
+     "court_diameter_m": {
+      "value": 10.1,
+      "unit": "m",
+      "note": "court as built",
+      "cites": [
+       {
+        "source": "hamilton1970",
+        "quote": "The central court, originally 10-1 m (33 ft) in dia- meter"
+       }
+      ]
+     },
+     "height": {
+      "value": "over 17 ft surviving; probably 12-15 m originally",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "am_scot1970",
+        "quote": "a broch (which still stands to a height of over 17 feet)"
+       },
+       {
+        "source": "hamilton1970",
+        "quote": "probably rose to a height of 12°15 m (40—50ft)"
+       }
+      ]
+     },
+     "entrance": {
+      "value": {
+       "faces": "west",
+       "passage_length_m": 5.2
+      },
+      "unit": "m",
+      "note": "with door jambs; possible guard chamber behind blocking on the right",
+      "cites": [
+       {
+        "source": "hamilton1970",
+        "quote": "The ground floor entrance to the tower on the west side is in the form of a passage 5:2 m (17 ft) in length"
+       },
+       {
+        "source": "wp_clickimin",
+        "quote": "Access to the broch is achieved via the entrance on the western side."
+       }
+      ]
+     },
+     "galleries": {
+      "value": "upper entrances: north to the interior and a stair, east to a sloping gallery between the casement walls",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_clickimin",
+        "quote": "There are two additional entrances to the broch at upper levels."
+       },
+       {
+        "source": "hamilton1970",
+        "quote": "giving access to a sloping gallery between the inner and outer casement walls of the broch"
+       }
+      ]
+     },
+     "cells": {
+      "value": 2,
+      "unit": "mural chambers",
+      "note": "A (east, accessible) and B",
+      "cites": [
+       {
+        "source": "hamilton1970",
+        "quote": "In the thickness of the tower wall at ground floor level there were two mural chambers (A and B)"
+       }
+      ]
+     },
+     "blockhouse": {
+      "value": {
+       "height_m": 4,
+       "length_m": 12.8
+      },
+      "unit": "m",
+      "note": "free-standing gateway inside the fort entrance, originally three storeys",
+      "cites": [
+       {
+        "source": "hamilton1970",
+        "quote": "The blockhouse inside the entrance still stands to a height of 4 m (13 ft) and is 12-8 m (42 ft) in length"
+       },
+       {
+        "source": "hamilton1970",
+        "quote": "The blockhouse inside the fort entrance was originally three storeys in height."
+       }
+      ]
+     }
+    },
+    "gaps": [
+     "Wall thickness and the surviving gallery levels: not given as numbers in the sources reached; read them from Hamilton's plan (plan_sources). Hamilton 1968 (Excavations at Clickhimin, HMSO, out of copyright) is on the Internet Archive only as a borrowable book (excavationsatcli0000jrch)."
+    ]
+   },
+   "dun_telve": {
+    "record": "Q3342584",
+    "name": "Dun Telve, Glenelg",
+    "facts": {
+     "height": {
+      "value": "33 ft 6 in (1914); 10.2 m to the west and north-west (Wikipedia); over 10 m (HES)",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "curle1916",
+        "quote": "At the present day the highest elevation is 33 feet 6 inches"
+       },
+       {
+        "source": "wp_telve",
+        "quote": "currently stands to a maximum height of 10.2 metres (33 ft) to the west and northwest"
+       },
+       {
+        "source": "hes_glenelg",
+        "quote": "Dun Telve stands near the river and about one third of the wall still stands to a height of over 10m."
+       }
+      ]
+     },
+     "diameter_ft": {
+      "value": {
+       "overall": 60,
+       "court": 32
+      },
+      "unit": "ft",
+      "note": "18.3 m overall (Wikipedia)",
+      "cites": [
+       {
+        "source": "curle1916",
+        "quote": "an almost complete circle, with a diameter over all of 60 feet"
+       },
+       {
+        "source": "curle1916",
+        "quote": "The interior courtyard has a diameter of 32 feet."
+       },
+       {
+        "source": "wp_telve",
+        "quote": "The broch consists of a drystone tower which measures 18.3 metres (60 ft) in diameter"
+       }
+      ]
+     },
+     "wall_thickness_m": {
+      "value": {
+       "base": 4.3,
+       "top": 1.2
+      },
+      "unit": "m",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_telve",
+        "quote": "The external walls are 4.3 metres (14 ft) thick at the base and 1.2 metres (3 ft 11 in) thick at the top."
+       }
+      ]
+     },
+     "entrance": {
+      "value": {
+       "faces": "west",
+       "passage_length_ft": 13.5
+      },
+      "unit": "ft",
+      "note": "door checks 4 ft 9 in in; guard chamber 18 ft long",
+      "cites": [
+       {
+        "source": "curle1916",
+        "quote": "The entrance to the interior is from the west by a passage through the wall 13 feet 6 inches in length."
+       }
+      ]
+     },
+     "galleries": {
+      "value": "four and part of a fifth; two lower ones 5-6 ft high, upper ones about 1 ft wide",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "curle1916",
+        "quote": "In the elevation of the structure, so far as remaining, are four galleries and a portion of a fifth"
+       },
+       {
+        "source": "hes_glenelg",
+        "quote": "The base of the wall is largely solid and above this there are traces of 5 galleries."
+       }
+      ]
+     },
+     "scarcements_ft": {
+      "value": [
+       6.5,
+       29.5
+      ],
+      "unit": "ft",
+      "note": "ledges round the court",
+      "cites": [
+       {
+        "source": "curle1916",
+        "quote": "there runs around the interior at an average height of 6 feet 6 inches above ground-level a ledge"
+       },
+       {
+        "source": "curle1916",
+        "quote": "At a height of 29 feet 6 inches above ground a similar ledge occurs"
+       }
+      ]
+     },
+     "stair": {
+      "value": "from a door a quarter round to the left of the entrance; seventeen steps survive",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "curle1916",
+        "quote": "access on the right to the stair, still existing for seventeen steps"
+       }
+      ]
+     }
+    },
+    "gaps": []
+   },
+   "dun_troddan": {
+    "record": "Q2131824",
+    "name": "Dun Troddan, Glenelg",
+    "facts": {
+     "height": {
+      "value": "nearly 25 ft (1921); 7 m (Wikipedia); 7.6 m (HES)",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "curle1921",
+        "quote": "The high portion, however, rises to nearly 25 feet, and shows the remains of three galleries."
+       },
+       {
+        "source": "wp_troddan",
+        "quote": "currently stands to a maximum height of 7 metres (23 ft)"
+       },
+       {
+        "source": "hes_glenelg",
+        "quote": "About one third of its wall survives to a height of 7.6m"
+       }
+      ]
+     },
+     "diameter_m": {
+      "value": {
+       "overall": 17.5,
+       "court": 8.56
+      },
+      "unit": "m",
+      "note": "court 28 ft (Curle)",
+      "cites": [
+       {
+        "source": "wp_troddan",
+        "quote": "The broch consists of a drystone tower which measures around 17.5 metres (57 ft) in diameter"
+       },
+       {
+        "source": "wp_troddan",
+        "quote": "The central court is an almost perfect circle with a diameter of 8.56 metres (28.1 ft)."
+       },
+       {
+        "source": "curle1921",
+        "quote": "The interior court has a constant diameter of 28 feet."
+       }
+      ]
+     },
+     "wall_thickness": {
+      "value": "4.5 m at the base (Wikipedia); 15 ft except at the entrance (Curle)",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "wp_troddan",
+        "quote": "The external walls are 4.5 metres (15 ft) thick at the base."
+       },
+       {
+        "source": "curle1921",
+        "quote": "The wall of the broch—here at its narrowest—at other parts of the periphery expands to 15 feet."
+       }
+      ]
+     },
+     "entrance": {
+      "value": {
+       "faces": "south-west",
+       "passage_length_ft": 13.5
+      },
+      "unit": "ft",
+      "note": "guard chamber on the left",
+      "cites": [
+       {
+        "source": "curle1921",
+        "quote": "The entrance is towards the south-west, and looks down the glen."
+       },
+       {
+        "source": "curle1921",
+        "quote": "making the entire passage 13 feet 6 inches in length"
+       }
+      ]
+     },
+     "galleries": {
+      "value": "three; lowest 5 ft high, next 6 ft 6 in, top 5 ft 6 in",
+      "unit": "",
+      "note": "",
+      "cites": [
+       {
+        "source": "curle1921",
+        "quote": "the lowest has a height of 5 feet and a breadth of 3 feet 6 inches on floor"
+       },
+       {
+        "source": "curle1921",
+        "quote": "The uppermost gallery has apparently had a height of 5 feet 6 inches."
+       }
+      ]
+     },
+     "scarcement_ft": {
+      "value": 6,
+      "unit": "ft",
+      "note": "with a ring of eleven post-holes 6-7 ft from the wall",
+      "cites": [
+       {
+        "source": "curle1921",
+        "quote": "On the interior face, at a height of about 6 feet, occurs a ledge or scarcement formed by an intake of the wall above."
+       },
+       {
+        "source": "curle1921",
+        "quote": "The post-holes were eleven in number"
+       }
+      ]
+     }
+    },
+    "gaps": []
+   }
+  }
+ },
+ "plan_sources": [
+  {
+   "site": "orkney (Ring of Brodgar)",
+   "title": "Ring of Brogar, Stenness, Orkney, 1849 (Plate XIII)",
+   "author": "F. W. L. Thomas, engraved by J. Basire",
+   "publication": "Archaeologia 34 (1852), plates facing p. 136; published by the Society of Antiquaries of London, 23 April 1851",
+   "year": 1851,
+   "scan_url": "https://archive.org/details/archaeologiaormi34sociuoft",
+   "plate_url": "https://archive.org/details/archaeologiaormi34sociuoft/page/n178/mode/1up",
+   "image_url": "https://archive.org/download/archaeologiaormi34sociuoft/page/n178_w2400.jpg",
+   "scan_page": "n178 (0-based leaf index; unnumbered plate after printed p. 136)",
+   "scale": "no scale bar; Thomas's table gives the circle of pillars as 340 ft across, so the plate can be scaled from the circle (derived)",
+   "north": "an eight-pointed compass star west of centre, not lettered: check against OSM before using it",
+   "shows": "every stone position numbered round the ring, each marked erect, prostrate, stump or broken, or an empty circle for a lost stone, with outline figures of the stones; the ditch with its two causeways; an elevation strip along the top",
+   "licence": "public domain",
+   "licence_reasoning": "Published 1851/1852; Thomas died 1885 and the engraver Basire long before 1955, so life + 70 has long ended. Internet Archive marks the scan NOT_IN_COPYRIGHT; the same scan is on Wikimedia Commons.",
+   "cites": [
+    {
+     "source": "thomas1852",
+     "quote": "with Mr. Robert Heddle, the dimensions and an outline figure of every stone in the Ring of Brogar was taken"
+    },
+    {
+     "source": "thomas1852",
+     "quote": "Diameter of circle on which the pillars are placed . . . 340"
+    },
+    {
+     "source": "thomas1852",
+     "quote": "there are now only thirteen erect and perfect ; ten others are nearly perfect, but prostrate ; and there are the stumps or fragments of thirteen more"
+    }
+   ]
+  },
+  {
+   "site": "orkney (Stones of Stenness, Ring of Bookan)",
+   "title": "Antiquities of Stenness, Orkney, 1849 (Plate XIV): Ring of Stenness, Ring of Bookan, small ring, with sections",
+   "author": "F. W. L. Thomas",
+   "publication": "Archaeologia 34 (1852), Plate XIV, facing p. 136",
+   "year": 1851,
+   "scan_url": "https://archive.org/details/archaeologiaormi34sociuoft",
+   "plate_url": "https://archive.org/details/archaeologiaormi34sociuoft/page/n180/mode/1up",
+   "image_url": "https://archive.org/download/archaeologiaormi34sociuoft/page/n180_w2400.jpg",
+   "scan_page": "n180 (plate printed sideways: rotate 90 degrees)",
+   "scale": "no scale bar read at the scan's resolution; check at full size",
+   "north": "not seen; check at full size",
+   "shows": "the Ring of Stenness with its standing stones, a fallen one and the empty positions, the ditch and bank, notes on the stones; the Ring of Bookan; a profile across each",
+   "licence": "public domain",
+   "licence_reasoning": "As Plate XIII: 1851/1852, author died 1885.",
+   "cites": [
+    {
+     "source": "thomas1852",
+     "quote": "b This ring is marked upon the General Plan ; and there is a ground plan and elevation in Plate XIV."
+    }
+   ]
+  },
+  {
+   "site": "orkney (whole isthmus)",
+   "title": "General Plan of the Antiquities of Stenness, Orkney, 1849 (Plate XII)",
+   "author": "F. W. L. Thomas",
+   "publication": "Archaeologia 34 (1852), Plate XII",
+   "year": 1851,
+   "scan_url": "https://commons.wikimedia.org/wiki/File:Stenness_Plan_Thomas_1851_50.png",
+   "plate_url": "https://commons.wikimedia.org/wiki/File:Stenness_Plan_Thomas_1851_50.png",
+   "scan_page": "Commons file (the Internet Archive scan leaves n176-n177 are blank sides; the fold-out general plan was not found in that scan)",
+   "scale": "not checked",
+   "north": "not checked",
+   "shows": "both rings, the barrows with their elevations and the outlying stones, triangulated with staves on a chained base",
+   "licence": "public domain",
+   "licence_reasoning": "1851/1852, author died 1885.",
+   "cites": [
+    {
+     "source": "thomas1852",
+     "quote": "The General Plan was made by triangulating with staves, and a base measured by a land-chain on the level point of Stenness."
+    }
+   ]
+  },
+  {
+   "site": "orkney, mousa, clickimin",
+   "title": "RCAHMS, Twelfth report with an inventory of the ancient monuments of Orkney and Shetland (3 vols, HMSO 1946)",
+   "author": "Royal Commission on the Ancient and Historical Monuments of Scotland",
+   "publication": "HMSO, Edinburgh, 1946",
+   "year": 1946,
+   "scan_url": "https://scotlandsplaces.gov.uk/digital-volumes/rcahms-archives/inventories/orkney-and-shetland-1946-volume-2",
+   "plate_url": null,
+   "scan_page": null,
+   "scale": null,
+   "north": null,
+   "shows": "vol. 2 Orkney (Brodgar, Stenness, Maeshowe), vol. 3 Shetland (Mousa no. 1206, Clickimin); plates not located",
+   "licence": "Crown copyright expired",
+   "licence_reasoning": "Crown copyright in a published work lasts 50 years from the end of the year of publication: 1946 + 50 ended 31 Dec 1996.",
+   "reached": false,
+   "note": "ScotlandsPlaces digital volumes (vol. 1, 2, 3) answer scripts and WebFetch with a redirect loop between http and https, so no page or plate could be identified or quoted. Canmore lists a PDF of vol. 3 (collection 1471213), now on trove.scot behind a JavaScript challenge. HathiTrust holds it search-only. A browser visit is needed."
+  },
+  {
+   "site": "durrington (Woodhenge)",
+   "title": "Plan of Woodhenge, with a reconstructed elevation, in Stonehenge and Avebury and neighbouring monuments",
+   "author": "R. J. C. Atkinson (Ministry of Works / Department of the Environment)",
+   "publication": "HMSO 1959; the scan is the eighth impression with amendments, 1971",
+   "year": 1971,
+   "scan_url": "https://archive.org/details/stonehenge-and-avebury-images",
+   "plate_url": "https://archive.org/details/stonehenge-and-avebury-images/page/n34/mode/1up",
+   "image_url": "https://archive.org/download/stonehenge-and-avebury-images/page/n34_w1400.jpg",
+   "scan_page": "n34 (right-hand page facing printed p. 31)",
+   "scale": "scale bar in feet (0-100) and metres (0-30)",
+   "north": "north arrow, lower left",
+   "shows": "every posthole of the six rings as a dot, the holes with ramps, the stoneholes, the central grave, the ditch and bank with the north-north-east entrance; above it an elevation of the roofed-building reconstruction with its own scale (0-140 ft, 0-40 m)",
+   "licence": "Crown copyright expired",
+   "licence_reasoning": "Crown copyright, published 1959 (this impression 1971): 50 years from publication ended by 31 Dec 2021. Internet Archive marks it Public Domain Mark 1.0 ('HMSO has confirmed that the expiry applies world-wide'). The drawing is redrawn from the Cunningtons' 1929 survey, which is itself public domain in the UK since 2022 (Maud Cunnington died 1951).",
+   "cites": [
+    {
+     "source": "atkinson1959",
+     "quote": "The plan of Woodhenge (opposite) shows the rings of post-holes which the excavators found inside the remains of the earthwork."
+    },
+    {
+     "source": "atkinson1959",
+     "quote": "The earthwork was broken by a single entrance-causeway on the north-north-east side."
+    }
+   ]
+  },
+  {
+   "site": "durrington (Woodhenge)",
+   "title": "Woodhenge: a description of the site as revealed by excavations carried out there by Mr. and Mrs. B. H. Cunnington, 1926-7-8",
+   "author": "M. E. Cunnington",
+   "publication": "George Simpson, Devizes, 1929",
+   "year": 1929,
+   "scan_url": null,
+   "plate_url": null,
+   "scan_page": null,
+   "scale": null,
+   "north": null,
+   "shows": "the original posthole survey",
+   "licence": "public domain in the UK (author died 1951)",
+   "licence_reasoning": "Maud Cunnington died 1951; life + 70 years ended 31 Dec 2021.",
+   "reached": false,
+   "note": "No online scan found (Internet Archive, Google Books; HathiTrust's catalogue answers scripts with a Cloudflare challenge). The Wiltshire Archaeological Magazine 45 (1930-32) has only a review (scan n141-147 of wiltshirearchaeo451930193), no plan seen."
+  },
+  {
+   "site": "mousa",
+   "title": "Office of Works survey of Mousa, 1919: fig. 2 ground plan of broch and outbuildings (with north sign and scale in feet), fig. 3 plan and sections of courtyard and entrance, fig. 4 sections showing galleries, fig. 6 cells, fig. 7 plan at ground level, fig. 8 plans of galleries",
+   "author": "H.M. Office of Works (drawings); text by J. Wilson Paterson",
+   "publication": "Proc Soc Antiq Scot 56 (1921-22), 172-183",
+   "year": 1922,
+   "scan_url": "https://journals.socantscot.org/index.php/psas/article/download/7542/7510/7498",
+   "plate_url": "https://journals.socantscot.org/index.php/psas/article/download/7542/7510/7498",
+   "scan_page": "PDF pages 3 (fig. 2), 4 (fig. 3), 5 (fig. 4), 8 (fig. 6), 9 (fig. 7), 10 (fig. 8)",
+   "scale": "fig. 2: vertical scale bar in feet (10-0-20 ft)",
+   "north": "fig. 2: north sign (circle and cross) beside the scale",
+   "shows": "the broch at ground level with cells A, B, C, entrance and outbuildings; sections through every gallery; gallery plans",
+   "licence": "Crown copyright expired (Office of Works drawings, 1922)",
+   "licence_reasoning": "Published 1922 by a Crown body's survey; 50 years ended 1972. The PSAS PDF's own terms of reuse are not stated on the article page; the drawings themselves are out of copyright.",
+   "cites": [
+    {
+     "source": "paterson1922",
+     "quote": "Fig. 2. Ground Plan of Broch and Outbuildings."
+    },
+    {
+     "source": "paterson1922",
+     "quote": "Fig. 8. Plans of Galleries."
+    }
+   ]
+  },
+  {
+   "site": "mousa",
+   "title": "Mousa Broch, Shetland: Section A-B and Plan at ground level (inside front cover fold)",
+   "author": "J. R. C. Hamilton (Ministry of Public Building and Works)",
+   "publication": "The Brochs of Mousa and Clickhimin, official guide, HMSO 1970",
+   "year": 1970,
+   "scan_url": "https://archive.org/details/brochs-mousa-clickhimin-guide",
+   "plate_url": "https://archive.org/details/brochs-mousa-clickhimin-guide/page/n3/mode/1up",
+   "image_url": "https://archive.org/download/brochs-mousa-clickhimin-guide/page/n3_w1400.jpg",
+   "scan_page": "n3",
+   "scale": "scale bars in feet and metres under each drawing",
+   "north": "north arrow beside the plan",
+   "shows": "the tower in section with the galleries, stair and scarcements; plan at ground level with the cells, court, wheelhouse walling and the outer wall traces",
+   "licence": "Crown copyright expired",
+   "licence_reasoning": "Crown copyright 1970, expired 31 Dec 2020; Internet Archive Public Domain Mark 1.0.",
+   "cites": [
+    {
+     "source": "hamilton1970",
+     "quote": "Six such galleries survive and all open to the court through the four tiers of the ladder- like apertures."
+    }
+   ]
+  },
+  {
+   "site": "clickimin",
+   "title": "Clickhimin Broch, Shetland: site plan by period (inside back cover fold) and Clickhimin Blockhouse plan, elevations and sections",
+   "author": "J. R. C. Hamilton (Ministry of Public Building and Works)",
+   "publication": "The Brochs of Mousa and Clickhimin, official guide, HMSO 1970",
+   "year": 1970,
+   "scan_url": "https://archive.org/details/brochs-mousa-clickhimin-guide",
+   "plate_url": "https://archive.org/details/brochs-mousa-clickhimin-guide/page/n52/mode/1up",
+   "image_url": "https://archive.org/download/brochs-mousa-clickhimin-guide/page/n52_w1400.jpg",
+   "scan_page": "n52 (site plan); n51 (blockhouse)",
+   "scale": "site plan: feet (0-60) and metres (0-20); blockhouse: feet (0-20) and metres (0-7)",
+   "north": "north arrow on both",
+   "shows": "the broch with its court, entrance, cells A and B and wheelhouse, the fort wall, blockhouse, landing stage, causeway, fort-range pillar stones and post-holes numbered 1-23, hearths and huts, hatched by period (Late Bronze Age to late wheelhouse)",
+   "licence": "Crown copyright expired",
+   "licence_reasoning": "Crown copyright 1970, expired 31 Dec 2020; Internet Archive Public Domain Mark 1.0.",
+   "cites": [
+    {
+     "source": "hamilton1970",
+     "quote": "The broch tower, 19:8 m (65 ft) in diameter, was constructed quickly"
+    }
+   ]
+  },
+  {
+   "site": "dun_telve",
+   "title": "Broch Dun Telve, Glenbeg: fig. 3 plan at ground level, fig. 4 sections on lines A-B and C-D, fig. 6 plans at first and second gallery level",
+   "author": "J. Wilson Paterson, H.M. Office of Works (drawings); A. O. Curle (text)",
+   "publication": "Proc Soc Antiq Scot 50 (1915-16), 241-254",
+   "year": 1916,
+   "scan_url": "https://journals.socantscot.org/index.php/psas/article/download/7386/7355/7343",
+   "plate_url": "https://journals.socantscot.org/index.php/psas/article/download/7386/7355/7343",
+   "scan_page": "PDF pages 4 (fig. 3), 5 (fig. 4), 8 (fig. 6)",
+   "scale": "scale bar in feet under each",
+   "north": "north arrow on fig. 3",
+   "shows": "the broch wall, court, entrance passage with guard chamber, stair, outer enclosure; sections through the standing wall with the galleries",
+   "licence": "Crown copyright expired",
+   "licence_reasoning": "Drawings by the Office of Works, published 1916: Crown copyright ended 1966.",
+   "cites": [
+    {
+     "source": "curle1916",
+     "quote": "Dun Telve—view showing Galleries in section."
+    }
+   ]
+  },
+  {
+   "site": "dun_troddan",
+   "title": "Dun Troddan: fig. 3 ground plan and elevation",
+   "author": "A. O. Curle (excavation by H.M. Office of Works)",
+   "publication": "Proc Soc Antiq Scot 55 (1920-21), 83-94",
+   "year": 1921,
+   "scan_url": "https://journals.socantscot.org/index.php/psas/article/download/7505/7473/7461",
+   "plate_url": "https://journals.socantscot.org/index.php/psas/article/download/7505/7473/7461",
+   "scan_page": "PDF page 4",
+   "scale": "scale bar in feet (0-30 ft)",
+   "north": "a north mark at the left of the plan (check)",
+   "shows": "ground plan with entrance, guard chamber, stair, the eleven post-holes and hearths; elevation of the standing segment",
+   "licence": "out of copyright (check the drawing's author)",
+   "licence_reasoning": "If drawn by the Office of Works, Crown copyright ended 1971; if by Curle, he died 1955 and life + 70 ended 31 Dec 2025.",
+   "cites": [
+    {
+     "source": "curle1921",
+     "quote": "The post-holes were eleven in number"
+    }
+   ]
+  },
+  {
+   "site": "round_towers (Clondalkin)",
+   "title": "Section of the Round Tower of Clondalkin (fig. 222), with dimensions",
+   "author": "George Petrie",
+   "publication": "The ecclesiastical architecture of Ireland (Dublin, 1845), p. 397",
+   "year": 1845,
+   "scan_url": "https://archive.org/details/ecclesiasticalar00petruoft",
+   "plate_url": "https://archive.org/details/ecclesiasticalar00petruoft/page/n424/mode/1up",
+   "image_url": "https://archive.org/download/ecclesiasticalar00petruoft/page/n424_w1400.jpg",
+   "scan_page": "n424 (printed p. 397; the right-hand figure is Rattoo)",
+   "scale": "no scale bar: dimensions written on the drawing in feet and inches (overall 85 ft, cap, each storey)",
+   "north": "not applicable (section)",
+   "shows": "section through the whole tower with the projecting base, every floor level and storey height, doorway and windows, cap",
+   "licence": "public domain",
+   "licence_reasoning": "Published 1845; Petrie died 1866.",
+   "cites": [
+    {
+     "source": "petrie1845",
+     "quote": "The first exhibits the internal construc- tion and measurements of the Round Tower of Clondalkin"
+    }
+   ]
+  },
+  {
+   "site": "round_towers (Brechin)",
+   "title": "The Round Tower of Brechin (PSAS vol. 3, Plate III): east elevation, section, plans at five levels, enlarged drawing of the door",
+   "author": "Andrew Jervise (paper); plate measured by William Ormiston",
+   "publication": "Proc Soc Antiq Scot 3 (1857-60, published 1862), 28-35",
+   "year": 1862,
+   "scan_url": "https://journals.socantscot.org/index.php/psas/article/download/4483/4461/4454",
+   "plate_url": "https://journals.socantscot.org/index.php/psas/article/download/4483/4461/4454",
+   "scan_page": "PDF page 2",
+   "scale": "scale bars under the elevation, section and door drawing",
+   "north": "not applicable (elevation/section; level plans are circles)",
+   "shows": "the tower with spire, the seven storeys and their floors, wall thickness at five levels in plan, the carved doorway",
+   "licence": "public domain",
+   "licence_reasoning": "Published 1862; Jervise died 1878; a drawing made in the 1850s by a little-known author is far past both life + 70 and the 70-years-from-making rule for unknown authors.",
+   "cites": [
+    {
+     "source": "jervise1862",
+     "quote": "As shown in the sectional drawing (see Plate III.), it is divided into seven unequal apartments or storeys"
+    }
+   ]
+  },
+  {
+   "site": "round_towers (Abernethy)",
+   "title": "Round Tower at Abernethy (PSAS vol. 3, Plate XXXII): section of tower, interior view of door, elevation and plan of door",
+   "author": "R. R. Brash",
+   "publication": "Proc Soc Antiq Scot 3 (published 1862), 303-319",
+   "year": 1862,
+   "scan_url": "https://journals.socantscot.org/index.php/psas/article/download/4529/4507/4500",
+   "plate_url": "https://journals.socantscot.org/index.php/psas/article/download/4529/4507/4500",
+   "scan_page": "PDF page 5",
+   "scale": "scale bar in feet under the section",
+   "north": "not applicable",
+   "shows": "the tower in section with string courses, storeys and windows, ground level inside and outside the churchyard; the doorway",
+   "licence": "public domain",
+   "licence_reasoning": "Published 1862; Brash died 1876.",
+   "cites": [
+    {
+     "source": "brash1862_abernethy",
+     "quote": "I measured the various storeys from top to top of the"
+    }
+   ]
+  },
+  {
+   "site": "dun_carloway",
+   "title": "RCAHMS Ninth report and inventory: Outer Hebrides, Skye and the Small Isles (1928), no. 68, plan fig. 58",
+   "author": "RCAHMS",
+   "publication": "HMSO 1928",
+   "year": 1928,
+   "scan_url": "https://scotlandsplaces.gov.uk/digital-volumes/rcahms-archives/inventories",
+   "plate_url": null,
+   "scan_page": null,
+   "scale": null,
+   "north": null,
+   "shows": "plan of Dun Carloway (fig. 58) and views (figs. 54-7)",
+   "licence": "Crown copyright expired",
+   "licence_reasoning": "Crown publication of 1928; expired 1978.",
+   "reached": false,
+   "note": "Reference from the Western Isles HER; ScotlandsPlaces could not be reached by script.",
+   "cites": [
+    {
+     "source": "her_carloway",
+     "quote": "RCAHMS , 1928, The RCAHMCS 9th Report & Inventory: Outer Hebrides, Skye and the Small Isles, 18-20, No. 68 plan fig. 58"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "RCAHMS 1946 Orkney and Shetland and 1928 Outer Hebrides inventories: ScotlandsPlaces refuses scripts (redirect loop); plates not located.",
+  "Cunnington 1929 (Woodhenge): no online scan found; the HMSO 1959/1971 guide plan is the traceable substitute.",
+  "Historic Environment Scotland visitor pages (historicenvironment.scot) answer scripts with HTTP 429, and Canmore (trove.scot) has a JavaScript challenge; the HES portal scheduling texts were used instead.",
+  "Glendalough round tower: no fetchable base diameter or wall thickness.",
+  "The PSAS article pages state no reuse licence; the drawings used are out of copyright on their own terms (Crown or author dead over 70 years)."
+ ]
+}

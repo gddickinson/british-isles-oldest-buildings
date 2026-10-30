@@ -72,7 +72,7 @@ export function stone(p, height, seed) {
 
 // Mound: {c, r (or radii: one every 360/n degrees from north), h, kerb_h, p (profile), surface, kerb_rock,
 // facade: {from, to, rock, h} (an arc of the drum faced in another stone, and as high as h there, blending back to
-// kerb_h over 10°), gap: {az, width, open: [[lo, hi], ...]}} on
+// kerb_h over 10°), gap: {az, width, open: [[lo, hi], ...]} or gaps: [...]} on
 // ground flattened by the builder. The top is a dome down to the kerb drum; the drum is open where the passage enters.
 function mound(p, height) {
   const [cx, cy] = p.c, NR = 28, NS = 180, kerb = p.kerb_h ?? 0, g0 = height(cx, cy) ?? 0;
@@ -106,13 +106,13 @@ function mound(p, height) {
   const g = new THREE.Group();
   g.add(mesh(pos, idx, surface(p.surface ?? "grass")));
   // Drum: one wall per segment, open where the passage comes in.
-  const gapHalf = p.gap ? (p.gap.width / 2) / rAt(p.gap.az) / R : 0;
-  const inGap = (az) => p.gap && Math.abs(((az - p.gap.az + 540) % 360) - 180) < gapHalf;
+  const gapList = p.gaps ?? (p.gap ? [p.gap] : []);          // one opening per passage
+  const gapAt = (az) => gapList.find((gp) => Math.abs(((az - gp.az + 540) % 360) - 180) < (gp.width / 2) / rAt(gp.az) / R);
   const bands = (az) => {
-    const top = kAt(az);
-    if (!inGap(az)) return [[0, top]];
+    const top = kAt(az), gp = gapAt(az);
+    if (!gp) return [[0, top]];
     const out = []; let lo = 0;
-    for (const [a, b] of p.gap.open) { if (a > lo) out.push([lo, a]); lo = b; }
+    for (const [a, b] of gp.open) { if (a > lo) out.push([lo, a]); lo = b; }
     if (lo < top) out.push([lo, top]);
     return out;
   };

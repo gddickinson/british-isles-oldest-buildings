@@ -1,0 +1,2550 @@
+{
+ "id": "earthworks",
+ "name": "Avebury, Silbury Hill, Maiden Castle and the Uffington White Horse",
+ "date_checked": "2026-10-29",
+ "about": "Four earthwork sites whose ground comes from the Environment Agency's 1 m LiDAR. The facts here are what the LiDAR cannot give: what each is, its dates and phases, what was lost or added, the structures on it (stones, posts, gates, timber and stone faces of ramparts, the temple), and astronomical claims. Quotes are exact text from the cited pages as fetched (whitespace, OCR and ligatures as fetched). Values marked derived are computed here, with how.",
+ "sources": {
+  "wp_avebury": {
+   "title": "Avebury",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Avebury",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_wka": {
+   "title": "West Kennet Avenue",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/West_Kennet_Avenue",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "eh_avebury_desc": {
+   "title": "Description of Avebury Henge and Stone Circles",
+   "author": "English Heritage (text from the Heritage Unlocked guidebooks, 2002-6)",
+   "url": "https://www.english-heritage.org.uk/visit/places/avebury/history/description/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "eh_avebury_hist": {
+   "title": "History of Avebury Henge and Stone Circles",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/avebury/history/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "keiller_1939": {
+   "title": "Avebury: Summary of Excavations, 1937 and 1938",
+   "author": "Alexander Keiller, Antiquity 13 (1939), 223-233 (free PDF, Cambridge Core; OCR text)",
+   "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5F10AF32646F48B13E38B6DD09E6398B/S0003598X00027927a.pdf/avebury-summary-of-excavations-1937-and-1938.pdf",
+   "licence_note": "(c) Antiquity Publications; free to read. Text quotes only; Keiller's numbering here is per sector (NW and SW sectors numbered separately), not Isobel Smith's 1965 numbering used today"
+  },
+  "whs_ra": {
+   "title": "Avebury World Heritage Site Resource Assessment (Stonehenge, Avebury and Associated Sites WHS Research Framework, 2016)",
+   "author": "ed. M. Leivers and A. B. Powell; Late Neolithic section by R. Cleal and J. Pollard; chronology by F. Healy; archaeoastronomy by C. Ruggles; modern Avebury by R. Hutton (Wessex Archaeology 2016)",
+   "url": "https://www.stonehengeandaveburywhs.org/assets/Avebury-Resource-Assesment.pdf",
+   "licence_note": "(c) Wessex Archaeology 2016, free PDF; text quotes only; its figures are (c) Historic England / Wessex Archaeology"
+  },
+  "gps_2019": {
+   "title": "The Origins of Avebury (accepted manuscript of Antiquity 93 (2019), 359-377)",
+   "author": "Mark Gillings, Joshua Pollard and Kristian Strutt",
+   "url": "https://eprints.soton.ac.uk/428086/1/aqy_Avebury_260918.pdf",
+   "licence_note": "accepted manuscript in the Southampton repository (Bournemouth copy CC BY-NC-ND); text quotes only; the PDF text carries review-system watermark letters between words, so quotes are kept to clean runs"
+  },
+  "wessex_sheet": {
+   "title": "Avebury Henge & West Kennet Avenue: information for teachers",
+   "author": "Wessex Archaeology",
+   "url": "https://www.wessexarch.co.uk/sites/default/files/field_file/3%20information_sheet_for_avebury_henge_and_west_kennet_avenue.pdf",
+   "licence_note": "(c) Wessex Archaeology; a teachers' sheet, round figures; text quotes only"
+  },
+  "aw_marmalade": {
+   "title": "The Marmalade Man (Alexander Keiller)",
+   "author": "avebury-web.co.uk (local enthusiast site)",
+   "url": "https://www.avebury-web.co.uk/marmalade_man.html",
+   "licence_note": "private website; secondary, used only for the 1881 probing and 2003 survey counts"
+  },
+  "aw_surviving": {
+   "title": "Surviving stones",
+   "author": "avebury-web.co.uk (local enthusiast site)",
+   "url": "https://avebury-web.co.uk/surviving_stones.html",
+   "licence_note": "private website; secondary"
+  },
+  "wp_silbury": {
+   "title": "Silbury Hill",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Silbury_Hill",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "eh_silbury_hist": {
+   "title": "History of Silbury Hill",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/silbury-hill/history/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "eh_silbury_desc": {
+   "title": "Description of Silbury Hill",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/silbury-hill/history/description/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "eh_silbury_res": {
+   "title": "Research on Silbury Hill",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/silbury-hill/history/research/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "ads_silbury_2001": {
+   "title": "Silbury Hill: summary report on archaeological investigation and recording (2000-2001), draft",
+   "author": "English Heritage Research and Standards Group (ADS archive arch-1648-1)",
+   "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1648-1/dissemination/pdf/Pr661_PostExcavationData/Pr661_ReportsAndDocuments/Pr661_2000b-2000d-2001b-2001e-2001h_SummaryReportArchaeologicalInvestigations_Draft_v01.pdf",
+   "licence_note": "ADS terms of use; text quotes only"
+  },
+  "linford_2009": {
+   "title": "Silbury Hill, Wiltshire: report on geophysical surveys, 2005-2008 (Research Department Report Series 105-2009)",
+   "author": "N. Linford, P. Linford, L. Martin and A. Payne, English Heritage (ADS archive arch-1893-1)",
+   "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1893-1/dissemination/pdf/englishh2-374998_1.pdf",
+   "licence_note": "(c) English Heritage; ADS terms of use; text quotes only"
+  },
+  "wp_maiden": {
+   "title": "Maiden Castle, Dorset",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Maiden_Castle,_Dorset",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "eh_maiden": {
+   "title": "History of Maiden Castle",
+   "author": "English Heritage (Dr Alastair Oswald)",
+   "url": "https://www.english-heritage.org.uk/visit/places/maiden-castle/history/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "wheeler_1943": {
+   "title": "Maiden Castle, Dorset (Reports of the Research Committee of the Society of Antiquaries of London No. XII)",
+   "author": "R. E. M. Wheeler, 1943 (OCR text of the ADS PDF)",
+   "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-3630-1/dissemination/SAL_vol_XII.pdf",
+   "licence_note": "(c) Society of Antiquaries of London; free PDF from ADS under ADS terms (not an open licence; also open access on OAPEN, hdl 20.500.12657/27681, which refuses scripts). Text quotes only; plans not to be traced without permission. OCR renders some figures with spaces or letters ('I 5' for 15, 'ef' for 'of'), so quotes avoid those"
+  },
+  "wp_uwh": {
+   "title": "Uffington White Horse",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Uffington_White_Horse",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_ucastle": {
+   "title": "Uffington Castle",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Uffington_Castle",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_dragon": {
+   "title": "Dragon Hill, Uffington",
+   "author": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dragon_Hill,_Uffington",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "eh_uff": {
+   "title": "History of Uffington Castle, White Horse and Dragon Hill",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/uffington-castle-white-horse-and-dragon-hill/history/",
+   "licence_note": "(c) English Heritage; text quotes only"
+  },
+  "oa_ch4": {
+   "title": "Uffington White Horse and its Landscape, ch. 4: The Manger, Dragon Hill and the Barrows",
+   "author": "A. Barclay, P. Booth, A. M. Cromarty, C. Gosden, D. Miles and S. Palmer, in Miles et al. 2003 (Thames Valley Landscapes Monograph 18, Oxford Archaeology)",
+   "url": "https://eprints.oxfordarchaeology.com/6999/6/Uffington%20White%20Horse_Ch4.pdf",
+   "licence_note": "(c) Oxford Archaeology; free PDF in the OA Library (licence not stated on the record); text quotes only"
+  },
+  "oa_ch5": {
+   "title": "Uffington White Horse and its Landscape, ch. 5: The White Horse",
+   "author": "D. Miles, S. Palmer and A. M. Cromarty (OSL section by J. Rees-Jones and M. Tite), in Miles et al. 2003",
+   "url": "https://eprints.oxfordarchaeology.com/6999/7/Uffington%20White%20Horse_Ch5.pdf",
+   "licence_note": "(c) Oxford Archaeology; free PDF in the OA Library; text quotes only (the PDF text uses ligatures, e.g. 'ﬁ', kept in quotes)"
+  },
+  "oa_ch6": {
+   "title": "Uffington White Horse and its Landscape, ch. 6: The Hillfort",
+   "author": "G. Lock, D. Miles, S. Palmer and A. M. Cromarty, in Miles et al. 2003",
+   "url": "https://eprints.oxfordarchaeology.com/6999/8/Uffington%20White%20Horse_Ch6.pdf",
+   "licence_note": "(c) Oxford Archaeology; free PDF in the OA Library; text quotes only"
+  },
+  "pollard_2017": {
+   "title": "The Uffington White Horse geoglyph as sun-horse",
+   "author": "Joshua Pollard, Antiquity 91 (2017), 406-420 (full text on Cambridge Core)",
+   "url": "https://www.cambridge.org/core/product/8AD3CDD85C6BE2A5C6E48FC3240DE33B",
+   "licence_note": "(c) Antiquity Publications; text quotes only"
+  },
+  "oa_uwh_web": {
+   "title": "Uffington White Horse (project page)",
+   "author": "Oxford Archaeology",
+   "url": "https://oxfordarchaeology.com/uffington-white-horse",
+   "licence_note": "(c) Oxford Archaeology; text quotes only"
+  }
+ },
+ "sites": {
+  "avebury": {
+   "name": "Avebury henge and stone circles",
+   "record": "Q661855",
+   "about": "A Late Neolithic henge in Wiltshire: a bank with an internal ditch, broken by four causewayed entrances (north, east, south, west), enclosing the largest stone circle in Britain (originally about 98, or 98-105, sarsens set just inside the ditch) and two inner circles, the Northern (about 27 stones, with the three-sided Cove at its centre) and the Southern (29 stones round the Obelisk, a stone about 5.5-6.4 m tall, with the small 'Z-feature' setting beside it, now argued to be part of a 30 m square). The earthwork seen today was built about 2580-2470 cal BC over a smaller first bank; the outer circle a little later; the Cove may be as early as 3000 cal BC. Villagers buried many stones from the early 14th century (the 'barber-surgeon' was crushed by one) and broke up most of the rest by fire and water in the late 17th-18th centuries; the Obelisk went after 1725. Alexander Keiller excavated the West Kennet Avenue (1934-35) and the NW (1937), SW (1938) and SE (1939) sectors, re-erected the buried and fallen stones he found in their own stone-holes (the western half of the outer circle and the Southern Inner Circle) and set concrete pillars on the holes of destroyed stones; the eastern half was never excavated and several stones still lie buried there (2003 survey). Today about 30 stones of the outer circle are visible and 16 more positions are marked by concrete pillars (Wessex Archaeology); of the Northern Inner Circle two stand and two lie; of the Cove two stones stand (straightened in 2003). The earthwork and its present heights come from the EA LiDAR; quotes below give the original depths.",
+   "reference_point": {
+    "what": "centre of a circle fitted to the OSM bank lines (man_made=embankment ways 35595727-35595959, 353231043); mean radius of the bank lines 199 m",
+    "lat": 51.428651,
+    "lon": -1.853769,
+    "ngr": "SU 10263 69970",
+    "derived": true,
+    "how": "least-squares circle through all nodes of the 11 OSM embankment ways (inner and outer bank edges), converted with bidb.osgrid.from_latlon; the henge is not a true circle, so this is a fitting centre, not a surveyed one",
+    "cites": []
+   },
+   "facts": {
+    "henge_diameter_m": {
+     "value": 347.4,
+     "unit": "m",
+     "note": "Wikipedia's diameter of the henge (not stated whether to the ditch or bank); Cleal and Pollard give 420 m for the earthwork overall (to the outer bank). Both kept; the LiDAR shows the real outline",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "The henge is not perfectly circular and measures 347.4 metres (380 yd) in diameter and over 1,000 metres (1,090 yd) in circumference."
+      }
+     ],
+     "alt": [
+      {
+       "value": 420,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "whs_ra",
+         "quote": "the Avebury henge is defined by a massive earthwork 420 m in diameter, broken by four entrances"
+        },
+        {
+         "source": "gps_2019",
+         "quote": "Its 420m diameter earthwork encloses the World’s largest stone circle"
+        }
+       ]
+      }
+     ]
+    },
+    "enclosed_area_ha": {
+     "value": 11.5,
+     "unit": "ha",
+     "note": "area enclosed by bank and ditch",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "The massive bank and ditch enclose an area of 28.5 acres (11.5 hectares)."
+      }
+     ]
+    },
+    "bank_height_now_m": {
+     "value": "4.2-5.4",
+     "unit": "m",
+     "note": "present height of the bank (EH); Wessex Archaeology: 5 m above modern ground",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "The bank is now some 14–18 feet (4.2–5.4 metres) high"
+      },
+      {
+       "source": "wessex_sheet",
+       "quote": "Even today the bank of the henge is 5m above the modern ground level"
+      }
+     ]
+    },
+    "bank_height_original_m": {
+     "value": 17,
+     "unit": "m",
+     "note": "EH: the bank top was once nearly 17 m above the ditch bottom (not above ground); Wikipedia (from Gray) gives a 9 m bank; Wessex: top of bank to ditch bottom over 16 m. Read as: ditch about 9 m deep + bank about 7-8 m high above ground (derived reading, not stated)",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "but was once nearly 55 feet (17 metres) above what was originally a 30-foot (9-metre) deep ditch"
+      },
+      {
+       "source": "wessex_sheet",
+       "quote": "The distance from the top of the bank to the bottom of the ditch was over 16m."
+      }
+     ],
+     "alt": [
+      {
+       "value": 9,
+       "unit": "m",
+       "note": "Wikipedia's bank height (from Gray's excavations)",
+       "cites": [
+        {
+         "source": "wp_avebury",
+         "quote": "producing a henge ditch with a 9-metre (30 ft) high bank around its perimeter"
+        }
+       ]
+      }
+     ]
+    },
+    "ditch_depth_m": {
+     "value": 9,
+     "unit": "m",
+     "note": "original depth of the ditch below ground. Wikipedia says Gray dug 11 m into the chalk; EH and Wessex give 9 m. Keep both",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "what was originally a 30-foot (9-metre) deep ditch"
+      },
+      {
+       "source": "wessex_sheet",
+       "quote": "the ditch as much as 9m deep"
+      }
+     ],
+     "alt": [
+      {
+       "value": 11,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_avebury",
+         "quote": "the Avebury builders had dug down 11 metres (36 ft) into the natural chalk using red deer antlers as their primary digging tool"
+        }
+       ]
+      }
+     ]
+    },
+    "ditch_base_width_m": {
+     "value": 4,
+     "unit": "m",
+     "note": "flat base as recorded by Gray (questioned since)",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "Gray recorded the base of the ditch as being 4 metres (13 ft) wide and flat"
+      }
+     ]
+    },
+    "first_bank": {
+     "value": "about 9 m wide, 2.5 m high",
+     "note": "the first (Avebury 1) bank, sealed under the present one; seen in the SE and SW quadrants",
+     "cites": [
+      {
+       "source": "wessex_sheet",
+       "quote": "The original bank was about 9m wide and 2.5m high."
+      },
+      {
+       "source": "whs_ra",
+       "quote": "the first (Avebury 1) being represented by a smaller bank observed in section in the south-east and south-west quadrants"
+      }
+     ]
+    },
+    "bank_front_wall": {
+     "value": "chalk-block wall 3 ft (0.9 m) high, 5 ft (1.5 m) thick",
+     "note": "a retaining wall of Lower Chalk blocks on the old turf at the front of the bank in the SW sector; the bank behind was heaped in cones, so its uneven top is original",
+     "cites": [
+      {
+       "source": "keiller_1939",
+       "quote": "was exposed a face of dry walling, three feet high, and five feet thick, composed exclusively of blocks of Lower Chalk"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "may thus in great part be explained as representing an original feature"
+      }
+     ]
+    },
+    "entrance_timber": {
+     "value": "timber revetments at the bank ends; possibly timber gateways",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "Where the bank ended at an entrance, timber revetments appear to have been used to keep the bank in place."
+      },
+      {
+       "source": "eh_avebury_desc",
+       "quote": "There may also have been timber entrances of some kind"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "sections of a discontinuous palisade trench were uncovered"
+      }
+     ]
+    },
+    "outer_circle_diameter_m": {
+     "value": 331.6,
+     "unit": "m",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "With a diameter of 331.6 metres (1,088 ft), this is one of Europe's largest stone circles, and Britain's largest."
+      }
+     ]
+    },
+    "outer_circle_stones_original": {
+     "value": 98,
+     "note": "Wikipedia 98; EH 98-105; Wessex 'about 100'",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "It is thought that there were originally 98 sarsen standing stones, some weighing in excess of 40 tons."
+      },
+      {
+       "source": "eh_avebury_desc",
+       "quote": "The main outer circle probably had between 98 and 105 stones arranged around the perimeter edge of the surrounding ditch."
+      }
+     ]
+    },
+    "outer_circle_stone_height_m": {
+     "value": "3.6-4.2",
+     "unit": "m",
+     "note": "the tallest at the north and south entrances",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "The stones varied in height from 3.6 metres (12 ft) to 4.2 metres (14 ft), as exemplified at the north and south entrances."
+      },
+      {
+       "source": "eh_avebury_desc",
+       "quote": "the tallest ones stood at the northern and southern entrances to the henge"
+      }
+     ]
+    },
+    "outer_circle_now": {
+     "value": "about 30 visible + 16 concrete pillars",
+     "note": "a teachers' sheet's round figures; the per-stone list is in Smith 1965 (not online)",
+     "cites": [
+      {
+       "source": "wessex_sheet",
+       "quote": "There were originally about 100 stones in this circle, of which 30 are still visible today. The positions of another 16 are marked with concrete pillars."
+      }
+     ]
+    },
+    "stones_standing_1939": {
+     "value": "9 standing, 10 fallen (of the outer circle, by 1939)",
+     "note": "Wikipedia's statement; ambiguous whether it means before Keiller's work began",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "While there are thought to have originally been 98 standing stones by 1939 only 9 remained standing, with another 10 fallen."
+      }
+     ]
+    },
+    "stone_spacing_m": {
+     "value": 11,
+     "unit": "m",
+     "note": "spacing of stones in the outer and inner circles (EH); Keiller's stone-holes A-B-C under the NW bank were also 36 ft apart",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "These were set at regular intervals, about 36 feet (11 metres) apart"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "At a distance of 36 feet to the northwest"
+      }
+     ]
+    },
+    "northern_circle_diameter_m": {
+     "value": 98,
+     "unit": "m",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "The northern inner ring is 98 metres (322 ft) in diameter"
+      }
+     ]
+    },
+    "northern_circle_stones": {
+     "value": 27,
+     "note": "probably 27 stones; two stand and two lie today",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "The northern circle probably consisted of 27 stones"
+      },
+      {
+       "source": "eh_avebury_desc",
+       "quote": "Most of the original stones are now missing, but two still stand and two more lie on the ground."
+      }
+     ]
+    },
+    "southern_circle_diameter_m": {
+     "value": 108,
+     "unit": "m",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "The southern inner ring was 108 metres (354 ft) in diameter before its destruction in the 18th century."
+      }
+     ]
+    },
+    "southern_circle_stones": {
+     "value": 29,
+     "note": "29 stones round the Obelisk; the eastern arc lies under the village",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "It was surrounded by 29 smaller stones, which formed the circle."
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "The remaining sections of its arc now lie beneath the village buildings."
+      }
+     ]
+    },
+    "southern_circle_stone_heights_m": {
+     "value": "2.74-4.15",
+     "unit": "m",
+     "note": "heights of the excavated (re-erected) stones of the Southern Inner Circle, 102, 104, 105-109; their stone-holes 1.70-2.50 m long",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "we have a range of 1.70-2.50m in maximum length, holding stones standing 2.74-4.15m in height"
+      }
+     ]
+    },
+    "obelisk_height_m": {
+     "value": 6.4,
+     "unit": "m",
+     "note": "EH 6.4 m (21 ft); Wikipedia 5.5 m (18 ft). Lost after 1725; a concrete post marks it",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "the great Obelisk, which was the largest stone in the circle at 21 feet (6.4 metres) high. This was removed sometime after 1725 and its former position is now represented by a concrete post."
+      }
+     ],
+     "alt": [
+      {
+       "value": 5.5,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_avebury",
+         "quote": "A single large monolith, 5.5 metres (18 ft) high, stood in the centre along with an alignment of smaller stones."
+        }
+       ]
+      }
+     ]
+    },
+    "cove_largest_stone": {
+     "value": "about 100 tonnes; at least 2.1 m below ground",
+     "note": "the western ('back') stone of the Cove, found in 2003 during stabilisation",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "The western stone was found to sit in a substantial stone-hole, and was estimated at the time of the work to weigh in the order of 100 tonnes"
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "one was found to extend at least 2.1 metres (7 ft) below ground"
+      }
+     ]
+    },
+    "stone_weights_t": {
+     "value": "15-100",
+     "unit": "t",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "the upright sarsens weighing anywhere between 15 and 100 tonnes"
+      }
+     ]
+    },
+    "stone_material": {
+     "value": "sarsen (silcrete sandstone) from the Marlborough Downs, unshaped; the smoother face set inwards",
+     "cites": [
+      {
+       "source": "wessex_sheet",
+       "quote": "Sarsen is a type of sandstone and is found all over the chalk downland of the Marlborough Downs."
+      },
+      {
+       "source": "wessex_sheet",
+       "quote": "They have not been shaped or modified and they vary in shape, size and colour."
+      },
+      {
+       "source": "aw_surviving",
+       "quote": "When the builders of the Avebury henge erected them they tended to set the least eroded faces toward the inside of the circles."
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "henge_bank",
+     "kind": "bank",
+     "state": "standing, eroded; cut by the four roads through the entrances and in places by later houses and the Great Barn area; the NW stretch flattened, probably when trees were planted",
+     "cites": [
+      {
+       "source": "keiller_1939",
+       "quote": "except in the northwest sector where the bank has been artificially flattened, probably during the planting of trees"
+      }
+     ]
+    },
+    {
+     "id": "henge_ditch",
+     "kind": "ditch",
+     "state": "partly silted; in the NW and SW sectors Keiller cleared modern rubbish from the ditch to the top of the natural silt and restored its edges, so its present profile there is his",
+     "cites": [
+      {
+       "source": "keiller_1939",
+       "quote": "The original line of the ditch could consequently be restored"
+      }
+     ]
+    },
+    {
+     "id": "entrances",
+     "kind": "entrances",
+     "count": 4,
+     "where": "north, east, south and west; causeways of solid chalk proved at the north (1937) and west (1938); the West Kennet Avenue leaves from the south(-east) entrance, the Beckhampton Avenue from the west",
+     "azimuths_deg_derived": {
+      "north": 330,
+      "east": 67,
+      "south": 168,
+      "west": 267,
+      "derived": true,
+      "how": "middles of the gaps between the ends of the OSM bank lines, seen from the fitted centre above; rough (plus or minus 5-10 degrees); check on the LiDAR"
+     },
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "Avebury consists of a huge circular bank and ditch with four causewayed entrances"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "thus demonstrating the existence of an original entrance on the west"
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "The West Kennet Avenue, an avenue of paired stones, leads from the southeastern entrance of the henge; and traces of a second, the Beckhampton Avenue, lead out from the western entrance."
+      },
+      {
+       "source": "eh_avebury_desc",
+       "quote": "The surfaces of the four causewayed entrances were reduced by scraping the top layer of chalk, so that the banks each side appeared even higher and more impressive."
+      }
+     ]
+    },
+    {
+     "id": "outer_circle_nw",
+     "kind": "stone arc",
+     "sector": "NW (Keiller 1937; his numbers anticlockwise from the stone west of the Swindon road)",
+     "state": "4 standing at the start (Keiller nos. 1, 3, 14, 15); 6 recovered from under a medieval field wall (5, 6, 7, 11, 12, 13) and re-erected, 5 and 6 broken and partly rebuilt from fragments; 16 and 17 dug out of burial pits 8 and 7.7 ft deep and re-erected; stone-holes of 2, 4, 8, 9, 10 found with burning pits (destroyed after Stukeley's day): concrete markers. Stone 1 slipped in its socket when first set up; stone 14 stands oblique to the arc from the original erection",
+     "cites": [
+      {
+       "source": "keiller_1939",
+       "quote": "were still standing, while portions of four more (6, 7, 12 and 13) could be distinguished covered by a medieval field-boundary"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "these were re-erected in their original stoneholes"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "Stones 16 and 17 were discovered buried in pits of the unusual depth of 8 feet and 7.7 feet respectively. These likewise were re-erected in their original positions."
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "in each case with an adjacent burning-pit indicating all too clearly the fate which the stones had suffered since Stukeley’s day"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "Stone I was found to have slipped in its socket seemingly during, or at any rate shortly after, erection"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "the stone had imbedded itself up against the northwest corner of the stone-hole"
+      }
+     ]
+    },
+    {
+     "id": "outer_circle_sw",
+     "kind": "stone arc",
+     "sector": "SW (Keiller 1938; numbered separately from the NW sector)",
+     "state": "before excavation one standing (no. 17, oblique: slipped during erection) and one fallen (11); 9, 13 and 18 buried near the surface; five more found buried deep; all these and 11 re-erected in their holes (stone 16, the 'Barber Stone', had the barber-surgeon's skeleton under it); stone 1 rebuilt from fragments found in a pond bed and forge; pits 2-6 had held buried stones later destroyed by fire; holes 7, 8, 10, 12, 14, 22 with burning pits",
+     "cites": [
+      {
+       "source": "keiller_1939",
+       "quote": "The field contained one standing stone (no. 17 on plan) and one fallen (11)"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "These, together with the fallen stone (11) were re-erected in their original positions."
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "Six more stone-holes (7, 8, 10, 12, 14, and 22) were identified with adjacent burning-pits."
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "two silver pennies of Edward I, minted at Canterbury in 1307"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "The total length of the Outer Circle excavated in 1938 was 723 feet, as compared with 567 feet in the northwest sector in 1937."
+      },
+      {
+       "source": "aw_surviving",
+       "quote": "When he first saw the monument only one stone in the SW quadrant was standing."
+      }
+     ]
+    },
+    {
+     "id": "outer_circle_east",
+     "kind": "stone arcs",
+     "sector": "NE and SE",
+     "state": "never excavated by Keiller (war, 1939; money ran out 1941); a few stones stand, including the great pair at the south entrance (the larger is the 'Devil's Chair'); several buried stones known from probing in 1881 and a 2003 National Trust geophysical survey (at least 15 megaliths), left in the ground",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "a geophysical survey of the southeast and northeast quadrants of the circle by the National Trust revealed at least 15 of the megaliths lying buried"
+      },
+      {
+       "source": "aw_marmalade",
+       "quote": "reported as 16 in the outer circle and 2 in the northern inner circle"
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "The largest stone at the southern entrance became known as the Devil's Chair"
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "The two large stones at the southern entrance had an unusually smooth surface, likely due to having stone axes polished on them."
+      },
+      {
+       "source": "whs_ra",
+       "quote": "He gave up the grand design with almost half of it incomplete"
+      }
+     ]
+    },
+    {
+     "id": "northern_inner_circle",
+     "kind": "stone circle",
+     "state": "two standing, two fallen; the rest missing",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "Most of the original stones are now missing, but two still stand and two more lie on the ground."
+      }
+     ]
+    },
+    {
+     "id": "cove",
+     "kind": "cove",
+     "where": "centre of the Northern Inner Circle",
+     "state": "originally three large slabs on three sides of a square; two stand (the western 'back' stone, about 100 t, and the southern side stone); the northern stone is lost (its burning pit was found in 1865). Stabilised (straightened) in 2003",
+     "opening": "EH: open to the north; Wikipedia: entrance facing north-east (both kept)",
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "This once consisted of three rectangular shaped sarsen stones, arranged around three sides of a square with the opening to the north."
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "A cove of three stones stood in the middle, its entrance facing northeast."
+      },
+      {
+       "source": "whs_ra",
+       "quote": "They recognised the burning pit for the northern stone of the Cove"
+      },
+      {
+       "source": "whs_ra",
+       "quote": "in advance of the stabilisation of the two remaining stones"
+      }
+     ]
+    },
+    {
+     "id": "southern_inner_circle",
+     "kind": "stone circle",
+     "state": "the western arc re-erected by Keiller in 1939 (stones 102, 104, 105-109 among the excavated ones); the eastern arc under the village; missing stones marked by concrete pillars",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "The megalithic settings of the SIC visible today are a product of a programme of excavation and reconstruction carried out by Alexander Keiller in 1939"
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "Keiller directed his team to find and re-erect fallen or buried stones, and to build concrete 'pylons' in the place of missing stones"
+      }
+     ]
+    },
+    {
+     "id": "obelisk",
+     "kind": "monolith (lost)",
+     "state": "fallen by Stukeley's time, broken up after 1725; a concrete post marks it",
+     "height_m": 6.4,
+     "cites": [
+      {
+       "source": "eh_avebury_desc",
+       "quote": "its former position is now represented by a concrete post"
+      },
+      {
+       "source": "gps_2019",
+       "quote": "The Obelisk had fallen and much of the complexity hinted at by Aubrey had gone"
+      }
+     ]
+    },
+    {
+     "id": "z_feature",
+     "kind": "stone setting",
+     "where": "west of the Obelisk, in the Southern Inner Circle",
+     "state": "a 30.8 m line of stone-holes found by Keiller in 1939; he set small reddish sarsens (1.3-2.4 m) from burial pits into holes that were too big for them, raised 0.15-0.40 m above the hole bottoms; 6 small stones survive. Gillings, Pollard and Strutt (2017 GPR) argue it is the west side of a 30 x 30 m square of larger and smaller stones round the Obelisk; stone D is a separate stone-hole",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "During the course of this work Keiller discovered a wholly unexpected 30.8m-long line of former stone holes to the west of the Obelisk."
+      },
+      {
+       "source": "gps_2019",
+       "quote": "maximum dimensions of 1.3 – 2.4m"
+      },
+      {
+       "source": "gps_2019",
+       "quote": "his decision to raise these megaliths above the bases of ‘their’ stone-holes (by between 0.15 and 0.40m)"
+      },
+      {
+       "source": "gps_2019",
+       "quote": "Taken together, they form a 30x30m square megalithic setting aligned upon the axes of the house.."
+      },
+      {
+       "source": "aw_surviving",
+       "quote": "Of the small stones belonging to the \"Z feature\"six have survived."
+      }
+     ]
+    },
+    {
+     "id": "early_house",
+     "kind": "timber building (buried, argued)",
+     "where": "just north of the Obelisk, at the geometric centre of the Southern Inner Circle",
+     "size_m": "about 6.9 x 6.8",
+     "state": "gullies and post-holes dug by Keiller; argued by Gillings et al. to be an Early Neolithic house (not visible; for an optional 'earliest' view only)",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "structure c.6.9m wide and c.6.8m long"
+      }
+     ]
+    },
+    {
+     "id": "early_stone_holes_ABC",
+     "kind": "stone-holes (lost)",
+     "where": "NW sector, just inside the outer circle by the north entrance",
+     "state": "three stone-holes 36 ft apart, one cut by the ditch, so older than bank, ditch and outer circle; Keiller read them as a third early setting (his 'Avebury I')",
+     "cites": [
+      {
+       "source": "keiller_1939",
+       "quote": "the northeast limit of the ditch had actually cut through the socket"
+      },
+      {
+       "source": "keiller_1939",
+       "quote": "A third stone-hole (' C ' on plan) was discovered 36 feet to the northnorthwest of B"
+      }
+     ]
+    },
+    {
+     "id": "west_kennet_avenue",
+     "kind": "avenue (brief)",
+     "length_m": 2500,
+     "width_m": 25,
+     "state": "about 100 pairs of stones originally from the south(-east) entrance to the Sanctuary; northern third excavated and restored by Keiller and Piggott in 1934-35 (3 standing, 9 fallen and 13 buried stones re-erected); now 27 upright stones and 37 concrete pillars. Numbered by Isobel Smith from 1A/1B at Avebury",
+     "cites": [
+      {
+       "source": "wp_wka",
+       "quote": "It was originally an avenue of two parallel lines of stones 25m wide and 2.5km in length, which ran between the Neolithic sites of Avebury and The Sanctuary."
+      },
+      {
+       "source": "wp_wka",
+       "quote": "There are currently 27 upright stones and 37 concrete pillars marking original stone locations."
+      },
+      {
+       "source": "whs_ra",
+       "quote": "only three of its megaliths were still standing, but Keiller put up nine more that had fallen and 13 which had been buried, and set concrete markers on the sites of those completely lost"
+      },
+      {
+       "source": "wp_wka",
+       "quote": "starting with Stone 1A closest to Avebury, with paired A and B stones extending out towards the Sanctuary"
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "none convincing",
+     "claim": "Ruggles: the four entrances, skewed from the cardinal directions, have no demonstrable astronomical connection; Burl's suggestion that the Cove faces the most northerly moonrise is tentative at best",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "the directions of the four entrances, significantly skewed from the cardinal directions, have no demonstrable astronomical connection"
+      },
+      {
+       "source": "whs_ra",
+       "quote": "Burl (1979, 158) pointed out that the Cove is roughly aligned upon the most northerly rising position of the moon, but the few other known examples of coves are widely spread in orientation and the lunar association is tentative at best"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "pre-henge occupation and a possible Early Neolithic house",
+     "date": "4th millennium BC",
+     "what": "occupation traces; the argued house in the later Southern Inner Circle",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "By analogy with other structures the putative house should fall in the second quarter of the 4th millennium BC."
+      }
+     ]
+    },
+    {
+     "name": "Cove (and perhaps the Obelisk and square)",
+     "date": "possibly from about 3000 cal BC",
+     "what": "single OSL date for the Cove's western stone; large error",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "indicates it could have been erected as early as 3000 cal BC"
+      }
+     ]
+    },
+    {
+     "name": "first bank (Avebury 1)",
+     "date": "undated; Wessex: begun soon after 3000 BC",
+     "what": "a smaller bank under the present one",
+     "cites": [
+      {
+       "source": "wessex_sheet",
+       "quote": "Recent work suggests that the first bank was begun soon after 3000 BC"
+      }
+     ]
+    },
+    {
+     "name": "present earthwork (Avebury 2)",
+     "date": "2580-2470 cal BC (95%), probably 2530-2485 cal BC",
+     "what": "the great ditch and bank",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "the construction date of the present earthwork is estimated as 2580–2470 cal BC (95% probability), probably 2530–2485 cal BC (68% probability"
+      }
+     ]
+    },
+    {
+     "name": "outer circle",
+     "date": "a little after the earthwork; Wikipedia gives 2870-2200 BC for some settings",
+     "what": "about 98 sarsens inside the ditch",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "and the massive Outer Circle of sarsen stones a little later"
+      },
+      {
+       "source": "wp_avebury",
+       "quote": "Radiocarbon dating of some stone settings indicate a construction date of around 2870–2200 BC."
+      }
+     ]
+    },
+    {
+     "name": "avenues",
+     "date": "c. 2600-2000 cal BC, probably the third quarter of the 3rd millennium",
+     "what": "West Kennet and Beckhampton Avenues added",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "to c. 2600–2000 cal BC, with a range in the third quarter of the 3rd millennium cal BC being favoured"
+      }
+     ]
+    },
+    {
+     "name": "Burl's sequence (alternative)",
+     "date": "3000-2400 BC",
+     "what": "Cove 3000, inner circle 2900, outer circle and henge 2600, avenues 2400 BC",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "Aubrey Burl suggests dates of 3000 BC for the central cove, 2900 BC for the inner stone circle, 2600 BC for the outer circle and henge, and around 2400 BC for the avenues."
+      }
+     ]
+    },
+    {
+     "name": "English Heritage's overall span",
+     "date": "about 2850-2200 BC",
+     "what": "built and altered over many centuries",
+     "cites": [
+      {
+       "source": "eh_avebury_hist",
+       "quote": "It was built and altered over many centuries from about 2850 BC until about 2200 BC"
+      }
+     ]
+    },
+    {
+     "name": "stone burial",
+     "date": "early 14th century AD",
+     "what": "stones toppled into pits beside their holes",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "At some point in the early 14th century, villagers began to demolish the monument by pulling down the large standing stones and burying them in ready-dug pits at the side"
+      }
+     ]
+    },
+    {
+     "name": "stone breaking",
+     "date": "late 17th-18th centuries",
+     "what": "most stones broken up by fire and cold water for building",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "This was achieved by lighting a fire to heat the sarsen, then pouring cold water on it to create weaknesses in the rock"
+      }
+     ]
+    },
+    {
+     "name": "Keiller's restoration",
+     "date": "1934-1939",
+     "what": "West Kennet Avenue 1934-35, NW sector 1937, SW 1938, SE 1939 (Southern Inner Circle); stones re-erected, concrete markers set",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "Alexander Keiller financed and led excavations on West Kennet Avenue in 1934 and 1935; the North West sector of Avebury in 1937; the South West sector in 1938, and the South East sector in 1939."
+      }
+     ]
+    },
+    {
+     "name": "Cove stabilised",
+     "date": "2003",
+     "what": "the two Cove stones straightened after excavation",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "In April 2003, during preparations to straighten some of the stones"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Henge diameter: 347.4 m (Wikipedia) vs a 420 m earthwork (Cleal and Pollard; Gillings et al.); probably measured to different edges. Use the LiDAR.",
+     "cites": []
+    },
+    {
+     "claim": "Obelisk height: 6.4 m (EH) vs 5.5 m (Wikipedia).",
+     "cites": []
+    },
+    {
+     "claim": "The Cove's opening: north (EH) vs north-east (Wikipedia).",
+     "cites": []
+    },
+    {
+     "claim": "The Z-feature: Keiller's small stones re-set in oversized holes; Gillings, Pollard and Strutt argue the holes held large stones and the setting was a 30 m square, centred on an Early Neolithic house",
+     "cites": [
+      {
+       "source": "gps_2019",
+       "quote": "it is evident that the stone-holes excavated by Keiller were far too large for the z-feature stones he re-erected into them"
+      }
+     ]
+    },
+    {
+     "claim": "Ditch depth: 9 m (EH, Wessex) vs 11 m dug into the chalk (Wikipedia, from Gray); Gray's flat 4 m base questioned",
+     "cites": [
+      {
+       "source": "wp_avebury",
+       "quote": "later archaeologists have questioned his use of untrained labour to excavate the ditch and suggested that its form may have been different"
+      }
+     ]
+    }
+   ]
+  },
+  "silbury": {
+   "name": "Silbury Hill",
+   "record": "Q225896",
+   "about": "The largest prehistoric artificial mound in Europe, 1.6 km south of Avebury: a chalk mound about 30-31 m high (Wikipedia: 39.3 m) and 160-167 m across at the base, with a flat top about 30 m across and a step or terrace a few metres below it, built in many stages over 50-150 years from about 2490-2450 cal BC: a small gravel mound, a stake ring 16 m across filled with dark soils and turf, a 35 m mound about 5 m high, then a 100 m ditched enclosure, then the chalk mound itself quarried from a great ditch round it, which widens on the west into a rectangular 'tank' that floods in winter. Its base has straight construction lines (up to nine). The summit was probably flattened in the early medieval period for a defensive structure. A Roman settlement lay round its foot and the Roman road (A4) swerves round it. Shafts and tunnels were dug in 1776 (Drax, from the top), 1849 (Merewether) and 1968-70 (Atkinson); a crater opened on the summit in 2000 and in 2007-08 English Heritage refilled all known voids with 1,465 tonnes of chalk. Nothing stands on it; the shape now is the LiDAR's. Originally the chalk was white.",
+   "reference_point": {
+    "what": "centroid of the OSM outline of the mound (way 377466789, name=Silbury Hill)",
+    "lat": 51.4157433,
+    "lon": -1.8573854,
+    "ngr": "SU 10014 68534",
+    "derived": true,
+    "how": "Overpass 'out center' of the way; NGR from bidb.osgrid.from_latlon. The OSM summit node 11218032230 (ele 167) is near it",
+    "cites": []
+   },
+   "facts": {
+    "height_m": {
+     "value": 30,
+     "unit": "m",
+     "note": "English Heritage: 30 m / 'over 30 metres'; Wikipedia: 39.3 m. The two differ by 9 m; Wikipedia's figure may include the ground rise or is in error. The LiDAR will settle it",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "Silbury Hill stands 30 metres high and 160 metres wide"
+      },
+      {
+       "source": "eh_silbury_desc",
+       "quote": "Silbury Hill stands over 30 metres high and 160 metres wide."
+      }
+     ],
+     "alt": [
+      {
+       "value": 39.3,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "wp_silbury",
+         "quote": "At 39.3 metres (129 ft) high, the hill is the tallest and second largest prehistoric man-made mound in Europe"
+        }
+       ]
+      }
+     ]
+    },
+    "base_diameter_m": {
+     "value": 167,
+     "unit": "m",
+     "note": "Wikipedia 167 m; EH 160 m wide",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "The base of the hill is circular and 167 metres (548 ft) in diameter."
+      }
+     ],
+     "alt": [
+      {
+       "value": 160,
+       "unit": "m",
+       "cites": [
+        {
+         "source": "eh_silbury_hist",
+         "quote": "Silbury Hill stands 30 metres high and 160 metres wide"
+        }
+       ]
+      }
+     ]
+    },
+    "base_shape": {
+     "value": "not truly circular: straight construction lines at the bottom, possibly nine",
+     "note": "Wikipedia calls the base circular and says the first structures were perfectly circular",
+     "cites": [
+      {
+       "source": "eh_silbury_desc",
+       "quote": "It is not entirely circular, but has a series of straight construction lines at the bottom, possibly as many as nine."
+      }
+     ]
+    },
+    "summit_diameter_m": {
+     "value": 30,
+     "unit": "m",
+     "note": "flat top; its original shape unknown (perhaps rounded, flattened later)",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "The summit is flat-topped and 30 metres (98 ft) in diameter."
+      },
+      {
+       "source": "eh_silbury_desc",
+       "quote": "The original shape of the summit is unknown: it may have been rounded, and the present flat top may the result of later modifications."
+      }
+     ]
+    },
+    "summit_centre": {
+     "value": "within a metre of the centre of the cone",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "the centre of the flat top and the centre of the cone that describes the hill lie within a metre of one another"
+      }
+     ]
+    },
+    "terrace": {
+     "value": "a step round the summit, several metres below it",
+     "note": "height of the step not quoted; read from the LiDAR",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "The step surrounding the summit dates from this phase of construction"
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "focusing on the step several metres below the summit"
+      }
+     ]
+    },
+    "volume_m3": {
+     "value": 248000,
+     "unit": "m3",
+     "note": "Wikipedia; EH gives half a million tonnes of material",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "to deposit and shape 248,000 cubic metres (324,000 yd3) of earth and fill"
+      },
+      {
+       "source": "eh_silbury_hist",
+       "quote": "Half a million tonnes of material, mostly chalk, were used to create it."
+      }
+     ]
+    },
+    "area_ha": {
+     "value": 2,
+     "unit": "ha",
+     "note": "covers about 2 ha (the SSSI, the whole hill, 2.3 ha)",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "covers about 2 hectares (5 acres)"
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "in all 2.3 hectares (5.7 acres)"
+      }
+     ]
+    },
+    "labour": {
+     "value": "4 million man-hours (EH) vs 18 million (Wikipedia)",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "its construction is estimated to have involved about 4 million man hours of work"
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "Archaeologists calculate that it took 18 million man-hours"
+      }
+     ]
+    },
+    "ditch": {
+     "value": "wide ditch all round, extended on the west into a 'tank' that floods in winter; the old Neolithic ground surface is a slight change of slope several metres above the present ditch floor",
+     "cites": [
+      {
+       "source": "eh_silbury_desc",
+       "quote": "The hill is surrounded by a wide ditch which extends in the west to form a ‘tank’ that is often flooded in winter."
+      },
+      {
+       "source": "eh_silbury_desc",
+       "quote": "the original later Neolithic ground surface is visible as a slight change of slope, now standing several metres above the present base of the ditch"
+      },
+      {
+       "source": "eh_silbury_hist",
+       "quote": "A second enormous water-filled ditch and rectangular extension were dug beyond it"
+      }
+     ]
+    },
+    "ditch_depth_m": {
+     "value": "4.6, 6.4 near the hill",
+     "unit": "m",
+     "note": "Pass's 1886-7 pits: chalk dug out 4.6 m below the present surface, 6.4 m close to the hill; upper 2 m of the fill alluvium (post-Roman); geophysics found the chalk at 3.5-4 m away from the hill. The ditch is deeper and narrower on the south, squeezed by the A4 causeway",
+     "cites": [
+      {
+       "source": "linford_2009",
+       "quote": "Pass found that within the ditches the natural chalk had been dug out to a depth of 4.6m below the current ground surface in most places but, close to the hill base, he found this depth increased to 6.4m."
+      },
+      {
+       "source": "linford_2009",
+       "quote": "indicating that the upper 2m of the Silbury Hill ditch fill consists of a relatively homogenous layer of alluvial silts"
+      },
+      {
+       "source": "linford_2009",
+       "quote": "where it appears to be much deeper and narrower than elsewhere around the hill as it is constricted to run through the gap between the hill and the raised causeway constructed to carry the modern A4"
+      }
+     ]
+    },
+    "material": {
+     "value": "chalk and clay over a gravel core; originally white",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "The mound is composed mainly of chalk and clay excavated from the surrounding area"
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "Silbury Hill was originally entirely white since it had a chalk (limestone) exterior"
+      }
+     ]
+    },
+    "conservation_fill_t": {
+     "value": 1465,
+     "unit": "t",
+     "note": "chalk used in 2007-08 to fill the tunnels, shaft and summit crater",
+     "cites": [
+      {
+       "source": "eh_silbury_res",
+       "quote": "All the known voids inside the hill, and the crater on the summit, were then refilled with chalk, using an enormous 1,465 tonnes of material."
+      }
+     ]
+    },
+    "summit_crater_2000": {
+     "value": "7.2 x 5.5 m, 3.8 m deep (December 2000); hole first opened 29 April 2000",
+     "cites": [
+      {
+       "source": "ads_silbury_2001",
+       "quote": "On April 29th 2000 an approximately rectangular hole c 2.25m long and c 10m deep appeared at the top of Silbury Hill."
+      },
+      {
+       "source": "ads_silbury_2001",
+       "quote": "leaving a crater on the summit 7.2m by 5.5m wide and 3.8m deep"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "core_mound",
+     "kind": "buried mound",
+     "size": "gravel mound under 1 m high; stake ring 16 m across; then a mound 35 m across and about 5 m high",
+     "state": "buried inside",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "Then a small mound of gravel a little less than 1 metre high was built"
+      },
+      {
+       "source": "eh_silbury_hist",
+       "quote": "a ring of stakes was set out to define a larger area, 16 metres in diameter"
+      },
+      {
+       "source": "eh_silbury_hist",
+       "quote": "creating a mound 35 metres in diameter and about 5 metres high"
+      }
+     ]
+    },
+    {
+     "id": "inner_ditch",
+     "kind": "buried ditch",
+     "size": "enclosing ditch with an internal bank, 100 m across; backfilled and recut",
+     "state": "buried under the mound",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "A massive enclosing ditch with an internal bank was then dug, 100 metres in diameter."
+      }
+     ]
+    },
+    {
+     "id": "mound",
+     "kind": "chalk mound",
+     "state": "standing; flat top; step below summit; tunnels refilled 2007-08"
+    },
+    {
+     "id": "outer_ditch_and_tank",
+     "kind": "ditch",
+     "state": "silted with alluvium; the western extension ('tank') floods in winter"
+    },
+    {
+     "id": "drax_shaft",
+     "kind": "shaft (refilled)",
+     "date": "1776",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "who directed a group of miners to dig a vertical shaft from the summit to the centre of the hill"
+      }
+     ]
+    },
+    {
+     "id": "tunnels",
+     "kind": "tunnels (refilled)",
+     "date": "1849 and 1968-70",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "in 1849, John Merewether, the dean of Hereford, oversaw the excavation of a horizontal tunnel into hill"
+      },
+      {
+       "source": "eh_silbury_hist",
+       "quote": "Atkinson excavated another tunnel on a similar line to Merewether’s and identified three phases of construction"
+      }
+     ]
+    },
+    {
+     "id": "roman_settlement",
+     "kind": "settlement (buried)",
+     "state": "known from geophysics round the foot and south of the A4",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "the Romans chose to build a road and an extensive settlement around the foot of the mound"
+      }
+     ]
+    },
+    {
+     "id": "roman_road",
+     "kind": "road",
+     "state": "the A4 follows it, swerving round the base",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "making a pronounced swerve to avoid the base of the hill"
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "none",
+     "claim": "Silbury as a sky-viewing platform is argued against (low-lying, no convincing alignment); Devereux's sightlines concern the step and the horizon, not the sky",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "It has long been proposed that Silbury Hill was used as a sky-viewing platform, but its low-lying situation and the lack of any convincing alignment evidence argue strongly against this"
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "the step aligns with hills on the horizon behind Silbury, or with the hills in front of Silbury, leaving only the topmost part visible"
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "start of construction",
+     "date": "2490-2450 cal BC, built over 50-150 years",
+     "what": "Leary et al. model",
+     "cites": [
+      {
+       "source": "whs_ra",
+       "quote": "a start at 2490–2450 cal BC, and a time span of 50–150 years for construction"
+      }
+     ]
+    },
+    {
+     "name": "EH summary",
+     "date": "about 2470-2350 BC",
+     "what": "built over a short period",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "Probably built over a short period between about 2470 and 2350 BC"
+      }
+     ]
+    },
+    {
+     "name": "Wikipedia summary",
+     "date": "c. 2400-2300 BC",
+     "what": "several stages",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "The hill was constructed in several stages between c. 2400 and 2300 BC"
+      }
+     ]
+    },
+    {
+     "name": "begun in August",
+     "date": "season",
+     "what": "winged ants in the primary turf",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "including the remains of winged ants which indicate that Silbury was begun in an August"
+      }
+     ]
+    },
+    {
+     "name": "Roman road and settlement",
+     "date": "Roman",
+     "what": "road swerves round the base; settlement at the foot",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "This was conclusive proof that the hill was there before the road"
+      }
+     ]
+    },
+    {
+     "name": "summit flattened",
+     "date": "early medieval",
+     "what": "perhaps for a defensive structure",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "In the early medieval period, the top of the hill was probably flattened and some sort of defensive structure may have been placed on the summit."
+      }
+     ]
+    },
+    {
+     "name": "conservation",
+     "date": "May 2007 - early 2008",
+     "what": "Skanska for English Heritage; tunnels and shafts filled with chalk; the 1968 tunnel recorded",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "In May 2007, contractors Skanska, under the overall direction of English Heritage, began a major programme of stabilisation, filling the tunnels and shafts from previous investigations with hundreds of tonnes of chalk."
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "The work finished in early 2008."
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Height: 30 m (EH) vs 39.3 m (Wikipedia). Base: 160 m (EH) vs 167 m (Wikipedia).",
+     "cites": []
+    },
+    {
+     "claim": "When the summit collapsed: 29 April 2000 (EH project report; EH history page 'May 2000') vs 'May 2002' in Wikipedia, which looks wrong.",
+     "cites": [
+      {
+       "source": "eh_silbury_hist",
+       "quote": "In May 2000 the full consequence of this was made clear when a 14-metre deep crater opened on the summit."
+      },
+      {
+       "source": "wp_silbury",
+       "quote": "After heavy rains in May 2002, a collapse of the 1776 excavation shaft caused a hole to form in the top of the hill."
+      }
+     ]
+    },
+    {
+     "claim": "The step: a slippage precaution, or the remains of a spiral path used in building and later as a processional route",
+     "cites": [
+      {
+       "source": "wp_silbury",
+       "quote": "either as a precaution against slippage, or as the remnants of a spiral path ascending from the base"
+      }
+     ]
+    }
+   ]
+  },
+  "maiden_castle": {
+   "name": "Maiden Castle, Dorset",
+   "record": "Q1232816",
+   "about": "One of the largest Iron Age hillforts in Europe, on a saddle-backed chalk hill 2.6 km south-west of Dorchester with two knolls. Before the fort: an Early Neolithic causewayed enclosure of two interrupted ditches on the eastern knoll (about 3800-3400 BC), then a bank barrow 546 m (1,790 ft) long and 18 m (60 ft) wide between flanking ditches, nearly ploughed out; Bronze Age round barrows. The first hillfort (about 600 BC) followed the line of the Neolithic enclosure: a single rampart and V-shaped ditch round 6.4 ha (16 acres) of the eastern knoll, with a north-west entrance and a double east entrance. About 450 BC it was extended west over Hog Hill to 19 ha (47 acres) and given more ramparts: four ramparts and three ditches on the south, three ramparts on the steeper north; inner rampart about 2 km round; complex outworks at the eastern and western double entrances; at the west end of the old fort its western rampart and gate survive as earthworks inside. Inner rampart timber-revetted early, later chalk dump with a limestone wall. Wheeler excavated in 1934-37 (the 'war cemetery' at the eastern entrance); Sharples in 1985-86. A Romano-British temple (a cella with an ambulatory, east door), a priest's house and a round shrine were built about AD 370 in the eastern half, with a stone gateway in the east entrance. A square dew-pond of the 1860s is in the middle. The earthworks come from the EA LiDAR; quotes give the original heights where they differ.",
+   "reference_point": {
+    "what": "Wikipedia's grid reference for the site",
+    "ngr": "SY 66938 88480",
+    "lat": 50.695064,
+    "lon": -2.469504,
+    "derived": true,
+    "how": "SY66938848 converted with bidb.osgrid.to_latlon (centre of the 10 m square); the OSM hillfort way 146411874 centre is 50.69479, -2.47005",
+    "cites": [
+     {
+      "source": "wp_maiden",
+      "quote": "at grid reference SY66938848"
+     }
+    ]
+   },
+   "facts": {
+    "area_ha": {
+     "value": 19,
+     "unit": "ha",
+     "note": "area enclosed after the Middle Iron Age extension (Wikipedia); Wheeler: 45 acres internal in the summary, 46 acres in the text (18.2-18.6 ha); EH: bigger than 50 football pitches",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "In about 450 BC, Maiden Castle was expanded from 6.4 to 19 ha (16 to 47 acres)."
+      }
+     ],
+     "alt": [
+      {
+       "value": 46,
+       "unit": "acres",
+       "cites": [
+        {
+         "source": "wheeler_1943",
+         "quote": "to enclose a total area of 46 acres (almost thrice its original size)"
+        }
+       ]
+      }
+     ]
+    },
+    "first_fort_area_ha": {
+     "value": 6.4,
+     "unit": "ha",
+     "note": "Wikipedia 6.4 ha (16 acres); Wheeler 15 acres",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "the first hill fort at Maiden Castle was a 6.4 ha (16-acre) area surrounded by a single ditch"
+      }
+     ]
+    },
+    "inner_rampart_length_km": {
+     "value": 2,
+     "unit": "km",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "The inner rampart was now 1¼ miles (2km) long"
+      }
+     ]
+    },
+    "ramparts": {
+     "value": "4 ramparts and 3 ditches on the south; 3 ramparts on the north",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "On the south of the fort, four ramparts and three ditches were added, but because of the steepness of the northern slope of the hill, the fourth rampart did not extend all the way round, and only three ramparts were built on the northern side."
+      }
+     ]
+    },
+    "first_fort_defences": {
+     "value": "rampart and V-shaped ditch 8.4 m high; rampart probably timber-faced at the entrances; ditch later deepened by 1.5-7 m",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "The defences were 8.4 m (28 ft) high and consisted of the V-shaped ditch and a rampart."
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "the ditch was deepened by 1.5 to 7 m (4.9 to 23.0 ft)"
+      }
+     ]
+    },
+    "first_rampart_wheeler": {
+     "value": "wall-and-berm: earth and chalk wall 12 ft (3.7 m) wide, timber front and back on 10-in. posts about 5 ft apart; survives to 8 ft, originally 10-12 ft high; berm 6-10 ft; ditch 50 ft wide, 20 ft deep",
+     "cites": [
+      {
+       "source": "wheeler_1943",
+       "quote": "rampart was a wall of earth and chalk 12 ft. wide, retained front and back by timbering"
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "The original rampart survives to a maximum height of 8 ft."
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "In front, a berm or platform 6-10 ft. wide separated rampart and ditch."
+      }
+     ]
+    },
+    "main_rampart_height": {
+     "value": "rampart 2.7 m at the extension, raised to 3.5 m; Wheeler: south rampart (site D) about 15 ft now, perhaps 20 ft originally; main ditch bottom 50 ft below the rampart summit on the west (site E)",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "The existing rampart was heightened to 3.5 m (11 ft), and more ramparts and ditches were added."
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "Excavation revealed the pointed bottom of the ditch at a depth of 50 ft. vertically below the present summit of the rampart, 30 ft. below the original ground-level"
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "the present height of the rampart on site D is about 1 5 ft."
+      }
+     ]
+    },
+    "rampart_top_wall": {
+     "value": "palisade of oak on the inner rampart (EH); later a limestone wall facing the inner side of the crest, 4-6 ft high",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "the builders would have needed hundreds of oak trees to construct the palisade that topped the chalk bank"
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "the facing of the inner side of the crest with a wall from 4 to 6 ft. in height"
+      }
+     ]
+    },
+    "hill_height": {
+     "value": "132 m above sea level (eastern knoll), about 40 m above the surrounding land; Hog Hill 1 m higher",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "rising 132 m (433 ft) above sea level"
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "The hill projects about 40 m (131 ft) above the surrounding countryside"
+      }
+     ]
+    },
+    "causewayed_enclosure": {
+     "value": "two parallel interrupted ditches round about a dozen acres on the eastern knoll; bank only 17 cm high",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "it was an oval area enclosed by two ditches"
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "the bank being only 17 cm (6.7 in) high"
+      }
+     ]
+    },
+    "bank_barrow": {
+     "value": "546 m long; Wheeler: 60 ft wide, 1,790 ft long, at least 5 ft high; flanking ditches 12-15 ft broad, 6 ft deep, 19.5 m apart",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "a mound that stretched for 546 metres along the spine of the hill"
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "mound, 60 ft. wide and no less than 1,790 ft. in length"
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "flanked on both sides (north and south) by a flat-bottomed ditch, 12-15 ft. broad and some 6 ft. deep"
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "the parallel ditches were 19.5 m (64 ft) apart"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "east_entrance",
+     "kind": "entrance",
+     "state": "double gateway with two portals from the first fort; outworks (hornwork, barbican) added; late Iron Age cemetery among the outworks; a stone gateway built about AD 370",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "The site could be accessed by an entrance in the northwest and a double entrance in the east."
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "The double entrance is unique in hill forts in the British Isles."
+      },
+      {
+       "source": "eh_maiden",
+       "quote": "A new stone gateway was built across the eastern entrance"
+      },
+      {
+       "source": "wheeler_1943",
+       "quote": "a hoard of 22,260"
+      }
+     ]
+    },
+    {
+     "id": "east_gates",
+     "kind": "gates (lost)",
+     "state": "the gates hung in line with the front of the rampart crest; post-holes in each portal; no central post",
+     "cites": [
+      {
+       "source": "wheeler_1943",
+       "quote": "The actual gates had been swung in line with the front of the crest of the rampart."
+      }
+     ]
+    },
+    {
+     "id": "west_entrance",
+     "kind": "entrance",
+     "state": "double entrance built when the fort was extended west, modelled on the eastern; hornwork outside",
+     "cites": [
+      {
+       "source": "wheeler_1943",
+       "quote": "At the western end ef the new work a double entrance was built"
+      }
+     ]
+    },
+    {
+     "id": "early_fort_west_rampart",
+     "kind": "rampart (inside the fort)",
+     "state": "the first fort's western rampart and gateway still visible, heavily disturbed",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "The heavily disturbed remains of the early fort’s western rampart and gateway can still be seen."
+      }
+     ]
+    },
+    {
+     "id": "temple",
+     "kind": "Romano-Celtic temple (footings)",
+     "size": "cella 16 ft (4.9 m) square inside (EH: 5 m square; Wikipedia: 6 m with a 3 m passage), ambulatory, east door",
+     "date": "after AD 367, about AD 370",
+     "cites": [
+      {
+       "source": "wheeler_1943",
+       "quote": "It consisted of a cella 16 ft. square internally, within a veranda which had walls at least 3 ft. high"
+      },
+      {
+       "source": "eh_maiden",
+       "quote": "It consisted of a cella , a central room 5 metres square, with an east-facing door, surrounded by a covered walkway."
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "A central room, measuring 6 m (20 ft) square, was surrounded by a 3 m (9.8 ft) passageway"
+      }
+     ]
+    },
+    {
+     "id": "priests_house",
+     "kind": "building (footings)",
+     "size": "7.9 x 5.5 m, two rooms",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "a rectangular building 7.9 m × 5.5 m (26 ft × 18 ft) with two rooms that may have been a house for a priest"
+      }
+     ]
+    },
+    {
+     "id": "round_shrine",
+     "kind": "circular building",
+     "state": "crude, perhaps a few decades earlier than the temple",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "A crudely built circular structure nearby was perhaps a shrine constructed a few decades earlier."
+      }
+     ]
+    },
+    {
+     "id": "dew_pond",
+     "kind": "dew-pond",
+     "date": "1860s",
+     "state": "square, clay-lined, in the middle of the fort",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "a square, clay-lined ‘dewpond’ had to be constructed for sheep in the 1860s"
+      }
+     ]
+    },
+    {
+     "id": "roundhouses",
+     "kind": "roundhouses (lost)",
+     "state": "over 100 in rows in the Middle Iron Age; four-post granaries 2 m square",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "at 2 m (6.6 ft) square they have been considered by archaeologists to be too small for dwellings"
+      }
+     ]
+    }
+   ],
+   "alignment": [],
+   "phases": [
+    {
+     "name": "causewayed enclosure",
+     "date": "about 3800 BC (EH 'about 5,500 years ago'); abandoned about 3400 BC",
+     "what": "two ditches on the eastern knoll",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "Radiocarbon dating indicates that the enclosure was abandoned around 3,400 BC."
+      }
+     ]
+    },
+    {
+     "name": "bank barrow",
+     "date": "about 100 years after the enclosure (EH); within about 50 years (Wikipedia)",
+     "what": "546 m mound along the spine of the hill",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "About 100 years later, the community built a ‘bank barrow’"
+      },
+      {
+       "source": "wp_maiden",
+       "quote": "Within a period of about 50 years, a bank barrow was built over the enclosure."
+      }
+     ]
+    },
+    {
+     "name": "first hillfort",
+     "date": "about 600 BC (Wheeler: end of the 4th century BC)",
+     "what": "single rampart and ditch round 6.4 ha",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "Maiden Castle itself was built in about 600 BC"
+      }
+     ]
+    },
+    {
+     "name": "extension and multivallation",
+     "date": "about 450 BC onwards, for 300 years (EH: 2,400 years ago)",
+     "what": "19 ha; extra ramparts, complex entrances",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "About 2,400 years ago, the hillfort’s defences were extended westwards to enclose three times the original area"
+      }
+     ]
+    },
+    {
+     "name": "decline",
+     "date": "from about 100 BC",
+     "what": "occupation shrinks to the east end; abandoned by about AD 70",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "Around 100 BC, Maiden Castle's organised street pattern was replaced by more random habitation."
+      }
+     ]
+    },
+    {
+     "name": "temple",
+     "date": "about AD 370",
+     "what": "temple, priest's house, shrine, stone east gate",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "Around AD 370, a Romano-British temple was built within the long-deserted hillfort."
+      }
+     ]
+    },
+    {
+     "name": "Wheeler's excavations",
+     "date": "1934-1937",
+     "what": "Mortimer and Tessa Wheeler; interior and defences",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "Between 1934 and 1937, Mortimer Wheeler and Tessa Verney Wheeler excavated both the interior and the defences"
+      }
+     ]
+    },
+    {
+     "name": "Sharples' excavations",
+     "date": "1985-1986",
+     "what": "with repair work for English Heritage",
+     "cites": [
+      {
+       "source": "wp_maiden",
+       "quote": "Between 1985 and 1986 further excavations under Niall Sharples were prompted by the hill fort's deteriorating condition"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "Dates: Wheeler (1943) put the first fort at the end of the 4th century BC and the multiple ramparts in the 1st century BC; radiocarbon (Sharples) moved them to about 600 BC and 450 BC (Wikipedia).",
+     "cites": [
+      {
+       "source": "wheeler_1943",
+       "quote": "approximately the end ef the fourth century B.C."
+      }
+     ]
+    },
+    {
+     "claim": "The 'war cemetery': Wheeler's Roman storming in AD 43-44 is now doubted; the dead were buried with care, possibly over decades",
+     "cites": [
+      {
+       "source": "eh_maiden",
+       "quote": "But this was almost certainly not after a Roman assault on Maiden Castle"
+      }
+     ]
+    },
+    {
+     "claim": "Temple cella: 16 ft (Wheeler, internal), 5 m (EH), 6 m (Wikipedia, perhaps external).",
+     "cites": []
+    }
+   ]
+  },
+  "uffington": {
+   "name": "Uffington White Horse, Uffington Castle and Dragon Hill",
+   "record": "Q1056493",
+   "records_also": {
+    "uffington_castle": "Q2473790"
+   },
+   "about": "The White Horse is Britain's oldest chalk hill figure, about 110 m long, near the top of the steep north-west-facing slope above the dry valley called the Manger, on the Berkshire Downs in Oxfordshire; its head points up the hill (south-west) and its body curves round the valley side towards Dragon Hill. It is not a plain cut in the turf: first made by exposing the bedrock, it was kept by trenches packed with rammed or puddled chalk, renewed again and again, so seven or eight surfaces lie one on another; it has narrowed slightly (the body about 1 m, a hind leg 0.6 m) and its slope has dropped by about 10 degrees; a concrete kerb now holds the belly edge. OSL dates on the hillwash put the first horse at 1380-550 BC (68%) or 1740-210 BC (95%), late Bronze Age or early Iron Age. Scoured by local people every seven years until 1857 (last by the landlord in 1892), covered in the Second World War, restored 1951-53, re-chalked by the National Trust's volunteers (since 2009); found shrinking up to 40% and widened from 2024. Above it, Uffington Castle, an early Iron Age hillfort (8th-7th century BC) of about 3.2-3.4 ha with a single rampart and ditch and a counterscarp bank, an entrance on the west and a blocked one on the east: first a timber-framed box rampart with a double row of posts, then a chalk dump rampart with chalk and sarsen kerbs, the ditch recut. Below it, Dragon Hill, a natural chalk knoll with an artificially flattened circular top.",
+   "reference_point": {
+    "what": "middle of the OSM outline of the White Horse (relation 1618450, bounds 51.57727-51.57819 N, 1.56703-1.56640 W)",
+    "lat": 51.57773,
+    "lon": -1.56672,
+    "derived": true,
+    "how": "midpoint of the relation's bounding box",
+    "cites": []
+   },
+   "facts": {
+    "horse_length_m": {
+     "value": 110,
+     "unit": "m",
+     "note": "Wikipedia and Oxford Archaeology 110 m; EH 111 m from tail tip to ear",
+     "cites": [
+      {
+       "source": "wp_uwh",
+       "quote": "The Uffington White Horse is a prehistoric hill figure, 110 m (360 ft) long, formed from deep trenches filled with crushed white chalk."
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "the ﬁgure stretches for 110 m along the hillside"
+      },
+      {
+       "source": "eh_uff",
+       "quote": "The White Horse, which measures 111 metres from the tip of its tail to its ear"
+      }
+     ]
+    },
+    "horse_orientation": {
+     "value": "head up the hill to the south-west, body curving round the valley side towards Dragon Hill; the back rises from about 235 m OD (rear) to 240 m OD (front); north-east to south-west alignment",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "the body curving round the valley side towards Dragon Hill"
+      },
+      {
+       "source": "pollard_2017",
+       "quote": "The top of the rear of the body is situated at around 235m OD, the front at around 240m OD"
+      },
+      {
+       "source": "pollard_2017",
+       "quote": "Its north-east to south-west alignment, with the head to the south-west"
+      }
+     ]
+    },
+    "horse_slope": {
+     "value": "on a slope of 30-40 degrees (Pollard); first surface at about 18 degrees from the horizontal, now about 10 degrees less (OA; the degree signs are lost in the PDF text)",
+     "cites": [
+      {
+       "source": "pollard_2017",
+       "quote": "the position of the horse on a slope of 30–40ᵒ again foreshortens the image"
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "the surface angle has decreased over time by around 10–"
+      }
+     ]
+    },
+    "horse_construction": {
+     "value": "first an exposure of the chalk bedrock; then successive layers of puddled or rammed chalk in trenches, 0.1-0.3 m thick each; 7-8 surfaces in trench 2",
+     "cites": [
+      {
+       "source": "pollard_2017",
+       "quote": "The figure was originally formed through down-cutting and exposure of the white Upper Chalk bedrock."
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "Seven or eight phases of the Horse surface could be distinguished in this trench."
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "but most of the ﬁgure is constructed of successive layers of puddled chalk and hillwash"
+      }
+     ]
+    },
+    "horse_historic_trench": {
+     "value": "Wise (1738): a trench 2-3 ft deep and about 10 ft broad",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "‘by cutting a trench into the chalk of about 2 or 3 feet deep and about 10 feet broad’"
+      }
+     ]
+    },
+    "horse_changes": {
+     "value": "body narrowed about 1 m on the lower side; upper edge 0.3 m below its highest; rear hind leg 0.6 m narrower; beak 0.45 m shorter than its maximum",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "the edge has contracted only about 1 m from its original extent"
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "the rear hind leg has narrowed by around 0.6 m over the years"
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "with the 1990 beak found to be around 0.45 m shorter than its maximum extent"
+      }
+     ]
+    },
+    "horse_kerb": {
+     "value": "concrete kerb (paving slabs set on end) along the lower edge of the belly",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "Concrete kerbing along the lower edge of the Horse’s belly"
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "The edge of the surface was formed by a kerb of concrete paving slabs set on end"
+      }
+     ]
+    },
+    "horse_shrinking": {
+     "value": "lines up to 40% narrower by 2022; restoration from 2024",
+     "cites": [
+      {
+       "source": "oa_uwh_web",
+       "quote": "suggested that the lines of the Hose were shrinking, by as much as 40 percent in recent years"
+      },
+      {
+       "source": "wp_uwh",
+       "quote": "began the project to restore the horse to its original position and shape with the help of many volunteers"
+      }
+     ]
+    },
+    "horse_osl_date": {
+     "value": "1380-550 BC (68%); 1740-210 BC (95%)",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "between 1380 and 550 BC, at a 68% conﬁdence level, or between 1740 and 210 BC, at a 95% conﬁdence level"
+      },
+      {
+       "source": "eh_uff",
+       "quote": "has been dated to the later Bronze Age or Iron Age, between 1740 and 210 BC"
+      }
+     ]
+    },
+    "horse_distances": {
+     "value": "about 160-170 m from the north-east corner of the hillfort; about 70 m north of the barrows; Dragon Hill under 200 m north",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "160 m from the northeastern corner of the hillfort"
+      },
+      {
+       "source": "eh_uff",
+       "quote": "Situated 170 metres to the north-east of the hillfort"
+      },
+      {
+       "source": "pollard_2017",
+       "quote": "Less than 200m to the north, on the downslope of the escarpment, is the mound of Dragon Hill."
+      }
+     ]
+    },
+    "hillfort_size": {
+     "value": "about 220 x 160 m; 3.2 ha (Wikipedia), 3.4 ha interior (OA), about 3 ha",
+     "cites": [
+      {
+       "source": "eh_uff",
+       "quote": "It consists of a large enclosure, measuring about 220 metres by 160 metres"
+      },
+      {
+       "source": "wp_ucastle",
+       "quote": "It covers about 3.2 ha (7.9 acres)"
+      },
+      {
+       "source": "oa_ch6",
+       "quote": "the 3.4 ha interior"
+      }
+     ]
+    },
+    "hillfort_rampart_now": {
+     "value": "inner rampart about 12 m wide and 2.5 m high, formerly lined with sarsens; ditch about 3 m deep; small outer (counterscarp) bank",
+     "cites": [
+      {
+       "source": "eh_uff",
+       "quote": "surrounded by a wide chalk-stone bank or inner rampart about 12 metres wide and 2.5 metres high, and formerly lined with sarsen (sandstone) stones"
+      },
+      {
+       "source": "eh_uff",
+       "quote": "Around this is a grass-covered ditch about 3 metres deep"
+      }
+     ]
+    },
+    "hillfort_phase1": {
+     "value": "timber-framed (box) rampart with a double row of posts; posts 0.3 m across, 0.5-0.75 m apart; second row 1.52-1.83 m behind; ditch 7 m wide, 3.5 m deep",
+     "cites": [
+      {
+       "source": "oa_ch6",
+       "quote": "a timber walled rampart with a double row of timber uprights"
+      },
+      {
+       "source": "oa_ch6",
+       "quote": "From 1.52 to 1.83 m (ﬁve to six feet) behind this row, a second parallel row of postholes was found."
+      },
+      {
+       "source": "oa_ch6",
+       "quote": "A large ditch, 7 m wide and 3.5 m deep, ran round the hillfort beyond the line of the ramparts."
+      }
+     ]
+    },
+    "hillfort_phase2": {
+     "value": "dump rampart kept front and rear by chalk and sarsen block kerbs; ditch recut 6.2 m wide, about 4.2 m deep",
+     "cites": [
+      {
+       "source": "oa_ch6",
+       "quote": "This was contained front and rear by a chalk and sarsen block kerb"
+      },
+      {
+       "source": "oa_ch6",
+       "quote": "at 6.2 m wide and roughly 4.2 m deep"
+      }
+     ]
+    },
+    "hillfort_counterscarp": {
+     "value": "primary counterscarp bank 0.5 m high and 3.2 m wide",
+     "cites": [
+      {
+       "source": "oa_ch6",
+       "quote": "The primary phase of this counterscarp bank survived to a height of 0.5 m above the old ground surface and to a width of 3.2 m."
+      }
+     ]
+    },
+    "hillfort_height": {
+     "value": "the escarpment here rises more than 50 m above the general scarp level, to 261 m OD (OSM summit node: ele 262)",
+     "cites": [
+      {
+       "source": "pollard_2017",
+       "quote": "rises to more than 50m above the general scarp level, reaching 261m OD"
+      }
+     ]
+    },
+    "dragon_hill": {
+     "value": "summit 197 m OD, flat and circular; EH: about 10 m high",
+     "note": "natural chalk spur with an artificially flattened top (Wikipedia, Pollard); EH thinks glacial erosion formed it; quarried at times",
+     "cites": [
+      {
+       "source": "oa_ch4",
+       "quote": "The summit of the hill at 197 m OD, is ﬂat and circular"
+      },
+      {
+       "source": "eh_uff",
+       "quote": "This is a round mound, about 10 metres high with a flattened top, likely to have been formed by glacial erosion."
+      },
+      {
+       "source": "wp_dragon",
+       "quote": "Dragon Hill is a natural chalk hill with an artificially flattened top"
+      }
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "white_horse",
+     "kind": "hill figure",
+     "state": "maintained; chalk renewed; concrete kerb at the belly"
+    },
+    {
+     "id": "hillfort_rampart",
+     "kind": "rampart",
+     "state": "earthwork; once a timber box rampart, then a dump rampart with chalk and sarsen kerbs and a sarsen-lined top",
+     "cites": [
+      {
+       "source": "wp_ucastle",
+       "quote": "A parapet wall of sarsen stones lined the top of the innermost rampart."
+      }
+     ]
+    },
+    {
+     "id": "hillfort_west_entrance",
+     "kind": "entrance",
+     "state": "causeway flanked by out-turned ends of the inner rampart, closed by a gate; outworks make a passage about 37 m long",
+     "cites": [
+      {
+       "source": "eh_uff",
+       "quote": "A causeway, flanked by the out-turned ends of the inner rampart, provides an entrance to the site from the west."
+      },
+      {
+       "source": "oa_ch6",
+       "quote": "create an entrance passage about 37 m"
+      }
+     ]
+    },
+    {
+     "id": "hillfort_east_entrance",
+     "kind": "entrance (blocked)",
+     "state": "gateway of four large post-pits (posts up to 0.8 m) with a corridor 2-3 m wide; blocked a few centuries after building; Roman-period breaches",
+     "cites": [
+      {
+       "source": "wp_ucastle",
+       "quote": "A second entrance in the eastern end was apparently blocked up a few centuries after it was built."
+      },
+      {
+       "source": "oa_ch6",
+       "quote": "possibly up to 0.80 m in diameter, forming a corridor 2.0 m to 3.0 m wide"
+      }
+     ]
+    },
+    {
+     "id": "barrows",
+     "kind": "barrows",
+     "state": "a Bronze Age round barrow and a possible Neolithic long mound between the fort and the horse, reused as late Roman and Saxon cemeteries",
+     "cites": [
+      {
+       "source": "pollard_2017",
+       "quote": "between this and the horse are a Bronze Age round barrow and a possible Neolithic long mound, reused in the late Roman period as an inhumation cemetery"
+      }
+     ]
+    },
+    {
+     "id": "dragon_hill",
+     "kind": "knoll",
+     "state": "natural, top flattened; bare chalk patch on top (the 'dragon's blood')",
+     "cites": [
+      {
+       "source": "wp_dragon",
+       "quote": "A bare patch of chalk upon which no grass will grow is purported to be where the dragon's blood spilled."
+      }
+     ]
+    },
+    {
+     "id": "manger_and_giants_stair",
+     "kind": "natural valley",
+     "state": "steep dry valley with periglacial terraces (the Giant's Stair or Steps)",
+     "cites": [
+      {
+       "source": "wp_uwh",
+       "quote": "The steep sided dry valley below the horse is known as the Manger"
+      },
+      {
+       "source": "wp_uwh",
+       "quote": "To the west are ice-cut terraces known as the \"Giant's Stair\"."
+      }
+     ]
+    }
+   ],
+   "alignment": [
+    {
+     "event": "midwinter sunrise and the sun's low passage, seen from Dragon Hill",
+     "claim": "Pollard: seen from Dragon Hill at midwinter the sun rises right behind the horse and seems to roll just above its body; the figure runs up and westwards with the sun; he reads it as a sun-horse (an interpretation, not a measured alignment)",
+     "cites": [
+      {
+       "source": "pollard_2017",
+       "quote": "When observed from Dragon Hill at midwinter, a distinctive effect is created, whereby the sun rises immediately behind the horse and appears to roll just above its body"
+      },
+      {
+       "source": "pollard_2017",
+       "quote": "The sun-roll effect as observed from Dragon Hill on 23 December 2015."
+      }
+     ]
+    }
+   ],
+   "phases": [
+    {
+     "name": "first White Horse",
+     "date": "1380-550 BC (68%)",
+     "what": "bedrock exposed in the horse's shape, soon replaced by puddled chalk",
+     "cites": [
+      {
+       "source": "wp_uwh",
+       "quote": "The Uffington White Horse was created some time between 1380 and 550 BC, during the late Bronze Age or early Iron Age."
+      }
+     ]
+    },
+    {
+     "name": "hillfort phase 1",
+     "date": "8th-7th centuries BC",
+     "what": "timber box rampart and ditch; interior pits; eastern gateway",
+     "cites": [
+      {
+       "source": "oa_ch6",
+       "quote": "during the 7th and possible 8th centuries BC associated with the building of the phase 1 box rampart"
+      },
+      {
+       "source": "wp_ucastle",
+       "quote": "it was probably built in the 8th or 7th century BCE"
+      }
+     ]
+    },
+    {
+     "name": "hillfort phase 2",
+     "date": "probably 4th century BC",
+     "what": "dump rampart with kerbs, ditch recut; west entrance outworks",
+     "cites": [
+      {
+       "source": "oa_ch6",
+       "quote": "It is generally accepted that dump ramparts started around the 4th century"
+      }
+     ]
+    },
+    {
+     "name": "Roman",
+     "date": "3rd-4th centuries AD",
+     "what": "ramparts breached for more entrances; shrine; 46 burials in a mound",
+     "cites": [
+      {
+       "source": "wp_ucastle",
+       "quote": "The ramparts were remodelled to provide more entrances, and a shrine seems to have been built in the early 4th century CE."
+      }
+     ]
+    },
+    {
+     "name": "scourings",
+     "date": "1755-1857 festivals; last landlord's scouring 1892",
+     "what": "every seven years",
+     "cites": [
+      {
+       "source": "wp_uwh",
+       "quote": "The first of such festivals known took place in 1755 and they lasted until 1857"
+      }
+     ]
+    },
+    {
+     "name": "wartime cover and restoration",
+     "date": "1940-46; re-surfaced 1951-53 (Grimes)",
+     "what": "covered with turf and hedge trimmings; re-made with chalk blocks on edge",
+     "cites": [
+      {
+       "source": "oa_ch5",
+       "quote": "The work was carried out between 1951 and 1953 under the direction of W F Grimes."
+      }
+     ]
+    },
+    {
+     "name": "modern chalking",
+     "date": "from 2009; restoration from 2024",
+     "what": "National Trust volunteers; Oxford Archaeology",
+     "cites": [
+      {
+       "source": "wp_uwh",
+       "quote": "The tradition was revived in 2009 by the National Trust"
+      }
+     ]
+    }
+   ],
+   "debate": [
+    {
+     "claim": "OSL date quoted three ways: 1380-550 BC (68%, OA report and Wikipedia), 1740-210 BC (95%, EH), '1380 and 210 BC' (Oxford Archaeology's web page, mixing the two).",
+     "cites": [
+      {
+       "source": "oa_uwh_web",
+       "quote": "dated it to between 1380 and 210 BC"
+      }
+     ]
+    },
+    {
+     "claim": "Length 110 m (OA, Wikipedia) vs 111 m (EH).",
+     "cites": []
+    },
+    {
+     "claim": "Dragon Hill: natural knoll artificially flattened (Wikipedia, Pollard: 'substantially modified and provided with a terraced summit') vs formed by glacial erosion (EH).",
+     "cites": [
+      {
+       "source": "pollard_2017",
+       "quote": "The latter is probably a natural knoll that has been substantially modified and provided with a terraced summit."
+      }
+     ]
+    },
+    {
+     "claim": "Was the horse once more naturalistic? EH says aerial photography shows a larger shape beneath; the 1990-94 excavations found the shape essentially unchanged.",
+     "cites": [
+      {
+       "source": "eh_uff",
+       "quote": "aerial photography shows that a larger, more conventional shape of a horse lies beneath"
+      },
+      {
+       "source": "oa_ch5",
+       "quote": "However, it was possible to conﬁrm that the shape had not changed signiﬁcantly."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "osm": {
+  "checked": "2026-10-29, Overpass (overpass-api.de). Avebury bbox 51.4235-51.4335 N, 1.8630-1.8460 W; Uffington 51.570-51.582 N, 1.580-1.560 W; Silbury and Maiden Castle bboxes round each site",
+  "avebury_note": "No Avebury stone in OSM has a name, ref number or note, and nothing is tagged as a concrete marker (no man_made=marker, no material=concrete): the 76 historic=archaeological_site + megalith_type=menhir ways and 8 natural=bare_rock ways are outlines only. Positions below are from the fitted henge centre (51.428651, -1.853769): r = distance in m, az = bearing in degrees, area of the outline, L = longest dimension (derived). Outlines of 1.1-2.0 m2 and L 1.3-1.9 m may be concrete pillars or small stones; they cannot be told apart from OSM. The small ones in the Southern Inner Circle at r64-88 az159-173 lie on a line and are probably the Z-feature stones; the big pair at the south entrance (az165-169, 11-12 m2, 5.9 m long) are the Devil's Chair pair. The bare_rock ways at r193-227 az302-325 lie outside the outer circle on the NW bank (unknown stones). NE and SE quadrants have only 3 mapped outlines (az48, 67, 97), as expected where Keiller did not dig.",
+  "avebury": [
+   {
+    "id": "way 353244910",
+    "tags": "name=Avebury Stone Circle, historic=archaeological_site, megalith_type=stone_circle, wikidata=Q661855, ref:whc=373",
+    "what": "outline of the henge interior (164 nodes; includes village edges)"
+   },
+   {
+    "id": "ways 35595727, 35595789, 35595837, 35595843, 35595877, 35595891, 35595913, 35595931, 35595934, 35595959, 353231043",
+    "tags": "man_made=embankment",
+    "what": "inner and outer edges of the bank in four arcs; the gaps between their ends give the four entrances (derived azimuths in the Avebury entrances element)"
+   },
+   {
+    "id": "outer circle (52 ways)",
+    "tags": "historic=archaeological_site, archaeological_site=megalith, megalith_type=menhir (natural=bare_rock for the 'b' ones)",
+    "what": "241014723 menhir r163.4 az48 8.7 m2 L5.2; 353238383 menhir r163.2 az67 14.4 m2 L5.2; 241014715 menhir r164.7 az97 2.2 m2 L2.2; 353236779 menhir r163.6 az165 12.4 m2 L5.9; 353236772 menhir r167.0 az169 10.9 m2 L5.9; 241016797 bare_rock r169.1 az178 3.7 m2 L2.8; 241014711 menhir r172.0 az182 4.6 m2 L3.2; 241014722 menhir r174.4 az185 4.1 m2 L3.4; 241015387 menhir r176.1 az189 5.4 m2 L3.8; 241015407 menhir r179.3 az192 6.2 m2 L3.9; 241015405 menhir r180.0 az195 5.3 m2 L3.1; 241015402 menhir r180.5 az199 7.6 m2 L4.3; 241014717 menhir r177.1 az203 6.8 m2 L4.4; 241016440 menhir r173.7 az207 2.5 m2 L2.0; 241014724 menhir r171.4 az210 7.3 m2 L4.3; 241016441 menhir r170.6 az213 2.5 m2 L2.0; 759536242 menhir r170.9 az217 5.4 m2 L4.0; 759536230 menhir r170.0 az220 1.6 m2 L1.6; 759536224 menhir r170.2 az224 9.0 m2 L4.2; 759536221 menhir r176.3 az226 3.3 m2 L2.4; 759536204 menhir r171.5 az228 1.7 m2 L1.7; 759536205 bare_rock r155.2 az230 2.0 m2 L2.1; 759536240 menhir r173.3 az231 2.0 m2 L1.9; 759536238 menhir r174.6 az235 2.4 m2 L1.9; 759536248 menhir r175.6 az239 1.8 m2 L1.9; 759536235 menhir r177.2 az241 1.1 m2 L1.4; 759536231 menhir r179.4 az244 2.2 m2 L2.0; 759536246 menhir r181.9 az246 1.4 m2 L1.6; 759536215 menhir r183.9 az250 24.2 m2 L6.7; 759536220 menhir r186.8 az274 4.7 m2 L3.2; 759536207 menhir r186.4 az277 3.6 m2 L3.0; 759536237 menhir r186.0 az281 3.9 m2 L2.5; 759536218 menhir r185.0 az284 3.3 m2 L2.5; 759536227 menhir r184.8 az288 2.9 m2 L2.9; 759536210 menhir r185.2 az290 3.0 m2 L2.3; 759536225 menhir r185.8 az292 3.3 m2 L2.4; 759536209 menhir r185.2 az296 2.7 m2 L2.4; 759536211 menhir r185.8 az299 2.5 m2 L2.1; 241015398 bare_rock r203.7 az302 3.0 m2 L2.7; 759536213 menhir r184.4 az303 1.2 m2 L1.4; 241015388 bare_rock r202.4 az306 2.8 m2 L2.6; 241015404 bare_rock r226.6 az306 2.3 m2 L2.2; 759536229 menhir r183.9 az306 5.2 m2 L3.2; 241015400 bare_rock r200.5 az310 1.7 m2 L2.2; 759535632 menhir r181.0 az310 3.6 m2 L2.4; 759536216 menhir r178.2 az313 4.3 m2 L3.2; 759536226 menhir r175.7 az317 2.0 m2 L1.9; 759536212 menhir r173.8 az320 8.6 m2 L4.0; 759536223 menhir r171.2 az323 1.9 m2 L1.8; 241015390 bare_rock r193.4 az325 1.7 m2 L1.9; 759536217 menhir r170.7 az325 6.7 m2 L4.4; 759536214 menhir r162.3 az341 3.8 m2 L2.8"
+   },
+   {
+    "id": "Southern Inner Circle area (15 ways)",
+    "tags": "megalith_type=menhir",
+    "what": "759536228 menhir r73.1 az159 3.0 m2 L2.5; 759536244 menhir r84.4 az162 1.8 m2 L1.7; 759536206 menhir r143.0 az163 1.2 m2 L1.3; 759536247 menhir r87.8 az167 1.4 m2 L1.5; 759536232 menhir r121.7 az168 6.1 m2 L3.3; 759536241 menhir r77.6 az171 1.4 m2 L1.5; 759536222 menhir r119.0 az172 7.2 m2 L5.0; 759536234 menhir r74.7 az172 1.4 m2 L1.8; 759536236 menhir r81.6 az172 1.1 m2 L1.4; 759536239 menhir r85.7 az172 1.1 m2 L1.4; 759536243 menhir r69.1 az173 1.6 m2 L1.7; 759536245 menhir r64.3 az173 2.1 m2 L1.8; 759536219 menhir r115.0 az177 6.7 m2 L5.4; 759536233 menhir r101.5 az187 5.3 m2 L4.2; 759536208 menhir r94.0 az191 3.6 m2 L3.1"
+   },
+   {
+    "id": "Northern Inner Circle and Cove area (6 ways)",
+    "tags": "megalith_type=menhir; 353240088 natural=bare_rock",
+    "what": "241013671 menhir r92.8 az3 6.2 m2 L5.0; 241015378 menhir r58.6 az37 4.9 m2 L3.3; 241015391 menhir r52.8 az44 2.4 m2 L2.6; 353240088 bare_rock r26.0 az68 8.6 m2 L4.5; 241015383 menhir r51.2 az337 7.1 m2 L5.5; 241015385 menhir r47.9 az343 6.5 m2 L4.0. 353240088 (8.6 m2, 4.5 m) and 241015383/241015385 (7.1 and 6.5 m2) are the likely Cove stones and NIC stones; not checked"
+   },
+   {
+    "id": "West Kennet Avenue, north end (10 ways)",
+    "tags": "megalith_type=menhir, natural=stone",
+    "what": "241020440 menhir r638.8 az147 4.4 m2 L3.4; 241020443 menhir r566.5 az147 3.6 m2 L3.1; 241020429 menhir r591.7 az148 3.6 m2 L3.3; 241020431 menhir r566.8 az148 3.6 m2 L4.3; 241020446 menhir r523.6 az149 3.0 m2 L3.5; 241020452 menhir r498.1 az149 2.8 m2 L3.4; 241020444 menhir r472.4 az150 3.7 m2 L3.4; 241020439 menhir r504.0 az151 2.9 m2 L3.6; 241020450 menhir r450.6 az152 3.7 m2 L4.1; 241020436 menhir r458.8 az153 7.3 m2 L4.4"
+   },
+   {
+    "id": "way 189565139",
+    "tags": "name=West Kennet Avenue, description=parallel row of standing stones, wikidata=Q1335849",
+    "what": "line of the avenue (22 nodes, 575 m)"
+   }
+  ],
+  "silbury": [
+   {
+    "id": "way 377466789",
+    "tags": "name=Silbury Hill, historic=archaeological_site, archaeological_site=mound, ele=167, wikidata=Q225896",
+    "what": "outline of the mound; centre 51.4157433, -1.8573854"
+   },
+   {
+    "id": "node 11218032230",
+    "tags": "name=Silbury Hill, natural=peak, ele=167",
+    "what": "summit"
+   }
+  ],
+  "maiden_castle": [
+   {
+    "id": "way 146411874",
+    "tags": "name=Maiden Castle, historic=archaeological_site, fortification_type=hill_fort, wikidata=Q1232816",
+    "what": "hillfort outline; centre 50.6947863, -2.4700492"
+   },
+   {
+    "id": "way 40804119",
+    "tags": "name=Romano British Temple, historic=archaeological_site",
+    "what": "temple footings; centre 50.6948719, -2.4669447"
+   },
+   {
+    "id": "way 40804127",
+    "tags": "name=Priest's House, historic=archaeological_site",
+    "what": "priest's house footings; centre 50.6949632, -2.4668459"
+   }
+  ],
+  "uffington": [
+   {
+    "id": "relation 1618450",
+    "tags": "name=The White Horse, man_made=geoglyph, geoglyph_type=hill_figure, historic=archaeological_site, wikidata=Q1056493",
+    "what": "the horse as a multipolygon (outer way 116991392 of 127 nodes, 349 m2, plus 3 small outer ways and 1 inner); bounds 51.57727-51.57819 N, 1.56703-1.56640 W. Its longest extent is 103 m at azimuth 5 degrees (derived), i.e. the mapped horse runs nearly north-south, which does not fit Pollard's NE-SW alignment or the 110 m length: probably a rough or misplaced trace; check against the LiDAR or aerial photographs before using it"
+   },
+   {
+    "id": "way 780534647",
+    "tags": "name=Uffington Castle, fortification_type=hill_fort, wikidata=Q2473790",
+    "what": "hillfort outline (120 nodes)"
+   },
+   {
+    "id": "ways 349613820, 349613831, 445826206",
+    "tags": "man_made=embankment",
+    "what": "rampart lines"
+   },
+   {
+    "id": "node 249836029",
+    "tags": "name=White Horse Hill, natural=peak, ele=262",
+    "what": "summit"
+   },
+   {
+    "id": "node 338068508",
+    "tags": "name=Dragon Hill, natural=peak, ele=191 (TessaDEM)",
+    "what": "Dragon Hill top (OA gives 197 m OD)"
+   },
+   {
+    "id": "way 203424442",
+    "tags": "name=The Giant's Stair, natural=grassland",
+    "what": "periglacial terraces of the Manger"
+   }
+  ]
+ },
+ "plans": [
+  {
+   "title": "William Stukeley, The Temple at Abury surveyed 1724 (Abury, 1743, Tab. I and frontispiece)",
+   "url": "https://commons.wikimedia.org/wiki/Category:Abury,_a_Temple_of_the_British_Druids",
+   "licence": "public domain (1743)",
+   "what it shows": "the stones standing, fallen and destroyed in 1719-24, with the Obelisk and Cove; Stukeley altered some measurements (Wikipedia), so for the 'as built' layout only with care"
+  },
+  {
+   "title": "John Aubrey's plan of Avebury (1663), facsimile in Wiltshire Archaeological Magazine 7 (1862), p. 224",
+   "url": "https://www.biodiversitylibrary.org/bibliography/4588",
+   "licence": "public domain (1663/1862)",
+   "what it shows": "the earliest plan, with stones since lost; schematic. The WAM vol. 7 scan is on BHL/Internet Archive (not checked for the plate)"
+  },
+  {
+   "title": "OSM stone outlines and bank lines at Avebury (listed under osm)",
+   "url": "https://www.openstreetmap.org/way/353244910",
+   "licence": "ODbL (OpenStreetMap)",
+   "what it shows": "outlines of 84 stones or markers and the bank edges; no numbers; usable for positions of what stands now"
+  },
+  {
+   "title": "Keiller's plans of the NW and SW sectors (Antiquity 1939, plates) and Smith 1965 figures",
+   "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5F10AF32646F48B13E38B6DD09E6398B/S0003598X00027927a.pdf/avebury-summary-of-excavations-1937-and-1938.pdf",
+   "licence": "(c) Antiquity Publications / Society of Antiquaries: not to be traced",
+   "what it shows": "air photograph and plates of stone-holes A-C; the numbered plan is in Smith 1965 (not online)"
+  },
+  {
+   "title": "Wheeler 1943, Maiden Castle: general plan and plans of the eastern and western entrances (pls. II, XXI, CXIX; figs. 3-9, 24)",
+   "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-3630-1/dissemination/SAL_vol_XII.pdf",
+   "licence": "(c) Society of Antiquaries of London; ADS terms (not open): not to be traced without permission",
+   "what it shows": "the phased plans of the entrances, the temple and the Neolithic long mound; the LiDAR gives the earthworks themselves"
+  },
+  {
+   "title": "Oxford Archaeology 2003, Uffington White Horse and its Landscape: figs 5.1, 5.6 (horse and trenches), 6.x (hillfort), 4.2 (Dragon Hill)",
+   "url": "https://eprints.oxfordarchaeology.com/6999/",
+   "licence": "(c) Oxford Archaeology; licence not stated on the OA Library record: ask before tracing",
+   "what it shows": "plan of the horse at 1:500 with the 1953 and 1990-94 trenches; hillfort earthwork plan"
+  },
+  {
+   "title": "EA LiDAR Composite DTM 1 m",
+   "url": "https://environment.data.gov.uk/survey",
+   "licence": "OGL v3",
+   "what it shows": "the banks, ditches, mounds and the horse's terrace at all four sites (the horse itself may show as a slight terrace only)"
+  }
+ ],
+ "gaps": [
+  "Avebury per-stone list: which numbered stones stand, were re-erected in 1937-39, are concrete pillars or are destroyed is in Isobel Smith, Windmill Hill and Avebury (1965) and Ucko et al., Avebury Reconsidered (1991): neither is online. Keiller 1939 gives the NW and SW sectors in his own sector numbering (not Smith's); the SE sector (1939, Southern Inner Circle) and the West Kennet Avenue (Antiquity 1936, 10, 417-427) were not checked here. Count today: only Wessex Archaeology's round '30 visible + 16 concrete pillars'.",
+  "Avebury: no OSM stone has a number or tells stone from concrete pillar; matching the 84 outlines to Smith's numbers needs Smith's plan or a site visit / photographs.",
+  "Historic England list entries (Avebury 1008323, Silbury, Maiden Castle, Uffington) and research reports (Field 2002, The Investigation and Analytical Survey of Silbury Hill; Sharples 1991, Maiden Castle) refuse scripts or are not online: not used.",
+  "National Trust pages (Avebury; White Horse Hill, which answered once and then served a browser check) refuse scripts: not used.",
+  "Silbury: the step's height below the summit, and Leary, Field and Campbell 2013 (the full phasing with dimensions) not reached; height disagreement 30 vs 39.3 m to be read from the LiDAR.",
+  "Maiden Castle: Sharples 1991 (modern radiocarbon phasing, rampart dimensions) not online; heights of each rampart now from the LiDAR. Wheeler's text is OCR with misreadings.",
+  "Uffington: the OSM horse outline looks wrongly oriented (long axis N-S); the OA plan (fig. 5.6) or aerial photographs are needed for the shape. Present widths of the horse's lines (and the 2024 widening) not found in figures.",
+  "Avebury Cove: dimensions of the two surviving stones (height, width) not found in a fetchable source; the 2003 Longstones Project report (Gillings et al. 2008, Landscape of the Megaliths) is not online.",
+  "Wiltshire Archaeological Magazine (BHL) not searched in depth: older volumes (e.g. Smith 1867 on the 1865 Cove excavation; Cunnington 1913 on the Longstones) could add 19th-century stone descriptions."
+ ]
+}

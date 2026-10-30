@@ -1,0 +1,1545 @@
+{
+ "date": "2026-10-29",
+ "osm_3d": {
+  "count": 695,
+  "with_height": 188,
+  "with_roof_shape": 180,
+  "examples": [
+   {
+    "id": "Q18536",
+    "name": "The Shard",
+    "height": "310",
+    "building:levels": "95",
+    "building": "commercial"
+   },
+   {
+    "id": "Q18602",
+    "name": "22 Bishopsgate",
+    "height": "278",
+    "building:levels": "61",
+    "building": "yes"
+   },
+   {
+    "id": "Q503477",
+    "name": "One Canada Square",
+    "height": "235",
+    "roof:shape": "pyramidal",
+    "building:levels": "50",
+    "building": "commercial"
+   },
+   {
+    "id": "Q1613853",
+    "name": "Heron Tower",
+    "height": "230.1",
+    "roof:shape": "flat",
+    "building:levels": "46",
+    "building": "commercial"
+   },
+   {
+    "id": "Q572887",
+    "name": "8 Canada Square",
+    "height": "199.5",
+    "building:levels": "45",
+    "building": "office"
+   },
+   {
+    "id": "Q797085",
+    "name": "BT Tower",
+    "height": "188.4",
+    "building:levels": "37",
+    "building": "tower"
+   },
+   {
+    "id": "Q1331574",
+    "name": "Tower 42",
+    "height": "183",
+    "building:levels": "47",
+    "building": "yes"
+   },
+   {
+    "id": "Q191161",
+    "name": "30 St Mary Axe",
+    "height": "180",
+    "roof:shape": "dome",
+    "building:levels": "41",
+    "building": "yes"
+   },
+   {
+    "id": "Q212834",
+    "name": "20 Fenchurch Street",
+    "height": "160",
+    "roof:shape": "flat",
+    "building:levels": "37",
+    "building": "commercial"
+   },
+   {
+    "id": "Q880905",
+    "name": "Blackpool Tower",
+    "height": "158"
+   },
+   {
+    "id": "Q933000",
+    "name": "Forth Road Bridge",
+    "height": "156"
+   },
+   {
+    "id": "Q160659",
+    "name": "London Eye",
+    "height": "136.5",
+    "roof:shape": "round",
+    "building": "yes"
+   },
+   {
+    "id": "Q17528874",
+    "name": "Devonport Column",
+    "height": "124 feet",
+    "building": "yes"
+   },
+   {
+    "id": "Q1134365",
+    "name": "Spire of Dublin",
+    "height": "121.2",
+    "roof:shape": "pyramidal",
+    "building": "yes"
+   },
+   {
+    "id": "Q631871",
+    "name": "ArcelorMittal Orbit",
+    "height": "114.5",
+    "building": "yes"
+   },
+   {
+    "id": "Q275",
+    "name": "Forth Bridge",
+    "height": "110"
+   },
+   {
+    "id": "Q41225",
+    "name": "Big Ben",
+    "height": "96",
+    "roof:shape": "pyramidal",
+    "building": "yes"
+   },
+   {
+    "id": "Q1858077",
+    "name": "Victoria Tower",
+    "height": "96",
+    "building": "tower"
+   },
+   {
+    "id": "Q1814818",
+    "name": "Lloyd's building",
+    "height": "88 m",
+    "building": "commercial"
+   },
+   {
+    "id": "Q1470975",
+    "name": "Liverpool Metropolitan Cathedral",
+    "height": "84.9",
+    "building": "cathedral"
+   },
+   {
+    "id": "Q4729651",
+    "name": "All Souls Church, Halifax",
+    "height": "72",
+    "building": "church"
+   },
+   {
+    "id": "Q931796",
+    "name": "Wallace Monument",
+    "height": "67",
+    "building": "yes"
+   },
+   {
+    "id": "Q4769474",
+    "name": "Anniesland Court",
+    "height": "66",
+    "building:levels": "24",
+    "building": "flats"
+   },
+   {
+    "id": "Q607700",
+    "name": "Monument to the Great Fire of London",
+    "height": "62",
+    "building": "yes"
+   },
+   {
+    "id": "Q2502213",
+    "name": "Scott Monument",
+    "height": "61.11",
+    "building": "tower"
+   },
+   {
+    "id": "Q25803046",
+    "name": "North Foreland Lighthouse",
+    "height": "57",
+    "building": "yes"
+   },
+   {
+    "id": "Q4091854",
+    "name": "Great Pagoda",
+    "height": "50",
+    "building": "pagoda"
+   },
+   {
+    "id": "Q17528694",
+    "name": "Lancing College Chapel",
+    "height": "50",
+    "building": "chapel"
+   },
+   {
+    "id": "Q4806060",
+    "name": "Ashton Memorial",
+    "height": "50m",
+    "building": "yes"
+   },
+   {
+    "id": "Q29014",
+    "name": "Millennium Dome",
+    "height": "50",
+    "roof:shape": "dome",
+    "building": "yes"
+   },
+   {
+    "id": "Q334399",
+    "name": "Bath Abbey",
+    "height": "49",
+    "building": "church"
+   },
+   {
+    "id": "Q7884143",
+    "name": "King Alfred's Tower",
+    "height": "49",
+    "building": "yes"
+   },
+   {
+    "id": "Q7595476",
+    "name": "St Stephen's Church",
+    "height": "49",
+    "building": "church"
+   },
+   {
+    "id": "Q17530601",
+    "name": "Church of St Dionysius",
+    "height": "48",
+    "building": "yes"
+   },
+   {
+    "id": "Q2148102",
+    "name": "Rinns of Islay Lighthouse",
+    "height": "48",
+    "roof:shape": "dome",
+    "building": "yes"
+   },
+   {
+    "id": "Q7809742",
+    "name": "Titan Clydebank",
+    "height": "46",
+    "building": "yes"
+   },
+   {
+    "id": "Q17570463",
+    "name": "40 George Square",
+    "height": "43",
+    "roof:shape": "flat",
+    "building:levels": "14",
+    "building": "university"
+   },
+   {
+    "id": "Q29347805",
+    "name": "Hill Dickinson Stadium",
+    "height": "43"
+   },
+   {
+    "id": "Q5608058",
+    "name": "Grey's Monument",
+    "height": "41.75 m"
+   },
+   {
+    "id": "Q7592597",
+    "name": "Saint Bartholomew's Church",
+    "height": "41",
+    "roof:shape": "gabled",
+    "building:levels": "1",
+    "building": "church"
+   }
+  ],
+  "ids": [
+   "Q101069839",
+   "Q101070586",
+   "Q102767083",
+   "Q1050082",
+   "Q105169753",
+   "Q105170095",
+   "Q105674688",
+   "Q1095304",
+   "Q1101808",
+   "Q1109101",
+   "Q1130266",
+   "Q1132704",
+   "Q1134093",
+   "Q1134365",
+   "Q1138070",
+   "Q115451",
+   "Q116505427",
+   "Q116689158",
+   "Q116780325",
+   "Q116817844",
+   "Q118188576",
+   "Q118188577",
+   "Q118188579",
+   "Q118188580",
+   "Q118188581",
+   "Q118188582",
+   "Q118188583",
+   "Q118188588",
+   "Q118188589",
+   "Q118188590",
+   "Q118188592",
+   "Q118188593",
+   "Q118188596",
+   "Q118188597",
+   "Q118188598",
+   "Q118188599",
+   "Q118188600",
+   "Q118188604",
+   "Q118188605",
+   "Q118188607",
+   "Q118188612",
+   "Q118188614",
+   "Q118188615",
+   "Q118188616",
+   "Q118188617",
+   "Q118188618",
+   "Q118188619",
+   "Q118188623",
+   "Q118188653",
+   "Q118188655",
+   "Q118188660",
+   "Q118188669",
+   "Q118188674",
+   "Q118188680",
+   "Q118188688",
+   "Q118188689",
+   "Q118188690",
+   "Q118188696",
+   "Q118188709",
+   "Q118188710",
+   "Q118188777",
+   "Q118188810",
+   "Q11838969",
+   "Q11838983",
+   "Q11839033",
+   "Q120446198",
+   "Q12059583",
+   "Q12061481",
+   "Q1236267",
+   "Q124853386",
+   "Q1256932",
+   "Q1263246",
+   "Q1264640",
+   "Q1271570",
+   "Q1287877",
+   "Q130211196",
+   "Q1303643",
+   "Q1311497",
+   "Q13132111",
+   "Q131323438",
+   "Q13157925",
+   "Q1321874",
+   "Q1331574",
+   "Q1333098",
+   "Q1333411",
+   "Q1339254",
+   "Q1344889",
+   "Q13630879",
+   "Q136410789",
+   "Q136499963",
+   "Q140623956",
+   "Q141434706",
+   "Q141763699",
+   "Q1439960",
+   "Q1441598",
+   "Q1453649",
+   "Q1470975",
+   "Q1492262",
+   "Q1507597",
+   "Q1508450",
+   "Q15115311",
+   "Q15129924",
+   "Q15180551",
+   "Q15201909",
+   "Q15223273",
+   "Q15229816",
+   "Q15275600",
+   "Q15278998",
+   "Q15378588",
+   "Q1538285",
+   "Q1558256",
+   "Q1568148",
+   "Q1575022",
+   "Q15794860",
+   "Q15855102",
+   "Q15978837",
+   "Q15978931",
+   "Q15978999",
+   "Q15979163",
+   "Q15979323",
+   "Q15979352",
+   "Q15979424",
+   "Q15979590",
+   "Q15979594",
+   "Q1602700",
+   "Q160659",
+   "Q1613853",
+   "Q16256099",
+   "Q1632035",
+   "Q1636910",
+   "Q16466391",
+   "Q1672292",
+   "Q16834512",
+   "Q16992820",
+   "Q173882",
+   "Q17522119",
+   "Q17524702",
+   "Q17524724",
+   "Q17525865",
+   "Q17525868",
+   "Q17525876",
+   "Q17525916",
+   "Q17526046",
+   "Q17526067",
+   "Q17526076",
+   "Q17526086",
+   "Q17526092",
+   "Q17526123",
+   "Q17526140",
+   "Q17526237",
+   "Q17526238",
+   "Q17526271",
+   "Q17526496",
+   "Q17526554",
+   "Q17526641",
+   "Q17526732",
+   "Q17526784",
+   "Q17526808",
+   "Q17526829",
+   "Q17526837",
+   "Q17526902",
+   "Q17527009",
+   "Q17527026",
+   "Q17527195",
+   "Q17527200",
+   "Q17527257",
+   "Q17527285",
+   "Q17527288",
+   "Q17527324",
+   "Q17527329",
+   "Q17527336",
+   "Q17527340",
+   "Q17527359",
+   "Q17527395",
+   "Q17527406",
+   "Q17527411",
+   "Q17527451",
+   "Q17527453",
+   "Q17527467",
+   "Q17527488",
+   "Q17527527",
+   "Q17527534",
+   "Q17527538",
+   "Q17527545",
+   "Q17527553",
+   "Q17527585",
+   "Q17527594",
+   "Q17527596",
+   "Q17527632",
+   "Q17527730",
+   "Q17527758",
+   "Q17527773",
+   "Q17527839",
+   "Q17527866",
+   "Q17527875",
+   "Q17527881",
+   "Q17527939",
+   "Q17527959",
+   "Q17528032",
+   "Q17528039",
+   "Q17528068",
+   "Q17528076",
+   "Q17528494",
+   "Q17528547",
+   "Q17528557",
+   "Q17528596",
+   "Q17528694",
+   "Q17528837",
+   "Q17528874",
+   "Q17528894",
+   "Q17528934",
+   "Q17528939",
+   "Q17528941",
+   "Q17529011",
+   "Q17529213",
+   "Q17529242",
+   "Q17529369",
+   "Q17529382",
+   "Q17529418",
+   "Q17529505",
+   "Q17529537",
+   "Q17529649",
+   "Q17529811",
+   "Q17529928",
+   "Q17529985",
+   "Q17530099",
+   "Q17530112",
+   "Q17530339",
+   "Q17530376",
+   "Q17530548",
+   "Q17530601",
+   "Q17530609",
+   "Q17530622",
+   "Q17530637",
+   "Q17530674",
+   "Q17531712",
+   "Q17531925",
+   "Q17532979",
+   "Q17533009",
+   "Q17533198",
+   "Q17533219",
+   "Q17533281",
+   "Q17534917",
+   "Q17535060",
+   "Q17535811",
+   "Q17536013",
+   "Q17536407",
+   "Q17537310",
+   "Q17537380",
+   "Q17538183",
+   "Q17538199",
+   "Q17538204",
+   "Q17538219",
+   "Q17538305",
+   "Q17541524",
+   "Q17546413",
+   "Q17546656",
+   "Q17547119",
+   "Q17548847",
+   "Q17549614",
+   "Q17554095",
+   "Q17567452",
+   "Q17567456",
+   "Q17567477",
+   "Q17567493",
+   "Q17567532",
+   "Q17567552",
+   "Q17567875",
+   "Q17567993",
+   "Q17567998",
+   "Q17568103",
+   "Q17568252",
+   "Q17568297",
+   "Q17568413",
+   "Q17568417",
+   "Q17568488",
+   "Q17568504",
+   "Q17568524",
+   "Q17568617",
+   "Q17568662",
+   "Q17568676",
+   "Q17568749",
+   "Q17568821",
+   "Q17568982",
+   "Q17569001",
+   "Q17569245",
+   "Q17569430",
+   "Q17569507",
+   "Q17569620",
+   "Q17569623",
+   "Q17570336",
+   "Q17570452",
+   "Q17570455",
+   "Q17570458",
+   "Q17570463",
+   "Q17570470",
+   "Q17570498",
+   "Q17570521",
+   "Q17570567",
+   "Q17570590",
+   "Q17570598",
+   "Q17570609",
+   "Q17570689",
+   "Q17570855",
+   "Q17570951",
+   "Q17571047",
+   "Q17571112",
+   "Q17572000",
+   "Q17572171",
+   "Q17572174",
+   "Q17572176",
+   "Q17572178",
+   "Q17572182",
+   "Q17572186",
+   "Q17575209",
+   "Q17575239",
+   "Q17576433",
+   "Q17576459",
+   "Q17576503",
+   "Q17576513",
+   "Q17576532",
+   "Q17576572",
+   "Q17577629",
+   "Q17577631",
+   "Q17577722",
+   "Q17577727",
+   "Q17577868",
+   "Q17577874",
+   "Q17577878",
+   "Q17577883",
+   "Q17577886",
+   "Q17577904",
+   "Q17577908",
+   "Q17577924",
+   "Q17578014",
+   "Q17578021",
+   "Q17578028",
+   "Q17578036",
+   "Q17578042",
+   "Q17578375",
+   "Q17578453",
+   "Q17582865",
+   "Q17643622",
+   "Q17677518",
+   "Q17737058",
+   "Q17737225",
+   "Q17741109",
+   "Q17742480",
+   "Q17778220",
+   "Q17843239",
+   "Q1786933",
+   "Q1799857",
+   "Q1814818",
+   "Q18412775",
+   "Q18536",
+   "Q1858077",
+   "Q18602",
+   "Q1867525",
+   "Q1868965",
+   "Q191161",
+   "Q1938714",
+   "Q1949638",
+   "Q195436",
+   "Q1965699",
+   "Q198287",
+   "Q1996368",
+   "Q2017744",
+   "Q2038269",
+   "Q2052231",
+   "Q205666",
+   "Q2061784",
+   "Q208234",
+   "Q2103238",
+   "Q2113456",
+   "Q2120048",
+   "Q2121329",
+   "Q212834",
+   "Q213322",
+   "Q214788",
+   "Q2148102",
+   "Q2160689",
+   "Q217058",
+   "Q2176314",
+   "Q2191338",
+   "Q219867",
+   "Q2280236",
+   "Q2289728",
+   "Q2305375",
+   "Q2323930",
+   "Q23301468",
+   "Q23308",
+   "Q238587",
+   "Q239599",
+   "Q244402",
+   "Q24884364",
+   "Q24896274",
+   "Q24996966",
+   "Q2502213",
+   "Q2507390",
+   "Q252575",
+   "Q254650",
+   "Q2578415",
+   "Q25803046",
+   "Q26317050",
+   "Q2638817",
+   "Q26400498",
+   "Q26429433",
+   "Q26430300",
+   "Q26478973",
+   "Q26539444",
+   "Q26563000",
+   "Q26621248",
+   "Q26625629",
+   "Q2663758",
+   "Q26905475",
+   "Q27080323",
+   "Q2714774",
+   "Q275",
+   "Q28195945",
+   "Q28232156",
+   "Q29014",
+   "Q29052312",
+   "Q2911131",
+   "Q2914560",
+   "Q29347805",
+   "Q2969173",
+   "Q2974562",
+   "Q30054677",
+   "Q30246642",
+   "Q30247365",
+   "Q30693226",
+   "Q3094799",
+   "Q3175922",
+   "Q3178464",
+   "Q3178465",
+   "Q3267914",
+   "Q3286924",
+   "Q32997007",
+   "Q33110888",
+   "Q332474",
+   "Q334399",
+   "Q3420157",
+   "Q3533390",
+   "Q359256",
+   "Q3715786",
+   "Q3739817",
+   "Q3967639",
+   "Q3995634",
+   "Q40759958",
+   "Q4091854",
+   "Q4096567",
+   "Q41225",
+   "Q42182",
+   "Q42888051",
+   "Q4548210",
+   "Q4553520",
+   "Q4728804",
+   "Q4729496",
+   "Q4729651",
+   "Q4733885",
+   "Q4769474",
+   "Q4806060",
+   "Q4808669",
+   "Q4831716",
+   "Q4852226",
+   "Q4859590",
+   "Q4859957",
+   "Q4876598",
+   "Q4878748",
+   "Q4888052",
+   "Q4888645",
+   "Q4923584",
+   "Q492758",
+   "Q4941764",
+   "Q4944342",
+   "Q4946864",
+   "Q4950215",
+   "Q4954402",
+   "Q49642",
+   "Q4967239",
+   "Q4971750",
+   "Q4973682",
+   "Q4975765",
+   "Q4976732",
+   "Q5000832",
+   "Q5015709",
+   "Q5021459",
+   "Q5024235",
+   "Q5032715",
+   "Q503477",
+   "Q5069651",
+   "Q5087579",
+   "Q511108",
+   "Q5117286",
+   "Q5117292",
+   "Q5117380",
+   "Q5117442",
+   "Q5117460",
+   "Q5117469",
+   "Q5117497",
+   "Q5117701",
+   "Q5126771",
+   "Q5149380",
+   "Q5167615",
+   "Q5179307",
+   "Q5180627",
+   "Q5188033",
+   "Q5189405",
+   "Q5199172",
+   "Q5220453",
+   "Q526804",
+   "Q5284397",
+   "Q5301583",
+   "Q5304210",
+   "Q5304555",
+   "Q5306379",
+   "Q5312471",
+   "Q5313140",
+   "Q5323585",
+   "Q532627",
+   "Q5338167",
+   "Q5338172",
+   "Q5357327",
+   "Q5367756",
+   "Q5436016",
+   "Q5470073",
+   "Q5474201",
+   "Q5474586",
+   "Q549614",
+   "Q55018",
+   "Q55076439",
+   "Q5518880",
+   "Q5531709",
+   "Q55635021",
+   "Q5566312",
+   "Q5566534",
+   "Q5576653",
+   "Q5589466",
+   "Q5595137",
+   "Q5599235",
+   "Q5608058",
+   "Q5642211",
+   "Q5645056",
+   "Q5646978",
+   "Q565078",
+   "Q565521",
+   "Q572887",
+   "Q586354",
+   "Q5879027",
+   "Q5897891",
+   "Q5913694",
+   "Q5915447",
+   "Q5933",
+   "Q600367",
+   "Q607700",
+   "Q611390",
+   "Q6137344",
+   "Q6177834",
+   "Q622206",
+   "Q62364",
+   "Q62408",
+   "Q6243358",
+   "Q631871",
+   "Q639208",
+   "Q6407929",
+   "Q6411122",
+   "Q642039",
+   "Q647390",
+   "Q65066178",
+   "Q6515948",
+   "Q6526918",
+   "Q6527355",
+   "Q653858",
+   "Q654780",
+   "Q6652917",
+   "Q6666314",
+   "Q6702876",
+   "Q6771659",
+   "Q6772142",
+   "Q6777739",
+   "Q6792220",
+   "Q68202281",
+   "Q6820682",
+   "Q686563",
+   "Q691153",
+   "Q7006597",
+   "Q7006603",
+   "Q7018771",
+   "Q7061502",
+   "Q7084164",
+   "Q7084477",
+   "Q7165644",
+   "Q7193662",
+   "Q720102",
+   "Q7210212",
+   "Q7226022",
+   "Q7242844",
+   "Q7252283",
+   "Q7290153",
+   "Q729177",
+   "Q7369590",
+   "Q7371158",
+   "Q7374052",
+   "Q7374192",
+   "Q7374418",
+   "Q7396850",
+   "Q7397090",
+   "Q7429677",
+   "Q7493665",
+   "Q751081",
+   "Q7587136",
+   "Q7587142",
+   "Q7590140",
+   "Q7590171",
+   "Q7592343",
+   "Q7592459",
+   "Q7592529",
+   "Q7592548",
+   "Q7592558",
+   "Q7592597",
+   "Q7592682",
+   "Q7592791",
+   "Q7593461",
+   "Q7593501",
+   "Q7593597",
+   "Q7593714",
+   "Q7593928",
+   "Q7593999",
+   "Q7594190",
+   "Q7594398",
+   "Q7594420",
+   "Q7594430",
+   "Q7594480",
+   "Q7594603",
+   "Q7594623",
+   "Q7594625",
+   "Q7594714",
+   "Q7594740",
+   "Q7594747",
+   "Q7594951",
+   "Q7594969",
+   "Q7595111",
+   "Q7595119",
+   "Q7595351",
+   "Q7595403",
+   "Q7595476",
+   "Q7595650",
+   "Q7600096",
+   "Q7600449",
+   "Q7622436",
+   "Q7646820",
+   "Q7690022",
+   "Q7698324",
+   "Q7730592",
+   "Q7733163",
+   "Q7747302",
+   "Q775473",
+   "Q7756122",
+   "Q7769735",
+   "Q7809742",
+   "Q7829765",
+   "Q7836749",
+   "Q7845421",
+   "Q7884143",
+   "Q7926830",
+   "Q7969192",
+   "Q797085",
+   "Q7980976",
+   "Q7983010",
+   "Q7983825",
+   "Q7990686",
+   "Q799488",
+   "Q800823",
+   "Q800825",
+   "Q8024616",
+   "Q810953",
+   "Q810981",
+   "Q816241",
+   "Q8709",
+   "Q880905",
+   "Q881739",
+   "Q893229",
+   "Q895434",
+   "Q897169",
+   "Q8981",
+   "Q90804634",
+   "Q915814",
+   "Q922620",
+   "Q931796",
+   "Q933000",
+   "Q937842",
+   "Q940507",
+   "Q96407050",
+   "Q968420",
+   "Q97148711"
+  ]
+ },
+ "lidar": {
+  "footprints_by_nation": {
+   "?": 1,
+   "England": 7336,
+   "Guernsey": 36,
+   "Isle of Man": 319,
+   "Jersey": 69,
+   "Northern Ireland": 71,
+   "Republic of Ireland": 618,
+   "Scotland": 1670,
+   "Wales": 386
+  },
+  "england_sample": 40,
+  "england_covered": 40,
+  "england_failed": 0,
+  "missing": []
+ },
+ "scans": {
+  "searched": 80,
+  "with_open_models": 20,
+  "records": [
+   {
+    "id": "Q816437",
+    "name": "Skara Brae",
+    "models": [
+     {
+      "name": "Skara Brae",
+      "uri": "https://sketchfab.com/3d-models/none-aa15119dd2554ee3876ac2f2ffe05fbd",
+      "licence": "CC Attribution",
+      "user": "megalitharchive"
+     },
+     {
+      "name": "Room at Skara Brae",
+      "uri": "https://sketchfab.com/3d-models/none-8b7af209a39b4ac9a4ab1bd5fe832517",
+      "licence": "CC Attribution",
+      "user": "rmark"
+     }
+    ]
+   },
+   {
+    "id": "Q840462",
+    "name": "St Martin's Church",
+    "models": [
+     {
+      "name": "St Martin's Bell",
+      "uri": "https://sketchfab.com/3d-models/none-3c1e72cd82e94f94a393bd0d966d01c6",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     }
+    ]
+   },
+   {
+    "id": "Q29265",
+    "name": "Canterbury Cathedral",
+    "models": [
+     {
+      "name": "Door Canterbury Cathedral  grounds, Photocatch",
+      "uri": "https://sketchfab.com/3d-models/none-071c23c85d5b453894bb73bae8af5c3b",
+      "licence": "CC Attribution",
+      "user": "moshecaine"
+     },
+     {
+      "name": "Door to Canterbury Cathedral  grounds, Metashape",
+      "uri": "https://sketchfab.com/3d-models/none-6ab1be59b03840c6a7d394451f373860",
+      "licence": "CC Attribution",
+      "user": "moshecaine"
+     },
+     {
+      "name": "Canterbury Cathedral",
+      "uri": "https://sketchfab.com/3d-models/none-a8ce8b435f8d4e35bfb19bf5bb086afb",
+      "licence": "CC Attribution",
+      "user": "ishan.bs2015"
+     }
+    ]
+   },
+   {
+    "id": "Q5073092",
+    "name": "Chapel of St Peter-on-the-Wall",
+    "models": [
+     {
+      "name": "Chapel of St Peter-on-the-Wall",
+      "uri": "https://sketchfab.com/3d-models/none-c0155b3078dc4736a7a72ebe07a3dd08",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     }
+    ]
+   },
+   {
+    "id": "Q951830",
+    "name": "Royal Mint",
+    "models": [
+     {
+      "name": "Royal Mint - LA CASA DE PAPEL",
+      "uri": "https://sketchfab.com/3d-models/none-0d9d3d1d4833475e9031982f5c63245c",
+      "licence": "CC Attribution",
+      "user": "anurag.anand"
+     },
+     {
+      "name": "lacasa de  papel royal mint of spain  3d model",
+      "uri": "https://sketchfab.com/3d-models/none-50bbd4d18a4249e591bf8c8fb5827891",
+      "licence": "CC Attribution",
+      "user": "kichujoy10"
+     },
+     {
+      "name": "Royal Mint Of Spain",
+      "uri": "https://sketchfab.com/3d-models/none-5c75d90d5e8841678bff466d46197f17",
+      "licence": "CC Attribution",
+      "user": "senmahendra421"
+     },
+     {
+      "name": "The Royal Mint of Spain [ Money Heist].",
+      "uri": "https://sketchfab.com/3d-models/none-50ed4bc05bad44cda871e64d6bb7eafb",
+      "licence": "CC Attribution",
+      "user": "Wasimakram_yt"
+     }
+    ]
+   },
+   {
+    "id": "Q1067803",
+    "name": "Christ Church Cathedral, Dublin",
+    "models": [
+     {
+      "name": "Dublin: Christ Church Cathedral crypt entrance",
+      "uri": "https://sketchfab.com/3d-models/none-794f1a03debb4f239d5281ff360addc5",
+      "licence": "CC Attribution",
+      "user": "b-unicycling"
+     },
+     {
+      "name": "Christ Church Cathedral crypt: stop 1",
+      "uri": "https://sketchfab.com/3d-models/none-62bfaff9e39140df92cdfab8e9286143",
+      "licence": "CC Attribution",
+      "user": "b-unicycling"
+     },
+     {
+      "name": "Christ Church Cathedral Crypt: Stop 2",
+      "uri": "https://sketchfab.com/3d-models/none-8a84da6bd99042cd9bd9b93502ba7290",
+      "licence": "CC Attribution",
+      "user": "b-unicycling"
+     }
+    ]
+   },
+   {
+    "id": "Q4891993",
+    "name": "Berkeley Castle",
+    "models": [
+     {
+      "name": "Berkeley Castle",
+      "uri": "https://sketchfab.com/3d-models/none-002a31cd5c7342a7b00740e65e955d0b",
+      "licence": "CC Attribution",
+      "user": "agt14032013"
+     }
+    ]
+   },
+   {
+    "id": "Q727760",
+    "name": "Lincoln Castle",
+    "models": [
+     {
+      "name": "Bath House inside Lincoln Castle's North wall",
+      "uri": "https://sketchfab.com/3d-models/none-10bc1bbec4c045f9b15fc2156b5e32ee",
+      "licence": "CC Attribution",
+      "user": "Ashley.Push"
+     },
+     {
+      "name": "King George III Statue in Lincoln Castle",
+      "uri": "https://sketchfab.com/3d-models/none-d44b55b8a1a24dd095eab557afdb7ed9",
+      "licence": "CC Attribution",
+      "user": "mooreheadmodels"
+     }
+    ]
+   },
+   {
+    "id": "Q42646",
+    "name": "Windsor Castle",
+    "models": [
+     {
+      "name": "05- Windsor Castle",
+      "uri": "https://sketchfab.com/3d-models/none-73eb3e5e1d6b4293ad44423db6f61d9a",
+      "licence": "CC Attribution",
+      "user": "skeatz"
+     }
+    ]
+   },
+   {
+    "id": "Q429379",
+    "name": "Hereford Cathedral",
+    "models": [
+     {
+      "name": "Hereford Cathedral Font",
+      "uri": "https://sketchfab.com/3d-models/none-28bf9ca970374e9ca442f40264d93dcc",
+      "licence": "CC Attribution",
+      "user": "morturn"
+     }
+    ]
+   },
+   {
+    "id": "Q2061784",
+    "name": "St Margaret's",
+    "models": [
+     {
+      "name": "St Margaret's Church Benfleet",
+      "uri": "https://sketchfab.com/3d-models/none-390a21921ffd42309c2b341afe657df4",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "St Margaret's Church Graves",
+      "uri": "https://sketchfab.com/3d-models/none-ffd780be5870494381acc725e3636651",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "St Margaret's Church",
+      "uri": "https://sketchfab.com/3d-models/none-a98b3fcfcb8f41f2b22c406235a81731",
+      "licence": "CC Attribution",
+      "user": "prodigypictures"
+     },
+     {
+      "name": "Stump at St Margaret's, Binsey",
+      "uri": "https://sketchfab.com/3d-models/none-09cca89fb586486387afb00906d559c6",
+      "licence": "CC Attribution",
+      "user": "BenjaminHallMOXDAR"
+     }
+    ]
+   },
+   {
+    "id": "Q164946",
+    "name": "St Bartholomew's Hospital",
+    "models": [
+     {
+      "name": "St Bartholomew-the-Less Interior",
+      "uri": "https://sketchfab.com/3d-models/none-f79936b9f5e74db8adef79e24a5e3800",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     }
+    ]
+   },
+   {
+    "id": "Q26268184",
+    "name": "Abbey Mill",
+    "models": [
+     {
+      "name": "Abbey Mills Centrifugal Pump",
+      "uri": "https://sketchfab.com/3d-models/none-a8d4539614924a25ac093fc304a8b64f",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "Abbey Mills Pumping Station Tower",
+      "uri": "https://sketchfab.com/3d-models/none-fe9fd0edcab74b6193800e4a6edcd190",
+      "licence": "CC Attribution",
+      "user": "urbandave"
+     }
+    ]
+   },
+   {
+    "id": "Q1473348",
+    "name": "Glasgow Cathedral",
+    "models": [
+     {
+      "name": "Glasgow Cathedral Disciples",
+      "uri": "https://sketchfab.com/3d-models/none-a408b54cc04741628887e4dd065d0cb9",
+      "licence": "CC Attribution",
+      "user": "kastenmegan"
+     },
+     {
+      "name": "Venomouse Art Sculpture at Glasgow Cathedral",
+      "uri": "https://sketchfab.com/3d-models/none-5496ac11b2d34a9eb30aaf6df8614aa0",
+      "licence": "CC Attribution",
+      "user": "teachingtechie"
+     },
+     {
+      "name": "Glasgow Cathedral: Arcade Fragment",
+      "uri": "https://sketchfab.com/3d-models/none-6eee046af2374bd1a5ef6342ae968004",
+      "licence": "CC Attribution",
+      "user": "b-unicycling"
+     }
+    ]
+   },
+   {
+    "id": "Q17527935",
+    "name": "Clattern Bridge",
+    "models": [
+     {
+      "name": "Clattern Bridge",
+      "uri": "https://sketchfab.com/3d-models/none-19bb01f28c0c4cd69e60006b033ec748",
+      "licence": "CC Attribution",
+      "user": "dch252"
+     }
+    ]
+   },
+   {
+    "id": "Q4819493",
+    "name": "Auckland Castle",
+    "models": [
+     {
+      "name": "Auckland Castle Western Curtain Wall ? Gatehouse",
+      "uri": "https://sketchfab.com/3d-models/none-245d849a767a4bad96b2fc29fafbd49b",
+      "licence": "CC Attribution",
+      "user": "altogetherarchaeology"
+     },
+     {
+      "name": "Auckland Castle (ANW16) Dig Curtain Wall",
+      "uri": "https://sketchfab.com/3d-models/none-e5701375723d45d193164b5f63290bb8",
+      "licence": "CC Attribution",
+      "user": "altogetherarchaeology"
+     },
+     {
+      "name": "Auckland Castle Southern Curtain Wall Range",
+      "uri": "https://sketchfab.com/3d-models/none-d7f50726c6894c159f7e4f3d71b3be22",
+      "licence": "CC Attribution",
+      "user": "altogetherarchaeology"
+     },
+     {
+      "name": "Auckland Castle ANW16 Dig",
+      "uri": "https://sketchfab.com/3d-models/none-74d46e3fa0854b75a0f9c951471b6ca1",
+      "licence": "CC Attribution",
+      "user": "altogetherarchaeology"
+     },
+     {
+      "name": "Auckland Castle Curtain Wall HD",
+      "uri": "https://sketchfab.com/3d-models/none-c1edc9d888a049cf877fbbe7fdc49c80",
+      "licence": "CC Attribution",
+      "user": "altogetherarchaeology"
+     }
+    ]
+   },
+   {
+    "id": "Q250115",
+    "name": "Monnow Bridge",
+    "models": [
+     {
+      "name": "Doorway from Monnow Bridge in Monmouth",
+      "uri": "https://sketchfab.com/3d-models/none-9876eea15f9848d58a360372135be6d1",
+      "licence": "CC Attribution",
+      "user": "portablecomputing"
+     }
+    ]
+   },
+   {
+    "id": "Q3306356",
+    "name": "Chirk Castle",
+    "models": [
+     {
+      "name": "Chirk Castle",
+      "uri": "https://sketchfab.com/3d-models/none-898a6b1122fc45669f525fe1f4d4e296",
+      "licence": "CC Attribution",
+      "user": "Easarchaeology"
+     }
+    ]
+   },
+   {
+    "id": "Q6670230",
+    "name": "The Charterhouse",
+    "models": [
+     {
+      "name": "The Charterhouse Chapel Cloister",
+      "uri": "https://sketchfab.com/3d-models/none-534bb12eed304ecfa1f6570717935c88",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "The Charterhouse Chapel",
+      "uri": "https://sketchfab.com/3d-models/none-c587d4db0d8745dc9c0aee0e6dea47a9",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "The Charterhouse Great Chamber",
+      "uri": "https://sketchfab.com/3d-models/none-50e692c037784347b289d7bbcb318bed",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "The Charterhouse Norfolk Cloister",
+      "uri": "https://sketchfab.com/3d-models/none-7b49c85a367e493fabaaddf099716e8c",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "The Charterhouse Gatehouse",
+      "uri": "https://sketchfab.com/3d-models/none-8497a1f3cc3742aba9acf2d92ecc376d",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     }
+    ]
+   },
+   {
+    "id": "Q7592331",
+    "name": "St Andrew's Church",
+    "models": [
+     {
+      "name": "St Andrew's Church South Huish",
+      "uri": "https://sketchfab.com/3d-models/none-84e4d984e29c4c9ca9b2bde12e6032b4",
+      "licence": "CC Attribution",
+      "user": "artfletch"
+     },
+     {
+      "name": "Cellar Stairs at St Andrew's Church, Ampthill",
+      "uri": "https://sketchfab.com/3d-models/none-4b806c7fd70d4ae6a416bc8a2ddae8b6",
+      "licence": "CC Attribution",
+      "user": "mooreheadmodels"
+     },
+     {
+      "name": "St Andrew's Church B358131813001063A0",
+      "uri": "https://sketchfab.com/3d-models/none-2945b0bd74ac44fb9729dea372ae8294",
+      "licence": "CC Attribution",
+      "user": "patrick.young"
+     },
+     {
+      "name": "St Andrew's Church Door, Ampthill",
+      "uri": "https://sketchfab.com/3d-models/none-f5114d4f04154f0d8f5a75066e18f147",
+      "licence": "CC Attribution",
+      "user": "mooreheadmodels"
+     }
+    ]
+   }
+  ],
+  "note": "Downloadable under CC BY, CC BY-SA or CC0 on Sketchfab; downloading needs a Sketchfab account; many are artists' models, not surveys, so each needs looking at."
+ },
+ "inventories": {
+  "count": 31,
+  "items": [
+   {
+    "id": "inventoryofhist00roya",
+    "title": "An inventory of the historical monuments in Hertfordshire",
+    "year": 1911
+   },
+   {
+    "id": "inventoryofancie00roya",
+    "title": "An inventory of the ancient and historical monuments of the county of Montgomery",
+    "year": 1911
+   },
+   {
+    "id": "inventoryofhisto00roya",
+    "title": "An inventory of the historical monuments in Hertfordshire",
+    "year": 1911
+   },
+   {
+    "id": "inventoryofhisto02greauoft",
+    "title": "An inventory of the historical monuments in Buckinghamshire",
+    "year": 1912
+   },
+   {
+    "id": "inventoryofhisto01roya",
+    "title": "An inventory of the historical monuments in Buckinghamshire ..",
+    "year": 1912
+   },
+   {
+    "id": "cu31924015705787",
+    "title": "An inventory of the historical monuments in Buckinghamshire ..",
+    "year": 1912
+   },
+   {
+    "id": "inventoryofhisto02roya",
+    "title": "An inventory of the historical monuments in Buckinghamshire ..",
+    "year": 1912
+   },
+   {
+    "id": "inventoryofhisto01greauoft",
+    "title": "An inventory of the historical monuments in Buckinghamshire",
+    "year": 1912
+   },
+   {
+    "id": "inventoryofhisto03grea",
+    "title": "An inventory of the historical monuments in Essex",
+    "year": 1916
+   },
+   {
+    "id": "inventoryofhisto04grea",
+    "title": "An inventory of the historical monuments in Essex",
+    "year": 1916
+   },
+   {
+    "id": "inventoryofhist01grea",
+    "title": "An inventory of the historical monuments in Essex",
+    "year": 1916
+   },
+   {
+    "id": "royalcommissiono0002roya",
+    "title": "Royal Commission On Historical Monuments , An Inventory Of The Historical Monuments In London: Vol. I. Westminster Abbey",
+    "year": 1924
+   },
+   {
+    "id": "royalcommissiono0000noau",
+    "title": "Royal Commission on Historical Monuments (England); an inventory of the historical monuments in London, volume 3, Roman London.",
+    "year": 1928
+   },
+   {
+    "id": "bwb_KV-186-456_4",
+    "title": "Royal Commission on Historical Monuments ( Englan) an Inventory of the Historical Monuments in London",
+    "year": 1929
+   },
+   {
+    "id": "bwb_KV-186-455",
+    "title": "Royal Commission on Historical Monuments ( Englan) an Inventory of the Historical Monuments in London",
+    "year": 1930
+   },
+   {
+    "id": "bwb_KV-186-483",
+    "title": "An Inventory Of The Historical Monuments In Herefordshire",
+    "year": 1932
+   },
+   {
+    "id": "bwb_KV-186-374",
+    "title": "An Inventory of the Historical Monuments in Middlesex",
+    "year": 1937
+   },
+   {
+    "id": "inventoryofhisto0000roya_a7z1",
+    "title": "An inventory of the historical monuments in the City of Oxford",
+    "year": 1939
+   },
+   {
+    "id": "bwb_KS-435-578",
+    "title": "City of Oxford: An Inventory of the Historical Monuments",
+    "year": 1939
+   },
+   {
+    "id": "inventoryofhisto0000grea",
+    "title": "An inventory of the historical monuments in the city of Oxford",
+    "year": 1939
+   },
+   {
+    "id": "countyofdorset0002unse_no2",
+    "title": "An inventory of the historical monuments in Dorset",
+    "year": 1952
+   },
+   {
+    "id": "countyofdorset0000unse_no1",
+    "title": "An inventory of the historical monuments in Dorset",
+    "year": 1952
+   },
+   {
+    "id": "countyofdorset0002unse_no3",
+    "title": "An inventory of the historical monuments in Dorset",
+    "year": 1952
+   },
+   {
+    "id": "inventoryofancie0011roya",
+    "title": "An Inventory of the Ancient and Historical Monuments of Roxburghshire Volume 1",
+    "year": 1956
+   },
+   {
+    "id": "inventoryofancie0000roya_p4x5",
+    "title": "An inventory of the ancient and historical monuments of Selkirkshire with the fifteenth report of the Commission",
+    "year": 1957
+   },
+   {
+    "id": "inventoryofhisto0000roya",
+    "title": "An inventory of the historical monuments in the city of Cambridge",
+    "year": 1959
+   },
+   {
+    "id": "inventoryofhisto0000roya_o4e6",
+    "title": "An inventory of the historical monuments in the city of York",
+    "year": 1962
+   },
+   {
+    "id": "inventoryofhisto0002roya",
+    "title": "An inventory of the historical monuments in the city of York",
+    "year": 1962
+   },
+   {
+    "id": "inventoryofhisto0002vari",
+    "title": "AN INVENTORY OF HISTORICAL MONUMENTS IN THE COUNTRY OF DORSET",
+    "year": 1970
+   },
+   {
+    "id": "inventoryofhisto0002unse",
+    "title": "an inventory of historical monuments in the county fo cambridge",
+    "year": 1972
+   },
+   {
+    "id": "inventoryofhisto0000roya_e1s7",
+    "title": "An inventory of the historical monuments in the County of Northampton",
+    "year": 1975
+   }
+  ]
+ }
+}

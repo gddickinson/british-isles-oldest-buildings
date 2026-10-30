@@ -144,6 +144,7 @@ function renderDetail(b, inModal) {
         <button class="btn small ghost tg-wide" data-cmp="${esc(b.id)}">${store.get(CMP).includes(b.id) ? "⇄ In compare" : "⇄ Add to compare"}</button>
         ${mapButton(b)}
         ${window.MODELS3D?.[b.id] ? `<a class="btn small" href="${esc(window.MODELS3D[b.id])}">🪨 3D model</a>` : ""}
+        ${!IS_STATIC && b.nation === "England" && b.footprint ? `<a class="btn small ghost" href="/model/lidar/${encodeURIComponent(b.id)}" title="The building as the Environment Agency's LiDAR survey saw it">🛰 LiDAR 3D</a>` : ""}
         ${CAN_EDIT ? '<button class="btn small ghost" id="edit_open">✎ Correct this record</button>' : ""}
       </div>
       ${b.description ? `<p class="lede">${esc(b.description)}</p>` : ""}

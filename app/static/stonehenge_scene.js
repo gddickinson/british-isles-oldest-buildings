@@ -42,6 +42,7 @@ export function grassTexture() {
 // The LiDAR ground, cut to a disc of radius `rad` (the land beyond takes over there).
 function ground(dtm, height, rad) {
   const n = dtm.n, pos = [], uv = [], idx = [];
+  let mesh_cast = false;                                 // a LiDAR surface casts its own shadows (towers, trees)
   for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
     const x = dtm.x0 + j * dtm.step, y = dtm.y0 - i * dtm.step;
     pos.push(x, height(Math.min(x, dtm.x0 + (n - 1.01) * dtm.step), Math.max(y, dtm.y0 - (n - 1.01) * dtm.step)) ?? 0, -y);
@@ -58,8 +59,22 @@ function ground(dtm, height, rad) {
   geo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
   geo.setIndex(idx);
   geo.computeVertexNormals();
-  const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: grassTexture(), roughness: 1, color: 0xffffff }));
+  let mat = new THREE.MeshStandardMaterial({ map: grassTexture(), roughness: 1, color: 0xffffff });
+  if (dtm.classes) {          // a LiDAR surface (bidb.model_lidar): colour each metre by what it is
+    const cls = Uint8Array.from(atob(dtm.classes), (ch) => ch.charCodeAt(0));
+    const COL = [[0.42, 0.53, 0.29], [0.74, 0.69, 0.6], [0.6, 0.58, 0.55], [0.24, 0.35, 0.19]];   // ground, building, other, trees
+    const col = [];
+    for (let k = 0; k < n * n; k++) {
+      const c = COL[cls[k]] ?? COL[0], v = 0.9 + 0.1 * noise3((k % n) / 7, Math.floor(k / n) / 7, 0.3, 5);
+      col.push(c[0] * v, c[1] * v, c[2] * v);
+    }
+    geo.setAttribute("color", new THREE.Float32BufferAttribute(col, 3));
+    mat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.95 });
+    mesh_cast = true;
+  }
+  const mesh = new THREE.Mesh(geo, mat);
   mesh.receiveShadow = true;
+  mesh.castShadow = mesh_cast;
   return mesh;
 }
 

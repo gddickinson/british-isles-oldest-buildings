@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Festivals and seasons · British Isles Oldest Buildings{% endblock %}
+{% block body %}
+<main class="page festivals-page">
+  <div id="fe_index">
+    <h1>Festivals and seasons</h1>
+    <p class="prose">The year's feasts and festivals through the buildings, monuments and places of the isles: where
+      Christmas was kept and banned, the tombs that catch the midwinter sunrise, the churches of each saint, the hills
+      of the old quarter-day fires, the ghosts of Halloween and the cellars of the Gunpowder Plot. Each festival has its
+      history, customs, legends and food with their sources quoted and checked, the places to visit, and what the
+      catalogue holds for it: churches, stories, sky alignments, what happened on the day.</p>
+    <div class="fe-top">
+      <svg id="fe_wheel" class="fe-wheel" viewBox="-160 -160 320 320" role="img" aria-label="The festivals round the year"></svg>
+      <div>
+        <div class="pron-chips" id="fe_seasons" aria-label="Season"></div>
+        <p id="fe_next" class="fe-next" aria-live="polite"></p>
+      </div>
+    </div>
+    <div id="fe_cards" class="fe-cards"></div>
+  </div>
+  <div id="fe_page" class="hidden"></div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='festivals_lib.js') }}"></script>
+<script src="{{ url_for('static', filename='festivals.js') }}"></script>
+{% endblock %}

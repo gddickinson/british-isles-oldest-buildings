@@ -1,0 +1,557 @@
+{
+ "id": "christmas",
+ "title": "Christmas and Yule",
+ "also": [
+  "Yule",
+  "Nadolig (Welsh)",
+  "Nollaig (Irish)",
+  "Nollick (Manx)",
+  "Yule (Scots)"
+ ],
+ "season": "winter",
+ "when": {
+  "date": "12-25"
+ },
+ "when_text": "25 December; the twelve days run to Twelfth Night, 5 January, and Epiphany on 6 January",
+ "intro": "Christmas falls just after the shortest days of the year, when the oldest tombs in the isles were built to catch the low midwinter sun. Its customs here are a mix of church services, royal ceremony, food and songs, and they were twice outlawed in the seventeenth century. Wales, Ireland and the Isle of Man keep customs of their own, from dawn carol services to a holiday for women.",
+ "facts": [
+  {
+   "kind": "sky",
+   "title": "Midwinter sunrise inside Newgrange",
+   "year": -3100,
+   "text": "Newgrange in the Boyne valley is built so that the rising sun at the winter solstice shines through a slot over the entrance, the roofbox, and along the passage into the chamber. The light lasts about seventeen minutes; the first person in modern times to see it was the archaeologist Michael O'Kelly in 1967.",
+   "where": {
+    "name": "Newgrange",
+    "lat": 53.6947,
+    "lon": -6.4756,
+    "qid": "Q339503"
+   },
+   "sources": [
+    {
+     "title": "Newgrange (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newgrange",
+     "locator": "section Solar alignment",
+     "quote": "This illumination lasts for approximately 17 minutes. Michael J. O'Kelly was the first person in modern times to observe this event on 21 December 1967."
+    }
+   ]
+  },
+  {
+   "kind": "sky",
+   "title": "Maeshowe catches the midwinter sunset",
+   "year": -2800,
+   "text": "In Orkney the passage of the chambered tomb of Maeshowe faces the other way from Newgrange's: it lets in the light of the setting sun for a few days either side of the winter solstice, so that it reaches the back wall of the chamber.",
+   "where": {
+    "name": "Maeshowe",
+    "lat": 58.9966,
+    "lon": -3.1882,
+    "qid": "Q507076"
+   },
+   "sources": [
+    {
+     "title": "Maeshowe (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maeshowe",
+     "locator": "article text",
+     "quote": "lets the direct light of the setting sun into the chamber for a few days on each side of the winter solstice"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Bede's 'Mothers' night'",
+   "year": 726,
+   "text": "The Northumbrian monk Bede wrote around 726 that the pagan English had called December and January the months of Yule, Giuli, and began their year on 25 December, a night they called Modranecht, 'Mothers' night'. It is the oldest account of a midwinter feast among the English; very little else is known about it.",
+   "sources": [
+    {
+     "title": "Yule (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Yule",
+     "locator": "section Etymology",
+     "quote": "Bede further writes that the heathen English started their year on 25 December, when Christians celebrate the birth of Jesus, and says that they called this Modranecht (\"Mothers' night\")."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "A king crowned on Christmas Day",
+   "year": 1066,
+   "text": "William the Conqueror was crowned in Westminster Abbey on Christmas Day 1066, while the nave was still being built. The date copied the coronations of the Byzantine and Holy Roman emperors.",
+   "where": {
+    "name": "Westminster Abbey",
+    "lat": 51.4994,
+    "lon": -0.1275,
+    "qid": "Q5933"
+   },
+   "sources": [
+    {
+     "title": "Coronation of William the Conqueror (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coronation_of_William_the_Conqueror",
+     "locator": "article text",
+     "quote": "The date chosen, Christmas Day, Monday 25 December, was in imitation of the customary date for the coronations of the eastern Byzantine emperors and the western Holy Roman emperors."
+    },
+    {
+     "title": "Christmas (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas",
+     "locator": "section Middle Ages",
+     "quote": "King William I of England was crowned on Christmas Day 1066."
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "The thorn that flowers at Christmas",
+   "year": 1520,
+   "text": "The Glastonbury Thorn, a hawthorn that blooms in winter, is said in legend to have grown from the staff of Joseph of Arimathea. The thorn is first mentioned in a pamphlet of 1520, and a flowering sprig is still sent to the monarch every Christmas.",
+   "where": {
+    "name": "Glastonbury Abbey",
+    "lat": 51.1461,
+    "lon": -2.7153,
+    "qid": "Q544113"
+   },
+   "sources": [
+    {
+     "title": "Glastonbury Thorn (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
+     "locator": "lead and section History",
+     "quote": "the thorn is first mentioned in a pamphlet published by Richard Pynson in 1520"
+    },
+    {
+     "title": "Glastonbury Thorn (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
+     "locator": "lead",
+     "quote": "A flowering sprig is sent to the British Monarch every Christmas."
+    }
+   ]
+  },
+  {
+   "kind": "oldest",
+   "title": "The first English carols",
+   "year": 1426,
+   "text": "The earliest Christmas carols written down in English are in a manuscript of about 1426 by John Awdlay, a chaplain at Haughmond Abbey in Shropshire. He recorded twenty-five 'caroles of Cristemas', probably sung by wassailers going from house to house.",
+   "where": {
+    "name": "Haughmond Abbey",
+    "lat": 52.7324,
+    "lon": -2.6801,
+    "qid": "Q5682459"
+   },
+   "sources": [
+    {
+     "title": "Christmas carol (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_carol",
+     "locator": "section History",
+     "quote": "The earliest English Christmas carols appear in a 1426 manuscript by the Shropshire chaplain John Awdlay, who recorded twenty-five \"caroles of Cristemas\", likely sung by groups of wassailers traveling from house to house."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Nine Lessons and Carols began in Cornwall",
+   "year": 1880,
+   "text": "The service of Nine Lessons and Carols is best known from King's College, Cambridge, which took it up in 1918, but it began at Truro, where Bishop Edward White Benson led the first one on Christmas Eve 1880, partly to keep men out of the pubs.",
+   "where": {
+    "name": "Truro Cathedral",
+    "lat": 50.2642,
+    "lon": -5.0511,
+    "qid": "Q637460"
+   },
+   "sources": [
+    {
+     "title": "Nine Lessons and Carols (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nine_Lessons_and_Carols",
+     "locator": "section History",
+     "quote": "conducted the first formal service of \"Nine Lessons and Carols\" on Christmas Eve (24 December) 1880. Benson, concerned at the excessive consumption of alcohol in Cornish pubs during the festive season"
+    },
+    {
+     "title": "Nine Lessons and Carols (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nine_Lessons_and_Carols",
+     "locator": "section History",
+     "quote": "Notably in 1918, the Rev. Eric Milner-White the new dean of King's College, Cambridge, introduced the service to the college chapel"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Plygain: carols before dawn",
+   "text": "In Wales the plygain is a carol service held in church between three and six in the morning, traditionally on Christmas Day. It is thought to have replaced the Latin Mass at cockcrow after the Reformation. The carols, often of twenty verses or more, were traditionally sung only by men, and no carol may be sung twice in one service.",
+   "sources": [
+    {
+     "title": "Plygain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plygain",
+     "locator": "lead",
+     "quote": "Plygain is a traditional Welsh Christmas service which takes place in a church between three and six o'clock in the morning, traditionally on Christmas morning."
+    },
+    {
+     "title": "Plygain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plygain",
+     "locator": "section History",
+     "quote": "The plygain service is thought to have been created to replace the traditional Latin pre-Reformation Mass at Cockcrow (missa in gallicantu)."
+    },
+    {
+     "title": "Plygain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plygain",
+     "locator": "section Carols",
+     "quote": "Traditionally the plygain carols were sung only by men."
+    },
+    {
+     "title": "Plygain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plygain",
+     "locator": "section Carols",
+     "quote": "often twenty or more verses"
+    },
+    {
+     "title": "Plygain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plygain",
+     "locator": "section Carols",
+     "quote": "it is considered unacceptable to sing the same carol twice at the same service"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Scotland abolishes the Yule holiday",
+   "year": 1640,
+   "text": "After the Reformation the Kirk discouraged Christmas, and in 1640 the Scottish Parliament abolished the 'Yule vacation and all observation thereof'. Christmas Day only became a public holiday in Scotland in 1958, and Hogmanay was long the bigger winter celebration there.",
+   "sources": [
+    {
+     "title": "Christmas in Scotland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_in_Scotland",
+     "locator": "article text",
+     "quote": "A 1640 act of the Parliament of Scotland abolished the \"Yule vacation and all observation thereof in time coming\"."
+    },
+    {
+     "title": "Christmas in Scotland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_in_Scotland",
+     "locator": "section Post-war period",
+     "quote": "Christmas Day was made a public holiday in 1958 in Scotland, Boxing Day only in 1974. The New Year's Eve festivity, Hogmanay, was by far the largest celebration in Scotland."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Christmas banned in England",
+   "year": 1647,
+   "text": "Parliament banned the celebration of Christmas in England in 1647. There were riots in its favour: for weeks Canterbury was held by rioters who hung holly on doorways and shouted royalist slogans. Christmas came back as a legal holiday with the Restoration in 1660.",
+   "where": {
+    "name": "Canterbury Cathedral",
+    "lat": 51.2797,
+    "lon": 1.0831,
+    "qid": "Q29265"
+   },
+   "sources": [
+    {
+     "title": "Christmas (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas",
+     "locator": "section Reformation into modern times",
+     "quote": "for weeks Canterbury was controlled by the rioters, who decorated doorways with holly and shouted royalist slogans"
+    },
+    {
+     "title": "Christmas (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas",
+     "locator": "section Reformation into modern times",
+     "quote": "Christmas was restored as a legal holiday in England with the Restoration of King Charles II in 1660"
+    }
+   ]
+  },
+  {
+   "kind": "food",
+   "title": "Mince pies once held meat",
+   "text": "Mince pies used to be filled with meat, such as ox tongue, beef or mutton, with spices and fruit. Cheap sugar from the West Indian plantations made them sweeter from the eighteenth century, and in the nineteenth recipes mostly dropped the meat, though the suet stayed.",
+   "sources": [
+    {
+     "title": "Mince pie (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mince_pie",
+     "locator": "lead",
+     "quote": "The meat used in recipes varied, but included neat's tongue (cattle), beef, mutton, tripe and could also include fish."
+    },
+    {
+     "title": "Mince pie (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mince_pie",
+     "locator": "lead",
+     "quote": "The following century recipes increasingly stopped including meat"
+    }
+   ]
+  },
+  {
+   "kind": "food",
+   "title": "Plum pudding without plums",
+   "year": 1714,
+   "text": "Christmas pudding is also called plum pudding, but 'plum' meant a raisin, and the pudding has no plums. The story that it goes back to a medieval custom of thirteen ingredients is a myth: recipes appear from the seventeenth century, one of the earliest in Mary Kettilby's book of 1714.",
+   "sources": [
+    {
+     "title": "Christmas pudding (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_pudding",
+     "locator": "sections Basics, History",
+     "quote": "the pudding does not contain plums in the modern sense of the word"
+    },
+    {
+     "title": "Christmas pudding (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_pudding",
+     "locator": "section Legends",
+     "quote": "One of the earliest plum pudding recipes is given by Mary Kettilby in her 1714 book"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Hunting the wren",
+   "text": "On St Stephen's Day, 26 December, groups in Ireland and the Isle of Man used to hunt a wren, the 'king of the birds', and carry it from house to house. A fake wren is used now; the Manx held a funeral for the bird and danced round a 'wren pole', and the wrenboys still parade in places such as Dingle.",
+   "sources": [
+    {
+     "title": "Wren Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wren_Day",
+     "locator": "lead",
+     "quote": "is an Irish and Manx custom on 26 December, Saint Stephen's Day"
+    },
+    {
+     "title": "Wren Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wren_Day",
+     "locator": "lead",
+     "quote": "On the Isle of Man, they held a funeral for the wren and danced around a 'wren pole'."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Women's Christmas",
+   "text": "In Ireland 6 January, the last day of the Christmas season, is Nollaig na mBan, Women's Christmas. Traditionally the men did the housework that day to give the women a rest, and women still meet friends for a meal or a drink.",
+   "sources": [
+    {
+     "title": "Nollaig na mBan (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nollaig_na_mBan",
+     "locator": "section Ireland",
+     "quote": "men would take on what would have been seen as the traditional \"female\" household duties for the day, giving women the day off"
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Newgrange",
+   "qid": "Q339503",
+   "lat": 53.6947,
+   "lon": -6.4756,
+   "why": "Passage tomb in County Meath whose roofbox lets the midwinter sunrise light the chamber.",
+   "sources": [
+    {
+     "title": "Newgrange (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Newgrange",
+     "locator": "lead",
+     "quote": "It is aligned so that the rising sun on the winter solstice shines through a \"roofbox\" above the entrance and floods the inner chamber."
+    }
+   ]
+  },
+  {
+   "name": "Maeshowe",
+   "qid": "Q507076",
+   "lat": 58.9966,
+   "lon": -3.1882,
+   "why": "Orkney chambered tomb lit by the setting sun around the winter solstice.",
+   "sources": [
+    {
+     "title": "Maeshowe (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maeshowe",
+     "locator": "article text",
+     "quote": "The monument is aligned so that sunlight enters the passage at the winter solstice and reaches the rear wall of the central chamber."
+    }
+   ]
+  },
+  {
+   "name": "Westminster Abbey",
+   "qid": "Q5933",
+   "lat": 51.4994,
+   "lon": -0.1275,
+   "why": "Where William the Conqueror was crowned on Christmas Day 1066.",
+   "sources": [
+    {
+     "title": "Coronation of William the Conqueror (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Coronation_of_William_the_Conqueror",
+     "locator": "article text",
+     "quote": "this was despite the nave of the church still being under construction"
+    }
+   ]
+  },
+  {
+   "name": "Glastonbury Abbey",
+   "qid": "Q544113",
+   "lat": 51.1461,
+   "lon": -2.7153,
+   "why": "The abbey grows a Glastonbury Thorn, the winter-flowering hawthorn of the Joseph of Arimathea legend.",
+   "sources": [
+    {
+     "title": "Glastonbury Thorn (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
+     "locator": "lead",
+     "quote": "with one tree growing at Glastonbury Abbey and another in the churchyard of the Church of St John"
+    }
+   ]
+  },
+  {
+   "name": "Church of St John the Baptist, Glastonbury",
+   "qid": "Q5117447",
+   "lat": 51.1482,
+   "lon": -2.7162,
+   "why": "Its churchyard thorn, grown from the Glastonbury Thorn, gives the blossom sent to the monarch each Christmas; local children sing carols round it.",
+   "sources": [
+    {
+     "title": "Church of St John the Baptist, Glastonbury (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Church_of_St_John_the_Baptist,_Glastonbury",
+     "locator": "section Churchyard",
+     "quote": "A blossom from this tree is sent to the reigning monarch every Christmas."
+    }
+   ]
+  },
+  {
+   "name": "Haughmond Abbey",
+   "qid": "Q5682459",
+   "lat": 52.7324,
+   "lon": -2.6801,
+   "why": "Home of John Audelay (Awdlay), whose poems hold some of the first Christmas carols recorded in English.",
+   "sources": [
+    {
+     "title": "John Awdlay (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/John_Awdlay",
+     "locator": "lead",
+     "quote": "was an English priest and poet from Haughmond Abbey, in Shropshire"
+    }
+   ]
+  },
+  {
+   "name": "Truro Cathedral",
+   "qid": "Q637460",
+   "lat": 50.2642,
+   "lon": -5.0511,
+   "why": "Where the service of Nine Lessons and Carols began, in 1880.",
+   "sources": [
+    {
+     "title": "Nine Lessons and Carols (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Nine_Lessons_and_Carols",
+     "locator": "section History",
+     "quote": "its origins are attributed to Truro Cathedral in Cornwall"
+    }
+   ]
+  },
+  {
+   "name": "King's College Chapel, Cambridge",
+   "qid": "Q1263246",
+   "lat": 52.2048,
+   "lon": 0.1165,
+   "why": "Its Christmas Eve Festival of Nine Lessons and Carols, held since 1918, is the best known in the world.",
+   "sources": [
+    {
+     "title": "Christmas carol (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_carol",
+     "locator": "section Church use",
+     "quote": "the famous Festival of Nine Lessons and Carols at King's College, Cambridge"
+    }
+   ]
+  },
+  {
+   "name": "St Silin's Church, Llansilin",
+   "qid": "Q17743354",
+   "lat": 52.8454,
+   "lon": -3.175,
+   "why": "Burial place of Huw Morys (1622-1709), the best-known writer of Welsh plygain carols.",
+   "sources": [
+    {
+     "title": "Plygain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Plygain",
+     "locator": "section History",
+     "quote": "plygain composer Huw Morys (1622–1709)"
+    },
+    {
+     "title": "Huw Morys (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Huw_Morys",
+     "locator": "section Life",
+     "quote": "was buried at Llansilin, where a slab to his memory bears englynion"
+    }
+   ]
+  },
+  {
+   "name": "Windsor Castle",
+   "qid": "Q42646",
+   "lat": 51.4839,
+   "lon": -0.6044,
+   "why": "A picture of Queen Victoria's family round the Christmas tree at Windsor in 1848 helped spread the German custom across Britain.",
+   "sources": [
+    {
+     "title": "Christmas tree (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Christmas_tree",
+     "locator": "section Britain",
+     "quote": "described the trees in Windsor Castle in detail and showed the main tree, surrounded by the royal family, on its cover"
+    }
+   ]
+  }
+ ]
+}

@@ -8,7 +8,7 @@
   <nav class="help-toc" aria-label="Help topics">
     <a href="#start">Getting started</a><a href="#accuracy">Accuracy and safety</a><a href="#catalogue">Catalogue</a><a href="#detail">A building's page</a>
     <a href="#map">Map</a><a href="#places">Places</a><a href="#people">People</a><a href="#pronunciation">Pronunciation</a><a href="#history">History</a><a href="#trades">Trades</a>
-    <a href="#oldest">Oldest by type</a><a href="#things">Oldest things</a><a href="#types">Building types</a><a href="#sky">Sky &amp; 3D models</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
+    <a href="#oldest">Oldest by type</a><a href="#things">Oldest things</a><a href="#festivals">Festivals</a><a href="#types">Building types</a><a href="#sky">Sky &amp; 3D models</a><a href="#stats">Statistics</a><a href="#stories">Stories</a><a href="#tours">Tours</a><a href="#onthisday">On this day &amp; quiz</a><a href="#offline">Offline</a>
     {% if not static_mode %}<a href="#sharing">Sharing at home</a>{% endif %}<a href="#compare">Compare</a><a href="#data">Data quality</a><a href="#settings">Settings</a>
     <a href="#export">Export &amp; screenshots</a><a href="#shortcuts">Shortcuts</a><a href="#glossary">Glossary</a>
     <a href="#faq">Questions</a><a href="#sources">Sources</a><a href="#about">About</a>
@@ -188,6 +188,20 @@
       "sources" for the exact words of each source and whether the quote was found there at the last check. The map
       shows where each thing is kept, was made or found, or where a custom still takes place; click a place name to
       find it there.</p>
+  </section>
+
+  <section id="festivals">
+    <h2>Festivals and seasons</h2>
+    <p class="prose"><a href="{{ url_for('pages.festivals') }}">Festivals</a> explores the buildings and places of the
+      isles through the year's feasts: Christmas, New Year and Hogmanay, Burns Night, St Brigid's Day, St Valentine's
+      and St Dwynwen's, the four national saints' days, Easter and Shrovetide, May Day, Midsummer, Lammas, Michaelmas,
+      Halloween and Bonfire Night. The wheel shows where each falls in the year (Easter and the solstices are worked out
+      for each year) and the cards are in order of the next one to come.</p>
+    <p class="prose">Each festival's page has researched facts and customs (filter them by history, custom, legend, food,
+      oldest, sky or curiosity; open "sources" for the exact words quoted and whether they were found at the last
+      check), places to visit, and what the catalogue holds for it: churches of its saints, stories that mention it,
+      monuments said to face its sunrise, places such as holy wells or haunted castles, what happened on the day and
+      the oldest customs from Oldest things. The map shows all of them as layers you can switch off.</p>
   </section>
 
   <section id="types">

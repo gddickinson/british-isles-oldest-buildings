@@ -1,0 +1,561 @@
+{
+ "id": "st-andrew",
+ "title": "St Andrew's Day",
+ "also": [
+  "Andermas",
+  "Saunt Andra's Day (Scots)",
+  "Là Naomh Anndrais (Scottish Gaelic)"
+ ],
+ "season": "winter",
+ "when": {
+  "date": "11-30"
+ },
+ "when_text": "30 November; a Scottish bank holiday (the next Monday when it falls at a weekend)",
+ "intro": "Andrew, the fisherman who brought his brother Peter to Jesus, is the patron saint of Scotland, and his day is Scotland's national day. The stories of how a Greek apostle came to Fife, and how his X-shaped cross appeared in the sky over East Lothian, are legends, but the cathedral built for his relics, the Declaration of Arbroath and the Saltire are history. Older churches of St Andrew stand in England and the Isle of Man too.",
+ "facts": [
+  {
+   "kind": "history",
+   "title": "Scotland's national day",
+   "text": "St Andrew's Day, 30 November, is Scotland's official national day and an official flag day, when the Saltire flies on Scottish Government buildings. Keeping Andrew's feast as a national festival is thought to go back to the reign of Malcolm III (1058-1093).",
+   "sources": [
+    {
+     "title": "Saint Andrew's Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Andrew%27s_Day",
+     "locator": "section Traditions and celebrations",
+     "quote": "is Scotland's official national day"
+    },
+    {
+     "title": "Saint Andrew's Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Andrew%27s_Day",
+     "locator": "section Scotland",
+     "quote": "The celebration of Saint Andrew as a national festival among some social strata and locales is thought to originate from the reign of Malcolm III (1058–1093)."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "A bank holiday that need not close the banks",
+   "year": 2006,
+   "text": "The St Andrew's Day Bank Holiday (Scotland) Act 2007, passed on 29 November 2006 after a campaign begun by the MSP Dennis Canavan and a petition by three school pupils, made the day a bank holiday. Banks need not close and employers need not give the day off.",
+   "sources": [
+    {
+     "title": "Saint Andrew's Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Andrew%27s_Day",
+     "locator": "section Bank holiday",
+     "quote": "Although it is a \"bank holiday\", banks are not required to close (and, in practice, will remain open as normal), and employers are not required to give their employees the day off as a holiday."
+    },
+    {
+     "title": "St Andrew's Day Bank Holiday (Scotland) Act 2007 (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrew%27s_Day_Bank_Holiday_%28Scotland%29_Act_2007",
+     "locator": "section Background",
+     "quote": "The bill was passed by the Scottish Parliament on 29 November 2006"
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "St Rule and the bones of the apostle",
+   "text": "Legend says a monk of Patras, Regulus or Rule, was told by an angel to take some of Andrew's bones, a kneecap, an arm bone, three fingers and a tooth, to the ends of the earth, and was shipwrecked on the coast of Fife at Kilrymont, now St Andrews. Historians think the relics more probably came from the collection of Bishop Acca of Hexham in 732.",
+   "where": {
+    "name": "St Rule's Tower, St Andrews",
+    "lat": 56.3397,
+    "lon": -2.7865,
+    "qid": "Q17570622"
+   },
+   "sources": [
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Relics",
+     "quote": "He sailed west, towards the edge of the known world, and was shipwrecked on the coast of Fife, Scotland."
+    },
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Relics",
+     "quote": "However, the relics were probably brought to Britain in 597 as part of the Augustine Mission, and then in 732 to Fife, by Bishop Acca of Hexham"
+    },
+    {
+     "title": "Saint Regulus (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Regulus",
+     "locator": "lead",
+     "quote": "on the shores of Fife at the spot called Kilrymont, a Pictish settlement which is now St. Andrews"
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "A cross in the sky at Athelstaneford",
+   "year": 832,
+   "text": "A 16th-century legend says that before a battle in East Lothian around 832 the Pictish king Óengus prayed for victory, saw a white saltire of cloud against the blue sky, won, and made Andrew patron of Scotland. Even the basic facts are doubtful, but it is the story behind the Saltire.",
+   "where": {
+    "name": "Athelstaneford",
+    "lat": 55.986,
+    "lon": -2.748,
+    "qid": "Q4574983"
+   },
+   "sources": [
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Scotland",
+     "quote": "On the morning of battle white clouds forming an X shape in the sky were said to have appeared."
+    },
+    {
+     "title": "Athelstaneford (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Athelstaneford",
+     "locator": "section Battle of Athelstaneford",
+     "quote": "However, there is considerable doubt as to even the basic historic facts."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Named in the Declaration of Arbroath",
+   "year": 1320,
+   "text": "The letter of the Scottish barons to Pope John XXII in 1320, the Declaration of Arbroath, says Scotland was converted by St Andrew, 'the first to be an Apostle'. It was probably written at Arbroath Abbey by its abbot, Bernard, Chancellor of Scotland.",
+   "where": {
+    "name": "Arbroath Abbey",
+    "lat": 56.5625,
+    "lon": -2.5822,
+    "qid": "Q630683"
+   },
+   "sources": [
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Scotland",
+     "quote": "The 1320 Declaration of Arbroath cites Scotland's conversion to Christianity by Andrew, \"the first to be an Apostle\"."
+    },
+    {
+     "title": "Declaration of Arbroath (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Declaration_of_Arbroath",
+     "locator": "lead",
+     "quote": "Generally believed to have been written in Arbroath Abbey by Bernard of Kilwinning (or of Linton), then Chancellor of Scotland and Abbot of Arbroath"
+    }
+   ]
+  },
+  {
+   "kind": "oldest",
+   "title": "The saltire on seals and soldiers",
+   "year": 1385,
+   "text": "The saint on his X-shaped cross appears on Scottish seals from 1180 and on the seal of the Guardians of Scotland in 1286. In 1385 the Scottish Parliament ordered every Scottish and French soldier fighting the English to wear a white St Andrew's cross before and behind.",
+   "sources": [
+    {
+     "title": "Flag of Scotland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flag_of_Scotland",
+     "locator": "section History",
+     "quote": "Depiction of the saint being crucified on a decussate cross was seen on seals in Scotland from 1180 onwards and was used on a seal of the Guardians of Scotland, dated 1286."
+    },
+    {
+     "title": "Flag of Scotland (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Flag_of_Scotland",
+     "locator": "section History",
+     "quote": "The Parliament of Scotland decreed in 1385 that every Scottish and French soldier (fighting against the English under Richard II) \"shall have a sign before and behind, namely a white St. Andrew's Cross\""
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "The largest church ever built in Scotland",
+   "year": 1158,
+   "text": "St Andrews Cathedral, begun in 1158 to hold the relics and the pilgrims they drew, was about 119 m long, the largest church built in Scotland. It was consecrated in 1318 with Robert the Bruce present (legend says he rode up the aisle on his horse) and was sacked by a Protestant mob in 1559.",
+   "where": {
+    "name": "St Andrews Cathedral",
+    "lat": 56.34,
+    "lon": -2.7875,
+    "qid": "Q2361738"
+   },
+   "sources": [
+    {
+     "title": "St Andrews Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrews_Cathedral",
+     "locator": "lead",
+     "quote": "the largest church to have been built in Scotland"
+    },
+    {
+     "title": "St Andrews Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrews_Cathedral",
+     "locator": "section Founding and development",
+     "quote": "On the 5th of July it was consecrated in the presence of King Robert the Bruce, who, according to legend, rode up the aisle on his horse."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Relics in Edinburgh",
+   "text": "Relics said to be of St Andrew are kept today at St Mary's Catholic Cathedral in Edinburgh, which holds the National Shrine of St Andrew; others are at Patras in Greece and Amalfi in Italy.",
+   "where": {
+    "name": "St Mary's Cathedral, Edinburgh",
+    "lat": 55.9561,
+    "lon": -3.1877,
+    "qid": "Q519072"
+   },
+   "sources": [
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Relics",
+     "quote": "Relics alleged to be those of the Apostle Andrew are kept at the Cathedral of Saint Andrew, Patras, Greece; in Amalfi Cathedral (the Duomo di Sant'Andrea), Amalfi and in Sarzana Cathedral in Sarzana, Italy; St Mary's Cathedral, Edinburgh, Scotland"
+    },
+    {
+     "title": "St Mary's Cathedral, Edinburgh (Catholic) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Mary%27s_Cathedral,_Edinburgh_(Catholic)",
+     "locator": "section History",
+     "quote": "It contains the National Shrine of Saint Andrew."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "A cross to keep witches out of the chimney",
+   "text": "In Scotland and northern England a St Andrew's cross was carved on a fireplace post or lintel, from a belief that it stopped witches flying down the chimney.",
+   "sources": [
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Scotland",
+     "quote": "A local superstition uses the cross of Saint Andrew as a hex sign on the fireplaces in northern England and Scotland to prevent witches from flying down the chimney"
+    }
+   ]
+  },
+  {
+   "kind": "oldest",
+   "title": "Andrew in early England",
+   "year": 604,
+   "text": "Andrew was a favourite of the first English churches. Rochester's cathedral began as a church of St Andrew founded in 604, named after the Roman monastery that St Augustine's mission had set out from, and Wilfrid's church at Hexham, built in the 670s, and Aldhelm's church at Wells of 705 were his too.",
+   "where": {
+    "name": "Rochester Cathedral",
+    "lat": 51.389,
+    "lon": 0.5033,
+    "qid": "Q2635720"
+   },
+   "sources": [
+    {
+     "title": "Rochester Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rochester_Cathedral",
+     "locator": "section History",
+     "quote": "establish a church dedicated to Andrew the Apostle (like the monastery at Rome where Augustine and Justus had set out for England)"
+    },
+    {
+     "title": "Hexham Abbey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hexham_Abbey",
+     "locator": "lead",
+     "quote": "Hexham Abbey is a Grade I listed church dedicated to St Andrew"
+    },
+    {
+     "title": "Wells Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wells_Cathedral",
+     "locator": "section History",
+     "quote": "It was dedicated to St Andrew and stood at the site of the cathedral's cloisters"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Kirk Andreas on the Isle of Man",
+   "text": "The northern Manx parish of Andreas, village and church alike, takes its name from St Andrew. His parish church keeps eleven carved medieval cross slabs, among them Thorwald's Cross.",
+   "where": {
+    "name": "St Andrew's Church, Andreas",
+    "lat": 54.3641,
+    "lon": -4.4409,
+    "qid": "Q55633815"
+   },
+   "sources": [
+    {
+     "title": "Andreas, Isle of Man (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andreas,_Isle_of_Man",
+     "locator": "section History",
+     "quote": "Both the village and the parish take their name from Saint Andrew."
+    },
+    {
+     "title": "Andreas, Isle of Man (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andreas,_Isle_of_Man",
+     "locator": "section History",
+     "quote": "Eleven slabs are now on display in St Andrew's Church."
+    },
+    {
+     "title": "Kirk Andreas (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Kirk_Andreas",
+     "locator": "lead",
+     "quote": "Thorwald's Cross for example can be viewed at St Andrew's Church."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "The start of the winter festivals",
+   "text": "In Scotland St Andrew's Day opens a season of winter festivals that runs on through Hogmanay to Burns Night, with Scottish food and music; the town of St Andrews keeps a week of celebrations and its university traditionally gives students the day off.",
+   "sources": [
+    {
+     "title": "Saint Andrew's Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Andrew%27s_Day",
+     "locator": "section Celebrations",
+     "quote": "the day is also seen as the start of a season of Scottish winter festivals encompassing Saint Andrew's Day, Hogmanay and Burns Night"
+    },
+    {
+     "title": "Saint Andrew's Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Andrew%27s_Day",
+     "locator": "section Bank holiday",
+     "quote": "The University of St Andrews traditionally gives the day for all the students as a free holiday"
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "St Andrews Cathedral",
+   "qid": "Q2361738",
+   "lat": 56.34,
+   "lon": -2.7875,
+   "why": "The ruined cathedral of St Andrew, once the centre of the medieval church in Scotland, built to house the apostle's relics; it is in the care of Historic Environment Scotland.",
+   "sources": [
+    {
+     "title": "St Andrews Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrews_Cathedral",
+     "locator": "lead",
+     "quote": "It was built in 1158 and became the centre of the Medieval Catholic Church in Scotland"
+    }
+   ]
+  },
+  {
+   "name": "St Rule's Tower, St Andrews",
+   "qid": "Q17570622",
+   "lat": 56.3397,
+   "lon": -2.7865,
+   "why": "The 33 m tower of the Romanesque church of St Rule, older than the cathedral beside it and named after the monk said to have brought Andrew's bones.",
+   "sources": [
+    {
+     "title": "St Andrews Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrews_Cathedral",
+     "locator": "section Founding and development",
+     "quote": "The cathedral was founded to supply more accommodation than the older church of St. Regulus (St. Rule) afforded."
+    },
+    {
+     "title": "St Andrews Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrews_Cathedral",
+     "locator": "section Founding and development",
+     "quote": "Today, there remains the square tower, 33 metres (108 feet) high"
+    }
+   ]
+  },
+  {
+   "name": "Athelstaneford",
+   "qid": "Q4574983",
+   "lat": 55.986,
+   "lon": -2.748,
+   "why": "The East Lothian village of the saltire legend; the National Flag Heritage Centre is in a doocot of 1583 behind the parish kirk.",
+   "sources": [
+    {
+     "title": "Athelstaneford (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Athelstaneford",
+     "locator": "section Attractions",
+     "quote": "The village is home to the National Flag Heritage Centre which occupies a lectern doocot built in 1583 and rebuilt in 1996. It is at the back of the village church."
+    }
+   ]
+  },
+  {
+   "name": "Arbroath Abbey",
+   "qid": "Q630683",
+   "lat": 56.5625,
+   "lon": -2.5822,
+   "why": "Founded in 1178 by William the Lion; the Declaration of Arbroath, which names Andrew as Scotland's apostle, is believed to have been drafted by its abbot.",
+   "sources": [
+    {
+     "title": "Arbroath Abbey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arbroath_Abbey",
+     "locator": "lead",
+     "quote": "Arbroath Abbey, in the Scottish town of Arbroath, was founded in 1178 by King William the Lion"
+    },
+    {
+     "title": "Arbroath Abbey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Arbroath_Abbey",
+     "locator": "lead",
+     "quote": "most famous for its association with the 1320 Declaration of Scottish Independence believed to have been drafted by Abbot Bernard"
+    }
+   ]
+  },
+  {
+   "name": "St Mary's Cathedral, Edinburgh",
+   "qid": "Q519072",
+   "lat": 55.9561,
+   "lon": -3.1877,
+   "why": "Edinburgh's Catholic cathedral, home of the National Shrine of St Andrew and relics of the saint.",
+   "sources": [
+    {
+     "title": "St Mary's Cathedral, Edinburgh (Catholic) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Mary%27s_Cathedral,_Edinburgh_(Catholic)",
+     "locator": "section History",
+     "quote": "It contains the National Shrine of Saint Andrew."
+    }
+   ]
+  },
+  {
+   "name": "Edinburgh Castle",
+   "qid": "Q212065",
+   "lat": 55.9486,
+   "lon": -3.2008,
+   "why": "The Union Flag flies here even on St Andrew's Day, to the anger of some politicians who want the Saltire raised on 30 November.",
+   "sources": [
+    {
+     "title": "Saint Andrew's Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_Andrew%27s_Day",
+     "locator": "section Saltire",
+     "quote": "The flying of the Union Flag from Edinburgh Castle on all days, including Saint Andrew's Day, causes anger among some Scottish politicians"
+    }
+   ]
+  },
+  {
+   "name": "Hexham Abbey",
+   "qid": "Q950037",
+   "lat": 54.972,
+   "lon": -2.103,
+   "why": "St Andrew's church founded by Wilfrid, with its Saxon crypt; its bishop Acca is thought the likeliest source of the St Andrews relics.",
+   "sources": [
+    {
+     "title": "Hexham Abbey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hexham_Abbey",
+     "locator": "section History",
+     "quote": "Of Wilfrid's Benedictine abbey, which was constructed almost entirely of material salvaged from nearby Roman ruins, the Saxon crypt still remains"
+    },
+    {
+     "title": "Andrew the Apostle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+     "locator": "section Relics",
+     "quote": "in 732 to Fife, by Bishop Acca of Hexham, a well-known collector of religious relics"
+    }
+   ]
+  },
+  {
+   "name": "Rochester Cathedral",
+   "qid": "Q2635720",
+   "lat": 51.389,
+   "lon": 0.5033,
+   "why": "Founded in 604 as a church of St Andrew by Justus, first bishop of the second-oldest see in England.",
+   "sources": [
+    {
+     "title": "Rochester Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rochester_Cathedral",
+     "locator": "section History",
+     "quote": "As the first Bishop of Rochester, Justus was given permission by King Æthelberht of Kent to establish a church dedicated to Andrew the Apostle"
+    },
+    {
+     "title": "Rochester Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rochester_Cathedral",
+     "locator": "section Music",
+     "quote": "The cathedral choir traces its roots back to the church's foundation in AD 604."
+    }
+   ]
+  },
+  {
+   "name": "Wells Cathedral",
+   "qid": "Q519614",
+   "lat": 51.2104,
+   "lon": -2.6437,
+   "why": "Formally the Cathedral Church of St Andrew, on the site of Aldhelm's church of 705.",
+   "sources": [
+    {
+     "title": "Wells Cathedral (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Wells_Cathedral",
+     "locator": "lead",
+     "quote": "Wells Cathedral, formally the Cathedral Church of St Andrew, is a Church of England cathedral in Wells, Somerset, England."
+    }
+   ]
+  },
+  {
+   "name": "St Andrew's Church, Andreas",
+   "qid": "Q55633815",
+   "lat": 54.3641,
+   "lon": -4.4409,
+   "why": "The Manx parish church of St Andrew, probably on the site of an early keeill, with its collection of carved medieval crosses.",
+   "sources": [
+    {
+     "title": "Andreas, Isle of Man (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Andreas,_Isle_of_Man",
+     "locator": "section History",
+     "quote": "St Andrew's Church, the parish church for Andreas, was most likely built on the site of a much older early Christian keeill (small chapel)."
+    }
+   ]
+  }
+ ]
+}

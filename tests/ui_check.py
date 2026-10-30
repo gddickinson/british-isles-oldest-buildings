@@ -57,6 +57,8 @@ PAGES = {
     "trades": ("/trades?t=sugar", r"(?s)Trades and industries.*Sugar and slavery.*Timeline.*Slave Trade Act.*What historians say.*Capitalism and Slavery"),
     "things": ("/things", r"(?s)Oldest things.*Food and drink.*Oldest recipe or cookery book.*sources?"),
     "things_search": ("/things?q=harp&sort=year", r"(?s)Oldest things.*[Hh]arp"),
+    "festivals": ("/festivals", r"(?s)Festivals and seasons.*All the year.*Next:.*facts.*places"),
+    "festival_page": ("/festivals?f=st-david", r"(?s)St David.*Facts and customs.*sources?.*Places to visit.*Churches of"),
     "models": ("/models", r"(?s)3D models.*Stonehenge.*Bryn Celli Ddu"),
     "model_bryn_celli_ddu": ("/model/bryn_celli_ddu", r"(?s)Bryn Celli Ddu in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),
     "model_newgrange": ("/model/newgrange", r"(?s)Newgrange in 3D.*(The 3D model needs WebGL|sh-ready).*What it is built from"),

@@ -1,0 +1,630 @@
+{
+ "id": "may-day",
+ "title": "May Day and Beltane",
+ "also": [
+  "Beltane",
+  "Lá Bealtaine (Irish)",
+  "Là Bealltainn (Scottish Gaelic)",
+  "Laa Boaltinn or Boaldyn (Manx)",
+  "Calan Mai (Welsh)",
+  "May Morning"
+ ],
+ "season": "spring",
+ "when": {
+  "date": "05-01"
+ },
+ "when_text": "1 May, with its eve on 30 April; Helston's Flora Day on 8 May and Castleton's Garland Day on 29 May",
+ "intro": "May Day marks the start of summer. In Ireland, Scotland and Man it was Beltane, the Gaelic festival of fires lit to protect cattle as they went out to summer grazing; in Wales it was Calan Mai, and in England the day of the maypole, the May garland and, later, the sweeps' Jack in the Green. Many May customs that look ancient are first recorded only in the eighteenth century, and several were revived or reinvented in the twentieth.",
+ "facts": [
+  {
+   "kind": "history",
+   "title": "Two fires and the cattle between them",
+   "year": 900,
+   "text": "The earliest mention of Beltane is in Cormac's Glossary, an Irish text of the early tenth century, which explains the name as 'lucky fire' and says druids lit two fires and drove the cattle between them against disease.",
+   "sources": [
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Ancient and medieval",
+     "quote": "The early-10th century text Sanas Cormaic (Cormac's Glossary) has an entry for \"Belltaine\" and derives it from bil-tene, \"lucky fire\"."
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Ancient and medieval",
+     "quote": "the druids used to light two fires \"with great incantations\" and drive the cattle between them"
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "The great fire at the centre of Ireland",
+   "text": "The seventeenth-century historian Geoffrey Keating wrote of a great Beltane gathering on the Hill of Uisneach, the mythical centre of Ireland. Historians suspect Keating may have stitched this together from older stories, but excavations on the hill did find signs of large ritual fires and burnt animal bones.",
+   "where": {
+    "name": "Hill of Uisneach",
+    "lat": 53.49,
+    "lon": -7.562,
+    "qid": "Q1292728"
+   },
+   "sources": [
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Ancient and medieval",
+     "quote": "According to 17th-century historian Geoffrey Keating, there was a great gathering at the hill of Uisneach each Beltane in medieval Ireland"
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Ancient and medieval",
+     "quote": "Nevertheless, excavations at Uisneach in the 20th century found evidence of large fires and charred bones"
+    }
+   ]
+  },
+  {
+   "kind": "food",
+   "title": "The Beltane bannock",
+   "year": 1769,
+   "text": "Thomas Pennant described Beltane fires in Perthshire in 1769: a caudle of eggs, butter, oatmeal and milk was cooked, and everyone took an oatcake with nine knobs, throwing the knobs over their shoulder one by one as offerings for the safety of their animals.",
+   "sources": [
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Bonfires",
+     "quote": "In 1769, Thomas Pennant wrote of Beltane bonfires in Perthshire, where a caudle made from eggs, butter, oatmeal and milk was cooked."
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Bonfires",
+     "quote": "Everyone would then take an oatmeal cake, called a bannoch Bealltainn or \"Beltane bannock\", which had nine knobs on it."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Rowan crosses in Man",
+   "text": "In the Isle of Man, where the festival is Laa Boaltinn, people wore little crosses of rowan and fixed them over doors and to their cattle against witchcraft; the Manx called it a crosh cuirn. They also made sure the bonfire smoke blew over themselves and their beasts.",
+   "sources": [
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Warding-off harmful spirits",
+     "quote": "On the Isle of Man, small crosses made of rowan were worn, fastened over doorways, and tied to cattle, as protection against witchcraft and evil spirits. It was called a crosh cuirn."
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Bonfires",
+     "quote": "On the Isle of Man, people ensured that the smoke blew over them and their cattle."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Washing in the May dew",
+   "text": "May morning dew was thought to bring beauty and good luck across the Gaelic world. In Edinburgh the old custom was for young women to climb Arthur's Seat at dawn and wash their faces in it.",
+   "where": {
+    "name": "Arthur's Seat",
+    "lat": 55.94417,
+    "lon": -3.16194,
+    "qid": "Q712311"
+   },
+   "sources": [
+    {
+     "title": "May Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/May_Day",
+     "locator": "section Scotland",
+     "quote": "An older Edinburgh tradition has it that young women who climb Arthur's Seat and wash their faces in the morning dew will have lifelong beauty."
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Other customs",
+     "quote": "Beltane morning dew was also thought to bring good luck and health."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Fire on Calton Hill",
+   "year": 1988,
+   "text": "Edinburgh's Beltane Fire Festival on Calton Hill, on the night of 30 April, began only in 1988. Its organisers say plainly that it is a modern celebration drawing on old accounts, not a survival; it was first meant to be held on Arthur's Seat.",
+   "where": {
+    "name": "Calton Hill",
+    "lat": 55.95528,
+    "lon": -3.18222,
+    "qid": "Q1199959"
+   },
+   "sources": [
+    {
+     "title": "Beltane Fire Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane_Fire_Festival",
+     "locator": "section Historical background",
+     "quote": "the organisers do not claim it to be anything other than a modern celebration of Beltane, evolving with its participants"
+    },
+    {
+     "title": "Beltane Fire Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane_Fire_Festival",
+     "locator": "section Modern festival",
+     "quote": "Originally intended to take place on Arthur's Seat, the home of earlier Edinburgh Beltane celebrations, for practical reasons the location was moved to Calton Hill."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Calan Mai in Wales",
+   "text": "In Wales May Eve was a spirit night when bonfires were lit in places and hawthorn and flowers were gathered to dress houses; May Day itself brought summer dancing and May carols.",
+   "sources": [
+    {
+     "title": "May Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/May_Day",
+     "locator": "section Wales",
+     "quote": "On May Eve (Nos Galan Haf) bonfires were lit in parts of Wales."
+    },
+    {
+     "title": "May Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/May_Day",
+     "locator": "section Wales",
+     "quote": "On May Day, celebrations included summer dancing (dawnsio haf) and May carols (carolau mai or carolau haf)."
+    }
+   ]
+  },
+  {
+   "kind": "oldest",
+   "title": "The first maypole on record was Welsh",
+   "text": "The earliest record of a maypole in Britain is in a fourteenth-century Welsh poem by Gruffudd ap Adda ap Dafydd, describing a tall birch pole set up at Llanidloes in mid Wales.",
+   "where": {
+    "name": "Llanidloes",
+    "lat": 52.449,
+    "lon": -3.5402,
+    "qid": "Q2741834"
+   },
+   "sources": [
+    {
+     "title": "Maypole (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maypole",
+     "locator": "section United Kingdom",
+     "quote": "the earliest recorded evidence comes from a Welsh poem written by Gryffydd ap Adda ap Dafydd in the mid-14th century, in which he described how people used a tall birch pole at Llanidloes, central Wales"
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "A church named after a maypole",
+   "year": 1517,
+   "text": "St Andrew Undershaft in the City of London takes its name from the tall maypole that was stored under its eaves and set up each spring, until riots in 1517 ended the custom. The pole itself was destroyed in 1547 as a 'pagan idol'.",
+   "where": {
+    "name": "St Andrew Undershaft",
+    "lat": 51.51366,
+    "lon": -0.08131,
+    "qid": "Q7592425"
+   },
+   "sources": [
+    {
+     "title": "Maypole (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maypole",
+     "locator": "section United Kingdom",
+     "quote": "The church of St Andrew Undershaft in the City of London is named after the maypole that was kept under its eaves and set up each spring until 1517 when student riots put an end to the custom."
+    },
+    {
+     "title": "Maypole (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maypole",
+     "locator": "section United Kingdom",
+     "quote": "The maypole itself survived until 1547 when a Puritan mob seized and destroyed it as a \"pagan idol\"."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Hymns from Magdalen Tower",
+   "year": 1509,
+   "text": "At 6 a.m. on 1 May the choir of Magdalen College, Oxford, sings the Hymnus Eucharisticus and a madrigal from the top of Magdalen Tower, finished in 1509, to crowds in the High Street and on Magdalen Bridge below.",
+   "where": {
+    "name": "Magdalen Tower",
+    "lat": 51.75165,
+    "lon": -1.24683,
+    "qid": "Q6729839"
+   },
+   "sources": [
+    {
+     "title": "Magdalen Tower (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Magdalen_Tower",
+     "locator": "section May Morning",
+     "quote": "Every 1st May, at 6am, the choir of the college (including boy choristers from nearby Magdalen College School) sings two traditional hymns"
+    },
+    {
+     "title": "May Morning (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/May_Morning",
+     "locator": "section Event",
+     "quote": "with the Magdalen College Choir singing a hymn, the Hymnus Eucharisticus, from the top of Magdalen Tower"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Padstow's 'Obby 'Oss",
+   "year": 1803,
+   "text": "Padstow's May Day begins at midnight with the Night Song outside the Golden Lion Inn, and two 'osses, black hobby horses with snapping jaws, dance through the town all day. The custom is often called pagan, but it is first mentioned in 1803 and nothing shows it to be older than the eighteenth century.",
+   "where": {
+    "name": "Padstow",
+    "lat": 50.538,
+    "lon": -4.938,
+    "qid": "Q943931"
+   },
+   "sources": [
+    {
+     "title": "'Obby 'Oss festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival",
+     "locator": "lead",
+     "quote": "The festival starts at midnight on the 30th of April when townspeople gather outside the Golden Lion Inn to sing the \"Night Song\"."
+    },
+    {
+     "title": "'Obby 'Oss festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival",
+     "locator": "section Origins",
+     "quote": "the earliest mention of the 'Obby 'Oss at Padstow dates from 1803"
+    },
+    {
+     "title": "'Obby 'Oss festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival",
+     "locator": "section Origins",
+     "quote": "There is no evidence to suggest that the 'Obby 'Oss festival is older than the eighteenth century."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Helston's Furry Dance",
+   "year": 1790,
+   "text": "Helston keeps its own spring festival on 8 May, the feast of its patron St Michael: dancers wearing lily of the valley dance through the town from early morning to evening. The first known mention is a letter to the Gentleman's Magazine of 1790.",
+   "where": {
+    "name": "Helston",
+    "lat": 50.1,
+    "lon": -5.27,
+    "qid": "Q1012535"
+   },
+   "sources": [
+    {
+     "title": "Furry Dance (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Furry_Dance",
+     "locator": "lead",
+     "quote": "Traditionally held on 8 May, it is held in Helston, Cornwall, where dancers wear lily of the valley, the town's symbolic flower."
+    },
+    {
+     "title": "Furry Dance (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Furry_Dance",
+     "locator": "section Origin",
+     "quote": "The earliest mention seems to be in a letter to the Gentleman's Magazine for 1790"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Jack in the Green and the sweeps",
+   "year": 1770,
+   "text": "Jack in the Green, a person inside a wicker or wooden frame covered in leaves, is first described in a London May Day procession of 1770 and became the chimney sweeps' custom. It died out in the early twentieth century and was revived in Rochester in the 1970s and in Hastings in 1983.",
+   "sources": [
+    {
+     "title": "Jack in the Green (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jack_in_the_Green",
+     "locator": "lead",
+     "quote": "It involves a pyramidal or conical wicker or wooden framework, decorated with foliage, and worn by a person as part of a procession"
+    },
+    {
+     "title": "Jack in the Green (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jack_in_the_Green",
+     "locator": "section History",
+     "quote": "The earliest known account of a Jack in the Green comes from a description of a London May-Day procession in 1770."
+    },
+    {
+     "title": "Jack in the Green (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jack_in_the_Green",
+     "locator": "section Revivals",
+     "quote": "In the 1970s, Gordon Newton and his Motley Morris troupe revived the custom in Rochester, Kent."
+    },
+    {
+     "title": "Jack in the Green (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Jack_in_the_Green",
+     "locator": "section Revivals",
+     "quote": "Another revival occurred in Hastings during 1983 and has become a major event of the Hastings Old Town calendar."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "Castleton's Garland King is not so ancient",
+   "text": "On 29 May, Oak Apple Day, Castleton's Garland King rides through the village hidden under a bell of flowers, which is then hoisted onto the church tower. It was once claimed as a relic of human sacrifice, but research in the local records traced it only to the late eighteenth or early nineteenth century, growing out of a rushbearing.",
+   "where": {
+    "name": "St Edmund's Church, Castleton",
+    "lat": 53.3428,
+    "lon": -1.77575,
+    "qid": "Q17546209"
+   },
+   "sources": [
+    {
+     "title": "Castleton Garland Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castleton_Garland_Day",
+     "locator": "section Origins",
+     "quote": "Boyes' subsequent extensive research of local records demonstrated that the \"ancient\" custom was no older than the late 18th—early 19th century, and had grown out of the village's ecclesiastical rushbearing festival."
+    },
+    {
+     "title": "Castleton Garland Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castleton_Garland_Day",
+     "locator": "section The custom",
+     "quote": "A long rope is hung down and tied to the Garland, which is hoisted up the side of the tower and then impaled on the central pinnacle."
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Hill of Uisneach",
+   "qid": "Q1292728",
+   "lat": 53.49,
+   "lon": -7.562,
+   "why": "The ceremonial hill at the heart of Ireland, linked in myth and later tradition with great Beltane gatherings and fires.",
+   "sources": [
+    {
+     "title": "Hill of Uisneach (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hill_of_Uisneach",
+     "locator": "lead",
+     "quote": "a place of assembly associated with the druids and the festival of Bealtaine"
+    }
+   ]
+  },
+  {
+   "name": "Beltany stone circle",
+   "qid": "Q816192",
+   "lat": 54.85042,
+   "lon": -7.60467,
+   "why": "A Bronze Age stone circle in Donegal whose name has been linked with Beltane; place names like it are thought to mark where the festival was held.",
+   "sources": [
+    {
+     "title": "Beltany stone circle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltany_stone_circle",
+     "locator": "body",
+     "quote": "It has been suggested that the name of the site is linked to the Celtic festival of fertility known as 'Beltane'"
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Toponymy",
+     "quote": "There are three Beltanys in County Donegal, including the Beltany stone circle, and two in County Tyrone."
+    }
+   ]
+  },
+  {
+   "name": "Mercat Cross, Peebles",
+   "qid": "Q17845295",
+   "lat": 55.6521,
+   "lon": -3.18857,
+   "why": "Peebles still calls its summer festival the Beltane, proclaimed at the cross; the town's Beltane is already described in the late medieval poem 'Peblis to the Play'.",
+   "sources": [
+    {
+     "title": "Peebles (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Peebles",
+     "locator": "section Culture",
+     "quote": "The Beltane, proclaimed at the cross, culminates with the crowning of the Beltane Queen"
+    },
+    {
+     "title": "Beltane (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Beltane",
+     "locator": "section Ancient and medieval",
+     "quote": "An early reference is found in the poem 'Peblis to the Play', contained in the Maitland Manuscripts of 15th- and 16th-century Scots poetry, which describes the celebration in the town of Peebles."
+    }
+   ]
+  },
+  {
+   "name": "Calton Hill",
+   "qid": "Q1199959",
+   "lat": 55.95528,
+   "lon": -3.18222,
+   "why": "Scene of Edinburgh's modern Beltane Fire Festival every 30 April.",
+   "sources": [
+    {
+     "title": "Calton Hill (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Calton_Hill",
+     "locator": "section Events",
+     "quote": "The largest of these is the Beltane Fire Festival held on 30 April each year"
+    }
+   ]
+  },
+  {
+   "name": "Arthur's Seat",
+   "qid": "Q712311",
+   "lat": 55.94417,
+   "lon": -3.16194,
+   "why": "The hill where Edinburgh women climbed at dawn on May Day to wash in the dew, and the home of the city's earlier Beltane gatherings.",
+   "sources": [
+    {
+     "title": "May Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/May_Day",
+     "locator": "section Scotland",
+     "quote": "young women who climb Arthur's Seat and wash their faces in the morning dew will have lifelong beauty"
+    }
+   ]
+  },
+  {
+   "name": "Magdalen Tower",
+   "qid": "Q6729839",
+   "lat": 51.75165,
+   "lon": -1.24683,
+   "why": "The bell tower of Magdalen College, Oxford, from whose top the choir greets May Morning.",
+   "sources": [
+    {
+     "title": "Magdalen Tower (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Magdalen_Tower",
+     "locator": "lead",
+     "quote": "It is a central focus for the celebrations in Oxford on May Morning."
+    }
+   ]
+  },
+  {
+   "name": "St Andrew Undershaft",
+   "qid": "Q7592425",
+   "lat": 51.51366,
+   "lon": -0.08131,
+   "why": "A City church, rebuilt in 1532, named after the maypole once kept under its eaves.",
+   "sources": [
+    {
+     "title": "Maypole (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Maypole",
+     "locator": "section United Kingdom",
+     "quote": "is named after the maypole that was kept under its eaves"
+    },
+    {
+     "title": "St Andrew Undershaft (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Andrew_Undershaft",
+     "locator": "lead",
+     "quote": "The present building was constructed in 1532 but a church has existed on the site since the 12th century."
+    }
+   ]
+  },
+  {
+   "name": "St Edmund's Church, Castleton",
+   "qid": "Q17546209",
+   "lat": 53.3428,
+   "lon": -1.77575,
+   "why": "A twelfth-century church whose tower carries the Garland King's flower garland after Garland Day.",
+   "sources": [
+    {
+     "title": "Castleton Garland Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Castleton_Garland_Day",
+     "locator": "section The custom",
+     "quote": "The King rides to the foot of the tower of St Edmund's church where all the pinnacles but one have been decorated with oak leaf branches."
+    },
+    {
+     "title": "St Edmund's Church, Castleton (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Edmund%27s_Church,_Castleton",
+     "locator": "section History",
+     "quote": "The church dates from the 12th century"
+    }
+   ]
+  },
+  {
+   "name": "Maypole, Barwick-in-Elmet",
+   "lat": 53.83115,
+   "lon": -1.39449,
+   "why": "A wooden maypole 86 feet high in the village centre, said to be the tallest in the UK; it is taken down, checked and raised again every three years.",
+   "sources": [
+    {
+     "title": "Barwick-in-Elmet (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barwick-in-Elmet",
+     "locator": "section Maypole",
+     "quote": "One of the most notable village landmarks is the wooden maypole 86 feet (26 m) high that stands at the junction of Main Street and the Cross"
+    },
+    {
+     "title": "Barwick-in-Elmet (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barwick-in-Elmet",
+     "locator": "section Maypole",
+     "quote": "Every three years, the maypole is lowered, inspected, maintained"
+    }
+   ]
+  },
+  {
+   "name": "Maypole, Welford-on-Avon",
+   "lat": 52.168,
+   "lon": -1.784,
+   "why": "One of the tallest maypoles in England, 65 feet high; the wooden pole was replaced in aluminium after a lightning strike.",
+   "sources": [
+    {
+     "title": "Welford-on-Avon (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Welford-on-Avon",
+     "locator": "lead",
+     "quote": "The village maypole is one of the tallest in England (at 65 feet / 20 metres). It used to be wooden but was replaced by an aluminium pole following a lightning strike."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,604 @@
+{
+ "id": "bonfire-night",
+ "title": "Bonfire Night",
+ "also": [
+  "Guy Fawkes Night",
+  "Gunpowder Treason Day",
+  "Firework Night"
+ ],
+ "season": "autumn",
+ "when": {
+  "date": "11-05"
+ },
+ "when_text": "5 November (Lewes moves to the 4th when the 5th is a Sunday)",
+ "intro": "On 5 November 1605 Guy Fawkes was caught beneath the House of Lords with 36 barrels of gunpowder, and Londoners lit bonfires for the king's escape. An act of Parliament made the day a thanksgiving, and for centuries it was a Protestant festival of sermons, bells and effigies. Its places run from Fawkes's York to the Midlands houses where the plot was hatched and ended, and to Lewes and Ottery St Mary, where it is kept most fiercely.",
+ "facts": [
+  {
+   "kind": "history",
+   "title": "Found in the undercroft",
+   "year": 1605,
+   "text": "A group of English Catholics planned to blow up King James I at the State Opening of Parliament. Late on 4 November 1605 a search party found Guy Fawkes, who gave his name as John Johnson, guarding 36 barrels of gunpowder in a rented undercroft directly beneath the House of Lords.",
+   "where": {
+    "name": "Palace of Westminster",
+    "lat": 51.4992,
+    "lon": -0.1247,
+    "qid": "Q62408"
+   },
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "lead",
+     "quote": "During a search of the House of Lords on the evening of 4 November, Fawkes was discovered guarding 36 barrels of gunpowder"
+    },
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Discovery",
+     "quote": "He was arrested, whereupon he gave his name as John Johnson."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "The letter to Lord Monteagle",
+   "year": 1605,
+   "text": "The plot was given away by an anonymous letter delivered to the Catholic peer Lord Monteagle on 26 October 1605, warning him to stay away from Parliament. He took it straight to Robert Cecil at Whitehall. Catesby suspected the newest recruit, Francis Tresham, who denied writing it.",
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "lead",
+     "quote": "On 26 October 1605, an anonymous letter of warning was sent to William Parker, 4th Baron Monteagle, a Catholic member of Parliament, who immediately showed it to the authorities."
+    },
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Monteagle letter",
+     "quote": "Catesby, who had been due to go hunting with the King, suspected that Tresham was responsible for the letter"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "The first bonfires",
+   "year": 1606,
+   "text": "Londoners lit bonfires to celebrate the king's escape, and in January 1606 Parliament passed the Observance of 5th November Act, which ordered a thanksgiving service in every church each 5 November. The act stayed on the statute book until 1859.",
+   "sources": [
+    {
+     "title": "Guy Fawkes Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+     "locator": "lead",
+     "quote": "Celebrating that the king had survived, people lit bonfires around London."
+    },
+    {
+     "title": "Observance of 5th November Act 1605 (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Observance_of_5th_November_Act_1605",
+     "locator": "lead",
+     "quote": "The act remained on the statute book until 1859."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Burning the pope, then the guy",
+   "year": 1625,
+   "text": "The first report of effigies burnt on 5 November is from 1625, when the pope and the devil went on the fire after Charles I married a Catholic princess. Effigies of Fawkes himself, carried round by children begging pennies, came at the end of the 18th century, and the day became Guy Fawkes Day.",
+   "sources": [
+    {
+     "title": "Guy Fawkes Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+     "locator": "section Early significance",
+     "quote": "on 5 November that year, effigies of the pope and the devil were burnt, the earliest such report of this practice"
+    },
+    {
+     "title": "Guy Fawkes Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+     "locator": "lead",
+     "quote": "Towards the end of the 18th century children began begging for money with effigies of Guy Fawkes and 5 November gradually became known as Guy Fawkes Day."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Searching the cellars",
+   "text": "Before every State Opening of Parliament the Yeomen of the Guard search the cellars of the Palace of Westminster, a custom kept up since the plot. Their reward is a small glass of port.",
+   "where": {
+    "name": "Palace of Westminster",
+    "lat": 51.4992,
+    "lon": -0.1247,
+    "qid": "Q62408"
+   },
+   "sources": [
+    {
+     "title": "State Opening of Parliament (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/State_Opening_of_Parliament",
+     "locator": "section Searching of the cellars",
+     "quote": "First, the cellars of the Palace of Westminster are searched by the Yeomen of the Guard."
+    },
+    {
+     "title": "State Opening of Parliament (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/State_Opening_of_Parliament",
+     "locator": "section Searching of the cellars",
+     "quote": "the Yeomen are paid for their services with a small glass of port wine"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "A York childhood",
+   "year": 1570,
+   "text": "Guy Fawkes was born in Stonegate, York, in 1570 and baptised on 16 April at St Michael le Belfrey, opposite the Minster. He went to St Peter's School, as did the plotters John and Christopher Wright.",
+   "where": {
+    "name": "St Michael le Belfrey, York",
+    "lat": 53.9617,
+    "lon": -1.0828,
+    "qid": "Q7594874"
+   },
+   "sources": [
+    {
+     "title": "Guy Fawkes (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes",
+     "locator": "section Childhood",
+     "quote": "Guy Fawkes was born in 1570 in Stonegate, York."
+    },
+    {
+     "title": "St Michael le Belfrey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Michael_le_Belfrey",
+     "locator": "section History",
+     "quote": "The church is famous for being the place where Guy Fawkes was baptised on 16 April 1570."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "The school that will not burn a guy",
+   "text": "St Peter's School in York, which claims a foundation in 627, has a bonfire and fireworks on 5 November but does not burn a guy, because Fawkes was an Old Peterite.",
+   "where": {
+    "name": "St Peter's School, York",
+    "lat": 53.9664,
+    "lon": -1.0929,
+    "qid": "Q2504619"
+   },
+   "sources": [
+    {
+     "title": "St Peter's School, York (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter%27s_School,_York",
+     "locator": "section Traditions",
+     "quote": "on Guy Fawkes Night, the school does not partake in the common tradition of burning a 'Guy' on the bonfire, as Guy Fawkes was an Old Peterite (alumnus)."
+    }
+   ]
+  },
+  {
+   "kind": "oldest",
+   "title": "Fawkes's lantern",
+   "text": "The lantern Fawkes was carrying when he was arrested survives and is in the Ashmolean Museum in Oxford.",
+   "where": {
+    "name": "Ashmolean Museum",
+    "lat": 51.7554,
+    "lon": -1.26,
+    "qid": "Q636400"
+   },
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Discovery",
+     "quote": "He was carrying a lantern now held in the Ashmolean Museum, Oxford"
+    },
+    {
+     "title": "Ashmolean Museum (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashmolean_Museum",
+     "locator": "section Collections",
+     "quote": "The lantern that Gunpowder Plot conspirator Guy Fawkes carried in 1605"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Planning in the gatehouse",
+   "text": "Robert Catesby's family home at Ashby St Ledgers in Northamptonshire is said to have been the plotters' base: they met in the room over the gatehouse, out of sight of the main house. The fugitives stopped there on the evening of 5 November.",
+   "where": {
+    "name": "Ashby St Ledgers Manor House",
+    "lat": 52.3097,
+    "lon": -1.1604,
+    "qid": "Q17557656"
+   },
+   "sources": [
+    {
+     "title": "Ashby St Ledgers (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashby_St_Ledgers",
+     "locator": "section Gunpowder Plot",
+     "quote": "In the room above the Gatehouse, with its privacy from the main house and clear view of the surrounding area, Robert Catesby, his servant Thomas Bates and the other conspirators are said to have planned a great deal of the Gunpowder Plot."
+    },
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Flight",
+     "quote": "The group of six conspirators stopped at Ashby St Ledgers at about 6 pm"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Last stand at Holbeche House",
+   "year": 1605,
+   "text": "The fleeing plotters reached Holbeche House in Staffordshire on 7 November. They laid out their rain-soaked gunpowder to dry before the fire, a spark set it off and several were burnt. Next morning the Sheriff of Worcestershire's men stormed the house and Catesby was killed.",
+   "where": {
+    "name": "Holbeche House",
+    "lat": 52.5122,
+    "lon": -2.1714,
+    "qid": "Q3139260"
+   },
+   "sources": [
+    {
+     "title": "Holbeche House (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holbeche_House",
+     "locator": "section Gunpowder Plot",
+     "quote": "several were maimed when gunpowder left to dry in front of the fire was ignited"
+    },
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Flight",
+     "quote": "Richard Walsh (Sheriff of Worcestershire) and his company of 200 men besieged Holbeche House on the morning of 8 November."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Hanged opposite Parliament",
+   "year": 1606,
+   "text": "Convicted at their trial on 27 January 1606, Fawkes, Thomas Wintour, Ambrose Rookwood and Robert Keyes were hanged, drawn and quartered a few days later in Old Palace Yard, opposite the building they had meant to destroy.",
+   "where": {
+    "name": "Old Palace Yard",
+    "lat": 51.4992,
+    "lon": -0.1255,
+    "qid": "Q3881523"
+   },
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "lead",
+     "quote": "At their trial on 27 January 1606, eight of the surviving conspirators, including Fawkes, were convicted"
+    },
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Trial and execution",
+     "quote": "were hanged, drawn and quartered, opposite the building they had planned to blow up, in the Old Palace Yard at Westminster"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Lewes, the bonfire capital",
+   "year": 1679,
+   "text": "Lewes in Sussex has held some of England's wildest 5 November celebrations since 1679. Its bonfire societies also remember the seventeen Protestant martyrs burnt in the town under Mary I, with seventeen burning crosses carried through the streets and a flaming tar barrel thrown into the River Ouse.",
+   "where": {
+    "name": "Lewes",
+    "lat": 50.8747,
+    "lon": 0.0117,
+    "qid": "Q246884"
+   },
+   "sources": [
+    {
+     "title": "Guy Fawkes Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+     "locator": "section Present day",
+     "quote": "since 1679 Lewes has been the setting of some of England's most extravagant 5 November celebrations"
+    },
+    {
+     "title": "Lewes Bonfire (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lewes_Bonfire",
+     "locator": "section Event",
+     "quote": "To mark the demise of the 17 Lewes Martyrs, 17 burning crosses are carried through the town"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Tar barrels at Ottery St Mary",
+   "text": "In Ottery St Mary, Devon, people run through the streets carrying blazing barrels soaked in tar, a custom going back to the 17th century and held around Guy Fawkes Night.",
+   "where": {
+    "name": "Ottery St Mary",
+    "lat": 50.752,
+    "lon": -3.279,
+    "qid": "Q1247828"
+   },
+   "sources": [
+    {
+     "title": "Ottery St Mary (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ottery_St_Mary",
+     "locator": "section Tar Barrels",
+     "quote": "The town typically stages annual events around Guy Fawkes Night when, in a tradition dating from the 17th century, barrels soaked in tar are set alight, and carried aloft through parts of the town by residents"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Kept differently across the isles",
+   "text": "Bonfire Night spread through Britain and to the colonies. In Scotland bonfires are still lit in several cities; in Ireland it was overshadowed by William III's birthday and became sectarian from the 19th century and its celebration in Northern Ireland remains contentious.",
+   "sources": [
+    {
+     "title": "Guy Fawkes Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+     "locator": "section Williamite",
+     "quote": "(Its celebration in Northern Ireland remains controversial, unlike in Scotland where bonfires continue to be lit in various cities.)"
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Palace of Westminster",
+   "qid": "Q62408",
+   "lat": 51.4992,
+   "lon": -0.1247,
+   "why": "The target of the plot: the gunpowder lay in an undercroft beneath the House of Lords, and the cellars are still searched before each State Opening.",
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Undercroft",
+     "quote": "the undercroft directly beneath the House of Lords—the room where the plotters eventually stored the gunpowder"
+    },
+    {
+     "title": "State Opening of Parliament (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/State_Opening_of_Parliament",
+     "locator": "section Searching of the cellars",
+     "quote": "Since that year, the cellars have been searched, now largely, but not only, for ceremonial purposes."
+    }
+   ]
+  },
+  {
+   "name": "Old Palace Yard, Westminster",
+   "qid": "Q3881523",
+   "lat": 51.4992,
+   "lon": -0.1255,
+   "why": "Where Fawkes and three others were executed in January 1606.",
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Trial and execution",
+     "quote": "in the Old Palace Yard at Westminster"
+    }
+   ]
+  },
+  {
+   "name": "St Michael le Belfrey, York",
+   "qid": "Q7594874",
+   "lat": 53.9617,
+   "lon": -1.0828,
+   "why": "The church opposite York Minster, built 1525-1537, where Guy Fawkes was baptised.",
+   "sources": [
+    {
+     "title": "St Michael le Belfrey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Michael_le_Belfrey",
+     "locator": "section History",
+     "quote": "The present church building was built between 1525 and 1537"
+    },
+    {
+     "title": "St Michael le Belfrey (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Michael_le_Belfrey",
+     "locator": "section History",
+     "quote": "the place where Guy Fawkes was baptised on 16 April 1570"
+    }
+   ]
+  },
+  {
+   "name": "St Peter's School, York",
+   "qid": "Q2504619",
+   "lat": 53.9664,
+   "lon": -1.0929,
+   "why": "Fawkes's school, which leaves the guy off its bonfire.",
+   "sources": [
+    {
+     "title": "St Peter's School, York (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/St_Peter%27s_School,_York",
+     "locator": "section History",
+     "quote": "three conspirators in the 1605 Gunpowder Plot, Guy Fawkes, John Wright, and Christopher Wright, attended the school"
+    }
+   ]
+  },
+  {
+   "name": "Ashmolean Museum, Oxford",
+   "qid": "Q636400",
+   "lat": 51.7554,
+   "lon": -1.26,
+   "why": "Holds the lantern Fawkes carried on the night of his arrest.",
+   "sources": [
+    {
+     "title": "Ashmolean Museum (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashmolean_Museum",
+     "locator": "section Collections",
+     "quote": "The lantern that Gunpowder Plot conspirator Guy Fawkes carried in 1605"
+    }
+   ]
+  },
+  {
+   "name": "Ashby St Ledgers Manor House",
+   "qid": "Q17557656",
+   "lat": 52.3097,
+   "lon": -1.1604,
+   "why": "The Catesbys' manor, said to be where much of the plot was planned, in the room over the gatehouse.",
+   "sources": [
+    {
+     "title": "Ashby St Ledgers (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ashby_St_Ledgers",
+     "locator": "lead",
+     "quote": "The Manor House is famous for being a location for the planning of the Gunpowder Plot in 1605."
+    }
+   ]
+  },
+  {
+   "name": "Huddington Court",
+   "qid": "Q13586006",
+   "lat": 52.2138,
+   "lon": -2.0856,
+   "why": "The moated Worcestershire home of the Wintour brothers, with two priest holes; the plot was partly hatched here and the fugitives sheltered here on 6 November. It is a private house.",
+   "sources": [
+    {
+     "title": "Huddington Court (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Huddington_Court",
+     "locator": "section The Gunpowder Plot",
+     "quote": "The plans of the Gunpowder Plot to blow up the Houses of Parliament in 1605 were, partially, conceived in Huddington Court."
+    },
+    {
+     "title": "Huddington Court (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Huddington_Court",
+     "locator": "section The Gunpowder Plot",
+     "quote": "Following the arrest of Guy Fawkes the plotters fled to Huddington Court"
+    }
+   ]
+  },
+  {
+   "name": "Coughton Court",
+   "qid": "Q5176083",
+   "lat": 52.2436,
+   "lon": -1.8796,
+   "why": "The Throckmortons' Tudor gatehouse house in Warwickshire, rented by the plotter Everard Digby; Thomas Bates rode here with news of the failure for the Jesuit priests.",
+   "sources": [
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Recruitment",
+     "quote": "Digby was asked by Catesby to rent Coughton Court near Alcester."
+    },
+    {
+     "title": "Gunpowder Plot (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+     "locator": "section Flight",
+     "quote": "Bates left the group and travelled to Coughton Court to deliver a letter from Catesby, to Garnet and the other priests"
+    }
+   ]
+  },
+  {
+   "name": "Holbeche House",
+   "qid": "Q3139260",
+   "lat": 52.5122,
+   "lon": -2.1714,
+   "why": "Where the plotters made their last stand on 8 November 1605.",
+   "sources": [
+    {
+     "title": "Holbeche House (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Holbeche_House",
+     "locator": "lead",
+     "quote": "Some members of the Gunpowder Plot were either killed or captured at Holbeche House in 1605."
+    }
+   ]
+  },
+  {
+   "name": "Lewes War Memorial",
+   "qid": "Q22115515",
+   "lat": 50.8734,
+   "lon": 0.0111,
+   "why": "The centre of Lewes Bonfire night, where a wreath is laid during the processions.",
+   "sources": [
+    {
+     "title": "Lewes Bonfire (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Lewes_Bonfire",
+     "locator": "section Event",
+     "quote": "a wreath-laying ceremony occurs at the War Memorial in the centre of town"
+    }
+   ]
+  },
+  {
+   "name": "Ottery St Mary",
+   "qid": "Q1247828",
+   "lat": 50.752,
+   "lon": -3.279,
+   "why": "The Devon town of the flaming tar barrels.",
+   "sources": [
+    {
+     "title": "Guy Fawkes Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+     "locator": "section Present day",
+     "quote": "in Ottery St Mary residents run through the streets carrying flaming tar barrels"
+    }
+   ]
+  }
+ ]
+}

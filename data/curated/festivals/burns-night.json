@@ -1,0 +1,526 @@
+{
+ "id": "burns-night",
+ "title": "Burns Night",
+ "also": [
+  "Burns Nicht (Scots)",
+  "Oidhche na Taigeise (Scottish Gaelic)",
+  "Robert Burns Day",
+  "Rabbie Burns Day"
+ ],
+ "season": "winter",
+ "when": {
+  "date": "01-25"
+ },
+ "when_text": "25 January, Robert Burns's birthday (1759); suppers are held on or near the day",
+ "intro": "Burns Night marks the birthday of Robert Burns, Scotland's national poet, with a supper of haggis, whisky and his poems. His friends held the first one in 1801, and the places of his life in Ayrshire and Dumfriesshire, from the cottage where he was born to the kirk of 'Tam o' Shanter' and his tomb, are still visited for it.",
+ "facts": [
+  {
+   "kind": "history",
+   "title": "Born in a clay cottage",
+   "year": 1759,
+   "text": "Burns was born on 25 January 1759 in a four-roomed clay and thatch cottage in Alloway that his father had built two years earlier. After the family left it became, among other things, an alehouse; it was put back as it had been in Burns's time in 1881.",
+   "where": {
+    "name": "Burns Cottage",
+    "lat": 55.4328,
+    "lon": -4.6335,
+    "qid": "Q5000064"
+   },
+   "sources": [
+    {
+     "title": "Burns Cottage (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_Cottage",
+     "locator": "lead",
+     "quote": "The cottage was built by Robert Burns' father, William Burnes in 1757 and is a four-roomed clay and thatch cottage"
+    },
+    {
+     "title": "Burns Cottage (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_Cottage",
+     "locator": "section History",
+     "quote": "then became an alehouse, before being converted back to its appearance during the lifetime of Burns"
+    }
+   ]
+  },
+  {
+   "kind": "oldest",
+   "title": "The first Burns supper",
+   "year": 1801,
+   "text": "The first Burns supper was held by his friends at Burns Cottage on 21 July 1801, five years after he died, so it marked his death rather than his birth.",
+   "where": {
+    "name": "Burns Cottage",
+    "lat": 55.4328,
+    "lon": -4.6335,
+    "qid": "Q5000064"
+   },
+   "sources": [
+    {
+     "title": "Burns supper (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_supper",
+     "locator": "section History",
+     "quote": "The first supper was held in memoriam at Burns Cottage in Ayrshire by Burns's friends, on 21 July 1801, the fifth anniversary of his death."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "Held on the wrong birthday",
+   "year": 1802,
+   "text": "The Greenock Burns Club, the oldest that still exists, held its first birthday supper on 29 January 1802. In 1803 the Ayr parish records showed that Burns was born on 25 January, and suppers have kept that date since.",
+   "sources": [
+    {
+     "title": "Burns supper (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_supper",
+     "locator": "section History",
+     "quote": "They held the first Burns supper on what they thought was his birthday, 29 January 1802, but in 1803, they discovered Ayr parish records that noted his date of birth was actually 25 January 1759."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "A grace older than Burns",
+   "text": "Suppers begin with the Selkirk Grace ('Some hae meat an canna eat...'). It is credited to Burns, but it was already known in the seventeenth century as the Galloway or Covenanters' Grace.",
+   "sources": [
+    {
+     "title": "Burns supper (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_supper",
+     "locator": "section Host's welcoming speech",
+     "quote": "Although attributed to Burns, the Selkirk Grace was already known in the 17th century as the \"Galloway Grace\" or the \"Covenanters' Grace\"."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Addressing the haggis",
+   "year": 1786,
+   "text": "Burns wrote 'Address to a Haggis' in 1786, praising the plain dish over the French food then in fashion. At a supper the guests stand while the haggis is piped in, and the poem is recited over it before it is cut open with a knife.",
+   "sources": [
+    {
+     "title": "Address to a Haggis (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Address_to_a_Haggis",
+     "locator": "lead",
+     "quote": "The host or a guest then recites the poem, slicing open the haggis at the appropriate moment with a ceremonial knife."
+    }
+   ]
+  },
+  {
+   "kind": "food",
+   "title": "Haggis was first written down in England",
+   "year": 1430,
+   "text": "Haggis is thought of as Scottish, but the earliest known recipes are English, from around 1430: one in a verse cookbook from Lancashire, the Liber Cure Cocorum.",
+   "sources": [
+    {
+     "title": "Haggis (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Haggis",
+     "locator": "section History",
+     "quote": "in the verse cookbook Liber Cure Cocorum dating from around 1430 in Lancashire, north west England"
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "Banned in America",
+   "year": 1971,
+   "text": "Since 1971 traditional haggis cannot be imported into the United States from the UK, because American rules forbid food made with sheep's lung.",
+   "sources": [
+    {
+     "title": "Haggis (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Haggis",
+     "locator": "section Legality",
+     "quote": "In 1971, it became illegal to import haggis into the US from the UK due to a ban on food containing sheep lung"
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "Witches in Alloway Kirk",
+   "year": 1790,
+   "text": "Burns wrote 'Tam o' Shanter' in 1790 for the antiquary Francis Grose, who agreed to print a drawing of Alloway Kirk if Burns gave him something to go with it. Burns sent him witch stories about the ruined kirk, and the poem has Tam see the witches dancing there.",
+   "where": {
+    "name": "Alloway Auld Kirk",
+    "lat": 55.4279,
+    "lon": -4.6376,
+    "qid": "Q4733238"
+   },
+   "sources": [
+    {
+     "title": "Tam o' Shanter (poem) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tam_o%27_Shanter_(poem)",
+     "locator": "section Origins",
+     "quote": "the poet asked the antiquarian to include a drawing of Alloway Kirk when he came to Ayrshire; Grose agreed, as long as Burns gave him something to print alongside it"
+    },
+    {
+     "title": "Alloway Auld Kirk (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alloway_Auld_Kirk",
+     "locator": "lead",
+     "quote": "celebrated as the scene of the witches' dance"
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "Saved by running water",
+   "text": "Tam escapes the witch Nannie by riding over the Brig o' Doon, as witches cannot cross running water; she is left holding his mare's tail. The bridge is medieval, and its cobbles are laid in a crooked line, it is said, to stop witches crossing.",
+   "where": {
+    "name": "Brig o' Doon",
+    "lat": 55.426,
+    "lon": -4.6367,
+    "qid": "Q4967130"
+   },
+   "sources": [
+    {
+     "title": "Brig o' Doon (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brig_o%27_Doon",
+     "locator": "sections Design, In literature",
+     "quote": "The line of the cobbles in the roadway is cranked, due to the belief that this pattern would stop witches from crossing."
+    },
+    {
+     "title": "Brig o' Doon (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brig_o%27_Doon",
+     "locator": "section In literature",
+     "quote": "He is just able to escape her by crossing the bridge (over a running stream)"
+    },
+    {
+     "title": "Brig o' Doon (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brig_o%27_Doon",
+     "locator": "lead",
+     "quote": "is a late medieval bridge over the River Doon"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "A debating club in an ale-house",
+   "year": 1780,
+   "text": "On 11 November 1780 Burns, his brother Gilbert and five friends founded a debating club in Tarbolton, with Robert as its first president. It was probably the first rural debating society in Scotland and a model for the later Burns Clubs.",
+   "where": {
+    "name": "Bachelors' Club, Tarbolton",
+    "lat": 55.5132,
+    "lon": -4.4862,
+    "qid": "Q4838843"
+   },
+   "sources": [
+    {
+     "title": "Bachelors' Club, Tarbolton (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bachelors%27_Club,_Tarbolton",
+     "locator": "lead and section History",
+     "quote": "It was probably the first rural debating society in Scotland and the prototype for many Burns Clubs the world over."
+    },
+    {
+     "title": "Bachelors' Club, Tarbolton (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bachelors%27_Club,_Tarbolton",
+     "locator": "section History",
+     "quote": "Robert Burns was unanimously elected president for the first meeting"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Farmer and exciseman",
+   "year": 1788,
+   "text": "From 1788 to 1791 Burns farmed Ellisland in Dumfriesshire, in a farmhouse he had built, and in 1789 he became an excise officer, riding long distances collecting duties. 'Auld Lang Syne' also dates from 1788.",
+   "where": {
+    "name": "Ellisland Farm",
+    "lat": 55.1374,
+    "lon": -3.6802,
+    "qid": "Q5366039"
+   },
+   "sources": [
+    {
+     "title": "Ellisland Farm (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ellisland_Farm",
+     "locator": "lead",
+     "quote": "The complex is a museum in the farm Robert Burns built, lived in and farmed from 1788 until 1791."
+    },
+    {
+     "title": "Robert Burns (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Burns",
+     "locator": "section Dumfriesshire",
+     "quote": "He was appointed to duties in Customs and Excise in 1789."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "The poet's skull measured",
+   "year": 1834,
+   "text": "Burns was buried in St Michael's churchyard in Dumfries in 1796 and moved to a mausoleum there in 1815. When his widow Jean Armour was buried in 1834, phrenologists opened his coffin at night and took casts of his skull.",
+   "where": {
+    "name": "Burns Mausoleum",
+    "lat": 55.0651,
+    "lon": -3.6049,
+    "qid": "Q17570326"
+   },
+   "sources": [
+    {
+     "title": "Robert Burns' skull (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Burns%27_skull",
+     "locator": "lead",
+     "quote": "In 1834, Robert Burns' skull was exhumed and multiple casts were made from the head of Scotland's national bard."
+    },
+    {
+     "title": "Robert Burns' skull (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Burns%27_skull",
+     "locator": "section Exhumation of the skull",
+     "quote": "with the exhumation being performed at night and in secret, historians now doubt whether consent was given"
+    },
+    {
+     "title": "Dumfries (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dumfries",
+     "locator": "section Religion",
+     "quote": "In 1815, his remains were moved to a grand mausoleum"
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "The greatest Scot",
+   "year": 2009,
+   "text": "In 2009 a public vote run by STV chose Burns as the greatest Scot.",
+   "sources": [
+    {
+     "title": "Robert Burns (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Burns",
+     "locator": "lead",
+     "quote": "In 2009 he was chosen as the greatest Scot by the Scottish public in a vote run by Scottish television channel STV."
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Burns Cottage",
+   "qid": "Q5000064",
+   "lat": 55.4328,
+   "lon": -4.6335,
+   "why": "Burns's birthplace in Alloway and the scene of the first Burns supper in 1801; John Keats came here in 1818.",
+   "sources": [
+    {
+     "title": "Burns Cottage (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_Cottage",
+     "locator": "lead",
+     "quote": "who was born at the cottage on 25 January 1759"
+    },
+    {
+     "title": "Burns Cottage (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Burns_Cottage",
+     "locator": "section History",
+     "quote": "In 1818, the English poet John Keats took a trip to Scotland to visit the home"
+    }
+   ]
+  },
+  {
+   "name": "Alloway Auld Kirk",
+   "qid": "Q4733238",
+   "lat": 55.4279,
+   "lon": -4.6376,
+   "why": "Ruined church where Tam o' Shanter sees the witches dance; Burns's father is buried in the kirkyard.",
+   "sources": [
+    {
+     "title": "Alloway Auld Kirk (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alloway_Auld_Kirk",
+     "locator": "lead",
+     "quote": "celebrated as the scene of the witches' dance in the poem \"Tam o' Shanter\" by Robert Burns"
+    },
+    {
+     "title": "Alloway Auld Kirk (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alloway_Auld_Kirk",
+     "locator": "section Robert Burns",
+     "quote": "William Burnes, father of the poet, is buried in the graveyard"
+    }
+   ]
+  },
+  {
+   "name": "Brig o' Doon",
+   "qid": "Q4967130",
+   "lat": 55.426,
+   "lon": -4.6367,
+   "why": "Late medieval bridge where Tam escapes the witch at the end of the poem.",
+   "sources": [
+    {
+     "title": "Brig o' Doon (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Brig_o%27_Doon",
+     "locator": "section In literature",
+     "quote": "It is used as the setting for the final verse of the Robert Burns poem \"Tam o' Shanter\"."
+    }
+   ]
+  },
+  {
+   "name": "Robert Burns Monument, Alloway",
+   "qid": "Q17127144",
+   "lat": 55.4269,
+   "lon": -4.6368,
+   "why": "Nineteenth-century memorial to Burns by Thomas Hamilton, beside the Auld Kirk and the Brig o' Doon.",
+   "sources": [
+    {
+     "title": "Alloway (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Alloway",
+     "locator": "section History",
+     "quote": "A 19th-century memorial to Burns, designed by Thomas Hamilton, is located at the foot of the village next to the present church."
+    }
+   ]
+  },
+  {
+   "name": "Bachelors' Club, Tarbolton",
+   "qid": "Q4838843",
+   "lat": 55.5132,
+   "lon": -4.4862,
+   "why": "Seventeenth-century thatched house where Burns's debating club met and where he took dancing lessons.",
+   "sources": [
+    {
+     "title": "Bachelors' Club, Tarbolton (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bachelors%27_Club,_Tarbolton",
+     "locator": "lead",
+     "quote": "This 17th-century building is thatched and has period furnishings."
+    },
+    {
+     "title": "Bachelors' Club, Tarbolton (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bachelors%27_Club,_Tarbolton",
+     "locator": "section History",
+     "quote": "Robert Burns also attended dancing lessons here in 1779"
+    }
+   ]
+  },
+  {
+   "name": "Ellisland Farm",
+   "qid": "Q5366039",
+   "lat": 55.1374,
+   "lon": -3.6802,
+   "why": "The farm Burns built and worked from 1788 to 1791, now a museum.",
+   "sources": [
+    {
+     "title": "Ellisland Farm (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ellisland_Farm",
+     "locator": "lead",
+     "quote": "The complex is a museum in the farm Robert Burns built, lived in and farmed from 1788 until 1791."
+    }
+   ]
+  },
+  {
+   "name": "The Globe Inn, Dumfries",
+   "qid": "Q17570308",
+   "lat": 55.0676,
+   "lon": -3.6097,
+   "why": "Dumfries inn where Burns met fellow radicals in the 1790s.",
+   "sources": [
+    {
+     "title": "Robert Burns (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Burns",
+     "locator": "section Dumfries",
+     "quote": "Burns met other radicals at the Globe Inn in Dumfries."
+    }
+   ]
+  },
+  {
+   "name": "Robert Burns House, Dumfries",
+   "qid": "Q17570223",
+   "lat": 55.0661,
+   "lon": -3.608,
+   "why": "The red sandstone house in Burns Street where Burns spent his last years; now a museum.",
+   "sources": [
+    {
+     "title": "Robert Burns (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Robert_Burns",
+     "locator": "section Failing health and death",
+     "quote": "Latterly Burns lived in Dumfries in a two-storey red sandstone house on Mill Hole Brae, now Burns Street. The home is now a museum."
+    }
+   ]
+  },
+  {
+   "name": "St Michael's Church, Dumfries",
+   "qid": "Q17570317",
+   "lat": 55.0651,
+   "lon": -3.6057,
+   "why": "Burns was first buried in its churchyard in 1796.",
+   "sources": [
+    {
+     "title": "Dumfries (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dumfries",
+     "locator": "section Religion",
+     "quote": "The church has a number of connections to the poet Robert Burns, and he was initially buried in its churchyard."
+    }
+   ]
+  },
+  {
+   "name": "Burns Mausoleum",
+   "qid": "Q17570326",
+   "lat": 55.0651,
+   "lon": -3.6049,
+   "why": "Tomb in St Michael's churchyard to which Burns was moved in 1815, with his wife Jean Armour and members of the family.",
+   "sources": [
+    {
+     "title": "Dumfries (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Dumfries",
+     "locator": "section Religion",
+     "quote": "In 1815, his remains were moved to a grand mausoleum in the south-east corner of the churchyard, where his wife Jean Armour and several family members are also interred."
+    }
+   ]
+  }
+ ]
+}

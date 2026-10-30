@@ -2821,3 +2821,23 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   a new last field), /sky#churches explains the wall axis.
 - Tests 544 OK (wall axis with a skewed tower, parts); ui_check sky passes. Hosted copy not updated.
   Next: SK5b2c (whole-abbey outlines; Hoare and Sweet 2000).
+
+## 2026-10-30 — Festivals and seasons (page /festivals, George's idea)
+- 16 festivals researched by four subagents (`data/curated/festivals/<id>.json`, brief in `RESEARCH_BRIEF.md`):
+  Christmas, New Year and Hogmanay, Burns Night, Imbolc and St Brigid, St Valentine and St Dwynwen, St David,
+  St Patrick, Easter and Shrovetide, St George, May Day and Beltane, Midsummer, Lammas and Lughnasa, Michaelmas and
+  harvest, Halloween and Samhain, Bonfire Night, St Andrew: 217 facts and 155 places, 632 quotes, all found
+  (`python -m bidb.festivals --check` → `data/festivals_check.json`). Overstated origins are given as the sources
+  allow (Synod of Oxford 1222 and St George's Day, Padstow's 'Obby 'Oss first recorded 1803, Castleton Garland Day
+  from a rushbearing, Hutton's caution on Samhain and Lammas, St Patrick parades begun in America).
+- `bidb/festival_finds.py`: what the catalogue holds per festival: churches of its saints (Halloween: 524 All Saints
+  and All Souls; Michaelmas: 278 St Michael), stories by whole word (Halloween 641, Christmas 35), sky alignments
+  (13 midwinter, 7 midsummer, 5 equinox), holy wells of St Brigid (109), St Patrick's places, haunted places (92),
+  Burns's linked buildings, on this day, oldest customs; researched places linked to records by Wikidata id.
+- Page `/festivals` (menu "Festivals"): wheel of the year with today's hand and each festival at its next date (Easter
+  by the computus, solstices by Sky.next), season chips, cards in order of the next date with countdowns; each
+  festival (`?f=`): facts by kind, places to visit, map with layers, churches, stories, sky, on the day, oldest
+  customs, previous/next. Hosted copy: `data/festivals.json` (757 KB) and static routes. Help section added.
+- Tests 547 OK (`test_festivals`: files, validation, finds on an in-memory catalogue); ui_check festivals,
+  festival_page, help pass. Hosted copy not republished.
+- Lead: catalogue record Q116535113 (Hill of Uisneach) is labelled a ringfort in Co. Offaly on Wikidata (EV0b).

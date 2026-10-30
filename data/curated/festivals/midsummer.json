@@ -1,0 +1,605 @@
+{
+ "id": "midsummer",
+ "title": "Midsummer and St John's Eve",
+ "also": [
+  "Summer solstice",
+  "St John's Day",
+  "Golowan (Cornish)",
+  "Oíche Fhéile Eoin (Irish, St John's Eve)",
+  "Gŵyl Ifan (Welsh)"
+ ],
+ "season": "summer",
+ "when": {
+  "sun": "summer_solstice"
+ },
+ "when_text": "The summer solstice, about 21 June; St John's Eve on 23 June and Midsummer Day, the feast of St John the Baptist, on 24 June; Tynwald Day on 5 July",
+ "intro": "The longest day was watched for long before it was a festival: several prehistoric monuments in the isles face the midsummer sunrise or sunset. In the Christian calendar midsummer became St John the Baptist's day, 24 June, an English quarter day, and its eve was the night for bonfires from Ireland to Cornwall. Some fires and gatherings lapsed and have been revived; the crowds at Stonehenge are a modern custom.",
+ "facts": [
+  {
+   "kind": "sky",
+   "title": "Stonehenge faces the midsummer sunrise",
+   "text": "Stonehenge's main axis, with the great trilithon, the Heel Stone and the Avenue, lines up on the midsummer sunrise one way and the midwinter sunset the other. In one building phase the north-eastern entrance was widened to match that direction.",
+   "where": {
+    "name": "Stonehenge",
+    "lat": 51.17889,
+    "lon": -1.82611,
+    "qid": "Q39671"
+   },
+   "sources": [
+    {
+     "title": "Stonehenge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge",
+     "locator": "section Function and construction",
+     "quote": "the heel stone, and the embanked avenue, are aligned to the sunset of the winter solstice and the opposing sunrise of the summer solstice"
+    },
+    {
+     "title": "Stonehenge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge",
+     "locator": "section Stonehenge 3 III",
+     "quote": "The north-eastern entrance was widened at this time, so that it precisely matched the direction of the midsummer sunrise and midwinter sunset for the period."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Festival, Beanfield and open access",
+   "year": 2000,
+   "text": "A free festival grew up at Stonehenge each June from 1974, drawing some 30,000 people by 1984. After the clash with police known as the Battle of the Beanfield in 1985 the stones were closed at the solstice for about fifteen years; open access on the solstice returned in 2000.",
+   "where": {
+    "name": "Stonehenge",
+    "lat": 51.17889,
+    "lon": -1.82611,
+    "qid": "Q39671"
+   },
+   "sources": [
+    {
+     "title": "Stonehenge Free Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge_Free_Festival",
+     "locator": "lead",
+     "quote": "By the 1980s, the festival had grown to be a major event, attracting up to 30,000 people in 1984."
+    },
+    {
+     "title": "Stonehenge Free Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge_Free_Festival",
+     "locator": "lead",
+     "quote": "What followed was several years of exclusion until the year 2000 when full access was restored."
+    },
+    {
+     "title": "Stonehenge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge",
+     "locator": "section Neopaganism",
+     "quote": "Beginning in 1985, the year of the confrontation, no access to the stones at Stonehenge was allowed for any religious purpose."
+    }
+   ]
+  },
+  {
+   "kind": "sky",
+   "title": "Sunlight in the tomb on Anglesey",
+   "text": "The passage of Bryn Celli Ddu, a Neolithic passage tomb on Anglesey, roughly faces the midsummer sunrise, so that for a few weeks around the solstice the early sun reaches the back wall of the chamber.",
+   "where": {
+    "name": "Bryn Celli Ddu",
+    "lat": 53.2079,
+    "lon": -4.2355,
+    "qid": "Q2519821"
+   },
+   "sources": [
+    {
+     "title": "Bryn Celli Ddu (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bryn_Celli_Ddu",
+     "locator": "section The monument",
+     "quote": "The passage is roughly aligned with the Summer Solstice sunrise, such that for some weeks around the summer solstice, sunlight can find its way through to the back wall of the burial chamber."
+    }
+   ]
+  },
+  {
+   "kind": "sky",
+   "title": "Ballochroy and the Paps of Jura",
+   "text": "Alexander Thom argued that the three stones at Ballochroy in Kintyre were set to point at distant hills on Jura so as to mark the solstices precisely. Like many such claims, it is still debated.",
+   "where": {
+    "name": "Ballochroy standing stones",
+    "lat": 55.71195,
+    "lon": -5.61396,
+    "qid": "Q15849096"
+   },
+   "sources": [
+    {
+     "title": "Ballochroy (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballochroy",
+     "locator": "lead",
+     "quote": "lent precision to pinpointing the midsummer and winter soltices for ancient observers"
+    },
+    {
+     "title": "Ballochroy (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballochroy",
+     "locator": "body",
+     "quote": "As with many megalithic sites, the current theories concerning the exact use of the stones at Ballochroy are somewhat controversial."
+    }
+   ]
+  },
+  {
+   "kind": "sky",
+   "title": "An avenue to the midsummer sunset",
+   "text": "At Durrington Walls, the great henge near Stonehenge, a timber circle faced the midwinter sunrise while a paved avenue led down to the River Avon towards the midsummer sunset, the reverse of Stonehenge's alignment.",
+   "where": {
+    "name": "Durrington Walls",
+    "lat": 51.1925,
+    "lon": -1.7875,
+    "qid": "Q471738"
+   },
+   "sources": [
+    {
+     "title": "Durrington Walls (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Durrington_Walls",
+     "locator": "section Southern Circle",
+     "quote": "A paved avenue was constructed on a slightly different alignment – towards the sunset on the summer solstice – and it led to the River Avon."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Midsummer as a quarter day",
+   "text": "In Old English 'midsumor' meant the solstice. St John's Day, 24 June, became Midsummer Day in England and one of the four quarter days of the English calendar.",
+   "sources": [
+    {
+     "title": "Midsummer (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer",
+     "locator": "section Name and date",
+     "quote": "The name 'midsummer' is attested in Old English as midsumor, which meant the summer solstice."
+    },
+    {
+     "title": "Midsummer (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer",
+     "locator": "section Name and date",
+     "quote": "In England, 24 June continued to be called Midsummer Day and was one of the quarter days of the English calendar."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "Bonfires of bones",
+   "text": "A thirteenth-century monk of Lilleshall Abbey in Shropshire described three kinds of St John's Eve fire: one of wood, one of bones and wood, and one of clean bones only, which he called a bonfire.",
+   "where": {
+    "name": "Lilleshall Abbey",
+    "lat": 52.7245,
+    "lon": -2.39134,
+    "qid": "Q6548035"
+   },
+   "sources": [
+    {
+     "title": "Midsummer (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer",
+     "locator": "section Christian Europe",
+     "quote": "A Christian monk of Lilleshall Abbey, in the same century, wrote:"
+    },
+    {
+     "title": "Midsummer (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer",
+     "locator": "section Christian Europe",
+     "quote": "one is clean bones and no wood, and is called a bonfire"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Bonfire Night in Ireland",
+   "text": "In parts of rural Ireland, especially the north-west, St John's Eve is Bonfire Night, with fires on the hilltops; the oldest present lit the fire, the youngest threw in a bone, and people carried home an ember for luck in the fields.",
+   "sources": [
+    {
+     "title": "Saint John's Eve (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_John%27s_Eve",
+     "locator": "section Ireland",
+     "quote": "In some rural parts of Ireland, particularly in the north-west, Bonfire Night is held on St. John's Eve (Irish: Oíche Fhéile Eoin), when bonfires are lit on hilltops."
+    },
+    {
+     "title": "Saint John's Eve (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Saint_John%27s_Eve",
+     "locator": "section Ireland",
+     "quote": "Often lit by the oldest present, the youngest present would throw in a bone as part of the celebrations."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Golowan in Penzance",
+   "year": 1754,
+   "text": "William Borlase described Cornwall's midsummer fires and torch processions in 1754. Penzance kept them longest, with tar barrels, fireworks and a serpent dance on St John's Eve and a fair on the quay next day. The town revived the festival as Golowan in 1991, with Mazey Day at its centre.",
+   "where": {
+    "name": "Penzance",
+    "lat": 50.119,
+    "lon": -5.537,
+    "qid": "Q208209"
+   },
+   "sources": [
+    {
+     "title": "Golowan Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golowan_Festival",
+     "locator": "section The historic festival",
+     "quote": "The ancient festival was first described by Dr William Borlase in 1754 in his book Antiquities of Cornwall"
+    },
+    {
+     "title": "Golowan Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golowan_Festival",
+     "locator": "section Penzance",
+     "quote": "The celebrations themselves were centred on the lighting of fireworks, tar barrels, and torches on the evening of 23 June every year (St John's Eve)."
+    },
+    {
+     "title": "Golowan Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golowan_Festival",
+     "locator": "lead",
+     "quote": "Since 1991 the Golowan festival in Penzance has revived many of these ancient customs"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "A chain of hilltop fires in Cornwall",
+   "year": 1929,
+   "text": "The Old Cornwall Societies revived the midsummer bonfires at St Ives in 1929. Today a chain of hilltop fires is lit on or near 23 June, from Carn Brea near St Just to Kit Hill.",
+   "where": {
+    "name": "St Ives, Cornwall",
+    "lat": 50.211,
+    "lon": -5.48,
+    "qid": "Q724182"
+   },
+   "sources": [
+    {
+     "title": "Golowan Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golowan_Festival",
+     "locator": "lead",
+     "quote": "were revived at St Ives in 1929 by the Old Cornwall Society"
+    },
+    {
+     "title": "Federation of Old Cornwall Societies (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Federation_of_Old_Cornwall_Societies",
+     "locator": "section Events",
+     "quote": "The hilltop bonfires that form a chain are currently held at Carn Brea near St Just, Kit Hill, St Breock Beacon, Castle An Dinas, and Redruth."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "The Midsummer Court of Man",
+   "text": "Tynwald, the Manx parliament, meets once a year in the open air on Tynwald Hill at St John's, a custom dating back to the tenth century and known as the Midsummer Court. It used to be held on 24 June; when the island changed calendar in 1753 the court kept the old reckoning, which is why Tynwald Day now falls on 5 July.",
+   "where": {
+    "name": "Tynwald Hill",
+    "lat": 54.20375,
+    "lon": -4.64235,
+    "qid": "Q62647872"
+   },
+   "sources": [
+    {
+     "title": "Tynwald Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald_Day",
+     "locator": "lead",
+     "quote": "The meeting, which dates back to the 10th century, is known as Midsummer Court."
+    },
+    {
+     "title": "Tynwald Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald_Day",
+     "locator": "section Date",
+     "quote": "Hence Tynwald Day occurred on 24 June in the Julian Calendar, but on 5 July according to the Gregorian Calendar."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Rushes for Manannan",
+   "text": "The processional way from St John's chapel to Tynwald Hill is strewn with rushes, a custom traced to offerings of rushes made to the sea god Manannan on Midsummer Eve.",
+   "where": {
+    "name": "Tynwald Hill",
+    "lat": 54.20375,
+    "lon": -4.64235,
+    "qid": "Q62647872"
+   },
+   "sources": [
+    {
+     "title": "Tynwald Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald_Day",
+     "locator": "section Ceremony",
+     "quote": "The path is strewn with rushes; the tradition is traceable to the Celtic custom of propitiating the sea god Manannan by offering bundles of rushes on Midsummer's Eve."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "Midsummer on the old calendar at Whalton",
+   "text": "The Northumberland village of Whalton lights its Bale Fire on 4 July, the date that midsummer's eve fell on before England changed to the Gregorian calendar in 1752, with morris dancing and children's dances outside the pub.",
+   "where": {
+    "name": "Whalton",
+    "lat": 55.1276,
+    "lon": -1.7898,
+    "qid": "Q2187087"
+   },
+   "sources": [
+    {
+     "title": "Whalton (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Whalton",
+     "locator": "lead",
+     "quote": "It hosts an annual Bale Fire on 4 July, the date on which midsummer's eve was celebrated before the introduction of the Gregorian calendar to England in 1752."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "King John's Midsummer Fair",
+   "year": 1211,
+   "text": "Cambridge's Midsummer Fair, still held on Midsummer Common each June, was granted a charter by King John in 1211. It began as a trade fair whose income went to Barnwell Priory.",
+   "where": {
+    "name": "Midsummer Common",
+    "lat": 52.21028,
+    "lon": 0.12861,
+    "qid": "Q6843033"
+   },
+   "sources": [
+    {
+     "title": "Midsummer Common (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer_Common",
+     "locator": "section Midsummer Fair",
+     "quote": "Cambridge Midsummer Fair was granted a charter by King John in 1211"
+    },
+    {
+     "title": "Midsummer Common (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer_Common",
+     "locator": "section Midsummer Fair",
+     "quote": "Originally a trade fair, income from the event went to the Barnwell Priory."
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Stonehenge",
+   "qid": "Q39671",
+   "lat": 51.17889,
+   "lon": -1.82611,
+   "why": "The stone circle aligned on the midsummer sunrise, where crowds have gathered for the solstice since the twentieth century.",
+   "sources": [
+    {
+     "title": "Stonehenge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge",
+     "locator": "lead",
+     "quote": "The whole monument, now in ruins, is aligned towards the sunrise on the summer solstice and sunset on the winter solstice."
+    },
+    {
+     "title": "Stonehenge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge",
+     "locator": "section Neopaganism",
+     "quote": "the number of midsummer visitors had risen to around 30,000"
+    }
+   ]
+  },
+  {
+   "name": "Heel Stone",
+   "qid": "Q5697984",
+   "lat": 51.17931,
+   "lon": -1.8253,
+   "why": "The great sarsen standing in the Avenue outside Stonehenge's entrance, part of the line on the midsummer sunrise.",
+   "sources": [
+    {
+     "title": "Heel Stone (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Heel_Stone",
+     "locator": "lead",
+     "quote": "The Heel Stone is a single large block of sarsen stone standing within the Avenue outside the entrance of the Stonehenge earthwork in Wiltshire, England."
+    },
+    {
+     "title": "Stonehenge (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Stonehenge",
+     "locator": "section Function and construction",
+     "quote": "the heel stone, and the embanked avenue, are aligned to the sunset of the winter solstice and the opposing sunrise of the summer solstice"
+    }
+   ]
+  },
+  {
+   "name": "Durrington Walls",
+   "qid": "Q471738",
+   "lat": 51.1925,
+   "lon": -1.7875,
+   "why": "The henge beside the Avon whose paved avenue ran towards the midsummer sunset.",
+   "sources": [
+    {
+     "title": "Durrington Walls (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Durrington_Walls",
+     "locator": "section Southern Circle",
+     "quote": "towards the sunset on the summer solstice"
+    }
+   ]
+  },
+  {
+   "name": "Bryn Celli Ddu",
+   "qid": "Q2519821",
+   "lat": 53.2079,
+   "lon": -4.2355,
+   "why": "A passage tomb on Anglesey, built on the site of an earlier henge, whose chamber is lit by the sun around midsummer.",
+   "sources": [
+    {
+     "title": "Bryn Celli Ddu (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bryn_Celli_Ddu",
+     "locator": "lead",
+     "quote": "may have been used to plot the date of the summer solstice"
+    },
+    {
+     "title": "Bryn Celli Ddu (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Bryn_Celli_Ddu",
+     "locator": "lead",
+     "quote": "the site was once a henge with a stone circle"
+    }
+   ]
+  },
+  {
+   "name": "Ballochroy standing stones",
+   "qid": "Q15849096",
+   "lat": 55.71195,
+   "lon": -5.61396,
+   "why": "Three tall stones in Kintyre claimed as a solstice marker pointing to the hills of Jura.",
+   "sources": [
+    {
+     "title": "Ballochroy (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Ballochroy",
+     "locator": "lead",
+     "quote": "It consists of three vertical stones, side by side, aligned with various land features 7–19 miles (11–31 km) away."
+    }
+   ]
+  },
+  {
+   "name": "Tynwald Hill",
+   "qid": "Q62647872",
+   "lat": 54.20375,
+   "lon": -4.64235,
+   "why": "The small man-made mound at St John's where the Manx parliament meets in the open air on Tynwald Day, once Midsummer Day.",
+   "sources": [
+    {
+     "title": "Tynwald Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald_Day",
+     "locator": "lead",
+     "quote": "partly in the open air on the adjacent Tynwald Hill (a small artificial mound)"
+    },
+    {
+     "title": "Tynwald Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Tynwald_Day",
+     "locator": "section Date",
+     "quote": "Tynwald Day had traditionally been held on 24 June, which is the feast day of St John the Baptist and also Midsummer's Day."
+    }
+   ]
+  },
+  {
+   "name": "Lilleshall Abbey",
+   "qid": "Q6548035",
+   "lat": 52.7245,
+   "lon": -2.39134,
+   "why": "Ruined abbey in Shropshire whose thirteenth-century monk left an early description of St John's Eve bonfires.",
+   "sources": [
+    {
+     "title": "Midsummer (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer",
+     "locator": "section Christian Europe",
+     "quote": "In the worship of St John, men waken at even, and maken three manner of fires"
+    }
+   ]
+  },
+  {
+   "name": "Midsummer Common",
+   "qid": "Q6843033",
+   "lat": 52.21028,
+   "lon": 0.12861,
+   "why": "Common land in Cambridge, home of the Midsummer Fair chartered in 1211.",
+   "sources": [
+    {
+     "title": "Midsummer Common (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Midsummer_Common",
+     "locator": "section Midsummer Fair",
+     "quote": "Cambridge Midsummer Fair was granted a charter by King John in 1211, and was originally held on or near the feast of St Etheldreda."
+    }
+   ]
+  },
+  {
+   "name": "Chapel Carn Brea",
+   "qid": "Q5072991",
+   "lat": 50.094,
+   "lon": -5.657,
+   "why": "The hill near St Just at the western end of Cornwall's chain of midsummer bonfires.",
+   "sources": [
+    {
+     "title": "Federation of Old Cornwall Societies (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Federation_of_Old_Cornwall_Societies",
+     "locator": "section Events",
+     "quote": "currently held at Carn Brea near St Just"
+    }
+   ]
+  },
+  {
+   "name": "Kit Hill",
+   "qid": "Q6417437",
+   "lat": 50.51887,
+   "lon": -4.2936,
+   "why": "Hill near Callington at the eastern end of the midsummer bonfire chain.",
+   "sources": [
+    {
+     "title": "Golowan Festival (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Golowan_Festival",
+     "locator": "lead",
+     "quote": "since then spread to other societies across Cornwall, as far as Kit Hill near Callington"
+    }
+   ]
+  }
+ ]
+}

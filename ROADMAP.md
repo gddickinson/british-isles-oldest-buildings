@@ -177,6 +177,16 @@ Research tools
       browser, beside the tree-ring dates.
 
 Everyday fun
+- [x] EV0 (2026-10-30, George's idea, page `/festivals`) Festivals and seasons: 16 festivals (Christmas, New Year and
+      Hogmanay, Burns Night, Imbolc, St Valentine and St Dwynwen, St David, St Patrick, Easter and Shrovetide, St
+      George, May Day, Midsummer, Lammas, Michaelmas, Halloween, Bonfire Night, St Andrew), each with 12-14 researched
+      facts and 8-12 places (four research subagents; 632 quotes, all found), a wheel of the year and countdowns, and the
+      catalogue's own finds: churches of the saints, stories, sky alignments, holy wells and haunted places, on this
+      day, oldest customs; hosted too (`data/festivals.json`).
+- [ ] EV0b Festivals, next: Remembrance (war memorials), Diwali, Eid, Hanukkah and Chinese New Year at their oldest
+      places of worship in the isles, the harvest of the sea (blessing the waters), local saints' days (feast days of
+      the 51 researched dedications); a "Festival near you" from the user's location; Hill of Uisneach's catalogue
+      record Q116535113 is labelled a ringfort in Co. Offaly on Wikidata (check).
 - [ ] EV1 "The story of my place": a postcode or point → one page of the oldest building near it, plaques and who lived
       there, battles, Domesday, old names, stories, a historic map, what was built the year your house was.
 - [ ] EV2 Heritage passport: visited buildings (GPS or by hand), badges (all four nations, ten castles, a building from

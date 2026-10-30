@@ -117,6 +117,11 @@ def things():
     return render_template("things.html", page="things")
 
 
+@bp.route("/festivals")
+def festivals():
+    return render_template("festivals.html", page="festivals")
+
+
 @bp.route("/sky")
 def sky():
     return render_template("sky.html", page="sky")

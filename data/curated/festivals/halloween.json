@@ -1,0 +1,553 @@
+{
+ "id": "halloween",
+ "title": "Halloween, Samhain and All Saints",
+ "also": [
+  "Samhain (Irish)",
+  "Oíche Shamhna (Irish)",
+  "Nos Calan Gaeaf (Welsh)",
+  "Hop-tu-Naa (Manx)",
+  "All Hallows' Eve",
+  "Allhallowtide"
+ ],
+ "season": "autumn",
+ "when": {
+  "date": "10-31"
+ },
+ "when_text": "31 October (Halloween) to 2 November (All Souls' Day); Punkie Night on the last Thursday of October",
+ "intro": "Halloween joins two things: Samhain, the Gaelic start of winter, when the Irish tales say the burial mounds opened and the Otherworld came close, and the Christian days of All Saints and All Souls. Guising, turnip lanterns, soul cakes and divination games come from Ireland, Scotland, Wales, the Isle of Man and the English West Country; the carved pumpkin is a later arrival.",
+ "facts": [
+  {
+   "kind": "history",
+   "title": "Samhain in the oldest Irish tales",
+   "text": "Samhain, the start of winter on 1 November, appears in the earliest Irish literature, from the 9th century. The 10th-century tale Tochmarc Emire ('The Wooing of Emer') names it first of the four seasonal festivals, a time of great gatherings and feasts when the burial mounds stood open to the Otherworld.",
+   "sources": [
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "lead",
+     "quote": "Samhain is mentioned in the earliest Irish literature, from the 9th century, and is associated with many important events in Irish mythology."
+    },
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section In Irish mythology",
+     "quote": "The tenth-century tale Tochmarc Emire ('The Wooing of Emer') lists Samhain as the first of the four seasonal festivals of the year."
+    }
+   ]
+  },
+  {
+   "kind": "curiosity",
+   "title": "Pagan, but how pagan?",
+   "text": "Historians agree that the beginning of November was a major festival in Celtic Britain and Ireland, but the medieval tales describe feasting and gatherings, not pagan worship. Ronald Hutton notes that none of them shows any religious rite, so claims about druid ceremonies at Samhain go beyond the evidence.",
+   "sources": [
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section History",
+     "quote": "there seems to be no doubt that the opening of November was the time of a major pagan festival"
+    },
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section In Irish mythology",
+     "quote": "No doubt there were [pagan] religious observances as well, but none of the tales ever portrays any"
+    }
+   ]
+  },
+  {
+   "kind": "sky",
+   "title": "A tomb lit by the Samhain sunrise",
+   "year": -3350,
+   "text": "Some Neolithic passage tombs in Ireland face the sunrise around the start of November and February. At the Mound of the Hostages on the Hill of Tara, built between 3350 and 2800 BC, the rising sun shines down the passage on the mornings of Samhain and Imbolc.",
+   "where": {
+    "name": "Mound of the Hostages, Hill of Tara",
+    "lat": 53.5794,
+    "lon": -6.6117,
+    "qid": "Q4561390"
+   },
+   "sources": [
+    {
+     "title": "Mound of the Hostages (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mound_of_the_Hostages",
+     "locator": "lead",
+     "quote": "At this mound, the passage is illuminated on the mornings of Samhain and Imbolc, at the beginning of November and February, respectively."
+    },
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section History",
+     "quote": "These include the Mound of the Hostages (Dumha na nGiall) at the Hill of Tara, and Cairn L at Slieve na Calliagh."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "The fires of Tlachtga",
+   "text": "The Hill of Ward in County Meath, Tlachtga, is said in later folklore to be where druids lit the Samhain fire. Archaeology confirms the hill was a place of feasting and intense burning from the Bronze Age to the late Iron Age, and in 1167 the High King held a great assembly there.",
+   "where": {
+    "name": "Hill of Ward (Tlachtga)",
+    "lat": 53.624,
+    "lon": -6.886,
+    "qid": "Q5762451"
+   },
+   "sources": [
+    {
+     "title": "Hill of Ward (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hill_of_Ward",
+     "locator": "lead",
+     "quote": "later folklore holds that it was a site where druids held sacrificial bonfires at Samhain"
+    },
+    {
+     "title": "Hill of Ward (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hill_of_Ward",
+     "locator": "lead",
+     "quote": "Archaeology has shown that Tlachtga dates to the Bronze Age, and was a site of ritual gatherings associated with feasting and intense burning until the late Iron Age."
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "Ireland's gate to hell",
+   "text": "Oweynagat, the 'Cave of the Cats' at Rathcroghan in County Roscommon, was counted one of Ireland's gates to the Otherworld. In the tales otherworldly beings poured out of it every Samhain, and the warrior Nera followed the fairy host inside on Samhain night.",
+   "where": {
+    "name": "Rathcroghan and Oweynagat",
+    "lat": 53.802,
+    "lon": -8.304,
+    "qid": "Q1009358"
+   },
+   "sources": [
+    {
+     "title": "Rathcroghan (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rathcroghan",
+     "locator": "lead",
+     "quote": "Rathcroghan is said, in Irish mythology, to be an entrance to the Otherworld, or one of \"Ireland's Gates to Hell\""
+    },
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section In Irish mythology",
+     "quote": "Each Samhain, a host of otherworldly beings was said to emerge from the Cave of Cruachan in County Roscommon."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Bonfires and divination",
+   "text": "Bonfires were lit at Samhain in Ireland, the Highlands and Wales, and their smoke and ashes were thought to protect. In 18th-century Ochtertyre a stone for each person was set round the fire; at Calan Gaeaf in Wales people marked stones and put them in the fire, and a missing stone next morning foretold death within the year.",
+   "sources": [
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section Divination",
+     "quote": "In 18th-century Ochtertyre, a ring of stones—one for each person—was laid around the fire"
+    },
+    {
+     "title": "Calan Gaeaf (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Calan_Gaeaf",
+     "locator": "section Dancing",
+     "quote": "If, however, a stone was missing, the person who wrote their name on the absent stone would be believed to die within one year."
+    }
+   ]
+  },
+  {
+   "kind": "legend",
+   "title": "Nos Calan Gaeaf, the Welsh spirit night",
+   "text": "In Wales the night before 1 November, Nos Calan Gaeaf, is an ysbrydnos, a spirit night, when people kept away from churchyards, stiles and crossroads. Children ran home from the dying bonfire before the tailless black sow, Yr Hwch Ddu Gwta, could catch them.",
+   "sources": [
+    {
+     "title": "Calan Gaeaf (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Calan_Gaeaf",
+     "locator": "lead",
+     "quote": "an Ysbrydnos ('spirit night') when spirits are abroad. Traditionally, people avoid churchyards, stiles, and crossroads"
+    },
+    {
+     "title": "Calan Gaeaf (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Calan_Gaeaf",
+     "locator": "section Dancing",
+     "quote": "Yr Hwch Ddu Gwta (a bad omen that took the form of a tailless black sow with a headless woman)"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Guising",
+   "text": "Going from house to house in disguise at Halloween is recorded in Ireland, Scotland, the Isle of Man and Wales from at least the 16th century. Scottish and Irish guisers had to earn their apples, nuts or coins with a song or a verse; 'trick or treat' only became common there in the 2000s.",
+   "sources": [
+    {
+     "title": "Halloween (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Halloween",
+     "locator": "section Gaelic and Welsh influence",
+     "quote": "From at least the 16th century, the festival included guising and mumming in Ireland, Scotland, the Isle of Man and Wales."
+    },
+    {
+     "title": "Guising (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guising",
+     "locator": "section Trick-or-treating",
+     "quote": "it is only in the 2000s that saying \"trick or treat\" has become common in Scotland and Ireland"
+    },
+    {
+     "title": "Guising (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Guising",
+     "locator": "section Trick-or-treating",
+     "quote": "reciting verses in exchange for food"
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Turnip lanterns and Punkie Night",
+   "text": "The first Halloween lanterns in the isles were hollowed turnips or mangel-wurzels carved with faces. In Somerset, children at Hinton St George and Lopen still carry mangel 'punkies' on Punkie Night, the last Thursday of October; the village story is that wives made the lanterns to fetch their husbands home drunk from Chiselborough fair.",
+   "where": {
+    "name": "Hinton St George",
+    "lat": 50.909,
+    "lon": -2.8191,
+    "qid": "Q2782145"
+   },
+   "sources": [
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section Guising and pranks",
+     "quote": "turnips or mangel wurzels, hollowed out to act as lanterns and often carved with grotesque faces"
+    },
+    {
+     "title": "Punkie Night (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Punkie_Night",
+     "locator": "section Origins of the custom",
+     "quote": "The custom originated in the village of Hinton St George in Somerset when the menfolk had gone to a fair in Chiselborough a few miles away."
+    }
+   ]
+  },
+  {
+   "kind": "custom",
+   "title": "Hop-tu-Naa on the Isle of Man",
+   "text": "The Manx keep 31 October as Hop-tu-Naa, the old new year's eve, said to be the island's oldest unbroken tradition. Children carry turnip lanterns, called moots, and sing the Hop-tu-Naa song round the houses; the turnips themselves are no older than about 1800.",
+   "where": {
+    "name": "Cregneash",
+    "lat": 54.0693,
+    "lon": -4.7691,
+    "qid": "Q3750807"
+   },
+   "sources": [
+    {
+     "title": "Hop-tu-Naa (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hop-tu-Naa",
+     "locator": "lead",
+     "quote": "It is thought to be the oldest unbroken tradition in the Isle of Man."
+    },
+    {
+     "title": "Hop-tu-Naa (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hop-tu-Naa",
+     "locator": "section Turnip lanterns",
+     "quote": "It is believed that turnip-lanterns do not date earlier than the start of the 19th century"
+    }
+   ]
+  },
+  {
+   "kind": "food",
+   "title": "Soul cakes and souling",
+   "text": "From the Middle Ages soulers went from door to door at Allhallowtide asking for soul cakes, small spiced cakes given in return for prayers for the dead. The custom is first reported in 1511, Shakespeare mentions 'a beggar at Hallowmas', and souling plays survive in Cheshire.",
+   "sources": [
+    {
+     "title": "Soul cake (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Soul_cake",
+     "locator": "section History",
+     "quote": "the earliest activity was reported in 1511, and Shakespeare mentioned \"pulling like a beggar at Hallowmas\" in The Two Gentlemen of Verona (1593)"
+    },
+    {
+     "title": "Soul cake (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Soul_cake",
+     "locator": "lead",
+     "quote": "In Sheffield and Cheshire, the custom has continued into modern times."
+    }
+   ]
+  },
+  {
+   "kind": "food",
+   "title": "A ring in the barmbrack",
+   "text": "In Ireland the Halloween barmbrack, a fruit loaf, hides a ring and sometimes a pea, a stick, a cloth and a coin; whoever gets the ring is in luck, and each other token tells a fortune.",
+   "sources": [
+    {
+     "title": "Barmbrack (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Barmbrack",
+     "locator": "lead",
+     "quote": "The bread is associated with Halloween in Ireland, where an item (often a ring) is placed inside the bread, with the person receiving it considered to be fortunate."
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "All Saints and All Souls",
+   "text": "1 November became the feast of All Saints in the 8th century, perhaps after Pope Gregory III dedicated an oratory in St Peter's, Rome, to all the saints; 'Halloween' is the Scots form of All Hallows' Eve. All Souls' Day on 2 November, for praying for the dead, was set by Odilo of Cluny in the 11th century.",
+   "sources": [
+    {
+     "title": "All Saints' Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/All_Saints%27_Day",
+     "locator": "section History",
+     "quote": "Some sources say Gregory III dedicated the oratory on November 1, and this is why the date became All Saints' Day."
+    },
+    {
+     "title": "Halloween (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Halloween",
+     "locator": "section Etymology",
+     "quote": "The word Halloween or Hallowe'en comes from the Lowland Scots form of All Hallows' Eve"
+    },
+    {
+     "title": "All Souls' Day (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/All_Souls%27_Day",
+     "locator": "section History",
+     "quote": "But it was the day after All Saints' Day that Saint Odilo of Cluny chose"
+    }
+   ]
+  },
+  {
+   "kind": "history",
+   "title": "Burns's 'Halloween'",
+   "year": 1785,
+   "text": "Robert Burns wrote his long poem 'Halloween' in 1785, in Scots and English, filled with the divination games of an Ayrshire country Halloween; it was printed in the Kilmarnock Edition of 1786.",
+   "sources": [
+    {
+     "title": "Halloween (poem) (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Halloween_%28poem%29",
+     "locator": "lead",
+     "quote": "\"Halloween\" is a poem written by the Scottish poet Robert Burns in 1785. First published in 1786, the poem is included in the Kilmarnock Edition."
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Mound of the Hostages, Hill of Tara",
+   "qid": "Q4561390",
+   "lat": 53.5794,
+   "lon": -6.6117,
+   "why": "A Neolithic passage tomb on the Hill of Tara whose passage the rising sun lights at Samhain and Imbolc.",
+   "sources": [
+    {
+     "title": "Mound of the Hostages (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mound_of_the_Hostages",
+     "locator": "lead",
+     "quote": "The mound is a Neolithic structure, built between 3350 and 2800 BC."
+    },
+    {
+     "title": "Mound of the Hostages (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Mound_of_the_Hostages",
+     "locator": "lead",
+     "quote": "At this mound, the passage is illuminated on the mornings of Samhain and Imbolc"
+    }
+   ]
+  },
+  {
+   "name": "Hill of Tara",
+   "qid": "Q543155",
+   "lat": 53.5775,
+   "lon": -6.6119,
+   "why": "The hill of the high kings, where in legend Aillen burnt the palace each Samhain; Keating claimed the feis of Tara was held at Samhain.",
+   "sources": [
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section In Irish mythology",
+     "quote": "Each year the fire-breather Aillen emerges from the Otherworld and burns down the palace of Tara during the Samhain festival"
+    },
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section In Irish mythology",
+     "quote": "the feis of Tara was held for a week every third Samhain"
+    }
+   ]
+  },
+  {
+   "name": "Hill of Ward (Tlachtga)",
+   "qid": "Q5762451",
+   "lat": 53.624,
+   "lon": -6.886,
+   "why": "Four rings of earthen banks on a Meath hilltop, said to be the place of the Samhain fire; neopagans have gathered there for Samhain since the late 1990s.",
+   "sources": [
+    {
+     "title": "Hill of Ward (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hill_of_Ward",
+     "locator": "lead",
+     "quote": "Since the late 1990s, Celtic neopagans have held yearly Samhain gatherings on the hill."
+    }
+   ]
+  },
+  {
+   "name": "Cairn L, Loughcrew",
+   "qid": "Q202563",
+   "lat": 53.7433,
+   "lon": -7.1342,
+   "why": "One of the Loughcrew passage tombs on Slieve na Calliagh, among those aligned with the sunrise around Samhain.",
+   "sources": [
+    {
+     "title": "Samhain (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Samhain",
+     "locator": "section History",
+     "quote": "These include the Mound of the Hostages (Dumha na nGiall) at the Hill of Tara, and Cairn L at Slieve na Calliagh."
+    },
+    {
+     "title": "Loughcrew (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Loughcrew",
+     "locator": "section Astronomy",
+     "quote": "Brennan also discovered alignments in Cairn L"
+    }
+   ]
+  },
+  {
+   "name": "Rathcroghan and Oweynagat",
+   "qid": "Q1009358",
+   "lat": 53.802,
+   "lon": -8.304,
+   "why": "The royal site of Connacht, whose cave Oweynagat was a gateway to the Otherworld at Samhain.",
+   "sources": [
+    {
+     "title": "Rathcroghan (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Rathcroghan",
+     "locator": "lead",
+     "quote": "The cave has associations with the festival of Samhain and is also described as the dwelling of the Morrígan"
+    }
+   ]
+  },
+  {
+   "name": "Hinton St George",
+   "qid": "Q2782145",
+   "lat": 50.909,
+   "lon": -2.8191,
+   "why": "The Somerset village where Punkie Night began and is still kept each October.",
+   "sources": [
+    {
+     "title": "Hinton St George (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hinton_St_George",
+     "locator": "section Culture",
+     "quote": "Punkie Night is celebrated in the village each October."
+    }
+   ]
+  },
+  {
+   "name": "Cregneash",
+   "qid": "Q3750807",
+   "lat": 54.0693,
+   "lon": -4.7691,
+   "why": "The Manx folk village museum teaches the Hop-tu-Naa song and turnip carving each year.",
+   "sources": [
+    {
+     "title": "Hop-tu-Naa (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Hop-tu-Naa",
+     "locator": "section Traditions",
+     "quote": "the National Folk Museum at Cregneash hosts an event to teach the traditional Hop-tu-Naa song and to help people to carve turnips"
+    }
+   ]
+  },
+  {
+   "name": "All Souls College, Oxford",
+   "qid": "Q81092",
+   "lat": 51.7533,
+   "lon": -1.2528,
+   "why": "The College of All Souls of the Faithful Departed was founded in 1438 so that its fellows would pray for the dead of the Hundred Years' War.",
+   "sources": [
+    {
+     "title": "All Souls College, Oxford (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/All_Souls_College,_Oxford",
+     "locator": "section History",
+     "quote": "in 1438, to commemorate the victims of the Hundred Years' War"
+    }
+   ]
+  },
+  {
+   "name": "Leap Castle",
+   "qid": "Q833207",
+   "lat": 53.0281,
+   "lon": -7.8085,
+   "why": "An O'Bannon and O'Carroll tower house in County Offaly with a 'Bloody Chapel', which calls itself the world's most haunted castle.",
+   "sources": [
+    {
+     "title": "Leap Castle (Wikipedia)",
+     "author": "Wikipedia contributors",
+     "kind": "reference",
+     "url": "https://en.wikipedia.org/wiki/Leap_Castle",
+     "locator": "section In popular culture",
+     "quote": "The castle describes itself as \"the world's most haunted castle\"."
+    }
+   ]
+  }
+ ]
+}

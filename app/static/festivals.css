@@ -1,0 +1,47 @@
+/* Festivals and seasons (/festivals) */
+.festivals-page .fe-top { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin: .5rem 0 1rem; }
+.fe-wheel { width: 300px; max-width: 100%; height: auto; }
+.fe-wheel .fe-season { opacity: .18; }
+.fe-wheel .fe-tick { stroke: var(--line); }
+.fe-wheel .fe-month { font-size: 10px; fill: var(--muted); }
+.fe-wheel .fe-hand { stroke: var(--accent); stroke-width: 2; }
+.fe-wheel .fe-hub { fill: var(--accent); }
+.fe-wheel .fe-today { font-size: 9px; fill: var(--muted); }
+.fe-wheel .fe-dot circle { fill: var(--bg, #fff); stroke: var(--line); }
+.fe-wheel .fe-dot text { font-size: 15px; }
+.fe-wheel .fe-dot:hover circle { stroke: var(--accent); stroke-width: 2; }
+.fe-next { font-size: 1.05rem; }
+.fe-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: .8rem; }
+.fe-card { display: block; border: 1px solid var(--line); border-top: 4px solid var(--fe); border-radius: 10px; padding: .7rem .9rem;
+  color: inherit; text-decoration: none; position: relative; }
+.fe-card:hover { box-shadow: 0 2px 10px rgba(0, 0, 0, .12); }
+.fe-card h2 { font-size: 1.1rem; margin: .1rem 0 .2rem; padding-right: 2.2rem; }
+.fe-card p { margin: .25rem 0; font-size: .93rem; }
+.fe-card .fe-icon { position: absolute; right: .7rem; top: .5rem; font-size: 1.8rem; }
+.fe-when { color: var(--muted); }
+.fe-when b { color: var(--fe, var(--accent)); }
+.fe-crumb { margin: .3rem 0; }
+.fe-head { display: flex; gap: 1rem; align-items: center; border-left: 6px solid var(--fe); padding-left: .8rem; }
+.fe-head h1 { margin: 0; }
+.fe-head p { margin: .15rem 0; }
+.fe-icon.big { font-size: 3rem; }
+.fe-toc { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin: .6rem 0; font-size: .93rem; }
+.fe-sec { margin-top: 1.4rem; }
+.fe-sec > h2 { border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+.fe-facts, .fe-places { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .7rem; margin-top: .6rem; }
+.fe-fact, .fe-place { border: 1px solid var(--line); border-radius: 8px; padding: .6rem .8rem; }
+.fe-fact h3, .fe-place h3 { font-size: 1rem; margin: .1rem 0 .3rem; }
+.fe-fact p, .fe-place p { margin: .25rem 0; }
+.fe-kind { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+.fe-src summary { font-size: .85rem; color: var(--muted); cursor: pointer; }
+.fe-src ul { font-size: .85rem; padding-left: 1.1rem; margin: .3rem 0; }
+.fe-map { height: 460px; border-radius: 8px; border: 1px solid var(--line); }
+.fe-key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.fe-records { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: .5rem; }
+.fe-records li { display: flex; gap: .55rem; align-items: center; }
+.fe-records img, .fe-records .fe-noimg { width: 52px; height: 52px; object-fit: cover; border-radius: 6px; flex: none; background: var(--line); }
+.fe-records .hint { display: block; }
+.fe-sky, .fe-day { padding-left: 1.1rem; }
+.fe-sky li, .fe-day li { margin: .35rem 0; }
+.fe-prevnext { display: flex; justify-content: space-between; margin: 2rem 0 1rem; gap: 1rem; }
+@media print { .fe-map, .fe-toc, .fe-prevnext, #fe_kinds { display: none; } }

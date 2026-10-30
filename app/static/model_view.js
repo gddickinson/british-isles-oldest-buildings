@@ -7,6 +7,7 @@ import { OrbitControls } from "./vendor/three/OrbitControls.js";
 import { createScene } from "./stonehenge_scene.js";
 import { buildParts } from "./model_parts.js";
 import "./model_broch.js";
+import "./model_tower.js";
 import { $, esc, toward, BASE, createClock, wirePanel, startMoment, readout, tick, starNames } from "./model_clock.js";
 
 const DS = $("#sh_canvas").dataset, ID = DS.model;                 // a built model, or a stone circle built on request

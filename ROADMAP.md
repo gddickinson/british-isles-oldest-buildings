@@ -104,6 +104,24 @@ a page listing every model, and a link on each structure's own page)
       Cunnington's 1929 plan if a scan is found, Mousa's galleries from Paterson's sections; more circles as their
       stones get mapped (rerun `bidb.model_circles`); the hosted copy (about 2 MB more).
 
+More 3D models (planned 2026-10-29 after a survey, George: "do the surveys first and then proceed with 1-4")
+- [x] SH4 survey (2026-10-29, `bidb.model_survey` → `data/model_survey.json`): 695 records with OSM 3D tags (mostly
+      modern towers); the EA first-return LiDAR surface covered all 40 sampled English records, 7,336 English
+      footprints; 20 of 80 notable records have openly licensed downloadable Sketchfab models (mostly artists' models,
+      an account needed); 31 pre-1976 Royal Commission inventories on the Internet Archive.
+- [x] SH4a (2026-10-29) Alignment tombs: Balnuaran of Clava; Loughcrew Cairn T, Knowth, Dowth, Carrowkeel Cairn G
+      (shared builder bidb.model_tombs). La Hougue Bie researched but not built (no measured plan or azimuth online).
+- [x] SH4b (2026-10-29) Earthworks from the EA LiDAR ground: Avebury (with its OSM stones), Silbury Hill, Maiden
+      Castle, the Uffington White Horse.
+- [x] SH4c (2026-10-29) From published dimensions: six round towers (Glendalough, Kildare, Ardmore, Clondalkin,
+      Brechin, Abernethy) and four brochs (Dun Carloway, Clickimin, Dun Telve, Dun Troddan).
+- [x] SH4d (2026-10-29) Any English record with a footprint as its LiDAR surface (`/model/lidar/<id>`, local GUI).
+- [ ] SH4e Trace the out-of-copyright plans found (`old_plans.json` plan_sources): Thomas 1851 Plates XIII-XIV for
+      Brodgar and Stenness (every stone numbered and its state), the 1959 HMSO guide plan for Woodhenge's postholes,
+      Paterson 1922 and Hamilton 1970 for Mousa's galleries, Curle for Dun Telve and Dun Troddan, Fraser 1884 for
+      Clava's stones; then La Hougue Bie (with its chapels) when a plan is found; Scottish and Welsh LiDAR surfaces;
+      the far land's dark slivers at some sites; Knowth's east passage starts outside the OSM outline.
+
 LiDAR and landscape
 - [x] LD1a (2026-10-29, `static/lidar.js`) LiDAR hillshade layer, England: Environment Agency composite 1 m DTM hillshade
       (WMS, OGL), "Ground (LiDAR)" in the layer panel with opacity; local GUI (the hosted copy cannot reach map servers).

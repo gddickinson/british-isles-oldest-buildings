@@ -2772,3 +2772,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Known gaps: Brodgar's stones are not mapped or numbered in reachable sources (drawn evenly); distant land in the
   5 km Orkney scene shows some dark steep faces; post heights and many stone heights are not published.
 - Tests 537 OK (`test_models3d` 5); ui_check: models and all seven model pages pass. Hosted copy not updated.
+
+## 2026-10-29 — Survey of 3D sources and 23 more models (SH4)
+- Survey (`bidb.model_survey` → `data/model_survey.json`): 695 catalogue records with OSM 3D tags; EA 1 m first-return
+  surface model (open WCS, found today) covers all 40 sampled English records; 20 of 80 notable records with openly
+  licensed downloadable Sketchfab models (mostly artists' models; download needs an account); 31 pre-1976 Royal
+  Commission inventories (Crown copyright expired) on the Internet Archive.
+- Research (four subagents): La Hougue Bie and Clava 177 quotes, four Irish tombs 286, earthworks 266, old plans,
+  round towers and brochs 150: all found. Out-of-copyright plans located: Thomas 1851 (Brodgar, Stenness), HMSO
+  1959 (Woodhenge), Paterson 1922 and Hamilton 1970 (Mousa, Clickimin), Curle (Dun Telve, Dun Troddan), Fraser 1884
+  (Clava), Conwell 1873 (Cairn T), Macalister 1912 (Cairn G); not yet traced (SH4e).
+- Models: Clava (open now; roofed as built, facing the midwinter sunset); Loughcrew Cairn T, Knowth (passages on
+  Prendergast and Ray's azimuths, the west one bent), Dowth, Carrowkeel Cairn G (shared bidb.model_tombs); Avebury,
+  Silbury Hill, Maiden Castle, Uffington from the EA LiDAR ground; six round towers and four brochs from their
+  dimensions (new part "tower"); any English record with a footprint as its LiDAR surface, classed by building,
+  other buildings, trees and ground (`/model/lidar/<id>`, "🛰 LiDAR 3D", local GUI; Kenilworth checked).
+- Engine: mounds with several openings, roofless chambers, cairn-rubble banks, a model may name its research file.
+- Not built: La Hougue Bie (no measured plan or azimuth online). Known flaws: dark slivers in the far land at some
+  sites (Maiden Castle), Knowth's east passage starts beyond the OSM outline.
+- Tests 537 OK; ui_check: every model page passes. Hosted copy not updated.

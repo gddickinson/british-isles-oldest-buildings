@@ -2791,3 +2791,19 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - Not built: La Hougue Bie (no measured plan or azimuth online). Known flaws: dark slivers in the far land at some
   sites (Maiden Castle), Knowth's east passage starts beyond the OSM outline.
 - Tests 537 OK; ui_check: every model page passes. Hosted copy not updated.
+
+## 2026-10-29 — Church orientation against a field survey (SK5b2a)
+- Hinton's 2010 UEA thesis ("Aspects of the Alignment and Location of Medieval Rural Churches") is online with its
+  survey spreadsheets: added to the studies on /sky#churches (finding: patronal-saint sunrise rejected; churches in the
+  east face further south than in the west; 4 quotes found in the PDF).
+- `bidb/xls_read.py`: stdlib reader for old .xls workbooks (agrees with xlrd on all 203,727 cells of the two Hinton
+  sheets, apart from 11 #DIV/0! cells, which it leaves empty); `tests/test_xls_read.py` builds a workbook in memory.
+- `bidb/church_survey.py`: matches the survey's churches to catalogue churches (within 250 m, sharing the saint or the
+  village name; a lone church of another place is a grid-reference slip) and compares the OSM axes, the skylines and
+  the feast-day test with the surveyed axes. The spreadsheet's title sheet reserves copyright and forbids publishing
+  its data or anything derived from it without the author's written consent, so the results are only in
+  `runs/church_survey.json` (git-ignored), not in the app, the repository or the hosted copy.
+- The feast-day tests now report p (share of shuffles with as many or more): flat 396 of 2,499, p 0.34; over the
+  skyline p 0.56; either saint p 0.57 (unchanged result). Page /sky shows p in its table.
+- Tests 542 OK; ui_check sky passes. Hosted copy not updated. Next: SK5b2b (nave-only outlines).
+

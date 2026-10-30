@@ -215,21 +215,23 @@ def analyse(rows, feasts, seed=1):
     return out, summary
 
 
-def _test(tested, feasts, seed, horizon=False, other=False):
-    """How many churches face within TOLERANCE of their own saint's feast sunrise, against shuffled dedications."""
+def _test(tested, feasts, seed, horizon=False, other=False, shuffles=SHUFFLES):
+    """How many churches face within TOLERANCE of their own saint's feast sunrise, against shuffled dedications;
+    `p`: the share of shuffles with as many or more."""
     def hit(r, ded):
         b = best_diff(r["lat"], r["year"], r["axis"][0], fixed_feasts(feasts[ded], other), r["hz"] if horizon else 0.0)
         return b is not None and b[0] <= TOLERANCE
     observed = sum(hit(r, r["dedication"]) for r in tested)
     rnd, chance = random.Random(seed), []
-    for _ in range(SHUFFLES if tested else 0):
+    for _ in range(shuffles if tested else 0):
         deds = [r["dedication"] for r in tested]
         rnd.shuffle(deds)
         chance.append(sum(hit(r, d) for r, d in zip(tested, deds)))
     chance.sort()
     return {"tested": len(tested), "observed": observed,
             "chance_mean": round(sum(chance) / len(chance), 1) if chance else None,
-            "chance_95": [chance[int(len(chance) * 0.025)], chance[int(len(chance) * 0.975) - 1]] if chance else None}
+            "chance_95": [chance[int(len(chance) * 0.025)], chance[int(len(chance) * 0.975) - 1]] if chance else None,
+            "p": round(sum(c >= observed for c in chance) / len(chance), 3) if chance else None}
 
 
 def _by_dedication(tested, out):

@@ -47,8 +47,14 @@ Sky and alignments (first)
       408 (379-439): no more than chance in all three) Church orientation over each church's own skyline
       (bidb.sky_horizon) and a third test counting the other saint of ambiguous Wikidata labels (`if_other_saint`:
       Oswald of Northumbria, Augustine of Canterbury); detail views and /sky#churches show them.
-- [ ] SK5b2 Church orientation, next: Hoare and Sweet 2000 (abstract not fetchable) and Hinton's survey data (UEA thesis
-      downloads) to compare; outlines of the nave only (later aisles and towers skew the axis; OSM building:part).
+- [x] SK5b2a (2026-10-29) Hinton's thesis and survey: the thesis (UEA eprint 20521) added to the studies (4 quotes, found
+      in the PDF); its survey spreadsheet of 1,926 churches (nave and chancel by compass, horizon elevations) used for a
+      private check of the OSM axes, the skylines and the feast-day test (`bidb.church_survey`, read with the new
+      stdlib `bidb.xls_read`). Its title sheet forbids publishing its data "nor any information derived therefrom"
+      without the author's written consent, so the results stay in git-ignored `runs/church_survey.json`; to publish
+      them, ask Ian Hinton first. The feast-day tests now give a p-value (share of shuffles with as many or more).
+- [ ] SK5b2b Church orientation, next: outlines of the nave only (later aisles and towers skew the axis; OSM
+      building:part); Hoare and Sweet 2000 (abstract not fetchable).
 - [x] SK7 (2026-10-29; Terrain Tiles on AWS instead of OpenTopoData: no daily limit, EA LiDAR in England) Real horizons:
       skyline every 0.5° from the terrain model (`bidb/terrain_tiles.py`, `bidb/sky_horizon.py`, mirrored in sky.js), so
       rising points behind hills are right; researched sites precomputed into sky.json (hosted too), any record in the

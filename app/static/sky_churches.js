@@ -36,9 +36,9 @@
   // SK5b: the same test over each church's own skyline, and counting the other saint an ambiguous label may mean
   const verdict = (t) => (t.observed > t.chance_95[1] ? "more than chance" : t.observed < t.chance_95[0] ? "fewer than chance" : "no more than chance");
   const testRow = (name, t) => `<tr><td>${name}</td><td>${t.tested.toLocaleString()}</td><td>${t.observed.toLocaleString()} (${pct(t.observed, t.tested)})</td>
-      <td>${t.chance_mean} (${t.chance_95[0]}–${t.chance_95[1]})</td><td>${verdict(t)}</td></tr>`;
+      <td>${t.chance_mean} (${t.chance_95[0]}–${t.chance_95[1]})</td><td>${t.p == null ? "–" : t.p < 0.001 ? "< 0.001" : t.p.toFixed(2)}</td><td>${verdict(t)}</td></tr>`;
   const tests = s.skyline ? `<table class="sky-table"><thead><tr><th>Test</th><th>Churches</th><th>Within ${s.tolerance}° of their feast</th>
-      <th>Shuffled: mean (95%)</th><th>Result</th></tr></thead><tbody>
+      <th>Shuffled: mean (95%)</th><th title="Share of shuffles with as many churches or more">p</th><th>Result</th></tr></thead><tbody>
       ${testRow("Flat horizon", s)}${testRow("Over each church's skyline", s.skyline)}
       ${testRow(`Over the skyline, either saint where the label is ambiguous (${s.other_saints.labels.map(esc).join(", ")})`, s.other_saints)}</tbody></table>
     <p class="meta">The skyline is the bare ground of the terrain model (trees and buildings are not in it), at the axis of

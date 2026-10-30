@@ -16,6 +16,15 @@
     </li>
     {% endfor %}
   </ul>
+  {% if circles %}
+  <h2>Stone circles from their mapped stones</h2>
+  <p>A quicker 3D view of {{ circles|length }} more stone circles, built from the stones mapped on OpenStreetMap
+    (positions; heights only where mapped), on the real ground and under the real skyline. Each is built the first
+    time it is opened, which can take half a minute. In this app only, not the hosted copy.</p>
+  <ul class="models-circles">
+    {% for c in circles %}<li><a href="/model/circle/{{ c.id }}">{{ c.name }}</a> <span class="meta">{{ c.stones }} stones</span></li>{% endfor %}
+  </ul>
+  {% endif %}
   <p class="meta">The models need a browser that can draw WebGL. Each model's page lists the facts it is built from
     and where each comes from; what is not known is said, not invented.</p>
 </main>

@@ -117,7 +117,7 @@ function placeDetailHTML(p) {
     <div class="detail-text">
       <h2>${esc(p.name)}</h2>
       <div class="pron" data-pron="${esc(p.id)}" data-pron-title="${esc(p.name)}"></div>
-      ${p.lat != null ? `<div class="actions"><button class="btn small ghost tg-wide" data-fav="${esc(p.id)}">${store.get(FAV).includes(p.id) ? "★ In your tour" : "☆ Add to your tour"}</button>${mapButton(p, p.kind_group)}</div>` : ""}
+      ${p.lat != null ? `<div class="actions"><button class="btn small ghost tg-wide" data-fav="${esc(p.id)}">${store.get(FAV).includes(p.id) ? "★ In your tour" : "☆ Add to your tour"}</button>${mapButton(p, p.kind_group)}${window.MODELS3D?.[p.id] ? `<a class="btn small" href="${esc(window.MODELS3D[p.id])}">🪨 3D model</a>` : ""}</div>` : ""}
       ${p.description ? `<p class="lede">${esc(p.description)}</p>` : ""}
       <div class="chips"><span class="chip" style="border-color:${placeColor(p.kind_group)}">${esc(p.kind_group)}</span>
         <span class="chip">${esc(p.type || p.kind_label)}</span>${p.nation ? `<span class="chip">${esc(p.nation)}</span>` : ""}

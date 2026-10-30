@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='stonehenge.css') }}">
 <main class="sh-page">
   <div class="sh-stage">
-    <canvas id="sh_canvas" data-module="model_view.js" data-model="{{ mid }}" aria-label="3D model of {{ m.name }}"></canvas>
+    <canvas id="sh_canvas" data-module="model_view.js" data-model="{{ mid or '' }}"{% if src %} data-src="{{ src }}" data-dtm="{{ dtm }}"{% endif %} aria-label="3D model of {{ m.name }}"></canvas>
     <div id="sh_names" class="sh-names" aria-hidden="true"></div>
     {% include "_model_panel.html" %}
     <div class="sh-bar"><b id="sh_when"></b><div id="sh_read"></div></div>

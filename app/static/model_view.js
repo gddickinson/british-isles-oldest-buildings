@@ -9,9 +9,11 @@ import { buildParts } from "./model_parts.js";
 import "./model_broch.js";
 import { $, esc, toward, BASE, createClock, wirePanel, startMoment, readout, tick, starNames } from "./model_clock.js";
 
-const ID = $("#sh_canvas").dataset.model;
-const [data, raw] = await Promise.all([fetch(`${BASE}model_${ID}.json`).then((r) => r.json()),
-  fetch(`${BASE}model_${ID}_dtm.bin`).then((r) => r.arrayBuffer())]);
+const DS = $("#sh_canvas").dataset, ID = DS.model;                 // a built model, or a stone circle built on request
+if (DS.src) $("#sh_note").textContent = "Building the model from the mapped stones (the first time takes a while)…";
+const [data, raw] = await Promise.all([fetch(DS.src || `${BASE}model_${ID}.json`).then((r) => r.json()),
+  fetch(DS.dtm || `${BASE}model_${ID}_dtm.bin`).then((r) => r.arrayBuffer())]);
+if (DS.src) $("#sh_note").textContent = "";
 const LAT = data.origin.lat, LON = data.origin.lon;
 const canvas = $("#sh_canvas");
 const W = createScene(canvas, data, raw);

@@ -42,3 +42,5 @@
 .models-item { border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; background: var(--panel); }
 .models-item p { margin: 6px 0 0; }
 .models-item.soon { opacity: 0.6; }
+.models-circles { columns: 3 220px; padding-left: 1.1em; }
+.models-circles li { break-inside: avoid; }

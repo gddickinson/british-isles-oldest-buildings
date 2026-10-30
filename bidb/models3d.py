@@ -49,8 +49,12 @@ def ready(m):
 
 
 def links(static=False):
-    """Record id → link of its 3D model, for record pages (built models only)."""
+    """Record or place id → link of its 3D model, for detail views: built models, and in the local GUI the stone
+    circles with mapped stones (bidb.model_circles)."""
     out = {}
+    if not static:                                     # stone circles built on request (bidb.model_circles)
+        from .model_circles import known
+        out.update({eid: f"/model/circle/{eid}" for eid in known()})
     for m in MODELS:
         if not ready(m):
             continue

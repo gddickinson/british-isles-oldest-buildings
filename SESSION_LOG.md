@@ -2743,3 +2743,32 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   sky quotes found.
 - Tests 532 OK (`test_sky` +1, `test_evidence` +1 with a hand-made PDF); ui_check sky passes; Tomnaverie's detail view
   checked by screenshot. Hosted copy not updated.
+
+## 2026-10-29 — 3D models of six more monuments (SH3, George: "work through all of your candidates")
+- Engine (SH3a): the clock, sky events and panel of /stonehenge became `model_clock.js` (Stonehenge runs on it);
+  `model_parts.js` builds models from data files: stones and slabs, mounds (outline radii, kerb drum, facade arcs,
+  openings), passages (orthostats, roof slabs cut at a slit, floor, liner), chambers (capstone or corbelled vault),
+  posts, banks and ditches, a broch (`model_broch.js`). Interior surfaces take no sky light (an ambient-occlusion map),
+  so sunlight entering a passage shows as a beam; a lantern lights the inside. New page `/model/<id>`, page `/models`
+  in the menu, a "3D model" button on each modelled record or place. Fixed on the way: scene lights came from the
+  sun's true rather than its seen position (half a degree at the horizon: decides how far a beam reaches); the sun
+  now reaches full strength a degree up; terrain-tile spikes are removed from model skylines (`despike`); the far
+  land works for any ground size.
+- `bidb/models3d.py` (registry, ground: EA LiDAR or terrain tiles, levelled under a mound; stars; quotes),
+  `bidb/model_geometry.py`, one builder per model, each listing what it had to assume (`DERIVED`, shown on the page).
+- Research (six subagents, `data/curated/models/RESEARCH_BRIEF.md`): Bryn Celli Ddu 145 quotes, Newgrange 177,
+  Calanais 165, Orkney 274, Durrington 157, Mousa 168; `python -m bidb.models3d --quotes`: all found but Burrow 2010's
+  abstract (the Cambridge page answers scripts unreliably). Quote checks now read PDFs (earlier today).
+- Models: Bryn Celli Ddu (beam down the passage at midsummer sunrise); Newgrange (roof-box modelled as the slit
+  between RS1 and RS2: a level beam cannot drop through a slit in a 35 cm slab; reaches 1.9 m onto the chamber
+  floor at first light and withdraws as the sun climbs; axis = the measured culmination azimuth 134.3°); Calanais
+  (ring found by fitting the 49 OSM stones; opens on the full moon of the 2025 major standstill over the Sleeping
+  Beauty; a view in the peat before 1857); Maeshowe with Stenness and Brodgar (light down the passage at sunset on
+  30 November: the passage faces 221°, the solstice sun sets near 217°); Woodhenge and the Southern Circle (posts on
+  the published rings; heights scaled from hole depth, stated); Mousa (cutaway shows the galleries and stair).
+- SH3h: `python -m bidb.model_circles` counts stones mapped on OSM round every typed stone circle (one isles-wide
+  query, 6,142 stones): 17 circles with 5+ (Castlerigg 48, the Hurlers 23, Boscawen-Un 19...) get a view built on
+  request (`/model/circle/<id>`, local GUI only).
+- Known gaps: Brodgar's stones are not mapped or numbered in reachable sources (drawn evenly); distant land in the
+  5 km Orkney scene shows some dark steep faces; post heights and many stone heights are not published.
+- Tests 537 OK (`test_models3d` 5); ui_check: models and all seven model pages pass. Hosted copy not updated.

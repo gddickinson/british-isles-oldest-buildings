@@ -135,7 +135,9 @@ def models():
     rows = [{**m, "ready": models3d.ready(m),
              "href": models3d.page_file(m) if STATIC_MODE else m.get("route", f"/model/{m['id']}")}
             for m in models3d.MODELS]
-    return render_template("models.html", page="models", models=rows)
+    from bidb.model_circles import known
+    circles = [] if STATIC_MODE else sorted(({"id": k, **v} for k, v in known().items()), key=lambda c: c["name"])
+    return render_template("models.html", page="models", models=rows, circles=circles)
 
 
 @bp.route("/model/<mid>")

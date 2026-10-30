@@ -212,12 +212,12 @@ export function createScene(canvas, data, dtmRaw) {
   // Place sun, moon and stars for SkyPos.at(...) output `p` and the star list.
   function setSky(p, starRows) {
     const s = p.sun, m = p.moon;
-    const sd = dir(s.alt, s.az), md = dir(m.alt, m.az);
+    const sd = dir(s.seen, s.az), md = dir(m.seen, m.az);            // where they are seen: refraction lifts them near the horizon
     su.sunPosition.value.copy(sd);
     const day = THREE.MathUtils.smoothstep(s.seen, -4, 6);
     const low = 1 - THREE.MathUtils.smoothstep(s.seen, 2, 25);
     sunLight.position.copy(sd).multiplyScalar(400).add(focus);
-    sunLight.intensity = 3.2 * THREE.MathUtils.smoothstep(s.seen, -1, 4);
+    sunLight.intensity = 3.2 * THREE.MathUtils.smoothstep(s.seen, -0.8, 1.5);   // near full strength a degree up
     sunLight.color.setRGB(1, 0.92 - 0.25 * low, 0.85 - 0.45 * low);
     sunLight.castShadow = s.seen > -1;
     const moonUp = THREE.MathUtils.smoothstep(m.seen, -1, 3);

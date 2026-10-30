@@ -2,20 +2,20 @@
 // with a kerb drum and openings, passages (orthostats, capstones, floor, and a liner behind them), chambers
 // (orthostats, a capstone or a corbelled roof), timber posts and banks. Model metres: x east, y north; heights of a
 // part are above the ground under it (`height(x, y)`, metres above the ground at the origin). Surfaces inside a
-// passage or chamber take no light from the sky (an ambient-occlusion map of 16%), only direct sun or moon light
+// passage or chamber take no light from the sky (an ambient-occlusion map of 30%), only direct sun or moon light
 // coming in through the openings, and the lantern.
 import * as THREE from "./vendor/three/three.module.min.js";
 import { grassTexture } from "./stonehenge_scene.js";
 import { stoneMesh, material, label } from "./stonehenge_stones.js";
 
 const R = Math.PI / 180;
-const AO = (() => { const t = new THREE.DataTexture(new Uint8Array([40, 40, 40, 255]), 1, 1); t.needsUpdate = true; return t; })();
+const AO = (() => { const t = new THREE.DataTexture(new Uint8Array([76, 76, 76, 255]), 1, 1); t.needsUpdate = true; return t; })();
 const CACHE = {};
 // The interior form of a material: no sky light, only direct light.
 export function interior(kind) {
   const key = "in-" + kind;
   if (!CACHE[key]) {
-    const m = (kind === "floor" ? new THREE.MeshStandardMaterial({ color: 0x7a6a58, roughness: 1 }) : material(kind)).clone();
+    const m = (kind === "floor" ? new THREE.MeshStandardMaterial({ color: 0xa8957c, roughness: 1 }) : material(kind)).clone();
     Object.assign(m, { aoMap: AO, aoMapIntensity: 1, side: THREE.DoubleSide, shadowSide: THREE.DoubleSide });
     CACHE[key] = m;
   }
@@ -89,10 +89,14 @@ function mound(p, height) {
     const off = Math.min((f.from - az + 360) % 360, (az - f.to + 360) % 360);
     return off >= 10 ? kerb : f.h + (kerb - f.h) * off / 10;
   };
+  // The dome's profile follows a smoothed outline (a notch at an entrance does not crease it); the true outline only
+  // at the edge, where the dome meets the drum.
+  const smooth = (a) => { let t = 0; for (let k = -30; k <= 30; k += 5) t += rAt(a + k); return t / 13; };
   const pos = [], idx = [];
   for (let i = 0; i <= NR; i++) for (let j = 0; j < NS; j++) {
-    const a = j / NS * 360, Rr = rAt(a), r = Rr * i / NR, k = kAt(a);
-    const z = g0 + k + (p.h - k) * Math.pow(Math.max(0, 1 - (i / NR) ** 2), p.p ?? 0.8);
+    const a = j / NS * 360, Rr = rAt(a), Rs = smooth(a), k = kAt(a);
+    const r = i === NR ? Rr : Math.min(Rr, Rs) * i / (NR - 1) * (NR - 1) / NR;
+    const z = i === NR ? g0 + k : g0 + k + (p.h - k) * Math.pow(Math.max(0, 1 - (r / Rs) ** 2), p.p ?? 0.8);
     pos.push(cx + r * Math.sin(a * R), z, -(cy + r * Math.cos(a * R)));
   }
   for (let i = 0; i < NR; i++) for (let j = 0; j < NS; j++) {
@@ -152,11 +156,19 @@ function passage(p, height, seed) {
       const m = stone({ c, len: step * 0.92, wid: 0.32, az: s.az, h: s.h + 0.15, rock, interior: true, ground: s.floor }, height, seed + k * 2 + (sgn > 0));
       if (m) g.add(m);
     }
-    const gap = p.roof_gap && d > p.roof_gap[0] && d < p.roof_gap[1];
-    if (!gap) {
-      const cap = stone({ c: [s.x, s.y], len: step * 0.98, wid: s.w + 1, az: s.az, h: 0.35, base: s.h, rock: roofRock, interior: true, ground: s.floor }, height, seed + 500 + k);
-      if (cap) g.add(cap);
+  }
+  // Roof slabs, one per `step`, cut where the roof is left open (roof_gap: a roof-box slit, an unroofed stretch).
+  for (let a = 0, k = 0; a < total - 1e-6; a += step, k++) {
+    let pieces = [[a, Math.min(total, a + step)]];
+    if (p.roof_gap) {
+      const [g0_, g1_] = p.roof_gap;
+      pieces = pieces.flatMap(([lo, hi]) => [[lo, Math.min(hi, g0_)], [Math.max(lo, g1_), hi]]).filter(([lo, hi]) => hi - lo > 0.05);
     }
+    pieces.forEach(([lo, hi], j) => {
+      const s = sample((lo + hi) / 2);
+      const cap = stone({ c: [s.x, s.y], len: (hi - lo) * 0.98, wid: s.w + 1, az: s.az, h: 0.35, base: s.h, rock: roofRock, interior: true, ground: s.floor, rough: p.roof_rough ?? 1 }, height, seed + 500 + k * 3 + j);
+      if (cap) g.add(cap);
+    });
   }
   // Floor and liner, sampled every 0.5 m.
   const fl = [], li = { "-1": [], 1: [] };

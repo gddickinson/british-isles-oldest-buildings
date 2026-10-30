@@ -114,7 +114,8 @@ export function arcOutline(a, n = 14) {
 }
 
 // One stone: outline (model metres), from `base` to `base + h` above the ground at `ground`; standing stones taper,
-// fallen ones are sunk a little; `lean` = [degrees, azimuth] tilts it (the Heel Stone). Returns a Mesh.
+// fallen ones are sunk a little; `lean` = [degrees, azimuth] tilts it (the Heel Stone); `rough` scales the surface
+// noise (0 for the edges of a narrow opening that light must pass, e.g. a roof-box). Returns a Mesh.
 export function stoneMesh(s, ground, { restored = false, seed = 1 } = {}) {
   let pts = s.arc ? arcOutline(s.arc) : s.outline;
   if (pts.length < 3) return null;
@@ -136,7 +137,7 @@ export function stoneMesh(s, ground, { restored = false, seed = 1 } = {}) {
     v.fromBufferAttribute(pos, i);
     const t = Math.max(0, Math.min(1, v.y / h));
     if (!lying && !lintel) { const k = 1 - 0.1 * t; v.x *= k; v.z *= k; }
-    const d = 0.07 * fbm(v.x * 0.9, v.y * 0.9, v.z * 0.9, seed, 3) + 0.025 * noise3(v.x * 4, v.y * 4, v.z * 4, seed + 7);
+    const d = (s.rough ?? 1) * (0.07 * fbm(v.x * 0.9, v.y * 0.9, v.z * 0.9, seed, 3) + 0.025 * noise3(v.x * 4, v.y * 4, v.z * 4, seed + 7));
     v.x += nrm.getX(i) * d; v.y += nrm.getY(i) * d * (v.y > 0.05 ? 1 : 0); v.z += nrm.getZ(i) * d;
     if (s.lean) { const [deg, az] = s.lean, k = Math.tan(deg * Math.PI / 180) * v.y; v.x += k * Math.sin(az * Math.PI / 180); v.z -= k * Math.cos(az * Math.PI / 180); }
     pos.setXYZ(i, v.x, v.y, v.z);

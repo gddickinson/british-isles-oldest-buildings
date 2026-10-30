@@ -28,7 +28,7 @@ function grass() {
   }
   return CACHE.grass;
 }
-const surface = (kind) => (kind === "grass" ? grass() : (CACHE["s-" + kind] ??= Object.assign(material(kind).clone(), { side: THREE.DoubleSide, shadowSide: THREE.DoubleSide })));
+export const surface = (kind) => (kind === "grass" ? grass() : (CACHE["s-" + kind] ??= Object.assign(material(kind).clone(), { side: THREE.DoubleSide, shadowSide: THREE.DoubleSide })));
 
 // A rectangle of length `len` along azimuth `az` and width `wid` round centre c.
 export function rect(c, len, wid, az) {
@@ -37,7 +37,7 @@ export function rect(c, len, wid, az) {
 }
 const mid = (pts) => [pts.reduce((s, p) => s + p[0], 0) / pts.length, pts.reduce((s, p) => s + p[1], 0) / pts.length];
 
-function mesh(pos, idx, mat, uvs) {
+export function mesh(pos, idx, mat, uvs) {
   const geo = new THREE.BufferGeometry();
   geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
   geo.setAttribute("uv", new THREE.Float32BufferAttribute(uvs ?? pos.filter((_, i) => i % 3 !== 1).map((v) => v / 3), 2));
@@ -277,7 +277,8 @@ function bank(p, height) {
   return mesh(pos, idx, grass());
 }
 
-const BUILDERS = { stone, mound, passage, chamber, post, bank };
+// Builders by part kind; other modules add their own (model_broch.js).
+export const BUILDERS = { stone, mound, passage, chamber, post, bank };
 // Every part of a view → { group, labels }; each mesh carries its part's `info` for clicks.
 export function buildParts(parts, height) {
   const group = new THREE.Group(), labels = new THREE.Group();

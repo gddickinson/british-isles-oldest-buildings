@@ -6,6 +6,7 @@ import * as THREE from "./vendor/three/three.module.min.js";
 import { OrbitControls } from "./vendor/three/OrbitControls.js";
 import { createScene } from "./stonehenge_scene.js";
 import { buildParts } from "./model_parts.js";
+import "./model_broch.js";
 import { $, esc, toward, BASE, createClock, wirePanel, startMoment, readout, tick, starNames } from "./model_clock.js";
 
 const ID = $("#sh_canvas").dataset.model;

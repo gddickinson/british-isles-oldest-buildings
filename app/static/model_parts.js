@@ -255,10 +255,10 @@ function chamber(p, height, seed) {
   return g;
 }
 
-// Timber post: {c, d, h}; a little taper and roughness from its segments.
+// Post: {c, d, h, rock (timber unless given)}; a little taper.
 function post(p, height) {
   const g0 = height(p.c[0], p.c[1]) ?? 0;
-  const m = new THREE.Mesh(new THREE.CylinderGeometry(p.d * 0.45, p.d / 2, p.h + 0.3, 10, 2), material("timber"));
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(p.d * 0.45, p.d / 2, p.h + 0.3, 10, 2), material(p.rock ?? "timber"));
   m.position.set(p.c[0], g0 + (p.h - 0.3) / 2, -p.c[1]);
   m.castShadow = m.receiveShadow = true;
   return m;

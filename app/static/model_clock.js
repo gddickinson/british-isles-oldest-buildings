@@ -127,6 +127,7 @@ export function wirePanel(clock, { update, events, face, views }) {
 export function startMoment(clock, start, note) {
   if (!start || ["y", "m", "d", "t"].some((k) => clock.q.has(k))) return;
   if (start.year != null) clock.st.y = start.year;
+  if (start.view && !clock.q.has("view")) clock.st.view = start.view;
   if (start.sun && start.m) {                                       // sunrise or sunset on a given day
     const jd0 = SkyPos.julianDay(clock.st.y, start.m, start.d, 0) - clock.lon / 360;
     const jd = clock.crossing(jd0, 24, "sun", start.sun === "rise");

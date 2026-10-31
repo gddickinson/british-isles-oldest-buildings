@@ -42,7 +42,7 @@ const SkyHere = (() => {
         ? `The sun rose on that line ${sky ? "over the skyline " : ""}on about ${dates.map(md).join(" and ")} ${cal != null ? ` in the Julian calendar of ${cal}, the year it was begun` : " in the Julian calendar of 1300 (it has no medieval start date)"}.`
         : "The sun never rises that far round."}${feast ? ` On the feast of its saint (${esc(feast)}) the sun rose ${diff.toFixed(1)}° from the axis${
           sky && flatDiff != null ? ` (${flatDiff.toFixed(1)}° over a flat horizon)` : ""}.` : ""}</p>
-      <p class="meta">${src === "part" ? "From the nave, chancel or church body mapped on OpenStreetMap" : src === "building" ? "From the walls of the church building mapped inside the record's OpenStreetMap outline (the outline itself is the site's)" : "From the direction of the walls of the OpenStreetMap outline"}${sky ? "; skyline from the terrain model (bare ground: no trees or buildings)" : ", flat horizon"}.
+      <p class="meta">${src === "part" ? "From the nave, chancel or church body mapped on OpenStreetMap" : src === "building" ? "From the walls of the church building mapped inside the record's OpenStreetMap outline (the outline itself is the site's, or takes in more than the church)" : "From the direction of the walls of the OpenStreetMap outline"}${sky ? "; skyline from the terrain model (bare ground: no trees or buildings)" : ", flat horizon"}.
         Whether churches were set out to face sunrise on their saint's day is disputed: see <a href="${calendarPage()}#churches">the test across the catalogue</a>.</p>`;
   }
 

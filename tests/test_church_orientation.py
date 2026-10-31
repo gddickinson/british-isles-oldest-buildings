@@ -77,6 +77,23 @@ class ChurchOrientationTest(unittest.TestCase):
         self.assertEqual((rows[1]["axis"], rows[1]["src"]), (None, "site"))             # nothing inside: left out
         self.assertEqual(rows[2]["src"], "walls")
 
+    def test_square_outlines(self):
+        """SK5b2d: a church outline too near square takes a church building inside it covering enough of it."""
+        from bidb import church_sites as cs
+        abbey = rectangle(10, 80, 70)                                # church and cloister ranges in one outline
+        parish = {"geom": rectangle(92, 60, 18), "tags": {"building": "church"}}
+        chapel = {"geom": rectangle(92, 10, 4), "tags": {"building": "chapel"}}
+        self.assertIs(cs.inner_church(abbey, [parish], 0.15), parish)
+        self.assertIsNone(cs.inner_church(abbey, [chapel], 0.15))                     # a side chapel: too small
+        tags = {i: {"building": "church"} for i in "abc"}
+        rows = [{"id": "a", "axis": [10.0, 1.14], "src": "walls"}, {"id": "b", "axis": [10.0, 1.14], "src": "walls"},
+                {"id": "c", "axis": [92.0, 2.0], "src": "walls"}]
+        co._site_axes(rows, {"a": abbey, "b": rectangle(10, 80, 70, lat=54), "c": abbey}, tags, [parish, chapel])
+        self.assertEqual(rows[0]["src"], "building")
+        self.assertAlmostEqual(rows[0]["axis"][0], 92, delta=0.3)
+        self.assertEqual(rows[1], {"id": "b", "axis": [10.0, 1.14], "src": "walls"})   # none inside: unchanged
+        self.assertEqual(rows[2]["src"], "walls")                                       # clear axis: not looked at
+
     def test_julian_calendar(self):
         self.assertEqual(co.julian_calendar_day(1582, 10, 4) + 1, 2299160.5)    # 4 Oct (Julian) → 15 Oct 1582
         self.assertEqual(co._julian_md(co.julian_calendar_day(1250, 3, 12) + 0.25), (3, 12))

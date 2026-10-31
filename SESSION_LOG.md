@@ -2855,3 +2855,24 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   (p 0.45); either saint p 0.44. Still no more than chance. /sky#churches counts both groups.
 - Tests 548 OK (`test_sites`); ui_check sky passes. Hosted copy not updated.
   Next: SK5b2d (Hoare and Sweet 2000; abbey churches drawn with their cloister ranges).
+
+## 2026-10-30 — Abbey churches mapped with their cloisters (SK5b2d)
+- Survey: 113 church-building outlines over 1,500 m²; many abbeys and cathedrals are mapped as one outline with
+  their cloister ranges, so the walls' direction or the outline's extent can point along a range (Neath 171°,
+  Brecon 0.4°, Ross Errilly 169°). Most such outlines are under 1.4 times as long as wide, so they were already left
+  out, and most monastic records have no dedication, so they were never in the feast-day test.
+- Tried and rejected: the largest inscribed rectangle (fixes Neath, Brecon, Holy Cross; turns Lanercost onto a range,
+  and a filled cloister garth makes Fountains one block) and the longest chord along each wall direction (rarely
+  decisive). OSM's own mapping is used instead.
+- `bidb/church_axes.py`: `building:part` ways of any value named nave, chancel, choir, quire or presbytery count as
+  the church's parts (`NAMED`, 19 more, cached in `church_named_parts.json`); 21 records now take a part's axis
+  (Ross Errilly 169° → 79°, Muckross 173° → 83°, Burrishoole 179° → 89°, Durham's nave 97° now clear, Molana,
+  Monasteranenagh and Kilconnell given an axis).
+- `bidb/church_orientation.py` / `church_sites.py`: church outlines too near square for an axis look for a church
+  building inside covering at least 15% of them (`INNER_SHARE`; 1,090 outlines searched, 926 buildings round them):
+  Lanercost (the parish church in the nave, 86.6°) and St Margaret's Westminster; otherwise they keep their reading.
+- Feast-day test: 398 of 2,475 within 5° vs 378.7 by chance (95%: 352-408, p 0.13); over the skyline p 0.43; either
+  saint p 0.46: still no more than chance. Hoare and Sweet 2000 is closed and its abstract withheld (Crossref,
+  Semantic Scholar, OpenAlex): not quoted.
+- Tests 549 OK (`test_square_outlines`); ui_check sky passes. Hosted copy not updated.
+  Next: SK7b3 (needs Ruggles 1999, not online) or SH2 (Stonehenge stages).

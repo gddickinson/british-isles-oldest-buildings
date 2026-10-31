@@ -29,6 +29,7 @@ FILE = ROOT / "data" / "curated" / "church_orientation.json"
 OUT = ROOT / "app" / "static" / "data" / "church_orientation.json"
 CHECK = ROOT / "data" / "church_orientation_check.json"
 MIN_ELONGATION = 1.4
+INNER_SHARE = 0.15         # SK5b2d: least share of a square church outline a church inside it must cover
 MEDIEVAL = 1540           # churches begun before the Reformation
 TOLERANCE = 5.0           # degrees
 SHUFFLES = 200
@@ -164,17 +165,34 @@ def churches(con, parts=None, sites=None):
     return out
 
 
+def _needs_inner(r, tags):
+    """SK5b2c, SK5b2d: an outline that is not a church building, or a church outline too near square to have an
+    axis (a cathedral or abbey mapped with its cloister ranges, a cruciform church), is read from the church building
+    mapped inside it, if any."""
+    from .church_sites import site_kind
+    if r["src"] == "part":
+        return False
+    return bool(site_kind(tags.get(r["id"]))) or (r["src"] == "walls" and not (r["axis"] and
+                                                                                r["axis"][1] >= MIN_ELONGATION))
+
+
 def _site_axes(rows, outlines, tags, buildings):
-    """SK5b2c: an outline that is not a church building (bidb.church_sites) takes the axis of the largest church
-    building mapped inside it (`src` "building"), else has none (`src` "site")."""
+    """An outline that is not a church building (bidb.church_sites) takes the axis of the largest church building
+    mapped inside it (`src` "building"), else has none (`src` "site"). A church outline too near square (SK5b2d) takes
+    the axis of a church building inside it that covers at least `INNER_SHARE` of it (a parish church in an abbey's
+    nave, Lanercost); else it keeps its own reading."""
     from .church_axes import wall_axis
     from .church_sites import inner_church, site_kind
     for r in rows:
-        if r["src"] == "part" or r["id"] not in outlines or not site_kind(tags.get(r["id"])):
+        if r["id"] not in outlines or not _needs_inner(r, tags):
             continue
-        inner = inner_church(outlines[r["id"]], buildings)
+        site = site_kind(tags.get(r["id"]))
+        inner = inner_church(outlines[r["id"]], buildings, 0 if site else INNER_SHARE)
         ax = wall_axis(inner["geom"]) if inner else None
-        r["axis"], r["src"] = (ax[:2], "building") if ax else (None, "site")
+        if ax and (site or ax[1] >= MIN_ELONGATION):
+            r["axis"], r["src"] = ax[:2], "building"
+        elif site:
+            r["axis"], r["src"] = None, "site"
 
 
 def east_facing(r):
@@ -284,13 +302,13 @@ def run(log=print, skylines=True):
     data = load()
     con = sqlite3.connect(db_path())
     from .church_axes import fetch_parts
-    from .church_sites import fetch_buildings, outline_tags, site_kind
-    tags, outlines = outline_tags(), {}
-    for rid, fp in con.execute("SELECT id, footprint FROM buildings WHERE category_group = 'Religious' "
-                               "AND footprint <> '' AND lat IS NOT NULL"):
-        if site_kind(tags.get(rid)):
-            outlines[rid] = json.loads(fp)
-    rows = churches(con, fetch_parts(log), (tags, fetch_buildings(outlines, log)))
+    from .church_sites import fetch_buildings, outline_tags
+    tags = outline_tags()
+    rows = churches(con, fetch_parts(log))
+    need = {r["id"] for r in rows if _needs_inner(r, tags)}
+    outlines = {rid: json.loads(fp) for rid, fp in con.execute(
+        "SELECT id, footprint FROM buildings WHERE category_group = 'Religious' AND footprint <> ''") if rid in need}
+    _site_axes(rows, outlines, tags, fetch_buildings(outlines, log))
     if skylines:
         add_skylines(rows, log=log)
     per, summary = analyse(rows, data["feasts"])

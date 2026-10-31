@@ -9,8 +9,10 @@ tower set askew, a porch or an aisle added on one side can turn it. Two other re
   angles, the one along which the outline is longer is the axis. The long nave and chancel walls carry most of the
   length, so a tower or porch moves it little.
 - `body_axis`: OpenStreetMap `building:part` ways tagged nave, chancel or church (the body without tower and porch)
-  whose centre lies inside a church's outline (Overpass, cached; `parts_of`): few churches have them, so they check
-  the two readings above rather than replace them (`compare`).
+  whose centre lies inside a church's outline (Overpass, cached; `parts_of`), and (SK5b2d) parts of any
+  `building:part` value named nave, chancel, choir, quire or presbytery (`NAMED`: Durham's "The Nave", Ross Errilly's
+  "nave"): few churches have them; where one is mapped it gives the axis, which matters most for cathedrals and
+  abbey churches mapped as one outline with their cloister ranges.
 
 `python -m bidb.church_axes` prints how far the three readings differ.
 """
@@ -24,6 +26,9 @@ from .config import CACHE_DIR, db_path
 WINDOW = 6.0           # degrees: width of the window that finds the walls' busiest direction
 BODY = ("nave", "chancel", "church")   # "church": the body without its tower or porch
 PART_CACHE = CACHE_DIR / "church_parts.json"
+NAMED = {"nave": "nave", "the nave": "nave", "chancel": "chancel", "the chancel": "chancel", "choir": "chancel",
+         "the choir": "chancel", "quire": "chancel", "the quire": "chancel", "presbytery": "chancel"}
+NAMED_CACHE = CACHE_DIR / "church_named_parts.json"
 
 
 def _rings(geom):
@@ -97,21 +102,33 @@ def diff(a, b):
 
 # Mapped parts ----------------------------------------------------------------------------------------------
 
-def fetch_parts(log=print):
-    """Ways tagged building:part nave, chancel or church in the isles (Overpass, cached): [{part, geom}]."""
-    if PART_CACHE.exists():
-        return json.loads(PART_CACHE.read_text())
+def _ways(q, name):
     from .footprints import _overpass
-    q = ('[out:json][timeout:300];way["building:part"~"^(%s)$"](49,-11,61.2,2.2);out tags geom;' % "|".join(BODY))
     out = []
-    for el in _overpass(q, "church_body_parts").get("elements", []):
+    for el in _overpass(q, name).get("elements", []):
         pts = [[g["lon"], g["lat"]] for g in el.get("geometry", [])]
         if len(pts) >= 4 and pts[0] == pts[-1]:
-            out.append({"part": el["tags"]["building:part"], "geom": {"type": "Polygon", "coordinates": [pts]}})
-    PART_CACHE.parent.mkdir(parents=True, exist_ok=True)
-    PART_CACHE.write_text(json.dumps(out))
-    log(f"{len(out)} building:part ways tagged {', '.join(BODY)}")
+            out.append((el.get("tags", {}), {"type": "Polygon", "coordinates": [pts]}))
     return out
+
+
+def fetch_parts(log=print):
+    """Ways tagged building:part nave, chancel or church, and building:part ways named as the nave or chancel
+    (`NAMED`), in the isles (Overpass, cached): [{part, geom}]."""
+    if not PART_CACHE.exists():
+        q = '[out:json][timeout:300];way["building:part"~"^(%s)$"](49,-11,61.2,2.2);out tags geom;' % "|".join(BODY)
+        out = [{"part": t["building:part"], "geom": g} for t, g in _ways(q, "church_body_parts")]
+        PART_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        PART_CACHE.write_text(json.dumps(out))
+        log(f"{len(out)} building:part ways tagged {', '.join(BODY)}")
+    if not NAMED_CACHE.exists():
+        q = ('[out:json][timeout:300];way["building:part"]["name"~"^(the )?(nave|chancel|choir|quire|presbytery)$",i]'
+             '(49,-11,61.2,2.2);out tags geom;')
+        out = [{"part": NAMED[t["name"].strip().lower()], "geom": g} for t, g in _ways(q, "church_named_parts")
+               if t.get("name", "").strip().lower() in NAMED and t["building:part"] not in BODY]
+        NAMED_CACHE.write_text(json.dumps(out))
+        log(f"{len(out)} other building:part ways named as a nave or chancel")
+    return json.loads(PART_CACHE.read_text()) + json.loads(NAMED_CACHE.read_text())
 
 
 def _inside(pt, geom):

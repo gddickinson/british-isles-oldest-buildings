@@ -6,7 +6,9 @@ archaeological_site, ruins over a field), a churchyard (amenity=grave_yard, land
 that carries the id (a tower, lych gate, house or barn). The edges of such an outline say nothing about the church's
 axis. `site_kind` reads the outline's own tags from the cached Overpass responses; for an outline that is not a
 church building, `inner_church` looks for the largest church, chapel or cathedral building mapped inside it
-(`fetch_buildings`, Overpass, cached), and when there is none the record is left out of the test.
+(`fetch_buildings`, Overpass, cached), and when there is none the record is left out of the test. Since SK5b2d the
+same is looked for inside church outlines too near square to have an axis (cathedrals and abbeys mapped with their
+cloister ranges), which keep their own reading when there is none.
 """
 import glob
 import hashlib
@@ -76,8 +78,9 @@ def fetch_buildings(outlines, log=print):
     return out
 
 
-def inner_church(geom, buildings):
-    """The largest of `buildings` whose centre lies inside `geom` and that is not `geom` itself, else None."""
+def inner_church(geom, buildings, share=0.0):
+    """The largest of `buildings` whose centre lies inside `geom` and that is not `geom` itself, else None; with
+    `share`, None unless it covers at least that share of `geom`'s area (SK5b2d: a church outline's side chapel)."""
     best, size = None, 0.0
     own = _area(_metres(_rings(geom))[0]) if _rings(geom) else 0.0
     for b in buildings:
@@ -88,4 +91,4 @@ def inner_church(geom, buildings):
         a = _area(_metres(_rings(b["geom"]))[0])
         if a > size and abs(a - own) > 1:
             best, size = b, a
-    return best
+    return best if best and size >= share * own else None

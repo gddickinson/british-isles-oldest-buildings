@@ -66,8 +66,17 @@ Sky and alignments (first)
       51 now take the axis of the largest church building mapped inside (Dunbrody Abbey 26° → 87°, Adare Friary 179° →
       89°, Kells Priory 20° → 90°), 213 are left out. Feast-day test: 398 of 2,473 within 5° vs 378 by chance (350-413,
       p 0.13); over the skyline p 0.45; either saint p 0.44: still no more than chance.
-- [ ] SK5b2d Hoare and Sweet 2000 (abstract not fetchable); abbey churches drawn with their cloister ranges in one
-      building outline (the church's own part where mapped).
+- [x] SK5b2d (2026-10-30) Abbey churches mapped with their cloister ranges in one outline: `building:part` ways of
+      any value named nave, chancel, choir, quire or presbytery now count as the church's own part (19 more in the
+      isles; 21 records take a part's axis: Ross Errilly 169° → 79°, Muckross 173° → 83°, Burrishoole 179° → 89°,
+      Durham's mapped nave 97° at last clear), and church outlines too near square for an axis look for a church
+      building inside covering at least 15% of them (Lanercost: the parish church in the nave). Neither the largest
+      inscribed rectangle nor the longest chord could tell church from ranges on their own (Lanercost, Fountains,
+      filled cloister garths), so geometry alone is not used. Most monastic outlines with a wrong axis have no
+      dedication, or are too near square, so they were never in the test. Feast-day test: 398 of 2,475 within 5° vs
+      379 by chance (352-408, p 0.13); over the skyline p 0.43; either saint p 0.46. Hoare and Sweet 2000
+      (J. Hist. Geogr. 26, doi 10.1006/jhge.2000.0210): closed, abstract withheld by the publisher in Crossref,
+      Semantic Scholar and OpenAlex, so not quoted.
 - [x] SK7 (2026-10-29; Terrain Tiles on AWS instead of OpenTopoData: no daily limit, EA LiDAR in England) Real horizons:
       skyline every 0.5° from the terrain model (`bidb/terrain_tiles.py`, `bidb/sky_horizon.py`, mirrored in sky.js), so
       rising points behind hills are right; researched sites precomputed into sky.json (hosted too), any record in the

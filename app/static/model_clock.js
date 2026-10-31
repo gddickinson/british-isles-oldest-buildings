@@ -33,7 +33,7 @@ export function createClock(lat, lon, horizon) {
     play: 0, labels: false, names: true, axis: true, ghosts: false, lantern: false };
   const q = new URLSearchParams(location.search);
   for (const k of ["y", "m", "d", "t"]) if (q.get(k) != null && !Number.isNaN(+q.get(k))) st[k] = +q.get(k);
-  if (q.get("view") === "built") st.view = "built";
+  if (["built", "stages"].includes(q.get("view"))) st.view = q.get("view");
   const hz = { alt: horizon.alt.map((a) => a / 100), step: horizon.step };
 
   const at = () => SkyPos.at(st.y, st.m, st.d, st.t / 60, lat, lon);
@@ -117,6 +117,7 @@ export function wirePanel(clock, { update, events, face, views }) {
     $(s).checked = st[k];
     $(s).addEventListener("change", (e) => { st[k] = e.target.checked; update(); });
   });
+  for (const [k, v] of Object.entries(clock.extra || {})) u.set(k, v);          // a page's own state (stage)
   const cam = clock.q.get("cam");
   views[cam && views[cam] ? cam : Object.keys(views)[0]][1]();
   if (cam && views[cam]) $("#sh_cams").value = cam;
@@ -158,6 +159,7 @@ export function readout(clock, P) {
   $("#sh_era").value = st.y <= 0 ? "BC" : "AD";
   document.querySelectorAll("[name=sh_view]").forEach((r) => { r.checked = r.value === st.view; });
   const u = new URLSearchParams({ view: st.view, y: st.y, m: st.m, d: st.d, t: Math.round(st.t) });
+  for (const [k, v] of Object.entries(clock.extra || {})) u.set(k, v);          // a page's own state (stage)
   const cam = clock.q.get("cam");
   if (cam) u.set("cam", cam);
   history.replaceState(null, "", `${location.pathname}?${u}`);

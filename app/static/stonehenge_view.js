@@ -1,10 +1,12 @@
 // Page /stonehenge (loaded by stonehenge_page.js when WebGL works): the 3D model of Stonehenge now and as thought complete, under the sky of any date and time
 // (stonehenge_scene.js, stonehenge_stones.js; clock, panel and sky events from model_clock.js). Click a stone for
-// its record and sources. URL state: ?view=now|built&y=&m=&d=&t=<minutes>&cam=<preset>.
+// its record and sources. By stage (SH2a, stonehenge_stages.js): the five stages of Darvill et al. 2012 on a slider.
+// URL state: ?view=now|built|stages&stage=1-5&aubrey=stones|posts|empty&y=&m=&d=&t=<minutes>&cam=<preset>.
 import * as THREE from "./vendor/three/three.module.min.js";
 import { OrbitControls } from "./vendor/three/OrbitControls.js";
 import { createScene } from "./stonehenge_scene.js";
 import { stoneMesh, label, material } from "./stonehenge_stones.js";
+import { pieces, stageWorld, AUBREY } from "./stonehenge_stages.js";
 import { $, esc, toward, BASE, createClock, wirePanel, startMoment, readout, tick, starNames } from "./model_clock.js";
 
 const [data, raw] = await Promise.all([fetch(BASE + "stonehenge.json").then((r) => r.json()),
@@ -12,7 +14,7 @@ const [data, raw] = await Promise.all([fetch(BASE + "stonehenge.json").then((r) 
 const LAT = data.origin.lat, LON = data.origin.lon;
 const canvas = $("#sh_canvas");
 const W = createScene(canvas, data, raw);
-const { scene, camera, renderer, height } = W;
+const { scene, camera, renderer, height, height0 } = W;
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 controls.maxPolarAngle = Math.PI * 0.97;        // free to look up from eye level; the ground clamp keeps it above the turf
@@ -58,6 +60,34 @@ scene.add(axis);
 const clock = createClock(LAT, LON, data.horizon);
 const { st, today } = clock;
 
+// ---- stages (built when first shown, on the stage's own ground) ----
+const STAGES = data.stages.stages;
+st.stage = Math.min(STAGES.length, Math.max(1, +(clock.q.get("stage") || 1)));
+st.aubrey = AUBREY[clock.q.get("aubrey")] ? clock.q.get("aubrey") : "stones";
+const built = {};
+let shaped = null;
+function stageModel() {
+  const s = STAGES[st.stage - 1], key = `${s.id}-${s.extra.some((e) => e.kind === "aubrey") ? st.aubrey : ""}`;
+  if (shaped !== key) {
+    const w = built[key]?.world ?? stageWorld(s, data.stages, height0, st.aubrey);
+    W.reshape(w.ground, w.surface);
+    shaped = key;
+    if (!built[key]) {
+      const m = model(pieces(s, data.built, st.aubrey), true);
+      m.g.add(w.group);
+      scene.add(m.g);
+      built[key] = { ...m, world: w };
+    }
+  }
+  return built[key];
+}
+function showStageText() {
+  const s = STAGES[st.stage - 1];
+  $("#sh_stage_text").innerHTML = `<b>${esc(s.name)}</b>, ${esc(s.dates)}. ${esc(s.what)}
+    ${s.cites.length ? `<details><summary>Sources</summary><ul class="sh-cites">${s.cites.map((c) => `<li>“${esc(c.quote)}” <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></li>`).join("")}</ul></details>` : ""}`;
+  $("#sh_aubrey").hidden = !s.extra.some((e) => e.kind === "aubrey");
+}
+
 const EVENTS = ["summer_rise", "winter_set", "winter_rise", "equinox_rise", "winter_moon", "summer_moon"];
 
 // ---- camera presets ----
@@ -92,9 +122,15 @@ let P = null;
 function update() {
   P = clock.at();
   W.setSky(P, data.stars);
+  const stage = st.view === "stages" ? stageModel() : null;
+  if (!stage && shaped) { W.reshape(null); shaped = null; }
+  Object.values(built).forEach((b) => { b.g.visible = b === stage; b.labels.visible = st.labels; });
   NOW.g.visible = st.view === "now"; BUILT.g.visible = st.view === "built";
   NOW.labels.visible = BUILT.labels.visible = st.labels;
-  BUILT.g.children.forEach((m) => { if (m.userData.pale) m.material = st.ghosts ? m.userData.pale : m.userData.plain; });
+  for (const g of [BUILT.g, ...Object.values(built).map((b) => b.g)])
+    g.children.forEach((m) => { if (m.userData.pale) m.material = st.ghosts ? m.userData.pale : m.userData.plain; });
+  $("#sh_stagebox").hidden = st.view !== "stages";
+  clock.extra = st.view === "stages" ? { stage: st.stage, aubrey: st.aubrey } : {};
   axis.visible = st.axis;
   readout(clock, P);
 }
@@ -121,7 +157,8 @@ canvas.addEventListener("pointerup", (e) => {
   const r = canvas.getBoundingClientRect();
   ptr.set((e.clientX - r.left) / r.width * 2 - 1, -(e.clientY - r.top) / r.height * 2 + 1);
   ray.setFromCamera(ptr, camera);
-  const hit = ray.intersectObject(st.view === "now" ? NOW.g : BUILT.g, true).find((h) => h.object.isMesh && h.object.visible);
+  const group = st.view === "now" ? NOW.g : st.view === "built" ? BUILT.g : stageModel().g;
+  const hit = ray.intersectObject(group, true).find((h) => h.object.isMesh && h.object.visible && h.object.userData.group);
   showStone(hit ? hit.object.userData : null);
 });
 const STATUS = { surviving: "Survives, in place", placed: "Survives, shown where it stood", restored: "Lost: drawn where it is thought to have stood" };
@@ -129,10 +166,11 @@ function showStone(u) {
   const box = $("#sh_stone");
   if (!u) { box.hidden = true; return; }
   const rec = data.stones[u.id] || {};
-  const name = u.id ? `Stone ${esc(u.id)}` : "Bluestone";
+  const HOLES = { aubrey_hole: "Aubrey Hole", aubrey_post: "Aubrey Hole (with a post)", aubrey_bluestone: "Aubrey Hole (with a bluestone)", yz_hole: "Pit" };
+  const name = HOLES[u.group] ? `${HOLES[u.group]} ${esc((u.id || "").replace(/^AH/, ""))}` : u.id ? `Stone ${esc(u.id)}` : "Bluestone";
   box.hidden = false;
   box.innerHTML = `<button type="button" class="sh-close" aria-label="Close">×</button><h3>${name}</h3>
-    <p class="meta">${esc((u.group || rec.group || "").replace(/_/g, " "))}${st.view === "built" && u.status ? ` · ${esc(STATUS[u.status])}` : rec.state ? ` · today: ${esc(rec.state)}` : ""}</p>
+    <p class="meta">${esc((u.group || rec.group || "").replace(/_/g, " "))}${st.view !== "now" && u.status ? ` · ${esc(STATUS[u.status])}` : rec.state ? ` · today: ${esc(rec.state)}` : ""}</p>
     ${rec.notes ? `<p>${esc(rec.notes)}</p>` : ""}
     ${(rec.cites || []).length ? `<ul class="sh-cites">${rec.cites.map((c) => `<li>“${esc(c.quote)}” <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></li>`).join("")}</ul>` : ""}`;
   box.querySelector(".sh-close").onclick = () => { box.hidden = true; };
@@ -141,7 +179,14 @@ function showStone(u) {
 // ---- controls ----
 wirePanel(clock, { update, events: EVENTS, views: VIEWS,
   face: (k) => { if (FOR[k]) { $("#sh_cams").value = FOR[k]; VIEWS[FOR[k]][1](); } } });
+$("#sh_aubrey").innerHTML = Object.entries(AUBREY).map(([k, v]) => `<option value="${k}">Aubrey Holes: ${v}</option>`).join("");
+$("#sh_aubrey").value = st.aubrey;
+$("#sh_stage").value = st.stage;
+$("#sh_stage").addEventListener("input", (e) => { st.stage = +e.target.value; st.y = STAGES[st.stage - 1].year; showStageText(); update(); });
+$("#sh_aubrey").addEventListener("change", (e) => { st.aubrey = e.target.value; update(); });
+showStageText();
 document.querySelectorAll("[name=sh_view]").forEach((r) => r.addEventListener("change", () => {
+  if (st.view === "stages") st.y = STAGES[st.stage - 1].year;
   if (st.view === "built" && st.y > 0) st.y = -2499;
   if (st.view === "now" && st.y <= 0) st.y = today.getUTCFullYear();
   update();

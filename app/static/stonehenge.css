@@ -46,3 +46,6 @@
 .models-circles li { break-inside: avoid; }
 .sh-wait { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); max-width: 420px; padding: 14px 18px;
   background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; text-align: center; z-index: 5; }
+.sh-stages { flex-direction: column; align-items: stretch; }
+.sh-stages input[type=range] { width: 100%; }
+.sh-stages p { margin: 0; max-height: 9em; overflow: auto; }

@@ -1,0 +1,1609 @@
+{
+ "id": "stonehenge_stages",
+ "name": "Stonehenge construction stages",
+ "record": "Q39671",
+ "date_checked": "2026-10-30",
+ "about": "Stonehenge's construction stages, for a stage slider: the earthwork enclosure and Aubrey Holes of c. 3000 BC, the timber settings, the double bluestone arc (Q and R holes), the Station Stones, entrance stones and Heel Stone, the sarsen settings of c. 2500 BC (detailed in stones.json), the bluestone rearrangements, the Avenue and the Y and Z holes of c. 1600 BC, with Darvill et al.'s five stages (2012) as the main scheme and Cleal et al.'s phases (1995, via Lawson 1997), Parker Pearson's revised dates and Wikipedia's and English Heritage's summaries as alternatives. Radii are from the centre of the circles; azimuths are degrees from true north. Quotes are exact text from the cited pages (whitespace normalised; some OCR spellings kept as they appear). 'derived' marks values computed from quoted numbers, read off a plan or measured from OpenStreetMap features against the existing model's sarsen ring centre.",
+ "reference_point": {
+  "value": "sarsen ring centre of the existing model: lat 51.1788617, lon -1.8262038 (app/static/data/stonehenge.json origin; ring centre (0, -0.02) m)",
+  "derived": true,
+  "note": "Positions here marked derived are in metres from this point."
+ },
+ "sources": {
+  "darvill2012": {
+   "title": "Darvill, T., Marshall, P., Parker Pearson, M. & Wainwright, G. 2012. Stonehenge remodelled. Antiquity 86 (334): 1021-1040",
+   "author": "Darvill, Marshall, Parker Pearson, Wainwright",
+   "url": "https://eprints.bournemouth.ac.uk/20587/1/Antiquity%202012%20%28Stonehenge%20Remodelled%29.pdf",
+   "licence_note": "Published article (Antiquity Publications Ltd) deposited in Bournemouth University's repository; short quotes only. Its stage plans (Figs 3-8) are not openly licensed."
+  },
+  "lawson1997": {
+   "title": "Lawson, A.J. 1997. The structural history of Stonehenge. Proceedings of the British Academy 92 (Science and Stonehenge): 15-37",
+   "author": "Andrew J. Lawson (summary of Cleal, Walker & Montague 1995)",
+   "url": "https://www.thebritishacademy.ac.uk/documents/3913/92p015.pdf",
+   "licence_note": "British Academy copyright, all rights reserved; short quotes only. The PDF is an OCR scan: some passages (e.g. the Aubrey Holes' own diameter and depth) are garbled and could not be quoted."
+  },
+  "willis2016": {
+   "title": "Willis, C., Marshall, P., McKinley, J., Pitts, M., Pollard, J., Richards, C., Richards, J., Thomas, J., Waldron, T., Welham, K. & Parker Pearson, M. 2016. The dead of Stonehenge. Antiquity 90: 337-356 (accepted manuscript)",
+   "author": "Willis et al.",
+   "url": "https://eprints.soton.ac.uk/392001/2/Antiquity_20dead_20of_20Stonehenge_202016.pdf",
+   "licence_note": "Accepted manuscript in the University of Southampton repository; short quotes only."
+  },
+  "pp2021": {
+   "title": "Parker Pearson, M. et al. 2021. The original Stonehenge? A dismantled stone circle in the Preseli Hills of west Wales. Antiquity 95 (379): 85-103 (post-referee version)",
+   "author": "Parker Pearson, Pollard, Richards, Welham et al.",
+   "url": "https://eprints.bournemouth.ac.uk/35169/7/The%20original%20Stonehenge_postreferee.pdf",
+   "licence_note": "Published open access (CC BY 4.0) in Antiquity; this is the post-referee version in Bournemouth University's repository."
+  },
+  "pp2022": {
+   "title": "Parker Pearson, M. et al. 2022. How Waun Mawn stone circle was designed and built, and when the Bluestones arrived at Stonehenge: a response to Darvill. Antiquity 96 (debate; accepted manuscript)",
+   "author": "Parker Pearson, Pollard, Richards, Welham et al.",
+   "url": "https://eprints.bournemouth.ac.uk/37846/3/Parker%20Pearson_et%20al.pdf",
+   "licence_note": "Accepted manuscript in Bournemouth University's repository; short quotes only."
+  },
+  "atkinson1967": {
+   "title": "Atkinson, R.J.C. 1967. What is Stonehenge? A guide for young people (HMSO; Internet Archive scan)",
+   "author": "R.J.C. Atkinson",
+   "url": "https://archive.org/download/WhatIsStonehenge/What%20is%20Stonehenge%3F_djvu.txt",
+   "licence_note": "Crown copyright guide, scanned on the Internet Archive (no licence stated); short quotes only. Uses Atkinson's superseded scheme (I, II, IIIa-c) and pre-calibration dates."
+  },
+  "lockyer1909": {
+   "title": "Lockyer, N. 1909. Stonehenge and Other British Stone Monuments Astronomically Considered (2nd ed.), Project Gutenberg #62342",
+   "author": "Norman Lockyer",
+   "url": "https://www.gutenberg.org/cache/epub/62342/pg62342.txt",
+   "licence_note": "Public domain"
+  },
+  "wp_stonehenge": {
+   "title": "Stonehenge - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Stonehenge",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_aubrey": {
+   "title": "Aubrey holes - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Aubrey_holes",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_qr": {
+   "title": "Q and R Holes - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Q_and_R_Holes",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_yz": {
+   "title": "Y and Z Holes - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Y_and_Z_Holes",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_station": {
+   "title": "Station Stones - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Station_Stones",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_heel": {
+   "title": "Heel Stone - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Heel_Stone",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_heel_ditch": {
+   "title": "Heelstone Ditch - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Heelstone_Ditch",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_avenue": {
+   "title": "Stonehenge Avenue - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Stonehenge_Avenue",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "wp_bluestonehenge": {
+   "title": "Bluestonehenge - Wikipedia",
+   "author": "Wikipedia contributors",
+   "url": "https://en.wikipedia.org/wiki/Bluestonehenge",
+   "licence_note": "CC BY-SA 4.0 text"
+  },
+  "eh_history": {
+   "title": "History of Stonehenge - English Heritage",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+   "licence_note": "English Heritage copyright; short quotes only"
+  },
+  "eh_description": {
+   "title": "Description of Stonehenge - English Heritage",
+   "author": "English Heritage",
+   "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/description/",
+   "licence_note": "English Heritage copyright; short quotes only"
+  }
+ },
+ "facts": {
+  "enclosure_overall_diameter_m": {
+   "value": 110,
+   "unit": "m",
+   "note": "Overall diameter of the earthwork (bank and ditch). English Heritage gives about 100 m for the area enclosed. Neither says to which edge; Lawson calls 110 m the diameter of the 'shallow circular depression', i.e. the ditch as seen today.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stonehenge first consisted of a circular bank and external ditch with an overall diameter of about 110m"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "visible today as the shallow circular depression some 110 m in diameter"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "measuring about 360 feet (110 m) in diameter, with a large entrance to the north east and a smaller one to the south"
+    },
+    {
+     "source": "eh_history",
+     "quote": "This enclosed an area about 100 metres in diameter, and had two entrances."
+    },
+    {
+     "source": "pp2021",
+     "quote": "Stonehenge is enclosed by a circular ditch with a diameter of 110m"
+    }
+   ]
+  },
+  "ditch_centre_line_radius_m": {
+   "value": 48.5,
+   "unit": "m",
+   "derived": true,
+   "note": "Derived: Aubrey circle radius 43.5 m (87 m diameter, Lawson) plus 'nearly 5 m' to the ditch's median line = about 48-48.5 m (centre-line diameter about 97 m). Parker Pearson et al. 2021 give 97 m as the diameter of the Aubrey Hole circle itself, which agrees with this ditch figure, not with the 87 m / 271.6 m circumference given for the Aubrey circle elsewhere (see debate).",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "describing a circle 87 m in diameter"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "nearly 5 rn within the median line of the ditch",
+     "note": "'rn' is the OCR of 'm' in the scanned PDF"
+    }
+   ]
+  },
+  "ditch_width_max_m": {
+   "value": 4.3,
+   "unit": "m",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "varying in depth between 1.2 m and 2.3 m below ground level and with a maximum width of 4.3 m"
+    }
+   ]
+  },
+  "ditch_depth_m": {
+   "value": "1.2-2.3",
+   "unit": "m",
+   "note": "below the present ground level; segments irregular in plan and form",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "varying in depth between 1.2 m and 2.3 m below ground level"
+    }
+   ]
+  },
+  "ditch_segments": {
+   "value": "28 distinguished in the south-eastern half excavated by Hawley, 3 more in the north; dug as inter-connecting segments",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "This ditch was dug as a series of inter-connecting segments, 28 of which can be distinguished in the south-eastern half of the circuit excavated by Hawley"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The ditch was continuous but had been dug in sections, like the ditches of the earlier causewayed enclosures in the area."
+    }
+   ]
+  },
+  "ditch_east_half_excavated": {
+   "value": "the eastern half is deeper today because it was dug out in the 1920s (the 'now' view should show the east half deeper)",
+   "cites": [
+    {
+     "source": "eh_description",
+     "quote": "The ditch on the eastern side is deeper because this half was excavated in the 1920s."
+    }
+   ]
+  },
+  "inner_bank_width_m": {
+   "value": "5-6",
+   "unit": "m",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "The chalk rubble derived from the ditch was mainly cast inwards so as to form a bank between 5 m and 6 m wide."
+    }
+   ]
+  },
+  "inner_bank_height_m": {
+   "value": 1.9,
+   "unit": "m",
+   "note": "Atkinson's (1979) estimate of the original height; only about 0.5 m of chalk rubble survives where sectioned. Wikipedia says the bank was purposely reduced in height in Stonehenge 2.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "it was possibly 1.9 m high when first constructed"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "normally only about 0.5 m of chalk rubble surviving"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The bank was purposely reduced in height, and the ditch continued to silt up."
+    }
+   ]
+  },
+  "counterscarp_bank": {
+   "value": "a smaller outer bank beyond the ditch, best seen in the north; largely ploughed away; no width or height found",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Outside the ditch, traces of a counterscarp bank can be seen, especially in the north."
+    },
+    {
+     "source": "eh_description",
+     "quote": "a circular ditch, with an internal bank and a smaller external bank, built about 3000 BC"
+    },
+    {
+     "source": "eh_description",
+     "quote": "but the outer bank has largely been ploughed away"
+    }
+   ]
+  },
+  "entrance_ne_width_m": {
+   "value": 13,
+   "unit": "m",
+   "note": "original width of the main (north-east) entrance",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "the widest gap, probably originally about 13 m wide exists in the north-east"
+    }
+   ]
+  },
+  "entrance_ne_azimuth_deg": {
+   "value": "about 44 in Stage 1 (derived); centred on the solstice axis (49.6) after the Stage 2 changes",
+   "derived": true,
+   "note": "No source gives the entrance's azimuth as a number. Read off Adamsan's schematic phase-one plan (CC BY-SA 3.0; north arrow, 50 m scale bar): the middle of the gap between the ditch terminals lies about 44 deg from the centre of the Aubrey circle (approximate, +/- 3 deg). Darvill et al. say the entrance was later modified to give a symmetrical gap either side of the principal axis (49.57 deg, Lockyer and Penrose, in stones.json); Parker Pearson et al. say the Stage 1 entrance was also aligned broadly on the northernmost major moonrise (compute its azimuth with bidb.sky / static/sky.js for 3000 BC).",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "which was itself perhaps modified slightly by removing some of the bank and levelling the ditch on the east side in order to provide a more symmetrical gap either side of the principal axis"
+    },
+    {
+     "source": "pp2021",
+     "quote": "Stonehenge’s entrance was additionally aligned broadly with northernmost major moonrise"
+    }
+   ]
+  },
+  "entrance_s_width_m": {
+   "value": 5,
+   "unit": "m",
+   "note": "between ditch segments 17 and 18",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "a narrower causeway, originally about 5 m wide between Segments 17 and 18 exists in the south"
+    }
+   ]
+  },
+  "entrance_s_azimuth_deg": {
+   "value": 177,
+   "derived": true,
+   "note": "Read off Adamsan's schematic plans (CC BY-SA 3.0): the gap lies about 3 m east of due south of the centre at about 52 m, i.e. azimuth about 176-177 deg (+/- 3 deg). Sources say only 'south'.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "This earthwork was entered by a main access from the north-east and a smaller entrance to the south."
+    }
+   ]
+  },
+  "entrance_third": {
+   "value": "probable third entrance about 4 m wide between ditch segments 21 and 23, later closed by a pit 0.9 m wide (segment 22); position round the circuit not found",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "a probable third, originally perhaps 4 m wide between Segments 21 and 23, later rendered void by the digging of a 0.9 m wide pit across it (designated Segment 22)"
+    }
+   ]
+  },
+  "aubrey_count": {
+   "value": 56,
+   "cites": [
+    {
+     "source": "wp_aubrey",
+     "quote": "The Aubrey holes are a ring of 56 chalk pits at Stonehenge"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Digging of 56 Aubrey holes around the inner edge of bank, possibly to hold bluestones and/or posts."
+    }
+   ]
+  },
+  "aubrey_circle_radius_m": {
+   "value": 43.2,
+   "unit": "m",
+   "derived": true,
+   "note": "Derived from the 271.6 m circumference (r = 271.6 / 2pi = 43.23 m, diameter 86.45 m); Lawson gives 87 m diameter (r 43.5). Parker Pearson et al. 2021 give 97 m for the 'inferred bluestone circle ... within the Aubrey Holes' (see debate; probably the ditch's median line). A fixed-radius fit to the seven Aubrey Holes mapped in OSM (26-32) gives rms 0.15 m at r 43.2 m.",
+   "cites": [
+    {
+     "source": "wp_aubrey",
+     "quote": "The holes are in an accurate, 271.6m circumference circle, distributed around the edge of the area enclosed by Stonehenge's earth bank, with a standard deviation in their positioning of 0.4m."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "describing a circle 87 m in diameter"
+    },
+    {
+     "source": "pp2021",
+     "quote": "is only 97m in diameter"
+    }
+   ]
+  },
+  "aubrey_spacing_m": {
+   "value": "4.5-4.8 (centre to centre); 4.85 = 271.6/56 derived",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "set between 4.5 m and 4.8 m centre to centre"
+    },
+    {
+     "source": "pp2021",
+     "quote": "with its stoneholes spaced every c. 4.5m"
+    }
+   ]
+  },
+  "aubrey_hole_size_m": {
+   "value": {
+    "diameter": 1.06,
+    "depth": 0.76
+   },
+   "note": "Averages of the excavated holes. Lawson's (OCR-garbled) figures read about 1 m diameter and 0.9 m deep. Parker Pearson et al. 2022: three exceed 1.5 m in diameter, all are less than 1.3 m deep.",
+   "cites": [
+    {
+     "source": "wp_aubrey",
+     "quote": "It was found that the pits were an average of 0.76m deep and 1.06m in diameter."
+    },
+    {
+     "source": "pp2022",
+     "quote": "Even though three Aubrey Holes are greater than 1.5m in diameter, they are all less than 1.3m in depth."
+    }
+   ]
+  },
+  "aubrey_position_vs_bank": {
+   "value": "at the inner toe (tail) of the bank, about 5 m inside the bank",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "the 56 recorded and projected Aubrey holes around the inner toe of the bank"
+    },
+    {
+     "source": "wp_aubrey",
+     "quote": "The circle they describe is around 5m inside the monument's bank."
+    }
+   ]
+  },
+  "aubrey_centre": {
+   "value": "same centre as the enclosure (Lawson); offset from the sarsen circle's centre about 2.9 m towards azimuth about 146 deg (derived, weak)",
+   "derived": true,
+   "note": "Lawson: the Aubrey circle shares the enclosure's centre; Lockyer (1909): the sarsen circle is concentric with the earthwork ('temenos mound'). Derived check: a 43.2 m circle fitted to the seven OSM Aubrey Hole markers (26-32, an arc of about 40 deg in the south-west) has its centre 1.6 m east and 2.4 m south of the sarsen ring centre (2.9 m at 146 deg; with r 42.7-43.7 m the centre moves 1.2-2.0 m E, 2.1-2.7 m S). The four Station Stones (on the Aubrey line) give a rectangle centred 3.1 m at 143 deg from the sarsen centre, which agrees. A short arc constrains the centre poorly; the offset is a pointer, not a measurement. Thom's published offset (about 1.5 megalithic yards along the axis) was seen only on forum pages and is not used.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "their symmetry which shares the same centre as the enclosure"
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "the sarsen stone circle, which itself is concentric with the temenos mound"
+    }
+   ]
+  },
+  "aubrey_numbering": {
+   "value": "1-56 clockwise, starting at the eastern side of the north-east entrance (by the Slaughter Stone). Derived: hole 1 at about 54-57 deg from the Aubrey centre, then about 6.43 deg per hole (holes 26-32 lie at about 214-253 deg in OSM)",
+   "derived": true,
+   "cites": [
+    {
+     "source": "wp_aubrey",
+     "quote": "Archaeologists number them 1 to 56 counting clockwise from the later Slaughter Stone at the eastern side of the north east entrance."
+    },
+    {
+     "source": "willis2016",
+     "quote": "Aubrey Hole 7 is in the east part of the circle of Aubrey Holes"
+    }
+   ]
+  },
+  "aubrey_excavated": {
+   "value": "about half: 25 by Hawley in 1920, 7 in 1924, 2 by Piggott and Atkinson in 1950 (35 with one possibly met by Colt Hoare; Lawson says 34); 21 unexcavated. Hawley's holes with cremations: AH2-AH18, AH20-AH21, AH23-AH24, AH28-AH29 (the south-eastern half). Excavated holes are marked by white concrete discs (now view).",
+   "cites": [
+    {
+     "source": "wp_aubrey",
+     "quote": "25 of the holes were excavated by Hawley in 1920 and seven more in 1924."
+    },
+    {
+     "source": "wp_aubrey",
+     "quote": "In 1950 Stuart Piggott and Richard Atkinson dug two more Aubrey Holes which brought the total excavated to 35"
+    },
+    {
+     "source": "wp_aubrey",
+     "quote": "21 of the holes remain unexcavated"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Thirty-four of these 'hubrey Holes' have been examined during the twentieth-century excavations.",
+     "note": "'hubrey' is the OCR of 'Aubrey'"
+    },
+    {
+     "source": "willis2016",
+     "quote": "including the fills of 23 of the 56 Aubrey Holes (AH2–AH18, AH20–AH21, AH23–AH24 and AH28–AH29)"
+    },
+    {
+     "source": "eh_description",
+     "quote": "About half of these have been excavated, and were marked in the 1920s with white concrete circles."
+    }
+   ]
+  },
+  "cremations": {
+   "value": "about 64 cremation deposits found (ditch, bank, Aubrey Holes, interior), perhaps 150 people originally; earliest from Aubrey Hole 32's packing and a burial beside Aubrey Hole 7 (3090-2900 cal BC)",
+   "cites": [
+    {
+     "source": "eh_history",
+     "quote": "About 64 cremations have been found, and perhaps as many as 150 individuals were originally buried at Stonehenge"
+    },
+    {
+     "source": "willis2016",
+     "quote": "dating to 3090– 2900 cal BC"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The cremation from the chalk packing within Aubrey hole 32 is probably earlier than the digging of the ditch"
+    }
+   ]
+  },
+  "qr_diameters_m": {
+   "value": {
+    "Q_outer": 26.2,
+    "R_inner": 22.5,
+    "pair_spacing": 1.5
+   },
+   "note": "Atkinson 1967 gives the two circles 'about 6 feet' (1.8 m) apart.",
+   "cites": [
+    {
+     "source": "wp_qr",
+     "quote": "The diameter of the outer (Q) circuit is c. 26.2 m and that of the inner (R) is, 22.5 m; with an average spacing between the paired stone settings of 1.5 m."
+    },
+    {
+     "source": "atkinson1967",
+     "quote": "arranged in two circles about 6 feet apart"
+    }
+   ]
+  },
+  "qr_sockets": {
+   "value": {
+    "length_m": 2,
+    "width_m": 1,
+    "depth_m": 0.6,
+    "form": "radial dumb-bell-shaped trenches holding a pair of stones"
+   },
+   "cites": [
+    {
+     "source": "wp_qr",
+     "quote": "These trench-like intrusions are roughly 2 m long and 1 m wide, set radially and slightly enlarged at each end to provide paired stone sockets to a depth of around 0.6 m"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "is typically c.2 m long and slightly more than 0.5 m deep"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "the bluestones were set within dumbbell-shaped sockets as radially set, paired stones"
+    }
+   ]
+  },
+  "qr_count": {
+   "value": "38 pairs if complete (Atkinson), room for 40 (modelling); an estimated 82 bluestones (Parker Pearson); 50-80 (Darvill et al. table)",
+   "cites": [
+    {
+     "source": "wp_qr",
+     "quote": "Atkinson estimated that if the Q and R Holes originally formed a complete circle that 38 pairs would have been present, although recent computer-modelling shows that there is room for 40."
+    },
+    {
+     "source": "pp2021",
+     "quote": "a double arc of stoneholes (the Q & R Holes) held an estimated 82 bluestones"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Double bluestone circle of between 50 and 80 bluestones set up outside the trilithon horseshoe with a shared SW–NE axis."
+    }
+   ]
+  },
+  "qr_extent": {
+   "value": "known as a flattened double arc of some 16 settings in the north-east half; only a single line (or nothing) found on the south and west; entrance on the north-east marked by extra stones on the inside (axis shared with the trilithons)",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "just within the north-eastem half of the circuit of the later stone circle is a flattened arc of some 16 chalk-filled features",
+     "note": "'north-eastem' as in the OCR"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "No similar array of pits was located in the south-westem half of the monument"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "On the south and west sides, only a single line of stoneholes was detected by Atkinson, leading him to suggest that the structure was perhaps never completed"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "with an entrance passage on the north-east side"
+    },
+    {
+     "source": "atkinson1967",
+     "quote": "The entrance of this double circle was marked by extra stones on the inside"
+    }
+   ]
+  },
+  "y_holes": {
+   "value": {
+    "count": 30,
+    "diameter_m": 54,
+    "hole_m": "1.7 x 1.14 (Wikipedia) or 1.7 x 1.0, 0.9 deep (Lawson)",
+    "distance_beyond_sarsens_m": 11
+   },
+   "cites": [
+    {
+     "source": "wp_yz",
+     "quote": "The diameter of the Y Hole circuit, i.e. the best-fit circle, is some 54 m, and that of the Z Hole series, around 39 m."
+    },
+    {
+     "source": "wp_yz",
+     "quote": "The outer Y ring consists of 30 holes averaging 1.7 m × 1.14 m, tapering to a flat base typically close to 1 m × 0.5 m."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "the matching ring of 30 Y Holes, each 0.9 m deep and 1.7 m by 1.0 m, lay 11 m from the stones"
+    }
+   ]
+  },
+  "z_holes": {
+   "value": {
+    "count": 29,
+    "missing": "Z8, perhaps under fallen stone 8",
+    "diameter_m": 39,
+    "hole_m": "1.75 x 1.5, 1 m deep",
+    "distance_beyond_sarsens_m": 3.7
+   },
+   "cites": [
+    {
+     "source": "wp_yz",
+     "quote": "The inner Z holes, of which only 29 are known (the missing hole Z 8 may lie beneath the fallen Sarsen stone 8), are slightly larger, on average by some 0.1 m."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "The inner circle of Z Holes, each 1 m deep and c.1.75 m by 1.5 m, lay approximately 3.7 m beyond the Sarsen Circle"
+    }
+   ]
+  },
+  "yz_layout": {
+   "value": "irregular circuits; Z circuit within a square inscribed in the Y circuit (proposed); low banks about 10 cm high between the circuits and inside the Z circuit",
+   "cites": [
+    {
+     "source": "wp_yz",
+     "quote": "two rings of concentric (though irregular) circuits of 30 and 29 near-identical pits cut around the outside of the Sarsen Circle"
+    },
+    {
+     "source": "wp_yz",
+     "quote": "a shallow bank, little more than 10 cm (4 inches) high, was identified between the two hole-circles. A further bank lies inside the Z Hole circle."
+    }
+   ]
+  }
+ },
+ "elements": [
+  {
+   "id": "mesolithic_posts",
+   "kind": "post row (outside the model area)",
+   "stage": "before the monument",
+   "date": "c. 8000 BC (7000-8000 BC)",
+   "count": "4 or 5",
+   "post_diameter_m": 0.75,
+   "where": "beneath the former car park north-west of the stones (used until 2013); three or four in an east-west line; exact positions not found",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "Archaeologists have found four, or possibly five, large Mesolithic postholes (one may have been a natural tree throw), which date to around 8000 BC, beneath the site of the tourist car park that was in use until 2013."
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "These held pine posts around two feet six inches (0.75 m) in diameter"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "Three of the posts (and possibly four) were aligned east–west"
+    }
+   ]
+  },
+  {
+   "id": "enclosure",
+   "kind": "ditch with inner bank and outer counterscarp bank",
+   "stage": 1,
+   "ditch_centre_radius_m": 48.5,
+   "ditch_width_m": "up to 4.3",
+   "ditch_depth_m": "1.2-2.3",
+   "inner_bank_width_m": "5-6",
+   "inner_bank_height_m": "c. 1.9 when built (0.5 survives)",
+   "outer_diameter_m": 110,
+   "segments": "inter-connecting segments",
+   "entrances": [
+    {
+     "name": "north-east",
+     "width_m": 13,
+     "azimuth_deg": "c. 44 (derived), widened to sit symmetrically on the 49.6 axis in Stage 2"
+    },
+    {
+     "name": "south",
+     "width_m": 5,
+     "azimuth_deg": "c. 177 (derived)",
+     "between_segments": "17 and 18"
+    },
+    {
+     "name": "third (probable)",
+     "width_m": 4,
+     "between_segments": "21 and 23",
+     "closed_by": "pit 0.9 m wide (segment 22)"
+    }
+   ],
+   "later": "ditch re-cut in Stage 3 (Darvill et al.), perhaps supplying the counterscarp bank; ditch silting continuously",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Three intentional breaks, or entrances, into the enclosure can be noted"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The ditch of the earthwork enclosure was wholly or partly re-cut during Stage 3, perhaps providing the spoil for the counterscarp bank on the outside perimeter, as well as enhancing the main internal bank."
+    }
+   ]
+  },
+  {
+   "id": "aubrey_holes",
+   "kind": "ring of 56 pits (stones or posts)",
+   "stage": 1,
+   "count": 56,
+   "radius_m": 43.2,
+   "spacing_m": 4.85,
+   "hole_diameter_m": 1.06,
+   "hole_depth_m": 0.76,
+   "centre": "the enclosure's centre (see facts.aubrey_centre for the offset from the sarsen centre)",
+   "numbering": "clockwise from the east side of the NE entrance; hole 1 at about 54-57 deg (derived)",
+   "contents": "bluestones (Parker Pearson, Darvill et al. 2012 'possibly') or timber posts (Cleal et al. 1995, later Darvill); cremations in the upper fills",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Re-excavation in 2008 of Aubrey hole 7 suggested that this hole may have held a standing stone (Pitts 2008a), supporting Hawley’s original proposal"
+    },
+    {
+     "source": "wp_aubrey",
+     "quote": "In August 2008, further excavation of Aubrey Hole 7 by Mike Parker Pearson, Mike Pitts and Julian Richards led the archaeologists to suggest that the 56 holes had held Welsh bluestones, since they are too shallow to be postholes."
+    },
+    {
+     "source": "eh_history",
+     "quote": "the consensus for many years has been that they held upright timber posts, but recently the idea has re-emerged that some of them may have held stones"
+    }
+   ]
+  },
+  {
+   "id": "ne_entrance_posts",
+   "kind": "timber post array in the NE entrance causeway",
+   "stage": "1 (Darvill et al.) / Phase 2 (Cleal et al.)",
+   "count": "55 postholes (Lawson; 'more than 50', Darvill et al.)",
+   "rows": "at least six transverse and nine radial rows, a diagonal row of larger posts",
+   "post_diameter_m": "0.20-0.63",
+   "post_depth_m": "0.10-0.66",
+   "spacing_m": "1-1.5",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "It is possible to discern several elements to the array of 55 post-holes at the entrance, namely, at least six transverse rows, at least nine radial rows and a diagonal row of slightly larger posts."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "The smallest post-hole was 20 cm in diameter and only 10 cm deep while the largest was 63 cm in diameter and 66 cm deep."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "the majority were spaced roughly 1-1.5 m apart"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "A sixth structure in the north-eastern entrance comprises a rectangular arrangement of more than 50 posts"
+    }
+   ]
+  },
+  {
+   "id": "a_posts",
+   "kind": "line of four posts across the axis outside the entrance",
+   "stage": "1 / Phase 2",
+   "count": 4,
+   "interval_m": 2,
+   "post_diameter_m": "0.58-0.71",
+   "depth_m": "0.46-0.83",
+   "distance": "16 m beyond the outermost row of entrance posts (Lawson) or some 20 m further out (Darvill et al.)",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Some 16 m beyond the outermost row of entrance posts stood another line of posts, four of which were excavated in 1923."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "These were set at 2 m intervals and varied in diameter from 58 cm to 71 cm and in depth from 46 cm to 83 cm."
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Parallel to the axis of this structure, some 20m further out to the north-east, is a line of four postholes at intervals of 2m."
+    }
+   ]
+  },
+  {
+   "id": "southern_passage",
+   "kind": "timber passage and facade from the south entrance towards the centre",
+   "stage": "1 / Phase 2",
+   "count": "more than 80 postholes; a further 113 in the interior (no clear pattern)",
+   "post_diameter_m": "about 0.4",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Between the narrower, southern, entrance and the centre of the enclosure Hawley recorded more than 80 post-holes"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "A further 113 post-holes have been recorded within the interior area"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The southernmost group forms a passageway leading from the south entrance through the earthwork enclosure"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The postholes are smaller than the Aubrey Holes, being only around 16 inches (0.4 m) in diameter"
+    }
+   ]
+  },
+  {
+   "id": "stonehole_97",
+   "kind": "stonehole (stone removed or moved to become the Heel Stone)",
+   "stage": "1 (Darvill et al.) / 3a (Cleal et al.)",
+   "size_m": {
+    "across": 1.75,
+    "depth": 1.0
+   },
+   "position": "2 m north(-west) of the Heel Stone; OSM marker 'Stone Hole 97' at r 79.9 m, azimuth 48.3 deg (derived)",
+   "derived_method": "derived: centroids of OpenStreetMap features (bidb.stonehenge_sources.osm_features / osm_stones, ODbL) in local metres from the sarsen ring centre of the existing model (app/static/data/stonehenge.json, ring fitted to the registered Johnson plan, rms 1.16 m); azimuths from true north. OSM markers are mapped by volunteers and their accuracy is not stated: treat as +/- 1-2 m.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "a large stone-hole (97) 1.75 m across and 1 m deep, excavated by Pitts in 1979 is the earliest in the sequence"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "The sarsen Heel Stone stands 2 m to the south"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Stone 96 (the Heel stone) was set up 2m south-east of stonehole 97."
+    }
+   ]
+  },
+  {
+   "id": "stoneholes_B_C",
+   "kind": "stoneholes outside the NE entrance",
+   "stage": "1 (removed in Stage 2)",
+   "position": "between the Heel Stone and the entrance; exact positions not found",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "The stones in sockets B and C (see Stage 1) were removed and perhaps reused."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "In the general area between the Heel Stone and the entrance are a number of features including a further possible stone-hole (B)."
+    }
+   ]
+  },
+  {
+   "id": "station_stones",
+   "kind": "four sarsens at the corners of a rectangle on the Aubrey line",
+   "stage": "2 (Darvill et al.) / 3a (Cleal et al.)",
+   "stones": {
+    "91": "standing (now fallen), r 45.3 m, az 116.6 deg",
+    "92": "lost, in the South Barrow, r 47.3 m, az 159.6 deg",
+    "93": "standing, r 42.5 m, az 296.4 deg",
+    "94": "lost, in the North Barrow, r 37.7 m, az 342.4 deg"
+   },
+   "rectangle_derived": {
+    "short_sides_m": "91-92 34.0, 93-94 31.7",
+    "long_sides_m": "92-93 83.5, 94-91 76.5",
+    "long_side_azimuth_deg": "about 137-139 / 317-319",
+    "centre": "3.1 m from the sarsen centre at 143 deg"
+   },
+   "derived_method": "derived: centroids of OpenStreetMap features (bidb.stonehenge_sources.osm_features / osm_stones, ODbL) in local metres from the sarsen ring centre of the existing model (app/static/data/stonehenge.json, ring fitted to the registered Johnson plan, rms 1.16 m); azimuths from true north. OSM markers are mapped by volunteers and their accuracy is not stated: treat as +/- 1-2 m. Stones 92 and 94 are OSM markers for lost stones; the rectangle is only approximate.",
+   "note": "Lockyer (1909): the line 91-93 runs about 26 deg S of E / N of W (azimuth about 116/296) and its middle lies about 4 ft south-east of the axis.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Other components that can tentatively be attributed to Stage 2 include the four Station stones, of which only two now survive (stones 91 and 93), positioned just inside the enclosure bank to form a rectangle with astronomical sightlines"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Four more sarsen stones known as the Station Stones formerly stood within the enclosure just within the bank and roughly on the line of the earlier Aubrey Holes."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "They form an approximate rectangle whose long side is at right angles to a line between the centre of the enclosure and the entrance."
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "The amplitude of the line joining them is approximately 26° S. of E. and 26° N. of W."
+    },
+    {
+     "source": "lockyer1909",
+     "quote": "The centre of the line joining the stones is therefore about 4 feet to the S.E. of the axis of the present circles"
+    },
+    {
+     "source": "wp_station",
+     "quote": "Originally there were four stones, resembling the four corners of a rectangle that straddles the inner sarsen circle"
+    }
+   ]
+  },
+  {
+   "id": "north_barrow",
+   "kind": "ring ditch round Station Stone 94 (no burial)",
+   "stage": "2-3 (after the bank and Aubrey Holes; possibly earlier, Darvill et al.)",
+   "ditch": {
+    "diameter_m": "10-12",
+    "width_m": 1.1,
+    "depth_m": 0.9,
+    "bank": "external"
+   },
+   "position": "OSM centroid r 37.2 m, az 348 deg (derived)",
+   "derived_method": "derived: centroids of OpenStreetMap features (bidb.stonehenge_sources.osm_features / osm_stones, ODbL) in local metres from the sarsen ring centre of the existing model (app/static/data/stonehenge.json, ring fitted to the registered Johnson plan, rms 1.16 m); azimuths from true north. OSM markers are mapped by volunteers and their accuracy is not stated: treat as +/- 1-2 m.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Stone 94 by a ditch probably about 10-12 m in diameter, c.l.1 m wide and 0.9 m deep with an external bank",
+     "note": "'c.l.1' is the OCR of 'c.1.1'"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Stone 94 forming the north-west corner of the rectangle was placed within the existing north barrow."
+    },
+    {
+     "source": "wp_station",
+     "quote": "The mounds are called the North and South barrows although they never contained burials."
+    }
+   ]
+  },
+  {
+   "id": "south_barrow",
+   "kind": "low mound with shallow ditch round Station Stone 92",
+   "stage": "late 2",
+   "ditch": {
+    "diameter_m": 11,
+    "width_m": 0.5,
+    "depth_m": 0.4,
+    "profile": "irregular V; spoil thrown inwards"
+   },
+   "position": "OSM centroid r 45.3 m, az 160 deg (derived); sealed Aubrey Holes 17 and 18 under a chalk floor",
+   "derived_method": "derived: centroids of OpenStreetMap features (bidb.stonehenge_sources.osm_features / osm_stones, ODbL) in local metres from the sarsen ring centre of the existing model (app/static/data/stonehenge.json, ring fitted to the registered Johnson plan, rms 1.16 m); azimuths from true north. OSM markers are mapped by volunteers and their accuracy is not stated: treat as +/- 1-2 m.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "the former Stone 92, by an irregular V-shaped ditch c.11 m in diameter, 0.5 m wide and 0.4 m deep, the quarried material probably having been thrown inwards"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "By the later part of Stage 2, stone 92 lay within what is called the south barrow: a low mound surrounded by a shallow ditch tight against the inside edge of the enclosure earthwork."
+    }
+   ]
+  },
+  {
+   "id": "entrance_stones_D_E_95",
+   "kind": "facade of three stones inside the NE entrance",
+   "stage": "2 (D and E removed in Stage 3, leaving the Slaughter Stone 95)",
+   "position": "Slaughter Stone (95) now lies fallen at r about 44.8 m, az 51.8 deg (OSM, derived); D and E beside it",
+   "derived_method": "derived: centroids of OpenStreetMap features (bidb.stonehenge_sources.osm_features / osm_stones, ODbL) in local metres from the sarsen ring centre of the existing model (app/static/data/stonehenge.json, ring fitted to the registered Johnson plan, rms 1.16 m); azimuths from true north. OSM markers are mapped by volunteers and their accuracy is not stated: treat as +/- 1-2 m.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stones D, E and 95 (the Slaughter stone) were set up to provide a short"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "with the removal of the stones within sockets D and E to leave only stones 95 (Slaughter stone) and 96 (Heel stone) standing"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "the recumbent sarsen Slaughter Stone lies adjacent to two large stone-holes (D and E)"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Two antler picks dated from stonehole E (OxA-4837 and OxA-4877) provide an estimate for its erection of 2470–2275 cal BC"
+    }
+   ]
+  },
+  {
+   "id": "heel_stone_and_ditch",
+   "kind": "Heel Stone (96) with its encircling ditch",
+   "stage": "stone 2 (or 1 as stone 97); ditch late 2 / early 3",
+   "distance_from_centre_m": 77.4,
+   "ditch": {
+    "diameter_m": "c. 10 (9.7)",
+    "width_m": 1.1,
+    "depth_m": 1.2,
+    "from_stone_base_m": 3.7
+   },
+   "position": "OSM r 78.3 m, az 50.9 deg (derived)",
+   "derived_method": "derived: centroids of OpenStreetMap features (bidb.stonehenge_sources.osm_features / osm_stones, ODbL) in local metres from the sarsen ring centre of the existing model (app/static/data/stonehenge.json, ring fitted to the registered Johnson plan, rms 1.16 m); azimuths from true north. OSM markers are mapped by volunteers and their accuracy is not stated: treat as +/- 1-2 m.",
+   "cites": [
+    {
+     "source": "wp_heel",
+     "quote": "It is 77.4 metres (254 ft) from the centre of Stonehenge circle."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Outside the entrance the Heel Stone was surrounded by a roughly circular ditch 10 m in diameter, about 1.1 m wide and 1.2 m deep."
+    },
+    {
+     "source": "wp_heel_ditch",
+     "quote": "approximately 4 ft (1.2m) deep and 3.5 ft (1.1m) wide"
+    },
+    {
+     "source": "wp_heel_ditch",
+     "quote": "with a diameter of roughly 32 ft (9.7m)"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "the Heel stone’s encircling ditch was dug late in Stage 2 or perhaps early in Stage 3"
+    }
+   ]
+  },
+  {
+   "id": "qr_double_arc",
+   "kind": "double bluestone arc / circle (Q and R holes)",
+   "stage": "2 (Darvill et al.) / 3i (Cleal et al.)",
+   "Q_radius_m": 13.1,
+   "R_radius_m": 11.25,
+   "radii_derived": "half the quoted diameters 26.2 and 22.5 m",
+   "pairs_if_complete": "38-40",
+   "angular_step_deg": "9 (40 settings)",
+   "extent": "north-east half known as a double arc; south and west a single line or nothing",
+   "entrance": "north-east, on the solstice axis, with extra stones inside",
+   "removed": "dismantled in Stage 3-4; stones reused in the bluestone circle and oval",
+   "cites": [
+    {
+     "source": "wp_qr",
+     "quote": "The analysis of the spacing between the Q and R array, and that of the modified (inset) portal group (Fig.3) imply a shift from an angular splay of 9 degrees (i.e. 40 settings) to 12 degrees"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Outside the trilithon horseshoe, the double bluestone circle was created, marked by the Q and R holes."
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Inside the sarsen circle, the double bluestone circle was dismantled."
+    }
+   ]
+  },
+  {
+   "id": "central_bluestone_circle",
+   "kind": "small bluestone circle inside the trilithon horseshoe (perhaps the Bluestonehenge stones)",
+   "stage": 3,
+   "known": "an arc of five stoneholes (WA3285, 3286, 3700, 3702, 3402) west of the centre",
+   "diameter_m": "about 10 if it repeats Bluestonehenge (derived: Darvill et al. say it has the radius and spacing of a circle moved from Bluestonehenge; Wikipedia gives Bluestonehenge's circle as 10 m across with as many as 27 stones)",
+   "derived": true,
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "The positioning of an arc of five stoneholes (WA3285, 3286, 3700, 3702 and 3402) imply a central bluestone circle"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "which has the appropriate radius and spacing for a circle transplanted from Bluestonehenge beside the Avon"
+    },
+    {
+     "source": "wp_bluestonehenge",
+     "quote": "It is estimated that there may have been as many as 27 stones in a circle 33 feet (10 m) in diameter."
+    }
+   ]
+  },
+  {
+   "id": "pit_WA2448",
+   "kind": "large pit against the west side of stone 56",
+   "stage": 3,
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "This arc was cut by a very large pit of unknown purpose immediately west of stone 56 (pit WA2448; Parker Pearson et al. 2007: 618–26), which also partly cuts the line of the double bluestone circle."
+    }
+   ]
+  },
+  {
+   "id": "avenue",
+   "kind": "pair of banks with outer ditches to the River Avon",
+   "stage": "3 (Darvill et al.) / 3c (Cleal et al.)",
+   "ditch_spacing_at_stonehenge_m": 21.5,
+   "ditch_spacing_at_avon_m": 34.5,
+   "corridor_between_banks_m": 12,
+   "straight_length_m": 530,
+   "azimuth_deg": "49.57 (Lockyer and Penrose, stones.json)",
+   "total_length_km": "2.8 (Lawson; Darvill et al. table) / c. 2.5 (Darvill et al. text) / nearly 3 (Wikipedia)",
+   "banks": "low banks on the inner edges of the ditches; sizes not found",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "At its junction with the earlier enclosure, the external ditches are 21.5 m from centre to centre with low banks on their internal edges"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "by the time the Avenue reaches the river Avon, some 2.8 km distant, it is 34.5 m across"
+    },
+    {
+     "source": "eh_description",
+     "quote": "Today it can be seen in part as low parallel banks enclosing a corridor about 12 metres wide."
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The first 530m of the Avenue leading out of Stonehenge is straight and follows the line of the principal axis north-eastwards"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "led from immediately outside the north-eastern entrance to Stonehenge to the River Avon at West Amesbury c. 2.5km distant"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Modelling of the available dates suggests the Avenue ditch was initially constructed in 2430–2200 cal BC"
+    },
+    {
+     "source": "wp_avenue",
+     "quote": "it measures nearly 3 kilometres, and connects Stonehenge with the River Avon"
+    }
+   ]
+  },
+  {
+   "id": "bluestone_circle_and_oval",
+   "kind": "outer bluestone circle and inner oval (later horseshoe)",
+   "stage": 4,
+   "counts": "circle 40-60 close-set pillars (originally perhaps over 70); oval about 23-25 stones; four NE stones removed to leave the horseshoe (Stage 4 or later)",
+   "geometry": "see stones.json (as completed)",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "A second setting, the outer bluestone circle, comprising between 40 and 60 fairly close-set pillars was constructed in the gap between the trilithon horseshoe and the sarsen circle"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Within the trilithon horseshoe, the central bluestone circle was dismantled and about 24 bluestones were arranged in an oval setting."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Originally, there may have been more than 70 ‘bluestones’ in the circle."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Subsequently (Sub-Phase 3v), at least four of these ‘bluestones’ were removed so that a horseshoe matching the Trilithon setting was created."
+    }
+   ]
+  },
+  {
+   "id": "y_z_holes",
+   "kind": "two rings of pits round the sarsen circle (left open; perhaps for bluestones never set)",
+   "stage": 5,
+   "Y": {
+    "count": 30,
+    "radius_m": 27,
+    "excavated": "19 (Lawson) / 18 (Wikipedia)"
+   },
+   "Z": {
+    "count": "29 known (30 with Z8)",
+    "radius_m": 19.5,
+    "excavated": "17 (Lawson) / 16 (Wikipedia)"
+   },
+   "radii_derived": "half the quoted best-fit diameters 54 and 39 m; Lawson's distances (Z 3.7 m and Y 11 m beyond the sarsen circle, outer face about 16 m) give about 19.7 and 27 m",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Seventeen Z Holes and 19 Y Holes have been excavated, at least two of the former being shown to cut stone-holes of the Sarsen Circle."
+    },
+    {
+     "source": "wp_yz",
+     "quote": "18 of the Y Holes have been excavated, and 16 of the Z Holes."
+    },
+    {
+     "source": "wp_yz",
+     "quote": "hole Z 7 was found to cut into the backfill of the construction ramp for stone 7 of the Sarsen Circle"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "It seems they were left open and became filled with windblown sediments"
+    }
+   ]
+  },
+  {
+   "id": "palisade",
+   "kind": "palisade trench (outside the model area)",
+   "stage": "uncertain (perhaps Late Neolithic)",
+   "position": "about 75 m north-west of the enclosure, running from Stonehenge Down in the south-west to near the Cursus",
+   "post_diameter_m": 0.4,
+   "trench": {
+    "depth_m": 1.4,
+    "width_m": 2
+   },
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "some 75 m north-west of the enclosure earthwork"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "The palisade appears to have been constructed of contiguous timber posts c.0.4 m in diameter set in a V-shaped trench c.1.4 m deep and 2 m wide at the surface of the chalk."
+    }
+   ]
+  },
+  {
+   "id": "low_mound",
+   "kind": "low mound found by survey (perhaps a spoil heap)",
+   "stage": "1 or earlier (uncertain)",
+   "size_m": "16 x 14, c. 0.4 high",
+   "position": "not given",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "These are a low mound, measuring about 16 × 14m and c. 0.4m high (although this may be a spoil heap), and the so-called north barrow"
+    }
+   ]
+  }
+ ],
+ "phases": [
+  {
+   "scheme": "Darvill et al. 2012 (stages; Bayesian model, 95% probability)",
+   "name": "Stage 1",
+   "date": "3100-2920 cal BC to 2965-2755 cal BC (suggested 3000-2620 cal BC)",
+   "what": "enclosure ditch and bank with NE and S entrances; 56 Aubrey Holes (bluestones and/or posts); cremations; timber structures in the centre, the NE entrance and the southern passage; stones 97, B and C perhaps",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stage 1 (3100–2920 cal BC to 2965–2755 cal BC; Middle–Late Neolithic)"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The initial construction of the Stonehenge ditch is estimated to have been completed in 2990–2755 cal BC"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The stone that stood in stonehole 97 outside the north-east entrance, together with the stones that occupied stoneholes B and C, all presumably sarsens, may also tentatively be assigned to Stage 1."
+    }
+   ]
+  },
+  {
+   "scheme": "Darvill et al. 2012",
+   "name": "Stage 2",
+   "date": "2760-2510 cal BC to 2470-2300 cal BC (suggested 2620-2480 cal BC)",
+   "what": "trilithon horseshoe, double bluestone circle (Q and R holes), sarsen circle (two scenarios: years to centuries apart, or in quick succession), Altar Stone, Station Stones, south barrow, stones D, E and 95, Heel Stone (paired with 97 or moved from 97), NE entrance made symmetrical",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stage 2 (2760–2510 cal BC to 2470–2300 cal BC; Late Neolithic)"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "In the first (Figure 4), the trilithon horseshoe is initially surrounded by the double bluestone circle and then years, decades, or centuries, later the sarsen circle is added."
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Alternatively (Figure 5), the trilithon horseshoe, the double bluestone circle and the sarsen circle might have been erected in relatively rapid succession."
+    }
+   ]
+  },
+  {
+   "scheme": "Darvill et al. 2012",
+   "name": "Stage 3",
+   "date": "2405-2225 cal BC to 2300-2100 cal BC (suggested 2480-2280 cal BC)",
+   "what": "central bluestone circle (from Bluestonehenge?); D and E removed; ditch re-cut and counterscarp bank; Avenue; large pit WA2448; Beaker burial in the ditch",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stage 3 (2405–2225 cal BC to 2300–2100 cal BC; Chalcolithic)"
+    }
+   ]
+  },
+  {
+   "scheme": "Darvill et al. 2012",
+   "name": "Stage 4",
+   "date": "2210-2030 cal BC to 2160-1925 cal BC (suggested 2280-2020 cal BC)",
+   "what": "double and central bluestone circles dismantled; bluestone oval (later horseshoe) and outer bluestone circle built",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stage 4 (2210–2030 cal BC to 2160–1925 cal BC; Early Bronze Age)"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Dates derived from antler (OxA-4900) and animal bone (OxA-4878) from the fill of the socket for stone 40c provide an estimate for its completion of 2275–2030 cal BC"
+    }
+   ]
+  },
+  {
+   "scheme": "Darvill et al. 2012",
+   "name": "Stage 5",
+   "date": "2010-1745 cal BC to 1620-1450 cal BC (suggested 2020-1520 cal BC); Y and Z holes 1630-1520 cal BC",
+   "what": "axe and dagger carvings; bluestones broken up; Y and Z holes dug and left open",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Stage 5 (2010–1745 cal BC to 1620–1450 cal BC; Early–Middle Bronze Age)"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Construction of the Y and Z holes in the period 1630–1520 cal BC."
+    },
+    {
+     "source": "darvill2012",
+     "quote": "3000–2620 cal BC 2620–2480 cal BC 2480–2280 cal BC 2280–2020 cal BC 2020–1520 cal BC",
+     "note": "the 'suggested dates' column of Darvill et al.'s Table 3, Stages 1-5 in order"
+    }
+   ]
+  },
+  {
+   "scheme": "Parker Pearson et al. 2020 (revised model, cited 2021-2022)",
+   "name": "Stage 1 and start of Stage 2 (revised)",
+   "date": "Stage 1 starting 3080-2950 cal BC, ending 2865-2755 cal BC; ditch 2995-2900 cal BC; Aubrey Hole 32 burial 3080-2890 cal BC; Stage 2 beginning 2740-2505 cal BC",
+   "cites": [
+    {
+     "source": "pp2022",
+     "quote": "The ring of Aubrey Holes at Stonehenge belongs to Stage 1 of its construction, starting 3080– 2950 cal BC and ending 2865–2755 cal BC at 95% probability"
+    },
+    {
+     "source": "pp2022",
+     "quote": "both for the enclosing ditch (2995–2900 cal BC) and for Aubrey Hole 32 (3080–2890 cal BC"
+    },
+    {
+     "source": "pp2021",
+     "quote": "During Stonehenge’s Stage 2 (beginning in 2740–2505 cal BC)"
+    }
+   ]
+  },
+  {
+   "scheme": "Cleal, Walker & Montague 1995 (via Lawson 1997 and Darvill et al. Table 2)",
+   "name": "Phase 1",
+   "date": "c. 3000 BC (2950-2900 cal BC)",
+   "what": "enclosure ditch and banks; Aubrey Holes holding timber posts",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "The digging of the ditch is now unequivocally dated by radiocarbon dates to about 3000 BC"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Bank and ditch construction; Aubrey holes supporting timber settings; primary backfill in the ditch"
+    }
+   ]
+  },
+  {
+   "scheme": "Cleal et al. 1995",
+   "name": "Phase 2",
+   "date": "2900-2400 BC",
+   "what": "posts removed from the Aubrey Holes; ditch partly backfilled; cremation cemetery; timber settings at the NE entrance, the southern passage and the centre",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "These dates suggest placing Phase 2 between 2900 and 2400 BC"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "As noted above, the posts set into the Aubrey Holes had been removed"
+    }
+   ]
+  },
+  {
+   "scheme": "Cleal et al. 1995",
+   "name": "Phase 3 (3i-3vi interior, 3a-3c periphery)",
+   "date": "2550-1600 cal BC; sarsen circle 2850-2480, trilithons 2440-2100, bluestone circle 2280-2030, bluestone horseshoe 2270-1930, Z holes 2030-1750, Y holes 1640-1520 cal BC",
+   "what": "3i Q and R holes; 3a stone 97, Heel Stone, Station Stones, D, E and Slaughter Stone; 3ii sarsen circle and trilithons; 3b Heel Stone ditch and barrows; 3iii bluestone trilithons?; 3iv bluestone circle and oval; 3v horseshoe; 3c Avenue; 3vi Y and Z holes",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "2950–2900 cal BC 2900–2400 cal BC 2550–1600 cal BC",
+     "note": "the 'suggested date ranges' row of Darvill et al.'s Table 2 (Cleal et al. 1995), Phases 1-3"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Z Holes (3vi) 2030-1750 cal BC Y Holes (3vi) 1640-1520 cal BC"
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Stratigraphically, the Q-R Holes are earlier than the ‘bluestone’ and sarsen circles currently standing."
+    }
+   ]
+  },
+  {
+   "scheme": "Wikipedia (Cleal-style phases)",
+   "name": "Stonehenge 1 to Y/Z holes",
+   "date": "1: c. 3100 BC; 2: 2900-2600 BC; 3 I: c. 2600 BC (Q and R); 3 II: 2600-2400 BC (sarsens); 3 III: 2400-2280 BC; 3 IV: 2280-1930 BC; 3 V: 1930-1600 BC; Y and Z c. 1600 BC",
+   "cites": [
+    {
+     "source": "wp_stonehenge",
+     "quote": "This first stage is dated to around 3100 BC"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The second phase of construction occurred approximately between 2900 and 2600 BC."
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "around 2600 BC, the builders abandoned timber in favour of stone and dug two concentric arrays of holes (the Q and R Holes) in the centre of the site"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "This ambitious phase has been radiocarbon dated to between 2600 and 2400 BC"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "Stonehenge 3 III (2400 BC to 2280 BC)"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "Stonehenge 3 IV (2280 BC to 1930 BC)"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "Stonehenge 3 V (1930 BC to 1600 BC)"
+    },
+    {
+     "source": "wp_stonehenge",
+     "quote": "The Y and Z Holes are the last known construction at Stonehenge, built about 1600 BC"
+    }
+   ]
+  },
+  {
+   "scheme": "English Heritage (history page)",
+   "name": "summary",
+   "date": "enclosure about 3000 BC; stones about 2500 BC; bluestones rearranged 200-300 years later with the Avenue; Y and Z holes 1800-1500 BC",
+   "cites": [
+    {
+     "source": "eh_history",
+     "quote": "In about 2500 BC the stones were set up in the centre of the monument."
+    },
+    {
+     "source": "eh_history",
+     "quote": "the bluestones were set up between them in a double arc"
+    },
+    {
+     "source": "eh_history",
+     "quote": "About 200 or 300 years later the central bluestones were rearranged to form a circle and inner oval"
+    },
+    {
+     "source": "eh_history",
+     "quote": "radiocarbon dated by antlers within them to between 1800 and 1500 BC"
+    }
+   ]
+  }
+ ],
+ "debate": [
+  {
+   "claim": "What stood in the Aubrey Holes: Welsh bluestones from Stage 1 (Hawley 1921; Parker Pearson and colleagues after re-excavating Aubrey Hole 7 in 2008: too shallow for posts) or timber posts (Cleal et al. 1995; Lawson 1997; Darvill's later view). Darvill et al. 2012 leave both open. For the model: offer 'stones' and 'posts' for Stage 1 (or show empty holes).",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "favnurs the interpretation that they originally held stout timber p t s which were suhwquently deliberately removed",
+     "note": "OCR text: 'favours ... posts which were subsequently'"
+    },
+    {
+     "source": "wp_aubrey",
+     "quote": "the authors are inclined to support the view that the Aubrey Holes held posts, which were removed, rather than burnt in situ or left to decay"
+    },
+    {
+     "source": "pp2022",
+     "quote": "Contesting Darvill’s argument that the Aubrey Holes at Stonehenge originally held posts, the authors reassert their interpretation of this circle of cut features as Bluestone settings."
+    },
+    {
+     "source": "pp2022",
+     "quote": "it is unlikely that the Aubrey Holes held anything other than stone"
+    },
+    {
+     "source": "willis2016",
+     "quote": "He also records one cremation-related deposit that was placed in its Aubrey Hole (24) after the standing stone had been withdrawn"
+    },
+    {
+     "source": "pp2021",
+     "quote": "Our excavations at Stonehenge provided evidence that the bluestones were first set up in the Aubrey Holes"
+    }
+   ]
+  },
+  {
+   "claim": "Where the Q and R holes fall: Cleal et al. (and Atkinson) put the double bluestone arc first, before the sarsens (Phase 3i), on stratigraphy such as Q hole 4 cut by stone 3's socket; Darvill et al. 2012 dispute those relationships and put it in Stage 2 after (or with) the trilithon horseshoe. The 2008 dates suggested 2400-2300 BC.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "in particular Atkinson’s assertion (1979: 61) that the fill of Q"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "hole 4 was cut by the socket for stone 3 in the sarsen circle"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "The earliest stone structure in the centre of the site comprised the five sarsen trilithons"
+    },
+    {
+     "source": "wp_qr",
+     "quote": "the dates suggested from the 2008 excavation imply the Q & R arrays were perhaps no earlier than 2400 BC"
+    }
+   ]
+  },
+  {
+   "claim": "Was the Q and R setting ever a complete double circle? Atkinson: never completed; Darvill: south and west sockets eroded away; Parker Pearson: only a single circuit there.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "It is possible that some of the Q and R holes on these sides were eroded away by later activities (Darvill’s preference)."
+    },
+    {
+     "source": "darvill2012",
+     "quote": "Alternatively, there was never more than a single circuit in this area (Parker Pearson’s preference)."
+    },
+    {
+     "source": "atkinson1967",
+     "quote": "Rather more than half of the stones were certainly put up."
+    }
+   ]
+  },
+  {
+   "claim": "The Heel Stone and stonehole 97: either two stones standing as a pair across the axis (Darvill), or the stone from 97 moved 2 m to become the Heel Stone (Parker Pearson).",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "One interpretation (Darvill’s preference) is that these two stones formed a pair of monoliths straddling the principal axis"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "An alternative interpretation (Parker Pearson’s preference) is that the Heel stone is the monolith originally standing in stonehole 97, later being transferred to its present location"
+    }
+   ]
+  },
+  {
+   "claim": "The counterscarp (outer) bank: a primary feature of c. 3000 BC (English Heritage; Lawson 'probably an early, if not primary feature') or spoil from the Stage 3 re-cut of the ditch (Darvill et al.).",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "it is probably an early, if not primary feature of the enclosure"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "perhaps providing the spoil for the counterscarp bank on the outside perimeter"
+    }
+   ]
+  },
+  {
+   "claim": "Diameter of the Aubrey circle: 87 m (Lawson) / 271.6 m circumference = 86.5 m (Wikipedia) against 97 m (Parker Pearson et al. 2021), which matches the ditch's median line, not the holes.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "describing a circle 87 m in diameter"
+    },
+    {
+     "source": "pp2021",
+     "quote": "By comparison the inferred bluestone circle of monoliths that stood within the Aubrey Holes – Stonehenge Stage 1 – is only 97m in diameter."
+    }
+   ]
+  },
+  {
+   "claim": "Where the Station Stones fall: Stage 2 with the sarsens (Darvill et al.) or Phase 3 (Wikipedia; Cleal et al.'s 3a in Lawson); no finds date them.",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "No finds have been recovered to help attribute the Station Stones to a precise position in the monument’s sequence."
+    },
+    {
+     "source": "wp_station",
+     "quote": "Their installation at the monument dates to sometime in Stonehenge phase 3, perhaps around 4,000 years ago."
+    }
+   ]
+  },
+  {
+   "claim": "Dates of the Y and Z holes: 1630-1520 cal BC for both (Darvill et al.); Z 2030-1750 and Y 1640-1520 cal BC (Lawson, from Bayliss et al. 1997); 1800-1500 BC (English Heritage). Wikipedia: both contemporary.",
+   "cites": [
+    {
+     "source": "darvill2012",
+     "quote": "Construction of the Y and Z holes in the period 1630–1520 cal BC."
+    },
+    {
+     "source": "lawson1997",
+     "quote": "Z Holes (3vi) 2030-1750 cal BC"
+    },
+    {
+     "source": "wp_yz",
+     "quote": "The current view is that both circuits are contemporary."
+    }
+   ]
+  },
+  {
+   "claim": "Distance of the four 'A' posts beyond the entrance posts: 16 m (Lawson) or some 20 m (Darvill et al.); length of the Avenue: 2.8 km or c. 2.5 km (both in Darvill et al.) or nearly 3 km (Wikipedia).",
+   "cites": [
+    {
+     "source": "lawson1997",
+     "quote": "Some 16 m beyond the outermost row of entrance posts stood another line of posts"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "some 20m further out to the north-east, is a line of four postholes at intervals of 2m"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "beside the River Avon 2.8km away"
+    },
+    {
+     "source": "darvill2012",
+     "quote": "to the River Avon at West Amesbury c. 2.5km distant"
+    }
+   ]
+  },
+  {
+   "claim": "Older scheme (Atkinson 1956/1967, superseded): Stonehenge I with two stones in the entrance and the Heel Stone; II the double bluestone circle; IIIa sarsens; the Y and Z holes dug in IIIb to take the bluestones before the plan changed. Useful only as history.",
+   "cites": [
+    {
+     "source": "atkinson1967",
+     "quote": "In this entrance there were probably two stones side by side"
+    },
+    {
+     "source": "atkinson1967",
+     "quote": "They got as far as digging the holes for them (the Y and Z Holes)"
+    }
+   ]
+  }
+ ],
+ "plans": [
+  {
+   "title": "Stonehenge plan (Adamsan, the site as of 2004)",
+   "url": "https://commons.wikimedia.org/wiki/File:Stonehenge_plan.jpg",
+   "licence": "CC BY-SA 3.0",
+   "what it shows": "schematic plan with north arrow and 50 m scale bar: ditch, inner and outer bank, NE and S entrances, North and South barrows, Station Stones, Heel Stone with ditch, Slaughter Stone, Avenue, Aubrey Holes (white dots), Y and Z holes (open rings), the stones. Schematic: good for entrances and ring radii (checked: Aubrey about 85.5 m, Y about 53 m, Z about 40 m across), not for single holes."
+  },
+  {
+   "title": "Stonehenge phase one (Adamsan)",
+   "url": "https://commons.wikimedia.org/wiki/File:Stonehenge_phase_one.jpg",
+   "licence": "CC BY-SA 3.0",
+   "what it shows": "same base: Stage 1 earthwork with its two entrances (NE gap centred about 44 deg) and the Aubrey Holes, no later features"
+  },
+  {
+   "title": "Stonehenge Q&R (Anthony Johnson, 2009)",
+   "url": "https://commons.wikimedia.org/wiki/File:Stonehenge_Q%26R.tif",
+   "licence": "CC BY-SA 4.0",
+   "what it shows": "the relationship of the Q and R Holes to the later stone monument (the known double arc in the NE half); not opened here (Commons thumbnailer failed), check the scale before tracing"
+  },
+  {
+   "title": "Stonehenge plan - with numbers in red (Adamsan)",
+   "url": "https://commons.wikimedia.org/wiki/File:Stonehenge_plan_-_with_numbers_in_red.png",
+   "licence": "CC BY-SA 3.0",
+   "what it shows": "the same 2004 plan with the key numbers in red"
+  },
+  {
+   "title": "OpenStreetMap features round the stones",
+   "url": "https://www.openstreetmap.org/#map=19/51.17886/-1.82620",
+   "licence": "ODbL",
+   "what it shows": "Aubrey Hole markers 26-32 only, North and South Barrow, Heelstone Ditch, The Avenue, Station Stones 91-94, Stone Hole 97 (read by bidb.stonehenge_sources.osm_features / osm_stones); used for the derived positions here"
+  }
+ ],
+ "gaps": [
+  "Cleal, Walker & Montague 1995 (Stonehenge in its Landscape) is not online (not on archive.org; Historic England's copy is behind Cloudflare); its plans 1-2 and Figs 68, 81-82 hold the surveyed positions of every Aubrey, Q/R and Y/Z hole and the A posts. Lawson 1997 (its summary) is used instead.",
+  "Petrie 1880 is not on archive.org (searched once; nothing found). Atkinson's Stonehenge (1956, 1979) is on archive.org only as a borrow-only (access-restricted) scan; only his 1967 guide is readable.",
+  "No source gives the azimuths of the NE and S entrances or the third entrance's position: NE about 44 deg and S about 177 deg are read off Adamsan's schematic plan (derived). Hawley's segment numbering (which would place segments 17-18 and 21-23) was not found.",
+  "The offset between the Aubrey/enclosure centre and the sarsen circle's centre is not stated in any reachable source; Lawson and Lockyer say they share a centre. The derived 2.9 m (OSM markers of seven holes) is weak; Thom's figure was found only on forum pages.",
+  "Positions of single Aubrey Holes beyond 26-32, of Q/R settings, of stoneholes B, C, D, E and of the A posts are not in any reachable open source; only the counts, radii and spacings are.",
+  "Counterscarp bank width and height, Avenue bank and ditch widths and depths, and Y/Z hole positions one by one were not found.",
+  "Lawson's figures for the Aubrey Holes' own size (about 1 m across, 0.9 m deep) are garbled by OCR in the British Academy PDF and are not quoted; Wikipedia's averages (1.06 m, 0.76 m) are used.",
+  "Hawley's reports (Antiquaries Journal 1921-1928) are on Cambridge Core as first pages only; the transcription site found by search (twentytrees.co.uk) answers HTTP 410.",
+  "Parker Pearson et al. 2009 ('Who was buried at Stonehenge?', Antiquity 83) and 2020 (Stonehenge for the Ancestors part 1) were not opened; their revised dates are quoted as cited in Parker Pearson et al. 2021-2022.",
+  "Darvill et al.'s stage plans (Figs 3-8) and Marshall et al. 2012 (English Heritage Research Report 1/2012) are not openly licensed; the Historic England research report site was not tried (it refuses scripts)."
+ ]
+}

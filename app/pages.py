@@ -131,7 +131,8 @@ def sky():
 def stonehenge():
     return render_template("stonehenge.html", page="models",
                            m={"name": "Stonehenge", "record": "Q39671", "built_label": "As built (c. 2500 BC)",
-                              "axis_label": "Solstice axis", "ghosts": "Mark lost stones (as built)"})
+                              "axis_label": "Solstice axis", "ghosts": "Mark lost stones (as built)",
+                              "stages": "By stage (3000-1520 BC)"})
 
 
 @bp.route("/models")

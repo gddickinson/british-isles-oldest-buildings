@@ -1,5 +1,6 @@
 """The 3D model of Stonehenge (page /stonehenge): writes `app/static/data/stonehenge.json` and the ground grid
-`app/static/data/stonehenge_dtm.bin` (`python -m bidb.stonehenge`).
+`app/static/data/stonehenge_dtm.bin` (`python -m bidb.stonehenge`; `--quotes` checks the
+stages' quotes into data/models_check.json).
 
 Inputs: the stones as they survive digitised from Anthony Johnson's numbered plan
 (`data/curated/stonehenge/plan_stones.json`, made by prepare_plan.py there), placed on the ground by fitting it to
@@ -14,6 +15,7 @@ import struct
 
 from . import models3d, osgrid, sky_horizon
 from . import stonehenge_layout as L
+from . import stonehenge_stages
 from . import stonehenge_sources as S
 from .config import ROOT
 
@@ -64,6 +66,21 @@ def terrain(lat, lon):
     return grid, meta
 
 
+def grid_height(grid, dtm):
+    """Bilinear height in the written grid at model metres x, y (None outside), as stonehenge_scene.js reads it."""
+    n, step = dtm["n"], dtm["step"]
+
+    def h(x, y):
+        fj, fi = (x - dtm["x0"]) / step, (dtm["y0"] - y) / step
+        if fi < 0 or fj < 0 or fi >= n - 1 or fj >= n - 1:
+            return None
+        i, j = int(fi), int(fj)
+        a, b = fi - i, fj - j
+        return (grid[i][j] * (1 - a) * (1 - b) + grid[i][j + 1] * (1 - a) * b + grid[i + 1][j] * a * (1 - b)
+                + grid[i + 1][j + 1] * a * b)
+    return h
+
+
 def write():
     stones, outliers, (lat, lon), fit = placed()
     research = json.load(open(os.path.join(HERE, "stones.json")))
@@ -86,6 +103,8 @@ def write():
                    "pairs": fit["pairs"], "rms_m": round(fit["rms"], 2)}},
         "axis": L.AXIS, "ring": ring, "now": now, "built": built, "stones": info, "dtm": dtm, "horizon": hz,
         "stars": stars, "debate": research.get("missing_debate", []),
+        "stages": stonehenge_stages.stages(ring, {"origin": (lat, lon), "features": S.osm_features()},
+                                           grid_height(grid, dtm)),
         "credits": [
             "Stone plan: Anthony Johnson, Plan of the central Stone Structure at Stonehenge (2007), Wikimedia Commons "
             "File:Stone_Plan.jpg (CC BY 3.0); coloured by Nightdevil (2018), File:Stone_Plan_Coloured.jpg (CC BY-SA 4.0)",
@@ -103,6 +122,9 @@ def report(data):
     print(f"origin {o['lat']}, {o['lon']}; plan fitted to {o['fit']['pairs']} OSM stones (shift only; a free fit "
           f"would rotate it {o['fit']['free_rotation_deg']}°), rms {o['fit']['rms_m']} m; ring centre {data['ring']['centre']} r {data['ring']['radius']} m,"
           f" {data['ring']['step']}° per upright")
+    st = data["stages"]
+    print(f"ditch fitted in the LiDAR: {st['ditch_fit']}; Aubrey Holes: {st['aubrey_fit']}; "
+          + ", ".join(f"stage {s['id']} {len(s['extra'])} pieces" for s in st["stages"]))
     by = {}
     for s in data["built"]:
         by[s["status"]] = by.get(s["status"], 0) + 1
@@ -111,4 +133,14 @@ def report(data):
 
 
 if __name__ == "__main__":
-    report(write())
+    import sys
+    if "--quotes" in sys.argv:                  # the stages' quotes, with the other models' in data/models_check.json
+        from .evidence import check
+        from .models3d import CHECK
+        prev = json.loads(CHECK.read_text()) if CHECK.exists() else {}
+        out = check(claims=stonehenge_stages.claims(), path=CHECK)
+        CHECK.write_text(json.dumps({**prev, **out}, indent=1) + "\n")
+        res = [x for v in out.values() for x in v["sources"]]
+        print(f"stages: {res.count('quote-found')} of {len(res)} quotes found; problems: {stonehenge_stages.problems()}")
+    else:
+        report(write())

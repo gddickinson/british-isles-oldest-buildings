@@ -104,10 +104,21 @@ Sky and alignments (first)
       sources; EA 1 m LiDAR ground, land to the real skyline; sun, moon (phase, ΔT) and 2,887 stars for any date back
       to the Neolithic, shadows from either; events and standing views. Midsummer sunrise 2500 BC 49.2°, midwinter
       sunset 230.2° (sky.json: 49.2°, 230.0°).
-- [ ] SH2 Stonehenge in 3D, next: the earlier stages (Stage 1 enclosure with the Aubrey Holes, the bluestones'
-      earlier settings, Q and R holes) on a stage slider with their dates; planets; the Avenue's banks and the
-      barrows named; per-stone heights for the fallen and lost uprights where published (Cleal et al. 1995, the
-      2012 laser-scan report, not reachable online); the hosted copy (about 1.3 MB more).
+- [x] SH2a (2026-10-30) Stonehenge by stage: "By stage (3000-1520 BC)" on /stonehenge, a slider of Darvill et
+      al.'s (2012) five stages, each under the sky of a year within it (`data/curated/stonehenge/stages.json`: 30
+      facts, 21 elements, five dating schemes, 10 debates, 202 quotes all found; bidb.stonehenge_stages,
+      static/stonehenge_stages.js). Stage 1: fresh chalk ditch and bank (1.9 m), NE and S entrances, 56 Aubrey Holes
+      holding bluestones, posts or nothing (chosen: both views argued); 2: sarsens, Q and R double arc in the NE half;
+      3: the Avenue's banks and ditches, a central bluestone circle (size a guess); 4: as completed; 5: the Y and Z
+      holes, open. The ditch fitted in today's LiDAR: 107.7 m across its middle, centre 1.3 m south of the sarsen
+      ring's (the research's derived 48.5 m radius fell on the bank crest, 48.3 m in the LiDAR, so not used); the
+      Aubrey circle (43.2 m) round the same centre meets the seven holes marked on OSM within 0.67 m rms, hole 1 at
+      51.5°. Entrance azimuths only from a schematic plan (44° then the 49.6° axis; 177°).
+- [ ] SH2b Stonehenge in 3D, next: planets; the barrows (Station Stone enclosures) and the Heel Stone ditch drawn
+      in their stages; the NE entrance posts and A posts, stoneholes B, C, D, E (no positions online: Cleal et al.
+      1995); Anthony Johnson's "Stonehenge Q&R" plan (CC BY-SA 4.0) to place the Q and R settings; the probable third
+      entrance; per-stone heights for the fallen and lost uprights (Cleal et al. 1995, the 2012 laser-scan report,
+      not reachable online); the hosted copy (about 1.4 MB more).
 
 3D models (planned 2026-10-29, George: "go ahead with your recommendation, then work through all of the candidates";
 a page listing every model, and a link on each structure's own page)

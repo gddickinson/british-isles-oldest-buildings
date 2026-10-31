@@ -6,7 +6,15 @@
   <fieldset class="sh-row sh-views">
     <label><input type="radio" name="sh_view" value="now" checked> As it is now</label>
     <label><input type="radio" name="sh_view" value="built"> {{ m.built_label }}</label>
+    {% if m.stages %}<label><input type="radio" name="sh_view" value="stages"> {{ m.stages }}</label>{% endif %}
   </fieldset>
+  {% if m.stages %}
+  <div class="sh-row sh-stages" id="sh_stagebox" hidden>
+    <input id="sh_stage" type="range" min="1" max="5" step="1" value="1" aria-label="Stage">
+    <select id="sh_aubrey" aria-label="The Aubrey Holes held"></select>
+    <p id="sh_stage_text" class="meta"></p>
+  </div>
+  {% endif %}
   {% endif %}
   <div class="sh-row sh-date">
     <input id="sh_d" type="number" min="1" max="31" aria-label="Day">

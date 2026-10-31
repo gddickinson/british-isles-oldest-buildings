@@ -2876,3 +2876,22 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Semantic Scholar, OpenAlex): not quoted.
 - Tests 549 OK (`test_square_outlines`); ui_check sky passes. Hosted copy not updated.
   Next: SK7b3 (needs Ruggles 1999, not online) or SH2 (Stonehenge stages).
+
+## 2026-10-30 — Stonehenge by stage (SH2a)
+- SK7b3 still needs Ruggles 1999 (not online), so SH2 was taken next and split: SH2a (the stages) done, SH2b open.
+- Research (one subagent): `data/curated/stonehenge/stages.json`, Darvill et al. 2012 (Bournemouth repository),
+  Lawson 1997 (summary of Cleal et al. 1995), Parker Pearson et al. 2021-22, Willis et al. 2016, Atkinson 1967,
+  Wikipedia, English Heritage: 30 facts, 21 elements, five dating schemes, 10 debates (Aubrey Holes stones or posts,
+  Q and R before or after the sarsens and complete or not, Heel Stone and 97, counterscarp date, Aubrey diameter 87 vs
+  97 m), 202 quotes, all found (`python -m bidb.stonehenge --quotes` → data/models_check.json).
+- `bidb/stonehenge_stages.py`: the ditch fitted in today's LiDAR (72 azimuths: 107.7 m across its middle, centre
+  1.3 m south of the sarsen ring's; bank crest 48.3 m), the 56 Aubrey Holes on a 43.2 m circle round that centre
+  (Lawson: the same centre) turned onto OSM's seven marked holes 26-32 (0.67 m rms, hole 1 at 51.5°), five stages
+  with years, texts, quotes, earthworks and pieces. `stonehenge_sources.osm_features` (Aubrey markers, barrows,
+  Heelstone Ditch, Avenue).
+- Page /stonehenge: "By stage (3000-1520 BC)" with a stage slider and "Aubrey Holes: bluestones / timber posts /
+  empty holes"; `static/stonehenge_stages.js` draws the bank and ditch (and the Avenue's) as fine strips over the
+  LiDAR ground, which `reshape` lowers beneath them (and restores for the other views); open pits, posts, the
+  Q and R arcs, the central circle. `?view=stages&stage=&aubrey=`. Checked in Chrome (WebGL) at every stage and back.
+- Tests 552 OK (`test_stonehenge_stages`: ditch fit, Aubrey numbering, stages); ui_check stonehenge, models pass;
+  ui_prefs JS checks pass. Hosted copy not updated. Next: SH2b (planets, barrows and entrance posts) or SH3i.

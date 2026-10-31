@@ -1,6 +1,8 @@
 """Downloads for the Stonehenge model (bidb.stonehenge), each cached once in `<cache>/stonehenge/`:
 
     osm_stones()        OpenStreetMap stones and stone markers within 120 m (ODbL): [{ref, name, kind, outline}]
+    osm_features()      OpenStreetMap features for the earlier stages within 250 m (Aubrey Hole markers, the North
+                        and South Barrows, the Heelstone Ditch, the Avenue): [{name, ref, osm, outline}]
     lidar(e, n, size)   Environment Agency LiDAR composite DTM 1 m (OGL), a size × size m square centred on
                         British National Grid e, n → (rows of heights north to south, metres)
     bright_stars(mag)   Yale Bright Star Catalogue, 5th revised edition (Hoffleit and Warren 1991; HEASARC copy):
@@ -57,6 +59,15 @@ def osm_stones():
                     "kind": "marker" if t.get("historic") == "memorial" else "stone",
                     "outline": [(p["lat"], p["lon"]) for p in geom]})
     return out
+
+
+def osm_features():
+    query = (f"[out:json][timeout:60];nwr(around:250,{CENTRE[0]},{CENTRE[1]})"
+             f"[name~\"^(Aubrey Hole|North Barrow|South Barrow|Heelstone Ditch|The Avenue)$\"];out tags geom;")
+    res = request_json(OVERPASS, data={"data": query}, method="POST", min_interval=2)
+    return [{"name": e["tags"]["name"], "ref": e["tags"].get("ref"), "osm": f"{e['type']}/{e['id']}",
+             "outline": [(p["lat"], p["lon"]) for p in (e.get("geometry") or [{"lat": e["lat"], "lon": e["lon"]}])]}
+            for e in res["elements"] if e.get("geometry") or "lat" in e]
 
 
 def read_tiff(data):

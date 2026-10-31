@@ -187,9 +187,22 @@ export function createScene(canvas, data, dtmRaw) {
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(50, 1, 0.2, 30000);
-  const height = heightField(data.dtm, dtmRaw);
+  const height0 = heightField(data.dtm, dtmRaw);
+  let dz = null;                                         // a stage's change to today's ground (reshape)
+  const height = (x, y) => { const h = height0(x, y); return h == null || !dz ? h : h + dz(x, y); };
   const rad = (data.dtm.n - 2) * data.dtm.step / 2;
-  scene.add(ground(data.dtm, height, rad), land(data.horizon, height, rad - 1));
+  const earth = ground(data.dtm, height0, rad);
+  const base = Float32Array.from(earth.geometry.attributes.position.array);
+  scene.add(earth, land(data.horizon, height0, rad - 1));
+  // Ground as it was at a stage: the mesh moved by fn(x, y) metres, things placed on today's heights plus
+  // surface(x, y) (default fn; null: as today).
+  function reshape(fn, surface = fn) {
+    dz = surface;
+    const a = earth.geometry.attributes.position;
+    for (let i = 0; i < a.count; i++) a.setY(i, base[3 * i + 1] + (fn ? fn(a.getX(i), -a.getZ(i)) : 0));
+    a.needsUpdate = true;
+    earth.geometry.computeVertexNormals();
+  }
 
   const sky = new Sky();
   sky.scale.setScalar(20000);
@@ -272,5 +285,5 @@ export function createScene(canvas, data, dtmRaw) {
     camera.updateProjectionMatrix();
     starPts.material.uniforms.scale.value = renderer.getPixelRatio() * Math.max(0.8, h / 900);
   }
-  return { renderer, scene, camera, height, setSky, resize, starPts, hemi };
+  return { renderer, scene, camera, height, height0, reshape, setSky, resize, starPts, hemi };
 }

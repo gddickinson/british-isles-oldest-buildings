@@ -41,7 +41,7 @@
     .then((parts) => parts.flatMap((p) => Object.entries(p).map(([id, o]) => ({ id, ...o })))));
 
   // Tours: data/tours.json; suggestions score the catalogue rows as bidb/tour_plan.interest does
-  let TOURS = null, VISITS = null, STOPS = null, OLDNAMES = null, DOMESDAY = null, DIGS = null, TREE = null;
+  let TOURS = null, VISITS = null, STOPS = null, OLDNAMES = null, DOMESDAY = null, DIGS = null;
   const tours = () => (TOURS = TOURS || fetch("data/tours.json").then((r) => r.json()).catch(() => []));
   let TRADES = null, FESTIVALS = null;
   const festivalsData = () => (FESTIVALS = FESTIVALS || fetch("data/festivals.json").then((r) => r.json()).catch(() => ({ index: [], pages: {} })));
@@ -247,10 +247,9 @@
     async festivals() { return (await festivalsData()).index; },
     async festival(p, f, id) { return (await festivalsData()).pages[id]; },
     async quiz_pool() { return fetch("data/quiz.json").then((r) => r.json()); },
-    async dendro(p, f, id) {
-      TREE = TREE || fetch("data/dendro.json").then((r) => r.json()).catch(() => ({}));
-      return ((await TREE)[id] || []).map(([location, date_text, method, reference]) => ({ record_id: id, location, date_text, method, reference }));
-    },
+    // tree-ring entries stay in the local app (bidb.config.LOCAL_ONLY_TABLES: the VAG's terms do not allow passing
+    // them on), so the hosted copy has none to ask for
+    async dendro() { return []; },
     async excavations(p, f, id) {
       DIGS = DIGS || fetch("data/excavations.json").then((r) => r.json()).catch(() => ({}));
       return ((await DIGS)[id] || []).map(([what, years, who]) => ({ entity_id: id, what, years, who }));

@@ -2923,3 +2923,9 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   client. To do with FANTOM plugged in: `python -m bidb.image_credits`, then a new database release and a new site
   release (`app.static_export --full-pages`) + Pages deploy; the old releases db-2026-10-24 and site-2026-10-27-4
   still hold the tree-ring table and Roy tiles until they are deleted.
+- Later the same day (FANTOM back): the hashed keys find all 475 items' entries; `bidb.image_credits` credited
+  48,014 of 48,025 Commons files in 34 min (30,839 CC BY-SA 2.0, 7,584 CC BY-SA 4.0, ...). Site built
+  (`app.static_export --full-pages`, 270 MB): no `dendro.json`, no Roy pack, credits in the detail files; the
+  hosted `dendro` route no longer asks for the file (`static_api.js`). `ui_review --static` pages and historic:
+  all pass; captions checked in Chrome ("Photo: User:JeremyA · CC BY-SA 2.5, Wikimedia Commons"). Publishing the
+  database and site releases waits for George's approval (the permission check stopped `bidb.bundle release`).

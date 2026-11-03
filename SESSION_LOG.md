@@ -2929,3 +2929,9 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   hosted `dendro` route no longer asks for the file (`static_api.js`). `ui_review --static` pages and historic:
   all pass; captions checked in Chrome ("Photo: User:JeremyA · CC BY-SA 2.5, Wikimedia Commons"). Publishing the
   database and site releases waits for George's approval (the permission check stopped `bidb.bundle release`).
+- Published with George's go-ahead: database release `db-2026-11-03` (Latest, 109 MB, SHA-256 checked; no `dendro`
+  table, `image_credits` 48,014 rows; release notes carry `bundle.LICENCE_NOTE`) and site release
+  `site-2026-11-03` (96 MB, SHA-256 checked), deployed by the Pages workflow (run 41692821137, success). Live site:
+  `data/dendro.json` and the Roy pack 404, other packs and pages 200, Help lists Open Domesday. Deleting the old
+  releases db-2026-10-24 and site-2026-10-27-4 (they still hold the tree-ring table and Roy tiles) was stopped by the
+  permission check: left to George. The claude.ai hosted copy is not updated.

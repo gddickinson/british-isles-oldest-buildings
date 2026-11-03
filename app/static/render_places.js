@@ -113,7 +113,7 @@ function placeDetailHTML(p) {
   ].filter(Boolean).join("");
   return `<div class="detail">
     ${p.image_thumb ? `<figure><img src="${esc(p.image_thumb.replace(/width=\d+/, "width=1000"))}" alt="${esc(p.name)}">
-      ${p.image_page ? `<figcaption>${p.image_note ? esc(p.image_note) + ". " : ""}<a href="${esc(p.image_page)}" target="_blank" rel="noopener">Image: Wikimedia Commons, see file page for author and licence</a></figcaption>` : ""}</figure>` : ""}
+      ${photoCaption(p)}</figure>` : ""}
     <div class="detail-text">
       <h2>${esc(p.name)}</h2>
       <div class="pron" data-pron="${esc(p.id)}" data-pron-title="${esc(p.name)}"></div>
@@ -127,7 +127,7 @@ function placeDetailHTML(p) {
         ${coordsField(p.lat, p.lon)}</dl>
       ${p.building_id ? `<p>Kept in: <a href="${buildingUrl(p.building_id)}" data-open="${esc(p.building_id)}">${esc(p.locality || "the building")}</a></p>` : ""}
       ${keptHereHTML(ex.kept_here)}
-      ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}` : ""}
+      ${p.wikipedia_extract ? `<h4>About</h4>${p.wikipedia_extract.split(/\n+/).map((t) => `<p>${esc(t)}</p>`).join("")}${wikiNotice(p.wikipedia_title)}` : ""}
       <div class="stories-box" data-stories="${esc(p.id)}"></div>
       <div class="types-box" data-types-here="${esc(p.id)}"></div>
       <div class="trade-box" data-trade-here="${esc(p.id)}"></div>

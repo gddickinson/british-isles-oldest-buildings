@@ -110,7 +110,7 @@ const Stories = (() => {
     const yr = (y) => (y < 0 ? `${-y} BC` : y);
     el.innerHTML = `<details class="timeline" ${rows.length <= 6 ? "open" : ""}><summary><h4>Timeline (${rows.length})</h4></summary>
       <ol>${rows.map((r) => `<li><span class="tl-year">${yr(r.year)}</span><span class="tl-kind">${TL_ICON[r.label] || "•"} ${esc(r.label)}</span>
-        <p>${esc(r.text)}</p></li>`).join("")}</ol><p class="hint">Dated sentences from the Wikipedia article.</p></details>`;
+        <p>${esc(r.text)}</p></li>`).join("")}</ol><p class="hint">Dated sentences from the Wikipedia article (CC BY-SA 4.0).</p></details>`;
   }
 
   const scan = (root) => {

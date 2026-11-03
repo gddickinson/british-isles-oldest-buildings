@@ -72,6 +72,13 @@ def require_locations():
 CACHE_DIR = cache_dir()
 DB_PATH = db_path()
 
+# Tables kept in the local database only: their source's terms do not allow passing the data on, so the bundled
+# database (setup.package) and the hosted copy (app.static_export) leave them out. Each with its reason.
+LOCAL_ONLY_TABLES = {
+    "dendro": "VAG Dendrochronology Database (ADS terms: non-commercial research and teaching, not to be supplied "
+              "to others without permission; asked for, not yet given)",
+}
+
 # Buildings whose earliest recorded construction date is before this year are included.
 CUTOFF_YEAR = 1500
 

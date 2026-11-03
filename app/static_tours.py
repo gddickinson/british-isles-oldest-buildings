@@ -3,6 +3,7 @@
 import json
 
 from bidb import stories_db
+from bidb.config import LOCAL_ONLY_TABLES
 from bidb.tour_elevation import decode, encode
 
 from .geo_simplify import douglas_peucker
@@ -85,7 +86,7 @@ def export(conn, out_dir):
     (out_dir / "glossary.json").write_text(json.dumps(glossary(), ensure_ascii=False, separators=(",", ":")))
     from bidb.trade_stories import export as trades
     (out_dir / "trades.json").write_text(json.dumps(trades(conn), ensure_ascii=False, separators=(",", ":")))
-    if conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'dendro'").fetchone():
+    if "dendro" not in LOCAL_ONLY_TABLES and conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'dendro'").fetchone():
         tree = {}                                    # {record id: [[location, date text, method, reference], …]}
         for rid, loc, text, method, ref in conn.execute(
                 "SELECT record_id, location, date_text, method, reference FROM dendro ORDER BY felled_from"):

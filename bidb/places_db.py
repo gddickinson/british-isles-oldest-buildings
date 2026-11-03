@@ -130,6 +130,8 @@ def get(conn, pid):
     p = dict(row)
     p["extra"] = json.loads(p["extra"]) if p.get("extra") else {}
     p["people"] = people_for(conn, pid)
+    from .image_credits import credit
+    p["image_credit"] = credit(conn, p.get("image_page"))
     return p
 
 

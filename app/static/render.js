@@ -127,10 +127,24 @@ function sourcesHTML(b) {
   </details>`;
 }
 
+// Caption of a Commons photo: author and licence (bidb.image_credits) with a link to the file page, which
+// holds the full credit; shared by building and place detail views
+function photoCaption(x) {
+  if (!x.image_page) return "";
+  const who = x.image_credit ? `Photo: ${esc(x.image_credit)}, Wikimedia Commons` : "Photo: Wikimedia Commons, see the file page for author and licence";
+  return `<figcaption>${x.image_note ? esc(x.image_note) + ". " : ""}<a href="${esc(x.image_page)}" target="_blank" rel="noopener">${who}</a></figcaption>`;
+}
+
+// Licence notice under text taken from a Wikipedia article (CC BY-SA 4.0 asks for credit and the licence)
+function wikiNotice(title, what = "Text from the Wikipedia article") {
+  const url = title ? `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, "_"))}` : "https://en.wikipedia.org";
+  return `<p class="hint">${what} <a href="${esc(url)}" target="_blank" rel="noopener">${title ? esc(title) : "Wikipedia"}</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> (authors in the article's history).</p>`;
+}
+
 function renderDetail(b, inModal) {
   const img = b.image_thumb
     ? `<figure><img src="${esc(b.image_thumb.replace(/width=\d+/, "width=1200"))}" alt="${esc(b.name)}">
-        ${b.image_page ? `<figcaption>${b.image_note ? esc(b.image_note) + ". " : ""}<a href="${esc(b.image_page)}" target="_blank" rel="noopener">Image: Wikimedia Commons — see file page for author &amp; licence</a></figcaption>` : ""}</figure>`
+        ${photoCaption(b)}</figure>`
     : "";
   const address = [b.street_address, b.locality, b.postcode && `nearest postcode ${b.postcode}`]
     .filter(Boolean).join(", ");
@@ -188,10 +202,10 @@ function renderDetail(b, inModal) {
       <div id="detail-edit"></div>
       ${b.user_notes ? `<h4>Your notes</h4><p>${esc(b.user_notes)}</p>` : ""}
       ${b.type_claim ? `<h4>"Oldest of its type" claim</h4><p>${esc(b.type_claim)}</p>` : ""}
-      ${b.curated_notes ? `<h4>From Wikipedia's list of oldest buildings</h4><p>${esc(b.curated_notes)}</p>` : ""}
+      ${b.curated_notes ? `<h4>From Wikipedia's list of oldest buildings</h4><p>${esc(b.curated_notes)}</p>${wikiNotice(null, "From")}` : ""}
       ${b.register_notes ? `<h4>From the official register</h4><p>${esc(b.register_notes)}</p>
         ${b.register_source ? `<p class="hint">${esc(b.register_source)}</p>` : ""}` : ""}
-      ${b.wikipedia_extract ? `<h4>About</h4>${b.wikipedia_extract.split(/\n+/).map((p) => `<p>${esc(p)}</p>`).join("")}` : ""}
+      ${b.wikipedia_extract ? `<h4>About</h4>${b.wikipedia_extract.split(/\n+/).map((p) => `<p>${esc(p)}</p>`).join("")}${wikiNotice(b.wikipedia_title)}` : ""}
       <div class="stories-box" data-stories="${esc(b.id)}"></div>
       <div class="timeline-box" data-timeline="${esc(b.id)}"></div>
       <div class="types-box" data-types-here="${esc(b.id)}"></div>

@@ -3,12 +3,27 @@
 The **source code** of this project is under the MIT License (see `LICENSE`). The **data** it
 gathers, in the bundled database release, the offline map layers in `app/static/data/` and the
 figures in `docs/img/`, comes from the sources below and stays under their licences. If you reuse
-the data, keep these credits, and note the two share-alike licences:
+the data, keep these credits, and note the share-alike and non-commercial licences:
 
 - Text taken from **Wikipedia** is under **CC BY-SA 4.0**. Anything you make from it must credit
   Wikipedia and be shared under the same licence.
-- Map data derived from **OpenStreetMap** is under the **Open Database Licence (ODbL) 1.0**. A
-  database you make from it must also be offered under the ODbL.
+- Map data derived from **OpenStreetMap** (and the CRU TS climate grids) is under the **Open Database
+  Licence (ODbL) 1.0**. A database you make from it must also be offered under the ODbL.
+- **Open Domesday**'s entries are **CC BY-NC-SA**: non-commercial use only, shared alike. So are the
+  David Rumsey maps bundled into the hosted copy.
+- The researched files in `data/curated/` are CC BY 4.0 except `stonehenge/plan_stones.json`
+  (digitised from a CC BY-SA 4.0 plan, so CC BY-SA 4.0). Quotations in them remain their authors'
+  and publishers' work, quoted for citation; passages from Wikipedia stay CC BY-SA.
+
+Each source keeps its own licence inside the bundled database (a collection of separate tables);
+the release notes repeat this summary.
+
+**Left out of the bundled database and the hosted copy** (`LOCAL_ONLY_TABLES` in `bidb/config.py`):
+the Vernacular Architecture Group's tree-ring entries (table `dendro`), whose ADS terms allow
+non-commercial research use but not passing the data on without permission (asked for later). A
+local build still makes the table, and each record dated by tree-ring keeps its one cited felling date.
+The Roy Military Survey (© British Library) is shown live from the NLS and not copied into the
+hosted copy.
 
 Nothing here is legal advice; follow each source's own terms.
 
@@ -19,7 +34,7 @@ Nothing here is legal advice; follow each source's own terms.
 | [Wikidata](https://www.wikidata.org) | buildings, places, people, dates, links, pronunciations (IPA), on-this-day events | CC0 1.0 | none required (appreciated) |
 | [Wikipedia](https://en.wikipedia.org) (English) | introductions, the "oldest buildings" lists, stories, timelines, dates found in articles, pronunciations in article openings | CC BY-SA 4.0 | each record links to its article |
 | [Wiktionary](https://en.wiktionary.org) | town pronunciations | CC BY-SA 4.0 | linked from each entry |
-| [Wikimedia Commons](https://commons.wikimedia.org) | photos, floor plans, sound recordings (linked, not copied; Lingua Libre recordings among them) | each file's own licence (mostly CC BY / CC BY-SA) | author and licence on each file page, linked from the app |
+| [Wikimedia Commons](https://commons.wikimedia.org) | photos, floor plans, sound recordings (linked; the hosted copy embeds about 850 small thumbnails; Lingua Libre recordings among them) | each file's own licence (mostly CC BY / CC BY-SA) | author and licence under each photo (table `image_credits`, from the Commons API), with a link to the file page |
 | Historic England, National Heritage List for England | listed buildings and scheduled monuments | Open Government Licence v3.0 | © Historic England 2026. Contains Ordnance Survey data © Crown copyright and database right 2026 |
 | Historic Environment Scotland | designations and register descriptions | Open Government Licence v3.0 | Contains Historic Environment Scotland and Ordnance Survey data © Historic Environment Scotland © Crown copyright and database right 2026 |
 | Cadw (Welsh Historic Environment Service) | designated historic assets and descriptions | Open Government Licence v3.0 | Designated Historic Asset GIS Data, Cadw, 2026 |
@@ -33,10 +48,10 @@ Nothing here is legal advice; follow each source's own terms.
 | National Monuments Service (Ireland), Sites and Monuments Record; National Inventory of Architectural Heritage | monuments and buildings in the Republic of Ireland | CC BY 4.0 | © National Monuments Service / NIAH, Department of Housing, Local Government and Heritage |
 | [Open Plaques](https://openplaques.org) | commemorative plaques | public domain (CC0) | |
 | [Mapping Museums](https://www.mappingmuseums.org) (Birkbeck, University of London), [Mapping Museums Data, September 2021](https://doi.org/10.18743/DATA.00171) | UK museums open 1960–2021: subject, governance, accreditation, size, opening and closing years | CC BY 4.0 | Data downloaded from the Mapping Museums website at www.mappingmuseums.org, accessed on 21 October 2026 |
-| [Open Domesday](https://opendomesday.org) (Anna Powell-Smith; data from J.J.N. Palmer, University of Hull) | churches, priests, households and Phillimore references of Domesday settlements | CC BY-SA 4.0 | Open Domesday, opendomesday.org |
-| Vernacular Architecture Group, [Dendrochronology Database](https://doi.org/10.5284/1132568) (Archaeology Data Service) | tree-ring and radiocarbon dates of buildings | ADS Terms of Use and Access (free for research, teaching and personal use; copyright VAG) | Vernacular Architecture Group (VAG) (2025) Dendrochronology Database [data-set]. York: Archaeology Data Service [distributor] https://doi.org/10.5284/1132568 |
+| [Open Domesday](https://opendomesday.org) (Anna Powell-Smith; data from J.J.N. Palmer, University of Hull) | churches, priests, households and Phillimore references of Domesday settlements | CC BY-NC-SA ("The raw Domesday data is hosted by Hull University, under a CC-NC-BY-SA licence", opendomesday.org/about, checked 2026-11-03): non-commercial use only | Open Domesday, opendomesday.org; data J.J.N. Palmer, University of Hull |
+| Vernacular Architecture Group, [Dendrochronology Database](https://doi.org/10.5284/1132568) (Archaeology Data Service) | tree-ring and radiocarbon dates of buildings | ADS Terms of Use and Access (non-commercial research and teaching; copies "may not be offered… to anyone who is not an authorised user"; copyright VAG): **local app only**, left out of the bundled database and the hosted copy until the VAG gives permission | Vernacular Architecture Group (VAG) (2025) Dendrochronology Database [data-set]. York: Archaeology Data Service [distributor] https://doi.org/10.5284/1132568 |
 | [postcodes.io](https://postcodes.io) (ONS / Ordnance Survey) | nearest postcode and administrative areas | Open Government Licence v3.0 | Contains OS data © Crown copyright and database right; contains Royal Mail data © Royal Mail copyright and database right; source: Office for National Statistics |
-| `data/curated/` | researched events, oldest-of-type claims, legendary places, date corrections and confirmations | this project, CC BY 4.0 | compiled with AI assistance from cited sources, each with its source |
+| `data/curated/` | researched events, oldest-of-type claims, legendary places, date corrections and confirmations | this project, CC BY 4.0 (except `stonehenge/plan_stones.json`, CC BY-SA 4.0; quotations stay their authors') | compiled with AI assistance from cited sources, each with its source |
 
 ## Maps
 
@@ -46,13 +61,13 @@ Nothing here is legal advice; follow each source's own terms.
 | [Natural Earth](https://www.naturalearthdata.com) | land, counties, major roads, railways, airports | public domain | |
 | [GeoNames](https://www.geonames.org) | towns, villages, hills, forests, islands | CC BY 4.0 | GeoNames |
 | [Historic County Borders Project](https://county-borders.co.uk) | historic counties (before 1974) | free for any use with acknowledgement | This project made use of data provided by the Historic County Borders Project |
-| [National Library of Scotland](https://maps.nls.uk) | historic Ordnance Survey and other map layers, town plans, Ireland six-inch maps | CC BY (map images); see NLS terms for tile use | National Library of Scotland |
-| [Allmaps](https://allmaps.org) | georeferenced maps covering each place; Roman, Anglo-Saxon and early maps | annotations CC0; each map's own licence | linked from the app |
+| [National Library of Scotland](https://maps.nls.uk) | historic Ordnance Survey and other map layers, town plans, Ireland six-inch maps (low zooms of four layers copied into the hosted copy) | CC BY (NLS map images); the Roy Military Survey is © British Library, so it is shown live only and not copied | National Library of Scotland; Roy Military Survey © British Library |
+| [Allmaps](https://allmaps.org) | georeferenced maps covering each place; Roman, Anglo-Saxon and early maps (four David Rumsey maps, zooms 5–8, copied into the hosted copy) | annotations CC0; each map's own licence: David Rumsey Map Collection CC BY-NC-SA 3.0 (non-commercial) | linked from the app; David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries |
 | [Wikimaps Warper](https://warper.wmflabs.org) | Gough Map, William Smith's geological map | Wikimedia Commons licences of the scans | Wikimaps Warper |
-| [Esri World Imagery](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9) | satellite view (local app, shown live, not stored) | Esri terms of use | Imagery © Esri, Maxar, Earthstar Geographics, and the GIS User Community |
+| [Esri World Imagery](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9) | satellite view (local app only, shown live, not stored; not in the hosted copy) | Esri terms of use (Esri now asks for an ArcGIS account for its basemap services; acceptable for a personal local app, not used on the public site) | Imagery © Esri, Maxar, Earthstar Geographics, and the GIS User Community |
 | [Protomaps](https://protomaps.com) daily build | street detail saved for offline use (local app) | ODbL (OpenStreetMap data) | © OpenStreetMap contributors, Protomaps |
-| [OSRM](https://routing.openstreetmap.de) (FOSSGIS) | tour routes along paths and roads | OpenStreetMap data, ODbL | © OpenStreetMap contributors |
-| [OpenTopoData](https://www.opentopodata.org), EU-DEM 25 m | elevation profiles | Copernicus EU-DEM: free use with attribution | Produced using Copernicus data and information funded by the European Union (EU-DEM layers) |
+| [OSRM](https://routing.openstreetmap.de) (FOSSGIS) | tour routes along paths and roads (one request per tour at most once a second, cached; the hosted copy never calls it) | OpenStreetMap data, ODbL; FOSSGIS usage policy (attribution and a "fix the map" link, ≤ 1 request a second, no heavy use) | © OpenStreetMap contributors, with a "Report a map error" link on each tour; also in GPX/KML exports |
+| [OpenTopoData](https://www.opentopodata.org), EU-DEM 25 m | elevation profiles (≤ 900 new calls a run, under the public API's 1,000 a day) | Copernicus EU-DEM: free use with attribution | Produced using Copernicus data and information funded by the European Union (EU-DEM layers) |
 | [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen terrarium, AWS Open Data) | skylines round researched alignments and, in the local GUI, any record (bidb.sky_horizon) | open data, attribution per source | Environment Agency LiDAR (OGL v3), SRTM (USGS/NASA), EU-DEM (Copernicus), GMTED, ETOPO1; [attribution list](https://github.com/tilezen/joerd/blob/master/docs/attribution.md) |
 | [Environment Agency LIDAR Composite DTM 1 m](https://environment.data.gov.uk/spatialdata/lidar-composite-digital-terrain-model-dtm-1m/wms?service=WMS&request=GetCapabilities) (hillshade WMS) | "Ground (LiDAR)" layer in England (local app, shown live, not stored) | OGL v3.0 | LiDAR © Environment Agency, Open Government Licence |
 
@@ -125,7 +140,7 @@ to use with citation). Each country's estimate from the Central England Temperat
 (`data/curated/change/prepare_temperatures.py`) and labelled as such.
 Published estimates before the statistics (`data/curated/change/estimates.json`): figures cited as facts from the
 papers listed there, each with its quote and page; HYDE 3.5 (non-commercial licence) is not used.
-Left out for their licence or access: Open Domesday's data (CC BY-NC-SA), the 1930s Land Utilisation Survey vectors
+Left out of the change graphs and layers for their licence or access: Open Domesday's counts as a graph (CC BY-NC-SA; its entries are shown on records, non-commercially, as above), the 1930s Land Utilisation Survey vectors
 (non-commercial), A Vision of Britain through Time (bulk reuse needs permission), HadUK-Grid files (CEDA login), KK10
 (PANGAEA bot check at the time), NOAA's DMSP stable lights (login).
 

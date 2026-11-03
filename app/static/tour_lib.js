@@ -81,11 +81,13 @@ const TourLib = (() => {
 
   const hours = (min) => (min >= 90 ? `${(min / 60).toFixed(1)} h` : `${Math.round(min)} min`);
   const x = (s) => esc(s || "");
+  // routes along paths and roads come from OpenStreetMap data (ODbL) via OSRM: the files say so
+  const OSM_CREDIT = "Route © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright), routed by OSRM";
 
   function gpx(t) {
     return `<?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="British Isles Oldest Buildings" xmlns="http://www.topografix.com/GPX/1/1">
-<metadata><name>${x(t.title)}</name></metadata>
+<metadata><name>${x(t.title)}</name>${t.routed ? `<desc>${x(OSM_CREDIT)}</desc><copyright author="OpenStreetMap contributors"><license>https://opendatacommons.org/licenses/odbl/1-0/</license></copyright>` : ""}</metadata>
 ${t.stops.map((s, i) => `<wpt lat="${s.lat}" lon="${s.lon}"><name>${i + 1}. ${x(s.name)}</name><desc>${x([s.date_text, s.category].filter(Boolean).join(" · "))}</desc></wpt>`).join("\n")}
 <trk><name>${x(t.title)}</name><trkseg>${(t.line || []).map(([la, lo]) => `<trkpt lat="${la.toFixed(6)}" lon="${lo.toFixed(6)}"/>`).join("")}</trkseg></trk>
 </gpx>`;
@@ -93,7 +95,7 @@ ${t.stops.map((s, i) => `<wpt lat="${s.lat}" lon="${s.lon}"><name>${i + 1}. ${x(
 
   function kml(t) {
     return `<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>${x(t.title)}</name>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>${x(t.title)}</name>${t.routed ? `<description>${x(OSM_CREDIT)}</description>` : ""}
 ${t.stops.map((s, i) => `<Placemark><name>${i + 1}. ${x(s.name)}</name><description>${x(s.date_text)}</description><Point><coordinates>${s.lon},${s.lat}</coordinates></Point></Placemark>`).join("\n")}
 <Placemark><name>Route</name><LineString><coordinates>${(t.line || []).map(([la, lo]) => `${lo.toFixed(6)},${la.toFixed(6)}`).join(" ")}</coordinates></LineString></Placemark>
 </Document></kml>`;

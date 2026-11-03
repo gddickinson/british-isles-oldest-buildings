@@ -27,7 +27,7 @@ LAYERS = [
     {"key": "roy", "label": "Roy Military Survey of Scotland", "date": "1747–55",
      "bounds": [-7.85, 54.4, -0.95, 59.1], "min": 5, "max": 14,
      "urls": [NLS + "roy/highlands/{z}/{x}/{y}.png", NLS + "roy/lowlands/{z}/{x}/{y}.png"],
-     "attr": NLS_ATTR + "; Roy Military Survey © British Library", "bundle": [5, 10]},
+     "attr": NLS_ATTR + "; Roy Military Survey © British Library", "bundle": None},   # © BL: shown live, not copied
     {"key": "ireland1inch", "label": "OS one-inch 1st edition, Ireland", "date": "1850s–90s",
      "bounds": [-10.8, 51.2, -4.9, 55.6], "max": 16, "urls": [NLS + "os/ireland_1inch_1st_hills/{z}/{x}/{y}.png"],
      "attr": NLS_ATTR, "bundle": [5, 9]},

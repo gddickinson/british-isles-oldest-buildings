@@ -419,7 +419,7 @@ const Basemap = (() => {
     if (dom) lines.push(`<b>Domesday Book (1086):</b> ${dom.itself ? "recorded" : `in <a href="https://www.wikidata.org/wiki/${
       esc(dom.settlement_id)}" target="_blank" rel="noopener">${esc(dom.settlement)}</a>, recorded`} in Domesday Book${domesdayEntry(dom.entry)}${!dom.itself && el.dataset.pub
         ? ` <span class="hint">(the place, not the inn: no pubs are recorded in Domesday Book)</span>` : ""}
-      <span class="hint">(<a href="https://opendomesday.org/${dom.od_id ? "place/" + esc(dom.od_id) + "/" : ""}" target="_blank" rel="noopener">Open Domesday</a>)</span>`);
+      <span class="hint">(<a href="https://opendomesday.org/${dom.od_id ? "place/" + esc(dom.od_id) + "/" : ""}" target="_blank" rel="noopener">Open Domesday</a>; data J.J.N. Palmer, University of Hull, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA</a>)</span>`);
     const old = await named;
     if (old && old.forms.length) lines.push(`<b>Old forms of the name</b> <span class="hint">(${esc(old.headname)})</span>: ${
       old.forms.map((f) => `<i>${esc(f.form)}</i> <span class="hint">${esc(f.date_text || f.year || "")}</span>`).join(" · ")}${

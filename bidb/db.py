@@ -241,7 +241,12 @@ def facet_counts(conn, filters):
 
 def get_building(conn, bid):
     row = conn.execute("SELECT * FROM buildings WHERE id = ?", (bid,)).fetchone()
-    return dict(row) if row else None
+    if not row:
+        return None
+    from .image_credits import credit
+    b = dict(row)
+    b["image_credit"] = credit(conn, b.get("image_page"))
+    return b
 
 
 def stats(conn):

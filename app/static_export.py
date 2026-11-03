@@ -9,7 +9,7 @@ import re
 import shutil
 import sys
 
-from bidb import db, pron_db
+from bidb import db, image_credits, pron_db
 from bidb.categories import CATEGORY_GROUPS, CATEGORY_ORDER, GROUP_ORDER
 from bidb.classify import PERIOD_ORDER
 from bidb.config import DATA_DIR, ROOT, cache_dir
@@ -30,10 +30,12 @@ SHARD_BYTES = 9_000_000      # each data file stays well under the host's 16 MB 
 def _pack_historic_tiles():
     """Bundled historic map tiles (app.historic_build), one JSON pack per layer {"z/x/y": base64 WebP}:
     an artifact version holds at most 511 files, far fewer than the tiles."""
+    from app.historic_layers import LAYERS
     tiles = cache_dir() / "historic_tiles"
     out = DIST / "static" / "data" / "historic" / "packs"
     out.mkdir(parents=True, exist_ok=True)
-    for layer in sorted(tiles.iterdir()) if tiles.exists() else []:
+    copied = {l["key"] for l in LAYERS if l.get("bundle")}       # layers whose licence lets the tiles be copied
+    for layer in sorted(p for p in tiles.iterdir() if p.name in copied) if tiles.exists() else []:
         pack = {f"{t.parent.parent.name}/{t.parent.name}/{t.stem}": base64.b64encode(t.read_bytes()).decode()
                 for t in layer.rglob("*.webp")}
         (out / f"{layer.name}.json").write_text(json.dumps(pack, separators=(",", ":")))
@@ -89,6 +91,7 @@ def export(thumb_limit=850, full_pages=False):
                                       "ON p.id = l.person_id WHERE l.target_type = 'building'"):
             people.setdefault(bid, set()).add(name)
     other = pron_db.other_names(conn, "building")      # names in Welsh, Gaelic, Irish …
+    photo_credits = image_credits.credits(conn)        # author and licence of each Commons photo
     story_kinds = static_tours.export(conn, DIST / "data")
     for r in rows:
         if r["id"] in people:
@@ -97,6 +100,8 @@ def export(thumb_limit=850, full_pages=False):
             r["other_names"] = other[r["id"]]
         if r["id"] in story_kinds:
             r["sk"] = story_kinds[r["id"]]
+        if r.get("image_page") in photo_credits:
+            r["image_credit"] = photo_credits[r["image_page"]]
         for k in drop:
             r.pop(k, None)
         for k in ("wikipedia_extract", "register_notes"):
@@ -140,7 +145,7 @@ def export(thumb_limit=850, full_pages=False):
 
 
 # shown only in a record's detail view: loaded per record (row "d" = details shard number)
-DETAIL_FIELDS = ("sources", "refs", "image_page", "date_evidence", "register_notes", "register_url",
+DETAIL_FIELDS = ("sources", "refs", "image_page", "image_credit", "date_evidence", "register_notes", "register_url",
                  "register_source", "street_address", "website", "plan_image", "timeline")
 LAZY_SHARD_BYTES = 600_000
 

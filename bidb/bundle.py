@@ -169,6 +169,16 @@ def _upload(repo, rel, token, path, digest, log):
                        "`python -m bidb.bundle release` carries on with it.")
 
 
+LICENCE_NOTE = (
+    "**Licences.** The database gathers data from many sources, each under its own licence (full list and credits in "
+    "[DATA_LICENSE.md](https://github.com/gddickinson/british-isles-oldest-buildings/blob/main/DATA_LICENSE.md)). "
+    "In short: Wikipedia and Wiktionary text is CC BY-SA 4.0 and data from OpenStreetMap is ODbL 1.0 (both share-alike: "
+    "keep the credit and licence on anything made from them); Open Domesday's entries are CC BY-NC-SA (non-commercial "
+    "use only); heritage registers are under the Open Government Licence or CC BY 4.0; Wikidata is CC0; Commons photos "
+    "are linked, each under its own licence (table `image_credits`). The Vernacular Architecture Group's tree-ring "
+    "entries are left out (their terms do not allow passing them on). Code: MIT.")
+
+
 def release(log=print):
     """Package the current database and publish it as a new GitHub release; update the manifest.
     Draft release -> upload with retries -> size and SHA-256 checked against GitHub's -> published."""
@@ -187,7 +197,7 @@ def release(log=print):
     conn.close()
     notes = (f"Bundled database for a new installation ({day}): {counts['buildings']:,} buildings, "
              f"{counts['places']:,} places, {counts['persons']:,} people. `./run.sh` or the setup page downloads it; "
-             "it is not needed when you build the database yourself.")
+             "it is not needed when you build the database yourself.\n\n" + LICENCE_NOTE)
     digest = "sha256:" + sha256(BUNDLED)
     rel = _draft(repo, token, day, notes, log)
     asset = _upload(repo, rel, token, BUNDLED, digest, log)

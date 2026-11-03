@@ -42,7 +42,7 @@ async function showTour(id) {
   const loop = TourLib.MODES[t.mode].loop;
   T$("#tr_detail").innerHTML = `<h2>${TourLib.MODES[t.mode].icon} ${esc(t.title)}</h2>
     <p>${esc(t.summary)}</p>
-    <p class="hint">${t.routed ? "Route along paths and roads from OpenStreetMap (OSRM, routing.openstreetmap.de)." : "Straight lines between stops; distance estimated."}
+    <p class="hint">${t.routed ? `Route along paths and roads: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, routed by <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM (FOSSGIS)</a>. <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Report a map error</a>.${t.elevation ? " Heights: Copernicus EU-DEM (European Union), via OpenTopoData." : ""}` : "Straight lines between stops; distance estimated."}
       ${t.stages ? "Waymarked long-distance route: follow the signs; stops are sights within 1.5 km of the path." : loop ? "A round trip." : "One way: start at stop 1."}</p>
     <div class="filter-row">
       <a class="btn small" target="_blank" rel="noopener" href="${esc(TourLib.googleMaps(t.mode, t.stops, loop))}">Directions in Google Maps</a>

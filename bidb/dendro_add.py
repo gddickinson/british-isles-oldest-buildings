@@ -4,9 +4,10 @@ Wikidata gives most listed buildings no construction date, so the build never se
 whose timbers the Vernacular Architecture Group's database dates. Entries (felled before the cutoff) that bidb.dendro
 could not match to a catalogue record are matched by the same rules (dendro.match) to Wikidata items within 400 m;
 those items become records dated by their earliest felling date. The items found are kept in data/dendro_items.json
-(qid -> VAG locations), which the build reads (`load`, `apply`) so a rebuild keeps them; this CLI adds them to an
+(qid -> hashes of the VAG entries, `key`), which the build reads (`load`, `apply`) so a rebuild keeps them; this CLI adds them to an
 existing database without a rebuild. Run bidb.dendro afterwards.
 """
+import hashlib
 import json
 import re
 import sys
@@ -105,8 +106,14 @@ def candidates(conn=None, cutoff=CUTOFF_YEAR, log=print):
     return dict(found)
 
 
+def key(location):
+    """Short hash of a VAG entry's location: the file names the entries without copying the database's text
+    (its ADS terms do not allow passing the data on; the entries themselves are read from the download)."""
+    return hashlib.sha1(location.encode()).hexdigest()[:12]
+
+
 def save(found, names):
-    data = {q: {"name": names.get(q), "entries": sorted(e["location"] for e in es)} for q, es in sorted(found.items())}
+    data = {q: {"name": names.get(q), "entries": sorted(key(e["location"]) for e in es)} for q, es in sorted(found.items())}
     ITEMS.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
 
 
@@ -118,7 +125,7 @@ def load():
         return {}
     by_loc = defaultdict(list)
     for e in dendro.entries():
-        by_loc[e["location"]].append(e)
+        by_loc[key(e["location"])].append(e)
     return {q: [e for loc in v["entries"] for e in by_loc.get(loc, [])] for q, v in data.items()}
 
 

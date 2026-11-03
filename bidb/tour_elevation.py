@@ -5,11 +5,13 @@ public API: ≤ 100 points per request, 1 request a second, 1,000 a day; respons
 """
 import math
 
-from .http import request_json
+from .http import cached, request_json
 from .tour_plan import km
 
 API = "https://api.opentopodata.org/v1/eudem25m"
 POINTS = 100
+DAILY = 900                 # downloads per run, under the public API's 1,000 calls a day; the rest on a later run
+_calls = [0]
 
 
 def decode(poly, precision=6):
@@ -93,10 +95,14 @@ def profile(line, dist_km):
     n = int(min(600, max(POINTS, dist_km * 2)))
     n -= n % POINTS
     pts, elev = sample(line, n), []
+    batches = [{"locations": "|".join(f"{a:.5f},{b:.5f}" for a, b in pts[i:i + POINTS])} for i in range(0, len(pts), POINTS)]
+    new = sum(cached(API, params=b) is None for b in batches)
+    if new and _calls[0] + new > DAILY:        # leave this route for a later day rather than exceed the limit
+        return None
+    _calls[0] += new
     try:
-        for i in range(0, len(pts), POINTS):
-            res = request_json(API, params={"locations": "|".join(f"{a:.5f},{b:.5f}" for a, b in pts[i:i + POINTS])},
-                               min_interval=1.1)
+        for params in batches:
+            res = request_json(API, params=params, min_interval=1.1)
             elev += [r.get("elevation") for r in (res or {}).get("results", [])]
     except Exception:                          # noqa: BLE001 - elevation is optional
         return None

@@ -2895,3 +2895,31 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   Q and R arcs, the central circle. `?view=stages&stage=&aubrey=`. Checked in Chrome (WebGL) at every stage and back.
 - Tests 552 OK (`test_stonehenge_stages`: ditch fit, Aubrey numbering, stages); ui_check stonehenge, models pass;
   ui_prefs JS checks pass. Hosted copy not updated. Next: SH2b (planets, barrows and entrance posts) or SH3i.
+
+## 2026-11-03 — Licences and terms of the public repository, the hosted copy and the download
+- George asked whether the public repo and the GitHub Pages copy use their sources within the suppliers' terms.
+  Repo: no secrets, settings or personal paths; Hinton's survey stays in git-ignored `runs/`. Found and fixed:
+- Tree-ring entries (VAG via ADS: non-commercial research and teaching, not to be passed on without permission):
+  `config.LOCAL_ONLY_TABLES` (`dendro`) left out of `setup.package` and the hosted `dendro.json`;
+  `data/dendro_items.json` keeps 12-character hashes of the entries (`dendro_add.key`), not their text. Records
+  keep their one cited felling date. Asking the VAG for permission left for later (George).
+- Open Domesday is CC BY-NC-SA (opendomesday.org/about), not CC BY-SA: DATA_LICENSE corrected (it also said it was
+  left out), credit to J.J.N. Palmer / University of Hull and the licence on the Domesday line of detail views.
+- Roy Military Survey (© British Library) no longer copied into the hosted copy (`bundle: None`; static_export packs
+  only layers with a bundle range); live in the local app. Rumsey maps (CC BY-NC-SA) stay: the site is non-commercial.
+- Photo credits: new `bidb/image_credits.py` (build stage "Photo credits"): author and licence of each Commons file
+  → table `image_credits`; captions read "Photo: <author> · <licence>, Wikimedia Commons" (`photoCaption`, render.js)
+  locally and in the hosted detail files (`image_credit`). Not yet fetched: FANTOM (the cache) was unplugged.
+- Wikipedia text: "Text from the Wikipedia article …, CC BY-SA 4.0" under About (records and places) and the list
+  notes (`wikiNotice`); timelines say CC BY-SA. Footer links to Help › Sources & licences, which now lists Open
+  Domesday, Rumsey/Roy, tours (OSRM, EU-DEM) and the tree-ring terms.
+- Tours: FOSSGIS's routing policy asks for attribution and a "fix the map" link: each routed tour credits
+  © OpenStreetMap contributors and OSRM with "Report a map error", heights credit Copernicus EU-DEM; GPX/KML exports
+  of routed tours carry the ODbL credit; the builder's routes say so. `tour_elevation` stops at 900 new OpenTopoData
+  calls a run (public limit 1,000 a day). The hosted copy calls neither service.
+- Database release notes now carry a licence summary (`bundle.LICENCE_NOTE`). DATA_LICENSE: CRU TS ODbL as
+  share-alike, `data/curated/` CC BY except `plan_stones.json` (CC BY-SA), Esri local only.
+- Tests 558 OK (`test_licences`); ui_prefs JS checks pass; detail API, help and tours pages checked with the test
+  client. To do with FANTOM plugged in: `python -m bidb.image_credits`, then a new database release and a new site
+  release (`app.static_export --full-pages`) + Pages deploy; the old releases db-2026-10-24 and site-2026-10-27-4
+  still hold the tree-ring table and Roy tiles until they are deleted.

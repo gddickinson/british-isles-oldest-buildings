@@ -73,7 +73,7 @@ const TourBuilder = (() => {
     TourLib.draw(map, layer, t);
     last = t;
     B$("#tb_total").textContent = `${TourLib.MODES[o.mode].icon} ${pts.length} stops · ${Prefs.dist(r.distance_km, 1)} · about ${TourLib.hours(r.duration_min)}`
-      + (r.routed ? "" : " (estimated: straight lines × detour)");
+      + (r.routed ? " (route © OpenStreetMap contributors, OSRM by FOSSGIS)" : " (estimated: straight lines × detour)");
     B$("#tb_gmaps").href = TourLib.googleMaps(o.mode, pts, o.loop);
   }
 

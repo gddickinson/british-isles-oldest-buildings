@@ -73,8 +73,9 @@ const UI = (() => {
     const bar = document.querySelector(".topbar");
     if (!bar || bar.querySelector(".tb-tools")) return;
     const tools = Object.assign(document.createElement("div"), { className: "tb-tools" });
-    const theme = Object.assign(document.createElement("button"), { type: "button", className: "tb-btn", title: "Light / dark theme (T)" });
-    const paintTheme = () => { theme.textContent = Prefs.effectiveTheme() === "dark" ? "☀" : "☾"; theme.setAttribute("aria-label", "Switch to " + (Prefs.effectiveTheme() === "dark" ? "light" : "dark") + " theme"); };
+    const theme = Object.assign(document.createElement("button"), { type: "button", className: "tb-btn", title: "Theme: neon, light, dark (T)" });
+    const ICON = { neon: "✦", light: "☀", dark: "☾" };       // the button shows the theme it switches to
+    const paintTheme = () => { const n = Prefs.nextTheme(); theme.textContent = ICON[n]; theme.setAttribute("aria-label", `Switch to ${n} theme`); };
     theme.addEventListener("click", () => { Prefs.toggleTheme(); paintTheme(); });
     paintTheme();
     window.addEventListener("prefs-changed", paintTheme);
@@ -125,7 +126,7 @@ const UI = (() => {
 
   function shortcutsOverlay() {
     const rows = [["/", "Search on this page"], ["⌘K or Ctrl+K", "Go to a page, building, place or person"], ["?", "This list"],
-      ["T", "Light / dark theme"], ["X", "Export menu"], ["Esc", "Close menus and dialogs"]]
+      ["T", "Next theme (neon, light, dark)"], ["X", "Export menu"], ["Esc", "Close menus and dialogs"]]
       .concat(PAGES.map(([name, , k]) => [`G then ${k}`, name]));
     overlay(`<h3>Keyboard shortcuts</h3><table class="kbd-table">${rows.map(([k, v]) => `<tr><td><kbd>${esc(k)}</kbd></td><td>${esc(v)}</td></tr>`).join("")}</table>
       <p class="hint">${Prefs.get("shortcuts") ? "Turn shortcuts off on the Settings page." : "Single-key shortcuts are off (Settings); ⌘K and Esc still work."}</p>

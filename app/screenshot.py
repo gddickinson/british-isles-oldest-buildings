@@ -110,7 +110,7 @@ def main():
     ap.add_argument("--width", type=int, default=1280)
     ap.add_argument("--height", type=int, default=800)
     ap.add_argument("--scale", type=int, default=1, help="device pixel ratio (2 = retina)")
-    ap.add_argument("--theme", choices=["light", "dark"])
+    ap.add_argument("--theme", choices=["neon", "light", "dark"])
     ap.add_argument("--click", help="CSS selector to click once the page has loaded")
     ap.add_argument("--wait", type=float, default=5, help="seconds to let the page load")
     ap.add_argument("--jpeg", type=int, help="save as JPEG at this quality (macOS sips)")

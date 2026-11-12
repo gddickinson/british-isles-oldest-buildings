@@ -1,0 +1,109 @@
+/* Neon theme flourishes (the default theme): only under :root[data-theme="neon"]. The colour tokens are in
+   style.css (:root[data-theme="neon"]); this file adds the look of the shared dark "neon" web kit: soft radial
+   glows on a deep background, mono uppercase brand and nav, glowing accent borders on cards and buttons,
+   tiles with coloured left borders, and dark Leaflet controls, pop-ups and map colours. */
+:root[data-theme="neon"] {
+  --accent2: #ff4fa8; --accent3: #4fc3ff; --glow: rgba(255, 181, 71, .16);
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: -apple-system, "Helvetica Neue", Inter, "Segoe UI", system-ui, sans-serif;
+  /* offline basemap: blue-black sea, slate land (labels #e8f1ff on #18213f: 14:1) */
+  --map-sea: #07101f; --map-land: #18213f; --map-land-other: #111830; --map-border: #3d4f7c;
+  --map-water: #12325a; --map-water-line: #3f8fd0; --map-motorway: #d98a2b; --map-road-major: #a98048;
+  --map-road: #4f5a7a; --map-road-minor: #3a4463; --map-historic-county: #d08bff; --map-rail: #94a3c6;
+  --map-park: #173d2e; --map-park-line: #3fa070; --map-trail: #ff9a5c;
+  --map-label: #e8f1ff; --map-label-soft: #94a3c6; --map-halo: #05060c;
+  background: #05060c;                                     /* no white flash before style.css paints the body */
+}
+:root[data-theme="neon"] body {
+  font-family: var(--sans);
+  background: radial-gradient(1100px 600px at 85% -10%, color-mix(in srgb, var(--accent3) 16%, transparent) 0%, transparent 60%),
+              radial-gradient(900px 500px at -10% 110%, color-mix(in srgb, var(--accent2) 13%, transparent) 0%, transparent 60%), var(--bg);
+  background-attachment: fixed; min-height: 100vh;
+}
+
+/* header: translucent bar with a glowing rule, mono uppercase brand with a ring mark, mono nav */
+:root[data-theme="neon"] .topbar { background: rgba(5, 6, 12, .86); backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--accent) 30%, transparent), 0 0 24px var(--glow); }
+:root[data-theme="neon"] .brand { font: 600 18px var(--mono); letter-spacing: .12em; text-transform: uppercase;
+  display: inline-flex; align-items: center; gap: 10px; }
+:root[data-theme="neon"] .brand::before { content: ""; width: 18px; height: 18px; border-radius: 50%; flex: none;
+  border: 3px solid var(--accent); box-shadow: 0 0 12px var(--accent), inset 0 0 0 3px var(--bg), inset 0 0 0 7px var(--accent2); }
+:root[data-theme="neon"] .nav a { font: 12.5px var(--mono); text-transform: uppercase; letter-spacing: .08em; }
+:root[data-theme="neon"] .nav a.active, :root[data-theme="neon"] .nav a:hover { color: var(--accent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 45%, transparent); }
+:root[data-theme="neon"] .tb-btn:hover, :root[data-theme="neon"] .tb-btn:focus-visible { border-color: var(--accent); box-shadow: 0 0 14px var(--glow); }
+
+/* headings */
+:root[data-theme="neon"] h1 { text-shadow: 0 0 28px color-mix(in srgb, var(--accent) 40%, transparent); }
+:root[data-theme="neon"] h1, :root[data-theme="neon"] h2 { font-family: var(--sans); letter-spacing: -.01em; }
+:root[data-theme="neon"] .card h3, :root[data-theme="neon"] .detail h2, :root[data-theme="neon"] .sh-panel h1,
+:root[data-theme="neon"] .sh-stone h3 { font-family: var(--sans); }
+
+/* cards and panels: gradient fill, glowing accent border on hover */
+:root[data-theme="neon"] .card, :root[data-theme="neon"] .set-card, :root[data-theme="neon"] .modal-card,
+:root[data-theme="neon"] .ui-card { background: linear-gradient(150deg, rgba(17, 24, 49, .96), rgba(9, 12, 26, .96)); }
+:root[data-theme="neon"] .card { transition: transform .12s, border-color .15s, box-shadow .15s; }
+:root[data-theme="neon"] .card:hover, :root[data-theme="neon"] .card:focus { outline: 0; border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 22px var(--glow); }
+:root[data-theme="neon"] .card:focus-visible { outline: 3px solid var(--accent3); }
+:root[data-theme="neon"] .thumb { background: linear-gradient(150deg, #141c3a, #0a0e1f); }
+:root[data-theme="neon"] .modal { background: rgba(2, 3, 8, .72); }
+:root[data-theme="neon"] .ui-overlay { background: rgba(2, 3, 8, .6); }
+
+/* buttons: mono uppercase, glow on hover; text on accent fills is the dark background (11:1) */
+:root[data-theme="neon"] .btn { font-family: var(--mono); font-size: 13px; letter-spacing: .04em; color: var(--bg); }
+:root[data-theme="neon"] .btn.ghost { color: var(--accent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent); }
+:root[data-theme="neon"] .btn:hover { box-shadow: 0 0 16px var(--glow); filter: brightness(1.1); }
+:root[data-theme="neon"] .tab.active, :root[data-theme="neon"] .chip.accent, :root[data-theme="neon"] .badge,
+:root[data-theme="neon"] .tg.on, :root[data-theme="neon"] .job-state.running, :root[data-theme="neon"] .quiz-rank { color: var(--bg); }
+:root[data-theme="neon"] .tab.active { box-shadow: 0 0 14px var(--glow); }
+:root[data-theme="neon"] .num-marker { color: var(--bg); border-color: var(--bg); box-shadow: 0 0 10px var(--accent); }
+:root[data-theme="neon"] .dl-item.missing { border-color: #ff5c7a; }
+
+/* tiles (Data quality and statistics): coloured left borders in turn, mono numbers */
+:root[data-theme="neon"] .tile { background: rgba(12, 16, 32, .92); border: 0; border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0; }
+:root[data-theme="neon"] .tile:nth-child(3n+2) { border-left-color: var(--accent2); }
+:root[data-theme="neon"] .tile:nth-child(3n) { border-left-color: var(--accent3); }
+:root[data-theme="neon"] .tile b { font-family: var(--mono); }
+
+/* form fields */
+:root[data-theme="neon"] input, :root[data-theme="neon"] select, :root[data-theme="neon"] textarea { accent-color: var(--accent); }
+:root[data-theme="neon"] input:focus-visible, :root[data-theme="neon"] select:focus-visible,
+:root[data-theme="neon"] textarea:focus-visible { outline: 2px solid var(--accent3); outline-offset: 1px; }
+
+/* Leaflet: dark controls, pop-ups, tooltips; container colour before tiles load; online OSM tiles darkened */
+:root[data-theme="neon"] .leaflet-container { background: var(--map-sea); }
+:root[data-theme="neon"] .leaflet-popup-content-wrapper, :root[data-theme="neon"] .leaflet-popup-tip,
+:root[data-theme="neon"] .leaflet-tooltip { background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+  box-shadow: 0 0 18px rgba(0, 0, 0, .6), 0 0 12px var(--glow); }
+:root[data-theme="neon"] .leaflet-tooltip-top::before { border-top-color: var(--line); }
+:root[data-theme="neon"] .leaflet-tooltip-bottom::before { border-bottom-color: var(--line); }
+:root[data-theme="neon"] .leaflet-tooltip-left::before { border-left-color: var(--line); }
+:root[data-theme="neon"] .leaflet-tooltip-right::before { border-right-color: var(--line); }
+:root[data-theme="neon"] .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+:root[data-theme="neon"] .leaflet-bar a, :root[data-theme="neon"] .leaflet-control-layers,
+:root[data-theme="neon"] .leaflet-control-layers-toggle { background-color: var(--panel); color: var(--ink); border-color: var(--line); }
+:root[data-theme="neon"] .leaflet-bar a:hover { background-color: #18203d; color: var(--accent); }
+:root[data-theme="neon"] .leaflet-bar a.leaflet-disabled { background-color: var(--surface); color: #4a5578; }
+:root[data-theme="neon"] .leaflet-bar, :root[data-theme="neon"] .leaflet-control-layers { border: 1px solid var(--line) !important;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .5); }
+:root[data-theme="neon"] .leaflet-control-layers-toggle { filter: invert(1) hue-rotate(180deg); }
+:root[data-theme="neon"] .leaflet-container .leaflet-control-attribution { background: rgba(5, 6, 12, .75); color: var(--muted); }
+:root[data-theme="neon"] .leaflet-container .leaflet-control-attribution a { color: var(--accent3); }
+:root[data-theme="neon"] .leaflet-control-scale-line { background: rgba(5, 6, 12, .7); color: var(--ink); border-color: var(--muted); }
+:root[data-theme="neon"] .osm-tiles { filter: invert(1) hue-rotate(180deg) brightness(.95) contrast(.85) saturate(.7); }
+/* marker clusters keep their size code (small, medium, large) in neon colours, dark numbers on light fills */
+:root[data-theme="neon"] .marker-cluster-small { background-color: color-mix(in srgb, var(--accent3) 35%, transparent); }
+:root[data-theme="neon"] .marker-cluster-small div { background-color: var(--accent3); }
+:root[data-theme="neon"] .marker-cluster-medium { background-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+:root[data-theme="neon"] .marker-cluster-medium div { background-color: var(--accent); }
+:root[data-theme="neon"] .marker-cluster-large { background-color: color-mix(in srgb, var(--accent2) 35%, transparent); }
+:root[data-theme="neon"] .marker-cluster-large div { background-color: var(--accent2); }
+:root[data-theme="neon"] .marker-cluster div { color: var(--bg); font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) { :root[data-theme="neon"] .card { transition: none; } }
+@media print { :root[data-theme="neon"] body { background: #fff; } :root[data-theme="neon"] .brand::before { display: none; } }
+
+/* festival countdowns: the season colour lightened to text contrast on the dark background (>= 7:1) */
+:root[data-theme="neon"] .fe-when b { color: color-mix(in srgb, var(--fe, var(--accent)) 60%, #fff); }

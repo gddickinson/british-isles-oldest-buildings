@@ -15,7 +15,7 @@
     --map-label: #ece6de; --map-label-soft: #a79d91; --map-halo: #1c1a18;
   }
 }
-:root[data-theme="dark"] {
+:root[data-theme="dark"], :root[data-theme="neon"] {
   --map-sea: #17232c; --map-land: #2a2724; --map-land-other: #221f1c; --map-border: #6d6358;
   --map-water: #23415a; --map-water-line: #4a86b0; --map-motorway: #c27426; --map-road-major: #a9804a;
   --map-road: #6e6250; --map-road-minor: #574d40; --map-historic-county: #c58bd0; --map-rail: #a79d91; --map-park: #2f5a33; --map-park-line: #5e9a5b;
@@ -140,7 +140,8 @@
 .cc-err { stroke: var(--accent); stroke-width: 1.5; stroke-linecap: round; }
 /* comparison lines: the reference palette's first three categorical slots (validated all-pairs) */
 .cc-svg { --m0: #2a78d6; --m1: #eb6834; --m2: #1baf7a; }
-:root[data-theme="dark"] .cc-svg, :root[data-theme="dark"] .cc-legend { --m0: #3987e5; --m1: #d95926; --m2: #199e70; }
+:root[data-theme="dark"] .cc-svg, :root[data-theme="dark"] .cc-legend,
+:root[data-theme="neon"] .cc-svg, :root[data-theme="neon"] .cc-legend { --m0: #3987e5; --m1: #d95926; --m2: #199e70; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cc-svg, :root:not([data-theme="light"]) .cc-legend { --m0: #3987e5; --m1: #d95926; --m2: #199e70; } }
 .cc-legend { --m0: #2a78d6; --m1: #eb6834; --m2: #1baf7a; display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 11px; color: var(--muted); }
 .cc-key { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }

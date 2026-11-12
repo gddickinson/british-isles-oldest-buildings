@@ -14,7 +14,7 @@
 .inline-form input { flex: 1; min-width: 0; }
 .linklike { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
 .warn-text { color: #b3261e; }
-:root[data-theme="dark"] .warn-text { color: #f2b8b5; }
+:root[data-theme="dark"] .warn-text, :root[data-theme="neon"] .warn-text { color: #f2b8b5; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .warn-text { color: #f2b8b5; } }
 .dl-items { display: grid; gap: 12px; }
 .dl-item { border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; background: var(--bg); }

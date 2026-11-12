@@ -237,8 +237,7 @@ const Basemap = (() => {
   function streetsLayer(map) {
     if (!window.protomapsL) return L.layerGroup();
     if (!map.getPane("streets")) map.createPane("streets").style.zIndex = 255;   // above the land fill
-    const dark = document.documentElement.dataset.theme === "dark"
-      || (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches);
+    const dark = Prefs.isDark();                       // dark and neon both take the dark flavour
     const layer = window.protomapsL.leafletLayer({ url: "/tiles/{z}/{x}/{y}.mvt", flavor: dark ? "dark" : "light", maxDataZoom: 15,
       attribution: "© OpenStreetMap contributors, Protomaps", pane: "streets" });
     layer.backgroundColor = null;     // the flavour's grey background would hide the land and sea outside saved areas
@@ -357,7 +356,8 @@ const Basemap = (() => {
       if (opts.control) control(map, off, null);
       return;
     }
-    const online = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 });
+    // className: neon.css darkens these light tiles under the neon theme
+    const online = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, className: "osm-tiles" });
     // Esri World Imagery (free to show with attribution) with Esri's place-name and border labels on top
     const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
     const satellite = L.layerGroup([

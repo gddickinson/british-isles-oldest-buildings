@@ -21,6 +21,17 @@ assert.deepEqual(Prefs.recent.list().map((r) => r.id), ["Q1", "Q2"]);
 const dump = Prefs.exportAll(); Prefs.reset(); assert.equal(Prefs.get("pageSize"), 48);
 Prefs.importAll(dump); assert.equal(Prefs.get("pageSize"), 96);
 Prefs.set("textSize", 125); assert.equal(document.documentElement.style.fontSize, "125%");
+// themes: neon is the default with nothing saved; a saved choice is respected; T steps neon → light → dark → neon
+location.search = ""; Prefs.reset();
+assert.equal(Prefs.get("theme"), "neon"); assert.equal(document.documentElement.dataset.theme, "neon");
+assert.ok(Prefs.isDark()); assert.equal(Prefs.nextTheme(), "light");
+Prefs.set("theme", "light"); assert.equal(JSON.parse(store.bi_prefs).theme, "light"); assert.equal(document.documentElement.dataset.theme, "light");
+assert.ok(!Prefs.isDark());
+Prefs.toggleTheme(); assert.equal(document.documentElement.dataset.theme, "dark");
+Prefs.toggleTheme(); assert.equal(document.documentElement.dataset.theme, "neon"); assert.ok(!("theme" in JSON.parse(store.bi_prefs)));
+Prefs.set("theme", "system"); assert.equal(document.documentElement.dataset.theme, undefined); assert.equal(Prefs.effectiveTheme(), "light");
+location.search = "?_theme=neon"; Prefs.apply(); assert.equal(document.documentElement.dataset.theme, "neon");
+location.search = ""; Prefs.set("theme", "neon");
 // serialisers
 global.IS_STATIC = false; global.UI = { toast() {} }; global.api = async () => [];
 eval(fs.readFileSync("app/static/ui_export.js", "utf8") + "; global.ExportMenu = ExportMenu;");

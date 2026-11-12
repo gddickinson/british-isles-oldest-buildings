@@ -13,7 +13,7 @@
 @media (max-width: 560px) { .sky-grid { grid-template-columns: 1fr; } .sky-compass { max-width: 200px; } }
 :root { --sky-sun: #d08a12; --sky-moon: #6b7fa8; --sky-then: #8d6e63; --sky-aligned: #c62828; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sky-sun: #f2b544; --sky-moon: #9fb3dc; --sky-then: #bca59b; --sky-aligned: #ff6e6e; } }
-:root[data-theme="dark"] { --sky-sun: #f2b544; --sky-moon: #9fb3dc; --sky-then: #bca59b; --sky-aligned: #ff6e6e; }
+:root[data-theme="dark"], :root[data-theme="neon"] { --sky-sun: #f2b544; --sky-moon: #9fb3dc; --sky-then: #bca59b; --sky-aligned: #ff6e6e; }
 .sky-compass { width: 100%; height: auto; }
 .sky-compass circle { fill: none; stroke: var(--line); stroke-width: 1.5; }
 .sky-compass .sky-centre { fill: var(--ink); stroke: none; }

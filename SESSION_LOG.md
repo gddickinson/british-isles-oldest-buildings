@@ -2935,3 +2935,29 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   `data/dendro.json` and the Roy pack 404, other packs and pages 200, Help lists Open Domesday. Deleting the old
   releases db-2026-10-24 and site-2026-10-27-4 (they still hold the tree-ring table and Roy tiles) was stopped by the
   permission check: left to George. The claude.ai hosted copy is not updated.
+
+## 2026-11-11 — Neon theme, now the default
+- George asked for the new dark "neon" web style (the shared kit of microscope-atlas, CALab...) as a theme here, and
+  the default. Third theme beside light and dark: tokens `:root[data-theme="neon"]` in style.css covering every token
+  (deep blue-black `#05060c`, panels `#0c1020`, ink `#e8f1ff` 16.6:1, muted `#94a3c6` 7.5:1, amber accent `#ffb547`
+  10.8:1 on panels and 11.5:1 behind dark button text); the group palette `--g1..--g23` re-chosen for the dark
+  background (all ≥ 3:1 on panels; the first eight, the colour groups, ≥ 15 CIEDE2000 apart also for deuteranopes and
+  protanopes, better than the light and dark palettes; all 23 ≥ 8 apart in normal vision) and the period ramp
+  `--p1..--p13` light cyan to blue-violet, oldest lightest, all ≥ 4.2:1. Rules written for dark (map colours, sky, cc
+  comparison lines, quiz answers, warnings) also name neon.
+- `app/static/neon.css` (only under neon): radial glows, mono uppercase brand with a ring mark and nav, sans headings
+  with a glow, gradient cards with glowing borders on hover, mono buttons, tiles with amber/pink/cyan left borders,
+  dark Leaflet controls, pop-ups, tooltips and clusters (size code kept: cyan, amber, pink), offline-map colours, the
+  online OSM street map darkened by a filter (`.osm-tiles`, set in basemap.js); festival countdowns lightened.
+- Default: `Prefs.DEFAULTS.theme = "neon"` and the paint-before-load script in base.html default to neon (local app
+  and static export alike); a saved light, dark or "same as my system" is kept. Settings lists Neon (default), Light,
+  Dark, Same as my system; the toolbar button and T step neon → light → dark; `Prefs.isDark()` (neon counts as dark:
+  basemap.js street tiles take the dark flavour); `app.screenshot --theme neon`; manifest and theme-color dark.
+- Fix: long citations under the change graphs (`.cc-src`) overflowed a 390 px phone by 36 px on /change in every
+  theme; they now wrap.
+- Tests 568 OK (`test_themes`: neon defines every style token and every dark variable, dark-only rules shared,
+  WCAG AA text contrast, palette ≥ 3:1 and ramp order, neon.css scoped, neon the default in prefs/base/settings;
+  `ui_prefs_test.js`: default neon, saved choice, T cycle, system). Playwright screenshots of every page in neon at
+  1280 and 390 px, local and the static export (`app.static_export --full-pages` → dist/): no console errors, no
+  horizontal overflow; light, dark and system choices checked unchanged. Not published: the hosted copy changes with
+  the next site release.

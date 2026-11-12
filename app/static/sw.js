@@ -2,7 +2,7 @@
 // kept in a cache, so places you have opened, saved tours and the offline map work without a
 // connection. Map tiles from the internet are not cached (the bundled offline map is).
 const CACHE = "bi-v1";
-const SHELL = ["/", "/map", "/tours", "/stories", "/static/style.css", "/static/state.js", "/static/basemap.js",
+const SHELL = ["/", "/map", "/tours", "/stories", "/static/style.css", "/static/neon.css", "/static/state.js", "/static/basemap.js",
                "/static/tour_lib.js", "/static/tours.js", "/static/tour_builder.js"];
 
 // API answers worth keeping offline: records and tours you opened (searches are not kept)

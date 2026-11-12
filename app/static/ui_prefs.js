@@ -4,7 +4,7 @@
 const Prefs = (() => {
   const KEY = "bi_prefs", RECENT = "bi_recent";
   const DEFAULTS = {
-    theme: "system",          // system | light | dark
+    theme: "neon",            // neon (default) | light | dark | system
     textSize: 100,            // % of the base font size
     density: "comfortable",   // comfortable | compact
     motion: "system",         // system | reduce
@@ -34,12 +34,14 @@ const Prefs = (() => {
   }
   function reset() { write({}); apply(); window.dispatchEvent(new CustomEvent("prefs-changed", { detail: {} })); }
 
-  // theme / size / density / motion on <html>; ?_theme=dark in the URL wins (screenshots)
+  // theme / size / density / motion on <html>; ?_theme=dark in the URL wins (screenshots).
+  // "system" leaves data-theme unset so the light/dark media query decides.
+  const THEMES = ["neon", "light", "dark"];
   function apply() {
     const root = document.documentElement, p = all();
     const forced = new URLSearchParams(location.search).get("_theme");
     const theme = forced || p.theme;
-    if (theme === "light" || theme === "dark") root.dataset.theme = theme; else delete root.dataset.theme;
+    if (THEMES.includes(theme)) root.dataset.theme = theme; else delete root.dataset.theme;
     root.style.fontSize = p.textSize !== 100 ? p.textSize + "%" : "";
     root.dataset.density = p.density;
     root.dataset.motion = p.motion;
@@ -49,7 +51,10 @@ const Prefs = (() => {
     const t = document.documentElement.dataset.theme;
     return t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   }
-  function toggleTheme() { set("theme", effectiveTheme() === "dark" ? "light" : "dark"); }
+  const isDark = () => effectiveTheme() !== "light";              // neon is a dark theme too
+  // T / the toolbar button: neon → light → dark → neon
+  const nextTheme = () => THEMES[(THEMES.indexOf(effectiveTheme()) + 1) % THEMES.length];
+  function toggleTheme() { set("theme", nextTheme()); }
 
   // distances: everything is computed in km; this formats in the chosen unit
   function dist(km, digits = 1) {
@@ -86,6 +91,6 @@ const Prefs = (() => {
 
   apply();
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => window.dispatchEvent(new Event("theme-changed")));
-  return { DEFAULTS, get, set, all, reset, apply, effectiveTheme, toggleTheme, dist, cluster, recent, exportAll,
+  return { DEFAULTS, THEMES, get, set, all, reset, apply, effectiveTheme, isDark, nextTheme, toggleTheme, dist, cluster, recent, exportAll,
            importAll, STORE_KEYS };
 })();

@@ -155,7 +155,7 @@
 .cc-year-dot { fill: var(--panel); stroke: var(--ink); stroke-width: 2; }
 .cc-cross { stroke: var(--muted); stroke-width: 1; }
 .cc-break { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 1 2; opacity: .8; }
-.cc-src { font-size: 11px; color: var(--muted); }
+.cc-src { font-size: 11px; color: var(--muted); overflow-wrap: anywhere; }   /* long citations and URLs wrap on phones */
 .cc-lic { white-space: nowrap; }
 .cc-more { border: 0; background: none; padding: 0 2px; color: var(--accent); cursor: pointer; font-size: 11px; text-decoration: underline; }
 .cc-note { margin: 4px 0 0; font-size: 11.5px; line-height: 1.35; color: var(--muted); }

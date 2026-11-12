@@ -2961,3 +2961,15 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
   1280 and 390 px, local and the static export (`app.static_export --full-pages` → dist/): no console errors, no
   horizontal overflow; light, dark and system choices checked unchanged. Not published: the hosted copy changes with
   the next site release.
+
+## 2026-11-12 — Neon site release
+- George asked for the neon theme on the public site. Tests 568 OK (1 skipped), `ui_prefs_test.js` passes.
+  `app.static_export --full-pages` from main at 1387d30 in a clone without the FANTOM cache (not plugged in), so
+  that build lacked the nine historic map packs and some cached thumbnails/floor plans. The published site is that
+  build's pages and `static/` code with `data/` and `static/data/historic/packs/` taken unchanged from
+  `site-2026-11-03` (same database db-2026-11-03; the code commits since then touch no data). Against
+  site-2026-11-03 only the HTML pages and the 11 static files of the theme commits differ (plus `neon.css`).
+- Release `site-2026-11-12` (96 MB, SHA-256 fe130d63…ab60 checked after upload, not Latest: db-2026-11-03 stays
+  Latest), deployed by the Pages workflow (run 43294209783, success). Live site checked with Playwright at 1280 and
+  390 px (home, map, change, tours, settings, help): neon by default, no console errors, no horizontal overflow;
+  thumbs_43 and the historic packs 200, dendro.json 404. Old release site-2026-11-03 kept.

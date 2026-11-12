@@ -107,3 +107,6 @@
 
 /* festival countdowns: the season colour lightened to text contrast on the dark background (>= 7:1) */
 :root[data-theme="neon"] .fe-when b { color: color-mix(in srgb, var(--fe, var(--accent)) 60%, #fff); }
+/* sky verdict badges: lighter green and orange for small text on the dark background (>= 7:1) */
+:root[data-theme="neon"] .sky-verdict.established { color: #5fd17a; border-color: #5fd17a; }
+:root[data-theme="neon"] .sky-verdict.disputed { color: #ff9a5c; border-color: #ff9a5c; }

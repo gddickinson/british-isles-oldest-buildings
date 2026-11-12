@@ -2948,7 +2948,7 @@ Entries before 2026-10-21 are in [`SESSION_LOG_2026-10-19.md`](SESSION_LOG_2026-
 - `app/static/neon.css` (only under neon): radial glows, mono uppercase brand with a ring mark and nav, sans headings
   with a glow, gradient cards with glowing borders on hover, mono buttons, tiles with amber/pink/cyan left borders,
   dark Leaflet controls, pop-ups, tooltips and clusters (size code kept: cyan, amber, pink), offline-map colours, the
-  online OSM street map darkened by a filter (`.osm-tiles`, set in basemap.js); festival countdowns lightened.
+  online OSM street map darkened by a filter (`.osm-tiles`, set in basemap.js); festival countdowns and sky verdict badges lightened for small-text contrast.
 - Default: `Prefs.DEFAULTS.theme = "neon"` and the paint-before-load script in base.html default to neon (local app
   and static export alike); a saved light, dark or "same as my system" is kept. Settings lists Neon (default), Light,
   Dark, Same as my system; the toolbar button and T step neon → light → dark; `Prefs.isDark()` (neon counts as dark:
